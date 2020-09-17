@@ -1,0 +1,35 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "toc.yml",
+          "**.md",
+          "**/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "images/**" ]
+      }
+    ],
+    "dest": "docs",
+    "globalMetadata": {
+      "_appTitle": "ERP.net Developer Docs",
+      "_enableSearch": true
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "templates/darkfx"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
