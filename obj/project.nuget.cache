@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dcsn0FrWsq6ySsW/55MLQxiUJSmg9jEV4ivqb0mRQvLsw/buWwNloC2xj8xvTWPWgw3m93IzNc8HhYu6JZMm0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ivanarj\\source\\repos\\tech\\Startup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ivanarj\\.nuget\\packages\\docfx.console\\2.56.2\\docfx.console.2.56.2.nupkg.sha512"
+  ],
+  "logs": []
+}

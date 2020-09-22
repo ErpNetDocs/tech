@@ -1,0 +1,62 @@
+{
+  "concepts/advanced/master-detail-attributes.html": {
+    "href": "concepts/advanced/master-detail-attributes.html",
+    "title": "Master / Detail Attributes | ERP.net Developer Docs",
+    "keywords": "Master / Detail Attributes"
+  },
+  "concepts/advanced/overview.html": {
+    "href": "concepts/advanced/overview.html",
+    "title": "Advanced Concepts | ERP.net Developer Docs",
+    "keywords": "Advanced Concepts Advanced concepts are required when setting up non-standard ERP Instances. They are targeted mostly towards advanced ERP Implementors and power users."
+  },
+  "concepts/documents.html": {
+    "href": "concepts/documents.html",
+    "title": "ERP.net Working With Documents | ERP.net Developer Docs",
+    "keywords": "ERP.net Working With Documents"
+  },
+  "concepts/fulfillment.html": {
+    "href": "concepts/fulfillment.html",
+    "title": "Tracking Fulfillment | ERP.net Developer Docs",
+    "keywords": "Tracking Fulfillment"
+  },
+  "concepts/multi-company.html": {
+    "href": "concepts/multi-company.html",
+    "title": "Multi-Company Support In ERP Instances | ERP.net Developer Docs",
+    "keywords": "Multi-Company Support In ERP Instances"
+  },
+  "concepts/multi-language.html": {
+    "href": "concepts/multi-language.html",
+    "title": "Multi-Language Support In ERP.net | ERP.net Developer Docs",
+    "keywords": "Multi-Language Support In ERP.net"
+  },
+  "concepts/overview.html": {
+    "href": "concepts/overview.html",
+    "title": "ERP.net Business Logic Concepts | ERP.net Developer Docs",
+    "keywords": "ERP.net Business Logic Concepts This section contains concepts, applicable to all modules."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Developer Docs",
+    "keywords": "Welcome to the ERP.net Technical Documentation The Technical Documentation documents the business logic of ERP.net. It is targeted towards implementation consultants and power users. Learn more Concepts - general concepts, which apply to all modules. Modules - functionality of specific modules. Reference - reference information about the entities, business rules, generations, etc."
+  },
+  "modules/crm/overview.html": {
+    "href": "modules/crm/overview.html",
+    "title": "| ERP.net Developer Docs",
+    "keywords": ""
+  },
+  "modules/overview.html": {
+    "href": "modules/overview.html",
+    "title": "ERP.net Modules | ERP.net Developer Docs",
+    "keywords": "ERP.net Modules"
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Developer Docs",
+    "keywords": "Welcome to the ERP.net Technical Documentation The documentation uses DocFX to build."
+  },
+  "reference/overview.html": {
+    "href": "reference/overview.html",
+    "title": "| ERP.net Developer Docs",
+    "keywords": ""
+  }
+}
