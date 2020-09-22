@@ -1,62 +1,102 @@
 {
-  "concepts/advanced/master-detail-attributes.html": {
-    "href": "concepts/advanced/master-detail-attributes.html",
-    "title": "Master / Detail Attributes | ERP.net Developer Docs",
-    "keywords": "Master / Detail Attributes"
+  "advanced/overview.html": {
+    "href": "advanced/overview.html",
+    "title": "Advanced Section | ERP.net Tech Docs",
+    "keywords": "Advanced Section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced Systems User Data Attributes User Calculated Attributes User Business Rules Track Changes Extensible Data Objects Advanced Concepts Master / Detail Attributes Object / Relational Mapping Aggregates"
   },
-  "concepts/advanced/overview.html": {
-    "href": "concepts/advanced/overview.html",
-    "title": "Advanced Concepts | ERP.net Developer Docs",
-    "keywords": "Advanced Concepts Advanced concepts are required when setting up non-standard ERP Instances. They are targeted mostly towards advanced ERP Implementors and power users."
+  "advanced/user-business-rules/overview.html": {
+    "href": "advanced/user-business-rules/overview.html",
+    "title": "User Business Rules | ERP.net Tech Docs",
+    "keywords": "User Business Rules"
+  },
+  "advanced/user-calculated-attributes/overview.html": {
+    "href": "advanced/user-calculated-attributes/overview.html",
+    "title": "User Calculated Attributes | ERP.net Tech Docs",
+    "keywords": "User Calculated Attributes User Calculated Attributes are user-defined objects, which extend the system entities. Calculated attributes are defined like formulas. When the value of a calculated attribute is requested, it is calculated \"on the fly\", in real time. Note Calculated attribute formulas are compiled to native executable format. Their calculation speed is very similar to the speed of the system defined calculated attributes."
+  },
+  "advanced/user-data-attributes/overview.html": {
+    "href": "advanced/user-data-attributes/overview.html",
+    "title": "User-Defined Attributes | ERP.net Tech Docs",
+    "keywords": "User-Defined Attributes User Data Attributes (also called \"Custom Properties\") allow the user to extend the data model with custom attributes. User-Defined Data Attributes allow the storage of values in the database, extending the system tables. Similarity With System Data Attributes The user-defined data attributes behave mostly like the system data attributes. They can be shown in columns, grouped and filtered in navigators just like system attributes. Again similar to system attributes, they can have default values and shown in the view of data forms. Most of the time, the end users can't distinguish between system and user-defined attributes. It is up to the implementation team to define custom attributes, which fit best the implementation requirements. Note Many custom attributes can easily be defined and set as \"required\". However, this might endanger the whole ERP implementation, since requiring too much data entry for each operation can alienate the end users from the system. Carefully balance the business needs with the end user comfort. More Information To learn more about user-defined attributes (also called \"Custom Properties\"), select a topic below: Create User-Defined Attribute Documents And User-Defined Attributes"
   },
   "concepts/documents.html": {
     "href": "concepts/documents.html",
-    "title": "ERP.net Working With Documents | ERP.net Developer Docs",
+    "title": "ERP.net Working With Documents | ERP.net Tech Docs",
     "keywords": "ERP.net Working With Documents"
   },
   "concepts/fulfillment.html": {
     "href": "concepts/fulfillment.html",
-    "title": "Tracking Fulfillment | ERP.net Developer Docs",
+    "title": "Tracking Fulfillment | ERP.net Tech Docs",
     "keywords": "Tracking Fulfillment"
   },
   "concepts/multi-company.html": {
     "href": "concepts/multi-company.html",
-    "title": "Multi-Company Support In ERP Instances | ERP.net Developer Docs",
+    "title": "Multi-Company Support In ERP Instances | ERP.net Tech Docs",
     "keywords": "Multi-Company Support In ERP Instances"
   },
   "concepts/multi-language.html": {
     "href": "concepts/multi-language.html",
-    "title": "Multi-Language Support In ERP.net | ERP.net Developer Docs",
+    "title": "Multi-Language Support In ERP.net | ERP.net Tech Docs",
     "keywords": "Multi-Language Support In ERP.net"
   },
   "concepts/overview.html": {
     "href": "concepts/overview.html",
-    "title": "ERP.net Business Logic Concepts | ERP.net Developer Docs",
+    "title": "ERP.net Business Logic Concepts | ERP.net Tech Docs",
     "keywords": "ERP.net Business Logic Concepts This section contains concepts, applicable to all modules."
   },
   "index.html": {
     "href": "index.html",
-    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Developer Docs",
+    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",
     "keywords": "Welcome to the ERP.net Technical Documentation The Technical Documentation documents the business logic of ERP.net. It is targeted towards implementation consultants and power users. Learn more Concepts - general concepts, which apply to all modules. Modules - functionality of specific modules. Reference - reference information about the entities, business rules, generations, etc."
+  },
+  "modules/applications/overview.html": {
+    "href": "modules/applications/overview.html",
+    "title": "ERP.net Integrated Applications | ERP.net Tech Docs",
+    "keywords": "ERP.net Integrated Applications ERP.net contains various built-in applications."
+  },
+  "modules/community/overview.html": {
+    "href": "modules/community/overview.html",
+    "title": "ERP.net Community Management | ERP.net Tech Docs",
+    "keywords": "ERP.net Community Management Community Management deals with the management of the external community of a company. This includes all sites, forums, ticketing and support systems involving external users. It also includes the social interaction between internal and external users. Learn More Notifications Social Interactions Digital Marketplace"
   },
   "modules/crm/overview.html": {
     "href": "modules/crm/overview.html",
-    "title": "| ERP.net Developer Docs",
+    "title": "| ERP.net Tech Docs",
     "keywords": ""
+  },
+  "modules/financials/overview.html": {
+    "href": "modules/financials/overview.html",
+    "title": "ERP.net Financials | ERP.net Tech Docs",
+    "keywords": "ERP.net Financials"
+  },
+  "modules/logistics/overview.html": {
+    "href": "modules/logistics/overview.html",
+    "title": "ERP.net Logistics | ERP.net Tech Docs",
+    "keywords": "ERP.net Logistics"
   },
   "modules/overview.html": {
     "href": "modules/overview.html",
-    "title": "ERP.net Modules | ERP.net Developer Docs",
+    "title": "ERP.net Modules | ERP.net Tech Docs",
     "keywords": "ERP.net Modules"
+  },
+  "modules/production/overview.html": {
+    "href": "modules/production/overview.html",
+    "title": "ERP.net Production | ERP.net Tech Docs",
+    "keywords": "ERP.net Production"
+  },
+  "modules/projects/overview.html": {
+    "href": "modules/projects/overview.html",
+    "title": "ERP.net Project Management | ERP.net Tech Docs",
+    "keywords": "ERP.net Project Management"
   },
   "README.html": {
     "href": "README.html",
-    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Developer Docs",
+    "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",
     "keywords": "Welcome to the ERP.net Technical Documentation The documentation uses DocFX to build."
   },
   "reference/overview.html": {
     "href": "reference/overview.html",
-    "title": "| ERP.net Developer Docs",
+    "title": "| ERP.net Tech Docs",
     "keywords": ""
   }
 }
