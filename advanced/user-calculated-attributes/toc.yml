@@ -1,2 +1,4 @@
 - name: Overview
   href: overview.md
+- name: Operators
+  href: operators/toc.yml

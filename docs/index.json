@@ -9,6 +9,16 @@
     "title": "User Business Rules | ERP.net Tech Docs",
     "keywords": "User Business Rules"
   },
+  "advanced/user-calculated-attributes/operators/add.html": {
+    "href": "advanced/user-calculated-attributes/operators/add.html",
+    "title": "ADD - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "ADD - Calculated Attribute Operator Specification Value Name ADD Description The operator returns the sum of two numbers. Parameter 1 Name Number1 Parameter 1 Type numeric type - int, double or decimal Parameter 2 Name Number2 Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name Parameter 3 Type Return Value Number1 + Number2"
+  },
+  "advanced/user-calculated-attributes/operators/adddays.html": {
+    "href": "advanced/user-calculated-attributes/operators/adddays.html",
+    "title": "ADDDAYS - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "ADDDAYS - Calculated Attribute Operator Specification Value Name ADDDAYS Description Adds the specified number of days to the date. Parameter 1 Name Date Parameter 1 Type Date Parameter 2 Name NumDays Parameter 2 Type int Parameter 3 Name Parameter 3 Type Return Value Date + NumDays"
+  },
   "advanced/user-calculated-attributes/overview.html": {
     "href": "advanced/user-calculated-attributes/overview.html",
     "title": "User Calculated Attributes | ERP.net Tech Docs",
