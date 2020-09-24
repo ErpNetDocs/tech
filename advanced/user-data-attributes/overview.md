@@ -1,4 +1,4 @@
-# User-Defined Attributes
+# User Data Attributes
 
 User Data Attributes (also called "Custom Properties") allow the user to extend the data model with custom attributes. User-Defined Data Attributes allow the storage of values in the database, extending the system tables.
 
@@ -18,5 +18,5 @@ Many custom attributes can easily be defined and set as "required". However, thi
 
 To learn more about user-defined attributes (also called "Custom Properties"), select a topic below:
 
-- Create User-Defined Attribute
-- Documents And User-Defined Attributes
+- Create User-Defined Data Attribute
+- Documents And User-Defined Data Attributes
