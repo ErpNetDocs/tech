@@ -6,3 +6,11 @@
   href: and.md
 - name: CAST
   href: cast.md
+  name: CEILING
+  href: ceiling.md
+  name: CONCAT
+  href: concat.md
+  name: CONVERT
+  href: convert.md
+  name: COUNT
+  href: count.md

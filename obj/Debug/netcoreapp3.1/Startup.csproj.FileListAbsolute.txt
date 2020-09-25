@@ -1,9 +1,0 @@
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.csprojAssemblyReference.cache
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.AssemblyInfoInputs.cache
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.AssemblyInfo.cs
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.csproj.CoreCompileInputs.cache
-C:\Users\ivanarj\source\repos\tech\bin\Debug\netcoreapp3.1\Startup.deps.json
-C:\Users\ivanarj\source\repos\tech\bin\Debug\netcoreapp3.1\Startup.dll
-C:\Users\ivanarj\source\repos\tech\bin\Debug\netcoreapp3.1\Startup.pdb
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.dll
-C:\Users\ivanarj\source\repos\tech\obj\Debug\netcoreapp3.1\Startup.pdb
