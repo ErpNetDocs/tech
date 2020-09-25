@@ -1,5 +1,6 @@
 # Generation Procedures Overview
 
+<br>
 
 ![Geneartion Procedure](generation-procedure.svg)
 

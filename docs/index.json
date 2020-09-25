@@ -34,6 +34,26 @@
     "title": "CAST - Calculated Attribute Operator | ERP.net Tech Docs",
     "keywords": "CAST - Calculated Attribute Operator Specification Value Name CAST Description Casts the parameter to the specified type. Parameter 1 Name param Parameter 1 Type any type Parameter 2 Name type Parameter 2 Type string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types. Parameter 3 Name Parameter 3 Type Return Value Returns the param converted to the type. NOTE: Note: The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST)."
   },
+  "advanced/user-calculated-attributes/operators/ceiling.html": {
+    "href": "advanced/user-calculated-attributes/operators/ceiling.html",
+    "title": "CEILING - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "CEILING - Calculated Attribute Operator ​ Name CEILING Description Returns the smallest integer that is greater than or equal to the specified number. Parameter 1 Name Number1 Parameter 1 Type double or decimal Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value The nearest integer which is larger than Number1. Example"
+  },
+  "advanced/user-calculated-attributes/operators/concat.html": {
+    "href": "advanced/user-calculated-attributes/operators/concat.html",
+    "title": "CONCAT - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "CONCAT - Calculated Attribute Operator ​ Name CONCAT Description Concatenates two strings. Parameter 1 Name String1 Parameter 1 Type string Parameter 2 Name String2 Parameter 2 Type string Parameter 3 Name - Parameter 3 Type - Return Value String1 + String2 Example"
+  },
+  "advanced/user-calculated-attributes/operators/convert.html": {
+    "href": "advanced/user-calculated-attributes/operators/convert.html",
+    "title": "CONVERT - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "CONVERT - Calculated Attribute Operator Name CONVERT Description Returns an object of the specified type and whose value is equivalent to the specified object. This conversion requires absolutely correct input data - if the data is not in the correct form, data loss may occur.For example: if the user tries to convert the string value of '3.12' to decimal, the conversion would be successful.If the conversion of the string is not possible, this may lead to data loss, but no error would be returned. Parameter 1 Name param Parameter 1 Type decimal, int, string or date Parameter 2 Name type Parameter 2 Type string - 'System.Int32', 'System.String', 'System.Decimal', 'System.DateTime' and all standard .net types Parameter 3 Name - Parameter 3 Type - Return Value Returns the param converted to the type. Example (the example is explained below)10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:2020: CONVERT EXP:30 CONST:System.Decimal30: CAST ATTRIB: @CustomProperty1 CONST: System.String NOTE: When conversion from CustomPropertyValue to numeric value (for example Decimal) is processed, first a CAST must be applied - the CustomPropertyValue must be cast to string! So, if a user needs to create a value from the standard price per lot of the product multiplied by a coefficient stored as a product's custom property @CustomProperty1, a calculated attribute can be created. If the repository of the product is General.Products.Products, its expressions would be as follows: 10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20 20: CONVERT ATTRIB: @CustomProperty1 CONST: System.Decimal This is incorrect attribute. The values of the custom properties are specific type of value and the CONVERT operator does not know how to convert it. So cast of the custom property value to string is required. The correct version of the calculated attribute is: 10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20 20: CONVERT EXP:30 CONST:System.Decimal 30: CAST ATTRIB: @CustomProperty1 CONST: System.String"
+  },
+  "advanced/user-calculated-attributes/operators/count.html": {
+    "href": "advanced/user-calculated-attributes/operators/count.html",
+    "title": "COUNT - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "COUNT - Calculated Attribute Operator Name COUNT Description Gets the number of elements contained in the list. Parameter 1 Name list Parameter 1 Type list - repository, child. Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value int Example The following example return the number of lines in the current document (SalesOrder): 10: COUNT CHILD: Lines Note: the repository of the attribute is Crm.Sales.SalesOrders. And if we want to expand the example and if we want to get the number of lines with quantity greater than or equal to 10, the following attribute would do the job: 10: COUNT EXP:2020: FILTER CHILD: Lines EXP:3030: GTE ATTRIB: QuantityValue CONST: 10 Introduced In Version 2020.1"
+  },
   "advanced/user-calculated-attributes/overview.html": {
     "href": "advanced/user-calculated-attributes/overview.html",
     "title": "User Calculated Attributes | ERP.net Tech Docs",

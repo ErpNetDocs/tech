@@ -41,7 +41,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/generation-procedures/overview.html",
-          "hash": "wCnkAIiAMsu8w+RAJ7YgBA=="
+          "hash": "iJCzhk+CtT9qYBJKSBi+fw=="
         }
       },
       "is_incremental": false,
@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "eeGRlC61DK5t+hR/uAT3fg=="
+          "hash": "GB2gzwQh3bI9PUrwVIrNGQ=="
         }
       },
       "is_incremental": false,
@@ -126,6 +126,54 @@
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/cast.html",
           "hash": "T7q4tAOCHzUBvvO5ueo5Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/ceiling.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/ceiling.html",
+          "hash": "aLFf4YjYVJm/nkW/l36MwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/concat.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/concat.html",
+          "hash": "XX1uRPyJuKziWoL39LQRMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/convert.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/convert.html",
+          "hash": "doP0fNCQsDBPg+aF2ivezQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/count.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/count.html",
+          "hash": "87dYUTSdTmozGCtiZ3Bd2w=="
         }
       },
       "is_incremental": false,
@@ -234,39 +282,6 @@
         ".html": {
           "relative_path": "concepts/toc.html",
           "hash": "WKe69OyMTYfSfGlZWg/oaA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/fonts/glyphicons-halflings-regular.svg",
-      "output": {
-        "resource": {
-          "relative_path": "docs/fonts/glyphicons-halflings-regular.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/logo.svg",
-      "output": {
-        "resource": {
-          "relative_path": "docs/logo.svg"
         }
       },
       "is_incremental": false,
@@ -441,8 +456,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 26,
-          "skipped_file_count": 25
+          "total_file_count": 30,
+          "skipped_file_count": 30
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
