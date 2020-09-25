@@ -1,6 +1,6 @@
 # COUNT - Calculated Attribute Operator  
 
-| Name                  | COUNT                                                        |
+| Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
 | Description           | Gets the number of elements contained in the list.           |
 | Parameter 1 Name      | list                                                         |
