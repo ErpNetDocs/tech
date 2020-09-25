@@ -1,4 +1,4 @@
-COUNT - Calculated Attribute Operator  
+# COUNT - Calculated Attribute Operator  
 
 | Name                  | COUNT                                                        |
 | --------------------- | ------------------------------------------------------------ |
