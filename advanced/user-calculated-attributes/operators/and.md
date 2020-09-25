@@ -13,5 +13,3 @@
 | Return Value | Condition1 AND Condition2|
 
 > **_NOTE:_**  Parameter 1 and Parameter 2 are optional. If only Parameter 1 has value, the result is its value (Parameter 1).
->
-> >>>>>> 8ed26797327fe9e1fe75cc2f5a8eae7dee42be9e
