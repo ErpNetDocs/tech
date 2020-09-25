@@ -11,7 +11,7 @@
     ],
     "resource": [
       {
-        "files": [ "images/**" ]
+        "files": [ "images/**", "**.svg", "**.png" ]
       }
     ],
     "dest": "docs",

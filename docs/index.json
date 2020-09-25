@@ -24,6 +24,16 @@
     "title": "ADDDAYS - Calculated Attribute Operator | ERP.net Tech Docs",
     "keywords": "ADDDAYS - Calculated Attribute Operator Specification Value Name ADDDAYS Description Adds the specified number of days to the date. Parameter 1 Name Date Parameter 1 Type Date Parameter 2 Name NumDays Parameter 2 Type int Parameter 3 Name Parameter 3 Type Return Value Date + NumDays"
   },
+  "advanced/user-calculated-attributes/operators/and.html": {
+    "href": "advanced/user-calculated-attributes/operators/and.html",
+    "title": "AND - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "AND - Calculated Attribute Operator Specification Value Name AND Description Checks if the two conditions are True. If so - the operator returns True. If any of the specified conditions are not True, the operator returns False. Parameter 1 Name Condition1 Parameter 1 Type boolean Parameter 2 Name Condition2 (optional) Parameter 2 Type boolean Parameter 3 Name Condition3 (optional) Parameter 3 Type boolean Return Value Condition1 AND Condition2 NOTE: Parameter 1 and Parameter 2 are optional. If only Parameter 1 has value, the result is its value (Parameter 1)."
+  },
+  "advanced/user-calculated-attributes/operators/cast.html": {
+    "href": "advanced/user-calculated-attributes/operators/cast.html",
+    "title": "CAST - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "CAST - Calculated Attribute Operator Specification Value Name CAST Description Casts the parameter to the specified type. Parameter 1 Name param Parameter 1 Type any type Parameter 2 Name type Parameter 2 Type string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types. Parameter 3 Name Parameter 3 Type Return Value Returns the param converted to the type. NOTE: Note: The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST)."
+  },
   "advanced/user-calculated-attributes/overview.html": {
     "href": "advanced/user-calculated-attributes/overview.html",
     "title": "User Calculated Attributes | ERP.net Tech Docs",

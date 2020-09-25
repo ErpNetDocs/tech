@@ -25,12 +25,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "advanced/generation-procedures/generation-procedure.SVG",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/generation-procedures/generation-procedure.SVG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "advanced/generation-procedures/overview.md",
       "output": {
         ".html": {
           "relative_path": "advanced/generation-procedures/overview.html",
-          "hash": "42PIiRsGy4cFf7EFqeOaCw=="
+          "hash": "wCnkAIiAMsu8w+RAJ7YgBA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "pN9KEV5YF+8Ad74HBOMeOg=="
+          "hash": "eeGRlC61DK5t+hR/uAT3fg=="
         }
       },
       "is_incremental": false,
@@ -91,6 +102,30 @@
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/adddays.html",
           "hash": "UEQcGM5MX/ldObBBDmsa5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/and.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/and.html",
+          "hash": "EKyp2cCKepYM+ajbBEvOXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/cast.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/cast.html",
+          "hash": "T7q4tAOCHzUBvvO5ueo5Ag=="
         }
       },
       "is_incremental": false,
@@ -199,6 +234,39 @@
         ".html": {
           "relative_path": "concepts/toc.html",
           "hash": "WKe69OyMTYfSfGlZWg/oaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/fonts/glyphicons-halflings-regular.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/fonts/glyphicons-halflings-regular.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/logo.svg"
         }
       },
       "is_incremental": false,
@@ -373,8 +441,15 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 24,
-          "skipped_file_count": 22
+          "total_file_count": 26,
+          "skipped_file_count": 25
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
