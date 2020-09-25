@@ -12,3 +12,5 @@
   href: concat.md
   name: CONVERT
   href: convert.md
+  name: COUNT
+  href: count.md
