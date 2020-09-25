@@ -1,4 +1,4 @@
-#                                                 [CEILING](https://confluence.erp.net/display/techdoc/CEILING)                                    
+#                                                 CEILING - Calculated Attribute Operator                            
 
 ​                                                
 
