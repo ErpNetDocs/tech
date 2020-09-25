@@ -1,8 +1,7 @@
 #                                                 CEILING - Calculated Attribute Operator                            
+                                           
 
-​                                                
-
-| Name             | CEILING                                                      |
+| Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |
 | Description      | Returns the smallest integer that is greater than or equal to the specified number. |
 | Parameter 1 Name | Number1                                                      |
