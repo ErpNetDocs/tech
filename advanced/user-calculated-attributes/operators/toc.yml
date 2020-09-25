@@ -8,3 +8,7 @@
   href: cast.md
   name: CEILING
   href: ceiling.md
+  name: CONCAT
+  href: concat.md
+  name: CONVERT
+  href: convert.md
