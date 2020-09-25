@@ -1,6 +1,6 @@
 # CONVERT - Calculated Attribute Operator  
 
-| Name             | CONVERT                                                      |
+| Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |
 | Description      | Returns an object of the specified type and whose value is equivalent to the specified object. This conversion requires absolutely correct input data - if the data is not in the correct form, data loss may occur.For example: if the user tries to convert the string value of '3.12' to decimal, the conversion would be successful.If the conversion of the string is not possible, this may lead to data loss, but no error would be returned. |
 | Parameter 1 Name | param                                                        |
