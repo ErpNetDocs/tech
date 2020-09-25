@@ -1,8 +1,6 @@
 # CONCAT - Calculated Attribute Operator                                   
 
-​                                                
-
-| Name             | CONCAT                    |
+| Specification    | Value                     |
 | ---------------- | ------------------------- |
 | Description      | Concatenates two strings. |
 | Parameter 1 Name | String1                   |
