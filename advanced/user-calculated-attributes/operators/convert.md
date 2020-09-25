@@ -12,7 +12,7 @@
 | Return Value     | Returns the param converted to the type.                     |
 | Example          | (the example is explained below)10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:2020: CONVERT EXP:30 CONST:System.Decimal30: CAST ATTRIB: @CustomProperty1 CONST: System.String |
 
-> **_NOTE:_** When conversion from CustomPropertyValue to numeric value (for example Decimal) is processed, first a [CAST](https://confluence.erp.net/display/techdoc/CAST) must be applied - the CustomPropertyValue must be cast to string!
+> **_NOTE:_** When conversion from CustomPropertyValue to numeric value (for example Decimal) is processed, first a [CAST](cast.md) must be applied - the CustomPropertyValue must be cast to string!
 
 So, if a user needs to create a value from the standard price per lot of  the product multiplied by a coefficient stored as a product's custom  property @CustomProperty1, a calculated attribute can be created. If the repository of the product is General.Products.Products, its expressions would be as follows:
 
