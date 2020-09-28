@@ -1,7 +1,6 @@
 ---
-uid: caoadd
+uid: cao-add
 ---
-
 # ADD - Calculated Attribute Operator
 
 | Specification | Value |
