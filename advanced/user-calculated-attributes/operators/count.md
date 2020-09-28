@@ -1,4 +1,4 @@
-\ufeff---
+---
 uid: cao-count
 ---
 # COUNT - Calculated Attribute Operator  
