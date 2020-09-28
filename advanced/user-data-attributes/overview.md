@@ -1,5 +1,9 @@
 # User Data Attributes
 
+
+![User Data Attributes](user-data-attributes.png)
+
+
 User Data Attributes (also called "Custom Properties") allow the user to extend the data model with custom attributes. User-Defined Data Attributes allow the storage of values in the database, extending the system tables.
 
 ## Similarity With System Data Attributes
