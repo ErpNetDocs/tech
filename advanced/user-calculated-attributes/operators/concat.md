@@ -1,6 +1,3 @@
----
-summary: A brief description of my document.
----
 # CONCAT - Calculated Attribute Operator                                   
 
 | Specification    | Value                     |
