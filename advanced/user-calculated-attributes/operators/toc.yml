@@ -16,4 +16,5 @@
   href: count.md
 - name: DIVIDE
   href: divide.md
-  
+ - name: EQUAL
+  href: equal.md 
