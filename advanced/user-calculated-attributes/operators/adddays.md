@@ -1,3 +1,6 @@
+﻿---
+uid: cao-adddays
+---
 # ADDDAYS - Calculated Attribute Operator
 
 | Specification | Value |
