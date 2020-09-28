@@ -18,3 +18,5 @@
   href: divide.md
 - name: EQUAL
   href: equal.md 
+- name: FILTER
+  href: filter.md 
