@@ -1,5 +1,5 @@
----
-uid: cao-add
+﻿---
+uid: cao-cast
 ---
 # CAST - Calculated Attribute Operator
 
