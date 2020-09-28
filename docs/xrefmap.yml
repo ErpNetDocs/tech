@@ -1,6 +1,15 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: cao-add
+  name: ADD - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/add.html
+- uid: cao-adddays
+  name: ADDDAYS - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/adddays.html
+- uid: cao-divide
+  name: DIVIDE - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/divide.html
 - uid: documentflow
   name: Document Flow
   href: concepts/document-flow.html
