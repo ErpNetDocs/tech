@@ -14,3 +14,5 @@ uid: cao-add
 | Parameter 3 Name |
 | Parameter 3 Type | 
 | Return Value | Number1 + Number2 |
+
+> **_NOTE:_**  Ensure that the numbers which are summed up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals.
