@@ -1,4 +1,4 @@
 ---
-uid: documentflow
+uid: document-flow
 ---
 # Document Flow
