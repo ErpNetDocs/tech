@@ -119,6 +119,16 @@
     "title": "Business Logic Concepts | ERP.net Tech Docs",
     "keywords": "Business Logic Concepts This section contains concepts, applicable to all modules."
   },
+  "includes/erpnet.html": {
+    "href": "includes/erpnet.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "ERP.net"
+  },
+  "includes/name.html": {
+    "href": "includes/name.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "ERP.net"
+  },
   "index.html": {
     "href": "index.html",
     "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",

@@ -359,6 +359,74 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-data-attributes/user-data-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-data-attributes/user-data-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/fonts/glyphicons-halflings-regular.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/fonts/glyphicons-halflings-regular.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "includes/erpnet.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/erpnet.html",
+          "hash": "lp3l16fgg+uFfjuZ22EAMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "includes/name.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/name.html",
+          "hash": "Kh75RQqOA4snnOGT3Ddnpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -527,8 +595,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 35,
-          "skipped_file_count": 18
+          "total_file_count": 37,
+          "skipped_file_count": 35
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

@@ -34,3 +34,9 @@ references:
 - uid: Documents
   name: Documents
   href: concepts/documents.html
+- uid: erpnet
+  name: erpnet
+  href: includes/erpnet.html
+- uid: name
+  name: name
+  href: includes/name.html
