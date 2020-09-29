@@ -1,3 +1,6 @@
+﻿---
+uid: cao-cast
+---
 # CAST - Calculated Attribute Operator
 
 | Specification | Value |
