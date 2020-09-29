@@ -41,7 +41,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/generation-procedures/overview.html",
-          "hash": "ww4pptt3aZucCe53pkszHA=="
+          "hash": "aeTiHHeHs74LYwb6wC4jeg=="
         }
       },
       "is_incremental": false,
@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "RlclbRh5LvQAD2+LP+Z3pA=="
+          "hash": "muOkjAGQtHTtVl+AUfrscg=="
         }
       },
       "is_incremental": false,
@@ -89,7 +89,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/add.html",
-          "hash": "lbLj8fAMlWi5Otvcp/Mvvw=="
+          "hash": "MZUH+Wasomz1PHoMfDcSjA=="
         }
       },
       "is_incremental": false,
@@ -125,7 +125,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/cast.html",
-          "hash": "T7q4tAOCHzUBvvO5ueo5Ag=="
+          "hash": "W4s9Lo9KhF+7tpcNISf3wg=="
         }
       },
       "is_incremental": false,
@@ -161,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/convert.html",
-          "hash": "DlWWefjBG5eQLJS5BDaYLw=="
+          "hash": "i0VIDtdQBpBdXgb9tefpzQ=="
         }
       },
       "is_incremental": false,
@@ -173,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/count.html",
-          "hash": "90qXqJLhyewTPc41CoP8JQ=="
+          "hash": "f61i12xCDVpruP2Rns7Vqg=="
         }
       },
       "is_incremental": false,
@@ -186,6 +186,54 @@
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/divide.html",
           "hash": "Scz4b120oF1rhxQytLHM1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/equal.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/equal.html",
+          "hash": "pUlGO9pXEStdztvGxAXQLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/filter.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/filter.html",
+          "hash": "V1jeVdbNP9HHturGZBeAqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/first.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/first.html",
+          "hash": "1KK4RyEhCo34Rm3SURCbJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/floor.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/floor.html",
+          "hash": "Yu4lSs1dqpoqbvIZt7vS0w=="
         }
       },
       "is_incremental": false,
@@ -209,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-data-attributes/overview.html",
-          "hash": "oUgcyksu2S461jJEYjxhWw=="
+          "hash": "i7NEbkoURZb4Fw/180CQnw=="
         }
       },
       "is_incremental": false,
@@ -305,50 +353,6 @@
         ".html": {
           "relative_path": "concepts/toc.html",
           "hash": "WKe69OyMTYfSfGlZWg/oaA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/advanced/generation-procedures/generation-procedure.SVG"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/advanced/user-data-attributes/user-data-attributes.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/advanced/user-data-attributes/user-data-attributes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/fonts/glyphicons-halflings-regular.svg",
-      "output": {
-        "resource": {
-          "relative_path": "docs/fonts/glyphicons-halflings-regular.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/logo.svg",
-      "output": {
-        "resource": {
-          "relative_path": "docs/logo.svg"
         }
       },
       "is_incremental": false,
@@ -523,8 +527,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 31,
-          "skipped_file_count": 31
+          "total_file_count": 35,
+          "skipped_file_count": 18
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

@@ -2,7 +2,7 @@
   "advanced/generation-procedures/overview.html": {
     "href": "advanced/generation-procedures/overview.html",
     "title": "Generation Procedures Overview | ERP.net Tech Docs",
-    "keywords": "Generation Procedures Overview Generation Procedures are automated procedures, which generate Documents from other documents. They are the basis for the @DocumentFlow. Generation Procedures are the arrows in the document flow diagrams. Setup In order to start generating documents, the Generation Procedures need to be configured. The configuration is performed in the Document Type entity, in the Document Type Routes child entity. Each Document Type Route is a configuration for a single Generation Procedure."
+    "keywords": "Generation Procedures Overview Generation Procedures are automated procedures, which generate Documents from other documents. They are the basis for the @document-flow. Generation Procedures are the arrows in the document flow diagrams. Setup In order to start generating documents, the Generation Procedures need to be configured. The configuration is performed in the Document Type entity, in the Document Type Routes child entity. Each Document Type Route is a configuration for a single Generation Procedure."
   },
   "advanced/overview.html": {
     "href": "advanced/overview.html",
@@ -17,7 +17,7 @@
   "advanced/user-calculated-attributes/operators/add.html": {
     "href": "advanced/user-calculated-attributes/operators/add.html",
     "title": "ADD - Calculated Attribute Operator | ERP.net Tech Docs",
-    "keywords": "ADD - Calculated Attribute Operator Specification Value Name ADD Description The operator returns the sum of two numbers. Parameter 1 Name Number1 Parameter 1 Type numeric type - int, double or decimal Parameter 2 Name Number2 Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name Parameter 3 Type Return Value Number1 + Number2"
+    "keywords": "ADD - Calculated Attribute Operator Specification Value Name ADD Description The operator returns the sum of two numbers. Parameter 1 Name Number1 Parameter 1 Type numeric type - int, double or decimal Parameter 2 Name Number2 Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name Parameter 3 Type Return Value Number1 + Number2 NOTE: Ensure that the numbers which are summed up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals."
   },
   "advanced/user-calculated-attributes/operators/adddays.html": {
     "href": "advanced/user-calculated-attributes/operators/adddays.html",
@@ -51,13 +51,33 @@
   },
   "advanced/user-calculated-attributes/operators/count.html": {
     "href": "advanced/user-calculated-attributes/operators/count.html",
-    "title": "uid: cao-count | ERP.net Tech Docs",
-    "keywords": "uid: cao-count COUNT - Calculated Attribute Operator Specification Value Description Gets the number of elements contained in the list. Parameter 1 Name list Parameter 1 Type list - repository, child. Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value int Example The following example return the number of lines in the current document (SalesOrder): 10: COUNT CHILD: Lines Note: the repository of the attribute is Crm.Sales.SalesOrders. And if we want to expand the example and if we want to get the number of lines with quantity greater than or equal to 10, the following attribute would do the job: 10: COUNT EXP:2020: FILTER CHILD: Lines EXP:3030: GTE ATTRIB: QuantityValue CONST: 10 Introduced In Version 2020.1"
+    "title": "COUNT | ERP.net Tech Docs",
+    "keywords": "COUNT Specification Value Description Gets the number of elements contained in the list. Parameter 1 Name list Parameter 1 Type list - repository, child. Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value int Introduced In Version 2020.1 Example The following example return the number of lines in the current document (SalesOrder): 10: COUNT CHILD: Lines Note The repository of the attribute is Crm.Sales.SalesOrders If we want to expand the example and if we want to get the number of lines with quantity greater than or equal to 10, the following attribute would do the job: 10: COUNT EXP:20 20: FILTER CHILD: Lines EXP:30 30: GTE ATTRIB: QuantityValue CONST: 10"
   },
   "advanced/user-calculated-attributes/operators/divide.html": {
     "href": "advanced/user-calculated-attributes/operators/divide.html",
     "title": "DIVIDE - Calculated Attribute Operator | ERP.net Tech Docs",
     "keywords": "DIVIDE - Calculated Attribute Operator Specification Value Name DIVIDE Description Divide one number by second number Parameter 1 Name Number1 Parameter 1 Type numeric type - int, double or decimal Parameter 2 Name Number2 Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name Parameter 3 Type Return Value Number1 / Number2"
+  },
+  "advanced/user-calculated-attributes/operators/equal.html": {
+    "href": "advanced/user-calculated-attributes/operators/equal.html",
+    "title": "EQUAL - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "EQUAL - Calculated Attribute Operator Specification Value Name EQUAL Description Checks if two values are equal. If they are equal, the return value is True, else - the return value is False. Parameter 1 Name Value1 Parameter 1 Type numeric type - int, double or decimal; string; Parameter 2 Name Value2 Parameter 2 Type numeric type - int, double or decimal; string; Parameter 3 Name Parameter 3 Type Return Value boolean (True or False)"
+  },
+  "advanced/user-calculated-attributes/operators/filter.html": {
+    "href": "advanced/user-calculated-attributes/operators/filter.html",
+    "title": "FILTER - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "FILTER - Calculated Attribute Operator Specification Value Name FILTER Description Filters the specified list by the condition. Parameter 1 Name list Parameter 1 Type list of objects Parameter 2 Name condition Parameter 2 Type boolean Parameter 3 Name Parameter 3 Type Return Value Returns sub-list, which meets the condition."
+  },
+  "advanced/user-calculated-attributes/operators/first.html": {
+    "href": "advanced/user-calculated-attributes/operators/first.html",
+    "title": "FIRST - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "FIRST - Calculated Attribute Operator Specification Value Name FIRST Description Returns the first element in the list. Parameter 1 Name list Parameter 1 Type list of objects Parameter 2 Name Parameter 2 Type Parameter 3 Name Parameter 3 Type Return Value Returns the first element of list."
+  },
+  "advanced/user-calculated-attributes/operators/floor.html": {
+    "href": "advanced/user-calculated-attributes/operators/floor.html",
+    "title": "FLOOR - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "FLOOR - Calculated Attribute Operator Specification Value Name FLOOR Description Returns the largest integer less than or equal to the specified number. Parameter 1 Name Number1 Parameter 1 Type double or decimal Parameter 2 Name Parameter 2 Type Parameter 3 Name Parameter 3 Type Return Value Returns the largest integer less than or equal to Number1."
   },
   "advanced/user-calculated-attributes/overview.html": {
     "href": "advanced/user-calculated-attributes/overview.html",

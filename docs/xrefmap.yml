@@ -7,9 +7,27 @@ references:
 - uid: cao-adddays
   name: ADDDAYS - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/adddays.html
+- uid: cao-cast
+  name: CAST - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/cast.html
+- uid: cao-COUNT
+  name: COUNT
+  href: advanced/user-calculated-attributes/operators/count.html
 - uid: cao-divide
   name: DIVIDE - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/divide.html
+- uid: cao-equal
+  name: EQUAL - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/equal.html
+- uid: cao-filter
+  name: FILTER - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/filter.html
+- uid: cao-first
+  name: FIRST - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/first.html
+- uid: cao-floor
+  name: FLOOR - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/floor.html
 - uid: documentflow
   name: Document Flow
   href: concepts/document-flow.html
