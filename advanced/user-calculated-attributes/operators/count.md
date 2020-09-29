@@ -1,6 +1,8 @@
-uid: cao-count
 ---
-# COUNT - Calculated Attribute Operator  
+uid: cao-COUNT
+---
+
+# COUNT
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -12,6 +14,23 @@ uid: cao-count
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
 | Return Value          | int                                                          |
-| Example               | The following example return the number of lines in the current document (SalesOrder):<br>10: COUNT CHILD: Lines <br/><br/>**Note:** the repository of the attribute is *Crm.Sales.SalesOrders.* <br><br/>And if we want to expand the example and if we want to get the number of  lines with quantity greater than or equal to 10, the following attribute would do the job:<br>10: COUNT EXP:2020: FILTER CHILD: Lines EXP:3030: GTE ATTRIB: QuantityValue CONST: 10 |
 | Introduced In Version | 2020.1                                                       |
 
+## Example
+
+The following example return the number of lines in the current document (SalesOrder):
+
+```
+10: COUNT CHILD: Lines
+```
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrders*
+
+If we want to expand the example and if we want to get the number of  lines with quantity greater than or equal to 10, the following attribute would do the job:
+
+```
+10: COUNT EXP:20
+20: FILTER CHILD: Lines EXP:30
+30: GTE ATTRIB: QuantityValue CONST: 10
+```
