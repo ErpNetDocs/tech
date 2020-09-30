@@ -2,64 +2,64 @@
 sorted: true
 references:
 - uid: cao-ADD
-  name: ADD
+  name: ADD - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/add.html
 - uid: cao-ADDDAYS
-  name: ADDDAYS
+  name: ADDDAYS - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/adddays.html
 - uid: cao-AND
-  name: AND
+  name: AND - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/and.html
 - uid: cao-CAST
   name: CAST - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/cast.html
 - uid: cao-CEILING
-  name: CEILING
+  name: CEILING - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/ceiling.html
 - uid: cao-CONCAT
-  name: CONCAT
+  name: CONCAT - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/concat.html
 - uid: cao-CONVERT
-  name: CONVERT
+  name: CONVERT - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/convert.html
 - uid: cao-COUNT
-  name: COUNT
+  name: COUNT - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/count.html
 - uid: cao-DIVIDE
-  name: DIVIDE
+  name: DIVIDE - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/divide.html
 - uid: cao-EQUAL
-  name: EQUAL
+  name: EQUAL - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/equal.html
 - uid: cao-FILTER
-  name: FILTER
+  name: FILTER - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/filter.html
 - uid: cao-FIRST
-  name: FIRST
+  name: FIRST - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/first.html
 - uid: cao-FLOOR
-  name: FLOOR
+  name: FLOOR - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/floor.html
 - uid: cao-FORMATSTRING
-  name: FORMATSTRING
+  name: FORMATSTRING - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/formatstring.html
 - uid: cao-GETOBJVALUE
-  name: GETOBJVALUE
+  name: GETOBJVALUE - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/getobjvalue.html
 - uid: cao-GETVALUE
-  name: GETVALUE
+  name: GETVALUE - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/getvalue.html
 - uid: cao-GT
-  name: GT
+  name: GT - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/gt.html
 - uid: cao-GTE
-  name: GTE
+  name: GTE - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/gte.html
 - uid: cao-IIF
-  name: IIF
+  name: IIF - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/iif.html
 - uid: cao-IN
-  name: IN
+  name: IN - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/in.html
 - uid: document-flow
   name: Document Flow
