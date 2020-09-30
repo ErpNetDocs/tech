@@ -10,6 +10,4 @@
 | Parameter 2 Type | -                                                            |
 | Parameter 3 Name | -                                                            |
 | Parameter 3 Type | -                                                            |
-| Return Value     | The nearest integer which is larger than Number1.            |
-| Example          |                                                              |
-
+| Return Value     | The nearest integer which is larger than Number1.            |                                                           |
