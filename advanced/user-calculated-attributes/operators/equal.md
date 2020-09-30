@@ -1,5 +1,5 @@
-﻿---
-uid: cao-equal
+---
+uid: cao-EQUAL
 ---
 # EQUAL - Calculated Attribute Operator
 
@@ -14,3 +14,6 @@ uid: cao-equal
 | Parameter 3 Name |
 | Parameter 3 Type | 
 | Return Value | boolean (True or False) |
+
+> [!NOTE]
+> Ensure that the values which are compared up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or strings.
