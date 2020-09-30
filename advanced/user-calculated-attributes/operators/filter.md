@@ -1,6 +1,7 @@
-﻿---
-uid: cao-filter
 ---
+uid: cao-FILTER
+---
+
 # FILTER - Calculated Attribute Operator
 
 | Specification | Value |
