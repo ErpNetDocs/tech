@@ -18,7 +18,7 @@ uid: cao-GT
 
 ## Example
 
-See @(Compare Unit Price And Standard Unit Price).
+See the example in @(Compare Unit Price And Standard Unit Price).
 
 > [!NOTE]
 > Ensure that the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
