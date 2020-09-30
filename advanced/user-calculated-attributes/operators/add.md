@@ -27,8 +27,10 @@ Name: TotalUsedQuantity
 
 And the Calculated Attribute expressions are as follows:
 
+```
 10: ADD ATTRIB:UsageQuantityValue EXP:20
 20: MULTIPLY ATTRIB:UsageQuantityValue ATTRIB:ScrapRate
+```
 
 ```
 Explanation:
