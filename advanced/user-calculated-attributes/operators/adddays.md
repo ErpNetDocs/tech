@@ -1,4 +1,4 @@
-﻿---
+---
 uid: cao-adddays
 ---
 # ADDDAYS - Calculated Attribute Operator
@@ -14,3 +14,6 @@ uid: cao-adddays
 | Parameter 3 Name |
 | Parameter 3 Type | 
 | Return Value | Date + NumDays |
+
+## Example
+See the example in @(Specific Day From Document Date).
