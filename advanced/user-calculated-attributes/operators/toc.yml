@@ -32,3 +32,6 @@
   href: getvalue.md 
 - name: GT
   href: gt.md   
+- name: GTE
+  href: gte.md 
+  
