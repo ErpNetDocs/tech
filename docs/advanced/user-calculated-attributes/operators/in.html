@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ERP.net Project Management | ERP.net Tech Docs </title>
+    <title>IN | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ERP.net Project Management | ERP.net Tech Docs ">
+    <meta name="title" content="IN | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,9 +76,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="erpnet-project-management">ERP.net Project Management</h1>
+            <article class="content wrap" id="_content" data-uid="cao-IN">
+<h1 id="in">IN</h1>
 
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Determines whether a specified value matches any value in a list. The operator is used in combination with SELECT and FILTER as condition. It can be used to search through values of string and guid types. It cannot be used to search through numeric values or dates.</td>
+</tr>
+<tr>
+<td>Parameter 1 Name</td>
+<td>param</td>
+</tr>
+<tr>
+<td>Parameter 1 Type</td>
+<td>String or Guid</td>
+</tr>
+<tr>
+<td>Parameter 2 Name</td>
+<td>list of values</td>
+</tr>
+<tr>
+<td>Parameter 2 Type</td>
+<td>the values must be equal to the param type</td>
+</tr>
+<tr>
+<td>Parameter 3 Name</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Parameter 3 Type</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Return Value</td>
+<td>True or False depending on if param equals a member of the list of values.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<p>Extract all sales orders with document types DocumentTypeId = 'f207c991-6289-47f9-85ca-f85cd2864263' and DocumentTypeId = '4acbc342-c7e2-43b9-b63c-cb51d20e5ab4'. The calculated attribute would contain the following expressions:</p>
+<pre><code>10: SELECT REPO: Crm.Sales.SalesOrders EXP: 20
+20: WHERE EXP:30
+30: IN ATTRIB: DocumentTypeId CONST: f207c991-6289-47f9-85ca-f85cd2864263, 4acbc342-c7e2-43b9-b63c-cb51d20e5ab4
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Single quotes are only necessary when the values which we compare to are strings.</p>
+</div>
 </article>
           </div>
           
@@ -87,7 +139,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/in.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -113,8 +165,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
