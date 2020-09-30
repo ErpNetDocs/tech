@@ -28,3 +28,6 @@
   href: formatstring.md 
 - name: GETOBJVALUE
   href: getobjvalue.md   
+- name: GETVALUE
+  href: getvalue.md 
+  
