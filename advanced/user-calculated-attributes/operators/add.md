@@ -1,7 +1,7 @@
 ---
 uid: cao-ADD
 ---
-# ADD
+# ADD - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |

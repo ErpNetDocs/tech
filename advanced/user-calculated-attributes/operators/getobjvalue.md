@@ -2,7 +2,7 @@
 uid: cao-GETOBJVALUE
 ---
 
-# GETOBJVALUE
+# GETOBJVALUE - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

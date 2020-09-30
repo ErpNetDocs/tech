@@ -2,7 +2,7 @@
 uid: cao-IIF
 ---
 
-# IIF
+# IIF - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

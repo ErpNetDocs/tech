@@ -2,7 +2,7 @@
 uid: cao-GTE
 ---
 
-# GTE
+# GTE - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

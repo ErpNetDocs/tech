@@ -2,7 +2,7 @@
 uid: cao-FILTER
 ---
 
-# FILTER
+# FILTER - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |

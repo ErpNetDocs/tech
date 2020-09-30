@@ -2,7 +2,7 @@
 uid: cao-GT
 ---
 
-# GT
+# GT - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

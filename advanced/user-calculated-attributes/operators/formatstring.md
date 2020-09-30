@@ -2,7 +2,7 @@
 uid: cao-FORMATSTRING
 ---
 
-# FORMATSTRING
+# FORMATSTRING - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

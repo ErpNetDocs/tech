@@ -2,7 +2,7 @@
 uid: cao-GETVALUE
 ---
 
-# GETVALUE
+# GETVALUE - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

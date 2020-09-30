@@ -2,7 +2,7 @@
 uid: cao-CONVERT
 ---
 
-# CONVERT
+# CONVERT - Calculated Attribute Operator
 
 | Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |

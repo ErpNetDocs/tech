@@ -1,7 +1,7 @@
 ---
 uid: cao-EQUAL
 ---
-# EQUAL
+# EQUAL - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |

@@ -2,7 +2,7 @@
 uid: cao-COUNT
 ---
 
-# COUNT
+# COUNT - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

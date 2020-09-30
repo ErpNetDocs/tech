@@ -2,7 +2,7 @@
 uid: cao-FIRST
 ---
 
-# FIRST
+# FIRST - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |

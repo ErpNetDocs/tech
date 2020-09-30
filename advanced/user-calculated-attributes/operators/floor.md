@@ -2,7 +2,7 @@
 uid: cao-FLOOR
 ---
 
-# FLOOR
+# FLOOR - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |

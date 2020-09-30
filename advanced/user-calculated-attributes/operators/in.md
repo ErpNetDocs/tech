@@ -2,7 +2,7 @@
 uid: cao-IN
 ---
 
-# IN
+# IN - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |

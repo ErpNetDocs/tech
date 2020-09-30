@@ -1,7 +1,7 @@
 ---
 uid: cao-DIVIDE
 ---
-# DIVIDE
+# DIVIDE - Calculated Attribute Operator
 
 | Specification | Value |
 | ---- | ----- |
