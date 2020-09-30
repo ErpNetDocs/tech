@@ -1,3 +1,7 @@
+---
+uid: cao-AND
+---
+
 # AND - Calculated Attribute Operator
 
 | Specification | Value |
