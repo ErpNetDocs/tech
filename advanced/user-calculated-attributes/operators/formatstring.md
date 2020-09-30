@@ -21,7 +21,7 @@ uid: cao-FORMATSTRING
 The following expression:
 ```
 FORMATSTRING CONST:150 CONST: C3
-returns "150.000 $" (and the decimal symbol separator and the currency symbol depends on the local regional settings)
+returns "150.000 $" (and the decimal symbol separator and the currency symbol depends on the local regional settings).
 ```
 For more information about the supported format specifiers, see @(Format Specifiers).
 > [!NOTE]
@@ -37,5 +37,5 @@ The output of the calculated attribute would be "150,000000" (the decimal symbol
 - FORMATSTRING CONST:150 CONST: C
 The output of the calculated attribute would be "150.00 $" (the currency depends on the local regional settings).
 - c
-The output of the calculated attribute would be "150.00 $" (the currency depends on the local regional settings)
+The output of the calculated attribute would be "150.00 $" (the currency depends on the local regional settings).
 ```
