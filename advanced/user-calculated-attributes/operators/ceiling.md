@@ -2,7 +2,7 @@
 uid: cao-CEILING
 ---
 
-# CEILING - Calculated Attribute Operator                                                                       
+# CEILING                                                                   
 
 | Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |

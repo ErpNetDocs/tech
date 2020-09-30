@@ -1,7 +1,7 @@
 ---
 uid: cao-ADDDAYS
 ---
-# ADDDAYS - Calculated Attribute Operator
+# ADDDAYS
 
 | Specification | Value |
 | ---- | ----- |
@@ -12,7 +12,7 @@ uid: cao-ADDDAYS
 | Parameter 2 Name | NumDays |
 | Parameter 2 Type | int |
 | Parameter 3 Name |
-| Parameter 3 Type | 
+| Parameter 3 Type |
 | Return Value | Date + NumDays |
 
 ## Example

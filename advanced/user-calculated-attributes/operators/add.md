@@ -1,7 +1,7 @@
 ---
 uid: cao-ADD
 ---
-# ADD - Calculated Attribute Operator
+# ADD
 
 | Specification | Value |
 | ---- | ----- |
@@ -12,7 +12,7 @@ uid: cao-ADD
 | Parameter 2 Name | Number2 |
 | Parameter 2 Type | numeric type - int, double or decimal |
 | Parameter 3 Name |
-| Parameter 3 Type | 
+| Parameter 3 Type |
 | Return Value | Number1 + Number2 |
 
 > [!NOTE]

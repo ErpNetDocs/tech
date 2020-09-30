@@ -1,7 +1,7 @@
 ---
 uid: cao-EQUAL
 ---
-# EQUAL - Calculated Attribute Operator
+# EQUAL
 
 | Specification | Value |
 | ---- | ----- |
@@ -12,7 +12,7 @@ uid: cao-EQUAL
 | Parameter 2 Name | Value2 |
 | Parameter 2 Type | numeric type - int, double or decimal; string; |
 | Parameter 3 Name |
-| Parameter 3 Type | 
+| Parameter 3 Type |
 | Return Value | boolean (True or False) |
 
 > [!NOTE]

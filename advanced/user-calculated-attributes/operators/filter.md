@@ -2,7 +2,7 @@
 uid: cao-FILTER
 ---
 
-# FILTER - Calculated Attribute Operator
+# FILTER
 
 | Specification | Value |
 | ---- | ----- |
@@ -13,5 +13,5 @@ uid: cao-FILTER
 | Parameter 2 Name | condition |
 | Parameter 2 Type | boolean |
 | Parameter 3 Name |
-| Parameter 3 Type | 
+| Parameter 3 Type |
 | Return Value | Returns sub-list, which meets the condition. |
