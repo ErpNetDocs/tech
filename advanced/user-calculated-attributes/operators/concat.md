@@ -1,3 +1,7 @@
+---
+uid: cao-CONCAT
+---
+
 # CONCAT - Calculated Attribute Operator                                   
 
 | Specification    | Value                     |
