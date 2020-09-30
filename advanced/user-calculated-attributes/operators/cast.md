@@ -1,4 +1,4 @@
-﻿---
+---
 uid: cao-cast
 ---
 # CAST - Calculated Attribute Operator
@@ -15,4 +15,8 @@ uid: cao-cast
 | Parameter 3 Type | 
 | Return Value | Returns the param converted to the type. |
 
-> **_NOTE:_**  Note: The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
+> [!NOTE]
+> The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
+
+## Example
+See the example in @(How to get specific field of a parent document?)
