@@ -12,4 +12,6 @@
 | Parameter 3 Type |  boolean |
 | Return Value | Condition1 AND Condition2|
 
-> **_NOTE:_**  Parameter 1 and Parameter 2 are optional. If only Parameter 1 has value, the result is its value (Parameter 1).
+> [!NOTE]
+> Parameter 1 and Parameter 2 are optional.
+> If only Parameter 1 has value, the result is its value (Parameter 1).
