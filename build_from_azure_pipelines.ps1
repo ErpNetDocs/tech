@@ -36,4 +36,6 @@ Invoke-Expression "$docfx build"
 
 Write-Host "Upload Changes to Github"
 git add -A
+$now = [System.DateTime]::Now.ToShortTimeString();
+git commit -m "Latest changes from buid bot: $now"
 git push ssh master
