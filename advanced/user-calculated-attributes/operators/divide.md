@@ -1,5 +1,5 @@
-﻿---
-uid: cao-divide
+---
+uid: cao-DIVIDE
 ---
 # DIVIDE - Calculated Attribute Operator
 
