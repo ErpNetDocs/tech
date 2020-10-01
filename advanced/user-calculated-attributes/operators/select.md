@@ -23,7 +23,6 @@ uid: cao-SELECT
 The WHERE clause of the SELECT statement supports the following operators:
 
 - [AND](and.md)
-
 - [TOP](top.md)
 
 - [EQUAL](equal.md)
