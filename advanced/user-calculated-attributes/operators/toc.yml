@@ -54,4 +54,5 @@
   href: lte.md 
 - name: MULTIPLY
   href: multiply.md   
-  
+- name: NOT
+  href: not.md    
