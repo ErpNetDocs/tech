@@ -19,4 +19,4 @@ uid: cao-ADD
 > Ensure that the numbers which are summed up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals.
 
 ## Example
-See the example in [Total Quantity And Scrap Quantity In Recipe Ingredients](ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md)
+See the example in [Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md)
