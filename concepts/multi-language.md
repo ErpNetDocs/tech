@@ -22,6 +22,8 @@ The client applications of @@name usually allow the following abilities regardin
 
 When entering translations for a multi-language string, the client application usually displays a table with cells for each language translation, similar to this:
 
+| Language | Value |
+| ---- | ----- |
 | EN: | Toothpaste |
 | DE: | Zahnpasta |
 
