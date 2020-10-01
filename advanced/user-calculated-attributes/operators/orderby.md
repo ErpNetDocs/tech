@@ -20,10 +20,7 @@ uid: cao-ORDERBY
 
 ```
 10: SELECT REPO:General.Products.Products EXP:20
-
 20: TOP CONST:5 EXP:30
-
 30: ORDERBY ATTR:PartNumber CONST:ASC EXP:40
-
 40: WHERE ...
 ```
