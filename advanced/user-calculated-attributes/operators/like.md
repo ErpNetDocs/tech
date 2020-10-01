@@ -37,8 +37,8 @@ Calculated Attribute:
 
 Repository: General.Products.Products
 ```
-10 LIKE EXP 20 CONST %shoe_
-20 CAST ATTRIB Name CONST System.String
+10 LIKE EXP:20 CONST:%shoe_
+20 CAST ATTRIB:Name CONST:System.String
 ```
 
 Calculated Attribute Result:
