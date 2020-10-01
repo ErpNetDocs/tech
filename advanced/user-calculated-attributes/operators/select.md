@@ -48,21 +48,21 @@ Here are some examples to picture the information by far:
 If there is a need of a list of documents which DocumentTypeId is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are Work Orders. So the following calculated attribute would be incorrect:
 
 ```
-10: SELECT REPO: Production.ShopFloor.WorkOrders EXP: 20
-20: WHERE EXP: 30
-30: OR EXP: 40 EXP: 50
-40: EQUAL CONST: bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
-45: ATTRIB: DocumentTypeId CONST: System.Guid
-50: EQUAL EXP:45 CONST: 89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+10: SELECT REPO:Production.ShopFloor.WorkOrders EXP: 20
+20: WHERE EXP:30
+30: OR EXP:40 EXP:50
+40: EQUAL CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL EXP:45 CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
 ```
 
 This calculated attribute is incorrect and would return errors when used. So, we can set calculated attribute which selects the work orders and then to filter the list, which the SELECT operator returned and apply the FILTER operator for more precision. So the correct calculated attribute is as follows:
 
 ```
-10: FILTER EXP:20 EXP: 30
-20: SELECT REPO: Production.ShopFloor.WorkOrders 
-30: OR EXP: 40 EXP: 50
-40: EQUAL EXP:45 CONST: bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
-45: CAST ATTRIB: DocumentTypeId CONST: System.Guid
-50: EQUAL ATTRIB: DocumentTypeId CONST: 89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+10: FILTER EXP:20 EXP:30
+20: SELECT REPO:Production.ShopFloor.WorkOrders 
+30: OR EXP:40 EXP:50
+40: EQUAL EXP:45 CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: CAST ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL ATTRIB:DocumentTypeId CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
 ```
