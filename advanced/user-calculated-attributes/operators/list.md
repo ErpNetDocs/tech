@@ -21,7 +21,7 @@ uid: cao-LIST
 
 Repository: Crm.Sales.SalesOrders 
 ```
-10: LIST   CHILD: Lines   EXP: 20 CONST: '; '
-20: GETOBJVALUE    REF: Product     ATTRIB: Name
+10: LIST CHILD:Lines   EXP:20 CONST:'; '
+20: GETOBJVALUE REF:Product ATTRIB:Name
 ```
 Returned Value: 'ProductsName1; ProductName2 ...'
