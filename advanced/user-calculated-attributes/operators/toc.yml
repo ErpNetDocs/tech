@@ -80,3 +80,6 @@
   href: sum.md
 - name: TODAY
   href: today.md  
+- name: TOLOWER
+  href: tolower.md  
+  
