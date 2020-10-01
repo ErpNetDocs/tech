@@ -42,4 +42,5 @@
   href: incnum.md 
 - name: LEFT
   href: left.md
-  
+- name: LEN
+  href: len.md  
