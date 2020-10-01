@@ -56,3 +56,7 @@
   href: multiply.md   
 - name: NOT
   href: not.md    
+- name: OR
+  href: or.md
+- name: ORDERBY
+  href: orderby.md  
