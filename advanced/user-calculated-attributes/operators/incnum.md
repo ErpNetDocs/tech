@@ -19,12 +19,12 @@ uid: cao-INCNUM
 ## Examples
 
 ```
-If the user tries to increment the string value 'AA01', the incrementation will be successful and result will be 'AA02'; 
+If the user tries to increment the string value 'AA01', the incrementation will be successful and result will be 'AA02'. 
 
 If the user tries to increment a value whoоse type is Decimal, Int or Date,
-the incrementation won't be successful and the Calculated Attribute won't be compilated;
+the incrementation won't be successful and the Calculated Attribute won't be compilated.
 
-Also if the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.
+If the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.
 
 The INCNUM operator can be used for consecutive numbering of documents and nomenclatures.
 ```
