@@ -46,3 +46,5 @@
   href: len.md  
 - name: LIKE
   href: like.md 
+- name: LIST
+  href: list.md 
