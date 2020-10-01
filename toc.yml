@@ -1,8 +1,8 @@
 ﻿- name: Concepts
   href: concepts/
-- name: Modules
+- name: Functionality
   href: modules/
 - name: Advanced
   href: advanced/  
-- name: Reference
-  href: reference/
+- name: Model
+  href: https://erpnetdocs.github.io/model
