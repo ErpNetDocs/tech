@@ -18,7 +18,7 @@ uid: cao-INCNUM
 
 ## Examples
 
-```
+
 If the user tries to increment the string value 'AA01', the incrementation will be successful and result will be 'AA02'. 
 
 If the user tries to increment a value whoоse type is Decimal, Int or Date,
@@ -27,7 +27,7 @@ the incrementation won't be successful and the Calculated Attribute won't be com
 If the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.
 
 The INCNUM operator can be used for consecutive numbering of documents and nomenclatures.
-```
+
 
 This simple example returns 'AA02':
 
@@ -35,8 +35,8 @@ This simple example returns 'AA02':
 10: INCNUM CONST:AA01
 ```
 The example below shows how to increase the LotNumber of the Lot by 1 with the INCNUM operator:
-```
-Logistics.Inventory.Lots =>
 
+Logistics.Inventory.Lots =>
+```
 10: INCNUM ATTRIB:Number 
 ```
