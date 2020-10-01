@@ -29,12 +29,19 @@ For more information about the supported format specifiers, see @(Format Specifi
 
 If we have a calculated attribute with the following expression (the repository is not important):
 
-
-- FORMATSTRING CONST:2020-03-15 CONST: yyyy MM dddd
+```
+FORMATSTRING CONST:2020-03-15 CONST:yyyy MM dddd
+```
 The output of the calculated attribute would be "2020 03 Sunday".
-- FORMATSTRING CONST:150 CONST: n6
+```
+FORMATSTRING CONST:150 CONST:n6
+```
 The output of the calculated attribute would be "150,000000" (the decimal symbol separator depends on the local regional settings).
-- FORMATSTRING CONST:150 CONST: C
+```
+FORMATSTRING CONST:150 CONST:C
+```
 The output of the calculated attribute would be "150.00 $" (the currency depends on the local regional settings).
-- c
+```
+c
+```
 The output of the calculated attribute would be "150.00 $" (the currency depends on the local regional settings).
