@@ -76,4 +76,6 @@
   href: sort.md 
 - name: SUBSTRING
   href: substring.md 
+- name: SUM
+  href: sum.md
   
