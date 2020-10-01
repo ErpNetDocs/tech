@@ -74,3 +74,6 @@
   href: select.md 
 - name: SORT
   href: sort.md 
+- name: SUBSTRING
+  href: substring.md 
+  
