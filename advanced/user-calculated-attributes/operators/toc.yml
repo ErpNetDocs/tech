@@ -70,3 +70,5 @@
   href: right.md  
 - name: ROUND
   href: round.md 
+- name: SELECT
+  href: select.md 
