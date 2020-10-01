@@ -66,3 +66,5 @@
   href: regex.md
 - name: REPLACE
   href: replace.md  
+- name: RIGHT
+  href: right.md  
