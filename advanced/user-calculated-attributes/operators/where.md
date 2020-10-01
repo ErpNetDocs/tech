@@ -1,8 +1,8 @@
 ---
-uid: cao-COUNT
+uid: cao-WHERE
 ---
 
-# COUNT - Calculated Attribute Operator
+# WHERE - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
