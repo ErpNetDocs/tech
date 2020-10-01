@@ -20,7 +20,7 @@ uid: cao-CONVERT
 ```
 10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT EXP:30 CONST:System.Decimal
-30: CAST ATTRIB: @CustomProperty1 CONST: System.String
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 ```
 
 > [!NOTE]
@@ -30,7 +30,7 @@ So, if a user needs to create a value from the standard price per lot of  the pr
 
 ```
 10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
-20: CONVERT ATTRIB: @CustomProperty1 CONST: System.Decimal
+20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 ```
 
 This is incorrect attribute. The values of the custom properties are  specific type of value and the CONVERT operator does not know how to  convert it. So cast of the custom property value to string is required.  The correct version of the calculated attribute is:
@@ -38,5 +38,5 @@ This is incorrect attribute. The values of the custom properties are  specific t
 ```
 10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT EXP:30 CONST:System.Decimal
-30: CAST ATTRIB: @CustomProperty1 CONST: System.String
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 ```
