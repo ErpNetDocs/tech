@@ -64,4 +64,5 @@
   href: pos.md  
 - name: REGEX
   href: regex.md
-  
+- name: REPLACE
+  href: replace.md  
