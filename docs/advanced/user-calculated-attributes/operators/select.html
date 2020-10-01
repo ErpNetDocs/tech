@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>operators (<a href="where.md">WHERE</a>, <a href="top.md">TOP</a>)</td>
+<td>operators (<a href="where.html">WHERE</a>, <a href="top.html">TOP</a>)</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
@@ -123,13 +123,13 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The SELECT operator returns limited number of records - 20 000. This limit is only for the returned records count, so as setting much filters as possible are highly recommended (filters in the <a href="where.md">WHERE</a> clause).</p>
+<p>The SELECT operator returns limited number of records - 20 000. This limit is only for the returned records count, so as setting much filters as possible are highly recommended (filters in the <a href="where.html">WHERE</a> clause).</p>
 </div>
 <h2 id="example">Example</h2>
 <p>The WHERE clause of the SELECT statement supports the following operators:</p>
 <ul>
 <li><a href="and.html">AND</a></li>
-<li><a href="top.md">TOP</a></li>
+<li><a href="top.html">TOP</a></li>
 <li><a href="equal.html">EQUAL</a></li>
 <li><a href="gt.html">GT</a></li>
 <li><a href="gte.html">GTE</a></li>
@@ -147,20 +147,20 @@
 <p>The disadvantages are that the SELECT statement make a direct request to the database, which may reflect on the productivity and may slow down the calculation of the attribute. When using the SELECT operator the user has to apply as much WHERE filters as possible, because this would limit the amount of data which would be extracted from the database into the client. And then, if the select statement does not provide enough filters, the result from the select may be filtered by the FILTER operator which operates on the already loaded data in the client.</p>
 <p>Here are some examples to picture the information by far:</p>
 <p>If there is a need of a list of documents which DocumentTypeId is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are Work Orders. So the following calculated attribute would be incorrect:</p>
-<pre><code>10: SELECT REPO: Production.ShopFloor.WorkOrders EXP: 20
-20: WHERE EXP: 30
-30: OR EXP: 40 EXP: 50
-40: EQUAL CONST: bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
-45: ATTRIB: DocumentTypeId CONST: System.Guid
-50: EQUAL EXP:45 CONST: 89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+<pre><code>10: SELECT REPO:Production.ShopFloor.WorkOrders EXP: 20
+20: WHERE EXP:30
+30: OR EXP:40 EXP:50
+40: EQUAL CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL EXP:45 CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
 </code></pre>
 <p>This calculated attribute is incorrect and would return errors when used. So, we can set calculated attribute which selects the work orders and then to filter the list, which the SELECT operator returned and apply the FILTER operator for more precision. So the correct calculated attribute is as follows:</p>
-<pre><code>10: FILTER EXP:20 EXP: 30
-20: SELECT REPO: Production.ShopFloor.WorkOrders 
-30: OR EXP: 40 EXP: 50
-40: EQUAL EXP:45 CONST: bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
-45: CAST ATTRIB: DocumentTypeId CONST: System.Guid
-50: EQUAL ATTRIB: DocumentTypeId CONST: 89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+<pre><code>10: FILTER EXP:20 EXP:30
+20: SELECT REPO:Production.ShopFloor.WorkOrders 
+30: OR EXP:40 EXP:50
+40: EQUAL EXP:45 CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: CAST ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL ATTRIB:DocumentTypeId CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
 </code></pre>
 </article>
           </div>

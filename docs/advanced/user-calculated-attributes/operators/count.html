@@ -127,7 +127,7 @@
 </table>
 <h2 id="example">Example</h2>
 <p>The following example return the number of lines in the current document (SalesOrder):</p>
-<pre><code>10: COUNT CHILD: Lines
+<pre><code>10: COUNT CHILD:Lines
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
@@ -135,8 +135,8 @@
 </div>
 <p>If we want to expand the example and if we want to get the number of  lines with quantity greater than or equal to 10, the following attribute would do the job:</p>
 <pre><code>10: COUNT EXP:20
-20: FILTER CHILD: Lines EXP:30
-30: GTE ATTRIB: QuantityValue CONST: 10
+20: FILTER CHILD:Lines EXP:30
+30: GTE ATTRIB:QuantityValue CONST:10
 </code></pre>
 </article>
           </div>
