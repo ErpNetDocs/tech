@@ -18,8 +18,6 @@ uid: cao-LIKE
 
 ## Examples
 
-The following example return the number of lines in the current document (SalesOrder):
-
 ```
 'a%' → Finds any values that start with "a".
 
