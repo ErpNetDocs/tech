@@ -297,7 +297,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",
-    "keywords": "Welcome to the ERP.net Technical Documentation The Technical Documentation documents the business logic of ERP.net. It is targeted towards implementation consultants and power users. Learn more Concepts - general concepts, which apply to all modules. Functionality - documentation of the business functions. Advanced - documentation of advanced systems. Other Documentations Domain Model - reference information about the entities, business rules, generations, etc. Developer Documentation - information for developers."
+    "keywords": "Welcome to the ERP.net Technical Documentation The Technical Documentation documents the business logic of ERP.net. It is targeted towards implementation consultants and power users. Learn more Concepts - general concepts, which apply to all modules. Functionality - documentation of the business functions. Advanced - documentation of advanced systems. Other documentations Domain Model - reference information about the entities, business rules, generations, etc. Developer Documentation - information for developers."
   },
   "modules/applications/overview.html": {
     "href": "modules/applications/overview.html",
