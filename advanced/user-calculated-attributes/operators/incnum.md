@@ -16,7 +16,7 @@ uid: cao-INCNUM
 | Return Value          | ++Value                                                    |
 
 
-## Example
+## Examples
 
 ```
 If the user tries to increment the string value 'AA01', the incrementation will be successful and result will be 'AA02'; 
