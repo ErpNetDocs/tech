@@ -24,23 +24,16 @@ The WHERE clause of the SELECT statement supports the following operators:
 
 - [AND](and.md)
 - [TOP](top.md)
-
 - [EQUAL](equal.md)
-
 - [GT](gt.md)
-
 - [GTE](gte.md)
-
 - [LT](lt.md)
-
 - [LTE](lte.md)
 
 The operators which are not supported by the SELECT operator but may be used by the FILTER operator are:
 
 - [NOT](not.md)
-
 - [OR](or.md)
-
 - [LIKE](like.md)
 
 
