@@ -18,34 +18,34 @@ uid: cao-LIKE
 
 ## Examples
 
-```
-'a%' → Finds any values that start with "a".
 
-'%a' → Finds any values that end with "a".
+- 'a%' → Finds any values that start with "a".
 
-'%a%' → Finds any values that have "a" in any position.
+- '%a' → Finds any values that end with "a".
 
-'_a%' → Finds any values that have "a" in the second position.
+- '%a%' → Finds any values that have "a" in any position.
 
-'a_%_%' → Finds any values that start with "a" and are at least 3 characters in length.
+- '_a%' → Finds any values that have "a" in the second position.
 
-'a%o' → Finds any values that start with "a" and ends with "o".
-```
+- 'a_%_%' → Finds any values that start with "a" and are at least 3 characters in length.
+
+- 'a%o' → Finds any values that start with "a" and ends with "o".
+
 
 Calculated Attribute:
 
-```
-Repository: General.Products.Products
 
+Repository: General.Products.Products
+```
 10 LIKE EXP 20 CONST %shoe_
 20 CAST ATTRIB Name CONST System.String
 ```
 
 Calculated Attribute Result:
-```
-ProductName = sports shoes → True
-ProductName = shoes → True
-ProductName = sports shoess → False
-ProductName = sports shoe → False
-ProductName = sports jacket → False
-```
+
+- ProductName = sports shoes → True
+- ProductName = shoes → True
+- ProductName = sports shoess → False
+- ProductName = sports shoe → False
+- ProductName = sports jacket → False
+
