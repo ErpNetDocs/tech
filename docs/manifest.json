@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "6mdF2b4WW9lvs9eIUHMN2A=="
+          "hash": "ZaE7riKqN7B5RfsxuBxEjA=="
         }
       },
       "is_incremental": false,
@@ -85,11 +85,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html",
+          "hash": "arGXcsZD72IAYd4aG40B0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/operators/add.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/add.html",
-          "hash": "04t0B0uySDu0se8zMPB42w=="
+          "hash": "Uu4sQAzbsPuI0Fnh6WEmww=="
         }
       },
       "is_incremental": false,
@@ -318,6 +330,264 @@
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/in.html",
           "hash": "KFVUFZl7Cc3N6uoQ2w6qSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/incnum.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/incnum.html",
+          "hash": "ysgRhbwMlUWysRqsdiitEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/left.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/left.html",
+          "hash": "MqROHdN0HU01CrLFlO1c6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/len.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/len.html",
+          "hash": "4cLC8hekOOvTlT4CLtjKtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/like.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/like.html",
+          "hash": "M3kciNShSAQ0x1nZkfFUIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/list.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/list.html",
+          "hash": "pvAwgksCEZMsthQ2k+R6ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/lt.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/lt.html",
+          "hash": "uoXfltw8IWMakB6JYgcT9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/lte.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/lte.html",
+          "hash": "xcW/guo+8OScQIYrc/hbMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/multiply.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/multiply.html",
+          "hash": "/ao81vBCkg2c+u2RkdnDBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/not.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/not.html",
+          "hash": "Sbbw4guAGqB88kX+Y/z0mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/or.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/or.html",
+          "hash": "+a2hdY2zHJV5Ee1sM6Qs7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/orderby.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/orderby.html",
+          "hash": "ArX1xRm99X0Uc1IKOnfRZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/pos.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/pos.html",
+          "hash": "EHhDBm/GleVvgC47vUwhlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/regex.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/regex.html",
+          "hash": "2z22KdzftGwIpiqCmtAAzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/replace.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/replace.html",
+          "hash": "FaqWBzGks/w3fHTWGqEnDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/right.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/right.html",
+          "hash": "zeE/jUUDyyAvdxZK57nzRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/round.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/round.html",
+          "hash": "ipwCyAOp/e2dSlsVQPTXzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/select.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/select.html",
+          "hash": "54j0N5USXD3lMyU0LCHSpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/sort.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/sort.html",
+          "hash": "9iZ/7VcgAr3imsErw0rpmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/substring.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/substring.html",
+          "hash": "uXESe/iQbm781vl0Br8FTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/sum.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/sum.html",
+          "hash": "ERcs9938apYLN0ju6UW2zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/today.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/today.html",
+          "hash": "P5ZLrO9dmk2qAsB7sYDMfg=="
         }
       },
       "is_incremental": false,
@@ -679,8 +949,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 44,
-          "skipped_file_count": 25
+          "total_file_count": 66,
+          "skipped_file_count": 43
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

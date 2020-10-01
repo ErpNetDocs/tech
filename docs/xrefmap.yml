@@ -61,6 +61,66 @@ references:
 - uid: cao-IN
   name: IN - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/in.html
+- uid: cao-INCNUM
+  name: INCNUM - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/incnum.html
+- uid: cao-LEFT
+  name: LEFT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/left.html
+- uid: cao-LEN
+  name: LEN - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/len.html
+- uid: cao-LIKE
+  name: LIKE - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/like.html
+- uid: cao-LIST
+  name: LIST - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/list.html
+- uid: cao-LT
+  name: LT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/lt.html
+- uid: cao-LTE
+  name: LTE - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/lte.html
+- uid: cao-MULTIPLY
+  name: MULTIPLY - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/multiply.html
+- uid: cao-NOT
+  name: NOT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/not.html
+- uid: cao-OR
+  name: OR - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/or.html
+- uid: cao-ORDERBY
+  name: ORDERBY - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/orderby.html
+- uid: cao-POS
+  name: POS - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/pos.html
+- uid: cao-REGEX
+  name: REGEX - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/regex.html
+- uid: cao-REPLACE
+  name: REPLACE - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/replace.html
+- uid: cao-RIGHT
+  name: RIGHT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/right.html
+- uid: cao-ROUND
+  name: ROUND - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/round.html
+- uid: cao-SELECT
+  name: SELECT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/select.html
+- uid: cao-SORT
+  name: SORT - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/sort.html
+- uid: cao-SUBSTRING
+  name: SUBSTRING - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/substring.html
+- uid: cao-TODAY
+  name: TODAY - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/today.html
 - uid: document-flow
   name: Document Flow
   href: concepts/document-flow.html
