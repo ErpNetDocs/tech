@@ -30,7 +30,7 @@ The WHERE clause of the SELECT statement supports the following operators:
 - [LT](lt.md)
 - [LTE](lte.md)
 
-The operators which are not supported by the SELECT operator but may be used by the [FILTER](filter.md)operator are:
+The operators which are not supported by the SELECT operator but may be used by the [FILTER](filter.md) operator are:
 
 - [NOT](not.md)
 - [OR](or.md)
