@@ -78,4 +78,5 @@
   href: substring.md 
 - name: SUM
   href: sum.md
-  
+- name: TODAY
+  href: today.md  
