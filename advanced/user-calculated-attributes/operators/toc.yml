@@ -62,3 +62,6 @@
   href: orderby.md  
 - name: POS
   href: pos.md  
+- name: REGEX
+  href: regex.md
+  
