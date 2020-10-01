@@ -10,7 +10,7 @@ uid: cao-SELECT
 | Parameter 1 Name      | Repository                                                         |
 | Parameter 1 Type      | repository                                    |
 | Parameter 2 Name      | Clauses (optional, but highly advisable) // For more information see the 'FILTER AND WHERE filtering of a SELECT' section below)           |
-| Parameter 2 Type      | operators (@WHERE, @TOP)                                                           |
+| Parameter 2 Type      | operators ([WHERE](where.md), [TOP](top.md))                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
 | Return Value          | Returns a list of objects from Repository matching Clauses.                                                        |
