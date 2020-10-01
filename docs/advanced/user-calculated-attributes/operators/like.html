@@ -122,31 +122,33 @@
 </tbody>
 </table>
 <h2 id="examples">Examples</h2>
-<pre><code>'a%' → Finds any values that start with &quot;a&quot;.
-
-'%a' → Finds any values that end with &quot;a&quot;.
-
-'%a%' → Finds any values that have &quot;a&quot; in any position.
-
-'_a%' → Finds any values that have &quot;a&quot; in the second position.
-
-'a_%_%' → Finds any values that start with &quot;a&quot; and are at least 3 characters in length.
-
-'a%o' → Finds any values that start with &quot;a&quot; and ends with &quot;o&quot;.
-</code></pre>
+<ul>
+<li><p>'a%' → Finds any values that start with &quot;a&quot;.</p>
+</li>
+<li><p>'%a' → Finds any values that end with &quot;a&quot;.</p>
+</li>
+<li><p>'%a%' → Finds any values that have &quot;a&quot; in any position.</p>
+</li>
+<li><p>'_a%' → Finds any values that have &quot;a&quot; in the second position.</p>
+</li>
+<li><p>'a_%_%' → Finds any values that start with &quot;a&quot; and are at least 3 characters in length.</p>
+</li>
+<li><p>'a%o' → Finds any values that start with &quot;a&quot; and ends with &quot;o&quot;.</p>
+</li>
+</ul>
 <p>Calculated Attribute:</p>
-<pre><code>Repository: General.Products.Products
-
-10 LIKE EXP 20 CONST %shoe_
+<p>Repository: General.Products.Products</p>
+<pre><code>10 LIKE EXP 20 CONST %shoe_
 20 CAST ATTRIB Name CONST System.String
 </code></pre>
 <p>Calculated Attribute Result:</p>
-<pre><code>ProductName = sports shoes → True
-ProductName = shoes → True
-ProductName = sports shoess → False
-ProductName = sports shoe → False
-ProductName = sports jacket → False
-</code></pre>
+<ul>
+<li>ProductName = sports shoes → True</li>
+<li>ProductName = shoes → True</li>
+<li>ProductName = sports shoess → False</li>
+<li>ProductName = sports shoe → False</li>
+<li>ProductName = sports jacket → False</li>
+</ul>
 </article>
           </div>
           

@@ -118,9 +118,24 @@ references:
 - uid: cao-SUBSTRING
   name: SUBSTRING - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/substring.html
+- uid: cao-SUM
+  name: SUM - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/sum.html
 - uid: cao-TODAY
   name: TODAY - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/today.html
+- uid: cao-TOLOWER
+  name: TOLOWER - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/tolower.html
+- uid: cao-TOP
+  name: TOP - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/top.html
+- uid: cao-TOUPPER
+  name: TOUPPER - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/toupper.html
+- uid: cao-WHERE
+  name: WHERE - Calculated Attribute Operator
+  href: advanced/user-calculated-attributes/operators/where.html
 - uid: document-flow
   name: Document Flow
   href: concepts/document-flow.html

@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "ZaE7riKqN7B5RfsxuBxEjA=="
+          "hash": "LhQVypxUFu90qzqAlotnBg=="
         }
       },
       "is_incremental": false,
@@ -96,12 +96,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/operators/add.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/add.html",
-          "hash": "Uu4sQAzbsPuI0Fnh6WEmww=="
+          "hash": "RSIfoCHSTiQmoMJj1WKnfQ=="
         }
       },
       "is_incremental": false,
@@ -341,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/incnum.html",
-          "hash": "ysgRhbwMlUWysRqsdiitEg=="
+          "hash": "hFQWgGpr0wkZXFw7cYtA6w=="
         }
       },
       "is_incremental": false,
@@ -377,7 +380,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/like.html",
-          "hash": "M3kciNShSAQ0x1nZkfFUIA=="
+          "hash": "rGPHesd5m54nNqCYV/j/fg=="
         }
       },
       "is_incremental": false,
@@ -528,9 +531,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/operators/select.md",
       "output": {
@@ -567,15 +567,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/operators/sum.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/sum.html",
-          "hash": "ERcs9938apYLN0ju6UW2zw=="
+          "hash": "9BTvCL94vpg6pZZFEkbQmQ=="
         }
       },
       "is_incremental": false,
@@ -588,6 +585,54 @@
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/today.html",
           "hash": "P5ZLrO9dmk2qAsB7sYDMfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/tolower.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/tolower.html",
+          "hash": "+fVlLxKFOAugWUwijLTKZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/top.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/top.html",
+          "hash": "5s5zcl6VPGDezBJ/Aa+smQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/toupper.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/toupper.html",
+          "hash": "MTQuu1M2G7oEZ2+RDf6K/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-calculated-attributes/operators/where.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-calculated-attributes/operators/where.html",
+          "hash": "irTjE2C8WBs2SeTvSlDvjQ=="
         }
       },
       "is_incremental": false,
@@ -949,8 +994,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 66,
-          "skipped_file_count": 43
+          "total_file_count": 70,
+          "skipped_file_count": 62
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

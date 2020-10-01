@@ -216,13 +216,33 @@
   },
   "advanced/user-calculated-attributes/operators/sum.html": {
     "href": "advanced/user-calculated-attributes/operators/sum.html",
-    "title": "COUNT - Calculated Attribute Operator | ERP.net Tech Docs",
-    "keywords": "COUNT - Calculated Attribute Operator Specification Value Description Returns the sum of Value for all elements in the specified list. Parameter 1 Name List Parameter 1 Type list of objects Parameter 2 Name Value Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name - Parameter 3 Type - Return Value Returns the sum of the Values of the elements in the List. Example See the example in @(Total Quantity And Scrap Quantity In Recipe Ingredients)"
+    "title": "SUM - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "SUM - Calculated Attribute Operator Specification Value Description Returns the sum of Value for all elements in the specified list. Parameter 1 Name List Parameter 1 Type list of objects Parameter 2 Name Value Parameter 2 Type numeric type - int, double or decimal Parameter 3 Name - Parameter 3 Type - Return Value Returns the sum of the Values of the elements in the List. Example See the example in @(Total Quantity And Scrap Quantity In Recipe Ingredients)"
   },
   "advanced/user-calculated-attributes/operators/today.html": {
     "href": "advanced/user-calculated-attributes/operators/today.html",
     "title": "TODAY - Calculated Attribute Operator | ERP.net Tech Docs",
     "keywords": "TODAY - Calculated Attribute Operator Specification Value Description This operator returns today's date, according to the server's regional settings. Parameter 1 Name - Parameter 1 Type - Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value Today's date"
+  },
+  "advanced/user-calculated-attributes/operators/tolower.html": {
+    "href": "advanced/user-calculated-attributes/operators/tolower.html",
+    "title": "TOLOWER - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "TOLOWER - Calculated Attribute Operator Specification Value Description Returns the string, converted to lowercase. Parameter 1 Name string Parameter 1 Type string Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value string (in lowercase)"
+  },
+  "advanced/user-calculated-attributes/operators/top.html": {
+    "href": "advanced/user-calculated-attributes/operators/top.html",
+    "title": "TOP - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "TOP - Calculated Attribute Operator Specification Value Description Clause, returning only the first n elements Parameter 1 Name Number Parameter 1 Type int Parameter 2 Name Clauses Parameter 2 Type operators WHERE Parameter 3 Name - Parameter 3 Type - Return Value The first Number elements. Note The TOP operator is used with the WHERE operator."
+  },
+  "advanced/user-calculated-attributes/operators/toupper.html": {
+    "href": "advanced/user-calculated-attributes/operators/toupper.html",
+    "title": "TOUPPER - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "TOUPPER - Calculated Attribute Operator Specification Value Description Returns the string, converted to uppercase. Parameter 1 Name string Parameter 1 Type string Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value string (in uppercase)"
+  },
+  "advanced/user-calculated-attributes/operators/where.html": {
+    "href": "advanced/user-calculated-attributes/operators/where.html",
+    "title": "WHERE - Calculated Attribute Operator | ERP.net Tech Docs",
+    "keywords": "WHERE - Calculated Attribute Operator Specification Value Description Clause which filters by the specified conditions. The second and the third parameters are optional. Parameter 1 Name Condition1 Parameter 1 Type boolean Parameter 2 Name boolean Parameter 2 Type Condition2 (optional) Parameter 3 Name boolean Parameter 3 Type Condition3 (optional) Return Value Clause, filtered by Condition1 AND Condition2 AND Condition3 Note The operator is used with operator SELECT ."
   },
   "advanced/user-calculated-attributes/overview.html": {
     "href": "advanced/user-calculated-attributes/overview.html",
