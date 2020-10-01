@@ -22,7 +22,5 @@ The Repository in this example is Crm.Sales.SalesOrders.
 10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentAccountId 
 ```
 This line returns the Id of the Default Payment Account set in the Customer's definition of the current Sales Order.
+
 This value could be used to set the Payment Account in Sales Order through a User Business Rules, for example.
-
-
-
