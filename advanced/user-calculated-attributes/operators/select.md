@@ -23,17 +23,12 @@ uid: cao-SELECT
 The WHERE clause of the SELECT statement supports the following operators:
 
 [AND](and.md)
-```
-[AND](and.md)
-TOP
-EQUAL
-GT
-GTE
-LT
-LTE
-```
-
-
+[TOP](top.md)
+[EQUAL](equal.md)
+[GT](gt.md)
+[GTE](gte.md)
+[LT](lt.md)
+[LTE](lte.md)
 
 If we want to expand the example and if we want to get the number of  lines with quantity greater than or equal to 10, the following attribute would do the job:
 
