@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "LhQVypxUFu90qzqAlotnBg=="
+          "hash": "yv6BFqN/SLcEj4U5yXWmlQ=="
         }
       },
       "is_incremental": false,
@@ -992,7 +992,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 70,
-          "skipped_file_count": 67
+          "skipped_file_count": 69
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
