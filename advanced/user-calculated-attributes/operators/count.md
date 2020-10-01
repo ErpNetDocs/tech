@@ -21,7 +21,7 @@ uid: cao-COUNT
 The following example return the number of lines in the current document (SalesOrder):
 
 ```
-10: COUNT CHILD: Lines
+10: COUNT CHILD:Lines
 ```
 
 > [!NOTE]
@@ -31,6 +31,6 @@ If we want to expand the example and if we want to get the number of  lines with
 
 ```
 10: COUNT EXP:20
-20: FILTER CHILD: Lines EXP:30
-30: GTE ATTRIB: QuantityValue CONST: 10
+20: FILTER CHILD:Lines EXP:30
+30: GTE ATTRIB:QuantityValue CONST:10
 ```
