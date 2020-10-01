@@ -22,26 +22,27 @@ uid: cao-SELECT
 
 The WHERE clause of the SELECT statement supports the following operators:
 
-[AND](and.md)
-[TOP](top.md)
+- [AND](and.md)
 
-[EQUAL](equal.md)
+- [TOP](top.md)
 
-[GT](gt.md)
+- [EQUAL](equal.md)
 
-[GTE](gte.md)
+- [GT](gt.md)
 
-[LT](lt.md)
+- [GTE](gte.md)
 
-[LTE](lte.md)
+- [LT](lt.md)
+
+- [LTE](lte.md)
 
 The operators which are not supported by the SELECT operator but may be used by the FILTER operator are:
 
-[NOT](not.md)
+- [NOT](not.md)
 
-[OR](or.md)
+- [OR](or.md)
 
-[LIKE](like.md)
+- [LIKE](like.md)
 
 
 FILTER AND WHERE filtering of a SELECT
