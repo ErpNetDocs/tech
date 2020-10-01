@@ -1,8 +1,8 @@
 ---
-uid: cao-COUNT
+uid: cao-SUM
 ---
 
-# COUNT - Calculated Attribute Operator
+# SUM - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
