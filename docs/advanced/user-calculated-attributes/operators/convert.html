@@ -124,7 +124,7 @@
 <h2 id="example">Example</h2>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT EXP:30 CONST:System.Decimal
-30: CAST ATTRIB: @CustomProperty1 CONST: System.String
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
@@ -132,12 +132,12 @@
 </div>
 <p>So, if a user needs to create a value from the standard price per lot of  the product multiplied by a coefficient stored as a product's custom  property @CustomProperty1, a calculated attribute can be created. If the repository of the product is General.Products.Products, its expressions would be as follows:</p>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
-20: CONVERT ATTRIB: @CustomProperty1 CONST: System.Decimal
+20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 </code></pre>
 <p>This is incorrect attribute. The values of the custom properties are  specific type of value and the CONVERT operator does not know how to  convert it. So cast of the custom property value to string is required.  The correct version of the calculated attribute is:</p>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT EXP:30 CONST:System.Decimal
-30: CAST ATTRIB: @CustomProperty1 CONST: System.String
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 </code></pre>
 </article>
           </div>

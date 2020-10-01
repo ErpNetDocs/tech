@@ -123,24 +123,26 @@
 </table>
 <h2 id="example">Example</h2>
 <p>The following expression:</p>
-<pre><code>FORMATSTRING CONST:150 CONST: C3
-returns &quot;150.000 $&quot; (and the decimal symbol separator and the currency symbol depends on the local regional settings).
-</code></pre>
+<ul>
+<li>FORMATSTRING CONST:150 CONST:C3
+returns &quot;150.000 $&quot; (and the decimal symbol separator and the currency symbol depends on the local regional settings).</li>
+</ul>
 <p>For more information about the supported format specifiers, see @(Format Specifiers).</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The Format is entered as a constant (CONST).</p>
 </div>
 <p>If we have a calculated attribute with the following expression (the repository is not important):</p>
-<pre><code>- FORMATSTRING CONST:2020-03-15 CONST: yyyy MM dddd
-The output of the calculated attribute would be &quot;2020 03 Sunday&quot;.
-- FORMATSTRING CONST:150 CONST: n6
-The output of the calculated attribute would be &quot;150,000000&quot; (the decimal symbol separator depends on the local regional settings).
-- FORMATSTRING CONST:150 CONST: C
-The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).
-- c
-The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).
-</code></pre>
+<ul>
+<li>FORMATSTRING CONST:2020-03-15 CONST: yyyy MM dddd
+The output of the calculated attribute would be &quot;2020 03 Sunday&quot;.</li>
+<li>FORMATSTRING CONST:150 CONST: n6
+The output of the calculated attribute would be &quot;150,000000&quot; (the decimal symbol separator depends on the local regional settings).</li>
+<li>FORMATSTRING CONST:150 CONST: C
+The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).</li>
+<li>c
+The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).</li>
+</ul>
 </article>
           </div>
           
