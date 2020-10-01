@@ -20,7 +20,7 @@ uid: cao-FORMATSTRING
 
 The following expression:
 
-FORMATSTRING CONST:150 CONST:C3
+- FORMATSTRING CONST:150 CONST:C3
 returns "150.000 $" (and the decimal symbol separator and the currency symbol depends on the local regional settings).
 
 For more information about the supported format specifiers, see @(Format Specifiers).
