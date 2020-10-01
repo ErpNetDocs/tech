@@ -6,5 +6,9 @@ It is targeted towards implementation consultants and power users.
 ## Learn more
 
 - [Concepts](~/concepts/overview.md) - general concepts, which apply to all modules.
-- [Modules](~/modules/overview.md) - functionality of specific modules.
-- [Reference](~/reference/overview.md) - reference information about the entities, business rules, generations, etc.
+- [Functionality](~/modules/overview.md) - functionality of specific modules.
+- [Advanced](~/advanced/overview.md) - documentation of advanced systems.
+
+## Other Documentations
+- [Developer Documentation](/dev)
+- [Domain Model](/model) - reference information about the entities, business rules, generations, etc.
