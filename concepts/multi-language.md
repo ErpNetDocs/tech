@@ -7,9 +7,11 @@ For example, the Product Name of a Product can be entered in many languages simu
 
 When visualizing the data, the correct language version of the string is displayed automatically by the system, depending on the current user language.
 
+
 > [!NOTE]
 > For reports, the report designer can specify whether to use the current user language or always use a fixed language.
 > For example, for a Portuguese invoice, one would require that the labels and data are always displayed in Portuguese.
+
 
 ## Entering data in multiple languages
 
@@ -20,8 +22,9 @@ The client applications of @@name usually allow the following abilities regardin
 
 When entering translations for a multi-language string, the client application usually displays a table with cells for each language translation, similar to this:
 
-EN: Toothpaste
-DE: Zahnpasta
+| EN: | Toothpaste |
+| DE: | Zahnpasta |
+
 
 ## Transliteration
 
@@ -31,15 +34,18 @@ For example, the English word "Toothpaste" would be transliterated in German as 
 
 Transliteration works in two ways - manual and automatic.
 
+
 ### Manual Transliteration
 
 "Manual" transliteration is actually automatic, but is initiated manually while editing the different language versions of a multi-language string. While editing multi-language string, the client application usually provides a function button, which transliterates the current language version to other languages.
+
 
 ### Automatic Transliteration
 
 Automatic transliteration occurs when the system needs to display some a multi-language string in some language, but that specific language translation is not saved in the database.
 
 For example, suppose one employee works in a branch office in England and enters "Toothpaste" as a product name. The database saves only the English language version. Then another employee in a Germany branch requests to see the definition of the product. The system would automatically transliterate the string and display it as "Zahnpasta".
+
 
 ## Translation
 
