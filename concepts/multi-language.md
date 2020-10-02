@@ -32,7 +32,7 @@ When entering translations for a multi-language string, the client application u
 
 Transliteration is the process of translating one language version of a string to another, based on the sounding of the string. Transliteration works great for person and company names and addresses. It allows branch offices to work in their local language and reports can still be shown in the corporate language.
 
-For example, the English word "Toothpaste" would be transliterated in German as "Zahnpasta".
+For example, the Bulgarian word "Иван" would be transliterated in English as "Ivan".
 
 Transliteration works in two ways - manual and automatic.
 
