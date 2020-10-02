@@ -24,8 +24,8 @@ When entering translations for a multi-language string, the client application u
 
 | Language | Value |
 | ---- | ----- |
-| EN: | Toothpaste |
-| DE: | Zahnpasta |
+| Bulgarian | Иван |
+| English | Ivan |
 
 
 ## Transliteration
