@@ -16,4 +16,4 @@ uid: cao-SUM
 | Return Value          | Returns the sum of the Values of the elements in the List.                                                     |
 
 ## Example
-See the example in [Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md)
+See the example in [Sales Amounts Of The Customer For The Last 30 Days](../examples/SalesAmountsOfTheCustomerForTheLast30Days.md)
