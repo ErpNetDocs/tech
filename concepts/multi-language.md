@@ -46,7 +46,7 @@ Transliteration works in two ways - manual and automatic.
 
 Automatic transliteration occurs when the system needs to display some a multi-language string in some language, but that specific language translation is not saved in the database.
 
-For example, suppose one employee works in a branch office in England and enters "Toothpaste" as a product name. The database saves only the English language version. Then another employee in a Germany branch requests to see the definition of the product. The system would automatically transliterate the string and display it as "Zahnpasta".
+For example, suppose one employee works in a branch office in Bulgaria and enters "Иван" as a person first name. The database saves only the Bulgarian language version. Then another employee in a US branch requests to see the first name of the same person. The system would automatically transliterate the string and display it as "Ivan".
 
 
 ## Translation
