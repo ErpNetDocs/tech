@@ -1,4 +1,4 @@
-﻿# Multi-Language Support
+﻿# Multi-language support
  
 ## Description
 Many string attributes in @@name support saving the data in multiple languages.These attributes are called Multi-language Strings.
@@ -37,12 +37,12 @@ For example, the English word "Toothpaste" would be transliterated in German as 
 Transliteration works in two ways - manual and automatic.
 
 
-### Manual Transliteration
+### Manual transliteration
 
 "Manual" transliteration is actually automatic, but is initiated manually while editing the different language versions of a multi-language string. While editing multi-language string, the client application usually provides a function button, which transliterates the current language version to other languages.
 
 
-### Automatic Transliteration
+### Automatic transliteration
 
 Automatic transliteration occurs when the system needs to display some a multi-language string in some language, but that specific language translation is not saved in the database.
 
