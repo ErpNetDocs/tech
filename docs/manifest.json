@@ -140,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html",
-          "hash": "r76EXN3o9hJKcePN/Rl3+A=="
+          "hash": "wnre17ID37qDU7XseMsN3w=="
         }
       },
       "is_incremental": false,
@@ -1142,7 +1142,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 82,
-          "skipped_file_count": 79
+          "skipped_file_count": 81
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
