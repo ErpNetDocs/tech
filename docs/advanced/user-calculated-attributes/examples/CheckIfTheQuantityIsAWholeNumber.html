@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>LIST - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>Check If The Quantity Is A Whole Number | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LIST - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="Check If The Quantity Is A Whole Number | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,61 +76,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-LIST">
-<h1 id="list---calculated-attribute-operator">LIST - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="check-if-the-quantity-is-a-whole-number">Check If The Quantity Is A Whole Number</h1>
 
-<table>
-<thead>
-<tr>
-<th>Specification</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Description</td>
-<td>Returns a list with the string values of the specified attribute of the list of objects.The values in the created list are separated by a separator. If there is no indicated separator, then the list is separated with &quot;, &quot; (comma + space) by default.</td>
-</tr>
-<tr>
-<td>Parameter 1 Name</td>
-<td>list</td>
-</tr>
-<tr>
-<td>Parameter 1 Type</td>
-<td>list of objects</td>
-</tr>
-<tr>
-<td>Parameter 2 Name</td>
-<td>attribute</td>
-</tr>
-<tr>
-<td>Parameter 2 Type</td>
-<td>attribute of the object // An attribute of a referent object could be used as well. For more information, see the example below.</td>
-</tr>
-<tr>
-<td>Parameter 3 Name</td>
-<td>separator (optional) // If Parameter3 is not specified, then the default separator is &quot;, &quot; (comma + space)</td>
-</tr>
-<tr>
-<td>Parameter 3 Type</td>
-<td>string</td>
-</tr>
-<tr>
-<td>Return Value</td>
-<td>(attributeValue1, attributeValue2, ...)</td>
-</tr>
-<tr>
-<td>Introduced In Version</td>
-<td>2019.1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example">Example</h2>
-<p>Repository: Crm.Sales.SalesOrders</p>
-<pre><code>10: LIST CHILD:Lines EXP:20 CONST:'; '
-20: GETOBJVALUE REF:Product ATTRIB:Name
+<p>The current calculated attribute returns true if the  quantity in the Sales Order line is whole number, and False - if it is  decimal number. The repository of the attribute is  Crm.Sales.SalesOrders.</p>
+<p>It expressions are as follows:</p>
+<pre><code>10: IIF EXP:20 CONST:True CONST:False
+20: EQUAL ATTRIB:QuantityValue EXP:30 
+30: CEILING ATTRIB:QuantityValue
 </code></pre>
-<p>Returned Value: 'ProductsName1; ProductName2 ...'</p>
+<blockquote>
+<p>Explanation:</p>
+<p>10: check if expression 20 is true. If so - return True, else - return False</p>
+<p>20: check if attribute QuantityValue is equal to expression 30</p>
+<p>30: get the smallest integral value greater than or equal to the value in attribute QuantityValue</p>
+</blockquote>
 </article>
           </div>
           
@@ -139,7 +99,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/list.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

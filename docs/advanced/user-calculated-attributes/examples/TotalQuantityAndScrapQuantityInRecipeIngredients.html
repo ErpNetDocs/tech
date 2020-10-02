@@ -8,7 +8,7 @@
     <title>Total Quantity And Scrap Quantity In Recipe Ingredients | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Total Quantity And Scrap Quantity In Recipe Ingredients | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -81,8 +81,8 @@
 
 <p>If the user wants to see what is the total Quantity of the  material in a Recipe which would include the Used Quantity and the Scrap Rate, he would add the following Calculated Attribute:</p>
 <pre><code>Repository Name: Production.Technologies.RecipeIngredients
+Name: TotalUsedQuantity
 </code></pre>
-<p><em>Name</em>: TotalUsedQuantity</p>
 <p>And the Calculated Attribute expressions are as follows:</p>
 <pre><code>10: ADD ATTRIB:UsageQuantityValue EXP:20
 20: MULTIPLY ATTRIB:UsageQuantityValue ATTRIB:ScrapRate
