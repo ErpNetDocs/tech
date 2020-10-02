@@ -2,11 +2,12 @@
 
 If the user wants to see what is the total Quantity of the  material in a Recipe which would include the Used Quantity and the Scrap Rate, he would add the following Calculated Attribute:
 
+
+
 ```
 Repository Name: Production.Technologies.RecipeIngredients
+Name: TotalUsedQuantity
 ```
-
-*Name*: TotalUsedQuantity
 
 And the Calculated Attribute expressions are as follows:
 
