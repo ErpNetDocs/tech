@@ -18,7 +18,7 @@ uid: cao-MULTIPLY
 
 ## Example
 
-See the example in @(Total Quantity And Scrap Quantity In Recipe Ingredients).
+See the example in [Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md).
 
 > [!NOTE]
 > In one calculated attribute, Parameter 1 Type and Parameter 2 Type must be equal.
