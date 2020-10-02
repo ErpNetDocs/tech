@@ -15,9 +15,8 @@ So the calculated attribute must [SELECT](select.md) the Sales Order Lines table
 
 ```
 Repository Name: Crm.Sales.SalesOrders
+Name: SOAmountsForTheLast30days
 ```
-
-*Name*: SOAmountsForTheLast30days
 
 And the Calculated Attribute expressions are as follows:
 
