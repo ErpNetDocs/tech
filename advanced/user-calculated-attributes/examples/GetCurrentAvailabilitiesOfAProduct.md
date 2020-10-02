@@ -30,7 +30,7 @@ Repository Name: Production.ShopFloor.ConsumptionOrderLines
 180: GETOBJVALUE INPUT: 10  ATTRIB: SerialNumberId 
 ```
 
-> ```
+
 > Explanation:
 > 10:   Sum Quantity Base from the filtered list returned by EXP:20
 > 20:   Filter the list from EXP: 30 by the clauses of EXP: 70 
@@ -50,4 +50,3 @@ Repository Name: Production.ShopFloor.ConsumptionOrderLines
 > 160: Get ATTRIB: LotId from the repository of EXP:10
 > 170: Check whether ATTRIB: SerialNumberId is EQUAL to EXP: 180 
 > 180: Get ATTRIB: SerialNumberId from the repository of EXP:10
-> ```
