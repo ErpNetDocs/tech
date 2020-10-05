@@ -13,7 +13,7 @@ When used, indicates that the Value for this parameter type would be a constant 
 | Date    | date values used in the 'yyyy-MM-dd' format                  | 2020-12-25                           |
 | Guid    | Global Unique Identifier - used for objects identification   | 6B29FC40-CA47-1067-B31D-00DD010662DA |
 | String  | explicitly denoted string, entered in single quotation marks | 'Example text.'                      |
-| Type    | used with [CAST](https://docs.erp.net/tech/cast-40145742.html). Used for type conversions and the constant is the type to which we want to convert. | System.Int32                         |
+| Type    | used with [CAST](../operators/cast.md). Used for type conversions and the constant is the type to which we want to convert. | System.Int32                         |
 
 
 
