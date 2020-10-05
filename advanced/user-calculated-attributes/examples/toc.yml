@@ -24,5 +24,6 @@
   href: SpecificDayFromDocumentDate.md  
 - name: Total Quantity And Scrap Quantity In Recipe Ingredients
   href: TotalQuantityAndScrapQuantityInRecipeIngredients.md
-
+- name: Convert a Value of a Custom Property to a Number
+  href: ConvertPropertyToNumber.md
   
