@@ -35,3 +35,8 @@ OUTPUT:
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
+
+
+#### More Examples
+[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
+[Sales Amounts Of The Customer For The Last 30 Days](../examples/SalesAmountsOfTheCustomerForTheLast30Days.md)
