@@ -37,6 +37,6 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More Examples
-<br/>[Sales Amounts Of The Customer For The Last 30 Days](../examples/SalesAmountsOfTheCustomerForTheLast30Days.md)
+[Sales Amounts Of The Customer For The Last 30 Days](../examples/SalesAmountsOfTheCustomerForTheLast30Days.md)
 <br/>[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
 
