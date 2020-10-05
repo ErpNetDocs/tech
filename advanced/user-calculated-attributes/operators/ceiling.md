@@ -21,7 +21,7 @@ uid: cao-CEILING
 The following example gets the smallest integer that is greater than or equal to 'Quantity' of a Sales Order Line:
 
 ```
-10: CEILING ATTRIB:QuantityValue                  
+10:CEILING ATTRIB:QuantityValue                  
 ```
 OUTPUT: 
 <br/>If 'QuantityValue = 14.15', the output will be '15'.
