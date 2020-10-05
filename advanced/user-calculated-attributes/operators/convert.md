@@ -24,7 +24,7 @@ The following example converts the value of the 'Quantity' of a Sales Order Line
 ```
 10: CONVERT ATTRIB:QuantityValue CONST:System.Int32                  
 ```
-If 'QuantityValue = 12.14', the output will be '12'.
+OUTPUT: If 'QuantityValue = 12.14', the output will be '12'.
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
