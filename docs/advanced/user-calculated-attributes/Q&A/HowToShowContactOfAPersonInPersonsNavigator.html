@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FORMATSTRING - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>How to show contact of a Person in Persons navigator? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FORMATSTRING - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="How to show contact of a Person in Persons navigator? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,73 +76,83 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-FORMATSTRING">
-<h1 id="formatstring---calculated-attribute-operator">FORMATSTRING - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-show-contact-of-a-person-in-persons-navigator">How to show contact of a Person in Persons navigator?</h1>
 
+<p>The specific of this calculated attribute is that the  contact mechanism type is enum type. This is why it is accessed  specifically. Its values and codes are as follows:</p>
 <table>
 <thead>
 <tr>
-<th>Specification</th>
-<th>Value</th>
+<th style="text-align: left;">Member name</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Description</td>
-<td>Returns the specified object, formatted by the specified rules.</td>
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Address value. Stored as 'A'.</td>
 </tr>
 <tr>
-<td>Parameter 1 Name</td>
-<td>Param1</td>
+<td style="text-align: left;">Mail</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Mail value. Stored as 'E'.</td>
 </tr>
 <tr>
-<td>Parameter 1 Type</td>
-<td>object (any type)</td>
+<td style="text-align: left;">Fax</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Fax value. Stored as 'F'.</td>
 </tr>
 <tr>
-<td>Parameter 2 Name</td>
-<td>Format</td>
+<td style="text-align: left;">MobilePhone</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">MobilePhone value. Stored as 'M'.</td>
 </tr>
 <tr>
-<td>Parameter 2 Type</td>
-<td>constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, &quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (for example, &quot;MMMM DD, yyyy (dddd)&quot;). For more information about the supported format specifiers, see @(Format Specifiers).</td>
+<td style="text-align: left;">Other</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Other value. Stored as 'O'.</td>
 </tr>
 <tr>
-<td>Parameter 3 Name</td>
-<td>-</td>
+<td style="text-align: left;">Telephone</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Telephone value. Stored as 'T'.</td>
 </tr>
 <tr>
-<td>Parameter 3 Type</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Return Value</td>
-<td>Param1 as a string formatted by the rule in Format.</td>
+<td style="text-align: left;">WebSite</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">WebSite value. Stored as 'W'.</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>For more information about the supported format specifiers, see @(Format Specifiers).</p>
-</div>
-<h2 id="example">Example</h2>
-<p>Here are some examples of the diffrent formats and format specifiers:</p>
-<pre><code>10: FORMATSTRING CONST:DocumentDate CONST:yyyy MM dddd
+<p>So, lets say we need to get a column with the emails of the persons (if the person has more than one emails - a random one; if a specific email is  needed - more filters would be needed). The calculated attribute would  have the following expressions:</p>
+<pre><code>10 GETOBJVALUE EXP:20 EXP:15
+15 GETOBJVALUE REF:ContactMechanism ATTRIB:Name
+20 FIRST EXP:21 
+21 FILTER EXP:30 EXP:22
+22 EQUAL EXP:23 EXP:25
+23 GETOBJVALUE REF:ContactMechanism ATTRIB:ContactMechanismType
+25 CAST CONST:1 CONST:Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType
+30 SELECT REPO:General.Contacts.PartyContactMechanisms EXP:40
+40 WHERE EXP:50 
+50 EQUAL ATTRIB:PartyId EXP:60
+60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday'.
-<br>(<em>the language of the day of the week depends on the local regional settings</em>)</p>
-<pre><code>10: FORMATSTRING ATTRIB:QuantityValue CONST:n6
-</code></pre>
-<p>OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000'.
-<br>(<em>the decimal symbol separator depends on the local regional settings</em>)</p>
-<pre><code>10: FORMATSTRING ATTRIB:LineAmountValue CONST:C
-</code></pre>
-<p>OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $'.
-<br>(<em>the decimal symbol separator and the currency symbol depends on the local regional settings</em>)</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
-</div>
+<blockquote>
+<p>Explanation:</p>
+<p>10: from the object from EXP:20 get the attribute from EXP:15</p>
+<p>15: get the value of the attribute Name from the referent object ContactMechanism</p>
+<p>20: get the first element from the list in EXP: 21</p>
+<p>21: filter the list in EXP:30 by the conditions in EXP:22</p>
+<p>22: check if EXP:23 is equal to EXP:25</p>
+<p>23: get the value of the attribute ContactMechanismType from the referent object ContactMEchanism</p>
+<p>25: cast the constant of &quot;1&quot; (this is integer) to type '  Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType'</p>
+<p>30: select from repository General.Contacts.PartyContactMechanisms and filter it by EXP:40</p>
+<p>40: the filter is in EXP:50</p>
+<p>50: check if the value of attribute PartyId is equal to EXP:60</p>
+<p>60: get the value of attribute PartyId of the input object of expression 10</p>
+</blockquote>
 </article>
           </div>
           
@@ -151,7 +161,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/formatstring.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/Q&amp;A/HowToShowContactOfAPersonInPersonsNavigator.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

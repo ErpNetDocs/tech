@@ -131,8 +131,9 @@
 </div>
 <h2 id="example">Example</h2>
 <p>The following example converts the value of the 'State' of a Sales Order, whoose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -&gt; higher):</p>
-<p>10: CONVERT ATTRIB:State CONST:System.Int32<br>
-OUSPUT: If 'State = Released', the output will be '30'.</p>
+<pre><code>10: CONVERT ATTRIB:State CONST:System.Int32      
+</code></pre>
+<p>OUTPUT: If 'State = Released', the output will be '30'.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is Crm.Sales.SalesOrders</p>
