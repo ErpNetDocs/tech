@@ -24,4 +24,4 @@ Example (usage):
 10: GETVALUE SYS: Login
 ```
 
-//The line returns the login of the user that is currently logged in the program.
+The line returns the login of the user that is currently logged in the program.
