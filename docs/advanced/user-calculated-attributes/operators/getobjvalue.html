@@ -122,11 +122,17 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>The Repository in this example is Crm.Sales.SalesOrders.</p>
-<pre><code>10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentAccountId 
+<p>The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the Customer set the current Sales Order:</p>
+<pre><code>10: GETOBJVALUE REF:Customer ATTRIB:DefaultDeliveryTermDays
 </code></pre>
-<p>This line returns the Id of the Default Payment Account set in the Customer's definition of the current Sales Order.</p>
-<p>This value could be used to set the Payment Account in Sales Order through a User Business Rules, for example.</p>
+<p>OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
+</div>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html">Check If a Value of a Field Is Changed in the Adjustment Document</a>
+<a href="../examples/GetValueAndDescriptionOfReferentObject.html">Get Value And Description Of Referent Object</a></p>
 </article>
           </div>
           
