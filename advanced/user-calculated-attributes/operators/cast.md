@@ -26,7 +26,7 @@ OUSPUT: If 'State = Released', the output will be '30'.
 
 [!NOTE] The repository of the attribute is Crm.Sales.SalesOrders
 
-####More Examples
+####More Examples####
 [Check Whether the Releasing of the Document Is First or Not](../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md)
 <br/>[Check If the System type of Payment type in the Sales Order Is 'In Cash'](../examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.md)
 
