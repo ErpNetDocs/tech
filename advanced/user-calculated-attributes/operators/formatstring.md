@@ -4,20 +4,20 @@ uid: cao-FORMATSTRING
 
 # FORMATSTRING - Calculated Attribute Operator
 
-| Specification         | Value                                                        |
-| --------------------- | ------------------------------------------------------------ |
-| Description           | Returns the specified object, formatted by the specified rules.           |
-| Parameter 1 Name      | Param1                                                       |
-| Parameter 1 Type      | object (any type)                                  |
-| Parameter 2 Name      | Format                                                            |
-| Parameter 2 Type      | constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, "C" or "D") or as a pattern of custom characters for dates and numeric values (for example, "MMMM DD, yyyy (dddd)"). For more information about the supported format specifiers, see @(Format Specifiers).                                                           |
-| Parameter 3 Name      | -                                                            |
-| Parameter 3 Type      | -                                                            |
-| Return Value          | Param1 as a string formatted by the rule in Format.                                                          |
+| Specification| Value|
+| ---- | ----- |
+| Description| Returns the specified object, formatted by the specified rules.|
+| Parameter 1 Name| Param1|
+| Parameter 1 Type| object (any type)|
+| Parameter 2 Name| Format|
+| Parameter 2 Type| constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, "C" or "D") or as a pattern of custom characters for dates and numeric values (for example, "MMMM DD, yyyy (dddd)"). For more information about the supported format specifiers, see @(Format Specifiers).|
+| Parameter 3 Name| - |
+| Parameter 3 Type| - |
+| Return Value| Param1 as a string formatted by the rule in Format.|
 
 
 > [!NOTE]
->For more information about the supported format specifiers, see @(Format Specifiers).
+> For more information about the supported format specifiers, see @(Format Specifiers).
 
 ## Example
 
@@ -28,11 +28,13 @@ FORMATSTRING CONST:DocumentDate CONST:yyyy MM dddd
 ```
 OUTPUT: If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday'.
 <br/>(*the language of the day of the week depends on the local regional settings*)
+
 ```
 FORMATSTRING ATTRIB:QuantityValue CONST:n6
 ```
 OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000'.
 <br/>(*the decimal symbol separator depends on the local regional settings*)
+
 ```
 FORMATSTRING ATTRIB:LineAmountValue CONST:C
 ```
