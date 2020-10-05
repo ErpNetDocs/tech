@@ -29,4 +29,4 @@ OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 
 #### More Examples
 [Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)
-[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
+<br/>[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
