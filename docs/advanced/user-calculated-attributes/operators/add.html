@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>The operator returns the sum of two numbers.</td>
+<td>The operator returns the sum (total) of two numbers.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -127,10 +127,18 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Ensure that the numbers which are summed up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals.</p>
+<p>Ensure that the numbers which are summed up are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.</p>
 </div>
 <h2 id="example">Example</h2>
-<p>See the example in <a href="../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a></p>
+<pre><code>10: ADD ATTRIB:QuantityValue CONST:0.25                 
+</code></pre>
+<p>If 'QuantityValue = 1', the output will be '1.25'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a></p>
 </article>
           </div>
           
