@@ -4,16 +4,16 @@ uid: cao-CEILING
 
 # CEILING - Calculated Attribute Operator                                                            
 
-| Specification    | Value                                                        |
-| ---------------- | ------------------------------------------------------------ |
+| Specification| Value|
+| ---- | ----- |
 | Description      | Returns the smallest integer that is greater than or equal to the specified number. |
-| Parameter 1 Name | Number1                                                      |
-| Parameter 1 Type | double or decimal                                            |
-| Parameter 2 Name | -                                                            |
-| Parameter 2 Type | -                                                            |
-| Parameter 3 Name | -                                                            |
-| Parameter 3 Type | -                                                            |
-| Return Value     | The nearest integer which is larger than Number1.            |                                                           |
+| Parameter 1 Name | Number1|
+| Parameter 1 Type | double or decimal|
+| Parameter 2 Name | - |
+| Parameter 2 Type | - |
+| Parameter 3 Name | - |
+| Parameter 3 Type | - |
+| Return Value     | The nearest integer which is larger than Number1.|                                                           |
 
 
 ## Example
@@ -21,7 +21,7 @@ uid: cao-CEILING
 The following example gets the smallest integer that is greater than or equal to 'Quantity' of a Sales Order Line:
 
 ```
-10: CEILING ATTRIB:QuantityValue                  
+10:CEILING ATTRIB:QuantityValue                  
 ```
 OUTPUT: 
 <br/>If 'QuantityValue = 14.15', the output will be '15'.
