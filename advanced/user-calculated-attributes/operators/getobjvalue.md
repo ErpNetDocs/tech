@@ -17,7 +17,7 @@ uid: cao-GETOBJVALUE
 
 
 ## Example
-s
+
 The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the Customer set the current Sales Order:
 ```
 10: GETOBJVALUE REF:Customer ATTRIB:DefaultDeliveryTermDays
@@ -26,3 +26,7 @@ OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrders*
+
+#### More Examples
+[Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)
+[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
