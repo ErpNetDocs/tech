@@ -20,12 +20,13 @@ uid: cao-CAST
 > The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
 
 ## Example
-The following example converts the value of the 'State' of a Sales Order, whoose type us Enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
+The following example converts the value of the 'State' of a Sales Order, whoose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
 
 10: CONVERT ATTRIB:State CONST:System.Int32                  
 OUSPUT: If 'State = Released', the output will be '30'.
 
-[!NOTE] The repository of the attribute is Crm.Sales.SalesOrders
+> [!NOTE] 
+> The repository of the attribute is Crm.Sales.SalesOrders
 
 #### More Examples
 [Check Whether the Releasing of the Document Is First or Not](../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md)
