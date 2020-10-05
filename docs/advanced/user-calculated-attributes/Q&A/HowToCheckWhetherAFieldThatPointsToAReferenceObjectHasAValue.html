@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FORMATSTRING - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>How to check whether a field that points to a reference object has a value? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FORMATSTRING - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="How to check whether a field that points to a reference object has a value? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,73 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-FORMATSTRING">
-<h1 id="formatstring---calculated-attribute-operator">FORMATSTRING - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-check-whether-a-field-that-points-to-a-reference-object-has-a-value">How to check whether a field that points to a reference object has a value?</h1>
 
-<table>
-<thead>
-<tr>
-<th>Specification</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Description</td>
-<td>Returns the specified object, formatted by the specified rules.</td>
-</tr>
-<tr>
-<td>Parameter 1 Name</td>
-<td>Param1</td>
-</tr>
-<tr>
-<td>Parameter 1 Type</td>
-<td>object (any type)</td>
-</tr>
-<tr>
-<td>Parameter 2 Name</td>
-<td>Format</td>
-</tr>
-<tr>
-<td>Parameter 2 Type</td>
-<td>constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, &quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (for example, &quot;MMMM DD, yyyy (dddd)&quot;). For more information about the supported format specifiers, see @(Format Specifiers).</td>
-</tr>
-<tr>
-<td>Parameter 3 Name</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Parameter 3 Type</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Return Value</td>
-<td>Param1 as a string formatted by the rule in Format.</td>
-</tr>
-</tbody>
-</table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>For more information about the supported format specifiers, see @(Format Specifiers).</p>
-</div>
-<h2 id="example">Example</h2>
-<p>Here are some examples of the diffrent formats and format specifiers:</p>
-<pre><code>10: FORMATSTRING CONST:DocumentDate CONST:yyyy MM dddd
+<p>Often when we are creating a calculated attribute and we  want to get a value from a referent object, first we need to check if  the current record has a reference to this object at all. A.k.a. we need to check if a particular Id field has a value or not.</p>
+<p>The <strong>recommended</strong> way to perform this validation is to check whether there is a referent object:</p>
+<pre><code>20  EQUAL   REF AdjustedDocument   CONST NULL        
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday'.
-<br>(<em>the language of the day of the week depends on the local regional settings</em>)</p>
-<pre><code>10: FORMATSTRING ATTRIB:QuantityValue CONST:n6
+<p>​</p>
+<p>and <strong>NOT</strong> whether the Id fields itself is empty:</p>
+<pre><code>20  EQUAL   ATTRIB AdjustedDocumentId   CONST NULL
 </code></pre>
-<p>OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000'.
-<br>(<em>the decimal symbol separator depends on the local regional settings</em>)</p>
-<pre><code>10: FORMATSTRING ATTRIB:LineAmountValue CONST:C
-</code></pre>
-<p>OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $'.
-<br>(<em>the decimal symbol separator and the currency symbol depends on the local regional settings</em>)</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
-</div>
+<p>The <strong>first</strong> <strong>approach is recommended</strong> because:</p>
+<p>a. the second approach may lead to incorrect results - there are cases  with wrong results when this approach is used in a SELECT clause or in  multiple nested calculated attributes.</p>
+<p>b. the first approach does  not require type conversions - we are directly checking of there is a  reference object and we don't have use CAST or CONVERT operators to  match the types before the comparison.</p>
 </article>
           </div>
           
@@ -151,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/formatstring.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/Q&amp;A/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
