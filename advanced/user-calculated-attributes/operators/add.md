@@ -23,7 +23,7 @@ uid: cao-ADD
 ```
 10: ADD ATTRIB:QuantityValue CONST:0.25                 
 ```
-If 'QuantityValue = 1', the output will be '1.25'.
+OUTPUT: If 'QuantityValue = 1', the output will be '1.25'.
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
