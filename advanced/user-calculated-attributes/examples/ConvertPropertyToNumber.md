@@ -1,7 +1,7 @@
 
 # Convert a Value of a Custom Property to a Number
 
-The values of the custom properties are  specific type of value and the CONVERT operator does not know how to  convert it properly. For this reason, if we want to covert a custom property's value to a number, we have to CAST [CAST](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/cast.md#uid-cao-cast) it first. 
+The values of the custom properties are a specific type of value and the [CONVERT](../user-calculated-attributes/operators/convert.md) operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to [CAST](../user-calculated-attributes/operators/cast.md) it first. 
 
 
 ## Example -  Multiply standard price per lot by a coefficient stored in a property
@@ -54,4 +54,4 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 
 
 > [!NOTE]
-> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/cast.md#uid-cao-cast)  it to a string first!
+> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](../user-calculated-attributes/operators/cast.md) it to a string first!
