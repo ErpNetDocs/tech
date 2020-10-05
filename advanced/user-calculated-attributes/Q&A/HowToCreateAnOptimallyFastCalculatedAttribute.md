@@ -61,7 +61,7 @@ When we SELECT a table we can filter its records with WHERE or FILTER clauses. T
 
 Knowing this there are two basic conclusions that we can come to.
 
-First, if we should always choose WHERE clauses instead FILTER clauses if  possible. Most of the other operators are supported in both cases, but  we must say that WHERE clauses have certain limitation. For example,  they can not be used along with [NOT](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40147462/NOT), [OR](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40144947/OR) and [LIKE](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40147159/LIKE) operators (for more information, see [SELECT](https://docs.erp.net/tech/select-40148268.html)). If we have no other choice but to use FILTER we proceed to the next paragraph (advice).
+First, if we should always choose WHERE clauses instead FILTER clauses if  possible. Most of the other operators are supported in both cases, but  we must say that WHERE clauses have certain limitation. For example,  they can not be used along with [NOT](../operators/not.md), [OR](../operators/or.md) and [LIKE](../operators/like.md) operators (for more information, see [SELECT](../operators/select.md)). If we have no other choice but to use FILTER we proceed to the next paragraph (advice).
 
 And second, when we use FILTER clauses we should always try to narrow down  the list that we are returning. How to do so? Just apply as much WHERE  clauses as possible to the SELECT. This way we are filtering the list  before it is returned to the FILTER and therefore it will contain fewer  records, which will lead to a faster calculation.
 
