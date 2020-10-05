@@ -6,7 +6,7 @@ uid: cao-DIVIDE
 | Specification | Value |
 | ---- | ----- |
 | Name | DIVIDE |
-| Description | Divide one number by second number |
+| Description | Divide one number by second number. |
 | Parameter 1 Name | Number1 |
 | Parameter 1 Type | numeric type - int, double or decimal |
 | Parameter 2 Name | Number2 |
