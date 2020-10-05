@@ -16,4 +16,11 @@ uid: cao-ADDDAYS
 | Return Value | Date + NumDays |
 
 ## Example
-See the example in @(Specific Day From Document Date).
+
+```
+10: ADDDAYS ATTRIB:DocumentDate CONST:5                 
+```
+If 'DocumentDate = 2000-01-20', the output will be '2000-01-25'.
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrders*
