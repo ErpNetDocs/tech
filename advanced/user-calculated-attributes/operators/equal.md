@@ -24,8 +24,8 @@ uid: cao-EQUAL
 10: EQUAL ATTRIB:LineNo CONST:30   
 ```
 OUTPUT: 
-<br/>If 'LineNo = 30' and 'Notes = Apple', the output will be 'True'.
-<br/>If 'LineNo = 10' and 'Notes = Apple', the output will be 'False'.
+<br/>If 'LineNo = 30', the output will be 'True'.
+<br/>If 'LineNo = 10', the output will be 'False'.
 
 
 > [!NOTE]
