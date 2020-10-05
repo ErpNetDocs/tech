@@ -32,7 +32,7 @@ FORMATSTRING ATTRIB:QuantityValue CONST:n6
 ```
 OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000' (*the decimal symbol separator depends on the local regional settings*)
 ```
-FORMATSTRING ATTRIB:LineAmountValue CONST:C3
+FORMATSTRING ATTRIB:LineAmountValue CONST:C
 ```
 OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $' (*the decimal symbol separator and the currency symbol depends on the local regional settings*)
 
