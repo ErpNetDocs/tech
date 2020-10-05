@@ -29,3 +29,5 @@ If 'QuantityValue = 12.14', the output will be '12'.
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
+#### More Examples
+[Convert a Value of a Custom Property to a Number](../examples/ConvertPropertyToNumber.md)
