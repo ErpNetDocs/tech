@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "IV6R9U5n7Mmn2a6z408wjQ=="
+          "hash": "/T+B9+W5knIajHTsXMYF6w=="
         }
       },
       "is_incremental": false,
@@ -120,12 +120,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.html",
-          "hash": "8kNaajyLdUgqaOaTJqkGLw=="
+          "hash": "bUqtD95U/8lyilNzAN11gQ=="
         }
       },
       "is_incremental": false,
@@ -383,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/ceiling.html",
-          "hash": "p0+MFRlIqEQHobfar3Nmag=="
+          "hash": "Bjn4TvJRIgseq9+emx/poA=="
         }
       },
       "is_incremental": false,
@@ -419,7 +422,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/count.html",
-          "hash": "RGP7q5m+4SIegIXQvpe/Qw=="
+          "hash": "jjPgpSgMDolS+OntRAWq7w=="
         }
       },
       "is_incremental": false,
@@ -455,7 +458,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/filter.html",
-          "hash": "GZBAW+QLgS6SNkVqXepfVQ=="
+          "hash": "xPbS5q3ZQqk+ErNrqJe3VQ=="
         }
       },
       "is_incremental": false,
@@ -467,7 +470,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/first.html",
-          "hash": "KFnJYSLa+jp4K2l3DVoBWQ=="
+          "hash": "6Cpf6VKVndK4im8/plLq+w=="
         }
       },
       "is_incremental": false,
@@ -479,7 +482,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/floor.html",
-          "hash": "ZcNt4eILToN6h2fE2YP5Cw=="
+          "hash": "DpXxDK7UzHcmtxHfQeEyBg=="
         }
       },
       "is_incremental": false,
@@ -491,7 +494,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/formatstring.html",
-          "hash": "AE2hMCF8T1U8dizAPSBi/w=="
+          "hash": "Vp97GT+NMG799RzCkITdhg=="
         }
       },
       "is_incremental": false,
@@ -1226,7 +1229,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 89,
-          "skipped_file_count": 77
+          "skipped_file_count": 82
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

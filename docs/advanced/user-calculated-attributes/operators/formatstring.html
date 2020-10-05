@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>string - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, &quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (for example, &quot;MMMM DD, yyyy (dddd)&quot;). For more information about the supported format specifiers, see @(Format Specifiers).</td>
+<td>constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, &quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (for example, &quot;MMMM DD, yyyy (dddd)&quot;). For more information about the supported format specifiers, see @(Format Specifiers).</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
@@ -121,29 +121,25 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>The following expression:</p>
-<pre><code>FORMATSTRING CONST:150 CONST:C3
-</code></pre>
-<p>returns &quot;150.000 $&quot; (and the decimal symbol separator and the currency symbol depends on the local regional settings).</p>
-<p>For more information about the supported format specifiers, see @(Format Specifiers).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The Format is entered as a constant (CONST).</p>
+<p>For more information about the supported format specifiers, see @(Format Specifiers).</p>
 </div>
-<p>If we have a calculated attribute with the following expression (the repository is not important):</p>
-<pre><code>FORMATSTRING CONST:2020-03-15 CONST:yyyy MM dddd
+<h2 id="example">Example</h2>
+<p>Here are some examples of the diffrent formats and format specifiers:</p>
+<pre><code>FORMATSTRING CONST:DocumentDate CONST:yyyy MM dddd
 </code></pre>
-<p>The output of the calculated attribute would be &quot;2020 03 Sunday&quot;.</p>
-<pre><code>FORMATSTRING CONST:150 CONST:n6
+<p>OUTPUT: If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday' (<em>the language of the day of the week depends on the local regional settings</em>)</p>
+<pre><code>FORMATSTRING ATTRIB:QuantityValue CONST:n6
 </code></pre>
-<p>The output of the calculated attribute would be &quot;150,000000&quot; (the decimal symbol separator depends on the local regional settings).</p>
-<pre><code>FORMATSTRING CONST:150 CONST:C
+<p>OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000' (<em>the decimal symbol separator depends on the local regional settings</em>)</p>
+<pre><code>FORMATSTRING ATTRIB:LineAmountValue CONST:C
 </code></pre>
-<p>The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).</p>
-<pre><code>c
-</code></pre>
-<p>The output of the calculated attribute would be &quot;150.00 $&quot; (the currency depends on the local regional settings).</p>
+<p>OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $' (<em>the decimal symbol separator and the currency symbol depends on the local regional settings</em>)</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
 </article>
           </div>
           

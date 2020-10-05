@@ -125,6 +125,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="example">Example</h2>
+<p>The following example returns a list with all of lines in the current document (SalesOrder) whose quantity is '1.00':</p>
+<pre><code>10: FILTER CHILD:Lines EXP:30
+30: EQUAL ATTRIB:QuantityValue CONST:1.00
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
+</div>
 </article>
           </div>
           
