@@ -4,23 +4,25 @@ uid: cao-GETOBJVALUE
 
 # GETOBJVALUE - Calculated Attribute Operator
 
-| Specification         | Value                                                        |
-| --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the specified value from the specified object. This operator is used when the user wants the retrieve a value from object different than the current one. The current object is listed in the 'Repository Name' field in the current row.          |
-| Parameter 1 Name      | obj                                                        |
-| Parameter 1 Type      | object                                    |
-| Parameter 2 Name      | value                                                            |
-| Parameter 2 Type      | attribute value                                                           |
-| Parameter 3 Name      | -                                                            |
-| Parameter 3 Type      | -                                                            |
-| Return Value          | Returns value from obj.                                                       |
+| Specification| Value|
+| ---- | ----- |
+| Description| Gets the specified value from the specified object. This operator is used when the user wants the retrieve a value from object different than the current one. The current object is listed in the 'Repository Name' field in the current row.|
+| Parameter 1 Name| obj |
+| Parameter 1 Type| object |
+| Parameter 2 Name| value |
+| Parameter 2 Type| attribute value |
+| Parameter 3 Name| - |
+| Parameter 3 Type| - |
+| Return Value| Returns value from obj. |
 
 
 ## Example
-The Repository in this example is Crm.Sales.SalesOrders.
+s
+The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the Customer set the current Sales Order:
 ```
-10: GETOBJVALUE REF:Customer ATTRIB:DefaultPaymentAccountId 
+10: GETOBJVALUE REF:Customer ATTRIB:DefaultDeliveryTermDays
 ```
-This line returns the Id of the Default Payment Account set in the Customer's definition of the current Sales Order.
+OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 
-This value could be used to set the Payment Account in Sales Order through a User Business Rules, for example.
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrders*
