@@ -29,9 +29,9 @@ uid: cao-AND
 30: EQUAL ATTRIB:Notes CONST:Apple   
 ```
 OUTPUT: 
-If 'LineNo = 10' and 'Notes = Apple', the output will be 'True'.
-If 'LineNo = 50' and 'Notes = Apple', the output will be 'False'.
-If 'LineNo = 10' and 'Notes = Pear', the output will be 'False'.
+<br/>If 'LineNo = 10' and 'Notes = Apple', the output will be 'True'.
+<br/>If 'LineNo = 50' and 'Notes = Apple', the output will be 'False'.
+<br/>If 'LineNo = 10' and 'Notes = Pear', the output will be 'False'.
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
