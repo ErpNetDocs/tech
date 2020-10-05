@@ -130,6 +130,22 @@
 <p>Parameter 1 and Parameter 2 are optional.
 If only Parameter 1 has value, the result is its value (Parameter 1).</p>
 </div>
+<h2 id="example">Example</h2>
+<pre><code>10: AND EXP:20 EXP:30       
+20: EQUAL ATTRIB:LineNo CONST:10 
+30: EQUAL ATTRIB:Notes CONST:Apple   
+</code></pre>
+<p>OUTPUT:
+<br>If 'LineNo = 10' and 'Notes = Apple', the output will be 'True'.
+<br>If 'LineNo = 50' and 'Notes = Apple', the output will be 'False'.
+<br>If 'LineNo = 10' and 'Notes = Pear', the output will be 'False'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/SalesAmountsOfTheCustomerForTheLast30Days.html">Sales Amounts Of The Customer For The Last 30 Days</a>
+<br><a href="../examples/GetValueAndDescriptionOfReferentObject.html">Get Value And Description Of Referent Object</a></p>
 </article>
           </div>
           

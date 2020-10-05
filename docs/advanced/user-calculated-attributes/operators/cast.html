@@ -130,7 +130,13 @@
 <p>The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).</p>
 </div>
 <h2 id="example">Example</h2>
-<p>See the example in @(How to get specific field of a parent document?)</p>
+<p>The following example converts the value of the 'State' of a Sales Order, whoose type us Enum, to an integer number. Conveting to integer allows comparison between the states (lower -&gt; higher):</p>
+<p>10: CONVERT ATTRIB:State CONST:System.Int32<br>
+OUSPUT: If 'State = Released', the output will be '30'.</p>
+<p>[!NOTE] The repository of the attribute is Crm.Sales.SalesOrders</p>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html">Check Whether the Releasing of the Document Is First or Not</a>
+<br><a href="../examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the System type of Payment type in the Sales Order Is 'In Cash'</a></p>
 </article>
           </div>
           
