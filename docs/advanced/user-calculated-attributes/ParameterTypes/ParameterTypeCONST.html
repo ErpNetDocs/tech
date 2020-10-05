@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CAST - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>Parameter Type CONST | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CAST - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="Parameter Type CONST | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,70 +76,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-CAST">
-<h1 id="cast---calculated-attribute-operator">CAST - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="parameter-type-const">Parameter Type CONST</h1>
 
+<p>When used, indicates that the Value for this parameter type would be a constant for every calculation of the calculated attribute.  The formats of the different types of values which are entered are as  follows:</p>
 <table>
 <thead>
 <tr>
-<th>Specification</th>
 <th>Value</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>CAST</td>
+<td>NULL</td>
+<td>null or empty value</td>
+<td>NULL</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Casts the parameter to the specified type.</td>
+<td>Boolean</td>
+<td>true or false value</td>
+<td>True</td>
 </tr>
 <tr>
-<td>Parameter 1 Name</td>
-<td>param</td>
+<td>Integer</td>
+<td>a whole number (not a fractional number) that can be positive, negative, or zero</td>
+<td>93</td>
 </tr>
 <tr>
-<td>Parameter 1 Type</td>
-<td>any type</td>
+<td>Decimal</td>
+<td>number, containing decimal symbol - '.'</td>
+<td>93.012</td>
 </tr>
 <tr>
-<td>Parameter 2 Name</td>
-<td>type</td>
+<td>Date</td>
+<td>date values used in the 'yyyy-MM-dd' format</td>
+<td>2020-12-25</td>
 </tr>
 <tr>
-<td>Parameter 2 Type</td>
-<td>string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types.</td>
+<td>Guid</td>
+<td>Global Unique Identifier - used for objects identification</td>
+<td>6B29FC40-CA47-1067-B31D-00DD010662DA</td>
 </tr>
 <tr>
-<td>Parameter 3 Name</td>
-<td></td>
+<td>String</td>
+<td>explicitly denoted string, entered in single quotation marks</td>
+<td>'Example text.'</td>
 </tr>
 <tr>
-<td>Parameter 3 Type</td>
-<td></td>
-</tr>
-<tr>
-<td>Return Value</td>
-<td>Returns the param converted to the type.</td>
+<td>Type</td>
+<td>used with <a href="https://docs.erp.net/tech/cast-40145742.html">CAST</a>. Used for type conversions and the constant is the type to which we want to convert.</td>
+<td>System.Int32</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).</p>
-</div>
-<h2 id="example">Example</h2>
-<p>The following example converts the value of the 'State' of a Sales Order, whoose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -&gt; higher):</p>
-<p>10: CONVERT ATTRIB:State CONST:System.Int32<br>
-OUSPUT: If 'State = Released', the output will be '30'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
-</div>
-<h4 id="more-examples">More Examples</h4>
-<p><a href="../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html">Check Whether the Releasing of the Document Is First or Not</a>
-<br><a href="../examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the System type of Payment type in the Sales Order Is 'In Cash'</a></p>
+<p>Everything else is treated as string!</p>
 </article>
           </div>
           
@@ -148,7 +140,7 @@ OUSPUT: If 'State = Released', the output will be '30'.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/cast.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/ParameterTypes/ParameterTypeCONST.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

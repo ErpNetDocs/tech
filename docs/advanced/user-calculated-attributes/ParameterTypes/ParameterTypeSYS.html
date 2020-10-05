@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CAST - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>Parameter Type SYS | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CAST - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="Parameter Type SYS | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,70 +76,71 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-CAST">
-<h1 id="cast---calculated-attribute-operator">CAST - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="parameter-type-sys">Parameter Type SYS</h1>
 
+<p>SYS parameter type is used for system variables. They can  be applied when we need to acquire information for the current user,  date, time, enterprise company and oth..</p>
+<p>The list of those variables is as follows:</p>
 <table>
 <thead>
 <tr>
-<th>Specification</th>
 <th>Value</th>
+<th>Description</th>
+<th>Example (returned value)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>CAST</td>
+<td>Login</td>
+<td>The login of the user that is currently logged in the program.</td>
+<td>admin</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>Casts the parameter to the specified type.</td>
+<td>UserId</td>
+<td>The id of the user that is currently logged in the program.</td>
+<td>9da64839-a8d0-491d-aebb-4d18fa42b014</td>
 </tr>
 <tr>
-<td>Parameter 1 Name</td>
-<td>param</td>
+<td>RoleName</td>
+<td>The name of role that is currently set for the user.</td>
+<td>Administration</td>
 </tr>
 <tr>
-<td>Parameter 1 Type</td>
-<td>any type</td>
+<td>RoleId</td>
+<td>The role that is currently set for the user.</td>
+<td>c764ff2b-38ca-4906-893a-2a21a1691f43</td>
 </tr>
 <tr>
-<td>Parameter 2 Name</td>
-<td>type</td>
+<td>Today</td>
+<td>Current date.</td>
+<td>23.6.2017 0:00:00</td>
 </tr>
 <tr>
-<td>Parameter 2 Type</td>
-<td>string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types.</td>
+<td>Now</td>
+<td>Current date-time from the server time zone.</td>
+<td>23.6.2017 13:25:33</td>
 </tr>
 <tr>
-<td>Parameter 3 Name</td>
-<td></td>
+<td>UtcNow</td>
+<td>Current date-time in Coordinated Universal Time (UTC)</td>
+<td>23.6.2017 10:25:33</td>
 </tr>
 <tr>
-<td>Parameter 3 Type</td>
-<td></td>
+<td>EnterpriseCompanyId</td>
+<td>The id of the enterprise company that is currently set for the user.</td>
+<td>b0e80577-fbbe-4c9b-811e-20b6c6dd465f</td>
 </tr>
 <tr>
-<td>Return Value</td>
-<td>Returns the param converted to the type.</td>
+<td>EnterpriseCompanyLocationId</td>
+<td>The id of the enterprise company location that is currently set for the user.</td>
+<td>f2947790-e21f-4def-b533-fdc00a343ce6</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).</p>
-</div>
-<h2 id="example">Example</h2>
-<p>The following example converts the value of the 'State' of a Sales Order, whoose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -&gt; higher):</p>
-<p>10: CONVERT ATTRIB:State CONST:System.Int32<br>
-OUSPUT: If 'State = Released', the output will be '30'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
-</div>
-<h4 id="more-examples">More Examples</h4>
-<p><a href="../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html">Check Whether the Releasing of the Document Is First or Not</a>
-<br><a href="../examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the System type of Payment type in the Sales Order Is 'In Cash'</a></p>
+<p>Example (usage):</p>
+<pre><code>10: GETVALUE SYS: Login
+</code></pre>
+<p>//The line returns the login of the user that is currently logged in the program.</p>
 </article>
           </div>
           
@@ -148,7 +149,7 @@ OUSPUT: If 'State = Released', the output will be '30'.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/operators/cast.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/ParameterTypes/ParameterTypeSYS.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

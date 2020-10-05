@@ -121,6 +121,20 @@
 </tr>
 </tbody>
 </table>
+<h2 id="example">Example</h2>
+<p>The following example concatenates the word 'Red' with the value of the field 'Notes' in Sales Order Lines:</p>
+<pre><code>10: CONCAT CONST:Red ATTRIB:Notes                  
+</code></pre>
+<p>OUTPUT: If 'Notes  = Apple', the output will be 'RedApple'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
+<p>If we want to expand the example we can add a space between the both strings:</p>
+<pre><code>10: CONCAT CONST:Red EXP:20 
+20: CONCAT CONST:' ' ATTRIB:Notes
+</code></pre>
+<p>OUTPUT: If 'Notes  = Apple', the output will be 'Red Apple'.</p>
 </article>
           </div>
           
