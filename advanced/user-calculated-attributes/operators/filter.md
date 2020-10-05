@@ -28,4 +28,3 @@ The following example returns a list with all of lines in the current document (
 
 > [!NOTE]
 > The repository of the attribute is *Crm.Sales.SalesOrders*
-```
