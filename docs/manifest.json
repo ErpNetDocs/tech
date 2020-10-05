@@ -120,15 +120,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.html",
-          "hash": "PK0+6U+k4OBcboy4dL6rbw=="
+          "hash": "L8WDLubB8jfQcdhFJd07XQ=="
         }
       },
       "is_incremental": false,
