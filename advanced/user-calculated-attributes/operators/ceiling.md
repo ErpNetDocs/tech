@@ -14,3 +14,18 @@ uid: cao-CEILING
 | Parameter 3 Name | -                                                            |
 | Parameter 3 Type | -                                                            |
 | Return Value     | The nearest integer which is larger than Number1.            |                                                           |
+
+
+## Example
+
+The following example gets the smallest integer that is greater than or equal to 'Quantity' of a Sales Order Line:
+
+```
+10: CONVERT ATTRIB:QuantityValue                  
+```
+OUTPUT: 
+<br/>If 'QuantityValue = 14.15', the output will be '15'.
+<br/>If 'QuantityValue = 14', the output will be '14'.
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrderLines*
