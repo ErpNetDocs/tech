@@ -1,3 +1,20 @@
 - name: How To Check If A Custom Property Has Value?
   href: HowToCheckIfACustomPropertyHasValue.md
+- name: How To Check If A List Have Values?
+  href: HowToCheckIfAListHaveValues.md
+- name: How To Check Whether A Field That Points To A Reference Object Has A Value?
+  href: HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md
+- name: How To Create An Optimally Fast Calculated Attribute?
+  href: HowToCreateAnOptimallyFastCalculatedAttribute.md
+- name: How To Determine The Party Type Of A Party?
+  href: HowToDetermineThePartyTypeOfAParty.md
+- name: How To Get Attribute Value From List?
+  href: HowToGetAttributeValueFromList.md
+- name: How To Get Specific Field Of A Parent Document?
+  href: HowToGetSpecificFieldOfAParentDocument.md
+- name: How To Show Contact Of A Person In Persons Navigator?
+  href: HowToShowContactOfAPersonInPersonsNavigator.md
+- name: How To Use The Customer As A Company?
+  href: HowToUseTheCustomerAsACompany.md
+
 
