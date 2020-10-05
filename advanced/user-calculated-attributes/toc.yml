@@ -5,6 +5,6 @@
 - name: Examples
   href: examples/toc.yml
 - name: Parameter Types
-  href: Parameter Types/toc.yml
-- name: Q & A
-  href: Q & A/toc.yml  
+  href: ParameterTypes/toc.yml
+- name: Q&A
+  href: Q&A/toc.yml  
