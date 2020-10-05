@@ -21,9 +21,10 @@ uid: cao-CAST
 
 ## Example
 The following example converts the value of the 'State' of a Sales Order, whoose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
-
-10: CONVERT ATTRIB:State CONST:System.Int32                  
-OUSPUT: If 'State = Released', the output will be '30'.
+```
+10: CONVERT ATTRIB:State CONST:System.Int32      
+```
+OUTPUT: If 'State = Released', the output will be '30'.
 
 > [!NOTE] 
 > The repository of the attribute is Crm.Sales.SalesOrders
