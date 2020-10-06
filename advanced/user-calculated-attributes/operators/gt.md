@@ -34,6 +34,5 @@ OUTPUT:
 
 #### More Examples
 [Compare Unit Price And Standard Unit Price](../examples/CompareUnitPriceAndStandardUnitPrice.md)
-<br/>[Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)
 
 
