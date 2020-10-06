@@ -25,7 +25,6 @@ uid: cao-INCNUM
 
  The following example shows how to increase the LotNumber of the Lot by 1 with the INCNUM operator:
 
-Logistics.Inventory.Lots =>
 ```
 10: INCNUM ATTRIB:Number 
 ```
