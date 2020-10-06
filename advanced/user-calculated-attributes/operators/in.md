@@ -21,7 +21,7 @@ uid: cao-IN
 
 ## Example
 
-The following example checks whether there are Sales Orders with Document Types DocumentTypeId = 'f207c991-6289-47f9-85ca-f85cd2864263' and DocumentTypeId = '4acbc342-c7e2-43b9-b63c-cb51d20e5ab4' into the datatabase:
+The following example checks whether there are Sales Orders with Notes 'Apple' and 'Pear' into the datatabase:
 ```
 10: SELECT REPO:Crm.Sales.SalesOrders EXP:20
 20: WHERE EXP:30
