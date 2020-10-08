@@ -54,4 +54,4 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 
 
 > [!NOTE]
-> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](../user-calculated-attributes/operators/cast.md) it to a string first!
+> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](../operators/cast.md) it to a string first!
