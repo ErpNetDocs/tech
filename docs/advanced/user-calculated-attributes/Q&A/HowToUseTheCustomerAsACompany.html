@@ -8,7 +8,7 @@
     <title>How To Use The Customer As A Company? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How To Use The Customer As A Company? | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -80,16 +80,17 @@
 <h1 id="how-to-use-the-customer-as-a-company">How To Use The Customer As A Company?</h1>
 
 <p>When we work with the customer, we can only get its party  attributes as the customer may be company, company location or a person.</p>
-<p>So if we know that the customer is a company and we need to get his  company attributes, we can cast its reference Party  to Aloe.EnterpriseOne.Model.General.Contacts.Company.</p>
+<p>So if we know that the customer is a company and we need to get his company attributes, we can cast its reference Party to Aloe.EnterpriseOne.Model.General.Contacts.Company.</p>
 <p>For example, to get the Responsible Person of the company of the customer, the following attribute would do the job:</p>
 <p>(repository of the attribute: Crm.Customers)</p>
 <p><em>Expressions:</em></p>
 <pre><code>10: GETOBJVALUE EXP:20 ResponsiblePersonName
 20: CAST REF:Party CONST:Aloe.EnterpriseOne.Model.General.Contacts.Company
 </code></pre>
-<blockquote>
-<p>[!NOTE]If the customer is not a company, it would return an error.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the customer is not a company, it would return an error.</p>
+</div>
 </article>
           </div>
           
