@@ -425,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/Overview.html",
-          "hash": "L7NudYejYZgnZwVs5Dpi6A=="
+          "hash": "0V1InnnTTaK/FvF6g/b8OQ=="
         }
       },
       "is_incremental": false,
@@ -1483,10 +1483,11 @@
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
+          "details": "Processor ConceptualDocumentProcessor cannot support incremental build because the following steps don't implement ISupportIncrementalBuildStep interface: ProcessLists.",
           "incrementalPhase": "build",
-          "total_file_count": 101,
-          "skipped_file_count": 100
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
