@@ -84,9 +84,12 @@
 <ul>
 <li>If the Property Type of the particular custom property is 'Text' use the following expressions:</li>
 </ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: EQUAL EXP:30 CONST:NULL</p>
-<p>30: CAST ATTRIB:@CustomProperty1 CONST:System.String</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+
+20: EQUAL EXP:30 CONST:NULL
+
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
+</code></pre>
 <blockquote>
 <p>Explanation:</p>
 <p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
@@ -96,11 +99,16 @@
 <ul>
 <li>If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:</li>
 </ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: OR EXP:30 EXP:40</p>
-<p>30: EQUAL EXP:50 CONST:NULL</p>
-<p>40: EQUAL EXP:50 CONST:''</p>
-<p>50: CAST ATTRIB:@CustomProperty1 CONST:System.String</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+
+20: OR EXP:30 EXP:40
+
+30: EQUAL EXP:50 CONST:NULL
+
+40: EQUAL EXP:50 CONST:''
+
+50: CAST ATTRIB:@CustomProperty1 CONST:System.String
+</code></pre>
 <blockquote>
 <p>Explanation:</p>
 <p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
@@ -112,16 +120,26 @@
 <ul>
 <li>If the Property Type of the particular custom property is 'Picture' use the following expressions:</li>
 </ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: EQUAL EXP:30 CONST:0</p>
-<p>30: SUM EXP:40 CONST:1</p>
-<p>40: FILTER EXP:70 EXP:50</p>
-<p>50: NOT EXP:60</p>
-<p>60: EQUAL ATTRIB:Picture CONST:NULL</p>
-<p>70: SELECT REPO:General.PropertyValues EXP:80</p>
-<p>80: WHERE EXP: 90 EXP:100</p>
-<p>90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2</p>
-<p>100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+
+20: EQUAL EXP:30 CONST:0
+
+30: SUM EXP:40 CONST:1
+
+40: FILTER EXP:70 EXP:50
+
+50: NOT EXP:60            
+
+60: EQUAL ATTRIB:Picture CONST:NULL
+
+70: SELECT REPO:General.PropertyValues EXP:80
+
+80: WHERE EXP: 90 EXP:100
+
+90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
+
+100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28
+</code></pre>
 <blockquote>
 <p>Explanation:</p>
 <p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
