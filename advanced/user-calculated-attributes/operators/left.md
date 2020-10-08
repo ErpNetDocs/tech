@@ -6,14 +6,14 @@ uid: cao-LEFT
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the first n characters of a string.          |
+| Description           | Gets the first n characters of a string (starting from left).|
 | Parameter 1 Name      | String                                                       |
 | Parameter 1 Type      | string                                    |
-| Parameter 2 Name      | NumChars                                                           |
-| Parameter 2 Type      | int                                                            |
+| Parameter 2 Name      | NumChars                                                     |
+| Parameter 2 Type      | int                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the first Numchars characters of the String.                                                          |
+| Return Value          | Returns the first Numchars characters of the String.         |
 
 
 ## Example
