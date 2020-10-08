@@ -48,7 +48,7 @@ Here are some examples to picture the information by far:
 If there is a need of a list of documents which DocumentTypeId is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are Work Orders. So the following calculated attribute would be incorrect:
 
 ```
-10: SELECT REPO:Production.ShopFloor.WorkOrders EXP: 20
+10: SELECT REPO:Production.ShopFloor.WorkOrders EXP:20
 20: WHERE EXP:30
 30: OR EXP:40 EXP:50
 40: EQUAL CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
