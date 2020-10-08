@@ -10,11 +10,15 @@ Note that when a custom property is cast to string, only its value will be proce
 
 - If the Property Type of the particular custom property is 'Text' use the following expressions:
 
+```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
 
 20: EQUAL EXP:30 CONST:NULL
 
 30: CAST ATTRIB:@CustomProperty1 CONST:System.String
+```
+
+
 
 > Explanation:
 >
@@ -28,6 +32,7 @@ Note that when a custom property is cast to string, only its value will be proce
 
 - If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:
 
+```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
 
 20: OR EXP:30 EXP:40
@@ -37,6 +42,9 @@ Note that when a custom property is cast to string, only its value will be proce
 40: EQUAL EXP:50 CONST:''
 
 50: CAST ATTRIB:@CustomProperty1 CONST:System.String
+```
+
+
 
 > Explanation:
 >
@@ -54,6 +62,7 @@ Note that when a custom property is cast to string, only its value will be proce
 
 - If the Property Type of the particular custom property is 'Picture' use the following expressions:
 
+```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
 
 20: EQUAL EXP:30 CONST:0
@@ -73,6 +82,9 @@ Note that when a custom property is cast to string, only its value will be proce
 90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
 
 100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28
+```
+
+
 
 > Explanation:
 >
