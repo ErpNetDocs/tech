@@ -19,8 +19,8 @@ Note that when a custom property is cast to string, only its value will be proce
 
 
 > Explanation:
-> 10: if EXP:20 is true, return the text 'null, else - return 'not null'
-> 20: if EXP:30 is empty, return true, else - return false
+> 10: if EXP:20 is true, return the text 'null, else - return 'not null' 
+> 20: if EXP:30 is empty, return true, else - return false 
 > 30: cast CustomProperty1 to string
 
 
