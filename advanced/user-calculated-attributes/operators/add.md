@@ -1,5 +1,6 @@
 ---
 uid: cao-ADD
+items: Operators
 ---
 # ADD - Calculated Attribute Operator
 
