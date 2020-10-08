@@ -197,12 +197,12 @@
   "advanced/user-calculated-attributes/operators/left.html": {
     "href": "advanced/user-calculated-attributes/operators/left.html",
     "title": "LEFT - Calculated Attribute Operator | ERP.net Tech Docs",
-    "keywords": "LEFT - Calculated Attribute Operator Specification Value Description Gets the first n characters of a string. Parameter 1 Name String Parameter 1 Type string Parameter 2 Name NumChars Parameter 2 Type int Parameter 3 Name - Parameter 3 Type - Return Value Returns the first Numchars characters of String."
+    "keywords": "LEFT - Calculated Attribute Operator Specification Value Description Gets the first n characters of a string (starting from left). Parameter 1 Name String Parameter 1 Type string Parameter 2 Name NumChars Parameter 2 Type int Parameter 3 Name - Parameter 3 Type - Return Value Returns the first Numchars characters of the String. Example The following example returns the first 3 characters of the Notes set in the Sales Order: 10: LEFT ATTRIB:Notes CONST:3 OUTPUT: If 'Notes = Apple', the output will be 'App'. If 'Notes = I am', the output will be 'I a'. Note The repository of the attribute is Crm.Sales.SalesOrders"
   },
   "advanced/user-calculated-attributes/operators/len.html": {
     "href": "advanced/user-calculated-attributes/operators/len.html",
     "title": "LEN - Calculated Attribute Operator | ERP.net Tech Docs",
-    "keywords": "LEN - Calculated Attribute Operator Specification Value Description Returns the length of the string. Parameter 1 Name String Parameter 1 Type string Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value Returns the length of a string. For example, if String is 'abc', the operator would return 3."
+    "keywords": "LEN - Calculated Attribute Operator Specification Value Description Returns the length of the string. Parameter 1 Name String Parameter 1 Type string Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return Value Returns the length of a string. Note The spaces are included when calculating the length. Example The following example returns the lenght of the Notes set in the Sales Order: 10: LEN ATTRIB:Notes OUTPUT: If 'Notes = Apple', the output will be '5'. If 'Notes = I am', the output will be '4'. Note The repository of the attribute is Crm.Sales.SalesOrders"
   },
   "advanced/user-calculated-attributes/operators/like.html": {
     "href": "advanced/user-calculated-attributes/operators/like.html",
@@ -247,7 +247,7 @@
   "advanced/user-calculated-attributes/operators/Overview.html": {
     "href": "advanced/user-calculated-attributes/operators/Overview.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators"
+    "keywords": "Operators [!list items=Operators default-text=\"None\"]"
   },
   "advanced/user-calculated-attributes/operators/pos.html": {
     "href": "advanced/user-calculated-attributes/operators/pos.html",
