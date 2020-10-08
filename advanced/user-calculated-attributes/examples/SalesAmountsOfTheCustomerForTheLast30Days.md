@@ -11,7 +11,7 @@ Such calculated attribute actually represents a report  with specific filters. I
 - Void (he probably won't need voided documents)
 - Document Date
 
-So the calculated attribute must [SELECT](select.md) the Sales Order Lines table and filter the records as described above.  Such calculated attribute would have the following parameters:
+So the calculated attribute must [SELECT](../operators/select.md) the Sales Order Lines table and filter the records as described above.  Such calculated attribute would have the following parameters:
 
 ```
 Repository Name: Crm.Sales.SalesOrders

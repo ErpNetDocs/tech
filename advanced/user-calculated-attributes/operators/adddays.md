@@ -1,5 +1,6 @@
 ---
 uid: cao-ADDDAYS
+items: Operators
 ---
 # ADDDAYS - Calculated Attribute Operator
 

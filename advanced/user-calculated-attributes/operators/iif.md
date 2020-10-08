@@ -17,4 +17,18 @@ uid: cao-IIF
 
 ## Example
 
-See the example in @(Compare Unit Price And Standard Unit Price).
+```      
+10: IIF EXP:20 CONST:'Quantity is 1.00' CONST: 'Quantity is not 1.00'  
+20: EQUAL ATTRIB:QuantityValue CONST:1.00
+```
+OUTPUT: 
+<br/>If 'QuantityValue = 1.00', the output will be 'Quantity is 1.00'.
+<br/>If 'QuantityValue = 2.00', the output will be 'Quantity is not 1.00'.
+
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrderLines*
+
+#### More Examples
+[Compare Unit Price And Standard Unit Price](../examples/CompareUnitPriceAndStandardUnitPrice.md)
+<br/>[Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)

@@ -13,4 +13,19 @@ uid: cao-LEN
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the length of a string. For example, if String is 'abc', the operator would return 3.                                                  |
+| Return Value          | Returns the length of a string.                                                  |
+
+> [!NOTE] 
+> The spaces are included when calculating the length.
+
+## Example
+The following example returns the lenght of the Notes set in the Sales Order:
+```
+10: LEN ATTRIB:Notes
+```
+OUTPUT: 
+<br/> If 'Notes = Apple', the output will be '5'.
+<br/> If 'Notes = I am', the output will be '4'. 
+
+> [!NOTE] 
+> The repository of the attribute is Crm.Sales.SalesOrders

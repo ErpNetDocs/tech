@@ -108,4 +108,5 @@ Note that when a custom property is cast to string, only its value will be proce
 >
 > 100: if ATTRIB: ATTRIB:EntityItemId is equal to 47e225e9-f4b6-e611-af28-00155d001f28, return true, else - return false
 
-> [!Note] EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.
+> [!NOTE] 
+> EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.

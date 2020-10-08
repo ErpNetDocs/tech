@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>The INCNUM operator increases the value of its parameter by 1. The operator can be used only for String values whоose last character is a number.</td>
+<td>The INCNUM operator increases the value of its parameter by 1. The operator can be used only for String values whоose last character is a number. The INCNUM operator can be used for consecutive numbering of documents and nomenclatures.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -121,19 +121,25 @@
 </tr>
 </tbody>
 </table>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>If you try to increment the string value whоose last character is a number 'AA01', the incrementation will be successful and result will be 'AA02';</li>
+<li>If you try to increment a value whoоse type is Decimal, Int or Date, the incrementation won't be successful and the Calculated Attribute won't be compilated;</li>
+<li>If the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.</li>
+</ul>
+</div>
 <h2 id="examples">Examples</h2>
-<p>If the user tries to increment the string value 'AA01', the incrementation will be successful and result will be 'AA02'.</p>
-<p>If the user tries to increment a value whoоse type is Decimal, Int or Date,
-the incrementation won't be successful and the Calculated Attribute won't be compilated.</p>
-<p>If the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.</p>
-<p>The INCNUM operator can be used for consecutive numbering of documents and nomenclatures.</p>
-<p>This simple example returns 'AA02':</p>
-<pre><code>10: INCNUM CONST:AA01
-</code></pre>
-<p>The example below shows how to increase the LotNumber of the Lot by 1 with the INCNUM operator:</p>
-<p>Logistics.Inventory.Lots =&gt;</p>
+<p>The following example shows how to increase the LotNumber of the Lot by 1 with the INCNUM operator:</p>
 <pre><code>10: INCNUM ATTRIB:Number 
 </code></pre>
+<p>OUTPUT:
+<br>If 'Number = 0001'', the output will be '0002'.
+<br>If 'Number = AA01'', the output will be 'AA02'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Logistics.Inventory.Lots</em></p>
+</div>
 </article>
           </div>
           
