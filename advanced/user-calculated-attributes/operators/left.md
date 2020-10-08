@@ -19,7 +19,7 @@ uid: cao-LEFT
 ## Example
 The following example returns the first 3 characters of the Notes set in the Sales Order:
 ```
-10: CONVERT ATTRIB:Notes CONST:3   
+10: LEFT ATTRIB:Notes CONST:3   
 ```
 OUTPUT: 
 <br/> If 'Notes = Apple', the output will be 'App'.
