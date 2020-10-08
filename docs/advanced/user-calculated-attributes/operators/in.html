@@ -8,7 +8,7 @@
     <title>IN - Calculated Attribute Operator | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="IN - Calculated Attribute Operator | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -121,16 +121,20 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>Extract all sales orders with document types DocumentTypeId = 'f207c991-6289-47f9-85ca-f85cd2864263' and DocumentTypeId = '4acbc342-c7e2-43b9-b63c-cb51d20e5ab4'. The calculated attribute would contain the following expressions:</p>
-<pre><code>10: SELECT REPO:Crm.Sales.SalesOrders EXP:20
-20: WHERE EXP:30
-30: IN ATTRIB:DocumentTypeId CONST:f207c991-6289-47f9-85ca-f85cd2864263, 4acbc342-c7e2-43b9-b63c-cb51d20e5ab4
-</code></pre>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Single quotes are only necessary when the values which we compare to are strings.</p>
 </div>
+<h2 id="example">Example</h2>
+<p>The following example checks whether there are Sales Orders with Notes 'Apple' and 'Pear' into the datatabase:</p>
+<pre><code>10: SELECT REPO:Crm.Sales.SalesOrders EXP:20
+20: WHERE EXP:30
+30: IN ATTRIB:Notes CONST:'Apple', 'Pear'
+</code></pre>
+<p>OUTPUT:
+<br>If there is atleast one Sales Order with 'Notes = Apple', the output will be 'True'.
+<br>If there is atleast one Sales Order with 'Notes = Pear', the output will be 'True'.
+<br>If there are NO Sales Orders with 'Notes = Apple OR Pear', the output will be 'False'.</p>
 </article>
           </div>
           

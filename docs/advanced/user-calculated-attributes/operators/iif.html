@@ -8,7 +8,7 @@
     <title>IIF - Calculated Attribute Operator | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="IIF - Calculated Attribute Operator | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -122,7 +122,19 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>See the example in @(Compare Unit Price And Standard Unit Price).</p>
+<pre><code>10: IIF EXP:20 CONST:'Quantity is 1.00' CONST: 'Quantity is not 1.00'  
+20: EQUAL ATTRIB:QuantityValue CONST:1.00
+</code></pre>
+<p>OUTPUT:
+<br>If 'QuantityValue = 1.00', the output will be 'Quantity is 1.00'.
+<br>If 'QuantityValue = 2.00', the output will be 'Quantity is not 1.00'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/CompareUnitPriceAndStandardUnitPrice.html">Compare Unit Price And Standard Unit Price</a>
+<br><a href="../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html">Check If a Value of a Field Is Changed in the Adjustment Document</a></p>
 </article>
           </div>
           
