@@ -8,7 +8,7 @@ Note that when a custom property is cast to string, only its value will be proce
 
 
 
-##### If the Property Type of the particular custom property is 'Text' use the following expressions:
+**If the Property Type of the particular custom property is 'Text' use the following expressions:**
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -26,7 +26,7 @@ Explanation:
 
 
 
-##### If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:
+**If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:**
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -50,7 +50,7 @@ Explanation:
 
 
 
-##### If the Property Type of the particular custom property is 'Picture' use the following expressions:
+##### **If the Property Type of the particular custom property is 'Picture' use the following expressions:**
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -75,7 +75,6 @@ Explanation:
 - 30: count the records of the list returned by EXP:40
 
 - 40: filter the list returned by EXP:70 by the condition of EXP:50
-
 - 50: if EXP:60 is true, return false, else - return true
 
 - 60: if ATTRIB:Picture is equal to NULL, return true, else - return false
