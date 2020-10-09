@@ -1,13 +1,12 @@
 ---
 uid: cao-LIKE
-items: Operators
 ---
 
 # LIKE - Calculated Attribute Operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Searches for a specified pattern in a string. The '%' symbol is used to define 0 or more characters before and after the searched string. '_' is used to define specifically 1 character.          |
+| Description           | Searches for a specified pattern in a string. It is usually used in a combination with the wildcars '%' and '\_': <br/> The '%' symbol is used to define 0 or more characters before and after the searched string. <br/> '\_' is used to define specifically 1 character.          |
 | Parameter 1 Name      | String1                                                       |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | Mask                                                          |
@@ -33,20 +32,20 @@ items: Operators
 - 'a%o' → Finds any values that start with "a" and ends with "o".
 
 
-Calculated Attribute:
+The following example returns True if the the string contains 'Apple' and after 'Apple' there is exactly on character:
 
-
-Repository: General.Products.Products
 ```
-10 LIKE EXP:20 CONST:%shoe_
-20 CAST ATTRIB:Name CONST:System.String
+10 LIKE ATTRIB:Notes CONST:%Apple_
 ```
 
-Calculated Attribute Result:
+OUTPUT: 
+- If 'Notes = Apples', the output will be 'True'.
+- If 'Notes = Green Apples', the output will be 'True'.
+- If 'Notes = apples', the output will be 'False'.
+- If 'Notes = Apple', the output will be 'False'.
+- If 'Notes = Apples', the output will be 'False'.
 
-- ProductName = sports shoes → True
-- ProductName = shoes → True
-- ProductName = sports shoess → False
-- ProductName = sports shoe → False
-- ProductName = sports jacket → False
+
+> [!NOTE] 
+> The repository of the attribute is Crm.Sales.SalesOrders
 
