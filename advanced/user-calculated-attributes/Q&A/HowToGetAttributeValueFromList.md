@@ -1,5 +1,5 @@
 ---
-items: CalculatedAttributesQ&A
+items: CalculatedAttributesQA
 ---
 
 # How to get attribute value from list?
