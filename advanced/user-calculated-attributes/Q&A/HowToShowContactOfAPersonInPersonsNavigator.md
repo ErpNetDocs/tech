@@ -1,5 +1,5 @@
 ---
-items: CalculatedAttributesQ&A
+items: CalculatedAttributesQA
 ---
 
 # How to show contact of a Person in Persons navigator?
