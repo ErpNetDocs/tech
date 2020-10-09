@@ -1,5 +1,5 @@
 ---
-items: CalculatedAttributesQ&A
+items: CalculatedAttributesQA
 ---
 
 # How to determine the party type of a party?
