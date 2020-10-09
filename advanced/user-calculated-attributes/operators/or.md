@@ -15,3 +15,19 @@ items: Operators
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
 | Return Value          | Condition1 OR Condition2                                                     |
+
+
+## Example
+
+```      
+10: OR EXP:20 EXP:30
+20: EQUAL ATTRIB:LineNo CONST:10
+30: EQUAL ATTRIB:LineNo CONST:20
+```
+OUTPUT: 
+<br/>If 'LineNo = 10', the output will be 'True'.
+<br/>If 'LineNo = 20', the output will be 'True'.
+<br/>If 'LineNo = 30', the output will be 'False'.
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrderLines*
