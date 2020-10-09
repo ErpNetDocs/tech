@@ -121,12 +121,20 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>See the example in <a href="../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>In one calculated attribute, Parameter 1 Type and Parameter 2 Type must be equal.</p>
+<p>Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.</p>
 </div>
+<h2 id="example">Example</h2>
+<pre><code>10:  MULTIPLY ATTRIB:QuantityValue CONST:2.00                
+</code></pre>
+<p>OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+</div>
+<h4 id="more-examples">More Examples</h4>
+<p><a href="../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a>.</p>
 </article>
           </div>
           
