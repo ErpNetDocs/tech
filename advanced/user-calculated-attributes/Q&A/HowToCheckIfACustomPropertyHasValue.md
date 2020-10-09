@@ -12,7 +12,9 @@ Note that when a custom property is cast to string, only its value will be proce
 
 
 
-**If the Property Type of the particular custom property is 'Text' use the following expressions:**
+#### Property Type is 'Text' 
+
+If the Property Type of the particular custom property is 'Text' use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -30,7 +32,9 @@ Explanation:
 
 
 
-**If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:**
+#### Property Type is 'Number' or 'Date'
+
+If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -54,7 +58,9 @@ Explanation:
 
 
 
-##### **If the Property Type of the particular custom property is 'Picture' use the following expressions:**
+#### Property Type is 'Picture'
+
+If the Property Type of the particular custom property is 'Picture' use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'

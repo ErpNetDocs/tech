@@ -22,8 +22,8 @@ And the Calculated Attribute expressions are as follows:
 
 
 
-> Explanation:
->
-> 10: Add the result from expression 20 to the attribute UsageQuantityValue
->
-> 20: Multiply UsageQuantityValue and ScrapRate
+Explanation:
+
+- 10: Add the result from expression 20 to the attribute UsageQuantityValue
+- 20: Multiply UsageQuantityValue and ScrapRate
+

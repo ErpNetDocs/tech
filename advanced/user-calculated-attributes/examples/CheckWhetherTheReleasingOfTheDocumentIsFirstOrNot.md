@@ -15,10 +15,9 @@ Sometimes we may want to know whether the Released state of document is selected
 
 ```
 
-> Explanation:
->
-> 10: Check if EXP: 20 is true or false. If EXP: 20 is True - the calculated attribute displays 'True', else - 'False'.
->
-> 20: Check if EXP: 20 is equal to "30".
->
-> 30: Cast the State of the document to integer. State Released is stored as "30", for more information see [DocumentState Enumeration](https://restdev.erp.bg/model/html/243d08d2-1bd6-f223-c454-1c488e51648f.htm).
+Explanation:
+
+- 10: Check if EXP: 20 is true or false. If EXP: 20 is True - the calculated attribute displays 'True', else - 'False'.
+- 20: Check if EXP: 20 is equal to "30".
+
+- 30: Cast the State of the document to integer. State Released is stored as "30", for more information see [DocumentState Enumeration](https://restdev.erp.bg/model/html/243d08d2-1bd6-f223-c454-1c488e51648f.htm).

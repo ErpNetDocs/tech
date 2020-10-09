@@ -28,7 +28,9 @@ More records inevitably means slower calculation. Like any other design when cre
 
 Let's imagine that we need to show a field with Total Line Amount value in  the Sales Order Line. Therefore we will need to calculate the Sum of the Line Amount of all Sales Order lines of the particular Sales Order.  Such attribute can be created at least two ways (the repository is  Crm.Sales.SalesOrderLines):
 
-- Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)
+#### Using a SELECT
+
+Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)
 
 ```
 10     SUM  EXP: 20  ATTRIB: LineAmountValue                            
@@ -44,7 +46,9 @@ Let's imagine that we need to show a field with Total Line Amount value in  the 
 
 
 
-- Using a REF (using only the lines of the current SalesOrder)
+#### Using a REF
+
+Using a REF (using only the lines of the current SalesOrder)
 
 ```
 10     SUM   EXP: 20 ATTRIB: LineAmountValue                    

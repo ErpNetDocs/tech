@@ -26,20 +26,18 @@ Repository: Crm.Sales.SalesOrderLines
 
 
 
-> Explanation:
->
-> 10: Get the record of custom property "Propery1" from EXP: 20. 
->
-> 20: Get the first value of EXP: 30.
->
-> 30: Filter the list from EXP: 70 with the filters from EXP: 40.
->
-> 40: Check in the LineNumber of the offer line is equal to the value from EXP: 50.
->
-> 50: Cast EXP:60 to "System.Int32".
->
-> 60: Get the”ParentLineNo“ of the sales order line which is an input for EXP:10.
->
-> 70: Get the list of child line of the object of EXP: 80.
->
-> 80: Cast the “Parent Document” of the sales order line to  "Aloe.EnterpriseOne.Model.Crm.Presales.Offer" in order to define the  type/entity of the parent document.
+Explanation:
+
+- 10: Get the record of custom property "Propery1" from EXP: 20. 
+- 20: Get the first value of EXP: 30.
+- 30: Filter the list from EXP: 70 with the filters from EXP: 40.
+- 40: Check in the LineNumber of the offer line is equal to the value from EXP: 50.
+
+- 50: Cast EXP:60 to "System.Int32".
+
+- 60: Get the”ParentLineNo“ of the sales order line which is an input for EXP:10.
+
+- 70: Get the list of child line of the object of EXP: 80.
+
+- 80: Cast the “Parent Document” of the sales order line to  "Aloe.EnterpriseOne.Model.Crm.Presales.Offer" in order to define the  type/entity of the parent document.
+

@@ -16,11 +16,9 @@ It expressions are as follows:
 
 
 
-> Explanation:
-> 
-> 10: check if expression 20 is true. If so - return True, else - return False
->
-> 20: check if attribute QuantityValue is equal to expression 30
->
-> 30: get the smallest integral value greater than or equal to the value in attribute QuantityValue
+Explanation:
+
+- 10: check if expression 20 is true. If so - return True, else - return False
+- 20: check if attribute QuantityValue is equal to expression 30
+- 30: get the smallest integral value greater than or equal to the value in attribute QuantityValue
 

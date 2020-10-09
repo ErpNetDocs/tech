@@ -26,15 +26,12 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 ```
 
 
-> 
-> Explanation:
->
-> 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
->
-> 20: Convert EXP:30 to a decimal number .
->
-> 25: Cast the value of custom property 'CustomProperty1' to a string
-> 
+Explanation:
+
+- 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
+- 20: Convert EXP:30 to a decimal number .
+
+- 25: Cast the value of custom property 'CustomProperty1' to a string
 
 
 <br/>
@@ -46,13 +43,11 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 ```
 
-> 
-> Explanation:
->
-> 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
->
-> 20: Convert the value of custom property 'CustomProperty1' to a decimal number.
->
+
+Explanation:
+
+- 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
+- 20: Convert the value of custom property 'CustomProperty1' to a decimal number.
 
 
 
