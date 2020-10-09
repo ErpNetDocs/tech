@@ -21,8 +21,6 @@ items: Operators
 
 ## Example
 
-## Example
-
 ```
 10: ADD ATTRIB:QuantityValue CONST:2.00                
 ```
@@ -33,5 +31,5 @@ OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.
 
 
 #### More Examples
-n [Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md).
+[Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md).
 
