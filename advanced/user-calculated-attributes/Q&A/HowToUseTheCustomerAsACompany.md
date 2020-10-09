@@ -1,5 +1,5 @@
 ---
-items: CalculatedAttributesQ&A
+items: CalculatedAttributesQA
 ---
 
 # How To Use The Customer As A Company?
