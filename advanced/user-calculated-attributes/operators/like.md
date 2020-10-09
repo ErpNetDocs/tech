@@ -39,11 +39,11 @@ The following example returns True if the the string contains 'Apple' and after 
 ```
 
 OUTPUT: 
-- If 'Notes = Apples', the output will be 'True'.
-- If 'Notes = Green Apples', the output will be 'True'.
-- If 'Notes = apples', the output will be 'False'.
-- If 'Notes = Apple', the output will be 'False'.
-- If 'Notes = Apples', the output will be 'False'.
+<br/> If 'Notes = Apples', the output will be 'True'.
+<br/> If 'Notes = Green Apples', the output will be 'True'.
+<br/> If 'Notes = apples', the output will be 'False'.
+<br/> If 'Notes = Apple', the output will be 'False'.
+<br/> If 'Notes = Apples', the output will be 'False'.
 
 
 > [!NOTE] 
