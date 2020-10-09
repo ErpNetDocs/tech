@@ -28,7 +28,7 @@ See the example in @(Compare Unit Price And The Standard Unit Price).
 ## Example
 
 ```      
-10: LT ATTRIB:LineNo CONST:30   
+10: LTE ATTRIB:LineNo CONST:30   
 ```
 OUTPUT: 
 <br/>If 'LineNo = 20', the output will be 'True'.
