@@ -1,4 +1,4 @@
-# Parameter Type SYS
+# Parameter type SYS
 
 SYS parameter type is used for system variables. They can  be applied when we need to acquire information for the current user,  date, time, enterprise company and oth..
 

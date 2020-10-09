@@ -2,7 +2,7 @@
 items: CalculatedAttributesQA
 ---
 
-# How To Use The Customer As A Company?
+# How to use the customer as a company?
 
 When we work with the customer, we can only get its party  attributes as the customer may be company, company location or a person.
 
