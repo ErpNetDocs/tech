@@ -1,5 +1,6 @@
 ---
 uid: cao-LT
+items: Operators
 ---
 
 # LT - Calculated Attribute Operator

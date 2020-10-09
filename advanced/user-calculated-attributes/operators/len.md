@@ -1,5 +1,6 @@
 ---
 uid: cao-LEN
+items: Operators
 ---
 
 # LEN - Calculated Attribute Operator

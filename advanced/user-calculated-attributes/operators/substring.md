@@ -1,5 +1,6 @@
 ---
 uid: cao-SUBSTRING
+items: Operators
 ---
 
 # SUBSTRING - Calculated Attribute Operator

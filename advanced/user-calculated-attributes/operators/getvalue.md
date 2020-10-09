@@ -1,5 +1,6 @@
 ---
 uid: cao-GETVALUE
+items: Operators
 ---
 
 # GETVALUE - Calculated Attribute Operator

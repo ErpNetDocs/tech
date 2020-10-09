@@ -1,5 +1,6 @@
 ---
 uid: cao-TOUPPER
+items: Operators
 ---
 
 # TOUPPER - Calculated Attribute Operator

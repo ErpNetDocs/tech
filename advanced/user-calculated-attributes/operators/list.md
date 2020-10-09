@@ -1,5 +1,6 @@
 ---
 uid: cao-LIST
+items: Operators
 ---
 
 # LIST - Calculated Attribute Operator

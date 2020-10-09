@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributeExamples
+---
+
 # Get Value And Description Of Referent Object
 
 At first - some additional information - when a value is  set to a custom property of an object, a new record is added to the  "General.PropertyValue" repository. The new record has its own Id, and  the id of the specific object - EntityItemId. So in a calculated  attribute we need to filter the value which are for the specific  property (PropertyId) of the specific object (EntityItemId) and then get the value or description. Let's see an example:

@@ -1,5 +1,6 @@
 ---
 uid: cao-COUNT
+items: Operators
 ---
 
 # COUNT - Calculated Attribute Operator

@@ -1,5 +1,6 @@
 ---
 uid: cao-FLOOR
+items: Operators
 ---
 
 # FLOOR - Calculated Attribute Operator

@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributeExamples
+---
+
 # Specific Day From Document Date
 
 A Calculated Attribute is added with the following parameters:

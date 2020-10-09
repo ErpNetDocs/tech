@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How to get specific field of a parent document?
 
 When in a calculation attribute there is a need of a value  of attribute of the parent document there are two options to get them:

@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How to check whether a field that points to a reference object has a value?
 
 Often when we are creating a calculated attribute and we  want to get a value from a referent object, first we need to check if  the current record has a reference to this object at all. A.k.a. we need to check if a particular Id field has a value or not. 

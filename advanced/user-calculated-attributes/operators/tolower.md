@@ -1,5 +1,6 @@
 ---
 uid: cao-TOLOWER
+items: Operators
 ---
 
 # TOLOWER - Calculated Attribute Operator

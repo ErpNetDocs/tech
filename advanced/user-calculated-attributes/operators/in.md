@@ -1,5 +1,6 @@
 ---
 uid: cao-IN
+items: Operators
 ---
 
 # IN - Calculated Attribute Operator

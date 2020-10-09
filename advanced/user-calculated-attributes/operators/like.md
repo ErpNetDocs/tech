@@ -1,5 +1,6 @@
 ---
 uid: cao-LIKE
+items: Operators
 ---
 
 # LIKE - Calculated Attribute Operator

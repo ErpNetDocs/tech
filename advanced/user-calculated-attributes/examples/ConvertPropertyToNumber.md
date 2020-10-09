@@ -1,3 +1,6 @@
+---
+items: CalculatedAttributeExamples
+---
 
 # Convert a Value of a Custom Property to a Number
 

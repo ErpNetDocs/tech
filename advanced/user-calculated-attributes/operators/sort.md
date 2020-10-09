@@ -1,5 +1,6 @@
 ---
 uid: cao-SORT
+items: Operators
 ---
 
 # SORT - Calculated Attribute Operator

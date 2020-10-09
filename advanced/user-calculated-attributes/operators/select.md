@@ -1,5 +1,6 @@
 ---
 uid: cao-SELECT
+items: Operators
 ---
 
 # SELECT - Calculated Attribute Operator

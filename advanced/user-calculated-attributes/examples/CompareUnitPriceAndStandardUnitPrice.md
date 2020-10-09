@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributeExamples
+---
+
 # Compare Unit Price And Standard Unit Price
 
 The following calculated attribute calculates if the Unit  Price in the Sales Order Lines is greater than the Standard Unit Price  of the product and returns a message:

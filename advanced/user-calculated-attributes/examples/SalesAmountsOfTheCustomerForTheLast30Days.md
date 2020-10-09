@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributeExamples
+---
+
 # Sales Amounts Of The Customer For The Last 30 Days
 
 Let's say the user want to show a field in the Sales Order  which calculates the sales amounts of the selected customer for the last 30 days.

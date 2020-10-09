@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How to get attribute value from list?
 
 Often mistake is to try to get a value of an attribute from a list. For example, if we want to get the user who changed the  document state:

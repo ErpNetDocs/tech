@@ -1,5 +1,6 @@
 ---
 uid: cao-GTE
+items: Operators
 ---
 
 # GTE - Calculated Attribute Operator

@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How To Use The Customer As A Company?
 
 When we work with the customer, we can only get its party  attributes as the customer may be company, company location or a person.

@@ -1,5 +1,6 @@
 ---
 uid: cao-REGEX
+items: Operators
 ---
 
 # REGEX - Calculated Attribute Operator

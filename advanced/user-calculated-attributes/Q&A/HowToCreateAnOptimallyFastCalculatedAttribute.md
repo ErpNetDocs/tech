@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How to create an optimally fast calculated attribute?
 
 When creating a calculated attribute there are some things that are good too keep in mind in order to create an optimally fast syntax. Here we are going to describe some advices that should be followed during the design of the attribute.

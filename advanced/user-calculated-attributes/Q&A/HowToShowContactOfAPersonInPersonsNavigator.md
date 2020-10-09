@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How to show contact of a Person in Persons navigator?
 
 The specific of this calculated attribute is that the  contact mechanism type is enum type. This is why it is accessed  specifically. Its values and codes are as follows:

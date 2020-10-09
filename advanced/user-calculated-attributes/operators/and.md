@@ -1,5 +1,6 @@
 ---
 uid: cao-AND
+items: Operators
 ---
 
 # AND - Calculated Attribute Operator
@@ -20,7 +21,7 @@ uid: cao-AND
 > Parameter 1 and Parameter 2 are optional.
 > If only Parameter 1 has value, the result is its value (Parameter 1).
 
- 
+
 ## Example
 
 ```

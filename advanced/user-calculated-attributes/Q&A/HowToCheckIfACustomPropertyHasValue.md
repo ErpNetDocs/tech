@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How To Check If A Custom Property Has Value?
 
 When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the  specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is  verified is CustomProperty1.

@@ -1,5 +1,6 @@
 ---
 uid: cao-NOT
+items: Operators
 ---
 
 # NOT - Calculated Attribute Operator

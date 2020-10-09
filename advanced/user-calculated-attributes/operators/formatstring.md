@@ -1,5 +1,6 @@
 ---
 uid: cao-FORMATSTRING
+items: Operators
 ---
 
 # FORMATSTRING - Calculated Attribute Operator

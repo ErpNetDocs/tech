@@ -1,5 +1,6 @@
 ---
 uid: cao-MULTIPLY
+items: Operators
 ---
 
 # MULTIPLY - Calculated Attribute Operator

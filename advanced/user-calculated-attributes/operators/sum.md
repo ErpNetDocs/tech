@@ -1,5 +1,6 @@
 ---
 uid: cao-SUM
+items: Operators
 ---
 
 # SUM - Calculated Attribute Operator

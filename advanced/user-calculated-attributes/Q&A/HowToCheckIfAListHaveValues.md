@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQ&A
+---
+
 # How To Check If A List Have Values?
 
 When working with lists, often there is a need to check if  this list actually contains any values (records). For example - there is a calculated attribute which calculates the Quantity in the Sales Order Lines in specified measurement unit. There is always the possibility  that the user enter a product which has no dimensions for the required  measurement unit. In such cases, an instrument to check the lists  records count is needed. 

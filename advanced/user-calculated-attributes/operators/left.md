@@ -1,5 +1,6 @@
 ---
 uid: cao-LEFT
+items: Operators
 ---
 
 # LEFT - Calculated Attribute Operator

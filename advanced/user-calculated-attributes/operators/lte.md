@@ -1,5 +1,6 @@
 ---
 uid: cao-LTE
+items: Operators
 ---
 
 # LTE - Calculated Attribute Operator

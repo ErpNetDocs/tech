@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributeExamples
+---
+
 # Check If the Current User Has Authorization
 
 If we want to determine if the user that is currently  logged in the system is authorized (to do, see, or edit an entity, for  example) we need to know which Group have such rights. When we have that information, we can simply create a calculated attribute that checks if the User is a part of this Group:
