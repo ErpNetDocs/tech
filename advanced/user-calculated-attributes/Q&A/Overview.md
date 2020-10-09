@@ -1,3 +1,3 @@
 # Q & A
 
-[!list items=CalculatedAttributesQ&A default-text="None"]
+[!list items=CalculatedAttributesQA default-text="None"]
