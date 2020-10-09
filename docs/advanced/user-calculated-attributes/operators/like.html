@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Searches for a specified pattern in a string. The '%' symbol is used to define 0 or more characters before and after the searched string. '_' is used to define specifically 1 character.</td>
+<td>Searches for a specified pattern in a string. It is usually used in a combination with the wildcars '%' and '_': <br> The '%' symbol is used to define 0 or more characters before and after the searched string. <br> '_' is used to define specifically 1 character.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -136,19 +136,21 @@
 <li><p>'a%o' → Finds any values that start with &quot;a&quot; and ends with &quot;o&quot;.</p>
 </li>
 </ul>
-<p>Calculated Attribute:</p>
-<p>Repository: General.Products.Products</p>
-<pre><code>10 LIKE EXP:20 CONST:%shoe_
-20 CAST ATTRIB:Name CONST:System.String
+<p>The following example returns True if the the string contains 'Apple' and after 'Apple' there is exactly on character:</p>
+<pre><code>10 LIKE ATTRIB:Notes CONST:%Apple_
 </code></pre>
-<p>Calculated Attribute Result:</p>
+<p>OUTPUT:</p>
 <ul>
-<li>ProductName = sports shoes → True</li>
-<li>ProductName = shoes → True</li>
-<li>ProductName = sports shoess → False</li>
-<li>ProductName = sports shoe → False</li>
-<li>ProductName = sports jacket → False</li>
+<li>If 'Notes = Apples', the output will be 'True'.</li>
+<li>If 'Notes = Green Apples', the output will be 'True'.</li>
+<li>If 'Notes = apples', the output will be 'False'.</li>
+<li>If 'Notes = Apple', the output will be 'False'.</li>
+<li>If 'Notes = Apples', the output will be 'False'.</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
+</div>
 </article>
           </div>
           
