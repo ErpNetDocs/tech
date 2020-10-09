@@ -22,7 +22,7 @@ items: Operators
 ## Example
 
 ```
-10: ADD ATTRIB:QuantityValue CONST:2.00                
+10:  MULTIPLY ATTRIB:QuantityValue CONST:2.00                
 ```
 OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.
 
