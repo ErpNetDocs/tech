@@ -92,9 +92,8 @@
 <p>More records inevitably means slower calculation. Like any other design when creating a calculated attribute there usually is more than one way that we can use to calculate the  value especially when the calculation is a bit more complicated.  Sometimes using SELECT looks like the simplest option (the fist that  comes in mind) to reach the value we need, but first, we should always  try to think if there is a reference connection that we can use instead  in order to achieve a faster calculation.</p>
 <p><em>Example:</em></p>
 <p>Let's imagine that we need to show a field with Total Line Amount value in  the Sales Order Line. Therefore we will need to calculate the Sum of the Line Amount of all Sales Order lines of the particular Sales Order.  Such attribute can be created at least two ways (the repository is  Crm.Sales.SalesOrderLines):</p>
-<ul>
-<li>Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)</li>
-</ul>
+<h4 id="using-a-select">Using a SELECT</h4>
+<p>Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)</p>
 <pre><code>10     SUM  EXP: 20  ATTRIB: LineAmountValue                            
 
 20     SELECT REPO: Crm.Sales.SalesOrderLines  EXP: 30             
@@ -105,9 +104,8 @@
 
 50     GETOBJVALUE  INPUT: 10      ATTRIB: SalesOrderId          
 </code></pre>
-<ul>
-<li>Using a REF (using only the lines of the current SalesOrder)</li>
-</ul>
+<h4 id="using-a-ref">Using a REF</h4>
+<p>Using a REF (using only the lines of the current SalesOrder)</p>
 <pre><code>10     SUM   EXP: 20 ATTRIB: LineAmountValue                    
 
 20     GETOBJVALUE  REF: SalesOrder CHILD: Lines           

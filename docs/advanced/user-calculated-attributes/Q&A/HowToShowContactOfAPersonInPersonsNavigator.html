@@ -139,20 +139,31 @@
 50 EQUAL ATTRIB:PartyId EXP:60
 60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: from the object from EXP:20 get the attribute from EXP:15</p>
-<p>15: get the value of the attribute Name from the referent object ContactMechanism</p>
-<p>20: get the first element from the list in EXP: 21</p>
-<p>21: filter the list in EXP:30 by the conditions in EXP:22</p>
-<p>22: check if EXP:23 is equal to EXP:25</p>
-<p>23: get the value of the attribute ContactMechanismType from the referent object ContactMEchanism</p>
-<p>25: cast the constant of &quot;1&quot; (this is integer) to type '  Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType'</p>
-<p>30: select from repository General.Contacts.PartyContactMechanisms and filter it by EXP:40</p>
-<p>40: the filter is in EXP:50</p>
-<p>50: check if the value of attribute PartyId is equal to EXP:60</p>
-<p>60: get the value of attribute PartyId of the input object of expression 10</p>
-</blockquote>
+<ul>
+<li><p>10: from the object from EXP:20 get the attribute from EXP:15</p>
+</li>
+<li><p>15: get the value of the attribute Name from the referent object ContactMechanism</p>
+</li>
+<li><p>20: get the first element from the list in EXP: 21</p>
+</li>
+<li><p>21: filter the list in EXP:30 by the conditions in EXP:22</p>
+</li>
+<li><p>22: check if EXP:23 is equal to EXP:25</p>
+</li>
+<li><p>23: get the value of the attribute ContactMechanismType from the referent object ContactMEchanism</p>
+</li>
+<li><p>25: cast the constant of &quot;1&quot; (this is integer) to type '  Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType'</p>
+</li>
+<li><p>30: select from repository General.Contacts.PartyContactMechanisms and filter it by EXP:40</p>
+</li>
+<li><p>40: the filter is in EXP:50</p>
+</li>
+<li><p>50: check if the value of attribute PartyId is equal to EXP:60</p>
+</li>
+<li><p>60: get the value of attribute PartyId of the input object of expression 10</p>
+</li>
+</ul>
 </article>
           </div>
           

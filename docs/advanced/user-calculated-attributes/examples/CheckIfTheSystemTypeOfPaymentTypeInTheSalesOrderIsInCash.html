@@ -85,13 +85,17 @@
 25: CAST  CONST:0  CONST:System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType]          
 30: GETOBJVALUE  REF:PaymentType  ATTRIB:SystemType
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Return True of False according to the result of EXP:20</p>
-<p>20: Check if EXP:25 is equal to EXP:30</p>
-<p>25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using CAST</p>
-<p>30: Get the System Type of the Payment Type which is set in the Sales Order.</p>
-</blockquote>
+<ul>
+<li><p>10: Return True of False according to the result of EXP:20</p>
+</li>
+<li><p>20: Check if EXP:25 is equal to EXP:30</p>
+</li>
+<li><p>25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using CAST</p>
+</li>
+<li><p>30: Get the System Type of the Payment Type which is set in the Sales Order.</p>
+</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
 <p>When using EQUAL we should make sure that we are comparing Parameters  from the same type.

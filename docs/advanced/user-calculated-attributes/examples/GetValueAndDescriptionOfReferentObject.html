@@ -93,17 +93,25 @@
 70: EQUAL ATTRIB:EntityItemId EXP:80
 80: GETOBJVALUE INPUT:10 ATTRIB:CustomerId
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: get the attribute Description of the object in expression 20</p>
-<p>20: get the first record in the list from expression 30</p>
-<p>30: select repository &quot;General.PropertyValues&quot; filtered by expression 40</p>
-<p>40: the filter is expression 50</p>
-<p>50: expression 60 AND expression 70</p>
-<p>60: check if the attribute PropertyId is equal to the constant of &quot;e7005814-6140-4708-a9d8-aaaeb5b151ed&quot; (this is a Guid)</p>
-<p>70: check if the attribute EntityItemId is equal to expression 80</p>
-<p>80: get the attribute CustomerId of the input object of expression 10</p>
-</blockquote>
+<ul>
+<li><p>10: get the attribute Description of the object in expression 20</p>
+</li>
+<li><p>20: get the first record in the list from expression 30</p>
+</li>
+<li><p>30: select repository &quot;General.PropertyValues&quot; filtered by expression 40</p>
+</li>
+<li><p>40: the filter is expression 50</p>
+</li>
+<li><p>50: expression 60 AND expression 70</p>
+</li>
+<li><p>60: check if the attribute PropertyId is equal to the constant of &quot;e7005814-6140-4708-a9d8-aaaeb5b151ed&quot; (this is a Guid)</p>
+</li>
+<li><p>70: check if the attribute EntityItemId is equal to expression 80</p>
+</li>
+<li><p>80: get the attribute CustomerId of the input object of expression 10</p>
+</li>
+</ul>
 <p>If we need the value of the property, the first expression may be set to GETOBJVALUE EXP:20 ATTRIB:PropertyValueField.</p>
 </article>
           </div>

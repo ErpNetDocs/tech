@@ -92,22 +92,25 @@
 20: CONVERT EXP:30 CONST:System.Decimal
 30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</p>
-<p>20: Convert EXP:30 to a decimal number .</p>
-<p>25: Cast the value of custom property 'CustomProperty1' to a string</p>
-</blockquote>
+<ul>
+<li><p>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</p>
+</li>
+<li><p>20: Convert EXP:30 to a decimal number .</p>
+</li>
+<li><p>25: Cast the value of custom property 'CustomProperty1' to a string</p>
+</li>
+</ul>
 <br>
 <p><strong>WRONG calculated attribute:</strong></p>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</p>
-<p>20: Convert the value of custom property 'CustomProperty1' to a decimal number.</p>
-</blockquote>
+<ul>
+<li>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</li>
+<li>20: Convert the value of custom property 'CustomProperty1' to a decimal number.</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
 <p>When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to <a href="../operators/cast.html">CAST</a> it to a string first!</p>

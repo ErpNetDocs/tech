@@ -92,17 +92,25 @@
 70:    GETOBJVALUE     EXP: 80     CHILD: Lines                          
 80:    CAST    REF: ParentDocument     CONST: Aloe.EnterpriseOne.Model.Crm.Presales.Offer                
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Get the record of custom property &quot;Propery1&quot; from EXP: 20.</p>
-<p>20: Get the first value of EXP: 30.</p>
-<p>30: Filter the list from EXP: 70 with the filters from EXP: 40.</p>
-<p>40: Check in the LineNumber of the offer line is equal to the value from EXP: 50.</p>
-<p>50: Cast EXP:60 to &quot;System.Int32&quot;.</p>
-<p>60: Get the”ParentLineNo“ of the sales order line which is an input for EXP:10.</p>
-<p>70: Get the list of child line of the object of EXP: 80.</p>
-<p>80: Cast the “Parent Document” of the sales order line to  &quot;Aloe.EnterpriseOne.Model.Crm.Presales.Offer&quot; in order to define the  type/entity of the parent document.</p>
-</blockquote>
+<ul>
+<li><p>10: Get the record of custom property &quot;Propery1&quot; from EXP: 20.</p>
+</li>
+<li><p>20: Get the first value of EXP: 30.</p>
+</li>
+<li><p>30: Filter the list from EXP: 70 with the filters from EXP: 40.</p>
+</li>
+<li><p>40: Check in the LineNumber of the offer line is equal to the value from EXP: 50.</p>
+</li>
+<li><p>50: Cast EXP:60 to &quot;System.Int32&quot;.</p>
+</li>
+<li><p>60: Get the”ParentLineNo“ of the sales order line which is an input for EXP:10.</p>
+</li>
+<li><p>70: Get the list of child line of the object of EXP: 80.</p>
+</li>
+<li><p>80: Cast the “Parent Document” of the sales order line to  &quot;Aloe.EnterpriseOne.Model.Crm.Presales.Offer&quot; in order to define the  type/entity of the parent document.</p>
+</li>
+</ul>
 </article>
           </div>
           
