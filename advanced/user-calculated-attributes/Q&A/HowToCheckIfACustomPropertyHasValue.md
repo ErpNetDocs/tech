@@ -1,5 +1,5 @@
 ---
-items: CalculatedAttributesQ&A
+items: CalculatedAttributesQA
 ---
 
 # How To Check If A Custom Property Has Value?
