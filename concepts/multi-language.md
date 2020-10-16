@@ -1,7 +1,7 @@
-﻿# Multi-language support
+# Multi-language support
  
 ## Description
-Many string attributes in @@name support saving the data in multiple languages.These attributes are called Multi-language Strings.
+Many string attributes in @@name support saving the data in multiple languages. These attributes are called Multi-language Strings.
 
 For example, the Product Name of a Product can be entered in many languages simultaneously.
 
