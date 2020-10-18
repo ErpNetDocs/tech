@@ -7,7 +7,7 @@ However, it has broader reach, managing the office general tasks, calendars, dis
 
 The general process flow of the CRM module is:
 
-Appointment -> Opportunity -> Quote (Offer) -> Sales Order -> Invoice Order -> Invoice
+*Appointment* -> *Opportunity* -> *Offer* -> *Sales Order* -> *Invoice Order* -> *Invoice*
 
 * **Appointment** - generic calendar appointment, but related to a party.
 * **Opportunity** - sales opportunity, with expected revenue and probability. It does not have detail line items.
@@ -24,6 +24,7 @@ There are many sub-modules of the CRM module, which are used to manage different
 * **Pre-sales** - Opportunities management.
 * **Sales** - Sales Orders, customers, etc.
 * **Invoicing** - Invoicing process management, invoices and BI.
+* **POS** - Manage point-of-sale activities in physical stores.
 * **Marketing** - Marketing campaigns, activities, distribution channels, etc.
 * **Distribution** - field sales, sales person targets management, etc.
 * **Pricing** - price lists management.
