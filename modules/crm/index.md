@@ -1,28 +1,28 @@
 ﻿# Customer Relationship Management (CRM)
 
-The CRM module of @@name is primarily intended to manage the relationships with the customers.
-However, it has broader reach, managing the office general tasks, calendars, distribution, service and more.
+The CRM group of applications in @@name is used to manage the front-office activities of a company.
 
 ## General concepts and process
 
 The general process flow of the CRM module is:
 
-*Appointment* -> *Opportunity* -> *Offer* -> *Sales Order* -> *Invoice Order* -> *Invoice*
+> *Activity* -> *Opportunity* -> *Offer* -> *Sales Order* -> *Invoice Order* -> *Invoice*
 
-* **Appointment** - generic calendar appointment, but related to a party.
+* **Activity** - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.
 * **Opportunity** - sales opportunity, with expected revenue and probability. It does not have detail line items.
 * **Offer** - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted.
 * **Sales Order** - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale.
 * **Invoice Order** - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue.
 * **Invoice** - legal and financial document, finalizing the sales process.
 
-> [!note]
+> [!NOTE]
 > The above diagram shows only the CRM part of the whole process.
 > The full process involves many different modules of the ERP system.
 
-## CRM Sub-modules
+## CRM Applications
 
-There are many sub-modules of the CRM module, which are used to manage different aspects of the CRM processes:
+There are many applications in the CRM group.
+They are used to manage the different aspects of the CRM processes:
 
 * **Contacts and tasks** - calendar appointments, party definitions, etc.
 * **Pre-sales** - Opportunities management.
