@@ -14,6 +14,9 @@
         "files": [ "images/**", "**.svg", "**.png" ]
       }
     ],
+    "xref": [
+      "https://erpnetdocs.github.io/model/xrefmap.yml"
+    ],
     "dest": "docs",
     "globalMetadata": {
       "_appTitle": "ERP.net Tech Docs",
