@@ -6,7 +6,7 @@ The CRM group of applications in @@name is used to manage the front-office activ
 
 The general process flow of the CRM module is:
 
-> *Activity* -> *Opportunity* -> *Offer* -> *Sales Order* -> *Invoice Order* -> *Invoice*
+> *Activity* 🠢 *Opportunity* 🠢 *Offer* 🠢 *Sales Order* 🠢 *Invoice Order* 🠢 *Invoice*
 
 * **[Activity](xref:General.Contacts.Activities)** - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.
 * **[Opportunity](xref:Crm.Presales.Deals)** - sales opportunity, with expected revenue and probability. It does not have detail line items.
