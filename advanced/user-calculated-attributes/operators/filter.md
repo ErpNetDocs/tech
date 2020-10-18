@@ -1,5 +1,6 @@
 ---
 uid: cao-FILTER
+items: Operators
 ---
 
 # FILTER - Calculated Attribute Operator

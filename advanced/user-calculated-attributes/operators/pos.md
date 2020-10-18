@@ -1,5 +1,6 @@
 ---
 uid: cao-POS
+items: Operators
 ---
 
 # POS - Calculated Attribute Operator

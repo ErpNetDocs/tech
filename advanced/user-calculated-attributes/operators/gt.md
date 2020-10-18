@@ -1,5 +1,6 @@
 ---
 uid: cao-GT
+items: Operators
 ---
 
 # GT - Calculated Attribute Operator

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Check If the Current User Has Authorization | ERP.net Tech Docs </title>
+    <title>Check if the current user has authorization | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Check If the Current User Has Authorization | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="title" content="Check if the current user has authorization | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="check-if-the-current-user-has-authorization">Check If the Current User Has Authorization</h1>
+<h1 id="check-if-the-current-user-has-authorization">Check if the current user has authorization</h1>
 
 <p>If we want to determine if the user that is currently  logged in the system is authorized (to do, see, or edit an entity, for  example) we need to know which Group have such rights. When we have that information, we can simply create a calculated attribute that checks if the User is a part of this Group:</p>
 <pre><code>10: IIF  EXP: 20   CONST: True  CONST: False         
@@ -90,17 +90,25 @@
 80: EQUAL  ATTRIB: GroupId  CONST: 5daf849d-9986-462f-9171-a23c1c5839b7                
      
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Check if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'True' message, else - 'False'.</p>
-<p>20: Check if the list EXP: 30 returns at least one record.</p>
-<p>30: Return the count of records in the filtered list of EXP:40.</p>
-<p>40: Select 'User Groups' filtered by EXP: 50.</p>
-<p>50: The Filters are expression 60, expression 80...</p>
-<p>60: Check if the UserId is equal to EXP:70.</p>
-<p>70: Get the Id of the user that is currently editing the entity.</p>
-<p>80: Check if the GroupId is equal to the Id of an authorized group.</p>
-</blockquote>
+<ul>
+<li><p>10: Check if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'True' message, else - 'False'.</p>
+</li>
+<li><p>20: Check if the list EXP: 30 returns at least one record.</p>
+</li>
+<li><p>30: Return the count of records in the filtered list of EXP:40.</p>
+</li>
+<li><p>40: Select 'User Groups' filtered by EXP: 50.</p>
+</li>
+<li><p>50: The Filters are expression 60, expression 80...</p>
+</li>
+<li><p>60: Check if the UserId is equal to EXP:70.</p>
+</li>
+<li><p>70: Get the Id of the user that is currently editing the entity.</p>
+</li>
+<li><p>80: Check if the GroupId is equal to the Id of an authorized group.</p>
+</li>
+</ul>
 </article>
           </div>
           

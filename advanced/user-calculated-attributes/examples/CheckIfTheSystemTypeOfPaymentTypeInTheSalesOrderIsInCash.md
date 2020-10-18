@@ -1,4 +1,8 @@
-# Check If the System type of Payment type in the Sales Order Is 'In Cash'
+---
+items: CalculatedAttributeExamples
+---
+
+# Check If the system type of Payment type in the Sales Order is 'In Cash'
 
 With this attribute we can check if the System Type of  Payment type which is set in the Sales Order is 'In Cash'. When we have  that information we can, for example, use the attribute to create a  Business Rule (for more information, see @Allow a Credit Limit Override When the Client Pays in Cash) that allows a Credit Limit Override when the Client pays in cash.
 
@@ -13,15 +17,14 @@ With this attribute we can check if the System Type of  Payment type which is se
 
 
 
-> Explanation:
->
-> 10: Return True of False according to the result of EXP:20
->
-> 20: Check if EXP:25 is equal to EXP:30  
->
-> 25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using CAST
->
-> 30: Get the System Type of the Payment Type which is set in the Sales Order.
+Explanation:
+
+- 10: Return True of False according to the result of EXP:20
+- 20: Check if EXP:25 is equal to EXP:30  
+
+- 25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using CAST
+
+- 30: Get the System Type of the Payment Type which is set in the Sales Order.
 
 
 

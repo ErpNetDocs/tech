@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>How To Check If A Custom Property Has Value? | ERP.net Tech Docs </title>
+    <title>How to check if a custom property has value? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="How To Check If A Custom Property Has Value? | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="title" content="How to check if a custom property has value? | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,65 +77,68 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="how-to-check-if-a-custom-property-has-value">How To Check If A Custom Property Has Value?</h1>
+<h1 id="how-to-check-if-a-custom-property-has-value">How to check if a custom property has value?</h1>
 
 <p>When there is a need to check if a custom property of an object has value, usually we can just <a href="https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST">CAST</a> the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the  specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is  verified is CustomProperty1.</p>
 <p>Note that when a custom property is cast to string, only its value will be processed, and not its description.</p>
-<ul>
-<li>If the Property Type of the particular custom property is 'Text' use the following expressions:</li>
-</ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: EQUAL EXP:30 CONST:NULL</p>
-<p>30: CAST ATTRIB:@CustomProperty1 CONST:System.String</p>
-<blockquote>
+<h4 id="property-type-is-text">Property Type is 'Text'</h4>
+<p>If the Property Type of the particular custom property is 'Text' use the following expressions:</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+20: EQUAL EXP:30 CONST:NULL
+30: CAST ATTRIB:@CustomProperty1 CONST:System.String
+</code></pre>
 <p>Explanation:</p>
-<p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
-<p>20: if EXP:30 is empty, return true, else - return false</p>
-<p>30: cast CustomProperty1 to string</p>
-</blockquote>
 <ul>
-<li>If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:</li>
+<li>10: if EXP:20 is true, return the text 'null, else - return 'not null'</li>
+<li>20: if EXP:30 is empty, return true, else - return false</li>
+<li>30: cast CustomProperty1 to string</li>
 </ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: OR EXP:30 EXP:40</p>
-<p>30: EQUAL EXP:50 CONST:NULL</p>
-<p>40: EQUAL EXP:50 CONST:''</p>
-<p>50: CAST ATTRIB:@CustomProperty1 CONST:System.String</p>
-<blockquote>
+<h4 id="property-type-is-number-or-date">Property Type is 'Number' or 'Date'</h4>
+<p>If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+20: OR EXP:30 EXP:40
+30: EQUAL EXP:50 CONST:NULL
+40: EQUAL EXP:50 CONST:''
+50: CAST ATTRIB:@CustomProperty1 CONST:System.String
+</code></pre>
 <p>Explanation:</p>
-<p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
-<p>20: if EXP:30 OR EXP:40 is true, return true, else - return false</p>
-<p>30: if EXP:50 is empty, return true, else - return false</p>
-<p>40: if EXP:50 is an empty string, return true, else - return false</p>
-<p>50: cast CustomProperty1 to string</p>
-</blockquote>
 <ul>
-<li>If the Property Type of the particular custom property is 'Picture' use the following expressions:</li>
+<li>10: if EXP:20 is true, return the text 'null, else - return 'not null'</li>
+<li>20: if EXP:30 OR EXP:40 is true, return true, else - return false</li>
+<li>30: if EXP:50 is empty, return true, else - return false</li>
+<li>40: if EXP:50 is an empty string, return true, else - return false</li>
+<li>50: cast CustomProperty1 to string</li>
 </ul>
-<p>10: IIF EXP:20 CONST:'null' CONST:'not null'</p>
-<p>20: EQUAL EXP:30 CONST:0</p>
-<p>30: SUM EXP:40 CONST:1</p>
-<p>40: FILTER EXP:70 EXP:50</p>
-<p>50: NOT EXP:60</p>
-<p>60: EQUAL ATTRIB:Picture CONST:NULL</p>
-<p>70: SELECT REPO:General.PropertyValues EXP:80</p>
-<p>80: WHERE EXP: 90 EXP:100</p>
-<p>90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2</p>
-<p>100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28</p>
-<blockquote>
+<h4 id="property-type-is-picture">Property Type is 'Picture'</h4>
+<p>If the Property Type of the particular custom property is 'Picture' use the following expressions:</p>
+<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
+20: EQUAL EXP:30 CONST:0
+30: SUM EXP:40 CONST:1
+40: FILTER EXP:70 EXP:50
+50: NOT EXP:60            
+60: EQUAL ATTRIB:Picture CONST:NULL
+70: SELECT REPO:General.PropertyValues EXP:80
+80: WHERE EXP: 90 EXP:100
+90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
+100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28
+</code></pre>
 <p>Explanation:</p>
-<p>10: if EXP:20 is true, return the text 'null, else - return 'not null'</p>
-<p>20: if EXP:30 is equal to 0, return true, else - return false</p>
-<p>30: count the records of the list returned by EXP:40</p>
-<p>40: filter the list returned by EXP:70 by the condition of EXP:50</p>
-<p>50: if EXP:60 is true, return false, else - return true</p>
-<p>60: if ATTRIB:Picture is equal to NULL, return true, else - return false</p>
-<p>70: select the records of table General.PropertyValues filtered by the clauses of EXP:80</p>
-<p>80: if EXP:90 AND EXP:100 are true, return true, else - return false</p>
-<p>90: if ATTRIB: PropertyId is equal to 86ba82c9-8843-e611-82a1-b010410e63e2, return true, else - return false</p>
-<p>100: if ATTRIB: ATTRIB:EntityItemId is equal to 47e225e9-f4b6-e611-af28-00155d001f28, return true, else - return false</p>
-</blockquote>
-<p>[!NOTE] EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.</p>
+<ul>
+<li>10: if EXP:20 is true, return the text 'null, else - return 'not null'</li>
+<li>20: if EXP:30 is equal to 0, return true, else - return false</li>
+<li>30: count the records of the list returned by EXP:40</li>
+<li>40: filter the list returned by EXP:70 by the condition of EXP:50</li>
+<li>50: if EXP:60 is true, return false, else - return true</li>
+<li>60: if ATTRIB:Picture is equal to NULL, return true, else - return false</li>
+<li>70: select the records of table General.PropertyValues filtered by the clauses of EXP:80</li>
+<li>80: if EXP:90 AND EXP:100 are true, return true, else - return false</li>
+<li>90: if ATTRIB: PropertyId is equal to 86ba82c9-8843-e611-82a1-b010410e63e2, return true, else - return false</li>
+<li>100: if ATTRIB: ATTRIB:EntityItemId is equal to 47e225e9-f4b6-e611-af28-00155d001f28, return true, else - return false</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.</p>
+</div>
 </article>
           </div>
           

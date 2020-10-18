@@ -1,5 +1,6 @@
 ---
 uid: cao-LT
+items: Operators
 ---
 
 # LT - Calculated Attribute Operator
@@ -17,3 +18,17 @@ uid: cao-LT
 
 > [!NOTE]
 > Ensure that the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
+
+## Example
+
+```      
+10: LT ATTRIB:LineNo CONST:30   
+```
+OUTPUT: 
+<br/>If 'LineNo = 20', the output will be 'True'.
+<br/>If 'LineNo = 30', the output will be 'False'.
+<br/>If 'LineNo = 40', the output will be 'False'.
+
+
+> [!NOTE]
+> The repository of the attribute is *Crm.Sales.SalesOrderLines*

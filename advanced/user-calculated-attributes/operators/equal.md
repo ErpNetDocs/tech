@@ -1,5 +1,6 @@
 ---
 uid: cao-EQUAL
+items: Operators
 ---
 # EQUAL - Calculated Attribute Operator
 

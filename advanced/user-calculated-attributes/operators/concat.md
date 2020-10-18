@@ -1,5 +1,6 @@
 ---
 uid: cao-CONCAT
+items: Operators
 ---
 
 # CONCAT - Calculated Attribute Operator                      

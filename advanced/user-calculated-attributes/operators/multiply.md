@@ -1,5 +1,6 @@
 ---
 uid: cao-MULTIPLY
+items: Operators
 ---
 
 # MULTIPLY - Calculated Attribute Operator
@@ -15,10 +16,20 @@ uid: cao-MULTIPLY
 | Parameter 3 Type      | -                                                            |
 | Return Value          | Number1 * Number2                                                         |
 
+> [!NOTE]
+> Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
 ## Example
 
-See the example in [Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md).
+```
+10:  MULTIPLY ATTRIB:QuantityValue CONST:2.00                
+```
+OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.
 
 > [!NOTE]
-> In one calculated attribute, Parameter 1 Type and Parameter 2 Type must be equal.
+> The repository of the attribute is *Crm.Sales.SalesOrderLines*
+
+
+#### More Examples
+[Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md).
+

@@ -1,5 +1,6 @@
 ---
 uid: cao-LIST
+items: Operators
 ---
 
 # LIST - Calculated Attribute Operator
@@ -10,18 +11,20 @@ uid: cao-LIST
 | Parameter 1 Name      | list                                                         |
 | Parameter 1 Type      | list of objects                                    |
 | Parameter 2 Name      | attribute                                                           |
-| Parameter 2 Type      | attribute of the object // An attribute of a referent object could be used as well. For more information, see the example below.                                                         |
-| Parameter 3 Name      | separator (optional) // If Parameter3 is not specified, then the default separator is ", " (comma + space)                                                           |
+| Parameter 2 Type      | attribute of the object <br/>// An attribute of a referent object could be used as well. For more information, see the example below.                                                         |
+| Parameter 3 Name      | separator (optional) <br/>// If Parameter3 is not specified, then the default separator is ", " (comma + space)                                                           |
 | Parameter 3 Type      | string                                                           |
 | Return Value          | (attributeValue1, attributeValue2, ...)                                                         |
 | Introduced In Version | 2019.1                                                       |
 
 
 ## Example
-
-Repository: Crm.Sales.SalesOrders 
+ 
 ```
 10: LIST CHILD:Lines EXP:20 CONST:'; '
 20: GETOBJVALUE REF:Product ATTRIB:Name
 ```
-Returned Value: 'ProductsName1; ProductName2 ...'
+OUTPUT: 'ProductsName1; ProductName2 ...'
+
+> [!NOTE] 
+> The repository of the attribute is Crm.Sales.SalesOrders

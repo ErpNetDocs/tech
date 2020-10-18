@@ -8,7 +8,7 @@
     <title>Compare Unit Price And Standard Unit Price | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Compare Unit Price And Standard Unit Price | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -83,20 +83,20 @@
 <pre><code>10: IIF EXP:20 CONST 'OK!' CONST 'Not OK!'
 20: GT ATTRIB UnitPriceValue ATTRIB StandardUnitPriceValue
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'OK!' message, else - 'Not OK!'.</p>
-<p>20: Checks if ATTRIB:UnitPriceValue is greater than ATTRIB: StandardUnitPriceValue.If so - returns True, else - False.</p>
-</blockquote>
+<ul>
+<li>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'OK!' message, else - 'Not OK!'.</li>
+<li>20: Checks if ATTRIB:UnitPriceValue is greater than ATTRIB: StandardUnitPriceValue.If so - returns True, else - False.</li>
+</ul>
 <p>The same validation may be achieved by using other operator:</p>
 <pre><code>10: IIF EXP:20 CONST 'Not OK!' CONST 'OK!'
 20: LTE ATTRIB UnitPriceValue ATTRIB StandardUnitPriceValue
 </code></pre>
-<blockquote>
 <p>Explanation:</p>
-<p>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'Not OK!' message, else - 'OK!'.</p>
-<p>20: Checks if ATTRIB:UnitPriceValue is less than or equal to ATTRIB: StandardUnitPriceValue.If so - returns True, else - False.</p>
-</blockquote>
+<ul>
+<li>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'Not OK!' message, else - 'OK!'.</li>
+<li>20: Checks if ATTRIB:UnitPriceValue is less than or equal to ATTRIB: StandardUnitPriceValue.If so - returns True, else - False.</li>
+</ul>
 </article>
           </div>
           

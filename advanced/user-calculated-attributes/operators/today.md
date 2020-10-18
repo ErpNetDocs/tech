@@ -1,5 +1,6 @@
 ---
 uid: cao-TODAY
+items: Operators
 ---
 
 # TODAY - Calculated Attribute Operator

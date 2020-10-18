@@ -1,3 +1,7 @@
+---
+items: CalculatedAttributesQA
+---
+
 # How to determine the party type of a party?
 
 If we need to compare the PartyType to check if it is a company, person or other the following calculation would do the job:

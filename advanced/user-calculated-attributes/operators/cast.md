@@ -1,5 +1,6 @@
 ---
 uid: cao-CAST
+items: Operators
 ---
 
 # CAST - Calculated Attribute Operator
@@ -13,7 +14,7 @@ uid: cao-CAST
 | Parameter 2 Name | 	type |
 | Parameter 2 Type | string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types. |
 | Parameter 3 Name |
-| Parameter 3 Type | 
+| Parameter 3 Type |
 | Return Value | Returns the param converted to the type. |
 
 > [!NOTE]

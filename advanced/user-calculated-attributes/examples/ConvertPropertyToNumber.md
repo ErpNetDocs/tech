@@ -1,7 +1,10 @@
+---
+items: CalculatedAttributeExamples
+---
 
 # Convert a Value of a Custom Property to a Number
 
-The values of the custom properties are a specific type of value and the [CONVERT](../user-calculated-attributes/operators/convert.md) operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to [CAST](../user-calculated-attributes/operators/cast.md) it first. 
+The values of the custom properties are a specific type of value and the [CONVERT](../operators/convert.md) operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to [CAST](../operators/cast.md) it first. 
 
 
 ## Example -  Multiply standard price per lot by a coefficient stored in a property
@@ -23,15 +26,12 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 ```
 
 
-> 
-> Explanation:
->
-> 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
->
-> 20: Convert EXP:30 to a decimal number .
->
-> 25: Cast the value of custom property 'CustomProperty1' to a string
-> 
+Explanation:
+
+- 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
+- 20: Convert EXP:30 to a decimal number .
+
+- 25: Cast the value of custom property 'CustomProperty1' to a string
 
 
 <br/>
@@ -43,15 +43,13 @@ Lets say, for example, we want to multiply the standard price per lot of the pro
 20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 ```
 
-> 
-> Explanation:
->
-> 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
->
-> 20: Convert the value of custom property 'CustomProperty1' to a decimal number.
->
+
+Explanation:
+
+- 10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.
+- 20: Convert the value of custom property 'CustomProperty1' to a decimal number.
 
 
 
 > [!NOTE]
-> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](../user-calculated-attributes/operators/cast.md) it to a string first!
+> When we want to convert CustomPropertyValue to numeric value (for example Decimal), we need to [CAST](../operators/cast.md) it to a string first!

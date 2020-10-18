@@ -1,5 +1,6 @@
 ---
 uid: cao-GETOBJVALUE
+items: Operators
 ---
 
 # GETOBJVALUE - Calculated Attribute Operator

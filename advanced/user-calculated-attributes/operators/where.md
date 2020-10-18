@@ -1,5 +1,6 @@
 ---
 uid: cao-WHERE
+items: Operators
 ---
 
 # WHERE - Calculated Attribute Operator

@@ -1,5 +1,6 @@
 ---
 uid: cao-FIRST
+items: Operators
 ---
 
 # FIRST - Calculated Attribute Operator

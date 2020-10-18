@@ -8,7 +8,7 @@
     <title>SELECT - Calculated Attribute Operator | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="SELECT - Calculated Attribute Operator | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -147,7 +147,7 @@
 <p>The disadvantages are that the SELECT statement make a direct request to the database, which may reflect on the productivity and may slow down the calculation of the attribute. When using the SELECT operator the user has to apply as much WHERE filters as possible, because this would limit the amount of data which would be extracted from the database into the client. And then, if the select statement does not provide enough filters, the result from the select may be filtered by the FILTER operator which operates on the already loaded data in the client.</p>
 <p>Here are some examples to picture the information by far:</p>
 <p>If there is a need of a list of documents which DocumentTypeId is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are Work Orders. So the following calculated attribute would be incorrect:</p>
-<pre><code>10: SELECT REPO:Production.ShopFloor.WorkOrders EXP: 20
+<pre><code>10: SELECT REPO:Production.ShopFloor.WorkOrders EXP:20
 20: WHERE EXP:30
 30: OR EXP:40 EXP:50
 40: EQUAL CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e

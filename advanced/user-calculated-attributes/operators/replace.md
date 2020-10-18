@@ -1,5 +1,6 @@
 ---
 uid: cao-REPLACE
+items: Operators
 ---
 
 # REPLACE - Calculated Attribute Operator

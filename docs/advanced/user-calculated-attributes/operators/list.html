@@ -8,7 +8,7 @@
     <title>LIST - Calculated Attribute Operator | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="LIST - Calculated Attribute Operator | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -105,11 +105,11 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>attribute of the object // An attribute of a referent object could be used as well. For more information, see the example below.</td>
+<td>attribute of the object <br>// An attribute of a referent object could be used as well. For more information, see the example below.</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
-<td>separator (optional) // If Parameter3 is not specified, then the default separator is &quot;, &quot; (comma + space)</td>
+<td>separator (optional) <br>// If Parameter3 is not specified, then the default separator is &quot;, &quot; (comma + space)</td>
 </tr>
 <tr>
 <td>Parameter 3 Type</td>
@@ -126,11 +126,14 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>Repository: Crm.Sales.SalesOrders</p>
 <pre><code>10: LIST CHILD:Lines EXP:20 CONST:'; '
 20: GETOBJVALUE REF:Product ATTRIB:Name
 </code></pre>
-<p>Returned Value: 'ProductsName1; ProductName2 ...'</p>
+<p>OUTPUT: 'ProductsName1; ProductName2 ...'</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
+</div>
 </article>
           </div>
           
