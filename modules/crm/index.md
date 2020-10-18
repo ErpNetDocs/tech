@@ -17,7 +17,7 @@ The general process flow of the CRM module is:
 * **Invoice** - legal and financial document, finalizing the sales process.
 
 > [!note]
-> The above diagram show only the CRM part of the process.
+> The above diagram shows only the CRM part of the whole process.
 > The full process involves many different modules of the ERP system.
 
 ## CRM Sub-modules
