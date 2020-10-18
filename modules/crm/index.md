@@ -14,7 +14,11 @@ The general process flow of the CRM module is:
 * **Offer** - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted.
 * **Sales Order** - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale.
 * **Invoice Order** - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue.
-* **Invoice** - legal document,  finalizing the sales process. Issued after the products are shipped.
+* **Invoice** - legal and financial document, finalizing the sales process.
+
+> [!note]
+> The above diagram show only the CRM part of the process.
+> The full process involves many different modules of the ERP system.
 
 ## CRM Sub-modules
 
