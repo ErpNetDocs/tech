@@ -233,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/Q&A/Overview.html",
-          "hash": "6RXPEE2/qNafYbMsT6OCYw=="
+          "hash": "y2VLjPSv7MAghUtxPkIpCw=="
         }
       },
       "is_incremental": false,
@@ -377,7 +377,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/Overview.html",
-          "hash": "RSDUG+E3vnvOLsLfZ0/8mQ=="
+          "hash": "Mw43ULRT+NQHxkF2LYI7LA=="
         }
       },
       "is_incremental": false,
@@ -425,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/Overview.html",
-          "hash": "247LSDZsEKT90sK84cXgGQ=="
+          "hash": "cs4/2cFch8/vYuIxsfgW4w=="
         }
       },
       "is_incremental": false,
@@ -1255,7 +1255,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/index.html",
-          "hash": "O7ySy1lNOLseN8zE3li9kA=="
+          "hash": "bOj8d2BQlFe9ubjUZ0PSjQ=="
         }
       },
       "is_incremental": false,
@@ -1476,10 +1476,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
