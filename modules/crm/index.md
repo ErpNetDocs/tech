@@ -1,12 +1,12 @@
-﻿# Customer Relationship Management (CRM)
+﻿# Customer Relationship Management (CRM) Subsystem
 
-The CRM group of applications in @@name is used to manage the front-office activities of a company.
+The CRM subsystem in @@name is used to manage customer relationships and other front-office activities of a company.
 
-## General concepts and process
+## General concepts and processes
 
-The general process flow of the CRM module is:
+The main process in the CRM subsystem is:
 
-> *Activity* 🠢 *Opportunity* 🠢 *Offer* 🠢 *Sales Order* 🠢 *Invoice Order* 🠢 *Invoice*
+> *Activity* → *Opportunity* → *Offer* → *Sales Order* → *Invoice Order* → *Invoice*
 
 * **[Activity](xref:General.Contacts.Activities)** - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.
 * **[Opportunity](xref:Crm.Presales.Deals)** - sales opportunity, with expected revenue and probability. It does not have detail line items.
@@ -19,9 +19,9 @@ The general process flow of the CRM module is:
 > The above diagram shows only the CRM part of the whole process.
 > The full process involves many different modules of the ERP system.
 
-## CRM Applications
+## Modules
 
-There are many applications in the CRM group.
+There are many modules in the CRM subsystem.
 They are used to manage the different aspects of the CRM processes:
 
 * **Contacts and tasks** - calendar appointments, party definitions, etc.
