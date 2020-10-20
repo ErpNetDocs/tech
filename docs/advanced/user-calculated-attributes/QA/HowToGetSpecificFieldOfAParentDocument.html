@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Examples | ERP.net Tech Docs </title>
+    <title>How to get specific field of a parent document? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Examples | ERP.net Tech Docs ">
+    <meta name="title" content="How to get specific field of a parent document? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,24 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="how-to-get-specific-field-of-a-parent-document">How to get specific field of a parent document?</h1>
 
-<ul>
-<li><a href="CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.html">Calculate StandartPricePerLot based on the Ingredients and the Operations in the Recipe</a></li>
-<li><a href="CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html">Check If a value of a vield Is changed in the Adjustment Document</a></li>
-<li><a href="CheckIfTheCurrentUserHasAuthorization.html">Check if the current user has authorization</a></li>
-<li><a href="CheckIfTheQuantityIsAWholeNumber.html">Check If the Quantity is a whole number</a></li>
-<li><a href="CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the system type of Payment type in the Sales Order is 'In Cash'</a></li>
-<li><a href="CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html">Check Whether the Releasing of the Document Is First or Not</a></li>
-<li><a href="CompareUnitPriceAndStandardUnitPrice.html">Compare Unit Price And Standard Unit Price</a></li>
-<li><a href="ConvertPropertyToNumber.html">Convert a Value of a Custom Property to a Number</a></li>
-<li><a href="GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.html">Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line</a></li>
-<li><a href="GetCurrentAvailabilitiesOfAProduct.html">Get Current Availabilities of a Product</a></li>
-<li><a href="GetValueAndDescriptionOfReferentObject.html">Get Value And Description Of Referent Object</a></li>
-<li><a href="SalesAmountsOfTheCustomerForTheLast30Days.html">Sales Amounts Of The Customer For The Last 30 Days</a></li>
-<li><a href="SpecificDayFromDocumentDate.html">Specific Day From Document Date</a></li>
-<li><a href="TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a></li>
-</ul>
+<p>When in a calculation attribute there is a need of a value  of attribute of the parent document there are two options to get them:</p>
+<ol>
+<li>The attribute is part of the parent Document table</li>
+<li>The attribute is part of the specific entity of the parent document</li>
+</ol>
+<p>If the attribute is part of the parent Document table, than we may get it  directly by GETOBJVALUE operator in the following expression:</p>
+<pre><code>10: GETOBJVALUE REF:Parent ATTRIB:DocumentNo
+</code></pre>
+<p>This expression would be valid for every document which has parent document.</p>
+<p>But in the second case, when the attribute is part of the specific entity  of the parent document (meaning SalesOrder, StoreOrder,  StoreTransaction, Payment and etc.) than the user has to tell the  calculate attribute what is the parent document. This is done by casting the parent document to the entity which is required (in the example a  cast to Offer is used):</p>
+<pre><code>10: GETOBJVALUE EXP:20 ATTRIB:DocumentNo
+20: CAST REF:Parent CONST:Aloe.EnterpriseOne.Model.Crm.Presales.Offer
+</code></pre>
+<p>It is supposed to show such calculated attribute in document form where the parent document is exactly Offer.</p>
 </article>
           </div>
           
@@ -103,7 +101,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/examples/Overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

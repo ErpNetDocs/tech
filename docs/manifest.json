@@ -65,7 +65,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "QBAWmQPm6S/OK/6E+qg3aQ=="
+          "hash": "KItcKM52bhR13f92LXqUtA=="
         }
       },
       "is_incremental": false,
@@ -121,11 +121,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfACustomPropertyHasValue.html",
-          "hash": "ZiKb2VlhrBR25P5w/EtBsQ=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.html",
+          "hash": "iGKfHet8HqoJ+2/GltBAzw=="
         }
       },
       "is_incremental": false,
@@ -133,11 +133,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfAListHaveValues.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfAListHaveValues.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckIfAListHaveValues.html",
-          "hash": "ztso4itE0S16pBt5p5qo4w=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfAListHaveValues.html",
+          "hash": "XhadwoF6jwJlezn8lVoQXg=="
         }
       },
       "is_incremental": false,
@@ -145,11 +145,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.html",
-          "hash": "b6FwfIVPT6eE7A5Q+3BzgA=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.html",
+          "hash": "pS5DZROXzjpcO7iWWRIf/A=="
         }
       },
       "is_incremental": false,
@@ -157,11 +157,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToCreateAnOptimallyFastCalculatedAttribute.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToCreateAnOptimallyFastCalculatedAttribute.html",
-          "hash": "PVS49AXCGDuP17amZJrZ2Q=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.html",
+          "hash": "499VpkMtdQztOYUTibQr3A=="
         }
       },
       "is_incremental": false,
@@ -169,11 +169,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToDetermineThePartyTypeOfAParty.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToDetermineThePartyTypeOfAParty.html",
-          "hash": "7+CZinisAkSJo6lbdXF93Q=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.html",
+          "hash": "SiecoOK6TL+kHeVxvysjqg=="
         }
       },
       "is_incremental": false,
@@ -181,11 +181,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToGetAttributeValueFromList.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToGetAttributeValueFromList.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToGetAttributeValueFromList.html",
-          "hash": "cNlYHtu7r11qpPwDPrcDhQ=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToGetAttributeValueFromList.html",
+          "hash": "vMHKY5FRT+kpSffvIHu50g=="
         }
       },
       "is_incremental": false,
@@ -193,11 +193,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToGetSpecificFieldOfAParentDocument.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToGetSpecificFieldOfAParentDocument.html",
-          "hash": "DlwAvkl5vtUPz34bA/ivrQ=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.html",
+          "hash": "/kC+U9c2ukyUDkP+P/BSRQ=="
         }
       },
       "is_incremental": false,
@@ -205,11 +205,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToShowContactOfAPersonInPersonsNavigator.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToShowContactOfAPersonInPersonsNavigator.html",
-          "hash": "HOGWXVmVWKUk9gHkdSD3RQ=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.html",
+          "hash": "jSYyeHfjSHsS8Bj2LUKIvA=="
         }
       },
       "is_incremental": false,
@@ -217,11 +217,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/HowToUseTheCustomerAsACompany.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToUseTheCustomerAsACompany.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/HowToUseTheCustomerAsACompany.html",
-          "hash": "unYhOVdY8087tao5Fwrspg=="
+          "relative_path": "advanced/user-calculated-attributes/QA/HowToUseTheCustomerAsACompany.html",
+          "hash": "1hrPOJheBZ0R2kOdSHyDOw=="
         }
       },
       "is_incremental": false,
@@ -229,11 +229,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/Q&A/Overview.md",
+      "source_relative_path": "advanced/user-calculated-attributes/QA/Overview.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/user-calculated-attributes/Q&A/Overview.html",
-          "hash": "DQ6OxpiiIplrlvH9ElI28g=="
+          "relative_path": "advanced/user-calculated-attributes/QA/Overview.html",
+          "hash": "9594wOmp0SkBD3EStfJy3Q=="
         }
       },
       "is_incremental": false,
@@ -377,7 +377,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/Overview.html",
-          "hash": "21+xHZN5slVNsAcZt0BDXA=="
+          "hash": "m4ly5lMcFYSuH0QEpiEc+w=="
         }
       },
       "is_incremental": false,
@@ -425,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/Overview.html",
-          "hash": "v36zp15WJCpZjjiyVvFZMA=="
+          "hash": "LKUZuNiMZjywgWsBS+K3dA=="
         }
       },
       "is_incremental": false,
@@ -1279,7 +1279,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/presales/index.html",
-          "hash": "X9qOHbFBdtD04Bz+aT7y5Q=="
+          "hash": "BVb7RrhE0aJwuMiPnkYCjw=="
         }
       },
       "is_incremental": false,
