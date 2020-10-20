@@ -1,2 +1,6 @@
 ﻿- name: Overview
   href: index.md
+- name: Contacts and tasks
+  href: contacts/
+- name: Sales
+  href: sales/
