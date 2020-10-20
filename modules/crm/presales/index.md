@@ -32,4 +32,4 @@ However, once a deal is created, it can be used to create many more sub-activiti
 The deals documents can be easily transformed into Offers (quotes), which contain detailed line items.
 
 @Crm.Presales.Offers allow the customer to be presented with optional items.
-After approving some or all of the optional items, the offer can generate @Crm.Sales.SalesOrders.
+After approving some or all of the optional items, the offer can generate @Crm.Sales.SalesOrders in the [Sales](../sales/index.md) module.
