@@ -1,8 +1,8 @@
 ﻿- name: Overview
   href: index.md
 - name: Contacts and tasks
-  href: contacts/
+  href: contacts/toc.yml
 - name: Presales
-  href: presales/
+  href: presales/toc.yml
 - name: Sales
-  href: sales/
+  href: sales/toc.yml
