@@ -16,5 +16,5 @@ Based on the data above, the team leaders and sales managers have instant and cl
 
 The deals documents can be easily transformed into Offers (quotes), which contain detailed line items.
 
-The deals are usually initially created based on activities.
+The deals are usually initially created based on @General.Contacts.Activities.
 However, once a deal is created, it can be used to create many more sub-activities to manage related tasks.
