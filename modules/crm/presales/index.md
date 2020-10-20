@@ -8,9 +8,9 @@ The opportunities:
 
 * Have appointed sales representative, managing the deal.
 * Do not have line items. They are used to manage deals, which are still not clear enough to detail at this level.
-* Have a percentage probability of success. The percentage is set by the sales representative, based on their own judgement.
-* Have expected sales revenue.
-* Have expected close date.
+* Have a percentage **probability of success**. The percentage is set by the sales representative, based on their own judgement.
+* Have expected **sales revenue**.
+* Have expected **close date**.
 
 Based on the data above, the team leaders and sales managers have instant and clear visibility over the sales processes.
 
