@@ -1,10 +1,17 @@
 # CRM Presales
 
 The presales module is used to manage the presales process.
-The main document is called @Crm.Presales.Deals and is used to manage the opportunities.
 
-Each deal represents a sales opportunity to new or existing customer.
-The opportunities:
+## Deals
+
+> *Activity* → **Opportunity** → *Offer* → *Sales Order* → *Invoice Order* → *Invoice*
+
+The @Crm.Presales.Deals are used to manage sales opportunities to new or existing customers.
+
+> [!note]
+> Deal is synonymous to opportunity.
+
+The deals:
 
 * Have appointed sales representative, managing the deal.
 * Do not have line items. They are used to manage deals, which are still not clear enough to detail at this level.
@@ -14,7 +21,15 @@ The opportunities:
 
 Based on the data above, the team leaders and sales managers have instant and clear visibility over the sales processes.
 
-The deals documents can be easily transformed into Offers (quotes), which contain detailed line items.
 
 The deals are usually initially created based on @General.Contacts.Activities.
 However, once a deal is created, it can be used to create many more sub-activities to manage related tasks.
+
+## Offers (quotes)
+
+> *Activity* → *Opportunity* → **Offer** → *Sales Order* → *Invoice Order* → *Invoice*
+
+The deals documents can be easily transformed into Offers (quotes), which contain detailed line items.
+
+@Crm.Presales.Offers allow the customer to be presented with optional items.
+After approving some or all of the optional items, the offer can generate @Crm.Sales.SalesOrders.
