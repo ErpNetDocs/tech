@@ -79,17 +79,17 @@
             <article class="content wrap" id="_content" data-uid="track-changes">
 <h1 id="track-changes">Track Changes</h1>
 
-<p>Track Changes is a system in EnterpriseOne, which can be used to track the changes in any data table.</p>
+<p>Track Changes is a system in ERP.net, which can be used to track the changes in any data table.</p>
 <h2 id="configuring-track-changes">Configuring Track Changes</h2>
-<p>The Track Changes functionality is activated through the Entity Types table.
+<p>The Track Changes functionality is activated through the <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.EntitySettings.html">Systems.Core.EntitySettings Entity</a> table.
 <br> Steps:</p>
-<ul>
+<ol>
 <li>Create a record in Entity Types, specifying the desired entity.</li>
 <li>In the Track Changes Level field, fill the desired tracking level.</li>
 <li>Save and close.</li>
-</ul>
-<p><strong>The tracking will shortly start.</strong></p>
-<p>For document entities is provided an opportunity for mass activation of the Track Changes system using the <strong>DocumentVersioningSystem</strong> registry key. For more information see the description key number 42 in the @(Config Options Reference) topic.</p>
+<li>The tracking will shortly start.</li>
+</ol>
+<p>For document entities is provided an opportunity for mass activation of the Track Changes system using the <strong>DocumentVersioningSystem</strong> registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.</p>
 <h2 id="tracking-levels">Tracking Levels</h2>
 <p>The tracking levels specify the detail level of the tracking, as per the following table:</p>
 <table>
@@ -135,10 +135,10 @@
 <h3 id="level-1---track-last-change">Level 1 - Track Last Change</h3>
 <p>Store information only for the latest modification.
 This is the lightest tracking mode with the least storage requirements.
-The information is stored in the @(Extensible Data Objects (EDO)) entity (stored in the Sys_Objects table).</p>
+The information is stored in the <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>EDO object is created and maintained ONLY for the root object of the @(object aggregate).
+<p>EDO object is created and maintained ONLY for the root object of the todo:(object aggregate).
 Upon first update of the tracked object, a new EDO record is created, if there isn't already one.
 For each successive update of any object in the aggregate, the data in the EDO is updated.</p>
 </div>
