@@ -27,7 +27,9 @@ The tracking levels specify the detail level of the tracking, as per the followi
 
 | Track Changes Level | Name | Description |
 | -- | --- | -------------------------------------- |
-| 4 |Track Object, Attribute & BLOB Changes | All the data of Level 3                   |
+| 4 |Track Object, Attribute & BLOB Changes | All the data of Level 3 
++ 
+Changes in the values of BLOB attributes.|
 |   |                                       | +                                         |
 |   |                                       | Changes in the values of BLOB attributes. |
 | -- | --- | -------------------------------------- |
