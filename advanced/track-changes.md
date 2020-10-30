@@ -60,7 +60,7 @@ The tracking data includes:
 - Creation Time (UTC) - the time of initial creation in Universal Coordinated Time (UTC) timezone.
 - Last Update User - the user who performed the last update OR deleted the object.
 - Last Update Time (UTC) - the time of the last update.
-- Is Deleted - specifies whether the tracked object is deleted. After the tracked object is deleted, the EDO information stays in the DB for some time, but can be purged by cleanup processes.Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last Update User / Time.
+- Is Deleted - specifies whether the tracked object is deleted. After the tracked object is deleted, the EDO information stays in the DB for some time, but can be purged by cleanup processes. Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last Update User / Time.
 
 ### Level 2 - Track Object Changes
 
