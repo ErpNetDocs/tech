@@ -33,15 +33,11 @@ Let's imagine that we need to show a field with Total Line Amount value in  the 
 Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)
 
 ```
-10     SUM  EXP: 20  ATTRIB: LineAmountValue                            
-
-20     SELECT REPO: Crm.Sales.SalesOrderLines  EXP: 30             
-
-30     WHERE EXP: 40                                      
-
-40     EQUAL ATTRIB: SalesOrderId   EXP:50                
-
-50     GETOBJVALUE  INPUT: 10      ATTRIB: SalesOrderId          
+10     SUM  EXP:20  ATTRIB:LineAmountValue                            
+20     SELECT REPO:Crm.Sales.SalesOrderLines  EXP:30             
+30     WHERE EXP:40                                      
+40     EQUAL ATTRIB:SalesOrderId   EXP:50                
+50     GETOBJVALUE  INPUT:10      ATTRIB:SalesOrderId          
 ```
 
 
@@ -51,11 +47,8 @@ Using a SELECT (using all records in the Crm.Sales.SalesOrderLines table)
 Using a REF (using only the lines of the current SalesOrder)
 
 ```
-10     SUM   EXP: 20 ATTRIB: LineAmountValue                    
-
-20     GETOBJVALUE  REF: SalesOrder CHILD: Lines           
-
-
+10     SUM EXP:20 ATTRIB:LineAmountValue                    
+20     GETOBJVALUE REF:SalesOrder CHILD:Lines           
 ```
 
 Of course, there are some scenarios in which we want to reach the data of a table to which we simply can use a reference connection. But when using a SELECT the are some tricks that we can use to fast the calculation. 
@@ -71,7 +64,7 @@ Knowing this there are two basic conclusions that we can come to.
 
 First, if we should always choose WHERE clauses instead FILTER clauses if  possible. Most of the other operators are supported in both cases, but  we must say that WHERE clauses have certain limitation. For example,  they can not be used along with [NOT](../operators/not.md), [OR](../operators/or.md) and [LIKE](../operators/like.md) operators (for more information, see [SELECT](../operators/select.md)). If we have no other choice but to use FILTER we proceed to the next paragraph (advice).
 
-And second, when we use FILTER clauses we should always try to narrow down  the list that we are returning. How to do so? Just apply as much WHERE  clauses as possible to the SELECT. This way we are filtering the list  before it is returned to the FILTER and therefore it will contain fewer  records, which will lead to a faster calculation.
+And second, when we use FILTER clauses we should always try to narrow down  the list that we are returning. How to do so? Just apply as much WHERE clauses as possible to the SELECT. This way we are filtering the list before it is returned to the FILTER and therefore it will contain fewer records, which will lead to a faster calculation.
 
 
 
