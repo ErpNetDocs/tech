@@ -4,11 +4,11 @@ uid: track-changes
 
 # Track Changes
 
-Track Changes is a system in EnterpriseOne, which can be used to track the changes in any data table.
+Track Changes is a system in @@name, which can be used to track the changes in any data table.
 
 ## Configuring Track Changes
 
-The Track Changes functionality is activated through the Entity Types table.
+The Track Changes functionality is activated through the @Systems.Core.EntitySettings table.
 <br> Steps:
 
 1. Create a record in Entity Types, specifying the desired entity.
@@ -16,7 +16,7 @@ The Track Changes functionality is activated through the Entity Types table.
 1. Save and close.
 1. The tracking will shortly start.
 
-For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the @(Config Options Reference) topic.
+For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.
 
 ## Tracking Levels
 
@@ -44,10 +44,10 @@ No information is stored.
 
 Store information only for the latest modification.
 This is the lightest tracking mode with the least storage requirements.
-The information is stored in the @(Extensible Data Objects (EDO)) entity (stored in the Sys_Objects table).
+The information is stored in the @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
-> EDO object is created and maintained ONLY for the root object of the @(object aggregate). 
+> EDO object is created and maintained ONLY for the root object of the todo:(object aggregate). 
 > Upon first update of the tracked object, a new EDO record is created, if there isn't already one. 
 > For each successive update of any object in the aggregate, the data in the EDO is updated.
 
