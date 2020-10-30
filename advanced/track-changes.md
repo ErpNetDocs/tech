@@ -12,8 +12,8 @@ The Track Changes functionality is activated through the Entity Types table.
 
 Steps:
 
-- 1. Create a record in Entity Types, specifying the desired entity.
-- 2. In the Track Changes Level field, fill the desired tracking level.
+- Create a record in Entity Types, specifying the desired entity.
+- In the Track Changes Level field, fill the desired tracking level.
 - Save and close.
 
 The tracking will shortly start.
