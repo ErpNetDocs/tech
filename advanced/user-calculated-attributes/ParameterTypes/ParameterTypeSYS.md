@@ -1,6 +1,6 @@
 # Parameter type SYS
 
-SYS parameter type is used for system variables. They can  be applied when we need to acquire information for the current user,  date, time, enterprise company and oth..
+SYS parameter type is used for system variables. They can be applied when we need to acquire information for the current user, date, time, enterprise company and oth..
 
 The list of those variables is as follows:
 
@@ -21,7 +21,7 @@ The list of those variables is as follows:
 Example (usage):
 
 ```
-10: GETVALUE SYS: Login
+10: GETVALUE SYS:Login
 ```
 
 The line returns the login of the user that is currently logged in the program.
