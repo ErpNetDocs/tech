@@ -68,7 +68,7 @@ With this level, the EDO is still updated, but also, for each modification, a ne
 
 #### Object Changesets contains data about change-sets.
 
-A change-set is one modification request, sent to the server. <br> One request can contain modifications (creates/updates/deletes) of multiple objects. <br> Each change-set stores the following data:
+A change-set is one modification request, sent to the server. One request can contain modifications (creates/updates/deletes) of multiple objects. <br> Each change-set stores the following data:
 
 - User - the user, who initiated the server request.
 - Time (UTC) - server time in UTC, when the request was executed.
