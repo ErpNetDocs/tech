@@ -7,8 +7,8 @@ items: CalculatedAttributeExamples
 A Calculated Attribute is added with the following parameters:
 
 ```
-Repository Name: Crm.Sales.SalesOrders
-Name: TenDaysFromDocumentDay
+Repository Name:Crm.Sales.SalesOrders
+Name:TenDaysFromDocumentDay
 ```
 
 And the Calculated Attribute expressions are as follows:
