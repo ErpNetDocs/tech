@@ -9,7 +9,7 @@ At first - some additional information - when a value is  set to a custom proper
 The current example shows how the get the description of a property of the customer and show it in the Offer form. Such calculated attribute would have the following parameters:
 
 ```
-Repository Name: Crm.Presales.Offers
+Repository Name:Crm.Presales.Offers
 ```
 
 And the Calculated Attribute expressions are as follows:
