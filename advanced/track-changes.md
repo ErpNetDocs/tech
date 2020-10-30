@@ -26,11 +26,8 @@ The tracking levels specify the detail level of the tracking, as per the followi
 
 
 | Track Changes Level | Name | Description |
-+---+---------------------------------------+ ------------------------------------------+
-| 4 |Track Object, Attribute & BLOB Changes | All the data of Level 3                   |
-|   |                                       | +                                         |
-|   |                                       | Changes in the values of BLOB attributes. |
-+---+---------------------------------------+-------------------------------------------+
+| -- | -------------- | ------------------------------------------------------------------------------------------|
+| 4 |Track Object, Attribute & BLOB Changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
 | 3 | Track Object & Attribute Changes |  All the data of Level 2 + Information about the changes in the attributes, excluding the BLOB attributes. The BLOB (Binary Large Objects) attributes are large size attributes like images, files, etc.|
 | 2 | Track Object Changes| All the data of Level 1 + General tracking information about each update of the object. Do not store information about the changes in the attributes. |
 | 1 | Track Last Change | Store information only for the latest modification of the tracked object. |
