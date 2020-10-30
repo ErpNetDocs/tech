@@ -9,14 +9,13 @@ Track Changes is a system in EnterpriseOne, which can be used to track the chang
 ## Configuring Track Changes
 
 The Track Changes functionality is activated through the Entity Types table.
-
-Steps:
+<br> Steps:
 
 - Create a record in Entity Types, specifying the desired entity.
 - In the Track Changes Level field, fill the desired tracking level.
 - Save and close.
 
-The tracking will shortly start.
+**The tracking will shortly start.
 
 For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the @(Config Options Reference) topic.
 
