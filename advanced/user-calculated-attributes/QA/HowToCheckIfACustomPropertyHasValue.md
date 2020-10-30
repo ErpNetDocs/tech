@@ -4,7 +4,7 @@ items: CalculatedAttributesQA
 
 # How to check if a custom property has value?
 
-When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the  specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is  verified is CustomProperty1.
+When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is verified is CustomProperty1.
 
 
 
@@ -69,7 +69,7 @@ If the Property Type of the particular custom property is 'Picture' use the foll
 60: EQUAL ATTRIB:Picture CONST:NULL
 70: SELECT REPO:General.PropertyValues EXP:80
 80: WHERE EXP: 90 EXP:100
-90: EQUAL ATTRIB: PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
+90: EQUAL ATTRIB:PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
 100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28
 ```
 
@@ -85,7 +85,7 @@ Explanation:
 - 60: if ATTRIB:Picture is equal to NULL, return true, else - return false
 - 70: select the records of table General.PropertyValues filtered by the clauses of EXP:80
 - 80: if EXP:90 AND EXP:100 are true, return true, else - return false
-- 90: if ATTRIB: PropertyId is equal to 86ba82c9-8843-e611-82a1-b010410e63e2, return true, else - return false
+- 90: if ATTRIB:PropertyId is equal to 86ba82c9-8843-e611-82a1-b010410e63e2, return true, else - return false
 - 100: if ATTRIB: ATTRIB:EntityItemId is equal to 47e225e9-f4b6-e611-af28-00155d001f28, return true, else - return false
 
 > [!NOTE] 
