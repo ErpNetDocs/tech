@@ -1,6 +1,6 @@
 # Parameter type CONST
 
-When used, indicates that the Value for this parameter type would be a constant for every calculation of the calculated attribute. The formats of the different types of values which are entered are as  follows:
+When used, indicates that the Value for this parameter type would be a constant for every calculation of the calculated attribute. The formats of the different types of values which are entered are as follows:
 
 
 
