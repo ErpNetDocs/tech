@@ -4,24 +4,24 @@ items: CalculatedAttributesQA
 
 # How to check whether a field that points to a reference object has a value?
 
-Often when we are creating a calculated attribute and we  want to get a value from a referent object, first we need to check if  the current record has a reference to this object at all. A.k.a. we need to check if a particular Id field has a value or not. 
+Often when we are creating a calculated attribute and we  want to get a value from a referent object, first we need to check if the current record has a reference to this object at all. A.k.a. we need to check if a particular Id field has a value or not. 
 
 
 
 The **recommended** way to perform this validation is to check whether there is a referent object:
 
 ```
-20  EQUAL   REF AdjustedDocument   CONST NULL        
+20  EQUAL REF:AdjustedDocument   CONST:NULL        
 ```
 
-​                
+​        
 
 
 
 and **NOT** whether the Id fields itself is empty:
 
 ```
-20  EQUAL   ATTRIB AdjustedDocumentId   CONST NULL
+20  EQUAL ATTRIB:AdjustedDocumentId   CONST:NULL
 ```
 
 
