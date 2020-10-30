@@ -8,7 +8,7 @@ It is intended primarily for advanced ERP implementation consultants.
 - [User Data Attributes](user-data-attributes/overview.md)
 - [User Calculated Attributes](user-calculated-attributes/overview.md)
 - [User Business Rules](user-business-rules/overview.md)
-- Track Changes
+- [Track Changes](track-changes.md)
 - Extensible Data Objects
 
 ## Advanced Concepts
