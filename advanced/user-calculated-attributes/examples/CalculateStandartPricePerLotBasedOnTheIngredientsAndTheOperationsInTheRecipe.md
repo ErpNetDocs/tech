@@ -9,15 +9,15 @@ With this attribute, we can calculate the  StandartPricePerLot that is going to 
 
 
 ```
-10:     ADD    EXP:20      EXP:25                 
-20:     SUM   CHILD:Ingredients      ATTRIB:PriceValue     
-25:     SUM   CHILD:Operations      EXP:30         
-30:     MULTIPLY      EXP:40      EXP:45        
-40:     DIVIDE ATTRIB:StandardPricePerHourValue    CONST:60.00   
-45:     CAST   EXP:50      CONST:System.Decimal
-50:     ADD    ATTRIB:RunTimeMinutes       EXP:60 
-60:     ADD    ATTRIB:WaitTimeMinutes      EXP:70        
-70:     ADD    ATTRIB:SetupTimeMinutes     ATTRIB:MoveTimeMinutes
+10:     ADD EXP:20 EXP:25                 
+20:     SUM CHILD:Ingredients ATTRIB:PriceValue     
+25:     SUM CHILD:Operations EXP:30         
+30:     MULTIPLY EXP:40 EXP:45        
+40:     DIVIDE ATTRIB:StandardPricePerHourValue CONST:60.00   
+45:     CAST EXP:50 CONST:System.Decimal
+50:     ADD ATTRIB:RunTimeMinutes EXP:60 
+60:     ADD ATTRIB:WaitTimeMinutes EXP:70        
+70:     ADD ATTRIB:SetupTimeMinutes ATTRIB:MoveTimeMinutes
 ```
 
 
