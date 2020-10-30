@@ -36,7 +36,7 @@ The tracking levels specify the detail level of the tracking, as per the followi
 
 ## Effects And Storage
 
-The system stores information based on the tracking level. The following table summarizes the stored data and other considerations and remarks:
+The system stores information based on the tracking level. The following topics summarizes the stored data and other considerations and remarks:
 
 ### Level 0 - Do Not Track Changes. 
 
