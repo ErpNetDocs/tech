@@ -84,3 +84,32 @@ One change-set can contain data about multiple object changes. The following dat
 - Change Type - the type of modification: C, U or D for Create/Update/Delete.
 - Root Object Id - the Id of the EDO for the root object of the aggregate.
 
+### Level 3 - Track Object & Attribute Changes
+
+When this level is selected, all the data for Level 2 is still stored and maintained. But now, also data about each attribute (field) change is also stored.
+
+> [!NOTE] 
+> This tracking level can consume A LOT of disk space. Use it only when absolutely necessary. Also, make sure to setup some cleanup process (integrated or external).
+
+Attribute Changes stores the following data about each attribute change:
+
+- Attribute Name - the name of the changed attribute
+- New Value - the string representation (culture insensitive) of the new value
+
+Some attribute changes might not be "sensed" correctly by the system. Since the Track Changes system works at the application level, changes made by direct SQL statements will not be recorded. When a next update occurs, the system will record the changes to the attribute like it is being made by the next update. This behavior is by design.
+
+The most frequent effect of this behavior is that the Document No attribute (which is set by SQL statements and not by the
+application layer) is recorded as being changed by the 2nd modification of the document. 
+
+Only the new values are stored (not the old values). This design was chosen for the following reasons:
+
+- We do not store both old values AND new values to save space.
+- If only the old (and not the new) values are stored, the track changes algorithm can save some space (initial object creation do not need to store values), but performance suffers. This was the initial implementation of the track changes system, but it was abandoned. The track changes process needed to synchronously read the previous database value before each update. This slowed down the actual database transactions and it was decided that the "new values only" approach would better fit the performance requirements.
+- The storage of the new values can be performed asynchronously AFTER the actual database transaction has completed. In this way, the track changes system has very minor effect on the speed of the every-day OLTP transactions.
+- One drawback of the asynchronous saving is that, upon server crash, the track changes data about the attribute changes might be lost. In this case, the Object Change will still be recorded, because it is recorded synchronously (as part of the transaction).
+
+### Level 4 - Track Object, Attribute & Blob Changes
+
+Same as Level 3, but the values of BLOB attributes are also saved. This can severely affect the storage requirements and should be used only for small tables and as last resort measure.
+
+
