@@ -79,8 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="sales-amounts-of-the-customer-for-the-last-30-days">Sales Amounts Of The Customer For The Last 30 Days</h1>
 
-<p>Let's say the user want to show a field in the Sales Order  which calculates the sales amounts of the selected customer for the last 30 days.</p>
-<p>Such calculated attribute actually represents a report  with specific filters. If a user tries to get the sales of a client for  the last 30 days, he would open Sales Order Lines report and set the  following filters:</p>
+<p>Let's say the user want to show a field in the Sales Order which calculates the sales amounts of the selected customer for the last 30 days.</p>
+<p>Such calculated attribute actually represents a report with specific filters. If a user tries to get the sales of a client for the last 30 days, he would open Sales Order Lines report and set the following filters:</p>
 <ul>
 <li>Client</li>
 <li>Enterprise Company</li>
@@ -89,9 +89,9 @@
 <li>Void (he probably won't need voided documents)</li>
 <li>Document Date</li>
 </ul>
-<p>So the calculated attribute must <a href="../operators/select.html">SELECT</a> the Sales Order Lines table and filter the records as described above.  Such calculated attribute would have the following parameters:</p>
-<pre><code>Repository Name: Crm.Sales.SalesOrders
-Name: SOAmountsForTheLast30days
+<p>So the calculated attribute must <a href="../operators/select.html">SELECT</a> the Sales Order Lines table and filter the records as described above. Such calculated attribute would have the following parameters:</p>
+<pre><code>Repository Name:Crm.Sales.SalesOrders
+Name:SOAmountsForTheLast30days
 </code></pre>
 <p>And the Calculated Attribute expressions are as follows:</p>
 <pre><code>10: SUM EXP:20 ATTRIB:LineAmountValue
@@ -118,48 +118,27 @@ Name: SOAmountsForTheLast30days
 </code></pre>
 <p>Explanation:</p>
 <ul>
-<li><p>10: Sum all records from expression 20 by their attribute LineAmountValue</p>
-</li>
-<li><p>20: Select 'Sales Order Lines' filtered by expression 30</p>
-</li>
-<li><p>30: the filter is expression 40 AND expression 50</p>
-</li>
-<li><p>40: expression 50 AND expression 70</p>
-</li>
-<li><p>50: check if expression 60 is equal to expression 30</p>
-</li>
-<li><p>60: cast expression 61 to &quot;System.Int32&quot; (this is integer)</p>
-</li>
-<li><p>61: get the value of attribute State of the referent object Document</p>
-</li>
-<li><p>70: check if expression 80 is equal to &quot;False&quot;</p>
-</li>
-<li><p>80: get the value of attribute Void of the referent object Document</p>
-</li>
-<li><p>90: expression 100 AND expression 130</p>
-</li>
-<li><p>100: expression 101 AND expression 160</p>
-</li>
-<li><p>101: check if expression 110 is equal to expression 120</p>
-</li>
-<li><p>110: get the value of attribute CustomerId of the referent object SalesOrder</p>
-</li>
-<li><p>120:get the value of attribute CustomerId of the input object of expression 10</p>
-</li>
-<li><p>130:  check if expression 140 is greater than or equal to expression 150</p>
-</li>
-<li><p>140: get the value of attribute DocumentDate of the referent object SalesOrder</p>
-</li>
-<li><p>150: add to expression 151 the value of &quot;-30&quot;</p>
-</li>
-<li><p>151: get the value of attribute DocumentDate of the input object of expression 10</p>
-</li>
-<li><p>160: check if expression 170 is equal to expression 180</p>
-</li>
-<li><p>170: get the value of attribute EnterpriseCompanyId of the referent object SalesOrder</p>
-</li>
-<li><p>180: get the value of attribute EnterpriseCompanyId of the input object of expression 10</p>
-</li>
+<li>10: Sum all records from expression 20 by their attribute LineAmountValue</li>
+<li>20: Select 'Sales Order Lines' filtered by expression 30</li>
+<li>30: the filter is expression 40 AND expression 50</li>
+<li>40: expression 50 AND expression 70</li>
+<li>50: check if expression 60 is equal to expression 30</li>
+<li>60: cast expression 61 to &quot;System.Int32&quot; (this is integer)</li>
+<li>61: get the value of attribute State of the referent object Document</li>
+<li>70: check if expression 80 is equal to &quot;False&quot;</li>
+<li>80: get the value of attribute Void of the referent object Document</li>
+<li>90: expression 100 AND expression 130</li>
+<li>100: expression 101 AND expression 160</li>
+<li>101: check if expression 110 is equal to expression 120</li>
+<li>110: get the value of attribute CustomerId of the referent object SalesOrder</li>
+<li>120:get the value of attribute CustomerId of the input object of expression 10</li>
+<li>130:  check if expression 140 is greater than or equal to expression 150</li>
+<li>140: get the value of attribute DocumentDate of the referent object SalesOrder</li>
+<li>150: add to expression 151 the value of &quot;-30&quot;</li>
+<li>151: get the value of attribute DocumentDate of the input object of expression 10</li>
+<li>160: check if expression 170 is equal to expression 180</li>
+<li>170: get the value of attribute EnterpriseCompanyId of the referent object SalesOrder</li>
+<li>180: get the value of attribute EnterpriseCompanyId of the input object of expression 10</li>
 </ul>
 </article>
           </div>

@@ -148,3 +148,6 @@ references:
 - uid: name
   name: name
   href: includes/name.html
+- uid: track-changes
+  name: Track Changes
+  href: advanced/track-changes.html

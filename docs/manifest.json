@@ -65,7 +65,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "KItcKM52bhR13f92LXqUtA=="
+          "hash": "8oy3i5QqVjwF1SSv6SB3wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/track-changes.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/track-changes.html",
+          "hash": "N3OJWJF3053hRtpR9KbN+A=="
         }
       },
       "is_incremental": false,
@@ -101,7 +113,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeCONST.html",
-          "hash": "DJiGZeJH7zN77J09INxZJQ=="
+          "hash": "NkVzWkzuAlAgLb+TNKbawQ=="
         }
       },
       "is_incremental": false,
@@ -113,7 +125,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeSYS.html",
-          "hash": "3LvQDU6q2+jFbcpfRQEKUw=="
+          "hash": "hLCrzF/KXafHPlZ+cpv2YA=="
         }
       },
       "is_incremental": false,
@@ -125,7 +137,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.html",
-          "hash": "iGKfHet8HqoJ+2/GltBAzw=="
+          "hash": "t69pMzTm37vm0pd5x79vIw=="
         }
       },
       "is_incremental": false,
@@ -137,7 +149,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfAListHaveValues.html",
-          "hash": "XhadwoF6jwJlezn8lVoQXg=="
+          "hash": "zLjUgCRJyFqOEOJSvSGJ8w=="
         }
       },
       "is_incremental": false,
@@ -149,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.html",
-          "hash": "pS5DZROXzjpcO7iWWRIf/A=="
+          "hash": "KW4fSuESZ8nmhNTuEqgYwA=="
         }
       },
       "is_incremental": false,
@@ -161,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.html",
-          "hash": "499VpkMtdQztOYUTibQr3A=="
+          "hash": "bKa24OkJF4Fn3wiHXRTTFg=="
         }
       },
       "is_incremental": false,
@@ -185,7 +197,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToGetAttributeValueFromList.html",
-          "hash": "vMHKY5FRT+kpSffvIHu50g=="
+          "hash": "5BONpOmXu5Tj94nJNwxLAw=="
         }
       },
       "is_incremental": false,
@@ -197,7 +209,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.html",
-          "hash": "/kC+U9c2ukyUDkP+P/BSRQ=="
+          "hash": "ljzjcGLMvtNvS3Ul4NaRSA=="
         }
       },
       "is_incremental": false,
@@ -209,7 +221,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.html",
-          "hash": "jSYyeHfjSHsS8Bj2LUKIvA=="
+          "hash": "7AqcFQb6KUWDHva5vnmLMA=="
         }
       },
       "is_incremental": false,
@@ -221,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/HowToUseTheCustomerAsACompany.html",
-          "hash": "1hrPOJheBZ0R2kOdSHyDOw=="
+          "hash": "VqjDgR6LnViabmDiVxqsqQ=="
         }
       },
       "is_incremental": false,
@@ -233,7 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/QA/Overview.html",
-          "hash": "p83uqr5xFRlN8C+cyeFw5w=="
+          "hash": "9594wOmp0SkBD3EStfJy3Q=="
         }
       },
       "is_incremental": false,
@@ -245,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.html",
-          "hash": "nTmOuuUgktja9aVlOr9SEg=="
+          "hash": "lWYxSfU3gICPwq79a7VH+Q=="
         }
       },
       "is_incremental": false,
@@ -257,7 +269,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html",
-          "hash": "/XWhJCoenb0dNZb5Jo2qRQ=="
+          "hash": "+hGCheNhWl85zDwLg7qCeQ=="
         }
       },
       "is_incremental": false,
@@ -269,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheCurrentUserHasAuthorization.html",
-          "hash": "6rcYQYfx8axw3r14sZ6qWQ=="
+          "hash": "tKeE3ZgeTBBu5nA0YhKK8g=="
         }
       },
       "is_incremental": false,
@@ -281,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.html",
-          "hash": "aeMQpZHJ/AshVR2CHamMcA=="
+          "hash": "srW5odIvvDPRZVr1ArbszQ=="
         }
       },
       "is_incremental": false,
@@ -293,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html",
-          "hash": "lMU4g5N8vh1VG3h0iPHrfQ=="
+          "hash": "ExFOF5/lSrL21Man3WzOaA=="
         }
       },
       "is_incremental": false,
@@ -305,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html",
-          "hash": "i0Kr3+xMK270V73oF87Z9Q=="
+          "hash": "lBDpXzQGYY2lyt2jnktqaA=="
         }
       },
       "is_incremental": false,
@@ -317,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/CompareUnitPriceAndStandardUnitPrice.html",
-          "hash": "ZSy74e33QVDsVI+plI0fkQ=="
+          "hash": "jYG6Lnw8XsujeDLgBs8qzg=="
         }
       },
       "is_incremental": false,
@@ -329,7 +341,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/ConvertPropertyToNumber.html",
-          "hash": "VnGlvJZyJlqRVsEviWP5Eg=="
+          "hash": "+KQXYMlxiw0uZIYDWoO/IQ=="
         }
       },
       "is_incremental": false,
@@ -341,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.html",
-          "hash": "VkVFtJM5xESHqI/sA8Zb3g=="
+          "hash": "9GvRsHPxoeQ4b96fMr/Rdw=="
         }
       },
       "is_incremental": false,
@@ -353,7 +365,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/GetCurrentAvailabilitiesOfAProduct.html",
-          "hash": "MZkKYJhKjiLJX5mF/8cF4w=="
+          "hash": "eLX4NqRA+IoiBZfcw6Vjng=="
         }
       },
       "is_incremental": false,
@@ -365,7 +377,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/GetValueAndDescriptionOfReferentObject.html",
-          "hash": "w3L+WGWSt2F5ylBRSEQhCA=="
+          "hash": "Lkp74XdoKha0FY7oyVT1Rw=="
         }
       },
       "is_incremental": false,
@@ -377,7 +389,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/Overview.html",
-          "hash": "Vv1MCN9myGH3SfrNjJrI1Q=="
+          "hash": "blPfac9H+tk8w9o9134/Eg=="
         }
       },
       "is_incremental": false,
@@ -389,7 +401,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
-          "hash": "pwR4+Xj8OpBNMqWfwfQ6qg=="
+          "hash": "BeepC+DdUT5iu8Uv4BkVbg=="
         }
       },
       "is_incremental": false,
@@ -401,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/SpecificDayFromDocumentDate.html",
-          "hash": "kwo2JwUAa7ylrsn+a/MQpw=="
+          "hash": "4I0+GM0JnaFtGOKT8j/SFA=="
         }
       },
       "is_incremental": false,
@@ -413,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html",
-          "hash": "LhMi9CBjKM0/h8kkbHTv1g=="
+          "hash": "ja0Wy72R8i7XS99Swk5bPg=="
         }
       },
       "is_incremental": false,
@@ -425,7 +437,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-calculated-attributes/operators/Overview.html",
-          "hash": "nG/t/daCL+6a/lwyQahLQg=="
+          "hash": "CJwd8vit4BhE83ZLo8tuVw=="
         }
       },
       "is_incremental": false,
