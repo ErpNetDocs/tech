@@ -11,7 +11,7 @@ Often when we are creating a calculated attribute and we  want to get a value fr
 The **recommended** way to perform this validation is to check whether there is a referent object:
 
 ```
-20  EQUAL REF:AdjustedDocument   CONST:NULL        
+20  EQUAL REF:AdjustedDocument CONST:NULL        
 ```
 
 ​        
@@ -21,7 +21,7 @@ The **recommended** way to perform this validation is to check whether there is 
 and **NOT** whether the Id fields itself is empty:
 
 ```
-20  EQUAL ATTRIB:AdjustedDocumentId   CONST:NULL
+20  EQUAL ATTRIB:AdjustedDocumentId CONST:NULL
 ```
 
 
