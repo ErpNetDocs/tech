@@ -45,9 +45,7 @@ No information is stored.
 #### Level 1 - Track Last Change
 
 Store information only for the latest modification.
-
 This is the lightest tracking mode with the least storage requirements.
-
 The information is stored in the @(Extensible Data Objects (EDO)) entity (stored in the Sys_Objects table).
 
 > [!NOTE] 
@@ -64,5 +62,21 @@ The tracking data includes:
 - Last Update Time (UTC) - the time of the last update.
 - Is Deleted - specifies whether the tracked object is deleted. After the tracked object is deleted, the EDO information stays in the DB for some time, but can be purged by cleanup processes.Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last Update User / Time.
 
+#### Level 2 - Track Object Changes
 
+With this level, the EDO is still updated, but also, for each modification, a new record is created in two tables:
+
+1. Object Changesets contains data about change-sets. A change-set is one modification request, sent to the server. <br> One request can contain modifications (creates/updates/deletes) of multiple objects. <br> Each change-set stores the following data:
+
+- User - the user, who initiated the server request.
+- Time (UTC) - server time in UTC, when the request was executed.
+- Application - the name of the client application, which executed the request.
+- Server Version - the version of the server by the time when the request was executed.
+
+2. Object Changes stores one row for each modified object. <br> One change-set can contain data about multiple object changes. <br> The following data is stored:
+
+- Repository Name - the name of the object repository, containing the object.
+- Entity Item Id - the Id of the tracked object.
+- Change Type - the type of modification: C, U or D for Create/Update/Delete.
+- Root Object Id - the Id of the EDO for the root object of the aggregate.
 
