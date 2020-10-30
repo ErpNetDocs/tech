@@ -4,10 +4,10 @@ items: CalculatedAttributesQA
 
 # How to get attribute value from list?
 
-Often mistake is to try to get a value of an attribute from a list. For example, if we want to get the user who changed the  document state:
+Often mistake is to try to get a value of an attribute from a list. For example, if we want to get the user who changed the document state:
 
 ```
-10: GETOBJVALUE CHILD: StateChanges ATTRIB: UpdateUser
+10: GETOBJVALUE CHILD:StateChanges ATTRIB:UpdateUser
 ```
 
 This is incorrect expression.
@@ -26,5 +26,4 @@ Explanation:
 - 10: get the value of the UserUpdate field from object in expression 20
 - 20: get the first record in the list in expression 30
 - 30: filter the child list StateChanges by the filter in expression 40
-
 - 40: check if the attribute SystemInitiated is equal to False
