@@ -100,11 +100,13 @@
 </ul>
 <p>The ultimate object, which has no parent in the aggregate is the Aggregate Root. In this example, this is the <strong>Sales Order</strong>.</p>
 <h2 id="aggregate-events">Aggregate Events</h2>
-<p>The Commit and ClientCommit events are now available in two different variations:</p>
-<p>1.Object Commit / Client-Commit
-1.Aggregate Commit / Client-Commit</p>
+<p>The <strong>Commit</strong> and <strong>ClientCommit</strong> events are now available in two different variations:</p>
+<ol>
+<li>Object Commit / Client-Commit</li>
+<li>Aggregate Commit / Client-Commit</li>
+</ol>
 <p>What is the difference?</p>
-<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in ANY of its constituent objects, but only if the objects is an aggregate root.</p>
+<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in <strong>ANY</strong> of its constituent objects, but only if the objects is an aggregate root.</p>
 <p>Lets take a look at the following structure which in EnterpriseOne is one single aggregate:</p>
 <ul>
 <li>a SalesOrder (which is the aggregate's root)</li>
@@ -123,6 +125,7 @@
 <p>Initially, only the Aggregate Client Commit event would be available for user-defined business rules <a href="user-business-rules/overview.html">User Business Rules</a>. The Aggregate Commit will be used only internally, for system-defined business rules todo:(System Business Rules)</p>
 </div>
 <p>The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for <a href="user-business-rules/overview.html">User Business Rules</a>.</p>
+<h4 id="see-also-">See also: <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></h4>
 </article>
           </div>
           
