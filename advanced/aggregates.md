@@ -41,7 +41,7 @@ The **Commit** and **ClientCommit** events are now available in two different va
 
 What is the difference?
 
-When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in ANY of its constituent objects, but only if the objects is an aggregate root.
+When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in **ANY** of its constituent objects, but only if the objects is an aggregate root.
 
 Lets take a look at the following structure which in EnterpriseOne is one single aggregate:
 
