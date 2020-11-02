@@ -112,7 +112,7 @@ The Track Changes functionality is activated through the @Systems.Core.EntitySet
 For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.
 
 > [!NOTE] 
-> If you try to configure a level lower than the default tracking levels, the option will be ignored.
+> If you try to configure a level lower than the @(default tracking levels), the option will be ignored.
 
 ## Default Tracking Levels
 
