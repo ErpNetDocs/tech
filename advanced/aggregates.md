@@ -34,7 +34,7 @@ The ultimate object, which has no parent in the aggregate is the Aggregate Root.
 
 ## Aggregate Events
 
-The Commit and ClientCommit events are now available in two different variations:
+The **Commit** and **ClientCommit** events are now available in two different variations:
 
 1. Object Commit / Client-Commit
 1. Aggregate Commit / Client-Commit
