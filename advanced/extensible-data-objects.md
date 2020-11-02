@@ -6,7 +6,7 @@ uid: extensible-data-objects
 
 ## Description And Usage
 
-The Extensible Data Objects (EDO) is a system in EnterpriseOne, which allows attaching additional data to all entities in the system.
+The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
 
 Types of additional data, which can currently be attached:
 
