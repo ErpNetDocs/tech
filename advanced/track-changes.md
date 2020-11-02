@@ -36,7 +36,7 @@ This is the lightest tracking mode with the least storage requirements.
 The information is stored in the [Extensible Data Objects EDO](extensible-data-objects.md) entity @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
-> [Extensible Data Objects EDO](extensible-data-objects.md) object is created and maintained ONLY for the root object of the todo:(object aggregate). 
+> [Extensible Data Objects EDO](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](aggregates.md)). 
 > Upon first update of the tracked object, a new [Extensible Data Objects EDO](extensible-data-objects.md) record is created, if there isn't already one. 
 > For each successive update of any object in the aggregate, the data in the [Extensible Data Objects EDO](extensible-data-objects.md) is updated.
 
