@@ -69,7 +69,7 @@ One change-set can contain data about multiple object changes. The following dat
 - **Repository Name** - the name of the object repository, containing the object.
 - **Entity Item Id** - the Id of the tracked object.
 - **Change Type** - the type of modification: C, U or D for Create/Update/Delete.
-- **Root Object Id** - the Id of the [Extensible Data Objects EDO](extensible-data-objects.md) for the root object of the aggregate.
+- **Root Object Id** - the Id of the [Extensible Data Objects EDO](extensible-data-objects.md) for the root object of the [Aggregates](aggregates.md).
 
 ### Level 3 - Track Object & Attribute Changes
 
