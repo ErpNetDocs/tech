@@ -33,7 +33,7 @@ No information is stored.
 
 Store information only for the latest modification.
 This is the lightest tracking mode with the least storage requirements.
-The information is stored in the @Systems.Core.ExtensibleDataObjects
+The information is stored in the [Extensible Data Objects EDO](extensible-data-objects.md) entity @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
 > EDO object is created and maintained ONLY for the root object of the todo:(object aggregate). 
