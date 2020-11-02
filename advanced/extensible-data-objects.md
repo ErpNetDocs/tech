@@ -15,15 +15,15 @@ Types of additional data, which can currently be attached:
 
 ## How It Works?
 
-EDO objects are stored in the Sys_Objects entity. The system works in the following way:
+EDO objects are stored in the **Sys_Objects** entity. The system works in the following way:
 
 - An object in any entity requires attaching additional data.
 - A new record is created in Sys_Objects.
 - The additional data is created in sub-tables, which have referential integrity to Sys_Objects.
 
-The record in Sys_Objects has only untyped soft reference (not referential integrity) to the original record. It contains Entity_Type and Entity_Item_Id fields, which uniquely identify the original record.
+The record in **Sys_Objects** has only untyped soft reference (not referential integrity) to the original record. It contains **Entity_Type** and **Entity_Item_Id** fields, which uniquely identify the original record.
 
-All additional data is related to Sys_Objects through typed referential integrity. In this way, the only untyped soft reference is the original reference in Sys_Objects, but most data is solidly related through typed referential integrity.
+All additional data is related to **Sys_Objects** through typed referential integrity. In this way, the only untyped soft reference is the original reference in **Sys_Objects**, but most data is solidly related through typed referential integrity.
 
 > [!NOTE] 
 > The todo:(Custom Properties) system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
