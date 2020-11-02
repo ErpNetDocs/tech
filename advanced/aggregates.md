@@ -61,4 +61,5 @@ In the example above, the **Commit** event would occur for the **Sales Order** i
 
 The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for [User Business Rules](user-business-rules/overview.md).
 
+#### See also: @Systems.Core.ExtensibleDataObjects
 
