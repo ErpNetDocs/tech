@@ -12,7 +12,7 @@ https://martinfowler.com/bliki/DDD_Aggregate.html
 
 ## Examples
 
-For example, in EnterpriseOne, this is one single aggregate:
+For example, in @@name, this is one single aggregate:
 
 - a SalesOrder
 - the Sales Order Lines of this Sales Order
