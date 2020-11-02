@@ -37,8 +37,8 @@ The information is stored in the @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
 > [Extensible Data Objects EDO](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](aggregates.md)). 
-> Upon first update of the tracked object, a new [Extensible Data Objects EDO](extensible-data-objects.md) record is created, if there isn't already one. 
-> For each successive update of any object in the aggregate, the data in the [Extensible Data Objects EDO](extensible-data-objects.md) is updated.
+> Upon first update of the tracked object, a new EDO record is created, if there isn't already one. 
+> For each successive update of any object in the aggregate, the data in the EDO is updated.
 
 The tracking data includes:
 
