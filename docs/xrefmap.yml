@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: aggregates
+  name: Aggregates
+  href: advanced/aggregates.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/user-calculated-attributes/operators/add.html
@@ -145,6 +148,9 @@ references:
 - uid: erpnet
   name: erpnet
   href: includes/erpnet.html
+- uid: extensible-data-objects
+  name: Extensible Data Objects EDO
+  href: advanced/extensible-data-objects.html
 - uid: name
   name: name
   href: includes/name.html

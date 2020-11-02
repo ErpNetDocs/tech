@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Advanced Section | ERP.net Tech Docs </title>
+    <title>Aggregates | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Advanced Section | ERP.net Tech Docs ">
+    <meta name="title" content="Aggregates | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -76,25 +76,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="advanced-section">Advanced Section</h1>
+            <article class="content wrap" id="_content" data-uid="aggregates">
+<h1 id="aggregates">Aggregates</h1>
 
-<p>This section contains information for advanced concepts, systems and deep dive in the security.
-It is intended primarily for advanced ERP implementation consultants.</p>
-<h2 id="advanced-systems">Advanced Systems</h2>
+<h2 id="what-are-aggregates">What are Aggregates?</h2>
+<p>&quot;Aggregate is a pattern in Domain-Driven Design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate.&quot;</p>
+<p><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">https://martinfowler.com/bliki/DDD_Aggregate.html</a></p>
+<h2 id="examples">Examples</h2>
+<p>For example, in ERP.net, this is one single aggregate:</p>
 <ul>
-<li><a href="user-data-attributes/overview.html">User Data Attributes</a></li>
-<li><a href="user-calculated-attributes/overview.html">User Calculated Attributes</a></li>
-<li><a href="user-business-rules/overview.html">User Business Rules</a></li>
-<li><a href="track-changes.html">Track Changes</a></li>
-<li><a href="extensible-data-objects">Extensible Data Objects</a></li>
+<li>a SalesOrder</li>
+<li>the Sales Order Lines of this Sales Order</li>
+<li>the Distributed Amounts for each of these Sales Order Lines</li>
+<li>the Document Amounts of this Sales Order</li>
+<li>the Payment Plan of this Sales Order</li>
 </ul>
-<h2 id="advanced-concepts">Advanced Concepts</h2>
+<h2 id="parent-and-root-objects">Parent And Root Objects</h2>
+<p>Each object in an aggregate can have a parent object.The parent is the logical &quot;owner&quot; of the child object(s).</p>
+<p>For example:</p>
 <ul>
-<li>Master / Detail Attributes</li>
-<li>Object / Relational Mapping</li>
-<li><a href="aggregates.html">Aggregates</a></li>
+<li>The parent of <strong>Sales Order Line</strong> is <strong>Sales Order</strong>.</li>
+<li>The parent of <strong>Distributed Amount</strong> is the <strong>Sales Order Line</strong>.</li>
 </ul>
+<p>The ultimate object, which has no parent in the aggregate is the Aggregate Root. In this example, this is the <strong>Sales Order</strong>.</p>
+<h2 id="aggregate-events">Aggregate Events</h2>
+<p>The Commit and ClientCommit events are now available in two different variations:</p>
+<p>1.Object Commit / Client-Commit
+1.Aggregate Commit / Client-Commit</p>
+<p>What is the difference?</p>
+<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in ANY of its constituent objects, but only if the objects is an aggregate root.</p>
+<p>Lets take a look at the following structure which in EnterpriseOne is one single aggregate:</p>
+<ul>
+<li>a SalesOrder (which is the aggregate's root)</li>
+<li>the Sales Order Lines of this Sales Order</li>
+<li>the Distributed Amounts for each of these Sales Order Lines</li>
+<li>the Document Amounts of this Sales Order</li>
+<li>the Payment Plan of this Sales Order</li>
+</ul>
+<p>In the example above, the <strong>Commit</strong> event would occur for the <strong>Sales Order</strong> if and only if the Sales Order object itself has changed. While the <strong>Aggregate Commit</strong> will occur for the Sales Order if any of the objects in the aggregate has changed. For example, changing just a single Sales Order Line (without changing the Sales Order itself) would still trigger the Sales Order Aggregate event.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Commit and Client-Commit still have the same meaning. E.g., Commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While Client-Commit is triggered only based on client requests and is considered the more light-weight approach.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Initially, only the Aggregate Client Commit event would be available for user-defined business rules <a href="user-business-rules/overview.html">User Business Rules</a>. The Aggregate Commit will be used only internally, for system-defined business rules todo:(System Business Rules)</p>
+</div>
+<p>The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for <a href="user-business-rules/overview.html">User Business Rules</a>.</p>
 </article>
           </div>
           
@@ -103,7 +131,7 @@ It is intended primarily for advanced ERP implementation consultants.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/aggregates.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
