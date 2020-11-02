@@ -11,7 +11,7 @@ The Extensible Data Objects (EDO) is a system in EnterpriseOne, which allows att
 Types of additional data, which can currently be attached:
 
 - File Attachments.
-- @track-changes change tracking data.
+- [Track Changes](track-changes.md) change tracking data.
 
 ## How It Works?
 
