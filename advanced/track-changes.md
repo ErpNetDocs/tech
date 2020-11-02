@@ -6,9 +6,6 @@ uid: track-changes
 
 Track Changes is a system in @@name, which can be used to track the changes in any data table.
 
-## Effects And Storage
-
-The system stores information based on the tracking level. The following topics summarizes the stored data and other considerations and remarks:
 
 ## Tracking Levels
 
@@ -24,6 +21,9 @@ The tracking levels specify the detail level of the tracking, as per the followi
 | 4 | Track Object, Attribute & BLOB Changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
 
 
+## Effects And Storage
+
+The system stores information based on the tracking level. The following topics summarizes the stored data and other considerations and remarks:
 
 ### Level 0 - Do Not Track Changes. 
 
