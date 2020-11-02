@@ -6,17 +6,7 @@ uid: track-changes
 
 Track Changes is a system in @@name, which can be used to track the changes in any data table.
 
-## Configuring Track Changes
 
-The Track Changes functionality is activated through the @Systems.Core.EntitySettings table.
-<br> Steps:
-
-1. Create a record in Entity Types, specifying the desired entity.
-1. In the Track Changes Level field, fill the desired tracking level.
-1. Save and close.
-1. The tracking will shortly start.
-
-For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.
 
 ## Tracking Levels
 
@@ -25,12 +15,11 @@ The tracking levels specify the detail level of the tracking, as per the followi
 
 | Track Changes Level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
-| 4 | Track Object, Attribute & BLOB Changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
-| 3 | Track Object & Attribute Changes |  All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding the BLOB attributes. <br> The BLOB (Binary Large Objects) attributes are large size attributes like images, files, etc.|
-| 2 | Track Object Changes| All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Do not store information about the changes in the attributes. |
-| 1 | Track Last Change | Store information only for the latest modification of the tracked object. |
 | 0 | Do Not Track Changes | Do not track any changes for this entity. |
-
+| 1 | Track Last Change | Store information only for the latest modification of the tracked object. |
+| 2 | Track Object Changes| All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Do not store information about the changes in the attributes. |
+| 3 | Track Object & Attribute Changes |  All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding the BLOB attributes. <br> The BLOB (Binary Large Objects) attributes are large size attributes like images, files, etc.|
+| 4 | Track Object, Attribute & BLOB Changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
 
 ## Effects And Storage
 
@@ -109,6 +98,18 @@ Only the new values are stored (not the old values). This design was chosen for 
 ### Level 4 - Track Object, Attribute & Blob Changes
 
 Same as Level 3, but the values of BLOB attributes are also saved. This can severely affect the storage requirements and should be used only for small tables and as last resort measure.
+
+## Configuring Track Changes
+
+The Track Changes functionality is activated through the @Systems.Core.EntitySettings table.
+<br> Steps:
+
+1. Create a record in Entity Types, specifying the desired entity.
+1. In the Track Changes Level field, fill the desired tracking level.
+1. Save and close.
+1. The tracking will shortly start.
+
+For document entities is provided an opportunity for mass activation of the Track Changes system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.
 
 ## Default Tracking Levels
 
