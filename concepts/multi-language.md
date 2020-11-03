@@ -27,6 +27,10 @@ When entering translations for a multi-language string, the client application u
 | EN: | Toothpaste |
 | DE: | Zahnpasta |
 
+## Translation
+
+Depending on the client application, translation can sometimes also be automated. Some client applications support using an online service, like Google Translate to automatically translate a string to other languages. Translation is better suited to Description and Notes attributes.
+
 
 ## Transliteration
 
@@ -49,6 +53,4 @@ Automatic transliteration occurs when the system needs to display some a multi-l
 For example, suppose one employee works in a branch office in Bulgaria and enters "Иван" as a person first name. The database saves only the Bulgarian language version. Then another employee in a US branch requests to see the first name of the same person. The system would automatically transliterate the string and display it as "Ivan".
 
 
-## Translation
 
-Depending on the client application, translation can sometimes also be automated. Some client applications support using an online service, like Google Translate to automatically translate a string to other languages. Translation is better suited to Description and Notes attributes.
