@@ -27,8 +27,6 @@ When entering translations for a multi-language string, the client application u
 | EN: | Toothpaste |
 | DE: | Zahnpasta |
 
-## Translation
-
 Depending on the client application, translation can sometimes also be automated. Some client applications support using an online service, like Google Translate to automatically translate a string to other languages. Translation is better suited to Description and Notes attributes.
 
 
