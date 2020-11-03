@@ -52,5 +52,7 @@ Automatic transliteration occurs when the system needs to display some a multi-l
 
 For example, suppose one employee works in a branch office in Bulgaria and enters "Иван" as a person first name. The database saves only the Bulgarian language version. Then another employee in a US branch requests to see the first name of the same person. The system would automatically transliterate the string and display it as "Ivan".
 
+> [!NOTE]
+> Transliteration works optimally between Latin and Cyrillic.
 
 
