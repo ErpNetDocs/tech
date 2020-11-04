@@ -8,7 +8,7 @@
     <title>Multi-language support | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Multi-language support | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -105,15 +105,16 @@ For example, for a Portuguese invoice, one would require that the labels and dat
 </thead>
 <tbody>
 <tr>
-<td>Bulgarian</td>
-<td>Иван</td>
+<td>EN:</td>
+<td>Toothpaste</td>
 </tr>
 <tr>
-<td>English</td>
-<td>Ivan</td>
+<td>DE:</td>
+<td>Zahnpasta</td>
 </tr>
 </tbody>
 </table>
+<p>Depending on the client application, translation can sometimes also be automated. Some client applications support using an online service, like Google Translate to automatically translate a string to other languages. Translation is better suited to Description and Notes attributes.</p>
 <h2 id="transliteration">Transliteration</h2>
 <p>Transliteration is the process of translating one language version of a string to another, based on the sounding of the string. Transliteration works great for person and company names and addresses. It allows branch offices to work in their local language and reports can still be shown in the corporate language.</p>
 <p>For example, the Bulgarian word &quot;Иван&quot; would be transliterated in English as &quot;Ivan&quot;.</p>
@@ -123,8 +124,10 @@ For example, for a Portuguese invoice, one would require that the labels and dat
 <h3 id="automatic-transliteration">Automatic transliteration</h3>
 <p>Automatic transliteration occurs when the system needs to display some a multi-language string in some language, but that specific language translation is not saved in the database.</p>
 <p>For example, suppose one employee works in a branch office in Bulgaria and enters &quot;Иван&quot; as a person first name. The database saves only the Bulgarian language version. Then another employee in a US branch requests to see the first name of the same person. The system would automatically transliterate the string and display it as &quot;Ivan&quot;.</p>
-<h2 id="translation">Translation</h2>
-<p>Depending on the client application, translation can sometimes also be automated. Some client applications support using an online service, like Google Translate to automatically translate a string to other languages. Translation is better suited to Description and Notes attributes.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Transliteration works optimally between Latin and Cyrillic.</p>
+</div>
 </article>
           </div>
           

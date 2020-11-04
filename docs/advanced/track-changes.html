@@ -8,7 +8,7 @@
     <title>Track Changes | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Track Changes | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,12 +125,12 @@
 <h3 id="level-1---track-last-change">Level 1 - Track Last Change</h3>
 <p>Store information only for the latest modification.
 This is the lightest tracking mode with the least storage requirements.
-The information is stored in the <a href="extensible-data-objects.html">Extensible Data Objects EDO</a> entity <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
+The information is stored in the <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p><a href="extensible-data-objects.html">Extensible Data Objects EDO</a> object is created and maintained ONLY for the root object of the object <a href="aggregates.html">Aggregates</a>).
-Upon first update of the tracked object, a new <a href="extensible-data-objects.html">Extensible Data Objects EDO</a> record is created, if there isn't already one.
-For each successive update of any object in the aggregate, the data in the <a href="extensible-data-objects.html">Extensible Data Objects EDO</a> is updated.</p>
+Upon first update of the tracked object, a new EDO record is created, if there isn't already one.
+For each successive update of any object in the aggregate, the data in the EDO is updated.</p>
 </div>
 <p>The tracking data includes:</p>
 <ul>
@@ -143,7 +143,7 @@ For each successive update of any object in the aggregate, the data in the <a hr
 </ul>
 <h3 id="level-2---track-object-changes">Level 2 - Track Object Changes</h3>
 <p>With this level, the <a href="extensible-data-objects.html">Extensible Data Objects EDO</a> is still updated, but also, for each modification, a new record is created in two tables:</p>
-<h4 id="object-changesets-contains-data-about-change-sets">Object Changesets contains data about change-sets.</h4>
+<h4 id="-contains-data-about-change-sets"><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ObjectChangesets.html">Systems.Core.ObjectChangesets Entity</a> contains data about change-sets.</h4>
 <p>A change-set is one modification request, sent to the server. One request can contain modifications (creates/updates/deletes) of multiple objects. Each change-set stores the following data:</p>
 <ul>
 <li><strong>User</strong> - the user, who initiated the server request.</li>
