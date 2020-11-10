@@ -6,6 +6,8 @@
   href: user-calculated-attributes/toc.yml
 - name: User Business Rules
   href: user-business-rules/toc.yml
+  - name: User Business Rules
+  href: system-business-rules.md
 - name: Generation Procedures
   href: generation-procedures/toc.yml
 - name: Track Changes
