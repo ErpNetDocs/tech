@@ -21,5 +21,5 @@ Many custom attributes can easily be defined and set as "required". However, thi
 
 To learn more about user-defined attributes (also called "Custom Properties"), select a topic below:
 
-- Create User-Defined Data Attribute
+- Create User-Defined Data Attribute.
 - Documents And User-Defined Data Attributes
