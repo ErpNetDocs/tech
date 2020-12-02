@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/aggregates.html",
-          "hash": "AWKHwDR9iXZAL7Y+G/G80A=="
+          "hash": "IQqISVs9w6GkaDjIYR4dbQ=="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,947 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/extensible-data-objects.md",
+      "source_relative_path": "advanced/business-rules/overview.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/extensible-data-objects.html",
-          "hash": "azRgBUAi3Py5JsnLAy3+sw=="
+          "relative_path": "advanced/business-rules/overview.html",
+          "hash": "5rmWJdkaPnbq4CfFXFwgUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/system-business-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/system-business-rules.html",
+          "hash": "8hE7LPpcNGC+B08JVKnAtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/ParameterTypes/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/ParameterTypes/Overview.html",
+          "hash": "VzLYoWlbRhUbyOPUcssyQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/ParameterTypes/ParameterTypeCONST.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/ParameterTypes/ParameterTypeCONST.html",
+          "hash": "LEKWzHUGgnNmcrRBqOmGoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/ParameterTypes/ParameterTypeSYS.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/ParameterTypes/ParameterTypeSYS.html",
+          "hash": "uW9sJobd8zXkqYky295shA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.html",
+          "hash": "89m9PWBdd/s0YDPT4++5+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToCheckIfAListHaveValues.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToCheckIfAListHaveValues.html",
+          "hash": "dpmY6n4YMoYKfftjnIVabg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.html",
+          "hash": "vhElDhF3aWhjAnZv7cCkHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.html",
+          "hash": "Kv18mfK4JDBtvpelzJ1yhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.html",
+          "hash": "sci//UZ/mDXLv9ByARwPDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToGetAttributeValueFromList.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToGetAttributeValueFromList.html",
+          "hash": "Y8WORYYfZcXBtaAAzinIww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.html",
+          "hash": "E/4wsnK0tBN9Ihgop1nZIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.html",
+          "hash": "WG4/Q302TkwdCfXV55cPGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/HowToUseTheCustomerAsACompany.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/HowToUseTheCustomerAsACompany.html",
+          "hash": "A0VlCYEcnw7B4GfnMzvv8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/Overview.html",
+          "hash": "5dlP+4Kih8psmF0/nxtFfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.html",
+          "hash": "JsAF8xFZb14b0YBcYvDx9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html",
+          "hash": "DTMoEsmAEkcF1cWs7Z5eSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CheckIfTheCurrentUserHasAuthorization.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CheckIfTheCurrentUserHasAuthorization.html",
+          "hash": "LT2ZKEfqhuugMAEwBVdSRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.html",
+          "hash": "7bJ5znQ6dJsviuTxJl4MDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html",
+          "hash": "X8hmR1YikB2doGHdQwfNvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html",
+          "hash": "V+R3fBiIreMvpfFFeUSXXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/CompareUnitPriceAndStandardUnitPrice.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/CompareUnitPriceAndStandardUnitPrice.html",
+          "hash": "RTKpPM8vZVCVJ7CKFVNwsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/ConvertPropertyToNumber.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/ConvertPropertyToNumber.html",
+          "hash": "b402qniK7BP8mONSIPUeZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.html",
+          "hash": "UOoC2gh+Mq4MJMnGU5Jteg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/GetCurrentAvailabilitiesOfAProduct.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/GetCurrentAvailabilitiesOfAProduct.html",
+          "hash": "bMoxelJl1OvONJ3HQ54q6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/GetValueAndDescriptionOfReferentObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/GetValueAndDescriptionOfReferentObject.html",
+          "hash": "q7lztI84YiibJN0FgljOMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/Overview.html",
+          "hash": "uLqEeY9a0GhppwQuzp9t+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
+          "hash": "bNpprFv7mzTiNZSfDHVkEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/SpecificDayFromDocumentDate.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/SpecificDayFromDocumentDate.html",
+          "hash": "qbhqV4tXCV1CpKxVX2WJIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html",
+          "hash": "pZeeMgTkuoOXGZTeQHfz2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/Overview.html",
+          "hash": "dx0kg0YrU4pBqnaTdq4DGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/add.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/add.html",
+          "hash": "/2evmkA0/JRZ3gmGgwOrbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/adddays.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/adddays.html",
+          "hash": "IqaKMmesfYQXqa5viaVYCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/and.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/and.html",
+          "hash": "ZwsiMq7u6eWVUsA1+PqUkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/cast.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/cast.html",
+          "hash": "TIuHGTuthGj6UvJyje/TQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/ceiling.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/ceiling.html",
+          "hash": "qrqtEV01BGFGb9U/q2I61g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/concat.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/concat.html",
+          "hash": "JX86pbQXk/xPj1nPZuItqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/convert.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/convert.html",
+          "hash": "mXMNk+JUfGaj+jMy8eD6/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/count.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/count.html",
+          "hash": "DmVRtygL9QLD9GXqpyz3Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/divide.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/divide.html",
+          "hash": "DtcwTJRaopPOzUgYJa4xZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/equal.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/equal.html",
+          "hash": "3QieYeASSSmk0S7ZO2hcfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/filter.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/filter.html",
+          "hash": "9RTAtFT5+GVcv99MALPQgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/first.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/first.html",
+          "hash": "pDuTKkKiFPe3/C7nIIEFew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/floor.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/floor.html",
+          "hash": "USpoGUHy9v28CXYE9ksLMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/formatstring.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/formatstring.html",
+          "hash": "rMAYIXXy2ca3mmlHunJeXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/getobjvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/getobjvalue.html",
+          "hash": "WdbfGNsudtKEr9V/QaRjmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/getvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/getvalue.html",
+          "hash": "QimnUJVnoccpKekoK6xV+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/gt.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/gt.html",
+          "hash": "aI92PYwjNKLpXRmXr/XL/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/gte.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/gte.html",
+          "hash": "e/UxFK4qhln0/OuiXFYIqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/iif.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/iif.html",
+          "hash": "O+IxEDbRWIohFvMtuzqsJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/in.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/in.html",
+          "hash": "iXvq7uANT1CDg7zId5u40w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/incnum.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/incnum.html",
+          "hash": "7BMzyrR5viu7YpA6ORFrcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/left.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/left.html",
+          "hash": "sZvuDF9oR4l2jYc0zvZKmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/len.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/len.html",
+          "hash": "FqpJbIAc9S0uMZRUBTvR8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/like.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/like.html",
+          "hash": "4jkTR0mOSCsPOVAbxUM/5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/list.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/list.html",
+          "hash": "OUxMDuXCewyXQ5U6beXH1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/lt.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/lt.html",
+          "hash": "MiYBMdnJuEvfp0ZU349nHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/lte.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/lte.html",
+          "hash": "gvVTzVUgi914t3uqNRIL6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/multiply.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/multiply.html",
+          "hash": "vVB5RQzmr9PGt/Jyk6vjxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/not.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/not.html",
+          "hash": "5XFTzvjXIjW8AT1B2WEPcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/or.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/or.html",
+          "hash": "m7EgzQjNJ23ou46xBEUkng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/orderby.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/orderby.html",
+          "hash": "xq0Lq7wK0KYG0aBV9AMPKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/pos.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/pos.html",
+          "hash": "tx+L80qQS2/aV0Wm/QA3YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/regex.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/regex.html",
+          "hash": "m1CoF8B93amfckTU9TdGdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/replace.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/replace.html",
+          "hash": "F1rxYsM8ZIdiU3FeEqzh9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/right.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/right.html",
+          "hash": "2+Ty5xMY4WXD9q6hyL40pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/round.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/round.html",
+          "hash": "f864+U7Qe12/NJ3+DN8Hgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/select.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/select.html",
+          "hash": "f6TbuiJ2SZ6vj+cdGpjRiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/sort.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/sort.html",
+          "hash": "yzhB649AvVLAMPQKwQlSow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/substring.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/substring.html",
+          "hash": "RbQcRw5dXaZLxlR+3IKbCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/sum.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/sum.html",
+          "hash": "1MJdxXLK1iDBRG4QJU/zTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/today.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/today.html",
+          "hash": "CLN1X0OqI1VjX4K/HFM9hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/tolower.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/tolower.html",
+          "hash": "wHgso/SvA5EQ0BQ1Fdkv1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/top.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/top.html",
+          "hash": "+Hlto7yJb2SmK/UAGJgW8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/toupper.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/toupper.html",
+          "hash": "KAPM8NRdjbUl7Tkc87E8jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/where.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/where.html",
+          "hash": "NlfxNxrzKLLPbqFRY3ihkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/overview.html",
+          "hash": "U0eARFwNLPLfxwqXopPQUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/custom-attributes/domain-with-property-allowed-values.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/custom-attributes/domain-with-property-allowed-values.html",
+          "hash": "FEoZx+gc4IB9ib8oahsb/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/custom-attributes/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/custom-attributes/overview.html",
+          "hash": "OozOaWZmu1njtTB7+5lVgA=="
         }
       },
       "is_incremental": false,
@@ -50,10 +986,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "advanced/generation-procedures/generation-procedure.SVG",
+      "source_relative_path": "advanced/custom-attributes/user-data-attributes.png",
       "output": {
         "resource": {
-          "relative_path": "advanced/generation-procedures/generation-procedure.SVG"
+          "relative_path": "advanced/custom-attributes/user-data-attributes.png"
         }
       },
       "is_incremental": false,
@@ -61,11 +997,94 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/generation-procedures/overview.md",
+      "source_relative_path": "advanced/data-objects/extensible-data-objects.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/generation-procedures/overview.html",
-          "hash": "NMxTplMoMJK14OoaU4n01g=="
+          "relative_path": "advanced/data-objects/extensible-data-objects.html",
+          "hash": "wueEKQTyzmgOBtj/1CwI/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/data-objects/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/data-objects/index.html",
+          "hash": "V1TCVeDw2YCX3KMKrQrqlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/data-objects/track-changes.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/data-objects/track-changes.html",
+          "hash": "23Uu8L8mj5+uf7+GgWkU1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/document-flow.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/document-flow.html",
+          "hash": "Xb4/sih0gso6U4eMYWOjRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/document-fulfillment.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/document-fulfillment.html",
+          "hash": "61vkVSyA21F3JuH5vGqObg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/documents/generation-procedure.SVG",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/documents/generation-procedure.SVG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/generation-procedures.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/generation-procedures.html",
+          "hash": "Xh+i+c22F79qCGCNNIPx+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/index.html",
+          "hash": "7K+JYQoILnV9CHq2Ow8/VA=="
         }
       },
       "is_incremental": false,
@@ -77,19 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/overview.html",
-          "hash": "KJ7ymaJocam+Wi64js3NEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/system-business-rules.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/system-business-rules.html",
-          "hash": "+nTxunmtYtCQvNz6yFWTHg=="
+          "hash": "uM821PhxNkjNpBiauD8qwA=="
         }
       },
       "is_incremental": false,
@@ -101,978 +1108,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "cxZEadomH5fdkBe6cGkBgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/track-changes.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/track-changes.html",
-          "hash": "FWLtrwLT2lScqfskrn5aHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/overview.html",
-          "hash": "qkhG/a0C5i+xyJWzKzKQmw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/ParameterTypes/Overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/ParameterTypes/Overview.html",
-          "hash": "gOw8leoQNoHilFKF4UdPcw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeCONST.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeCONST.html",
-          "hash": "vG1yJ/D8fmZ3dqpT4xz6rw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeSYS.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/ParameterTypes/ParameterTypeSYS.html",
-          "hash": "cpIIGSJUN/PnoQ0FT6vEQQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfACustomPropertyHasValue.html",
-          "hash": "T9LjjYS4STsM/4J33BjWRw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfAListHaveValues.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckIfAListHaveValues.html",
-          "hash": "Czr5uPpn5AM/zUDcAmrfNw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.html",
-          "hash": "f72Kca9DZ2fbR+2rqsAzYQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToCreateAnOptimallyFastCalculatedAttribute.html",
-          "hash": "6wEYKD2Ogj2bUiALWvs5qQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToDetermineThePartyTypeOfAParty.html",
-          "hash": "o7sxPdhL+fY7r6tnWzNheA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToGetAttributeValueFromList.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToGetAttributeValueFromList.html",
-          "hash": "YmByk3/oo2GReusOZ0HFXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToGetSpecificFieldOfAParentDocument.html",
-          "hash": "Y6t3dk70MitaufBiSJdu8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToShowContactOfAPersonInPersonsNavigator.html",
-          "hash": "YfZDcQlAQ+3zPmKmZkLs1A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/HowToUseTheCustomerAsACompany.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/HowToUseTheCustomerAsACompany.html",
-          "hash": "ZYuyCKUCj5yxY7rU/NRjew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/QA/Overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/QA/Overview.html",
-          "hash": "NFXSKgNNPXEpz8/Fljo2xw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.html",
-          "hash": "/uVyKPy7gT+aJKUJmY1QBw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html",
-          "hash": "tB7Zgo31uC44csTEpJZbdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheCurrentUserHasAuthorization.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheCurrentUserHasAuthorization.html",
-          "hash": "3vg6D+bAcbCusCXFD0XyCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheQuantityIsAWholeNumber.html",
-          "hash": "EybUqJEOTdQSDxXlfe2Erg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html",
-          "hash": "coIeRndQedw0CQhCXhTjFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html",
-          "hash": "qUOrBdRZOD7NL2o1CPliKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/CompareUnitPriceAndStandardUnitPrice.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/CompareUnitPriceAndStandardUnitPrice.html",
-          "hash": "xWVBSQUOP1TKP+nwCNIEJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/ConvertPropertyToNumber.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/ConvertPropertyToNumber.html",
-          "hash": "ph18jBqLaY048Q38fHkGEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.html",
-          "hash": "LbW4G68KaApQjlCzsMhVwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/GetCurrentAvailabilitiesOfAProduct.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/GetCurrentAvailabilitiesOfAProduct.html",
-          "hash": "fNySBYej7q0pFlBKU01Hdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/GetValueAndDescriptionOfReferentObject.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/GetValueAndDescriptionOfReferentObject.html",
-          "hash": "8NcX5RqQNrxIeb6TyiYmtg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/Overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/Overview.html",
-          "hash": "qqpoftBzKqj+ogmTampuFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
-          "hash": "wqji6wsoq0lkRYKkSNCndg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/SpecificDayFromDocumentDate.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/SpecificDayFromDocumentDate.html",
-          "hash": "oazdm1W0aLn4oxCwafYKHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/examples/TotalQuantityAndScrapQuantityInRecipeIngredients.html",
-          "hash": "ysfkL5NNOix++zmA588Axw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/Overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/Overview.html",
-          "hash": "NdUCpAJ4+Pq2pEQilVSjOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/add.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/add.html",
-          "hash": "Zv8vMLpqLfG41HjPegftLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/adddays.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/adddays.html",
-          "hash": "dzDkxx5/DyHEmZJ9WyjmOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/and.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/and.html",
-          "hash": "rijW4SVmL3kH146qsObwrg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/cast.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/cast.html",
-          "hash": "QXs2BwNJCSVZt0dcJXNMVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/ceiling.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/ceiling.html",
-          "hash": "Lqc+Y2vKMFw5xhcCr1jl+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/concat.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/concat.html",
-          "hash": "ItlLokPLd3zTdR9dCZHcdQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/convert.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/convert.html",
-          "hash": "Y2DxFPOVzjk0NnhDX0T5oQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/count.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/count.html",
-          "hash": "ZsFql15hP831Xh3a23R3vw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/divide.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/divide.html",
-          "hash": "8P4R0YApZpg0EhDiaibFUg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/equal.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/equal.html",
-          "hash": "GRYqgJdB0LYZSWcBFUKD0w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/filter.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/filter.html",
-          "hash": "xvRwO8ibw8RUiF/0ta+ZwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/first.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/first.html",
-          "hash": "cz15wlc4JmQvZgCwJ6wGnA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/floor.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/floor.html",
-          "hash": "qshkxM7ym2rOjshvRBKV3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/formatstring.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/formatstring.html",
-          "hash": "LhFQxxn9V+4K5WG3wH7yiw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/getobjvalue.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/getobjvalue.html",
-          "hash": "OAVDDuD5zPtZY9suP59gyg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/getvalue.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/getvalue.html",
-          "hash": "8pIzqsiPPnXpFSDsjqzzHA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/gt.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/gt.html",
-          "hash": "lh0lty6hYQwuNXI4M6W7Gw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/gte.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/gte.html",
-          "hash": "3+UwdnnXkwVg7DnVIm1Qhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/iif.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/iif.html",
-          "hash": "z8t3kA1Q97TTh5mYA0dPfA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/in.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/in.html",
-          "hash": "g2GujCx8K2exuzNhIWfgkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/incnum.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/incnum.html",
-          "hash": "8E1nooJBi32c1pAaBAPxbQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/left.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/left.html",
-          "hash": "aEDQoHcumMoyTNcwGCWPZw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/len.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/len.html",
-          "hash": "rRhD0m6tMDdYpO2OvuDlmw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/like.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/like.html",
-          "hash": "plkK1bvo5qpXIp6M3oyWZA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/list.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/list.html",
-          "hash": "SGEEEnIDOsSsIJxPU11FUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/lt.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/lt.html",
-          "hash": "7A2cc1g2hCDYsE5s7sduEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/lte.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/lte.html",
-          "hash": "NmpcpZVd7KBF/vt5uXcXKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/multiply.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/multiply.html",
-          "hash": "IVaBAbw+KIvRFBuCqA0yrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/not.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/not.html",
-          "hash": "x15AAIIOj7EKy2nhabccSw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/or.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/or.html",
-          "hash": "0k7cwfHWp4NC748+m3jqpg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/orderby.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/orderby.html",
-          "hash": "SePOXcgbuw0dO4ek0l2AQg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/pos.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/pos.html",
-          "hash": "3PehQI4Fnq/cCsKE6ZEoug=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/regex.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/regex.html",
-          "hash": "/oZgWCaIyJhbBkRqwZVfQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/replace.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/replace.html",
-          "hash": "BBFwvJ1i3g7xMPg4bn0f+A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/right.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/right.html",
-          "hash": "pYeGjBK2axOTBpYHS0cLhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/round.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/round.html",
-          "hash": "iO7d3b/Q7anc5oWnaT2nNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/select.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/select.html",
-          "hash": "bwoaIELYrphHHhjyDF4dJw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/sort.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/sort.html",
-          "hash": "MIm8G5CXb7Q5UySpII5XrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/substring.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/substring.html",
-          "hash": "AY4sIHS0gcUL7/E8yhiAXg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/sum.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/sum.html",
-          "hash": "pm5+4Sc4t0byA2hOUgl1FQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/today.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/today.html",
-          "hash": "KfM4aIsHQ9Kozt4ZTnZ1qQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/tolower.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/tolower.html",
-          "hash": "xswF+kGtyQhhbL1bQfdj/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/top.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/top.html",
-          "hash": "+flfLu66U1Eb2F8AzOYbsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/toupper.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/toupper.html",
-          "hash": "44v+HIKeA11qEUD6ri31eA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/operators/where.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/operators/where.html",
-          "hash": "4O9/v3FdKhlgSsvVoWOQWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-calculated-attributes/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-calculated-attributes/overview.html",
-          "hash": "NApi8eyzxO/NnLpWEp0qVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-data-attributes/domain-with-property-allowed-values.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-data-attributes/domain-with-property-allowed-values.html",
-          "hash": "r61JOrLqA70zd9yF4fANxw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-data-attributes/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-data-attributes/overview.html",
-          "hash": "i7NEbkoURZb4Fw/180CQnw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "advanced/user-data-attributes/user-data-attributes.png",
-      "output": {
-        "resource": {
-          "relative_path": "advanced/user-data-attributes/user-data-attributes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "concepts/document-flow.md",
-      "output": {
-        ".html": {
-          "relative_path": "concepts/document-flow.html",
-          "hash": "hO02ugMxn5Num1oNPrJHhA=="
+          "hash": "1+rNhFXGXEgNyD9g0VUCgA=="
         }
       },
       "is_incremental": false,
@@ -1085,18 +1121,6 @@
         ".html": {
           "relative_path": "concepts/documents.html",
           "hash": "/if4wYf44KfGH/FHOvXIvw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "concepts/fulfillment.md",
-      "output": {
-        ".html": {
-          "relative_path": "concepts/fulfillment.html",
-          "hash": "cQkZoSDfIRDFE58bhSon9w=="
         }
       },
       "is_incremental": false,
@@ -1144,7 +1168,29 @@
       "output": {
         ".html": {
           "relative_path": "concepts/toc.html",
-          "hash": "WKe69OyMTYfSfGlZWg/oaA=="
+          "hash": "dZTTVib+FanLNojsjZPGEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/custom-attributes/user-data-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/custom-attributes/user-data-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/documents/generation-procedure.SVG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/documents/generation-procedure.SVG"
         }
       },
       "is_incremental": false,

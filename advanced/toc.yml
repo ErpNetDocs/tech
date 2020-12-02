@@ -1,18 +1,16 @@
 - name: Overview
   href: overview.md
+- name: Documents
+  href: documents/toc.yml
 - name: Custom Attributes
-  href: user-data-attributes/toc.yml
+  href: custom-attributes/toc.yml
 - name: Calculated Attributes
   href: calculated-attributes/toc.yml
 - name: Business Rules
   href: business-rules/toc.yml
-- name: System Business Rules
-  href: system-business-rules.md
-- name: Generation Procedures
-  href: generation-procedures/toc.yml
-- name: Track Changes
-  href: track-changes.md
-- name: Extensible Data Objects
-  href: extensible-data-objects.md
-- name: Aggregates
-  href: aggregates.md 
+- name: Data Objects
+  href: data-objects/toc.yml
+- name: Concepts
+  items:
+  - name: Aggregates
+    href: aggregates.md

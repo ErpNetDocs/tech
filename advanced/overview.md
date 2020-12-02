@@ -5,11 +5,11 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Advanced Systems
 
-- [User Data Attributes](user-data-attributes/overview.md)
-- [User Calculated Attributes](user-calculated-attributes/overview.md)
-- [User Business Rules](user-business-rules/overview.md)
-- [Track Changes](track-changes.md)
-- [Extensible Data Objects](extensible-data-objects.md)
+- [Documents](documents/index.md) - document-related concepts and services.
+- [Custom Attributes](custom-attributes/overview.md) - user-defined data attributes.
+- [Calculated Attributes](calculated-attributes/overview.md) - user-defined calculations.
+- [Business Rules](business-rules/overview.md) - user-defined and system business rules.
+- [Data Objects](data-objects/index.md) - data object extensibility systems.
 
 ## Advanced Concepts
 

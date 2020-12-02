@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>System Business Rules | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="System Business Rules | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="system-business-rules">System Business Rules</h1>
+
+<h2 id="what-is-system-business-rule">What is System Business Rule?</h2>
+<p>The System Business Rules specify a specific action that the system must take to verify and / or modify data that is entered into the database.</p>
+<p>Аccording to their аction, there are two main types of business rules:</p>
+<ul>
+<li><strong>rules that validate the data that has been entered</strong> - e.g. if a particular field has a value, if the value is valid, if the value interfere with the values the other fields, settings or business logics.</li>
+<li><strong>rules that modify something</strong> - e.g. sets a value in a particular field, triggers an event for another entity, and oth.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>Each System Business Rule which code is with the format 'R' + 'digit number', e.g. R27179, has a documentation topic.</p>
+<p>The topic is available in the Business Rules section of the Model Documentation for the particular Entity e.g. Sales Orders's <a href="https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#business-rules">Business Rules</a>.</p>
+<p>Every topic includes a standardized table which contains detailed information about the rule. The standardized table allows us to organize data in a structured way and helps the reader to quickly navigate through the info.</p>
+<h2 id="the-table-columns-and-content-explained">The Table Columns and Content Explained</h2>
+<table>
+<thead>
+<tr>
+<th>Column Name</th>
+<th>Column Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Unique System Business Rule code. Always starts with &quot;R&quot; and continues with a digit number.</td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>The entity for which the Action of the System Business Rule is executed.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name of the System Business Rule. The name is unique per entity.<br> Usually, the name is simply the name of the attribute for which the rule is created.</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>This is the attribute (field) of the entity object to which the rule applies. There may be rules that do not apply to any particular field.</td>
+</tr>
+<tr>
+<td>Layer</td>
+<td>The layer where the System Business Rule is executed. Possible values are: <br>- Front-End - the rule is executed on the client-side of the application i.e. in the user interface while the data is being modified by the user. <br> - Back-End - the rule is executed on the server-ide of the application, regardless of whether the information is entered through a user interface or through the API</td>
+</tr>
+<tr>
+<td>Events</td>
+<td>The events that will trigger the execution of the rule. Possible events are: <br>- Commit - occurs when the data is saved into the database. <br>- Planning + - occurs when the document state is changed to 'Planned' or higher. (applies only to documents)<br>- FirmPlanning + - occurs when the document state is changed to 'FirmPlanned' or higher. (applies only to documents)<br> - Releasing + - occurs when the document state is changed to 'Released' or higher. (applies only to documents)<br>- Completing + - occurs when the document state is changed to 'Completed' or higher. (applies only to documents)<br>- Closed - occurs when the document state is changed to 'Closed'. (applies only to documents)<br>- Voiding - occurs when a document is being voided. (applies only to documents)<br>- ClientCommit - occurs when the data is saved into the database, nut only when the saving is initiated by a client application. If the object is modified by the EnterpriseOne server, then this event is not triggered EnterpriseOne Server.<br>- AttributeChanged (TheAttribute) - occurs when an attribute/field value is changed. The attribute/s whose value is being changed is/are specified in the brackets.</td>
+</tr>
+<tr>
+<td>Priority</td>
+<td>Possible values are Early, Normal, or Late. <br> The priority is taken into account in the execution order. The rules with an Early priority are executed first, followed by thеse with Normal priority, and rules with a Late priority are executed last.</td>
+</tr>
+<tr>
+<td>Modify</td>
+<td>Shows explicitly whether the rule modifies the entity's data. Possible values are YES and NO. <br> If the rule only checks if a particular field is filled in or not, then Modify = NO. But if the rule checks if a particular field is filled in and if it is not - sets a value in it, then Modify = YES.</td>
+</tr>
+<tr>
+<td>Applicable Legislations</td>
+<td>Specifies whether the rule has to be executed according to the particular party's applicable legislations. Possible values are:<br> - 'ALL // no condition needed' - There is no condition and the rule will be executed regardless of the legislations of the related parties.<br>- The legislation abbreviation (the conditional Party) e.g. BG (EnterpriseCompany.Company) - The rule will be executed only if in the Applicable Legislations child table of the particular Party there is a record with the specified Legislation.</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Technical description of the conditions and the operation of the rule.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Text description of the rule - conditions, operation, the business logic behind it, related topics and oth.</td>
+</tr>
+<tr>
+<td>Sort Messages By Attribute</td>
+<td>Тhe attribute by whose value the message apparance is ordered - if the message is repeated more than once. <br>If we are editing a document, for example, and the message have to be thrown for a couple of its lines, then it will probably be far easier for the user to follow them if they are sorted by the &quot;Line Number&quot; of the document lines.</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>A list with all versions in which the Business Rule has been somehow changed. Usually contains two types of records: <br>- 'Introduced: 2xxx.x' - the version since which the Business Rule type is available;<br>- 'Updated: 2xxx.x' - the version in which the Business Rule has been changed plus a short description of the changes. There could be non or multiple records of this type.</td>
+</tr>
+<tr>
+<td>Revocable</td>
+<td>Shows whether the rule can be revoked for a particular database or not. In order to be revoked - the rule's code has to be specified in the list of the registry key 'RevokedBusinessRules'. (for more information, see key number 41 in the todo:(Config Options Reference topic))</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/system-business-rules.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -36,7 +36,7 @@ This is the lightest tracking mode with the least storage requirements.
 The information is stored in the @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
-> [Extensible Data Objects EDO](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](aggregates.md)). 
+> [Extensible Data Objects](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](../aggregates.md)). 
 > Upon first update of the tracked object, a new EDO record is created, if there isn't already one. 
 > For each successive update of any object in the aggregate, the data in the EDO is updated.
 
@@ -47,11 +47,11 @@ The tracking data includes:
 - **Creation Time (UTC)** - the time of initial creation in Universal Coordinated Time (UTC) timezone.
 - **Last Update User** - the user who performed the last update OR deleted the object.
 - **Last Update Time (UTC)** - the time of the last update.
-- **Is Deleted** - specifies whether the tracked object is deleted. After the tracked object is deleted, the [Extensible Data Objects EDO](extensible-data-objects.md) information stays in the DB for some time, but can be purged by cleanup processes. Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last Update User / Time.
+- **Is Deleted** - specifies whether the tracked object is deleted. After the tracked object is deleted, the [Extensible Data Objects](extensible-data-objects.md) information stays in the DB for some time, but can be purged by cleanup processes. Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last Update User / Time.
 
 ### Level 2 - Track Object Changes
 
-With this level, the [Extensible Data Objects EDO](extensible-data-objects.md) is still updated, but also, for each modification, a new record is created in two tables:
+With this level, the [Extensible Data Objects](extensible-data-objects.md) is still updated, but also, for each modification, a new record is created in two tables:
 
 #### @Systems.Core.ObjectChangesets contains data about change-sets.
 
@@ -69,7 +69,7 @@ One change-set can contain data about multiple object changes. The following dat
 - **Repository Name** - the name of the object repository, containing the object.
 - **Entity Item Id** - the Id of the tracked object.
 - **Change Type** - the type of modification: C, U or D for Create/Update/Delete.
-- **Root Object Id** - the Id of the [Extensible Data Objects EDO](extensible-data-objects.md) for the root object of the [Aggregates](aggregates.md).
+- **Root Object Id** - the Id of the [Extensible Data Objects](extensible-data-objects.md) for the root object of the [Aggregates](../aggregates.md).
 
 ### Level 3 - Track Object & Attribute Changes
 

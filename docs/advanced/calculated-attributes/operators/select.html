@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SELECT - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SELECT - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="cao-SELECT">
+<h1 id="select---calculated-attribute-operator">SELECT - Calculated Attribute Operator</h1>
+
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Gets the objects matching the clauses.</td>
+</tr>
+<tr>
+<td>Parameter 1 Name</td>
+<td>Repository</td>
+</tr>
+<tr>
+<td>Parameter 1 Type</td>
+<td>repository</td>
+</tr>
+<tr>
+<td>Parameter 2 Name</td>
+<td>Clauses (optional, but highly advisable) // For more information see the 'FILTER AND WHERE filtering of a SELECT' section below)</td>
+</tr>
+<tr>
+<td>Parameter 2 Type</td>
+<td>operators (<a href="where.html">WHERE</a>, <a href="top.html">TOP</a>)</td>
+</tr>
+<tr>
+<td>Parameter 3 Name</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Parameter 3 Type</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Return Value</td>
+<td>Returns a list of objects from Repository matching Clauses.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The SELECT operator returns limited number of records - 20 000. This limit is only for the returned records count, so as setting much filters as possible are highly recommended (filters in the <a href="where.html">WHERE</a> clause).</p>
+</div>
+<h2 id="example">Example</h2>
+<p>The WHERE clause of the SELECT statement supports the following operators:</p>
+<ul>
+<li><a href="and.html">AND</a></li>
+<li><a href="top.html">TOP</a></li>
+<li><a href="equal.html">EQUAL</a></li>
+<li><a href="gt.html">GT</a></li>
+<li><a href="gte.html">GTE</a></li>
+<li><a href="lt.html">LT</a></li>
+<li><a href="lte.html">LTE</a></li>
+</ul>
+<p>The operators which are not supported by the SELECT operator but may be used by the <a href="filter.html">FILTER</a> operator are:</p>
+<ul>
+<li><a href="not.html">NOT</a></li>
+<li><a href="or.html">OR</a></li>
+<li><a href="like.html">LIKE</a></li>
+</ul>
+<p>FILTER AND WHERE filtering of a SELECT</p>
+<p>Having this in mind is really important when extracting lists from the database. When using SELECT operator we send a request to the database and it is preferred to set as much WHERE filters as possible. But if there is a filter, which is not supported by the EnterpriseOne Server, then the list that is returned by the select may be filtered additionally with the FILTER operator.</p>
+<p>The disadvantages are that the SELECT statement make a direct request to the database, which may reflect on the productivity and may slow down the calculation of the attribute. When using the SELECT operator the user has to apply as much WHERE filters as possible, because this would limit the amount of data which would be extracted from the database into the client. And then, if the select statement does not provide enough filters, the result from the select may be filtered by the FILTER operator which operates on the already loaded data in the client.</p>
+<p>Here are some examples to picture the information by far:</p>
+<p>If there is a need of a list of documents which DocumentTypeId is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are Work Orders. So the following calculated attribute would be incorrect:</p>
+<pre><code>10: SELECT REPO:Production.ShopFloor.WorkOrders EXP:20
+20: WHERE EXP:30
+30: OR EXP:40 EXP:50
+40: EQUAL CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL EXP:45 CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+</code></pre>
+<p>This calculated attribute is incorrect and would return errors when used. So, we can set calculated attribute which selects the work orders and then to filter the list, which the SELECT operator returned and apply the FILTER operator for more precision. So the correct calculated attribute is as follows:</p>
+<pre><code>10: FILTER EXP:20 EXP:30
+20: SELECT REPO:Production.ShopFloor.WorkOrders 
+30: OR EXP:40 EXP:50
+40: EQUAL EXP:45 CONST:bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e
+45: CAST ATTRIB:DocumentTypeId CONST:System.Guid
+50: EQUAL ATTRIB:DocumentTypeId CONST:89ca5ca4-ad57-44c7-9b33-2ff44e054bff
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/select.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

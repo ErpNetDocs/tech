@@ -33,7 +33,7 @@ All additional data is related to **Sys_Objects** through typed referential inte
 
 The EDO system is very useful for creating additional data, which can be attached to multiple entities. It is not required that the type of data should be attachable to ALL entities.
 
-The data model allows attaching data to any entity, but system business rules or [User Business Rules](user-business-rules/overview.md) can be used to limit the entities, which actually "accept" the data.
+The data model allows attaching data to any entity, but system business rules or [Business Rules](../business-rules/overview.md) can be used to limit the entities, which actually "accept" the data.
 
 Possible (planned) future uses:
 
@@ -45,7 +45,3 @@ Possible (planned) future uses:
 - Reviews - marketplace style reviews.
 
 #### See also: @Systems.Core.ExtensibleDataObjects
-
-
-
-
