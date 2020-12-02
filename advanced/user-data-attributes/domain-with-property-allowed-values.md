@@ -144,7 +144,8 @@ The priority for automatic copying of custom properties to a document is determi
 
 
 
-**Note:** The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities
+[!Note 
+>The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities
 
 \1. Inherited values from the parent document. (Priority 80)
 
