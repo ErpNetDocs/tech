@@ -1,11 +1,11 @@
 - name: Overview
   href: overview.md
-- name: User Data Attributes
+- name: Custom Attributes
   href: user-data-attributes/toc.yml
-- name: User Calculated Attributes
-  href: user-calculated-attributes/toc.yml
-- name: User Business Rules
-  href: user-business-rules/toc.yml
+- name: Calculated Attributes
+  href: calculated-attributes/toc.yml
+- name: Business Rules
+  href: business-rules/toc.yml
 - name: System Business Rules
   href: system-business-rules.md
 - name: Generation Procedures

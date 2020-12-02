@@ -8,7 +8,7 @@
     <title>Domain with Property Allowed Values | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Domain with Property Allowed Values | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -84,14 +84,23 @@
 <li><p>If &quot;Limit To Allowed Values&quot; does NOT have a check mark, then any value is valid and the domain is a range of all possible values.</p>
 </li>
 <li><p>If the &quot;Allowed Values Entity Name&quot; has a value, then the domain is the set of all records of the specified data type.</p>
-<p><strong>Note:</strong> This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Property&quot; does not have a value.</p>
 </li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Property&quot; does not have a value.</p>
+</div>
+<ol start="3">
 <li><p>If the field &quot;Allowed Values Property&quot; has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.</p>
 <p>CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain</p>
-<p><strong>Note:</strong> This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Entity Name&quot; does NOT have a value.</p>
 </li>
-<li><p>(Default, Lowest Priority) The domain is the range of the &quot;Property Allowed Values&quot; listed in the Gen_Property_Allowed_Values sub-table.</p>
-</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Entity Name&quot; does NOT have a value.</p>
+</div>
+<ol start="4">
+<li>(Default, Lowest Priority) The domain is the range of the &quot;Property Allowed Values&quot; listed in the Gen_Property_Allowed_Values sub-table.</li>
 </ol>
 <p><em><strong>Example 1:</strong></em></p>
 <p>Let's assume that we have the following properties:</p>
@@ -162,13 +171,26 @@ i.e. we look recursively in the relation “Allowed Values Property”.</p>
 <p>Copying: Accordingly, when specifying a Customer in Sales Order, only the custom properties that have the same hereditary root will be automatically copied from the Customer to the Document.</p>
 <h2 id="custom-properties-value-priorities-when-copying-to-a-document">Custom properties value priorities (when copying to a document)</h2>
 <p>The priority for automatic copying of custom properties to a document is determined according to the following priorities (from the highest to the lowest priority):</p>
-<p><strong>Note:</strong> The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities</p>
-<p>\1. Inherited values from the parent document. (Priority 80)</p>
-<p>\2. The values set in the panel &quot;Copy customer properties&quot; (valid only for Sale Orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)</p>
-<p>\3. Values from custom properties with the same hereditary root in the definition of the „main contractor” of the document. In general cases, this is the party loaded in the field &quot;To Party&quot; (an exception are Purchase Invoices, where the Supplier is considered as a &quot;main contractor&quot; ). (Priority 50)</p>
-<p>\4. The default values specified in the document type. (Priority 20)</p>
-<p>\5. If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)</p>
-<p><strong>Note:</strong> Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (Enterprise Company, Customer, Parent document etc.)</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities</p>
+</div>
+<ol>
+<li><p>Inherited values from the parent document. (Priority 80)</p>
+</li>
+<li><p>The values set in the panel &quot;Copy customer properties&quot; (valid only for Sale Orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)</p>
+</li>
+<li><p>Values from custom properties with the same hereditary root in the definition of the „main contractor” of the document. In general cases, this is the party loaded in the field &quot;To Party&quot; (an exception are Purchase Invoices, where the Supplier is considered as a &quot;main contractor&quot;). (Priority 50)</p>
+</li>
+<li><p>The default values specified in the document type. (Priority 20)</p>
+</li>
+<li><p>If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (Enterprise Company, Customer, Parent document etc.)</p>
+</div>
 </article>
           </div>
           

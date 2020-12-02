@@ -1,6 +1,5 @@
 # System Business Rules
 
-
 ## What is System Business Rule?
 
 The System Business Rules specify a specific action that the system must take to verify and / or modify data that is entered into the database.
@@ -10,7 +9,6 @@ The System Business Rules specify a specific action that the system must take to
 - **rules that validate the data that has been entered** - e.g. if a particular field has a value, if the value is valid, if the value interfere with the values the other fields, settings or business logics.
 - **rules that modify something** - e.g. sets a value in a particular field, triggers an event for another entity, and oth.
 
-
 ## Documentation
 
 Each System Business Rule which code is with the format 'R' + 'digit number', e.g. R27179, has a documentation topic.
@@ -18,7 +16,6 @@ Each System Business Rule which code is with the format 'R' + 'digit number', e.
 The topic is available in the Business Rules section of the Model Documentation for the particular Entity e.g. Sales Orders's [Business Rules](https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#business-rules).
 
 Every topic includes a standardized table which contains detailed information about the rule. The standardized table allows us to organize data in a structured way and helps the reader to quickly navigate through the info.
-
 
 ## The Table Columns and Content Explained
 
@@ -38,5 +35,3 @@ Every topic includes a standardized table which contains detailed information ab
 | Sort Messages By Attribute | Тhe attribute by whose value the message apparance is ordered - if the message is repeated more than once. <br/>If we are editing a document, for example, and the message have to be thrown for a couple of its lines, then it will probably be far easier for the user to follow them if they are sorted by the "Line Number" of the document lines. |
 | Version | A list with all versions in which the Business Rule has been somehow changed. Usually contains two types of records: <br/>- 'Introduced: 2xxx.x' - the version since which the Business Rule type is available;<br/>- 'Updated: 2xxx.x' - the version in which the Business Rule has been changed plus a short description of the changes. There could be non or multiple records of this type. |
 | Revocable | Shows whether the rule can be revoked for a particular database or not. In order to be revoked - the rule's code has to be specified in the list of the registry key 'RevokedBusinessRules'. (for more information, see key number 41 in the todo:(Config Options Reference topic)) |
-
-
