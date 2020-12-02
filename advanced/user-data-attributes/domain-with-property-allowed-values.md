@@ -8,7 +8,8 @@ Domain is the range of the allowed values of the particular Custom Property. It 
 
    
 
-   **Note:** This field should have a value ONLY if "Limit To Allowed Values" has a check mark and "Allowed Values Property" does not have a value.
+>[!Note]
+>This field should have a value ONLY if "Limit To Allowed Values" has a check mark and "Allowed Values Property" does not have a value.
 
 3. If the field "Allowed Values Property" has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.
 
