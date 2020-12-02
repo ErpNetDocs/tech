@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "5dlP+4Kih8psmF0/nxtFfA=="
+          "hash": "Md68WfmAYpgs4IVbUef6jA=="
         }
       },
       "is_incremental": false,
@@ -354,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "uLqEeY9a0GhppwQuzp9t+g=="
+          "hash": "DD+xF7gaXET4qEa0uivNPw=="
         }
       },
       "is_incremental": false,
@@ -402,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "dx0kg0YrU4pBqnaTdq4DGQ=="
+          "hash": "eK1zQUQlVsCNCbbw0XjIUw=="
         }
       },
       "is_incremental": false,
@@ -1591,35 +1591,41 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "reference/overview.md",
+      "source_relative_path": "reference/index.md",
       "output": {
         ".html": {
-          "relative_path": "reference/overview.html",
-          "hash": "05pPLbnCKv4tZGzH0Rrs6A=="
+          "relative_path": "reference/index.html",
+          "hash": "0m6x84FISPMSboJAJL7iEg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "reference/toc.yml",
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "cr660h+SyMQVuwUxIQxeKg=="
+          "hash": "eoZ49Z/eGK7DF1406Qb/mQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "oUp58pAZlAgvnR5RkFOvAw=="
+          "hash": "4op9NtsLHz+2CCPuxnTScA=="
         }
       },
       "is_incremental": false,
