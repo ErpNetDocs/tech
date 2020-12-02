@@ -17,7 +17,8 @@ Domain is the range of the allowed values of the particular Custom Property. It 
 
    
 
-   **Note:** This field should have a value ONLY if "Limit To Allowed Values" has a check mark and "Allowed Values Entity Name" does NOT have a value.
+>[!Note]
+>This field should have a value ONLY if "Limit To Allowed Values" has a check mark and "Allowed Values Entity Name" does NOT have a value.
 
 4. (Default, Lowest Priority) The domain is the range of the "Property Allowed Values" listed in the Gen_Property_Allowed_Values sub-table.
 
@@ -145,19 +146,20 @@ The priority for automatic copying of custom properties to a document is determi
 
 
 
-[!Note 
+>[!Note]
 >The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities
 
-\1. Inherited values from the parent document. (Priority 80)
+1. Inherited values from the parent document. (Priority 80)
 
-\2. The values set in the panel "Copy customer properties" (valid only for Sale Orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)
+1. The values set in the panel "Copy customer properties" (valid only for Sale Orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)
 
-\3. Values from custom properties with the same hereditary root in the definition of the „main contractor” of the document. In general cases, this is the party loaded in the field "To Party" (an exception are Purchase Invoices, where the Supplier is considered as a "main contractor" ). (Priority 50)
+1. Values from custom properties with the same hereditary root in the definition of the „main contractor” of the document. In general cases, this is the party loaded in the field "To Party" (an exception are Purchase Invoices, where the Supplier is considered as a "main contractor"). (Priority 50)
 
-\4. The default values specified in the document type. (Priority 20)
+1. The default values specified in the document type. (Priority 20)
 
-\5. If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)
+1. If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)
 
 
 
-**Note:** Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (Enterprise Company, Customer, Parent document etc.)
+>[!Note]
+>Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (Enterprise Company, Customer, Parent document etc.)
