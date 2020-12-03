@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "7tLBv2TfZFbBuiX+6YG6Og=="
+          "hash": "fu6TTmRw/w3qMFnyl7ojiQ=="
         }
       },
       "is_incremental": false,
@@ -354,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "pepUnEkefXT0fjT8G0snOQ=="
+          "hash": "U4ayNuZPraSWLhxqefu29A=="
         }
       },
       "is_incremental": false,
@@ -402,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "Es3PNrilC0WseyX4htsiWQ=="
+          "hash": "dnS2UxcZiR/pO/PhP2yAnA=="
         }
       },
       "is_incremental": false,
@@ -1115,6 +1115,39 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "concepts/Party-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "concepts/Party-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "concepts/Party-basic-contracts.png",
+      "output": {
+        "resource": {
+          "relative_path": "concepts/Party-basic-contracts.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "concepts/Party-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "concepts/Party-basic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "concepts/documents.md",
       "output": {
@@ -1132,7 +1165,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/multi-company.html",
-          "hash": "saktfcrCNXF9jklhybs+GQ=="
+          "hash": "NtENxJGNAtI5dnbL94hg/A=="
         }
       },
       "is_incremental": false,
@@ -1163,12 +1196,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "concepts/parties-concepts.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/parties-concepts.html",
+          "hash": "0Bk/rAr0+xy0STvpRgvkyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "concepts/toc.yml",
       "output": {
         ".html": {
           "relative_path": "concepts/toc.html",
-          "hash": "dZTTVib+FanLNojsjZPGEg=="
+          "hash": "JgSNq0liYxgm4PS8kFfnag=="
         }
       },
       "is_incremental": false,
