@@ -25,4 +25,5 @@ In much the same way, the products and many other definitions can be defined to 
 
 
 > [!Note]
-> There is no way to define a data object to belong to several enterprise companies. It is either one or all. However, it is usually possible to restrict access, using the todo:[Security System (TBD)]().
+> There is no way to define a data object to belong to several enterprise companies. It is either one or all. However, it is usually possible to restrict access, using the todo:(Security System (TBD).
+
