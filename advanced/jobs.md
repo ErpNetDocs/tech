@@ -2,7 +2,7 @@
 
 
 
-Jobs is a new system which allows EnterpriseOne to automatically run processes such as document state changing or executing scheduled events, in non-busy hours without requiring any user interaction.
+Jobs is a new system which allows @@name to automatically run processes such as document state changing or executing scheduled events, in non-busy hours without requiring any user interaction.
 
 
 
@@ -51,7 +51,7 @@ Note that currently, only an "On Idle" auto-start schedule is available. General
  \- There is no manually stated jobs that are currently running
 
 
-Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called "System Jobs". The procedure can be monitored as every other long-running procedure in Procedures navigator in EnterpriseOne or the Procedures tab in the Server Manager.
+Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called "System Jobs". The procedure can be monitored as every other long-running procedure in Procedures navigator in @@name or the Procedures tab in the Server Manager.
 
 The jobs execution system will create a list of pending jobs and will start executing them sequentially. The list is made on the base of the active jobs defined in the databases. Each job runs a maximum of 5 minutes and then it is cancelled by the job runner. Every job can run up to 30 minutes which make a total of 6 times X 5 minutes runs, then it breaks the loop of pending jobs. If the job is interrupted before it's work is finished it must be started again during the 30 minutes period. If there are more records that have to be processed after the 30 minutes have elapsed, the job will start again on the next day. 
 
