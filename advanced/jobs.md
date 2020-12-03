@@ -69,9 +69,9 @@ Example:
 
 ***Message:\***
 
-*Succeeded: 259; Failed: 0
-LOG:
-[10:00:10] Total: 259
-[10:04:42] Succeeded: 259
+*Succeeded: 259; Failed: 0 <br>
+LOG: <br>
+[10:00:10] Total: 259 <br>
+[10:04:42] Succeeded: 259 <br>
 [10:04:42] Failed: 0*
 
