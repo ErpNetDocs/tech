@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "fu6TTmRw/w3qMFnyl7ojiQ=="
+          "hash": "lGSBYRyyZpppSxKWrhDP/Q=="
         }
       },
       "is_incremental": false,
@@ -354,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "U4ayNuZPraSWLhxqefu29A=="
+          "hash": "0kbiPwqPk/MflmdDh+MAWg=="
         }
       },
       "is_incremental": false,
@@ -402,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "dnS2UxcZiR/pO/PhP2yAnA=="
+          "hash": "nAT3ZfSn0m/GdbvkGrWeVw=="
         }
       },
       "is_incremental": false,
@@ -1067,12 +1067,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/documents/generation-procedures.md",
       "output": {
         ".html": {
           "relative_path": "advanced/documents/generation-procedures.html",
-          "hash": "sxs4lzvzN52QCpRya+kU0g=="
+          "hash": "IGbR3u+HZItb2ywRhL114Q=="
         }
       },
       "is_incremental": false,
@@ -1085,6 +1088,18 @@
         ".html": {
           "relative_path": "advanced/documents/index.html",
           "hash": "m0bIFwbLrJcGSFFCDrGiBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs.html",
+          "hash": "sJ972uCfJb1q1E6Qtlcqmw=="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1123,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "1+rNhFXGXEgNyD9g0VUCgA=="
+          "hash": "vNqC4v9+YTLVKJdnWYjThw=="
         }
       },
       "is_incremental": false,
@@ -1201,7 +1216,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/parties-concepts.html",
-          "hash": "0Bk/rAr0+xy0STvpRgvkyQ=="
+          "hash": "XY0+zyMmHIPN0fhaFCmvpQ=="
         }
       },
       "is_incremental": false,
@@ -1258,6 +1273,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/advanced/user-data-attributes/user-data-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/concepts/Party-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/concepts/Party-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/concepts/Party-basic-contracts.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/concepts/Party-basic-contracts.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/concepts/Party-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/concepts/Party-basic.png"
         }
       },
       "is_incremental": false,
