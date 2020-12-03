@@ -15,7 +15,7 @@ Examples of parties include:
 - Departments
 - etc...
 
-## Basic Party Types
+### Basic Party Types
 Parties do not exist by their own. They are always created as another object. Most parties are created as Person or Company. In object terms, it means that Person and Company inherit Party. The Party itself is called to be of type Person or Company.
 
 > [!Note]
@@ -25,7 +25,7 @@ This diagram shows the relationship between Party, Person and Company:
 
 ![Party Basic](Party-basic.png)
 
-## Party Attributes Inheritance
+### Party Attributes Inheritance
 
 The fact, that Person and Company inherit Party also means, that all attributes of Party are also attributes of Person and Company. <br>
 For example, a Party has an "Area" attribute. So, all Person and Company objects would also have an "Area" attribute. <br>
@@ -36,7 +36,7 @@ For example:
 
 Party has "Parent Party" and "Area" attributes, which are inherited by Company and Person. But persons "First Name" and "Last Name" are specific only to persons. Neither companies, nor generally parties have "First Name".
 
-## Relationships with Other Entity Types
+### Relationships with Other Entity Types
 
 Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier Contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual Customer Contract object would relate to either a Person or a Company. This is shown on the following diagram:
 
@@ -71,7 +71,7 @@ If we query with "Show me ALL customers", the result will be:
 
 - Customer (ABC)
 
-# Party Hierachy
+## Party Hierachy
 
 The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.
 
@@ -106,7 +106,7 @@ The flexible party hierarchy also allows structuring even different companies in
 
 
 
-# Party Relationships
+## Party Relationships
 
 Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:
 
