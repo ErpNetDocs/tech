@@ -22,6 +22,7 @@ Parties do not exist by their own. They are always created as another object. Mo
 > Parties cannot be directly created. They are always instantiated as some sub-type, like Person or Company.
 
 This diagram shows the relationship between Party, Person and Company:
+
 ![Party Basic](Party-basic.png)
 
 ## Party Attributes Inheritance
@@ -32,6 +33,45 @@ The opposite is not true. E.g. Person and Company objects have attributes, which
 For example:
 
 ![Party Attributes](Party-attributes.png)
+
+Party has "Parent Party" and "Area" attributes, which are inherited by Company and Person. But persons "First Name" and "Last Name" are specific only to persons. Neither companies, nor generally parties have "First Name".
+
+## Relationships with Other Entity Types
+
+Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier Contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual Customer Contract object would relate to either a Person or a Company. This is shown on the following diagram:
+
+![Party Basic Contracts](Party-basic-contracts.png)
+
+> [!Note]
+> Customer (Contract), Supplier (Contract) and Dealership (Contract) are actually called simply Customer, Supplier and Dealer in @@name.
+
+> [!Note]
+> The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact however, the current implementation of EnterpriseOne allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.
+
+To clarify the above diagrams, lets provide an example. Suppose we have:
+
+- A customer, which is a company, called "ABC"
+- A supplier, which is a person, named "John"
+
+This will be represented with the following objects:
+
+- Party (ABC)
+- Company (ABC), which inherits Party (ABC)
+- Customer (ABC), which points to Party (ABC)
+- Party (John)
+- Person (John), which inherits from Party (John)
+- Supplier (John), which points to Party (John)
+
+If we query the system with a query, that can be stated as "Show me ALL parties", the result will be:
+
+- Party (ABC)
+- Party (John)
+
+If we query with "Show me ALL customers", the result will be:
+
+- Customer (ABC)
+
+
 
 
 
