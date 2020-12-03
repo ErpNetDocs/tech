@@ -101,5 +101,6 @@ The flexible party hierarchy also allows structuring even different companies in
     - Accounting Department
   - Corporate Financials Department
 
-
+> [!Note]
+> Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
 
