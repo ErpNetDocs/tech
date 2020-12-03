@@ -104,3 +104,25 @@ The flexible party hierarchy also allows structuring even different companies in
 > [!Note]
 > Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
 
+
+
+# Party Relationships
+
+Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:
+
+- Peter works for Company A
+- Peter is a friend of George
+- Steven is married to Susan since 8/3/2011
+- John worked for Company B from 1/1/2010 till 3/5/2015
+
+The above information is represented in a table in the following way:
+
+| From Party | Relationship Type | To Party  | From Date | To Date  | Notes |
+| :--------- | :---------------- | :-------- | :-------- | :------- | :---- |
+| Peter      | works for         | Company A |           |          |       |
+| Peter      | is friend with    | George    |           |          |       |
+| Steven     | is husband of     | Susan     | 8/3/2011  |          |       |
+| John       | works for         | Company B | 1/1/2010  | 3/5/2015 |       |
+
+Obviously, From Date and To Date represent the dates when the relationship was established and terminated.
+
