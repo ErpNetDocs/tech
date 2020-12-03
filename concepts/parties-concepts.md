@@ -78,14 +78,28 @@ The basic party types are Person and Company, but there are some more party type
 For example, lets have Corporation A structured in the following way:
 
 - Corporation A
-         - Division 1
-             - Sales Department
-             - Marketing Department
-         - Division 2
-             - Sales Department
-             - Marketing Department
-         - Global Marketing Department
-         - Global Accounting Department
+  - Division 1
+    - Sales Department
+    - Marketing Department
+  - Division 2
+    - Sales Department
+    - Marketing Department
+  - Global Marketing Department
+  - Global Accounting Department
+
+The flexible party hierarchy also allows structuring even different companies in a corporation:
+
+- Corporation B
+  - Company A
+    - Consumer Electronics Division
+      - Sales Department
+    - Business Consulting Division
+      - Sales Department
+    - Accounting Department
+  - Company B
+    - Sales Department
+    - Accounting Department
+  - Corporate Financials Department
 
 
 
