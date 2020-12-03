@@ -12,5 +12,7 @@
   href: data-objects/toc.yml
 - name: Concepts
   items:
-  - name: Aggregates
-    href: aggregates.md
+- name: Aggregates
+  href: aggregates.md
+- name: Jobs
+  href: jobs.md
