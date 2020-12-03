@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Parties Concepts | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Parties Concepts | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="parties-concepts">Parties Concepts</h1>
+
+<h2 id="description">Description</h2>
+<p>Parties in ERP.net are one of the most widely used definition. Generally, a party is a participant in any business relations or transaction.</p>
+<p>Examples of parties include:</p>
+<ul>
+<li>Business customers</li>
+<li>Consumer customers</li>
+<li>Employees in our or external companies</li>
+<li>Contacts</li>
+<li>Dealers</li>
+<li>Company Locations</li>
+<li>Departments</li>
+<li>etc...</li>
+</ul>
+<h3 id="basic-party-types">Basic Party Types</h3>
+<p>Parties do not exist by their own. They are always created as another object. Most parties are created as Person or Company. In object terms, it means that Person and Company inherit Party. The Party itself is called to be of type Person or Company.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Parties cannot be directly created. They are always instantiated as some sub-type, like Person or Company.</p>
+</div>
+<p>This diagram shows the relationship between Party, Person and Company:</p>
+<p><img src="Party-basic.png" alt="Party Basic"></p>
+<h3 id="party-attributes-inheritance">Party Attributes Inheritance</h3>
+<p>The fact, that Person and Company inherit Party also means, that all attributes of Party are also attributes of Person and Company. <br>
+For example, a Party has an &quot;Area&quot; attribute. So, all Person and Company objects would also have an &quot;Area&quot; attribute. <br>
+The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
+For example:</p>
+<p><img src="Party-attributes.png" alt="Party Attributes"></p>
+<p>Party has &quot;Parent Party&quot; and &quot;Area&quot; attributes, which are inherited by Company and Person. But persons &quot;First Name&quot; and &quot;Last Name&quot; are specific only to persons. Neither companies, nor generally parties have &quot;First Name&quot;.</p>
+<h3 id="relationships-with-other-entity-types">Relationships with Other Entity Types</h3>
+<p>Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier Contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual Customer Contract object would relate to either a Person or a Company. This is shown on the following diagram:</p>
+<p><img src="Party-basic-contracts.png" alt="Party Basic Contracts"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Customer (Contract), Supplier (Contract) and Dealership (Contract) are actually called simply Customer, Supplier and Dealer in ERP.net.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact however, the current implementation of ERP.net allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.</p>
+</div>
+<p>To clarify the above diagrams, lets provide an example. Suppose we have:</p>
+<ul>
+<li>A customer, which is a company, called &quot;ABC&quot;</li>
+<li>A supplier, which is a person, named &quot;John&quot;</li>
+</ul>
+<p>This will be represented with the following objects:</p>
+<ul>
+<li>Party (ABC)</li>
+<li>Company (ABC), which inherits Party (ABC)</li>
+<li>Customer (ABC), which points to Party (ABC)</li>
+<li>Party (John)</li>
+<li>Person (John), which inherits from Party (John)</li>
+<li>Supplier (John), which points to Party (John)</li>
+</ul>
+<p>If we query the system with a query, that can be stated as &quot;Show me ALL parties&quot;, the result will be:</p>
+<ul>
+<li>Party (ABC)</li>
+<li>Party (John)</li>
+</ul>
+<p>If we query with &quot;Show me ALL customers&quot;, the result will be:</p>
+<ul>
+<li>Customer (ABC)</li>
+</ul>
+<h2 id="party-hierachy">Party Hierachy</h2>
+<p>The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.</p>
+<p>For example, lets have Corporation A structured in the following way:</p>
+<ul>
+<li>Corporation A
+<ul>
+<li>Division 1
+<ul>
+<li>Sales Department</li>
+<li>Marketing Department</li>
+</ul>
+</li>
+<li>Division 2
+<ul>
+<li>Sales Department</li>
+<li>Marketing Department</li>
+</ul>
+</li>
+<li>Global Marketing Department</li>
+<li>Global Accounting Department</li>
+</ul>
+</li>
+</ul>
+<p>The flexible party hierarchy also allows structuring even different companies in a corporation:</p>
+<ul>
+<li>Corporation B
+<ul>
+<li>Company A
+<ul>
+<li>Consumer Electronics Division
+<ul>
+<li>Sales Department</li>
+</ul>
+</li>
+<li>Business Consulting Division
+<ul>
+<li>Sales Department</li>
+</ul>
+</li>
+<li>Accounting Department</li>
+</ul>
+</li>
+<li>Company B
+<ul>
+<li>Sales Department</li>
+<li>Accounting Department</li>
+</ul>
+</li>
+<li>Corporate Financials Department</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.</p>
+</div>
+<h2 id="party-relationships">Party Relationships</h2>
+<p>Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:</p>
+<ul>
+<li>Peter works for Company A</li>
+<li>Peter is a friend of George</li>
+<li>Steven is married to Susan since 8/3/2011</li>
+<li>John worked for Company B from 1/1/2010 till 3/5/2015</li>
+</ul>
+<p>The above information is represented in a table in the following way:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">From Party</th>
+<th style="text-align: left;">Relationship Type</th>
+<th style="text-align: left;">To Party</th>
+<th style="text-align: left;">From Date</th>
+<th style="text-align: left;">To Date</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Peter</td>
+<td style="text-align: left;">works for</td>
+<td style="text-align: left;">Company A</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Peter</td>
+<td style="text-align: left;">is friend with</td>
+<td style="text-align: left;">George</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Steven</td>
+<td style="text-align: left;">is husband of</td>
+<td style="text-align: left;">Susan</td>
+<td style="text-align: left;">8/3/2011</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">works for</td>
+<td style="text-align: left;">Company B</td>
+<td style="text-align: left;">1/1/2010</td>
+<td style="text-align: left;">3/5/2015</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Obviously, From Date and To Date represent the dates when the relationship was established and terminated.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/parties-concepts.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

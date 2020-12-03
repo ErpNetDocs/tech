@@ -8,7 +8,7 @@
     <title>Multi-Company Support In ERP Instances | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Multi-Company Support In ERP Instances | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,6 +79,38 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="multi-company-support-in-erp-instances">Multi-Company Support In ERP Instances</h1>
 
+<p>ERP.net allows a single database to contain multiple companies. The different own companies, stored in the database are called &quot;Enterprise Companies&quot;.</p>
+<p>Many data objects (definitions, settings and documents) have an &quot;Enterprise Company&quot; attribute. When filled, it specifies that the data is specific to one of the enterprise companies. When the attribute is left blank, the data is valid for all enterprise companies.</p>
+<p>Some data objects have a required &quot;Enterprise Company&quot; attribute. In this case, the data is always specific to one enterprise company. For example, all documents have a required enterprise company attribute.</p>
+<p>For example, lets have the following <em>Accounts</em> in our chart of accounts:</p>
+<ul>
+<li>60201 - Expenses, general</li>
+<li>60209 - Other Expenses (specific to &quot;Company X&quot;, one of the companies, managed in the database)</li>
+</ul>
+<p>This can be defined as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Account</th>
+<th style="text-align: left;">Enterprise Company</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">60201</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">60209</td>
+<td style="text-align: left;">Company X</td>
+</tr>
+</tbody>
+</table>
+<p>In much the same way, the products and many other definitions can be defined to belong to only a single enterprise company or to all enterprise companies.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There is no way to define a data object to belong to several enterprise companies. It is either one or all. However, it is usually possible to restrict access, using the todo:(Security System (TBD)).</p>
+</div>
 </article>
           </div>
           
