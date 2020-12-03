@@ -24,11 +24,13 @@ The jobs can be auto-started on a schedule or they can be run manually.
 
 Each job can be manually started through the Run Manually button available in the Job’s definition and the Jobs Navigator. When the job is started the system will display a Process Screen which will show the progress of the procedure. The Process Screen will also contain a Cancel button. The job will be running until all of the records are processed or until it is manually stopped.
 
-**Note:** When cancelled manually the job may not stop immediately. The job will stop right after the currently processed record is finished.
+> [!Note]
+> When cancelled manually the job may not stop immediately. The job will stop right after the currently processed record is finished.
 
 
 
-**IMPORTANT:** In Version 2020.1 manual stating is not available.
+> [!Note] 
+> **IMPORTANT:** In Version 2020.1 manual stating is not available.
 
 ### Automatic Job Starting
 
