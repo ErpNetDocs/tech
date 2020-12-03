@@ -1,8 +1,7 @@
 # Generation Procedures Overview
 
-<br>
 
-![Generation Procedure](generation-procedure.svg)
+[!Generation Procedure](generation-procedure.svg)
 
 Generation Procedures are automated procedures, which generate @Documents from other documents.
 They are the basis for the @document-flow.
