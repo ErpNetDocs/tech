@@ -22,7 +22,7 @@ Parties do not exist by their own. They are always created as another object. Mo
 > Parties cannot be directly created. They are always instantiated as some sub-type, like Person or Company.
 
 This diagram shows the relationship between Party, Person and Company:
-![Party Basic](party-basic.png)
+![Party Basic](Party-basic.png)
 
 ## Party Attributes Inheritance
 
@@ -31,7 +31,7 @@ For example, a Party has an "Area" attribute. So, all Person and Company objects
 The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
 For example:
 
-![Party Attributes](party-attributes.png)
+![Party Attributes](Party-attributes.png)
 
 
 
