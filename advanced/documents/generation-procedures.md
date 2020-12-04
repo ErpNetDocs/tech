@@ -71,12 +71,12 @@ Sometimes, when creating a new child/sub document by a generation procedure, som
 
 **Then if we have the following documents:**
 
-            Parent.StoreOrderLine  - StandardQuantityBase = **10.00 PCS**, QuantityBase = **10.00 PCS**
-            Child.TransactionLine1  - StandardQuantityBase = **4.00 PCS**, QuantityBase = **4.00 PCS**
+            Parent.StoreOrderLine - StandardQuantityBase = **10.00 PCS**, QuantityBase = **10.00 PCS**
+            Child.TransactionLine1 - StandardQuantityBase = **4.00 PCS**, QuantityBase = **4.00 PCS**
 
 **And we are creating a new Child.TransactionLine2 by a generation procedure from the same parent, then the procedure will create:**
 
-            Child.TransactionLine2  - StandardQuantityBase = REMAINING(Quantity) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**,
+            Child.TransactionLine2 - StandardQuantityBase = REMAINING(Quantity) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**,
             QuantityBase = REMAINING(QuantityBase) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**
 
 
