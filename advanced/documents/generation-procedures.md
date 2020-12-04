@@ -64,18 +64,14 @@ Sometimes, when creating a new child/sub document by a generation procedure, som
 
        TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase), where:
 
-           - "TransactionLine.StandardQuantityBase" and "TransactionLine.QuantityBase" 
+  - "TransactionLine.StandardQuantityBase" and "TransactionLine.QuantityBase" 
            are the ordered by the parent line quantity values;
            
-           - "StoreOrderLine.REMAINING(StandardQuantityBase)" and "StoreOrderLine.REMAINING(QuantityBase)" 
-           are the ordered quantities which are not yet fullfilled by subdocumets i.e. 
-           (**TransactionLine.StandardQuantityBase - SUM(Child.StoreOrderLine.StandardQuantityBase) and
-           (TransactionLine.QuantityBase - SUM(Child.StoreOrderLine.QuantityBase).**
+  - "StoreOrderLine.REMAINING(StandardQuantityBase)" and "StoreOrderLine.REMAINING(QuantityBase)" are the ordered quantities which are not yet fullfilled by subdocumets i.e. (**TransactionLine.StandardQuantityBase - SUM(Child.StoreOrderLine.StandardQuantityBase) and (TransactionLine.QuantityBase - SUM(Child.StoreOrderLine.QuantityBase).**
 
 **Then if we have the following documents:**
 
             Parent.StoreOrderLine  - StandardQuantityBase = **10.00 PCS**, QuantityBase = **10.00 PCS**
-
             Child.TransactionLine1  - StandardQuantityBase = **4.00 PCS**, QuantityBase = **4.00 PCS**
 
 **And we are creating a new Child.TransactionLine2 by a generation procedure from the same parent, then the procedure will create:**
