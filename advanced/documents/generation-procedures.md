@@ -80,3 +80,15 @@ Child.TransactionLine1  - StandardQuantityBase = **4.00 PCS**, QuantityBase = **
 Child.TransactionLine2  - StandardQuantityBase = REMAINING(Quantity) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**, QuantityBase = REMAINING(QuantityBase) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**
 
 
+
+## New Record
+
+The last column of the metrics table is called "New Record". This column determines whether a new record must be created if the REMAINING() value of the metric is if different from zero. 
+
+Let's imagine that in the previous example:
+
+Child.TransactionLine1 - StandardQuantityBase = **10.00 PCS**, QuantityBase = **4.00 PCS**
+
+This may be the case if the product in the line is using todo:(Variable(Dynamic)MeasurmentRatios). Then the Child.QuantityBase may be bellow or to exceed the QuantityBase ordered by parent document (i.e. REMAINING(QuantityBase) will be different from zero). But we can see that in the table above for the metric MQuantityBase is set "New Record = NO". Which means that in this situation, when the generation procedure is executed - a new record "Child.TransactionLine2" for remaining **6.00 PCS** of QuantityBase **WON'T** be created.
+
+
