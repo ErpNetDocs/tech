@@ -75,3 +75,5 @@ LOG: <br>
 [10:04:42] Succeeded: 259 <br>
 [10:04:42] Failed: 0*
 
+The table columns and content are explained in [Template Description Jobs](template-description-jobs.md)
+
