@@ -116,24 +116,34 @@ this.MasterDocument = Parent.MasterDocument;
 
  //set optional attributes if not already set <br>
 if (this.EnterpriseCompany == null) <br>
-   this.EnterpriseCompany = Parent.EnterpriseCompany; <br>
+   this.EnterpriseCompany = Parent.EnterpriseCompany; 
+   
 if (this.EnterpriseCompanyLocation == null) <br>
-   this.EnterpriseCompanyLocation = Parent.EnterpriseCompanyLocation; <br>
+   this.EnterpriseCompanyLocation = Parent.EnterpriseCompanyLocation; 
+   
 if (this.CurrencyDirectory == null) <br>
-   this.CurrencyDirectory = Parent.CurrencyDirectory; <br>
+   this.CurrencyDirectory = Parent.CurrencyDirectory; 
+   
 if (this.DocumentNotes == null) <br>
-   this.DocumentNotes = Parent.DocumentNotes; <br>
+   this.DocumentNotes = Parent.DocumentNotes;
+   
 if (this.FromCompanyDivision == null) <br>
-   this.FromCompanyDivision = Parent.FromCompanyDivision; <br>
+   this.FromCompanyDivision = Parent.FromCompanyDivision; 
+   
 if (this.ToCompanyDivision == null) <br>
-   this.ToCompanyDivision = Parent.ToCompanyDivision; <br>
+   this.ToCompanyDivision = Parent.ToCompanyDivision; 
+   
 if (this.FromParty == null) <br>
-   this.FromParty = Parent.FromParty; <br>
+   this.FromParty = Parent.FromParty; 
+   
 if (this.ToParty == null) <br>
-   this.ToParty = Parent.ToParty; <br>
+   this.ToParty = Parent.ToParty; 
+   
 if (this.ReferenceDate == null) <br>
-   this.ReferenceDate = Parent.ReferenceDate; <br>
+   this.ReferenceDate = Parent.ReferenceDate;
+   
 if (this.ResponsiblePerson == null) <br>
-   this.ResponsiblePerson = Parent.ResponsiblePerson; <br>
+   this.ResponsiblePerson = Parent.ResponsiblePerson; 
+   
 if (this.ParentDocumentRelationshipType == null) <br>
    this.ParentDocumentRelationshipType = General.ParentDocumentRelationshipType.Subtask;
