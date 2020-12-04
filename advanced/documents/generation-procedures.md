@@ -62,7 +62,9 @@ Sometimes, when creating a new child/sub document by a generation procedure, som
 
        TransactionLine.StandardQuantityBase = StoreOrderLine.REMAINING(StandardQuantityBase) 
 
-       TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase), where:
+       TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase)
+       
+, where:
 
   - "TransactionLine.StandardQuantityBase" and "TransactionLine.QuantityBase" 
            are the ordered by the parent line quantity values;
