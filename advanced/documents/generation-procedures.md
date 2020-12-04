@@ -60,13 +60,13 @@ Sometimes, when creating a new child/sub document by a generation procedure, som
 
  **And we know that:**
 
-              TransactionLine.StandardQuantityBase = StoreOrderLine.REMAINING(StandardQuantityBase) 
+       TransactionLine.StandardQuantityBase = StoreOrderLine.REMAINING(StandardQuantityBase) 
 
-              TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase)
+       TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase), where:
 
-            , where:
-
-           - "TransactionLine.StandardQuantityBase" and "TransactionLine.QuantityBase" are the ordered by the parent line quantity values;
+           - "TransactionLine.StandardQuantityBase" and "TransactionLine.QuantityBase" 
+           are the ordered by the parent line quantity values;
+           
            - "StoreOrderLine.REMAINING(StandardQuantityBase)" and "StoreOrderLine.REMAINING(QuantityBase)" 
            are the ordered quantities which are not yet fullfilled by subdocumets i.e. 
            (**TransactionLine.StandardQuantityBase - SUM(Child.StoreOrderLine.StandardQuantityBase) and
