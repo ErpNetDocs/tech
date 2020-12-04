@@ -8,7 +8,7 @@
     <title>Document Fulfillment | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Document Fulfillment | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -98,8 +98,9 @@ Actually, more and more entity types come in triples - requisition, order and tr
 <h5>Note</h5>
 <p>Order documents naturally require fulfillment, which is recorded as execution documents.</p>
 </div>
-<h2 id="differences-between-the-parent-and-the-sub-document">Differences between the parent and the sub-document</h2>
-<p>Why there are differences between the parent and the sub-document?</p>
+<h2 id="discrepancies-in-quantities-and-amounts-between-the-parent-and-the-sub-documents">Discrepancies in quantities and amounts between the parent and the sub-document(s)</h2>
+<p>Quantities and amounts in a sub-document may not always represent an exact execution of the parent document.
+Why there are differences between the parent and the sub-document?</p>
 <p>Differences can arise for many reasons:</p>
 <ul>
 <li>Partial execution. For example, we shipped goods partially. In this case, the Shipment does not completely fulfill the Shipment Order.</li>
@@ -135,9 +136,18 @@ This is in contrast with artificial attributes, which are required by the inner 
 <li>Lot</li>
 <li>Serial Number</li>
 </ul>
-<p>Using this technique, we will determine that the shipment does not fulfill the customer request, because we shipped only 8 Oranges.
-The 2 Tangerines do not qualify as shipment of Oranges, because they are a different product.</p>
-<p>Even if the customer agrees to accept the Tangerines, we cannot represent this in the system.</p>
+<p>So, let’s review the previous example in the light of natural matching.</p>
+<p>Sales Order:</p>
+<ul>
+<li>Line 1: Oranges, 10 kg</li>
+</ul>
+<p>Shipment:</p>
+<ul>
+<li>Line 1: Oranges, 8 kg</li>
+<li>Line 2: Tangerines, 2 kg</li>
+</ul>
+<p>Natural matching will not qualify the shipment of Tangerines as execution of the sale of Oranges, because it is a different Product.
+Even if the customer agrees to accept the Tangerines, we cannot represent this in the system.</p>
 <p>Another example.
 The customer might order specific lot of the product, but they are ready to accept another lot:</p>
 <ul>
@@ -145,7 +155,8 @@ The customer might order specific lot of the product, but they are ready to acce
 <li>Shipment: 10 Oranges, lot 203</li>
 </ul>
 <p>This shipment satisfies the customer in the real world.
-However, using natural tracking, this will be considered a severe difference. The system will propose reversal of the shipment of lot 203 and shipment again of lot 202.
+However, using natural tracking, this will be considered a severe difference.
+The system will propose reversal of the shipment of lot 203 and shipment again of lot 202.
 Obviously, this is problematic and might confuse the users.</p>
 <p>Even more problematic, and more real-world example if two or more lines of the Sales Order contain oranges.
 In this case, natural matching simply does not work well.</p>
@@ -197,6 +208,16 @@ There are cases, where it might simply be impossible or very hard to match all s
 <p>The solution is to use Fulfillment table.
 The fulfillment table is like a notebook, in which we record how much of the quantity has already been created for the sub-document.
 This allows the system to create complicated sub-documents, without tracking the direct relationship of the created lines with the parent lines.</p>
+<p>In this example, after creating the Warehouse Order, the fulfillment table will contain:</p>
+<ul>
+<li>Warehouse Requisition XXX, Execution of Line 1: Qty:10</li>
+<li>Warehouse Requisition XXX, Execution of Line 2: Qty:2</li>
+</ul>
+<p>The fulfillment table simply contains the executed quantities, without any regard of how they are executed.
+It does not contain any reference to the sub-document(s).
+The system tracks the execution, without specifically deciphering the sub-document(s) contents.</p>
+<p>The fulfillment table algorithm allows the application of complex algorithms for execution.
+These algorithms do not need to represent the parent document lines 1:1 with the sub-document lines and hence have the freedom to employ complex optimization techniques.</p>
 </article>
           </div>
           

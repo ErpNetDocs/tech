@@ -23,8 +23,9 @@ Actually, more and more entity types come in triples - requisition, order and tr
 > [!note]
 > Order documents naturally require fulfillment, which is recorded as execution documents.
 
-## Differences between the parent and the sub-document
+## Discrepancies in quantities and amounts between the parent and the sub-document(s)
 
+Quantities and amounts in a sub-document may not always represent an exact execution of the parent document.
 Why there are differences between the parent and the sub-document?
 
 Differences can arise for many reasons:
@@ -67,9 +68,18 @@ In the example above, natural matching will compare the values of:
 * Lot
 * Serial Number
 
-Using this technique, we will determine that the shipment does not fulfill the customer request, because we shipped only 8 Oranges.
-The 2 Tangerines do not qualify as shipment of Oranges, because they are a different product.
+So, let’s review the previous example in the light of natural matching.
 
+Sales Order:
+
+* Line 1: Oranges, 10 kg
+
+Shipment:
+	
+* Line 1: Oranges, 8 kg
+* Line 2: Tangerines, 2 kg
+
+Natural matching will not qualify the shipment of Tangerines as execution of the sale of Oranges, because it is a different Product.
 Even if the customer agrees to accept the Tangerines, we cannot represent this in the system.
 
 Another example.
@@ -79,7 +89,8 @@ The customer might order specific lot of the product, but they are ready to acce
 * Shipment: 10 Oranges, lot 203
 
 This shipment satisfies the customer in the real world.
-However, using natural tracking, this will be considered a severe difference. The system will propose reversal of the shipment of lot 203 and shipment again of lot 202.
+However, using natural tracking, this will be considered a severe difference.
+The system will propose reversal of the shipment of lot 203 and shipment again of lot 202.
 Obviously, this is problematic and might confuse the users.
 
 Even more problematic, and more real-world example if two or more lines of the Sales Order contain oranges.
@@ -145,3 +156,15 @@ Obviously, we have a problem here establishing a direct relationship with the pa
 The solution is to use Fulfillment table.
 The fulfillment table is like a notebook, in which we record how much of the quantity has already been created for the sub-document.
 This allows the system to create complicated sub-documents, without tracking the direct relationship of the created lines with the parent lines.
+
+In this example, after creating the Warehouse Order, the fulfillment table will contain:
+
+* Warehouse Requisition XXX, Execution of Line 1: Qty:10
+* Warehouse Requisition XXX, Execution of Line 2: Qty:2
+
+The fulfillment table simply contains the executed quantities, without any regard of how they are executed.
+It does not contain any reference to the sub-document(s).
+The system tracks the execution, without specifically deciphering the sub-document(s) contents.
+
+The fulfillment table algorithm allows the application of complex algorithms for execution.
+These algorithms do not need to represent the parent document lines 1:1 with the sub-document lines and hence have the freedom to employ complex optimization techniques.

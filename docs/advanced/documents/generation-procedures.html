@@ -8,7 +8,7 @@
     <title>Generation Procedures Overview | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Generation Procedures Overview | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 1.0.0.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -116,10 +116,75 @@ The configuration is performed in the Document Type entity, in the Document Type
 <li><p>If the filed &quot;Allow Obsolete Generation&quot; IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could <strong>no longer be avoided</strong>.</p>
 </li>
 </ul>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+\3. <strong>DEAD</strong> - From [Date of Suspension] onwards - generation ceases to operate and enters the the lifetime stage <strong>DEAD.</strong> <strong>An error that can not be avoided will be thrown.</strong></p>
+<p>With the release of the new main version after the Date of Suspension, the obsolete generation procedure is <strong>to be deleted</strong> and it will no longer appear in the drop-down lists.</p>
+<h1 id="metrics">Metrics</h1>
+<p>Sometimes, when creating a new child/sub document by a generation procedure, some of the values of the child fields are not just copied from the parent document but need to be calculated. <strong>The Metrics</strong> are used when the calculation is based on the data about the unfulfilled quantities and amounts by the child documents that have already been created. It usually applies when the parent value has to be fully exhausted by its child values. <strong>Metrics</strong> bring the information which values have to be compared, how and whether the remaining result (if different from zero) has to lead to the creation of a new document or not. Each comparison is a separate metric.</p>
+<h2 id="example">Example:</h2>
+<p><strong>If we have the information about two metrics with the following description:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Fulfillment Name</th>
+<th style="text-align: left;">Metric Name</th>
+<th style="text-align: left;">Measurement Unit</th>
+<th style="text-align: left;">Parent Value</th>
+<th style="text-align: left;">Child Value</th>
+<th style="text-align: left;">New Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">StoreOrderLineToStoreTransactionLine</td>
+<td style="text-align: left;">MStandardQuantityBase</td>
+<td style="text-align: left;">StoreOrderLine.Product.BaseMeasurementUnit</td>
+<td style="text-align: left;">StoreOrderLine.StandardQuantityBase</td>
+<td style="text-align: left;">TransactionLine.StandardQuantityBase</td>
+<td style="text-align: left;">YES</td>
+</tr>
+<tr>
+<td style="text-align: left;">StoreOrderLineToStoreTransactionLine</td>
+<td style="text-align: left;">MQuantityBase</td>
+<td style="text-align: left;">StoreOrderLine.Product.BaseMeasurementUnit</td>
+<td style="text-align: left;">StoreOrderLine.QuantityBase</td>
+<td style="text-align: left;">TransactionLine.QuantityBase</td>
+<td style="text-align: left;">NO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>And we know that:</strong></p>
+<p>TransactionLine.StandardQuantityBase = StoreOrderLine.REMAINING(StandardQuantityBase) <br>
+TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase)</p>
+<p>, where:</p>
+<ul>
+<li><em>&quot;TransactionLine.StandardQuantityBase&quot;</em> and <em>&quot;TransactionLine.QuantityBase&quot;</em> are the ordered by the parent line quantity values;</li>
+<li><em>&quot;StoreOrderLine.REMAINING(StandardQuantityBase)&quot;</em> and <em>&quot;StoreOrderLine.REMAINING(QuantityBase)&quot;</em> are the ordered quantities which are not yet fullfilled by subdocumets i.e. (<strong>TransactionLine.StandardQuantityBase - SUM(Child.StoreOrderLine.StandardQuantityBase) and (TransactionLine.QuantityBase - SUM(Child.StoreOrderLine.QuantityBase).</strong></li>
+</ul>
+<p><strong>Then if we have the following documents:</strong></p>
+<p>Parent.StoreOrderLine  - StandardQuantityBase = <strong>10.00 PCS</strong>, QuantityBase = <strong>10.00 PCS</strong></p>
+<p>Child.TransactionLine1  - StandardQuantityBase = <strong>4.00 PCS</strong>, QuantityBase = <strong>4.00 PCS</strong></p>
+<p><strong>And we are creating a new Child.TransactionLine2 by a generation procedure from the same parent, then the procedure will create:</strong></p>
+<p>Child.TransactionLine2  - StandardQuantityBase = REMAINING(Quantity) = (10.00 PCS - 4.00 PCS) = <strong>6.00 PCS</strong>, QuantityBase = REMAINING(QuantityBase) = (10.00 PCS - 4.00 PCS) = <strong>6.00 PCS</strong></p>
 <ol start="3">
 <li><strong>DEAD</strong> - From [<strong>Date of Suspension</strong>] onwards - generation ceases to operate and enters the thelifetime stage <strong>DEAD.</strong> <br> <strong>An error that can not be avoided will be thrown.</strong></li>
 </ol>
 <p>With the release of the new main version after the Date of Suspension, the obsolete generation procedure is <strong>to be deleted</strong> and it will no longer appear in the drop-down lists.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>68fce4ddbd556f927b9e2dd81c646b12c3df6df7</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 </article>
           </div>
           
