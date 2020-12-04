@@ -47,7 +47,7 @@ With the release of the new main version after the Date of Suspension, the obsol
 
 Sometimes, when creating a new child/sub document by a generation procedure, some of the values of the child fields are not just copied from the parent document but need to be calculated. **The Metrics** are used when the calculation is based on the data about the unfulfilled quantities and amounts by the child documents that have already been created. It usually applies when the parent value has to be fully exhausted by its child values. **Metrics** bring the information which values have to be compared, how and whether the remaining result (if different from zero) has to lead to the creation of a new document or not. Each comparison is a separate metric.
 
-## Example:
+#### Example:
 
 
 
