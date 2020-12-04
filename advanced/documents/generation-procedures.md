@@ -112,9 +112,9 @@ sub.Parent = ParentDocument;
 
 this.MasterDocument = Parent.MasterDocument;
 
-- and at the end the following attributes are filled in like:
-
- //set optional attributes if not already set <br>
+- and at the end the following attributes are filled in like: <br>
+ //set optional attributes if not already set 
+ 
 if (this.EnterpriseCompany == null) <br>
    this.EnterpriseCompany = Parent.EnterpriseCompany; 
    
