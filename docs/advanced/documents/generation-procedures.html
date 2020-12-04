@@ -102,12 +102,12 @@ The configuration is performed in the Document Type entity, in the Document Type
 </li>
 </ul>
 <h2 id="details">Details</h2>
-<p>When creating a <strong>NEW</strong> generation procedure if it replaces a generation procedure that is currently in use, the old generation is <strong>marked as obsolete</strong> and it enters the lifetime stage <strong>AGEING</strong>. In those cases, the <strong>AGEING</strong> generation procedures, which later become <strong>OBSOLETE</strong> have to be replaced with the <strong>ACTIVE</strong> procedures that have been released, because they maintain the contemporary business logic, methods of computing and have a better and faster performance. The transition does not have to be made immediately after the release of the new version but it has to be performed before the generation procedure enters the stage <strong>DEAD</strong> i.e. before its <strong>Date of Suspension.</strong></p>
+<p>When creating a NEW generation procedure if it replaces a generation procedure that is currently in use, the old generation is <strong>marked as obsolete</strong> and it enters the lifetime stage AGEING. In those cases, the AGEING generation procedures, which later become OBSOLETE have to be replaced with the ACTIVE procedures that have been released, because they maintain the contemporary business logic, methods of computing and have a better and faster performance. The transition does not have to be made immediately after the release of the new version but it has to be performed before the generation procedure enters the stage DEAD i.e. before its <strong>Date of Suspension</strong>.</p>
 <p>For every Generation Procedure that is marked as an Obsolete is scheduled a <strong>Date of Suspension on</strong> which date the Generation Procedure will be discontinued and could no longer be used.** The date is added in the obsolete procedure's name e.g. &quot;To be deleted: 9.2021&quot;. As a result of this date, are defined three periods in which the software will inform users accordingly:</p>
 <ol>
-<li><p><strong>AGEING</strong> - From ([<strong>Date of Suspension</strong>] - 3 years) to (<strong>Date of Suspension</strong>] - 1 year) – a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages’ only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. The messages will stop popping up if for the particular line of the Document Type's Routes the filed &quot;Allow Obsolete Generation&quot; is check-marked.</p>
+<li><p>AGEING - From ([Date of Suspension] - 3 years) to (Date of Suspension] - 1 year) – a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages’ only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. The messages will stop popping up if for the particular line of the Document Type's Routes the filed &quot;Allow Obsolete Generation&quot; is check-marked.</p>
 </li>
-<li><p><strong>OBSOLETE</strong> - From ([<strong>Date of Suspension</strong>] - 1 year) to ([<strong>Date of Suspension</strong>])</p>
+<li><p>OBSOLETE - From ([Date of Suspension] - 1 year) to ([Date of Suspension])</p>
 </li>
 </ol>
 <ul>
@@ -117,124 +117,9 @@ The configuration is performed in the Document Type entity, in the Document Type
 </li>
 </ul>
 <ol start="3">
-<li><strong>DEAD</strong> - From [<strong>Date of Suspension</strong>] onwards - generation ceases to operate and enters the the lifetime stage <strong>DEAD.</strong> <br> <strong>An error that can not be avoided will be thrown.</strong></li>
+<li>DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the the lifetime stage DEAD. <br> <strong>An error that can not be avoided will be thrown.</strong></li>
 </ol>
 <p>With the release of the new main version after the Date of Suspension, the obsolete generation procedure is <strong>to be deleted</strong> and it will no longer appear in the drop-down lists.</p>
-<h1 id="metrics">Metrics</h1>
-<p>Sometimes, when creating a new child/sub document by a generation procedure, some of the values of the child fields are not just copied from the parent document but need to be calculated. <strong>The Metrics</strong> are used when the calculation is based on the data about the unfulfilled quantities and amounts by the child documents that have already been created. It usually applies when the parent value has to be fully exhausted by its child values. <strong>Metrics</strong> bring the information which values have to be compared, how and whether the remaining result (if different from zero) has to lead to the creation of a new document or not. Each comparison is a separate metric.</p>
-<h4 id="example">Example:</h4>
-<p><strong>If we have the information about two metrics with the following description:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Fulfillment Name</th>
-<th style="text-align: left;">Metric Name</th>
-<th style="text-align: left;">Measurement Unit</th>
-<th style="text-align: left;">Parent Value</th>
-<th style="text-align: left;">Child Value</th>
-<th style="text-align: left;">New Record</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">StoreOrderLineToStoreTransactionLine</td>
-<td style="text-align: left;">MStandardQuantityBase</td>
-<td style="text-align: left;">StoreOrderLine.Product.BaseMeasurementUnit</td>
-<td style="text-align: left;">StoreOrderLine.StandardQuantityBase</td>
-<td style="text-align: left;">TransactionLine.StandardQuantityBase</td>
-<td style="text-align: left;">YES</td>
-</tr>
-<tr>
-<td style="text-align: left;">StoreOrderLineToStoreTransactionLine</td>
-<td style="text-align: left;">MQuantityBase</td>
-<td style="text-align: left;">StoreOrderLine.Product.BaseMeasurementUnit</td>
-<td style="text-align: left;">StoreOrderLine.QuantityBase</td>
-<td style="text-align: left;">TransactionLine.QuantityBase</td>
-<td style="text-align: left;">NO</td>
-</tr>
-</tbody>
-</table>
-<p><strong>And we know that:</strong></p>
-<pre><code>   TransactionLine.StandardQuantityBase = StoreOrderLine.REMAINING(StandardQuantityBase) 
-
-   TransactionLine.QuantityBase = StoreOrderLine.REMAINING(QuantityBase)
-   
-</code></pre>
-<p>, where:</p>
-<ul>
-<li><p>&quot;TransactionLine.StandardQuantityBase&quot; and &quot;TransactionLine.QuantityBase&quot;
-are the ordered by the parent line quantity values;</p>
-</li>
-<li><p>&quot;StoreOrderLine.REMAINING(StandardQuantityBase)&quot; and &quot;StoreOrderLine.REMAINING(QuantityBase)&quot; are the ordered quantities which are not yet fullfilled by subdocumets i.e. (<strong>TransactionLine.StandardQuantityBase - SUM(Child.StoreOrderLine.StandardQuantityBase) and (TransactionLine.QuantityBase - SUM(Child.StoreOrderLine.QuantityBase).</strong></p>
-</li>
-</ul>
-<p><strong>Then if we have the following documents:</strong></p>
-<pre><code>        Parent.StoreOrderLine - StandardQuantityBase = **10.00 PCS**, QuantityBase = **10.00 PCS**
-        Child.TransactionLine1 - StandardQuantityBase = **4.00 PCS**, QuantityBase = **4.00 PCS**
-</code></pre>
-<p><strong>And we are creating a new Child.TransactionLine2 by a generation procedure from the same parent, then the procedure will create:</strong></p>
-<pre><code>        Child.TransactionLine2 - StandardQuantityBase = REMAINING(Quantity) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**,
-        QuantityBase = REMAINING(QuantityBase) = (10.00 PCS - 4.00 PCS) = **6.00 PCS**
-</code></pre>
-<h2 id="new-record">New Record</h2>
-<p>The last column of the metrics table is called &quot;New Record&quot;. This column determines whether a new record must be created if the REMAINING() value of the metric is if different from zero.</p>
-<p>Let's imagine that in the previous example:</p>
-<pre><code>        Child.TransactionLine1 - StandardQuantityBase = **10.00 PCS**, QuantityBase = **4.00 PCS**
-</code></pre>
-<p>This may be the case if the product in the line is using todo:(Variable(Dynamic)MeasurmentRatios). Then the Child.QuantityBase may be bellow or to exceed the QuantityBase ordered by parent document (i.e. REMAINING(QuantityBase) will be different from zero). But we can see that in the table above for the metric MQuantityBase is set &quot;New Record = NO&quot;. Which means that in this situation, when the generation procedure is executed - a new record &quot;Child.TransactionLine2&quot; for remaining <strong>6.00 PCS</strong> of QuantityBase <strong>WON'T</strong> be created.</p>
-<h1 id="standard-document-attributes">Standard Document Attributes</h1>
-<p>The current article describes standard attributes from the Documents table when a document is created through generation procedure. When the described attributes are not mentioned in a generation procedure, they are filled as follows (* the sub-document is referred as &quot;<em>sub</em>&quot;):</p>
-<ul>
-<li><p>at first, the document route sets the following:</p>
-<pre><code>   sub.DocumentType = SubDocumentsType; 
-   sub.EnterpriseCompany = SubDocumentsEnterpriseCompany; 
-   sub.EnterpriseCompanyLocation = SubDocumentsEnterpriseCompanyLocation;
-   sub.ReadOnly = SubDocumentsReadOnly; 
-   sub.ParentDocumentRelationshipType = RelationshipType; 
-   sub.Parent = ParentDocument;
-</code></pre>
-</li>
-<li><p>and then, setting the value in the sub.ParentDocument attribute rises the event of filling in the MasterDocument. This is processed as follows (not the sub-document is current document, so we refer it as &quot;<em>this</em>&quot; and the parent document is &quot;<em>Parent</em>&quot;):</p>
-<pre><code>     this.MasterDocument = Parent.MasterDocument;
-</code></pre>
-</li>
-<li><p>and at the end the following attributes are filled in like: <br>
-//set optional attributes if not already set</p>
-<pre><code>     if (this.EnterpriseCompany == null) 
-       this.EnterpriseCompany = Parent.EnterpriseCompany; 
-
-     if (this.EnterpriseCompanyLocation == null) 
-       this.EnterpriseCompanyLocation = Parent.EnterpriseCompanyLocation; 
-
-     if (this.CurrencyDirectory == null) 
-       this.CurrencyDirectory = Parent.CurrencyDirectory; 
-
-     if (this.DocumentNotes == null) 
-       this.DocumentNotes = Parent.DocumentNotes;
-
-     if (this.FromCompanyDivision == null) 
-       this.FromCompanyDivision = Parent.FromCompanyDivision; 
-
-     if (this.ToCompanyDivision == null) 
-       this.ToCompanyDivision = Parent.ToCompanyDivision; 
-
-     if (this.FromParty == null) 
-       this.FromParty = Parent.FromParty; 
-
-     if (this.ToParty == null) 
-       this.ToParty = Parent.ToParty; 
-
-     if (this.ReferenceDate == null) 
-       this.ReferenceDate = Parent.ReferenceDate;
-
-     if (this.ResponsiblePerson == null) 
-       this.ResponsiblePerson = Parent.ResponsiblePerson; 
-
-     if (this.ParentDocumentRelationshipType == null)
-       this.ParentDocumentRelationshipType = General.ParentDocumentRelationshipType.Subtask;
-</code></pre>
-</li>
-</ul>
 </article>
           </div>
           
