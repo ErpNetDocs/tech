@@ -101,11 +101,11 @@ The current article describes standard attributes from the Documents table when 
 
 - at first, the document route sets the following:
 
-sub.DocumentType = SubDocumentsType;
-sub.EnterpriseCompany = SubDocumentsEnterpriseCompany;
-sub.EnterpriseCompanyLocation = SubDocumentsEnterpriseCompanyLocation;
-sub.ReadOnly = SubDocumentsReadOnly;
-sub.ParentDocumentRelationshipType = RelationshipType;
+sub.DocumentType = SubDocumentsType; <br>
+sub.EnterpriseCompany = SubDocumentsEnterpriseCompany; <br>
+sub.EnterpriseCompanyLocation = SubDocumentsEnterpriseCompanyLocation; <br>
+sub.ReadOnly = SubDocumentsReadOnly; <br>
+sub.ParentDocumentRelationshipType = RelationshipType; <br>
 sub.Parent = ParentDocument;
 
 - and then, setting the value in the sub.ParentDocument attribute rises the event of filling in the MasterDocument. This is processed as follows (not the sub-document is current document, so we refer it as "*this*" and the parent document is "*Parent*"):
@@ -114,26 +114,26 @@ this.MasterDocument = Parent.MasterDocument;
 
 - and at the end the following attributes are filled in like:
 
- //set optional attributes if not already set
-if (this.EnterpriseCompany == null)
-  this.EnterpriseCompany = Parent.EnterpriseCompany;
-if (this.EnterpriseCompanyLocation == null)
-  this.EnterpriseCompanyLocation = Parent.EnterpriseCompanyLocation;
-if (this.CurrencyDirectory == null)
-  this.CurrencyDirectory = Parent.CurrencyDirectory;
-if (this.DocumentNotes == null)
-  this.DocumentNotes = Parent.DocumentNotes;
-if (this.FromCompanyDivision == null)
-  this.FromCompanyDivision = Parent.FromCompanyDivision;
-if (this.ToCompanyDivision == null)
-  this.ToCompanyDivision = Parent.ToCompanyDivision;
-if (this.FromParty == null)
-  this.FromParty = Parent.FromParty;
-if (this.ToParty == null)
-  this.ToParty = Parent.ToParty;
-if (this.ReferenceDate == null)
-  this.ReferenceDate = Parent.ReferenceDate;
-if (this.ResponsiblePerson == null)
-  this.ResponsiblePerson = Parent.ResponsiblePerson;
-if (this.ParentDocumentRelationshipType == null)
+ //set optional attributes if not already set <br>
+if (this.EnterpriseCompany == null) <br>
+  this.EnterpriseCompany = Parent.EnterpriseCompany; <br>
+if (this.EnterpriseCompanyLocation == null) <br>
+  this.EnterpriseCompanyLocation = Parent.EnterpriseCompanyLocation; <br>
+if (this.CurrencyDirectory == null) <br>
+  this.CurrencyDirectory = Parent.CurrencyDirectory; <br>
+if (this.DocumentNotes == null) <br>
+  this.DocumentNotes = Parent.DocumentNotes; <br>
+if (this.FromCompanyDivision == null) <br>
+  this.FromCompanyDivision = Parent.FromCompanyDivision; <br>
+if (this.ToCompanyDivision == null) <br>
+  this.ToCompanyDivision = Parent.ToCompanyDivision; <br>
+if (this.FromParty == null) <br>
+  this.FromParty = Parent.FromParty; <br>
+if (this.ToParty == null) <br>
+  this.ToParty = Parent.ToParty; <br>
+if (this.ReferenceDate == null) <br>
+  this.ReferenceDate = Parent.ReferenceDate; <br>
+if (this.ResponsiblePerson == null) <br>
+  this.ResponsiblePerson = Parent.ResponsiblePerson; <br>
+if (this.ParentDocumentRelationshipType == null) <br>
   this.ParentDocumentRelationshipType = General.ParentDocumentRelationshipType.Subtask;
