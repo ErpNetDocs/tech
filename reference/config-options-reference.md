@@ -9,8 +9,8 @@ The current article contains a list of configuration keys and their values:
 - 2.The user sets it manually.
 
 2. Key - **CheckForNonVoidedReferencingDocumentsDisabled**
-- 1.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- 1. Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- 2. The user sets it manually.
 
 3. Key - **CheckForOverexecutionDisabled**
 - 1.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
