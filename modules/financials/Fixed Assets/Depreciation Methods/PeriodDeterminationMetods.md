@@ -1,0 +1,2 @@
+# Period Determination Methods
+
