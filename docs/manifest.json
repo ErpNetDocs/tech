@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "iNLJ4oMnb+GKqWIy4NRbbg=="
+          "hash": "lGSBYRyyZpppSxKWrhDP/Q=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "axnzW+XrcVZOmnWkkuZklg=="
+          "hash": "2M4Ktu6584fwa167DvvE7w=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "dBpsXq/scAdIzyiG+GIXUg=="
+          "hash": "KDVXjqV3FyGcZzs3o7IEsw=="
         }
       },
       "is_incremental": false,
@@ -953,6 +953,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/concepts/master-detail-attributes.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/concepts/master-detail-attributes.html",
+          "hash": "Sh04efbFud1NmP77kP5+Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/concepts/object-relational-mapping.md",
       "output": {
         ".html": {
@@ -1117,7 +1129,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/overview.html",
-          "hash": "q3QX/zizTQiYSTd+Lfk+pw=="
+          "hash": "5dYHTh34pr+HbJPky4qprw=="
         }
       },
       "is_incremental": false,
@@ -1129,7 +1141,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "IACkkw2PH/t9yvVC/nphaA=="
+          "hash": "QQkTBNMKnqw8Y+Go0CWp6Q=="
         }
       },
       "is_incremental": false,
@@ -1776,12 +1788,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "reference/module-codes.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/module-codes.html",
+          "hash": "rbjwJdtdahmLT0/yLa3RFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "reference/toc.yml",
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "3ZTvQY5jzIhNeMWIy7vBuw=="
+          "hash": "wvyDiMY00BZ7EsKmpyC45w=="
         }
       },
       "is_incremental": false,
