@@ -20,7 +20,6 @@ The standard .Net format specifiers are supported. The list below contains the m
 
  - 'P', 'p' - abbreviation of Percent. Multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. The decimal symbol separator depends on the local regional settings. Returns
            0,488869 (P) → 48,89%
-
            0,488869 (P3) → 48,887%
 
 #### Date and Time Format Strings
