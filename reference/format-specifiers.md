@@ -68,7 +68,8 @@ Standard date and time format specifiers can be used alone (standard date and ti
 - 2019-05-10 15:18:39.013 ('dd\/MM\/yyyy hh:mm')→ 10/05/2019 03:18
 - 2019-05-10 15:18:39.013 (dd-MM-yyyy hh:mm)→ 10-05-2019 03:18
 - 2019-05-10 15:18:39.013 ('dd MM yyyy hh:mm 'h'')→ 10 05 2019 03:18 h
-Custom Format Specifiers
+
+## Custom Format Specifiers
 There are also custom format specifiers which are created specially for EnterpriseOne. They are different for the different data types and are described below.
 
 ## Multilanguge String
