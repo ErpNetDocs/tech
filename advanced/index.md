@@ -15,4 +15,4 @@ It is intended primarily for advanced ERP implementation consultants.
 
 - Master / Detail Attributes
 - Object / Relational Mapping
-- [Aggregates](aggregates.md)
+- [Aggregates](concepts/aggregates.md)
