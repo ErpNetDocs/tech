@@ -13,6 +13,6 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Advanced Concepts
 
-- Master / Detail Attributes
+- [Master / Detail Attributes](concepts/master-detail-attributes.md)
 - [Object / Relational Mapping](concepts/object-relational-mapping.md)
 - [Aggregates](concepts/aggregates.md)
