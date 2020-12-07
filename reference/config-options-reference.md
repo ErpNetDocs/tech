@@ -120,7 +120,7 @@ The current article contains a list of configuration keys and their values:
 > *- Paste Rows*
 > *- Paste Rows Without On-Screen Validation*
 
-       
+​       
 
 26.  Key - RealTimeEventsDisabled 
    - a. When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
@@ -136,9 +136,9 @@ The current article contains a list of configuration keys and their values:
 
    - a. Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
          1. the password is at least 8 characters;
-         2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers;
-         3.  the password does not contain the username;
-         4. the password does not contain "123", "1234", "12345", "123456".
+         1. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers;
+         1. the password does not contain the username;
+         1. the password does not contain "123", "1234", "12345", "123456".
    - b. The user sets it manually
 
 29. Key 
