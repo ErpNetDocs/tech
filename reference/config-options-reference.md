@@ -314,7 +314,8 @@ The current article contains a list of configuration keys and their values:
     2. The user sets it manually.
     3. The key is introduced in version: - 2019.1 (in implementation)
 
-    ​     ***Note:\*** Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
+>[!Note]
+>Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
 42. Key 
 
@@ -340,25 +341,27 @@ The current article contains a list of configuration keys and their values:
     UseStartScreen
 
     1. Action: When the value of this key is:
-       \- "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen.
-       \- "2" - the starting form will be the Main Menu.
-       \- "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
-       ***Warning:*** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
+       - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen.
+       - "2" - the starting form will be the Main Menu.
+       - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
+> [!NOTE]
+> **Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
+
     2. The user sets it manually.
     3. The key is introduced in version: - 2020.1
 
-  \45. Key **UseStartScreenPolicy** 
+45. Key **UseStartScreenPolicy** 
 
-a. Action: When the value of this key is:
-\- "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
-\- "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
-\- "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
+- a. Action: When the value of this key is:
+   \- "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
+   \- "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
+   \- "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
 b. The user sets it manually.
 c. The key is introduced in version: - 2020.1
 
-\46. Key **UseDefaultMailClient**
+46. Key **UseDefaultMailClient**
 
-a. Action: When this key has a value for the particular User and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
+- a. Action: When this key has a value for the particular User and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
 
-b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
-c. The key is introduced in version: - 2019.1
+- b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
+- c. The key is introduced in version: - 2019.1
