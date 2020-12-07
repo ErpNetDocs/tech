@@ -213,14 +213,14 @@
 </li>
 </ul>
 <ol start="19">
-<li>Key - CheckInvoiceLinesQuantityUnitDisabled</li>
+<li>Key - <strong>CheckInvoiceLinesQuantityUnitDisabled</strong></li>
 </ol>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="20">
-<li>Key - AllowBaseAmountsFromThirdDocument</li>
+<li>Key - <strong>AllowBaseAmountsFromThirdDocument</strong></li>
 </ol>
 <ul>
 <li>a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
@@ -234,7 +234,7 @@
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="21">
-<li>Key -  CreateReconciliationsByTimestamp</li>
+<li>Key -  <strong>CreateReconciliationsByTimestamp</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the function &quot;Add the available products&quot; in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
@@ -244,28 +244,28 @@
 <li>c.The user sets it manually.</li>
 </ul>
 <ol start="22">
-<li>Key -  CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation</li>
+<li>Key -  <strong>CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation</strong></li>
 </ol>
 <ul>
 <li>a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is &quot;1&quot;, the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="23">
-<li>Key - ActiveLanguages</li>
+<li>Key - <strong>ActiveLanguages</strong></li>
 </ol>
 <ul>
 <li>a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).</li>
 <li>b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.</li>
 </ul>
 <ol start="24">
-<li>Key -  CheckForTransactionInvalidLotDisabled</li>
+<li>Key -  <strong>CheckForTransactionInvalidLotDisabled</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="25">
-<li>Key - VisualPasteDisabled - suspended</li>
+<li>Key - <strong>VisualPasteDisabled - suspended</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.</li>
@@ -278,21 +278,21 @@
 <em>- Paste Rows Without On-Screen Validation</em></p>
 </div>
 <ol start="26">
-<li>Key - RealTimeEventsDisabled</li>
+<li>Key - <strong>RealTimeEventsDisabled</strong></li>
 </ol>
 <ul>
 <li>a.When this key has value and this value is &quot;1&quot;, EnterpriseOne would not proceed connection with the server which sends real-time events.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="27">
-<li>Key - RealTimeEventsTimeoutSeconds</li>
+<li>Key - <strong>RealTimeEventsTimeoutSeconds</strong></li>
 </ol>
 <ul>
 <li>a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="28">
-<li>Key - Require strong passwords</li>
+<li>Key - <strong>Require strong passwords</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, strong password validation is performed. Strong password requirements are as follows:
@@ -306,49 +306,49 @@
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="29">
-<li>Key - DisableAccountKeyPropertyDotCheck</li>
+<li>Key - <strong>DisableAccountKeyPropertyDotCheck</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="30">
-<li>Key - AllowPlannedDocumentStateInClient</li>
+<li>Key - <strong>AllowPlannedDocumentStateInClient</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="31">
-<li>Key - DisableProductCopyPropertiesFromOtherProduct</li>
+<li>Key - <strong>DisableProductCopyPropertiesFromOtherProduct</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="32">
-<li>Key - PaymentTransactionFiscalPrintChangeToState</li>
+<li>Key - <strong>PaymentTransactionFiscalPrintChangeToState</strong></li>
 </ol>
 <ul>
 <li>a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="33">
-<li>Key - Crm/Sales/SalesOrders/ShowFillLotsInLines</li>
+<li>Key - <strong>Crm/Sales/SalesOrders/ShowFillLotsInLines</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the sales order function &quot;Fill lots in lines&quot; is activated.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="34">
-<li>Key - General/Contacts/LoadCalendarForLimitedTime</li>
+<li>Key - <strong>General/Contacts/LoadCalendarForLimitedTime</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="35">
-<li>Key - DisableDocumentRecalculationOnIdle</li>
+<li>Key - <strong>DisableDocumentRecalculationOnIdle</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the</li>
@@ -356,21 +356,21 @@
 <li>c.The user sets it manually.</li>
 </ul>
 <ol start="36">
-<li>Key - DisableParentDocumentReset</li>
+<li>Key - <strong>DisableParentDocumentReset</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, on document state change the parent document state is not reset.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="37">
-<li>Key - RevokedBusinessRules</li>
+<li>Key - <strong>RevokedBusinessRules</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including &quot;R&quot; (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="38">
-<li>Key - DisableQueryingForSaveOnClose</li>
+<li>Key - <strong>DisableQueryingForSaveOnClose</strong></li>
 </ol>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.</li>
@@ -386,7 +386,7 @@
 <ol start="40">
 <li><p>Key - <strong>ReservedLicenses</strong> (not implemented/ cancelled)</p>
 </li>
-<li><p>Key - EnableCreateGroupForUser</p>
+<li><p>Key - <strong>EnableCreateGroupForUser</strong></p>
 </li>
 </ol>
 <ul>
@@ -399,7 +399,7 @@
 <p>Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.</p>
 </div>
 <ol start="42">
-<li>Key - DocumentVersioningSystem</li>
+<li>Key - <strong>DocumentVersioningSystem</strong></li>
 </ol>
 <ul>
 <li>a.Action: When the value of this key is &quot;VH&quot; the system will use the &quot;old&quot; document versioning system. If the key's value is &quot;TC&quot; the system will not create records using the &quot;old&quot; document versioning system and will instead use the <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a>  system. The minimum level that is going to be tracked when the &quot;TC&quot; option is activated is &quot;Track Changes Level 3&quot;. If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a></li>
@@ -425,7 +425,7 @@
 <li>b.The key is introduced in version: - 2019.1</li>
 </ul>
 <ol start="44">
-<li>Key - UseStartScreen</li>
+<li>Key - <strong>UseStartScreen</strong></li>
 </ol>
 <ul>
 <li>a.Action: When the value of this key is:
