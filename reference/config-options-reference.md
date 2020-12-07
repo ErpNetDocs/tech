@@ -130,141 +130,99 @@ The current article contains a list of configuration keys and their values:
 
 28. Key - Require strong passwords
     - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-            - 1.the password is at least 8 characters;
-            - 2.the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
-            3.the password does not contain the username;
-            4.the password does not contain "123", "1234", "12345", "123456".
-         
+         1. the password is at least 8 characters;
+         2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
+         3. the password does not contain the username;
+         4. the password does not contain "123", "1234", "12345", "123456".     
     - b.The user sets it manually
 
-29. Key 
+29. Key - DisableAccountKeyPropertyDotCheck    
+    - a.Action: When this key has value and this value is "1", when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.
+    - b.The user sets it manually
 
-    DisableAccountKeyPropertyDotCheck
+30. Key - AllowPlannedDocumentStateInClient
+    - a.Action: When this key has value and this value is "1", the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.
+    - b.The user sets it manually
 
-    1. Action: When this key has value and this value is "1", when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.
-    2. The user sets it manually
+31. Key - DisableProductCopyPropertiesFromOtherProduct
+    - a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
+    - b.The user sets it manually
 
-30. Key 
+32. Key - PaymentTransactionFiscalPrintChangeToState
+    - a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
+    - b.The user sets it manually.
 
-    AllowPlannedDocumentStateInClient
+33. Key - Crm/Sales/SalesOrders/ShowFillLotsInLines  
+    - a.Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
+    - b.The user sets it manually.
 
-    1. Action: When this key has value and this value is "1", the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.
-    2. The user sets it manually
+34. Key - General/Contacts/LoadCalendarForLimitedTime    
+    - a.Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
+    - b.The user sets it manually.
 
-31. Key 
+35. Key - DisableDocumentRecalculationOnIdle
+    - a.Action: When this key has value and this value is "1", in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the
+    - b.data in the document form. The method referred by the current key is "Document.Recalculate" which performs different actions in the different entities.
+    - c.The user sets it manually.
 
-    DisableProductCopyPropertiesFromOtherProduct
+36. Key - DisableParentDocumentReset
+    - a.Action: When this key has value and this value is "1", on document state change the parent document state is not reset.
+    - b.The user sets it manually.
 
-    1. Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
-    2. The user sets it manually
+37. Key - RevokedBusinessRules   
+    - a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
+    - b.The user sets it manually.
 
-32. Key 
+38. Key - DisableQueryingForSaveOnClose    
+    - a.Action: When this key has value and this value is "1", on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.
+    - b.The user sets it manually.
 
-    PaymentTransactionFiscalPrintChangeToState
+39. Key - **UseLegacyLoadForLotsIssue**        
+    - a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
+    - b.The user sets it manually.
 
-    1. This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
-    2. The user sets it manually.
-
-33. Key 
-
-    Crm/Sales/SalesOrders/ShowFillLotsInLines
-
-    1. Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
-    2. The user sets it manually.
-
-34. Key 
-
-    General/Contacts/LoadCalendarForLimitedTime
-
-    1. Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
-    2. The user sets it manually.
-
-35. Key 
-
-    DisableDocumentRecalculationOnIdle
-
-    1. Action: When this key has value and this value is "1", in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the
-    2. data in the document form. The method referred by the current key is "Document.Recalculate" which performs different actions in the different entities.
-    3. The user sets it manually.
-
-36. Key 
-
-    DisableParentDocumentReset
-
-    1. Action: When this key has value and this value is "1", on document state change the parent document state is not reset.
-    2. The user sets it manually.
-
-37. Key 
-
-    RevokedBusinessRules
-
-    1. Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
-    2. The user sets it manually.
-
-38. Key 
-
-    DisableQueryingForSaveOnClose        
-
-    1. Action: When this key has value and this value is "1", on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.
-    2. The user sets it manually.
-
-39. Key **UseLegacyLoadForLotsIssue**        
-
-    1. Action: When this key has value and this value is "1", for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
-    2. The user sets it manually.
-
-40. Key **ReservedLicenses** (not implemented/ cancelled)
+40. Key - **ReservedLicenses** (not implemented/ cancelled)
     
 41. Key 
 
     EnableCreateGroupForUser
 
-    1. Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
-    2. The user sets it manually.
-    3. The key is introduced in version: - 2019.1 (in implementation)
+    - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
+    - b.The user sets it manually.
+    - c.The key is introduced in version: - 2019.1 (in implementation)
 
->[!Note]
->Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
+> [!Note]
+> Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
-42. Key 
-
-    DocumentVersioningSystem
-
-    1. Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. 
-       The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)
-        ***Note:*** Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..
-    2. The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
-       \- Version 2019.1 - the default value is "VH";
-       \- Version 2020.1 and later - the default value is "TC";
-
-    ​    c. The key is introduced in version: - 2019.1
+42. Key - DocumentVersioningSystem
+    - a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. 
+       The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) <br> **Note** Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..
+    - b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
+         1. Version 2019.1 - the default value is "VH";
+         2. Version 2020.1 and later - the default value is "TC";
+    - c.The key is introduced in version: - 2019.1
 
 43.  Key **Crm/Pos/PrintGroupedSalesLinesType**
         a. Action: When the value of this key is "ShortName" then items in the fiscal receipt are grouped by "ShortName" field in the product. When the value of this key is "ProductGroup" then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing then items in the fiscal receipt are not grouped.
         b. The key is introduced in version: - 2019.1
 
-44. Key
-
-     
-
-    UseStartScreen
-
-    1. Action: When the value of this key is:
-       - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen.
-       - "2" - the starting form will be the Main Menu.
-       - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
+44. Key - UseStartScreen
+        a. Action: When the value of this key is:
+        
+          1. "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. <br>
+                     - "2" - the starting form will be the Main Menu. <br>
+                     - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
+                     
 > [!NOTE]
 > **Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
+        b. The user sets it manually.
+        c. The key is introduced in version: - 2020.1
 
-    2. The user sets it manually.
-    3. The key is introduced in version: - 2020.1
-
-45. Key **UseStartScreenPolicy** 
-
-- a. Action: When the value of this key is:
-   \- "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
-   \- "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
-   \- "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
+45. Key - **UseStartScreenPolicy** 
+        a. Action: When the value of this key is:
+         1. "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
+          2. "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
+         3. "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
 b. The user sets it manually.
 c. The key is introduced in version: - 2020.1
 
