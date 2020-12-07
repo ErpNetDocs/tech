@@ -8,8 +8,8 @@ The current article contains a list of configuration keys and their values:
 
    AllowFirmPlannedParentForReleasedChild 
 
-   1. Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
-   2. The user sets it manually.
+- Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
+- The user sets it manually.
 
 2. Key
 
@@ -17,8 +17,8 @@ The current article contains a list of configuration keys and their values:
 
    CheckForNonVoidedReferencingDocumentsDisabled
 
-   1. Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
-   2. The user sets it manually.
+- Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- The user sets it manually.
 
 3. Key 
 
@@ -304,8 +304,7 @@ The current article contains a list of configuration keys and their values:
     2. The user sets it manually.
 
 40. Key **ReservedLicenses** (not implemented/ cancelled)
-      
-
+    
 41. Key 
 
     EnableCreateGroupForUser
