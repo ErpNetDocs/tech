@@ -7,7 +7,7 @@ It is targeted towards implementation consultants and power users.
 
 - [Concepts](~/concepts/overview.md) - general concepts, which apply to all modules.
 - [Functionality](~/modules/overview.md) - documentation of the business functions.
-- [Advanced](~/advanced/index.md) - documentation of advanced systems.
+- [Advanced](~/advanced/overview.md) - documentation of advanced systems.
 
 ## Other documentations
 - [Domain Model](https://erpnetdocs.github.io/model) - reference information about the entities, business rules, generations, etc.
