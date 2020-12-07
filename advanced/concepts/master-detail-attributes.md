@@ -38,14 +38,12 @@ In order to make sure that the main principle described above is followed, is cr
 
 
 
-2. When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not.
-
+2. When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not. <br>
 For this reason - after editing the value in the Line Store field and when saving or deleting lines - if it turns out that all lines contain the same Store value, then this value is automatically set in the document header field.
 
 
 
-3. When the different document lines have different values in the Store field, then the field in the document header must be empty (NULL).
-
+3. When the different document lines have different values in the Store field, then the field in the document header must be empty (NULL). <br>
 For this reason -  after editing the value in the Line Store field and when saving or creating lines, if it turns out that the line contains a different Store value, then the Store field in the document header is automatically set to an empty value (NULL).
 
 
