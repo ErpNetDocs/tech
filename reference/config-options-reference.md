@@ -77,8 +77,8 @@ The current article contains a list of configuration keys and their values:
     - a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
     - b.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
 
-       \- until Version 2019.1 - the default value is "0";
-       \- in Version 2019.1 and later - the default value is "1".
+       1. until Version 2019.1 - the default value is "0";
+       2. in Version 2019.1 and later - the default value is "1".
 
 19. Key - CheckInvoiceLinesQuantityUnitDisabled
     - a.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
@@ -86,21 +86,18 @@ The current article contains a list of configuration keys and their values:
 
 20. Key - AllowBaseAmountsFromThirdDocument   
     - a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
-       \- i. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
-       \\- Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
-       \- ii.When the current key has a value different from "1" or the key does not exist:
-       \\- Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
+       1. i. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
+       - Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
+       2.  ii.When the current key has a value different from "1" or the key does not exist:
+       - Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
     - b.The user sets it manually.
 
-21. Key 
-
-    CreateReconciliationsByTimestamp
-
-    1. Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
+21. Key -  CreateReconciliationsByTimestamp
+    - a. Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
        1. Stock movements in the store by the document date;
        2. Stock movements in the store by the date of the transaction timestamp.
-    2. Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
-    3. The user sets it manually.
+    - b. Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
+    - c. The user sets it manually.
 
 22. Key 
 
