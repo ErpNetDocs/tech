@@ -21,8 +21,13 @@ For the last month: Depreciation = Mont quotа - First month Depreciation
 Example:
 
 Asset with Usefull life = 6 months and Depreciable amount = 120
+
 Depreciation Plan = 14.01 - 14.07
+
 Mont quotа = 120 / 6 months = 20 
+
 First month Depreciation = 20 * ((31-14)/31) = 10.97
+
 For 2,3,4,5 and 6 th month Depreciation = 20
+
 Last month Depreciation = 20 - 10.97 = 9.03
