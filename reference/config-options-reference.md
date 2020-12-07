@@ -129,7 +129,7 @@ The current article contains a list of configuration keys and their values:
 
 28. Key - Require strong passwords
 - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-      - the password is at least 8 characters;
+    - the password is at least 8 characters;
       - the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
       - the password does not contain the username;
       - the password does not contain "123", "1234", "12345", "123456".     
