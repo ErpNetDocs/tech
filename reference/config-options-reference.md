@@ -129,10 +129,10 @@ The current article contains a list of configuration keys and their values:
 
 28. Key - Require strong passwords
 - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-           -  the password is at least 8 characters;
-           - the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
-           - the password does not contain the username;
-           - the password does not contain "123", "1234", "12345", "123456".     
+      - the password is at least 8 characters;
+      - the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
+      - the password does not contain the username;
+      - the password does not contain "123", "1234", "12345", "123456".     
 - b.The user sets it manually
 
 29. Key - DisableAccountKeyPropertyDotCheck    
@@ -153,7 +153,7 @@ The current article contains a list of configuration keys and their values:
 
 33. Key - Crm/Sales/SalesOrders/ShowFillLotsInLines  
 - a.Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
-    - b.The user sets it manually.
+- b.The user sets it manually.
 
 34. Key - General/Contacts/LoadCalendarForLimitedTime    
 - a.Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
@@ -191,13 +191,14 @@ The current article contains a list of configuration keys and their values:
 > Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
 42. Key - DocumentVersioningSystem
-- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. 
-       The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) 
+- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) 
+       
 >[!Note]
 > Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..
+
 - b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
-              - Version 2019.1 - the default value is "VH";
-              - Version 2020.1 and later - the default value is "TC";
+      - Version 2019.1 - the default value is "VH";
+      - Version 2020.1 and later - the default value is "TC";
 - c.The key is introduced in version: - 2019.1
 
 43.  Key - **Crm/Pos/PrintGroupedSalesLinesType**
@@ -206,18 +207,18 @@ The current article contains a list of configuration keys and their values:
            
 44. Key - UseStartScreen
 - a.Action: When the value of this key is:
-             - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
-             - "2" - the starting form will be the Main Menu. <br>
-             - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for
+      - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
+      - "2" - the starting form will be the Main Menu. <br>
+      - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for
 version 2020.1 is Main Menu.**Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
 - b.The user sets it manually.
 - c. The key is introduced in version: - 2020.1
 
 45. Key - **UseStartScreenPolicy** 
 - a.Action: When the value of this key is:
-         - "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
-         - "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
-         - "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
+      - "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
+      - "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
+      - "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
 - b.The user sets it manually.
 - c.The key is introduced in version: - 2020.1
 
