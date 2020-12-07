@@ -9,9 +9,13 @@
 Method of calculation
 
 First, the quota for each month is calculated:
+
 Month quotа = Depreciable amount / Int(Month(Depreciation End Date - Depreciation Start Date -1))
+
 For the first month: First month Depreciation =  Month quotа * ((Number of Days in First month - Depreciation Start Date)/Number of Days in First month)
+
 For every next month but last one: Depreciation =  Month quotа
+
 For the last month: Depreciation = Mont quotа - First month Depreciation
 
 Example:
