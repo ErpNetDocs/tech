@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Object Relational Mapping | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Object Relational Mapping | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="object-relational-mapping">Object Relational Mapping</h1>
+
+<h2 id="description">Description</h2>
+<p><em>Entities</em> and <em>Entity Types</em> are terms, frequently used throughout the documentation. <em>Entities</em> are information objects, which represent real-world objects. <em>Entity Type</em> is the collection of all objects of a given type.</p>
+<p>For example, the Customer XYZ is an entity. Customer ABC is another entity. All customers are of an entity type, called 'Customers'.</p>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li><strong>Entity</strong> - Single object of a given Entity Type. Also called entity object or simply object. It is similar to a data row in a table.</li>
+<li><strong>Entity Type</strong> - The set of all objects of a given type. This is similar to a table.</li>
+<li><strong>Attribute</strong> - a named value, containing information about the entity object. This is similar to a column in a table.</li>
+</ul>
+<h2 id="relationship-to-tables-and-rows">Relationship to tables and rows</h2>
+<p>This section contains more advanced information, not usually needed to operate the system. However, deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an ERP.net database, using database tools.</p>
+<p>Generally, <em>Entity Types</em>, <em>Entities</em> and <em>Attributes</em> are much like <em>Tables</em>, <em>Rows</em> and <em>Columns.</em> Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
+<p>In order to illustrate better the difference between objects and tables, lets include some real-world tables and objects:</p>
+<p>There is an entity type, called <em>'Party'.</em> It has a descendant (more specialized) entity type, called <em>'Company'.</em> So, <em>Party</em> is the more abstract and broad term, and <em>Company</em> is just one specialization. <em>Person</em> is another descendant of <em>Party.</em></p>
+<p>Lets illustrate this using pseudo-graphics:</p>
+<blockquote>
+<p>Party</p>
+<p>+---- Company</p>
+<p>+---- Person</p>
+</blockquote>
+<p>Each Party has some attributes, like &quot;Parent Party&quot; and &quot;Area&quot;. Company has &quot;VAT Number&quot; and &quot;Registration Type&quot; attributes. Each Person has &quot;First Name&quot; and &quot;Last Name&quot;.</p>
+<p>Now, if we look at the tables, they have the following schema:</p>
+<ul>
+<li>Parties
+<ul>
+<li>Party Id</li>
+<li>Parent Party Id</li>
+<li>Area Id</li>
+</ul>
+</li>
+<li>Companies
+<ul>
+<li>Party Id</li>
+<li>VAT Number</li>
+<li>Registration Type</li>
+</ul>
+</li>
+<li>Person
+<ul>
+<li>Party Id</li>
+<li>First Name</li>
+<li>Last Name</li>
+</ul>
+</li>
+</ul>
+<p>If we look at the objects, they will have the following attributes:</p>
+<ul>
+<li>Party
+<ul>
+<li>Parent Party</li>
+<li>Area</li>
+</ul>
+</li>
+<li>Company
+<ul>
+<li>Parent Party</li>
+<li>Area</li>
+<li>VAT Number</li>
+<li>Registration Type</li>
+</ul>
+</li>
+<li>Person
+<ul>
+<li>Parent Party</li>
+<li>Area</li>
+<li>First Name</li>
+<li>Last Name</li>
+</ul>
+</li>
+</ul>
+<p>So, if we use table data, in order to access all attributes of a company or a person, we have to relate (join) data from different tables, using unique Identifiers. The identifiers are the so-called &quot;surrogate keys&quot;, because they are existing only in the database and have no real-world counterpart. Using such keys and relating data between tables is ordinary in the relational world of the databases.</p>
+<p>However, internally, the systems use objects, because it is much simpler to process them. Objects already have all the necessary attributes related together and there is no need to use Identifiers or table relations.</p>
+<p>This is only an introduction to the topic of object-relational mapping. More deeper look would go too deep in the developer details of the subject.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/object-relational-mapping.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: aggregates
   name: Aggregates
-  href: advanced/aggregates.html
+  href: advanced/concepts/aggregates.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/add.html
