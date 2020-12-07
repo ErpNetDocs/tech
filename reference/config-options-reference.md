@@ -9,8 +9,8 @@ The current article contains a list of configuration keys and their values:
 - 2.The user sets it manually.
 
 2. Key - **CheckForNonVoidedReferencingDocumentsDisabled**
-- 1. Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
-- 2. The user sets it manually.
+- 1.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- 2.The user sets it manually.
 
 3. Key - **CheckForOverexecutionDisabled**
 - 1.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
@@ -74,8 +74,8 @@ The current article contains a list of configuration keys and their values:
 - 2.The user sets it manually.
 
 18. Key - **SimpleFilterLayout**
-- 1.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
-- 2.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
+- a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
+- b.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
     - until Version 2019.1 - the default value is "0";
     - in Version 2019.1 and later - the default value is "1"
 
