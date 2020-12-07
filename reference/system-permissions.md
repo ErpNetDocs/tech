@@ -4,7 +4,7 @@
 
 In @@name there are some predefined System Permissions which are created in order to serve certain business cases and allow giving or restricting access of particular functionalities in the system. Each System Permission has a specific Access Key Id that is the same in each database. The records for that which System Permission is granted to which User Groups is kept in the Group Access Keys table. 
 
-We are adding a list with the predefined System Permissions and their Access Key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](data-objects/track-changes.md) system. 
+We are adding a list with the predefined System Permissions and their Access Key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](advanced/data-objects/track-changes.md) system. 
 
 
 
