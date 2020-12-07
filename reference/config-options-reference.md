@@ -5,20 +5,20 @@
 The current article contains a list of configuration keys and their values:
 
 1. Key - AllowFirmPlannedParentForReleasedChild 
-- a.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
-- b.The user sets it manually.
+- 1.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
+- 2.The user sets it manually.
 
 2. Key - CheckForNonVoidedReferencingDocumentsDisabled
-    - Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
-    - The user sets it manually.
+- 1.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- 2.The user sets it manually.
 
 3. Key - CheckForOverexecutionDisabled
-    - a.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
-    - b.The user sets it manually.
+- 1.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
+- 2.The user sets it manually.
 
 4. Key - CheckForOverinvoicedQuantityInSalesOrderLinesDisabled
-    - a.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
-    - b.The user sets it manually.
+- 1.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
+- 2.The user sets it manually.
 
 5. Key - CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled
     - a.Action: When the key has value and this value is "1", verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed. 
