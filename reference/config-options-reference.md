@@ -5,73 +5,73 @@
 The current article contains a list of configuration keys and their values:
 
 1. Key - **AllowFirmPlannedParentForReleasedChild** 
-- 1.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
+- b.The user sets it manually.
 
 2. Key - **CheckForNonVoidedReferencingDocumentsDisabled**
-- 1.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- b.The user sets it manually.
 
 3. Key - **CheckForOverexecutionDisabled**
-- 1.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
+- b.The user sets it manually.
 
 4. Key - **CheckForOverinvoicedQuantityInSalesOrderLinesDisabled**
-- 1.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
+- b.The user sets it manually.
 
 5. Key - **CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled**
-- 1.Action: When the key has value and this value is "1", verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed. 
+- b.The user sets it manually.
 
 6. Key - **Default language**
-- 1.Action: Defines the default language of multi-language fields. For example: en - English, bg - Bulgarian.
-- 2.The user sets it manually.
+- a.Action: Defines the default language of multi-language fields. For example: en - English, bg - Bulgarian.
+- b.The user sets it manually.
 
 7. Key - **Default_Enterprise_Company_Location_Id/XXX**
-- 1.Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.
-- 2.Set automatically by the system of the user.
+- a.Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.
+- b.Set automatically by the system of the user.
 
 8. Key - **Documents/OnlySaveNewVersionsToHistory**
-- 1.*This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.*
-- 2.Action: When the key has value and this value is "1", the new method is applied. In all other cases, the old method is applied.
-- 3.The user sets it manually.
+- a.*This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.*
+- b.Action: When the key has value and this value is "1", the new method is applied. In all other cases, the old method is applied.
+- c.The user sets it manually.
 
 9. **Key - DontCheckForNegativeUnitPrice**
-- 1.Action: When the key has value and this value is "1", verification for negative values in the Unit Price field is not performed. In all other cases, the verification is performed. 
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", verification for negative values in the Unit Price field is not performed. In all other cases, the verification is performed. 
+- b.The user sets it manually.
 
 10. **Key - Inv/CheckForNegativeAvailability**
-- 1.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
-- 2.The user sets it manually.
+- a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
+- b.The user sets it manually.
 
 11. Key - **InvoiceFiscalPrintChangeToState**
-- 1.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
-- 2.The user sets it manually.
+- a.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
+- b.The user sets it manually.
 
 12. Key - **InvoiceFiscalPrintUseDistributedAmountsForUnitPrice**
-- 1.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
+- b.The user sets it manually.
 
 13. Key - **Last_Used_Enterprise_Company_Id**
-- 1.Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.
-- 2.Set automatically by the system of the user.
+- a.Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.
+- b.Set automatically by the system of the user.
 
 14. Key - **Last_Used_Enterprise_Company_Location_Id/XXX**
-- 1.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
-- 2.Set automatically by the system of the user.
+- a.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
+- b.Set automatically by the system of the user.
 
 15. Кеу - **SalesOrderFiscalPrintChangeToState**
-- 1.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
-- 2.The user sets it manually.
+- a.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
+- b.The user sets it manually.
 
 16. Key - **SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice**
-- 1.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the sales order line with VAT included and discounts in the row.
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the sales order line with VAT included and discounts in the row.
+- b.The user sets it manually.
 
 17. Key - **SalesOrdersOverduePaymentOrdersCheckDisabled**
-- 1.Action: When the key has value and this value is "1", on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.
+- b.The user sets it manually.
 
 18. Key - **SimpleFilterLayout**
 - a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
@@ -80,39 +80,39 @@ The current article contains a list of configuration keys and their values:
     - in Version 2019.1 and later - the default value is "1"
 
 19. Key - CheckInvoiceLinesQuantityUnitDisabled
-- 1.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
-- 2.The user sets it manually.
+- a.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
+- b.The user sets it manually.
 
 20. Key - AllowBaseAmountsFromThirdDocument   
-- 1.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
+- a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
     - When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
            - Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
-    - ii.When the current key has a value different from "1" or the key does not exist:
+    - When the current key has a value different from "1" or the key does not exist:
            - Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
-- 2.The user sets it manually.
+- b.The user sets it manually.
 
 21. Key -  CreateReconciliationsByTimestamp
-- 1.Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
-    - a.Stock movements in the store by the document date;
-    - b.Stock movements in the store by the date of the transaction timestamp.
-- 2.Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
-    - c.The user sets it manually.
+- a.Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
+    - Stock movements in the store by the document date;
+    - Stock movements in the store by the date of the transaction timestamp.
+- b.Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)
+- c.The user sets it manually.
 
 22. Key -  CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation
-    - a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
-    - b.The user sets it manually.
+- a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
+- b.The user sets it manually.
 
 23. Key - ActiveLanguages
-    - a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
-    - b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
+- a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
+- b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
 24. Key -  CheckForTransactionInvalidLotDisabled
-    - a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
+- b.The user sets it manually
 
 25. Key - VisualPasteDisabled - suspended
-    - a.Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
+- b.The user sets it manually
 
 > [!NOTE]
 > *This key is suspended in version 2019.1. In its place there are two new functions in forms and navigators:*
@@ -120,110 +120,107 @@ The current article contains a list of configuration keys and their values:
 > *- Paste Rows Without On-Screen Validation*
 
 26.  Key - RealTimeEventsDisabled 
-    - a.When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
-    - b.The user sets it manually
+- a.When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
+- b.The user sets it manually
 
 27. Key - RealTimeEventsTimeoutSeconds
-    - a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
-    - b.The user sets it manually
+- a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
+- b.The user sets it manually
 
 28. Key - Require strong passwords
-    - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-         1. the password is at least 8 characters;
-         2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
-         3. the password does not contain the username;
-         4. the password does not contain "123", "1234", "12345", "123456".     
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
+         -  the password is at least 8 characters;
+         - the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
+         - the password does not contain the username;
+         - the password does not contain "123", "1234", "12345", "123456".     
+- b.The user sets it manually
 
 29. Key - DisableAccountKeyPropertyDotCheck    
-    - a.Action: When this key has value and this value is "1", when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.
+- b.The user sets it manually
 
 30. Key - AllowPlannedDocumentStateInClient
-    - a.Action: When this key has value and this value is "1", the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.
+- b.The user sets it manually
 
 31. Key - DisableProductCopyPropertiesFromOtherProduct
-    - a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
-    - b.The user sets it manually
+- a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
+- b.The user sets it manually
 
 32. Key - PaymentTransactionFiscalPrintChangeToState
-    - a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
-    - b.The user sets it manually.
+- a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
+- b.The user sets it manually.
 
 33. Key - Crm/Sales/SalesOrders/ShowFillLotsInLines  
-    - a.Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
+- a.Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
     - b.The user sets it manually.
 
 34. Key - General/Contacts/LoadCalendarForLimitedTime    
-    - a.Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
-    - b.The user sets it manually.
+- a.Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
+- b.The user sets it manually.
 
 35. Key - DisableDocumentRecalculationOnIdle
-    - a.Action: When this key has value and this value is "1", in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the
-    - b.data in the document form. The method referred by the current key is "Document.Recalculate" which performs different actions in the different entities.
-    - c.The user sets it manually.
+- a.Action: When this key has value and this value is "1", in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the
+- b.data in the document form. The method referred by the current key is "Document.Recalculate" which performs different actions in the different entities.
+- c.The user sets it manually.
 
 36. Key - DisableParentDocumentReset
-    - a.Action: When this key has value and this value is "1", on document state change the parent document state is not reset.
-    - b.The user sets it manually.
+- a.Action: When this key has value and this value is "1", on document state change the parent document state is not reset.
+- b.The user sets it manually.
 
 37. Key - RevokedBusinessRules   
-    - a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
-    - b.The user sets it manually.
+- a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
+- b.The user sets it manually.
 
 38. Key - DisableQueryingForSaveOnClose    
-    - a.Action: When this key has value and this value is "1", on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.
-    - b.The user sets it manually.
+- a.Action: When this key has value and this value is "1", on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.
+- b.The user sets it manually.
 
 39. Key - **UseLegacyLoadForLotsIssue**        
-    - a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
-    - b.The user sets it manually.
+- a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
+- b.The user sets it manually.
 
 40. Key - **ReservedLicenses** (not implemented/ cancelled)
     
 41. Key - EnableCreateGroupForUser
-    - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
-    - b.The user sets it manually.
-    - c.The key is introduced in version: - 2019.1 (in implementation)
+- a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
+- b.The user sets it manually.
+- c.The key is introduced in version: - 2019.1 (in implementation)
 
 > [!Note]
 > Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
 42. Key - DocumentVersioningSystem
-    - a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. 
+- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. 
        The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) <br>    - **Note** Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..
-    - b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
-         1. Version 2019.1 - the default value is "VH";
-         2. Version 2020.1 and later - the default value is "TC";
-    - c.The key is introduced in version: - 2019.1
+- b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
+          - Version 2019.1 - the default value is "VH";
+          - Version 2020.1 and later - the default value is "TC";
+- c.The key is introduced in version: - 2019.1
 
 43.  Key  -  **Crm/Pos/PrintGroupedSalesLinesType**
-    - a.Action: When the value of this key is "ShortName" then items in the fiscal receipt are grouped by "ShortName" field in the product. When the value of this key is "ProductGroup" then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing then items in the fiscal receipt are not grouped.
-    - b.The key is introduced in version: - 2019.1
-     
+- a.Action: When the value of this key is "ShortName" then items in the fiscal receipt are grouped by "ShortName" field in the product. When the value of this key is "ProductGroup" then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing then items in the fiscal receipt are not grouped.
+- b.The key is introduced in version: - 2019.1
+           
 44. Key - UseStartScreen
-    - a.Action: When the value of this key is:
-         1.  
-44. Key - UseStartScreen
-    - a.Action: When the value of this key is:
-         1. "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
-         2. "2" - the starting form will be the Main Menu. <br>
-         3. "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
+- a.Action: When the value of this key is:
+         - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
+         - "2" - the starting form will be the Main Menu. <br>
+         - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for version 2020.1 is Main Menu.
     **Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
-    - b.The user sets it manually.
-    - c. The key is introduced in version: - 2020.1
+- b.The user sets it manually.
+- c. The key is introduced in version: - 2020.1
 
 45. Key - **UseStartScreenPolicy** 
-    - a.Action: When the value of this key is:
-         1. "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
-         2. "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
-         3. "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
-    - b.The user sets it manually.
-    - c.The key is introduced in version: - 2020.1
+- a.Action: When the value of this key is:
+         - "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
+         - "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
+         - "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
+- b.The user sets it manually.
+- c.The key is introduced in version: - 2020.1
 
 46. Key **UseDefaultMailClient**
 
-    - a.Action: When this key has a value for the particular User and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
-    - b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
-    - c.The key is introduced in version: - 2019.1
+- a.Action: When this key has a value for the particular User and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
+- b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
+- c.The key is introduced in version: - 2019.1
