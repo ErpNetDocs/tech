@@ -77,8 +77,8 @@ The current article contains a list of configuration keys and their values:
     - a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
     - b.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
 
-       1. until Version 2019.1 - the default value is "0";
-       2. in Version 2019.1 and later - the default value is "1".
+         1. until Version 2019.1 - the default value is "0";
+         2. in Version 2019.1 and later - the default value is "1".
 
 19. Key - CheckInvoiceLinesQuantityUnitDisabled
     - a.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
@@ -86,78 +86,60 @@ The current article contains a list of configuration keys and their values:
 
 20. Key - AllowBaseAmountsFromThirdDocument   
     - a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
-       1. i. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
+         1. i. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
            - Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
-       2.  ii.When the current key has a value different from "1" or the key does not exist:
+         2.  ii.When the current key has a value different from "1" or the key does not exist:
            - Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
     - b.The user sets it manually.
 
 21. Key -  CreateReconciliationsByTimestamp
     - a. Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
-       1. Stock movements in the store by the document date;
-       2. Stock movements in the store by the date of the transaction timestamp.
+         1. Stock movements in the store by the document date;
+         2. Stock movements in the store by the date of the transaction timestamp.
     - b. Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
     - c. The user sets it manually.
 
-22. Key 
+22. Key -  CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation
+   - a. Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
+   - b. The user sets it manually.
 
-    CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation
+23. Key - ActiveLanguages
+   - a. Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
+   - b. Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
-    1. Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
-    2. The user sets it manually.
+24. Key -  CheckForTransactionInvalidLotDisabled
+   - a. Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
+   - b. The user sets it manually
 
-23. Key 
+25. Key - VisualPasteDisabled - suspended
+   - a. Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
+   - b. The user sets it manually
 
-    ActiveLanguages:
-
-    1. Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
-    2. Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
-
-24. Key 
-
-    CheckForTransactionInvalidLotDisabled
-
-    1. Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
-    2. The user sets it manually
-
-25. Key 
-
-    VisualPasteDisabled - suspended
-
-    1. Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
-
-    2. The user sets it manually
-
-       *This key is suspended in version 2019.1. In its place there are two new functions in forms and navigators:*
-       *- Paste Rows*
-       *- Paste Rows Without On-Screen Validation*
+> [!NOTE]
+> *This key is suspended in version 2019.1. In its place there are two new functions in forms and navigators:*
+> *- Paste Rows*
+> *- Paste Rows Without On-Screen Validation*
 
        
 
-26.  Key 
+26.  Key - RealTimeEventsDisabled 
+   - a. When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
+   - b. The user sets it manually
 
-    RealTimeEventsDisabled
+27. Key - RealTimeEventsTimeoutSeconds
+   - a. Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
+   - b. The user sets it manually
 
-    1. When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
-    2. The user sets it manually
+28. Key - Require strong passwords
 
-27. Key 
+    
 
-    RealTimeEventsTimeoutSeconds
-
-    1. Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
-    2. The user sets it manually
-
-28. Key 
-
-    Require strong passwords
-
-    1. Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-       1. the password is at least 8 characters;
-       2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers;
-       3.  the password does not contain the username;
-       4. the password does not contain "123", "1234", "12345", "123456".
-    2. The user sets it manually
+   - a. Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
+         1. the password is at least 8 characters;
+         2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers;
+         3.  the password does not contain the username;
+         4. the password does not contain "123", "1234", "12345", "123456".
+   - b. The user sets it manually
 
 29. Key 
 
