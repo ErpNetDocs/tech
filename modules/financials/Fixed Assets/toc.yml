@@ -1,4 +1,6 @@
 - name: Overview
   href: overview.md
-- name: Fixed Assets
-  href: Fixed Assets/toc.yml
+- name: Depreciation Methods
+  href: Depreciation Methods/toc.yml
+- name: Depreciation Functions
+  href: Depreciation Functions/toc.yml
