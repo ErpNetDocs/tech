@@ -5,149 +5,92 @@
 The current article contains a list of configuration keys and their values:
 
 1. Key - AllowFirmPlannedParentForReleasedChild 
-    - Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
-    - The user sets it manually.
+    - a.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
+    - b.The user sets it manually.
 
 2. Key - CheckForNonVoidedReferencingDocumentsDisabled
     - Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
     - The user sets it manually.
 
-3. Key 
+3. Key - CheckForOverexecutionDisabled
+    - a.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
+    - b.The user sets it manually.
 
-   CheckForOverexecutionDisabled
+4. Key - CheckForOverinvoicedQuantityInSalesOrderLinesDisabled
+    - a.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
+    - b.The user sets it manually.
 
-   1. Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
-   2. The user sets it manually.
+5. Key - CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled
+    - a.Action: When the key has value and this value is "1", verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed. 
+    - b.The user sets it manually.
 
-4. Key 
+6. Key - Default language
+    - a.Action: Defines the default language of multi-language fields. For example: en - English, bg - Bulgarian.
+    - b.The user sets it manually.
 
-   CheckForOverinvoicedQuantityInSalesOrderLinesDisabled
+7. Key - Default_Enterprise_Company_Location_Id/XXX
+    - a.Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.
+    - b.Set automatically by the system of the user.
 
-   1. Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
-   2. The user sets it manually.
+8. Key - Documents/OnlySaveNewVersionsToHistory
+    - a.*This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.*
+    - b.Action: When the key has value and this value is "1", the new method is applied. In all other cases, the old method is applied.
+    - c.The user sets it manually.
 
-5. Key
+9. Key - DontCheckForNegativeUnitPrice
+    - a.Action: When the key has value and this value is "1", verification for negative values in the Unit Price field is not performed. In all other cases, the verification is performed. 
+    - b.The user sets it manually.
 
-    CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled
+10. Key - Inv/CheckForNegativeAvailability
+    - a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
+    - b.The user sets it manually.
 
-   1. Action: When the key has value and this value is "1", verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed. 
-   2. The user sets it manually.
+11. Key - InvoiceFiscalPrintChangeToState
+    - a.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
+    - b.The user sets it manually.
 
-6. Key 
+12. Key - InvoiceFiscalPrintUseDistributedAmountsForUnitPrice
+    - a.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
+    - b.The user sets it manually.
 
-   Default language
+13. Key - Last_Used_Enterprise_Company_Id
+    - a.Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.
+    - b.Set automatically by the system of the user.
 
-   1. Action: Defines the default language of multi-language fields. For example: en - English, bg - Bulgarian.
-   2. The user sets it manually.
+14. Key - Last_Used_Enterprise_Company_Location_Id/XXX
+    - a.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
+    - b.Set automatically by the system of the user.
 
-7. Key 
+15. Кеу - SalesOrderFiscalPrintChangeToState
+    - a.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
+    - b.The user sets it manually.
 
-   Default_Enterprise_Company_Location_Id/XXX
+16. Key - SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice
+    - a.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the sales order line with VAT included and discounts in the row.
+    - b.The user sets it manually.
 
-   1. Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.
-   2. Set automatically by the system of the user.
+17. Key - SalesOrdersOverduePaymentOrdersCheckDisabled 
+    - a.Action: When the key has value and this value is "1", on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.
+    - b.The user sets it manually.
 
-8. Key 
-
-   Documents/OnlySaveNewVersionsToHistory
-
-   1. *This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.*
-   2. Action: When the key has value and this value is "1", the new method is applied. In all other cases, the old method is applied.
-   3. The user sets it manually.
-
-9. Key 
-
-   DontCheckForNegativeUnitPrice
-
-   1. Action: When the key has value and this value is "1", verification for negative values in the Unit Price field is not performed. In all other cases, the verification is performed. 
-   2. The user sets it manually.
-
-10. Key 
-
-    Inv/CheckForNegativeAvailability
-
-    1. Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
-    2. The user sets it manually.
-
-11. Key 
-
-    InvoiceFiscalPrintChangeToState
-
-    1. Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
-    2. The user sets it manually.
-
-12. Key 
-
-    InvoiceFiscalPrintUseDistributedAmountsForUnitPrice
-
-    1. Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
-    2. The user sets it manually.
-
-13. Key 
-
-    Last_Used_Enterprise_Company_Id
-
-    1. Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.
-    2. Set automatically by the system of the user.
-
-14. Key 
-
-    Last_Used_Enterprise_Company_Location_Id/XXX
-
-    1. Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
-    2. Set automatically by the system of the user.
-
-15. Кеу
-
-     
-
-    SalesOrderFiscalPrintChangeToState
-
-    1. Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
-    2. The user sets it manually.
-
-16. Key 
-
-    SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice
-
-    1. Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the sales order line with VAT included and discounts in the row.
-    2. The user sets it manually.
-
-17. Key 
-
-    SalesOrdersOverduePaymentOrdersCheckDisabled
-
-    1. Action: When the key has value and this value is "1", on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.
-    2. The user sets it manually.
-
-18. Key 
-
-    SimpleFilterLayout
-
-    1. Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
-
-    2. The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
+18. Key - SimpleFilterLayout
+    - a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
+    - b.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
 
        \- until Version 2019.1 - the default value is "0";
        \- in Version 2019.1 and later - the default value is "1".
 
-19. Key 
+19. Key - CheckInvoiceLinesQuantityUnitDisabled
+    - a.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
+    - b.The user sets it manually.
 
-    CheckInvoiceLinesQuantityUnitDisabled
-
-    1. Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
-    2. The user sets it manually.
-
-20. Key 
-
-    AllowBaseAmountsFromThirdDocument
-
-    1. Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
-       1. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
-          1. each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
-       2. When the current key has a value different from "1" or the key does not exist:
-          1. Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
-    2. The user sets it manually.
+20. Key - AllowBaseAmountsFromThirdDocument   
+    - a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
+       \- i. When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
+       \\- Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
+       \- ii.When the current key has a value different from "1" or the key does not exist:
+       \\- Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
+    - b.The user sets it manually.
 
 21. Key 
 
