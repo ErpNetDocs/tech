@@ -2,3 +2,6 @@
   href: aggregates.md 
 - name: Object Relational Mapping 
   href: object-relational-mapping.md 
+- name: Master / Detail Attributes
+  href: Master-detail-attributes.md
+  
