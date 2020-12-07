@@ -93,54 +93,49 @@ The current article contains a list of configuration keys and their values:
     - b.The user sets it manually.
 
 21. Key -  CreateReconciliationsByTimestamp
-    - a. Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
+    - a.Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
          1. Stock movements in the store by the document date;
          2. Stock movements in the store by the date of the transaction timestamp.
-    - b. Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
-    - c. The user sets it manually.
+    - b.Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)..
+    - c.The user sets it manually.
 
 22. Key -  CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation
-   - a. Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
-   - b. The user sets it manually.
+   - a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
+   - b.The user sets it manually.
 
 23. Key - ActiveLanguages
-   - a. Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
-   - b. Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
+   - a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
+   - b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
 24. Key -  CheckForTransactionInvalidLotDisabled
-   - a. Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
-   - b. The user sets it manually
+   - a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
+   - b.The user sets it manually
 
 25. Key - VisualPasteDisabled - suspended
-   - a. Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
-   - b. The user sets it manually
+   - a.Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
+   - b.The user sets it manually
 
 > [!NOTE]
 > *This key is suspended in version 2019.1. In its place there are two new functions in forms and navigators:*
 > *- Paste Rows*
 > *- Paste Rows Without On-Screen Validation*
 
-​       
-
 26.  Key - RealTimeEventsDisabled 
-   - a. When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
-   - b. The user sets it manually
+   - a.When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
+   - b.The user sets it manually
 
 27. Key - RealTimeEventsTimeoutSeconds
-   - a. Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
-   - b. The user sets it manually
+   - a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
+   - b.The user sets it manually
 
 28. Key - Require strong passwords
-
-    
-
-   - a. Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
-            1. the password is at least 8 characters;
-            2. the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
-            3. the password does not contain the username;
-            4. the password does not contain "123", "1234", "12345", "123456".
+   - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
+            - 1.the password is at least 8 characters;
+            - 2.the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
+            3.the password does not contain the username;
+            4.the password does not contain "123", "1234", "12345", "123456".
          
-   - b. The user sets it manually
+   - b.The user sets it manually
 
 29. Key 
 
