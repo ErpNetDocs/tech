@@ -8,10 +8,10 @@
 
 Method of calculation
 
-1. The Month quotа = Depreciable amount / Int(Month(Depreciation End Date - Depreciation Start Date -1))
-2. For the first month: First month Depreciation =  Month quotа * ((Number of Days in First month - Depreciation Start Date)/Number of Days in First month)
-3. For every next month but last one: Depreciation =  Month quotа
-4. For the last month: Depreciation = Mont quotа - First month Depreciation
+The Month quotа = Depreciable amount / Int(Month(Depreciation End Date - Depreciation Start Date -1))
+For the first month: First month Depreciation =  Month quotа * ((Number of Days in First month - Depreciation Start Date)/Number of Days in First month)
+For every next month but last one: Depreciation =  Month quotа
+For the last month: Depreciation = Mont quotа - First month Depreciation
 
 Example:
 
