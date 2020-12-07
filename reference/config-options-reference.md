@@ -79,11 +79,11 @@ The current article contains a list of configuration keys and their values:
     - until Version 2019.1 - the default value is "0";
     - in Version 2019.1 and later - the default value is "1"
 
-19. Key - CheckInvoiceLinesQuantityUnitDisabled
+19. Key - **CheckInvoiceLinesQuantityUnitDisabled**
 - a.Action: When the key has value and this value is "1", when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.
 - b.The user sets it manually.
 
-20. Key - AllowBaseAmountsFromThirdDocument   
+20. Key - **AllowBaseAmountsFromThirdDocument**   
 - a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
     - When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
            - Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
@@ -91,26 +91,26 @@ The current article contains a list of configuration keys and their values:
            - Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
 - b.The user sets it manually.
 
-21. Key -  CreateReconciliationsByTimestamp
+21. Key -  **CreateReconciliationsByTimestamp**
 - a.Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
       - Stock movements in the store by the document date;
       - Stock movements in the store by the date of the transaction timestamp.
 - b.Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)
 - c.The user sets it manually.
 
-22. Key -  CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation
+22. Key -  **CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation**
 - a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
 - b.The user sets it manually.
 
-23. Key - ActiveLanguages
+23. Key - **ActiveLanguages**
 - a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
 - b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
-24. Key -  CheckForTransactionInvalidLotDisabled
+24. Key -  **CheckForTransactionInvalidLotDisabled**
 - a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
 - b.The user sets it manually
 
-25. Key - VisualPasteDisabled - suspended
+25. Key - **VisualPasteDisabled - suspended**
 - a.Action: When this key has value and this value is "1", when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.
 - b.The user sets it manually
 
@@ -119,15 +119,15 @@ The current article contains a list of configuration keys and their values:
 > *- Paste Rows*
 > *- Paste Rows Without On-Screen Validation*
 
-26.  Key - RealTimeEventsDisabled 
+26.  Key - **RealTimeEventsDisabled** 
 - a.When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
 - b.The user sets it manually
 
-27. Key - RealTimeEventsTimeoutSeconds
+27. Key - **RealTimeEventsTimeoutSeconds**
 - a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).
 - b.The user sets it manually
 
-28. Key - Require strong passwords
+28. Key - **Require strong passwords**
 - a.Action: When this key has value and this value is "1", strong password validation is performed. Strong password requirements are as follows:
     - the password is at least 8 characters;
     - the password contains characters from 3 out of 4 groups: small letters, capital letters, Nonalphanumeric characters, numbers; 
@@ -135,44 +135,44 @@ The current article contains a list of configuration keys and their values:
     - the password does not contain "123", "1234", "12345", "123456".     
 - b.The user sets it manually
 
-29. Key - DisableAccountKeyPropertyDotCheck    
+29. Key - **DisableAccountKeyPropertyDotCheck**    
 - a.Action: When this key has value and this value is "1", when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.
 - b.The user sets it manually
 
-30. Key - AllowPlannedDocumentStateInClient
+30. Key - **AllowPlannedDocumentStateInClient**
 - a.Action: When this key has value and this value is "1", the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.
 - b.The user sets it manually
 
-31. Key - DisableProductCopyPropertiesFromOtherProduct
+31. Key - **DisableProductCopyPropertiesFromOtherProduct**
 - a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
 - b.The user sets it manually
 
-32. Key - PaymentTransactionFiscalPrintChangeToState
+32. Key - **PaymentTransactionFiscalPrintChangeToState**
 - a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
 - b.The user sets it manually.
 
-33. Key - Crm/Sales/SalesOrders/ShowFillLotsInLines  
+33. Key - **Crm/Sales/SalesOrders/ShowFillLotsInLines**  
 - a.Action: When this key has value and this value is "1", the sales order function "Fill lots in lines" is activated.
 - b.The user sets it manually.
 
-34. Key - General/Contacts/LoadCalendarForLimitedTime    
+34. Key - **General/Contacts/LoadCalendarForLimitedTime**    
 - a.Action: When this key has value and this value is "1", the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar. 
 - b.The user sets it manually.
 
-35. Key - DisableDocumentRecalculationOnIdle
+35. Key - **DisableDocumentRecalculationOnIdle**
 - a.Action: When this key has value and this value is "1", in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the
 - b.data in the document form. The method referred by the current key is "Document.Recalculate" which performs different actions in the different entities.
 - c.The user sets it manually.
 
-36. Key - DisableParentDocumentReset
+36. Key - **DisableParentDocumentReset**
 - a.Action: When this key has value and this value is "1", on document state change the parent document state is not reset.
 - b.The user sets it manually.
 
-37. Key - RevokedBusinessRules   
+37. Key - **RevokedBusinessRules**   
 - a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
 - b.The user sets it manually.
 
-38. Key - DisableQueryingForSaveOnClose    
+38. Key - **DisableQueryingForSaveOnClose**    
 - a.Action: When this key has value and this value is "1", on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.
 - b.The user sets it manually.
 
@@ -182,7 +182,7 @@ The current article contains a list of configuration keys and their values:
 
 40. Key - **ReservedLicenses** (not implemented/ cancelled)
     
-41. Key - EnableCreateGroupForUser
+41. Key - **EnableCreateGroupForUser**
 - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
 - b.The user sets it manually.
 - c.The key is introduced in version: - 2019.1 (in implementation)
@@ -190,7 +190,7 @@ The current article contains a list of configuration keys and their values:
 > [!Note]
 > Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
-42. Key - DocumentVersioningSystem
+42. Key - **DocumentVersioningSystem**
 - a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) 
        
 >[!Note]
@@ -205,7 +205,7 @@ The current article contains a list of configuration keys and their values:
 - a.Action: When the value of this key is "ShortName" then items in the fiscal receipt are grouped by "ShortName" field in the product. When the value of this key is "ProductGroup" then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing then items in the fiscal receipt are not grouped.
 - b.The key is introduced in version: - 2019.1
            
-44. Key - UseStartScreen
+44. Key - **UseStartScreen**
 - a.Action: When the value of this key is:
     - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
     - "2" - the starting form will be the Main Menu. <br>
