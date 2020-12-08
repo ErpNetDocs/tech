@@ -79,6 +79,1524 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="forms-with-activated-domain-front-end-logic">Forms with Activated Domain Front-End Logic</h1>
 
+<p>When a Domain Front-End Logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/aggregates.md">Aggregate</a>.</p>
+<p>E.i. if it is activated for the Sales Ordes form - it is also activated for panels such as Sales Orders Lines and Payment Plan which are a part of the Sales Order's aggregate, but not for panels such as Document Amounts which are a part of the Document's aggregate.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Module</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Form</strong></td>
+<td><strong>Activated BindDomainLogic</strong></td>
+<td><strong>Version</strong></td>
+</tr>
+<tr>
+<td><strong>Sales Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Customer Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>CustomerCompanyLocations</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Customers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Customers - Companies</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Customers - Persons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Dealers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Dealers - Companies</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Dealers - Persons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Offers</td>
+<td>YES</td>
+<td>2017.1</td>
+</tr>
+<tr>
+<td>Price Lists</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Price Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Sales Orders</td>
+<td>YES</td>
+<td>2017.1</td>
+</tr>
+<tr>
+<td>Sales Persons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Deals</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Line Discounts</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Product Prices</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Promotional Packages</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>POS Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>POS Devices</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>POS Locations</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>POS Operators</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>POS Roles</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>POS Work Terminals</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product Types - Tax Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td><strong>Invoicing Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Invoice Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Invoices</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td><strong>Products Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Coding Systems</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Measurement Categories</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Measurement Units</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product - Pictures</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Codes</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Dimensions</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Distribution Channels</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Variants</td>
+<td>YES</td>
+<td>2017.1</td>
+</tr>
+<tr>
+<td>Product Variants - Colors</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Product Variants - Sizes</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Product Variants - Styles</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Configurator Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Product Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product - Custom Properties</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Product Group - Required Properties</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Contacts &amp; Tasks Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Activities</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Areas</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Call Detail</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Companies</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Companies - Departments</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Company EU Configurator</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Contact Mechanisms</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Party - Pictures</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Party Relationship Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Party Relationships</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Reminders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Resources - Availability</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Resources - Resource Instances</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Resource Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Activities - Time Intervals</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Companies - Divisions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Companies - Employees</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Companies - Locations</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Parties</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Persons</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Marketing Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bonus Programs</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Campaingns</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Distribution Channels</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Forecast Items</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Marketing Activities</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product Catalogs</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Target Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td><strong>Distribution Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Customers - Products</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Sales Person Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Sales Person Targets</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sales Persons</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Pricing Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Pricing Models</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Types</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Shipment Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Shipment Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Shipments</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td><strong>Inventory Management Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lots</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Default Store Bins</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Products - Valuation Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Scrap Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Serial Numbers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Store Bins</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Store Groups</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Store Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Stores</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Transactions</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Cost Corrections</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Reconciliations</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Transfer Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Logistics Planning Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Product Supply</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Procurement Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Receiving Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Suppliers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Suppliers - Companies</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Suppliers - Persons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Purchase Control Documents</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Purchase Operation Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Purchase Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Purchase Price Lists</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Purchase Product Prices</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Requisitions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Supplier Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Products and Technologies Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Products</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Principal Recipies</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Recipies</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Production Planning Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Product Supply</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Resources Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Function Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Functions</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Operation Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Resource Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Workgroups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Workgroups - Resources</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Work Schedules</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Shop Floor Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Consumption Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Work Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Projects Management Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Project Tasks</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Projects</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Projects - Risks</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Projects Budgeting Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Resource Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Gen_Resources - Resource Instances</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Resources - Availability</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Product Variants</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Projects Executuion Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Work Reports</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Projects Setup Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Project Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Project Types - Participants Roles</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Project Types - Work Elements</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Project Types - Work Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Task Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Payments Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bulk Payment Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Parties - Bank Accounts</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Accounts</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Orders</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Reasons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Slips</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Transfers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Types</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Payment Transactions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Expenses Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Supliers</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Supliers - Companies</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Supliers - Persons</td>
+<td>YES</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>Purchase Invoice</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Accounting Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Account Groups</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Accounts</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Cost Centers</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Profit Centers</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Templates</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Vouchers</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Cost Accounting Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cost Distributions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Cost Types</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Financial Statements</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Finanse Analisys Module</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>VAT Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deal Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Declaring Person</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Document Type VAT Codes</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Entries</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VAT Declarations</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Intrastat Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Intrastat Declarations</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Fixed Assets Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Acquire and Retire Orders</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Asset Categories</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Asset Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Asset Transactions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Depreciation Methods</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Depreciation Plans</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Depreciations</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Valuation Methods</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Lease-Out Management Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Asset Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Asset Types - Consumables</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Asset Types - Properties</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Assets</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Assets - Consumables</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Assets Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Service Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Service Activities</td>
+<td>YES</td>
+<td>21.1-</td>
+</tr>
+<tr>
+<td>Service Agreements</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Service Object Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Service Objects</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Service Orders</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Service Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Services - Ivoicing</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Vehicles Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Crews</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Equipment Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Map Points</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Trips</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Vehicle Equipment</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Vehicle Sets</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Vehicles</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Mail Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mail Messages</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mailboxes</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Data Warehouse Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data Measures</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Data Measures Groups</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Data Values</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Personal Data (GDPR) Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Personal Data Management Processes</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Processing Consents</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Rights Requests</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Asset Maintanance Module</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Maintenance Orders</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Maintenance Types Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Maintenance Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Managed Asset Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Managed Asset Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Managed Assets</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Service Centers</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Tracked Parameters</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>General</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Administrative Regions</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Countries</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Currencies</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Currency Directories</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Custom Properties</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Custom Properties Categories</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Enterprise Companies</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Communities</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Notification Settings</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Document Model</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Document Amount Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Document Types - Amounts</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Document Types</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Document Types - Security Conditions</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Printouts</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Printouts - Layouts</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Processes</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Routes</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sales Orders - Default Payment Plans</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Sequence Generators</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sequences</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Business Rules</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Calculated Attributes</td>
+<td>YES</td>
+<td>2018.1</td>
+</tr>
+<tr>
+<td>User Business Rules</td>
+<td>YES</td>
+<td>2018.1</td>
+</tr>
+<tr>
+<td><strong>Business Processes</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Business Processes</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Process Connections</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Process Elements</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Process Groups</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Process Instance</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Process Lanes</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Access Keys</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Audit Log Entries</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Column Permissions</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Domains</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Entities</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Roles - Users</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Trusted Applications</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>User Groups</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Users</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Tools</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data Sources</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Document Jobs</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>External Applications</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Translations</td>
+<td>YES</td>
+<td>21.1</td>
+</tr>
+<tr>
+<td>Web Hosts</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Web Sites</td>
+<td>NO</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
