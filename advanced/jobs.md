@@ -1,10 +1,6 @@
 # Jobs
 
-
-
-Jobs is a new system which allows @@name to automatically run processes such as document state changing or executing scheduled events, in non-busy hours without requiring any user interaction.
-
-
+Jobs is a system in @@name, which automatically runs processes. The types of processes, which are run include document state changing, executing scheduled events or similar. The jobs are run in non-busy hours without requiring any user interaction.
 
 ## How to Create and Configure a Job
 
@@ -30,7 +26,7 @@ Each job can be manually started through the Run Manually button available in th
 
 
 > [!Note] 
-> **IMPORTANT:** In Version 2020.1 manual stating is not available.
+> **IMPORTANT:** In Version 2020.1 manual starting of a job is not available.
 
 ### Automatic Job Starting
 
