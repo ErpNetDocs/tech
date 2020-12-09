@@ -1,8 +1,6 @@
 # Multi-Company Support In ERP Instances
 
-
-
-@@name allows a single database to contain multiple companies. The different own companies, stored in the database are called "Enterprise Companies".
+@@name allows a single ERP instance (database) to contain multiple companies. The different own companies, stored in the database are called "Enterprise Companies".
 
 Many data objects (definitions, settings and documents) have an "Enterprise Company" attribute. When filled, it specifies that the data is specific to one of the enterprise companies. When the attribute is left blank, the data is valid for all enterprise companies.
 
@@ -22,8 +20,5 @@ This can be defined as follows:
 
 In much the same way, the products and many other definitions can be defined to belong to only a single enterprise company or to all enterprise companies.
 
-
-
 > [!Note]
-> There is no way to define a data object to belong to several enterprise companies. It is either one or all. However, it is usually possible to restrict access, using the todo:(Security System (TBD)).
-
+> There is no way to define a data object to belong to several enterprise companies. It is either one or all.
