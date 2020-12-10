@@ -34,7 +34,7 @@ Depending on the client application, translation can sometimes also be automated
 
 Transliteration is the process of translating one language version of a string to another, based on the sounding of the string. Transliteration works great for person and company names and addresses. It allows branch offices to work in their local language and reports can still be shown in the corporate language.
 
-For example, the Bulgarian word "Иван" would be transliterated in English as "Ivan".
+For example, the Russian word "Иван" would be transliterated in English as "Ivan".
 
 Transliteration works in two ways - manual and automatic.
 
@@ -48,9 +48,7 @@ Transliteration works in two ways - manual and automatic.
 
 Automatic transliteration occurs when the system needs to display some a multi-language string in some language, but that specific language translation is not saved in the database.
 
-For example, suppose one employee works in a branch office in Bulgaria and enters "Иван" as a person first name. The database saves only the Bulgarian language version. Then another employee in a US branch requests to see the first name of the same person. The system would automatically transliterate the string and display it as "Ivan".
+For example, suppose one employee works in a branch office in Russia and enters "Иван" as a person first name. The database saves only the Russian language version. Then another employee at a UK location requests to see the first name of the same person. The system would automatically transliterate the string and display it as "Ivan".
 
 > [!NOTE]
 > Transliteration works optimally between Latin and Cyrillic.
-
-
