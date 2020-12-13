@@ -1,2 +1,6 @@
 - name: Overview
   href: overview.md
+- name: Zones and locations
+  href: zones-and-locations.md
+- name: Zone-based routing
+  href: zone-based-routing.md

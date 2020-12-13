@@ -1,2 +1,5 @@
 - name: Overview
-  href: overview.md
+  href: index.md
+- name: WMS
+  href: wms/toc.yml
+  topicHref: wms/index.md
