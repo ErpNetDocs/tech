@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "rCOJ/YQhDt4pW0K5VGvS0w=="
+          "hash": "TyKn5fvwrhk6KfPYafDCcQ=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "v9CDrfEJH0XJWrZjcpMXiw=="
+          "hash": "pepUnEkefXT0fjT8G0snOQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "JOm4T4gjX3XT3VSTw9G9Fg=="
+          "hash": "x2CG9JeCJPqFr+Uurw5VGw=="
         }
       },
       "is_incremental": false,
@@ -1587,11 +1587,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/overview.md",
+      "source_relative_path": "modules/logistics/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/overview.html",
-          "hash": "YJfSfsRx7d5Y4XAWWtX8Kw=="
+          "relative_path": "modules/logistics/index.html",
+          "hash": "ZHWPJxk7p73SptqCNYsNlQ=="
         }
       },
       "is_incremental": false,
@@ -1658,7 +1658,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/zone-policies.html",
-          "hash": "eCwgw/MOC6p2x/lY0RREag=="
+          "hash": "oD28hH1lABdffJsKh8HskA=="
         }
       },
       "is_incremental": false,
@@ -1666,11 +1666,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/zones-and-locations.md",
+      "source_relative_path": "modules/logistics/wms/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/zones-and-locations.html",
-          "hash": "t91RnJCuyR+PoXawGy3a+Q=="
+          "relative_path": "modules/logistics/wms/index.html",
+          "hash": "4ZgUDHYEjDCzJX0O4/H2IA=="
         }
       },
       "is_incremental": false,
@@ -1678,23 +1678,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/overview.md",
+      "source_relative_path": "modules/logistics/wms/zone-based-routing.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/overview.html",
-          "hash": "sWmpv05Ci8pjpd54m6TVUg=="
+          "relative_path": "modules/logistics/wms/zone-based-routing.html",
+          "hash": "6oJ9Y25C+UgqJuGjyQsMkA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "modules/logistics/wms/toc.yml",
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/zones-and-locations.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/toc.html",
-          "hash": "cr660h+SyMQVuwUxIQxeKg=="
+          "relative_path": "modules/logistics/wms/zones-and-locations.html",
+          "hash": "/58rU4GeVm32D3kqMVdeFg=="
         }
       },
       "is_incremental": false,
@@ -1742,7 +1742,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "dACfJpUOaA9audwQxKDRow=="
+          "hash": "rROTyEOMkMIhqS0/y2bKxA=="
         }
       },
       "is_incremental": false,
