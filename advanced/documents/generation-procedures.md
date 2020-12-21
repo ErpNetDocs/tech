@@ -39,7 +39,7 @@ For every Generation Procedure that is marked as an Obsolete is scheduled a **Da
 
   - If the filed "Allow Obsolete Generation" IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could **no longer be avoided**.
 
-3. DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the the lifetime stage DEAD. <br> **An error that can not be avoided will be thrown.**
+3. DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the lifetime stage DEAD. <br> **An error that can not be avoided will be thrown.**
 
 With the release of the new main version after the Date of Suspension, the obsolete generation procedure is **to be deleted** and it will no longer appear in the drop-down lists.
 
