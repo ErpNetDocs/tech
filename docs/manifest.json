@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "jmTVC/gxmGHLoNBt6YDlQg=="
+          "hash": "zm1bLwKTXy0qX/4wir5g0g=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "PqJ3OmYlqUmF9+pEs0h2Kg=="
+          "hash": "E2am8T1XNpH4e/tIWRz58w=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "IwCE67igUHTgl3QdM7IXMQ=="
+          "hash": "AuwWYclF7aTtdlAotMxqBg=="
         }
       },
       "is_incremental": false,
@@ -1113,11 +1113,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/jobs.md",
+      "source_relative_path": "advanced/jobs/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/jobs.html",
-          "hash": "R4z1/q5Y2QCUEXhv1wWagA=="
+          "relative_path": "advanced/jobs/index.html",
+          "hash": "d7UpV1tRlBErKV5aTvdEqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "advanced/jobs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/toc.html",
+          "hash": "okpXJpGveI4L5phU3UbyAA=="
         }
       },
       "is_incremental": false,
@@ -1136,12 +1148,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "advanced/toc.yml",
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "QQkTBNMKnqw8Y+Go0CWp6Q=="
+          "hash": "qx9WmxMJvSxjJYw2n3Id8g=="
         }
       },
       "is_incremental": false,
@@ -1234,7 +1249,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/parties-concepts.html",
-          "hash": "2H/MAk9+D7z4/LMXINhcbA=="
+          "hash": "g2uBCyYoT8xzODoymbfG7A=="
         }
       },
       "is_incremental": false,

@@ -106,7 +106,7 @@ For example, a Party has an &quot;Area&quot; attribute. So, all Person and Compa
 The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
 For example:</p>
 <p><img src="Party-attributes.png" alt="Party Attributes"></p>
-<p>Party has &quot;Parent Party&quot; and &quot;Area&quot; attributes, which are inherited by Company and Person. But persons &quot;First Name&quot; and &quot;Last Name&quot; are specific only to persons. Neither companies, nor generally parties have &quot;First Name&quot;.</p>
+<p>Party has &quot;Parent Party&quot; and &quot;Area&quot; attributes, which are inherited by Company and Person. But persons &quot;First Name&quot; and &quot;Last Name&quot; are specific only to persons. Neither companies nor generally parties have &quot;First Name&quot;.</p>
 <h3 id="relationships-with-other-entity-types">Relationships with Other Entity Types</h3>
 <p>Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier Contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual Customer Contract object would relate to either a Person or a Company. This is shown on the following diagram:</p>
 <p><img src="Party-basic-contracts.png" alt="Party Basic Contracts"></p>
@@ -116,7 +116,7 @@ For example:</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact however, the current implementation of ERP.net allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.</p>
+<p>The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact, however, the current implementation of ERP.net allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.</p>
 </div>
 <p>To clarify the above diagrams, lets provide an example. Suppose we have:</p>
 <ul>
@@ -143,7 +143,7 @@ For example:</p>
 </ul>
 <h2 id="party-hierachy">Party Hierachy</h2>
 <p>The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.</p>
-<p>For example, lets have Corporation A structured in the following way:</p>
+<p>For example, let's have Corporation A structured in the following way:</p>
 <ul>
 <li>Corporation A
 <ul>
@@ -195,7 +195,7 @@ For example:</p>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.</p>
+<p>Because our own enterprise companies <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/multi-company.md">Multi-Company</a> are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.</p>
 </div>
 <h2 id="party-relationships">Party Relationships</h2>
 <p>Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:</p>
