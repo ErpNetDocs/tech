@@ -24,7 +24,7 @@ In order to make sure that the main principle described above is followed, is cr
 
 
 
-2. It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a Store Orders from Sales Orders - the Store field that is taken into account is the one in the Sales Order lines. We have to create separated Store Orders for each Line Store in order to execute the Sales Order correctly because in the Store Orders there is only one Store field and it is in the header.
+2. It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a Store Orders from Sales Orders - the Store field that is taken into account is the one in the Sales Order lines. We have to create separate Store Orders for each Line Store in order to execute the Sales Order correctly because in the Store Orders there is only one Store field and it is in the header.
 
 
 
@@ -38,7 +38,7 @@ In order to make sure that the main principle described above is followed, is cr
 
 
 
-2. When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not. <br>
+2. When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is easy for the users - it is not necessary to constantly monitor whether the lines have different values or not. <br>
 For this reason - after editing the value in the Line Store field and when saving or deleting lines - if it turns out that all lines contain the same Store value, then this value is automatically set in the document header field.
 
 
@@ -48,4 +48,4 @@ For this reason -  after editing the value in the Line Store field and when savi
 
 
 
-4. When adding a new line, then in the Line Store field is set the default value that equal to the value from the document header (unless another default value is explicitly set). If the document header value is empty (NULL), then as a default value in the new line is considered the value from the previous lines. If this is impossible, hard or inapplicable - then the default value is empty (NULL).
+4. When adding a new line, then in the Line Store field is set the default value that equal to the value from the document header (unless another default value is explicitly set). If the document header value is empty (NULL), then as a default value in the new line is considered the value from the previous lines. If this is impossible, hard, or inapplicable - then the default value is empty (NULL).
