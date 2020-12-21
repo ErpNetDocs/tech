@@ -44,7 +44,8 @@ OData v4 allows the creation of URL-based queries. For example, to take the firs
 
 > https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10
 
-NOTE: The above will return unformatted JSON result, intended to be consumed by client app.
+> [!NOTE]
+> The above will return unformatted JSON result, intended to be consumed by client app.
 
 For a quick overview of OData, see this topic - [Understand OData in 6 steps](https://www.odata.org/getting-started/understand-odata-in-6-steps/).
 
@@ -73,7 +74,7 @@ When you press Execute in the Query Builder, you can preview the result both as 
 
 ## The Query Tool
 
-The Query Tool is simple Postman-like tool for querying the database. It does not have the visual building abilities of the Query Builder. However, it can represent all possible REST requests and is very simple to use.
+The Query Tool is a simple Postman-like tool for querying the database. It does not have the visual building abilities of the Query Builder. However, it can represent all possible REST requests and is very simple to use.
 
 ##### NOTE
 
@@ -85,7 +86,7 @@ To access the Query Tool for DEMODB, go to:
 
 ## Query Basics
 
-ERP.net allows only a subset of the full OData queries. Generally, you cannot do JOINs, and filter with OR. However, you can filter by multiple values, like the SQL IN operator:
+ERP.net allows only a subset of the full OData queries. Generally, you cannot do JOINs and filter with OR. However, you can filter by multiple values, like the SQL IN operator:
 
 > [https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id%20in%20(edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038)](https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id in (edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038))
 
@@ -103,7 +104,7 @@ Since the instance API reference contains user-defined objects from the database
 
 ## Security
 
-Someone said: "Security is hard, deal with it". The hard truth is that security today is much harder that it was 10 years ago. Once upon a time, there was a user and a password. Today, we have OAuth with Trusted Apps, Security Tokens, complicated security workflows, and all the other things. There are some good things, though. Single Sign-On, multi-factor authentication, and other extras come to mind.
+Someone said: "Security is hard, deal with it". The hard truth is that security today is much harder than it was 10 years ago. Once upon a time, there was a user and a password. Today, we have OAuth with Trusted Apps, Security Tokens, complicated security workflows, and all the other things. There are some good things, though. Single Sign-On, multi-factor authentication, and other extras come to mind.
 
 But, at the end of the day, you have to do much more work to create a secure app.
 
@@ -117,4 +118,4 @@ Check the [Developer Guides](https://docs.erp.net/dev/guides/index.html) for com
 
 Read the full [Developer Documentation](https://docs.erp.net/dev/topics/index.html).
 
-Check the [Domain Model](https://docs.erp.net/model) for reference information about objects, API methods, integrated business rules and more.
+Check the [Domain Model](https://docs.erp.net/model) for reference information about objects, API methods, integrated business rules, and more.
