@@ -74,7 +74,7 @@ If we query with "Show me ALL customers", the result will be:
 
 The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.
 
-For example, lets have Corporation A structured in the following way:
+For example, let's have Corporation A structured in the following way:
 
 - Corporation A
   - Division 1
