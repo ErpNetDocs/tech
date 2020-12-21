@@ -60,4 +60,4 @@ LOG: <br>
 [10:04:42] Succeeded: 259 <br>
 [10:04:42] Failed: 0*
 
-The table columns and content are explained in [Template Description Jobs](https://github.com/ErpNetDocs/model/blob/master/templates/template-description-jobs.md)
+The table columns and content are explained in [Jobs Tamplate](https://github.com/ErpNetDocs/model/blob/master/templates/template-description-jobs.md)
