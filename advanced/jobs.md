@@ -1,6 +1,6 @@
 # Jobs
 
-Jobs is a system in @@name, which automatically runs processes. The types of processes, which are run include document state changing, executing scheduled events or similar. The jobs are run in non-busy hours without requiring any user interaction.
+Jobs is a system in @@name, which automatically runs processes. The types of processes, which are run include document state changing, executing scheduled events, or similar. The jobs are run in non-busy hours without requiring any user interaction.
 
 ## How to Create and Configure a Job
 
