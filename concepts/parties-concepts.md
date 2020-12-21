@@ -34,7 +34,7 @@ For example:
 
 ![Party Attributes](Party-attributes.png)
 
-Party has "Parent Party" and "Area" attributes, which are inherited by Company and Person. But persons "First Name" and "Last Name" are specific only to persons. Neither companies, nor generally parties have "First Name".
+Party has "Parent Party" and "Area" attributes, which are inherited by Company and Person. But persons "First Name" and "Last Name" are specific only to persons. Neither companies nor generally parties have "First Name".
 
 ### Relationships with Other Entity Types
 
