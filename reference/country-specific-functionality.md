@@ -2,11 +2,11 @@
 
 
 
-@@name contains some country, region or other specific functionalities that are needed in order to meet legal or regulatory requirements. Such functionality is the creation of VAT return and the VAT export files for submission to the National Revenue Agency (Bulgaria), for example.
+@@name contains some country, region, or other specific functionalities that are needed in order to meet legal or regulatory requirements. Such functionality is the creation of VAT returns and the VAT export files for submission to the National Revenue Agency (Bulgaria), for example.
 
 ## Party Applicable Legislations 
 
-In Parties, there is a child table with the Applicable Legislations for the particular Party. The table contains information about the countries, states, unions or other entities whose regulations apply to the Party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
+In Parties, there is a child table with the Applicable Legislations for the particular Party. The table contains information about the countries, states, unions, or other entities whose regulations apply to the Party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
 
 ### Bulgaria (BG)
 
