@@ -86,7 +86,7 @@ The current article contains a list of configuration keys and their values:
 20. Key - **AllowBaseAmountsFromThirdDocument**   
 - a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
     - When the current key has value and this value is "1" the calculation of the additional amounts is performed as follows: 
-           - Each B amount which is distributed on the rows of document D1 participate in the calculation of the base amount of amount S no matter which document defines the B amount.
+           - Each B amount which is distributed on the rows of document D1 participates in the calculation of the base amount of amount S no matter which document defines the B amount.
     - When the current key has a value different from "1" or the key does not exist:
            - Amount B participate in the base amount of S amount only if the B amount is defined by the same document as S amount in the referent document of S amount. The preferred document of S amount is the document on which rows S amount is distributed.
 - b.The user sets it manually.
@@ -107,7 +107,7 @@ The current article contains a list of configuration keys and their values:
 - b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
 24. Key -  **CheckForTransactionInvalidLotDisabled**
-- a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot which is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
+- a.Action: When this key has value and this value is "1", the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot that is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.
 - b.The user sets it manually
 
 25. Key - **VisualPasteDisabled - suspended**
