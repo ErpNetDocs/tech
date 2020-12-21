@@ -2,7 +2,7 @@
 
 
 
-When a document has the same field in its header and lines then these two fields interact in a specific manner. Example of such fields is the "Store" field in the Sales Order header and "Line Store" in its Sales Order Lines.
+When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the "Store" field in the Sales Order header and "Line Store" in its Sales Order Lines.
 
 The common principle is that if the field in the document header has value, we have to ensure that the corresponding field all document lines contains the same value. On the other hand, if the different lines contain different values - the document's header field must be empty.
 
