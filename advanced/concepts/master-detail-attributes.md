@@ -6,7 +6,7 @@ When a document has the same field in its header and lines then these two fields
 
 The common principle is that if the field in the document header has value, we have to ensure that the corresponding field all document lines contains the same value. On the other hand, if the different lines contain different values - the document's header field must be empty.
 
-This principle is very important to avoid misleading of the users. Otherwise, if the Store field in the document header could contain a value even if the document lines have different store values - the user may look only in the header and be misled that this store applies to all of its lines as well, which may not be true in all cases.
+This principle is very important to avoid misleading the users. Otherwise, if the Store field in the document header could contain a value even if the document lines have different store values - the user may look only in the header and be misled that this store applies to all of its lines as well, which may not be true in all cases.
 
 
 
