@@ -61,3 +61,9 @@ LOG: <br>
 [10:04:42] Failed: 0*
 
 The table columns and content are explained in [Jobs Tamplate](https://github.com/ErpNetDocs/model/blob/master/templates/template-description-jobs.md)
+
+Available jobs:
+
+- [J30632-notifications-delete-old-notifications](https://github.com/ErpNetDocs/model/blob/master/jobs/J30632-notifications-delete-old-notifications.md)
+- 
+
