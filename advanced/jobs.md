@@ -66,6 +66,6 @@ Available jobs:
 
 - [J30632 Notifications - Delete Old Notifications](https://github.com/ErpNetDocs/model/blob/master/jobs/J30632-notifications-delete-old-notifications.md)
 - [J30724 Scheduled Document Events - Run Scheduled Events.md](https://github.com/ErpNetDocs/model/blob/master/jobs/J30724-scheduled-document-events-run%20scheduled-events.md)
-- 
+- [J30777 Documents - Document State Change](https://github.com/ErpNetDocs/model/edit/master/jobs/J30777-documents-document-state-change.md)
 
 
