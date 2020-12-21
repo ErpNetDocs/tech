@@ -16,15 +16,15 @@ For example, the Customer XYZ is an entity. Customer ABC is another entity. All 
 
 ## Relationship to tables and rows
 
-This section contains more advanced information, not usually needed to operate the system. However, deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an @@name database, using database tools.
+This section contains more advanced information, not usually needed to operate the system. However, a deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an @@name database, using database tools.
 
-Generally, **Entity Types**, **Entities** and **Attributes** are much like **Tables**, **Rows** and **Columns**. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.
+Generally, **Entity Types**, **Entities**, and **Attributes** are much like **Tables**, **Rows**, and **Columns**. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.
 
-In order to illustrate better the difference between objects and tables, lets include some real-world tables and objects:
+In order to illustrate better the difference between objects and tables, let's include some real-world tables and objects:
 
 There is an entity type, called **'Party'.** It has a descendant (more specialized) entity type, called **'Company'.** So, **Party** is the more abstract and broad term, and **Company** is just one specialization. **Person** is another descendant of **Party.**
 
-Lets illustrate this using pseudo-graphics:
+Let's illustrate this using pseudo-graphics:
 
 > Party
 >
@@ -32,7 +32,7 @@ Lets illustrate this using pseudo-graphics:
 >
 > +---- Person
 
-Each Party has some attributes, like "Parent Party" and "Area". Company has "VAT Number" and "Registration Type" attributes. Each Person has "First Name" and "Last Name".
+Each Party has some attributes, like "Parent Party" and "Area". The company has "VAT Number" and "Registration Type" attributes. Each Person has "First Name" and "Last Name".
 
 Now, if we look at the tables, they have the following schema:
 
@@ -65,8 +65,8 @@ If we look at the objects, they will have the following attributes:
   - First Name
   - Last Name
 
-So, if we use table data, in order to access all attributes of a company or a person, we have to relate (join) data from different tables, using unique Identifiers. The identifiers are the so-called "surrogate keys", because they are existing only in the database and have no real-world counterpart. Using such keys and relating data between tables is ordinary in the relational world of the databases.
+So, if we use table data, in order to access all attributes of a company or a person, we have to relate (join) data from different tables, using unique Identifiers. The identifiers are the so-called "surrogate keys" because they are existing only in the database and have no real-world counterpart. Using such keys and relating data between tables is ordinary in the relational world of the databases.
 
 However, internally, the systems use objects, because it is much simpler to process them. Objects already have all the necessary attributes related together and there is no need to use Identifiers or table relations.
 
-This is only an introduction to the topic of object-relational mapping. More deeper look would go too deep in the developer details of the subject.
+This is only an introduction to the topic of object-relational mapping. More deeper look would go too deep into the developer details of the subject.
