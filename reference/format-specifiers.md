@@ -1,20 +1,18 @@
 # Format Specifiers
-Format specifiers are used to state the the desired format when formatting object values. In EnterpriseOne they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](calculated-attributes/operators/formatstring.md) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the todo:(SENDMAIL) action (‘{DomainAttribute:FormatSpecifier}’). There are two main types of format specifiers - Standard .Net Format Specifiers (Numeric, Date - Time,..) and Custom Format Specifiers (Multilanguge String, Custom Property). 
-
- 
+Format specifiers are used to state the desired format when formatting object values. In @@name they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/formatstring.md) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the todo:(SENDMAIL) action (‘{DomainAttribute:FormatSpecifier}’). There are two main types of format specifiers - Standard .Net Format Specifiers (Numeric, Date - Time,..) and Custom Format Specifiers (Multilanguge String, Custom Property). 
 
 ## Standard .Net Format Specifiers
 The standard .Net format specifiers are supported. The list below contains the most frequently used .Net Format Specifiers. For a complete list and more information, please look at the official .Net documentation site.
 
 #### Numeric Format Specifiers
-- 'C', 'c' - abbreviation of Currency. Converts a number to a string that represents a currency amount. Can be used with a precision specifier indicates the desired number of digits after the decimal point. The decimal symbol separator and the currency symbol depend on the local regional settings. Returns: <br>
+- 'C', 'c' - abbreviation of Currency. Converts a number to a string that represents a currency amount. Can be used with a precision specifier that indicates the desired number of digits after the decimal point. The decimal symbol separator and the currency symbol depend on the local regional settings. Returns: <br>
 123,4656 ('C') → $123,46 <br>
 123,4656 ('C3') → $123,466
 
-- 'D', 'd' -abbreviation of Decimal. Converts a number to a string of decimal digits (0-9), prefixed by a minus sign if the number is negative. Can be used with a precision specifier indicates the desired number of digits after the decimal point.  This format is supported only for integral types. Returns:1234 ('D') →  1234 <br>
+- 'D', 'd' -abbreviation of Decimal. Converts a number to a string of decimal digits (0-9), prefixed by a minus sign if the number is negative. Can be used with a precision specifier that indicates the desired number of digits after the decimal point.  This format is supported only for integral types. Returns:1234 ('D') →  1234 <br>
 -1234 ('D6') → -001234
 
-- 'N', 'n' - abbreviation of Number. Converts a number to a string. Can be used with a precision specifier indicates the desired number of digits after the decimal point. The decimal symbol separator depends on the local regional settings. Returns <br>
+- 'N', 'n' - abbreviation of Number. Converts a number to a string. Can be used with a precision specifier that indicates the desired number of digits after the decimal point. The decimal symbol separator depends on the local regional settings. Returns <br>
 123,4656 (N) → 123,47 <br>
 123,4656 (N3) → 123,466  
 
@@ -69,7 +67,7 @@ Standard date and time format specifiers can be used alone (standard date and ti
 - 2019-05-10 15:18:39.013 ('dd MM yyyy hh:mm 'h'')→ 10 05 2019 03:18 h
 
 ## Custom Format Specifiers
-There are also custom format specifiers which are created specially for EnterpriseOne. They are different for the different data types and are described below.
+There are also custom format specifiers that are created especially for @@name. They are different for the different data types and are described below.
 
 ## Multilanguge String
 - 'C', 'CURRENT' - returns the string of the current value.
