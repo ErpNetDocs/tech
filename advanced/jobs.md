@@ -8,7 +8,7 @@ In most cases, in order to create a job, you have to simply create a new record 
 
 Most parameters of the jobs have a default value and can operate without additional adjustments. An example is the todo:(J30903 DocumentPrintImages - Deletе Old Document Print Images)  jobs, which has only one parameter - "Print Images Retention Months" field Enterprise Company's definition, which has a default value of "60 months".
 
-However, there are jobs that are jobs which are performing more complicated processes and is not logical to be executed for all records in the database. They require configuring additional settings. Such example is **!!! Document state change job !!!!.** 
+However, there are jobs that are jobs that are performing more complicated processes and is not logical to be executed for all records in the database. They require configuring additional settings. Such an example is **Document state change job**. 
 
 The parameters and therefore the required settings of each job are described in its documentation.
 
@@ -23,8 +23,6 @@ Each job can be manually started through the Run Manually button available in th
 > [!Note]
 > When cancelled manually the job may not stop immediately. The job will stop right after the currently processed record is finished.
 
-
-
 > [!Note] 
 > **IMPORTANT:** In Version 2020.1 manual starting of a job is not available.
 
@@ -34,20 +32,13 @@ Jobs can be started automatically by the jobs execution system following a prede
 
 Note that currently, only an "On Idle" auto-start schedule is available. Generally, the "On Idle" auto-start means that the job will be automatically started in non-busy hours if there are available resources. A job is using the "On Idle" auto-start schedule when the "Run On Idle" option is activated in its definition.
 
+**The jobs execution system will be started only if the following requirements are met:**
 
-
-***The jobs execution system will be started only if the following requirements are met:***
-
- \- The time of the day is between 22:00 and 03:00.
-
- \- The current server sessions are less than 5.
-
- \- The last time the job's procedure is completed is more than 12 hours from now.
-
- \- The procedure is not currently working
-
- \- There is no manually stated jobs that are currently running
-
+- The time of the day is between 22:00 and 03:00.
+- The current server sessions are less than 5.
+- The last time the job's procedure is completed is more than 12 hours from now.
+- The procedure is not currently working
+- There is no manually stated jobs that are currently running
 
 Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called "System Jobs". The procedure can be monitored as every other long-running procedure in Procedures navigator in @@name or the Procedures tab in the Server Manager.
 
@@ -57,13 +48,11 @@ The jobs execution system will create a list of pending jobs and will start exec
 
 Each job execution is logged in Information Messages. The log contains information about the starting time, ending time, the processed records and the errors that have occurred during the processing (if possible and if any).
 
-
-
 Example:
 
-***Process:** Job J30777 Finish Store Transactions*
+**Process:** *Job J30777 Finish Store Transactions*
 
-***Message:\***
+**Message:**
 
 *Succeeded: 259; Failed: 0 <br>
 LOG: <br>
@@ -72,4 +61,3 @@ LOG: <br>
 [10:04:42] Failed: 0*
 
 The table columns and content are explained in [Template Description Jobs](https://github.com/ErpNetDocs/model/blob/master/templates/template-description-jobs.md)
-
