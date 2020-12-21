@@ -16,7 +16,7 @@ For example, the demonstration database, DEMODB, is located at:
 
 Each ERP Instance CAN have an API site. It "can" have, because, the API is a site, similar to other sites, which the instance can launch. In order for the API to function, it needs to be configured and launched for the ERP Instance.
 
-The common URL for the API site is /api/ inside the ERP instance. For example, the DEMODB has API site at:
+The common URL for the API site is /api/ inside the ERP instance. For example, the DEMODB has an API site at:
 
 > https://demodb.my.erp.net/api/
 
@@ -24,7 +24,7 @@ The common URL for the API site is /api/ inside the ERP instance. For example, t
 
 The Domain API is the primary means for accessing and manipulating data in the ERP Instance. It can currently be consumed in [OData 4](https://www.odata.org/) format.
 
-The Domain API is an API proxy for the object-oriented Domain Model of ERP.net. It is targeted towards UI and service apps. These kind of apps usually read and update moderate amounts of data. The Domain API is NOT adequate for read-only dumping of very large amounts of data, which is usually done by BI applications. BI applications should find other solutions or try to read data by small chunks.
+The Domain API is an API proxy for the object-oriented Domain Model of ERP.net. It is targeted towards UI and service apps. These kinds of apps usually read and update moderate amounts of data. The Domain API is NOT adequate for read-only dumping of very large amounts of data, which is usually done by BI applications. BI applications should find other solutions or try to read data in small chunks.
 
 The Domain API is located at /domain/odata/ within the API site. For DEMODB, this is at:
 
@@ -66,9 +66,10 @@ While the query is built, the Query Builder changes its URL. For example, to pre
 
 > https://demodb.my.erp.net/api/domain/querybuilder#General_Products_Products?$top=10
 
-When you press Execute in the Query Builder, you can preview the result both as table and as JSON.
+When you press Execute in the Query Builder, you can preview the result both as a table and as JSON.
 
-NOTE: Pay attention to the link under the selected entity, which opens the documentation for the entity.
+> NOTE:
+> Pay attention to the link under the selected entity, which opens the documentation for the entity.
 
 ## The Query Tool
 
