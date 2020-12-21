@@ -23,7 +23,7 @@ The current topic describes the stages of the lifetime of a generation procedure
 - AGEING - triggers a warning, can be silenced.
 - OBSOLETE – triggers a warning e or an error and has to be replaced by an active generation procedure.
 
-- DEAD – does not work, throws an error or is permanently deleted.
+- DEAD – does not work, throws an error, or is permanently deleted.
 
 ## Details 
 
