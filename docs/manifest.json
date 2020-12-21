@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "0qcttsUtQeZ9DwKLs8pLmg=="
+          "hash": "cTJWxwEfpqyjio2mJmQpaw=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "YzG9TPb3YnQwJTDnz150KQ=="
+          "hash": "OmSoozMudUmkRPj4CoocNA=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "HLlf83EXPv02cjqSgRxmZQ=="
+          "hash": "2Dw5wUTqPLxYQx8eKAyfGQ=="
         }
       },
       "is_incremental": false,
@@ -1117,19 +1117,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "d7UpV1tRlBErKV5aTvdEqQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "advanced/jobs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/jobs/toc.html",
-          "hash": "okpXJpGveI4L5phU3UbyAA=="
+          "hash": "epSIVxH3uhigFS9J6XSQFQ=="
         }
       },
       "is_incremental": false,
@@ -1148,15 +1136,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "advanced/toc.yml",
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "qx9WmxMJvSxjJYw2n3Id8g=="
+          "hash": "AJQjHcldHZMdBKKjJ/5/6g=="
         }
       },
       "is_incremental": false,
