@@ -30,11 +30,9 @@ The Domain API is located at /domain/odata/ within the API site. For DEMODB, thi
 
 > https://demodb.my.erp.net/api/domain/odata/
 
-##### TIP
-
-**User:** Admin
-
-**Password:** 123
+> [!TIP]
+> **User:** Admin
+> **Password:** 123
 
 If you try the above link, it will ask you for user credentials. Most ERP Instances should, by default, be configured to NOT accept basic authentication. However, for demonstration purposes, DEMODB is configured to allow it.
 
@@ -76,9 +74,8 @@ When you press Execute in the Query Builder, you can preview the result both as 
 
 The Query Tool is a simple Postman-like tool for querying the database. It does not have the visual building abilities of the Query Builder. However, it can represent all possible REST requests and is very simple to use.
 
-##### NOTE
-
-The Query Tool is the default tool, which is used to represent queries in forum posts, tickets, etc.
+> [!NOTE]
+> The Query Tool is the default tool, which is used to represent queries in forum posts, tickets, etc.
 
 To access the Query Tool for DEMODB, go to:
 
@@ -98,9 +95,8 @@ The instance reference documentation of DEMODB is at:
 
 > https://demodb.my.erp.net/api/domain/docs
 
-##### TIP
-
-Since the instance API reference contains user-defined objects from the database, it is accessible only after authentication. For general-purpose information, check the [Model](https://docs.erp.net/model).
+> [!TIP]
+> Since the instance API reference contains user-defined objects from the database, it is accessible only after authentication. For general-purpose information, check the [Model](https://docs.erp.net/model).
 
 ## Security
 
