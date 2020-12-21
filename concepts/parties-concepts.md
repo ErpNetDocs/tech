@@ -101,7 +101,7 @@ The flexible party hierarchy also allows structuring even different companies in
   - Corporate Financials Department
 
 > [!Note]
-> Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
+> Because our own enterprise companies [Multi-Company](docs.erp.net/tech/concepts/multi-company.html) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
 
 ## Party Relationships
 
