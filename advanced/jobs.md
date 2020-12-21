@@ -64,6 +64,6 @@ The table columns and content are explained in [Jobs Tamplate](https://github.co
 
 Available jobs:
 
-- [J30632-notifications-delete-old-notifications](https://github.com/ErpNetDocs/model/blob/master/jobs/J30632-notifications-delete-old-notifications.md)
+- [J30632 Notifications - Delete Old Notifications](https://github.com/ErpNetDocs/model/blob/master/jobs/J30632-notifications-delete-old-notifications.md)
 - 
 
