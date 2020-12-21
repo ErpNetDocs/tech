@@ -1,6 +1,5 @@
 # Parties Concepts
 
-
 ## Description
 Parties in @@name are one of the most widely used definition. Generally, a party is a participant in any business relations or transaction.
 
@@ -104,8 +103,6 @@ The flexible party hierarchy also allows structuring even different companies in
 > [!Note]
 > Because our own enterprise companies (see todo: Multi-company) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
 
-
-
 ## Party Relationships
 
 Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:
@@ -125,4 +122,3 @@ The above information is represented in a table in the following way:
 | John       | works for         | Company B | 1/1/2010  | 3/5/2015 |       |
 
 Obviously, From Date and To Date represent the dates when the relationship was established and terminated.
-
