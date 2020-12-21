@@ -45,7 +45,7 @@ Although parties do not exist on their own, they can participate in relationship
 > Customer (Contract), Supplier (Contract) and Dealership (Contract) are actually called simply Customer, Supplier and Dealer in @@name.
 
 > [!Note]
-> The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact however, the current implementation of @@name allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.
+> The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact, however, the current implementation of @@name allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.
 
 To clarify the above diagrams, lets provide an example. Suppose we have:
 
