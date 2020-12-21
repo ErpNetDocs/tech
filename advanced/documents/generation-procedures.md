@@ -35,9 +35,9 @@ For every Generation Procedure that is marked as an Obsolete is scheduled a **Da
 
 2. OBSOLETE - From ([Date of Suspension] - 1 year) to ([Date of Suspension])
 
-       - If the filed "Allow Obsolete Generation" is NOT check-marked - an error in a modal window will pop up during the execution of the obsolete generation procedure. The error will inform the users that they are using an obsolete procedure and **the generation of the sub-document will be interrupted**. The error **will stop popping** up if for the particular line of the Document Type’s Routes the filed "Allow Obsolete Generation" is check-marked.
+  - If the filed "Allow Obsolete Generation" is NOT check-marked - an error in a modal window will pop up during the execution of the obsolete generation procedure. The error will inform the users that they are using an obsolete procedure and **the generation of the sub-document will be interrupted**. The error **will stop popping** up if for the particular line of the Document Type’s Routes the filed "Allow Obsolete Generation" is check-marked.
 
-       - If the filed "Allow Obsolete Generation" IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could **no longer be avoided**.
+  - If the filed "Allow Obsolete Generation" IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could **no longer be avoided**.
 
 3. DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the the lifetime stage DEAD. <br> **An error that can not be avoided will be thrown.**
 
