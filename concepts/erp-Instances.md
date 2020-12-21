@@ -69,7 +69,7 @@ While the query is built, the Query Builder changes its URL. For example, to pre
 
 When you press Execute in the Query Builder, you can preview the result both as a table and as JSON.
 
-> NOTE:
+> [!NOTE]
 > Pay attention to the link under the selected entity, which opens the documentation for the entity.
 
 ## The Query Tool
