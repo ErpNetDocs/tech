@@ -4,7 +4,7 @@
 
 ## Description 
 
-*Entities* and *Entity Types* are terms, frequently used throughout the documentation. *Entities* are information objects, which represent real-world objects. *Entity Type* is the collection of all objects of a given type.
+**Entities** and **Entity Types** are terms, frequently used throughout the documentation. **Entities** are information objects, which represent real-world objects. **Entity Type** is the collection of all objects of a given type.
 
 For example, the Customer XYZ is an entity. Customer ABC is another entity. All customers are of an entity type, called 'Customers'.
 
@@ -18,11 +18,11 @@ For example, the Customer XYZ is an entity. Customer ABC is another entity. All 
 
 This section contains more advanced information, not usually needed to operate the system. However, deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an @@name database, using database tools.
 
-Generally, *Entity Types*, *Entities* and *Attributes* are much like *Tables*, *Rows* and *Columns.* Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.
+Generally, **Entity Types**, **Entities** and **Attributes** are much like **Tables**, **Rows** and **Columns**. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.
 
 In order to illustrate better the difference between objects and tables, lets include some real-world tables and objects:
 
-There is an entity type, called *'Party'.* It has a descendant (more specialized) entity type, called *'Company'.* So, *Party* is the more abstract and broad term, and *Company* is just one specialization. *Person* is another descendant of *Party.*
+There is an entity type, called **'Party'.** It has a descendant (more specialized) entity type, called **'Company'.** So, **Party** is the more abstract and broad term, and **Company** is just one specialization. **Person** is another descendant of **Party.**
 
 Lets illustrate this using pseudo-graphics:
 
