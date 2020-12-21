@@ -120,7 +120,7 @@ The current article contains a list of configuration keys and their values:
 > *- Paste Rows Without On-Screen Validation*
 
 26.  Key - **RealTimeEventsDisabled** 
-- a.When this key has value and this value is "1", EnterpriseOne would not proceed connection with the server which sends real-time events.
+- a.When this key has value and this value is "1", @@name would not proceed connection with the server which sends real-time events.
 - b.The user sets it manually
 
 27. Key - **RealTimeEventsTimeoutSeconds**
