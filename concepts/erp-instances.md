@@ -85,7 +85,7 @@ To access the Query Tool for DEMODB, go to:
 
 ERP.net allows only a subset of the full OData queries. Generally, you cannot do JOINs and filter with OR. However, you can filter by multiple values, like the SQL IN operator:
 
-> [https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id%20in%20(edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038)](https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id in (edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038))
+> [https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id%20in%20(edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038)](https://demodb.my.erp.net/api/domain/odata/General_Products_Products?$top=10&$filter=Id in (edf2bd2a-7e4d-e111-a06c-00155d00050a,cf728601-1fd5-4853-ab23-01deeee7d038)
 
 ## Instance API Reference
 
