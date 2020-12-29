@@ -107,4 +107,5 @@ Each system state can have as many user statuses, as needed. As shown in the tab
 
 In the example above, in order to release a Direct Production Order, the Firm Planned/Approved state must first be set. This creates a control point for moving ahead of the state.
 
-Note that the exit User Status-es are usually secured, so that only the authorized users can set them.
+> [!Note]
+> The exit User Status-es are usually secured, so that only the authorized users can set them.
