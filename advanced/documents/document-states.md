@@ -2,17 +2,14 @@
 
 ## Description
 
+The documents in the system have a current STATE. This state determines the effect on the system and whether the document can be updated. The allowed states of the document are:
 
-Each document in the system has a current state at any given moment. The state affects how the document affects the system and whether the document is updateable. The allowed document states are:
-
-
-
-- **New** - the document is entered and saved in the system, but has no effect (on planning, availability, etc.)
+- **New** - the document is entered and saved in the system but does not affect (on planning, availability, etc.)
 - **Planned** - the document is planned automatically by the system to occur at some point in the future
 - **Firm Planned** - the document is planned to occur at some point in the future by a user. Firm Planned status is automatically set by the system if a user edits a Planned document.
 - **Released** - the document is released for execution. The responsible party starts to execute it.
 - **Completed** - the activities of the document are finished. Sometimes this state is also referred to as "Finished".
-- **Closed** - the document is verified and no more changes are expected to it.
+- **Closed** - The document is verified and no more changes are expected in it.
 
 ## Rules for Editing a Document
 
