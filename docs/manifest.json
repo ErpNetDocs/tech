@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "S9QjBXDdphvcdfDOXnVZ6A=="
+          "hash": "1sgU2hIvvyqXCKrVfQefNg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "KRWa+KXQKWcDOp764OSz7g=="
+          "hash": "SUm2PlURj/I0i8NSuBG97A=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "XAxcu1vO12eKKVq62m20mg=="
+          "hash": "Uyz7+XGPYAkJHmLQ4JdDEg=="
         }
       },
       "is_incremental": false,
@@ -937,15 +937,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/aggregates.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/aggregates.html",
-          "hash": "O9KkCCHZkW0eazCQLO9RnQ=="
+          "hash": "3hTR5ABaYPPPmiHxD7/fkQ=="
         }
       },
       "is_incremental": false,
