@@ -57,7 +57,7 @@ In the example above, the **Commit** event would occur for the **Sales Order** i
 > Commit and Client-Commit still have the same meaning. E.g., Commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While Client-Commit is triggered only based on client requests and is considered the more light-weight approach.
 
 > [!NOTE] 
->Initially, only the Aggregate Client Commit event would be available for user-defined business rules [Business Rules](~/advanced/business-rules/overview.md). The Aggregate Commit will be used only internally, for system-defined business rules todo:(System Business Rules) 
+>Initially, only the Aggregate Client Commit event would be available for user-defined business rules [Business Rules](../business-rules/overview.md). The Aggregate Commit will be used only internally, for system-defined business rules todo:(System Business Rules) 
 
 The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for [Business Rules](../business-rules/overview.md).
 
