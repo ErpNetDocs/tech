@@ -2,7 +2,7 @@
 
 
 
-When a Domain Front-End Logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the [Aggregate](https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/aggregates.md).
+When a Domain Front-End Logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the [Aggregate](xref:aggregates).
 
 E.i. if it is activated for the Sales Ordes form - it is also activated for panels such as Sales Orders Lines and Payment Plan which are a part of the Sales Order's aggregate, but not for panels such as Document Amounts which are a part of the Document's aggregate.
 
