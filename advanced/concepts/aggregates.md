@@ -59,7 +59,7 @@ In the example above, the **Commit** event would occur for the **Sales Order** i
 > [!NOTE] 
 >Initially, only the Aggregate Client Commit event would be available for user-defined business rules [Business Rules](~/advanced/business-rules/overview.md). The Aggregate Commit will be used only internally, for system-defined business rules todo:(System Business Rules) 
 
-The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for [Business Rules](~/business-rules/overview.md).
+The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for [Business Rules](../business-rules/overview.md).
 
 #### See also: @Systems.Core.ExtensibleDataObjects
 
