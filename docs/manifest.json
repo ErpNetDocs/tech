@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "0qcttsUtQeZ9DwKLs8pLmg=="
+          "hash": "E/uQnzNc6WC7meLuRzHAfg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "F0cpHsVUv+/zq7t204Ip8Q=="
+          "hash": "iiGKyTNxca/bpUMRaV8xGQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "5p2Wj8ZI86BHSDIYdKqDfQ=="
+          "hash": "LPm2MG4bkonowKqOT68cxw=="
         }
       },
       "is_incremental": false,
@@ -937,12 +937,16 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink",
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/aggregates.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/aggregates.html",
-          "hash": "3hTR5ABaYPPPmiHxD7/fkQ=="
+          "hash": "1uL9pE3G00yilSEyzdxW4A=="
         }
       },
       "is_incremental": false,
@@ -1133,12 +1137,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "epSIVxH3uhigFS9J6XSQFQ=="
+          "hash": "MEzSrxkotp8lmDib4IZtEg=="
         }
       },
       "is_incremental": false,
