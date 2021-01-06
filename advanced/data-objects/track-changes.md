@@ -36,7 +36,7 @@ This is the lightest tracking mode with the least storage requirements.
 The information is stored in the @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
-> [Extensible Data Objects](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](../aggregates.md)). 
+> [Extensible Data Objects](extensible-data-objects.md) object is created and maintained ONLY for the root object of the object [Aggregates](~/advanced/concepts/aggregates.md)). 
 > Upon first update of the tracked object, a new EDO record is created, if there isn't already one. 
 > For each successive update of any object in the aggregate, the data in the EDO is updated.
 
@@ -69,7 +69,7 @@ One change-set can contain data about multiple object changes. The following dat
 - **Repository Name** - the name of the object repository, containing the object.
 - **Entity Item Id** - the Id of the tracked object.
 - **Change Type** - the type of modification: C, U or D for Create/Update/Delete.
-- **Root Object Id** - the Id of the [Extensible Data Objects](extensible-data-objects.md) for the root object of the [Aggregates](../aggregates.md).
+- **Root Object Id** - the Id of the [Extensible Data Objects](extensible-data-objects.md) for the root object of the [Aggregates](~/advanced/concepts/aggregates.md).
 
 ### Level 3 - Track Object & Attribute Changes
 
