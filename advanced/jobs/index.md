@@ -65,8 +65,8 @@ The table columns and content are explained in [Jobs Tamplate](xref:template-des
 Available jobs:
 
 - [J30632 Notifications - Delete Old Notifications](xref:jobs-J30632)
-- [J30724 Scheduled Document Events - Run Scheduled Events.md](xref:jobs-J30632)
-- [J30777 Documents - Document State Change](xref:jobs-J30632)
-- [J30903 Document Print Images - Delete Old Document Print Images](xref:jobs-J30632)
+- [J30724 Scheduled Document Events - Run Scheduled Events.md](xref:jobs-J30724)
+- [J30777 Documents - Document State Change](xref:jobs-J30777)
+- [J30903 Document Print Images - Delete Old Document Print Images](xref:jobs-J30903)
 
 
