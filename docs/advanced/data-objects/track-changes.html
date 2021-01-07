@@ -128,7 +128,7 @@ This is the lightest tracking mode with the least storage requirements.
 The information is stored in the <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p><a href="extensible-data-objects.html">Extensible Data Objects</a> object is created and maintained ONLY for the root object of the object <a href="../aggregates.md">Aggregates</a>).
+<p><a href="extensible-data-objects.html">Extensible Data Objects</a> object is created and maintained ONLY for the root object of the object <a href="../concepts/aggregates.html">Aggregates</a>).
 Upon first update of the tracked object, a new EDO record is created, if there isn't already one.
 For each successive update of any object in the aggregate, the data in the EDO is updated.</p>
 </div>
@@ -157,7 +157,7 @@ For each successive update of any object in the aggregate, the data in the EDO i
 <li><strong>Repository Name</strong> - the name of the object repository, containing the object.</li>
 <li><strong>Entity Item Id</strong> - the Id of the tracked object.</li>
 <li><strong>Change Type</strong> - the type of modification: C, U or D for Create/Update/Delete.</li>
-<li><strong>Root Object Id</strong> - the Id of the <a href="extensible-data-objects.html">Extensible Data Objects</a> for the root object of the <a href="../aggregates.md">Aggregates</a>.</li>
+<li><strong>Root Object Id</strong> - the Id of the <a href="extensible-data-objects.html">Extensible Data Objects</a> for the root object of the <a href="../concepts/aggregates.html">Aggregates</a>.</li>
 </ul>
 <h3 id="level-3---track-object--attribute-changes">Level 3 - Track Object &amp; Attribute Changes</h3>
 <p>When this level is selected, all the data for Level 2 is still stored and maintained. But now, also data about each attribute (field) change is also stored.</p>
@@ -191,7 +191,7 @@ application layer) is recorded as being changed by the 2nd modification of the d
 <li>Save and close.</li>
 <li>The tracking will shortly start.</li>
 </ol>
-<p>For document entities is provided an opportunity for mass activation of the Track Changes system using the <strong>DocumentVersioningSystem</strong> registry key. For more information see the description key number 42 in the todo:(Config Options Reference) topic.</p>
+<p>For document entities is provided an opportunity for mass activation of the Track Changes system using the <strong>DocumentVersioningSystem</strong> registry key. For more information see the description key number 42 in the <a href="../../reference/config-options-reference.html">Config Options Reference</a> topic.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>

@@ -151,6 +151,9 @@ references:
 - uid: extensible-data-objects
   name: Extensible Data Objects EDO
   href: advanced/data-objects/extensible-data-objects.html
+- uid: master-detail
+  name: Master / Detail Attributes
+  href: advanced/concepts/master-detail-attributes.html
 - uid: name
   name: name
   href: includes/name.html
