@@ -11,4 +11,4 @@ The type of the parameter specifies how to obtain the parameter value. Several t
 - REPO - a repository;
 - SYS - the value of a particular system variable as Login, Today, EnterpriseCompanyId and others.
 
-The Parameter Types are used in every calculated attributes. For examples see [Calculated Attributes - Examples](~/examples/overview.md).
+The Parameter Types are used in every calculated attributes. For examples see [Calculated Attributes - Examples](../examples/overview.md).
