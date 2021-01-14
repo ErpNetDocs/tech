@@ -17,7 +17,7 @@ Warehouse Management Module follows the concepts of the Warehouse Management Sys
 
 The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.
 
-![Zones and Locations](zones-and-locations.png)
+![Zones](zones-and-locations.png)
 
 Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-division of a warehouse.
 
