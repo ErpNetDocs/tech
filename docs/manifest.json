@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "ClaJpTDt7QaLyqIB+VDDbQ=="
+          "hash": "RR9m0j87Opni6gj5uYukkQ=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "cvnGx7OVdyGlJeEc65AP+A=="
+          "hash": "UbGhn7X27MhgfUmTul1JNg=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "glh8JeT1H1gmtfc74l83fA=="
+          "hash": "FwggsVPEACOmg+tRf2ynzQ=="
         }
       },
       "is_incremental": false,
@@ -1626,6 +1626,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/handy.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/handy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-it-works/five-zones.svg",
       "output": {
         "resource": {
@@ -1697,7 +1708,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "vxiCLNE27ZKvhCYTeeT0bQ=="
+          "hash": "D+U2JEVhcIhiQqlUlXgBtA=="
         }
       },
       "is_incremental": false,
@@ -1722,6 +1733,17 @@
         ".html": {
           "relative_path": "modules/logistics/wms/zones-and-locations.html",
           "hash": "GvGv/9fUaTSW313Cl551Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/zones.png"
         }
       },
       "is_incremental": false,

@@ -79,6 +79,53 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="warehouse-management">Warehouse Management</h1>
 
+<p>Warehouse Management Module follows the concepts of the Warehouse Management Systems <a href="https://en.wikipedia.org/wiki/Warehouse_management_system">WMS</a>. The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the <strong>Managed Warehouses</strong>.</p>
+<p><strong>Managed Warehouses</strong> are physical warehouses. which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:</p>
+<ul>
+<li>Picking</li>
+<li>Put-Away</li>
+<li>Counting</li>
+<li>Packing/Unpacking</li>
+<li>Inspection</li>
+<li>Robot interactions</li>
+<li>etc.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing &quot;Store&quot; concept is strictly bound to enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.</p>
+</div>
+<p>The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.</p>
+<p><img src="zones.png" alt="Zones"></p>
+<p>Managed Warehouses are organized using <strong>Zones</strong> and <strong>Locations</strong>. Zones are sub-division of a warehouse.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Zones are used to accommodate different storage needs, such as different temperature requirements or turnover rate of the products.</p>
+</div>
+<p>The zones are further divided in <strong>Locations</strong>. Locations have name (like #1-8-20), which is used to uniquely identify them.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use Warehouse Management to increase efficiency by automating warehouse routing and identifying storage locations for your products.</p>
+</div>
+<p>The two most basic documents of WMS are:</p>
+<ul>
+<li><p><strong>Warehouse Requisitions (W.R.)</strong> <br>
+They contain outside request for warehouse operation (usually inbound/outbound).</p>
+</li>
+<li><p><strong>Warehouse Orders (W.O.)</strong> <br>
+They are the internal plan for execution of W.R. They contain routes, locations, workers, etc.</p>
+</li>
+</ul>
+<p>The basic operation flow of WMS is the following:</p>
+<p>The steps, noted in (parens) in the diagram are as follows:</p>
+<ol>
+<li>The outside module/department creates W.R. based on its needs.</li>
+<li>Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best case scenario, the creation of WO is totally automated.</li>
+<li>The workers use their handheld devices to execute the order. Each step is recorded as both Warehouse Transaction and Warehouse Order Execution.</li>
+<li>After the WO is fully executed, the Warehouse Requisition Execution is updated.</li>
+<li>After the WR is fully executed, the external module/department updates its execution state.</li>
+</ol>
+<p>Typically, managed warehouse operations are executed using some sort of handheld devices, which are used to scan bar-codes, NFC tags, etc.</p>
+<p><img src="handy.png" alt="Handy"></p>
 </article>
           </div>
           
