@@ -31,12 +31,12 @@ The zones are further divided in **Locations**. Locations have name (like #1-8-2
 
 The two most basic documents of WMS are:
 
-- **Warehouse Requisitions (W.R.) 
-  **They contain outside request for warehouse operation (usually inbound/outbound).
+- **Warehouse Requisitions (W.R.)** <br>
+  They contain outside request for warehouse operation (usually inbound/outbound).
 
   
 
-- **Warehouse Orders (W.O.)**
+- **Warehouse Orders (W.O.)** <br>
   They are the internal plan for execution of W.R. They contain routes, locations, workers, etc.
 
 The basic operation flow of WMS is the following:
