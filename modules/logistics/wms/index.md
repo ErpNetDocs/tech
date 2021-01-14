@@ -14,19 +14,19 @@ Warehouse Management Module follows the concepts of the Warehouse Management Sys
 - Robot interactions
 - etc.
 
-> Note
+> [!Note]
 > One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing "Store" concept is strictly bound to enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.
 
 The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.
 
 Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-division of a warehouse.
 
-> Note
+> [!Note]
 > Zones are used to accommodate different storage needs, such as different temperature requirements or turnover rate of the products.
 
 The zones are further divided in **Locations**. Locations have name (like #1-8-20), which is used to uniquely identify them.
 
-> Note
+> [!Note]
 > Use Warehouse Management to increase efficiency by automating warehouse routing and identifying storage locations for your products.
 
 The two most basic documents of WMS are:
