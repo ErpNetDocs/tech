@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "RR9m0j87Opni6gj5uYukkQ=="
+          "hash": "ClaJpTDt7QaLyqIB+VDDbQ=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "UbGhn7X27MhgfUmTul1JNg=="
+          "hash": "5rO35H5zM4ZSCcLNX+Dd8g=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "FwggsVPEACOmg+tRf2ynzQ=="
+          "hash": "biGdXhDgkCkpjKEh7vImDQ=="
         }
       },
       "is_incremental": false,
@@ -1380,6 +1380,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/handy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/handy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/five-zones.svg",
       "output": {
         "resource": {
@@ -1428,6 +1439,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/two-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/zones.png"
         }
       },
       "is_incremental": false,
