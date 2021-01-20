@@ -29,23 +29,19 @@ In order to make sure that the main principle described above is followed, is cr
 - **FrontEnd rules**
 1. When the value of the document header's field is changed, this value is automatically set to ALL document lines.
 
-2.  When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not.
-
-For this reason - after editing the value in the Line Store field and when deleting lines - if it turns out that all lines contain the same Store value, then this value is automatically set in the document header field.
+2. When all document lines have the same value in the Store field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not.
+<br/>For this reason - after editing the value in the Line Store field and when deleting lines - if it turns out that all lines contain the same Store value, then this value is automatically set in the document header field.
 
 3. When the different document lines have different values in the Store field, then the field in the document header must be empty (NULL).
-
-For this reason -  after editing the value in the Line Store field and when deleting lines, if it turns out that the line contains a different Store value, then the Store field in the document header is automatically set to an empty value (NULL).
+<br/>For this reason -  after editing the value in the Line Store field and when deleting lines, if it turns out that the line contains a different Store value, then the Store field in the document header is automatically set to an empty value (NULL).
 
 4. When adding a new line, then in the Line Store field is set the default value that equal to the value from the document header (unless another default value is explicitly set). If the document header value is empty (NULL), then as a default value in the new line is considered the value from the previous lines. If this is impossible, hard or inapplicable - then the default value is empty (NULL).
-
 
 
 - **BackEnd rules**
 1. When the document header is saved, the master-detail field's value is updated according to the value of the lines field (if any lines). 
 If all lines contain the same Store value, then this value is automatically set in the document header field.
 If the line contains different Store values, then the Store field in the document header is automatically set to an empty value (NULL).
-
 
 2. When а document line is saved, the master-detail field's value is updated according to the value of the field in the header. 
 
