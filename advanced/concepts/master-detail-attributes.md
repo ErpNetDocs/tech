@@ -46,5 +46,4 @@ If the line contains different Store values, then the Store field in the documen
 2. When а document line is saved, the master-detail field's value is updated according to the value of the field in the header. 
 
 3. When the document's header and lines are saved there is a final back end validation. If it turns out that despite the rules above, the values of the master-detail fields do not comply with the rules and principles above is thrown an error:
-
-*The master attribute '{the name of the field in the header}' should have the same values as the detail '{the name of the field in the lines}' attribute for all lines or null, if there are different values through the lines.*
+<br/>*The master attribute '{the name of the field in the header}' should have the same values as the detail '{the name of the field in the lines}' attribute for all lines or null, if there are different values through the lines.*
