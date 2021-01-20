@@ -26,8 +26,7 @@ In order to make sure that the main principle described above is followed, is cr
 
 ### Rules
 
-Rules
->FrontEnd rules
+- **FrontEnd rules**
 1. When the value of the document header's field is changed, this value is automatically set to ALL document lines.
 
 
@@ -43,7 +42,7 @@ For this reason -  after editing the value in the Line Store field and when del
 
 
 
->BackEnd rules 
+- **BackEnd rules**
 1. When the document header is saved, the master-detail field's value is updated according to the value of the lines field (if any lines). 
 If all lines contain the same Store value, then this value is automatically set in the document header field.
 If the line contains different Store values, then the Store field in the document header is automatically set to an empty value (NULL).
