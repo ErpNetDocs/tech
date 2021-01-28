@@ -34,7 +34,8 @@ The mechanism, when an adjustment document (when the document state is switched 
 
 Thus, in the adjustment document only the changes in the main document are marked. I.e. the user can decrease or increase the value of a scalar-valued field (quantity or amount) or to change/replace the value of a field which is neither key, nor scalar-valued.
 
-Key fields cannot be adjusted by adjustment documents!
+> [!Note]
+> Key fields cannot be adjusted by adjustment documents!
 
 Also if the adjustment document has no record corresponding to a record in the main document, then the original document will not be changed after the correction takes place. For example, if in the main document there is a row with number **30**, and in the adjustment document there is no such row, then row **30** from the main document will remain unchanged after the correction.
 
