@@ -1,5 +1,5 @@
 ---
-uid: Adjustment Documents
+uid: Adjustment-Documents
 ---
 
 # Adjustment Documents
