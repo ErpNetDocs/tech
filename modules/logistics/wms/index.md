@@ -2,7 +2,7 @@
 
 Warehouse Management Module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **Managed Warehouses**.
 
-**Managed Warehouses** are physical warehouses. which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
+**Managed Warehouses** are physical warehouses, which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
 
 - Picking
 - Put-Away
