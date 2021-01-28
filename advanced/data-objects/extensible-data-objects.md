@@ -26,7 +26,7 @@ The record in **Sys_Objects** has only untyped soft reference (not referential i
 All additional data is related to **Sys_Objects** through typed referential integrity. In this way, the only untyped soft reference is the original reference in **Sys_Objects**, but most data is solidly related through typed referential integrity.
 
 > [!NOTE] 
-> The todo:(Custom Properties) system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
+> The [Custom Properties](~/advanced/custom-attributes/overview.md) system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
 > If we would have to design the Custom Properties system now, it would be implemented as "additional data" to the EDO system.
 
 ## Future Plans
