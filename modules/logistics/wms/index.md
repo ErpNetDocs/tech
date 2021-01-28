@@ -41,6 +41,8 @@ The two most basic documents of WMS are:
 
 The basic operation flow of WMS is the following:
 
+![WMS](WMS.png)
+
 The steps, noted in (parens) in the diagram are as follows:
 
 1. The outside module/department creates W.R. based on its needs.
