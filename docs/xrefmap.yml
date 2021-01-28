@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Adjustment-Documents
+  name: Adjustment Documents
+  href: advanced/documents/adjustment-documents.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
@@ -145,6 +148,9 @@ references:
 - uid: Documents
   name: Documents
   href: concepts/documents.html
+- uid: Document-States
+  name: Document States
+  href: advanced/documents/document-states.html
 - uid: erpnet
   name: erpnet
   href: includes/erpnet.html

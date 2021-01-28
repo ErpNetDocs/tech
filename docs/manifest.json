@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "ii2SxPwCouskTXvbYEPUDQ=="
+          "hash": "sI84dL27H7rrHl35HackKg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "bk0YEoeuZ6QSx1WKupOxVQ=="
+          "hash": "pr3LzUpaopWMzqtpThdpSQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "HygdDGIK3FqWw9Ygtl25Ug=="
+          "hash": "AwPzF8/898n210RoxQGIJA=="
         }
       },
       "is_incremental": false,
@@ -1049,7 +1049,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/adjustment-documents.html",
-          "hash": "Qgk1mmzwfuQGwwNWLkXjIg=="
+          "hash": "fWUZX2DJg6Xx3ZHyL5Ok7g=="
         }
       },
       "is_incremental": false,
@@ -1085,7 +1085,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/document-states.html",
-          "hash": "3W8ItKFZ/WqtZ6aci+E0Gw=="
+          "hash": "/H3mnfpIoN/kxjgX8X+hsA=="
         }
       },
       "is_incremental": false,
@@ -1648,6 +1648,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/WMS.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/WMS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/handy.png",
       "output": {
         "resource": {
@@ -1730,7 +1741,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "uHAzpnSwwMGre+Y//0MPBQ=="
+          "hash": "uZ3mi8k1DbmbNV58IFuv1w=="
         }
       },
       "is_incremental": false,
