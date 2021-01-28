@@ -6,7 +6,7 @@ Jobs is a system in @@name, which automatically runs processes. The types of pro
 
 In most cases, in order to create a job, you have to simply create a new record with the desired Job Type in the Job navigator.
 
-Most parameters of the jobs have a default value and can operate without additional adjustments. An example is the todo:(J30903 DocumentPrintImages - Deletе Old Document Print Images)  jobs, which has only one parameter - "Print Images Retention Months" field Enterprise Company's definition, which has a default value of "60 months".
+Most parameters of the jobs have a default value and can operate without additional adjustments. An example is the [J30903 Document Print Images - Delete Old Document Print Images](xref:jobs-J30903) jobs, which has only one parameter - "Print Images Retention Months" field Enterprise Company's definition, which has a default value of "60 months".
 
 However, there are jobs that are jobs that are performing more complicated processes and is not logical to be executed for all records in the database. They require configuring additional settings. Such an example is **Document state change job**. 
 
