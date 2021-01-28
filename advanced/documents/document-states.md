@@ -1,5 +1,5 @@
 ---
-uid: Document States
+uid: Document-States
 ---
 
 # Document States
