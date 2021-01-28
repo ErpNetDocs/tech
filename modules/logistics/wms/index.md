@@ -2,7 +2,7 @@
 
 Warehouse Management Module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **Managed Warehouses**.
 
-**Managed Warehouses** are physical warehouses, which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
+**Managed Warehouses** are physical warehouses, which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
 
 - Picking
 - Put-Away
@@ -13,13 +13,13 @@ Warehouse Management Module follows the concepts of the Warehouse Management Sys
 - etc.
 
 > [!Note]
-> One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing "Store" concept is strictly bound to enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.
+> One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing "Store" concept is strictly bound to the enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.
 
 The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.
 
 ![Zones](zones.png)
 
-Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-division of a warehouse.
+Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-divisions of a warehouse.
 
 > [!Note]
 > Zones are used to accommodate different storage needs, such as different temperature requirements or turnover rate of the products.
