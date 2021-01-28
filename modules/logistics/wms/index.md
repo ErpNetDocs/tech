@@ -96,6 +96,7 @@ Cons:
 
 ### Choosing The Right Strategy
 
-There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in. <br>
-However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is possible direction. <br>
+There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in.
+
+However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is possible direction. 
 Also, mixing robot with human workers might require using custom strategies.
