@@ -32,9 +32,7 @@ The zones are further divided in **Locations**. Locations have name (like #1-8-2
 The two most basic documents of WMS are:
 
 - **Warehouse Requisitions (W.R.)** <br>
-  They contain outside request for warehouse operation (usually inbound/outbound).
-
-  
+  They contain outside requests for warehouse operations (usually inbound/outbound).
 
 - **Warehouse Orders (W.O.)** <br>
   They are the internal plan for execution of W.R. They contain routes, locations, workers, etc.
@@ -46,12 +44,12 @@ The basic operation flow of WMS is the following:
 The steps, noted in (parens) in the diagram are as follows:
 
 1. The outside module/department creates W.R. based on its needs.
-2. Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best case scenario, the creation of WO is totally automated.
+2. Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.
 3. The workers use their handheld devices to execute the order. Each step is recorded as both Warehouse Transaction and Warehouse Order Execution.
 4. After the WO is fully executed, the Warehouse Requisition Execution is updated.
 5. After the WR is fully executed, the external module/department updates its execution state.
 
-Typically, managed warehouse operations are executed using some sort of handheld devices, which are used to scan bar-codes, NFC tags, etc.
+Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.
 
 ![Handy](handy.png)
 
@@ -86,17 +84,17 @@ Under the Push System, there is a central planner, who plans the work and pushes
 Pros:
 
 - A central planner can better allocate the worker and machine resources to fulfill the requisitions.
-- In complicated execution, the Pull System might be inapropriate.
+- In complicated execution, the Pull System might be inappropriate.
 - Worker task management is taken away from the workers and controlled centrally.
 
 Cons:
 
 - More expensive - require a central planner.
-- The efficiency of the workers depend heavily on the planner. 
+- The efficiency of the workers depends heavily on the planner. 
 
 ### Choosing The Right Strategy
 
 There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in.
 
-However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is possible direction. 
-Also, mixing robot with human workers might require using custom strategies.
+However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is a possible direction. 
+Also, mixing robots with human workers might require using custom strategies.
