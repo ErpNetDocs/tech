@@ -1,6 +1,6 @@
 # Transitional Documents
 
-The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the Discrepancy System and lots of sub-documents are created.
+The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the [Document Fulfillment](document-fulfillment.md) System and lots of sub-documents are created.
 
 ## Example 1:
 
