@@ -132,7 +132,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | **Products and Technologies Module** |                               |             |
 | Products                             | YES                           | 20.1        |
 | Principal Recipies                   | YES                           | 21.1        |
-| Recipies                             | NO                            | -           |
+| Recipies                             | YES                           | 2015        |
 | **Production Planning Module**       |                               |             |
 | Product Supply                       | NO                            | -           |
 | **Resources Module**                 |                               |             |
