@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "eIDj1L8oa585E5iZBTlVsw=="
+          "hash": "8TrXFrObXU1NfWEWX7XJ2g=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "g+oywwRZ4pGbW6kkHk+rkQ=="
+          "hash": "Wp5o7F7cfWyM2MFWu8ZwUQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "QDQRN6QjmOY1WS3LZCQqjA=="
+          "hash": "4zZyG8WJFFSgTukaTn58yw=="
         }
       },
       "is_incremental": false,
@@ -1965,12 +1965,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.56.5.0 to 2.56.6.0.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "DocfxVersionChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
