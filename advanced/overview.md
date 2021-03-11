@@ -17,6 +17,6 @@ It is intended primarily for advanced ERP implementation consultants.
 - [Object / Relational Mapping](concepts/object-relational-mapping.md)
 - [Aggregates](concepts/aggregates.md)
 
-## Temp1
+## Temp
 
-[!list items=CalculatedAttributesQA folder="/calculated-attributes" file="*" depth=2 limit=10 style=bullet]
+[!list folder="/calculated-attributes" file="*" depth=2 limit=10 style=bullet]
