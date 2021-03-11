@@ -10,5 +10,5 @@ It is targeted towards implementation consultants and power users.
 - [Advanced](~/advanced/overview.md) - documentation of advanced systems.
 
 ## Other documentations
-- [Domain Model](https://erpnetdocs.github.io/model) - reference information about the entities, business rules, generations, etc.
+- [Data Model](https://erpnetdocs.github.io/model) - reference information about the entities, business rules, generations, etc.
 - [Developer Documentation](https://erpnetdocs.github.io/dev) - information for developers.
