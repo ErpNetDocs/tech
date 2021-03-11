@@ -1,4 +1,4 @@
-﻿- name: Concepts
+- name: Concepts
   href: concepts/
 - name: Functionality
   href: modules/
@@ -6,7 +6,5 @@
   href: advanced/  
 - name: Reference
   href: reference/
-- name: Model
-  href: https://docs.erp.net/model
 - name: Return to DOCS ⏶
   href: https://docs.erp.net/
