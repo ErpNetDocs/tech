@@ -19,4 +19,4 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Temp
 
-[!list folder="/calculated-attributes" file="*" depth=1 limit=50 style=numbers]
+[!list folder="/calculated-attributes" file="*" depth=1 limit=50 style=number]
