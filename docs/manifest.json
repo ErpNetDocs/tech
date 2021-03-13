@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/Overview.html",
-          "hash": "jFQ8ukQww+o0GsSMvgjyyA=="
+          "hash": "8TrXFrObXU1NfWEWX7XJ2g=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "uXmSClfXw2/BciQmCsHh4A=="
+          "hash": "wj5M+uz7+VvNqLmA66gk/A=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "WrlMZn/J/son4BRrsSXV3g=="
+          "hash": "XUYspNRk5fVqlPa7iP2kIg=="
         }
       },
       "is_incremental": false,
@@ -1156,7 +1156,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/overview.html",
-          "hash": "jq+1RNSIIu6sDrarZnZIwg=="
+          "hash": "6YXTxG6ucAWQIV+xZqsl0A=="
         }
       },
       "is_incremental": false,
@@ -1414,10 +1414,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/five-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/five-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/five-zones.svg",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/five-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/four-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/four-zones.png"
         }
       },
       "is_incremental": false,
@@ -1436,6 +1458,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/six-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/six-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/six-zones.svg",
       "output": {
         "resource": {
@@ -1447,10 +1480,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/three-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/three-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/three-zones.svg",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/three-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/two-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/two-zones.png"
         }
       },
       "is_incremental": false,
