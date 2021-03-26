@@ -62,7 +62,7 @@
   "advanced/calculated-attributes/examples/Overview.html": {
     "href": "advanced/calculated-attributes/examples/Overview.html",
     "title": "Examples | ERP.net Tech Docs",
-    "keywords": "Examples Check Whether the Releasing of the Document Is First or Not Calculate StandartPricePerLot based on the Ingredients and the Operations in the Recipe Check If a value of a field Is changed in the Adjustment Document Check If the Quantity is a whole number Check If the system type of Payment type in the Sales Order is 'In Cash' Compare Unit Price And Standard Unit Price Get Current Availabilities of a Product Sales Amounts Of The Customer For The Last 30 Days Specific Day From Document Date Total Quantity And Scrap Quantity In Recipe Ingredients"
+    "keywords": "Examples Check Whether the Releasing of the Document Is First or Not Check if the current user has authorization Check If the Quantity is a whole number Check If the system type of Payment type in the Sales Order is 'In Cash' Compare Unit Price And Standard Unit Price Convert a Value of a Custom Property to a Number Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line Get Current Availabilities of a Product Specific Day From Document Date Total Quantity And Scrap Quantity In Recipe Ingredients"
   },
   "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html": {
     "href": "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
@@ -237,7 +237,7 @@
   "advanced/calculated-attributes/operators/Overview.html": {
     "href": "advanced/calculated-attributes/operators/Overview.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators GT - Calculated Attribute Operator IIF - Calculated Attribute Operator OR - Calculated Attribute Operator TODAY - Calculated Attribute Operator CONCAT - Calculated Attribute Operator FILTER - Calculated Attribute Operator NOT - Calculated Attribute Operator SORT - Calculated Attribute Operator SUBSTRING - Calculated Attribute Operator SUM - Calculated Attribute Operator"
+    "keywords": "Operators INCNUM - Calculated Attribute Operator ADD - Calculated Attribute Operator CAST - Calculated Attribute Operator COUNT - Calculated Attribute Operator FORMATSTRING - Calculated Attribute Operator GTE - Calculated Attribute Operator OR - Calculated Attribute Operator TODAY - Calculated Attribute Operator TOLOWER - Calculated Attribute Operator TOUPPER - Calculated Attribute Operator"
   },
   "advanced/calculated-attributes/operators/pos.html": {
     "href": "advanced/calculated-attributes/operators/pos.html",
@@ -377,7 +377,7 @@
   "advanced/calculated-attributes/QA/Overview.html": {
     "href": "advanced/calculated-attributes/QA/Overview.html",
     "title": "Q & A | ERP.net Tech Docs",
-    "keywords": "Q & A How to create an optimally fast calculated attribute? How to determine the party type of a party? How to check if a custom property has value? How to check if a list have values? How to check whether a field that points to a reference object has a value? How to get attribute value from list? How to get specific field of a parent document? How to show contact of a Person in Persons navigator? How to use the customer as a company?"
+    "keywords": "Q & A How to use the customer as a company? How to check if a custom property has value? How to check if a list have values? How to check whether a field that points to a reference object has a value? How to create an optimally fast calculated attribute? How to determine the party type of a party? How to get attribute value from list? How to get specific field of a parent document? How to show contact of a Person in Persons navigator?"
   },
   "advanced/concepts/aggregates.html": {
     "href": "advanced/concepts/aggregates.html",
@@ -462,7 +462,7 @@
   "advanced/overview.html": {
     "href": "advanced/overview.html",
     "title": "Advanced Section | ERP.net Tech Docs",
-    "keywords": "Advanced Section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced Systems Documents - document-related concepts and services. Custom Attributes - user-defined data attributes. Calculated Attributes - user-defined calculations. Business Rules - user-defined and system business rules. Data Objects - data object extensibility systems. Advanced Concepts Master / Detail Attributes Object / Relational Mapping Aggregates Temp GT - Calculated Attribute Operator LIKE - Calculated Attribute Operator Operators CONCAT - Calculated Attribute Operator Config Options Reference CRM Presales FILTER - Calculated Attribute Operator SORT - Calculated Attribute Operator Specific Day From Document Date SUBSTRING - Calculated Attribute Operator"
+    "keywords": "Advanced Section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced Systems Documents - document-related concepts and services. Custom Attributes - user-defined data attributes. Calculated Attributes - user-defined calculations. Business Rules - user-defined and system business rules. Data Objects - data object extensibility systems. Advanced Concepts Master / Detail Attributes Object / Relational Mapping Aggregates Temp CAST - Calculated Attribute Operator Check if the current user has authorization Compare Unit Price And Standard Unit Price ERP.net Modules ERP.net Production Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line Specific Day From Document Date Warehouse Management Warehouse Zones and Locations Zone Policies"
   },
   "concepts/documents.html": {
     "href": "concepts/documents.html",
