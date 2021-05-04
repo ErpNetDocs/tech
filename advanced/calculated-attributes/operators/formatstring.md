@@ -11,7 +11,7 @@ items: Operators
 | Parameter 1 Name| Param1|
 | Parameter 1 Type| object (any type)|
 | Parameter 2 Name| Format|
-| Parameter 2 Type| constant - the format argument must contain a valid .NET Framework format string, either as a standard format string (for example, "C" or "D") or as a pattern of custom characters for dates and numeric values (for example, "MMMM DD, yyyy (dddd)"). For more information about the supported format specifiers, see @(Format Specifiers).|
+| Parameter 2 Type| constant - the format argument must contain a valid .NET format string, either as a standard format string (for example, "C" or "D") or as a pattern of custom characters for dates and numeric values (for example, "MMMM DD, yyyy (dddd)"). For more information about the supported format specifiers, see @(Format Specifiers).|
 | Parameter 3 Name| - |
 | Parameter 3 Type| - |
 | Return Value| Param1 as a string formatted by the rule in Format.|
