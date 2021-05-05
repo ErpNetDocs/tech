@@ -1,5 +1,8 @@
-# Generation Procedures Overview
+---
+uid: generation-procedures
+---
 
+# Generation Procedures Overview
 
 ![Generation Procedures](generation-procedure.SVG)
 
@@ -42,5 +45,3 @@ For every Generation Procedure that is marked as an Obsolete is scheduled a **Da
 3. DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the lifetime stage DEAD. <br> **An error that can not be avoided will be thrown.**
 
 With the release of the new main version after the Date of Suspension, the obsolete generation procedure is **to be deleted** and it will no longer appear in the drop-down lists.
-
-
