@@ -157,6 +157,9 @@ references:
 - uid: extensible-data-objects
   name: Extensible Data Objects EDO
   href: advanced/data-objects/extensible-data-objects.html
+- uid: generation-procedures
+  name: Generation Procedures Overview
+  href: advanced/documents/generation-procedures.html
 - uid: master-detail
   name: Master / Detail Attributes
   href: advanced/concepts/master-detail-attributes.html
@@ -166,3 +169,6 @@ references:
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html
+- uid: transitional-documents
+  name: Transitional Documents
+  href: advanced/documents/transitional-documents.html
