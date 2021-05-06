@@ -166,6 +166,9 @@ references:
 - uid: name
   name: name
   href: includes/name.html
+- uid: sales-order-row-types
+  name: Sales Order Row Types
+  href: modules/crm/sales/sales-order-row-types.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html

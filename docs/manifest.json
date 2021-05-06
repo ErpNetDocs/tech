@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "/V4UxdWoucWhPDY+gpKDKw=="
+          "hash": "LqofND6w8Ray5Hf5+pQCQw=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "O898wNoE4+X+e6ceHI3oNw=="
+          "hash": "/uF/1xIl8PwPly/+N1RmKg=="
         }
       },
       "is_incremental": false,
@@ -1654,6 +1654,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/sales-order-row-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/sales-order-row-types.html",
+          "hash": "MFhzoA+5N38BlYlpwH3sVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/Fixed Assets/Depreciation Methods/DeprecationFunctions.md",
       "output": {
         ".html": {
@@ -1957,7 +1969,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "GeWCDoOOtsF00Auqk4aq7A=="
+          "hash": "7GKSc52Izc6ypDFEeb59mA=="
         }
       },
       "is_incremental": false,
