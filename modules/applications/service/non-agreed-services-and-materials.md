@@ -18,12 +18,12 @@ After all, the non-agreed materials and services are calculated by subtracting t
 For each Material line in the current Service Activity all records from Distributed Service Agreement Materials table which correspond the current line are derived.
 The amounts from the Agreed Quantity column are summed up (converted to the measurement unit of the material in the service activity line; the values in Agreed Quantity column are in measurement unit of the Service Agreement) and the sum is subtracted from the quantity in the current line (only if the sum is not greater than the quantity in the current line).
 This is the calculation:
-
+```
 [**non-agreed material quantity**] =
   if [**Service Activity Material Quantity**] >= [**sum of distributed service agreement materials**]
     then [**Service Activity Material Quantity**] - [**sum of distributed service agreement materials**]
     else **0**
-
+```
 ### Example 1:
 There is a Service Activity with three lines with materials:
 - line #10, Material #1, **10PCS**;
@@ -44,11 +44,11 @@ Thus, for line #10 from the Service Activity the distributed quantity is **0PCS*
 
 The services are not invoices directly as they are not products, so to invoice them the information in Service Invoicing from the Service definition is used.
 So, for each Service Activity line with service and for each record in Service Invoicing the following quantity of the product from the Service Invoicing records, is calculated:
-
+```
 [**quantity to invoice**] =
   [**Service Activity Service Quantity**] * [**ServiceInvoicing.QuantityOfProduct**] /
     [**ServiceInvoicing.QuantityOfService**]
-
+```
 The distributed quantities from the Service Agreements which correspond the current service line are subtracted from the described above **quantity to invoice**. 
 But this is performed in two stages as in the Service agreements there are two methods to describe agreements for services - one is to agree on a certain number of the **service**, and the second is to agree on certain number from the product from the **Service Invoicing**. 
 
@@ -57,28 +57,28 @@ Thus the non-agreed quantity of a specific product which invoices a specific ser
 At first, what quantity is not agreed by Service Agreements is calculated. 
 This happens as all distributed quantities for the specified line listed in the Distributed Service Agreement Services table (but only records which are on specific Service Agreements where the Service attribute is selected and Service Product attribute is null) are subtracted from the quantity from the Service Activity line.
 The following temporary value is calculated:
-
+```
 [**preliminary quantity 1**] =
   if [**Service Activity Service Quantity**] >= [**sum of distributed service agreement services**]
     then [**Service Activity Service Quantity**] - [**sum of distributed service agreement services**]
     else **0**
-
+```
 Using this **preliminary quantity 1** for each product in Service Invoicing in the service definition a preliminary quantity for invoice is calculated:
-
+```
 [**preliminary quantity** **2**] =
   [**preliminary quantity** **1**] * [**ServiceInvoicing.QuantityOfProduct**] /
     [**ServiceInvoicing.QuantityOfService**]
-
+```
 And at the end, from the **sum of distributed service agreement services** which are for the same product and for which we have calculated the preliminary quantity, the calculated **preliminary quantity 2** is subtracted. 
 But only for quantities which are based on Service Agreements lines and which have empty Service attribute and not null Product attribute. 
 Also, the distributed quantities are always converted to the measurement unit which is selected in the Service Invoicing record (as the measurement unit in the Service Agreement may be different).
 So:
-
+```
 [**non agreed quantity of a product for invoicing**] =
   if [**preliminary quantity** **2**] >= [**sum of the distributed quantities of the product from Service Agreements**]
     then [**preliminary quantity** **2**] - [**sum of the distributed quantities of the product from Service Agreements**]
     else **0**
-
+```
 ### Example 2:
 Lets have Service #1 with the following Service Invoicing data:
 - 1 PCS of Service = 2 PCS of Product #1;
