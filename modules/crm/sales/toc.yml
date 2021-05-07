@@ -2,4 +2,8 @@
   href: index.md
 - name: Sales Order Row Types
   href: sales-order-row-types.md
- sales-order-payment-plan.md 
+- name: Sales Order Payment Plan  
+  href: sales-order-payment-plan.md 
+- name: Amount to pay
+  href: amount-to-pay.md
+  
