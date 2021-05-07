@@ -1,5 +1,5 @@
 ---
-uid:sales-order-payment-plan
+uid: sales-order-payment-plan
 ---
 
 # Sales Order Payment Plan
