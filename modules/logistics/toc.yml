@@ -3,3 +3,6 @@
 - name: WMS
   href: wms/toc.yml
   topicHref: wms/index.md
+- name: Inventory
+  href: inventory/toc.yml
+  
