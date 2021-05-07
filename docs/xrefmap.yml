@@ -142,6 +142,12 @@ references:
 - uid: cao-WHERE
   name: WHERE - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/where.html
+- uid: defining-vat-and-base-for-vat-entries
+  name: Defining VAT and Base for VAT Entries
+  href: modules/financials/VAT/defining-vat-and-base-for-vat-entries.html
+- uid: determine-unit-price-and-line-amount-in-invoice-orders
+  name: Determine Unit Price and Line Amount in Invoice Orders
+  href: modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.html
 - uid: document-flow
   name: Document Flow
   href: advanced/documents/document-flow.html
@@ -151,6 +157,9 @@ references:
 - uid: Document-States
   name: Document States
   href: advanced/documents/document-states.html
+- uid: domain-with-property-allowed-values
+  name: Domain with Property Allowed Values
+  href: advanced/custom-attributes/domain-with-property-allowed-values.html
 - uid: erpnet
   name: erpnet
   href: includes/erpnet.html
@@ -160,12 +169,21 @@ references:
 - uid: generation-procedures
   name: Generation Procedures Overview
   href: advanced/documents/generation-procedures.html
+- uid: inventory-module
+  name: Inventory Module
+  href: modules/logistics/inventory/index.html
 - uid: master-detail
   name: Master / Detail Attributes
   href: advanced/concepts/master-detail-attributes.html
 - uid: name
   name: name
   href: includes/name.html
+- uid: non-agreed-services-and-materials
+  name: Non Agreed Services And Materials
+  href: modules/applications/service/non-agreed-services-and-materials.html
+- uid: sales-order-payment-plan
+  name: Sales Order Payment Plan
+  href: modules/crm/sales/sales-order-payment-plan.html
 - uid: sales-order-row-types
   name: Sales Order Row Types
   href: modules/crm/sales/sales-order-row-types.html
@@ -175,3 +193,6 @@ references:
 - uid: transitional-documents
   name: Transitional Documents
   href: advanced/documents/transitional-documents.html
+- uid: wms
+  name: Warehouse Management
+  href: modules/logistics/wms/index.html

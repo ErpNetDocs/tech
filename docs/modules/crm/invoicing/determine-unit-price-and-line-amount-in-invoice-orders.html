@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Examples | ERP.net Tech Docs </title>
+    <title>Determine Unit Price and Line Amount in Invoice Orders | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Examples | ERP.net Tech Docs ">
+    <meta name="title" content="Determine Unit Price and Line Amount in Invoice Orders | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,22 +76,28 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="examples">Examples</h1>
+            <article class="content wrap" id="_content" data-uid="determine-unit-price-and-line-amount-in-invoice-orders">
+<h1 id="determine-unit-price-and-line-amount-in-invoice-orders">Determine Unit Price and Line Amount in Invoice Orders</h1>
 
-<ul>
-<li><a href="CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.html">Check If a value of a field Is changed in the Adjustment Document</a></li>
-<li><a href="CheckIfTheCurrentUserHasAuthorization.html">Check if the current user has authorization</a></li>
-<li><a href="CheckIfTheQuantityIsAWholeNumber.html">Check If the Quantity is a whole number</a></li>
-<li><a href="CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the system type of Payment type in the Sales Order is 'In Cash'</a></li>
-<li><a href="CompareUnitPriceAndStandardUnitPrice.html">Compare Unit Price And Standard Unit Price</a></li>
-<li><a href="ConvertPropertyToNumber.html">Convert a Value of a Custom Property to a Number</a></li>
-<li><a href="GetCurrentAvailabilitiesOfAProduct.html">Get Current Availabilities of a Product</a></li>
-<li><a href="GetValueAndDescriptionOfReferentObject.html">Get Value And Description Of Referent Object</a></li>
-<li><a href="SpecificDayFromDocumentDate.html">Specific Day From Document Date</a></li>
-<li><a href="TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a></li>
-<li>...</li>
-</ul>
+<p>The Invoice Orders and their lines are created to generate Invoice documents with which to be invoiced particular Sales Order Lines. For this reason, every Invoice Order Lines points to and fulfils exactly one Sales Order Line.</p>
+<p>In some cases though, when the parent document is a Shipment, for example, the Unit Price and Line Amount could not be copied directly from the parent document. They could not be copied from the Sales Order as well, because the line might be broken down (by lots for example) during the goods issue and the Line Amount will not be the same. Therefore those amounts must be calculated.</p>
+<h1 id="calculation">Calculation</h1>
+<p>Initially, when the Invoice Order and its lines are created the <strong>Quantity</strong> is copied from the parent documents line, the <strong>Unit Price</strong> and the discounts are copied from the Parent Sales Order Line. The Quantity and Unit Price values are used for the calculation of the <strong>Line Amount</strong>.</p>
+<p><em><strong>The algorithm is as follows:</strong></em></p>
+<p><strong>[LineAmount]</strong> = Round(<strong>[Quantity]</strong> * <strong>[Unit Price]</strong> * (1 - <strong>[Line Standard Discount Percent]</strong>) * (1 - <strong>[Line Custom Discount Percent]</strong>))</p>
+<p>*The Line Amount is rounded up to the second digit.</p>
+<p><em><strong>Example:</strong></em></p>
+<p><em>SalesOrderLine1</em>: Quantity = 3 PCS , UnitPrice = 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 5.78 EUR</p>
+<p><em>ShipmentLine1:</em> Quantity = 2 PCS</p>
+<p><em>ShipmentLine2:</em> Quantity = 1 PCS</p>
+<p><em>InvoiceOrderLine1:</em> Quantity = 2 PCS, UnitPrice = 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 2<em>2.5694</em>(0.75) = 3.8541 ~ 3.85 EUR</p>
+<p>InvoiceOrderLine2: Quantity = 1 PCS, UnitPrice = 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 1<em>2.5694</em>(0.75) = 1.92705 ~ 1.93 EUR</p>
+<p>Then when saving the document the Discrepancy System (for more information see <a href="https://olddocs.erp.net/tech/discrepancy-system-22380546.html">Discrepancy System</a>) initializes а depletion of the <strong>rounded Line Amount</strong> which leads to a recalculation of the <strong>Unit Price</strong>:</p>
+<p><strong>[Unit Price]</strong> = Round(<strong>[LineAmount]</strong> / (1 - <strong>[Line Standard Discount Percent]</strong>) / (1 - <strong>[Line Custom Discount Percent])</strong> / <strong>[Quantity]</strong> )</p>
+<p>*The Unit Price is rounded up to the fifth digit.</p>
+<p><em><strong>Example:</strong></em></p>
+<p><em>InvoiceOrderLine1:</em> Quantity = 2 PCS, LineAmount = 3.85 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, UnitPrice = 3.85 / 0.75 / 2 = 2.5666666... ~ 2.56667 EUR</p>
+<p><em>InvoiceOrderLine2:</em> Quantity = 1 PCS, LineAmount = 1.93 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, UnitPrice = 1.93 / 0.75 / 1 = 2.57333333... ~ 2.57333 EUR</p>
 </article>
           </div>
           
@@ -100,7 +106,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/Overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Customer Relationship Management (CRM) Subsystem | ERP.net Tech Docs </title>
+    <title>Additional Amounts | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Customer Relationship Management (CRM) Subsystem | ERP.net Tech Docs ">
+    <meta name="title" content="Additional Amounts | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,41 +77,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="customer-relationship-management-crm-subsystem">Customer Relationship Management (CRM) Subsystem</h1>
+<h1 id="additional-amounts">Additional Amounts</h1>
 
-<p>The CRM subsystem in ERP.net is used to manage customer relationships and other front-office activities of a company.</p>
-<h2 id="general-concepts-and-processes">General concepts and processes</h2>
-<p>The main process in the CRM subsystem is:</p>
-<blockquote>
-<p><em>Activity</em> → <em>Opportunity</em> → <em>Offer</em> → <em>Sales Order</em> → <em>Invoice Order</em> → <em>Invoice</em></p>
-</blockquote>
+<p>The additional amounts are a mechanism for reporting financial amounts in documents that are not contained by the document rows and/or do not represent measurement of the main purpose of the document.
+The main purpose is written in the document rows or in the document header. For example:</p>
 <ul>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.Contacts.Activities.html">Activity</a></strong> - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Presales.Deals.html">Opportunity</a></strong> - sales opportunity, with expected revenue and probability. It does not have detail line items.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Presales.Offers.html">Offer</a></strong> - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Sales.SalesOrders.html">Sales Order</a></strong> - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.InvoiceOrders.html">Invoice Order</a></strong> - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.Invoices.html">Invoice</a></strong> - legal and financial document, finalizing the sales process.</li>
+<li>product price or product cost (goods or services), which is sold or bought;</li>
+<li>enterprise company asset price or cost (fixed, financial or rental);</li>
+<li>value/amount of monetary transaction (transfer, payment or obligation).</li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The above diagram shows only the CRM part of the whole process.
-The full process involves many different modules of the ERP system.</p>
-</div>
-<h2 id="modules">Modules</h2>
-<p>There are many modules in the CRM subsystem.
-They are used to manage the different aspects of the CRM processes:</p>
+<p>The amounts listed above are <em>base amounts</em> in documents and they are NOT additional.</p>
+<p>The <strong>additional amounts</strong> are not proper to be reported along with the main document purpose or they are secondary effect of the main document purpose.
+These are some examples:</p>
 <ul>
-<li><strong><a href="contacts/index.html">Contacts and tasks</a></strong> - calendar appointments, party definitions, etc.</li>
-<li><strong><a href="presales/index.html">Pre-sales</a></strong> - Opportunities management, quotation, etc.</li>
-<li><strong><a href="sales/index.html">Sales</a></strong> - Sales Orders, customers, etc.</li>
-<li><strong><a href="invoicing/index.html">Invoicing</a></strong> - Invoicing process management, invoices and BI.</li>
-<li><strong>POS</strong> - Manage point-of-sale activities in physical stores.</li>
-<li><strong>Marketing</strong> - Marketing campaigns, activities, distribution channels, etc.</li>
-<li><strong>Distribution</strong> - field sales, sales person targets management, etc.</li>
-<li><strong>Pricing</strong> - price lists management.</li>
-<li><strong>Product Configuration</strong> - create products based on specs for job shops (made-to-order and engineer-to-order environments).</li>
-<li><strong>Products</strong> - manage products master data - products and product measurements, codes, variants, channel, pictures, groups, etc.</li>
+<li>VAT (and other taxes) - taxes, like VAT, are not products which the enterprise company is selling, producing or supplying; bеcause of this the taxes are usually reported as additional amounts in the documents;</li>
+<li>VAT deviation - this is special amount used for equalization of the VAT in the store sales (because of specific roundings); this amount is addition because it is used to obtain the legal rate of the VAT.</li>
+<li>taxes (as customs) - the same principals as in the taxes are applied;</li>
+<li>discounts - some types of customer discounts are represented as additional amounts; they are entered as additional amounts when the discount cannot be entered in a specific document row or there are no active promotions or bonus programs, which control this discount;</li>
+<li>increases and decreases -  the same principle is applied as in discounts; if the increases and/or decreases cannot be defined in the rows or as part of a sale instrument such as promotional programs or bonus packages, than they are entered as additional amounts;</li>
+<li>commissions (and other internal mechanisms for payments or money accounting) - commissions and similar can be entered as additional amounts too; if they are used as additional amounts, they can represent a percent of the document amount and the result can be used for recording internal company performance indicators or personal employees indicators.</li>
 </ul>
 </article>
           </div>
@@ -121,7 +105,7 @@ They are used to manage the different aspects of the CRM processes:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
