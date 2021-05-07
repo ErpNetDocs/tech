@@ -20,11 +20,11 @@ So the **Amount To Pay** is: **54 EUR** = 24 EUR + 21 EUR +9 EUR.
 ## Relation To Tax Base And VAT (Invoices)
 
 In most cases the **Amount To Pay** matches the sum of Tax Base and VAT, like in **Example1**, but a difference is possible.
-It is possible if there are [Additional Amounts](https://olddocs.erp.net/tech/additional-amounts-17498113.html) which are paid by the customer but are not set as base amounts for VAT additional amount.
+It is possible if there are [Additional Amounts](../advanced/documents/additional-amounts.md) which are paid by the customer but are not set as base amounts for VAT additional amount.
 
 ### Example 2:
 
-There is an Invoice with Line Amount of **45 EUR** and two [Additional Amounts](https://olddocs.erp.net/tech/additional-amounts-17498113.html) which are paid by the customer:
+There is an Invoice with Line Amount of **45 EUR** and two [Additional Amounts](../advanced/documents/additional-amounts.md) which are paid by the customer:
 
 - VAT, amount: 20% of **45 EUR** = **9 EUR**
 - Penalty Interest - not a VAT base amount, Amount: **20 EUR**
@@ -40,7 +40,7 @@ There is an Invoice with two rows:
 - Row #10 - Product **1**, LineAmount: **2 PCS** x **12 EUR** = **24 EUR**
 - Row #20 - Product **2**, LineAmount: **3 PCS** x **7 EUR** = **21 EUR**
 
-and [Additional Amounts](https://olddocs.erp.net/tech/additional-amounts-17498113.html) as follows:
+and [Additional Amounts](../advanced/documents/additional-amounts.md) as follows:
 
 - **Tax Base**, Amount: **30 EUR**
 - **VAT**, Amount Percent **20%** of **30 EUR** = **6 EUR**
