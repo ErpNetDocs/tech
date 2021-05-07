@@ -62,7 +62,7 @@
   "advanced/calculated-attributes/examples/Overview.html": {
     "href": "advanced/calculated-attributes/examples/Overview.html",
     "title": "Examples | ERP.net Tech Docs",
-    "keywords": "Examples Check If a value of a field Is changed in the Adjustment Document Check if the current user has authorization Check If the Quantity is a whole number Check If the system type of Payment type in the Sales Order is 'In Cash' Compare Unit Price And Standard Unit Price Convert a Value of a Custom Property to a Number Get Current Availabilities of a Product Get Value And Description Of Referent Object Specific Day From Document Date Total Quantity And Scrap Quantity In Recipe Ingredients ..."
+    "keywords": "Examples Calculate StandartPricePerLot based on the Ingredients and the Operations in the Recipe Check if the current user has authorization Check If the Quantity is a whole number Check If the system type of Payment type in the Sales Order is 'In Cash' Check Whether the Releasing of the Document Is First or Not Compare Unit Price And Standard Unit Price Get Value And Description Of Referent Object Sales Amounts Of The Customer For The Last 30 Days Specific Day From Document Date Total Quantity And Scrap Quantity In Recipe Ingredients ..."
   },
   "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html": {
     "href": "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
@@ -237,7 +237,7 @@
   "advanced/calculated-attributes/operators/Overview.html": {
     "href": "advanced/calculated-attributes/operators/Overview.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators EQUAL - Calculated Attribute Operator GTE - Calculated Attribute Operator LEN - Calculated Attribute Operator ORDERBY - Calculated Attribute Operator ROUND - Calculated Attribute Operator SELECT - Calculated Attribute Operator SORT - Calculated Attribute Operator SUBSTRING - Calculated Attribute Operator TOP - Calculated Attribute Operator TOUPPER - Calculated Attribute Operator ..."
+    "keywords": "Operators ADD - Calculated Attribute Operator CONVERT - Calculated Attribute Operator FILTER - Calculated Attribute Operator GETOBJVALUE - Calculated Attribute Operator GTE - Calculated Attribute Operator LEFT - Calculated Attribute Operator LIST - Calculated Attribute Operator NOT - Calculated Attribute Operator REGEX - Calculated Attribute Operator REPLACE - Calculated Attribute Operator ..."
   },
   "advanced/calculated-attributes/operators/pos.html": {
     "href": "advanced/calculated-attributes/operators/pos.html",
