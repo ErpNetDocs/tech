@@ -2,4 +2,4 @@
 uid: inventory-module
 ---
 
-# Inventory module
+# Inventory Module
