@@ -1,4 +1,5 @@
 - name: Overview
   href: index.md
-- name: Overview
-  href: overview.md
+- name: Defining VAT and Base for VAT Entries
+  href: defining-vat-and-base-for-vat-entries.md
+  
