@@ -24,7 +24,7 @@ For the last month: Depreciation = Month quota - First month Depreciation
 >
 > Depreciation Plan = 14.01 - 14.07
 >
-> Mont quota = 120 / 6 months = 20 
+> Month quota = 120 / 6 months = 20 
 >
 > First month Depreciation = 20 * ((31-14)/31) = 10.97
 >
