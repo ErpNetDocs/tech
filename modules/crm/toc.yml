@@ -6,3 +6,6 @@
   href: presales/toc.yml
 - name: Sales
   href: sales/toc.yml
+- name: Invoicing
+  href: invoicing/toc.yml
+  
