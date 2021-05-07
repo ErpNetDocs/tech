@@ -1,3 +1,7 @@
+---
+uid: domain-with-property-allowed-values
+---
+
 ## Domain with Property Allowed Values
 
 Domain is the range of the allowed values of the particular Custom Property. It is determined in one of the following ways - sorted by priority:
