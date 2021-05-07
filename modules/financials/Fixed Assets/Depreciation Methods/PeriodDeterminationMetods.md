@@ -16,7 +16,7 @@ For the first month: First month Depreciation =  Month quota * ((Number of Days 
 
 For every next month but last one: Depreciation =  Month quota
 
-For the last month: Depreciation = Mont quota - First month Depreciation
+For the last month: Depreciation = Month quota - First month Depreciation
 
 > Example:
 >
