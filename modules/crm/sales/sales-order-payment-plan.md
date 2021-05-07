@@ -46,7 +46,7 @@ If for the particular sales order there is no indicated payment plan at all, the
 
 In order to determine the amount of each instalment, it is first necessary to determine what is the total / final amount that has to be paid for this transaction. This is done using the data from several documents - the Sales Order with which the transaction is reflected and all Invoices for this sale (both for the advance and for delivery).
 
-For this purpose, two types of Amounts are calculated separately – Sales Order Amounts and Invoice Amounts, which are then summed to obtain the final amount. Invoice Amounts are the Amounts to Pay (see topic [Amount To Pay](https://olddocs.erp.net/tech/amount-to-pay-17498134.html)) of the delivery Invoices. And the Sales Orders Amounts are the paid advances and the remaining part of the Amount to Pay (see topic [Amount To Pay](https://olddocs.erp.net/tech/amount-to-pay-17498134.html)) of the Sales Order, which is not covered by an advance or delivery.
+For this purpose, two types of Amounts are calculated separately – Sales Order Amounts and Invoice Amounts, which are then summed to obtain the final amount. Invoice Amounts are the Amounts to Pay (see topic [Amount To Pay](amount-to-pay.md)) of the delivery Invoices. And the Sales Orders Amounts are the paid advances and the remaining part of the Amount to Pay (see topic [Amount To Pay](amount-to-pay.md)) of the Sales Order, which is not covered by an advance or delivery.
 
 
 
