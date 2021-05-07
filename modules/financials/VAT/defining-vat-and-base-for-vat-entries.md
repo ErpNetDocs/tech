@@ -1,1 +1,5 @@
-# Defining VAT And Base For VAT Entries
+---
+uid: defining-vat-and-base-for-vat-entries
+---
+
+# Defining VAT and Base for VAT Entries
