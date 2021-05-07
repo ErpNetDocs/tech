@@ -1,3 +1,7 @@
+---
+uid: wms
+---
+
 # Warehouse Management
 
 Warehouse Management Module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **Managed Warehouses**.
