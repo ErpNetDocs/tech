@@ -10,7 +10,7 @@ This topic describes the essence of the Sales Order Payment Plans, the method of
 
 The sales order payment plan determines how the amount of the given sales order is paid (with how many instalments and their individual amounts).
 
-For each instalment, there are two main attributes - **a method for determining the amount* and *a method for determining the due dates (the payment term).**
+For each instalment, there are two main attributes - **a method for determining the amount and a method for determining the due dates (the payment term).**
 
 **Methods for determining the amount (specified by the "Amount Percent", "Amount" and "Remainder" fields):**
 
