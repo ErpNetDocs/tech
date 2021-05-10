@@ -13,7 +13,7 @@ Transitional documents, by default, are hidden from the document flow.
 Since they are totally automated and not user-created, they are usually of no interest to the user.
 They are used just to keep the document flow contiguous, but are hidden to keep it clean.
 
-Not all generations can create transitional documents. Only *deterministic* generations can create such documents.
+Not all generations can create transitional documents. Only **deterministic** generations can create such documents.
 
 # Transitional document setup
 
@@ -28,13 +28,13 @@ Not all generations support generating and adjusting (patching) a transitional d
 Since the adjustment (patch) procedure supports matching the lines primarily by **Line No**, the generation should guarantee to always generate the same line numbers, given the same starting document.
 
 In other words, if we execute the generation several times for the same document, the same resulting line numbers will be generated. This can be guaranteed if the generation generates the sub-document(s) using data only from the source (parent) document and **does not** look outside it. 
-Common external data, that can make a generation *non-deterministic* include: 
+Common external data, that can make a generation **non-deterministic** include: 
 
 - Using date or time
 - Using available quantities
 - Using data from the definitions of related objects
 
-Actually, generations sometimes use outside data and are still considered *deterministic*.
+Actually, generations sometimes use outside data and are still considered **deterministic**.
 The main driving factor is whether the outside data influences the resulting line numbers.
 If the generation uses outside data, but still maintains generating the same line numbers, it is still considered deterministic for the purposes of document generation.
 
