@@ -70,5 +70,3 @@ The following is a list of the types of jobs, which can be scheduled:
 
 > [!note]
 > The table columns and content are explained in [Jobs Tamplate](xref:template-description-jobs)
-
-The table columns and content are explained in [Jobs Tamplate](xref:template-description-jobs)
