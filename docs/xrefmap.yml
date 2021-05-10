@@ -151,6 +151,9 @@ references:
 - uid: document-flow
   name: Document Flow
   href: advanced/documents/document-flow.html
+- uid: document-generation-and-transitional-documents
+  name: Document Generation and Transitional Documents
+  href: advanced/documents/document-generation-and-transitional-documents.html
 - uid: Documents
   name: Documents
   href: concepts/documents.html
