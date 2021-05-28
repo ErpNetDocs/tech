@@ -7,6 +7,9 @@ references:
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
+- uid: applicable-legislations
+  name: Country Specific Functionality
+  href: reference/country-specific-functionality.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/add.html
