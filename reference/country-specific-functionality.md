@@ -1,3 +1,7 @@
+---
+uid: applicable-legislations
+---
+
 # Country Specific Functionality
 
 
