@@ -26,11 +26,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/fail.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/fail.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/fail.html",
-          "hash": "MjCVQ85VQKaAFpipKTXCvg=="
+          "relative_path": "advanced/business-rules/ActionTypes/fail.html",
+          "hash": "ij1tknD+VeEnN7Gu5u7a2g=="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/notifyuser.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/notifyuser.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/notifyuser.html",
-          "hash": "WC3b39dm1O5EqxgoDY3tLQ=="
+          "relative_path": "advanced/business-rules/ActionTypes/notifyuser.html",
+          "hash": "/VFvCh7kCBa9+ZSdKcDowA=="
         }
       },
       "is_incremental": false,
@@ -50,11 +50,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/overview.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/overview.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/overview.html",
-          "hash": "gceB4X2HoPDc96mK1/ovhQ=="
+          "relative_path": "advanced/business-rules/ActionTypes/overview.html",
+          "hash": "xL+SJOP5DiGsyniGw19X1Q=="
         }
       },
       "is_incremental": false,
@@ -62,11 +62,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/sendmail.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/sendmail.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/sendmail.html",
-          "hash": "C/AWIncoouF9cfwvdBARKw=="
+          "relative_path": "advanced/business-rules/ActionTypes/sendmail.html",
+          "hash": "HHVv2lFArJD0bFPtB+DrCQ=="
         }
       },
       "is_incremental": false,
@@ -74,11 +74,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/setlanguagevalue.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/setlanguagevalue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/setlanguagevalue.html",
-          "hash": "UUKHALP8rhpE2iAZwPVFRQ=="
+          "relative_path": "advanced/business-rules/ActionTypes/setlanguagevalue.html",
+          "hash": "R2ywl+Aptmhy51twBhyO2w=="
         }
       },
       "is_incremental": false,
@@ -86,23 +86,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/setvalue.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/setvalue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/setvalue.html",
-          "hash": "U9jVHX8+CjzDojtBij+Ifg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "advanced/business-rules/Action Types/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/Action Types/toc.html",
-          "hash": "B93HXBX4UbVzwOBe4BSa+A=="
+          "relative_path": "advanced/business-rules/ActionTypes/setvalue.html",
+          "hash": "Oy8LfCrKg8Mgdv9+SQuwIQ=="
         }
       },
       "is_incremental": false,
@@ -110,11 +98,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Action Types/warning.md",
+      "source_relative_path": "advanced/business-rules/ActionTypes/warning.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Action Types/warning.html",
-          "hash": "sdIFIK32CQObqYBWI9cRXw=="
+          "relative_path": "advanced/business-rules/ActionTypes/warning.html",
+          "hash": "XUFsrTk+GNZXj6L7ba+KEg=="
         }
       },
       "is_incremental": false,
@@ -146,23 +134,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Parameter Types/overview.md",
+      "source_relative_path": "advanced/business-rules/ParameterTypes/overview.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Parameter Types/overview.html",
-          "hash": "WnlxfQc1hLL5LOB1ADW27g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "advanced/business-rules/Parameter Types/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/Parameter Types/toc.html",
-          "hash": "cr660h+SyMQVuwUxIQxeKg=="
+          "relative_path": "advanced/business-rules/ParameterTypes/overview.html",
+          "hash": "ob7MnGW5Se8gjG3blJgLww=="
         }
       },
       "is_incremental": false,
@@ -186,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/overview.html",
-          "hash": "Sp5QQD4k47HfvsnTh6DRbA=="
+          "hash": "p5XlRxC/AuCU9Hy+W4EMSQ=="
         }
       },
       "is_incremental": false,
@@ -486,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "VWPjq7VJY+MsbWHbX7ED5Q=="
+          "hash": "1NByZytIfLXCCpibmACeBQ=="
         }
       },
       "is_incremental": false,
@@ -534,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "V6075WNWdDGuNLUf0hzlKQ=="
+          "hash": "ZQCDvZLyzF/26Mozn50+Fw=="
         }
       },
       "is_incremental": false,
@@ -1348,7 +1324,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "+ThZWB0OCgrywKVJn/XFEA=="
+          "hash": "wS0ZBnh9MA7MR6CV33Vumg=="
         }
       },
       "is_incremental": false,

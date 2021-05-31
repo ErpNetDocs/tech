@@ -79,6 +79,40 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="user-business-rules">User Business Rules</h1>
 
+<p>User Business Rules are business rules which the user defines on his  own. They may be used to provide some kind of validation which is not  available in the system business rules or to create working logic which  is not currently available in the software. They may be registered on  different layers - BackEnd and/or FrontEnd. The BackEnd means that the  user business rule is processed on the server. A FrontEnd user business  rule is processed in the client application.</p>
+<p>The user business  rule consist of the following information: &quot;where?&quot; &quot;when?&quot; and on &quot;what conditions?&quot; something (&quot;what?&quot;) should happen.</p>
+<p>The user business rules have the following information:</p>
+<ul>
+<li>Code - unique code of the rule;</li>
+<li>Name - the name of the user business rule;</li>
+<li>Repository Name - the name of the repository for which the business rule is  defined. For example - Invoices or Invoice Lines. Its value may be  selected from a dropdown list and the value contains the path to the  selected value, dot separated. For example: if the user needs to create  user business rule so he can use it in the Invoices forms or in the  Invoices navigators, the Repository should be &quot;Crm.Invoicing.Invoices&quot;.  If the rule is created to be used in the invoice lines, then the  Repository should be &quot;Crm.Invoicing.InvoiceLines&quot;;</li>
+<li>Notes - notes, comments, short information on the user business rules usage, purpose and more;</li>
+<li>IsActive - the user business rule may be activated and deactivated;</li>
+<li><em>Layer</em> - currently this is unavailable. All user business rules are registered in the BackEnd layer.</li>
+</ul>
+<p>The events which has to happen so the user business rule to be activated  are described in the User Business Rules - Events panel. It is consisted of the following information:</p>
+<ul>
+<li>Event Type - the event for which to register the user business rule;</li>
+<li>Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see <a href="https://olddocs.erp.net/tech/user-business-rules-events-41146209.html">User Business Rules - Events</a>;</li>
+<li>Execution Priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;</li>
+<li><em>Layer -</em> currently this is unavailable. All events are events of the BackEnd layer.</li>
+</ul>
+<p>The conditions which have to be met when the event happen so the rule to be processed are entered as follows:</p>
+<ul>
+<li>Condition No - consecutive number of the condition, unique within the user business rule.</li>
+<li>Attribute Name - the name of the attribute which will be validated in the condition.</li>
+<li>Comparison Type - what is the comparison type. The available options are: =, !=, &gt;=, &lt;=, Like, IsNull,</li>
+<li>Value - the constant value to which the value of attribute (specified in the Attribute Name) is compared to.</li>
+</ul>
+<p>So the condition is met when the value of the specified attribute and the  specified value compose a true statement with the selected comparison  type. For example, IsActive = True or Quantity &lt; 100.0 and more.</p>
+<p>NOTE: if there are more than one conditions, the rule would be applied when all conditions are true.</p>
+<p>The actions which may be executed by the rule contain the following information:</p>
+<ul>
+<li>Action No - consecutive number of the action, unique within the user business rule;</li>
+<li>Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see <a href="https://olddocs.erp.net/tech/user-business-rules-actions-action-types-41146283.html">User Business Rules Actions - Action Types</a>;</li>
+<li>Parameter1 Type, Parameter2 Type, Parameter3 Type - the type of the parameter specifies how to obtain the parameter value;</li>
+<li>Parameter1 Value, Parameter2 Value, Parameter3 Value - the actual value of the parameter.</li>
+</ul>
 </article>
           </div>
           
