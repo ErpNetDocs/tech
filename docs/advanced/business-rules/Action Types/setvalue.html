@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Examples | ERP.net Tech Docs </title>
+    <title>SETVALUE | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Examples | ERP.net Tech Docs ">
+    <meta name="title" content="SETVALUE | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,21 +77,85 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="setvalue">SETVALUE</h1>
 
-<ul>
-<li><a href="CheckIfTheQuantityIsAWholeNumber.html">Check If the Quantity is a whole number</a></li>
-<li><a href="CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.html">Check If the system type of Payment type in the Sales Order is 'In Cash'</a></li>
-<li><a href="CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.html">Check Whether the Releasing of the Document Is First or Not</a></li>
-<li><a href="CompareUnitPriceAndStandardUnitPrice.html">Compare Unit Price And Standard Unit Price</a></li>
-<li><a href="ConvertPropertyToNumber.html">Convert a Value of a Custom Property to a Number</a></li>
-<li><a href="GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.html">Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line</a></li>
-<li><a href="GetCurrentAvailabilitiesOfAProduct.html">Get Current Availabilities of a Product</a></li>
-<li><a href="GetValueAndDescriptionOfReferentObject.html">Get Value And Description Of Referent Object</a></li>
-<li><a href="SpecificDayFromDocumentDate.html">Specific Day From Document Date</a></li>
-<li><a href="TotalQuantityAndScrapQuantityInRecipeIngredients.html">Total Quantity And Scrap Quantity In Recipe Ingredients</a></li>
-<li>...</li>
-</ul>
+<p>The SETVALUE action is used to update information or data in the  system implicitly. When all conditions of the business rules are met and the specified event has happened, then the SETVALUE action updates the  value of the specified attribute available for the repository (including the custom properties for the particular entity).</p>
+<p>The SETVALUE action requires the following parameters:</p>
+<ol>
+<li>Parameter 1 - the value which is updated (set). Currently, the available  parameter type is &quot;Attribute&quot;. So, in Parameter 1 value the user enters  the name of the attribute, which value has to be modified.</li>
+<li>Parameter 2 - the value which is set in Parameter 1. Currently, the available  parameter types are &quot;Attribute&quot; and &quot;Constant&quot;. If the parameter type is Attribute, in parameter value the name of the attribute is selected.  The selected attribute value would be used to be set as value of  parameter 1. If the parameter type is &quot;Constant&quot;, then in parameter  value a constant value has to be entered and every time the user  business rule is execute, the parameter 1 attribute would be set to the  constant value. The format of the different type of constants is  described here: <a href="https://olddocs.erp.net/tech/parameter-type-const-41062644.html">Parameter Type CONST</a>.</li>
+</ol>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crm.Sales.SalesOrders</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Events</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Event Type</td>
+<td>Event Parameter</td>
+<td>Execution Priority</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Change of State</td>
+<td>RELEASING</td>
+<td>Normal</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Action No</td>
+<td>Action Type</td>
+<td>Parameter1 Type</td>
+<td>Parameter1 Value</td>
+<td>Parameter2 Type</td>
+<td>Parameter2 Value</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SETVALUE</td>
+<td>Attribute</td>
+<td>Notes</td>
+<td>Constant</td>
+<td>'Approved'</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -100,7 +164,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/Overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/Action Types/setvalue.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SENDMAIL | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SENDMAIL | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sendmail">SENDMAIL</h1>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>SENDMAIL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Used for sending notification emails using <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs (for more info see the 'Subject and Body Customization'  section below).The  address from which the emails are sent is the e-mail address that is set in the &quot;From e-mail address for system notifications&quot; field in  the EnterpriseOne Application Server Settings.Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a> that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed.</td>
+</tr>
+<tr>
+<td>Parameter 1</td>
+<td><strong>[TO]</strong> - the email address/es to which the mail is going to be sent. If there are more than one  recipients they can be entered in a comma-separated list  (email1,email2...,emailN).</td>
+</tr>
+<tr>
+<td>Parameter 1 Type</td>
+<td>Constant, Attribute (the attribute's type must be String)</td>
+</tr>
+<tr>
+<td>Parameter 2</td>
+<td><strong>[SUBJECT]</strong> - The line with the subject of the email.</td>
+</tr>
+<tr>
+<td>Parameter 2 Type</td>
+<td>Constant, Attribute (the attribute's type must be String)</td>
+</tr>
+<tr>
+<td>Parameter 3</td>
+<td><strong>[BODY]</strong> - The content of the body of the email. Supports multi-line, for more  info see the 'Subject and Body Customization' section below.</td>
+</tr>
+<tr>
+<td>Parameter 3 Type</td>
+<td>Constant, Attribute (the attribute's type must be String)</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>see the end of the article</td>
+</tr>
+<tr>
+<td>Introduced In Version</td>
+<td>2019.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Currently, the parameters of the business rules can include up to 256 symbols.</p>
+<h2 id="subject-and-body-customization">Subject and Body Customization</h2>
+<p>The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of  implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.</p>
+<ul>
+<li>escape charts</li>
+</ul>
+<p>The following escape chars are handled:</p>
+<p>\n - newline - supported in the Body</p>
+<p>\r\n - also new line - supported in the Body</p>
+<p>{ - insert opening curly bracket '{' in output. - supported in both the Subject and the Body</p>
+<p>} - insert closing curly bracket '}' in output. - supported in both the Subject and the Body</p>
+<ul>
+<li>HTML tags - supported in the Body</li>
+</ul>
+<p>The body could be also formatted using HTML. In order for the text to be  recognized as HTML, the body has to contain the tag . The  place of the tag is irrelevant, if the tag  is placed somewhere in the body's text it is considered that the whole text is written in HTML.</p>
+<ul>
+<li>use of Domain Attributes in text - supported in both the Subject and the Body</li>
+</ul>
+<p>In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and  calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.</p>
+<p>Currently are supported the following options:
+\1. Attributes: {DocumentDate}.
+\2. References: {Customer}.
+\3. Reference path: {Customer.Party.PartyName}. Note that Child Collections are not supported.</p>
+<ul>
+<li>Domain Attributes formatting - supported in both the Subject and the Body</li>
+</ul>
+<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see <a href="https://olddocs.erp.net/tech/format-specifiers-799899905.html">Format Specifiers</a>.</p>
+<h2 id="example">Example</h2>
+<p>А <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a> that sends an email with &quot;Order Confirmation&quot; to the customer and the Sales Manager when a Sales Order has been released.</p>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crm.Sales.SalesOrders</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Events</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Event Type</td>
+<td>Event Parameter</td>
+<td>Execution Priority</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Change of State</td>
+<td>RELEASED</td>
+<td>Normal</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Action No</td>
+<td>Action Type</td>
+<td>Parameter1 Type</td>
+<td>Parameter1 Value</td>
+<td>Parameter2 Type</td>
+<td>Parameter2 Value</td>
+<td>Parameter3 Type</td>
+<td>Parameter3 Value</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SENDMAIL</td>
+<td>Constant</td>
+<td><a href="mailto:test_erp@erp.bg">salesmanager@</a>mail.com,customer@gmail.com</td>
+<td>Constant</td>
+<td>Order No{DocumentNo} has been confirmed</td>
+<td>Constant</td>
+<td><p>Dear Customer,</p><p><b> Your order has been confirmed!  </b></p><br><p><h3>SUMMARY</h3></p><p>Order Number: <i>{DocumentNo}</i></p><p>Order Date:  <i>{DocumentDate:dd-MM-yyyy}</i></p><p>Shipping  Address: <i>{ShipToPartyContactMechanism.  ContactMechanism.Name}</i></p><p>Delivery Date:  <i>{RequiredDeliveryDate:dd-MM-yyyy}</i></p><p>Order Total:  <i>{#CalculatedAttributeTotalSalesOrderAmount:C}</i></p><p>Payment Method:  <i>{PaymentType.Name}</i></p><br><p>Please expect your parcel to arrive on the delivery date stated above at the  address or at the office of the courier  company.</p><br><p>Kind  Regards,</p><strong>{SalesPerson.Person.FirstName}  {SalesPerson.Person.LastName}<strong></strong></strong></td>
+</tr>
+</tbody>
+</table>
+<p>A representation of the email which is going to be received by the recipients:</p>
+<p><strong>Subject:</strong> &quot;Order No00329 has been confirmed&quot;</p>
+<p><strong>Body:</strong></p>
+<p>&quot;Dear Customer,</p>
+<p><strong>Your order has been confirmed!</strong></p>
+<h3 id="summary">SUMMARY</h3>
+<p>Order Number: <em>00329</em></p>
+<p>Order Date: <em>10-05-2019</em></p>
+<p>Shipping Address: <em>21 Lombard St</em></p>
+<p>Delivery Date: <em>12-05-2019</em></p>
+<p>Order Total: <em>$14.82</em></p>
+<p>Payment Method: <em>Cash on Delivery</em></p>
+<p>Please expect your parcel on the delivery date stated above at the address or at the office of the courier company.</p>
+<p>Kind Regards,</p>
+<p><strong>John Smith</strong>&quot;</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/Action Types/sendmail.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

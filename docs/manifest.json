@@ -26,6 +26,162 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/fail.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/fail.html",
+          "hash": "MjCVQ85VQKaAFpipKTXCvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/notifyuser.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/notifyuser.html",
+          "hash": "WC3b39dm1O5EqxgoDY3tLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/overview.html",
+          "hash": "gceB4X2HoPDc96mK1/ovhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/sendmail.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/sendmail.html",
+          "hash": "C/AWIncoouF9cfwvdBARKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/setlanguagevalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/setlanguagevalue.html",
+          "hash": "UUKHALP8rhpE2iAZwPVFRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/setvalue.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/setvalue.html",
+          "hash": "U9jVHX8+CjzDojtBij+Ifg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "advanced/business-rules/Action Types/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/toc.html",
+          "hash": "B93HXBX4UbVzwOBe4BSa+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Action Types/warning.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Action Types/warning.html",
+          "hash": "sdIFIK32CQObqYBWI9cRXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Events/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Events/overview.html",
+          "hash": "DUjdV/6gGYOp8Na64qw8eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Examples/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Examples/overview.html",
+          "hash": "GScBK1kPH6zcM5tbPaw58w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/Parameter Types/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Parameter Types/overview.html",
+          "hash": "WnlxfQc1hLL5LOB1ADW27g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "advanced/business-rules/Parameter Types/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/Parameter Types/toc.html",
+          "hash": "cr660h+SyMQVuwUxIQxeKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/QA/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/QA/overview.html",
+          "hash": "Ky3qerLVPB9x1WIKU8lsBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/business-rules/overview.md",
       "output": {
         ".html": {
@@ -330,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "4YW+864DuVPZRRr+kNa2pw=="
+          "hash": "VWPjq7VJY+MsbWHbX7ED5Q=="
         }
       },
       "is_incremental": false,
@@ -378,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "Z9YKhLNMsggZ91bylVoVbw=="
+          "hash": "V6075WNWdDGuNLUf0hzlKQ=="
         }
       },
       "is_incremental": false,
@@ -1192,7 +1348,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "i3GERqnHb9mxdyAToqRSSA=="
+          "hash": "+ThZWB0OCgrywKVJn/XFEA=="
         }
       },
       "is_incremental": false,

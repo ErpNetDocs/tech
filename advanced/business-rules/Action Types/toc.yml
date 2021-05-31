@@ -1,2 +1,14 @@
 - name: Overview
   href: overview.md
+- name: FAIL
+  href: fail.md
+- name: NOTIFYUSER
+  href: notifyuser.md
+- name: SENDMAIL
+  href: sendmail.md
+- name: SETLANGUAGEVALUE
+  href: setlanguagevalue.md
+- name: SETVALUE
+  href: setvalue.md  
+- name: WARNING
+  href: warning.md 
