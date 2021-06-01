@@ -1,3 +1,8 @@
+---
+uid: brat-SENDMAIL
+items: ActionTypes
+---
+
 # SENDMAIL
 
 | Name                  | SENDMAIL                                                     |
