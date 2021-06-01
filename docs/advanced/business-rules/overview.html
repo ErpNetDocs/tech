@@ -93,7 +93,7 @@
 <p>The events which has to happen so the user business rule to be activated  are described in the User Business Rules - Events panel. It is consisted of the following information:</p>
 <ul>
 <li>Event Type - the event for which to register the user business rule;</li>
-<li>Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see <a href="https://olddocs.erp.net/tech/user-business-rules-events-41146209.html">User Business Rules - Events</a>;</li>
+<li>Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see <a href="(/events/overview.md)">User Business Rules - Events</a>;</li>
 <li>Execution Priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;</li>
 <li><em>Layer -</em> currently this is unavailable. All events are events of the BackEnd layer.</li>
 </ul>
@@ -105,11 +105,13 @@
 <li>Value - the constant value to which the value of attribute (specified in the Attribute Name) is compared to.</li>
 </ul>
 <p>So the condition is met when the value of the specified attribute and the  specified value compose a true statement with the selected comparison  type. For example, IsActive = True or Quantity &lt; 100.0 and more.</p>
-<p>NOTE: if there are more than one conditions, the rule would be applied when all conditions are true.</p>
+<blockquote>
+<p>[!NOTE] if there are more than one conditions, the rule would be applied when all conditions are true.</p>
+</blockquote>
 <p>The actions which may be executed by the rule contain the following information:</p>
 <ul>
 <li>Action No - consecutive number of the action, unique within the user business rule;</li>
-<li>Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see <a href="https://olddocs.erp.net/tech/user-business-rules-actions-action-types-41146283.html">User Business Rules Actions - Action Types</a>;</li>
+<li>Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see <a href="/ActionTypes/overview.md">User Business Rules Actions - Action Types</a>;</li>
 <li>Parameter1 Type, Parameter2 Type, Parameter3 Type - the type of the parameter specifies how to obtain the parameter value;</li>
 <li>Parameter1 Value, Parameter2 Value, Parameter3 Value - the actual value of the parameter.</li>
 </ul>

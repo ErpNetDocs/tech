@@ -10,6 +10,24 @@ references:
 - uid: applicable-legislations
   name: Country Specific Functionality
   href: reference/country-specific-functionality.html
+- uid: brat-FAIL
+  name: FAIL
+  href: advanced/business-rules/ActionTypes/fail.html
+- uid: brat-NOTIFYUSER
+  name: NOTIFYUSER
+  href: advanced/business-rules/ActionTypes/notifyuser.html
+- uid: brat-SENDMAIL
+  name: SENDMAIL
+  href: advanced/business-rules/ActionTypes/sendmail.html
+- uid: brat-SETLANGUAGEVALUE
+  name: SETLANGUAGEVALUE (in implementation)
+  href: advanced/business-rules/ActionTypes/setlanguagevalue.html
+- uid: brat-SETVALUE
+  name: SETVALUE
+  href: advanced/business-rules/ActionTypes/setvalue.html
+- uid: brat-WARNING
+  name: WARNING
+  href: advanced/business-rules/ActionTypes/warning.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/add.html

@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/fail.html",
-          "hash": "ij1tknD+VeEnN7Gu5u7a2g=="
+          "hash": "gXNEBUF8H1Emuc/hpKgwXg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/notifyuser.html",
-          "hash": "/VFvCh7kCBa9+ZSdKcDowA=="
+          "hash": "M+DuxM+6vu/me1vtkvNxwg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/overview.html",
-          "hash": "xL+SJOP5DiGsyniGw19X1Q=="
+          "hash": "/uEC6vZN89DHiV8kNAirsQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/sendmail.html",
-          "hash": "HHVv2lFArJD0bFPtB+DrCQ=="
+          "hash": "+iVxOWsMitKSCJHqaJAy4g=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/setlanguagevalue.html",
-          "hash": "R2ywl+Aptmhy51twBhyO2w=="
+          "hash": "fLXTVQgbp2GMqC+P05Gkkg=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/setvalue.html",
-          "hash": "Oy8LfCrKg8Mgdv9+SQuwIQ=="
+          "hash": "nJ8DTJ1hEoR41dRZGihgxw=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/warning.html",
-          "hash": "XUFsrTk+GNZXj6L7ba+KEg=="
+          "hash": "cAjffWUKR4+oY4yNIN2oeA=="
         }
       },
       "is_incremental": false,
@@ -157,12 +157,16 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section",
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/business-rules/overview.md",
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/overview.html",
-          "hash": "p5XlRxC/AuCU9Hy+W4EMSQ=="
+          "hash": "Tcp9BcnzgrL5b7gRq3CvOw=="
         }
       },
       "is_incremental": false,
@@ -462,7 +466,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "50uLEkHXplnd2Hz2mOHwBw=="
+          "hash": "6c5FcjrkRwrziF2P8AIvXQ=="
         }
       },
       "is_incremental": false,
@@ -510,7 +514,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "Cji7n+tfdJ4mIxByozoBdg=="
+          "hash": "0eouk9o9/pBCxaMQHF7nkw=="
         }
       },
       "is_incremental": false,
