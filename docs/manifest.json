@@ -158,7 +158,6 @@
     },
     {
       "log_codes": [
-        "invalid-note-section",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -166,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/overview.html",
-          "hash": "Tcp9BcnzgrL5b7gRq3CvOw=="
+          "hash": "pACXxEmU5keCFvgWauQsCA=="
         }
       },
       "is_incremental": false,
@@ -466,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/Overview.html",
-          "hash": "6c5FcjrkRwrziF2P8AIvXQ=="
+          "hash": "G2uTQ2Cno45kcVfucR178g=="
         }
       },
       "is_incremental": false,
@@ -514,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/Overview.html",
-          "hash": "0eouk9o9/pBCxaMQHF7nkw=="
+          "hash": "RNEsRihui89pzqIF2eNoVQ=="
         }
       },
       "is_incremental": false,
