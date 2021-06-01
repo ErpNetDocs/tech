@@ -1,3 +1,8 @@
+---
+uid: brat-SETVALUE
+items: ActionTypes
+---
+
 # SETVALUE
 
 The SETVALUE action is used to update information or data in the  system implicitly. When all conditions of the business rules are met and the specified event has happened, then the SETVALUE action updates the  value of the specified attribute available for the repository (including the custom properties for the particular entity).
