@@ -17,7 +17,7 @@ The user business rules have the following information:
 The events which has to happen so the user business rule to be activated  are described in the User Business Rules - Events panel. It is consisted of the following information:
 
 - Event Type - the event for which to register the user business rule;
-- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see [User Business Rules - Events](../events/overview.md);
+- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see [User Business Rules - Events](events/overview.md);
 - Execution Priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;
 - *Layer -* currently this is unavailable. All events are events of the BackEnd layer.
 
@@ -39,6 +39,6 @@ So the condition is met when the value of the specified attribute and the  speci
 The actions which may be executed by the rule contain the following information:
 
 - Action No - consecutive number of the action, unique within the user business rule;
-- Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see [User Business Rules Actions - Action Types](../ActionTypes/overview.md);
+- Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see [User Business Rules Actions - Action Types](ActionTypes/overview.md);
 - Parameter1 Type, Parameter2 Type, Parameter3 Type - the type of the parameter specifies how to obtain the parameter value; 
 - Parameter1 Value, Parameter2 Value, Parameter3 Value - the actual value of the parameter.
