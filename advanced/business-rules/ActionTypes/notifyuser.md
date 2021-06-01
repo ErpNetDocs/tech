@@ -1,3 +1,8 @@
+---
+uid: brat-NOTIFYUSER
+items: ActionTypes
+---
+
 # NOTIFYUSER
 
 | Name             | NOTIFYUSER                                                   |
