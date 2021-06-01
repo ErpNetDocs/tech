@@ -76,9 +76,48 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="brat-SETLANGUAGEVALUE">
 <h1 id="setlanguagevalue-in-implementation">SETLANGUAGEVALUE (in implementation)</h1>
 
+<p>The platform supports multi language attributes, for example Product  Name. This gives the user the opportunity to enter the product name in  more than one language - let's say - in English and in German.</p>
+<p>The <a href="https://olddocs.erp.net/tech/calculated-attributes-35586101.html">Calculated Attributes</a> operators cannot operate with multi-language string attributes. When  such operation is required, the multi-language attribute is cast to  string and then it is used by the calculated attribute operators. The <a href="https://olddocs.erp.net/tech/cast-40145742.html">CAST</a> of the multi-language string returns the current language translation  and not all translations. So if there is a calculated attribute which  returns the first 10 symbols of the product name, it would:</p>
+<ol>
+<li>cast the product name to string (which would cut only the current language translation);</li>
+<li>return the first 10 symbols of the string from p.1.</li>
+</ol>
+<p>And then if we set up a rule which sets (via <a href="https://olddocs.erp.net/tech/setvalue-41146590.html">SETVALUE</a>) this value in the product name, the rest of the translations are lost. This is because <a href="https://olddocs.erp.net/tech/setvalue-41146590.html">SETVALUE</a> explicitly sets the value where specified. And as we do not specify all translations and just one of them, the rest of the translations are set as null - so they are lost.</p>
+<p>This is the reason behind the current action SETLANGUAGEVALUE.</p>
+<h2 id="syntax">Syntax</h2>
+<p>The SETLANGUAGEVALUE action may receive 2 or 3 input parameters:</p>
+<ol>
+<li>Parameter 1 - an attribute which holds multi-language string;</li>
+<li>Parameter 2 - currently, the second parameter may be deliver as an attribute or a constant. This parameter says what would be the new value of the  attribute from Parameter 1.</li>
+<li>Parameter 3 is delivered as a  constant. If necessary, this parameter is used to specify the language  in which the new value (parameter 2) is set as a translation. This  parameter is optional. If it is null - the action sets the new value into the current language translation.</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>If there is a product in the database with the following name:</p>
+<ul>
+<li>in English: &quot;abcdefg&quot;</li>
+<li>in German: &quot;higklm&quot;</li>
+</ul>
+<p>And if a user business rule is activated which does the following action:</p>
+<ul>
+<li>SETLANGUAGE ATTRIB: ProductName CONST: &quot;qwerty&quot;</li>
+</ul>
+<p>If this rule is started when the current language in German, then after the rule is executed, the product name would be:</p>
+<ul>
+<li>in English: &quot;abcdefg&quot;</li>
+<li>in German: &quot;qwerty&quot;</li>
+</ul>
+<p>If the action is defined as follows:</p>
+<ul>
+<li>SETLANGUAGE ATTRIB: ProductName CONST: &quot;qwerty&quot; CONST: en</li>
+</ul>
+<p>And again - the current language is German - then after the rule execution, the product name would be:</p>
+<ul>
+<li>in English: &quot;qwerty&quot;</li>
+<li>in German: &quot;higklm&quot;</li>
+</ul>
 </article>
           </div>
           
