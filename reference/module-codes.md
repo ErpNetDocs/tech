@@ -18,7 +18,8 @@ APP03 - Applications - Vehicle Management <br>
 APP04 - Applications - Mail <br>
 APP05 - Applications - Personal Data Management <br>
 APP06 - Applications - Data Warehouse <br>
-APP07 - Applications - Enterprise Asset Management
+APP07 - Applications - Enterprise Asset Management <br>
+APP08 - Applications - EnterpriseOne POS
 
 #### CRM
 
@@ -32,7 +33,7 @@ CRM07 - Clients - Service <br>
 CRM08 - Clients - Distribution <br>
 CRM09 - Clients - Unified Communications <br>
 CRM10 - Clients - Pricing <br>
-CRM11 - Clients - Point Of Sale
+CRM11 - Clients - POS Sales
 
 #### Finance
 
@@ -48,7 +49,7 @@ FIN08 - Finance - Cost Accounting
 #### Logistics
 
 LOG01 - Logistics - Shipment <br>
-LOG02 - Logistics - Warehouse Management <br>
+LOG02 - Logistics - Inventory Management <br>
 LOG03 - Logistics - Planning <br>
 LOG04 - Logistics - Procurement <br>
 LOG05 - Logistics - Warehouse Management <br>
@@ -74,6 +75,6 @@ X03  - Extras - Store Bins <br>
 X04  - Extras - Pictures Editor <br>
 X05  - Extras - Business Intelligence <br>
 X06  - Extras - Barcode Controlling <br>
-X07  - Extras - API <br>
+X07  - Extras - EnterpriseOne API <br>
 X08  - Extras - Business Process Management <br>
 X09  - Extras - CSharp Scripting <br>
