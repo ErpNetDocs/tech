@@ -63,9 +63,15 @@ PRD02 - Production - Planning <br>
 PRD03 - Production - Resources <br>
 PRD04 - Production - Shop Floor Control <br>
 
+#### Security
+
+SEC01 - Security - Sign in with Azure AD
+
+
 #### Web
 
 WEB02 - Web - Client Center 
+
 
 #### Extras
 
