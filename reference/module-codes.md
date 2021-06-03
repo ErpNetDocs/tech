@@ -51,6 +51,9 @@ LOG01 - Logistics - Shipment <br>
 LOG02 - Logistics - Warehouse Management <br>
 LOG03 - Logistics - Planning <br>
 LOG04 - Logistics - Procurement <br>
+LOG05 - Logistics - Warehouse Management <br>
+LOG06 - Logistics - Transportation
+
 
 #### Production
 
