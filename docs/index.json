@@ -117,7 +117,7 @@
   "advanced/calculated-attributes/examples/Overview.html": {
     "href": "advanced/calculated-attributes/examples/Overview.html",
     "title": "Examples | ERP.net Tech Docs",
-    "keywords": "Examples Calculate StandartPricePerLot based on the Ingredients and the Operations in the Recipe Check If a value of a field Is changed in the Adjustment Document Check if the current user has authorization Check If the Quantity is a whole number Check Whether the Releasing of the Document Is First or Not Convert a Value of a Custom Property to a Number Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line Get Value And Description Of Referent Object Sales Amounts Of The Customer For The Last 30 Days Total Quantity And Scrap Quantity In Recipe Ingredients ..."
+    "keywords": "Examples Check If a value of a field Is changed in the Adjustment Document Check If the Quantity is a whole number Check Whether the Releasing of the Document Is First or Not Compare Unit Price And Standard Unit Price Convert a Value of a Custom Property to a Number Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line Get Current Availabilities of a Product Sales Amounts Of The Customer For The Last 30 Days Specific Day From Document Date Total Quantity And Scrap Quantity In Recipe Ingredients ..."
   },
   "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html": {
     "href": "advanced/calculated-attributes/examples/SalesAmountsOfTheCustomerForTheLast30Days.html",
@@ -292,7 +292,7 @@
   "advanced/calculated-attributes/operators/Overview.html": {
     "href": "advanced/calculated-attributes/operators/Overview.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators LEFT - Calculated Attribute Operator LIST - Calculated Attribute Operator LT - Calculated Attribute Operator NOT - Calculated Attribute Operator OR - Calculated Attribute Operator ROUND - Calculated Attribute Operator SELECT - Calculated Attribute Operator SUM - Calculated Attribute Operator TODAY - Calculated Attribute Operator WHERE - Calculated Attribute Operator ..."
+    "keywords": "Operators FILTER - Calculated Attribute Operator FIRST - Calculated Attribute Operator IIF - Calculated Attribute Operator IN - Calculated Attribute Operator LTE - Calculated Attribute Operator MULTIPLY - Calculated Attribute Operator REPLACE - Calculated Attribute Operator RIGHT - Calculated Attribute Operator TODAY - Calculated Attribute Operator TOLOWER - Calculated Attribute Operator ..."
   },
   "advanced/calculated-attributes/operators/pos.html": {
     "href": "advanced/calculated-attributes/operators/pos.html",
