@@ -6,6 +6,7 @@
   href: custom-attributes/toc.yml
 - name: Calculated Attributes
   href: calculated-attributes/toc.yml
+  topicHref: calculated-attributes/index.md
 - name: Business Rules
   href: business-rules/toc.yml
 - name: Data Objects
