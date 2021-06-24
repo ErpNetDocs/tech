@@ -17,8 +17,3 @@ It is intended primarily for advanced ERP implementation consultants.
 - [Object / Relational Mapping](concepts/object-relational-mapping.md)
 - [Aggregates](concepts/aggregates.md)
 
-## TEMP
-
-[!list folder="." depth=0 style="bullet" limit=100]
-
-
