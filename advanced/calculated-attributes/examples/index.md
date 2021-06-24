@@ -1,3 +1,3 @@
 # Examples
 
-[!list items=CalculatedAttributeExamples default-text="None"]
+[!list items=CalculatedAttributeExamples limit=100 default-text="None"]
