@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/overview.html",
-          "hash": "/uEC6vZN89DHiV8kNAirsQ=="
+          "hash": "mcYCQQu8D3KpREfv7UkiWw=="
         }
       },
       "is_incremental": false,
@@ -1310,15 +1310,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/overview.md",
       "output": {
         ".html": {
           "relative_path": "advanced/overview.html",
-          "hash": "0gbnNzFuD04c8Y7SpYRQ5A=="
+          "hash": "f1S4AKPVnT2ke/khrJPrMg=="
         }
       },
       "is_incremental": false,
