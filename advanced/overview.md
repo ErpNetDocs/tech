@@ -7,7 +7,7 @@ It is intended primarily for advanced ERP implementation consultants.
 
 - [Documents](documents/index.md) - document-related concepts and services.
 - [Custom Attributes](custom-attributes/overview.md) - user-defined data attributes.
-- [Calculated Attributes](calculated-attributes/overview.md) - user-defined calculations.
+- [Calculated Attributes](calculated-attributes/index.md) - user-defined calculations.
 - [Business Rules](business-rules/overview.md) - user-defined and system business rules.
 - [Data Objects](data-objects/index.md) - data object extensibility systems.
 
