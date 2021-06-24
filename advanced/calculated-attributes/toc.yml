@@ -1,8 +1,8 @@
 - name: Overview
-  href: overview.md
+  href: index.md
 - name: Operators
   href: operators/toc.yml
-  topicHref: operators/overview.md
+  topicHref: operators/index.md
 - name: Examples
   href: examples/toc.yml
 - name: Parameter Types
