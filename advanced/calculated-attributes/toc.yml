@@ -5,7 +5,9 @@
   topicHref: operators/index.md
 - name: Examples
   href: examples/toc.yml
+  topicHref: examples/index.md
 - name: Parameter Types
   href: ParameterTypes/toc.yml
+  topicHref: ParameterTypes/index.md
 - name: Q & A
   href: QA/toc.yml  
