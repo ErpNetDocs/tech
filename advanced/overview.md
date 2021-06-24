@@ -19,6 +19,6 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## TEMP
 
-[!list style="bullet" limit=100]
+[!list folder="." style="bullet" limit=100]
 
 
