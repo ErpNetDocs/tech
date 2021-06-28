@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/notifyuser.html",
-          "hash": "NJ3rdX4dugOjfDT+cWi6lQ=="
+          "hash": "8dKGtePN4fXVRU4SDaoqqg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/ActionTypes/sendmail.html",
-          "hash": "+iVxOWsMitKSCJHqaJAy4g=="
+          "hash": "jDC+FiOhd9U0oMgZ45PJiw=="
         }
       },
       "is_incremental": false,
