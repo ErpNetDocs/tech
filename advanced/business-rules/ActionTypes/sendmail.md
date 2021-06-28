@@ -7,7 +7,7 @@ items: ActionTypes
 
 | Name                  | SENDMAIL                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Used for sending notification emails using [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs (for more info see the 'Subject and Body Customization'  section below).The  address from which the emails are sent is the e-mail address that is set in the "From e-mail address for system notifications" field in  the EnterpriseOne Application Server Settings.Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html) that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. |
+| Description           | Used for sending notification emails using [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs *(for more info see the 'Subject and Body Customization'  section below)*. <br/><br/>The  address from which the emails are sent is the e-mail address that is set in the "From e-mail address for system notifications" field in  the EnterpriseOne Application Server Settings. <br/><br/>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html) that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br/><br/> **IMPORTANT:** The Sendmail action is not compatible with all [User Business Rules - Events](../Events/Overview.md). For more info, see the *Compatible Events Chart* below. |
 | Parameter 1           | **[TO]** - the email address/es to which the mail is going to be sent. If there are more than one  recipients they can be entered in a comma-separated list  (email1,email2...,emailN). |
 | Parameter 1 Type      | Constant, Attribute (the attribute's type must be String)    |
 | Parameter 2           | **[SUBJECT]** - The line with the subject of the email.      |
@@ -22,6 +22,19 @@ items: ActionTypes
  
 
 **Note:** Currently, the parameters of the business rules can include up to 256 symbols. 
+
+## Compatible Events Chart
+
+The SENDMAIL action is not compatible with all [User Business Rules - Events](../Events/Overview.md). For more info look into the following chart.
+
+| Event Type                                                   | Compatibility with SENDMAIL                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Client Commit (e.g. CLIENTCOMMIT, AGGREGATECLIENTCOMMIT)     | compatible                                                   |
+| Document Events - (e.g. STATECHANGING, STATECHANGED, VOIDING) | compatible                                                   |
+| Commit (e.g. COMMIT)                                         | compatible but not recommended - if possible, use CLIENTCOMMIT instead|
+| Front-End (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)          | not compatible, the server will not send an email|
+
+
 
 ## Subject and Body Customization 
 
@@ -78,11 +91,11 @@ The domain attribute values can be formatted with the standard .Net format  spec
 | Change of State       | RELEASED        | Normal             |                                                              |                 |                                         |                 |                                                              |
 | **Actions**           |                 |                    |                                                              |                 |                                         |                 |                                                              |
 | Action No             | Action Type     | Parameter1 Type    | Parameter1 Value                                             | Parameter2 Type | Parameter2 Value                        | Parameter3 Type | Parameter3 Value                                             |
-| 1                     | SENDMAIL        | Constant           | [salesmanager@](mailto:test_erp@erp.bg)mail.com,customer@gmail.com | Constant        | Order No{DocumentNo} has been confirmed | Constant        | <p>Dear Customer,</p><p><b> Your order has been confirmed!  </b></p><br/><p><h3>SUMMARY</h3></p><p>Order Number: <i>{DocumentNo}</i></p><p>Order Date:  <i>{DocumentDate:dd-MM-yyyy}</i></p><p>Shipping  Address: <i>{ShipToPartyContactMechanism.  ContactMechanism.Name}</i></p><p>Delivery Date:  <i>{RequiredDeliveryDate:dd-MM-yyyy}</i></p><p>Order Total:  <i>{#CalculatedAttributeTotalSalesOrderAmount:C}</i></p><p>Payment Method:  <i>{PaymentType.Name}</i></p><br/><p>Please expect your parcel to arrive on the delivery date stated above at the  address or at the office of the courier  company.</p><br/><p>Kind  Regards,</p><strong>{SalesPerson.Person.FirstName}  {SalesPerson.Person.LastName}<strong/></html> |
+| 1                     | SENDMAIL        | Constant           | salesmanager@mail.com,customer@gmail.com | Constant        | Order No{DocumentNo} has been confirmed | Constant        | \<p>Dear Customer,\</p>\<p>\<b> Your order has been confirmed!  \</b>\</p>\<br/>\<p>\<h3>SUMMARY\</h3>\</p>\<p>Order Number: \<i>{DocumentNo}\</i>\</p>\<p>Order Date:  \<i>{DocumentDate:dd-MM-yyyy}\</i>\</p>\<p>Shipping  Address: \<i>{ShipToPartyContactMechanism.  ContactMechanism.Name}\</i>\</p>\<p>Delivery Date:  \<i>{RequiredDeliveryDate:dd-MM-yyyy}\</i>\</p>\<p>Order Total:  \<i>{#CalculatedAttributeTotalSalesOrderAmount:C}\</i>\</p>\<p>Payment Method:  \<i>{PaymentType.Name}\</i>\</p>\<br/>\<p>Please expect your parcel to arrive on the delivery date stated above at the  address or at the office of the courier  company.\</p>\<br/>\<p>Kind  Regards,\</p>\<strong>{SalesPerson.Person.FirstName}  {SalesPerson.Person.LastName}\<strong/>\</html> |
 
 
 
-A representation of the email which is going to be received by the recipients:
+### A representation of the email which is going to be received by the recipients:
 
 
 
