@@ -29,5 +29,5 @@ OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 > The repository of the attribute is *Crm.Sales.SalesOrders*
 
 #### More Examples
-[Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)
-<br/>[Get Value And Description Of Referent Object](../examples/GetValueAndDescriptionOfReferentObject.md)
+[Check if a value of a field is changed in the adjustment document](../examples/check-if-field-is-changed-in-adjustment.md)
+<br/>[Get value and description of referent object](../examples/get-value-and-description-of-referent-object.md)
