@@ -726,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
+          "hash": "4vWFPd3yj0qjr9lBf7+WLQ=="
         }
       },
       "is_incremental": false,
@@ -1106,11 +1106,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/custom-attributes/overview.md",
+      "source_relative_path": "advanced/custom-attributes/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/custom-attributes/overview.html",
-          "hash": "d+OuB1I1laRUzF+bZ2OMoQ=="
+          "relative_path": "advanced/custom-attributes/index.html",
+          "hash": "boprY95Jhe6mcnxJFfgPCA=="
         }
       },
       "is_incremental": false,
@@ -1136,7 +1136,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/extensible-data-objects.html",
-          "hash": "s5/60HtISD0T6A/rRFxsiQ=="
+          "hash": "KNa4XTpdEN3m0RSGEgW86A=="
         }
       },
       "is_incremental": false,
@@ -1286,15 +1286,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "ixkGX8QswEmcp0zJvBpmUQ=="
+          "hash": "wlRHbduENdgLp9oG6VsMEw=="
         }
       },
       "is_incremental": false,
@@ -1318,7 +1315,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "o+x9whFdqpVZVSFmTnZsCA=="
+          "hash": "Z2F7FpaMGbFX4j9v/I41PA=="
         }
       },
       "is_incremental": false,
