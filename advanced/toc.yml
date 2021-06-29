@@ -4,6 +4,7 @@
   href: documents/toc.yml
 - name: Custom attributes
   href: custom-attributes/toc.yml
+  topicHref: custom-attributes/index.md
 - name: Calculated attributes
   href: calculated-attributes/toc.yml
   topicHref: calculated-attributes/index.md
