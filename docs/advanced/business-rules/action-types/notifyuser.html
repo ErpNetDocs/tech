@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for creating notifications with a specific text for the object for  which the business rule has been triggered, which are later going to be  sent to the users that were indicated in the rule by the <a href="https://olddocs.erp.net/tech/notifications-805540872.html">Notifications</a> system. <br><br> More specifically, the action creates a record in the Notifications table  for each of the Users specified in Parameter1 (if there are more than  one), whereUserId = the Id of the user in Parameter1 ValueSubject = Parameter2 ValueNotificationClass = Parameter3 Value, if emty - set a default value which is&quot;BR&quot; + &quot;_&quot; + &quot;UserBusinessRule.Code&quot; e.g. &quot;BR_0005&quot;.DataObject = the Extensible Data Object of the Aggregate Root of the Entity for which the rule has been triggered. For more info, see <a href="https://olddocs.erp.net/tech/aggregates-796819535.html">Aggregates</a> and <a href="https://olddocs.erp.net/tech/extensible-data-objects-796819770.html">Extensible Data Objects</a>. If there are not explicitly created <a href="https://olddocs.erp.net/tech/notification-settings-805540876.html">Notification Settings</a> for the Class specified in Parameter3, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> The NOTIFYUSER action is not compatible with all <a href="../Events/Overview.md">User Business Rules - Events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
+<td>Used for creating notifications with a specific text for the object for  which the business rule has been triggered, which are later going to be  sent to the users that were indicated in the rule by the <a href="https://olddocs.erp.net/tech/notifications-805540872.html">Notifications</a> system. <br><br> More specifically, the action creates a record in the Notifications table  for each of the Users specified in Parameter1 (if there are more than  one), whereUserId = the Id of the user in Parameter1 ValueSubject = Parameter2 ValueNotificationClass = Parameter3 Value, if emty - set a default value which is&quot;BR&quot; + &quot;_&quot; + &quot;UserBusinessRule.Code&quot; e.g. &quot;BR_0005&quot;.DataObject = the Extensible Data Object of the Aggregate Root of the Entity for which the rule has been triggered. For more info, see <a href="https://olddocs.erp.net/tech/aggregates-796819535.html">Aggregates</a> and <a href="https://olddocs.erp.net/tech/extensible-data-objects-796819770.html">Extensible Data Objects</a>. If there are not explicitly created <a href="https://olddocs.erp.net/tech/notification-settings-805540876.html">Notification Settings</a> for the Class specified in Parameter3, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> The NOTIFYUSER action is not compatible with all <a href="../events/index.html">Business rules - Events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
@@ -126,7 +126,7 @@
 </tbody>
 </table>
 <h2 id="compatible-events-chart">Compatible Events Chart</h2>
-<p>The NOTIFYUSER action is not compatible with all <a href="../Events/Overview.md">User Business Rules - Events</a>. For more info look into the following chart.</p>
+<p>The NOTIFYUSER action is not compatible with all <a href="../events/index.html">Business rules - Events</a>. For more info look into the following chart.</p>
 <table>
 <thead>
 <tr>
@@ -154,7 +154,7 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>А <a href="../Overview.md">User Business Rules</a> that creates a notification for the Sales Person, when one of his Sales Orders has been released.</p>
+<p>А <a href="../index.html">Business rules</a> that creates a notification for the Sales Person, when one of his Sales Orders has been released.</p>
 <table>
 <thead>
 <tr>

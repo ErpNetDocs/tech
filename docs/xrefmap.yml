@@ -19,9 +19,6 @@ references:
 - uid: brat-SENDMAIL
   name: SENDMAIL
   href: advanced/business-rules/action-types/sendmail.html
-- uid: brat-SETLANGUAGEVALUE
-  name: SETLANGUAGEVALUE (in implementation)
-  href: advanced/business-rules/action-types/setlanguagevalue.html
 - uid: brat-SETVALUE
   name: SETVALUE
   href: advanced/business-rules/action-types/setvalue.html

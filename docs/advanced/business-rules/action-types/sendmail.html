@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for sending notification emails using <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs <em>(for more info see the 'Subject and Body Customization'  section below)</em>. <br><br>The  address from which the emails are sent is the e-mail address that is set in the &quot;From e-mail address for system notifications&quot; field in  the EnterpriseOne Application Server Settings. <br><br>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a> that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br><br> <strong>IMPORTANT:</strong> The Sendmail action is not compatible with all <a href="../Events/Overview.md">User Business Rules - Events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
+<td>Used for sending notification emails using <a href="../index.html">Business rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs <em>(for more info see the 'Subject and Body Customization'  section below)</em>. <br><br>The  address from which the emails are sent is the e-mail address that is set in the &quot;From e-mail address for system notifications&quot; field in  the EnterpriseOne Application Server Settings. <br><br>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL <a href="../index.html">Business rules</a> that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br><br> <strong>IMPORTANT:</strong> The Sendmail action is not compatible with all <a href="../events/index.html">Business rules - Events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
@@ -127,7 +127,7 @@
 </table>
 <p><strong>Note:</strong> Currently, the parameters of the business rules can include up to 256 symbols.</p>
 <h2 id="compatible-events-chart">Compatible Events Chart</h2>
-<p>The SENDMAIL action is not compatible with all <a href="../Events/Overview.md">User Business Rules - Events</a>. For more info look into the following chart.</p>
+<p>The SENDMAIL action is not compatible with all <a href="../events/index.html">Business Rules - Events</a>. For more info look into the following chart.</p>
 <table>
 <thead>
 <tr>
@@ -179,9 +179,9 @@
 <ul>
 <li>Domain Attributes formatting - supported in both the Subject and the Body</li>
 </ul>
-<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see <a href="https://olddocs.erp.net/tech/format-specifiers-799899905.html">Format Specifiers</a>.</p>
+<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see <a href="../../../reference/format-specifiers.html">Format specifiers</a>.</p>
 <h2 id="example">Example</h2>
-<p>А <a href="https://olddocs.erp.net/tech/user-business-rules-35586099.html">User Business Rules</a> that sends an email with &quot;Order Confirmation&quot; to the customer and the Sales Manager when a Sales Order has been released.</p>
+<p>А <a href="../index.html">Business rules</a> that sends an email with &quot;Order Confirmation&quot; to the customer and the Sales Manager when a Sales Order has been released.</p>
 <table>
 <thead>
 <tr>
