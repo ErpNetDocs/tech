@@ -2,14 +2,15 @@
   href: overview.md
 - name: Documents
   href: documents/toc.yml
-- name: Custom Attributes
+- name: Custom attributes
   href: custom-attributes/toc.yml
-- name: Calculated Attributes
+- name: Calculated attributes
   href: calculated-attributes/toc.yml
   topicHref: calculated-attributes/index.md
-- name: Business Rules
+- name: Business rules
   href: business-rules/toc.yml
-- name: Data Objects
+  topicHref: business-rules/index.md
+- name: Data objects
   href: data-objects/toc.yml
 - name: Concepts
   href: concepts/toc.yml 
