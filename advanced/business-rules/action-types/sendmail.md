@@ -7,7 +7,7 @@ items: ActionTypes
 
 | Name                  | SENDMAIL                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Used for sending notification emails using [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs *(for more info see the 'Subject and Body Customization'  section below)*. <br/><br/>The  address from which the emails are sent is the e-mail address that is set in the "From e-mail address for system notifications" field in  the EnterpriseOne Application Server Settings. <br/><br/>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html) that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br/><br/> **IMPORTANT:** The Sendmail action is not compatible with all [User Business Rules - Events](../Events/Overview.md). For more info, see the *Compatible Events Chart* below. |
+| Description           | Used for sending notification emails using [Business rules](../index.md). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs *(for more info see the 'Subject and Body Customization'  section below)*. <br/><br/>The  address from which the emails are sent is the e-mail address that is set in the "From e-mail address for system notifications" field in  the EnterpriseOne Application Server Settings. <br/><br/>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL [Business rules](../index.md) that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br/><br/> **IMPORTANT:** The Sendmail action is not compatible with all [Business rules - Events](../events/index.md). For more info, see the *Compatible Events Chart* below. |
 | Parameter 1           | **[TO]** - the email address/es to which the mail is going to be sent. If there are more than one  recipients they can be entered in a comma-separated list  (email1,email2...,emailN). |
 | Parameter 1 Type      | Constant, Attribute (the attribute's type must be String)    |
 | Parameter 2           | **[SUBJECT]** - The line with the subject of the email.      |
@@ -25,7 +25,7 @@ items: ActionTypes
 
 ## Compatible Events Chart
 
-The SENDMAIL action is not compatible with all [User Business Rules - Events](../Events/Overview.md). For more info look into the following chart.
+The SENDMAIL action is not compatible with all [Business Rules - Events](../events/index.md). For more info look into the following chart.
 
 | Event Type                                                   | Compatibility with SENDMAIL                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -73,13 +73,13 @@ Currently are supported the following options:
 
 - Domain Attributes formatting - supported in both the Subject and the Body
 
-The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see [Format Specifiers](https://olddocs.erp.net/tech/format-specifiers-799899905.html).
+The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see [Format specifiers](~/reference/format-specifiers.md).
 
 
 
 ## Example
 
-А [User Business Rules](https://olddocs.erp.net/tech/user-business-rules-35586099.html) that sends an email with "Order Confirmation" to the customer and the Sales Manager when a Sales Order has been released.
+А [Business rules](../index.md) that sends an email with "Order Confirmation" to the customer and the Sales Manager when a Sales Order has been released.
 
 
 
