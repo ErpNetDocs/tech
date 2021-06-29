@@ -1,31 +1,31 @@
 - name: Overview
   href: index.md
-- name: Calculate StandartPricePerLot Based on the Ingredients and the Operations in the Recipe
-  href: CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.md
-- name: Check If a Value of a Field Is Changed in the Adjustment Document
-  href: CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md
-- name: Check If the Current User Has Authorization
-  href: CheckIfTheCurrentUserHasAuthorization.md
-- name: Check If The Quantity Is A Whole Number
-  href: CheckIfTheQuantityIsAWholeNumber.md
-- name: Check If the System type of Payment type in the Sales Order Is 'In Cash'
-  href: CheckIfTheSystemTypeOfPaymentTypeInTheSalesOrderIsInCash.md
-- name: Check whether the releasing of the document is first or not?
-  href: CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md
-- name: Compare Unit Price And Standard Unit Price
-  href: CompareUnitPriceAndStandardUnitPrice.md
-- name: Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line
-  href: GetAValueOfACustomPropertyInSalesOrderLinesFromTheParentOfferLine.md
-- name: Get Current Availabilities of a Product
-  href: GetCurrentAvailabilitiesOfAProduct.md
-- name: Get Value And Description Of Referent Object
-  href: GetValueAndDescriptionOfReferentObject.md
-- name: Sales Amounts Of The Customer For The Last 30 Days
-  href: SalesAmountsOfTheCustomerForTheLast30Days.md
-- name: Specific Day From Document Date
-  href: SpecificDayFromDocumentDate.md  
-- name: Total Quantity And Scrap Quantity In Recipe Ingredients
-  href: TotalQuantityAndScrapQuantityInRecipeIngredients.md
-- name: Convert a Value of a Custom Property to a Number
-  href: ConvertPropertyToNumber.md
+- name: Calculate standartpriceperlot based on the ingredients and the operations in the recipe
+  href: calculate-standartpriceperlot.md
+- name: Check if a value of a field is changed in the adjustment document
+  href: check-if-field-is-changed-in-adjustment.md
+- name: Check if the current user has authorization
+  href: check-if-user-has-authorization.md
+- name: Check if the quantity is a whole number
+  href: check-if-quantity-is-whole-number.md
+- name: Check if the system type of payment type in the sales order is 'In Cash'
+  href: check-if-system-type-is-in-cash.md
+- name: Check whether the releasing of the document is first or not
+  href: check-for-first-releasing.md
+- name: Compare unit price and standard unit price
+  href: compare-unit-and-standard-unit-price.md
+- name: Get a value of a custom property in sales order lines from the parent offer line
+  href: get-custom-property-from-parent-offer-line.md
+- name: Get current availability of a product
+  href: get-current-availability-of-product.md
+- name: Get value and description of referent object
+  href: get-value-and-description-of-referent-object.md
+- name: Sales amounts of the customer for the last 30 days
+  href: sales-amounts-last-30-days.md
+- name: Specific day from document date
+  href: day-from-document-date.md  
+- name: Total quantity and scrap quantity in recipe ingredients
+  href: total-quantity-and-scrap-in-recipe-ingredients.md
+- name: Convert a value of a custom property to a number
+  href: convert-property-to-number.md
   
