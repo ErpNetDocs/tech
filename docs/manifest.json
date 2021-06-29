@@ -1845,15 +1845,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/amount-to-pay.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/amount-to-pay.html",
-          "hash": "cLFwKIrwgJ6yMRP2mt4g9g=="
+          "hash": "kM0c2sVnZZldlW0Q5kJJFQ=="
         }
       },
       "is_incremental": false,
@@ -1944,15 +1941,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.html",
-          "hash": "ebkZSIUjMCY9Z7lDb8ZlIQ=="
+          "hash": "M/Uk/FO2+e67fcFQ+ZpBjg=="
         }
       },
       "is_incremental": false,
