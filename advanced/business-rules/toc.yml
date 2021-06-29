@@ -1,9 +1,9 @@
 - name: Overview
-  href: overview.md
-- name: Action Types
-  href: ActionTypes/toc.yml
-- name: Parameter Types
-  href: ParameterTypes/toc.yml
+  href: index.md
+- name: Action types
+  href: action-types/toc.yml
+- name: Parameter types
+  href: parameter-types/toc.yml
 - name: Events
   href: Events/toc.yml
 - name: Examples
