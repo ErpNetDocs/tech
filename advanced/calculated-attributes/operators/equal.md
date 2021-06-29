@@ -33,6 +33,6 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More Examples
-[Check If The Quantity Is A Whole Number](../examples/CheckIfTheQuantityIsAWholeNumber.md)
-<br/>[Check Whether the Releasing of the Document Is First or Not](../examples/CheckWhetherTheReleasingOfTheDocumentIsFirstOrNot.md)
-<br/>[Get Current Availabilities of a Product](../examples/GetCurrentAvailabilitiesOfAProduct.md)
+[Check if the quantity is a whole number](../examples/check-if-quantity-is-whole-number.md)
+<br/>[Check whether the releasing of the document is first or not](../examples/check-for-first-releasing.md)
+<br/>[Get current availability of a product](../examples/get-current-availability-of-product.md)
