@@ -2,7 +2,7 @@
 items: CalculatedAttributeExamples
 ---
 
-# Get a Value of a Custom Property in Sales Order Lines from the Parent Offer Line
+# Get a value of a custom property in sales order lines from the parent offer line
 
 With this attribute we can for example, determine what is the value of a particular customer property which is set for the parent  offer line of the current sales order line. Currently, offer lines customer properties are not automatically transferred to the sales order. Thus, we can use this attribute in a [User Business Rule](https://docs.erp.net/tech/user-business-rules-35586099.html) to automate the process. For more information how to create a such [User Business Rule](https://docs.erp.net/tech/user-business-rules-35586099.html), see topic '[How to Use Business Rules to Set a Value into a Custom Property?](https://docs.erp.net/tech/how-to-use-business-rules-to-set-a-value-into-a-custom-property-57344004.html)'.
 
