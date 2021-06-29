@@ -1136,7 +1136,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/extensible-data-objects.html",
-          "hash": "nw/+xFe0JF5eLML0LTZyWA=="
+          "hash": "s5/60HtISD0T6A/rRFxsiQ=="
         }
       },
       "is_incremental": false,
@@ -1294,7 +1294,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "TLiQ5vmXwDo9fJlJuNjb7A=="
+          "hash": "ixkGX8QswEmcp0zJvBpmUQ=="
         }
       },
       "is_incremental": false,
@@ -1318,7 +1318,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "VU+7m3LMFAP36URCIyVn2g=="
+          "hash": "o+x9whFdqpVZVSFmTnZsCA=="
         }
       },
       "is_incremental": false,
@@ -1708,15 +1708,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "d+O5YARVJpHYFEabTW0Ebw=="
+          "hash": "cBy5HFx2e1FBmNhwB1OzTA=="
         }
       },
       "is_incremental": false,
