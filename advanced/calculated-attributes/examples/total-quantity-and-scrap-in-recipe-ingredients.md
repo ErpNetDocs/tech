@@ -2,7 +2,7 @@
 items: CalculatedAttributeExamples
 ---
 
-# Total Quantity And Scrap Quantity In Recipe Ingredients
+# Total quantity and scrap quantity in recipe ingredients
 
 If the user wants to see what is the total Quantity of the material in a Recipe which would include the Used Quantity and the Scrap Rate, he would add the following Calculated Attribute:
 
