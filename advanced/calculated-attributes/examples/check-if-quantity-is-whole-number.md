@@ -2,7 +2,7 @@
 items: CalculatedAttributeExamples
 ---
 
-# Check If the Quantity is a whole number
+# Check if the quantity is a whole number
 
 The current calculated attribute returns true if the quantity in the Sales Order line is whole number, and False - if it is  decimal number. The repository of the attribute is  Crm.Sales.SalesOrders.
 
