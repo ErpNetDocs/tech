@@ -31,4 +31,4 @@ OUTPUT: If 'QuantityValue = 1', the output will be '1.25'.
 
 
 #### More Examples
-[Total Quantity And Scrap Quantity In Recipe Ingredients](../examples/TotalQuantityAndScrapQuantityInRecipeIngredients.md)
+[Total quantity and scrap quantity in recipe ingredients](../examples/total-quantity-and-scrap-in-recipe-ingredients.md)
