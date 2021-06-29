@@ -726,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "4vWFPd3yj0qjr9lBf7+WLQ=="
+          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
         }
       },
       "is_incremental": false,
@@ -1128,15 +1128,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/extensible-data-objects.md",
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/extensible-data-objects.html",
-          "hash": "KNa4XTpdEN3m0RSGEgW86A=="
+          "hash": "Lob4cepmr2y3yh+WmhvXXA=="
         }
       },
       "is_incremental": false,
