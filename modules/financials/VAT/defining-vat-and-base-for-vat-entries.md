@@ -72,7 +72,7 @@ Thus, three bases and three VATs must be calculated - [DealType1:base], [DealTyp
 To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used. 
 For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.
 
-The VAT additional amount is set in the Enterprise Company definition (see [Additional Amounts](../advanced/documents/additional-amounts.md)) of the current document.
+The VAT additional amount is set in the Enterprise Company definition (see [Additional Amounts](~/advanced/documents/additional-amounts.md)) of the current document.
 Id the document does not contain the specified VAT additional amount (or there is no such in the EnterpriseOne company definition),the calculation is interrupted by error message. 
 
 The distributed additional amount on the rows are used in the calculation of the VAT amounts. 
