@@ -1,4 +1,4 @@
-# Action Types
+# Action types
 
 The following types of actions are available to the user when creating a user business rules:
 
