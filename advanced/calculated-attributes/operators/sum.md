@@ -16,5 +16,5 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return Value          | Returns the sum of the Values of the elements in the List.                                                     |
 
-## Example
-See the example in [Sales Amounts Of The Customer For The Last 30 Days](../examples/SalesAmountsOfTheCustomerForTheLast30Days.md)
+## More Examples
+[Sales amounts of the customer for the last 30 days](../examples/sales-amounts-last-30-days.md)
