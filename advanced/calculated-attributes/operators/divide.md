@@ -31,4 +31,4 @@ OUTPUT: If 'QuantityValue = 6.00', the output will be '3.00'.
 
 
 #### More Examples
-[Calculate StandartPricePerLot Based on the Ingredients and the Operations in the Recipe](../examples/CalculateStandartPricePerLotBasedOnTheIngredientsAndTheOperationsInTheRecipe.md)
+[Calculate standart price per lot based on the ingredients and the operations in the recipe](../examples/calculate-standartpriceperlot.md)
