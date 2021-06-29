@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SETLANGUAGEVALUE (in implementation) | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SETLANGUAGEVALUE (in implementation) | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="brat-SETLANGUAGEVALUE">
+<h1 id="setlanguagevalue-in-implementation">SETLANGUAGEVALUE (in implementation)</h1>
+
+<p>The platform supports multi language attributes, for example Product  Name. This gives the user the opportunity to enter the product name in  more than one language - let's say - in English and in German.</p>
+<p>The <a href="https://olddocs.erp.net/tech/calculated-attributes-35586101.html">Calculated Attributes</a> operators cannot operate with multi-language string attributes. When  such operation is required, the multi-language attribute is cast to  string and then it is used by the calculated attribute operators. The <a href="https://olddocs.erp.net/tech/cast-40145742.html">CAST</a> of the multi-language string returns the current language translation  and not all translations. So if there is a calculated attribute which  returns the first 10 symbols of the product name, it would:</p>
+<ol>
+<li>cast the product name to string (which would cut only the current language translation);</li>
+<li>return the first 10 symbols of the string from p.1.</li>
+</ol>
+<p>And then if we set up a rule which sets (via <a href="https://olddocs.erp.net/tech/setvalue-41146590.html">SETVALUE</a>) this value in the product name, the rest of the translations are lost. This is because <a href="https://olddocs.erp.net/tech/setvalue-41146590.html">SETVALUE</a> explicitly sets the value where specified. And as we do not specify all translations and just one of them, the rest of the translations are set as null - so they are lost.</p>
+<p>This is the reason behind the current action SETLANGUAGEVALUE.</p>
+<h2 id="syntax">Syntax</h2>
+<p>The SETLANGUAGEVALUE action may receive 2 or 3 input parameters:</p>
+<ol>
+<li>Parameter 1 - an attribute which holds multi-language string;</li>
+<li>Parameter 2 - currently, the second parameter may be deliver as an attribute or a constant. This parameter says what would be the new value of the  attribute from Parameter 1.</li>
+<li>Parameter 3 is delivered as a  constant. If necessary, this parameter is used to specify the language  in which the new value (parameter 2) is set as a translation. This  parameter is optional. If it is null - the action sets the new value into the current language translation.</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>If there is a product in the database with the following name:</p>
+<ul>
+<li>in English: &quot;abcdefg&quot;</li>
+<li>in German: &quot;higklm&quot;</li>
+</ul>
+<p>And if a user business rule is activated which does the following action:</p>
+<ul>
+<li>SETLANGUAGE ATTRIB: ProductName CONST: &quot;qwerty&quot;</li>
+</ul>
+<p>If this rule is started when the current language in German, then after the rule is executed, the product name would be:</p>
+<ul>
+<li>in English: &quot;abcdefg&quot;</li>
+<li>in German: &quot;qwerty&quot;</li>
+</ul>
+<p>If the action is defined as follows:</p>
+<ul>
+<li>SETLANGUAGE ATTRIB: ProductName CONST: &quot;qwerty&quot; CONST: en</li>
+</ul>
+<p>And again - the current language is German - then after the rule execution, the product name would be:</p>
+<ul>
+<li>in English: &quot;qwerty&quot;</li>
+<li>in German: &quot;higklm&quot;</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/action-types/setlanguagevalue.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

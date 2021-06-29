@@ -26,11 +26,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/fail.md",
+      "source_relative_path": "advanced/business-rules/QA/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/fail.html",
-          "hash": "gXNEBUF8H1Emuc/hpKgwXg=="
+          "relative_path": "advanced/business-rules/QA/index.html",
+          "hash": "qZNxYioniwmlSb+tVv3g6g=="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/notifyuser.md",
+      "source_relative_path": "advanced/business-rules/action-types/fail.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/notifyuser.html",
-          "hash": "WXE09zdgOZM6QHm4dv8iMA=="
+          "relative_path": "advanced/business-rules/action-types/fail.html",
+          "hash": "0bnWYBXoncksBqh8UCW9iA=="
         }
       },
       "is_incremental": false,
@@ -50,11 +50,41 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/overview.md",
+      "source_relative_path": "advanced/business-rules/action-types/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/overview.html",
-          "hash": "/uEC6vZN89DHiV8kNAirsQ=="
+          "relative_path": "advanced/business-rules/action-types/index.html",
+          "hash": "ZPHp5NzrYaBl9UxJBz80TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/action-types/notifyuser.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/action-types/notifyuser.html",
+          "hash": "UEj94e0BMu1xBAz/TP3+qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/action-types/sendmail.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/action-types/sendmail.html",
+          "hash": "vXynrS2pU5pgN+lj3RMdWw=="
         }
       },
       "is_incremental": false,
@@ -62,11 +92,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/sendmail.md",
+      "source_relative_path": "advanced/business-rules/action-types/setlanguagevalue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/sendmail.html",
-          "hash": "jDC+FiOhd9U0oMgZ45PJiw=="
+          "relative_path": "advanced/business-rules/action-types/setlanguagevalue.html",
+          "hash": "xfuc/pmZNgGgOXRKUNs4gg=="
         }
       },
       "is_incremental": false,
@@ -74,11 +104,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/setlanguagevalue.md",
+      "source_relative_path": "advanced/business-rules/action-types/setvalue.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/setlanguagevalue.html",
-          "hash": "fLXTVQgbp2GMqC+P05Gkkg=="
+          "relative_path": "advanced/business-rules/action-types/setvalue.html",
+          "hash": "HRQhYcEb0cjj7xufsMIt/g=="
         }
       },
       "is_incremental": false,
@@ -86,11 +116,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/setvalue.md",
+      "source_relative_path": "advanced/business-rules/action-types/warning.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/setvalue.html",
-          "hash": "nJ8DTJ1hEoR41dRZGihgxw=="
+          "relative_path": "advanced/business-rules/action-types/warning.html",
+          "hash": "xOg6U1v+TZsjVV362Z110g=="
         }
       },
       "is_incremental": false,
@@ -98,11 +128,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ActionTypes/warning.md",
+      "source_relative_path": "advanced/business-rules/events/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/ActionTypes/warning.html",
-          "hash": "cAjffWUKR4+oY4yNIN2oeA=="
+          "relative_path": "advanced/business-rules/events/index.html",
+          "hash": "EY0awEhvhj3Fs3nAo70LkA=="
         }
       },
       "is_incremental": false,
@@ -110,11 +140,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Events/overview.md",
+      "source_relative_path": "advanced/business-rules/examples/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Events/overview.html",
-          "hash": "DUjdV/6gGYOp8Na64qw8eg=="
+          "relative_path": "advanced/business-rules/examples/index.html",
+          "hash": "HPzu1II54zVniy3YLZk24A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/index.html",
+          "hash": "MnnQSzczMLhXMB8FDrA9+w=="
         }
       },
       "is_incremental": false,
@@ -122,47 +167,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/Examples/overview.md",
+      "source_relative_path": "advanced/business-rules/parameter-types/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/Examples/overview.html",
-          "hash": "GScBK1kPH6zcM5tbPaw58w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/ParameterTypes/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/ParameterTypes/overview.html",
-          "hash": "ob7MnGW5Se8gjG3blJgLww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/QA/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/QA/overview.html",
-          "hash": "Ky3qerLVPB9x1WIKU8lsBA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/overview.html",
-          "hash": "/kMG1lHqcby+j7xAK2JEFA=="
+          "relative_path": "advanced/business-rules/parameter-types/index.html",
+          "hash": "w1vmO2gDsvO/ocAewnEZOw=="
         }
       },
       "is_incremental": false,
@@ -1069,12 +1078,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/aggregates.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/aggregates.html",
-          "hash": "Y7E35VlXIDaXbZCC/zcw7A=="
+          "hash": "l6hIVWG6PnAuAVmalFDo5g=="
         }
       },
       "is_incremental": false,
@@ -1140,12 +1152,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/extensible-data-objects.md",
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/extensible-data-objects.html",
-          "hash": "5egZEr41sydRxvzWWlc1kg=="
+          "hash": "cepeUREMsFfWMgkink85Ig=="
         }
       },
       "is_incremental": false,
@@ -1307,12 +1322,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/overview.md",
       "output": {
         ".html": {
           "relative_path": "advanced/overview.html",
-          "hash": "AfeNda8SDNiLzrgYSDdtaw=="
+          "hash": "OL+Eado5u4i1cBlPOCHT7Q=="
         }
       },
       "is_incremental": false,
@@ -1324,7 +1342,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "SYprH/2M9TPq1LZcnXdm7Q=="
+          "hash": "ymbVm/dJ60JkqpjuT7VnEg=="
         }
       },
       "is_incremental": false,

@@ -12,22 +12,22 @@ references:
   href: reference/country-specific-functionality.html
 - uid: brat-FAIL
   name: FAIL
-  href: advanced/business-rules/ActionTypes/fail.html
+  href: advanced/business-rules/action-types/fail.html
 - uid: brat-NOTIFYUSER
   name: NOTIFYUSER
-  href: advanced/business-rules/ActionTypes/notifyuser.html
+  href: advanced/business-rules/action-types/notifyuser.html
 - uid: brat-SENDMAIL
   name: SENDMAIL
-  href: advanced/business-rules/ActionTypes/sendmail.html
+  href: advanced/business-rules/action-types/sendmail.html
 - uid: brat-SETLANGUAGEVALUE
   name: SETLANGUAGEVALUE (in implementation)
-  href: advanced/business-rules/ActionTypes/setlanguagevalue.html
+  href: advanced/business-rules/action-types/setlanguagevalue.html
 - uid: brat-SETVALUE
   name: SETVALUE
-  href: advanced/business-rules/ActionTypes/setvalue.html
+  href: advanced/business-rules/action-types/setvalue.html
 - uid: brat-WARNING
   name: WARNING
-  href: advanced/business-rules/ActionTypes/warning.html
+  href: advanced/business-rules/action-types/warning.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/add.html
