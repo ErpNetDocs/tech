@@ -34,6 +34,6 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More Examples
-[Compare Unit Price And Standard Unit Price](../examples/CompareUnitPriceAndStandardUnitPrice.md)
+[Compare unit price and standard unit price](../examples/compare-unit-and-standard-unit-price.md)
 
 
