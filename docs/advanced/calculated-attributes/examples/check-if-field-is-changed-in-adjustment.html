@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DIVIDE - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>Check if a value of a field is changed in the adjustment document | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="DIVIDE - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="Check if a value of a field is changed in the adjustment document | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,69 +76,24 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-DIVIDE">
-<h1 id="divide---calculated-attribute-operator">DIVIDE - Calculated Attribute Operator</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="check-if-a-value-of-a-field-is-changed-in-the-adjustment-document">Check if a value of a field is changed in the adjustment document</h1>
 
-<table>
-<thead>
-<tr>
-<th>Specification</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Name</td>
-<td>DIVIDE</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>Divide one number by second number.</td>
-</tr>
-<tr>
-<td>Parameter 1 Name</td>
-<td>Number1</td>
-</tr>
-<tr>
-<td>Parameter 1 Type</td>
-<td>numeric type - int, double or decimal</td>
-</tr>
-<tr>
-<td>Parameter 2 Name</td>
-<td>Number2</td>
-</tr>
-<tr>
-<td>Parameter 2 Type</td>
-<td>numeric type - int, double or decimal</td>
-</tr>
-<tr>
-<td>Parameter 3 Name</td>
-<td></td>
-</tr>
-<tr>
-<td>Parameter 3 Type</td>
-<td></td>
-</tr>
-<tr>
-<td>Return Value</td>
-<td>Number1 / Number2</td>
-</tr>
-</tbody>
-</table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.</p>
-</div>
-<h2 id="example">Example</h2>
-<pre><code>10: DIVIDE ATTRIB:QuantityValue CONST:2.00                
+<p>With the current attribute, we can check if the value of a field in the adjustment document is equal to the value of the same filed in the original (adjusted) document. When we have such information, we can determine if the value of this filed is being or has been changed in the adjustment document. Using this attribute, we can for example, create a Business rule which would allow us to prohibit the correction of the value of this field.</p>
+<pre><code>10: IIF EXP:20 CONST:False EXP:30
+20: EQUAL REF:AdjustedDocument CONST:NULL                                  
+30: IIF EXP:40 CONST:False CONST:True      
+40: EQUAL ATTRIB:@Property1 EXP:50                              
+50: GETOBJVALUE REF:AdjustedDocument ATTRIB:@Property1                     
 </code></pre>
-<p>OUTPUT: If 'QuantityValue = 6.00', the output will be '3.00'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
-</div>
-<h4 id="more-examples">More Examples</h4>
-<p><a href="../examples/calculate-standartpriceperlot.html">Calculate standart price per lot based on the ingredients and the operations in the recipe</a></p>
+<p>Explanation:</p>
+<ul>
+<li>10: Check if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays 'True', else - 'False'.</li>
+<li>20: Check if there is AdjustedDocument. If there is no reference to an  Adjusted document, then the document is not an Adjustment document.</li>
+<li>30: Check if EXP:40 is true or false.</li>
+<li>40: Check if the value of the custom property 'Property1' is equal to EXP:50.</li>
+<li>50: Get the value of the 'Property1' of the adjusted document.</li>
+</ul>
 </article>
           </div>
           
@@ -147,7 +102,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/divide.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
