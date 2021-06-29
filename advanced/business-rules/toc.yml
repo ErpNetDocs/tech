@@ -2,11 +2,14 @@
   href: index.md
 - name: Action types
   href: action-types/toc.yml
+  topicHref: action-types/index.md
 - name: Parameter types
   href: parameter-types/toc.yml
+  topicHref: parameter-types/index.md
 - name: Events
-  href: Events/toc.yml
+  href: events/toc.yml
+  topicHref: events/index.md
 - name: Examples
-  href: Examples/toc.yml
+  href: examples/toc.yml
 - name: Q & A
   href: QA/toc.yml
