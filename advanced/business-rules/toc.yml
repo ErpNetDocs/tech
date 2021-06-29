@@ -11,5 +11,6 @@
   topicHref: events/index.md
 - name: Examples
   href: examples/toc.yml
+  topicHref: examples/index.md
 - name: Q & A
   href: QA/toc.yml
