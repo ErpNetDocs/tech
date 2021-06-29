@@ -2,7 +2,7 @@
 items: CalculatedAttributeExamples
 ---
 
-# Convert a Value of a Custom Property to a Number
+# Convert a value of a custom property to a number
 
 The values of the custom properties are a specific type of value and the [CONVERT](../operators/convert.md) operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to [CAST](../operators/cast.md) it first. 
 
