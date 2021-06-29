@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
 - name: Parameter Type CONST
-  href: ParameterTypeCONST.md
+  href: parameter-type-const.md
 - name: Parameter Type SYS
-  href: ParameterTypeSYS.md
+  href: parameter-type-sys.md
