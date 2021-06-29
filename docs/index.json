@@ -369,18 +369,18 @@
     "title": "WHERE - Calculated Attribute Operator | ERP.net Tech Docs",
     "keywords": "WHERE - Calculated Attribute Operator Specification Value Description Clause which filters by the specified conditions. The second and the third parameters are optional. Parameter 1 Name Condition1 Parameter 1 Type boolean Parameter 2 Name boolean Parameter 2 Type Condition2 (optional) Parameter 3 Name boolean Parameter 3 Type Condition3 (optional) Return Value Clause, filtered by Condition1 AND Condition2 AND Condition3 Note The operator is used with operator SELECT ."
   },
-  "advanced/calculated-attributes/ParameterTypes/index.html": {
-    "href": "advanced/calculated-attributes/ParameterTypes/index.html",
+  "advanced/calculated-attributes/parameter-types/index.html": {
+    "href": "advanced/calculated-attributes/parameter-types/index.html",
     "title": "Parameter Types | ERP.net Tech Docs",
     "keywords": "Parameter Types The type of the parameter specifies how to obtain the parameter value. Several types are available: CONST - when used, indicates that the Value for this parameter type would be a constant for every calculation of the calculated attribute. For more information, see Parameter Type CONST . ATTRIB - the value of system or user-defined attribute; REF - reference to another object; CHILD - detailed objects, related to the current master object; EXP - the value of the expression with the specified number (the user specifies the number in the Value field); INPUT - the input parameter for the specified expression number (the user specifies the number in the Value field); REPO - a repository; SYS - the value of a particular system variable as Login, Today, EnterpriseCompanyId and others. The Parameter Types are used in every calculated attributes. For examples see Calculated Attributes - Examples ."
   },
-  "advanced/calculated-attributes/ParameterTypes/ParameterTypeCONST.html": {
-    "href": "advanced/calculated-attributes/ParameterTypes/ParameterTypeCONST.html",
+  "advanced/calculated-attributes/parameter-types/parameter-type-const.html": {
+    "href": "advanced/calculated-attributes/parameter-types/parameter-type-const.html",
     "title": "Parameter type CONST | ERP.net Tech Docs",
     "keywords": "Parameter type CONST When used, indicates that the Value for this parameter type would be a constant for every calculation of the calculated attribute. The formats of the different types of values which are entered are as follows: Value Description Example NULL null or empty value NULL Boolean true or false value True Integer a whole number (not a fractional number) that can be positive, negative, or zero 93 Decimal number, containing decimal symbol - '.' 93.012 Date date values used in the 'yyyy-MM-dd' format 2020-12-25 Guid Global Unique Identifier - used for objects identification 6B29FC40-CA47-1067-B31D-00DD010662DA String explicitly denoted string, entered in single quotation marks 'Example text.' Type used with CAST . Used for type conversions and the constant is the type to which we want to convert. System.Int32 Everything else is treated as string!"
   },
-  "advanced/calculated-attributes/ParameterTypes/ParameterTypeSYS.html": {
-    "href": "advanced/calculated-attributes/ParameterTypes/ParameterTypeSYS.html",
+  "advanced/calculated-attributes/parameter-types/parameter-type-sys.html": {
+    "href": "advanced/calculated-attributes/parameter-types/parameter-type-sys.html",
     "title": "Parameter type SYS | ERP.net Tech Docs",
     "keywords": "Parameter type SYS SYS parameter type is used for system variables. They can be applied when we need to acquire information for the current user, date, time, enterprise company and oth.. The list of those variables is as follows: Value Description Example (returned value) Login The login of the user that is currently logged in the program. admin UserId The id of the user that is currently logged in the program. 9da64839-a8d0-491d-aebb-4d18fa42b014 RoleName The name of role that is currently set for the user. Administration RoleId The role that is currently set for the user. c764ff2b-38ca-4906-893a-2a21a1691f43 Today Current date. 23.6.2017 0:00:00 Now Current date-time from the server time zone. 23.6.2017 13:25:33 UtcNow Current date-time in Coordinated Universal Time (UTC) 23.6.2017 10:25:33 EnterpriseCompanyId The id of the enterprise company that is currently set for the user. b0e80577-fbbe-4c9b-811e-20b6c6dd465f EnterpriseCompanyLocationId The id of the enterprise company location that is currently set for the user. f2947790-e21f-4def-b533-fdc00a343ce6 Example (usage): 10: GETVALUE SYS:Login The line returns the login of the user that is currently logged in the program."
   },

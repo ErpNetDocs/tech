@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Amount to pay | ERP.net Tech Docs </title>
+    <title>Parameter type SYS | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Amount to pay | ERP.net Tech Docs ">
+    <meta name="title" content="Parameter type SYS | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,45 +77,70 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="amount-to-pay">Amount to pay</h1>
+<h1 id="parameter-type-sys">Parameter type SYS</h1>
 
-<p><strong>Amount To Pay</strong> is part of Sales Orders and Invoices.
-It is the final amount which the customer has to pay on the current document (Sales Order or Invoice).
-It is calculated as the sum of the row amounts and all additional amounts in the current document which has check in the &quot;<strong>Add To Customer</strong>&quot; attribute in their definitions.</p>
-<h3 id="example-1">Example 1:</h3>
-<p>There is an Invoice with two rows:</p>
-<ul>
-<li>Row #10 - Product <strong>1</strong>, LineAmount: <strong>2 PCS</strong> x <strong>12 EUR</strong> = <strong>24 EUR</strong></li>
-<li>Row #20 - Product <strong>2</strong>, LineAmount: <strong>3 PCS</strong> x <strong>7 EUR</strong> = <strong>21 EUR</strong></li>
-</ul>
-<p>The document has an additional amount paid by the customer:</p>
-<ul>
-<li>VAT, Amount Percent: <strong>20%</strong> of the line amount of the rows = 0.2 x 45 EUR = <strong>9 EUR</strong></li>
-</ul>
-<p>So the <strong>Amount To Pay</strong> is: <strong>54 EUR</strong> = 24 EUR + 21 EUR +9 EUR.</p>
-<h2 id="relation-to-tax-base-and-vat-invoices">Relation To Tax Base And VAT (Invoices)</h2>
-<p>In most cases the <strong>Amount To Pay</strong> matches the sum of Tax Base and VAT, like in <strong>Example1</strong>, but a difference is possible.
-It is possible if there are <a href="../../../tech/advanced/documents/additional-amounts.md">Additional Amounts</a> which are paid by the customer but are not set as base amounts for VAT additional amount.</p>
-<h3 id="example-2">Example 2:</h3>
-<p>There is an Invoice with Line Amount of <strong>45 EUR</strong> and two <a href="../../../tech/advanced/documents/additional-amounts.md">Additional Amounts</a> which are paid by the customer:</p>
-<ul>
-<li>VAT, amount: 20% of <strong>45 EUR</strong> = <strong>9 EUR</strong></li>
-<li>Penalty Interest - not a VAT base amount, Amount: <strong>20 EUR</strong></li>
-</ul>
-<p>So the <em>Amount To Pay</em> is <strong>74 EUR</strong> while the sum of Tax Base and VAT is <strong>54 EUR</strong>.</p>
-<h3 id="example-3">Example 3:</h3>
-<p>The additional amount <strong>VAT (special cases)</strong> is set that its base amount type is <strong>Tax Base</strong>, <strong>Add To Customer</strong> and <strong>Base On Lines</strong> are <strong>True.</strong> <strong>Tax Base</strong> is not paid by customer.</p>
-<p>There is an Invoice with two rows:</p>
-<ul>
-<li>Row #10 - Product <strong>1</strong>, LineAmount: <strong>2 PCS</strong> x <strong>12 EUR</strong> = <strong>24 EUR</strong></li>
-<li>Row #20 - Product <strong>2</strong>, LineAmount: <strong>3 PCS</strong> x <strong>7 EUR</strong> = <strong>21 EUR</strong></li>
-</ul>
-<p>and <a href="../../../tech/advanced/documents/additional-amounts.md">Additional Amounts</a> as follows:</p>
-<ul>
-<li><strong>Tax Base</strong>, Amount: <strong>30 EUR</strong></li>
-<li><strong>VAT</strong>, Amount Percent <strong>20%</strong> of <strong>30 EUR</strong> = <strong>6 EUR</strong></li>
-</ul>
-<p>In this case the <em>Amount To Pay</em> is <strong>45 EUR</strong> while <em>the sum of Base Tax and VAT</em> is <strong>36 EUR</strong>.</p>
+<p>SYS parameter type is used for system variables. They can be applied when we need to acquire information for the current user, date, time, enterprise company and oth..</p>
+<p>The list of those variables is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+<th>Example (returned value)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Login</td>
+<td>The login of the user that is currently logged in the program.</td>
+<td>admin</td>
+</tr>
+<tr>
+<td>UserId</td>
+<td>The id of the user that is currently logged in the program.</td>
+<td>9da64839-a8d0-491d-aebb-4d18fa42b014</td>
+</tr>
+<tr>
+<td>RoleName</td>
+<td>The name of role that is currently set for the user.</td>
+<td>Administration</td>
+</tr>
+<tr>
+<td>RoleId</td>
+<td>The role that is currently set for the user.</td>
+<td>c764ff2b-38ca-4906-893a-2a21a1691f43</td>
+</tr>
+<tr>
+<td>Today</td>
+<td>Current date.</td>
+<td>23.6.2017 0:00:00</td>
+</tr>
+<tr>
+<td>Now</td>
+<td>Current date-time from the server time zone.</td>
+<td>23.6.2017 13:25:33</td>
+</tr>
+<tr>
+<td>UtcNow</td>
+<td>Current date-time in Coordinated Universal Time (UTC)</td>
+<td>23.6.2017 10:25:33</td>
+</tr>
+<tr>
+<td>EnterpriseCompanyId</td>
+<td>The id of the enterprise company that is currently set for the user.</td>
+<td>b0e80577-fbbe-4c9b-811e-20b6c6dd465f</td>
+</tr>
+<tr>
+<td>EnterpriseCompanyLocationId</td>
+<td>The id of the enterprise company location that is currently set for the user.</td>
+<td>f2947790-e21f-4def-b533-fdc00a343ce6</td>
+</tr>
+</tbody>
+</table>
+<p>Example (usage):</p>
+<pre><code>10: GETVALUE SYS:Login
+</code></pre>
+<p>The line returns the login of the user that is currently logged in the program.</p>
 </article>
           </div>
           
@@ -124,7 +149,7 @@ It is possible if there are <a href="../../../tech/advanced/documents/additional
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/amount-to-pay.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/parameter-types/parameter-type-sys.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
