@@ -6,8 +6,6 @@
   href: notifyuser.md
 - name: SENDMAIL
   href: sendmail.md
-- name: SETLANGUAGEVALUE
-  href: setlanguagevalue.md
 - name: SETVALUE
   href: setvalue.md  
 - name: WARNING
