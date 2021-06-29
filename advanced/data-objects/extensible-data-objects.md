@@ -26,14 +26,14 @@ The record in **Sys_Objects** has only untyped soft reference (not referential i
 All additional data is related to **Sys_Objects** through typed referential integrity. In this way, the only untyped soft reference is the original reference in **Sys_Objects**, but most data is solidly related through typed referential integrity.
 
 > [!NOTE] 
-> The [Custom Properties](~/advanced/custom-attributes/overview.md) system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
+> The [Custom Properties](~/advanced/custom-attributes/index.md) system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
 > If we would have to design the Custom Properties system now, it would be implemented as "additional data" to the EDO system.
 
 ## Future Plans
 
 The EDO system is very useful for creating additional data, which can be attached to multiple entities. It is not required that the type of data should be attachable to ALL entities.
 
-The data model allows attaching data to any entity, but system business rules or [Business Rules](../business-rules/overview.md) can be used to limit the entities, which actually "accept" the data.
+The data model allows attaching data to any entity, but system business rules or [Business Rules](../business-rules/index.md) can be used to limit the entities, which actually "accept" the data.
 
 Possible (planned) future uses:
 
