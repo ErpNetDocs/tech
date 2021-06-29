@@ -31,5 +31,5 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More Examples
-[Compare Unit Price And Standard Unit Price](../examples/CompareUnitPriceAndStandardUnitPrice.md)
-<br/>[Check If a Value of a Field Is Changed in the Adjustment Document](../examples/CheckIfAValueOfAFieldIsChangedInTheAdjustmentDocument.md)
+[Compare unit price and standard unit price](../examples/compare-unit-and-standard-unit-price.md)
+<br/>[Check if a value of a field is changed in the adjustment document](../examples/check-if-field-is-changed-in-adjustment.md)
