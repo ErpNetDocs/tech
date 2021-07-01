@@ -1070,6 +1070,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/concepts/default-language.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/concepts/default-language.html",
+          "hash": "9v7LKP5jeiQpXyK4o9ZlgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/concepts/master-detail-attributes.md",
       "output": {
         ".html": {
