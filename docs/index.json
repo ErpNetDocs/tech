@@ -684,6 +684,21 @@
     "title": "Inventory Module | ERP.net Tech Docs",
     "keywords": "Inventory Module"
   },
+  "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.html": {
+    "href": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": ""
+  },
+  "modules/logistics/logistics-common-module-concepts/available-to-promise/index.html": {
+    "href": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": ""
+  },
+  "modules/logistics/logistics-common-module-concepts/index.html": {
+    "href": "modules/logistics/logistics-common-module-concepts/index.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": ""
+  },
   "modules/logistics/wms/how-it-works/zone-policies.html": {
     "href": "modules/logistics/wms/how-it-works/zone-policies.html",
     "title": "Zone Policies | ERP.net Tech Docs",

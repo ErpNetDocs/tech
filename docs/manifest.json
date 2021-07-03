@@ -2001,6 +2001,42 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.html",
+          "hash": "BoJGAuNo3kcrN85rvM/wrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.html",
+          "hash": "s8h21WdQTR9ye3nfLUGquw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/index.html",
+          "hash": "XqSiSefeutiM6HRrqnF9fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/logistics/wms/WMS.png",
       "output": {
