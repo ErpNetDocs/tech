@@ -9,6 +9,7 @@ The ATP available on a given date is the quantity that can be promised to orders
 The calculation of ATP is based not only on the data of the <b>Chronology of the Store Orders which are not executed</b>, but also on the information of the Current Stock Holds (see topic <b>Available To Promise</b>). However, for the particular product or store, there may not be any unfulfilled shipments or deliveries and therefore those records won’t exist in the reports. For this reason, the reports start with an auxiliary line with a fictive “From date” which is equal to 01.01.2000 and contains the information for the starting availability, i.e. the <b>Current Availability</b>.
  
 <b>As mentioned above, the rest of the records represent the Chronology of the Store Orders which are not executed</b>. 
+
 They contain information for:
 
 <b><i>- Movements Base</b></i> - The sum of the quantity of all planned stock movements (issue and receipt) on this date in base measurement unit. 
