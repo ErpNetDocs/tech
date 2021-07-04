@@ -46,9 +46,5 @@ In the Transactions, the cost comes in four currencies: <b>base cost, product co
 
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
-For more specific information about cost calculations see the following:
-
-- <b>Cost Correction</b>
-
-- <b>Original Cost Calculation</b>
+For more specific information about cost calculations see the following articles: <b>Cost Correction</b> and <b>Original Cost Calculation</b>
 
