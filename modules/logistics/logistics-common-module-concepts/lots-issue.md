@@ -44,11 +44,11 @@ The priority may be defined by sorting the lots by the date of their first recei
 
 There are <b>30 Pcs</b> in a document line and lots of the product in the line have the following details (lot, available quantity/current stock hold, date of first receipt, expiry date):
 
-<b>[Lot #1],11 Pcs</b> ,<b>01.12.2021</b>,<b>05.01.2022</b>;
+<b>[Lot #1], 11 Pcs</b>, <b>01.12.2021</b>, <b>05.01.2022</b>;
 
-<b>[Lot #2],17 Pcs</b> ,<b>03.12.2021</b>,<b>03.01.2022</b>;
+<b>[Lot #2], 17 Pcs</b>, <b>03.12.2021</b>, <b>03.01.2022</b>;
 
-<b>[Lot #3],14 Pcs</b> ,<b>07.12.2021</b>,<b>null</b>.
+<b>[Lot #3], 14 Pcs</b>, <b>07.12.2021</b>, <b>null</b>.
 
 This document line is divided into two or three document lines with quantities from different lots depending on the lots issuing method of the product:
 
