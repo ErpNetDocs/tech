@@ -18,7 +18,9 @@ For each store transaction (i.e. Transaction document) changing the cost, a spec
 
 - if the parent Store Order has no <b>Transaction Timestamp </b> and the Transaction has past date, then the <b>Transaction Timestamp</b> is set to XX.XX.XXX 23:59:00, where XX.XX.XXXX is the document's date.
 
-If necessary, the <b>Transaction Timestamp</b> may be set manually by the user, although there are certain limitations. For example, if the quantity in the row is 0, the date in  Document Date should be no different than the one in <b>Transaction Timestamp</b>. For more information, see the <b>Setting Transaction Timestamp</b> article.
+If necessary, the <b>Transaction Timestamp</b> may be set manually by the user, although there are certain limitations. For example, if the quantity in the row is 0, the date in  Document Date should be no different than the one in <b>Transaction Timestamp</b>. 
+
+For more information, see the <b>Setting Transaction Timestamp</b> article.
 
 ## Cost types
 
