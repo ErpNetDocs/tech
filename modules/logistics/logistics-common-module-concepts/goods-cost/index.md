@@ -1,12 +1,12 @@
 # Goods Cost
 
-Currently the goods cost in @@name is calculated by the Transactions documents. 
+Currently, the goods cost in @@name is calculated by the Transactions documents. 
 
 For each Transaction the cost is defined either automatically when the document is released or by the parent document. This is determined by the <b>Cost Source</b> field. It has two possible values:
 
-- ‘Store’ - this value sets out that the cost in Transaction is defined when releasing the document by the accumulated cost in the store. This is used when issuing transactions are executed.
+- ‘Store’ - this value sets out that the cost in the Transaction is defined when releasing the document by the accumulated cost in the store. This is used when issuing transactions are executed.
 
-- ‘Document’ - the cost is defined by the data in the Transaction rows (<b>Unit Cost</b> and <b>Line Cost</b> fields). This data is usually inherited by the parent document and used when receipt operations are executed (the only exception is when the receipt operation comes from ‘Reconciliation’ - then the value in <b>Cost Source</b> is ‘Store’).
+- ‘Document’ - the cost is defined by the data in the Transaction rows (<b>Unit Cost</b> and <b>Line Cost</b> fields). This data is usually inherited by the parent document and used when receipt operations are executed (the only exception is when the receipt operation comes from ‘Reconciliation’ - then, the value in <b>Cost Source</b> is ‘Store’).
 
 ‘Store Orders’ enable other modules to set goods cost. They contain not only the quantity but, in specific cases, what the goods cost should be. This cost is copied to the Transactions. The <b>Cost Source</b> is set to <b>Document</b> in the Transactions executing the specific Store Order.  This is how they participate in the cost definition.
 
