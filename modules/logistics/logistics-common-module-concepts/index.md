@@ -1,12 +1,12 @@
--<b>Available To Promise</b>
+- <b>Available To Promise</b>
 
--<b>Goods Cost</b>
+- <b>Goods Cost</b>
 
--<b>Lots Issue</b>
+- <b>Lots Issue</b>
 
--<b>Material Requirements Planning</b>
+- <b>Material Requirements Planning</b>
 
--<b>Projected Available Balance</b>
-
--<b>Setting Transaction Timestamp</b>
+- <b>Projected Available Balance</b>
+ 
+- <b>Setting Transaction Timestamp</b>
 
