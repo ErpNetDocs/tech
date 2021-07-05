@@ -28,4 +28,6 @@
   href: total-quantity-and-scrap-in-recipe-ingredients.md
 - name: Convert a value of a custom property to a number
   href: convert-property-to-number.md
+- name: Format date type custom property
+  href: format-property-date.md
   
