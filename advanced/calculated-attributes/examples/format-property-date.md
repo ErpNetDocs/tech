@@ -17,7 +17,7 @@ The current example shows how you can format the values of date type custom prop
 70:	SUBSTRING	EXP:100	CONST:4	CONST:2
 80:	CONCAT	CONST:-	EXP:90		
 90:	SUBSTRING	EXP:100	CONST:6	CONST:2
-100:	FORMATSTRING	ATTRIB	@Property1	CONST	V		
+100:	FORMATSTRING	ATTRIB:@Property1	CONST:V		
 
 ```
 
