@@ -2,9 +2,9 @@
 items: CalculatedAttributeExamples
 ---
 
-# Format custom property date
+# Format date type custom property 
 
-The current example shows how you can format a date which is saved as a custom property value.
+The current example shows how you can format the values of date type custom properties using a calculated attribute
 
 
 ```
