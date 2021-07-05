@@ -386,6 +386,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/format-property-date.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/format-property-date.html",
+          "hash": "+QpuhNFO9Gn0xGz0RQ03pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/get-current-availability-of-product.md",
       "output": {
         ".html": {
@@ -426,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/index.html",
-          "hash": "Yzoobg8ZGRWnC2b8ahZaSA=="
+          "hash": "rQVIsArYRSgN5hpQvOyOqQ=="
         }
       },
       "is_incremental": false,
@@ -1324,7 +1336,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "Z2F7FpaMGbFX4j9v/I41PA=="
+          "hash": "zIystGbFBDt7n4bq8SR5Jw=="
         }
       },
       "is_incremental": false,
