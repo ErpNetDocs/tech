@@ -24,7 +24,7 @@ The current example shows how you can format a date which is saved as a custom p
 
 
 Explanation:
-// We assume that the value of the custom poperty is 20200315
+<br/>// We assume that the value of the custom poperty is 20200315
 
 - 10: Format the date returned from EXP:20 apllyig the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
 - 20: Convert the type of the value returned from EXP:30 to datetime	
