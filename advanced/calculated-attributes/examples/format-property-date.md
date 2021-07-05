@@ -26,13 +26,13 @@ The current example shows how you can format the values of date type custom prop
 Explanation:
 <br/>// We assume that the value of the custom poperty is 20200315
 
-- 10: Format the date returned from EXP:20 apllyig the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
-- 20: Convert the type of the value returned from EXP:30 to datetime	
+- 10: Format the date returned from EXP:20 applyig the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
+- 20: Convert the type of the value returned from EXP:30 to DateTime	
 - 30: Concatenate the text from EXP:40 to the text from EXP:50 e.g. '2021' + '-03-15'
-- 40: Get the first 4 characters from the string from EXP:100 e.g. '2021'
+- 40: Get the first 4 characters from EXP:100 e.g. '2021'
 - 50: Concatenate the character '-' to the text from EXP:60 e.g. '-' + '03-15'
 - 60: Concatenate the text from EXP:70 to the text from EXP:80 e.g. '09' + '-15'
-- 70: Get the first 2 characters from the string from EXP:100, stating from character 4 e.g. '03'
-- 80: Concatenate the character '-' to the text from EXP:80 e.g. '-' + '15'
-- 90: Get the first 2 characters from the string from EXP:100, stating from character 6 e.g. '15'
-- 100: Get the value of custom property "Property1"
+- 70: Get the first 2 characters from the string from EXP:100, starting from character 4 e.g. '03'
+- 80: Concatenate the character '-' to the text from EXP:90 e.g. '-' + '15'
+- 90: Get the first 2 characters from the string from EXP:100, starting from character 6 e.g. '15'
+- 100: Get the value of custom property "Property1" e.g. '20200315'
