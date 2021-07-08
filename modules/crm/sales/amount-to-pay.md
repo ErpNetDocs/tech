@@ -1,3 +1,7 @@
+---
+uid: amount-to-pay
+---
+
 # Amount to pay
 
 **Amount To Pay** is part of Sales Orders and Invoices. 
