@@ -1,6 +1,6 @@
 - name: Concepts
   href: concepts/
-- name: Functionality
+- name: Apps
   href: modules/
 - name: Advanced
   href: advanced/  
