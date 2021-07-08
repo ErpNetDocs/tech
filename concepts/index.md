@@ -1,3 +1,3 @@
-﻿# Business Logic Concepts
+# Business Logic Concepts
 
 This section contains concepts, applicable to all modules.
