@@ -1,5 +1,5 @@
-﻿- name: Overview
-  href: overview.md
+- name: Overview
+  href: index.md
 - name: CRM
   href: crm/toc.yml
 - name: Logistics
