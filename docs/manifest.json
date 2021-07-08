@@ -1448,15 +1448,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "concepts/toc.yml",
       "output": {
         ".html": {
           "relative_path": "concepts/toc.html",
-          "hash": "L99aUDAKyz2CvpJsrDgZvg=="
+          "hash": "M0N9rrxlPncL6470P43BEw=="
         }
       },
       "is_incremental": false,
@@ -2627,15 +2624,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "/+ZmLawtyt/jfNDQ+pfmbA=="
+          "hash": "UWveyp6qjLur6mLFx/x5WA=="
         }
       },
       "is_incremental": false,
