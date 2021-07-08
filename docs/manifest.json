@@ -1193,7 +1193,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts.html",
-          "hash": "CuUCZEHQmj6gNnmRBrAFBw=="
+          "hash": "E+k4e/TFcB4uMQc5AxWEUw=="
         }
       },
       "is_incremental": false,
@@ -1862,7 +1862,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/amount-to-pay.html",
-          "hash": "kM0c2sVnZZldlW0Q5kJJFQ=="
+          "hash": "0FbIqXg81NgjraBMV4Q5MQ=="
         }
       },
       "is_incremental": false,
@@ -1875,6 +1875,18 @@
         ".html": {
           "relative_path": "modules/crm/sales/index.html",
           "hash": "JgtfzSO/epgLDAzlQtM9zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/price-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/price-types.html",
+          "hash": "LX25dNeN6auAc13oIaQnHQ=="
         }
       },
       "is_incremental": false,
@@ -2521,7 +2533,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "T2rq5OMFVyqHb7NSLPbN+A=="
+          "hash": "g2lmYbrapNpMchpgTuBecg=="
         }
       },
       "is_incremental": false,

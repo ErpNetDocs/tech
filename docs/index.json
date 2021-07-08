@@ -634,6 +634,11 @@
     "title": "CRM Sales Module | ERP.net Tech Docs",
     "keywords": "CRM Sales Module Activity → Opportunity → Offer → Sales Order → Invoice Order → Invoice The sales module is used to manage the preparing and issuing of Sales Orders and the related master data."
   },
+  "modules/crm/sales/price-types.html": {
+    "href": "modules/crm/sales/price-types.html",
+    "title": "Price types | ERP.net Tech Docs",
+    "keywords": "Price types Price types are used to set additional priority conditions for the prices. 5 is the highest priority level that can be selected in the Priority field of the price. To add an additional higher priority, a price type must be defined and selected as a price type of the price. Priorities among the different price types are set by filling a number in the Ordinal position field in the definition of the price type – the lower the number, the higher the priority. Price types add additional priority under the following algorithm: If a price has a defined price type , this price will be with the highest priority among other prices - no matter their level of priority. If more than one price has a defined price type , the price with the price type that has the lowest ordinal position will be with the highest priority. If more than one price has a defined price type and their price types have equal ordinal positions, the price with the highest priority will be selected."
+  },
   "modules/crm/sales/sales-order-payment-plan.html": {
     "href": "modules/crm/sales/sales-order-payment-plan.html",
     "title": "Sales Order Payment Plan | ERP.net Tech Docs",

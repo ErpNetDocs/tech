@@ -1,12 +1,18 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: additional-amounts
+  name: Additional Amounts
+  href: advanced/documents/additional-amounts.html
 - uid: Adjustment-Documents
   name: Adjustment Documents
   href: advanced/documents/adjustment-documents.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
+- uid: amount-to-pay
+  name: Amount to pay
+  href: modules/crm/sales/amount-to-pay.html
 - uid: applicable-legislations
   name: Country Specific Functionality
   href: reference/country-specific-functionality.html
