@@ -5,8 +5,8 @@ It is targeted towards implementation consultants and power users.
 
 ## Learn more
 
-- [Concepts](~/concepts/overview.md) - general concepts, which apply to all modules.
-- [Functionality](~/modules/overview.md) - documentation of the business functions.
+- [Concepts](~/concepts/index.md) - general concepts, which apply to all modules.
+- [Functionality](~/modules/index.md) - documentation of the business functions.
 - [Advanced](~/advanced/index.md) - documentation of advanced systems.
 
 ## Other documentations
