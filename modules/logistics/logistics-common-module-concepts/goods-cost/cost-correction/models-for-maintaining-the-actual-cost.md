@@ -1,4 +1,4 @@
-## Models For Maintaining The Actual Cost
+# Models For Maintaining The Actual Cost
 
 There are two main models to keep the goods cost up-to-date.
 
@@ -6,12 +6,12 @@ There are two main models to keep the goods cost up-to-date.
 
 2.	The corrections are created periodically by a user instead of immediately for each Transaction. This model provides the easier daily creation of a Transaction with a risk for incorrect costs covered in <b>Cost Correction</b> (this happens only when store transactions are entered in a non-chronological manner).
 
-# Dynamic Cost Correction
+## Dynamic Cost Correction
 
 Maintaining the actual cost at all times with the first model is accomplished by using two specific procedures for generating <b>Cost Correction</b> from every Transaction. They have to be created when the Transaction is <b>Released</b> and the generation of the <b>Cost Correction</b> updating the cost of the current Transaction is performed first.
 Thus, when the Transaction is released, it will have its original cost, and the first generation will correct its values if necessary. We assume that the cost of all existing released Transactions before the creation of the current Transaction are correct (as the cost of the current Transaction may be affected by them). Once the first generation corrects the cost of the newly entered Transaction, the second generation corrects the cost of all other transactions that depend on the current Transaction. Thus, after its release, the cost of all Transactions in the system will be actual no matter the date they are entered. The older the transaction, the slower the performance of the two generation procedures will be (this means that more Transactions will be affected by the current transaction).
 
-# Periodical Cost Correction
+## Periodical Cost Correction
 
 The second model for <b>Cost Correction</b> does not use automatic generation procedures for the Cost Corrections. Instead, the user manually enters documents for a specified period (month, quarter, etc.) and starts the <b>Basic Algorithm For Cost Correction Calculation</b> for all Transactions in the specified period.
 
