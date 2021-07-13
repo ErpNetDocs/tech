@@ -1894,6 +1894,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/pricing.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/pricing.html",
+          "hash": "zrs2SgEd9jnn6Uk60b+8+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-order-payment-plan.md",
       "output": {
         ".html": {
