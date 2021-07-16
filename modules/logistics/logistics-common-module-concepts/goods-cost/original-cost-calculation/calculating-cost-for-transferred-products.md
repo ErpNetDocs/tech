@@ -18,19 +18,19 @@ There is a Store Transfer with two rows - row #1 with Product 1 for <b>10 PCS</b
 
 - <b>issue, Product 1</b>, Timestamp: 01 Dec 2020 <b>13:50, 8 PCS</b>, document cost: <b>88</b>;
 
-- <b>issue, Product 2</b>, Timestamp: 01 Dec 2020 <b<13:50, 6 PCS</b>, document cost: <b>90</b>.
+- <b>issue, Product 2</b>, Timestamp: 01 Dec 2020 <b>13:50, 6 PCS</b>, document cost: <b>90</b>.
 
 Afterwards, Store Orders receipt will be created with the same quantities and set costs in the rows:
 
-- row #10, <b>Product 1, 8 PCS</b>, line cost:<b>88</b>;
+- row #10, <b>Product 1, 8 PCS</b>, line cost: <b>88</b>;
 
 - row #20, <b>Product 2, 6 PCS</b>, line cost: <b>90</b>.
 
 When executing this Store Order, the result is Transactions receipt for <b>8 PCS</b> and <b>6 PCS</b> with cost of <b>88</b> and <b>90</b>, respectively. And when the rest of the transfer quantities are issued:
 
-- <b>issue, Product 1</b>, Timestamp: 07 Dec 2020<b>10:05, 2 PCS</b>, document cost: <b>20</b>;
+- <b>issue, Product 1</b>, Timestamp: 07 Dec 2020 <b>10:05, 2 PCS</b>, document cost: <b>20</b>;
 
-- <b>issue, Product 2</b>, Timestamp: 01 Dec 2020<b>10:05, 6 PCS</b>, document cost: <b>102</b>.
+- <b>issue, Product 2</b>, Timestamp: 01 Dec 2020 <b>10:05, 6 PCS</b>, document cost: <b>102</b>.
 
 a new receipt Store Order will be created with rows as follows (the Store Transfer will try to create a new Store Order for the whole issued cost from the four issue transactions. However, a Store Order for the first two issues already exists, so the <b>Discrepancy System</b> will create new order only for the second issues):
 
@@ -94,7 +94,7 @@ The sum of the issues up to this Timestamp (including the timestamp) is larger o
   
 If we use the Store Transfer of <b>3 PCS</b> from Store 2 to Store 1 from <b><i>Example 2</b></i>, the first issue is as follows:
   
-- <b>issue</b>, Timestamp: 10 Dec 2020<b>17:04, 1 PCS</b>, cost: <b>20</b>;
+- <b>issue</b>, Timestamp: 10 Dec 2020 <b>17:04, 1 PCS</b>, cost: <b>20</b>;
   
 Now, the user is not able to make a Transaction <b>receipt</b> for <b>3 PCS</b>. The user is able to enter up to <b>1 PCS:</b> in Store 1.
   
