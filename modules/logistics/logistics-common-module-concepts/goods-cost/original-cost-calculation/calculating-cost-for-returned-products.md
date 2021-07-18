@@ -34,7 +34,7 @@ The formula is as follows:
 
 <b>[receipt cost] = [returned quantity] * [historical unit cost]</b>
 
-<b>Example 2:</b>
+<i><b>Example 2:</b></i>
 
 There is a product return from a customer for <b>3 PCS</b> and the original Sales Order does not exist in @@name. The <i>Historical Unit Cost</i> field in the Returning Sales Order has to be filled in. If its value is <b>8</b>, then the <b>receipt</b> Store Order will have the following: 
 
