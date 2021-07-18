@@ -2102,7 +2102,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.html",
-          "hash": "eNHIiQz3vEx6Aw8CqcfaeA=="
+          "hash": "36nQg+PjHqzVXt4wpB/etA=="
         }
       },
       "is_incremental": false,
@@ -2174,7 +2174,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html",
-          "hash": "dabIu3+7UnJKdymoTlgpUg=="
+          "hash": "tVOWHdIznMOzLYlApu6p5Q=="
         }
       },
       "is_incremental": false,
