@@ -38,7 +38,7 @@ For more specific information, see:
 
 - <b>Basic Algorithm For Cost Correction Calculation</b>
 
-- <b>Models For Maintaining The Actual Cost]</b>
+- <b>Models For Maintaining The Actual Cost</b>
 
-- <b>Specific Procedures of Cost Corrections]</b>
+- <b>Specific Procedures of Cost Corrections</b>
 
