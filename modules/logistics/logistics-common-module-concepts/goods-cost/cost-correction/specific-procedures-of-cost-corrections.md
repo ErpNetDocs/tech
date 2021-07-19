@@ -14,11 +14,11 @@ For each row, the following actions are applied:
 
      a. if the Transaction is <b>issuing</b>, the cost is calculated by the average accumulated cost;
 
-     b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is re-calculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;
+     b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;
 
      c. if the record is a <b>receipt</b> transaction and is not part of a transfer or production process, the original cost is considered the actual cost.
 
-To make valid calculations, the cost of all store transactions affecting the current transactions should be re-calculated correctly.
+To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.
 
 At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <b>Cost Correction</b> sub-document for the current Transaction row, which contains the difference.
 
