@@ -6,9 +6,9 @@ The algorithm has two stages:
 
 1. The records are ordered chronologically.
 
-2. The cost of the rows that do not include accumulated information is re-calculated one by one.
+2. The cost of the rows that do not include accumulated information is recalculated one by one.
 
-The cost of transaction rows in multiple records is re-calculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document <b>Cost Correction</b>. With the release of <b>Cost Correction</b>, the costs in the Transaction rows are updated.
+The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document <b>Cost Correction</b>. With the release of <b>Cost Correction</b>, the costs in the Transaction rows are updated.
 
 Multiple records are generated when all transaction operations for a period (as well as the opening balance at the start of the period) are loaded. It is of great importance for all transaction operations and opening balances to be loaded during the operation. Any of them missing may lead to incorrect cost correction (during stage 2 of the algorithm).
 
@@ -24,21 +24,21 @@ The criteria above can’t provide thorough sorting of the records. That is why 
 
 ## Stage 2: Recalculating The Sorted Records
 
-When the records are ordered in the previous stage, the cost accumulated from the starting period (average) is calculated. Then, the cost of each record is re-calculated. Finally, the re-calculation of the next record begins (if there is one in the first place).
+When the records are ordered in the previous stage, the cost accumulated from the starting period (average) is calculated. Then, the cost of each record is recalculated. Finally, the recalculation of the next record begins (if there is one in the first place).
 
-The re-calculation of the record cost is performed as follows:
+The recalculation of the record cost is performed as follows:
 
-- If the record is for accumulated data (opening balance), the record is not re-calculated.
+- If the record is for accumulated data (opening balance), the record is not recalculated.
 
 - If the record is an <b>issue</b> transaction, then the cost is calculated according to the average accumulated cost.
 
-- If the record is a <b>receipt</b> transaction and is part of a transfer or a production process, then its cost is re-calculated according to the algorithm from articles <b>Calculating Cost For Produced Products, Calculating Cost For Transferred Products</b>, and <b>Calculating Cost For Returned Products</b>.
+- If the record is a <b>receipt</b> transaction and is part of a transfer or a production process, then its cost is recalculated according to the algorithm from articles <b>Calculating Cost For Produced Products, Calculating Cost For Transferred Products</b>, and <b>Calculating Cost For Returned Products</b>.
 
-- If the record is a <b>receipt</b> transaction and is not part of a transfer or a production process, the record is not re-calculated.
+- If the record is a <b>receipt</b> transaction and is not part of a transfer or a production process, the record is not recalculated.
 
 <b><i>Example 1:</b></i>
 
-There are two stores and three products, the first two of which are provided by external suppliers. The third is internally produced. A re-calculation of the cost for <b>January 2020</b> is needed. This is the data for the first store. The second store has no movements recorded (including the current period):
+There are two stores and three products, the first two of which are provided by external suppliers. The third is internally produced. A recalculation of the cost for <b>January 2020</b> is needed. This is the data for the first store. The second store has no movements recorded (including the current period):
 
 - Store #<b>1</b>, Product #<b>1</b>, <b>Opening Balance</b>, before <b>01 Jan 2020 00:00, 10</b> PCS, total cost:<b> 100</b>;
 
@@ -68,7 +68,7 @@ It turns out that there was a <b>receipt</b> transaction on <b>11 Jan 2020</b> w
 
 - Store #<b>1</b>, Product #<b>2, receipt transaction</b>, Transaction Timestamp <b>11 Jan 2020 13:44</b>, <b>6</b> PCS, total cost: <b>44</b>.
 
-The cost of all other store Transactions during this month is incorrect (except the first two receipts on <b>05 Jan 2020</b>) and has to be re-calculated. When executing the algorithm with the previous data, the following order of records will be completed after the first stage:
+The cost of all other store Transactions during this month is incorrect (except the first two receipts on <b>05 Jan 2020</b>) and has to be recalculated. When executing the algorithm with the previous data, the following order of records will be completed after the first stage:
 
 - Store #<b>1</b>, Product #<b>1, Opening Balance</b>, before: <b>01 Jan 2020 00:00</b>;
 
