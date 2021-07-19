@@ -92,7 +92,7 @@ The cost of all other store Transactions during this month is incorrect (except 
 
 - Store #<b>1</b>, Product #<b>3, receipt transaction</b>, Transaction Timestamp: <b>19 Jan 2020 11:50</b>.
 
-After the re-calculation in the second stage for the last five transactions, the following actual costs will be calculated:
+After the recalculation in the second stage for the last five transactions, the following actual costs will be calculated:
 
 - Store #<b>1</b>, Product #<b>1, issue transaction</b>, Transaction Timestamp: <b>16 Jan 2020 10:12</b>, recalculated cost: <b>52</b>;
 
