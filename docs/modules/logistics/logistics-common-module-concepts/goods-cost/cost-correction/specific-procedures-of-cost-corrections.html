@@ -88,11 +88,11 @@
 </li>
 <li><p>Then, the actual cost for the row is calculated - the sum <b>[actual cost]</b> as usual:</p>
 <p>a. if the Transaction is <b>issuing</b>, the cost is calculated by the average accumulated cost;</p>
-<p>b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is re-calculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;</p>
+<p>b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;</p>
 <p>c. if the record is a <b>receipt</b> transaction and is not part of a transfer or production process, the original cost is considered the actual cost.</p>
 </li>
 </ol>
-<p>To make valid calculations, the cost of all store transactions affecting the current transactions should be re-calculated correctly.</p>
+<p>To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.</p>
 <p>At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <b>Cost Correction</b> sub-document for the current Transaction row, which contains the difference.</p>
 <h2 id="cost-correction-generation-procedure-for-the-current-transaction-results">Cost Correction generation procedure for the current Transaction results</h2>
 <p>This generation procedure updates the costs of all transactions that depend on the current Transaction rows.</p>
