@@ -1,6 +1,6 @@
 # Cost Correction
 
-The current article describes the calculation (and re-calculation) of the <b>actual cost</b>. The article <b>Original Cost Calculation</b> describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
+The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article <b>Original Cost Calculation</b> describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
 
 <b><i>Example 1:</b></i>
 
@@ -18,7 +18,7 @@ There is another receipt transaction not entered on time. It happened on <b>07 J
 
 - <b>receipt</b>, Timestamp: <b>07 Jan 2020 23:59, 3PCS </b>, total cost: <b>105 EUR</b>;
 
-If the third receipt transaction is entered on time, then the unit cost on <b>08 Jan 2020</b> would be 280/10 = <b>28</b>, not <b>25</b>, as it was originally calculated in the issuing transaction. This is happening due to the late entering of the transaction in the system. The cost of the issuing transaction is incorrect and a re-calculation is needed.
+If the third receipt transaction is entered on time, then the unit cost on <b>08 Jan 2020</b> would be 280/10 = <b>28</b>, not <b>25</b>, as it was originally calculated in the issuing transaction. This is happening due to the late entering of the transaction in the system. The cost of the issuing transaction is incorrect and a recalculation is needed.
 
 The effect of the incorrect cost from <b><i>Example 1</b></i> may influence not only issuing transactions. If the issuing operation was about ingredient consumption from the Production module, for example, then the cost of the production output would be incorrect as well. This leads to incorrect cost when issuing the production output.
 
