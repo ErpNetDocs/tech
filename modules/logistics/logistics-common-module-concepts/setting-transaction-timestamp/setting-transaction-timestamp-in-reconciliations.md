@@ -1,6 +1,6 @@
 # Setting Transaction Timestamp In Reconciliations
 
-In Reconciliations, <i>Transaction Timestamps</i> about to be generated in the Store Transactions rows are calculated the same way as on Release. In the Reconciliation document form, when the current availability of the products is calculated and stored in the rows, <i>Transactions Timestamps</i> are filled in as follows:
+In Reconciliations, <i>Transaction Timestamps</i> about to be generated in the Store Transactions rows are calculated the same way as on Release. In the Reconciliation document form, when the current availability of the products is calculated and stored in the rows, <i>Transaction Timestamps</i> are filled in as follows:
 
 - If the Reconciliation has a present or future Document Date, then the <i>Transaction Timestamp</i> in the row has the current date and time.
 
