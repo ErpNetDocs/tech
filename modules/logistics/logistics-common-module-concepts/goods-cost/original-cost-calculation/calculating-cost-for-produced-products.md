@@ -200,14 +200,17 @@ And the total cost of the produced product is 10 + 7 + 39 = <b>56  EUR</b>.
 ## Issue And Receipt Balance
 
 Similarly to Store Transfers and Sales, there is a receipt limitation in the production - it cannot exceed the issue. Unlike Store Transfers and Sales, the validation is a bit more complicated because the product in the issue transactions is different from the product in the receipt transaction. The materials are not the same as the produced product. 
+
 As a result, the total quantities of issue and receipt transactions cannot be compared directly.
 
 The limitation is applied on all store transactions that are caused by a Work Order. 
 
 For each <i>Transaction Timestamp</i>, the following is executed:
 
-all issues are summed up (the materials) with Transaction Timestamp less or equal to the current and by their receipts from the Work Order is defined what is the largest quantity that is available for production from these materials;
-all receipts (the produced products) are summed up that has Transaction Timestamp less or equal to the current;
-a validation is performed to check if the maximum quantity of the product from p.1 is bigger or equal to the receipt total from p2.
+- All issues (the materials) are summed up with a <i>Transaction Timestamp</i> less than or equal to the current. By their receipts from the Work Order, it is defined what is the largest quantity that is available for production from these materials;
+
+- All receipts (the produced products) are summed up with a <i>Transaction Timestamp</i> less than or equal to the current;
+
+- A validation is performed to check if the maximum quantity of the product from p.1 is bigger than or equal to the receipt total from p2.
 
 For more information about this validation, see <b>Receipt And Issue Balance Validation In Store Transfers</b>.
