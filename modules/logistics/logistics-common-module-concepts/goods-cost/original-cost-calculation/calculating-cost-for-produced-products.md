@@ -199,7 +199,7 @@ And the total cost of the produced product is 10 + 7 + 39 = <b>56  EUR</b>.
 
 ## Issue And Receipt Balance
 
-Similarly to Store Transfers and Sales, there is a receipt limitation in the production - it cannot exceed the issue. Unlike Store Transfers and Sales, the validation is a bit more complicated because the product in the issue transactions is different from the product in the receipt transaction. The materials are not the same as the produced product. 
+Similarly to Store Transfers and Sales, there is a receipt limitation in the production - it cannot exceed the issue. Unlike Store Transfers and Sales, the validation is a bit more complicated because the product in the issue transactions is different from the product in the receipt transactions. The materials are not the same as the produced product. 
 
 As a result, the total quantities of issue and receipt transactions cannot be compared directly.
 
