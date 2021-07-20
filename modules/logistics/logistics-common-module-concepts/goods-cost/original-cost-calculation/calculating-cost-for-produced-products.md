@@ -213,4 +213,4 @@ For each <i>Transaction Timestamp</i>, the following is executed:
 
 - A validation is performed to check if the maximum quantity of the product from p.1 is bigger than or equal to the receipt total from p2.
 
-For more information about this validation, see <b>Receipt And Issue Balance Validation In Store Transfers</b>.
+For more information about the validation, see <b>Receipt And Issue Balance Validation In Store Transfers</b>.
