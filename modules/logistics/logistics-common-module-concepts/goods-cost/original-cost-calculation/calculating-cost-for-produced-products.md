@@ -177,7 +177,7 @@ The second Output Order is for <b>1 PCS</b> from the work order item with the fo
 
 -	Product, <b>CO#2</b>, Material <b>#2</b>, <b>4 PCS</b>.
 
-If the issue cost is <b>40 EUR</b> for Material <b>#1</b> and <b>71 EUR</b> for Material <b>#2</b> from <b>CO#1</b> and <b>7 EUR</b> and <b>39 EUR</b> for the materials in <b>CO#2</b>, then a distribution is calculated where the quantity comparisons are filled with costs. 
+If the issue cost is <b>40 EUR</b> for Material <b>#1</b> and <b>71 EUR</b> for Material <b>#2</b> from <b>CO#1</b> and <b>7 EUR</b> for Material <b>#1</b> and <b>39 EUR</b> for Material <b>#2</b> from <b>CO#2</b>, then a distribution is calculated where the quantity comparisons are filled with costs. 
 
 The first Output Order has the following:
 
