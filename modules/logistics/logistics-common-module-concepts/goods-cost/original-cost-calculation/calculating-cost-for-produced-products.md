@@ -26,71 +26,134 @@ For each Output Order row, the following is executed:
 
 2. From the quantities of the rows in step 1, quantities of materials distributed on the same Work Order Item by Output Orders (released before the current one) are <b>removed</b>.
 
-3. From what's left of the materials, the necessary quantities for the current row of the Output Order are <b>distributed</b>. They are defined by the <i>Recipe</i> from the Work Order. For the current row, they cannot be distributed in bigger quantities than they are allowed to. Exception is made only for the last Output Orders from each Work Order Item or for the Output Order rows marked as <i>Finished</i>. The rest of the materials are distributed on <i>Finished</i> rows.
+3. From what's left of the materials, the necessary quantities for the current row of the Output Order are <b>distributed</b>. They are defined by the <i>Recipe</i> in the Work Order. For the current row, they cannot be distributed in bigger quantities than they are allowed to. Exception is made only for the last Output Orders from each Work Order Item or for the Output Order rows marked as <i>Finished</i>. The rest of the materials are distributed on <i>Finished</i> rows.
 
 When releasing new Consumption Orders or voiding released Consumption Orders, these steps are executed again for each Output Order from the current Work Order. This keeps the distributions for these Output Orders up-to-date.
 
 <b><i>Example 1</b></i>:
 
-There is Work Order producing 3 PCS of a product. The materials are 9 PCS from Material #1 and 12 PCS of Material #2. The materials are consumed in two stages - Consumption Order CO#1, which has 8 PCS from Material #1 and 8 PCS from Material #2, and CO#2, which has 1 PCS from Material #1 and 4 PCS from Material #2. Both Consumption Orders are released and the first Output Order is created for 2 PCS of the Work Order Item. When it is released, the following materials distribution is calculated:
+There is a Work Order producing <b>3 PCS</b> of a product. The materials are <b>9 PCS</b> from Material <b>#1</b> and <b>12 PCS</b> from Material <b>#2</b>. The materials are consumed in two stages:
+- Consumption Order <b>CO#1</b>, which has <b>8 PCS</b> from Material <b>#1</b> and <b>8 PCS</b> from Material <b>#2</b>
 
-Product, CO#1, Material #1, 6 PCS;
-Product, CO#1, Material #2, 8 PCS.
-Then the user creates and releases Output Order for the rest 1 PCS  of the Work Order Item. It distributes the following:
+- Consumption Order <b>CO#2</b>, which has <b>1 PCS</b> from Material <b>#1</b> and <b>4 PCS</b> from Material <b>#2</b>
 
-Product, CO#1, Material #1, 2 PCS.
-Product, CO#2, Material #1, 1 PCS.
-Product, CO#2, Material #2, 4 PCS.
-In the current stage it is possible no issue/receipt store transactions to be released yet. In such case this distribution is used to reserve materials for Work Order Items. After that when the store transactions begin, the cost of the issue transactions is transferred to the receipt transactions (Stage 2) using the already calculated distribution. 
+Both Consumption Orders are released and the first Output Order is created for <b>2 PCS</b> of the Work Order Item. 
 
-There are cases when the remaining non-distributed materials on an Output Order are less than what is ordered to be used in the current Output Order by the recipe. In this case for the Output Order is distributed less than the technologically defined quantities and the remaining excess (if, of course, it is requested by following Consumption Orders) will be distributed to the last Output Order of the current work order item (or to an Output Order row marked as "Finished"). Here is an example that illustrates such case.
+When this Output Order is released, the following materials distribution is calculated:
 
-Example 2:
+- Product, <b>CO#1</b>, Material <b>#1</b>, <b>6 PCS</b>;
 
-There is the same Work Order as in Example 1. First, CO#1 is released with 5 PCS of Material #1 and 6 PCS of Material #2. Then an Output Order is released for the 2 PCS of the work order item. By the recipe, 6 PCS of Material #1 and 8 PCS of Material #2 should be distributed. By now no Consumption Orders with no such quantities are released. So the Output Order takes less quantities (the quantities from CO#1):
+- Product, <b>CO#1</b>, Material <b>#2</b>, <b>8 PCS</b>.
 
-Work Order Item, CO#1, Material #1, 5 PCS;
-Work Order Item, CO#1, Material #2, 6 PCS.
-Then CO#2 is released with the rest of the materials quantities - 4 PCS and 6 PCS respectively. When the second Output Order is released for the 1 PCS remaining quantity, more materials per unit will be distributed than in the first Output Order:
+Then, the user creates and releases an Output Order for the rest <b>1 PCS</b> of the Work Order Item.
 
-Work Order Item, CO#2, Material #1, 4 PCS;
-Work Order Item, CO#2, Material #2, 6 PCS.
-There are cases when non-distributed materials remain even after the release of the last Output Order on one Work Order. Usually, this appears if there are Consumption Orders which are released after all Output Orders. In this cases in the end an Output Order with 0 quantity is released. Such Output Orders are called Completing Output Orders and all remaining materials are distributed to them. Sometimes the Completing Output Orders may be released and before the last Output Order with non-zero quantities. This is done when there are non-distributed materials but the next Output Orders will not be released any soon. So this Completing Output Orders (sometimes called intermediate) "collect" all the remaining up to this moment material quantities without having to release the next Output Order.
-The two examples above describe production processes where each material from the Work Order is assigned to exactly one work order item. There are materials which cannot be assigned to specific work order item (Work Order Item field in Ingredients table is empty). Instead the quantity of the material is distributed to all work order items in the current Work Order. This distribution may be achieved by two methods (different values in Distribute By field):
+It distributes the following:
 
-by Standard Price - the current Standard Price Per Lot of the products from the Work Order rows (the work order items) are used (the standard price is multiplied by the quantities in the rows) and the result is used as a coefficient for materials distribution;
-by Measurement - as coefficients the rows quantities from the Work Order rows are used (each quantity is converted to a measurement category, which is specified in the material row; all products have to have defined product dimensions for the specified category).
-After the coefficients are defined by one of the described methods, the quantities from the Consumption Order are distributed to a Output Order as follows:
+- Product, <b>CO#1</b>, Material <b>#1</b>, <b>2 PCS</b>.
 
-All rows of released non-voided Consumption Orders are filtered. The Consumption orders have to be released before the current Output Order.
-The quantities from p.1 are decreased by the material quantities which are distributed to Output Orders released before the current one.
-The entire remaining materials quantity (after p.2) is distributed by the coefficients through all rows of the current Output Order (to define the coefficients the quantities from the current Output Order are used).
-NOTE: If all work order items have Standard Price Per Lot of 0 (zero), the coefficients would be 0. In that case the cost of all materials from p.2 is distributed equally through the work order items. The reason behind this is to avoid cost lost.
+- Product, <b>CO#2</b>, Material <b>#1</b>, <b>1 PCS</b>.
 
-Example 3:
+- Product, <b>CO#2</b>, Material <b>#2</b>, <b>4 PCS</b>.
 
-There is a Work Order with 295 PCS of a given material, which is distributed by Standard Price through four work order items of the Work Order - Product #1 (standard price is 17 EUR), Product #2 (standard price is 9 EUR), Product #2 (standard price is 12  EUR) and Product #4 (standard price is 20  EUR). For each work order item 2 PCS are produced.
+In the current stage, it is possible that no issue/receipt store transactions have been released yet. Therefore, this distribution is used to reserve materials for Work Order Items. When the store transactions begin, the cost of the issue transactions is transferred to the receipt transactions (Stage 2) using the already calculated distribution. 
 
-First, CO #1 is released for 189 PCS of the material. Then, OO #1 is released with the following: 2 PCS of Product #1, 1 PCS of Product #2 and 1 PCS of Product #4. So the coefficients for distribution in the current Output Order are: 2 * 17 : 1 * 9 : 1 * 20 = 34 : 9 : 20. According to this coefficients, the following distribution is achieved:
+Sometimes the remaining non-distributed materials from an Output Order are less than what is ordered by the recipe in the current Output Order. In this case, the Output Order is distributed in fewer than the technologically defined quantities. The remaining excess (if, of course, this is requested by following Consumption Orders) will be distributed to the last Output Order of the current work order item (or to a row marked as "Finished"). Let's take a look at such an example.
 
-Product #1, CO#1, Material, 189 * 34 / (34 + 9 + 20) = 102 PCS;
-Product #2, CO#1, Material, 189 * 9 / (34 + 9 + 20) = 27 PCS;
-Product #3, CO#1, Material, 189 * 20 / (34 + 9 + 20) = 60 PCS.
-Then a new CO#2 is released for the rest 106 PCS and the last Output Order is released for the rest of the work order items. It has the following coefficients: 1 * 9 : 9 * 12 : 1 * 20 = 9 : 24 : 20. The distribution is calculated as follows:
+<b><i>Example 2</b></i>:
 
-Product #2, CO#2, Material, 106 * 9 / (9 + 24 + 20) = 18 PCS;
-Product #3, CO#2, Material, 106 * 24 / (9 + 24 + 20) = 48 PCS;
-Product #4, CO#2, Material, 106 * 20 / (9 + 24 + 20) = 40 PCS.
+We have the same Work Order as in <i>Example 1</i>. First, <b>CO#1</b> is released with <b>5 PCS</b> of Material <b>#1</b> and <b>6 PCS</b> of Material <b>#2</b>. Then, an Output Order is released for the <b>2 PCS</b> of the work order item. According to the recipe, <b>6 PCS</b> of Material <b>#1</b> and <b>8 PCS</b> of Material <b>#2</b> should be distributed. By now, no Consumption Orders with such quantities have been released. As a result, the Output Order takes fewer quantities (from <b>CO#1</b>):
+
+- Work Order Item, <b>CO#1</b>, Material <b>#1</b>, <b>5 PCS</b>;
+
+- Work Order Item, <b>CO#1</b>, Material <b>#2</b>, <b>6 PCS</b>.
+
+Then, <b>CO#2</b> is released with the rest of the materials quantities - <b>4 PCS</b> and <b>6 PCS</b>, respectively. When the second Output Order is released for the remaining <b>1 PCS</b>, more materials per unit will be distributed than in the first Output Order:
+
+- Work Order Item, <b>CO#2</b>, Material <b>#1</b>, <b>4 PCS</b>;
+
+- Work Order Item, <b>CO#2</b>, Material <b>#2</b>, <b>6 PCS</b>.
+
+> 
+> There are cases when non-distributed materials remain even after the release of the last Output Order on one work order. 
+> 
+> Usually, this happens if Consumption Orders are released <b>after</b> all Output Orders. As a final result, an Output Order with <b>0 quantity</b> is released. 
+> 
+> Such Output Orders are called <b><i>Completing</b> Output Orders</i> and all remaining materials are distributed to them. 
+> 
+> Sometimes these orders are not only released, but come before the last Output Order with non-zero quantities. This is done when there are non-distributed materials, though the next Output Orders will not be released soon. 
+> 
+> The Completing Output Orders (also known as <i>intermediate</i>) "collect" all the remaining material quantities without having to release the next Output Order.
+
+The two examples above describe production processes where each material from a Work Order is assigned to exactly one work order item. There are materials which cannot be assigned to a specific work order item (the Work Order Item field in the Ingredients table is empty). Instead, the quantity of the material is distributed to all work order items in the current Work Order. 
+
+This distribution may be achieved by two methods (different values in the <i>Distribute By</i> field):
+
+- by Standard Price - the current <b>Standard Price Per Lot</b> of the products from the Work Order rows (the work order items) is used. The price is then multiplied by the quantities in the rows and the result becomes a coefficient for materials distribution;
+
+- by Measurement - the quantities from the Work Order rows are used as coefficients. Each quantity is converted into a measurement category, which is specified in the material row. All products must have defined product dimensions for the specified category.
+
+After the coefficients are defined by one of the methods, the quantities from the Consumption Order are distributed to an Output Order as follows:
+
+1. All rows of released, non-voided Consumption Orders are <b>filtered</b>. The Consumption Orders are released before the current Output Order.
+
+2. The quantities from p.1 are <b>decreased</b> by the material quantities distributed to Output Orders which are released before the current one.
+
+3. The entire remaining materials quantity is <b>distributed</b> by the coefficients among all rows of the current Output Order. To define the coefficients, the quantities from the current Output Order are used.
+
+> 
+> NOTE: If all work order items have a <i>Standard Price Per Lot</i> of 0 (zero), the coefficients would also be 0. 
+> 
+> In that case, the cost of all materials from p.2 is distributed equally among the work order items. 
+> 
+> As a result, cost loss is avoided.
+
+<b><i>Example 3</b></i>:
+
+There is a Work Order with <b>295 PCS</b> of a given material, which is distributed by Standard Price among four work order items of the Work Order: 
+
+Product <b>#1</b> (standard price is 17 EUR), Product <b>#2</b> (standard price is 9 EUR), Product <b>#2</b> (standard price is 12 EUR), and Product <b>#4</b> (standard price is 20  EUR). For each work order item, <b>2 PCS</b> are produced.
+
+First, <b>CO #1</b> is released for <b>189 PCS</b> of the material. Then, <b>OO #1</b> is released with the following: 
+
+<b>2 PCS</b> of Product <b>#1</b>, <b>1 PCS</b> of Product <b>#2</b> and <b>1 PCS</b> of Product <b>#4</b>.  
+
+The coefficients for distribution in the current Output Order are: 
+
+2 * 17 : 1 * 9 : 1 * 20 = 34 : 9 : 20. 
+
+According to these coefficients, the following distribution is achieved:
+
+- Product <b>#1</b>, <b>CO#1</b>, Material, 189 * 34 / (34 + 9 + 20) = <b>102 PCS</b>;
+
+- Product <b>#2</b>, <b>CO#1</b>, Material, 189 * 9 / (34 + 9 + 20) = <b>27 PCS</b>;
+
+- Product <b>#3</b>, <b>CO#1</b>, Material, 189 * 20 / (34 + 9 + 20) = <b>60 PCS</b>.
+
+Then, a new <b>CO #2</b> is released for the rest <b>106 PCS</b>, and the last Output Order is released for the rest of the work order items. 
+
+It has the following coefficients:
+
+1 * 9 : 9 * 12 : 1 * 20 = 9 : 24 : 20. 
+
+The distribution is calculated as follows:
+
+- Product <b>#2</b>, <b>CO#2</b>, Material, 106 * 9 / (9 + 24 + 20) = <b>18 PCS</b>;
+
+- Product <b>#3</b>, <b>CO#2</b>, Material, 106 * 24 / (9 + 24 + 20) = <b>48 PCS</b>;
+
+- Product <b>#4</b>, <b>CO#2</b>, Material, 106 * 20 / (9 + 24 + 20) = <b>40 PCS</b>.
 
 ## Stage 2: Issue Transactions Cost Distribution 
 
-Once Stage 1 is completed, then the quantity distribution through the materials from the Consumption Orders and the work order items from the Output Orders may be applied to define how the cost of the issue transactions are transferred to the receipt transactions. These distributions are used to form proportions through which the cost of the Consumption order transactions is distributed through the Output Orders. This distribution is also saved in "Distributed Material consumptions" table (in the Output Order document) and then it is used so the cost of the receipt Store Transactions is set correctly. 
+Once Stage 1 is completed, the cost of the issue transactions is transferred to the receipt transactions. This operation can be explained with the quantity distribution of the materials from the Consumption Orders and the work order items from the Output Orders. The distributions are used to form proportions which help distribute the cost of the Consumption Order transactions among the Output Orders. This distribution is also saved in the "<i>Distributed Material consumptions</i>" table (in the Output Order document) and then it is used to set the cost of the receipt Store Transactions correctly. 
 
-When new issue transactions appear from Consumption Orders, an update is executed again of the distributions in all Output Orders from one Work Order, and the quantity distributions are complemented by the cost distributions.
+When new issue transactions appear from Consumption Orders, an update of the distributions in all Output Orders (from one Work Order) is executed again. The quantity distributions are complemented by the cost distributions.
 
-If there is a row from Consumption Order, which contains 15 PCS, and 5 PCS of which are distributed to one Output Order and the rest 10 PCS are distributed to another Output Order. If there are several store transactions to issue all 15 PCS at cost of 371 EUR, then one third of it is distributed to the first Output Order and the rest is distributed to the second one. A detailed example follows.
+Let's examine this particular case:
 
-Example 4
+There is a row from a Consumption Order which contains <b>15 PCS</b>, <b>5 PCS</b> of which are distributed to one Output Order and the rest <b>10</b> go to another Output Order. If there are several store transactions to issue all <b>15 PCS</b> at a cost of 371 EUR, then one-third of it is distributed to the first Output Order and the rest is distributed to the second one. A detailed example follows.
+
+<b><i>Example 4</b></i>:
 
 There is Work Order producing 3 PCS of a product. The materials are 9 PCS from Material #1 and 12 PCS of Material #2. The materials are consumed in two stages - Consumption Order CO#1, which has 8 PCS from Material #1 and 8 PCS from Material #2, and CO#2, which has 1 PCS from Material #1 and 4 PCS from Material #2. There is Output Order for 2 PCS of the work order item with the following distribution:
 
@@ -121,4 +184,5 @@ The limitation is applied on all store transactions that are caused by a Work Or
 all issues are summed up (the materials) with Transaction Timestamp less or equal to the current and by their receipts from the Work Order is defined what is the largest quantity that is available for production from these materials;
 all receipts (the produced products) are summed up that has Transaction Timestamp less or equal to the current;
 a validation is performed to check if the maximum quantity of the product from p.1 is bigger or equal to the receipt total from p2.
-For more information about this validation see Receipt And Issue Balance Validation In Store Transfers.
+
+For more information about this validation, see <b>Receipt And Issue Balance Validation In Store Transfers</b>.
