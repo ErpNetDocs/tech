@@ -155,25 +155,47 @@ There is a row from a Consumption Order which contains <b>15 PCS</b>, <b>5 PCS</
 
 <b><i>Example 4</b></i>:
 
-There is Work Order producing 3 PCS of a product. The materials are 9 PCS from Material #1 and 12 PCS of Material #2. The materials are consumed in two stages - Consumption Order CO#1, which has 8 PCS from Material #1 and 8 PCS from Material #2, and CO#2, which has 1 PCS from Material #1 and 4 PCS from Material #2. There is Output Order for 2 PCS of the work order item with the following distribution:
+There is a Work Order producing <b>3 PCS</b> of a product. The materials are <b>9 PCS</b> from Material <b>#1</b> and <b>12 PCS</b> of Material <b>#2</b>. 
 
-Product, CO#1, Material #1, 6 PCS;
-Product, CO#1, Material #2, 8 PCS.
-The second Output Order is for 1 PCS from the work order item with the following distribution:
+The materials are consumed in two stages:
 
-Product, CO#1, Material #1, 2 PCS;
-Product, CO#2, Material #1, 1 PCS;
-Product, CO#2, Material #2, 4 PCS.
-So if the issue cost is 40 EUR for Material #1 and 71 EUR for Material #2 from CO#1 and 7 EUR and 39 EUR for the materials in CO#2, then a distribution is calculated where the quantity comparisons are filled with costs. The first Output Order has the following:
+-	Consumption Order <b>CO#1</b>, which has <b>8 PCS</b> from Material <b>#1</b> and <b>8 PCS</b> from Material <b>#2</b> 
 
-Product, CO#1, Material #1, 6 PCS, 40 * 6 / 8 = 30 EUR;
-Product, CO#1, Material #2, 8 PCS, 71 * 8 / 8 = 71 EUR.
-And the cost of the produced product from this Output Order is 30 + 71 = 101 EUR. For the second Output Order there is the following:
+-	Consumption Order <b>CO#2</b>, which has <b>1 PCS</b> from Material <b>#1</b> and <b>4 PCS</b> from Material <b>#2</b>
 
-Product, CO#1, Material #1, 2 PCS, 40 * 2 / 8 = 10 EUR;
-Product, CO#2, Material #1, 1 PCS, 7 * 1 / 1 = 7 EUR;
-Product, CO#2, Material #2, 4 PCS, 39 * 4 / 4 = 39 EUR.
-And the total cost of the produced product is 10 + 7 + 39 = 56  EUR.
+There is an Output Order for <b>2 PCS</b> of the work order item with the following distribution:
+
+-	Product, <b>CO#1</b>, Material <b>#1</b>, <b>6 PCS</b>;
+
+-	Product, <b>CO#1</b>, Material <b>#2</b>, <b>8 PCS</b>.
+
+The second Output Order is for <b>1 PCS</b> from the work order item with the following distribution:
+
+-	Product, <b>CO#1</b>, Material <b>#1</b>, <b>2 PCS</b>;
+
+-	Product, <b>CO#2</b>, Material <b>#1</b>, <b>1 PCS</b>;
+
+-	Product, <b>CO#2</b>, Material <b>#2</b>, <b>4 PCS</b>.
+
+If the issue cost is <b>40 EUR</b> for Material <b>#1</b> and <b>71 EUR</b> for Material <b>#2</b> from <b>CO#1</b> and <b>7 EUR</b> and <b>39 EUR</b> for the materials in <b>CO#2</b>, then a distribution is calculated where the quantity comparisons are filled with costs. 
+
+The first Output Order has the following:
+
+- Product, <b>CO#1</b>, Material <b>#1</b>, <b>6 PCS</b>, 40 * 6 / 8 = <b>30 EUR</b>;
+
+- Product, <b>CO#1</b>, Material <b>#2</b>, <b>8 PCS</b>, 71 * 8 / 8 = <b>71 EUR</b>.
+
+And the cost of the produced product from this Output Order is 30 + 71 = <b>101 EUR</b>. 
+
+For the second Output Order, there is the following:
+
+- Product, <b>CO#1</b>, Material <b>#1</b>, <b>2 PCS</b>, 40 * 2 / 8 = <b>10 EUR</b>;
+
+- Product, <b>CO#2</b>, Material <b>#1</b>, <b>1 PCS</b>, 7 * 1 / 1 = <b>7 EUR</b>;
+
+- Product, <b>CO#2</b>, Material <b>#2</b>, <b>4 PCS</b>, 39 * 4 / 4 = <b>39 EUR</b>.
+
+And the total cost of the produced product is 10 + 7 + 39 = <b>56  EUR</b>.
 
 ## Issue And Receipt Balance
 
