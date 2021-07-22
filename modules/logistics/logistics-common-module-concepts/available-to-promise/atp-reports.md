@@ -12,12 +12,12 @@ The calculation of ATP is based not only on the data of the <b>Chronology of the
 
 They contain information for:
 
-<b><i>- Movements Base</b></i> - The sum of the quantity of all planned stock movements (issue and receipt) on this date in base measurement unit. 
+- <b><i>Movements Base</b></i> - The sum of the quantity of all planned stock movements (issue and receipt) on this date in base measurement unit. 
 
-<b><i>- Movements To Date Base</b></i> - A running total of the quantity of all planned stock movements (issue and receipt) until this date (inclusive) in base measurement unit.
+- <b><i>Movements To Date Base</b></i> - A running total of the quantity of all planned stock movements (issue and receipt) until this date (inclusive) in base measurement unit.
 
-<b><i>- Projected Availability</b></i> -  Projected Availability in base measurement unit on a particular date. A running total of the projected/expected available quantity calculated by adding supply or subtracting demand in chronological order in base measurement unit. The value includes all expected stock movements (issue and receipt) until this date (inclusive) and the current availability.
+- <b><i>Projected Availability</b></i> -  Projected Availability in base measurement unit on a particular date. A running total of the projected/expected available quantity calculated by adding supply or subtracting demand in chronological order in base measurement unit. The value includes all expected stock movements (issue and receipt) until this date (inclusive) and the current availability.
 
-<b><i>- ATP Base</b></i> - Indicates the promissory amount in base unit valid from a specified date to the date of the next stock movement. This is the minimum quantity available for use for future issuing operations (sales, use in production, etc.), and which will not violate the planned issue operations.
+- <b><i>ATP Base</b></i> - Indicates the promissory amount in base unit valid from a specified date to the date of the next stock movement. This is the minimum quantity available for use for future issuing operations (sales, use in production, etc.), and which will not violate the planned issue operations.
 
 
