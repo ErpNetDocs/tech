@@ -2054,7 +2054,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.html",
-          "hash": "BoJGAuNo3kcrN85rvM/wrw=="
+          "hash": "sbNTaR98rF6z/dO68ZyzyQ=="
         }
       },
       "is_incremental": false,
@@ -2066,7 +2066,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-reports.html",
-          "hash": "u3ScrtIagurLNOpkpPx7vw=="
+          "hash": "i/INsA4X7+UzxFBz3spGSQ=="
         }
       },
       "is_incremental": false,
@@ -2078,7 +2078,29 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.html",
-          "hash": "s8h21WdQTR9ye3nfLUGquw=="
+          "hash": "7KtvnqWIW0+QMM1jHaqBuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png"
         }
       },
       "is_incremental": false,
@@ -2246,7 +2268,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/material-requirements-planning.html",
-          "hash": "YeBcxgGEkkDZ/cozIxXjsA=="
+          "hash": "ghJiBYIUIXoix72Z08hLlw=="
         }
       },
       "is_incremental": false,
