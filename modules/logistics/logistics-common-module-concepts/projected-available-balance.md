@@ -48,5 +48,7 @@ With this data provided, we can calculate the following PAB:
 |2021/05/20|-|3|-|31
  
 The PAB line can be seen on the following chart:
+
+![Unnamed](pictures/unnamed.png)
  
 > All documents in @@name which may lead to store movements, can be set to generate Planned or Firmed Store Orders (directly or through other documents). With that setting, the documents can be involved in the <b>Projected Available Balance</b> and <b>Available To Promise</b> calculations.
