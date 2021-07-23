@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Projected Available Balance | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Projected Available Balance | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,7 +77,104 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="projected-available-balance">Projected Available Balance</h1>
 
+<h2 id="description">Description</h2>
+<p>Projected Available Balance (PAB) shows the inventory balance projected into the future. It is the running sum of the Current Stock Holds with scheduled receipts added, minus planned issue Stock Orders.</p>
+<p>The Projected Available Balance is used in the calculation of the <b>Available To Promise</b>.</p>
+<h2 id="the-algorithm">The algorithm</h2>
+<p>In the <b>Projected Available Balance</b>, two types of data are used:</p>
+<ul>
+<li><p><b>Current Stock Holds</b> - this is the quantity available placed in store today;</p>
+</li>
+<li><p><b>Chronology of the Store Orders which are not executed</b> - includes all Store Orders (or their unfilled parts) which are not completed yet.</p>
+</li>
+</ul>
+<blockquote>
+<p>Note that if there are expected <i>Store receipts</i> or <i>issues</i> for a past date which are still not executed, the algorithm assumes that they are being executed <b>today</b>.</p>
+</blockquote>
+<p>For example:</p>
+<ul>
+<li><p>Let's assume that today <b>(2021/05/05)</b> we have <b>10 pcs</b> from <b>product A</b> in <b>store S</b>;</p>
+</li>
+<li><p>There is an expected delivery from 3 days ago <b>(2021/05/02)</b> for <b>8 pcs</b>, which has not been executed yet;</p>
+</li>
+<li><p>We have the following planned store movements:</p>
+</li>
+<li><p>on <b>2021/05/07</b>, planned receipt of <b>15 pcs</b>;</p>
+</li>
+<li><p>on <b>2021/05/09</b>, planned issue of<b> 4 pcs</b>;</p>
+</li>
+<li><p>on <b>2021/05/13</b>, planned receipt of <b>10 pcs</b>;</p>
+</li>
+<li><p>on <b>2021/05/15</b>, planned issue of <b>7 pcs</b>;</p>
+</li>
+<li><p>on <b>2021/05/15</b>, planned receipt of <b>2 pcs</b>;</p>
+</li>
+<li><p>on <b>2021/05/20</b>, planned issue of <b>3 pcs</b>;</p>
+</li>
+</ul>
+<p>With this data provided, we can calculate the following PAB:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Date</th>
+<th style="text-align: center;">Start quantity</th>
+<th style="text-align: center;">Issue quantity</th>
+<th style="text-align: center;">Receipt quantity</th>
+<th style="text-align: center;">PAB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2021/05/05</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/05/07</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">33</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/05/09</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">29</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/05/13</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">39</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/05/15</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">34</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/05/20</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">31</td>
+</tr>
+</tbody>
+</table>
+<p>The PAB line can be seen on the following chart:</p>
+<p><img src="pictures/Picture_1.png" alt="Picture"></p>
+<blockquote>
+<p>All documents in ERP.net that may lead to store movements can be set to generate <i>Planned or Firmed Store Orders</i> - directly or through other documents. With this setting, the documents can be involved in the <b>Projected Available Balance</b> and <b>Available To Promise</b> calculations.</p>
+</blockquote>
 </article>
           </div>
           

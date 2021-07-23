@@ -738,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
+          "hash": "lYjljiMigG/JUBquf1uESg=="
         }
       },
       "is_incremental": false,
@@ -1560,6 +1560,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/WMS.png",
       "output": {
         "resource": {
@@ -2232,7 +2254,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.html",
-          "hash": "tKrlIDWBSsjKLHp0uPa8Ew=="
+          "hash": "BsuVHIUXIkU4nELvkrlrsA=="
         }
       },
       "is_incremental": false,
@@ -2275,12 +2297,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/logistics-common-module-concepts/projected-available-balance.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/projected-available-balance.html",
-          "hash": "ZrOeRYL2Ap9D1SF9szwIvg=="
+          "hash": "6MMOXCa1Mq7UbPixzoUokw=="
         }
       },
       "is_incremental": false,
