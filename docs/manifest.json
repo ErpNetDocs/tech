@@ -637,12 +637,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/operators/formatstring.md",
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/formatstring.html",
-          "hash": "vtysCo3vPyKd2BeEBmYBRg=="
+          "hash": "9uXPRhbGsefxHBKEUdN4SA=="
         }
       },
       "is_incremental": false,
@@ -738,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "lYjljiMigG/JUBquf1uESg=="
+          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
         }
       },
       "is_incremental": false,
@@ -774,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/like.html",
-          "hash": "ylei91tMoZoDqYAG3vtQJQ=="
+          "hash": "k5R6DhEo5HDpx7KbWCq+Ug=="
         }
       },
       "is_incremental": false,
@@ -1441,7 +1444,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/parties-concepts.html",
-          "hash": "MfGjPImFzCJSZrU6QIF81w=="
+          "hash": "rxrT7lux6qaVpB4/hrEd2g=="
         }
       },
       "is_incremental": false,
@@ -1575,6 +1578,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png"
         }
       },
       "is_incremental": false,
@@ -2636,7 +2650,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/format-specifiers.html",
-          "hash": "w4UsomLqV3xfbLskT90zRQ=="
+          "hash": "mZIZyTjILAGvcocm5XsVtg=="
         }
       },
       "is_incremental": false,
