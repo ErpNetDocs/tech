@@ -43,7 +43,7 @@ OUTPUT:
 <br/> If 'Notes = Green Apples', the output will be 'True'.
 <br/> If 'Notes = apples', the output will be 'False'.
 <br/> If 'Notes = Apple', the output will be 'False'.
-<br/> If 'Notes = Apples', the output will be 'False'.
+<br/> If 'Notes = Green Bananas', the output will be 'False'.
 
 
 > [!NOTE] 
