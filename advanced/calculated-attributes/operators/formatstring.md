@@ -18,7 +18,7 @@ items: Operators
 
 
 > [!NOTE]
-> For more information about the supported format specifiers, see @(Format Specifiers).
+> For more information about the supported format specifiers, see [Format Specifiers](../reference/format-specifiers.md).
 
 ## Example
 
