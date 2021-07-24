@@ -32,7 +32,7 @@ uid: cao-LIKE
 - 'a%o' → Finds any values that start with "a" and ends with "o".
 
 
-The following example returns True if the the string contains 'Apple' and after 'Apple' there is exactly on character:
+The following example returns True if the the string contains 'Apple' and after 'Apple' there is exactly one character:
 
 ```
 10 LIKE ATTRIB:Notes CONST:%Apple_
