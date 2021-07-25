@@ -46,5 +46,8 @@ In the Transactions, the cost comes in four currencies: <b>base cost, product co
 
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
-For more specific information about cost calculations see the following articles: [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) and [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md)
+For more specific information about cost calculations see the following articles:
+- [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) 
+
+- [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md)
 
