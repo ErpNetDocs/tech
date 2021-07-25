@@ -20,11 +20,11 @@ For each store transaction (i.e. Transaction document) changing the cost, a spec
 
 If necessary, the <b>Transaction Timestamp</b> may be set manually by the user, although there are certain limitations. For example, if the quantity in the row is 0, the date in  Document Date should be no different than the one in <b>Transaction Timestamp</b>. 
 
-For more information, see the <b>Setting Transaction Timestamp</b> article.
+For more information, see the [Setting Transaction Timestamp](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/index.md) article.
 
 ## Cost types
 
-When the Transactions are not entered in the system on time and damage the right chronology, this may generate incorrect costs. To fix this, @@name has developed a <b>Cost Correction</b> system, recalculating the cost as if it was entered in the right chronological order. 
+When the Transactions are not entered in the system on time and damage the right chronology, this may generate incorrect costs. To fix this, @@name has developed a [Cost Correction](https://github.com/ErpNetDocs/tech/tree/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction) system, recalculating the cost as if it was entered in the right chronological order. 
 
 There are two types of goods costs:
 
@@ -46,5 +46,5 @@ In the Transactions, the cost comes in four currencies: <b>base cost, product co
 
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
-For more specific information about cost calculations see the following articles: <b>Cost Correction</b> and <b>Original Cost Calculation</b>
+For more specific information about cost calculations see the following articles: [Cost Correction](https://github.com/ErpNetDocs/tech/tree/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction) and [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md)
 
