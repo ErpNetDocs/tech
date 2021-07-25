@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="cost-correction">Cost Correction</h1>
 
-<p>The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article <b>Original Cost Calculation</b> describes how the original cost is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.</p>
+<p>The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md">Original Cost Calculation</a> describes how the original cost is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.</p>
 <p><b><i>Example 1:</i></b></p>
 <p>There are two receipt transactions and one issuing transaction entered in the system:</p>
 <ul>
@@ -88,7 +88,7 @@
 <li><p><b>receipt</b>, Timestamp: <b>05 Jan 2020 17:27, 3 PCS</b>, total cost: <b>75 EUR</b>;</p>
 </li>
 </ul>
-<p>According to the <b>Original Cost Calculation</b> for average cost, the issuing transaction should be:</p>
+<p>According to the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md">Original Cost Calculation</a> for average cost, the issuing transaction should be:</p>
 <ul>
 <li><b>issue</b>, Timestamp: <b>08 Jan 2020 11:29, 5PCS</b>, total cost: 5 * (175/7) = <b>125 EUR</b>;</li>
 </ul>
@@ -98,7 +98,7 @@
 </ul>
 <p>If the third receipt transaction is entered on time, then the unit cost on <b>08 Jan 2020</b> would be 280/10 = <b>28</b>, not <b>25</b>, as it was originally calculated in the issuing transaction. This is happening due to the late entering of the transaction in the system. The cost of the issuing transaction is incorrect and a recalculation is needed.</p>
 <p>The effect of the incorrect cost from <b><i>Example 1</i></b> may influence not only issuing transactions. If the issuing operation was about ingredient consumption from the Production module, for example, then the cost of the production output would be incorrect as well. This leads to incorrect cost when issuing the production output.</p>
-<p>If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a <b>Basic Algorithm For Cost Correction Calculation</b>. This algorithm changes the costs as if they were entered on time. There is a document named Cost Correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.</p>
+<p>If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a>. This algorithm changes the costs as if they were entered on time. There is a document named Cost Correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.</p>
 <p>Cost Corrections allow the Original Cost to be changed. In each Transaction row the fields are as follows:</p>
 <p><b>[actual/corrected cost] = [original cost] + [adjustment cost]</b></p>
 <p>where:</p>
@@ -106,11 +106,11 @@
 <p><b>[adjustment cost]</b> = the sum of all product, store, document, and base cost values saved in the rows of all the released, non-voided Cost Corrections referring to the current Transaction row.</p>
 <p>For more specific information, see:</p>
 <ul>
-<li><p><b>Basic Algorithm For Cost Correction Calculation</b></p>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a></p>
 </li>
-<li><p><b>Models For Maintaining The Actual Cost</b></p>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.md">Models For Maintaining The Actual Cost</a></p>
 </li>
-<li><p><b>Specific Procedures of Cost Corrections</b></p>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.md">Specific Procedures of Cost Corrections</a></p>
 </li>
 </ul>
 </article>

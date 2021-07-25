@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="specific-procedures-of-cost-corrections">Specific Procedures of Cost Corrections</h1>
 
-<p>Apart from the standard method of <b>Cost Correction</b> - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the <b>Basic Algorithm For Cost Correction Calculation</b>, there are two more ways to create a Cost Correction document. They use generation procedures available in the Transaction document.</p>
+<p>Apart from the standard method of <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md">Cost Correction</a> - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a>, there are two more ways to create a <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md">Cost Correction</a> document. They use generation procedures available in the Transaction document.</p>
 <h2 id="cost-correction-generation-procedure-for-the-actual-cost-of-the-current-transaction">Cost Correction Generation Procedure For The Actual Cost Of The Current Transaction</h2>
 <p>This generation procedure updates the cost of the store transactions in the current Transaction document.</p>
 <p>For each row, the following actions are applied:</p>
@@ -88,21 +88,21 @@
 </li>
 <li><p>Then, the actual cost for the row is calculated - the sum <b>[actual cost]</b> as usual:</p>
 <p>a. if the Transaction is <b>issuing</b>, the cost is calculated by the average accumulated cost;</p>
-<p>b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;</p>
+<p>b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md">Calculating Cost For Produced Products</a>, <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md">Calculating Cost For Returned Products</a> and <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md">Calculating Cost For Transferred Products</a>;</p>
 <p>c. if the record is a <b>receipt</b> transaction and is not part of a transfer or production process, the original cost is considered the actual cost.</p>
 </li>
 </ol>
 <p>To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.</p>
-<p>At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <b>Cost Correction</b> sub-document for the current Transaction row, which contains the difference.</p>
+<p>At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md">Cost Correction</a> sub-document for the current Transaction row, which contains the difference.</p>
 <h2 id="cost-correction-generation-procedure-for-the-current-transaction-results">Cost Correction generation procedure for the current Transaction results</h2>
 <p>This generation procedure updates the costs of all transactions that depend on the current Transaction rows.</p>
 <p>The following actions are executed:</p>
 <ol>
 <li><p>Loading all store transactions (with the opening balances if needed) which depend on the current document;</p>
 </li>
-<li><p>Тhe <b>Basic Algorithm For Cost Correction Calculation</b> is applied over the loaded set of records;</p>
+<li><p>Тhe <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a> is applied over the loaded set of records;</p>
 </li>
-<li><p>For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the <b>Cost Correction</b> is added.</p>
+<li><p>For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md">Cost Correction</a> is added.</p>
 </li>
 </ol>
 <p>Loading the records is performed iteratively. Before the first iteration, the following is created:</p>

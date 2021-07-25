@@ -84,7 +84,7 @@
 <p><a href="https://en.wikipedia.org/wiki/Material_requirements_planning">https://en.wikipedia.org/wiki/Material_requirements_planning</a></p>
 <p>The MRP process in ERP.net is an implementation which mostly follows the general theory. However, in order to use MRP, you need to do the ERP.net-specific setup.</p>
 <h2 id="document-types-and-routes-setup">Document Types and Routes Setup</h2>
-<p>The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = <b>Planned</b>. Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.</p>
+<p>The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = <a href="https://github.com/ErpNetDocs/tech/blob/362feb42dff42c7bb6ce84d5bcde14d1afdc6ddb/advanced/documents/document-states.md">Planned</a>. Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.</p>
 <blockquote>
 <p>If a Store Order is generated solely for the purposes of MRP demand management, it can be set with the <i>Planning_Only</i> attribute. This attribute does not allow the setting of <i>Firm Planned</i> (or higher) states.</p>
 </blockquote>

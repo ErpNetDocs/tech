@@ -80,8 +80,8 @@
 <h1 id="available-to-promise">Available To Promise</h1>
 
 <h2 id="description">Description</h2>
-<p>The Available To Promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the <b>ATP Algorithm</b>, which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.</p>
-<p>The parameters, data, and <b>ATP Algorithm</b> used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).</p>
+<p>The Available To Promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the <a href="atp-algorithm.html">ATP Algorithm</a>, which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.</p>
+<p>The parameters, data, and <a href="atp-algorithm.html">ATP Algorithm</a> used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).</p>
 <h2 id="parameters">Parameters</h2>
 <p>The main/required parameters are <b>product</b>, <b>own company</b>, and <b>date</b>. The ATP calculation is executed from the date and for the specified product and own company.</p>
 <p>Additional parameters can be set as <b>store</b> and <b>lot</b>. If a store is specified, the calculation will be executed only for this store. Otherwise, the data is collected from all stores (as though it is limited by the product, the own company, and the date). The lot specification is similar.</p>
@@ -187,9 +187,9 @@
 <p>The start quantity on <b>2020/10/01</b> is calculated by the two issuing store orders before <b>2020/10/01</b>. For the next dates, the unfulfilled store orders from the specific date are added.</p>
 <p>Further Reading:</p>
 <ul>
-<li><p><b>ATP Algorithm</b></p>
+<li><p><a href="atp-algorithm.html">ATP Algorithm</a></p>
 </li>
-<li><p><b>ATP Reports</b></p>
+<li><p><a href="atp-reports.html">ATP Reports</a></p>
 </li>
 </ul>
 </article>
