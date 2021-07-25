@@ -76,7 +76,7 @@ This document line is divided into two or three document lines with quantities f
 
 *<i>Again, additional lines breakdown may be necessary if the product uses serial numbers or other information for the current transaction.</i>
 
-If the quantity of <b>example 3</b> is 5 Pcs and not 30 Pcs, then no line breakdown would be necessary (to be more precise - the trivial breakdown into one line would happen) and the lot would just be selected in the line depending on which lots issuing method the product uses.
+If the quantity of <b>Example 3</b> is 5 Pcs and not 30 Pcs, then no line breakdown would be necessary (to be more precise - the trivial breakdown into one line would happen) and the lot would just be selected in the line depending on which lots issuing method the product uses.
 
 When the current stock holds of the product have records for both quantity from a specific lot and quantity with no lot, then the no-lot records have the least priority (because, for example, they may be held for planned receipts which have not arrived yet, and the quantities are only available without being part of the current stock holds; in that case, it would be better if they were used as late as possible while the current stock holds with specified lots are exhausted first). So, for each lots issuing method, the priorities are defined as follows:
 
