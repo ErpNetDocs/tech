@@ -10,7 +10,7 @@ The MRP process in @@name is an implementation which mostly follows the general 
 
 ## Document Types and Routes Setup
 
-The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = <b>Planned</b>. Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.
+The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = [Planned](https://github.com/ErpNetDocs/tech/blob/362feb42dff42c7bb6ce84d5bcde14d1afdc6ddb/advanced/documents/document-states.md). Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.
 
 > If a Store Order is generated solely for the purposes of MRP demand management, it can be set with the <i>Planning_Only</i> attribute. This attribute does not allow the setting of <i>Firm Planned</i> (or higher) states.
 
