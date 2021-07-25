@@ -8,7 +8,7 @@ The current article describes some specific cases which require setting the <i>T
 
 ## In Transitional Store Orders
 
-For more information about transitional documents, see <b>Transitional Documents</b>.
+For more information about transitional documents, see [Transitional Documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional-documents.md).
 
 When a Store Order is Transitional, all its rows are filled in with the creation date and time of the parent document. The logic here is as follows: 
 
@@ -34,7 +34,7 @@ Then, on <b>22 Jan 2020</b> the Work Order is adjusted and the quantity of the f
   
 - <b>1 PCS</b> of material <b>#1</b>, <b>issue</b>, <b>19 Jan 2020 23:59:00</b>
   
-At <b>14:00:09</b> there will be a receipt of <b>1 PCS</b> of the product for which <b>2 PCS</b> of material <b>#1</b> are needed. By now, only <b>1 PCS</b> is issued (the other piece is issued later). This leads to failure in the issue and receipt balance validation (see <b>Receipt And Issue Balance Validation In Store Transfers</b> and <b>Calculating Cost For Produced Products</b>) because of incorrect time of the last issue transaction.
+At <b>14:00:09</b> there will be a receipt of <b>1 PCS</b> of the product for which <b>2 PCS</b> of material <b>#1</b> are needed. By now, only <b>1 PCS</b> is issued (the other piece is issued later). This leads to failure in the issue and receipt balance validation (see <b>Receipt And Issue Balance Validation In Store Transfers</b> and [Calculating Cost For Produced Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md) because of incorrect time of the last issue transaction.
   
 When the Store Orders are transitional, the <i>Transaction Timestamp</i> is equal to the time and date of creation of the parent document, so the last issue transaction will also have <i>Transaction Timestamp</i> <b>[19 Jan 2020 14:00:07]</b> and the problem with the issue/receipt balance would not appear again.
   
