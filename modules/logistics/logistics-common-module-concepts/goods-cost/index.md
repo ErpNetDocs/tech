@@ -24,7 +24,7 @@ For more information, see the [Setting Transaction Timestamp](https://github.com
 
 ## Cost types
 
-When the Transactions are not entered in the system on time and damage the right chronology, this may generate incorrect costs. To fix this, @@name has developed a [Cost Correction](https://github.com/ErpNetDocs/tech/tree/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction) system, recalculating the cost as if it was entered in the right chronological order. 
+When the Transactions are not entered in the system on time and damage the right chronology, this may generate incorrect costs. To fix this, @@name has developed a [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) system, recalculating the cost as if it was entered in the right chronological order. 
 
 There are two types of goods costs:
 
@@ -46,5 +46,5 @@ In the Transactions, the cost comes in four currencies: <b>base cost, product co
 
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
-For more specific information about cost calculations see the following articles: [Cost Correction](https://github.com/ErpNetDocs/tech/tree/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction) and [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md)
+For more specific information about cost calculations see the following articles: [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) and [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md)
 
