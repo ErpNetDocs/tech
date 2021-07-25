@@ -1,6 +1,6 @@
 # Setting Transaction Timestamp
 
-The current article describes the principles for defining a <i>Transaction Timestamp</i> in the Transactions rows. A timestamp is essential for goods cost definition. It represents the exact moment when a specific transaction starts affecting the goods cost. For more information, see [Goods Cost](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/available-to-promise/index.md) and its sub-articles.
+The current article describes the principles for defining a <i>Transaction Timestamp</i> in the Transactions rows. A timestamp is essential for goods cost definition. It represents the exact moment when a specific transaction starts affecting the goods cost. For more information, see [Goods Cost](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/index.md) and its sub-articles.
 
 Usually, transaction timestamps are set automatically with no need for user intervention. This is executed in two general ways:
 
