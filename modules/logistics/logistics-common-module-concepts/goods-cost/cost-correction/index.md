@@ -10,7 +10,7 @@ There are two receipt transactions and one issuing transaction entered in the sy
 
 - <b>receipt</b>, Timestamp: <b>05 Jan 2020 17:27, 3 PCS</b>, total cost: <b>75 EUR</b>;
 
-According to the <b>Original Cost Calculation</b> for average cost, the issuing transaction should be:
+According to the [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md) for average cost, the issuing transaction should be:
 
 - <b>issue</b>, Timestamp: <b>08 Jan 2020 11:29, 5PCS</b>, total cost: 5 * (175/7) = <b>125 EUR</b>;
 
