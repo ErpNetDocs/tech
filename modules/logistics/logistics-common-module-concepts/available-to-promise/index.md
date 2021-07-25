@@ -2,9 +2,9 @@
 
 ## Description
 
-The Available To Promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the <b>ATP Algorithm</b>, which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.
+The Available To Promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the [ATP Algorithm](atp-algorithm.md), which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.
 
-The parameters, data, and <b>ATP Algorithm</b> used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).
+The parameters, data, and [ATP Algorithm](atp-algorithm.md) used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).
 
 ## Parameters
 
@@ -63,7 +63,7 @@ The start quantity on <b>2020/10/01</b> is calculated by the two issuing store o
 
 Further Reading:
 
-- <b>ATP Algorithm</b>
+- [ATP Algorithm](atp-algorithm.md)
 
-- <b>ATP Reports</b>
+- [ATP Reports](atp-reports.md)
 
