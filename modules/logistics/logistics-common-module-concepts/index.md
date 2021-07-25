@@ -1,12 +1,12 @@
-- <b>Available To Promise</b>
+- [Available To Promise](available-to-promise/index.md)
 
-- <b>Goods Cost</b>
+- [Goods Cost](goods-cost/index.md)
 
-- <b>Lots Issue</b>
+- [Lots Issue](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/lots-issue.md)
 
-- <b>Material Requirements Planning</b>
+- [Material Requirements Planning](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/material-requirements-planning.md)
 
-- <b>Projected Available Balance</b>
+- [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/projected-available-balance.md)
  
-- <b>Setting Transaction Timestamp</b>
+- [Setting Transaction Timestamp](setting-transaction-timestamp/index.md)
 
