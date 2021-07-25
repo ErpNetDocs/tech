@@ -1,6 +1,6 @@
 # Specific Procedures of Cost Corrections
 
-Apart from the standard method of <b>Cost Correction</b> - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the <b>Basic Algorithm For Cost Correction Calculation</b>, there are two more ways to create a Cost Correction document. They use generation procedures available in the Transaction document.
+Apart from the standard method of [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the [Basic Algorithm For Cost Correction Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md), there are two more ways to create a [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) document. They use generation procedures available in the Transaction document.
 
 ## Cost Correction Generation Procedure For The Actual Cost Of The Current Transaction
 
@@ -14,13 +14,13 @@ For each row, the following actions are applied:
 
      a. if the Transaction is <b>issuing</b>, the cost is calculated by the average accumulated cost;
 
-     b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles <b>Calculating Cost For Produced Products</b>, <b>Calculating Cost For Returned Products</b> and <b>Calculating Cost For Transferred Products</b>;
+     b. if the record is a <b>receipt</b> transaction and is part of a transfer or production process, its cost is recalculated according to the algorithm from articles [Calculating Cost For Produced Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md), [Calculating Cost For Returned Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md) and [Calculating Cost For Transferred Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md);
 
      c. if the record is a <b>receipt</b> transaction and is not part of a transfer or production process, the original cost is considered the actual cost.
 
 To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.
 
-At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <b>Cost Correction</b> sub-document for the current Transaction row, which contains the difference.
+At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) sub-document for the current Transaction row, which contains the difference.
 
 ## Cost Correction generation procedure for the current Transaction results
 
@@ -30,9 +30,9 @@ The following actions are executed:
 
 1. Loading all store transactions (with the opening balances if needed) which depend on the current document;
 
-2. Тhe <b>Basic Algorithm For Cost Correction Calculation</b> is applied over the loaded set of records;
+2. Тhe [Basic Algorithm For Cost Correction Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md) is applied over the loaded set of records;
 
-3. For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the <b>Cost Correction</b> is added.
+3. For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) is added.
 
 Loading the records is performed iteratively. Before the first iteration, the following is created:
 
