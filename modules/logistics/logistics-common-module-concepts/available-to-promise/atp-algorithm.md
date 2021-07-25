@@ -24,9 +24,9 @@ After adding the physical availability to the chronology, we have:
 Here is the graphical chart for the new chronology:
 ![Picture1](pictures/picture1.png)
  
-After reviewing the Value Column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the <b>Available to promise</b> quantity for <b>2021/10/01</b>.
+After reviewing the Value Column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the [Available to Promise](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/available-to-promise/index.md) quantity for <b>2021/10/01</b>.
 
-## Total calculations (for a period)
+## Total Calculations (for a period)
 
 When calculating the ATP for a whole period (more than one date), the data gathering, as well as the combination of the chronology and the current stock holds, is executed the way we described earlier. After that, for every date in the period greater than or equal to the date specified as a parameter, the ATP is defined as follows:
 
