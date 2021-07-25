@@ -2,7 +2,7 @@
 
 The current article describes how the product cost is formed when returning sold products. This is a <b>receipt</b> returning. 
 
-This process is very similar to the product transferring (see <b>Calculating Cost For Transferred Products</b>). However, there’s а difference: instead of transferring the products from one store to another in the current enterprise company, the products are taken out of the store and given to the customer. After that, the customer returns them to the same store. So, the <b>receipt</b> cost (on each row) is defined by the following formula:
+This process is very similar to the product transferring (see [Calculating Cost For Transferred Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md)). However, there’s а difference: instead of transferring the products from one store to another in the current enterprise company, the products are taken out of the store and given to the customer. After that, the customer returns them to the same store. So, the <b>receipt</b> cost (on each row) is defined by the following formula:
 
 <b>[receipt cost]</b> = proportional part of the <b> [issue cost]</b>
 
