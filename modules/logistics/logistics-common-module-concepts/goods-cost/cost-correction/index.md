@@ -1,6 +1,6 @@
 # Cost Correction
 
-The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article <b>Original Cost Calculation</b> describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
+The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article [Original Cost Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md) describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
 
 <b><i>Example 1:</b></i>
 
@@ -22,7 +22,7 @@ If the third receipt transaction is entered on time, then the unit cost on <b>08
 
 The effect of the incorrect cost from <b><i>Example 1</b></i> may influence not only issuing transactions. If the issuing operation was about ingredient consumption from the Production module, for example, then the cost of the production output would be incorrect as well. This leads to incorrect cost when issuing the production output.
 
-If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a <b>Basic Algorithm For Cost Correction Calculation</b>. This algorithm changes the costs as if they were entered on time. There is a document named Cost Correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.
+If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a [Basic Algorithm For Cost Correction Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md). This algorithm changes the costs as if they were entered on time. There is a document named Cost Correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.
 
 Cost Corrections allow the Original Cost to be changed. In each Transaction row the fields are as follows:
 
@@ -36,9 +36,9 @@ where:
 
 For more specific information, see:
 
-- <b>Basic Algorithm For Cost Correction Calculation</b>
+- [Basic Algorithm For Cost Correction Calculation](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md)
 
-- <b>Models For Maintaining The Actual Cost</b>
+- [Models For Maintaining The Actual Cost](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.md)
 
-- <b>Specific Procedures of Cost Corrections</b>
+- [Specific Procedures of Cost Corrections](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.md)
 
