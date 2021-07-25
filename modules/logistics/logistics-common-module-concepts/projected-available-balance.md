@@ -8,7 +8,7 @@ The Projected Available Balance is used in the calculation of the [Available to 
 
 ## The algorithm
 
-In the [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md), two types of data are used:
+In the [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md), two kinds of data are used:
 
 - <b>Current Stock Holds</b> - this is the quantity available placed in store today;
 
