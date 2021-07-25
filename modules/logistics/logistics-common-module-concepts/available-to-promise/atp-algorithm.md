@@ -6,7 +6,7 @@ The calculated quantities for each date from the new chronology are reviewed and
 
 We use the smallest value. If on a date when we have the smallest value a greater value is entered as ATP quantity, and this quantity is used for a new issuing operation, it will not be enough for all ordered operations. The minimum quantity in the new chronology actually shows the greatest value we can use for the date specified as a parameter without violating other issuing store processes.
 
-Let’s apply that to the example from [Available to Promise](available-to-promise/index.md):
+Let’s apply that to the example from [Available to Promise](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/available-to-promise/index.md):
 
 After adding the physical availability to the chronology, we have:
 
@@ -70,13 +70,12 @@ This method is effective enough. However, problems appear when we want to calcul
 
 When the date for which we calculate the ATP is before the earliest unexecuted Store Order, the following principle is applied:
 
-1. All unexecuted Store Orders after the specified date are taken into account, and the ATP is calculated according to their chronology. This is a value [Projected Available Balance](projected-available-balance.md)
-
+1. All unexecuted Store Orders after the specified date are taken into account, and the ATP is calculated according to their chronology. This is a value [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/projected-available-balance.md).
 2. The current available physical quantity is calculated - value [<b>Current Stock Holds</b>]
 
-3. If there are future unexecuted Store Orders, (i.e., if [[Projected Available Balance](projected-available-balance.md)]  is not null), then: 
+3. If there are future unexecuted Store Orders, (i.e., if [[Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/projected-available-balance.md)]  is not null), then: 
  
-[<b>ATP</b>] = min([[Projected Available Balance](projected-available-balance.md)], [<b>Current Stock Holds</b>])
+[<b>ATP</b>] = min([[Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/projected-available-balance.md)], [<b>Current Stock Holds</b>])
 
 4. Otherwise, [<b>ATP</b>] = [<b>Current Stock Holds</b>]
 
@@ -92,7 +91,7 @@ the ATP for the dates from <b>2021/10/09</b> to <b>2021/10/15</b> (including) is
 
  If we have the same data from the previous example, but the issue for <b>2021/10/13</b> is <b>1 pcs</b>, then the ATPs would be as follows:
  
-- before <b>2021/10/09: 10 pcs</b> (this is the smaller value from the current physical availability and the [Projected Available Balance](projected-available-balance.md) after <b>2021/10/09</b>);
+- before <b>2021/10/09: 10 pcs</b> (this is the smaller value from the current physical availability and the [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/c7b8909d6a5957a86ad37a5dec133bba0be51777/modules/logistics/logistics-common-module-concepts/projected-available-balance.md) after <b>2021/10/09</b>);
 
 - from <b>2021/10/09</b> to <b>2020/10/15</b> (including): <b>11 pcs</b>;
 
