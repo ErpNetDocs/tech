@@ -4,13 +4,13 @@ Store Transfers create two parallel sub-document flows - receipt and issue flow.
 
 - Issue cost (of the issued goods);
 
-- <b>Additional Amounts</b> in the Store Transfer, added to the products (representing increased goods cost e.g because of transport taxes).
+- [Additional Amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts.md) in the Store Transfer, added to the products (representing increased goods cost e.g because of transport taxes).
 
 For each Store Transfer the following must be valid:
 
 <b>[receipt cost] = [issue cost] + [Additional Amounts for cost]</b>
 
-Each Store Transaction row is calculated separately (so <b>[Additional Amounts for cost]</b> is the additional amount distributed to the current row). These calculations are executed when the receipt Store Order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the Store Order. So if the generated Store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
+Each Store Transaction row is calculated separately (so <b>[[Additional Amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts.md) for cost]</b> is the additional amount distributed to the current row). These calculations are executed when the receipt Store Order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the Store Order. So if the generated Store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
 
 <b><i>Example 1</b></i>:
 
@@ -76,7 +76,7 @@ then, the rest of the cost – 33 for row #10 and 30 for row #20, will be added 
 
 ## Issue And Receipt Cost Balance
 
-In the examples above, it is possible to receive only less quantity than the issued - the rest will come later. The receipt value in a document cannot be more than the issued’s. It is not possible to receive more than the amount issued from the first store when transferring stocks. Although these cases are just theoretical, they may lead to incorrect cost (especially after <b>Cost Correction</b>, as discrepancies may appear).
+In the examples above, it is possible to receive only less quantity than the issued - the rest will come later. The receipt value in a document cannot be more than the issued’s. It is not possible to receive more than the amount issued from the first store when transferring stocks. Although these cases are just theoretical, they may lead to incorrect cost (especially after [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md), as discrepancies may appear).
 
 <b><i>Example 2:</b></i>
   
