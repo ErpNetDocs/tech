@@ -51,4 +51,6 @@ The PAB line can be seen on the following chart:
 
 ![Picture](pictures/Picture_1.png)
  
-> All documents in @@name that may lead to store movements can be set to generate <i>Planned or Firmed Store Orders</i> - directly or through other documents. With this setting, the documents can be involved in the [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md) and [Available to Promise](available-to-promise/index.md) calculations.
+> All documents in @@name that may lead to store movements can be set to generate <i>Planned or Firmed Store Orders</i> - directly or through other documents. 
+> 
+> With this setting, the documents can be involved in the [Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md) and [Available to Promise](available-to-promise/index.md) calculations.
