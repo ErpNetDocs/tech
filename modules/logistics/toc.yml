@@ -5,4 +5,5 @@
   topicHref: wms/index.md
 - name: Inventory
   href: inventory/toc.yml
-  
+- name: Concepts
+  href: logistics-common-module-concepts/toc.yml   
