@@ -1,0 +1,13 @@
+- name: Available to promise
+  href: available-to-promise/toc.yml  
+- name: Goods cost
+  href: goods-cost/toc.yml  
+- name: Lots issue
+  href: lots-issue.md
+- name: Material requirements planning
+  href: material-requirements-planning.md
+- name: Projected available balance
+  href: projected-available-balance.md 
+- name: Setting transaction timestamp
+  href: setting-transaction-timestamp/toc.yml  
+  
