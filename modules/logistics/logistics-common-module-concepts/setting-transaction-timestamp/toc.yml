@@ -1,0 +1,8 @@
+- name: More specific cases of setting the transaction timestamp
+  href: more-specific-cases-of-setting-the-transaction-timestamp.md
+- name: Setting transaction timestamp by store orders
+  href: setting-transaction-timestamp-by-store-orders.md
+- name: Setting transaction timestamp in reconciliations
+  href: setting-transaction-timestamp-in-reconciliations.md
+- name: Setting transaction timestamp on transaction release
+  href: setting-transaction-timestamp-on-transaction-release.md
