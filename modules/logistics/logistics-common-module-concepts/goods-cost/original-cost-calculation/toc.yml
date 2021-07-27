@@ -1,0 +1,11 @@
+- name: Calculating cost for inventory reconciliation
+  href: calculating-cost-for-inventory-reconciliation.md
+- name: Calculating cost for produced products
+  href: calculating-cost-for-produced-products.md
+- name: Calculating cost for returned products
+  href: calculating-cost-for-returned-products.md
+- name: Calculating cost for transferred products
+  href: calculating-cost-for-transferred-products.md 
+- name: Calculating cost when returning rented assets
+  href: calculating-cost-when-returning-rented-assets.md
+  
