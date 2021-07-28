@@ -398,6 +398,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/get-atp.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/get-atp.html",
+          "hash": "KZGz9m3A7XGH+Fpdw99znw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/get-current-availability-of-product.md",
       "output": {
         ".html": {
@@ -1339,7 +1351,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "zIystGbFBDt7n4bq8SR5Jw=="
+          "hash": "I460/xzMNCEPhgg+8qF77Q=="
         }
       },
       "is_incremental": false,
