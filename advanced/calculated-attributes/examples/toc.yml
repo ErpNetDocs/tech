@@ -30,4 +30,6 @@
   href: convert-property-to-number.md
 - name: Format date type custom property
   href: format-property-date.md
+- name: Get available to promise (ATP) quantity
+  href: get-atp.md
   
