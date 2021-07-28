@@ -7,7 +7,7 @@
   "advanced/business-rules/action-types/index.html": {
     "href": "advanced/business-rules/action-types/index.html",
     "title": "Action types | ERP.net Tech Docs",
-    "keywords": "Action types The following types of actions are available to the user when creating a user business rules: NOTIFYUSER SENDMAIL SETVALUE WARNING"
+    "keywords": "Action types The following types of actions are available to the user when creating a user business rules: FAIL NOTIFYUSER SENDMAIL SETVALUE WARNING"
   },
   "advanced/business-rules/action-types/notifyuser.html": {
     "href": "advanced/business-rules/action-types/notifyuser.html",
