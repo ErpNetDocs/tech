@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/business-rules/action-types/index.html",
-          "hash": "gvkNOs12Dknnukde+cLysQ=="
+          "hash": "beC6T4F92ZAzFD56aX+NpA=="
         }
       },
       "is_incremental": false,
@@ -402,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/get-atp.html",
-          "hash": "KZGz9m3A7XGH+Fpdw99znw=="
+          "hash": "8MUF32+w48Y9/4h0pWrZqg=="
         }
       },
       "is_incremental": false,
@@ -450,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/index.html",
-          "hash": "rQVIsArYRSgN5hpQvOyOqQ=="
+          "hash": "nigcTKIkwasL0qn/O3tv1Q=="
         }
       },
       "is_incremental": false,

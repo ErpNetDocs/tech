@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>items: CalculatedAttributeExamples | ERP.net Tech Docs </title>
+    <title>Get available to promise (ATP) quantity | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="items: CalculatedAttributeExamples | ERP.net Tech Docs ">
+    <meta name="title" content="Get available to promise (ATP) quantity | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,12 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-
-<hr>
-<h2 id="items-calculatedattributeexamples">items: CalculatedAttributeExamples</h2>
 <h1 id="get-available-to-promise-atp-quantity">Get available to promise (ATP) quantity</h1>
-<p>This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the [AvailableToPromise View](xref:Logistics.Inventory.DemandManagement.AvailableToPromise View).
-In the example we get the ATP quantity in a Shipment order line on its Required Delivery Date.</p>
+
+<p>This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the <a class="xref" href="https://erpnetdocs.github.io/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html">AvailableToPromise View</a>.
+In the example we are showing how get the ATP quantity in a shipment order line on its Required Delivery Date.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attributes is <em>Logistics.Shipment.ShipmentOrderLines</em></p>
@@ -113,15 +111,15 @@ In the example we get the ATP quantity in a Shipment order line on its Required 
 <li>20: Get the first record of the list returned by EXP:30</li>
 <li>30: Sort the list returned by EXP:40 - descending by the value of the &quot;FromDate&quot; attribute</li>
 <li>40: Select the AvailableToPromise records which are matching the clauses of EXP:50</li>
-<li>50: Filter the list above by the records WHERE/in which the clauses in EXP:80 and EXP:60 are True</li>
-<li>60: Filter the list above by the records WHERE/in which the clauses in EXP:110 and EXP:70 are True</li>
-<li>70: Filter the list above by the records WHERE/in which the clauses in EXP:140 and EXP:170 are True</li>
+<li>50: Filter the the records for which EXP:80 and EXP:60 are True</li>
+<li>60: Filter the the records for which EXP:110 and EXP:70 are True</li>
+<li>70: Filter the the records for which EXP:140 and EXP:170 are True</li>
 <li>80: Return True if the ProductId of the AvailableToPromise record is equal to EXP:90</li>
 <li>90: Get EXP:100 from the repository of EXP:10 i.e. of the current Shipment Order Line</li>
-<li>100: Get the ProductId specified in the ParentSalesOrderLine</li>
+<li>100: Get the ProductId of the ParentSalesOrderLine</li>
 <li>110: Return True if the StoreId of the AvailableToPromise record is equal to EXP:120</li>
 <li>120: Get EXP:130 from the repository of EXP:10 i.e. of the current Shipment Order Line</li>
-<li>130: Get the LineStoreId specified in the ParentSalesOrderLine</li>
+<li>130: Get the LineStoreId of ParentSalesOrderLine</li>
 <li>140: Return True if the EnterpriseCompanyId of the AvailableToPromise record is equal to EXP:150</li>
 <li>150: Get EXP:160 from the repository of EXP:10 i.e. of the current Shipment Order Line</li>
 <li>160: Get the EnterpriseCompanyId of the ShipmentOrder</li>
