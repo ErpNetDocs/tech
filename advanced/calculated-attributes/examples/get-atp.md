@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the [AvailableToPromise View](xref:Logistics.Inventory.DemandManagement.AvailableToPromise View).
+This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the [AvailableToPromise View](xref:Logistics.Inventory.DemandManagement.AvailableToPromise).
 In the example we get the ATP quantity in a Shipment order line on its Required Delivery Date.
 
 > [!NOTE]
