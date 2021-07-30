@@ -62,7 +62,7 @@ These calculations are represented by a graphic:
 
 ![Picture2](pictures/picture2.png)
  
-## Modifications in the algorithm implementation
+## Modifications in the Algorithm Implementation
 
 There are some specific changes in the ATP calculation for algorithm implementation. When using the unexecuted Store Orders chronology instead of starting with an opening balance for a defined period, the definition of the start quantity for the unexecuted Store Orders is not really effective. All store movements - the unexecuted by now store orders - are used without limits for date and without calculation for the starting value. These movements calculate the ATP for sub-periods. To calculate the ATP for a specific date, we simply take into account the periods before this date and the minimum value from the last period.
 
