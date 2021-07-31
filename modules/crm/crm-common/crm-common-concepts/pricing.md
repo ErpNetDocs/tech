@@ -72,7 +72,8 @@ The price is specified using the following attributes:
 - **Quantity Measurement Unit** - the measurement unit in which the quantity is specified
 
 Examples:
-5.00 USD for 1 pcs
 
-10.00 EUR for 3 packs
+  5.00 USD for 1 pcs
+
+  10.00 EUR for 3 packs
 
