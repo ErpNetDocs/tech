@@ -67,7 +67,7 @@ The following additional conditional attributes further filter down the prices:
 The price is specified using the following attributes:
 
 - **Price** - the decimal part of the price
-- **Currency** - The currency of the price
+- **Currency** - the currency of the price
 - **Quantity** - the quantity for which the price is specified
 - **Quantity Measurement Unit** - the measurement unit in which the quantity is specified
 
