@@ -10,9 +10,6 @@ references:
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
-- uid: amount-to-pay
-  name: Amount to pay
-  href: modules/crm/sales/amount-to-pay.html
 - uid: applicable-legislations
   name: Country Specific Functionality
   href: reference/country-specific-functionality.html
@@ -210,10 +207,10 @@ references:
   href: modules/applications/service/non-agreed-services-and-materials.html
 - uid: sales-order-payment-plan
   name: Sales Order Payment Plan
-  href: modules/crm/sales/sales-order-payment-plan.html
+  href: modules/crm/sales/default-sales-order-payment-plans/sales-order-payment-plan.html
 - uid: sales-order-row-types
   name: Sales Order Row Types
-  href: modules/crm/sales/sales-order-row-types.html
+  href: modules/crm/sales/sales-concepts/sales-order-row-types.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html

@@ -1858,6 +1858,42 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/crm-common/crm-common-concepts/index.html",
+          "hash": "v9OgpjyrYWEFDoD2wLH09w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/pricing.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/crm-common/crm-common-concepts/pricing.html",
+          "hash": "XeLwHihnSiU+O211Dy6eVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/crm-common/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/crm-common/index.html",
+          "hash": "KZ6UP8xYuwVGYAmZyKfO1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/index.md",
       "output": {
         ".html": {
@@ -1906,11 +1942,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/amount-to-pay.md",
+      "source_relative_path": "modules/crm/sales/default-sales-order-payment-plans/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/sales/amount-to-pay.html",
-          "hash": "0FbIqXg81NgjraBMV4Q5MQ=="
+          "relative_path": "modules/crm/sales/default-sales-order-payment-plans/index.html",
+          "hash": "7Ae44m0ps4uFBnFlq8PqqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/default-sales-order-payment-plans/sales-order-payment-plan.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/default-sales-order-payment-plans/sales-order-payment-plan.html",
+          "hash": "hGXu7tPx43RBB6OLKAxtNw=="
         }
       },
       "is_incremental": false,
@@ -1954,11 +2005,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-order-payment-plan.md",
+      "source_relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/sales/sales-order-payment-plan.html",
-          "hash": "mp8uin0ieTswYce61eS2vQ=="
+          "relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.html",
+          "hash": "wT9axotZz3MV1q6IBW8hmg=="
         }
       },
       "is_incremental": false,
@@ -1966,11 +2017,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-order-row-types.md",
+      "source_relative_path": "modules/crm/sales/sales-concepts/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/sales/sales-order-row-types.html",
-          "hash": "MFhzoA+5N38BlYlpwH3sVQ=="
+          "relative_path": "modules/crm/sales/sales-concepts/index.html",
+          "hash": "uYOQIUT31KQg36GrsMLYow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/sales-concepts/sales-order-row-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/sales-concepts/sales-order-row-types.html",
+          "hash": "WCVh/26JnIyXYHGG8YMeGQ=="
         }
       },
       "is_incremental": false,
@@ -2674,7 +2737,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "kvMYVzVXOWDhSrGBJDyhtg=="
+          "hash": "B87xNJuykMiPp4gwr0syhQ=="
         }
       },
       "is_incremental": false,
