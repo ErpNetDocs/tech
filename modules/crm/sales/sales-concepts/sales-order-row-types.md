@@ -1,6 +1,7 @@
 # Sales Order Row Types
 
 The classification of the Sales Order rows describes three main row types - Normal Sale, Sales Return and Neutral operation. The row type is important for some generation procedures from Sales Order.
+
 ## Types
 
 The row type is defined by the signs of the quantity value and the amount in it. These criteria are chosen because it is most common and natural. For example, it is possible to define if a Sales Order row is for stock return or not by the values in the Return For Sales Order Line field in the lines or the header field - ReturnForSalesOrder. But it is also possible for the user to enter a Sales Order for stock to directly return negative values in the quantity and/or amount fields without using tools such as ReturnForSalesOrderLine or ReturnForSalesOrder. Thus, the signs of the values in the Quantity and Line Amount fields are the most common and natural criterion to determine the row type.
