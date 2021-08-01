@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sales Order Payment Plan | ERP.net Tech Docs </title>
+    <title>Sales order Payment plan | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sales Order Payment Plan | ERP.net Tech Docs ">
+    <meta name="title" content="Sales order Payment plan | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -76,144 +76,98 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="sales-order-payment-plan">
-<h1 id="sales-order-payment-plan">Sales Order Payment Plan</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sales-order-payment-plan">Sales order Payment plan</h1>
 
-<p>This topic describes the essence of the Sales Order Payment Plans, the method of calculating the Installments, and the algorithm for creating payment requests under a plan.</p>
-<h2 id="sales-order-payment-plans">Sales Order Payment Plans</h2>
-<p>The sales order payment plan determines how the amount of the given sales order is paid (with how many instalments and their individual amounts).</p>
-<p>For each instalment, there are two main attributes - <strong>a method for determining the amount and a method for determining the due dates (the payment term).</strong></p>
-<p><strong>Methods for determining the amount (specified by the &quot;Amount Percent&quot;, &quot;Amount&quot; and &quot;Remainder&quot; fields):</strong></p>
+<p>This topic describes the essence of the Sales order Payment plans, the method of calculating the Instalments, and the algorithm for creating payment requests under a plan.</p>
+<h2 id="sales-order-payment-plans">Sales order Payment plans</h2>
+<p>The Sales order payment plan determines how the amount of the given Sales order is paid (with how many instalments and their individual amounts).</p>
+<p>For each instalment, there are two main attributes - a <em>method for determining the amount</em> and a <em>method for determining the due dates (the payment term</em>).</p>
+<p><strong>Methods for determining the amount (specified by the 'Amount Percent', 'Amount' and 'Remainder' fields):</strong></p>
 <ul>
-<li><p>an indication of a fixed amount that does not depend on other factors;</p>
-</li>
-<li><p>the amount of the instalment is a percentage of the total amount of the transaction;</p>
-</li>
-<li><p>the amount is the remainder that is not covered by the other instalments.</p>
-</li>
+<li>an indication of a fixed amount that does not depend on other factors;</li>
+<li>the amount of the instalment is a percentage of the total amount of the transaction;</li>
+<li>the amount is the remainder that is not covered by the other instalments.</li>
 </ul>
-<p>It is mandatory that in every plan there must be exactly one instalment marked as a &quot;Remainder&quot; (usually this is the last instalment in the plan).
-It is necessary to have such an instalment because it &quot;picks up&quot; all of the small inaccuracies and differences of rounding (if there are other instalments whose amounts are determined by a percentage).
-It can also &quot;picks up&quot; and the changes in the total amount that happen due to changes in the terms of trade in the Invoices (see Example 3 below).</p>
-<p>There are two main fields whose values need to be determined in order to define the payment term - Payment Due Start Date (aka Execution Date) and Payment Due Date.
-Payment Due Start Date (aka Execution Date) is the date when the payment becomes due/executable and Payment Due Date is the last day of the payment term.</p>
-<p><strong>Due Date Form Methods according to which the payment term is calculated:</strong></p>
+<p>It is mandatory that in every plan there must be exactly one instalment marked as a 'Remainder' (usually this is the last instalment in the plan). It is necessary to have such an instalment because it 'picks up' all of the small inaccuracies and differences of rounding (if there are other instalments whose amounts are determined by a percentage). It can also 'pick up' the changes in the total amount happening due to changes in the terms of trade in the Invoices (see Example 3 below).</p>
+<p>There are two main fields with values that need to be determined in order to define the payment term - Payment due Start date (aka Execution date) and Payment due date. Payment due Start date (aka Execution date) is the date when the payment becomes due/executable and Payment due date is the last day of the payment term.</p>
+<p><strong>Due date form Methods according to which the payment term is calculated:</strong></p>
 <ul>
-<li>Specify the date explicitly: the payment due start date is determined by adding &quot;Payment Term Days&quot; to the &quot;Explicit Payment Due Date&quot; and the due date is &quot;Explicit execution date&quot; added with &quot;Execution term, days&quot;;</li>
-<li>Use Sales Order Due Date: “Due Start Date”/”Execution date” and “Payment Due Date” are copied directly from the Sales Order header fields “Payment Due Start Date “ and “Payment Due Date”;</li>
-<li>Use Sales Order Date: the dates are calculated using the Sales Order “Document date” added with the number of days entered in &quot;Execution term, days” (for the calculation of the payment start due date) or &quot;Payment Term Days&quot; (for the calculation of the due date);</li>
-<li>Use Invoice Due date: “Due Start Date”/”Execution date” and “Payment Due Date” are copied directly from the Invoice header fields “Payment Due Start Date “ and “Payment Due Date”;</li>
-<li>Use Invoice Date: the dates are calculated using the Invoice “Document date” added with the number of days entered in &quot;Execution term, days” (for the calculation of the payment start due date) or &quot;Payment Term Days&quot; (for the calculation of the due date);</li>
+<li>Specify the date explicitly: the Payment due start date is determined by adding 'Payment term days' to the 'Explicit Payment due date' and the due date is 'Explicit execution date' added with 'Execution term, days';</li>
+<li>Use Sales order due date: 'Due Start date'/'Execution date' and 'Payment due date' are copied directly from the Sales order header fields 'Payment due Start date ' and 'Payment due date';</li>
+<li>Use Sales order date: the dates are calculated using the Sales order 'Document date' added with the number of days entered in 'Execution term, days' (for the calculation of the payment start due date) or 'Payment Term days' (for the calculation of the due date);</li>
+<li>Use Invoice Due date: 'Due Start date'/'Execution date' and 'Payment due date'  are copied directly from the Invoice header fields 'Payment Due Start date ' and 'Payment due date';</li>
+<li>Use Invoice date: the dates are calculated using the Invoice 'Document date' added with the number of days entered in 'Execution term, days' (for the calculation of the payment start due date) or 'Payment term days' (for the calculation of the due date);</li>
 </ul>
-<p>The last two methods use the delivery invoice dates. If they are not yet issued, then the dates are calculated according to the values inserted in the Sales Order header.</p>
-<p>If for the particular sales order there is no indicated payment plan at all, then it is considered that there is a plan that consists of only one instalment.
-This instalment is not numbered (see the Create Payment Orders section below) and is for total Amount to Pay of the Sales Order.
-In a &quot;service&quot; instalment the method of determining the payment term depends on whether the Payment Orders for the invoiced amounts will be created from the Sales Order or not (this depends on the setting of the Payment Order generation procedure).
-If the Payment Orders for invoiced amounts will be generated from the Sales Order, then for the Due Date Form Method is used the “Use Invoice Due date” method, otherwise is used the “Use Sales Order Due date” method.</p>
+<p>The last two methods use the delivery invoice dates. If they are not yet issued, then the dates are calculated according to the values inserted in the Sales order header.</p>
+<p>If  there is no indicated payment plan for the particular Sales order at all, then it is considered that there is a plan that consists of only one instalment. This instalment is not numbered (see the Create Payment orders section below) and is for total Amount to pay of the Sales order. In a 'service' instalment the method of determining the payment term depends on whether the Payment orders for the invoiced amounts will be created from the Sales order or not (this depends on the setting of the Payment order generation procedure). If the Payment orders for invoiced amounts will be generated from the Sales order, then for the 'Due date form Method' the 'Use Invoice due date' method is used, otherwise the 'Use Sales order Due date' method  is used.</p>
 <h2 id="determining-the-total-payment-amount">Determining the total payment amount</h2>
-<p>In order to determine the amount of each instalment, it is first necessary to determine what is the total / final amount that has to be paid for this transaction.
-This is done using the data from several documents - the Sales Order with which the transaction is reflected and all Invoices for this sale (both for the advance and for delivery).</p>
-<p>For this purpose, two types of Amounts are calculated separately – Sales Order Amounts and Invoice Amounts, which are then summed to obtain the final amount.
-Invoice Amounts are the Amounts to Pay (see topic <a href="amount-to-pay.md">Amount To Pay</a>) of the delivery Invoices.
-And the Sales Orders Amounts are the paid advances and the remaining part of the Amount to Pay (see topic <a href="amount-to-pay.md">Amount To Pay</a>) of the Sales Order, which is not covered by an advance or delivery.</p>
-<p>To determine the last amount (the remaining part of the Amount to Pay of the Sales Order), the following formula is used:</p>
-<p><strong>[remaining part] = [Amount to Pay of the Sales Order] - [advances paid] - [invoiced part of the Sales Order]</strong></p>
-<p>The invoiced part is calculated by determining how much of the Amount to Pay of the Sales Order is covered by the delivery Invoices. This is done for each line of Invoices in two alternative methods:</p>
+<p>In order to determine the amount of each instalment, it is first necessary to determine what is the total / final amount that has to be paid for this transaction. This is done using the data from several documents - the Sales order with which the transaction is reflected and all Invoices for this sale (both for the advance and for delivery).
+For this purpose, two types of Amounts are calculated separately – Sales order amounts and Invoice amounts, which are then summed to obtain the final amount. Invoice amounts are the Amounts to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount to pay</a></strong>) of the delivery Invoices. And the Sales orders amounts are the paid advances and the remaining part of the Amount to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount to pay</a></strong>) of the Sales order, which is not covered by an advance or delivery.
+To determine the last amount (the remaining part of the Amount to pay of the Sales order), the following formula is used:</p>
+<p><strong>[remaining part] = [Amount to Pay of the Sales order] - [advances paid] - [invoiced part of the Sales order]</strong></p>
+<p>The invoiced part is calculated by determining how much of the Amount to pay of the Sales order is covered by the delivery Invoices. This is done for each line of Invoices in two alternative methods:</p>
 <ul>
-<li>through the &quot;Covered amount&quot; field of the Invoice lines;</li>
-<li>or through the Quantities in the Invoice lines (this is used for the lines in which the &quot;Covered Amount&quot; is not filled in).
-Finally, the results of all lines of delivery Invoices for current Sales Order are summed into <strong>[invoiced part of the Sales Order]</strong>.
-It does not matter what the final Amount to Pay for the Invoice is.
-The reason why the final Amount to Pay of the Invoice is not to be considered is that there may be a change in the trading conditions (prices, discounts, etc.).
-This should not change the ratio - what part of the Sales Order is covered by this Invoice.</li>
+<li>through the 'Covered amount' field of the Invoice lines;</li>
+<li>or through the Quantities in the Invoice lines (this is used for the lines in which the 'Covered Amount' is not filled in).</li>
 </ul>
-<p>The first method is based on this how much of the basе of the Sales Order (the &quot;Line Amount&quot; field of the sales order line) is covered by the value of &quot;Sales Order Amount&quot; field in the line of the Invoice.
-This relationship determines what part of the Sales Order line has been invoiced. For example, if the Sales Order lines is for <strong>100.00 BGN</strong> and we have <strong>20.00 BGN</strong> VAT (ie the Amount to Pay of the Sales Order is 120.00 BGN) and there is one Invoice line in which the covered &quot;Sales Order Amount&quot; is 70.00 BGN, then the invoiced part of the Sales Order line is <strong>120.00 * 70.00 / 100.00 = 84.00 BGN.</strong></p>
-<p>The second method works on the same principle, but the relationship is made between the quantities of the Sales Order line and the Invoice line.
-For example, if in the Sales Order line there is a Quantity = <strong>10 pcs</strong> with a total Amount to Pay = <strong>90.00 BGN</strong> and there is only one Invoice line for Quantity = <strong>7 pcs</strong> then the invoiced part of the Sales Order line is <strong>90.00 BGN * 7 pc / 10 pc = 63.00 BGN</strong>.</p>
-<p>If in the Invoice there also is an advance deduction, this deduction is also subtracted from the invoiced part (because advances are aggregated in <strong>[advances paid]</strong>). If in the example described above there is an advance deduction of <strong>15.00 BGN</strong> in the Invoice, then the invoiced part of the Sales Order is <strong>(90.00 BGN * 7 pcs / 10pcs) – 15.00 BGN = 48.00 BGN</strong>.</p>
-<h3 id="example-1">Example 1:</h3>
-<p>There is a Sales Order with Quantity = <strong>10 pcs</strong> for a total Amount to Pay of <strong>90.00 BGN</strong>, there already is a paid advance of <strong>15.00 BGN</strong> and two delivery Invoices (in which the field &quot;Sales Order Amount&quot; is not filled in):</p>
+<p>Finally, the results of all lines of Delivery Invoices for current Sales order are summed into <strong>[invoiced part of the Sales order]</strong>. It does not matter what the final Amount to pay for the Invoice is. The reason why the final Amount to pay of the Invoice is not to be considered is that there may be a change in the trading conditions (prices, discounts, etc.). This should not change the ratio - what part of the Sales order is covered by this Invoice.</p>
+<p>The first method is based on how much of the basе of the Sales order (the 'Line amount' field of the Sales order line) is covered by the value of the 'Sales order amount' field in the line of the Invoice. This relationship determines what part of the Sales order line has been invoiced. For example, if the Sales order lines is for <strong>100.00 BGN</strong> and we have <strong>20.00 BGN</strong> VAT (ie the Amount to pay of the Sales order is 120.00 BGN) and there is one Invoice line in which the covered 'Sales order amount' is 70.00 BGN, then the invoiced part of the Sales order line is <strong>120.00 * 70.00 / 100.00 = 84.00 BGN</strong>.</p>
+<p>The second method works on the same principle, but the relationship is made between the quantities of the Sales order line and the Invoice line. For example, if in the Sales order line there is a Quantity = <strong>10 pcs</strong> with a total Amount to pay = <strong>90.00 BGN</strong> and there is only one Invoice line for Quantity = <strong>7 pcs</strong> then the invoiced part of the Sales order line is <strong>90.00 BGN * 7 pc / 10 pc = 63.00 BGN</strong>.</p>
+<p>If in the Invoice there also is an advance deduction, this deduction is also subtracted from the invoiced part (because advances are aggregated in <strong>[advances paid]</strong>). If in the example described above there is an advance deduction of <strong>15.00 BGN</strong> in the Invoice, then the invoiced part of the Sales order is <strong>(90.00 BGN * 7 pcs / 10pcs) – 15.00 BGN = 48.00 BGN</strong>.</p>
+<p><strong>Example 1:</strong></p>
+<p>There is a Sales order with Quantity = <strong>10 pcs</strong> for a total Amount to pay of <strong>90.00 BGN</strong>, there already is a paid advance of <strong>15.00 BGN</strong> and two delivery Invoices (in which the field 'Sales order Amount' is not filled in):</p>
 <ul>
-<li><p>one for Quantity =  <strong>3 pcs</strong> in which we deduct the advance and therefore we have an Amount to Pay of the Invoice <strong>12.00 BGN = (27.00 BGN – 15.00 BGN)</strong>;</p>
-</li>
-<li><p>one for Quantity =  <strong>4 pcs</strong>, in which trade conditions are changed and so we have an Amount to Pay of the Invoice <strong>41.00 BGN</strong> (instead of the expected <strong>36.00 BGN</strong>).</p>
-</li>
+<li>one for Quantity =  <strong>3 pcs</strong> in which we deduct the advance and therefore we have an Amount to pay of the Invoice <strong>12.00 BGN = (27.00 BGN – 15.00 BGN)</strong>;</li>
+<li>one for Quantity =  <strong>4 pcs</strong>, in which trade conditions are changed and so we have an Amount to pay of the Invoice <strong>41.00 BGN</strong> (instead of the expected <strong>36.00 BGN</strong>).
+The result is:</li>
 </ul>
-<p>The result is:</p>
-<p><strong>[invoiced part of Sales Order] = (90.00 BGN * 3 pss / 10 pcs) + (90.00 BGN * 4 pcs / 10 pcs) – 15.00 BGN = 48.00 BGN;</strong></p>
-<p><strong>[remaining part] = 90.00 BGN – 15.00 BGN – 48.00 BGN = 27.00 BGN;</strong></p>
-<p>Thus, we receive two Invoice Amounts – <strong>12.00 BGN</strong> and <strong>41.00 BGN</strong> - and two Sales Order Amounts – <strong>15.00 BGN</strong> (advance) and <strong>27.00 BGN</strong>. The final payment amount is:</p>
-<p><strong>[total Amount to Pay] = 12.00 BGN + 41.00 BGN + 15.00 BGN + 27.00 BGN = 95.00 BGN</strong></p>
-<p>In principle, (and from <strong>Example 1</strong>) we see that the total Amount to Pay practically is the Amount to Pay of the Sales Order summed with the increases/decreases that occurred due to a change in the terms of trade in the Invoices.
-The reason behind the using of such a breakdown of individual (smaller) amounts in the calculation is to avoid a (technical) complex analysis of how exactly the trade terms of the Invoices have changed and how this changes and affects the total amount.
-Also, these individual amounts help with the creation of Payment Orders.</p>
+<p><strong>[invoiced part of Sales order] = (90.00 BGN * 3 pss / 10 pcs) + (90.00 BGN * 4 pcs / 10 pcs) – 15.00 BGN = 48.00 BGN</strong>;</p>
+<p><strong>[remaining part] = 90.00 BGN – 15.00 BGN – 48.00 BGN = 27.00 BGN</strong>;
+Thus, we receive two Invoice Amounts – <strong>12.00 BGN</strong> and <strong>41.00 BGN</strong> - and two Sales order amounts – <strong>15.00 BGN</strong> (advance) and <strong>27.00 BGN</strong>. The final payment amount is:</p>
+<p><strong>[total Amount to pay] = 12.00 BGN + 41.00 BGN + 15.00 BGN + 27.00 BGN = 95.00 BGN</strong></p>
+<p>In principle, (and from <strong>Example 1</strong>) we see that the total Amount to pay practically is the Amount to pay of the Sales order summed with the increases/decreases that occurred due to a change in the terms of trade in the Invoices. The reason behind the using of such a breakdown of individual (smaller) amounts in the calculation is to avoid a (technical) complex analysis of how exactly the trade terms of the Invoices have changed and how this changes and affects the total amount. Also, these individual amounts help with the creation of Payment orders.</p>
 <h2 id="determination-of-the-instalments-amounts">Determination of the instalments amounts</h2>
-<p>The instalments are calculated by computing of the total Amount to Pay and applying the method of determining the instalment amount. Here are two examples:</p>
-<h3 id="example-2">Example 2:</h3>
-<p>There is a Sales Order with a total Amount to Pay <strong>95.00 BGN</strong>. For this Sales Order, there is a payment plan with three instalments: the first for <strong>33.30 %</strong>, the second for <strong>33.70 %</strong> and the third is marked as a &quot;<strong>Remainder</strong>&quot;. Thus, we get the following instalments:</p>
+<p>The instalments are calculated by computing the total Amount to pay and applying the method of determining the instalment amount. Here are two examples:</p>
+<p><strong>Example 2:</strong></p>
+<p>There is a Sales order with a total Amount to pay <strong>95.00 BGN</strong>. For this Sales order, there is a payment plan with three instalments: the first for <strong>33.30 %</strong>, the second for <strong>33.70 %</strong> and the third is marked as a '<strong>Remainder</strong>'. Thus, we get the following instalments:</p>
 <ul>
-<li><p><strong>[Instalment 1]</strong> <strong>= 95.00 BGN * 33.30 %</strong> = 31.635 ~ <strong>31.64 BGN;</strong></p>
-</li>
-<li><p><strong>[Instalment 2]</strong> <strong>= 95.00 BGN * 33.70 %</strong> = 32.015 ~ <strong>32.02 BGN;</strong></p>
-</li>
-<li><p><strong>[Instalment 3] = 95.00 BGN - 31.64 BGN - 32.02 BGN = 31.34 BGN;</strong></p>
-</li>
+<li><strong>[Instalment 1] = 95.00 BGN * 33.30 % = 31.635 ~ 31.64 BGN</strong>;</li>
+<li><strong>[Instalment 2] = 95.00 BGN * 33.70 % = 32.015 ~ 32.02 BGN;</strong></li>
+<li><strong>[Instalment 3] = 95.00 BGN - 31.64 BGN - 32.02 BGN = 31.34 BGN</strong>;</li>
 </ul>
-<p><strong>Example 2</strong> shows that when using a percent-based instalment and we have a change (increase/decrease) in the Amount to Pay because of changing the terms of trade in the invoices, this change is evenly distributed among the instalments.</p>
-<p>It also illustrates the usefulness of the &quot;Remainder&quot; instalment. If it was, instead, <strong>33.00 %</strong>, then the total amount of the three instalments (after determining the percentages after the rounding) would be <strong>95.05 BGN</strong> and not <strong>95.00 BGN!</strong></p>
-<h3 id="example-3">Example 3:</h3>
-<p>There is a Sales Order with a total Amount to Pay <strong>95.00 BGN</strong>. For this Sales Order, there is a payment plan with three instalments - the first for an exact amount of <strong>30.00 BGN</strong>, the second for an exact amount of <strong>40.00 BGN</strong> and the third is marked as a &quot;remainder&quot;.
-Thus, we get the following instalments:</p>
+<p><strong>Example 2</strong> shows that when using a percent-based instalment and we have a change (increase/decrease) in the Amount to pay because of changing the terms of trade in the invoices, this change is evenly distributed among the instalments.
+It also illustrates the usefulness of the 'Remainder' instalment. If it was, instead, 33.00 %, then the total amount of the three instalments (after determining the percentages after the rounding) would be <strong>95.05 BGN</strong> and not <strong>95.00 BGN!</strong></p>
+<p><strong>Example 3:</strong></p>
+<p>There is a Sales order with a total Amount to pay <strong>95.00 BGN</strong>. For this Sales order, there is a payment plan with three instalments: the first for an exact amount of <strong>30.00 BGN</strong>, the second for an exact amount of <strong>40.00 BGN</strong> and the third is marked as a 'remainder'. Thus, we get the following instalments:</p>
 <ul>
-<li><p><strong>[Instalment 1]</strong> = <strong>30.00 BGN</strong> (fixed amounts do not change);</p>
-</li>
-<li><p><strong>[Instalment 2]</strong> = <strong>40.00 BGN</strong> (fixed amounts do not change);</p>
-</li>
-<li><p><strong>[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN = 25.00 BGN;</strong></p>
-</li>
+<li><strong>[Instalment 1] = 30.00 BGN</strong> (fixed amounts do not change);</li>
+<li><strong>[Instalment 2] = 40.00 BGN</strong> (fixed amounts do not change);</li>
+<li><strong>[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN= 25.00 BGN</strong>;</li>
 </ul>
-<p>This example illustrates the other benefits of the &quot;Remainder&quot; instalment.
-When there are only fixed amounts in the previous instalments and there is s change of the trade terms in the Invoices, then this change is reflected in the last instalment.</p>
-<h2 id="create-payment-orders">Create Payment Orders</h2>
-<p>When we create Payment Orders by a Sales Order Payment Plan, first we have to determine the Amount (as described above) and the Due Dates for any of the plan instalments.
-Thereafter, are determined individual Sales Order and Invoices Amounts (those from which the total amount is formed).
-We make an additional breakdown of the instalments and the instalments are exhausted in the order of creation of the individual amounts.</p>
-<h3 id="example-4">Example 4:</h3>
+<p>This example illustrates the other benefits of the 'Remainder' instalment. When there are only fixed amounts in the previous instalments and there is change of the trade terms in the Invoices, then this change is reflected in the last instalment.</p>
+<h2 id="create-payment-orders">Create Payment orders</h2>
+<p>When we create Payment orders by a Sales order Payment plan, first we have to determine the Amount (as described above) and the Due dates for any of the plan instalments. Thereafter,  individual Sales order and Invoices Amounts (those from which the total amount is formed) are determined. We make an additional breakdown of the instalments and the instalments are exhausted in the order of creation of the individual amounts.</p>
+<p><strong>Example 4:</strong></p>
 <p>Let's use the situation of Example 1 and the payment plan of <strong>Example 3</strong>. We get the following breakdown:</p>
 <ul>
-<li><p><strong>15.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the advance amount of the Sales Order;</p>
-</li>
-<li><p><strong>12.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the amount of the first Invoice;</p>
-</li>
-<li><p><strong>3.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the amount of the second Invoice;</p>
-</li>
-<li><p><strong>38.00 BGN</strong> - from <strong>[instalment 2]</strong> and because of the amount of the second Invoice;</p>
-</li>
-<li><p><strong>2.00 BGN</strong> - from <strong>[instalment 2]</strong> and because of the remaining part amount of the Sales Order;</p>
-</li>
-<li><p><strong>25.00 BGN</strong> - from <strong>[instalment 3]</strong> and because of the remaining part amount of the Sales Order.</p>
-</li>
+<li><strong>15.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the advance amount of the Sales order;</li>
+<li><strong>12.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the amount of the first Invoice;</li>
+<li><strong>3.00 BGN</strong> - from <strong>[instalment 1]</strong> and because of the amount of the second Invoice;</li>
+<li><strong>38.00 BGN</strong> - from <strong>[instalment 2]</strong> and because of the amount of the second Invoice;</li>
+<li><strong>2.00 BGN</strong> - from <strong>[instalment 2]</strong> and because of the remaining part amount of the Sales order;</li>
+<li><strong>25.00 BGN</strong> - from <strong>[instalment 3]</strong> and because of the remaining part amount of the Sales order.</li>
 </ul>
-<p>More examples of Payment Orders generated by Sales Order Payment Plans there are in topic <a href="../../../../advanced/documents/transitional-documents.html">Transitional Documents</a>.</p>
+<p>More examples of Payment orders generated by Sales order Payment plans there are in topic ** <a href="https://docs.erp.net/tech/advanced/documents/transitional-documents.html">Transitional Documents</a>**.</p>
 <blockquote>
-<p>[!NOTE:]
-In the usual case, the Sales and Invoice Amounts will match the instalments Amounts, in fact, the resulting breakdown will match the payment plan (none of the instalments will be &quot;broken down&quot;).</p>
+<p>NOTE: In the usual case, the Sales and Invoice amounts will match the Instalments amounts, in fact, the resulting breakdown will match the payment plan (none of the instalments will be 'broken down').</p>
 </blockquote>
-<p>Then, for each <strong>Amount</strong> of the resulting breakdown can be created a separate Payment Order.
-Whether it will be created or not depends on the settings of the generation procedure.
-If in settings is indicated that the Payment Orders have to be created for the invoiced the amounts, then for the relevant Invoice Amounts (these are amounts of 12.00 BGN, 3.00 BGN and 38.00 BGN from the example above) are going to be created separate Payment Orders.
-Otherwise, no Payment Orders are going to be created for those amounts.
-The same is valid and for the non-invoiced amounts (amounts 15.00 BGN, 2.00 BGN and 25.00 BGN from above) with the only difference that the setting of the generation procedure has another name.</p>
-<p>The Due Start Date <strong>(Amount.DueStartDate)</strong> and the Due Date <strong>(Amount.DueDate)</strong> are the determined dates for the current instalment (from which the amount has been broken down) according to its method.
-The fields for reference invoice data (<strong>&quot;Invoice Amount&quot;, &quot;Referent invoice document type&quot;, &quot; Referent invoice number&quot;, etc. ...)</strong> are filled in depending on whether the amount of the breakdown has been calculated according to the Sales Order or Invoice Amount.</p>
-<p>The Party <strong>(Amount.Party)</strong> in the Payment Order is inherited from the Customer and the Location Party is inherited from the &quot;Ship to Customer&quot; field in the Sales Order.</p>
-<p>The instalment number <strong>(Amount.InstallmentNumber)</strong> in the Payment Order is filled in according to the corresponding field in the instalment from which the amount has been broken down.
-If the instalment is &quot;service&quot; (ie no payment plan has been entered in the Sales Order), then the field for the instalment number in the Payment Order remains blank.</p>
-<p>The payment account <strong>(Amount.PaymentAccount)</strong> and the payment type <strong>(Amount.PaymentType)</strong> in the Payment Order are inherited from the corresponding instalment from the plan. If they are not filled in in the instalment or the instalment is &quot;service&quot; then they are inherited from the Sales Order header.
-Additionally, if the payment type is not filled in both places but the amount is an Invoice Amount and payment type is filled in in the Invoice, then it is inherited from the Invoice.</p>
-<p>The document notes <strong>(Amount.DocumentNotes)</strong> in the Payment Order are a combination of the document notes of the Parent document and the notes of the corresponding in the plan.
-If both are filled in – then they are concatenated, separated by a space (or a new line). And if only one of them is filled in – it is the only one that is inherited.</p>
+<p>Then, for each <strong>Amount</strong> the resulting breakdown can create a separate Payment order. Whether it will be created or not depends on the settings of the generation procedure. If in the <strong>Settings</strong> it is indicated that the Payment orders have to be created for the invoiced amounts, then for the relevant Invoice amounts (these are amounts of 12.00 BGN, 3.00 BGN and 38.00 BGN from the example above)  separate Payment orders will be created. Otherwise, no Payment orders are going to be created for those amounts. The same is valid for the non-invoiced amounts (amounts 15.00 BGN, 2.00 BGN and 25.00 BGN from above) with the only difference that the setting of the generation procedure has another name.</p>
+<p>The Due start date (<strong>Amount.DueStartdate</strong>) and the Due date (<strong>Amount.Duedate</strong>)are the determined dates for the current instalment (from which the amount has been broken down) according to its method. The fields for reference invoice data (<strong>'Invoice amount', 'Referent invoice document type', ' Referent invoice number', etc. ...</strong>) are filled in depending on whether the amount of the breakdown has been calculated according to the Sales order or Invoice amount.</p>
+<p>The Party (<strong>Amount.Party</strong>) in the Payment order is inherited from the Customer and the Location party is inherited from the 'Ship to customer' field in the Sales order.</p>
+<p>The instalment number (<strong>Amount.InstallmentNumber</strong>) in the Payment order is filled in according to the corresponding field in the instalment from which the amount has been broken down. If the instalment is 'service' (i.e. no payment plan has been entered in the Sales order), then the field for the instalment number in the Payment order remains blank.</p>
+<p>The payment account (<strong>Amount.PaymentAccount</strong>) and the payment type (<strong>Amount.PaymentType</strong>) in the Payment order are inherited from the corresponding instalment from the plan. If they are not filled in in the instalment or the instalment is 'service' then they are inherited from the Sales order header. Additionally, if the payment type is not filled in both places but the amount is an Invoice amount and payment type is filled in in the Invoice, then it is inherited from the Invoice.</p>
+<p>The document notes (<strong>Amount.DocumentNotes</strong>) in the Payment order are a combination of the document notes of the Parent document and the notes of the corresponding in the plan. If both are filled in – then they are concatenated, separated by a space (or a new line). And if only one of them is filled in – it is the only one that is inherited.</p>
 </article>
           </div>
           

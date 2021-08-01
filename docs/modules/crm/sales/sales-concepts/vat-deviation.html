@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VAT Deviation | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VAT Deviation | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vat-deviation">VAT Deviation</h1>
+
+<p>VAT Deviation is a term used in Sales orders and Invoices. It is used in POS/store sales and their sales invoices. VAT deviation is the difference between the amount of the document that is obtained, when value added tax is calculated on the Total Amount of the document (which is the standard method of calculation in @name) and the amount that is obtained when value added tax is charged on each Unit price in the document separately (which is the case for Store sales).</p>
+<h2 id="usage">Usage</h2>
+<p>VAT Deviation is used in Store sales and their Sales Invoices when in those documents the VAT and/or Discounts are not applied directly to the line amounts. Then the total amount of payment that EnterpriseOne will calculate (value <strong>[Standard Amount]</strong>) may differ, usually by a few cents, from the amount the client actually pays (value <strong>[POS Amount]</strong>). In these cases, VAT deviation is calculated as an additional amount in the Sales order / Invoice that is paid by the customer and serves as an adjustment to the standard <a class="xref" href="../../../../includes/name.html">name</a> way of calculating a payment amount. The additional VAT deviation can be used for accounting purposes as well, in order to make a transition between the standard amounts and the POS amounts.</p>
+<h2 id="calculation">Calculation</h2>
+<p>If we denote the value of the two amounts of the document by <strong>[POS Amount]</strong> and <strong>[Standard Amount]</strong> then the formula would be:</p>
+<p><strong>[VAT Deviation] = [POS Amount] - [Standard Amount]</strong>.</p>
+<p>The difference between <strong>[POS Amount]</strong> and the <strong>[Standard amount]</strong> is that when calculating the <strong>[POS Amount]</strong> VAT is applied to the line amount for each line separately (taking into consideration the standard and specific discounts and then rounding off the result to a second decimal sign before calculating the amount of the line). Whereas while calculating <strong>[Standard Amount]</strong> the value added tax is applied to the entire amount of all lines (the rounding is performed on the total amount).</p>
+<p><strong>[POS Amount]</strong> and <strong>[Standard Amount]</strong> are calculated as follows:</p>
+<p><strong>[Standard Amount]</strong> = Round (<strong>[Line Amount_Line1]</strong> + <strong>[Line Amount_Line2]</strong> + ... + <strong>[Line Amount_LineN]</strong>) * (1 + <strong>[VAT Rate]</strong>))</p>
+<p><strong>[POS Amount] = [POS Line Amount_Line1] + [POS Line Amount_Line2] + ... + [POS Line Amount_LineN]</strong>,</p>
+<p>where <strong>Line1, Line2, ... LineN</strong> are all lines in the Sales / Invoice (the formula of the Line Amount is described it the topic <strong>Determine Line Amount in Sales Orders</strong>), and the POS Amount for each line is calculated as follows:</p>
+<p><strong>[POS Line Amount]</strong> = Round (<strong>[Quantity] * [POS Unit Price],</strong></p>
+<p><strong>[POS Unit Price]</strong> = Round (<strong>[Unit Price]</strong> * [1 - <strong>[Standard Discount]</strong>) * (1 - <strong>[Custom Discount]</strong>) * (1 + <strong>[VAT Rate]</strong>)).</p>
+<p>The rounding made to a second decimal place. It is also considered that all percentages - [VAT rate], [Standard Discount] and [Custom Discount] - are fractional numbers between 0 and 1.</p>
+<p><strong>Example:</strong></p>
+<p>Let's have a Sales Order with two lines: in the first one we have 7 pcs with a Unit Price - 7.37 (without VAT) and in the second one we have 0.354 kg with a Unit Price of 3.58 (VAT excluded). The VAT rate is 20% (i.e. [VAT rate] = 0.2).
+So we can calculate that:</p>
+<p><strong>[LineAmount_Line1]</strong> = Round (<strong>7 * 7.37</strong>) = <strong>51.59</strong>;</p>
+<p><strong>[LineAmount_Line2]</strong> = Round (<strong>0.354 * 3.58</strong>) = Round (<strong>1.26732</strong>) = <strong>1.27</strong>;</p>
+<p><strong>[Standard Amount]</strong> = Round ((<strong>51.59 + 1.27</strong>) * (<strong>1 + 0.2</strong>)) = Round (<strong>63.432</strong>) = <strong>63.43</strong>;</p>
+<p><strong>[POS Unit Price_Line1]</strong> = Round (<strong>7.37 * (1 + 0.2</strong>)) = Round (<strong>8.844</strong>) = <strong>8.84</strong>;</p>
+<p><strong>[POS Unit Price_Line2]</strong> = Round (<strong>3.58 * (1 + 0.2</strong>)) = Round (<strong>4.296</strong>) = <strong>4.30</strong>;</p>
+<p><strong>[POS Line Amount_Line1]</strong> = Round (<strong>7 * 8.84</strong>) = <strong>61.88</strong>;</p>
+<p><strong>[POS Line Amount_Line2]</strong> = Round (<strong>0.354 * 4.30</strong>) = Round (<strong>1.5222</strong>) = <strong>1.52</strong>;</p>
+<p><strong>[POS Amount]</strong> = <strong>61.88</strong> + <strong>1.52</strong> = <strong>63.40</strong>;</p>
+<p><strong>[VAT Deviation]</strong> = <strong>63.40</strong> - <strong>63.43</strong> = <strong>-0.03</strong>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/vat-deviation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Determine Unit price and Line amount in Invoice Orders | ERP.net Tech Docs </title>
+    <title> | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Determine Unit price and Line amount in Invoice Orders | ERP.net Tech Docs ">
+    <meta name="title" content=" | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,28 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="determine-unit-price-and-line-amount-in-invoice-orders">Determine Unit price and Line amount in Invoice Orders</h1>
 
-<p>The Invoice orders and their lines are created to generate Invoice documents with the aid of particular Sales order Lines are invoiced. For this reason, every Invoice order lines points to and fulfils exactly one Sales order line.</p>
-<p>In some cases though, when the parent document is a Shipment, for example, the Unit price and Line amount could not be copied directly from the parent document. They could not be copied from the Sales order as well, because the line might be broken down (by lots for example) during the goods issue and the Line amount will not be the same. Therefore those amounts must be calculated.</p>
-<h1 id="calculation">Calculation</h1>
-<p>Initially, when the Invoice order and its lines are created, the <strong>Quantity</strong> is copied from the parent documents line, the <strong>Unit price</strong> and the discounts are copied from the Parent Sales order line. The Quantity and Unit price values are used for the calculation of the <strong>Line amount</strong>.</p>
-<p><em><strong>The algorithm is as follows</strong></em>:</p>
-<p><strong>[LineAmount] = Round([Quantity] * [Unit price] * (1 - [Line Standard Discount Percent]) * (1 - [Line Custom Discount Percent]))</strong></p>
-<p>*The Line amount is rounded up to the second digit.</p>
-<p><em><strong>Example:</strong></em></p>
-<p><em>SalesOrderLine1</em>: Quantity = 3 PCS , UnitPrice = 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 5.78 EUR</p>
-<p><em>ShipmentLine1</em>: Quantity = 2 PCS</p>
-<p><em>ShipmentLine2</em>: Quantity = 1 PCS</p>
-<p><em>InvoiceOrderLine1</em>: Quantity = 2 PCS, UnitPrice
-= 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 2<em>2.5694</em>(0.75) = 3.8541 ~ 3.85 EUR</p>
-<p><em>InvoiceOrderLine 2</em>: Quantity = 1 PCS, UnitPrice = 2.5694 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, LineAmount = 1<em>2.5694</em>(0.75) = 1.92705  ~ 1.93 EUR</p>
-<p>Then when saving the document the Discrepancy System (for more information see <strong>Discrepancy System</strong>) initializes а depletion of the <strong>rounded Line amount</strong> which leads to a recalculation of the <strong>Unit price:</strong></p>
-<p><strong>[Unit price] = Round([LineAmount] / (1 - [Line Standard Discount Percent]) / (1 - [Line Custom Discount Percent]) / [Quantity] )</strong></p>
-<p>*The Unit price is rounded up to the fifth digit.</p>
-<p><em><strong>Example:</strong></em></p>
-<p><em>InvoiceOrderLine1</em>: Quantity = 2 PCS, LineAmount = 3.85 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, UnitPrice = 3.85 / 0.75 / 2  = 2.5666666... ~  2.56667 EUR</p>
-<p><em>InvoiceOrderLine2</em>: Quantity = 1 PCS, LineAmount = 1.93 EUR, LineStandardDiscountPercent = 0.00 %, LineCustomDiscountPercent = 25.00 %, UnitPrice = 1.93 / 0.75 / 1 = 2.57333333... ~  2.57333 EUR</p>
 </article>
           </div>
           
@@ -107,7 +86,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/procurement/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

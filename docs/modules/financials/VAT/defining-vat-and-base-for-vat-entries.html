@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Defining VAT and Base for VAT Entries | ERP.net Tech Docs </title>
+    <title>Defining VAT And Base For VAT Entries | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Defining VAT and Base for VAT Entries | ERP.net Tech Docs ">
+    <meta name="title" content="Defining VAT And Base For VAT Entries | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,91 +76,74 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="defining-vat-and-base-for-vat-entries">
-<h1 id="defining-vat-and-base-for-vat-entries">Defining VAT and Base for VAT Entries</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="defining-vat-and-base-for-vat-entries">Defining VAT And Base For VAT Entries</h1>
 
-<p>The current article describes how the numeric values are defined - base and VAT, which are saved in the VAT Entries when this document is created automatically from other documents in EnterpriseOne.
-Currently the documents which creates VAT Entries are:</p>
+<p>The current article describes how the numeric values are defined - base and VAT, which are saved in the VAT Entries when this document is created automatically from other documents in ERP.net. Currently, the documents which create VAT Entries are:</p>
 <ul>
-<li>Invoices (they create records in the VAT sales ledger entries);</li>
-<li>Transactions (they create records in the VAT sales ledger entries)</li>
+<li>Invoices (they create records in the VAT sales ledger entries</li>
+<li>Sales ledger entries);</li>
+<li>Transactions (they create records in the VAT sales ledger entries</li>
 </ul>
 <p>The calculations are performed in three stages:</p>
-<ol>
-<li>Defining which document rows participate in the calculation.</li>
-<li>Defining the deal types for each row.</li>
-<li>Defining the base and the VAT for each deal type.</li>
-</ol>
+<p>1.Defining which document rows participate in the calculation.
+2.Defining the deal types for each row.
+3.Defining the base and the VAT for each deal type.</p>
 <h2 id="1-defining-the-participating-rows">1. Defining The Participating Rows</h2>
-<p>Which rows participate in the calculation of the base and the VAT is defined for each document individually.
-The set of rows also depends on that if the document creates VAT sales or purchases ledger entries.</p>
-<p>In <strong>Invoices</strong> <em>all rows</em> participate in the calculation.</p>
-<p>In <strong>Purchase Invoices</strong> which create VAT purchases ledger entries <em>all rows</em> participate, too.</p>
-<p>In <strong>Purchase Invoices</strong> which create VAT sales ledger entries there are two cases:</p>
+<p>Which rows participate in the calculation of the base and the VAT is defined for each document individually. The set of rows also depends on that if the document creates VAT sales or purchases ledger entries.</p>
+<p>In <b>Invoices</b>, <i>all rows</i> participate in the calculation.</p>
+<p>In <b>Purchase Invoices</b> which create VAT purchases ledger entries,  <i>all rows</i> participate, too.</p>
+<p>In <b>Purchase Invoices</b> which create VAT sales ledger entries there are two cases:</p>
 <ul>
-<li>if the document header has value in <em>Sale Deal Type</em> field, then <em>all rows</em> participate in the calculation;</li>
-<li>if the document header no value in Sales Deal Type field, then <em>only the rows which has value</em> in the <em>Sale Line Deal Type</em> field (this is the same field but in the document rows).</li>
+<li>if the document header has value in the <i>Sale Deal Type</i> field, then <i>all rows</i> participate in the calculation;</li>
+<li>if the document header has no value in the Sales Deal Type field, then <i>only the rows which have value</i> in the <i>Sale Line Deal Type</i> field (this is the same field but in the document rows).</li>
 </ul>
-<p>In <strong>Transactions</strong> all rows participate in the calculation.</p>
+<p>In <b>Transactions</b>, all rows participate in the calculation.</p>
 <h2 id="2-defining-the-deal-types">2. Defining The Deal Types</h2>
-<p>For each row which participate in the calculation, a unique identification of the deal type of the row must be defined.
-If for any of the rows this definition is impossible, the calculation process is interrupted and error message is displayed.</p>
+<p>For each row that participates in the calculation, unique identification of the deal type of the row must be defined. If for any of the rows this definition is impossible, the calculation process is interrupted and an error message is displayed.</p>
 <p>The deal type definition for a row depends on the document which it is part of and on that if the document creates VAT sales or purchases ledger entries.</p>
-<p>For Invoice row - if the row has value in the <em>Line</em> <em>Deal Type</em> field, then the deal type is defined by this value. Otherwise, the value in the document header is used.</p>
-<p>For Purchase Invoice (which creates VAT purchases ledger entries) row - the principle is the same as in the Invoice rows - if the row has value in <em>Line Deal Type</em> field, the deal type is defined by this value, otherwise - the <em>Deal Type</em> from the document header is used.</p>
-<p>For Purchase Invoice (which creates VAT sales ledger entries) row - the same combination of corresponding fields from the rows and the document header is used, except the fields here are <em>Sales Line Deal Type</em> (in the rows) and <em>Sales Deal Type</em> (in the document header).</p>
-<p>In Transactions all rows use a specific property of the document flows - <em>Deal Type</em> field from table &quot;Transaction Entry Template&quot;.
-There are no specified fields in the document rows and header for the Deal Type.</p>
+<p>For Invoice row - if the row has value in the <i>Line Deal Type</i> field, then the deal type is defined by this value. Otherwise, the value in the document header is used.</p>
+<p>For Purchase Invoice (which creates VAT purchases ledger entries) row - the principle is the same as in the Invoice rows - if the row has value in <i>Line Deal Type</i> field, the deal type is defined by this value, otherwise - the <i>Deal Type</i> from the document header is used.</p>
+<p>For Purchase Invoice (which creates VAT sales ledger entries) row - the same combination of corresponding fields from the rows and the document header is used, except the fields here are <i>Sales Line Deal Type</i> (in the rows) and <i>Sales Deal Type</i> (in the document header).</p>
+<p>In Transactions, all rows use a specific property of the document flow - <i>Deal Type</i> field from table &quot;Transaction Entry Template&quot;. There are no specified fields in the document rows and header for the Deal Type.</p>
 <h2 id="3-defining-base-and-vat-for-each-deal-type">3. Defining Base And VAT For Each Deal Type</h2>
 <p>All bases and VAT amounts are calculated only in base currency.</p>
-<p>For all deal types, defined in stage 2, two values are calculated - [base] and [VAT].
-To calculate them for the current deal type the rows, which has such deal type defined in stage 2, are used.</p>
-<h3 id="example-1">Example 1:</h3>
+<p>For all deal types, defined in stage 2, two values are calculated - [base] and [VAT]. To calculate them for the current deal type the rows, which have such deal type defined in stage 2, are used.</p>
+<p><b><i>Example 1</i></b>:</p>
 <p>There is an Invoice with 7 rows:</p>
 <ul>
-<li>row #10, <em>Line Deal Type</em> = &quot;DealType1&quot;, LineAmount = 32 EUR;</li>
-<li>row #20, <em>Line Deal Type</em> = &quot;DealType2&quot;, LineAmount = 17 EUR;</li>
-<li>row #30, <em>Line Deal Type</em> = &quot;DealType3&quot;, LineAmount = 41 EUR;</li>
-<li>row #40, <em>Line Deal Type</em> = &quot;DealType1&quot;, LineAmount = 45 EUR;</li>
-<li>row #50, <em>Line Deal Type</em> = &quot;DealType3&quot;, LineAmount = 55 EUR;</li>
-<li>row #60, <em>Line Deal Type</em> = &quot;DealType3&quot;, LineAmount = 29 EUR;</li>
-<li>row #70, <em>Line Deal Type</em> = &quot;DealType1&quot;, LineAmount = 24 EUR.</li>
+<li>row #10, <i>Line Deal Type</i> = &quot;DealType1&quot;, LineAmount = 32 EUR;</li>
+<li>row #20,  <i>Line Deal Type</i> = &quot;DealType2&quot;, LineAmount = 17 EUR;</li>
+<li>row #30,  <i>Line Deal Type</i> = &quot;DealType3&quot;, LineAmount = 41 EUR;</li>
+<li>row #40,  <i>Line Deal Type</i> = &quot;DealType1&quot;, LineAmount = 45 EUR;</li>
+<li>row #50,  <i>Line Deal Type</i> = &quot;DealType3&quot;, LineAmount = 55 EUR;</li>
+<li>row #60,  <i>Line Deal Type</i> = &quot;DealType3&quot;, LineAmount = 29 EUR;</li>
+<li>row #70,  <i>Line Deal Type</i> = &quot;DealType1&quot;, LineAmount = 24 EUR.</li>
 </ul>
-<p>Thus, in the previous stage for the rows three deal types are defined - DealType1, DealTyope2 and DealType3.
-Thus, three bases and three VATs must be calculated - [DealType1:base], [DealType2:base], [DealType3:base], [DealType1:VAT], [DealType2:VAT], [DealType3:VAT].
-To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used.
-For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.</p>
-<p>The VAT additional amount is set in the Enterprise Company definition (see <a href="../../../advanced/documents/additional-amounts.html">Additional Amounts</a>) of the current document.
-Id the document does not contain the specified VAT additional amount (or there is no such in the EnterpriseOne company definition),the calculation is interrupted by error message.</p>
-<p>The distributed additional amount on the rows are used in the calculation of the VAT amounts.
-And to calculate the bases amounts - the distributed VAT additional amounts which are added to the base and also the line amounts (but only if in the VAT additional amount Base On Lines is true).</p>
-<p>The bases and VATs calculations are performed in three steps:</p>
+<p>Thus, in the previous stage for the rows three ideal types are defined - DealType1, DealTyope2 and DealType3. Thus, three bases and three VATs must be calculated - [DealType1:base], [DealType2:base], [DealType3:base], [DealType1:VAT], [DealType2:VAT], [DealType3:VAT]. To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used. For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.</p>
+<p>The VAT additional amount is set in the ERP.net definition (see <b>Additional Amounts</b>) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the ERP.net company definition), the calculation is interrupted by an error message.</p>
+<p>The distributed additional amount on the rows is used in the calculation of the VAT amounts. And to calculate the bases amounts - the distributed VAT additional amounts which are added to the base and also the line amounts (but only if in the VAT additional amount Base On Lines is true).</p>
+<p>The bases and VAT’s calculations are performed in three steps:</p>
 <ol>
 <li>The amounts for each deal type is formed.</li>
 <li>The rest of the VAT is processed.</li>
 <li>VAT, which is calculated/distributed incorrectly, is re-distributed.</li>
 </ol>
-<h2 id="step-1">Step 1</h2>
-<p>For each deal type two values are calculated - base and VAT. So a list of couples is formed, which has as much elements as deal types there are.
-This is processed only if the VAT in the document is distributed by the current document (it is possible to distribute on other documents - if so, this step is skipped; it is possible to distribute both on the current document and on different documents - then this step is performed).
-If the step is skipped, then the list is empty.</p>
-<p>So, for each deal type all rows, which has the specified deal type, are summed up and from each row the distributed VAT is extracted, the distributed amounts which are added to the Base also, and the line amounts, if the VAT is based on lines.
-The value of [VAT] for the current deal type is the sum of the distributed VAT for all rows with this deal type.
-And the value of [base] is the sum of the distributed amounts which are added to the VAT base and the line amounts (if the VAT is based on lines).</p>
-<h3 id="example-2">Example 2:</h3>
-<p>Let's use the Invoice from <strong>Example 1</strong>.
-There is an additional amount VAT, which is 32.32 EUR and it is based on the line amounts and second additional amount &quot;Loyal Customer Discount&quot;.
-The discount amount is 40 EUR and the distribution of both additional amounts is as follows:</p>
+<h3 id="step-1">Step 1</h3>
+<p>For each deal type, two values are calculated - base and VAT. So a list of couples is formed, which has as many elements as deal types there are. This is processed only if the VAT in the document is distributed by the current document (it is possible to distribute on other documents - if so, this step is skipped; it is possible to distribute both on the current document and different documents - then this step is performed). If the step is skipped, then the list is empty.</p>
+<p>So, for each deal type all rows, which have the specified deal type, are summed up and from each row, the distributed VAT is extracted, the distributed amounts which are added to the Base also, and the line amounts if the VAT is based on lines. The value of [VAT] for the current deal type is the sum of the distributed VAT for all rows with this deal type. And the value of [base] is the sum of the distributed amounts which are added to the VAT base and the line amounts (if the VAT is based on lines).</p>
+<p><b><i>Example 2</i></b>:</p>
+<p>Let's use the Invoice from <b><i>Example 1</i></b>. There is an additional amount VAT, which is 32.32 EUR and it is based on the line amounts and the second additional amount &quot;Loyal Customer Discount&quot;. The discount amount is 40 EUR and the distribution of both additional amounts is as follows:</p>
 <ul>
 <li>row #10, distributed discount -7 EUR, distributed VAT 5 EUR;</li>
 <li>row #20, distributed discount -1 EUR, distributed VAT 1.12 EUR;</li>
 <li>row #30, distributed discount -14 EUR, distributed VAT 0 EUR;</li>
-<li>row #40, distributed discount -0 EUR, distributed VAT 9 EUR;</li>
+<li>row #40, distributed discount 0 EUR, distributed VAT 9 EUR;</li>
 <li>row #50, distributed discount -11 EUR, distributed VAT 0 EUR;</li>
 <li>row #60, distributed discount -3 EUR, distributed VAT 5.2 EUR;</li>
 <li>row #70, distributed discount -4 EUR, distributed VAT 4 EUR.</li>
 </ul>
-<p>Also the VAT amount is distributed not only on the current document but on other document row which has no other additional amounts and line amount of 40 EUR and the distributed VAT is 8 EUR.</p>
+<p>Also, the VAT amount is distributed not only on the current document but on another document row which has no other additional amounts and line amount of 40 EUR and the distributed VAT is 8 EUR.</p>
 <p>Then the following calculations for base and VAT for the different deal types of the current document are received:</p>
 <p>[DealType1: base] = 32 EUR + -7 EUR + 45 EUR + 0 EUR + 24 EUR + -4 EUR = 90 EUR;</p>
 <p>[DealType2: base] = 17 EUR + -1 EUR = 16 EUR;</p>
@@ -168,30 +151,24 @@ The discount amount is 40 EUR and the distribution of both additional amounts is
 <p>[DealType1: VAT] = 5 EUR + 9 EUR + 4 EUR = 18 EUR;</p>
 <p>[DealType2: VAT] = 1.12 EUR;</p>
 <p>[DealType3: VAT] = 0 EUR + 0 EUR + 5.2 EUR = 5.2 EUR;</p>
-<h2 id="step-2">Step 2</h2>
+<h3 id="step-2">Step 2</h3>
 <p>If any of the following is true:</p>
 <ul>
 <li>the list of couples of values from Step 1 is empty (this is possible if the VAT is not distributed on the current document);</li>
 <li>or the VAT is distributed on other documents also or either not the whole VAT is used when forming the VAT amounts in step 1 or not the whole VAT base is used when forming the bases.</li>
 </ul>
-<p>Then the creation of a new couple of values is necessary - base and VAT.
-The deal type for this couple is extracted from the deal type field in the document header (and if the document is Transaction - then it is extracted from the document flow).
-In the base and VAT for this deal type the remaining values from the base and VAT, which are not distributed in Step 1 from the other deal types, are recorded.</p>
-<h3 id="example-3">Example 3:</h3>
-<p>Lets use the data from <strong>Example 2</strong> and the Invoice has a deal type in its header - DealType4.
-The VAT in the document is 32.32 EUR, and [DealType1: VAT] + [DealType2: VAT] + [DealType3: VAT] = 24.32 EUR. So there are 8 EUR remaining.</p>
-<p>Also the total VAT base (from both documents) is 243 EUR, and [DealType1: base] + [DealType2: base] + [DealType3: base] = 203 EUR.
-So the remaining base is 40 EUR.</p>
+<p>then the creation of a new couple of values is necessary - base and VAT. The deal type for this couple is extracted from the deal type field in the document header (and if the document is Transaction - then it is extracted from the document flow). In the base and VAT for this deal type the remaining values from the base and VAT, which are not distributed in Step 1 from the other deal types, are recorded.</p>
+<p><b><i>Example 3</i></b>:</p>
+<p>Let's use the data from <b><i>Example 2</i></b> and the Invoice has a deal type in its header - DealType4. The VAT in the document is 32.32 EUR, and [DealType1: VAT] + [DealType2: VAT] + [DealType3: VAT] = 24.32 EUR. So there are 8 EUR remaining.</p>
+<p>Also the total VAT base (from both documents) is 243 EUR, and [DealType1: base] + [DealType2: base] + [DealType3: base] = 203 EUR. So the remaining base is 40 EUR.</p>
 <p>So a new couple of values is formed for DealType4:</p>
 <p>[DealType4: base] = 40 EUR</p>
 <p>[DealType4: VAT] = 8 EUR</p>
-<h2 id="step-3">Step 3</h2>
-<p>At the end, there is a newly formed list of couples of values - base and VAT - for a number of deal types.
-If one of those deal types does not support VAT and its calculated VAT in the list is not a zero, then a need of correction of those VATs and bases calculated by now, appears.</p>
-<p>The correction is performed by resetting the VATs of all deal types, which VAT is distributed incorrectly in the documents, and these VATs are distributed amongst the other deal types, proportionally to their bases (if after this re-distribution there is still remaining amount because of roundings, then this small amount is distributed to the last deal type which supports VAT).</p>
-<h3 id="example-4">Example 4:</h3>
-<p>Lets use the data from the previous examples and DealType1, DealType2 and DealType4 support VAT, and DealType3 does not.
-So there is incorrectly distributed VAT of [DealType3:VAT] = 5.2 EUR. So the 5.25 EUR must be relocated to the rest of the deal types - the following correction is achieved:</p>
+<h3 id="step-3">Step 3</h3>
+<p>In the end, there is a newly formed list of couples of values - base and VAT - for several deal types. If one of those deal types does not support VAT and its calculated VAT in the list is not a zero, then a need for correction of those VATs and bases calculated by now appears.</p>
+<p>The correction is performed by resetting the VATs of all deal types, which VAT is distributed incorrectly in the documents, and these VATs are distributed amongst the other deal types, proportionally to their bases (if after this redistribution there is remaining amount because of roundings, then this small amount is distributed to the last deal type which supports VAT).</p>
+<p><b><i>Example 4</i></b>:</p>
+<p>Let’s use the data from the previous examples and DealType1, DealType2 and DealType4 support VAT, and DealType3 does not. So there is incorrectly distributed VAT of [DealType3:VAT] = 5.2 EUR. So the 5.25 EUR must be relocated to the rest of the deal types - the following correction is achieved:</p>
 <p>[DealType3: VAT] = 0 EUR;</p>
 <p>[DealType1: VAT] = 18 EUR + 5.2 EUR * 90 EUR / (90 EUR + 16 EUR + 40 EUR) = 21.21 EUR;</p>
 <p>[DealType2: VAT] = 1.12 EUR + 5.2 EUR * 16 EUR / (90 EUR + 16 EUR + 40 EUR) = 1.69 EUR;</p>

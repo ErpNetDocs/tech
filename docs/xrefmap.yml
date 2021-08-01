@@ -163,12 +163,6 @@ references:
 - uid: cao-WHERE
   name: WHERE - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/where.html
-- uid: defining-vat-and-base-for-vat-entries
-  name: Defining VAT and Base for VAT Entries
-  href: modules/financials/VAT/defining-vat-and-base-for-vat-entries.html
-- uid: determine-unit-price-and-line-amount-in-invoice-orders
-  name: Determine Unit Price and Line Amount in Invoice Orders
-  href: modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.html
 - uid: document-flow
   name: Document Flow
   href: advanced/documents/document-flow.html
@@ -205,12 +199,6 @@ references:
 - uid: non-agreed-services-and-materials
   name: Non Agreed Services And Materials
   href: modules/applications/service/non-agreed-services-and-materials.html
-- uid: sales-order-payment-plan
-  name: Sales Order Payment Plan
-  href: modules/crm/sales/default-sales-order-payment-plans/sales-order-payment-plan.html
-- uid: sales-order-row-types
-  name: Sales Order Row Types
-  href: modules/crm/sales/sales-concepts/sales-order-row-types.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html

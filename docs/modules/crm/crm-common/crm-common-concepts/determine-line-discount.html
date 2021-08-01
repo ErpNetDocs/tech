@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sales Order Row Types | ERP.net Tech Docs </title>
+    <title>Determine Line Discount | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sales Order Row Types | ERP.net Tech Docs ">
+    <meta name="title" content="Determine Line Discount | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,32 +77,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="sales-order-row-types">Sales Order Row Types</h1>
+<h1 id="determine-line-discount">Determine Line Discount</h1>
 
-<p>The classification of the Sales Order rows describes three main row types - Normal Sale, Sales Return and Neutral operation. The row type is important for some generation procedures from Sales Order.</p>
-<h2 id="types">Types</h2>
-<p>The row type is defined by the signs of the quantity value and the amount in it. These criteria are chosen because it is most common and natural. For example, it is possible to define if a Sales Order row is for stock return or not by the values in the Return For Sales Order Line field in the lines or the header field - ReturnForSalesOrder. But it is also possible for the user to enter a Sales Order for stock to directly return negative values in the quantity and/or amount fields without using tools such as ReturnForSalesOrderLine or ReturnForSalesOrder. Thus, the signs of the values in the Quantity and Line Amount fields are the most common and natural criterion to determine the row type.</p>
-<p>Thus, according to the signs of the quantity and the amount, there are three main types of Sales Order rows:</p>
+<p>When trying to determine a Line Discount, we have to specify some required conditions:</p>
 <ul>
-<li><em><strong>normal sale</strong></em> - rows with quantity &gt; 0 or amount &gt; 0;</li>
-<li><em><strong>sales return</strong></em> - rows with quantity &lt; 0 or amount &lt; 0;</li>
-<li><em><strong>neutral operation</strong></em> - rows with quantity == 0 and amount == 0.</li>
+<li><strong>Product</strong></li>
+<li><strong>Date</strong></li>
+<li><strong>Quantity</strong></li>
+<li><strong>List of Customers</strong></li>
 </ul>
-<h2 id="why-defining-row-type-is-important">Why Defining Row Type Is Important?</h2>
-<p>The types, listed above, are used in the generation procedures of Store Orders and Shipment Orders from Sales Orders and the row type is important.</p>
-<p>For example, if the row type is sales return, then if the product is shippable or not doesn’t matter - the Store Orders and Invoicing Orders are generated always directly from the Sales Order. If the row type is a normal sale - then if the product is shippable or not is important and it defines if Shipment Order has to be created or Store Order and Invoice Order directly from the Sales Order.</p>
-<p>The rows with neutral operation do not participate in these generation procedures as for a row with zero quantity and zero amount there is no point of creating nor Store Orders, nor Invoice Orders.</p>
-<h2 id="row-data-validations-and-rules">Row Data Validations And Rules</h2>
-<p>To avoid ambiguity when defining the type of a Sales Order row, certain restrictions are required when entering data in the Sales Orders. For example, quantity &lt; 0 is not allowed with amount &gt; 0 in one row as this row would be normal sale and return sale at the same time, which would lead to double Store Orders and Invoice Orders generation for the current row.</p>
-<p>These are all restrictions in the data in the Sales Orders, related to the row types definition:</p>
+<p>and some not required:</p>
 <ul>
-<li>the quantity and the amount in the row must be with the same signs (for example, one is &gt; 0 and the second is &lt; 0);</li>
-<li>if the quantity and the amount in the row are positive then the ReturnForSalesOrderLine, ReturnForInvoiceLine and HistoricalUnitCost must be null; the header fields &quot;ReturnForSalesOrder and ReturnForInvoice must be also null;</li>
-<li>if one of the quantities or the amount in the row is negative and the product is not stocked then the HistoricUnitCost must be null;</li>
-<li>if one of the quantities or the amount in the row is negative and the product is stocked, then exactly one of the fields must have value - ReturnForSalesOrderLine and HistoricUnitCost.</li>
+<li><strong>ERP.net</strong> - Only in the specified ERP.net</li>
+<li><strong>ERP.net Location</strong> - Only in the specified ERP.net location</li>
+<li><strong>Price List</strong> - self-explanatory</li>
+<li><strong>Distribution Channel</strong> - self-explanatory</li>
+<li><strong>Current Line Discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
 </ul>
-<p>These restrictions are also required because they maintain the overall validity of the data in the Sales Order according to the business logic of the fields being part of the constraints.</p>
-<p>Validation is not only applied when the data is entered in the row, they may also appear and during the execution of a generation procedure.</p>
+<p>ERP.net filters all discounts that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to <strong>all</strong> customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, ERP.net, Price List, etc.</p>
+<p>Generally, the algorithm is the following:</p>
+<ul>
+<li>ERP.net filters the discounts.</li>
+<li>Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).</li>
+<li>If a Current Line Discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</li>
+</ul>
+<p>So, after the selection process, one and only one discount is selected and applied to the document line.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<p>-Discount From Date is empty or &lt;= required Date</p>
+<ul>
+<li>Discount To Date is empty or &gt;= required Date</li>
+<li>Discount Product is empty or equal to required Product</li>
+<li>Discount Min Quantity is empty or &lt;= required Quantity</li>
+<li>Discount Max Quantity is empty or &gt;= required Quantity</li>
+<li>Discount Customer is empty or it is in the required list of customers</li>
+<li>Discount Product Group is empty, the same as the product group or parent of the product group</li>
+<li>Discount Distribution Channel is empty or equal to required Distribution channel</li>
+<li>Discount Price List is empty or valid for the required Date</li>
+<li>The discount Target group is empty or at least one of the customers is a member of the target group</li>
+<li>Discount Customer type is empty or it is in the list of customer types, derived from the required customer’s list</li>
+</ul>
 </article>
           </div>
           
@@ -111,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/sales-order-row-types.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/crm-common/crm-common-concepts/determine-line-discount.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
