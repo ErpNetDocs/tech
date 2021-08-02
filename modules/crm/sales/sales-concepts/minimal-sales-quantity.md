@@ -9,11 +9,11 @@ If it is set in the product definition, the restriction takes place in every Sal
  
 If it is set in the Product Distribution channel, then it validates the Sales Order release, only if the Distribution channel is selected in the document header. If there are two Minimal Sales Quantities for a product - one in its definition and one set by the Product distribution channel, then the more restrictive one is taken into account.
  
-Note: The Minimal Quantity constraint does not take effect when the user enters a Sales Return.
+>Note: The Minimal Quantity constraint does not take effect when the user enters a Sales Return.
  
 The restriction is applied on the Quantity Base field in the Sales Order Lines. When such restriction exists it is applied to the calculated quantity in the base measurement unit. 
  
-The restriction also calculates the total Quantity Base of the product in the Sales Order Lines, meaning that if the user enters the product in more than one line and the total quantity base covers the Minimal Sales Quantity Base, then the user would be able to release the Sales Order.
+>The restriction also calculates the total Quantity Base of the product in the Sales Order Lines, meaning that if the user enters the product in more than one line and the total quantity base covers the Minimal Sales Quantity Base, then the user would be able to release the Sales Order.
  
 ***Example 1***:
  
