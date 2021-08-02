@@ -86,7 +86,9 @@
 </ol>
 <p>If it is set in the product definition, the restriction takes place in every Sales Order.</p>
 <p>If it is set in the Product Distribution channel, then it validates the Sales Order release, only if the Distribution channel is selected in the document header. If there are two Minimal Sales Prices for a product - one in its definition and one set by the Product distribution channel, then the more restrictive price is taken into account.</p>
+<blockquote>
 <p>Note: The Minimal Price constraint does not take effect when the user enters a Sales Return.</p>
+</blockquote>
 <p>The restriction is not directly applied to the Unit Price in the Sales Order. As the Unit Price in the Sales Order lines does not reflect discounts, the restriction calculates the final unit price through the line amount and is applied to the calculated results.</p>
 <p><em><strong>Example 1</strong></em>:</p>
 <p><strong>Product A</strong> has a Minimal Sales Price of <strong>9.00 EUR</strong>. The product Costing Currency is EUR and Standard Lot Size Base is 1 PCS.</p>

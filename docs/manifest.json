@@ -318,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/check-if-quantity-is-whole-number.html",
-          "hash": "vc940mJks6+4TBqbx4d+OQ=="
+          "hash": "9rAyLHvwdCWCFyGcsvysgA=="
         }
       },
       "is_incremental": false,
@@ -2074,6 +2074,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/promotional-packages/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/promotional-packages/index.html",
+          "hash": "0Ci6DIHfy1W/FBqvLFalpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.md",
       "output": {
         ".html": {
@@ -2138,7 +2150,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/minimal-sales-price.html",
-          "hash": "PYiD9l30lTG4uJSoij5DvA=="
+          "hash": "HkIiSoJBn15wsBailKLdwg=="
         }
       },
       "is_incremental": false,
@@ -2150,7 +2162,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/minimal-sales-quantity.html",
-          "hash": "mhyMwT0oUxkvhtrA77VVkA=="
+          "hash": "NAQw7dLZKzsCmInPZbvRdw=="
         }
       },
       "is_incremental": false,
@@ -2282,7 +2294,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/payments/advance-amounts-determination/advance-amount-calculation-algorithm.html",
-          "hash": "jeF+/3SxdhyL/vpMtC9flQ=="
+          "hash": "N24e2WraZW3nxW5hbP54jQ=="
         }
       },
       "is_incremental": false,
