@@ -1,4 +1,4 @@
-# Calculate distribution function
+# Calculate Distribution Function
 The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.
 ## How does it work?
 The function performs the following steps:
