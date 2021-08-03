@@ -54,7 +54,7 @@ So, after the selection process, one and only one price is selected and applied 
 
 The following additional conditional attributes further filter down the prices:
 
-- **@@name** - for sales only in the specified @@name
+- **Enterprise Company** - for sales only in the specified @@name
 - **Min Quantity** - for sales quantities above (or equal to) the specified
 - **Max Quantity** - for sales quantities below (or equal to) the specified
 - **Target Group** - for customers in the target group
