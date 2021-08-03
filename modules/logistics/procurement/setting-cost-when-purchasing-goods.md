@@ -20,8 +20,12 @@ The cost is set only for the products which are received by the **Quantity Trans
 The *Unit Cost* for one row in the **Receiving Order** is defined as follows:
  
 1. All rows of released, non-voided **Purchase Invoices** for the current row from the **Receiving Order** are summed up. If there are no such rows, then the unit cost is **0**. 
-2. For each row from p.1, an end cost is defined: **[End Cost]** = **[Line Amount]** + **[sum of the distributed amounts for the current row]**.
-**Note**: Only **Additional Amounts** that are marked with Add To Line as True. Also, the additional amount may be entered by other **Purchase Invoices** (for example - transport purchase invoice).
+2. For each row from p.1,an end cost is defined: 
+
+**[End Cost]** = **[Line Amount]** + **[sum of the distributed amounts for the current row]**. 
+
+**Note**: Only [Additional Amounts](https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md) that are marked with Add To Line as True. Also, the additional amount may be entered by other **Purchase Invoices** (for example - transport purchase invoice).
+
 3. At the end the **[End Cost]** for all rows from p.1 are summed up, the quantities for those rows are summed up and the end cost is divided by those quantities. If the quantities are **0** then the unit cost is also **0**. 
 Not: When summing up all end costs have to be converted to the currency of the **Receiving Order**, and all quantities have to be converted to the measurement unit of the **Receiving Order** row.
 
