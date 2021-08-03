@@ -33,5 +33,5 @@ These are all restrictions in the data in the Sales Orders, related to the row t
 
 These restrictions are also required because they maintain the overall validity of the data in the Sales Order according to the business logic of the fields being part of the constraints.
  
-Validation is not only applied when the data is entered in the row, they may also appear and during the execution of a generation procedure.
+Validation is not only applied when the data is entered in the row, it may also appear and during the execution of a generation procedure.
 
