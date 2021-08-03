@@ -3,6 +3,7 @@
 ## The algorithm
 
 The algorithm for the determination of the Payment Account in the Sales Order is the following:
+
 SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):
 
 1. If the ShipToCustomer.DefaultPaymentType = SalesOrder.PaymentType AND the ShipToCustomer.PaymentAccount is not null => it is taken.
