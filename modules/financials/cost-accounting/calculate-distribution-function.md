@@ -3,12 +3,12 @@ The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/
 ## How does it work?
 The function performs the following steps:
 1. Calculate the sum of the weight coefficients of all outputs.
-2. For each output and for each cost type the distributed amount is calculated by the following algorithm: at first, it is assumed that a proportion of the distributed cost amounts is defined, so the distribution is executed. If we have **n** outputs which we have to distribute cost amounts on, for every row (a row is a combination of output and cost type) a weight is defined - **[k1]**, **[k2]** ... **[kn]**. So if the amount of the coefficients is  **[S]** (i.e. **[S]** = **[k1]** +**[k2]** + ... + **[kn]**) and this amount is not equal to 0, than the **i**-row the proportion is **[ki]/[S]**:
-      - [distribution to row **i**] = ROUND([cost type amount] **[ki] / [S]**, 2);<br/>
+2. For each output and for each cost type the distributed amount is calculated by the following algorithm: at first, it is assumed that a proportion of the distributed cost amounts is defined, so the distribution is executed. If we have **n** outputs which we have to distribute cost amounts on, for every row (a row is a combination of output and cost type) a weight is defined - **[k1]**, **[k2]** ... **[kn]**. So if the amount of the coefficients is  **[S]** (i.e. **[S]** = **[k<sub>1</sub>]** +**[k<sub>2</sub>]** + ... + **[k<sub>n</sub>]**) and this amount is not equal to 0, than the **i**-row the proportion is **[k<sub>i</sub>]/[S]**:
+      - [distribution to row **i**] = ROUND([cost type amount] **[k<sub>i</sub>] / [S]**, 2);<br/>
 This is a standard distribution algorithm. Specific cases are when **[S]** is **0**. Usually, in those cases the cost amount is distributed evenly through the row, using the following formula:
       - [row **i** distribution] = ROUND([cost type amount] / [rows count], 2);<br/>
 Sometimes the cost amount may not be able to be distributed exactly through the rows. In these cases, an attempt is made to allocate the balance through the rows which the amount is distributed to. Normally, it is impossible to distribute an equal part of the balance to all rows (otherwise there will be no balance). So the balance is distributed by the first several rows starting with the row with the largest amount. Also, in this balance distribution we cannot distribute less than:
-           - [minimal balance distribution on a row] = 1 / 10[Round Scale]. (the round scale for line amounts is always 2 (currently), so we cannot distribute cost amount of less than 1/102 = 0.01)
+           - [minimal balance distribution on a row] = 1 / 10<sup>[Round Scale]</sup>. (the round scale for line amounts is always 2 (currently), so we cannot distribute cost amount of less than 1/10<sup>2</sup> = 0.01)
   
 3. In the Results table the results of the step 2 are saved and for each combination of Output and Cost Type a new row is added.
  
@@ -29,7 +29,7 @@ So **[S]** in the example is: 15.00 + 13.00 + 10.11 + -0.50 + 29.99 = **67.60**.
 
 When the Calculate Distribution function is started, the Results table is filled with the following data:
 
-- OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **22.19**; **DistributedAmountBase** = **ROUND([kOutput[LineNo=10]] / [S] * [Cost Type Amount] ; 2)** = ROUND(15.00 / 67.60 * 100; 2) = 22.19;
+- OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **22.19**; **DistributedAmountBase** = **ROUND([k<sub>Output[LineNo=10]</sub>] / [S] * [Cost Type Amount] ; 2)** = ROUND(15.00 / 67.60 * 100; 2) = 22.19;
 - OutputLineNo = **20**; Cost Type: **CT1**; Distributed Amount Base: **19.23**; Calculation steps: **DistributedAmountBase** =  ROUND(13.00 / 67.60 * 100 ; 2) = 19.23;
 - OutputLineNo = **30**; Cost Type: **CT1**; Distributed Amount Base: **14.96**; Calculation steps: **DistributedAmountBase** =  ROUND(10.11 / 67.60 * 100 ; 2) = 14.96;
 - OutputLineNo = **40**; Cost Type: **CT1**; Distributed Amount Base: **-0.74**; Calculation steps: **DistributedAmountBase** =  ROUND(-0.50 / 67.60 * 100 ; 2) = -1.09;
@@ -56,13 +56,13 @@ So the **[S]** in the examples is 15.11 + 0 + 10 + 20 + 15.11 = **60.22**.
 
 When the Calculate Distribution function is started, the Results table is filled with the following data:
 
-- OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **25.32**; **DistributedAmountBase** = **ROUND([kOutput[LineNo=10]] / [S] * [Cost Type Amount] ; 2)** = ROUND(15.11 / 66.22 * 100.93; 2) = 25.32;
+- OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **25.32**; **DistributedAmountBase** = **ROUND([k<sub>Output[LineNo=10]</sub>] / [S] * [Cost Type Amount] ; 2)** = ROUND(15.11 / 66.22 * 100.93; 2) = 25.32;
 - OutputLineNo = **20**; Cost Type: **CT1**; Distributed Amount Base: **0.00**; Calculation steps: **DistributedAmountBase** =  ROUND(0.00 / 66.22 * 100.93 ; 2) = 0.00;
 - OutputLineNo = **30**; Cost Type: **CT1**; Distributed Amount Base: **16.76**; Calculation steps: **DistributedAmountBase** =  ROUND(10.00 / 66.22 * 100.93 ; 2) = 16.76;
 - OutputLineNo = **40**; Cost Type: **CT1**; Distributed Amount Base: **33.52**; Calculation steps: **DistributedAmountBase** =  ROUND(20.00 / 66.22 * 100.93 ; 2) = 33.52;
 - OutputLineNo = **50**; Cost Type: **CT1**; Distributed Amount Base: **25.32**; Calculation steps: **DistributedAmountBase** =  ROUND(15.11 / 66.22 * 100.93 ; 2) = 25.32;
 
-Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10[2] =0.01**. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output** [LineNo=40]**. The final Results now would be as follows:
+Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10<sup>[2]</sup> =0.01**. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output** [LineNo=40]**. The final Results now would be as follows:
 
 - OutputLineNo = **10**; Cost Type: ** CT1**; Distributed Amount Base: **25.32**;
 - OutputLineNo = **20**; Cost Type: ** CT1**; Distributed Amount Base: **0.00**;
