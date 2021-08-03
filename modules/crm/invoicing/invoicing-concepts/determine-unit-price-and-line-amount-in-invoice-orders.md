@@ -11,7 +11,7 @@ Initially, when the Invoice order and its lines are created, the **Quantity** is
  
 ***The algorithm is as follows***:
  
-**[LineAmount] = Round([Quantity] * [Unit price] * (1 - [Line Standard Discount Percent]) * (1 - [Line Custom Discount Percent]))**
+**[LineAmount] =** Round(**[Quantity]** * **[Unit price]** * (1 - **[Line Standard Discount Percent]**) * (1 - **[Line Custom Discount Percent]**))
  
 *The Line amount is rounded up to the second digit.
  
@@ -31,7 +31,7 @@ Initially, when the Invoice order and its lines are created, the **Quantity** is
  
 Then when saving the document the Discrepancy System (for more information see **Discrepancy System**) initializes а depletion of the **rounded Line amount** which leads to a recalculation of the **Unit price:**
  
-**[Unit price] = Round([LineAmount] / (1 - [Line Standard Discount Percent]) / (1 - [Line Custom Discount Percent]) / [Quantity] )**
+**[Unit price] =** Round(**[LineAmount]** / (1 - **[Line Standard Discount Percent]**) / (1 - **[Line Custom Discount Percent]**) / **[Quantity]** )
  
  *The Unit price is rounded up to the fifth digit.
  
