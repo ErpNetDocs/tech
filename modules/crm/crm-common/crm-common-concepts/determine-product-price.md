@@ -12,8 +12,8 @@ and some not required:
  
 - **Customer**
 - **Ship To Customer**
-- **@@name** - Only in the specified @@name
-- **@@name Location** - Only in the specified @@name location
+- **Enterprise Company** - Only in the specified enterprised company
+- **Enterprise Company Location** - Only in the specified enterprise company location
 - **Distribution Channel** - self-explanatory
 - **Price List** - self-explanatory
 - **Current Product Price** - The current product price should not be changed if it satisfies the conditions and has the same priority as the determined top price.
@@ -38,8 +38,8 @@ So, after the selection process, one and only one product price is selected and 
 - Ship To Customer is empty or it is equal to the required Ship To Customer
 - Min Quantity is empty or <= required Quantity
 - Max Quantity is empty or >= required Quantity
-- @@name is empty or equal to required @@name
-- @@name Location is empty or equal to required @@name Location
+- Enterprise Company is empty or equal to required Enterprise Company
+- Enterprise Company Location is empty or equal to required Enterprise Company Location
 - Distribution Channel is empty or equal to the required Distribution channel 
 - Price List is empty or valid for the required Date
 - The target group is empty or the ship to the customer or the customer is a member of the target group
