@@ -16,5 +16,7 @@ In the row there is Quantity **27 PCS** and Unit Price **0.15472 EUR**, the disc
 
 **[Line Amount]** = Round( **27 * 0.15472** * (1 - **0.19**) * (1 - **0.07**)) = Round(**1.08304**) = **1.08**.
  
-There are also other row amount types which meaning and calculation are different than those of amount saved in the field LineAmount. For more information see **[Amount To Pay](https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md)**.
+There are also other row amount types which meaning and calculation are different than those of amount saved in the field LineAmount. 
+
+For more information, see **[Amount To Pay](https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md)**.
 
