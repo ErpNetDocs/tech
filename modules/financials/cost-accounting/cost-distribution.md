@@ -1,4 +1,4 @@
-# Cost distribution
+# Cost Distribution
 The Cost distribution document is used to distribute costs. The user may enter one or more cost types and their amounts. The cost distribution may be performed manually or automatically by using the integrated functions. 
 ## How to use the document?
 At first, the user has to enter the dates and (if necessary) the store, where they are distributing costs. The period of the cost distribution is specified in the Cost distribution table by the following fields:
