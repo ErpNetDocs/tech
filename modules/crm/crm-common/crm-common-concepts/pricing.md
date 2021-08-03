@@ -21,7 +21,7 @@ Additionally, Product A can have a special price for some customers:
 
 Also, there might be a discount campaign:
 
-- 42.00 USD for everyone, from 1/1/2016 till 2/2/2016
+- 42.00 USD for everyone, from 1/1/2021 till 2/2/2021
 
 ## Entering product prices in @@name
 
