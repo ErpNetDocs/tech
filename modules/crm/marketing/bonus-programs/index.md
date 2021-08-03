@@ -11,7 +11,7 @@ Conditions for the particular *bonus programs* are set in the ‘condition’ fi
 
 
 |Bonus program conditions: |Description:
-|:----:|:----|    
+|:----|:----|    
 |Active|That’s the main condition if the bonus must be applied. The other conditions are verified only for active bonus programs.
 |Priority|from 1 (the lowest) to 5 (the highest) of the bonus program compared to the other bonus programs.
 |Condition Customer|Specifies that the bonus program must be applied only for the customer that is set in the field. If ‘Condition Customer = NULL’, then it’s applied for all customers.
@@ -32,17 +32,18 @@ Conditions for the particular *bonus programs* are set in the ‘condition’ fi
 |Condition Distribution Channel Filter XML |The bonus only applies when the distribution channel in the document meets the specified criteria.
 
 
-NOTE:  When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products defined in the bonus program. For example, if a *bonus program* is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the *bonus program* will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B …).
+> NOTE:  When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products defined in the bonus program. For example, if a *bonus program* is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the *bonus program* will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B …).
 
 
 **Currently, two types of bonuses are supported:**
 - Product – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the *bonus program* fields 'For Each' and 'Bonus Product Quantity'. For Example: if there is a bonus program with a product Pencil, which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'. In the line field 'Bonus program' there is information about the name of the bonus program that is currently applied .  
 - Discount – Calculates a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, standard discount applies, which is defined in the *bonus program*. Bonus programs do not apply to lines with zero quantity.
+
 A bonus type is required for each *bonus program*. Both bonus types can not be used simultaneously.
 
 
 |Data fields:|Description:
-|:----:|:----|
+|:----|:----|
 |Bonus Action|Specifies the type of the bonus – a product or a discount.
 |Bonus Product|The product that the customer receives for free, if the conditions of the bonus program are met. The field is required when there is value in 'Bonus Product'.
 |Bonus Product Quantity|The quantity of the bonus product. The field is required if there is a value in 'Bonus Product'.
