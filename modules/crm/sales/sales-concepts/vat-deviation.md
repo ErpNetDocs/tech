@@ -1,13 +1,13 @@
 # VAT Deviation
 
 
-VAT Deviation is a term used in Sales orders and Invoices. It is used in POS/store sales and their sales invoices. VAT deviation is the difference between the amount of the document that is obtained, when value added tax is calculated on the Total Amount of the document (which is the standard method of calculation in @name) and the amount that is obtained when value added tax is charged on each Unit price in the document separately (which is the case for Store sales).
+VAT Deviation is a term used in Sales orders and Invoices. It is used in POS/store sales and their sales invoices. VAT deviation is the difference between the amount of the document that is obtained, when value added tax is calculated on the Total Amount of the document (which is the standard method of calculation in @@name) and the amount that is obtained when value added tax is charged on each Unit price in the document separately (which is the case for Store sales).
 
 
 ## Usage 
 
 
-VAT Deviation is used in Store sales and their Sales Invoices when in those documents the VAT and/or Discounts are not applied directly to the line amounts. Then the total amount of payment that EnterpriseOne will calculate (value **[Standard Amount]**) may differ, usually by a few cents, from the amount the client actually pays (value **[POS Amount]**). In these cases, VAT deviation is calculated as an additional amount in the Sales order / Invoice that is paid by the customer and serves as an adjustment to the standard @name way of calculating a payment amount. The additional VAT deviation can be used for accounting purposes as well, in order to make a transition between the standard amounts and the POS amounts.
+VAT Deviation is used in Store sales and their Sales Invoices when in those documents the VAT and/or Discounts are not applied directly to the line amounts. Then the total amount of payment that @@name will calculate (value **[Standard Amount]**) may differ, usually by a few cents, from the amount the client actually pays (value **[POS Amount]**). In these cases, VAT deviation is calculated as an additional amount in the Sales order / Invoice that is paid by the customer and serves as an adjustment to the standard @@name way of calculating a payment amount. The additional VAT deviation can be used for accounting purposes as well, in order to make a transition between the standard amounts and the POS amounts.
 
 
 ## Calculation
