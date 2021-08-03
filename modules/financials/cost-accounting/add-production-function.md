@@ -1,6 +1,6 @@
 # Add Production Function
 
-The function is used in the **[Cost distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it adds the production from the specified period and stores it in the document.
+The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it adds the production from the specified period and stores it in the document.
 ## How does it work?
  
 The functions selects all store transaction lines, filtered by the following conditions:
