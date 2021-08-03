@@ -26,4 +26,6 @@ After the production is filled in the document, the cost distribution calculatio
 - Cost Type - the cost type for which the distribution in the current row is calculated;
 - Distributed amount base - the amount (in base currency) of the distributed cost. The amount is calculated for the combination of output and cost type. 
 
-The data in the Results table has a function which calculates distributed amounts on each output. The amount is a total amount (distributed to the current output) of all cost types, which are set for distribution. For more information see **[Calculate Distribution Function](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/calculate-distribution-function.md)**.
+The data in the Results table has a function which calculates distributed amounts on each output. The amount is a total amount (distributed to the current output) of all cost types, which are set for distribution. 
+
+For more information, see **[Calculate Distribution Function](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/calculate-distribution-function.md)**.
