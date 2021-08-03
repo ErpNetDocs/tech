@@ -10,13 +10,13 @@ When trying to determine a Line Discount, we have to specify some required condi
 
 and some not required:
  
-- **@@name** - Only in the specified @@name
-- **@@name Location** - Only in the specified @@name location
+- **Enterprise Company** - Only in the specified Enterprise Company
+- **Enterprise Company Location** - Only in the specified Enterprise Company location
 - **Price List** - self-explanatory
 - **Distribution Channel** - self-explanatory
 - **Current Line Discount** - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.
 
-@@name filters all discounts that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to **all** customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, @@name, Price List, etc.
+@@name filters all discounts that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to **all** customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.
  
 Generally, the algorithm is the following:
  
@@ -28,7 +28,7 @@ So, after the selection process, one and only one discount is selected and appli
  
 ## Filtering conditions
 
--Discount From Date is empty or <= required Date
+- Discount From Date is empty or <= required Date
 - Discount To Date is empty or >= required Date
 - Discount Product is empty or equal to required Product
 - Discount Min Quantity is empty or <= required Quantity
