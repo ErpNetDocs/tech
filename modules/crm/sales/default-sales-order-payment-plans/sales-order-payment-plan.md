@@ -107,7 +107,7 @@ There is a Sales order with a total Amount to pay **95.00 BGN**. For this Sales 
 
 - **[Instalment 1] = 30.00 BGN** (fixed amounts do not change);
 - **[Instalment 2] = 40.00 BGN** (fixed amounts do not change);
-- **[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN= 25.00 BGN**;
+- **[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN = 25.00 BGN**;
 
 
 This example illustrates the other benefits of the 'Remainder' instalment. When there are only fixed amounts in the previous instalments and there is change of the trade terms in the Invoices, then this change is reflected in the last instalment.
