@@ -85,122 +85,124 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Bonus program conditions:</th>
+<th style="text-align: left;">Bonus program conditions:</th>
 <th style="text-align: left;">Description:</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Active</td>
+<td style="text-align: left;">Active</td>
 <td style="text-align: left;">That’s the main condition if the bonus must be applied. The other conditions are verified only for active bonus programs.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Priority</td>
+<td style="text-align: left;">Priority</td>
 <td style="text-align: left;">from 1 (the lowest) to 5 (the highest) of the bonus program compared to the other bonus programs.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Customer</td>
+<td style="text-align: left;">Condition Customer</td>
 <td style="text-align: left;">Specifies that the bonus program must be applied only for the customer that is set in the field. If ‘Condition Customer = NULL’, then it’s applied for all customers.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Customer Filter XML</td>
+<td style="text-align: left;">Condition Customer Filter XML</td>
 <td style="text-align: left;">Sets a custom filter for clients. The bonus program is only applied if the customer meets the specified criteria. Currently, only criteria from the related ’Customers’ and ‘Parties’ tables are supported. The filter can contain custom properties.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Ship To Customer</td>
+<td style="text-align: left;">Condition Ship To Customer</td>
 <td style="text-align: left;">Specifies that the bonus program must be applied only when shipping to the customer that is set in the field. If ‘Condition Customer = NULL’, then it’s applied to all customer’s company locations.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Ship To Customer Filter XML</td>
+<td style="text-align: left;">Condition Ship To Customer Filter XML</td>
 <td style="text-align: left;">The bonus applies only when shipping to a customer that meets the specified criteria. Currently, only criteria from the related ’Customers’ and ‘Parties’ tables are supported. The filter can contain custom properties.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Product</td>
+<td style="text-align: left;">Condition Product</td>
 <td style="text-align: left;">If there is no value in the field, then all other conditions must be evaluated for the whole sale order. Otherwise, the bonus only applies to the lines that contain the product. If the bonus program is valid for more than one product, then another condition product could be added in the panel 'Bonus program products'.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Product Group</td>
+<td style="text-align: left;">Condition Product Group</td>
 <td style="text-align: left;">The bonus program only applies to products from the specific group or its subgroups.  Currently, the condition for the product group can’t be used with conditions for Min and Max quantity. That’s because if the base measurement units of the products in the group are different, there is no way the right calculation is made and the bonus program won’t be applied</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Min Quantity</td>
+<td style="text-align: left;">Condition Min Quantity</td>
 <td style="text-align: left;">Specifies a condition for the minimum quantity of the condition product in the base measurement unit. If there is no condition product, then a minimum quantity can not be set for the current bonus program. If the condition products are more than one, then all of them have to use the same base measurement unit. Otherwise, there is no way the right calculation to be made and the bonus program won’t be applied.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Max Quantity</td>
+<td style="text-align: left;">Condition Max Quantity</td>
 <td style="text-align: left;">Specifies a condition for the maximum quantity of the condition product in the base measurement unit. If there is no condition product, then a maximum quantity can not be set for the current bonus program. If the condition products are more than one, then all of them have to use the same base measurement unit. Otherwise, there is no way the right calculation to be made and the bonus program won’t be applied.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Min Amount</td>
+<td style="text-align: left;">Condition Min Amount</td>
 <td style="text-align: left;">Specifies a condition for the minimum sum of amounts of the sales order lines, for which the bonus is valid.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Max Amount</td>
+<td style="text-align: left;">Condition Max Amount</td>
 <td style="text-align: left;">Specifies a condition for the maximum sum of amounts of the sales order lines, for which the bonus is valid.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Document Currency</td>
+<td style="text-align: left;">Condition Document Currency</td>
 <td style="text-align: left;">The bonus program only applies if the document currency is the same as the currency in this field. Condition Document Currency is also required if any of the amount conditions are set.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition From Date</td>
+<td style="text-align: left;">Condition From Date</td>
 <td style="text-align: left;">Starting date (inclusive) from which the bonus program is valid.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition To Date</td>
+<td style="text-align: left;">Condition To Date</td>
 <td style="text-align: left;">End date (inclusive) to which the bonus program is valid.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Target Group</td>
+<td style="text-align: left;">Condition Target Group</td>
 <td style="text-align: left;">Specifies that the bonus program only applies for the customers from the specified target group.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Distribution Channel</td>
+<td style="text-align: left;">Condition Distribution Channel</td>
 <td style="text-align: left;">Specifies that the bonus program only applies when the specified distribution channel is used in the document.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Condition Distribution Channel Filter XML</td>
+<td style="text-align: left;">Condition Distribution Channel Filter XML</td>
 <td style="text-align: left;">The bonus only applies when the distribution channel in the document meets the specified criteria.</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
 <p>NOTE:  When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products defined in the bonus program. For example, if a <em>bonus program</em> is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the <em>bonus program</em> will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B …).</p>
+</blockquote>
 <p><strong>Currently, two types of bonuses are supported:</strong></p>
 <ul>
 <li>Product – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the <em>bonus program</em> fields 'For Each' and 'Bonus Product Quantity'. For Example: if there is a bonus program with a product Pencil, which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'. In the line field 'Bonus program' there is information about the name of the bonus program that is currently applied .</li>
-<li>Discount – Calculates a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, standard discount applies, which is defined in the <em>bonus program</em>. Bonus programs do not apply to lines with zero quantity.
-A bonus type is required for each <em>bonus program</em>. Both bonus types can not be used simultaneously.</li>
+<li>Discount – Calculates a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, standard discount applies, which is defined in the <em>bonus program</em>. Bonus programs do not apply to lines with zero quantity.</li>
 </ul>
+<p>A bonus type is required for each <em>bonus program</em>. Both bonus types can not be used simultaneously.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Data fields:</th>
+<th style="text-align: left;">Data fields:</th>
 <th style="text-align: left;">Description:</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Bonus Action</td>
+<td style="text-align: left;">Bonus Action</td>
 <td style="text-align: left;">Specifies the type of the bonus – a product or a discount.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Bonus Product</td>
+<td style="text-align: left;">Bonus Product</td>
 <td style="text-align: left;">The product that the customer receives for free, if the conditions of the bonus program are met. The field is required when there is value in 'Bonus Product'.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Bonus Product Quantity</td>
+<td style="text-align: left;">Bonus Product Quantity</td>
 <td style="text-align: left;">The quantity of the bonus product. The field is required if there is a value in 'Bonus Product'.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Bonus Product Quantity Unit</td>
+<td style="text-align: left;">Bonus Product Quantity Unit</td>
 <td style="text-align: left;">The measurement unit of the bonus quantity of the product. The field is required if there is a value in 'Bonus Product'.</td>
 </tr>
 <tr>
-<td style="text-align: center;">For Each</td>
+<td style="text-align: left;">For Each</td>
 <td style="text-align: left;">Specifies an amount of the condition product, for which the bonus quantity is applied every time. For example, if we want to use the common form of sales promotion 'Buy X get Y for free' we should set the 'X' quantity in the field 'For Each'. This way if the customer buys 2<em>Х quantity, then will receive 2</em>Y bonus.</td>
 </tr>
 <tr>
-<td style="text-align: center;">Bonus Line Discount Percent</td>
+<td style="text-align: left;">Bonus Line Discount Percent</td>
 <td style="text-align: left;">The percent discount that is going to be applied in the rows.</td>
 </tr>
 </tbody>

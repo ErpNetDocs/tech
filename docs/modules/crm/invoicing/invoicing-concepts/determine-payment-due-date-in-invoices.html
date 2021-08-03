@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Determine Payment due date in Invoices | ERP.net Tech Docs </title>
+    <title>Determine Payment Due Date in Invoices | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Determine Payment due date in Invoices | ERP.net Tech Docs ">
+    <meta name="title" content="Determine Payment Due Date in Invoices | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,19 +77,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="determine-payment-due-date-in-invoices">Determine Payment due date in Invoices</h1>
+<h1 id="determine-payment-due-date-in-invoices">Determine Payment Due Date in Invoices</h1>
 
-<p>Invoices in <a class="xref" href="../../../../includes/name.html">name</a> are entered manually or they are created based on Invoice Orders.</p>
-<h2 id="determine-payment-due-date-when-entering-an-invoice-manually">Determine Payment due date when entering an Invoice manually</h2>
+<p>Invoices in ERP.net are entered manually or they are created based on Invoice Orders.</p>
+<h2 id="determine-payment-due-date-when-entering-an-invoice-manually">Determine Payment Due Date When Entering an Invoice Manually</h2>
 <p>In this case the <em>Payment Due Date</em> is determined in the standard way - based on the data in the Invoice customer definition. This is a default value and it can be changed by the user.</p>
 <p><em><strong>Example 1:</strong></em></p>
-<p>The user enters an Invoice with a Document Date **15 Mar 2020 **. The customer definition says that its <em>Default Payment Term Days</em> is <strong>7 days</strong>. Then the <em>Payment Due Date</em> in the Invoice is 22 Mar 2020 .</p>
-<h2 id="determine-payment-due-date-when-entering-an-invoice-based-on-invoice-orders">Determine Payment due date when entering an Invoice based on Invoice orders</h2>
+<p>The user enters an Invoice with a Document Date <strong>15 Mar 2020</strong>. The customer definition says that its <em>Default Payment Term Days</em> is <strong>7 days</strong>. Then the <em>Payment Due Date</em> in the Invoice is <strong>22 Mar 2020</strong>.</p>
+<h2 id="determine-payment-due-date-when-entering-an-invoice-based-on-invoice-orders">Determine Payment Due Date When Entering an Invoice Based on Invoice Orders</h2>
 <p>There is a <em>Payment Due Date</em> in the Invoice Orders. When the user enters Invoices based on Invoice Orders, the <em>Payment Due Date</em> is copied from the Invoice Order or from the <em>Document Date</em> of the Invoice Order (depending on which date is greater). This is also valid in the cases when the Invoice is created with today's date. In this case the payment term is kept (as days count) as it is in the Invoice Order.</p>
 <p><em><strong>Example 2:</strong></em></p>
-<p>There is a Sales Order with <em>Document Date</em> 02 Nov 2020 and <em>Payment Due Date</em>  09 Nov 2020 (so the payment term is 7 days). These dates are copied to the Invoice Order From the Sales Order. Then in the client definition the <em>Default Payment Term Days</em> is changed from 7 days to 14 days. The user creates Invoice with Document date 22 Nov 2020 . The Payment Due Date in the Invoice is 29 Nov 2020 (i.e. keeping the term from the Invoice Order), in spite of the difference in the terms according to the customer's definition.</p>
+<p>There is a Sales Order with <em>Document Date</em> <strong>02 Nov 2020</strong> and <em>Payment Due Date</em>  <strong>09 Nov 2020</strong> (so the payment term is <strong>7 days</strong>). These dates are copied to the Invoice Order From the Sales Order. Then in the client definition the <em>Default Payment Term Days</em> is changed from 7 days to 14 days. The user creates Invoice with Document date <strong>22 Nov 2020</strong> . The Payment Due Date in the Invoice is <strong>29 Nov 2020</strong> (i.e. keeping the term from the Invoice Order), in spite of the difference in the terms according to the customer's definition.</p>
 <p><em><strong>Example 3:</strong></em></p>
-<p>The same case as in <em><strong>Example 2</strong></em> , except for the <em>Document Date</em> of the Invoice Order. In the current example it is 11 Nov 2020 (this is possible if the Invoice Order is generated from Shipments). Then when creating the Invoice. <em>Payment Due Date</em> is considered to be 11 Nov 2020 (the greater date), which means that the payment term is actually <strong>0 days</strong> (the difference between the document date and the effective payment due date). I.e. when  entering an Invoice with <em>Document Date</em> 22 Nov 2020, its <em>Payment Due Date</em> is 22 Nov 2020 .</p>
+<p>The same case as in <em><strong>Example 2</strong></em> , except for the <em>Document Date</em> of the Invoice Order. In the current example it is <strong>11 Nov 2020</strong> (this is possible if the Invoice Order is generated from Shipments). Then when creating the Invoice. <em>Payment Due Date</em> is considered to be <strong>11 Nov 2020</strong> (the greater date), which means that the payment term is actually <strong>0 days</strong> (the difference between the document date and the effective payment due date). I.e. when  entering an Invoice with <em>Document Date</em> <strong>22 Nov 2020</strong>, its <em>Payment Due Date</em> is <strong>22 Nov 2020</strong>.</p>
 <blockquote>
 <p><em>Payment Due Date</em> in the Invoice depends of how the <em>Payment Due Date</em> and the <em>Document Date</em> in the Invoice Order are determined.</p>
 </blockquote>

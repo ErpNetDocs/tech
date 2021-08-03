@@ -1862,7 +1862,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.html",
-          "hash": "ZD2WnuxWRVw6ChN7xD8ieA=="
+          "hash": "HxHyRY8SOoMqXsRh3CkA6g=="
         }
       },
       "is_incremental": false,
@@ -1874,7 +1874,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-product-price.html",
-          "hash": "RD36ki3sTlbIJXFRdBetQA=="
+          "hash": "nKy0VH5sNC43mPzy414VDg=="
         }
       },
       "is_incremental": false,
@@ -1898,7 +1898,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/pricing.html",
-          "hash": "XeLwHihnSiU+O211Dy6eVw=="
+          "hash": "gqlH33jyLP9T7BPradBUCQ=="
         }
       },
       "is_incremental": false,
@@ -1930,18 +1930,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/invoicing/determine-unit-price-and-line-amount-in-invoice-orders.html",
-          "hash": "/linbORRW6Oqo73NhKUY7A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/invoicing/index.md",
       "output": {
         ".html": {
@@ -1958,7 +1946,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/invoicing/invoicing-concepts/determine-payment-due-date-in-invoices.html",
-          "hash": "Rbew578zeBy56h8wwQPVQg=="
+          "hash": "zsmECRTQT0Gry72Ondy5fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/invoicing/invoicing-concepts/determine-unit-price-and-line-amount-in-invoice-orders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/invoicing/invoicing-concepts/determine-unit-price-and-line-amount-in-invoice-orders.html",
+          "hash": "hp5FO21dfX53IPCx7Ql9yQ=="
         }
       },
       "is_incremental": false,
@@ -1982,7 +1982,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/marketing/bonus-programs/index.html",
-          "hash": "eQqR8uCzAgyQYnLsic2nMg=="
+          "hash": "3q9xSiNrIMiU6JgAwqixEQ=="
         }
       },
       "is_incremental": false,
@@ -2030,7 +2030,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/default-sales-order-payment-plans/sales-order-payment-plan.html",
-          "hash": "4yVdsy+2Y3apix3w+E+jcg=="
+          "hash": "LpND6uEBe1Z44vmubmcb2g=="
         }
       },
       "is_incremental": false,
@@ -2078,7 +2078,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/promotional-packages/index.html",
-          "hash": "0Ci6DIHfy1W/FBqvLFalpA=="
+          "hash": "u+gfXWS68OfEOlgqtJZLog=="
         }
       },
       "is_incremental": false,
@@ -2090,7 +2090,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.html",
-          "hash": "wT9axotZz3MV1q6IBW8hmg=="
+          "hash": "ZPWvmWP4wjNzcuhmjIp9tw=="
         }
       },
       "is_incremental": false,
@@ -2102,7 +2102,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/deferred-payments-options.html",
-          "hash": "IOZq+lbnLFqh/w3QyT2jmQ=="
+          "hash": "ZjRJk4THRggiAaPHEGAr2A=="
         }
       },
       "is_incremental": false,
@@ -2114,7 +2114,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html",
-          "hash": "ZSNC8NxlSY9z3q7ElV5dmQ=="
+          "hash": "zC9RI8xlHnFd3slE8KRBfg=="
         }
       },
       "is_incremental": false,
@@ -2126,7 +2126,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-payment-account-in-sales-order.html",
-          "hash": "mzZcBs1oIeC9RFJezi9lsg=="
+          "hash": "zzsdUeUgN3Cw7cHyCzJuyA=="
         }
       },
       "is_incremental": false,
@@ -2174,7 +2174,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/sales-order-row-types.html",
-          "hash": "705le7wsUhD6WvOkfe7zNQ=="
+          "hash": "Nq7lFMgfG/8OyaVun0IrKw=="
         }
       },
       "is_incremental": false,
@@ -2186,7 +2186,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/vat-deviation.html",
-          "hash": "Tc3PXhb48f0AMs8Ad+TzhA=="
+          "hash": "geRaoX+LnOB6g41ypxeQKw=="
         }
       },
       "is_incremental": false,
@@ -2246,7 +2246,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.html",
-          "hash": "aj1mh8BG4q8xDwDEUBu3kg=="
+          "hash": "ZTgztcRRgeA/VrYaXhXqZg=="
         }
       },
       "is_incremental": false,
@@ -2259,6 +2259,42 @@
         ".html": {
           "relative_path": "modules/financials/VAT/index.html",
           "hash": "g3go2snXqZETQVRfWkwshA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/cost-accounting/add-production-function.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/cost-accounting/add-production-function.html",
+          "hash": "nhcw6JzIRPCRhqBFoJpN+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/cost-accounting/calculate-distribution-function.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/cost-accounting/calculate-distribution-function.html",
+          "hash": "DFy+fSW3/OWQaV1D+pYEfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/cost-accounting/cost-distribution.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/cost-accounting/cost-distribution.html",
+          "hash": "imvb1foHcJOPkPukZA46ow=="
         }
       },
       "is_incremental": false,
@@ -2735,7 +2771,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/setting-cost-when-purchasing-goods.html",
-          "hash": "rE9YLP6pwyQFboIpWWA0Wg=="
+          "hash": "Fsoea/ia97RN8Bna+t8yqQ=="
         }
       },
       "is_incremental": false,
@@ -2974,7 +3010,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "B87xNJuykMiPp4gwr0syhQ=="
+          "hash": "kgZFyw1deLwLKitmXV16kA=="
         }
       },
       "is_incremental": false,

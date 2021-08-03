@@ -97,8 +97,11 @@
 <p>The <em>Unit Cost</em> for one row in the <strong>Receiving Order</strong> is defined as follows:</p>
 <ol>
 <li>All rows of released, non-voided <strong>Purchase Invoices</strong> for the current row from the <strong>Receiving Order</strong> are summed up. If there are no such rows, then the unit cost is <strong>0</strong>.</li>
-<li>For each row from p.1, an end cost is defined: <strong>[End Cost]</strong> = <strong>[Line Amount]</strong> + <strong>[sum of the distributed amounts for the current row]</strong>.
-<strong>Note</strong>: Only <strong>Additional Amounts</strong> that are marked with Add To Line as True. Also, the additional amount may be entered by other <strong>Purchase Invoices</strong> (for example - transport purchase invoice).</li>
+<li>For each row from p.1,an end cost is defined:</li>
+</ol>
+<p><strong>[End Cost]</strong> = <strong>[Line Amount]</strong> + <strong>[sum of the distributed amounts for the current row]</strong>.</p>
+<p><strong>Note</strong>: Only <a href="https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md">Additional Amounts</a> that are marked with Add To Line as True. Also, the additional amount may be entered by other <strong>Purchase Invoices</strong> (for example - transport purchase invoice).</p>
+<ol start="3">
 <li>At the end the <strong>[End Cost]</strong> for all rows from p.1 are summed up, the quantities for those rows are summed up and the end cost is divided by those quantities. If the quantities are <strong>0</strong> then the unit cost is also <strong>0</strong>.
 Not: When summing up all end costs have to be converted to the currency of the <strong>Receiving Order</strong>, and all quantities have to be converted to the measurement unit of the <strong>Receiving Order</strong> row.</li>
 </ol>

@@ -80,8 +80,8 @@
 <h1 id="determine-payment-account-in-sales-order">Determine Payment Account in Sales Order</h1>
 
 <h2 id="the-algorithm">The algorithm</h2>
-<p>The algorithm for the determination of the Payment Account in the Sales Order is the following:
-SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):</p>
+<p>The algorithm for the determination of the Payment Account in the Sales Order is the following:</p>
+<p>SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):</p>
 <ol>
 <li>If the ShipToCustomer.DefaultPaymentType = SalesOrder.PaymentType AND the ShipToCustomer.PaymentAccount is not null =&gt; it is taken.</li>
 <li>If the Customer.DefaultPaymentType = SalesOrder.PaymentType AND the Customer.PaymentAccount is not null =&gt; it is taken.</li>

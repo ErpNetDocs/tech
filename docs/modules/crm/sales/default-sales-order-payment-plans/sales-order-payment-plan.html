@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sales order Payment plan | ERP.net Tech Docs </title>
+    <title>Sales Order Payment plan | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sales order Payment plan | ERP.net Tech Docs ">
+    <meta name="title" content="Sales Order Payment plan | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="sales-order-payment-plan">Sales order Payment plan</h1>
+<h1 id="sales-order-payment-plan">Sales Order Payment plan</h1>
 
 <p>This topic describes the essence of the Sales order Payment plans, the method of calculating the Instalments, and the algorithm for creating payment requests under a plan.</p>
-<h2 id="sales-order-payment-plans">Sales order Payment plans</h2>
+<h2 id="sales-order-payment-plans">Sales Order Payment plans</h2>
 <p>The Sales order payment plan determines how the amount of the given Sales order is paid (with how many instalments and their individual amounts).</p>
 <p>For each instalment, there are two main attributes - a <em>method for determining the amount</em> and a <em>method for determining the due dates (the payment term</em>).</p>
 <p><strong>Methods for determining the amount (specified by the 'Amount Percent', 'Amount' and 'Remainder' fields):</strong></p>
@@ -103,7 +103,7 @@
 <p>If  there is no indicated payment plan for the particular Sales order at all, then it is considered that there is a plan that consists of only one instalment. This instalment is not numbered (see the Create Payment orders section below) and is for total Amount to pay of the Sales order. In a 'service' instalment the method of determining the payment term depends on whether the Payment orders for the invoiced amounts will be created from the Sales order or not (this depends on the setting of the Payment order generation procedure). If the Payment orders for invoiced amounts will be generated from the Sales order, then for the 'Due date form Method' the 'Use Invoice due date' method is used, otherwise the 'Use Sales order Due date' method  is used.</p>
 <h2 id="determining-the-total-payment-amount">Determining the total payment amount</h2>
 <p>In order to determine the amount of each instalment, it is first necessary to determine what is the total / final amount that has to be paid for this transaction. This is done using the data from several documents - the Sales order with which the transaction is reflected and all Invoices for this sale (both for the advance and for delivery).
-For this purpose, two types of Amounts are calculated separately – Sales order amounts and Invoice amounts, which are then summed to obtain the final amount. Invoice amounts are the Amounts to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount to pay</a></strong>) of the delivery Invoices. And the Sales orders amounts are the paid advances and the remaining part of the Amount to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount to pay</a></strong>) of the Sales order, which is not covered by an advance or delivery.
+For this purpose, two types of Amounts are calculated separately – Sales order amounts and Invoice amounts, which are then summed to obtain the final amount. Invoice amounts are the Amounts to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount To pay</a></strong>) of the delivery Invoices. And the Sales orders amounts are the paid advances and the remaining part of the Amount to pay (see topic <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount To pay</a></strong>) of the Sales order, which is not covered by an advance or delivery.
 To determine the last amount (the remaining part of the Amount to pay of the Sales order), the following formula is used:</p>
 <p><strong>[remaining part] = [Amount to Pay of the Sales order] - [advances paid] - [invoiced part of the Sales order]</strong></p>
 <p>The invoiced part is calculated by determining how much of the Amount to pay of the Sales order is covered by the delivery Invoices. This is done for each line of Invoices in two alternative methods:</p>
@@ -143,7 +143,7 @@ It also illustrates the usefulness of the 'Remainder' instalment. If it was, ins
 <ul>
 <li><strong>[Instalment 1] = 30.00 BGN</strong> (fixed amounts do not change);</li>
 <li><strong>[Instalment 2] = 40.00 BGN</strong> (fixed amounts do not change);</li>
-<li><strong>[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN= 25.00 BGN</strong>;</li>
+<li><strong>[Instalment 3] = 95.00 BGN – 30.00 BGN – 40.00 BGN = 25.00 BGN</strong>;</li>
 </ul>
 <p>This example illustrates the other benefits of the 'Remainder' instalment. When there are only fixed amounts in the previous instalments and there is change of the trade terms in the Invoices, then this change is reflected in the last instalment.</p>
 <h2 id="create-payment-orders">Create Payment orders</h2>
@@ -158,7 +158,7 @@ It also illustrates the usefulness of the 'Remainder' instalment. If it was, ins
 <li><strong>2.00 BGN</strong> - from <strong>[instalment 2]</strong> and because of the remaining part amount of the Sales order;</li>
 <li><strong>25.00 BGN</strong> - from <strong>[instalment 3]</strong> and because of the remaining part amount of the Sales order.</li>
 </ul>
-<p>More examples of Payment orders generated by Sales order Payment plans there are in topic ** <a href="https://docs.erp.net/tech/advanced/documents/transitional-documents.html">Transitional Documents</a>**.</p>
+<p>More examples of Payment orders generated by Sales order Payment plans there are in topic <a href="https://github.com/ErpNetDocs/tech/blob/4271ce55e062e4994ff7ccfa4ee8ab2ff350ced9/advanced/documents/transitional-documents.md">Transitional Documents</a>.</p>
 <blockquote>
 <p>NOTE: In the usual case, the Sales and Invoice amounts will match the Instalments amounts, in fact, the resulting breakdown will match the payment plan (none of the instalments will be 'broken down').</p>
 </blockquote>
