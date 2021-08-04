@@ -1243,11 +1243,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/ndex.md",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/ndex.html",
-          "hash": "W80Q8uYwghp+M6e8YNtm9A=="
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/index.html",
+          "hash": "QUMsjkLQR7aDst+s/i+aqg=="
         }
       },
       "is_incremental": false,
@@ -1259,7 +1259,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/index.html",
-          "hash": "6m5IdF08bOy6W050KtpX+Q=="
+          "hash": "uWWg/aBjdbwY9Vop1Dn1mQ=="
         }
       },
       "is_incremental": false,
@@ -1402,7 +1402,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "kYM3WEYGZcaaEjrn0JrGyA=="
+          "hash": "2RfOQd2uzkmm4BlK3hz6Qg=="
         }
       },
       "is_incremental": false,
