@@ -1,8 +1,8 @@
 - name: Overview
   href: index.md
-- name: Amount Distribution By Amount
+- name: By Amount
   href: by-amount.md
-- name: Amount Distribution By Product Definition
-  href: by-product.md
-- name: Amount Distribution By Quantity
+- name: By Product Definition
+  href: by-product-definition.md
+- name: By Quantity
   href: by-quantity.md
