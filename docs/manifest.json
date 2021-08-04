@@ -1405,7 +1405,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "weIcLysMPZTIZND5rsCVbA=="
+          "hash": "YtNzA1uDHYEcvmARtKNppQ=="
         }
       },
       "is_incremental": false,
@@ -2505,6 +2505,30 @@
         ".html": {
           "relative_path": "modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html",
           "hash": "SIDm0Ip6M7afoOu33T7nkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/store-orders/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/store-orders/index.html",
+          "hash": "MDzgyMU4VvOgJQ+04b63GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/index.html",
+          "hash": "gRI18zN5dXDGDIaRaj4RqA=="
         }
       },
       "is_incremental": false,
