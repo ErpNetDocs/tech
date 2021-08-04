@@ -1,6 +1,6 @@
-# Projected availability report
+# Projected Availability Report
 
-This report is based on **[Projected available balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md)** and shows the inventory balance projected into the future.
+This report is based on **[Projected Available Balance](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/projected-available-balance.md)** and shows the inventory balance projected into the future.
 
 ## Fields
 
