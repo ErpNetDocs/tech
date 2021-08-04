@@ -82,7 +82,7 @@
 <p>After the additional sum is calculated (see <a href="https://olddocs.erp.net/tech/amounts-calculation-17498122.html">Amounts Calculation</a>), the result is not saved directly in the document, but it is distributed through the document rows ( more precisely - through those rows which  the additional amount is applied to - the ones with nonzero weight, see <a href="https://olddocs.erp.net/tech/rows-weighting-17498124.html">Rows Weighting</a>) and this distribution is saved in the document. So after the amount is  calculated and distributed, if the user needs to see the total value of  the additional amount, he has to  sum up all the values from its  distribution. This is easier than saving the total additional amount in  the document, because often the distributed to a specific row amount is  needed (for example - to see the VAT distributed to a specific product  or the transport distributed to a specific product, so that we can add  this amount to its value). If we save the total additional amount in the document, in these cases the user will have to distribute the amounts  at the moment, which is not very effective.</p>
 <p>The article (and the  subarticles) descirbes the methods for distributing the amounts throught the rows. Also, a procedure for amount distribution is described  when, because of roundings, the amount cannot be precisely distributed,  and other specific cases.</p>
 <h2 id="common-principle-of-distribution">Common principle of distribution</h2>
-<p>The distribution principle is defined in the additional amount definition  (by &quot;Distributed By&quot; field). There are three basic methods - <em>by quantity (see <a href="by-quantity.html">Amount Distribution By Quantity</a>), by amount (see <a href="by-amount.html">Amount Distribution By Amount</a></em> and <em>by product definition (see <a href="by-product.md">Amount Distribution By Product Definition</a>).</em> Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.</p>
+<p>The distribution principle is defined in the additional amount definition  (by &quot;Distributed By&quot; field). There are three basic methods - <em>by quantity (see <a href="by-quantity.html">Amount Distribution By Quantity</a>), by amount (see <a href="by-amount.html">Amount Distribution By Amount</a></em> and <em>by product definition (see <a href="by-product-definition.html">Amount Distribution By Product Definition</a>).</em> Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.</p>
 <p>So if we have <strong>n</strong> rows on which we have to distribute additional amount, for every row a weight is defined - [<strong>k1</strong>], [<strong>k2</strong>] ... [<strong>kn</strong>]. In the common case, these are different coefficients than those described in <a href="https://olddocs.erp.net/tech/rows-weighting-17498124.html">Rows Weighting</a> (but in some specific cases the coefficients from <a href="https://olddocs.erp.net/tech/rows-weighting-17498124.html">Rows Weighting</a> may participate in the calculation of the distribution weights). So if the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k1</strong>] + [<strong>k2</strong>] + ... + [<strong>kn</strong>]) and this amount is not equal to 0, than the <strong>i</strong>-row the proportion is [<strong>ki</strong>]/[<strong>S</strong>]:</p>
 <p>[distribution to row <strong>i</strong>] = ROUND([amount] * [<strong>ki</strong>] / [<strong>S</strong>], [Round Scale]),</p>
 <p>where <em>Round Scale</em> is property of the additional amount definition. This is a standart distribution alogorithm. Specific cases are when [<strong>S</strong>] is <strong>0</strong>. Usually, in those cases the additional amount is distributed evenly through the row, using the following formula:</p>
@@ -105,7 +105,7 @@
 <p>For further information on how the distibuted amount is calculated by each method, see the following articles:</p>
 <ul>
 <li><a href="by-amount.html">Amount Distribution By Amount</a></li>
-<li><a href="by-product.md">Amount Distribution By Product Definition</a></li>
+<li><a href="by-product-definition.html">Amount Distribution By Product Definition</a></li>
 <li><a href="by-quantity.html">Amount Distribution By Quantity</a></li>
 </ul>
 </article>
@@ -116,7 +116,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/Index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
