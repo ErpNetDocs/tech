@@ -6,7 +6,7 @@ The article (and the  subarticles) descirbes the methods for distributing the am
 
 ## Common principle of distribution
 
-The distribution principle is defined in the additional amount definition  (by "Distributed By" field). There are three basic methods - *by quantity (see [Amount Distribution By Quantity](by-quantity.md)), by amount (see [Amount Distribution By Amount](by-amount.md)* and *by product definition (see [Amount Distribution By Product Definition](by-product.md)).* Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.
+The distribution principle is defined in the additional amount definition  (by "Distributed By" field). There are three basic methods - *by quantity (see [Amount Distribution By Quantity](by-quantity.md)), by amount (see [Amount Distribution By Amount](by-amount.md)* and *by product definition (see [Amount Distribution By Product Definition](by-product-definition.md)).* Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.
 
 So if we have **n** rows on which we have to distribute additional amount, for every row a weight is defined - [**k1**], [**k2**] ... [**kn**]. In the common case, these are different coefficients than those described in [Rows Weighting](https://olddocs.erp.net/tech/rows-weighting-17498124.html) (but in some specific cases the coefficients from [Rows Weighting](https://olddocs.erp.net/tech/rows-weighting-17498124.html) may participate in the calculation of the distribution weights). So if the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount is not equal to 0, than the **i**-row the proportion is [**ki**]/[**S**]:
 
@@ -45,5 +45,5 @@ For further information on how the distibuted amount is calculated by each metho
  
 
 - [Amount Distribution By Amount](by-amount.md)
-- [Amount Distribution By Product Definition](by-product.md)
+- [Amount Distribution By Product Definition](by-product-definition.md)
 - [Amount Distribution By Quantity](by-quantity.md)
