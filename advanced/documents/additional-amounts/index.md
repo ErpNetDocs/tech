@@ -23,5 +23,5 @@ These are some examples:
 - increases and decreases -  the same principle is applied as in discounts; if the increases and/or decreases cannot be defined in the rows or as part of a sale instrument such as promotional programs or bonus packages, than they are entered as additional amounts;
 - commissions (and other internal mechanisms for payments or money accounting) - commissions and similar can be entered as additional amounts too; if they are used as additional amounts, they can represent a percent of the document amount and the result can be used for recording internal company performance indicators or personal employees indicators.
 
-[!list folder="." file="index*" depth=0 style="bullet" limit=100]
+[!list folder="." file="index*" depth=1 style="bullet" limit=100]
 
