@@ -1,6 +1,6 @@
-# Receipt and Issue balance validation in Store transfers
+# Receipt and Issue Balance Validation in Store Transfers
 
-The current article describes the validation if the **receipt** does not exceed the** issue** in the product transfer. In this case a transfer may be any of the following actions:
+The current article describes the validation if the **receipt** does not exceed the **issue** in the product transfer. In this case a transfer may be any of the following actions:
  
 - moving a product from one store to another store by a Store Transfer;
 - products production (that it is considered that the materials are issued and transferred as a new product into another store);
@@ -9,30 +9,32 @@ The current article describes the validation if the **receipt** does not exceed 
 
 This validation is important so unrealistic situations can be avoided (for example - transactions with incorrect chronology) which may lead to incorrect goods cost.
  
-For more information on cost calculation see **[Calculating Cost For Transferred Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md)**, **[Calculating Cost For Returned Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md)**, **[Calculating Cost For Produced Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md)** and **[Calculating Cost When Returning Rented Assets](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.md)**.
+For more information on cost calculation, see **[Calculating Cost For Transferred Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md)**, **[Calculating Cost For Returned Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md)**, **[Calculating Cost For Produced Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md)** and **[Calculating Cost When Returning Rented Assets](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.md)**.
  
-## Validation in transfer of one product
+## Validation in Transfer of One Product
 
 Usually in Store transfers one product is issued from one store and the same product is entered into the target store (the same record in the Products nomenclature). The current article describes the validation in this usual type of transfer. Other transfers (such as Production, where one product (or more) are issued from the first store and other products (or products) are entered into the target store) is not covered in the current article.
  
 The validation is applied on every issue and receipt Transaction release (from the respective store). And the validation applies on every transfer row. All issue transactions and all receipt transactions, resulting from the current row, are summed up.
  
-At first, these operations are ordered. For every two store transactions - **[transaction 1]** and **[transaction 2]** their chronological order has to be defined. This is executed as follows:
+At first, these operations are ordered. For every two store transactions - **[transaction 1]** and **[transaction 2]**, their chronological order has to be defined. This is executed as follows:
  
 - If the *Transaction Timestamps* of **[transaction 1]** and **[transaction 2]** are different - the transaction with a smaller timestamp is before the other
 - If the *Transaction Timestamps* are equal, but the movement type is not the same (issue or receipt) - then the issue transaction is before the receipt transaction.
 - If the *Transaction Timestamps* are equal and both transactions are **issued** - then the transaction with a bigger quantity is placed before the other.
 - If the *Transaction Timestamps* are equal and both transactions are **receipts** - then the transaction with *less* quantity is placed before the other.
 
-After the transactions are ordered chronologically, the costs are set to zero:**[issue quantity total]** = 0 and **[receipt quantity total]** = 0.
+After the transactions are ordered chronologically, the costs are set to zero:
+
+**[issue quantity total]** = 0 and **[receipt quantity total]** = 0.
  
-Then for every element of the ordered list with transactions, depending on its direction - issue or receipt - its base quantity is added to the respective total. Then the system checks if **[issue quantity total]** < **[receipt quantity total]** is true. If it is true, the current operation (Transaction release) is aborted and an error message appears. If it is false, then the system moves to the next element of the ordered list of transactions.
+Then, for every element of the ordered list with transactions, depending on its direction - issue or receipt - its base quantity is added to the respective total. Then, the system checks if **[issue quantity total]** < **[receipt quantity total]** is true. If it is true, the current operation (Transaction release) is aborted and an error message appears. If it is false, then the system moves to the next element of the ordered list of transactions.
  
 If the *Transaction Timestamps* are equal in **receipt** transactions, the transactions are in quantity ascending order because the following case is possible: the first transaction is an issue transaction of **10 PCS** at **12:42**, the next operation is a **receipt** transaction of **10 PCS** at **13:17** and there are two more **receipt** transactions with equal *Transaction Timestamps* of **13:31** - one transaction for **3 PCS** and one transaction for **-3 PCS**. The last two transactions may appear after correction of the **receipt** document of 10 PCS. So if the transactions are not in ascending order, it is possible to add the quantity of the transaction with quantity of **3 PCS** first and in this moment the **[issue quantity total] = 10** and **[receipt quantity total] = 13**, which may mislead us for imbalance between **issue** and **receipt** transactions, no matter that the next transaction immediately fixes it.
  
 Under the same considerations, the **issue** transactions with equal *Transaction Timestamps* are in quantity descending order. It is possible to correct the first operation with **-3 PCS** and this correction will have the same *Transaction Timestamp* as the original transaction. Then if the **-3 PCS** transaction is first, there will be redundant/non-existing imbalance - **[issue quantity total]** = **-3** and **[receipt quantity total] = 0**.
  
-## Validation in transfer of different products (Production)
+## Validation in Transfer of Different Products (Production)
 
 In production there is a change in the algorithm above. As the products that are received in the target store (manufactured goods) are usually different from the ones that we issue from the first store, it is not appropriate to check directly if **[issue quantity total] > [receipt quantity total]**. Also, it is not appropriate to sum quantities of different materials/products in one total **[issue quantity total]**. This is the reason for the different calculation of the **[issue quantity total]**.
  
