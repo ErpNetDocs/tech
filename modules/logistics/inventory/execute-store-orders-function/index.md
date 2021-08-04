@@ -23,7 +23,7 @@ The data that is entered is ***Product, Lot, Serial Number, Quantity, Measuremen
 
 ## Distributing the Executions
 
-The data entered in the Input data panel has to be distributed through the rows from the Store orders panel. This is performed after each change in the Input data panel. The distribution is executed by **Store order rows Execution algorithm** and all calculations about the quantity are based on *Base Quantity*. The Store order rows form the list [ORD] and the data in the Input data panel forms the list **[EXC]**.
+The data entered in the Input data panel has to be distributed through the rows from the Store orders panel. This is performed after each change in the Input data panel. The distribution is executed by **[Store order rows Execution algorithm](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.md)** and all calculations about the quantity are based on *Base Quantity*. The Store order rows form the list [ORD] and the data in the Input data panel forms the list **[EXC]**.
 
 There is a small difference from the **algorithm** - rows from the Input data panel *reserved* to specific Store order row, always execute this specified row. The algorithm is not allowed to distribute them to other rows. The purpose of this is to avoid a situation when  the user enters quantity in *Input Quantity* field and it is distributed to another Store order row (just because the algorithm considers it as with higher priority than the one that the user has chosen). So this gives the user the ability to mark specific rows for execution.
 
