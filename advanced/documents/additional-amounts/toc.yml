@@ -2,4 +2,4 @@
   href: index.md
 - name: Amount Ditribution
   href: amounts-distribution/toc.yml
-
+  topicHref: amounts-distribution/index.md
