@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Execute Store orders function | ERP.net Tech Docs </title>
+    <title>Execute Store Orders Function | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Execute Store orders function | ERP.net Tech Docs ">
+    <meta name="title" content="Execute Store Orders Function | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,30 +77,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="execute-store-orders-function">Execute Store orders function</h1>
+<h1 id="execute-store-orders-function">Execute Store Orders Function</h1>
 
 <p>This function allows easier work with the barcode scanner and more functional methods for the execution of one Store order row by more than one Transaction row. This is useful in case the user operates with lots or serial numbers, etc.</p>
 <p>The function contains two main components:</p>
 <ul>
-<li>Store orders panel;</li>
-<li>Input data panel</li>
+<li>Store Orders panel</li>
+<li>Input Data panel</li>
 </ul>
-<h2 id="store-orders-panel">Store orders Panel</h2>
+<h2 id="store-orders-panel">Store Orders Panel</h2>
 <p>It loads the unfulfilled Store order rows according to the filters in the navigator. The data includes the ordered quantity of the row, the executed part of that quantity and the remaining quantity (the unfulfilled part). This data is read-only except for the <em>Input Quantity</em> which is used for easier data entering.</p>
-<h2 id="input-data-panel">Input data Panel</h2>
+<h2 id="input-data-panel">Input Data Panel</h2>
 <p>This panel is editable by the users. They enter information about what store transactions are executed in the current moment and do not mark the specific Store orders that they are executing. This is defined automatically by the system.</p>
 <p>The data that is entered is <em><strong>Product, Lot, Serial Number, Quantity, Measurement Unit</strong></em> and <em><strong>Base Quantity</strong></em>. There are several methods to enter such information:</p>
 <ul>
 <li>Manually. This is the rarest method used. To be more precise, it is for editing information entered by any other method.</li>
 <li>Using the <em>Input Quantity</em> field in the Store orders panel. When the user enters data in it, it automatically creates new row in the Input data panel with the entered quantity and the product, lot, serial number and measurement unit copied from the Store order row ,  Also, the new row in the Input data panel is marked as reserved for the row in the Store order rows panel. This method's purpose is to support the old method from the old execution navigator, where the user always enters the exact Store order row that he is executing.</li>
-<li>Using barcode scanner (or other system for control/counting/marking the stocks). This is considered as the standard way to enter data, where the user do not specify the Store order row and only marks the store transaction.</li>
+<li>Using barcode scanner (or other system for control/counting/marking the stocks). This is considered as the standard way to enter data, where the user does not specify the Store order row and only marks the store transaction.</li>
 </ul>
-<h2 id="distributing-the-executions">Distributing the Executions</h2>
-<p>The data entered in the Input data panel has to be distributed through the rows from the Store orders panel. This is performed after each change in the Input data panel. The distribution is executed by <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.md">Store order rows Execution algorithm</a></strong> and all calculations about the quantity are based on <em>Base Quantity</em>. The Store order rows form the list [ORD] and the data in the Input data panel forms the list <strong>[EXC]</strong>.</p>
-<p>There is a small difference from the <strong>algorithm</strong> - rows from the Input data panel <em>reserved</em> to specific Store order row, always execute this specified row. The algorithm is not allowed to distribute them to other rows. The purpose of this is to avoid a situation when  the user enters quantity in <em>Input Quantity</em> field and it is distributed to another Store order row (just because the algorithm considers it as with higher priority than the one that the user has chosen). So this gives the user the ability to mark specific rows for execution.</p>
+<h2 id="distributing-the-executions">Distributing The Executions</h2>
+<p>The data entered in the Input data panel has to be distributed through the rows from the Store orders panel. This is performed after each change in the Input data panel. The distribution is executed by <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.md">Store Order Rows Execution Algorithm</a></strong> and all calculations about the quantity are based on <em>Base Quantity</em>. The Store order rows form the list [ORD] and the data in the Input data panel forms the list <strong>[EXC]</strong>.</p>
+<p>There is a small difference from the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.md">algorithm</a></strong> - rows from the Input data panel <em>reserved</em> to specific Store order row, always execute this specified row. The algorithm is not allowed to distribute them to other rows. The purpose of this is to avoid a situation when  the user enters quantity in <em>Input Quantity</em> field and it is distributed to another Store order row (just because the algorithm considers it as with higher priority than the one that the user has chosen). So this gives the user the ability to mark specific rows for execution.</p>
 <p>The distributed quantities are illustrated as sub-rows of the Store order rows. They contain data (quantity, lot, serial number and more) from the Input data panel which may be different than the data in the Store order row.</p>
 <h2 id="creating-transaction">Creating Transaction</h2>
-<p>At the end, when the user creates Transaction, its rows are based on the distributed executions. For example,  if a Store order row has 4 distributed sub-rows of execution, then the Transaction has 4 rows with the information from the Input data panel and all those rows are executing the specific Store order row.</p>
+<p>In the end, when the user creates Transaction, its rows are based on the distributed executions. For example,  if a Store order row has 4 distributed sub-rows of execution, then the Transaction has 4 rows with the information from the Input data panel and all those rows are executing the specific Store order row.</p>
 <p>When the Transaction is created, the data in the Input data panel is deleted and the navigator is ready to be used again.</p>
 </article>
           </div>

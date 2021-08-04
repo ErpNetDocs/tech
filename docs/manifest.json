@@ -2441,19 +2441,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/execute-store-orders-function/index.html",
-          "hash": "02i2pIB5vX5H10QIkn15nQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/execute-store-orders-function/projected-availability-report.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/inventory/execute-store-orders-function/projected-availability-report.html",
-          "hash": "BxXlwK2BFsJeFf9U2Ds8XQ=="
+          "hash": "mZG6LNbPBWZkzMXMFK2FCA=="
         }
       },
       "is_incremental": false,
@@ -2465,7 +2453,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.html",
-          "hash": "+2wv9j5HLmEfOmLS4vaRlQ=="
+          "hash": "P1+ZKS/pKjhTqA5RqMA8wA=="
         }
       },
       "is_incremental": false,
@@ -2489,7 +2477,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/lots/index.html",
-          "hash": "7lqKR8IDAgLeK253EP55cg=="
+          "hash": "kXwUNtSZM0jy/YV3pWchzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/projected-availability-report.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/projected-availability-report.html",
+          "hash": "FQ7O6bMxdVqSing8YOrsQg=="
         }
       },
       "is_incremental": false,
@@ -2501,7 +2501,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html",
-          "hash": "SIDm0Ip6M7afoOu33T7nkw=="
+          "hash": "mmbiUqI09/YuCIke30fQiA=="
         }
       },
       "is_incremental": false,
@@ -2537,7 +2537,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/store-orders-planning-and-due-dates.html",
-          "hash": "9kjt+hRtwd/an0FVN1Gqxg=="
+          "hash": "L97rJBNBfV/Yq8A1KlrF4Q=="
         }
       },
       "is_incremental": false,

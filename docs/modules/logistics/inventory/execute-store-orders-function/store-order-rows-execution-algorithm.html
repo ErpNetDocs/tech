@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Store order rows execution algorithm | ERP.net Tech Docs </title>
+    <title>Store Order Rows Execution Algorithm | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Store order rows execution algorithm | ERP.net Tech Docs ">
+    <meta name="title" content="Store Order Rows Execution Algorithm | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,16 +77,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="store-order-rows-execution-algorithm">Store order rows execution algorithm</h1>
+<h1 id="store-order-rows-execution-algorithm">Store Order Rows Execution Algorithm</h1>
 
-<p>This algorithm is applied when there are many unfulfilled Store orders or products going in and out of the store. The purpose is to create Transactions, fulfilling the orders as correctly as possible . The idea behind the algorithm is that the system automatically defines which Store orders should be fulfilled and what part of them - automatically, without user interference. This allows faster processing of the issue and receipt transactions, especially when the data (orders and products) volume is large.</p>
+<p>This algorithm is applied when there are many unfulfilled Store orders or products going in and out of the store. The purpose is to create Transactions, fulfilling the orders as correctly as possible. The idea behind the algorithm is that the system automatically defines which Store orders should be fulfilled and what part of them - automatically, without user interference. This allows faster processing of the issue and receipt transactions, especially when the data (orders and products) volume is large.</p>
 <p>The starting data for the algorithm is two lists:</p>
 <ul>
 <li>list of unfulfilled Store order rows - <strong>[ORD]</strong>. This list is usually a partial sample of all unfulfilled Store orders in the database, e.g the orders from a certain customer/supplier or certain order. In <strong>[ORD]</strong> there are only the quantities which are unfulfilled, because if for a given Store order row for <strong>10 PCS</strong> there are released Transactions with <strong>7 PCS</strong>, then in <strong>[ORD]</strong> the quantity for this row would be <strong>3 PCS</strong>. The rows completely fulfilled by Transactions are not part of <strong>[ORD]</strong>;</li>
 <li>List of store transactions - <strong>[FUL]</strong>, which contain data about products currently being moved in or out of the store. The data consist of <strong>Product, Lot, Serial Number</strong> and <strong>Quantity</strong>.  Afterwards, data is saved in the newly created Transactions. The list <strong>[FUL]</strong> is usually the result of a control system (such as barcode scanner) which is placed at the entrance/exit of the store.</li>
 </ul>
 <p>Both lists must consist of the same type of operations - meaning <strong>[ORD]</strong> is a list of receipt Store order rows and <strong>[FUL]</strong> is a list of receipt Store order rows or if <strong>[ORD]</strong> contains only issue Store order rows and <strong>[FUL]</strong> is a list of issue Store order rows. If <strong>[ORD]</strong> and <strong>[FUL]</strong> contain both issue and receipt transactions, then the lists must be separated into two uniform parts and the algorithm will be applied on each part separately.</p>
-<h2 id="store-orders-еxecution-аlgorithm">Store orders еxecution аlgorithm</h2>
+<h2 id="store-orders-execution-algorithm">Store Orders Execution Algorithm</h2>
 <p>The purpose of the algorithm is the distribution of all operations/quantities from <strong>[FUL]</strong>  to the rows of <strong>[ORD]</strong>. It is possible that some operations are defined as fulfilment of one row from <strong>[ORD]</strong>. Besides, the quantities from one operation can be separated amongst more than one row.</p>
 <p>At first, the two lists are sorted. <strong>[FUL]</strong> is sorted according to the entering order of the operations. <strong>[ORD]</strong> is sorted by <em>Document date, Document number</em> and <em>Line number</em> (this is standard sorting, but other types of sorting using data from CRM or SCM modules which has initialized
 the orders are also possible). These sortings set a kind of initial priority, which should be used for Orders fulfilment. Then, the algorithm continues to 4 stages and at each operations/quantities from <strong>[FUL]</strong> are compared to <strong>[ORD]</strong> rows by defined criteria.</p>
@@ -140,7 +140,7 @@ the orders are also possible). These sortings set a kind of initial priority, wh
 <strong>row 30, Product #1, 0 PCS</strong>|
 <strong>row 40, Product #1, 7 PCS, lot #ts23</strong></p>
 <p>After stage III:
-|<strong>[ORD]|[FUL]</strong>|
+|<strong>[ORD]</strong>|<strong>[FUL]</strong>|
 |:----|:----|
 <strong>row 10, Product #1, 0 PCS, lot #ab17</strong>|<strong>Product #1, lot #ab17, 0 PCS</strong>|
 <strong>row 20, Product #1, 0 PCS, lot #ss54</strong>|
@@ -148,7 +148,7 @@ the orders are also possible). These sortings set a kind of initial priority, wh
 <strong>row 40, Product #1, 2 PCS, lot #ts23</strong>|</p>
 <p><em><strong>Example 2:</strong></em></p>
 <p>If there are the same <strong>[ORD]</strong> and <strong>[FUL]</strong> except for the fact that the quantity in <strong>[FUL]</strong> is <strong>18 PCS</strong> (i.e. <strong>2</strong> more than the orders).</p>
-<p>Then in stages I and II the fulfilments will be the same. At stage III <strong>row 40</strong> will be fulfilled completely and at stage IV the remaining <strong>2 PCS</strong> from <strong>[FUL]</strong> will cover **row 10 and it will be over executed.</p>
+<p>Then in stages I and II the fulfilments will be the same. At stage III <strong>row 40</strong> will be fulfilled completely and at stage IV the remaining <strong>2 PCS</strong> from <strong>[FUL]</strong> will cover <strong>row 10</strong> and it will be over executed.</p>
 </article>
           </div>
           
