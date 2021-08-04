@@ -3,8 +3,8 @@
 Warehouse lots contain one row for each specific product, status, production batch and other specific warehousing conditions. Lot status can block certain operations. Items in a lot are all of the same type and produced under the same conditions, intended to have uniform quality and characteristics. The lots characteristics are:
 
 - Product - the product of the lot;
-- Lot number - 
-- Receipt Store Transaction - if the lot is not created manually, this field stores the receipt Store Transaction which created the current lot;
+- Lot number  
+- Receipt Store Transaction - if the lot isn't created manually, this field stores the receipt Store Transaction which created the current lot;
 - Status - the  status of the warehouse lot may be one of the following: 
     - blocked for document (sales or service order);
     - blocked for party;
