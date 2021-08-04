@@ -1203,12 +1203,81 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts.md",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/Index.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/additional-amounts.html",
-          "hash": "E+k4e/TFcB4uMQc5AxWEUw=="
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/Index.html",
+          "hash": "0kHQTq+QTqBD8yNJWvTKxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "invalid-note-section"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-amount.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-amount.html",
+          "hash": "iO/Fa2UrPCZLJpl+w49HWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-product-definition.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-product-definition.html",
+          "hash": "oREnEvAowjddXVJdLEABIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-quantity.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-quantity.html",
+          "hash": "IrfCkVi+ahXSIjrd/miKDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/amounts-distribution/toc.html",
+          "hash": "J5+vQI8n2IRSfqwm0V/Q3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/index.html",
+          "hash": "HyWqE39WdPX9a5VBW8JT5Q=="
         }
       },
       "is_incremental": false,
@@ -1351,7 +1420,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "I460/xzMNCEPhgg+8qF77Q=="
+          "hash": "/54oQKbq5hY4BizpUQEBFA=="
         }
       },
       "is_incremental": false,
@@ -2386,11 +2455,47 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/execute-store-orders-function/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/execute-store-orders-function/index.html",
+          "hash": "02i2pIB5vX5H10QIkn15nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.html",
+          "hash": "+2wv9j5HLmEfOmLS4vaRlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/inventory/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
           "hash": "MGLMUMT1eJODaIud5RlsQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/lots/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/lots/index.html",
+          "hash": "7lqKR8IDAgLeK253EP55cg=="
         }
       },
       "is_incremental": false,

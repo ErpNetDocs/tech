@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: additional-amounts
   name: Additional Amounts
-  href: advanced/documents/additional-amounts.html
+  href: advanced/documents/additional-amounts/index.html
 - uid: Adjustment-Documents
   name: Adjustment Documents
   href: advanced/documents/adjustment-documents.html
