@@ -1,6 +1,6 @@
-# Store order rows execution algorithm
+# Store Order Rows Execution Algorithm
 
-This algorithm is applied when there are many unfulfilled Store orders or products going in and out of the store. The purpose is to create Transactions, fulfilling the orders as correctly as possible . The idea behind the algorithm is that the system automatically defines which Store orders should be fulfilled and what part of them - automatically, without user interference. This allows faster processing of the issue and receipt transactions, especially when the data (orders and products) volume is large.
+This algorithm is applied when there are many unfulfilled Store orders or products going in and out of the store. The purpose is to create Transactions, fulfilling the orders as correctly as possible. The idea behind the algorithm is that the system automatically defines which Store orders should be fulfilled and what part of them - automatically, without user interference. This allows faster processing of the issue and receipt transactions, especially when the data (orders and products) volume is large.
 
 The starting data for the algorithm is two lists:
 
@@ -9,7 +9,7 @@ The starting data for the algorithm is two lists:
 
 Both lists must consist of the same type of operations - meaning **[ORD]** is a list of receipt Store order rows and **[FUL]** is a list of receipt Store order rows or if **[ORD]** contains only issue Store order rows and **[FUL]** is a list of issue Store order rows. If **[ORD]** and **[FUL]** contain both issue and receipt transactions, then the lists must be separated into two uniform parts and the algorithm will be applied on each part separately. 
 
-## Store orders еxecution аlgorithm
+## Store Orders Execution Algorithm
 
 The purpose of the algorithm is the distribution of all operations/quantities from **[FUL]**  to the rows of **[ORD]**. It is possible that some operations are defined as fulfilment of one row from **[ORD]**. Besides, the quantities from one operation can be separated amongst more than one row.
 
@@ -82,7 +82,7 @@ After stage II:
 **row 40, Product #1, 7 PCS, lot #ts23**
 
 After stage III:
-|**[ORD]|[FUL]**|
+|**[ORD]**|**[FUL]**|
 |:----|:----|
 **row 10, Product #1, 0 PCS, lot #ab17**|**Product #1, lot #ab17, 0 PCS**|
 **row 20, Product #1, 0 PCS, lot #ss54**|
@@ -93,4 +93,4 @@ After stage III:
 
 If there are the same **[ORD]** and **[FUL]** except for the fact that the quantity in **[FUL]** is **18 PCS** (i.e. **2** more than the orders).
 
-Then in stages I and II the fulfilments will be the same. At stage III **row 40** will be fulfilled completely and at stage IV the remaining **2 PCS** from **[FUL]** will cover **row 10 and it will be over executed.
+Then in stages I and II the fulfilments will be the same. At stage III **row 40** will be fulfilled completely and at stage IV the remaining **2 PCS** from **[FUL]** will cover **row 10** and it will be over executed.
