@@ -1,3 +1,5 @@
+- name: Aditional Amounts
+  href: index.md
 - name: Amount Ditribution
-  href: amounts-distribution\index.md
+  href: amount-ditribution/toc.yml
 
