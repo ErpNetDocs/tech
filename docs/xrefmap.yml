@@ -191,16 +191,16 @@ references:
   name: Inventory Module
   href: modules/logistics/inventory/index.html
 - uid: jobs-J30632
-  name: J30632 Notifications - Deletе Old Notifications
+  name: J30632 Deletе Old Notifications
   href: advanced/jobs/J30632.html
 - uid: jobs-J30724
-  name: J30724 Scheduled Document Events - Run Scheduled Events
+  name: J30724 Run Scheduled Events
   href: advanced/jobs/J30724.html
 - uid: jobs-J30777
-  name: J30777 Documents - Document State Change
+  name: J30777 Document State Change
   href: advanced/jobs/J30777.html
 - uid: jobs-J30903
-  name: J30903 Document Print Images - Deletе Old Document Print Images
+  name: J30903 Deletе Old Document Print Images
   href: advanced/jobs/J30903.html
 - uid: master-detail
   name: Master / Detail Attributes
