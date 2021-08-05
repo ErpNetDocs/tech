@@ -1,10 +1,10 @@
 - name: Overview
   href: index.md
-- name: J30632 Notifications - Deletе Old Notifications
+- name: J30632 Deletе Old Notifications
   href: J30632.md
-- name: J30724 Scheduled Document Events - Run Scheduled Events
+- name: J30724 Run Scheduled Events
   href: J30724.md
-- name: J30777 Documents - Document State Change
+- name: J30777 Document State Change
   href: J30777.md
-- name: J30903 Document Print Images - Deletе Old Document Print Images
+- name: J30903 Deletе Old Document Print Images
   href: J30903.md
