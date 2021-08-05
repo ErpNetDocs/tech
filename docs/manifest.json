@@ -1385,60 +1385,48 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/J30632.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30632.html",
-          "hash": "AhZ62JtmE7gb+UjSJz7aCg=="
+          "hash": "C4cOm+mLU7JevpwOF3GMnQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/J30724.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30724.html",
-          "hash": "YMM6XtxTOtwjbG0M9vyX0g=="
+          "hash": "P2Hm3AtjSUNMi5fPic4OAQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/J30777.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30777.html",
-          "hash": "ngNUOyIVD4S2Q+tCwQdFog=="
+          "hash": "8YgvxfermJYcefeUUMlr6A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/J30903.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30903.html",
-          "hash": "yzBI444koECmh5Q+J/ej+A=="
+          "hash": "osoNbCacBqu280+OnDu8SQ=="
         }
       },
       "is_incremental": false,
@@ -1451,6 +1439,18 @@
         ".html": {
           "relative_path": "advanced/jobs/index.html",
           "hash": "pP2FKds+vLrHOrTcAsXN9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/template.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/template.html",
+          "hash": "Qo8TbSnuN/QG4m5P/ziYGw=="
         }
       },
       "is_incremental": false,

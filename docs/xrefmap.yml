@@ -211,6 +211,9 @@ references:
 - uid: non-agreed-services-and-materials
   name: Non Agreed Services And Materials
   href: modules/applications/service/non-agreed-services-and-materials.html
+- uid: template-description-jobs
+  name: template-description-jobs
+  href: advanced/jobs/template.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html

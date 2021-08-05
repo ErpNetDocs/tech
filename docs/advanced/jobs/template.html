@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>J30777 Document State Change | ERP.net Tech Docs </title>
+    <title> | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="J30777 Document State Change | ERP.net Tech Docs ">
+    <meta name="title" content=" | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,69 +76,51 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="jobs-J30777">
-<h1 id="j30777-document-state-change">J30777 Document State Change</h1>
+            <article class="content wrap" id="_content" data-uid="template-description-jobs">
+
 
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Code</th>
-<th>J30777</th>
+<th style="text-align: left;"><strong>Template Column Name</strong></th>
+<th><strong>Template Column Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">Code</td>
+<td>Unique job code. Always starts with &quot;J&quot; and continues with a digit number.</td>
+</tr>
+<tr>
 <td style="text-align: left;">Entity</td>
-<td><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.Documents.html">General.Documents Entity</a></td>
+<td>The entity which records are being processed by the job.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Job Type Name</td>
-<td>Document State Change</td>
+<td>Unique job type name.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Parameters</td>
-<td>Job.DocumentJob.Condition// Note that in 2020.1 in the condition can be used only the fields from the Documents table.</td>
+<td>The fields used as parameters by the job. Their values serve as conditions in order to be determined the set of entity records that are going to be processed by the job.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>The Document State Change job is used to change the state of the desired set of documents. For each Job of this type must be created a record in Document Jobs! This record contains information about the State which has to be set, the new User State (optional), and the Conditions which define the set of documents that are going to be processed.</td>
+<td>An explanation of what the job actually does.</td>
 </tr>
 <tr>
 <td style="text-align: left;">First to Process</td>
-<td>-</td>
+<td>Specifies the condition/s (if any) by which the job determines which records have to be processed first.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Records per Iteration</td>
-<td>1</td>
+<td>The count of records that are included in a single iteration of the job.If we are cancelling a manually started job, the job will be aborted after the iteration is finished.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Version</td>
-<td>2020.1</td>
+<td>A list with all versions in which the job has been somehow changed. Usually contains two types of records:&quot;Introduced: 2xxx.x&quot; - the version since which the job type is available;&quot;Updated: 2xxx.x &quot; - the version in which the job has been changed plus a short description of the changes. There could be non or multiple records of this type.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>IMPORTANT NOTES</strong> about the configurations in Document Jobs:</p>
-<ul>
-<li><p>The 'Document Type' field is NOT a filter for the job. If you set a specific Document Type it does not mean that the job will be executed only for documents with this Document Type or even Entity. The only filters which are evaluated to determine the processed documents are the filters in the 'Conditions' field.</p>
-</li>
-<li><p>The 'Conditions' field is the only field that is taken into account to determine which Documents will be processed. <br>
-If there are NO conditions, the system will try to process all documents into the database!</p>
-</li>
-<li><p>In 'Conditions' we have to choose and specify the right <strong>combination</strong> of criteria which will filter the desired set of documents among all documents in the system.
-<br>Commonly used filters would be:</p>
-<ul>
-<li>Document.Void = false - the job will exclude voided documents.</li>
-<li>Document.Entity Name - the job will be executed for all documents of this Entity e.g. 'Sales Orders'.</li>
-<li>Document.Document Type - the job will be executed for all documents of this Document Type/s.</li>
-<li>Document.State - the job will be executed for all documents with this Document State.</li>
-<li>Document.User State - the job will be executed for all documents with this User State.</li>
-<li>Document.Document Date &gt;= and Document.Document Date &gt;= - the job will be executed for all documents with Document Date in this period.</li>
-</ul>
-</li>
-<li><p>Currently, the only 'Conditions' which are taken into account are the filters from the 'Document' panel.</p>
-</li>
-</ul>
-<p>**For more information about the Jobs Documentation Template and a short explanation of each column, see topic <a class="xref" href="template.html">template-description-jobs</a> . **</p>
 </article>
           </div>
           
@@ -147,7 +129,7 @@ If there are NO conditions, the system will try to process all documents into th
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/jobs/J30777.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/jobs/template.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
