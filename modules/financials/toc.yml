@@ -4,4 +4,8 @@
   href: Fixed Assets/toc.yml
 - name: VAT
   href: VAT/toc.yml
+- name: Cost Accounting
+  href: cost-accounting/toc.yml
+- name: Payments
+  href: payments/toc.yml
   
