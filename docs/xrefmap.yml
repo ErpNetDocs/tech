@@ -212,7 +212,7 @@ references:
   name: Non Agreed Services And Materials
   href: modules/applications/service/non-agreed-services-and-materials.html
 - uid: template-description-jobs
-  name: template-description-jobs
+  name: Jobs Documentation Template
   href: advanced/jobs/template.html
 - uid: track-changes
   name: Track Changes
