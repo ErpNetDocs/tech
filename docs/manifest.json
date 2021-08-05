@@ -1385,12 +1385,72 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J30632.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J30632.html",
+          "hash": "0xPi8cGrlowtBrdZuttUPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J30724.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J30724.html",
+          "hash": "ybqbPie4N/e2nJ/+VCLdrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J30777.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J30777.html",
+          "hash": "wLstG2hf2mYCQ6TiSKavWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J30903.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J30903.html",
+          "hash": "ntf63Xzuy5efo2bklNTD7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "advanced/jobs/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "NFEdWtPuexUrysnN0yjv7w=="
+          "hash": "IXAx1Pmgw5SwAf+Vw3GwWg=="
         }
       },
       "is_incremental": false,
@@ -1402,7 +1462,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "2RfOQd2uzkmm4BlK3hz6Qg=="
+          "hash": "EKJGjhCeu9H1LRMAbq75+Q=="
         }
       },
       "is_incremental": false,
@@ -3157,7 +3217,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "nTkhW20cjptSH96DpaDASw=="
+          "hash": "ONoLIGk9Pb47J75UfS2hvw=="
         }
       },
       "is_incremental": false,
