@@ -59,14 +59,6 @@ LOG: <br>
 [10:04:42] Succeeded: 259 <br>
 [10:04:42] Failed: 0*
 
-## Job Types
+## Available jobs
 
-The following is a list of the types of jobs, which can be scheduled:
-
-- [J30632 Notifications - Delete Old Notifications](xref:jobs-J30632)
-- [J30724 Scheduled Document Events - Run Scheduled Events](xref:jobs-J30724)
-- [J30777 Documents - Document State Change](xref:jobs-J30777)
-- [J30903 Document Print Images - Delete Old Document Print Images](xref:jobs-J30903)
-
-> [!note]
-> The table columns and content are explained in [Jobs Tamplate](xref:template-description-jobs)
+[!list items=Jobs limit=100 default-text="None"]
