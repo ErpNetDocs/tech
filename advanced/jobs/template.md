@@ -2,6 +2,12 @@
 uid: template-description-jobs
 ---
 
+# Jobs Documentation Template 
+
+Each Job has a documentation topic, which includes a standardized table which contains detailed information about the job. The standardized table allows us to organize data in a structured way and helps the reader to quickly navigate through the info.
+
+## The Table Columns and Content Explained
+
 | **Template Column Name** | **Template Column Description**                              |
 | :----------------------- | ------------------------------------------------------------ |
 | Code                     | Unique job code. Always starts with "J" and continues with a digit number. |
