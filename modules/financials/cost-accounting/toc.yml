@@ -1,0 +1,9 @@
+- name: Overview
+  href: index.md
+- name: Add production function
+  href: add-production-function.md
+- name: Calculate distribution function
+  href: calculate-distribution-function.md
+- name: Cost distribution
+  href: cost-distribution.md
+  
