@@ -1,4 +1,5 @@
 - name: Overview
   href: index.md
-- name: Determine Unit Price and Line Amount in Invoice Orders 
-  href: determine-unit-price-and-line-amount-in-invoice-orders.md 
+- name: Concepts
+  href: invoicing-concepts/toc.yml
+  
