@@ -1,13 +1,13 @@
 - name: Overview
   href: index.md
-- name: Sales Order Row Types
-  href: sales-order-row-types.md
-- name: Sales Order Payment Plan  
-  href: sales-order-payment-plan.md 
-- name: Amount to pay
-  href: amount-to-pay.md
 - name: Pricing
   href: pricing.md
 - name: Price types
   href: price-types.md
+- name: Default sales order payment plans
+  href: default-sales-order-payment-plans/toc.yml
+- name: Promotional packages
+  href: promotional-packages/toc.yml
+- name: Sales concepts
+  href: sales-concepts/toc.yml
   
