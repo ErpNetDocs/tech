@@ -1,0 +1,6 @@
+- name: Overview
+  href: index.md
+- name: Automatic lot creation
+  href: automatic-lot-creation.md
+- name: Setting cost when purchasing goods
+  href: setting-cost-when-purchasing-goods.md
