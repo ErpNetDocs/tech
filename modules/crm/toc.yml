@@ -1,4 +1,4 @@
-﻿- name: Overview
+- name: Overview
   href: index.md
 - name: Contacts and tasks
   href: contacts/toc.yml
@@ -8,4 +8,8 @@
   href: sales/toc.yml
 - name: Invoicing
   href: invoicing/toc.yml
+- name: Marketing
+  href: marketing/toc.yml
+- name: Crm common
+  href: crm-common/toc.yml
   
