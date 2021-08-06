@@ -7,7 +7,7 @@ Advance amounts are considered the amounts from all rows where the Party in the 
  
 The condition in the <i>Referent Invoice Number</i> field is appropriate for Sales Orders and Purchase Orders because there we expect that after the Invoice or the Purchase Invoice is released, the Payment Orders are (re)generated with data from the invoice and the <i>Referent Invoice Number</i> field would be filled in. 
  
-> [!]
+> [!NOTE]
 > So the Payment Order with no <i>Referent Invoice Number</i>, created before the invoice and its payment releases, is a payment before the invoice release and is considered an advance.
  
 <b><i>Example 1</i></b>:
