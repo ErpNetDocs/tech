@@ -1,3 +1,5 @@
+- name: Overview
+  href: index.md
 - name: Calculating cost for inventory reconciliation
   href: calculating-cost-for-inventory-reconciliation.md
 - name: Calculating cost for produced products
