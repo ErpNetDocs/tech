@@ -4,3 +4,6 @@
   href: zones-and-locations.md
 - name: Zone-based routing
   href: zone-based-routing.md
+- name: Push and pull task management
+  href: push-and-pull-task-management.md
+  
