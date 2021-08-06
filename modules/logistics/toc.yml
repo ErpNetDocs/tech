@@ -7,3 +7,7 @@
   href: inventory/toc.yml
 - name: Concepts
   href: logistics-common-module-concepts/toc.yml   
+- name: Procurement
+  href: procurement/toc.yml
+- name: Planning
+  href: planning/toc.yml
