@@ -1,6 +1,6 @@
 # Coding systems 
 
-*Coding systems* group together multiple **Product Codes** according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
+*Coding systems* group together multiple **[Product Codes](https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-codes.md)** according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
 
 A 'Default Measurement unit' could also be specified in coding systems. If a product code relating to a coding system with a default measurement unit is selected, then this unit must load in the document instead of the product's default unit. 
 
@@ -8,4 +8,4 @@ A 'Default Measurement unit' could also be specified in coding systems. If a pro
 
 -  Product’s part number loads in the field 'Product' in the particular sales order line; 
 - 'Quantity unit = Package' which correspond to the default measurement unit in the coding system’s definition; 
-- 'Unit price' must be recalculated according to the **Product Dimensions**. 
+- 'Unit price' must be recalculated according to the **[Product Dimensions](https://github.com/ErpNetDocs/tech/tree/master/modules/general/products/product-dimensions)**. 
