@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enterprise Asset Management | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enterprise Asset Management | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="enterprise-asset-management">Enterprise Asset Management</h1>
+
+<h2 id="description">Description</h2>
+<p>From Wikipedia:</p>
+<p>Enterprise Asset Management (EAM) involves the maintenance management of an organization’s physical assets throughout each asset's lifecycle. EAM is used to plan, optimize, execute, and track the needed maintenance activities with the associated priorities, skills, materials, tools, and information. This covers the design, construction, commissioning, operations, maintenance and decommissioning or replacement of plant, equipment and facilities.</p>
+<p>You can learn more at:</p>
+<p><a href="https://en.wikipedia.org/wiki/Enterprise_asset_management">Enterprise set management</a></p>
+<p>In ERP.net, the Enterprise Asset Management application deals with the maintenance and locations of the company assets.</p>
+<p>In the following sections, we will describe the different entity types, comprising the EAM data model.</p>
+<h2 id="maintenance-types">Maintenance Types</h2>
+<p>When planning the required maintenance for an asset, there are different types of maintenance that can be required.</p>
+<p>For example, if we have a car, we can plan:</p>
+<ul>
+<li>Insurance renewal - once per year</li>
+<li>Oil change - each 20,000 km</li>
+<li>Gearbox check - every 5 years OR 100,000 km</li>
+</ul>
+<p>Each of the above maintenances represents a different <em><strong>Maintenance Type</strong></em>.</p>
+<p>In an Enterprise, there might be many different types of assets. Each type of asset requires different maintenance types. Some maintenance types might be applicable for multiple asset types and others -  unique for specific asset types.</p>
+<p>There might be many maintenance types and they need to be organized. That is why, there is the hierarchical organization, called <em><strong>Maintenance Type Groups</strong></em>.</p>
+<h2 id="asset-types">Asset Types</h2>
+<p>In an enterprise, there might be many assets, which need to be managed. However, the different types of assets need different kinds of management. For this reason, we can define different <em><strong>Asset Types</strong></em>.</p>
+<p>Example asset types:</p>
+<ul>
+<li>Car</li>
+<li>Heavy Truck</li>
+<li>Aircraft</li>
+<li>Building</li>
+<li>Street Lamp</li>
+<li>Computer</li>
+</ul>
+<h2 id="asset-type---tracked-parameters">Asset Type - Tracked Parameters</h2>
+<p>For each asset type, we can track different parameters. For example:</p>
+<ul>
+<li>Car
+<ul>
+<li>Mileage (in km)</li>
+</ul>
+</li>
+<li>Heavy truck
+<ul>
+<li>Mileage (in km)</li>
+<li>Cycles</li>
+</ul>
+</li>
+<li>Airplane
+<ul>
+<li>Flight hours</li>
+<li>Cycles</li>
+</ul>
+</li>
+</ul>
+<p>The tracked parameters are used to track the usage and wearing out of the asset and hence plan the desired maintenance.</p>
+<h2 id="asset-type---maintenance-types">Asset Type - Maintenance Types</h2>
+<p>For each asset type, we define what kind of maintenance is needed for the assets of that type. Also, we can define a default schedule.</p>
+<p>For example:</p>
+<ul>
+<li>Car
+<ul>
+<li>Insurance - Every 12 months</li>
+<li>Oil - Every 15,000 km</li>
+<li>Gearbox</li>
+</ul>
+</li>
+<li>Heavy truck
+<ul>
+<li>Insurance - Every 12 months</li>
+<li>Oil - Every 30,000 km</li>
+<li>Gearbox</li>
+<li>Refrigerating compartment check etc.</li>
+</ul>
+</li>
+<li>Aircraft
+<ul>
+<li>A-Check - Every 200 cycles</li>
+<li>B-Check - Every 6 months</li>
+<li>C-Check - Every 20 months</li>
+<li>D-Check - Every 80 months</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+</div>
+<p>You can see here that although both cars and heavy trucks need oil change, the required mileage is different. In practice, every car and truck might have even different mileage requirements.</p>
+<h2 id="service-centers">Service Centers</h2>
+<p>When planning the maintenance of the assets, the different maintenances are executed by different <em><strong>Service Centers</strong></em>. Then, each maintenance schedule for an asset is assigned to a different service center.</p>
+<p>The service center might be an authorized service center for the asset. But it might also be an employee(s), executing the desired maintenance.</p>
+<h2 id="managed-assets">Managed Assets</h2>
+<p>Finally, we can define every asset, the maintenance of which will be managed by the application. The asset can be defined in other parts of the ERP - as fixed asset, as vehicle (in Fleet management), etc. Defining the asset in the EAM application as <em><strong>Managed Asset</strong></em>, allows its maintenance to be managed.</p>
+<p>Example managed assets:</p>
+<ul>
+<li>Car Peugeot 508, Y2016, Reg.No. CC0303PM</li>
+<li>Car Jeep Grand Cherokee, Y2017, Reg.No.YY0202PS</li>
+<li>Mobile Station 5011, Address:...etc.</li>
+</ul>
+<p>Because there might be many managed assets, they are organized in a hierarchy of <em><strong>Managed Asset Groups</strong></em>.</p>
+<h2 id="managed-assets---maintenance-schedules">Managed Assets - Maintenance Schedules</h2>
+<p>When an asset is defined as specific <em><strong>Asset Type</strong></em>, it inherits some default maintenance schedules. However, each asset might be of different age and wear and might have unique maintenance needs. Hence, the specific maintenance schedules of each specific managed asset are defined in</p>
+<p><em><strong>Managed Asset Maintenance Schedules</strong></em>.</p>
+<p>For example:</p>
+<ul>
+<li>Car Peugeot 508, Y2016, Reg.No. CC0303PM
+<ul>
+<li>Insurance - Every 12 months</li>
+<li>Oil - Every 18,000 km</li>
+</ul>
+</li>
+<li>Car Jeep Grand Cherokee, Y2017, Reg.No.YY0202PS
+<ul>
+<li>Insurance - Every 12 months</li>
+<li>Oil - Every 20,000 km</li>
+</ul>
+</li>
+</ul>
+<h2 id="managed-assets---scheduled-maintenances">Managed Assets - Scheduled Maintenances</h2>
+<p>The maintenance schedules define the general plan for maintenance. However, we have to schedule each specific maintenance as well. The scheduling might be for different reasons:</p>
+<ul>
+<li>The time limit after the last maintenance was reached (by date).</li>
+<li>The mileage for the next maintenance was reached (by tracked parameter).</li>
+<li>The asset was purchased second hand and one initial maintenance should be scheduled after up to 20 days (manually planned).</li>
+</ul>
+<p>Each of the above represents a <em><strong>Managed Asset Scheduled Maintenance</strong></em>. They can be both manually entered or automatically planned.</p>
+<p>Emergency repair is not planned hence it is not scheduled maintenance. Emergency repairs are directly processed through Maintenance orders (which will be shortly presented).</p>
+<h2 id="managed-assets---locations">Managed Assets - Locations</h2>
+<p>The EAM module allows the tracking of asset assignments to different company locations and responsible persons. Assets can also be re-assigned multiple times (even within a month).</p>
+<p>Asset assignment can be used to determine the cost centers to which the depreciation will be distributed.</p>
+<p>Asset locations contains data about each assignment:</p>
+<ul>
+<li>Date of assignment</li>
+<li>Company location</li>
+<li>Responsible person</li>
+<li>Notes - for more precise location or other notes.</li>
+</ul>
+<h2 id="maintenance-orders">Maintenance Orders</h2>
+<p>The <em><strong>Maintenance Order</strong></em>  document is the final data piece in the EAM data model. It represents one concrete appointment for a specific type of maintenance(s) for one (or many) specific asset(s).
+It is created by the maintenance planner to denote the actual appointment with the service center.
+The statuses of the maintenance order correspond to the progress of the maintenance:</p>
+<ul>
+<li>Firm planned - the maintenance is appointed with the service center for specific time and date.</li>
+<li>Released - the maintenance has started (used mostly for maintenances which are performed in-house)</li>
+<li>Completed - the maintenance was performed.</li>
+</ul>
+<p>Maintenance orders can create other sub-documents to represent the actual work (like Service orders) or the materials requested and used (Store order / Store transaction), etc.</p>
+<h2 id="maintenance-order---lines">Maintenance Order - Lines</h2>
+<p>One maintenance order can appoint at once the maintenance of many managed assets. Each maintenance type for each asset is represented with one <em><strong>Maintenance Order Line</strong></em>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/enterprise-asset-management/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

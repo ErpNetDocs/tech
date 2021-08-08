@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Serial Numbers | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Serial Numbers | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="serial-numbers">Serial Numbers</h1>
+
+<p>Serial Numbers are a way of identifying the different pieces of a product. They may be used for equipment, software, assets and more. With the Serial Numbers the user can follow what happens with objects, which are otherwise identified by the system with one product definition (i.e. one Product_Id). The Serial Numbers are also important for identification when providing guarantee and support.</p>
+<p>For example, in a Sales Order, the user may enter a row with three pieces which will have to be shipped separately (1 piece at a time). But (in the Sales Order) the user cannot mark which one of the three pieces is shipped first, which one is shipped second and etc. In the Sales Order, three Serial Numbers are entered, but in the Shipments, the user may specify by Serial Numbers which one is shipped each time and  which Shipment exactly refers to it.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The Serial Numbers are recorded in a separate table where each record is an individual Serial Number. Additional information is specified as Product, Lot (eventually), Availability (is the current piece blocked), Serial Number Card Data and more.</p>
+<p>This way of implementation is preferred instead of the initial idea of defining number groups. In this implementation, the numbers in each group cannot be identified by something other than the symbols of their record. This is not very helpful because there are cases with fundamental differences between two Serial Numbers which may be entered in one document row. For example, one of them may be blocked for future usage, and the second one - not. Other than that, visually, it looks better when the different Serial Numbers are displayed in different document rows. This corresponds with the fact that we treat the products with different Serial Numbers as different products.</p>
+<p>Also, the current implementation considerably eases the entering of Serial Numbers by barcode scanner. Tracking of the current availability is easier as well as the tracking of the product with a specified serial number.</p>
+<h2 id="usage-in-documents">Usage In Documents</h2>
+<p>Whether a product should be used with or without Serial Numbers is a property set in its definition - <em>Is Serialized</em> field. If a product is not serialized, Serial Numbers are <strong>forbidden</strong> when working with this product. If it is serialized, than serial number usage is <strong>required</strong> in Transactions and Reconciliations, and in the other documents it is <strong>allowed</strong>, but not required.</p>
+<p>Usually, Serial Numbers are entered in the Transactions and Reconciliations. In the previous documents (Receiving orders, Sales orders etc.) the user is able to enter a serial number but such kind of usage is rare. If the serial number is not entered, for example in the Receiving order, the user may enter just one row with the quantity of <strong>10 PCS</strong> and breaking down this row to 10 separated rows with different Serial Numbers and quantity of <strong>1 PCS</strong> happens in the Transaction. The main way to break down one row to several with different Serial Numbers happens through the Barcode commands panel for Store orders execution.</p>
+<h2 id="data-entry-validation">Data Entry Validation</h2>
+<p>The serial number is specified in the documents rows by selecting it from a dropdown list. When the value in this field changes, the following validations should be performed:</p>
+<ul>
+<li>if the row is a Transaction row or a Reconciliation row - then the value should be different than null only if the product is serialized;</li>
+<li>if the row is a different document row (not a Transaction or a Reconciliation) - then the value may (but not necessarily) be not-null only if the product is serialized. If it is not serialized, then null value is required;</li>
+<li>If there is a serial number in the row, then the quantity in the row must be 1, 0 or -1 and the measurement unit must be <em>pieces</em> ;</li>
+<li>if the entered value in the <em>Serial Number</em> field is different from null, then the product from the current row must be the same as the product in the serial number definition.</li>
+</ul>
+<h2 id="easy-entryselection">Easy Entry/Selection</h2>
+<p>Entering new Serial Numbers and selecting an already entered one should be as easy as possible.</p>
+<p>For this purpose when entering a serial number and in a dropdown list a number ( nonexistent in the database for the current product) is selected, then a record with this value is created in the database automatically. This will have the greatest effect when working with the Barcode Commands Panel. This panel has a working mode which creates new Serial Numbers and it is available only when <em>receiving</em> goods in the store. If the user <em>issues</em> goods, they can choose only Serial Numbers, which are already entered in the database.</p>
+<p>Also, there are modes for quick entering/selection of a list of Serial Numbers. By them the user may enter directly the numbers separated by commas (for example - &quot;KHC4500071, KHC4500072, KHC4500073, KHC4500074, KHC4500075, KHC4500076, KHC4500077&quot;), or they may set a range of numbers (in the previous example list, the user may enter just &quot;KHC4500071&quot; and &quot;KHC4500077&quot;).</p>
+<p>For more information about the Barcode panel's serial number modes, see <strong>Barcode Panel Modes</strong> and its subtopics.</p>
+<h2 id="availability-and-product-tracking">Availability And Product Tracking</h2>
+<p>The products availability (both current and at a specified date) for serialized products is detailed to serial number level.</p>
+<p>The same is valid for the stock movements reports. By them, the user is able to track the movements of specified products and their Serial Numbers. Such tracking is always executed by store documents (i.e. store movements) and if there comparing operations from specialized modules is required, then a link between the Transactions and the documents from the specified module is used (for example - links as [Parent Document] ↔ [Sub-Document]).</p>
+<p>For example, in Purchasing Orders Serial Numbers will rarely be entered (except for returns) and the Serial Numbers will show up in the Transactions. So if the user wants to see when a specified serial number is bought, then they would use stock movements and follow the link to the Purchasing orders (for example - through the parent document of the Store order).</p>
+<h3 id="see-also">See also:</h3>
+<ul>
+<li><strong>Serial Numbers Business Rules</strong></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/serial-numbers/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
