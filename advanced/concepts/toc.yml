@@ -2,9 +2,12 @@
   href: index.md
 - name: Aggregates
   href: aggregates.md 
-- name: Object Relational Mapping 
+- name: Object relational mapping 
   href: object-relational-mapping.md 
 - name: Master / Detail Attributes
   href: Master-detail-attributes.md
 - name: Scheduled document events
   href: scheduled-document-events/toc.yml
+- name: Default language
+  href: default-language.md
+  
