@@ -61,7 +61,7 @@ The current article contains a list of configuration keys and their values:
 - a.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
 - b.Set automatically by the system of the user.
 
-15. Кеу - **SalesOrderFiscalPrintChangeToState**
+15. Кеу - **SalesOrderFiscalPrintChangeToState (DEPRECATED)**
 - a.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
 - b.The user sets it manually.
 
@@ -147,7 +147,7 @@ The current article contains a list of configuration keys and their values:
 - a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
 - b.The user sets it manually
 
-32. Key - **PaymentTransactionFiscalPrintChangeToState**
+32. Key - **PaymentTransactionFiscalPrintChangeToState (DEPRECATED)**
 - a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
 - b.The user sets it manually.
 
