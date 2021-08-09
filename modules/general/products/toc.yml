@@ -1,19 +1,19 @@
 - name: Overview
   href: index.md
-- name: Product Dimensions
-  href: producti-dimensions/toc.yml
-- name: Product Groups
+- name: Product dimensions
+  href: product-dimensions/toc.yml
+- name: Product groups
   href: product-groups/toc.yml
-- name: Product Pictures
+- name: Product pictures
   href: product-pictures/toc.yml
-- name: Product Types
+- name: Product types
   href: product-types/toc.yml
-- name: Serial Numbers
+- name: Serial numbers
   href: serial-numbers/toc.yml
-- name: Product Codes
+- name: Product codes
   href: product-codes.md
-- name: Coding Systems
+- name: Coding systems
   href: coding-systems.md
-- name: Variable (Dynamic) Measurement Ratios
-  href: variable-(dynamic)-measurement-rations.md
+- name: Variable (dynamic) measurement ratios
+  href: variable-dynamic-measurement-rations.md
   
