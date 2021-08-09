@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Product dimensions | ERP.net Tech Docs </title>
+    <title>Scheduled Document Events | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Product dimensions | ERP.net Tech Docs ">
+    <meta name="title" content="Scheduled Document Events | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
-                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,48 +77,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="product-dimensions">Product dimensions</h1>
+<h1 id="scheduled-document-events">Scheduled Document Events</h1>
 
-<p><em>Product Dimensions</em> are used for conversion between different units of measurement for the same quantity. In order to make this possible, product dimensions must be set for the products as a ratio between multiplier and divider to the base unit.</p>
-<p>The formula for calculation of Quantity Base in the documents lines is as follows:</p>
-<p><strong>Quantity Base = Quantity * Product Dimension Dest Quantity / Product Dimension Source Quantity</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Required fields</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Quantity</td>
-<td style="text-align: left;">The quantity in the non-base unit.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Source Quantity Unit</td>
-<td style="text-align: left;">The non-base unit for which the conversion ratio is specified.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Dest Quantity</td>
-<td style="text-align: left;">The quantity in some of the base units.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Dest Quantity Unit</td>
-<td style="text-align: left;">The measurement unit of the dest quantity. Should be one of the units of the base measurement category of the product.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Measurement Category</td>
-<td style="text-align: left;">The measurement category of the source quantity unit. For each product, only one conversion ratio can be specified for a measurement category.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example:</strong></p>
-<p>We need to load two pallets of a product. But we know that each pallet contains 15 pieces. So the total pieces that we need to load are 30. This means that if we want to automate this calculation, we need to insert the following information to create a conversion ratio in the product dimensions:</p>
-<p><strong>Source quantity</strong> -  1.00</p>
-<p><strong>Source quantity unit</strong> -  Pallet</p>
-<p><strong>Dest quantity</strong> - 15.00</p>
-<p><strong>Dest quantity unit</strong> - Pcs</p>
-<p><strong>Measurement category</strong> - Complectation (e.g.)</p>
+<p>Scheduled Document Events are postponed events, which will be executed later.</p>
+<p>Usually, these are numerous recalculation events, resulting from other events. For example, releasing a cost correction creates scheduled events for all affected documents.</p>
+<p>The Scheduled Document Events have to be executed to be applied. In the case of a scheduled event created by a cost correction, the execution causes a resetting of the document state of the store transactions which was included in the cost correction. The resetting triggers the Accounting Voucher generation procedures and causes the re-accounting of documents, including the adjusted cost.</p>
+<p>The execution can be performed manually through the &quot;Execute Scheduled Evens&quot; navigator or automatically using the job <a href="https://github.com/ErpNetDocs/tech/blob/410296041dd31e2572dff39474157c429c83c8b8/advanced/jobs/J30724.md">J30724 - Run scheduled event</a>.</p>
 </article>
           </div>
           
@@ -127,7 +91,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-dimensions/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/scheduled-document-events/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -153,8 +117,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
