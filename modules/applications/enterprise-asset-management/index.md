@@ -7,7 +7,7 @@ Enterprise Asset Management (EAM) involves the maintenance management of an orga
 
 You can learn more at:
 
-[Enterprise set management](https://en.wikipedia.org/wiki/Enterprise_asset_management)
+[Enterprise asset management](https://en.wikipedia.org/wiki/Enterprise_asset_management)
  
 In @@name, the Enterprise Asset Management application deals with the maintenance and locations of the company assets.
 
@@ -31,7 +31,7 @@ There might be many maintenance types and they need to be organized. That is why
 
 ## Asset Types
 
-In an enterprise, there might be many assets, which need to be managed. However, the different types of assets need different kinds of management. For this reason, we can define different ***Asset Types***.
+In an Enterprise, there might be many assets, which need to be managed. However, the different types of assets need different kinds of management. For this reason, we can define different ***Asset Types***.
 
 Example asset types:
 
@@ -77,8 +77,8 @@ For example:
   - C-Check - Every 20 months
   - D-Check - Every 80 months
 
->[!NOTE]
-You can see here that although both cars and heavy trucks need oil change, the required mileage is different. In practice, every car and truck might have even different mileage requirements.
+> [!NOTE]
+> You can see here that although both cars and heavy trucks need oil change, the required mileage is different. In practice, every car and truck might have even different mileage requirements.
 
 ## Service Centers
 
@@ -123,13 +123,15 @@ The maintenance schedules define the general plan for maintenance. However, we h
 
 Each of the above represents a ***Managed Asset Scheduled Maintenance***. They can be both manually entered or automatically planned.
 
-Emergency repair is not planned hence it is not scheduled maintenance. Emergency repairs are directly processed through Maintenance orders (which will be shortly presented).
+> [!NOTE]
+> Emergency repair is not planned hence it is not scheduled maintenance. Emergency repairs are directly processed through Maintenance orders (which will be shortly presented).
 
 ## Managed Assets - Locations
 
 The EAM module allows the tracking of asset assignments to different company locations and responsible persons. Assets can also be re-assigned multiple times (even within a month).
 
-Asset assignment can be used to determine the cost centers to which the depreciation will be distributed.
+> [!NOTE]
+> Asset assignment can be used to determine the cost centers to which the depreciation will be distributed.
  
 Asset locations contains data about each assignment:
 
