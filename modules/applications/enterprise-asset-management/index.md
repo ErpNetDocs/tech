@@ -7,7 +7,7 @@ Enterprise Asset Management (EAM) involves the maintenance management of an orga
 
 You can learn more at:
 
-[Enterprise asset management](https://en.wikipedia.org/wiki/Enterprise_asset_management)
+https://en.wikipedia.org/wiki/Enterprise_asset_management
  
 In @@name, the Enterprise Asset Management application deals with the maintenance and locations of the company assets.
 
