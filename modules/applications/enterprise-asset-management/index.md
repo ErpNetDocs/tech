@@ -100,9 +100,7 @@ Because there might be many managed assets, they are organized in a hierarchy of
 
 ## Managed Assets - Maintenance Schedules
 
-When an asset is defined as specific ***Asset Type***, it inherits some default maintenance schedules. However, each asset might be of different age and wear and might have unique maintenance needs. Hence, the specific maintenance schedules of each specific managed asset are defined in 
-
-***Managed Asset Maintenance Schedules***.
+When an asset is defined as specific ***Asset Type***, it inherits some default maintenance schedules. However, each asset might be of different age and wear and might have unique maintenance needs. Hence, the specific maintenance schedules of each specific managed asset are defined in ***Managed Asset Maintenance Schedules***.
 
 For example:
 
@@ -143,7 +141,9 @@ Asset locations contains data about each assignment:
 ## Maintenance Orders
 
 The ***Maintenance Order***  document is the final data piece in the EAM data model. It represents one concrete appointment for a specific type of maintenance(s) for one (or many) specific asset(s).
+
 It is created by the maintenance planner to denote the actual appointment with the service center.
+
 The statuses of the maintenance order correspond to the progress of the maintenance:
 
 - Firm planned - the maintenance is appointed with the service center for specific time and date.
