@@ -45,7 +45,7 @@ The current article contains a list of configuration keys and their values:
 - a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
 - b.The user sets it manually.
 
-11. Key - **InvoiceFiscalPrintChangeToState**
+11. Key - **InvoiceFiscalPrintChangeToState (DEPRECATED)**
 - a.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
 - b.The user sets it manually.
 
