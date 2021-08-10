@@ -1,6 +1,10 @@
 # Calculate Distribution Function
-The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.
+
+The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, 
+it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.
+
 ## How does it work?
+
 The function performs the following steps:
 1. Calculate the sum of the weight coefficients of all outputs.
 2. For each output and for each cost type the distributed amount is calculated by the following algorithm: at first, it is assumed that a proportion of the distributed cost amounts is defined, so the distribution is executed. If we have **n** outputs which we have to distribute cost amounts on, for every row (a row is a combination of output and cost type) a weight is defined - **[k<sub>1</sub>]**, **[k<sub>2</sub>]** ... **[k<sub>n</sub>]**. So if the amount of the coefficients is  **[S]** (i.e. **[S]** = **[k<sub>1</sub>]** +**[k<sub>2</sub>]** + ... + **[k<sub>n</sub>]**) and this amount is not equal to 0, than the **i**-row the proportion is **[k<sub>i</sub>]/[S]**:
@@ -62,7 +66,7 @@ When the Calculate Distribution function is started, the Results table is filled
 - OutputLineNo = **40**; Cost Type: **CT1**; Distributed Amount Base: **33.52**; Calculation steps: **DistributedAmountBase** =  ROUND(20.00 / 66.22 * 100.93 ; 2) = 33.52;
 - OutputLineNo = **50**; Cost Type: **CT1**; Distributed Amount Base: **25.32**; Calculation steps: **DistributedAmountBase** =  ROUND(15.11 / 66.22 * 100.93 ; 2) = 25.32;
 
-Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10<sup>[2]</sup> =0.01**. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output** [LineNo=40]**. The final Results now would be as follows:
+Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10**<sup>[2]</sup> =0.01**. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output **[LineNo=40]**. The final Results now would be as follows:
 
 - OutputLineNo = **10**; Cost Type: ** CT1**; Distributed Amount Base: **25.32**;
 - OutputLineNo = **20**; Cost Type: ** CT1**; Distributed Amount Base: **0.00**;
@@ -71,6 +75,7 @@ Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **10
 - OutputLineNo =**50**; Cost Type: **CT1**; Distributed Amount Base: **25.32**.
  
  
-> **Note:** If the balance distribution amount in ***Example 2*** was 0.02, it would be distributed on OutputLineNo = **40** and OutputLineNo = **10** as these are the first two largest amounts through the rows.
+> [**!Note:]**
+>  If the balance distribution amount in ***Example 2*** was 0.02, it would be distributed on OutputLineNo = **40** and OutputLineNo = **10** as these are the first two largest amounts through the rows.
  
 
