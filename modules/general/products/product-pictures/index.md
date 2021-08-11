@@ -1,4 +1,4 @@
 # Product Pictures
 
-- **Product Pictures - Business Rules**
+- **Product Pictures Business Rules**
 
