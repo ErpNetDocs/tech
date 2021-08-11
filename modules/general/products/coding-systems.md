@@ -1,4 +1,4 @@
-# Coding systems 
+# Coding Systems 
 
 *Coding systems* group together multiple **[Product Codes](https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-codes.md)** according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
 
