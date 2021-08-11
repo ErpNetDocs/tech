@@ -1,4 +1,4 @@
-# Product dimensions
+# Product Dimensions
 
 
 *Product Dimensions* are used for conversion between different units of measurement for the same quantity. In order to make this possible, product dimensions must be set for the products as a ratio between multiplier and divider to the base unit. 
