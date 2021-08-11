@@ -14,7 +14,7 @@ Also, the current implementation considerably eases the entering of Serial Numbe
 
 ## Usage In Documents 
 
-Whether a product should be used with or without Serial Numbers is a property set in its definition - *Is Serialized* field. If a product is not serialized, Serial Numbers are **forbidden** when working with this product. If it is serialized, than serial number usage is **required** in Transactions and Reconciliations, and in the other documents it is **allowed**, but not required. 
+Whether a product should be used with or without Serial Numbers, is a property set in its definition - *Is Serialized* field. If a product is not serialized, Serial Numbers are **forbidden** when working with this product. If it is serialized, than serial number usage is **required** in Transactions and Reconciliations, and in the other documents it is **allowed**, but not required. 
 
 Usually, Serial Numbers are entered in the Transactions and Reconciliations. In the previous documents (Receiving orders, Sales orders etc.) the user is able to enter a serial number but such kind of usage is rare. If the serial number is not entered, for example in the Receiving order, the user may enter just one row with the quantity of **10 PCS** and breaking down this row to 10 separated rows with different Serial Numbers and quantity of **1 PCS** happens in the Transaction. The main way to break down one row to several with different Serial Numbers happens through the Barcode commands panel for Store orders execution. 
 
@@ -31,9 +31,9 @@ The serial number is specified in the documents rows by selecting it from a drop
 
 Entering new Serial Numbers and selecting an already entered one should be as easy as possible. 
 
-For this purpose when entering a serial number and in a dropdown list a number ( nonexistent in the database for the current product) is selected, then a record with this value is created in the database automatically. This will have the greatest effect when working with the Barcode Commands Panel. This panel has a working mode which creates new Serial Numbers and it is available only when *receiving* goods in the store. If the user *issues* goods, they can choose only Serial Numbers, which are already entered in the database. 
+For this purpose, when entering a serial number and in a dropdown list a number ( nonexistent in the database for the current product) is selected, then a record with this value is created in the database automatically. This will have the greatest effect when working with the Barcode Commands Panel. This panel has a working mode which creates new Serial Numbers and it is available only when *receiving* goods in the store. If the user *issues* goods, they can choose only Serial Numbers, which are already entered in the database. 
 
-Also, there are modes for quick entering/selection of a list of Serial Numbers. By them the user may enter directly the numbers separated by commas (for example - "KHC4500071, KHC4500072, KHC4500073, KHC4500074, KHC4500075, KHC4500076, KHC4500077"), or they may set a range of numbers (in the previous example list, the user may enter just "KHC4500071" and "KHC4500077"). 
+Also, there are modes for quick entering/selection of a list of Serial Numbers. By them, the user may enter directly the numbers separated by commas (for example - "KHC4500071, KHC4500072, KHC4500073, KHC4500074, KHC4500075, KHC4500076, KHC4500077"), or they may set a range of numbers (in the previous example list, the user may enter just "KHC4500071" and "KHC4500077"). 
 
 For more information about the Barcode panel's serial number modes, see **Barcode Panel Modes** and its subtopics. 
 
@@ -41,13 +41,13 @@ For more information about the Barcode panel's serial number modes, see **Barcod
 
 The products availability (both current and at a specified date) for serialized products is detailed to serial number level. 
 
-The same is valid for the stock movements reports. By them, the user is able to track the movements of specified products and their Serial Numbers. Such tracking is always executed by store documents (i.e. store movements) and if there comparing operations from specialized modules is required, then a link between the Transactions and the documents from the specified module is used (for example - links as [Parent Document] ↔ [Sub-Document]). 
+The same is valid for the stock movements reports. By them, the user is able to track the movements of specified products and their Serial Numbers. Such tracking is always executed by store documents (i.e. store movements) and if there comparing operations from specialized modules is required, then a link between the Transactions and the documents from the specified module is used (for example - links as [Parent Document] <-> [Sub-Document]). 
 
 For example, in Purchasing Orders Serial Numbers will rarely be entered (except for returns) and the Serial Numbers will show up in the Transactions. So if the user wants to see when a specified serial number is bought, then they would use stock movements and follow the link to the Purchasing orders (for example - through the parent document of the Store order).
 
 
 
-### See also: 
+### Also sее: 
 
 - **Serial Numbers Business Rules**
 
