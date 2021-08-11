@@ -10,5 +10,5 @@ Product Groups could also facilitate the creation of the individual products. Fo
 
 - Product Name Mask – specifies a mask for the name of the products created in the group or the sub-group. The function allows creation of more accurate names that follow a certain pattern. 
 
-Product Groups can also contain other important settings such as 'Product Group Required Properties', 'Principal Recipes', 'Product Supply', etc.
+Product Groups could also contain other important settings, such as 'Product Group Required Properties', 'Principal Recipes', 'Product Supply', etc.
 
