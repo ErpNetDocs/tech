@@ -5,5 +5,6 @@ This mechanism is applied in the lines of logistics documents. It is implemented
 
 **There are certain relations between the fields "Product", "Product Code" and "Quantity Unit":**
 
-- if the field 'Product Code' has a value or the value in the field is changed, then the value of the 'Quantity Unit' is taken from the definition of coding system (if set) to which the code belongs;
-- if the value in the field “Product” is changed, then the field 'Product Code' must be empty, because the product is no longer selected through this mechanism.
+- If the field 'Product Code' has a value or the value in the field is changed, then the value of the 'Quantity Unit' is taken from the definition of coding system (if set) to which the code belongs;
+
+- If the value in the field “Product” is changed, then the field 'Product Code' must be empty, because the product is no longer selected through this mechanism.
