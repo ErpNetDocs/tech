@@ -12,7 +12,8 @@ At first, the user has to enter the dates and (if necessary) store, where they a
 
 In the Distribution cost types table the user enters the cost types and their amounts.
 
-> [!**NOTE**]  The cost type amounts are entered in enterprise company base currency!
+> [!NOTE]  
+> The cost type amounts are entered in enterprise company base currency!
 
 The Distributed Cost Amount field accepts decimal values.
 
