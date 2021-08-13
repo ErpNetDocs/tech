@@ -1,7 +1,6 @@
 # Calculate Distribution Function
 
-The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, 
-it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.
+The function is used in the **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.
 
 ## How does it work?
 
@@ -14,14 +13,14 @@ This is a standard distribution algorithm. Specific cases are when **[S]** is **
 Sometimes the cost amount may not be able to be distributed exactly through the rows. In these cases, an attempt is made to allocate the balance through the rows which the amount is distributed to. Normally, it is impossible to distribute an equal part of the balance to all rows (otherwise there will be no balance). So the balance is distributed by the first several rows starting with the row with the largest amount. Also, in this balance distribution we cannot distribute less than:
            - [minimal balance distribution on a row] = 1 / 10<sup>[Round Scale]</sup>. (the round scale for line amounts is always 2 (currently), so we cannot distribute cost amount of less than 1/10<sup>2</sup> = 0.01)
   
-3. In the Results table the results of the step 2 are saved and for each combination of Output and Cost Type a new row is added.
+3. In the Results table, the results of step 2 are saved and for each combination of Output and Cost Type, a new row is added.
  
 ### Example 1
 Let's say there is a Cost Distribution document with two cost types with the following data:
 - Cost Type: **CT1**; Distributed Cost Amount: **100**;
 - Cost Type: **CT2**; Distributed Cost Amount: **500**;
 
-In the Outputs table the following rows are present:
+In the Outputs table, the following rows are present:
 
 - LineNo: **10**; Cost Object: **StoreTransactionLine1**; Weight Coefficient: **15.00**;
 - LineNo: **20**; Cost Object: **StoreTransactionLine2**; Weight Coefficient: **13.00**;
@@ -40,7 +39,7 @@ When the Calculate Distribution function is started, the Results table is filled
 - OutputLineNo = **50**; Cost Type: **CT1**; Distributed Amount Base: **44.36**; Calculation steps: **DistributedAmountBase** =  ROUND(29.99 / 67.60 * 100 ; 2) = 44.36;
 - OutputLineNo = **10**; Cost Type: **CT2**; Distributed Amount Base: **110.95**; Calculation steps: **DistributedAmountBase** =  ROUND(15.00 / 67.60 * 500 ; 2) = 110;
 - OutputLineNo = **20**; Cost Type: **CT2**; Distributed Amount Base: **96.15**; Calculation steps: **DistributedAmountBase**=  ROUND(13.00 / 67.60 * 500 ; 2) = 96.15;
-- OutputLineNo = **30**; Cost Type:**CT2**; Distributed Amount Base: **74.78**; Calculation steps: **DistributedAmountBase** =  ROUND(10.11 / 67.60 * 500 ; 2) = 74.78;
+- OutputLineNo = **30**; Cost Type: **CT2**; Distributed Amount Base: **74.78**; Calculation steps: **DistributedAmountBase** =  ROUND(10.11 / 67.60 * 500 ; 2) = 74.78;
 - OutputLineNo = **40**; Cost Type: **CT2**; Distributed Amount Base: **-3.70**; Calculation steps: **DistributedAmountBase** =  ROUND(-0.50 / 67.60 * 500 ; 2) = -3.70;
 - OutputLineNo = **50**; Cost Type: **CT2**; Distributed Amount Base: **221.82**; Calculation steps: **DistributedAmountBase** = ROUND(29.99 / 67.60 * 500 ; 2) = 221.82.
  
@@ -48,7 +47,7 @@ When the Calculate Distribution function is started, the Results table is filled
 
 Let's see an example where the sum of the DistributedAmountBase of a cost type is not the cost type Distributed Cost Amount. A Cost Distribution document is present with one cost type **CT1** with amount of **100.93**.
 
-In the Outputs table the following rows are present:
+In the Outputs table, the following rows are present:
 
 - LineNo: **10**; Cost Object: **StoreTransactionLine1**; Weight Coefficient: **15.11**;
 - LineNo: **20**; Cost Object: **StoreTransactionLine2**; Weight Coefficient: **0.00**;
@@ -66,16 +65,16 @@ When the Calculate Distribution function is started, the Results table is filled
 - OutputLineNo = **40**; Cost Type: **CT1**; Distributed Amount Base: **33.52**; Calculation steps: **DistributedAmountBase** =  ROUND(20.00 / 66.22 * 100.93 ; 2) = 33.52;
 - OutputLineNo = **50**; Cost Type: **CT1**; Distributed Amount Base: **25.32**; Calculation steps: **DistributedAmountBase** =  ROUND(15.11 / 66.22 * 100.93 ; 2) = 25.32;
 
-Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10**<sup>[2]</sup> =0.01**. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output **[LineNo=40]**. The final Results now would be as follows:
+Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = **100.92** and there is difference of 0.01 between the distributed Cost Amount of the **CT1** as it is **100.93**. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = **1 / 10**<sup>[2]</sup> =0.01. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output **[LineNo=40]**. The final Results now would be as follows:
 
-- OutputLineNo = **10**; Cost Type: ** CT1**; Distributed Amount Base: **25.32**;
-- OutputLineNo = **20**; Cost Type: ** CT1**; Distributed Amount Base: **0.00**;
+- OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **25.32**;
+- OutputLineNo = **20**; Cost Type: **CT1**; Distributed Amount Base: **0.00**;
 - OutputLineNo = **30**; Cost Type: **CT1**; Distributed Amount Base: **16.76**;
 - OutputLineNo = **40**; Cost Type: **CT1**; Distributed Amount Base: **33.53**; (the balance is distributed here)
 - OutputLineNo =**50**; Cost Type: **CT1**; Distributed Amount Base: **25.32**.
  
  
-> [**!Note:]**
+> [!NOTE]
 >  If the balance distribution amount in ***Example 2*** was 0.02, it would be distributed on OutputLineNo = **40** and OutputLineNo = **10** as these are the first two largest amounts through the rows.
  
 
