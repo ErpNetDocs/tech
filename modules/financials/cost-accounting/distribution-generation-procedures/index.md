@@ -1,4 +1,4 @@
 # Distribution generation procedures 
 
--  **FIN0801 Create store transactions**
+-  **FIN0801 Create Store Transactions**
 
