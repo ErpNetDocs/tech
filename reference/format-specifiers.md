@@ -11,19 +11,19 @@ For a complete list and more information, please look at the official .Net docum
 #### Numeric Format Specifiers
 - 'C', 'c' - abbreviation of Currency. Converts a number to a string that represents a currency amount. 
 - Can be used with a precision specifier that indicates the desired number of digits after the decimal point. The decimal symbol separator and the currency symbol depend on the local regional settings. Returns: <br>
-123,4656 ('C') → $123,46 <br>
-123,4656 ('C3') → $123,466
+123.4656 ('C') → $123.46 <br>
+123.4656 ('C3') → $123.466
 
 - 'D', 'd' -abbreviation of Decimal. Converts a number to a string of decimal digits (0-9), prefixed by a minus sign if the number is negative. Can be used with a precision specifier that indicates the desired number of digits after the decimal point. This format is supported only for integral types. Returns:1234 ('D') →  1234 <br>
 -1234 ('D6') → -001234
 
 - 'N', 'n' - abbreviation of Number. Converts a number to a string. Can be used with a precision specifier that indicates the desired number of digits after the decimal point. The decimal symbol separator depends on the local regional settings. Returns <br>
-123,4656 (N) → 123,47 <br>
-123,4656 (N3) → 123,466  
+123.4656 (N) → 123.47 <br>
+123.4656 (N3) → 123.466  
 
  - 'P', 'p' - abbreviation of Percent. Multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. The decimal symbol separator depends on the local regional settings. Returns <br>
-           0,488869 (P) → 48,89% <br>
-           0,488869 (P3) → 48,887%
+           0.488869 (P) → 48.89% <br>
+           0.488869 (P3) → 48.887%
 
 #### Date and Time Format Strings
 Standard date and time format specifiers can be used alone (standard date and time format string) or in a combination (custom format string) in order to define the text representation of a date and time value.
