@@ -6,4 +6,8 @@
   href: calculate-distribution-function.md
 - name: Cost distribution
   href: cost-distribution.md
+- name: Distribution Business Rules
+  href: distribution-business-rules/toc.yml
+- name: Distribution Generation Procedures
+  href: distribution-generation-procedures/toc.yml
   
