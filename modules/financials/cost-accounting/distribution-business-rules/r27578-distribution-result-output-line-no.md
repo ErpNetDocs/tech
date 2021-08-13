@@ -1,4 +1,4 @@
-# R27578 Distribution - Result Output Line No.
+# R27578 Distribution - Result Output Line No
 
 |Code| R27578
 |:----|:----
