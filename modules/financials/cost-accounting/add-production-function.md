@@ -1,4 +1,4 @@
-# Add production function
+# Add Production Function
 
 The function is used in the **[Cost distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)** document. When used, it adds the production from the specified period and store in the document.
 
