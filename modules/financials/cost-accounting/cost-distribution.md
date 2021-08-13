@@ -1,4 +1,4 @@
-# Cost distribution
+# Cost Distribution
 
 Cost Distribution document is used to distribute costs. The user may enter one or more cost types and their amounts. The cost distribution may be performed manually or automatically by using the integrated functions.
 
