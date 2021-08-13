@@ -46,7 +46,7 @@ When the Calculate Distribution function is started, the Results table is filled
  
 ### Example 2
 
-Let's see an example where the sum of the DistributedAmountBase of a cost type is not the cost type Distributed Cost Amount. A Cost distribution document is present with one cost type **CT1** with amount of **100.93**.
+Let's see an example where the sum of the DistributedAmountBase of a cost type is not the cost type Distributed Cost Amount. A Cost Distribution document is present with one cost type **CT1** with amount of **100.93**.
 
 In the Outputs table the following rows are present:
 
