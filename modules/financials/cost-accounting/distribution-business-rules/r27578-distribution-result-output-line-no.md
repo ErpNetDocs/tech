@@ -8,8 +8,8 @@
 |**Layer**|Back-End
 |**Events**|Planning +
 |**Modify**|NO
-|**Action**|For each DistributionResult line validate that: DistributionResult.OutputLineNo.CostDistribution == DistributionResult.CostDistribution**
+|**Action**|For each DistributionResult line, validate that:<br><br> DistributionResult.OutputLineNo.CostDistribution ==<br> DistributionResult.CostDistribution
 |**Description**| The results of one cost distribution document should direct to the Output record which is part of the current document. The current validation provides that one Cost distribution document will only distribute cost to its outputs.
-|**Message**|’Result Line No.{LineNo} of Document '{DocumentText}' has invalid Output line No. No such Output line number exists in the document.’
+|**Message**|"Result Line No.{LineNo} of Document '{DocumentText}' has invalid Output line No. No such Output line number exists in the document."
 |**Introduced version**|2017
 
