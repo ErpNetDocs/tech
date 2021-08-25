@@ -2,6 +2,7 @@
   href: index.md
 - name: Available to promise
   href: available-to-promise/toc.yml  
+  topicHref: available-to-promise/index.md
 - name: Goods cost
   href: goods-cost/toc.yml  
   topicHref: goods-cost/index.md
@@ -12,5 +13,6 @@
 - name: Projected available balance
   href: projected-available-balance.md 
 - name: Setting transaction timestamp
-  href: setting-transaction-timestamp/toc.yml  
+  href: setting-transaction-timestamp/toc.yml
+  topicHref: setting-transaction-timestamp/index.md
   
