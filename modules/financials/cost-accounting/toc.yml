@@ -8,6 +8,8 @@
   href: cost-distribution.md
 - name: Distribution business rules
   href: distribution-business-rules/toc.yml
+  topicHref: distribution-business-rules/index.md
 - name: Distribution generation procedures
   href: distribution-generation-procedures/toc.yml
+  topicHref: distribution-generation-procedures/index.md
   
