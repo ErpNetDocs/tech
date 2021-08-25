@@ -4,6 +4,7 @@
   href: available-to-promise/toc.yml  
 - name: Goods cost
   href: goods-cost/toc.yml  
+  topicHref: goods-cost/index.md
 - name: Lots issue
   href: lots-issue.md
 - name: Material requirements planning
