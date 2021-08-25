@@ -2898,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html",
-          "hash": "hFr8P+QDrbvYtF0iMduuGw=="
+          "hash": "rBvWvyjHvccd+bYdK/Mtng=="
         }
       },
       "is_incremental": false,
@@ -2910,7 +2910,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.html",
-          "hash": "SBjH+V9l4pjirVYFiG3+xg=="
+          "hash": "Vg4kWrO9MEkqvGjXqnmS9A=="
         }
       },
       "is_incremental": false,
@@ -2922,7 +2922,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html",
-          "hash": "smouYFlf78udziZv60cDjA=="
+          "hash": "9Mfepn4PS36flppJbUrhrw=="
         }
       },
       "is_incremental": false,
@@ -2934,7 +2934,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html",
-          "hash": "ZRdqV6oNSjKBkBrRW6iCbA=="
+          "hash": "XXTArSS+ADq3UNdZki834w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/toc.html",
+          "hash": "wdK1eOpewa3R2ZjPTQ3x+w=="
         }
       },
       "is_incremental": false,
@@ -3448,7 +3460,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "BjGzHOHD94eKO6uyygkD6g=="
+          "hash": "86oYpaHECBavWj5kuFOYSg=="
         }
       },
       "is_incremental": false,
