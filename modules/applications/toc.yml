@@ -2,5 +2,7 @@
   href: overview.md
 - name: Service
   href: service/toc.yml
+  topicHref: service/index.md
 - name: Enterprise asset management
   href: enterprise-asset-management/toc.yml
+  topicHref: enterprise-asset-management/index.md
