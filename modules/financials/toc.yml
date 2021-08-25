@@ -1,11 +1,15 @@
 - name: Overview
   href: overview.md
 - name: Fixed Assets
-  href: Fixed Assets/toc.yml
+  href: fixed-assets/toc.yml
+  topicHref: fixed-assetst/index.md
 - name: VAT
   href: VAT/toc.yml
+  topicHref: VAT/index.md
 - name: Cost Accounting
   href: cost-accounting/toc.yml
+  topicHref: cost-accounting/index.md
 - name: Payments
   href: payments/toc.yml
+  topicHref: payments/index.md
   
