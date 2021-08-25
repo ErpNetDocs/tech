@@ -6,4 +6,8 @@
   href: zone-based-routing.md
 - name: Push and pull task management
   href: push-and-pull-task-management.md
+- name: How It Works
+  href: how-it-works/toc.yml
+  topicHref: how-it-works/index.md
+  
   
