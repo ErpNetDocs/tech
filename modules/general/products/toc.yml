@@ -2,14 +2,19 @@
   href: index.md
 - name: Product dimensions
   href: product-dimensions/toc.yml
+  topicHref: product-dimensions/index.md
 - name: Product groups
   href: product-groups/toc.yml
+  topicHref: product-groups/index.md
 - name: Product pictures
   href: product-pictures/toc.yml
+  topicHref: product-pictures/index.md
 - name: Product types
   href: product-types/toc.yml
+  topicHref: product-types/index.md
 - name: Serial numbers
   href: serial-numbers/toc.yml
+  topicHref: serial-numbers/index.md
 - name: Product codes
   href: product-codes.md
 - name: Coding systems
