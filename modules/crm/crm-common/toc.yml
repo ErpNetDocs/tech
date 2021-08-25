@@ -2,4 +2,5 @@
   href: index.md
 - name: CRM common concepts
   href: crm-common-concepts/toc.yml
+  topicHref: crm-common-concepts/index.md
   
