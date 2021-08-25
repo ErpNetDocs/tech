@@ -2,10 +2,13 @@
   href: index.md
 - name: Execute store orders function
   href: execute-store-orders-function/toc.yml
+  topicHref: execute-store-orders-function/index.md
 - name: Lots
   href: lots/toc.yml
+  topicHref: lots/index.md
 - name: Store orders
   href: store-orders/toc.yml
+  topicHref: store-orders/index.md
 - name: Projected availability report
   href: projected-availability-report.md
 - name: Receipt and issue balance validation in store transfers
