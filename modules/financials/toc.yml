@@ -2,7 +2,7 @@
   href: overview.md
 - name: Fixed Assets
   href: Fixed Assets/toc.yml
-  topicHref: fixed-assetst/index.md
+  topicHref: Fixed Assets/index.md
 - name: VAT
   href: VAT/toc.yml
   topicHref: VAT/index.md
