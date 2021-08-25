@@ -2,14 +2,20 @@
   href: index.md
 - name: Contacts and tasks
   href: contacts/toc.yml
+  topicHref: contacts/index.md
 - name: Presales
   href: presales/toc.yml
+  topicHref: presales/index.md
 - name: Sales
   href: sales/toc.yml
+  topicHref: sales/index.md
 - name: Invoicing
   href: invoicing/toc.yml
+  topicHref: invoicing/index.md
 - name: Marketing
   href: marketing/toc.yml
+  topicHref:  marketing/index.md
 - name: CRM common
   href: crm-common/toc.yml
+  topicHref:  crm-common/index.md
   
