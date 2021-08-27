@@ -116,5 +116,5 @@ For document entities is provided an opportunity for mass activation of the Trac
 
 ## Default Tracking Levels
 
-[Default Tracking Levels](~/default-tracking-levels.md)
+[Default Tracking Levels](default-tracking-levels.md)
 
