@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cost Correction | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Cost Correction | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cost-correction">Cost Correction</h1>
+
+<p>The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md">Original Cost Calculation</a> describes how the original cost is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.</p>
+<p><b><i>Example 1:</i></b></p>
+<p>There are two receipt transactions and one issuing transaction entered in the system:</p>
+<ul>
+<li><p><b>receipt</b>, Timestamp: <b>05 Jan 2020 12:45, 4 PCS</b>, total cost: <b>100 EUR</b>;</p>
+</li>
+<li><p><b>receipt</b>, Timestamp: <b>05 Jan 2020 17:27, 3 PCS</b>, total cost: <b>75 EUR</b>;</p>
+</li>
+</ul>
+<p>According to the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md">Original Cost Calculation</a> for average cost, the issuing transaction should be:</p>
+<ul>
+<li><b>issue</b>, Timestamp: <b>08 Jan 2020 11:29, 5PCS</b>, total cost: 5 * (175/7) = <b>125 EUR</b>;</li>
+</ul>
+<p>There is another receipt transaction not entered on time. It happened on <b>07 Jan 2020</b>  and was entered on <b>08 Jan 2020</b>:</p>
+<ul>
+<li><b>receipt</b>, Timestamp: <b>07 Jan 2020 23:59, 3PCS </b>, total cost: <b>105 EUR</b>;</li>
+</ul>
+<p>If the third receipt transaction is entered on time, then the unit cost on <b>08 Jan 2020</b> would be 280/10 = <b>28</b>, not <b>25</b>, as it was originally calculated in the issuing transaction. This is happening due to the late entering of the transaction in the system. The cost of the issuing transaction is incorrect and a recalculation is needed.</p>
+<p>The effect of the incorrect cost from <b><i>Example 1</i></b> may influence not only issuing transactions. If the issuing operation was about ingredient consumption from the Production module, for example, then the cost of the production output would be incorrect as well. This leads to incorrect cost when issuing the production output.</p>
+<p>If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a>. This algorithm changes the costs as if they were entered on time. There is a document named Cost Correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.</p>
+<p>Cost Corrections allow the Original Cost to be changed. In each Transaction row the fields are as follows:</p>
+<p><b>[actual/corrected cost] = [original cost] + [adjustment cost]</b></p>
+<p>where:</p>
+<p><b>[original cost]</b> = the product, store, document, and base cost saved in the Transaction row;</p>
+<p><b>[adjustment cost]</b> = the sum of all product, store, document, and base cost values saved in the rows of all the released, non-voided Cost Corrections referring to the current Transaction row.</p>
+<p>For more specific information, see:</p>
+<ul>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md">Basic Algorithm For Cost Correction Calculation</a></p>
+</li>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.md">Models For Maintaining The Actual Cost</a></p>
+</li>
+<li><p><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.md">Specific Procedures of Cost Corrections</a></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/cost-correction/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

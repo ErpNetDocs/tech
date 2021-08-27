@@ -1191,6 +1191,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/data-objects/default-tracking-levels.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/data-objects/default-tracking-levels.html",
+          "hash": "TqnPCDDqyQ+Kl6sUhGFb2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/extensible-data-objects.md",
       "output": {
@@ -1215,12 +1230,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/track-changes.md",
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/track-changes.html",
-          "hash": "NBJGrUP8vf94WwH86A9bMQ=="
+          "hash": "oLdZ4TV+oUc+oqBVbgMe5w=="
         }
       },
       "is_incremental": false,
@@ -1486,7 +1504,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "qbzbfkYVw+rn05gtZZQNZw=="
+          "hash": "WKIptvO/RoKZacTXQoL8mQ=="
         }
       },
       "is_incremental": false,
@@ -2716,6 +2734,339 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/available-to-promise/atp-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/available-to-promise/atp-algorithm.html",
+          "hash": "4Te5g/mx97zxC19Km5wpvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/available-to-promise/atp-reports.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/available-to-promise/atp-reports.html",
+          "hash": "A0Sg4HtAHD09ugZBKoLuww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/available-to-promise/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/available-to-promise/index.html",
+          "hash": "eMQwbGOv2+gJBBEoz14lqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html",
+          "hash": "nFhIZPMLcyu6diw7P9NRMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/index.html",
+          "hash": "2ms0sVBtS50K5A9tMKL+Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html",
+          "hash": "pNygKy0hkzHrBf4JbGwGbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html",
+          "hash": "4iJh0SNP4wjKPuyEacxMNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/toc.html",
+          "hash": "wdK1eOpewa3R2ZjPTQ3x+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/index.html",
+          "hash": "bd373MeNE2w1Ti8fWnZnYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.html",
+          "hash": "w6pu4tWR2r3pXe4S3QwWFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html",
+          "hash": "9qCu0AhH/ZO3xK0Evalfdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html",
+          "hash": "7Ca/ZGQBd0u4a93iPBAGAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html",
+          "hash": "7qDl2XKYWFq+yeIkqVlb3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html",
+          "hash": "1JIVJIypBVf7LS61o/OPDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/index.html",
+          "hash": "5CrAys07k9TPpXoDDUH76g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/index.html",
+          "hash": "EAjPabOxi9uGWYokiIE+hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/lots-issue.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/lots-issue.html",
+          "hash": "oCe8oRi6szqBkBLFrjlnWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/material-requirements-planning.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/material-requirements-planning.html",
+          "hash": "t6bGTPdW2XQFROulGBtoHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/concepts/pictures/Picture_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/concepts/pictures/Picture_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/projected-available-balance.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/projected-available-balance.html",
+          "hash": "pfNrBBq9W8iTI/fy2bcy9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/index.html",
+          "hash": "uTSKg6AIFaM+E2NTckuWLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html",
+          "hash": "h/p6trOL8+O9fLM7T5wssg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html",
+          "hash": "vcG239za+IMber9iKQiwxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html",
+          "hash": "uUcY41LKXHcnGGa2mVUnVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html",
+          "hash": "MX9SKDayagjrUo7s7BOk7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/logistics/concepts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/concepts/toc.html",
+          "hash": "AzjTh0FYj+915+fcPrkhcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/index.md",
       "output": {
         ".html": {
@@ -2829,327 +3180,6 @@
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/store-orders-planning-and-due-dates.html",
           "hash": "L97rJBNBfV/Yq8A1KlrF4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-algorithm.html",
-          "hash": "fD/M8qi9TD8YbpZjCEF/BA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-reports.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/atp-reports.html",
-          "hash": "GEC/DLdPrvy7GJP0ZZ2xVA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/index.html",
-          "hash": "4Ve+lFAf7I5mz9VkGqxNfQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html",
-          "hash": "rBvWvyjHvccd+bYdK/Mtng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.html",
-          "hash": "Vg4kWrO9MEkqvGjXqnmS9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html",
-          "hash": "9Mfepn4PS36flppJbUrhrw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html",
-          "hash": "XXTArSS+ADq3UNdZki834w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/toc.html",
-          "hash": "wdK1eOpewa3R2ZjPTQ3x+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/index.html",
-          "hash": "7dqbysExjmllbAUO39Cp1w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.html",
-          "hash": "ldlX4sSMtyOW2qAa4JYkmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html",
-          "hash": "NF1e/K2DqQ77+RNwdrDN4g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html",
-          "hash": "bPAnWXlNBf8fmtAlZtiLUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html",
-          "hash": "gFXecfMxjwIR+Dp+bLXsHA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html",
-          "hash": "TOI3EtGmosGSjjiQGCVRDg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/index.html",
-          "hash": "PsC/z/HI4i3BgOODy6mTtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/index.html",
-          "hash": "NCOQEZJdzch13Iq7cS7l7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/lots-issue.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/lots-issue.html",
-          "hash": "luradaQ4FDnc2FZGCOUhLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/material-requirements-planning.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/material-requirements-planning.html",
-          "hash": "BoSe3sLd7yJRk0ZmP+lOVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/pictures/Picture_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/projected-available-balance.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/projected-available-balance.html",
-          "hash": "KbEwal76ZagE7V9vWjn5eA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/index.html",
-          "hash": "/txQ5iRA1JbCoDIows6CGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html",
-          "hash": "opBJU1WXNFH+sqlwHGhISg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html",
-          "hash": "wj2uJE6cflp363fRu557pQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html",
-          "hash": "lPWplc1MW5J4y/VgepHvwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/logistics-common-module-concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html",
-          "hash": "SjyJq0AuR8S91KpILtIItg=="
         }
       },
       "is_incremental": false,
@@ -3460,7 +3490,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "86oYpaHECBavWj5kuFOYSg=="
+          "hash": "8qVyNl6jzPBC5qKxEyuq8g=="
         }
       },
       "is_incremental": false,

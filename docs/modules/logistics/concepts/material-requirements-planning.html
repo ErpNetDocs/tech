@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Material Requirements Planning | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Material Requirements Planning | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="material-requirements-planning">Material Requirements Planning</h1>
+
+<p>Material Requirements Planning (MRP) is a planning process designed to match supply with demand. MRP does this by creating Supply (Purchase/Work/Transfer) Orders to meet or exceed the demand, according to the MRP parameters.</p>
+<p>Some information could be obtained from here:</p>
+<p><a href="https://en.wikipedia.org/wiki/Material_requirements_planning">https://en.wikipedia.org/wiki/Material_requirements_planning</a></p>
+<p>The MRP process in ERP.net is an implementation which mostly follows the general theory. However, in order to use MRP, you need to do the ERP.net-specific setup.</p>
+<h2 id="document-types-and-routes-setup">Document Types and Routes Setup</h2>
+<p>The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = <a href="https://github.com/ErpNetDocs/tech/blob/362feb42dff42c7bb6ce84d5bcde14d1afdc6ddb/advanced/documents/document-states.md">Planned</a>. Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.</p>
+<blockquote>
+<p>If a Store Order is generated solely for the purposes of MRP demand management, it can be set with the <i>Planning_Only</i> attribute. This attribute does not allow the setting of <i>Firm Planned</i> (or higher) states.</p>
+</blockquote>
+<h2 id="simplified-description-of-a-single-mrp-run">Simplified Description of a Single MRP Run</h2>
+<p>When MRP is run for a warehouse (Store), it does the following to <b>each</b> product:</p>
+<ol>
+<li><p>Calculates demand.</p>
+</li>
+<li><p>Determines whether a supply action is needed.</p>
+</li>
+<li><p>Determines the required quantity.</p>
+</li>
+<li><p>Creates a Purchase/Work/Transfer Order for the desired quantity.</p>
+</li>
+</ol>
+<blockquote>
+<p>When MRP is run for multiple warehouses (Stores), the system tries to prioritize the supply order of the warehouses. This might not always be successful, especially in cases of circular supply orders.</p>
+</blockquote>
+<h2 id="terms">Terms</h2>
+<p>There are many terms used in MRP. We will try to provide simple descriptions for some of them:</p>
+<ul>
+<li><p><i>Projected Available Balance (PAB)</i>- An <b>inventory balance</b> projected into the future. It is the sum of on-hand inventory minus requirements plus scheduled receipts and planned orders.</p>
+</li>
+<li><p><i>Planning Bucket</i> - the <b>smallest period</b> whose demand and supply are planned as a single unit. In ERP.net, it is fixed as <b>1 day</b>. In theory, it could be a day, week, month or some mixed system (for example, days in the near future, weeks in the far future, etc.).</p>
+</li>
+<li><p><i>Planning Horizon</i> - the period of time in the future for which demand is matched with supply. In ERP.net, it is currently fixed to <b>180 days</b>.</p>
+</li>
+</ul>
+<blockquote>
+<p>The <i>Planning Buckets</i> (also known as &quot;buckets&quot;) exist only within the time frame specified by the Planning Horizon. When we say &quot;bucket&quot;, it is a <i>Planning Bucket</i> in the future, but within the <i>Planning Horizon</i>.</p>
+</blockquote>
+<h2 id="time-fences">Time Fences</h2>
+<p>Time fences are boundaries between different periods in the planning horizon.</p>
+<ul>
+<li><p><i>From today to Demand Time Fence (DTF)</i> - the time period in the (near) future for which actual demand is considered accurate, and forecasts - inaccurate.
+The planning process considers only demand.</p>
+</li>
+<li><p><i>From DTF to Planning Time Fence (PTF)</i> - the time period between the DTF and PTF for which it is unknown whether the demand or the forecast is more accurate.
+The planning process considers bigger either the demand or forecast for each bucket.</p>
+</li>
+<li><p><i>After PTF</i> - only the forecasts are considered accurate.
+The planning process considers only forecasts.</p>
+</li>
+</ul>
+<h2 id="product-supply-definitions">Product Supply Definitions</h2>
+<p>The MRP process is set-up through the Product Supply definitions. Each definition contains the planning parameters for one product and one warehouse (Store).</p>
+<p>Every warehouse (Store) needs to create a separate product supply definition for each product, which will be planned for this warehouse.</p>
+<p>The Product Supply definitions parametrize the <b>when</b>, <b>how much</b>, and <b>how</b> of the MRP planning system.</p>
+<h3 id="procurement-type">Procurement Type</h3>
+<p>Procurement Type specifies what to do when a supply order needs to be created. The options are:</p>
+<ul>
+<li><p>Buy - Create a Purchase Order</p>
+</li>
+<li><p>Make - Create a Work Order</p>
+</li>
+<li><p>Transfer - Create a Transfer Order</p>
+</li>
+</ul>
+<h3 id="order-policy">Order Policy</h3>
+<p>The Order Policy specifies when the supply is not enough and a supply order needs to be created. The options are:</p>
+<ul>
+<li><p><b>MRP</b> - a supply order is created for:</p>
+<ul>
+<li>any demand for a bucket</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>if the <i>Projected Available Balance</i> for any bucket is less than the <i>Planning Safety Stock</i>.</li>
+</ul>
+</li>
+<li><p><b>OPS</b> - a supply order is created if the <i>PAB</i> for any bucket is less than the specified <i>Order Point</i>.</p>
+</li>
+<li><p><b>OPT</b> - a supply order is created if by the time of expected arrival of the ordered goods, the <i>PAB</i> is less than the specified <i>Order Point</i>.</p>
+</li>
+<li><p><b>PRS</b> - a supply order is created unconditionally on each order cycle. <i>Planning Order Cycle Days</i> specifies the number of days in the order cycle.</p>
+</li>
+</ul>
+<h3 id="lot-sizing-method">Lot Sizing Method</h3>
+<p>The Lot Sizing Method specifies how much should be ordered. It is divided in two separate calculations:</p>
+<ol>
+<li><p>Algorithm calculations.</p>
+</li>
+<li><p>Order modifiers</p>
+</li>
+</ol>
+<p>The selected algorithm calculates some order quantity. Then, order modifiers adjust the quantity with minimum, maximum, and lot-size modifiers.</p>
+<p>The algorithms are:</p>
+<ul>
+<li><p><b>FOQ</b> - Fixed Order Quantity - orders unconditionally what is specified in the Fixed Order Quantity.</p>
+</li>
+<li><p><b>EOQ</b> - Economic Order Quantity - orders the specified period in an efficient way, balancing between order-fixed and holding costs. For more information, see <a href="https://en.wikipedia.org/wiki/Economic_order_quantity">https://en.wikipedia.org/wiki/Economic_order_quantity</a>.</p>
+</li>
+<li><p><b>LFL</b> - Lot For Lot - orders the calculated demand for the bucket.</p>
+</li>
+<li><p><b>LFP</b> - Lot For Period - orders the required quantity for the bucket but adds enough quantity for the specified period ahead.</p>
+</li>
+<li><p><b>ROP</b> - Reorder Point - orders up to the specified <i>Planning Maximum Inventory</i>.</p>
+</li>
+<li><p><b>ROT</b> - Reorder Point with Time Planning - orders up to the specified <i>Planning Maximum Inventory</i> but also adjusts the quantity with the expected usage for the time the goods are in transit.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/material-requirements-planning.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
