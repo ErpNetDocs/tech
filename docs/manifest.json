@@ -1191,15 +1191,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/default-tracking-levels.md",
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/default-tracking-levels.html",
-          "hash": "TqnPCDDqyQ+Kl6sUhGFb2w=="
+          "hash": "rkw9GbqpGdy/MnF6V1pEnA=="
         }
       },
       "is_incremental": false,
@@ -1230,15 +1227,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/track-changes.md",
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/track-changes.html",
-          "hash": "oLdZ4TV+oUc+oqBVbgMe5w=="
+          "hash": "XCdQjveSLc+pzPQgdRK83w=="
         }
       },
       "is_incremental": false,
@@ -1721,6 +1715,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/concepts/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/concepts/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/concepts/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/concepts/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/concepts/pictures/Picture_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/concepts/pictures/Picture_1.png"
         }
       },
       "is_incremental": false,
@@ -2738,7 +2765,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/available-to-promise/atp-algorithm.html",
-          "hash": "4Te5g/mx97zxC19Km5wpvw=="
+          "hash": "6d5gE4rk4UlCFTxgywDP4Q=="
         }
       },
       "is_incremental": false,
@@ -2750,7 +2777,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/available-to-promise/atp-reports.html",
-          "hash": "A0Sg4HtAHD09ugZBKoLuww=="
+          "hash": "6oB6KUhnB9recZJZVOeToQ=="
         }
       },
       "is_incremental": false,
@@ -2762,7 +2789,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/available-to-promise/index.html",
-          "hash": "eMQwbGOv2+gJBBEoz14lqg=="
+          "hash": "ej5xKzEpegJhakTVhEN61g=="
         }
       },
       "is_incremental": false,
@@ -2856,7 +2883,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/index.html",
-          "hash": "bd373MeNE2w1Ti8fWnZnYA=="
+          "hash": "jh6glVYzTHo4gJRM8vXgPw=="
         }
       },
       "is_incremental": false,
@@ -2868,7 +2895,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.html",
-          "hash": "w6pu4tWR2r3pXe4S3QwWFQ=="
+          "hash": "A6H7kB9uwlr73BcHceCeKQ=="
         }
       },
       "is_incremental": false,
@@ -2880,7 +2907,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html",
-          "hash": "9qCu0AhH/ZO3xK0Evalfdw=="
+          "hash": "nFGAXQB9eMz4BvcpC85o0Q=="
         }
       },
       "is_incremental": false,
@@ -2892,7 +2919,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html",
-          "hash": "7Ca/ZGQBd0u4a93iPBAGAw=="
+          "hash": "oJKIuX/UEaAifulajx0XWw=="
         }
       },
       "is_incremental": false,
@@ -2904,7 +2931,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html",
-          "hash": "7qDl2XKYWFq+yeIkqVlb3A=="
+          "hash": "7pqUmmKfkopDJ+fvL4bmCA=="
         }
       },
       "is_incremental": false,
@@ -2916,7 +2943,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html",
-          "hash": "1JIVJIypBVf7LS61o/OPDA=="
+          "hash": "/bPsS9fF2BcBy5jzlJP7HQ=="
         }
       },
       "is_incremental": false,
@@ -2928,7 +2955,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/index.html",
-          "hash": "5CrAys07k9TPpXoDDUH76g=="
+          "hash": "AsCCI3udGlyQ6HlOgsHykQ=="
         }
       },
       "is_incremental": false,
@@ -2940,7 +2967,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/index.html",
-          "hash": "EAjPabOxi9uGWYokiIE+hA=="
+          "hash": "j6xNgYTsi5YPD959HN55ug=="
         }
       },
       "is_incremental": false,
@@ -2952,7 +2979,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/lots-issue.html",
-          "hash": "oCe8oRi6szqBkBLFrjlnWA=="
+          "hash": "Woud2kkcba8nDB3NBfBg+w=="
         }
       },
       "is_incremental": false,
@@ -2964,7 +2991,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/material-requirements-planning.html",
-          "hash": "t6bGTPdW2XQFROulGBtoHQ=="
+          "hash": "xdjfullCwd4NRLDcqWd++g=="
         }
       },
       "is_incremental": false,
@@ -2987,7 +3014,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/projected-available-balance.html",
-          "hash": "pfNrBBq9W8iTI/fy2bcy9g=="
+          "hash": "2yFyae4R+7tPfdnTlyhrxA=="
         }
       },
       "is_incremental": false,
@@ -2999,7 +3026,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/index.html",
-          "hash": "uTSKg6AIFaM+E2NTckuWLg=="
+          "hash": "VJjXoWsfZJw7KLfUM1A1eA=="
         }
       },
       "is_incremental": false,
@@ -3011,7 +3038,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html",
-          "hash": "h/p6trOL8+O9fLM7T5wssg=="
+          "hash": "YCODqI62RLnINnRYBtsF3g=="
         }
       },
       "is_incremental": false,
@@ -3023,7 +3050,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html",
-          "hash": "vcG239za+IMber9iKQiwxg=="
+          "hash": "PA3cKRQ/ePQLIBHWFHZGBw=="
         }
       },
       "is_incremental": false,
@@ -3035,7 +3062,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html",
-          "hash": "uUcY41LKXHcnGGa2mVUnVQ=="
+          "hash": "kS95g0pQhrvWiyhqHiROzQ=="
         }
       },
       "is_incremental": false,
@@ -3047,19 +3074,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html",
-          "hash": "MX9SKDayagjrUo7s7BOk7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/logistics/concepts/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/toc.html",
-          "hash": "AzjTh0FYj+915+fcPrkhcg=="
+          "hash": "lFXSYlQH1hry6Bx3HTybZg=="
         }
       },
       "is_incremental": false,
@@ -3490,7 +3505,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "8qVyNl6jzPBC5qKxEyuq8g=="
+          "hash": "ex5CiDTujMECoiuQDPrzDA=="
         }
       },
       "is_incremental": false,
