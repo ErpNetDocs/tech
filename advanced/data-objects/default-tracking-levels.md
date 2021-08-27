@@ -1,7 +1,5 @@
 ## Default Tracking Levels
 
-[Default Tracking Levels](~/default-tracking-levels.md)
-
 Some entities are configured by default to track their changes. The default tracking level is system configured and cannot be lowered. However, the users can specify higher tracking levels.
 
 The following table contains the default system specified tracking levels.
@@ -32,4 +30,4 @@ The following table contains the default system specified tracking levels.
 | Calculated Attributes | 3 | 2019.1 |
 | User Business Rules | 3 | 2019.1 |
 
-
+For more information on track changes, please check out [Track changes](~/track-changes.md)
