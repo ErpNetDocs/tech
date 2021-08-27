@@ -30,4 +30,4 @@ The following table contains the default system specified tracking levels.
 | Calculated Attributes | 3 | 2019.1 |
 | User Business Rules | 3 | 2019.1 |
 
-For more information on track changes, please check out [Track changes](~/track-changes.md).
+For more information on track changes, please check out [Track changes](track-changes.md).
