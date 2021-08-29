@@ -4,4 +4,4 @@ Community management is the management of the community of a company. This inclu
 
 - **Social interactions** 
 - **[Digital marketplace](https://github.com/ErpNetDocs/tech/blob/master/modules/community/digital-marketplace.md)** 
-- **Case management**
+- **[Case management](https://github.com/ErpNetDocs/tech/tree/master/modules/community)**
