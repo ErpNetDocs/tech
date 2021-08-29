@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Community | ERP.net Tech Docs </title>
+    <title>Digital Marketplace | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Community | ERP.net Tech Docs ">
+    <meta name="title" content="Digital Marketplace | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,13 +77,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="community">Community</h1>
+<h1 id="digital-marketplace">Digital Marketplace</h1>
 
-<p>Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users.</p>
+<p>A Digital Marketplace is a place, where developers publish, and the end-users obtain apps. When an app is activated (installed) on a user device, it is granted certain permissions to access the device resources. The marketplace can, but not necessarily, include functionality for downloading and embedding the app on the device.</p>
+<p>It resembles the way iOS and Android provide apps and other content (and allow the apps to access your phone).</p>
+<p>The main entities are:</p>
 <ul>
-<li><strong>Social interactions</strong></li>
-<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/digital-marketplace.md">Digital marketplace</a></strong></li>
-<li><strong><a href="https://github.com/ErpNetDocs/tech/tree/master/modules/community">Case management</a></strong></li>
+<li><strong>Marketplace</strong> - a place where developers publish, and the end-users obtain (install) apps. Each marketplace operates only for a single device type (class).</li>
+<li><strong>Marketplace App</strong> - third-party app, listed on a marketplace.  The app manifests a set of permissions, which might require functioning. An app can have multiple media resources, attached to it (through its data object), which can be used to display media to the end-user. An app is published by an App Developer.</li>
+<li><strong>Marketplace App Permission</strong> - permission, which the app might require. There are pre-install permissions, which are required to be granted before installation. Some permissions might be post-install and can be optional. Each app permission is of Marketplace Permission Type.</li>
+<li><strong>Marketplace App Review</strong> - a review and star rating from a user, who has installed the app. Uses the Social Interactions module for comments and reactions.</li>
+<li><strong>Marketplace App License Type</strong> - a type of license, which can be provided for an installed instance of the app. Some license types (for example for functionality) allow only a 0 or 1 license qty, while others allow multiple licenses (for example, for max users/max GB or any other max limit of the license).</li>
+<li><strong>Marketplace Permission Type</strong> - possible permission, which can be requested/granted to an installed application. Each permission type has a permission key, which is a unique string, identifying the permission.</li>
+<li><strong>User Device</strong> - a device under the user's control. It can be a phone, a computer, a database, a service, a user account (for example in a social network) or anything else, which can allow secure access of apps to its resources.</li>
+<li><strong>User Device App</strong> - an app from a marketplace installed and granted permission to access a device.</li>
+<li><strong>User Device App Permission</strong> - permission granted to a specific app for a specific user device.</li>
+<li><strong>User Device App License</strong> - a license granted to the user, using the app on the device. The app can request its license data through an API call. It is up to the app to limit its usage, based on its license information.</li>
+<li><strong>App Developer</strong> - a developer account. This is a third-party organization, developing applications for a marketplace. Each marketplace has a different set of approved app developers.</li>
+<li><strong>App Developer Users</strong> - user accounts, which have access to an App Developer account. Users can be admins, developers (edit app resources) and moderators (interact with app users). The user (and his role) can be for the whole developer account, or just for a single app.</li>
 </ul>
 </article>
           </div>
@@ -93,7 +104,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/digital-marketplace.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -2026,11 +2026,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/community/case-management.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/community/case-management.html",
+          "hash": "xHwHZzhVql0HAg2nIVmU3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/community/digital-marketplace.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/community/digital-marketplace.html",
+          "hash": "APFL7WqHaHK8foVGOS03SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/community/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/community/index.html",
-          "hash": "o8U91IC3Ox5U4Fmy6vbafQ=="
+          "hash": "Y0cPbapTHW6PySEJ8tGmMQ=="
         }
       },
       "is_incremental": false,
