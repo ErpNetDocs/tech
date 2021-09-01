@@ -15,4 +15,5 @@ EU Excise product categories
 
 https://ec.europa.eu/taxation_customs/dds2/seed/help/seedhpep.jsp?callbackuri=CBU-3&Lang=en
 
-![image-20210901155549283](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20210901155549283.png)
+![image](https://user-images.githubusercontent.com/50704486/131687759-0b6ef812-30c8-4b35-b070-dc73824bcbb4.png)
+
