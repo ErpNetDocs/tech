@@ -2581,6 +2581,42 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/excise-product-categories.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/excise-product-categories.html",
+          "hash": "+XsSgx0TFCGMg3+gTuxUcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/excise-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/excise-products.html",
+          "hash": "BjieQIAkq2PxhiZS6Mkydw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/index.html",
+          "hash": "gs7h2l6To70V8MR1C+l0Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/overview.md",
       "output": {
         ".html": {
