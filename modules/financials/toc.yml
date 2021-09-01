@@ -12,4 +12,6 @@
 - name: Payments
   href: payments/toc.yml
   topicHref: payments/index.md
-  
+- name: Excise
+  href: excise/toc.yml
+  topicHref: excise/index.md
