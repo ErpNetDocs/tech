@@ -1,2 +1,6 @@
 - name: Overview
   href: index.md
+- name: Excise product categories
+  href: excise-product-categories.md
+- name: Excise products
+  href: excise-products.md 
