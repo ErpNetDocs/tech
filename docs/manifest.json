@@ -2797,64 +2797,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/available-to-promise/atp-algorithm.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/available-to-promise/atp-algorithm.html",
-          "hash": "6d5gE4rk4UlCFTxgywDP4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/available-to-promise/atp-reports.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/available-to-promise/atp-reports.html",
-          "hash": "6oB6KUhnB9recZJZVOeToQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/available-to-promise/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/available-to-promise/index.html",
-          "hash": "ej5xKzEpegJhakTVhEN61g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/concepts/available-to-promise/pictures/picture2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md",
       "output": {
         ".html": {
@@ -2986,12 +2928,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/index.html",
-          "hash": "j6xNgYTsi5YPD959HN55ug=="
+          "hash": "aofKryyGR0tfBPvpuiw4pg=="
         }
       },
       "is_incremental": false,
@@ -3010,18 +2955,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/material-requirements-planning.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/material-requirements-planning.html",
-          "hash": "xdjfullCwd4NRLDcqWd++g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "modules/logistics/concepts/pictures/Picture_1.png",
       "output": {
@@ -3033,12 +2966,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/projected-available-balance.md",
+      "source_relative_path": "modules/logistics/concepts/planning/available-to-promise/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/concepts/projected-available-balance.html",
-          "hash": "2yFyae4R+7tPfdnTlyhrxA=="
+          "relative_path": "modules/logistics/concepts/planning/available-to-promise/index.html",
+          "hash": "pkvwFt7S7m7DYVwPkxMdsA=="
         }
       },
       "is_incremental": false,
@@ -3226,6 +3162,52 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/planning/available-to-promise/atp-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/planning/available-to-promise/atp-algorithm.html",
+          "hash": "Em9H+HtfZ5xvTXKIvwTkTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/planning/available-to-promise/atp-reports.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/planning/available-to-promise/atp-reports.html",
+          "hash": "tUYu2ZKd3lWuHsxlvxY67w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/planning/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/planning/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/planning/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/planning/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/planning/index.md",
       "output": {
         ".html": {
@@ -3238,23 +3220,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/planning/product-supply-business-rules/index.md",
+      "source_relative_path": "modules/logistics/planning/material-requirements-planning.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/planning/product-supply-business-rules/index.html",
-          "hash": "9pjnf2QnNOOKEHdwdJ6bIg=="
+          "relative_path": "modules/logistics/planning/material-requirements-planning.html",
+          "hash": "eGwRgMgh3QNY11uDWpesaA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/planning/product-supply-business-rules/r27435-productsupply-store.md",
+      "source_relative_path": "modules/logistics/planning/projected-available-balance.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/planning/product-supply-business-rules/r27435-productsupply-store.html",
-          "hash": "84pwu28npdJrLOZQV3dKvQ=="
+          "relative_path": "modules/logistics/planning/projected-available-balance.html",
+          "hash": "Ih+eLZWZbIEkJL2tQV7QEQ=="
         }
       },
       "is_incremental": false,
@@ -3529,7 +3514,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "SddVLYiqdpl9Xsu06GomOQ=="
+          "hash": "epJOPDtH4sjL/P12BoWQuQ=="
         }
       },
       "is_incremental": false,
