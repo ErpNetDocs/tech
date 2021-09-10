@@ -1,5 +1,5 @@
 - name: Overview
   href: index.md
 - name: Store order rows execution algorithm
-  href: store-order-rows-execution-algorithm/toc.yml
+  href: store-order-rows-execution-algorithm.md
   
