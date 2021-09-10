@@ -6,8 +6,6 @@
 - name: Product groups
   href: product-groups/toc.yml
   topicHref: product-groups/index.md
-- name: Product pictures
-  href: product-pictures/toc.yml
   topicHref: product-pictures/index.md
 - name: Product types
   href: product-types/toc.yml
