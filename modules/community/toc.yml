@@ -1,2 +1,6 @@
 - name: Overview
   href: index.md
+- name: Case management
+  href: case-management.md
+ - name: Digital marketplace
+  href: digital-marketplace.md
