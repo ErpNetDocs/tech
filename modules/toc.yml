@@ -11,7 +11,8 @@
 - name: Financials
   href: financials/toc.yml
 - name: Community Management
-  href: community/toc.yml  
+  href: community/toc.yml
+  topicHref: community/index.md
 - name: Applications
   href: applications/toc.yml
 - name: General
