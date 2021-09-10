@@ -2444,11 +2444,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/Fixed Assets/Depreciation Methods/overview.md",
+      "source_relative_path": "modules/financials/Fixed Assets/Depreciation Methods/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/Fixed Assets/Depreciation Methods/overview.html",
-          "hash": "AvhWqBo2I1SdCCnTLMpJzw=="
+          "relative_path": "modules/financials/Fixed Assets/Depreciation Methods/index.html",
+          "hash": "wdHww5aRBK2gz1R4SDeKdg=="
         }
       },
       "is_incremental": false,
@@ -2521,57 +2521,6 @@
         ".html": {
           "relative_path": "modules/financials/cost-accounting/cost-distribution.html",
           "hash": "dvofatezx74QVebwXBHZnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/cost-accounting/distribution-business-rules/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/cost-accounting/distribution-business-rules/index.html",
-          "hash": "nHdaXaBFTsvahDsp8j8tKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/cost-accounting/distribution-business-rules/r27578-distribution-result-output-line-no.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/cost-accounting/distribution-business-rules/r27578-distribution-result-output-line-no.html",
-          "hash": "a2YIAMWpnXLmgBoCDpUESQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/cost-accounting/distribution-generation-procedures/fin0801-create-store-transactions.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/cost-accounting/distribution-generation-procedures/fin0801-create-store-transactions.html",
-          "hash": "R/2BvDXQe0R9dT3JSXJsgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/cost-accounting/distribution-generation-procedures/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/cost-accounting/distribution-generation-procedures/index.html",
-          "hash": "SefNiJraLv83aO8aONn/WQ=="
         }
       },
       "is_incremental": false,
@@ -2950,15 +2899,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/index.html",
-          "hash": "aofKryyGR0tfBPvpuiw4pg=="
+          "hash": "oCP1mrImAmNJj3XHG5hNZQ=="
         }
       },
       "is_incremental": false,
@@ -3250,15 +3196,23 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/planning/pictures/Picture_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/planning/pictures/Picture_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/planning/projected-available-balance.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/projected-available-balance.html",
-          "hash": "5x15uTZvGKXe8pRsylG43g=="
+          "hash": "h5XiC10vgSa5TqV4opdSFQ=="
         }
       },
       "is_incremental": false,
@@ -3533,7 +3487,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "xLPyDddfdI6gOIYzGGIB+w=="
+          "hash": "fbLi0ADaZj+BrkWO7R0dRw=="
         }
       },
       "is_incremental": false,
