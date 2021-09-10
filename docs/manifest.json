@@ -2859,7 +2859,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html",
-          "hash": "nFhIZPMLcyu6diw7P9NRMg=="
+          "hash": "PO5lRBhQXGkHE5bAE5RNSw=="
         }
       },
       "is_incremental": false,
@@ -2871,7 +2871,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/index.html",
-          "hash": "2ms0sVBtS50K5A9tMKL+Dw=="
+          "hash": "R8zP3cyXVAsezKEZKzJz9A=="
         }
       },
       "is_incremental": false,
@@ -2883,7 +2883,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html",
-          "hash": "pNygKy0hkzHrBf4JbGwGbA=="
+          "hash": "4EYW7F8nuYpucuHJrpUdtg=="
         }
       },
       "is_incremental": false,
@@ -2895,19 +2895,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html",
-          "hash": "4iJh0SNP4wjKPuyEacxMNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/toc.html",
-          "hash": "wdK1eOpewa3R2ZjPTQ3x+w=="
+          "hash": "wf7jL+AABCXNoVqa9rTlxw=="
         }
       },
       "is_incremental": false,
@@ -3541,7 +3529,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "1jrQ5wIQWrtRqbUt7X9rLg=="
+          "hash": "SddVLYiqdpl9Xsu06GomOQ=="
         }
       },
       "is_incremental": false,
