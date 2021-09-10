@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: Goods cost
-  href: goods-cost/toc.yml  
 - name: Original cost calculation
   href: original-cost-calculation/toc.yml  
   
