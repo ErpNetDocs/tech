@@ -4,9 +4,8 @@
   href: pricing.md
 - name: Price types
   href: price-types.md
-- name: Default sales order payment plans
-  href: default-sales-order-payment-plans/toc.yml
-  topicHref: default-sales-order-payment-plans/index.md
+- name: Sales order payment plan
+  href: sales-order-payment-plan.md
 - name: Promotional packages
   href: promotional-packages/toc.yml
   topicHref: promotional-packages/index.md
