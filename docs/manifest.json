@@ -1788,6 +1788,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/available-to-promise/pictures/picture1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/available-to-promise/pictures/picture1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/available-to-promise/pictures/picture2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/available-to-promise/pictures/picture2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/WMS.png",
       "output": {
         "resource": {
@@ -2966,21 +2988,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/planning/available-to-promise/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/planning/available-to-promise/index.html",
-          "hash": "pkvwFt7S7m7DYVwPkxMdsA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/setting-transaction-timestamp/index.md",
       "output": {
@@ -3185,6 +3192,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/planning/available-to-promise/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/planning/available-to-promise/index.html",
+          "hash": "pd0TF4yMuCfgPB3nVL40Uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/logistics/planning/available-to-promise/pictures/picture1.png",
       "output": {
@@ -3239,7 +3258,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/projected-available-balance.html",
-          "hash": "Ih+eLZWZbIEkJL2tQV7QEQ=="
+          "hash": "5x15uTZvGKXe8pRsylG43g=="
         }
       },
       "is_incremental": false,
@@ -3514,7 +3533,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "epJOPDtH4sjL/P12BoWQuQ=="
+          "hash": "xLPyDddfdI6gOIYzGGIB+w=="
         }
       },
       "is_incremental": false,
