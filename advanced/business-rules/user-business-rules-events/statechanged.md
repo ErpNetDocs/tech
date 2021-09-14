@@ -4,9 +4,9 @@
 #### EVENT SUMMARY
 |Name|STATECHANGED
 |:-----|:-----
-|**Layer**|**Back-End**
-|**Description**|**Occurs when the document state is changed. The <br> state is specified in the 'Parameter' field. Possible <br>parameter values are 'PLANNED', 'FIRMPLANNED', <br> 'RELEASED', 'COMPLETED' and 'CLOSED'.**
-|**Version**|**Introduced: 2017.1 <br> Updated: -**
+|**Layer**| Back-End
+|**Description**| Occurs when the document state is changed. The <br> state is specified in the 'Parameter' field. Possible <br>parameter values are 'PLANNED', 'FIRMPLANNED', <br> 'RELEASED', 'COMPLETED' and 'CLOSED'.
+|**Version**| Introduced: 2017.1 <br> Updated: -
  
 The "STATECHANGED" event will occur AFTER the change of the Document state but BEFORE that change has actually been saved. 
 
