@@ -1,8 +1,8 @@
 
-# Social group members
+# Social Group Members
 
 This entity represents one membership of a user in a group.
 
-### Important attributes
+### Important Attributes
 
 - **Join time Utc** - this is automatically set by the server.
