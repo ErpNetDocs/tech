@@ -4,7 +4,7 @@
 |:------|:------
 |**Layer**|**Back-End**
 | **Description**|**Occurs when saving a change of the object, when the <br> change is made by a client application. If the change <br> is made by the server, the event will not be triggered.**
-| **Version**|**Introduced: 2019.1  Updated: -**
+| **Version**|**Introduced: 2019.1  <br>Updated: -**
 
 Thе event is a variation of the **COMMIT** and similar to it - it occurs for the particular object of the repository of the **User business rule** when an object change is saved. 
 
