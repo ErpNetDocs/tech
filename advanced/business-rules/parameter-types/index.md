@@ -6,4 +6,4 @@ The type of the parameter specifies how to obtain the parameter value. Several t
 - Attribute -  the value of the system or user-defined attribute;
 - Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;
 - ChildList - detailed objects, related to the current master object.
-- Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see **FormattedString**.
+- Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see [**FormattedString**](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md).
