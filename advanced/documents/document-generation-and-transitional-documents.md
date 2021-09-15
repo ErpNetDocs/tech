@@ -1,8 +1,8 @@
 ---
-uid: transitional-documents
+uid: document-generation-and-transitional-documents
 ---
 
-# Transitional Documents
+# Document Generation and Transitional Documents
 
 # Transitional Documents
 
