@@ -148,7 +148,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | **Shop Floor Module**                |                               |             |
 | Consumption Orders                   | NO                            | -           |
 | Output Orders                        | NO                            | -           |
-| Work Orders                          | NO                            | -           |
+| Work Orders                          | YES                           | 21.1        |
 | **Projects Management Module**       |                               |             |
 | Project Tasks                        | NO                            | -           |
 | Projects                             | NO                            | -           |
