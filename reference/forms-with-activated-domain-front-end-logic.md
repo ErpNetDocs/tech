@@ -204,7 +204,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | **Intrastat Module**                 |                               |             |
 | Intrastat Declarations               | YES                           | 21.1        |
 | **Fixed Assets Module**              |                               |             |
-| Acquire and Retire Orders            | NO                            | -           |
+| Acquire and Retire Orders            | YES                           | 21.1        |
 | Asset Categories                     | YES                           | 21.1        |
 | Asset Groups                         | YES                           | 21.1        |
 | Asset Transactions                   | NO                            | -           |
