@@ -92,7 +92,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | **Distribution Module**              |                               |             |
 | Customers - Products                 | YES                           | 20.1        |
 | Sales Person Groups                  | YES                           | 20.1        |
-| Sales Person Targets                 | NO                            | -           |
+| Sales Person Targets                 | YES                           | 21.1        |
 | Sales Persons                        | NO                            | -           |
 | **Pricing Module**                   |                               |             |
 | Pricing Models                       | YES                           | 20.1        |
@@ -207,7 +207,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | Acquire and Retire Orders            | YES                           | 21.1        |
 | Asset Categories                     | YES                           | 21.1        |
 | Asset Groups                         | YES                           | 21.1        |
-| Asset Transactions                   | NO                            | -           |
+| Asset Transactions                   | YES                           | 21.1        |
 | Assets                               | YES                           | 21.1        |
 | Depreciation Methods                 | YES                           | 21.1        |
 | Depreciation Plans                   | YES                           | 21.1        |
