@@ -75,7 +75,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | Resources - Availability             | YES                           | 20.1        |
 | Resources - Resource Instances       | YES                           | 20.1        |
 | Resource Groups                      | YES                           | 21.1        |
-| Activities - Time Intervals          | NO                            | -           |
+| Activities - Time Intervals          | NO                            | --          |
 | Companies - Divisions                | NO                            | -           |
 | Companies - Employees                | NO                            | -           |
 | Companies - Locations                | NO                            | -           |
