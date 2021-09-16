@@ -61,6 +61,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | Product Group - Required Properties  | NO                            | -           |
 | **Contacts & Tasks Module**          |                               |             |
 | Activities                           | YES                           | 20.1        |
+| ActivityParticipants                 | YES                           | 21.1        |
 | Areas                                | YES                           | 20.1        |
 | Call Detail                          | YES                           | 20.1        |
 | Companies                            | YES                           | 20.1        |
