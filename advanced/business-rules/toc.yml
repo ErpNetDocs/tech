@@ -7,11 +7,11 @@
   href: parameter-types/toc.yml
   topicHref: parameter-types/index.md
 - name: Events
-  href: events/toc.yml
-  topicHref: events/index.md
+  href: user-business-rules-events/toc.yml
+  topicHref: user-business-rules-events/index.md
 - name: Examples
-  href: examples/toc.yml
-  topicHref: examples/index.md
+  href: user-business-rules-examples/toc.yml
+  topicHref: user-business-rules-examples/index.md
 - name: Q & A
   href: QA/toc.yml
   topicHref: QA/index.md
