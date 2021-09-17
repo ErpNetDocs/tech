@@ -1,3 +1,8 @@
+---
+uid: format-specifiers
+---
+
+
 # Format Specifiers
 Format specifiers are used to state the desired format when formatting object values. 
 In @@name they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](../advanced/calculated-attributes/operators/formatstring.md) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the [SENDMAIL](../advanced/business-rules/action-types/sendmail.md) action (‘{DomainAttribute:FormatSpecifier}’). 
