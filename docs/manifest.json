@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/formatstring.html",
-          "hash": "Fa58BhrNeATEiQT/pRt4tw=="
+          "hash": "9uXPRhbGsefxHBKEUdN4SA=="
         }
       },
       "is_incremental": false,
@@ -2899,11 +2899,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/fixed-assets/overview.md",
+      "source_relative_path": "modules/financials/fixed-assets/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/fixed-assets/overview.html",
-          "hash": "reF/7Q2zhwgcPkpfSOva5A=="
+          "relative_path": "modules/financials/fixed-assets/index.html",
+          "hash": "89hDjDP+dzTnpYVOH0i8pw=="
         }
       },
       "is_incremental": false,
@@ -3822,7 +3822,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "KORnxbuAe5M4+ArsUKm5fw=="
+          "hash": "a4PPaoHlVkiOpotMLOyzZg=="
         }
       },
       "is_incremental": false,
