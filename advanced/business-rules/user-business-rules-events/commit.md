@@ -10,4 +10,4 @@ Occurs when data is saved into the database. It is used for all kinds of data ty
 
 Every time an object change is saved, the rule is activated (if it meets the conditions).
 
-The COMMIT event may be used, for example, to validate that all the necessary data of a product is entered. If not - throw an error (by using **FAIL** action) and do not save the product in the database until the entered data is correct.
+The COMMIT event may be used, for example, to validate that all the necessary data of a product is entered. If not - throw an error (by using **[FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/action-types/fail.md)** action) and do not save the product in the database until the entered data is correct.
