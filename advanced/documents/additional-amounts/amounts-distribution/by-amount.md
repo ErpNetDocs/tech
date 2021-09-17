@@ -83,10 +83,7 @@ There are **20%** VAT and three document rows - row \#10 with **100 EUR,** row \
 
  
 
-> [!NOTE] Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are 
-> negative - as it is discribed in [Percent Value Calculation](https://olddocs.erp.net/tech/percent-value-calculation-18382856.html), in these cases except the total amount of 
-> the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the 
-> positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.
+> **_NOTE:_**  note text Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in [Percent Value Calculation](https://olddocs.erp.net/tech/percent-value-calculation-18382856.html), in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.
 
 *Example 3:*
 
