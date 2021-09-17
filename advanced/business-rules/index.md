@@ -17,7 +17,7 @@ The user business rules have the following information:
 The events which has to happen so the user business rule to be activated  are described in the User Business Rules - Events panel. It is consisted of the following information:
 
 - Event Type - the event for which to register the user business rule;
-- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see [Business rules - Events](events/index.md);
+- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see [Business rules - Events](user-business-rules-events/index.md);
 - Execution Priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;
 - *Layer -* currently this is unavailable. All events are events of the BackEnd layer.
 
