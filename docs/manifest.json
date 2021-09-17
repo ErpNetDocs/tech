@@ -1452,15 +1452,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-amount.md",
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-amount.html",
-          "hash": "KSzVBs++xxXAAEv9qyQBuA=="
+          "hash": "WhDfbLeraXoeCWhbfuqoWw=="
         }
       },
       "is_incremental": false,
