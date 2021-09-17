@@ -184,6 +184,9 @@ references:
 - uid: extensible-data-objects
   name: Extensible Data Objects EDO
   href: advanced/data-objects/extensible-data-objects.html
+- uid: format-specifiers
+  name: Format Specifiers
+  href: reference/format-specifiers.html
 - uid: generation-procedures
   name: Generation Procedures Overview
   href: advanced/documents/generation-procedures.html
