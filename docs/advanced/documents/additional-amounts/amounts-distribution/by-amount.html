@@ -91,7 +91,7 @@
 <p>This is how each row coefficient is calculated. After that the distribution  is performed as usual, except for the case when the amount [<strong>S</strong>] is <strong>0</strong> and the additional amount is calculated as a percent. In this case the  amount is distributed equally through the rows and for each row the  calculation is performed like this:</p>
 <p>[row <strong>i</strong> distribution] = ROUND([<strong>ki</strong>] * [Input Percent], [Round Scale).</p>
 <p>The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row). Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). <em>Example 2,</em> below, demonstrate such distribution.</p>
-<p><em>Ecample 1:</em></p>
+<p><em>Example 1:</em></p>
 <p>There are the following additional amounts:</p>
 <ul>
 <li><p>Corporate Discount:</p>
@@ -122,7 +122,7 @@
 </ul>
 </li>
 </ul>
-<p>The document has two rows: row #10 for <strong>150 EUR</strong> and row #20 for <strong>40 EUR</strong>. In <a href="https://olddocs.erp.net/tech/percent-value-calculation-18382856.html">Percent Value Calculation</a> is explained how the additional amounts are calculated:</p>
+<p>The document has two rows: row \#10 for <strong>150 EUR</strong> and row \#20 for <strong>40 EUR</strong>. In <a href="https://olddocs.erp.net/tech/percent-value-calculation-18382856.html">Percent Value Calculation</a> is explained how the additional amounts are calculated:</p>
 <p>[Corporate Discount] = -<strong>5.70 EUR</strong></p>
 <p>[Eastern Bonus] = <strong>-10 EUR</strong></p>
 <p>[VAT] = <strong>34.86 EUR</strong></p>
