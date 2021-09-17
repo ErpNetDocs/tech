@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>Social Groups | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="Social Groups | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,15 +77,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="social-groups">Social Groups</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<p>The social groups are the primary areas (circles), where the social interactions occur.</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>Social groups have resemblance to Facebook groups.</li>
+<li>Unlike FB groups, the social posts are always in a group. There is no personal space, unless a personal group is defined.</li>
+</ul>
+<h3 id="important-attributes">Important Attributes</h3>
+<ul>
+<li><strong>Code</strong> - this is the unique code of the group. But the code is also used as a <em><strong>slug</strong></em>. The slug is used to form a part of the URL for the group, posts, etc.</li>
+<li><strong>Name</strong> - multi-language name of the group.</li>
 </ul>
 </article>
           </div>
@@ -95,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-groups.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

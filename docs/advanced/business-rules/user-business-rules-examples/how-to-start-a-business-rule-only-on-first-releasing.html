@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>How to start a Business Rule only on First Releasing? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="How to start a Business Rule only on First Releasing? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="how-to-start-a-business-rule-only-on-first-releasing">How to start a Business Rule only on First Releasing?</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
-<ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
-</ul>
+<p>Sometimes a business case may require a certain business rule to be executed only on first releasing of the document. The calculated attributes are a tool, which when triggered performs their calculation in real time. This means that if we use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not after a certain period of time.</p>
+<p>Let’s imagine that we use a business rule to allow releasing a Sales Order only if the lots used in its lines have not expired. The condition is fulfilled at the moment of the first releasing and the goods are delivered to the customer. But what if the Released state of the Sales Order is reselected after a month, because of an adjustment of the document notes? The rule will be executed again and the adjustment may be impossible because some of the lots could have expired until this time. But in this case, the expiration of the lots is no longer important for us.</p>
+<p>To avoid such cases, we can set a business rule that will be triggered only when we are releasing the document for the first time, even though the business rules do not support a First Releasing event parameter currently. We can create a calculated attribute (with a name &quot;IsFirstReleasing&quot;, for example) that check whether the releasing is first or not and returns &quot;true&quot; or &quot;false&quot;. For more information about the syntax of such attribute, see <strong>'Check whether the releasing of the document is first or not?'</strong> . We can later use this attribute as a Business rule condition &quot;#IsFirstReleasing = true&quot; which means the rule will be triggered only when the document is released for the first time and not when the Released state is reselected.</p>
 </article>
           </div>
           
@@ -95,7 +90,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-examples/how-to-start-a-business-rule-only-on-first-releasing.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>Allow a Credit Limit Override When the Client Pays in Cash | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="Allow a Credit Limit Override When the Client Pays in Cash | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,88 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="allow-a-credit-limit-override-when-the-client-pays-in-cash">Allow a Credit Limit Override When the Client Pays in Cash</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
-<ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
-</ul>
+<p>If we know when the 'System type' from 'Payment type' (Sales Order document) is set to be 'In cash', we can use that information to create a Business Rule that inserts a check mark in the field 'Credit Limit Override'.</p>
+<p>In this particular case we can get that information using the calculated attribute 'Check If the System type of Payment type in the Sales Order is 'In Cash'', which returns True or False.</p>
+<p>To allow a 'Credit Limit Override' when the client pays in cash, we can create a Business Rule with the following data:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Repository</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Crm.Sales.SalesOrders</td>
+</tr>
+</tbody>
+</table>
+<p>|<strong>Events</strong>
+|:-----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Event Type</th>
+<th style="text-align: left;">Event Parameter</th>
+<th style="text-align: left;">ExecutionPriority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Change of State</td>
+<td style="text-align: left;">RELEASING</td>
+<td style="text-align: left;">Normal</td>
+</tr>
+</tbody>
+</table>
+<p>|Conditions
+|:-----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Condition No</th>
+<th style="text-align: left;">Attribute Name</th>
+<th style="text-align: left;">Comparison Type</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">#IsInCash</td>
+<td style="text-align: left;">=</td>
+<td style="text-align: left;">True</td>
+</tr>
+</tbody>
+</table>
+<p>|Actions
+|:-----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action No</th>
+<th style="text-align: left;">Action Type</th>
+<th style="text-align: left;">Parameter1 Type</th>
+<th style="text-align: left;">Parameter1 Value</th>
+<th style="text-align: left;">Parameter2 Type</th>
+<th style="text-align: left;">Parameter1 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">SETVALUE</td>
+<td style="text-align: left;">Attribute</td>
+<td style="text-align: left;">CreditLimitOverride</td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">True</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!Note:] '#IsInCash' is a <strong>Calculated Attribute</strong>. &gt;For more information, see '<strong>Check If the System &gt;type of Payment type in the Sales Order Is 'In &gt;Cash'</strong>'.</p>
+</blockquote>
 </article>
           </div>
           
@@ -95,7 +167,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-examples/allow-a-credit-limit-override-when-the-client-pays-in-cash.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

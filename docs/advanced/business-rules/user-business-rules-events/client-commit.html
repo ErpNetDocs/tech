@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>CLIENT COMMIT | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="CLIENT COMMIT | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,33 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="client-commit">CLIENT COMMIT</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
-<ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
-</ul>
+<h4 id="event-summary">EVENT SUMMARY</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">CLIENTCOMMIT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;"><strong>Back-End</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;"><strong>Occurs when saving a change of the object, when the <br> change is made by a client application. If the change <br> is made by the server, the event will not be triggered.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;"><strong>Introduced: 2019.1  <br>Updated: -</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Thе event is a variation of the <strong>COMMIT</strong> and similar to it - it occurs for the particular object of the repository of the <strong>User business rule</strong> when an object change is saved.</p>
+<p>The difference is that it is triggered only when the saving is initiated by a client application, such as the ERP.net Windows Client. If the object is modified by the ERP.net server, then this event is not triggered. This could be used if, for example, we want the business rule to be executed when a user is manually saving a document, but the system is currently saving the document after its creation with a generation procedure.</p>
 </article>
           </div>
           
@@ -95,7 +112,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-events/client-commit.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>Whole Quantity Validation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="Whole Quantity Validation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,28 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="whole-quantity-validation">Whole Quantity Validation</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<p>If the business requires whole numbers only, user defined business rule may be set to check the users work.</p>
+<p>For example - a validation of the Sales Order Lines may be applied with the following data:</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>Repository: Crm.Sales.SalesOrderLines</li>
+<li>Events - COMMIT</li>
+<li>Action - <strong>FAIL</strong> + Parameter1Type = Constant + Parameter1 Value = &quot;You have entered decimal number as a quantity. Please, check the data entered in the Sales order lines and try again!&quot;</li>
+<li>Conditions: check if the calculated attribute from the example in <strong>here</strong> is equal to False</li>
 </ul>
+<p>When this user business rule is activated and if the user tries to release a Sales Order with the following lines:</p>
+<ul>
+<li>line 10 - product A - Quantity 5.05</li>
+<li>line 20 - product B - Quantity 5.00</li>
+</ul>
+<p>The system would return an error with the text we entered in the action of the user business rule - &quot;You have entered decimal number as a quantity. Please, check the data entered in the Sales Order Lines and try again!&quot;.</p>
+<p>With this user business rule activated, and if the sales order has the following lines:</p>
+<ul>
+<li>line 10 - product A - Quantity 5.00</li>
+<li>line 20 - product B - Quantity 5.00</li>
+</ul>
+<p>The release of the document would be possible.</p>
 </article>
           </div>
           
@@ -95,7 +107,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-examples/whole-quantity-validation.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

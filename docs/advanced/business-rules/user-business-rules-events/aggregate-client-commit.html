@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>AGGREGATE CLIENT COMMIT | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="AGGREGATE CLIENT COMMIT | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,15 +77,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="aggregate-client-commit">AGGREGATE CLIENT COMMIT</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<h4 id="event-summary">EVENT SUMMARY</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">AGGREGATECLIENTCOMMIT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-End</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs for the aggregate root when saving a change of an aggregate object, but only when the change is made by a client application. If the change is made by the server, the event will not be triggered.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2019.1, Updated:-</td>
+</tr>
+</tbody>
+</table>
+<p>The Aggregate Client Commit event is introduced in version 2019.1 and is a variation of the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-events/client-commit.md">Client Commit</a></strong> event. It allows triggering User Business Rules for objects which are an aggregate root, not only when there is a change for the object itself, but also when some of its referent objects are edited .</p>
+<p>For more information about the Aggregate's root, see <strong>Aggregates</strong>.</p>
+<p>Let's take a look at the following structure which is one single aggregate in ERP.net :</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>a Sales Order (which is the aggregate's root)</li>
+<li>the Sales Order Lines of this Sales Order</li>
+<li>the Distributed Amounts for each of these Sales Order Lines</li>
+<li>the Document Amounts of this Sales Order</li>
+<li>the Payment Plan of this Sales Order</li>
+</ul>
+<p>In the example above, the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-events/client-commit.md">Client Commit</a></strong> event would occur for the <strong>Sales Order</strong> only if the Sales Order object itself has changed. While the <strong>Aggregate Client Commit</strong> will occur for the <strong>Sales Order</strong> if any of the objects in the aggregate has changed. For example, changing just a single Sales Order Line (without changing the Sales Order itself) would still trigger the Sales Order
+Aggregate event.</p>
+<p><strong>In summary, a User Business Rule with an Aggregate Client Commit event will be triggered when:</strong></p>
+<ul>
+<li>the saving is performed by a client application;</li>
+<li>as the repository of the User Business Rule is an entity which is an aggregate root;</li>
+<li>there is a change for the aggregate root or for some of its constituent objects.</li>
 </ul>
 </article>
           </div>
@@ -95,7 +128,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-events/aggregate-client-commit.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

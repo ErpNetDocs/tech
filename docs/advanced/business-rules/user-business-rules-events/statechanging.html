@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>STATECHANGING | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="STATECHANGING | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,15 +77,40 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="statechanging">STATECHANGING</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<h4 id="event-summary">EVENT SUMMARY</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">STATECHANGING</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-End</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs during the document state change. The state is specified in the 'Parameter' field. Possible parameter values are 'PLANNING', 'FIRMPLANNING', 'RELEASING', 'COMPLETING' and 'CLOSING'.**</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2017.1 <br> Updated: -</td>
+</tr>
+</tbody>
+</table>
+<p>The &quot;Change of state&quot; event means that it happens during the change (before). If there is, for example, a FAIL action set on Change of state event, if the rule is activated, the state of the document would not be successfully changed. It would remain in its previous state.</p>
+<p>It is very important to set the event correctly. The event happens in the data which is set in the repository of the business rule. So if we set the &quot;Change of state&quot; event in user business rule with repository &quot;General.Products.Products&quot; this rule would never be activated because the products do not support the &quot;Change of state&quot; event. Also, if a rule has a repository with document lines, for example &quot;Crm.Invoicing.InvoiceLines&quot; this event would not be appropriate and would not activate the rule ever. This is because the document lines do not support the change of state event, this event is supported by documents (their headers).</p>
+<p>The event always goes with an event parameter. Possible values of the event parameter are:</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>PLANNING</li>
+<li>FIRMPLANNING</li>
+<li>RELEASING</li>
+<li>COMPLETING</li>
+<li>CLOSING</li>
 </ul>
 </article>
           </div>
@@ -95,7 +120,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-events/statechanging.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

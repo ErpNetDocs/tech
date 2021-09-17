@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>Social Interactions | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="Social Interactions | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,15 +77,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="social-interactions">Social Interactions</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<p>The SI module contains entities, representing the social interactions between internal and external users, just like in a social network (for example, Facebook).</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>The users are joined to <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-groups.md">Social groups</a></strong>.</li>
+<li>Each <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-posts.md">Social posts</a></strong> is always made in a group. There is no personal space like in Facebook.</li>
+<li>Each post can contain <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md">Social comments</a></strong>, replies and <strong>Reactions</strong>. Comments, replies and reactions can also be attached to any other data object in the system.</li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md">Notifications</a></strong> are special data records that contain information about a single notification of a user.</li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/notifications-settings.md">Notification settings</a></strong> allow the users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms.</li>
+</ul>
+<p>For more information, check the following topics:</p>
+<ul>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-groups.md"><strong>Social groups</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-group-members.md"><strong>Social group members</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-posts.md"><strong>Social posts</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md"><strong>Social comments</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-reactions.md"><strong>Social reactions</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md"><strong>Notifications</strong></a></li>
+<li><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/notifications-settings.md"><strong>Notification settings</strong></a></li>
 </ul>
 </article>
           </div>
@@ -95,7 +105,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

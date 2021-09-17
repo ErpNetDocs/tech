@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>FormattedString | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="FormattedString | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="formattedstring">FormattedString</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<p>Formatted String is a Parameter Type of the User Business Rules Actions which is introduced in version 2020.1. This parameter represents a text which supports multi-line, variable interpolation, and variable formatting. Usually used with <strong>NOTIFYUSER</strong> user businesses rule action.</p>
+<p>In more, details the functionalities which can be used in the value of the Formatted String parameter are:</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>escape charts</li>
 </ul>
+<p>The following escape chars are handled:<br>
+\n - newline - supported in the Body<br>
+\r\n - also new line - supported in the Body<br>
+{ - insert opening curly bracket '{' in output.<br>
+} - insert closing curly bracket '}' in output. <br></p>
+<ul>
+<li>variable interpolation</li>
+</ul>
+<p>Variable interpolation allows specifying variables into a string using placeholders which when executed are replaced with their corresponding values. In the perspective of EnterpriseOne those variables are the domain attributes - both system domain attributes and calculated attributes. When called the domain attribute value is calculated for the particular entity record for which the rule is executed. In order to specify a placeholder, aka call a domain attribute in text, we must specify the domain attribute name in curly brackets '{...}'.</p>
+<p>Currently are supported the following options:<br></p>
+<ol>
+<li>Attributes: {DocumentDate}, {#CalsulatedAttribute1}, {@CustomProperty1}. <br></li>
+<li>References: {Customer}.<br></li>
+<li>Reference path: {Customer.Party.PartyName}. Note that Child Collections are not supported.<br></li>
+</ol>
+<ul>
+<li>variable formatting - the value of the domain attributes which is going to be loaded in the text can be formatted using <strong>Format Specifiers</strong> - {DocumentDate:dd-MM-yyyy}.</li>
+</ul>
+<h4 id="example">Example</h4>
+<p>Using Formatted String, this text:<br></p>
+<pre><code> Your web store has e new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder Date: {DocumentDate:dd-MM-yyyy}\nShipping Address:
+ {ShipToPartyContactMechanism.ContactMechanism.Name}\nOrder Total: {#CalculatedAttributeTotalSalesOrderAmount:C}
+</code></pre>
+<p>will, for example, be returned as:</p>
+<pre><code> Your web store has e new order!
+</code></pre>
+<p>{SUMMARY}<br>
+Order Number: 00329<br>
+Order Date: 10-05-2019<br>
+Shipping Address: 21 Lombard St<br>
+Delivery Date: 12-05-2019<br>
+Order Total: $14.82<br></p>
 </article>
           </div>
           
@@ -95,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

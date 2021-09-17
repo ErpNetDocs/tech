@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>Social Comments | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="Social Comments | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,15 +77,34 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="social-comments">Social Comments</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
+<p>This represents a comment to a data object within the system.</p>
 <ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
+<li>Social posts are data objects. This is the most common object to which comments can be added.</li>
+<li>Besides social posts, there are other objects, which frequently are the target of comments:
+<ul>
+<li>Marketplace Products</li>
+<li>Documents</li>
+<li>Definitions</li>
+<li>Settings</li>
+</ul>
+</li>
+<li>However, comments can be added to any data object within the system.</li>
+</ul>
+<h3 id="important-attributes">Important Attributes</h3>
+<ul>
+<li><strong>Data Object</strong> - the data object, being commented.</li>
+<li><strong>Reply To Comment</strong> - the comment, to which the current comment replies. <br>
+If empty, the comment is a root comment to the data object.<br>
+Note, that the Data Object always points to the root data object, which is being commented (e.g., it does not point to a data object for a comment).</li>
+<li><strong>Comment Text</strong> - comment contents in clear text.</li>
+</ul>
+<blockquote>
+<p>Note: It is planned that text will be allowed to contain some mark-down constructs in the future.</p>
+</blockquote>
+<ul>
+<li><strong>Creation Time Utc</strong> - automatically set by the server to the time of the initial creation of the comment.</li>
 </ul>
 </article>
           </div>
@@ -95,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

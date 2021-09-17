@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>How to set DeliveryTerms in Purchase invoice? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="How to set DeliveryTerms in Purchase invoice? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,81 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="how-to-set-deliveryterms-in-purchase-invoice">How to set DeliveryTerms in Purchase invoice?</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
-<ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
-</ul>
+<p>The DeliveryTerms is enum type so it is accessed specifically. The values of the codes are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Member name</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ExWorks</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">ExWorks value. Stored as 'EXW'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FrancoCarrier</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">FrancoCarrier value. Stored as 'FCA'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FreeAlongsideShip</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">FreeAlongsideShip value. Stored as 'FAS'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">FreeOnBoard</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">FreeOnBoard value. Stored as 'FOB'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CostAndFreightCF</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">CostAndFreightCF value. Stored as 'CFR'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CostInsuranceAndFreight</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">CostInsuranceAndFreight value. Stored as 'CIF'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CarriagePaidTo</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">CarriagePaidTo value. Stored as 'CPT'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CarriageAndInsurancePaidTo</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">CarriageAndInsurancePaidTo value. Stored as 'CIP'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveredAtPlace</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">DeliveredAtPlace value. Stored as 'DAP'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveredAtTerminal</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">DeliveredAtTerminal value. Stored as 'DAT'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DeliveredDutyPaid</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">DeliveredDutyPaid value. Stored as 'DDP'.</td>
+</tr>
+</tbody>
+</table>
+<p>If there is a need to set a value in the purchase invoice in the DeliveryTerms field, the action of the user business rule must set a casted value from a calculated attribute in the DeliveryTermsCode attribute. The calculated attribute must cast an integer to type <br>
+'Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms'. For example - if the user wants to set SeliveryTermsCode on 'FOB' automatically, the user business rule must contain an action:</p>
+<p>1 SETVALUE ATTRIB:DeliveryTermsCode ATTRIB:#CA</p>
+<p>And the #CA should have an integer value, casted to 'Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms', for example:</p>
+<p>10 CAST CONST:3 CONST:Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms</p>
+<p>Having this business rule set up, when the event happens, it would set the Delivery Terms of the Purchase invoice to 'FOB'.</p>
 </article>
           </div>
           
@@ -95,7 +160,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/user-business-rules-examples/how-to-set-deliveryterms-in-purchase-invoice.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

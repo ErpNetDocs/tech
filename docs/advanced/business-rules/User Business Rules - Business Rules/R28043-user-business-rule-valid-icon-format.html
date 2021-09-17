@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User Business Rules Actions - Parameter Types | ERP.net Tech Docs </title>
+    <title>R28043 UserBusinessRule - Valid Icon Format | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User Business Rules Actions - Parameter Types | ERP.net Tech Docs ">
+    <meta name="title" content="R28043 UserBusinessRule - Valid Icon Format | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,16 +77,66 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules-actions---parameter-types">User Business Rules Actions - Parameter Types</h1>
+<h1 id="r28043-userbusinessrule---valid-icon-format">R28043 UserBusinessRule - Valid Icon Format</h1>
 
-<p>The type of the parameter specifies how to obtain the parameter value. Several types are available:</p>
-<ul>
-<li>Constant - when used, indicates that the Value for this parameter type would be a constant every time the rule is activated;</li>
-<li>Attribute -  the value of the system or user-defined attribute;</li>
-<li>Reference -  reference to another object; usually used with the Attribute parameter type as a second parameter - and the attributes would be attributes of the referenced object and not of the current repository;</li>
-<li>ChildList - detailed objects, related to the current master object.</li>
-<li>Formatted String - A text which supports multi-line, variable interpolation, and variable formatting. For more detailed information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/formattedstring.md"><strong>FormattedString</strong></a>.</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">R28043</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Entity</td>
+<td style="text-align: left;">UserBusinessRule</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">ValidIconFormat</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attribute</td>
+<td style="text-align: left;">Icon</td>
+</tr>
+<tr>
+<td style="text-align: left;">Layer</td>
+<td style="text-align: left;">Back-End</td>
+</tr>
+<tr>
+<td style="text-align: left;">Events</td>
+<td style="text-align: left;">Commit</td>
+</tr>
+<tr>
+<td style="text-align: left;">Priority</td>
+<td style="text-align: left;">Normal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Modify</td>
+<td style="text-align: left;">Normal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">Validate that:<br> UserBusinessRule.Icon.File.Extension == &quot;.JPG&quot;<br>UserBusinessRule.Icon.File.Extension ==&quot;.PNG&quot;<br>UserBusinessRule.Icon.File.Extension ==&quot;.SVG&quot;<br>UserBusinessRule.Icon.File.Extession == &quot;.ICO&quot;<br></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">There are certain recommendations for the right format of the icon image. <br> Valid file formats are .JPG, .PNG, .SVG, .ICO. All other formats are not allowed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">&quot;The icon must be .JPG,.PNG, .SVG or .ICO. <br> Please, use only images of those types.&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Introduced In Version</td>
+<td style="text-align: left;">2018.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Revocable</td>
+<td style="text-align: left;">NO</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -95,7 +145,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/parameter-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/User Business Rules - Business Rules/R28043-user-business-rule-valid-icon-format.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
