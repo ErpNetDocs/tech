@@ -1,5 +1,5 @@
 
-# User business rules
+# User Business Rules
 
 User Business Rules are business rules which the user defines on his  own. They may be used to provide some kind of validation which is not  available in the system business rules or to create working logic which  is not currently available in the software. They may be registered on  different layers - BackEnd and/or FrontEnd. The BackEnd means that the  user business rule is processed on the server. A FrontEnd user business  rule is processed in the client application.
 
