@@ -240,7 +240,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | Vehicles                             | YES                           | 21.1        |
 | **Mail Module**                      |                               |             |
 | Mail Messages                        | NO                            | -           |
-| Mailboxes                            | NO                            | -           |
+| Mailboxes                            | NO                            | --          |
 | **Data Warehouse Module**            |                               |             |
 | Data Measures                        | NO                            | -           |
 | Data Measures Groups                 | NO                            | -           |
