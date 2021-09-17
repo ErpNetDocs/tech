@@ -6,7 +6,7 @@ If the business requires whole numbers only, user defined business rule may be s
 For example - a validation of the Sales Order Lines may be applied with the following data:
 - Repository: Crm.Sales.SalesOrderLines
 - Events - COMMIT
-- Action - **FAIL** + Parameter1Type = Constant + Parameter1 Value = "You have entered decimal number as a quantity. Please, check the data entered in the Sales order lines and try again!"
+- Action - **[FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/action-types/fail.md)** + Parameter1Type = Constant + Parameter1 Value = "You have entered decimal number as a quantity. Please, check the data entered in the Sales order lines and try again!"
 - Conditions: check if the calculated attribute from the example in **here** is equal to False
 
 When this user business rule is activated and if the user tries to release a Sales Order with the following lines:
