@@ -6,3 +6,7 @@
 - name: Enterprise asset management
   href: enterprise-asset-management/toc.yml
   topicHref: enterprise-asset-management/index.md
+- name: Data Warehouse
+  href: data-warehouse/toc.yml
+  topicHref:  data-warehouse/index.md
+  
