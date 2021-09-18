@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CODE Validation (Strict) | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CODE Validation (Strict) | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="code-validation-strict">CODE Validation (Strict)</h1>
+
+<p>The strict CODE validation is stricter than the standard <strong>Code Validation</strong>.</p>
+<h3 id="discussion">Discussion</h3>
+<p>The primary reasons for creating codes are:</p>
+<ul>
+<li>Short visual identification of an entity. <br>
+The code does not need to fully describe the entity, just to uniquely identify it.</li>
+<li>Easily type the code in drop-down search fields.</li>
+<li>In case of need, easily write down the code.</li>
+<li>Sort (order) the entities by some logic.</li>
+</ul>
+<h3 id="allowed-characters">Allowed Characters</h3>
+<p>Under strict code validation, the code can contain only (in order of suggested usage):</p>
+<ul>
+<li>Digits</li>
+<li>Minus (-)</li>
+<li>Uppercase letters (the English alphabet only)</li>
+<li>Plus (+)</li>
+</ul>
+<p>Specifically, the following symbols are NOT allowed:</p>
+<ul>
+<li>Space ( )</li>
+<li>Dot (.)</li>
+<li>Forward slash (/)</li>
+<li>Back slash ()</li>
+<li>Lowercase letters</li>
+</ul>
+<p>The reason behind the strict limiting of the allowed code symbols is that this helps to concatenate, parse and generally - process the codes with more freedom.</p>
+<h3 id="length">Length</h3>
+<p>The default maximum length for CODE attributes is <strong>16 characters</strong>. It is however suggested that codes should be kept as 5 characters or less in length.</p>
+<h3 id="suggestions">Suggestions</h3>
+<p>When creating codes, there are some general rules, suggested to be followed:</p>
+<ol>
+<li><p>Usage of digits only is highly suggested.<br>
+Digits (and minus sign) are universal and language-agnostic. They can be typed on any keyboard (especially numeric keypads), without switching language settings. They are also easier to memorize.</p>
+</li>
+<li><p>It is better to create short, consecutive code, than a long, meaningful code (usually with several parts).</p>
+</li>
+<li><p>Usage of letters is generally not advised.</p>
+</li>
+<li><p>When letters are used, use uppercase English letters.</p>
+</li>
+<li><p>Keep codes short. Preferably 5 characters maximum. <br>
+Note: The human eye can read codes up to 5 chars in length directly (look at 78542). Longer codes need more attention to read (784521).</p>
+</li>
+<li><p>For a small (less than 20) number of items, meaningful, letters-only codes might be adequate. For example &quot;ABC&quot;, &quot;LIB&quot;, etc.</p>
+</li>
+<li><p>When creation of meaningful codes is unavoidable: <br>
+a. You can still use digits only, and keep the code type-able on a numeric keypad.<br>
+b. Separate the parts with a minus sign<br>
+c. Keep the length of each part to less than 5 chars.<br>
+d. Keep the total length to the minimum.<br>
+For example: &quot;01-1234&quot;.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/code-validation-strict.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

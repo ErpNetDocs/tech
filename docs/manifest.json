@@ -2233,6 +2233,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/applications/data-warehouse/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/data-warehouse/index.html",
+          "hash": "I4gKnQoE0iUMGMznsdz6Zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/applications/enterprise-asset-management/index.md",
       "output": {
         ".html": {
@@ -3828,7 +3840,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "zF52kd1v+x/y10JEjNWpng=="
+          "hash": "093jY2nd7eAA6jOTmolCbw=="
         }
       },
       "is_incremental": false,
@@ -3884,6 +3896,54 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "reference/glossary/code-validation-strict.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/code-validation-strict.html",
+          "hash": "Nx+ZtCUfbTAuUdcxb8zVwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/glossary/identifier-validation.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/identifier-validation.html",
+          "hash": "zzcT2RkV8ozbSXz0AdgpKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/glossary/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/index.html",
+          "hash": "cXN9vZQstq6zt0cnXfWIsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/glossary/username-validation.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/username-validation.html",
+          "hash": "ZvaoLDpFJz9RXxj4BXXteA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "reference/index.md",
       "output": {
         ".html": {
@@ -3924,7 +3984,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "l29SkQ/VQf6q9yIE8mjWPA=="
+          "hash": "6MIOXyDDkW0WPpmmlxyJaw=="
         }
       },
       "is_incremental": false,
