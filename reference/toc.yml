@@ -12,3 +12,6 @@
   href: system-permissions.md
 - name: Forms with Activated Domain Front-End Logic
   href: forms-with-activated-domain-front-end-logic.md
+- name: Glossary
+  href: glossary/toc.yml
+  topicHref: glossary/index.md
