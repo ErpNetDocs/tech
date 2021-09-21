@@ -25,7 +25,7 @@ The following symbols are **NOT** allowed:
 - Backslash (\)
 - Lowercase letters
 
-The reason for strict limiting of the allowed code symbols are concatenation, parsing and generally - processing of codes with more freedom.
+The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.
 
 ### Length
 The default maximum length for CODE attributes is **16 characters**. It is, however, recommended that codes should be 5 characters or less in length.
