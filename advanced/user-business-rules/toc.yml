@@ -13,6 +13,6 @@
   href: examples/toc.yml
   topicHref: examples/index.md
 - name: Q&A
-  href: QA/toc.yml
-  topicHref: QA/index.md
+  href: Q&A/toc.yml
+  topicHref: Q&A/index.md
   
