@@ -1,4 +1,4 @@
-# R28043 UserBusinessRule - Valid Icon Format
+# R28043 Valid Icon Format
 
 Code|R28043
 |:----|:----
