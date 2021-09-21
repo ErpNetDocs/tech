@@ -1,4 +1,4 @@
-# R28545 UserBusinessRule - Script Text Max Length
+# R28545 Script Text Max Length
 
 Code|R28545
 |:----|:----
