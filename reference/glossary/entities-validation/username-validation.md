@@ -3,15 +3,15 @@
 
 The rules for naming a user are:
 
-- Usernames can contain both lowercase and uppercase characters.
-- Usernames can contain alphanumeric characters.
-- Usernames can contain underscore and hyphens.
-- Cannot contain spaces.
-- Cannot contain two underscores, two hyphens or two spaces in a row.
-- Cannot contain an underscore, hyphen or space at start or end.
+- Usernames **can** contain both lowercase and uppercase characters.
+- Usernames **can** contain alphanumeric characters.
+- Usernames **can** contain underscore and hyphens.
+- They **cannot** contain spaces.
+- They **cannot** contain two underscores, two hyphens or two spaces in a row.
+- They **cannot** contain an underscore, hyphen or space at the start or the end.
  
  
-For example, these are valid usernames:
+These are **valid** usernames:
 
 - username
 - userName
@@ -21,15 +21,15 @@ For example, these are valid usernames:
 - user-name
  
  
-Invalid usernames could be:
+These are **invalid** usernames:
 
--  username (there is a ' ' in the beginning)
+-  username (there is space in the beginning)
 - _username
 - -username
 - user__name
 - user  name
 - user–name
 - username_
-- username  (there is a ' ' in the end)
+- username  (there is space in the end)
 - username-
 - user name
