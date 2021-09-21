@@ -22,11 +22,16 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@Property1|Attribute|@Property2
 
->[NOTE!]: Both Custom Property's Value and Custom Property's Description are copied.
+> ![NOTE]
+>
+> Both Custom Property's Value and Custom Property's Description are copied.
  
->[NOTE!]: In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another Entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and Copying Custom Properties**.
+> ![NOTE] 
+> 
+> In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another Entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and Copying Custom Properties**.
  
 ### Example 2 -  Set a specific value that is not copied from another Custom Property's value:
+
 If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a Sales Order Document, then we can create a **[User Business Rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/index.md)** with the following data:
 
 Repository
@@ -47,9 +52,13 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@PropertyCode|Constant|'StringValue01
 
->[NOTE!]: Using this method, we can only set the Custom Property's Value and not its Description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the 'But what if the custom property has allowed values and we want to set one of them?' section below.
+>![NOTE]
+>
+> Using this method, we can only set the Custom Property's Value and not its Description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the 'But what if the custom property has allowed values and we want to set one of them?' section below.
 
->[NOTE!]:  Parameter2 Type is not limited to a Constant. We could use the Attribute type as well and load the value from another system Attribute or a **Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. Note, however, that the value must be from a String type. If it is not, you can cast or convert the value to a String using a **Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** and use that **Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** in the  **[User Business Rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/index.md)**.
+>![NOTE]
+>
+> Parameter2 Type is not limited to a Constant. We could use the Attribute type as well and load the value from another system Attribute or a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. Note, however, that the value must be from a String type. If it is not, you can cast or convert the value to a String using a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** and use that **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** in the  **[User Business Rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/index.md)**.
 
 #### But what if the custom property has allowed values, and we want to set one of them?
 
