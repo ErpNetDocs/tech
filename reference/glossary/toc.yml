@@ -1,9 +1,5 @@
 - name: Overview
   href: index.md
-- name: Code Validation (Strict)
-  href: code-validation-strict.md
-- name: Identifier Validation
-  href: identifier-validation.md
-- name: Username Validation
-  href: username-validation.md
+- name: Entities validation
+  href: entities-validation/toc.yml
   
