@@ -1,9 +1,9 @@
 - name: Overview
   href: index.md
-- name: Code validation (strict)
+- name: Code (strict)
   href: code-validation-strict.md
-- name: Identifier validation
+- name: Identifier
   href: identifier-validation.md
-- name: Username validation
+- name: Username
   href: username-validation.md
   
