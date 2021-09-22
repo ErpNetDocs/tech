@@ -4,6 +4,8 @@
   href: config-options-reference.md
 - name: Format Specifiers 
   href: format-specifiers.md
+- name: System Variables
+  href: system-variables.md
 - name: Module Codes
   href: module-codes.md
 - name: Country Specific Functionality
