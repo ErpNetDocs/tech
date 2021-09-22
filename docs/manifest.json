@@ -26,90 +26,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/QA/How to Use Business Rules to Set a Value into a Custom Property.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/QA/How to Use Business Rules to Set a Value into a Custom Property.html",
-          "hash": "ZjeAZ8+pPLoY2WwLVVukBA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/QA/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/QA/index.html",
-          "hash": "SdiyaEfLIkgO2/EJ44p9hw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/User Business Rules - Business Rules/R28043-user-business-rule-valid-icon-format.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/User Business Rules - Business Rules/R28043-user-business-rule-valid-icon-format.html",
-          "hash": "1NnMGFJyH3rP9u2GSFBEbw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/User Business Rules - Business Rules/R28545-user-business-rule-script-text-max-length.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/User Business Rules - Business Rules/R28545-user-business-rule-script-text-max-length.html",
-          "hash": "D5u2ft6bQunNZ+UgNGOW/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/User Business Rules - Business Rules/R31067-user-business-rule-code(code).md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/User Business Rules - Business Rules/R31067-user-business-rule-code(code).html",
-          "hash": "cB+Qe2akmoJTrECg3bqyYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/User Business Rules - Business Rules/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/User Business Rules - Business Rules/index.html",
-          "hash": "p4SJdtu49mG6rjirdiDNEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "advanced/business-rules/User Business Rules - Business Rules/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/business-rules/User Business Rules - Business Rules/toc.html",
-          "hash": "yEyVhWbpHbmdcYVci96Aog=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "advanced/business-rules/action-types/fail.md",
       "output": {
         ".html": {
@@ -175,6 +91,18 @@
         ".html": {
           "relative_path": "advanced/business-rules/action-types/warning.html",
           "hash": "xOg6U1v+TZsjVV362Z110g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/business-rules/business-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/business-rules/business-rules/index.html",
+          "hash": "lVbAkggAT7fYS55y8OEE0A=="
         }
       },
       "is_incremental": false,
@@ -290,11 +218,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/business-rules/user-business-rules-events/user-business-rules-events-business-rules/R30055-user-business-rule-event -is-repository-aggregate-root.md",
+      "source_relative_path": "advanced/business-rules/user-business-rules-events/user-business-rules-events-business-rules/R30055-is-repository-aggregate-root.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/business-rules/user-business-rules-events/user-business-rules-events-business-rules/R30055-user-business-rule-event -is-repository-aggregate-root.html",
-          "hash": "zPjUFxc9NLEOBD0lPBjzNQ=="
+          "relative_path": "advanced/business-rules/user-business-rules-events/user-business-rules-events-business-rules/R30055-is-repository-aggregate-root.html",
+          "hash": "ixznsJq5ICmSN2Uvn0xiVw=="
         }
       },
       "is_incremental": false,
@@ -978,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
+          "hash": "Ky2GOYJ8N7vix6DH7D7atQ=="
         }
       },
       "is_incremental": false,
@@ -1720,7 +1648,154 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "rYhVPHiuAYlsr56obaNjNg=="
+          "hash": "RKh2Me7ogh/v4dxsKF4yEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/Q&A/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/Q&A/index.html",
+          "hash": "dy+qI84GqwUyoiX53WXfNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.html",
+          "hash": "bKBBIS4AlhuiE9t8nq3q3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/action-types/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/action-types/index.html",
+          "hash": "Gmk+nhkUhazgUqMvrPE0lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/business-rules/R28043-valid-icon-format.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/business-rules/R28043-valid-icon-format.html",
+          "hash": "PZFAYT560+BrRdeoHgIOOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/business-rules/R28545-script-text-max-length.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/business-rules/R28545-script-text-max-length.html",
+          "hash": "WDXP/3OPHcdDqQ36aO7YIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/business-rules/R31067-code.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/business-rules/R31067-code.html",
+          "hash": "cRLP4dHzWpOVrt17asm7HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/business-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/business-rules/index.html",
+          "hash": "MpnIDG9xAhBMFpOcegRDow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/index.html",
+          "hash": "WViAthycCduX4jUO3ihEBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/index.html",
+          "hash": "jMRIfFc9mItWOlcNm/49ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/index.html",
+          "hash": "0VvQJH+NnurSvSQp5C0Z4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/parameter-types/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/parameter-types/index.html",
+          "hash": "xZtLrc/GqPg8y78wXNl+aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidTocInclude"
+      ],
+      "type": "Toc",
+      "source_relative_path": "advanced/user-business-rules/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/toc.html",
+          "hash": "v/aIlRRidASA9GX00cIZsg=="
         }
       },
       "is_incremental": false,
@@ -2210,6 +2285,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "includes/winclient.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/winclient.html",
+          "hash": "2KD18lALpLTTkFP23MOM3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "includes/winclientfull.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/winclientfull.html",
+          "hash": "MTRatwZXagB9fRGqhMUO3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
@@ -2237,7 +2336,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/data-warehouse/index.html",
-          "hash": "I4gKnQoE0iUMGMznsdz6Zg=="
+          "hash": "AFuhM1x3LRln2LGMvU8UXg=="
         }
       },
       "is_incremental": false,
@@ -3840,7 +3939,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "093jY2nd7eAA6jOTmolCbw=="
+          "hash": "2jSeKybSUAC679r8S52xNA=="
         }
       },
       "is_incremental": false,
@@ -3896,11 +3995,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "reference/glossary/code-validation-strict.md",
+      "source_relative_path": "reference/glossary/entities-validation/code-validation-strict.md",
       "output": {
         ".html": {
-          "relative_path": "reference/glossary/code-validation-strict.html",
-          "hash": "Nx+ZtCUfbTAuUdcxb8zVwg=="
+          "relative_path": "reference/glossary/entities-validation/code-validation-strict.html",
+          "hash": "I4/cbjW3QZv9lxISZ+AMDQ=="
         }
       },
       "is_incremental": false,
@@ -3908,11 +4007,35 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "reference/glossary/identifier-validation.md",
+      "source_relative_path": "reference/glossary/entities-validation/identifier-validation.md",
       "output": {
         ".html": {
-          "relative_path": "reference/glossary/identifier-validation.html",
-          "hash": "zzcT2RkV8ozbSXz0AdgpKg=="
+          "relative_path": "reference/glossary/entities-validation/identifier-validation.html",
+          "hash": "ucCFD9RnwxiHoJxXM9b5yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/glossary/entities-validation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/entities-validation/index.html",
+          "hash": "s9JSSJAw3QCsxCgeSgHL3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/glossary/entities-validation/username-validation.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/glossary/entities-validation/username-validation.html",
+          "hash": "ATAmyjII97LMNQdfb9Tbjg=="
         }
       },
       "is_incremental": false,
@@ -3925,18 +4048,6 @@
         ".html": {
           "relative_path": "reference/glossary/index.html",
           "hash": "cXN9vZQstq6zt0cnXfWIsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/username-validation.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/username-validation.html",
-          "hash": "ZvaoLDpFJz9RXxj4BXXteA=="
         }
       },
       "is_incremental": false,
@@ -3979,12 +4090,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "reference/system-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/system-variables.html",
+          "hash": "+ebhd2GX9PthuWX6GYphCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "reference/toc.yml",
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "6MIOXyDDkW0WPpmmlxyJaw=="
+          "hash": "sJULtTSNYlw5sgMo+8lj/A=="
         }
       },
       "is_incremental": false,

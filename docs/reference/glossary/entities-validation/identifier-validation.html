@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Data Warehouse | ERP.net Tech Docs </title>
+    <title>Identifier Validation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Data Warehouse | ERP.net Tech Docs ">
+    <meta name="title" content="Identifier Validation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,30 +77,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="data-warehouse">Data Warehouse</h1>
+<h1 id="identifier-validation">Identifier Validation</h1>
 
-<p>Data Warehouse is a large storage of data coming from a wide range of company sources and used to guide management decisions.</p>
-<p>It helps in reporting and data analysis and is considered a core component of business intelligence.</p>
-<p>Currently, in the ERP.net platform, the following tools are implemented:</p>
+<p>The rules for naming an identifier are:</p>
 <ul>
-<li><strong>data measures</strong>, grouped into data measure groups.</li>
-<li><strong>data values</strong>, entered in for the different measures.</li>
+<li>An identifier <strong>cannot</strong> be a keyword.</li>
+<li>An identifier <strong>must</strong> begin with a letter or an underscore. The remaining part can contain letters, digits, and underscore symbols.</li>
+<li>Whitespaces and symbols other than letter, digit and underscore are <strong>not</strong> allowed.</li>
+<li>@ is <strong>not</strong> allowed to be used as a prefix.</li>
+<li>Identifiers are <strong>case-sensitive</strong>. That's why getName, GetName and getname represent 3 different identifiers.</li>
 </ul>
-<ol>
-<li>Data Measure Groups are accompanying attributes, allowing data to be ordered by the users and structured in a hierarchy.</li>
-</ol>
-<p>Data Measures are declared for a <strong>period</strong>. The period may be a day, month or year.<br>
-It defines the allowed spread: a +/- percent by which the goal could be missed but still considered achieved.</p>
-<ol start="2">
-<li>Data Value is actually a fact. It represents the real value of a data measure for a specified date. Usually, this is the first day of the period of the data measure. It also holds a target value and an actual value.</li>
-</ol>
-<p>Data Values support <strong>enterprise companies</strong> (for more information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/multi-company.md">Multi-company</a>).</p>
-<p>Together, Data Measures and Data Values support <strong>custom properties</strong>.</p>
-<p>Values may be entered on a daily, monthly or yearly basis by the user, an application or other. They may also be entered by multiple sources at the same time.</p>
-<p>Data Warehouse is after that used in the ERP.net BI. An external BI also may be used.</p>
-<h3 id="further-reference">Further reference:</h3>
+<p>These are <strong>valid</strong> identifiers:</p>
 <ul>
-<li><strong>Data Measure Groups Business Rules</strong></li>
+<li>number;</li>
+<li>doCalculation;</li>
+<li>identifier1;</li>
+<li><em>hello</em>world;</li>
+</ul>
+<p>These are <strong>invalid</strong> identifiers:</p>
+<ul>
+<li>hello# - contains symbol other than letter, digit or underscore;</li>
+<li>int - this is a keyword</li>
+<li>hello world - contains whitespace</li>
+<li>1HelloWorld</li>
+<li>@hello</li>
 </ul>
 </article>
           </div>
@@ -110,7 +110,7 @@ It defines the allowed spread: a +/- percent by which the goal could be missed b
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/data-warehouse/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/identifier-validation.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

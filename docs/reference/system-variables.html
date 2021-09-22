@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>System Variables | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="System Variables | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="system-variables">
+<h1 id="system-variables">System Variables</h1>
+
+<p>The system variables are an essential part of ERP.net string interpolation (<code>DomainObject.FormatString()</code>). They provide additional kind of data, not related with a specific <code>DomainObject</code> or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
+<p>Each system variable starts with the <code>$</code> character that identifies it as such and must be surrounded with curly braces <code>{ }</code>. To the example above - <code>{$date}</code> is a legitimate system variable &quot;selector&quot; (a.k.a. expression) which will evaluate to the current date.</p>
+<p>There are system variables, which value depends on a specific context - e.g. the current <code>Transaction</code> or a specific <code>Application</code>. Therefore, they are evaluated via an externally provided <code>Resolver</code>. In the table below are listed all supported system variables, their return type and the resolvers from which they are supported.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If a system variable does not exist, it will not be evaluated and its expression will be returned untouched. E.g. <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. In contrast, existing system variables, but having a <code>null</code> value, will evaluate to an empty <code>string</code>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">System Variable</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Resolver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>$date</code></td>
+<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">Server system date</td>
+<td style="text-align: left;">Globally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$time</code></td>
+<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">Server system time</td>
+<td style="text-align: left;">Globally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$datetime</code></td>
+<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">Server system date and time</td>
+<td style="text-align: left;">Globally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$datetimeutc</code></td>
+<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">Server system date and time in UTC</td>
+<td style="text-align: left;">Globally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$user.login</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Login name of the current user</td>
+<td style="text-align: left;">Globally</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$rooturl</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Current database URL</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$dbname</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Database name</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$repository</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">The repository name of which the domain object is part of</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$enterprisecompany</code></td>
+<td style="text-align: left;"><code>EnterpriseCompany</code></td>
+<td style="text-align: left;">The Enterprise Company in the current (transaction) context</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$enterprisecompanylocation</code></td>
+<td style="text-align: left;"><code>CompanyLocation</code></td>
+<td style="text-align: left;">The Enterprise Company Location in the current (transaction) context</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$user.id</code></td>
+<td style="text-align: left;"><code>Guid</code></td>
+<td style="text-align: left;">The Id of the current user</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$user.name</code></td>
+<td style="text-align: left;"><code>MultilanguageString</code></td>
+<td style="text-align: left;">The full name of the current user</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$role.id</code></td>
+<td style="text-align: left;"><code>Guid</code></td>
+<td style="text-align: left;">The <code>Id</code> of the current user's role</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$role.name</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">The name of the current user's role</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$language</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">The language name (UI Culture) of the current user</td>
+<td style="text-align: left;">Windows Client</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/system-variables.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

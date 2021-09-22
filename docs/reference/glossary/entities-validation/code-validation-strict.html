@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Data Warehouse | ERP.net Tech Docs </title>
+    <title>CODE Validation (Strict) | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Data Warehouse | ERP.net Tech Docs ">
+    <meta name="title" content="CODE Validation (Strict) | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,31 +77,67 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="data-warehouse">Data Warehouse</h1>
+<h1 id="code-validation-strict">CODE Validation (Strict)</h1>
 
-<p>Data Warehouse is a large storage of data coming from a wide range of company sources and used to guide management decisions.</p>
-<p>It helps in reporting and data analysis and is considered a core component of business intelligence.</p>
-<p>Currently, in the ERP.net platform, the following tools are implemented:</p>
+<p>This code validation is stricter than the standard <strong>Code Validation</strong>.</p>
+<h3 id="discussion">Discussion</h3>
+<p>The primary reasons for creating codes are:</p>
 <ul>
-<li><strong>data measures</strong>, grouped into data measure groups.</li>
-<li><strong>data values</strong>, entered in for the different measures.</li>
+<li>Short visual identification of an entity. The code does not need to fully describe the entity just to uniquely identify it.</li>
+<li>Easily type the code in dropdown search fields.</li>
+<li>When needed, easily write down the code.</li>
+<li>Sort (order) the entities by different criteria.</li>
 </ul>
+<h3 id="allowed-characters">Allowed Characters</h3>
+<p>Under strict code validation, the code can only contain (in order of suggested usage):</p>
+<ul>
+<li>Digits</li>
+<li>Minus (-)</li>
+<li>Uppercase letters (the English alphabet only)</li>
+<li>Plus (+)</li>
+</ul>
+<p>The following symbols are <strong>NOT</strong> allowed:</p>
+<ul>
+<li>Space ( )</li>
+<li>Dot (.)</li>
+<li>Forward slash (/)</li>
+<li>Backslash ()</li>
+<li>Lowercase letters</li>
+</ul>
+<p>The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.</p>
+<h3 id="length">Length</h3>
+<p>The default maximum length for CODE attributes is <strong>16 characters</strong>. It is still recommended that codes be 5 characters or less.</p>
+<h3 id="suggestions">Suggestions</h3>
+<p>When creating codes, there are some general rules:</p>
 <ol>
-<li>Data Measure Groups are accompanying attributes, allowing data to be ordered by the users and structured in a hierarchy.</li>
+<li>Usage of digits is highly suggested.</li>
 </ol>
-<p>Data Measures are declared for a <strong>period</strong>. The period may be a day, month or year.<br>
-It defines the allowed spread: a +/- percent by which the goal could be missed but still considered achieved.</p>
+<p>Digits (and the minus sign) are universal and language-agnostic. They can be typed on any keyboard without switching language settings. They are also easier to memorize.</p>
 <ol start="2">
-<li>Data Value is actually a fact. It represents the real value of a data measure for a specified date. Usually, this is the first day of the period of the data measure. It also holds a target value and an actual value.</li>
+<li><p>It is better to create short, consecutive code than a long, meaningful code (usually with several parts).</p>
+</li>
+<li><p>Usage of letters is generally not advised.</p>
+</li>
+<li><p>When letters are used, use uppercase English letters.</p>
+</li>
+<li><p>Keep codes short. Preferably 5 characters maximum.</p>
+</li>
 </ol>
-<p>Data Values support <strong>enterprise companies</strong> (for more information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/multi-company.md">Multi-company</a>).</p>
-<p>Together, Data Measures and Data Values support <strong>custom properties</strong>.</p>
-<p>Values may be entered on a daily, monthly or yearly basis by the user, an application or other. They may also be entered by multiple sources at the same time.</p>
-<p>Data Warehouse is after that used in the ERP.net BI. An external BI also may be used.</p>
-<h3 id="further-reference">Further reference:</h3>
-<ul>
-<li><strong>Data Measure Groups Business Rules</strong></li>
-</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Note: The human eye can immediately read codes up to 5 chars in length (78542). Longer codes take more time (784521).</p>
+</div>
+<ol start="6">
+<li><p>For a small (less than 20) number of items, meaningful, letter-only codes might be adequate. For example &quot;ABC&quot;, &quot;LIB&quot;, etc.</p>
+</li>
+<li><p>When creation of meaningful codes is unavoidable:</p>
+</li>
+</ol>
+<p>a. You can still use digits and keep the code type-able on a numeric keypad.<br>
+b. Separate the parts with a minus sign<br>
+c. Keep the length of each part less than 5 chars.<br>
+d. Keep the total length to minimum.<br></p>
+<p>For example: &quot;01-1234&quot;.</p>
 </article>
           </div>
           
@@ -110,7 +146,7 @@ It defines the allowed spread: a +/- percent by which the goal could be missed b
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/data-warehouse/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/code-validation-strict.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -214,6 +214,9 @@ references:
 - uid: non-agreed-services-and-materials
   name: Non Agreed Services And Materials
   href: modules/applications/service/non-agreed-services-and-materials.html
+- uid: system-variables
+  name: System Variables
+  href: reference/system-variables.html
 - uid: template-description-jobs
   name: Jobs Documentation Template
   href: advanced/jobs/template.html
@@ -223,6 +226,12 @@ references:
 - uid: transitional-documents
   name: Transitional Documents
   href: advanced/documents/transitional-documents.html
+- uid: winclient
+  name: winclient
+  href: includes/winclient.html
+- uid: winclientfull
+  name: winclientfull
+  href: includes/winclientfull.html
 - uid: wms
   name: Warehouse Management
   href: modules/logistics/wms/index.html

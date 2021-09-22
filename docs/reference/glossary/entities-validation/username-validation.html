@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Data Warehouse | ERP.net Tech Docs </title>
+    <title>Username Validation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Data Warehouse | ERP.net Tech Docs ">
+    <meta name="title" content="Username Validation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,30 +77,38 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="data-warehouse">Data Warehouse</h1>
+<h1 id="username-validation">Username Validation</h1>
 
-<p>Data Warehouse is a large storage of data coming from a wide range of company sources and used to guide management decisions.</p>
-<p>It helps in reporting and data analysis and is considered a core component of business intelligence.</p>
-<p>Currently, in the ERP.net platform, the following tools are implemented:</p>
+<p>The rules for naming a user are:</p>
 <ul>
-<li><strong>data measures</strong>, grouped into data measure groups.</li>
-<li><strong>data values</strong>, entered in for the different measures.</li>
+<li>Usernames <strong>can</strong> contain both lowercase and uppercase characters.</li>
+<li>Usernames <strong>can</strong> contain alphanumeric characters.</li>
+<li>Usernames <strong>can</strong> contain underscore and hyphens.</li>
+<li>They <strong>cannot</strong> contain spaces.</li>
+<li>They <strong>cannot</strong> contain two underscores, two hyphens or two spaces in a row.</li>
+<li>They <strong>cannot</strong> contain an underscore, hyphen or space at the start or the end.</li>
 </ul>
-<ol>
-<li>Data Measure Groups are accompanying attributes, allowing data to be ordered by the users and structured in a hierarchy.</li>
-</ol>
-<p>Data Measures are declared for a <strong>period</strong>. The period may be a day, month or year.<br>
-It defines the allowed spread: a +/- percent by which the goal could be missed but still considered achieved.</p>
-<ol start="2">
-<li>Data Value is actually a fact. It represents the real value of a data measure for a specified date. Usually, this is the first day of the period of the data measure. It also holds a target value and an actual value.</li>
-</ol>
-<p>Data Values support <strong>enterprise companies</strong> (for more information, see <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/multi-company.md">Multi-company</a>).</p>
-<p>Together, Data Measures and Data Values support <strong>custom properties</strong>.</p>
-<p>Values may be entered on a daily, monthly or yearly basis by the user, an application or other. They may also be entered by multiple sources at the same time.</p>
-<p>Data Warehouse is after that used in the ERP.net BI. An external BI also may be used.</p>
-<h3 id="further-reference">Further reference:</h3>
+<p>These are <strong>valid</strong> usernames:</p>
 <ul>
-<li><strong>Data Measure Groups Business Rules</strong></li>
+<li>username</li>
+<li>userName</li>
+<li>user.name</li>
+<li>username4</li>
+<li>user_name</li>
+<li>user-name</li>
+</ul>
+<p>These are <strong>invalid</strong> usernames:</p>
+<ul>
+<li>username (there is space in the beginning)</li>
+<li>_username</li>
+<li>-username</li>
+<li>user__name</li>
+<li>user  name</li>
+<li>user–name</li>
+<li>username_</li>
+<li>username  (there is space in the end)</li>
+<li>username-</li>
+<li>user name</li>
 </ul>
 </article>
           </div>
@@ -110,7 +118,7 @@ It defines the allowed spread: a +/- percent by which the goal could be missed b
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/data-warehouse/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/username-validation.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
