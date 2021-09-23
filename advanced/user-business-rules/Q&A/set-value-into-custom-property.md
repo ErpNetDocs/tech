@@ -52,12 +52,10 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@PropertyCode|Constant|'StringValue01
 
->![NOTE]
->
+> [!Note]
 > Using this method, we can only set the Custom Property's Value and not its Description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the 'But what if the custom property has allowed values and we want to set one of them?' section below.
 
->![NOTE]
->
+> [!Note]
 > Parameter2 Type is not limited to a Constant. We could use the Attribute type as well and load the value from another system Attribute or a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. Note, however, that the value must be from a String type. If it is not, you can cast or convert the value to a String using a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** and use that **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** in the  **[User Business Rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/business-rules/index.md)**.
 
 #### But what if the custom property has allowed values, and we want to set one of them?
