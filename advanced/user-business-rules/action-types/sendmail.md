@@ -79,7 +79,7 @@ The domain attribute values can be formatted with the standard .Net format  spec
 
 ## Example
 
-А [Business rules](../index.md) that sends an email with "Order Confirmation" to the customer and the Sales Manager when a Sales Order has been released.
+А [business rule](../index.md) that sends an email with "Order Confirmation" to the customer and the Sales Manager when a Sales Order has been released.
 
 
 
