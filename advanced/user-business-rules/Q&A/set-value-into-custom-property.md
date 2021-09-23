@@ -54,7 +54,7 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
 > Using this method, we can **only** set the Custom Property's Value and **not** its Description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the section below.
 
 > [!Note]
-> Parameter2 Type is not limited to a Constant. We could use the Attribute type as well and load the value from another system Attribute or a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. Note, however, that the value must be from a String type. If it is not, you can cast or convert it using a **[calculated attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** and use that **[calculated attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)** in the **[user business rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/index.md)**.
+> Parameter2 Type is not limited to a Constant. We could use the Attribute type as well and load the value from another system Attribute or a **[Calculated attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. Note, however, that the value must be from a String type. If it is not, you can cast or convert it using a calculated attribute for the user business rule.
 
 #### But what if the custom property has allowed values, and we want to set one of them?
 
