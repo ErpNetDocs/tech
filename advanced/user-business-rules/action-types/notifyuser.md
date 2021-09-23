@@ -30,7 +30,7 @@ The NOTIFYUSER action is not compatible with all [Business rules - Events](https
 
 ## Example
 
-А [Business rules](../index.md) that creates a notification for the Sales Person, when one of his Sales Orders has been released.
+А [business rule](../index.md) that creates a notification for the Sales Person, when one of his Sales Orders has been released.
 
 
 
