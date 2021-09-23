@@ -44,9 +44,8 @@ Digits (and the minus sign) are universal and language-agnostic. They can be typ
 
 5. Keep codes short. Preferably 5 characters maximum. 
 
-> [!NOTE]
-> 
-> Note: The human eye can immediately read codes up to 5 chars in length (78542). Longer codes take more time (784521).
+> [!Note]
+> The human eye can immediately read codes up to 5 chars in length (78542). Longer codes take more time (784521).
 
 6. For a small (less than 20) number of items, meaningful, letter-only codes might be adequate. For example "ABC", "LIB", etc.
 
