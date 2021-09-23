@@ -1,11 +1,11 @@
 
 # User Business Rules
 
-User Business Rules are business rules which the user defines on his  own. They may be used to provide some kind of validation which is not  available in the system business rules or to create working logic which  is not currently available in the software. They may be registered on  different layers - BackEnd and/or FrontEnd. The BackEnd means that the  user business rule is processed on the server. A FrontEnd user business  rule is processed in the client application.
+These are business rules which a user defines on his own. They may be used to provide some kind of validation which is not available in the system business rules or to create working logic which is not currently available in the software. They may be registered on different layers - BackEnd and/or FrontEnd. The BackEnd means that the user business rule is processed on the server. A FrontEnd user business rule is processed in the client application.
 
-The user business  rule consist of the following information: "where?" "when?" and on "what conditions?" something ("what?") should happen.
+The user business rules consist of the following information: "where?", "when?", and on "what conditions?" something ("what?") should happen.
 
-The user business rules have the following information:
+They have the following information:
 
 - Code - unique code of the rule;
 - Name - the name of the user business rule;
@@ -30,16 +30,13 @@ The conditions which have to be met when the event happen so the rule to be proc
 
 So the condition is met when the value of the specified attribute and the  specified value compose a true statement with the selected comparison  type. For example, IsActive = True or Quantity < 100.0 and more. 
 
- 
-
-> [!NOTE] 
->
-> If there are more than one conditions, the rule would be applied when all conditions are true.
+> [!Note] 
+> If there is more than one condition, the rule will be applied when **all** conditions are true.
 
 The actions which may be executed by the rule contain the following information:
 
 - Action No - consecutive number of the action, unique within the user business rule;
-- Action Type - specifies the type of action to be performed by the rule.  Possible values are: SETVALUE and FAIL. For more information on the  action types see [Business rules Actions - Action types](action-types/index.md);
+- Action Type - specifies the [type of action](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/index.md) to be performed by the rule. Possible values are: [SETVALUE](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/setvalue.md) and [FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md). 
 - Parameter1 Type, Parameter2 Type, Parameter3 Type - the type of the parameter specifies how to obtain the parameter value; 
 - Parameter1 Value, Parameter2 Value, Parameter3 Value - the actual value of the parameter.
 
