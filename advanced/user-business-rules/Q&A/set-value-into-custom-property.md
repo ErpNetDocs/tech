@@ -2,7 +2,7 @@
 We can use Business rules to set values into different fields, including custom properties (**[Action Types](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/index.md)**). Currently, if we want to set a value into a custom property, we can either copy/get that value from another custom property or use an attribute/field/ constant whose data type is String.
  
 ### Example 1 - The value is copied from another Custom Property's value:
-If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a Sales Order Document, for example, then we can create a **[user business rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/index.md)**  with the following data:
+If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a Sales Order Document, for example, then we can create a **[user business rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/index.md)**  with the following data:
 
 Repository
 |:----
@@ -30,7 +30,7 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
  
 ### Example 2 -  Set a specific value that is not copied from another Custom Property's value:
 
-If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a Sales Order Document, then we can create a **[user business rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/index.md)** with the following data:
+If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a Sales Order Document, then we can create a **[user business rule](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/index.md)** with the following data:
 
 Repository
 |:----
