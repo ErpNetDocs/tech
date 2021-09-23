@@ -32,4 +32,6 @@ To allow a 'Credit Limit Override' when the client pays in cash, we can create a
 |1|SETVALUE|Attribute|CreditLimitOverride|Constant|True
 
 > [!Note] 
-> '#IsInCash' is a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. >For more information, see **"[Check If the System type of Payment type in the Sales Order is 'In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md)"**'.
+> '#IsInCash' is a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. 
+> 
+> For more information, see [Check If the System type of Payment type in the Sales Order is In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md).
