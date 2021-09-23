@@ -18,12 +18,12 @@ The DeliveryTerms is enum type so it is accessed specifically. The values of the
 
 
 If there is a need to set a value in the purchase invoice in the DeliveryTerms field, the action of the user business rule must set a casted value from a calculated attribute in the DeliveryTermsCode attribute. The calculated attribute must cast an integer to type <br>
-'Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms'. For example - if the user wants to set SeliveryTermsCode on 'FOB' automatically, the user business rule must contain an action:
+'Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms'. For example - if the user wants to set SeliveryTermsCode on 'FOB' automatically, the user business rule must contain an action:
 
 1 SETVALUE ATTRIB:DeliveryTermsCode ATTRIB:#CA
 
-And the #CA should have an integer value, casted to 'Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms', for example:
+And the #CA should have an integer value, casted to 'Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms', for example:
 
-10 CAST CONST:3 CONST:Aloe.EnterpriseOne.Model.Finance.Intrastat.DeliveryTerms
+10 CAST CONST:3 CONST:Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms
 
 Having this business rule set up, when the event happens, it would set the Delivery Terms of the Purchase invoice to 'FOB'.
