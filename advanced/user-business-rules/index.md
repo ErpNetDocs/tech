@@ -33,7 +33,7 @@ So the condition is met when the value of the specified attribute and the  speci
 > [!Note] 
 > If there is more than one condition, the rule will be applied when **all** conditions are true.
 
-The actions which may be executed by the rule contain the following information:
+The [actions](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/index.md) which may be executed by the rule contain the following information:
 
 - Action No - consecutive number of the action, unique within the user business rule;
 - Action Type - specifies the [type of action](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/index.md) to be performed by the rule. Possible values are: [SETVALUE](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/setvalue.md) and [FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md). 
