@@ -15,19 +15,19 @@ references:
   href: reference/country-specific-functionality.html
 - uid: brat-FAIL
   name: FAIL
-  href: advanced/business-rules/action-types/fail.html
+  href: advanced/user-business-rules/action-types/fail.html
 - uid: brat-NOTIFYUSER
   name: NOTIFYUSER
-  href: advanced/business-rules/action-types/notifyuser.html
+  href: advanced/user-business-rules/action-types/notifyuser.html
 - uid: brat-SENDMAIL
   name: SENDMAIL
-  href: advanced/business-rules/action-types/sendmail.html
+  href: advanced/user-business-rules/action-types/sendmail.html
 - uid: brat-SETVALUE
   name: SETVALUE
-  href: advanced/business-rules/action-types/setvalue.html
+  href: advanced/user-business-rules/action-types/setvalue.html
 - uid: brat-WARNING
   name: WARNING
-  href: advanced/business-rules/action-types/warning.html
+  href: advanced/user-business-rules/action-types/warning.html
 - uid: cao-ADD
   name: ADD - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/add.html

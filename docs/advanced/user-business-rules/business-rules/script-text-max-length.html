@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CODE Validation (Strict) | ERP.net Tech Docs </title>
+    <title>R28545 Script Text Max Length | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CODE Validation (Strict) | ERP.net Tech Docs ">
+    <meta name="title" content="R28545 Script Text Max Length | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,67 +77,66 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="code-validation-strict">CODE Validation (Strict)</h1>
+<h1 id="r28545-script-text-max-length">R28545 Script Text Max Length</h1>
 
-<p>This code validation is stricter than the standard <strong>Code Validation</strong>.</p>
-<h3 id="discussion">Discussion</h3>
-<p>The primary reasons for creating codes are:</p>
-<ul>
-<li>Short visual identification of an entity. The code does not need to fully describe the entity just to uniquely identify it.</li>
-<li>Easily type the code in dropdown search fields.</li>
-<li>When needed, easily write down the code.</li>
-<li>Sort (order) the entities by different criteria.</li>
-</ul>
-<h3 id="allowed-characters">Allowed Characters</h3>
-<p>Under strict code validation, the code can only contain (in order of suggested usage):</p>
-<ul>
-<li>Digits</li>
-<li>Minus (-)</li>
-<li>Uppercase letters (the English alphabet only)</li>
-<li>Plus (+)</li>
-</ul>
-<p>The following symbols are <strong>NOT</strong> allowed:</p>
-<ul>
-<li>Space ( )</li>
-<li>Dot (.)</li>
-<li>Forward slash (/)</li>
-<li>Backslash ()</li>
-<li>Lowercase letters</li>
-</ul>
-<p>The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.</p>
-<h3 id="length">Length</h3>
-<p>The default maximum length for CODE attributes is <strong>16 characters</strong>. It is still recommended that codes be 5 characters or less.</p>
-<h3 id="suggestions">Suggestions</h3>
-<p>When creating codes, there are some general rules:</p>
-<ol>
-<li>Usage of digits is highly suggested.</li>
-</ol>
-<p>Digits (and the minus sign) are universal and language-agnostic. They can be typed on any keyboard without switching language settings. They are also easier to memorize.</p>
-<ol start="2">
-<li><p>It is better to create short, consecutive code than a long, meaningful code (usually with several parts).</p>
-</li>
-<li><p>Usage of letters is generally not advised.</p>
-</li>
-<li><p>When letters are used, use uppercase English letters.</p>
-</li>
-<li><p>Keep codes short. Preferably 5 characters maximum.</p>
-</li>
-</ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The human eye can immediately read codes up to 5 chars in length (78542). Longer codes take more time (784521).</p>
-</div>
-<ol start="6">
-<li><p>For a small (less than 20) number of items, meaningful, letter-only codes might be adequate. For example &quot;ABC&quot;, &quot;LIB&quot;, etc.</p>
-</li>
-<li><p>When creation of meaningful codes is unavoidable:</p>
-</li>
-</ol>
-<p>a. You can still use digits and keep the code type-able on a numeric keypad.<br>
-b. Separate the parts with a minus sign<br>
-c. Keep the length of each part less than 5 chars.<br>
-d. Keep the total length to minimum.<br></p>
-<p>For example: &quot;01-1234&quot;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">R28545</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Entity</td>
+<td style="text-align: left;">UserBusinessRule</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">ScriptTextMaxLength</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attribute</td>
+<td style="text-align: left;">ScriptText</td>
+</tr>
+<tr>
+<td style="text-align: left;">Layer</td>
+<td style="text-align: left;">Back-End</td>
+</tr>
+<tr>
+<td style="text-align: left;">Events</td>
+<td style="text-align: left;">Commit</td>
+</tr>
+<tr>
+<td style="text-align: left;">Priority</td>
+<td style="text-align: left;">Normal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Modify</td>
+<td style="text-align: left;">NO</td>
+</tr>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">Validate that: <br> ScriptText.Length() &lt;= 10000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">The limit of the script which can be entered in<br> a User Business Rule is 10000 characters. This<br> validation is required for protective purposes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">The Script Text attribute exceeds its limit of 10000 characters. <br>Please, shorten the text in the Script Text attribute.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Introduced In Version</td>
+<td style="text-align: left;">2018.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Revocable</td>
+<td style="text-align: left;">NO</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -146,7 +145,7 @@ d. Keep the total length to minimum.<br></p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/code-validation-strict.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/script-text-max-length.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

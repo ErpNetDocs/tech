@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CODE Validation (Strict) | ERP.net Tech Docs </title>
+    <title>STATECHANGED | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CODE Validation (Strict) | ERP.net Tech Docs ">
+    <meta name="title" content="STATECHANGED | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -77,67 +77,42 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="code-validation-strict">CODE Validation (Strict)</h1>
+<h1 id="statechanged">STATECHANGED</h1>
 
-<p>This code validation is stricter than the standard <strong>Code Validation</strong>.</p>
-<h3 id="discussion">Discussion</h3>
-<p>The primary reasons for creating codes are:</p>
+<h4 id="event-summary">EVENT SUMMARY</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">STATECHANGED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-End</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs when the document state is changed. The <br> state is specified in the 'Parameter' field. Possible <br>parameter values are 'PLANNED', 'FIRMPLANNED', <br> 'RELEASED', 'COMPLETED' and 'CLOSED'.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2017.1 <br> Updated: -</td>
+</tr>
+</tbody>
+</table>
+<p>This event will occur <strong>AFTER</strong> the change of the Document state but <strong>BEFORE</strong> that change has actually been saved.</p>
+<p>If there is, for example, a <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md">FAIL</a></strong> action set on STATECHANGED event, the rule will be triggered after all rules and validation registered on <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/statechanging.md">STATECHANGING</a></strong> are performed but before the document is saved into the database.  In this case, when the conditions are met and the rule fails - the state of the document will not be successfully changed and it will remain in its previous state.</p>
+<p>Another example of a use case for this event is when we want to check if the availability of the product would be over 100 PCS when we receive a batch of goods. We would want to use the STATECHANGED event so the quantities of the current store transaction are included in the calculation.</p>
+<p>The event always goes with an event parameter. Possible values are:</p>
 <ul>
-<li>Short visual identification of an entity. The code does not need to fully describe the entity just to uniquely identify it.</li>
-<li>Easily type the code in dropdown search fields.</li>
-<li>When needed, easily write down the code.</li>
-<li>Sort (order) the entities by different criteria.</li>
+<li><strong>PLANNED</strong></li>
+<li><strong>FIRMPLANNED</strong></li>
+<li><strong>RELEASED</strong></li>
+<li><strong>COMPLETED</strong></li>
+<li><strong>CLOSED</strong></li>
 </ul>
-<h3 id="allowed-characters">Allowed Characters</h3>
-<p>Under strict code validation, the code can only contain (in order of suggested usage):</p>
-<ul>
-<li>Digits</li>
-<li>Minus (-)</li>
-<li>Uppercase letters (the English alphabet only)</li>
-<li>Plus (+)</li>
-</ul>
-<p>The following symbols are <strong>NOT</strong> allowed:</p>
-<ul>
-<li>Space ( )</li>
-<li>Dot (.)</li>
-<li>Forward slash (/)</li>
-<li>Backslash ()</li>
-<li>Lowercase letters</li>
-</ul>
-<p>The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.</p>
-<h3 id="length">Length</h3>
-<p>The default maximum length for CODE attributes is <strong>16 characters</strong>. It is still recommended that codes be 5 characters or less.</p>
-<h3 id="suggestions">Suggestions</h3>
-<p>When creating codes, there are some general rules:</p>
-<ol>
-<li>Usage of digits is highly suggested.</li>
-</ol>
-<p>Digits (and the minus sign) are universal and language-agnostic. They can be typed on any keyboard without switching language settings. They are also easier to memorize.</p>
-<ol start="2">
-<li><p>It is better to create short, consecutive code than a long, meaningful code (usually with several parts).</p>
-</li>
-<li><p>Usage of letters is generally not advised.</p>
-</li>
-<li><p>When letters are used, use uppercase English letters.</p>
-</li>
-<li><p>Keep codes short. Preferably 5 characters maximum.</p>
-</li>
-</ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The human eye can immediately read codes up to 5 chars in length (78542). Longer codes take more time (784521).</p>
-</div>
-<ol start="6">
-<li><p>For a small (less than 20) number of items, meaningful, letter-only codes might be adequate. For example &quot;ABC&quot;, &quot;LIB&quot;, etc.</p>
-</li>
-<li><p>When creation of meaningful codes is unavoidable:</p>
-</li>
-</ol>
-<p>a. You can still use digits and keep the code type-able on a numeric keypad.<br>
-b. Separate the parts with a minus sign<br>
-c. Keep the length of each part less than 5 chars.<br>
-d. Keep the total length to minimum.<br></p>
-<p>For example: &quot;01-1234&quot;.</p>
 </article>
           </div>
           
@@ -146,7 +121,7 @@ d. Keep the total length to minimum.<br></p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/code-validation-strict.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/statechanged.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
