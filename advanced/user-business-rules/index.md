@@ -14,12 +14,12 @@ They have the following information:
 - IsActive - the user business rule may be activated and deactivated;
 - *Layer* - currently this is unavailable. All user business rules are registered in the BackEnd layer.
 
-The events which has to happen so the user business rule to be activated  are described in the User Business Rules - Events panel. It is consisted of the following information:
+The events which need to happen for the user business rule to be activated are described in the [User Business Rules - Events](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md) panel. It consists of the following information:
 
 - Event Type - the event for which to register the user business rule;
-- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event. For more information on event  parameters see [Business rules - Events](user-business-rules-events/index.md);
+- Event Parameter - registration parameter. The meaning of this parameter is  determined by the type of the event;
 - Execution Priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;
-- *Layer -* currently this is unavailable. All events are events of the BackEnd layer.
+- Layer - currently this is unavailable. All events are events of the BackEnd layer.
 
 The conditions which have to be met when the event happen so the rule to be processed are entered as follows:
 
