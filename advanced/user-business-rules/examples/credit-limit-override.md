@@ -2,7 +2,7 @@
 
 If we know when the 'System type' from 'Payment type' (Sales Order document) is set to be 'In cash', we can use that information to create a Business Rule that inserts a check mark in the field 'Credit Limit Override'.
 
-In this case, we can get that information using the calculated attribute [Check If the System type of Payment type in the Sales Order is 'In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md), which returns True or False.
+In this case, we can get that information using the calculated attribute **[Check If the System type of Payment type in the Sales Order is 'In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md)**, which returns True or False.
 
 To allow a 'Credit Limit Override' when the client pays in cash, we can create a Business Rule with the following data:
 
@@ -34,4 +34,4 @@ To allow a 'Credit Limit Override' when the client pays in cash, we can create a
 > [!Note] 
 > '#IsInCash' is a **[Calculated Attribute](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/index.md)**. 
 > 
-> For more information, see [Check If the System type of Payment type in the Sales Order is In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md).
+> For more information, see **[Check If the System type of Payment type in the Sales Order is In Cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.md)**.
