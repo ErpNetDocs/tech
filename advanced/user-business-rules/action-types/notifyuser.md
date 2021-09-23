@@ -19,7 +19,7 @@ items: ActionTypes
 
 ## Compatible Events Chart
 
-The NOTIFYUSER action is not compatible with all [events](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md). For more info look into the following chart.
+The [NOTIFYUSER](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/notifyuser.md) action is not compatible with all [events](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md). For more info look into the following chart.
 
 | Event Type                                                   | Compatibility with NOTIFYUSER                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
