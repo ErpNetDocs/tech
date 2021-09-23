@@ -22,12 +22,10 @@ Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@Property1|Attribute|@Property2
 
-> ![NOTE]
->
+> [!Note]
 > Both Custom Property's Value and Custom Property's Description are copied.
  
-> ![NOTE] 
-> 
+> [!Note]
 > In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another Entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and Copying Custom Properties**.
  
 ### Example 2 -  Set a specific value that is not copied from another Custom Property's value:
