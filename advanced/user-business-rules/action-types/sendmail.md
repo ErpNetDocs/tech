@@ -73,7 +73,7 @@ Currently are supported the following options:
 
 - Domain Attributes formatting - supported in both the Subject and the Body
 
-The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see [Format specifiers](~/reference/format-specifiers.md).
+The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see [Format specifiers](https://github.com/ErpNetDocs/tech/blob/8239739b316d98329814631d8077654f98b0c32d/reference/format-specifiers.md).
 
 
 
