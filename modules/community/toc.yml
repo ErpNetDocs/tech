@@ -4,3 +4,7 @@
   href: case-management.md
 - name: Digital marketplace
   href: digital-marketplace.md
+- name: Social interactions
+  href: social-interactions/toc.yml
+  topicHref: social-interactions/index.md
+  
