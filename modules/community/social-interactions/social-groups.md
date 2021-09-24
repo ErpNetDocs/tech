@@ -5,7 +5,7 @@ The social groups are the primary areas (circles) where social interactions occu
 
 - Social groups have resemblance to Facebook groups.
 
-- Unlike FB groups, social posts are always grouped. There is no personal space, unless a personal group is defined.
+- Unlike FB groups, [social posts](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-posts.md) are always grouped. There is no personal space, unless a personal group is defined.
 
 #### Important Attributes:
 
