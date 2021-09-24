@@ -20,7 +20,7 @@ If a user clicks on the notification, the specified URL will be opened.
   - NT_SOC_NEW_POST - new post in a group, in which I am member
   - NT_WM_QTY_BELOW_MIN - in [Warehouse management](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/index.md), when the qty in a tracked bin falls below the minimum
   
- - When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood the notification.
+ - When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood it.
  
 > [!NOTE] 
 > The UI in some apps might require the user to actually click on the notification in order to mark it as read.
