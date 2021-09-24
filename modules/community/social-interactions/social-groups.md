@@ -1,7 +1,7 @@
 
 # Social Groups
 
-The social groups are the primary areas (circles) where social interactions occur.
+The social groups are the primary areas (circles) where [social interactions](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/index.md) occur.
 
 - Social groups have resemblance to Facebook groups.
 
