@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Document Flow | ERP.net Tech Docs </title>
+    <title>Additional Amounts Usage | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Document Flow | ERP.net Tech Docs ">
+    <meta name="title" content="Additional Amounts Usage | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,13 +77,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="document-flow">Document Flow</h1>
+<h1 id="additional-amounts-usage">Additional Amounts Usage</h1>
 
-<h3 id="description">Description</h3>
-<p>The sequence of documents in a process forms the document flow. Actually, the documents in a process are more likely to be in a hierarchy; just a sequence of documents is a rare occurrence.</p>
-<p>Documents in ERP.net often have sub-documents. Most of the time, the sub-documents are automatically generated (see <strong>Document Generation</strong>) or created by some fulfillment function (see <strong>Order Fulfillment</strong>).However,  manually entering a sub-document is also allowed and sometimes used.</p>
-<p>Documents, their sub-documents, the sub-documents of the sub-documents, etc. form the sequence (or the hierarchy). The document flow design is one of the most important aspects of implementing ERP.net for a target enterprise.</p>
-<p>The document flow is designed by designing the specific document routes for each Document Type.</p>
+<p>The additional amounts are used for different reasons - adding amounts to the main business activity in the document or reporting secondary measurements of the business activity or outside activities.</p>
+<h3 id="calculating-the-amount-to-pay">Calculating The Amount To Pay</h3>
+<p>Some of the additional amounts serve for calculating the amount to pay for the document. This is marked in the additional amount definition by adding a check to the ‘Add To Customer’ field. Usually these are amounts like VAT, VAT deviation, discounts, increases, decreases. For more information see <strong>Amount To Pay</strong>.</p>
+<h3 id="calculating-goods-cost">Calculating Goods Cost</h3>
+<p>Likewise, the additional amounts may be used to add value to the goods cost in the <strong>Logistics</strong>.</p>
+<p>For example, currently the transport is entered as an additional amount. Thus, when goods are purchased, the transport value is added to the purchase price. Also, when a Stock Transfer from one store to another is executed and it includes transport which cost is added to the issued products, the value of this transport should be added to the products cost before they are received in the second store. Adding the transport to the purchase price or to the store cost is done in the receiving Store Orders or Store Transactions. Then, when a row in the sub-document is created, the value of this row is increased by the distribution in the current row amount of the transport.</p>
+<p>The same procedure is applied to all additional amounts which are marked as part of the store cost calculation. This is the ‘Add To Line’ field in the definition of the additional amount.</p>
+<h3 id="calculating-outside-activities">Calculating Outside Activities</h3>
+<p>The additional amounts may also be used to report internal for the enterprise company activities.</p>
+<p>For example, if the salesman in the company receives commissions or other additions to their salaries, which is equal to a percent of turnover they achieve. Then this commision may be entered as an additional amount (because it is not proper to be included in the rows of the document) in the Sales Order, which is a percent of the amount to pay.</p>
 </article>
           </div>
           
@@ -92,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-flow.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-business-rules/additional-usage.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -118,8 +123,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>

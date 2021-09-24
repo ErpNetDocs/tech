@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Notifications | ERP.net Tech Docs </title>
+    <title>Amounts Calculation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Notifications | ERP.net Tech Docs ">
+    <meta name="title" content="Amounts Calculation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,36 +77,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="notifications">Notifications</h1>
+<h1 id="amounts-calculation">Amounts Calculation</h1>
 
-<p>Notification is a single notification of one user for one event. The event can contain multiple references to objects, definitions, etc.</p>
+<p>There are two common ways to determine the value of the additional amounts:</p>
 <ul>
-<li><p>Although <strong>notification</strong> is an entity in the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/index.md">Social interactions</a> module, a notification can be raised by any module in the system.</p>
-</li>
-<li><p>Notifications <strong>CAN</strong> specify a data object.</p>
-</li>
+<li>setting an explicit amount;</li>
+<li>setting the amount as a percent from other amounts (additional or base amounts from the document rows).</li>
 </ul>
-<p>If they do, the notification is related to the data object. However, this attribute is not required and can be null.</p>
+<p>Which method is used is a property of the document form – ‘Additional Document Amounts’ panel, by using ‘Input Percent’, ‘Input Amount’ and ‘Input Amount Currency’ fields. Usually, the user either sets a value in the ‘Input Percent’ field and the ‘Input Amount’ and ‘Input Amount Currency’ fields stay empty (this is the setting that the amount is percent of other amounts), or the user sets value to ‘Input Amount’ and ‘Input Amount Currency’ fields (this is the way we set an explicit amount), and the ‘Input Percent’ field stays empty.</p>
+<p>Additionally, in the additional amount definition the user can control which method for determining the additional amount value is allowed - by using ‘Amount Input Allowed’ and ‘Percent Input Allowed’ fields. Also, if the ‘Percent Input Allowed’ field is True, then the user can set a default percent value, which will appear automatically in the documents.</p>
+<p>In the additional amount definition, there is also property to control the values entered by the user in ‘Input Percent’ and ‘Input Amount’ fields. This is applied by the ‘Allowed Directions’ field:</p>
 <ul>
-<li>Notifications contain URLs.</li>
+<li>when ‘Allow only positive’ is selected, the user can enter only numbers bigger or equal to 0;</li>
+<li>when ‘Allow only negative’ is selected, the user can enter only numbers less or equal to 0;</li>
+<li>when ‘Allow all’ is selected, there is no limitations on the value entered in ‘Input Percent’ and ‘Input Amount’ fields.</li>
 </ul>
-<p>If a user clicks on the notification, the specified URL will be opened.</p>
+<blockquote>
+<p>[!NOTE] In both methods the program is calculating an end amount, rounded to a specific &gt;number of digits after the decimal point - this is an option of the additional amount &gt;definition – ‘Round Scale’ field. The round scale is not used in the end amount. This &gt;intermediate amount is used for the amount distribution. These amounts, rounded to a &gt;specific digit after the decimal point, are always limited to the second digit after the decimal &gt;point before saving them in the database.</p>
+</blockquote>
+<p>For further information on calculating the additional amount depending on the selected method, see the following articles:</p>
 <ul>
-<li><p>Each notification has a class which specifies the type of the notification:</p>
-<ul>
-<li>NT_SOC_REPLY - there was a reply to my post or comment</li>
-<li>NT_SOC_MENTION - I was mentioned in a post or comment</li>
-<li>NT_SOC_NEW_POST - new post in a group, in which I am member</li>
-<li>NT_WM_QTY_BELOW_MIN - in <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/index.md">Warehouse management</a>, when the qty in a tracked bin falls below the minimum</li>
+<li><strong>Explicit Value Calculation</strong></li>
+<li><strong>Percent Value Calculation</strong></li>
 </ul>
-</li>
-<li><p>When a notification is displayed to a user, it is marked as <strong>read</strong>. This does not guarantee that the user has read or understood it.</p>
-</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The UI in some apps might require the user to actually click on the notification in order to mark it as read.</p>
-</div>
 </article>
           </div>
           
@@ -115,7 +108,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

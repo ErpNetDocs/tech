@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Notifications | ERP.net Tech Docs </title>
+    <title>Additional Amounts Determination And Recording | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Notifications | ERP.net Tech Docs ">
+    <meta name="title" content="Additional Amounts Determination And Recording | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,36 +77,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="notifications">Notifications</h1>
+<h1 id="additional-amounts-determination-and-recording">Additional Amounts Determination And Recording</h1>
 
-<p>Notification is a single notification of one user for one event. The event can contain multiple references to objects, definitions, etc.</p>
-<ul>
-<li><p>Although <strong>notification</strong> is an entity in the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/index.md">Social interactions</a> module, a notification can be raised by any module in the system.</p>
-</li>
-<li><p>Notifications <strong>CAN</strong> specify a data object.</p>
-</li>
-</ul>
-<p>If they do, the notification is related to the data object. However, this attribute is not required and can be null.</p>
-<ul>
-<li>Notifications contain URLs.</li>
-</ul>
-<p>If a user clicks on the notification, the specified URL will be opened.</p>
-<ul>
-<li><p>Each notification has a class which specifies the type of the notification:</p>
-<ul>
-<li>NT_SOC_REPLY - there was a reply to my post or comment</li>
-<li>NT_SOC_MENTION - I was mentioned in a post or comment</li>
-<li>NT_SOC_NEW_POST - new post in a group, in which I am member</li>
-<li>NT_WM_QTY_BELOW_MIN - in <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/index.md">Warehouse management</a>, when the qty in a tracked bin falls below the minimum</li>
-</ul>
-</li>
-<li><p>When a notification is displayed to a user, it is marked as <strong>read</strong>. This does not guarantee that the user has read or understood it.</p>
-</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The UI in some apps might require the user to actually click on the notification in order to mark it as read.</p>
-</div>
+<p>The additional amounts are recorded in the documents in the ‘Additional Amounts’ panel. This is available in the following documents: Sales Orders, Invoice Orders, Invoices, Purchase Orders, Purchase Invoices, Transfer Orders and Transactions. The input/primary data is entered in the ‘Additional Amounts’ panel. This data is used for calculating the amount and for determining its impact on the document. This calculation is executed every time the document is saved and consists of 2 stages:</p>
+<ol>
+<li>Amounts determination.</li>
+<li>Stage 1 amounts distribution through the affected documents (this is how the result from stage 1 is saved in the documents). This distribution is saved in the document in which it is entered (no matter if the amount affects only the current document or more).</li>
+</ol>
+<p>The amount is determined by entering an exact value or by indicating that the amount is calculated as a percent of the base document amount or other additional amounts. This data is entered by adding the amount at a document in its ‘Additional Amounts’ panel, firstly. Then it is used to calculate its real value. For further information see <strong>Amounts Calculation</strong>.</p>
+<p>After the amount value is calculated - it is not saved in the document. First, it is distributed through the affected documents. This is necessary because we often need to determine what part of the additional amount is distributed to a specific row. For example - what is the value of the additional amount VAT for a specific Sales Order row. The algorithm is explained in details in <strong>Amounts Distribution</strong>.</p>
+<p>There may be cases when an additional amount is entered in one document, but it affects not only the current document, but others as well. For example - the thansport for deliveries from outside the country. In this case, the original Purchase Invoice for the delivery of goods has arrived and it is entered in ERP.net . The Purchase Invoice is released before the Purchase Invoice for the transport arrives. The transport in this case is entered as an additional amount so it can be included in the product's costs. As it cannot be entered in the original Purchase Invoice (because the document state is Released and also the transport is not actually part of it and it should not be included there), so the transport is entered in another document and it should be distributed into the original Purchase Invoice (so its amount is included in the original Purchase Invoice goods costs). Therefore, we are able to indicate additional - referenced documents, where we distribute the current amount. This mechanism is described in <strong>Referenced Documents</strong>.</p>
+<p>Thus, once an amount is calculated and distributed (no matter if it is distributed only in the document it is entered in or distributed and in other/referenced documents), to see its real value (this real value shows how the amount affects the business activities from the documents), its distributions should be summed from all documents it is distributed in.</p>
 </article>
           </div>
           
@@ -115,7 +96,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-business-rules/additional-determination-and-recording.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

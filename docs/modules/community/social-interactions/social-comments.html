@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -81,8 +81,9 @@
 
 <p>This represents a comment to a data object within the system.</p>
 <ul>
-<li>Social posts are data objects. This is the most common object to which comments can be added.</li>
-<li>Besides social posts, there are other objects, which frequently are the target of comments:
+<li><p>Social posts are data objects. This is the most common object to which comments can be added.</p>
+</li>
+<li><p>Besides social posts, there are other objects which are frequent targets by comments:</p>
 <ul>
 <li>Marketplace Products</li>
 <li>Documents</li>
@@ -90,21 +91,27 @@
 <li>Settings</li>
 </ul>
 </li>
-<li>However, comments can be added to any data object within the system.</li>
+<li><p>However, comments can be added to any data object within the system.</p>
+</li>
 </ul>
-<h3 id="important-attributes">Important Attributes</h3>
+<h4 id="important-attributes">Important Attributes:</h4>
 <ul>
-<li><strong>Data Object</strong> - the data object, being commented.</li>
-<li><strong>Reply To Comment</strong> - the comment, to which the current comment replies. <br>
-If empty, the comment is a root comment to the data object.<br>
-Note, that the Data Object always points to the root data object, which is being commented (e.g., it does not point to a data object for a comment).</li>
+<li><p><strong>Data Object</strong> - the data object being commented.</p>
+</li>
+<li><p><strong>Reply To Comment</strong> - the comment to which the current comment replies.</p>
+</li>
+</ul>
+<p>If empty, the comment is a root comment to the data object.</p>
+<p>Тhe Data Object always points to the root data object being commented (it does not point to a data object for a comment).</p>
+<ul>
 <li><strong>Comment Text</strong> - comment contents in clear text.</li>
 </ul>
 <blockquote>
-<p>Note: It is planned that text will be allowed to contain some mark-down constructs in the future.</p>
+<p>[!NОТЕ]
+It is planned that text will be allowed to contain some mark-down constructs in the future.</p>
 </blockquote>
 <ul>
-<li><strong>Creation Time Utc</strong> - automatically set by the server to the time of the initial creation of the comment.</li>
+<li><strong>Creation Time Utc</strong> - automatically set by the server to the time of initial creation of the comment.</li>
 </ul>
 </article>
           </div>
