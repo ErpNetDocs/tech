@@ -7,7 +7,7 @@ The SI module contains entities, representing the social interactions between in
 - Each **[Social posts](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-posts.md)** is always made in a group. There is no personal space like in Facebook.
 - Each post can contain **[Social comments](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md)**, replies and **Reactions**. Comments, replies and reactions can also be attached to any other data object in the system.
 - **[Notifications](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md)** are special data records that contain information about a single notification of a user.
-- **[Notification settings](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/notifications-settings.md)** allow the users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms.
+- **[Notification settings](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/settings.md)** allow the users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms.
 
 
 For more information, check the following topics:
@@ -17,5 +17,5 @@ For more information, check the following topics:
 - [**Social comments**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md)
 - [**Social reactions**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-reactions.md)
 - [**Notifications**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md)
-- [**Notification settings**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/notifications-settings.md)
+- [**Notification settings**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/settings.md)
 
