@@ -10,4 +10,5 @@ The social groups are the primary areas (circles) where [social interactions](ht
 #### Important Attributes:
 
 - **Code** - this is the unique code of the group. It is also used as a ***slug*** which forms part of the URL for the group, posts, etc.
+
 - **Name** - the universal name of the group.
