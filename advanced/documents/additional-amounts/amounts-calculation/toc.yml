@@ -1,8 +1,7 @@
 - name: Overview
   href: index.md
-- name: Explicit Value Calculation
+- name: Explicit value calculation
   href: explict-calculation.md
-- name: Percent Value Calculation
+- name: Percent value calculation
   href: percent-calculation.md
-  
   
