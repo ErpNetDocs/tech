@@ -20,3 +20,5 @@
   href: creating-a-document.md
 - name: Displaying And Finding Document And Line Numbers
   href: displaying-document.md
+- name: Document Generation
+  href: document-generation.md
