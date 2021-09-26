@@ -1,6 +1,6 @@
 # Amounts Calculation
 
-There are two common ways to determine the value of [additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md):
+There are two common ways to determine the value of **[additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)**:
 
 - setting an explicit amount;
 - setting an amount as a percent from other amounts (additional or base amounts from the document rows)
