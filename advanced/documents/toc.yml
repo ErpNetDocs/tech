@@ -16,4 +16,7 @@
   href: additional-amounts/toc.yml
 - name: Document Generation and Transitional Documents
   href: document-generation-and-transitional-documents.md
-  
+- name: Creating A Duplicate Document And A New Document From Current
+  href: creating-a-document.md
+- name: Displaying And Finding Document And Line Numbers
+  href: displaying-document.md
