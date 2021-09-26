@@ -22,5 +22,5 @@ This is the _‘Add To Line’_ field in the definition of the additional amount
 
 Additional amounts may also be used to report external activities for the enterprise company.
 
-For example, if a salesman in a company receives commissions or other additions to their salaries equal to a percent of the turnover they achieve, then the commision may be entered as an additional amount in the Sales Order, which is a percent of the [amount to pay](https://github.com/ErpNetDocs/tech/blob/82e2643197b9da2d8cab3dd605dcd1bc0e4f308f/modules/crm/sales/sales-concepts/amount-to-pay.md).
+For example, if a salesman in a company receives commissions or other additions to their salaries equal to a percent of the turnover they achieve, then the commision may be entered as an additional amount in the Sales Order, which is a percent of the **[amount to pay](https://github.com/ErpNetDocs/tech/blob/82e2643197b9da2d8cab3dd605dcd1bc0e4f308f/modules/crm/sales/sales-concepts/amount-to-pay.md)**.
 
