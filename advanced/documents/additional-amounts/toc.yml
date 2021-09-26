@@ -3,3 +3,6 @@
 - name: Amount Ditribution
   href: amounts-distribution/toc.yml
   topicHref: amounts-distribution/index.md
+- name: Creating A Duplicate Document And A New Document From Current
+  href: creating-a-document.md
+  
