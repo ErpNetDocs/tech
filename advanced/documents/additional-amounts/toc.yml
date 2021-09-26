@@ -3,6 +3,9 @@
 - name: Amount Ditribution
   href: amounts-distribution/toc.yml
   topicHref: amounts-distribution/index.md
+- name: Amount Calculation
+  href: amounts-calculation/toc.yml
+  topicHref: amounts-calculation/index.md
 - name: Creating A Duplicate Document And A New Document From Current
   href: creating-a-document.md
 - name: Additional Amounts Determination And Recording
