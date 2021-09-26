@@ -17,6 +17,6 @@ In the additional amount definition, there is also property to control the value
 > [!NOTE] In both methods the program is calculating an end amount, rounded to a specific >number of digits after the decimal point - this is an option of the additional amount >definition – ‘Round Scale’ field. The round scale is not used in the end amount. This >intermediate amount is used for the amount distribution. These amounts, rounded to a >specific digit after the decimal point, are always limited to the second digit after the decimal >point before saving them in the database.
  
 For further information on calculating the additional amount depending on the selected method, see the following articles:
-- **Explicit Value Calculation**
+- **[Explicit Value Calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explict-calculation.md)**
 - **Percent Value Calculation**
 
