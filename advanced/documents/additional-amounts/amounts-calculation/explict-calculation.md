@@ -8,4 +8,4 @@ There is a document with currency "EUR" and an additional amount entered as expl
 
 [Input Amount] = ROUND(**60 * 1.96, 2) = 117.60EUR**.
 
-See [Percent calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/percent-calculation.md) for comparison.
+Check out [Percent calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/percent-calculation.md) for comparison.
