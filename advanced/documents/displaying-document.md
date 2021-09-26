@@ -1,0 +1,83 @@
+ # Displaying And Finding Document And Line Numbers
+ 
+### 1. Displaying Document And Line Numbers
+
+#### a) The general format for displaying document and line numbers is:
+
+<**DocTypeCode**>**:**<**DocNumber**>**:**<**LineNumber**> - <**DocTypeName**>
+
+for example, let's have the following:
+- The document type is ‘Sales Order’, with code ‘SO’
+- The document number is ‘00503’
+- The line number is 120 (the line numbers are integers)
+
+This will be represented as:
+
+**SO:00503:120 - Sales Order**
+ 
+ #### b) If we have to display only a document number (without line number), the format is the following:
+ 
+<**DocTypeCode**>**:**<**DocNumber**> - <**DocTypeName**>
+
+for example, let's have the following:
+- The document type is ‘Sales Order’, with code ‘SO’
+- The document number is ‘00503’
+
+This will be represented as:
+
+**SO:00503 - Sales Order**
+
+### 2. Sorting Lists Of Documents And Line Numbers
+
+When a list, containing document and line numbers is displayed sorted, the sort order is the following:
+- First, sort lexicographically by "DocTypeCode"
+- Then, sort lexicographically by "DocNumber"
+- Then, sort numerically by "LineNumber" (if applicable)
+ 
+### 3. Searching Through Document And Line Numbers
+  
+When the user wants to find a document or a specific document line, they enter a search term. The following rules apply to the search term:
+ 
+ #### a) Generally, a search is processed in the same format as the display text
+ 
+<**DocTypeSearchTerm**>**:**<**DocNumberSearchTerm**>**:**<**LineNumberSearchTerm**>
+
+For example, searching for ‘SO:00503:120’ will find and match ‘O:00503:120’ and nothing else.<br>
+
+This is a non-wildcard search and is the fastest search. It is usually used when a value is pasted in a user application.
+#### b) Some of the search terms might be missing
+For example, we can search for ‘SO:00503’ and this will match all lines from ‘SO:00503’, e.g. ‘SO:00503:10’, ‘SO:00503:20’, etc.
+> Note, that if the search contains only 1 (one) search term, and does not contain colon (':'), the search will be performed over the document number!
+
+So, for example, searching for '00503' will find 'SO:00503'. But searching for 'SO' will NOT match 'SO:00503', because 'SO' would not be found among the document numbers (unless there is a document with the number 'SO').
+#### c) Some of the search terms might contain a wildcard symbol (%)
+The "DocTypeSearchTerm" and "DocNumberSearchTerm" can contain the wildcard symbol and it will perform a wildcard search. However, the "LineNumberSearchTerm" **cannot** contain wildcard symbol and will not perform a wildcard search.
+
+The system wildcard symbol is '%'. However, in the user applications, the generally accepted wildcard symbol is ' ' (space).
+
+### 4. Examples
+ 
+|System search term|UserApplication visualization|Description
+|:---|:---|:---
+|S%:%503|'S : 503'| - Document types, starting with 'S'.<br> - Document Numbers, finishing with '503'
+|SO:%503|'SO: 503'| - Document type with code 'SO'.<br> - Document Numbers, finishing with '503'
+|SO:%503:10|'SO: 503:10'| - Document type with code 'SO'.<br> - Document Numbers, finishing with '503'.<br> - Line Number 10 (line numbers do not support wildcard search)
+|::10|'::10'| - All lines in all documents, with line number = 10
+|SO::10|'SO::10'| - Document type with code 'SO'.<br> - All lines, with line number = 10
+|:%503%|': 503 '|- All documents, with numbers, containing '503'.<br> This could be specified simpler, as in the following example:
+|%503%|' 503 '|Because there are no colons (':'), the search term is applied to the document number.<br> - All documents, with number, containing '503'.<br> Note: If you want to search by document type only, append a colon at the end of the search string, as in the following example:
+|SO:|'SO:'| - All documents (and lines) for document type with code = 'SO'
+|SO::|'SO::'|(same as above).<br> - All documents (and lines) for document type with code = 'SO'
+
+System
+Search Term
+User Application
+Visualization
+Description
+ 
+> When searching in large databases DO NOT put a wildcard symbol **in front** of the document number. For example, search for '0047858%', instead of '%47858%'. So, in a user application, search for '0047858', instead of ' 47858'.<br>
+
+>The difference in the speed might be substantial. Performance tests have shown 0.2 sec for '0047858%', against 120 sec for '%47858%' in a database with 50 million documents.<br>
+
+>This recommendation is only for the document number. The document type code can contain wildcard symbols in any position and this does not affect performance.
+
