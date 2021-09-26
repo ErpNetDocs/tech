@@ -89,7 +89,7 @@ The final result for the amount is:
 > 
 > [additional amount] = [positive amount] + [negative amount]
 > 
- These two subtotals may be used in the additional amount distribution. For further information, see [Amounts Distribution](https://github.com/ErpNetDocs/tech/blob/011b4e20c2f19c3fe62779e947d92025ae20932b/advanced/documents/additional-amounts/amounts-distribution/index.md).
+ These two subtotals may be used in the additional amount distribution. For further information, see **[Amounts Distribution](https://github.com/ErpNetDocs/tech/blob/011b4e20c2f19c3fe62779e947d92025ae20932b/advanced/documents/additional-amounts/amounts-distribution/index.md)**.
 
 *Example 3*:
 
