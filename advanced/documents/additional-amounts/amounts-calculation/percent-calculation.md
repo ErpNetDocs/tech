@@ -83,7 +83,7 @@ The final result for the amount is:
 [Commission] = ROUND(**109 EUR * 0.05, 2**) = **5.45 EUR**
 
 >[!NOTE]
-> When we have to calculate percent and the document amount is part of the base amount (meaning _'Based On Lines'_ is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately. 
+> When we have to calculate percent and the document amount is part of the base amount (_'Based On Lines'_ is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately. 
 > 
 > So the final result is:
 > 
