@@ -5,4 +5,5 @@
   topicHref: amounts-distribution/index.md
 - name: Creating A Duplicate Document And A New Document From Current
   href: creating-a-document.md
-  
+- name: Additional Amounts Determination And Recording
+  href: additional-determination-and-recording.md
