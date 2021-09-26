@@ -41,7 +41,7 @@ This is a non-extensive list of the more important attributes:
 ## Further Reading:
 
 - **[Document states](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-states.md)** 
-- **[Document flow](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-flow.md)** — The sequence of documents in a process form the document flow of the process.
+- **[Document flow](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-flow.md)** 
 - **[Additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)**
 - **Document versions (TBD)**
 - **[Transitional documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional-documents.md)**
