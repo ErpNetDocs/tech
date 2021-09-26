@@ -26,11 +26,11 @@ For more information about the calculation and distribution formulas, see **[Amo
 
 *Example 1:*
 
-Purchase Invoice #1 has three rows: row #10 with amount of **50 EUR**, row #20 with amount of **80 EUR** and row #30 with amount of **140 EUR**. 
+Purchase Invoice #1 has three rows: #10 with amount of **50 EUR**, #20 with amount of **80 EUR** and #30 with amount of **140 EUR**. 
 
 Second Purchase Invoice #2 is entered with no rows - only additional amount with Input Amount of **38 EUR**. 
 
-The user enters Purchase Invoice #1 in the ’Document Amount Referenced Documents’ panel (Purchase Invoice #2 is not listed there!). In this case, the amount is distributed among the three rows from Purchase Invoice #1, but the distribution is only entered in Purchase Invoice #1. 
+The user enters Purchase Invoice #1 in the ’Document Amount Referenced Documents’ panel (Purchase Invoice #2 is not listed there). The amount is distributed among the three rows from #1, but the distribution is only entered in Purchase Invoice #1. 
 
 This is the resulting distribution, assuming that the transport is distributed by amount and is rounded up to the second digit:
 
@@ -40,11 +40,11 @@ This is the resulting distribution, assuming that the transport is distributed b
 
 *Example 2:*
 
-There is a Sales Order #1 at the end of the previous year. It has two rows: #10 with amount of **100 EUR** and #20 with amount of **80 EUR**. 
+There is a Sales Order #1 at the end of last year. It has two rows: #10 with amount of **100 EUR** and #20 with amount of **80 EUR**. 
 
 In this Sales Order,  the user has missed to enter holidays discounts - additional amount ‘Christmas Discount’ ; (Default Percent: **-3%**; Base On Lines: **True**; Distributed By: **Amount**; Round Scale: **2**). 
 
-It is not appropriate to edit the Sales Order since it comes from the previous fiscal year. Now, in the Easter Holidays, a Sales Order for the same customer is entered separately. The user enters the discount missed from the first Sales Order discount (i.e. ‘Christmas Discount’ in Sales Order #2 is distributed only in Sales Order #1 - this is indicated in the ’Document Amount Referenced Documents’ panel). 
+It is not appropriate to edit the Sales Order since it comes from the previous fiscal year. Now, in the Easter Holidays, a Sales Order for the same customer is entered separately. The user enters the discount missed from the first Sales Order (‘Christmas Discount’ in Sales Order #2 is distributed only in Sales Order #1 - this is indicated in the ’Document Amount Referenced Documents’ panel). 
 
 In Sales Order #2, the user enters a new discount for the Easter Holidays (Default Percent: **-2%**; Base On Lines: **True**; Distributed By: **Amount**; Round Scale: **2**). This additional amount is applied only to the current document and it is not entered in the ’Document Amount Referenced Documents’ panel. 
 
