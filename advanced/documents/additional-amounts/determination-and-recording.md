@@ -29,4 +29,4 @@ Take the thansport of deliveries from outside the country as an example. In this
 
 This mechanism is described in **[Referenced Documents](https://github.com/ErpNetDocs/tech/blob/836ab6ef73ea2f82dc153d67a5032e35e69b7f44/advanced/documents/additional-amounts/amounts-distribution/referenced-documents.md)**.
 
-Thus, once an amount is calculated and distributed, no matter if it is only in the document it is entered in or in others, to see its **real value**, which shows how the amount affects the business activities of the documents, its distributions should be summed from all documents it is distributed in.
+No matter if an amount is entered in a document or referenced in others, once it is calculated and distributed, we will need to see its **real value**. It is meant to show how the amount affects the business activities of the documents. Thus, the amount distributions should be summed from all documents it is distributed in.
