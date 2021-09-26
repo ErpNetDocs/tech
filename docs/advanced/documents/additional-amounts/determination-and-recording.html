@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Common concepts | ERP.net Tech Docs </title>
+    <title>Additional Amounts Determination And Recording | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Common concepts | ERP.net Tech Docs ">
+    <meta name="title" content="Additional Amounts Determination And Recording | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,16 +77,32 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="common-concepts">Common concepts</h1>
+<h1 id="additional-amounts-determination-and-recording">Additional Amounts Determination And Recording</h1>
 
+<p>These amounts are recorded in the ‘Additional Amounts’ panel, which can be found in the following documents:</p>
 <ul>
-<li><p><a href="goods-cost/index.html">Goods Cost</a></p>
-</li>
-<li><p><a href="lots-issue.html">Lots Issue</a></p>
-</li>
-<li><p><a href="setting-transaction-timestamp/index.html">Setting Transaction Timestamp</a></p>
-</li>
+<li>Sales Orders</li>
+<li>Invoice Orders</li>
+<li>Invoices Purchase Orders</li>
+<li>Purchase Invoices</li>
+<li>Transfer Orders</li>
+<li>Transactions</li>
 </ul>
+<p>The input/primary data is entered in the <em>‘Additional Amounts’</em> panel, where it is used for calculating the amount and determining its impact on the document. This calculation is executed every time the document is saved and consists of 2 stages:</p>
+<ol>
+<li><p>Amounts determination.</p>
+</li>
+<li><p>Stage 1 amounts distribution through the affected documents. That distribution is saved in the document in which it is entered, no matter if the amount affects only the current document or more.</p>
+</li>
+</ol>
+<p>The amount is determined by entering an exact value or by indicating that the amount is calculated as a percent of the base document amount or other additional amounts. This data is entered by adding the amount to a document in its <em>‘Additional Amounts’</em> panel. Then, it is used to calculate the real value.</p>
+<p>For further information see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md">Amounts Calculation</a></strong>.</p>
+<p>After the amount value is calculated, it is not saved in the document. First, it is distributed through the affected documents. This is necessary because we often need to determine what part of the additional amount is distributed to a specific row (for example, the value of the additional amount VAT for a specific Sales Order row).</p>
+<p>The algorithm is explained in details in <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md">Amounts Distribution</a></strong>.</p>
+<p>There may be cases when an additional amount is entered in one document, but it affects others as well.</p>
+<p>Take the thansport of deliveries from outside the country as an example. In this case, the original Purchase Invoice for the delivery of goods has arrived and it is entered in ERP.net . The Purchase Invoice is released before the Purchase Invoice for the transport arrives. The transport is entered as an <strong>additional amount</strong> so it can be included in the product's costs. As it cannot be entered in the original Purchase Invoice (because the document state is Released and the transport is not actually part of it), the transport is entered in another document and it should be distributed into the original Purchase Invoice (so its amount is included in the original Purchase Invoice goods costs). Therefore, we are able to indicate additional - referenced documents, where we distribute the current amount.</p>
+<p>This mechanism is described in <strong><a href="https://github.com/ErpNetDocs/tech/blob/836ab6ef73ea2f82dc153d67a5032e35e69b7f44/advanced/documents/additional-amounts/amounts-distribution/referenced-documents.md">Referenced Documents</a></strong>.</p>
+<p>No matter if an amount is entered in a document or referenced in others, once it is calculated and distributed, we will need to see its <strong>real value</strong>. It is meant to show how the amount affects the business activities of the documents. Thus, the amount distributions should be summed from all documents it is distributed in.</p>
 </article>
           </div>
           
@@ -95,7 +111,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/determination-and-recording.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -187,9 +187,6 @@ references:
 - uid: generation-procedures
   name: Generation Procedures Overview
   href: advanced/documents/generation-procedures.html
-- uid: inventory-module
-  name: Inventory Module
-  href: modules/logistics/inventory/index.html
 - uid: jobs-J30632
   name: J30632 Deletе Old Notifications
   href: advanced/jobs/J30632.html

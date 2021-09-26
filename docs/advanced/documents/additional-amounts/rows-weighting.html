@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rows Weighting | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Rows Weighting | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="rows-weighting">Rows Weighting</h1>
+
+<p>In many cases the line amounts from the document rows play major role in the additional amounts calculation. Either the value of the amount is defined by the row amounts (for example VAT or customs), or the distribution of the amount through the row depends on the line amounts. But there are cases when not all rows participate equally in the distribution.</p>
+<p>For example, it is possible for some of the products in an Invoice to be exempt from income tax (VAT). I.e. not all document rows will participate in the VAT calculation and afterwards the calculated amount has to be distributed only on the rows having participated in the calculation. Similar case is the ‘Customs additional amount’ in Purchase Invoices - Customs fee is due for particular products.</p>
+<p>So there is a mechanism which allows the user to indicate that some rows are more important than others - i.e. the user sets weights/coefficients (percentages in some cases) for each document row. This is available in the documents (where the user enters the additional amount) in the 'Document Line Amounts' panel (also known as 'Amounts distribution by rows'). In this panel the coefficient of the specific row is entered in the 'Line Percent' field. These specific percentages/coefficients may be entered only for additional amounts marked as distributed by product definition (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md"><strong>Amounts Distribution</strong></a>).</p>
+<p>In this panel the weights are entered in two ways - manually when the document is created or the weights can be set as default values in the product definition.</p>
+<blockquote>
+<p>If there are no weights for additional amount in the panel then it is considered that all weights are equal to <strong>100%</strong>.</p>
+</blockquote>
+<p>Below, some brief descriptions and examples for the different input methods are explained. For more information how entered weights/coefficients are used in the calculation and the distribution, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md"><strong>Amounts Calculation</strong></a> and  <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md"><strong>Amounts Distribution</strong></a>.</p>
+<h2 id="weights-coefficients-in-the-product-definitions">Weights/ coefficients in the product definitions</h2>
+<p>In some cases the weights of specific services are known in advance (before the documents are created). For example when Customs taxes are paid for goods import, some of the products have Customs taxes and others - do not. Also for many products the Customs taxes are defined by law and they are a constant percent of the product value. For such products the user enters their weight for the additional amount Customs. Then when the documents are entered in ERP.net, when such product is selected in a document row, its weight is copied from the product definition to the 'Document Line Amount' panel. The user can change the default weights of the products.</p>
+<p><em>Example 1</em></p>
+<p>There is an additional amount ‘Customs’ with the following properties:</p>
+<ul>
+<li>Distributed by: <strong>Product Definition</strong>;</li>
+<li>Default percent: <strong>100%</strong>.</li>
+</ul>
+<p>The user enters Purchase invoice with four rows: row #10 with amount of 44 EUR, row #20 with amount of <strong>56 EUR</strong>, row #30 with amount of <strong>24 EUR</strong> and row #40 with amount of <strong>71 EUR</strong>. In row #10 there is a product with default weight for additional amount ‘Customs’ of <strong>5%</strong> and in row #30 there is a product with default weight <strong>25%</strong>. So these are the coefficients/weights for each row:</p>
+<ul>
+<li>row #10: weight = <strong>0.05</strong>;</li>
+<li>row #20: weight = <strong>0.00</strong>;</li>
+<li>row #30: weight = <strong>0.25</strong>;</li>
+<li>row #40: weight = <strong>0.00</strong>;</li>
+</ul>
+<p>So the Customs amount is <strong>8.20 EUR</strong> (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md"><strong>Amounts Calculation</strong></a>) and it is distributed through the rows as <strong>2.20 EUR : 0 EUR : 6 EUR : 0 EUR</strong> (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md"><strong>Amounts Distribution</strong></a>).</p>
+<h2 id="weightscoefficients-in-the-document">Weights/coefficients in the document</h2>
+<p>In some cases the weights for the products for specific additional amounts are not known in advance, because for example they depend on a document parameter. For example, if the weights depend on the Deal Type of the Sales Order - whether VAT is applicable or not. And as the document row may have different Deal Types, then the user will have to enter the weights/coefficients in the specific document along with Deal Type (the products do not have percentages in their definitions in advance).</p>
+<p><em>Example 2:</em></p>
+<p>There is additional amount ‘Specific VAT’ which is distributed by product definition and has a default percent of <strong>20%</strong>. The user enters Sales Order with four rows = row #10 with amount of <strong>44 EUR</strong>, row #20 with amount of <strong>56 EUR</strong>, row #30 with amount of <strong>24 EUR</strong> and row #40 with amount of <strong>71 EUR</strong>. Rows #10 and #20 are exempt from VAT, only rows #30 and #40 have 20% VAT. So the user sets manually the following percents (<strong>100%</strong> on rows #30 and #40):</p>
+<ul>
+<li>row #10: weight = <strong>0.00</strong>;</li>
+<li>row #20: weight = <strong>0.00</strong>;</li>
+<li>row #30: weight = <strong>1.00</strong>;</li>
+<li>row #40: weight = <strong>1.00</strong>.</li>
+</ul>
+<p>So the amount of Specific VAt is <strong>19 EUR</strong> (see<a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md"><strong>Amounts Calculation</strong></a>) and it is distributed through the rows as <strong>0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR</strong>.</p>
+<p><em>Example 3:</em></p>
+<p>The following example describes the case when there is no data in the ’Document Line Amount’ panel:</p>
+<p>There is an additional amount VAT (distributed by amount and having default percent of <strong>20%</strong>). So as the amount is not distributed by the product definitions in ’Document Line Amount’ panel, there is no data. I.e. in this case it is considered that no weights/coefficients are used for calculating and distributing the VAT amount, or more precisely (so we have more common and easy calculation formulas) it is considered that all document rows have <strong>100%</strong> VAT.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/rows-weighting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

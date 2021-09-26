@@ -618,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
+          "hash": "MbigcPnbdmhFv1JDVHV+/w=="
         }
       },
       "is_incremental": false,
@@ -1111,62 +1111,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts/amounts-business-rules/additional-determination-and-recording.md",
+      "source_relative_path": "advanced/documents/additional-amounts/amounts-calculation/explicit-calculation.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/additional-amounts/amounts-business-rules/additional-determination-and-recording.html",
-          "hash": "pte6Q96hNJ9tSQxrzgF1xA=="
+          "relative_path": "advanced/documents/additional-amounts/amounts-calculation/explicit-calculation.html",
+          "hash": "DvtB1M9SChEiqWL3e0zn/A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts/amounts-business-rules/additional-usage.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/documents/additional-amounts/amounts-business-rules/additional-usage.html",
-          "hash": "jPKIh/+Q8DVA88OHVWUJcA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts/amounts-business-rules/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/documents/additional-amounts/amounts-business-rules/index.html",
-          "hash": "0picFY+3QF7vSWPtkeSiVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/documents/additional-amounts/amounts-calculation/explict-calculation.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/documents/additional-amounts/amounts-calculation/explict-calculation.html",
-          "hash": "ckfXOyg/Hx96GhBLZnbaig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/documents/additional-amounts/amounts-calculation/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-calculation/index.html",
-          "hash": "V505RcTGOdj08my6B9Cogg=="
+          "hash": "dRWeZ5ZOcTmZPsD+zNK/mA=="
         }
       },
       "is_incremental": false,
@@ -1178,7 +1139,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "4Phfz5Y3+3apHNsOKl8mcQ=="
+          "hash": "ypNbO9txUBwibTAemweBag=="
         }
       },
       "is_incremental": false,
@@ -1234,11 +1195,59 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/determination-and-recording.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/determination-and-recording.html",
+          "hash": "CGLFMK12mjxGtF/JMnALqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/documents/additional-amounts/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/index.html",
-          "hash": "vTfhN+dgJqxeYDpsnmEpCA=="
+          "hash": "MRibPrG3F+MBxS9vgy0/PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/referenced-documents.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/referenced-documents.html",
+          "hash": "FZxcZKluD328CsRBaFIYSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/rows-weighting.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/rows-weighting.html",
+          "hash": "+0K7M4ZRBKUdyWvAU8/eow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/additional-amounts/usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/additional-amounts/usage.html",
+          "hash": "3+uHqAazHlFu0guHckiIVw=="
         }
       },
       "is_incremental": false,
@@ -1258,11 +1267,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/documents/creating-a-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/creating-a-document.html",
+          "hash": "D37af2EqNB49LPK5HdJS5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/displaying-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/displaying-document.html",
+          "hash": "0RGBjJENLgNWNwAcRvNrqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/documents/document-flow.md",
       "output": {
         ".html": {
           "relative_path": "advanced/documents/document-flow.html",
-          "hash": "qoqMz4CDiMeYtgxvZxKi6w=="
+          "hash": "uYYULvhPL7vuPdEUdT/lCQ=="
         }
       },
       "is_incremental": false,
@@ -1287,6 +1320,18 @@
         ".html": {
           "relative_path": "advanced/documents/document-generation-and-transitional-documents.html",
           "hash": "x5sfDUJN2QuUit7cO+IWtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/document-generation.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/document-generation.html",
+          "hash": "V6rRJ5zniqm6t1W7m1N+Cg=="
         }
       },
       "is_incremental": false,
@@ -1333,7 +1378,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/index.html",
-          "hash": "xCUSihqXQVqKU8Taw3khrQ=="
+          "hash": "VT/IRjzdmIJuyEhxKZqqSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/standart-quantity-base.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/standart-quantity-base.html",
+          "hash": "zrHlMYtn1NKgel2DTia18A=="
         }
       },
       "is_incremental": false,
@@ -1448,7 +1505,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "UYpoGRV0U4JCll0Wvrf6yg=="
+          "hash": "jXnZEAvFMuAsooasgICUgw=="
         }
       },
       "is_incremental": false,
@@ -3357,7 +3414,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/index.html",
-          "hash": "oCP1mrImAmNJj3XHG5hNZQ=="
+          "hash": "M09bi3H31qGyCfAKZ7PY7g=="
         }
       },
       "is_incremental": false,
@@ -3452,7 +3509,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/index.html",
-          "hash": "RjldYIS+N0Iidp6wyV1V5A=="
+          "hash": "7qIyfMtpYZubvnhgKEWhDA=="
         }
       },
       "is_incremental": false,
@@ -3488,7 +3545,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "MGLMUMT1eJODaIud5RlsQw=="
+          "hash": "mRSsXiSC37slLMKXyfYLEQ=="
         }
       },
       "is_incremental": false,
@@ -3536,7 +3593,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/index.html",
-          "hash": "MDzgyMU4VvOgJQ+04b63GQ=="
+          "hash": "rmSbwlkGhMWvIx7BK49BWQ=="
         }
       },
       "is_incremental": false,
@@ -3548,7 +3605,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/index.html",
-          "hash": "gRI18zN5dXDGDIaRaj4RqA=="
+          "hash": "/2t+BOKpF8FGwg6t8ARm6g=="
         }
       },
       "is_incremental": false,
@@ -3630,7 +3687,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/index.html",
-          "hash": "cLot0j5bhxwLlMM+9+qoMA=="
+          "hash": "yjEv/QoY3i8iP7h0Luo0ag=="
         }
       },
       "is_incremental": false,
@@ -3689,7 +3746,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/index.html",
-          "hash": "njg1x93VQVF5t2ISBRIQjw=="
+          "hash": "9xx/YcnvPmaXKHaSU/270Q=="
         }
       },
       "is_incremental": false,

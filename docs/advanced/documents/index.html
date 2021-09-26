@@ -80,37 +80,49 @@
 <h1 id="documents">Documents</h1>
 
 <h3 id="description">Description</h3>
-<p>Documents are one of the 3 main categories of entities in ERP.net. Documents represent things that have occurred or will occur.</p>
-<p>The 3 main categories are:</p>
+<p>Documents are one of the three main categories of entities in ERP.net. They represent things that have occurred or will occur.</p>
+<p>The main categories are:</p>
 <ul>
-<li><strong>Documents</strong> - facts; things that occur</li>
-<li><strong>Definitions</strong> - they represent real-world objects; things that (generally) do not change</li>
-<li><strong>Settings</strong> - these are system settings; data related to the way the system works</li>
+<li><strong>Documents</strong> - facts; things that occur:</li>
 </ul>
-<p>Examples of <strong>Documents</strong> are: Sales orders, Invoices, Purchase orders, etc.</p>
-<p>Examples of <strong>Definitions</strong> are: Customers, Products, Stores, etc.</p>
-<p>Examples of <strong>Settings</strong> are: Document types, Document routes, Form views, etc.</p>
-<h3 id="the-most-important-attributes">The Most Important Attributes</h3>
-<p>All documents derive from a base entity type, called <strong>Document</strong> and share similar attributes. This is a non-extensive list of the attributes having more importance:</p>
+<p>Sales orders, Invoices, Purchase orders, etc.</p>
 <ul>
-<li><strong>Enterprise Company</strong> - the company that created the document.</li>
-<li><strong>Company Location</strong> - the company location where the document was created.</li>
-<li><strong>Document Date</strong> - this is the date, when the document was constituted. If the document was electronically created in the system, this is the system date by the time of creation. When the document was created outside the system, and was entered post-factum, the attribute contains the date of the actual creation.</li>
-<li><strong>Document Type</strong> - user-defined document type, used for classification of the documents. Also defines print-out forms, document flow and other rules.</li>
-<li><strong>Document Number</strong> - the unique document number, within the sequence, defined in Document Type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.</li>
-<li><strong>State</strong> - the current state of the document. See <strong>Document states</strong> for details.</li>
-<li><strong>Currency Directory</strong> - the primary directory of currency rates, which will be used for currency conversions throughout the document. See <strong>Multi-currency (TBD)</strong> for details.</li>
+<li><strong>Definitions</strong> - they represent real-world objects; things that (generally) do not change:</li>
+</ul>
+<p>Customers, Products, Stores, etc.</p>
+<ul>
+<li><strong>Settings</strong> - system-related; data about the way the system works:</li>
+</ul>
+<p>Document types, Document routes, Form views, etc.</p>
+<h3 id="the-most-important-attributes">The Most Important Attributes</h3>
+<p>All documents derive from a base entity type called <strong>Document</strong> and share similar attributes.</p>
+<p>This is a non-extensive list of the more important attributes:</p>
+<ul>
+<li><p><strong>Enterprise Company</strong> - the company that created the document.</p>
+</li>
+<li><p><strong>Company Location</strong> - the location of the company that created the document.</p>
+</li>
+<li><p><strong>Document Date</strong> - the date the document was constituted. If it was created electronically, then this is the system date of creation. When it is created outside the system and entered post-factum, the attribute contains the date of actual creation.</p>
+</li>
+<li><p><strong>Document Type</strong> - a user-defined document type for classification of the documents. It also deals with print-out forms, document flow and other rules.</p>
+</li>
+<li><p><strong>Document Number</strong> - a unique number within the sequence, defined in Document Type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.</p>
+</li>
+<li><p><strong>State</strong> - each document in the system has a current state at any given moment. It affects how the document influences the system and whether it is updateable.</p>
+</li>
+<li><p><strong>Currency Directory</strong> - the primary directory for currency rates which will be used for currency conversions throughout the document. See <strong>Multi-currency (TBD)</strong> for details.</p>
+</li>
 </ul>
 <h2 id="further-reading">Further Reading:</h2>
 <ul>
-<li><strong>Document States</strong> — Each document in the system has a current state at any given moment. The state affects how the document affects the system and whether the document is updateable.</li>
-<li><strong>Document Flow</strong> — The sequence of documents in a process form the document flow of the process.</li>
-<li><strong>Additional Amounts</strong></li>
-<li><strong>Document Versions (TBD)</strong></li>
-<li><strong>Transitional Documents</strong></li>
-<li><strong>Adjustment Documents</strong></li>
-<li><strong>Creating A Duplicate Document And A New Document From Current</strong></li>
-<li><strong>Displaying And Finding Document And Line Numbers</strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-states.md">Document states</a></strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-flow.md">Document flow</a></strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md">Additional amounts</a></strong></li>
+<li><strong>Document versions (TBD)</strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional-documents.md">Transitional documents</a></strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment-documents.md">Adjustment documents</a></strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/creating-a-document.md">Creating a duplicate document and a new document from current</a></strong></li>
+<li><strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/displaying-document.md">Displaying and finding document and line numbers</a></strong></li>
 </ul>
 </article>
           </div>
