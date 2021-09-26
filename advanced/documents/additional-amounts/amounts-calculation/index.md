@@ -18,5 +18,5 @@ In the additional amount definition, there is also property to control the value
  
 For further information on calculating the additional amount depending on the selected method, see the following articles:
 - **[Explicit Value Calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explict-calculation.md)**
-- **Percent Value Calculation**
+- [**Percent Value Calculation**](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/percent-calculation.md)
 
