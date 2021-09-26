@@ -1,7 +1,9 @@
 # Explicit Value Calculation
 
-The explicit amount, entered through "Input Amount" and "Input Ampunt Currency" fields, is converted to the document currency. The result is the end amount of the additional amount.
+The explicit amount entered through the _'Input Amount'_ and _'Input Amount Currency'_ fields, is converted to the document currency. The result is the end amount of the additional amount.
 
-For example: If there is a document with currency "EUR", and there is an additional amount entered as explicit amount - 60 EUR. This addiotional amount is defined to use "Round Scale" up to the second digit afterthe decimal point. If the conversion rate form EUR to EUR is 1.96, than the additional amount is:
+Example:
+
+There is a document with currency "EUR" and an additional amount entered as explicit amount - 60 EUR. The additional amount is defined to use "Round Scale" up to the second digit after the decimal point. If the conversion rate from EUR to EUR is 1.96, then the additional amount is:
 
 [Input Amount] = ROUND(**60 * 1.96, 2) = 117.60EUR**.
