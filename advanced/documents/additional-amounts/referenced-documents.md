@@ -6,7 +6,6 @@ There are cases when we enter an additional amount in a document and calculate, 
 For such cases the user is able to record that an additional amount is calculated through and distributed by documents, different from the one in which we enter it. This is performed in the ‘Document Amount Referenced Documents’ panel where for each additional amount from the current document  0 or more documents can be entered. These documents are usually from the same system type as the current one (i.e. in Invoices we enter Invoices as referenced documents, in Sales Orders - Sales Orders and etc.) or at least these documents support additional amounts. The meaning of this information is that we indicate that this amount is calculated and distributed by these exact documents (i.e. if the amount was originally entered in the listed documents). Thus, for every additional amount it may be defined for which documents it is related:
 
 - if in ’Document Amount Referenced Documents’ panel there is no information for the additional amount - the amount is distributed only in the current document and no other documents;
-
 - if in ’Document Amount Referenced Documents’ panel there are listed documents - the amount is distributed in the listed documents and no other documents.
 
 This makes it possible for the user to enter additional amount in the current document, which is not distributed in the current document, and is distributed only in other documents (i.e. in ’Document Amount Referenced Documents" panel other documents are listed, but not the current one).
@@ -21,9 +20,7 @@ This makes it possible for the user to enter additional amount in the current do
 There is Purchase Invoice #1. It has three rows - row #10 with amount of **50 EUR**, row #20 with amount of **80 EUR** and row #30 with amount of **140 EUR**. Second Purchase Invoice #2 is entered with no rows - only additional amount with Input Amount of **38 EUR**. The Purchase Invoice #2, in ’Document Amount Referenced Documents’ panel the user enters Purchase Invoice #1 (Purchase Invoice #2 is not listed here!). In this case the amount is distributed on the three rows from Purchase Invoice #1, but the distribution is only entered in Purchase Invoice #1. This is the resulting distribution (assume that the transport is distributed by amount and is rounded up to the second digit):
 
 - row #10, Purchase Invoice #1: **7.04 EUR**;
-
 - row #20, Purchase Invoice #1: **11.26 EUR**;
-
 - row #30, Purchase Invoice #1: **19.70 EUR**;
 
 *Example 2:*
