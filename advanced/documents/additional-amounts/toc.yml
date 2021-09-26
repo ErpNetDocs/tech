@@ -6,4 +6,7 @@
 - name: Creating A Duplicate Document And A New Document From Current
   href: creating-a-document.md
 - name: Additional Amounts Determination And Recording
-  href: additional-determination-and-recording.md
+  href: determination-and-recording.md
+- name: Additional Amounts Usage
+  href: amounts-usage.md
+  
