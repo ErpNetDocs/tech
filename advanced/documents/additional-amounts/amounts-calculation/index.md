@@ -2,7 +2,7 @@
 
 There are two common ways to determine the value of **[additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)**:
 
-- setting an **[explicit amount](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explict-calculation.md)**;
+- setting an **[explicit amount](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explicit-calculation.md)**;
 - setting an amount as a **[percent](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/percent-calculation.md)** of other amounts (additional or base amounts from the document rows)
 
 Whichever method is used becomes a **property** of the document form inside the ‘Additional Document Amounts’ panel and the corresponding _‘Input Percent’_, _‘Input Amount’_ and _‘Input Amount Currency’_ fields. 
