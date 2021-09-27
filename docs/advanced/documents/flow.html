@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Standard Quantity Base | ERP.net Tech Docs </title>
+    <title>Document Flow | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Standard Quantity Base | ERP.net Tech Docs ">
+    <meta name="title" content="Document Flow | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,49 +77,13 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="standard-quantity-base">Standard Quantity Base</h1>
+<h1 id="document-flow">Document Flow</h1>
 
-<p>In Version 2018.2, we added a new dimension to measure the quantity in Logistics Documents - Standard Quantity Base (SQB).</p>
-<p>SQB represents the theoretical quantity in the base measurement unit according to the current dimensions of the product.</p>
-<p>The main objective is to improve algorithms for exhaustion and clear traceability of the execution of the ordered quantity.</p>
-<h2 id="more-details">More Details</h2>
-<p>Quantity (Q) and Quantity Base (QB) were used for the exhaustion of the quantities between parent and generated (child) documents.</p>
-<p>Variable measurement ratios allowed the <strong>editing</strong> of QB. It no longer tracks the exhaustion between a parent and a child document.</p>
-<p><em>Example</em>:</p>
-<p>PRODUCT (2 pcs = 1 kg standard)</p>
-<p>SALES ORDER (Q = 100 pcs, QB = 50 kg)</p>
-<p>STORE TRANSACTION (Q = 100 pcs, QB = 49 kg)</p>
-<ul>
-<li><p>The QB in the STORE TRANSACTION is 49 because that quantity has been measured in the store. <br>QB in the SALES ORDER is 50 kg because this is the theoretical (standard) quantity in the base measurement unit.</p>
-</li>
-<li><p>Although QB in the STORE TRANSACTION  is 49 kg, the ordered quantity is fully exhausted.</p>
-</li>
-</ul>
-<p>The example above shows that QB can no longer be used to monitor exhaustion, at least in the case of products with a variable ratio of units of measurement. This led to the need of adding a new measure - <strong>SQB</strong> (quantity in a standard unit of measure).</p>
-<p><strong>SQB</strong> is the theoretical quantity in Base Measurement Unit which will be calculated if QB remains read-only, unchangeable by the user.</p>
-<p><em>Example</em>:</p>
-<p>PRODUCT (2 pcs = 1 kg)</p>
-<p>SALES ORDER (Q = 100 pcs, QB = 50 kg, SQB = 50 kg)</p>
-<p>STORE TRANSACTION (Q = 100, QB = 49 kg (measured), SQB = 50 kg)</p>
-<p>Here, it is clear that if we use SQB, we can easily and accurately determine whether the document is exhausted or not.</p>
-<p>This made the SQB Metric the <strong>main generation procedure indicator</strong> as to deciding whether the quantity of the parent document is fully exhausted or not. It does not mean that Q and QB will no longer be taken into account. An exhaustion of Q and QB will continue to be performed - otherwise, the algorithms won’t be able to solve problems with rounding when we are partially executing the ordered quantity. The difference is that they <strong>will not</strong> determine whether a new child record must be created.</p>
-<p>For more information, see <strong>Metrics</strong>.</p>
-<p>SQB also allows for exhaustion monitoring and the unification not only of all generation procedures but also of all functional navigators.<br> A record/line in functional navigators will be available for execution only if there is а remaining SQB that hasn’t been thoroughly fulfilled by the child documents.</p>
-<p>When using exhaustion by SQB, all functionalities will also work for non-VMR products while preserving resilience in terms of manual change in the measurement ratios.</p>
-<h2 id="general-sqb-purposes">General SQB purposes</h2>
-<p>In Conclusion, the new SQB dimension allows:</p>
-<ul>
-<li><p>QB exhaustion even when we are using VMR;</p>
-</li>
-<li><p>QB and SQB exhaustion for non-VMR products;</p>
-</li>
-<li><p>solving problems with rounding when we are partially executing the ordered quantity;</p>
-</li>
-<li><p>clear traceability of how much of the ordered quantity is exhausted;</p>
-</li>
-<li><p>implementation of the same algorithm for executing and exhausting quantities for all functional navigators.</p>
-</li>
-</ul>
+<h3 id="description">Description</h3>
+<p>The sequence of documents in a process forms a document flow. Just a sequence of documents is a rare occurrence, so documents in a process are more likely to be in a hierarchy.</p>
+<p>Documents in ERP.net often have <strong>sub-documents</strong>. Most of the time, they are <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/generation.md">automatically generated</a> or created by some <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/fulfillment.md">fulfillment function</a>. However, manually entering a sub-document is also allowed and sometimes encouraged.</p>
+<p>Documents, their sub-documents, the sub-documents of the sub-documents, etc. <strong>form</strong> a sequence, or hierarchy. The document flow design, therefore, is one of the most important aspects of implementing ERP.net for a target enterprise.</p>
+<p>The designed is achieved with the help of specific document routes built for each Document Type.</p>
 </article>
           </div>
           
@@ -128,7 +92,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/standart-quantity-base.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/flow.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

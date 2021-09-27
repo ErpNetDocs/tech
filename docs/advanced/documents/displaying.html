@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Displaying And Finding Document And Line Numbers | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Displaying And Finding Document And Line Numbers | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="displaying-and-finding-document-and-line-numbers">Displaying And Finding Document And Line Numbers</h1>
+
+<h3 id="1-displaying-document-and-line-numbers">1. Displaying Document And Line Numbers</h3>
+<h4 id="a-the-general-format-for-displaying-document-and-line-numbers-is">a) The general format for displaying document and line numbers is:</h4>
+<p>&lt;<strong>DocTypeCode</strong>&gt;<strong>:</strong>&lt;<strong>DocNumber</strong>&gt;<strong>:</strong>&lt;<strong>LineNumber</strong>&gt; - &lt;<strong>DocTypeName</strong>&gt;</p>
+<p>For example, let's have the following:</p>
+<ul>
+<li>The document type is ‘Sales Order’, with code ‘SO’</li>
+<li>The document number is ‘00503’</li>
+<li>The line number is 120 (the line numbers are integers)</li>
+</ul>
+<p>This will be represented as:</p>
+<p><strong>SO:00503:120 - Sales Order</strong></p>
+<h4 id="b-if-we-have-to-display-only-a-document-number-without-line-number-the-format-is-the-following">b) If we have to display only a document number (without line number), the format is the following:</h4>
+<p>&lt;<strong>DocTypeCode</strong>&gt;<strong>:</strong>&lt;<strong>DocNumber</strong>&gt; - &lt;<strong>DocTypeName</strong>&gt;</p>
+<p>Now, let's have the following:</p>
+<ul>
+<li>The document type is ‘Sales Order’, with code ‘SO’</li>
+<li>The document number is ‘00503’</li>
+</ul>
+<p>This will be represented as:</p>
+<p><strong>SO:00503 - Sales Order</strong></p>
+<h3 id="2-sorting-lists-of-documents-and-line-numbers">2. Sorting Lists Of Documents And Line Numbers</h3>
+<p>When a list containing document and line numbers is sorted, the order is the following:</p>
+<ul>
+<li>First, sort lexicographically by &quot;DocTypeCode&quot;</li>
+<li>Then, sort lexicographically by &quot;DocNumber&quot;</li>
+<li>Then, sort numerically by &quot;LineNumber&quot; (if applicable)</li>
+</ul>
+<h3 id="3-searching-through-document-and-line-numbers">3. Searching Through Document And Line Numbers</h3>
+<p>When a user wants to find a document or a specific document line, they enter a search term. The following rules apply:</p>
+<h4 id="a-generally-a-search-is-processed-in-the-same-format-as-the-display-text">a) Generally, a search is processed in the same format as the display text</h4>
+<p>&lt;<strong>DocTypeSearchTerm</strong>&gt;<strong>:</strong>&lt;<strong>DocNumberSearchTerm</strong>&gt;<strong>:</strong>&lt;<strong>LineNumberSearchTerm</strong>&gt;</p>
+<p>For example, searching for ‘SO:00503:120’ will find and match ‘O:00503:120’ and nothing else.</p>
+<p>This is a non-wildcard search and is the fastest search. It is usually used when a value is pasted in a user application.</p>
+<h4 id="b-some-of-the-search-terms-might-be-missing">b) Some of the search terms might be missing</h4>
+<p>We can search for ‘SO:00503’ and this will match all lines from ‘SO:00503’, e.g. ‘SO:00503:10’, ‘SO:00503:20’, etc.</p>
+<blockquote>
+<p>If the search contains only one search term and does not contain colon (':'), it will be performed over the document number!</p>
+</blockquote>
+<p>Searching for '00503' will find 'SO:00503'. But searching for 'SO' will <strong>NOT</strong> match 'SO:00503', because 'SO' would not be found among the document numbers (unless there is a document with the number 'SO').</p>
+<h4 id="c-some-of-the-search-terms-might-contain-a-wildcard-symbol-">c) Some of the search terms might contain a wildcard symbol (%)</h4>
+<p>The &quot;DocTypeSearchTerm&quot; and &quot;DocNumberSearchTerm&quot; can contain the wildcard symbol and it will perform a wildcard search. However, the &quot;LineNumberSearchTerm&quot; <strong>cannot</strong> contain wildcard symbol and will not perform a wildcard search.</p>
+<p>The system wildcard symbol is '%'. In the user applications, the generally accepted symbol is ' ' (space).</p>
+<h3 id="4-examples">4. Examples</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">System search term</th>
+<th style="text-align: left;">User Application Visualization</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">S%:%503</td>
+<td style="text-align: left;">'S : 503'</td>
+<td style="text-align: left;">• Document types, starting with 'S'.<br> • Document Numbers, finishing with '503'</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO:%503</td>
+<td style="text-align: left;">'SO: 503'</td>
+<td style="text-align: left;">• Document type with code 'SO'.<br> • Document Numbers, finishing with '503'</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO:%503:10</td>
+<td style="text-align: left;">'SO: 503:10'</td>
+<td style="text-align: left;">• Document type with code 'SO'.<br> • Document Numbers, finishing with '503'.<br> • Line Number 10 (line numbers do not support wildcard search)</td>
+</tr>
+<tr>
+<td style="text-align: left;">::10</td>
+<td style="text-align: left;">'::10'</td>
+<td style="text-align: left;">• All lines in all documents, with line number = 10</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO::10</td>
+<td style="text-align: left;">'SO::10'</td>
+<td style="text-align: left;">• Document type with code 'SO'.<br> • All lines, with line number = 10</td>
+</tr>
+<tr>
+<td style="text-align: left;">:%503%</td>
+<td style="text-align: left;">': 503 '</td>
+<td style="text-align: left;">• All documents, with numbers, containing '503'.<br> This could be specified simpler, as in the following example:</td>
+</tr>
+<tr>
+<td style="text-align: left;">%503%</td>
+<td style="text-align: left;">' 503 '</td>
+<td style="text-align: left;">Because there are no colons (':'), the search term is applied to the document number.<br> • All documents, with number, containing '503'.<br> Note: If you want to search by document type only, append a colon at the end of the search string, as in the following example:</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO:</td>
+<td style="text-align: left;">'SO:'</td>
+<td style="text-align: left;">• All documents (and lines) for document type with code = 'SO'</td>
+</tr>
+<tr>
+<td style="text-align: left;">SO::</td>
+<td style="text-align: left;">'SO::'</td>
+<td style="text-align: left;">(same as above).<br> • All documents (and lines) for document type with code = 'SO'</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>When searching in large databases, <strong>DO NOT</strong> put a wildcard symbol <strong>in front</strong> of the document number. Search for '0047858%' instead of '%47858%'. In a user application, search for '0047858' instead of ' 47858'.</p>
+<p>The difference in speed might be substantial. Performance tests have shown 0.2 sec for '0047858%', against 120 sec for '%47858%' in a database with 50 million documents.</p>
+<p>This recommendation is only for the document number. The document type code can contain wildcard symbols in any position and this does not affect performance.</p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/displaying.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

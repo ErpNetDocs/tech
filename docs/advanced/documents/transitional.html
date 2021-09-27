@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Transitional Documents | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Transitional Documents | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="transitional-documents">
+<h1 id="transitional-documents">Transitional Documents</h1>
+
+<p>The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/fulfillment.md">Document Fulfillment</a> System and lots of sub-documents are created.</p>
+<h2 id="example-1">Example 1:</h2>
+<p>When creating Payment Orders by Sales Order payment plan (see &quot;Sales Order Payment Plan&quot; article) there are preconditions for great multiplication of the number of sub-documents. For example, if the Sales Order has a payment plan with three payments - <strong>40 EUR</strong>, <strong>50 EUR</strong>, <strong>10 EUR</strong> - then initially three Payment Orders will be created (with no Invoice data) for each scheduled playment.
+When the amount of 60 EUR from the Sales Order is invoiced, two additional payment orders are created - one for <strong>-40 EUR</strong> and one for <strong>-20 EUR</strong> for planned payments №<strong>1</strong> and №<strong>2</strong>, which have no invoice data, and two more Payment Orders for <strong>40 EUR</strong> and <strong>20 EUR</strong> for planned payments №<strong>1</strong> и №<strong>2</strong> with invoice data.
+So the sub-documents are now seven. When the user release more invoices, more Payment Orders will be created.</p>
+<p>If an Invoice is voided - even more Payment Orders will be created so the collective state of the sub-documents is reached when the voided Invoice is no longer reported.</p>
+<p>So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md">Adjustment Documents</a>).
+This is performed only if the existing documents are Released. If they have higher than Released Document State (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">Document States</a>), new documents are created for the discrepancies that occur.</p>
+<p>In such а case, we call these sub-documents <em>transitional</em>.
+If a document is transitional is a property of the document type definition. Activating this property is available only when all active procedures which create the current document allow transitional document and are set to create а Released document.
+Thus, at the first sub-document creation, the sub-documents will have Released document state and the next document changes can be applied as corrections.</p>
+<p>Thereby, not only the sub-documents number is smaller, and the user does not have to process them (no need to change their state, to edit/correct them so they can reach the values in the parent document, to void additional documents and etc.).
+This is some kind of automatic processing of these documents by the system.
+The user has to work only on the parent document. This is where the name of these documents came from - <em>transitional</em> - as these documents do not need direct processing by the user.</p>
+<h2 id="example-2">Example 2:</h2>
+<p>There is a Sales Oder for <strong>100 pcs</strong>. It creates transitional Store Order. The first Store Order has <strong>100 pcs</strong>.
+When we correct the parent Sales Order so the quantity is <strong>70 pcs</strong>, there are the following two cases:</p>
+<ul>
+<li>the first is when the primary Store Order has <strong>100 pcs</strong> and it is not Releаsed, but Firm Planned (this is possible if its state is returned to Firm Planned before the Sales Order correction or when the Store  Order is created before its type is set to transitional). In this case, as there is no released document to correct, so a new Store Order is created with <strong>-30 pcs</strong>. Now there are two documents;</li>
+<li>But if the primary Store Order is Released (the usual case), then the discrepancy of <strong>-30 pcs</strong> is applied as a document correction and the quantity in the primary Store Order is now <strong>70 pcs</strong>. Thereby, the sub-document is only one, as the discrepancy documents are not independent documents, they are applied to the primary document as corrections.</li>
+</ul>
+<h2 id="example-3-continue-of-example-1">Example 3 (continue of Example 1):</h2>
+<p>There is a Sales Order with a payment plan for 3 payments - <strong>40 EUR</strong>, <strong>50 EUR</strong>, and <strong>10 EUR</strong>.
+The Payment Orders are set as transitional documents. Initially, there are no Invoices on this Sales Order so there are three released Payment Orders:</p>
+<ul>
+<li>payment №<strong>1</strong>, <strong>40 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>2</strong>, <strong>50 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>3</strong>, <strong>10 EUR</strong>, no Invoice data.</li>
+</ul>
+<p>Then Invoice #<strong>1</strong> is created based on this Sales Order for <strong>60 EUR</strong>.
+So the first two payments have to be corrected.
+The first should have Invoice data, the second should have <strong>20 EUR</strong> with Invoice data, and the rest <strong>30 EUR</strong> do not have Invoice data yet.
+So for the additional four Payment Orders from Example 1, created to cover the discrepancies, the first two Payment Orders containing <strong>-40 EUR</strong> and <strong>-20 EUR</strong> are applied as corrections of the already existing Payment Orders for planned payments №<strong>1</strong> and №<strong>2</strong>, with no invoice data. And the second two orders with invoice data are created as new Released documents as there are no released Payment Orders with Invoice data yet. So now the Payment Orders are:</p>
+<ul>
+<li>payment №<strong>1</strong>, <strong>0 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>1</strong>, <strong>40 EUR</strong>, Invoice #1;</li>
+<li>payment №<strong>2</strong>, <strong>30 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>2</strong>, <strong>20 EUR</strong>, Invoice #1;</li>
+<li>payment №<strong>3</strong>, <strong>10 EUR</strong>, no Invoice data;</li>
+</ul>
+<p>If after that Invoice #1 is edited to <strong>35 EUR</strong>  (or voided and created again), than the Invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the Payment Orders are transitional, instead of creating four new documents, the existing Payment Orders will be adjusted:</p>
+<ul>
+<li>payment №<strong>1</strong>, <strong>5 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>1</strong>, <strong>35 EUR</strong>, Invoice #1;</li>
+<li>payment №<strong>2</strong>, <strong>50 EUR</strong>, no Invoice data;</li>
+<li>payment №<strong>2</strong>, <strong>0 EUR</strong>, Invoice #1;</li>
+<li>payment №<strong>3</strong>, <strong>10 EUR</strong>, no Invoice data;</li>
+</ul>
+<p>The previous example shows that there are cases when the sub-documents have zero-values in the scalar value fields. This is equal to removing the sub-documents (i.e. it does not order/execute anything anymore). The fact that the sub-documents are not voided or erased completely is useful as in a following action they may be used to be adjusted again with zero-values (thereby they are recovered as active documents).</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

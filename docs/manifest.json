@@ -618,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "MbigcPnbdmhFv1JDVHV+/w=="
+          "hash": "2bcvGqCYro+vrlAAOF0y2g=="
         }
       },
       "is_incremental": false,
@@ -1127,7 +1127,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-calculation/index.html",
-          "hash": "dRWeZ5ZOcTmZPsD+zNK/mA=="
+          "hash": "1mjTHT1rvPyFC/h4TsVFDQ=="
         }
       },
       "is_incremental": false,
@@ -1151,7 +1151,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-amount.html",
-          "hash": "WhDfbLeraXoeCWhbfuqoWw=="
+          "hash": "hGY1aVJz+GdGEhEAKUJXig=="
         }
       },
       "is_incremental": false,
@@ -1163,7 +1163,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-distribution/by-product-definition.html",
-          "hash": "RiQSr/ZOmidLFxqIrIajOA=="
+          "hash": "8C1dN7fJEoPMd1cn7Otgvw=="
         }
       },
       "is_incremental": false,
@@ -1187,7 +1187,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/amounts-distribution/index.html",
-          "hash": "QUMsjkLQR7aDst+s/i+aqg=="
+          "hash": "Nh3Z4t/AfKO+qdtxtyesGA=="
         }
       },
       "is_incremental": false,
@@ -1235,7 +1235,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/additional-amounts/rows-weighting.html",
-          "hash": "+0K7M4ZRBKUdyWvAU8/eow=="
+          "hash": "EaeqSJ938rDdGrYkpNdM5w=="
         }
       },
       "is_incremental": false,
@@ -1255,11 +1255,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/adjustment-documents.md",
+      "source_relative_path": "advanced/documents/adjustment.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/adjustment-documents.html",
-          "hash": "KgRja/CxhDRccZYwBYTv1A=="
+          "relative_path": "advanced/documents/adjustment.html",
+          "hash": "JJZrutJFAUo840KV7JSleg=="
         }
       },
       "is_incremental": false,
@@ -1267,11 +1267,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/creating-a-document.md",
+      "source_relative_path": "advanced/documents/creating-duplicate.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/creating-a-document.html",
-          "hash": "D37af2EqNB49LPK5HdJS5g=="
+          "relative_path": "advanced/documents/creating-duplicate.html",
+          "hash": "fkr9grNc4FXUXhQ6wF4S8g=="
         }
       },
       "is_incremental": false,
@@ -1279,11 +1279,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/displaying-document.md",
+      "source_relative_path": "advanced/documents/displaying.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/displaying-document.html",
-          "hash": "0RGBjJENLgNWNwAcRvNrqw=="
+          "relative_path": "advanced/documents/displaying.html",
+          "hash": "7wRnBLbmgH4swQaYm9q7NQ=="
         }
       },
       "is_incremental": false,
@@ -1291,11 +1291,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/document-flow.md",
+      "source_relative_path": "advanced/documents/flow.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/document-flow.html",
-          "hash": "uYYULvhPL7vuPdEUdT/lCQ=="
+          "relative_path": "advanced/documents/flow.html",
+          "hash": "Kn6B9YaDzQv2nhfTayFNtQ=="
         }
       },
       "is_incremental": false,
@@ -1303,11 +1303,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/document-fulfillment.md",
+      "source_relative_path": "advanced/documents/fulfillment.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/document-fulfillment.html",
-          "hash": "LCl/B5MX09rhp7zp+SVR5g=="
+          "relative_path": "advanced/documents/fulfillment.html",
+          "hash": "1g3X1LGd7kokIADczOFMWQ=="
         }
       },
       "is_incremental": false,
@@ -1315,35 +1315,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/document-generation-and-transitional-documents.md",
+      "source_relative_path": "advanced/documents/generation-and-transitional.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/document-generation-and-transitional-documents.html",
-          "hash": "x5sfDUJN2QuUit7cO+IWtw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/documents/document-generation.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/documents/document-generation.html",
-          "hash": "V6rRJ5zniqm6t1W7m1N+Cg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/documents/document-states.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/documents/document-states.html",
-          "hash": "d7cCJFj9WpHjriPh3dXKoA=="
+          "relative_path": "advanced/documents/generation-and-transitional.html",
+          "hash": "nKTgAL0ejZIoOxOmJqcvSQ=="
         }
       },
       "is_incremental": false,
@@ -1374,6 +1350,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/documents/generation.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/generation.html",
+          "hash": "CTni6zXINFqIZkEfInkV5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/documents/index.md",
       "output": {
         ".html": {
@@ -1390,7 +1378,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/documents/standart-quantity-base.html",
-          "hash": "zrHlMYtn1NKgel2DTia18A=="
+          "hash": "GE2ReXT1OQ4Cnd+Xvcy/eg=="
         }
       },
       "is_incremental": false,
@@ -1398,11 +1386,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/documents/transitional-documents.md",
+      "source_relative_path": "advanced/documents/states.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/documents/transitional-documents.html",
-          "hash": "Ra8kM+eeqTahH8UluNkz8g=="
+          "relative_path": "advanced/documents/states.html",
+          "hash": "t7R++nxhgULLtAZ3SC0BDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/documents/transitional.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/documents/transitional.html",
+          "hash": "2HwuavJbndqMmGUWoRyEZg=="
         }
       },
       "is_incremental": false,
@@ -1505,7 +1505,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "jXnZEAvFMuAsooasgICUgw=="
+          "hash": "UGxQ6gkPuPjv0nES+3zgoQ=="
         }
       },
       "is_incremental": false,

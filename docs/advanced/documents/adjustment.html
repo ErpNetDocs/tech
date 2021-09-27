@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Adjustment Documents | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Adjustment Documents | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adjustment-Documents">
+<h1 id="adjustment-documents">Adjustment Documents</h1>
+
+<p>Using <em>Adjustment Documents</em> is a system to adjust released documents. As the released document states that the execution of the document has already started, therefore the released documents are read-only (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">Document States</a>). So when there is a need to change such a document, the usual way of editing it is not available and  a specific system is needed.</p>
+<p>The <em>Adjustment Documents</em> are separate documents trough which a released document can be edited. They contain the main document that they are making corrections on. So one released document may have more than one correction. The <em>Adjustment Documents</em> are allowed two (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">Document States</a>) - <em>New</em> and <em>Corrective</em>. The <em>Corrective</em> state is specific only for the <em>Adjustment Documents</em> and it is not allowed at the rest of the documents. When the document state is switched from New to Corrective, the changes in the adjustment document are applied to the main released document. Then the field &quot;Adjustment Number&quot; is filled in with the consecutive number of the correction.</p>
+<p>The <em>Adjustment Documents</em> contain only the changes which has to be applied. For example, if there is a released issuing Transaction with <strong>10 PCS</strong> and it turns out that now only <strong>8 PCS</strong> are issued, in this case, an adjustment issuing Transaction is executed with the quantity of <strong>-2 PCS</strong>. Thus, it can be considered that the adjustment document is the difference between the current values in the released document and the values, which have to be achieved after the correction. So the current data in every released document are a result of the original data (the document content when released for the first time) and the data added by all adjustment documents.</p>
+<p>This mechanism is preferred over the direct redaction of the released documents because of easier tracking of the separated corrections that are executed (tracking of these changes is important). For example, in the previous example with the Transactions, the user may easily see that the quantity has been decreased by <strong>2 PCS</strong> by the adjustment document. Otherwise, the user would have to compare the consecutive versions of the main document which may be a complicated and uncomfortable task, especially with large documents. Also, this mechanism allows the <em>Adjustment Documents</em> to be used for adjustment of <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional.md">Transitional Documents</a> and sub-documents.</p>
+<h2 id="adjustment-document-application">Adjustment Document Application</h2>
+<p>The mechanism, when an adjustment document (when the document state is switched to Corrective) is applied on the main released document, is as follows:</p>
+<ol>
+<li><p>For each record in the adjustment document its corresponding record in the main document is searched. Matching the records is as follows:</p>
+<p>​       a. if the record is in the adjustment document header, than the corresponding record is in the header of the main document;</p>
+<p>​      b. if the record is in a row in the adjustment document then the record from the same row table in the main document is searched. The record should have the same <em>natural key</em> as the adjustment record; as natural key usually the document row number is used or another field (if there is no row number); for example, if in the adjustment document there is a row with number <strong>30</strong>, then in the main document a row in the same table and with the same number <strong>30</strong> is searched.</p>
+</li>
+<li><p>If no corresponding record is found in the main document (this is possible only if the current record is in the rows of the adjustment document), then the adjustment record is simply added to the corresponding table in the main document with no changes in it;</p>
+</li>
+<li><p>If a corresponding record is found in the main document, then the system reviews all the fields in the correction record and the following applies to each field:</p>
+<p>​        a. if the field is a <em>key field</em> (see the article about Key and Scalar-Valued Fields), then it is checked if it has the same value in the main document and in the adjustment document; if there is a difference, the adjustment is rolled back, and the user is notified by an error message;</p>
+<p>​        b. if the field is <em>scalar-valued</em> (see the article about Key and Scalar-Valued Fields), then the value of the adjustment record is <em><strong>added</strong></em> to the value of the main record;</p>
+<p>​        c. if the field is neither <em>key</em> nor <em>scalar-valued</em>, then the value of the main record is <em><strong>replaced</strong></em> by the value of the adjustment record.</p>
+</li>
+</ol>
+<p>Thus, in the adjustment document, only the changes in the main document are marked. I.e. the user can decrease or increase the value of a scalar-valued field (quantity or amount) or change/replace the value of a field that is neither key nor scalar-valued.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Key fields cannot be adjusted by adjustment documents!</p>
+</div>
+<p>Also if the adjustment document has no record corresponding to a record in the main document, then the original document will not be changed after the correction takes place. For example, if in the main document there is a row with a number <strong>30</strong>, and in the adjustment document there is no such row, then row <strong>30</strong> from the main document will remain unchanged after the correction.</p>
+<h2 id="what-can-be-done-by-adjustment-documents">What can be done by Adjustment Documents?</h2>
+<ul>
+<li>Can adjust values of non-key fields (the scalar-valued fields are adjusted by adding the value in the adjustment document, and the rest of the fields are adjusted by replacing the value with the one from the adjustment document);</li>
+<li>New records can be added in row tables;</li>
+<li>All scalar-valued fields in a row can be reset (so the row will no longer affect the document behavior).</li>
+</ul>
+<h2 id="what-cannot-be-done-by-adjustment-documents">What Cannot be done by Adjustment Documents?</h2>
+<ul>
+<li>A value of a key field cannot be changed;</li>
+<li>A row cannot be deleted.</li>
+</ul>
+<h2 id="special-types-of-adjustment-documents">Special Types of Adjustment Documents</h2>
+<p>There are some special types of adjustment documents in ERP.net, which are prepared by the system and the user does not have to fill the scalar values in them.</p>
+<p>Such types are the <em>Nullify Corrections</em>. They are accessible in all documents and are used to adjust all scalar-valued fields so they become <strong>0</strong>. By this correction, the document no longer &quot;has value&quot; (i.e. it does not order or fulfill any quantities or amounts). This is an alternative to document voidance.</p>
+<p>For the Receiving Orders there two special types of adjustments - <em>Correction according to stored quantities</em> and <em>Correction according to invoiced quantity</em>. The first type automatically calculates the necessary correction so the quantities in the Receiving Order become equal to the quantities from the current Receiving Order which are receipts in the store. This correction is used to eliminate the difference between the Receiving Order and its Transactions. The second type is used to equalize the quantities in the Receiving Order as they are in the Purchase Invoices, created for the current Receiving Order.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

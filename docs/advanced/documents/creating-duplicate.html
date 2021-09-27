@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating A Duplicate Document And a New Document From Current | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating A Duplicate Document And a New Document From Current | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-a-duplicate-document-and-a-new-document-from-current">Creating A Duplicate Document And a New Document From Current</h1>
+
+<p>The current article describes the principles and some specifics in creating a duplicate of an existing document.</p>
+<p>Different usages of the algorithm are also presented.</p>
+<h3 id="basic-principles">Basic Principles</h3>
+<p>А duplicate of a given document is a new document which contains identical <strong>business</strong> data as the original one, meaning that all <em><strong>substantial</strong></em> and <em><strong>meaningful</strong></em> information is copied from the original. There is some exception for technical details, such as internal identification numbers - Primary Keys, IDs of reference links between different parts of one document, and more.</p>
+<p>This is the common algorithm for creating a duplicate:</p>
+<ol>
+<li><p>A new document is created with the same Document type. Inside its headers, the <em><strong>substantial</strong></em> data from the original is copied.</p>
+<p>a.  the <em><strong>substantial</strong></em> data from the original document header is copied to the new document header;<br>
+b.  in each of the headers of the new document, only the* <strong>substantial</strong>* data from the original headers is copied.</p>
+</li>
+<li><p>In the duplicate, new rows are created for each original row, where <em><strong>substantial</strong></em> data is copied.</p>
+</li>
+<li><p>If the original document has <em>rows of the rows</em> (a row having dependent records in different parts of the document) - for each main row, its duplicate in the new document is fixed; for each sub-row of the main row, a new sub-row in the duplicate is created.<br> Only <em><strong>substantial</strong></em> data is copied from the original sub-row.</p>
+</li>
+<li><p>If the original has <em>rows of the rows of the rows</em>, the same procedure is applied until the original document structure is copied.</p>
+</li>
+</ol>
+<p>The new <strong>duplicate</strong> document must contain the same number of records (headers, rows, rows of rows) and structure as the original.</p>
+<p>Document rows are considered standard rows which most documents have, but properties and <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md">additional amounts</a></strong> also play a role.</p>
+<p>If a specific document header has its own properties, they are considered document rows. The records in the ‘Document Amount Referenced Documents’ panel are considered <em>rows of rows</em> (rows of the additional amounts). The records in ‘Document Line Amounts’ are considered rows of the standard document rows.</p>
+<p>For now, attached files are <strong>not</strong> copied when creating a duplicate of a document.</p>
+<p><em><strong>Example 1:</strong></em></p>
+<p>There is a Purchase Invoice with a document header and a specific header, two additional amounts, and four rows. For the first row values, three properties are specified. The last row has value in only one property. The second and third row do not have properties.</p>
+<p>The properties of the Purchase Invoice rows are considered <em>rows of rows</em> within the document. When creating a duplicate of this Purchase Invoice, a new Invoice is created, which also has one document header and one specific document header, two additional amounts, and four document rows.</p>
+<p>For the document rows, there are the following records:</p>
+<ul>
+<li>row 1 - 3 properties;</li>
+<li>row 2 - no properties;</li>
+<li>row 3 - no properties;</li>
+<li>row 4 - 1 property.</li>
+</ul>
+<p>Each record in the new document copies the <em><strong>substantial</strong></em> data from its corresponding record in the original Purchase Invoice.</p>
+<p>Other examples for <em>rows of rows</em> are:</p>
+<ul>
+<li>‘Depreciation plan line fixed value’ are rows of ‘Depreciation plan lines’</li>
+<li>‘Payment slip lines’ are rows of ‘Payment slip amounts’</li>
+<li>‘Operations’ are rows of ‘Work Order Items’.</li>
+<li>The Voucher rows and their specific properties playing the role of their sub-rows.</li>
+</ul>
+<p>This is the common method for copying <em><strong>substantial</strong></em> data from the original records to the duplicate records:</p>
+<ul>
+<li><p>values in fields which are Primary Key or referent ID of a link to an upper record in the current document hierarchy, are <strong>not</strong> copied; the original values are kept since they are created during the creation of the duplicate;</p>
+</li>
+<li><p>for fields processed specifically, the value from the original record is <strong>not</strong> copied and the specific logic for filling the duplicate record is followed;</p>
+</li>
+<li><p>for the rest of the fields, the value from the original record <strong>is</strong> copied with no change in the corresponding field for the duplicate.</p>
+</li>
+</ul>
+<p><em><strong>Example 2:</strong></em></p>
+<p>In the first example, when copying data from original to duplicate records, the following fields are skipped:</p>
+<ul>
+<li>in the document header: the value of the Id field as well as fields processed specifically;</li>
+<li>in the specific header of the Purchase Invoice: values of fields PurchaseInvoiceId and DocumentId;</li>
+<li>in Additional Amounts: values of fields DocumentAmountId and DocumentId;</li>
+<li>in Purchase Invoice lines: values of fields PurchaseInvoiceLineId and PurchaseInvoiceId;</li>
+<li>in Purchase Invoice lines user properties: values of fields PurchaseInvoiceId and EntityItemId.</li>
+</ul>
+<h2 id="cases-of-specific-data-copying">Cases Of Specific Data Copying</h2>
+<p>The current section describes specific fields processing during data copying.</p>
+<h4 id="document-headers">Document Headers</h4>
+<p>If the document is a Master Document on its own, then in the MasterDocumentId field of the duplicate document, the original Id is filled. If this is not the case - MasterDocumentId is copied from the original document.</p>
+<p>In DocumentDate, the current date is filled in and DocumentVersion is set to &quot;1&quot;. EnterpriseCompanyId and EnterpriseCompanyLocationId house the Enterprise Company and Location currently used by the user.</p>
+<p>CreationTime is filled in with the current date and time while CreationUser is set to the current user.</p>
+<p>State field is set to New and ReadOnly and Void are set to false.</p>
+<p>If the original document is voided, DocumentNo of the duplicate record takes the number of the original document.<br>Otherwise, DocumentNo is null.</p>
+<p>The fields UserStatusId, AssignedToUserId, VoidTime, VoidUser, VoidReason, AccessKeyId and ParentDocumentId are always empty.</p>
+<h4 id="document-headers-and-rows-of-a-voucher">Document Headers And Rows Of A Voucher</h4>
+<p>If the DefaultReferencedDocumentId in the original document is the same as the Id, then in the duplicate document this field is filled with the Id of the duplicate document. The same logic is applied for ReferencedDocumentId field in the Voucher's rows.</p>
+<h4 id="payment-slip-amounts">Payment Slip Amounts</h4>
+<p>IsPartyPayment is always set to true.</p>
+<h4 id="transactions-rows">Transactions Rows</h4>
+<p>The fields LineBaseCost, LineDocumentCost, LineProductCost and LineStoreCost are always set to 0.</p>
+<h4 id="ingredients">Ingredients</h4>
+<p>When creating duplicates of the Work order rows with ingredients, there are some specifics which are not exactly related to the fields, but to how they fit in the document hierarchy:</p>
+<ul>
+<li>if the WorkOrderItemId field in the material record is filled in, then it is considered a sub-record of the work order item record from the Work Order document, the Id of which is the value of WorkOrderItemId.<br> These records are considered rows of the work order items rows;</li>
+<li>if the WorkOrderItemId field is null, then the record is directly considered a document row.<br> Such records are rows only of the document header and not of other rows.</li>
+</ul>
+<h3 id="the-duplicate-creation-algorithm-usage">The Duplicate Creation Algorithm Usage</h3>
+<p>The algorithm for creating a duplicate works as follows:</p>
+<ul>
+<li><p>Duplicate creation is a function of the document form; the number of the original document is kept as are the date and the parent document (no matter the specifics of copying the data from the document headers).</p>
+</li>
+<li><p>Creating new from current is a function of the document form; the document number and the parent document are not kept and the document date is the current date (as in the specific behaviour).</p>
+</li>
+<li><p>Creating correction is a function of the document form; a duplicate of the current document is created and in its header, the field AdjustingDocumentId is filled with the Id of the original document; all other scalar fields in the duplicate are reset.</p>
+</li>
+<li><p>Creating a copy of the Sales order is a generation procedure in the Sales order which produces a copy of the parent Sales order; the standard duplicate creation is used and in the header of the duplicate, the standard logic of document creation is applied.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/creating-duplicate.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
