@@ -77,7 +77,7 @@ The allowed child document states depends on the relationship type and the paren
 
 ## Adjustment Documents
 
-[Adjustment Documents](adjustment-documents.md) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
+[Adjustment Documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
 
 Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment Documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.
 
