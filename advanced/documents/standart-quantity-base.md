@@ -42,7 +42,7 @@ This made the SQB Metric the **main generation procedure indicator** as to decid
 
 For more information, see **Metrics**.
 
-SQB also allows for exhaustion monitoring and the unification not only of all generation procedures but also of all functional navigators. A record/line in functional navigators will be available for execution only if there is а remaining SQB that hasn’t been thoroughly fulfilled by the child documents.
+SQB also allows for exhaustion monitoring and the unification not only of all generation procedures but also of all functional navigators.</br> A record/line in functional navigators will be available for execution only if there is а remaining SQB that hasn’t been thoroughly fulfilled by the child documents.
 
 When using exhaustion by SQB, all functionalities will also work for non-VMR products while preserving resilience in terms of manual change in the measurement ratios.
  
