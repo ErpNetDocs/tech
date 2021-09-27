@@ -1,26 +1,26 @@
 - name: Overview
   href: index.md
 - name: Document flow
-  href: document-flow.md
+  href: flow.md
 - name: Generation procedures
   href: generation-procedures.md
 - name: Document fulfillment
-  href: document-fulfillment.md
+  href: fulfillment.md
 - name: Adjustment documents
-  href: adjustment-documents.md
+  href: adjustment.md
 - name: Document states
-  href: document-states.md  
+  href: states.md  
 - name: Transitional documents
-  href: transitional-documents.md
+  href: transitional.md
 - name: Additional amounts
   href: additional-amounts/toc.yml
 - name: Document generation and transitional documents
-  href: document-generation-and-transitional-documents.md
+  href: generation-and-transitional.md
 - name: Creating a duplicate document and a new document from current
   href: creating-duplicate.md
 - name: Displaying and finding document and line numbers
-  href: displaying-document.md
+  href: displaying.md
 - name: Document generation
-  href: document-generation.md
+  href: generation.md
 - name: Standard quantity base
   href: standart-quantity-base.md
