@@ -22,6 +22,6 @@ The values entered by the user in the _‘Input Percent’_ and _‘Input Amount
  
 For further information, refer to:
 
-- **[Explicit Value Calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explict-calculation.md)**
+- **[Explicit Value Calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explicit-calculation.md)**
 - **[Percent Value Calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/percent-calculation.md)**
 
