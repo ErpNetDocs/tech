@@ -2254,6 +2254,116 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/five-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/five-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/five-zones.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/five-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/four-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/four-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/four-zones.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/four-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/three-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/three-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/three-zones.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/three-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/two-zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/two-zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/two-zones.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/two-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/six-zones.png",
       "output": {
         "resource": {
