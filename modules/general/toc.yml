@@ -6,4 +6,5 @@
 - name: Documents
   href: documents/toc.yml
   topicHref: documents/index.md
-  
+- name: File Manager
+  href: folders.md
