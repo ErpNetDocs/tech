@@ -11,6 +11,9 @@
 - name: Business rules
   href: business-rules/toc.yml
   topicHref: business-rules/index.md
+- name: String Interpolation
+  href: string-interpolation/toc.yml
+  topicHref: string-interpolation/index.md  
 - name: Data objects
   href: data-objects/toc.yml
 - name: Concepts
