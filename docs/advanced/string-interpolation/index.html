@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>String Interpolation in ERP.net | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="String Interpolation in ERP.net | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="string-interpolation-in-">String Interpolation in ERP.net</h1>
+
+<p>String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). ERP.net tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object of type <code>DomainObject</code>.</p>
+<h2 id="string-interpolation-abstract">String interpolation Abstract</h2>
+<p>Below is a pseudo-example of how the string interpolation works:</p>
+<p>The following input:</p>
+<pre><code>&quot;Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.&quot;.
+</code></pre>
+<p>Will be broken down to the following expressions:</p>
+<pre><code>(Implicit) Expression 1 = &quot;Where there’s &quot;
+(Explicit) Expression 2 = {EXPRESSION1}
+(Implicit) Expression 3 = &quot;, there’s &quot;
+(Explicit) Expression 4 = {EXPRESSION2}
+(Implicit) Expression 5 = &quot;.&quot;
+</code></pre>
+<p>After, the explicit expressions will be evaluated to their string representation.</p>
+<pre><code>(Implicit) Expression 1 = &quot;Where there’s &quot;
+(Explicit) Expression 2 = &quot;smoke&quot;
+(Implicit) Expression 3 = &quot;, there’s &quot;
+(Explicit) Expression 4 = &quot;fire&quot;
+(Implicit) Expression 5 = &quot;.&quot;
+</code></pre>
+<p>Finally, all expressions will be concatenated and presented to the output.</p>
+<pre><code>&quot;Where there’s smoke, there’s fire.&quot;.
+</code></pre>
+<h2 id="string-interpolation-by-example">String interpolation by Example</h2>
+<p>Simple examples for a string interpolation are the following:</p>
+<pre><code class="lang-cs">// Input
+&quot;The following string was interpolated on {$date:ddd}&quot;
+
+// Output (interpolated)
+&quot;The following string was interpolated on 21-09-27&quot;
+</code></pre>
+<pre><code class="lang-cs">// Input
+&quot;https://myservice.com?database={$dbname}&amp;id={Id}&quot;
+
+// Output (interpolated)
+&quot;https://myservice.com?database=mydbname&amp;id=39acf964-4e92-4d35-846e-c8a38efff02d&quot;
+</code></pre>
+<p>Also, it is possible to interpolate far more complex ones:</p>
+<pre><code class="lang-cs">// Input
+@&quot;Hello, {Public_Users(d30f16c9-a07a-41ca-9d63-e15c3e4db6b4).Name:en}!
+My name is {$user.Name:en} and I work as a {$role.Name} in {$enterprisecompany.Company.Name:en}.&quot;
+
+// Output (interpolated)
+@&quot;Hello, John Doe!
+My name is Jane Doe and I work as a Manager in ABC Company Ltd.&quot;
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>More examples are available in the separate <a href="examples/index.html">Examples</a> section.</p>
+</div>
+<h2 id="syntax">Syntax</h2>
+<p>The overall syntax for <strong>one</strong> interpolation expression is as follows:</p>
+<p><code>{&lt;$&gt;reference&lt;(args)&gt;&lt;.subref&gt;&lt;:fmt&gt;}</code></p>
+<p>where:</p>
+<ul>
+<li>The curly braces <code>{</code>, <code>}</code> define the start and the end of the interpolation expression.</li>
+<li><code>$</code> - specifies that the expression is a <code>System Variable</code>.</li>
+<li><code>ref</code> (<strong>required</strong>) - the identifier to the context of the interpolation expression.</li>
+<li><code>(args)</code> - additional arguments must be passed when evaluating a <code>Entity</code> expressions. E.g. an <code>Id</code>.</li>
+<li><code>.subref</code> - required when <code>ref</code> referes to an object, but a data member is needed. E.g. <code>Customer.Party.PartyName</code>, where <code>Customer</code> is the context (i.e. the <code>ref</code>) and the <code>.Party.PartyName</code> is the path to the data member - the subreference. In short, <code>.subref</code> defines a path that will be followed after evaluation of <code>ref</code>.</li>
+<li><code>:fmt</code> - format specifier. Further formatting of the evaluated value. E.g. <code>Customer.Party.PartyName:en</code> will format the resulting <code>PartyName</code> <code>MultiFormatString</code> according to particular language, referenced with <code>en</code> (English).</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If an interpolation expression could not be evaluated because of incorrect syntax or wrong (not existing) reference, the evaluation will fail and will return an error. E.g. <code>{Customer.Number}</code> will produce &quot;C12345&quot;, but <code>{Customer.Numer}</code> (note the typo) will output &quot;#Error: Attribute 'Customer.Number' not found#&quot;.</p>
+</div>
+<h2 id="format-specifiers">Format Specifiers</h2>
+<p>If the interpolation expression evaluates to an <code>object</code> type, it is possible for future customization of the value to a desired format. Typically the target format depends from the concrete <code>object</code> type, e.g. for <code>Number</code> type the <code>C</code> format specifier acts as number to currency string conversion, but if the object's type is <code>MultilanguageString</code> the format specifier will return the string of the current value.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information about the supported format specifiers and how to use them, see <a href="format-specifiers.html">Format Specifiers</a>.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/string-interpolation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
