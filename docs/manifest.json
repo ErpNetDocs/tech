@@ -3268,6 +3268,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/folders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/folders.html",
+          "hash": "lCEajq0Z644keqeTLqIQIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/index.md",
       "output": {
         ".html": {
@@ -4134,7 +4146,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "mH+WtOEBdiUyM1aZqi0y3g=="
+          "hash": "hcNLa/oJcU73iQ8tgVecFA=="
         }
       },
       "is_incremental": false,
