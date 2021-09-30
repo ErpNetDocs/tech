@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Conversion validation methods | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Conversion validation methods | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="conversion-validation-methods">Conversion validation methods</h1>
+
+<p>Conversion ratio providers like Currency directories and Products have methods <strong>IsConvertible</strong> and <strong>IsConvertibleToBase</strong>.</p>
+<p>They are used by the system in order to determine whether the input unit is valid and could be converted during the calculations.</p>
+<ol>
+<li><strong>IsConvertibleToBase</strong> checks if using a specified provider object one Measurement unit or one Currency unit can be converted to the base unit of the provider. If the provider is null, the unit cannot be converted to base and the method returns as false.</li>
+</ol>
+<p>When the provider is a Currency directory, the method uses the <strong>GetRatioToBaseOrDefault</strong> method for currency directories, which finds a ratio if one of the following requirements is fulfilled:</p>
+<ul>
+<li><p>the currency directory’s <strong>ToCurrency</strong> is the same as the selected Currency</p>
+</li>
+<li><p>the currency directory has lines where <strong>FromCurrency</strong> is the same as the selected Currency</p>
+</li>
+</ul>
+<p>When the provider is a Product , the method uses the <strong>GetRatioToBaseOrDefault</strong> method for products, which finds a ratio if one of the following requirements is fulfilled:</p>
+<ul>
+<li><p>the selected Measurement unit is part of the product's Base measurement category;</p>
+</li>
+<li><p>the product has defined dimension for the selected Measurement unit;</p>
+</li>
+<li><p>the selected Measurement unit is part of a Measurement category for which the product has defined dimension.</p>
+</li>
+</ul>
+<ol start="2">
+<li><strong>IsConvertible</strong> checks if using a specified provider object one Measurement unit or one Currency can be converted to another of the same type. If the provider is null, the units cannot be converted and the method returns false.</li>
+</ol>
+<p>The method is based on the <strong>GetRatioThroughBaseOrDefault</strong> method. If the units are equal or both of them are null, the method returns true. If only one of them is null, the method returns false.
+If the units are different and not null, the method uses GetRatioToBaseOrDefault for each to get the ratios for conversion to the base unit of the provider. Then, both ratios are combined in a new one. If such a combined ratio is calculated successfully, the method returns true.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/reference/conversion-validation-methods.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
