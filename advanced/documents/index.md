@@ -38,15 +38,7 @@ This is a non-extensive list of the more important attributes:
 
 - **Currency Directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. See **Multi-currency (TBD)** for details.
 
-## Further Reading:
 
-- **[Document states](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-states.md)** 
-- **[Document flow](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/document-flow.md)** 
-- **[Additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)**
-- **Document versions (TBD)**
-- **[Transitional documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional-documents.md)**
-- **[Adjustment documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment-documents.md)**
-- **[Creating a duplicate document and a new document from current](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/creating-a-document.md)**
-- **[Displaying and finding document and line numbers](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/displaying-document.md)**
+
 
 
