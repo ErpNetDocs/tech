@@ -27,6 +27,6 @@ There may be cases when an additional amount is entered in one document, but it 
 
 Take the thansport of deliveries from outside the country as an example. In this case, the original Purchase Invoice for the delivery of goods has arrived and it is entered in @@name . The Purchase Invoice is released before the Purchase Invoice for the transport arrives. The transport is entered as an **additional amount** so it can be included in the product's costs. As it cannot be entered in the original Purchase Invoice (because the document state is Released and the transport is not actually part of it), the transport is entered in another document and it should be distributed into the original Purchase Invoice (so its amount is included in the original Purchase Invoice goods costs). Therefore, we are able to indicate additional - referenced documents, where we distribute the current amount. 
 
-This mechanism is described in **[Referenced Documents](amounts-distribution/referenced-documents.md)**.
+This mechanism is described in **[Referenced Documents](referenced-documents.md)**.
 
 No matter if an amount is entered in a document or referenced in others, once it is calculated and distributed, we will need to see its **real value**. It is meant to show how the amount affects the business activities of the documents. Thus, the amount distributions should be summed from all documents it is distributed in.
