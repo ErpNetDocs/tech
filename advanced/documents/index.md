@@ -26,18 +26,17 @@ This is a non-extensive list of the more important attributes:
 
 - **Enterprise Company** - the company that created the document.
 
-- **Company Location** - the location of the company that created the document.
+- **Company Location** - the company location where the document was created.
 
 - **Document Date** - the date the document was constituted. If it was created electronically, then this is the system date of creation. When it is created outside the system and entered post-factum, the attribute contains the date of actual creation.
 
-- **Document Type** - a user-defined document type for classification of the documents. It also deals with print-out forms, document flow and other rules.
+- **Document Type** - a user-defined document type for classification of the documents. Also defines print-out forms, document flow and other rules.
 
 - **Document Number** - a unique number within the sequence, defined in Document Type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.
 
 - **State** - each document in the system has a current state at any given moment. It affects how the document influences the system and whether it is updateable.
 
-- **Currency Directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. See **Multi-currency (TBD)** for details.
-
+- **Currency Directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. 
 
 
 
