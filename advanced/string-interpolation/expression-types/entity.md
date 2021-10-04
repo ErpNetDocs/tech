@@ -18,7 +18,7 @@ Resolves an object by its entity name and `Id`.
 "Product X"
 ```
 
-If the entity name or the `Id` does not exist, the evaluation will fail and the output will contain an error message.
+If the entity name or the `Id` does not exist, the evaluation fails and the output will contain an error message.
 ```cs
 // Input
 "{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}"
@@ -40,4 +40,4 @@ Also the error handling when passing not valid reference still apply. The evalua
 ```
 
 > [!NOTE]
-> More details and examples are available in the [Examples section](../examples/entity.md).
+> More details and examples are available in the [examples section](../examples/entity.md).

@@ -33,7 +33,7 @@ line2"
 line3"
 ```
 
-It is also possible to escape the control characters for beginning and end of an interpolation expression `{`, `}`. Either by doubling `{{`, `}}`, or by using the escape character `\{`, `\}`.
+It's also possible to escape the control characters for beginning and end of an interpolation expression `{`, `}`. Either by doubling `{{`, `}}`, or by using the escape character `\{`, `\}`.
 ```cs
 // Input
 "{{This one is escaped}}"
@@ -47,4 +47,4 @@ It is also possible to escape the control characters for beginning and end of an
 ```
 
 > [!NOTE]
-> More details and examples are available in the [Examples section](../examples/constant.md).
+> More details and examples are available in the [examples section](../examples/constant.md).

@@ -1,42 +1,43 @@
-﻿# String Interpolation in @@name
+﻿# String interpolation in @@name
 
-String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). @@name tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object of type `DomainObject`.
+String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). @@name tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object.
 
-## String interpolation Abstract
+## String interpolation abstract
 
 Below is a pseudo-example of how the string interpolation works:
 
-The following input:
+In the following input:
 ```
 "Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.".
 ```
 
-Will be broken down to the following expressions:
-```
-(Implicit) Expression 1 = "Where there’s "
-(Explicit) Expression 2 = {EXPRESSION1}
-(Implicit) Expression 3 = ", there’s "
-(Explicit) Expression 4 = {EXPRESSION2}
-(Implicit) Expression 5 = "."
-```
+`{EXPRESSION1}` and `{EXPRESSION2}` will be replaced with their string representations - `smoke` and `fire`.
 
-After, the explicit expressions will be evaluated to their string representation.
-```
-(Implicit) Expression 1 = "Where there’s "
-(Explicit) Expression 2 = "smoke"
-(Implicit) Expression 3 = ", there’s "
-(Explicit) Expression 4 = "fire"
-(Implicit) Expression 5 = "."
-```
 
-Finally, all expressions will be concatenated and presented to the output.
+Finally, the interpolated string is presented to the output:
 ```
 "Where there’s smoke, there’s fire.".
 ```
 
-## String interpolation by Example
+Let's try a real world example:
 
-Simple examples for a string interpolation are the following:
+Input:
+```
+Now is {$date}.
+My name is {$user.Name}.
+```
+
+Note `{$date}` and `{$user.Name}`. They are real expressions.
+
+Output: 
+```
+Now is 4.10.2021 17:49:55.
+My name is John Doe.
+```
+
+## String interpolation by example
+
+More advanced examples for a string interpolation:
 ```cs
 // Input
 "The following string was interpolated on {$date:ddd}"
@@ -53,7 +54,7 @@ Simple examples for a string interpolation are the following:
 "https://myservice.com?database=mydbname&id=39acf964-4e92-4d35-846e-c8a38efff02d"
 ```
 
-Also, it is possible to interpolate far more complex ones:
+Also, it's possible to interpolate far more complex ones:
 ```cs
 // Input
 @"Hello, {Public_Users(d30f16c9-a07a-41ca-9d63-e15c3e4db6b4).Name:en}!
@@ -65,17 +66,17 @@ My name is Jane Doe and I work as a Manager in ABC Company Ltd."
 ```
 
 > [!NOTE]
-> More examples are available in the separate [Examples](examples/index.md) section.
+> More examples are available in the separate [examples](examples/index.md) section.
 
 ## Syntax
-The overall syntax for **one** interpolation expression is as follows:
+The overall syntax for **one** interpolation expression is:
 
 `{<$>reference<(args)><.subref><:fmt>}`
 
 where:
 * The curly braces `{`, `}` define the start and the end of the interpolation expression.
 * `$` - specifies that the expression is a `System Variable`.
-* `ref` (**required**) - the identifier to the context of the interpolation expression. 
+* `ref` (**required**) - the identifier to the context of the interpolation expression.
 * `(args)` - additional arguments must be passed when evaluating a `Entity` expressions. E.g. an `Id`.
 * `.subref` - required when `ref` referes to an object, but a data member is needed. E.g. `Customer.Party.PartyName`, where `Customer` is the context (i.e. the `ref`) and the `.Party.PartyName` is the path to the data member - the subreference. In short, `.subref` defines a path that will be followed after evaluation of `ref`.
 * `:fmt` - format specifier. Further formatting of the evaluated value. E.g. `Customer.Party.PartyName:en` will format the resulting `PartyName` `MultiFormatString` according to particular language, referenced with `en` (English).
@@ -83,8 +84,8 @@ where:
 > [!WARNING]
 > If an interpolation expression could not be evaluated because of incorrect syntax or wrong (not existing) reference, the evaluation will fail and will return an error. E.g. `{Customer.Number}` will produce "C12345", but `{Customer.Numer}` (note the typo) will output "#Error: Attribute 'Customer.Number' not found#".
 
-## Format Specifiers
-If the interpolation expression evaluates to an `object` type, it is possible for future customization of the value to a desired format. Typically the target format depends from the concrete `object` type, e.g. for `Number` type the `C` format specifier acts as number to currency string conversion, but if the object's type is `MultilanguageString` the format specifier will return the string of the current value.
+## Format specifiers
+If the interpolation expression evaluates to an object, it's possible for future customization of the value to a desired format. Typically the target format depends on the concrete object type, e.g. for `Number` type the `C` format specifier acts as number to currency string conversion, but if the object type is `MultilanguageString` the format specifier will return the string of the current value.
 
 > [!NOTE]
-> For more information about the supported format specifiers and how to use them, see [Format Specifiers](format-specifiers.md).
+> See [Format specifiers](format-specifiers.md) for more information about the supported format specifiers and how to use them.

@@ -3,17 +3,17 @@ uid: format-specifiers
 ---
 
 
-# Format Specifiers
+# Format specifiers
 Format specifiers are used to state the desired format when formatting object values. 
 In @@name they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](../advanced/calculated-attributes/operators/formatstring.md) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the [SENDMAIL](../advanced/business-rules/action-types/sendmail.md) action (‘{DomainAttribute:FormatSpecifier}’). 
-There are two main types of format specifiers - Standard .Net Format Specifiers (Numeric, Date - Time,..) and Custom Format Specifiers (Multilanguge String, Custom Property). 
+There are two main types of format specifiers - standard .Net format specifiers (Numeric, Date - Time,..) and custom format specifiers (Multilanguge string, Custom property). 
 
-## Standard .Net Format Specifiers
+## Standard .Net format specifiers
 The standard .Net format specifiers are supported.
-The list below contains the most frequently used .Net Format Specifiers. 
+The list below contains the most frequently used .Net format specifiers. 
 For a complete list and more information, please look at the official .Net documentation site.
 
-#### Numeric Format Specifiers
+#### Numeric format specifiers
 - 'C', 'c' - abbreviation of Currency. Converts a number to a string that represents a currency amount. 
 - Can be used with a precision specifier that indicates the desired number of digits after the decimal point. The decimal symbol separator and the currency symbol depend on the local regional settings. Returns: <br>
 123.4656 ('C') → $123.46 <br>
@@ -30,7 +30,7 @@ For a complete list and more information, please look at the official .Net docum
            0.488869 (P) → 48.89% <br>
            0.488869 (P3) → 48.887%
 
-#### Date and Time Format Strings
+#### Date and Time format strings
 Standard date and time format specifiers can be used alone (standard date and time format string) or in a combination (custom format string) in order to define the text representation of a date and time value.
 A standard date and time format string uses a single format specifier to define the text representation of a date and time value. 
 Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string.
@@ -75,10 +75,10 @@ Any date and time format string that contains more than one character, including
 - 2019-05-10 15:18:39.013 (dd-MM-yyyy hh:mm)→ 10-05-2019 03:18
 - 2019-05-10 15:18:39.013 ('dd MM yyyy hh:mm 'h'')→ 10 05 2019 03:18 h
 
-## Custom Format Specifiers
+## Custom format specifiers
 There are also custom format specifiers that are created especially for @@name. They are different for the different data types and are described below.
 
-## Multilanguge String
+## Multilanguge string
 - 'C', 'CURRENT' - returns the string of the current value.
 
 - 'D', 'DUMP' - returns the content of the multilanguage string in the format: <br>
@@ -86,7 +86,7 @@ EN=<english-string> DE=<german-string>
 - 'T', 'TRANSLITERATED' - returns transliteration to the current language.
 
 - format specifiers for a particular language - returns the translation of the specified language. If there is no transliteration set for this language, returns an empty string. 
-Note: The format specifiers for a particular language are supported since EnterpriseOne Version 2019.1. <br>
+Note: The format specifiers for a particular language are supported since EnterpriseOne version 2019.1. <br>
 Language format specifiers:
      -'EN' - English
      - 'BG' - Bulgarian
@@ -104,7 +104,7 @@ Language format specifiers:
      - 'SR' - Serbian
      - 'ES' - Spanish
 
-## Custom Property
+## Custom property
 - 'VD' - abbreviation of Value/Description, returns:
           <Value>: <Description>
 - 'V' - abbreviation of Value, returns:

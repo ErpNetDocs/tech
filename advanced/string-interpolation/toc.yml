@@ -3,9 +3,9 @@
 - name: Expression types  
   href: expression-types/toc.yml
   topicHref: expression-types/index.md
-- name: Format Specifiers 
+- name: Format specifiers 
   href: format-specifiers.md
-- name: System Variables
+- name: System variables
   href: system-variables.md
 - name: Examples
   href: examples/toc.yml

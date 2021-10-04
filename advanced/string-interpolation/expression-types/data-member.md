@@ -4,7 +4,7 @@ items: StringInterpolationExpressionTypes
 
 # DataMember expressions
 
-Acquires a data member according to the context of the `DomainObject` by the passed `reference`. 
+Acquires a data member according to the object's context by the passed `reference`. 
 ```cs
 // Input
 "{DocumentId}"
@@ -27,7 +27,7 @@ Acquires a data member according to the context of the `DomainObject` by the pas
 ""
 ```
 
-If the resolved data member does not exist, the evaluation will fail and the output will contain an error message. In contrast, if the data member is null, the expression will evaluate to an empty string.
+The evaluation fails if the resolved data member doesn't exist. The output will contain an error message. In contrast, if the data member is null, the expression will evaluate to an empty string.
 ```cs
 // Input (There is no 'Name' data member in Customer)
 "{Customer.Name}"
@@ -41,4 +41,4 @@ If the resolved data member does not exist, the evaluation will fail and the out
 ```
 
 > [!NOTE]
-> More details and examples are available in the [Examples section](../examples/data-member.md).
+> More details and examples are available in the [examples section](../examples/data-member.md).
