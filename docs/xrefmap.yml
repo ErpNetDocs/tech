@@ -182,7 +182,7 @@ references:
   name: Extensible Data Objects EDO
   href: advanced/data-objects/extensible-data-objects.html
 - uid: format-specifiers
-  name: Format Specifiers
+  name: Format specifiers
   href: advanced/string-interpolation/format-specifiers.html
 - uid: generation-procedures
   name: Generation Procedures Overview
@@ -209,7 +209,7 @@ references:
   name: Non Agreed Services And Materials
   href: modules/applications/service/non-agreed-services-and-materials.html
 - uid: system-variables
-  name: System Variables
+  name: System variables
   href: advanced/string-interpolation/system-variables.html
 - uid: template-description-jobs
   name: Jobs Documentation Template

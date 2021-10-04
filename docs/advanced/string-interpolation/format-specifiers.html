@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Format Specifiers | ERP.net Tech Docs </title>
+    <title>Format specifiers | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Format Specifiers | ERP.net Tech Docs ">
+    <meta name="title" content="Format specifiers | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,16 +77,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="format-specifiers">
-<h1 id="format-specifiers">Format Specifiers</h1>
+<h1 id="format-specifiers">Format specifiers</h1>
 
 <p>Format specifiers are used to state the desired format when formatting object values.
 In ERP.net they can be used, for example, as a second parameter for the calculated attribute operator <a href="../advanced/calculated-attributes/operators/formatstring.md">FORMATSTRING</a> or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the <a href="../advanced/business-rules/action-types/sendmail.md">SENDMAIL</a> action (‘{DomainAttribute:FormatSpecifier}’).
-There are two main types of format specifiers - Standard .Net Format Specifiers (Numeric, Date - Time,..) and Custom Format Specifiers (Multilanguge String, Custom Property).</p>
-<h2 id="standard-net-format-specifiers">Standard .Net Format Specifiers</h2>
+There are two main types of format specifiers - standard .Net format specifiers (Numeric, Date - Time,..) and custom format specifiers (Multilanguge string, Custom property).</p>
+<h2 id="standard-net-format-specifiers">Standard .Net format specifiers</h2>
 <p>The standard .Net format specifiers are supported.
-The list below contains the most frequently used .Net Format Specifiers.
+The list below contains the most frequently used .Net format specifiers.
 For a complete list and more information, please look at the official .Net documentation site.</p>
-<h4 id="numeric-format-specifiers">Numeric Format Specifiers</h4>
+<h4 id="numeric-format-specifiers">Numeric format specifiers</h4>
 <ul>
 <li><p>'C', 'c' - abbreviation of Currency. Converts a number to a string that represents a currency amount.</p>
 </li>
@@ -106,7 +106,7 @@ For a complete list and more information, please look at the official .Net docum
 0.488869 (P3) → 48.887%</p>
 </li>
 </ul>
-<h4 id="date-and-time-format-strings">Date and Time Format Strings</h4>
+<h4 id="date-and-time-format-strings">Date and Time format strings</h4>
 <p>Standard date and time format specifiers can be used alone (standard date and time format string) or in a combination (custom format string) in order to define the text representation of a date and time value.
 A standard date and time format string uses a single format specifier to define the text representation of a date and time value.
 Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string.</p>
@@ -153,9 +153,9 @@ Any date and time format string that contains more than one character, including
 <li>2019-05-10 15:18:39.013 (dd-MM-yyyy hh:mm)→ 10-05-2019 03:18</li>
 <li>2019-05-10 15:18:39.013 ('dd MM yyyy hh:mm 'h'')→ 10 05 2019 03:18 h</li>
 </ul>
-<h2 id="custom-format-specifiers">Custom Format Specifiers</h2>
+<h2 id="custom-format-specifiers">Custom format specifiers</h2>
 <p>There are also custom format specifiers that are created especially for ERP.net. They are different for the different data types and are described below.</p>
-<h2 id="multilanguge-string">Multilanguge String</h2>
+<h2 id="multilanguge-string">Multilanguge string</h2>
 <ul>
 <li><p>'C', 'CURRENT' - returns the string of the current value.</p>
 </li>
@@ -165,7 +165,7 @@ EN=<english-string> DE=<german-string><p>
 <li><p>'T', 'TRANSLITERATED' - returns transliteration to the current language.</p>
 </li>
 <li><p>format specifiers for a particular language - returns the translation of the specified language. If there is no transliteration set for this language, returns an empty string.
-Note: The format specifiers for a particular language are supported since EnterpriseOne Version 2019.1. <br>
+Note: The format specifiers for a particular language are supported since EnterpriseOne version 2019.1. <br>
 Language format specifiers:
 -'EN' - English</p>
 <ul>
@@ -186,7 +186,7 @@ Language format specifiers:
 </ul>
 </li>
 </ul>
-<h2 id="custom-property">Custom Property</h2>
+<h2 id="custom-property">Custom property</h2>
 <ul>
 <li>'VD' - abbreviation of Value/Description, returns:
 <value>: <description></description></value></li>

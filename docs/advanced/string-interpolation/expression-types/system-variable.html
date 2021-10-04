@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>System Variable expressions | ERP.net Tech Docs </title>
+    <title>System variable expressions | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="System Variable expressions | ERP.net Tech Docs ">
+    <meta name="title" content="System variable expressions | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,9 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="system-variable-expressions">System Variable expressions</h1>
+<h1 id="system-variable-expressions">System variable expressions</h1>
 
-<p>They are case InsENSitiVE and always start with the <code>$</code> character, providing additional kind of data, not related with a specific <code>DomainObject</code> or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
+<p>They are case InsENSitiVE and always start with the <code>$</code> character, providing additional kind of data, not related with a specific object or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
 <pre><code class="lang-cs">// Input
 &quot;{$date}&quot; 
 // Output
@@ -107,7 +107,7 @@
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>For more information and all supported system variables, see <a href="../system-variables.html">System Variables</a>.</p>
+<p>See <a href="../system-variables.html">System variables</a> for more information and all supported system variables.</p>
 </div>
 <p>If a system variable exists, but is null, the expression will evaluate to an empty string.</p>
 <pre><code class="lang-cs">// Input 
@@ -115,7 +115,7 @@
 // Output
 &quot;&quot;
 </code></pre>
-<p>In contrast, if a system variable does not exist or its further reference is not valid, the evaluation will return an error.</p>
+<p>In contrast, if a system variable doesn't exist or its further reference is not valid, the evaluation will return an error.</p>
 <pre><code class="lang-cs">// Input 
 &quot;{$yesterday}&quot;
 // Output
@@ -128,7 +128,7 @@
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="../examples/system-variable.html">Examples section</a>.</p>
+<p>More details and examples are available in the <a href="../examples/system-variable.html">examples section</a>.</p>
 </div>
 </article>
           </div>

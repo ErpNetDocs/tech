@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="datamember-expressions">DataMember expressions</h1>
 
-<p>Acquires a data member according to the context of the <code>DomainObject</code> by the passed <code>reference</code>.</p>
+<p>Acquires a data member according to the object's context by the passed <code>reference</code>.</p>
 <pre><code class="lang-cs">// Input
 &quot;{DocumentId}&quot;
 // Output
@@ -100,7 +100,7 @@
 // Output:
 &quot;&quot;
 </code></pre>
-<p>If the resolved data member does not exist, the evaluation will fail and the output will contain an error message. In contrast, if the data member is null, the expression will evaluate to an empty string.</p>
+<p>The evaluation fails if the resolved data member doesn't exist. The output will contain an error message. In contrast, if the data member is null, the expression will evaluate to an empty string.</p>
 <pre><code class="lang-cs">// Input (There is no 'Name' data member in Customer)
 &quot;{Customer.Name}&quot;
 // Output
@@ -113,7 +113,7 @@
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="../examples/data-member.html">Examples section</a>.</p>
+<p>More details and examples are available in the <a href="../examples/data-member.html">examples section</a>.</p>
 </div>
 </article>
           </div>

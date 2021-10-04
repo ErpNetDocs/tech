@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>System Variables | ERP.net Tech Docs </title>
+    <title>System variables | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="System Variables | ERP.net Tech Docs ">
+    <meta name="title" content="System variables | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,14 +77,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="system-variables">
-<h1 id="system-variables">System Variables</h1>
+<h1 id="system-variables">System variables</h1>
 
-<p>The system variables are an essential part of ERP.net string interpolation (<code>DomainObject.FormatString()</code>). They provide additional kind of data, not related with a specific <code>DomainObject</code> or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
-<p>Each system variable starts with the <code>$</code> character that identifies it as such and must be surrounded with curly braces <code>{ }</code>. To the example above - <code>{$date}</code> is a legitimate system variable &quot;selector&quot; (a.k.a. expression) which will evaluate to the current date.</p>
+<p>The system variables are an essential part of ERP.net string interpolation. They provide additional kind of data, not related with a specific object or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
+<p>Each system variable starts with the <code>$</code> character that identifies it as such and must be surrounded with curly braces <code>{ }</code>. E.g. <code>{$date}</code> is a legitimate system variable &quot;selector&quot; (a.k.a. expression) which will evaluate to the current date.</p>
 <p>There are system variables, which value depends on a specific context - e.g. the current <code>Transaction</code> or a specific <code>Application</code>. Therefore, they are evaluated via an externally provided <code>Resolver</code>. In the table below are listed all supported system variables, their return type and the resolvers from which they are supported.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>If a system variable does not exist, it will not be evaluated and its expression will be returned untouched. E.g. <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. In contrast, existing system variables, but having a <code>null</code> value, will evaluate to an empty <code>string</code>.</p>
+<p>If a system variable doesn't exist, it won't be evaluated and its expression will be returned untouched. E.g. <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. In contrast, existing system variables, but having a <code>null</code> value, will evaluate to an empty <code>string</code>.</p>
 </div>
 <table>
 <thead>
@@ -141,13 +141,13 @@
 <tr>
 <td style="text-align: left;"><code>$repository</code></td>
 <td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">The repository name of which the domain object is part of</td>
+<td style="text-align: left;">The repository name of which the object is part of</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$entity</code></td>
 <td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">The entity name of which the domain object is part of</td>
+<td style="text-align: left;">The entity name of which the object is part of</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
