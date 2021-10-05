@@ -2,7 +2,7 @@
 uid: Adjustment-Documents
 ---
 
-# Adjustment Documents
+# Adjustments
 
 Using *Adjustment Documents* is a system to adjust released documents. As the released document states that the execution of the document has already started, therefore the released documents are read-only (see [Document States](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md)). So when there is a need to change such a document, the usual way of editing it is not available and  a specific system is needed.
 
@@ -39,18 +39,18 @@ Thus, in the adjustment document, only the changes in the main document are mark
 
 Also if the adjustment document has no record corresponding to a record in the main document, then the original document will not be changed after the correction takes place. For example, if in the main document there is a row with a number **30**, and in the adjustment document there is no such row, then row **30** from the main document will remain unchanged after the correction.
 
-## What can be done by Adjustment Documents?
+## What can be done by adjustment documents?
 
 - Can adjust values of non-key fields (the scalar-valued fields are adjusted by adding the value in the adjustment document, and the rest of the fields are adjusted by replacing the value with the one from the adjustment document);
 - New records can be added in row tables;
 - All scalar-valued fields in a row can be reset (so the row will no longer affect the document behavior).
 
-## What Cannot be done by Adjustment Documents?
+## What cannot be done by adjustment documents?
 
 - A value of a key field cannot be changed;
 - A row cannot be deleted.
 
-## Special Types of Adjustment Documents
+## Special types of adjustment documents
 
 There are some special types of adjustment documents in @@name, which are prepared by the system and the user does not have to fill the scalar values in them.
 
