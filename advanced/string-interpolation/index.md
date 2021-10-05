@@ -1,8 +1,8 @@
-﻿# String interpolation in @@name
+﻿# String interpolation
 
 String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). @@name tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object.
 
-## String interpolation abstract
+## Abstract
 
 Below is a pseudo-example of how the string interpolation works:
 
@@ -35,7 +35,7 @@ Now is 4.10.2021 17:49:55.
 My name is John Doe.
 ```
 
-## String interpolation by example
+## Example
 
 More advanced examples for a string interpolation:
 ```cs
