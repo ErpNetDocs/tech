@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Amount distribution by quantity | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Amount distribution by quantity | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="amount-distribution-by-quantity">Amount distribution by quantity</h1>
+
+<p>When using this distributional method the coefficients for calculation of the proportions [<strong>ki</strong>]/[<strong>S</strong>] are defined by the quantities in the rows on which the additional amount is distributed. So at first it is necessary to bring the quantities to the same measurement unit. Therefore, the additional amounts that use this  property (Distribute By = Quantity), are required to have a selected  option in the &quot;Distribute By Measurement Category&quot; field. Thus, the base measurement unit in the selected category is the measurement unit which the quantities from all rows will be converted to (if there is a row  with product with no dimension for the base measurement unit of the  selected measurement category, than the calculation is ceased and an  error message is displayed), So, if the [distribution measurement unit]  is the measurement unit from the selected category in the additional  amount definition, than for each row the coefficients are as follows:</p>
+<p>[<strong>ki</strong>] = [quantity on row <strong>i</strong>] converted to [distribution measurement unit].</p>
+<p>Than the additional amount distribution is performed by the standart formula (in proportions [<strong>ki</strong>]/[<strong>S</strong>], if [<strong>S</strong>] is not <strong>0</strong>, or otherwise - equally throught the rows).</p>
+<p><em>Example 1:</em></p>
+<p>There is &quot;Transport&quot; additional amount with input amount of <strong>42 EUR</strong>, which is payed by goods <strong>box</strong>. In the transport definition is marked that it is distributed by quantity and that the measurement category is <strong>Boxes</strong> (where the base measurement unit is <strong>boxes</strong>). The document where the additional amount is selected has three rows = row #10 with quantity of <strong>2 boxes</strong>, row #20 with quantity of <strong>25 pieces</strong> and row #30 with quantity of <strong>18 kg</strong>. The product of row #20 has the following dimension: <strong>1 boxes = 10 pieces</strong>. The product of row #30 has the following dimension: <strong>1 boxes = 3 kg</strong>. Than after converting all row quantities to <strong>boxes</strong>, the following coefficients are calculated:</p>
+<ul>
+<li>row #10: [<strong>k1</strong>] = <strong>2</strong>;</li>
+<li>row #20: [<strong>k2</strong>] = <strong>2.5</strong>;</li>
+<li>row #30: [<strong>k3</strong>] = <strong>6</strong>.</li>
+</ul>
+<p>Than the amount of <strong>42 EUR</strong> is distributed in the 2:2.5:6 ratio and the results are:</p>
+<ul>
+<li>row #10: <strong>42 EUR</strong> * 2 / 10.5 = <strong>8 EUR</strong>;</li>
+<li>row #20: <strong>42 EUR</strong> * 2.5 / 10.5 = <strong>10 EUR</strong>;</li>
+<li>row #30: <strong>42 EUR</strong> * 6 / 10.5 = <strong>24 EUR</strong>.</li>
+</ul>
+<p><em>Example 2:</em></p>
+<p>There is amount of <strong>42 EUR</strong> of transport as in <em>Example 1</em>. Only in the current example the document rows are: row #10 with quantity of <strong>2 boxes</strong>, row #20 with quantity of <strong>30 pieces</strong> and row #30 with quantity of <strong>-15 kg</strong>. Than the coefficients are [<strong>k1</strong>] = <strong>2</strong>, [<strong>k2</strong>] = <strong>3</strong> and [<strong>k3</strong>] =<strong>-5</strong> and total amount of <strong>[S] = 0</strong>.</p>
+<p>In this case the additional amount is distributed equally through the rows and the result is:</p>
+<ul>
+<li>row #10: 42 EUR/ 3 = <strong>14 EUR</strong>;</li>
+<li>row #20: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>;</li>
+<li>row #30: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/amounts-distribution/by-quantity.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Referenced documents | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Referenced documents | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="referenced-documents">Referenced documents</h1>
+
+<p>There are cases when we enter an additional amount in a document and calculate it, distributing it not only to the rows of the current document, but in others as well.</p>
+<p>For example, if there is a Purchase Invoice for goods transported to our location and this transport has to be paid, then it can be delivered later than the original Purchase Invoice (which is already Released and possibly Completed) and we have to enter the transport (as additional amount) in a separate document.
+Even if the Purchase Invoice is not late, it can also be necessary to enter it in a separate document - for example, if the transport is performed by a company, different from the one of the goods supplier.</p>
+<p>So, there is an additional amount ‘Transport’ in one Purchase Invoice and it will be distributed to the rows of other documents (already Released or Completed), so its value can be added to the goods cost in <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/index.md">Logistics</a></strong>.</p>
+<p>For such cases, the additional amount is calculated through and distributed by documents different from the ones in which we enter it. This is performed in the ‘Document Amount Referenced Documents’ panel where for each additional amount of the current document 0 or more documents can be entered. These documents are usually from the same system type as the current one (i.e. in Invoices, we enter Invoices, in Sales Orders - Sales Orders) or at least support additional amounts. The amount is calculated and distributed by these exact documents (if it was originally entered in the listed documents).</p>
+<p>Thus, for every additional amount, it can be defined to which documents it is related:</p>
+<ul>
+<li>if there is no information for the additional amount in the ’Document Amount Referenced Documents’ panel - the amount is distributed only in the current document and no other documents;</li>
+<li>if there are listed documents in the ’Document Amount Referenced Documents’ panel - the amount is distributed in the listed documents and no other documents.</li>
+</ul>
+<p>This makes it possible to enter additional amounts in the current document, which is distributed only in other documents.</p>
+<blockquote>
+<p>Respectively, this requires listing the current document as 'referenced' if such distribution is necessary.</p>
+</blockquote>
+<p><em>Example 1</em>  describes the standard case for referenced document usage - transport for purchased goods.</p>
+<p>For more information about the calculation and distribution formulas, see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/index.md">Amounts Calculation</a></strong> and <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-distribution/index.md">Amounts Distribution</a></strong>.</p>
+<p><em>Example 1:</em></p>
+<p>Purchase Invoice #1 has three rows: #10 with amount of <strong>50 EUR</strong>, #20 with amount of <strong>80 EUR</strong> and #30 with amount of <strong>140 EUR</strong>.</p>
+<p>Second Purchase Invoice #2 is entered with no rows - only additional amount with Input Amount of <strong>38 EUR</strong>.</p>
+<p>The user enters Purchase Invoice #1 in the ’Document Amount Referenced Documents’ panel (Purchase Invoice #2 is not listed there). The amount is distributed among the three rows from #1, but the distribution is only entered in Purchase Invoice #1.</p>
+<p>This is the resulting distribution, assuming that the transport is distributed by amount and is rounded up to the second digit:</p>
+<ul>
+<li>row #10, Purchase Invoice #1: <strong>7.04 EUR</strong>;</li>
+<li>row #20, Purchase Invoice #1: <strong>11.26 EUR</strong>;</li>
+<li>row #30, Purchase Invoice #1: <strong>19.70 EUR</strong>;</li>
+</ul>
+<p><em>Example 2:</em></p>
+<p>There is a Sales Order #1 at the end of last year. It has two rows: #10 with amount of <strong>100 EUR</strong> and #20 with amount of <strong>80 EUR</strong>.</p>
+<p>In this Sales Order,  the user has missed to enter holidays discounts - additional amount ‘Christmas Discount’ ; (Default Percent: <strong>-3%</strong>; Base On Lines: <strong>True</strong>; Distributed By: <strong>Amount</strong>; Round Scale: <strong>2</strong>).</p>
+<p>It is not appropriate to edit the Sales Order since it comes from the previous fiscal year. Now, in the Easter Holidays, a Sales Order for the same customer is entered separately. The user enters the discount missed from the first Sales Order (‘Christmas Discount’ in Sales Order #2 is distributed only in Sales Order #1 - this is indicated in the ’Document Amount Referenced Documents’ panel).</p>
+<p>In Sales Order #2, the user enters a new discount for the Easter Holidays (Default Percent: <strong>-2%</strong>; Base On Lines: <strong>True</strong>; Distributed By: <strong>Amount</strong>; Round Scale: <strong>2</strong>). This additional amount is applied only to the current document and it is not entered in the ’Document Amount Referenced Documents’ panel.</p>
+<p>Also in Sales Order #2, a special bonus for the customer is agreed, which decreases <strong>10%</strong> of the amounts from both Sales Order #1 and #2. This becomes an additional amount ‘Reorder Bonus’ and has the following properties - Default Percent: <strong>-10%</strong>, Base On Lines: <strong>True</strong>, the amount is based on ‘Christmas Discount’ and ‘Easter Discount’ also, Distributed By: <strong>Amount</strong>, Round Scale: <strong>2</strong>.</p>
+<p>So for the last additional amount from the ’Document Amount Referenced Documents’ panel, both Sales Orders are listed.</p>
+<p>If the rows in Sales Order #2 are: row #10 with amount of <strong>35 EUR</strong>, row #20 with amount of <strong>75 EUR</strong> and row #30 with amount <strong>40 EUR</strong>, the three additional amounts in Sales Order #2 are calculated and distributed (the distributions are only entered in Sales Order #2):</p>
+<ul>
+<li><p>the amount of [Christmas Discount] is <strong>-5.40 EUR</strong> and it is distributed as follows:</p>
+<ul>
+<li>row #10, Sales Order #1: <strong>-3 EUR</strong>;<br></li>
+<li>row #20, Sales Order #1: <strong>-2.40 EUR</strong>.</li>
+</ul>
+</li>
+<li><p>the amount of [Easter Discount] is <strong>-3 EUR</strong> and it is distributed as follows:</p>
+<ul>
+<li>row #10, Sales Order #2: <strong>-0.70 EUR</strong>;</li>
+<li>row #20, Sales Order #2: <strong>-1.50 EUR</strong>;</li>
+<li>row #30, Sales Order #2: <strong>-0.80 EUR</strong>.</li>
+</ul>
+</li>
+<li><p>the amount of [Reorder Bonus] is <strong>-32.16 EUR</strong> and it is distributed as follows:</p>
+<ul>
+<li>row #10, Sales Order #1: <strong>-9.70 EUR</strong>;</li>
+<li>row #20, Sales Order #1: <strong>-7.76 EUR</strong>;</li>
+<li>row #10, Sales Order #2: <strong>-3.43 EUR</strong>;</li>
+<li>row #20, Sales Order #2: <strong>-7.35 EUR</strong>;</li>
+<li>row #30, Sales Order #2: <strong>-3.92 EUR</strong>.</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/referenced-documents.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

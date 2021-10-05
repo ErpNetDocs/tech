@@ -2,8 +2,8 @@
 sorted: true
 references:
 - uid: additional-amounts
-  name: Additional Amounts
-  href: advanced/documents/additional-amounts/index.html
+  name: Document additional amounts
+  href: advanced/document-amounts/index.html
 - uid: Adjustment-Documents
   name: Adjustments
   href: concepts/documents/adjustments.html
@@ -163,12 +163,6 @@ references:
 - uid: cao-WHERE
   name: WHERE - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/where.html
-- uid: document-generation-and-transitional-documents
-  name: Document generation and transitional documents
-  href: advanced/documents/generation-and-transitional.html
-- uid: Documents
-  name: Documents
-  href: concepts/documents.html
 - uid: Document-States
   name: States
   href: concepts/documents/states.html
