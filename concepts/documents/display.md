@@ -1,6 +1,6 @@
- # Displaying And Finding Document And Line Numbers
+ # Display and choose
  
-### 1. Displaying Document And Line Numbers
+### 1. Displaying document and line numbers
 
 #### a) The general format for displaying document and line numbers is:
 
@@ -8,13 +8,13 @@
 
 For example, let's have the following:
 
-- The document type is ‘Sales Order’, with code ‘SO’
+- The document type is ‘Sales order’, with code ‘SO’
 - The document number is ‘00503’
 - The line number is 120 (the line numbers are integers)
 
 This will be represented as:
 
-**SO:00503:120 - Sales Order**
+**SO:00503:120 - Sales order**
  
  #### b) If we have to display only a document number (without line number), the format is the following:
  
@@ -27,9 +27,9 @@ Now, let's have the following:
 
 This will be represented as:
 
-**SO:00503 - Sales Order**
+**SO:00503 - Sales order**
 
-### 2. Sorting Lists Of Documents And Line Numbers
+### 2. Sorting lists of documents and line numbers
 
 When a list containing document and line numbers is sorted, the order is the following:
 
@@ -37,7 +37,7 @@ When a list containing document and line numbers is sorted, the order is the fol
 - Then, sort lexicographically by "DocNumber"
 - Then, sort numerically by "LineNumber" (if applicable)
  
-### 3. Searching Through Document And Line Numbers
+### 3. Searching through document and line numbers
   
 When a user wants to find a document or a specific document line, they enter a search term. The following rules apply:
  
