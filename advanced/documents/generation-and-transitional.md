@@ -2,7 +2,7 @@
 uid: document-generation-and-transitional-documents
 ---
 
-# Document Generation and Transitional Documents
+# Document generation and transitional documents
 
 ## Transitional document setup
 
@@ -11,7 +11,7 @@ To setup a document type as transitional:
 1. Go to the document type definition and select "Transitional Document".
 2. To generate documents of this type, use only generations, that support transitional document generation.
 
-## Deterministic Generations
+## Deterministic generations
 
 Not all generations support generating and adjusting (patching) a transitional document. 
 Since the adjustment (patch) procedure supports matching the lines primarily by **Line No**, the generation should guarantee to always generate the same line numbers, given the same starting document.
@@ -59,14 +59,14 @@ Let's have two generations, that use this input to create a Store Order:
 
    Generation B is **non-deterministic**
 
-## Adjustment Procedure
+## Adjustment procedure
 
 When a transitional document is generated, if later the document needs to be adjusted (to be in-line with its parent), an *Adjustment Document* is created.
 The adjustment document is a document, which contains **changes**. It is a peer document in the document tree and is usually hidden. 
 The adjustment document is used to adjust (patch) the main document. The adjustment is executed upon setting the "Adjustment" document status.
 After the adjustment, the main document is updated to reflect the changes brought by the adjustment document.
 
-## Generating Adjustment Documents
+## Generating adjustment documents
 
 When a generation, which supports adjusting transitional documents, is executed, it checks the sub-documents. If it founds documents, that can be adjusted (patched), it automatically generates changes-only document(s). The generations usually determine the changes in the following way:
 
