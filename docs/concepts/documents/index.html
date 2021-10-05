@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Document generation and transitional documents | ERP.net Tech Docs </title>
+    <title>Documents | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Document generation and transitional documents | ERP.net Tech Docs ">
+    <meta name="title" content="Documents | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,15 +76,57 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="document-generation-and-transitional-documents">
-<h1 id="document-generation-and-transitional-documents">Document generation and transitional documents</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="documents">Documents</h1>
 
-<h2 id="transitional-document-setup">Transitional document setup</h2>
-<p>To set up a document type as transitional:</p>
-<ol>
-<li>Go to the document type definition and select &quot;Transitional Document&quot;.</li>
-<li>To generate documents of this type, use only generations, that support transitional document generation.</li>
-</ol>
+<h3 id="description">Description</h3>
+<p>Documents are one of the three main categories of entities in ERP.net. They represent things that have occurred or will occur.</p>
+<p>The main categories are:</p>
+<ul>
+<li><strong>Documents</strong> - facts; things that occur:</li>
+</ul>
+<p>Sales orders, Invoices, Purchase orders, etc.</p>
+<ul>
+<li><strong>Definitions</strong> - they represent real-world objects; things that (generally) do not change:</li>
+</ul>
+<p>Customers, Products, Stores, etc.</p>
+<ul>
+<li><strong>Settings</strong> - system-related; data about the way the system works:</li>
+</ul>
+<p>Document types, Document routes, Form views, etc.</p>
+<h3 id="the-most-important-attributes">The Most Important Attributes</h3>
+<p>All documents derive from a base entity type called <strong>Document</strong> and share similar attributes.</p>
+<p>This is a non-extensive list of the more important attributes:</p>
+<ul>
+<li><p><strong>Enterprise Company</strong> - the company that created the document.</p>
+</li>
+<li><p><strong>Company Location</strong> - the company location where the document was created.</p>
+</li>
+<li><p><strong>Document Date</strong> - the date the document was constituted. If it was created electronically, then this is the system date of creation. When it is created outside the system and entered post-factum, the attribute contains the date of actual creation.</p>
+</li>
+<li><p><strong>Document Type</strong> - a user-defined document type for classification of the documents. Also defines print-out forms, document flow and other rules.</p>
+</li>
+<li><p><strong>Document Number</strong> - a unique number within the sequence, defined in Document Type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.</p>
+</li>
+<li><p><strong>State</strong> - each document in the system has a current state at any given moment. It affects how the document influences the system and whether it is updateable.</p>
+</li>
+<li><p><strong>Currency Directory</strong> - the primary directory for currency rates which will be used for currency conversions throughout the document.</p>
+</li>
+</ul>
+<h3 id="further-reading">Further reading:</h3>
+<ul>
+<li><p><strong>States</strong></p>
+</li>
+<li><p><strong>Display and choose</strong></p>
+</li>
+</ul>
+<h3 id="advanced-topics">Advanced topics:</h3>
+<ul>
+<li><p><strong>Document flow</strong></p>
+</li>
+<li><p><strong>Document amounts</strong></p>
+</li>
+</ul>
 </article>
           </div>
           
@@ -93,7 +135,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/generation-and-transitional.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/concepts/documents/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document generation | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Document generation | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="document-generation">Document generation</h1>
+
+<h2 id="description">Description</h2>
+<p>Document generation is a key part of the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/flow.md">document flow</a> in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.</p>
+<p>Generation is a special case of direct <strong>Order Fulfillment</strong>, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.</p>
+<h2 id="automating-the-document-generation">Automating the document generation</h2>
+<p>Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.</p>
+<p>The definition of each <strong>document type</strong> includes a special sub-entity type called <em><strong>Workflow Routes</strong></em>. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many <em><strong>Workflow Routes</strong></em>. They either start automatically or require a user initiation.</p>
+<p>Together, the routes for the different document types form a general network graph called <strong>document flow</strong>.</p>
+<h2 id="properties-of-a-document-generation-route">Properties of a document generation route</h2>
+<p>Each document generation route contains the following properties:</p>
+<ul>
+<li><strong>Generation events</strong></li>
+</ul>
+<p>Events that trigger the document route. The most often used event is usually the one changing the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">document state</a>.</p>
+<ul>
+<li><strong>State</strong></li>
+</ul>
+<p>The system state of the source document which will trigger the route. When a user changes this state, the system initiates all routes marked with any intermediate states. For example, if a document has a <em>Planned</em> state changed to <em>Released</em> state, a route specified for the intermediate <em>Firm Planned</em> state <strong>will</strong> be started.</p>
+<ul>
+<li><strong>User state</strong></li>
+</ul>
+<p>When not blank, it specifies that the route will be started only when the final user state of the source document matches the specified user state. Contrary to system states, when changing this state, routes for the intermediate user states <strong>are not</strong> initiated.</p>
+<ul>
+<li><strong>Source enterprise company</strong></li>
+</ul>
+<p>If left blank, the route will be valid for all enterprise companies. When not blank, the route will be run only for documents in the specified enterprise company.</p>
+<ul>
+<li><strong>Generation procedure</strong></li>
+</ul>
+<p>The procedure which will be used to generate the target document.</p>
+<h2 id="properties-of-a-document-generation-procedure">Properties of a document generation procedure</h2>
+<p>Generation procedures are fixed procedures provided by the system.</p>
+<p>When defining a document route, the user is allowed to choose such a procedure from a fixed list.</p>
+<p>Each generation procedure is defined in this documentation using the following attributes:</p>
+<ul>
+<li><p><strong>Procedure code</strong> - The unique procedure code used for identification purposes. It has the following structure:</p>
+<ul>
+<li><p><strong>Subsystem code</strong><br>
+3-5 characters which uniquely identify the sub-system of the source document.</p>
+</li>
+<li><p><strong>Module code</strong><br>
+2 digits that uniquely identify the module within the sub-system of the source document.</p>
+</li>
+<li><p><strong>Procedure code</strong><br>
+2 digits which specify the consecutive number of the procedure within the module</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>For example, ‘<em>CRM0103</em>’ specifies a procedure in the ‘CRM’ sub-system, 01-Sales module, procedure #3.</p>
+<ul>
+<li><p><strong>Name</strong><br>
+Name of the generation procedure.</p>
+</li>
+<li><p><strong>Obsolete</strong><br>
+Specifies whether the generation procedure is still active in the latest version of the system.</br> Old generations are no-longer supported and are marked as ‘Obsolete’.</p>
+</li>
+<li><p><strong>Source document entity type</strong><br>
+Specifies the entity type of the source document, which defines the general type of the document, for example <em><strong>Sales Order</strong></em>. The generation procedure can be used only for documents with specified entity type. There can be many user-defined document types within a single entity type.</p>
+</li>
+<li><p><strong>Target document entity type</strong><br>
+The entity type of the target document. The generation procedure can generate only documents with a specified entity type. Each document type can specify different user-defined document types only within this specified type.</p>
+</li>
+<li><p><strong>Description</strong><br>
+Detailed description and business case when the generation procedure is used.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/document-flow/generation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

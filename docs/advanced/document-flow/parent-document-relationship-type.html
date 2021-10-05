@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Document generation and transitional documents | ERP.net Tech Docs </title>
+    <title>Parent document relationship type | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Document generation and transitional documents | ERP.net Tech Docs ">
+    <meta name="title" content="Parent document relationship type | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,15 +76,90 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="document-generation-and-transitional-documents">
-<h1 id="document-generation-and-transitional-documents">Document generation and transitional documents</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="parent-document-relationship-type">Parent document relationship type</h1>
 
-<h2 id="transitional-document-setup">Transitional document setup</h2>
-<p>To set up a document type as transitional:</p>
-<ol>
-<li>Go to the document type definition and select &quot;Transitional Document&quot;.</li>
-<li>To generate documents of this type, use only generations, that support transitional document generation.</li>
-</ol>
+<p>When a document has a parent document, there are constraints, which determine which states are allowed. The applicable states depend on the relation between the parent document and the child document.</p>
+<p>The relationship is contained in the Parent document relationship type attribute. Its possible values are:</p>
+<ul>
+<li><strong>Sub-Task</strong> - the child document is a sub-task that must be completed to complete the parent document</li>
+<li><strong>Next Task</strong> - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.</li>
+</ul>
+<p>For example, the <em>Sales Order-Store Order</em> relationship is usually of <strong>Sub</strong> task type because the store order must be completed before the sales order can.</p>
+<p>In contrast, the <em>Offer-Sales Order</em> relationship is usually of <strong>Next</strong> task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.</p>
+<p>The allowed child document states depends on the relationship type and the parent document state.</p>
+<p>The following table summarizes the allowed states:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Relationship Type</th>
+<th style="text-align: left;">Parent State</th>
+<th style="text-align: left;">Allowed Child States</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">New</td>
+<td style="text-align: left;">New</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Planned</td>
+<td style="text-align: left;">New, Planned</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Firm Planned</td>
+<td style="text-align: left;">New, Planned, Firm Planned</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Released</td>
+<td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Completed</td>
+<td style="text-align: left;">Completed, Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Closed</td>
+<td style="text-align: left;">Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">New</td>
+<td style="text-align: left;">New</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Planned</td>
+<td style="text-align: left;">New, Planned</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Firm Planned</td>
+<td style="text-align: left;">New, Planned, Firm Planned</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Released</td>
+<td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Completed</td>
+<td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Closed</td>
+<td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -93,7 +168,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/generation-and-transitional.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/document-flow/parent-document-relationship-type.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

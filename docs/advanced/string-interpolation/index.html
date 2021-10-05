@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>String interpolation in ERP.net | ERP.net Tech Docs </title>
+    <title>String interpolation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="String interpolation in ERP.net | ERP.net Tech Docs ">
+    <meta name="title" content="String interpolation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="string-interpolation-in-">String interpolation in ERP.net</h1>
+<h1 id="string-interpolation">String interpolation</h1>
 
 <p>String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). ERP.net tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object.</p>
-<h2 id="string-interpolation-abstract">String interpolation abstract</h2>
+<h2 id="abstract">Abstract</h2>
 <p>Below is a pseudo-example of how the string interpolation works:</p>
 <p>In the following input:</p>
 <pre><code>&quot;Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.&quot;.
@@ -99,7 +99,7 @@ My name is {$user.Name}.
 <pre><code>Now is 4.10.2021 17:49:55.
 My name is John Doe.
 </code></pre>
-<h2 id="string-interpolation-by-example">String interpolation by example</h2>
+<h2 id="example">Example</h2>
 <p>More advanced examples for a string interpolation:</p>
 <pre><code class="lang-cs">// Input
 &quot;The following string was interpolated on {$date:ddd}&quot;

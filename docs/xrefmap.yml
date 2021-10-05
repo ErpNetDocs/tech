@@ -5,8 +5,8 @@ references:
   name: Additional Amounts
   href: advanced/documents/additional-amounts/index.html
 - uid: Adjustment-Documents
-  name: Adjustment Documents
-  href: advanced/documents/adjustment.html
+  name: Adjustments
+  href: concepts/documents/adjustments.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
@@ -164,14 +164,14 @@ references:
   name: WHERE - Calculated Attribute Operator
   href: advanced/calculated-attributes/operators/where.html
 - uid: document-generation-and-transitional-documents
-  name: Document Generation and Transitional Documents
+  name: Document generation and transitional documents
   href: advanced/documents/generation-and-transitional.html
 - uid: Documents
   name: Documents
   href: concepts/documents.html
 - uid: Document-States
-  name: Document States
-  href: advanced/documents/states.html
+  name: States
+  href: concepts/documents/states.html
 - uid: domain-with-property-allowed-values
   name: Domain with Property Allowed Values
   href: advanced/custom-attributes/domain-with-property-allowed-values.html
@@ -185,8 +185,8 @@ references:
   name: Format specifiers
   href: advanced/string-interpolation/format-specifiers.html
 - uid: generation-procedures
-  name: Generation Procedures Overview
-  href: advanced/documents/generation-procedures.html
+  name: Generation procedures
+  href: advanced/document-flow/generation-procedures.html
 - uid: jobs-J30632
   name: J30632 Deletе Old Notifications
   href: advanced/jobs/J30632.html
@@ -218,8 +218,8 @@ references:
   name: Track Changes
   href: advanced/data-objects/track-changes.html
 - uid: transitional-documents
-  name: Transitional Documents
-  href: advanced/documents/transitional.html
+  name: Transitional documents
+  href: advanced/document-flow/transitional-documents.html
 - uid: winclient
   name: winclient
   href: includes/winclient.html
