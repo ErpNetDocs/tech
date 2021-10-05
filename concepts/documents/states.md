@@ -2,7 +2,7 @@
 uid: Document-States
 ---
 
-# Document states
+# States
 
 ## Description
 
