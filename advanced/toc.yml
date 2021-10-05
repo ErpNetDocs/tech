@@ -3,6 +3,9 @@
 - name: Document flow
   href: document-flow/toc.yml
   topicHref: document-flow/index.md
+- name: Document amounts
+  href: document-amounts/toc.yml
+  topicHref: document-amounts/index.md
 - name: Custom attributes
   href: custom-attributes/toc.yml
   topicHref: custom-attributes/index.md
@@ -19,5 +22,7 @@
   href: data-objects/toc.yml
 - name: Concepts
   href: concepts/toc.yml 
+  topicHref: concepts/index.md
 - name: Jobs
   href: jobs/toc.yml
+  topicHref: jobs/index.md
