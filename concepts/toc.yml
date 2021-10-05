@@ -2,6 +2,7 @@
   href: index.md
 - name: Documents
   href: documents.md
+  topicHref: documents/index.md
 - name: Multi-Language
   href: multi-language.md
 - name: Multi-Company
