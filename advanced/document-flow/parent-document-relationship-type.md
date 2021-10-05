@@ -27,4 +27,4 @@ The allowed child document states depends on the relationship type and the paren
 | Next Task         | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
 | Next Task         | Completed    | New, Planned, Firm Planned, Released, Completed, Closed |
 | Next Task         | Closed       | New, Planned, Firm Planned, Released, Completed, Closed |
-![image](https://user-images.githubusercontent.com/75483217/136039395-9642d65e-c44c-4432-b1e8-a5747929c7b3.png)
+
