@@ -1,4 +1,4 @@
-# Rows Weighting
+# Rows weighting
 
 In many cases, the line amounts from the document rows play a major role in the **[additional amounts calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)**. Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. However, there are cases when **not all** rows participate equally in the distribution.
 
