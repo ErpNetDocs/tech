@@ -1,4 +1,4 @@
-# Standard Quantity Base
+# Standard quantity base
 
 In Version 2018.2, we added a new dimension to measure the quantity in Logistics Documents - Standard Quantity Base (SQB). 
 
@@ -6,7 +6,7 @@ SQB represents the theoretical quantity in the base measurement unit according t
 
 The main objective is to improve algorithms for exhaustion and clear traceability of the execution of the ordered quantity.
  
-## More Details
+## More details
 
 Quantity (Q) and Quantity Base (QB) were used for the exhaustion of the quantities between parent and generated (child) documents. 
 
