@@ -2,7 +2,7 @@
 uid: additional-amounts
 ---
 
-# Additional Amounts
+# Document additional amounts
 
 The additional amounts are a mechanism for reporting financial amounts in documents that are not contained by the document rows and/or do not represent measurement of the main purpose of the document. 
 The main purpose is written in the document rows or in the document header. For example:
