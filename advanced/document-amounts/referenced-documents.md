@@ -1,5 +1,5 @@
 
-# Referenced Documents
+# Referenced documents
 
 There are cases when we enter an additional amount in a document and calculate it, distributing it not only to the rows of the current document, but in others as well. 
 
