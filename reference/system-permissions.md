@@ -1,14 +1,14 @@
-# System Permissions
+# System permissions
 
 
 
-In @@name there are some predefined System Permissions that are created in order to serve certain business cases and allow giving or restricting access of particular functionalities in the system. Each System Permission has a specific Access Key Id that is the same in each database. The records for that which System Permission is granted to which User Groups is kept in the Group Access Keys table. 
+In @@name there are some predefined system permissions that are created in order to serve certain business cases and allow giving or restricting access of particular functionalities in the system. Each system permission has a specific access key ID that is the same in each database. The records for that which system permission is granted to which user groups is kept in the group access keys table. 
 
-We are adding a list with the predefined System Permissions and their Access Key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](~/advanced/data-objects/track-changes.md) system. 
+We are adding a list with the predefined system permissions and their Access Key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html?q=Track%20Changes) system. 
 
 
 
-| System Permission                                            | Access Key ID                        |
+| System permission                                            | Access key ID                        |
 | :----------------------------------------------------------- | :----------------------------------- |
 | Allow edit persist lot in shipment orders                    | 17f56001-681a-4972-a75f-425e21158e4c |
 | Allow credit limit override in sales orders                  | 39c19335-cdd2-4548-8d0d-b10d5fc9fc9f |
