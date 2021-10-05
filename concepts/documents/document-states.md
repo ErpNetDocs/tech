@@ -2,7 +2,7 @@
 uid: Document-States
 ---
 
-# Document States
+# Document states
 
 ## Description
 
@@ -15,7 +15,7 @@ The documents in the system have a current STATE. This state determines the effe
 - **Completed** - the activities of the document are finished. Sometimes this state is also referred to as "Finished".
 - **Closed** - the document is verified and no more changes are expected in it.
 
-## Document Editing Rules
+## Document editing rules
 
 Whether a document can be edited by a user depends on its state:
 
@@ -31,7 +31,7 @@ Planned documents reflect a plan, created automatically by the system. On the ne
 > [!Note]
 > Planned sub-documents are also erased or voided when a parent document state changes. This behavior is system defined and cannot be changed. Planned documents can only be protected from voiding by making them Firm Planned.
 
-## Rules for Changing Document State
+## Rules for changing document state
 
 Changing the document state usually goes straight, from New to Closed. However, sometimes it might be needed to revert back to the previous state. The following table shows when this is allowed:
 
@@ -45,37 +45,7 @@ Changing the document state usually goes straight, from New to Closed. However, 
 
 There is a borderline at the Released state - once reached, the state cannot be reverted. The document can only be voided.
 
-## Parent Document Relationship Type
-
-When a document has a Parent Document, there are constraints, which determine which states are allowed. The applicable states depend on the relation between the parent document and the child document.
-
-The relationship is contained in the Parent Document Relationship Type attribute. Its possible values are:
-
-- **Sub-Task** - the child document is a sub-task that must be completed to complete the parent document
-- **Next Task** - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.
-
-For example, the *Sales Order* to *Store Order* relationship is usually of Sub-Task type, because to complete the *Sales Order*, the *Store Order* must be completed first.
-
-In contrast, the *Offer* to *Sales Order* relationship is usually of the Next Task type because the work on the Offer can be completed once the Sales Order is created. There is no need to complete the *Sales Order* first, to complete the *Offer.*.
-
-The allowed child document states depends on the relationship type and the parent document state. The following table summarizes the allowed states:
-
-| Relationship Type | Parent State | Allowed Child States                                    |
-| :---------------- | :----------- | :------------------------------------------------------ |
-| Sub-Task          | New          | New                                                     |
-| Sub-Task          | Planned      | New, Planned                                            |
-| Sub-Task          | Firm Planned | New, Planned, Firm Planned                              |
-| Sub-Task          | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
-| Sub-Task          | Completed    | Completed, Closed                                       |
-| Sub-Task          | Closed       | Closed                                                  |
-| Next Task         | New          | New                                                     |
-| Next Task         | Planned      | New, Planned                                            |
-| Next Task         | Firm Planned | New, Planned, Firm Planned                              |
-| Next Task         | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
-| Next Task         | Completed    | New, Planned, Firm Planned, Released, Completed, Closed |
-| Next Task         | Closed       | New, Planned, Firm Planned, Released, Completed, Closed |
-
-## Adjustment Documents
+## Adjustment documents
 
 [Adjustment Documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
 
@@ -83,11 +53,11 @@ Adjustment documents can change only primary measurement values. They are usuall
 
 The adjustment documents come in effect (e.g. change the main document) when their state is changed to the special "Adjustment state". As these documents are only used to adjust other documents, they cannot have parent and/or child documents.
 
-## Planning Only
+## Planning only
 
 Some documents are created specifically only for planning purposes. They are not intended to be ever released. There is a special flag, which signals this intention to the system, called "Planning Only". When this flag is set, the system would allow only New and Planned states for the document. No upper states would be allowed by the system. Usually, the document is later voided by its creator (when the plan changes or actual execution is about to begin).
 
-## User-Defined Document Statuses
+## User-defined document statuses
 
 Each Document Type can contain user-defined sub-statuses to the system states.
 
