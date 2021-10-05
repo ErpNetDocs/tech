@@ -1,10 +1,10 @@
-# Creating A Duplicate Document And a New Document From Current
+# Creating A duplicate document and a new document from current
 
 The current article describes the principles and some specifics in creating a duplicate of an existing document. 
 
 Different usages of the algorithm are also presented.
  
-### Basic Principles
+### Basic principles
 
 А duplicate of a given document is a new document which contains identical **business** data as the original one, meaning that all ***substantial*** and ***meaningful*** information is copied from the original. There is some exception for technical details, such as internal identification numbers - Primary Keys, IDs of reference links between different parts of one document, and more.
 
@@ -69,11 +69,11 @@ In the first example, when copying data from original to duplicate records, the 
 - in Purchase Invoice lines: values of fields PurchaseInvoiceLineId and PurchaseInvoiceId;
 - in Purchase Invoice lines user properties: values of fields PurchaseInvoiceId and EntityItemId.
  
-## Cases Of Specific Data Copying
+## Cases of specific data copying
 
 The current section describes specific fields processing during data copying.
  
-#### Document Headers
+#### Document headers
 
 If the document is a Master Document on its own, then in the MasterDocumentId field of the duplicate document, the original Id is filled. If this is not the case - MasterDocumentId is copied from the original document. 
 
@@ -87,15 +87,15 @@ If the original document is voided, DocumentNo of the duplicate record takes the
 
 The fields UserStatusId, AssignedToUserId, VoidTime, VoidUser, VoidReason, AccessKeyId and ParentDocumentId are always empty.
  
-#### Document Headers And Rows Of A Voucher
+#### Document headers and rows of a voucher
 
 If the DefaultReferencedDocumentId in the original document is the same as the Id, then in the duplicate document this field is filled with the Id of the duplicate document. The same logic is applied for ReferencedDocumentId field in the Voucher's rows.
  
-#### Payment Slip Amounts
+#### Payment slip amounts
 
 IsPartyPayment is always set to true.
  
-#### Transactions Rows
+#### Transactions rows
 
 The fields LineBaseCost, LineDocumentCost, LineProductCost and LineStoreCost are always set to 0.
  
@@ -106,7 +106,7 @@ When creating duplicates of the Work order rows with ingredients, there are some
 - if the WorkOrderItemId field in the material record is filled in, then it is considered a sub-record of the work order item record from the Work Order document, the Id of which is the value of WorkOrderItemId.</br> These records are considered rows of the work order items rows;
 - if the WorkOrderItemId field is null, then the record is directly considered a document row.</br> Such records are rows only of the document header and not of other rows.
  
-### The Duplicate Creation Algorithm Usage
+### The duplicate creation algorithm usage
 
 The algorithm for creating a duplicate works as follows:
 
