@@ -1,4 +1,4 @@
-# Creating A duplicate document and a new document from current
+# Creating a duplicate document and a new document from current
 
 The current article describes the principles and some specifics in creating a duplicate of an existing document. 
 
