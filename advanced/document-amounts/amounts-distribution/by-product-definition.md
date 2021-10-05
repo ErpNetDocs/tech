@@ -1,4 +1,4 @@
-# Amount Distribution By Product Definition
+# Amount distribution by product definition
 
 The distribution by product definition is the same as the  distribution by amount, the only difference is that row weights are used (see [Rows Weighting](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/rows-weighting.md)). So the difference is that the when the additional amount has "Based On  Lines" = True, than the distributional coefficientss are multiplied by  the rows weightings. So the only difference is in the following  calculation formula:
 
