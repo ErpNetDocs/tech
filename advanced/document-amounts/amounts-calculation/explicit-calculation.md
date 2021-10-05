@@ -1,4 +1,4 @@
-# Explicit Value Calculation
+# Explicit value calculation
 
 The explicit amount entered through the _'Input Amount'_ and _'Input Amount Currency'_ fields, is converted to the document currency. The result is the end amount of the additional amount.
 
