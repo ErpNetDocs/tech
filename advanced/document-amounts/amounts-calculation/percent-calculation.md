@@ -1,4 +1,4 @@
-# Percent Value Calculation
+# Percent value calculation
 
 Here, the percent from _'Input Percent'_ is used. 
 
