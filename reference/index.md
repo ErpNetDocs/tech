@@ -1,4 +1,4 @@
-﻿# Reference Section
+﻿# Reference section
 
 This section contains topics, which contain reference data.
 
