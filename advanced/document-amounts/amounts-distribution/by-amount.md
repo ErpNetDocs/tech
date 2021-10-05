@@ -1,4 +1,4 @@
-# Amount Distribution By Amount
+# Amount distribution by amount
 
 When distributing by amount, to define the distribution proportions rows amounts are used. Two types of amounts are used:
 
