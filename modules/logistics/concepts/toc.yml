@@ -5,7 +5,10 @@
   topicHref: goods-cost/index.md
 - name: Lots issue
   href: lots-issue.md 
+- name: Standard quantity base
+  href: standard-quantity-base.md
 - name: Setting transaction timestamp
   href: setting-transaction-timestamp/toc.yml
   topicHref: setting-transaction-timestamp/index.md
+  
   
