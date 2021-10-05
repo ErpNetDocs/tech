@@ -1,14 +1,14 @@
-# Additional Amounts Usage
+# Additional amounts usage
 
 Additional amounts are used for different reasons - adding amounts to the main business activity in the document or reporting secondary measurements for the business or outside activities.
 
-### Calculating The Amount To Pay
+### Calculating the amount to pay
 
 Some additional amounts serve to calculate the amount to pay for the document. This is marked in the additional amount definition by adding a check to the _‘Add To Customer’_ field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
 
 For more information, see [**Amount to pay**](https://github.com/ErpNetDocs/tech/blob/82e2643197b9da2d8cab3dd605dcd1bc0e4f308f/modules/crm/sales/sales-concepts/amount-to-pay.md).
 
-### Calculating Goods Cost
+### Calculating goods cost
 
 Likewise, additional amounts may be used to add value to the goods cost in the [**logistics**](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/index.md).
 
@@ -18,7 +18,7 @@ The same procedure is applied to **all** additional amounts marked as part of th
 
 This is the _‘Add To Line’_ field in the definition of the additional amount.
 
-### Calculating Outside Activities
+### Calculating outside activities
 
 Additional amounts may also be used to report external activities for the enterprise company.
 
