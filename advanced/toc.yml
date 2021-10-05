@@ -1,7 +1,8 @@
 - name: Overview
   href: index.md
-- name: Documents
-  href: documents/toc.yml
+- name: Document flow
+  href: document-flow/toc.yml
+  topicHref: document-flow/index.md
 - name: Custom attributes
   href: custom-attributes/toc.yml
   topicHref: custom-attributes/index.md
