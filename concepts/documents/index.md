@@ -39,5 +39,15 @@ This is a non-extensive list of the more important attributes:
 - **Currency Directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. 
 
 
+### Further reading:
 
+- **States**
+
+- **Display and choose**
+
+### Advanced topics:
+
+- **Document flow**
+
+- **Document amounts**
 
