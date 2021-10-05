@@ -2,7 +2,7 @@
 uid: generation-procedures
 ---
 
-# Generation Procedures Overview
+# Generation procedures
 
 ![Generation Procedures](generation-procedure.SVG)
 
