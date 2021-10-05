@@ -11,9 +11,9 @@ Generation is a special case of direct **Order Fulfillment**, when there is only
 
 Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.
 
-The definition of each *Document Type* includes a special sub-entity type called *Workflow Routes*. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each *Document Type* can host many *Workflow Routes*. They either start automatically or require a user initiation.
+The definition of each **document type** includes a special sub-entity type called ***Workflow Routes***. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many ***Workflow Routes***. They either start automatically or require a user initiation.
 
-Together, the routes for the different *Document Types* form a general network graph called *Document Flow*.
+Together, the routes for the different document types form a general network graph called **document flow**.
 
 ## Properties of a document generation route
 
@@ -67,10 +67,10 @@ Name of the generation procedure.
 Specifies whether the generation procedure is still active in the latest version of the system.</br> Old generations are no-longer supported and are marked as ‘Obsolete’.
 
 - **Source document entity type**<br>
-Specifies the entity type of the source document, which defines the general type of the document, for example *Sales Order*. The generation procedure can be used only for documents with specified entity type. There can be many user-defined *Document Types* within a single entity type.
+Specifies the entity type of the source document, which defines the general type of the document, for example ***Sales Order***. The generation procedure can be used only for documents with specified entity type. There can be many user-defined document types within a single entity type.
 
 - **Target document entity type**<br>
-The entity type of the target document. The generation procedure can generate only documents with a specified entity type. Each *Document Route* can specify different user-defined *Document Types* only within this specified type.
+The entity type of the target document. The generation procedure can generate only documents with a specified entity type. Each document type can specify different user-defined document types only within this specified type.
 
 - **Description**<br>
 Detailed description and business case when the generation procedure is used.
