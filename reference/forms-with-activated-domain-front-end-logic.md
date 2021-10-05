@@ -1,10 +1,10 @@
-# Forms with Activated Domain Front-End Logic
+# Forms with activated domain front-end logic
 
 
 
-When a Domain Front-End Logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the [Aggregate](xref:aggregates).
+When a domain front-end logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the [Aggregate](xref:aggregates).
 
-E.i. if it is activated for the Sales Ordes form - it is also activated for panels such as Sales Orders Lines and Payment Plan which are a part of the Sales Order's aggregate, but not for panels such as Document Amounts which are a part of the Document's aggregate.
+E.i. if it is activated for the sales ordes form - it is also activated for panels such as Sales Orders lines and Payment Plan which are a part of the Sales order's aggregate, but not for panels such as Document amounts which are a part of the Document's aggregate.
 
 
 
@@ -12,7 +12,7 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | ------------------------------------ | ----------------------------- | ----------- |
 | **Form**                             | **Activated BindDomainLogic** | **Version** |
 | **Sales Module**                     |                               |             |
-| Customer Types                       | YES                           | 20.1        |
+| Customer types                       | YES                           | 20.1        |
 | CustomerCompanyLocations             | YES                           | 20.1        |
 | Customers                            | YES                           | 20.1        |
 | Customers - Companies                | YES                           | 20.1        |
@@ -21,86 +21,86 @@ E.i. if it is activated for the Sales Ordes form - it is also activated for pane
 | Dealers - Companies                  | YES                           | 20.1        |
 | Dealers - Persons                    | YES                           | 20.1        |
 | Offers                               | YES                           | 2017.1      |
-| Price Lists                          | YES                           | 20.1        |
-| Price Types                          | YES                           | 20.1        |
-| Sales Orders                         | YES                           | 2017.1      |
-| Sales Persons                        | YES                           | 20.1        |
+| Price lists                          | YES                           | 20.1        |
+| Price types                          | YES                           | 20.1        |
+| Sales orders                         | YES                           | 2017.1      |
+| Sales persons                        | YES                           | 20.1        |
 | Deals                                | YES                           | 21.1        |
-| Line Discounts                       | YES                           | 21.1        |
-| Product Prices                       | YES                           | 21.1        |
-| Promotional Packages                 | YES                           | 21.1        |
+| Line discounts                       | YES                           | 21.1        |
+| Product prices                       | YES                           | 21.1        |
+| Promotional packages                 | YES                           | 21.1        |
 | **POS Module**                       |                               |             |
-| POS Devices                          | YES                           | 20.1        |
-| POS Locations                        | YES                           | 20.1        |
-| POS Operators                        | YES                           | 20.1        |
-| POS Roles                            | YES                           | 20.1        |
-| POS Work Terminals                   | YES                           | 20.1        |
-| Product Types - Tax Groups           | YES                           | 20.1        |
+| POS devices                          | YES                           | 20.1        |
+| POS locations                        | YES                           | 20.1        |
+| POS operators                        | YES                           | 20.1        |
+| POS roles                            | YES                           | 20.1        |
+| POS Work terminals                   | YES                           | 20.1        |
+| Product types - Tax groups           | YES                           | 20.1        |
 | **Invoicing Module**                 |                               |             |
-| Invoice Orders                       | YES                           | 20.1        |
+| Invoice orders                       | YES                           | 20.1        |
 | Invoices                             | YES                           | 20.1        |
 | **Products Module**                  |                               |             |
-| Coding Systems                       | YES                           | 20.1        |
-| Measurement Categories               | YES                           | 20.1        |
-| Measurement Units                    | YES                           | 20.1        |
+| Coding systems                       | YES                           | 20.1        |
+| Measurement categories               | YES                           | 20.1        |
+| Measurement units                    | YES                           | 20.1        |
 | Product - Pictures                   | YES                           | 20.1        |
-| Product Groups                       | YES                           | 20.1        |
-| Product Types                        | YES                           | 20.1        |
+| Product groups                       | YES                           | 20.1        |
+| Product types                        | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
 | Products - Codes                     | YES                           | 20.1        |
 | Products - Dimensions                | YES                           | 20.1        |
-| Products - Distribution Channels     | YES                           | 20.1        |
+| Products - Distribution channels     | YES                           | 20.1        |
 | Products - Variants                  | YES                           | 2017.1      |
-| Product Variants - Colors            | YES                           | 21.1        |
-| Product Variants - Sizes             | YES                           | 21.1        |
-| Product Variants - Styles            | YES                           | 21.1        |
+| Product variants - Colors            | YES                           | 21.1        |
+| Product variants - Sizes             | YES                           | 21.1        |
+| Product variants - Styles            | YES                           | 21.1        |
 | **Configurator Module**              |                               |             |
-| Product Groups                       | YES                           | 20.1        |
+| Product groups                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
-| Product - Custom Properties          | NO                            | -           |
-| Product Group - Required Properties  | NO                            | -           |
-| **Contacts & Tasks Module**          |                               |             |
+| Product - Custom properties          | NO                            | -           |
+| Product group - Required properties  | NO                            | -           |
+| **Contacts & Tasks module**          |                               |             |
 | Activities                           | YES                           | 20.1        |
 | ActivityParticipants                 | YES                           | 21.1        |
 | Areas                                | YES                           | 20.1        |
-| Call Detail                          | YES                           | 20.1        |
+| Call detail                          | YES                           | 20.1        |
 | Companies                            | YES                           | 20.1        |
 | Companies - Departments              | YES                           | 20.1        |
-| Company EU Configurator              | YES                           | 20.1        |
-| Contact Mechanisms                   | YES                           | 20.1        |
+| Company EU configurator              | YES                           | 20.1        |
+| Contact mechanisms                   | YES                           | 20.1        |
 | Party - Pictures                     | YES                           | 20.1        |
-| Party Relationship Types             | YES                           | 20.1        |
-| Party Relationships                  | YES                           | 20.1        |
+| Party relationship types             | YES                           | 20.1        |
+| Party relationships                  | YES                           | 20.1        |
 | Reminders                            | YES                           | 20.1        |
 | Resources                            | YES                           | 21.1        |
 | Resources - Availability             | YES                           | 20.1        |
-| Resources - Resource Instances       | YES                           | 20.1        |
-| Resource Groups                      | YES                           | 21.1        |
-| Activities - Time Intervals          | NO                            | --          |
+| Resources - Resource instances       | YES                           | 20.1        |
+| Resource groups                      | YES                           | 21.1        |
+| Activities - Time intervals          | NO                            | --          |
 | Companies - Divisions                | NO                            | -           |
 | Companies - Employees                | NO                            | -           |
 | Companies - Locations                | NO                            | -           |
 | Parties                              | NO                            | -           |
 | Persons                              | NO                            | -           |
 | **Marketing Module**                 |                               |             |
-| Bonus Programs                       | YES                           | 20.1        |
+| Bonus programs                       | YES                           | 20.1        |
 | Campaingns                           | YES                           | 20.1        |
-| Distribution Channels                | YES                           | 20.1        |
-| Forecast Items                       | YES                           | 20.1        |
-| Marketing Activities                 | YES                           | 20.1        |
-| Product Catalogs                     | YES                           | 20.1        |
-| Target Groups                        | YES                           | 20.1        |
+| Distribution channels                | YES                           | 20.1        |
+| Forecast items                       | YES                           | 20.1        |
+| Marketing activities                 | YES                           | 20.1        |
+| Product catalogs                     | YES                           | 20.1        |
+| Target groups                        | YES                           | 20.1        |
 | **Distribution Module**              |                               |             |
 | Customers - Products                 | YES                           | 20.1        |
-| Sales Person Groups                  | YES                           | 20.1        |
-| Sales Person Targets                 | YES                           | 21.1        |
-| Sales Persons                        | NO                            | -           |
+| Sales person groups                  | YES                           | 20.1        |
+| Sales person targets                 | YES                           | 21.1        |
+| Sales persons                        | NO                            | -           |
 | **Pricing Module**                   |                               |             |
-| Pricing Models                       | YES                           | 20.1        |
+| Pricing models                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
 | Types                                | NO                            | -           |
 | **Shipment Module**                  |                               |             |
-| Shipment Orders                      | YES                           | 20.1        |
+| Shipment orders                      | YES                           | 20.1        |
 | Shipments                            | YES                           | 20.1        |
 | **Inventory Management Module**      |                               |             |
 | Lots                                 | YES                           | 20.1        |
