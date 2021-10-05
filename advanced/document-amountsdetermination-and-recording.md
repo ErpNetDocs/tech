@@ -1,4 +1,4 @@
-# Additional Amounts Determination And Recording
+# Additional amounts determination and recording
 
 These amounts are recorded in the ‘Additional Amounts’ panel, which can be found in the following documents: 
 
