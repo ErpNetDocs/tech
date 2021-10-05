@@ -1,1 +1,17 @@
-
+- name: Overview
+  href: index.md
+- name: Generation
+  href: generation.md
+- name: Generation procedures
+  href: generation-procedures.md
+- name: Deterministic generations
+  href: deterministic-generations.md
+- name: Fulfillment
+  href: fulfillment.md
+- name: Parent document relationship type
+  href: parent-document-relationship-type
+- name: Transitional documents
+  href: transitional-documents.md
+- name: Creating a duplicate
+  href: creating-duplicate.md
+  
