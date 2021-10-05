@@ -15,7 +15,14 @@ Not all generations can create transitional documents. Only **deterministic** ge
 
 The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the [Document Fulfillment](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/fulfillment.md) System and lots of sub-documents are created.
 
-## Example 1:
+### Transitional document setup
+
+To set up a document type as transitional:
+
+1. Go to the document type definition and select "Transitional Document".
+2. To generate documents of this type, use only generations that support transitional document generation.
+
+#### Example 1:
 
 When creating Payment Orders by Sales Order payment plan (see "Sales Order Payment Plan" article) there are preconditions for great multiplication of the number of sub-documents. For example, if the Sales Order has a payment plan with three payments - **40 EUR**, **50 EUR**, **10 EUR** - then initially three Payment Orders will be created (with no Invoice data) for each scheduled playment. 
 When the amount of 60 EUR from the Sales Order is invoiced, two additional payment orders are created - one for **-40 EUR** and one for **-20 EUR** for planned payments №**1** and №**2**, which have no invoice data, and two more Payment Orders for **40 EUR** and **20 EUR** for planned payments №**1** и №**2** with invoice data.
@@ -34,7 +41,7 @@ Thereby, not only the sub-documents number is smaller, and the user does not hav
 This is some kind of automatic processing of these documents by the system.
 The user has to work only on the parent document. This is where the name of these documents came from - *transitional* - as these documents do not need direct processing by the user.
 
-## Example 2:
+#### Example 2:
 
 There is a Sales Oder for **100 pcs**. It creates transitional Store Order. The first Store Order has **100 pcs**.
 When we correct the parent Sales Order so the quantity is **70 pcs**, there are the following two cases:
@@ -42,7 +49,7 @@ When we correct the parent Sales Order so the quantity is **70 pcs**, there are 
 - the first is when the primary Store Order has **100 pcs** and it is not Releаsed, but Firm Planned (this is possible if its state is returned to Firm Planned before the Sales Order correction or when the Store  Order is created before its type is set to transitional). In this case, as there is no released document to correct, so a new Store Order is created with **-30 pcs**. Now there are two documents;
 - But if the primary Store Order is Released (the usual case), then the discrepancy of **-30 pcs** is applied as a document correction and the quantity in the primary Store Order is now **70 pcs**. Thereby, the sub-document is only one, as the discrepancy documents are not independent documents, they are applied to the primary document as corrections.
 
-## Example 3 (continue of Example 1):
+#### Example 3 (continue of Example 1):
 
 There is a Sales Order with a payment plan for 3 payments - **40 EUR**, **50 EUR**, and **10 EUR**. 
 The Payment Orders are set as transitional documents. Initially, there are no Invoices on this Sales Order so there are three released Payment Orders:
