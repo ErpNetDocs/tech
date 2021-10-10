@@ -4,7 +4,7 @@
 
 In @@name there are some predefined system permissions that are created in order to serve certain business cases and allow giving or restricting access of particular functionalities in the system. Each system permission has a specific access key ID that is the same in each database. The records for that which system permission is granted to which user groups is kept in the Group access keys table. 
 
-We are adding a list with the predefined system permissions and their Access Key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html?q=Track%20Changes) system. 
+We are adding a list with the predefined system permissions and their access key IDs. This information could, for example, be used to monitor the changes of those permissions using the [Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html?q=Track%20Changes) system. 
 
 
 
