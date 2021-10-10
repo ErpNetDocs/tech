@@ -10,21 +10,21 @@ uid: applicable-legislations
 
 ## Party applicable legislations 
 
-In Parties, there is a child table with the Applicable legislations for the particular Party. The table contains information about the countries, states, unions, or other entities whose regulations apply to the Party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
+In parties, there is a child table with the applicable legislations for the particular party. The table contains information about the countries, states, unions, or other entities whose regulations apply to the party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
 
 ### Bulgaria (BG)
 
-#### List of the System deal types and their correlation with the Sales and Purchases Ledger's columns
+#### List of the system deal types and their correlation with the sales and purchases ledger's columns
 
-The VAT declaration in @@name  is a document that serves as a basis for the creation of a VAT return and the VAT export files for submission to the National Revenue Agency. The information in the VAT declaration is based on the VAT Entries created in the system for the particular period.
+The VAT declaration in @@name is a document that serves as a basis for the creation of a VAT return and the VAT export files for submission to the National Revenue Agency. The information in the VAT declaration is based on the VAT entries created in the system for the particular period.
 
-The Entries amounts (Amount Base and VAT Amount Base) are entered in different columns of the Sales and Purchases Ledger of the VAT declaration depending on their Deal type (for more information about Entries' deal type and amount calculation, see todo: (Defining VAT and base for VAT Entries)).
+The entries amounts (Amount base and VAT amount base) are entered in different columns of the sales and purchases ledger of the VAT declaration depending on their deal type (for more information about entries' deal type and amount calculation, see **Defining VAT and base for VAT Entries**).
 
-This article contains information about the correlation between the system Deal types and the columns of the Sales and Purchases ledgers according to which the Entries amounts are distributed to those columns.
+This article contains information about the correlation between the system deal types and the columns of the sales and purchases ledgers according to which the entries amounts are distributed to those columns.
 
-**Sales Ledger**
+**Sales ledger**
 
-| Column        | Column Name (EN)                                | Column Name (BG)                                             | Deal Type (BG)                                               | Additional Conditions    |
+| Column        | Column name (EN)                                | Column name (BG)                                             | Deal type (BG)                                               | Additional Conditions    |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------ |
 | Column9_Data  | Total Base Amount                               | Общ размер на данъчните основи                               | ВОД                                                          | -                        |
 | Column9_Data  | Total Base Amount                               | Общ размер на данъчните основи                               | Доставка по чл. 163а от ЗДДС част I (отпадъци) на Приложение 2 | -                        |
@@ -71,7 +71,7 @@ This article contains information about the correlation between the system Deal 
 
 **Purchases Ledger**
 
-| Column        | Column Name (EN)                    | Column Name (BG)                                  | Deal Type (BG)                                        | Additional Conditions |
+| Column        | Column name (EN)                    | Column name (BG)                                  | Deal type (BG)                                        | Additional conditions |
 | ------------- | ----------------------------------- | ------------------------------------------------- | ----------------------------------------------------- | --------------------- |
 | Column9_Data  | Base Amount Without Tax Credit      | Данъчна основа без право на данъчен кредит        | Сделки, внос и ВОП без право на данъчен кредит        | -                     |
 | Column10_Data | Base Amount With Full Tax Credit    | Данъчна основа с право на пълен данъчен кредит    | Сделки, внос и ВОП с право на пълен данъчен кредит    | -                     |
