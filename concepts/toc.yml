@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
 - name: Documents
-  href: documents.md
+  href: documents/toc.yml
   topicHref: documents/index.md
 - name: Multi-language
   href: multi-language.md
