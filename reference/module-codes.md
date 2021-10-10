@@ -33,7 +33,7 @@ CRM07 - Clients - Service <br>
 CRM08 - Clients - Distribution <br>
 CRM09 - Clients - Unified communications <br>
 CRM10 - Clients - Pricing <br>
-CRM11 - Clients - POS Sales
+CRM11 - Clients - POS sales
 
 #### Finance
 
@@ -41,7 +41,7 @@ FIN01 - Finance - Payments <br>
 FIN02 - Finance - Expenses <br>
 FIN03 - Finance - Accounting <br>
 FIN04 - Finance - VAT <br>
-FIN05 - Finance - Fixed Assets <br>
+FIN05 - Finance - Fixed assets <br>
 FIN06 - Finance - Financial analysis <br>
 FIN07 - Finance - Intrastat reporting <br>
 FIN08 - Finance - Cost accounting 
