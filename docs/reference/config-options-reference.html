@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Config Options Reference | ERP.net Tech Docs </title>
+    <title>Config options reference | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Config Options Reference | ERP.net Tech Docs ">
+    <meta name="title" content="Config options reference | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="config-options-reference">Config Options Reference</h1>
+<h1 id="config-options-reference">Config options reference</h1>
 
 <p>The current article contains a list of configuration keys and their values:</p>
 <ol>
@@ -126,7 +126,7 @@
 <li>Key - <strong>Default_Enterprise_Company_Location_Id/XXX</strong></li>
 </ol>
 <ul>
-<li>a.Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.</li>
+<li>a.Action: Defines the default company location. XXX is the ID of the enterprise company. The value is the ID of the default company location.</li>
 <li>b.Set automatically by the system of the user.</li>
 </ul>
 <ol start="8">
@@ -148,7 +148,7 @@
 <li><strong>Key - Inv/CheckForNegativeAvailability</strong></li>
 </ol>
 <ul>
-<li>a.Action: When the key has value &quot;1&quot;, verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than &quot;1&quot; the described validations are not performed.</li>
+<li>a.Action: When the key has value &quot;1&quot;, verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than &quot;1&quot; the described validations are not performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="11">
@@ -183,7 +183,7 @@
 <li>Кеу - <strong>SalesOrderFiscalPrintChangeToState (DEPRECATED)</strong></li>
 </ol>
 <ul>
-<li>a.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.</li>
+<li>a.Action: This key specifies the document state to which a sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the sales order is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="16">
@@ -197,7 +197,7 @@
 <li>Key - <strong>SalesOrdersOverduePaymentOrdersCheckDisabled</strong></li>
 </ol>
 <ul>
-<li>a.Action: When the key has value and this value is &quot;1&quot;, on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.</li>
+<li>a.Action: When the key has value and this value is &quot;1&quot;, on sales order document release overdue payment orders check is not performed. In all other cases, such check is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="18">
@@ -205,7 +205,7 @@
 </ol>
 <ul>
 <li>a.Action: When the value of the key is &quot;1&quot;, then the &quot;Use simple layout for filter panels&quot; option is check-marked and the visualization of the navigator filter panels for the specified user is in the format &quot;Field OR Value&quot;. If the value of the key is &quot;0&quot;, then the &quot;Use simple layout for filter panels&quot; option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format &quot;Field: Value&quot;.</li>
-<li>b.The user set it manually through File tab → Settings → &quot;Use simple layout for filter panels&quot;. But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
+<li>b.The user sets it manually through File tab → Settings → &quot;Use simple layout for filter panels&quot;. But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
 <ul>
 <li>until Version 2019.1 - the default value is &quot;0&quot;;</li>
 <li>in Version 2019.1 and later - the default value is &quot;1&quot;</li>
@@ -237,7 +237,7 @@
 <li>Key -  <strong>CreateReconciliationsByTimestamp</strong></li>
 </ol>
 <ul>
-<li>a.Action: When this key has value and this value is &quot;1&quot;, the function &quot;Add the available products&quot; in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
+<li>a.Action: When this key has value and this value is &quot;1&quot;, the function &quot;Add the available products&quot; in the reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
 - Stock movements in the store by the document date;
 - Stock movements in the store by the date of the transaction timestamp.</li>
 <li>b.Usually, the &quot;i&quot; method is used to define stock availability (i.e. the quantities at a specified date), and method &quot;ii&quot; is used to define the stocks cost (at a specified time)</li>
@@ -247,7 +247,7 @@
 <li>Key -  <strong>CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation</strong></li>
 </ol>
 <ul>
-<li>a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is &quot;1&quot;, the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.</li>
+<li>a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (store transfers, work orders, sales returns). When the key has value and this value is &quot;1&quot;, the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="23">
@@ -323,14 +323,14 @@
 <li>Key - <strong>DisableProductCopyPropertiesFromOtherProduct</strong></li>
 </ol>
 <ul>
-<li>a.Action: When this key has value and this value is &quot;1&quot;, the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.</li>
+<li>a.Action: When this key has value and this value is &quot;1&quot;, the Product configurator feature for copying the values to custom properties from the custom property which values are products is deactivated.</li>
 <li>b.The user sets it manually</li>
 </ul>
 <ol start="32">
 <li>Key - <strong>PaymentTransactionFiscalPrintChangeToState (DEPRECATED)</strong></li>
 </ol>
 <ul>
-<li>a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.</li>
+<li>a.This key specifies the document state to which a payment transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the payment transaction is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="33">
@@ -366,7 +366,7 @@
 <li>Key - <strong>RevokedBusinessRules</strong></li>
 </ol>
 <ul>
-<li>a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including &quot;R&quot; (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.</li>
+<li>a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, business rules' codes must be set with their full code including &quot;R&quot; (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="38">
@@ -380,7 +380,7 @@
 <li>Key - <strong>UseLegacyLoadForLotsIssue</strong></li>
 </ol>
 <ul>
-<li>a.Action: When this key has value and this value is &quot;1&quot;, for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.</li>
+<li>a.Action: When this key has value and this value is &quot;1&quot;, for the calculation of the quantity &quot;Available to promise by lots&quot; is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.</li>
 <li>b.The user sets it manually.</li>
 </ul>
 <ol start="40">
@@ -390,23 +390,23 @@
 </li>
 </ol>
 <ul>
-<li>a.Action: When this key has value and this value is &quot;1&quot; or &quot;true&quot; (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well.</li>
+<li>a.Action: When this key has value and this value is &quot;1&quot; or &quot;true&quot; (case-insensitive), when creating a new user into the database a new group with the user’s name will be created automatically as well.</li>
 <li>b.The user sets it manually.</li>
 <li>c.The key is introduced in version: - 2019.1 (in implementation)</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.</p>
+<p>Before version 2019.1 a new user group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.</p>
 </div>
 <ol start="42">
 <li>Key - <strong>DocumentVersioningSystem</strong></li>
 </ol>
 <ul>
-<li>a.Action: When the value of this key is &quot;VH&quot; the system will use the &quot;old&quot; document versioning system. If the key's value is &quot;TC&quot; the system will not create records using the &quot;old&quot; document versioning system and will instead use the <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a>  system. The minimum level that is going to be tracked when the &quot;TC&quot; option is activated is &quot;Track Changes Level 3&quot;. If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a></li>
+<li>a.Action: When the value of this key is &quot;VH&quot; the system will use the &quot;old&quot; document versioning system. If the key's value is &quot;TC&quot; the system will not create records using the &quot;old&quot; document versioning system and will instead use the <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a> system. The minimum level that is going to be tracked when the &quot;TC&quot; option is activated is &quot;Track Changes Level 3&quot;. If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. (For more information about the track changes system and its levels, please see topic <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track Changes</a></li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..</p>
+<p>Please note that the current key affects only entities which are a successor of document entity (such as sales orders, store orders ...) and NOT entities such as product groups, bonus programs..</p>
 </div>
 <ul>
 <li>b.The user sets it manually, but if the key is not configured for the particular database or its value is different from &quot;VH&quot; or &quot;TC&quot;, then the system will use the default value. The default value depends on the system version:
@@ -430,8 +430,8 @@
 <ul>
 <li>a.Action: When the value of this key is:
 <ul>
-<li>&quot;1&quot; - the form that is going to be opened when the program is started by the specified user will be the Start Screen.</li>
-<li>&quot;2&quot; - the starting form will be the Main Menu. <br></li>
+<li>&quot;1&quot; - the form that is going to be opened when the program is started by the specified user will be the Start screen.</li>
+<li>&quot;2&quot; - the starting form will be the Main menu. <br></li>
 <li>&quot;0&quot;, different from &quot;1&quot; and &quot;2&quot; or the key is not configured for the particular database and user - the system will use the default value. The default value for
 version 2020.1 is Main Menu.<strong>Warning:</strong> The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key &quot;UseStartScreenPolicy&quot;</li>
 </ul>
@@ -445,8 +445,8 @@ version 2020.1 is Main Menu.<strong>Warning:</strong> The current key's value wi
 <ul>
 <li>a.Action: When the value of this key is:
 <ul>
-<li>&quot;1&quot; - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the &quot;UseStartScreen&quot; option.</li>
-<li>&quot;2&quot; - the starting form will be the Main Menu. This applies to all users into the database, regardless of the &quot;UseStartScreen&quot; option/key.</li>
+<li>&quot;1&quot; - the form that is going to be opened when the program is started will be the Start screen. This applies to all users into the database, regardless of the &quot;UseStartScreen&quot; option.</li>
+<li>&quot;2&quot; - the starting form will be the Main menu. This applies to all users into the database, regardless of the &quot;UseStartScreen&quot; option/key.</li>
 <li>&quot;0&quot;, different from &quot;1&quot; and &quot;2&quot; or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using &quot;UseStartScreen&quot; option/key.</li>
 </ul>
 </li>
@@ -457,7 +457,7 @@ version 2020.1 is Main Menu.<strong>Warning:</strong> The current key's value wi
 <li>Key <strong>UseDefaultMailClient</strong></li>
 </ol>
 <ul>
-<li>a.Action: When this key has a value for the particular User and this value is &quot;1&quot;, then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user.</li>
+<li>a.Action: When this key has a value for the particular user and this value is &quot;1&quot;, then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user.</li>
 <li>b. The user sets it manually (directly in the registry or using the option available in tab File =&gt; Settings =&gt; Use default Windows mail client).</li>
 <li>c.The key is introduced in version: - 2019.1</li>
 </ul>

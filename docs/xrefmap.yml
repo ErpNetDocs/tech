@@ -11,7 +11,7 @@ references:
   name: Aggregates
   href: advanced/concepts/aggregates.html
 - uid: applicable-legislations
-  name: Country Specific Functionality
+  name: Country specific functionality
   href: reference/country-specific-functionality.html
 - uid: brat-FAIL
   name: FAIL
