@@ -12,7 +12,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | ------------------------------------ | ----------------------------- | ----------- |
 | **Form**                             | **Activated BindDomainLogic** | **Version** |
 | **Sales Module**                     |                               |             |
-| Customer types                       | YES                           | 20.1        |
+| Customer Types                       | YES                           | 20.1        |
 | CustomerCompanyLocations             | YES                           | 20.1        |
 | Customers                            | YES                           | 20.1        |
 | Customers - Companies                | YES                           | 20.1        |
@@ -21,31 +21,31 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Dealers - Companies                  | YES                           | 20.1        |
 | Dealers - Persons                    | YES                           | 20.1        |
 | Offers                               | YES                           | 2017.1      |
-| Price lists                          | YES                           | 20.1        |
-| Price types                          | YES                           | 20.1        |
-| Sales orders                         | YES                           | 2017.1      |
-| Sales persons                        | YES                           | 20.1        |
+| Price Lists                          | YES                           | 20.1        |
+| Price Types                          | YES                           | 20.1        |
+| Sales Orders                         | YES                           | 2017.1      |
+| Sales Persons                        | YES                           | 20.1        |
 | Deals                                | YES                           | 21.1        |
-| Line discounts                       | YES                           | 21.1        |
-| Product prices                       | YES                           | 21.1        |
-| Promotional packages                 | YES                           | 21.1        |
+| Line Discounts                       | YES                           | 21.1        |
+| Product Prices                       | YES                           | 21.1        |
+| Promotional Packages                 | YES                           | 21.1        |
 | **POS Module**                       |                               |             |
-| POS devices                          | YES                           | 20.1        |
-| POS locations                        | YES                           | 20.1        |
-| POS operators                        | YES                           | 20.1        |
-| POS roles                            | YES                           | 20.1        |
-| POS Work terminals                   | YES                           | 20.1        |
-| Product types - Tax groups           | YES                           | 20.1        |
+| POS Devices                          | YES                           | 20.1        |
+| POS Locations                        | YES                           | 20.1        |
+| POS Operators                        | YES                           | 20.1        |
+| POS Roles                            | YES                           | 20.1        |
+| POS Work Terminals                   | YES                           | 20.1        |
+| Product Types - Tax Groups           | YES                           | 20.1        |
 | **Invoicing Module**                 |                               |             |
-| Invoice orders                       | YES                           | 20.1        |
+| Invoice Orders                       | YES                           | 20.1        |
 | Invoices                             | YES                           | 20.1        |
 | **Products Module**                  |                               |             |
-| Coding systems                       | YES                           | 20.1        |
-| Measurement categories               | YES                           | 20.1        |
-| Measurement units                    | YES                           | 20.1        |
+| Coding Systems                       | YES                           | 20.1        |
+| Measurement Categories               | YES                           | 20.1        |
+| Measurement Units                    | YES                           | 20.1        |
 | Product - Pictures                   | YES                           | 20.1        |
-| Product groups                       | YES                           | 20.1        |
-| Product types                        | YES                           | 20.1        |
+| Product Groups                       | YES                           | 20.1        |
+| Product Types                        | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
 | Products - Codes                     | YES                           | 20.1        |
 | Products - Dimensions                | YES                           | 20.1        |
@@ -55,9 +55,9 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Product variants - Sizes             | YES                           | 21.1        |
 | Product variants - Styles            | YES                           | 21.1        |
 | **Configurator Module**              |                               |             |
-| Product groups                       | YES                           | 20.1        |
+| Product Groups                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
-| Product - Custom properties          | NO                            | -           |
+| Product - Custom Properties          | NO                            | -           |
 | Product group - Required properties  | NO                            | -           |
 | **Contacts & Tasks module**          |                               |             |
 | Activities                           | YES                           | 20.1        |
@@ -67,15 +67,15 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Companies                            | YES                           | 20.1        |
 | Companies - Departments              | YES                           | 20.1        |
 | Company EU configurator              | YES                           | 20.1        |
-| Contact mechanisms                   | YES                           | 20.1        |
+| Contact Mechanisms                   | YES                           | 20.1        |
 | Party - Pictures                     | YES                           | 20.1        |
-| Party relationship types             | YES                           | 20.1        |
-| Party relationships                  | YES                           | 20.1        |
+| Party Relationship Types             | YES                           | 20.1        |
+| Party Relationships                  | YES                           | 20.1        |
 | Reminders                            | YES                           | 20.1        |
 | Resources                            | YES                           | 21.1        |
 | Resources - Availability             | YES                           | 20.1        |
 | Resources - Resource instances       | YES                           | 20.1        |
-| Resource groups                      | YES                           | 21.1        |
+| Resource Groups                      | YES                           | 21.1        |
 | Activities - Time intervals          | NO                            | --          |
 | Companies - Divisions                | NO                            | -           |
 | Companies - Employees                | NO                            | -           |
@@ -83,24 +83,24 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Parties                              | NO                            | -           |
 | Persons                              | NO                            | -           |
 | **Marketing Module**                 |                               |             |
-| Bonus programs                       | YES                           | 20.1        |
+| Bonus Programs                       | YES                           | 20.1        |
 | Campaingns                           | YES                           | 20.1        |
-| Distribution channels                | YES                           | 20.1        |
-| Forecast items                       | YES                           | 20.1        |
-| Marketing activities                 | YES                           | 20.1        |
-| Product catalogs                     | YES                           | 20.1        |
-| Target groups                        | YES                           | 20.1        |
+| Distribution Channels                | YES                           | 20.1        |
+| Forecast Items                       | YES                           | 20.1        |
+| Marketing Activities                 | YES                           | 20.1        |
+| Product Catalogs                     | YES                           | 20.1        |
+| Target Groups                        | YES                           | 20.1        |
 | **Distribution Module**              |                               |             |
 | Customers - Products                 | YES                           | 20.1        |
-| Sales person groups                  | YES                           | 20.1        |
-| Sales person targets                 | YES                           | 21.1        |
-| Sales persons                        | NO                            | -           |
+| Sales Person Groups                  | YES                           | 20.1        |
+| Sales Person Targets                 | YES                           | 21.1        |
+| Sales Persons                        | NO                            | -           |
 | **Pricing Module**                   |                               |             |
-| Pricing models                       | YES                           | 20.1        |
+| Pricing Models                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
 | Types                                | NO                            | -           |
 | **Shipment Module**                  |                               |             |
-| Shipment orders                      | YES                           | 20.1        |
+| Shipment Orders                      | YES                           | 20.1        |
 | Shipments                            | YES                           | 20.1        |
 | **Inventory Management Module**      |                               |             |
 | Lots                                 | YES                           | 20.1        |
