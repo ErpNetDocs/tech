@@ -14,11 +14,11 @@ In Parties, there is a child table with the Applicable legislations for the part
 
 ### Bulgaria (BG)
 
-#### List of the System deal types and their correlation with the Sales and Purchases ledger's columns
+#### List of the System deal types and their correlation with the Sales and Purchases Ledger's columns
 
 The VAT declaration in @@name  is a document that serves as a basis for the creation of a VAT return and the VAT export files for submission to the National Revenue Agency. The information in the VAT declaration is based on the VAT Entries created in the system for the particular period.
 
-The Entries amounts (Amount Base and VAT Amount Base) are entered in different columns of the Sales and Purchases ledger of the VAT declaration depending on their Deal type (for more information about Entries' deal type and amount calculation, see todo: (Defining VAT and base for VAT Entries)).
+The Entries amounts (Amount Base and VAT Amount Base) are entered in different columns of the Sales and Purchases Ledger of the VAT declaration depending on their Deal type (for more information about Entries' deal type and amount calculation, see todo: (Defining VAT and base for VAT Entries)).
 
 This article contains information about the correlation between the system Deal types and the columns of the Sales and Purchases ledgers according to which the Entries amounts are distributed to those columns.
 
