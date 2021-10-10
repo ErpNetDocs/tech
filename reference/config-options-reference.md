@@ -27,7 +27,7 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 7. Key - **Default_Enterprise_Company_Location_Id/XXX**
-- a.Action: Defines the default company location. XXX is the id of the enterprise company. The value is the ID of the default company location.
+- a.Action: Defines the default company location. XXX is the ID of the enterprise company. The value is the ID of the default company location.
 - b.Set automatically by the system of the user.
 
 8. Key - **Documents/OnlySaveNewVersionsToHistory**
@@ -40,7 +40,7 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 10. **Key - Inv/CheckForNegativeAvailability**
-- a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the Transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
+- a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
 - b.The user sets it manually.
 
 11. Key - **InvoiceFiscalPrintChangeToState (DEPRECATED)**
@@ -60,7 +60,7 @@ The current article contains a list of configuration keys and their values:
 - b.Set automatically by the system of the user.
 
 15. Кеу - **SalesOrderFiscalPrintChangeToState (DEPRECATED)**
-- a.Action: This key specifies the document state to which a Sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales order is switched to Released state.
+- a.Action: This key specifies the document state to which a sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the sales order is switched to Released state.
 - b.The user sets it manually.
 
 16. Key - **SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice**
@@ -68,12 +68,12 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 17. Key - **SalesOrdersOverduePaymentOrdersCheckDisabled**
-- a.Action: When the key has value and this value is "1", on Sales order document release overdue Payment orders check is not performed. In all other cases, such check is performed.
+- a.Action: When the key has value and this value is "1", on sales order document release overdue payment orders check is not performed. In all other cases, such check is performed.
 - b.The user sets it manually.
 
 18. Key - **SimpleFilterLayout**
 - a.Action: When the value of the key is "1", then the "Use simple layout for filter panels" option is check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field OR Value". If the value of the key is "0", then the "Use simple layout for filter panels" option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format "Field: Value".
-- b.The user set it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
+- b.The user sets it manually through File tab → Settings → "Use simple layout for filter panels". But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
     - until Version 2019.1 - the default value is "0";
     - in Version 2019.1 and later - the default value is "1"
 
@@ -90,14 +90,14 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 21. Key -  **CreateReconciliationsByTimestamp**
-- a.Action: When this key has value and this value is "1", the function "Add the available products" in the Reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
+- a.Action: When this key has value and this value is "1", the function "Add the available products" in the reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
       - Stock movements in the store by the document date;
       - Stock movements in the store by the date of the transaction timestamp.
 - b.Usually, the "i" method is used to define stock availability (i.e. the quantities at a specified date), and method "ii" is used to define the stocks cost (at a specified time)
 - c.The user sets it manually.
 
 22. Key -  **CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation**
-- a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store transfers, Work orders, Sales returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
+- a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (store transfers, work orders, sales returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
 - b.The user sets it manually.
 
 23. Key - **ActiveLanguages**
@@ -142,11 +142,11 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually
 
 31. Key - **DisableProductCopyPropertiesFromOtherProduct**
-- a.Action: When this key has value and this value is "1", the Product configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
+- a.Action: When this key has value and this value is "1", the Product configurator feature for copying the values to custom properties from the custom property which values are products is deactivated.
 - b.The user sets it manually
 
 32. Key - **PaymentTransactionFiscalPrintChangeToState (DEPRECATED)**
-- a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment transaction is switched to Released state.
+- a.This key specifies the document state to which a payment transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the payment transaction is switched to Released state.
 - b.The user sets it manually.
 
 33. Key - **Crm/Sales/SalesOrders/ShowFillLotsInLines**  
@@ -167,7 +167,7 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 37. Key - **RevokedBusinessRules**   
-- a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, Business Rule's codes must be set with its full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
+- a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, business rules' codes must be set with their full code including "R" (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.
 - b.The user sets it manually.
 
 38. Key - **DisableQueryingForSaveOnClose**    
@@ -175,24 +175,24 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 39. Key - **UseLegacyLoadForLotsIssue**        
-- a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to promise by lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
+- a.Action: When this key has value and this value is "1", for the calculation of the quantity "Available to promise by lots" is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
 - b.The user sets it manually.
 
 40. Key - **ReservedLicenses** (not implemented/ cancelled)
     
 41. Key - **EnableCreateGroupForUser**
-- a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new User into the database a new Group with the User’s name will be created automatically as well. 
+- a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new user into the database a new group with the user’s name will be created automatically as well. 
 - b.The user sets it manually.
 - c.The key is introduced in version: - 2019.1 (in implementation)
 
 > [!Note]
-> Before version 2019.1 a new User Group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
+> Before version 2019.1 a new user group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.
 
 42. Key - **DocumentVersioningSystem**
-- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html)  system. The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. ( For more information about the track changes system and its levels, please see topic  [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) 
+- a.Action: When the value of this key is "VH" the system will use the "old" document versioning system. If the key's value is "TC" the system will not create records using the "old" document versioning system and will instead use the [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) system. The minimum level that is going to be tracked when the "TC" option is activated is "Track Changes Level 3". If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. (For more information about the track changes system and its levels, please see topic [Track Changes](https://docs.erp.net/tech/advanced/track-changes.html) 
        
 >[!Note]
-> Please note that the current key affects only entities which are a successor of document entity (such as Sales Orders, Store Orders ...) and NOT entities such as Product Groups, Bonus Programs..
+> Please note that the current key affects only entities which are a successor of document entity (such as sales orders, store orders ...) and NOT entities such as product groups, bonus programs..
 
 - b.The user sets it manually, but if the key is not configured for the particular database or its value is different from "VH" or "TC", then the system will use the default value. The default value depends on the system version:
     - Version 2019.1 - the default value is "VH";
@@ -205,8 +205,8 @@ The current article contains a list of configuration keys and their values:
            
 44. Key - **UseStartScreen**
 - a.Action: When the value of this key is:
-    - "1" - the form that is going to be opened when the program is started by the specified user will be the Start Screen. 
-    - "2" - the starting form will be the Main Menu. <br>
+    - "1" - the form that is going to be opened when the program is started by the specified user will be the Start screen. 
+    - "2" - the starting form will be the Main menu. <br>
     - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for
 version 2020.1 is Main Menu.**Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
 - b.The user sets it manually.
@@ -214,14 +214,14 @@ version 2020.1 is Main Menu.**Warning:** The current key's value will be taken i
 
 45. Key - **UseStartScreenPolicy** 
 - a.Action: When the value of this key is:
-    - "1" - the form that is going to be opened when the program is started will be the Start Screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
-    - "2" - the starting form will be the Main Menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
+    - "1" - the form that is going to be opened when the program is started will be the Start screen. This applies to all users into the database, regardless of the "UseStartScreen" option.
+    - "2" - the starting form will be the Main menu. This applies to all users into the database, regardless of the "UseStartScreen" option/key.
     - "0", different from "1" and "2" or the key is not configured for the particular database - there is no global policy. Each user decides whether they want to use the start screen using "UseStartScreen" option/key.
 - b.The user sets it manually.
 - c.The key is introduced in version: - 2020.1
 
 46. Key **UseDefaultMailClient**
 
-- a.Action: When this key has a value for the particular User and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
+- a.Action: When this key has a value for the particular user and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
 - b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
 - c.The key is introduced in version: - 2019.1
