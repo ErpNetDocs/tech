@@ -1,4 +1,4 @@
-# Username Validation
+# Username validation
 
 
 The rules for naming a user are:
