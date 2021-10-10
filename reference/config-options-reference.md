@@ -1,6 +1,4 @@
-# Config Options Reference
-
-
+# Config options reference
 
 The current article contains a list of configuration keys and their values:
 
@@ -62,7 +60,7 @@ The current article contains a list of configuration keys and their values:
 - b.Set automatically by the system of the user.
 
 15. Кеу - **SalesOrderFiscalPrintChangeToState (DEPRECATED)**
-- a.Action: This key specifies the document state to which a Sales Order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales Order is switched to Released state.
+- a.Action: This key specifies the document state to which a Sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Sales order is switched to Released state.
 - b.The user sets it manually.
 
 16. Key - **SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice**
@@ -70,7 +68,7 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 17. Key - **SalesOrdersOverduePaymentOrdersCheckDisabled**
-- a.Action: When the key has value and this value is "1", on Sales Order document release overdue Payment Orders check is not performed. In all other cases, such check is performed.
+- a.Action: When the key has value and this value is "1", on Sales order document release overdue Payment orders check is not performed. In all other cases, such check is performed.
 - b.The user sets it manually.
 
 18. Key - **SimpleFilterLayout**
@@ -99,7 +97,7 @@ The current article contains a list of configuration keys and their values:
 - c.The user sets it manually.
 
 22. Key -  **CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation**
-- a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store Transfers, Work Orders, Sales Returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
+- a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (Store transfers, Work orders, Sales returns). When the key has value and this value is "1", the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the Master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.
 - b.The user sets it manually.
 
 23. Key - **ActiveLanguages**
@@ -144,11 +142,11 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually
 
 31. Key - **DisableProductCopyPropertiesFromOtherProduct**
-- a.Action: When this key has value and this value is "1", the Product Configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
+- a.Action: When this key has value and this value is "1", the Product configurator feature for copying the values to custom properties from the custom property which values are Products is deactivated.
 - b.The user sets it manually
 
 32. Key - **PaymentTransactionFiscalPrintChangeToState (DEPRECATED)**
-- a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment Transaction is switched to Released state.
+- a.This key specifies the document state to which a Payment Transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the Payment transaction is switched to Released state.
 - b.The user sets it manually.
 
 33. Key - **Crm/Sales/SalesOrders/ShowFillLotsInLines**  
@@ -177,7 +175,7 @@ The current article contains a list of configuration keys and their values:
 - b.The user sets it manually.
 
 39. Key - **UseLegacyLoadForLotsIssue**        
-- a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to Promise by Lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
+- a.Action: When this key has value and this value is "1", for the calculation of the quantity Available to promise by lots is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.
 - b.The user sets it manually.
 
 40. Key - **ReservedLicenses** (not implemented/ cancelled)
