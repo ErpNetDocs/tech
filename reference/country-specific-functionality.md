@@ -2,25 +2,25 @@
 uid: applicable-legislations
 ---
 
-# Country Specific Functionality
+# Country specific functionality
 
 
 
 @@name contains some country, region, or other specific functionalities that are needed in order to meet legal or regulatory requirements. Such functionality is the creation of VAT returns and the VAT export files for submission to the National Revenue Agency (Bulgaria), for example.
 
-## Party Applicable Legislations 
+## Party applicable legislations 
 
-In Parties, there is a child table with the Applicable Legislations for the particular Party. The table contains information about the countries, states, unions, or other entities whose regulations apply to the Party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
+In Parties, there is a child table with the Applicable legislations for the particular Party. The table contains information about the countries, states, unions, or other entities whose regulations apply to the Party. The records in this table are used when determining if a business rule must be activated when, for example, it incorporates rules that are specific for the particular country's laws.
 
 ### Bulgaria (BG)
 
-#### List of the System Deal Types and Their Correlation with the Sales and Purchases Ledger's Columns
+#### List of the System deal types and their correlation with the Sales and Purchases ledger's columns
 
 The VAT declaration in @@name  is a document that serves as a basis for the creation of a VAT return and the VAT export files for submission to the National Revenue Agency. The information in the VAT declaration is based on the VAT Entries created in the system for the particular period.
 
-The Entries amounts (Amount Base and VAT Amount Base) are entered in different columns of the Sales and Purchases Ledger of the VAT declaration depending on their Deal Type (for more information about Entries' deal type and amount calculation, see todo: (Defining VAT And Base For VAT Entries)).
+The Entries amounts (Amount Base and VAT Amount Base) are entered in different columns of the Sales and Purchases ledger of the VAT declaration depending on their Deal type (for more information about Entries' deal type and amount calculation, see todo: (Defining VAT and base for VAT Entries)).
 
-This article contains information about the correlation between the system Deal Types and the columns of the Sales and Purchases Ledgers according to which the Entries amounts are distributed to those columns.
+This article contains information about the correlation between the system Deal types and the columns of the Sales and Purchases ledgers according to which the Entries amounts are distributed to those columns.
 
 **Sales Ledger**
 
