@@ -3,12 +3,12 @@
 - name: Documents
   href: documents.md
   topicHref: documents/index.md
-- name: Multi-Language
+- name: Multi-language
   href: multi-language.md
-- name: Multi-Company
+- name: Multi-company
   href: multi-company.md
-- name: Parties Concepts
+- name: Parties concepts
   href: parties-concepts.md
-- name: ERP Instances  
+- name: ERP instances  
   href: erp-instances.md
   
