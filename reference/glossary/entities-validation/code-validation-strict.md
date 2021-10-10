@@ -1,23 +1,27 @@
-# CODE Validation (Strict)
+# Code validation (strict)
 
-
-This code validation is stricter than the standard **Code Validation**.
+This code validation is stricter than the standard **code validation**.
 
 ### Discussion
+
 The primary reasons for creating codes are:
+
 - Short visual identification of an entity. The code does not need to fully describe the entity just to uniquely identify it.
 - Easily type the code in dropdown search fields.
 - When needed, easily write down the code.
 - Sort (order) the entities by different criteria.
 
-### Allowed Characters
+### Allowed characters
+
 Under strict code validation, the code can only contain (in order of suggested usage):
+
 - Digits
 - Minus (-)
 - Uppercase letters (the English alphabet only)
 - Plus (+)
 
 The following symbols are **NOT** allowed:
+
 - Space ( )
 - Dot (.)
 - Forward slash (/)
@@ -27,7 +31,7 @@ The following symbols are **NOT** allowed:
 The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.
 
 ### Length
-The default maximum length for CODE attributes is **16 characters**. It is still recommended that codes be 5 characters or less.
+The default maximum length for code attributes is **16 characters**. It is still recommended that codes be 5 characters or less.
 
 ### Suggestions
 When creating codes, there are some general rules:
