@@ -1,4 +1,4 @@
-# Identifier Validation
+# Identifier validation
 
 The rules for naming an identifier are:
 
