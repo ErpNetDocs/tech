@@ -1,4 +1,4 @@
-## Entities Validations
+## Entities validations
 
 - [Identifier validation](https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/identifier-validation.md)
 - [Username validation](https://github.com/ErpNetDocs/tech/blob/master/reference/glossary/entities-validation/username-validation.md)
