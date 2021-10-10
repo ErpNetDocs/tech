@@ -24,4 +24,4 @@ When the provider is a product, the method uses the **GetRatioToBaseOrDefault** 
  2.  **IsConvertible** checks if using a specified provider object one measurement unit or one currency can be converted to another of the same type. If the provider is null, the units cannot be converted and the method returns false. 
   
 The method is based on the **GetRatioThroughBaseOrDefault** method. If the units are equal or both of them are null, the method returns true. If only one of them is null, the method returns false.
-If the units are different and not null, the method uses GetRatioToBaseOrDefault for each to get the ratios for conversion to the base unit of the provider. Then, both ratios are combined in a new one. If such a combined ratio is calculated successfully, the method returns true.
+If the units are different and not null, the method uses **GetRatioToBaseOrDefault** for each to get the ratios for conversion to the base unit of the provider. Then, both ratios are combined in a new one. If such a combined ratio is calculated successfully, the method returns true.
