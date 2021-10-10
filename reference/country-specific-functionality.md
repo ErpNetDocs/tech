@@ -69,7 +69,7 @@ This article contains information about the correlation between the system deal 
 
 
 
-**Purchases Ledger**
+**Purchases ledger**
 
 | Column        | Column name (EN)                    | Column name (BG)                                  | Deal type (BG)                                        | Additional conditions |
 | ------------- | ----------------------------------- | ------------------------------------------------- | ----------------------------------------------------- | --------------------- |
