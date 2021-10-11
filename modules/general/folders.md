@@ -12,15 +12,15 @@ Moreover, @@name allows important **documents** (such as contracts and statistic
 
 ![File Manag](pictures/fm4.png)
 
-The contents of a folder can be viewed once it is selected and the **Definition** command is executed.
+The contents of a folder can be viewed once it is selected, right-clicked, and the **Definition** command is executed.
 
-You can also rename, remove, or create a new subfolder within the folder.
+You can also **rename**, **remove**, or create a **new** subfolder within the folder.
 
 ![File Manag](pictures/fm26.png)
 
 ![File Manag](pictures/fm28.png)
 
-Folders can be created on demand via the **New** command following a single right-mouse click on anywhere inside the **Tree** panel.
+Individual folders can be created via the **New** command following a single right-mouse click on anywhere inside the **Tree** panel.
 
 ![File Manag](pictures/fm18.png)
 
