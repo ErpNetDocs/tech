@@ -2,11 +2,11 @@
 
 The **File Manager** is responsible for creating and storing folders with different files inside. It follows a hierarchical tree structure similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). 
 
-![File Manager](pictures/fm1.png)
+![File Manager](pictures/fm17.png)
 
 Each folder can contain an unlimited number of **subfolders**, the order of which is decided by pre-defined filters. 
 
-![File Manager](pictures/fm2.png)
+![File Manager](pictures/fm16.png)
 
 Moreover, @@name allows important **documents** (such as contracts and statistics) to be embedded, from one to dozens at a time.
 
@@ -14,11 +14,11 @@ Moreover, @@name allows important **documents** (such as contracts and statistic
 
 Inside the **Tree** panel, folders can be created on demand via the dropdown menu following a single right-mouse click.
 
-![File Manag](pictures/fm5.png)
+![File Manag](pictures/fm18.png)
 
 **Edit Mode** is triggered, and a window separate from the File Manager allows for the naming and grouping of the new forder. 
 
-![File Manag](pictures/fm6.png)
+![File Manag](pictures/fm20.png)
 
 - **Parent Folder** - from the dropdown, a main entry is selected, thus making the new folder its subfolder.
 - **Folder Name** - this is the name of the folder or subfolder.
@@ -34,5 +34,11 @@ Before proceeding further, the File Manager needs to **save** the current progre
 
 Once embedded, they become part of the folder and are subject to the management capabilities of the **File Manager**.
 
-![File Manag](pictures/fm9.png)
+![File Manag](pictures/fm13.png)
+
+The quickest way to open a file is by **double-clicking** it. Its contents will be revealed immediately. 
+
+![File Manag](pictures/fm14.png)
+
+
 
