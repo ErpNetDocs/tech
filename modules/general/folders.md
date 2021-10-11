@@ -12,13 +12,21 @@ Moreover, @@name allows important **documents** (such as contracts and statistic
 
 ![File Manag](pictures/fm4.png)
 
-Inside the **Tree** panel, folders can be created on demand via the dropdown menu following a single right-mouse click.
+The contents of a folder can be viewed once it is selected and the **Definition** command is executed.
+
+You can also rename, remove, or create a new subfolder within the folder.
+
+![File Manag](pictures/fm26.png)
+
+![File Manag](pictures/fm28.png)
+
+Folders can be created on demand via the **New** command following a single right-mouse click on anywhere inside the **Tree** panel.
 
 ![File Manag](pictures/fm18.png)
 
 **Edit Mode** is triggered, and a window separate from the File Manager allows for the naming and grouping of the new forder. 
 
-![File Manag](pictures/fm20.png)
+![File Manager](pictures/fm21.png)
 
 - **Parent Folder** - from the dropdown, a main entry is selected, thus making the new folder its subfolder.
 - **Folder Name** - this is the name of the folder or subfolder.
@@ -39,6 +47,10 @@ Once embedded, they become part of the folder and are subject to the management 
 The quickest way to open a file is by **double-clicking** it. Its contents will be revealed immediately. 
 
 ![File Manag](pictures/fm14.png)
+
+File can also be organized into different viewing modes, each suited to a potential user's needs. 
+
+![File Manag](pictures/fm22.png)
 
 
 
