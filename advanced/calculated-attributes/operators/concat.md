@@ -3,7 +3,7 @@ uid: cao-CONCAT
 items: Operators
 ---
 
-# CONCAT - Calculated Attribute Operator                      
+# CONCAT                   
 
 | Specification    | Value                     |
 | ---------------- | ------------------------- |
@@ -18,8 +18,7 @@ items: Operators
 
 ## Example
 
-
-The following example concatenates the word 'Red' with the value of the field 'Notes' in Sales Order Lines:
+The following example concatenates the word 'Red' with the value of the field Notes in a sales order lines:
 
 ```
 10: CONCAT CONST:Red ATTRIB:Notes                  
@@ -27,6 +26,7 @@ The following example concatenates the word 'Red' with the value of the field 'N
 OUTPUT: If 'Notes  = Apple', the output will be 'RedApple'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 If we want to expand the example we can add a space between the both strings:
