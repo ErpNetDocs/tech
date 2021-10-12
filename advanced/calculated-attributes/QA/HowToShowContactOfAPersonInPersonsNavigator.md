@@ -2,7 +2,7 @@
 items: CalculatedAttributesQA
 ---
 
-# How to show contact of a Person in Persons navigator?
+# How to show contact of a person in persons navigator?
 
 The specific of this calculated attribute is that the contact mechanism type is enum type. This is why it is accessed specifically. Its values and codes are as follows:
 
@@ -16,7 +16,7 @@ The specific of this calculated attribute is that the contact mechanism type is 
 | Telephone   | 5     | Telephone value. Stored as 'T'.   |
 | WebSite     | 6     | WebSite value. Stored as 'W'.     |
 
-So, lets say we need to get a column with the emails of the persons (if the person has more than one emails - a random one; if a specific email is needed - more filters would be needed). The calculated attribute would have the following expressions:
+So, let's say we need to get a column with the emails of the persons (if the person has more than one emails - a random one; if a specific email is needed - more filters would be needed). The calculated attribute would have the following expressions:
 
 ```
 10 GETOBJVALUE EXP:20 EXP:15
@@ -32,16 +32,14 @@ So, lets say we need to get a column with the emails of the persons (if the pers
 60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
 ```
 
-
-
 Explanation:
 
 - 10: from the object from EXP:20 get the attribute from EXP:15
-- 15: get the value of the attribute Name from the referent object ContactMechanism
+- 15: get the value of the attribute name from the referent object ContactMechanism
 - 20: get the first element from the list in EXP:21
 - 21: filter the list in EXP:30 by the conditions in EXP:22
 - 22: check if EXP:23 is equal to EXP:25
-- 23: get the value of the attribute ContactMechanismType from the referent object ContactMEchanism
+- 23: get the value of the attribute ContactMechanismType from the referent object ContactMechanism
 - 25: cast the constant of "1" (this is integer) to type 'Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType'
 - 30: select from repository General.Contacts.PartyContactMechanisms and filter it by EXP:40
 - 40: the filter is in EXP:50
