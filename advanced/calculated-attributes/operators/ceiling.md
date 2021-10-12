@@ -3,7 +3,7 @@ uid: cao-CEILING
 items: Operators
 ---
 
-# CEILING - Calculated Attribute Operator                                                            
+# CEILING - Calculated attribute operator                                                            
 
 | Specification| Value|
 | ---- | ----- |
@@ -19,7 +19,7 @@ items: Operators
 
 ## Example
 
-The following example gets the smallest integer that is greater than or equal to 'Quantity' of a Sales Order Line:
+The following example gets the smallest integer that is greater than or equal to the quantity of a sales order line:
 
 ```
 10:CEILING ATTRIB:QuantityValue                  
@@ -29,4 +29,5 @@ OUTPUT:
 <br/>If 'QuantityValue = 14', the output will be '14'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
