@@ -3,7 +3,7 @@ uid: cao-GETOBJVALUE
 items: Operators
 ---
 
-# GETOBJVALUE - Calculated Attribute Operator
+# GETOBJVALUE 
 
 | Specification| Value|
 | ---- | ----- |
@@ -19,15 +19,16 @@ items: Operators
 
 ## Example
 
-The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the Customer set the current Sales Order:
+The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the customer set the current sales order:
 ```
 10: GETOBJVALUE REF:Customer ATTRIB:DefaultDeliveryTermDays
 ```
 OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrders*
 
-#### More Examples
-[Check if a value of a field is changed in the adjustment document](../examples/check-if-field-is-changed-in-adjustment.md)
-<br/>[Get value and description of referent object](../examples/get-value-and-description-of-referent-object.md)
+#### More examples:
+- **[Check if a value of a field is changed in the adjustment document](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.html)
+- **[Get value and description of referent object](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-value-and-description-of-referent-object.html)**
