@@ -1,6 +1,6 @@
 # File manager
 
-The **File Manager** is where you can create and store folders with different files inside. It follows a rigid, hierarchical tree order, similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). With the help of the ribbons, you are able to peek inside and not get lost in complex structures.
+The **File Manager** is where you can create and store folders with different files inside. It follows a hierarchical tree order, similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). With the help of the ribbons, you are able to peek inside a complex structure without getting lost.
 
 ![File Manager](pictures/fm17.png)
 
@@ -22,11 +22,11 @@ The contents of the folder can be seen in the window that opens.
 
 ![File Manag](pictures/fm28.png)
 
-You can create separate folders folders by right-clicking anywhere inside the Tree panel and selecting the **New** command. 
+You can create individual folders folders by right-clicking anywhere inside the **Tree** panel and selecting the **New** command. 
 
 ![File Manag](pictures/fm18.png)
 
-This triggers **Edit Mode**, where a window outside of the File Manager pops up and allows for the creation of the new forder. 
+This triggers **Edit Mode**, where a window outside of the **File Manager** pops up and allows for the creation of the new forder. 
 
 ![File Manager](pictures/fm21.png)
 
@@ -40,15 +40,15 @@ Before proceeding further, you need to **save** your current progress, thus comp
 
 Storing files into folders allows for flexibility and security when working with sensitive documents.
 
-Currently, it is possible to embed a file only in the **[New]** folder window, where "[New]" is the folder's name.
+Currently, it is possible to embed a file only in the **[New]** window, where "[New]" is the folder's name.
 
-To do so, right-click inside the panel and select **Embedded File**.
+To do so, right-click inside the panel and select **Insert new file -> Embedded File**.
 
 ![File Manag](pictures/fm8.png)
 
 You will need to select the documents from the location that you store them.
 
-Once files are uploaded, they become part of the folder and are subject to the management capabilities of the **File Manager**.
+Once uploaded, they become part of the folder and are subject to the management capabilities of the **File Manager**.
 
 ![File Manag](pictures/fm13.png)
 
