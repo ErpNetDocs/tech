@@ -12,9 +12,9 @@
 - name: Calculated attributes
   href: calculated-attributes/toc.yml
   topicHref: calculated-attributes/index.md
-- name: Business rules
-  href: business-rules/toc.yml
-  topicHref: business-rules/index.md
+- name: User business rules
+  href: user-business-rules/toc.yml
+  topicHref: user-business-rules/index.md
 - name: String interpolation
   href: string-interpolation/toc.yml
   topicHref: string-interpolation/index.md  
