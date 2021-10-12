@@ -12,7 +12,7 @@ Such calculated attribute actually represents a report with specific filters. If
 - Enterprise Company
 - Enterprise Company Location (eventually)
 - DocumentState (at least Released)
-- Void (he probably won't need voided documents)
+- Void 
 - Document Date
 
 So the calculated attribute must **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** the sales order lines table and filter the records as described above.
