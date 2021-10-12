@@ -22,7 +22,8 @@ The current example shows how you can format the values of date type custom prop
 ```
 
 Explanation:
-<br/>// We assume that the value of the custom poperty is 20200315.
+
+We assume that the value of the custom poperty is 20200315.
 
 - 10: Format the date returned from EXP:20 applying the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
 - 20: Convert the type of the value returned from EXP:30 to DateTime	
