@@ -5,15 +5,20 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Advanced systems
 
-- [Documents](documents/index.md) - document-related concepts and services.
-- [Custom attributes](custom-attributes/index.md) - user-defined data attributes.
-- [Calculated attributes](calculated-attributes/index.md) - user-defined calculations.
-- [Business rules](business-rules/index.md) - user-defined and system business rules.
-- [Data objects](data-objects/index.md) - data object extensibility systems.
+- [Document flow](https://docs.erp.net/tech/advanced/document-flow/index.html) - document-related concepts and services.
+- [Document amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html) 
+- [Custom attributes](https://docs.erp.net/tech/advanced/custom-attributes/index.html) - user-defined data attributes.
+- [Calculated attributes](https://docs.erp.net/tech/advanced/calculated-attributes/index.html) - user-defined calculations.
+- **Business rules** - user-defined and system business rules.
+- [String interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)
+- [Data objects](https://docs.erp.net/tech/advanced/data-objects/index.html) - data object extensibility systems.
+- [Jobs](https://docs.erp.net/tech/advanced/jobs/index.html)
 
 ## Advanced concepts
 
-- [Master / Detail attributes](concepts/master-detail-attributes.md)
-- [Object / Relational mapping](concepts/object-relational-mapping.md)
-- [Aggregates](concepts/aggregates.md)
+- [Master / Detail attributes](https://docs.erp.net/tech/advanced/concepts/master-detail-attributes.html)
+- [Object / Relational mapping](https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html)
+- [Aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)
+- [Scheduled document events](https://docs.erp.net/tech/advanced/concepts/scheduled-document-events/index.html)
+
 
