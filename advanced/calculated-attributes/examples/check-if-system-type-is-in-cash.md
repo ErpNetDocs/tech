@@ -22,5 +22,5 @@ Explanation:
 
 > [!NOTE]
 > When using **[EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)** we should make sure that we are comparing parameters from the same type. 
-> If we don’t know which is the type of the particular object or what is the value that it is going to return, we can use the [Aloe.EnterpriseOne.Model Documentation](https://restdev.erp.bg/model/html/71286338-75b2-46ca-bc99-2b97fa1cf775.html). 
+> If we don’t know which is the type of the particular object or what is the value that it is going to return, we can use the **Aloe.EnterpriseOne.Model Documentation**. 
 > In the particular example, we can check [PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.htm), where we can see that the value that corresponds to the system type in 'Cash' is '0'.
