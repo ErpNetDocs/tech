@@ -52,7 +52,7 @@ When we **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/oper
 
 - WHERE clauses – the conditions are applied together with the **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** to the  whole list and directly on the server. Much faster performance in  comparison with **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)**, especially for a list with lots of records.
 
--  FILTER clauses - filters are applied locally (on the client side) to the list that has been returned from the SELECT. 
+-  FILTER clauses - filters are applied locally (on the client side) to the list that has been returned from the **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**. 
 
 
 Knowing this there are two basic conclusions that we can come to.
