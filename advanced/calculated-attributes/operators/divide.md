@@ -2,12 +2,12 @@
 uid: cao-DIVIDE
 items: Operators
 ---
-# DIVIDE - Calculated Attribute Operator
+# DIVIDE 
 
 | Specification | Value |
 | ---- | ----- |
 | Name | DIVIDE |
-| Description | Divide one number by second number. |
+| Description | Divide one number by a second number. |
 | Parameter 1 Name | Number1 |
 | Parameter 1 Type | numeric type - int, double or decimal |
 | Parameter 2 Name | Number2 |
@@ -17,6 +17,7 @@ items: Operators
 | Return Value | Number1 / Number2 |
 
 > [!NOTE]
+> 
 > Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
 ## Example
@@ -27,8 +28,9 @@ items: Operators
 OUTPUT: If 'QuantityValue = 6.00', the output will be '3.00'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 
-#### More Examples
-[Calculate standart price per lot based on the ingredients and the operations in the recipe](../examples/calculate-standartpriceperlot.md)
+#### More examples:
+- **[Calculate standart price per lot based on the ingredients and the operations in the recipe](https://docs.erp.net/tech/advanced/calculated-attributes/examples/calculate-standartpriceperlot.html)**
