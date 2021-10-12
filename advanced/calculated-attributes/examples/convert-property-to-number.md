@@ -42,4 +42,5 @@ Explanation:
 - 20: Convert the value of custom property 'CustomProperty1' to a decimal number.
 
 > [!NOTE]
-> When we want to convert CustomPropertyValue to numeric value (for example, decimal), we need to [CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html) it to a string first!
+> 
+> When we want to convert CustomPropertyValue to numeric value (for example, decimal), we need to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it to a string first!
