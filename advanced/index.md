@@ -1,6 +1,7 @@
 # Advanced section
 
 This section contains information for advanced concepts, systems and deep dive in the security.
+
 It is intended primarily for advanced ERP implementation consultants.
 
 ## Advanced systems
