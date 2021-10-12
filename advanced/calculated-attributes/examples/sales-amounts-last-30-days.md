@@ -2,11 +2,11 @@
 items: CalculatedAttributeExamples
 ---
 
-# Sales amounts of the customer for the last 30 days
+# Sales amounts of a customer for the last 30 days
 
-Let's say the user want to show a field in the Sales Order which calculates the sales amounts of the selected customer for the last 30 days.
+Let's say a user wants to show a field in the sales order which calculates the sales amounts of the selected customer for the last 30 days.
 
-Such calculated attribute actually represents a report with specific filters. If a user tries to get the sales of a client for the last 30 days, he would open Sales Order Lines report and set the following filters:
+Such calculated attribute actually represents a report with specific filters. If a user tries to get the sales of a client for the last 30 days, he would open a sales order lines report and set the following filters:
 
 - Client
 - Enterprise Company
@@ -15,14 +15,16 @@ Such calculated attribute actually represents a report with specific filters. If
 - Void (he probably won't need voided documents)
 - Document Date
 
-So the calculated attribute must [SELECT](../operators/select.md) the Sales Order Lines table and filter the records as described above. Such calculated attribute would have the following parameters:
+So the calculated attribute must **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** the sales order lines table and filter the records as described above.
+
+Such calculated attribute would have the following parameters:
 
 ```
 Repository Name:Crm.Sales.SalesOrders
 Name:SOAmountsForTheLast30days
 ```
 
-And the Calculated Attribute expressions are as follows:
+And the calculated attribute expressions are as follows:
 
 ```
 10: SUM EXP:20 ATTRIB:LineAmountValue
