@@ -2,7 +2,7 @@
 uid: cao-ADDDAYS
 items: Operators
 ---
-# ADDDAYS - Calculated Attribute Operator
+# ADDDAYS - Calculated attribute operator
 
 | Specification | Value |
 | ---- | ----- |
@@ -24,4 +24,5 @@ items: Operators
 OUTPUT: If 'DocumentDate = 2000-01-20', the output will be '2000-01-25'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrders*
