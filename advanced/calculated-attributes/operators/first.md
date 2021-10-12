@@ -33,7 +33,9 @@ The following example returns the first met line of the current document (sales 
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrders*
 
-If we want to expand the example, we can sort the line ascending by line number. This way the atrribute will return the line with lowest line number:
+If we want to expand the example, we can sort the line ascending by line number. 
+
+This way, the atrribute will return the line with lowest line number:
 
 ```
 10: FIRST EXP:20
