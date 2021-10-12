@@ -2,7 +2,7 @@
 uid: cao-ADDDAYS
 items: Operators
 ---
-# ADDDAYS - Calculated attribute operator
+# ADDDAYS 
 
 | Specification | Value |
 | ---- | ----- |
