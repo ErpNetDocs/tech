@@ -23,7 +23,7 @@ More records inevitably means slower calculation. Like any other design when cre
 
 *Example:*
 
-Let's imagine that we need to show a field with **Total Line Amount** value in the sales order line. Therefore we will need to calculate the sum of the line amount of all sales order lines of the particular sales order. Such attribute can be created at least two ways (the repository is Crm.Sales.SalesOrderLines):
+Let's imagine that we need to show a field with Total Line Amount value in the sales order line. Therefore we will need to calculate the sum of the line amount of all sales order lines of the particular sales order. Such attribute can be created at least two ways (the repository is Crm.Sales.SalesOrderLines):
 
 #### Using a SELECT
 
