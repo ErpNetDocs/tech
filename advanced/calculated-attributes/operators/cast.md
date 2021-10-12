@@ -3,7 +3,7 @@ uid: cao-CAST
 items: Operators
 ---
 
-# CAST - Calculated attribute operator
+# CAST 
 
 | Specification | Value |
 | ---- | ----- |
