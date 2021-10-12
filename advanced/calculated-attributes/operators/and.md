@@ -3,7 +3,7 @@ uid: cao-AND
 items: Operators
 ---
 
-# AND - Calculated attribute operator
+# AND 
 
 | Specification | Value |
 | ---- | ----- |
