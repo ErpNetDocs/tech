@@ -5,12 +5,15 @@ items: CalculatedAttributeExamples
 # Get available to promise (ATP) quantity
 
 This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the [AvailableToPromise View](xref:Logistics.Inventory.DemandManagement.AvailableToPromise).
-In the example we are showing how get the ATP quantity in a shipment order line on its Required Delivery Date.
+
+In the example, we are showing how get the ATP quantity in a shipment order line on its required delivery date.
 
 > [!NOTE]
+> 
 > The repository of the attributes is *Logistics.Shipment.ShipmentOrderLines*
 
 ```
+
 10	GETOBJVALUE	EXP:20	ATTRIB:ATPBaseValue		
 20	FIRST	EXP:30				
 30	SORT	EXP:40	ATTRIB:FromDate	CONST:DESC
@@ -30,8 +33,8 @@ In the example we are showing how get the ATP quantity in a shipment order line 
 170	LTE	ATTRIB:FromDate	EXP:180		
 180	GETOBJVALUE	INPUT:10	EXP:190		
 190	GETOBJVALUE	REF:ShipmentOrder	ATTRIB:RequiredDeliveryDate		
-```
 
+```
 
 Explanation:
  
@@ -43,14 +46,14 @@ Explanation:
 - 60: Filter the the records for which EXP:110 and EXP:70 are True
 - 70: Filter the the records for which EXP:140 and EXP:170 are True 
 - 80: Return True if the ProductId of the AvailableToPromise record is equal to EXP:90
-- 90: Get EXP:100 from the repository of EXP:10 i.e. of the current Shipment Order Line
+- 90: Get EXP:100 from the repository of EXP:10 i.e. of the current shipment order line
 - 100: Get the ProductId of the ParentSalesOrderLine 
 - 110: Return True if the StoreId of the AvailableToPromise record is equal to EXP:120
-- 120: Get EXP:130 from the repository of EXP:10 i.e. of the current Shipment Order Line
+- 120: Get EXP:130 from the repository of EXP:10 i.e. of the current shipment order line
 - 130: Get the LineStoreId of ParentSalesOrderLine 
 - 140: Return True if the EnterpriseCompanyId of the AvailableToPromise record is equal to EXP:150
-- 150: Get EXP:160 from the repository of EXP:10 i.e. of the current Shipment Order Line
+- 150: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line
 - 160: Get the EnterpriseCompanyId of the ShipmentOrder 
 - 170: Return True if the FromDate of the AvailableToPromise record lower or equal to EXP:180
-- 180: Get EXP:160 from the repository of EXP:10 i.e. of the current Shipment Order Line
+- 180: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line
 - 160: Get the RequiredDeliveryDate of the ShipmentOrder 
