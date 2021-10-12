@@ -1,22 +1,22 @@
 - name: Overview
   href: index.md
-- name: How To Check If A Custom Property Has Value?
+- name: How to check if a custom property has values?
   href: HowToCheckIfACustomPropertyHasValue.md
-- name: How To Check If A List Have Values?
+- name: How to check if a list has values?
   href: HowToCheckIfAListHaveValues.md
-- name: How To Check Whether A Field That Points To A Reference Object Has A Value?
+- name: How to check whether a field that points to a reference object has a value?
   href: HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md
-- name: How To Create An Optimally Fast Calculated Attribute?
+- name: How to create an optimally fast calculated attribute?
   href: HowToCreateAnOptimallyFastCalculatedAttribute.md
-- name: How To Determine The Party Type Of A Party?
+- name: How to determine the party type of a party?
   href: HowToDetermineThePartyTypeOfAParty.md
-- name: How To Get Attribute Value From List?
+- name: How to get attribute value from list?
   href: HowToGetAttributeValueFromList.md
-- name: How To Get Specific Field Of A Parent Document?
+- name: How to get a specific field of a parent document?
   href: HowToGetSpecificFieldOfAParentDocument.md
-- name: How To Show Contact Of A Person In Persons Navigator?
+- name: How to show contact of a person in Persons navigator?
   href: HowToShowContactOfAPersonInPersonsNavigator.md
-- name: How To Use The Customer As A Company?
+- name: How to use a customer as a company?
   href: HowToUseTheCustomerAsACompany.md
 
 
