@@ -21,5 +21,3 @@ It is intended primarily for advanced ERP implementation consultants.
 - [Object / Relational mapping](https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html)
 - [Aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)
 - [Scheduled document events](https://docs.erp.net/tech/advanced/concepts/scheduled-document-events/index.html)
-
-
