@@ -3,7 +3,7 @@ uid: cao-FORMATSTRING
 items: Operators
 ---
 
-# FORMATSTRING - Calculated Attribute Operator
+# FORMATSTRING 
 
 | Specification| Value|
 | ---- | ----- |
@@ -11,14 +11,15 @@ items: Operators
 | Parameter 1 Name| Param1|
 | Parameter 1 Type| object (any type)|
 | Parameter 2 Name| Format|
-| Parameter 2 Type| constant - the format argument must contain a valid .NET format string, either as a standard format string (for example, "C" or "D") or as a pattern of custom characters for dates and numeric values (for example, "MMMM DD, yyyy (dddd)"). For more information about the supported format specifiers, see [Format Specifiers](~/reference/format-specifiers.md).|
+| Parameter 2 Type| constant <br> The format argument must contain a valid .NET format string, either as a standard format string ("C" or "D") or as a pattern of custom characters for dates and numeric values ("MMMM DD, yyyy (dddd)"). <br> For more information about the supported format specifiers, see **Format Specifiers**.|
 | Parameter 3 Name| - |
 | Parameter 3 Type| - |
 | Return Value| Param1 as a string formatted by the rule in Format.|
 
 
 > [!NOTE]
-> For more information about the supported format specifiers, see [Format Specifiers](~/reference/format-specifiers.md).
+> 
+> For more information about the supported format specifiers, see **Format Specifiers**.
 
 ## Example
 
@@ -44,4 +45,5 @@ OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $'.
 
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
