@@ -19,5 +19,6 @@ For example, to get the responsible person of the company of the customer, the f
 20: CAST REF:Party CONST:Aloe.EnterpriseOne.Model.General.Contacts.Company
 ```
 
->[!NOTE]
->If the customer is not a company, it would return an error.
+> [!NOTE]
+>
+> If the customer is not a company, it would return an error.
