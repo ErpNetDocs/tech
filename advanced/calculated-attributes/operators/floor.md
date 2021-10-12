@@ -3,7 +3,7 @@ uid: cao-FLOOR
 items: Operators
 ---
 
-# FLOOR - Calculated Attribute Operator
+# FLOOR 
 
 | Specification | Value |
 | ---- | ----- |
@@ -19,7 +19,7 @@ items: Operators
 
 ## Example
 
-The following example gets the largest integer that is less than or equal to 'Quantity' of a Sales Order Line:
+The following example gets the largest integer that is less than or equal to the quantity of a sales order line:
 
 ```
 10: FLOOR ATTRIB:QuantityValue                  
@@ -29,4 +29,5 @@ OUTPUT:
 <br/>If 'QuantityValue = 14', the output will be '14'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
