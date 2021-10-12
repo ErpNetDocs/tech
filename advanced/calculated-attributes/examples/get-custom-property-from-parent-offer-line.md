@@ -4,9 +4,9 @@ items: CalculatedAttributeExamples
 
 # Get a value of a custom property in sales order lines from the parent offer line
 
-With this attribute we can for example, determine what is the value of a particular customer property which is set for the parent  offer line of the current sales order line. Currently, offer lines customer properties are not automatically transferred to the sales order. Thus, we can use this attribute in a [User Business Rule](https://docs.erp.net/tech/user-business-rules-35586099.html) to automate the process. For more information how to create a such [User Business Rule](https://docs.erp.net/tech/user-business-rules-35586099.html), see topic '[How to Use Business Rules to Set a Value into a Custom Property?](https://docs.erp.net/tech/how-to-use-business-rules-to-set-a-value-into-a-custom-property-57344004.html)'.
+With this attribute, we can, for example, determine what is the value of a particular customer property which is set for the parent offer line of the current sales order line. Currently, offer lines customer properties are not automatically transferred to the sales order. Thus, we can use this attribute in a **[user business rule](https://docs.erp.net/tech/user-business-rules-35586099.html)** to automate the process. 
 
-
+For more information on how to create such a rule, see **[How to use business rules to set a value into a custom property?](https://docs.erp.net/tech/how-to-use-business-rules-to-set-a-value-into-a-custom-property-57344004.html)**.
 
 ```
 Repository: Crm.Sales.SalesOrderLines
@@ -35,5 +35,5 @@ Explanation:
 - 50: Cast EXP:60 to "System.Int32".
 - 60: Get the ”ParentLineNo“ of the sales order line which is an input for EXP:10.
 - 70: Get the list of child line of the object of EXP:80.
-- 80: Cast the “Parent Document” of the sales order line to "Aloe.EnterpriseOne.Model.Crm.Presales.Offer" in order to define the type/entity of the parent document.
+- 80: Cast the parent document of the sales order line to "Aloe.EnterpriseOne.Model.Crm.Presales.Offer" in order to define the type/entity of the parent document.
 
