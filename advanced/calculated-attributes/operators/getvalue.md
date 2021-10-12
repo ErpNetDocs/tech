@@ -3,7 +3,7 @@ uid: cao-GETVALUE
 items: Operators
 ---
 
-# GETVALUE - Calculated Attribute Operator
+# GETVALUE 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -18,12 +18,13 @@ items: Operators
 
 ## Example
 
-The following example returns the value of the Notes of the current Sales Order Line:
+The following example returns the value of the notes of the current sales order line:
 ```
 10: GETVALUE ATTRIB:Notes             
 ```
 OUTPUT: If 'Notes = Apple', the output will be 'Apple'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLiness*
 
