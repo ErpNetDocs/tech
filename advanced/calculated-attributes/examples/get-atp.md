@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example shows how you can create a calculated attribute which gets the avaible to promise (ATP) quantity on a particular date using the **AvailableToPromise** view.
+This example shows how you can create a calculated attribute which gets the **[avaible to promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** quantity on a particular date using the **AvailableToPromise** view.
 
 In the example, we are showing how get the ATP quantity in a shipment order line on its required delivery date.
 
