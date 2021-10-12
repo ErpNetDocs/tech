@@ -3,7 +3,7 @@ uid: cao-AND
 items: Operators
 ---
 
-# AND - Calculated Attribute Operator
+# AND - Calculated attribute operator
 
 | Specification | Value |
 | ---- | ----- |
@@ -19,7 +19,7 @@ items: Operators
 
 > [!NOTE]
 > Parameter 1 and Parameter 2 are optional.
-> If only Parameter 1 has value, the result is its value (Parameter 1).
+> If only parameter 1 has value, the result is its value (Parameter 1).
 
 
 ## Example
@@ -35,9 +35,10 @@ OUTPUT:
 <br/>If 'LineNo = 10' and 'Notes = Pear', the output will be 'False'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-#### More Examples
-[Sales amounts of the customer for the last 30 days](../examples/sales-amounts-last-30-days.md)
-<br/>[Get value and description of referent object](../examples/get-value-and-description-of-referent-object.md)
+#### More examples:
+- **[Sales amounts of the customer for the last 30 days](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html)**
+- **[Get value and description of referent object](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-value-and-description-of-referent-object.html)**
 
