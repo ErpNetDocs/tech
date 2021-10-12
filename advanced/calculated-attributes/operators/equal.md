@@ -2,7 +2,7 @@
 uid: cao-EQUAL
 items: Operators
 ---
-# EQUAL - Calculated Attribute Operator
+# EQUAL 
 
 | Specification | Value |
 | ---- | ----- |
@@ -17,7 +17,10 @@ items: Operators
 | Return Value | boolean (True or False) |
 
 > [!NOTE]
-> Ensure that the values which are compared up have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or strings.
+> 
+> Ensure that the values which are compared up have the same type. 
+> 
+> For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or strings.
 
 ## Example
 
@@ -30,9 +33,10 @@ OUTPUT:
 
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-#### More Examples
-[Check if the quantity is a whole number](../examples/check-if-quantity-is-whole-number.md)
-<br/>[Check whether the releasing of the document is first or not](../examples/check-for-first-releasing.md)
-<br/>[Get current availability of a product](../examples/get-current-availability-of-product.md)
+#### More examples:
+- **[Check if the quantity is a whole number](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-quantity-is-whole-number.html)**
+- **[Check whether the releasing of the document is first or not](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**
+- **[Get current availability of a product](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-current-availability-of-product.html)**
