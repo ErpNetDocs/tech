@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Format date type custom property 
 
-The current example shows how you can format the values of date type custom properties using a calculated attribute
+The current example shows how you can format the values of date type custom properties using a calculated attribute.
 
 
 ```
@@ -21,12 +21,10 @@ The current example shows how you can format the values of date type custom prop
 
 ```
 
-
-
 Explanation:
-<br/>// We assume that the value of the custom poperty is 20200315
+<br/>// We assume that the value of the custom poperty is 20200315.
 
-- 10: Format the date returned from EXP:20 applyig the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
+- 10: Format the date returned from EXP:20 applying the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.
 - 20: Convert the type of the value returned from EXP:30 to DateTime	
 - 30: Concatenate the text from EXP:40 to the text from EXP:50 e.g. '2021' + '-03-15'
 - 40: Get the first 4 characters from EXP:100 e.g. '2021'
