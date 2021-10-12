@@ -4,9 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get current availability of a product
 
-This example shows how to create a calculated attribute which returns the sum of the currently available Quantity Base of a particular product. In the example below are applied filters by Product, Store, Store Bin, Lot and Serial Number, because of the specification of the repository of the calculation  attribute. Other filters, such as Product Variant and Enterprise Company could be also added if needed. The example is created for Consumption Order Lines, but such attribute could be created for other documents or definitions as well. 
-
-
+This example shows how to create a calculated attribute which returns the sum of the currently available quantity base of a particular product. In the example below, are applied filters by product, store, store bin, lot and serial number, because of the specification of the repository of the calculation attribute. Other filters like product variant and enterprise company could also be added if needed. The example is created for consumption order lines, but such attribute could be created for other documents or definitions as well. 
 
 ```
 Repository Name: Production.ShopFloor.ConsumptionOrderLines
