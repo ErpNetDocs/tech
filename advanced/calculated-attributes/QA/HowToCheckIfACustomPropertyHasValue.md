@@ -4,17 +4,13 @@ items: CalculatedAttributesQA
 
 # How to check if a custom property has value?
 
-When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is verified is CustomProperty1.
-
-
+When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the property type of the particular custom property. Here are examples for the different custom property types which are universal to all repositories. The custom property code which is verified is CustomProperty1.
 
 Note that when a custom property is cast to string, only its value will be processed, and not its description.
 
+#### Property type is 'Text' 
 
-
-#### Property Type is 'Text' 
-
-If the Property Type of the particular custom property is 'Text' use the following expressions:
+If the property type of the particular custom property is 'Text', use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -32,9 +28,9 @@ Explanation:
 
 
 
-#### Property Type is 'Number' or 'Date'
+#### Property type is 'Number' or 'Date'
 
-If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:
+If the property type of the particular custom property is 'Number' or 'Date', use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -43,8 +39,6 @@ If the Property Type of the particular custom property is 'Number' or 'Date' use
 40: EQUAL EXP:50 CONST:''
 50: CAST ATTRIB:@CustomProperty1 CONST:System.String
 ```
-
-
 
 Explanation:
 
@@ -55,10 +49,9 @@ Explanation:
 - 50: cast CustomProperty1 to string
 
 
+#### Property type is 'Picture'
 
-#### Property Type is 'Picture'
-
-If the Property Type of the particular custom property is 'Picture' use the following expressions:
+If the property type of the particular custom property is 'Picture', use the following expressions:
 
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
@@ -72,8 +65,6 @@ If the Property Type of the particular custom property is 'Picture' use the foll
 90: EQUAL ATTRIB:PropertyId CONST:86ba82c9-8843-e611-82a1-b010410e63e2
 100: EQUAL ATTRIB:EntityItemId CONST:47e225e9-f4b6-e611-af28-00155d001f28
 ```
-
-
 
 Explanation:
 
@@ -89,4 +80,4 @@ Explanation:
 - 100: if ATTRIB: ATTRIB:EntityItemId is equal to 47e225e9-f4b6-e611-af28-00155d001f28, return true, else - return false
 
 > [!NOTE] 
-> EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.
+> EntityItemId is the ID of the actual entity (particular document, line, product) for which the value is specified.
