@@ -14,10 +14,6 @@ The **recommended** way to perform this validation is to check whether there is 
 20  EQUAL REF:AdjustedDocument CONST:NULL        
 ```
 
-​        
-
-
-
 and **NOT** whether the ID fields itself is empty:
 
 ```
