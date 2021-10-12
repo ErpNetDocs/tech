@@ -18,10 +18,11 @@ items: Operators
 | Return Value | Returns the param converted to the type. |
 
 > [!NOTE]
+> 
 > The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
 
 ## Example
-The following example converts the value of the 'State' of a Sales Order, whose type is Enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
+The following example converts the value of the state of a sales order, whose type is enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
 ```
 10: CONVERT ATTRIB:State CONST:System.Int32      
 ```
