@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Check if the current user has authorization
 
-If we want to determine if the user that is currently logged in the system is authorized (to do, see, or edit an entity, for example) we need to know which Group have such rights. When we have that information, we can simply create a calculated attribute that checks if the User is a part of this Group:
+If we want to determine if the user that is currently logged in the system is authorized (to do, see, or edit an entity, for example) we need to know which group have such rights. When we have that information, we can simply create a calculated attribute that checks if the user is a part of this group:
 
 ```
 10: IIF EXP:20 CONST:True CONST:False         
@@ -24,7 +24,7 @@ Explanation:
 - 20: Check if the list EXP:30 returns at least one record.
 - 30: Return the count of records in the filtered list of EXP:40.
 - 40: Select 'User Groups' filtered by EXP:50.
-- 50: The Filters are expression 60, expression 80...
+- 50: The filters are expression 60, expression 80...
 - 60: Check if the UserId is equal to EXP:70.
 - 70: Get the Id of the user that is currently editing the entity.
 - 80: Check if the GroupId is equal to the Id of an authorized group.
