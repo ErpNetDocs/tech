@@ -4,23 +4,19 @@ items: CalculatedAttributeExamples
 
 # Total quantity and scrap quantity in recipe ingredients
 
-If the user wants to see what is the total Quantity of the material in a Recipe which would include the Used Quantity and the Scrap Rate, he would add the following Calculated Attribute:
-
-
+If the user wants to see the total quantity of the material in a recipe, which would include the used quantity and the scrap rate, he would add the following calculated attribute:
 
 ```
 Repository Name:Production.Technologies.RecipeIngredients
 Name:TotalUsedQuantity
 ```
 
-And the Calculated Attribute expressions are as follows:
+And the calculated attribute expressions are as follows:
 
 ```
 10: ADD ATTRIB:UsageQuantityValue EXP:20
 20: MULTIPLY ATTRIB:UsageQuantityValue ATTRIB:ScrapRate
 ```
-
-
 
 Explanation:
 
