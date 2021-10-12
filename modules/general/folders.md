@@ -1,6 +1,6 @@
 # File manager
 
-The **File Manager** is responsible for creating and storing folders with different files inside. It follows a hierarchical tree structure similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). 
+The **File Manager** is where you can create and store folders with different files inside. It follows a strictly hierarchical tree structure similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). 
 
 ![File Manager](pictures/fm17.png)
 
@@ -12,43 +12,51 @@ Moreover, @@name allows important **documents** (such as contracts and statistic
 
 ![File Manag](pictures/fm4.png)
 
-The contents of a folder can be viewed once it is selected, right-clicked, and the **Definition** command is executed.
+You can view the contents of a folder if you right-click it and select the **Definition** command. 
 
-You can also **rename**, **remove**, or create a **new** subfolder within the folder.
+There are also options to **rename**, **remove**, or create a **new** subfolder within the selected folder.
 
 ![File Manag](pictures/fm26.png)
 
+The contents of the folder can be seen in the window that opens. 
+
 ![File Manag](pictures/fm28.png)
 
-Individual folders can be created via the **New** command following a single right-mouse click on anywhere inside the **Tree** panel.
+You can create separate folders folders by right-clicking anywhere inside the Tree panel and selecting the **New** command. 
 
 ![File Manag](pictures/fm18.png)
 
-**Edit Mode** is triggered, and a window separate from the File Manager allows for the naming and grouping of the new forder. 
+This triggers **Edit Mode**, where a window outside of the File Manager pops up and allows for the creation of the new forder. 
 
 ![File Manager](pictures/fm21.png)
 
-- **Parent Folder** - from the dropdown, a main entry is selected, thus making the new folder its subfolder.
+- **Parent Folder** - whatever you select from the dropdown will make the new folder its subfolder.
 - **Folder Name** - this is the name of the folder or subfolder.
 - **Notes** - these are optional details characterising the new folder or subfolder.
 
-Before proceeding further, the File Manager needs to **save** the current progress to complete the folder creation process.
+Before proceeding further, you need to **save** your current progress, thus completing the folder creation process.
 
 ![File Manag](pictures/fm7.png)
 
-**Inserting** files into a new folder can happen once it has been saved and following a single right-mouse click.
+Storing files into folders allows for flexibility and security when working with sensitive documents.
+
+Currently, it is possible to embed a file only in the **[New]** folder window, where "[New]" is the folder's name.
+
+To do so, right-click inside the panel and select **Embedded File**.
 
 ![File Manag](pictures/fm8.png)
 
-Once embedded, they become part of the folder and are subject to the management capabilities of the **File Manager**.
+You will need to select the documents from the location that you store them.
+
+Once files are uploaded, they become part of the folder and are subject to the management capabilities of the **File Manager**.
 
 ![File Manag](pictures/fm13.png)
 
-The quickest way to open a file is by **double-clicking** it. Its contents will be revealed immediately. 
+The quickest way to open a file is by **double-clicking** it. Its contents will be revealed straight away. 
 
 ![File Manag](pictures/fm14.png)
 
-File can also be organized into different viewing modes, each suited to a potential user's needs. 
+You can also see files in different viewing modes, ranging from extra large icons to tables with detailed rows.
 
 ![File Manag](pictures/fm22.png)
 
