@@ -18,7 +18,9 @@ items: Operators
 
 > [!NOTE]
 > 
-> Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
+> Ensure that the numbers of both parameters are from the the same type. 
+> 
+> For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
 ## Example
 
