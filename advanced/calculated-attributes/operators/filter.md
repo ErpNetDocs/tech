@@ -3,7 +3,7 @@ uid: cao-FILTER
 items: Operators
 ---
 
-# FILTER - Calculated Attribute Operator
+# FILTER 
 
 | Specification | Value |
 | ---- | ----- |
@@ -20,7 +20,7 @@ items: Operators
 
 ## Example
 
-The following example returns a list with all of lines in the current document (SalesOrder) whose quantity is '1.00':
+The following example returns a list with all of lines in the current document (sales order) whose quantity is '1.00':
 
 ```
 10: FILTER CHILD:Lines EXP:30
@@ -28,4 +28,5 @@ The following example returns a list with all of lines in the current document (
 ```
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrders*
