@@ -3,7 +3,7 @@ uid: cao-IIF
 items: Operators
 ---
 
-# IIF - Calculated Attribute Operator
+# IIF 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -28,8 +28,9 @@ OUTPUT:
 
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-#### More Examples
-[Compare unit price and standard unit price](../examples/compare-unit-and-standard-unit-price.md)
-<br/>[Check if a value of a field is changed in the adjustment document](../examples/check-if-field-is-changed-in-adjustment.md)
+#### More examples:
+- **[Compare unit price and standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**
+- **[Check if a value of a field is changed in the adjustment document](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.html)**
