@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
-- name: Deprecation Functions
+- name: Deprecation functions
   href: deprecation-functions.md 
-- name: Period Determination Metods
-  href: period-determination-metods.md
+- name: Period determination methods
+  href: period-determination-methods.md
