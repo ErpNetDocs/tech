@@ -2,31 +2,31 @@
 
 When a document has a parent document, there are constraints, which determine which states are allowed. The applicable states depend on the relation between the parent document and the child document.
 
-The relationship is contained in the Parent document relationship type attribute. Its possible values are:
+The relationship is contained in the parent document relationship type attribute. Its possible values are:
 
-- **Sub-Task** - the child document is a sub-task that must be completed to complete the parent document
-- **Next Task** - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.
+- **Sub-task** - the child document is a sub-task that must be completed to complete the parent document
+- **Next task** - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.
 
-For example, the *Sales Order-Store Order* relationship is usually of **Sub** task type because the store order must be completed before the sales order can.
+For example, the *sales order-store order* relationship is usually of **Sub** task type because the store order must be completed before the sales order can.
 
-In contrast, the *Offer-Sales Order* relationship is usually of **Next** task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.
+In contrast, the *offer-sales order* relationship is usually of **Next** task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.
 
 The allowed child document states depends on the relationship type and the parent document state. 
 
 The following table summarizes the allowed states:
 
-| Relationship Type | Parent State | Allowed Child States                                    |
+| Relationship type | Parent state | Allowed child states                                    |
 | :---------------- | :----------- | :------------------------------------------------------ |
-| Sub-Task          | New          | New                                                     |
-| Sub-Task          | Planned      | New, Planned                                            |
-| Sub-Task          | Firm Planned | New, Planned, Firm Planned                              |
-| Sub-Task          | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
-| Sub-Task          | Completed    | Completed, Closed                                       |
-| Sub-Task          | Closed       | Closed                                                  |
-| Next Task         | New          | New                                                     |
-| Next Task         | Planned      | New, Planned                                            |
-| Next Task         | Firm Planned | New, Planned, Firm Planned                              |
-| Next Task         | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
-| Next Task         | Completed    | New, Planned, Firm Planned, Released, Completed, Closed |
-| Next Task         | Closed       | New, Planned, Firm Planned, Released, Completed, Closed |
+| Sub-task          | New          | New                                                     |
+| Sub-task          | Planned      | New, Planned                                            |
+| Sub-task          | Firm Planned | New, Planned, Firm Planned                              |
+| Sub-task          | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
+| Sub-task          | Completed    | Completed, Closed                                       |
+| Sub-task          | Closed       | Closed                                                  |
+| Next task         | New          | New                                                     |
+| Next task         | Planned      | New, Planned                                            |
+| Next task         | Firm Planned | New, Planned, Firm Planned                              |
+| Next task         | Released     | New, Planned, Firm Planned, Released, Completed, Closed |
+| Next task         | Completed    | New, Planned, Firm Planned, Released, Completed, Closed |
+| Next task         | Closed       | New, Planned, Firm Planned, Released, Completed, Closed |
 
