@@ -1,6 +1,6 @@
 # Document flow
 
-### Description
+## Description
 
 The sequence of documents in a process forms a document flow. Just a sequence of documents is a rare occurrence, so documents in a process are more likely to be in a hierarchy.
 
