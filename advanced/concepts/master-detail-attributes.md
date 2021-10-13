@@ -2,25 +2,25 @@
 uid: master-detail
 ---
 
-# Master / Detail Attributes
+# Master / Detail attributes
 
-When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the "Store" field in the Sales Order header and "Line Store" in its Sales Order Lines.
+When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the Store field in the sales order header and line store in its sales order lines.
 
 The common principle is that if the field in the document header has value, we have to ensure that the corresponding field all document lines contains the same value. On the other hand, if the different lines contain different values - the document's header field must be empty.
 
 This principle is very important to avoid misleading the users. Otherwise, if the Store field in the document header could contain a value even if the document lines have different store values - the user may look only in the header and be misled that this store applies to all of its lines as well, which may not be true in all cases.
 
-## Master / Detail Attributes Concepts and Rules
+## Master / Detail attributes concepts and rules
 
 In order to make sure that the main principle described above is followed, is created a set of requirements and rules that are applied for each set of Master/Detail fields. 
 
-*The example for "Store" fields in document header/lines is used in the whole description for easy understanding.*
+*The example for Store fields in document header/lines is used in the whole description for easy understanding.*
 
 ### Concepts
 
 1. In order to allow that different lines may contain different stores and at the same time to follow the main principle - we have to make sure that the Store field in the document header may contain empty (NULL) values. Such value is set only when the document lines have different values. Opposite of this, the value in the field in the document lines is required/mandatory [Required = true] and must always contain a value.
 
-2. It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a Store Orders from Sales Orders - the Store field that is taken into account is the one in the Sales Order lines. We have to create separate Store Orders for each Line Store in order to execute the Sales Order correctly because in the Store Orders there is only one Store field and it is in the header.
+2. It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a store orders from sales orders - the store field that is taken into account is the one in the sales order lines. We have to create separate store orders for each line store in order to execute the sales order correctly because in the store orders there is only one store field and it is in the header.
 
 3. If the document does not contain any lines, then there is no limitation for the document header value - it doesn't matter if it is empty (NULL) and contains a value (not-NULL).
 
