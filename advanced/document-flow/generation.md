@@ -5,7 +5,7 @@
 
 Document generation is a key part of the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.
 
-Generation is a special case of direct **Order Fulfillment**, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.
+Generation is a special case of direct **order fulfillment**, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.
 
 ## Automating the document generation
 
