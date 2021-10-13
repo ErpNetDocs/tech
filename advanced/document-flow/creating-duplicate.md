@@ -25,7 +25,7 @@ The new **duplicate** document must contain the same number of records (headers,
 
 Document rows are considered standard rows which most documents have, but properties and **[additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)** also play a role. 
 
-If a specific document header has its own properties, they are considered document rows. The records in the Document Amount Referenced Documents panel are considered *rows of rows* (rows of the additional amounts). The records in Document Line Amounts are considered rows of the standard document rows. 
+If a specific document header has its own properties, they are considered document rows. The records in the Document Amount Referenced Documents panel are considered *rows of rows* (rows of the additional amounts). The records in Document Line amounts are considered rows of the standard document rows. 
 
 For now, attached files are **not** copied when creating a duplicate of a document.
  
@@ -77,7 +77,7 @@ The current section describes specific fields processing during data copying.
 
 If the document is a master document on its own, then in the MasterDocumentId field of the duplicate document, the original Id is filled. If this is not the case - MasterDocumentId is copied from the original document. 
 
-In DocumentDate, the current date is filled in and DocumentVersion is set to "1". EnterpriseCompanyId and EnterpriseCompanyLocationId house the enterprise company and location currently used by the user. 
+In DocumentDate, the current date is filled in and DocumentVersion is set to '1'. EnterpriseCompanyId and EnterpriseCompanyLocationId house the enterprise company and location currently used by the user. 
 
 CreationTime is filled in with the current date and time while CreationUser is set to the current user. 
 
@@ -116,4 +116,4 @@ The algorithm for creating a duplicate works as follows:
 
 - Creating correction is a function of the document form; a duplicate of the current document is created and in its header, the field AdjustingDocumentId is filled with the Id of the original document; all other scalar fields in the duplicate are reset.
 
-- Creating a copy of the sales order is a generation procedure in the sales order which produces a copy of the parent Sales order; the standard duplicate creation is used and in the header of the duplicate, the standard logic of document creation is applied.
+- Creating a copy of the sales order is a generation procedure in the sales order which produces a copy of the parent sales order; the standard duplicate creation is used and in the header of the duplicate, the standard logic of document creation is applied.
