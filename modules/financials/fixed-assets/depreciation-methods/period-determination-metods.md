@@ -1,4 +1,4 @@
-# Period Determination Methods
+# Period determination methods
 
 ## From next month to last month
 
@@ -6,7 +6,7 @@
 
 ## By days
 
-Method of calculation
+### Method of calculation
 
 First, the quota for each month is calculated:
 
