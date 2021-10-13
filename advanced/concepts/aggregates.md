@@ -4,9 +4,9 @@ uid: aggregates
 
 # Aggregates
 
-## What are Aggregates?
+## What are аggregates?
 
-"Aggregate is a pattern in Domain-Driven Design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate."
+'Aggregate is a pattern in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate."
 
 https://martinfowler.com/bliki/DDD_Aggregate.html
 
@@ -15,51 +15,51 @@ https://martinfowler.com/bliki/DDD_Aggregate.html
 For example, in @@name, this is one single aggregate:
 
 - a SalesOrder
-- the Sales Order Lines of this Sales Order
-- the Distributed Amounts for each of these Sales Order Lines
-- the Document Amounts of this Sales Order
-- the Payment Plan of this Sales Order
+- the sales order lines of this sales order
+- the distributed amounts for each of these sales order lines
+- the document amounts of this sales order
+- the payment plan of this sales order
 
-## Parent And Root Objects
+## Parent and root objects
 
 Each object in an aggregate can have a parent object.The parent is the logical "owner" of the child object(s).
 
 For example:
 
-- The parent of **Sales Order Line** is **Sales Order**.
-- The parent of **Distributed Amount** is the **Sales Order Line**.
+- The parent of **sales order line** is **sales order**.
+- The parent of **distributed amount** is the **sales order line**.
 
-The ultimate object, which has no parent in the aggregate is the Aggregate Root. In this example, this is the **Sales Order**.
+The ultimate object, which has no parent in the aggregate is the aggregate root. In this example, this is the **sales order**.
 
 
-## Aggregate Events
+## Aggregate events
 
 The **Commit** and **ClientCommit** events are now available in two different variations:
 
-1. Object Commit / Client-Commit
-1. Aggregate Commit / Client-Commit
+1. object commit / client-commit
+1. aggregate commit / alient-commit
 
 What is the difference?
 
 When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in **ANY** of its constituent objects, but only if the objects is an aggregate root.
 
-Lets take a look at the following structure which in EnterpriseOne is one single aggregate:
+Lets take a look at the following structure which in @@name is one single aggregate:
 
 - a SalesOrder (which is the aggregate's root)
-- the Sales Order Lines of this Sales Order
-- the Distributed Amounts for each of these Sales Order Lines
-- the Document Amounts of this Sales Order
-- the Payment Plan of this Sales Order
+- the Sales order lines of this sales order
+- the distributed amounts for each of these sales order lines
+- the document amounts of this sales order
+- the payment plan of this sales order
 
-In the example above, the **Commit** event would occur for the **Sales Order** if and only if the Sales Order object itself has changed. While the **Aggregate Commit** will occur for the Sales Order if any of the objects in the aggregate has changed. For example, changing just a single Sales Order Line (without changing the Sales Order itself) would still trigger the Sales Order Aggregate event.
-
-> [!NOTE] 
-> Commit and Client-Commit still have the same meaning. E.g., Commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While Client-Commit is triggered only based on client requests and is considered the more light-weight approach.
+In the example above, the **Commit** event would occur for the **sales order** if and only if the sales order object itself has changed. While the **aggregate commit** will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the Sales order aggregate event.
 
 > [!NOTE] 
->Initially, only the Aggregate Client Commit event would be available for user-defined business rules [Business Rules](~/advanced/business-rules/index.md). The Aggregate Commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
+> Commit and client-commit still have the same meaning. E.g., commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While client-commit is triggered only based on client requests and is considered the more light-weight approach.
 
-The reason is to have a more light tread approach. If there is serious need, we can consider adding the Aggregate Commit event in the future for [Business Rules](~/advanced/business-rules/index.md).
+> [!NOTE] 
+>Initially, only the agregate client commit event would be available for user-defined business rules [business rules](~/advanced/business-rules/index.md). The aggregate commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
+
+The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for [business rules](~/advanced/business-rules/index.md).
 
 #### See also: @Systems.Core.ExtensibleDataObjects
 
