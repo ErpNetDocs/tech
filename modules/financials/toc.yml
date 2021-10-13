@@ -1,5 +1,5 @@
 - name: Overview
-  href: overview.md
+  href: index.md
 - name: Fixed assets
   href: fixed-assets/toc.yml
   topicHref: fixed-assets/index.md
