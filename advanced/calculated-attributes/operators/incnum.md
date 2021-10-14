@@ -3,7 +3,7 @@ uid: cao-INCNUM
 items: Operators
 ---
 
-# INCNUM - Calculated attribute operator
+# INCNUM 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
