@@ -3,7 +3,7 @@ uid: cao-LEFT
 items: Operators
 ---
 
-# LEFT - Calculated attribute operator
+# LEFT 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
