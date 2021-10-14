@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | ++Value                                                    |
+| Return value          | ++Value                                                    |
 
 
 > [!NOTE]
