@@ -3,7 +3,7 @@ uid: cao-WHERE
 items: Operators
 ---
 
-# WHERE - Calculated Attribute Operator
+# WHERE 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,7 +14,8 @@ items: Operators
 | Parameter 2 Type      | Condition2 (optional)                                                          |
 | Parameter 3 Name      | boolean                                                            |
 | Parameter 3 Type      | Condition3 (optional)                                                            |
-| Return Value          | Clause, filtered by Condition1 AND Condition2 AND Condition3                                                       |
+| Return value          | Clause, filtered by Condition1, Condition2 AND Condition3                                                       |
 
 > [!NOTE]
-> The operator is used with operator [SELECT](select.md).
+> 
+> This operator is used with **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**.
