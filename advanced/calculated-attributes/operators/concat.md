@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type | string                    |
 | Parameter 3 Name | -                         |
 | Parameter 3 Type | -                         |
-| Return Value     | String1 + String2         |
+| Return value     | String1 + String2         |
 
 ## Example
 
