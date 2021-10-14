@@ -3,7 +3,7 @@ uid: cao-OR
 items: Operators
 ---
 
-# OR - Calculated Attribute Operator
+# OR 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -30,4 +30,5 @@ OUTPUT:
 <br/>If 'LineNo = 30', the output will be 'False'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
