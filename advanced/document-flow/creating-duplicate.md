@@ -46,8 +46,8 @@ Each record in the new document copies the ***substantial*** data from its corre
 
 Other examples for *rows of rows* are: 
 
-- Depreciation Plan Line Fixed Value’ are rows of Depreciation Plan lines
-- Payment Slip Lines are rows of Payment Slip amounts
+- Depreciation Plan Line Fixed Value are rows of Depreciation Plan lines
+- Payment Slip Lines are rows of Payment Slip Amounts
 - Operations are rows of work order items 
 - The voucher rows and their specific properties playing the role of their sub-rows.
 
