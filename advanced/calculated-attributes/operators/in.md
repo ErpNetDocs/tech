@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | the values must be equal to the param type                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | True or False depending on if param equals a member of the list of values.                                                          |
+| Return value          | True or False depending on if param equals a member of the list of values.                                                          |
 
 
 > [!NOTE]
