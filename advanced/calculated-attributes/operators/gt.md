@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | numeric (int, double, decimal) or datetime type                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | If attribute1 > attribute2 the returned value is True, if else - the operator returns False.                                                          |
+| Return value          | If attribute1 > attribute2 the returned value is True, if else - the operator returns False.                                                          |
 
 > [!NOTE]
 > 
@@ -36,6 +36,7 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More examples:
+
 - **[Compare unit price and standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**
 
 
