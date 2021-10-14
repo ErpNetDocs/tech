@@ -1,33 +1,33 @@
-## Default Tracking Levels
+## Default tracking levels
 
 Some entities are configured by default to track their changes. The default tracking level is system configured and cannot be lowered. However, the users can specify higher tracking levels.
 
 The following table contains the default system specified tracking levels.
 
-| Entity | Default Tracking Level | Activated in version |
+| Entity | Default tracking level | Activated in version |
 | -- | ------------------------------- | ---------------------------------------------|
-| Calculated Attributes | 3 | 2019.1 |
+| Calculated attributes | 3 | 2019.1 |
 | Companies | 3 | 2019.1 |
-| Company Locations | 3 | 2019.1 |
+| Company locations | 3 | 2019.1 |
 | Config | 3 | 2019.1 |
-| Document Types | 4 | 2019.1 |
-| Enterprise Companies | 3 | 2019.1 |
+| Document types | 4 | 2019.1 |
+| Enterprise companies | 3 | 2019.1 |
 | Entities | 3 | 2019.1 |
-| Group Access Keys | 3 | 2019.1 |
+| Group access keys | 3 | 2019.1 |
 | Groups | 3 | 2019.1 |
 | Parties | 4 | 2019.1 |
-| Payment Accounts | 2 | 2019.1 |
-| Payment Types | 2 | 2019.1 |
+| Payment accounts | 2 | 2019.1 |
+| Payment types | 2 | 2019.1 |
 | Persons | 3 | 2019.1 |
-| POS Locations | 3 | 2019.1 |
-| POS Operators | 3 | 2019.1 |
-| POS Roles | 3 | 2019.1 |
-| POS Sequences | 2 | 2019.1 |
-| POS Terminals | 2 | 2019.1 |
-| Printout Layouts | 4 | 2019.1 |
+| POS locations | 3 | 2019.1 |
+| POS operators | 3 | 2019.1 |
+| POS roles | 3 | 2019.1 |
+| POS sequences | 2 | 2019.1 |
+| POS terminals | 2 | 2019.1 |
+| Printout layouts | 4 | 2019.1 |
 | Products | 2 | 2019.1 |
-| User Business Rules | 3 | 2019.1 |
-| User Groups | 3 | 2019.1 |
+| User business rules | 3 | 2019.1 |
+| User groups | 3 | 2019.1 |
 | Users | 3 | 2019.1 |
 
 For more information on track changes, please check out [Track changes](track-changes.md).
