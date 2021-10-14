@@ -3,7 +3,7 @@ uid: cao-RIGHT
 items: Operators
 ---
 
-# RIGHT - Calculated Attribute Operator
+# RIGHT
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | int                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the last NumChars characters of String.                                                          |
+| Return value          | Returns the last NumChars characters of String.                                                          |
