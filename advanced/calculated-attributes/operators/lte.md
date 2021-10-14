@@ -3,7 +3,7 @@ uid: cao-LTE
 items: Operators
 ---
 
-# LTE - Calculated Attribute Operator
+# LTE 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -17,12 +17,14 @@ items: Operators
 | Return Value          | If attribute1 <= attribute2 the returned value is True, if else - the operator returns False.                                                          |
 
 > [!NOTE]
-> Ensure that the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
+> 
+> Make sure the attributes which are compared have the same type. 
+> 
+> For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
 
 
-
-See the example in @(Compare Unit Price And The Standard Unit Price).
+See the example in **[Compare unit price and the standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**.
 
 
 ## Example
@@ -37,7 +39,7 @@ OUTPUT:
 
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-#### More Examples
-[Compare unit price and standard unit price](../examples/compare-unit-and-standard-unit-price.md)
+
