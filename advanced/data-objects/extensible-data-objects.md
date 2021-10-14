@@ -2,7 +2,7 @@
 uid: extensible-data-objects
 ---
 
-# Extensible data objects EDO
+# Extensible Data Objects EDO
 
 ## Description and usage
 
