@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type | int |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Date + NumDays |
+| Return value | Date + NumDays |
 
 ## Example
 
