@@ -3,7 +3,7 @@ uid: cao-SUBSTRING
 items: Operators
 ---
 
-# SUBSTRING - Calculated Attribute Operator
+# SUBSTRING 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | int                                                            |
 | Parameter 3 Name      | len                                                          |
 | Parameter 3 Type      | int                                                           |
-| Return Value          | Part of string, starting from position start and with length of len.                                                          |
+| Return value          | Part of string, starting from position start and with length of len.                                                          |
