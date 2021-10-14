@@ -15,11 +15,11 @@ items: Operators
 | Parameter 2 Type |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Returns the first element of a list. |
+| Return value | Returns the first element of a list. |
 
 > [!NOTE]
 > 
-> The FIRST operator returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the @cao-SORT and @cao-ORDERBY operators.
+> **FIRST** returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the @cao-SORT and @cao-ORDERBY operators.
 
 ## Example
 
