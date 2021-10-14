@@ -3,7 +3,7 @@ uid: cao-LEN
 items: Operators
 ---
 
-# LEN - Calculated attribute operator
+# LEN 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
