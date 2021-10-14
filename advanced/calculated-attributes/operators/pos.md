@@ -3,7 +3,7 @@ uid: cao-POS
 items: Operators
 ---
 
-# POS - Calculated Attribute Operator
+# POS 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | string                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the position of term in string. If there are more than one occurrences of term in string, returns the first position. If term is not part of string, returns -1. |
+| Return value          | Returns the position of term in string. If there are more than one occurrences of term in string, it returns the first position. If term is not part of string, it returns -1. |
