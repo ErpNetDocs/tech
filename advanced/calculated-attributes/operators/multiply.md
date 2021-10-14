@@ -3,7 +3,7 @@ uid: cao-MULTIPLY
 items: Operators
 ---
 
-# MULTIPLY - Calculated Attribute Operator
+# MULTIPLY 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -17,7 +17,10 @@ items: Operators
 | Return Value          | Number1 * Number2                                                         |
 
 > [!NOTE]
-> Ensure that the numbers of both parameters are from the the same type. For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
+> 
+> Make sure the numbers of both parameters are from the the same type. 
+> 
+> For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
 ## Example
 
@@ -27,9 +30,11 @@ items: Operators
 OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 
-#### More Examples
-[Total quantity and scrap quantity in recipe ingredients](../examples/total-quantity-and-scrap-in-recipe-ingredients.md).
+#### More examples
+
+- **[Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)**.
 
