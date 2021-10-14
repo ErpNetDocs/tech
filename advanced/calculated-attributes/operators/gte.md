@@ -14,12 +14,12 @@ items: Operators
 | Parameter 2 Type      | numeric (int, double, decimal) or datetime type                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | If attribute1 >= attribute2 the returned value is True, if else - the operator returns False.                                                          |
+| Return value          | If attribute1 >= attribute2 the returned value is True, if else - the operator returns False.                                                          |
 
 
 > [!NOTE]
 > 
-> Ensure that the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
+> Make sure the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
 ## Example
 
