@@ -15,7 +15,7 @@ items: Operators
 | Parameter 2 Type | boolean |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Returns sub-list, which meets the condition. |
+| Return value | Returns sub-list, which meets the condition. |
 
 
 ## Example
