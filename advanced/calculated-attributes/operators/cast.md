@@ -15,13 +15,14 @@ items: Operators
 | Parameter 2 Type | string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standart .net types. |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Returns the param converted to the type. |
+| Return value | Returns the param converted to the type. |
 
 > [!NOTE]
 > 
 > The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
 
 ## Example
+
 The following example converts the value of the state of a sales order, whose type is enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
 ```
 10: CONVERT ATTRIB:State CONST:System.Int32      
