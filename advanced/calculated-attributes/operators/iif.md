@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | any type                                                         |
 | Parameter 3 Name      | FalseValue                                                           |
 | Parameter 3 Type      | any type                                                               |
-| Return Value          | When Condition is True, returns TrueValue. When Condition is False, returns FalseValue  |
+| Return value          | When Condition is True, returns TrueValue. When Condition is False, returns FalseValue  |
 
 ## Example
 
@@ -32,5 +32,6 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More examples:
+
 - **[Compare unit price and standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**
 - **[Check if a value of a field is changed in the adjustment document](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.html)**
