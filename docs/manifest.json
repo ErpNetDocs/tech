@@ -618,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "PCa9U1uCstEL2RbsgpmroA=="
+          "hash": "zjLcujxt9tGFLJDMZYfqsQ=="
         }
       },
       "is_incremental": false,
@@ -1256,7 +1256,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/creating-duplicate.html",
-          "hash": "i6COE//CUQ02uR0NcR+E1w=="
+          "hash": "mww65ZKF6ap/cITQtqndbg=="
         }
       },
       "is_incremental": false,
@@ -1292,7 +1292,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/generation-procedures.html",
-          "hash": "avm/i0yAp2yJQXiEWXnwJg=="
+          "hash": "iOBGf7LNpSV5InyAj83KMA=="
         }
       },
       "is_incremental": false,
@@ -2012,7 +2012,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/documents/index.html",
-          "hash": "TlGaM1r2718CEg3ODyoLbA=="
+          "hash": "ZTlQwUC/6OdV4jZBSTvlXA=="
         }
       },
       "is_incremental": false,
@@ -2196,6 +2196,281 @@
       "output": {
         "resource": {
           "relative_path": "docs/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm13.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm16.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm17.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm17.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm18.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm19.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm20.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm21.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm21.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm22.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm23.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm23.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm24.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm24.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm25.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm25.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm26.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm26.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm28.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm28.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/general/pictures/fm9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/general/pictures/fm9.png"
         }
       },
       "is_incremental": false,
