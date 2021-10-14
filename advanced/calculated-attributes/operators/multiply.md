@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Multiply the specified numbers.           |
+| Description           | Multiplies the specified numbers.           |
 | Parameter 1 Name      | Number1                                                        |
 | Parameter 1 Type      | numeric type - int, double or decimal                                    |
 | Parameter 2 Name      | Number2                                                            |
