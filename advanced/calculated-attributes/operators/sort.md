@@ -3,7 +3,7 @@ uid: cao-SORT
 items: Operators
 ---
 
-# SORT - Calculated Attribute Operator
+# SORT 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | any type                                                         |
 | Parameter 3 Name      | order (optional)                                                          |
 | Parameter 3 Type      | string - ASC or DESC                                                          |
-| Return Value          | Returns the input list from parameter1, sorted by the specified attribute and in the specified order. If not specified, the default order is ascending (ASC)                                                         |
+| Return жalue          | Returns the input list from parameter1, sorted by the specified attribute and in the specified order. If not specified, the default order is ascending (ASC)                                                         |
 
 
 ## Example
