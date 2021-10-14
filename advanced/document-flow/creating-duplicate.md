@@ -23,7 +23,7 @@ This is the common algorithm for creating a duplicate:
 
 The new **duplicate** document must contain the same number of records (headers, rows, rows of rows) and structure as the original. 
 
-Document rows are considered standard rows which most documents have, but properties and **[additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md)** also play a role. 
+Document rows are considered standard rows which most documents have, but properties and **additional amounts** also play a role. 
 
 If a specific document header has its own properties, they are considered document rows. The records in the Document Amount Referenced Documents panel are considered *rows of rows* (rows of the additional amounts). The records in Document Line amounts are considered rows of the standard document rows. 
 
