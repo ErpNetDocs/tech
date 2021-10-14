@@ -14,8 +14,8 @@ items: Operators
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | int                                                          |
-| Introduced In Version | 2020.1                                                       |
+| Return value          | int                                                          |
+| Introduced in version | 2020.1                                                       |
 
 ## Example
 
