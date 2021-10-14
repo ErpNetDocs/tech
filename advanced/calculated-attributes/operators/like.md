@@ -2,7 +2,7 @@
 uid: cao-LIKE
 ---
 
-# LIKE - Calculated Attribute Operator
+# LIKE - Calculated attribute operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -13,7 +13,7 @@ uid: cao-LIKE
 | Parameter 2 Type      | string                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | True in case String1 matches Mask. False in case String1 does not match the Mask.                                                         |
+| Return Value          | True in case String1 matches Mask. False in case String1 does not match Mask.                                                         |
 
 
 ## Examples
@@ -40,12 +40,13 @@ The following example returns True if the the string contains 'Apple' and after 
 
 OUTPUT: 
 <br/> If 'Notes = Apples', the output will be 'True'.
-<br/> If 'Notes = Green Apples', the output will be 'True'.
+<br/> If 'Notes = Green apples', the output will be 'True'.
 <br/> If 'Notes = apples', the output will be 'False'.
 <br/> If 'Notes = Apple', the output will be 'False'.
-<br/> If 'Notes = Green Bananas', the output will be 'False'.
+<br/> If 'Notes = Green bananas', the output will be 'False'.
 
 
 > [!NOTE] 
+> 
 > The repository of the attribute is Crm.Sales.SalesOrders
 
