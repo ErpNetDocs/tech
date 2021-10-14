@@ -15,7 +15,7 @@ items: Operators
 | Parameter 2 Type |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Returns the largest integer less than or equal to Number1. |
+| Return value | Returns the largest integer less than or equal to Number1. |
 
 ## Example
 
