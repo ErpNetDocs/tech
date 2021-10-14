@@ -3,7 +3,7 @@ uid: cao-LIST
 items: Operators
 ---
 
-# LIST - Calculated Attribute Operator
+# LIST 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -11,7 +11,7 @@ items: Operators
 | Parameter 1 Name      | list                                                         |
 | Parameter 1 Type      | list of objects                                    |
 | Parameter 2 Name      | attribute                                                           |
-| Parameter 2 Type      | attribute of the object <br/>// An attribute of a referent object could be used as well. For more information, see the example below.                                                         |
+| Parameter 2 Type      | attribute of the object <br/>// An attribute of a referent object could be used as well. See the example below.                                                         |
 | Parameter 3 Name      | separator (optional) <br/>// If Parameter3 is not specified, then the default separator is ", " (comma + space)                                                           |
 | Parameter 3 Type      | string                                                           |
 | Return Value          | (attributeValue1, attributeValue2, ...)                                                         |
@@ -27,4 +27,5 @@ items: Operators
 OUTPUT: 'ProductsName1; ProductName2 ...'
 
 > [!NOTE] 
+> 
 > The repository of the attribute is Crm.Sales.SalesOrders
