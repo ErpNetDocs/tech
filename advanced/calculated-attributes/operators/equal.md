@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type | numeric type - int, double or decimal; string; |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | boolean (True or False) |
+| Return value | boolean (True or False) |
 
 > [!NOTE]
 > 
@@ -37,6 +37,7 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More examples:
+
 - **[Check if the quantity is a whole number](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-quantity-is-whole-number.html)**
 - **[Check whether the releasing of the document is first or not](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**
 - **[Get current availability of a product](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-current-availability-of-product.html)**
