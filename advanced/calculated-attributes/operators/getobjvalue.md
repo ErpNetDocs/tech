@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type| attribute value |
 | Parameter 3 Name| - |
 | Parameter 3 Type| - |
-| Return Value| Returns value from obj. |
+| Return value| Returns value from obj. |
 
 
 ## Example
@@ -30,5 +30,6 @@ OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 > The repository of the attribute is *Crm.Sales.SalesOrders*
 
 #### More examples:
+
 - **[Check if a value of a field is changed in the adjustment document](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.html)**
 - **[Get value and description of referent object](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-value-and-description-of-referent-object.html)**
