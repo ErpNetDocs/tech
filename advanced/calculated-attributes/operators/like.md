@@ -2,7 +2,7 @@
 uid: cao-LIKE
 ---
 
-# LIKE - Calculated attribute operator
+# LIKE 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
