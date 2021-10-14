@@ -1,10 +1,10 @@
-# Custom Attributes
+# Custom attributes
 
-![User Data Attributes](user-data-attributes.png)
+![User data attributes](user-data-attributes.png)
 
-Custom Attributes (also called "Custom Properties") allow the user to extend the data model with user-defined attributes. Custom Attributes store values in the database, extending the system tables.
+Custom attributes (also called 'custom properties') allow the user to extend the data model with user-defined attributes. Custom attributes store values in the database, extending the system tables.
 
-## Similarity With System Attributes
+## Similarity with system attributes
 
 The custom attributes behave mostly like the system attributes.
 They can be shown in columns, grouped and filtered in navigators just like system attributes.
@@ -16,6 +16,6 @@ It is up to the implementation team to define custom attributes, which fit best 
 
 ## Note
 
-Many custom attributes can easily be defined and set as "required".
+Many custom attributes can easily be defined and set as 'required'.
 However, this might endanger the whole ERP implementation, since requiring too much data entry for each operation can alienate the end users from the system.
 Carefully balance the business needs with the end user comfort.
