@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | regex expression                                                         |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | True - if String1 matches Mask; False - if String1 does not match Mask  .                                                        |
+| Return value          | True - if String1 matches Mask; False - if String1 does not match Mask  .                                                        |
