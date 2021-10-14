@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | numeric type - int, double or decimal                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Number1 * Number2                                                         |
+| Return value          | Number1 * Number2                                                         |
 
 > [!NOTE]
 > 
