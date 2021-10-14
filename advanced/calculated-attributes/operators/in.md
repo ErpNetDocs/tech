@@ -3,7 +3,7 @@ uid: cao-IN
 items: Operators
 ---
 
-# IN - Calculated attribute operator
+# IN 
 
 | Specification | Value |
 | --------------------- | ------------------------------------------------------------ |
