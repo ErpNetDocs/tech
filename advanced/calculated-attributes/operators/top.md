@@ -3,7 +3,7 @@ uid: cao-TOP
 items: Operators
 ---
 
-# TOP - Calculated Attribute Operator
+# TOP 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -11,10 +11,11 @@ items: Operators
 | Parameter 1 Name      | Number                                                       |
 | Parameter 1 Type      | int                                    |
 | Parameter 2 Name      | Clauses                                                          |
-| Parameter 2 Type      | operators [WHERE](where.md)                                                           |
+| Parameter 2 Type      | operators **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)**                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | The first Number elements.                                                      |
+| Return value          | The first Number elements.                                                      |
 
 > [!NOTE]
-> The TOP operator is used with the [WHERE](where.md) operator.
+> 
+> This operator is used with **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)**.
