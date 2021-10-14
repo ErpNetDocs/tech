@@ -3,7 +3,7 @@ uid: cao-NOT
 items: Operators
 ---
 
-# NOT - Calculated Attribute Operator
+# NOT 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -27,4 +27,5 @@ OUTPUT:
 <br/>If 'LineNo = 20', the output will be 'True'.
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
