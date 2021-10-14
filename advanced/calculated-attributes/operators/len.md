@@ -3,7 +3,7 @@ uid: cao-LEN
 items: Operators
 ---
 
-# LEN - Calculated Attribute Operator
+# LEN - Calculated attribute operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -17,10 +17,12 @@ items: Operators
 | Return Value          | Returns the length of a string.                                                  |
 
 > [!NOTE] 
+> 
 > The spaces are included when calculating the length.
 
 ## Example
-The following example returns the lenght of the Notes set in the Sales Order:
+
+The following example returns the length of the notes set in the sales order:
 ```
 10: LEN ATTRIB:Notes
 ```
@@ -29,4 +31,5 @@ OUTPUT:
 <br/> If 'Notes = I am', the output will be '4'. 
 
 > [!NOTE] 
+> 
 > The repository of the attribute is Crm.Sales.SalesOrders
