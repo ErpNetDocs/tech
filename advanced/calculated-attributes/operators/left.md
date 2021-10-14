@@ -3,7 +3,7 @@ uid: cao-LEFT
 items: Operators
 ---
 
-# LEFT - Calculated Attribute Operator
+# LEFT - Calculated attribute operator
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,11 +14,12 @@ items: Operators
 | Parameter 2 Type      | int                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the first Numchars characters of the String.         |
+| Return Value          | Returns the first numchars characters of the string.         |
 
 
 ## Example
-The following example returns the first 3 characters of the Notes set in the Sales Order:
+
+The following example returns the first 3 characters of the notes set in the sales order:
 ```
 10: LEFT ATTRIB:Notes CONST:3   
 ```
@@ -27,4 +28,5 @@ OUTPUT:
 <br/> If 'Notes = I am', the output will be 'I a'. 
 
 > [!NOTE] 
+> 
 > The repository of the attribute is Crm.Sales.SalesOrders
