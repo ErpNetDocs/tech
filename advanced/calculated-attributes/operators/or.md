@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | boolean                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Condition1 OR Condition2                                                     |
+| Return value          | Condition1 OR Condition2                                                     |
 
 
 ## Example
