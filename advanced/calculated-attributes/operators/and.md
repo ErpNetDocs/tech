@@ -15,7 +15,7 @@ items: Operators
 | Parameter 2 Type | boolean |
 | Parameter 3 Name | Condition3 (optional) |
 | Parameter 3 Type |  boolean |
-| Return Value | Condition1 AND Condition2|
+| Return value | Condition1 AND Condition2|
 
 > [!NOTE]
 > Parameter 1 and Parameter 2 are optional.
@@ -39,6 +39,7 @@ OUTPUT:
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More examples:
+
 - **[Sales amounts of the customer for the last 30 days](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html)**
 - **[Get value and description of referent object](https://docs.erp.net/tech/advanced/calculated-attributes/examples/get-value-and-description-of-referent-object.html)**
 
