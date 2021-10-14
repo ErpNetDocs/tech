@@ -42,4 +42,4 @@ For every generation procedure that is marked as Obsolete is scheduled a **date 
 
 3. DEAD - From [date of suspension] onwards - generation ceases to operate and enters the lifetime stage DEAD. <br> **An error that can not be avoided will be thrown.**
 
-With the release of the new main version after the Date of Suspension, the obsolete generation procedure is **to be deleted** and it will no longer appear in the drop-down lists.
+With the release of the new main version after the date of suspension, the obsolete generation procedure is **to be deleted** and it will no longer appear in the drop-down lists.
