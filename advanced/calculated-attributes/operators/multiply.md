@@ -34,7 +34,7 @@ OUTPUT: If 'QuantityValue = 3.00', the output will be '6.00'.
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 
-#### More examples
+#### More examples:
 
 - **[Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)**.
 
