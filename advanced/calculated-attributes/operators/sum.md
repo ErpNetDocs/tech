@@ -3,7 +3,7 @@ uid: cao-SUM
 items: Operators
 ---
 
-# SUM - Calculated Attribute Operator
+# SUM
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,7 +14,8 @@ items: Operators
 | Parameter 2 Type      | numeric type - int, double or decimal                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the sum of the Values of the elements in the List.                                                     |
+| Return value          | Returns the sum of the Values of the elements in the List.                                                     |
 
-## More Examples
-[Sales amounts of the customer for the last 30 days](../examples/sales-amounts-last-30-days.md)
+## More examples:
+
+- **[Sales amounts of the customer for the last 30 days](https://docs.erp.net/tech/advanced/calculated-attributes/examples/sales-amounts-last-30-days.html)**
