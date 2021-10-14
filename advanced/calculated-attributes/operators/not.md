@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | False - if Condition is True; True - if Condition is False                                                     |
+| Return value          | False - if Condition is True; True - if Condition is False                                                     |
 
 ## Example
 
