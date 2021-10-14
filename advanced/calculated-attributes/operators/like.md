@@ -13,7 +13,7 @@ uid: cao-LIKE
 | Parameter 2 Type      | string                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | True in case String1 matches Mask. False in case String1 does not match Mask.                                                         |
+| Return value          | True in case String1 matches Mask. False in case String1 does not match Mask.                                                         |
 
 
 ## Examples
