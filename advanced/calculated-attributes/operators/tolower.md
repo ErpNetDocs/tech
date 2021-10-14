@@ -3,11 +3,11 @@ uid: cao-TOLOWER
 items: Operators
 ---
 
-# TOLOWER - Calculated Attribute Operator
+# TOLOWER
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Returns the string, converted to lowercase.        |
+| Description           | Returns the string converted to lowercase.        |
 | Parameter 1 Name      | string                                                      |
 | Parameter 1 Type      | string                                  |
 | Parameter 2 Name      | -                                                            |
