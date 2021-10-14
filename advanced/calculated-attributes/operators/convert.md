@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type | string - 'System.Int32', 'System.String', 'System.Decimal', 'System.DateTime' and all standard .net types |
 | Parameter 3 Name | -                                                            |
 | Parameter 3 Type | -                                                            |
-| Return Value     | Returns the param converted to the type.                     |
+| Return value     | Returns the param converted to the type.                     |
 
 
 ## Example
@@ -31,4 +31,5 @@ OUTPUT: If 'QuantityValue = 12.14', the output will be '12'.
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
 #### More examples:
+
 - **[Convert a value of a custom property to a number](https://docs.erp.net/tech/advanced/calculated-attributes/examples/convert-property-to-number.html)**
