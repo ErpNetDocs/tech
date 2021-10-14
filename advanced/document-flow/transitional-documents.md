@@ -13,7 +13,7 @@ They are used just to keep the document flow contiguous, but are hidden to keep 
 
 Not all generations can create transitional documents. Only **deterministic** generations can create such documents.
 
-The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the [document fulfillment](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/fulfillment.md) system and lots of sub-documents are created.
+The main purpose of the transitional documents is to decrease the number of sub-documents in case there are often changes in the data from which sub-documents are created by the [document fulfillment](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html) system and lots of sub-documents are created.
 
 ## Transitional document setup
 
