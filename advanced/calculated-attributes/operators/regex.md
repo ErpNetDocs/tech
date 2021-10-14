@@ -3,7 +3,7 @@ uid: cao-REGEX
 items: Operators
 ---
 
-# REGEX - Calculated Attribute Operator
+# REGEX 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | regex expression                                                         |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | True - if String1 matches Mask; False - if String1 does not match the Mask  .                                                        |
+| Return Value          | True - if String1 matches Mask; False - if String1 does not match Mask  .                                                        |
