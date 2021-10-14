@@ -3,7 +3,7 @@ uid: cao-REPLACE
 items: Operators
 ---
 
-# REPLACE - Calculated Attribute Operator
+# REPLACE 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | string                                                           |
 | Parameter 3 Name      | NewValue                                                            |
 | Parameter 3 Type      | string                                                           |
-| Return Value          | A string that is equivalent to String1 except that all instances of OldValue are replaced with NewValue. If OldValue is not found in String1, the operator returns String1.           |
+| Return value          | A string that is equivalent to String1 except that all instances of OldValue are replaced with NewValue. If OldValue is not found in String1, the operator returns String1.           |
