@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | int                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Returns the first numchars characters of the string.         |
+| Return value          | Returns the first numchars characters of the string.         |
 
 
 ## Example
