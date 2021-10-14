@@ -3,7 +3,7 @@ uid: cao-ROUND
 items: Operators
 ---
 
-# ROUND - Calculated Attribute Operator
+# ROUND 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -14,7 +14,8 @@ items: Operators
 | Parameter 2 Type      | int                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return Value          | Number, rounded up to the digit, specified in DecimalPlaces                                                         |
+| Return value          | Number, rounded up to the digit, specified in DecimalPlaces                                                         |
 
 > [!NOTE]
+> 
 > Parameter 2 is optional. If Parameter 2 is not set, it is considered 0 (zero).
