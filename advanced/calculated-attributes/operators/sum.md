@@ -16,6 +16,6 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return value          | Returns the sum of the Values of the elements in the List.                                                     |
 
-## More examples:
+## More examples
 
 - **[Sales amounts of the customer for the last 30 days](https://docs.erp.net/tech/advanced/calculated-attributes/examples/sales-amounts-last-30-days.html)**
