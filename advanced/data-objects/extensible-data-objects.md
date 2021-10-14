@@ -44,4 +44,4 @@ Possible (planned) future uses:
 - Reactions - Facebook style reactions.
 - Reviews - marketplace style reviews.
 
-#### See also: @Systems.Core.ExtensibleDataObjects
+#### See also: [@Systems.Core.ExtensibleDataObjects](https://docs.erp.net/model/entities/Systems.Core.ExtensibleDataObjects.html)
