@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type | numeric type - int, double or decimal |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return Value | Number1 / Number2 |
+| Return value | Number1 / Number2 |
 
 > [!NOTE]
 > 
@@ -35,4 +35,5 @@ OUTPUT: If 'QuantityValue = 6.00', the output will be '3.00'.
 
 
 #### More examples:
+
 - **[Calculate standart price per lot based on the ingredients and the operations in the recipe](https://docs.erp.net/tech/advanced/calculated-attributes/examples/calculate-standartpriceperlot.html)**
