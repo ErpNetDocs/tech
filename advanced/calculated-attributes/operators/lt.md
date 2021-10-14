@@ -3,7 +3,7 @@ uid: cao-LT
 items: Operators
 ---
 
-# LT - Calculated Attribute Operator
+# LT 
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
@@ -17,7 +17,8 @@ items: Operators
 | Return Value          | If attribute1 < attribute2 the returned value is True, if else - the operator returns False.                                                          |
 
 > [!NOTE]
-> Ensure that the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
+> 
+> Make sure the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
 ## Example
 
@@ -31,4 +32,5 @@ OUTPUT:
 
 
 > [!NOTE]
+> 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
