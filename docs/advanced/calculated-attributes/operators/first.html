@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FIRST - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>FIRST | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FIRST - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="FIRST | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="cao-FIRST">
-<h1 id="first---calculated-attribute-operator">FIRST - Calculated Attribute Operator</h1>
+<h1 id="first">FIRST</h1>
 
 <table>
 <thead>
@@ -121,23 +121,24 @@
 </tr>
 <tr>
 <td>Return Value</td>
-<td>Returns the first element of list.</td>
+<td>Returns the first element of a list.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The FIRST operator returns the first met element of the list, but the criateria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the <a class="xref" href="sort.html">SORT - Calculated Attribute Operator</a> and <a class="xref" href="orderby.html">ORDERBY - Calculated Attribute Operator</a> operators.</p>
+<p>The FIRST operator returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the <a class="xref" href="sort.html">SORT - Calculated Attribute Operator</a> and <a class="xref" href="orderby.html">ORDERBY - Calculated Attribute Operator</a> operators.</p>
 </div>
 <h2 id="example">Example</h2>
-<p>The following example returns the first met line of the current document (SalesOrder):</p>
+<p>The following example returns the first met line of the current document (sales order):</p>
 <pre><code>10: FIRST CHILD:Lines
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
 </div>
-<p>If we want to expand the example we can sort the line ascending by line number. This way the atrribute will return the line with lowest line number:</p>
+<p>If we want to expand the example, we can sort the line ascending by line number.</p>
+<p>This way, the atrribute will return the line with lowest line number:</p>
 <pre><code>10: FIRST EXP:20
 20: SORT CHILD:Lines ATTR:LineNo CONST:ASC
 </code></pre>

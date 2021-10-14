@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="check-if-the-system-type-of-payment-type-in-the-sales-order-is-in-cash">Check if the system type of payment type in the sales order is 'In Cash'</h1>
 
-<p>With this attribute we can check if the System Type of  Payment type which is set in the Sales Order is 'In Cash'. When we have  that information we can, for example, use the attribute to create a Business Rule (for more information, see @Allow a Credit Limit Override When the Client Pays in Cash) that allows a Credit Limit Override when the Client pays in cash.</p>
+<p>With this attribute we can check if the system type of payment type which is set in the sales order is 'In Cash'. When we have that information we can, for example, use the attribute to create a business rule (see <strong>Allow a credit limit override when the client pays in cash</strong>) that allows a credit limit override when the client pays in cash.</p>
 <pre><code>10: IIF EXP:20 CONST:True CONST:False      
 20: EQUAL EXP:25 EXP:30                                
 25: CAST CONST:0 CONST:System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType]          
@@ -89,14 +89,14 @@
 <ul>
 <li>10: Return True of False according to the result of EXP:20</li>
 <li>20: Check if EXP:25 is equal to EXP:30</li>
-<li>25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using CAST</li>
-<li>30: Get the System Type of the Payment Type which is set in the Sales Order.</li>
+<li>25: Converts '0' to type  System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType] using <strong>CAST</strong></li>
+<li>30: Get the system type of the payment type which is set in the sales order.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When using EQUAL we should make sure that we are comparing Parameters from the same type.
-If we don’t know which is the type of the particular object or what is the value that it is going to return we can use the <a href="https://restdev.erp.bg/model/html/71286338-75b2-46ca-bc99-2b97fa1cf775.htm">Aloe.EnterpriseOne.Model Documentation</a>.
-In the particular example we can check <a href="https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.htm">PaymentTypesRepository.SystemType Enumeration</a>, where we can see that the value that corresponds to the System Type in 'Cash' is '0'.</p>
+<p>When using <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html">EQUAL</a></strong> we should make sure that we are comparing parameters from the same type.
+If we don’t know which is the type of the particular object or what is the value that it is going to return, we can use the <strong>Aloe.EnterpriseOne.Model Documentation</strong>.
+In the particular example, we can check <strong><a href="https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html">PaymentTypesRepository.SystemType Enumeration</a></strong>, where we can see that the value that corresponds to the system type in 'Cash' is '0'.</p>
 </div>
 </article>
           </div>

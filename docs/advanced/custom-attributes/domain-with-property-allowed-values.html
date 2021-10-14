@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Domain with Property Allowed Values | ERP.net Tech Docs </title>
+    <title>Domain with property allowed values | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Domain with Property Allowed Values | ERP.net Tech Docs ">
+    <meta name="title" content="Domain with property allowed values | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,47 +77,47 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="domain-with-property-allowed-values">
-<h2 id="domain-with-property-allowed-values">Domain with Property Allowed Values</h2>
+<h2 id="domain-with-property-allowed-values">Domain with property allowed values</h2>
 
-<p>Domain is the range of the allowed values of the particular Custom Property. It is determined in one of the following ways - sorted by priority:</p>
+<p>Domain is the range of the allowed values of the particular custom property. It is determined in one of the following ways - sorted by priority:</p>
 <ol>
-<li><p>If &quot;Limit To Allowed Values&quot; does NOT have a check mark, then any value is valid and the domain is a range of all possible values.</p>
+<li><p>If Limit To Allowed Values does NOT have a check mark, then any value is valid and the domain is a range of all possible values.</p>
 </li>
-<li><p>If the &quot;Allowed Values Entity Name&quot; has a value, then the domain is the set of all records of the specified data type.</p>
+<li><p>If the Allowed Values Entity Name has a value, then the domain is the set of all records of the specified data type.</p>
 </li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Property&quot; does not have a value.</p>
+<p>This field should have a value ONLY if Limit To Allowed Values has a check mark and Allowed Values Property does not have a value.</p>
 </div>
 <ol start="3">
-<li><p>If the field &quot;Allowed Values Property&quot; has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.</p>
+<li><p>If the field Allowed Values Property has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.</p>
 <p>CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain</p>
 </li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This field should have a value ONLY if &quot;Limit To Allowed Values&quot; has a check mark and &quot;Allowed Values Entity Name&quot; does NOT have a value.</p>
+<p>This field should have a value ONLY if Limit To Allowed Values has a check mark and Allowed Values Entity Name does NOT have a value.</p>
 </div>
 <ol start="4">
-<li>(Default, Lowest Priority) The domain is the range of the &quot;Property Allowed Values&quot; listed in the Gen_Property_Allowed_Values sub-table.</li>
+<li>(Default, Lowest Priority) The domain is the range of the&quot;Property Allowed Values listed in the Gen_Property_Allowed_Values sub-table.</li>
 </ol>
 <p><em><strong>Example 1:</strong></em></p>
 <p>Let's assume that we have the following properties:</p>
-<p>Property 1 (Entity Name = Products)</p>
-<p>Property 2 (Allowed Values Property = Property 1)</p>
-<p>Property 3 (Entity Name = Products)</p>
-<p>Property 4 (Entity Name = Companies)</p>
-<p>Property 5 (Allowed Values Property = Property 2)</p>
-<p>Property 6 (Limit To Allowed Values = False)</p>
+<p>property 1 (entity name = Products)</p>
+<p>property 2 (allowed values property = Property 1)</p>
+<p>property 3 (entity name = Products)</p>
+<p>property 4 (entity name = Companies)</p>
+<p>property 5 (allowed values property = Property 2)</p>
+<p>property 6 (limit to allowed values = False)</p>
 <p>In this case, the domains are:</p>
-<p>Property 1 - Products</p>
-<p>Property 2 - Products</p>
-<p>Property 3 - Products</p>
-<p>Property 4 - Companies</p>
-<p>Property 5 - Products</p>
-<p>Property 6 – All possible values</p>
-<h2 id="compatible-custom-properties">Compatible Custom Properties</h2>
+<p>property 1 - Products</p>
+<p>property 2 - Products</p>
+<p>property 3 - Products</p>
+<p>property 4 - Companies</p>
+<p>property 5 - Products</p>
+<p>property 6 – all possible values</p>
+<h2 id="compatible-custom-properties">Compatible custom properties</h2>
 <p>Two custom properties are copy compatible when then and only then their domains are the same. The compatibility allows us to copy values from one custom property to another. It is still possible the copying to throw an error, but this would be caused by different reasons – additional filters set in the definition, for example</p>
 <p>An important note is that the additional filters do not change the domain of the custom property. They just reduce the range with allowed values. It is also possible future procedures or rules to be added – but they won’t change the actual domain of the custom properties either. In general, we can accept that the domain of the allowed values, from a programming point of view, could be defined as a kind of custom property type.</p>
 <p><em><strong>Example 2:</strong></em></p>
@@ -127,15 +127,15 @@
 <p>Property 4 in not compatible with none of the above.</p>
 <p>Property 6, although it could receive any possible value, is also noncompatible with other custom properties.</p>
 <h2 id="inheriting-and-hereditary-root">Inheriting and hereditary root</h2>
-<p>A custom property inherits another custom property by indicating a (hereditary) parent property in the &quot;Allowed Values Property&quot; field. The hereditary root is the grand-parent, which does not have a hereditary root on its own. The hereditary root of a custom property clearly defines its domain and is a prerequisite for automatic copying of its allowed values.</p>
+<p>A custom property inherits another custom property by indicating a (hereditary) parent property in the Allowed Values Property field. The hereditary root is the grand-parent, which does not have a hereditary root on its own. The hereditary root of a custom property clearly defines its domain and is a prerequisite for automatic copying of its allowed values.</p>
 <p>A hereditary root is defined as follows:</p>
 <ol>
-<li><p>If &quot;Allowed Values Property&quot; does not have a value, then the hereditary root is the custom property itself</p>
+<li><p>If Allowed Values Property does not have a value, then the hereditary root is the custom property itself</p>
 </li>
 <li><p>Otherwise, the hereditary root is equal to the hereditary root of the parent custom property.
 This means that:
 HereditaryRoot (Property) = HereditaryRoot(Property. AllowedValuesProperty)
-i.e. we look recursively in the relation “Allowed Values Property”.</p>
+i.e. we look recursively in the relation Allowed Values Property.</p>
 </li>
 </ol>
 <p><em><strong>Example 3:</strong></em></p>
@@ -147,28 +147,28 @@ i.e. we look recursively in the relation “Allowed Values Property”.</p>
 <p>Property 5: Property 1</p>
 <p>Property 6: Property 6</p>
 <h2 id="copying">Copying</h2>
-<p>Hereditary roots are used to determine the most appropriate &quot;partner&quot; for the automatic copying of the allowed values of the custom properties.</p>
-<p>We will look at an example in which we want to copy custom properties from a Customer to a Sales Order document:</p>
+<p>Hereditary roots are used to determine the most appropriate 'partner' for the automatic copying of the allowed values of the custom properties.</p>
+<p>We will look at an example in which we want to copy custom properties from a customer to a sales order document:</p>
 <p><em><strong>Example 4:</strong></em></p>
 <p>Let’s assume that:</p>
 <ul>
-<li>the Customer has the following custom properties:</li>
+<li>the customer has the following custom properties:</li>
 </ul>
-<p>FAVORITE-PRODUCT: (Entity Name = Products)</p>
-<p>ADVANCE-PRODUCT: (Entity Name = Products)</p>
+<p>FAVORITE-PRODUCT: (entity name = Products)</p>
+<p>ADVANCE-PRODUCT: (entity name = Products)</p>
 <ul>
-<li>In the Sales Order document type are set the following custom properties:</li>
+<li>In the sales order document type are set the following custom properties:</li>
 </ul>
 <p>FAVORITE-PRODUCT-CUSTOMER: Allowed Values Property = CUSTOMER. FAVORITE-PRODUCT</p>
 <p>SALE-ADVANCE-PRODUCT: Allowed Values Property = CUSTOMER.ADVANCE-PRODUCT</p>
 <p>In this case:</p>
 <ul>
-<li>All 4 custom properties are &quot;compatible&quot;. They could inherit values from one another.</li>
+<li>All 4 custom properties are 'compatible'. They could inherit values from one another.</li>
 <li>At the same time, only the following pairs have the same hereditary root:</li>
 </ul>
 <p>​    A) FAVORITE-PRODUCT-CUSTOMER and FAVORITE-PRODUCT</p>
 <p>​    B) SALE-ADVANCE-PRODUCT and ADVANCE-PRODUCT</p>
-<p>Copying: Accordingly, when specifying a Customer in Sales Order, only the custom properties that have the same hereditary root will be automatically copied from the Customer to the Document.</p>
+<p>Copying: Accordingly, when specifying a customer in sales order, only the custom properties that have the same hereditary root will be automatically copied from the customer to the document.</p>
 <h2 id="custom-properties-value-priorities-when-copying-to-a-document">Custom properties value priorities (when copying to a document)</h2>
 <p>The priority for automatic copying of custom properties to a document is determined according to the following priorities (from the highest to the lowest priority):</p>
 <div class="NOTE">
@@ -178,9 +178,9 @@ i.e. we look recursively in the relation “Allowed Values Property”.</p>
 <ol>
 <li><p>Inherited values from the parent document. (Priority 80)</p>
 </li>
-<li><p>The values set in the panel &quot;Copy customer properties&quot; (valid only for Sale Orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)</p>
+<li><p>The values set in the panel Copy Customer Properties (valid only for sale orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)</p>
 </li>
-<li><p>Values from custom properties with the same hereditary root in the definition of the „main contractor” of the document. In general cases, this is the party loaded in the field &quot;To Party&quot; (an exception are Purchase Invoices, where the Supplier is considered as a &quot;main contractor&quot;). (Priority 50)</p>
+<li><p>Values from custom properties with the same hereditary root in the definition of the 'main contractor' of the document. In general cases, this is the party loaded in the field To Party (an exception are purchase invoices, where the supplier is considered as a 'main contractor'). (Priority 50)</p>
 </li>
 <li><p>The default values specified in the document type. (Priority 20)</p>
 </li>
@@ -189,7 +189,7 @@ i.e. we look recursively in the relation “Allowed Values Property”.</p>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (Enterprise Company, Customer, Parent document etc.)</p>
+<p>Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (enterprise company, customer, parent document etc.)</p>
 </div>
 </article>
           </div>

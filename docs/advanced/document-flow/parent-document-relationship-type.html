@@ -80,81 +80,81 @@
 <h1 id="parent-document-relationship-type">Parent document relationship type</h1>
 
 <p>When a document has a parent document, there are constraints, which determine which states are allowed. The applicable states depend on the relation between the parent document and the child document.</p>
-<p>The relationship is contained in the Parent document relationship type attribute. Its possible values are:</p>
+<p>The relationship is contained in the parent document relationship type attribute. Its possible values are:</p>
 <ul>
-<li><strong>Sub-Task</strong> - the child document is a sub-task that must be completed to complete the parent document</li>
-<li><strong>Next Task</strong> - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.</li>
+<li><strong>Sub-task</strong> - the child document is a sub-task that must be completed to complete the parent document</li>
+<li><strong>Next task</strong> - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.</li>
 </ul>
-<p>For example, the <em>Sales Order-Store Order</em> relationship is usually of <strong>Sub</strong> task type because the store order must be completed before the sales order can.</p>
-<p>In contrast, the <em>Offer-Sales Order</em> relationship is usually of <strong>Next</strong> task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.</p>
+<p>For example, the <em>sales order-store order</em> relationship is usually of <strong>Sub</strong> task type because the store order must be completed before the sales order can.</p>
+<p>In contrast, the <em>offer-sales order</em> relationship is usually of <strong>Next</strong> task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.</p>
 <p>The allowed child document states depends on the relationship type and the parent document state.</p>
 <p>The following table summarizes the allowed states:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Relationship Type</th>
-<th style="text-align: left;">Parent State</th>
-<th style="text-align: left;">Allowed Child States</th>
+<th style="text-align: left;">Relationship type</th>
+<th style="text-align: left;">Parent state</th>
+<th style="text-align: left;">Allowed child states</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">New</td>
 <td style="text-align: left;">New</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">Planned</td>
 <td style="text-align: left;">New, Planned</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">Firm Planned</td>
 <td style="text-align: left;">New, Planned, Firm Planned</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">Released</td>
 <td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">Completed</td>
 <td style="text-align: left;">Completed, Closed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sub-Task</td>
+<td style="text-align: left;">Sub-task</td>
 <td style="text-align: left;">Closed</td>
 <td style="text-align: left;">Closed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">New</td>
 <td style="text-align: left;">New</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Planned</td>
 <td style="text-align: left;">New, Planned</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Firm Planned</td>
 <td style="text-align: left;">New, Planned, Firm Planned</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Released</td>
 <td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Completed</td>
 <td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Next Task</td>
+<td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Closed</td>
 <td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
 </tr>

@@ -82,10 +82,10 @@
 <p>The current article describes the principles and some specifics in creating a duplicate of an existing document.</p>
 <p>Different usages of the algorithm are also presented.</p>
 <h3 id="basic-principles">Basic principles</h3>
-<p>А duplicate of a given document is a new document which contains identical <strong>business</strong> data as the original one, meaning that all <em><strong>substantial</strong></em> and <em><strong>meaningful</strong></em> information is copied from the original. There is some exception for technical details, such as internal identification numbers - Primary Keys, IDs of reference links between different parts of one document, and more.</p>
+<p>А duplicate of a given document is a new document which contains identical <strong>business</strong> data as the original one, meaning that all <em><strong>substantial</strong></em> and <em><strong>meaningful</strong></em> information is copied from the original. There is some exception for technical details, such as internal identification numbers - primary keys, IDs of reference links between different parts of one document, and more.</p>
 <p>This is the common algorithm for creating a duplicate:</p>
 <ol>
-<li><p>A new document is created with the same Document type. Inside its headers, the <em><strong>substantial</strong></em> data from the original is copied.</p>
+<li><p>A new document is created with the same document type. Inside its headers, the <em><strong>substantial</strong></em> data from the original is copied.</p>
 <p>a.  the <em><strong>substantial</strong></em> data from the original document header is copied to the new document header;<br>
 b.  in each of the headers of the new document, only the* <strong>substantial</strong>* data from the original headers is copied.</p>
 </li>
@@ -98,11 +98,11 @@ b.  in each of the headers of the new document, only the* <strong>substantial</s
 </ol>
 <p>The new <strong>duplicate</strong> document must contain the same number of records (headers, rows, rows of rows) and structure as the original.</p>
 <p>Document rows are considered standard rows which most documents have, but properties and <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/index.md">additional amounts</a></strong> also play a role.</p>
-<p>If a specific document header has its own properties, they are considered document rows. The records in the ‘Document Amount Referenced Documents’ panel are considered <em>rows of rows</em> (rows of the additional amounts). The records in ‘Document Line Amounts’ are considered rows of the standard document rows.</p>
+<p>If a specific document header has its own properties, they are considered document rows. The records in the Document Amount Referenced Documents panel are considered <em>rows of rows</em> (rows of the additional amounts). The records in Document Line amounts are considered rows of the standard document rows.</p>
 <p>For now, attached files are <strong>not</strong> copied when creating a duplicate of a document.</p>
 <p><em><strong>Example 1:</strong></em></p>
-<p>There is a Purchase Invoice with a document header and a specific header, two additional amounts, and four rows. For the first row values, three properties are specified. The last row has value in only one property. The second and third row do not have properties.</p>
-<p>The properties of the Purchase Invoice rows are considered <em>rows of rows</em> within the document. When creating a duplicate of this Purchase Invoice, a new Invoice is created, which also has one document header and one specific document header, two additional amounts, and four document rows.</p>
+<p>There is a purchase invoice with a document header and a specific header, two additional amounts, and four rows. For the first row values, three properties are specified. The last row has value in only one property. The second and third row do not have properties.</p>
+<p>The properties of the purchase invoice rows are considered <em>rows of rows</em> within the document. When creating a duplicate of this purchase invoice, a new invoice is created, which also has one document header and one specific document header, two additional amounts, and four document rows.</p>
 <p>For the document rows, there are the following records:</p>
 <ul>
 <li>row 1 - 3 properties;</li>
@@ -110,17 +110,17 @@ b.  in each of the headers of the new document, only the* <strong>substantial</s
 <li>row 3 - no properties;</li>
 <li>row 4 - 1 property.</li>
 </ul>
-<p>Each record in the new document copies the <em><strong>substantial</strong></em> data from its corresponding record in the original Purchase Invoice.</p>
+<p>Each record in the new document copies the <em><strong>substantial</strong></em> data from its corresponding record in the original purchase invoice.</p>
 <p>Other examples for <em>rows of rows</em> are:</p>
 <ul>
-<li>‘Depreciation plan line fixed value’ are rows of ‘Depreciation plan lines’</li>
-<li>‘Payment slip lines’ are rows of ‘Payment slip amounts’</li>
-<li>‘Operations’ are rows of ‘Work Order Items’.</li>
-<li>The Voucher rows and their specific properties playing the role of their sub-rows.</li>
+<li>Depreciation Plan Line Fixed Value are rows of Depreciation Plan lines</li>
+<li>Payment Slip Lines are rows of Payment Slip Amounts</li>
+<li>Operations are rows of work order items</li>
+<li>The voucher rows and their specific properties playing the role of their sub-rows.</li>
 </ul>
 <p>This is the common method for copying <em><strong>substantial</strong></em> data from the original records to the duplicate records:</p>
 <ul>
-<li><p>values in fields which are Primary Key or referent ID of a link to an upper record in the current document hierarchy, are <strong>not</strong> copied; the original values are kept since they are created during the creation of the duplicate;</p>
+<li><p>values in fields which are primary key or referent ID of a link to an upper record in the current document hierarchy, are <strong>not</strong> copied; the original values are kept since they are created during the creation of the duplicate;</p>
 </li>
 <li><p>for fields processed specifically, the value from the original record is <strong>not</strong> copied and the specific logic for filling the duplicate record is followed;</p>
 </li>
@@ -131,16 +131,16 @@ b.  in each of the headers of the new document, only the* <strong>substantial</s
 <p>In the first example, when copying data from original to duplicate records, the following fields are skipped:</p>
 <ul>
 <li>in the document header: the value of the Id field as well as fields processed specifically;</li>
-<li>in the specific header of the Purchase Invoice: values of fields PurchaseInvoiceId and DocumentId;</li>
-<li>in Additional Amounts: values of fields DocumentAmountId and DocumentId;</li>
-<li>in Purchase Invoice lines: values of fields PurchaseInvoiceLineId and PurchaseInvoiceId;</li>
-<li>in Purchase Invoice lines user properties: values of fields PurchaseInvoiceId and EntityItemId.</li>
+<li>in the specific header of the purchase invoice: values of fields PurchaseInvoiceId and DocumentId;</li>
+<li>in additional amounts: values of fields DocumentAmountId and DocumentId;</li>
+<li>in purchase invoice lines: values of fields PurchaseInvoiceLineId and PurchaseInvoiceId;</li>
+<li>in purchase invoice lines user properties: values of fields PurchaseInvoiceId and EntityItemId.</li>
 </ul>
 <h2 id="cases-of-specific-data-copying">Cases of specific data copying</h2>
 <p>The current section describes specific fields processing during data copying.</p>
 <h4 id="document-headers">Document headers</h4>
-<p>If the document is a Master Document on its own, then in the MasterDocumentId field of the duplicate document, the original Id is filled. If this is not the case - MasterDocumentId is copied from the original document.</p>
-<p>In DocumentDate, the current date is filled in and DocumentVersion is set to &quot;1&quot;. EnterpriseCompanyId and EnterpriseCompanyLocationId house the Enterprise Company and Location currently used by the user.</p>
+<p>If the document is a master document on its own, then in the MasterDocumentId field of the duplicate document, the original Id is filled. If this is not the case - MasterDocumentId is copied from the original document.</p>
+<p>In DocumentDate, the current date is filled in and DocumentVersion is set to '1'. EnterpriseCompanyId and EnterpriseCompanyLocationId house the enterprise company and location currently used by the user.</p>
 <p>CreationTime is filled in with the current date and time while CreationUser is set to the current user.</p>
 <p>State field is set to New and ReadOnly and Void are set to false.</p>
 <p>If the original document is voided, DocumentNo of the duplicate record takes the number of the original document.<br>Otherwise, DocumentNo is null.</p>
@@ -154,7 +154,7 @@ b.  in each of the headers of the new document, only the* <strong>substantial</s
 <h4 id="ingredients">Ingredients</h4>
 <p>When creating duplicates of the Work order rows with ingredients, there are some specifics which are not exactly related to the fields, but to how they fit in the document hierarchy:</p>
 <ul>
-<li>if the WorkOrderItemId field in the material record is filled in, then it is considered a sub-record of the work order item record from the Work Order document, the Id of which is the value of WorkOrderItemId.<br> These records are considered rows of the work order items rows;</li>
+<li>if the WorkOrderItemId field in the material record is filled in, then it is considered a sub-record of the work order item record from the work order document, the Id of which is the value of WorkOrderItemId.<br> These records are considered rows of the work order items rows;</li>
 <li>if the WorkOrderItemId field is null, then the record is directly considered a document row.<br> Such records are rows only of the document header and not of other rows.</li>
 </ul>
 <h3 id="the-duplicate-creation-algorithm-usage">The duplicate creation algorithm usage</h3>
@@ -166,7 +166,7 @@ b.  in each of the headers of the new document, only the* <strong>substantial</s
 </li>
 <li><p>Creating correction is a function of the document form; a duplicate of the current document is created and in its header, the field AdjustingDocumentId is filled with the Id of the original document; all other scalar fields in the duplicate are reset.</p>
 </li>
-<li><p>Creating a copy of the Sales order is a generation procedure in the Sales order which produces a copy of the parent Sales order; the standard duplicate creation is used and in the header of the duplicate, the standard logic of document creation is applied.</p>
+<li><p>Creating a copy of the sales order is a generation procedure in the sales order which produces a copy of the parent sales order; the standard duplicate creation is used and in the header of the duplicate, the standard logic of document creation is applied.</p>
 </li>
 </ul>
 </article>

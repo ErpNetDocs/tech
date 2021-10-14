@@ -79,14 +79,14 @@
             <article class="content wrap" id="_content" data-uid="extensible-data-objects">
 <h1 id="extensible-data-objects-edo">Extensible Data Objects EDO</h1>
 
-<h2 id="description-and-usage">Description And Usage</h2>
+<h2 id="description-and-usage">Description and usage</h2>
 <p>The Extensible Data Objects (EDO) is a system in ERP.net, which allows attaching additional data to all entities in the system.</p>
 <p>Types of additional data, which can currently be attached:</p>
 <ul>
-<li>File Attachments.</li>
-<li><a href="track-changes.html">Track Changes</a> change tracking data.</li>
+<li>file attachments.</li>
+<li><a href="https://docs.erp.net/tech/advanced/data-objects/track-changes.html">Track changes</a> change tracking data.</li>
 </ul>
-<h2 id="how-it-works">How It Works?</h2>
+<h2 id="how-it-works">How it works?</h2>
 <p>EDO objects are stored in the <strong>Sys_Objects</strong> entity. The system works in the following way:</p>
 <ul>
 <li>An object in any entity requires attaching additional data.</li>
@@ -97,12 +97,12 @@
 <p>All additional data is related to <strong>Sys_Objects</strong> through typed referential integrity. In this way, the only untyped soft reference is the original reference in <strong>Sys_Objects</strong>, but most data is solidly related through typed referential integrity.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The <a href="../custom-attributes/index.html">Custom attributes</a> system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
-If we would have to design the Custom Properties system now, it would be implemented as &quot;additional data&quot; to the EDO system.</p>
+<p>The <a href="https://docs.erp.net/tech/advanced/custom-attributes/index.html">Custom attributes</a> system was implemented prior to the Extensible Data Objects system, so it also uses untyped soft reference.
+If we would have to design the Custom Properties system now, it would be implemented as 'additional data' to the EDO system.</p>
 </div>
-<h2 id="future-plans">Future Plans</h2>
+<h2 id="future-plans">Future plans</h2>
 <p>The EDO system is very useful for creating additional data, which can be attached to multiple entities. It is not required that the type of data should be attachable to ALL entities.</p>
-<p>The data model allows attaching data to any entity, but system business rules or <a href="../business-rules/index.md">Business Rules</a> can be used to limit the entities, which actually &quot;accept&quot; the data.</p>
+<p>The data model allows attaching data to any entity, but system business rules or <a href="https://docs.erp.net/tech/advanced/business-rules/index.md">Business rules</a> can be used to limit the entities, which actually 'accept' the data.</p>
 <p>Possible (planned) future uses:</p>
 <ul>
 <li>Comments/Replies - many objects in the system can be augmented by allowing the users to comment and reply to them.</li>
@@ -112,7 +112,7 @@ If we would have to design the Custom Properties system now, it would be impleme
 <li>Reactions - Facebook style reactions.</li>
 <li>Reviews - marketplace style reviews.</li>
 </ul>
-<h4 id="see-also-">See also: <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></h4>
+<h4 id="see-also-">See also: <a href="https://docs.erp.net/model/entities/Systems.Core.ExtensibleDataObjects.html"><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></a></h4>
 </article>
           </div>
           

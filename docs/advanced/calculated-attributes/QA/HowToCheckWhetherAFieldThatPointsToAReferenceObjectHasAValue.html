@@ -79,17 +79,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-check-whether-a-field-that-points-to-a-reference-object-has-a-value">How to check whether a field that points to a reference object has a value?</h1>
 
-<p>Often when we are creating a calculated attribute and we  want to get a value from a referent object, first we need to check if the current record has a reference to this object at all. A.k.a. we need to check if a particular Id field has a value or not.</p>
+<p>Often when we are creating a calculated attribute and we want to get a value from a referent object, first we need to check if the current record has a reference to this object at all - if a particular ID field has a value or not.</p>
 <p>The <strong>recommended</strong> way to perform this validation is to check whether there is a referent object:</p>
 <pre><code>20  EQUAL REF:AdjustedDocument CONST:NULL        
 </code></pre>
-<p>​</p>
-<p>and <strong>NOT</strong> whether the Id fields itself is empty:</p>
+<p>and <strong>NOT</strong> whether the ID fields itself is empty:</p>
 <pre><code>20  EQUAL ATTRIB:AdjustedDocumentId CONST:NULL
 </code></pre>
 <p>The <strong>first</strong> <strong>approach is recommended</strong> because:</p>
-<p>a. the second approach may lead to incorrect results - there are cases  with wrong results when this approach is used in a SELECT clause or in  multiple nested calculated attributes.</p>
-<p>b. the first approach does  not require type conversions - we are directly checking of there is a  reference object and we don't have use CAST or CONVERT operators to  match the types before the comparison.</p>
+<p>a. the second approach may lead to incorrect results - there are cases  with wrong results when this approach is used in a <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong> clause or in multiple nested calculated attributes.</p>
+<p>b. the first approach does  not require type conversions - we are directly checking of there is a  reference object and we don't have use <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a></strong> or <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html">CONVERT</a></strong> operators to match the types before the comparison.</p>
 </article>
           </div>
           

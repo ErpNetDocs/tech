@@ -79,11 +79,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="total-quantity-and-scrap-quantity-in-recipe-ingredients">Total quantity and scrap quantity in recipe ingredients</h1>
 
-<p>If the user wants to see what is the total Quantity of the material in a Recipe which would include the Used Quantity and the Scrap Rate, he would add the following Calculated Attribute:</p>
+<p>If the user wants to see the total quantity of the material in a recipe, which would include the used quantity and the scrap rate, he would add the following calculated attribute:</p>
 <pre><code>Repository Name:Production.Technologies.RecipeIngredients
 Name:TotalUsedQuantity
 </code></pre>
-<p>And the Calculated Attribute expressions are as follows:</p>
+<p>And the calculated attribute expressions are as follows:</p>
 <pre><code>10: ADD ATTRIB:UsageQuantityValue EXP:20
 20: MULTIPLY ATTRIB:UsageQuantityValue ATTRIB:ScrapRate
 </code></pre>

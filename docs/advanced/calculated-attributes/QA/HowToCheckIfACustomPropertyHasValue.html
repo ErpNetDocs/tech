@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>How to check if a custom property has value? | ERP.net Tech Docs </title>
+    <title>How to check if a custom property has values? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="How to check if a custom property has value? | ERP.net Tech Docs ">
+    <meta name="title" content="How to check if a custom property has values? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,12 +77,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="how-to-check-if-a-custom-property-has-value">How to check if a custom property has value?</h1>
+<h1 id="how-to-check-if-a-custom-property-has-values">How to check if a custom property has values?</h1>
 
-<p>When there is a need to check if a custom property of an object has value, usually we can just <a href="https://enterpriseone.atlassian.net/wiki/spaces/techdoc/pages/40145742/CAST">CAST</a> the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the Property Type of the particular custom property. Here are examples for the different custom property types which are  universal to all repositories. The custom property code which is verified is CustomProperty1.</p>
+<p>When there is a need to check if a custom property of an object has value, usually we can just <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a></strong> the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the property type of the particular custom property. Here are examples for the different custom property types which are universal to all repositories. The custom property code which is verified is CustomProperty1.</p>
 <p>Note that when a custom property is cast to string, only its value will be processed, and not its description.</p>
-<h4 id="property-type-is-text">Property Type is 'Text'</h4>
-<p>If the Property Type of the particular custom property is 'Text' use the following expressions:</p>
+<h4 id="property-type-is-text">Property type is 'Text'</h4>
+<p>If the property type of the particular custom property is 'Text', use the following expressions:</p>
 <pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
 20: EQUAL EXP:30 CONST:NULL
 30: CAST ATTRIB:@CustomProperty1 CONST:System.String
@@ -93,8 +93,8 @@
 <li>20: if EXP:30 is empty, return true, else - return false</li>
 <li>30: cast CustomProperty1 to string</li>
 </ul>
-<h4 id="property-type-is-number-or-date">Property Type is 'Number' or 'Date'</h4>
-<p>If the Property Type of the particular custom property is 'Number' or 'Date' use the following expressions:</p>
+<h4 id="property-type-is-number-or-date">Property type is 'Number' or 'Date'</h4>
+<p>If the property type of the particular custom property is 'Number' or 'Date', use the following expressions:</p>
 <pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
 20: OR EXP:30 EXP:40
 30: EQUAL EXP:50 CONST:NULL
@@ -109,8 +109,8 @@
 <li>40: if EXP:50 is an empty string, return true, else - return false</li>
 <li>50: cast CustomProperty1 to string</li>
 </ul>
-<h4 id="property-type-is-picture">Property Type is 'Picture'</h4>
-<p>If the Property Type of the particular custom property is 'Picture' use the following expressions:</p>
+<h4 id="property-type-is-picture">Property type is 'Picture'</h4>
+<p>If the property type of the particular custom property is 'Picture', use the following expressions:</p>
 <pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
 20: EQUAL EXP:30 CONST:0
 30: SUM EXP:40 CONST:1
@@ -137,7 +137,7 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>EntityItemId is the Id of the actual entity (particular document, line, product) for which the value is specified.</p>
+<p>EntityItemId is the ID of the actual entity (particular document, line, product) for which the value is specified.</p>
 </div>
 </article>
           </div>

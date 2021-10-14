@@ -80,7 +80,7 @@
 <h1 id="deterministic-generations">Deterministic generations</h1>
 
 <p>Not all generations support generating and adjusting (patching) a transitional document.
-Since the adjustment (patch) procedure supports matching the lines primarily by <strong>Line No</strong>, the generation should guarantee to always generate the same line numbers, given the same starting document.</p>
+Since the adjustment (patch) procedure supports matching the lines primarily by <strong>line No.</strong>, the generation should guarantee to always generate the same line numbers, given the same starting document.</p>
 <p>In other words, if we execute the generation several times for the same document, the same resulting line numbers will be generated. This can be guaranteed if the generation generates the sub-document(s) using data only from the source (parent) document and <strong>does not</strong> look outside it.
 Common external data, that can make a generation <strong>non-deterministic</strong> include:</p>
 <ul>
@@ -96,30 +96,30 @@ If the generation uses outside data, but still maintains generating the same lin
 <li>Generate exactly one line for each parent line.</li>
 <li>Use the line number from the parent line to set the line number of the generated line (e.g. they do not use auto-numbering).</li>
 </ol>
-<p>For example, let's have the following Sales Order:</p>
-<p>Sales Order Line 10: Product1 Qty=15</p>
-<p>Sales Order Line 20: Product2 Qty=25</p>
-<p>Let's have two generations, that use this input to create a Store Order:</p>
+<p>For example, let's have the following sales order:</p>
+<p>sales order line 10: Product1 Qty=15</p>
+<p>sales order line 20: Product2 Qty=25</p>
+<p>Let's have two generations, that use this input to create a store order:</p>
 <ol>
 <li><p><strong>Generation A</strong>
-Generates the Store Order using strictly the data from the Sales Order and generates:
-Store Order Line <strong>10</strong>: Product1 Qty=15
-Store Order Line <strong>20</strong>: Product2 Qty=25</p>
+Generates the store order using strictly the data from the sales order and generates:
+store order line <strong>10</strong>: Product1 Qty=15
+store order line <strong>20</strong>: Product2 Qty=25</p>
 <p>Generation A is <strong>deterministic</strong> and can support adjusting transitional documents.</p>
 </li>
 <li><p><strong>Generation B</strong></p>
 <p>The generation uses the current available quantities to split the lines of the sales order, based on the availability of the different lots. This generation creates:</p>
-<p>Store Order Line <strong>10</strong>: Product1 Lot11 Qty=8
-Store Order Line <strong>20</strong>: Product1 Lot12 Qty=7
-Store Order Line <strong>30</strong>: Product2 Lot21 Qty=25</p>
-<p>Generation B obviously cannot be used to adjust (patch) the generated document, because the line numbers of the generated document will vary, based on the current availability.</p>
-<p>Generation B is <strong>non-deterministic</strong></p>
 </li>
 </ol>
+<p>store order line <strong>10</strong>: Product1 Lot11 Qty=8
+store order line <strong>20</strong>: Product1 Lot12 Qty=7
+store order line <strong>30</strong>: Product2 Lot21 Qty=25</p>
+<p>Generation B obviously cannot be used to adjust (patch) the generated document, because the line numbers of the generated document will vary, based on the current availability.</p>
+<p>Generation B is <strong>non-deterministic</strong></p>
 <h2 id="adjustment-procedure">Adjustment procedure</h2>
-<p>When a transitional document is generated, if later the document needs to be adjusted (to be in-line with its parent), an <em>Adjustment Document</em> is created.
+<p>When a transitional document is generated, if later the document needs to be adjusted (to be in-line with its parent), an <em>adjustment document</em> is created.
 The adjustment document is a document, which contains <strong>changes</strong>. It is a peer document in the document tree and is usually hidden.
-The adjustment document is used to adjust (patch) the main document. The adjustment is executed upon setting the &quot;Adjustment&quot; document status.
+The adjustment document is used to adjust (patch) the main document. The adjustment is executed upon setting the adjustment document status.
 After the adjustment, the main document is updated to reflect the changes brought by the adjustment document.</p>
 <h2 id="generating-adjustment-documents">Generating adjustment documents</h2>
 <p>When a generation, which supports adjusting transitional documents, is executed, it checks the sub-documents. If it founds documents, that can be adjusted (patched), it automatically generates changes-only document(s). The generations usually determine the changes in the following way:</p>

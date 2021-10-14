@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Object Relational Mapping | ERP.net Tech Docs </title>
+    <title>Object relational mapping | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Object Relational Mapping | ERP.net Tech Docs ">
+    <meta name="title" content="Object relational mapping | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,50 +77,50 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="object-relational-mapping">Object Relational Mapping</h1>
+<h1 id="object-relational-mapping">Object relational mapping</h1>
 
 <h2 id="description">Description</h2>
-<p><strong>Entities</strong> and <strong>Entity Types</strong> are terms, frequently used throughout the documentation. <strong>Entities</strong> are information objects, which represent real-world objects. <strong>Entity Type</strong> is the collection of all objects of a given type.</p>
-<p>For example, the Customer XYZ is an entity. Customer ABC is another entity. All customers are of an entity type, called 'Customers'.</p>
+<p><strong>Entities</strong> and <strong>Entity types</strong> are terms, frequently used throughout the documentation. <strong>Entities</strong> are information objects, which represent real-world objects. <strong>Entity type</strong> is the collection of all objects of a given type.</p>
+<p>For example, the customer XYZ is an entity. Customer ABC is another entity. All customers are of an entity type, called 'Customers'.</p>
 <h2 id="definitions">Definitions</h2>
 <ul>
-<li><strong>Entity</strong> - Single object of a given Entity Type. Also called entity object or simply object. It is similar to a data row in a table.</li>
-<li><strong>Entity Type</strong> - The set of all objects of a given type. This is similar to a table.</li>
+<li><strong>Entity</strong> - Single object of a given entity type. Also called entity object or simply object. It is similar to a data row in a table.</li>
+<li><strong>Entity yupe</strong> - The set of all objects of a given type. This is similar to a table.</li>
 <li><strong>Attribute</strong> - a named value, containing information about the entity object. This is similar to a column in a table.</li>
 </ul>
 <h2 id="relationship-to-tables-and-rows">Relationship to tables and rows</h2>
 <p>This section contains more advanced information, not usually needed to operate the system. However, a deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an ERP.net database, using database tools.</p>
-<p>Generally, <strong>Entity Types</strong>, <strong>Entities</strong>, and <strong>Attributes</strong> are much like <strong>Tables</strong>, <strong>Rows</strong>, and <strong>Columns</strong>. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
+<p>Generally, <strong>entity types</strong>, <strong>entities</strong>, and <strong>attributes</strong> are much like <strong>tables</strong>, <strong>rows</strong>, and <strong>columns</strong>. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
 <p>In order to illustrate better the difference between objects and tables, let's include some real-world tables and objects:</p>
 <p>There is an entity type, called <strong>'Party'.</strong> It has a descendant (more specialized) entity type, called <strong>'Company'.</strong> So, <strong>Party</strong> is the more abstract and broad term, and <strong>Company</strong> is just one specialization. <strong>Person</strong> is another descendant of <strong>Party.</strong></p>
 <p>Let's illustrate this using pseudo-graphics:</p>
 <blockquote>
 <p>Party</p>
-<p>+---- Company</p>
-<p>+---- Person</p>
+<p>+---- company</p>
+<p>+---- person</p>
 </blockquote>
-<p>Each Party has some attributes, like &quot;Parent Party&quot; and &quot;Area&quot;. The company has &quot;VAT Number&quot; and &quot;Registration Type&quot; attributes. Each Person has &quot;First Name&quot; and &quot;Last Name&quot;.</p>
+<p>Each party has some attributes, like 'parent party' and area. The company has VAT number and Registration type attributes. Each person has &quot;First Name&quot; and &quot;Last Name&quot;.</p>
 <p>Now, if we look at the tables, they have the following schema:</p>
 <ul>
 <li>Parties
 <ul>
 <li>Party Id</li>
-<li>Parent Party Id</li>
+<li>Parent party Id</li>
 <li>Area Id</li>
 </ul>
 </li>
 <li>Companies
 <ul>
 <li>Party Id</li>
-<li>VAT Number</li>
-<li>Registration Type</li>
+<li>VAT number</li>
+<li>Registration type</li>
 </ul>
 </li>
 <li>Person
 <ul>
 <li>Party Id</li>
-<li>First Name</li>
-<li>Last Name</li>
+<li>First name</li>
+<li>Last name</li>
 </ul>
 </li>
 </ul>
@@ -128,24 +128,24 @@
 <ul>
 <li>Party
 <ul>
-<li>Parent Party</li>
+<li>Parent rty</li>
 <li>Area</li>
 </ul>
 </li>
 <li>Company
 <ul>
-<li>Parent Party</li>
+<li>Parent party</li>
 <li>Area</li>
 <li>VAT Number</li>
-<li>Registration Type</li>
+<li>Registration type</li>
 </ul>
 </li>
 <li>Person
 <ul>
-<li>Parent Party</li>
+<li>Parent party</li>
 <li>Area</li>
-<li>First Name</li>
-<li>Last Name</li>
+<li>First name</li>
+<li>Last name</li>
 </ul>
 </li>
 </ul>

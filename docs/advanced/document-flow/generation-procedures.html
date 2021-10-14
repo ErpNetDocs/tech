@@ -79,15 +79,14 @@
             <article class="content wrap" id="_content" data-uid="generation-procedures">
 <h1 id="generation-procedures">Generation procedures</h1>
 
-<p><img src="generation-procedure.SVG" alt="Generation Procedures"></p>
-<p>Generation Procedures are automated procedures, which generate @Documents from other documents.
-They are the basis for the @document-flow.
-Generation Procedures are the arrows in the document flow diagrams.</p>
+<p>Generation procedures are automated procedures which generate documents from other documents.
+They are the basis for the document flow.
+Generation procedures are the arrows in the document flow diagrams.</p>
 <h2 id="setup">Setup</h2>
-<p>In order to start generating documents, the Generation Procedures need to be configured.
-The configuration is performed in the Document Type entity, in the Document Type Routes child entity.</p>
-<p>Each Document Type Route is a configuration for a single Generation Procedure.</p>
-<h1 id="generation-procedures-lifetime-stages">Generation Procedures Lifetime Stages</h1>
+<p>In order to start generating documents, the generation procedures need to be configured.
+The configuration is performed in the document type entity, in the document type routes child entity.</p>
+<p>Each document type route is a configuration for a single generation procedure.</p>
+<h1 id="generation-procedures-lifetime-stages">Generation procedures lifetime stages</h1>
 <p>The current topic describes the stages of the lifetime of a generation procedure:</p>
 <ul>
 <li><p>NEW - in development, cannot be used</p>
@@ -102,24 +101,24 @@ The configuration is performed in the Document Type entity, in the Document Type
 </li>
 </ul>
 <h2 id="details">Details</h2>
-<p>When creating a NEW generation procedure if it replaces a generation procedure that is currently in use, the old generation is <strong>marked as obsolete</strong> and it enters the lifetime stage AGEING. In those cases, the AGEING generation procedures, which later become OBSOLETE have to be replaced with the ACTIVE procedures that have been released, because they maintain the contemporary business logic, methods of computing and have a better and faster performance. The transition does not have to be made immediately after the release of the new version but it has to be performed before the generation procedure enters the stage DEAD i.e. before its <strong>Date of Suspension</strong>.</p>
-<p>For every Generation Procedure that is marked as an Obsolete is scheduled a <strong>Date of Suspension on</strong> which date the Generation Procedure will be discontinued and could no longer be used. The date is added in the obsolete procedure's name e.g. &quot;To be deleted: 9.2021&quot;. As a result of this date, are defined three periods in which the software will inform users accordingly:</p>
+<p>When creating a NEW generation procedure if it replaces a generation procedure that is currently in use, the old generation is <strong>marked as obsolete</strong> and it enters the lifetime stage AGEING. In those cases, the AGEING generation procedures, which later become OBSOLETE have to be replaced with the ACTIVE procedures that have been released, because they maintain the contemporary business logic, methods of computing and have a better and faster performance. The transition does not have to be made immediately after the release of the new version but it has to be performed before the generation procedure enters the stage DEAD i.e. before its <strong>date of suspension</strong>.</p>
+<p>For every generation procedure that is marked as Obsolete is scheduled a <strong>date of suspension on</strong> which date the generation procedure will be discontinued and could no longer be used. The date is added in the obsolete procedure's name e.g. &quot;To be deleted: 9.2021&quot;. As a result of this date, are defined three periods in which the software will inform users accordingly:</p>
 <ol>
-<li><p>AGEING - From ([Date of Suspension] - 3 years) to (Date of Suspension] - 1 year) – a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages’ only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. The messages will stop popping up if for the particular line of the Document Type's Routes the filed &quot;Allow Obsolete Generation&quot; is check-marked.</p>
+<li><p>AGEING - From ([date of suspension] - 3 years) to (date of suspension] - 1 year) – a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages’ only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the information messages navigator. The messages will stop popping up if for the particular line of the document type's routes the field Allow Obsolete Generation is check-marked.</p>
 </li>
-<li><p>OBSOLETE - From ([Date of Suspension] - 1 year) to ([Date of Suspension])</p>
+<li><p>OBSOLETE - From ([date of suspension] - 1 year) to ([date of suspension])</p>
 </li>
 </ol>
 <ul>
-<li><p>If the filed &quot;Allow Obsolete Generation&quot; is NOT check-marked - an error in a modal window will pop up during the execution of the obsolete generation procedure. The error will inform the users that they are using an obsolete procedure and <strong>the generation of the sub-document will be interrupted</strong>. The error <strong>will stop popping</strong> up if for the particular line of the Document Type’s Routes the filed &quot;Allow Obsolete Generation&quot; is check-marked.</p>
+<li><p>If the field Allow Obsolete Generation is NOT check-marked - an error in a modal window will pop up during the execution of the obsolete generation procedure. The error will inform the users that they are using an obsolete procedure and <strong>the generation of the sub-document will be interrupted</strong>. The error <strong>will stop popping</strong> up if for the particular line of the document type’s routes the field Allow Obsolete Generation is check-marked.</p>
 </li>
-<li><p>If the filed &quot;Allow Obsolete Generation&quot; IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could <strong>no longer be avoided</strong>.</p>
+<li><p>If the field Allow Obsolete Generation IS check-marked - a pop-up (balloon) message will be displayed informing the user that it is using an obsolete generation. These messages' only purpose is to inform the users and they won’t interrupt/stop their operating with the system. The messages will be logged into the Information Messages navigator. While using this generation, the popping up of this message could <strong>no longer be avoided</strong>.</p>
 </li>
 </ul>
 <ol start="3">
-<li>DEAD - From [Date of Suspension] onwards - generation ceases to operate and enters the lifetime stage DEAD. <br> <strong>An error that can not be avoided will be thrown.</strong></li>
+<li>DEAD - From [date of suspension] onwards - generation ceases to operate and enters the lifetime stage DEAD. <br> <strong>An error that can not be avoided will be thrown.</strong></li>
 </ol>
-<p>With the release of the new main version after the Date of Suspension, the obsolete generation procedure is <strong>to be deleted</strong> and it will no longer appear in the drop-down lists.</p>
+<p>With the release of the new main version after the date of suspension, the obsolete generation procedure is <strong>to be deleted</strong> and it will no longer appear in the drop-down lists.</p>
 </article>
           </div>
           

@@ -88,8 +88,8 @@ Documents in ERP.net usually require complete fulfillment before their state can
 <p>A document is fulfilled with another document.
 For example:</p>
 <ul>
-<li><a class="xref" href="https://erpnetdocs.github.io/model/entities/Logistics.Shipment.ShipmentOrders.html">Shipment Order</a> is fulfilled by creating a <a class="xref" href="https://erpnetdocs.github.io/model/entities/Logistics.Shipment.Shipments.html">Shipment</a>.</li>
-<li><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.InvoiceOrders.html">Invoice Order</a> is fulfilled by creating an <a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.Invoices.html">Invoice</a>.</li>
+<li><a class="xref" href="https://erpnetdocs.github.io/model/entities/Logistics.Shipment.ShipmentOrders.html">Shipment order</a> is fulfilled by creating a <a class="xref" href="https://erpnetdocs.github.io/model/entities/Logistics.Shipment.Shipments.html">shipment</a>.</li>
+<li><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.InvoiceOrders.html">Invoice order</a> is fulfilled by creating an <a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.Invoices.html">invoice</a>.</li>
 <li>...and so on.</li>
 </ul>
 <p>As can be seen in the example, different document entity types usually come (at least) in pairs - orders and execution pairs of entity types.
@@ -103,7 +103,7 @@ Actually, more and more entity types come in triples - requisition, order and tr
 Why there are differences between the parent and the sub-document?</p>
 <p>Differences can arise for many reasons:</p>
 <ul>
-<li>Partial execution. For example, we shipped goods partially. In this case, the Shipment does not completely fulfill the Shipment Order.</li>
+<li>Partial execution. For example, we shipped goods partially. In this case, the shipment does not completely fulfill the shipment order.</li>
 <li>Partial payment by customer.</li>
 <li>Adjustments to the parent document, because of processing errors.</li>
 <li>Adjustments to the parent document, by customer request.</li>
@@ -113,9 +113,9 @@ Why there are differences between the parent and the sub-document?</p>
 <p>All these cases require fulfillment before the document state can be set to Completed.</p>
 <h2 id="fulfillment-tracking">Fulfillment tracking</h2>
 <p>Fulfillment tracking is the process of calculating what remains to be fulfilled and how it is divided in the terms of detail lines.</p>
-<p>For example, a Sales Order from a customer requests shipment of 10 Oranges.
-We shipped 8 Oranges and 2 Tangerines.
-Did we fulfill the Sales Order?</p>
+<p>For example, a sales order from a customer requests shipment of 10 oranges.
+We shipped 8 oranges and 2 tangerines.
+Did we fulfill the sales order?</p>
 <p>The system tracks the fulfillment of a document, using several tracking techniques:</p>
 <ul>
 <li>Natural matching</li>
@@ -132,33 +132,33 @@ This is in contrast with artificial attributes, which are required by the inner 
 <p>In the example above, natural matching will compare the values of:</p>
 <ul>
 <li>Product</li>
-<li>Product Variant</li>
+<li>Product variant</li>
 <li>Lot</li>
-<li>Serial Number</li>
+<li>Serial number</li>
 </ul>
 <p>So, let’s review the previous example in the light of natural matching.</p>
-<p>Sales Order:</p>
+<p>sales order:</p>
 <ul>
-<li>Line 1: Oranges, 10 kg</li>
+<li>line 1: oranges, 10 kg</li>
 </ul>
-<p>Shipment:</p>
+<p>shipment:</p>
 <ul>
-<li>Line 1: Oranges, 8 kg</li>
-<li>Line 2: Tangerines, 2 kg</li>
+<li>line 1: oranges, 8 kg</li>
+<li>line 2: tangerines, 2 kg</li>
 </ul>
-<p>Natural matching will not qualify the shipment of Tangerines as execution of the sale of Oranges, because it is a different Product.
-Even if the customer agrees to accept the Tangerines, we cannot represent this in the system.</p>
+<p>Natural matching will not qualify the shipment of Tangerines as execution of the sale of oranges, because it is a different product.
+Even if the customer agrees to accept the tangerines, we cannot represent this in the system.</p>
 <p>Another example.
 The customer might order specific lot of the product, but they are ready to accept another lot:</p>
 <ul>
-<li>Sales Order: 10 Oranges, lot 202</li>
-<li>Shipment: 10 Oranges, lot 203</li>
+<li>sales Order: 10 oranges, lot 202</li>
+<li>shipment: 10 oranges, lot 203</li>
 </ul>
 <p>This shipment satisfies the customer in the real world.
 However, using natural tracking, this will be considered a severe difference.
 The system will propose reversal of the shipment of lot 203 and shipment again of lot 202.
 Obviously, this is problematic and might confuse the users.</p>
-<p>Even more problematic, and more real-world example if two or more lines of the Sales Order contain oranges.
+<p>Even more problematic, and more real-world example if two or more lines of the sales order contain oranges.
 In this case, natural matching simply does not work well.</p>
 <p>The benefit of natural matching is that it does not require special (artificial) tracking attributes or tables.
 However, it does not work well for some real-world scenarios.</p>
@@ -167,51 +167,51 @@ However, it does not work well for some real-world scenarios.</p>
 <p>Parent line is widely used algorithm in ERP.net for keeping track of the execution.</p>
 <p>The idea is simple: The sub-document keeps reference to the parent line, which is being executed.</p>
 <p>For example:</p>
-<p>Sales Order:</p>
+<p>Sales order:</p>
 <ul>
-<li>Line 1: Oranges, 10 kg</li>
-<li>Line 2: Apples, 2 pcs</li>
+<li>line 1: oranges, 10 kg</li>
+<li>line 2: apples, 2 pcs</li>
 </ul>
-<p>Shipment:</p>
+<p>shipment:</p>
 <ul>
-<li>Line 1: Oranges, 8 kg, Parent Line = 1</li>
-<li>Line 2: Tangerines, 2 kg, Parent Line = 1</li>
-<li>Line 3: Pears, 2 pcs, Parent Line = 2</li>
+<li>line 1: oranges, 8 kg, parent line = 1</li>
+<li>line 2: tangerines, 2 kg, parent line = 1</li>
+<li>line 3: pears, 2 pcs, parent line = 2</li>
 </ul>
-<p>Here, we can see that, although we sent Tangerines, they replace the Oranges.
+<p>Here, we can see that, although we sent tangerines, they replace the oranges.
 And we sent exactly the missing quantity.
-And we sent Pears, instead of Apples.</p>
+And we sent pears, instead of apples.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The measurement unit of the sub-document line should be the same as the parent line.</p>
 </div>
 <p>Of course, all this has to be arranged with the customer.
 The important thing is that, once arranged with the customer, we have to represent in it in the system.
-Parent line system allows that.</p>
+parent line system allows that.</p>
 <h3 id="fulfillment-table">Fulfillment table</h3>
 <p>As good as parent line algorithm is, it cannot be used in all places.
 There are cases, where it might simply be impossible or very hard to match all sub-document lines using only parent line.</p>
 <p>For example, in the WMS, suppose we have the following:</p>
-<p>Warehouse Requisition:</p>
+<p>Warehouse requisition:</p>
 <ul>
-<li>Line 1: Despatch Oranges, 10 pcs</li>
-<li>Line 2: Despatch Apples, 2 pcs</li>
+<li>line 1: despatch oranges, 10 pcs</li>
+<li>line 2: despatch apples, 2 pcs</li>
 </ul>
 <p>In the optimization phase, the WMS has created the following plan:</p>
-<p>Warehouse Order:</p>
+<p>Warehouse order:</p>
 <ul>
-<li>Line 1: Pick Oranges, 30 pcs (because there are also other orders and all will be sorted out on the packing table)</li>
-<li>Line 2: Pick Apples, 2 pcs</li>
-<li>Line 3: Move everything to packing table 3.</li>
+<li>line 1: pick oranges, 30 pcs (because there are also other orders and all will be sorted out on the packing table)</li>
+<li>line 2: pick apples, 2 pcs</li>
+<li>line 3: move everything to packing table 3.</li>
 </ul>
 <p>Obviously, we have a problem here establishing a direct relationship with the parent document.</p>
 <p>The solution is to use Fulfillment table.
 The fulfillment table is like a notebook, in which we record how much of the quantity has already been created for the sub-document.
 This allows the system to create complicated sub-documents, without tracking the direct relationship of the created lines with the parent lines.</p>
-<p>In this example, after creating the Warehouse Order, the fulfillment table will contain:</p>
+<p>In this example, after creating the warehouse order, the fulfillment table will contain:</p>
 <ul>
-<li>Warehouse Requisition XXX, Execution of Line 1: Qty:10</li>
-<li>Warehouse Requisition XXX, Execution of Line 2: Qty:2</li>
+<li>Warehouse requisition XXX, execution of line 1: Qty:10</li>
+<li>Warehouse requisition XXX, execution of line 2: Qty:2</li>
 </ul>
 <p>The fulfillment table simply contains the executed quantities, without any regard of how they are executed.
 It does not contain any reference to the sub-document(s).

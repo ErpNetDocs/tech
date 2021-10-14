@@ -29,61 +29,61 @@ references:
   name: WARNING
   href: advanced/user-business-rules/action-types/warning.html
 - uid: cao-ADD
-  name: ADD - Calculated Attribute Operator
+  name: ADD
   href: advanced/calculated-attributes/operators/add.html
 - uid: cao-ADDDAYS
-  name: ADDDAYS - Calculated Attribute Operator
+  name: ADDDAYS
   href: advanced/calculated-attributes/operators/adddays.html
 - uid: cao-AND
-  name: AND - Calculated Attribute Operator
+  name: AND
   href: advanced/calculated-attributes/operators/and.html
 - uid: cao-CAST
-  name: CAST - Calculated Attribute Operator
+  name: CAST
   href: advanced/calculated-attributes/operators/cast.html
 - uid: cao-CEILING
-  name: CEILING - Calculated Attribute Operator
+  name: CEILING
   href: advanced/calculated-attributes/operators/ceiling.html
 - uid: cao-CONCAT
-  name: CONCAT - Calculated Attribute Operator
+  name: CONCAT
   href: advanced/calculated-attributes/operators/concat.html
 - uid: cao-CONVERT
-  name: CONVERT - Calculated Attribute Operator
+  name: CONVERT
   href: advanced/calculated-attributes/operators/convert.html
 - uid: cao-COUNT
-  name: COUNT - Calculated Attribute Operator
+  name: COUNT
   href: advanced/calculated-attributes/operators/count.html
 - uid: cao-DIVIDE
-  name: DIVIDE - Calculated Attribute Operator
+  name: DIVIDE
   href: advanced/calculated-attributes/operators/divide.html
 - uid: cao-EQUAL
-  name: EQUAL - Calculated Attribute Operator
+  name: EQUAL
   href: advanced/calculated-attributes/operators/equal.html
 - uid: cao-FILTER
-  name: FILTER - Calculated Attribute Operator
+  name: FILTER
   href: advanced/calculated-attributes/operators/filter.html
 - uid: cao-FIRST
-  name: FIRST - Calculated Attribute Operator
+  name: FIRST
   href: advanced/calculated-attributes/operators/first.html
 - uid: cao-FLOOR
-  name: FLOOR - Calculated Attribute Operator
+  name: FLOOR
   href: advanced/calculated-attributes/operators/floor.html
 - uid: cao-FORMATSTRING
-  name: FORMATSTRING - Calculated Attribute Operator
+  name: FORMATSTRING
   href: advanced/calculated-attributes/operators/formatstring.html
 - uid: cao-GETOBJVALUE
-  name: GETOBJVALUE - Calculated Attribute Operator
+  name: GETOBJVALUE
   href: advanced/calculated-attributes/operators/getobjvalue.html
 - uid: cao-GETVALUE
-  name: GETVALUE - Calculated Attribute Operator
+  name: GETVALUE
   href: advanced/calculated-attributes/operators/getvalue.html
 - uid: cao-GT
-  name: GT - Calculated Attribute Operator
+  name: GT
   href: advanced/calculated-attributes/operators/gt.html
 - uid: cao-GTE
-  name: GTE - Calculated Attribute Operator
+  name: GTE
   href: advanced/calculated-attributes/operators/gte.html
 - uid: cao-IIF
-  name: IIF - Calculated Attribute Operator
+  name: IIF
   href: advanced/calculated-attributes/operators/iif.html
 - uid: cao-IN
   name: IN - Calculated Attribute Operator
@@ -167,7 +167,7 @@ references:
   name: States
   href: concepts/documents/states.html
 - uid: domain-with-property-allowed-values
-  name: Domain with Property Allowed Values
+  name: Domain with property allowed values
   href: advanced/custom-attributes/domain-with-property-allowed-values.html
 - uid: erpnet
   name: erpnet
@@ -194,7 +194,7 @@ references:
   name: J30903 Deletе Old Document Print Images
   href: advanced/jobs/J30903.html
 - uid: master-detail
-  name: Master / Detail Attributes
+  name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
 - uid: name
   name: name

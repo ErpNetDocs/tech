@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Master / Detail Attributes | ERP.net Tech Docs </title>
+    <title>Master / Detail attributes | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Master / Detail Attributes | ERP.net Tech Docs ">
+    <meta name="title" content="Master / Detail attributes | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,19 +77,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="master-detail">
-<h1 id="master--detail-attributes">Master / Detail Attributes</h1>
+<h1 id="master--detail-attributes">Master / Detail attributes</h1>
 
-<p>When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the &quot;Store&quot; field in the Sales Order header and &quot;Line Store&quot; in its Sales Order Lines.</p>
+<p>When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the Store field in the sales order header and line store in its sales order lines.</p>
 <p>The common principle is that if the field in the document header has value, we have to ensure that the corresponding field all document lines contains the same value. On the other hand, if the different lines contain different values - the document's header field must be empty.</p>
 <p>This principle is very important to avoid misleading the users. Otherwise, if the Store field in the document header could contain a value even if the document lines have different store values - the user may look only in the header and be misled that this store applies to all of its lines as well, which may not be true in all cases.</p>
-<h2 id="master--detail-attributes-concepts-and-rules">Master / Detail Attributes Concepts and Rules</h2>
+<h2 id="master--detail-attributes-concepts-and-rules">Master / Detail attributes concepts and rules</h2>
 <p>In order to make sure that the main principle described above is followed, is created a set of requirements and rules that are applied for each set of Master/Detail fields.</p>
-<p><em>The example for &quot;Store&quot; fields in document header/lines is used in the whole description for easy understanding.</em></p>
+<p><em>The example for Store fields in document header/lines is used in the whole description for easy understanding.</em></p>
 <h3 id="concepts">Concepts</h3>
 <ol>
 <li><p>In order to allow that different lines may contain different stores and at the same time to follow the main principle - we have to make sure that the Store field in the document header may contain empty (NULL) values. Such value is set only when the document lines have different values. Opposite of this, the value in the field in the document lines is required/mandatory [Required = true] and must always contain a value.</p>
 </li>
-<li><p>It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a Store Orders from Sales Orders - the Store field that is taken into account is the one in the Sales Order lines. We have to create separate Store Orders for each Line Store in order to execute the Sales Order correctly because in the Store Orders there is only one Store field and it is in the header.</p>
+<li><p>It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a store orders from sales orders - the store field that is taken into account is the one in the sales order lines. We have to create separate store orders for each line store in order to execute the sales order correctly because in the store orders there is only one store field and it is in the header.</p>
 </li>
 <li><p>If the document does not contain any lines, then there is no limitation for the document header value - it doesn't matter if it is empty (NULL) and contains a value (not-NULL).</p>
 </li>

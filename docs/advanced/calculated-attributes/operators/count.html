@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>COUNT - Calculated Attribute Operator | ERP.net Tech Docs </title>
+    <title>COUNT | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="COUNT - Calculated Attribute Operator | ERP.net Tech Docs ">
+    <meta name="title" content="COUNT | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="cao-COUNT">
-<h1 id="count---calculated-attribute-operator">COUNT - Calculated Attribute Operator</h1>
+<h1 id="count">COUNT</h1>
 
 <table>
 <thead>
@@ -126,14 +126,14 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>The following example returns the number of lines in the current document (SalesOrder):</p>
+<p>The following example returns the number of lines in the current document (sales order):</p>
 <pre><code>10: COUNT CHILD:Lines
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
 </div>
-<p>If we want to expand the example and if we want to get the number of  lines with quantity greater than or equal to 10, the following attribute would do the job:</p>
+<p>If we want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:</p>
 <pre><code>10: COUNT EXP:20
 20: FILTER CHILD:Lines EXP:30
 30: GTE ATTRIB:QuantityValue CONST:10.00

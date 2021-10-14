@@ -80,18 +80,18 @@
 <h1 id="document-generation">Document generation</h1>
 
 <h2 id="description">Description</h2>
-<p>Document generation is a key part of the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/flow.md">document flow</a> in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.</p>
-<p>Generation is a special case of direct <strong>Order Fulfillment</strong>, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.</p>
+<p>Document generation is a key part of the <strong><a href="https://docs.erp.net/tech/advanced/document-flow/index.html">document flow</a></strong> in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.</p>
+<p>Generation is a special case of direct <strong><a href="https://docs.erp.net/tech/advanced/document-flow/fulfillment.html">order fulfillment</a></strong>, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.</p>
 <h2 id="automating-the-document-generation">Automating the document generation</h2>
 <p>Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.</p>
-<p>The definition of each <strong>document type</strong> includes a special sub-entity type called <em><strong>Workflow Routes</strong></em>. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many <em><strong>Workflow Routes</strong></em>. They either start automatically or require a user initiation.</p>
-<p>Together, the routes for the different document types form a general network graph called <strong>document flow</strong>.</p>
+<p>The definition of each <strong>document type</strong> includes a special sub-entity type called <strong><a href="https://docs.erp.net/model/entities/Systems.Workflow.Routes.html">workflow routes</a></strong>. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many <strong><a href="https://docs.erp.net/model/entities/Systems.Workflow.Routes.html">workflow routes</a></strong>. They either start automatically or require a user initiation.</p>
+<p>Together, the routes for the different document types form a general network graph called <strong><a href="https://docs.erp.net/tech/advanced/document-flow/index.html">document flow</a></strong>.</p>
 <h2 id="properties-of-a-document-generation-route">Properties of a document generation route</h2>
 <p>Each document generation route contains the following properties:</p>
 <ul>
 <li><strong>Generation events</strong></li>
 </ul>
-<p>Events that trigger the document route. The most often used event is usually the one changing the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">document state</a>.</p>
+<p>Events that trigger the document route. The most often used event is usually the one changing the <strong>document state</strong>.</p>
 <ul>
 <li><strong>State</strong></li>
 </ul>
@@ -136,7 +136,7 @@ Name of the generation procedure.</p>
 Specifies whether the generation procedure is still active in the latest version of the system.</br> Old generations are no-longer supported and are marked as ‘Obsolete’.</p>
 </li>
 <li><p><strong>Source document entity type</strong><br>
-Specifies the entity type of the source document, which defines the general type of the document, for example <em><strong>Sales Order</strong></em>. The generation procedure can be used only for documents with specified entity type. There can be many user-defined document types within a single entity type.</p>
+Specifies the entity type of the source document, which defines the general type of the document, for example <em><strong>sales order</strong></em>. The generation procedure can be used only for documents with specified entity type. There can be many user-defined document types within a single entity type.</p>
 </li>
 <li><p><strong>Target document entity type</strong><br>
 The entity type of the target document. The generation procedure can generate only documents with a specified entity type. Each document type can specify different user-defined document types only within this specified type.</p>
