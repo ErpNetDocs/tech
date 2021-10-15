@@ -6,25 +6,27 @@ uid: domain-with-property-allowed-values
 
 Domain is the range of the allowed values of the particular custom property. It is determined in one of the following ways - sorted by priority:
 
-1. If Limit To Allowed Values does NOT have a check mark, then any value is valid and the domain is a range of all possible values.
+1. If _Limit To Allowed Values_ does NOT have a check mark, then any value is valid and the domain is a range of all possible values.
 
-2. If the Allowed Values Entity Name has a value, then the domain is the set of all records of the specified data type.
+2. If the _Allowed Values Entity Name_ has a value, then the domain is the set of all records of the specified data type.
 
    
 
 > [!Note]
->This field should have a value ONLY if Limit To Allowed Values has a check mark and Allowed Values Property does not have a value.
+> 
+> This field should have a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Property_ does not have a value.
 
-3. If the field Allowed Values Property has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.
+3. If the field _Allowed Values Property_ has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.
 
    CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
 
    
 
 > [!Note]
->This field should have a value ONLY if Limit To Allowed Values has a check mark and Allowed Values Entity Name does NOT have a value.
+> 
+> This field should have a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Entity Name_ does NOT have a value.
 
-4. (Default, Lowest Priority) The domain is the range of the"Property Allowed Values listed in the Gen_Property_Allowed_Values sub-table.
+4. (Default, Lowest Priority) The domain is the range of the _Property Allowed Values_ listed in the Gen_Property_Allowed_Values sub-table.
 
    
 
@@ -43,8 +45,6 @@ property 4 (entity name = Companies)
 property 5 (allowed values property = Property 2)
 
 property 6 (limit to allowed values = False)
-
-
 
 In this case, the domains are:
 
@@ -80,11 +80,11 @@ Property 6, although it could receive any possible value, is also noncompatible 
 
 ## Inheriting and hereditary root
 
- A custom property inherits another custom property by indicating a (hereditary) parent property in the Allowed Values Property field. The hereditary root is the grand-parent, which does not have a hereditary root on its own. The hereditary root of a custom property clearly defines its domain and is a prerequisite for automatic copying of its allowed values.
+ A custom property inherits another custom property by indicating a (hereditary) parent property in the _Allowed Values Property_ field. The hereditary root is the grand-parent, which does not have a hereditary root on its own. The hereditary root of a custom property clearly defines its domain and is a prerequisite for automatic copying of its allowed values.
 
 A hereditary root is defined as follows:
 
-1. If Allowed Values Property does not have a value, then the hereditary root is the custom property itself
+1. If _Allowed Values Property_ does not have a value, then the hereditary root is the custom property itself
 
 2. Otherwise, the hereditary root is equal to the hereditary root of the parent custom property.
    This means that:
@@ -148,22 +148,20 @@ Copying: Accordingly, when specifying a customer in sales order, only the custom
 
 The priority for automatic copying of custom properties to a document is determined according to the following priorities (from the highest to the lowest priority):
 
-
-
 >[!Note]
+>
 >The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities
 
 1. Inherited values from the parent document. (Priority 80)
 
 1. The values set in the panel Copy Customer Properties (valid only for sale orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)
 
-1. Values from custom properties with the same hereditary root in the definition of the 'main contractor' of the document. In general cases, this is the party loaded in the field To Party (an exception are purchase invoices, where the supplier is considered as a 'main contractor'). (Priority 50)
+1. Values from custom properties with the same hereditary root in the definition of the 'main contractor' of the document. In general cases, this is the party loaded in the field _To Party_ (an exception are purchase invoices, where the supplier is considered as a 'main contractor'). (Priority 50)
 
 1. The default values specified in the document type. (Priority 20)
 
 1. If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)
 
-
-
->[!Note]
->Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (enterprise company, customer, parent document etc.)
+> [!Note]
+>
+> Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (enterprise company, customer, parent document etc.)
