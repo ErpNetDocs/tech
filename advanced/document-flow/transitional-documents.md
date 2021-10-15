@@ -30,8 +30,8 @@ So the sub-documents are now seven. When the user release more invoices, more pa
 
 If an invoice is voided - even more payment orders will be created so the collective state of the sub-documents is reached when the voided invoice is no longer reported.
 
-So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see [Adjustment documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md)). 
-This is performed only if the existing documents are Released. If they have document state higher than Released (see [Document states](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md)), new documents are created for the discrepancies that occur.
+So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see [Adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html). 
+This is performed only if the existing documents are Released. If they have document state higher than Released (see [Document states](https://docs.erp.net/tech/concepts/documents/states.html), new documents are created for the discrepancies that occur.
 
 In such а case, we call these sub-documents **transitional**.
 If a document is transitional is a property of the document type definition. Activating this property is available only when all active procedures which create the current document allow transitional document and are set to create а Released document. 
