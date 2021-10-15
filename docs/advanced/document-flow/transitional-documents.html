@@ -93,13 +93,13 @@ They are used just to keep the document flow contiguous, but are hidden to keep 
 <li>To generate documents of this type, use only generations that support transitional document generation.</li>
 </ol>
 <h3 id="example-1">Example 1:</h3>
-<p>When creating payment orders by sales order payment plan (see the 'Sales order payment plan' article) there are preconditions for great multiplication of the number of sub-documents. For example, if the sales order has a payment plan with three payments - <strong>40 EUR</strong>, <strong>50 EUR</strong>, <strong>10 EUR</strong> - then initially three payment orders will be created (with no invoice data) for each scheduled playment.
+<p>When creating payment orders by sales order payment plan (see the <strong>Sales order payment plan</strong> article) there are preconditions for great multiplication of the number of sub-documents. For example, if the sales order has a payment plan with three payments - <strong>40 EUR</strong>, <strong>50 EUR</strong>, <strong>10 EUR</strong> - then initially three payment orders will be created (with no invoice data) for each scheduled playment.
 When the amount of 60 EUR from the sales order is invoiced, two additional payment orders are created - one for <strong>-40 EUR</strong> and one for <strong>-20 EUR</strong> for planned payments №<strong>1</strong> and №<strong>2</strong>, which have no invoice data, and two more payment orders for <strong>40 EUR</strong> and <strong>20 EUR</strong> for planned payments №<strong>1</strong> и №<strong>2</strong> with invoice data.
 So the sub-documents are now seven. When the user release more invoices, more payment orders will be created.</p>
 <p>If an invoice is voided - even more payment orders will be created so the collective state of the sub-documents is reached when the voided invoice is no longer reported.</p>
-<p>So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md">Adjustment documents</a>).
-This is performed only if the existing documents are Released. If they have document state higher than Released (see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md">Document states</a>), new documents are created for the discrepancies that occur.</p>
-<p>In such а case, we call these sub-documents <em>transitional</em>.
+<p>So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see <a href="https://docs.erp.net/tech/concepts/documents/adjustments.html">Adjustment documents</a>.
+This is performed only if the existing documents are Released. If they have document state higher than Released (see <a href="https://docs.erp.net/tech/concepts/documents/states.html">Document states</a>, new documents are created for the discrepancies that occur.</p>
+<p>In such а case, we call these sub-documents <strong>transitional</strong>.
 If a document is transitional is a property of the document type definition. Activating this property is available only when all active procedures which create the current document allow transitional document and are set to create а Released document.
 Thus, at the first sub-document creation, the sub-documents will have Released document state and the next document changes can be applied as corrections.</p>
 <p>Thereby, not only the sub-documents number is smaller, and the user does not have to process them (no need to change their state, to edit/correct them so they can reach the values in the parent document, to void additional documents and etc.).
@@ -131,7 +131,7 @@ So for the additional four payment orders from Example 1, created to cover the d
 <li>payment №<strong>2</strong>, <strong>20 EUR</strong>, invoice #1;</li>
 <li>payment №<strong>3</strong>, <strong>10 EUR</strong>, no invoice data;</li>
 </ul>
-<p>If after that invoice #1 is edited to <strong>35 EUR</strong>  (or voided and created again), than the Invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:</p>
+<p>If after that invoice #1 is edited to <strong>35 EUR</strong>  (or voided and created again), then the invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:</p>
 <ul>
 <li>payment №<strong>1</strong>, <strong>5 EUR</strong>, no invoice data;</li>
 <li>payment №<strong>1</strong>, <strong>35 EUR</strong>, invoice #1;</li>

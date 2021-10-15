@@ -86,82 +86,82 @@ references:
   name: IIF
   href: advanced/calculated-attributes/operators/iif.html
 - uid: cao-IN
-  name: IN - Calculated Attribute Operator
+  name: IN
   href: advanced/calculated-attributes/operators/in.html
 - uid: cao-INCNUM
-  name: INCNUM - Calculated Attribute Operator
+  name: INCNUM
   href: advanced/calculated-attributes/operators/incnum.html
 - uid: cao-LEFT
-  name: LEFT - Calculated Attribute Operator
+  name: LEFT
   href: advanced/calculated-attributes/operators/left.html
 - uid: cao-LEN
-  name: LEN - Calculated Attribute Operator
+  name: LEN
   href: advanced/calculated-attributes/operators/len.html
 - uid: cao-LIKE
-  name: LIKE - Calculated Attribute Operator
+  name: LIKE
   href: advanced/calculated-attributes/operators/like.html
 - uid: cao-LIST
-  name: LIST - Calculated Attribute Operator
+  name: LIST
   href: advanced/calculated-attributes/operators/list.html
 - uid: cao-LT
-  name: LT - Calculated Attribute Operator
+  name: LT
   href: advanced/calculated-attributes/operators/lt.html
 - uid: cao-LTE
-  name: LTE - Calculated Attribute Operator
+  name: LTE
   href: advanced/calculated-attributes/operators/lte.html
 - uid: cao-MULTIPLY
-  name: MULTIPLY - Calculated Attribute Operator
+  name: MULTIPLY
   href: advanced/calculated-attributes/operators/multiply.html
 - uid: cao-NOT
-  name: NOT - Calculated Attribute Operator
+  name: NOT
   href: advanced/calculated-attributes/operators/not.html
 - uid: cao-OR
-  name: OR - Calculated Attribute Operator
+  name: OR
   href: advanced/calculated-attributes/operators/or.html
 - uid: cao-ORDERBY
-  name: ORDERBY - Calculated Attribute Operator
+  name: ORDERBY
   href: advanced/calculated-attributes/operators/orderby.html
 - uid: cao-POS
-  name: POS - Calculated Attribute Operator
+  name: POS
   href: advanced/calculated-attributes/operators/pos.html
 - uid: cao-REGEX
-  name: REGEX - Calculated Attribute Operator
+  name: REGEX
   href: advanced/calculated-attributes/operators/regex.html
 - uid: cao-REPLACE
-  name: REPLACE - Calculated Attribute Operator
+  name: REPLACE
   href: advanced/calculated-attributes/operators/replace.html
 - uid: cao-RIGHT
-  name: RIGHT - Calculated Attribute Operator
+  name: RIGHT
   href: advanced/calculated-attributes/operators/right.html
 - uid: cao-ROUND
-  name: ROUND - Calculated Attribute Operator
+  name: ROUND
   href: advanced/calculated-attributes/operators/round.html
 - uid: cao-SELECT
-  name: SELECT - Calculated Attribute Operator
+  name: SELECT
   href: advanced/calculated-attributes/operators/select.html
 - uid: cao-SORT
-  name: SORT - Calculated Attribute Operator
+  name: SORT
   href: advanced/calculated-attributes/operators/sort.html
 - uid: cao-SUBSTRING
-  name: SUBSTRING - Calculated Attribute Operator
+  name: SUBSTRING
   href: advanced/calculated-attributes/operators/substring.html
 - uid: cao-SUM
-  name: SUM - Calculated Attribute Operator
+  name: SUM
   href: advanced/calculated-attributes/operators/sum.html
 - uid: cao-TODAY
-  name: TODAY - Calculated Attribute Operator
+  name: TODAY
   href: advanced/calculated-attributes/operators/today.html
 - uid: cao-TOLOWER
-  name: TOLOWER - Calculated Attribute Operator
+  name: TOLOWER
   href: advanced/calculated-attributes/operators/tolower.html
 - uid: cao-TOP
-  name: TOP - Calculated Attribute Operator
+  name: TOP
   href: advanced/calculated-attributes/operators/top.html
 - uid: cao-TOUPPER
-  name: TOUPPER - Calculated Attribute Operator
+  name: TOUPPER
   href: advanced/calculated-attributes/operators/toupper.html
 - uid: cao-WHERE
-  name: WHERE - Calculated Attribute Operator
+  name: WHERE
   href: advanced/calculated-attributes/operators/where.html
 - uid: Document-States
   name: States
@@ -182,7 +182,7 @@ references:
   name: Generation procedures
   href: advanced/document-flow/generation-procedures.html
 - uid: jobs-J30632
-  name: J30632 Deletе Old Notifications
+  name: J30632 Deletе old notifications
   href: advanced/jobs/J30632.html
 - uid: jobs-J30724
   name: J30724 Run Scheduled Events
