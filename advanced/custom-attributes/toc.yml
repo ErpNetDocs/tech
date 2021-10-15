@@ -1,5 +1,4 @@
 - name: Overview
   href: index.md
-- name: Domain with Property Allowed Values
+- name: Domain with property allowed values
   href: domain-with-property-allowed-values.md
-  
