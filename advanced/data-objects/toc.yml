@@ -1,8 +1,8 @@
 - name: Overview
   href: index.md
-- name: Extensible data objects
+- name: Extensible Data Objects
   href: extensible-data-objects.md
-- name: Track changes
+- name: Track Changes
   href: track-changes.md
 - name: Default tracking levels
   href: default-tracking-levels.md
