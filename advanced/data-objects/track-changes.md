@@ -47,7 +47,7 @@ The tracking data includes:
 - **Creation time (UTC)** - the time of initial creation in Universal Coordinated Time (UTC) timezone.
 - **Last update user** - the user who performed the last update OR deleted the object.
 - **Last update time (UTC)** - the time of the last update.
-- **Is deleted** - specifies whether the tracked object is deleted. After the tracked object is deleted, the [Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html) information stays in the DB for some time, but can be purged by cleanup processes. Please note, that when the tracked object is deleted, the deletion user & time are stored in the *Last update user / Time*.
+- **Is deleted** - specifies whether the tracked object is deleted. After the tracked object is deleted, the [Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html) information stays in the DB for some time, but can be purged by cleanup processes. Please note, that when the tracked object is deleted, the deletion user & time are stored in the Last update user / Time.
 
 ### Level 2 - track object changes
 
