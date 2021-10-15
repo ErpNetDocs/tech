@@ -2,9 +2,9 @@
 uid: track-changes
 ---
 
-# Track changes
+# Track Changes
 
-Track changes is a system in @@name, which can be used to track the changes in any data table.
+*Track Changes* is a system in @@name, which can be used to track the changes in any data table.
 
 
 ## Tracking levels
@@ -12,7 +12,7 @@ Track changes is a system in @@name, which can be used to track the changes in a
 The tracking levels specify the detail level of the tracking, as per the following table:
 
 
-| Track changes level | Name | Description |
+| Track Changes level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
 | 0 | Do not track changes | Do not track any changes for this entity. |
 | 1 | Track last change | Store information only for the latest modification of the tracked object. |
@@ -36,7 +36,7 @@ This is the lightest tracking mode with the least storage requirements.
 The information is stored in the @Systems.Core.ExtensibleDataObjects
 
 > [!NOTE] 
-> [Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html) object is created and maintained ONLY for the root object of the object [Aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html). 
+> [Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html) object is created and maintained ONLY for the root object of the object [aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html). 
 > Upon first update of the tracked object, a new EDO record is created, if there isn't already one. 
 > For each successive update of any object in the aggregate, the data in the EDO is updated.
 
