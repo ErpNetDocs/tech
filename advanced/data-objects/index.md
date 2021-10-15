@@ -1,6 +1,6 @@
-# Data objects management
+# Data Оbjects management
 
-Data Objects are a design pattern, used to encapsulate logic, which is available to most data records in the system.
+*Data Objects* are a design pattern, used to encapsulate logic, which is available to most data records in the system.
 
 Each [aggregate](https://docs.erp.net/tech/advanced/concepts/aggregates.html) root is a data object.
 All data objects have some common attributes, sub-entities and operations.
