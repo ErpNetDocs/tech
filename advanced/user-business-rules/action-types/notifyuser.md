@@ -30,7 +30,7 @@ The NOTIFYUSER action is not compatible with all [events](https://docs.erp.net/t
 
 ## Example
 
-А [business rule](../index.md) that creates a notification for the sales person, when one of their sales orders has been released.
+А [business rule](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html) that creates a notification for the sales person, when one of their sales orders has been released.
 
 
 
@@ -42,4 +42,4 @@ The NOTIFYUSER action is not compatible with all [events](https://docs.erp.net/t
 | Change of State       | RELEASED        | Normal             |                  |                                                              |                                             |                 |                         |
 | **Actions**           |                 |                    |                  |                                                              |                                             |                 |                         |
 | Action No             | Action Type     | Parameter1 Type    | Parameter1 Value | Parameter2 Type                                              | Parameter2 Value                            | Parameter3 Type | Parameter3 Value        |
-| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | [Formatted String ](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/parameter-types/formattedstring.md) | sales order {DocumentNo} has been released. | Constant        | Sales_Person_SOReleased |
+| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | [Formatted String ](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html) | sales order {DocumentNo} has been released. | Constant        | Sales_Person_SOReleased |
