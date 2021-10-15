@@ -85,7 +85,7 @@ Even if the customer agrees to accept the tangerines, we cannot represent this i
 Another example.
 The customer might order specific lot of the product, but they are ready to accept another lot:
 
-* sales Order: 10 oranges, lot 202
+* sales order: 10 oranges, lot 202
 * shipment: 10 oranges, lot 203
 
 This shipment satisfies the customer in the real world.
