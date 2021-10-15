@@ -24,7 +24,7 @@ To set up a document type as transitional:
 
 ### Example 1:
 
-When creating payment orders by sales order payment plan (see the 'Sales order payment plan' article) there are preconditions for great multiplication of the number of sub-documents. For example, if the sales order has a payment plan with three payments - **40 EUR**, **50 EUR**, **10 EUR** - then initially three payment orders will be created (with no invoice data) for each scheduled playment. 
+When creating payment orders by sales order payment plan (see the **Sales order payment plan** article) there are preconditions for great multiplication of the number of sub-documents. For example, if the sales order has a payment plan with three payments - **40 EUR**, **50 EUR**, **10 EUR** - then initially three payment orders will be created (with no invoice data) for each scheduled playment. 
 When the amount of 60 EUR from the sales order is invoiced, two additional payment orders are created - one for **-40 EUR** and one for **-20 EUR** for planned payments №**1** and №**2**, which have no invoice data, and two more payment orders for **40 EUR** and **20 EUR** for planned payments №**1** и №**2** with invoice data.
 So the sub-documents are now seven. When the user release more invoices, more payment orders will be created.
 
@@ -33,7 +33,7 @@ If an invoice is voided - even more payment orders will be created so the collec
 So the transitional documents are meаnt to decrease the sub-documents number in such cases, and the changes are applied as corrections on already existing sub-documents (see [Adjustment documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md)). 
 This is performed only if the existing documents are Released. If they have document state higher than Released (see [Document states](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/states.md)), new documents are created for the discrepancies that occur.
 
-In such а case, we call these sub-documents *transitional*.
+In such а case, we call these sub-documents **transitional**.
 If a document is transitional is a property of the document type definition. Activating this property is available only when all active procedures which create the current document allow transitional document and are set to create а Released document. 
 Thus, at the first sub-document creation, the sub-documents will have Released document state and the next document changes can be applied as corrections.
 
@@ -69,7 +69,7 @@ So for the additional four payment orders from Example 1, created to cover the d
 - payment №**2**, **20 EUR**, invoice #1;
 - payment №**3**, **10 EUR**, no invoice data;
 
-If after that invoice #1 is edited to **35 EUR**  (or voided and created again), than the invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:
+If after that invoice #1 is edited to **35 EUR**  (or voided and created again), then the invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:
 
 - payment №**1**, **5 EUR**, no invoice data;
 - payment №**1**, **35 EUR**, invoice #1;
