@@ -69,7 +69,7 @@ So for the additional four payment orders from Example 1, created to cover the d
 - payment №**2**, **20 EUR**, invoice #1;
 - payment №**3**, **10 EUR**, no invoice data;
 
-If after that invoice #1 is edited to **35 EUR**  (or voided and created again), than the Invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:
+If after that invoice #1 is edited to **35 EUR**  (or voided and created again), than the invoice amount may cover only part of the first payment and this will cause discrepancies/changes in the first four payments. As the payment orders are transitional, instead of creating four new documents, the existing payment orders will be adjusted:
 
 - payment №**1**, **5 EUR**, no invoice data;
 - payment №**1**, **35 EUR**, invoice #1;
