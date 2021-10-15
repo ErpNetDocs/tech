@@ -79,7 +79,7 @@ shipment:
 * line 1: oranges, 8 kg
 * line 2: tangerines, 2 kg
 
-Natural matching will not qualify the shipment of Tangerines as execution of the sale of oranges, because it is a different product.
+Natural matching will not qualify the shipment of tangerines as execution of the sale of oranges, because it is a different product.
 Even if the customer agrees to accept the tangerines, we cannot represent this in the system.
 
 Another example.
