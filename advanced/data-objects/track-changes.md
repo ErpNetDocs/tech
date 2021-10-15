@@ -95,7 +95,7 @@ Only the new values are stored (not the old values). This design was chosen for 
 - The storage of the new values can be performed asynchronously AFTER the actual database transaction has completed. In this way, the track changes system has very minor effect on the speed of the every-day OLTP transactions.
 - One drawback of the asynchronous saving is that, upon server crash, the track changes data about the attribute changes might be lost. In this case, the Object Change will still be recorded, because it is recorded synchronously (as part of the transaction).
 
-### Level 4 - track Object, attribute & BLOB changes
+### Level 4 - track object, attribute & BLOB changes
 
 Same as Level 3, but the values of BLOB attributes are also saved. This can severely affect the storage requirements and should be used only for small tables and as last resort measure.
 
