@@ -1,4 +1,4 @@
- # Display and choose
+ # Display and search document and line numbers
  
 ### 1. Displaying document and line numbers
 
