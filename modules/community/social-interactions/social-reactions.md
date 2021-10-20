@@ -1,9 +1,12 @@
+---
+items: Social-interactions
+---
 
-# Social Reactions
+# Social reactions
 
 Social reactions represent user reactions to social content. They resemble Facebook reactions.
 
-#### Important Attributes:
+#### Important attributes:
 
 - **Data Object** - the root data object. A reaction can be attached to the data object itself, or to a comment of the data object. In any case, the data object contains the root data object, just like the comments.
 
