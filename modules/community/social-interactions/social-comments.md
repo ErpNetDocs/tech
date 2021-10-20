@@ -1,9 +1,8 @@
-# Social comments
-
 ---
 items: Social-interactions
 ---
 
+# Social comments
 This represents a comment to a data object within the system. 
 
 - Social posts are data objects. This is the most common object to which comments can be added.
