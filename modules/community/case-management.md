@@ -1,8 +1,8 @@
-# Case Management
-
 ---
 items: Community
 ---
+
+# Case Management
 
 This module deals with the management of cases. 
 
