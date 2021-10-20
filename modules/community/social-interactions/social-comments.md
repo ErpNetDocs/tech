@@ -1,5 +1,8 @@
+# Social comments
 
-# Social Comments
+---
+items: Social-interactions
+---
 
 This represents a comment to a data object within the system. 
 
@@ -14,7 +17,7 @@ This represents a comment to a data object within the system.
     
 - However, comments can be added to any data object within the system.
 
-#### Important Attributes:
+#### Important attributes:
 
 - **Data Object** - the data object being commented.
 
