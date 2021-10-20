@@ -897,12 +897,12 @@
   "modules/community/index.html": {
     "href": "modules/community/index.html",
     "title": "Community | ERP.net Tech Docs",
-    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users. Social interactions Digital marketplace Case management"
+    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users. Case Management Digital Marketplace Social interactions"
   },
   "modules/community/social-interactions/index.html": {
     "href": "modules/community/social-interactions/index.html",
-    "title": "Social Interactions | ERP.net Tech Docs",
-    "keywords": "Social Interactions This module represents the social interactions between internal and external users, just like in social networks like Facebook. The users join social groups . Each social post is made in a group. There is no personal space like in Facebook. Each post can contain social comments , replies and reactions . These can also be attached to any data object in the system. Notifications are special data records that contain information about a single notification for a user. Notification settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. For more information, refer to: Social groups Social group members Social posts Social comments Social reactions Notifications Notification settings"
+    "title": "Social interactions | ERP.net Tech Docs",
+    "keywords": "Social interactions This module represents the social interactions between internal and external users, just like in social networks like Facebook. The users join social groups . Each social post is made in a group. There is no personal space like in Facebook. Each post can contain social comments , replies and reactions . These can also be attached to any data object in the system. Notifications are special data records that contain information about a single notification for a user. Notification settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. For more information, refer to: Notification settings Notifications Social comments Social group members Social groups Social posts Social reactions"
   },
   "modules/community/social-interactions/notifications/index.html": {
     "href": "modules/community/social-interactions/notifications/index.html",
@@ -911,33 +911,33 @@
   },
   "modules/community/social-interactions/notifications/settings.html": {
     "href": "modules/community/social-interactions/notifications/settings.html",
-    "title": "Notification Settings | ERP.net Tech Docs",
-    "keywords": "Notification Settings These settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. A setting is for a single user, for a single notification class. Only whole notification classes can be set up. Currently, there is no support for muting specific notification types. A setting determines whether the user should receive: Notification - these are the in-app notifications . Email - the user should receive email on their primary email. Sms - the user should receive SMS on their primary phone number. For more information about notification types and classes, see Notifications ."
+    "title": "Notification settings | ERP.net Tech Docs",
+    "keywords": "Notification settings These settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. A setting is for a single user, for a single notification class. Only whole notification classes can be set up. Currently, there is no support for muting specific notification types. A setting determines whether the user should receive: Notification - these are the in-app notifications . Email - the user should receive email on their primary email. Sms - the user should receive SMS on their primary phone number. For more information about notification types and classes, see Notifications ."
   },
   "modules/community/social-interactions/social-comments.html": {
     "href": "modules/community/social-interactions/social-comments.html",
-    "title": "Social Comments | ERP.net Tech Docs",
-    "keywords": "Social Comments This represents a comment to a data object within the system. Social posts are data objects. This is the most common object to which comments can be added. Besides social posts, there are other objects which are frequent targets by comments: Marketplace Products Documents Definitions Settings However, comments can be added to any data object within the system. Important Attributes: Data Object - the data object being commented. Reply To Comment - the comment to which the current comment replies. If empty, the comment is a root comment to the data object. Тhe Data Object always points to the root data object being commented (it does not point to a data object for a comment). Comment Text - comment contents in clear text. [!NОТЕ] It is planned that text will be allowed to contain some mark-down constructs in the future. Creation Time Utc - automatically set by the server to the time of initial creation of the comment."
+    "title": "Social comments | ERP.net Tech Docs",
+    "keywords": "Social comments This represents a comment to a data object within the system. Social posts are data objects. This is the most common object to which comments can be added. Besides social posts, there are other objects which are frequent targets by comments: Marketplace Products Documents Definitions Settings However, comments can be added to any data object within the system. Important attributes: Data Object - the data object being commented. Reply To Comment - the comment to which the current comment replies. If empty, the comment is a root comment to the data object. Тhe Data Object always points to the root data object being commented (it does not point to a data object for a comment). Comment Text - comment contents in clear text. [!NОТЕ] It is planned that text will be allowed to contain some mark-down constructs in the future. Creation Time Utc - automatically set by the server to the time of initial creation of the comment."
   },
   "modules/community/social-interactions/social-group-members.html": {
     "href": "modules/community/social-interactions/social-group-members.html",
-    "title": "Social Group Members | ERP.net Tech Docs",
-    "keywords": "Social Group Members This entity represents one membership of a user in a group. Important Attributes: Join time Utc - automatically set by the server."
+    "title": "Social group members | ERP.net Tech Docs",
+    "keywords": "Social group members This entity represents one membership of a user in a group. Important attributes: Join time Utc - automatically set by the server."
   },
   "modules/community/social-interactions/social-groups.html": {
     "href": "modules/community/social-interactions/social-groups.html",
-    "title": "Social Groups | ERP.net Tech Docs",
-    "keywords": "Social Groups The social groups are the primary areas (circles) where social interactions occur. Social groups have resemblance to Facebook groups. Unlike FB groups, social posts are always grouped. There is no personal space, unless a personal group is defined. Important Attributes: Code - this is the unique code of the group. It is also used as a slug which forms part of the URL for the group, posts, etc. Name - the universal name of the group."
+    "title": "Social groups | ERP.net Tech Docs",
+    "keywords": "Social groups The social groups are the primary areas (circles) where social interactions occur. Social groups have resemblance to Facebook groups. Unlike FB groups, social posts are always grouped. There is no personal space, unless a personal group is defined. Important attributes: Code - this is the unique code of the group. It is also used as a slug which forms part of the URL for the group, posts, etc. Name - the universal name of the group."
   },
   "modules/community/social-interactions/social-posts.html": {
     "href": "modules/community/social-interactions/social-posts.html",
-    "title": "Social Posts | ERP.net Tech Docs",
-    "keywords": "Social Posts This represents a single social post. It resembles a Facebook post. Important Attributes: Post Text - this is a single-language text, containing the contents of the post in clear text. Note It is planned that the text will be allowed to contain some mark-down constructs in the future. Creation Time Utc - automatically set by the server to the time of the initial creation of the post. Last Interaction Utc - set by the server. The last interaction time with the post, including comments, replies, and likes. Тhis is updated each time a related comment, reply or reaction is added/updated."
+    "title": "Social posts | ERP.net Tech Docs",
+    "keywords": "Social posts This represents a single social post. It resembles a Facebook post. Important attributes: Post Text - this is a single-language text, containing the contents of the post in clear text. Note It is planned that the text will be allowed to contain some mark-down constructs in the future. Creation Time Utc - automatically set by the server to the time of the initial creation of the post. Last Interaction Utc - set by the server. The last interaction time with the post, including comments, replies, and likes. Тhis is updated each time a related comment, reply or reaction is added/updated."
   },
   "modules/community/social-interactions/social-reactions.html": {
     "href": "modules/community/social-interactions/social-reactions.html",
-    "title": "Social Reactions | ERP.net Tech Docs",
-    "keywords": "Social Reactions Social reactions represent user reactions to social content. They resemble Facebook reactions. Important Attributes: Data Object - the root data object. A reaction can be attached to the data object itself, or to a comment of the data object. In any case, the data object contains the root data object, just like the comments. Social Comment - when not null, it contains a comment to the same Data Object to which the reaction is attached. Reaction Type - one of: LIKE LOVE HAHA WOW SAD ANGRY Creation Time Utc - automatically set by the server to the time of initial creation of the reaction."
+    "title": "Social reactions | ERP.net Tech Docs",
+    "keywords": "Social reactions Social reactions represent user reactions to social content. They resemble Facebook reactions. Important attributes: Data Object - the root data object. A reaction can be attached to the data object itself, or to a comment of the data object. In any case, the data object contains the root data object, just like the comments. Social Comment - when not null, it contains a comment to the same Data Object to which the reaction is attached. Reaction Type - one of: LIKE LOVE HAHA WOW SAD ANGRY Creation Time Utc - automatically set by the server to the time of initial creation of the reaction."
   },
   "modules/crm/contacts/index.html": {
     "href": "modules/crm/contacts/index.html",
