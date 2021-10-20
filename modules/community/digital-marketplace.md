@@ -1,8 +1,8 @@
-# Digital Marketplace
-
 ---
 items: Community
 ---
+
+# Digital Marketplace
 
 A digital marketplace is where developers publish apps for the end-users. When an app is activated (installed) on a user device, it is granted certain permissions to access the device resources. The marketplace can, but not necessarily, include functionality for downloading and embedding the app on the device.
 
