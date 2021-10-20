@@ -1,5 +1,8 @@
-
 # Social Interactions
+
+---
+items: Community
+---
 
 This module represents the social interactions between internal and external users, just like in social networks like Facebook.
 
