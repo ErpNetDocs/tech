@@ -1,8 +1,4 @@
-# Social Interactions
-
----
-items: Community
----
+# Social interactions
 
 This module represents the social interactions between internal and external users, just like in social networks like Facebook.
 
@@ -19,11 +15,4 @@ This module represents the social interactions between internal and external use
 
 For more information, refer to:
 
-- [**Social groups**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-groups.md)
-- [**Social group members**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-group-members.md)
-- [**Social posts**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-posts.md)
-- [**Social comments**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-comments.md)
-- [**Social reactions**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/social-reactions.md)
-- [**Notifications**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/index.md)
-- [**Notification settings**](https://github.com/ErpNetDocs/tech/blob/master/modules/community/social-interactions/notifications/settings.md)
-
+[!list items=Social-interactions limit=100]
