@@ -2,11 +2,11 @@
 items: Social-interactions
 ---
 
-# Social Posts
+# Social posts
 
 This represents a single social post. It resembles a Facebook post.
 
-#### Important Attributes:
+#### Important attributes:
 
 - **Post Text** - this is a single-language text, containing the contents of the post in clear text. 
 
