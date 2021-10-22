@@ -2,8 +2,8 @@
 
 The following types of actions are available when creating user business rules:
 
-- [FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md)
-- [NOTIFYUSER](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/notifyuser.md)
-- [SENDMAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/sendmail.md)
-- [SETVALUE](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/setvalue.md)
+- [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)
+- [NOTIFYUSER](https://docs.erp.net/tech/advanced/user-business-rules/action-types/notifyuser.html)
+- [SENDMAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html)
+- [SETVALUE](https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html)
 - [WARNING](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/warning.md)
