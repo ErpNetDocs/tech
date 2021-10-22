@@ -1,4 +1,4 @@
-# How to set DeliveryTerms in Purchase invoice?
+# How to set DeliveryTerms in purchase invoice?
 
 The DeliveryTerms is enum type so it is accessed specifically. The values of the codes are as follows:
 
