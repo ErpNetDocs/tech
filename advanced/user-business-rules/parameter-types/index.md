@@ -1,4 +1,4 @@
-# Parameter Types
+# Parameter types
 
 Parameter types specify how to obtain a parameter value:
 
