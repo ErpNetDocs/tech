@@ -26,4 +26,4 @@ And the #CA should have an integer value, casted to 'Aloe.@@name.Model.Finance.I
 
 10 CAST CONST:3 CONST:Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms
 
-Having this business rule set up, when the event happens, it would set the Delivery Terms of the Purchase invoice to 'FOB'.
+Having this business rule set up, when the event happens, it would set the delivery terms of the purchase invoice to 'FOB'.
