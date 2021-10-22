@@ -7,7 +7,7 @@ items: ActionTypes
 
 | Name                  | SENDMAIL                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Used for sending notification emails using [Business rules](../index.md). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs *(for more info see the 'Subject and Body Customization'  section below)*. <br/><br/>The  address from which the emails are sent is the e-mail address that is set in the "From e-mail address for system notifications" field in  the EnterpriseOne Application Server Settings. <br/><br/>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL [business rule](../index.md) that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br/><br/> **IMPORTANT:** The Sendmail action is not compatible with all [events](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md). For more info, see the *Compatible Events Chart* below. |
+| Description           | Used for sending notification emails using [Business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html). The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs *(for more info see the 'Subject and body customization' section below)*. <br/><br/>The  address from which the emails are sent is the e-mail address that is set in the *From E-mail Address For System Notifications* field in  the @@name application server settings. <br/><br/>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a [SENDMAIL] (https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html) business rule that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br/><br/> **IMPORTANT:** The Sendmail action is not compatible with all [events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html). For more info, see the *Compatible Events Chart* below. |
 | Parameter 1           | **[TO]** - the email address/es to which the mail is going to be sent. If there are more than one  recipients they can be entered in a comma-separated list  (email1,email2...,emailN). |
 | Parameter 1 Type      | Constant, Attribute (the attribute's type must be String)    |
 | Parameter 2           | **[SUBJECT]** - The line with the subject of the email.      |
@@ -25,7 +25,7 @@ items: ActionTypes
 
 ## Compatible Events Chart
 
-The SENDMAIL action is not compatible with all [events](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md). For more info look into the following chart.
+The SENDMAIL action is not compatible with all [events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html). For more info look into the following chart.
 
 | Event Type                                                   | Compatibility with SENDMAIL                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -36,9 +36,9 @@ The SENDMAIL action is not compatible with all [events](https://github.com/ErpNe
 
 
 
-## Subject and Body Customization 
+## Subject and body customization 
 
-The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of  implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.
+The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.
 
 - escape charts 
 
@@ -60,9 +60,9 @@ The body could be also formatted using HTML. In order for the text to be  recogn
 
 
 
-- use of Domain Attributes in text - supported in both the Subject and the Body
+- use of domain attributes in text - supported in both the Subject and the Body
 
-In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and  calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.
+In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.
 
 Currently are supported the following options:
 \1. Attributes: {DocumentDate}. 
@@ -71,15 +71,15 @@ Currently are supported the following options:
 
 
 
-- Domain Attributes formatting - supported in both the Subject and the Body
+- Domain attributes formatting - supported in both the Subject and the Body
 
-The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see [Format specifiers](https://github.com/ErpNetDocs/tech/blob/8239739b316d98329814631d8077654f98b0c32d/reference/format-specifiers.md).
+The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information, see [Format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html).
 
 
 
 ## Example
 
-А [business rule](../index.md) that sends an email with "Order Confirmation" to the customer and the Sales Manager when a Sales Order has been released.
+А [business rule](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html) that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.
 
 
 
@@ -99,13 +99,12 @@ The domain attribute values can be formatted with the standard .Net format  spec
 
 
 
-**Subject:** "Order No00329 has been confirmed"
+**Subject:** 'Order No00329 has been confirmed'
 
 
 
 **Body:**
-
-"Dear Customer,
+'Dear Customer,
 
 **Your order has been confirmed!**
 
@@ -131,4 +130,4 @@ Please expect your parcel on the delivery date stated above at the address or at
 
 Kind Regards,
 
-**John Smith**"
+**John Smith**'
