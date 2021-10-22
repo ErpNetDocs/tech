@@ -1,6 +1,6 @@
 # User Business Rules - Examples
 
-- [Allow a credit limit override when a client pays in cash](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/credit-limit-override.md)
-- [How to set DeliveryTerms in purchase invoice](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/set-deliveryterms.md)
-- [How to start a business rule only on first releasing](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/start-business-rule.md)
-- [Whole quantity validation](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/whole-quantity-validation.md)
+- [Allow a credit limit override when a client pays in cash](https://docs.erp.net/tech/advanced/user-business-rules/examples/credit-limit-override.html)
+- [How to set DeliveryTerms in purchase invoice](https://docs.erp.net/tech/advanced/user-business-rules/examples/set-deliveryterms.html)
+- [How to start a business rule only on first releasing](https://docs.erp.net/tech/advanced/user-business-rules/examples/start-business-rule.html)
+- [Whole quantity validation](https://docs.erp.net/tech/advanced/user-business-rules/examples/whole-quantity-validation.html)
