@@ -79,9 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="formattedstring">FormattedString</h1>
 
-<p>Formatted String is a Parameter Type of the User Business Rules Actions which is introduced in version 2020.1. This parameter represents a text which supports multi-line, variable interpolation, and variable formatting.<br>
-It's typically used with the <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/notifyuser.md">NOTIFYUSER</a> businesses rule action.</p>
-<p>The functionalities which can be used in the value of the Formatted String parameter are:</p>
+<p>Formatted string is a parameter type of the User Business Rules actions which is introduced in version 2020.1. This parameter represents a text which supports multi-line, variable interpolation, and variable formatting.<br>
+It's typically used with the <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/notifyuser.html">NOTIFYUSER</a> businesses rule action.</p>
+<p>The functionalities which can be used in the value of the formatted string parameter are:</p>
 <ul>
 <li>escape charts</li>
 </ul>
@@ -94,7 +94,7 @@ It's typically used with the <a href="https://github.com/ErpNetDocs/tech/blob/ma
 <ul>
 <li>variable interpolation</li>
 </ul>
-<p>This allows specifying variables into a string using placeholders which when executed are replaced with their corresponding values. In the perspective of ERP.net those variables are the domain attributes - both system domain attributes and calculated attributes. When called the domain attribute value is calculated for the particular entity record for which the rule is executed. In order to specify a placeholder, aka call a domain attribute in text, we must specify the domain attribute name in curly brackets '{...}'.</p>
+<p>This allows specifying variables into a string using placeholders which when executed are replaced with their corresponding values. In the perspective of ERP.net those variables are the domain attributes - both system domain attributes and calculated attributes. When called the domain attribute value is calculated for the particular entity record for which the rule is executed. In order to specify a placeholder, a.k.a call a domain attribute in text, we must specify the domain attribute name in curly brackets '{...}'.</p>
 <p>Currently, the following options are supported:<br></p>
 <p>a. Attributes: {DocumentDate}, {#CalsulatedAttribute1}, {@CustomProperty1}. <br>
 b. References: {Customer}.<br>
@@ -104,19 +104,19 @@ c. Reference path: {Customer.Party.PartyName}. Note that Child Collections are <
 </ul>
 <p>The value of the domain attributes which is going to be loaded in the text can be formatted using <strong>format specifiers</strong>: {DocumentDate:dd-MM-yyyy}.</p>
 <h4 id="example">Example:</h4>
-<p>Using Formatted String, this text<br></p>
-<pre><code> Your web store has e new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder Date: {DocumentDate:dd-MM-yyyy}\nShipping Address:
- {ShipToPartyContactMechanism.ContactMechanism.Name}\nOrder Total: {#CalculatedAttributeTotalSalesOrderAmount:C}
+<p>Using formatted string, this text<br></p>
+<pre><code> Your web store has e new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder date: {DocumentDate:dd-MM-yyyy}\nShipping address:
+ {ShipToPartyContactMechanism.ContactMechanism.Name}\nOrder total: {#CalculatedAttributeTotalSalesOrderAmount:C}
 </code></pre>
 <p>will be returned as:</p>
 <pre><code> Your web store has e new order!
 
  {SUMMARY}&lt;br&gt;
- Order Number: 00329&lt;br&gt;
- Order Date: 10-05-2019&lt;br&gt;
- Shipping Address: 21 Lombard St&lt;br&gt;
- Delivery Date: 12-05-2019&lt;br&gt;
- Order Total: $14.82&lt;br&gt;
+ order number: 00329&lt;br&gt;
+ order date: 10-05-2019&lt;br&gt;
+ shipping address: 21 Lombard St&lt;br&gt;
+ delivery date: 12-05-2019&lt;br&gt;
+ order total: $14.82&lt;br&gt;
 </code></pre>
 </article>
           </div>

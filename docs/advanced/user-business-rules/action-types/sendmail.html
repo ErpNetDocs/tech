@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for sending notification emails using <a href="../index.html">Business rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs <em>(for more info see the 'Subject and Body Customization'  section below)</em>. <br><br>The  address from which the emails are sent is the e-mail address that is set in the &quot;From e-mail address for system notifications&quot; field in  the EnterpriseOne Application Server Settings. <br><br>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a SENDMAIL <a href="../index.html">business rule</a> that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br><br> <strong>IMPORTANT:</strong> The Sendmail action is not compatible with all <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md">events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
+<td>Used for sending notification emails using <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">Business rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs (for more info see the <em>'Subject and body customization'</em> section below). <br><br>The  address from which the emails are sent is the e-mail address that is set in the <em>From E-mail Address For System Notifications</em> field in  the ERP.net application server settings. <br><br>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a [SENDMAIL] (<a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html">https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html</a>) business rule that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br><br> <strong>IMPORTANT:</strong> The Sendmail action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
@@ -127,7 +127,7 @@
 </table>
 <p><strong>Note:</strong> Currently, the parameters of the business rules can include up to 256 symbols.</p>
 <h2 id="compatible-events-chart">Compatible Events Chart</h2>
-<p>The SENDMAIL action is not compatible with all <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md">events</a>. For more info look into the following chart.</p>
+<p>The SENDMAIL action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info look into the following chart.</p>
 <table>
 <thead>
 <tr>
@@ -154,8 +154,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="subject-and-body-customization">Subject and Body Customization</h2>
-<p>The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of  implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.</p>
+<h2 id="subject-and-body-customization">Subject and body customization</h2>
+<p>The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.</p>
 <ul>
 <li>escape charts</li>
 </ul>
@@ -169,19 +169,19 @@
 </ul>
 <p>The body could be also formatted using HTML. In order for the text to be  recognized as HTML, the body has to contain the tag . The  place of the tag is irrelevant, if the tag  is placed somewhere in the body's text it is considered that the whole text is written in HTML.</p>
 <ul>
-<li>use of Domain Attributes in text - supported in both the Subject and the Body</li>
+<li>use of domain attributes in text - supported in both the Subject and the Body</li>
 </ul>
-<p>In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and  calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.</p>
+<p>In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.</p>
 <p>Currently are supported the following options:
 \1. Attributes: {DocumentDate}.
 \2. References: {Customer}.
 \3. Reference path: {Customer.Party.PartyName}. Note that Child Collections are not supported.</p>
 <ul>
-<li>Domain Attributes formatting - supported in both the Subject and the Body</li>
+<li>Domain attributes formatting - supported in both the Subject and the Body</li>
 </ul>
-<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information,  see <a href="https://github.com/ErpNetDocs/tech/blob/8239739b316d98329814631d8077654f98b0c32d/reference/format-specifiers.md">Format specifiers</a>.</p>
+<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information, see <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format specifiers</a>.</p>
 <h2 id="example">Example</h2>
-<p>А <a href="../index.html">business rule</a> that sends an email with &quot;Order Confirmation&quot; to the customer and the Sales Manager when a Sales Order has been released.</p>
+<p>А <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a> that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.</p>
 <table>
 <thead>
 <tr>
@@ -269,9 +269,9 @@
 </tbody>
 </table>
 <h3 id="a-representation-of-the-email-which-is-going-to-be-received-by-the-recipients">A representation of the email which is going to be received by the recipients:</h3>
-<p><strong>Subject:</strong> &quot;Order No00329 has been confirmed&quot;</p>
-<p><strong>Body:</strong></p>
-<p>&quot;Dear Customer,</p>
+<p><strong>Subject:</strong> 'Order No00329 has been confirmed'</p>
+<p><strong>Body:</strong>
+'Dear Customer,</p>
 <p><strong>Your order has been confirmed!</strong></p>
 <h3 id="summary">SUMMARY</h3>
 <p>Order Number: <em>00329</em></p>
@@ -282,7 +282,7 @@
 <p>Payment Method: <em>Cash on Delivery</em></p>
 <p>Please expect your parcel on the delivery date stated above at the address or at the office of the courier company.</p>
 <p>Kind Regards,</p>
-<p><strong>John Smith</strong>&quot;</p>
+<p><strong>John Smith</strong>'</p>
 </article>
           </div>
           

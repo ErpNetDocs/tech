@@ -1643,7 +1643,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/index.html",
-          "hash": "PioVmMpsWRDIL13rkJs2kQ=="
+          "hash": "nnl0vbRgGuiIYUYdFVf54A=="
         }
       },
       "is_incremental": false,
@@ -1667,7 +1667,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/sendmail.html",
-          "hash": "pJlvvj152ep0ZvO/lqEn+g=="
+          "hash": "zENme+o2nLR08jT+MzKSLQ=="
         }
       },
       "is_incremental": false,
@@ -1679,7 +1679,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/setvalue.html",
-          "hash": "GQR/5vq2mbGQ27mVV+jFuQ=="
+          "hash": "sr31UVPqq/NGm7PsVOc+kA=="
         }
       },
       "is_incremental": false,
@@ -1691,7 +1691,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/warning.html",
-          "hash": "/kBVQd0NKCNF3iKux9ewCw=="
+          "hash": "vW6EGr1FMR2wqzBbx8fwPA=="
         }
       },
       "is_incremental": false,
@@ -1859,7 +1859,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/credit-limit-override.html",
-          "hash": "FX+/MlzUQlUZZRKWOhzKig=="
+          "hash": "fbdBMZ9RnYAi5x9gjg/Z8Q=="
         }
       },
       "is_incremental": false,
@@ -1871,7 +1871,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "uOTKGwuQMeBV1MlcaAnRfg=="
+          "hash": "bUJFfrbBXwXYHt9zxPw6NA=="
         }
       },
       "is_incremental": false,
@@ -1883,7 +1883,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/set-deliveryterms.html",
-          "hash": "4hRBfPJU/qM6Bo2P/DcJhQ=="
+          "hash": "H/y2Mm6reDdTN31ScaO9LA=="
         }
       },
       "is_incremental": false,
@@ -1895,7 +1895,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/start-business-rule.html",
-          "hash": "NgWEjvEkY30Y2TdGg9/uMA=="
+          "hash": "8nSrLiuzEP+P2cKHdbJvMg=="
         }
       },
       "is_incremental": false,
@@ -1907,7 +1907,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/whole-quantity-validation.html",
-          "hash": "eSY+O+zb+8Rt298ikuEk5Q=="
+          "hash": "rk59sG5Acgd+zQDm/vIJUg=="
         }
       },
       "is_incremental": false,
@@ -1919,7 +1919,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/index.html",
-          "hash": "CLWB331eO8A332NveccvFA=="
+          "hash": "Fa+tk92qxFPXcmVp+Vsn0g=="
         }
       },
       "is_incremental": false,
@@ -1931,7 +1931,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/parameter-types/formattedstring.html",
-          "hash": "Bkvds0iDj1AL498XvVxpNg=="
+          "hash": "lT6FScZR6JIEUjUkErBmOw=="
         }
       },
       "is_incremental": false,
@@ -1943,7 +1943,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/parameter-types/index.html",
-          "hash": "2xxXMdZ2p6kchGx1MBYknA=="
+          "hash": "ay9Sa9PgWAhg+R5OUu/Gzw=="
         }
       },
       "is_incremental": false,

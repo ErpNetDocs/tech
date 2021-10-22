@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Whole Quantity Validation | ERP.net Tech Docs </title>
+    <title>Whole quantity validation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Whole Quantity Validation | ERP.net Tech Docs ">
+    <meta name="title" content="Whole quantity validation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,22 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="whole-quantity-validation">Whole Quantity Validation</h1>
+<h1 id="whole-quantity-validation">Whole quantity validation</h1>
 
 <p>If the business requires whole numbers only, user defined business rule may be set to check the users work.</p>
-<p>For example - a validation of the Sales Order Lines may be applied with the following data:</p>
+<p>For example - a validation of the sales order lines may be applied with the following data:</p>
 <ul>
 <li>Repository: Crm.Sales.SalesOrderLines</li>
-<li>Events - <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/commit.md">COMMIT</a></strong></li>
-<li>Action - <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md">FAIL</a></strong> + Parameter1Type = Constant + Parameter1 Value = &quot;You have entered decimal number as a quantity. Please, check the data entered in the Sales order lines and try again!&quot;</li>
-<li>Conditions: check if the calculated attribute from the example in here is equal to False</li>
+<li>Events - <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a></li>
+<li>Action - <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a> + Parameter1Type = Constant + Parameter1 Value = &quot;You have entered decimal number as a quantity. Please, check the data entered in the Sales order lines and try again!&quot;</li>
+<li>Conditions: check if the calculated attribute from the example in here is equal to 'false'</li>
 </ul>
-<p>When this user business rule is activated and if the user tries to release a Sales Order with the following lines:</p>
+<p>When this user business rule is activated and if the user tries to release a sales order with the following lines:</p>
 <ul>
 <li>line 10 - product A - Quantity 5.05</li>
 <li>line 20 - product B - Quantity 5.00</li>
 </ul>
-<p>The system would return an error with the text we entered in the action of the user business rule - &quot;You have entered decimal number as a quantity. Please, check the data entered in the Sales Order Lines and try again!&quot;.</p>
+<p>The system would return an error with the text we entered in the action of the user business rule - 'You have entered decimal number as a quantity. Please, check the data entered in the sales order lines and try again!'</p>
 <p>With this user business rule activated, and if the sales order has the following lines:</p>
 <ul>
 <li>line 10 - product A - Quantity 5.00</li>
