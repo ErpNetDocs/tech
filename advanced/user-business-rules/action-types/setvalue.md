@@ -9,8 +9,8 @@ The SETVALUE action is used to update information or data in the  system implici
 
 The SETVALUE action requires the following parameters:
 
-1. Parameter 1 - the value which is updated (set). Currently, the available  parameter type is "Attribute". So, in Parameter 1 value the user enters  the name of the attribute, which value has to be modified.
-2. Parameter 2 - the value which is set in Parameter 1. Currently, the available  parameter types are "Attribute" and "Constant". If the parameter type is Attribute, in parameter value the name of the attribute is selected.  The selected attribute value would be used to be set as value of  parameter 1. If the parameter type is "Constant", then in parameter  value a constant value has to be entered and every time the user  business rule is execute, the parameter 1 attribute would be set to the  constant value. The format of the different type of constants is  described here: [Parameter Type CONST](https://olddocs.erp.net/tech/parameter-type-const-41062644.html).
+1. Parameter 1 - the value which is updated (set). Currently, the available  parameter type is Attribute. So, in Parameter 1 value the user enters  the name of the attribute, which value has to be modified.
+2. Parameter 2 - the value which is set in Parameter 1. Currently, the available  parameter types are AAttribute and Constant. If the parameter type is Attribute, in parameter value the name of the attribute is selected.  The selected attribute value would be used to be set as value of  parameter 1. If the parameter type is Constant, then in parameter  value a constant value has to be entered and every time the user  business rule is execute, the parameter 1 attribute would be set to the  constant value. The format of the different type of constants is  described here: [Parameter Type CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html).
 
 
 
