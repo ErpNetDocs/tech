@@ -81,54 +81,54 @@
 
 <p>They are case InsENSitiVE and always start with the <code>$</code> character, providing additional kind of data, not related with a specific object or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
 <pre><code class="lang-cs">// Input
-&quot;{$date}&quot; 
+'{$date}'
 // Output
-&quot;01.01.2021&quot;
+'01.01.2021'
 
 // Input
-&quot;{$datetimeutc}&quot;
+'{$datetimeutc}'
 // Output
-&quot;01.01.2021 15:00:00&quot;
+'01.01.2021 15:00:00'
 
 // Input
-&quot;{$rooturl}&quot; 
+'{$rooturl}'
 // Output
-&quot;db.myerp.net&quot;
+'db.myerp.net'
 
 // Input
-&quot;{$user.Name}&quot;
+'{$user.Name}'
 // Output
-&quot;John Doe&quot;
+'John Doe'
 
 // Input
-&quot;{$user.Name}&quot;
+'{$user.Name}'
 // Output
-&quot;John Doe&quot;
+'John Doe'
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See <a href="../system-variables.html">System variables</a> for more information and all supported system variables.</p>
+<p>See <a href="https://docs.erp.net/tech/advanced/string-interpolation/system-variables.html">System variables</a> for more information and all supported system variables.</p>
 </div>
 <p>If a system variable exists, but is null, the expression will evaluate to an empty string.</p>
 <pre><code class="lang-cs">// Input 
-&quot;{$role.Name}&quot;
+'{$role.Name}'
 // Output
-&quot;&quot;
+''
 </code></pre>
 <p>In contrast, if a system variable doesn't exist or its further reference is not valid, the evaluation will return an error.</p>
 <pre><code class="lang-cs">// Input 
-&quot;{$yesterday}&quot;
+'{$yesterday}'
 // Output
-&quot;#Error: System Variable '$yesterday' not found#&quot;
+'#Error: System Variable '$yesterday' not found#'
 
 // Input (FullName does not exist)
-&quot;{$role.FullName}&quot;
+'{$role.FullName}'
 // Output
-&quot;#Error: Attribute 'FullName' not found#&quot;
+'#Error: Attribute 'FullName' not found#'
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="../examples/system-variable.html">examples section</a>.</p>
+<p>More details and examples are available in the <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/system-variable.html">examples section</a>.</p>
 </div>
 </article>
           </div>

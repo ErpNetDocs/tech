@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Data Member expression examples | ERP.net Tech Docs </title>
+    <title>Data member expression examples | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Data Member expression examples | ERP.net Tech Docs ">
+    <meta name="title" content="Data member expression examples | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,36 +77,36 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="data-member-expression-examples">Data Member expression examples</h1>
+<h1 id="data-member-expression-examples">Data member expression examples</h1>
 
 <h2 id="same-level-data-member-reference">Same level data member reference</h2>
 <h3 id="input">Input</h3>
-<pre><code class="lang-cs">&quot;The document Id is {DocumentId}.&quot;
+<pre><code class="lang-cs">'The document Id is {DocumentId}.'
 </code></pre>
 <h3 id="output">Output</h3>
-<pre><code class="lang-cs">&quot;The document Id is 929bdc15-79d8-4a1f-9467-c237f040939d.&quot;
+<pre><code class="lang-cs">'The document Id is 929bdc15-79d8-4a1f-9467-c237f040939d.'
 </code></pre>
 <h3 id="breakdown">Breakdown</h3>
 <ol>
-<li><code>&quot;The document Id is &quot;</code></li>
+<li><code>'The document Id is '</code></li>
 <li><code>{DocumentId}</code>
 <ul>
 <li>Evaluates to <code>&quot;929bdc15-79d8-4a1f-9467-c237f040939d&quot;</code></li>
 </ul>
 </li>
-<li><code>&quot;.&quot;</code></li>
+<li><code>'.'</code></li>
 </ol>
-<p><em>Assuming the domain object has a data member <code>DocumentId</code> which equals to &quot;929bdc15-79d8-4a1f-9467-c237f040939d&quot;.</em></p>
+<p><em>Assuming the domain object has a data member <code>DocumentId</code> which equals to '929bdc15-79d8-4a1f-9467-c237f040939d'.</em></p>
 <h2 id="referencing-data-members-deeper">Referencing data members deeper</h2>
 <h3 id="input-1">Input</h3>
-<pre><code class="lang-cs">&quot;The customer is {Customer.Party.PartyName} and its number is {Customer.Number}.&quot;
+<pre><code class="lang-cs">'The customer is {Customer.Party.PartyName} and its number is {Customer.Number}.'
 </code></pre>
 <h3 id="output-1">Output</h3>
-<pre><code class="lang-cs">&quot;The customer is John Doe and its number is C12345.&quot;
+<pre><code class="lang-cs">'The customer is John Doe and its number is C12345.'
 </code></pre>
 <h3 id="breakdown-1">Breakdown</h3>
 <ol>
-<li><code>&quot;The customer is &quot;</code></li>
+<li><code>'The customer is '</code></li>
 <li><code>{Customer.Party.PartyName}</code>
 <ul>
 <li>Follows the reference path:
@@ -122,10 +122,10 @@
 </li>
 </ul>
 </li>
-<li>Evaluates to <code>&quot;John Doe&quot;</code></li>
+<li>Evaluates to <code>'John Doe</code></li>
 </ul>
 </li>
-<li><code>&quot; and its number is &quot;</code></li>
+<li><code>' and its number is '</code></li>
 <li><code>{Customer.Number}</code>
 <ul>
 <li>Follows the reference path:
@@ -137,12 +137,12 @@
 </li>
 </ul>
 </li>
-<li>Evaluates to <code>&quot;C12345&quot;</code></li>
+<li>Evaluates to <code>'C12345'</code></li>
 </ul>
 </li>
-<li><code>&quot;.&quot;</code></li>
+<li><code>'.'</code></li>
 </ol>
-<p><em>Assuming the domain object has: data member <code>Customer</code> with data members <code>Party.PartyName</code> equals to &quot;John Doe&quot; and Number equals to &quot;C12345&quot;.</em></p>
+<p><em>Assuming the domain object has: data member <code>Customer</code> with data members <code>Party.PartyName</code> equals to 'John Doe' and Number equals to 'C12345'.</em></p>
 <h2 id="including-a-format-specifier">Including a format specifier</h2>
 <h3 id="input-2">Input</h3>
 <pre><code class="lang-cs">&quot;The customer is {Customer.Party.PartyName:de}.&quot;
@@ -152,7 +152,7 @@
 </code></pre>
 <h3 id="breakdown-2">Breakdown</h3>
 <ol>
-<li><code>&quot;The customer is &quot;</code></li>
+<li><code>'The customer is '</code></li>
 <li><code>{Customer.Party.PartyName:de}</code>
 <ul>
 <li>Follows the reference path:
@@ -170,21 +170,21 @@
 </li>
 <li>Evaluates to <code>MultilanguageString</code> object</li>
 <li>Format specifier found <code>:de</code>. Apply it.</li>
-<li>Returns  <code>&quot;Max Mustermann&quot;</code></li>
+<li>Returns  <code>'Max Mustermann'</code></li>
 </ul>
 </li>
-<li><code>&quot;.&quot;</code></li>
+<li><code>'.'</code></li>
 </ol>
 <h2 id="error-not-existing-reference">#Error# Not existing reference</h2>
 <h3 id="input-3">Input</h3>
-<pre><code class="lang-cs">&quot;The customer is {Customer.Name}.&quot;
+<pre><code class="lang-cs">'The customer is {Customer.Name}.'
 </code></pre>
 <h3 id="output-3">Output</h3>
-<pre><code class="lang-cs">&quot;The customer is #Error: Attribute 'Name' not found#.&quot;
+<pre><code class="lang-c">'The customer is #Error: Attribute 'Name' not found#.'
 </code></pre>
 <h3 id="breakdown-3">Breakdown</h3>
 <ol>
-<li><code>&quot;The customer is &quot;</code></li>
+<li><code>'The customer is '</code></li>
 <li><code>{Customer.Name}</code>
 <ul>
 <li>Follows the reference path:
@@ -199,7 +199,7 @@
 <li>Returns error.</li>
 </ul>
 </li>
-<li><code>&quot;.&quot;</code></li>
+<li><code>'.'</code></li>
 </ol>
 </article>
           </div>

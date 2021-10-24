@@ -83,11 +83,11 @@
 <h2 id="abstract">Abstract</h2>
 <p>Below is a pseudo-example of how the string interpolation works:</p>
 <p>In the following input:</p>
-<pre><code>&quot;Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.&quot;.
+<pre><code>'Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.'.
 </code></pre>
 <p><code>{EXPRESSION1}</code> and <code>{EXPRESSION2}</code> will be replaced with their string representations - <code>smoke</code> and <code>fire</code>.</p>
 <p>Finally, the interpolated string is presented to the output:</p>
-<pre><code>&quot;Where there’s smoke, there’s fire.&quot;.
+<pre><code>'Where there’s smoke, there’s fire.'.
 </code></pre>
 <p>Let's try a real world example:</p>
 <p>Input:</p>
@@ -124,7 +124,7 @@ My name is Jane Doe and I work as a Manager in ABC Company Ltd.&quot;
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More examples are available in the separate <a href="examples/index.html">examples</a> section.</p>
+<p>More examples are available in the separate <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html">examples</a> section.</p>
 </div>
 <h2 id="syntax">Syntax</h2>
 <p>The overall syntax for <strong>one</strong> interpolation expression is:</p>
@@ -146,7 +146,7 @@ My name is Jane Doe and I work as a Manager in ABC Company Ltd.&quot;
 <p>If the interpolation expression evaluates to an object, it's possible for future customization of the value to a desired format. Typically the target format depends on the concrete object type, e.g. for <code>Number</code> type the <code>C</code> format specifier acts as number to currency string conversion, but if the object type is <code>MultilanguageString</code> the format specifier will return the string of the current value.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See <a href="format-specifiers.html">Format specifiers</a> for more information about the supported format specifiers and how to use them.</p>
+<p>See <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format specifiers</a> for more information about the supported format specifiers and how to use them.</p>
 </div>
 </article>
           </div>

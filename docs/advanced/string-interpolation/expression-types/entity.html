@@ -81,35 +81,35 @@
 
 <p>Resolves an object by its entity name and <code>Id</code>.</p>
 <pre><code class="lang-cs">// Input (the passed id exists)
-&quot;{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).Name}&quot; 
+'{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).Name}'
 // Output: 
-&quot;John Doe&quot;
+'John Doe'
 
 // Input (the passed id exists)
-&quot;{General_Products_Products(4282f8c5-2ba8-4adc-b112-c9f5ca2675f2).Name}&quot;
+'{General_Products_Products(4282f8c5-2ba8-4adc-b112-c9f5ca2675f2).Name}'
 // Output
-&quot;Product X&quot;
+'Product X'
 </code></pre>
 <p>If the entity name or the <code>Id</code> does not exist, the evaluation fails and the output will contain an error message.</p>
 <pre><code class="lang-cs">// Input
-&quot;{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}&quot;
+'{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}'
 // Output
-&quot;#Error: Entity 'General_Product' not found#&quot;
+'#Error: Entity 'General_Product' not found#'
 
 // Input (the passed id does NOT exist)
-&quot;{General_Products_Products(1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8)}&quot;
+'{General_Products_Products(1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8)}'
 // Output
-&quot;#Error: Entity object '1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8' not found#&quot;
+'#Error: Entity object '1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8' not found#'
 </code></pre>
 <p>Also the error handling when passing not valid reference still apply. The evaluation will return an error.</p>
 <pre><code class="lang-cs">// Input
-&quot;{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).FullName}&quot; 
+'{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).FullName}' 
 // Output
-&quot;#Error: Attribute 'FullName' not found#&quot;
+'#Error: Attribute 'FullName' not found#'
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="../examples/entity.html">examples section</a>.</p>
+<p>More details and examples are available in the <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/entity.html">examples section</a>.</p>
 </div>
 </article>
           </div>

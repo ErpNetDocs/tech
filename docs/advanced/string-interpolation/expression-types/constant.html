@@ -81,43 +81,43 @@
 
 <p>This kind of expressions doesn't perform any evaluation (i.e. no interpolation) and will produce an output same as the input.</p>
 <pre><code class="lang-cs">// Input
-&quot;test&quot;
+'test'
 // Output
-&quot;test&quot;
+'test'
 
 // Input
-&quot;Good morning!&quot; 
+'Good morning!'
 // Output
-&quot;Good morning!&quot;
+'Good morning!'
 </code></pre>
 <p>Multi-line input is also supported. The <code>\n</code> sequence is interpreted as a new line.</p>
 <pre><code class="lang-cs">// Input
-&quot;line1\nline2&quot;
+'line1\nline2'
 // Output
-@&quot;line1
-line2&quot;
+@'line1
+line2'
 
 // Input
-&quot;line1\n\nline3&quot;
+'line1\n\nline3'
 // Output
-@&quot;line1
+@'line1
 
-line3&quot;
+line3'
 </code></pre>
 <p>It's also possible to escape the control characters for beginning and end of an interpolation expression <code>{</code>, <code>}</code>. Either by doubling <code>{{</code>, <code>}}</code>, or by using the escape character <code>\{</code>, <code>\}</code>.</p>
 <pre><code class="lang-cs">// Input
-&quot;{{This one is escaped}}&quot;
+'{{This one is escaped}}'
 // Output
-&quot;{This one is escaped}&quot;
+'{This one is escaped}'
 
 // Input
-&quot;\{This one also\}&quot;
+'\{This one also\}'
 // Output
-&quot;{This one also}&quot;
+'{This one also}'
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="../examples/constant.html">examples section</a>.</p>
+<p>More details and examples are available in the <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/constant.html">examples section</a>.</p>
 </div>
 </article>
           </div>

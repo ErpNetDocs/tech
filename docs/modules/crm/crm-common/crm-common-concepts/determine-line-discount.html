@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Determine Line Discount | ERP.net Tech Docs </title>
+    <title>Determine line discount | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Determine Line Discount | ERP.net Tech Docs ">
+    <meta name="title" content="Determine line discount | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,29 +77,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="determine-line-discount">Determine Line Discount</h1>
+<h1 id="determine-line-discount">Determine line discount</h1>
 
-<p>When trying to determine a Line Discount, we have to specify some required conditions:</p>
+<p>When trying to determine a line discount, we have to specify some required conditions:</p>
 <ul>
 <li><strong>Product</strong></li>
 <li><strong>Date</strong></li>
 <li><strong>Quantity</strong></li>
-<li><strong>List of Customers</strong></li>
+<li><strong>List of customers</strong></li>
 </ul>
 <p>and some not required:</p>
 <ul>
-<li><strong>Enterprise Company</strong> - Only in the specified Enterprise Company</li>
-<li><strong>Enterprise Company Location</strong> - Only in the specified Enterprise Company location</li>
-<li><strong>Price List</strong> - self-explanatory</li>
-<li><strong>Distribution Channel</strong> - self-explanatory</li>
-<li><strong>Current Line Discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
+<li><strong>Enterprise company</strong> - Only in the specified Enterprise Company</li>
+<li><strong>Enterprise company location</strong> - Only in the specified Enterprise Company location</li>
+<li><strong>Price list</strong> - self-explanatory</li>
+<li><strong>Distribution channel</strong> - self-explanatory</li>
+<li><strong>Current line discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
 </ul>
 <p>ERP.net filters all discounts that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to <strong>all</strong> customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.</p>
 <p>Generally, the algorithm is the following:</p>
 <ul>
 <li>ERP.net filters the discounts.</li>
 <li>Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).</li>
-<li>If a Current Line Discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</li>
+<li>If a current line discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</li>
 </ul>
 <p>So, after the selection process, one and only one discount is selected and applied to the document line.</p>
 <h2 id="filtering-conditions">Filtering conditions</h2>

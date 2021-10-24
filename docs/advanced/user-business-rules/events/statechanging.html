@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="statechanging">STATECHANGING</h1>
 
-<h4 id="event-summary">EVENT SUMMARY</h4>
+<h2 id="event-summary">Event summary</h2>
 <table>
 <thead>
 <tr>
@@ -102,17 +102,17 @@
 </tr>
 </tbody>
 </table>
-<p>This event happens during the change (before). If there is, for example, a <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md">FAIL</a></strong> action set on the STATECHANGING event, if the rule is activated, the state of the document would not be successfully changed. It would remain in its previous state.</p>
+<p>This event happens during the change (before). If there is, for example, a <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a> action set on the STATECHANGING event, if the rule is activated, the state of the document would not be successfully changed. It would remain in its previous state.</p>
 <p>It is very important to set the event correctly. The event happens in the data which is set in the repository of the business rule.</p>
-<p>When we set the STATECHANGING event in a <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/index.md">user business rule</a></strong> with repository &quot;General.Products.Products&quot;, this rule would never be activated because the products do not support the event.</p>
-<p>If a rule has a repository with document lines, for example &quot;Crm.Invoicing.InvoiceLines&quot;, this event would not be appropriate and would not activate the rule either. This is because the document lines do not support the change of state event; this event is supported by documents (their headers).</p>
+<p>When we set the STATECHANGING event in a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a> with repository 'General.Products.Products', this rule would never be activated because the products do not support the event.</p>
+<p>If a rule has a repository with document lines, for example 'Crm.Invoicing.InvoiceLines', this event would not be appropriate and would not activate the rule either. This is because the document lines do not support the change of state event; this event is supported by documents (their headers).</p>
 <p>The event always goes with an event parameter. Possible values are:</p>
 <ul>
-<li>PLANNING</li>
-<li>FIRMPLANNING</li>
-<li>RELEASING</li>
-<li>COMPLETING</li>
-<li>CLOSING</li>
+<li><strong>PLANNING</strong></li>
+<li><strong>FIRMPLANNING</strong></li>
+<li><strong>RELEASING</strong></li>
+<li><strong>COMPLETING</strong></li>
+<li><strong>CLOSING</strong></li>
 </ul>
 </article>
           </div>

@@ -81,20 +81,20 @@
 
 <h2 id="plain-string">Plain string</h2>
 <h3 id="input">Input</h3>
-<pre><code class="lang-cs">&quot;This is a simple string.&quot;
+<pre><code class="lang-cs">'This is a simple string.'
 </code></pre>
 <p>Will result to the same output, because string interpolation not applicable. The input doesn't meet the syntax requirements.</p>
 <h3 id="output">Output</h3>
-<pre><code class="lang-cs">&quot;This is a simple string.&quot;
+<pre><code class="lang-cs">'This is a simple string.'
 </code></pre>
 <h2 id="expression-with-escaped-curly-braces">Expression with escaped curly braces</h2>
 <h3 id="input-1">Input</h3>
-<pre><code class="lang-cs">&quot;{{This is a simple string.}}&quot;
-&quot;\{This is a simple string.\}&quot;
+<pre><code class="lang-cs">'{{This is a simple string.}}'
+'\{This is a simple string.\}'
 </code></pre>
 <p>Will create a <code>Constant Expression</code> which results to an output same as the input.</p>
 <h3 id="output-1">Output</h3>
-<pre><code class="lang-cs">&quot;{This is a simple string.}&quot;
+<pre><code class="lang-cs">'{This is a simple string.}'
 </code></pre>
 </article>
           </div>

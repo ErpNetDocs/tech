@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>States | ERP.net Tech Docs </title>
+    <title>Document states | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="States | ERP.net Tech Docs ">
+    <meta name="title" content="Document states | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,8 +76,8 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Document-States">
-<h1 id="states">States</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="document-states">Document states</h1>
 
 <h2 id="description">Description</h2>
 <p>The documents in the system have a current STATE. This state determines the effect on the system and whether the document can be updated. The allowed states of the document are:</p>
@@ -95,7 +95,7 @@
 <li><strong>New</strong> - the document can be edited freely.</li>
 <li><strong>Planned</strong> - the document can be edited, but if you save the changes, the state will automatically change to Firm Planned (see below).</li>
 <li><strong>Firm Planned</strong> - the document can be edited.</li>
-<li><strong>Released</strong> - the document can no longer be edited, but an Adjustment Document can be created and applied (see heading below).</li>
+<li><strong>Released</strong> - the document can no longer be edited, but an adjustment document can be created and applied (see heading below).</li>
 <li><strong>Completed</strong> - the document cannot be changed, but its state can be returned to Released.</li>
 <li><strong>Closed</strong> - the document cannot be changed, but its state can be returned to Completed.</li>
 </ul>
@@ -144,8 +144,8 @@
 </table>
 <p>There is a borderline at the Released state - once reached, the state cannot be reverted. The document can only be voided.</p>
 <h2 id="adjustment-documents">Adjustment documents</h2>
-<p><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md">Adjustment Documents</a> are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.</p>
-<p>Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment Documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.</p>
+<p><a href="https://docs.erp.net/tech/concepts/documents/adjustments.html">Adjustment documents</a> are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.</p>
+<p>Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.</p>
 <p>The adjustment documents come in effect (e.g. change the main document) when their state is changed to the special &quot;Adjustment state&quot;. As these documents are only used to adjust other documents, they cannot have parent and/or child documents.</p>
 <h2 id="planning-only">Planning only</h2>
 <p>Some documents are created specifically only for planning purposes. They are not intended to be ever released. There is a special flag, which signals this intention to the system, called &quot;Planning Only&quot;. When this flag is set, the system would allow only New and Planned states for the document. No upper states would be allowed by the system. Usually, the document is later voided by its creator (when the plan changes or actual execution is about to begin).</p>

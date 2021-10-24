@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Calculating Cost for Inventory Reconciliation | ERP.net Tech Docs </title>
+    <title>Calculating cost for inventory reconciliation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Calculating Cost for Inventory Reconciliation | ERP.net Tech Docs ">
+    <meta name="title" content="Calculating cost for inventory reconciliation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../../favicon.ico">
@@ -77,18 +77,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="calculating-cost-for-inventory-reconciliation">Calculating Cost for Inventory Reconciliation</h1>
+<h1 id="calculating-cost-for-inventory-reconciliation">Calculating cost for inventory reconciliation</h1>
 
-<p>The cost of the issue and receipt store transactions, which are the result of an Inventory Reconciliation, are calculated according to the current availabilities in the store, as on the date of the inventory reconciliation.</p>
+<p>The cost of the issue and receipt store transactions, which are the result of an inventory reconciliation, are calculated according to the current availabilities in the store, as on the date of the inventory reconciliation.</p>
 <p>Since some of the products may not be available, the calculation is performed according to the following algorithm:</p>
 <ul>
 <li><p>The current availability of the product on the date of the inventory reconciliation is calculated.</p>
 </li>
-<li><p>If the current availability is different from 0, the <b>Average Cost</b> is taken.</p>
+<li><p>If the current availability is different from 0, the <b>average cost</b> is taken.</p>
 </li>
-<li><p>If the current availability is 0, the <b>Unit Cost</b> of the last issue store transaction is taken.</p>
+<li><p>If the current availability is 0, the <b>unit cost</b> of the last issue store transaction is taken.</p>
 </li>
-<li><p>If there is no previous issue store transaction, the <b>Standard Cost</b> is taken (from the product definition).</p>
+<li><p>If there is no previous issue store transaction, the <b>standard cost</b> is taken (from the product definition).</p>
 </li>
 </ul>
 </article>

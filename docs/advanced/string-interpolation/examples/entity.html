@@ -81,14 +81,14 @@
 
 <h2 id="acquiring-an-entity-object-and-referencing-its-data-member">Acquiring an entity object and referencing its data member</h2>
 <h3 id="input">Input</h3>
-<pre><code class="lang-cs">&quot;Hi, {Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}, welcome to our forum!&quot;
+<pre><code class="lang-cs">'Hi, {Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}, welcome to our forum!'
 </code></pre>
 <h3 id="output">Output</h3>
-<pre><code class="lang-cs">&quot;Hi, John Doe, welcome to our forum!&quot;
+<pre><code class="lang-cs">'Hi, John Doe, welcome to our forum!'
 </code></pre>
 <h3 id="breakdown">Breakdown</h3>
 <ol>
-<li><code>&quot;Hi, &quot;</code></li>
+<li><code>'Hi, '</code></li>
 <li><code>{Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}</code>
 <ul>
 <li>Acquires an object of type <code>User</code> from the <code>Public_Users</code> entity with the provided <code>Id</code>.</li>
@@ -97,21 +97,21 @@
 <li><code>.Name</code></li>
 </ul>
 </li>
-<li>Evaluates to &quot;John Doe&quot;</li>
+<li>Evaluates to 'John Doe'</li>
 </ul>
 </li>
-<li><code>&quot;, welcome to our forum!&quot;</code></li>
+<li><code>', welcome to our forum!'</code></li>
 </ol>
 <h2 id="acquiring-an-entity-object-and-deep-referencing-its-data-member-including-a-format-specifier">Acquiring an entity object and deep referencing its data member, including a format specifier</h2>
 <h3 id="input-1">Input</h3>
-<pre><code class="lang-cs">&quot;The parent group of this product is &lt;{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}&gt;.&quot;
+<pre><code class="lang-cs">'The parent group of this product is &lt;{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}&gt;.'
 </code></pre>
 <h3 id="output-1">Output</h3>
-<pre><code class="lang-cs">&quot;The parent group of this product is &lt;Materials&gt;.&quot;
+<pre><code class="lang-cs">'The parent group of this product is &lt;Materials&gt;.'
 </code></pre>
 <h3 id="breakdown-1">Breakdown</h3>
 <ol>
-<li><code>&quot;The parent group of this product is &quot;</code></li>
+<li><code>'The parent group of this product is '</code></li>
 <li><code>{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}</code>
 <ul>
 <li>Acquires an object of type <code>Product</code> from the <code>General_Products_Products</code> entity with the provided <code>Id</code>.</li>
@@ -133,18 +133,18 @@
 <li>Returns  <code>&quot;Materials&quot;</code></li>
 </ul>
 </li>
-<li><code>&quot;&gt;.&quot;</code></li>
+<li><code>'&gt;.'</code></li>
 </ol>
 <h2 id="error-not-existing-entity">#Error# Not existing entity</h2>
 <h3 id="input-2">Input</h3>
-<pre><code class="lang-cs">&quot;Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)&quot;
+<pre><code class="lang-cs">'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'
 </code></pre>
 <h3 id="output-2">Output</h3>
 <pre><code class="lang-cs">&quot;#Error: Entity 'Not_Existing_Entity' not found#&quot;
 </code></pre>
 <h3 id="breakdown-2">Breakdown</h3>
 <ol>
-<li><code>&quot;Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)&quot;</code>
+<li><code>'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'</code>
 <ul>
 <li>Acquires an object from the <code>Not_Existing_Entity</code> entity with the provided <code>Id</code> --&gt; Fail. Entity does not exist</li>
 <li>Returns error.</li>
@@ -153,14 +153,14 @@
 </ol>
 <h2 id="error-not-existing-entity-object-id">#Error# Not existing entity object <code>Id</code></h2>
 <h3 id="input-3">Input</h3>
-<pre><code class="lang-cs">&quot;Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)&quot;
+<pre><code class="lang-cs">'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'
 </code></pre>
 <h3 id="output-3">Output</h3>
-<pre><code class="lang-cs">&quot;#Error: Entity object 'ba8469d7-4854-4ff1-a5ac-a0a60414b061' not found#&quot;
+<pre><code class="lang-cs">'#Error: Entity object 'ba8469d7-4854-4ff1-a5ac-a0a60414b061' not found#'
 </code></pre>
 <h3 id="breakdown-3">Breakdown</h3>
 <ol>
-<li><code>&quot;Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)&quot;</code>
+<li><code>'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'</code>
 <ul>
 <li>Acquires an object of type <code>User</code> from the <code>Public_Users</code> entity with the provided <code>Id</code> --&gt; Fail. Could not find an object with such an Id.</li>
 <li>Returns error.</li>

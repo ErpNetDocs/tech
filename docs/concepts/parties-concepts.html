@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Parties Concepts | ERP.net Tech Docs </title>
+    <title>Parties concepts | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Parties Concepts | ERP.net Tech Docs ">
+    <meta name="title" content="Parties concepts | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="parties-concepts">Parties Concepts</h1>
+<h1 id="parties-concepts">Parties concepts</h1>
 
 <h2 id="description">Description</h2>
 <p>Parties in ERP.net are one of the most widely used definition. Generally, a party is a participant in any business relations or transaction.</p>
@@ -88,11 +88,11 @@
 <li>Employees in our or external companies</li>
 <li>Contacts</li>
 <li>Dealers</li>
-<li>Company Locations</li>
+<li>Company locations</li>
 <li>Departments</li>
 <li>etc...</li>
 </ul>
-<h3 id="basic-party-types">Basic Party Types</h3>
+<h3 id="basic-party-types">Basic party types</h3>
 <p>Parties do not exist by their own. They are always created as another object. Most parties are created as Person or Company. In object terms, it means that Person and Company inherit Party. The Party itself is called to be of type Person or Company.</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -100,23 +100,23 @@
 </div>
 <p>This diagram shows the relationship between Party, Person and Company:</p>
 <p><img src="Party-basic.png" alt="Party Basic"></p>
-<h3 id="party-attributes-inheritance">Party Attributes Inheritance</h3>
+<h3 id="party-attributes-inheritance">Party attributes inheritance</h3>
 <p>The fact, that Person and Company inherit Party also means, that all attributes of Party are also attributes of Person and Company. <br>
 For example, a Party has an &quot;Area&quot; attribute. So, all Person and Company objects would also have an &quot;Area&quot; attribute. <br>
 The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
 For example:</p>
 <p><img src="Party-attributes.png" alt="Party Attributes"></p>
-<p>Party has &quot;Parent Party&quot; and &quot;Area&quot; attributes, which are inherited by Company and Person. But persons &quot;First Name&quot; and &quot;Last Name&quot; are specific only to persons. Neither companies nor generally parties have &quot;First Name&quot;.</p>
-<h3 id="relationships-with-other-entity-types">Relationships with Other Entity Types</h3>
-<p>Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier Contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual Customer Contract object would relate to either a Person or a Company. This is shown on the following diagram:</p>
+<p>Party has &quot;Parent Party&quot; and &quot;Area&quot; attributes, which are inherited by Company and Person. But person's &quot;First name&quot; and &quot;Last name&quot; are specific only to persons. Neither companies nor generally parties have &quot;First name&quot;.</p>
+<h3 id="relationships-with-other-entity-types">Relationships with other entity types</h3>
+<p>Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual customer contract object would relate to either a Person or a Company. This is shown on the following diagram:</p>
 <p><img src="Party-basic-contracts.png" alt="Party Basic Contracts"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Customer (Contract), Supplier (Contract) and Dealership (Contract) are actually called simply Customer, Supplier and Dealer in ERP.net.</p>
+<p>Customer (contract), Supplier (contract) and Dealership (contract) are actually called simply Customer, Supplier and Dealer in ERP.net.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The diagram shows, that one Party object can participate in relationships with many Customer Contract objects. In fact, however, the current implementation of ERP.net allows many Customer Contracts per party, but only one for each Enterprise Company. This means, that one party can have only a single Customer Contract with any given Enterprise Company.</p>
+<p>The diagram shows, that one Party object can participate in relationships with many Customer contract objects. In fact, however, the current implementation of ERP.net allows many Customer contracts per Party, but only one for each enterprise company. This means, that one party can have only a single customer contract with any given enterprise company.</p>
 </div>
 <p>To clarify the above diagrams, lets provide an example. Suppose we have:</p>
 <ul>
@@ -141,7 +141,7 @@ For example:</p>
 <ul>
 <li>Customer (ABC)</li>
 </ul>
-<h2 id="party-hierachy">Party Hierachy</h2>
+<h2 id="party-hierachy">Party hierachy</h2>
 <p>The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.</p>
 <p>For example, let's have Corporation A structured in the following way:</p>
 <ul>
@@ -195,10 +195,10 @@ For example:</p>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Because our own enterprise companies <a href="multi-company.html">Multi-Company</a> are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.</p>
+<p>Because our own enterprise companies <a href="https://docs.erp.net/tech/concepts/multi-company.html">Multi-Company</a> are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.</p>
 </div>
-<h2 id="party-relationships">Party Relationships</h2>
-<p>Party Relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:</p>
+<h2 id="party-relationships">Party relationships</h2>
+<p>Party relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:</p>
 <ul>
 <li>Peter works for Company A</li>
 <li>Peter is a friend of George</li>

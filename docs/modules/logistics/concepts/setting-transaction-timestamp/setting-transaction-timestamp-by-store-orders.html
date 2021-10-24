@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Setting Transaction Timestamp by Store Orders | ERP.net Tech Docs </title>
+    <title>Setting transaction timestamp by store orders | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Setting Transaction Timestamp by Store Orders | ERP.net Tech Docs ">
+    <meta name="title" content="Setting transaction timestamp by store orders | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,21 +77,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="setting-transaction-timestamp-by-store-orders">Setting Transaction Timestamp by Store Orders</h1>
+<h1 id="setting-transaction-timestamp-by-store-orders">Setting transaction timestamp by store orders</h1>
 
-<p>Sometimes, the algorithm for automatic set of <i>Transaction Timestamps</i> on Transaction release may not choose the best possible dates and times. This is usually because of the specific logic of the business process of ordering store transactions which are unknown to the Logistics module.</p>
-<p>It is possible to set <i>Transaction Timestamps</i> for the ordered transactions in the Store Orders. The module that contains the specific business logic helps setting better and more accurate times and dates in the Store Orders. When the orders are fulfilled, these <i>Transaction Timestamps</i> will be copied to the Transactions and will remain unchanged on Transaction Release.</p>
-<p>The current article describes some specific cases which require setting the <i>Transaction Timestamp</i> by the Store Orders.</p>
-<h2 id="in-transitional-store-orders">In Transitional Store Orders</h2>
-<p>For more information about transitional documents, see <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/transitional-documents.md">Transitional Documents</a>.</p>
-<p>When a Store Order is Transitional, all its rows are filled in with the creation date and time of the parent document. The logic here is as follows:</p>
-<p>If the Store Order is set to transitional, then it is considered that it will happen automatically along with the parent document. So, the <i>Transaction Timestamps</i> will inherit the creation date and time of the parent document.</p>
+<p>Sometimes, the algorithm for automatic set of <i>transaction timestamps</i> on transaction release may not choose the best possible dates and times. This is usually because of the specific logic of the business process of ordering store transactions which are unknown to the Logistics module.</p>
+<p>It is possible to set <i>transaction timestamps</i> for the ordered transactions in the store orders. The module that contains the specific business logic helps setting better and more accurate times and dates in the store orders. When the orders are fulfilled, these <i>transaction timestamps</i> will be copied to the transactions and will remain unchanged on transaction release.</p>
+<p>The current article describes some specific cases which require setting the <i>transaction timestamp</i> by the Store Orders.</p>
+<h2 id="in-transitional-store-orders">In transitional store orders</h2>
+<p>For more information about transitional documents, see <a href="https://docs.erp.net/tech/advanced/document-flow/transitional-documents.html?q=Transitional%20Documents">Transitional documents</a>.</p>
+<p>When a store order is transitional, all its rows are filled in with the creation date and time of the parent document. The logic here is as follows:</p>
+<p>If the store order is set to transitional, then it is considered that it will happen automatically along with the parent document. So, the <i>transaction timestamps</i> will inherit the creation date and time of the parent document.</p>
 <p><i><b>Example 1</b></i>:</p>
-<p>There is a Work Order where all documents except for the Transactions (Consumption Orders, Output Orders and Store Orders) are <b>transitional</b>. On release, the Store Orders generate released Transactions, i.e. the process is completely automatic.</p>
-<p>At first, the Work Order has the following technological ratio:</p>
+<p>There is a work order where all documents except for the transactions (consumption orders, output orders and store orders) are <b>transitional</b>. On release, the store orders generate released transactions, i.e. the process is completely automatic.</p>
+<p>At first, the work order has the following technological ratio:</p>
 <p>producing <b>1 PCS</b> of a product, the materials are <b>1 PCS</b> of material <b>#1</b> and <b>1 PCS</b> of material <b>#2</b>.</p>
-<p>On Work Order release, all sub-documents are created, and the materials are issued with a <i>Transaction Timestamp</i> of <b>[19 Jan 2020 14:00:07]</b> and the produced product has a <i>Transaction Timestamp</i> of <b>[19 Jan 2020 14:00:09]</b>. Also, because of the quick creation and release of all sub-documents, these are the <i>Transaction Timestamps</i> for creating the producing sub-documents (the Consumption Order is created on <b>[19 Jan 2020 14:00:07]</b> and the Output Order - on <b>[19 Jan 2020  14:00:09]</b>.</p>
-<p>Then, on <b>22 Jan 2020</b> the Work Order is adjusted and the quantity of the first material is changed from <b>1 PCS</b> to <b>2 PCS</b>. If in the transitional Store Orders the <i>Transaction Timestamp</i> fields are left blank, when releasing the new Transaction for the additional <b>1 PCS </b> of material <b>#1</b>, its <i>Transaction Timestamp</i> would be <b>[19 Jan 2020  23:59:00]</b> because it was released later than its Document Date. In this case, we would have the following chronology:</p>
+<p>On work order release, all sub-documents are created, and the materials are issued with a <i>transaction timestamp</i> of <b>[19 Jan 2020 14:00:07]</b> and the produced product has a <i>transaction timestamp</i> of <b>[19 Jan 2020 14:00:09]</b>. Also, because of the quick creation and release of all sub-documents, these are the <i>transaction timestamp</i> for creating the producing sub-documents (the consumption order is created on <b>[19 Jan 2020 14:00:07]</b> and the output order - on <b>[19 Jan 2020  14:00:09]</b>.</p>
+<p>Then, on <b>22 Jan 2020</b> the Work Order is adjusted and the quantity of the first material is changed from <b>1 PCS</b> to <b>2 PCS</b>. If in the transitional Store Orders the <i>transaction timestamp</i> fields are left blank, when releasing the new transaction for the additional <b>1 PCS </b> of material <b>#1</b>, its <i>transaction timestamp</i> would be <b>[19 Jan 2020  23:59:00]</b> because it was released later than its Document Date. In this case, we would have the following chronology:</p>
 <ul>
 <li><p><b>1 PCS</b> of material <b>#1</b>, <b>issue</b>, <b>19 Jan 2020 14:00:07</b>;</p>
 </li>
@@ -102,16 +102,16 @@
 <li><p><b>1 PCS</b> of material <b>#1</b>, <b>issue</b>, <b>19 Jan 2020 23:59:00</b></p>
 </li>
 </ul>
-<p>At <b>14:00:09</b> there will be a receipt of <b>1 PCS</b> of the product for which <b>2 PCS</b> of material <b>#1</b> are needed. By now, only <b>1 PCS</b> is issued (the other piece is issued later). This leads to failure in the issue and receipt balance validation (see <b>Receipt And Issue Balance Validation In Store Transfers</b> and <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md">Calculating Cost For Produced Products</a> because of incorrect time of the last issue transaction.</p>
-<p>When the Store Orders are transitional, the <i>Transaction Timestamp</i> is equal to the time and date of creation of the parent document, so the last issue transaction will also have <i>Transaction Timestamp</i> <b>[19 Jan 2020 14:00:07]</b> and the problem with the issue/receipt balance would not appear again.</p>
-<h2 id="in-store-orders-created-from-completing-output-orders">In Store Orders Created from Completing Output Orders</h2>
-<p>When Completing Output Orders are generated from the Work Order document form, specific date and time are set as a <i>Transaction Timestamp</i> in the rows of the Output Order. For each row in the Output Order, the greatest or the last <i>Transaction Timestamp</i> of all timestamps marking the moment the production has entered the store, is set as a <i>Transaction Timestamp</i> (this is the maximum date and time in all receipt transaction rows created by the current Work Order row, which has quantity different from 0). After that, the <i>Transaction Timestamps</i> from the Completing Output Order are passed to the Store Orders and copied to the Transaction rows.</p>
-<p>The Completing Output Orders actually distribute the cost of the materials which are not issued on time. As a standard, it is considered that later issues of materials are distributed to the last manufactured products. This is why the greatest <i>Transaction Timestamp</i> of all non-zero receipt transactions for the specified product is set as a <i>Transaction Timestamp</i>.</p>
-<h2 id="in-store-orders-created-by-consumption-orders-for-material">In Store Orders Created by Consumption Orders for Material</h2>
-<p>In the generation procedure of Store Orders by Consumption Orders, there is also a specific way of setting the <i>Transaction Timestamp</i> in the Store Orders rows. It appears only if the quantity in the specified row is negative and the greatest transaction timestamp from all material issue transactions in the generated Store Order is used as a <i>Transaction Timestamp</i>.</p>
-<p>The Consumption Order rows with negative quantities return unnecessary (exceeding) materials. This process has to be entered in the store with the same cost, as issued. If the material is issued in more than one transaction, the issue transaction preceding the return of the materials is unknown, so the last issue is used as a reference.</p>
-<h2 id="in-store-orders-created-by-shipment-orders-for-products-return">In Store Orders Created by Shipment Orders for Products Return</h2>
-<p>This case is similar to the return of materials to the production. If the quantity of the current Shipment Order row is negative, the greatest transaction timestamp from the relevant Store Order row (of all issue transactions happening by now) is set as a <i>Transaction Timestamp</i>.</p>
+<p>At <b>14:00:09</b> there will be a receipt of <b>1 PCS</b> of the product for which <b>2 PCS</b> of material <b>#1</b> are needed. By now, only <b>1 PCS</b> is issued (the other piece is issued later). This leads to failure in the issue and receipt balance validation (see <b><a href="https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers">Receipt and issue balance validation in store transfers</a></b> and <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html?q=Calculating%20Cost%20For%20Produced%20Products">Calculating Cost For Produced Products</a> because of incorrect time of the last issue transaction.</p>
+<p>When the Store Orders are transitional, the <i>transaction timestamp</i> is equal to the time and date of creation of the parent document, so the last issue transaction will also have <i>transaction timestamp</i> <b>[19 Jan 2020 14:00:07]</b> and the problem with the issue/receipt balance would not appear again.</p>
+<h2 id="in-store-orders-created-from-completing-output-orders">In store orders created from completing output orders</h2>
+<p>When completing output orders are generated from the work order document form, specific date and time are set as a <i>transaction timestamp</i> in the rows of the output order. For each row in the output order, the greatest or the last <i>transaction timestamp</i> of all timestamps marking the moment the production has entered the store, is set as a <i>transaction timestamp</i> (this is the maximum date and time in all receipt transaction rows created by the current work order row, which has quantity different from 0). After that, the <i>transaction timestamp</i> from the completing output order are passed to the store orders and copied to the transaction rows.</p>
+<p>The completing output orders actually distribute the cost of the materials which are not issued on time. As a standard, it is considered that later issues of materials are distributed to the last manufactured products. This is why the greatest <i>transaction timestamp</i> of all non-zero receipt transactions for the specified product is set as a <i>transaction timestamp</i>.</p>
+<h2 id="in-store-orders-created-by-consumption-orders-for-material">In store orders created by consumption orders for material</h2>
+<p>In the generation procedure of store orders by consumption orders, there is also a specific way of setting the <i>transaction timestamp</i> in the store orders rows. It appears only if the quantity in the specified row is negative and the greatest transaction timestamp from all material issue transactions in the generated store order is used as a <i>transaction timestamp</i>.</p>
+<p>The consumption order rows with negative quantities return unnecessary (exceeding) materials. This process has to be entered in the store with the same cost, as issued. If the material is issued in more than one transaction, the issue transaction preceding the return of the materials is unknown, so the last issue is used as a reference.</p>
+<h2 id="in-store-orders-created-by-shipment-orders-for-products-return">In store orders created by shipment orders for products return</h2>
+<p>This case is similar to the return of materials to the production. If the quantity of the current shipment order row is negative, the greatest transaction timestamp from the relevant store order row (of all issue transactions happening by now) is set as a <i>transaction timestamp</i>.</p>
 </article>
           </div>
           
