@@ -1,4 +1,4 @@
-# Determine Unit price and Line amount in invoice orders
+# Determine unit price and line amount in invoice orders
 
 The invoice orders and their lines are created to generate invoice documents with the aid of particular Sales Order lines are invoiced. For this reason, every Invoice Order lines points to and fulfils exactly one Sales order line.
  
