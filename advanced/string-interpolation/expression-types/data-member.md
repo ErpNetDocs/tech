@@ -41,4 +41,4 @@ The evaluation fails if the resolved data member doesn't exist. The output will 
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html).
+> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/data-member.html).
