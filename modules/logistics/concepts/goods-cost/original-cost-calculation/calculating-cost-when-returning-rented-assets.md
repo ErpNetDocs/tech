@@ -1,2 +1,2 @@
-# Calculating Cost When Returning Rented Assets
+# Calculating cost when returning rented assets
 
