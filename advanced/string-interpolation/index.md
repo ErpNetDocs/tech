@@ -8,7 +8,7 @@ Below is a pseudo-example of how the string interpolation works:
 
 In the following input:
 ```
-"Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.".
+'Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.'.
 ```
 
 `{EXPRESSION1}` and `{EXPRESSION2}` will be replaced with their string representations - `smoke` and `fire`.
@@ -16,7 +16,7 @@ In the following input:
 
 Finally, the interpolated string is presented to the output:
 ```
-"Where there’s smoke, there’s fire.".
+'Where there’s smoke, there’s fire.'.
 ```
 
 Let's try a real world example:
