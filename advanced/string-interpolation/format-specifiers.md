@@ -5,7 +5,7 @@ uid: format-specifiers
 
 # Format specifiers
 Format specifiers are used to state the desired format when formatting object values. 
-In @@name they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](../advanced/calculated-attributes/operators/formatstring.md) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the [SENDMAIL](../advanced/business-rules/action-types/sendmail.md) action (‘{DomainAttribute:FormatSpecifier}’). 
+In @@name they can be used, for example, as a second parameter for the calculated attribute operator [FORMATSTRING](https://docs.erp.net/tech/advanced/calculated-attributes/operators/formatstring.html) or in the formatting string (‘:FormatSpecifier’) when referencing domain attributes in the [SENDMAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html) action (‘{DomainAttribute:FormatSpecifier}’). 
 There are two main types of format specifiers - standard .Net format specifiers (Numeric, Date - Time,..) and custom format specifiers (Multilanguge string, Custom property). 
 
 ## Standard .Net format specifiers
@@ -63,7 +63,7 @@ Any date and time format string that contains more than one character, including
 - '%' - Defines the following character as a custom 
 - '/' - Тhe current's culture date seperator.
 - '\' - The escape character.
-- "string", 'string' - Literal string delimiter.
+- 'string', 'string' - Literal string delimiter.
 
 ## Examples: 
 - 2019-05-10 15:18:39.013 ('dd MM yyyy hh:mm:ss.fff')→ 10 05 2019 03:18:39.013
