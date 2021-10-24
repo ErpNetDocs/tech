@@ -1,12 +1,12 @@
-# Determine Unit price and Line amount in Invoice Orders
+# Determine Unit price and Line amount in invoice orders
 
-The Invoice orders and their lines are created to generate Invoice documents with the aid of particular Sales order Lines are invoiced. For this reason, every Invoice order lines points to and fulfils exactly one Sales order line.
+The invoice orders and their lines are created to generate invoice documents with the aid of particular Sales Order lines are invoiced. For this reason, every Invoice Order lines points to and fulfils exactly one Sales order line.
  
-In some cases though, when the parent document is a Shipment, for example, the Unit price and Line amount could not be copied directly from the parent document. They could not be copied from the Sales order as well, because the line might be broken down (by lots for example) during the goods issue and the Line amount will not be the same. Therefore those amounts must be calculated.
+In some cases though, when the parent document is a Shipment, for example, the Unit price and Line amount could not be copied directly from the parent document. They could not be copied from the sales order as well, because the line might be broken down (by lots for example) during the goods issue and the Line amount will not be the same. Therefore those amounts must be calculated.
  
 # Calculation
  
-Initially, when the Invoice order and its lines are created, the **Quantity** is copied from the parent documents line, the **Unit price** and the discounts are copied from the Parent Sales order line. The Quantity and Unit price values are used for the calculation of the **Line amount**.
+Initially, when the invoice order and its lines are created, the **Quantity** is copied from the parent documents line, the **Unit price** and the discounts are copied from the parent Sales Order line. The quantity and unit price values are used for the calculation of the **Line amount**.
  
  
 ***The algorithm is as follows***:
@@ -33,7 +33,7 @@ Then when saving the document the Discrepancy System (for more information see *
  
 **[Unit price] =** Round(**[LineAmount]** / (1 - **[Line Standard Discount Percent]**) / (1 - **[Line Custom Discount Percent]**) / **[Quantity]** )
  
- *The Unit price is rounded up to the fifth digit.
+ *The unit price is rounded up to the fifth digit.
  
 ***Example:***
 
