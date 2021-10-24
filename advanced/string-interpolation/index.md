@@ -66,7 +66,7 @@ My name is Jane Doe and I work as a Manager in ABC Company Ltd."
 ```
 
 > [!NOTE]
-> More examples are available in the separate [examples](examples/index.md) section.
+> More examples are available in the separate [examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html) section.
 
 ## Syntax
 The overall syntax for **one** interpolation expression is:
@@ -88,4 +88,4 @@ where:
 If the interpolation expression evaluates to an object, it's possible for future customization of the value to a desired format. Typically the target format depends on the concrete object type, e.g. for `Number` type the `C` format specifier acts as number to currency string conversion, but if the object type is `MultilanguageString` the format specifier will return the string of the current value.
 
 > [!NOTE]
-> See [Format specifiers](format-specifiers.md) for more information about the supported format specifiers and how to use them.
+> See [Format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html) for more information about the supported format specifiers and how to use them.
