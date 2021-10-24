@@ -1,8 +1,5 @@
----
-uid: Document-States
----
 
-# States
+# Document states
 
 ## Description
 
@@ -22,13 +19,13 @@ Whether a document can be edited by a user depends on its state:
 - **New** - the document can be edited freely.
 - **Planned** - the document can be edited, but if you save the changes, the state will automatically change to Firm Planned (see below).
 - **Firm Planned** - the document can be edited.
-- **Released** - the document can no longer be edited, but an Adjustment Document can be created and applied (see heading below).
+- **Released** - the document can no longer be edited, but an adjustment document can be created and applied (see heading below).
 - **Completed** - the document cannot be changed, but its state can be returned to Released.
 - **Closed** - the document cannot be changed, but its state can be returned to Completed.
 
 Planned documents reflect a plan, created automatically by the system. On the next planning run, planned documents are usually erased or voided (actually the system tries to erase them, but if they use sequence generators, they can only be voided, not erased). The Firm Planned state helps avoid the voiding. When a user makes changes to Planned document, the system changes the state automatically to Firm Planned in order to protect the user changes before the next planning run.
 
-> [!Note]
+> [!NOTE]
 > Planned sub-documents are also erased or voided when a parent document state changes. This behavior is system defined and cannot be changed. Planned documents can only be protected from voiding by making them Firm Planned.
 
 ## Rules for changing document state
@@ -47,9 +44,9 @@ There is a borderline at the Released state - once reached, the state cannot be 
 
 ## Adjustment documents
 
-[Adjustment Documents](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/adjustment.md) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
+[Adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
 
-Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment Documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.
+Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.
 
 The adjustment documents come in effect (e.g. change the main document) when their state is changed to the special "Adjustment state". As these documents are only used to adjust other documents, they cannot have parent and/or child documents.
 
@@ -81,5 +78,5 @@ Each system state can have as many user statuses, as needed. As shown in the tab
 
 In the example above, in order to release a Direct Production Order, the Firm Planned/Approved state must first be set. This creates a control point for moving ahead of the state.
 
-> [!Note]
+> [!NOTE]
 > The exit User Status-es are usually secured, so that only the authorized users can set them.
