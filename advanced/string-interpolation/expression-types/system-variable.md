@@ -59,4 +59,4 @@ In contrast, if a system variable doesn't exist or its further reference is not 
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html).
+> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/system-variable.html).
