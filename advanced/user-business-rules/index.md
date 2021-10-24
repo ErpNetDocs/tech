@@ -1,5 +1,5 @@
 
-# User Business Rules
+# User business rules
 
 These are business rules which a user defines on his own. They may be used to provide some kind of validation which is not available in the system business rules or to create working logic which is not currently available in the software. They may be registered on different layers - BackEnd and/or FrontEnd. The BackEnd means that the user business rule is processed on the server. A FrontEnd user business rule is processed in the client application.
 
@@ -14,7 +14,7 @@ They have the following information:
 - IsActive - the user business rule may be activated and deactivated;
 - *Layer* - currently this is unavailable. All user business rules are registered in the BackEnd layer.
 
-The events which need to happen for the user business rule to be activated are described in the [User Business Rules - Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html) panel. It consists of the following information:
+The events which need to happen for the user business rule to be activated are described in the [User business rules - Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html) panel. It consists of the following information:
 
 - Event type - the event for which to register the user business rule;
 - Event parameter - registration parameter. The meaning of this parameter is  determined by the type of the event;
@@ -36,7 +36,7 @@ So the condition is met when the value of the specified attribute and the  speci
 The [actions](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html) which may be executed by the rule contain the following information:
 
 - Action No - consecutive number of the action, unique within the user business rule;
-- Action Type - specifies the [type of action](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html) to be performed by the rule. Possible values are: [SETVALUE](https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html) and [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html). 
-- Parameter1 Type, Parameter2 Type, Parameter3 Type - the type of the parameter specifies how to obtain the parameter value; 
-- Parameter1 Value, Parameter2 Value, Parameter3 Value - the actual value of the parameter.
+- Action type - specifies the [type of action](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html) to be performed by the rule. Possible values are: [SETVALUE](https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html) and [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html). 
+- Parameter1 type, Parameter2 type, Parameter3 type - the type of the parameter specifies how to obtain the parameter value; 
+- Parameter1 value, Parameter2 value, Parameter3 value - the actual value of the parameter.
 
