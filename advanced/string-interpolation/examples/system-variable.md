@@ -2,7 +2,7 @@
 items: StringInterpolationExamples
 ---
 
-# System жariable expression examples
+# System variable expression examples
 
 ## Interpolation of a globally resolved system variable
 
