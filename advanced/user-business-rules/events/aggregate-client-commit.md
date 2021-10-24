@@ -21,7 +21,7 @@ Let's take a look at the following structure which is one single aggregate in @@
 - the document amounts of this sales order
 - the payment plan of this sales order
 
-In the example above, the [Client Commit](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)** event would occur for the sales order only if the sales order object itself has changed. While the aggregate client commit will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the Sales Order 
+In the example above, the [Client Commit](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html) event would occur for the sales order only if the sales order object itself has changed. While the aggregate client commit will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the Sales Order 
 Aggregate event.
 
 
