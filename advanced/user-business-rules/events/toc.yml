@@ -12,6 +12,6 @@
   href: statechanging.md
 - name: VOIDING
   href: voiding.md
-- name: Business Rules
+- name: Business rules
   href: business-rules/toc.yml
   topicHref: business-rules/index.md
