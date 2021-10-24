@@ -7,14 +7,14 @@ items: StringInterpolationExpressionTypes
 This kind of expressions doesn't perform any evaluation (i.e. no interpolation) and will produce an output same as the input.
 ```cs
 // Input
-"test"
+'test'
 // Output
-"test"
+'test'
 
 // Input
-"Good morning!" 
+'Good morning!'
 // Output
-"Good morning!"
+'Good morning!'
 ```
 
 Multi-line input is also supported. The `\n` sequence is interpreted as a new line.
@@ -22,8 +22,8 @@ Multi-line input is also supported. The `\n` sequence is interpreted as a new li
 // Input
 'line1\nline2'
 // Output
-@"line1
-line2"
+@'line1
+line2'
 
 // Input
 'line1\n\nline3'
