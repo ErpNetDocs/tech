@@ -1,5 +1,5 @@
-# COMMIT
-#### EVENT SUMMARY
+# Commit
+## Event summary
 |Name|COMMIT
 |:----|:----
 |**Layer**|**Back-End**
@@ -10,4 +10,4 @@ Occurs when data is saved into the database. It is used for all kinds of data ty
 
 Every time an object change is saved, the rule is activated (if it meets the conditions).
 
-The COMMIT event may be used, for example, to validate that all the necessary data of a product is entered. If not - throw an error (by using **[FAIL](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/fail.md)** action) and do not save the product in the database until the entered data is correct.
+The Commit event may be used, for example, to validate that all the necessary data of a product is entered. If not - throw an error (by using **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)** action) and do not save the product in the database until the entered data is correct.
