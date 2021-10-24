@@ -2,9 +2,9 @@
   href: index.md
 - name: Constant expressions
   href: constant.md
-- name: Data Member expressions
+- name: Data member expressions
   href: data-member.md
-- name: System Variable expressions
+- name: System variable expressions
   href: system-variable.md
 - name: Entity expressions
   href: entity.md
