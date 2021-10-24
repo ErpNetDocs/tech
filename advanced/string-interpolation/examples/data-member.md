@@ -50,7 +50,7 @@ items: StringInterpolationExamples
     * Follows the reference path:
         * `Customer`
             * `.Number`
-    * Evaluates to `"C12345"`
+    * Evaluates to `'C12345'`
 5. `'.'`
 
 *Assuming the domain object has: data member `Customer` with data members `Party.PartyName` equals to 'John Doe' and Number equals to 'C12345'.*
@@ -77,7 +77,7 @@ items: StringInterpolationExamples
     * Evaluates to `MultilanguageString` object
     * Format specifier found `:de`. Apply it.
     * Returns  `'Max Mustermann'`
-3. `"."`
+3. `'.'`
 
 ## #Error# Not existing reference
 
