@@ -1,4 +1,4 @@
-# Basic Algorithm For Cost Correction Calculation
+# Basic algorithm for cost correction calculation
 
 This algorithm is applied to multiple records: either transaction rows or accumulated records for goods cost (most often opening a balance for а specified period). 
 
@@ -8,21 +8,21 @@ The algorithm has two stages:
 
 2. The cost of the rows that do not include accumulated information is recalculated one by one.
 
-The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md). With the release of [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md), the costs in the Transaction rows are updated.
+The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction). With the release of [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction), the costs in the Transaction rows are updated.
 
 Multiple records are generated when all transaction operations for a period (as well as the opening balance at the start of the period) are loaded. It is of great importance for all transaction operations and opening balances to be loaded during the operation. Any of them missing may lead to incorrect cost correction (during stage 2 of the algorithm).
 
-## Stage 1: Chronological Sorting Of The Records
+## Stage 1: Chronological sorting of the records
 
 The following criteria is used to order the records chronologically:
 
-- In case two records share the same <b>Enterprise Company, Store, Product</b>, and <b>Lot</b> (only if the product has a separate cost for each lot), the records with a shorter <i>Transaction Timestamp</i> are placed before the ones with a greater <i>Transaction Timestamp</i>. If the <i>Transaction Timestamps</i> are equal, the <b>receipt</b> goes before the <b>issue</b> operation. If the records have the same <i>Movement Type</i>, it is assumed that the operations have happened at the same time.
+- In case two records share the same <b>enterprise company, store, product</b>, and <b>lot</b> (only if the product has a separate cost for each lot), the records with a shorter <i>transaction timestamp</i> are placed before the ones with a greater <i>transaction timestamp</i>. If the <i>transaction timestamps</i> are equal, the <b>receipt</b> goes before the <b>issue</b> operation. If the records have the same <i>movement type</i>, it is assumed that the operations have happened at the same time.
 
-- If two records - part of a transfer or a production process - have opposite <i>Movement Types</i>, then an <b>issue</b> transaction is performed before a <b>receipt</b> transaction (only if the <i>Transaction Timestamp</i> of the <b>issue</b> transaction is smaller than or equal to the <b>receipt</b> transaction). <b>Enterprise Company, Store, Product</b>, and <b>Lot</b> do not affect the order here.
+- If two records - part of a transfer or a production process - have opposite <i>movement types</i>, then an <b>issue</b> transaction is performed before a <b>receipt</b> transaction (only if the <i>transaction timestamp</i> of the <b>issue</b> transaction is smaller than or equal to the <b>receipt</b> transaction). <b>Enterprise company, store, product</b>, and <b>lot</b> do not affect the order here.
 
 The criteria above can’t provide thorough sorting of the records. That is why a topological sorting is applied. Any topological sorting may be used - more than one for a specific partial sorting. The result in the next stage is the same regardless of the sorting method used.
 
-## Stage 2: Recalculating The Sorted Records
+## Stage 2: Recalculating the sorted records
 
 When the records are ordered in the previous stage, the cost accumulated from the starting period (average) is calculated. Then, the cost of each record is recalculated. Finally, the recalculation of the next record begins (if there is one in the first place).
 
@@ -32,7 +32,7 @@ The recalculation of the record cost is performed as follows:
 
 - If the record is an <b>issue</b> transaction, then the cost is calculated according to the average accumulated cost.
 
-- If the record is a <b>receipt</b> transaction and is part of a transfer or a production process, then its cost is recalculated according to the algorithm from articles [Calculating Cost For Produced Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.md), [Calculating Cost For Transferred Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md), and [Calculating Cost For Returned Products](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.md).
+- If the record is a <b>receipt</b> transaction and is part of a transfer or a production process, then its cost is recalculated according to the algorithm from articles [Calculating cost for produced products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html?q=Calculating%20cost%20for%20produced%20products), [Calculating cost for transferred products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html?q=Calculating%20Cost%20For%20Transferred%20Products), and [Calculating cost for returned products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html?q=Calculating%20cost%20for%20returned%20products).
 
 - If the record is a <b>receipt</b> transaction and is not part of a transfer or a production process, the record is not recalculated.
 
@@ -104,7 +104,7 @@ After the recalculation in the second stage for the last five transactions, the 
 
 - Store #<b>1</b>, Product #<b>3, receipt transaction</b>, Transaction Timestamp: <b>19 Jan 2020 11:50</b>, recalculated cost: <b>81</b>.
 
-This means that in the [Cost Correction](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/logistics-common-module-concepts/goods-cost/cost-correction/index.md) document, 5 rows will be created, one for each of thе operations with cost changed, and the rows will save the mismatches:
+This means that in the [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction) document, 5 rows will be created, one for each of thе operations with cost changed, and the rows will save the mismatches:
 
 52 - 48 =<b>4</b>, 96 - 102 = -<b>6</b>, 148 - 150 = -<b>2</b>, 74 - 75 = -<b>1</b> and 81 - 82 = -<b>1</b>.
 
