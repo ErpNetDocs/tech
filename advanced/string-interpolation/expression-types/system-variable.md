@@ -8,55 +8,55 @@ They are case InsENSitiVE and always start with the `$` character, providing add
 
 ```cs
 // Input
-"{$date}" 
+'{$date}'
 // Output
-"01.01.2021"
+'01.01.2021'
 
 // Input
-"{$datetimeutc}"
+'{$datetimeutc}'
 // Output
-"01.01.2021 15:00:00"
+'01.01.2021 15:00:00'
 
 // Input
-"{$rooturl}" 
+'{$rooturl}'
 // Output
-"db.myerp.net"
+'db.myerp.net'
 
 // Input
-"{$user.Name}"
+'{$user.Name}'
 // Output
-"John Doe"
+'John Doe'
 
 // Input
-"{$user.Name}"
+'{$user.Name}'
 // Output
-"John Doe"
+'John Doe'
 ```
 
 > [!NOTE]
-> See [System variables](../system-variables.md) for more information and all supported system variables.
+> See [System variables](https://docs.erp.net/tech/advanced/string-interpolation/system-variables.html) for more information and all supported system variables.
 
 
 If a system variable exists, but is null, the expression will evaluate to an empty string.
 ```cs
 // Input 
-"{$role.Name}"
+'{$role.Name}'
 // Output
-""
+''
 ```
 
 In contrast, if a system variable doesn't exist or its further reference is not valid, the evaluation will return an error.
 ```cs
 // Input 
-"{$yesterday}"
+'{$yesterday}'
 // Output
-"#Error: System Variable '$yesterday' not found#"
+'#Error: System Variable '$yesterday' not found#'
 
 // Input (FullName does not exist)
-"{$role.FullName}"
+'{$role.FullName}'
 // Output
-"#Error: Attribute 'FullName' not found#"
+'#Error: Attribute 'FullName' not found#'
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](../examples/system-variable.md).
+> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html).
