@@ -1,7 +1,7 @@
 
-# Determine Product Price
+# Determine product price
 
-When trying to determine a Product Price, we have to specify some required conditions:
+When trying to determine a product price, we have to specify some required conditions:
 
 - **Product**
 - **Quantity**
@@ -18,12 +18,12 @@ and some not required:
 - **Price List** - self-explanatory
 - **Current Product Price** - The current product price should not be changed if it satisfies the conditions and has the same priority as the determined top price.
 
-@@name filters all product prices for the given Product that match these criteria. When a product price is defined with a blank value for the Customer, the product price applies to **all** customers. The same goes for Ship To Customer, From Date, Thru Date and all not required parameters from the list above.
+@@name filters all product prices for the given product that match these criteria. When a product price is defined with a blank value for the customer, the product price applies to **all** customers. The same goes for Ship To Customer, From Date, Thru Date and all not required parameters from the list above.
  
 Generally, the algorithm is the following:
  
 - @@name filters the product prices.
-- Each of the selected product prices is checked if Min and Max’s Quantities are respectively less and greater than the provided Quantity. The Price List of the product price is checked for validity according to the Date. If Ship To Customer is provided, its party is considered a Target Party, else the Customer's party is taken. If the product price has a target group specified, the target party should be a member of that group or null.
+- Each of the selected product prices is checked if min and max’s quantities are respectively less and greater than the provided quantity. The price ist of the product price is checked for validity according to the date. If Ship To Customer is provided, its party is considered a Target Party, else the customer's party is taken. If the product price has a target group specified, the target party should be a member of that group or null.
 - Among the remaining product prices, the top priority price is selected considering the lowest Price Type's Ordinal Pos, the highest Priority and the newer From Date. 
 - If a Current Product Price is provided and it satisfies the conditions and has the same priority as the selected one, then the current product price is selected. 
 
