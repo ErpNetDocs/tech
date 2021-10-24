@@ -20,31 +20,31 @@ This kind of expressions doesn't perform any evaluation (i.e. no interpolation) 
 Multi-line input is also supported. The `\n` sequence is interpreted as a new line.
 ```cs
 // Input
-"line1\nline2"
+'line1\nline2'
 // Output
 @"line1
 line2"
 
 // Input
-"line1\n\nline3"
+'line1\n\nline3'
 // Output
-@"line1
+@'line1
 
-line3"
+line3'
 ```
 
 It's also possible to escape the control characters for beginning and end of an interpolation expression `{`, `}`. Either by doubling `{{`, `}}`, or by using the escape character `\{`, `\}`.
 ```cs
 // Input
-"{{This one is escaped}}"
+'{{This one is escaped}}'
 // Output
-"{This one is escaped}"
+'{This one is escaped}'
 
 // Input
-"\{This one also\}"
+'\{This one also\}'
 // Output
-"{This one also}"
+'{This one also}'
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](../examples/constant.md).
+> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html).
