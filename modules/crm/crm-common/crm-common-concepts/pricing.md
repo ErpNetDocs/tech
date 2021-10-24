@@ -2,7 +2,7 @@
 
 ## Description
 
-When a user enters a Sales Order (or similar document), the system automatically assigns the appropriate sales price. Selecting the correct price is the main topic of the pricing.
+When a user enters a sales order (or similar document), the system automatically assigns the appropriate sales price. Selecting the correct price is the main topic of the pricing.
 
 ## Product prices in reality
 
@@ -38,7 +38,7 @@ The following table shows how we can define the prices from the above example in
 
 ## How @@name determines the correct price
 
-The most important thing to note is the Priority attribute. The higher the priority, the more likely the price will be selected. After the user specifies the customer, date and product, @@name filters all prices, that match these criteria. When a price is defined with a blank value for the Customer the price applies to **all** customers. The same goes for Price List, From Date To Date, etc. Only the Product attribute is required, it cannot be blank. If it could be blank, this means, that we can define the same price for ALL products.
+The most important thing to note is the priority attribute. The higher the priority, the more likely the price will be selected. After the user specifies the customer, date and product, @@name filters all prices, that match these criteria. When a price is defined with a blank value for the customer the price applies to **all** customers. The same goes for Price List, From Date To Date, etc. Only the Product attribute is required, it cannot be blank. If it could be blank, this means, that we can define the same price for ALL products.
 
 Generally, the algorithm is the following:
 
