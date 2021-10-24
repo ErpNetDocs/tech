@@ -40,4 +40,4 @@ Also the error handling when passing not valid reference still apply. The evalua
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html).
+> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/entity.html).
