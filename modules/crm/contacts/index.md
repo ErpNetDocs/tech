@@ -4,7 +4,7 @@ The Contacts and tasks module is used to manage parties and calendars.
 
 When used as part of the sales process, they can initiate the sales process flow:
 
-> **Activity** → *Opportunity* → *Offer* → *Sales Order* → *Invoice Order* → *Invoice*
+> **Activity** → *Opportunity* → *Offer* → *Sales order* → *Invoice order* → *Invoice*
 
 ## Activities
 
@@ -15,4 +15,4 @@ The activities are like calendar appointments on steroids. Activities
 * Support questionaries (through the use of user defined data attributes)
 And much more.
 
-Activities can be used to automatically create sales opportunities in the [Presales](../presales/index.md) module.
+Activities can be used to automatically create sales opportunities in the [Presales](https://docs.erp.net/tech/modules/crm/presales/index.html) module.
