@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>More Specific Cases of Setting the Transaction Timestamp | ERP.net Tech Docs </title>
+    <title>More specific cases of setting the transaction timestamp | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="More Specific Cases of Setting the Transaction Timestamp | ERP.net Tech Docs ">
+    <meta name="title" content="More specific cases of setting the transaction timestamp | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,11 +77,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="more-specific-cases-of-setting-the-transaction-timestamp">More Specific Cases of Setting the Transaction Timestamp</h1>
+<h1 id="more-specific-cases-of-setting-the-transaction-timestamp">More specific cases of setting the transaction timestamp</h1>
 
-<p>When generating Cost Transactions from Receiving Orders, there is a specific way of getting the <i>Transaction Timestamps</i>. It is wrong because of the irregular generation procedure: direct Transaction creation from another module is not supposed to happen, as the other modules are not supposed to work with internal module operations.</p>
-<p>In this transaction generation, only the cost is filled in (all quantities are 0). It is the cost coming from the Purchase Invoices, for the quantities which are already entered in the store by the Receiving Order. To have correct time and date for the cost, the generated Transaction should have a specific <b>Transaction Timestamp</b> equal to the <b>Transaction Timestamp</b> with which the quantities enter the store. If the cost is entered later, the products will turn out with zero cost.</p>
-<p>For examples and more detailed information about goods cost when purchasing, see <b>Setting Cost When Purchasing Goods</b>.</p>
+<p>When generating cost transactions from receiving orders, there is a specific way of getting the <i>transaction timestamps</i>. It is wrong because of the irregular generation procedure: direct transaction creation from another module is not supposed to happen, as the other modules are not supposed to work with internal module operations.</p>
+<p>In this transaction generation, only the cost is filled in (all quantities are 0). It is the cost coming from the purchase invoices, for the quantities which are already entered in the store by the receiving order. To have correct time and date for the cost, the generated transaction should have a specific <b>transaction timestamp</b> equal to the <b>transaction timestamp</b> with which the quantities enter the store. If the cost is entered later, the products will turn out with zero cost.</p>
+<p>For examples and more detailed information about goods cost when purchasing, see <b><a href="https://docs.erp.net/tech/modules/logistics/procurement/setting-cost-when-purchasing-goods.html?q=Setting%20cost%20when%20purchasing%20goods">Setting cost when purchasing goods</a></b>.</p>
 </article>
           </div>
           

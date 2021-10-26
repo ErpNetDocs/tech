@@ -2,7 +2,7 @@
 sorted: true
 references:
 - uid: additional-amounts
-  name: Document additional amounts
+  name: Additional amounts
   href: advanced/document-amounts/index.html
 - uid: aggregates
   name: Aggregates
