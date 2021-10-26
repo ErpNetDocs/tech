@@ -15,7 +15,7 @@ The input/primary data is entered in the _*Additional Amounts*_ panel, where it 
 
 2. Stage 1 amounts distribution through the affected documents. That distribution is saved in the document in which it is entered, no matter if the amount affects only the current document or more.
   
-The amount is determined by entering an exact value or by indicating that the amount is calculated as a percent of the base document amount or other additional amounts. This data is entered by adding the amount to a document in its _*Additional Amounts*_ panel. Then, it is used to calculate the real value. 
+The amount is determined by entering an exact value or by indicating that the amount is calculated as a percent of the base document amount or other additional amounts. This data is entered by adding the amount to a document in its *Additional Amounts* panel. Then, it is used to calculate the real value. 
 
 For further information see [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html).
   
