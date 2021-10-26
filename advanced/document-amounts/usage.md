@@ -6,7 +6,7 @@ Additional amounts are used for different reasons - adding amounts to the main b
 
 Some additional amounts serve to calculate the amount to pay for the document. This is marked in the additional amount definition by adding a check to the *Add To Customer* field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
 
-For more information, see [Amount Тo Пay](https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html).
+For more information, see [Amount To Pay](https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html).
 
 ## Calculating goods cost
 
@@ -22,5 +22,5 @@ This is the *Add To Line* field in the definition of the additional amount.
 
 Additional amounts may also be used to report external activities for the enterprise company.
 
-For example, if a salesman in a company receives commissions or other additions to their salaries equal to a percent of the turnover they achieve, then the commision may be entered as an additional amount in the Sales Order, which is a percent of the [amount to pay](https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html).
+For example, if a salesman in a company receives commissions or other additions to their salaries equal to a percent of the turnover they achieve, then the commision may be entered as an additional amount in the sales order, which is a percent of the [amount to pay](https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html).
 
