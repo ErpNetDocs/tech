@@ -11,7 +11,7 @@ The main purpose is written in the document rows or in the document header. For 
 - enterprise company asset price or cost (fixed, financial or rental);
 - value/amount of monetary transaction (transfer, payment or obligation).
 
-The amounts listed above are *base amounts* in documents and they are NOT additional.
+The amounts listed above are base amounts in documents and they are NOT additional.
 
 The **additional amounts** are not proper to be reported along with the main document purpose or they are secondary effect of the main document purpose. 
 These are some examples:
