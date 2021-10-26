@@ -6,7 +6,7 @@ There are cases when we enter an additional amount in a document and calculate i
 For example, if there is a purchase invoice for goods transported to our location and this transport has to be paid, then it can be delivered later than the original purchase invoice (which is already Released and possibly Completed) and we have to enter the transport (as additional amount) in a separate document.
 Even if the purchase invoice is not late, it can also be necessary to enter it in a separate document - for example, if the transport is performed by a company, different from the one of the goods supplier. 
 
-So, there is an additional amount 'Transport’ in one purchase invoice and it will be distributed to the rows of other documents (already Released or Completed), so its value can be added to the goods cost in **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**.
+So, there is an additional amount 'Transport’ in one purchase invoice and it will be distributed to the rows of other documents (already Released or Completed), so its value can be added to the goods cost in [Logistics](https://docs.erp.net/tech/modules/logistics/index.html).
 
 For such cases, the additional amount is calculated through and distributed by documents different from the ones in which we enter it. This is performed in the *Document Amount Referenced Documents* panel where for each additional amount of the current document 0 or more documents can be entered. These documents are usually from the same system type as the current one (i.e. in invoices, we enter invoices, in sales orders - sales orders) or at least support additional amounts. The amount is calculated and distributed by these exact documents (if it was originally entered in the listed documents). 
 
@@ -21,7 +21,7 @@ This makes it possible to enter additional amounts in the current document, whic
 
 *Example 1*  describes the standard case for referenced document usage - transport for purchased goods. 
 
-For more information about the calculation and distribution formulas, see **[Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+For more information about the calculation and distribution formulas, see [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
 
 *Example 1:*
