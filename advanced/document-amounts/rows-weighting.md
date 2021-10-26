@@ -1,6 +1,6 @@
 # Rows weighting
 
-In many cases, the line amounts from the document rows play a major role in the [additional amounts calculation](). Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. However, there are cases when **not all rows participate equally in the distribution**.
+In many cases, the line amounts from the document rows play a major role in the [additional amounts](https://docs.erp.net/tech/advanced/documents/additional-amounts.html) calculation. Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. However, there are cases when **not all rows participate equally in the distribution**.
 
 For example, it is possible for some products in an invoice to be **exempt** from income tax (VAT). This leads to not all document rows participating in the VAT calculation. The calculated amount will be distributed only among the ones that **have** participated. Similar is the case with the 'Customs additional amount’ in purchase invoices, where a customs fee is due for particular products.
 
