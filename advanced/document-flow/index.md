@@ -12,4 +12,4 @@ The designed is achieved with the help of specific document routes built for eac
 
 Temporary
 
-[!list folder="." file="*e*" exclude=dete*]
+[!list folder="." file="e*" exclude=dete*]
