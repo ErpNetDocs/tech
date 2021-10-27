@@ -1,20 +1,20 @@
-# Projected Available Balance
+# Projected available balance
 
 ## Description
 
-Projected Available Balance (PAB) shows the inventory balance projected into the future. It is the running sum of the Current Stock Holds with scheduled receipts added, minus planned issue Stock Orders.
+Projected available balance (PAB) shows the inventory balance projected into the future. It is the running sum of the current stock holds with scheduled receipts added, minus planned issue stock orders.
 
-The Projected Available Balance is used in the calculation of the [Available to Promise](available-to-promise/index.md).
+The projected available balance is used in the calculation of the [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise).
 
 ## The algorithm
 
-In the Projected Available Balance, two kinds of data are used:
+In the projected available balance, two kinds of data are used:
 
-- <b>Current Stock Holds</b> - this is the quantity available placed in store today;
+- <b>Current stock holds</b> - this is the quantity available placed in store today;
 
-- <b>Chronology of the Store Orders which are not executed</b> - includes all Store Orders (or their unfilled parts) which are not completed yet.
+- <b>Chronology of the store orders which are not executed</b> - includes all store orders (or their unfilled parts) which are not completed yet.
   
-> Note that if there are expected <i>Store receipts</i> or <i>issues</i> for a past date which are still not executed, the algorithm assumes that they are being executed <b>today</b>.
+> Note that if there are expected <i>store receipts</i> or <i>issues</i> for a past date which are still not executed, the algorithm assumes that they are being executed <b>today</b>.
   
 For example:
   
@@ -51,6 +51,6 @@ The PAB line can be seen on the following chart:
 
 ![Picture](pictures/Picture_1.png)
  
-> All documents in @@name that may lead to store movements can be set to generate <i>Planned or Firmed Store Orders</i> - directly or through other documents. 
+> All documents in @@name that may lead to store movements can be set to generate <i>planned or firmed store orders</i> - directly or through other documents. 
 > 
-> With this setting, the documents can be involved in the Projected Available Balance and [Available to Promise](available-to-promise/index.md) calculations.
+> With this setting, the documents can be involved in the projected available balance and [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise) calculations.
