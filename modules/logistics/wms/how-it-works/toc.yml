@@ -1,4 +1,4 @@
-- name: Zones policies
-  href: zone-policies.md
+- name: Warehouse policies
+  href: warehouse-policies.md
 - name: Warehouse order execution
   href: warehouse-order-execution.md
