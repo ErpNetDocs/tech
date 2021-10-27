@@ -12,7 +12,7 @@ The Base amount is defined in two steps:
 
 2. If the Additional Amount is marked as *Base On Lines* , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
 
-For more information, see **[Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
+For more information, see [Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
 
 
 ####Example 1:
@@ -46,7 +46,7 @@ The calculations for the three additional amounts are as follows:
 
 - Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows);</br> so [Corporate Discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
 
-- "Easter Bonus" is **-10 EUR** (there is no currency conversion because the amount is in EUR);
+- Easter bonus is **-10 EUR** (there is no currency conversion because the amount is in EUR);
 - VAT is calculated:</br>
 [base amount] = [document rows amounts] + [Corporate Discount] + [Easter Bonus]  = **190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR**; so **[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR**
  
@@ -60,7 +60,7 @@ We have only one additional amount - Commission. Its definition has the followin
 - Base on lines is True;
 - Add to customer is False;
 - Add to line is False;
-- Round scale is "2".
+- Round scale is '2'.
 
 The example document has three rows:
 
