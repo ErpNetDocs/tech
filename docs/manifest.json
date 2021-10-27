@@ -1344,15 +1344,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "JoPRIvtPmA1HpT/vVZ0AAQ=="
+          "hash": "WXn2tRsxHOmQeEqDWSpGZg=="
         }
       },
       "is_incremental": false,
