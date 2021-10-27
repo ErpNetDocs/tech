@@ -3,9 +3,9 @@
 - name: Document flow
   href: document-flow/toc.yml
   topicHref: document-flow/index.md
-- name: Additional amounts
-  href: additional-amounts/toc.yml
-  topicHref: additional-amounts/index.md
+- name: Document amounts
+  href: document-amounts/toc.yml
+  topicHref: document-amounts/index.md
 - name: Custom attributes
   href: custom-attributes/toc.yml
   topicHref: custom-attributes/index.md
