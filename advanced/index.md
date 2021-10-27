@@ -24,4 +24,4 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Temporary
 
-[!list folder="." depth=0 style="bullet" limit=100]
+[!list folder="Advanced" depth=0 style="bullet" limit=100]
