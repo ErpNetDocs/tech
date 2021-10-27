@@ -10,12 +10,12 @@ The Base amount is defined in two steps:
 
 1. Sum the amounts of the current document to all additional amounts listed in the *Document Amount Type Dependencies* panel. This requires the previous calculation of the other amounts.
 
-2. If the Additional Amount is marked as *Base On Lines* , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
+2. If the Additional Amount is marked as 'Base On Lines' , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
 
-For more information, see [Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
+For more information, see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
 
 
-####Example 1:
+#### Example 1:
 
 If we have the following additional amounts:
 
@@ -51,7 +51,7 @@ The calculations for the three additional amounts are as follows:
 [base amount] = [document rows amounts] + [Corporate Discount] + [Easter Bonus]  = **190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR**; so **[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR**
  
  
-####Example 2:
+#### Example 2:
 
 We have only one additional amount - Commission. Its definition has the following properties:
 
@@ -89,9 +89,9 @@ The final result for the amount is:
 > 
 > [additional amount] = [positive amount] + [negative amount]
 > 
- These two subtotals may be used in the additional amount distribution. For further information, see **[Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+ These two subtotals may be used in the additional amount distribution. For further information, see [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
-*Example 3*:
+#### Example 3*:
 
 If we have the following properties in the additional amount, VAT:
 
