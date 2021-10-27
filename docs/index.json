@@ -197,7 +197,7 @@
   "advanced/calculated-attributes/operators/index.html": {
     "href": "advanced/calculated-attributes/operators/index.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators ADD AND CAST CEILING CONCAT CONVERT COUNT DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
+    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "advanced/calculated-attributes/operators/left.html": {
     "href": "advanced/calculated-attributes/operators/left.html",
@@ -397,7 +397,7 @@
   "advanced/concepts/index.html": {
     "href": "advanced/concepts/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "TEMPORARY Aggregates Default language Master / Detail attributes Object relational mapping Scheduled Document Events"
+    "keywords": "TEMPORARY Aggregates Master / Detail attributes Object relational mapping Scheduled Document Events"
   },
   "advanced/concepts/master-detail-attributes.html": {
     "href": "advanced/concepts/master-detail-attributes.html",
@@ -547,7 +547,7 @@
   "advanced/index.html": {
     "href": "advanced/index.html",
     "title": "Advanced section | ERP.net Tech Docs",
-    "keywords": "Advanced section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced systems Document flow - document-related concepts and services. Document amounts Custom attributes - user-defined data attributes. Calculated attributes - user-defined calculations. User business rules - user-defined and system business rules. String interpolation Data objects - data object extensibility systems. Jobs Advanced concepts Master / Detail attributes Object / Relational mapping Aggregates Scheduled document events Temporary ADD ADDDAYS Additional amounts Additional amounts determination and recording Additional amounts usage Aggregates Amount distribution by amount Amounts calculation Calculate standart price per lot based on the ingredients and the operations in the recipe CAST CEILING Check if the current user has authorization Check if the quantity is a whole number Check whether the releasing of the document is first or not Client commit COMMIT Compare unit price and standard unit price CONST Constant expression examples Constant expressions Convert a value of a custom property to a number COUNT Custom attributes Data member expression examples Data Оbjects management DataMember expressions Default tracking levels DIVIDE Document flow Document fulfillment Document generation Domain with property allowed values EQUAL Explicit value calculation Extensible Data Objects EDO FLOOR Format date type custom property Generation procedures Get available to promise (ATP) quantity Get current availability of a product Get value and description of referent object GETOBJVALUE GETVALUE GTE How to check if a custom property has values? How to create an optimally fast calculated attribute? How to determine the party type of a party? How to get attribute value from list? How to get specific field of a parent document? How to show contact of a person in Persons navigator? How to use a customer as a company? IN J30632 Deletе old notifications J30724 Run Scheduled Events J30777 Document State Change J30903 Deletе Old Document Print Images Jobs LEFT LEN LIKE LIST LTE NOT NOTIFYUSER Operators OR ORDERBY Parameter types Parent document relationship type Percent value calculation POS R28545 Script Text Max Length R30055 Is repository aggregate root Referenced documents REGEX REPLACE ROUND Rows weighting Scheduled Document Events SELECT SENDMAIL SETVALUE SORT STATECHANGED SUBSTRING SUM SYS System variable expressions System variables TODAY TOLOWER Total quantity and scrap quantity in recipe ingredients Transitional documents User Business Rules - Examples VOIDING WHERE ..."
+    "keywords": "Advanced section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced systems Document flow - document-related concepts and services. Document amounts Custom attributes - user-defined data attributes. Calculated attributes - user-defined calculations. User business rules - user-defined and system business rules. String interpolation Data objects - data object extensibility systems. Jobs Advanced concepts Master / Detail attributes Object / Relational mapping Aggregates Scheduled document events Temporary"
   },
   "advanced/jobs/index.html": {
     "href": "advanced/jobs/index.html",
