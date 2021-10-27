@@ -57,9 +57,9 @@ In the example above, the **Commit** event would occur for the **sales order** i
 > Commit and client-commit still have the same meaning. E.g., commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While client-commit is triggered only based on client requests and is considered the more light-weight approach.
 
 > [!NOTE] 
->Initially, only the agregate client commit event would be available for user-defined business rules [business rules](~/advanced/business-rules/index.md). The aggregate commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
+>Initially, only the agregate client commit event would be available for user-defined business rules [user business rules](~/advanced/user-business-rules/index.md). The aggregate commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
 
-The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for [business rules](~/advanced/business-rules/index.md).
+The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for [user business rules](~/advanced/user-business-rules/index.md).
 
 #### See also: @Systems.Core.ExtensibleDataObjects
 
