@@ -11,7 +11,8 @@ In this panel, weights are entered in two ways:
 - manually, when the document is created
 - setting them as default values in the product definition
 
->[!NOTE] If there are no weights for additional amount in the panel, then it is considered that all weights are equal to **100%**.
+> [!NOTE] 
+> If there are no weights for additional amount in the panel, then it is considered that all weights are equal to **100%**.
 
 Below, brief descriptions and examples for the different input methods are explained. For more information on the role of weights/coefficients in the calculation and distribution, see [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
