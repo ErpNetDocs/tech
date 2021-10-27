@@ -1697,7 +1697,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/code.html",
-          "hash": "t7Aqbk6qdZVZl89TQn9Isg=="
+          "hash": "vTucXp4GgGvd44IjuDRimw=="
         }
       },
       "is_incremental": false,
@@ -1721,7 +1721,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/script-text-max-length.html",
-          "hash": "XZ+Ml4AHWq9VvpCp7DWnRA=="
+          "hash": "WGPC5BnmhrquxD1yZJkQ5w=="
         }
       },
       "is_incremental": false,
@@ -1733,7 +1733,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/valid-icon-format.html",
-          "hash": "GDxA2fDrEI739Q4N2/AlDg=="
+          "hash": "FUdQcFrNcKeVhaluP4QTjQ=="
         }
       },
       "is_incremental": false,
@@ -3218,12 +3218,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/marketing/bonus-programs/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/marketing/bonus-programs/index.html",
-          "hash": "3q9xSiNrIMiU6JgAwqixEQ=="
+          "hash": "yXb9ITU3ayJt/Csf2McVoQ=="
         }
       },
       "is_incremental": false,
@@ -3247,7 +3250,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/presales/index.html",
-          "hash": "rqlkLxQEMm8CQ0MQRlF+oQ=="
+          "hash": "i05b89wsV8c6hOhdkBxrzw=="
         }
       },
       "is_incremental": false,
@@ -3295,7 +3298,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/promotional-packages/index.html",
-          "hash": "u+gfXWS68OfEOlgqtJZLog=="
+          "hash": "nNpPxYnZ69VEKlIDFgiKBg=="
         }
       },
       "is_incremental": false,
@@ -3307,7 +3310,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.html",
-          "hash": "ZPWvmWP4wjNzcuhmjIp9tw=="
+          "hash": "RC8w48prBU3nQs+wuMRDIA=="
         }
       },
       "is_incremental": false,

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Amount To Pay | ERP.net Tech Docs </title>
+    <title>Amount to pay | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Amount To Pay | ERP.net Tech Docs ">
+    <meta name="title" content="Amount to pay | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,11 +77,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="amount-to-pay">Amount To Pay</h1>
+<h1 id="amount-to-pay">Amount to pay</h1>
 
-<p><em>Amount To Pay</em> is part of Sales Orders and Invoices. It is the final amount which the customer has to pay on the current document (Sales Order or Invoice). It is calculated as the sum of the row amounts and all additional amounts in the current document which has checked in the &quot;<em>Add To Customer</em>” attribute in their definitions.</p>
-<p><em><strong>Example 1</strong></em>:</p>
-<p>There is an Invoice with two rows:</p>
+<p>Amount to pay is part of the sales orders and invoices. It is the final amount that the customer has to pay on the current document (sales order or invoice). It is calculated as the sum of the row amounts and all additional amounts in the current document which has checked in the Add To Customer attribute in their definitions.</p>
+<h4 id="example-1">Example 1:</h4>
+<p>There is an invoice with two rows:</p>
 <ul>
 <li>Row #10 - Product <strong>1</strong>, LineAmount: <strong>2 PCS</strong> x <strong>12 EUR</strong> = <strong>24 EUR</strong></li>
 <li>Row #20 - Product <strong>2</strong>, LineAmount: 3 <strong>PCS</strong> x <strong>7 EUR</strong> = <strong>21 EUR</strong></li>
@@ -90,29 +90,29 @@
 <ul>
 <li>VAT, Amount Percent: <strong>20%</strong> of the line amount of the rows = 0.2 x 45 EUR = <strong>9 EUR</strong></li>
 </ul>
-<p>So the <em>Amount To Pay</em> is: <strong>54 EUR</strong> = 24 EUR + 21 EUR +9 EUR.</p>
+<p>So the Amount To Pay is: <strong>54 EUR</strong> = 24 EUR + 21 EUR +9 EUR.</p>
 <h2 id="relation-to-tax-base-and-vat-invoices">Relation To Tax Base And VAT (Invoices)</h2>
-<p>In most cases, the <em>Amount To Pay</em> matches the sum of Tax Base and VAT, like in <em><strong>Example 1</strong></em>, but a difference is possible. It is possible if there are <a href="https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md">Additional Amounts</a> that are paid by the customer but are not set as base amounts for VAT additional amount.</p>
-<p><em><strong>Example 2</strong></em>:</p>
-<p>There is an Invoice with a Line Amount of <strong>45 EUR</strong> and two <a href="https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md">Additional Amounts</a> which are paid by the customer:</p>
+<p>In most cases, the amount to pay matches the sum of tax base and VAT, like in <em><strong>Example 1</strong></em>, but a difference is possible. It is possible if there are <a href="">Additional Amounts</a> that are paid by the customer but are not set as base amounts for VAT additional amount.</p>
+<h4 id="example-2-">Example 2 :</h4>
+<p>There is an invoice with a line amount of <strong>45 EUR</strong> and two <a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">Additional Amounts</a> which are paid by the customer:</p>
 <ul>
 <li>VAT, amount: 20% of <strong>45 EUR</strong> = <strong>9 EUR</strong></li>
 <li>Penalty Interest - not a VAT base amount, Amount: <strong>20 EUR</strong></li>
 </ul>
-<p>So the <em>Amount To Pay</em> is <strong>74 EUR</strong> while the sum of Tax Base and VAT is <strong>54 EUR</strong>.</p>
+<p>So the Aount To Pay is <strong>74 EUR</strong> while the sum of Tax Base and VAT is <strong>54 EUR</strong>.</p>
 <p><em><strong>Example 3</strong></em>:</p>
 <p>The additional amount <strong>VAT (special cases)</strong> is set that its base amount type is <strong>Tax Base</strong>, <em>Add To Customer</em> and <em>Base On Lines</em> are <em>True</em>. <strong>Tax Base</strong> is not paid by the customer.</p>
-<p>There is an Invoice with two rows:</p>
+<p>There is an invoice with two rows:</p>
 <ul>
 <li>Row #10 - Product <strong>1</strong>, LineAmount: <strong>2 PCS</strong> x <strong>12 EUR</strong> = <strong>24 EUR</strong></li>
 <li>Row #20 - Product <strong>2</strong>, LineAmount: <strong>3 PCS</strong> x <strong>7 EUR</strong> = <strong>21 EUR</strong></li>
 </ul>
-<p>and <a href="https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md">Additional Amounts</a> as follows:</p>
+<p>and <a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">Additional Amounts</a> as follows:</p>
 <ul>
 <li><strong>Tax Base</strong>, Amount: <strong>30 EUR</strong></li>
 <li><strong>VAT</strong>, Amount Percent <strong>20%</strong> of <strong>30 EUR</strong> = <strong>6 EUR</strong></li>
 </ul>
-<p>In this case, the <em>Amount To Pay</em> is <strong>45 EUR</strong> while <em>the sum of Base Tax and VAT</em>  is <strong>36 EUR</strong>.</p>
+<p>In this case, the Amount To Pay is <strong>45 EUR</strong> while the sum of Base Tax and VAT is <strong>36 EUR</strong>.</p>
 </article>
           </div>
           
