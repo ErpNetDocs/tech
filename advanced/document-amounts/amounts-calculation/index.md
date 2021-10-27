@@ -12,7 +12,7 @@ Typically, the user sets a value in the *Input Percent* field and leaves the oth
 
 In the additional amount definition, the user can control which method for determining the additional amount value is allowed. This is achieved by the *Amount Input Allowed* and *Percent Input Allowed* fields. If the second one is True, then the user can set a default percent value which will appear automatically in the documents.
 
-The values entered by the user in the *Input Percent* and *Input Amount_ fields can be managed by the *Allowed Directions* field:
+The values entered by the user in the *Input Percent* and *Input Amount* fields can be managed by the *Allowed Directions* field:
 
 - when ‘Allow only positive’ is selected, the user can enter only numbers bigger than or equal to 0;
 - when ‘Allow only negative’ is selected, the user can enter only numbers less than or equal to 0;
