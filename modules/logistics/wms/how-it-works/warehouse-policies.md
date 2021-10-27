@@ -1,7 +1,6 @@
 # Warehouse policies
 
 Warehouse Policies is a hierarchical system for applying policies to warehouse operations. 
-The policies determine requirements and the interface durring the warehouse order lines execution.
 
 
 # Policy kind
