@@ -1,4 +1,4 @@
-# R28043 Valid Icon Format
+# R28043 Valid icon format
 
 Code|R28043
 |:----|:----
