@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projected Available Balance | ERP.net Tech Docs </title>
+    <title>Projected available balance | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Projected Available Balance | ERP.net Tech Docs ">
+    <meta name="title" content="Projected available balance | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,21 +77,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="projected-available-balance">Projected Available Balance</h1>
+<h1 id="projected-available-balance">Projected available balance</h1>
 
 <h2 id="description">Description</h2>
-<p>Projected Available Balance (PAB) shows the inventory balance projected into the future. It is the running sum of the Current Stock Holds with scheduled receipts added, minus planned issue Stock Orders.</p>
-<p>The Projected Available Balance is used in the calculation of the <a href="available-to-promise/index.html">Available to Promise</a>.</p>
+<p>Projected available balance (PAB) shows the inventory balance projected into the future. It is the running sum of the current stock holds with scheduled receipts added, minus planned issue stock orders.</p>
+<p>The projected available balance is used in the calculation of the <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise">available to promise</a>.</p>
 <h2 id="the-algorithm">The algorithm</h2>
-<p>In the Projected Available Balance, two kinds of data are used:</p>
+<p>In the projected available balance, two kinds of data are used:</p>
 <ul>
-<li><p><b>Current Stock Holds</b> - this is the quantity available placed in store today;</p>
+<li><p><b>Current stock holds</b> - this is the quantity available placed in store today;</p>
 </li>
-<li><p><b>Chronology of the Store Orders which are not executed</b> - includes all Store Orders (or their unfilled parts) which are not completed yet.</p>
+<li><p><b>Chronology of the store orders which are not executed</b> - includes all store orders (or their unfilled parts) which are not completed yet.</p>
 </li>
 </ul>
 <blockquote>
-<p>Note that if there are expected <i>Store receipts</i> or <i>issues</i> for a past date which are still not executed, the algorithm assumes that they are being executed <b>today</b>.</p>
+<p>Note that if there are expected <i>store receipts</i> or <i>issues</i> for a past date which are still not executed, the algorithm assumes that they are being executed <b>today</b>.</p>
 </blockquote>
 <p>For example:</p>
 <ul>
@@ -173,8 +173,8 @@
 <p>The PAB line can be seen on the following chart:</p>
 <p><img src="pictures/Picture_1.png" alt="Picture"></p>
 <blockquote>
-<p>All documents in ERP.net that may lead to store movements can be set to generate <i>Planned or Firmed Store Orders</i> - directly or through other documents.</p>
-<p>With this setting, the documents can be involved in the Projected Available Balance and <a href="available-to-promise/index.html">Available to Promise</a> calculations.</p>
+<p>All documents in ERP.net that may lead to store movements can be set to generate <i>planned or firmed store orders</i> - directly or through other documents.</p>
+<p>With this setting, the documents can be involved in the projected available balance and <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise">available to promise</a> calculations.</p>
 </blockquote>
 </article>
           </div>

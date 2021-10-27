@@ -79,65 +79,65 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="percent-value-calculation">Percent value calculation</h1>
 
-<p>Here, the percent from <em>'Input Percent'</em> is used.</p>
-<p>First, we should know the value of the amounts which will be used to apply the percent calculation. It is defined by the additional amount definition in <em>'Base On Line'</em> field and the 'Document Amount Type Dependencies' panel (also known as 'Base Additional Amounts'). According to the definitions, the base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:</p>
+<p>Here, the percent from Input percent is used.</p>
+<p>First, we should know the value of the amounts which will be used to apply the percent calculation. It is defined by the additional amount definition in <em>Base On Line</em> field and the <em>Document Amount Type Dependencies</em> panel (also known as <em>Base Additional Amounts</em>). According to the definitions, the base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:</p>
 <p><strong>[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])</strong>.</p>
 <p>The Base amount is defined in two steps:</p>
 <ol>
-<li><p>Sum the amounts of the current document to all additional amounts listed in the 'Document Amount Type Dependencies' panel. This requires the previous calculation of the other amounts.</p>
+<li><p>Sum the amounts of the current document to all additional amounts listed in the <em>Document Amount Type Dependencies</em> panel. This requires the previous calculation of the other amounts.</p>
 </li>
-<li><p>If the Additional Amount is marked as <em>'Base On Lines'</em>, then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%).</p>
+<li><p>If the Additional Amount is marked as 'Base On Lines' , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%).</p>
 </li>
 </ol>
-<p>For more information, see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/rows-weighting.md">Rows Weighting</a></strong>).</p>
-<p><em>Example 1</em>:</p>
+<p>For more information, see <a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">Rows weighting</a>.</p>
+<h4 id="example-1">Example 1:</h4>
 <p>If we have the following additional amounts:</p>
 <ul>
 <li><p>Corporate Discount:</p>
 <ul>
-<li>Default Percent is -3%;</li>
-<li><em>'Base On Lines'</em> is True;</li>
-<li>there are no other additional amounts listed in the 'Document Amount Type Dependencies' panel;</li>
-<li>Round Scale is &quot;2&quot;;</li>
+<li>Default percent is -3%;</li>
+<li>Base on lines is True;</li>
+<li>there are no other additional amounts listed in the <em>Document Amount Type Dependencies</em> panel;</li>
+<li>Round scale is '2';</li>
 </ul>
 </li>
 <li><p>Easter bonus:</p>
 <ul>
 <li>No Default percent;</li>
-<li><em>'Amount Input Allowed'</em> is True;</li>
-<li><em>'Percent Input Allowed'</em> is False;</li>
-<li>Round Scale is &quot;2&quot;;</li>
+<li>Amount input allowed is True;</li>
+<li>Percent input allowed is False;</li>
+<li>Round scale is '2';</li>
 </ul>
 </li>
 <li><p>VAT:</p>
 <ul>
-<li>Default Percent is 20%;</li>
-<li><em>'Base On Lines'</em> is True;</li>
-<li>the 'Document Amount Type Dependencies' panel states that VAT is applied to &quot;Corporate Discount&quot; and &quot;Easter Bonus&quot;;</li>
-<li>Round Scale is &quot;2&quot;;</li>
+<li>Default percent is 20%;</li>
+<li>Base on lines is True;</li>
+<li>the <em>Document Amount Type Dependencies</em> panel states that VAT is applied to corporate discount and Easter bonus;</li>
+<li>Round scale is '2';</li>
 </ul>
 </li>
 </ul>
-<p>If we have two document rows - one with a line amount of 150 EUR and another with 40 EUR, then we enter an additional &quot;Easter Bonus&quot; value of &quot;-10 EUR&quot;.</p>
+<p>If we have two document rows - one with a line amount of 150 EUR and another with 40 EUR, then we enter an additional Easter bonus value of -10 EUR.</p>
 <p>The calculations for the three additional amounts are as follows:</p>
 <ul>
-<li><p>Corporate Discount base amount is <strong>150 EUR + 40 EUR = 190 EUR</strong> (only the sum of the document rows);<br> so [Corporate Discount] is calculated = ROUND(<strong>190 EUR * -0.03, 2</strong>) = <strong>-5.70 EUR</strong>;</p>
+<li><p>Corporate discount base amount is <strong>150 EUR + 40 EUR = 190 EUR</strong> (only the sum of the document rows);<br> so [Corporate Discount] is calculated = ROUND(<strong>190 EUR * -0.03, 2</strong>) = <strong>-5.70 EUR</strong>;</p>
 </li>
-<li><p>&quot;Easter Bonus&quot; is <strong>-10 EUR</strong> (there is no currency conversion because the amount is in EUR);</p>
+<li><p>Easter bonus is <strong>-10 EUR</strong> (there is no currency conversion because the amount is in EUR);</p>
 </li>
 <li><p>VAT is calculated:<br>
 [base amount] = [document rows amounts] + [Corporate Discount] + [Easter Bonus]  = <strong>190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR</strong>; so <strong>[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR</strong></p>
 </li>
 </ul>
-<p><em>Example 2</em>:</p>
-<p>We have only one additional amount - &quot;Commission&quot;. Its definition has the following properties:</p>
+<h4 id="example-2">Example 2:</h4>
+<p>We have only one additional amount - Commission. Its definition has the following properties:</p>
 <ul>
-<li>Default Percent is 5%;</li>
-<li><em>'Distribute By'</em> is &quot;Product Definition&quot;. The weight of the specific product is 100%;</li>
-<li><em>'Base On Lines'</em> is True;</li>
-<li><em>'Add To Customer'</em> is False;</li>
-<li><em>'Add To Line'</em> is False;</li>
-<li>Round Scale is &quot;2&quot;.</li>
+<li>Default percent is 5%;</li>
+<li>Distribute by is 'Product Definition'. The weight of the specific product is 100%;</li>
+<li>Base on lines is True;</li>
+<li>Add to customer is False;</li>
+<li>Add to line is False;</li>
+<li>Round scale is '2'.</li>
 </ul>
 <p>The example document has three rows:</p>
 <ul>
@@ -151,23 +151,23 @@
 <li>row #20: weight = <strong>1.00</strong>;</li>
 <li>row #20: weight = <strong>1.00</strong>;</li>
 </ul>
-<p>The base amount for the &quot;Commission&quot; additional amount is calculated as follows:</p>
+<p>The base amount for the 'Commission' additional amount is calculated as follows:</p>
 <p>[base amount] = <strong>150 EUR * 0.00 + 40 EUR * 1.00 + 69 EUR * 1.00 = 109 EUR</strong></p>
 <p>The final result for the amount is:</p>
 <p>[Commission] = ROUND(<strong>109 EUR * 0.05, 2</strong>) = <strong>5.45 EUR</strong></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When we have to calculate percent and the document amount is part of the base amount (<em>'Based On Lines'</em> is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately.</p>
+<p>When we have to calculate percent and the document amount is part of the base amount (<em>Based On Lines</em> is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately.</p>
 <p>So the final result is:</p>
 <p>[additional amount] = [positive amount] + [negative amount]</p>
 </div>
-<p>These two subtotals may be used in the additional amount distribution. For further information, see <strong><a href="https://github.com/ErpNetDocs/tech/blob/011b4e20c2f19c3fe62779e947d92025ae20932b/advanced/documents/additional-amounts/amounts-distribution/index.md">Amounts Distribution</a></strong>.</p>
-<p><em>Example 3</em>:</p>
+<p>These two subtotals may be used in the additional amount distribution. For further information, see <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a>.</p>
+<h4 id="example-3">Example 3*:</h4>
 <p>If we have the following properties in the additional amount, VAT:</p>
 <ul>
-<li>Default Percent is True;</li>
-<li>Round Scale is 2;</li>
-<li><em>'Base On Lines'</em> is True;</li>
+<li>Default percent is True;</li>
+<li>Round scale is '2';</li>
+<li>Base on lines is True;</li>
 </ul>
 <p>the example document has the following rows:</p>
 <ul>

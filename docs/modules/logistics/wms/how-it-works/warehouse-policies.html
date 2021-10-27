@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Common concepts | ERP.net Tech Docs </title>
+    <title>Warehouse policies | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Common concepts | ERP.net Tech Docs ">
+    <meta name="title" content="Warehouse policies | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
     
-    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:rel" content="../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,16 +77,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="common-concepts">Common concepts</h1>
+<h1 id="warehouse-policies">Warehouse policies</h1>
 
+<p>Warehouse Policies is a hierarchical system for applying policies to warehouse operations.</p>
+<h1 id="policy-kind">Policy kind</h1>
+<p>Warehouse policies have diferent kinds/types which specify what the actual action of the policy is. The list of the policy kinds is system predifined.</p>
+<h1 id="applicability">Applicability</h1>
+<p>You set up each warehouse policy by defining the conditions where it applies, to which products and for how long.
+Each warehouse policy can apply to:</p>
 <ul>
-<li><p><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/index.html?q=Goods%20cost">Goods cost</a></p>
+<li><p>Warehouse</p>
 </li>
-<li><p><a href="https://docs.erp.net/tech/modules/logistics/concepts/lots-issue.html?q=Lots%20issue">Lots issue</a></p>
+<li><p>Zone and its sub-zones</p>
 </li>
-<li><p><a href="https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/index.html?q=Setting%20transaction%20timestamp">Setting transaction timestamp</a></p>
+<li><p>Product group and its sub-groups</p>
+</li>
+<li><p>Product Type</p>
+</li>
+<li><p>Specific product</p>
+</li>
+<li><p>From date</p>
+</li>
+<li><p>To date</p>
 </li>
 </ul>
+<p>NOTE: Some policies can be applied only at the warehouse level.</p>
+<h1 id="importance">Importance</h1>
+<p>Policies have importance. When evaluating a policy, the setting with the highest importance is applied.</p>
+<p>For example, if a policy is applied to a root zone and to a sub-zone, the importance of the sub-zone setting determines which setting will be applied:</p>
+<ul>
+<li>If the sub-zone setting has higher priority, it will be applied.</li>
+</ul>
+<p>This can be used for hierarchical application of policies for zones.</p>
+<ul>
+<li>If the root zone setting has higher priority, it will be applied.</li>
+</ul>
+<p>This can be used for root zone (or even warehouse level) setting, which overrides the setting for specific zones.</p>
+<p>Importance is an integer value, allowing even negative numbers (for very low importance).</p>
 </article>
           </div>
           
@@ -95,7 +122,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/warehouse-policies.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -121,8 +148,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>
