@@ -1,6 +1,7 @@
-# Lots Issue
+# Lots issue
+
 The current article describes the principles of lots issue when goods are issued from the store.
-Lots issue is actually the obligation to issue products from certain lots before others. The lots are prioritized and the priority is mandatory when goods are issued from the store (i.e. when Store Transactions are released). This priority is at least advisable when lots are entered before the Store Transaction documents (Store Orders, Shipment Orders, Sales Orders and more). The final goal is the lots selection in the document lines to be executed in the correct order.
+Lots issue is actually the obligation to issue products from certain lots before others. The lots are prioritized and the priority is mandatory when goods are issued from the store (i.e. when store transactions are released). This priority is at least advisable when lots are entered before the store transaction documents (store orders, shipment orders, sales orders and more). The final goal is the lots selection in the document lines to be executed in the correct order.
 
 <b>Example 1:</b>
 
@@ -20,17 +21,17 @@ If there are <b>30 Pcs</b> in the line and no lot is selected, and the three top
 
 *<i>These are the total quantities of each one of the three lots. The document may be saved in other forms, for example - the 17 Pcs of the first lot may be entered as 17 separated lines, each line with quantity of one [Lot #1]. This may be necessary if the product is serialized, each line must have a serial number specified, and the quantity has to be 1</i>.
 
-Actually, it can be said that there is always line breakdown. In <b>Example 1</b> there is trivial breakdown into only one lot <b>[Lot #1]</b>,<b>10 Pcs</b>.
+Actually, it can be said that there is always line breakdown. In <b>еxample 1</b> there is trivial breakdown into only one lot <b>[Lot #1]</b>,<b>10 Pcs</b>.
 
-Defining lots may appear in earlier documents that precede the Store Transactions - Store Orders, Shipment Orders, Sales Orders, etc. In this stage, specifying the lot is recommended. If lots are selected in such a document, they are passed to the next document and may be changed. In some cases, a change may not be recommended and following documents have to keep the selected lots (for example, the customer in the Sales Order requires to receive the lots which are specified in the Sales Order; then, those lots have to be issued from the store). Specifying lots in the Store Transactions is final and mandatory. If it has not happened in previous documents, it has to happen in the Store Transaction. The lots cannot be changed in following documents. 
+Defining lots may appear in earlier documents that precede the store transactions - store orders, shipment orders, sales orders, etc. In this stage, specifying the lot is recommended. If lots are selected in such a document, they are passed to the next document and may be changed. In some cases, a change may not be recommended and following documents have to keep the selected lots (for example, the customer in the sales order requires to receive the lots which are specified in the sales order; then, those lots have to be issued from the store). Specifying lots in the store transactions is final and mandatory. If it has not happened in previous documents, it has to happen in the store transaction. The lots cannot be changed in following documents. 
 
-Store Transactions differ from the other documents with their limits according to the quantities which may be selected for each lot. In the Store Transactions, quantities are limited to the current stock holds. In other documents, there may be more precise restrictions - the “available to promise” (for specified lot). This is a method used to reserve lots. For example, if a Sales Order reserves the whole available quantity of one lot but there is no Store Transaction yet (so the current stock hold is unchanged), it would be wrong if another Sales Order called for quantities from the same lot.
+Store transactions differ from the other documents with their limits according to the quantities which may be selected for each lot. In the store transactions, quantities are limited to the current stock holds. In other documents, there may be more precise restrictions - the “available to promise” (for specified lot). This is a method used to reserve lots. For example, if a sales order reserves the whole available quantity of one lot but there is no store transaction yet (so the current stock hold is unchanged), it would be wrong if another sales order called for quantities from the same lot.
 
-Selecting lots in a document line happens only if the line has no selected lots. If the lot is already specified and there are enough stock holds (with no assurance that the selected lot has the highest priority), only the quantity is validated. Such validation is applied in the Store Transactions, but it is possible to appear earlier (in preceding documents) so the user is warned earlier that he has to select another lot.
+Selecting lots in a document line happens only if the line has no selected lots. If the lot is already specified and there are enough stock holds (with no assurance that the selected lot has the highest priority), only the quantity is validated. Such validation is applied in the store transactions, but it is possible to appear earlier (in preceding documents) so the user is warned earlier that he has to select another lot.
 
-## Lots Issue Methods
+## Lots issue methods
 
-There are three main lots issuing methods - FIFO (First in, first out), FEFO (First expire, first out), LIFO (Last in, first out). They set the lots priorities. Each product uses a lots issuing method for itself. This is specified in the product definition. The product setting may be specified or null. If it is null, there is no sequence in the product's lots and there are no restrictions which lot should be selected (or the product does not use lots). In such cases, the lot is not mandatory even in the Store Transactions.
+There are three main lots issuing methods - FIFO (First in, first out), FEFO (First expire, first out), LIFO (Last in, first out). They set the lots priorities. Each product uses a lots issuing method for itself. This is specified in the product definition. The product setting may be specified or null. If it is null, there is no sequence in the product's lots and there are no restrictions which lot should be selected (or the product does not use lots). In such cases, the lot is not mandatory even in the store transactions.
 
 The priority may be defined by sorting the lots by the date of their first receipt or by the date when they expire:
 
@@ -103,7 +104,7 @@ When the current stock holds of the product have records for both quantity from 
 
 9. the records with no lots.
 
-## Lots Issue Ways
+## Lots issue ways
 
 Lots issue may be done in the following manners:
 
@@ -111,7 +112,7 @@ Lots issue may be done in the following manners:
 
 <b>- automatically</b> (by starting a function by the user or a document event - state change).
 
-### <b>Manual Lot Issue</b>
+### <b>Manual lot issue</b>
 
 In these cases, the system suggests to the user a list of lots sorted according to the lot issue method (by the date of first receipt or the expiry date). The user selects the lots and their quantities (his choice is limited to the available quantity).
 
@@ -121,11 +122,11 @@ Another approach is the sorted list with available lots to be placed in a separa
 
 In both cases, it is useful for the lists to contain additional information: current stock holds, available quantity (for each lot), date of first receipt, expiry date (as date and duration), notes, etc.
 
-### <b>Automatic Lot Issue</b>
+### <b>Automatic lot issue</b>
 
 Automatic lot issue is executed by the system when the user starts it or when an event happens. The automatic lot issue uses the same sorted list of the lots as the manual lot issue. The difference is that the lots are always issued strictly in the order of the list. In the manual lot issue, the user has the option not to issue a specific lot and to skip its turn and use another lot.
 
-### <b>Calculation Of The Quantity In The Last Lot</b>
+### <b>Calculation of the quantity in the last lot</b>
 
 In the lot issue process, it is important to keep in mind that the quantities are entered in the measurement unit of the line. Every quantity fulfillment in the examples is done in the base measurement unit because the current stock holds and the available quantities are always shown in that unit. So, in the examples above, the Quantity Base attribute is used. To enter quantity in the Quantity field (where the measurement unit may differ from the base measurement unit of the product), the <b>Product Dimensions</b> would be used. The problem is that if product dimensions are used for all quantities in the breakdown of the line, the total Quantity might be different from the initial Quantity. This may lead to differences in the quantities in the child and the parent documents and as a result new documents may be created.
 
