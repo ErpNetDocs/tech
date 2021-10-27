@@ -6,9 +6,9 @@ When using this distributional method the coefficients for calculation of the pr
 
 Than the additional amount distribution is performed by the standart formula (in proportions [**ki**]/[**S**], if [**S**] is not **0**, or otherwise - equally throught the rows).
 
-*Example 1:*
+#### Example 1:
 
-There is "Transport" additional amount with input amount of **42 EUR**, which is payed by goods **box**. In the transport definition is marked that it is distributed by quantity and that the measurement category is **Boxes** (where the base measurement unit is **boxes**). The document where the additional amount is selected has three rows = row #10 with quantity of **2 boxes**, row #20 with quantity of **25 pieces** and row #30 with quantity of **18 kg**. The product of row #20 has the following dimension: **1 boxes = 10 pieces**. The product of row #30 has the following dimension: **1 boxes = 3 kg**. Than after converting all row quantities to **boxes**, the following coefficients are calculated:
+There is a Transport additional amount with input amount of **42 EUR**, which is payed by goods **box**. In the transport definition is marked that it is distributed by quantity and that the measurement category is **Boxes** (where the base measurement unit is **boxes**). The document where the additional amount is selected has three rows = row #10 with quantity of **2 boxes**, row #20 with quantity of **25 pieces** and row #30 with quantity of **18 kg**. The product of row #20 has the following dimension: **1 boxes = 10 pieces**. The product of row #30 has the following dimension: **1 boxes = 3 kg**. Than after converting all row quantities to **boxes**, the following coefficients are calculated:
 
 - row #10: [**k1**] = **2**;
 - row #20: [**k2**] = **2.5**;
@@ -20,7 +20,7 @@ Than the amount of **42 EUR** is distributed in the 2:2.5:6 ratio and the result
 - row #20: **42 EUR** * 2.5 / 10.5 = **10 EUR**;
 - row #30: **42 EUR** * 6 / 10.5 = **24 EUR**.
 
-*Example 2:*
+#### Example 2:
 
 There is amount of **42 EUR** of transport as in *Example 1*. Only in the current example the document rows are: row #10 with quantity of **2 boxes**, row #20 with quantity of **30 pieces** and row #30 with quantity of **-15 kg**. Than the coefficients are [**k1**] = **2**, [**k2**] = **3** and [**k3**] =**-5** and total amount of **[S] = 0**.
 
