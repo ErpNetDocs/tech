@@ -1,7 +1,7 @@
 # Common concepts
 
-- [Goods Cost](goods-cost/index.md)
+- [Goods cost](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/index.html?q=Goods%20cost)
 
-- [Lots Issue](lots-issue.md)
+- [Lots issue](https://docs.erp.net/tech/modules/logistics/concepts/lots-issue.html?q=Lots%20issue)
  
-- [Setting Transaction Timestamp](setting-transaction-timestamp/index.md)
+- [Setting transaction timestamp](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/index.html?q=Setting%20transaction%20timestamp)
