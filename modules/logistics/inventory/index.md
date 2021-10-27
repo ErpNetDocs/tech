@@ -4,8 +4,8 @@
 
 - [Lots](https://docs.erp.net/tech/modules/logistics/inventory/lots/index.html?q=Lots)
 
-- [Store orders](https:/docs.erp.net/tech/modules/logistics/inventory/store-orders/index.html)
+- [Store orders](https://docs.erp.net/tech/modules/logistics/inventory/store-orders/index.html?q=Store%20orders)
 
-- [Projected availability report](https:/docs.erp.net/tech/modules/logistics/inventory/projected-availability-report.html)
+- [Projected availability report](https://docs.erp.net/tech/modules/logistics/inventory/projected-availability-report.html?q=Projected%20availability%20report)
 
-- [Receipt and issue balance validation in store transfers](https:/docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html)
+- [Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)
