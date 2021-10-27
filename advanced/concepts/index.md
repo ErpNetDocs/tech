@@ -1,3 +1,3 @@
-TEMPORARY
+## Concepts
 
-[!list folder="." depth=0 style="bullet" limit=100]
+[!list folder="Concepts" depth=0 style="bullet" limit=100]
