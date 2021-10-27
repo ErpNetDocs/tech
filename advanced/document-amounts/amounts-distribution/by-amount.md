@@ -19,7 +19,7 @@ This is how each row coefficient is calculated. After that the distribution  is 
 
 The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [**ki**], which is the base amount only for the **i** row). Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). *Example 2,* below, demonstrates such distribution.
 
-####Example 1:
+#### Example 1:
 
 There are the following additional amounts:
 
@@ -73,7 +73,7 @@ So the VAT distribution is as follows:
 [VAT for row \#10] = 34.86 EUR * 137.61 / 174.3 = 27.522 EUR ~ **27.52 EUR**;
 [VAT for row \#20] = 34.86 EUR * 36.69 / 174.3 = 7.338 EUR ~ **7.34 EUR**.
 
-####Example 2:
+#### Example 2:
 
 There are **20%** VAT and three document rows - row \#10 with **100 EUR,** row \#20 with **-30 EUR** and row \#30 for **-70 EUR**. In this case the VAT is **0 EUR**, but it is not appropriate to distribute **0 EUR** on each row (no matter what the coefficients are), as by law each row  separately must have nonzero VAT. Even if for some reason (for example  specifing roundings) the VAT is not equal to **0**, than it is not appropriate to distribute it equally through the rows (as it will be if we distribute by quantity and we have [**S**] = **0**), because the amounts on each row are different. This is the reason why  in these cases a specific calculation of the distributed amounts is  applied:
 
@@ -85,7 +85,7 @@ There are **20%** VAT and three document rows - row \#10 with **100 EUR,** row \
 
 > [!NOTE]  note text Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in [Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html), in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.
 
-####Example 3:
+#### Example 3:
 
 There is an additional amount VAT with input percent **20%**  and three document rows - row \#10 with amount of **74 EUR**, row \#20 with amount of **26 EUR** and row \#30 with amount of **-45 EUR**. The VAT amount is **11 EUR** and the the subtotals are [positive VAT] = **20 EUR** and [negative VAT] = **-9 EUR**. Then at first the **20 EUR** are distributed on row \#10 and row \#20 in 74:26 ratio:
 
