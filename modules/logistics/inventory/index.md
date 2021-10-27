@@ -1,11 +1,11 @@
 # Inventory 
 
-- [Execute store orders function](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/execute-store-orders-function/index.md)
+- [Execute store orders function](https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/index.html?q=Execute%20store%20orders%20function)
 
-- [Lots](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/lots/index.md)
+- [Lots](https://docs.erp.net/tech/modules/logistics/inventory/lots/index.html?q=Lots)
 
-- [Store orders](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/store-orders/index.md)
+- [Store orders](https:/docs.erp.net/tech/modules/logistics/inventory/store-orders/index.html)
 
-- [Projected availability report](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/projected-availability-report.md)
+- [Projected availability report](https:/docs.erp.net/tech/modules/logistics/inventory/projected-availability-report.html)
 
-- [Receipt and issue balance validation in store transfers](https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.md)
+- [Receipt and issue balance validation in store transfers](https:/docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html)
