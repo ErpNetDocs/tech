@@ -1,18 +1,18 @@
 # Percent value calculation
 
-Here, the percent from _'Input Percent'_ is used. 
+Here, the percent from *Input Percent* is used. 
 
-First, we should know the value of the amounts which will be used to apply the percent calculation. It is defined by the additional amount definition in _'Base On Line'_ field and the 'Document Amount Type Dependencies' panel (also known as 'Base Additional Amounts'). According to the definitions, the base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:
+First, we should know the value of the amounts which will be used to apply the percent calculation. It is defined by the additional amount definition in *Base On Line* field and the *Document Amount Type Dependencies* panel (also known as *Base Additional Amounts*). According to the definitions, the base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:
  
 **[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])**.
  
 The Base amount is defined in two steps:
 
-1. Sum the amounts of the current document to all additional amounts listed in the 'Document Amount Type Dependencies' panel. This requires the previous calculation of the other amounts.
+1. Sum the amounts of the current document to all additional amounts listed in the *Document Amount Type Dependencies* panel. This requires the previous calculation of the other amounts.
 
-2. If the Additional Amount is marked as _'Base On Lines'_, then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
+2. If the Additional Amount is marked as *Base On Lines* , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
 
-For more information, see **[Rows Weighting](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/rows-weighting.md)**).
+For more information, see **[Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
 
 
 *Example 1*:
@@ -21,23 +21,23 @@ If we have the following additional amounts:
 
 - Corporate Discount:
 
-    - Default Percent is -3%;
-    - _'Base On Lines'_ is True;
-    - there are no other additional amounts listed in the 'Document Amount Type Dependencies' panel;
-    - Round Scale is "2";
+    - Default percent is -3%;
+    - Base on lines is True;
+    - there are no other additional amounts listed in the *Document Amount Type Dependencies* panel;
+    - Round scale is '2';
     
 - Easter bonus:
 
     - No Default percent;
-    - _'Amount Input Allowed'_ is True;
-    - _'Percent Input Allowed'_ is False;
-    - Round Scale is "2";
+    - Amount input allowed is True;
+    - 'Percent input allowed' is False;
+    - Round scale is '2';
     
 - VAT:
 
-    - Default Percent is 20%;
-    - _'Base On Lines'_ is True;
-    - the 'Document Amount Type Dependencies' panel states that VAT is applied to "Corporate Discount" and "Easter Bonus";
+    - Default percent is 20%; 
+    - Base on lines is True;
+    - the *ocument Amount Type Dependencies* panel sates that VAT is applied to orporate Discount" and "Easter Bonus";
     - Round Scale is "2";
  
 If we have two document rows - one with a line amount of 150 EUR and another with 40 EUR, then we enter an additional "Easter Bonus" value of "-10 EUR". 
