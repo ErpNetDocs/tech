@@ -13,7 +13,7 @@ The main purpose is written in the document rows or in the document header. For 
 
 The amounts listed above are base amounts in documents and they are NOT additional.
 
-The **additional amounts** are not proper to be reported along with the main document purpose or they are secondary effect of the main document purpose. 
+The **document amounts** are not proper to be reported along with the main document purpose or they are secondary effect of the main document purpose. 
 These are some examples:
 
 - VAT (and other taxes) - taxes, like VAT, are not products which the enterprise company is selling, producing or supplying; bеcause of this the taxes are usually reported as additional amounts in the documents;
@@ -24,4 +24,3 @@ These are some examples:
 - commissions (and other internal mechanisms for payments or money accounting) - commissions and similar can be entered as additional amounts too; if they are used as additional amounts, they can represent a percent of the document amount and the result can be used for recording internal company performance indicators or personal employees indicators.
 
 [!list folder="." file="index*" depth=1 style="bullet" limit=100]
-
