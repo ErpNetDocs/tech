@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../../">
     
@@ -86,11 +86,14 @@
 </ul>
 <p>So, to define the proportion of row <strong>i</strong>, its coefficient is calculated (initially) as follows:</p>
 <p>[<strong>ki</strong>] = [distributed to row <strong>i</strong> amount1] + [distributed to row <strong>i</strong> amount2] + ... + [distributed to row <strong>i</strong> amountm].</p>
-<p>So amount1, amount2 ... amountm are the additional amounts, to which we add the current additional amount  that is distributed (i.e. the amounts, that are listed in its definition in the <em>Document Amount Type Dependencies</em> panel). If there are no such amounts, than in this initial calculation we have [<strong>ki</strong>] = <strong>0</strong>. Also if Base on lines is True (in the current additional amount), than to the initial value for [<strong>ki</strong>] the row amount is added.</p>
+<p>So amount1, amount2 ... amountm are the additional amounts, to which we add the current additional amount  that is distributed (i.e. the amounts, that are listed in its definition in the <em>Document Amount Type Dependencies</em> panel).
+If there are no such amounts, than in this initial calculation we have [<strong>ki</strong>] = <strong>0</strong>. Also if Base on lines is True (in the current additional amount), than to the initial value for [<strong>ki</strong>] the row amount is added.</p>
 <p>[<strong>ki</strong>] = [<strong>ki</strong>] + [row <strong>i</strong> amount].</p>
-<p>This is how each row coefficient is calculated. After that the distribution  is performed as usual, except for the case when the amount [<strong>S</strong>] is <strong>0</strong> and the additional amount is calculated as a percent. In this case the  amount is distributed equally through the rows and for each row the  calculation is performed like this:</p>
+<p>This is how each row coefficient is calculated. After that the distribution  is performed as usual, except for the case when the amount [<strong>S</strong>] is <strong>0</strong> and the additional amount is calculated as a percent.
+In this case the  amount is distributed equally through the rows and for each row the  calculation is performed like this:</p>
 <p>[row <strong>i</strong> distribution] = ROUND([<strong>ki</strong>] * [Input Percent], [Round Scale).</p>
-<p>The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row). Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). <em>Example 2,</em> below, demonstrates such distribution.</p>
+<p>The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row).
+Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). <em>Example 2,</em> below, demonstrates such distribution.</p>
 <h4 id="example-1">Example 1:</h4>
 <p>There are the following additional amounts:</p>
 <ul>
@@ -143,9 +146,10 @@
 <p>[VAT for row #10] = 100 EUR* 0.2 = <strong>20 EUR</strong>;
 [VAT for row #20] = -30 EUR * 0.2 = <strong>-6 *<em>EUR*</em></strong>;
 [VAT for row #30] = -70 EUR * 0.2 = <strong>-14 *<em>EUR*</em></strong>.</p>
-<blockquote>
-<p>[!NOTE]  note text Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a>, in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a>, in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.</p>
+</div>
 <h4 id="example-3">Example 3:</h4>
 <p>There is an additional amount VAT with input percent <strong>20%</strong>  and three document rows - row #10 with amount of <strong>74 EUR</strong>, row #20 with amount of <strong>26 EUR</strong> and row #30 with amount of <strong>-45 EUR</strong>. The VAT amount is <strong>11 EUR</strong> and the the subtotals are [positive VAT] = <strong>20 EUR</strong> and [negative VAT] = <strong>-9 EUR</strong>. Then at first the <strong>20 EUR</strong> are distributed on row #10 and row #20 in 74:26 ratio:</p>
 <p>[VAT for row #10] = 20 EUR * 74 / 100 = <strong>14.80 EUR</strong>;</p>

@@ -949,15 +949,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/aggregates.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/aggregates.html",
-          "hash": "T4h2/Fsf8L/8LPrWq6qleQ=="
+          "hash": "W4lPNcsFpQsbTYNH/Mrzkg=="
         }
       },
       "is_incremental": false,
@@ -1112,7 +1109,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/explicit-calculation.html",
-          "hash": "5EHlz/OHgLtc1SDVlmfWnQ=="
+          "hash": "eRDIN806XDtADAy5cZG0Pw=="
         }
       },
       "is_incremental": false,
@@ -1124,7 +1121,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/index.html",
-          "hash": "XpQ/drAkrBF53Qk/zX5umQ=="
+          "hash": "lIjNC6uB4lkIXlx5w8nHnQ=="
         }
       },
       "is_incremental": false,
@@ -1136,22 +1133,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "mMtJ0otUDj9lDt5X/+pIGA=="
+          "hash": "dY+e8N6j7KrUyreB1MR7mQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/amounts-distribution/by-amount.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-amount.html",
-          "hash": "rNB/TIlChZoXDqie80qQhw=="
+          "hash": "Xx15zbtOO1uCRe9HHZmfRg=="
         }
       },
       "is_incremental": false,
@@ -1163,7 +1157,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-product-definition.html",
-          "hash": "QwYhd6fxpnu7aJaV4/94dQ=="
+          "hash": "SGid1D/O9SKwl2xjHmG0KA=="
         }
       },
       "is_incremental": false,
@@ -1175,7 +1169,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-quantity.html",
-          "hash": "D6ZtXs2HaAph1tLpwVAKGA=="
+          "hash": "tmw6Yex9o5wQyyBE8lqlqA=="
         }
       },
       "is_incremental": false,
@@ -1187,7 +1181,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/index.html",
-          "hash": "QDXh+/qvHz8uAtrCusTmeA=="
+          "hash": "13X9dzy3kHS2jlNgunJ/WA=="
         }
       },
       "is_incremental": false,
@@ -1199,7 +1193,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/determination-and-recording.html",
-          "hash": "5i5aSDHV2P9W8moJHZRK1w=="
+          "hash": "+JlYbmqbbZNoejHLUfx2WQ=="
         }
       },
       "is_incremental": false,
@@ -1211,49 +1205,31 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/index.html",
-          "hash": "C5ZL8X4I6fbDCiOGbd6Pqw=="
+          "hash": "8Uy1+zrT/RNFivlPmPSo2Q=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/referenced-documents.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/referenced-documents.html",
-          "hash": "6LvE94Ke4irwNamLvAz8NA=="
+          "hash": "5+FIdbpzio9xA+K5KiLkfQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/rows-weighting.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/rows-weighting.html",
-          "hash": "3T3VJ40NjQ4EaPcxwRRepQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "advanced/document-amounts/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/document-amounts/toc.html",
-          "hash": "4aJL6pFVQgcreLGwz2cXDg=="
+          "hash": "BcNP8V3ngwZIlwIA8IWVMA=="
         }
       },
       "is_incremental": false,
@@ -1265,7 +1241,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/usage.html",
-          "hash": "cYwka3elJ7MwtkeVwYrGnw=="
+          "hash": "OKqlBU2qJBpJL/qPBujUnQ=="
         }
       },
       "is_incremental": false,
@@ -1608,16 +1584,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidTocInclude",
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "advanced/toc.yml",
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "z5J0kHnDvfIFWZGeth7jUg=="
+          "hash": "ssjmEZPVbUGQSsjbuhc3dQ=="
         }
       },
       "is_incremental": false,
@@ -4349,11 +4321,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/standart-quantity-base.md",
+      "source_relative_path": "modules/logistics/concepts/standard-quantity-base.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/concepts/standart-quantity-base.html",
-          "hash": "e2I3GisWk8+YImr6HAPkAQ=="
+          "relative_path": "modules/logistics/concepts/standard-quantity-base.html",
+          "hash": "nzbi01HVmnfy5SNNnT0J1A=="
         }
       },
       "is_incremental": false,
@@ -4485,7 +4457,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/available-to-promise/atp-algorithm.html",
-          "hash": "Em9H+HtfZ5xvTXKIvwTkTQ=="
+          "hash": "yVxDD2EDUHJfU1nSCbA4Ww=="
         }
       },
       "is_incremental": false,
@@ -4731,21 +4703,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Toc",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/toc.html",
-          "hash": "9kaqPqZHTGmeknnkeUQoMg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-it-works/pictures/two-zones.png",
       "output": {
@@ -4880,7 +4837,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "jqU8rEhUTRQRTaT8potSPA=="
+          "hash": "ipcXJ/ygg2/6+FzNR6R9+g=="
         }
       },
       "is_incremental": false,

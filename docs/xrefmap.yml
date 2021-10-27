@@ -1,9 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: additional-amounts
-  name: Additional amounts
-  href: advanced/document-amounts/index.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
@@ -160,6 +157,9 @@ references:
 - uid: cao-WHERE
   name: WHERE
   href: advanced/calculated-attributes/operators/where.html
+- uid: document-amounts
+  name: Document amounts
+  href: advanced/document-amounts/index.html
 - uid: domain-with-property-allowed-values
   name: Domain with property allowed values
   href: advanced/custom-attributes/domain-with-property-allowed-values.html
