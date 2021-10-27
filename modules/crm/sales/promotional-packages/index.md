@@ -1,9 +1,9 @@
-# Promotional Packages
+# Promotional packages
 
 
- **Promotional packages** are packages of products, which can be added into the sales orders. After they are added, the products from the package appear as sales order lines and their quantity is multiple of the number of the sold packages. If a line is added from a promotional package, then the name of the promotional package is filled in the line field 'Promotional package'.
+ **Promotional packages** are packages of products, which can be added into the sales orders. After they are added, the products from the package appear as sales order lines and their quantity is multiple of the number of the sold packages. If a line is added from a promotional package, then the name of the promotional package is filled in the line field *Promotional package*.
 
-A promotional package can be applied for a sales order only if it fulfills the conditions of the package such as Starting date, End date, Customer, Enterprise company, Price List and others.
+A promotional package can be applied for a sales order only if it fulfills the conditions of the package such as Starting date, End date, Customer, Enterprise company, Price list and others.
 
 
 |Promotional package fields |Description
@@ -22,7 +22,7 @@ A promotional package can be applied for a sales order only if it fulfills the c
 
 **Promotional package lines**
 
-Promotional package's lines represent the products that are part of  the particular package. *Quantity* and *Standard discount percent adjust* are required for each line.
+Promotional package's lines represent the products that are part of  the particular package. Quantity and Standard discount percent adjust are required for each line.
 
 
 |Promotional package line fields|Description
