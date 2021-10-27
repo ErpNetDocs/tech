@@ -1,17 +1,17 @@
 # Amounts distribution
 
-After the additional sum is calculated (see [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)), the result is not saved directly in the document, but it is distributed through the document rows ( more precisely - through those rows which  the additional amount is applied to - the ones with nonzero weight, see [Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)) and this distribution is saved in the document. So after the amount is  calculated and distributed, if the user needs to see the total value of  the additional amount, he has to  sum up all the values from its  distribution. This is easier than saving the total additional amount in  the document, because often the distributed to a specific row amount is  needed (for example - to see the VAT distributed to a specific product  or the transport distributed to a specific product, so that we can add  this amount to its value). If we save the total additional amount in the document, in these cases the user will have to distribute the amounts  at the moment, which is not very effective. 
+After the additional sum is calculated (see [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)), the result is not saved directly in the document, but it is distributed through the document rows ( more precisely - through those rows which  the additional amount is applied to - the ones with nonzero weight, see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)) and this distribution is saved in the document. So after the amount is  calculated and distributed, if the user needs to see the total value of  the additional amount, he has to  sum up all the values from its  distribution. This is easier than saving the total additional amount in  the document, because often the distributed to a specific row amount is  needed (for example - to see the VAT distributed to a specific product  or the transport distributed to a specific product, so that we can add  this amount to its value). If we save the total additional amount in the document, in these cases the user will have to distribute the amounts  at the moment, which is not very effective. 
 
 The article (and the  subarticles) descirbes the methods for distributing the amounts throught the rows. Also, a procedure for amount distribution is described  when, because of roundings, the amount cannot be precisely distributed,  and other specific cases.
 
 ## Common principle of distribution
 
 The distribution principle is defined in the additional amount definition  (by *Distributed By* field). There are three basic methods
-- by quantity (see [Amount Distribution By Quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)),
--  by amount (see [Amount Distribution By Amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html) and 
-- by product definition (see [Amount Distribution By Product Definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)). Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.
+- by quantity (see [Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)),
+-  by amount (see [Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html) and 
+- by product definition (see [Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)). Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.
 
-So if we have **n** rows on which we have to distribute additional amount, for every row a weight is defined - [**k1**], [**k2**] ... [**kn**]. In the common case, these are different coefficients than those described in [Rows Weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) (but in some specific cases the coefficients from [rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) may participate in the calculation of the distribution weights). So if the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount is not equal to 0, than the **i**-row the proportion is [**ki**]/[**S**]:
+So if we have **n** rows on which we have to distribute additional amount, for every row a weight is defined - [**k1**], [**k2**] ... [**kn**]. In the common case, these are different coefficients than those described in [rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) (but in some specific cases the coefficients from [rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) may participate in the calculation of the distribution weights). So if the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount is not equal to 0, than the **i**-row the proportion is [**ki**]/[**S**]:
 
 [distribution to row **i**] = ROUND([amount] * [**ki**] / [**S**], [Round Scale]),
 
@@ -44,6 +44,6 @@ For further information on how the distibuted amount is calculated by each metho
 
  
 
-- [Amount Distribution By Amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)
-- [Amount Distribution By Product Definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)
-- [Amount Distribution By Quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)
+- [Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)
+- [Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)
+- [Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)
