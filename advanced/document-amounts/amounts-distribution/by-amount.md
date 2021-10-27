@@ -9,15 +9,18 @@ So, to define the proportion of row **i**, its coefficient is calculated (initia
 
 [**ki**] = [distributed to row **i** amount1] + [distributed to row **i** amount2] + ... + [distributed to row **i** amountm].
 
-So amount1, amount2 ... amountm are the additional amounts, to which we add the current additional amount  that is distributed (i.e. the amounts, that are listed in its definition in the *Document Amount Type Dependencies* panel). If there are no such amounts, than in this initial calculation we have [**ki**] = **0**. Also if Base on lines is True (in the current additional amount), than to the initial value for [**ki**] the row amount is added.
+So amount1, amount2 ... amountm are the additional amounts, to which we add the current additional amount  that is distributed (i.e. the amounts, that are listed in its definition in the *Document Amount Type Dependencies* panel). 
+If there are no such amounts, than in this initial calculation we have [**ki**] = **0**. Also if Base on lines is True (in the current additional amount), than to the initial value for [**ki**] the row amount is added.
 
 [**ki**] = [**ki**] + [row **i** amount].
 
-This is how each row coefficient is calculated. After that the distribution  is performed as usual, except for the case when the amount [**S**] is **0** and the additional amount is calculated as a percent. In this case the  amount is distributed equally through the rows and for each row the  calculation is performed like this:
+This is how each row coefficient is calculated. After that the distribution  is performed as usual, except for the case when the amount [**S**] is **0** and the additional amount is calculated as a percent. 
+In this case the  amount is distributed equally through the rows and for each row the  calculation is performed like this:
 
 [row **i** distribution] = ROUND([**ki**] * [Input Percent], [Round Scale).
 
-The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [**ki**], which is the base amount only for the **i** row). Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). *Example 2,* below, demonstrates such distribution.
+The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [**ki**], which is the base amount only for the **i** row).
+Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). *Example 2,* below, demonstrates such distribution.
 
 #### Example 1:
 
@@ -81,9 +84,8 @@ There are **20%** VAT and three document rows - row \#10 with **100 EUR,** row \
 [VAT for row \#20] = -30 EUR * 0.2 = **-6 \**EUR\****;
 [VAT for row \#30] = -70 EUR * 0.2 = **-14 \**EUR\****.
 
- 
-
-> [!NOTE]  note text Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in [Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html), in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.
+> [!NOTE] 
+> Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in [Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html), in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.
 
 #### Example 3:
 
