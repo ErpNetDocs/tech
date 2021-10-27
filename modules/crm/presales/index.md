@@ -4,7 +4,7 @@ The presales module is used to manage the presales process.
 
 ## Deals (Opportunities)
 
-> *Activity* → **Opportunity** → *Offer* → *Sales Order* → *Invoice Order* → *Invoice*
+> *Activity* → **Opportunity** → *Offer* → *Sales order* → *Invoice order* → *Invoice*
 
 The deals in the @Crm.Presales.Deals are used to manage sales opportunities to new or existing customers.
 
@@ -27,9 +27,9 @@ However, once a deal is created, it can be used to create many more sub-activiti
 
 ## Offers (quotes)
 
-> *Activity* → *Opportunity* → **Offer** → *Sales Order* → *Invoice Order* → *Invoice*
+> *Activity* → *Opportunity* → **Offer** → *Sales order* → *Invoice order* → *Invoice*
 
 The deals documents can be easily transformed into Offers (quotes), which contain detailed line items.
 
 Entries in the @Crm.Presales.Offers allows the customer to be presented with optional items.
-After approving some or all of the optional items, the offer can generate @Crm.Sales.SalesOrders in the [Sales](../sales/index.md) module.
+After approving some or all of the optional items, the offer can generate @Crm.Sales.SalesOrders in the [Sales](https://docs.erp.net/tech/modules/crm/sales/index.html) module.
