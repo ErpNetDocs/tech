@@ -9,7 +9,3 @@ Documents in @@name often have **sub-documents**. Most of the time, they are [au
 Documents, their sub-documents, the sub-documents of the sub-documents, etc. **form** a sequence, or hierarchy. The document flow design, therefore, is one of the most important aspects of implementing @@name for a target enterprise.
 
 The designed is achieved with the help of specific document routes built for each document type.
-
-Temporary
-
-[!list folder="." file="e*" exclude=dete*]
