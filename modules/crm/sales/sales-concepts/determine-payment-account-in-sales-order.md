@@ -15,7 +15,7 @@ SalesOrder.PaymentAccount is set to one of the following (in order of their prec
 
 1. Initially, the user chooses a customer. The payment type and the payment account of the customer would be copied to the sales order.
 
->[!NOTE:] It is important, that the customers' payment type IS set to some non-null value!
+>[!NOTE] : It is important, that the customers' payment type IS set to some non-null value!
 
 The following events happen:
 - The user selects a customer.
