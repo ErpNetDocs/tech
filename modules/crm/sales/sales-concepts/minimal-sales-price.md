@@ -12,7 +12,7 @@ If it is set in the product distribution channel, then it validates the sales or
  
 > [!NOTE]: The minimal price constraint does not take effect when the user enters a sales return.
  
-The restriction is not directly applied to the unit price in the sales order. As the unit price in the Sales Order lines does not reflect discounts, the restriction calculates the final unit price through the line amount and is applied to the calculated results.
+The restriction is not directly applied to the unit price in the sales order. As the unit price in the sales order lines does not reflect discounts, the restriction calculates the final unit price through the line amount and is applied to the calculated results.
  
 #### Example 1 :
  
@@ -22,7 +22,7 @@ There is a sales order with the following line:
  
 - Line No = **10**, Product = **Product A** , Unit Price = **9.20 EUR**, Line Custom Discount Percent = **5%**; Quantity Base = **3 PCS**; Line Amount = **26.22 EUR**.
 
-When the user tries to release the Sales Order, he will receive an error message, that the unit price is less than the minimum unit price of the product. This is because the unit price with the calculated discount is as follows: [Line Amount] / [Quantity Base] = **26.22 EUR** / **3 PCS = 8.74 EUR**. In this case, because of the custom discount the user has entered, the unit price of the product goes under the minimum sales price of the product.
+When the user tries to release the sales order, he will receive an error message, that the unit price is less than the minimum unit price of the product. This is because the unit price with the calculated discount is as follows: [Line Amount] / [Quantity Base] = **26.22 EUR** / **3 PCS = 8.74 EUR**. In this case, because of the custom discount the user has entered, the unit price of the product goes under the minimum sales price of the product.
  
 #### Example 2 :
  
