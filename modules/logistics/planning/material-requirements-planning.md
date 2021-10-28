@@ -1,6 +1,6 @@
-# Material Requirements Planning
+# Material requirements planning
 
-Material Requirements Planning (MRP) is a planning process designed to match supply with demand. MRP does this by creating Supply (Purchase/Work/Transfer) Orders to meet or exceed the demand, according to the MRP parameters.
+Material requirements planning (MRP) is a planning process designed to match supply with demand. MRP does this by creating supply (purchase/work/transfer) orders to meet or exceed the demand, according to the MRP parameters.
 
 Some information could be obtained from here:
 
@@ -8,15 +8,15 @@ https://en.wikipedia.org/wiki/Material_requirements_planning
 
 The MRP process in @@name is an implementation which mostly follows the general theory. However, in order to use MRP, you need to do the @@name-specific setup.
 
-## Document Types and Routes Setup
+## Document types and routes setup
 
-The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>Store Orders</b> with state = [Planned](https://github.com/ErpNetDocs/tech/blob/362feb42dff42c7bb6ce84d5bcde14d1afdc6ddb/advanced/documents/document-states.md). Therefore, the document routes for Sales Orders, Purchase Orders, Work Orders, etc. should be adequately designed to generate Store Orders with a Planned state.
+The document routes should be properly set-up. The main input parameter for MRP is <b>demand</b>. It is calculated based entirely on <b>store orders</b> with state = [Planned](https://docs.erp.net/tech/concepts/documents/states.html?q=document%20states). Therefore, the document routes for sales orders, purchase orders, work orders, etc. should be adequately designed to generate store orders with a planned state.
 
-> If a Store Order is generated solely for the purposes of MRP demand management, it can be set with the <i>Planning_Only</i> attribute. This attribute does not allow the setting of <i>Firm Planned</i> (or higher) states.
+> If a store order is generated solely for the purposes of MRP demand management, it can be set with the <i>Planning_Only</i> attribute. This attribute does not allow the setting of <i>Firm Planned</i> (or higher) states.
 
-## Simplified Description of a Single MRP Run
+## Simplified description of a single MRP run
 
-When MRP is run for a warehouse (Store), it does the following to <b>each</b> product:
+When MRP is run for a warehouse (store), it does the following to <b>each</b> product:
 
 1. Calculates demand.
 
@@ -24,9 +24,9 @@ When MRP is run for a warehouse (Store), it does the following to <b>each</b> pr
 
 3. Determines the required quantity.
 
-4. Creates a Purchase/Work/Transfer Order for the desired quantity.
+4. Creates a purchase/work/transfer order for the desired quantity.
 
-> When MRP is run for multiple warehouses (Stores), the system tries to prioritize the supply order of the warehouses. This might not always be successful, especially in cases of circular supply orders.
+> When MRP is run for multiple warehouses (stores), the system tries to prioritize the supply order of the warehouses. This might not always be successful, especially in cases of circular supply orders.
 
 ## Terms
 
@@ -40,7 +40,7 @@ There are many terms used in MRP. We will try to provide simple descriptions for
 
 > The <i>Planning Buckets</i> (also known as "buckets") exist only within the time frame specified by the Planning Horizon. When we say "bucket", it is a <i>Planning Bucket</i> in the future, but within the <i>Planning Horizon</i>.
 
-## Time Fences
+## Time fences
 
 Time fences are boundaries between different periods in the planning horizon.
 
@@ -53,27 +53,27 @@ The planning process considers bigger either the demand or forecast for each buc
 - <i>After PTF</i> - only the forecasts are considered accurate.
 The planning process considers only forecasts.
 
-## Product Supply Definitions
+## Product supply definitions
 
-The MRP process is set-up through the Product Supply definitions. Each definition contains the planning parameters for one product and one warehouse (Store).
+The MRP process is set-up through the product supply definitions. Each definition contains the planning parameters for one product and one warehouse (store).
 
-Every warehouse (Store) needs to create a separate product supply definition for each product, which will be planned for this warehouse.
+Every warehouse (store) needs to create a separate product supply definition for each product, which will be planned for this warehouse.
 
-The Product Supply definitions parametrize the <b>when</b>, <b>how much</b>, and <b>how</b> of the MRP planning system.
+The product supply definitions parametrize the <b>when</b>, <b>how much</b>, and <b>how</b> of the MRP planning system.
 
-### Procurement Type
+### Procurement type
 
-Procurement Type specifies what to do when a supply order needs to be created. The options are:
+Procurement type specifies what to do when a supply order needs to be created. The options are:
 
-- Buy - Create a Purchase Order
+- Buy - Create a purchase order
 
-- Make - Create a Work Order
+- Make - Create a work order
 
-- Transfer - Create a Transfer Order
+- Transfer - Create a transfer order
 
-### Order Policy
+### Order policy
 
-The Order Policy specifies when the supply is not enough and a supply order needs to be created. The options are:
+The order policy specifies when the supply is not enough and a supply order needs to be created. The options are:
 
 - <b>MRP</b> - a supply order is created for:
 
@@ -89,9 +89,9 @@ The Order Policy specifies when the supply is not enough and a supply order need
 
 - <b>PRS</b> - a supply order is created unconditionally on each order cycle. <i>Planning Order Cycle Days</i> specifies the number of days in the order cycle.
 
-### Lot Sizing Method
+### Lot sizing method
 
-The Lot Sizing Method specifies how much should be ordered. It is divided in two separate calculations:
+The lot sizing method specifies how much should be ordered. It is divided in two separate calculations:
 
 1. Algorithm calculations.
 
