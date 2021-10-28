@@ -4,7 +4,7 @@ In many cases, the line amounts from the document rows play a major role in the 
 
 For example, it is possible for some products in an invoice to be **exempt** from income tax (VAT). This leads to not all document rows participating in the VAT calculation. The calculated amount will be distributed only among the ones that **have** participated. Similar is the case with the 'Customs additional amount’ in purchase invoices, where a customs fee is due for particular products.
 
-There is a mechanism allowing the indication of some rows as more important than others - users can set weights, coefficients, or in some cases percentages for each document row. It is available in the *Document Line Amounts* panel, also known as *Amounts Distribution By Rows'. Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as distributed by product definition (see [**Amounts Distribution**](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
+There is a mechanism allowing the indication of some rows as more important than others - users can set weights, coefficients, or in some cases percentages for each document row. It is available in the *Document Line Amounts* panel, also known as *Amounts Distribution By Rows'. Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as distributed by product definition (see [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
 In this panel, weights are entered in two ways:
 
@@ -14,7 +14,7 @@ In this panel, weights are entered in two ways:
 > [!NOTE] 
 > If there are no weights for additional amount in the panel, then it is considered that all weights are equal to **100%**.
 
-Below, brief descriptions and examples for the different input methods are explained. For more information on the role of weights/coefficients in the calculation and distribution, see [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
+Below, brief descriptions and examples for the different input methods are explained. For more information on the role of weights/coefficients in the calculation and distribution, see [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
 ## Weights & coefficients in the product definitions
 
@@ -40,7 +40,7 @@ These are the coefficients/weights for each row:
 
 The 'Customs' amount is **8.20 EUR** and it is distributed through the rows as **2.20 EUR : 0 EUR : 6 EUR : 0 EUR** 
 
-Check out [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts Distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html) for more information.
+Check out [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html) for more information.
 
 ## Weights & coefficients in the document
 
@@ -61,7 +61,7 @@ The user manually sets the following percentages (**100%** on rows #30 and #40):
 - row #30: weight = **1.00**;
 - row #40: weight = **1.00**.
 
-The Specific VAT is **19 EUR** [Amounts Calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and it is distributed through the rows as **0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR**.
+The Specific VAT is **19 EUR** [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and it is distributed through the rows as **0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR**.
 
 ####Example 3:
 
