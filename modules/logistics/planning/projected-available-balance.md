@@ -4,7 +4,7 @@
 
 Projected available balance (PAB) shows the inventory balance projected into the future. It is the running sum of the current stock holds with scheduled receipts added, minus planned issue stock orders.
 
-The projected available balance is used in the calculation of the [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise).
+The projected available balance is used in the calculation of the **[available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise)**.
 
 ## The algorithm
 
@@ -53,4 +53,4 @@ The PAB line can be seen on the following chart:
  
 > All documents in @@name that may lead to store movements can be set to generate <i>planned or firmed store orders</i> - directly or through other documents. 
 > 
-> With this setting, the documents can be involved in the projected available balance and [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise) calculations.
+> With this setting, the documents can be involved in the projected available balance and **[available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise)** calculations.
