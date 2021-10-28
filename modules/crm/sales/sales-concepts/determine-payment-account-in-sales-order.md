@@ -1,8 +1,8 @@
-# Determine Payment Account in Sales Order
+# Determine payment account in sales order
 
 ## The algorithm
 
-The algorithm for the determination of the Payment Account in the Sales Order is the following:
+The algorithm for the determination of the payment account in the sales order is the following:
 
 SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):
 
@@ -15,7 +15,7 @@ SalesOrder.PaymentAccount is set to one of the following (in order of their prec
 
 1. Initially, the user chooses a customer. The payment type and the payment account of the customer would be copied to the sales order.
 
-NOTE: It is important, that the customers' payment type IS set to some non-null value!
+>[!NOTE:] It is important, that the customers' payment type IS set to some non-null value!
 
 The following events happen:
 - The user selects a customer.
@@ -24,7 +24,7 @@ The following events happen:
 
 2. If however, the user chooses a different payment type, the default account of this new payment type is selected.
  
-For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the "Credit Card" payment type. 
+For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the 'Credit Card' payment type. 
  
 The event order is the following:
  
