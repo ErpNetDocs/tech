@@ -158,7 +158,7 @@ references:
   name: WHERE
   href: advanced/calculated-attributes/operators/where.html
 - uid: document-amounts
-  name: Document amounts
+  name: Additiona amounts
   href: advanced/document-amounts/index.html
 - uid: domain-with-property-allowed-values
   name: Domain with property allowed values

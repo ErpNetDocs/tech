@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Determine Line Amount in Sales Orders | ERP.net Tech Docs </title>
+    <title>Determine line amount in sales orders | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Determine Line Amount in Sales Orders | ERP.net Tech Docs ">
+    <meta name="title" content="Determine line amount in sales orders | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="determine-line-amount-in-sales-orders">Determine Line Amount in Sales Orders</h1>
+<h1 id="determine-line-amount-in-sales-orders">Determine line amount in sales orders</h1>
 
-<p>The Line Amount in a Sales Order is formed by the following fields: <strong>&quot;Quantity&quot;</strong>, <strong>&quot;Unit Price&quot;</strong>, <strong>&quot; Line Standard Discount Percent&quot;</strong> and <strong>&quot;Line Custom Discount Percent&quot;</strong>. The fields <strong>&quot;Unit Price&quot;, &quot;Line Standard Discount Percent&quot;</strong> and <strong>&quot;Line Custom Discount Percent&quot;</strong> represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
-The formula of the field Line Amount is rounded up to the second digit and is as follows:</p>
+<p>The line amount in a sales order is formed by the following fields: <strong>&quot;Quantity&quot;</strong>, <strong>&quot;Unit Price&quot;</strong>, <strong>&quot; Line Standard Discount Percent&quot;</strong> and <strong>&quot;Line Custom Discount Percent&quot;</strong>. The fields <em>Unit Price</em>, <em>Line Standard Discount Percent</em> and &quot;Line Custom Discount Percent* represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
+The formula of the field line amount is rounded up to the second digit and is as follows:</p>
 <p><strong>[LineAmount]</strong> = Round(<strong>[Quantity]</strong> * <strong>[Unit Price]</strong> * (1 - <strong>[Line Standard Discount Percent]</strong>) * (1 - <strong>[Line Custom Discount Percent]</strong>))</p>
 <p><em><strong>Example 1</strong></em>:</p>
 <p>In the row there is Quantity <strong>7 PCS</strong> and Unit Price <strong>0.15472 EUR</strong> and no discounts, then the Line Amount is:</p>
@@ -89,7 +89,7 @@ The formula of the field Line Amount is rounded up to the second digit and is as
 <p>In the row there is Quantity <strong>27 PCS</strong> and Unit Price <strong>0.15472 EUR</strong>, the discounts are <strong>19%</strong> and <strong>7%</strong>, then the Line Amount is:</p>
 <p><strong>[Line Amount]</strong> = Round( <strong>27 * 0.15472</strong> * (1 - <strong>0.19</strong>) * (1 - <strong>0.07</strong>)) = Round(<strong>1.08304</strong>) = <strong>1.08</strong>.</p>
 <p>There are also other row amount types which meaning and calculation are different than those of amount saved in the field LineAmount.</p>
-<p>For more information, see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/amount-to-pay.md">Amount To Pay</a></strong>.</p>
+<p>For more information, see <a href="https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html">Amount to Pay</a>.</p>
 </article>
           </div>
           
