@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Determine Payment Account in Sales Order | ERP.net Tech Docs </title>
+    <title>Determine payment account in sales order | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Determine Payment Account in Sales Order | ERP.net Tech Docs ">
+    <meta name="title" content="Determine payment account in sales order | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="determine-payment-account-in-sales-order">Determine Payment Account in Sales Order</h1>
+<h1 id="determine-payment-account-in-sales-order">Determine payment account in sales order</h1>
 
 <h2 id="the-algorithm">The algorithm</h2>
-<p>The algorithm for the determination of the Payment Account in the Sales Order is the following:</p>
+<p>The algorithm for the determination of the payment account in the sales order is the following:</p>
 <p>SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):</p>
 <ol>
 <li>If the ShipToCustomer.DefaultPaymentType = SalesOrder.PaymentType AND the ShipToCustomer.PaymentAccount is not null =&gt; it is taken.</li>
@@ -92,7 +92,9 @@
 <ol>
 <li>Initially, the user chooses a customer. The payment type and the payment account of the customer would be copied to the sales order.</li>
 </ol>
-<p>NOTE: It is important, that the customers' payment type IS set to some non-null value!</p>
+<blockquote>
+<p>[!NOTE] : It is important, that the customers' payment type IS set to some non-null value!</p>
+</blockquote>
 <p>The following events happen:</p>
 <ul>
 <li>The user selects a customer.</li>
@@ -102,7 +104,7 @@
 <ol start="2">
 <li>If however, the user chooses a different payment type, the default account of this new payment type is selected.</li>
 </ol>
-<p>For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the &quot;Credit Card&quot; payment type.</p>
+<p>For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the 'Credit Card' payment type.</p>
 <p>The event order is the following:</p>
 <ul>
 <li>The user selects a customer</li>

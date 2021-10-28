@@ -79,17 +79,17 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="determine-line-amount-in-sales-orders">Determine line amount in sales orders</h1>
 
-<p>The line amount in a sales order is formed by the following fields: <strong>&quot;Quantity&quot;</strong>, <strong>&quot;Unit Price&quot;</strong>, <strong>&quot; Line Standard Discount Percent&quot;</strong> and <strong>&quot;Line Custom Discount Percent&quot;</strong>. The fields <em>Unit Price</em>, <em>Line Standard Discount Percent</em> and &quot;Line Custom Discount Percent* represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
+<p>The line amount in a sales order is formed by the following fields: <em><strong>Quantity</strong></em>, <em><strong>Unit Price</strong></em>, <em><strong>Line Standard Discount Percent</strong></em> and <em><strong>Line Custom Discount Percent</strong></em>. The fields <em>Unit Price</em>, <em>Line Standard Discount Percent</em> and <em>Line Custom Discount Percent</em> represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
 The formula of the field line amount is rounded up to the second digit and is as follows:</p>
 <p><strong>[LineAmount]</strong> = Round(<strong>[Quantity]</strong> * <strong>[Unit Price]</strong> * (1 - <strong>[Line Standard Discount Percent]</strong>) * (1 - <strong>[Line Custom Discount Percent]</strong>))</p>
-<p><em><strong>Example 1</strong></em>:</p>
-<p>In the row there is Quantity <strong>7 PCS</strong> and Unit Price <strong>0.15472 EUR</strong> and no discounts, then the Line Amount is:</p>
+<h4 id="example-1-">Example 1 :</h4>
+<p>In the row there is quantity <strong>7 PCS</strong> and unit price <strong>0.15472 EUR</strong> and no discounts, then the line amount is:</p>
 <p><strong>[Line Amount]</strong> = Round(<strong>7 * 0.15472</strong> * (1 - 0) * (1 - 0)) = Round(<strong>1.08304</strong>) = <strong>1.08</strong>.</p>
-<p><em><strong>Example 2</strong></em>:</p>
-<p>In the row there is Quantity <strong>27 PCS</strong> and Unit Price <strong>0.15472 EUR</strong>, the discounts are <strong>19%</strong> and <strong>7%</strong>, then the Line Amount is:</p>
+<h4 id="example-2-">Example 2 :</h4>
+<p>In the row there is quantity <strong>27 PCS</strong> and unit price <strong>0.15472 EUR</strong>, the discounts are <strong>19%</strong> and <strong>7%</strong>, then the line amount is:</p>
 <p><strong>[Line Amount]</strong> = Round( <strong>27 * 0.15472</strong> * (1 - <strong>0.19</strong>) * (1 - <strong>0.07</strong>)) = Round(<strong>1.08304</strong>) = <strong>1.08</strong>.</p>
 <p>There are also other row amount types which meaning and calculation are different than those of amount saved in the field LineAmount.</p>
-<p>For more information, see <a href="https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html">Amount to Pay</a>.</p>
+<p>For more information, see <a href="https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html">Amount to pay</a>.</p>
 </article>
           </div>
           

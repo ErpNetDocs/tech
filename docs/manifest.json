@@ -1229,7 +1229,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/rows-weighting.html",
-          "hash": "BcNP8V3ngwZIlwIA8IWVMA=="
+          "hash": "QM6lyCdpAMdDmSqc+456lg=="
         }
       },
       "is_incremental": false,
@@ -3334,19 +3334,22 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html",
-          "hash": "+F2zhR5nVsFi1QVFv5zPkg=="
+          "hash": "THy1Jd3gNMaafKOhsDobNA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/determine-payment-account-in-sales-order.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-payment-account-in-sales-order.html",
-          "hash": "zzsdUeUgN3Cw7cHyCzJuyA=="
+          "hash": "Q2FWIXeOqRwfKYbj2GHmSg=="
         }
       },
       "is_incremental": false,
@@ -3365,12 +3368,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/minimal-sales-price.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/minimal-sales-price.html",
-          "hash": "HkIiSoJBn15wsBailKLdwg=="
+          "hash": "B96CC1OKQJdOfCmpR5W1fg=="
         }
       },
       "is_incremental": false,
@@ -4472,7 +4478,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/available-to-promise/atp-reports.html",
-          "hash": "tUYu2ZKd3lWuHsxlvxY67w=="
+          "hash": "6feoEa7BJ3iWUZaMoIsYrA=="
         }
       },
       "is_incremental": false,
@@ -4484,7 +4490,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/available-to-promise/index.html",
-          "hash": "pd0TF4yMuCfgPB3nVL40Uw=="
+          "hash": "zpSo59pc5/LEjC8F9/iHcA=="
         }
       },
       "is_incremental": false,
@@ -4530,7 +4536,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/material-requirements-planning.html",
-          "hash": "eGwRgMgh3QNY11uDWpesaA=="
+          "hash": "4DNVBT7ivzdWW7UbNNVPsA=="
         }
       },
       "is_incremental": false,
@@ -4553,7 +4559,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/projected-available-balance.html",
-          "hash": "nGWLeobsqXBQ+Lgc+5Em1Q=="
+          "hash": "W/nJ2ye4pgx5hvRyeZt6iQ=="
         }
       },
       "is_incremental": false,
