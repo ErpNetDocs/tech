@@ -12,4 +12,4 @@ The designed is achieved with the help of specific document routes built for eac
 
 Temporary
 
-[!list folder="." file="gene*" exclude="pro*" style="bullet" depth=0 limit=10]
+[!list folder="." file="*gene*" style="bullet" depth=0 limit=10]
