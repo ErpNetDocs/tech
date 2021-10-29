@@ -1,6 +1,6 @@
-# Product groups 
+# Product Groups 
 
-*Product groups* form a hierarchical tree structure of the products. @@name allows multiple groups with different names and characteristics to be created. Each product group can contain an unlimited number of products which are grouped together according to different criteria. It is strongly recommended that products are grouped in a meaningful way, as they could inherit certain properties from the groups. 
+*Product Groups* form a hierarchical tree structure of the products. @@name allows multiple groups with different names and characteristics to be created. Each product group can contain an unlimited number of products which are grouped together according to different criteria. It is strongly recommended that products are grouped in a meaningful way, as they could inherit certain properties from the groups. 
 
 Product groups could also facilitate the creation of the individual products. For example, in their definition, it could be set: 
 
