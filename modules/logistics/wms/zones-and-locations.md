@@ -1,8 +1,8 @@
-# Warehouse Zones and Locations
+# Warehouse zones and locations
 
-Warehouse Zones are used to organize the different storage areas of the warehouse.
+Warehouse zones are used to organize the different storage areas of the warehouse.
 
-## Zone Hierarchy
+## Zone hierarchy
 
 The zones are organized in a hierarchy, where each zone can have sub-zones, which can have its own sub-zones and so on.
 For example:
