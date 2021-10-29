@@ -3,7 +3,7 @@
 
 *Product dimensions* are used for conversion between different units of measurement for the same quantity. In order to make this possible, product dimensions must be set for the products as a ratio between multiplier and divider to the base unit. 
 
-The formula for calculation of Quantity Base in the documents lines is as follows: 
+The formula for calculation of quantity base in the documents lines is as follows: 
 
 **Quantity Base = Quantity * Product Dimension Dest Quantity / Product Dimension Source Quantity**
 
