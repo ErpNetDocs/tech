@@ -2,7 +2,7 @@
 
 **Price types** are used to set additional priority conditions for the prices. 
 
-5 is the highest priority level that can be selected in the Priority field of the price. To add an additional higher priority, a price type must be defined and selected as a price type of the price. Priorities among the different price types are set by filling a number in the Ordinal position field in the definition of the price type – the lower the number, the higher the priority.
+5 is the highest priority level that can be selected in the *Priority* field of the price. To add an additional higher priority, a price type must be defined and selected as a price type of the price. Priorities among the different price types are set by filling a number in the ordinal position field in the definition of the price type – the lower the number, the higher the priority.
 
 
 **Price types add additional priority under the following algorithm:**
