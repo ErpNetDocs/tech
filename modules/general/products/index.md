@@ -23,7 +23,7 @@ For more information, see **[Product groups](https://docs.erp.net/tech/modules/g
 - **[Coding systems](https://docs.erp.net/tech/modules/general/products/coding-systems.html?q=Coding%20Systems)** 
 - **[Product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=Product%20Codes)** 
 - **[Product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)** 
-- **[Product pictures]** 
+- **Product pictures** 
 - **Products - business rules** 
 - **[Product types](https://docs.erp.net/tech/modules/general/products/product-types/index.html?q=Product%20Types)** 
 - **[Serial numbers](https://docs.erp.net/tech/modules/general/products/serial-numbers/index.html?q=Serial%20Numbers)** 
