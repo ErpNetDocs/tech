@@ -1,8 +1,8 @@
-# Zone Based Routing
+# Zone based routing
 
 ## The basic idea
 
-With Zone based routing, the rules for processing the goods are determined based on the zone, in which the goods are stored for each step.
+With zone based routing, the rules for processing the goods are determined based on the zone, in which the goods are stored for each step.
 The zones are sequentially numbered, relative to their "closeness" to final shipping. For example:
 
 > 1 IN -> 2 INSP -> 3 BULK -> 4 PICK -> 5 KIT -> 6 PACK -> 7 OUT
@@ -30,7 +30,7 @@ The full route is the concatenation of all route steps for each consecutive zone
 Since zones are hierarchical, for any given zone there might be multiple rules, coming from different levels of the hierarchy.
 All rules in the hierarchy are combined when creating the routing.
 Combining the rules is performed separately for each STEP NO within each zone.
-To determine the "winning" rule for each step, the RULE PRIORITY is used within all rules, which satisfy the RULE CONDITIONs.
+To determine the "winning" rule for each step, the RULE PRIORITY is used within all rules, which satisfy the RULE CONDITIONS.
 
 ## Start and finish of the process
 
