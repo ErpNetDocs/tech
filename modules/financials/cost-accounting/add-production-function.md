@@ -1,6 +1,6 @@
 # Add production function
 
-This function is used in the **[Cost distribution](https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html)** document. 
+This function is used in the [Cost distribution](https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html) document. 
 
 When used, it adds the production from the specified period and store to the document.
 
