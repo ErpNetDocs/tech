@@ -1,4 +1,4 @@
-# Standard quantity base
+# Standard Quantity Base
 
 In Version 2018.2, we added a new dimension to measure the quantity in Logistics Documents - Standard Quantity Base (SQB). 
 
