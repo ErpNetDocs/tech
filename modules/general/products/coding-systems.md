@@ -1,15 +1,15 @@
-# Coding systems 
+# Coding Systems 
 
-*Coding systems* group together multiple **[product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=product%20codes)** according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
+*Coding Systems* group together multiple **[product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=product%20codes)** according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
 
 A *default measurement unit* could also be specified in coding systems. If a product code relating to a coding system with a default measurement unit is selected, then this unit must load in the document instead of the product's default unit. 
 
-For example, if in the products definition "Measurement unit = Pcs" is set, and for this product there is also a product code that relates to a coding system with a "Default measurement unit = Package", then we expect the following behavior: 
+For example, if in the products definition "Measurement Unit = Pcs" is set, and for this product there is also a product code that relates to a coding system with a "Default Measurement Unit = Package", then we expect the following behavior: 
 
 When a product in the sales order is selected through product code via barcode, then: 
 
 -  Product’s part number loads in the Product field in the particular sales order line; 
 
-- "Quantity unit = Package", which corresponds to the default measurement unit in the coding system’s definition; 
+- "Quantity Unit = Package", which corresponds to the default measurement unit in the coding system’s definition; 
 
-- "Unit price" must be recalculated according to the **[product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)**. 
+- "Unit Price" must be recalculated according to the **[product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)**. 
