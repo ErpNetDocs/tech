@@ -1,4 +1,4 @@
-# Product Types
+# Product types
 
 
-- **Product Types - Business Rules**
+- **Product types - business rules**
