@@ -30,7 +30,7 @@ In the Outputs table, the following rows are present:
  
 So **[S]** in the example is: 15.00 + 13.00 + 10.11 + -0.50 + 29.99 = **67.60**.
 
-When the calculate distribution function is started, the Results table is filled with the following data:
+When the calculate distribution function is started, the results table is filled with the following data:
 
 - OutputLineNo = **10**; Cost Type: **CT1**; Distributed Amount Base: **22.19**; **DistributedAmountBase** = **ROUND([k<sub>Output[LineNo=10]</sub>] / [S] * [Cost Type Amount] ; 2)** = ROUND(15.00 / 67.60 * 100; 2) = 22.19;
 - OutputLineNo = **20**; Cost Type: **CT1**; Distributed Amount Base: **19.23**; Calculation steps: **DistributedAmountBase** =  ROUND(13.00 / 67.60 * 100 ; 2) = 19.23;
