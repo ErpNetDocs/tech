@@ -3,7 +3,7 @@
 Invoices in @@name are entered manually or they are created based on invoice orders.
 
 
-## Determine Payment due date when entering an invoice manually
+## Determine payment due date when entering an invoice manually
 
 In this case the *Payment Due Date* is determined in the standard way - based on the data in the invoice customer definition. This is a default value and it can be changed by the user.
 
