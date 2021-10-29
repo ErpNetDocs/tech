@@ -1,5 +1,5 @@
-# CRM Sales Module
+# CRM Sales module
 
-> *Activity* → *Opportunity* → *Offer* → **Sales Order** → *Invoice Order* → *Invoice*
+> *Activity* → *Opportunity* → *Offer* → **Sales order** → *Invoice order* → *Invoice*
 
-The sales module is used to manage the preparing and issuing of [Sales Orders](xref:Crm.Sales.SalesOrders) and the related master data. 
+The sales module is used to manage the preparing and issuing of [sales orders](xref:Crm.Sales.SalesOrders) and the related master data. 
