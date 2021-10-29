@@ -8,7 +8,7 @@ The algorithm has two stages:
 
 2. The cost of the rows that do not include accumulated information is recalculated one by one.
 
-The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction). With the release of [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction), the costs in the Transaction rows are updated.
+The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction). With the release of [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction), the costs in the transaction rows are updated.
 
 Multiple records are generated when all transaction operations for a period (as well as the opening balance at the start of the period) are loaded. It is of great importance for all transaction operations and opening balances to be loaded during the operation. Any of them missing may lead to incorrect cost correction (during stage 2 of the algorithm).
 
