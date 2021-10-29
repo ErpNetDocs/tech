@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Advance Amounts Determination | ERP.net Tech Docs </title>
+    <title>Advance amounts determination | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Advance Amounts Determination | ERP.net Tech Docs ">
+    <meta name="title" content="Advance amounts determination | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,27 +77,27 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="advance-amounts-determination">Advance Amounts Determination</h1>
+<h1 id="advance-amounts-determination">Advance amounts determination</h1>
 
-<p>The current article describes the algorithm which defines what part of the amounts of a given Payment is paid in advance. This algorithm is applicable both in income payments and expense payments so it can determine the advance amounts in both Sales Orders and Purchase Orders.</p>
+<p>The current article describes the algorithm which defines what part of the amounts of a given payment is paid in advance. This algorithm is applicable both in income payments and expense payments so it can determine the advance amounts in both sales orders and purchase orders.</p>
 <p>Input algorithm data:</p>
 <ul>
-<li>Payment Transactions which contains the advance amounts;</li>
+<li>Payment transactions which contains the advance amounts;</li>
 <li>[Is Amount With VAT] - a parameter that may be True or False and defines if the amounts include VAT or not.</li>
 </ul>
 <p>Output algorithm data:</p>
 <ul>
-<li>Collection of the advance amounts found in the Payment Transaction, which meets the parameter [Is Amount With VAT];</li>
+<li>Collection of the advance amounts found in the payment transaction, which meets the parameter [Is Amount With VAT];</li>
 <li>The total remaining advance amount does not meet the parameter [Is Amount With VAT].</li>
 </ul>
-<p>The advance amounts are extracted from the Payment Transaction rows and their calculation depends on the data in the Payment Orders which are referred to in the rows. The algorithm uses the following schema:</p>
+<p>The advance amounts are extracted from the payment yransaction rows and their calculation depends on the data in the payment orders which are referred to in the rows. The algorithm uses the following schema:</p>
 <ol>
 <li>Determine the rows containing advance amounts.</li>
 <li>Grouping the rows from step 1.</li>
 <li>For each group, a total amount is determined, which meets the [Is Amount With VAT] parameter, and this total amount is added to the collection of advance amounts.</li>
 <li>All rows (from all groups), which contain advance amounts and do not correspond to [Is Amount With VAT], are summed up and they define the remaining amount.</li>
 </ol>
-<p>For a more detailed explanation of the algorithm, see <b><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/payments/advance-amounts-determination/advance-amount-calculation-algorithm.md">Advance Amount Calculation Algorithm</a></b>.</p>
+<p>For a more detailed explanation of the algorithm, see <a href="https://docs.erp.net/tech/modules/financials/payments/advance-amounts-determination/advance-amount-calculation-algorithm.html?q=advance">Advance amount calculation algorithm</a>.</p>
 </article>
           </div>
           

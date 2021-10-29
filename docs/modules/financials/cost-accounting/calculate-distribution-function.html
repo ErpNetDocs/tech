@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Calculate Distribution Function | ERP.net Tech Docs </title>
+    <title>Calculate distribution function | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Calculate Distribution Function | ERP.net Tech Docs ">
+    <meta name="title" content="Calculate distribution function | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,9 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="calculate-distribution-function">Calculate Distribution Function</h1>
+<h1 id="calculate-distribution-function">Calculate distribution function</h1>
 
-<p>The function is used in the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md">Cost Distribution</a></strong> document. When used, it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.</p>
+<p>The function is used in the <a href="https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html">Cost distribution</a> document. When used, it calculates the distributed amounts for each output and for each cost type and fills the Results table with the calculations.</p>
 <h2 id="how-does-it-work">How does it work?</h2>
 <p>The function performs the following steps:</p>
 <ol>
@@ -97,11 +97,11 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 </li>
 </ul>
 </li>
-<li><p>In the Results table, the results of step 2 are saved and for each combination of Output and Cost Type, a new row is added.</p>
+<li><p>In the Results table, the results of step 2 are saved and for each combination of output and cost type, a new row is added.</p>
 </li>
 </ol>
-<h3 id="example-1">Example 1</h3>
-<p>Let's say there is a Cost Distribution document with two cost types with the following data:</p>
+<p><em><strong>Example 1</strong></em>
+Let's say there is a cost distribution document with two cost types with the following data:</p>
 <ul>
 <li>Cost Type: <strong>CT1</strong>; Distributed Cost Amount: <strong>100</strong>;</li>
 <li>Cost Type: <strong>CT2</strong>; Distributed Cost Amount: <strong>500</strong>;</li>
@@ -115,7 +115,7 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 <li>LineNo: <strong>50</strong>; Cost Object: <strong>StoreTransactionLine5</strong>; Weight Coefficient: <strong>29.99</strong>.</li>
 </ul>
 <p>So <strong>[S]</strong> in the example is: 15.00 + 13.00 + 10.11 + -0.50 + 29.99 = <strong>67.60</strong>.</p>
-<p>When the Calculate Distribution function is started, the Results table is filled with the following data:</p>
+<p>When the calculate distribution function is started, the results table is filled with the following data:</p>
 <ul>
 <li>OutputLineNo = <strong>10</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>22.19</strong>; <strong>DistributedAmountBase</strong> = <strong>ROUND([k<sub>Output[LineNo=10]</sub>] / [S] * [Cost Type Amount] ; 2)</strong> = ROUND(15.00 / 67.60 * 100; 2) = 22.19;</li>
 <li>OutputLineNo = <strong>20</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>19.23</strong>; Calculation steps: <strong>DistributedAmountBase</strong> =  ROUND(13.00 / 67.60 * 100 ; 2) = 19.23;</li>
@@ -128,8 +128,8 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 <li>OutputLineNo = <strong>40</strong>; Cost Type: <strong>CT2</strong>; Distributed Amount Base: <strong>-3.70</strong>; Calculation steps: <strong>DistributedAmountBase</strong> =  ROUND(-0.50 / 67.60 * 500 ; 2) = -3.70;</li>
 <li>OutputLineNo = <strong>50</strong>; Cost Type: <strong>CT2</strong>; Distributed Amount Base: <strong>221.82</strong>; Calculation steps: <strong>DistributedAmountBase</strong> = ROUND(29.99 / 67.60 * 500 ; 2) = 221.82.</li>
 </ul>
-<h3 id="example-2">Example 2</h3>
-<p>Let's see an example where the sum of the DistributedAmountBase of a cost type is not the cost type Distributed Cost Amount. A Cost Distribution document is present with one cost type <strong>CT1</strong> with amount of <strong>100.93</strong>.</p>
+<p><em><strong>Example 2</strong></em></p>
+<p>Let's see an example where the sum of the DistributedAmountBase of a cost type is not the cost type distributed cost amount. A cost distribution document is present with one cost type <strong>CT1</strong> with amount of <strong>100.93</strong>.</p>
 <p>In the Outputs table, the following rows are present:</p>
 <ul>
 <li>LineNo: <strong>10</strong>; Cost Object: <strong>StoreTransactionLine1</strong>; Weight Coefficient: <strong>15.11</strong>;</li>
@@ -139,7 +139,7 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 <li>LineNo: <strong>50</strong>; Cost Object: <strong>StoreTransactionLine5</strong>; Weight Coefficient: <strong>15.11</strong>.</li>
 </ul>
 <p>So the <strong>[S]</strong> in the examples is 15.11 + 0 + 10 + 20 + 15.11 = <strong>60.22</strong>.</p>
-<p>When the Calculate Distribution function is started, the Results table is filled with the following data:</p>
+<p>When the calculate distribution function is started, the results table is filled with the following data:</p>
 <ul>
 <li>OutputLineNo = <strong>10</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>25.32</strong>; <strong>DistributedAmountBase</strong> = <strong>ROUND([k<sub>Output[LineNo=10]</sub>] / [S] * [Cost Type Amount] ; 2)</strong> = ROUND(15.11 / 66.22 * 100.93; 2) = 25.32;</li>
 <li>OutputLineNo = <strong>20</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>0.00</strong>; Calculation steps: <strong>DistributedAmountBase</strong> =  ROUND(0.00 / 66.22 * 100.93 ; 2) = 0.00;</li>
@@ -147,7 +147,7 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 <li>OutputLineNo = <strong>40</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>33.52</strong>; Calculation steps: <strong>DistributedAmountBase</strong> =  ROUND(20.00 / 66.22 * 100.93 ; 2) = 33.52;</li>
 <li>OutputLineNo = <strong>50</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>25.32</strong>; Calculation steps: <strong>DistributedAmountBase</strong> =  ROUND(15.11 / 66.22 * 100.93 ; 2) = 25.32;</li>
 </ul>
-<p>Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = <strong>100.92</strong> and there is difference of 0.01 between the distributed Cost Amount of the <strong>CT1</strong> as it is <strong>100.93</strong>. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = <strong>1 / 10</strong><sup>[2]</sup> =0.01. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output <strong>[LineNo=40]</strong>. The final Results now would be as follows:</p>
+<p>Now the DistributedAmountBase sum is 22.32 + 0.00 + 16.76 + 33.52 + 22.32 = <strong>100.92</strong> and there is difference of 0.01 between the distributed cost amount of the <strong>CT1</strong> as it is <strong>100.93</strong>. The difference of 0.01 meets the requirement of [minimal balance distribution on a row] = <strong>1 / 10</strong><sup>[2]</sup> =0.01. The balance distribution amount is 0.01 and it should be distributed on the row with largest amount, the row with the Output <strong>[LineNo=40]</strong>. The final Results now would be as follows:</p>
 <ul>
 <li>OutputLineNo = <strong>10</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>25.32</strong>;</li>
 <li>OutputLineNo = <strong>20</strong>; Cost Type: <strong>CT1</strong>; Distributed Amount Base: <strong>0.00</strong>;</li>
@@ -157,7 +157,7 @@ Sometimes the cost amount may not be able to be distributed exactly through the 
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If the balance distribution amount in <em><strong>Example 2</strong></em> was 0.02, it would be distributed on OutputLineNo = <strong>40</strong> and OutputLineNo = <strong>10</strong> as these are the first two largest amounts through the rows.</p>
+<p>If the balance distribution amount in <em><strong>Example 2</strong></em> was 0.02, it would be distributed on OutputLineNo = <strong>40</strong> and OutputLineNo = <strong>10</strong> as these are the first two largest &gt;amounts through the rows.</p>
 </div>
 </article>
           </div>

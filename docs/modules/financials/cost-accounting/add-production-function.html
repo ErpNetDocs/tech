@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add Production Function | ERP.net Tech Docs </title>
+    <title>Add production function | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add Production Function | ERP.net Tech Docs ">
+    <meta name="title" content="Add production function | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,29 +77,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-production-function">Add Production Function</h1>
+<h1 id="add-production-function">Add production function</h1>
 
-<p>This function is used in the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md">Cost Distribution</a></strong> document.</p>
+<p>This function is used in the <a href="https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html">Cost distribution</a> document.</p>
 <p>When used, it adds the production from the specified period and store to the document.</p>
 <h2 id="how-does-it-work">How does it work?</h2>
 <p>The function selects all store transaction lines, filtered by the following conditions:</p>
 <ol>
 <li>They are part of a document which is at least Released and non-voided.</li>
-<li>They are part of a document with the same Enterprise Company as the one of the Cost Distribution document.</li>
-<li>They are part of a store transaction with a store equal to the one in the Cost Distribution header (if specified); if the store of the Cost Distribution header is empty, then the current filter is not applied.</li>
+<li>They are part of a document with the same enterprise company as the one of the cost distribution document.</li>
+<li>They are part of a store transaction with a store equal to the one in the cost distribution header (if specified); if the store of the cost distribution header is empty, then the current filter is not applied.</li>
 <li>The store transaction's movement type is &quot;Receipt&quot;;</li>
 <li>Their Transaction Timestamp is in the period specified in the document header.</li>
 <li>Their quantity base is not 0.</li>
 <li>The ParentStoreOrderLine is not null.</li>
-<li>The store order specified in the ParentStoreOrderLine field has Output Order as a parent document.</li>
+<li>The store order specified in the ParentStoreOrderLine field has output order as a parent document.</li>
 </ol>
-<p>When the set of store transaction lines is ready, it is loaded in the Outputs panel of the Cost Distribution document. The fields in the panel are filled as follows:</p>
+<p>When the set of store transaction lines is ready, it is loaded in the <em>Outputs</em> panel of the cost distribution document. The fields in the panel are filled as follows:</p>
 <ul>
 <li>Line No - unique, consecutive line number. The field is AutoNumber;</li>
 <li>Cost Object - the id of the store transaction line;</li>
-<li>Weight Coefficient - the function sets the Line Base Cost Corrections as a coefficient. The Line Base Cost Corrections equals the sum of [LineBaseCost] (in the current store transaction line) and the sum of [BaseCostAdjustment] of all Cost Correction lines which are non-voided and at least released and referring the current store transaction lines.</li>
+<li>Weight Coefficient - the function sets the Line Base Cost Corrections as a coefficient. The line base cost corrections equals the sum of [LineBaseCost] (in the current store transaction line) and the sum of [BaseCostAdjustment] of all cost correction lines which are non-voided and at least released and referring the current store transaction lines.</li>
 </ul>
-<p>When the data is filled in the Cost Distribution Outputs table, the <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md">Cost Distribution</a></strong> document is saved.</p>
+<p>When the data is filled in the cost distribution outputs table, the <strong><a href="https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html">Cost distribution</a></strong> document is saved.</p>
 </article>
           </div>
           
