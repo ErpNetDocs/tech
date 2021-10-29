@@ -27,9 +27,9 @@ There are two main fields with values that need to be determined in order to def
 
 
 - Specify the date explicitly: the payment due start date is determined by adding 'Payment term days' to the 'Explicit payment due date' and the due date is 'Explicit execution date' added with 'Execution term, days';
-- Use sales order due date: Due start date/Execution date and Payment due date are copied directly from the sales order header fields *Payment Due Start Date ' and *Payment due date*;
+- Use sales order due date: Due start date/Execution date and Payment due date are copied directly from the sales order header fields *Payment Due Start Date ' and *Payment Due Date*;
 - Use sales order date: the dates are calculated using the sales order document date added with the number of days entered in 'Execution term, days' (for the calculation of the payment start due date) or 'Payment Term days' (for the calculation of the due date);
-- Use invoice due date: Due start date/Execution date and Payment due date are copied directly from the invoice header fields *Payment Due Start Date* and *Payment due date*;
+- Use invoice due date: Due start date/Execution date and Payment due date are copied directly from the invoice header fields *Payment Due Start Date* and *Payment Due Date*;
 - Use invoice date: the dates are calculated using the invoice document date added with the number of days entered in 'Execution term, days' (for the calculation of the payment start due date) or 'Payment term days' (for the calculation of the due date);
 
 
