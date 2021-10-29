@@ -1,6 +1,6 @@
 # Warehouse policies
 
-Warehouse Policies is a hierarchical system for applying policies to warehouse operations. 
+Warehouse policies is a hierarchical system for applying policies to warehouse operations. 
 
 
 # Policy kind
@@ -18,7 +18,7 @@ Each warehouse policy can apply to:
 
 * Product group and its sub-groups
 
-* Product Type
+* Product type
 
 * Specific product
 
