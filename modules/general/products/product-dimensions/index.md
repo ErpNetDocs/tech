@@ -1,7 +1,7 @@
-# Product dimensions
+# Product Dimensions
 
 
-*Product dimensions* are used for conversion between different units of measurement for the same quantity. In order to make this possible, product dimensions must be set for the products as a ratio between multiplier and divider to the base unit. 
+*Product Dimensions* are used for conversion between different units of measurement for the same quantity. In order to make this possible, product dimensions must be set for the products as a ratio between multiplier and divider to the base unit. 
 
 The formula for calculation of quantity base in the documents lines is as follows: 
 
@@ -21,13 +21,13 @@ The formula for calculation of quantity base in the documents lines is as follow
 
 We need to load two pallets of a product. But we know that each pallet contains 15 pieces. So the total pieces that we need to load are 30. This means that if we want to automate this calculation, we need to insert the following information to create a conversion ratio in the product dimensions: 
 
-**Source quantity** -  1.00 
+**Source Quantity** -  1.00 
 
-**Source quantity unit** -  Pallet 
+**Source Quantity Unit** -  Pallet 
 
-**Dest quantity** - 15.00 
+**Dest Quantity** - 15.00 
 
-**Dest quantity unit** - Pcs  
+**Dest Quantity Unit** - Pcs  
 
-**Measurement category** - Complectation (e.g.)
+**Measurement Category** - Complectation (e.g.)
 
