@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Cost Distribution | ERP.net Tech Docs </title>
+    <title>Cost distribution | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Cost Distribution | ERP.net Tech Docs ">
+    <meta name="title" content="Cost distribution | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,37 +77,37 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="cost-distribution">Cost Distribution</h1>
+<h1 id="cost-distribution">Cost distribution</h1>
 
-<p>The Cost Distribution document is used to distribute costs. Users may enter one or more cost types and their amounts. The cost distribution may be performed manually or automatically by using the integrated functions.</p>
+<p>The cost distribution document is used to distribute costs. Users may enter one or more cost types and their amounts. The cost distribution may be performed manually or automatically by using the integrated functions.</p>
 <h2 id="how-to-use-the-document">How to use the document?</h2>
-<p>At first, the user has to enter the dates and (if necessary) store, where they are distributing costs. The period of the cost distribution is specified in the Cost Distribution table by the following fields:</p>
+<p>At first, the user has to enter the dates and (if necessary) store, where they are distributing costs. The period of the cost distribution is specified in the cost distribution table by the following fields:</p>
 <ul>
 <li>Start Date - starting date of the period for which the current document distributes costs. The field cannot be empty and it is entered manually by the user.</li>
 <li>End Date - end date of the period for which the current document distributes costs. The field cannot be empty and it is entered manually by the user.</li>
 <li>Store - specifies the store in which the cost is distributed.</li>
 </ul>
-<p>In the Distribution cost types table, the user enters the cost types and their amounts.</p>
+<p>In the distribution cost types table, the user enters the cost types and their amounts.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The cost type amounts are entered in enterprise company base currency!</p>
 </div>
-<p>The Distributed Cost Amount field accepts decimal values.</p>
-<p>Then, the user has to enter/load the outputs on which they are distributing the specified amounts and cost types. This is performed in the Outputs table. The fields are:</p>
+<p>The <em>Distributed Cost Amount</em> field accepts decimal values.</p>
+<p>Then, the user has to enter/load the outputs on which they are distributing the specified amounts and cost types. This is performed in the outputs table. The fields are:</p>
 <ul>
 <li>Line No - this is the consecutive line number in the document, unique within the document.</li>
 <li>Cost Object - the ID of the cost object for which costs will be distributed. The domain of the cost object is determined by the distribution document type.</li>
 <li>Weight Coefficient - the field is mandatory. This is a weight coefficient for the cost distribution on the current row.</li>
 </ul>
-<p>Manual data entering in the Outputs table is not available. The document has a function which automatically loads the outputs for the specified period (and store, if entered). For more information see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/add-production-function.md">Add Production Function</a></strong>.</p>
-<p>After the production is filled in the document, the cost distribution calculation may be performed manually or automatically. The table Cost Distribution Results contains the amounts calculated for distribution on the Outputs data. In the Results table, there are the following fields:</p>
+<p>Manual data entering in the outputs table is not available. The document has a function which automatically loads the outputs for the specified period (and store, if entered). For more information see <a href="https://docs.erp.net/tech/modules/financials/cost-accounting/add-production-function.html">Add production function</a>.</p>
+<p>After the production is filled in the document, the cost distribution calculation may be performed manually or automatically. The table cost distribution results contains the amounts calculated for distribution on the outputs data. In the results table, there are the following fields:</p>
 <ul>
 <li>Output Id - the distribution output over which we are distributing the cost (the amount in the current row);</li>
 <li>Cost Type - the cost type for which the distribution in the current row is calculated;</li>
 <li>Distributed Amount Base - the amount (in base currency) of the distributed cost. The amount is calculated for the combination of output and cost type.</li>
 </ul>
-<p>The data in the Results table has a function that calculates distributed amounts on each output. The amount is the total amount (distributed to the current output) of all cost types which are set for distribution.</p>
-<p>For more information, see <strong><a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/calculate-distribution-function.md">Calculate Distribution Function</a></strong>.</p>
+<p>The data in the results table has a function that calculates distributed amounts on each output. The amount is the total amount (distributed to the current output) of all cost types which are set for distribution.</p>
+<p>For more information, see <a href="https://docs.erp.net/tech/modules/financials/cost-accounting/calculate-distribution-function.html">Calculate Distribution Function</a>.</p>
 </article>
           </div>
           

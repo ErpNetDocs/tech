@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="specific-procedures-of-cost-corrections">Specific procedures of cost corrections</h1>
 
-<p>Apart from the standard method of <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a> - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation">basic algorithm for cost correction calculation</a>, there are two more ways to create a <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a> document. They use generation procedures available in the transaction document.</p>
+<p>Apart from the standard method of <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a></strong> - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation">basic algorithm for cost correction calculation</a></strong>, there are two more ways to create a <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a></strong> document. They use generation procedures available in the transaction document.</p>
 <h2 id="cost-correction-generation-procedure-for-the-actual-cost-of-the-current-transaction">Cost correction generation procedure for the actual cost of the current transaction</h2>
 <p>This generation procedure updates the cost of the store transactions in the current transaction document.</p>
 <p>For each row, the following actions are applied:</p>
@@ -93,16 +93,16 @@
 </li>
 </ol>
 <p>To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.</p>
-<p>At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a> sub-document for the current transaction row, which contains the difference.</p>
+<p>At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a></strong> sub-document for the current transaction row, which contains the difference.</p>
 <h2 id="cost-correction-generation-procedure-for-the-current-transaction-results">Cost correction generation procedure for the current transaction results</h2>
 <p>This generation procedure updates the costs of all transactions that depend on the current transaction rows.</p>
 <p>The following actions are executed:</p>
 <ol>
 <li><p>Loading all store transactions (with the opening balances if needed) which depend on the current document;</p>
 </li>
-<li><p>Тhe <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation">basic algorithm for cost correction calculation</a> is applied over the loaded set of records;</p>
+<li><p>Тhe <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation">basic algorithm for cost correction calculation</a></strong> is applied over the loaded set of records;</p>
 </li>
-<li><p>For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a> is added.</p>
+<li><p>For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the <strong><a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost">cost correction</a></strong> is added.</p>
 </li>
 </ol>
 <p>Loading the records is performed iteratively. Before the first iteration, the following is created:</p>

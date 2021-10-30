@@ -83,13 +83,13 @@
 <p>Such calculated attribute actually represents a report with specific filters. If a user tries to get the sales of a client for the last 30 days, he would open a sales order lines report and set the following filters:</p>
 <ul>
 <li>Client</li>
-<li>Enterprise Company</li>
-<li>Enterprise Company Location (eventually)</li>
+<li>Enterprise company</li>
+<li>Enterprise company location (eventually)</li>
 <li>DocumentState (at least Released)</li>
 <li>Void</li>
-<li>Document Date</li>
+<li>Document date</li>
 </ul>
-<p>So the calculated attribute must <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong> the sales order lines table and filter the records as described above.</p>
+<p>So the calculated attribute must <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a> the sales order lines table and filter the records as described above.</p>
 <p>Such calculated attribute would have the following parameters:</p>
 <pre><code>Repository Name:Crm.Sales.SalesOrders
 Name:SOAmountsForTheLast30days

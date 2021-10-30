@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Defining VAT And Base For VAT Entries | ERP.net Tech Docs </title>
+    <title>Defining VAT and base for VAT Entries | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Defining VAT And Base For VAT Entries | ERP.net Tech Docs ">
+    <meta name="title" content="Defining VAT and base for VAT Entries | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,36 +77,36 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="defining-vat-and-base-for-vat-entries">Defining VAT And Base For VAT Entries</h1>
+<h1 id="defining-vat-and-base-for-vat-entries">Defining VAT and base for VAT Entries</h1>
 
 <p>The current article describes how the numeric values are defined - base and VAT, which are saved in the VAT Entries when this document is created automatically from other documents in ERP.net. Currently, the documents which create VAT Entries are:</p>
 <ul>
 <li>Invoices (they create records in the VAT sales ledger entries</li>
 <li>Sales ledger entries);</li>
-<li>Transactions (they create records in the VAT sales ledger entries</li>
+<li>Transactions (they create records in the VAT sales ledger entries)</li>
 </ul>
 <p>The calculations are performed in three stages:</p>
 <p>1.Defining which document rows participate in the calculation.
 2.Defining the deal types for each row.
 3.Defining the base and the VAT for each deal type.</p>
-<h2 id="1-defining-the-participating-rows">1. Defining The Participating Rows</h2>
+<h2 id="1-defining-the-participating-rows">1. Defining the participating rows</h2>
 <p>Which rows participate in the calculation of the base and the VAT is defined for each document individually. The set of rows also depends on that if the document creates VAT sales or purchases ledger entries.</p>
-<p>In <b>Invoices</b>, <i>all rows</i> participate in the calculation.</p>
-<p>In <b>Purchase Invoices</b> which create VAT purchases ledger entries,  <i>all rows</i> participate, too.</p>
-<p>In <b>Purchase Invoices</b> which create VAT sales ledger entries there are two cases:</p>
+<p>In <b>invoices</b>, <i>all rows</i> participate in the calculation.</p>
+<p>In <b>purchase invoices</b> which create VAT purchases ledger entries,  <i>all rows</i> participate, too.</p>
+<p>In <b>purchase invoices</b> which create VAT sales ledger entries there are two cases:</p>
 <ul>
 <li>if the document header has value in the <i>Sale Deal Type</i> field, then <i>all rows</i> participate in the calculation;</li>
-<li>if the document header has no value in the Sales Deal Type field, then <i>only the rows which have value</i> in the <i>Sale Line Deal Type</i> field (this is the same field but in the document rows).</li>
+<li>if the document header has no value in the <i>Sales Deal Type<i> field, then <i>only the rows which have value</i> in the <i>Sale Line Deal Type</i> field (this is the same field but in the document rows).</i></i></li>
 </ul>
-<p>In <b>Transactions</b>, all rows participate in the calculation.</p>
-<h2 id="2-defining-the-deal-types">2. Defining The Deal Types</h2>
+<p>In <b>transactions</b>, all rows participate in the calculation.</p>
+<h2 id="2-defining-the-deal-types">2. Defining the deal types</h2>
 <p>For each row that participates in the calculation, unique identification of the deal type of the row must be defined. If for any of the rows this definition is impossible, the calculation process is interrupted and an error message is displayed.</p>
 <p>The deal type definition for a row depends on the document which it is part of and on that if the document creates VAT sales or purchases ledger entries.</p>
-<p>For Invoice row - if the row has value in the <i>Line Deal Type</i> field, then the deal type is defined by this value. Otherwise, the value in the document header is used.</p>
-<p>For Purchase Invoice (which creates VAT purchases ledger entries) row - the principle is the same as in the Invoice rows - if the row has value in <i>Line Deal Type</i> field, the deal type is defined by this value, otherwise - the <i>Deal Type</i> from the document header is used.</p>
-<p>For Purchase Invoice (which creates VAT sales ledger entries) row - the same combination of corresponding fields from the rows and the document header is used, except the fields here are <i>Sales Line Deal Type</i> (in the rows) and <i>Sales Deal Type</i> (in the document header).</p>
-<p>In Transactions, all rows use a specific property of the document flow - <i>Deal Type</i> field from table &quot;Transaction Entry Template&quot;. There are no specified fields in the document rows and header for the Deal Type.</p>
-<h2 id="3-defining-base-and-vat-for-each-deal-type">3. Defining Base And VAT For Each Deal Type</h2>
+<p>For invoice row - if the row has value in the <i>Line Deal Type</i> field, then the deal type is defined by this value. Otherwise, the value in the document header is used.</p>
+<p>For purchase invoice (which creates VAT purchases ledger entries) row - the principle is the same as in the Invoice rows - if the row has value in <i>Line Deal Type</i> field, the deal type is defined by this value, otherwise - the <i>Deal Type</i> from the document header is used.</p>
+<p>For purchase invoice (which creates VAT sales ledger entries) row - the same combination of corresponding fields from the rows and the document header is used, except the fields here are <i>Sales Line Deal Type</i> (in the rows) and <i>Sales Deal Type</i> (in the document header).</p>
+<p>In transactions, all rows use a specific property of the document flow - <i>Deal Type</i> field from table &quot;Transaction Entry Template&quot;. There are no specified fields in the document rows and header for the Deal Type.</p>
+<h2 id="3-defining-base-and-vat-for-each-deal-type">3. Defining base and VAT for each Deal Type</h2>
 <p>All bases and VAT amounts are calculated only in base currency.</p>
 <p>For all deal types, defined in stage 2, two values are calculated - [base] and [VAT]. To calculate them for the current deal type the rows, which have such deal type defined in stage 2, are used.</p>
 <p><b><i>Example 1</i></b>:</p>
@@ -121,7 +121,7 @@
 <li>row #70,  <i>Line Deal Type</i> = &quot;DealType1&quot;, LineAmount = 24 EUR.</li>
 </ul>
 <p>Thus, in the previous stage for the rows three ideal types are defined - DealType1, DealTyope2 and DealType3. Thus, three bases and three VATs must be calculated - [DealType1:base], [DealType2:base], [DealType3:base], [DealType1:VAT], [DealType2:VAT], [DealType3:VAT]. To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used. For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.</p>
-<p>The VAT additional amount is set in the ERP.net definition (see <a href="https://github.com/ErpNetDocs/tech/blob/900817b9f1540003d08297f43c8c3a2aa6827ce0/advanced/documents/additional-amounts.md">Additional Amounts</a>) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the ERP.net company definition), the calculation is interrupted by an error message.</p>
+<p>The VAT additional amount is set in the ERP.net definition (see <a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">Additional amounts</a>) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the ERP.net company definition), the calculation is interrupted by an error message.</p>
 <p>The distributed additional amount on the rows is used in the calculation of the VAT amounts. And to calculate the bases amounts - the distributed VAT additional amounts which are added to the base and also the line amounts (but only if in the VAT additional amount Base On Lines is true).</p>
 <p>The bases and VAT’s calculations are performed in three steps:</p>
 <ol>

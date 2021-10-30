@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Scheduled Document Events | ERP.net Tech Docs </title>
+    <title>Scheduled document events | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Scheduled Document Events | ERP.net Tech Docs ">
+    <meta name="title" content="Scheduled document events | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,12 +77,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="scheduled-document-events">Scheduled Document Events</h1>
+<h1 id="scheduled-document-events">Scheduled document events</h1>
 
 <p>Scheduled Document Events are postponed events, which will be executed later.</p>
 <p>Usually, these are numerous recalculation events, resulting from other events. For example, releasing a cost correction creates scheduled events for all affected documents.</p>
 <p>The Scheduled Document Events have to be executed to be applied. In the case of a scheduled event created by a cost correction, the execution causes a resetting of the document state of the store transactions which was included in the cost correction. The resetting triggers the Accounting Voucher generation procedures and causes the re-accounting of documents, including the adjusted cost.</p>
-<p>The execution can be performed manually through the &quot;Execute Scheduled Evens&quot; navigator or automatically using the job <a href="https://github.com/ErpNetDocs/tech/blob/410296041dd31e2572dff39474157c429c83c8b8/advanced/jobs/J30724.md">J30724 - Run scheduled event</a>.</p>
+<p>The execution can be performed manually through the &quot;Execute Scheduled Evens&quot; navigator or automatically using the job <a href="https://docs.erp.net/tech/advanced/jobs/J30724.html">J30724 - Run scheduled events</a>.</p>
 </article>
           </div>
           

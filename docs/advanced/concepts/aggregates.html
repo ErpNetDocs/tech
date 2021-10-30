@@ -110,21 +110,21 @@
 <p>Lets take a look at the following structure which in ERP.net is one single aggregate:</p>
 <ul>
 <li>a SalesOrder (which is the aggregate's root)</li>
-<li>the Sales order lines of this sales order</li>
+<li>the sales order lines of this sales order</li>
 <li>the distributed amounts for each of these sales order lines</li>
 <li>the document amounts of this sales order</li>
 <li>the payment plan of this sales order</li>
 </ul>
-<p>In the example above, the <strong>Commit</strong> event would occur for the <strong>sales order</strong> if and only if the sales order object itself has changed. While the <strong>aggregate commit</strong> will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the Sales order aggregate event.</p>
+<p>In the example above, the <strong>Commit</strong> event would occur for the <strong>sales order</strong> if and only if the sales order object itself has changed. While the <strong>aggregate commit</strong> will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the sales order aggregate event.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Commit and client-commit still have the same meaning. E.g., commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While client-commit is triggered only based on client requests and is considered the more light-weight approach.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Initially, only the agregate client commit event would be available for user-defined business rules <a href="../user-business-rules/index.html">user business rules</a>. The aggregate commit will be used only internally, for system-defined business rules <a class="xref" href="https://erpnetdocs.github.io/model/templates/template-description-system-business-rules.html">System Business Rules</a></p>
+<p>Initially, only the agregate client commit event would be available for user-defined business rules <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a>. The aggregate commit will be used only internally, for system-defined business rules <a class="xref" href="https://erpnetdocs.github.io/model/templates/template-description-system-business-rules.html">System Business Rules</a></p>
 </div>
-<p>The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for <a href="../user-business-rules/index.html">user business rules</a>.</p>
+<p>The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a>.</p>
 <h4 id="see-also-">See also: <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></h4>
 </article>
           </div>
