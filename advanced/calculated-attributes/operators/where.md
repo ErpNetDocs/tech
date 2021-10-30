@@ -18,4 +18,4 @@ items: Operators
 
 > [!NOTE]
 > 
-> This operator is used with **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**.
+> This operator is used with [SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html).
