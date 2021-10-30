@@ -102,5 +102,5 @@ Now, the user is not able to make a transaction <b>receipt</b> for <b>3 PCS</b>.
   
 The user is not able to change the <i>transaction timestamp</i> to a value less than 10 Dec 2020 <b>17:04</b>. After releasing the transaction <b>receipt</b>, the user is not able to void the <b>issue</b> transaction because on 10 Dec 2020 <b>17:27</b> there will be a total <b>issue</b> of <b>0 PCS</b>, which is less than the total <b>receipt</b> of <b>1PCS</b>.
   
-For more information about the validation, see <b>[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20And%20Issue%20Balance%20Validation%20In%20Store%20Transfers)</b>.
+For more information about the validation, see [Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20And%20Issue%20Balance%20Validation%20In%20Store%20Transfers).
 
