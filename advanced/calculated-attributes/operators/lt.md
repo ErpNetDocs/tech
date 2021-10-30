@@ -22,7 +22,7 @@ items: Operators
 > 
 > For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
-## Example
+***Example***
 
 ```      
 10: LT ATTRIB:LineNo CONST:30   
