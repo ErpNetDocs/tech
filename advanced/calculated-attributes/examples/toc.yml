@@ -8,7 +8,7 @@
   href: check-if-user-has-authorization.md
 - name: Check if the quantity is a whole number
   href: check-if-quantity-is-whole-number.md
-- name: Check if the system type of payment type in the sales order is 'In Cash'
+- name: Check if the system type of payment type in the sales order is 'In cash'
   href: check-if-system-type-is-in-cash.md
 - name: Check whether the releasing of the document is first or not
   href: check-for-first-releasing.md
