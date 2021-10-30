@@ -17,7 +17,7 @@ items: Operators
 | Return value     | The nearest integer which is larger than Number1.|                                                           |
 
 
-## Example
+***Example***
 
 The following example gets the smallest integer that is greater than or equal to the quantity of a sales order line:
 
