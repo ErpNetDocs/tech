@@ -4,11 +4,11 @@ items: CalculatedAttributesQA
 
 # How to check if a custom property has values?
 
-When there is a need to check if a custom property of an object has value, usually we can just **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the property type of the particular custom property. Here are examples for the different custom property types which are universal to all repositories. The custom property code which is verified is CustomProperty1.
+When there is a need to check if a custom property of an object has value, usually we can just [CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html) the custom property to a string and then check if it is equal to null. However, the syntax of the calculated attribute should be tailored to the specifics of the property type of the particular custom property. Here are examples for the different custom property types which are universal to all repositories. The custom property code which is verified is CustomProperty1.
 
 Note that when a custom property is cast to string, only its value will be processed, and not its description.
 
-#### Property type is 'Text' 
+### Property type is 'Text' 
 
 If the property type of the particular custom property is 'Text', use the following expressions:
 
@@ -25,7 +25,7 @@ Explanation:
 - 30: cast CustomProperty1 to string
 
 
-#### Property type is 'Number' or 'Date'
+### Property type is 'Number' or 'Date'
 
 If the property type of the particular custom property is 'Number' or 'Date', use the following expressions:
 
@@ -46,7 +46,7 @@ Explanation:
 - 50: cast CustomProperty1 to string
 
 
-#### Property type is 'Picture'
+### Property type is 'Picture'
 
 If the property type of the particular custom property is 'Picture', use the following expressions:
 
