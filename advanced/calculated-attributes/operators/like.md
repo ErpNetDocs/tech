@@ -16,7 +16,7 @@ uid: cao-LIKE
 | Return value          | True in case String1 matches Mask. False in case String1 does not match Mask.                                                         |
 
 
-## Examples
+***Examples***
 
 
 - 'a%' → Finds any values that start with "a".
