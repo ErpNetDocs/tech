@@ -17,7 +17,10 @@ items: Operators
 | Return value          | Ordered result set of a query by the specified column or expression.                                                          |
 | Introduced in version | (In implementation) |
 
+
 ***Example***
+
+
 
 ```
 10: SELECT REPO:General.Products.Products EXP:20
