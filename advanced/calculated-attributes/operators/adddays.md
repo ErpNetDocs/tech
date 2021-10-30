@@ -17,7 +17,10 @@ items: Operators
 | Return value | Date + NumDays |
 
 
+
 ***Example***
+
+
 
 ```
 10: ADDDAYS ATTRIB:DocumentDate CONST:5                 
