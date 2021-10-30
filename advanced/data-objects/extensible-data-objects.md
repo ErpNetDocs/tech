@@ -2,13 +2,13 @@
 uid: extensible-data-objects
 ---
 
-# Extensible Data Objects EDO
+# Extensible Data Objects-EDO
 
 ## Description and usage
 
 The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
 
-Types of additional data, which can currently be attached:
+Types of additional data, that can currently be attached:
 
 - file attachments.
 - [Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html) change tracking data.
@@ -33,7 +33,7 @@ All additional data is related to **Sys_Objects** through typed referential inte
 
 The EDO system is very useful for creating additional data, which can be attached to multiple entities. It is not required that the type of data should be attachable to ALL entities.
 
-The data model allows attaching data to any entity, but system business rules or [Business rules](https://docs.erp.net/tech/advanced/business-rules/index.md) can be used to limit the entities, which actually 'accept' the data.
+The data model allows attaching data to any entity, but system business rules or [business rules](https://docs.erp.net/tech/advanced/business-rules/index.md) can be used to limit the entities, which actually 'accept' the data.
 
 Possible (planned) future uses:
 
