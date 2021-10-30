@@ -7,7 +7,7 @@ items: Operators
 
 | Specification | Value |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Determines whether a specified value matches any value in a list. The operator is used in combination with **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** and **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** as condition. It can be used to search through values of string and guid types. It cannot be used to search through numeric values or dates.           |
+| Description           | Determines whether a specified value matches any value in a list. The operator is used in combination with [SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html) and [FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html) as condition. It can be used to search through values of string and guid types. It cannot be used to search through numeric values or dates.           |
 | Parameter 1 Name      | param                                                      |
 | Parameter 1 Type      | String or Guid                                    |
 | Parameter 2 Name      | list of values                                                         |
