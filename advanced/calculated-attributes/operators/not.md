@@ -16,7 +16,7 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return value          | False - if Condition is True; True - if Condition is False                                                     |
 
-## Example
+***Example***
 
 ```      
 10: NOT EXP:20
