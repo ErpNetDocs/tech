@@ -1,4 +1,4 @@
-# Data Оbjects management
+# Data objects management
 
 *Data Objects* are a design pattern, used to encapsulate logic, which is available to most data records in the system.
 
@@ -7,7 +7,7 @@ All data objects have some common attributes, sub-entities and operations.
 
 The following data and operations can be associated with a data object:
 
-* [Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)
+* [Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)
 * [file attachments]
 
 For more detailed information, see [Extensible Data Objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html).
