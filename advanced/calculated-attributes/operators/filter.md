@@ -17,8 +17,7 @@ items: Operators
 | Parameter 3 Type |
 | Return value | Returns sub-list, which meets the condition. |
 
-
-## Example
+***Example***
 
 The following example returns a list with all of lines in the current document (sales order) whose quantity is '1.00':
 
