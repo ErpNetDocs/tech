@@ -1,9 +1,9 @@
 # Cost Accounting
 
-- **[Add Production Function](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/add-production-function.md)**
-- **[Calculate Distribution Function](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/calculate-distribution-function.md)**
-- **[Cost Distribution](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/cost-distribution.md)**
-- **[Distribution Business Rules](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/distribution-business-rules/index.md)**
-- **[Distribution Generation Procedures](https://github.com/ErpNetDocs/tech/blob/master/modules/financials/cost-accounting/distribution-generation-procedures/index.md)**
+- **[Add production function](https://docs.erp.net/tech/modules/financials/cost-accounting/add-production-function.html?q=Add%20production%20function)**
+- **[Calculate distribution function](https://docs.erp.net/tech/modules/financials/cost-accounting/calculate-distribution-function.html?q=Calculate%20distribution%20function)**
+- **[Cost distribution](https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html?q=Cost%20distribution)**
+- **[Distribution business rules]**
+- **[Distribution generation procedures](https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html?q=Distribution%20generation%20procedures)**
 
 
