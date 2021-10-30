@@ -24,20 +24,19 @@ items: Operators
 
 The [WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html) clause of the **SELECT** statement supports the following operators:
 
-- **[AND](https://docs.erp.net/tech/advanced/calculated-attributes/operators/and.html)**
-- **[TOP](https://docs.erp.net/tech/advanced/calculated-attributes/operators/top.html)**
-- **[EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)**
-- **[GT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/gt.html)**
-- **[GTE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/gte.html)**
-- **[LT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/lt.html)**
-- **[LTE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/lte.html)**
+- [AND](https://docs.erp.net/tech/advanced/calculated-attributes/operators/and.html)
+- [TOP](https://docs.erp.net/tech/advanced/calculated-attributes/operators/top.html)
+- [EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)
+- [GT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/gt.html)
+- [GTE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/gte.html)
+- [LT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/lt.html)
+- [LTE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/lte.html)
 
 The operators which are not supported by the **SELECT** operator but may be used by the [FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html) operator are:
 
-- **[NOT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html)**
-- **[OR](https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html)**
-- **[LIKE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html)**
-
+- [NOT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html)
+- [OR](https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html)
+- [LIKE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html)
 
 ### FILTER AND WHERE filtering of a SELECT
 
