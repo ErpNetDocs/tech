@@ -24,7 +24,7 @@ and **NOT** whether the ID fields itself is empty:
 
 The **first** **approach is recommended** because:
 
-a. the second approach may lead to incorrect results - there are cases  with wrong results when this approach is used in a **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** clause or in multiple nested calculated attributes.
+a. the second approach may lead to incorrect results - there are cases  with wrong results when this approach is used in a [SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html) clause or in multiple nested calculated attributes.
 
-b. the first approach does  not require type conversions - we are directly checking of there is a  reference object and we don't have use **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** or **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** operators to match the types before the comparison.
+b. the first approach does  not require type conversions - we are directly checking of there is a  reference object and we don't have use [CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html) or [CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html) operators to match the types before the comparison.
 
