@@ -23,5 +23,5 @@ When the set of store transaction lines is ready, it is loaded in the *Outputs* 
 - Cost Object - the id of the store transaction line;
 - Weight Coefficient - the function sets the Line Base Cost Corrections as a coefficient. The line base cost corrections equals the sum of [LineBaseCost] (in the current store transaction line) and the sum of [BaseCostAdjustment] of all cost correction lines which are non-voided and at least released and referring the current store transaction lines.
 
-When the data is filled in the cost distribution outputs table, the **[Cost distribution](https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html)** document is saved.
+When the data is filled in the cost distribution outputs table, the [Cost distribution](https://docs.erp.net/tech/modules/financials/cost-accounting/cost-distribution.html) document is saved.
 
