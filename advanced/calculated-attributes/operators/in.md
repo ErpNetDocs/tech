@@ -20,8 +20,10 @@ items: Operators
 > [!NOTE]
 > 
 > Single quotes are only necessary when the values which we compare to are strings.
+> 
 
-## Example
+***Example***
+
 
 The following example checks whether there are sales orders with notes 'Apple' and 'Pear' into the datatabase:
 ```
