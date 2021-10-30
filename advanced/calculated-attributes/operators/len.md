@@ -20,7 +20,9 @@ items: Operators
 > 
 > The spaces are included when calculating the length.
 
-## Example
+
+***Example***
+
 
 The following example returns the length of the notes set in the sales order:
 ```
