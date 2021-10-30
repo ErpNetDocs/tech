@@ -27,7 +27,7 @@ Thus, the planned release date and planned completion date are used because of t
 
 For example, if a delivery of a large quantity of a product is expected but the delivery would be executed partially and not at once  - several deliveries, so separated store orders could be created and each store order would define the different periods for each delivery stage. The advantage in this case is that the users would have more detailed information on when exactly the products are expected to be placed in the store. If we create one store order and the planned release date is the start of the first delivery, then the users would know that the whole quantity would be available at the first stage of the delivery. 
 
-For more information, see **[Available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise)**.
+For more information, see [Available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise).
 
 ## How are the attributes filled in by generation procedures?
 
