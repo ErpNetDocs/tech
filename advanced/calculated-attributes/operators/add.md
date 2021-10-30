@@ -22,7 +22,7 @@ items: Operators
 > For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
 ## Example
-The following example adds '0.25' to the the value of the Quantity field in sales order lines and returns the sum of the two numbers.
+The following example adds '0.25' to the the value of the *Quantity* field in sales order lines and returns the sum of the two numbers.
 ```
 10: ADD ATTRIB:QuantityValue CONST:0.25                 
 ```
@@ -34,4 +34,4 @@ OUTPUT: If 'QuantityValue = 1', the output will be '1.25'.
 
 
 #### More examples:
-- [Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)
+- **[Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)**
