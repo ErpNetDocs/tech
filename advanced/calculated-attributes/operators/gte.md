@@ -21,7 +21,7 @@ items: Operators
 > 
 > Make sure the attributes which are compared have the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
-## Example
+***Example***
 
 ```      
 10: GT ATTRIB:LineNo CONST:30   
