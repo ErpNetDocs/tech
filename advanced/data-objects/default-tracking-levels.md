@@ -2,7 +2,7 @@
 
 Some entities are configured by default to track their changes. The default tracking level is system configured and cannot be lowered. However, the users can specify higher tracking levels.
 
-The following table contains the default system specified tracking levels.
+The following table contains the default system specified tracking levels:
 
 | Entity | Default tracking level | Activated in version |
 | -- | ------------------------------- | ---------------------------------------------|
@@ -30,4 +30,4 @@ The following table contains the default system specified tracking levels.
 | User groups | 3 | 2019.1 |
 | Users | 3 | 2019.1 |
 
-For more information on track changes, please check out [Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html).
+For more information on track changes, please check out **[Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**.
