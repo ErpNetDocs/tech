@@ -16,6 +16,8 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return value          | Number, rounded up to the digit, specified in DecimalPlaces                                                         |
 
+
+
 > [!NOTE]
 > 
 > Parameter 2 is optional. If Parameter 2 is not set, it is considered 0 (zero).
