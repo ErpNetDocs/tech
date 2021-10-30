@@ -16,7 +16,7 @@ items: Operators
 | Parameter 3 Type | -                         |
 | Return value     | String1 + String2         |
 
-## Example
+***Example***
 
 The following example concatenates the word 'Red' with the value of the field Notes in a sales order lines:
 
