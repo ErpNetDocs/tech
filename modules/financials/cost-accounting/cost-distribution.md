@@ -23,7 +23,7 @@ Then, the user has to enter/load the outputs on which they are distributing the 
 - Cost Object - the ID of the cost object for which costs will be distributed. The domain of the cost object is determined by the distribution document type.
 - Weight Coefficient - the field is mandatory. This is a weight coefficient for the cost distribution on the current row.
 
-Manual data entering in the outputs table is not available. The document has a function which automatically loads the outputs for the specified period (and store, if entered). For more information see **[Add production function](https://docs.erp.net/tech/modules/financials/cost-accounting/add-production-function.html)**.
+Manual data entering in the outputs table is not available. The document has a function which automatically loads the outputs for the specified period (and store, if entered). For more information see [Add production function](https://docs.erp.net/tech/modules/financials/cost-accounting/add-production-function.html).
 
 After the production is filled in the document, the cost distribution calculation may be performed manually or automatically. The table cost distribution results contains the amounts calculated for distribution on the outputs data. In the results table, there are the following fields:
 
@@ -33,6 +33,6 @@ After the production is filled in the document, the cost distribution calculatio
 
 The data in the results table has a function that calculates distributed amounts on each output. The amount is the total amount (distributed to the current output) of all cost types which are set for distribution. 
 
-For more information, see **[Calculate Distribution Function](https://docs.erp.net/tech/modules/financials/cost-accounting/calculate-distribution-function.html)**.
+For more information, see [Calculate Distribution Function](https://docs.erp.net/tech/modules/financials/cost-accounting/calculate-distribution-function.html).
 
 
