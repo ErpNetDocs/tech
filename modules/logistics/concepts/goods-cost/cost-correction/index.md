@@ -1,6 +1,6 @@
 # Cost correction
 
-The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article **[Original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20Cost%20Calculation)** describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
+The current article describes the calculation (and recalculation) of the <b>actual cost</b>. The article [Original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20Cost%20Calculation) describes how the </b>original cost</b> is calculated. Those calculations are accurate as long as the store transactions are entered in their original chronology. If the order is incorrect, so will be the cost.
 
 <b><i>Example 1:</b></i>
 
