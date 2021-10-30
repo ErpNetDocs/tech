@@ -15,7 +15,7 @@ Such calculated attribute actually represents a report with specific filters. If
 - Void 
 - Document Date
 
-So the calculated attribute must **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** the sales order lines table and filter the records as described above.
+So the calculated attribute must [SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html) the sales order lines table and filter the records as described above.
 
 Such calculated attribute would have the following parameters:
 
