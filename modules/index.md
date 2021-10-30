@@ -1,4 +1,4 @@
-﻿# @@name Internal Apps
+﻿# @@name Internal apps
  
 The internal apps in @@name are divided in application groups.
 
