@@ -56,7 +56,7 @@ Some documents are created specifically only for planning purposes. They are not
 
 ## User-defined document statuses
 
-Each Document Type can contain user-defined sub-statuses to the system states.
+Each document type can contain user-defined sub-statuses to the system states.
 
 For example, one can define the following user statuses for a document type, called "Direct Production Order":
 
@@ -76,7 +76,7 @@ For example, one can define the following user statuses for a document type, cal
 
 Each system state can have as many user statuses, as needed. As shown in the table above, one of the user statuses within each system state can be defined as Exit Status. The Exit Status is required to be reached to move to the next system state.
 
-In the example above, in order to release a Direct Production Order, the Firm Planned/Approved state must first be set. This creates a control point for moving ahead of the state.
+In the example above, in order to release a direct production order, the Firm Planned/Approved state must first be set. This creates a control point for moving ahead of the state.
 
 > [!NOTE]
-> The exit User Status-es are usually secured, so that only the authorized users can set them.
+> The exit User status-es are usually secured, so that only the authorized users can set them.
