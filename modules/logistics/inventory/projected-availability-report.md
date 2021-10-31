@@ -6,7 +6,7 @@ This report is based on [projected available balance](https://docs.erp.net/tech/
 
 This article describes the most important fields in the report:
 
-- Document date - this is the *planned release date* of the store orders;
+- Document date - this is the planned release date of the store orders;
 - On hand quantity base - the stock holds for *today*;
 - Planned quantity base - planned movement of the product (negative number when issuing, positive number when receiving). The result is calculated from non-voided, at least released store transactions, with transactions timestamps equal to the Document date field;
 - Planned quantity base to date - planned movement of the product so far. It is basically the running total of the Planned quantity base field. The result is calculated from non-voided at least released store orders with planned release date  equal to the Document date field;
