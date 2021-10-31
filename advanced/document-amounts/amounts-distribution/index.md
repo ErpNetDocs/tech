@@ -25,7 +25,7 @@ Sometimes the  additional amount may not be able to be distributed exactly throu
 
 [minimal balance distribution on a row] = 1 / 10[Round Scale].
 
-*Example 1:*
+***Example 1:***
 
 If we have **12** rows and the amount of **9.13 EUR** to distribute with the following weights: [**k1**] = [**k2**] = ... = [**k10**] = **1**, and [**k11**] = [**k12**] = **0**. So **9.13 EUR** is distributed on the first 10 rows and, at first, we apply the formula to get the the distribution of 9.13 EUR / 10 ~ **0.91 EUR** (assuming we have Round Scale = 2). In this case, we distribute only 10 * 0.91 = **9.10 EUR** and the amount left (**0.03 EUR)** have to be distributed through the first 10 rows. As we cannot distribute less than 1 / 102 = 0.01 EUR, so only the first three rows are increase by 0.01 EUR.
 
@@ -44,6 +44,6 @@ For further information on how the distibuted amount is calculated by each metho
 
  
 
-- [Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)
-- [Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)
-- [Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)
+- **[Amount distribution by amount]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)
+- **[Amount distribution by product definition]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)
+- **[Amount distribution by quantity]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)
