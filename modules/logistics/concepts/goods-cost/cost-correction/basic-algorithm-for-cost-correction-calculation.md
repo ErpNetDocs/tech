@@ -8,7 +8,7 @@ The algorithm has two stages:
 
 2. The cost of the rows that do not include accumulated information is recalculated one by one.
 
-The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction)**. With the release of **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction)**, the costs in the transaction rows are updated.
+The cost of transaction rows in multiple records is recalculated instead of the accumulated data. The mismatch between the newly calculated and the current actual cost is saved in the document [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction). With the release of [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction), the costs in the transaction rows are updated.
 
 Multiple records are generated when all transaction operations for a period (as well as the opening balance at the start of the period) are loaded. It is of great importance for all transaction operations and opening balances to be loaded during the operation. Any of them missing may lead to incorrect cost correction (during stage 2 of the algorithm).
 
@@ -104,7 +104,7 @@ After the recalculation in the second stage for the last five transactions, the 
 
 - Store #<b>1</b>, Product #<b>3, receipt transaction</b>, Transaction Timestamp: <b>19 Jan 2020 11:50</b>, recalculated cost: <b>81</b>.
 
-This means that in the **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction)** document, 5 rows will be created, one for each of thе operations with cost changed, and the rows will save the mismatches:
+This means that in the [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost%20correction) document, 5 rows will be created, one for each of thе operations with cost changed, and the rows will save the mismatches:
 
 52 - 48 =<b>4</b>, 96 - 102 = -<b>6</b>, 148 - 150 = -<b>2</b>, 74 - 75 = -<b>1</b> and 81 - 82 = -<b>1</b>.
 
