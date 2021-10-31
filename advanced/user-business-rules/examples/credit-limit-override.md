@@ -34,4 +34,4 @@ To allow a credit limit override when a client pays in cash, we can create a Bus
 > [!Note] 
 > '#IsInCash' is a [Calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html). 
 > 
-> For more information, see [Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html).
+> For more information, see [Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check->if-system-type-is-in-cash.html).
