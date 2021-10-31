@@ -1,7 +1,7 @@
 # How to use business rules to set a value into a custom property?
 We can use business rules to set values into different fields, including custom properties [action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html). Currently, if we want to set a value into a custom property, we can either copy/get that value from another custom property or use an attribute/field/ constant whose data type is String.
  
-### Example 1 - The value is copied from another Custom Property's value:
+***Example 1*** - the value is copied from another Custom Property's value:
 If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a sales order document, for example, then we can create a [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)  with the following data:
 
 Repository
@@ -26,9 +26,9 @@ Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter
 > Both Custom Property's **Value** and Custom Property's **Description** are copied.
  
 > [!Note]
-> In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another Entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and copying custom properties**.
+> In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and copying custom properties**.
  
-### Example 2 -  Set a specific value that is not copied from another Custom Property's value:
+***Example 2*** - set a specific value that is not copied from another Custom Property's value:
 
 If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a sales order document, then we can create a [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html) with the following data:
 
