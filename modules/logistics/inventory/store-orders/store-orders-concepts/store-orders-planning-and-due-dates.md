@@ -1,15 +1,15 @@
 
 # Store orders - planning and due dates
 
-The current article describes the purpose and usage of the planning and due dates in the store order headers - *Planned Release date, Planned Completion date* and *Due date* attributes.
+The current article describes the purpose and usage of the planning and due dates in the store order headers - Planned Release date, Planned Completion date and Due date attributes.
 
 ## Planned release date
 
-The date specifies when, by *plan*, the execution of the store order should start. I.e. *by plan* on this date the first store transaction for the current store order should be released (if the store order is fulfilled at once, it would be the only store transaction).
+The date specifies when, by plan, the execution of the store order should start. I.e. *by plan* on this date the first store transaction for the current store order should be released (if the store order is fulfilled at once, it would be the only store transaction).
 
 ##  Planned completion date
 
-This is the date when, *by plan*, the execution of the Store order should end. If can be considered as the date when the last store transaction for the current store order is released. But it would be more precise to say that this is the date when the last *non-completed*  store transaction is *completed*, since the releasing of the store transaction does not guarantee that the process of execution of the store order is completed and the quantities and/or the costs may be modified by corrective documents to the released store transaction.
+This is the date when, by plan, the execution of the store order should end. If can be considered as the date when the last store transaction for the current store order is released. But it would be more precise to say that this is the date when the last non-completed store transaction is *completed*, since the releasing of the store transaction does not guarantee that the process of execution of the store order is completed and the quantities and/or the costs may be modified by corrective documents to the released store transaction.
 
 ## Due date
 
@@ -21,9 +21,9 @@ For example, if we have the following dates:
 - Planned completion date = 2020/10/05
 - Due date = 2020/10/08
 
-It would mean that we *plan* to execute the order from 1th October to 5th October but the due date allows us a three days delay. This could happen if the execution plan is scheduled for this period (1th-5th October) because of purchase or production orders (because of resource optimisation, for example) but the due date is defined by another module (for example - by the delivery date to the customer).
+It would mean that we plan to execute the order from 1th October to 5th October but the due date allows us a three days delay. This could happen if the execution plan is scheduled for this period (1th-5th October) because of purchase or production orders (because of resource optimisation, for example) but the due date is defined by another module (for example - by the delivery date to the customer).
 
-Thus, the planned release date and planned completion date are used because of the production and procurement plan while the Due date is because of other modules which generate Store orders and it is used for control of the deadline. Planned release date is essential for the **[available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise)** calculation and the **[projected available balance](https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=projected%20available%20balance)**. Thus, by the planning dates the user is able to define more precisely the information about when a specified quantity of a product is expected to be produced or delivered.
+Thus, the planned release date and planned completion date are used because of the production and procurement plan while the Due date is because of other modules which generate Store orders and it is used for control of the deadline. Planned release date is essential for the [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise) calculation and the [projected available balance](https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=projected%20available%20balance). Thus, by the planning dates the user is able to define more precisely the information about when a specified quantity of a product is expected to be produced or delivered.
 
 For example, if a delivery of a large quantity of a product is expected but the delivery would be executed partially and not at once  - several deliveries, so separated store orders could be created and each store order would define the different periods for each delivery stage. The advantage in this case is that the users would have more detailed information on when exactly the products are expected to be placed in the store. If we create one store order and the planned release date is the start of the first delivery, then the users would know that the whole quantity would be available at the first stage of the delivery. 
 
@@ -83,7 +83,7 @@ The largest Required Delivery date is the largest Required Delivery date from th
 
 When issuing store orders are generated, the dates are filled in as follows:
 
-- Due date - if the Scheduled Date Time attribute from the Consumption order line has value - this is the date, else - the date of the first release of the consumption order;
+- Due date - if the cheduled Date Time attribute from the Consumption order line has value - this is the date, else - the date of the first release of the consumption order;
 - Planned Release date - Scheduled Date Time;
 - Planned Completion date - Scheduled Date Time.
 
