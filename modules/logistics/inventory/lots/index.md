@@ -13,7 +13,7 @@ Warehouse lots contain one row for each specific product, status, production bat
 - Blocked for party - non-null when the warehouse lot is blocked specifically for some party.
 - Blocked for document - if non-null, contains the document for which the lot is blocked.
 - License No - the license number for this lot. Null when license number is N/A or unknown.
-- Purchase lot number - identification of the purchase lost with which the products from this store lot are received. E.g. the document number of the Receiving order. 
+- Purchase lot number - identification of the purchase lost with which the products from this store lot are received. E.g. the document number of the receiving order. 
 - Description;
 - Expiry date;
 - Receipt date - the date of the first receipt of products in this lot.
