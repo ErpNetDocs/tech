@@ -7,7 +7,7 @@
 In most cases, in order to create a job, you have to simply create a new record with the desired job type in the *Job* navigator.
 
 Most parameters of the jobs have a default value and can operate without additional adjustments.
-An example is the [J30903 Document Print Images - Delete Old Document Print Images](xref:jobs-J30903) jobs, which has only one parameter - *Print Images Retention Months* field Enterprise Company's definition, which has a default value of "60 months".
+An example is the [J30903 Document print images - Delete old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html) jobs, which has only one parameter - *Print Images Retention Months* field Enterprise Company's definition, which has a default value of "60 months".
 
 However, there are jobs that are jobs that are performing more complicated processes and is not logical to be executed for all records in the database.
 They require configuring additional settings. Such an example is **Document state change job**. 
@@ -32,8 +32,8 @@ A job is using the *On Idle* auto-start schedule when the *Run On Idle* option i
 - The procedure is not currently working
 - There is no manually stated jobs that are currently running
 
-Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called *System Jobs*.
-The procedure can be monitored as every other long-running procedure in *Procedures* navigator in @@name or the *Procedures* tab in the *Server Manager*.
+Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called 'System Jobs'.
+The procedure can be monitored as every other long-running procedure in procedures navigator in @@name or the procedures tab in the server manager.
 
 The jobs execution system will create a list of pending jobs and will start executing them sequentially.
 The list is made on the base of the active jobs defined in the databases.
