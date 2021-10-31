@@ -44,6 +44,6 @@ For further information on how the distibuted amount is calculated by each metho
 
  
 
-- **[Amount distribution by amount]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)
-- **[Amount distribution by product definition]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)
-- **[Amount distribution by quantity]**(https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)
+- **[Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**
+- **[Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)**
+- **[Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)**
