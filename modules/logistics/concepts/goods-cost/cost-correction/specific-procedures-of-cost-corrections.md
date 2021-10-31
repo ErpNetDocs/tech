@@ -1,6 +1,6 @@
 # Specific procedures of cost corrections
 
-Apart from the standard method of **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost)** - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the **[basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation)**, there are two more ways to create a **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost)** document. They use generation procedures available in the transaction document.
+Apart from the standard method of [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost) - loading the store transaction for a specified period (plus the opening balances) and filling in the rows for the correction by the [basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation), there are two more ways to create a [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost) document. They use generation procedures available in the transaction document.
 
 ## Cost correction generation procedure for the actual cost of the current transaction
 
@@ -20,7 +20,7 @@ For each row, the following actions are applied:
 
 To make valid calculations, the cost of all store transactions affecting the current transactions should be recalculated correctly.
 
-At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost)** sub-document for the current transaction row, which contains the difference.
+At the end, the difference <b>[actual cost] - [current cost]</b> is calculated. Provided that it is different than zero, a new row is added in the [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost) sub-document for the current transaction row, which contains the difference.
 
 ## Cost correction generation procedure for the current transaction results
 
@@ -30,9 +30,9 @@ The following actions are executed:
 
 1. Loading all store transactions (with the opening balances if needed) which depend on the current document;
 
-2. Тhe **[basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation)** is applied over the loaded set of records;
+2. Тhe [basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20Algorithm%20For%20Cost%20Correction%20Calculation) is applied over the loaded set of records;
 
-3. For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the **[cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost)** is added.
+3. For each store transaction from the set of records, the difference between the algorithm result and the actual cost valid before the creation of the current transaction, is calculated. If it is a non-zero result, a new row in the [cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=cost) is added.
 
 Loading the records is performed iteratively. Before the first iteration, the following is created:
 
