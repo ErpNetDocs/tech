@@ -77,12 +77,12 @@ Another example is the production, where the cost of the produced products is fo
 
 ## Further reading:
 
-- [Calculating cost for inventory reconciliation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.html?q=Calculating%20Cost%20for%20Inventory%20Reconciliation)
+- **[Calculating cost for inventory reconciliation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-inventory-reconciliation.html?q=Calculating%20Cost%20for%20Inventory%20Reconciliation)**
 
-- [Calculating cost for produced products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html?q=Calculating%20Cost%20For%20Produced%20Products)
+- **[Calculating cost for produced products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html?q=Calculating%20Cost%20For%20Produced%20Products)**
 
-- [Calculating cost for returned products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html?q=Calculating%20Cost%20For%20Returned%20Products)
+- **[Calculating cost for returned products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html?q=Calculating%20Cost%20For%20Returned%20Products)**
 
-- [Calculating cost for transferred products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html?q=Calculating%20Cost%20For%20Transferred%20Products)
+- **[Calculating cost for transferred products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html?q=Calculating%20Cost%20For%20Transferred%20Products)**
 
-- [Calculating cost when returning rented assets](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html?q=Calculating%20Cost%20When%20Returning%20Rented%20Assets)
+- **[Calculating cost when returning rented assets](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html?q=Calculating%20Cost%20When%20Returning%20Rented%20Assets)**
