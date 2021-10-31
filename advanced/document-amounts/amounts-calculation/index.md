@@ -23,5 +23,5 @@ The values entered by the user in the *Input Percent* and *Input Amount* fields 
  
 For further information, refer to:
 
-- **[Explicit value calculation](https://github.com/ErpNetDocs/tech/blob/master/advanced/documents/additional-amounts/amounts-calculation/explicit-calculation.md)**
+- **[Explicit value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/explicit-calculation.html)**
 - **[Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)**
