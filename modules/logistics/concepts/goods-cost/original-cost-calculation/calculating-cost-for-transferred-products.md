@@ -8,9 +8,9 @@ Store Transfers create two parallel sub-document flows - receipt and issue flow.
 
 For each store transfer the following must be valid:
 
-<b>[receipt cost] = [issue cost] + [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]</b>
+<b>[receipt cost] = [issue cost] + [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]<b>
 
-Each store transaction row is calculated separately (so <b>[[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]</b> is the additional amount distributed to the current row). These calculations are executed when the receipt store order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the store order. So if the generated store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
+Each store transaction row is calculated separately (so [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost] is the additional amount distributed to the current row). These calculations are executed when the receipt store order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the store order. So if the generated store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
 
 <b><i>Example 1</b></i>:
 
