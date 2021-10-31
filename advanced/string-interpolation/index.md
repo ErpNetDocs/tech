@@ -35,7 +35,7 @@ Now is 4.10.2021 17:49:55.
 My name is John Doe.
 ```
 
-## Example
+***Example***
 
 More advanced examples for a string interpolation:
 ```cs
