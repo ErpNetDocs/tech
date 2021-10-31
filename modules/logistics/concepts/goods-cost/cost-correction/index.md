@@ -10,7 +10,7 @@ There are two receipt transactions and one issuing transaction entered in the sy
 
 - <b>receipt</b>, Timestamp: <b>05 Jan 2020 17:27, 3 PCS</b>, total cost: <b>75 EUR</b>;
 
-According to the **[original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20Cost%20Calculation)** for average cost, the issuing transaction should be:
+According to the [original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20Cost%20Calculation)** for average cost, the issuing transaction should be:
 
 - <b>issue</b>, Timestamp: <b>08 Jan 2020 11:29, 5PCS</b>, total cost: 5 * (175/7) = <b>125 EUR</b>;
 
@@ -22,7 +22,7 @@ If the third receipt transaction is entered on time, then the unit cost on <b>08
 
 The effect of the incorrect cost from <b><i>example 1</b></i> may influence not only issuing transactions. If the issuing operation was about ingredient consumption from the Production module, for example, then the cost of the production output would be incorrect as well. This leads to incorrect cost when issuing the production output.
 
-If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a **[basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20algorithm%20for%20cost%20correction%20calculation)**. This algorithm changes the costs as if they were entered on time. There is a document named cost correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.
+If you don't enter the transactions in the system on time, there will be negative consequences. To correct them, there is a [basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20algorithm%20for%20cost%20correction%20calculation). This algorithm changes the costs as if they were entered on time. There is a document named cost correction, where the results from this calculation should be saved. Тhe rows of the document show how the cost is changed (base cost, product cost, store cost, and document cost) for each Transaction row affected.
 
 Cost corrections allow the original cost to be changed. In each transaction row the fields are as follows:
 
