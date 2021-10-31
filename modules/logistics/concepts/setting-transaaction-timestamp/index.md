@@ -5,11 +5,11 @@ The current article describes the principles and some specifics in creating a du
  
 ## Basic principles
 
-Creating a duplicate of a given document is actually creating a new document which contains identical **business** data with the original one, meaning that in the duplicate  all ***substantial*** and ***meaningful*** data is copied from the original document and there is an exception for some technical data (such as internal identification numbers - Primary Keys, IDs of reference links between different parts of one document and more).
+Creating a duplicate of a given document is actually creating a new document which contains identical business data with the original one, meaning that in the duplicate  all ***substantial*** and ***meaningful*** data is copied from the original document and there is an exception for some technical data (such as internal identification numbers - Primary Keys, IDs of reference links between different parts of one document and more).
 
 This is the common algorithm used when creating a duplicate of a given document:
 
-1. A new document is created with the same Document type and in its headers the ***substantial*** data from the original document is copied:
+1. A new document is created with the same document type and in its headers the ***substantial*** data from the original document is copied:
 
 a. the ***substantial*** data from the original document header is copied to the new document header;
 
@@ -23,5 +23,5 @@ b. in each of the specific headers in the new document only the***substantial***
 
 Thus, the new document - the duplicate - must contain the same number of records (headers, rows, rows of rows etc.) as the original document and these records must have the same structure as they are in the original document.
 
-As document rows are considered not only the standard rows which most of the documents have, but also the document properties and the **Additional amounts**. Also, if the specific document header has its own properties, then they are considered document rows. The records in ‘Document amount referenced documents’ panel are considered *rows of rows* (rows of the additional amounts). Also, the records in ‘Document line amounts’ are considered as such (they are rows of the standard document rows). Currently, the attached files are not copied when creating a duplicate of a document.
+As document rows are considered not only the standard rows which most of the documents have, but also the document properties and the [Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html). Also, if the specific document header has its own properties, then they are considered document rows. The records in ‘Document amount referenced documents’ panel are considered *rows of rows* (rows of the additional amounts). Also, the records in ‘Document line amounts’ are considered as such (they are rows of the standard document rows). Currently, the attached files are not copied when creating a duplicate of a document.
 
