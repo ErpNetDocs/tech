@@ -22,7 +22,7 @@ To set up a document type as transitional:
 1. Go to the document type definition and select 'transitional document'.
 2. To generate documents of this type, use only generations that support transitional document generation.
 
-### Example 1:
+***Example 1:***
 
 When creating payment orders by sales order payment plan (see the **Sales order payment plan** article) there are preconditions for great multiplication of the number of sub-documents. For example, if the sales order has a payment plan with three payments - **40 EUR**, **50 EUR**, **10 EUR** - then initially three payment orders will be created (with no invoice data) for each scheduled playment. 
 When the amount of 60 EUR from the sales order is invoiced, two additional payment orders are created - one for **-40 EUR** and one for **-20 EUR** for planned payments №**1** and №**2**, which have no invoice data, and two more payment orders for **40 EUR** and **20 EUR** for planned payments №**1** и №**2** with invoice data.
@@ -41,7 +41,7 @@ Thereby, not only the sub-documents number is smaller, and the user does not hav
 This is some kind of automatic processing of these documents by the system.
 The user has to work only on the parent document. This is where the name of these documents came from - *transitional* - as these documents do not need direct processing by the user.
 
-### Example 2:
+***Example 2:***
 
 There is a sales order for **100 pcs**. It creates transitional store order. The first store order has **100 pcs**.
 When we correct the parent sales order so the quantity is **70 pcs**, there are the following two cases:
@@ -49,7 +49,7 @@ When we correct the parent sales order so the quantity is **70 pcs**, there are 
 - the first is when the primary store order has **100 pcs** and it is not Releаsed, but Firm Planned (this is possible if its state is returned to Firm Planned before the sales order correction or when the store order is created before its type is set to transitional). In this case, as there is no released document to correct, so a new Store Order is created with **-30 pcs**. Now there are two documents;
 - But if the primary store order is Released (the usual case), then the discrepancy of **-30 pcs** is applied as a document correction and the quantity in the primary store order is now **70 pcs**. Thereby, the sub-document is only one, as the discrepancy documents are not independent documents, they are applied to the primary document as corrections.
 
-### Example 3 (continue of Example 1):
+***Example 3*** (continue of Example 1):
 
 There is a sales order with a payment plan for 3 payments - **40 EUR**, **50 EUR**, and **10 EUR**. 
 The payment orders are set as transitional documents. Initially, there are no invoices on this sales order so there are three released payment orders:
