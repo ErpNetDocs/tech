@@ -81,7 +81,7 @@
 
 <p>In many cases, the line amounts from the document rows play a major role in the <a href="https://docs.erp.net/tech/advanced/documents/additional-amounts.html">additional amounts</a> calculation. Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. However, there are cases when <strong>not all rows participate equally in the distribution</strong>.</p>
 <p>For example, it is possible for some products in an invoice to be <strong>exempt</strong> from income tax (VAT). This leads to not all document rows participating in the VAT calculation. The calculated amount will be distributed only among the ones that <strong>have</strong> participated. Similar is the case with the 'Customs additional amount’ in purchase invoices, where a customs fee is due for particular products.</p>
-<p>There is a mechanism allowing the indication of some rows as more important than others - users can set weights, coefficients, or in some cases percentages for each document row. It is available in the <em>Document Line Amounts</em> panel, also known as *Amounts Distribution By Rows'. Here, the coefficient of the specific row is entered in the <em>Line Percent</em> field. These specific parameters may only be entered for additional amounts marked as distributed by product definition (see <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a>.</p>
+<p>There is a mechanism allowing the indication of some rows as more important than others - users can set weights, coefficients, or in some cases percentages for each document row. It is available in the <em>Document Line Amounts</em> panel, also known as *Amounts Distribution By Rows'. Here, the coefficient of the specific row is entered in the <em>Line Percent</em> field. These specific parameters may only be entered for additional amounts marked as distributed by product definition (see <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a>).</p>
 <p>In this panel, weights are entered in two ways:</p>
 <ul>
 <li>manually, when the document is created</li>
@@ -95,8 +95,8 @@
 <h2 id="weights--coefficients-in-the-product-definitions">Weights &amp; coefficients in the product definitions</h2>
 <p>Sometimes, weights of specific services are known before documents are created.</p>
 <p>For example, when customs taxes are paid for goods on import, some of the products have taxes and others do not. For many, taxes are defined by law and they are a constant percent of the product value. Users have to enter their weight for the additional amount 'Customs'. Then, once the documents are entered in ERP.net, when a product is selected in a document row, its weight is copied from the product definition into the <em>Document Line Amount</em> panel. Users can change the default weights of the products.</p>
-<h4 id="example-1">Example 1:</h4>
-<p>There is an additional amount ‘Customs’ with the following properties:</p>
+<p><em><strong>Example 1:</strong></em></p>
+<p>There is an additional amount Customs with the following properties:</p>
 <ul>
 <li>Distributed by: <strong>Product Definition</strong>;</li>
 <li>Default percent: <strong>100%</strong>.</li>
@@ -114,7 +114,7 @@
 <h2 id="weights--coefficients-in-the-document">Weights &amp; coefficients in the document</h2>
 <p>In certain cases, weights of the products for specific additional amounts are not known in advance.</p>
 <p>For example, they may depend on a document parameter and rely on the deal type of the sales order. Regardless of whether VAT is applicable or not and whether the document row has different deal types, users will have to enter the weights/coefficients in the specific document along with deal type. Products do not have percentages in their definitions in advance.</p>
-<p>####Example 2:</p>
+<p><em><strong>Example 2:</strong></em></p>
 <p>There is an additional amount ‘Specific VAT’, which is distributed by product definition and has a default percentage of <strong>20%</strong>.</p>
 <p>A user enters a sales order with four rows = #10 with amount of <strong>44 EUR</strong>, #20 with amount of <strong>56 EUR</strong>, #30 with amount of <strong>24 EUR</strong> and #40 with amount of <strong>71 EUR</strong>. Rows #10 and #20 are exempt from VAT, while the others have 20% VAT.</p>
 <p>The user manually sets the following percentages (<strong>100%</strong> on rows #30 and #40):</p>
@@ -125,7 +125,7 @@
 <li>row #40: weight = <strong>1.00</strong>.</li>
 </ul>
 <p>The Specific VAT is <strong>19 EUR</strong> <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a> and it is distributed through the rows as <strong>0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR</strong>.</p>
-<p>####Example 3:</p>
+<p><em><strong>Example 3:</strong></em></p>
 <p>The following example describes a case where data is absent from the <em>Document Line Amount</em> panel:</p>
 <p>There is an additional amount VAT with a default percentage of <strong>20%</strong>. Since it is not distributed by the product definitions in the <em>Document Line Amount</em> panel, there is no data. In this case, no weights/coefficients are used for calculating and distributing the VAT amount. It is considered that all document rows have <strong>100%</strong> VAT so we can have easier calculation formulas.</p>
 </article>

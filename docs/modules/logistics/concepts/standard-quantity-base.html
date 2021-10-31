@@ -79,13 +79,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="standard-quantity-base">Standard Quantity Base</h1>
 
-<p>In Version 2018.2, we added a new dimension to measure the quantity in Logistics Documents - Standard Quantity Base (SQB).</p>
+<p>In Version 2018.2, we added a new dimension to measure the quantity in logistics documents - Standard Quantity Base (SQB).</p>
 <p>SQB represents the theoretical quantity in the base measurement unit according to the current dimensions of the product.</p>
 <p>The main objective is to improve algorithms for exhaustion and clear traceability of the execution of the ordered quantity.</p>
 <h2 id="more-details">More details</h2>
 <p>Quantity (Q) and Quantity Base (QB) were used for the exhaustion of the quantities between parent and generated (child) documents.</p>
 <p>Variable measurement ratios allowed the <strong>editing</strong> of QB. It no longer tracks the exhaustion between a parent and a child document.</p>
-<p><em>Example</em>:</p>
+<p><em><strong>Example</strong></em>:</p>
 <p>PRODUCT (2 pcs = 1 kg standard)</p>
 <p>SALES ORDER (Q = 100 pcs, QB = 50 kg)</p>
 <p>STORE TRANSACTION (Q = 100 pcs, QB = 49 kg)</p>
@@ -97,7 +97,7 @@
 </ul>
 <p>The example above shows that QB can no longer be used to monitor exhaustion, at least in the case of products with a variable ratio of units of measurement. This led to the need of adding a new measure - <strong>SQB</strong> (quantity in a standard unit of measure).</p>
 <p><strong>SQB</strong> is the theoretical quantity in Base Measurement Unit which will be calculated if QB remains read-only, unchangeable by the user.</p>
-<p><em>Example</em>:</p>
+<p><em><strong>Example</strong></em>:</p>
 <p>PRODUCT (2 pcs = 1 kg)</p>
 <p>SALES ORDER (Q = 100 pcs, QB = 50 kg, SQB = 50 kg)</p>
 <p>STORE TRANSACTION (Q = 100, QB = 49 kg (measured), SQB = 50 kg)</p>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Warehouse Management | ERP.net Tech Docs </title>
+    <title>Warehouse management | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Warehouse Management | ERP.net Tech Docs ">
+    <meta name="title" content="Warehouse management | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="wms">
-<h1 id="warehouse-management">Warehouse Management</h1>
+<h1 id="warehouse-management">Warehouse management</h1>
 
-<p>Warehouse Management Module follows the concepts of the Warehouse Management Systems <a href="https://en.wikipedia.org/wiki/Warehouse_management_system">WMS</a>. The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the <strong>Managed Warehouses</strong>.</p>
-<p><strong>Managed Warehouses</strong> are physical warehouses, which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:</p>
+<p>Warehouse management module follows the concepts of the Warehouse Management Systems <a href="https://en.wikipedia.org/wiki/Warehouse_management_system">WMS</a>. The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the <strong>managed warehouses</strong>.</p>
+<p><strong>Managed warehouses</strong> are physical warehouses, which have managed operation. They exist outside of existing store definitions. ThesStores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:</p>
 <ul>
 <li>Picking</li>
 <li>Put-Away</li>
@@ -92,7 +92,7 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing &quot;Store&quot; concept is strictly bound to the enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.</p>
+<p>One managed warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise companies). While the existing &quot;Store&quot; concept is strictly bound to the enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.</p>
 </div>
 <p>The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.</p>
 <p><img src="zones.png" alt="Zones"></p>
@@ -104,14 +104,14 @@
 <p>The zones are further divided in <strong>Locations</strong>. Locations have name (like #1-8-20), which is used to uniquely identify them.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Use Warehouse Management to increase efficiency by automating warehouse routing and identifying storage locations for your products.</p>
+<p>Use warehouse management to increase efficiency by automating warehouse routing and identifying storage locations for your products.</p>
 </div>
 <p>The two most basic documents of WMS are:</p>
 <ul>
-<li><p><strong>Warehouse Requisitions (W.R.)</strong> <br>
+<li><p><strong>Warehouse requisitions (W.R.)</strong> <br>
 They contain outside requests for warehouse operations (usually inbound/outbound).</p>
 </li>
-<li><p><strong>Warehouse Orders (W.O.)</strong> <br>
+<li><p><strong>Warehouse orders (W.O.)</strong> <br>
 They are the internal plan for execution of W.R. They contain routes, locations, workers, etc.</p>
 </li>
 </ul>
@@ -121,18 +121,18 @@ They are the internal plan for execution of W.R. They contain routes, locations,
 <ol>
 <li>The outside module/department creates W.R. based on its needs.</li>
 <li>Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.</li>
-<li>The workers use their handheld devices to execute the order. Each step is recorded as both Warehouse Transaction and Warehouse Order Execution.</li>
-<li>After the WO is fully executed, the Warehouse Requisition Execution is updated.</li>
+<li>The workers use their handheld devices to execute the order. Each step is recorded as both warehouse transaction and warehouse order execution.</li>
+<li>After the WO is fully executed, the warehouse requisition execution is updated.</li>
 <li>After the WR is fully executed, the external module/department updates its execution state.</li>
 </ol>
 <p>Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.</p>
 <p><img src="handy.png" alt="Handy"></p>
-<h2 id="push-and-pull-task-management">Push And Pull Task Management</h2>
-<p>When a Warehouse Requisition document comes in, there are many ways we can plan how to fulfill it. The plan is represented by Warehouse Order documents. <br>
+<h2 id="push-and-pull-task-management">Push and Pull task management</h2>
+<p>When a warehouse requisition document comes in, there are many ways we can plan how to fulfill it. The plan is represented by warehouse order documents. <br>
 But how these Order documents are created? There are at least two main ways to organize the work.</p>
-<h3 id="pull-system">Pull System</h3>
-<p>The Pull System is the easiest way to organize the execution. Under some circumstances, it can also be the most efficient.<br>
-In the Pull System, each Warehouse Worker decides when to get (pull) work. Whenever they are ready, they request more work through their mobile app.</p>
+<h3 id="pull-system">Pull system</h3>
+<p>The Pull system is the easiest way to organize the execution. Under some circumstances, it can also be the most efficient.<br>
+In the Pull system, each warehouse worker decides when to get (pull) work. Whenever they are ready, they request more work through their mobile app.</p>
 <p>Pros:</p>
 <ul>
 <li>Do not require a central planner.</li>
@@ -147,8 +147,8 @@ In the Pull System, each Warehouse Worker decides when to get (pull) work. Whene
 <li>Without a central planner, worker control needs to be better controlled.</li>
 <li>Cannot implement complex order mixing, splitting or other complex work procedures.</li>
 </ul>
-<h3 id="push-system">Push System</h3>
-<p>Under the Push System, there is a central planner, who plans the work and pushes it to the workers. The Push System might be required in more complicated execution environments.</p>
+<h3 id="push-system">Push system</h3>
+<p>Under the Push system, there is a central planner, who plans the work and pushes it to the workers. The Push system might be required in more complicated execution environments.</p>
 <p>Pros:</p>
 <ul>
 <li>A central planner can better allocate the worker and machine resources to fulfill the requisitions.</li>
@@ -160,7 +160,7 @@ In the Pull System, each Warehouse Worker decides when to get (pull) work. Whene
 <li>More expensive - require a central planner.</li>
 <li>The efficiency of the workers depends heavily on the planner.</li>
 </ul>
-<h3 id="choosing-the-right-strategy">Choosing The Right Strategy</h3>
+<h3 id="choosing-the-right-strategy">Choosing the right strategy</h3>
 <p>There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in.</p>
 <p>However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is a possible direction.
 Also, mixing robots with human workers might require using custom strategies.</p>

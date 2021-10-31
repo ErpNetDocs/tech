@@ -997,12 +997,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "include-not-found"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/object-relational-mapping.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/object-relational-mapping.html",
-          "hash": "H50yll1A/lMrT40orzSaUw=="
+          "hash": "9YE39X6BU4OFXahzWuxW2g=="
         }
       },
       "is_incremental": false,
@@ -1121,7 +1124,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/index.html",
-          "hash": "lIjNC6uB4lkIXlx5w8nHnQ=="
+          "hash": "TfOpUDX90kpqgiJXmYHb7A=="
         }
       },
       "is_incremental": false,
@@ -1133,7 +1136,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "dY+e8N6j7KrUyreB1MR7mQ=="
+          "hash": "dzPH/oq+Y8Ai/9aBd+a2Iw=="
         }
       },
       "is_incremental": false,
@@ -1145,7 +1148,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-amount.html",
-          "hash": "Xx15zbtOO1uCRe9HHZmfRg=="
+          "hash": "AZYFfcl/ARlMFknz2OIEyA=="
         }
       },
       "is_incremental": false,
@@ -1157,7 +1160,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-product-definition.html",
-          "hash": "SGid1D/O9SKwl2xjHmG0KA=="
+          "hash": "SDP6Z8CYNBhMT7o00mjpPQ=="
         }
       },
       "is_incremental": false,
@@ -1169,7 +1172,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-quantity.html",
-          "hash": "tmw6Yex9o5wQyyBE8lqlqA=="
+          "hash": "xpO54765JZ9i636korjS9w=="
         }
       },
       "is_incremental": false,
@@ -1181,7 +1184,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/index.html",
-          "hash": "13X9dzy3kHS2jlNgunJ/WA=="
+          "hash": "mZ3Yiq2xIkPcGtji5+B2Cw=="
         }
       },
       "is_incremental": false,
@@ -1193,7 +1196,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/determination-and-recording.html",
-          "hash": "+JlYbmqbbZNoejHLUfx2WQ=="
+          "hash": "bz0PX9B/5FtHVIEVzFyJOg=="
         }
       },
       "is_incremental": false,
@@ -1205,7 +1208,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/index.html",
-          "hash": "4DpeKCzF5L2UNDUMyFfTSw=="
+          "hash": "oczNWmECW/SgeV5jrp1I2g=="
         }
       },
       "is_incremental": false,
@@ -1217,7 +1220,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/referenced-documents.html",
-          "hash": "5+FIdbpzio9xA+K5KiLkfQ=="
+          "hash": "scxAJWQqVT4+a1rXPqMEKg=="
         }
       },
       "is_incremental": false,
@@ -1229,7 +1232,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/rows-weighting.html",
-          "hash": "QM6lyCdpAMdDmSqc+456lg=="
+          "hash": "ZO9FtlCP6fn0PGEi3ygAnA=="
         }
       },
       "is_incremental": false,
@@ -1241,7 +1244,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/usage.html",
-          "hash": "OKqlBU2qJBpJL/qPBujUnQ=="
+          "hash": "P/+0rypkM0NLliKVWPBMOQ=="
         }
       },
       "is_incremental": false,
@@ -1253,7 +1256,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/creating-duplicate.html",
-          "hash": "mww65ZKF6ap/cITQtqndbg=="
+          "hash": "q58leEh7lIubMY2Rho1OkQ=="
         }
       },
       "is_incremental": false,
@@ -1301,7 +1304,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/generation.html",
-          "hash": "87wwS21qesKXgu0gyypIPQ=="
+          "hash": "dj5moC4BwX2X2Cwxpxaj6A=="
         }
       },
       "is_incremental": false,
@@ -1337,7 +1340,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/transitional-documents.html",
-          "hash": "zLZdUv3gXyZhbBOBBza2lg=="
+          "hash": "zN3DtFUKrLSLI5xyYGWgtQ=="
         }
       },
       "is_incremental": false,
@@ -1373,7 +1376,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30724.html",
-          "hash": "l0hE8kv/jspTup/kBXrZsA=="
+          "hash": "I/pFi6FYlTo71BAwEk3fsw=="
         }
       },
       "is_incremental": false,
@@ -1385,7 +1388,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30777.html",
-          "hash": "yCTz5tQyqpCYS5uDLJYVAQ=="
+          "hash": "+5Ks4AB/g8cyYc8qWLG4Qg=="
         }
       },
       "is_incremental": false,
@@ -1397,7 +1400,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J30903.html",
-          "hash": "VTwBFCfw7MWSwWdco4/gzw=="
+          "hash": "DuikRlBdIqqWw30dW3D/QQ=="
         }
       },
       "is_incremental": false,
@@ -1409,7 +1412,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "7eIRrSDH/EIxPeW73OqWtg=="
+          "hash": "vXjYaWb26gMMk1h/It1T0A=="
         }
       },
       "is_incremental": false,
@@ -1421,7 +1424,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/template.html",
-          "hash": "FqX3vgVNjs1S1yKDGMGVhg=="
+          "hash": "2kexZBAmdKQ4c2Y5uBIpZQ=="
         }
       },
       "is_incremental": false,
@@ -1433,7 +1436,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/examples/constant.html",
-          "hash": "0SQp9tsc4EkelnqS/UDpew=="
+          "hash": "9hY7zSiEGqYkjvMYcvv7ow=="
         }
       },
       "is_incremental": false,
@@ -1445,7 +1448,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/examples/data-member.html",
-          "hash": "RRTuaAREy9dVvjTKYZ/9SA=="
+          "hash": "Tr2KJ2EMw9V0UW6Locn2sQ=="
         }
       },
       "is_incremental": false,
@@ -1457,7 +1460,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/examples/entity.html",
-          "hash": "xKcS2zkaDWVdZVZT9FZbRw=="
+          "hash": "7ZO2aBnQwk9hHoVZF4wABQ=="
         }
       },
       "is_incremental": false,
@@ -1481,7 +1484,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/examples/system-variable.html",
-          "hash": "ObVHxS3z4f1w8bNQ6Jccjg=="
+          "hash": "8n7srhmfwiMAKvKXogydxQ=="
         }
       },
       "is_incremental": false,
@@ -1553,7 +1556,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/format-specifiers.html",
-          "hash": "JCpGymxVsAUOQJHgAQWWYw=="
+          "hash": "omF2kjmNHP2enUpa9C5G6A=="
         }
       },
       "is_incremental": false,
@@ -1565,7 +1568,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/index.html",
-          "hash": "nWHhHxLItpVsS0k8f38brA=="
+          "hash": "yve0e8jFpgcuosKZ9I4x1A=="
         }
       },
       "is_incremental": false,
@@ -1589,7 +1592,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "2fEmWyWA9a6D7TowVroS9A=="
+          "hash": "ImKACiP+QIELe1KQi580Kg=="
         }
       },
       "is_incremental": false,
@@ -1613,7 +1616,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.html",
-          "hash": "7fB/1QHKVO+YSoPnZpj87A=="
+          "hash": "ooicJzJ4OCczXdWYJknUBA=="
         }
       },
       "is_incremental": false,
@@ -1637,7 +1640,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/index.html",
-          "hash": "nnl0vbRgGuiIYUYdFVf54A=="
+          "hash": "RixjaIAnErsCPRlqyJ9XKQ=="
         }
       },
       "is_incremental": false,
@@ -1649,7 +1652,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/notifyuser.html",
-          "hash": "u7m0ltH2pOFLqT2Lt8pcAQ=="
+          "hash": "eaXa3k59rZQYZRNlNn+rWg=="
         }
       },
       "is_incremental": false,
@@ -1661,7 +1664,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/sendmail.html",
-          "hash": "zENme+o2nLR08jT+MzKSLQ=="
+          "hash": "qmGzYxKuqLX6exVvt19lrw=="
         }
       },
       "is_incremental": false,
@@ -1673,7 +1676,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/setvalue.html",
-          "hash": "sr31UVPqq/NGm7PsVOc+kA=="
+          "hash": "3dJVtY16mYby8zFD6yVrlw=="
         }
       },
       "is_incremental": false,
@@ -1685,7 +1688,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/warning.html",
-          "hash": "vW6EGr1FMR2wqzBbx8fwPA=="
+          "hash": "qiQ9J9GRF3Bp8J0g7SR4PA=="
         }
       },
       "is_incremental": false,
@@ -1697,7 +1700,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/code.html",
-          "hash": "vTucXp4GgGvd44IjuDRimw=="
+          "hash": "dFKZaktXu24vGXnQrtjn+A=="
         }
       },
       "is_incremental": false,
@@ -1745,7 +1748,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/aggregate-client-commit.html",
-          "hash": "HccWExerh/UbWBPPnwYaJw=="
+          "hash": "L1fb2MT43qus6lavj7GBsw=="
         }
       },
       "is_incremental": false,
@@ -1757,7 +1760,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/business-rules/index.html",
-          "hash": "QxUHolVJMKeLtZ2kG5EDHw=="
+          "hash": "Jm5KPf6AMH7C4oCLxk701Q=="
         }
       },
       "is_incremental": false,
@@ -1793,7 +1796,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/commit.html",
-          "hash": "/59Mu+1z83bCuZWrmAAR9w=="
+          "hash": "BRcPEIBI0CbGN6ZwqOzz9w=="
         }
       },
       "is_incremental": false,
@@ -1805,7 +1808,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/index.html",
-          "hash": "4jviTyklybgoQYfy1Ohs3w=="
+          "hash": "UR8HSq5ekUN2aRp10kawzA=="
         }
       },
       "is_incremental": false,
@@ -1853,7 +1856,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/credit-limit-override.html",
-          "hash": "fbdBMZ9RnYAi5x9gjg/Z8Q=="
+          "hash": "1MQn54b1WVO1Jq6sRogbpA=="
         }
       },
       "is_incremental": false,
@@ -1925,7 +1928,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/parameter-types/formattedstring.html",
-          "hash": "lT6FScZR6JIEUjUkErBmOw=="
+          "hash": "de2to6kwt5FvTRCGX4rFxw=="
         }
       },
       "is_incremental": false,
@@ -1994,7 +1997,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/documents/display.html",
-          "hash": "P4DhShodh2AAde/6IkjyVA=="
+          "hash": "XpUG4ET42isE+VYsl+0PSg=="
         }
       },
       "is_incremental": false,
@@ -2006,7 +2009,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/documents/index.html",
-          "hash": "ZTlQwUC/6OdV4jZBSTvlXA=="
+          "hash": "ydVgaeMT9O2U9rse00rn0g=="
         }
       },
       "is_incremental": false,
@@ -2018,7 +2021,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/documents/states.html",
-          "hash": "y2kdEJSa174Obqo7UM9zOw=="
+          "hash": "tVMNbqqQWBfKIczMerrTAw=="
         }
       },
       "is_incremental": false,
@@ -2054,7 +2057,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/multi-company.html",
-          "hash": "ls4ESe5kMAHaSiYdM27srw=="
+          "hash": "mNN4QMhMWT7ZmcSC396+Bg=="
         }
       },
       "is_incremental": false,
@@ -2078,7 +2081,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/parties-concepts.html",
-          "hash": "eVGsoKvoSeoA7xm9Sm0XtA=="
+          "hash": "w+1Jrx3jAATd8HhnYRcFZA=="
         }
       },
       "is_incremental": false,
@@ -4083,7 +4086,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html",
-          "hash": "qt+Wg6Af8W+KQntTn5mAPQ=="
+          "hash": "qnbyB3gYLkua1mIa56GAtg=="
         }
       },
       "is_incremental": false,
@@ -4095,7 +4098,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/index.html",
-          "hash": "WuROru+NTgfVMZNTqM5G8A=="
+          "hash": "JJcJ3U7AABFGYT/KktNF7w=="
         }
       },
       "is_incremental": false,
@@ -4107,7 +4110,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html",
-          "hash": "hYN6H6cGIm0A93/AfGShJA=="
+          "hash": "DbDmsZcX3zhw/QVgpBew3g=="
         }
       },
       "is_incremental": false,
@@ -4119,7 +4122,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html",
-          "hash": "U98OwOQAnLAinc4LtV14Hg=="
+          "hash": "JpoAim0RcMKz1ADSd8Uilw=="
         }
       },
       "is_incremental": false,
@@ -4131,7 +4134,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/index.html",
-          "hash": "jh6glVYzTHo4gJRM8vXgPw=="
+          "hash": "m3jI4wwGlRWJOB2q1AQwHA=="
         }
       },
       "is_incremental": false,
@@ -4155,7 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html",
-          "hash": "SDDWPIZQSkNKM4MwV3afKw=="
+          "hash": "9UIF8DVwClyzEMGGRMhHLw=="
         }
       },
       "is_incremental": false,
@@ -4167,7 +4170,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html",
-          "hash": "lqSBrp/cCycE4VIC+Jn6wg=="
+          "hash": "444wjdC6S4rCwEJ3tWMhSQ=="
         }
       },
       "is_incremental": false,
@@ -4179,7 +4182,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html",
-          "hash": "IejF2mblJKL7FLuyPNJJdg=="
+          "hash": "ArO1zAkggcxgybcPvUVozA=="
         }
       },
       "is_incremental": false,
@@ -4203,7 +4206,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/goods-cost/original-cost-calculation/index.html",
-          "hash": "4+i88OsmwxFXLzxL3ECxDg=="
+          "hash": "uFeUXU1lAB+CHyJqk06DtA=="
         }
       },
       "is_incremental": false,
@@ -4227,7 +4230,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/lots-issue.html",
-          "hash": "fM01g0WNJmfguCnpoOHQfw=="
+          "hash": "49/+nVVa7zbXatcvwI2yQw=="
         }
       },
       "is_incremental": false,
@@ -4250,7 +4253,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaaction-timestamp/index.html",
-          "hash": "YbET1y/m/yt+JHgc6BQOig=="
+          "hash": "HHRDu0oaaGVp//Q/iEtbAw=="
         }
       },
       "is_incremental": false,
@@ -4274,7 +4277,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/index.html",
-          "hash": "LVA8+7ujnq5mlnh5qUmkjA=="
+          "hash": "udDhtZ8sBB2OOuNyRPhoOw=="
         }
       },
       "is_incremental": false,
@@ -4286,7 +4289,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html",
-          "hash": "niREpbwDGWKizhaJn9yQCw=="
+          "hash": "6/eDPDWVV6d3Nlt6upDD1w=="
         }
       },
       "is_incremental": false,
@@ -4298,7 +4301,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html",
-          "hash": "0V+nwlRojMvCIDUyXAPjiw=="
+          "hash": "SYMTu8GXxsnER30aECwfaw=="
         }
       },
       "is_incremental": false,
@@ -4310,7 +4313,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html",
-          "hash": "A8ANXQmRtHP+V3+OPhJrrQ=="
+          "hash": "G6a1bpXBIPJesicjhA9Q6w=="
         }
       },
       "is_incremental": false,
@@ -4322,7 +4325,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html",
-          "hash": "7GIdOru0BY/WeVVvjoCdbQ=="
+          "hash": "3qp4hgI9HYOljfB5It903g=="
         }
       },
       "is_incremental": false,
@@ -4334,7 +4337,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/standard-quantity-base.html",
-          "hash": "ji1XdF58RlO5097SgyzrHQ=="
+          "hash": "UtWSdgqDf9UlRaMeNaZVpA=="
         }
       },
       "is_incremental": false,
@@ -4358,7 +4361,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/execute-store-orders-function/index.html",
-          "hash": "20jlgK5FyHlxAW6/RCmcCQ=="
+          "hash": "CEJKsMFoKtCAmpUtr+ZX2A=="
         }
       },
       "is_incremental": false,
@@ -4394,7 +4397,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/lots/index.html",
-          "hash": "rv7Skvch6ICIYLqbk8T4jg=="
+          "hash": "RPLnQ4HHMZFbf5t69sH+5Q=="
         }
       },
       "is_incremental": false,
@@ -4406,7 +4409,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/projected-availability-report.html",
-          "hash": "GU791UktAS8Zw4F0orlkfA=="
+          "hash": "QsOMlzFV5JlEMxT7FU6xkg=="
         }
       },
       "is_incremental": false,
@@ -4442,7 +4445,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/index.html",
-          "hash": "6AUl0wX5okYFdROoWq54qQ=="
+          "hash": "wXJPAoY6Px1Z6YcBNbgpzA=="
         }
       },
       "is_incremental": false,
@@ -4454,7 +4457,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/store-orders/store-orders-concepts/store-orders-planning-and-due-dates.html",
-          "hash": "yI62lDOpJgKpKScuGrvyhw=="
+          "hash": "GEyknRT7CBuoIIooHidqWw=="
         }
       },
       "is_incremental": false,
@@ -4466,7 +4469,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/available-to-promise/atp-algorithm.html",
-          "hash": "yVxDD2EDUHJfU1nSCbA4Ww=="
+          "hash": "XnmQ+P7WQBcstG8nCzqqbg=="
         }
       },
       "is_incremental": false,
@@ -4490,7 +4493,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/available-to-promise/index.html",
-          "hash": "zpSo59pc5/LEjC8F9/iHcA=="
+          "hash": "0GAiLz2ycr0VohWfEhrkmw=="
         }
       },
       "is_incremental": false,
@@ -4524,7 +4527,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/index.html",
-          "hash": "DdwCbJVr7deZME4VV4Kaxg=="
+          "hash": "OHNDye53X5bHiLiWYKmGqg=="
         }
       },
       "is_incremental": false,
@@ -4536,7 +4539,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/material-requirements-planning.html",
-          "hash": "4DNVBT7ivzdWW7UbNNVPsA=="
+          "hash": "cFqxUS7c1fX7B1VkKUdoxw=="
         }
       },
       "is_incremental": false,
@@ -4559,7 +4562,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/planning/projected-available-balance.html",
-          "hash": "W/nJ2ye4pgx5hvRyeZt6iQ=="
+          "hash": "nGWLeobsqXBQ+Lgc+5Em1Q=="
         }
       },
       "is_incremental": false,
@@ -4571,7 +4574,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/automatic-lot-creation.html",
-          "hash": "zYxg/Sfgiqs8pTJ0FazNiw=="
+          "hash": "EDMUKMGv7K6DHMRsFJEWjw=="
         }
       },
       "is_incremental": false,
@@ -4583,19 +4586,22 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/index.html",
-          "hash": "GOWyMhuko9HC/64KzxSy2w=="
+          "hash": "Q9aU9aId0/E2qlnvMClvFA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/procurement/setting-cost-when-purchasing-goods.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/setting-cost-when-purchasing-goods.html",
-          "hash": "QEioC0oY5jRuobcepbq8pg=="
+          "hash": "6DMfOqruzZTfxqcqL+ygvg=="
         }
       },
       "is_incremental": false,
@@ -4739,7 +4745,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/warehouse-order-execution.html",
-          "hash": "0kFYv6todEyx30RIndzbLQ=="
+          "hash": "t+iCM/D6HRTAjBcgjgBGug=="
         }
       },
       "is_incremental": false,
@@ -4763,7 +4769,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "7UGCVLVsBwS/wDkjIQiUvQ=="
+          "hash": "v9cotPZV8LXzTmXDU0RCLA=="
         }
       },
       "is_incremental": false,
@@ -4787,7 +4793,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/zone-based-routing.html",
-          "hash": "oERbn81o+S04lYuCwAvnxA=="
+          "hash": "9PTqnbzU3D5MqY1Yq5drtA=="
         }
       },
       "is_incremental": false,
@@ -4894,7 +4900,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/format-specifiers.html",
-          "hash": "r4zpgtgCAjl3ze+VhNIERw=="
+          "hash": "E3XowPzjx4NgyF9iKdE7Xw=="
         }
       },
       "is_incremental": false,

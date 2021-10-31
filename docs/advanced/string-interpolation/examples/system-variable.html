@@ -80,13 +80,13 @@
 <h1 id="system-variable-expression-examples">System variable expression examples</h1>
 
 <h2 id="interpolation-of-a-globally-resolved-system-variable">Interpolation of a globally resolved system variable</h2>
-<h3 id="input">Input</h3>
+<h4 id="input">Input</h4>
 <pre><code class="lang-cs">'Now is {$datetimeutc} (UTC)'
 </code></pre>
-<h3 id="output">Output</h3>
+<h4 id="output">Output</h4>
 <pre><code class="lang-cs">'Current database name is 01.01.2021 15:00:00 (UTC)'
 </code></pre>
-<h3 id="breakdown">Breakdown</h3>
+<h4 id="breakdown">Breakdown</h4>
 <ol>
 <li><code>'Now is '</code></li>
 <li><code>{$datetimeutc}</code>
@@ -97,13 +97,13 @@
 <li><code>'(UTC)</code></li>
 </ol>
 <h2 id="externally-resolved-system-variable">Externally resolved system variable</h2>
-<h3 id="input-1">Input</h3>
+<h4 id="input-1">Input</h4>
 <pre><code class="lang-cs">'Current database name is {$dbname}'
 </code></pre>
-<h3 id="output-1">Output</h3>
+<h4 id="output-1">Output</h4>
 <pre><code class="lang-cs">&quot;Current database name is E1_PROD&quot;
 </code></pre>
-<h3 id="breakdown-1">Breakdown</h3>
+<h4 id="breakdown-1">Breakdown</h4>
 <ol>
 <li><code>'Current database name is'</code></li>
 <li><code>{$dbname}</code>
@@ -113,13 +113,13 @@
 </li>
 </ol>
 <h2 id="acquiring-a-data-member-from-a-system-variable-and-applying-a-format-specifier">Acquiring a data member from a system variable and applying a format specifier</h2>
-<h3 id="input-2">Input</h3>
+<h4 id="input-2">Input</h4>
 <pre><code class="lang-cs">'Current company location is {$enterprisecompanylocation.LocationName:en}.'
 </code></pre>
-<h3 id="output-2">Output</h3>
+<h4 id="output-2">Output</h4>
 <pre><code class="lang-cs">'Current company location is London, UK.'
 </code></pre>
-<h3 id="breakdown-2">Breakdown</h3>
+<h4 id="breakdown-2">Breakdown</h4>
 <ol>
 <li><code>'Current company location is '</code></li>
 <li><code>{$enterprisecompanylocation.LocationName:en}</code>
@@ -138,13 +138,13 @@
 <li><code>&quot;.&quot;</code></li>
 </ol>
 <h2 id="error-not-existing-system-variable">#Error# Not existing system variable</h2>
-<h3 id="input-3">Input</h3>
+<h4 id="input-3">Input</h4>
 <pre><code class="lang-cs">'Yesterday was {$yesterday}.'
 </code></pre>
-<h3 id="output-3">Output</h3>
+<h4 id="output-3">Output</h4>
 <pre><code class="lang-cs">'Yesterday was #Error: System Variable '$yesterday' not found#.'
 </code></pre>
-<h3 id="breakdown-3">Breakdown</h3>
+<h4 id="breakdown-3">Breakdown</h4>
 <ol>
 <li><code>'Yesterday was'</code></li>
 <li><code>{$yesterday}</code>
@@ -156,13 +156,13 @@
 <li><code>'.'</code></li>
 </ol>
 <h2 id="error-not-existing-reference">#Error# Not existing reference</h2>
-<h3 id="input-4">Input</h3>
+<h4 id="input-4">Input</h4>
 <pre><code class="lang-cs">'My name is {$user.RealName}.'
 </code></pre>
-<h3 id="output-4">Output</h3>
+<h4 id="output-4">Output</h4>
 <pre><code class="lang-cs">'My name is #Error: Attribute 'RealName' not found#.'
 </code></pre>
-<h3 id="breakdown-4">Breakdown</h3>
+<h4 id="breakdown-4">Breakdown</h4>
 <ol>
 <li>`'My name is''</li>
 <li><code>{$user.RealName}</code>

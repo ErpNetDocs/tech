@@ -80,7 +80,7 @@
 <h1 id="automatic-lot-creation">Automatic lot creation</h1>
 
 <p>This function is used when the user wants to automatically create new lots when purchasing products.</p>
-<p>This is achievable by the product type definition and the Lot Auto Creation field. If checked, it specifies that lots are automatically created by the receiving orders with which the products are received.</p>
+<p>This is achievable by the product type definition and the <em>Lot Auto Creation</em> field. If checked, it specifies that lots are automatically created by the receiving orders with which the products are received.</p>
 <p>When such product is purchased, the following actions are performed for each purchase order row:</p>
 <ul>
 <li>if the Lot field has value, nothing happens;</li>
@@ -103,10 +103,10 @@
 <h2 id="new-lot-algorithm-creation">New lot algorithm creation</h2>
 <p>The new lot, created in the last step of the actions described above, is created as follows:</p>
 <ul>
-<li>the product from the purchase order row is set as &quot;Product&quot; in the new lot definition;</li>
-<li>the &quot;Purchase Lot Description&quot; from the purchase order header is set as &quot;Description&quot; in the new lot definition;</li>
-<li>the Document Number of the current document is set as &quot;Purchase Lot Number&quot; in the new lot definition;</li>
-<li>the &quot;Lot Number&quot; of the new lot is formed by the biggest lot number (in alphabetic order) of the already existing ones (regardless of Product, Description or Purchase Lot Number), and this number is increased by 1; if there are no existing lots in the database &quot;00001&quot; is set.</li>
+<li>the product from the purchase order row is set as 'Product' in the new lot definition;</li>
+<li>the 'Purchase Lot Description' from the purchase order header is set as 'Description' in the new lot definition;</li>
+<li>the Document Number of the current document is set as 'Purchase Lot Number' in the new lot definition;</li>
+<li>the 'Lot Number' of the new lot is formed by the biggest lot number (in alphabetic order) of the already existing ones (regardless of Product, Description or Purchase Lot Number), and this number is increased by 1; if there are no existing lots in the database '00001' is set.</li>
 </ul>
 </article>
           </div>

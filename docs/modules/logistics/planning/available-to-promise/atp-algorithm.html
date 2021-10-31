@@ -79,10 +79,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="atp-algorithm">ATP Algorithm</h2>
 
-<p>The current stock holds are added to the unfulfilled store orders chronology. Thus, save for the physical availability, store orders which are not fulfilled, but planned to be on a specific date, are taken into account (the <i>planned release date</i> field indicates this date). Besides physical availability, other already planned stock movements are taken into account.</p>
+<p>The current stock holds are added to the unfulfilled store orders chronology. Thus, save for the physical availability, store orders which are not fulfilled, but planned to be on a specific date, are taken into account (the <i>Planned Release Date</i> field indicates this date). Besides physical availability, other already planned stock movements are taken into account.</p>
 <p>The calculated quantities for each date from the new chronology are reviewed and the smallest value is selected. This is the ATP quantity for the specified parameters.</p>
 <p>We use the smallest value. If on a date when we have the smallest value a greater value is entered as ATP quantity, and this quantity is used for a new issuing operation, it will not be enough for all ordered operations. The minimum quantity in the new chronology actually shows the greatest value we can use for the date specified as a parameter without violating other issuing store processes.</p>
-<p>Let’s apply that to the example from <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a></strong>:</p>
+<p>Let’s apply that to the example from <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a>:</p>
 <p>After adding the physical availability to the chronology, we have:</p>
 <table>
 <thead>
@@ -164,7 +164,7 @@
 </table>
 <p>Here is the graphical chart for the new chronology:
 <img src="pictures/picture1.png" alt="Picture1"></p>
-<p>After reviewing the value column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a></strong> quantity for <b>2021/10/01</b>.</p>
+<p>After reviewing the value column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a> quantity for <b>2021/10/01</b>.</p>
 <h2 id="total-clculations-for-a-period">Total clculations (for a period)</h2>
 <p>When calculating the ATP for a whole period (more than one date), the data gathering, as well as the combination of the chronology and the current stock holds, is executed the way we described earlier. After that, for every date in the period greater than or equal to the date specified as a parameter, the ATP is defined as follows:</p>
 <ol>
@@ -295,7 +295,7 @@
 <p>This method is effective enough. However, problems appear when we want to calculate the ATP for a date before all existing unexecuted store orders. There is no sore oders chronology for this date and as the opening balance is not calculated (it would be zero), the previously mentioned principle for ATP calculation cannot be applied.</p>
 <p>When the date for which we calculate the ATP is before the earliest unexecuted store orders,the following principle is applied:</p>
 <ol>
-<li><p>All unexecuted store orders after the specified date are taken into account, and the ATP is calculated according to their chronology. This is a value <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a></strong>.</p>
+<li><p>All unexecuted store orders after the specified date are taken into account, and the ATP is calculated according to their chronology. This is a value <a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a>.</p>
 </li>
 <li><p>The current available physical quantity is calculated - value [<b>Current Stock Holds</b>]</p>
 </li>
@@ -318,7 +318,7 @@
 <p>the ATP for the dates from <b>2021/10/09</b> to <b>2021/10/15</b> (including) is <b>5 pcs</b>. After this date, it is <b>11 pcs</b>.</p>
 <p>If we have the same data from the previous example, but the issue for <b>2021/10/13</b> is <b>1 pcs</b>, then the ATPs would be as follows:</p>
 <ul>
-<li><p>before <b>2021/10/09: 10 pcs</b> (this is the smaller value from the current physical availability and the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a></strong> after <b>2021/10/09</b>);</p>
+<li><p>before <b>2021/10/09: 10 pcs</b> (this is the smaller value from the current physical availability and the <a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a> after <b>2021/10/09</b>);</p>
 </li>
 <li><p>from <b>2021/10/09</b> to <b>2020/10/15</b> (including): <b>11 pcs</b>;</p>
 </li>

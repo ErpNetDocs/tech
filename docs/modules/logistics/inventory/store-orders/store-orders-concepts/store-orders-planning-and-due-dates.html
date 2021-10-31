@@ -79,11 +79,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="store-orders---planning-and-due-dates">Store orders - planning and due dates</h1>
 
-<p>The current article describes the purpose and usage of the planning and due dates in the store order headers - <em>Planned Release date, Planned Completion date</em> and <em>Due date</em> attributes.</p>
+<p>The current article describes the purpose and usage of the planning and due dates in the store order headers - Planned Release date, Planned Completion date and Due date attributes.</p>
 <h2 id="planned-release-date">Planned release date</h2>
-<p>The date specifies when, by <em>plan</em>, the execution of the store order should start. I.e. <em>by plan</em> on this date the first store transaction for the current store order should be released (if the store order is fulfilled at once, it would be the only store transaction).</p>
+<p>The date specifies when, by plan, the execution of the store order should start. I.e. <em>by plan</em> on this date the first store transaction for the current store order should be released (if the store order is fulfilled at once, it would be the only store transaction).</p>
 <h2 id="planned-completion-date">Planned completion date</h2>
-<p>This is the date when, <em>by plan</em>, the execution of the Store order should end. If can be considered as the date when the last store transaction for the current store order is released. But it would be more precise to say that this is the date when the last <em>non-completed</em>  store transaction is <em>completed</em>, since the releasing of the store transaction does not guarantee that the process of execution of the store order is completed and the quantities and/or the costs may be modified by corrective documents to the released store transaction.</p>
+<p>This is the date when, by plan, the execution of the store order should end. If can be considered as the date when the last store transaction for the current store order is released. But it would be more precise to say that this is the date when the last non-completed store transaction is <em>completed</em>, since the releasing of the store transaction does not guarantee that the process of execution of the store order is completed and the quantities and/or the costs may be modified by corrective documents to the released store transaction.</p>
 <h2 id="due-date">Due date</h2>
 <p>This is the end term for completion of the store order execution. The meaningful store order suggests the following to be true: Planned Release date =&lt; Planned Completion date =&lt; Due date. This still allows us to have different due dates and planned completion dates.</p>
 <p>For example, if we have the following dates:</p>
@@ -92,8 +92,8 @@
 <li>Planned completion date = 2020/10/05</li>
 <li>Due date = 2020/10/08</li>
 </ul>
-<p>It would mean that we <em>plan</em> to execute the order from 1th October to 5th October but the due date allows us a three days delay. This could happen if the execution plan is scheduled for this period (1th-5th October) because of purchase or production orders (because of resource optimisation, for example) but the due date is defined by another module (for example - by the delivery date to the customer).</p>
-<p>Thus, the planned release date and planned completion date are used because of the production and procurement plan while the Due date is because of other modules which generate Store orders and it is used for control of the deadline. Planned release date is essential for the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise">available to promise</a></strong> calculation and the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=projected%20available%20balance">projected available balance</a></strong>. Thus, by the planning dates the user is able to define more precisely the information about when a specified quantity of a product is expected to be produced or delivered.</p>
+<p>It would mean that we plan to execute the order from 1th October to 5th October but the due date allows us a three days delay. This could happen if the execution plan is scheduled for this period (1th-5th October) because of purchase or production orders (because of resource optimisation, for example) but the due date is defined by another module (for example - by the delivery date to the customer).</p>
+<p>Thus, the planned release date and planned completion date are used because of the production and procurement plan while the Due date is because of other modules which generate Store orders and it is used for control of the deadline. Planned release date is essential for the <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise">available to promise</a> calculation and the <a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=projected%20available%20balance">projected available balance</a>. Thus, by the planning dates the user is able to define more precisely the information about when a specified quantity of a product is expected to be produced or delivered.</p>
 <p>For example, if a delivery of a large quantity of a product is expected but the delivery would be executed partially and not at once  - several deliveries, so separated store orders could be created and each store order would define the different periods for each delivery stage. The advantage in this case is that the users would have more detailed information on when exactly the products are expected to be placed in the store. If we create one store order and the planned release date is the start of the first delivery, then the users would know that the whole quantity would be available at the first stage of the delivery.</p>
 <p>For more information, see <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise">Available to promise</a>.</p>
 <h2 id="how-are-the-attributes-filled-in-by-generation-procedures">How are the attributes filled in by generation procedures?</h2>
@@ -139,7 +139,7 @@
 <h3 id="when-generated-by-consumption-orders">When generated by consumption orders</h3>
 <p>When issuing store orders are generated, the dates are filled in as follows:</p>
 <ul>
-<li>Due date - if the Scheduled Date Time attribute from the Consumption order line has value - this is the date, else - the date of the first release of the consumption order;</li>
+<li>Due date - if the cheduled Date Time attribute from the Consumption order line has value - this is the date, else - the date of the first release of the consumption order;</li>
 <li>Planned Release date - Scheduled Date Time;</li>
 <li>Planned Completion date - Scheduled Date Time.</li>
 </ul>

@@ -83,7 +83,7 @@
 <h2 id="how-to-create-and-configure-a-job">How to create and configure a job</h2>
 <p>In most cases, in order to create a job, you have to simply create a new record with the desired job type in the <em>Job</em> navigator.</p>
 <p>Most parameters of the jobs have a default value and can operate without additional adjustments.
-An example is the <a class="xref" href="J30903.html">J30903 Document Print Images - Delete Old Document Print Images</a> jobs, which has only one parameter - <em>Print Images Retention Months</em> field Enterprise Company's definition, which has a default value of &quot;60 months&quot;.</p>
+An example is the <a href="https://docs.erp.net/tech/advanced/jobs/J30903.html">J30903 Document print images - Delete old document print images</a> jobs, which has only one parameter - <em>Print Images Retention Months</em> field Enterprise Company's definition, which has a default value of &quot;60 months&quot;.</p>
 <p>However, there are jobs that are jobs that are performing more complicated processes and is not logical to be executed for all records in the database.
 They require configuring additional settings. Such an example is <strong>Document state change job</strong>.</p>
 <p>The parameters and therefore the required settings of each job are described in its documentation.</p>
@@ -103,8 +103,8 @@ A job is using the <em>On Idle</em> auto-start schedule when the <em>Run On Idle
 <li>The procedure is not currently working</li>
 <li>There is no manually stated jobs that are currently running</li>
 </ul>
-<p>Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called <em>System Jobs</em>.
-The procedure can be monitored as every other long-running procedure in <em>Procedures</em> navigator in ERP.net or the <em>Procedures</em> tab in the <em>Server Manager</em>.</p>
+<p>Then the conditions described above are met and then the jobs execution system will start a special long-running procedure called 'System Jobs'.
+The procedure can be monitored as every other long-running procedure in procedures navigator in ERP.net or the procedures tab in the server manager.</p>
 <p>The jobs execution system will create a list of pending jobs and will start executing them sequentially.
 The list is made on the base of the active jobs defined in the databases.
 Each job runs a maximum of 5 minutes and then it is cancelled by the job runner.
@@ -125,9 +125,9 @@ LOG: <br>
 <h2 id="available-jobs">Available jobs</h2>
 <ul>
 <li><a href="J30632.html">J30632 Deletе old notifications</a></li>
-<li><a href="J30724.html">J30724 Run Scheduled Events</a></li>
-<li><a href="J30777.html">J30777 Document State Change</a></li>
-<li><a href="J30903.html">J30903 Deletе Old Document Print Images</a></li>
+<li><a href="J30724.html">J30724 Run scheduled events</a></li>
+<li><a href="J30777.html">J30777 Document state change</a></li>
+<li><a href="J30903.html">J30903 Deletе old document print images</a></li>
 </ul>
 </article>
           </div>

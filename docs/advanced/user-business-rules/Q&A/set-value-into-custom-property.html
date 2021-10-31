@@ -80,8 +80,8 @@
 <h1 id="how-to-use-business-rules-to-set-a-value-into-a-custom-property">How to use business rules to set a value into a custom property?</h1>
 
 <p>We can use business rules to set values into different fields, including custom properties <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">action types</a>. Currently, if we want to set a value into a custom property, we can either copy/get that value from another custom property or use an attribute/field/ constant whose data type is String.</p>
-<h3 id="example-1---the-value-is-copied-from-another-custom-propertys-value">Example 1 - The value is copied from another Custom Property's value:</h3>
-<p>If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a sales order document, for example, then we can create a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a>  with the following data:</p>
+<p><em><strong>Example 1</strong></em> - the value is copied from another Custom Property's value:
+If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a sales order document, for example, then we can create a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a>  with the following data:</p>
 <p>Repository
 |:----
 Crm.Sales.SalesOrders</p>
@@ -133,9 +133,9 @@ Crm.Sales.SalesOrders</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another Entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic <strong>Inheriting and copying custom properties</strong>.</p>
+<p>In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic <strong>Inheriting and copying custom properties</strong>.</p>
 </div>
-<h3 id="example-2----set-a-specific-value-that-is-not-copied-from-another-custom-propertys-value">Example 2 -  Set a specific value that is not copied from another Custom Property's value:</h3>
+<p><em><strong>Example 2</strong></em> - set a specific value that is not copied from another Custom Property's value:</p>
 <p>If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a sales order document, then we can create a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a> with the following data:</p>
 <p>Repository
 |:----

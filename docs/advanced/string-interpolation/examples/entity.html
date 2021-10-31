@@ -80,13 +80,13 @@
 <h1 id="entity-expression-examples">Entity expression examples</h1>
 
 <h2 id="acquiring-an-entity-object-and-referencing-its-data-member">Acquiring an entity object and referencing its data member</h2>
-<h3 id="input">Input</h3>
+<h4 id="input">Input</h4>
 <pre><code class="lang-cs">'Hi, {Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}, welcome to our forum!'
 </code></pre>
-<h3 id="output">Output</h3>
+<h4 id="output">Output</h4>
 <pre><code class="lang-cs">'Hi, John Doe, welcome to our forum!'
 </code></pre>
-<h3 id="breakdown">Breakdown</h3>
+<h4 id="breakdown">Breakdown</h4>
 <ol>
 <li><code>'Hi, '</code></li>
 <li><code>{Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}</code>
@@ -103,13 +103,13 @@
 <li><code>', welcome to our forum!'</code></li>
 </ol>
 <h2 id="acquiring-an-entity-object-and-deep-referencing-its-data-member-including-a-format-specifier">Acquiring an entity object and deep referencing its data member, including a format specifier</h2>
-<h3 id="input-1">Input</h3>
+<h4 id="input-1">Input</h4>
 <pre><code class="lang-cs">'The parent group of this product is &lt;{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}&gt;.'
 </code></pre>
-<h3 id="output-1">Output</h3>
+<h4 id="output-1">Output</h4>
 <pre><code class="lang-cs">'The parent group of this product is &lt;Materials&gt;.'
 </code></pre>
-<h3 id="breakdown-1">Breakdown</h3>
+<h4 id="breakdown-1">Breakdown</h4>
 <ol>
 <li><code>'The parent group of this product is '</code></li>
 <li><code>{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}</code>
@@ -136,13 +136,13 @@
 <li><code>'&gt;.'</code></li>
 </ol>
 <h2 id="error-not-existing-entity">#Error# Not existing entity</h2>
-<h3 id="input-2">Input</h3>
+<h4 id="input-2">Input</h4>
 <pre><code class="lang-cs">'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'
 </code></pre>
-<h3 id="output-2">Output</h3>
+<h4 id="output-2">Output</h4>
 <pre><code class="lang-cs">&quot;#Error: Entity 'Not_Existing_Entity' not found#&quot;
 </code></pre>
-<h3 id="breakdown-2">Breakdown</h3>
+<h4 id="breakdown-2">Breakdown</h4>
 <ol>
 <li><code>'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'</code>
 <ul>
@@ -152,13 +152,13 @@
 </li>
 </ol>
 <h2 id="error-not-existing-entity-object-id">#Error# Not existing entity object <code>Id</code></h2>
-<h3 id="input-3">Input</h3>
+<h4 id="input-3">Input</h4>
 <pre><code class="lang-cs">'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'
 </code></pre>
-<h3 id="output-3">Output</h3>
+<h4 id="output-3">Output</h4>
 <pre><code class="lang-cs">'#Error: Entity object 'ba8469d7-4854-4ff1-a5ac-a0a60414b061' not found#'
 </code></pre>
-<h3 id="breakdown-3">Breakdown</h3>
+<h4 id="breakdown-3">Breakdown</h4>
 <ol>
 <li><code>'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'</code>
 <ul>

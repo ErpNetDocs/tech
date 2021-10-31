@@ -94,7 +94,7 @@ In this case the  amount is distributed equally through the rows and for each ro
 <p>[row <strong>i</strong> distribution] = ROUND([<strong>ki</strong>] * [Input Percent], [Round Scale).</p>
 <p>The idea behind this special case is that if a percent is used for the  additional amount calculation, than this percent may be used for the  calculation of the distributed amount for each row (i.e. to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row).
 Hereby, we avoid the disadvantage of the even distribution - the amount distributed to a certain row maynot be equal to the input percent (this is huge problem, for example, in cases like VAT). <em>Example 2,</em> below, demonstrates such distribution.</p>
-<h4 id="example-1">Example 1:</h4>
+<p><em><strong>Example 1:</strong></em></p>
 <p>There are the following additional amounts:</p>
 <ul>
 <li><p>Corporate discount:</p>
@@ -125,7 +125,7 @@ Hereby, we avoid the disadvantage of the even distribution - the amount distribu
 </ul>
 </li>
 </ul>
-<p>The document has two rows: row \#10 for <strong>150 EUR</strong> and row \#20 for <strong>40 EUR</strong>. In <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent Value Calculation</a> is explained how the additional amounts are calculated:</p>
+<p>The document has two rows: row \#10 for <strong>150 EUR</strong> and row \#20 for <strong>40 EUR</strong>. In <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a> it is explained how the additional amounts are calculated:</p>
 <p>[Corporate Discount] = -<strong>5.70 EUR</strong></p>
 <p>[Eastern Bonus] = <strong>-10 EUR</strong></p>
 <p>[VAT] = <strong>34.86 EUR</strong></p>
@@ -141,7 +141,7 @@ Hereby, we avoid the disadvantage of the even distribution - the amount distribu
 <p>So the VAT distribution is as follows:</p>
 <p>[VAT for row #10] = 34.86 EUR * 137.61 / 174.3 = 27.522 EUR ~ <strong>27.52 EUR</strong>;
 [VAT for row #20] = 34.86 EUR * 36.69 / 174.3 = 7.338 EUR ~ <strong>7.34 EUR</strong>.</p>
-<h4 id="example-2">Example 2:</h4>
+<p><em><strong>Example 2:</strong></em></p>
 <p>There are <strong>20%</strong> VAT and three document rows - row #10 with <strong>100 EUR,</strong> row #20 with <strong>-30 EUR</strong> and row #30 for <strong>-70 EUR</strong>. In this case the VAT is <strong>0 EUR</strong>, but it is not appropriate to distribute <strong>0 EUR</strong> on each row (no matter what the coefficients are), as by law each row  separately must have nonzero VAT. Even if for some reason (for example  specifing roundings) the VAT is not equal to <strong>0</strong>, than it is not appropriate to distribute it equally through the rows (as it will be if we distribute by quantity and we have [<strong>S</strong>] = <strong>0</strong>), because the amounts on each row are different. This is the reason why  in these cases a specific calculation of the distributed amounts is  applied:</p>
 <p>[VAT for row #10] = 100 EUR* 0.2 = <strong>20 EUR</strong>;
 [VAT for row #20] = -30 EUR * 0.2 = <strong>-6 *<em>EUR*</em></strong>;
@@ -150,7 +150,7 @@ Hereby, we avoid the disadvantage of the even distribution - the amount distribu
 <h5>Note</h5>
 <p>Also there is a specific case when the additional amount is distributed by  amount. If some rows/coefficients in the document are positive and some  of them are negative - as it is discribed in <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a>, in these cases except the total amount of the additional amount there  are also two subtotals - positive amount/part and negative amount/part.  The amount distribution is performed in two stages - at first the positive subtotals are distributed throught the rows with positive  amounts and then the negative subtotal is distributed throught the rows  with negative amounts.</p>
 </div>
-<h4 id="example-3">Example 3:</h4>
+<p><em><strong>Example 3:</strong></em></p>
 <p>There is an additional amount VAT with input percent <strong>20%</strong>  and three document rows - row #10 with amount of <strong>74 EUR</strong>, row #20 with amount of <strong>26 EUR</strong> and row #30 with amount of <strong>-45 EUR</strong>. The VAT amount is <strong>11 EUR</strong> and the the subtotals are [positive VAT] = <strong>20 EUR</strong> and [negative VAT] = <strong>-9 EUR</strong>. Then at first the <strong>20 EUR</strong> are distributed on row #10 and row #20 in 74:26 ratio:</p>
 <p>[VAT for row #10] = 20 EUR * 74 / 100 = <strong>14.80 EUR</strong>;</p>
 <p>[VAT for row #20] = 20 EUR * 26 / 100 = <strong>5.20 EUR</strong></p>

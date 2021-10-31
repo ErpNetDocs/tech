@@ -80,13 +80,13 @@
 <h1 id="data-member-expression-examples">Data member expression examples</h1>
 
 <h2 id="same-level-data-member-reference">Same level data member reference</h2>
-<h3 id="input">Input</h3>
+<h4 id="input">Input</h4>
 <pre><code class="lang-cs">'The document Id is {DocumentId}.'
 </code></pre>
-<h3 id="output">Output</h3>
+<h4 id="output">Output</h4>
 <pre><code class="lang-cs">'The document Id is 929bdc15-79d8-4a1f-9467-c237f040939d.'
 </code></pre>
-<h3 id="breakdown">Breakdown</h3>
+<h4 id="breakdown">Breakdown</h4>
 <ol>
 <li><code>'The document Id is '</code></li>
 <li><code>{DocumentId}</code>
@@ -98,13 +98,13 @@
 </ol>
 <p><em>Assuming the domain object has a data member <code>DocumentId</code> which equals to '929bdc15-79d8-4a1f-9467-c237f040939d'.</em></p>
 <h2 id="referencing-data-members-deeper">Referencing data members deeper</h2>
-<h3 id="input-1">Input</h3>
+<h4 id="input-1">Input</h4>
 <pre><code class="lang-cs">'The customer is {Customer.Party.PartyName} and its number is {Customer.Number}.'
 </code></pre>
-<h3 id="output-1">Output</h3>
+<h4 id="output-1">Output</h4>
 <pre><code class="lang-cs">'The customer is John Doe and its number is C12345.'
 </code></pre>
-<h3 id="breakdown-1">Breakdown</h3>
+<h4 id="breakdown-1">Breakdown</h4>
 <ol>
 <li><code>'The customer is '</code></li>
 <li><code>{Customer.Party.PartyName}</code>
@@ -144,13 +144,13 @@
 </ol>
 <p><em>Assuming the domain object has: data member <code>Customer</code> with data members <code>Party.PartyName</code> equals to 'John Doe' and Number equals to 'C12345'.</em></p>
 <h2 id="including-a-format-specifier">Including a format specifier</h2>
-<h3 id="input-2">Input</h3>
+<h4 id="input-2">Input</h4>
 <pre><code class="lang-cs">&quot;The customer is {Customer.Party.PartyName:de}.&quot;
 </code></pre>
-<h3 id="output-2">Output</h3>
+<h4 id="output-2">Output</h4>
 <pre><code class="lang-cs">&quot;The customer is John Doe.&quot;
 </code></pre>
-<h3 id="breakdown-2">Breakdown</h3>
+<h4 id="breakdown-2">Breakdown</h4>
 <ol>
 <li><code>'The customer is '</code></li>
 <li><code>{Customer.Party.PartyName:de}</code>
@@ -176,13 +176,13 @@
 <li><code>'.'</code></li>
 </ol>
 <h2 id="error-not-existing-reference">#Error# Not existing reference</h2>
-<h3 id="input-3">Input</h3>
+<h4 id="input-3">Input</h4>
 <pre><code class="lang-cs">'The customer is {Customer.Name}.'
 </code></pre>
-<h3 id="output-3">Output</h3>
+<h4 id="output-3">Output</h4>
 <pre><code class="lang-c">'The customer is #Error: Attribute 'Name' not found#.'
 </code></pre>
-<h3 id="breakdown-3">Breakdown</h3>
+<h4 id="breakdown-3">Breakdown</h4>
 <ol>
 <li><code>'The customer is '</code></li>
 <li><code>{Customer.Name}</code>
