@@ -17,7 +17,7 @@ items: Operators
 | Return value          | Returns the first numchars characters of the string.         |
 
 
-## Example
+***Example***
 
 The following example returns the first 3 characters of the notes set in the sales order:
 ```

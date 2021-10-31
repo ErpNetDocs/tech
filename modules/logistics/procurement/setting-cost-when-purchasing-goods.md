@@ -24,7 +24,8 @@ The *unit cost* for one row in the **receiving order** is defined as follows:
 
 **[End Cost]** = **[Line Amount]** + **[sum of the distributed amounts for the current row]**. 
 
-**Note**: Only **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** that are marked with Add To Line as True. Also, the additional amount may be entered by other **purchase invoices** (for example - transport purchase invoice).
+>[!NOTE] : Only [additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html) that are 
+>marked with Add To Line as True. Also, the additional amount may be entered by other **purchase invoices** (for >example - transport purchase invoice).
 
 3. At the end the **[End Cost]** for all rows from p.1 are summed up, the quantities for those rows are summed up and the end cost is divided by those quantities. If the quantities are **0** then the unit cost is also **0**. 
 Not: When summing up all end costs have to be converted to the currency of the **receiving order**, and all quantities have to be converted to the measurement unit of the **receiving order** row.

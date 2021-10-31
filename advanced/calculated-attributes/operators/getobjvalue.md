@@ -17,7 +17,7 @@ items: Operators
 | Return value| Returns value from obj. |
 
 
-## Example
+***Example***
 
 The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the customer set the current sales order:
 ```

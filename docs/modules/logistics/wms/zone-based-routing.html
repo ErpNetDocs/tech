@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Zone Based Routing | ERP.net Tech Docs </title>
+    <title>Zone based routing | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Zone Based Routing | ERP.net Tech Docs ">
+    <meta name="title" content="Zone based routing | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="zone-based-routing">Zone Based Routing</h1>
+<h1 id="zone-based-routing">Zone based routing</h1>
 
 <h2 id="the-basic-idea">The basic idea</h2>
-<p>With Zone based routing, the rules for processing the goods are determined based on the zone, in which the goods are stored for each step.
+<p>With zone based routing, the rules for processing the goods are determined based on the zone, in which the goods are stored for each step.
 The zones are sequentially numbered, relative to their &quot;closeness&quot; to final shipping. For example:</p>
 <blockquote>
 <p>1 IN -&gt; 2 INSP -&gt; 3 BULK -&gt; 4 PICK -&gt; 5 KIT -&gt; 6 PACK -&gt; 7 OUT</p>
@@ -102,7 +102,7 @@ The full route is the concatenation of all route steps for each consecutive zone
 <p>Since zones are hierarchical, for any given zone there might be multiple rules, coming from different levels of the hierarchy.
 All rules in the hierarchy are combined when creating the routing.
 Combining the rules is performed separately for each STEP NO within each zone.
-To determine the &quot;winning&quot; rule for each step, the RULE PRIORITY is used within all rules, which satisfy the RULE CONDITIONs.</p>
+To determine the &quot;winning&quot; rule for each step, the RULE PRIORITY is used within all rules, which satisfy the RULE CONDITIONS.</p>
 <h2 id="start-and-finish-of-the-process">Start and finish of the process</h2>
 <p>The receive process starts at the inbound dock and is planned through the zones, until there are no more steps.
 Usually, it finishes at the BULK zone.

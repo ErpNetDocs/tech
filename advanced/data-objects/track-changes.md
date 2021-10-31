@@ -2,7 +2,7 @@
 uid: track-changes
 ---
 
-# Track Changes
+# Track changes
 
 *Track Changes* is a system in @@name, which can be used to track the changes in any data table.
 

@@ -17,7 +17,7 @@ items: Operators
 | Return value          | Condition1 OR Condition2                                                     |
 
 
-## Example
+***Example***
 
 ```      
 10: OR EXP:20 EXP:30

@@ -8,13 +8,13 @@
 
 For example, let's have the following:
 
-- The document type is ‘Sales Order’, with code ‘SO’
+- The document type is ‘Sales order’, with code ‘SO’
 - The document number is ‘00503’
 - The line number is 120 (the line numbers are integers)
 
 This will be represented as:
 
-**SO:00503:120 - Sales Order**
+**SO:00503:120 - Sales order**
  
  #### b) If we have to display only a document number (without line number), the format is the following:
  
@@ -22,12 +22,12 @@ This will be represented as:
 
 Now, let's have the following:
 
-- The document type is ‘Sales Order’, with code ‘SO’
+- The document type is ‘Sales order’, with code ‘SO’
 - The document number is ‘00503’
 
 This will be represented as:
 
-**SO:00503 - Sales Order**
+**SO:00503 - Sales order**
 
 ### 2. Sorting lists of documents and line numbers
 

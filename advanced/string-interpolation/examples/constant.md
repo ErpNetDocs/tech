@@ -6,27 +6,27 @@ items: StringInterpolationExamples
 
 ## Plain string
 
-### Input
+#### Input
 ```cs
 'This is a simple string.'
 ```
 Will result to the same output, because string interpolation not applicable. The input doesn't meet the syntax requirements.
 
-### Output
+#### Output
 ```cs
 'This is a simple string.'
 ```
 
 ## Expression with escaped curly braces
 
-### Input
+#### Input
 ```cs
 '{{This is a simple string.}}'
 '\{This is a simple string.\}'
 ```
 Will create a `Constant Expression` which results to an output same as the input.
 
-### Output
+#### Output
 ```cs
 '{This is a simple string.}'
 ```

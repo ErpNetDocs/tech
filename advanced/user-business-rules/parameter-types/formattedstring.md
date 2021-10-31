@@ -27,8 +27,11 @@ c. Reference path: {Customer.Party.PartyName}. Note that Child Collections are *
 -  variable formatting 
   
 The value of the domain attributes which is going to be loaded in the text can be formatted using **format specifiers**: {DocumentDate:dd-MM-yyyy}.
+
  
-#### Example:
+***Example:***
+
+
 Using formatted string, this text<br>
 
      Your web store has e new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder date: {DocumentDate:dd-MM-yyyy}\nShipping address:

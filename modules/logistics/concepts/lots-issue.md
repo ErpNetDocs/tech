@@ -3,13 +3,13 @@
 The current article describes the principles of lots issue when goods are issued from the store.
 Lots issue is actually the obligation to issue products from certain lots before others. The lots are prioritized and the priority is mandatory when goods are issued from the store (i.e. when store transactions are released). This priority is at least advisable when lots are entered before the store transaction documents (store orders, shipment orders, sales orders and more). The final goal is the lots selection in the document lines to be executed in the correct order.
 
-<b>Example 1:</b>
+<i><b>Example 1:</b></i>
 
 In the document line, <b>10 Pcs</b> of the product have to be sold/shipped/issued and the lot is not specified. The lot with the highest priority (let’s name it <b>[Lot 1#]</b>) has <b>17 Pcs</b> available. So following the principle of lots issue, the user has to select/be offered <b>[Lot 1#]</b> in the line.
 
 There are cases when the first lot does not have enough available quantity to fulfill the whole line quantity. Then, more than one lot has to be used. The quantity in the line has to be divided into several lines and in each line the lot has to be specified with its quantity. Again, the lots order defines their priority in the lots issue.
 
-<b>Example 2:</b>
+<i><b>Example 2:</b></i>
 
 If there are <b>30 Pcs</b> in the line and no lot is selected, and the three top priority lots - <b>[Lot 1#]</b>, <b>[Lot 2#]</b>, and <b>[Lot 3#]</b> - have available quantities of <b>17</b>, <b>8</b>, and <b>12Pcs</b>, then the quantity in the line would be divided into the following lines:
 
@@ -41,7 +41,7 @@ The priority may be defined by sorting the lots by the date of their first recei
 
 - for the LIFO method - the lots are sorted in a descending order by the date of first receipt.
 
-<b>Example 3:</b>
+<i><b>Example 3:</b></i>
 
 There are <b>30 Pcs</b> in a document line and lots of the product in the line have the following details (lot, available quantity/current stock hold, date of first receipt, expiry date):
 
@@ -130,7 +130,7 @@ Automatic lot issue is executed by the system when the user starts it or when an
 
 In the lot issue process, it is important to keep in mind that the quantities are entered in the measurement unit of the line. Every quantity fulfillment in the examples is done in the base measurement unit because the current stock holds and the available quantities are always shown in that unit. So, in the examples above, the Quantity Base attribute is used. To enter quantity in the Quantity field (where the measurement unit may differ from the base measurement unit of the product), the <b>Product Dimensions</b> would be used. The problem is that if product dimensions are used for all quantities in the breakdown of the line, the total Quantity might be different from the initial Quantity. This may lead to differences in the quantities in the child and the parent documents and as a result new documents may be created.
 
-<b>Example 4:</b>
+<i><b>Example 4:</b></i>
 
 There is a document line with Quantity of <b>16 l</b> and <b>30 kg</b> Quantity Base (the product dimension is <b>1 l = 1.875 kg</b>). The three lots with highest priorities for this product (<b>[Lot #1]</b>, <b>[Lot #2]</b> and <b>[Lot #3]</b>) have current stock holds/available quantities of <b>10 kg</b>, <b>10 kg</b>, and <b>18 kg</b> . In the breakdown of the initial document line, there would be <b>10 kg</b>  of each lot. If we apply the product dimension for each lot to see the quantity in liters, we would have the following:
 
@@ -150,7 +150,7 @@ This problem is solved by using the remainder and not product dimensions for the
  
  <b>- [Lot #3]</b>, Quantity Base =  <b>10 kg</b>, Quantity = 16 - 5.33333 - 5.33333 =  <b>5.33334 l</b>.
  
-<b>Example 5:</b>
+<b><i>Example 5:</b></i>
 
 The same approach for calculating the quantity in the last line from the breakdown is applied in cases of trivial breakdowns (when there is only one lot). Then, the only quantity in the breakdown is the last line. For example, if the line has Quantity of <b>2 l</b> and Quantity Base of <b>0.66667 kg</b> (3 l = 1 kg), and the first lot (with highest priority) has current stock holds/available quantity of <b>10 kg</b>, then the only breakdown is not supposed to be multiplied by 3 to have the quantity in liters (as it would make 0.66667 * 3 = 2.00001 l). The calculation should be 2 - 0 = <b>2 l</b> (this is the initial quantity minus the already used quantity - 0).
 

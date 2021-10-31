@@ -16,7 +16,9 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return value          | Value                                                         |
 
-## Example
+
+***Example***
+
 
 The following example returns the value of the notes of the current sales order line:
 ```

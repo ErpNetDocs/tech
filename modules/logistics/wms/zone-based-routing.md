@@ -51,6 +51,6 @@ They can be used to alter the routes based on conditions, which are known by the
 Rule conditions include such things as product group, zone characteristics, etc.
 
 *Task conditions* are evaluated later in the process and hence allow processing based on what is know in real time during the execution of the order.
-They are first copied to the Warehouse Order.
+They are first copied to the warehouse order.
 Then, upon actual execution of the order, they are evaluated in real time.
 Task conditions can be based on runtime characteristics like quality inspection status, lot characteristics, etc.

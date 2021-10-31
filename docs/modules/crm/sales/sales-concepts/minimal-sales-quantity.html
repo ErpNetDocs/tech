@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Minimal Sales Quantity | ERP.net Tech Docs </title>
+    <title>Minimal sales quantity | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Minimal Sales Quantity | ERP.net Tech Docs ">
+    <meta name="title" content="Minimal sales quantity | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,42 +77,42 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="minimal-sales-quantity">Minimal Sales Quantity</h1>
+<h1 id="minimal-sales-quantity">Minimal sales quantity</h1>
 
-<p>There are two ways to set a Minimal Sales Quantity of a product:</p>
+<p>There are two ways to set a minimal sales quantity of a product:</p>
 <ol>
-<li>In the Product definition. It is a minimal base quantity that has to be specified in any sale. The minimum is enforced upon releasing a Sales Order. If not set, this means that there is no minimum sales quantity enforcement.</li>
-<li>In the Product Distribution Channel definition. It is also a base quantity that has to be specified in any sale. It describes the minimal sales quantity of this product through the current channel.</li>
+<li>In the product definition. It is a minimal base quantity that has to be specified in any sale. The minimum is enforced upon releasing a sales order. If not set, this means that there is no minimum sales quantity enforcement.</li>
+<li>In the product distribution channel definition. It is also a base quantity that has to be specified in any sale. It describes the minimal sales quantity of this product through the current channel.</li>
 </ol>
-<p>If it is set in the product definition, the restriction takes place in every Sales Order.</p>
-<p>If it is set in the Product Distribution channel, then it validates the Sales Order release, only if the Distribution channel is selected in the document header. If there are two Minimal Sales Quantities for a product - one in its definition and one set by the Product distribution channel, then the more restrictive one is taken into account.</p>
+<p>If it is set in the product definition, the restriction takes place in every sales order.</p>
+<p>If it is set in the product distribution channel, then it validates the sales order release, only if the distribution channel is selected in the document header. If there are two minimal sales quantities for a product - one in its definition and one set by the product distribution channel, then the more restrictive one is taken into account.</p>
 <blockquote>
-<p>Note: The Minimal Quantity constraint does not take effect when the user enters a Sales Return.</p>
+<p>[!NNOTE] : The minimal quantity constraint does not take effect when the user enters a sales return.</p>
 </blockquote>
-<p>The restriction is applied on the Quantity Base field in the Sales Order Lines. When such restriction exists it is applied to the calculated quantity in the base measurement unit.</p>
+<p>The restriction is applied on the <em>Quantity Base</em> field in the <em>Sales Order</em> Lines. When such restriction exists it is applied to the calculated quantity in the base measurement unit.</p>
 <blockquote>
-<p>The restriction also calculates the total Quantity Base of the product in the Sales Order Lines, meaning that if the user enters the product in more than one line and the total quantity base covers the Minimal Sales Quantity Base, then the user would be able to release the Sales Order.</p>
+<p>The restriction also calculates the total quantity base of the product in the <em>Sales Order</em> Lines, meaning that if the user enters the product in more than one line and the &gt;total quantity base covers the minimal sales quantity base, then the user would be able to release the sales order.</p>
 </blockquote>
-<p><em><strong>Example 1</strong></em>:</p>
+<h4 id="example-1">Example 1:</h4>
 <ul>
-<li><strong>Product A</strong> has a Minimal Sales Quantity Base of <strong>3 PCS</strong>. The product base measurement unit is <strong>PCS</strong>. It is declared that <strong>1 KG</strong> of <strong>Product A</strong> is equal to <strong>2 PCS</strong>. In the product definition a Minimal Sales Quantity Base of <strong>3.00</strong>.</li>
+<li><strong>Product A</strong> has a minimal sales quantity base of <strong>3 PCS</strong>. The product base measurement unit is <strong>PCS</strong>. It is declared that <strong>1 KG</strong> of <strong>Product A</strong> is equal to <strong>2 PCS</strong>. In the product definition a minimal sales quantity base of <strong>3.00</strong>.</li>
 </ul>
-<p>There is a Sales Order with the following line:</p>
+<p>There is a sales order with the following line:</p>
 <ul>
 <li>Line No = <strong>10</strong>, Product = <strong>Product A</strong>, Quantity = <strong>1.40 KG</strong>, Quantity Base = <strong>2.80 PCS</strong>.</li>
 </ul>
-<p>When the user tries to release the Sales Order, he will receive an error message, that the quantity in the current document lines is less than the minimal sales quantity.</p>
-<p><em><strong>Example 2</strong></em>:</p>
-<p>If in the Sales Order from <em><strong>Example 1</strong></em> the user adds 3 more lines as follows:</p>
+<p>When the user tries to release the sales order, he will receive an error message, that the quantity in the current document lines is less than the minimal sales quantity.</p>
+<h4 id="example-2">Example 2:</h4>
+<p>If in the sales order from <em><strong>Example 1</strong></em> the user adds 3 more lines as follows:</p>
 <ul>
 <li>Line No = <strong>20</strong>, Product = <strong>Product B</strong>, Quantity = <strong>10 KG</strong>, Quantity Base = <strong>10 KG</strong>.</li>
 <li>Line No = <strong>30</strong>, Product = <strong>Product C</strong>, Quantity = <strong>3 PCS</strong>, Quantity Base = <strong>3 PCS</strong>.</li>
 <li>Line No = <strong>40</strong>, Product = <strong>Product A</strong>, Quantity = <strong>0.20 pcs</strong>, Quantity Base = <strong>0.20 PCS</strong>.</li>
 </ul>
-<p>In this case, the user will be able to release the Sales Order because Line No 10 and Line 40 has a total Quantity Base of <strong>3.00 PCS</strong>, which covers the Minimal Sales Quantity Base restriction, defined in the product definition.</p>
-<p><em><strong>Example 3</strong></em>:</p>
-<p>Product <strong>P</strong> is part of distribution channel <strong>DC#1</strong>. Its base measurement unit is <strong>PCS</strong>. Product <strong>P</strong> has a Minimal Sales Quantity Base in its definition of <strong>3.00 PCS</strong>. Product <strong>P</strong> also has a Minimal Sales Quantity Base defined in the product distribution channel of 2.80 PCS.</p>
-<p>The user enters a Sales Order with the <strong>DC#1</strong> set in its header and the following line:</p>
+<p>In this case, the user will be able to release the sales order because Line No 10 and Line 40 has a total quantity base of <strong>3.00 PCS</strong>, which covers the minimal sales quantity base restriction, defined in the product definition.</p>
+<h4 id="example-3">Example 3:</h4>
+<p>Product <strong>P</strong> is part of distribution channel <strong>DC#1</strong>. Its base measurement unit is <strong>PCS</strong>. Product <strong>P</strong> has a minimal sales quantity base in its definition of <strong>3.00 PCS</strong>. Product <strong>P</strong> also has a minimal sales quantity base defined in the product distribution channel of 2.80 PCS.</p>
+<p>The user enters a sales order with the <strong>DC#1</strong> set in its header and the following line:</p>
 <ul>
 <li>Line No = <strong>10</strong>, Product = <strong>Product P</strong>, Quantity = <strong>2.90 PCS</strong>, Quantity Base = <strong>2.90 PCS</strong>.</li>
 </ul>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Automatic Lot Creation | ERP.net Tech Docs </title>
+    <title>Automatic lot creation | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Automatic Lot Creation | ERP.net Tech Docs ">
+    <meta name="title" content="Automatic lot creation | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,19 +77,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="automatic-lot-creation">Automatic Lot Creation</h1>
+<h1 id="automatic-lot-creation">Automatic lot creation</h1>
 
 <p>This function is used when the user wants to automatically create new lots when purchasing products.</p>
-<p>This is achievable by the Product Type definition and the &quot;Lot Auto Creation&quot; field. If checked, it specifies that lots are automatically created by the Receiving Orders with which the products are received.</p>
-<p>When such product is purchased, the following actions are performed for each Purchase Order row:</p>
+<p>This is achievable by the product type definition and the Lot Auto Creation field. If checked, it specifies that lots are automatically created by the receiving orders with which the products are received.</p>
+<p>When such product is purchased, the following actions are performed for each purchase order row:</p>
 <ul>
 <li>if the Lot field has value, nothing happens;</li>
-<li>if the Lot field is empty, the system checks the value of the Product Type's definition &quot;Lot Auto Creation&quot; field (of the product of the current row):
+<li>if the Lot field is empty, the system checks the value of the product type's definition Lot Auto Creation field (of the product of the current row):
 <ul>
 <li>if it is false - nothing happens;</li>
 <li>if it is true - then an attempt to set a lot in the current row is performed:
 <ul>
-<li>an already existing lot of the current product is searched, which has the number of the current document set in the &quot;Purchase Lot Number&quot; field;
+<li>an already existing lot of the current product is searched, which has the number of the current document set in the Purchase Lot Number field;
 <ul>
 <li>if such lot is found - it is filled in the current row;</li>
 <li>if no such lot is found - a new lot is created.</li>
@@ -100,11 +100,11 @@
 </ul>
 </li>
 </ul>
-<h2 id="new-lot-algorithm-creation">New Lot Algorithm Creation</h2>
+<h2 id="new-lot-algorithm-creation">New lot algorithm creation</h2>
 <p>The new lot, created in the last step of the actions described above, is created as follows:</p>
 <ul>
-<li>the product from the Purchase Order row is set as &quot;Product&quot; in the new lot definition;</li>
-<li>the &quot;Purchase Lot Description&quot; from the Purchase Order header is set as &quot;Description&quot; in the new lot definition;</li>
+<li>the product from the purchase order row is set as &quot;Product&quot; in the new lot definition;</li>
+<li>the &quot;Purchase Lot Description&quot; from the purchase order header is set as &quot;Description&quot; in the new lot definition;</li>
 <li>the Document Number of the current document is set as &quot;Purchase Lot Number&quot; in the new lot definition;</li>
 <li>the &quot;Lot Number&quot; of the new lot is formed by the biggest lot number (in alphabetic order) of the already existing ones (regardless of Product, Description or Purchase Lot Number), and this number is increased by 1; if there are no existing lots in the database &quot;00001&quot; is set.</li>
 </ul>

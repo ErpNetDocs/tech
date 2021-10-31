@@ -17,7 +17,7 @@ items: Operators
 | Return value     | Returns the param converted to the type.                     |
 
 
-## Example
+***Example***
 
 The following example converts the value of the quantity of a sales order line, which is a decimal number, to an integer number:
 

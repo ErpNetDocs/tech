@@ -21,7 +21,12 @@ items: Operators
 > 
 > The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).
 
-## Example
+
+
+***Example***
+
+
+
 
 The following example converts the value of the state of a sales order, whose type is enum, to an integer number. Conveting to integer allows comparison between the states (lower -> higher):
 ```
@@ -34,6 +39,8 @@ OUTPUT: If 'State = Released', the output will be '30'.
 > The repository of the attribute is Crm.Sales.SalesOrders
 
 #### More examples:
+
+
 - **[Check whether the releasing of the document is first or not](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**
 - **[Check if the system type of payment type in the sales order is 'In Cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)**
 

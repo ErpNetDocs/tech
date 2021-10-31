@@ -22,7 +22,9 @@ items: Operators
 > 
 > For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
-## Example
+
+***Example***
+
 
 ```
 10:  MULTIPLY ATTRIB:QuantityValue CONST:2.00                

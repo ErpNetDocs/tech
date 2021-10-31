@@ -167,7 +167,7 @@ references:
   name: erpnet
   href: includes/erpnet.html
 - uid: extensible-data-objects
-  name: Extensible Data Objects EDO
+  name: Extensible Data Objects-EDO
   href: advanced/data-objects/extensible-data-objects.html
 - uid: format-specifiers
   name: Format specifiers
@@ -200,7 +200,7 @@ references:
   name: Jobs Documentation Template
   href: advanced/jobs/template.html
 - uid: track-changes
-  name: Track Changes
+  name: Track changes
   href: advanced/data-objects/track-changes.html
 - uid: transitional-documents
   name: Transitional documents

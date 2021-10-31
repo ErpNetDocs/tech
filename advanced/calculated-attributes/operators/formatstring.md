@@ -19,9 +19,9 @@ items: Operators
 
 > [!NOTE]
 > 
-> For more information about the supported format specifiers, see **Format Specifiers**.
+> For more information about the supported format specifiers, see [Format Specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html).
 
-## Example
+***Example***
 
 Here are some examples of the diffrent formats and format specifiers:
 

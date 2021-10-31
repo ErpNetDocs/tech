@@ -9,13 +9,13 @@ Let's say a user wants to show a field in the sales order which calculates the s
 Such calculated attribute actually represents a report with specific filters. If a user tries to get the sales of a client for the last 30 days, he would open a sales order lines report and set the following filters:
 
 - Client
-- Enterprise Company
-- Enterprise Company Location (eventually)
+- Enterprise company
+- Enterprise company location (eventually)
 - DocumentState (at least Released)
 - Void 
-- Document Date
+- Document date
 
-So the calculated attribute must **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** the sales order lines table and filter the records as described above.
+So the calculated attribute must [SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html) the sales order lines table and filter the records as described above.
 
 Such calculated attribute would have the following parameters:
 

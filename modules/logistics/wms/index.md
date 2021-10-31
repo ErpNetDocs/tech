@@ -2,11 +2,11 @@
 uid: wms
 ---
 
-# Warehouse Management
+# Warehouse management
 
-Warehouse Management Module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **Managed Warehouses**.
+Warehouse management module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **managed warehouses**.
 
-**Managed Warehouses** are physical warehouses, which have managed operation. They exist outside of existing Store definitions. The Stores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
+**Managed warehouses** are physical warehouses, which have managed operation. They exist outside of existing store definitions. ThesStores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
 
 - Picking
 - Put-Away
@@ -16,8 +16,8 @@ Warehouse Management Module follows the concepts of the Warehouse Management Sys
 - Robot interactions
 - etc.
 
-> [!Note]
-> One Managed Warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise Companies). While the existing "Store" concept is strictly bound to the enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.
+> [!NOTE]
+> One managed warehouse can encapsulate the storage and operations of multiple legal entities (Enterprise companies). While the existing "Store" concept is strictly bound to the enterprise company, the warehouse can accommodate goods of multiple entities. It can even be used to store goods from external companies.
 
 The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.
 
@@ -25,20 +25,20 @@ The most important part for achieving operational effectiveness is to properly o
 
 Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-divisions of a warehouse.
 
-> [!Note]
+> [!NOTE]
 > Zones are used to accommodate different storage needs, such as different temperature requirements or turnover rate of the products.
 
 The zones are further divided in **Locations**. Locations have name (like #1-8-20), which is used to uniquely identify them.
 
-> [!Note]
-> Use Warehouse Management to increase efficiency by automating warehouse routing and identifying storage locations for your products.
+> [!NOTE]
+> Use warehouse management to increase efficiency by automating warehouse routing and identifying storage locations for your products.
 
 The two most basic documents of WMS are:
 
-- **Warehouse Requisitions (W.R.)** <br>
+- **Warehouse requisitions (W.R.)** <br>
   They contain outside requests for warehouse operations (usually inbound/outbound).
 
-- **Warehouse Orders (W.O.)** <br>
+- **Warehouse orders (W.O.)** <br>
   They are the internal plan for execution of W.R. They contain routes, locations, workers, etc.
 
 The basic operation flow of WMS is the following:
@@ -49,23 +49,23 @@ The steps, noted in (parens) in the diagram are as follows:
 
 1. The outside module/department creates W.R. based on its needs.
 2. Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.
-3. The workers use their handheld devices to execute the order. Each step is recorded as both Warehouse Transaction and Warehouse Order Execution.
-4. After the WO is fully executed, the Warehouse Requisition Execution is updated.
+3. The workers use their handheld devices to execute the order. Each step is recorded as both warehouse transaction and warehouse order execution.
+4. After the WO is fully executed, the warehouse requisition execution is updated.
 5. After the WR is fully executed, the external module/department updates its execution state.
 
 Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.
 
 ![Handy](handy.png)
 
-## Push And Pull Task Management
+## Push and Pull task management
 
-When a Warehouse Requisition document comes in, there are many ways we can plan how to fulfill it. The plan is represented by Warehouse Order documents. <br>
+When a warehouse requisition document comes in, there are many ways we can plan how to fulfill it. The plan is represented by warehouse order documents. <br>
 But how these Order documents are created? There are at least two main ways to organize the work.
 
-### Pull System
+### Pull system
 
-The Pull System is the easiest way to organize the execution. Under some circumstances, it can also be the most efficient.<br>
-In the Pull System, each Warehouse Worker decides when to get (pull) work. Whenever they are ready, they request more work through their mobile app.
+The Pull system is the easiest way to organize the execution. Under some circumstances, it can also be the most efficient.<br>
+In the Pull system, each warehouse worker decides when to get (pull) work. Whenever they are ready, they request more work through their mobile app.
 
 Pros:
 
@@ -81,9 +81,9 @@ Cons:
 - Without a central planner, worker control needs to be better controlled.
 - Cannot implement complex order mixing, splitting or other complex work procedures.
 
-### Push System
+### Push system
 
-Under the Push System, there is a central planner, who plans the work and pushes it to the workers. The Push System might be required in more complicated execution environments.
+Under the Push system, there is a central planner, who plans the work and pushes it to the workers. The Push system might be required in more complicated execution environments.
 
 Pros:
 
@@ -96,7 +96,7 @@ Cons:
 - More expensive - require a central planner.
 - The efficiency of the workers depends heavily on the planner. 
 
-### Choosing The Right Strategy
+### Choosing the right strategy
 
 There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in.
 

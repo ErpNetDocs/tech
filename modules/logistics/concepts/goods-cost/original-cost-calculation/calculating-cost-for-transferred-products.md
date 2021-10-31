@@ -8,9 +8,9 @@ Store Transfers create two parallel sub-document flows - receipt and issue flow.
 
 For each store transfer the following must be valid:
 
-<b>[receipt cost] = [issue cost] + [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]</b>
+<b>[receipt cost] = [issue cost] + [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]<b>
 
-Each store transaction row is calculated separately (so <b>[[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost]</b> is the additional amount distributed to the current row). These calculations are executed when the receipt store order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the store order. So if the generated store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
+Each store transaction row is calculated separately (so [[Additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts) for cost] is the additional amount distributed to the current row). These calculations are executed when the receipt store order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the store order. So if the generated store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.
 
 <b><i>Example 1</b></i>:
 
@@ -102,5 +102,5 @@ Now, the user is not able to make a transaction <b>receipt</b> for <b>3 PCS</b>.
   
 The user is not able to change the <i>transaction timestamp</i> to a value less than 10 Dec 2020 <b>17:04</b>. After releasing the transaction <b>receipt</b>, the user is not able to void the <b>issue</b> transaction because on 10 Dec 2020 <b>17:27</b> there will be a total <b>issue</b> of <b>0 PCS</b>, which is less than the total <b>receipt</b> of <b>1PCS</b>.
   
-For more information about the validation, see <b>[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20And%20Issue%20Balance%20Validation%20In%20Store%20Transfers)</b>.
+For more information about the validation, see **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20And%20Issue%20Balance%20Validation%20In%20Store%20Transfers)**.
 

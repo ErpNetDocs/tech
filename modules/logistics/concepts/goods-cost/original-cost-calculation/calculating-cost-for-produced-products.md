@@ -214,4 +214,4 @@ For each <i>transaction timestamp</i>, the following is executed:
 
 - A validation is performed to check if the maximum quantity of the product from p.1 is bigger than or equal to the receipt total from p2.
 
-For more information about the validation, see <b>[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)</b>.
+For more information about the validation, see **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)**.

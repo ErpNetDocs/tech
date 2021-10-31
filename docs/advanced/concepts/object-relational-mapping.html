@@ -85,12 +85,12 @@
 <h2 id="definitions">Definitions</h2>
 <ul>
 <li><strong>Entity</strong> - Single object of a given entity type. Also called entity object or simply object. It is similar to a data row in a table.</li>
-<li><strong>Entity yupe</strong> - The set of all objects of a given type. This is similar to a table.</li>
+<li><strong>Entity type</strong> - The set of all objects of a given type. This is similar to a table.</li>
 <li><strong>Attribute</strong> - a named value, containing information about the entity object. This is similar to a column in a table.</li>
 </ul>
 <h2 id="relationship-to-tables-and-rows">Relationship to tables and rows</h2>
 <p>This section contains more advanced information, not usually needed to operate the system. However, a deeper understanding of the inner-workings might help sometimes, especially when one needs to access directly an ERP.net database, using database tools.</p>
-<p>Generally, <strong>entity types</strong>, <strong>entities</strong>, and <strong>attributes</strong> are much like <strong>tables</strong>, <strong>rows</strong>, and <strong>columns</strong>. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - Entity Types and Entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
+<p>Generally, <strong>entity types</strong>, <strong>entities</strong>, and <strong>attributes</strong> are much like <strong>tables</strong>, <strong>rows</strong>, and <strong>columns</strong>. Data of the entities is ultimately stored in the database in the form of tables and rows. However, there is one important distinction - entity types and entities are object-oriented representation of the table data. A technology, called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
 <p>In order to illustrate better the difference between objects and tables, let's include some real-world tables and objects:</p>
 <p>There is an entity type, called <strong>'Party'.</strong> It has a descendant (more specialized) entity type, called <strong>'Company'.</strong> So, <strong>Party</strong> is the more abstract and broad term, and <strong>Company</strong> is just one specialization. <strong>Person</strong> is another descendant of <strong>Party.</strong></p>
 <p>Let's illustrate this using pseudo-graphics:</p>
@@ -99,7 +99,7 @@
 <p>+---- company</p>
 <p>+---- person</p>
 </blockquote>
-<p>Each party has some attributes, like 'parent party' and area. The company has VAT number and Registration type attributes. Each person has &quot;First Name&quot; and &quot;Last Name&quot;.</p>
+<p>Each party has some attributes, like 'parent party' and area. The company has VAT number and registration type attributes. Each person has &quot;first name&quot; and &quot;last name&quot;.</p>
 <p>Now, if we look at the tables, they have the following schema:</p>
 <ul>
 <li>Parties
@@ -149,7 +149,7 @@
 </ul>
 </li>
 </ul>
-<p>So, if we use table data, in order to access all attributes of a company or a person, we have to relate (join) data from different tables, using unique Identifiers. The identifiers are the so-called &quot;surrogate keys&quot; because they are existing only in the database and have no real-world counterpart. Using such keys and relating data between tables is ordinary in the relational world of the databases.</p>
+<p>So, if we use table data, in order to access all attributes of a company or a person, we have to relate (join) data from different tables, using unique identifiers. The identifiers are the so-called &quot;surrogate keys&quot; because they are existing only in the database and have no real-world counterpart. Using such keys and relating data between tables is ordinary in the relational world of the databases.</p>
 <p>However, internally, the systems use objects, because it is much simpler to process them. Objects already have all the necessary attributes related together and there is no need to use Identifiers or table relations.</p>
 <p>This is only an introduction to the topic of object-relational mapping. More deeper look would go too deep into the developer details of the subject.</p>
 </article>

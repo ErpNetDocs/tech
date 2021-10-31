@@ -20,10 +20,10 @@ if the quantity in the transaction row is different from 0, then the Document Da
 
 More detailed description of the logic behind the automatic set of the <i>transaction timestamp</i> may be found in the following articles:
 
-- [More specific cases of setting the transaction timestamp](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html?q=More%20Specific%20Cases%20Of%20Setting%20The%20Transaction%20Timestamp)
+- **[More specific cases of setting the transaction timestamp](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/more-specific-cases-of-setting-the-transaction-timestamp.html?q=More%20Specific%20Cases%20Of%20Setting%20The%20Transaction%20Timestamp)**
 
-- [Setting transaction timestamp by store orders](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html?q=Setting%20Transaction%20Timestamp%20by%20Store%20Orders)
+- **[Setting transaction timestamp by store orders](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-by-store-orders.html?q=Setting%20Transaction%20Timestamp%20by%20Store%20Orders)**
 
-- [Setting transaction timestamp in reconciliations](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html?q=Setting%20Transaction%20Timestamp%20In%20Reconciliations)
+- **[Setting transaction timestamp in reconciliations](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html?q=Setting%20Transaction%20Timestamp%20In%20Reconciliations)**
 
-- [Setting transaction timestamp on transaction release](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html?q=Setting%20Transaction%20Timestamp%20On%20Transaction%20Release)
+- **[Setting transaction timestamp on transaction release](https://docs.erp.net/tech/modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-on-transaction-release.html?q=Setting%20Transaction%20Timestamp%20On%20Transaction%20Release)**

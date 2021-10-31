@@ -27,13 +27,13 @@ This diagram shows the relationship between Party, Person and Company:
 ### Party attributes inheritance
 
 The fact, that Person and Company inherit Party also means, that all attributes of Party are also attributes of Person and Company. <br>
-For example, a Party has an "Area" attribute. So, all Person and Company objects would also have an "Area" attribute. <br>
+For example, a Party has an Area attribute. So, all Person and Company objects would also have an "Area" attribute. <br>
 The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
 For example:
 
 ![Party Attributes](Party-attributes.png)
 
-Party has "Parent Party" and "Area" attributes, which are inherited by Company and Person. But person's "First name" and "Last name" are specific only to persons. Neither companies nor generally parties have "First name".
+Party has Parent Party and Area attributes, which are inherited by Company and Person. But person's "First name" and "Last name" are specific only to persons. Neither companies nor generally parties have "First name".
 
 ### Relationships with other entity types
 

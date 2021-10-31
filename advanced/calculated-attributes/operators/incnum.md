@@ -23,7 +23,7 @@ items: Operators
 >- If you try to increment a value whоse type is decimal, int or date, the incrementation won't be successful and the calculated attribute won't be compilated;
 >- If the value is a string whose last character is not a number ('AA', for example), the incrementation won't be successful.
 
-## Examples
+***Examples***
 
  The following example shows how to increase the LotNumber of the lot by 1 with the INCNUM operator:
 

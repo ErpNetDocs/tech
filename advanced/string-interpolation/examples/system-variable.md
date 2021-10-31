@@ -6,17 +6,17 @@ items: StringInterpolationExamples
 
 ## Interpolation of a globally resolved system variable
 
-### Input
+#### Input
 ```cs
 'Now is {$datetimeutc} (UTC)'
 ```
 
-### Output
+#### Output
 ```cs
 'Current database name is 01.01.2021 15:00:00 (UTC)'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'Now is '`
 2. `{$datetimeutc}`
     * Evaluates to `"01.01.2021 15:00:00'`.
@@ -24,34 +24,34 @@ items: StringInterpolationExamples
 
 ## Externally resolved system variable
 
-### Input
+#### Input
 ```cs
 'Current database name is {$dbname}'
 ```
 
-### Output
+#### Output
 ```cs
 "Current database name is E1_PROD"
 ```
 
-### Breakdown
+#### Breakdown
 1. `'Current database name is'`
 2. `{$dbname}`
     * Evaluates to `'E1_PROD'` via an external resolver.
 
 ## Acquiring a data member from a system variable and applying a format specifier
 
-### Input
+#### Input
 ```cs
 'Current company location is {$enterprisecompanylocation.LocationName:en}.'
 ```
 
-### Output
+#### Output
 ```cs
 'Current company location is London, UK.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'Current company location is '`
 2. `{$enterprisecompanylocation.LocationName:en}`
     * Resolves the system variable `$enterprisecompanylocation` to a `CompanyLocation` object type.
@@ -64,17 +64,17 @@ items: StringInterpolationExamples
 
 ## #Error# Not existing system variable
 
-### Input
+#### Input
 ```cs
 'Yesterday was {$yesterday}.'
 ```
 
-### Output
+#### Output
 ```cs
 'Yesterday was #Error: System Variable '$yesterday' not found#.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'Yesterday was'`
 2. `{$yesterday}`
     * Resolves the system variable `$yesterday` --> Fail. Such a system variable does not exist.
@@ -83,17 +83,17 @@ items: StringInterpolationExamples
 
 ## #Error# Not existing reference
 
-### Input
+#### Input
 ```cs
 'My name is {$user.RealName}.'
 ```
 
-### Output
+#### Output
 ```cs
 'My name is #Error: Attribute 'RealName' not found#.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'My name is''
 2. `{$user.RealName}`
     * Resolves the system variable `$user` to a `User` object type.

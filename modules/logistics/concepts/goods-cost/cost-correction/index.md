@@ -36,9 +36,9 @@ where:
 
 For more specific information, see:
 
-- [Basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20algorithm%20for%20cost%20correction%20calculation)
+- **[Basic algorithm for cost correction calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.html?q=Basic%20algorithm%20for%20cost%20correction%20calculation)**
 
-- [Models for maintaining the actual cost](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html?q=Models%20For%20Maintaining%20The%20Actual%20Cost)
+- **[Models for maintaining the actual cost](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/models-for-maintaining-the-actual-cost.html?q=Models%20For%20Maintaining%20The%20Actual%20Cost)**
 
-- [Specific procedures of cost corrections](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html?q=Specific%20Procedures%20of%20Cost%20Corrections)
+- **[Specific procedures of cost corrections](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/specific-procedures-of-cost-corrections.html?q=Specific%20Procedures%20of%20Cost%20Corrections)**
 

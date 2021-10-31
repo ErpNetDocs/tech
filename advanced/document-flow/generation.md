@@ -3,17 +3,17 @@
 
 ## Description
 
-Document generation is a key part of the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.
+Document generation is a key part of the [document flow](https://docs.erp.net/tech/advanced/document-flow/index.html) in the system and is widely used to automate such flows. It provides for the automatic generation of inheriting documents from a parent document.
 
-Generation is a special case of direct **[order fulfillment](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**, when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.
+Generation is a special case of direct [order fulfillment](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html), when there is only one source document. It usually creates a single target but can often make multiple documents. When many instances are generated, it is because of different values of some key attribute(s) in the different lines of the source document.
 
 ## Automating the document generation
 
 Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.
 
-The definition of each document type includes a special sub-entity type called **[workflow routes](https://docs.erp.net/model/entities/Systems.Workflow.Routes.html)**. These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many **[workflow routes](https://docs.erp.net/model/entities/Systems.Workflow.Routes.html)**. They either start automatically or require a user initiation.
+The definition of each document type includes a special sub-entity type called [workflow routes](https://docs.erp.net/model/entities/Systems.Workflow.Routes.html). These routes specify procedures, conditions and events for the automatic generation of inheriting documents. Each document type can host many [workflow routes](https://docs.erp.net/model/entities/Systems.Workflow.Routes.html). They either start automatically or require a user initiation.
 
-Together, the routes for the different document types form a general network graph called **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)**.
+Together, the routes for the different document types form a general network graph called [document flow](https://docs.erp.net/tech/advanced/document-flow/index.html).
 
 ## Properties of a document generation route
 
@@ -21,7 +21,7 @@ Each document generation route contains the following properties:
 
 - **Generation events**
 
-Events that trigger the document route. The most often used event is usually the one changing the **[document state](https://docs.erp.net/tech/concepts/documents/states.html)**.
+Events that trigger the document route. The most often used event is usually the one changing the [document state](https://docs.erp.net/tech/concepts/documents/states.html).
 
 - **State**
 

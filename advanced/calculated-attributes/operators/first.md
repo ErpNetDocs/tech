@@ -20,8 +20,7 @@ items: Operators
 > [!NOTE]
 > 
 > **FIRST** returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the @cao-SORT and @cao-ORDERBY operators.
-
-## Example
+***Example***
 
 The following example returns the first met line of the current document (sales order):
 

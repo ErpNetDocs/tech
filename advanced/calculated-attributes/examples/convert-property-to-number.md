@@ -4,10 +4,10 @@ items: CalculatedAttributeExamples
 
 # Convert a value of a custom property to a number
 
-The values of the custom properties are a specific type of value and the **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it first. 
+The values of the custom properties are a specific type of value and the [CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html) operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to [CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html) it first. 
 
 
-## Example - Multiply standard price per lot by a coefficient stored in a property
+***Example - Multiply standard price per lot by a coefficient stored in a property***
 
 
 Lets say, for example, we want to multiply the standard price per lot of the product by a coefficient stored as a product's custom property @CustomProperty1. 
@@ -43,4 +43,4 @@ Explanation:
 
 > [!NOTE]
 > 
-> When we want to convert CustomPropertyValue to numeric value (for example, decimal), we need to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it to a string first!
+> When we want to convert CustomPropertyValue to numeric value (for example, decimal), we need to [CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html) it to a string first!

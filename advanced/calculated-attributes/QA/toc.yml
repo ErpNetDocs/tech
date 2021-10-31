@@ -1,22 +1,22 @@
 - name: Overview
   href: index.md
 - name: How to check if a custom property has values?
-  href: HowToCheckIfACustomPropertyHasValue.md
+  href: How-to-check-if-a-custom-property-has-value.md
 - name: How to check if a list has values?
-  href: HowToCheckIfAListHaveValues.md
+  href: How-to-check-if-a-list-has-values.md
 - name: How to check whether a field that points to a reference object has a value?
-  href: HowToCheckWhetherAFieldThatPointsToAReferenceObjectHasAValue.md
+  href: How-to-check-whether-a-field-that-points-to-a-reference-object-has-a-value.md
 - name: How to create an optimally fast calculated attribute?
-  href: HowToCreateAnOptimallyFastCalculatedAttribute.md
+  href: How-to-create-an-optimally-fast-calculated-attribute.md
 - name: How to determine the party type of a party?
-  href: HowToDetermineThePartyTypeOfAParty.md
+  href: How-to-determine-the-party-type-of-a-party.md
 - name: How to get attribute value from list?
-  href: HowToGetAttributeValueFromList.md
+  href: How-to-get-attribute-value-from-list.md
 - name: How to get a specific field of a parent document?
-  href: HowToGetSpecificFieldOfAParentDocument.md
-- name: How to show contact of a person in Persons navigator?
-  href: HowToShowContactOfAPersonInPersonsNavigator.md
+  href: How-to-get-specific-field-of-a-parent-document.md
+- name: How to show contact of a person in person's navigator?
+  href: How-to-show-contact-of-a-person-in-persons-navigator.md
 - name: How to use a customer as a company?
-  href: HowToUseTheCustomerAsACompany.md
+  href: How-to-use-the-customer-as-a-company.md
 
 

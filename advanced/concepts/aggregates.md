@@ -46,20 +46,20 @@ When an object commit event occurs, it means that the object itself was changed.
 Lets take a look at the following structure which in @@name is one single aggregate:
 
 - a SalesOrder (which is the aggregate's root)
-- the Sales order lines of this sales order
+- the sales order lines of this sales order
 - the distributed amounts for each of these sales order lines
 - the document amounts of this sales order
 - the payment plan of this sales order
 
-In the example above, the **Commit** event would occur for the **sales order** if and only if the sales order object itself has changed. While the **aggregate commit** will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the Sales order aggregate event.
+In the example above, the **Commit** event would occur for the **sales order** if and only if the sales order object itself has changed. While the **aggregate commit** will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the sales order aggregate event.
 
 > [!NOTE] 
 > Commit and client-commit still have the same meaning. E.g., commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While client-commit is triggered only based on client requests and is considered the more light-weight approach.
 
 > [!NOTE] 
->Initially, only the agregate client commit event would be available for user-defined business rules [user business rules](~/advanced/user-business-rules/index.md). The aggregate commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
+>Initially, only the agregate client commit event would be available for user-defined business rules [user business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html). The aggregate commit will be used only internally, for system-defined business rules [System Business Rules](xref:system-business-rules) 
 
-The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for [user business rules](~/advanced/user-business-rules/index.md).
+The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for [user business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html).
 
 #### See also: @Systems.Core.ExtensibleDataObjects
 

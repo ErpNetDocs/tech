@@ -24,10 +24,10 @@ items: Operators
 
 
 
-See the example in **[Compare unit price and the standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**.
+See the example in [Compare unit price and the standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html).
 
 
-## Example
+***Example***
 
 ```      
 10: LTE ATTRIB:LineNo CONST:30   

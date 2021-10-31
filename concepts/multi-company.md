@@ -1,12 +1,12 @@
 # Multi-company support in ERP instances
 
-@@name allows a single ERP instance (database) to contain multiple companies. The different own companies, stored in the database are called "Enterprise companies".
+@@name allows a single ERP instance (database) to contain multiple companies. The different own companies, stored in the database are called 'Enterprise companies'.
 
 Many data objects (definitions, settings and documents) have an enterprise company attribute. When filled, it specifies that the data is specific to one of the enterprise companies. When the attribute is left blank, the data is valid for all enterprise companies.
 
 Some data objects have a required enterprise company attribute. In this case, the data is always specific to one enterprise company. For example, all documents have a required enterprise company attribute.
 
-For example, lets have the following *Accounts* in our chart of accounts:
+For example, lets have the following accounts in our chart of accounts:
 
 - 60201 - Expenses, general
 - 60209 - Other expenses (specific to "Company X", one of the companies, managed in the database)

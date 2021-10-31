@@ -23,7 +23,7 @@ items: ActionTypes
 
 **Note:** Currently, the parameters of the business rules can include up to 256 symbols. 
 
-## Compatible Events Chart
+## Compatible events chart
 
 The SENDMAIL action is not compatible with all [events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html). For more info look into the following chart.
 
@@ -77,7 +77,7 @@ The domain attribute values can be formatted with the standard .Net format  spec
 
 
 
-## Example
+***Example***
 
 А [business rule](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html) that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.
 
