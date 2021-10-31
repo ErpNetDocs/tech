@@ -22,9 +22,9 @@ Sometimes, weights of specific services are known before documents are created.
 
 For example, when customs taxes are paid for goods on import, some of the products have taxes and others do not. For many, taxes are defined by law and they are a constant percent of the product value. Users have to enter their weight for the additional amount 'Customs'. Then, once the documents are entered in @@name, when a product is selected in a document row, its weight is copied from the product definition into the *Document Line Amount* panel. Users can change the default weights of the products.
 
-#### Example 1:
+***Example 1:***
 
-There is an additional amount ‘Customs’ with the following properties:
+There is an additional amount Customs with the following properties:
 
 - Distributed by: **Product Definition**;
 - Default percent: **100%**.
@@ -48,7 +48,7 @@ In certain cases, weights of the products for specific additional amounts are no
 
 For example, they may depend on a document parameter and rely on the deal type of the sales order. Regardless of whether VAT is applicable or not and whether the document row has different deal types, users will have to enter the weights/coefficients in the specific document along with deal type. Products do not have percentages in their definitions in advance.
 
-####Example 2:
+***Example 2:***
 
 There is an additional amount ‘Specific VAT’, which is distributed by product definition and has a default percentage of **20%**. 
 
@@ -63,7 +63,7 @@ The user manually sets the following percentages (**100%** on rows #30 and #40):
 
 The Specific VAT is **19 EUR** [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html) and it is distributed through the rows as **0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR**.
 
-####Example 3:
+***Example 3:***
 
 The following example describes a case where data is absent from the *Document Line Amount* panel:
 
