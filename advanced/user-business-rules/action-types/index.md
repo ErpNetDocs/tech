@@ -6,4 +6,4 @@ The following types of actions are available when creating user business rules:
 - [NOTIFYUSER](https://docs.erp.net/tech/advanced/user-business-rules/action-types/notifyuser.html)
 - [SENDMAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html)
 - [SETVALUE](https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html)
-- [WARNING](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/warning.md)
+- [WARNING](https://docs.erp.net/tech/advanced/user-business-rules/action-types/warning.html)
