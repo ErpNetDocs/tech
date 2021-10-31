@@ -49,7 +49,7 @@ When we correct the parent sales order so the quantity is **70 pcs**, there are 
 - the first is when the primary store order has **100 pcs** and it is not Releаsed, but Firm Planned (this is possible if its state is returned to Firm Planned before the sales order correction or when the store order is created before its type is set to transitional). In this case, as there is no released document to correct, so a new Store Order is created with **-30 pcs**. Now there are two documents;
 - But if the primary store order is Released (the usual case), then the discrepancy of **-30 pcs** is applied as a document correction and the quantity in the primary store order is now **70 pcs**. Thereby, the sub-document is only one, as the discrepancy documents are not independent documents, they are applied to the primary document as corrections.
 
-***Example 3*** (continue of Example 1):
+***Example 3*** (continue of **Example 1**):
 
 There is a sales order with a payment plan for 3 payments - **40 EUR**, **50 EUR**, and **10 EUR**. 
 The payment orders are set as transitional documents. Initially, there are no invoices on this sales order so there are three released payment orders:
@@ -61,7 +61,7 @@ The payment orders are set as transitional documents. Initially, there are no in
 Then invoice #**1** is created based on this sales order for **60 EUR**. 
 So the first two payments have to be corrected. 
 The first should have invoice data, the second should have **20 EUR** with invoice data, and the rest **30 EUR** do not have invoice data yet. 
-So for the additional four payment orders from Example 1, created to cover the discrepancies, the first two payment orders containing **-40 EUR** and **-20 EUR** are applied as corrections of the already existing payment orders for planned payments №**1** and №**2**, with no invoice data. And the second two orders with invoice data are created as new Released documents as there are no released payment orders with invoice data yet. So now the payment orders are:
+So for the additional four payment orders from **Example 1**, created to cover the discrepancies, the first two payment orders containing **-40 EUR** and **-20 EUR** are applied as corrections of the already existing payment orders for planned payments №**1** and №**2**, with no invoice data. And the second two orders with invoice data are created as new Released documents as there are no released payment orders with invoice data yet. So now the payment orders are:
 
 - payment №**1**, **0 EUR**, no invoice data;
 - payment №**1**, **40 EUR**, invoice #1;
