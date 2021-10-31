@@ -12,7 +12,7 @@ Users can change the <i>transaction timestamp</i> in one of two ways:
 
  1. By editing the store orders (their <i>transaction timestamps</i> will be copied to the executing transactions). 
  
- 2. By editing the transactions directly (before their release or afterwards by **[adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html?q=adjustment%20documents)**).
+ 2. By editing the transactions directly (before their release or afterwards by [adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html?q=adjustment%20documents)).
 
 No matter how the timestamp is set, it has to comply with the following restrictions: 
 
