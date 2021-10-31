@@ -30,7 +30,7 @@ For a complete list and more information, please look at the official .Net docum
            0.488869 (P) → 48.89% <br>
            0.488869 (P3) → 48.887%
 
-#### Date and Time format strings
+#### Date and time format strings
 Standard date and time format specifiers can be used alone (standard date and time format string) or in a combination (custom format string) in order to define the text representation of a date and time value.
 A standard date and time format string uses a single format specifier to define the text representation of a date and time value. 
 Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string.
