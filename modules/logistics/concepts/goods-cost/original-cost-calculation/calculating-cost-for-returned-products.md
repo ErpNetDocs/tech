@@ -50,5 +50,5 @@ As with store transfers, when returning products, the quantity returned can’t 
 
 - The system checks if the <b>issue</b> total is greater or equal to the <b>receipt</b> total.
 
-For more details about this validation, see [Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers).
+For more details about this validation, see **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)**.
 
