@@ -8,7 +8,7 @@
 
 For example, let's have the following:
 
-- The document type is ‘Sales Order’, with code ‘SO’
+- The document type is ‘Sales order’, with code ‘SO’
 - The document number is ‘00503’
 - The line number is 120 (the line numbers are integers)
 
