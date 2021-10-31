@@ -13,7 +13,7 @@ This is the common algorithm used when creating a duplicate of a given document:
 
 a. the ***substantial*** data from the original document header is copied to the new document header;
 
-b. in each of the specific headers in the new document only the***substantial*** data from the corresponding specific headers of the original documents is copied.
+b. in each of the specific headers in the new document only the ***substantial*** data from the corresponding specific headers of the original documents is copied.
 
 2. If the original document has rows - for each row a new row is created in the duplicate document and the ***substantial*** data from the original row is copied to the new one.
 
