@@ -15,11 +15,11 @@ The Base amount is defined in two steps:
 For more information, see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
 
 
-#### Example 1:
+***Example 1:***
 
 If we have the following additional amounts:
 
-- Corporate Discount:
+- Corporate discount:
 
     - Default percent is -3%;
     - Base on lines is True;
@@ -51,9 +51,9 @@ The calculations for the three additional amounts are as follows:
 [base amount] = [document rows amounts] + [Corporate Discount] + [Easter Bonus]  = **190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR**; so **[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR**
  
  
-#### Example 2:
+***Example 2:***
 
-We have only one additional amount - Commission. Its definition has the following properties:
+We have only one additional amount - commission. Its definition has the following properties:
 
 - Default percent is 5%;
 - Distribute by is 'Product Definition'. The weight of the specific product is 100%;
@@ -74,7 +74,7 @@ So the rows have the following specific weights:
 - row #20: weight = **1.00**;
 - row #20: weight = **1.00**;
  
-The base amount for the 'Commission' additional amount is calculated as follows:
+The base amount for the commission  additional amount is calculated as follows:
 
 [base amount] = **150 EUR * 0.00 + 40 EUR * 1.00 + 69 EUR * 1.00 = 109 EUR**
 
@@ -91,7 +91,7 @@ The final result for the amount is:
 > 
  These two subtotals may be used in the additional amount distribution. For further information, see [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
 
-#### Example 3*:
+***Example 3*:***
 
 If we have the following properties in the additional amount, VAT:
 
