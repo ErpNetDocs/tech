@@ -8,7 +8,7 @@ The main categories are:
 
 - **Documents** - facts; things that occur:
 
-Sales orders, Invoices, Purchase orders, etc.
+Sales orders, invoices, purchase orders, etc.
 
 - **Definitions** - they represent real-world objects; things that (generally) do not change:
 
@@ -18,25 +18,25 @@ Customers, Products, Stores, etc.
 
 Document types, Document routes, Form views, etc.
 
-### The Most Important Attributes
+### The most important attributes
 
 All documents derive from a base entity type called **Document** and share similar attributes.
 
 This is a non-extensive list of the more important attributes:
 
-- **Enterprise Company** - the company that created the document.
+- **Enterprise company** - the company that created the document.
 
-- **Company Location** - the company location where the document was created.
+- **Company location** - the company location where the document was created.
 
-- **Document Date** - the date the document was constituted. If it was created electronically, then this is the system date of creation. When it is created outside the system and entered post-factum, the attribute contains the date of actual creation.
+- **Document date** - the date the document was constituted. If it was created electronically, then this is the system date of creation. When it is created outside the system and entered post-factum, the attribute contains the date of actual creation.
 
-- **Document Type** - a user-defined document type for classification of the documents. Also defines print-out forms, document flow and other rules.
+- **Document type** - a user-defined document type for classification of the documents. Also defines print-out forms, document flow and other rules.
 
-- **Document Number** - a unique number within the sequence, defined in Document Type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.
+- **Document number** - a unique number within the sequence, defined in Document type. Usually created by the system, but can also be set up to accept manual entry or import from external sources.
 
 - **State** - each document in the system has a current state at any given moment. It affects how the document influences the system and whether it is updateable.
 
-- **Currency Directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. 
+- **Currency directory** - the primary directory for currency rates which will be used for currency conversions throughout the document. 
 
 
 ### Further reading:
