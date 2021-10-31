@@ -25,7 +25,7 @@ In the example above, the [client commit](https://docs.erp.net/tech/advanced/use
 Aggregate event.
 
 
-**In summary, a user business rule with an Aggregate client commit event will be triggered when:**
+**In summary, a user business rule with an aggregate client commit event will be triggered when:**
 
 - the saving is performed by a client application;
 - as the repository of the user business rule is an entity which is an aggregate root;
