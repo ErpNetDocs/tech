@@ -2,7 +2,7 @@
 
 This function is used when the user wants to automatically create new lots when purchasing products.
  
-This is achievable by the product type definition and the Lot Auto Creation field. If checked, it specifies that lots are automatically created by the receiving orders with which the products are received.
+This is achievable by the product type definition and the *Lot Auto Creation* field. If checked, it specifies that lots are automatically created by the receiving orders with which the products are received.
  
 When such product is purchased, the following actions are performed for each purchase order row:
  
@@ -18,8 +18,8 @@ When such product is purchased, the following actions are performed for each pur
 
 The new lot, created in the last step of the actions described above, is created as follows:
  
-- the product from the purchase order row is set as "Product" in the new lot definition;
-- the "Purchase Lot Description" from the purchase order header is set as "Description" in the new lot definition;
-- the Document Number of the current document is set as "Purchase Lot Number" in the new lot definition;
-- the "Lot Number" of the new lot is formed by the biggest lot number (in alphabetic order) of the already existing ones (regardless of Product, Description or Purchase Lot Number), and this number is increased by 1; if there are no existing lots in the database "00001" is set.
+- the product from the purchase order row is set as 'Product' in the new lot definition;
+- the 'Purchase Lot Description' from the purchase order header is set as 'Description' in the new lot definition;
+- the Document Number of the current document is set as 'Purchase Lot Number' in the new lot definition;
+- the 'Lot Number' of the new lot is formed by the biggest lot number (in alphabetic order) of the already existing ones (regardless of Product, Description or Purchase Lot Number), and this number is increased by 1; if there are no existing lots in the database '00001' is set.
 
