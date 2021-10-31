@@ -1,5 +1,7 @@
 # Amount distribution by product definition
 
+
+
 The distribution by product definition is the same as the  distribution by amount, the only difference is that row weights are used (see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)). So the difference is that the when the additional amount has Based on  lines = True, than the distributional coefficientss are multiplied by  the rows weightings. So the only difference is in the following  calculation formula:
 
 [**ki**] = ([**ki**] + [row amount **i**]) * [weighting **i** (from [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)].
@@ -9,6 +11,8 @@ For example (as addition of Example 3 from [Percent value calculation](https://d
 \- row #10: weight = **0.00**;
 \- row #20: weight = **1.00**;
 \- row #30: weight = **1.00**.
+
+
 
 The commission amount is **5.45 EUR** and the distribution of this amount is calculated by the following coefficients:
 
