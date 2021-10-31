@@ -6,17 +6,17 @@ items: StringInterpolationExamples
 
 ## Same level data member reference
 
-### Input
+#### Input
 ```cs
 'The document Id is {DocumentId}.'
 ```
 
-### Output
+#### Output
 ```cs
 'The document Id is 929bdc15-79d8-4a1f-9467-c237f040939d.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'The document Id is '`
 2. `{DocumentId}`
     * Evaluates to `"929bdc15-79d8-4a1f-9467-c237f040939d"`
@@ -27,17 +27,17 @@ items: StringInterpolationExamples
 
 ## Referencing data members deeper
 
-### Input
+#### Input
 ```cs
 'The customer is {Customer.Party.PartyName} and its number is {Customer.Number}.'
 ```
 
-### Output
+#### Output
 ```cs
 'The customer is John Doe and its number is C12345.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'The customer is '`
 2. `{Customer.Party.PartyName}`
     * Follows the reference path:
@@ -57,17 +57,17 @@ items: StringInterpolationExamples
 
 ## Including a format specifier 
 
-### Input
+#### Input
 ```cs
 "The customer is {Customer.Party.PartyName:de}."
 ```
 
-### Output
+#### Output
 ```cs
 "The customer is John Doe."
 ```
 
-### Breakdown
+#### Breakdown
 1. `'The customer is '`
 2. `{Customer.Party.PartyName:de}`
     * Follows the reference path:
@@ -81,17 +81,17 @@ items: StringInterpolationExamples
 
 ## #Error# Not existing reference
 
-### Input
+#### Input
 ```cs
 'The customer is {Customer.Name}.'
 ```
 
-### Output
+#### Output
 ```c
 'The customer is #Error: Attribute 'Name' not found#.'
 ```
 
-### Breakdown
+#### Breakdown
 1. `'The customer is '`
 2. `{Customer.Name}`
     * Follows the reference path:
