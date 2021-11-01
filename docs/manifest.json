@@ -2143,6 +2143,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/advanced/data-objects/pictures/entity-type-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/data-objects/pictures/entity-type-display-format.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/data-objects/pictures/webclient-dropdown.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/data-objects/pictures/webclient-dropdown.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/advanced/documents/generation-procedure.SVG",
       "output": {
         "resource": {
