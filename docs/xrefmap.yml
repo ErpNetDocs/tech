@@ -205,6 +205,12 @@ references:
 - uid: transitional-documents
   name: Transitional documents
   href: advanced/document-flow/transitional-documents.html
+- uid: webclient
+  name: webclient
+  href: includes/webclient.html
+- uid: webclientfull
+  name: webclientfull
+  href: includes/webclientfull.html
 - uid: winclient
   name: winclient
   href: includes/winclient.html

@@ -997,15 +997,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "include-not-found"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/concepts/object-relational-mapping.md",
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/object-relational-mapping.html",
-          "hash": "9YE39X6BU4OFXahzWuxW2g=="
+          "hash": "H50yll1A/lMrT40orzSaUw=="
         }
       },
       "is_incremental": false,
@@ -1072,6 +1069,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/data-objects/display-format.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/data-objects/display-format.html",
+          "hash": "zuGooXqRNUz+PmjAsvCXQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/extensible-data-objects.md",
       "output": {
         ".html": {
@@ -1089,6 +1098,28 @@
         ".html": {
           "relative_path": "advanced/data-objects/index.html",
           "hash": "QLNwV4Oh87rdA78HVciyxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/data-objects/pictures/entity-type-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/data-objects/pictures/entity-type-display-format.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/data-objects/pictures/webclient-dropdown.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/data-objects/pictures/webclient-dropdown.png"
         }
       },
       "is_incremental": false,
@@ -1592,7 +1623,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "ImKACiP+QIELe1KQi580Kg=="
+          "hash": "M878JJhpYzXg+q8UkfzxNQ=="
         }
       },
       "is_incremental": false,
@@ -2844,6 +2875,30 @@
         ".html": {
           "relative_path": "includes/name.html",
           "hash": "mRfwD4V4SQfoad0bkw1sSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "includes/webclient.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/webclient.html",
+          "hash": "r5JcSL+cTa5wWQPa8yWHZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "includes/webclientfull.md",
+      "output": {
+        ".html": {
+          "relative_path": "includes/webclientfull.html",
+          "hash": "pe0xyay5k8wtt35EpVvGaw=="
         }
       },
       "is_incremental": false,

@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Display format | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Display format | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="display-format">Display format</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Each <a href="../concepts/object-relational-mapping.html#definitions">entity object</a> must have a representation as text, so that it can be visualized in a user interface - e.g., in ERP.net Windows Desktop Client or ERP.net Web Client. This is quite a simple task for <a href="../concepts/object-relational-mapping.html#definitions">entity types</a> that have few attributes, but in reality, most do not. Let's see the following usual entity types as examples,</p>
+<blockquote>
+<p>Client</p>
+<p>Product</p>
+</blockquote>
+<p>These entity types are one of the most commonly used in a typical workflow. Now we will expand these entity types to real (sample) data- i.e., entities.</p>
+<blockquote>
+<p><strong>Client</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Sales person</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nmb001</td>
+<td>Nia Cartwright</td>
+<td>Kristy Griffin</td>
+</tr>
+<tr>
+<td>123456</td>
+<td>Kamile Farrington</td>
+<td>Natalie Dunn</td>
+</tr>
+<tr>
+<td>ab1234</td>
+<td>Kurtis Dickinson</td>
+<td>Anderson Fraser</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Product</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name</th>
+<th>Measurement unit</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1103</td>
+<td>DEO GALERIA PINK F 150 ML</td>
+<td>pcs</td>
+<td>Goods</td>
+</tr>
+<tr>
+<td>1102-01-011</td>
+<td>1U Server</td>
+<td>pcs</td>
+<td>Computers</td>
+</tr>
+<tr>
+<td>12345678</td>
+<td>Remote support</td>
+<td>h</td>
+<td>Services</td>
+</tr>
+</tbody>
+</table>
+<p>Usually, these entities make sense in the context of other ones. E.g., documents, reports, analysis, etc... And therefore, they must be visualized in some way. The most typical way is to display their names (i.e., the &quot;Name&quot; attribute):</p>
+<blockquote>
+<p><strong>Client</strong></p>
+<p>Nia Cartwright</p>
+<p>Kamile Farrington</p>
+<p>Kurtis Dickinson</p>
+</blockquote>
+<blockquote>
+<p><strong>Product</strong></p>
+<p>DEO GALERIA PINK F 150 ML</p>
+<p>1U Server</p>
+<p>Remote support</p>
+</blockquote>
+<p>Ok, everything seems fine, but what if we need something more? Think in general, not just about printouts or reports, this entity visualization should also apply when we choose a customer or a product (respecting the example above). How will you handle the situation when you have several products, named <em>&quot;1U Server&quot;</em>? Wouldn't it be better to see more information (i.e., additional attribute/s) about each entity? How about if you see what's the product availability at the time you choose it?</p>
+<p>And this is where the display format becomes important.</p>
+<p>ERP.net allows you to specify the display format of each entity type.</p>
+<p>So, if you need more attributes to be displayed or a specific format of your choice, you are free to customize it.
+Here is an example of how you could customize the products entity type:</p>
+<table>
+<thead>
+<tr>
+<th>Display format</th>
+<th>Visualization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{Name:T}</code></td>
+<td>DEO GALERIA PINK F 150 ML</td>
+</tr>
+<tr>
+<td><code>{Name:T} ({Code})</code></td>
+<td>DEO GALERIA PINK F 150 ML (1103)</td>
+</tr>
+<tr>
+<td><code>{Name:T} #{Code}</code></td>
+<td>DEO GALERIA PINK F 150 ML #1103</td>
+</tr>
+<tr>
+<td><code>{Code}</code></td>
+<td>1103</td>
+</tr>
+<tr>
+<td><code>{Code}: ({Name:T})</code></td>
+<td>1103: (DEO GALERIA PINK F 150 ML)</td>
+</tr>
+</tbody>
+</table>
+<p>The common thing between all display formats is the fact they use string interpolation- it gives you the opportunity to customize how each one of your entity types will be displayed.</p>
+<p>You can find more information on the topic of <a href="../string-interpolation/index.html">string interpolation here</a>.</p>
+<h2 id="configuring-display-format">Configuring display format</h2>
+<p>Changing the display format for a entity type is an easy task. Just open its definition and change <code>Display Text Format</code> attribute to the desired one.</p>
+<p><img src="pictures/entity-type-display-format.png" alt="picture1"></p>
+<p>As a result, each entity of this type (i.e., each customer) will be displayed according to the selected display format. In the picture below you can see how a customer dropdown is shown in the Web Client.</p>
+<p><img src="pictures/webclient-dropdown.png" alt="picture2"></p>
+<p>Furthermore, it's possible to specify the display format yourself if the predefined formats don't suit you. It's easy- you just have to follow the rules when specifying the <a href="../string-interpolation/index.html">interpolation string</a>.</p>
+<p>Also, you may be wondering how you will know the specific attributes of the entity type you need? You can refer to the <a href="https://docs.erp.net/model/entities/">ERP.net Domain Model documentation</a>. Following to the example above, all the necessary information is available in the <a href="https://docs.erp.net/model/entities/Crm.Customers.html">Crm.Customers Entity</a>.</p>
+<p>Internally the display format attribute for an entity is located in the <a href="https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat">Systems.Core.EntitySettings Entity</a> table.</p>
+<h2 id="examples">Examples</h2>
+<p>In this section you can see several examples of different entity types- sample data, available predefined display formats and their corresponding visualization.</p>
+<h3 id="customers">Customers</h3>
+<p><a href="https://docs.erp.net/model/entities/Crm.Customers.html">Customers entity documentation</a>.</p>
+<h4 id="sample-data">Sample data</h4>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nmb001</td>
+<td>Nia Cartwright</td>
+</tr>
+<tr>
+<td>123456</td>
+<td>Kamile Farrington</td>
+</tr>
+<tr>
+<td>ab1234</td>
+<td>Kurtis Dickinson</td>
+</tr>
+</tbody>
+</table>
+<h4 id="display-formats">Display formats</h4>
+<table>
+<thead>
+<tr>
+<th>Display format</th>
+<th>Visualization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{Party.PartyName:T}</code></td>
+<td>Nia Cartwright</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} ({Number})</code></td>
+<td>Nia Cartwright (nmb001)</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} #{Number}</code></td>
+<td>Nia Cartwright #nmb001</td>
+</tr>
+<tr>
+<td><code>{Number}</code></td>
+<td>nmb001</td>
+</tr>
+<tr>
+<td><code>{Number}: ({Party.PartyName:T})</code></td>
+<td>nmb001: (Nia Cartwright)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T}</code></td>
+<td>Kamile Farrington</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} ({Number})</code></td>
+<td>Kamile Farrington (123456)</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} #{Number}</code></td>
+<td>Kamile Farrington #123456</td>
+</tr>
+<tr>
+<td><code>{Number}</code></td>
+<td>123456</td>
+</tr>
+<tr>
+<td><code>{Number}: ({Party.PartyName:T})</code></td>
+<td>123456: (Kamile Farrington)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T}</code></td>
+<td>Kurtis Dickinson</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} ({Number})</code></td>
+<td>Kurtis Dickinson (ab1234)</td>
+</tr>
+<tr>
+<td><code>{Party.PartyName:T} #{Number}</code></td>
+<td>Kurtis Dickinson #ab1234</td>
+</tr>
+<tr>
+<td><code>{Number}</code></td>
+<td>ab1234</td>
+</tr>
+<tr>
+<td><code>{Number}: ({Party.PartyName:T})</code></td>
+<td>ab1234: (Kurtis Dickinson)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="products">Products</h3>
+<p><a href="https://docs.erp.net/model/entities/General.Products.Products.html">Products entity documentation</a>.</p>
+<h4 id="sample-data-1">Sample data</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Part number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DEO GALERIA PINK F 150 ML</td>
+<td>1103</td>
+</tr>
+<tr>
+<td>1U Server</td>
+<td>1102-01-011</td>
+</tr>
+<tr>
+<td>Remote support</td>
+<td>12345678</td>
+</tr>
+</tbody>
+</table>
+<h4 id="display-formats-1">Display formats</h4>
+<table>
+<thead>
+<tr>
+<th>Display format</th>
+<th>Visualization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{Name:T}</code></td>
+<td>DEO GALERIA PINK F 150 ML</td>
+</tr>
+<tr>
+<td><code>{Name:T} ({PartNumber})</code></td>
+<td>DEO GALERIA PINK F 150 ML (1103)</td>
+</tr>
+<tr>
+<td><code>{Name:T} #{PartNumber}</code></td>
+<td>DEO GALERIA PINK F 150 ML #1103</td>
+</tr>
+<tr>
+<td><code>{PartNumber}</code></td>
+<td>1103</td>
+</tr>
+<tr>
+<td><code>{PartNumber}: ({Name:T})</code></td>
+<td>1103: (DEO GALERIA PINK F 150 ML)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>{Name:T}</code></td>
+<td>1U Server</td>
+</tr>
+<tr>
+<td><code>{Name:T} ({PartNumber})</code></td>
+<td>1U Server (1102-01-011)</td>
+</tr>
+<tr>
+<td><code>{Name:T} #{PartNumber}</code></td>
+<td>1U Server #1102-01-011</td>
+</tr>
+<tr>
+<td><code>{PartNumber}</code></td>
+<td>1102-01-011</td>
+</tr>
+<tr>
+<td><code>{PartNumber}: ({Name:T})</code></td>
+<td>1102-01-011: (1U Server)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>{Name:T}</code></td>
+<td>Remote support</td>
+</tr>
+<tr>
+<td><code>{Name:T} ({PartNumber})</code></td>
+<td>Remote support (12345678)</td>
+</tr>
+<tr>
+<td><code>{Name:T} #{PartNumber}</code></td>
+<td>Remote support #12345678</td>
+</tr>
+<tr>
+<td><code>{PartNumber}</code></td>
+<td>12345678</td>
+</tr>
+<tr>
+<td><code>{PartNumber}: ({Name:T})</code></td>
+<td>12345678: (Remote support)</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/data-objects/display-format.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
