@@ -54,5 +54,4 @@ Explanation:
 This example demonstrates, that Calculated Attributes can calculate very complicated formulas, query the database, get related values, etc.
 
 #### Temporary
-[!list folder="calculated-attributes" style="bullet" limit=100]
-
+[!list folder="User Calculated Attributes" style="bullet" limit=100]
