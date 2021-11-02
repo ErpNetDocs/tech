@@ -752,7 +752,7 @@
   "advanced/user-business-rules/examples/index.html": {
     "href": "advanced/user-business-rules/examples/index.html",
     "title": "User Business Rules - Examples | ERP.net Tech Docs",
-    "keywords": "User Business Rules - Examples Allow a credit limit override when a client pays in cash How to set DeliveryTerms in purchase invoice How to start a business rule only on first releasing Whole quantity validation"
+    "keywords": "User Business Rules - Examples Allow a credit limit override when a client pays in cash How to set DeliveryTerms in purchase invoice How to start a business rule only on first releasing Whole quantity validation Temporary"
   },
   "advanced/user-business-rules/examples/set-deliveryterms.html": {
     "href": "advanced/user-business-rules/examples/set-deliveryterms.html",
