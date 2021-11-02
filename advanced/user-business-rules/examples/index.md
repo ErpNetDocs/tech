@@ -7,4 +7,4 @@
 
 ## Temporary
 
-[!list folder="examples" depth=0 style="bullet" limit=100]
+[!list folder="examples" depth=1 style="bullet" limit=100]
