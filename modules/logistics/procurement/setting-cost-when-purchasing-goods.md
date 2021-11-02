@@ -24,8 +24,8 @@ The *unit cost* for one row in the **receiving order** is defined as follows:
 
 **[End Cost]** = **[Line Amount]** + **[sum of the distributed amounts for the current row]**. 
 
->[!NOTE] : Only [additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html) that are 
->marked with Add To Line as True. Also, the additional amount may be entered by other **purchase invoices** (for >example - transport purchase invoice).
+> [!NOTE]
+> Only [additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html) that are marked with Add To Line as True. Also, the additional amount may be entered by other **purchase invoices** (for example - transport purchase invoice).
 
 3. At the end the **[End Cost]** for all rows from p.1 are summed up, the quantities for those rows are summed up and the end cost is divided by those quantities. If the quantities are **0** then the unit cost is also **0**. 
 Not: When summing up all end costs have to be converted to the currency of the **receiving order**, and all quantities have to be converted to the measurement unit of the **receiving order** row.
@@ -62,4 +62,3 @@ In this case, the **cost transactions** on this delivery should be as follows:
 - Product B, lot 9A, **0 PCS**, Transaction Timestamp = **15/10/2020 12:59**, Line Cost = 10 PCS * ((39 EUR + 26 EUR) / 13 PCS) = **50 EUR**;
 - Product A, lot 17B, **0 PCS**, Transaction Timestamp = **17/10/2020 14:15**, Line Cost = 4 PCS * ((64 EUR + 16 EUR + 10 EUR + 2 EUR) / (8 PCS + 1 PCS)) ~ **30.67 EUR**;
 - Product B, lot 13A, **0 PCS**, Transaction Timestamp = **17/10/2020 14:15**, Line Cost = 4 PCS * ((39 EUR + 26 EUR) / (16 PCS) = **5 EUR**;
-
