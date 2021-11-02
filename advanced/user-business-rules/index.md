@@ -40,7 +40,6 @@ The [actions](https://docs.erp.net/tech/advanced/user-business-rules/action-type
 - Parameter1 type, Parameter2 type, Parameter3 type - the type of the parameter specifies how to obtain the parameter value; 
 - Parameter1 value, Parameter2 value, Parameter3 value - the actual value of the parameter.
 
-
 ### Temporary
 
 [!list depth=1 style="bullet" limit=100]
