@@ -44,5 +44,3 @@ The [actions](https://docs.erp.net/tech/advanced/user-business-rules/action-type
 ### Temporary
 
 [!list depth=1 style="bullet" limit=100]
-
-
