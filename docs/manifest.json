@@ -1899,7 +1899,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "ZlQz55LS4NbnIe+A4m6w3w=="
+          "hash": "apS2/DRJk+4DEmIo/jZDzA=="
         }
       },
       "is_incremental": false,
@@ -1942,12 +1942,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/index.html",
-          "hash": "R7pGCwM6HsJ42/ije0hS0w=="
+          "hash": "Wz++Mc5micheAU7N0pS/WA=="
         }
       },
       "is_incremental": false,
