@@ -7,12 +7,12 @@ The current topic describes the calculation of the non agreed services and mater
 The agreed services and materials are listed in the service agreements, in the ServiceAgreementService and ServiceAgreementMaterial tables.
 After that the quantities which are listed in there are distributed through the service activities. 
 When a service activity is released, what part of the agreed quantities has not been used by the previous service activities is calculated and the result (the remaining quantities) is distributed in the current document (only if the remaining quantities are not greater than the used quantities recorded in the current document). 
-The distributed quantities are recorded in the Distributed Service Agreement Materials and Distributed Service Agreement Services tables.
+The distributed quantities are recorded in the Distributed Service Agreement Materials and *Distributed Service Agreement Services* tables.
 After all, the non-agreed materials and services are calculated by subtracting the quantities from those tables from the quantities in the current service activity. 
 
 ## Non agreed materials
 
-For each Material line in the current service activity all records from Distributed Service Agreement Materials table which correspond the current line are derived.
+For each Material line in the current service activity all records from *Distributed Service Agreement Materials* table which correspond the current line are derived.
 The amounts from the Agreed Quantity column are summed up (converted to the measurement unit of the material in the service activity line; the values in Agreed Quantity column are in measurement unit of the service agreement) and the sum is subtracted from the quantity in the current line (only if the sum is not greater than the quantity in the current line).
 This is the calculation:
 ```
@@ -27,7 +27,7 @@ There is a service activity with three lines with materials:
 - line #20, Material #2, **13PCS**;
 - line #30, Material #3, **40PCS**.
 
-Distributed Service Agreement Materials table has the following data:
+*Distributed Service Agreement Materials* table has the following data:
 - line #20 from the Service Activity, line #70 from Service Agreement #00007, **4PCS**;
 - line #20 from the Service Activity, line #30 from Service Agreement #00019, **11PCS**;
 - line #30 from the Service Activity, line #10 from Service Agreement #00007, **48KG**.
@@ -90,7 +90,7 @@ There is Service Activity with the following services:
 - line #10, Service #1, **6PCS**;
 - line #20, Service #2, **8PCS**.
 
-Distributed Service Agreement Services table contains the following:
+*Distributed Service Agreement Services* table contains the following:
 - line #10 of the Service Activity, line #40 (with Service #1) from Service Agreement #00023, **2PCS**;
 - line #20 of the Service Activity, line #50 with Service #2) from Service Agreement #00023, **3PCS**;
 - line #20 of the Service Activity, line #30 (with Service Product #3) from Service Agreement #00037, **78KG**.
