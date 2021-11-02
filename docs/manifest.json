@@ -1894,12 +1894,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "1W6bglTY2aNlmxa1bV/Zbg=="
+          "hash": "eg47MGWEDKO8TB+UTBD6DQ=="
         }
       },
       "is_incremental": false,
@@ -3030,7 +3033,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/service/non-agreed-services-and-materials.html",
-          "hash": "7MtcTVvmAo2PDPpds2bs8A=="
+          "hash": "62pBoPMjM1yhSiL6Fl9C8Q=="
         }
       },
       "is_incremental": false,
