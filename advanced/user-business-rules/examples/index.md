@@ -5,4 +5,6 @@
 - [How to start a business rule only on first releasing](https://docs.erp.net/tech/advanced/user-business-rules/examples/start-business-rule.html)
 - [Whole quantity validation](https://docs.erp.net/tech/advanced/user-business-rules/examples/whole-quantity-validation.html)
 
+## Temporary
+
 [!list folder="examples" depth=0 style="bullet" limit=100]
