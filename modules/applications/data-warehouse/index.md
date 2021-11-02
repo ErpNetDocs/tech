@@ -27,4 +27,4 @@ Data warehouse is after that used in the @@name BI. An external BI also may be u
 
 ### Further reference:
 
-- **Data Measure Groups Business Rules**
+- **Data measure groups business rules**
