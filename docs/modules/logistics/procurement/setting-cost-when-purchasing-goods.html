@@ -100,10 +100,10 @@
 <li>For each row from p.1,an end cost is defined:</li>
 </ol>
 <p><strong>[End Cost]</strong> = <strong>[Line Amount]</strong> + <strong>[sum of the distributed amounts for the current row]</strong>.</p>
-<blockquote>
-<p>[!NOTE] : Only <a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">additional amounts</a> that are
-marked with Add To Line as True. Also, the additional amount may be entered by other <strong>purchase invoices</strong> (for &gt;example - transport purchase invoice).</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Only <a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">additional amounts</a> that are marked with Add To Line as True. Also, the additional amount may be entered by other <strong>purchase invoices</strong> (for example - transport purchase invoice).</p>
+</div>
 <ol start="3">
 <li>At the end the <strong>[End Cost]</strong> for all rows from p.1 are summed up, the quantities for those rows are summed up and the end cost is divided by those quantities. If the quantities are <strong>0</strong> then the unit cost is also <strong>0</strong>.
 Not: When summing up all end costs have to be converted to the currency of the <strong>receiving order</strong>, and all quantities have to be converted to the measurement unit of the <strong>receiving order</strong> row.</li>

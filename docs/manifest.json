@@ -1623,7 +1623,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "M878JJhpYzXg+q8UkfzxNQ=="
+          "hash": "kFrUgN8wRr0062M761Nx5Q=="
         }
       },
       "is_incremental": false,
@@ -3298,15 +3298,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/marketing/bonus-programs/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/marketing/bonus-programs/index.html",
-          "hash": "yXb9ITU3ayJt/Csf2McVoQ=="
+          "hash": "nt9AiqQ3JbCLDrgOX1G21A=="
         }
       },
       "is_incremental": false,
@@ -3421,15 +3418,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/determine-payment-account-in-sales-order.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-payment-account-in-sales-order.html",
-          "hash": "Q2FWIXeOqRwfKYbj2GHmSg=="
+          "hash": "IgfOyCMrPZx3VawmdIh4RQ=="
         }
       },
       "is_incremental": false,
@@ -3448,15 +3442,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/minimal-sales-price.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/minimal-sales-price.html",
-          "hash": "B96CC1OKQJdOfCmpR5W1fg=="
+          "hash": "NpI+SGKiieGKP3422QfKTg=="
         }
       },
       "is_incremental": false,
@@ -4670,15 +4661,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/procurement/setting-cost-when-purchasing-goods.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/setting-cost-when-purchasing-goods.html",
-          "hash": "6DMfOqruzZTfxqcqL+ygvg=="
+          "hash": "rD8KJWci7D7trtc0bWj78A=="
         }
       },
       "is_incremental": false,

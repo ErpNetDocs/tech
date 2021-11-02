@@ -164,9 +164,10 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>[!NOTE] :  When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products &gt;defined in the bonus program. For example, if a <em>bonus program</em> is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the &gt;<em>bonus program</em> will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B &gt;…).</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products defined in the bonus program. For example, if a <em>bonus program</em> is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the <em>bonus program</em> will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B …).</p>
+</div>
 <p><strong>Currently, two types of bonuses are supported:</strong></p>
 <ul>
 <li>Product – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the bonus program fields <em>For Each</em> and <em>Bonus Product Quantity</em>. For Example: if there is a bonus program with a product 'Pencil', which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'. In the line field <em>Bonus program</em> there is information about the name of the bonus program that is currently applied .</li>
