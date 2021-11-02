@@ -52,6 +52,3 @@ Explanation:
 - Line 70: Specifies that the second condition is that the Name of the product should contain 'Tool'.
 
 This example demonstrates, that Calculated Attributes can calculate very complicated formulas, query the database, get related values, etc.
-
-#### Temporary
-[!list folder="User Calculated Attributes" style="bullet" limit=100]
