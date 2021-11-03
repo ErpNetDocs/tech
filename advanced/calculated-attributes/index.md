@@ -55,4 +55,4 @@ This example demonstrates, that Calculated Attributes can calculate very complic
 
 ## Temporary
 
-[!list style="bullet" limit=100]
+[!list folder="*" style="bullet" limit=100]
