@@ -349,12 +349,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/index.html",
-          "hash": "bzRiz5A46stpqWM2w8zyng=="
+          "hash": "v6lh43PPzRf6kpXe2iMSmw=="
         }
       },
       "is_incremental": false,
@@ -1902,7 +1905,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "eg47MGWEDKO8TB+UTBD6DQ=="
+          "hash": "Acj8ab8qf9GvXlpH8UoLLA=="
         }
       },
       "is_incremental": false,
