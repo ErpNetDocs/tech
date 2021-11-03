@@ -349,15 +349,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/index.html",
-          "hash": "v6lh43PPzRf6kpXe2iMSmw=="
+          "hash": "bzRiz5A46stpqWM2w8zyng=="
         }
       },
       "is_incremental": false,
@@ -1897,15 +1894,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "Acj8ab8qf9GvXlpH8UoLLA=="
+          "hash": "m+K6Sk486zIg3oMJCir2xg=="
         }
       },
       "is_incremental": false,
