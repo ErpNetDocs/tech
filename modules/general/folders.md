@@ -1,6 +1,6 @@
 # File manager
 
-The **File Manager** is where you can create and store folders with different files inside. It follows a hierarchical tree order, similar to the one found in [Product Groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). With the help of the ribbons, you are able to peek inside a complex structure without getting lost.
+The **File Manager** is where you can create and store folders with different files inside. It follows a hierarchical tree order, similar to the one found in [Product groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). With the help of the ribbons, you are able to peek inside a complex structure without getting lost.
 
 ![File Manager](pictures/fm17.png)
 
