@@ -9,7 +9,7 @@ This represents a comment to a data object within the system.
 
 - Besides social posts, there are other objects which are frequent targets by comments:
 
-    - Marketplace Products
+    - Marketplace products
     - Documents
     - Definitions
     - Settings
@@ -18,15 +18,15 @@ This represents a comment to a data object within the system.
 
 #### Important attributes:
 
-- **Data Object** - the data object being commented.
+- **Data object** - the data object being commented.
 
-- **Reply To Comment** - the comment to which the current comment replies. 
+- **Reply to comment** - the comment to which the current comment replies. 
 
 If empty, the comment is a root comment to the data object.
 
-Тhe Data Object always points to the root data object being commented (it does not point to a data object for a comment).
+Тhe Data object always points to the root data object being commented (it does not point to a data object for a comment).
 
-- **Comment Text** - comment contents in clear text.
+- **Comment text** - comment contents in clear text.
 
 > [!NОТЕ]
 > It is planned that text will be allowed to contain some mark-down constructs in the future.
