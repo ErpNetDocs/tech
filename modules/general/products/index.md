@@ -13,20 +13,20 @@ Product’s definition includes the information required for specific business p
 - measurement unit; 
 - costing currency and others. 
 
-Different panels can also be visualized in the product’s definition, allowing the user to have access to all of the product related information such as **[product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=product%20dimensions)**, current stock holds, serial numbers, lots, product prices and others.  
+Different panels can also be visualized in the product’s definition, allowing the user to have access to all of the product related information such as [product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=product%20dimensions), current stock holds, serial numbers, lots, product prices and others.  
 
 All products are grouped in user defined product groups (e.g. goods, materials, services …) according to different criteria. 
 
-For more information, see **[Product groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html?q=Product%20Groups)**.
+For more information, see [Product groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html?q=Product%20Groups).
 
 
-- **[Coding systems](https://docs.erp.net/tech/modules/general/products/coding-systems.html?q=Coding%20Systems)** 
-- **[Product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=Product%20Codes)** 
-- **[Product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)** 
-- **Product pictures** 
-- **Products - business rules** 
-- **[Product types](https://docs.erp.net/tech/modules/general/products/product-types/index.html?q=Product%20Types)** 
-- **[Serial numbers](https://docs.erp.net/tech/modules/general/products/serial-numbers/index.html?q=Serial%20Numbers)** 
-- **[Variable (dynamic) measurement ratios](https://docs.erp.net/tech/modules/general/products/variable-dynamic-measurement-rations.html?q=Variable%20(dynamic)%20measurement%20ratio)**
+- [Coding systems](https://docs.erp.net/tech/modules/general/products/coding-systems.html?q=Coding%20Systems)
+- [Product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=Product%20Codes)
+- [Product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)
+- Product pictures
+- Products - business rules
+- [Product types](https://docs.erp.net/tech/modules/general/products/product-types/index.html?q=Product%20Types)
+- [Serial numbers](https://docs.erp.net/tech/modules/general/products/serial-numbers/index.html?q=Serial%20Numbers)
+- [Variable (dynamic) measurement ratios](https://docs.erp.net/tech/modules/general/products/variable-dynamic-measurement-rations.html?q=Variable%20(dynamic)%20measurement%20ratio)
 
 
