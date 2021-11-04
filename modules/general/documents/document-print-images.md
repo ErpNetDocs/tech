@@ -6,4 +6,4 @@ The Document print images would take the most space in customer databases. There
 
 It is highly recommended that you set up a system job that will delete them automatically. 
 
-For more information, see [Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)
+For more information, see **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)**
