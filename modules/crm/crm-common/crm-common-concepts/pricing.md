@@ -54,13 +54,13 @@ So, after the selection process, one and only one price is selected and applied 
 
 The following additional conditional attributes further filter down the prices:
 
-- **Enterprise Company** - for sales only in the specified @@name
-- **Min Quantity** - for sales quantities above (or equal to) the specified
-- **Max Quantity** - for sales quantities below (or equal to) the specified
-- **Target Group** - for customers in the target group
-- **Ship To Customer** - self-explanatory
-- **Distribution Channel** - self-explanatory
-- **Customer Type** - self-explanatory
+- **Enterprise company** - for sales only in the specified @@name
+- **Min quantity** - for sales quantities above (or equal to) the specified
+- **Max quantity** - for sales quantities below (or equal to) the specified
+- **Target group** - for customers in the target group
+- **Ship to customer** - self-explanatory
+- **Distribution channel** - self-explanatory
+- **Customer type** - self-explanatory
 
 ## Specifying the price
 
@@ -69,7 +69,7 @@ The price is specified using the following attributes:
 - **Price** - the decimal part of the price
 - **Currency** - the currency of the price
 - **Quantity** - the quantity for which the price is specified
-- **Quantity Measurement Unit** - the measurement unit in which the quantity is specified
+- **Quantity measurement unit** - the measurement unit in which the quantity is specified
 
 Examples:
 
