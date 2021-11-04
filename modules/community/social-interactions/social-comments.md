@@ -31,4 +31,4 @@ If empty, the comment is a root comment to the data object.
 > [!NОТЕ]
 > It is planned that text will be allowed to contain some mark-down constructs in the future.
 
-- **Creation Time Utc** - automatically set by the server to the time of initial creation of the comment.
+- **Creation time Utc** - automatically set by the server to the time of initial creation of the comment.
