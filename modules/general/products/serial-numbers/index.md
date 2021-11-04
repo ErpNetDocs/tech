@@ -1,12 +1,12 @@
 # Serial numbers 
 
-Serial numbers are a way of identifying the different pieces of a product. They may be used for equipment, software, assets and more. With the Serial Numbers the user can follow what happens with objects, which are otherwise identified by the system with one product definition (i.e. one Product_Id). The Serial Numbers are also important for identification when providing guarantee and support. 
+Serial numbers are a way of identifying the different pieces of a product. They may be used for equipment, software, assets and more. With the Serial numbers the user can follow what happens with objects, which are otherwise identified by the system with one product definition (i.e. one Product_Id). The Serial numbers are also important for identification when providing guarantee and support. 
 
-For example, in a Sales order, the user may enter a row with three pieces which will have to be shipped separately (1 piece at a time). But (in the Sales Order) the user cannot mark which one of the three pieces is shipped first, which one is shipped second and etc. In the Sales order, three Serial numbers are entered, but in the Shipments, the user may specify by Serial numbers which one is shipped each time and  which Shipment exactly refers to it. 
+For example, in a Sales order, the user may enter a row with three pieces which will have to be shipped separately (1 piece at a time). But (in the Sales order) the user cannot mark which one of the three pieces is shipped first, which one is shipped second and etc. In the Sales order, three Serial numbers are entered, but in the Shipments, the user may specify by Serial numbers which one is shipped each time and  which Shipment exactly refers to it. 
 
 ## Implementation 
 
-The Serial numbers are recorded in a separate table where each record is an individual Serial Number. Additional information is specified as Product, Lot (eventually), Availability (is the current piece blocked), Serial Number Card Data and more. 
+The Serial numbers are recorded in a separate table where each record is an individual Serial number. Additional information is specified as Product, Lot (eventually), Availability (is the current piece blocked), Serial number card data and more. 
 
 This way of implementation is preferred instead of the initial idea of defining number groups. In this implementation, the numbers in each group cannot be identified by something other than the symbols of their record. This is not very helpful because there are cases with fundamental differences between two Serial numbers which may be entered in one document row. For example, one of them may be blocked for future usage, and the second one - not. Other than that, visually, it looks better when the different Serial numbers are displayed in different document rows. This corresponds with the fact that we treat the products with different Serial numbers as different products.  
 
