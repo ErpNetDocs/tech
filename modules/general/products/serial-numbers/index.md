@@ -2,7 +2,7 @@
 
 Serial numbers are a way of identifying the different pieces of a product. They may be used for equipment, software, assets and more. With the Serial numbers the user can follow what happens with objects, which are otherwise identified by the system with one product definition (i.e. one Product_Id). The Serial numbers are also important for identification when providing guarantee and support. 
 
-For example, in a Sales order, the user may enter a row with three pieces which will have to be shipped separately (1 piece at a time). But (in the Sales order) the user cannot mark which one of the three pieces is shipped first, which one is shipped second and etc. In the Sales order, three Serial numbers are entered, but in the Shipments, the user may specify by Serial numbers which one is shipped each time and  which Shipment exactly refers to it. 
+For example, in a sales order, the user may enter a row with three pieces which will have to be shipped separately (1 piece at a time). But (in the sales order) the user cannot mark which one of the three pieces is shipped first, which one is shipped second and etc. In the sales order, three Serial numbers are entered, but in the Shipments, the user may specify by Serial numbers which one is shipped each time and  which Shipment exactly refers to it. 
 
 ## Implementation 
 
@@ -16,7 +16,7 @@ Also, the current implementation considerably eases the entering of Serial numbe
 
 Whether a product should be used with or without Serial numbers, is a property set in its definition - *Is Serialized* field. If a product is not serialized, Serial numbers are **forbidden** when working with this product. If it is serialized, than serial number usage is **required** in Transactions and Reconciliations, and in the other documents it is **allowed**, but not required. 
 
-Usually, Serial numbers are entered in the Transactions and Reconciliations. In the previous documents (Receiving orders, Sales orders etc.) the user is able to enter a serial number but such kind of usage is rare. If the serial number is not entered, for example in the Receiving order, the user may enter just one row with the quantity of **10 PCS** and breaking down this row to 10 separated rows with different Serial numbers and quantity of **1 PCS** happens in the Transaction. The main way to break down one row to several with different Serial numbers happens through the Barcode commands panel for Store orders execution. 
+Usually, Serial numbers are entered in the transactions and reconciliations. In the previous documents (Receiving orders, Sales orders etc.) the user is able to enter a serial number but such kind of usage is rare. If the serial number is not entered, for example in the Receiving order, the user may enter just one row with the quantity of **10 PCS** and breaking down this row to 10 separated rows with different Serial numbers and quantity of **1 PCS** happens in the Transaction. The main way to break down one row to several with different Serial numbers happens through the Barcode commands panel for Store orders execution. 
 
 ## Data entry validation 
 
@@ -31,7 +31,7 @@ The serial number is specified in the documents rows by selecting it from a drop
 
 Entering new Serial numbers and selecting an already entered one should be as easy as possible. 
 
-For this purpose, when entering a serial number and in a dropdown list a number ( nonexistent in the database for the current product) is selected, then a record with this value is created in the database automatically. This will have the greatest effect when working with the Barcode Commands Panel. This panel has a working mode which creates new Serial numbers and it is available only when *receiving* goods in the store. If the user *issues* goods, they can choose only Serial numbers, which are already entered in the database. 
+For this purpose, when entering a serial number and in a dropdown list a number ( nonexistent in the database for the current product) is selected, then a record with this value is created in the database automatically. This will have the greatest effect when working with the Barcode commands panel. This panel has a working mode which creates new Serial numbers and it is available only when *receiving* goods in the store. If the user *issues* goods, they can choose only Serial numbers, which are already entered in the database. 
 
 Also, there are modes for quick entering/selection of a list of Serial numbers. By them, the user may enter directly the numbers separated by commas (for example - "KHC4500071, KHC4500072, KHC4500073, KHC4500074, KHC4500075, KHC4500076, KHC4500077"), or they may set a range of numbers (in the previous example list, the user may enter just "KHC4500071" and "KHC4500077"). 
 
@@ -43,7 +43,7 @@ The products availability (both current and at a specified date) for serialized 
 
 The same is valid for the stock movements reports. By them, the user is able to track the movements of specified products and their Serial numbers. Such tracking is always executed by store documents (i.e. store movements) and if there comparing operations from specialized modules is required, then a link between the Transactions and the documents from the specified module is used (for example - links as [Parent Document] <-> [Sub-Document]). 
 
-For example, in Purchasing Orders Serial numbers will rarely be entered (except for returns) and the Serial numbers will show up in the transactions. So if the user wants to see when a specified serial number is bought, then they would use stock movements and follow the link to the Purchasing orders (for example - through the parent document of the Store order).
+For example, in purchasing orders Serial numbers will rarely be entered (except for returns) and the Serial numbers will show up in the transactions. So if the user wants to see when a specified serial number is bought, then they would use stock movements and follow the link to the Purchasing orders (for example - through the parent document of the Store order).
 
 
 
