@@ -11,12 +11,12 @@ When trying to determine a product price, we have to specify some required condi
 and some not required:
  
 - **Customer**
-- **Ship To Customer**
-- **Enterprise Company** - Only in the specified enterprised company
-- **Enterprise Company Location** - Only in the specified enterprise company location
-- **Distribution Channel** - self-explanatory
-- **Price List** - self-explanatory
-- **Current Product Price** - The current product price should not be changed if it satisfies the conditions and has the same priority as the determined top price.
+- **Ship to customer**
+- **Enterprise company** - Only in the specified enterprised company
+- **Enterprise company location** - Only in the specified enterprise company location
+- **Distribution channel** - self-explanatory
+- **Price list** - self-explanatory
+- **Current product price** - The current product price should not be changed if it satisfies the conditions and has the same priority as the determined top price.
 
 @@name filters all product prices for the given product that match these criteria. When a product price is defined with a blank value for the customer, the product price applies to **all** customers. The same goes for Ship To Customer, From Date, Thru Date and all not required parameters from the list above.
  
