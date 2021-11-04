@@ -2,7 +2,7 @@
 
 When a domain front-end logic is activated for a particular form, this means that it is activated for all referent panels in this form which are a part of the [aggregate](xref:aggregates).
 
-E.i. if it is activated for the sales ordes form - it is also activated for panels such as Sales Orders lines and Payment Plan which are a part of the sales order's aggregate, but not for panels such as Document amounts which are a part of the document's aggregate.
+E.i. if it is activated for the sales ordes form - it is also activated for panels such as Sales orders lines and Payment plan which are a part of the sales order's aggregate, but not for panels such as Document amounts which are a part of the document's aggregate.
 
 
 
