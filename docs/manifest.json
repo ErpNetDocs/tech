@@ -1894,12 +1894,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "3b5Kr/YlOri2LRVA9/njKg=="
+          "hash": "qOj1hKg9KcHWtr0a1a9JOw=="
         }
       },
       "is_incremental": false,
