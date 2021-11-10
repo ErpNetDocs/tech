@@ -4,8 +4,7 @@ items: CalculatedAttributeExamples
 
 # Calculate standart price per lot based on the ingredients and the operations in the recipe
 
-With this attribute, we can calculate the StandartPricePerLot that is going to be automatically set in the product’s definition we save the recipe. The StandartPricePerLot is determined by the prices of the ingredients and the operations used in the particular recipe. After that, we can use this attribute in a business rule which to fill in the PricePerLotValue of the product in the recipe.
-
+With this attribute, we can calculate the **StandartPricePerLot** that is going to be automatically set in the product’s definition we save the recipe. The **StandartPricePerLot** is determined by the prices of the ingredients and the operations used in the particular recipe. After that, we can use this attribute in a business rule to fill in the **PricePerLotValue** of the product in the recipe.
 
 
 ```
@@ -20,7 +19,7 @@ With this attribute, we can calculate the StandartPricePerLot that is going to b
 70: ADD ATTRIB:SetupTimeMinutes ATTRIB:MoveTimeMinutes
 ```
 
-Explanation:
+**Explanation:**
 
 - 10: Add the value of EXP:20 to the value of EXP:25.
 - 20: Sum all recipe's ingredients PriceValues.
