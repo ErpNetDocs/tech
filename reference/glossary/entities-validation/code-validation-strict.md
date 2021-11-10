@@ -31,9 +31,11 @@ The following symbols are **NOT** allowed:
 The reasons for strict limiting of the code symbols are concatenation, parsing and processing of codes with more freedom.
 
 ### Length
+
 The default maximum length for code attributes is **16 characters**. It is still recommended that codes be 5 characters or less.
 
 ### Suggestions
+
 When creating codes, there are some general rules:
 
 1. Usage of digits is highly suggested.
