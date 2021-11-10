@@ -12,7 +12,6 @@ Generally, those advices can be summarized to:
 2.  If you have to use a **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)** – Use **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses instead of **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses
 3.  Filter the filter - Filter the list returned to the **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** as much as you can
 
-
 But let's get into the details. 
 
 Using a **REF** means that we are using the collection of elements that have  already been loaded in the memory. The **REF** connection leads only to the records that refer to by the current entity.
@@ -23,11 +22,9 @@ More records inevitably means slower calculation. Like any other design when cre
 
 **Example:**
 
-Let's imagine that we need to show a field with Total Line Amount value in the sales order line. Therefore we will need to calculate the sum of the line amount of all sales order lines of the particular sales order. Such attribute can be created at least two ways (the repository is Crm.Sales.SalesOrderLines):
+Let's imagine that we need to show a field with **_Total Line Amount_** value in the sales order line. Therefore, we will need to calculate the sum of the line amount of all sales order lines of the particular sales order. Such attribute can be created in at least two ways (the repository is Crm.Sales.SalesOrderLines):
 
-## Using a **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**
-
-Using a **[SELECT]** (with all records in the Crm.Sales.SalesOrderLines table)
+### Using a [SELECT] (with all records in the Crm.Sales.SalesOrderLines table)
 
 ```
 10     SUM  EXP:20  ATTRIB:LineAmountValue                            
@@ -37,9 +34,7 @@ Using a **[SELECT]** (with all records in the Crm.Sales.SalesOrderLines table)
 50     GETOBJVALUE  INPUT:10      ATTRIB:SalesOrderId          
 ```
 
-## Using a REF
-
-Using a **REF** (with only the lines of the current SalesOrder)
+### Using a REF (with only the lines of the current SalesOrder)
 
 ```
 10     SUM EXP:20 ATTRIB:LineAmountValue                    
@@ -48,7 +43,7 @@ Using a **REF** (with only the lines of the current SalesOrder)
 
 Of course, there are some scenarios in which we want to reach the data of a table to which we simply can use a reference connection. But when using a **[SELECT]**, there are some tricks that we can use to speed up the calculation. 
 
-When we **[SELECT]** a table, we can filter its records with **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** or **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses. The most important thing that we must know about them is that when using:
+When we **[SELECT]** a table, we can filter its records with **[WHERE]** or **[FILTER]** clauses. The most important thing that we must know about them is that when using:
 
 - **WHERE** clauses – the conditions are applied together with the **[SELECT]** to the  whole list and directly on the server. Much faster performance in  comparison with **[FILTER]**, especially for a list with lots of records.
 
