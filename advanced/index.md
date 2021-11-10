@@ -7,13 +7,13 @@ It is intended primarily for advanced ERP implementation consultants.
 ## Advanced systems
 
 - **[Document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** - document-related concepts and services.
-- **[Document amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** - a mechanism for reporting financial amounts in documents.
+- **[Document amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** - mechanisms for reporting financial amounts in documents.
 - **[Custom attributes](https://docs.erp.net/tech/advanced/custom-attributes/index.html)** - user-defined data attributes.
 - **[Calculated attributes](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)** - user-defined calculations.
 - **[User business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** - user-defined and system business rules.
 - **[String interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** - breaking down input string is into expressions.
 - **[Data objects](https://docs.erp.net/tech/advanced/data-objects/index.html)** - data object extensibility systems.
-- **[Jobs](https://docs.erp.net/tech/advanced/jobs/index.html)**
+- **[Jobs](https://docs.erp.net/tech/advanced/jobs/index.html)** - systems which automatically run processes.
 
 ## Advanced concepts
 
