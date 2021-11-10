@@ -1,5 +1,5 @@
 ﻿# Reference section
 
-This section contains topics, which contain reference data.
+This section contains topics about reference data.
 
-Select a topic from the menu to view reference data.
+Select a topic from the menu to learn more.
