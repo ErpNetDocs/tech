@@ -2,9 +2,7 @@
 uid: applicable-legislations
 ---
 
-# Country specific functionality
-
-
+# Country-specific functionality
 
 @@name contains some country, region, or other specific functionalities that are needed in order to meet legal or regulatory requirements. Such functionality is the creation of VAT returns and the VAT export files for submission to the National Revenue Agency (Bulgaria), for example.
 
@@ -18,7 +16,7 @@ In parties, there is a child table with the applicable legislations for the part
 
 The VAT declaration in @@name is a document that serves as a basis for the creation of a VAT return and the VAT export files for submission to the National Revenue Agency. The information in the VAT declaration is based on the VAT entries created in the system for the particular period.
 
-The entries amounts (Amount base and VAT amount base) are entered in different columns of the sales and purchases ledger of the VAT declaration depending on their deal type (for more information about entries' deal type and amount calculation, see **Defining VAT and base for VAT Entries**).
+The entries amounts (_Amount base_ and _VAT amount base_) are entered in different columns of the sales and purchases ledger of the VAT declaration depending on their deal type (for more information about entries' deal type and amount calculation, see **Defining VAT and base for VAT Entries**).
 
 This article contains information about the correlation between the system deal types and the columns of the sales and purchases ledgers according to which the entries amounts are distributed to those columns.
 
