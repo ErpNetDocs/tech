@@ -11,9 +11,6 @@ So if we know that the customer is a company and we need to get his company attr
 For example, to get the responsible person of the company of the customer, the following attribute would do the job:
 
 (repository of the attribute: Crm.Customers)
-
-*Expressions:*
-
 ```
 10: GETOBJVALUE EXP:20 ResponsiblePersonName
 20: CAST REF:Party CONST:Aloe.EnterpriseOne.Model.General.Contacts.Company
