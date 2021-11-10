@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="calculate-standart-price-per-lot-based-on-the-ingredients-and-the-operations-in-the-recipe">Calculate standart price per lot based on the ingredients and the operations in the recipe</h1>
 
-<p>With this attribute, we can calculate the StandartPricePerLot that is going to be automatically set in the product’s definition we save the recipe. The StandartPricePerLot is determined by the prices of the ingredients and the operations used in the particular recipe. After that, we can use this attribute in a business rule which to fill in the PricePerLotValue of the product in the recipe.</p>
+<p>With this attribute, we can calculate the <strong>StandartPricePerLot</strong> that is going to be automatically set in the product’s definition we save the recipe. The <strong>StandartPricePerLot</strong> is determined by the prices of the ingredients and the operations used in the particular recipe. After that, we can use this attribute in a business rule to fill in the <strong>PricePerLotValue</strong> of the product in the recipe.</p>
 <pre><code>10: ADD EXP:20 EXP:25                 
 20: SUM CHILD:Ingredients ATTRIB:PriceValue     
 25: SUM CHILD:Operations EXP:30         
@@ -90,7 +90,7 @@
 60: ADD ATTRIB:WaitTimeMinutes EXP:70        
 70: ADD ATTRIB:SetupTimeMinutes ATTRIB:MoveTimeMinutes
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
 <li>10: Add the value of EXP:20 to the value of EXP:25.</li>
 <li>20: Sum all recipe's ingredients PriceValues.</li>

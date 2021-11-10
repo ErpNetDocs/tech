@@ -79,23 +79,25 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-check-if-a-list-has-values">How to check if a list has values?</h1>
 
-<p>When working with lists, often there is a need to check if  this list actually contains any values (records). For example, there is a calculated attribute which calculates the quantity in the sales order lines in specified measurement unit. There is always the possibility that the user enter a product which has no dimensions for the required measurement unit. In such cases, an instrument to check the lists records count is needed.</p>
+<p>When working with lists, often there is a need to check if  this list actually contains any values (records).</p>
+<p>For example, there is a calculated attribute which calculates the quantity in the sales order lines in specified measurement unit. The user could enter a product which has no dimensions for the required measurement unit.</p>
+<p>In such cases, an instrument to check the lists records count is needed.</p>
 <p>The described case is solved by the following expression:</p>
 <pre><code>SUM(List, 1)
 </code></pre>
 <p>This expression returns integer value containing the number of records in the entered list.</p>
-<p>Here is an example expression and its description. This example is defined in the sales order header and checks if the lines contain one specific product. So the repository of the calculated attribute is Crm.Sales.SalesOrders and its expressions are:</p>
+<p>Here is an example expression and its description. This example is defined in the sales order header and checks if the lines contain one specific product. So the repository of the calculated attribute is <strong>Crm.Sales.SalesOrders</strong> and its expressions are:</p>
 <pre><code>10: SUM EXP:20 CONST:1
 20: FILTER CHILD:Lines EXP:30
 30: EQUAL ATTRIB:ProductId CONST:d3d83bf0-d1fc-e611-9c53-00155d001f52
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
 <li>10: check the records count in list in expression 20</li>
 <li>20: filter the list of lines (detailed objects of the sales order object) by the filter in expression 30</li>
-<li>30: check if the ProductId in the line is equal to Guid d3d83bf0-d1fc-e611-9c53-00155d001f52</li>
+<li>30: check if the <strong>ProductId</strong> in the line is equal to <strong>Guid d3d83bf0-d1fc-e611-9c53-00155d001f52</strong></li>
 </ul>
-<p>This calculated attribute returns zero or greater value, depending on the count of the records in the sales order line with product with id of d3d83bf0-d1fc-e611-9c53-00155d001f52.</p>
+<p>This calculated attribute returns zero or greater value, depending on the count of records in the sales order line with product with ID <strong>d3d83bf0-d1fc-e611-9c53-00155d001f52</strong>.</p>
 </article>
           </div>
           

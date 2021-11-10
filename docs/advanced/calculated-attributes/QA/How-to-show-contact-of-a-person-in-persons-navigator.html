@@ -79,7 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-show-contact-of-a-person-in-persons-navigator">How to show contact of a person in Persons navigator?</h1>
 
-<p>The specific of this calculated attribute is that the contact mechanism type is enum type. This is why it is accessed specifically. Its values and codes are as follows:</p>
+<p>The specific of this calculated attribute is that the contact mechanism type is enum. This is why it is accessed specifically.</p>
+<p>Its values and codes are as follows:</p>
 <table>
 <thead>
 <tr>
@@ -126,7 +127,7 @@
 </tr>
 </tbody>
 </table>
-<p>So, let's say we need to get a column with the emails of the persons (if the person has more than one emails - a random one; if a specific email is needed - more filters would be needed). The calculated attribute would have the following expressions:</p>
+<p>So, let's say we need to get a column with the emails of the people (if the person has more than one email - a random one; if a specific email is needed - more filters would be applied). The calculated attribute would have the following expressions:</p>
 <pre><code>10 GETOBJVALUE EXP:20 EXP:15
 15 GETOBJVALUE REF:ContactMechanism ATTRIB:Name
 20 FIRST EXP:21 
@@ -139,7 +140,7 @@
 50 EQUAL ATTRIB:PartyId EXP:60
 60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
 <li>10: from the object from EXP:20 get the attribute from EXP:15</li>
 <li>15: get the value of the attribute name from the referent object ContactMechanism</li>
