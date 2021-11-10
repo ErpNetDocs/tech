@@ -4,8 +4,8 @@
   href: How-to-check-if-a-custom-property-has-value.md
 - name: How to check if a list has values?
   href: How-to-check-if-a-list-has-values.md
-- name: How to check whether a field that points to a reference object has a value?
-  href: How-to-check-whether-a-field-that-points-to-a-reference-object-has-a-value.md
+- name: How to check if a field that points to a reference object has a value?
+  href: How-to-check-if-a-field-that-points-to-a-reference-object-has-a-value.md
 - name: How to create an optimally fast calculated attribute?
   href: How-to-create-an-optimally-fast-calculated-attribute.md
 - name: How to determine the party type of a party?
