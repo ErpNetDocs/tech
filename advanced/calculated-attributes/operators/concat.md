@@ -34,4 +34,4 @@ If you want to expand the example, you can add a space between the both strings:
 10: CONCAT CONST:Red EXP:20 
 20: CONCAT CONST:' ' ATTRIB:Notes
 ```
-OUTPUT: If 'Notes  = Apple', the output will be 'Red Apple'.
+OUTPUT:<br> If 'Notes  = Apple', the output will be 'Red Apple'.
