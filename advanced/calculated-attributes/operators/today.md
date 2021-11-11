@@ -14,4 +14,4 @@ items: Operators
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          |Today's date                                                     |
+| Return value          | Today's date                                                 |
