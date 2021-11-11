@@ -16,7 +16,7 @@ items: Operators
 | Parameter 3 Type |
 | Return value | Number1 + Number2 |
 
-Ensure that the numbers which are summed up are from the **the same** type.
+Make sure that the numbers which are summed up are from the **the same** type.
 
 For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
