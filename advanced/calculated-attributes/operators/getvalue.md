@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the value from the current object.          |
+| Description           | Gets the value of a current object.          |
 | Parameter 1 Name      | Value                                                        |
 | Parameter 1 Type      | attribute value                                   |
 | Parameter 2 Name      | -                                                            |
@@ -17,14 +17,13 @@ items: Operators
 | Return value          | Value                                                         |
 
 
-***Example***
+**Example:**
 
-
-The following example returns the value of the notes of the current sales order line:
+Let's return the value of _Notes_ in a sales order line:
 ```
 10: GETVALUE ATTRIB:Notes             
 ```
-OUTPUT: If 'Notes = Apple', the output will be 'Apple'.
+OUTPUT: <br> If 'Notes = Apple', the output will be 'Apple'.
 
 > [!NOTE]
 > 
