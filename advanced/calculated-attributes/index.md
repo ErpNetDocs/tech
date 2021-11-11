@@ -1,33 +1,35 @@
 # User calculated attributes
 
-User calculated attributes are user-defined objects, which extend the system entities.
-Calculated attributes are defined like formulas.
-When the value of a calculated attribute is requested, it is calculated "on the fly", in real-time.
+User calculated attributes are user-defined objects which extend the system entities.
+They are defined like formulas.
+<br> When the value of a calculated attribute is requested, it is calculated "on the fly", in real-time.
 
 > [!NOTE]
-> Calculated attribute formulas are compiled to native executable format.
-> Their calculation speed is very similar to the speed of the system defined calculated attributes.
+> 
+> Calculated attribute formulas are compiled to native executable format.<br>
+> Their calculation speed is very similar to the speed of the system-defined calculated attributes.
 
-## Example - Get default payment term days
+#### Example - Get default payment term days
 
-Suppose, that in a sales order, we want to display the customers default payment term (in days).
-In the sales order, we can define the following calculated attribute:
+Suppose that in a sales order, you want to display the customers default payment term (in days).
+
+You can define the following calculated attribute:
 
 | No | Operation | Param1 | Param2 | Param3 |
 |----|-----------|--------|--------|--------|
 | 10 | GETREF | REF:Customer | ATTRIB:DefaultPaymentTermDays |
 
-Explanation:
+**Explanation:**
 
-- GETREF - gets information from a related entity. The related entity is specified in Param1. The desired information is specified in Param2.
+- GETREF - gets information from a related entity. The related entity is specified in **Param1**. The desired information is specified in **Param2**.
 - Line number 10 is the only line in the calculated attribute
-- The return value is the value of the attribute DefaultPaymentTermDays in the customer entity.
+- The return value is the value of the attribute **DefaultPaymentTermDays** in the customer entity.
 
-## Example - Complex filter and summation
+#### Example - Complex filter and summation
 
-The following calculated attribute sums all sales order lines, whose product:
+The following calculated attribute sums all sales order lines, the product of which:
 
-- has a user data attribute, called "CustPropPrj", equal to '500'
+- has a user data attribute called 'CustPropPrj', equal to '500'
 - has a name containing the word 'Tool'
 
 
@@ -41,14 +43,14 @@ The following calculated attribute sums all sales order lines, whose product:
 | 60 | EQUALS | ATTRIB:CustPropPrj | CONST:500 |
 | 70 | LIKE | ATTRIB:Name | CONST:'Tool' |
 
-Explanation:
+**Explanation:**
 
-- Line 10: Iterates through the data set, specified on Line 20 (EXP:20), then SUMs the attribute LineAmount.
+- Line 10: Iterates through the data set, specified on Line 20 (EXP:20), then SUMs the attribute **LineAmount**.
 - Line 20: Filters the lines subset with the filter, specified in Line 30 (EXP:30).
 - Line 30: Creates a filter, which will be satisfied only by products, specified in the query on Line 40 (EXP:40).
 - Line 40: Creates a query, which filters the products with the condition, specified on Line 50.
-- Line 50: Specifies that the condition is comprised of two conditions, linked with AND.
-- Line 60: Specifies that the first condition is the value of an attribute, called CustPropPrj should be 500.
+- Line 50: Specifies that the condition is comprised of two conditions, linked with **AND**.
+- Line 60: Specifies that the first condition is the value of an attribute called 'CustPropPrj' should be '500'.
 - Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'.
 
-This example demonstrates, that calculated attributes can calculate very complicated formulas, query the database, get related values, etc.
+This example demonstrates how attributes can calculate very complicated formulas, query the database, get related values, etc.
