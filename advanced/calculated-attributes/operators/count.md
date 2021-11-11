@@ -27,7 +27,7 @@ Let's have a number of lines in a document (sales order) returned:
 
 > [!NOTE]
 > 
-> The repository of the attribute is Crm.Sales.SalesOrders.
+> The repository of the attribute is *Crm.Sales.SalesOrders*.
 
 If you want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:
 
