@@ -80,4 +80,4 @@ If the property type of the particular custom property is 'Picture', use the fol
 
 > [!NOTE] 
 > 
-> **EntityItemId** is the ID of the actual entity (particular document, line, product) for which the value is specified.
+> **EntityItemId** is the ID of the actual entity (document, line, product) for which the value is specified.
