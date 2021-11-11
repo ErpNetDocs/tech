@@ -7,7 +7,7 @@ items: Operators
 
 | Specification| Value|
 | ---- | ----- |
-| Description      | Returns the smallest integer that is greater than or equal to the specified number. |
+| Description      | Returns the smallest integer greater than or equal to a specified number. |
 | Parameter 1 Name | Number1|
 | Parameter 1 Type | double or decimal|
 | Parameter 2 Name | - |
@@ -16,13 +16,9 @@ items: Operators
 | Parameter 3 Type | - |
 | Return value     | The nearest integer which is larger than Number1.|                                                           |
 
+**Example**
 
-
-***Example***
-
-
-
-The following example gets the smallest integer that is greater than or equal to the quantity of a sales order line:
+Let's get the smallest integer greater than or equal to the quantity of a sales order line:
 
 ```
 10:CEILING ATTRIB:QuantityValue                  
