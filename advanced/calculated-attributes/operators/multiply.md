@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Multiplies the specified numbers.           |
+| Description           | Multiplies specified numbers.           |
 | Parameter 1 Name      | Number1                                                        |
 | Parameter 1 Type      | numeric type - int, double or decimal                                    |
 | Parameter 2 Name      | Number2                                                            |
@@ -16,15 +16,11 @@ items: Operators
 | Parameter 3 Type      | -                                                            |
 | Return value          | Number1 * Number2                                                         |
 
-> [!NOTE]
-> 
-> Make sure the numbers of both parameters are from the the same type. 
-> 
-> For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
+Make sure the numbers of both parameters are from the same type.  
 
+For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
 
-***Example***
-
+**Example:**
 
 ```
 10:  MULTIPLY ATTRIB:QuantityValue CONST:2.00                
