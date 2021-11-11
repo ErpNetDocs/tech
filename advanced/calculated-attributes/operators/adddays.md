@@ -21,7 +21,7 @@ items: Operators
 ```
 10: ADDDAYS ATTRIB:DocumentDate CONST:5                 
 ```
-OUTPUT: If 'DocumentDate = 2000-01-20', the output will be '2000-01-25'.
+OUTPUT: <br> If 'DocumentDate = 2000-01-20', the output will be '2000-01-25'.
 
 > [!NOTE]
 > 
