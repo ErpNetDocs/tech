@@ -14,9 +14,9 @@ items: Operators
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          | False - if Condition is True; True - if Condition is False                                                     |
+| Return value          | 'False' - if Condition is true; 'True' - if Condition is false                                                     |
 
-***Example***
+**Example:**
 
 ```      
 10: NOT EXP:20
