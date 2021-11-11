@@ -29,4 +29,4 @@ OUTPUT:
 
 > [!NOTE] 
 > 
-> The repository of the attribute is Crm.Sales.SalesOrders
+> The repository of the attribute is *Crm.Sales.SalesOrders*.
