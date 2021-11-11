@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Searches terms in string, returns first position, or '-1', if not found.          |
+| Description           | Searches terms in string. Returns first position, or '-1', if not found.          |
 | Parameter 1 Name      | term                                                         |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | string                                                            |
