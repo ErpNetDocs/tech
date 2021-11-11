@@ -24,7 +24,7 @@ Let's convert the quantity value of a sales order line, which is a decimal numbe
 ```
 10: CONVERT ATTRIB:QuantityValue CONST:System.Int32                  
 ```
-OUTPUT: If 'QuantityValue = 12.14', the output will be '12'.
+OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.
 
 > [!NOTE]
 > 
