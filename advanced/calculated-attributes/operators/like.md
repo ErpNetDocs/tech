@@ -6,33 +6,33 @@ uid: cao-LIKE
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Searches for a specified pattern in a string. It is usually used in a combination with the wildcars '%' and '\_': <br/> The '%' symbol is used to define 0 or more characters before and after the searched string. <br/> '\_' is used to define specifically 1 character.          |
+| Description           | Searches for a specified pattern in a string. Used in combination with the wildcars '%' and '\_': <br/> The '%' symbol is used to define 0 or more characters before and after the searched string. <br/> '\_' is used to define 1 specific character.          |
 | Parameter 1 Name      | String1                                                       |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | Mask                                                          |
 | Parameter 2 Type      | string                                                          |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          | True in case String1 matches Mask. False in case String1 does not match Mask.                                                         |
+| Return value          | **True** in case String1 matches Mask. **False** in case String1 doesn't match Mask.                                                         |
 
 
-***Examples***
+**Examples:**
 
 
-- 'a%' → Finds any values that start with "a".
+- 'a%' → Finds any values starting with "a".
 
-- '%a' → Finds any values that end with "a".
+- '%a' → Finds any values ending with "a".
 
-- '%a%' → Finds any values that have "a" in any position.
+- '%a%' → Finds any values having "a" in any position.
 
-- '_a%' → Finds any values that have "a" in the second position.
+- 'a%' → Finds any values having "a" in second position.
 
-- 'a_%_%' → Finds any values that start with "a" and are at least 3 characters in length.
+- 'a_%%' → Finds any values starting with "a" and at least 3 characters in length.
 
-- 'a%o' → Finds any values that start with "a" and ends with "o".
+- 'a%o' → Finds any values starting with "a" and ending with "o".
 
 
-The following example returns True if the the string contains 'Apple' and after 'Apple' there is exactly one character:
+The following example returns 'True' if the string contains 'Apple'. After 'Apple', there is exactly one character:
 
 ```
 10 LIKE ATTRIB:Notes CONST:%Apple_
@@ -48,5 +48,5 @@ OUTPUT:
 
 > [!NOTE] 
 > 
-> The repository of the attribute is Crm.Sales.SalesOrders
+> The repository of the attribute is *Crm.Sales.SalesOrders*.
 
