@@ -74,6 +74,6 @@ If you use table data, in order to access all attributes of a company or a perso
 
 Internally, the systems use **objects** because it's much easier to process them. Objects already have all necessary attributes related together and there's no need to use identifiers or table relations.
 
-#### Conclusion
+#### Conclusion:
 
 This is only an introduction to the topic of object-relational mapping. A deeper look would exceed the developer details of the subject.
