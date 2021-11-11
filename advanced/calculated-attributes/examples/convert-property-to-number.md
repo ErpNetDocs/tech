@@ -45,4 +45,4 @@ Let's say you want to multiply the standard price per lot of a product by a coef
 
 > [!NOTE]
 > 
-> When you want to convert a **CustomPropertyValue** to a numeric value like decimal, you need to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it to a string first!
+> When you want to convert a **CustomPropertyValue** to a numeric value like decimal, you need to **CAST** it to a string first!
