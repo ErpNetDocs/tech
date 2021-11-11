@@ -29,7 +29,7 @@ Conveting to integer allows for comparison between the states (lower -> higher):
 ```
 10: CONVERT ATTRIB:State CONST:System.Int32      
 ```
-OUTPUT: If 'State = Released', the output will be '30'.
+OUTPUT: <br> If 'State = Released', the output will be '30'.
 
 > [!NOTE] 
 > 
