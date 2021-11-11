@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the number of elements contained in the list.           |
+| Description           | Gets the number of elements contained within a list.           |
 | Parameter 1 Name      | list                                                         |
 | Parameter 1 Type      | list - repository, child.                                    |
 | Parameter 2 Name      | -                                                            |
@@ -17,9 +17,9 @@ items: Operators
 | Return value          | int                                                          |
 | Introduced in version | 2020.1                                                       |
 
-## Example
+**Example:**
 
-The following example returns the number of lines in the current document (sales order):
+Let's have a number of lines in a document (sales order) returned:
 
 ```
 10: COUNT CHILD:Lines
@@ -27,9 +27,9 @@ The following example returns the number of lines in the current document (sales
 
 > [!NOTE]
 > 
-> The repository of the attribute is *Crm.Sales.SalesOrders*
+> The repository of the attribute is Crm.Sales.SalesOrders.
 
-If we want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:
+If you want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:
 
 ```
 10: COUNT EXP:20
