@@ -18,4 +18,4 @@ items: Operators
 
 > [!NOTE]
 > 
-> This operator is used with [WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html).
+> This operator is used with **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)**.
