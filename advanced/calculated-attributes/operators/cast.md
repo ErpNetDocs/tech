@@ -19,7 +19,7 @@ items: Operators
 
 > [!NOTE]
 > 
-> The CAST operator is used by other operators to convert their parameters to the same type. <br> The type is usually entered as a constant (CONST).
+> CAST is used by other operators to convert their parameters to the same type. <br> The type is usually entered as a constant (CONST).
 
 **Example:**
 
