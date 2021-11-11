@@ -7,7 +7,7 @@ items: Operators
 | Specification | Value |
 | ---- | ----- |
 | Name | ADD |
-| Description | The operator returns the sum (total) of two numbers. |
+| Description | Returns the sum (total) of two numbers. |
 | Parameter 1 Name | Number1 |
 | Parameter 1 Type | numeric type - int, double or decimal |
 | Parameter 2 Name | Number2 |
