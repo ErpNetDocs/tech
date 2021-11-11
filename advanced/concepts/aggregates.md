@@ -57,12 +57,10 @@ Changing just a single sales order line without changing the order itself would 
 
 > [!NOTE] 
 > 
-> Commit and client-commit have the same meaning. <br> Commit is the low-level event, which is triggered for everything committed to the database.<br> Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>
+> Commit and client-commit have the same meaning. Commit is the low-level event, which is triggered for everything committed to the database. Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>
 > Currently, only the agregate client commit event is available for **[user-defined business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)**. <br> The aggregate commit will be used only internally, for **[system-defined business rules](xref:system-business-rules)**
 
 The end goal is to have a more light approach. 
-
-If there's great demand, the aggregate commit event could be added for user business rules.
 
 #### See also: 
 
