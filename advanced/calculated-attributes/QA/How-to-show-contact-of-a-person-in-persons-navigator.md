@@ -4,7 +4,7 @@ items: CalculatedAttributesQA
 
 # How to show contact of a person in Persons navigator?
 
-The specific of this calculated attribute is that the contact mechanism type is enum. This is why it is accessed specifically. 
+The specifics of this calculated attribute is that the contact mechanism type is **enum**. 
 
 Its values and codes are as follows:
 
@@ -18,7 +18,11 @@ Its values and codes are as follows:
 | Telephone   | 5     | Telephone value. Stored as 'T'.   |
 | WebSite     | 6     | WebSite value. Stored as 'W'.     |
 
-So, let's say we need to get a column with the emails of the people (if the person has more than one email - a random one; if a specific email is needed - more filters would be applied). The calculated attribute would have the following expressions:
+Let's say we need to get a column with email addresses. 
+
+If a person has more than one email, we should write a random one. If a specific email is needed, more filters could be applied. 
+
+The calculated attribute would have the following expressions:
 
 ```
 10 GETOBJVALUE EXP:20 EXP:15
