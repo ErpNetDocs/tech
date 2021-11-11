@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Checks if any of the conditions are True. If so - the operator returns True. If all specified conditions are not True, the operator returns False.           |
+| Description           | Checks if any conditions are true. If so - the operator returns 'True'. <br> If all specified conditions aren't true, the operator returns 'False'.           |
 | Parameter 1 Name      | Condition1                                                         |
 | Parameter 1 Type      | boolean                                  |
 | Parameter 2 Name      | Condition2                                                            |
@@ -17,7 +17,7 @@ items: Operators
 | Return value          | Condition1 OR Condition2                                                     |
 
 
-***Example***
+**Example:**
 
 ```      
 10: OR EXP:20 EXP:30
