@@ -8,7 +8,7 @@ Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of
 
 For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate.
 
-https://martinfowler.com/bliki/DDD_Aggregate.html
+Learn more **[here](https://martinfowler.com/bliki/DDD_Aggregate.html)**.
 
 #### In @@name, these are single aggregates:
 
