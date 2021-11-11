@@ -4,9 +4,9 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example shows how you can create a calculated attribute which gets the [avaible to promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html) quantity on a particular date using the **AvailableToPromise** view.
+This example shows how you can create a calculated attribute which gets the **[avaible to promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** quantity on a particular date using the **AvailableToPromise** view.
 
-In the example, we are showing how get the ATP quantity in a shipment order line on its required delivery date.
+In the example, you'll learn how to get the ATP quantity in a shipment order line on its required delivery date.
 
 > [!NOTE]
 > 
@@ -36,24 +36,24 @@ In the example, we are showing how get the ATP quantity in a shipment order line
 
 ```
 
-Explanation:
+**Explanation:**
  
-- 10: Get the "ATPBaseValue" of the AvailableToPromise record returned by EXP:20
+- 10: Get the **ATPBaseValue** of the **AvailableToPromise** record returned by EXP:20
 - 20: Get the first record of the list returned by EXP:30
-- 30: Sort the list returned by EXP:40 - descending by the value of the "FromDate" attribute
-- 40: Select the AvailableToPromise records which are matching the clauses of EXP:50
+- 30: Sort the list returned by EXP:40 - descending by the value of the **FromDate** attribute
+- 40: Select the **AvailableToPromise** records which are matching the clauses of EXP:50
 - 50: Filter the the records for which EXP:80 and EXP:60 are True
 - 60: Filter the the records for which EXP:110 and EXP:70 are True
 - 70: Filter the the records for which EXP:140 and EXP:170 are True 
-- 80: Return True if the ProductId of the AvailableToPromise record is equal to EXP:90
+- 80: Return 'True' if the **ProductId** of the **AvailableToPromise** record is equal to EXP:90
 - 90: Get EXP:100 from the repository of EXP:10 i.e. of the current shipment order line
-- 100: Get the ProductId of the ParentSalesOrderLine 
-- 110: Return True if the StoreId of the AvailableToPromise record is equal to EXP:120
+- 100: Get the **ProductId** of the **ParentSalesOrderLine** 
+- 110: Return 'True' if the **StoreId** of the **AvailableToPromise** record is equal to EXP:120
 - 120: Get EXP:130 from the repository of EXP:10 i.e. of the current shipment order line
-- 130: Get the LineStoreId of ParentSalesOrderLine 
-- 140: Return True if the EnterpriseCompanyId of the AvailableToPromise record is equal to EXP:150
+- 130: Get the **LineStoreId** of **ParentSalesOrderLine** 
+- 140: Return 'True' if the **EnterpriseCompanyId** of the **AvailableToPromise** record is equal to EXP:150
 - 150: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line
-- 160: Get the EnterpriseCompanyId of the ShipmentOrder 
-- 170: Return True if the FromDate of the AvailableToPromise record lower or equal to EXP:180
+- 160: Get the **EnterpriseCompanyId** of the **ShipmentOrder** 
+- 170: Return 'True' if the **FromDate** of the **AvailableToPromise** record lower or equal to EXP:180
 - 180: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line
-- 160: Get the RequiredDeliveryDate of the ShipmentOrder 
+- 160: Get the **RequiredDeliveryDate** of the **ShipmentOrder** 
