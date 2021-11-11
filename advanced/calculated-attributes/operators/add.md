@@ -16,12 +16,13 @@ items: Operators
 | Parameter 3 Type |
 | Return value | Number1 + Number2 |
 
-> [!NOTE]
-> 
-> Ensure that the numbers which are summed up are from the the same type. <br>
-> For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
-***Example***
-The following example adds '0.25' to the the value of the *Quantity* field in sales order lines and returns the sum of the two numbers.
+Ensure that the numbers which are summed up are from the **the same** type.
+
+For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
+
+**Example:**
+
+The following example adds '0.25' to the the value of the *Quantity* field in the sales order lines and returns the sum of the two numbers.
 ```
 10: ADD ATTRIB:QuantityValue CONST:0.25                 
 ```
