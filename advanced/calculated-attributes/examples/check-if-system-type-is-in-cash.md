@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Check if the system type of a payment type in a sales order is 'In cash'
 
-This attribute checks if the system type of a payment type set in the sales order is 'In Cash'. 
+This attribute checks if the system type of a payment type set in a sales order is 'In Cash'. 
 
 You can use the attribute to create a business rule that allows a **credit limit override** when the client pays in cash.
 
