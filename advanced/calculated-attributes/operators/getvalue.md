@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the value of a current object.          |
+| Description           | Gets the value of an object.          |
 | Parameter 1 Name      | Value                                                        |
 | Parameter 1 Type      | attribute value                                   |
 | Parameter 2 Name      | -                                                            |
