@@ -7,7 +7,7 @@ items: Operators
 
 | Specification| Value|
 | ---- | ----- |
-| Description| Gets the specified value from the specified object. This operator is used when the user wants the retrieve a value from object different than the current one. The current object is listed in the 'Repository Name' field in the current row.|
+| Description| Gets a specified value from a specified object. Used when you want to retrieve a value from an object different from the current one. <br> The current object is listed in the _Repository Name_ field of the current row.|
 | Parameter 1 Name| obj |
 | Parameter 1 Type| object |
 | Parameter 2 Name| value |
@@ -17,13 +17,13 @@ items: Operators
 | Return value| Returns value from obj. |
 
 
-***Example***
+**Example:**
 
-The following example returns the value of the field 'Default Delivery Term Days' set in the definition of the customer set the current sales order:
+Let's return the value of _Default Delivery Term Days_ set in the definition of a customer in a sales order:
 ```
 10: GETOBJVALUE REF:Customer ATTRIB:DefaultDeliveryTermDays
 ```
-OUTPUT: If 'DefaultDeliveryTermDays = 5', the output will be '5'.
+OUTPUT: <br> If 'DefaultDeliveryTermDays = 5', the output will be '5'.
 
 > [!NOTE]
 > 
