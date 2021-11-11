@@ -7,24 +7,23 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Returns the length of the string.           |
+| Description           | Returns the length of a string.           |
 | Parameter 1 Name      | String                                                         |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | -                                                            |
 | Parameter 2 Type      | -                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          | Returns the length of a string.                                                  |
+| Return value          | The string's length.                                                  |
 
 > [!NOTE] 
 > 
-> The spaces are included when calculating the length.
+> Spaces are included when calculating the length.
 
 
-***Example***
+**Example:**
 
-
-The following example returns the length of the notes set in the sales order:
+Let's return the length of the notes set in a sales order:
 ```
 10: LEN ATTRIB:Notes
 ```
@@ -34,4 +33,4 @@ OUTPUT:
 
 > [!NOTE] 
 > 
-> The repository of the attribute is Crm.Sales.SalesOrders
+> The repository of the attribute is *Crm.Sales.SalesOrders*.
