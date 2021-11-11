@@ -18,7 +18,7 @@ SUM(List, 1)
 
 This expression returns integer value containing the number of records in the entered list.
 
-Here is a sample expression and its description. This example is defined in the sales order header and checks if the lines contain one specific product. 
+Here is a sample expression and its description. <br> This example is defined in the sales order header and checks if the lines contain one specific product. 
 
 The repository of the calculated attribute is **Crm.Sales.SalesOrders** and its expressions are:
 
