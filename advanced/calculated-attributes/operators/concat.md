@@ -16,20 +16,20 @@ items: Operators
 | Parameter 3 Type | -                         |
 | Return value     | String1 + String2         |
 
-***Example***
+**Example:**
 
-The following example concatenates the word 'Red' with the value of the field Notes in a sales order lines:
+Let's concatenate the word 'Red' with the value of the field _Notes_ in a sales order lines:
 
 ```
 10: CONCAT CONST:Red ATTRIB:Notes                  
 ```
-OUTPUT: If 'Notes  = Apple', the output will be 'RedApple'.
+OUTPUT: <br> If 'Notes  = Apple', the output will be 'RedApple'.
 
 > [!NOTE]
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-If we want to expand the example we can add a space between the both strings:
+If you want to expand the example, you can add a space between the both strings:
 ```
 10: CONCAT CONST:Red EXP:20 
 20: CONCAT CONST:' ' ATTRIB:Notes
