@@ -14,20 +14,16 @@ items: Operators
 | Parameter 2 Type      | numeric (int, double, decimal) or datetime type                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          | If attribute1 <= attribute2 the returned value is True, if else - the operator returns False.                                                          |
+| Return value          | If attribute1 <= attribute2, the returned value is 'True', if else - the operator returns 'False'.                                                          |
+ 
+Make sure the compared attributes have the same type. 
 
-> [!NOTE]
-> 
-> Make sure the attributes which are compared have the same type. 
-> 
-> For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
+For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime.
 
-
-
-See the example in [Compare unit price and the standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html).
+Learn more in **[Compare unit price and the standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**.
 
 
-***Example***
+**Example:**
 
 ```      
 10: LTE ATTRIB:LineNo CONST:30   
