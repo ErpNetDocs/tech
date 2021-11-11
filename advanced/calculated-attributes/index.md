@@ -9,7 +9,7 @@ They are defined like formulas.
 > Calculated attribute formulas are compiled to native executable format.<br>
 > Their calculation speed is very similar to the speed of the system-defined calculated attributes.
 
-#### Example - Get default payment term days
+#### Example 1 - Get default payment term days
 
 Suppose that in a sales order, you want to display the customers default payment term (in days).
 
@@ -25,7 +25,7 @@ You can define the following calculated attribute:
 - Line number 10 is the only line in the calculated attribute
 - The return value is the value of the attribute **DefaultPaymentTermDays** in the customer entity.
 
-#### Example - Complex filter and summation
+#### Example 2 - Complex filter and summation
 
 The following calculated attribute sums all sales order lines, the product of which:
 
