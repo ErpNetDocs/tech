@@ -21,7 +21,6 @@ items: Operators
 
 Take the last line of a sales order (ordered by **LineNo**), which has quantity >= 0:
 
-SalesOrder=>
 ```
 10: FIRST EXP:20
 20: SORT EXP:30 ATTR:LineNo CONST:DESC
