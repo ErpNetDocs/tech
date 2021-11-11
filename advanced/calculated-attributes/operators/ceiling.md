@@ -16,7 +16,7 @@ items: Operators
 | Parameter 3 Type | - |
 | Return value     | The nearest integer which is larger than Number1.|                                                           |
 
-**Example**
+**Example:**
 
 Let's get the smallest integer greater than or equal to the quantity of a sales order line:
 
