@@ -8,7 +8,7 @@ items: Operators
 | Specification | Value |
 | ---- | ----- |
 | Name | FLOOR |
-| Description | Returns the largest integer less than or equal to the specified number. |
+| Description | Returns the largest integer less than or equal to a specified number. |
 | Parameter 1 Name | Number1 |
 | Parameter 1 Type | double or decimal |
 | Parameter 2 Name |
@@ -18,11 +18,9 @@ items: Operators
 | Return value | Returns the largest integer less than or equal to Number1. |
 
 
-***Example***
+**Example:**
 
-
-
-The following example gets the largest integer that is less than or equal to the quantity of a sales order line:
+Let's get the largest integer that is less than or equal to the quantity of a sales order line:
 
 ```
 10: FLOOR ATTRIB:QuantityValue                  
