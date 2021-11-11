@@ -8,21 +8,22 @@ items: Operators
 | Specification | Value |
 | ---- | ----- |
 | Name | FIRST |
-| Description | Returns the first element in the list. |
+| Description | Returns the first element in a list. |
 | Parameter 1 Name | list |
 | Parameter 1 Type | list of objects |
 | Parameter 2 Name |
 | Parameter 2 Type |
 | Parameter 3 Name |
 | Parameter 3 Type |
-| Return value | Returns the first element of a list. |
+| Return value | The first element in the list. |
 
 > [!NOTE]
 > 
-> **FIRST** returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the @cao-SORT and @cao-ORDERBY operators.
-***Example***
+> The criteria concerning which element is first may not meet your expectations. <br> If sorting matters to you, please use **FIRST** together with the @cao-SORT and @cao-ORDERBY operators.
 
-The following example returns the first met line of the current document (sales order):
+**Example:**
+
+Let's return the first met line of a document (sales order):
 
 ```
 10: FIRST CHILD:Lines
@@ -32,7 +33,7 @@ The following example returns the first met line of the current document (sales 
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrders*
 
-If we want to expand the example, we can sort the line ascending by line number. 
+If you want to expand the example, you can sort the line in an ascending order by line number. 
 
 This way, the atrribute will return the line with lowest line number:
 
