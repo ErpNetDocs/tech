@@ -28,4 +28,4 @@ For more information, see **Allow a credit limit override when the client pays i
 > 
 > When using **[EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)**, make sure you're comparing parameters from the same type. 
 > If you don’t know which type the object is or what value it's going to return, you can use the **Aloe.EnterpriseOne.Model Documentation**. <br>
-> In the particular example, you can check the **[PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html)**, where you'll find that the value corresponding to the system type in 'Cash' is '0'.
+> In the particular example, check the **[PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html)**, where you'll find that the value corresponding to the system type in 'Cash' is '0'.
