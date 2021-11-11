@@ -7,24 +7,24 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Returns a list with string values of the specified attribute of the list of objects. The values in the list are separated. If there is no indicated separator, then the list is separated with ", " (comma + space) by default.           |
+| Description           | Returns a list with string values of a specified attribute from a list of objects. <br> The values in the list are separated. <br> If there's no indicated separator, the list is separated with ", " (comma + space) by default.           |
 | Parameter 1 Name      | list                                                         |
 | Parameter 1 Type      | list of objects                                    |
 | Parameter 2 Name      | attribute                                                           |
 | Parameter 2 Type      | attribute of the object <br/>// An attribute of a referent object could be used as well. See the example below.                                                         |
 | Parameter 3 Name      | separator (optional) <br/>// If Parameter3 is not specified, then the default separator is ", " (comma + space)                                                           |
 | Parameter 3 Type      | string                                                           |
-| Return Value          | (attributeValue1, attributeValue2, ...)                                                         |
-| Introduced In Version | 2019.1                                                       |
+| Return value          | (attributeValue1, attributeValue2, ...)                                                         |
+| Introduced in version | 2019.1                                                       |
 
 
-***Example***
+**Example:**
  
 ```
 10: LIST CHILD:Lines EXP:20 CONST:'; '
 20: GETOBJVALUE REF:Product ATTRIB:Name
 ```
-OUTPUT: 'ProductsName1; ProductName2 ...'
+OUTPUT: <br> 'ProductsName1; ProductName2 ...'
 
 > [!NOTE] 
 > 
