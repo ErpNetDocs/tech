@@ -7,16 +7,16 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Depending on a specified condition, returns the second or the third argument.           |
+| Description           | Depending on a specified condition, it returns the second or the third argument.           |
 | Parameter 1 Name      | Condition                                                        |
 | Parameter 1 Type      | Boolean                                   |
 | Parameter 2 Name      | TrueValue                                                   |
 | Parameter 2 Type      | any type                                                         |
 | Parameter 3 Name      | FalseValue                                                           |
 | Parameter 3 Type      | any type                                                               |
-| Return value          | When Condition is True, returns TrueValue. When Condition is False, returns FalseValue  |
+| Return value          | When Condition is 'True', it returns the TrueValue. When Condition is 'False', it returns the FalseValue  |
 
-***Example***
+**Example:**
 
 ```      
 10: IIF EXP:20 CONST:'Quantity is 1.00' CONST: 'Quantity is not 1.00'  
