@@ -79,17 +79,19 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="check-if-a-value-of-a-field-is-changed-in-the-adjustment-document">Check if a value of a field is changed in the adjustment document</h1>
 
-<p>With the current attribute, we can check if the value of a field in the adjustment document is equal to the value of the same filed in the original (adjusted) document. When we have such information, we can determine if the value of this filed is being or has been changed in the adjustment document. Using this attribute, we can for example, create a business rule which would allow us to prohibit the correction of the value of this field.</p>
+<p>This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document.</p>
+<p>This information helps you determine if the value of the field is being or has been changed in the adjustment document.</p>
+<p>Using this attribute, you can create a business rule which would allow you to <strong>prohibit</strong> the correction of the value of the field.</p>
 <pre><code>10: IIF EXP:20 CONST:False EXP:30
 20: EQUAL REF:AdjustedDocument CONST:NULL                                  
 30: IIF EXP:40 CONST:False CONST:True      
 40: EQUAL ATTRIB:@Property1 EXP:50                              
 50: GETOBJVALUE REF:AdjustedDocument ATTRIB:@Property1                     
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Check if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays 'True', else - 'False'.</li>
-<li>20: Check if there is AdjustedDocument. If there is no reference to an adjusted document, then the document is not an adjustment document.</li>
+<li>10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True', else - 'False'.</li>
+<li>20: Check if there is <strong>AdjustedDocument</strong>. If there's no such reference, then the document is <strong>not</strong> an adjustment document.</li>
 <li>30: Check if EXP:40 is true or false.</li>
 <li>40: Check if the value of the custom property 'Property1' is equal to EXP:50.</li>
 <li>50: Get the value of the 'Property1' of the adjusted document.</li>

@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>Returns the first element in the list.</td>
+<td>Returns the first element in a list.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -121,23 +121,23 @@
 </tr>
 <tr>
 <td>Return value</td>
-<td>Returns the first element of a list.</td>
+<td>The first element in the list.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p><strong>FIRST</strong> returns the first met element of the list, but the criteria about which element is actually first may not match your expectations. If the sorting of the elements matters, please use in combinations with the <a class="xref" href="sort.html">SORT</a> and <a class="xref" href="orderby.html">ORDERBY</a> operators.
-<em><strong>Example</strong></em></p>
+<p>The criteria concerning which element is first may not meet your expectations. <br> If sorting matters to you, please use <strong>FIRST</strong> together with the <a class="xref" href="sort.html">SORT</a> and <a class="xref" href="orderby.html">ORDERBY</a> operators.</p>
 </div>
-<p>The following example returns the first met line of the current document (sales order):</p>
+<p><strong>Example:</strong></p>
+<p>Let's return the first met line of a document (sales order):</p>
 <pre><code>10: FIRST CHILD:Lines
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
 </div>
-<p>If we want to expand the example, we can sort the line ascending by line number.</p>
+<p>If you want to expand the example, you can sort the line in an ascending order by line number.</p>
 <p>This way, the atrribute will return the line with lowest line number:</p>
 <pre><code>10: FIRST EXP:20
 20: SORT CHILD:Lines ATTR:LineNo CONST:ASC

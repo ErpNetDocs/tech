@@ -79,36 +79,37 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="convert-a-value-of-a-custom-property-to-a-number">Convert a value of a custom property to a number</h1>
 
-<p>The values of the custom properties are a specific type of value and the <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html">CONVERT</a> operator does not know how to handle it properly. For this reason, if we want to covert a custom property's value to a number, we have to <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a> it first.</p>
-<p><em><strong>Example - Multiply standard price per lot by a coefficient stored in a property</strong></em></p>
-<p>Lets say, for example, we want to multiply the standard price per lot of the product by a coefficient stored as a product's custom property @CustomProperty1.</p>
+<p>The values of custom properties are a specific type of value that the <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html">CONVERT</a></strong> operator doesn't know how to handle properly.</p>
+<p>For this reason, if you want to covert a custom property's value to a number, you have to <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a></strong> it first.</p>
+<p><strong>Example:</strong></p>
+<p>Let's say you want to multiply the standard price per lot of a product by a coefficient stored as a product's custom property @CustomProperty1.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attributes is <em>General.Products.Products</em></p>
 </div>
-<p><strong>RIGHT calculated attribute:</strong></p>
+<h3 id="correct-calculated-attribute">CORRECT calculated attribute:</h3>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT EXP:30 CONST:System.Decimal
 30: CAST ATTRIB:@CustomProperty1 CONST:System.String
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</li>
+<li>10: Multiply the value of the <em>Standard Price Per Lot</em> by EXP: 20.</li>
 <li>20: Convert EXP:30 to a decimal number.</li>
-<li>25: Cast the value of custom property 'CustomProperty1' to a string.</li>
+<li>25: Cast the value of custom property <strong>CustomProperty1</strong> to a string.</li>
 </ul>
-<p><strong>WRONG calculated attribute:</strong></p>
+<h3 id="false-calculated-attribute">FALSE calculated attribute:</h3>
 <pre><code>10: MULTIPLY ATTRIB:StandardPricePerLotValue EXP:20
 20: CONVERT ATTRIB:@CustomProperty1 CONST:System.Decimal
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Multiply the value of the 'Standard Price Per Lot' by EXP: 20.</li>
-<li>20: Convert the value of custom property 'CustomProperty1' to a decimal number.</li>
+<li>10: Multiply the value of the <em>Standard Price Per Lot</em> by EXP: 20.</li>
+<li>20: Convert the value of custom property <strong>CustomProperty1</strong> to a decimal number.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When we want to convert CustomPropertyValue to numeric value (for example, decimal), we need to <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a> it to a string first!</p>
+<p>When you want to convert a <strong>CustomPropertyValue</strong> to a numeric value like decimal, you need to <strong>CAST</strong> it to a string first!</p>
 </div>
 </article>
           </div>

@@ -79,23 +79,24 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="compare-unit-price-and-standard-unit-price">Compare unit price and standard unit price</h1>
 
-<p>The following calculated attribute calculates if the unit price in the sales order lines is greater than the standard unit price of the product and returns a message:</p>
+<p>This attribute calculates if the unit price in the sales order lines is greater than the standard unit price of the product.</p>
+<p>It returns the following message:</p>
 <pre><code>10: IIF EXP:20 CONST:'OK!' CONST:'Not OK!'
 20: GT ATTRIB:UnitPriceValue ATTRIB:StandardUnitPriceValue
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'OK!' message, else - 'Not OK!'.</li>
-<li>20: Checks if ATTRIB:UnitPriceValue is greater than ATTRIB: StandardUnitPriceValue. If so - returns True, else - False.</li>
+<li>10: Checks if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'OK!' message, else - 'Not OK!'.</li>
+<li>20: Checks if ATTRIB:UnitPriceValue is greater than ATTRIB: StandardUnitPriceValue. If so - returns 'True', else - 'False'.</li>
 </ul>
-<p>The same validation may be achieved by using other operator:</p>
+<p>The same validation may be achieved using another operator:</p>
 <pre><code>10: IIF EXP:20 CONST:'Not OK!' CONST:'OK!'
 20: LTE ATTRIB:UnitPriceValue ATTRIB:StandardUnitPriceValue
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Checks if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'Not OK!' message, else - 'OK!'.</li>
-<li>20: Checks if ATTRIB:UnitPriceValue is less than or equal to ATTRIB:StandardUnitPriceValue. If so - returns True, else - False.</li>
+<li>10: Checks if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'Not OK!' message, else - 'OK!'.</li>
+<li>20: Checks if ATTRIB:UnitPriceValue is less than or equal to ATTRIB:StandardUnitPriceValue. If so - returns 'True', else - 'False'.</li>
 </ul>
 </article>
           </div>

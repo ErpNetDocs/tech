@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Determines whether a specified value matches any value in a list. The operator is used in combination with <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a> and <a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a> as condition. It can be used to search through values of string and guid types. It cannot be used to search through numeric values or dates.</td>
+<td>Determines if a specified value matches any value from a list. <br>  Used in combination with <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a></strong> as condition. <br> It can be used to search through values of string and guid types. <br> It cannot be used to search through numeric values or dates.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -117,23 +117,23 @@
 </tr>
 <tr>
 <td>Return value</td>
-<td>True or False depending on if param equals a member of the list of values.</td>
+<td>True or False depending on whether a parameter equals a member from a list of values.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Single quotes are only necessary when the values which we compare to are strings.</p>
+<p>Single quotes are only necessary when the compared values are strings.</p>
 </div>
-<p><em><strong>Example</strong></em></p>
-<p>The following example checks whether there are sales orders with notes 'Apple' and 'Pear' into the datatabase:</p>
+<p><strong>Example:</strong></p>
+<p>Let's check whether there are sales orders with notes 'Apple' and 'Pear' in the datatabase:</p>
 <pre><code>10: SELECT REPO:Crm.Sales.SalesOrders EXP:20
 20: WHERE EXP:30
 30: IN ATTRIB:Notes CONST:'Apple', 'Pear'
 </code></pre>
 <p>OUTPUT:
-<br>If there is atleast one sales order with 'Notes = Apple', the output will be 'True'.
-<br>If there is atleast one sales order with 'Notes = Pear', the output will be 'True'.
+<br>If there is at least one sales order with 'Notes = Apple', the output will be 'True'.
+<br>If there is at least one sales order with 'Notes = Pear', the output will be 'True'.
 <br>If there are NO sales orders with 'Notes = Apple OR Pear', the output will be 'False'.</p>
 </article>
           </div>

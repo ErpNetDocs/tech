@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>Filters the specified list by the condition.</td>
+<td>Filters a specified list by a condition.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -121,12 +121,12 @@
 </tr>
 <tr>
 <td>Return value</td>
-<td>Returns sub-list, which meets the condition.</td>
+<td>Returns sub-list which meets the condition.</td>
 </tr>
 </tbody>
 </table>
-<p><em><strong>Example</strong></em></p>
-<p>The following example returns a list with all of lines in the current document (sales order) whose quantity is '1.00':</p>
+<p><strong>Example:</strong></p>
+<p>Let's return a list with all lines in a document (sales order) whose quantity is '1.00':</p>
 <pre><code>10: FILTER CHILD:Lines EXP:30
 30: EQUAL ATTRIB:QuantityValue CONST:1.00
 </code></pre>

@@ -79,7 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-current-availability-of-a-product">Get current availability of a product</h1>
 
-<p>This example shows how to create a calculated attribute which returns the sum of the currently available quantity base of a particular product. In the example below, are applied filters by product, store, store bin, lot and serial number, because of the specification of the repository of the calculation attribute. Other filters like product variant and enterprise company could also be added if needed. The example is created for consumption order lines, but such attribute could be created for other documents or definitions as well.</p>
+<p>This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product.</p>
+<p>In the example below, filters are applied by product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters, like product variant and enterprise company, could also be added.</p>
+<p>The example is created for consumption order lines, but such attribute could be used wuth other documents or definitions as well.</p>
 <pre><code>Repository Name: Production.ShopFloor.ConsumptionOrderLines
 </code></pre>
 <pre><code>10: SUM EXP:20 ATTRIB:QuantityBaseValue 
@@ -101,26 +103,26 @@
 170: EQUAL ATTRIB:SerialNumberId EXP:180 
 180: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId 
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Sum Quantity Base from the filtered list returned by EXP:20</li>
+<li>10: Sum <em>Quantity Base</em> from the filtered list returned by EXP:20</li>
 <li>20: Filter the list from EXP:30 by the clauses of EXP:70</li>
-<li>30: Select repository &quot;Logistics.Inventory.CurrentBalances&quot; and filter by the clauses in EXP:40</li>
-<li>40: Filter the list above by the records WHERE/in which the clauses in EXP:50 are True</li>
-<li>50: Check whether ATTRIB:ProductId is equal to EXP:60</li>
-<li>60: Get ATTRIB:ProductId from the repository of EXP:10</li>
+<li>30: Select repository <strong>Logistics.Inventory.CurrentBalances</strong> and filter by the clauses in EXP:40</li>
+<li>40: Filter the list above by the records WHERE, in which the clauses in EXP:50 are True</li>
+<li>50: Check whether <strong>ATTRIB:ProductId</strong> is equal to EXP:60</li>
+<li>60: Get <strong>ATTRIB:ProductId</strong> from the repository of EXP:10</li>
 <li>70: EXP:100 and EXP:80</li>
 <li>80: EXP:130 and EXP:90</li>
 <li>90: EXP:150 and EXP:170</li>
-<li>100: Check whether ATTRIB:StoreId is EQUAL to EXP:110</li>
-<li>110: CAST EXP:120  to System.Guid</li>
-<li>120: Get ATTRIB:StoreId from the repository of EXP:10</li>
-<li>130: Check whether ATTRIB:StoreBinId is EQUAL to EXP:140</li>
-<li>140: Get ATTRIB:StoreBinId from the repository of EXP:10</li>
-<li>150: Check whether ATTRIB:LotId is EQUAL to EXP:160</li>
-<li>160: Get ATTRIB:LotId from the repository of EXP:10</li>
-<li>170: Check whether ATTRIB:SerialNumberId is EQUAL to EXP:180</li>
-<li>180: Get ATTRIB:SerialNumberId from the repository of EXP:10</li>
+<li>100: Check whether <strong>ATTRIB:StoreId</strong> is EQUAL to EXP:110</li>
+<li>110: CAST EXP:120 тo <strong>System.Guid</strong></li>
+<li>120: Get <strong>ATTRIB:StoreId</strong> from the repository of EXP:10</li>
+<li>130: Check whether <strong>ATTRIB:StoreBinId</strong> is EQUAL to EXP:140</li>
+<li>140: Get <strong>ATTRIB:StoreBinId</strong> from the repository of EXP:10</li>
+<li>150: Check whether <strong>ATTRIB:LotId</strong> is EQUAL to EXP:160</li>
+<li>160: Get <strong>ATTRIB:LotId</strong> from the repository of EXP:10</li>
+<li>170: Check whether <strong>ATTRIB:SerialNumberId</strong> is EQUAL to EXP:180</li>
+<li>180: Get <strong>ATTRIB:SerialNumberId</strong> from the repository of EXP:10</li>
 </ul>
 </article>
           </div>

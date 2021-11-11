@@ -79,51 +79,55 @@
             <article class="content wrap" id="_content" data-uid="master-detail">
 <h1 id="master--detail-attributes">Master / Detail attributes</h1>
 
-<p>When a document has the same field in its header and lines then these two fields interact in a specific manner. An example of such fields is the <em>Store</em> field in the sales order header and line store in its sales order lines.</p>
-<p>The common principle is that if the field in the document header has value, we have to ensure that the corresponding field all document lines contains the same value. On the other hand, if the different lines contain different values - the document's header field must be empty.</p>
-<p>This principle is very important to avoid misleading the users. Otherwise, if the <em>Store</em> field in the document header could contain a value even if the document lines have different store values - the user may look only in the header and be misled that this store applies to all of its lines as well, which may not be true in all cases.</p>
-<h2 id="master--detail-attributes-concepts-and-rules">Master / Detail attributes concepts and rules</h2>
-<p>In order to make sure that the main principle described above is followed, is created a set of requirements and rules that are applied for each set of Master/Detail fields.</p>
-<p><em>The example for Store fields in document header/lines is used in the whole description for easy understanding.</em></p>
-<h3 id="concepts">Concepts</h3>
-<ol>
-<li><p>In order to allow that different lines may contain different stores and at the same time to follow the main principle - we have to make sure that the <em>Store</em> field in the document header may contain empty (NULL) values. Such value is set only when the document lines have different values. Opposite of this, the value in the field in the document lines is required/mandatory [Required = true] and must always contain a value.</p>
-</li>
-<li><p>It is accepted that the main/leading field is the field in the lines - it is required/mandatory, i.e. there is a guarantee that it always contains a value. For example, if we are generating a store orders from sales orders - the store field that is taken into account is the one in the sales order lines. We have to create separate store orders for each line store in order to execute the sales order correctly because in the store orders there is only one store field and it is in the header.</p>
-</li>
-<li><p>If the document does not contain any lines, then there is no limitation for the document header value - it doesn't matter if it is empty (NULL) and contains a value (not-NULL).</p>
-</li>
-</ol>
-<h3 id="rules">Rules</h3>
+<p>When a document has identical fields in its header and lines, these fields interact in a specific manner.</p>
+<p>An example is the <em>Store</em> field in the sales order header and lines.</p>
+<p>If a field in the document header has a value, you need to make sure that the corresponding field in the document lines contains <strong>the same</strong> value. On the other hand, if the different lines contain different values, the document's header field should be <strong>empty</strong>.</p>
+<p>When this principle isn't obeyed and the <em>Store</em> field in the document header contains a value despite the document lines having different store values, you may look in the header and think that this store applies to all of its lines as well, which may not be true.</p>
+<h3 id="concepts-and-rules">Concepts and rules</h3>
+<p>To make sure the main principle described above is followed, requirements and rules are applied to each set of Master/Detail fields.</p>
+<h4 id="concepts">Concepts</h4>
 <ul>
-<li><strong>FrontEnd rules</strong></li>
+<li>In order to allow different lines to contain different stores and at the same time follow the main principle, you need to make sure that the <em>Store</em> field in the document header contains <strong>empty</strong> (NULL) values.</li>
 </ul>
-<ol>
-<li><p>When the value of the document header's field is changed, this value is automatically set to ALL document lines.</p>
-</li>
-<li><p>When all document lines have the same value in the <em>Store</em> field, then the field in the document header must contain the same value. The presence of a value in the document header field is an ease for the users - it is not necessary to constantly monitor whether the lines have different values or not.
-<br>For this reason - after editing the value in the Line Store field and when deleting lines - if it turns out that all lines contain the same Store value, then this value is automatically set in the document header field.</p>
-</li>
-<li><p>When the different document lines have different values in the <em>Store</em> field, then the field in the document header must be empty (NULL).
-<br>For this reason -  after editing the value in the Line Store field and when deleting lines, if it turns out that the line contains a different Store value, then the <em>Store</em> field in the document header is automatically set to an empty value (NULL).</p>
-</li>
-<li><p>When adding a new line, then in the <em>Line Store</em> field is set the default value that equal to the value from the document header (unless another default value is explicitly set). If the document header value is empty (NULL), then as a default value in the new line is considered the value from the previous lines. If this is impossible, hard or inapplicable - then the default value is empty (NULL).</p>
-</li>
-</ol>
+<p>Such values are set only when the document lines have different values. In contrast, the value in the field in the document lines is <strong>required/mandatory</strong> (TRUE) and must always contain a value.</p>
 <ul>
-<li><strong>BackEnd rules</strong></li>
+<li>The main/leading field is the required/mandatory field in the lines. It's set to always contain a value.</li>
 </ul>
-<ol>
-<li><p>When the document header is saved, the master-detail field's value is updated according to the value of the lines field (if any lines). 
-If all lines contain the same store value, then this value is automatically set in the document header field.
-If the line contains different store values, then the <em>Store</em> field in the document header is automatically set to an empty value (NULL).</p>
+<p>For example, if you're generating a store order from a sale order, the <em>Store</em> field taken into account is the one in the sales order lines. You need to create a <strong>separate</strong> store order for each store line in order to execute the sales order correctly. Keep in mind that in store orders, there's <strong>only one</strong> <em>Store</em> field, and it's in the header.</p>
+<ul>
+<li>If the document doesn't contain any lines, then there's <strong>no</strong> limitation for the document header value.</li>
+</ul>
+<p>It doesn't matter if it's empty (NULL) or if it contains a value (not-NULL).</p>
+<h4 id="front-end-rules">Front-end rules</h4>
+<ul>
+<li><p>When the value of the document header's field is changed, this value is automatically set to <strong>ALL</strong> document lines.</p>
 </li>
-<li><p>When а document line is saved, the master-detail field's value is updated according to the value of the field in the header. </p>
+<li><p>When all document lines have the same value in the <em>Store</em> field, the field in the document header must contain <strong>the same</strong> value. </p>
 </li>
-<li><p>When the document's header and lines are saved there is a final back end validation. If it turns out that despite the rules above, the values of the master-detail fields do not comply with the rules and principles above is thrown an error:
-<br><em>The master attribute '{the name of the field in the header}' should have the same values as the detail '{the name of the field in the lines}' attribute for all lines or null, if there are different values through the lines.</em></p>
+</ul>
+<p>The presence of a value in the document header field makes it unnecessary to constantly monitor whether the lines have different values or not. For this reason, when editing the value in the <em>Line Store</em> field or deleting lines, if it turns out that all lines contain the same <em>Store</em> value, then this value is <strong>automatically</strong> set in the document header field.</p>
+<ul>
+<li>When different document lines have different values in the <em>Store</em> field, the field in the document header must be <strong>empty</strong> (NULL).</li>
+</ul>
+<p>For this reason, after editing the value in the <em>Line Store</em> field and when deleting lines, if it turns out that the line contains a different <em>Store</em> value, then this value is <strong>automatically</strong> set as empty in the document header.</p>
+<ul>
+<li>When adding a new line, you're setting the default value in the <em>Line Store</em> field, which <strong>equals</strong> the one in the document header (unless another default value is explicitly set).</li>
+</ul>
+<p>If the document header value is empty (NULL), the value from the previous lines is considered as a default value in the new line. If this is impossible, then the default value remains <strong>empty</strong> (NULL).</p>
+<h4 id="back-end-rules">Back-end rules</h4>
+<ul>
+<li>When the document header is saved, the master/detail field's value is updated according to the value of the <strong>lines</strong> field. </li>
+</ul>
+<p>If all lines contain the same <em>Store</em> value, then this value is <strong>automatically</strong> set in the document header field.</p>
+<p>If the lines contain different <em>Store</em> values, then the <em>Store</em> field in the document header is automatically set to <strong>NULL</strong>.</p>
+<ul>
+<li><p>When а document line is saved, the master/detail field's value is updated according to the value of the field in the <strong>header</strong>. </p>
 </li>
-</ol>
+<li><p>When the document's header and lines are saved, there is a final back-end validation.</p>
+</li>
+</ul>
+<p>If it turns out that despite the rules above, the values of the master/detail fields are invalid, an error is thrown:</p>
+<p><em>The master attribute '{the name of the field in the header}' should have the same values as the detail '{the name of the field in the lines}' attribute for all lines or null, if there are different values through the lines.</em></p>
 </article>
           </div>
           

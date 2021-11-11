@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns the specified object, formatted by the specified rules.</td>
+<td>Returns a specified object formatted by specified rules.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>constant <br> The format argument must contain a valid .NET format string, either as a standard format string (&quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (&quot;MMMM DD, yyyy (dddd)&quot;). <br> For more information about the supported format specifiers, see <strong>Format Specifiers</strong>.</td>
+<td>constant <br></td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
@@ -123,21 +123,22 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>For more information about the supported format specifiers, see <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format Specifiers</a>.</p>
+<p>The format argument must contain a valid .NET format string, either as a standard string (&quot;C&quot; or &quot;D&quot;) or as a pattern of custom characters for dates and numeric values (&quot;MMMM DD, yyyy (dddd)&quot;). <br>
+For more information about supported format specifiers, see <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format Specifiers</a></strong>.</p>
 </div>
-<p><em><strong>Example</strong></em></p>
-<p>Here are some examples of the diffrent formats and format specifiers:</p>
+<p><strong>Example:</strong></p>
+<p>Let's see some formats and format specifiers:</p>
 <pre><code>10: FORMATSTRING CONST:DocumentDate CONST:yyyy MM dddd
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday'.
+<p>OUTPUT: <br> If 'DocumentDate = 2020-03-15', the output will be '2020 03 Sunday'.
 <br>(<em>the language of the day of the week depends on the local regional settings</em>)</p>
 <pre><code>10: FORMATSTRING ATTRIB:QuantityValue CONST:n6
 </code></pre>
-<p>OUTPUT: If 'QuantityValue = 150.00', the output will be '150,000000'.
+<p>OUTPUT: <br> If 'QuantityValue = 150.00', the output will be '150,000000'.
 <br>(<em>the decimal symbol separator depends on the local regional settings</em>)</p>
 <pre><code>10: FORMATSTRING ATTRIB:LineAmountValue CONST:C
 </code></pre>
-<p>OUTPUT: If 'LineAmountValue = 150.00', the output will be '150.00 $'.
+<p>OUTPUT: <br> If 'LineAmountValue = 150.00', the output will be '150.00 $'.
 <br>(<em>the decimal symbol separator and the currency symbol depends on the local regional settings</em>)</p>
 <div class="NOTE">
 <h5>Note</h5>

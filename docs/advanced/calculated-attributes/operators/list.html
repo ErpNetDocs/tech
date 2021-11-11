@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns a list with string values of the specified attribute of the list of objects. The values in the list are separated. If there is no indicated separator, then the list is separated with &quot;, &quot; (comma + space) by default.</td>
+<td>Returns a list with string values of a specified attribute from a list of objects. <br> The values in the list are separated. <br> If there's no indicated separator, the list is separated with &quot;, &quot; (comma + space) by default.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -116,20 +116,20 @@
 <td>string</td>
 </tr>
 <tr>
-<td>Return Value</td>
+<td>Return value</td>
 <td>(attributeValue1, attributeValue2, ...)</td>
 </tr>
 <tr>
-<td>Introduced In Version</td>
+<td>Introduced in version</td>
 <td>2019.1</td>
 </tr>
 </tbody>
 </table>
-<p><em><strong>Example</strong></em></p>
+<p><strong>Example:</strong></p>
 <pre><code>10: LIST CHILD:Lines EXP:20 CONST:'; '
 20: GETOBJVALUE REF:Product ATTRIB:Name
 </code></pre>
-<p>OUTPUT: 'ProductsName1; ProductName2 ...'</p>
+<p>OUTPUT: <br> 'ProductsName1; ProductName2 ...'</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is Crm.Sales.SalesOrders</p>

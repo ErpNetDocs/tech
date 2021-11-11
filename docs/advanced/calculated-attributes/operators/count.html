@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Gets the number of elements contained in the list.</td>
+<td>Gets the number of elements contained within a list.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -125,15 +125,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>The following example returns the number of lines in the current document (sales order):</p>
+<p><strong>Example:</strong></p>
+<p>Let's have a number of lines in a document (sales order) returned:</p>
 <pre><code>10: COUNT CHILD:Lines
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em></p>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em>.</p>
 </div>
-<p>If we want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:</p>
+<p>If you want to expand the example and get the number of lines with quantity greater than or equal to 10, <br> the following attribute would do the job:</p>
 <pre><code>10: COUNT EXP:20
 20: FILTER CHILD:Lines EXP:30
 30: GTE ATTRIB:QuantityValue CONST:10.00

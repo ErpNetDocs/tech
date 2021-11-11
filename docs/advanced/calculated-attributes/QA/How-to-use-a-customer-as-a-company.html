@@ -79,9 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-use-a-customer-as-a-company">How to use a customer as a company?</h1>
 
-<p>When we work with a customer, we can only get its party attributes as they may be company, company location or a person.</p>
-<p>So if we know that the customer is a company and we need to get his company attributes, we can cast its reference party to Aloe.EnterpriseOne.Model.General.Contacts.Company.</p>
-<p>For example, to get the responsible person of the company of the customer, the following attribute would do the job:</p>
+<p>When you work with a customer, you can only get its party attributes, such as company, company location or a person.</p>
+<p>If you know that the customer is a company and need to get their company attributes, you can cast its reference party to <strong>Aloe.EnterpriseOne.Model.General.Contacts.Company</strong>.</p>
+<p>For example, to get the responsible person of the customer's company, the following attribute would do the job:</p>
 <p>(repository of the attribute: Crm.Customers)</p>
 <pre><code>10: GETOBJVALUE EXP:20 ResponsiblePersonName
 20: CAST REF:Party CONST:Aloe.EnterpriseOne.Model.General.Contacts.Company

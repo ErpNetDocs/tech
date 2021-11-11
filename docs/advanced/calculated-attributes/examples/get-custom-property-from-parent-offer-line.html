@@ -79,8 +79,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-a-value-of-a-custom-property-in-sales-order-lines-from-the-parent-offer-line">Get a value of a custom property in sales order lines from the parent offer line</h1>
 
-<p>With this attribute, we can, for example, determine what is the value of a particular customer property which is set for the parent offer line of the current sales order line. Currently, offer lines customer properties are not automatically transferred to the sales order. Thus, we can use this attribute in a user business rule to automate the process.</p>
-<p>For more information on how to create such a rule, see <strong>How to use business rules to set a value into a custom property?</strong></p>
+<p>This attribute determines the value of a particular customer property set for the parent offer line of the current sales order line.</p>
+<p>Currently, offer lines customer properties are not transferred to the sales order.</p>
+<p>Thus, you can use this attribute in a user business rule to <strong>automate</strong> the process.</p>
+<p>For more information on how to create such a rule, see <strong>How to use business rules to set a value into a custom property?</strong>.</p>
 <pre><code>Repository: Crm.Sales.SalesOrderLines
 </code></pre>
 <pre><code>                    
@@ -93,16 +95,16 @@
 70: GETOBJVALUE EXP: 80 CHILD:Lines                          
 80: CAST REF:ParentDocument CONST:Aloe.EnterpriseOne.Model.Crm.Presales.Offer                
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Get the record of custom property &quot;Propery1&quot; from EXP:20.</li>
+<li>10: Get the record of custom property 'Propery1' from EXP:20.</li>
 <li>20: Get the first value of EXP:30.</li>
 <li>30: Filter the list from EXP:70 with the filters from EXP:40.</li>
-<li>40: Check in the LineNumber of the offer line is equal to the value from EXP:50.</li>
+<li>40: Check in the <strong>LineNumber</strong> of the offer line is equal to the value from EXP:50.</li>
 <li>50: Cast EXP:60 to &quot;System.Int32&quot;.</li>
-<li>60: Get the ”ParentLineNo“ of the sales order line which is an input for EXP:10.</li>
+<li>60: Get the <strong>ParentLineNo</strong> of the sales order line, which is an input for EXP:10.</li>
 <li>70: Get the list of child line of the object of EXP:80.</li>
-<li>80: Cast the parent document of the sales order line to &quot;Aloe.EnterpriseOne.Model.Crm.Presales.Offer&quot; in order to define the type/entity of the parent document.</li>
+<li>80: Cast the parent document of the sales order line to <strong>Aloe.EnterpriseOne.Model.Crm.Presales.Offer</strong> in order to define the type/entity of the parent document.</li>
 </ul>
 </article>
           </div>

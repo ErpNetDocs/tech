@@ -79,11 +79,10 @@
             <article class="content wrap" id="_content" data-uid="aggregates">
 <h1 id="aggregates">Aggregates</h1>
 
-<h2 id="what-are-аggregates">What are аggregates?</h2>
-<p>'Aggregate is a pattern in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate.&quot;</p>
-<p><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">https://martinfowler.com/bliki/DDD_Aggregate.html</a></p>
-<h2 id="examples">Examples</h2>
-<p>For example, in ERP.net, this is one single aggregate:</p>
+<p>Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit.</p>
+<p>For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate.</p>
+<p>Learn more <strong><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">here</a></strong>.</p>
+<h4 id="in--these-are-single-aggregates">In ERP.net, these are single aggregates:</h4>
 <ul>
 <li>a SalesOrder</li>
 <li>the sales order lines of this sales order</li>
@@ -91,23 +90,23 @@
 <li>the document amounts of this sales order</li>
 <li>the payment plan of this sales order</li>
 </ul>
-<h2 id="parent-and-root-objects">Parent and root objects</h2>
-<p>Each object in an aggregate can have a parent object.The parent is the logical &quot;owner&quot; of the child object(s).</p>
+<h3 id="parent-and-root-objects">Parent and root objects</h3>
+<p>Each object in an aggregate can have a parent object. The parent is the logical &quot;owner&quot; of the child object(s).</p>
 <p>For example:</p>
 <ul>
-<li>The parent of <strong>sales order line</strong> is <strong>sales order</strong>.</li>
-<li>The parent of <strong>distributed amount</strong> is the <strong>sales order line</strong>.</li>
+<li>The parent of a sales order line is sales order.</li>
+<li>The parent of a distributed amount is the sales order line.</li>
 </ul>
-<p>The ultimate object, which has no parent in the aggregate is the aggregate root. In this example, this is the <strong>sales order</strong>.</p>
-<h2 id="aggregate-events">Aggregate events</h2>
+<p>The ultimate object, which has no parent in the aggregate, is the <strong>aggregate root</strong>. Here, this is the sales order.</p>
+<h3 id="aggregate-events">Aggregate events</h3>
 <p>The <strong>Commit</strong> and <strong>ClientCommit</strong> events are now available in two different variations:</p>
-<ol>
+<ul>
 <li>object commit / client-commit</li>
 <li>aggregate commit / alient-commit</li>
-</ol>
-<p>What is the difference?</p>
-<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there is a change in <strong>ANY</strong> of its constituent objects, but only if the objects is an aggregate root.</p>
-<p>Lets take a look at the following structure which in ERP.net is one single aggregate:</p>
+</ul>
+<h4 id="whats-the-difference">What's the difference?</h4>
+<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there's a change in <strong>ANY</strong> of its constituent objects, but only if the object is an aggregate root.</p>
+<p>Let's take a look at the following structure, which is a single aggregate in ERP.net:</p>
 <ul>
 <li>a SalesOrder (which is the aggregate's root)</li>
 <li>the sales order lines of this sales order</li>
@@ -115,17 +114,17 @@
 <li>the document amounts of this sales order</li>
 <li>the payment plan of this sales order</li>
 </ul>
-<p>In the example above, the <strong>Commit</strong> event would occur for the <strong>sales order</strong> if and only if the sales order object itself has changed. While the <strong>aggregate commit</strong> will occur for the sales order if any of the objects in the aggregate has changed. For example, changing just a single sales order line (without changing the sales order itself) would still trigger the sales order aggregate event.</p>
+<p>The <strong>Commit</strong> event would occur for the sales order <strong>only</strong> if the sales order object itself has changed.</p>
+<p>The <strong>aggregate commit</strong> will occur for the sales order if <strong>any</strong> of the objects in the aggregate has changed.</p>
+<p>Changing just a single sales order line without changing the order itself would <strong>still</strong> trigger the sales order aggregate event.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Commit and client-commit still have the same meaning. E.g., commit is the low-level event, which is triggered for everything committed to the database (be it from client request or as a result of some server processing). While client-commit is triggered only based on client requests and is considered the more light-weight approach.</p>
+<p>Commit and client-commit have the same meaning. Commit is the low-level event, which is triggered for everything committed to the database. Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>
+Currently, only the agregate client commit event is available for <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user-defined business rules</a></strong>. <br> The aggregate commit will be used only internally, for <strong><a class="xref" href="https://erpnetdocs.github.io/model/templates/template-description-system-business-rules.html">system-defined business rules</a></strong></p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Initially, only the agregate client commit event would be available for user-defined business rules <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a>. The aggregate commit will be used only internally, for system-defined business rules <a class="xref" href="https://erpnetdocs.github.io/model/templates/template-description-system-business-rules.html">System Business Rules</a></p>
-</div>
-<p>The reason is to have a more light tread approach. If there is serious need, we can consider adding the aggregate commit event in the future for <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a>.</p>
-<h4 id="see-also-">See also: <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></h4>
+<p>The end goal is to have a more light approach.</p>
+<h4 id="see-also">See also:</h4>
+<p><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
 </article>
           </div>
           

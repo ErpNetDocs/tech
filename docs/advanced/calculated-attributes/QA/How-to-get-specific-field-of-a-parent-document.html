@@ -79,21 +79,21 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-get-specific-field-of-a-parent-document">How to get specific field of a parent document?</h1>
 
-<p>When in a calculation attribute there is a need for a value of an attribute of the parent document, there are two options:</p>
+<p>When calculating an attribute requires the value of an attribute of a parent document, there are two options:</p>
 <ol>
 <li>The attribute is part of the parent document table</li>
-<li>The attribute is part of the specific entity of the parent document</li>
+<li>The attribute is part of the specific entity of the parent document (SalesOrder, StoreOrder, StoreTransaction, Payment, etc.)</li>
 </ol>
-<p>If the attribute is part of the parent document table, then we may get it directly by <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/getobjvalue.html">GETOBJVALUE</a></strong> operator in the following expression:</p>
+<p>In the first case, you may get the value directly by <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/getobjvalue.html">GETOBJVALUE</a></strong> operator in the following expression:</p>
 <pre><code>10: GETOBJVALUE REF:Parent ATTRIB:DocumentNo
 </code></pre>
 <p>This expression would be valid for every document which has a parent document.</p>
-<p>But in the second case, when the attribute is part of the specific entity of the parent document (meaning SalesOrder, StoreOrder, StoreTransaction, Payment, etc.) then the user has to tell the calculated attribute what the parent document is. This is done by casting the parent document to the required entity.</p>
+<p>In the second case, you need to tell the calculated attribute what the parent document is. <br> This is done by casting the parent document to the required entity.</p>
 <p><strong>Example:</strong></p>
 <pre><code>10: GETOBJVALUE EXP:20 ATTRIB:DocumentNo
 20: CAST REF:Parent CONST:Aloe.EnterpriseOne.Model.Crm.Presales.Offer
 </code></pre>
-<p>It is supposed to show such calculated attribute in document form where the parent document is exactly offer.</p>
+<p>It's supposed to show such calculated attributes in the document form where the parent document is 'offer'.</p>
 </article>
           </div>
           

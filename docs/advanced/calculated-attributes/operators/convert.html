@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns an object of the specified type and whose value is equivalent to the specified object. <br> This conversion requires absolutely correct input data - if the data is not in the correct form, loss may occur. For examplе, if the user tries to convert the string value of '3.12' to decimal, the conversion would be successful. If the conversion of the string is not possible, this may lead to data loss, but no error would be returned.</td>
+<td>Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires <strong>correct</strong> input data - otherwise, loss may occur but no error would be returned. <br> For examplе, if you try to convert the string value of '3.12' to decimal, the conversion would be successful.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -121,14 +121,14 @@
 </tr>
 </tbody>
 </table>
-<p><em><strong>Example</strong></em></p>
-<p>The following example converts the value of the quantity of a sales order line, which is a decimal number, to an integer number:</p>
+<p><strong>Example:</strong></p>
+<p>Let's convert the quantity value of a sales order line, which is a decimal number, to an integer number:</p>
 <pre><code>10: CONVERT ATTRIB:QuantityValue CONST:System.Int32                  
 </code></pre>
-<p>OUTPUT: If 'QuantityValue = 12.14', the output will be '12'.</p>
+<p>OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em>.</p>
 </div>
 <h4 id="more-examples">More examples:</h4>
 <ul>

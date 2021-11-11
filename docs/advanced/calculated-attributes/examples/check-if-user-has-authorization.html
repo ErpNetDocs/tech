@@ -79,7 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="check-if-the-current-user-has-authorization">Check if the current user has authorization</h1>
 
-<p>If we want to determine if the user that is currently logged in the system is authorized (to do, see, or edit an entity, for example) we need to know which group have such rights. When we have that information, we can simply create a calculated attribute that checks if the user is a part of this group:</p>
+<p>To determine whether a logged-in user is authorized to do, see, or edit an entity, you need to know which <strong>group</strong> has such rights.</p>
+<p>You can then create a calculated attribute that checks if the user is part of that group:</p>
 <pre><code>10: IIF EXP:20 CONST:True CONST:False         
 20: GTE EXP:30 CONST:1                                        
 30: SUM EXP:40 CONST:1                                       
@@ -90,14 +91,14 @@
 80: EQUAL ATTRIB:GroupId CONST:5daf849d-9986-462f-9171-a23c1c5839b7                
      
 </code></pre>
-<p>Explanation:</p>
+<p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Check if EXP:20 is true or false. If EXP:20 is True - the calculated attribute displays the 'True' message, else - 'False'.</li>
+<li>10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True' message, else - 'False'.</li>
 <li>20: Check if the list EXP:30 returns at least one record.</li>
 <li>30: Return the count of records in the filtered list of EXP:40.</li>
 <li>40: Select 'User Groups' filtered by EXP:50.</li>
 <li>50: The filters are expression 60, expression 80...</li>
-<li>60: Check if the UserId is equal to EXP:70.</li>
+<li>60: Check if <strong>UserId</strong> is equal to EXP:70.</li>
 <li>70: Get the Id of the user that is currently editing the entity.</li>
 <li>80: Check if the GroupId is equal to the Id of an authorized group.</li>
 </ul>

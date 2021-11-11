@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>Casts the parameter to the specified type.</td>
+<td>Casts a parameter to a specified type.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -127,13 +127,14 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The CAST operator is a secondary operator, used by the other operators to convert their parameters to the same type. The type is usually entered as a constant (CONST).</p>
+<p>CAST is used by other operators to convert their parameters to the same type. <br> The type is usually entered as a constant (CONST).</p>
 </div>
-<p><em><strong>Example</strong></em></p>
-<p>The following example converts the value of the state of a sales order, whose type is enum, to an integer number. Conveting to integer allows comparison between the states (lower -&gt; higher):</p>
+<p><strong>Example:</strong></p>
+<p>Let's convert the value of the state of a sales order with type 'enum' to an integer number.</p>
+<p>Conveting to integer allows for comparison between the states (lower -&gt; higher):</p>
 <pre><code>10: CONVERT ATTRIB:State CONST:System.Int32      
 </code></pre>
-<p>OUTPUT: If 'State = Released', the output will be '30'.</p>
+<p>OUTPUT: <br> If 'State = Released', the output will be '30'.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is Crm.Sales.SalesOrders</p>

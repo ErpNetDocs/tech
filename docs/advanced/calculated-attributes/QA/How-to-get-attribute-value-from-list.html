@@ -79,12 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-get-attribute-value-from-list">How to get attribute value from list?</h1>
 
-<p>A typical mistake is to try to get a value of an attribute from a list.</p>
-<p>For example, if we want to get the user who changed the document state:</p>
+<p>A typical mistake is when users try getting a value of an attribute from a list.</p>
+<p>For example, if you want to get the user who changed the document state:</p>
 <pre><code>10: GETOBJVALUE CHILD:StateChanges ATTRIB:UpdateUser
 </code></pre>
-<p>This is an incorrect expression.</p>
-<p>The right expression would be to filter the child list and then get the first element of the list.</p>
+<p>This is an <strong>incorrect</strong> expression.</p>
+<p>The right expression would be to <strong>filter</strong> the child list and then get the first element of the list.</p>
 <p><strong>Example:</strong></p>
 <pre><code>10 GETOBJVALUE EXP:20 ATTRIB:UpdateUser
 20 FIRST EXP:30 
@@ -96,7 +96,7 @@
 <li>10: get the value of the <strong>UserUpdate</strong> field from object in expression 20</li>
 <li>20: get the first record in the list in expression 30</li>
 <li>30: filter the child list <strong>StateChanges</strong> by the filter in expression 40</li>
-<li>40: check if the attribute <strong>SystemInitiated</strong> is equal to &quot;False&quot;</li>
+<li>40: check if the attribute <strong>SystemInitiated</strong> is equal to 'False'</li>
 </ul>
 </article>
           </div>

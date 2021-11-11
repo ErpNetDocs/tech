@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>The operator returns the sum (total) of two numbers.</td>
+<td>Returns the sum (total) of two numbers.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -125,16 +125,13 @@
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Ensure that the numbers which are summed up are from the the same type. <br>
-For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.
-<em><strong>Example</strong></em>
-The following example adds '0.25' to the the value of the <em>Quantity</em> field in sales order lines and returns the sum of the two numbers.</p>
-</div>
+<p>Make sure that the numbers which are summed up are from the <strong>the same</strong> type.</p>
+<p>For example, Parameter 1 and Parameter 2 must be both integers, doubles, or decimals.</p>
+<p><strong>Example:</strong></p>
+<p>The following example adds '0.25' to the the value of the <em>Quantity</em> field in the sales order lines and returns the sum of the two numbers.</p>
 <pre><code>10: ADD ATTRIB:QuantityValue CONST:0.25                 
 </code></pre>
-<p>OUTPUT: If 'QuantityValue = 1', the output will be '1.25'.</p>
+<p>OUTPUT: <br> If 'QuantityValue = 1', the output will be '1.25'.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em></p>

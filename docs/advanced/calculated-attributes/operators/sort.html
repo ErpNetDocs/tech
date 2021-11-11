@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Sorts the input list according to the specified attribute and order.</td>
+<td>Sorts an input list according to a specified attribute and order.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -117,13 +117,12 @@
 </tr>
 <tr>
 <td>Return жalue</td>
-<td>Returns the input list from parameter1, sorted by the specified attribute and in the specified order. If not specified, the default order is ascending (ASC)</td>
+<td>Returns the input list from parameter1, sorted by the specified attribute and in the specified order. <br> If not specified, the default order is ascending (ASC)</td>
 </tr>
 </tbody>
 </table>
-<p><em><strong>Example</strong></em></p>
-<p>Take the last line of a sales order (ordered by LineNo), which has quantity &gt;= 0:</p>
-<p>SalesOrder=&gt;</p>
+<p><strong>Example:</strong></p>
+<p>Take the last line of a sales order (ordered by <strong>LineNo</strong>), which has quantity &gt;= 0:</p>
 <pre><code>10: FIRST EXP:20
 20: SORT EXP:30 ATTR:LineNo CONST:DESC
 30: FILTER CHILD:Lines EXP:40

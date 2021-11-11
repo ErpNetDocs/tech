@@ -92,11 +92,11 @@
 100:	FORMATSTRING	ATTRIB:@Property1	CONST:V		
 
 </code></pre>
-<p>Explanation:</p>
-<p>We assume that the value of the custom poperty is 20200315.</p>
+<p><strong>Explanation:</strong></p>
+<p>Let's assume that the value of the custom poperty is 20200315.</p>
 <ul>
 <li>10: Format the date returned from EXP:20 applying the date format type 'yyyy MM dddd' e.g. '2020 03 Sunday'.</li>
-<li>20: Convert the type of the value returned from EXP:30 to DateTime</li>
+<li>20: Convert the type of the value returned from EXP:30 to <strong>DateTime</strong></li>
 <li>30: Concatenate the text from EXP:40 to the text from EXP:50 e.g. '2021' + '-03-15'</li>
 <li>40: Get the first 4 characters from EXP:100 e.g. '2021'</li>
 <li>50: Concatenate the character '-' to the text from EXP:60 e.g. '-' + '03-15'</li>
@@ -104,7 +104,7 @@
 <li>70: Get the first 2 characters from the string from EXP:100, starting from character 4 e.g. '03'</li>
 <li>80: Concatenate the character '-' to the text from EXP:90 e.g. '-' + '15'</li>
 <li>90: Get the first 2 characters from the string from EXP:100, starting from character 6 e.g. '15'</li>
-<li>100: Get the value of custom property &quot;Property1&quot; e.g. '20200315'</li>
+<li>100: Get the value of custom property 'Property1' e.g. '20200315'</li>
 </ul>
 </article>
           </div>
