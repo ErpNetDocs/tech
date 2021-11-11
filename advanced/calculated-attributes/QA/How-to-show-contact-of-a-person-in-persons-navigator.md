@@ -18,9 +18,9 @@ Its values and codes are as follows:
 | Telephone   | 5     | Telephone value. Stored as 'T'.   |
 | WebSite     | 6     | WebSite value. Stored as 'W'.     |
 
-Let's say we need to get a column with email addresses. 
+Let's say you need to get a column with email addresses. 
 
-If a person has more than one email, we should write a random one. If a specific email is needed, more filters could be applied. 
+If a person has more than one email, you should write a random one. If a specific email is needed, more filters could be applied. 
 
 The calculated attribute would have the following expressions:
 
@@ -40,15 +40,15 @@ The calculated attribute would have the following expressions:
 
 **Explanation:**
 
-- 10: from the object from EXP:20 get the attribute from EXP:15
-- 15: get the value of the attribute name from the referent object ContactMechanism
+- 10: from the object from EXP:20, get the attribute from EXP:15
+- 15: get the value of the attribute name from the referent object **ContactMechanism**
 - 20: get the first element from the list in EXP:21
 - 21: filter the list in EXP:30 by the conditions in EXP:22
 - 22: check if EXP:23 is equal to EXP:25
-- 23: get the value of the attribute ContactMechanismType from the referent object ContactMechanism
-- 25: cast the constant of "1" (this is integer) to type 'Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType'
-- 30: select from repository General.Contacts.PartyContactMechanisms and filter it by EXP:40
+- 23: get the value of the attribute **ContactMechanismType** from the referent object **ContactMechanism**
+- 25: cast the constant of '1' (integer) to type **Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType**
+- 30: select from repository **General.Contacts.PartyContactMechanisms** and filter it by EXP:40
 - 40: the filter is in EXP:50
 - 50: check if the value of attribute PartyId is equal to EXP:60
-- 60: get the value of attribute PartyId of the input object of expression 10
+- 60: get the value of attribute **PartyId** of the input object of expression 10
 
