@@ -40,9 +40,9 @@ Such attribute can be created in at least two ways (the repository being **Crm.S
 20     GETOBJVALUE REF:SalesOrder CHILD:Lines           
 ```
 
-Of course, there are some cases where we want to reach the data of a table, to which we could simply use a reference connection. But with **[SELECT]**, there are some tricks that we can master to speed up the calculation. 
+There are some cases where you want to reach the data of a table, to which you could simply use a reference connection. But with **[SELECT]**, there are some tricks that you can master to speed up the calculation. 
 
-When we **[SELECT]** a table, we can filter its records with **[WHERE]** or **[FILTER]** clauses. 
+When you **[SELECT]** a table, you can filter its records with **[WHERE]** or **[FILTER]** clauses. 
 
 Keep in mind that when using:
 
