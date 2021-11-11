@@ -26,7 +26,7 @@ The following example adds '0.25' to the the value of the *Quantity* field in th
 ```
 10: ADD ATTRIB:QuantityValue CONST:0.25                 
 ```
-OUTPUT: If 'QuantityValue = 1', the output will be '1.25'.
+OUTPUT: <br> If 'QuantityValue = 1', the output will be '1.25'.
 
 > [!NOTE]
 > 
