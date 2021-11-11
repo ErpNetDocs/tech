@@ -4,9 +4,9 @@ items: CalculatedAttributesQA
 
 # How to check if a list has values?
 
-When working with lists, often there is a need to check if  this list actually contains any values (records). 
+When working with lists, you can check if they contain any values (or records). 
 
-For example, there is a calculated attribute which calculates the quantity in the sales order lines in specified measurement unit. The user could enter a product which has no dimensions for the required measurement unit. 
+For example, there is an attribute which calculates the quantity in the sales order lines in specified measurement unit. You could enter a product which has no dimensions for the required measurement unit. 
 
 In such cases, an instrument to check the lists records count is needed. 
 
@@ -18,7 +18,9 @@ SUM(List, 1)
 
 This expression returns integer value containing the number of records in the entered list.
 
-Here is an example expression and its description. This example is defined in the sales order header and checks if the lines contain one specific product. So the repository of the calculated attribute is **Crm.Sales.SalesOrders** and its expressions are:
+Here is a sample expression and its description. This example is defined in the sales order header and checks if the lines contain one specific product. 
+
+The repository of the calculated attribute is **Crm.Sales.SalesOrders** and its expressions are:
 
 ```
 10: SUM EXP:20 CONST:1
