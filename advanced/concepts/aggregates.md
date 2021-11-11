@@ -62,7 +62,7 @@ Changing just a single sales order line without changing the order itself would 
 
 The end goal is to have a more light approach. 
 
-If there's great demand, the aggregate commit event could be added for **[user business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)**.
+If there's great demand, the aggregate commit event could be added for user business rules.
 
 #### See also: 
 
