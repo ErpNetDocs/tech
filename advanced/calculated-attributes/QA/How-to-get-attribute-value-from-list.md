@@ -30,4 +30,4 @@ The right expression would be to **filter** the child list and then get the firs
 - 10: get the value of the **UserUpdate** field from object in expression 20
 - 20: get the first record in the list in expression 30
 - 30: filter the child list **StateChanges** by the filter in expression 40
-- 40: check if the attribute **SystemInitiated** is equal to "False"
+- 40: check if the attribute **SystemInitiated** is equal to 'False'
