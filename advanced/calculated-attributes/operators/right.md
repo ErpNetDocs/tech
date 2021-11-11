@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Gets the last n characters of a string.          |
+| Description           | Gets the last N characters of a string.          |
 | Parameter 1 Name      | String                                                         |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | NumChars                                                           |
