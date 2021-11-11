@@ -4,7 +4,7 @@
 - **[Check if a value of a field is changed in the adjustment document](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.html)**
 - **[Check if the current user has authorization](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-user-has-authorization.html)**
 - **[Check if the quantity is a whole number](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-quantity-is-whole-number.html)**
-- **[Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)**
+- **[Check if the system type of a payment type in a sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)**
 - **[Check whether the releasing of the document is first or not](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**
 - **[Compare unit price and standard unit price](https://docs.erp.net/tech/advanced/calculated-attributes/examples/compare-unit-and-standard-unit-price.html)**
 - **[Convert a value of a custom property to a number](https://docs.erp.net/tech/advanced/calculated-attributes/examples/convert-property-to-number.html)**
