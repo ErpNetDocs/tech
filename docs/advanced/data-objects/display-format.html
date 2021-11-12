@@ -79,16 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="display-format">Display format</h1>
 
-<h2 id="overview">Overview</h2>
-<p>Each <a href="../concepts/object-relational-mapping.html#definitions">entity object</a> must have a representation as text, so that it can be visualized in a user interface - e.g., in ERP.net Windows Desktop Client or ERP.net Web Client. This is quite a simple task for <a href="../concepts/object-relational-mapping.html#definitions">entity types</a> that have few attributes, but in reality, most do not. Let's see the following usual entity types as examples,</p>
-<blockquote>
-<p>Client</p>
-<p>Product</p>
-</blockquote>
-<p>These entity types are one of the most commonly used in a typical workflow. Now we will expand these entity types to real (sample) data- i.e., entities.</p>
-<blockquote>
+<p>Each <strong><a href="https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html">entity object</a></strong> must have a representation as text, so it can be visualized in a user interface - in ERP.net Windows Desktop Client or ERP.net Web Client. This is quite a simple task for entity types that have few attributes - not so much for the ones that don't.</p>
+<p><strong>Let's see the following entity types as examples:</strong></p>
+<ul>
+<li>Client</li>
+<li>Product</li>
+</ul>
+<p>They're one of the most commonly used in a typical workflow, and can expand to real (sample) data like entities.</p>
 <p><strong>Client</strong></p>
-</blockquote>
 <table>
 <thead>
 <tr>
@@ -115,9 +113,7 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
 <p><strong>Product</strong></p>
-</blockquote>
 <table>
 <thead>
 <tr>
@@ -148,7 +144,8 @@
 </tr>
 </tbody>
 </table>
-<p>Usually, these entities make sense in the context of other ones. E.g., documents, reports, analysis, etc... And therefore, they must be visualized in some way. The most typical way is to display their names (i.e., the &quot;Name&quot; attribute):</p>
+<p>These entities make sense in the context of others (documents, reports, analysis, etc).</p>
+<p>The easiest way to visualize them is to display their names (the &quot;Name&quot; attribute):</p>
 <blockquote>
 <p><strong>Client</strong></p>
 <p>Nia Cartwright</p>
@@ -161,11 +158,14 @@
 <p>1U Server</p>
 <p>Remote support</p>
 </blockquote>
-<p>Ok, everything seems fine, but what if we need something more? Think in general, not just about printouts or reports, this entity visualization should also apply when we choose a customer or a product (respecting the example above). How will you handle the situation when you have several products, named <em>&quot;1U Server&quot;</em>? Wouldn't it be better to see more information (i.e., additional attribute/s) about each entity? How about if you see what's the product availability at the time you choose it?</p>
-<p>And this is where the display format becomes important.</p>
-<p>ERP.net allows you to specify the display format of each entity type.</p>
-<p>So, if you need more attributes to be displayed or a specific format of your choice, you are free to customize it.
-Here is an example of how you could customize the products entity type:</p>
+<h4 id="everything-seems-fine-but-what-if-you-need-something-more">Everything seems fine, but what if you need something more?</h4>
+<p>This entity visualization should also apply when you choose a <strong>customer</strong> or a <strong>product</strong> (respecting the example above).</p>
+<p>How will you act when you have several products named <em>&quot;1U Server&quot;</em>?</p>
+<p>Wouldn't it be better to see more information about each entity?</p>
+<p>What about if you see the product availability at the time that you choose it?</p>
+<p>This is where the <strong>display format</strong> becomes important. ERP.net allows you to <strong>specify</strong> the display format of each entity type.</p>
+<p>If you need more attributes to be displayed, or a specific format of your choice, you're free to customize it.</p>
+<p>Here's an example of how you could customize a product's entity type:</p>
 <table>
 <thead>
 <tr>
@@ -196,20 +196,29 @@ Here is an example of how you could customize the products entity type:</p>
 </tr>
 </tbody>
 </table>
-<p>The common thing between all display formats is the fact they use string interpolation- it gives you the opportunity to customize how each one of your entity types will be displayed.</p>
-<p>You can find more information on the topic of <a href="../string-interpolation/index.html">string interpolation here</a>.</p>
+<p>Display formats use <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html">string interpolation</a></strong>, which gives you the opportunity to customize how your entity types will be displayed.</p>
 <h2 id="configuring-display-format">Configuring display format</h2>
-<p>Changing the display format for a entity type is an easy task. Just open its definition and change <code>Display Text Format</code> attribute to the desired one.</p>
+<p>Changing the display format of an entity type is an easy task.</p>
+<p>Just open its definition and edit the 'Display Text Format' attribute to the desired one.</p>
 <p><img src="pictures/entity-type-display-format.png" alt="picture1"></p>
-<p>As a result, each entity of this type (i.e., each customer) will be displayed according to the selected display format. In the picture below you can see how a customer dropdown is shown in the Web Client.</p>
+<p>As a result, each entity of this type will be displayed according to the selected display format.</p>
+<p>In the picture below, you can see how a customer dropdown is shown in the Web Client:</p>
 <p><img src="pictures/webclient-dropdown.png" alt="picture2"></p>
-<p>Furthermore, it's possible to specify the display format yourself if the predefined formats don't suit you. It's easy- you just have to follow the rules when specifying the <a href="../string-interpolation/index.html">interpolation string</a>.</p>
-<p>Also, you may be wondering how you will know the specific attributes of the entity type you need? You can refer to the <a href="https://docs.erp.net/model/entities/">ERP.net Domain Model documentation</a>. Following to the example above, all the necessary information is available in the <a href="https://docs.erp.net/model/entities/Crm.Customers.html">Crm.Customers Entity</a>.</p>
-<p>Internally the display format attribute for an entity is located in the <a href="https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat">Systems.Core.EntitySettings Entity</a> table.</p>
+<p>Furthermore, it's possible to specify the display format yourself, if the pre-defined formats don't suit you.</p>
+<p>Just follow the rules when specifying the <strong>string interpolation</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>How do you know the specific attributes of the entity type that you need? <br> Refer to the <strong><a href="https://docs.erp.net/model/entities/">ERP.net Domain Model documentation</a></strong>. <br> Following the example above, all the necessary information is available in <strong><a href="https://docs.erp.net/model/entities/Crm.Customers.html">Crm.Customers Entity</a></strong>. <br> Internally, the display format attribute for an entity is located in the <strong><a href="https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat">Systems.Core.EntitySettings Entity</a></strong> table.</p>
+</div>
 <h2 id="examples">Examples</h2>
-<p>In this section you can see several examples of different entity types- sample data, available predefined display formats and their corresponding visualization.</p>
+<p>In this section, you can see several examples of different entity types:</p>
+<ul>
+<li>sample data</li>
+<li>available predefined display formats</li>
+</ul>
+<p>and their corresponding visualization.</p>
 <h3 id="customers">Customers</h3>
-<p><a href="https://docs.erp.net/model/entities/Crm.Customers.html">Customers entity documentation</a>.</p>
+<p><strong><a href="https://docs.erp.net/model/entities/Crm.Customers.html">Customers entity documentation</a></strong>.</p>
 <h4 id="sample-data">Sample data</h4>
 <table>
 <thead>
@@ -313,7 +322,7 @@ Here is an example of how you could customize the products entity type:</p>
 </tbody>
 </table>
 <h3 id="products">Products</h3>
-<p><a href="https://docs.erp.net/model/entities/General.Products.Products.html">Products entity documentation</a>.</p>
+<p><strong><a href="https://docs.erp.net/model/entities/General.Products.Products.html">Products entity documentation</a></strong>.</p>
 <h4 id="sample-data-1">Sample data</h4>
 <table>
 <thead>

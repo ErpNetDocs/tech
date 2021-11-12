@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Default tracking levels | ERP.net Tech Docs </title>
+    <title>EDO | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Default tracking levels | ERP.net Tech Docs ">
+    <meta name="title" content="EDO | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,139 +76,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="default-tracking-levels">Default tracking levels</h1>
+            <article class="content wrap" id="_content" data-uid="extensible-data-objects">
+<h1 id="edo">EDO</h1>
 
-<p>Some entities track their changes by default. The tracking level is system-configured and cannot be lowered.</p>
-<p>However, you can specify a <strong>higher</strong> level.</p>
-<p>The following table contains default system-specified tracking levels:</p>
-<table>
-<thead>
-<tr>
-<th>Entity</th>
-<th>Default tracking level</th>
-<th>Activated in version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Calculated attributes</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Companies</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Company locations</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Config</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Document types</td>
-<td>4</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Enterprise companies</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Entities</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Group access keys</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Groups</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Parties</td>
-<td>4</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Payment accounts</td>
-<td>2</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Payment types</td>
-<td>2</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Persons</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>POS locations</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>POS operators</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>POS roles</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>POS sequences</td>
-<td>2</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>POS terminals</td>
-<td>2</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Printout layouts</td>
-<td>4</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Products</td>
-<td>2</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>User business rules</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>User groups</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-<tr>
-<td>Users</td>
-<td>3</td>
-<td>2019.1</td>
-</tr>
-</tbody>
-</table>
-<p>For more information on track changes, please check out <strong><a href="https://docs.erp.net/tech/advanced/data-objects/track-changes.html">Track Changes</a></strong>.</p>
+<p>The Extensible Data Objects (EDO) is a system in ERP.net, which allows attaching additional data to all entities in the system.</p>
+<p>The following can be attached:</p>
+<ul>
+<li>files</li>
+<li><strong><a href="https://docs.erp.net/tech/advanced/data-objects/track-changes.html">Track Changes</a></strong> tracking data</li>
+</ul>
+<h2 id="how-it-works">How it works?</h2>
+<p>Extensible data objects are stored in the <strong>Sys_Objects</strong> entity. The system works in the following way:</p>
+<ol>
+<li>An object in an entity requires attaching additional data =&gt; A new record is created in Sys_Objects.</li>
+<li>Additional data is created in sub-tables which have referential integrity to Sys_Objects.</li>
+</ol>
+<p>The record in Sys_Objects has only untyped soft reference (not referential integrity) to the original record. <br> It contains the <strong>Entity_Type</strong> and <strong>Entity_Item_Id</strong> fields, which uniquely identify the original record.</p>
+<p>All additional data is related to Sys_Objects through <strong>typed</strong> referential integrity.</p>
+<p>Therefore, the only untyped soft reference is the original reference in Sys_Objects. <br> Most data is solidly related through typed referential integrity.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong><a href="https://docs.erp.net/tech/advanced/custom-attributes/index.html">Custom attributes</a></strong> system was implemented prior to the EDO system, so it also uses untyped soft reference. <br>
+If it was implemented now, it would be in the form of 'additional data' to the EDO system.</p>
+</div>
+<h2 id="future-plans">Future plans</h2>
+<p>The EDO system is very useful for creating additional data which can be attached to multiple entities.</p>
+<p>It's <strong>not</strong> required for the type of data to be attachable to ALL entities.</p>
+<p>The data model allows attaching data to any entity, but <strong><a href="https://docs.erp.net/model/templates/template-description-system-business-rules.html">system business rules</a></strong> or <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">business rules</a></strong> can be used to limit the entities which 'accept' the data.</p>
+<p>Possible (planned) future uses:</p>
+<ul>
+<li>Comments/Replies - many objects in the system can be augmented by allowing users to comment and reply to them.</li>
+<li>All kinds of attachments - links, pictures, other system objects, etc.</li>
+<li>Tags/Labels for back-link navigation.</li>
+<li>Future simplified implementation of custom properties.</li>
+<li>Reactions - Facebook-inspired reactions.</li>
+<li>Reviews - Marketplace-inspired reviews.</li>
+</ul>
+<h4 id="see-also">See also:</h4>
+<p><strong><a href="https://docs.erp.net/model/entities/Systems.Core.ExtensibleDataObjects.html"><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></a></strong></p>
 </article>
           </div>
           
@@ -217,7 +122,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/data-objects/default-tracking-levels.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/data-objects/edo.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
