@@ -1,8 +1,10 @@
 ## Default tracking levels
 
-Some entities are configured by default to track their changes. The default tracking level is system configured and cannot be lowered. However, the users can specify higher tracking levels.
+Some entities track their changes by default. The tracking level is system-configured and cannot be lowered. 
 
-The following table contains the default system specified tracking levels:
+However, you can specify a **higher** level.
+
+The following table contains default system-specified tracking levels:
 
 | Entity | Default tracking level | Activated in version |
 | -- | ------------------------------- | ---------------------------------------------|
