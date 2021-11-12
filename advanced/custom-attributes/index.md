@@ -1,21 +1,25 @@
 # Custom attributes
 
-![User data attributes](user-data-attributes.png)
+Custom attributes, also known as custom properties, allow you to extend the data model with **user-defined attributes**. 
 
-Custom attributes (also called 'custom properties') allow the user to extend the data model with user-defined attributes. Custom attributes store values in the database, extending the system tables.
+Custom attributes store values in the database, expanding the system tables.
+
+![User data attributes](user-data-attributes.png)
 
 ## Similarity with system attributes
 
-The custom attributes behave mostly like the system attributes.
-They can be shown in columns, grouped and filtered in navigators just like system attributes.
-Again similar to system attributes, they can have default values and shown in the view of data forms.
+Custom attributes behave mostly like system attributes:
 
-Most of the time, the end users can't distinguish between system and custom attributes.
+- They can be shown in columns, grouped and filtered in navigators.
 
-It is up to the implementation team to define custom attributes, which fit best the implementation requirements.
+- They can have default values and be shown in the view of data forms.
 
-## Note
+Most of the time, you won't be able to distinguish between system and custom attributes. 
 
-Many custom attributes can easily be defined and set as 'required'.
-However, this might endanger the whole ERP implementation, since requiring too much data entry for each operation can alienate the end users from the system.
-Carefully balance the business needs with the end user comfort.
+It's up to the implementation team to define the latter, which is subject to implementation requirements.
+
+> [!NOTE]
+> 
+> Many custom attributes can easily be defined and set as 'required'. 
+> However, this might endanger the whole ERP <br> implementation, since requiring too much data entry for each operation can alienate the end users from the system. <br>
+> Business needs should be carefully balanced with the end-user comfort.
