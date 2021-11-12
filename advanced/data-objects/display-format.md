@@ -1,17 +1,14 @@
 # Display format
 
-## Overview
+Each **[entity object](https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html)** must have a representation as text, so it can be visualized in a user interface - in @@winclientfull or @@webclientfull. This is quite a simple task for entity types that have few attributes - not so much for the ones that don't. 
 
-Each [entity object](../concepts/object-relational-mapping.md#definitions) must have a representation as text, so that it can be visualized in a user interface - e.g., in @@winclientfull or @@webclientfull. This is quite a simple task for [entity types](../concepts/object-relational-mapping.md#definitions) that have few attributes, but in reality, most do not. Let's see the following usual entity types as examples,
+**Let's see the following entity types as examples:**
+- Client
+- Product
 
-> Client
->
-> Product
+They're one of the most commonly used in a typical workflow, and can expand to real (sample) data like entities.
 
-These entity types are one of the most commonly used in a typical workflow. Now we will expand these entity types to real (sample) data- i.e., entities.
-
-
-> **Client**
+**Client**
 
 | Number | Name | Sales person |
 | --- | --- | --- |
@@ -19,8 +16,7 @@ These entity types are one of the most commonly used in a typical workflow. Now 
 | 123456 | Kamile Farrington | Natalie Dunn |
 | ab1234 | Kurtis Dickinson | Anderson Fraser |
 
-
-> **Product**
+**Product**
 
 | Code | Name | Measurement unit | Group |
 | --- | --- | --- | --- |
@@ -28,7 +24,9 @@ These entity types are one of the most commonly used in a typical workflow. Now 
 | 1102-01-011 | 1U Server | pcs | Computers |
 | 12345678 | Remote support | h | Services |
 
-Usually, these entities make sense in the context of other ones. E.g., documents, reports, analysis, etc... And therefore, they must be visualized in some way. The most typical way is to display their names (i.e., the "Name" attribute):
+These entities make sense in the context of others (documents, reports, analysis, etc). 
+
+The easiest way to visualize them is to display their names (the "Name" attribute):
 
 > **Client**
 >
@@ -46,14 +44,21 @@ Usually, these entities make sense in the context of other ones. E.g., documents
 >
 > Remote support
 
-Ok, everything seems fine, but what if we need something more? Think in general, not just about printouts or reports, this entity visualization should also apply when we choose a customer or a product (respecting the example above). How will you handle the situation when you have several products, named *"1U Server"*? Wouldn't it be better to see more information (i.e., additional attribute/s) about each entity? How about if you see what's the product availability at the time you choose it?
+#### Everything seems fine, but what if you need something more? 
 
-And this is where the display format becomes important. 
+This entity visualization should also apply when you choose a **customer** or a **product** (respecting the example above). 
 
-@@name allows you to specify the display format of each entity type.
+How will you act when you have several products named *"1U Server"*? 
 
-So, if you need more attributes to be displayed or a specific format of your choice, you are free to customize it. 
-Here is an example of how you could customize the products entity type:
+Wouldn't it be better to see more information about each entity? 
+
+What about if you see the product availability at the time that you choose it?
+
+This is where the **display format** becomes important. @@name allows you to **specify** the display format of each entity type.
+
+If you need more attributes to be displayed, or a specific format of your choice, you're free to customize it. 
+
+Here's an example of how you could customize a product's entity type:
 
 | Display format | Visualization |
 | --- | --- |
@@ -63,35 +68,43 @@ Here is an example of how you could customize the products entity type:
 | `{Code}` | 1103 |
 | `{Code}: ({Name:T})` | 1103: (DEO GALERIA PINK F 150 ML) |
 
-The common thing between all display formats is the fact they use string interpolation- it gives you the opportunity to customize how each one of your entity types will be displayed.
-
-You can find more information on the topic of [string interpolation here](../string-interpolation/index.md).
+Display formats use **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)**, which gives you the opportunity to customize how your entity types will be displayed.
 
 ## Configuring display format
 
-Changing the display format for a entity type is an easy task. Just open its definition and change `Display Text Format` attribute to the desired one.
+Changing the display format of an entity type is an easy task. 
+
+Just open its definition and edit the 'Display Text Format' attribute to the desired one.
 
 ![picture1](./pictures/entity-type-display-format.png)
 
 
-As a result, each entity of this type (i.e., each customer) will be displayed according to the selected display format. In the picture below you can see how a customer dropdown is shown in the @@webclient.
+As a result, each entity of this type will be displayed according to the selected display format. 
 
+In the picture below, you can see how a customer dropdown is shown in the @@webclient:
 
 ![picture2](./pictures/webclient-dropdown.png)
 
-Furthermore, it's possible to specify the display format yourself if the predefined formats don't suit you. It's easy- you just have to follow the rules when specifying the [interpolation string](../string-interpolation/index.md).
+Furthermore, it's possible to specify the display format yourself, if the pre-defined formats don't suit you. 
 
-Also, you may be wondering how you will know the specific attributes of the entity type you need? You can refer to the [@@erpnet Domain Model documentation](https://docs.erp.net/model/entities/). Following to the example above, all the necessary information is available in the [Crm.Customers Entity](https://docs.erp.net/model/entities/Crm.Customers.html).
+Just follow the rules when specifying the **string interpolation**.
 
-Internally the display format attribute for an entity is located in the [Systems.Core.EntitySettings Entity](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat) table.
+> [!NOTE]
+> 
+> How do you know the specific attributes of the entity type that you need? <br> Refer to the [@@erpnet Domain Model documentation](https://docs.erp.net/model/entities/). <br> Following the example above, all the necessary information is available in [Crm.Customers Entity](https://docs.erp.net/model/entities/Crm.Customers.html). <br> Internally, the display format attribute for an entity is located in the [Systems.Core.EntitySettings Entity](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat) table.
 
 ## Examples
 
-In this section you can see several examples of different entity types- sample data, available predefined display formats and their corresponding visualization.
+In this section, you can see several examples of different entity types: 
+
+- sample data
+- available predefined display formats
+
+and their corresponding visualization.
 
 ### Customers
 
-[Customers entity documentation](https://docs.erp.net/model/entities/Crm.Customers.html).
+**[Customers entity documentation](https://docs.erp.net/model/entities/Crm.Customers.html)**.
 
 #### Sample data
 
@@ -125,7 +138,7 @@ In this section you can see several examples of different entity types- sample d
 
 ### Products
 
-[Products entity documentation](https://docs.erp.net/model/entities/General.Products.Products.html).
+**[Products entity documentation](https://docs.erp.net/model/entities/General.Products.Products.html)**.
 
 #### Sample data
 
