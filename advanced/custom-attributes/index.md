@@ -8,7 +8,7 @@ They store values in the database, expanding the system tables.
 
 ## Similarity with system attributes
 
-Custom attributes behave mostly like system attributes:
+Custom attributes behave mostly like **system attributes**:
 
 - They can be shown in columns, grouped and filtered in navigators.
 
