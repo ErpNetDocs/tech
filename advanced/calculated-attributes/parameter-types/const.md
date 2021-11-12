@@ -14,6 +14,6 @@ The formats of the different types of values which are entered are as follows:
 | Date    | date values used in the 'yyyy-MM-dd' format                  | 2020-12-25                           |
 | GUID    | Global Unique Identifier - used for objects identification   | 6B29FC40-CA47-1067-B31D-00DD010662DA |
 | String  | explicitly denoted string, entered in single quotation marks | 'Example text.'                      |
-| Type    | used with **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** for type conversions; the constant is the type to which we want to convert. | System.Int32                         |
+| Type    | used with **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** for type conversions; the constant is the type to which you want to convert. | System.Int32                         |
 
 Everything else is treated as string!
