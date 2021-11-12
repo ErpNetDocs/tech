@@ -9,7 +9,7 @@ In most cases, in order to create a job, you have to simply create a new record 
 Most parameters of the jobs have a default value and can operate without additional adjustments.
 An example is the [J30903 Document print images - Delete old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html) jobs, which has only one parameter - *Print Images Retention Months* field Enterprise Company's definition, which has a default value of "60 months".
 
-However, there are jobs that are jobs that are performing more complicated processes and is not logical to be executed for all records in the database.
+However, there are jobs that are performing more complicated processes and is not logical to be executed for all records in the database.
 They require configuring additional settings. Such an example is **Document state change job**. 
 
 The parameters and therefore the required settings of each job are described in its documentation.
