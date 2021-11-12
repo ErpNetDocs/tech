@@ -4,7 +4,7 @@ uid: extensible-data-objects
 
 # EDO
 
-The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
+The Extensible data objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
 
 The following be attached:
 
@@ -13,7 +13,7 @@ The following be attached:
 
 ## How it works?
 
-EDO objects are stored in the **Sys_Objects** entity. The system works in the following way:
+Extensible data objects are stored in the **Sys_Objects** entity. The system works in the following way:
 
 1. An object in an entity requires attaching additional data => A new record is created in Sys_Objects. 
 2. Additional data is created in sub-tables which have referential integrity to Sys_Objects. 
