@@ -2,166 +2,172 @@
 uid: domain-with-property-allowed-values
 ---
 
-## Domain with property allowed values
+# Domain with property allowed values
 
-Domain is the range of the allowed values of the particular custom property. It is determined in one of the following ways - sorted by priority:
+Domain is the range of the allowed values of a particular custom property. 
 
-1. If _Limit To Allowed Values_ does NOT have a check mark, then any value is valid and the domain is a range of all possible values.
+It's determined in one of the following ways, sorted by priority:
 
-2. If the _Allowed Values Entity Name_ has a value, then the domain is the set of all records of the specified data type.
+1. (highest) If _Limit To Allowed Values_ **doesn't** have a check mark, any value is valid and <br> the domain is a range of **all** possible values.
+
+2. If _Allowed Values Entity Name_ **has** a value, the domain is the set of **all records** of the specified data type.
+   
+     This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Property_ does NOT have a value.
+
+3. If _Allowed Values Property_ has a value, the domain of the current custom property is **equal** to <br> the domain of the custom property specified in this field.
+
+```
+CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
+```
+
+   This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Entity Name_ does NOT have a value.
+
+4. (lowest) A range of the _Property Allowed Values_ listed in the **Gen_Property_Allowed_Values** sub-table.
 
    
 
-> [!Note]
-> 
-> This field should have a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Property_ does not have a value.
+**Example 1:**
 
-3. If the field _Allowed Values Property_ has a value, then the domain of the current custom property is equal to the domain of the custom property specified in this field.
+Let's assume you have the following properties:
 
-   CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
+- Property 1 (entity name = Products)
 
-   
+- Property 2 (allowed values property = Property 1)
 
-> [!Note]
-> 
-> This field should have a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Entity Name_ does NOT have a value.
+- Property 3 (entity name = Products)
 
-4. (Default, Lowest Priority) The domain is the range of the _Property Allowed Values_ listed in the Gen_Property_Allowed_Values sub-table.
+- Property 4 (entity name = Companies)
 
-   
+- Property 5 (allowed values property = Property 2)
 
-***Example 1:***
+- Property 6 (limit to allowed values = False)
 
-Let's assume that we have the following properties:
+**In this case, the domains are:**
 
-property 1 (entity name = Products)
+- Property 1 - Products
 
-property 2 (allowed values property = Property 1)
+- Property 2 - Products
 
-property 3 (entity name = Products)
+- Property 3 - Products
 
-property 4 (entity name = Companies)
+- Property 4 - Companies
 
-property 5 (allowed values property = Property 2)
+- Property 5 - Products
 
-property 6 (limit to allowed values = False)
-
-In this case, the domains are:
-
-property 1 - Products
-
-property 2 - Products
-
-property 3 - Products
-
-property 4 - Companies
-
-property 5 - Products
-
-property 6 – all possible values
+- Property 6 – all possible values
 
 ## Compatible custom properties
 
-Two custom properties are copy compatible when then and only then their domains are the same. The compatibility allows us to copy values from one custom property to another. It is still possible the copying to throw an error, but this would be caused by different reasons – additional filters set in the definition, for example
+Two custom properties are copy-compatible **ONLY** when their domains are the same. 
 
-An important note is that the additional filters do not change the domain of the custom property. They just reduce the range with allowed values. It is also possible future procedures or rules to be added – but they won’t change the actual domain of the custom properties either. In general, we can accept that the domain of the allowed values, from a programming point of view, could be defined as a kind of custom property type.
+Compatibility allows you to copy values from one custom property to another. This process could result in an error, but it would be caused by various reasons, such as additional filters being set in the definition. 
 
-***Example 2:***
+> [!NOTE]
+> 
+> Additional filters **don't** change the domain of the custom property - they simply reduce the range with allowed values. <br>
+> It's also possible for future procedures or rules to be added, but they **won’t** change the domain of the custom properties, either. <br>
+> From a programming perspective, the domain of allowed values could be defined as a **custom property type**.
 
-If we use the description of Example 1, we can conclude that Property 1 is compatible with Property 2.
+**Example 2:**
 
-Both of them are compatible with Property 3 and Property 5.
+If you use Example 1, you can conclude that:
 
-On the other hand Property 1, Property 2, Property 3 and Property 5 are compatible with each other.
+- 'Property 1' is compatible with 'Property 2'.
 
-Property 4 in not compatible with none of the above.
+- Both of them are compatible with 'Property 3' and 'Property 5'.
 
-Property 6, although it could receive any possible value, is also noncompatible with other custom properties.
+- On the other hand, 'Property 1', 'Property 2', 'Property 3' and 'Property 5' are compatible with one other.
+
+- 'Property 4' isn't compatible with none of the above.
+
+- Although it could be any value, 'Property 6' is also incompatible with the other custom properties.
 
 ## Inheriting and hereditary root
 
- A custom property inherits another custom property by indicating a (hereditary) parent property in the _Allowed Values Property_ field. The hereditary root is the grand-parent, which does not have a hereditary root on its own. The hereditary root of a custom property clearly defines its domain and is a prerequisite for automatic copying of its allowed values.
+A custom property inherits another custom property by indicating a (hereditary) **parent** property in the _Allowed Values Property_ field. 
+ 
+The hereditary root of a custom property is considered **grand-parent**, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.
 
 A hereditary root is defined as follows:
 
-1. If _Allowed Values Property_ does not have a value, then the hereditary root is the custom property itself
+1. If _Allowed Values Property_ doesn't have a value, the hereditary root is **the custom property** itself
 
-2. Otherwise, the hereditary root is equal to the hereditary root of the parent custom property.
-   This means that:
-   HereditaryRoot (Property) = HereditaryRoot(Property. AllowedValuesProperty)
-   i.e. we look recursively in the relation Allowed Values Property.
+2. Otherwise, it's equal to the hereditary root of the **parent custom property**.
 
-   
+   This means that:<br>
+   HereditaryRoot (Property) = HereditaryRoot(Property. AllowedValuesProperty)<br>
+   i.e. you look recursively in the relation _Allowed Values Property_.
 
-***Example 3:***
+**Example 3:**
 
-If we use the example above, custom properties have the following hereditary roots:
+According to the example above, custom properties have the following hereditary roots:
 
-Property 1: Property 1
+- Property 1: Property 1
 
-Property 2: Property 1
+- Property 2: Property 1
 
-Property 3: Property 3
+- Property 3: Property 3
 
-Property 4: Property 4
+- Property 4: Property 4
 
-Property 5: Property 1
+- Property 5: Property 1
 
-Property 6: Property 6
+- Property 6: Property 6
 
 ## Copying
 
-Hereditary roots are used to determine the most appropriate 'partner' for the automatic copying of the allowed values of the custom properties.
+Hereditary roots determine the most appropriate 'partner' for automatic copying of the allowed values of custom properties.
 
-We will look at an example in which we want to copy custom properties from a customer to a sales order document:
+**Example 4:** 
 
-***Example 4:*** 
+Let’s assume that you want to copy custom properties from a customer to a sales order document.
 
-Let’s assume that:
+The customer has the following properties:
 
-- the customer has the following custom properties:
+- FAVORITE-PRODUCT: (entity name = Products)
 
-FAVORITE-PRODUCT: (entity name = Products)
+- ADVANCE-PRODUCT: (entity name = Products)
 
-ADVANCE-PRODUCT: (entity name = Products)
+In the sales order document type, the following custom properties are set:
 
-- In the sales order document type are set the following custom properties:
+- FAVORITE-PRODUCT-CUSTOMER: Allowed Values Property = CUSTOMER. FAVORITE-PRODUCT
 
-FAVORITE-PRODUCT-CUSTOMER: Allowed Values Property = CUSTOMER. FAVORITE-PRODUCT
+- SALE-ADVANCE-PRODUCT: Allowed Values Property = CUSTOMER.ADVANCE-PRODUCT
 
-SALE-ADVANCE-PRODUCT: Allowed Values Property = CUSTOMER.ADVANCE-PRODUCT
+**In this case:**
 
+- All four custom properties are 'compatible'. They could inherit values from one another.
 
-
-In this case:
-
-- All 4 custom properties are 'compatible'. They could inherit values from one another.
 - At the same time, only the following pairs have the same hereditary root:
 
 ​    A) FAVORITE-PRODUCT-CUSTOMER and FAVORITE-PRODUCT
 
 ​    B) SALE-ADVANCE-PRODUCT and ADVANCE-PRODUCT
 
-Copying: Accordingly, when specifying a customer in sales order, only the custom properties that have the same hereditary root will be automatically copied from the customer to the document.
+When specifying a customer in a sales order, **only** the custom properties that have the same hereditary root <br> will be automatically copied to the document.
 
 ## Custom properties value priorities (when copying to a document)
 
-The priority for automatic copying of custom properties to a document is determined according to the following priorities (from the highest to the lowest priority):
+The priority for automatic copying of custom properties by the following priorities:
 
->[!Note]
+> [!NOTE]
 >
->The priorities represent the following logic. If for a custom property is found a value with a higher priority, then – copy the value. If not – search for values with lower priorities
+> If a value with higher priority is found for a custom property, it's copied. If not – you should search for values with lower priorities.
 
-1. Inherited values from the parent document. (Priority 80)
+1. Values inherited from the parent document. (Priority 80)
 
-1. The values set in the panel Copy Customer Properties (valid only for sale orders, but the same priority applies if there is a similar table for other types of data). (Priority 70)
+2. Values set in the panel **Copy Customer Properties**. (Priority 70) 
+ 
+   This is valid only for sales orders, but the same priority applies if there's a similar table for other types of data.
 
-1. Values from custom properties with the same hereditary root in the definition of the 'main contractor' of the document. In general cases, this is the party loaded in the field _To Party_ (an exception are purchase invoices, where the supplier is considered as a 'main contractor'). (Priority 50)
+3. Values of custom properties with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)
+   
+    In general cases, this is the party loaded in the field _To Party_. <br> Purchase invoices are exceptions - there, the supplier is considered a 'main contractor'. 
 
-1. The default values specified in the document type. (Priority 20)
+4. Default values specified in the document type. (Priority 20)
 
-1. If none of the above contains a value for the custom property, but it is specified in the document type – set an empty (NULL) value. (Priority 10)
+5. If none of the above contains a value for the custom property, but the value is instead specified in the document type: <br> Set an empty (NULL) value. (Priority 10)
 
-> [!Note]
+> [!NOTE]
 >
-> Every manual change of value of custom property, should be done after being entered values in all relevant nomenclatures (enterprise company, customer, parent document etc.)
+> Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures <br> (enterprise company, customer, parent document etc.)
