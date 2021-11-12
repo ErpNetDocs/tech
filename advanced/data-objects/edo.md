@@ -35,7 +35,7 @@ The EDO system is very useful for creating additional data which can be attached
 
 It's **not** required for the type of data to be attachable to ALL entities.
 
-The data model allows attaching data to any entity, but **system business rules** or **[business rules](https://docs.erp.net/tech/advanced/business-rules/index.md)** can be used to limit the entities which 'accept' the data.
+The data model allows attaching data to any entity, but **[system business rules](https://docs.erp.net/model/templates/template-description-system-business-rules.html)** or **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** can be used to limit the entities which 'accept' the data.
 
 Possible (planned) future uses:
 
