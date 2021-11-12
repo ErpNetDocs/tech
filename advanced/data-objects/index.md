@@ -11,4 +11,4 @@ The following data and operations can be associated with a data object:
 * **[Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**
 * file attachments
 
-For more detailed information, see **[Extensible data objects](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html)**.
+For more detailed information, see **[EDO](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html)**.
