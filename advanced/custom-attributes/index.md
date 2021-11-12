@@ -2,7 +2,7 @@
 
 Custom attributes, also known as custom properties, allow you to extend the data model with **user-defined attributes**. 
 
-Custom attributes store values in the database, expanding the system tables.
+They store values in the database, expanding the system tables.
 
 ![User data attributes](user-data-attributes.png)
 
