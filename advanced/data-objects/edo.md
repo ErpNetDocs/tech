@@ -27,7 +27,7 @@ Therefore, the only untyped soft reference is the original reference in Sys_Obje
 > [!NOTE] 
 > 
 > The **[Custom attributes](https://docs.erp.net/tech/advanced/custom-attributes/index.html)** system was implemented prior to the EDO system, so it also uses untyped soft reference. <br>
-> If the **Custom properties** system is implemented now, it would be in the form of 'additional data' to the EDO system.
+> If it was implemented now, it would be in the form of 'additional data' to the EDO system.
 
 ## Future plans
 
