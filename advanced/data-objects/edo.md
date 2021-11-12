@@ -9,7 +9,7 @@ The Extensible Data Objects (EDO) is a system in @@name, which allows attaching 
 The following can be attached:
 
 - files
-- **[Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)** tracking data
+- **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)** tracking data
 
 ## How it works?
 
