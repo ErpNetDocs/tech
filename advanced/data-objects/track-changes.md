@@ -4,15 +4,14 @@ uid: track-changes
 
 # Track changes
 
-*Track Changes* is a system in @@name, which can be used to track the changes in any data table.
+Track Changes is a system in @@name which can be used to track the changes in а data table.
 
 
 ## Tracking levels
 
-The tracking levels specify the detail level of the tracking, as per the following table:
+Тracking levels specify the detail level of the tracking, as per the following table:
 
-
-| Track Changes level | Name | Description |
+| Level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
 | 0 | Do not track changes | Do not track any changes for this entity. |
 | 1 | Track last change | Store information only for the latest modification of the tracked object. |
@@ -112,9 +111,10 @@ The track changes functionality is activated through the @Systems.Core.EntitySet
 For document entities is provided an opportunity for mass activation of the *Track Changes* system using the **DocumentVersioningSystem** registry key. For more information see the description key number 42 in the [Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html) topic.
 
 > [!NOTE] 
+> 
 > If you try to configure a level lower than the default tracking levels, the option will be ignored.
 
-## Default tracking levels
+### See more:
 
-[Default tracking levels](https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html)
+**[Default tracking levels](https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html)**
 
