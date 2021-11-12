@@ -4,7 +4,7 @@ uid: extensible-data-objects
 
 # EDO
 
-The Extensible data objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
+The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
 
 The following can be attached:
 
