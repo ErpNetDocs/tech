@@ -1,4 +1,4 @@
-## Default tracking levels
+# Default tracking levels
 
 Some entities track their changes by default. The tracking level is system-configured and cannot be lowered. 
 
