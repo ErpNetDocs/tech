@@ -1,1 +1,0 @@
-[!include[format-specifiers](../advanced/string-interpolation/format-specifiers.md)]
