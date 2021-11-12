@@ -32,4 +32,4 @@ The following table contains default system-specified tracking levels:
 | User groups | 3 | 2019.1 |
 | Users | 3 | 2019.1 |
 
-For more information on track changes, please check out **[Track changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**.
+For more information on track changes, please check out **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**.
