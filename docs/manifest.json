@@ -1143,7 +1143,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/explicit-calculation.html",
-          "hash": "eRDIN806XDtADAy5cZG0Pw=="
+          "hash": "1vyERmzP4J5Rfg3m8ymVlA=="
         }
       },
       "is_incremental": false,
@@ -1155,7 +1155,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/index.html",
-          "hash": "TfOpUDX90kpqgiJXmYHb7A=="
+          "hash": "aS7sex6TCR0d9Wstx6tTAg=="
         }
       },
       "is_incremental": false,
@@ -1167,7 +1167,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "dzPH/oq+Y8Ai/9aBd+a2Iw=="
+          "hash": "dIw5Zct7YSdIWtSGZml7RQ=="
         }
       },
       "is_incremental": false,
