@@ -18,7 +18,9 @@ In the definition, transport is distributed by quantity and the measurement cate
 
 The document where the additional amount is selected has three rows:
 
-row #10 with quantity of **2 boxes**, <br> row #20 with quantity of **25 pieces** <br> row #30 with quantity of **18 kg**. 
+- row #10 with quantity of **2 boxes**, <br> 
+- row #20 with quantity of **25 pieces** <br> 
+- row #30 with quantity of **18 kg**. 
 
 The product of row #20 has the following dimension: **1 boxes = 10 pieces**. <br> The product of row #30 has the following dimension: **1 boxes = 3 kg**. 
 
