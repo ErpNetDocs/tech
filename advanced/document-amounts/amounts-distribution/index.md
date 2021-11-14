@@ -1,48 +1,80 @@
 # Amounts distribution
 
-After the additional sum is calculated (see [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)), the result is not saved directly in the document, but it is distributed through the document rows ( more precisely - through those rows which  the additional amount is applied to - the ones with nonzero weight, see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)) and this distribution is saved in the document. So after the amount is  calculated and distributed, if the user needs to see the total value of  the additional amount, he has to  sum up all the values from its  distribution. This is easier than saving the total additional amount in  the document, because often the distributed to a specific row amount is  needed (for example - to see the VAT distributed to a specific product  or the transport distributed to a specific product, so that we can add  this amount to its value). If we save the total additional amount in the document, in these cases the user will have to distribute the amounts  at the moment, which is not very effective. 
+After an additional sum is **[calculated](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)**, the result is not saved directly in the document, but distributed among document rows with nonzero **[weight](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)** where the additional amount is applied to. This distribution is then reflected in the document. 
 
-The article (and the  subarticles) descirbes the methods for distributing the amounts throught the rows. Also, a procedure for amount distribution is described  when, because of roundings, the amount cannot be precisely distributed,  and other specific cases.
+After the amount is calculated and distributed, if you need to see the total value of the additional amount, you'll have to sum up all the values from its  distribution. This is easier than saving the total additional amount in the document. To see the VAT or the transport distributed to a specific product, you may often need just the amount distributed to a specific row.
+
+If you save the total additional amount in the document, you'll have to distribute the amounts at the moment, which isn't effective. 
+
+The following article(s) will descirbe different methods for distributing amounts through rows. 
 
 ## Common principle of distribution
 
-The distribution principle is defined in the additional amount definition  (by *Distributed By* field). There are three basic methods
-- by quantity (see [Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)),
--  by amount (see [Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html) and 
-- by product definition (see [Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)). Every method expects that a proportion of the amount distributed by the rows  should be defined so the distribution to be executed.
+The distribution principle is defined in the additional amount definition  (by *Distributed By* field). 
 
-So if we have **n** rows on which we have to distribute additional amount, for every row a weight is defined - [**k1**], [**k2**] ... [**kn**]. In the common case, these are different coefficients than those described in [rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) (but in some specific cases the coefficients from [rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html) may participate in the calculation of the distribution weights). So if the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount is not equal to 0, than the **i**-row the proportion is [**ki**]/[**S**]:
+There are three basic methods
+
+- by **[quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)**,
+- by **[amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**, 
+- by **[product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)**. 
+ 
+Every method suggests that a proportion of the amount distributed by the rows should be defined so the distribution can be executed.
+
+If you have **n** rows on which you have to distribute additional amount, for every row, a weight is defined:
+
+[**k1**], [**k2**] ... [**kn**]
+
+These are different coefficients from those described in **[rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
+
+Uf the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount isn't equal to 0, <br> then the **i**-row of the proportion is [**ki**]/[**S**]:
 
 [distribution to row **i**] = ROUND([amount] * [**ki**] / [**S**], [Round Scale]),
 
-where *Round Scale* is property of the additional amount definition. This is a standart distribution alogorithm. Specific cases are when [**S**] is **0**. Usually, in those cases the additional amount is distributed evenly through the row, using the following formula:
+where *Round Scale* is property of the additional amount definition. 
+
+This is a **standard distribution alogorithm**. A specific case is when [**S**] is **0**. 
+
+Most of the time, the additional amount is distributed evenly throughout the row, using the following formula:
 
 [row **i** distribution] = ROUND([amount] / [rows count], [Round Scale]),
 
-but in some cases there are some more specific calculations (for  example,when the amount is distributed by amount or by product  definition and the additional amount is percent).
+but in some cases, there are more specific calculations, such as when the amount is distributed by amount or by product definition and the additional amount is percent.
 
-Sometimes the  additional amount may not be able to be distributed exactly through the  rows. In these cases, an attempt is made to allocate the balance  throught the rows which the amount is distributed to. Normally, it is  impossible to distribute equal part of the balance to all rows  (otherwise there will be no balance). So the balance is distributed  throught the first several rows. Also, in this balance distribution we  cannot distribute less than:
+Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance. 
+
+The balance is therefore distributed throughout the first several rows. You can't distribute less than:
 
 [minimal balance distribution on a row] = 1 / 10[Round Scale].
 
-***Example 1:***
+**Example:**
 
-If we have **12** rows and the amount of **9.13 EUR** to distribute with the following weights: [**k1**] = [**k2**] = ... = [**k10**] = **1**, and [**k11**] = [**k12**] = **0**. So **9.13 EUR** is distributed on the first 10 rows and, at first, we apply the formula to get the the distribution of 9.13 EUR / 10 ~ **0.91 EUR** (assuming we have Round Scale = 2). In this case, we distribute only 10 * 0.91 = **9.10 EUR** and the amount left (**0.03 EUR)** have to be distributed through the first 10 rows. As we cannot distribute less than 1 / 102 = 0.01 EUR, so only the first three rows are increase by 0.01 EUR.
+You have **12** rows and the amount of **9.13 EUR** to distribute with the following weights: 
 
-This is how the final distribution is achieved: 
+[**k1**] = [**k2**] = ... = [**k10**] = **1**, and [**k11**] = [**k12**] = **0**
 
-- on the first three rows the amount of **0.92 EUR** is distributed;
+**9.13 EUR** is distributed on the first 10 rows and you'll apply the formula to get the the distribution of 9.13 EUR / 10 ~ **0.91 EUR** (assuming you have _Round Scale_ = 2). In this case, you distribute only 10 * 0.91 = **9.10 EUR** and the amount left (**0.03 EUR)** needs to be distributed through the first 10 rows.
 
-- on the next seven rows the amount of **0.91 EUR** is distributed;
+Since you can't distribute less than 1 / 102 = 0.01 EUR, only the first three rows increase by 0.01 EUR.
 
-- the last two rows no amount is distributed. 
+This is how the final distribution looks like: 
+
+- on the first three rows, the amount of **0.92 EUR** is distributed;
+
+- on the next seven rows, the amount of **0.91 EUR** is distributed;
+
+- on the last two rows, no amount is distributed. 
  
+If the round scale is more than 2, there's a chance that part of the amount will be lost. 
 
-If the round scale is more than 2 there is a chance part of the amount to be lost. For example, if the additional amount is **10 EUR** and it is distributed equally throught **3** rows and the round scale is **3.** In this case for every row the amount of ROUND(3.333333333333333, 3) = **3.333 EUR** is distributed. When we save a document like this, the numbers after  the second digit after the decimal point will be cut. So in the database we will have **3.33 EUR** for each row. So the total amount will be **9.99 EUR** and **0.01 EUR** will be lost.
+For example, if the additional amount is **10 EUR** and it's distributed equally throughout **3** rows and the round scale is **3.**, then for every row, the amount of ROUND(3.333333333333333, 3) = **3.333 EUR** will be distributed. 
 
-For further information on how the distibuted amount is calculated by each method, see the following articles:
+When you save a document like this, the numbers after the second digit will be cut. 
 
- 
+In the database, you'll have **3.33 EUR** for each row. The total amount will be **9.99 EUR** and **0.01 EUR** will be lost.
+
+## See more 
+
+For more information on how the distributed amount is calculated by each method, check out:
 
 - **[Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**
 - **[Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)**
