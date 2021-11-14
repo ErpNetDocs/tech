@@ -1,6 +1,6 @@
 # Percent value calculation
 
-Here, the percent from _Input percent_ is used. 
+Here, _Input percent_ will be used. 
 
 You should know the value of the amounts which will be used to apply the percent calculation. It's defined by the additional amount definition in the *Base On Lines* field and the **Document Amount Type Dependencies** panel (also known as **Base Additional Amounts**). 
 
