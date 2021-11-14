@@ -24,7 +24,7 @@ If you have the following additional amounts:
 
 - Corporate discount:
 
-    - Default percent is -3%;
+    - Default Percent is -3%;
     - Base On Lines is True;
     - there are no other additional amounts listed in the **Document Amount Type Dependencies** panel;
     - Round Scale is '2';
@@ -38,8 +38,8 @@ If you have the following additional amounts:
     
 - VAT:
 
-    - Default percent is 20%; 
-    - Base on Lines is True;
+    - Default Percent is 20%; 
+    - Base On Lines is True;
     - the **Document Amount Type Dependencies** panel states that VAT is applied to Corporate discount and Easter bonus;
     - Round Scale is '2';
  
@@ -58,8 +58,8 @@ If you have two document rows - one with a line amount of 150 EUR and another wi
 
 You have only one additional amount - commission. Its definition has the following properties:
 
-- Default percent is 5%;
-- Distribute by is 'Product Definition'. The weight of the specific product is 100%;
+- Default Percent is 5%;
+- Distribute By is 'Product Definition'. The weight of the specific product is 100%;
 - Base On Lines is True;
 - Add to customer is False;
 - Add to line is False;
@@ -99,7 +99,7 @@ The final result for the amount is:
 
 If you have the following properties in the additional amount, VAT:
 
-- Default percent is True;
+- Default Percent is True;
 - Round Scale is '2';
 - Base On Lines is True;
 
