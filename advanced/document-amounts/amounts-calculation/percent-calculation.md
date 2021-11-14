@@ -1,66 +1,69 @@
 # Percent value calculation
 
-Here, the percent from Input percent is used. 
+Here, the percent from _Input percent_ is used. 
 
-First, we should know the value of the amounts which will be used to apply the percent calculation. It is defined by the additional amount definition in *Base On Line* field and the *Document Amount Type Dependencies* panel (also known as *Base Additional Amounts*). According to the definitions, the base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:
+You should know the value of the amounts which will be used to apply the percent calculation. It's defined by the additional amount definition in the *Base On Lines* field and the **Document Amount Type Dependencies** panel (also known as **Base Additional Amounts**). 
+
+Тhe base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:
  
 **[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])**.
  
-The Base amount is defined in two steps:
+Base amount is defined in two steps:
 
-1. Sum the amounts of the current document to all additional amounts listed in the *Document Amount Type Dependencies* panel. This requires the previous calculation of the other amounts.
+1. Sum the amounts of the current document to all additional amounts listed in the **Document Amount Type Dependencies** panel. <br>
+This requires the previous calculation of the other amounts.
 
-2. If the Additional Amount is marked as 'Base On Lines' , then the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights - then we multiply by 100%). 
+2. If the аdditional аmount is marked as _Base On Lines_, the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights, you multiply by 100%). 
 
-For more information, see [Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html).
+For more information, see **[Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)**.
 
 
-***Example 1:***
+**Example 1:**
 
-If we have the following additional amounts:
+If you have the following additional amounts:
 
 - Corporate discount:
 
-    - Default percent is -3%;
-    - Base on lines is True;
-    - there are no other additional amounts listed in the *Document Amount Type Dependencies* panel;
-    - Round scale is '2';
+    - _Default percent_ is -3%;
+    - _Base On Lines_ is True;
+    - there are no other additional amounts listed in the **Document Amount Type Dependencies** panel;
+    - _Round scale_ is '2';
     
 - Easter bonus:
 
-    - No Default percent;
-    - Amount input allowed is True;
-    - Percent input allowed is False;
-    - Round scale is '2';
+    - No _Default percent_;
+    - _Amount input allowed_ is True;
+    - _Percent input allowed_ is False;
+    - _Round scale_ is '2';
     
 - VAT:
 
-    - Default percent is 20%; 
-    - Base on lines is True;
-    - the *Document Amount Type Dependencies* panel states that VAT is applied to corporate discount and Easter bonus;
-    - Round scale is '2';
+    - _Default percent_ is 20%; 
+    - _Base on lines_ is True;
+    - the **Document Amount Type Dependencies** panel states that VAT is applied to Corporate discount and Easter bonus;
+    - _Round scale_ is '2';
  
-If we have two document rows - one with a line amount of 150 EUR and another with 40 EUR, then we enter an additional Easter bonus value of -10 EUR. 
+If you have two document rows - one with a line amount of 150 EUR and another with 40 EUR, <br> then you enter an additional Easter bonus value of -10 EUR. 
 
-The calculations for the three additional amounts are as follows:
+**The calculations for the three additional amounts are as follows:**
 
-- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows);</br> so [Corporate Discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
+- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows);</br> so [Corporate discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
 
-- Easter bonus is **-10 EUR** (there is no currency conversion because the amount is in EUR);
+- Easter bonus is **-10 EUR** (there's no currency conversion because the amount is in EUR);
 - VAT is calculated:</br>
-[base amount] = [document rows amounts] + [Corporate Discount] + [Easter Bonus]  = **190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR**; so **[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR**
+[base amount] = [document rows amounts] + [Corporate discount] + [Easter bonus]  = **190 EUR + -5.70 EUR+ -10 EUR = 174.3 EUR**; so **[VAT] = ROUND(174.3 EUR * 0.2, 2) = 34.86 EUR**
  
  
-***Example 2:***
+**Example 2:**
 
-We have only one additional amount - commission. Its definition has the following properties:
+You have only one additional amount - commission. Its definition has the following properties:
 
-- Default percent is 5%;
-- Distribute by is 'Product Definition'. The weight of the specific product is 100%;
-- Base on lines is True;
-- Add to customer is False;
-- Add to line is False;
-- Round scale is '2'.
+- _Default percent_ is 5%;
+- _Distribute by_ is 'Product Definition'. The weight of the specific product is 100%;
+- _Base On Lines_ is True;
+- _Add to customer_ is False;
+- _Add to line_ is False;
+- _Round scale_ is '2'.
 
 The example document has three rows:
 
@@ -83,21 +86,22 @@ The final result for the amount is:
 [Commission] = ROUND(**109 EUR * 0.05, 2**) = **5.45 EUR**
 
 >[!NOTE]
-> When we have to calculate percent and the document amount is part of the base amount (*Based On Lines* is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately. 
+>
+> When you have to calculate percent and the document amount is part of the base amount (*Base On Lines* is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately. 
 > 
-> So the final result is:
+> Тhe final result is:
 > 
 > [additional amount] = [positive amount] + [negative amount]
 > 
- These two subtotals may be used in the additional amount distribution. For further information, see [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html).
+ These two subtotals may be used in the additional amount distribution. For further information, see **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
-***Example 3*:***
+**Example 3*:**
 
-If we have the following properties in the additional amount, VAT:
+If you have the following properties in the additional amount, VAT:
 
-- Default percent is True;
-- Round scale is '2';
-- Base on lines is True;
+- _Default percent_ is True;
+- _Round scale_ is '2';
+- _Base On Lines_ is True;
 
 the example document has the following rows:
 
@@ -109,7 +113,7 @@ and the base amount of the additional amount is:
 
 [VAT] = ROUND((**74 EUR+ 26 EUR + -45 EUR**) * **0.2**, 2) = ROUND(**55 EUR * 0.2**, 2) = **11 EUR**,
 
-But we also have the additional subtotals:
+But you also have the additional subtotals:
 
 [positive VAT amount] = ROUND((**74 EUR + 26 EUR**) * **0.2**, 2) = ROUND(**100 EUR * 0.2**, 2) = **20 EUR**,<br>
 [negativeVAT amount] = ROUND(**-45 EUR** * 0.2, 2) = **-9 EUR**.
