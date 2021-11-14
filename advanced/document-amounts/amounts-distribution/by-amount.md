@@ -4,7 +4,7 @@ When distributing by amount, rows amounts are used to define the distribution pr
 
 Two types exist:
 
-- row amounts (only if the additional amount has _Base On Line_ as 'True');
+- row amounts (only if the additional amount has _Base On Lines_ as 'True');
 - amounts distributed to the rows (only the ones which  participate in the base amount of the current additional amount).
 
 To define the proportion of row **i**, its coefficient is calculated as follows:
@@ -15,7 +15,7 @@ To define the proportion of row **i**, its coefficient is calculated as follows:
 
 If there are no such amounts, thеn in this initial calculation, you have [**ki**] = **0**. 
 
-If _Base On Line_ is 'True' (in the current additional amount), the row amount is added to the initial value for [**ki**]:
+If _Base On Lines_ is 'True' (in the current additional amount), the row amount is added to the initial value for [**ki**]:
 
 [**ki**] = [**ki**] + [row **i** amount].
 
@@ -42,7 +42,7 @@ There are the following additional amounts:
   - Input percent: **-3%**;
   - Distributed by: **Amount**;
   - Round Scale: **2**;
-  - Base On Line: **True**.
+  - Base On Lines: **True**.
 
 - Eastern bonus:
 
@@ -56,7 +56,7 @@ There are the following additional amounts:
   - Input percent: **20%**;
   - Distributed by: **Amount**;
   - Round Scale: **2**;
-  - Base On Line: **True**;
+  - Base On Lines: **True**;
   - in the **Document Amount Type Dependencies** panel, VAT is also applied on the Corporate discount and Easter bonus;
 
 The document has two rows: row \\#10 for **150 EUR** and row \\#20 for **40 EUR**. 
