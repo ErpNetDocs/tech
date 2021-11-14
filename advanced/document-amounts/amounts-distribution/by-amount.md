@@ -39,22 +39,22 @@ There are the following additional amounts:
 
 - Corporate discount:
 
-  - Input percent: **-3%**;
-  - Distributed by: **Amount**;
+  - Input Percent: **-3%**;
+  - Distributed By: **Amount**;
   - Round Scale: **2**;
   - Base On Lines: **True**.
 
 - Eastern bonus:
 
-  - Distributed by: **Amount**;
+  - Distributed By: **Amount**;
   - Round Scale: **2**;
 
   - Input amount: **-10 EUR**.
 
 - VAT:
 
-  - Input percent: **20%**;
-  - Distributed by: **Amount**;
+  - Input Percent: **20%**;
+  - Distributed By: **Amount**;
   - Round Scale: **2**;
   - Base On Lines: **True**;
   - in the **Document Amount Type Dependencies** panel, VAT is also applied on the Corporate discount and Easter bonus;
