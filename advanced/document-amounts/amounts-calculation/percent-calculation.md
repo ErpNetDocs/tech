@@ -27,21 +27,21 @@ If you have the following additional amounts:
     - _Default percent_ is -3%;
     - _Base On Lines_ is True;
     - there are no other additional amounts listed in the **Document Amount Type Dependencies** panel;
-    - _Round scale_ is '2';
+    - _Round Scale_ is '2';
     
 - Easter bonus:
 
     - No _Default percent_;
     - _Amount input allowed_ is True;
     - _Percent input allowed_ is False;
-    - _Round scale_ is '2';
+    - _Round Scale_ is '2';
     
 - VAT:
 
     - _Default percent_ is 20%; 
-    - _Base on lines_ is True;
+    - _Base on Lines_ is True;
     - the **Document Amount Type Dependencies** panel states that VAT is applied to Corporate discount and Easter bonus;
-    - _Round scale_ is '2';
+    - _Round Scale_ is '2';
  
 If you have two document rows - one with a line amount of 150 EUR and another with 40 EUR, <br> then you enter an additional Easter bonus value of -10 EUR. 
 
@@ -63,7 +63,7 @@ You have only one additional amount - commission. Its definition has the followi
 - _Base On Lines_ is True;
 - _Add to customer_ is False;
 - _Add to line_ is False;
-- _Round scale_ is '2'.
+- _Round Scale_ is '2'.
 
 The example document has three rows:
 
@@ -100,7 +100,7 @@ The final result for the amount is:
 If you have the following properties in the additional amount, VAT:
 
 - _Default percent_ is True;
-- _Round scale_ is '2';
+- _Round Scale_ is '2';
 - _Base On Lines_ is True;
 
 the example document has the following rows:
