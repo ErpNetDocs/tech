@@ -21,5 +21,5 @@ The commission amount is **5.45 EUR** and the distribution of this amount is cal
 The amount of **5.45 EUR** is distributed in 40:69 ratio as follows:
 
 [row #10 commission] = 5.45 EUR * 0 / 109 = **0 EUR**; <br>
-[row #20 commission] = 5.45 EUR * 40 / 109 = **2 \EUR**; <br>
-[row #30 commission] = 5.45 EUR * 69 / 109 = **3.45 \EUR**. 
+[row #20 commission] = 5.45 EUR * 40 / 109 = **2 EUR**; <br>
+[row #30 commission] = 5.45 EUR * 69 / 109 = **3.45 EUR**. 
