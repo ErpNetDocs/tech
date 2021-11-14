@@ -21,7 +21,7 @@ The values entered in *Input Percent* and *Input Amount* can be managed by the *
 
 > [!NOTE]
 > 
-> In both methods, the program calculates an end amount rounded to a specific number of digits after the decimal point. This is an option of the additional amount definition – the *Round Scale* field. The round scale itself isn't used in the end amount. As an intermediate amount, it's used for amount distribution. The rounded amounts are always limited to the second digit after the decimal point before being saved in the database.
+> In both methods, the program calculates an end amount rounded to a specific number of digits after the decimal point. This is an option of the additional amount definition – the *Round Scale* field. <br> The round scale itself isn't used in the end amount. As an intermediate amount, it's used for amount distribution. The rounded amounts are always limited to the second digit after the decimal point before being saved in the database.
  
 **For more information, refer to:**
 
