@@ -48,7 +48,6 @@ There are the following additional amounts:
 
   - Distributed By: **Amount**;
   - Round Scale: **2**;
-
   - Input Amount: **-10 EUR**.
 
 - VAT:
