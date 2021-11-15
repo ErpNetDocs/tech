@@ -32,6 +32,13 @@ The following calculated attribute sums all sales order lines, the product of wh
 - has a user data attribute called 'CustPropPrj', equal to '500'
 - has a name containing the word 'Tool'
 
+--------
+### See more
+
+- **[Operators](https://docs.erp.net/tech/advanced/calculated-attributes/operators/index.html)**
+- **[Examples](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html)**
+- **[Parameter types](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/index.html)**
+- **[Q&A](https://docs.erp.net/tech/advanced/calculated-attributes/QA/index.html)**
 
 | No | Operation | Param1 | Param2 | Param3 |
 |----|-----------|--------|--------|--------|
