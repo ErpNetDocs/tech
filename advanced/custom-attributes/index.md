@@ -25,6 +25,6 @@ It's up to the implementation team to define the latter, which is subject to imp
 > Business needs should be carefully balanced with the end-user comfort.
 
 ----------
-## See more
+### See more
 
 - **[Domain with property allowed values](https://docs.erp.net/tech/advanced/custom-attributes/domain-with-property-allowed-values.html)**
