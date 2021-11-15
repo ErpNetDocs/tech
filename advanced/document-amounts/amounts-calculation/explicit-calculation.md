@@ -4,7 +4,7 @@ The explicit amount entered through the *Input Amount* and *Input Amount Currenc
 
 The result is the **end amount** of the additional amount.
 
-#### Example:
+**Example:**
 
 There's a document with currency 'EUR' and an additional amount entered as explicit amount - 60 EUR. 
 
