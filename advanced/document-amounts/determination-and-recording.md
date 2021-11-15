@@ -40,3 +40,11 @@ An amount may be entered in a document or referenced in others - once calculated
 It's meant to show how the amount affects the business activities of the documents. 
 
 Thus, amount distribution should be **summed** from all documents it's distributed in.
+
+-----------
+## Mentioned articles:
+
+- [Referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)
+- [Additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/index.md)
+- [Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)
+- [Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)
