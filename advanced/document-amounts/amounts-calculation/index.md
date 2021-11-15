@@ -1,6 +1,6 @@
 # Amounts calculation
 
-There are two common ways to determine the value of **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html?q=document%20amounts)**:
+There are two common ways to determine the value of **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)**:
 
 - setting an **[explicit amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/explicit-calculation.html)**;
 - setting an amount as a **[percent](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)** of other amounts (additional or base amounts from the document rows)
