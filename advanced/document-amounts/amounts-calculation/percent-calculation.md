@@ -61,8 +61,8 @@ You have only one additional amount - commission. Its definition has the followi
 - Default Percent is 5%;
 - Distribute By is 'Product Definition'. The weight of the specific product is 100%;
 - Base On Lines is True;
-- Add to customer is False;
-- Add to line is False;
+- Add To Customer is False;
+- Add To Line is False;
 - Round Scale is '2'.
 
 The example document has three rows:
