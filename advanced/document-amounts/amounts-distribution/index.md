@@ -75,8 +75,6 @@ In the database, you'll have **3.33 EUR** for each row. The total amount will be
 -----------
 ### See more 
 
-For more information on how the distributed amount is calculated by each method, check out:
-
 - **[Amount distribution by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**
 - **[Amount distribution by product definition](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html)**
 - **[Amount distribution by quantity](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html)**
