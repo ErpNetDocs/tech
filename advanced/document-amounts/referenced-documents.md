@@ -34,9 +34,11 @@ Let's see the standard case for referenced document usage: transport of purchase
 
 **Example 1:**
 
-Purchase invoice #1 has three rows: #10 with amount of **50 EUR**, #20 with amount of **80 EUR** and #30 with amount of **140 EUR**. 
+Purchase invoice #1 has three rows: 
 
-Second purchase invoice #2 is entered with no rows - only additional amount with Input Amount of **38 EUR**. 
+#10 with amount of **50 EUR**, #20 with amount of **80 EUR** and #30 with amount of **140 EUR**
+
+Second purchase invoice #2 is entered with no rows - only additional amount with _Input Amount_ of **38 EUR**. 
 
 You enter purchase invoice #1 in the **Document Amount Referenced Documents** panel.
 
@@ -50,7 +52,9 @@ This is the resulting distribution, assuming that the transport is distributed b
 
 **Example 2:**
 
-There's sales order #1 from the end of last year. It has two rows: #10 with amount of **100 EUR** and #20 with amount of **80 EUR**. 
+There's sales order #1 from the end of last year. It has two rows: 
+
+#10 with amount of **100 EUR** and #20 with amount of **80 EUR** 
 
 You have missed to enter holidays discounts: additional amount 'Christmas discount’
 
@@ -60,13 +64,13 @@ You don't edit the sales order since it comes from the previous fiscal year.
 
 During the Easter holidays, a sales order for the same customer is added separately.
 
-You enter the discount missed from the first sales order: ‘Christmas discount’ in sales order #2 is distributed only in sales order #1. This is indicated in the **Document Amount Referenced Documents panel**. 
+You enter the discount missed from the first sales order: ‘Christmas discount’ in sales order #2 is distributed only in sales order #1. This is indicated in the **Document Amount Referenced Documents** panel. 
 
 In sales order #2, you enter a new discount for the Easter holidays:
 
 Default Percent: **-2%** <br> Base On Lines: **True** <br>  Distributed By: **Amount** <br> Round Scale: **2** 
 
-This additional amount is applied only to the current document and it's NOT entered in the **Document Amount Referenced Documents panel**. 
+This additional amount is applied only to the current document and it's NOT entered in **Document Amount Referenced Documents**. 
 
 A special bonus is agreed in sales order #2, which decreases **10%** of the amounts from both sales order #1 and #2. 
 
