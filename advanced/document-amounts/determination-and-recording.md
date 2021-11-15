@@ -33,7 +33,7 @@ The purchase invoice is released **before** the purchase invoice for the transpo
 
 Transport can't be entered in the original purchase invoice because the document state, of which it **isn't** a part, is 'Released'. <br> Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's good costs.
 
-Therefore, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, where you distribute the current amount. 
+As a result, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, where you distribute the current amount. 
 
 An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its **real value**. 
 
