@@ -30,8 +30,6 @@ This makes it possible to enter additional amounts in the current document which
 
 For more information about calculation and distribution formulas, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
---------
-
 Let's see the standard case for referenced document usage: transport of purchased goods. 
 
 **Example 1:**
