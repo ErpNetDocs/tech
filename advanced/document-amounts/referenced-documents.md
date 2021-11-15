@@ -1,6 +1,6 @@
 # Referenced documents
 
-There are cases when you enter an **[additional amount](https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/index.md)** in a document and calculate it, distributing it not only to the rows of the current document, but to others as well. 
+There are cases when you enter an **[additional amount](https://docs.erp.net/tech/advanced/document-amounts/index.html)** in a document and calculate it, distributing it not only to the rows of the current document, but to others as well. 
 
 For example, if there's a purchase invoice for goods transported to your location, and this transport must be paid, then it can be delivered later than the original purchase invoice. That invoice may already be 'Released and possibly 'Completed'. 
 
