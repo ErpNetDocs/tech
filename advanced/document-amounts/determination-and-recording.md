@@ -42,7 +42,7 @@ It's meant to show how the amount affects the business activities of the documen
 Thus, amount distribution should be **summed** from all documents it's distributed in.
 
 -----------
-## Mentioned articles:
+### Mentioned articles:
 
 - [Referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)
 - [Additional amounts](https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/index.md)
