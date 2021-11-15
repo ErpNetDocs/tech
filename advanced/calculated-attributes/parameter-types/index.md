@@ -16,5 +16,5 @@ The parameter types are used in every calculated attributes. Here are some **[ex
 --------
 ### See more
 
-- **[CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/parameter-type-const.html)**
-- **[SYS](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/parameter-type-sys.html)**
+- **[CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html)**
+- **[SYS](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/sys.html)**
