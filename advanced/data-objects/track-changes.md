@@ -36,7 +36,7 @@ This is the lightest tracking mode with least storage requirements. Information 
 
 > [!NOTE] 
 > 
-> An **[extensible data object](https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html)** is created and maintained ONLY for the root object of the **[aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)**. <br>
+> An **[extensible data object](https://docs.erp.net/tech/advanced/data-objects/edo.html)** is created and maintained ONLY for the root object of the **[aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)**. <br>
 > Upon first update of the tracked object, a new EDO record is created, if there isn't already one. <br>
 > For each successive update of an object in the aggregate, the data in the EDO is updated.
 
