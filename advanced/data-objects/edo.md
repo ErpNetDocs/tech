@@ -45,7 +45,7 @@ Possible (planned) future uses:
 - Future simplified implementation of custom properties.
 - Reactions - Facebook-inspired reactions.
 - Reviews - Marketplace-inspired reviews.
-
-#### See also:
+------
+### See also:
 
 **[@Systems.Core.ExtensibleDataObjects](https://docs.erp.net/model/entities/Systems.Core.ExtensibleDataObjects.html)**
