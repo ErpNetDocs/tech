@@ -72,7 +72,8 @@ When you save a document like this, the numbers after the second digit will be c
 
 In the database, you'll have **3.33 EUR** for each row. The total amount will be **9.99 EUR** and **0.01 EUR** will be lost.
 
-## See more 
+-----------
+### See more 
 
 For more information on how the distributed amount is calculated by each method, check out:
 
