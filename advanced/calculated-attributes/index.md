@@ -32,14 +32,6 @@ The following calculated attribute sums all sales order lines, the product of wh
 - has a user data attribute called 'CustPropPrj', equal to '500'
 - has a name containing the word 'Tool'
 
---------
-### See more
-
-- **[Operators](https://docs.erp.net/tech/advanced/calculated-attributes/operators/index.html)**
-- **[Examples](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html)**
-- **[Parameter types](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/index.html)**
-- **[Q&A](https://docs.erp.net/tech/advanced/calculated-attributes/QA/index.html)**
-
 | No | Operation | Param1 | Param2 | Param3 |
 |----|-----------|--------|--------|--------|
 | 10 | SUM | EXP:20 | ATTRIB:LineAmount |
@@ -61,3 +53,11 @@ The following calculated attribute sums all sales order lines, the product of wh
 - Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'.
 
 This example demonstrates how attributes can calculate very complicated formulas, query the database, get related values, etc.
+
+--------
+### See more
+
+- **[Operators](https://docs.erp.net/tech/advanced/calculated-attributes/operators/index.html)**
+- **[Examples](https://docs.erp.net/tech/advanced/calculated-attributes/examples/index.html)**
+- **[Parameter types](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/index.html)**
+- **[Q&A](https://docs.erp.net/tech/advanced/calculated-attributes/QA/index.html)**
