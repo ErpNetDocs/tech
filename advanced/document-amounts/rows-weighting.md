@@ -88,4 +88,4 @@ The following example describes a case where data is absent from the **Document 
 
 There's an additional amount VAT with a default percentage of **20%**. It doesn't reveal any data.
 
-In this case, no weights/coefficients are used for calculating and distributing the VAT amount. It's considered that all document rows have **100%** VAT, so you can have easier calculation formulas.
+In this case, no weights/coefficients are used for calculating and distributing the VAT amount. <br> It's considered that all document rows have **100%** VAT, so you can take advantage of easier calculation formulas.
