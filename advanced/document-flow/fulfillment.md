@@ -1,7 +1,5 @@
 # Document fulfillment
 
-## Description
-
 Fulfillment is related to the document generation.
 Fulfillment makes sure that all quantities and amounts from the parent document are transferred to the sub-document.
 
