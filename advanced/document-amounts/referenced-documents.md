@@ -88,18 +88,18 @@ row #10 with amount of **35 EUR**, row #20 with amount of **75 EUR** and row #30
 
 the three additional amounts in sales order #2 are calculated and distributed:
 
-- the amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows:
+- The amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows:
 
     - row #10, Sales Order #1: **-3 EUR**;<br>
     - row #20, Sales Order #1: **-2.40 EUR**.
 
-- the amount of [Easter discount] is **-3 EUR** and it is distributed as follows:
+- The amount of [Easter discount] is **-3 EUR** and it is distributed as follows:
 
     - row #10, Sales Order #2: **-0.70 EUR**;
     - row #20, Sales Order #2: **-1.50 EUR**;
     - row #30, Sales Order #2: **-0.80 EUR**.
 
-- the amount of [Reorder bonus] is **-32.16 EUR** and it is distributed as follows:
+- The amount of [Reorder bonus] is **-32.16 EUR** and it is distributed as follows:
 
     - row #10, Sales Order #1: **-9.70 EUR**;
     - row #20, Sales Order #1: **-7.76 EUR**;
