@@ -33,7 +33,7 @@ Here are some examples:
 - **Commissions (and other internal mechanisms for payments or money accounting)** - if used as additional amounts, they can represent a percentage of the document amount and the result can be used for recording internal company performance or personal employee indicators.
 
 -------
-## See more
+### See more
 
 - **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)**
 - **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**
