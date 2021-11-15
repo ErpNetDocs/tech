@@ -77,8 +77,7 @@ A special bonus is agreed in sales order #2, which decreases **10%** of the amou
 This becomes an additional amount ‘Reorder bonus’ and has the following properties: 
 
 Default Percent: **-10%** <br>
-Base On Lines: **True** <br>
-the amount is also based on ‘Christmas discount’ and ‘Easter discount’ <br> 
+Base On Lines: **True** (the amount is also based on ‘Christmas discount’ and ‘Easter discount’) <br> 
 Distributed By: **Amount**, Round Scale: **2**
 
 For the last additional amount from the **Document Amount Referenced Documents** panel, both sales orders are listed.
