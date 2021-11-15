@@ -9,7 +9,7 @@ Track Changes is a system in @@name which can be used to track the changes in а
 
 ## Tracking levels
 
-Тracking levels specify the detail level of the tracking, as per the following table:
+**[Тracking levels](https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html)** specify the detail level of the tracking, as per the following table:
 
 | Level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
@@ -138,7 +138,4 @@ To learn more, see the description key number 42 in **[Config options reference]
 > 
 > If you try to configure a level lower than the default tracking levels, the option will be ignored.
 
-## See more
-
-**[Default tracking levels](https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html)**
 
