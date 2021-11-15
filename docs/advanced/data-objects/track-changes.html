@@ -81,7 +81,7 @@
 
 <p>Track Changes is a system in ERP.net which can be used to track the changes in а data table.</p>
 <h2 id="tracking-levels">Tracking levels</h2>
-<p>Тracking levels specify the detail level of the tracking, as per the following table:</p>
+<p><strong><a href="https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html">Тracking levels</a></strong> specify the detail level of the tracking, as per the following table:</p>
 <table>
 <thead>
 <tr>
@@ -127,7 +127,7 @@
 <p>This is the lightest tracking mode with least storage requirements. Information is stored only for the latest modification, in **@Systems.Core.ExtensibleDataObjects**.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>An <strong><a href="https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html">extensible data object</a></strong> is created and maintained ONLY for the root object of the <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">aggregates</a></strong>. <br>
+<p>An <strong><a href="https://docs.erp.net/tech/advanced/data-objects/edo.html">extensible data object</a></strong> is created and maintained ONLY for the root object of the <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">aggregates</a></strong>. <br>
 Upon first update of the tracked object, a new EDO record is created, if there isn't already one. <br>
 For each successive update of an object in the aggregate, the data in the EDO is updated.</p>
 </div>
@@ -214,8 +214,6 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <h5>Note</h5>
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>
 </div>
-<h2 id="see-more">See more</h2>
-<p><strong><a href="https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html">Default tracking levels</a></strong></p>
 </article>
           </div>
           

@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="percent-value-calculation">Percent value calculation</h1>
 
-<p>Here, the percent from <em>Input percent</em> is used.</p>
+<p>Here, input percent will be used.</p>
 <p>You should know the value of the amounts which will be used to apply the percent calculation. It's defined by the additional amount definition in the <em>Base On Lines</em> field and the <strong>Document Amount Type Dependencies</strong> panel (also known as <strong>Base Additional Amounts</strong>).</p>
 <p>Тhe base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:</p>
 <p><strong>[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])</strong>.</p>
@@ -97,26 +97,26 @@ This requires the previous calculation of the other amounts.</p>
 <ul>
 <li><p>Corporate discount:</p>
 <ul>
-<li><em>Default percent</em> is -3%;</li>
-<li><em>Base On Lines</em> is True;</li>
+<li>Default Percent is -3%;</li>
+<li>Base On Lines is True;</li>
 <li>there are no other additional amounts listed in the <strong>Document Amount Type Dependencies</strong> panel;</li>
-<li><em>Round Scale</em> is '2';</li>
+<li>Round Scale is '2';</li>
 </ul>
 </li>
 <li><p>Easter bonus:</p>
 <ul>
-<li>No <em>Default percent</em>;</li>
-<li><em>Amount input allowed</em> is True;</li>
-<li><em>Percent input allowed</em> is False;</li>
-<li><em>Round Scale</em> is '2';</li>
+<li>No default percent;</li>
+<li>Amount input allowed is True;</li>
+<li>Percent input allowed is False;</li>
+<li>Round Scale is '2';</li>
 </ul>
 </li>
 <li><p>VAT:</p>
 <ul>
-<li><em>Default percent</em> is 20%;</li>
-<li><em>Base on Lines</em> is True;</li>
+<li>Default Percent is 20%;</li>
+<li>Base On Lines is True;</li>
 <li>the <strong>Document Amount Type Dependencies</strong> panel states that VAT is applied to Corporate discount and Easter bonus;</li>
-<li><em>Round Scale</em> is '2';</li>
+<li>Round Scale is '2';</li>
 </ul>
 </li>
 </ul>
@@ -134,12 +134,12 @@ This requires the previous calculation of the other amounts.</p>
 <p><strong>Example 2:</strong></p>
 <p>You have only one additional amount - commission. Its definition has the following properties:</p>
 <ul>
-<li><em>Default percent</em> is 5%;</li>
-<li><em>Distribute by</em> is 'Product Definition'. The weight of the specific product is 100%;</li>
-<li><em>Base On Lines</em> is True;</li>
-<li><em>Add to customer</em> is False;</li>
-<li><em>Add to line</em> is False;</li>
-<li><em>Round Scale</em> is '2'.</li>
+<li>Default Percent is 5%;</li>
+<li>Distribute By is 'Product Definition'. The weight of the specific product is 100%;</li>
+<li>Base On Lines is True;</li>
+<li>Add To Customer is False;</li>
+<li>Add To Line is False;</li>
+<li>Round Scale is '2'.</li>
 </ul>
 <p>The example document has three rows:</p>
 <ul>
@@ -167,9 +167,9 @@ This requires the previous calculation of the other amounts.</p>
 <p><em><em>Example 3</em>:</em>*</p>
 <p>If you have the following properties in the additional amount, VAT:</p>
 <ul>
-<li><em>Default percent</em> is True;</li>
-<li><em>Round Scale</em> is '2';</li>
-<li><em>Base On Lines</em> is True;</li>
+<li>Default Percent is True;</li>
+<li>Round Scale is '2';</li>
+<li>Base On Lines is True;</li>
 </ul>
 <p>the example document has the following rows:</p>
 <ul>

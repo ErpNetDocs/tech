@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="additional-amounts-determination-and-recording">Additional amounts determination and recording</h1>
 
-<p>These amounts are recorded in the <em>Аdditional Amounts</em> panel, which can be found in the following documents:</p>
+<p>These amounts are recorded in the <strong>Аdditional Amounts</strong> panel, which can be found in the following documents:</p>
 <ul>
 <li>Sales orders</li>
 <li>Invoice orders</li>
@@ -88,21 +88,26 @@
 <li>Transfer orders</li>
 <li>Transactions</li>
 </ul>
-<p>The input/primary data is entered in the <em><em>Additional Amounts</em></em> panel, where it is used for calculating the amount and determining its impact on the document. This calculation is executed every time the document is saved and consists of 2 stages:</p>
+<p>The input/primary data is entered in the <strong>Additional Amounts</strong> panel, where it's used for calculating the amount and determining its impact on the document. This calculation is executed every time the document is saved and consists of 2 stages:</p>
 <ol>
 <li><p>Amounts determination.</p>
 </li>
-<li><p>Stage 1 amounts distribution through the affected documents. That distribution is saved in the document in which it is entered, no matter if the amount affects only the current document or more.</p>
+<li><p>Stage 1 amounts distribution through the affected documents. <br> That distribution is saved in the document in which it's entered, no matter if the amount affects the current document or more.</p>
 </li>
 </ol>
-<p>The amount is determined by entering an exact value or by indicating that the amount is calculated as a percent of the base document amount or other additional amounts. This data is entered by adding the amount to a document in its <em>Additional Amounts</em> panel. Then, it is used to calculate the real value.</p>
-<p>For further information see <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a>.</p>
-<p>After the amount value is calculated, it is not saved in the document. First, it is distributed through the affected documents. This is necessary because we often need to determine what part of the additional amount is distributed to a specific row (for example, the value of the additional amount VAT for a specific sales order row).</p>
-<p>The algorithm is explained in details in <a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a>.</p>
+<p>The amount is determined by entering an exact value or by indicating that the amount is calculated as a <strong>percent</strong> of the base document amount or other <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/index.html">additional amounts</a></strong>.</p>
+<p>This data is entered by adding the amount to a document in its <strong>Additional Amounts</strong> panel. Then, it's used to <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">calculate</a></strong> the real value.</p>
+<p>After the amount value is calculated, it's <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">distributed</a></strong> among the affected documents.</p>
+<p>This is necessary because you often need to determine what part of the additional amount is distributed to a <strong>specific row</strong> - <br> for example, the value of the additional amount VAT for a specific sales order row.</p>
 <p>There may be cases when an additional amount is entered in one document, but it affects others as well.</p>
-<p>Take the thansport of deliveries from outside the country as an example. In this case, the original purchase invoice for the delivery of goods has arrived and it is entered in ERP.net . The purchase invoice is released before the purchase invoice for the transport arrives. The transport is entered as an <strong>additional amount</strong> so it can be included in the product's costs. As it cannot be entered in the original purchase invoice (because the document state is Released and the transport is not actually part of it), the transport is entered in another document and it should be distributed into the original purchase invoice (so its amount is included in the original purchase invoice goods costs). Therefore, we are able to indicate additional - referenced documents, where we distribute the current amount.</p>
-<p>This mechanism is described in <a href="https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html">Referenced documents</a>.</p>
-<p>No matter if an amount is entered in a document or referenced in others, once it is calculated and distributed, we will need to see its <strong>real value</strong>. It is meant to show how the amount affects the business activities of the documents. Thus, the amount distributions should be summed from all documents it is distributed in.</p>
+<p><strong>Take the thansport of deliveries from outside the country as an example.</strong></p>
+<p>In this case, the original purchase invoice for the delivery of goods has arrived and is entered in ERP.net.</p>
+<p>The purchase invoice is released <strong>before</strong> the purchase invoice for the transport arrives. Transport is entered as an <strong>additional amount</strong> so it can be included in the product's costs.</p>
+<p>Transport can't be entered in the original purchase invoice because the document state, of which it <strong>isn't</strong> a part, is 'Released'. <br> Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be <strong>included</strong> in the invoice's good costs.</p>
+<p>As a result, you're able to indicate additional - <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html">referenced documents</a></strong>, where you distribute the current amount.</p>
+<p>An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its <strong>real value</strong>.</p>
+<p>It's meant to show how the amount affects the business activities of the documents.</p>
+<p>Thus, amount distribution should be <strong>summed</strong> from all documents it's distributed in.</p>
 </article>
           </div>
           
