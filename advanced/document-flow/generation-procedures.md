@@ -15,7 +15,7 @@ The configuration is performed in the document type entity, in the document type
 
 Each document type route is a configuration for a single generation procedure.
 
-# Generation procedures lifetime stages
+## Generation procedures lifetime stages
 
 The current topic describes the stages of the lifetime of a generation procedure:
 
