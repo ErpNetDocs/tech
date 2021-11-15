@@ -24,7 +24,6 @@ CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
 
 4. (lowest) A range of the _Property Allowed Values_ listed in the **Gen_Property_Allowed_Values** sub-table.
 
-   
 
 **Example 1:**
 
@@ -64,8 +63,8 @@ Compatibility allows you to copy values from one custom property to another. Thi
 
 > [!NOTE]
 > 
-> Additional filters **don't** change the domain of the custom property - they simply reduce the range with allowed values. <br>
-> It's also possible for future procedures or rules to be added, but they **won’t** change the domain of the custom properties, either. <br>
+> Additional filters **don't** change the domain of the custom property - they simply reduce the range with allowed values. 
+> It's also possible for future procedures or rules to be added, but they **won’t** change the domain of the custom properties, either.
 > From a programming perspective, the domain of allowed values could be defined as a **custom property type**.
 
 **Example 2:**
