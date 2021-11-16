@@ -4,7 +4,7 @@ items: CalculatedAttributesQA
 
 # How to determine the party type of a party?
 
-If you need to compare a **PartyType** to check if it is a company, person or other, the following calculation would do the job:
+If you need to compare a **PartyType** to see what it is, the following calculation would do the job:
 
 ```
 CAST ATTRIB:PartyType CONST:System.Int32
