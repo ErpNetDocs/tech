@@ -1,17 +1,16 @@
 # Parent document relationship type
 
-When a document has a parent document, there are constraints, which determine which states are allowed. The applicable states depend on the relation between the parent document and the child document.
+When a document has a parent document, there are constraints that determine which states are allowed. <br> The applicable states depend on the relationship between a parent document and a child document.
 
-The relationship is contained in the parent document relationship type attribute. Its possible values are:
+The relationship is contained in the 'parent-document relationship type' attribute. Its possible values are:
 
-- **Sub-task** - the child document is a sub-task that must be completed to complete the parent document
-- **Next task** - the child document is not related to the next task and the parent document can be completed without waiting for the child document to be completed.
+- **Sub-task** - the child document is a sub-task that must be done to complete the parent document
+- **Next task** - the child document is NOT related to the next task and the parent document can be completed **without** requiring the child document to be completed.
 
-For example, the *sales order-store order* relationship is usually of **Sub** task type because the store order must be completed before the sales order can.
+For example, **the sales order-store order** relationship tends to be of 'sub-task' type since the store order must be completed before the sales order. In contrast, the **offer-sales order** relationship is usually of 'next task' type, because the work on the offer can be completed once the sales order is created. 
+There's no need to complete the sales order first.
 
-In contrast, the *offer-sales order* relationship is usually of **Next** task type because the work on the offer can be completed once the sales order is created. There is no need to complete the sales order first.
-
-The allowed child document states depends on the relationship type and the parent document state. 
+The allowed child document states depend on the relationship type and the parent document state. 
 
 The following table summarizes the allowed states:
 
