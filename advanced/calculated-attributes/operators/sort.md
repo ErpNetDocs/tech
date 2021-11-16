@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | any type                                                         |
 | Parameter 3 Name      | order (optional)                                                          |
 | Parameter 3 Type      | string - ASC or DESC                                                          |
-| Return жalue          | Returns the input list from parameter1, sorted by the specified attribute and in the specified order. <br> If not specified, the default order is ascending (ASC)                                                         |
+| Return value          | Returns the input list from parameter1, sorted by the specified attribute and in the specified order. If not specified, the default order is ascending (ASC)                                                         |
 
 
 **Example:**
