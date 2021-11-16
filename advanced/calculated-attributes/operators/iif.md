@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | any type                                                         |
 | Parameter 3 Name      | FalseValue                                                           |
 | Parameter 3 Type      | any type                                                               |
-| Return value          | When Condition is 'True', it returns the TrueValue. When Condition is 'False', it returns the FalseValue  |
+| Return value          | When Condition is 'True', it returns the TrueValue. <br> When Condition is 'False', it returns the FalseValue  |
 
 **Example:**
 
