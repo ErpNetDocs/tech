@@ -12,7 +12,7 @@ row #10: weight = **0.00**; <br>
 row #20: weight = **1.00**; <br>
 row #30: weight = **1.00**. <br>
 
-The commission amount is **5.45 EUR** and the distribution of this amount is calculated by the following coefficients:
+The commission amount is **5.45 EUR** and its distribution is calculated by the following coefficients:
 
 [**k1**] = [row amount #10] * [row weight #10] = 150 * 0.00 = **0**;<br>
 [**k2**] = [row amount #20] * [row weight #20] = 40 * 1.00 = **40**;<br>
