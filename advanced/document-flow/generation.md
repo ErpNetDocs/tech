@@ -65,7 +65,7 @@ Each generation procedure is defined using the following attributes:
    - **Procedure code**<br>
      2 digits which specify the consecutive number of the procedure within the module.
 
-For example, ‘CRM0103’ specifies a procedure in the **[CRM](https://docs.erp.net/tech/modules/crm/index.html) sub-system, 01-Sales module, procedure #3.
+For example, ‘CRM0103’ specifies a procedure in the **[CRM](https://docs.erp.net/tech/modules/crm/index.html)** sub-system, 01-Sales module, procedure #3.
 
 - **Name**<br>
 
