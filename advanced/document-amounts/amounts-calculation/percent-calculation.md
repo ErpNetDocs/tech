@@ -97,7 +97,7 @@ The final result for the amount is:
  
  For further information, see **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
-**Example 3*:**
+**Example 3:**
 
 If you have the following properties in the additional amount, VAT:
 
