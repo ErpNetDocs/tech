@@ -40,9 +40,9 @@ Most of the time, the additional amount is distributed evenly throughout the row
 
 but in some cases, there are more specific calculations, such as when the amount is distributed by amount or by product definition and the additional amount is percent.
 
-Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance. 
+Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance. The balance is therefore distributed throughout the first several rows. 
 
-The balance is therefore distributed throughout the first several rows. You can't distribute less than:
+You can't distribute less than:
 
 [minimal balance distribution on a row] = 1 / 10[Round Scale].
 
