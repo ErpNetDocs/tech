@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Returns a list with string values of a specified attribute from a list of objects. <br> The values in the list are separated. <br> If there's no indicated separator, the list is separated with ", " (comma + space) by default.           |
+| Description           | Returns a list with string values of a specified attribute from a list of objects. <br> The values in the list are separated. If there's no indicated separator, the list is separated with ", " (comma + space) by default.           |
 | Parameter 1 Name      | list                                                         |
 | Parameter 1 Type      | list of objects                                    |
 | Parameter 2 Name      | attribute                                                           |
