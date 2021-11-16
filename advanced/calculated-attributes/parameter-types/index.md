@@ -2,7 +2,7 @@
 
 The type of a parameter specifies how you can obtain a parameter value.
 
-- **CONST** - indicates that the value for this parameter type would be a constant for every calculation of the attribute. 
+- **CONST** - this value would be a constant for every calculation of the attribute. 
 - **ATTRIB** - the value of system or user-defined attribute;
 - **REF** - reference to another object;
 - **CHILD** - detailed objects, related to the current master object;
