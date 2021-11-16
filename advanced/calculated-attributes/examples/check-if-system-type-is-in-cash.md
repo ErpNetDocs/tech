@@ -6,7 +6,7 @@ items: CalculatedAttributeExamples
 
 This attribute checks if the system type of a payment type set in a sales order is 'In Cash'. 
 
-You can use the attribute to create a business rule that allows a **credit limit override** when the client pays in cash.
+You can use it to create a business rule that allows a **credit limit override** when the client pays in cash.
 
 For more information, see **Allow a credit limit override when the client pays in cash**.
 
@@ -27,5 +27,5 @@ For more information, see **Allow a credit limit override when the client pays i
 > [!NOTE]
 > 
 > When using **[EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)**, make sure you're comparing parameters from the same type. 
-> If you don’t know which type the object is or what value it's going to return, you can use the **Aloe.EnterpriseOne.Model Documentation**. <br>
+> If you don’t know which type the object is or what value it's going to return, you can use the **Aloe.EnterpriseOne.Model Documentation**. 
 > In the particular example, check the **[PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html)**, where you'll find that the value corresponding to the system type in 'Cash' is '0'.
