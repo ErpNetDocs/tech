@@ -21,7 +21,7 @@ In this panel, weights are entered in two ways:
 
 > [!NOTE] 
 > 
-> If there are no weights for an additional amount in the panel, it's considered that all weights are equal to **100%**.
+> If there are no weights for an additional amount in the panel, all weights are equal to **100%**.
 
 Below, brief descriptions and examples for the different input methods are given. For more information on the role of weights/coefficients in the calculation and distribution processes, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
@@ -53,7 +53,7 @@ These are the coefficients/weights for each row:
 - row #30: weight = **0.25**;
 - row #40: weight = **0.00**;
 
-The 'Customs' amount is **8.20 EUR** and it's distributed through the rows as **2.20 EUR : 0 EUR : 6 EUR : 0 EUR** 
+The 'Customs' amount is **8.20 EUR** and it's distributed as **2.20 EUR : 0 EUR : 6 EUR : 0 EUR** 
 
 ## Weights & coefficients in the document
 
@@ -65,11 +65,11 @@ Products don't have percentages in their definitions in advance.
 
 **Example 2:**
 
-There's an additional amount 'Specific VAT', distributed by product definition and having a default percentage of **20%**. 
+There's an additional amount 'Specific VAT', distributed by product definition with a default percentage of **20%**. 
 
 You enter a sales order with four rows:
 
-#10 with amount of **44 EUR**, #20 with amount of **56 EUR**, #30 with amount of **24 EUR** and #40 with amount of **71 EUR**. 
+#10 with **44 EUR**, #20 with **56 EUR**, #30 with **24 EUR** and #40 with **71 EUR**. 
 
 Rows #10 and #20 are exempt from VAT, while the others have 20% VAT. 
 
@@ -88,4 +88,4 @@ The following example describes a case where data is absent from the **Document 
 
 There's an additional amount VAT with a default percentage of **20%**. It doesn't reveal any data.
 
-In this case, no weights/coefficients are used for calculating and distributing the VAT amount. <br> It's considered that all document rows have **100%** VAT, so you can take advantage of easier calculation formulas.
+In this case, no weights/coefficients are used for calculating and distributing the VAT amount. <br> All document rows have **100%** VAT, so you can take advantage of easier calculation formulas.
