@@ -4,9 +4,7 @@ items: CalculatedAttributeExamples
 
 # Sales amounts of a customer for the last 30 days
 
-Let's say you want to show a field in the sales order which calculates the sales amounts of a selected customer for the last 30 days.
-
-Such calculated attribute represents a report with specific filters. 
+Let's say you want to show a field in the sales order which calculates the sales amounts of a selected customer for the last 30 days. Such calculated attribute represents a report with specific filters. 
 
 If you try to get the sales of a client for the last 30 days, you would open a sales order lines report and set the following filters:
 
