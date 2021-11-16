@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Checks if an attribute value is smaller than or equal to another attribute's value (or a constant).          |
+| Description           | Checks if an attribute value is smaller than or equal to another attribute's value <br> (or a constant).          |
 | Parameter 1 Name      | attribute1                                                        |
 | Parameter 1 Type      | numeric (int, double, decimal) or datetime type                                  |
 | Parameter 2 Name      | attribute2                                                            |
