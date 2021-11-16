@@ -4,13 +4,11 @@ items: CalculatedAttributeExamples
 
 # Get a value of a custom property in sales order lines from the parent offer line
 
-This attribute determines the value of a particular customer property set for the parent offer line of the current sales order line. 
-
-Currently, offer lines customer properties are not transferred to the sales order. 
+This attribute determines the value of a particular customer property set for the parent offer line of the current sales order line. Currently, offer lines customer properties are not transferred to the sales order. 
 
 Thus, you can use this attribute in a user business rule to **automate** the process. 
 
-For more information on how to create such a rule, see **How to use business rules to set a value into a custom property?**.
+For more information on how to create such a rule, see <br> **How to use business rules to set a value into a custom property?**.
 
 ```
 Repository: Crm.Sales.SalesOrderLines
