@@ -1,6 +1,6 @@
 # CONST
 
-When used, CONST indicates that the value for a parameter type would be a **constant** for every calculation of the attribute. 
+CONST indicates that the value for a parameter type is a **constant** for every calculation of the attribute. 
 
 The formats of the different types of values which are entered are as follows:
 
