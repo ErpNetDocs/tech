@@ -25,7 +25,7 @@ For example, let's have the following sales order:
 
 and two generations that use this input to create a store order:
 
-1. **Generation A**
+**Generation A**
    generates the store order using strictly the data from the sales order and generates:
    
      - store order line **10**: Product1 Qty=15
@@ -33,7 +33,7 @@ and two generations that use this input to create a store order:
 
 Generation A is **deterministic** and can support adjusting transitional documents.
 
-2. **Generation B**
+**Generation B**
    uses the current available quantities to split the lines of the sales order, based on the availability of the different lots. It generates:
 
      - store order line **10**: Product1 Lot11 Qty=8
