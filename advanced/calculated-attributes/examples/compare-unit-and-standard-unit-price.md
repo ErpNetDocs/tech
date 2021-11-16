@@ -4,9 +4,7 @@ items: CalculatedAttributeExamples
 
 # Compare unit price and standard unit price
 
-This attribute calculates if the unit price in the sales order lines is greater than the standard unit price of the product.
-
-It returns the following message:
+This attribute calculates if the unit price in the sales order lines is greater than the standard unit price of the product. It returns the following message:
 
 ```
 10: IIF EXP:20 CONST:'OK!' CONST:'Not OK!'
