@@ -1,8 +1,10 @@
 # User calculated attributes
 
 User calculated attributes are user-defined objects which extend the system entities.
-They are defined like formulas.
-<br> When the value of a calculated attribute is requested, it is calculated "on the fly", in **real-time**.
+
+They're defined like formulas.
+
+<br> When the value of a calculated attribute is requested, it's calculated "on the fly", in **real-time**.
 
 > [!NOTE]
 > 
