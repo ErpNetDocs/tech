@@ -9,7 +9,7 @@ The formats of the different types of values which are entered are as follows:
 | ------- | ------------------------------------------------------------ | ------------------------------------ |
 | NULL    | null or empty value                                          | NULL                                 |
 | Boolean | true or false value                                          | True                                 |
-| Integer | a whole (not a fractional) number that can be positive, negative, or zero | 93                                   |
+| Integer | a whole number that can be positive, negative, or zero | 93                                   |
 | Decimal | number, containing decimal symbol - '.'                      | 93.012                               |
 | Date    | date values used in the 'yyyy-MM-dd' format                  | 2020-12-25                           |
 | GUID    | Global Unique Identifier - used for objects identification   | 6B29FC40-CA47-1067-B31D-00DD010662DA |
