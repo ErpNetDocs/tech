@@ -6,9 +6,9 @@ uid: domain-with-property-allowed-values
 
 Domain is the range of the allowed values of a particular custom property. 
 
-It's determined in one of the following ways, sorted by priority:
+It's determined in one of the following ways, sorted by high-to-low priority:
 
-1. (highest) If _Limit To Allowed Values_ **doesn't** have a check mark, any value is valid and <br> the domain is a range of **all** possible values.
+1. If _Limit To Allowed Values_ **doesn't** have a check mark, any value is valid and <br> the domain is a range of **all** possible values.
 
 2. If _Allowed Values Entity Name_ **has** a value, the domain is the set of **all records** of the specified data type.
    
@@ -22,7 +22,7 @@ CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
 
    This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Entity Name_ does NOT have a value.
 
-4. (lowest) A range of the _Property Allowed Values_ listed in the **Gen_Property_Allowed_Values** sub-table.
+4. A range of the _Property Allowed Values_ listed in the **Gen_Property_Allowed_Values** sub-table.
 
 
 **Example 1:**
@@ -83,9 +83,7 @@ If you use Example 1, you can conclude that:
 
 ## Inheriting and hereditary root
 
-A custom property inherits another custom property by indicating a (hereditary) **parent** property in the _Allowed Values Property_ field. 
- 
-The hereditary root of a custom property is considered **grand-parent**, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.
+A custom property inherits another custom property by indicating a (hereditary) **parent** property in the _Allowed Values Property_ field. The hereditary root of a custom property is considered **grand-parent**, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.
 
 A hereditary root is defined as follows:
 
@@ -115,7 +113,7 @@ According to the example above, custom properties have the following hereditary 
 
 ## Copying
 
-Hereditary roots determine the most appropriate 'partner' for automatic copying of the allowed values of custom properties.
+Hereditary roots determine the most appropriate 'partner' for copying of the allowed values of custom properties.
 
 **Example 4:** 
 
