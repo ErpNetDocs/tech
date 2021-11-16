@@ -25,20 +25,18 @@ For example, let's have the following sales order:
 
 and two generations that use this input to create a store order:
 
-**Generation A**
-   generates the store order using strictly the data from the sales order and generates:
+**Generation A** generates the store order using strictly the data from the sales order and generates:
    
-     - store order line **10**: Product1 Qty=15
-     - store order line **20**: Product2 Qty=25
+- store order line **10**: Product1 Qty=15
+- store order line **20**: Product2 Qty=25
 
 Generation A is **deterministic** and can support adjusting transitional documents.
 
-**Generation B**
-   uses the current available quantities to split the lines of the sales order, based on the availability of the different lots. It generates:
+**Generation B** uses the current available quantities to split the lines of the sales order, based on the availability of the different lots. It generates:
 
-     - store order line **10**: Product1 Lot11 Qty=8
-     - store order line **20**: Product1 Lot12 Qty=7
-     - store order line **30**: Product2 Lot21 Qty=25
+- store order line **10**: Product1 Lot11 Qty=8
+- store order line **20**: Product1 Lot12 Qty=7
+- store order line **30**: Product2 Lot21 Qty=25
 
 Generation B **cannot** be used to adjust (patch) the generated document. 
 
