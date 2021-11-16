@@ -6,9 +6,7 @@ uid: aggregates
 
 Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. 
 
-For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate.
-
-Learn more **[here](https://martinfowler.com/bliki/DDD_Aggregate.html)**.
+For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate. Learn more **[here](https://martinfowler.com/bliki/DDD_Aggregate.html)**.
 
 #### In @@name, these are single aggregates:
 
