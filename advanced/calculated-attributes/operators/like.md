@@ -6,7 +6,7 @@ uid: cao-LIKE
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Searches for a specified pattern in a string. Used in combination with the wildcars '%' and '\_': <br/> The '%' symbol is used to define 0 or more characters before and after the searched string. <br/> '\_' is used to define 1 specific character.          |
+| Description           | Searches for a specified pattern in a string. <br> Used in combination with the wildcars '%' and '\_': <br/> The '%' symbol defines 0 or more characters before and after the searched string. <br/> '\_' is used to define 1 specific character.          |
 | Parameter 1 Name      | String1                                                       |
 | Parameter 1 Type      | string                                    |
 | Parameter 2 Name      | Mask                                                          |
