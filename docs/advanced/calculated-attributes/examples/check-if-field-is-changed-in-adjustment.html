@@ -79,9 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="check-if-a-value-of-a-field-is-changed-in-the-adjustment-document">Check if a value of a field is changed in the adjustment document</h1>
 
-<p>This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document.</p>
-<p>This information helps you determine if the value of the field is being or has been changed in the adjustment document.</p>
-<p>Using this attribute, you can create a business rule which would allow you to <strong>prohibit</strong> the correction of the value of the field.</p>
+<p>This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document. This information helps you determine if the value of the field is being or has been changed in the adjustment document.</p>
+<p>Using the attribute, you can create a business rule which would allow you to <strong>prohibit</strong> the correction of the value of the field.</p>
 <pre><code>10: IIF EXP:20 CONST:False EXP:30
 20: EQUAL REF:AdjustedDocument CONST:NULL                                  
 30: IIF EXP:40 CONST:False CONST:True      

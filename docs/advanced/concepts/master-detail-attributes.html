@@ -83,9 +83,9 @@
 <p>An example is the <em>Store</em> field in the sales order header and lines.</p>
 <p>If a field in the document header has a value, you need to make sure that the corresponding field in the document lines contains <strong>the same</strong> value. On the other hand, if the different lines contain different values, the document's header field should be <strong>empty</strong>.</p>
 <p>When this principle isn't obeyed and the <em>Store</em> field in the document header contains a value despite the document lines having different store values, you may look in the header and think that this store applies to all of its lines as well, which may not be true.</p>
-<h3 id="concepts-and-rules">Concepts and rules</h3>
+<h2 id="concepts-and-rules">Concepts and rules</h2>
 <p>To make sure the main principle described above is followed, requirements and rules are applied to each set of Master/Detail fields.</p>
-<h4 id="concepts">Concepts</h4>
+<h3 id="concepts">Concepts</h3>
 <ul>
 <li>In order to allow different lines to contain different stores and at the same time follow the main principle, you need to make sure that the <em>Store</em> field in the document header contains <strong>empty</strong> (NULL) values.</li>
 </ul>
@@ -98,7 +98,7 @@
 <li>If the document doesn't contain any lines, then there's <strong>no</strong> limitation for the document header value.</li>
 </ul>
 <p>It doesn't matter if it's empty (NULL) or if it contains a value (not-NULL).</p>
-<h4 id="front-end-rules">Front-end rules</h4>
+<h3 id="front-end-rules">Front-end rules</h3>
 <ul>
 <li><p>When the value of the document header's field is changed, this value is automatically set to <strong>ALL</strong> document lines.</p>
 </li>
@@ -114,12 +114,12 @@
 <li>When adding a new line, you're setting the default value in the <em>Line Store</em> field, which <strong>equals</strong> the one in the document header (unless another default value is explicitly set).</li>
 </ul>
 <p>If the document header value is empty (NULL), the value from the previous lines is considered as a default value in the new line. If this is impossible, then the default value remains <strong>empty</strong> (NULL).</p>
-<h4 id="back-end-rules">Back-end rules</h4>
+<h3 id="back-end-rules">Back-end rules</h3>
 <ul>
 <li>When the document header is saved, the master/detail field's value is updated according to the value of the <strong>lines</strong> field. </li>
 </ul>
-<p>If all lines contain the same <em>Store</em> value, then this value is <strong>automatically</strong> set in the document header field.</p>
-<p>If the lines contain different <em>Store</em> values, then the <em>Store</em> field in the document header is automatically set to <strong>NULL</strong>.</p>
+<p>If all lines contain the same <em>Store</em> value, this value is <strong>automatically</strong> set in the document header field.</p>
+<p>If the lines contain different <em>Store</em> values, the <em>Store</em> field in the document header is automatically set to <strong>NULL</strong>.</p>
 <ul>
 <li><p>When а document line is saved, the master/detail field's value is updated according to the value of the field in the <strong>header</strong>. </p>
 </li>

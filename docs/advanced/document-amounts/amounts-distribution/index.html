@@ -102,8 +102,8 @@
 <p>Most of the time, the additional amount is distributed evenly throughout the row, using the following formula:</p>
 <p>[row <strong>i</strong> distribution] = ROUND([amount] / [rows count], [Round Scale]),</p>
 <p>but in some cases, there are more specific calculations, such as when the amount is distributed by amount or by product definition and the additional amount is percent.</p>
-<p>Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance.</p>
-<p>The balance is therefore distributed throughout the first several rows. You can't distribute less than:</p>
+<p>Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance. The balance is therefore distributed throughout the first several rows.</p>
+<p>You can't distribute less than:</p>
 <p>[minimal balance distribution on a row] = 1 / 10[Round Scale].</p>
 <p><strong>Example:</strong></p>
 <p>You have <strong>12</strong> rows and the amount of <strong>9.13 EUR</strong> to distribute with the following weights:</p>
@@ -122,7 +122,8 @@
 <p>If the round scale is more than 2, there's a chance that part of the amount will be lost.</p>
 <p>For example, if the additional amount is <strong>10 EUR</strong> and it's distributed equally throughout <strong>3</strong> rows and the round scale is <strong>3.</strong>, then for every row, the amount of ROUND(3.333333333333333, 3) = <strong>3.333 EUR</strong> will be distributed.</p>
 <p>When you save a document like this, the numbers after the second digit will be cut.</p>
-<p>In the database, you'll have <strong>3.33 EUR</strong> for each row. The total amount will be <strong>9.99 EUR</strong> and <strong>0.01 EUR</strong> will be lost.</p>
+<p>In the database, you'll have <strong>3.33 EUR</strong> for each row.</p>
+<p>The total amount will be <strong>9.99 EUR</strong> and <strong>0.01 EUR</strong> will be lost.</p>
 <hr>
 <h3 id="see-more">See more</h3>
 <ul>

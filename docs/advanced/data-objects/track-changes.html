@@ -140,9 +140,9 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <li><strong>Last update time (UTC)</strong> - the time of the last update.</li>
 <li><strong>Is deleted</strong> - specifies whether the tracked object is deleted.</li>
 </ul>
-<p>After the tracked object is deleted, the <strong>EDO</strong> information stays in the database for some time, but can be purged by cleanup processes. When the tracked object is deleted, the deletion user &amp; time are stored in <strong>Last update user</strong> / <strong>Time</strong>.</p>
+<p>After the tracked object is deleted, the <strong>EDO</strong> information stays in the database for some time, but can be purged by cleanup processes. The deletion user &amp; time are stored in <strong>Last update user</strong> / <strong>Time</strong>.</p>
 <h3 id="level-2---track-object-changes">Level 2 - track object changes</h3>
-<p>In this level, the extensible data object is still updated, but for each modification, a new record is created in two tables:</p>
+<p>Here, the extensible data object is still updated, but for each modification, a new record is created in two tables:</p>
 <ol>
 <li>**@Systems.Core.ObjectChangesets** contains data about change-sets.</li>
 </ol>
@@ -179,26 +179,25 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <li><strong>New value</strong> - the string representation (culture insensitive) of the new value.</li>
 </ul>
 <p>Some attribute changes might not be reflected properly by the system. Since the Track Changes system works at application level, changes made by direct SQL statements will <strong>not</strong> be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.</p>
-<p>The <em>Document No</em> attribute (set by SQL statements) is often recorded as changed by the <strong>2nd</strong> modification of the document. <br> Therefore, only the <strong>new</strong> values are stored.</p>
+<p>The <em>Document No</em> attribute (set by SQL statements) is often recorded as changed by the <strong>2nd</strong> modification of the document. Therefore, only the <strong>new</strong> values are stored.</p>
 <p>This design was chosen for the following reasons:</p>
 <ul>
 <li><p>Both old values AND new values are <strong>not</strong> stored to save space.</p>
 </li>
-<li><p>If only old values are stored, the track-changes algorithm can save some space, but performance <strong>will</strong> suffer. <br> Initial object creation doesn't need to store values.</p>
+<li><p>If only old values are stored, the track-changes algorithm can save some space, but performance <strong>will</strong> suffer. Initial object creation doesn't need to store values.</p>
 </li>
 </ul>
 <p>This was the initial and <strong>abandoned</strong> implementation of the track changes system.</p>
 <p>The process needed to synchronously read the previous database value before each update. This slowed down the database transactions and it was decided that the <strong>'new values only'</strong> approach would better fit performance requirements.</p>
 <ul>
-<li><p>The storage of the new values can be performed asynchronously <strong>AFTER</strong> the actual database transaction has completed.
-<br>In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.</p>
+<li><p>The storage of the new values can be performed asynchronously <strong>AFTER</strong> the actual database transaction has completed. In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.</p>
 </li>
-<li><p>One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be <strong>lost</strong>. <br> In this case, the object change will still be recorded <strong>synchronously</strong> (as part of the transaction).</p>
+<li><p>One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be <strong>lost</strong>. In this case, the object change will still be recorded <strong>synchronously</strong> (as part of the transaction).</p>
 </li>
 </ul>
 <h3 id="level-4---track-object-attribute--blob-changes">Level 4 - track object, attribute &amp; BLOB changes</h3>
 <p>Same as Level 3, but the values of BLOB attributes are also saved.</p>
-<p>This can severely affect the storage requirements and should be used only for small tables and as last-resort measure.</p>
+<p>It can severely affect storage requirements and should be used only for small tables and as last-resort measure.</p>
 <h2 id="configuring-track-changes">Configuring track changes</h2>
 <p>The track-changes functionality is activated through the **@Systems.Core.EntitySettings** table.</p>
 <h4 id="steps">Steps:</h4>
@@ -208,8 +207,7 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <li>Save and close.</li>
 <li>Tracking will soon start.</li>
 </ol>
-<p>For document entities, mass activation of the <em>Track Changes</em> system using the <strong>DocumentVersioningSystem</strong> registry key is possible.</p>
-<p>To learn more, see the description key number 42 in <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html">Config options reference</a></strong>.</p>
+<p>For document entities, mass activation of the <em>Track Changes</em> system using the <strong>DocumentVersioningSystem</strong> registry key is possible. To learn more, see the description key number 42 in <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html">Config options reference</a></strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>

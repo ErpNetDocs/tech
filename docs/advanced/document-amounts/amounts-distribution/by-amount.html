@@ -89,7 +89,7 @@
 <p>[<strong>ki</strong>] = [distributed to row <strong>i</strong> amount1] + [distributed to row <strong>i</strong> amount2] + ... + [distributed to row <strong>i</strong> amountm].</p>
 <p>'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount <br> (the amounts listed in its definition in the <strong>Document Amount Type Dependencies</strong> panel).</p>
 <p>If there are no such amounts, thеn in this initial calculation, you have [<strong>ki</strong>] = <strong>0</strong>.</p>
-<p>If <em>Base On Lines</em> is 'True' (in the current additional amount), the row amount is added to the initial value for [<strong>ki</strong>]:</p>
+<p>If <em>Base On Lines</em> is 'True' (in the additional amount), the row amount is added to the initial value for [<strong>ki</strong>]:</p>
 <p>[<strong>ki</strong>] = [<strong>ki</strong>] + [row <strong>i</strong> amount].</p>
 <p>This is how each row coefficient is calculated.</p>
 <p>Тhe distribution is performed as usual, except for when the amount [<strong>S</strong>] is <strong>0</strong> and the additional amount is calculated as a percent.</p>
@@ -154,7 +154,7 @@
 [VAT for row #30] = -70 EUR * 0.2 = <strong>-14 *<em>EUR*</em></strong>. <br></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>There's a specific case where the additional amount is distributed by <strong>amount</strong>. <br> If some rows/coefficients in the document are positive and others negative, as is described in <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a></strong>, <br> except the total amount of the additional amount, there are also two <strong>subtotals</strong> - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the rows with positive amounts and then, the negative subtotal is distributed among the rows with negative amounts.</p>
+<p>There's a specific case where the additional amount is distributed by <strong>amount</strong>. <br> If some rows/coefficients in the document are positive and others negative, as is described in <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a></strong>, except the total amount of the additional amount, there are also two <strong>subtotals</strong> - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the rows with positive amounts and then, the negative subtotal is distributed among the rows with negative amounts.</p>
 </div>
 <p><strong>Example 3:</strong></p>
 <p>There's an additional amount VAT with input percent <strong>20%</strong> and three document rows:</p>

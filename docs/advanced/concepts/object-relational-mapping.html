@@ -80,9 +80,10 @@
 <h1 id="object-relational-mapping">Object relational mapping</h1>
 
 <p>Entities and entity types frequently used terms throughout the documentation.</p>
-<p><strong>Entities</strong> are information object which represent real-world objects. <br>
-<strong>Entity types</strong> are a collection of all objects of a given type.</p>
-<p>For example, customer 'XYZ' is an entity. Customer 'ABC' is another entity. All customers are of an entity type called 'Customers'.</p>
+<p><strong>Entities</strong> are information object which represent real-world objects.</p>
+<p><strong>Entity types</strong> are a collection of all objects of a given type.</p>
+<p>For example, customer 'XYZ' is an entity. <br>
+Customer 'ABC' is another entity. <br> All customers are of an entity type called 'Customers'.</p>
 <h3 id="definitions">Definitions</h3>
 <ul>
 <li><strong>Entity</strong> - A single object of a given entity type. Also called 'entity object' or simply 'object'.</li>
@@ -90,11 +91,12 @@
 <li><strong>Attribute</strong> - A named value containing information about an entity object.</li>
 </ul>
 <h2 id="relationship-to-tables-and-rows">Relationship to tables and rows</h2>
-<p>This section contains more advanced information not usually needed to operate the system. However, a deeper understanding of the inner-workings might help when you need to access an ERP.net database directly using database tools.</p>
-<p>Generally, entity types, entities, and attributes are much like tables, rows, and columns. <br> Data of the entities is ultimately stored in the database in the form of tables and rows.</p>
-<p>There's one important distinction: entity types and entities are <strong>object-oriented representation of table data</strong>. <br> A technology called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
-<h4 id="in-order-to-better-illustrate-the-difference-between-objects-and-tables-lets-include-some-real-world-tables-and-objects">In order to better illustrate the difference between objects and tables, let's include some real-world tables and objects:</h4>
-<p>There's an entity type called 'Party'. It has two descendants (more specialized) entity types called 'Company' and 'Person'.</p>
+<p>This section contains more advanced information not usually needed to operate the system.</p>
+<p>However, a deeper understanding of the inner-workings might help when you need to access an ERP.net database directly using database tools.</p>
+<p>Generally, entity types, entities, and attributes are much like tables, rows, and columns. Data of the entities is ultimately stored in the database in the form of tables and rows. There's one important distinction: entity types and entities are <strong>object-oriented representation of table data</strong>. A technology called ORM (Object-Relational Mapping) is used to map between entities and tables.</p>
+<p>In order to better illustrate the difference between objects and tables, let's include some real-world tables and objects:</p>
+<p>There's an entity type called 'Party'.</p>
+<p>It has two descendants (more specialized) entity types called 'Company' and 'Person'.</p>
 <p>'Party' is the more abstract and broad term, while 'Company' and 'Person' are just specializations.</p>
 <p>Let's illustrate this:</p>
 <blockquote>
@@ -105,7 +107,7 @@
 <p>Each party has some attributes such as 'parent party' and 'area'. <br>
 Each company has 'VAT number' and 'registration type' attributes. <br>
 Each person has 'first name' and 'last name'.</p>
-<h4 id="now-if-you-look-at-the-tables-they-have-the-following-schema">Now, if you look at the tables, they have the following schema:</h4>
+<p>Now, if you look at the tables, they have the following schema:</p>
 <ul>
 <li>Parties
 <ul>
@@ -129,7 +131,7 @@ Each person has 'first name' and 'last name'.</p>
 </ul>
 </li>
 </ul>
-<h3 id="if-you-look-at-the-objects-theyll-have-the-following-attributes">If you look at the objects, they'll have the following attributes:</h3>
+<p>If you look at the objects, they'll have the following attributes:</p>
 <ul>
 <li>Party
 <ul>
@@ -156,8 +158,9 @@ Each person has 'first name' and 'last name'.</p>
 </ul>
 <p>If you use table data, in order to access all attributes of a company or a person, you need to <strong>relate</strong> (join) data from different tables, using unique identifiers. These are the so-called 'surrogate keys' because they exist only in the database and have no real-world counterpart. Using such keys and relating data between tables is expected in the world of databases.</p>
 <p>Internally, the systems use <strong>objects</strong> because it's much easier to process them. Objects already have all necessary attributes related together and there's no need to use identifiers or table relations.</p>
-<h4 id="conclusion">Conclusion:</h4>
-<p>This is only an introduction to the topic of object-relational mapping. A deeper look would exceed the developer details of the subject.</p>
+<p><strong>Conclusion</strong></p>
+<p>This is only an introduction to the topic of object-relational mapping.</p>
+<p>A deeper look would exceed the developer details of the subject.</p>
 </article>
           </div>
           

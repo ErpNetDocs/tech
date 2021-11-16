@@ -80,11 +80,11 @@
 <h1 id="domain-with-property-allowed-values">Domain with property allowed values</h1>
 
 <p>Domain is the range of the allowed values of a particular custom property.</p>
-<p>It's determined in one of the following ways, sorted by priority:</p>
+<p>It's determined in one of the following ways, sorted by high-to-low priority:</p>
 <ol>
-<li><p>(highest) If <em>Limit To Allowed Values</em> <strong>doesn't</strong> have a check mark, any value is valid and <br> the domain is a range of <strong>all</strong> possible values.</p>
+<li><p>If <em>Limit To Allowed Values</em> <strong>doesn't</strong> have a check mark, any value is valid and <br> the domain is a range of <strong>all</strong> possible values.</p>
 </li>
-<li><p>If <em>Allowed Values Entity Name</em> <strong>has</strong> a value, the domain is the set of <strong>all records</strong> of the specified data type.</p>
+<li><p>If <em>Allowed Values Entity Name</em> <strong>has</strong> a value, the domain is <strong>all records</strong> of the specified data type.</p>
 <p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a check mark and <em>Allowed Values Property</em> does NOT have a value.</p>
 </li>
 <li><p>If <em>Allowed Values Property</em> has a value, the domain of the current custom property is <strong>equal</strong> to <br> the domain of the custom property specified in this field.</p>
@@ -94,7 +94,7 @@
 </code></pre>
 <p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a check mark and <em>Allowed Values Entity Name</em> does NOT have a value.</p>
 <ol start="4">
-<li>(lowest) A range of the <em>Property Allowed Values</em> listed in the <strong>Gen_Property_Allowed_Values</strong> sub-table.</li>
+<li>A range of the <em>Property Allowed Values</em> listed in the <strong>Gen_Property_Allowed_Values</strong> sub-table.</li>
 </ol>
 <p><strong>Example 1:</strong></p>
 <p>Let's assume you have the following properties:</p>
@@ -151,8 +151,7 @@ From a programming perspective, the domain of allowed values could be defined as
 </li>
 </ul>
 <h2 id="inheriting-and-hereditary-root">Inheriting and hereditary root</h2>
-<p>A custom property inherits another custom property by indicating a (hereditary) <strong>parent</strong> property in the <em>Allowed Values Property</em> field.</p>
-<p>The hereditary root of a custom property is considered <strong>grand-parent</strong>, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.</p>
+<p>A custom property inherits another custom property by indicating a (hereditary) <strong>parent</strong> property in the <em>Allowed Values Property</em> field. The hereditary root of a custom property is considered <strong>grand-parent</strong>, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.</p>
 <p>A hereditary root is defined as follows:</p>
 <ol>
 <li><p>If <em>Allowed Values Property</em> doesn't have a value, the hereditary root is <strong>the custom property</strong> itself</p>
@@ -180,7 +179,7 @@ i.e. you look recursively in the relation <em>Allowed Values Property</em>.</p>
 </li>
 </ul>
 <h2 id="copying">Copying</h2>
-<p>Hereditary roots determine the most appropriate 'partner' for automatic copying of the allowed values of custom properties.</p>
+<p>Hereditary roots determine the most appropriate 'partner' for copying of the allowed values of custom properties.</p>
 <p><strong>Example 4:</strong></p>
 <p>Let’s assume that you want to copy custom properties from a customer to a sales order document.</p>
 <p>The customer has the following properties:</p>
@@ -207,7 +206,7 @@ i.e. you look recursively in the relation <em>Allowed Values Property</em>.</p>
 <p>​    A) FAVORITE-PRODUCT-CUSTOMER and FAVORITE-PRODUCT</p>
 <p>​    B) SALE-ADVANCE-PRODUCT and ADVANCE-PRODUCT</p>
 <p>When specifying a customer in a sales order, <strong>only</strong> the custom properties that have the same hereditary root <br> will be automatically copied to the document.</p>
-<h2 id="custom-properties-value-priorities-when-copying-to-a-document">Custom properties value priorities (when copying to a document)</h2>
+<h2 id="custom-properties-value-priorities">Custom properties value priorities</h2>
 <p>The priority for automatic copying of custom properties by the following priorities:</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -217,19 +216,19 @@ i.e. you look recursively in the relation <em>Allowed Values Property</em>.</p>
 <li><p>Values inherited from the parent document. (Priority 80)</p>
 </li>
 <li><p>Values set in the panel <strong>Copy Customer Properties</strong>. (Priority 70)</p>
-<p>This is valid only for sales orders, but the same priority applies if there's a similar table for other types of data.</p>
+<p>This is valid for sales orders, but the same priority applies if there's a similar table for other data.</p>
 </li>
 <li><p>Values of custom properties with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)</p>
 <p>In general cases, this is the party loaded in the field <em>To Party</em>. <br> Purchase invoices are exceptions - there, the supplier is considered a 'main contractor'.</p>
 </li>
 <li><p>Default values specified in the document type. (Priority 20)</p>
 </li>
-<li><p>If none of the above contains a value for the custom property, but the value is instead specified in the document type: <br> Set an empty (NULL) value. (Priority 10)</p>
+<li><p>If none of the above contains a value for the custom property, but the value is instead specified in the document type: Set an empty (NULL) value. (Priority 10)</p>
 </li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures <br> (enterprise company, customer, parent document etc.)</p>
+<p>Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures (enterprise company, customer, parent document etc.)</p>
 </div>
 </article>
           </div>

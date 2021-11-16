@@ -80,7 +80,7 @@
 <h1 id="check-if-the-system-type-of-a-payment-type-in-a-sales-order-is-in-cash">Check if the system type of a payment type in a sales order is 'In cash'</h1>
 
 <p>This attribute checks if the system type of a payment type set in a sales order is 'In Cash'.</p>
-<p>You can use the attribute to create a business rule that allows a <strong>credit limit override</strong> when the client pays in cash.</p>
+<p>You can use it to create a business rule that allows a <strong>credit limit override</strong> when the client pays in cash.</p>
 <p>For more information, see <strong>Allow a credit limit override when the client pays in cash</strong>.</p>
 <pre><code>10: IIF EXP:20 CONST:True CONST:False
 20: EQUAL EXP:25 EXP:30
@@ -97,7 +97,7 @@
 <div class="NOTE">
 <h5>Note</h5>
 <p>When using <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html">EQUAL</a></strong>, make sure you're comparing parameters from the same type.
-If you don’t know which type the object is or what value it's going to return, you can use the <strong>Aloe.EnterpriseOne.Model Documentation</strong>. <br>
+If you don’t know which type the object is or what value it's going to return, you can use the <strong>Aloe.EnterpriseOne.Model Documentation</strong>.
 In the particular example, check the <strong><a href="https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html">PaymentTypesRepository.SystemType Enumeration</a></strong>, where you'll find that the value corresponding to the system type in 'Cash' is '0'.</p>
 </div>
 </article>

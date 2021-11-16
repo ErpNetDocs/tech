@@ -93,7 +93,7 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If there are no weights for an additional amount in the panel, it's considered that all weights are equal to <strong>100%</strong>.</p>
+<p>If there are no weights for an additional amount in the panel, all weights are equal to <strong>100%</strong>.</p>
 </div>
 <p>Below, brief descriptions and examples for the different input methods are given. For more information on the role of weights/coefficients in the calculation and distribution processes, see <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a></strong>.</p>
 <h2 id="weights--coefficients-in-product-definitions">Weights &amp; coefficients in product definitions</h2>
@@ -116,15 +116,15 @@
 <li>row #30: weight = <strong>0.25</strong>;</li>
 <li>row #40: weight = <strong>0.00</strong>;</li>
 </ul>
-<p>The 'Customs' amount is <strong>8.20 EUR</strong> and it's distributed through the rows as <strong>2.20 EUR : 0 EUR : 6 EUR : 0 EUR</strong></p>
+<p>The 'Customs' amount is <strong>8.20 EUR</strong> and it's distributed as <strong>2.20 EUR : 0 EUR : 6 EUR : 0 EUR</strong></p>
 <h2 id="weights--coefficients-in-the-document">Weights &amp; coefficients in the document</h2>
 <p>In certain cases, products weights for specific additional amounts are <strong>not</strong> known in advance. They may depend on a document parameter and rely on the deal type of the sales order.</p>
 <p>Regardless of whether VAT is applicable or not and whether the document row has different deal types, you will have to enter the weights/coefficients in the specific document, along with deal type.</p>
 <p>Products don't have percentages in their definitions in advance.</p>
 <p><strong>Example 2:</strong></p>
-<p>There's an additional amount 'Specific VAT', distributed by product definition and having a default percentage of <strong>20%</strong>.</p>
+<p>There's an additional amount 'Specific VAT', distributed by product definition with a default percentage of <strong>20%</strong>.</p>
 <p>You enter a sales order with four rows:</p>
-<p>#10 with amount of <strong>44 EUR</strong>, #20 with amount of <strong>56 EUR</strong>, #30 with amount of <strong>24 EUR</strong> and #40 with amount of <strong>71 EUR</strong>.</p>
+<p>#10 with <strong>44 EUR</strong>, #20 with <strong>56 EUR</strong>, #30 with <strong>24 EUR</strong> and #40 with <strong>71 EUR</strong>.</p>
 <p>Rows #10 and #20 are exempt from VAT, while the others have 20% VAT.</p>
 <p>You manually set the following percentages (<strong>100%</strong> on rows #30 and #40):</p>
 <ul>
@@ -137,7 +137,7 @@
 <p><strong>Example 3:</strong></p>
 <p>The following example describes a case where data is absent from the <strong>Document Line Amount</strong> panel:</p>
 <p>There's an additional amount VAT with a default percentage of <strong>20%</strong>. It doesn't reveal any data.</p>
-<p>In this case, no weights/coefficients are used for calculating and distributing the VAT amount. <br> It's considered that all document rows have <strong>100%</strong> VAT, so you can take advantage of easier calculation formulas.</p>
+<p>In this case, no weights/coefficients are used for calculating and distributing the VAT amount. <br> All document rows have <strong>100%</strong> VAT, so you can take advantage of easier calculation formulas.</p>
 </article>
           </div>
           

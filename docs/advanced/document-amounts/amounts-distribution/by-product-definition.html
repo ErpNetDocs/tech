@@ -79,14 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="amount-distribution-by-product-definition">Amount distribution by product definition</h1>
 
-<p>Distribution by product definition is the same as distribution <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html">by amount</a></strong>, the only difference being that <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">row weights</a></strong> are used. <br> When the additional amount has <em>Based On Lines</em> = True, the distributional coefficients are multiplied by the rows' weightings.</p>
+<p>Distribution by product definition is the same as distribution <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html">by amount</a></strong>, the only difference being that <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">row weights</a></strong> are used. When the additional amount has <em>Based On Lines</em> = True, the distributional coefficients are multiplied by the rows' weightings.</p>
 <p>The only difference is in the following calculation formula:</p>
 <p>[<strong>ki</strong>] = ([<strong>ki</strong>] + [row amount <strong>i</strong>]) * [weighting <strong>i</strong>].</p>
 <p>In addition to Example 3 from <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html">Percent value calculation</a></strong>, there's an additional amount commission with input percent of <strong>5</strong> and three rows (row #10 for <strong>150 EUR</strong>, row #20 for <strong>40 EUR</strong> and row #30 for 69 EUR) which have the following weights:</p>
 <p>row #10: weight = <strong>0.00</strong>; <br>
 row #20: weight = <strong>1.00</strong>; <br>
 row #30: weight = <strong>1.00</strong>. <br></p>
-<p>The commission amount is <strong>5.45 EUR</strong> and the distribution of this amount is calculated by the following coefficients:</p>
+<p>The commission amount is <strong>5.45 EUR</strong> and its distribution is calculated by the following coefficients:</p>
 <p>[<strong>k1</strong>] = [row amount #10] * [row weight #10] = 150 * 0.00 = <strong>0</strong>;<br>
 [<strong>k2</strong>] = [row amount #20] * [row weight #20] = 40 * 1.00 = <strong>40</strong>;<br>
 [<strong>k3</strong>] = [row amount #30] * [row weight #30] = 69 * 1.00 = <strong>69</strong>.</p>

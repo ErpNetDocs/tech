@@ -80,8 +80,7 @@
 <h1 id="aggregates">Aggregates</h1>
 
 <p>Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit.</p>
-<p>For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate.</p>
-<p>Learn more <strong><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">here</a></strong>.</p>
+<p>For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate. Learn more <strong><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">here</a></strong>.</p>
 <h4 id="in--these-are-single-aggregates">In ERP.net, these are single aggregates:</h4>
 <ul>
 <li>a SalesOrder</li>
@@ -105,7 +104,7 @@
 <li>aggregate commit / alient-commit</li>
 </ul>
 <h4 id="whats-the-difference">What's the difference?</h4>
-<p>When an object commit event occurs, it means that the object itself was changed. The aggregate event occurs for the object when there's a change in <strong>ANY</strong> of its constituent objects, but only if the object is an aggregate root.</p>
+<p>When an object commit event occurs, it means the object itself was changed. The aggregate event occurs for the object when there's a change in <strong>ANY</strong> of its constituent objects, but only if the object is an aggregate root.</p>
 <p>Let's take a look at the following structure, which is a single aggregate in ERP.net:</p>
 <ul>
 <li>a SalesOrder (which is the aggregate's root)</li>
