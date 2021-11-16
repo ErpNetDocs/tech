@@ -60,8 +60,8 @@ If it founds documents that can be adjusted (patched), it automatically generate
 
 Generations usually determine the changes in the following way:
 
-- If a quantity, amount or other scalar attribute is updated, a 'changes' line is generated, containing the numeric difference between the scalars.
+- If a quantity, amount or other **scalar** attribute is updated, a 'changes' line is generated, containing the numeric difference between the scalars.
 
-- If notes, dates or other non-scalar attributes are updated, a 'changes' line is generated, containing the new values for the non-scalars.
+- If notes, dates or other **non-scalar** attributes are updated, a 'changes' line is generated, containing the new values for the non-scalars.
 
 - Rule 1 and 2 can be combined. A 'changes' line can include **both** scalar and non-scalar changes. However, scalars are updated with 'difference' value, while non-scalars are updated with 'last' value.
