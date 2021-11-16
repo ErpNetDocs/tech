@@ -15,7 +15,7 @@ To define the proportion of row **i**, its coefficient is calculated as follows:
 
 If there are no such amounts, thеn in this initial calculation, you have [**ki**] = **0**. 
 
-If _Base On Lines_ is 'True' (in the current additional amount), the row amount is added to the initial value for [**ki**]:
+If _Base On Lines_ is 'True' (in the additional amount), the row amount is added to the initial value for [**ki**]:
 
 [**ki**] = [**ki**] + [row **i** amount].
 
@@ -106,7 +106,7 @@ This is why a specific calculation of the distributed amounts is applied:
 
 > [!NOTE] 
 > 
-> There's a specific case where the additional amount is distributed by **amount**. <br> If some rows/coefficients in the document are positive and others negative, as is described in **[Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)**, <br> except the total amount of the additional amount, there are also two **subtotals** - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the rows with positive amounts and then, the negative subtotal is distributed among the rows with negative amounts. 
+> There's a specific case where the additional amount is distributed by **amount**. <br> If some rows/coefficients in the document are positive and others negative, as is described in **[Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)**, except the total amount of the additional amount, there are also two **subtotals** - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the rows with positive amounts and then, the negative subtotal is distributed among the rows with negative amounts. 
 
 **Example 3:**
 
