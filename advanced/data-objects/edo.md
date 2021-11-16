@@ -4,9 +4,7 @@ uid: extensible-data-objects
 
 # EDO
 
-The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system.
-
-The following can be attached:
+The Extensible Data Objects (EDO) is a system in @@name, which allows attaching additional data to all entities in the system. The following can be attached:
 
 - files
 - **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)** tracking data
