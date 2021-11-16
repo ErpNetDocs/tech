@@ -10,7 +10,7 @@ It's determined in one of the following ways, sorted by high-to-low priority:
 
 1. If _Limit To Allowed Values_ **doesn't** have a check mark, any value is valid and <br> the domain is a range of **all** possible values.
 
-2. If _Allowed Values Entity Name_ **has** a value, the domain is the set of **all records** of the specified data type.
+2. If _Allowed Values Entity Name_ **has** a value, the domain is **all records** of the specified data type.
    
      This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Property_ does NOT have a value.
 
@@ -143,7 +143,7 @@ In the sales order document type, the following custom properties are set:
 
 When specifying a customer in a sales order, **only** the custom properties that have the same hereditary root <br> will be automatically copied to the document.
 
-## Custom properties value priorities (when copying to a document)
+## Custom properties value priorities
 
 The priority for automatic copying of custom properties by the following priorities:
 
@@ -155,7 +155,7 @@ The priority for automatic copying of custom properties by the following priorit
 
 2. Values set in the panel **Copy Customer Properties**. (Priority 70) 
  
-   This is valid only for sales orders, but the same priority applies if there's a similar table for other types of data.
+   This is valid for sales orders, but the same priority applies if there's a similar table for other data.
 
 3. Values of custom properties with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)
    
@@ -163,7 +163,7 @@ The priority for automatic copying of custom properties by the following priorit
 
 4. Default values specified in the document type. (Priority 20)
 
-5. If none of the above contains a value for the custom property, but the value is instead specified in the document type: <br> Set an empty (NULL) value. (Priority 10)
+5. If none of the above contains a value for the custom property, but the value is instead specified in the document type: Set an empty (NULL) value. (Priority 10)
 
 > [!NOTE]
 >
