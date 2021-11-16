@@ -1,6 +1,6 @@
 # Amount distribution by product definition
 
-Distribution by product definition is the same as distribution **[by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**, the only difference being that **[row weights](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)** are used. <br> When the additional amount has _Based On Lines_ = True, the distributional coefficients are multiplied by the rows' weightings. 
+Distribution by product definition is the same as distribution **[by amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html)**, the only difference being that **[row weights](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)** are used. When the additional amount has _Based On Lines_ = True, the distributional coefficients are multiplied by the rows' weightings. 
 
 The only difference is in the following calculation formula:
 
