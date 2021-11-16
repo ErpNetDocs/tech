@@ -1,8 +1,6 @@
 # SYS
 
-SYS is used with system variables.
-
-They can be applied when you need to acquire information for the current user, date, time, enterprise company and others.
+SYS is used with system variables. They can be applied when you need to acquire information for the current user, date, time, enterprise company and others.
 
 Here's a list of those variables:
 
