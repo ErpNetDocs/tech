@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Clause which filters by the specified conditions. The second and the third parameters are optional.          |
+| Description           | Clause which filters by the specified conditions. <br> The second and the third parameters are optional.          |
 | Parameter 1 Name      | Condition1                                                      |
 | Parameter 1 Type      | boolean                                    |
 | Parameter 2 Name      | boolean                                                           |
