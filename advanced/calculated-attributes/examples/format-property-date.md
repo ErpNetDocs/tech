@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Format date type custom property 
 
-The current example shows how you can format the values of date type custom properties using a calculated attribute.
+This example shows how you can format the values of date type custom properties using a calculated attribute.
 
 ```
 10:	FORMATSTRING	EXP:20	CONST:yyyy MM dddd		
