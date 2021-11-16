@@ -12,7 +12,7 @@ When creating a calculated attribute, there are some things to keep in mind in o
 
 Using a **REF** means that you're using the collection of elements that have already been loaded in the memory. The **REF** connection leads only to the records that refer to the current entity.
 
-Using a **[SELECT]** means that for each attribute calculation, the system will create a request to the server and will look through the whole table that you have selected. A single table could contain millions of records (or even more). 
+Using a **[SELECT]** means that for each attribute calculation, the system will create a request to the server and will look through the whole table that you have selected. A single table could contain millions of records. 
 
 More records means slower calculation. Like any design, when creating a calculated attribute, there is usually more than one way to calculate the value. Sometimes **[SELECT]** is the simplest option to use to reach the value, but you should always try to find a link instead, in order to achieve faster calculation.
 
