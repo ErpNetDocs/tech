@@ -10,7 +10,7 @@ items: Operators
 | Description           | Gets objects that match clauses.           |
 | Parameter 1 Name      | Repository                                                         |
 | Parameter 1 Type      | repository                                    |
-| Parameter 2 Name      | Clauses (optional, but highly recommended) // For more information, see the section below)           |
+| Parameter 2 Name      | Clauses (optional, but highly recommended) // <br> For more information, see the section below)           |
 | Parameter 2 Type      | operators (**[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)**, **[TOP](https://docs.erp.net/tech/advanced/calculated-attributes/operators/top.html)**)                                                           |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
