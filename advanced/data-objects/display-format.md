@@ -91,7 +91,7 @@ Just follow the rules when specifying the **string interpolation**.
 
 > [!NOTE]
 > 
-> How do you know the specific attributes of the entity type that you need? <br> Refer to the **[@@erpnet Domain Model documentation](https://docs.erp.net/model/entities/)**. <br> Following the example above, all the necessary information is available in **[Crm.Customers Entity](https://docs.erp.net/model/entities/Crm.Customers.html)**. <br> Internally, the display format attribute for an entity is located in the **[Systems.Core.EntitySettings Entity](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat)** table.
+> How do you know the specific attributes of the entity type that you need? <br> Refer to the **[@@erpnet Domain Model documentation](https://docs.erp.net/model/entities/)**. <br> Following the example above, all the necessary information is available in **[Crm.Customers Entity](https://docs.erp.net/model/entities/Crm.Customers.html)**. <br> The display format attribute for an entity is located in the **[Systems.Core.EntitySettings Entity](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat)** table.
 
 ## Examples
 
