@@ -4,9 +4,7 @@ items: CalculatedAttributeExamples
 
 # Check if the quantity is a whole number
 
-This attribute returns 'Тrue' if the quantity in the sales order line is а whole number, and False - if it is decimal number. 
-
-The repository of the attribute is **Crm.Sales.SalesOrderLines**.
+This attribute returns 'Тrue' if the quantity in the sales order line is а whole number, and False - if it's decimal number. The repository of the attribute is **Crm.Sales.SalesOrderLines**.
 
 Its expressions are as follows:
 
