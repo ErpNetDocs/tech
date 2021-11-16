@@ -9,9 +9,9 @@ Whichever method is used, it becomes a **property** of the document form inside 
 
 You either set a value in the *Input Percent* field and leave the other two empty, <br> or set a value for *Input Amount* and *Input Amount Currency* and leave the remaining one empty. 
 
-In the additional amount definition, you can control which method for determining the additional amount value is allowed. 
+In the additional amount definition, you can control which method for determining the additional amount value is allowed. This is achieved by the *Amount Input Allowed* and *Percent Input Allowed* fields. 
 
-This is achieved by the *Amount Input Allowed* and *Percent Input Allowed* fields. If the second one is True, you can set a default percent value which will appear automatically in the documents.
+If the second one is True, you can set a default percent value which will appear in the documents.
 
 The values entered in *Input Percent* and *Input Amount* can be managed by the *Allowed Directions* field:
 
