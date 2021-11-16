@@ -4,9 +4,7 @@ items: CalculatedAttributesQA
 
 # How to create an optimally fast calculated attribute?
 
-When creating a calculated attribute, there are some things to keep in mind in order to create an optimally fast syntax. 
-
-Let's see some steps that should be followed during the design of the attribute:
+When creating a calculated attribute, there are some things to keep in mind in order to create an optimally fast syntax. Let's see some steps that should be followed during the design of the attribute:
 
 1.  Use **REF** instead of **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**
 2.  If you're using **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**, use **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses instead of **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses
