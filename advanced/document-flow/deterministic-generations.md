@@ -4,7 +4,7 @@ Not all generations support generating and adjusting (patching) a transitional d
 
 Since the adjustment (patch) procedure supports matching the lines primarily by _Line No._ the generation should guarantee to always generate the same line numbers, given the same starting document.
 
-In other words, if you execute a generation several times for the same document, the same line numbers will be generated. This can be guaranteed if the generation creates the sub-document(s) using data only from the source (parent) document and **doesn't** look outside of it. 
+If you execute a generation several times for the same document, the same line numbers will be generated. This can be guaranteed if the generation creates the sub-document(s) using data only from the source (parent) document and **doesn't** look outside of it. 
 
 Common external data that can make a generation **non-deterministic** includes: 
 
