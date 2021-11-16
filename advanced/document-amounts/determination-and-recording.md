@@ -21,7 +21,7 @@ This data is entered by adding the amount to a document in its **Additional Amou
   
 After the amount value is calculated, it's **[distributed](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)** among the affected documents. 
 
-This is necessary because you often need to determine what part of the additional amount is distributed to a **specific row** - <br> for example, the value of the additional amount VAT for a specific sales order row.
+This is necessary because you often need to determine what part of the additional amount is distributed to a **specific row** - for example, the value of the additional amount VAT for a specific sales order row.
 
 There may be cases when an additional amount is entered in one document, but it affects others as well. 
 
@@ -31,9 +31,9 @@ In this case, the original purchase invoice for the delivery of goods has arrive
 
 The purchase invoice is released **before** the purchase invoice for the transport arrives. Transport is entered as an **additional amount** so it can be included in the product's costs. 
 
-Transport can't be entered in the original purchase invoice because the document state, of which it **isn't** a part, is 'Released'. <br> Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's good costs.
+Transport can't be entered in the original purchase invoice because the document state, of which it **isn't** a part, is 'Released'. Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's good costs.
 
-As a result, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, where you distribute the current amount. 
+As a result, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, to distribute the current amount. 
 
 An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its **real value**. 
 
