@@ -7,7 +7,7 @@ items: Operators
 
 | Specification         | Value                                                        |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Specifies a column or expression on which the query result set is sorted. Used as a clause of **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**.           |
+| Description           | Specifies a column or expression on which the query result set is sorted. <br> Used as a clause of **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**.           |
 | Parameter 1 Name      | attribute                                                         |
 | Parameter 1 Type      | any type                                 |
 | Parameter 2 Name      | order (optional) <br> // if not set, the default is ASC                                                            |
