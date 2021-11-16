@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get value and description of referent object
 
-When a value is set to a custom property of an object, a new record is added to the **General.PropertyValue** repository. <br>
+When a value is set to a custom property of an object, a new record is added to the **General.PropertyValue** repository.
 The new record has its own Id, and an EntityItemId, which is the id of the specific object. 
 
 In a calculated attribute, you'll need to filter the value for the specific property (PropertyId) of the specific object (EntityItemId) and then get the value or description. 
@@ -44,4 +44,4 @@ And the calculated attribute expressions are as follows:
 - 80: get the attribute **CustomerId** of the input object of expression 10
 
  
-If you need the value of the property, the first expression may be set to **GETOBJVALUE EXP:20 ATTRIB:PropertyValueField**.
+If you need the value of the property, the first expression may be set to <br> **GETOBJVALUE EXP:20 ATTRIB:PropertyValueField**.
