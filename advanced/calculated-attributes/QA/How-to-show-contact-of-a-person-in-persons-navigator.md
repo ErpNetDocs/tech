@@ -20,7 +20,7 @@ Its values and codes are as follows:
 
 Let's say you need to get a column with email addresses. 
 
-If a person has more than one email, you should write a random one. If a specific email is needed, more filters could be applied. 
+If a person has more than one email, you should write a random one. <br> If a specific email is needed, more filters could be applied. 
 
 The calculated attribute would have the following expressions:
 
