@@ -2,10 +2,12 @@
 
 Entities and entity types frequently used terms throughout the documentation. 
 
-**Entities** are information object which represent real-world objects. <br>
+**Entities** are information object which represent real-world objects. 
+
 **Entity types** are a collection of all objects of a given type.
 
-For example, customer 'XYZ' is an entity. Customer 'ABC' is another entity. All customers are of an entity type called 'Customers'.
+For example, customer 'XYZ' is an entity. <br>
+Customer 'ABC' is another entity. <br> All customers are of an entity type called 'Customers'.
 
 ### Definitions
 
@@ -15,15 +17,17 @@ For example, customer 'XYZ' is an entity. Customer 'ABC' is another entity. All 
 
 ## Relationship to tables and rows
 
-This section contains more advanced information not usually needed to operate the system. However, a deeper understanding of the inner-workings might help when you need to access an @@name database directly using database tools.
+This section contains more advanced information not usually needed to operate the system. 
 
-Generally, entity types, entities, and attributes are much like tables, rows, and columns. <br> Data of the entities is ultimately stored in the database in the form of tables and rows. 
+However, a deeper understanding of the inner-workings might help when you need to access an @@name database directly using database tools.
 
-There's one important distinction: entity types and entities are **object-oriented representation of table data**. <br> A technology called ORM (Object-Relational Mapping) is used to map between entities and tables.
+Generally, entity types, entities, and attributes are much like tables, rows, and columns. Data of the entities is ultimately stored in the database in the form of tables and rows. There's one important distinction: entity types and entities are **object-oriented representation of table data**. A technology called ORM (Object-Relational Mapping) is used to map between entities and tables.
 
-#### In order to better illustrate the difference between objects and tables, let's include some real-world tables and objects:
+In order to better illustrate the difference between objects and tables, let's include some real-world tables and objects:
 
-There's an entity type called 'Party'. It has two descendants (more specialized) entity types called 'Company' and 'Person'. 
+There's an entity type called 'Party'. 
+
+It has two descendants (more specialized) entity types called 'Company' and 'Person'. 
 
 'Party' is the more abstract and broad term, while 'Company' and 'Person' are just specializations. 
 
@@ -39,7 +43,7 @@ Each party has some attributes such as 'parent party' and 'area'. <br>
 Each company has 'VAT number' and 'registration type' attributes. <br>
 Each person has 'first name' and 'last name'.
 
-#### Now, if you look at the tables, they have the following schema:
+Now, if you look at the tables, they have the following schema:
 
 - Parties
   - Party Id
@@ -54,7 +58,7 @@ Each person has 'first name' and 'last name'.
   - First name
   - Last name
 
-### If you look at the objects, they'll have the following attributes:
+If you look at the objects, they'll have the following attributes:
 
 - Party
   - Parent rty
@@ -74,6 +78,8 @@ If you use table data, in order to access all attributes of a company or a perso
 
 Internally, the systems use **objects** because it's much easier to process them. Objects already have all necessary attributes related together and there's no need to use identifiers or table relations.
 
-#### Conclusion:
+**Conclusion**
 
-This is only an introduction to the topic of object-relational mapping. A deeper look would exceed the developer details of the subject.
+This is only an introduction to the topic of object-relational mapping. 
+
+A deeper look would exceed the developer details of the subject.
