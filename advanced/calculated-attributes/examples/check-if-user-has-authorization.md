@@ -4,9 +4,7 @@ items: CalculatedAttributeExamples
 
 # Check if the current user has authorization
 
-To determine whether a logged-in user is authorized to do, see, or edit an entity, you need to know which **group** has such rights. 
-
-You can then create a calculated attribute that checks if the user is part of that group:
+To determine if a logged-in user is authorized to do, see, or edit an entity, you need to know which **group** has such rights. You can then create a calculated attribute that checks if the user is part of that group:
 
 ```
 10: IIF EXP:20 CONST:True CONST:False         
@@ -22,7 +20,7 @@ You can then create a calculated attribute that checks if the user is part of th
 
 **Explanation:**
 
-- 10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True' message, else - 'False'.
+- 10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True' message, if else - 'False'.
 - 20: Check if the list EXP:30 returns at least one record.
 - 30: Return the count of records in the filtered list of EXP:40.
 - 40: Select 'User Groups' filtered by EXP:50.
