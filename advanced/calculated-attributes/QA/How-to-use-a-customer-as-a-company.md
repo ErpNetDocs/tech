@@ -4,7 +4,7 @@ items: CalculatedAttributesQA
 
 # How to use a customer as a company?
 
-When you work with a customer, you can only get its party attributes, such as company, company location or a person.
+When you work with a customer, you can only get party attributes like company, company location or person.
 
 If you know that the customer is a company and need to get their company attributes, you can cast its reference party to **Aloe.EnterpriseOne.Model.General.Contacts.Company**.
 
