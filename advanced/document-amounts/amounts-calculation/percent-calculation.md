@@ -93,7 +93,9 @@ The final result for the amount is:
 > 
 > [additional amount] = [positive amount] + [negative amount]
 > 
- These two subtotals may be used in the additional amount distribution. For further information, see **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+ These two subtotals may be used in the additional amount distribution. 
+ 
+ For further information, see **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
 **Example 3*:**
 
