@@ -22,7 +22,7 @@ Suppose you need to show a field with *_Total Line Amount_* value in the sales o
 
 Such attribute can be created in at least two ways (the repository being **Crm.Sales.SalesOrderLines**):
 
-#### Using a [SELECT] (with all records in the Crm.Sales.SalesOrderLines table)
+**Using a [SELECT] (with all records in the Crm.Sales.SalesOrderLines table)**
 
 ```
 10     SUM  EXP:20  ATTRIB:LineAmountValue                            
@@ -31,7 +31,7 @@ Such attribute can be created in at least two ways (the repository being **Crm.S
 40     EQUAL ATTRIB:SalesOrderId   EXP:50                
 50     GETOBJVALUE  INPUT:10      ATTRIB:SalesOrderId          
 ```
-#### Using a REF (with only the lines of the current SalesOrder)
+**Using a REF (with only the lines of the current SalesOrder)**
 
 ```
 10     SUM EXP:20 ATTRIB:LineAmountValue                    
