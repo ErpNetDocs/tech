@@ -169,4 +169,4 @@ The priority for automatic copying of custom properties by the following priorit
 
 > [!NOTE]
 >
-> Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures <br> (enterprise company, customer, parent document etc.)
+> Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures (enterprise company, customer, parent document etc.)
