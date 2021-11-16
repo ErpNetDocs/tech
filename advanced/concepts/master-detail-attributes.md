@@ -12,10 +12,10 @@ If a field in the document header has a value, you need to make sure that the co
 
 When this principle isn't obeyed and the *Store* field in the document header contains a value despite the document lines having different store values, you may look in the header and think that this store applies to all of its lines as well, which may not be true.
 
-### Concepts and rules
+## Concepts and rules
 
 To make sure the main principle described above is followed, requirements and rules are applied to each set of Master/Detail fields. 
-#### Concepts
+### Concepts
 
 - In order to allow different lines to contain different stores and at the same time follow the main principle, you need to make sure that the *Store* field in the document header contains **empty** (NULL) values. 
 
@@ -28,7 +28,7 @@ For example, if you're generating a store order from a sale order, the _Store_ f
 - If the document doesn't contain any lines, then there's **no** limitation for the document header value. 
  
 It doesn't matter if it's empty (NULL) or if it contains a value (not-NULL).
-#### Front-end rules
+### Front-end rules
 
 - When the value of the document header's field is changed, this value is automatically set to **ALL** document lines.
 
@@ -43,7 +43,7 @@ For this reason, after editing the value in the _Line Store_ field and when dele
 - When adding a new line, you're setting the default value in the _Line Store_ field, which **equals** the one in the document header (unless another default value is explicitly set).
  
 If the document header value is empty (NULL), the value from the previous lines is considered as a default value in the new line. If this is impossible, then the default value remains **empty** (NULL).
-#### Back-end rules
+### Back-end rules
 
 - When the document header is saved, the master/detail field's value is updated according to the value of the **lines** field. 
 
