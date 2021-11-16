@@ -4,11 +4,9 @@ items: CalculatedAttributeExamples
 
 # Check if a value of a field is changed in the adjustment document
 
-This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document.
+This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document. This information helps you determine if the value of the field is being or has been changed in the adjustment document. 
 
-This information helps you determine if the value of the field is being or has been changed in the adjustment document. 
-
-Using this attribute, you can create a business rule which would allow you to **prohibit** the correction of the value of the field.
+Using the attribute, you can create a business rule which would allow you to **prohibit** the correction of the value of the field.
 
 ```
 10: IIF EXP:20 CONST:False EXP:30
