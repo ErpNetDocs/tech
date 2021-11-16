@@ -49,11 +49,11 @@ The tracking data includes:
 - **Last update time (UTC)** - the time of the last update.
 - **Is deleted** - specifies whether the tracked object is deleted. 
 
-After the tracked object is deleted, the **EDO** information stays in the database for some time, but can be purged by cleanup processes. When the tracked object is deleted, the deletion user & time are stored in **Last update user** / **Time**.
+After the tracked object is deleted, the **EDO** information stays in the database for some time, but can be purged by cleanup processes. The deletion user & time are stored in **Last update user** / **Time**.
 
 ### Level 2 - track object changes
 
-In this level, the extensible data object is still updated, but for each modification, a new record is created in two tables:
+Here, the extensible data object is still updated, but for each modification, a new record is created in two tables:
 
 1. **@Systems.Core.ObjectChangesets** contains data about change-sets.
 
@@ -96,28 +96,27 @@ But now, data about each attribute (field) change is also kept.
 
 Some attribute changes might not be reflected properly by the system. Since the Track Changes system works at application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.
 
-The *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. <br> Therefore, only the **new** values are stored. 
+The *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. Therefore, only the **new** values are stored. 
 
 This design was chosen for the following reasons:
 
 - Both old values AND new values are **not** stored to save space.
 
-- If only old values are stored, the track-changes algorithm can save some space, but performance **will** suffer. <br> Initial object creation doesn't need to store values. 
+- If only old values are stored, the track-changes algorithm can save some space, but performance **will** suffer. Initial object creation doesn't need to store values. 
  
 This was the initial and **abandoned** implementation of the track changes system. 
 
 The process needed to synchronously read the previous database value before each update. This slowed down the database transactions and it was decided that the **'new values only'** approach would better fit performance requirements.
 
-- The storage of the new values can be performed asynchronously **AFTER** the actual database transaction has completed. 
-<br>In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.
+- The storage of the new values can be performed asynchronously **AFTER** the actual database transaction has completed. In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.
 
-- One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be **lost**. <br> In this case, the object change will still be recorded **synchronously** (as part of the transaction).
+- One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be **lost**. In this case, the object change will still be recorded **synchronously** (as part of the transaction).
 
 ### Level 4 - track object, attribute & BLOB changes
 
 Same as Level 3, but the values of BLOB attributes are also saved. 
 
-This can severely affect the storage requirements and should be used only for small tables and as last-resort measure.
+It can severely affect storage requirements and should be used only for small tables and as last-resort measure.
 
 ## Configuring track changes
 
@@ -130,9 +129,7 @@ The track-changes functionality is activated through the **@Systems.Core.EntityS
 3. Save and close.
 4. Tracking will soon start.
 
-For document entities, mass activation of the *Track Changes* system using the **DocumentVersioningSystem** registry key is possible. 
-
-To learn more, see the description key number 42 in **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html)**.
+For document entities, mass activation of the *Track Changes* system using the **DocumentVersioningSystem** registry key is possible. To learn more, see the description key number 42 in **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html)**.
 
 > [!NOTE] 
 > 
