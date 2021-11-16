@@ -21,7 +21,7 @@ It's up to the implementation team to define the latter, which is subject to imp
 > [!NOTE]
 > 
 > Many custom attributes can easily be defined and set as 'required'. 
-> However, this might endanger the whole ERP <br> implementation, since requiring too much data entry for each operation can alienate the end users from the system. <br>
+> However, this might endanger the whole ERP implementation, since requiring too much data entry for each operation can alienate the end users from the system. <br>
 > Business needs should be carefully balanced with the end-user comfort.
 
 ----------
