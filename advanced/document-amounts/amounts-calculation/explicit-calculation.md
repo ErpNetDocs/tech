@@ -1,8 +1,6 @@
 # Explicit value calculation
 
-The explicit amount entered through the *Input Amount* and *Input Amount Currency* fields is converted to the document currency. 
-
-The result is the **end amount** of the additional amount.
+The explicit amount entered through the *Input Amount* and *Input Amount Currency* fields is converted to the document currency. The result is the **end amount** of the additional amount.
 
 **Example:**
 
