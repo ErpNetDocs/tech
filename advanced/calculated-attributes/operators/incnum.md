@@ -19,8 +19,8 @@ items: Operators
 
 > [!NOTE]
 > 
-> If you try incrementing a string whose last character is 'AA01', the incrementation will be successful and result will be 'AA02'.<br> 
-> If you increment a value of type decimal, int or date, the incrementation will be unsuccessful and the attribute won't compilate.<br>
+> If you try incrementing a string whose last character is 'AA01', the incrementation will be successful and result will be 'AA02'. 
+> If you increment a value of type decimal, int or date, the incrementation will be unsuccessful and the attribute won't compilate.
 > If the value is a string whose last character isn't a number ('AA', for example), the incrementation won't be successful.
 
 **Example:**
