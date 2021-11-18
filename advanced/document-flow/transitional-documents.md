@@ -4,7 +4,7 @@ uid: transitional-documents
 
 # Transitional documents
 
-Transitional documents are automatically maintained to always contain the most up-to-date information from a parent document. Once generated, they're adjusted with the latest changes after each change in a parent document.
+Transitional documents are maintained to contain the most up-to-date information from a parent document. Once generated, they're adjusted with the latest changes after each change in a parent document.
 
 Transitional documents are **hidden** from the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow **contiguous**.
 
