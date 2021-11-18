@@ -38,7 +38,9 @@ The older generation enters the **AGEING** lifetime stage.
 
 In this case, the **AGEING** generation procedures, which later becomes **OBSOLETE**, has to be replaced by an **ACTIVE** procedures that have been released, because they maintain the contemporary business logic, methods of computing and have better and faster performance. 
 
-The transition doesn't need to be happen after the release of the new version, but it must be performed **before** the generation procedure enters the **DEAD** stage - before its date of suspension. This is the date on which an **OBSOLETE** generation procedure will be discontinued. It's added in the procedure's name like 'To be deleted: 9.2021'.
+The transition doesn't need to be happen after the release of the new version, but it must be performed **before** the generation procedure enters the **DEAD** stage - before its date of suspension. This is the date on which an **OBSOLETE** generation procedure will be discontinued. 
+
+It's added in the procedure's name like 'To be deleted: 9.2021'.
 
 There are three time periods in which the software will inform users:
 
