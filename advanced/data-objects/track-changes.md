@@ -120,10 +120,10 @@ It can severely affect storage requirements and should be used only for small ta
 
 ## Configuring track changes
 
-The track-changes functionality is activated through the **@Systems.Core.EntitySettings** table.
+The track-changes functionality is activated through the **Systems.Core.EntitySettings** table.
 
-#### Steps:
-
+**Steps:**
+ 
 1. Create a record in *Entity Types*, specifying the desired entity.
 2. In the *Track Changes Level* field, fill the desired tracking level.
 3. Save and close.
