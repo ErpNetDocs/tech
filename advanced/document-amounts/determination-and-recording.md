@@ -1,6 +1,6 @@
 # Additional amounts determination and recording
 
-These amounts are recorded in the **Аdditional Amounts** panel, which can be found in the following documents: 
+These amounts are recorded in the **Аdditional Amounts** panel, found in the following documents: 
 
 - Sales orders
 - Invoice orders
