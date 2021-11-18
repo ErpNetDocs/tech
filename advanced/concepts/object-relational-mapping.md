@@ -23,7 +23,7 @@ However, a deeper understanding of the inner-workings might help when you need t
 
 Generally, entity types, entities, and attributes are much like tables, rows, and columns. Data of the entities is ultimately stored in the database in the form of tables and rows. There's one important distinction: entity types and entities are **object-oriented representation of table data**. A technology called ORM (Object-Relational Mapping) is used to map between entities and tables.
 
-In order to better illustrate the difference between objects and tables, let's include some real-world tables and objects:
+In order to illustrate the difference between objects and tables, let's include real-world tables and objects:
 
 There's an entity type called 'Party'. 
 
