@@ -4,7 +4,7 @@ User calculated attributes are user-defined objects which extend the system enti
 
 They're defined like formulas.
 
-<br> When the value of a calculated attribute is requested, it's calculated "on the fly", in **real-time**.
+When the value of a calculated attribute is requested, it's calculated "on the fly", in **real-time**.
 
 > [!NOTE]
 > 
@@ -54,7 +54,7 @@ The following calculated attribute sums all sales order lines, the product of wh
 - Line 60: Specifies that the first condition is the value of an attribute called 'CustPropPrj' should be '500'.
 - Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'.
 
-This example demonstrates how attributes can calculate very complicated formulas, query the database, get related values, etc.
+This example shows how attributes can calculate complicated formulas, query the database, and get related values.
 
 --------
 ### See more
