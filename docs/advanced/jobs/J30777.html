@@ -92,7 +92,7 @@
 <td><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.Documents.html">General.Documents Entity</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">Job Type Name</td>
+<td style="text-align: left;">Job type name</td>
 <td>Document State Change</td>
 </tr>
 <tr>
@@ -101,14 +101,14 @@
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>The Document State Change job is used to change the state of the desired set of documents. For each job of this type must be created a record in <em>Document Jobs</em>! This record contains information about the state which has to be set, the new user state (optional), and the conditions which define the set of documents that are going to be processed.</td>
+<td>Used to change the state of a desired set of documents. A record in <em>Document Jobs</em> must be created for each job of this type! It should contain information about the state that has to be set, the new user state (optional), and the conditions which define the set of documents that will be processed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">First To Process</td>
+<td style="text-align: left;">First to process</td>
 <td>-</td>
 </tr>
 <tr>
-<td style="text-align: left;">Records Per Iteration</td>
+<td style="text-align: left;">Records per iteration</td>
 <td>1</td>
 </tr>
 <tr>
@@ -117,28 +117,27 @@
 </tr>
 </tbody>
 </table>
-<p><strong>IMPORTANT NOTES</strong> about the configurations in <em>Document Jobs</em>:</p>
+<p><strong>Important notes:</strong></p>
 <ul>
-<li><p>The <em>Document Type</em> field is NOT a filter for the job. If you set a specific document type it does not mean that the job will be executed only for documents with this document type or even entity. The only filters which are evaluated to determine the processed documents are the filters in the <em>Conditions</em> field.</p>
+<li><p>The <em>Document Type</em> field is NOT a filter for the job. If you set a specific document type, it doesn't mean that it will be executed only for documents with this document type or entity. The only filters meant to determine the processed documents are in the <em>Conditions</em> field.</p>
 </li>
-<li><p>The <em>Conditions</em> field is the only field that is taken into account to determine which documents will be processed. <br>
-If there are NO conditions, the system will try to process all documents into the database!</p>
+<li><p>The <em>Conditions</em> field is the only one that's taken into account when determining which documents will be processed. If there are no conditions, the system will try to process <strong>all</strong> documents into the database!</p>
 </li>
-<li><p>In <em>Conditions</em> we have to choose and specify the right <strong>combination</strong> of criteria which will filter the desired set of documents among all documents in the system.
-<br>Commonly used filters would be:</p>
+<li><p>In <em>Conditions</em>, you have to choose and specify the right combination of <strong>criteria</strong> which will filter the desired set of documents among all documents in the system.
+Commonly used filters would be:</p>
 <ul>
 <li>Document.Void = false - the job will exclude voided documents.</li>
-<li>Document.Entity Name - the job will be executed for all documents of this entity e.g. sales order.</li>
+<li>Document.Entity Name - the job will be executed for all documents of this entity.</li>
 <li>Document.Document Type - the job will be executed for all documents of this document type/s.</li>
 <li>Document.State - the job will be executed for all documents with this document state.</li>
 <li>Document.User State - the job will be executed for all documents with this user state.</li>
 <li>Document.Document Date &gt;= and Document.Document Date &gt;= - the job will be executed for all documents with document date in this period.</li>
 </ul>
 </li>
-<li><p>Currently, the only conditions which are taken into account are the filters from the <em>Document</em> panel.</p>
+<li><p>Currently, the only conditions taken into account are the filters from the <strong>Document</strong> panel.</p>
 </li>
 </ul>
-<p>**For more information about the jobs documentation template and a short explanation of each column, see topic @template-description-jobs**</p>
+<p>To learn more about the documentation template and get a short explanation for each table column, <br> see <a class="xref" href="template.html">Jobs documentation template</a>.</p>
 </article>
           </div>
           

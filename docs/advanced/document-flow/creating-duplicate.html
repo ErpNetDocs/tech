@@ -82,7 +82,8 @@
 <p>The current article describes the principles behind the process of creating a duplicate of an existing document.</p>
 <p>Different usages of the algorithm are also presented.</p>
 <h2 id="basic-principles">Basic principles</h2>
-<p>А duplicate of a given document is a new document which contains <strong>identical</strong> business data as the original one, meaning that all substantial and meaningful information is <strong>copied</strong>. There's some exception for technical details like internal identification numbers - primary keys, IDs of reference links between different parts of a document, and more.</p>
+<p>А duplicate of a given document is a new document which contains <strong>identical</strong> business data as the original one, meaning that all substantial and meaningful information is <strong>copied</strong>.</p>
+<p>There's some exception for technical details like internal identification numbers - primary keys, IDs of reference links between different parts of a document, and more.</p>
 <p><strong>This is the common algorithm for creating a duplicate:</strong></p>
 <ol>
 <li><p>A new document is created with a particular document type. <br> Inside its headers, the substantial data from the original is copied.</p>
@@ -120,7 +121,7 @@ b.  in each header of the new document, only the substantial data from the origi
 </ul>
 <p><strong>This is the common algorithm for copying substantial data from the original records to the duplicate records:</strong></p>
 <ul>
-<li><p>Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are <strong>not</strong> copied; original values are kept, since they're generated during the creation of the duplicate;</p>
+<li><p>Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are <strong>not</strong> copied; the original values are kept, since they're generated during the creation of the duplicate;</p>
 </li>
 <li><p>For fields processed specifically, the value of the original record is <strong>not</strong> copied, and the specific logic for filling the duplicate record is followed;</p>
 </li>

@@ -92,7 +92,7 @@
 <td><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.DocumentPrintImages.html">General.DocumentPrintImages Entity</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">Job Type Name</td>
+<td style="text-align: left;">Job type name</td>
 <td>Deletе Old Document Print Images</td>
 </tr>
 <tr>
@@ -101,14 +101,14 @@
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>The system job deletes all old document print images, whose retention period has expired. <br> A retention period is considered as expired when the period between the print time of the document print image and today is larger than the period set in the <em>Print Images Retention Months</em> field Enterprise Company's definition. <br> The default value for the <em>Print Images Retention Months</em> field is 60 months but this period can be adjusted according to the particular company's needs.</td>
+<td>Deletes old document print images whose retention period has expired. Expiration occurs when the period between the print time of the document image and today is larger than the period set in the <em>Print Images Retention Months</em> field in the enterprise company's definition. The default value for that field is 60 months but it can be adjusted according to the company's needs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">First to Process</td>
+<td style="text-align: left;">First to process</td>
 <td>DocumentPrintImage.DocumentPrints.PrintTime (ASC)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Records per Iteration</td>
+<td style="text-align: left;">Records per iteration</td>
 <td>1000</td>
 </tr>
 <tr>
@@ -119,9 +119,9 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The job will NOT delete the information from the <em>Document Prints</em> panel/table. The information about when and by whom the document has been printed will continue to be available. The job deletes only the document print image a.k.a the visual representation of the document that has been printed.</p>
+<p>The job will <strong>NOT</strong> delete the information from the <strong>Document Prints</strong> panel/table. Information about when and by whom the document has been printed will continue to be available. The job deletes only the visual representation of the document that has been printed.</p>
 </div>
-<p>**For more information about the Jobs documentation template and a short explanation of each column, see topic @template-description-jobs**</p>
+<p>To learn more about the documentation template and get a short explanation for each table column, <br> see <a class="xref" href="template.html">Jobs documentation template</a>.</p>
 </article>
           </div>
           

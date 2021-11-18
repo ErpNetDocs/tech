@@ -84,7 +84,7 @@
 <p>If a field in the document header has a value, you need to make sure that the corresponding field in the document lines contains <strong>the same</strong> value. On the other hand, if the different lines contain different values, the document's header field should be <strong>empty</strong>.</p>
 <p>When this principle isn't obeyed and the <em>Store</em> field in the document header contains a value despite the document lines having different store values, you may look in the header and think that this store applies to all of its lines as well, which may not be true.</p>
 <h2 id="concepts-and-rules">Concepts and rules</h2>
-<p>To make sure the main principle described above is followed, requirements and rules are applied to each set of Master/Detail fields.</p>
+<p>To make sure the main principles are followed, requirements and rules apply to each set of Master/Detail fields.</p>
 <h3 id="concepts">Concepts</h3>
 <ul>
 <li>In order to allow different lines to contain different stores and at the same time follow the main principle, you need to make sure that the <em>Store</em> field in the document header contains <strong>empty</strong> (NULL) values.</li>
