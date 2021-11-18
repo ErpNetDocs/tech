@@ -113,7 +113,7 @@ According to the example above, custom properties have the following hereditary 
 
 ## Copying
 
-Hereditary roots determine the most appropriate 'partner' for copying allowed values of custom properties.
+Hereditary roots determine the most appropriate 'partner' to copy allowed values of custom properties.
 
 **Example 4:** 
 
