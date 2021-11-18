@@ -14,7 +14,7 @@ When this principle isn't obeyed and the *Store* field in the document header co
 
 ## Concepts and rules
 
-To make sure the main principle described above is followed, requirements and rules are applied to each set of Master/Detail fields. 
+To make sure the main principles are followed, requirements and rules apply to each set of Master/Detail fields. 
 ### Concepts
 
 - In order to allow different lines to contain different stores and at the same time follow the main principle, you need to make sure that the *Store* field in the document header contains **empty** (NULL) values. 
