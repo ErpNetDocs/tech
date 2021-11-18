@@ -46,7 +46,7 @@ The easiest way to visualize them is to display their names (the "Name" attribut
 
 #### Everything seems fine, but what if you need something more? 
 
-This entity visualization should also apply when you choose a **customer** or a **product** (respecting the example above). 
+This entity visualization should also apply when you choose a **customer** or a **product**. 
 
 How will you act when you have several products named *"1U Server"*? 
 
@@ -54,7 +54,7 @@ Wouldn't it be better to see more information about each entity?
 
 What about if you see the product availability at the time that you choose it?
 
-This is where the **display format** becomes important. @@name allows you to **specify** the display format of each entity type.
+This is where **display format** helps. @@name allows you to **specify** it for each entity type.
 
 If you need more attributes to be displayed, or a specific format of your choice, you're free to customize it. 
 
