@@ -6,7 +6,9 @@ Different usages of the algorithm are also presented.
  
 ## Basic principles
 
-А duplicate of a given document is a new document which contains **identical** business data as the original one, meaning that all substantial and meaningful information is **copied**. There's some exception for technical details like internal identification numbers - primary keys, IDs of reference links between different parts of a document, and more.
+А duplicate of a given document is a new document which contains **identical** business data as the original one, meaning that all substantial and meaningful information is **copied**. 
+
+There's some exception for technical details like internal identification numbers - primary keys, IDs of reference links between different parts of a document, and more.
 
 **This is the common algorithm for creating a duplicate:**
 
@@ -54,7 +56,7 @@ Other examples for 'rows of rows' are:
 
 **This is the common algorithm for copying substantial data from the original records to the duplicate records:**
 
-- Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are **not** copied; original values are kept, since they're generated during the creation of the duplicate;
+- Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are **not** copied; the original values are kept, since they're generated during the creation of the duplicate;
 
 - For fields processed specifically, the value of the original record is **not** copied, and the specific logic for filling the duplicate record is followed;
 
