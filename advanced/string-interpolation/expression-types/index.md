@@ -1,7 +1,10 @@
 # Interpolation expression types
 
-As mentioned, the whole string, subject to interpolation, is treated as a set of multiple discrete expressions. Each one is evaluated and the resulting value replaces its corresponding expression definition into the input string. 
+A string is subject to interpolation and treated as a set of multiple discrete expressions. After each one is evaluated, the resulting value replaces its corresponding expression definition in the input string. 
 
-There are several types of interpolation expressions, depending on the type of acquired data and the way is obtained. Currently @@name supports the ones below.
+There are several **types** of interpolation expressions, depending on the type of acquired data and the way it's obtained. Currently, @@name supports:
 
-[!list items=StringInterpolationExpressionTypes limit=100 default-text="None"]
+- **[Constant](https://docs.erp.net/tech/advanced/string-interpolation/expression-types/constant.html)**
+- **[Data member](https://docs.erp.net/tech/advanced/string-interpolation/expression-types/data-member.html)**
+- **[System variable](https://docs.erp.net/tech/advanced/string-interpolation/expression-types/system-variable.html)**
+- **[Entity](https://docs.erp.net/tech/advanced/string-interpolation/expression-types/entity.html)**
