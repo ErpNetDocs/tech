@@ -4,7 +4,10 @@ items: StringInterpolationExpressionTypes
 
 # Constant expressions
 
-This kind of expressions doesn't perform any evaluation (i.e. no interpolation) and will produce an output same as the input.
+These expressions don't perform any evaluation and will produce an output that's the same as the input.
+
+There's **no** interpolation.
+
 ```cs
 // Input
 'test'
@@ -33,7 +36,7 @@ line2'
 line3'
 ```
 
-It's also possible to escape the control characters for beginning and end of an interpolation expression `{`, `}`. Either by doubling `{{`, `}}`, or by using the escape character `\{`, `\}`.
+It's also possible to escape the control characters for beginning and end of an interpolation expression `{`, `}`, either by doubling `{{`, `}}`, or by using the escape character `\{`, `\}`.
 ```cs
 // Input
 '{{This one is escaped}}'
@@ -47,4 +50,4 @@ It's also possible to escape the control characters for beginning and end of an 
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/constant.html).
+> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/constant.html)** section.
