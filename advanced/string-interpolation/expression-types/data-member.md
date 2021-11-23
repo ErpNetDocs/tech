@@ -27,7 +27,10 @@ Acquires a data member according to the object's context by the passed `referenc
 ''
 ```
 
-The evaluation fails if the resolved data member doesn't exist. The output will contain an error message. In contrast, if the data member is null, the expression will evaluate to an empty string.
+Evaluation fails if the resolved data member doesn't exist. The output will contain an **error message**. 
+
+In contrast, if the data member is null, the expression will evaluate to an **empty string**.
+
 ```cs
 // Input (There is no 'Name' data member in Customer)
 '{Customer.Name}'
@@ -41,4 +44,5 @@ The evaluation fails if the resolved data member doesn't exist. The output will 
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/data-member.html).
+> 
+> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)** section.
