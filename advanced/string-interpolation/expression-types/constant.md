@@ -50,4 +50,4 @@ It's also possible to escape the control characters for beginning and end of an 
 ```
 
 > [!NOTE]
-> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/constant.html)** section.
+> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)** section.
