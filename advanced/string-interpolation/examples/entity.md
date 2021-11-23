@@ -24,7 +24,7 @@ items: StringInterpolationExamples
     * Evaluates to 'John Doe'
 3. `', welcome to our forum!'`
 
-### Acquiring an entity object and deep-referencing its data member, including a format specifier
+### Acquiring an entity object and deep-referencing its data member, including a [format specifier](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)
 
 #### Input
 ```cs
