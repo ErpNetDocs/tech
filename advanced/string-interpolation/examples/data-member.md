@@ -22,7 +22,7 @@ items: StringInterpolationExamples
 3. Evaluates to `"929bdc15-79d8-4a1f-9467-c237f040939d"`
 4. `'.'`
 
-*Assuming that the domain object has: <br> data member 'DocumentId' equal to <br> '929bdc15-79d8-4a1f-9467-c237f040939d'.*
+*Assuming that the domain object has: <br> data member 'DocumentId' equal to '929bdc15-79d8-4a1f-9467-c237f040939d'.*
 
 ### Referencing data members deeper
 
