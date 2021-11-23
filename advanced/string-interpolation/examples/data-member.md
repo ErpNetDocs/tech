@@ -4,7 +4,7 @@ items: StringInterpolationExamples
 
 # Data member expression examples
 
-## Same level data member reference
+### Same level data member reference
 
 #### Input
 ```cs
@@ -18,14 +18,13 @@ items: StringInterpolationExamples
 
 #### Breakdown
 1. `'The document Id is '`
-2. `{DocumentId}`
-    * Evaluates to `"929bdc15-79d8-4a1f-9467-c237f040939d"`
-3. `'.'`
+2. `{DocumentId}` 
+3. Evaluates to `"929bdc15-79d8-4a1f-9467-c237f040939d"`
+4. `'.'`
 
+*Assuming that the domain object has: <br> data member 'DocumentId' equal to <br> '929bdc15-79d8-4a1f-9467-c237f040939d'.*
 
-*Assuming the domain object has a data member `DocumentId` which equals to '929bdc15-79d8-4a1f-9467-c237f040939d'.*
-
-## Referencing data members deeper
+### Referencing data members deeper
 
 #### Input
 ```cs
@@ -53,9 +52,9 @@ items: StringInterpolationExamples
     * Evaluates to `'C12345'`
 5. `'.'`
 
-*Assuming the domain object has: data member `Customer` with data members `Party.PartyName` equals to 'John Doe' and Number equals to 'C12345'.*
+*Assuming that the domain object has: <br> data member 'Customer' with members 'Party.PartyName' equal to 'John Doe' and 'Number' equal to 'C12345'.*
 
-## Including a format specifier 
+### Including a format specifier 
 
 #### Input
 ```cs
@@ -75,11 +74,11 @@ items: StringInterpolationExamples
             * `.Party`
                 * `.PartyName`
     * Evaluates to `MultilanguageString` object
-    * Format specifier found `:de`. Apply it.
+    * Format specifier finds `:de` and applies it.
     * Returns  `'Max Mustermann'`
 3. `'.'`
 
-## #Error# Not existing reference
+**#Error# Not existing reference**
 
 #### Input
 ```cs
@@ -96,6 +95,6 @@ items: StringInterpolationExamples
 2. `{Customer.Name}`
     * Follows the reference path:
         * `Customer`
-            * `.Name` --> Fail. Reference does not exist.
+            * `.Name` --> Fail. Reference doesn't exist.
     * Returns error.
 3. `'.'`
