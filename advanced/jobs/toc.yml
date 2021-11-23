@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
 - name: Documentation template
-  href: documentation-template.md
+  href: template.md
 - name: J30632 Deletе old notifications
   href: J30632.md
 - name: J30724 run scheduled events
