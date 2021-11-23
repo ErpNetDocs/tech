@@ -18,7 +18,7 @@ items: StringInterpolationExamples
 #### Breakdown
 1. `'Hi, '`
 2. `{Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}`
-    * Acquires an object of type 'User' from the `Public_Users` entity with the provided Id.
+    * Acquires an object of type 'User' from the `Public_Users` entity with the provided 'Id'.
     * Follows the reference path:
         * `.Name`
     * Evaluates to 'John Doe'
@@ -38,7 +38,7 @@ items: StringInterpolationExamples
 #### Breakdown
 1. `'The parent group of this product is '`
 2. `{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}`
-    * Acquires an object of type 'Product' from the `General_Products_Products` entity with the provided Id.
+    * Acquires an object of type 'Product' from the `General_Products_Products` entity with the provided 'Id'.
     * Follows the reference path:
         * `.ProductGroup`
             * `.Parent`
@@ -62,10 +62,10 @@ items: StringInterpolationExamples
 
 #### Breakdown
 1. `'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'`
-2. Acquires an object from the `Not_Existing_Entity` entity with the provided Id --> Fail. Entity does not exist
+2. Acquires an object from the `Not_Existing_Entity` entity with the provided 'Id' --> Fail. Entity does not exist
 3. Returns error.
 
-**#Error# Not existing entity object Id**
+**#Error# Not existing entity object 'Id'**
 
 #### Input
 ```cs
@@ -79,5 +79,5 @@ items: StringInterpolationExamples
 
 #### Breakdown
 1. `'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'`
-2. Acquires an object of type 'User' from the `Public_Users` entity with the provided Id --> Fail. <br> Could not find an object with such an Id.
+2. Acquires an object of type 'User' from the `Public_Users` entity with the provided 'Id' --> Fail. <br> Could not find an object with such an Id.
 3. Returns error.    
