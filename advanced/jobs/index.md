@@ -1,6 +1,6 @@
 # Jobs
 
-Jobs is a system in @@name that **runs** processes such as document state changing, executing scheduled events, deleting old notifications, print images, and others. Running can be done both **manually** and **automatically** - in non-busy hours, without requiring any user interaction.
+Jobs is a system in @@name that runs processes such as document state changing, executing scheduled events, deleting old notifications, print images, and others. Running can be done both **manually** and **automatically** - in non-busy hours, without requiring any user interaction.
 
 ## Create and configure a job
 
