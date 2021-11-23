@@ -4,7 +4,7 @@ items: StringInterpolationExpressionTypes
 
 # Entity expressions
 
-Resolves an object by its entity name and `Id`. 
+Resolves an object by its entity name and Id. 
 
 ```cs
 // Input (the passed id exists)
@@ -18,7 +18,7 @@ Resolves an object by its entity name and `Id`.
 'Product X'
 ```
 
-If the entity name or the `Id` does not exist, the evaluation fails and the output will contain an error message.
+If the entity name or the Id does not exist, the evaluation fails and the output will contain an error message.
 ```cs
 // Input
 '{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}'
@@ -40,4 +40,5 @@ Also the error handling when passing not valid reference still apply. The evalua
 ```
 
 > [!NOTE]
-> More details and examples are available in the [examples section](https://docs.erp.net/tech/advanced/string-interpolation/examples/entity.html).
+> 
+> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)**.
