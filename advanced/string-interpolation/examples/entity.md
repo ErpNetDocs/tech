@@ -28,7 +28,7 @@ items: StringInterpolationExamples
 
 #### Input
 ```cs
-'The parent group of this product is <br> <{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}>.'
+'The parent group of this product is <{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}>.'
 ```
 #### Output
 ```cs
