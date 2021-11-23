@@ -79,12 +79,14 @@
             <article class="content wrap" id="_content" data-uid="system-variables">
 <h1 id="system-variables">System variables</h1>
 
-<p>The system variables are an essential part of ERP.net string interpolation. They provide additional kind of data, not related with a specific object or its state. For example, if we need to get the current date, we can do it directly via the system variable <code>$date</code>.</p>
-<p>Each system variable starts with the <code>$</code> character that identifies it as such and must be surrounded with curly braces <code>{ }</code>. E.g. <code>{$date}</code> is a legitimate system variable &quot;selector&quot; (a.k.a. expression) which will evaluate to the current date.</p>
-<p>There are system variables, which value depends on a specific context - e.g. the current <code>Transaction</code> or a specific <code>Application</code>. Therefore, they are evaluated via an externally provided <code>Resolver</code>. In the table below are listed all supported system variables, their return type and the resolvers from which they are supported.</p>
+<p>System variables are an essential part of ERP.net string interpolation. They provide additional kind of data, <strong>unrelated</strong> to a specific object or its state. For example, if you need to get the current date, you can do it directly via the system variable <code>$date</code>.</p>
+<p>Each system variable starts with <code>$</code>, which identifies it as such, and must be surrounded by curly brackets <code>{ }</code>.</p>
+<p><code>{$date}</code> is a legitimate system variable selector (or expression) which will evaluate to the current date.</p>
+<p>There are also system variables with values depending on specific context, like the current transaction or a specific application. They're evaluated via an externally provided <strong>resolver</strong>.</p>
+<p>Below, you can find all supported system variables, their return type and the resolvers by which they are supported.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>If a system variable doesn't exist, it won't be evaluated and its expression will be returned untouched. E.g. <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. In contrast, existing system variables, but having a <code>null</code> value, will evaluate to an empty <code>string</code>.</p>
+<p>If a system variable doesn't exist, it won't be evaluated and its expression will be returned <strong>untouched</strong>. <br> <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. <br> In contrast, existing system variables with a null value will evaluate to an <strong>empty string</strong>.</p>
 </div>
 <table>
 <thead>
@@ -98,25 +100,25 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>$date</code></td>
-<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date</td>
 <td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$time</code></td>
-<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system time</td>
 <td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$datetime</code></td>
-<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date and time</td>
 <td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$datetimeutc</code></td>
-<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date and time in UTC</td>
 <td style="text-align: left;">Globally</td>
 </tr>
@@ -128,32 +130,32 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>$rooturl</code></td>
-<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">string</td>
 <td style="text-align: left;">Current database URL</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$dbname</code></td>
-<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">string</td>
 <td style="text-align: left;">Database name</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$repository</code></td>
-<td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">The repository name of which the object is part of</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The repository name the object is part of</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$entity</code></td>
-<td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">The entity name of which the object is part of</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The entity name the object is part of</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$idlist</code></td>
-<td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">Comma separated list with <code>Id</code>s (serialized <code>Guid</code>) of the current context. E.g. the selected rows in a <code>Navigator Form</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a <strong>Navigator Form</strong></td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
@@ -164,32 +166,32 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>$enterprisecompany</code></td>
-<td style="text-align: left;"><code>EnterpriseCompany</code></td>
-<td style="text-align: left;">The Enterprise Company in the current (transaction) context</td>
+<td style="text-align: left;">EnterpriseCompany</td>
+<td style="text-align: left;">The enterprise company in the current (transaction) context</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$enterprisecompanylocation</code></td>
-<td style="text-align: left;"><code>CompanyLocation</code></td>
-<td style="text-align: left;">The Enterprise Company Location in the current (transaction) context</td>
+<td style="text-align: left;">CompanyLocation</td>
+<td style="text-align: left;">The enterprise company Location in the current (transaction) context</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$user</code></td>
-<td style="text-align: left;"><code>User</code></td>
-<td style="text-align: left;"><code>User</code> instance to the current user</td>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">User instance of the current user</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$role</code></td>
-<td style="text-align: left;"><code>Role</code></td>
-<td style="text-align: left;"><code>Role</code> instance of the current user's role</td>
+<td style="text-align: left;">Role</td>
+<td style="text-align: left;">Role instance of the user's role</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$language</code></td>
-<td style="text-align: left;"><code>string</code></td>
-<td style="text-align: left;">The language name (UI Culture) of the current user</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The language name (UI culture) of the current user</td>
 <td style="text-align: left;">Windows Client</td>
 </tr>
 </tbody>

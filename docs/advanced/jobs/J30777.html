@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Entity</td>
-<td><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.Documents.html">General.Documents Entity</a></td>
+<td><strong><a href="https://docs.erp.net/model/entities/General.Documents.html">General.Documents Namespace</a></strong></td>
 </tr>
 <tr>
 <td style="text-align: left;">Job type name</td>
@@ -101,7 +101,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>Used to change the state of a desired set of documents. A record in <em>Document Jobs</em> must be created for each job of this type! It should contain information about the state that has to be set, the new user state (optional), and the conditions which define the set of documents that will be processed.</td>
+<td>Used to change the state of a set of documents. A record in <em>Document Jobs</em> must be created for each job of this type, containing information about the state that needs to be set, the new user state (optional), and the conditions which define the set of documents that will be processed.</td>
 </tr>
 <tr>
 <td style="text-align: left;">First to process</td>
@@ -119,24 +119,23 @@
 </table>
 <p><strong>Important notes:</strong></p>
 <ul>
-<li><p>The <em>Document Type</em> field is NOT a filter for the job. If you set a specific document type, it doesn't mean that it will be executed only for documents with this document type or entity. The only filters meant to determine the processed documents are in the <em>Conditions</em> field.</p>
+<li><p>The <em>Document Type</em> field is <strong>NOT</strong> a filter for the job. If you set a specific document type, it doesn't mean that it'll be executed only for documents with this document type or entity. The filters meant to determine the processed documents are found in the <em>Conditions</em> field.</p>
 </li>
-<li><p>The <em>Conditions</em> field is the only one that's taken into account when determining which documents will be processed. If there are no conditions, the system will try to process <strong>all</strong> documents into the database!</p>
+<li><p>The <em>Conditions</em> field is the <strong>only</strong> one that's taken into account when determining which documents will be processed. If there are no conditions, the system will try to process <strong>all</strong> documents into the database!</p>
 </li>
 <li><p>In <em>Conditions</em>, you have to choose and specify the right combination of <strong>criteria</strong> which will filter the desired set of documents among all documents in the system.
 Commonly used filters would be:</p>
 <ul>
-<li>Document.Void = false - the job will exclude voided documents.</li>
-<li>Document.Entity Name - the job will be executed for all documents of this entity.</li>
-<li>Document.Document Type - the job will be executed for all documents of this document type/s.</li>
-<li>Document.State - the job will be executed for all documents with this document state.</li>
-<li>Document.User State - the job will be executed for all documents with this user state.</li>
-<li>Document.Document Date &gt;= and Document.Document Date &gt;= - the job will be executed for all documents with document date in this period.</li>
+<li>Document.Void = false - the job will <strong>exclude</strong> voided documents.</li>
+<li>Document.Entity Name - the job will be <strong>executed</strong> for all documents of this entity.</li>
+<li>Document.Document Type - the job will be <strong>executed</strong> for all documents of this document type/s.</li>
+<li>Document.State - the job will be <strong>executed</strong> for all documents with this document state.</li>
+<li>Document.User State - the job will be <strong>executed</strong> for all documents with this user state.</li>
+<li>Document.Document Date &gt;= and Document.Document Date &gt;= - the job will be <strong>executed</strong> for all documents with document date in this period.</li>
 </ul>
 </li>
-<li><p>Currently, the only conditions taken into account are the filters from the <strong>Document</strong> panel.</p>
-</li>
 </ul>
+<p>Currently, the only conditions taken into account are the filters from the <strong>Document</strong> panel.</p>
 <p>To learn more about the documentation template and get a short explanation for each table column, <br> see <a class="xref" href="template.html">Jobs documentation template</a>.</p>
 </article>
           </div>

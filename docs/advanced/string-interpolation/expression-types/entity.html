@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="entity-expressions">Entity expressions</h1>
 
-<p>Resolves an object by its entity name and <code>Id</code>.</p>
+<p>Resolves an object by its entity name and Id.</p>
 <pre><code class="lang-cs">// Input (the passed id exists)
 '{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).Name}'
 // Output: 
@@ -90,7 +90,7 @@
 // Output
 'Product X'
 </code></pre>
-<p>If the entity name or the <code>Id</code> does not exist, the evaluation fails and the output will contain an error message.</p>
+<p>If the entity name or the Id don't exist, the evaluation <strong>fails</strong>, and the output will contain an error message.</p>
 <pre><code class="lang-cs">// Input
 '{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}'
 // Output
@@ -101,7 +101,7 @@
 // Output
 '#Error: Entity object '1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8' not found#'
 </code></pre>
-<p>Also the error handling when passing not valid reference still apply. The evaluation will return an error.</p>
+<p>The error handling when passing invalid reference still applies. The evaluation will return an <strong>error</strong>.</p>
 <pre><code class="lang-cs">// Input
 '{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).FullName}' 
 // Output
@@ -109,7 +109,7 @@
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More details and examples are available in the <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/entity.html">examples section</a>.</p>
+<p>More details and examples are available in the <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html">Examples</a></strong> section.</p>
 </div>
 </article>
           </div>

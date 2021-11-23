@@ -79,28 +79,29 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="string-interpolation">String interpolation</h1>
 
-<p>String interpolation is a process in which an input string is broken down into expressions (a.k.a. interpolation expressions). ERP.net tries to evaluate each interpolation expression and finally replaces each one with its string representation. String interpolation is available for each object.</p>
+<p>String interpolation is a process in which an input string is broken down into (interpolation) expressions.</p>
+<p>ERP.net tries to evaluate each interpolation expression and replace it with its string representation.</p>
+<p>String interpolation is available for each object.</p>
 <h2 id="abstract">Abstract</h2>
-<p>Below is a pseudo-example of how the string interpolation works:</p>
+<p>Below is a pseudo example of how string interpolation works:</p>
 <p>In the following input:</p>
 <pre><code>'Where there’s {EXPRESSION1}, there’s {EXPRESSION2}.'.
 </code></pre>
 <p><code>{EXPRESSION1}</code> and <code>{EXPRESSION2}</code> will be replaced with their string representations - <code>smoke</code> and <code>fire</code>.</p>
 <p>Finally, the interpolated string is presented to the output:</p>
-<pre><code>'Where there’s smoke, there’s fire.'.
+<pre><code>'Where there’s smoke, there’s fire.'
 </code></pre>
-<p>Let's try a real world example:</p>
-<p>Input:</p>
+<p>Let's try a real-world example:</p>
+<p><strong>Input:</strong></p>
 <pre><code>Now is {$date}.
 My name is {$user.Name}.
 </code></pre>
-<p>Note <code>{$date}</code> and <code>{$user.Name}</code>. They are real expressions.</p>
-<p>Output:</p>
+<p>Note <code>{$date}</code> and <code>{$user.Name}</code>. They're <strong>real</strong> expressions.</p>
+<p><strong>Output:</strong></p>
 <pre><code>Now is 4.10.2021 17:49:55.
 My name is John Doe.
 </code></pre>
-<p><em><strong>Example</strong></em></p>
-<p>More advanced examples for a string interpolation:</p>
+<p><strong>More advanced examples:</strong></p>
 <pre><code class="lang-cs">// Input
 &quot;The following string was interpolated on {$date:ddd}&quot;
 
@@ -113,7 +114,7 @@ My name is John Doe.
 // Output (interpolated)
 &quot;https://myservice.com?database=mydbname&amp;id=39acf964-4e92-4d35-846e-c8a38efff02d&quot;
 </code></pre>
-<p>Also, it's possible to interpolate far more complex ones:</p>
+<p><strong>It's possible to interpolate even far more complex strings:</strong></p>
 <pre><code class="lang-cs">// Input
 @&quot;Hello, {Public_Users(d30f16c9-a07a-41ca-9d63-e15c3e4db6b4).Name:en}!
 My name is {$user.Name:en} and I work as a {$role.Name} in {$enterprisecompany.Company.Name:en}.&quot;
@@ -124,29 +125,36 @@ My name is Jane Doe and I work as a Manager in ABC Company Ltd.&quot;
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>More examples are available in the separate <a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html">examples</a> section.</p>
+<p>More details and examples are available in the <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html">Examples</a></strong> section.</p>
 </div>
 <h2 id="syntax">Syntax</h2>
-<p>The overall syntax for <strong>one</strong> interpolation expression is:</p>
+<p>The overall syntax for an interpolation expression is:</p>
 <p><code>{&lt;$&gt;reference&lt;(args)&gt;&lt;.subref&gt;&lt;:fmt&gt;}</code></p>
 <p>where:</p>
 <ul>
-<li>The curly braces <code>{</code>, <code>}</code> define the start and the end of the interpolation expression.</li>
-<li><code>$</code> - specifies that the expression is a <code>System Variable</code>.</li>
-<li><code>ref</code> (<strong>required</strong>) - the identifier to the context of the interpolation expression.</li>
-<li><code>(args)</code> - additional arguments must be passed when evaluating a <code>Entity</code> expressions. E.g. an <code>Id</code>.</li>
-<li><code>.subref</code> - required when <code>ref</code> referes to an object, but a data member is needed. E.g. <code>Customer.Party.PartyName</code>, where <code>Customer</code> is the context (i.e. the <code>ref</code>) and the <code>.Party.PartyName</code> is the path to the data member - the subreference. In short, <code>.subref</code> defines a path that will be followed after evaluation of <code>ref</code>.</li>
-<li><code>:fmt</code> - format specifier. Further formatting of the evaluated value. E.g. <code>Customer.Party.PartyName:en</code> will format the resulting <code>PartyName</code> <code>MultiFormatString</code> according to particular language, referenced with <code>en</code> (English).</li>
+<li><p>The curly brackets <code>{</code>, <code>}</code> define the start and the end of the interpolation expression.</p>
+</li>
+<li><p><code>$</code> - specifies that the expression is a <code>System Variable</code>.</p>
+</li>
+<li><p><code>ref</code> (<strong>required</strong>) - the identifier to the context of the interpolation expression.</p>
+</li>
+<li><p><code>(args)</code> - additional arguments must be passed when evaluating a <code>Entity</code> expressions. E.g. an <code>Id</code>.</p>
+</li>
+<li><p><code>.subref</code> - required when <code>ref</code> referes to an object, but a data member is needed. E.g. <code>Customer.Party.PartyName</code>, where <code>Customer</code> is the context (i.e. the <code>ref</code>) and the <code>.Party.PartyName</code> is the path to the data member - the subreference. In short, <code>.subref</code> defines a path that will be followed after evaluation of <code>ref</code>.</p>
+</li>
+<li><p><code>:fmt</code> - format specifier. Further formatting of the evaluated value. E.g. <code>Customer.Party.PartyName:en</code> will format the resulting <code>PartyName</code> <code>MultiFormatString</code> according to particular language, referenced with <code>en</code> (English).</p>
+</li>
 </ul>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>If an interpolation expression could not be evaluated because of incorrect syntax or wrong (not existing) reference, the evaluation will fail and will return an error. E.g. <code>{Customer.Number}</code> will produce &quot;C12345&quot;, but <code>{Customer.Numer}</code> (note the typo) will output &quot;#Error: Attribute 'Customer.Number' not found#&quot;.</p>
+<p>If an interpolation expression can't be evaluated because of incorrect syntax or wrong (non-existing) reference, the evaluation will <strong>fail</strong> and will return an error. '{Customer.Number}' will produce 'C12345', but '{Customer.Numer}' will output &quot;#Error: Attribute 'Customer.Number' not found#&quot;.</p>
 </div>
 <h2 id="format-specifiers">Format specifiers</h2>
-<p>If the interpolation expression evaluates to an object, it's possible for future customization of the value to a desired format. Typically the target format depends on the concrete object type, e.g. for <code>Number</code> type the <code>C</code> format specifier acts as number to currency string conversion, but if the object type is <code>MultilanguageString</code> the format specifier will return the string of the current value.</p>
+<p>If an interpolation expression evaluates to an object, future customization of the value to a desired format is possible. The target format depends on the object type.</p>
+<p>For a 'Number' type, the 'C' format specifier acts as number-to-currency string conversion, but if the object type is 'MultilanguageString', the format specifier will return the string of the current value.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format specifiers</a> for more information about the supported format specifiers and how to use them.</p>
+<p>See <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format specifiers</a></strong> for more information about supported format specifiers and how to use them.</p>
 </div>
 </article>
           </div>

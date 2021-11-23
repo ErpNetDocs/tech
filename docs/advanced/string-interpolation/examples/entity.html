@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="entity-expression-examples">Entity expression examples</h1>
 
-<h2 id="acquiring-an-entity-object-and-referencing-its-data-member">Acquiring an entity object and referencing its data member</h2>
+<h3 id="acquiring-an-entity-object-and-referencing-its-data-member">Acquiring an entity object and referencing its data member</h3>
 <h4 id="input">Input</h4>
 <pre><code class="lang-cs">'Hi, {Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}, welcome to our forum!'
 </code></pre>
@@ -91,7 +91,7 @@
 <li><code>'Hi, '</code></li>
 <li><code>{Public_Users(a08baf52-de7a-4a39-a567-c6d7e2ab1dc8).Name}</code>
 <ul>
-<li>Acquires an object of type <code>User</code> from the <code>Public_Users</code> entity with the provided <code>Id</code>.</li>
+<li>Acquires an object of type 'User' from the <code>Public_Users</code> entity with the provided 'Id'.</li>
 <li>Follows the reference path:
 <ul>
 <li><code>.Name</code></li>
@@ -102,7 +102,7 @@
 </li>
 <li><code>', welcome to our forum!'</code></li>
 </ol>
-<h2 id="acquiring-an-entity-object-and-deep-referencing-its-data-member-including-a-format-specifier">Acquiring an entity object and deep referencing its data member, including a format specifier</h2>
+<h3 id="acquiring-an-entity-object-and-deep-referencing-its-data-member-including-a-format-specifier">Acquiring an entity object and deep-referencing its data member, including a <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">format specifier</a></h3>
 <h4 id="input-1">Input</h4>
 <pre><code class="lang-cs">'The parent group of this product is &lt;{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}&gt;.'
 </code></pre>
@@ -114,7 +114,7 @@
 <li><code>'The parent group of this product is '</code></li>
 <li><code>{General_Products_Products(1908c05a-790a-42be-a8d8-e850798b5530).ProductGroup.Parent.Name:en}</code>
 <ul>
-<li>Acquires an object of type <code>Product</code> from the <code>General_Products_Products</code> entity with the provided <code>Id</code>.</li>
+<li>Acquires an object of type 'Product' from the <code>General_Products_Products</code> entity with the provided 'Id'.</li>
 <li>Follows the reference path:
 <ul>
 <li><code>.ProductGroup</code>
@@ -129,13 +129,13 @@
 </ul>
 </li>
 <li>Evaluates to <code>MultilanguageString</code> object</li>
-<li>Format specifier found <code>:en</code>. Apply it.</li>
+<li>Format specifier finds <code>:en</code> and applies it.</li>
 <li>Returns  <code>&quot;Materials&quot;</code></li>
 </ul>
 </li>
 <li><code>'&gt;.'</code></li>
 </ol>
-<h2 id="error-not-existing-entity">#Error# Not existing entity</h2>
+<h3 id="error-not-existing-entity">#Error# Not existing entity</h3>
 <h4 id="input-2">Input</h4>
 <pre><code class="lang-cs">'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'
 </code></pre>
@@ -144,14 +144,11 @@
 </code></pre>
 <h4 id="breakdown-2">Breakdown</h4>
 <ol>
-<li><code>'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'</code>
-<ul>
-<li>Acquires an object from the <code>Not_Existing_Entity</code> entity with the provided <code>Id</code> --&gt; Fail. Entity does not exist</li>
+<li><code>'Not_Existing_Entity(4ab5e1ee-c613-4f6c-aa02-eb478c99bc80)'</code></li>
+<li>Acquires an object from the <code>Not_Existing_Entity</code> entity with the provided 'Id' --&gt; Fail. Entity does not exist</li>
 <li>Returns error.</li>
-</ul>
-</li>
 </ol>
-<h2 id="error-not-existing-entity-object-id">#Error# Not existing entity object <code>Id</code></h2>
+<h2 id="error-not-existing-entity-object-id">#Error# Not existing entity object 'Id'</h2>
 <h4 id="input-3">Input</h4>
 <pre><code class="lang-cs">'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'
 </code></pre>
@@ -160,12 +157,9 @@
 </code></pre>
 <h4 id="breakdown-3">Breakdown</h4>
 <ol>
-<li><code>'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'</code>
-<ul>
-<li>Acquires an object of type <code>User</code> from the <code>Public_Users</code> entity with the provided <code>Id</code> --&gt; Fail. Could not find an object with such an Id.</li>
+<li><code>'Public_Users(ba8469d7-4854-4ff1-a5ac-a0a60414b061)'</code></li>
+<li>Acquires an object of type 'User' from the <code>Public_Users</code> entity with the provided 'Id' --&gt; Fail. <br> Could not find an object with such an Id.</li>
 <li>Returns error.</li>
-</ul>
-</li>
 </ol>
 </article>
           </div>

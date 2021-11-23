@@ -114,8 +114,7 @@
 <li>the payment plan of this sales order</li>
 </ul>
 <p>The <strong>Commit</strong> event would occur for the sales order <strong>only</strong> if the sales order object itself has changed.</p>
-<p>The <strong>aggregate commit</strong> will occur for the sales order if <strong>any</strong> of the objects in the aggregate has changed.</p>
-<p>Changing just a single sales order line without changing the order itself would <strong>still</strong> trigger the sales order aggregate event.</p>
+<p>The <strong>aggregate commit</strong> will occur for the sales order if <strong>any</strong> of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would <strong>still</strong> trigger the sales order aggregate event.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Commit and client-commit have the same meaning. Commit is the low-level event, which is triggered for everything committed to the database. Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>

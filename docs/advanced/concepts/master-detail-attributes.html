@@ -105,7 +105,7 @@
 <li><p>When all document lines have the same value in the <em>Store</em> field, the field in the document header must contain <strong>the same</strong> value. </p>
 </li>
 </ul>
-<p>The presence of a value in the document header field makes it unnecessary to constantly monitor whether the lines have different values or not. For this reason, when editing the value in the <em>Line Store</em> field or deleting lines, if it turns out that all lines contain the same <em>Store</em> value, then this value is <strong>automatically</strong> set in the document header field.</p>
+<p>The presence of a value in the document header field makes it unnecessary to constantly monitor whether the lines have different values or not. When editing the value in the <em>Line Store</em> field or deleting lines, if it turns out that all lines contain the same <em>Store</em> value, this value is <strong>automatically</strong> set in the document header field.</p>
 <ul>
 <li>When different document lines have different values in the <em>Store</em> field, the field in the document header must be <strong>empty</strong> (NULL).</li>
 </ul>
@@ -116,11 +116,8 @@
 <p>If the document header value is empty (NULL), the value from the previous lines is considered as a default value in the new line. If this is impossible, then the default value remains <strong>empty</strong> (NULL).</p>
 <h3 id="back-end-rules">Back-end rules</h3>
 <ul>
-<li>When the document header is saved, the master/detail field's value is updated according to the value of the <strong>lines</strong> field. </li>
-</ul>
-<p>If all lines contain the same <em>Store</em> value, this value is <strong>automatically</strong> set in the document header field.</p>
-<p>If the lines contain different <em>Store</em> values, the <em>Store</em> field in the document header is automatically set to <strong>NULL</strong>.</p>
-<ul>
+<li><p>When the document header is saved, the master/detail field's value is updated according to the value of the <strong>lines</strong> field. If all lines contain the same <em>Store</em> value, this value is <strong>automatically</strong> set in the document header field. If the lines contain different <em>Store</em> values, the <em>Store</em> field in the document header is automatically set to <strong>NULL</strong>.</p>
+</li>
 <li><p>When а document line is saved, the master/detail field's value is updated according to the value of the field in the <strong>header</strong>. </p>
 </li>
 <li><p>When the document's header and lines are saved, there is a final back-end validation.</p>
