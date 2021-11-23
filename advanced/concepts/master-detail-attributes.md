@@ -34,7 +34,7 @@ It doesn't matter if it's empty (NULL) or if it contains a value (not-NULL).
 
 - When all document lines have the same value in the *Store* field, the field in the document header must contain **the same** value. 
  
-The presence of a value in the document header field makes it unnecessary to constantly monitor whether the lines have different values or not. For this reason, when editing the value in the _Line Store_ field or deleting lines, if it turns out that all lines contain the same _Store_ value, then this value is **automatically** set in the document header field.
+The presence of a value in the document header field makes it unnecessary to constantly monitor whether the lines have different values or not. When editing the value in the _Line Store_ field or deleting lines, if it turns out that all lines contain the same _Store_ value, this value is **automatically** set in the document header field.
 
 - When different document lines have different values in the *Store* field, the field in the document header must be **empty** (NULL).
 
@@ -45,11 +45,7 @@ For this reason, after editing the value in the _Line Store_ field and when dele
 If the document header value is empty (NULL), the value from the previous lines is considered as a default value in the new line. If this is impossible, then the default value remains **empty** (NULL).
 ### Back-end rules
 
-- When the document header is saved, the master/detail field's value is updated according to the value of the **lines** field. 
-
-If all lines contain the same _Store_ value, this value is **automatically** set in the document header field.
-
-If the lines contain different _Store_ values, the *Store* field in the document header is automatically set to **NULL**.
+- When the document header is saved, the master/detail field's value is updated according to the value of the **lines** field. If all lines contain the same _Store_ value, this value is **automatically** set in the document header field. If the lines contain different _Store_ values, the *Store* field in the document header is automatically set to **NULL**.
 
 - When а document line is saved, the master/detail field's value is updated according to the value of the field in the **header**. 
 
