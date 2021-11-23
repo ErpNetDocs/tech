@@ -49,9 +49,7 @@ Let's take a look at the following structure, which is a single aggregate in @@n
 
 The **Commit** event would occur for the sales order **only** if the sales order object itself has changed. 
 
-The **aggregate commit** will occur for the sales order if **any** of the objects in the aggregate has changed. 
-
-Changing just a single sales order line without changing the order itself would **still** trigger the sales order aggregate event.
+The **aggregate commit** will occur for the sales order if **any** of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would **still** trigger the sales order aggregate event.
 
 > [!NOTE] 
 > 
