@@ -18,7 +18,7 @@ Resolves an object by its entity name and Id.
 'Product X'
 ```
 
-If the entity name or the Id does not exist, the evaluation fails and the output will contain an error message.
+If the entity name or the Id don't exist, the evaluation **fails**, and the output will contain an error message.
 ```cs
 // Input
 '{General_Product(2fa67d60-be11-41ec-beac-976e666ece4f)}'
@@ -31,7 +31,8 @@ If the entity name or the Id does not exist, the evaluation fails and the output
 '#Error: Entity object '1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8' not found#'
 ```
 
-Also the error handling when passing not valid reference still apply. The evaluation will return an error.
+The error handling when passing invalid reference still applies. The evaluation will return an error.
+
 ```cs
 // Input
 '{Public_Users(7af30531-d15d-4004-a4bb-21052299f549).FullName}' 
@@ -41,4 +42,4 @@ Also the error handling when passing not valid reference still apply. The evalua
 
 > [!NOTE]
 > 
-> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)**.
+> More details and examples are available in the **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)** section.
