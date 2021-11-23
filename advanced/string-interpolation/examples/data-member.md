@@ -4,7 +4,7 @@ items: StringInterpolationExamples
 
 # Data member expression examples
 
-### Same level data member reference
+### Same-level data member reference
 
 #### Input
 ```cs
