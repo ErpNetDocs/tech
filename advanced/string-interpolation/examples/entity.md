@@ -48,7 +48,7 @@ items: StringInterpolationExamples
     * Returns  `"Materials"`
 3. `'>.'`
 
-**#Error# Not existing entity**
+### #Error# Not existing entity
 
 #### Input
 ```cs
@@ -65,7 +65,7 @@ items: StringInterpolationExamples
 2. Acquires an object from the `Not_Existing_Entity` entity with the provided 'Id' --> Fail. Entity does not exist
 3. Returns error.
 
-**#Error# Not existing entity object 'Id'**
+## #Error# Not existing entity object 'Id'
 
 #### Input
 ```cs
