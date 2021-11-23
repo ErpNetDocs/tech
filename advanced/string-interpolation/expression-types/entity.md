@@ -31,7 +31,7 @@ If the entity name or the Id don't exist, the evaluation **fails**, and the outp
 '#Error: Entity object '1cbbe47c-2f54-4fcf-be46-7eb7c5a139e8' not found#'
 ```
 
-The error handling when passing invalid reference still applies. The evaluation will return an error.
+The error handling when passing invalid reference still applies. The evaluation will return an **error**.
 
 ```cs
 // Input
