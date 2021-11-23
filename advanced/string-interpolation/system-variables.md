@@ -4,7 +4,7 @@ uid: system-variables
 
 # System variables
 
-System variables are an essential part of @@name string interpolation. They provide additional kind of data, **unrelated** to a specific object or its state. For example, if you need to get the current date, you can do it directly via the system variable '$date'.
+System variables are an essential part of @@name string interpolation. They provide additional kind of data, **unrelated** to a specific object or its state. For example, if you need to get the current date, you can do it directly via the system variable `$date`.
 
 Each system variable starts with `$`, which identifies it as such, and must be surrounded by curly brackets `{ }`. 
 
