@@ -69,10 +69,10 @@ LOG:
 [10:04:42] Failed: 0
 ```
 ----------------
-## See more
+### See more
 
-- **[https://docs.erp.net/tech/advanced/jobs/J30632.html](J30632 Deletе old notifications)**
-- **[https://docs.erp.net/tech/advanced/jobs/J30724.html](J30724 Run scheduled events)**
-- **[https://docs.erp.net/tech/advanced/jobs/J30777.html](J30777 Document state change)**
-- **[https://docs.erp.net/tech/advanced/jobs/J30903.html](J30903 Deletе old document print images)**
+- **[J30632 Deletе old notifications](https://docs.erp.net/tech/advanced/jobs/J30632.html)**
+- **[J30724 Run scheduled events](https://docs.erp.net/tech/advanced/jobs/J30724.html)**
+- **[J30777 Document state change](https://docs.erp.net/tech/advanced/jobs/J30777.html)**
+- **[J30903 Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html)**
 
