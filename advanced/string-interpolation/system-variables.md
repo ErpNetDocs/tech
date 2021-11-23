@@ -30,7 +30,7 @@ Below, you can find all supported system variables, their return type and the re
 | `$dbname`                    | `string`              | Database name                                                                                                           | @@winclient |
 | `$repository`                | `string`              | The repository name the object is part of                                                                      | @@winclient |
 | `$entity`                    | `string`              | The entity name the object is part of                                                                          | @@winclient |
-| `$idlist`                    | `string`              | Comma-separated list with Ids (serialized `Guid`) of the current context. E.g. the selected rows in a `Navigator Form`| @@winclient |
+| `$idlist`                    | `string`              | Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a **Navigator Form**| @@winclient |
 |                              |                       |                                                                                                                         |             |
 | `$enterprisecompany`         | `EnterpriseCompany`   | The enterprise company in the current (transaction) context                                                             | @@winclient |
 | `$enterprisecompanylocation` | `CompanyLocation`     | The enterprise company Location in the current (transaction) context                                                    | @@winclient |
