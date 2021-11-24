@@ -83,7 +83,7 @@
 <h2 id="create-and-configure-a-job">Create and configure a job</h2>
 <p>For a start, you have to create a new record with a desired job type in the <strong>Job</strong> navigator.</p>
 <p>Most job parameters have a default value and can operate without additional adjustments.</p>
-<p>An example is <strong><a href="https://docs.erp.net/tech/advanced/jobs/J30903.html">J30903 Document print images - Delete old document print images</a></strong>. It has only one parameter - the <em>Print Images Retention Months</em> field in the enterprise company's definition, with a default value of '60 months'.</p>
+<p>An example is <strong><a href="https://docs.erp.net/tech/advanced/jobs/J30903.html">J30903 Document print images - Delete old document print images</a></strong>. <br> It has only one parameter - the <em>Print Images Retention Months</em> field in the enterprise company's definition, with a default value of '60 months'.</p>
 <p>However, there are jobs performing more complicated processes that shouldn't be executed for all records in the database. They require additional settings. An example is the <strong><a href="https://docs.erp.net/tech/advanced/jobs/J30777.html">Document state change</a></strong> job.</p>
 <p>The parameters and settings for each job are described in its documentation.</p>
 <h2 id="job-scheduling">Job scheduling</h2>
@@ -104,7 +104,7 @@ A job uses the <strong>on-idle</strong> auto-start schedule only when the <em>Is
 <p>If these conditions are met, the execution system initiates a special long-running procedure called <strong>System Jobs</strong>, which can be monitored like any other long-running procedure in the <strong>Procedures</strong> navigator in ERP.net, or the <em>Procedures</em> tab in the <strong>Server Manager</strong>.</p>
 <p>The jobs execution system will then create a list of pending jobs and will start executing them sequentially. The list is made on the basis of active jobs defined in the databases</p>
 <p>Each job can run a maximum of 5 minutes before it's cancelled by the job runner. Jobs can actually execute up to six 5-minute runs, or 30 minutes, until they break the existing loop of pending jobs.</p>
-<p>If a job is interrupted before its work is finished, it must be started again during the 30-minute period. If there are more records that need to be processed after the 30-minute window has elapsed, the job will start again on the next day.</p>
+<p>If a job is interrupted before its work is finished, it must be started again during the 30-minute period. <br> If there are more records that need to be processed after the 30-minute window has elapsed, the job will start again on the next day.</p>
 <h2 id="manual-job-execution">Manual job execution</h2>
 <p>Each job could be started manually.</p>
 <p>This way, its execution begins <strong>immediately</strong>, without the need to wait for the next on-idle iteration.</p>
