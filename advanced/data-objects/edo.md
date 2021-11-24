@@ -9,7 +9,7 @@ The Extensible Data Objects (EDO) is a system in @@name, which allows attaching 
 - files
 - **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)** tracking data
 
-## How it works?
+## How does it work?
 
 Extensible data objects are stored in the **Sys_Objects** entity. The system works in the following way:
 
