@@ -54,7 +54,7 @@ Returns:
 
  - 'P', 'p' - abbreviation for Percent. 
  
-Multiplies a number by 100 and converts it to a string that represents a percentage. The **precision specifier** indicates the desired number of decimal places. The decimal symbol separator depends on the local regional settings.
+Multiplies a number by 100 and converts it to a string representing a percentage. The **precision specifier** shows the desired number of decimal places. The **decimal symbol separator** depends on the regional settings.
 
 Returns:
 
