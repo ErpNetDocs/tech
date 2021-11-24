@@ -4,7 +4,7 @@ uid: track-changes
 
 # Track Changes
 
-Track Changes is a system in @@name which can be used to track the changes in а data table.
+Track Changes is a system in @@name which can be used to track changes in а data table.
 
 
 ## Tracking levels
