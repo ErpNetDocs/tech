@@ -4,7 +4,7 @@ items: StringInterpolationExpressionTypes
 
 # DataMember expressions
 
-Acquires a data member according to the object's context by the passed `reference`. 
+Acquires a data member according to the object's context by the passed reference. 
 ```cs
 // Input
 '{DocumentId}'
