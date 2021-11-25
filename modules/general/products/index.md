@@ -55,7 +55,7 @@ Each product must belong to a user defined **product group** (e.g. goods, materi
 - 
 - The Product types provide the functionality of creating different automatizations for a certain product type - e.g., you can set whether the products of a certain type are allowed to be serviced, shipped, stocked, etc. For more information, see [Product types].
 
-## Measurement units
+### Measurement units
 
 The products can be presented in multiple measurement units. A **base measurement category** is used for storing the product in the warehouse, for sales reporting, etc. However, you may choose a different **measurement unit** that will be loaded by default when creating documents with this product. In order to make conversions between the different units of measurement for the same quantity, the user is able to define measurement ratios. For more information, see [Measurement categories], [Measurement units] and [Product dimensions].
 
@@ -68,7 +68,7 @@ Example of setting different measurement units for a product:
 | 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS; 1 pallet = 10 PCS |
 
 
-## Other settings
+### Other settings
 
 When creating a product, the user must specify the **currency** in which the product cost will be calculated. By default - this is the base currency of the enterprise company.
 It is important to define the costing method as well. If the costing method is not set in the product definition, the one set in the enterprise company definition will be used instead.  
