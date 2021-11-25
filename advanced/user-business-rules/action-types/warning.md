@@ -5,8 +5,10 @@ items: ActionTypes
 
 # WARNING
 
-Typically used to show a non-blocking message. It may be useful when you want to show a reminder, instead of stopping the transaction with an error using a [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html) business rule. The **WARNING** syntax is simple - the message that will be shown is set as a first parameter for the **WARNING** action. 
+Typically used to show a non-blocking message that can help when you want to display a reminder instead of stopping a transaction with an error using a **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html**) business rule. 
 
-***Example:***
+If **WARNING** is performed, the displayed message is set as a first parameter for the action. 
 
-ActionNo: **1**; Action Type: **WARNING;** Parameter1 Type: **Constant**; Parameter1 Value: **'warning message text'**.
+**Example:**
+
+ActionNo: **1**;<br> Action Type: **WARNING;** <br> Parameter1 Type: **Constant**; <br> Parameter1 Value: **'warning message text'**
