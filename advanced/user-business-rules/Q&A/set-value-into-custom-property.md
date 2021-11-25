@@ -1,63 +1,73 @@
 # How to use business rules to set a value into a custom property?
-We can use business rules to set values into different fields, including custom properties [action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html). Currently, if we want to set a value into a custom property, we can either copy/get that value from another custom property or use an attribute/field/ constant whose data type is String.
+
+You can use **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** to set values into different fields, including custom properties **[action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html)**. 
+
+To set a value into a custom property, you'll either copy or get that value from another custom property. Alternatively, you can use an attribute/field/constant with data type 'String'.
  
-***Example 1*** - the value is copied from another Custom Property's value:
-If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a sales order document, for example, then we can create a [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)  with the following data:
+**Example 1** 
 
-Repository
-|:----
-Crm.Sales.SalesOrders
+Let's say you have a sales order document.
 
-Events
-|:----
+If you want to copy a value from a specific custom property and set it as a value in another custom property, you can create a **[user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** with the following data:
+
+Repository|
+|:----|
+Crm.Sales.SalesOrders|
+
+Events|
+|:----|
 
 Event type|Event parameter|Execution priority
-|:----|:----|:----
+|:----|:----|:----|
 Change of State|RELEASING|Normal
 
-Actions
-|:----
+Actions|
+|:----|
 
 Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter2 value
-|:----|:----|:----|:----|:----|:----
-1|SETVALUE|Attribute|@Property1|Attribute|@Property2
+|:----|:----|:----|:----|:----|:----|
+1|SETVALUE|Attribute|@Property1|Attribute|@Property2|
 
-> [!Note]
-> Both Custom Property's **Value** and Custom Property's **Description** are copied.
+> [!NOTE] 1
+> 
+> Both the custom property's **value** and **description** are copied.
  
-> [!Note]
-> In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic **Inheriting and copying custom properties**.
+> [!NOTE] 2
+> 
+> In this case, there are **NO** limitations for custom properties in which you set the value to inherit its allowed values from another entity or custom property. The only condition is the setting in both custom properties to follow the principles described in **Inheriting and copying custom properties**.
  
-***Example 2*** - set a specific value that is not copied from another Custom Property's value:
+**Example 2** 
 
-If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a sales order document, then we can create a [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html) with the following data:
+Let's say you have a sales order document.
 
-Repository
-|:----
-Crm.Sales.SalesOrders
+If you want to set a specific value for a custom property that's not copied from another custom property's value, you can create a **user business rule** with the following data:
 
-Events
-|:----
+Repository| 
+|:----| 
+Crm.Sales.SalesOrders| 
+
+Events| 
+|:----| 
 
 Event type|Event parameter|Execution priority
 |:----|:----|:----
 Change of State|RELEASING|Normal
 
-Actions
-|:----
+Actions| 
+|:----| 
 
 Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter2 value
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@PropertyCode|Constant|'StringValue01
 
-> [!Note]
-> Using this method, we can **only** set the Custom Property's Value and **not** its description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the section below.
+> [!NOTE] 3
+> 
+> Using this method, you can only set the custom property's **value** - not its description. An exception is when you're setting a value defined as a _Property Allowed_ value.
 
-> [!Note]
-> Parameter2 Type is not limited to a Constant. We could use the attribute type as well and load the value from another system attribute or a [calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html). Note, however, that the value must be from a string type. If it is not, you can cast or convert it using a calculated attribute for the user business rule.
+> [!NOTE] 4
+> 
+> _Parameter2 Type_ is not limited to a constant. You could use the attribute type as well and load the value from another system attribute or a **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)**. However, the value **must** be from a 'String' type. Otherwise, you can **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** or **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** it.
 
-#### But what if the custom property has allowed values, and we want to set one of them?
+If a custom property has allowed values, you may want to set one of them as a value of the particular property. This is possible only when the property **doesn't** inherit its allowed values from another entity. 
 
-This functionality is supported even when the custom property has allowed values, and we want to set one of them as a value of the particular property, but only if the property **does not** inherit its allowed values from another entity. 
-
-When custom properties inherit their values from another custom property or their values are manually defined in the 'Property Allowed Values' panel - if one of these values is set by a [business rule](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html), it will be recognized as an allowed value for this property. In this case, the Allowed Value's description will be inherited as well.
+Custom properties can inherit their values from another custom property or have them manually defined in the **Property Allowed Values** panel. If one value is set by a business rule, it'll be recognized as an allowed value for this property. The value's description will then be inherited as well.
