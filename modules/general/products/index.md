@@ -85,7 +85,7 @@ In the product definition the user can specify some **other parameters** of the 
 
 - short name – the name that will be used for space-constrained devices, like mobile phones, fiscal printers, etc.
 - expiry period days (from the date of production);
-- guarantee period days /if the product type is serviced/;
+- guarantee period days (if the product type is serviced);
 - cargo type – by choosing one of the user defined cargo types (e.g. container cargo, Liquid cargo, etc.);
 - minimum sales quantity base;
 - minimum sales price;
@@ -93,5 +93,5 @@ In the product definition the user can specify some **other parameters** of the 
 - scrap rate (when the product is used as an ingredient);
 - ABC class – product importance classification where A is the highest class and C is the lowest class. The products in class A are with the highest turnover and with the highest value; 
 - valuation group – a user-defined group that is used in reconciliations when compensating pluses and minuses.
-- eExcise product – the excise product code (if the product is excised);
-- excise Alcoholic Strength (if the product is subject to alcoholic Excise reporting).
+- excise product – the excise product code (if the product is excised);
+- excise alcoholic atrength (if the product is subject to alcoholic Excise reporting).
