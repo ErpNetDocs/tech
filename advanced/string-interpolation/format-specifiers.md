@@ -172,7 +172,7 @@ They're different for the different data types and are described below.
 > 
 > Format specifiers for a particular language are supported since @@name version 2019.1. 
  
-### Language format specifiers:
+### Language format specifiers
  
 'EN' - English<br>
 'BG' - Bulgarian<br>
@@ -190,7 +190,7 @@ They're different for the different data types and are described below.
 'SR' - Serbian<br>
 'ES' - Spanish
 
-### Custom property:
+### Custom property
  
 - 'VD' - abbreviation for Value/Description.
 
