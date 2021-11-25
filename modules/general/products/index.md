@@ -40,13 +40,12 @@ In the product definition, you can manage the settings of using lots by determin
 
 The above information is represented in the following table as an example:
 
-| Part number | Product name | Product code            | Product code            | Serial number | Lot number    |   
-|             |              | (Coding system: Billa)  | (Coding system: Metro)  |               |(Expiry date)  |
-| :---------  | :----------- | :---------------------- | :---------------------- | :------------ | :------------ |
-| 456789      | X            | 88559910                | 777RR69PP               | 1111111111    | 20200611      |
-| 456789      | X            | 88559910                | 777RR69PP               | 1111111112    | 20200611      |
-| 456789      | X            | 88559910                | 777RR69PP               | 1111111113    | 20220810      |
-| 999888      | X            | 55889941                | 777RR69PP               |               |               |
+| Part number | Product name | Product code (Coding system: Billa)| Product code (Coding system: Metro)| Serial number | Lot number (Expiry date) |   
+| :---------  | :----------- | :----------------------            | :--------------------------------- | :------------ | :----------------------- |
+| 456789      | X            | 88559910                           | 777RR69PP                          | 1111111111    | 20200611                 |
+| 456789      | X            | 88559910                           | 777RR69PP                          | 1111111112    | 20200611                 |
+| 456789      | X            | 88559910                           | 777RR69PP                          | 1111111113    | 20220810                 |
+| 999888      | X            | 55889941                           | 777RR69PP                          |               |                          |
 
 ### Product groups and product types
 
@@ -64,10 +63,9 @@ Furthermore, no matter what the recalculation based on the measurement ratios is
 
 Example of setting different measurement units for a product:
 
-| Part number | Product name | Base measurement category | Measurement unit | Purchase measurement unit  | Product dimension |   
-| :---------  | :----------- | :------------------------ | :--------------- | :------------------------- | :---------------- |
-| 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS      |
-|             |              |                           |                  |                            | 1 pallet = 10 PCS |
+| Part number | Product name | Base measurement category | Measurement unit | Purchase measurement unit  | Product dimension               |   
+| :---------  | :----------- | :------------------------ | :--------------- | :------------------------- | :------------------------------ |
+| 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS; 1 pallet = 10 PCS |
 
 
 ## Other settings
