@@ -1,6 +1,7 @@
 # Products
 
 ### Description 
+
 *Products* are goods which are the object of a company’s business activities. Products can be tangible or intangible. A **tangible** product is a physical object that can be perceived by touch such as a building, vehicle, gadget, or clothing. An **intangible** product is a product that can only be perceived indirectly such as services. 
 
 In @@name, all product-specific data is kept in the product’s definition. 
@@ -63,17 +64,16 @@ Furthermore, no matter what the recalculation based on the measurement ratios is
 
 Example of setting different measurement units for a product:
 
-| Part number | Product name | Base measurement   | Measurement unit | Purchase         | Product dimension |   
-|             |              | category           |                  | measurement unit |                   |
-| :---------  | :----------- | :----------------- | :--------------  | :--------------- | :---------------- |
-| 456789      | X            | PCS                | KG               | Pallet           | 5 kg = 1 PCS 
-|             |              |                    |                  |                  | 1 pallet = 10 PCS |
+| Part number | Product name | Base measurement category | Measurement unit | Purchase measurement unit  | Product dimension |   
+| :---------  | :----------- | :------------------------ | :--------------- | :------------------------- | :---------------- |
+| 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS      |
+|             |              |                           |                  |                            | 1 pallet = 10 PCS |
 
 
 ## Other settings
 
 When creating a product, the user must specify the **currency** in which the product cost will be calculated. By default - this is the base currency of the enterprise company.
-It is important to define the costing method as well. If the costing method is not set in the product definition, the one set in the enterprise company definition will be used instead.
+It is important to define the costing method as well. If the costing method is not set in the product definition, the one set in the enterprise company definition will be used instead.  
 
 Some of the products are used as materials for producing other products. In this case, a **flushing method** must be set in the product definition. This method determines how the material will be written off from the warehouse – manually (using consumption orders) or automatically (by releasing or finishing the work order).
 
