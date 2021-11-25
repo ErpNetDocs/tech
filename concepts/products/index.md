@@ -52,7 +52,7 @@ The above information is represented in the following table as an example:
 Each product must belong to a user defined **product group** (e.g. goods, materials, services …) as well as to a user defined **product type** (e.g. goods, materials, services …):
 
 - The Product groups allow the products to be grouped according to different criteria, so they could inherit certain properties from the groups – such as next part number, default measurement unit, product name mask, default product type, etc. For more information, see [Product groups].
-- 
+
 - The Product types provide the functionality of creating different automatizations for a certain product type - e.g., you can set whether the products of a certain type are allowed to be serviced, shipped, stocked, etc. For more information, see [Product types].
 
 ### Measurement units
