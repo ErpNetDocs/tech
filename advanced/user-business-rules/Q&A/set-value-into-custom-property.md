@@ -8,7 +8,7 @@ To set a value into a custom property, you'll either copy or get that value from
 
 Let's say you have a sales order document.
 
-If you want to copy a value from a specific custom property and set it as a value in another custom property, you can create a **[user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** with the following data:
+If you want to copy a value from a specific custom property and set it as a value in another custom property, you can create a user business rule with the following data:
 
 Repository|
 |:----|
