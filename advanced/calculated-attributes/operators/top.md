@@ -19,3 +19,12 @@ items: Operators
 > [!NOTE]
 > 
 > This operator is used with **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)**.
+
+
+**Example:**
+
+```
+10: SELECT REPO:General.Products.Products EXP:20
+20: TOP CONST:5 EXP:30
+30: WHERE ...
+```
