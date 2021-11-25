@@ -17,6 +17,9 @@ items: Operators
 | Return value          | (attributeValue1, attributeValue2, ...)                                                         |
 | Introduced in version | 2019.1                                                       |
 
+> [!NOTE] 
+> 
+> The operator creates a list with limited number of values - only the top 100 records of the indicated list of objects will be 'converted'.
 
 **Example:**
  
