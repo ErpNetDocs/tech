@@ -8,15 +8,15 @@ In @@name, all product-specific data is kept in the product’s definition.
 
 Product’s definition includes the information that is needed to identify the product, for example:
 
-•	product name;
-•	part number;
-•	product group.
+-	product name;
+-	part number;
+-	product group.
 
 And some other basic data that describes and categorizes the product, for example:
 
-•	product type;
-•	measurement unit;
-•	costing currency and others.
+-	product type;
+-	measurement unit;
+-	costing currency and others.
 
 Different panels can also be visualized in the product’s definition, allowing the user to have access to all of the product related information such as product dimensions, current stock holds, serial numbers, lots, product prices and others.  
 
