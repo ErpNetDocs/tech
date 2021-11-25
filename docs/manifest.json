@@ -1587,7 +1587,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/format-specifiers.html",
-          "hash": "EwuC1nP2txPdUanuqxCtYQ=="
+          "hash": "ur/KmtrneZnloLxOXFU+CQ=="
         }
       },
       "is_incremental": false,
@@ -1635,19 +1635,22 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/Q&A/index.html",
-          "hash": "EXTNittUlMphL3zhrx20xw=="
+          "hash": "wa3u8JDElCJhCOY2s0VDWA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.html",
-          "hash": "ooicJzJ4OCczXdWYJknUBA=="
+          "hash": "SWi7qALJaYOAVJ00FLQ2MQ=="
         }
       },
       "is_incremental": false,
@@ -1659,7 +1662,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/fail.html",
-          "hash": "7BUdz/Q4SoiqLKRBmW1krw=="
+          "hash": "Bzt2IdbTTv82zng0wS+17A=="
         }
       },
       "is_incremental": false,
@@ -1671,7 +1674,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/index.html",
-          "hash": "RixjaIAnErsCPRlqyJ9XKQ=="
+          "hash": "9F8YLwjIhRf1h5YLt6LFjA=="
         }
       },
       "is_incremental": false,
@@ -1695,7 +1698,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/sendmail.html",
-          "hash": "qmGzYxKuqLX6exVvt19lrw=="
+          "hash": "ces11/kPn/m4sP90BgmZww=="
         }
       },
       "is_incremental": false,
@@ -1719,7 +1722,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/warning.html",
-          "hash": "qiQ9J9GRF3Bp8J0g7SR4PA=="
+          "hash": "3R5yYHJQVQwm9GvqKFzp0w=="
         }
       },
       "is_incremental": false,
@@ -1743,7 +1746,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/index.html",
-          "hash": "CtJSCOJ1+RwgjxJLCZRxmw=="
+          "hash": "SnVrZ2JX56t1f7wUJhm0DA=="
         }
       },
       "is_incremental": false,
@@ -1947,7 +1950,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/index.html",
-          "hash": "R7pGCwM6HsJ42/ije0hS0w=="
+          "hash": "mBJlNQOu+rX9AfjUOOFV/Q=="
         }
       },
       "is_incremental": false,
@@ -2124,7 +2127,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/products/index.html",
-          "hash": "KvvLklyPApyL0g9dwEp2DA=="
+          "hash": "sTSH4kOTr6QJlndwa7rWWw=="
         }
       },
       "is_incremental": false,
@@ -4070,7 +4073,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/general/products/index.html",
-          "hash": "cDZ4ASsNQJSB1iOCw1ih8w=="
+          "hash": "NiWIflWkUkO+ifbHBJNB1g=="
         }
       },
       "is_incremental": false,

@@ -79,42 +79,79 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="user-business-rules">User business rules</h1>
 
-<p>These are business rules which a user defines on his own. They may be used to provide some kind of validation which is not available in the system business rules or to create working logic which is not currently available in the software. They may be registered on different layers - BackEnd and/or FrontEnd. The BackEnd means that the user business rule is processed on the server. A FrontEnd user business rule is processed in the client application.</p>
-<p>The user business rules consist of the following information: 'where?', 'when', and on 'what conditions?' something ('what?') should happen.</p>
-<p>They have the following information:</p>
+<p>These are business rules which you define on your own.</p>
+<p>They may be used:</p>
 <ul>
-<li>Code - unique code of the rule;</li>
-<li>Name - the name of the user business rule;</li>
-<li>Repository Name - the name of the repository for which the business rule is  defined. For example - invoices or invoice lines. Its value may be  selected from a dropdown list and the value contains the path to the  selected value, dot separated. For example: if the user needs to create  user business rule so he can use it in the invoices forms or in the  invoices navigators, the repository should be 'Crm.Invoicing.Invoices'.  If the rule is created to be used in the invoice lines, then the repository should be 'Crm.Invoicing.InvoiceLines';</li>
-<li>Notes - notes, comments, short information on the user business rules usage, purpose and more;</li>
-<li>IsActive - the user business rule may be activated and deactivated;</li>
-<li><em>Layer</em> - currently this is unavailable. All user business rules are registered in the BackEnd layer.</li>
+<li>to provide some kind of validation <strong>unavailable</strong> in the system business rules</li>
+<li>to create working logic which is <strong>unavailable</strong> in the software.</li>
 </ul>
-<p>The events which need to happen for the user business rule to be activated are described in the <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">User business rules - Events</a> panel. It consists of the following information:</p>
+<p>User business rules can be registered on different layers - <strong>BackEnd</strong> and/or <strong>FrontEnd</strong>.</p>
 <ul>
-<li>Event type - the event for which to register the user business rule;</li>
-<li>Event parameter - registration parameter. The meaning of this parameter is  determined by the type of the event;</li>
-<li>Execution priority - execution priority. Lowes values indicate earlier  priorities. Possible values are: 30-Early, 50-Normal; 70-Late;</li>
-<li>Layer - currently this is unavailable. All events are events of the BackEnd layer.</li>
+<li>BackEnd means that the rule is processed on the <strong>server</strong>.</li>
+<li>FrontEnd implies that the rule is processed in the <strong>client application</strong>.</li>
 </ul>
-<p>The conditions which have to be met when the event happen so the rule to be processed are entered as follows:</p>
+<p>User business rules are based around questions:</p>
+<p>'where?', 'when', and on 'what conditions?' something ('what?') should happen.</p>
+<p>They contain the following information:</p>
 <ul>
-<li>Condition No - consecutive number of the condition, unique within the user business rule.</li>
-<li>Attribute name - the name of the attribute which will be validated in the condition.</li>
-<li>Comparison type - what is the comparison type. The available options are: =, !=, &gt;=, &lt;=, Like, IsNull,</li>
-<li>Value - the constant value to which the value of attribute (specified in the Attribute name) is compared to.</li>
+<li><p><strong>Code</strong> - unique code of the rule.</p>
+</li>
+<li><p><strong>Name</strong> - the name of the user business rule.</p>
+</li>
+<li><p><strong>Repository Name</strong> - the name of the repository for which the business rule is  defined.</p>
+</li>
 </ul>
-<p>So the condition is met when the value of the specified attribute and the  specified value compose a true statement with the selected comparison  type. For example, IsActive = True or Quantity &lt; 100.0 and more.</p>
+<p>For example, 'Invoices' or 'Invoice lines'.</p>
+<p>The value of a repository name can be selected from a dropdown list. It contains the path to the selected value, dot-separated. If you need to create a user business rule which you can use in invoice forms or in invoice navigators, the repository should be 'Crm.Invoicing.Invoices'. If the rule is created for usage in invoice lines, the repository name becomes 'Crm.Invoicing.InvoiceLines'.</p>
+<ul>
+<li><p><strong>Notes</strong> - notes, comments or short information about the user business rules' usage, purpose and more.</p>
+</li>
+<li><p><strong>IsActive</strong> - a user business rule may be activated or deactivated.</p>
+</li>
+<li><p><strong>Layer</strong> - currently, this is unavailable. All user business rules are registered in the <strong>BackEnd</strong> layer.</p>
+</li>
+</ul>
+<h3 id="events">Events</h3>
+<p>Some events need to happen for a user business rule to become active.</p>
+<p>The <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">Events</a></strong> panel consists of the following fields:</p>
+<ul>
+<li><p><strong>Event type</strong> - the event the user business rule can be registered for.</p>
+</li>
+<li><p><strong>Event parameter</strong> - registration parameter, determined by the type of the event.</p>
+</li>
+<li><p><strong>Execution priority</strong> - lower values indicate earlier priorities. Possible values: 30-Early, 50-Normal; 70-Late.</p>
+</li>
+<li><p><strong>Layer</strong> - currently, this is unavailable. All events belong to the <strong>BackEnd</strong> layer.</p>
+</li>
+</ul>
+<h3 id="conditions">Conditions</h3>
+<p>There are several conditions that must be met for an event to happen:</p>
+<ul>
+<li><p><strong>Condition No</strong> - consecutive number of the condition, unique within the user business rule.</p>
+</li>
+<li><p><strong>Attribute name</strong> - the name of the attribute that will be validated in the condition.</p>
+</li>
+<li><p><strong>Comparison type</strong> - the type of comparison. Available options are: '=', '!=', '&gt;=', '&lt;=', 'Like', 'IsNull',</p>
+</li>
+<li><p><strong>Value</strong> - the constant value to which the value specified in <em>Attribute name</em> is compared.</p>
+</li>
+</ul>
+<p>A condition is met when the value of the specified attribute and the specified value compose a <strong>TRUE</strong> statement with the selected comparison type. For example, <code>IsActive = True</code>, <code>Quantity &lt; 100.0</code> and more.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If there is more than one condition, the rule will be applied when <strong>all</strong> conditions are true.</p>
+<p>If there's more than one condition, the rule will be applied when <strong>all</strong> conditions are true.</p>
 </div>
-<p>The <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">actions</a> which may be executed by the rule contain the following information:</p>
+<h3 id="actions">Actions</h3>
+<p><strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">Actions</a></strong> executable by rules contain the following information:</p>
 <ul>
-<li>Action No - consecutive number of the action, unique within the user business rule;</li>
-<li>Action type - specifies the <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">type of action</a> to be performed by the rule. Possible values are: <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html">SETVALUE</a> and <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a>.</li>
-<li>Parameter1 type, Parameter2 type, Parameter3 type - the type of the parameter specifies how to obtain the parameter value;</li>
-<li>Parameter1 value, Parameter2 value, Parameter3 value - the actual value of the parameter.</li>
+<li><p><strong>Action No</strong> - consecutive number of the action, unique within the user business rule.</p>
+</li>
+<li><p><strong>Action type</strong> - specifies the type of action that will be performed by the rule. <br> Possible values are: <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/setvalue.html">SETVALUE</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong>.</p>
+</li>
+<li><p><strong>Parameter1 type</strong>, <strong>Parameter2 type</strong>, <strong>Parameter3 type</strong> - the type of parameter specifies how to obtain the parameter value.</p>
+</li>
+<li><p><strong>Parameter1 value</strong>, <strong>Parameter2 value</strong>, <strong>Parameter3 value</strong> - the actual value of the parameter.</p>
+</li>
 </ul>
 </article>
           </div>

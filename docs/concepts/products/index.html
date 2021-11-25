@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Products | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Products | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,8 +77,140 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="products">Products</h1>
 
-<p>OVERVIEW</p>
+<h3 id="description">Description</h3>
+<p><em>Products</em> are goods which are the object of a company’s business activities. Products can be tangible or intangible. A <strong>tangible</strong> product is a physical object that can be perceived by touch such as a building, vehicle, gadget, or clothing. An <strong>intangible</strong> product is a product that can only be perceived indirectly such as services.</p>
+<p>In ERP.net, all product-specific data is kept in the product’s definition.</p>
+<p>Product’s definition includes the information that is needed to identify the product, for example:</p>
+<ul>
+<li>product name;</li>
+<li>part number;</li>
+<li>product group.</li>
+</ul>
+<p>And some other basic data that describes and categorizes the product, for example:</p>
+<ul>
+<li>product type;</li>
+<li>measurement unit;</li>
+<li>costing currency and others.</li>
+</ul>
+<p>Different panels can also be visualized in the product’s definition, allowing the user to have access to all of the product related information such as product dimensions, current stock holds, serial numbers, lots, product prices and others.</p>
+<h3 id="part-numbers-product-codes-serial-numbers-and-lots">Part numbers, product codes, serial numbers, and lots</h3>
+<p>The products are identified in ERP.net by their <strong>part numbers</strong>. The part number is the unique identifier of the product. You cannot create a product without entering a product part number that is unique for the whole database. Conversely, the <strong>product name</strong> is not designed to be unique identifier, so it is possible to have different products with the same name but with different part numbers.</p>
+<p>In addition to the part number, the user is able to specify alternative <strong>product codes</strong> – e.g. supplier’s product codes, client’s product codes, barcodes, etc. In this way, the product can be searched and selected not only by its product number but by its product codes as well. For more information, see [Product codes] and [Coding systems].</p>
+<p>As opposed to part numbers and codes, the <strong>serial numbers</strong> are used to identify not the whole product but its separate pieces and help to keep track of what happens with them (e.g., to whom they are sold, if they are under guarantee, etc.). If the option <strong>Serialized</strong> in the product definition is checked, this product cannot be used in the logistic documents if its serial number is not explicitly indicated. For more information, see [Serial numbers].</p>
+<p>ERP.net allows the separate product units to be grouped in <strong>lots</strong>. An unlimited number of lots could be defined for a particular product. Each lot can contain product units that have the same expiry date or that are received within the same receiving order or that are produced within the same production output order. For more information, see [Lots].</p>
+<p>In the product definition, you can manage the settings of using lots by determining the following parameters:</p>
+<ul>
+<li>whether the lots are allowed or not allowed or required</li>
+<li>the method by which the lots are automatically issued – FIFO, LIFO, and FEFO</li>
+<li>the standard cost per lot</li>
+<li>the standard price per lot</li>
+<li>the size of a standard lot.</li>
+</ul>
+<p>The above information is represented in the following table as an example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Part number</th>
+<th style="text-align: left;">Product name</th>
+<th style="text-align: left;">Product code    (Coding system: Billa)</th>
+<th style="text-align: left;">Product code   (Coding system: Metro)</th>
+<th style="text-align: left;">Serial number</th>
+<th style="text-align: left;">Lot number    (Expiry date)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">456789</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">88559910</td>
+<td style="text-align: left;">777RR69PP</td>
+<td style="text-align: left;">1111111111</td>
+<td style="text-align: left;">20200611</td>
+</tr>
+<tr>
+<td style="text-align: left;">456789</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">88559910</td>
+<td style="text-align: left;">777RR69PP</td>
+<td style="text-align: left;">1111111112</td>
+<td style="text-align: left;">20200611</td>
+</tr>
+<tr>
+<td style="text-align: left;">456789</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">88559910</td>
+<td style="text-align: left;">777RR69PP</td>
+<td style="text-align: left;">1111111113</td>
+<td style="text-align: left;">20220810</td>
+</tr>
+<tr>
+<td style="text-align: left;">999888</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">55889941</td>
+<td style="text-align: left;">777RR69PP</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="product-groups-and-product-types">Product groups and product types</h3>
+<p>Each product must belong to a user defined <strong>product group</strong> (e.g. goods, materials, services …) as well as to a user defined <strong>product type</strong> (e.g. goods, materials, services …):</p>
+<ul>
+<li><p>The Product groups allow the products to be grouped according to different criteria, so they could inherit certain properties from the groups – such as next part number, default measurement unit, product name mask, default product type, etc. For more information, see [Product groups].</p>
+</li>
+<li><p>The Product types provide the functionality of creating different automatizations for a certain product type - e.g., you can set whether the products of a certain type are allowed to be serviced, shipped, stocked, etc. For more information, see [Product types].</p>
+</li>
+</ul>
+<h3 id="measurement-units">Measurement units</h3>
+<p>The products can be presented in multiple measurement units. A <strong>base measurement category</strong> is used for storing the product in the warehouse, for sales reporting, etc. However, you may choose a different <strong>measurement unit</strong> that will be loaded by default when creating documents with this product. In order to make conversions between the different units of measurement for the same quantity, the user is able to define measurement ratios. For more information, see [Measurement categories], [Measurement units] and [Product dimensions].</p>
+<p>Furthermore, no matter what the recalculation based on the measurement ratios is, if the option <strong>Allow variable measurement ratios</strong> is checked, the user has the opportunity to manually adjust the right base quantity in the particular situation. For more information, see [Variable (dynamic) measurement ratios].</p>
+<p>Example of setting different measurement units for a product:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Part number</th>
+<th style="text-align: left;">Product name</th>
+<th style="text-align: left;">Base measurement category</th>
+<th style="text-align: left;">Measurement unit</th>
+<th style="text-align: left;">Purchase measurement unit</th>
+<th style="text-align: left;">Product dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">456789</td>
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">PCS</td>
+<td style="text-align: left;">KG</td>
+<td style="text-align: left;">Pallet</td>
+<td style="text-align: left;">5 kg = 1 PCS;    1 pallet = 10 PCS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="other-settings">Other settings</h3>
+<p>When creating a product, the user must specify the <strong>currency</strong> in which the product cost will be calculated. By default - this is the base currency of the enterprise company.
+It is important to define the costing method as well. If the costing method is not set in the product definition, the one set in the enterprise company definition will be used instead.</p>
+<p>Some of the products are used as materials for producing other products. In this case, a <strong>flushing method</strong> must be set in the product definition. This method determines how the material will be written off from the warehouse – manually (using consumption orders) or automatically (by releasing or finishing the work order).</p>
+<p>The product can be activated or deactivated depending on whether it is a part of the company’s sales or procurement product lists. These settings are managed via the <strong>Active</strong> field in the product definition. In addition, there is an option to show or not this product in the company’s catalogs, related to its product group. If the option <strong>Is featured</strong> is checked – the product will be presented at the title space in promotional materials, web pages, etc.</p>
+<p>ERP.net provides a functionality to add one or several <strong>pictures</strong> of the product in order to be visually presented in the system. Pictures can be displayed when searching for products, printing reports, documents, etc.</p>
+<p>To automate the creation of the Intrastat declaration some fields in the product definition must be filled as well:  <strong>Intrastat commodity code</strong>, <strong>Intrastat Supplementary Unit</strong>, and <strong>Origin Country</strong>.</p>
+<p>In the product definition the user can specify some <strong>other parameters</strong> of the product, such as those listed below:</p>
+<ul>
+<li>short name – the name that will be used for space-constrained devices, like mobile phones, fiscal printers, etc.</li>
+<li>expiry period days (from the date of production);</li>
+<li>guarantee period days (if the product type is serviced);</li>
+<li>cargo type – by choosing one of the user defined cargo types (e.g. container cargo, Liquid cargo, etc.);</li>
+<li>minimum sales quantity base;</li>
+<li>minimum sales price;</li>
+<li>planning demand time fence days;</li>
+<li>scrap rate (when the product is used as an ingredient);</li>
+<li>ABC class – product importance classification where A is the highest class and C is the lowest class. The products in class A are with the highest turnover and with the highest value;</li>
+<li>valuation group – a user-defined group that is used in reconciliations when compensating pluses and minuses.</li>
+<li>excise product – the excise product code (if the product is excised);</li>
+<li>excise alcoholic atrength (if the product is subject to alcoholic Excise reporting).</li>
+</ul>
 </article>
           </div>
           

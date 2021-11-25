@@ -79,14 +79,30 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="how-to-use-business-rules-to-set-a-value-into-a-custom-property">How to use business rules to set a value into a custom property?</h1>
 
-<p>We can use business rules to set values into different fields, including custom properties <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">action types</a>. Currently, if we want to set a value into a custom property, we can either copy/get that value from another custom property or use an attribute/field/ constant whose data type is String.</p>
-<p><em><strong>Example 1</strong></em> - the value is copied from another Custom Property's value:
-If we want to copy a value from a specific Custom Property and set it as a value for another Custom Property in a sales order document, for example, then we can create a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a>  with the following data:</p>
-<p>Repository
-|:----
-Crm.Sales.SalesOrders</p>
-<p>Events
-|:----</p>
+<p>You can use <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">business rules</a></strong> to set values into different fields, including custom properties <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">action types</a></strong>.</p>
+<p>To set a value into a custom property, you'll either copy or get that value from another custom property. Alternatively, you can use an attribute/field/constant with data type 'String'.</p>
+<p><strong>Example 1</strong></p>
+<p>Let's say you have a sales order document.</p>
+<p>If you want to copy a value from a specific custom property and set it as a value in another custom property, you can create a user business rule with the following data:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Repository</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Crm.Sales.SalesOrders</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Events</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
@@ -103,8 +119,13 @@ Crm.Sales.SalesOrders</p>
 </tr>
 </tbody>
 </table>
-<p>Actions
-|:----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actions</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
@@ -127,21 +148,36 @@ Crm.Sales.SalesOrders</p>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Both Custom Property's <strong>Value</strong> and Custom Property's <strong>Description</strong> are copied.</p>
-</div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>In this case, there are no limitations if the Custom Properties in which we set the value to inherit its allowed values from another entity or Custom Property. The only condition is the setting in both Custom Properties to be compatible according to the principles described in the topic <strong>Inheriting and copying custom properties</strong>.</p>
-</div>
-<p><em><strong>Example 2</strong></em> - set a specific value that is not copied from another Custom Property's value:</p>
-<p>If we want to set a specific value (that is not copied from another Custom Property's value) for a Custom Property in a sales order document, then we can create a <a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rule</a> with the following data:</p>
-<p>Repository
-|:----
-Crm.Sales.SalesOrders</p>
-<p>Events
-|:----</p>
+<blockquote>
+<p>[!NOTE] 1</p>
+<p>Both the custom property's <strong>value</strong> and <strong>description</strong> are copied.</p>
+</blockquote>
+<blockquote>
+<p>[!NOTE] 2</p>
+<p>In this case, there are <strong>NO</strong> limitations for custom properties in which you set the value to inherit its allowed values from another entity or custom property. The only condition is the setting in both custom properties to follow the principles described in <strong>Inheriting and copying custom properties</strong>.</p>
+</blockquote>
+<p><strong>Example 2</strong></p>
+<p>Let's say you have a sales order document.</p>
+<p>If you want to set a specific value for a custom property that's not copied from another custom property's value, you can create a <strong>user business rule</strong> with the following data:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Repository</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Crm.Sales.SalesOrders</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Events</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
@@ -158,8 +194,13 @@ Crm.Sales.SalesOrders</p>
 </tr>
 </tbody>
 </table>
-<p>Actions
-|:----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actions</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
@@ -182,17 +223,16 @@ Crm.Sales.SalesOrders</p>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Using this method, we can <strong>only</strong> set the Custom Property's Value and <strong>not</strong> its description. An exception is made when we are setting a value that is defined as a Property Allowed value. For more info, see the section below.</p>
-</div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Parameter2 Type is not limited to a Constant. We could use the attribute type as well and load the value from another system attribute or a <a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html">calculated attribute</a>. Note, however, that the value must be from a string type. If it is not, you can cast or convert it using a calculated attribute for the user business rule.</p>
-</div>
-<h4 id="but-what-if-the-custom-property-has-allowed-values-and-we-want-to-set-one-of-them">But what if the custom property has allowed values, and we want to set one of them?</h4>
-<p>This functionality is supported even when the custom property has allowed values, and we want to set one of them as a value of the particular property, but only if the property <strong>does not</strong> inherit its allowed values from another entity.</p>
-<p>When custom properties inherit their values from another custom property or their values are manually defined in the 'Property Allowed Values' panel - if one of these values is set by a <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a>, it will be recognized as an allowed value for this property. In this case, the Allowed Value's description will be inherited as well.</p>
+<blockquote>
+<p>[!NOTE] 3</p>
+<p>Using this method, you can only set the custom property's <strong>value</strong> - not its description. An exception is when you're setting a value defined as a <em>Property Allowed</em> value.</p>
+</blockquote>
+<blockquote>
+<p>[!NOTE] 4</p>
+<p><em>Parameter2 Type</em> is not limited to a constant. You could use the attribute type as well and load the value from another system attribute or a <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html">calculated attribute</a></strong>. However, the value <strong>must</strong> be from a 'String' type. Otherwise, you can <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html">CAST</a></strong> or <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html">CONVERT</a></strong> it.</p>
+</blockquote>
+<p>If a custom property has allowed values, you may want to set one of them as a value of the particular property. This is possible only when the property <strong>doesn't</strong> inherit its allowed values from another entity.</p>
+<p>Custom properties can inherit their values from another custom property or have them manually defined in the <strong>Property Allowed Values</strong> panel. If one value is set by a business rule, it'll be recognized as an allowed value for this property. The value's description will then be inherited as well.</p>
 </article>
           </div>
           
