@@ -1,3 +1,5 @@
-- [Valid icon format](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/valid-icon-format.md)
-- [Script text max length](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/script-text-max-length.md)
-- [Code (Code)](https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/business-rules/code.md)
+# Business rules
+
+- **[Valid icon format](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/valid-icon-format.html)**
+- **[Script text max length](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/script-text-max-length.html)**
+- **[Code (Code)](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/code.html)**
