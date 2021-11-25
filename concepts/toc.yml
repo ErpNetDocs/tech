@@ -3,6 +3,9 @@
 - name: Documents
   href: documents/toc.yml
   topicHref: documents/index.md
+- name: Products
+  href: products/toc.yml
+  topicHref: products/index.md
 - name: Multi-language
   href: multi-language.md
 - name: Multi-company
