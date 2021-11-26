@@ -7,7 +7,7 @@ The option *‘Allow variable measurement ratios’* is available in the product
 
 ## Example: 
 
-The client has ordered **1 pallet** of a product. We know that one pallet theoretically weights **1000 kg** and that information is set as a conversion ratio in the [product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=product%20dimensions). But we also know that this weight may vary, so the product is allowed to use *Variable measurement ratios*. The base quantity in the store transaction is calculated on a base of the conversion rate. But when the workers in the warehouse actually put the pallet on the scale it turns out that the pallet actually weights **1100 kg**. In this case they can manually set the value for the base quantity. This will not only assure that the information in the system is correct, but also will allow the company to invoice the right amounts.
+The client has ordered **1 pallet** of a product. We know that one pallet theoretically weights **1000 kg** and that information is set as a conversion ratio in the [product dimensions](product-dimensions.md). But we also know that this weight may vary, so the product is allowed to use *Variable measurement ratios*. The base quantity in the store transaction is calculated on a base of the conversion rate. But when the workers in the warehouse actually put the pallet on the scale it turns out that the pallet actually weights **1100 kg**. In this case they can manually set the value for the base quantity. This will not only assure that the information in the system is correct, but also will allow the company to invoice the right amounts.
 
 
 >[!NOTE]
