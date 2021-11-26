@@ -2,7 +2,7 @@
 
 ### Description 
 
-*Products* are goods which are the object of a company’s business activities. Products can be tangible or intangible. A **tangible** product is a physical object that can be perceived by touch such as a building, vehicle, gadget, or clothing. An **intangible** product is a product that can only be perceived indirectly such as services. 
+*Products* are the most detailed items which a company sells or buys. Products can be tangible or intangible. A **tangible** product is a physical object that can be perceived by touch such as a building, vehicle, gadget, or clothing. An **intangible** product is a product that can only be perceived indirectly such as services. 
 
 In @@name, all product-specific data is kept in the product’s definition. 
 
