@@ -44,3 +44,4 @@ The products availability (both current and at a specified date) for serialized 
 The same is valid for the stock movements reports. By them, the user is able to track the movements of specified products and their Serial numbers. Such tracking is always executed by store documents (i.e. store movements) and if there comparing operations from specialized modules is required, then a link between the Transactions and the documents from the specified module is used (for example - links as [Parent Document] <-> [Sub-Document]). 
 
 For example, in purchasing orders Serial numbers will rarely be entered (except for returns) and the Serial numbers will show up in the transactions. So if the user wants to see when a specified serial number is bought, then they would use stock movements and follow the link to the Purchasing orders (for example - through the parent document of the Store order).
+
