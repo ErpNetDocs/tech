@@ -12,5 +12,5 @@ When a product in the sales order is selected through product code via barcode, 
 
 - "Quantity Unit = Package", which corresponds to the default measurement unit in the coding system’s definition; 
 
-- "Unit Price" must be recalculated according to the [product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions).
+- "Unit Price" must be recalculated according to the [product dimensions](product-dimensions.md).
 
