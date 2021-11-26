@@ -1,6 +1,6 @@
 # Coding systems 
 
-*Coding Systems* group together multiple [product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=product%20codes) according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
+*Coding Systems* group together multiple [product codes](product-codes.md) according to different criteria. All product codes are grouped in coding systems. Product codes are codes other than the part numbers that bring meaning to the company such as supplier codes, customer codes, barcodes and more. 
 
 A *default measurement unit* could also be specified in coding systems. If a product code relating to a coding system with a default measurement unit is selected, then this unit must load in the document instead of the product's default unit. 
 
