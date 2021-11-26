@@ -25,11 +25,11 @@ Different panels can also be visualized in the product’s definition, allowing 
 
 The products are identified in @@name by their **part numbers**. The part number is the unique identifier of the product. You cannot create a product without entering a product part number that is unique for the whole database. Conversely, the **product name** is not designed to be unique identifier, so it is possible to have different products with the same name but with different part numbers.
 
-In addition to the part number, the user is able to specify alternative **product codes** – e.g. supplier’s product codes, client’s product codes, barcodes, etc. In this way, the product can be searched and selected not only by its product number but by its product codes as well. For more information, see [Product codes] and [Coding systems].
+In addition to the part number, the user is able to specify alternative **product codes** – e.g. supplier’s product codes, client’s product codes, barcodes, etc. In this way, the product can be searched and selected not only by its product number but by its product codes as well. For more information, see [Product codes](product-codes.md) and [Coding systems](coding-systems.md).
 
-As opposed to part numbers and codes, the **serial numbers** are used to identify not the whole product but its separate pieces and help to keep track of what happens with them (e.g., to whom they are sold, if they are under guarantee, etc.). If the option **Serialized** in the product definition is checked, this product cannot be used in the logistic documents if its serial number is not explicitly indicated. For more information, see [Serial numbers].
+As opposed to part numbers and codes, the **serial numbers** are used to identify not the whole product but its separate pieces and help to keep track of what happens with them (e.g., to whom they are sold, if they are under guarantee, etc.). If the option **Serialized** in the product definition is checked, this product cannot be used in the logistic documents if its serial number is not explicitly indicated. For more information, see [Serial numbers](serial-numbers.md).
 
-@@name allows the separate product units to be grouped in **lots**. An unlimited number of lots could be defined for a particular product. Each lot can contain product units that have the same expiry date or that are received within the same receiving order or that are produced within the same production output order. For more information, see [Lots]. 
+@@name allows the separate product units to be grouped in **lots**. An unlimited number of lots could be defined for a particular product. Each lot can contain product units that have the same expiry date or that are received within the same receiving order or that are produced within the same production output order. For more information, see [Lots](~/tech/modules/logistics/inventory/lots/index.md).
 
 In the product definition, you can manage the settings of using lots by determining the following parameters:
 - whether the lots are allowed or not allowed or required
@@ -51,15 +51,15 @@ The above information is represented in the following table as an example:
 
 Each product must belong to a user defined **product group** (e.g. goods, materials, services …) as well as to a user defined **product type** (e.g. goods, materials, services …):
 
-- The Product groups allow the products to be grouped according to different criteria, so they could inherit certain properties from the groups – such as next part number, default measurement unit, product name mask, default product type, etc. For more information, see [Product groups].
+- The Product groups allow the products to be grouped according to different criteria, so they could inherit certain properties from the groups – such as next part number, default measurement unit, product name mask, default product type, etc. For more information, see [Product groups](product-groups.md).
 
 - The Product types provide the functionality of creating different automatizations for a certain product type - e.g., you can set whether the products of a certain type are allowed to be serviced, shipped, stocked, etc. For more information, see [Product types].
 
 ### Measurement units
 
-The products can be presented in multiple measurement units. A **base measurement category** is used for storing the product in the warehouse, for sales reporting, etc. However, you may choose a different **measurement unit** that will be loaded by default when creating documents with this product. In order to make conversions between the different units of measurement for the same quantity, the user is able to define measurement ratios. For more information, see [Measurement categories], [Measurement units] and [Product dimensions].
+The products can be presented in multiple measurement units. A **base measurement category** is used for storing the product in the warehouse, for sales reporting, etc. However, you may choose a different **measurement unit** that will be loaded by default when creating documents with this product. In order to make conversions between the different units of measurement for the same quantity, the user is able to define measurement ratios. For more information, see [Measurement categories], [Measurement units] and [Product dimensions](product-dimensions.md).
 
-Furthermore, no matter what the recalculation based on the measurement ratios is, if the option **Allow variable measurement ratios** is checked, the user has the opportunity to manually adjust the right base quantity in the particular situation. For more information, see [Variable (dynamic) measurement ratios].
+Furthermore, no matter what the recalculation based on the measurement ratios is, if the option **Allow variable measurement ratios** is checked, the user has the opportunity to manually adjust the right base quantity in the particular situation. For more information, see [Variable (dynamic) measurement ratios](variable-dynamic-measurement-rations.md).
 
 Example of setting different measurement units for a product:
 
