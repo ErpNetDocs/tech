@@ -63,9 +63,9 @@ Furthermore, no matter what the recalculation based on the measurement ratios is
 
 Example of setting different measurement units for a product:
 
-| Part number | Product name | Base measurement category | Measurement unit | Purchase measurement unit  | Product dimension                  |   
-| :---------  | :----------- | :------------------------ | :--------------- | :------------------------- | :--------------------------------- |
-| 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS;    1 pallet = 10 PCS |
+| Part number | Product name | Base measurement category | Measurement unit | Purchase measurement unit  | Product dimension                   |   
+| :---------  | :----------- | :------------------------ | :--------------- | :------------------------- | :---------------------------------- |
+| 456789      | X            | PCS                       | KG               | Pallet                     | 5 kg = 1 PCS;     1 pallet = 10 PCS |
 
 
 ### Other settings
