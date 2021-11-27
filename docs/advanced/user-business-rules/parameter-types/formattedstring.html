@@ -79,44 +79,50 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="formattedstring">FormattedString</h1>
 
-<p>Formatted string is a parameter type of the User Business Rules actions which is introduced in version 2020.1. This parameter represents a text which supports multi-line, variable interpolation, and variable formatting.<br>
-It's typically used with the <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/notifyuser.html">NOTIFYUSER</a> businesses rule action.</p>
-<p>The functionalities which can be used in the value of the formatted string parameter are:</p>
+<p>FormattedString is a parameter type of the user business rules <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html">actions</a></strong>, introduced in version 2020.1. <br> It represents a text which supports multi-line, variable interpolation, and variable formatting.</p>
+<p>This parameter type is typically used with <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/notifyuser.html">NOTIFYUSER</a></strong>.</p>
+<p>Functionalities which can be used in the value of the formatted string parameter are:</p>
 <ul>
-<li>escape charts</li>
+<li><strong>escape charts</strong></li>
 </ul>
 <p>The following are handled:<br></p>
-<pre><code>       \n - newline - supported in the Body&lt;br&gt;
-       \r\n - also new line - supported in the Body&lt;br&gt;
-       \{ - insert opening curly bracket '{' in output.&lt;br&gt; 
-       \} - insert closing curly bracket '}' in output. &lt;br&gt;
-</code></pre>
+<p><code>\n - newline - supported in the Body.</code></p>
+<p><code>\r\n - also new line - supported in the Body.</code></p>
+<p><code>\{ - insert opening curly bracket '{' in output.</code></p>
+<p><code>\} - insert closing curly bracket '}' in output.</code></p>
 <ul>
-<li>variable interpolation</li>
+<li><strong>variable interpolation</strong></li>
 </ul>
-<p>This allows specifying variables into a string using placeholders which when executed are replaced with their corresponding values. In the perspective of ERP.net those variables are the domain attributes - both system domain attributes and calculated attributes. When called the domain attribute value is calculated for the particular entity record for which the rule is executed. In order to specify a placeholder, a.k.a call a domain attribute in text, we must specify the domain attribute name in curly brackets '{...}'.</p>
+<p>This allows specifying variables into a string using placeholders. When these placeholders are executed, they're replaced with their corresponding values.</p>
+<p>In ERP.net, those variables are <strong>domain attributes</strong> - both system domain and calculated attributes.</p>
+<p>When called, the domain attribute value is calculated for the particular entity record for which the rule is executed. In order to specify a placeholder, a.k.a call a domain attribute in text, you must specify the domain attribute name in curly brackets '{...}'.</p>
 <p>Currently, the following options are supported:<br></p>
 <p>a. Attributes: {DocumentDate}, {#CalsulatedAttribute1}, {@CustomProperty1}. <br>
 b. References: {Customer}.<br>
-c. Reference path: {Customer.Party.PartyName}. Note that Child Collections are <strong>not</strong> supported.<br></p>
+c. Reference path: {Customer.Party.PartyName}. Note that child collections are <strong>not</strong> supported.<br></p>
 <ul>
-<li>variable formatting</li>
+<li><strong>variable formatting</strong></li>
 </ul>
-<p>The value of the domain attributes which is going to be loaded in the text can be formatted using <strong>format specifiers</strong>: {DocumentDate:dd-MM-yyyy}.</p>
-<p><em><strong>Example:</strong></em></p>
+<p>The value of the domain attributes which will be loaded in the text can be formatted. <br> This is achieved using <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">format specifiers</a></strong>: {DocumentDate:dd-MM-yyyy}.</p>
+<p><strong>Example:</strong></p>
 <p>Using formatted string, this text<br></p>
-<pre><code> Your web store has e new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder date: {DocumentDate:dd-MM-yyyy}\nShipping address:
+<pre><code> Your web store has a new order!\r\n\n\{SUMMARY\} \nNumber: {DocumentNo}\nOrder date: {DocumentDate:dd-MM-yyyy}\nShipping address:
  {ShipToPartyContactMechanism.ContactMechanism.Name}\nOrder total: {#CalculatedAttributeTotalSalesOrderAmount:C}
 </code></pre>
 <p>will be returned as:</p>
-<pre><code> Your web store has e new order!
+<pre><code> Your web store has a new order!
 
- {SUMMARY}&lt;br&gt;
- order number: 00329&lt;br&gt;
- order date: 10-05-2019&lt;br&gt;
- shipping address: 21 Lombard St&lt;br&gt;
- delivery date: 12-05-2019&lt;br&gt;
- order total: $14.82&lt;br&gt;
+ {SUMMARY}
+ 
+ order number: 00329
+ 
+ order date: 10-05-2019
+ 
+ shipping address: 21 Lombard St
+ 
+ delivery date: 12-05-2019
+ 
+ order total: $14.82
 </code></pre>
 </article>
           </div>
