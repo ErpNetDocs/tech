@@ -28,11 +28,11 @@ Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter
 |:----|:----|:----|:----|:----|:----|
 1|SETVALUE|Attribute|@Property1|Attribute|@Property2|
 
-> [!NOTE] 1
+> [!NOTE] 
 > 
 > Both the custom property's **value** and **description** are copied.
  
-> [!NOTE] 2
+> [!NOTE] 
 > 
 > In this case, there are **NO** limitations for custom properties in which you set the value to inherit its allowed values from another entity or custom property. The only condition is the setting in both custom properties to follow the principles described in **Inheriting and copying custom properties**.
  
@@ -60,11 +60,11 @@ Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter
 |:----|:----|:----|:----|:----|:----
 1|SETVALUE|Attribute|@PropertyCode|Constant|'StringValue01
 
-> [!NOTE] 3
+> [!NOTE] 
 > 
 > Using this method, you can only set the custom property's **value** - not its description. An exception is when you're setting a value defined as a _Property Allowed_ value.
 
-> [!NOTE] 4
+> [!NOTE] 
 > 
 > _Parameter2 Type_ is not limited to a constant. You could use the attribute type as well and load the value from another system attribute or a **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)**. However, the value **must** be from a 'String' type. Otherwise, you can **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** or **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** it.
 
