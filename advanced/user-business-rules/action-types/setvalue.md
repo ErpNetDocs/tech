@@ -5,23 +5,29 @@ items: ActionTypes
 
 # SETVALUE
 
-The SETVALUE action is used to update information or data in the  system implicitly. When all conditions of the business rules are met and the specified event has happened, then the SETVALUE action updates the  value of the specified attribute available for the repository (including the custom properties for the particular entity).
+This action type is used to implicitly update information or data in the system. When all conditions of a business rules are met and a specified event happens, **SETVALUE** updates the value of the specified attribute available for the repository, including custom properties of the particular entity.
 
-The SETVALUE action requires the following parameters:
+The action requires the following parameters:
 
-1. Parameter 1 - the value which is updated (set). Currently, the available  parameter type is Attribute. So, in Parameter 1 value the user enters  the name of the attribute, which value has to be modified.
-2. Parameter 2 - the value which is set in Parameter 1. Currently, the available  parameter types are Attribute and Constant. If the parameter type is Attribute, in parameter value the name of the attribute is selected.  The selected attribute value would be used to be set as value of  parameter 1. If the parameter type is Constant, then in parameter  value a constant value has to be entered and every time the user  business rule is execute, the parameter 1 attribute would be set to the  constant value. The format of the different type of constants is  described here: [Parameter type CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html).
+- **Parameter 1** - the updated (or set) value. Currently, the available parameter type is 'Attribute'. 
 
+You should enter the name of the attribute whose value needs to be modified. 
 
+- **Parameter 2** - the value set in Parameter 1. The available parameter types are 'Attribute' and 'Constant'. 
 
-Example:
+    * If the parameter type is 'Attribute', select the name of the attribute in the parameter value. <br>This value will be used to as a value for **Parameter 1**. 
+    * If the parameter type is 'Constant', enter a constant in the parameter value. <br> Every time the user business rule is executed, the **Parameter 1** attribute will be set to a constant value. 
+        
+The format of the different types of constants is described here: **[Parameter type CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html)**.
+
+**Example:**
 
 | Repository            |                 |                    |                  |                 |                  |
 | --------------------- | --------------- | ------------------ | ---------------- | --------------- | ---------------- |
 | Crm.Sales.SalesOrders |                 |                    |                  |                 |                  |
 | **Events**            |                 |                    |                  |                 |                  |
-| Event Type            | Event Parameter | Execution Priority |                  |                 |                  |
-| Change of State       | RELEASING       | Normal             |                  |                 |                  |
+| Event type            | Event parameter | Execution priority |                  |                 |                  |
+| Change of state       | RELEASING       | Normal             |                  |                 |                  |
 | **Actions**           |                 |                    |                  |                 |                  |
-| Action No             | Action Type     | Parameter1 Type    | Parameter1 Value | Parameter2 Type | Parameter2 Value |
+| Action No             | Action type     | Parameter1 type    | Parameter1 value | Parameter2 type | Parameter2 value |
 | 1                     | SETVALUE        | Attribute          | Notes            | Constant        | 'Approved'       |
