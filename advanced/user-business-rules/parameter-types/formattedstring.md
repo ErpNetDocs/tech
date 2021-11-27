@@ -10,10 +10,13 @@ Functionalities which can be used in the value of the formatted string parameter
 
 The following are handled:<br>
 
-- \n - newline - supported in the Body.     
-- \r\n - also new line - supported in the Body.        
-- \{ - insert opening curly bracket '{' in output.         
-- \} - insert closing curly bracket '}' in output. 
+`\n - newline - supported in the Body.
+
+\r\n - also new line - supported in the Body.   
+
+\{ - insert opening curly bracket '{' in output.
+
+\} - insert closing curly bracket '}' in output.`
  
 - **variable interpolation**
 
