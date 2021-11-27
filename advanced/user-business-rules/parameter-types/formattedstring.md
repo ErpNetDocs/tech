@@ -6,7 +6,7 @@ This parameter type is typically used with **[NOTIFYUSER](https://docs.erp.net/t
  
 Functionalities which can be used in the value of the formatted string parameter are: 
  
-  - **escape charts** 
+- **escape charts** 
 
 The following are handled:<br>
 
@@ -15,7 +15,7 @@ The following are handled:<br>
 - \{ - insert opening curly bracket '{' in output.         
 - \} - insert closing curly bracket '}' in output. 
  
-  - **variable interpolation**
+- **variable interpolation**
 
 This allows specifying variables into a string using placeholders. When these placeholders are executed, they're replaced with their corresponding values. 
 
@@ -29,7 +29,7 @@ a. Attributes: {DocumentDate}, {#CalsulatedAttribute1}, {@CustomProperty1}. <br>
 b. References: {Customer}.<br>
 c. Reference path: {Customer.Party.PartyName}. Note that child collections are **not** supported.<br>
  
--  **variable formatting** 
+- **variable formatting** 
   
 The value of the domain attributes which will be loaded in the text can be formatted. <br> This is achieved using **[format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)**: {DocumentDate:dd-MM-yyyy}.
  
