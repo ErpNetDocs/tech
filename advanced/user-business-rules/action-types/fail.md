@@ -11,8 +11,8 @@ If FAIL is performed, the current business rule will throw an **error**. You can
 
 **Example:** 
 
-ActionNo: **1**; <br>
-Action Type: **FAIL;** <br> 
-Parameter1 Type: **Constant**; <br> 
-Parameter1 Value: **'error message text'** <br>
+Action No: **1**; <br>
+Action type: **FAIL;** <br> 
+Parameter1 type: **Constant**; <br> 
+Parameter1 value: **'error message text'** <br>
                                            
