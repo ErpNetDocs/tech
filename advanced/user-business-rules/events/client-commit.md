@@ -1,12 +1,11 @@
 # Client commit
 
-## Event summary 
 |Name| CLIENTCOMMIT
 |:------|:------
-|**Layer**|**Back-End**
-| **Description**|**Occurs when saving a change of the object, when the <br> change is made by a client application. If the change <br> is made by the server, the event will not be triggered.**
-| **Version**|**Introduced: 2019.1  <br>Updated: -**
+|**Layer**|Back-end
+| **Description**|Occurs when saving a change of an object, made by a client application. If the change is made by the server, the event won't be triggered.
+| **Version**|Introduced: 2019.1  <br>Updated: -
 
-Thе event is a variation of [commit](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html) and similar to it - it occurs for the particular object of the repository of the [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html) when an object change is saved. 
+This event is a variation of **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)**. Both occur for a particular object from the repository of a **[user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** when an object change is saved. However, **CLIENTCOMMIT** is triggered only when the saving is initiated by a client application, such as @@name Windows Client. If an object is modified by the @@name server, the event **won't** be triggered. 
 
-The difference is that it is triggered only when the saving is initiated by a client application, such as the @@name Windows Client. If the object is modified by the @@name server, then this event is not triggered. This could be used if, for example, we want the business rule to be executed when a user is manually saving a document, but the system is currently saving the document after its creation with a generation procedure.
+This could be used if, for example, you want the business rule to be executed when you're manually saving a document, but the system is currently saving the document after its creation with a **[generation procedure](https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html)**.
