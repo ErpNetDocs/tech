@@ -1,8 +1,6 @@
 
 # AGGREGATE CLIENT COMMIT
 
-### Event summary 
-
 |Name|AGGREGATECLIENTCOMMIT
 |:----|:-----
 |**Layer**| Back-end
