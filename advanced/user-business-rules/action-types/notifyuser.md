@@ -23,9 +23,9 @@ NOTIFYUSER is **not** compatible with all events.
 
 | Event type                                                   | Compatibility with NOTIFYUSER                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Client commit (e.g. CLIENTCOMMIT, AGGREGATECLIENTCOMMIT)     | compatible                                                   |
-| Document events - (e.g. STATECHANGING, STATECHANGED, VOIDING)| compatible                                                   |
-| Commit (e.g. COMMIT)                                         | incompatible// <br> NOTIFYUSER will create a notification which will be displayed on the **next** login into the program. |
+| Client commit (e.g. **[CLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)**, **[AGGREGATECLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)**)     | compatible                                                   |
+| Document events - (e.g. **[STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html)**, **[STATECHANGED](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html)**, **[VOIDING](https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html)**)| compatible                                                   |
+| Commit (e.g. **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)**)                                         | incompatible// <br> NOTIFYUSER will create a notification which will be displayed on the **next** login into the program. |
 | Front-end (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)          | incompatible// <br> NOTIFYUSER **won't** create a notification.  |
 
 **Example:**
