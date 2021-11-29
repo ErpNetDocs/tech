@@ -19,6 +19,7 @@ You should enter the name of the attribute whose value needs to be modified.
     * If the parameter type is 'Constant', enter a constant in the parameter value. <br> Every time the user business rule is executed, **Parameter 1** will be set to a constant value. 
         
 The format of the different types of constants is described **[here](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html)**.
+
 **Example:**
 
 | Repository            |                 |                    |                  |                 |                  |
