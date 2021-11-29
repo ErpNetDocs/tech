@@ -1,20 +1,25 @@
 # STATECHANGED
  
- 
-## Event summary
 |Name|STATECHANGED
 |:-----|:-----
-|**Layer**| Back-End
-|**Description**| Occurs when the document state is changed. The <br> state is specified in the 'Parameter' field. Possible <br>parameter values are 'PLANNED', 'FIRMPLANNED', <br> 'RELEASED', 'COMPLETED' and 'CLOSED'.
+|**Layer**| Back-end
+|**Description**| Occurs when document state specified in the _Parameter_ field is changed. 
 |**Version**| Introduced: 2017.1 <br> Updated: -
  
-This event will occur **AFTER** the change of the Document state but **BEFORE** that change has actually been saved. 
+This event will occur **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
 
-If there is, for example, a [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html) action set on STATECHANGED event, the rule will be triggered after all rules and validation registered on [STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html) are performed but before the document is saved into the database.  In this case, when the conditions are met and the rule fails - the state of the document will not be successfully changed and it will remain in its previous state.
+**Example 1**
 
-Another example of a use case for this event is when we want to check if the availability of the product would be over 100 PCS when we receive a batch of goods. We would want to use the STATECHANGED event so the quantities of the current store transaction are included in the calculation.
+There's a **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)** action set on a STATECHANGED event.
 
-The event always goes with an event parameter. Possible values are:
+The rule will be triggered once all rules and validations registered on **[STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html)** are performed. However, this happens **before** the document is saved into the database. When conditions are met and the rule fails, the state of the document **won't** be changed and it'll remain in its previous state.
+
+**Example 2**
+
+When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br>
+
+
+STATECHANGED always goes with an event parameter. Possible values are:
 
 - **PLANNED**
 - **FIRMPLANNED**
