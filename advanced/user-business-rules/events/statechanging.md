@@ -1,20 +1,28 @@
 # STATECHANGING
-## Event summary
+
 |Name| STATECHANGING
 |:----|:----
-|**Layer**| Back-End
-|**Description**| Occurs during the document state change. The state is specified in the 'Parameter' field. Possible parameter values are 'PLANNING', 'FIRMPLANNING', 'RELEASING', 'COMPLETING' and 'CLOSING'.**
+|**Layer**| Back-end
+|**Description**| Occurs during a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** change, specified in the _Parameter_ field.
 |**Version**| Introduced: 2017.1 <br> Updated: -
 
-This event happens during the change (before). If there is, for example, a [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html) action set on the STATECHANGING event, if the rule is activated, the state of the document would not be successfully changed. It would remain in its previous state.
+This event happens during a change. <br><br>
 
-It is very important to set the event correctly. The event happens in the data which is set in the repository of the business rule. 
+**Example 1**
 
-When we set the STATECHANGING event in a [user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html) with repository 'General.Products.Products', this rule would never be activated because the products do not support the event. 
+There's a **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)** action set on a STATECHANGING event. If the rule is activated, the state of the document **won't** be changed and it'll remain in its previous state.
 
-If a rule has a repository with document lines, for example 'Crm.Invoicing.InvoiceLines', this event would not be appropriate and would not activate the rule either. This is because the document lines do not support the change of state event; this event is supported by documents (their headers).
+It's crucial to set the event correctly, as it happens in the data of the repository of the **[business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)**. 
 
-The event always goes with an event parameter. Possible values are:
+**Example 2**
+
+When you set а STATECHANGING event in a business rule with repository 'General.Products.Products', this rule would **never** be activated because the products **don't** support the event. 
+
+**Example 3**
+
+If a rule has a repository with document lines'Crm.Invoicing.InvoiceLines', the event wouldn't be appropriate and won't activate the rule. The document lines **don't** support it. However, the event is supported by documents (their headers). <br><br>
+
+STATECHANGING always goes with an event parameter. Possible values are:
 
 - **PLANNING**
 - **FIRMPLANNING**
