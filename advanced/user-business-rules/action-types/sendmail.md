@@ -85,9 +85,9 @@ Domain attribute values can be formatted with standard .Net **[format specifiers
 **Subject:** 'Order No00329 has been confirmed'
 
 **Body:**
-'Dear Customer,
+_Dear Customer,_
 
-Your order has been confirmed!
+_Your order has been confirmed!_
 
 ### SUMMARY
 
@@ -105,6 +105,6 @@ Payment method: *Cash on delivery*
 
 _Expect your parcel at the address or the office of the courier company on the delivery date stated above._
 
-_Kind Regards,
+_Kind Regards,_
 
-John Smith'_
+_John Smith'_
