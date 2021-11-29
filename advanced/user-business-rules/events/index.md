@@ -1,4 +1,4 @@
-# Events
+# User business rules - Events
 
 - **[AGGREGATE CLIENT COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)**
 - **[CLIENT COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)**
