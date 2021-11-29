@@ -28,7 +28,7 @@ NOTIFYUSER is **not** compatible with all **events**.
 | Commit (e.g. COMMIT)                                         | incompatible// <br> NOTIFYUSER will create a notification which will be displayed on the **next** login into the program. |
 | Front-end (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)          | incompatible// <br> NOTIFYUSER **won't** create a notification.  |
 
-**Example**
+**Example:**
 
 А **[business rule](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)** creates a notification for а sales person when one of their sales orders has been released.
 
