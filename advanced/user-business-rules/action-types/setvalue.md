@@ -16,10 +16,9 @@ You should enter the name of the attribute whose value needs to be modified.
 - **Parameter 2** - the value set in Parameter 1. The available parameter types are 'Attribute' and 'Constant'. 
 
     * If the parameter type is 'Attribute', select the name of the attribute in the parameter value. <br>This value will be used to as a value for **Parameter 1**. 
-    * If the parameter type is 'Constant', enter a constant in the parameter value. <br> Every time the user business rule is executed, the **Parameter 1** attribute will be set to a constant value. 
+    * If the parameter type is 'Constant', enter a constant in the parameter value. <br> Every time the user business rule is executed, **Parameter 1** will be set to a constant value. 
         
-The format of the different types of constants is described here: **[Parameter type CONST](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html)**.
-
+The format of the different types of constants is described **[here](https://docs.erp.net/tech/advanced/calculated-attributes/parameter-types/const.html)**.
 **Example:**
 
 | Repository            |                 |                    |                  |                 |                  |
