@@ -11,4 +11,4 @@ If **WARNING** is performed, the displayed message is set as a first parameter f
 
 **Example:**
 
-ActionNo: **1**;<br> Action Type: **WARNING;** <br> Parameter1 Type: **Constant**; <br> Parameter1 Value: **'warning message text'**
+Action No: **1**;<br> Action type: **WARNING;** <br> Parameter1 type: **Constant**; <br> Parameter1 value: **'warning message text'**
