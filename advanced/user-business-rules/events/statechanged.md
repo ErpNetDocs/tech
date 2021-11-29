@@ -3,7 +3,7 @@
 |Name|STATECHANGED
 |:-----|:-----
 |**Layer**| Back-end
-|**Description**| Occurs when document state specified in the _Parameter_ field is changed. 
+|**Description**| Occurs when a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** specified in the _Parameter_ field is changed. 
 |**Version**| Introduced: 2017.1 <br> Updated: -
  
 This event will occur **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
