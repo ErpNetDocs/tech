@@ -27,10 +27,10 @@ SENDMAIL is **not** compatible with all events. Take a look at the following cha
 
 | Event type                                                   | Compatibility with SENDMAIL                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Client commit (e.g. CLIENTCOMMIT, AGGREGATECLIENTCOMMIT)     | compatible                                                   |
-| Document events - (e.g. STATECHANGING, STATECHANGED, VOIDING)| compatible                                                   |
-| Commit (e.g. COMMIT)                                         | compatible but not recommended - if possible, use **CLIENTCOMMIT** instead |
-| Front-end (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)          | incompatible, the server won't send an email |
+| Client commit (e.g. **[CLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)**, **[AGGREGATECLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)**)     | compatible                                                   |
+| Document events - (e.g. **[STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html)**, **[STATECHANGED](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html)**, **[VOIDING](https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html)**))| compatible                                                   |
+| Commit (e.g. **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)**)                                         | compatible but not recommended - if possible, use **CLIENTCOMMIT** instead |
+| Front-end (e.g **ATTRIBUTECHANGING**, **ATTRIBUTECHANGED**)          | incompatible, the server won't send an email |
 
 ## Subject and body customization 
 
