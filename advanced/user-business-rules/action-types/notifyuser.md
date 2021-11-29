@@ -19,7 +19,7 @@ items: ActionTypes
 
 ## Compatible events chart
 
-NOTIFYUSER is **not** compatible with all **events**.
+NOTIFYUSER is **not** compatible with all events.
 
 | Event type                                                   | Compatibility with NOTIFYUSER                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
