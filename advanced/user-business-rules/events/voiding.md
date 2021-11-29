@@ -1,13 +1,11 @@
 # VOIDING
-## Event summary
+
 |Name|VOIDING
 |:----|:----
-|**Layer**| Back-End
+|**Layer**| Back-end
 |**Description**| Occurs during the voiding of a document.
 |**Version**| Introduced: 2019.1 <br> Updated: -
 
-The VOIDING event is introduced in version 2019.1.
+This event is recommended only when the **[business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** repository is a **document header** - Crm.Sales.SalesOrders, Logistics.Inventory.StoreOrders...
 
-It is recommended only when the business rule's repository is a document header - Crm.Sales.SalesOrders, Logistics.Inventory.StoreOrders...
-
-The VOIDING event may be used to prohibit voiding (by using [FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html) action) when certain conditions are met or not met. For example, the rule may throw an error when voiding a Sales order that has already been **FIRMPLANNED**.
+VOIDING may prohibit voiding (using **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)**) when certain conditions are met. For example, the rule could throw an error when a sales order that's already been **FIRMPLANNED** is being voided.
