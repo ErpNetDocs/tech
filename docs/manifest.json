@@ -1659,7 +1659,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/fail.html",
-          "hash": "Bzt2IdbTTv82zng0wS+17A=="
+          "hash": "2Lad2TsumiTj7KZwf86ygQ=="
         }
       },
       "is_incremental": false,
@@ -1683,7 +1683,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/notifyuser.html",
-          "hash": "eaXa3k59rZQYZRNlNn+rWg=="
+          "hash": "g5YnYdJPI+pXA60P26Q1Lg=="
         }
       },
       "is_incremental": false,
@@ -1695,7 +1695,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/sendmail.html",
-          "hash": "ces11/kPn/m4sP90BgmZww=="
+          "hash": "7A7a2h1QufuSBZ+BkbO/pg=="
         }
       },
       "is_incremental": false,
@@ -1707,7 +1707,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/setvalue.html",
-          "hash": "HNekW50dFfXStWofIiruSA=="
+          "hash": "RlEGQSZ5OjPCtlTk9i2ZWg=="
         }
       },
       "is_incremental": false,
@@ -1719,7 +1719,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/warning.html",
-          "hash": "3R5yYHJQVQwm9GvqKFzp0w=="
+          "hash": "h86M/IX0ZHxuIMByPeAncA=="
         }
       },
       "is_incremental": false,
@@ -1791,7 +1791,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/business-rules/index.html",
-          "hash": "Jm5KPf6AMH7C4oCLxk701Q=="
+          "hash": "j60A7TYq7kpZmu/eJwF1qw=="
         }
       },
       "is_incremental": false,
@@ -1839,7 +1839,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/index.html",
-          "hash": "UR8HSq5ekUN2aRp10kawzA=="
+          "hash": "Vpln9zaKJmQmDM8eAAp76w=="
         }
       },
       "is_incremental": false,
@@ -1899,7 +1899,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "bUJFfrbBXwXYHt9zxPw6NA=="
+          "hash": "/O8FRmwAZDaohnFpI2oFKw=="
         }
       },
       "is_incremental": false,

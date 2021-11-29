@@ -89,35 +89,35 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for creating notifications with a specific text for the object for  which the business rule has been triggered, which are later going to be  sent to the users that were indicated in the rule by the <a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a> system. <br><br> More specifically, the action creates a record in the <em>Notifications</em> table for each of the users specified in Parameter1 (if there are more than  one), whereUserId = the Id of the user in Parameter1 ValueSubject = Parameter2 ValueNotificationClass = Parameter3 Value, if emty - set a default value which is 'BR' + '_ ' + 'UserBusinessRule.Code' e.g. 'BR_0005'.DataObject = the extensible data object of the aggregate root of the entity for which the rule has been triggered. For more info, see <a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">Aggregates</a> and <a href="https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html">Extensible Data Objects</a>. If there are not explicitly created <a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html">notification settings</a> for the class specified in Parameter3, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> The NOTIFYUSER action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
+<td>Used for creating notifications with a specific text for the object that triggered the business rule. These notifications will later be sent to users indicated in the rule by the <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong> system. <br><br> The action creates a record in the <strong>Notifications</strong> table for each user specified in <em>Parameter1</em>, where: <br><br> <strong>UserId</strong> = the Id of the user in Parameter1 <br> <strong>ValueSubject</strong> = Parameter2 <br> <strong>ValueNotificationClass</strong> = Parameter3 <br> if empty - set a default value 'BR' + '_ ' + 'UserBusinessRule.Code', e.g. 'BR_0005'<br> <strong>DataObject</strong> = the extensible data object of the aggregate root of the entity for which the rule has been triggered. <br><br>For more info, see <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">Aggregates</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html">EDO</a></strong>. <br><br> If there aren't explicitly created <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html">notification settings</a></strong> for the class specified in <em>Parameter3</em>, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> NOTIFYUSER is <strong>not</strong> compatible with all <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a></strong>. <br> For more info, see the <strong>Compatible Events Chart</strong> section below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
-<td><strong><user> -</user></strong> The user/users for which the notification is going to be created. We can set either the UserId or the User's login. If there are more than one recipients they can be entered in a  comma-separated list, but the list must contain  only UserIds (Id1,Id2,...IdN) or only user's logins  (Login1,Login2,...LoginN).</td>
+<td>The user(s) for which a notification will be created. You can set either the <strong>UserId</strong> or the user's <strong>login</strong>. If there's more than one recipient, they can be entered in a comma-separated list which must contain only <strong>UserIds</strong> (Id1,Id2,...IdN) or <strong>logins</strong> (Login1,Login2,...LoginN).</td>
 </tr>
 <tr>
-<td>Parameter 1 Type</td>
+<td>Parameter 1 type</td>
 <td>Guid, String, List</td>
 </tr>
 <tr>
 <td>Parameter 2</td>
-<td><strong><text></text></strong> - The text which is going to be displayed in the notification.</td>
+<td>The text displayed in the notification.</td>
 </tr>
 <tr>
-<td>Parameter 2 Type</td>
-<td>String // usually used in combination with the <a href="https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html">formatted string </a> parameter type.</td>
+<td>Parameter 2 type</td>
+<td>String // usually used in combination with <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html">formatted string</a></strong></td>
 </tr>
 <tr>
 <td>Parameter 3</td>
-<td><strong><class></class></strong> (optional) - The class which will be set for the notification.  If the parameter is not explicitly set will be used a default value.  The default value is 'BR' + '_' + 'UserBusinessRule.Code' e.g.  'BR_0005'.For more information about <em>Classes</em>, see <a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a>.</td>
+<td>(Optional) The class which will be set for the notification. If the parameter isn't explicitly set, a default value will be used instead: 'BR' + '_' + 'UserBusinessRule.Code', e.g. 'BR_0005'. <br><br> For more information about classes, see <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong>.</td>
 </tr>
 <tr>
-<td>Parameter 3 Type</td>
+<td>Parameter 3 type</td>
 <td>String</td>
 </tr>
 <tr>
-<td>Example</td>
-<td>see the Example section below</td>
+<td>Examples</td>
+<td>see the <strong>Example</strong> section below</td>
 </tr>
 <tr>
 <td>Version</td>
@@ -126,35 +126,35 @@
 </tbody>
 </table>
 <h2 id="compatible-events-chart">Compatible events chart</h2>
-<p>The NOTIFYUSER action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info, look into the following chart.</p>
+<p>NOTIFYUSER is <strong>not</strong> compatible with all events.</p>
 <table>
 <thead>
 <tr>
-<th>Event Type</th>
+<th>Event type</th>
 <th>Compatibility with NOTIFYUSER</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Client Commit (e.g. CLIENTCOMMIT, AGGREGATECLIENTCOMMIT)</td>
+<td>Client commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENTCOMMIT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html">AGGREGATECLIENTCOMMIT</a></strong>)</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Document Events - (e.g. STATECHANGING, STATECHANGED, VOIDING)</td>
+<td>Document events - (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html">STATECHANGED</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html">VOIDING</a></strong>)</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Commit (e.g. COMMIT)</td>
-<td>not compatible// NOTIFYUSER will create a notification but it will not be displayed to the user in  real time. The notification will be displayed at the next login into the program.</td>
+<td>Commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a></strong>)</td>
+<td>incompatible// <br> NOTIFYUSER will create a notification which will be displayed on the <strong>next</strong> login into the program.</td>
 </tr>
 <tr>
-<td>Front-End (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)</td>
-<td>not compatible// NOTIFYUSER will not create a notification.</td>
+<td>Front-end (e.g <strong>ATTRIBUTECHANGING</strong>, <strong>ATTRIBUTECHANGED</strong>)</td>
+<td>incompatible// <br> NOTIFYUSER <strong>won't</strong> create a notification.</td>
 </tr>
 </tbody>
 </table>
-<p><em><strong>Example</strong></em></p>
-<p>А <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a> that creates a notification for the sales person, when one of their sales orders has been released.</p>
+<p><strong>Example:</strong></p>
+<p>А <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a></strong> creates a notification for а sales person when one of their sales orders has been released.</p>
 <table>
 <thead>
 <tr>
@@ -190,9 +190,9 @@
 <td></td>
 </tr>
 <tr>
-<td>Event Type</td>
-<td>Event Parameter</td>
-<td>Execution Priority</td>
+<td>Event type</td>
+<td>Event parameter</td>
+<td>Execution priority</td>
 <td></td>
 <td></td>
 <td></td>
@@ -200,7 +200,7 @@
 <td></td>
 </tr>
 <tr>
-<td>Change of State</td>
+<td>Change of state</td>
 <td>RELEASED</td>
 <td>Normal</td>
 <td></td>
@@ -221,20 +221,20 @@
 </tr>
 <tr>
 <td>Action No</td>
-<td>Action Type</td>
-<td>Parameter1 Type</td>
-<td>Parameter1 Value</td>
-<td>Parameter2 Type</td>
-<td>Parameter2 Value</td>
-<td>Parameter3 Type</td>
-<td>Parameter3 Value</td>
+<td>Action type</td>
+<td>Parameter1 type</td>
+<td>Parameter1 value</td>
+<td>Parameter2 type</td>
+<td>Parameter2 value</td>
+<td>Parameter3 type</td>
+<td>Parameter3 value</td>
 </tr>
 <tr>
 <td>1</td>
 <td>NOTIFYUSER</td>
 <td>Attribute</td>
 <td>SalesPersonId</td>
-<td><a href="https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html">Formatted String </a></td>
+<td>Formatted string</td>
 <td>sales order {DocumentNo} has been released.</td>
 <td>Constant</td>
 <td>Sales_Person_SOReleased</td>

@@ -89,99 +89,104 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for sending notification emails using <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">Business rules</a>. The email can be sent to more than one recipients and the email's  subject and body can be customized according to the particular business  reason needs (for more info see the <em>'Subject and body customization'</em> section below). <br><br>The  address from which the emails are sent is the e-mail address that is set in the <em>From E-mail Address For System Notifications</em> field in  the ERP.net application server settings. <br><br>Note that  the SENDMAIL action is performed asynchronously. I.e. it is performed  every time when the Event happens (and the conditions are met) and it  does not matter whether the event has finished successfully or not. This means that if we have a <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/sendmail.html">SENDMAIL</a> business rule that is triggered when we are saving a product, for example - an email will  be sent every time when a product saving is initiated and even if during the saving is thrown an error, the email is going to be sent regardless that action has failed. <br><br> <strong>IMPORTANT:</strong> The Sendmail action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info, see the <em>Compatible Events Chart</em> below.</td>
+<td>Used for sending notification emails using <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rules</a></strong>. Emails can be sent to more than one recipient and the subject and body can be customized according to the particular business reason's needs. <br><br> For more information, check out the <strong>Subject and body customization</strong> section below. <br><br> The address from which emails are sent is the one set in the <em>From E-mail Address For System Notifications</em> field in the ERP.net application server settings. <br><br> SENDMAIL is performed <strong>asynchronously</strong>, or every time an event happens and certain conditions are met. It doesn't matter whether the event has finished successfully or not. For example, if you have a SENDMAIL business rule that's triggered when you're saving a product, an email will be sent every time the product saving is initiated. Even if during the saving an error is thrown, the email will still be sent. <br><br> <strong>IMPORTANT:</strong> SENDMAIL is not compatible with all <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a></strong>. <br> For more info, see the <em>Compatible Events Chart</em> section below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
-<td><strong>[TO]</strong> - the email address/es to which the mail is going to be sent. If there are more than one  recipients they can be entered in a comma-separated list  (email1,email2...,emailN).</td>
+<td><strong>[TO]</strong> - the email address/es to which the mail is going to be sent. If there's more than one recipient, they can be entered in a comma-separated list (email1,email2...,emailN).</td>
 </tr>
 <tr>
-<td>Parameter 1 Type</td>
-<td>Constant, Attribute (the attribute's type must be String)</td>
+<td>Parameter 1 type</td>
+<td>Constant, Attribute (type must be 'String')</td>
 </tr>
 <tr>
 <td>Parameter 2</td>
 <td><strong>[SUBJECT]</strong> - The line with the subject of the email.</td>
 </tr>
 <tr>
-<td>Parameter 2 Type</td>
-<td>Constant, Attribute (the attribute's type must be String)</td>
+<td>Parameter 2 type</td>
+<td>Constant, Attribute (type must be 'String')</td>
 </tr>
 <tr>
 <td>Parameter 3</td>
-<td><strong>[BODY]</strong> - The content of the body of the email. Supports multi-line, for more  info see the 'Subject and Body Customization' section below.</td>
+<td><strong>[BODY]</strong> - The content of the body of the email. Supports multi-line.</td>
 </tr>
 <tr>
-<td>Parameter 3 Type</td>
-<td>Constant, Attribute (the attribute's type must be String)</td>
+<td>Parameter 3 type</td>
+<td>Constant, Attribute (type must be 'String')</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>see the end of the article</td>
 </tr>
 <tr>
-<td>Introduced In Version</td>
+<td>Introduced in version</td>
 <td>2019.1</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> Currently, the parameters of the business rules can include up to 256 symbols.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Currently, parameters of business rules can include up to 256 symbols.</p>
+</div>
 <h2 id="compatible-events-chart">Compatible events chart</h2>
-<p>The SENDMAIL action is not compatible with all <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a>. For more info look into the following chart.</p>
+<p>SENDMAIL is <strong>not</strong> compatible with all events. Take a look at the following chart:</p>
 <table>
 <thead>
 <tr>
-<th>Event Type</th>
+<th>Event type</th>
 <th>Compatibility with SENDMAIL</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Client Commit (e.g. CLIENTCOMMIT, AGGREGATECLIENTCOMMIT)</td>
+<td>Client commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENTCOMMIT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html">AGGREGATECLIENTCOMMIT</a></strong>)</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Document Events - (e.g. STATECHANGING, STATECHANGED, VOIDING)</td>
+<td>Document events - (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html">STATECHANGED</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html">VOIDING</a></strong>))</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Commit (e.g. COMMIT)</td>
-<td>compatible but not recommended - if possible, use CLIENTCOMMIT instead</td>
+<td>Commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a></strong>)</td>
+<td>compatible but not recommended - if possible, use <strong>CLIENTCOMMIT</strong> instead</td>
 </tr>
 <tr>
-<td>Front-End (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)</td>
-<td>not compatible, the server will not send an email</td>
+<td>Front-end (e.g <strong>ATTRIBUTECHANGING</strong>, <strong>ATTRIBUTECHANGED</strong>)</td>
+<td>incompatible, the server won't send an email</td>
 </tr>
 </tbody>
 </table>
 <h2 id="subject-and-body-customization">Subject and body customization</h2>
-<p>The text in the parameters for Subject and Body can be customized according to the specific needs. For added convenience, we've made a couple of implementations in order to provide more formatting capabilities and to  facilitate the action as a whole.</p>
+<p>Text in the parameters for <em>Subject</em> and <em>Body</em> can be <strong>customized</strong>. For added convenience, there are a couple of implementations providing more formatting capabilities and facilitating the action as a whole.</p>
 <ul>
-<li>escape charts</li>
+<li><strong>escape charts</strong></li>
 </ul>
 <p>The following escape chars are handled:</p>
-<p>\n - newline - supported in the Body</p>
-<p>\r\n - also new line - supported in the Body</p>
-<p>{ - insert opening curly bracket '{' in output. - supported in both the Subject and the Body</p>
-<p>} - insert closing curly bracket '}' in output. - supported in both the Subject and the Body</p>
+<p><code>\n - newline - supported in the Body</code></p>
+<p><code>\r\n - new line - supported in the Body</code></p>
+<p><code>\{ - insert opening curly bracket '{' in output. - supported in both the Subject and the Body</code></p>
+<p><code>\} - insert closing curly bracket '}' in output. - supported in both the Subject and the Body</code></p>
 <ul>
-<li>HTML tags - supported in the Body</li>
+<li><strong>HTML tags</strong> - supported in the Body</li>
 </ul>
-<p>The body could be also formatted using HTML. In order for the text to be  recognized as HTML, the body has to contain the tag . The  place of the tag is irrelevant, if the tag  is placed somewhere in the body's text it is considered that the whole text is written in HTML.</p>
+<p>For text to be recognized as HTML, the Body has to contain the <code>&lt;/html&gt;</code> tag. The position of the tag is irrelevant. If it's placed somewhere, the whole text is considered written in HTML.</p>
 <ul>
-<li>use of domain attributes in text - supported in both the Subject and the Body</li>
+<li><strong>use of domain attributes in text</strong> - supported in both the Subject and the Body</li>
 </ul>
-<p>In the text of both parameters for Subject and Body, we can now reach and  use the domain attributes' values (system domain attributes and calculated attributes). They are calculated for the particular entity  record for which the rule is executed. In order for the domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.</p>
-<p>Currently are supported the following options:
-\1. Attributes: {DocumentDate}.
-\2. References: {Customer}.
-\3. Reference path: {Customer.Party.PartyName}. Note that Child Collections are not supported.</p>
+<p>In the text of both parameters for Subject and Body, you can reach and use the domain attributes' values (system domain attributes and <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html">calculated attributes</a></strong>). They're calculated for the entity record for which the rule is executed. In order for a domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.</p>
+<p>The following options are supported:</p>
+<ol>
+<li>Attributes: {DocumentDate}. <br></li>
+<li>References: {Customer}. <br></li>
+<li>Reference path: {Customer.Party.PartyName}. Note that child collections are not supported.</li>
+</ol>
 <ul>
-<li>Domain attributes formatting - supported in both the Subject and the Body</li>
+<li><strong>Domain attributes formatting</strong> - supported in both the Subject and the Body</li>
 </ul>
-<p>The domain attribute values can be formatted with the standard .Net format  specifiers and the system-specific attributes. For more information, see <a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">Format specifiers</a>.</p>
-<p><em><strong>Example</strong></em></p>
-<p>А <a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a> that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.</p>
+<p>Domain attribute values can be formatted with standard .Net <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html">format specifiers</a></strong> and system-specific attributes.</p>
+<p><strong>Example:</strong></p>
+<p>А business rule that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.</p>
 <table>
 <thead>
 <tr>
@@ -217,9 +222,9 @@
 <td></td>
 </tr>
 <tr>
-<td>Event Type</td>
-<td>Event Parameter</td>
-<td>Execution Priority</td>
+<td>Event type</td>
+<td>Event parameter</td>
+<td>Execution priority</td>
 <td></td>
 <td></td>
 <td></td>
@@ -227,7 +232,7 @@
 <td></td>
 </tr>
 <tr>
-<td>Change of State</td>
+<td>Change of state</td>
 <td>RELEASED</td>
 <td>Normal</td>
 <td></td>
@@ -248,19 +253,19 @@
 </tr>
 <tr>
 <td>Action No</td>
-<td>Action Type</td>
-<td>Parameter1 Type</td>
-<td>Parameter1 Value</td>
-<td>Parameter2 Type</td>
-<td>Parameter2 Value</td>
-<td>Parameter3 Type</td>
-<td>Parameter3 Value</td>
+<td>Action type</td>
+<td>Parameter1 type</td>
+<td>Parameter1 value</td>
+<td>Parameter2 type</td>
+<td>Parameter2 value</td>
+<td>Parameter3 type</td>
+<td>Parameter3 value</td>
 </tr>
 <tr>
 <td>1</td>
 <td>SENDMAIL</td>
 <td>Constant</td>
-<td>salesmanager@mail.com,customer@gmail.com</td>
+<td>salesmanager@mail.com <br> customer@gmail.com</td>
 <td>Constant</td>
 <td>Order No{DocumentNo} has been confirmed</td>
 <td>Constant</td>
@@ -268,21 +273,21 @@
 </tr>
 </tbody>
 </table>
-<h3 id="a-representation-of-the-email-which-is-going-to-be-received-by-the-recipients">A representation of the email which is going to be received by the recipients:</h3>
+<h3 id="a-representation-of-the-email-received-by-the-recipients">A representation of the email received by the recipients:</h3>
 <p><strong>Subject:</strong> 'Order No00329 has been confirmed'</p>
-<p><strong>Body:</strong>
-'Dear Customer,</p>
-<p><strong>Your order has been confirmed!</strong></p>
-<h3 id="summary">SUMMARY</h3>
-<p>Order Number: <em>00329</em></p>
-<p>Order Date: <em>10-05-2019</em></p>
-<p>Shipping Address: <em>21 Lombard St</em></p>
-<p>Delivery Date: <em>12-05-2019</em></p>
-<p>Order Total: <em>$14.82</em></p>
-<p>Payment Method: <em>Cash on Delivery</em></p>
-<p>Please expect your parcel on the delivery date stated above at the address or at the office of the courier company.</p>
+<p><strong>Body:</strong></p>
+<p>Dear Customer,</p>
+<p>Your order has been confirmed!</p>
+<h4 id="summary">SUMMARY</h4>
+<p>Order number: <em>00329</em></p>
+<p>Order date: <em>10-05-2019</em></p>
+<p>Shipping address: <em>21 Lombard St</em></p>
+<p>Delivery date: <em>12-05-2019</em></p>
+<p>Order total: <em>$14.82</em></p>
+<p>Payment method: <em>Cash on delivery</em></p>
+<p>Expect your parcel at the address or the office of the courier company on the delivery date stated above.</p>
 <p>Kind Regards,</p>
-<p><strong>John Smith</strong>'</p>
+<p>John Smith</p>
 </article>
           </div>
           
