@@ -19,7 +19,7 @@ This event is introduced in version 2019.1 and is a variation of the **[CLIENT C
 - document amounts of this sales order
 - payment plan of this sales order
 
-In the example above, a **CLIENT COMMIT** event would occur for the sales order only if its object has changed. The AGGREGATE CLIENT COMMIT will occur for the sales order if any of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would still trigger the aggregate event.
+In the example above, a **CLIENT COMMIT** event would occur for the sales order only if its object has changed. The **AGGREGATE CLIENT COMMIT** will occur for the sales order if any of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would still trigger the aggregate event.
 
 **In summary, a user business rule with an aggregate client commit event will be triggered when:**
 
