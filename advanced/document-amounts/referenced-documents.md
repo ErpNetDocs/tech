@@ -42,7 +42,8 @@ Second purchase invoice #2 is entered with no rows - only additional amount with
 
 You enter purchase invoice #1 in the **Document Amount Referenced Documents** panel.
 
-The amount is distributed among the rows from #1, and the distribution is entered in purchase invoice #1. This is the resulting distribution, assuming that the transport is distributed by amount and is rounded up to the second digit:
+The amount is distributed among the rows from #1, and the distribution is entered in purchase invoice #1. <br>
+This is the resulting distribution, assuming that the transport is distributed by amount and is rounded up to the second digit:
 
 - row #10, purchase invoice #1: **7.04 EUR**; <br>
 - row #20, purchase invoice #1: **11.26 EUR**; <br>
