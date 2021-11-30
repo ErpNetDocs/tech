@@ -81,7 +81,7 @@ Specifies the entity type of a source document, which defines the general type o
 
 - **Target document entity type**<br>
 
-The entity type of a target document. The generation procedure can only generate documents with a specified entity type. Each document type can specify different user-defined document types only within this specified type.
+The entity type of a target document. A generation procedure only generates documents with specified entity type. Each document type can specify different user-defined document types only within this specified type.
 
 - **Description**<br>
 
