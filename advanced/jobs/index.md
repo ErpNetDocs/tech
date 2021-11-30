@@ -71,6 +71,7 @@ LOG:
 ----------------
 ### See more
 
+- **[Documentation template](https://docs.erp.net/tech/advanced/jobs/template.html)**
 - **[J30632 Deletе old notifications](https://docs.erp.net/tech/advanced/jobs/J30632.html)**
 - **[J30724 Run scheduled events](https://docs.erp.net/tech/advanced/jobs/J30724.html)**
 - **[J30777 Document state change](https://docs.erp.net/tech/advanced/jobs/J30777.html)**
