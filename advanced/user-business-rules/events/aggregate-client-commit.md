@@ -9,7 +9,7 @@
 |**Description**| Occurs for the aggregate root when saving a change of an **[aggregate](https://docs.erp.net/tech/advanced/concepts/aggregates.html)** object, but only when the change is made by a client application. If it's made by the server, the event won't be triggered.
 |**Version**| Introduced: 2019.1, Updated:-
 
-This event is a variation of the **[CLIENT COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)** event. <br> It allows triggering **[user business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** for objects which are an aggregate root. This can happen when there's a change for the object itself and/or when some of its referent objects are edited. 
+This event is a variation of the **[CLIENT COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)** event. It allows triggering **[user business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** for objects which are an aggregate root. This can happen when there's a change for the object itself and/or when some of its referent objects are edited. 
 
 **Let's take a look at the following structure - a single aggregate in @@name:**
 
