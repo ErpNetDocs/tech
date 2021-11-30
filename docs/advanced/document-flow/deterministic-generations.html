@@ -114,9 +114,9 @@ If a generation uses outside data, but still generates the same line numbers, it
 <p>The line numbers of the generated document will vary, based on the current availability.</p>
 <p>Therefore, Generation B is <strong>non-deterministic</strong></p>
 <h2 id="adjustment-procedure">Adjustment procedure</h2>
-<p>When a transitional document is generated, if it later needs to be adjusted (to be in-line with its parent), an <strong>adjustment document</strong> is created.
+<p>If a transitional document needs adjustment after it's generated (to be in-line with its parent), an <strong>adjustment document</strong> is created.
 It's a peer document that contains <strong>changes</strong>, and is usually hidden in the document tree.</p>
-<p>Adjustment documents are used to <strong>adjust</strong> (patch) main documents. The adjustment is executed upon setting the adjustment document status.
+<p>Adjustment documents are used to <strong>adjust</strong> (patch) main documents. The operation is executed upon setting the adjustment document status.
 Then, the main document is updated to reflect the changes brought by the adjustment document.</p>
 <h2 id="generating-adjustment-documents">Generating adjustment documents</h2>
 <p>When a generation supporting adjustment of transitional documents is executed, it <strong>checks</strong> the sub-documents.</p>

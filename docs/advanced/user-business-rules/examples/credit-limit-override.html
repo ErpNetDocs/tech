@@ -79,9 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="allow-a-credit-limit-override-when-a-client-pays-in-cash">Allow a credit limit override when a client pays in cash</h1>
 
-<p>If we know when the 'system type' from 'payment type' (sales order document) is set as 'in cash', we can use that information to create a Business rule that inserts a check mark in the field <em>Credit Limit Override</em>.</p>
-<p>We can get that information using <a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html">this</a> calculated attribute, which returns True or False.</p>
-<p>To allow a credit limit override when a client pays in cash, we can create a Business Rule with the following data:</p>
+<p>If the system type of a payment type in a sales order document is set as 'In cash', you can create a <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">business rule</a></strong> that inserts a check mark in the field <em>Credit Limit Override</em>.</p>
+<p>You can get that information using <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html">this</a></strong> calculated attribute, which returns 'True' or 'False'.</p>
+<p>To set a rule to allow a credit limit override when a client pays in cash, use the following data:</p>
 <table>
 <thead>
 <tr>
@@ -94,14 +94,19 @@
 </tr>
 </tbody>
 </table>
-<p>|<strong>Events</strong>
-|:-----</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Event Type</th>
-<th style="text-align: left;">Event Parameter</th>
-<th style="text-align: left;">ExecutionPriority</th>
+<th style="text-align: left;">Events</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Event type</th>
+<th style="text-align: left;">Event parameter</th>
+<th style="text-align: left;">Execution priority</th>
 </tr>
 </thead>
 <tbody>
@@ -112,14 +117,19 @@
 </tr>
 </tbody>
 </table>
-<p>|Conditions
-|:-----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Conditions</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Condition No</th>
-<th style="text-align: left;">Attribute Name</th>
-<th style="text-align: left;">Comparison Type</th>
+<th style="text-align: left;">Attribute name</th>
+<th style="text-align: left;">Comparison type</th>
 <th style="text-align: left;">Value</th>
 </tr>
 </thead>
@@ -132,17 +142,22 @@
 </tr>
 </tbody>
 </table>
-<p>|Actions
-|:-----</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actions</th>
+</tr>
+</thead>
+</table>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Action No</th>
-<th style="text-align: left;">Action Type</th>
-<th style="text-align: left;">Parameter1 Type</th>
-<th style="text-align: left;">Parameter1 Value</th>
-<th style="text-align: left;">Parameter2 Type</th>
-<th style="text-align: left;">Parameter1 Value</th>
+<th style="text-align: left;">Action type</th>
+<th style="text-align: left;">Parameter1 type</th>
+<th style="text-align: left;">Parameter1 value</th>
+<th style="text-align: left;">Parameter2 type</th>
+<th style="text-align: left;">Parameter1 value</th>
 </tr>
 </thead>
 <tbody>
@@ -158,8 +173,8 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>'#IsInCash' is a <a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html">Calculated attribute</a>.</p>
-<p>For more information, see <a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-%3Eif-system-type-is-in-cash.html">Check if the system type of payment type in the sales order is 'In cash'</a>.</p>
+<p>'#IsInCash' is a <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html">calculated attribute</a></strong>.</p>
+<p>For more information, see <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html">Check if the system type of payment type in a sales order is 'In cash'</a></strong>.</p>
 </div>
 </article>
           </div>

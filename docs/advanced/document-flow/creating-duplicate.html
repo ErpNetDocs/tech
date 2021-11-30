@@ -119,9 +119,9 @@ b.  in each header of the new document, only the substantial data from the origi
 <li>Operations - rows of work order items</li>
 <li>The voucher rows and their specific properties playing the role of their sub-rows.</li>
 </ul>
-<p><strong>This is the common algorithm for copying substantial data from the original records to the duplicate records:</strong></p>
+<p><strong>This is the common algorithm for copying substantial data from original to duplicate records:</strong></p>
 <ul>
-<li><p>Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are <strong>not</strong> copied; the original values are kept, since they're generated during the creation of the duplicate;</p>
+<li><p>Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are <strong>not</strong> copied; originals are kept, since they're generated during the creation of the duplicate;</p>
 </li>
 <li><p>For fields processed specifically, the value of the original record is <strong>not</strong> copied, and the specific logic for filling the duplicate record is followed;</p>
 </li>

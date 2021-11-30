@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Used for creating notifications with a specific text for the object that triggered the business rule. These notifications will later be sent to users indicated in the rule by the <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong> system. <br><br> The action creates a record in the <strong>Notifications</strong> table for each user specified in <em>Parameter1</em>, where: <br><br> <strong>UserId</strong> = the Id of the user in Parameter1 <br> <strong>ValueSubject</strong> = Parameter2 <br> <strong>ValueNotificationClass</strong> = Parameter3 <br> if empty - set a default value 'BR' + '_ ' + 'UserBusinessRule.Code', e.g. 'BR_0005'<br> <strong>DataObject</strong> = the extensible data object of the aggregate root of the entity for which the rule has been triggered. <br><br>For more info, see <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">Aggregates</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html">EDO</a></strong>. <br><br> If there aren't explicitly created <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html">notification settings</a></strong> for the class specified in <em>Parameter3</em>, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> NOTIFYUSER is <strong>not</strong> compatible with all <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a></strong>. <br> For more info, see the <strong>Compatible Events Chart</strong> section below.</td>
+<td>Used for creating notifications with a specific text for the object that triggered the business rule. These notifications will later be sent to users indicated in the rule by the <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong> system. <br><br> The action creates a record in the <strong>Notifications</strong> table for each user specified in <em>Parameter1</em>: <br><br> <strong>UserId</strong> = the Id of the user in Parameter1 <br> <strong>ValueSubject</strong> = Parameter2 <br> <strong>ValueNotificationClass</strong> = Parameter3 <br> <strong>DataObject</strong> = the extensible data object of the aggregate root of the entity for which the rule has been triggered. <br> if empty - set a default value 'BR' + '_ ' + 'UserBusinessRule.Code', e.g. 'BR_0005'<br><br>For more info, see <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">Aggregates</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/data-objects/extensible-data-objects.html">EDO</a></strong>. <br><br> If there aren't explicitly created <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/settings.html">notification settings</a></strong> for the class specified in <em>Parameter3</em>, the notification will only be sent as an in-app notification.<br><br><strong>IMPORTANT:</strong> NOTIFYUSER is not compatible with all <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">events</a></strong>. <br> For more info, see the <strong>Compatible events chart</strong> section below.</td>
 </tr>
 <tr>
 <td>Parameter 1</td>
@@ -136,24 +136,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Client commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENTCOMMIT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html">AGGREGATECLIENTCOMMIT</a></strong>)</td>
+<td>Client commit (e.g. <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENTCOMMIT</a>, <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html">AGGREGATECLIENTCOMMIT</a>)</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Document events - (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html">STATECHANGED</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html">VOIDING</a></strong>)</td>
+<td>Document events - (e.g. <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a>, <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html">STATECHANGED</a>, <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html">VOIDING</a>)</td>
 <td>compatible</td>
 </tr>
 <tr>
-<td>Commit (e.g. <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a></strong>)</td>
+<td>Commit (e.g. <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a>)</td>
 <td>incompatible// <br> NOTIFYUSER will create a notification which will be displayed on the <strong>next</strong> login into the program.</td>
 </tr>
 <tr>
-<td>Front-end (e.g <strong>ATTRIBUTECHANGING</strong>, <strong>ATTRIBUTECHANGED</strong>)</td>
+<td>Front-end (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)</td>
 <td>incompatible// <br> NOTIFYUSER <strong>won't</strong> create a notification.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example:</strong></p>
+<h3 id="example">Example:</h3>
 <p>А <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html">business rule</a></strong> creates a notification for а sales person when one of their sales orders has been released.</p>
 <table>
 <thead>

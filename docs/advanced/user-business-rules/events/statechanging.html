@@ -79,6 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="statechanging">STATECHANGING</h1>
 
+<br>
 <table>
 <thead>
 <tr>
@@ -106,9 +107,9 @@
 <p>There's a <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong> action set on a STATECHANGING event. If the rule is activated, the state of the document <strong>won't</strong> be changed and it'll remain in its previous state.</p>
 <p>It's crucial to set the event correctly, as it happens in the data of the repository of the <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">business rule</a></strong>.</p>
 <p><strong>Example 2</strong></p>
-<p>When you set а STATECHANGING event in a business rule with repository 'General.Products.Products', this rule would <strong>never</strong> be activated because the products <strong>don't</strong> support the event.</p>
+<p>When you set а STATECHANGING event in a business rule with repository 'General.Products.Products', this rule would <strong>never</strong> be activated because the products don't support the event.</p>
 <p><strong>Example 3</strong></p>
-<p>If a rule has a repository with document lines'Crm.Invoicing.InvoiceLines', the event wouldn't be appropriate and won't activate the rule. The document lines <strong>don't</strong> support it. However, the event is supported by documents (their headers). <br><br></p>
+<p>If a rule has a repository with document lines 'Crm.Invoicing.InvoiceLines', the event wouldn't activate the rule as the document lines <strong>don't</strong> support it. However, the event is supported by documents (their headers). <br><br></p>
 <p>STATECHANGING always goes with an event parameter. Possible values are:</p>
 <ul>
 <li><strong>PLANNING</strong></li>

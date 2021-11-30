@@ -79,6 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="aggregate-client-commit">AGGREGATE CLIENT COMMIT</h1>
 
+<br>
 <table>
 <thead>
 <tr>
@@ -101,7 +102,7 @@
 </tr>
 </tbody>
 </table>
-<p>This event is introduced in version 2019.1 and is a variation of the <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENT COMMIT</a></strong> event. It allows triggering <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a></strong> for objects which are an aggregate root. This can happen when there's a change for the object itself and/or when some of its referent objects are edited.</p>
+<p>This event is a variation of the <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html">CLIENT COMMIT</a></strong> event. It allows triggering <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a></strong> for objects which are an aggregate root. This can happen when there's a change for the object itself and/or when some of its referent objects are edited.</p>
 <p><strong>Let's take a look at the following structure - a single aggregate in ERP.net:</strong></p>
 <ul>
 <li>sales order (which is the aggregate's root)</li>
@@ -110,7 +111,7 @@
 <li>document amounts of this sales order</li>
 <li>payment plan of this sales order</li>
 </ul>
-<p>In the example above, a <strong>CLIENT COMMIT</strong> event would occur for the sales order only if its object has changed. The AGGREGATE CLIENT COMMIT will occur for the sales order if any of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would still trigger the aggregate event.</p>
+<p>In the example above, a CLIENT COMMIT event would occur for the sales order <strong>only</strong> if its object has changed. The AGGREGATE CLIENT COMMIT will occur if <strong>any</strong> of the objects in the aggregate have changed. Changing just a single sales order line without changing the order itself <strong>still</strong> triggers the aggregate event.</p>
 <p><strong>In summary, a user business rule with an aggregate client commit event will be triggered when:</strong></p>
 <ul>
 <li><p>the saving is performed by a client application;</p>

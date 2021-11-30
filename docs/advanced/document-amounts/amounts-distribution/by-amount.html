@@ -87,7 +87,7 @@
 </ul>
 <p>To define the proportion of row <strong>i</strong>, its coefficient is calculated as follows:</p>
 <p>[<strong>ki</strong>] = [distributed to row <strong>i</strong> amount1] + [distributed to row <strong>i</strong> amount2] + ... + [distributed to row <strong>i</strong> amountm].</p>
-<p>'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount <br> (the amounts listed in its definition in the <strong>Document Amount Type Dependencies</strong> panel).</p>
+<p>'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount (the amounts listed in its definition in the <strong>Document Amount Type Dependencies</strong> panel).</p>
 <p>If there are no such amounts, thеn in this initial calculation, you have [<strong>ki</strong>] = <strong>0</strong>.</p>
 <p>If <em>Base On Lines</em> is 'True' (in the additional amount), the row amount is added to the initial value for [<strong>ki</strong>]:</p>
 <p>[<strong>ki</strong>] = [<strong>ki</strong>] + [row <strong>i</strong> amount].</p>
@@ -95,9 +95,8 @@
 <p>Тhe distribution is performed as usual, except for when the amount [<strong>S</strong>] is <strong>0</strong> and the additional amount is calculated as a percent.</p>
 <p>In this case, the amount is distributed equally throughout the rows, and for each row, the calculation is performed like this:</p>
 <p>[row <strong>i</strong> distribution] = ROUND([<strong>ki</strong>] * [Input Percent], [Round Scale).</p>
-<p>If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row <br> (to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row).</p>
-<p>You may avoid the disadvantage of even distribution, but the amount distributed to a row may not be equal to the input percent.</p>
-<p>This is huge problem for things like VAT.</p>
+<p>If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row (to multiply the percent by [<strong>ki</strong>], which is the base amount only for the <strong>i</strong> row).</p>
+<p>You may avoid the disadvantage of even distribution, but the amount distributed to a row may not be equal to the input percent. This is a huge problem for things like VAT.</p>
 <p><strong>Example 1:</strong></p>
 <p>There are the following additional amounts:</p>
 <ul>

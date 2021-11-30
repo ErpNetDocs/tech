@@ -79,34 +79,20 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="statechanged">STATECHANGED</h1>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">STATECHANGED</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Layer</strong></td>
-<td style="text-align: left;">Back-end</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Description</strong></td>
-<td style="text-align: left;">Occurs when a <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">document state</a></strong> specified in the <em>Parameter</em> field is changed.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">Introduced: 2017.1 <br> Updated: -</td>
-</tr>
-</tbody>
-</table>
-<p>This event will occur <strong>AFTER</strong> the change of the document state but <strong>BEFORE</strong> that change is saved. <br><br></p>
+<br> 
+ 
+|Name|STATECHANGED
+|:-----|:-----
+|**Layer**| Back-end
+|**Description**| Occurs when a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** specified in the _Parameter_ field is changed. 
+|**Version**| Introduced: 2017.1 <br> Updated: -
+ 
+This event occurs **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
 <p><strong>Example 1</strong></p>
 <p>There's a <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong> action set on a STATECHANGED event.</p>
 <p>The rule will be triggered once all rules and validations registered on <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong> are performed. However, this happens <strong>before</strong> the document is saved into the database. When conditions are met and the rule fails, the state of the document <strong>won't</strong> be changed and it'll remain in its previous state.</p>
 <p><strong>Example 2</strong></p>
-<p>When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br></p>
+<p>When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. <br> It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br></p>
 <p>STATECHANGED always goes with an event parameter. Possible values are:</p>
 <ul>
 <li><strong>PLANNED</strong></li>
