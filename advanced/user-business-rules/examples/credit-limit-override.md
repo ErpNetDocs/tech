@@ -4,7 +4,7 @@ If the system type of a payment type in a sales order document is set as 'In cas
 
 You can get that information using **[this](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)** calculated attribute, which returns 'True' or 'False'.
 
-To allow a credit limit override when a client pays in cash, you can create a business rule with the following data:
+To set a rule to allow a credit limit override when a client pays in cash, use the following data:
 
 |Repository|
 |:----
