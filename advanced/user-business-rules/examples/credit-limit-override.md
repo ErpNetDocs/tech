@@ -1,37 +1,38 @@
 # Allow a credit limit override when a client pays in cash
 
-If we know when the 'system type' from 'payment type' (sales order document) is set as 'in cash', we can use that information to create a Business rule that inserts a check mark in the field *Credit Limit Override*.
+If the system type of a payment type in a sales order document is set as 'In cash', you can create a **[business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** that inserts a check mark in the field *Credit Limit Override*.
 
-We can get that information using [this](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html) calculated attribute, which returns True or False.
+You can get that information using **[this](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)** calculated attribute, which returns 'True' or 'False'.
 
-To allow a credit limit override when a client pays in cash, we can create a Business Rule with the following data:
+To allow a credit limit override when a client pays in cash, you can create a business rule with the following data:
 
-|Repository
+|Repository|
 |:----
 |Crm.Sales.SalesOrders
 
-|**Events**
-|:-----
+|Events|
+|:-----|
 
-|Event Type|Event Parameter|ExecutionPriority
+|Event type|Event parameter|Execution priority
 |:----|:----|:----
 |Change of State|RELEASING|Normal
 
-|Conditions
-|:-----
+|Conditions|
+|:-----|
 
-|Condition No|Attribute Name|Comparison Type|Value
+|Condition No|Attribute name|Comparison type|Value
 |:-----|:-----|:----|:-----
 |1|#IsInCash|=|True|
 
-|Actions
-|:-----
+|Actions|
+|:-----|
 
-|Action No|Action Type|Parameter1 Type|Parameter1 Value|Parameter2 Type|Parameter1 Value
+|Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter1 value
 |:----|:----|:----|:----|:----|:-----
 |1|SETVALUE|Attribute|CreditLimitOverride|Constant|True
 
-> [!Note] 
-> '#IsInCash' is a [Calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html). 
+> [!NOTE] 
 > 
-> For more information, see [Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check->if-system-type-is-in-cash.html).
+> '#IsInCash' is a **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)**. 
+> 
+> For more information, see **[Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check->if-system-type-is-in-cash.html)**.
