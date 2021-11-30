@@ -7,12 +7,12 @@ items: ActionTypes
 
 | Name                  | SENDMAIL                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Used for sending notification emails using **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**. Emails can be sent to more than one recipient and the subject and body can be customized according to the particular business reason's needs. <br><br> For more information, check out the **Subject and body customization** section below. <br/><br/> The address from which emails are sent is the one set in the *From E-mail Address For System Notifications* field in the @@name application server settings. <br/><br/> SENDMAIL is performed **asynchronously**, or every time an event happens and certain conditions are met. It doesn't matter whether the event has finished successfully or not. <br> For example, if you have a SENDMAIL business rule that's triggered when you're saving a product, an email will be sent every time the product saving is initiated. Even if an error is thrown during the saving, the email will still be sent. <br/><br/> **IMPORTANT:** SENDMAIL is not compatible with all **[events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**. <br> For more info, see the *Compatible Events Chart* section below. |
+| Description           | Used for sending notification emails using **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**. Emails can be sent to multiple recipients and the subject and body can be customized according to the business's needs. <br><br> For more information, check out the **Subject and body customization** section below. <br/><br/> The address from which emails are sent is the one set in the *From E-mail Address For System Notifications* field in the @@name application server settings. <br/><br/> SENDMAIL is performed **asynchronously**, or every time an event happens and certain conditions are met. It doesn't matter whether the event has finished successfully or not. <br> For example, if you have a SENDMAIL business rule that's triggered when you're saving a product, an email will be sent every time the product saving is initiated. Even if an error is thrown during the saving, the email will still be sent. <br/><br/> **IMPORTANT:** SENDMAIL is not compatible with all **[events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**. <br> For more info, see the *Compatible Events Chart* section below. |
 | Parameter 1           | **[TO]** - the email address/es to which the mail is going to be sent. If there's more than one recipient, they can be entered in a comma-separated list (email1,email2...,emailN). |
 | Parameter 1 type      | Constant, Attribute (type must be 'String')    |
-| Parameter 2           | **[SUBJECT]** - The line with the subject of the email.      |
+| Parameter 2           | **[SUBJECT]** - the line with the subject of the email.      |
 | Parameter 2 type      | Constant, Attribute (type must be 'String')    |
-| Parameter 3           | **[BODY]** - The content of the body of the email. Supports multi-line. |
+| Parameter 3           | **[BODY]** - the content of the body of the email. Supports multi-line. |
 | Parameter 3 type      | Constant, Attribute (type must be 'String')    |
 | Example               | see the end of the article                                   |
 | Introduced in version | 2019.1                                                       |
@@ -52,7 +52,7 @@ The following escape chars are handled:
 
 For text to be recognized as HTML, the Body has to contain the `</html>` tag. The position of the tag is irrelevant. If it's placed somewhere, the whole text is considered written in HTML.
 
-- **use of domain attributes in text** - supported in both the Subject and the Body
+- **Use of domain attributes in text** - supported in both the Subject and the Body
 
 In the text of both parameters for Subject and Body, you can reach and use the domain attributes' values (system domain attributes and **[calculated attributes](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)**). They're calculated for the entity record for which the rule is executed. In order for a domain attribute to be property recognized by the system, it needs to be surrounded with curly brackets '{...}'.
 
