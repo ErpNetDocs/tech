@@ -79,7 +79,6 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="voiding">VOIDING</h1>
 
-<h2 id="event-summary">Event summary</h2>
 <table>
 <thead>
 <tr>
@@ -90,7 +89,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Layer</strong></td>
-<td style="text-align: left;">Back-End</td>
+<td style="text-align: left;">Back-end</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Description</strong></td>
@@ -102,9 +101,8 @@
 </tr>
 </tbody>
 </table>
-<p>The VOIDING event is introduced in version 2019.1.</p>
-<p>It is recommended only when the business rule's repository is a document header - Crm.Sales.SalesOrders, Logistics.Inventory.StoreOrders...</p>
-<p>The VOIDING event may be used to prohibit voiding (by using <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a> action) when certain conditions are met or not met. For example, the rule may throw an error when voiding a Sales order that has already been <strong>FIRMPLANNED</strong>.</p>
+<p>This event is recommended only when the <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">business rule</a></strong> repository is a <strong>document header</strong> - Crm.Sales.SalesOrders, Logistics.Inventory.StoreOrders...</p>
+<p>VOIDING may prohibit voiding using <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong> when certain conditions are met. For example, the rule could throw an error when a sales order that's already been <strong>FIRMPLANNED</strong> is being voided.</p>
 </article>
           </div>
           

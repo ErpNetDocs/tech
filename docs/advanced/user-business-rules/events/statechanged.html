@@ -79,7 +79,6 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="statechanged">STATECHANGED</h1>
 
-<h2 id="event-summary">Event summary</h2>
 <table>
 <thead>
 <tr>
@@ -90,11 +89,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Layer</strong></td>
-<td style="text-align: left;">Back-End</td>
+<td style="text-align: left;">Back-end</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Description</strong></td>
-<td style="text-align: left;">Occurs when the document state is changed. The <br> state is specified in the 'Parameter' field. Possible <br>parameter values are 'PLANNED', 'FIRMPLANNED', <br> 'RELEASED', 'COMPLETED' and 'CLOSED'.</td>
+<td style="text-align: left;">Occurs when a <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">document state</a></strong> specified in the <em>Parameter</em> field is changed.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
@@ -102,10 +101,13 @@
 </tr>
 </tbody>
 </table>
-<p>This event will occur <strong>AFTER</strong> the change of the Document state but <strong>BEFORE</strong> that change has actually been saved.</p>
-<p>If there is, for example, a <a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a> action set on STATECHANGED event, the rule will be triggered after all rules and validation registered on <a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a> are performed but before the document is saved into the database.  In this case, when the conditions are met and the rule fails - the state of the document will not be successfully changed and it will remain in its previous state.</p>
-<p>Another example of a use case for this event is when we want to check if the availability of the product would be over 100 PCS when we receive a batch of goods. We would want to use the STATECHANGED event so the quantities of the current store transaction are included in the calculation.</p>
-<p>The event always goes with an event parameter. Possible values are:</p>
+<p>This event will occur <strong>AFTER</strong> the change of the document state but <strong>BEFORE</strong> that change is saved. <br><br></p>
+<p><strong>Example 1</strong></p>
+<p>There's a <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong> action set on a STATECHANGED event.</p>
+<p>The rule will be triggered once all rules and validations registered on <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong> are performed. However, this happens <strong>before</strong> the document is saved into the database. When conditions are met and the rule fails, the state of the document <strong>won't</strong> be changed and it'll remain in its previous state.</p>
+<p><strong>Example 2</strong></p>
+<p>When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br></p>
+<p>STATECHANGED always goes with an event parameter. Possible values are:</p>
 <ul>
 <li><strong>PLANNED</strong></li>
 <li><strong>FIRMPLANNED</strong></li>
