@@ -35,9 +35,7 @@ Transport can't be entered in the original purchase invoice because the document
 
 As a result, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, to distribute the current amount. 
 
-An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its **real value**. 
-
-It's meant to show how the amount affects the business activities of the documents. 
+An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its **real value**. It's meant to show how the amount affects the business activities of the documents. 
 
 Thus, amount distribution should be **summed** from all documents it's distributed in.
 
