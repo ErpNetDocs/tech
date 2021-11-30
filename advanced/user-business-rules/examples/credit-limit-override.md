@@ -35,4 +35,4 @@ To set a rule to allow a credit limit override when a client pays in cash, use t
 > 
 > '#IsInCash' is a **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)**. 
 > 
-> For more information, see **[Check if the system type of payment type in the sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check->if-system-type-is-in-cash.html)**.
+> For more information, see **[Check if the system type of payment type in a sales order is 'In cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)**.
