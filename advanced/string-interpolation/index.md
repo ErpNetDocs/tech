@@ -101,10 +101,6 @@ If an interpolation expression evaluates to an object, future customization of t
 
 For a 'Number' type, the 'C' format specifier acts as number-to-currency string conversion, but if the object type is 'MultilanguageString', the format specifier will return the string of the current value.
 
-> [!NOTE]
-> 
-> See **[Format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)** for more information about supported format specifiers and how to use them.
-
 ------------
 ### See more
 
