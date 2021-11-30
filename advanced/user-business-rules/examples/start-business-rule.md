@@ -1,4 +1,4 @@
-# How to start a business rule only on first releasing?
+# Start a business rule only on first releasing
 
 Sometimes a business case may require a certain business rule to be executed only on first releasing of the document. The calculated attributes are a tool, which when triggered performs their calculation in real time. This means that if we use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not after a certain period of time.
 
