@@ -6,7 +6,7 @@
 |**Description**| Occurs when a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** specified in the _Parameter_ field is changed. 
 |**Version**| Introduced: 2017.1 <br> Updated: -
  
-This event will occur **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
+This event occurs **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
 
 **Example 1**
 
@@ -16,7 +16,7 @@ The rule will be triggered once all rules and validations registered on **[STATE
 
 **Example 2**
 
-When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br>
+When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. <br> It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br>
 
 
 STATECHANGED always goes with an event parameter. Possible values are:
