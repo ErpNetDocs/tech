@@ -1,6 +1,6 @@
 # Set DeliveryTerms in purchase invoice
 
-The DeliveryTerms is of 'enum' type. Here, you can find values of different codes:
+The _DeliveryTerms_ field is of 'enum' type. Here, you can find values of different codes:
 
 |Member name|Value|Description
 |:-----|:-----|:-----
