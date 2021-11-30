@@ -1,6 +1,6 @@
-# How to set DeliveryTerms in purchase invoice?
+# Set DeliveryTerms in purchase invoice
 
-The DeliveryTerms is enum type so it is accessed specifically. The values of the codes are as follows:
+The DeliveryTerms is of 'enum' type. Here, you can find values of different codes:
 
 |Member name|Value|Description
 |:-----|:-----|:-----
@@ -16,14 +16,16 @@ The DeliveryTerms is enum type so it is accessed specifically. The values of the
 |DeliveredAtTerminal|9|DeliveredAtTerminal value. Stored as 'DAT'.
 |DeliveredDutyPaid|10|DeliveredDutyPaid value. Stored as 'DDP'.
 
+If you need to set a value in the _DeliveryTerms_ field of a purchase invoice, the action of the **[user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** must set a casted value from a **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)** in the *DeliveryTermsCode* attribute. The calculated attribute must cast an integer to type **Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms**. 
 
-If there is a need to set a value in the purchase invoice in the DeliveryTerms field, the action of the user business rule must set a casted value from a calculated attribute in the DeliveryTermsCode attribute. The calculated attribute must cast an integer to type <br>
-'Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms'. For example - if the user wants to set SeliveryTermsCode on 'FOB' automatically, the user business rule must contain an action:
+**Example:** 
 
-1 SETVALUE ATTRIB:DeliveryTermsCode ATTRIB:#CA
+To set _DeliveryTermsCode_ on 'FOB' automatically, the user business rule must contain an action:
 
-And the #CA should have an integer value, casted to 'Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms', for example:
+`1 SETVALUE ATTRIB:DeliveryTermsCode ATTRIB:#CA`
 
-10 CAST CONST:3 CONST:Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms
+And the #CA should have an integer value casted to **Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms**:
 
-Having this business rule set up, when the event happens, it would set the delivery terms of the purchase invoice to 'FOB'.
+`10 CAST CONST:3 CONST:Aloe.@@name.Model.Finance.Intrastat.DeliveryTerms`
+
+Having this rule set up, when an event happens, it would set the delivery terms of the purchase invoice to 'FOB'.
