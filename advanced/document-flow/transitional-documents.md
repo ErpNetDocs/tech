@@ -87,7 +87,7 @@ Then, invoice #**1** is created based on this sales order for **60 EUR**.
 
 The first two payments need to be corrected. 
 
-The first should have invoice data, the second should have **20 EUR** with invoice data, and the rest **30 EUR** don't have invoice data yet. For the additional four payment orders from **Example 1**, created to cover the discrepancies, the first two payment orders containing **-40 EUR** and **-20 EUR** are applied as corrections of the already existing payment orders for planned payments №**1** and №**2**, with no invoice data. The second two orders with invoice data are created as new 'Released' documents, as there are no released payment orders with invoice data yet. 
+The first should have invoice data, the second should have **20 EUR** with invoice data, and the rest **30 EUR** don't have invoice data yet. For the additional four payment orders from **Example 1**, the first two payment orders containing **-40 EUR** and **-20 EUR** are applied as corrections of the already existing payment orders for planned payments №**1** and №**2**, with no invoice data. The second two orders with invoice data are created as new 'Released' documents, as there are no released payment orders with invoice data yet. 
 
 The payment orders now are:
 
