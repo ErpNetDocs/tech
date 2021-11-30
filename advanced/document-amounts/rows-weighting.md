@@ -42,7 +42,7 @@ There's an additional amount 'Customs' with the following properties:
 
 You enter a purchase invoice with four rows: 
 
-#10 with amount of **44 EUR**, #20 with amount of **56 EUR**, #30 with amount of **24 EUR** and #40 with amount of **71 EUR**. 
+#10 with **44 EUR**, #20 with **56 EUR**, #30 with **24 EUR** and #40 with **71 EUR**. 
 
 In row #10, there's a product with default weight for additional amount ‘Customs’ of **5%** <br> and in row #30, there's a product with default weight of **25%**. 
 
