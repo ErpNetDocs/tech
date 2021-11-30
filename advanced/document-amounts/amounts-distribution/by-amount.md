@@ -11,7 +11,7 @@ To define the proportion of row **i**, its coefficient is calculated as follows:
 
 [**ki**] = [distributed to row **i** amount1] + [distributed to row **i** amount2] + ... + [distributed to row **i** amountm].
 
-'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount <br> (the amounts listed in its definition in the **Document Amount Type Dependencies** panel). 
+'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount (the amounts listed in its definition in the **Document Amount Type Dependencies** panel). 
 
 If there are no such amounts, thеn in this initial calculation, you have [**ki**] = **0**. 
 
@@ -27,11 +27,9 @@ In this case, the amount is distributed equally throughout the rows, and for eac
 
 [row **i** distribution] = ROUND([**ki**] * [Input Percent], [Round Scale).
 
-If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row <br> (to multiply the percent by [**ki**], which is the base amount only for the **i** row).
+If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row (to multiply the percent by [**ki**], which is the base amount only for the **i** row).
 
-You may avoid the disadvantage of even distribution, but the amount distributed to a row may not be equal to the input percent. 
-
-This is huge problem for things like VAT.
+You may avoid the disadvantage of even distribution, but the amount distributed to a row may not be equal to the input percent. This is a huge problem for things like VAT.
 
 **Example 1:**
 
