@@ -7,7 +7,7 @@ items: ActionTypes
 
 | Name                  | SENDMAIL                                                     |
 | --------------------- | ------------------------------------------------------------ |
-| Description           | Used for sending notification emails using **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**. Emails can be sent to more than one recipient and the subject and body can be customized according to the particular business reason's needs. <br><br> For more information, check out the **Subject and body customization** section below. <br/><br/> The address from which emails are sent is the one set in the *From E-mail Address For System Notifications* field in the @@name application server settings. <br/><br/> SENDMAIL is performed **asynchronously**, or every time an event happens and certain conditions are met. It doesn't matter whether the event has finished successfully or not. For example, if you have a SENDMAIL business rule that's triggered when you're saving a product, an email will be sent every time the product saving is initiated. Even if during the saving an error is thrown, the email will still be sent. <br/><br/> **IMPORTANT:** SENDMAIL is not compatible with all **[events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**. <br> For more info, see the *Compatible Events Chart* section below. |
+| Description           | Used for sending notification emails using **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**. Emails can be sent to more than one recipient and the subject and body can be customized according to the particular business reason's needs. <br><br> For more information, check out the **Subject and body customization** section below. <br/><br/> The address from which emails are sent is the one set in the *From E-mail Address For System Notifications* field in the @@name application server settings. <br/><br/> SENDMAIL is performed **asynchronously**, or every time an event happens and certain conditions are met. It doesn't matter whether the event has finished successfully or not. <br> For example, if you have a SENDMAIL business rule that's triggered when you're saving a product, an email will be sent every time the product saving is initiated. Even if an error is thrown during the saving, the email will still be sent. <br/><br/> **IMPORTANT:** SENDMAIL is not compatible with all **[events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**. <br> For more info, see the *Compatible Events Chart* section below. |
 | Parameter 1           | **[TO]** - the email address/es to which the mail is going to be sent. If there's more than one recipient, they can be entered in a comma-separated list (email1,email2...,emailN). |
 | Parameter 1 type      | Constant, Attribute (type must be 'String')    |
 | Parameter 2           | **[SUBJECT]** - The line with the subject of the email.      |
@@ -27,10 +27,10 @@ SENDMAIL is **not** compatible with all events. Take a look at the following cha
 
 | Event type                                                   | Compatibility with SENDMAIL                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Client commit (e.g. **[CLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html)**, **[AGGREGATECLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)**)     | compatible                                                   |
-| Document events - (e.g. **[STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html)**, **[STATECHANGED](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html)**, **[VOIDING](https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html)**))| compatible                                                   |
-| Commit (e.g. **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)**)                                         | compatible but not recommended - if possible, use **CLIENTCOMMIT** instead |
-| Front-end (e.g **ATTRIBUTECHANGING**, **ATTRIBUTECHANGED**)          | incompatible, the server won't send an email |
+| Client commit (e.g. [CLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/client-commit.html), [AGGREGATECLIENTCOMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html))     | compatible                                                   |
+| Document events - (e.g. [STATECHANGING](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html), [STATECHANGED](https://docs.erp.net/tech/advanced/user-business-rules/events/statechanged.html), [VOIDING](https://docs.erp.net/tech/advanced/user-business-rules/events/voiding.html))| compatible                                                   |
+| Commit (e.g. [COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html))                                         | compatible but not recommended - if possible, use CLIENTCOMMIT instead |
+| Front-end (e.g ATTRIBUTECHANGING, ATTRIBUTECHANGED)          | incompatible, the server won't send an email |
 
 ## Subject and body customization 
 
@@ -66,7 +66,7 @@ The following options are supported:
 
 Domain attribute values can be formatted with standard .Net **[format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)** and system-specific attributes.
 
-**Example:**
+### Example:
 
 А business rule that sends an email with an order confirmation to the customer and the sales manager when a sales order has been released.
 
@@ -80,7 +80,7 @@ Domain attribute values can be formatted with standard .Net **[format specifiers
 | Action No             | Action type     | Parameter1 type    | Parameter1 value                                             | Parameter2 type | Parameter2 value                        | Parameter3 type | Parameter3 value                                             |
 | 1                     | SENDMAIL        | Constant           | salesmanager@mail.com <br> customer@gmail.com | Constant        | Order No{DocumentNo} has been confirmed | Constant        | \<p>Dear Customer,\</p>\<p>\<b> Your order has been confirmed!  \</b>\</p>\<br/>\<p>\<h3>SUMMARY\</h3>\</p>\<p>Order Number: \<i>{DocumentNo}\</i>\</p>\<p>Order Date:  \<i>{DocumentDate:dd-MM-yyyy}\</i>\</p>\<p>Shipping  Address: \<i>{ShipToPartyContactMechanism.  ContactMechanism.Name}\</i>\</p>\<p>Delivery Date:  \<i>{RequiredDeliveryDate:dd-MM-yyyy}\</i>\</p>\<p>Order Total:  \<i>{#CalculatedAttributeTotalSalesOrderAmount:C}\</i>\</p>\<p>Payment Method:  \<i>{PaymentType.Name}\</i>\</p>\<br/>\<p>Please expect your parcel to arrive on the delivery date stated above at the  address or at the office of the courier  company.\</p>\<br/>\<p>Kind  Regards,\</p>\<strong>{SalesPerson.Person.FirstName}  {SalesPerson.Person.LastName}\<strong/>\</html> |
 
-### A representation of the email received by the recipients:
+### Sample email received by the recipients:
 
 **Subject:** 'Order No00329 has been confirmed'
 
