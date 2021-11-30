@@ -77,3 +77,13 @@ A condition is met when the value of the specified attribute and the specified v
 - **Parameter1 type**, **Parameter2 type**, **Parameter3 type** - the type of parameter specifies how to obtain the parameter value.
 
 - **Parameter1 value**, **Parameter2 value**, **Parameter3 value** - the actual value of the parameter.
+
+-------------
+### See more
+
+- **[Action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html)**
+- **[Business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**
+- **[Parameter types](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/index.html)**
+- **[Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**
+- **[Examples](https://docs.erp.net/tech/advanced/user-business-rules/examples/index.html)**
+- **[Q&A](https://docs.erp.net/tech/advanced/user-business-rules/Q%26A/index.html)**
