@@ -54,9 +54,9 @@ Other examples for 'rows of rows' are:
 - Operations - rows of work order items 
 - The voucher rows and their specific properties playing the role of their sub-rows.
 
-**This is the common algorithm for copying substantial data from the original records to the duplicate records:**
+**This is the common algorithm for copying substantial data from original to duplicate records:**
 
-- Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are **not** copied; the original values are kept, since they're generated during the creation of the duplicate;
+- Values in fields which are primary key or referent ID of a link to an upper record in the document hierarchy, are **not** copied; originals are kept, since they're generated during the creation of the duplicate;
 
 - For fields processed specifically, the value of the original record is **not** copied, and the specific logic for filling the duplicate record is followed;
 
