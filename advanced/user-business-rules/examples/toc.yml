@@ -1,10 +1,10 @@
 - name: Overview
   href: index.md
-- name: Allow a credit limit override when the client pays in cash
+- name: Allow a credit limit override when a client pays in cash
   href: credit-limit-override.md
-- name: How to set DeliveryTerms in purchase invoice?
+- name: Set DeliveryTerms in purchase invoice
   href: set-deliveryterms.md
-- name: How to start a business rule only on first releasing?
+- name: Start a business rule only on first releasing
   href: start-business-rule.md
 - name: Whole quantity validation
   href: whole-quantity-validation.md
