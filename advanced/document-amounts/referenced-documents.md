@@ -42,8 +42,7 @@ Second purchase invoice #2 is entered with no rows - only additional amount with
 
 You enter purchase invoice #1 in the **Document Amount Referenced Documents** panel.
 
-The amount is distributed among the rows from #1, and the distribution is entered in purchase invoice #1. <br>
-This is the resulting distribution, assuming that the transport is distributed by amount and is rounded up to the second digit:
+The amount is distributed among the rows from #1, and distribution is entered in purchase invoice #1. This is the resulting distribution, assuming transport is distributed by amount and is rounded up to the second digit:
 
 - row #10, purchase invoice #1: **7.04 EUR**; <br>
 - row #20, purchase invoice #1: **11.26 EUR**; <br>
@@ -90,13 +89,13 @@ the three additional amounts in sales order #2 are calculated and distributed:
 - The amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows:
 
     - row #10, Sales Order #1: **-3 EUR**;<br>
-    - row #20, Sales Order #1: **-2.40 EUR**.
+    - row #20, Sales Order #1: **-2.40 EUR**.<br>
 
 - The amount of [Easter discount] is **-3 EUR** and it is distributed as follows:
 
     - row #10, Sales Order #2: **-0.70 EUR**;
     - row #20, Sales Order #2: **-1.50 EUR**;
-    - row #30, Sales Order #2: **-0.80 EUR**.
+    - row #30, Sales Order #2: **-0.80 EUR**.<br>
 
 - The amount of [Reorder bonus] is **-32.16 EUR** and it is distributed as follows:
 
