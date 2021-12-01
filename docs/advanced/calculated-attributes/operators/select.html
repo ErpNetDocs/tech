@@ -146,7 +146,7 @@
 <p>Having this in mind, it's really important to extract lists from the database.</p>
 <p>When using <strong>SELECT</strong>, you send a request to the database with as many <strong>[WHERE]</strong> filters as possible.</p>
 <p>If there's an unsupported filter, then the list returned by <strong>SELECT</strong> may be filtered additionally by <strong>[FILTER]</strong>.</p>
-<p>The disadvantages are that a <strong>SELECT</strong> statement makes a direct request to the database, which may influence productivity and slow down the calculation of the attribute. When using <strong>SELECT</strong>, the user has to apply as many <strong>[WHERE]</strong> filters as possible, because this would limit the amount of data which would be extracted from the database into the client.</p>
+<p>A <strong>SELECT</strong> statement makes a direct request to the database, which may influence productivity and slow down the calculation of the attribute. When using <strong>SELECT</strong>, you have to apply as many <strong>[WHERE]</strong> filters as possible, because this would limit the amount of data extracted from the database into the client.</p>
 <p>If <strong>SELECT</strong> doesn't provide enough filters, the result may be filtered by <strong>[FILTER]</strong>, which operates on data already loaded in the client.</p>
 <h4 id="examples">Examples:</h4>
 <p>Let's say you need a list of documents whose <strong>DocumentTypeId</strong> is equal to 'bbd8e7ae-c0e0-4c1b-8730-7d68fa52971e' or '89ca5ca4-ad57-44c7-9b33-2ff44e054bff'. The documents are work orders.</p>

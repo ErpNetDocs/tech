@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Check if a value of a field is changed in the adjustment document | ERP.net Tech Docs </title>
+    <title>Check if a value of a field is changed in an adjustment document | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Check if a value of a field is changed in the adjustment document | ERP.net Tech Docs ">
+    <meta name="title" content="Check if a value of a field is changed in an adjustment document | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,10 +77,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="check-if-a-value-of-a-field-is-changed-in-the-adjustment-document">Check if a value of a field is changed in the adjustment document</h1>
+<h1 id="check-if-a-value-of-a-field-is-changed-in-an-adjustment-document">Check if a value of a field is changed in an adjustment document</h1>
 
-<p>This attribute checks if the value of a field in the adjustment document is equal to the value of the same field in the original document. This information helps you determine if the value of the field is being or has been changed in the adjustment document.</p>
-<p>Using the attribute, you can create a business rule which would allow you to <strong>prohibit</strong> the correction of the value of the field.</p>
+<p>This attribute checks if a field value in an adjustment document is equal to the value of the same field in an original document. This helps you determine if the value is being or has been changed in the adjustment document.</p>
+<p>Using the attribute, you can create a business rule which that <strong>prohibits</strong> the correction of the field value.</p>
 <pre><code>10: IIF EXP:20 CONST:False EXP:30
 20: EQUAL REF:AdjustedDocument CONST:NULL                                  
 30: IIF EXP:40 CONST:False CONST:True      
@@ -90,7 +90,7 @@
 <p><strong>Explanation:</strong></p>
 <ul>
 <li>10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True', else - 'False'.</li>
-<li>20: Check if there is <strong>AdjustedDocument</strong>. If there's no such reference, then the document is <strong>not</strong> an adjustment document.</li>
+<li>20: Check if there is <strong>AdjustedDocument</strong>. If there's no reference, the document is <strong>not</strong> an adjustment document.</li>
 <li>30: Check if EXP:40 is true or false.</li>
 <li>40: Check if the value of the custom property 'Property1' is equal to EXP:50.</li>
 <li>50: Get the value of the 'Property1' of the adjusted document.</li>

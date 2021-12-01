@@ -81,7 +81,7 @@
 
 <p>This attribute determines the value of a particular customer property set for the parent offer line of the current sales order line. Currently, offer lines customer properties are not transferred to the sales order.</p>
 <p>Thus, you can use this attribute in a user business rule to <strong>automate</strong> the process.</p>
-<p>For more information on how to create such a rule, see <br> <strong>How to use business rules to set a value into a custom property?</strong>.</p>
+<p>For more information on how to create such a rule, see <br> <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/Q%26A/set-value-into-custom-property.html">How to use business rules to set a value into a custom property?</a></strong>.</p>
 <pre><code>Repository: Crm.Sales.SalesOrderLines
 </code></pre>
 <pre><code>                    
@@ -103,7 +103,7 @@
 <li>50: Cast EXP:60 to &quot;System.Int32&quot;.</li>
 <li>60: Get the <strong>ParentLineNo</strong> of the sales order line, which is an input for EXP:10.</li>
 <li>70: Get the list of child line of the object of EXP:80.</li>
-<li>80: Cast the parent document of the sales order line to <strong>Aloe.EnterpriseOne.Model.Crm.Presales.Offer</strong> in order to define the type/entity of the parent document.</li>
+<li>80: Cast the parent document of the sales order line to <strong>Aloe.EnterpriseOne.Model.Crm.Presales.Offer</strong> to define the type/entity of the parent document.</li>
 </ul>
 </article>
           </div>

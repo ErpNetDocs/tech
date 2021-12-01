@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Check whether the releasing of the document is first or not | ERP.net Tech Docs </title>
+    <title>Check whether the releasing of a document is first or not | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Check whether the releasing of the document is first or not | ERP.net Tech Docs ">
+    <meta name="title" content="Check whether the releasing of a document is first or not | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,12 +77,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="check-whether-the-releasing-of-the-document-is-first-or-not">Check whether the releasing of the document is first or not</h1>
+<h1 id="check-whether-the-releasing-of-a-document-is-first-or-not">Check whether the releasing of a document is first or not</h1>
 
 <p>Sometimes, you may want to know whether the 'Released' state of document is selected for the first time or not.</p>
 <p>А business case may require a certain business rule to be executed only upon first releasing of the document.</p>
-<p>The calculated attributes are a tool which, upon trigger, performs its calculation in <strong>real-time</strong>. If you use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not tomorrow. If you reselect the document state, it may trigger actions that are no longer needed for this record (for more information, see <strong>How to start a business rule only on first releasing</strong>).</p>
-<p>To avoid such an occurrence, you can use a calculated attribute to define whether the releasing of the document is first or not:</p>
+<p>The calculated attributes are a tool which, upon trigger, performs its calculation in <strong>real-time</strong>. If you use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not tomorrow. <br> If you reselect the document state, it may trigger actions no longer needed for this record <br> For more information, see <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/examples/start-business-rule.html">How to start a business rule only on first releasing</a></strong>.</p>
+<p>You can use a calculated attribute to define whether the releasing of a document is first or not:</p>
 <pre><code>10: IIF  EXP:20 CONST:false CONST:true
 20: EQUAL EXP:30 CONST:30                                  
 30: CAST ATTRIB:State CONST:System.Int32         

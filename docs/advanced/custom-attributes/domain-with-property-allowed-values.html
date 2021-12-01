@@ -82,12 +82,12 @@
 <p>Domain is the range of the allowed values of a particular custom property.</p>
 <p>It's determined in one of the following ways, sorted by high-to-low priority:</p>
 <ol>
-<li><p>If <em>Limit To Allowed Values</em> <strong>doesn't</strong> have a check mark, any value is valid and <br> the domain is a range of <strong>all</strong> possible values.</p>
+<li><p>If <em>Limit To Allowed Values</em> <strong>doesn't</strong> have a check mark, <br> any value is valid and the domain is a range of <strong>all</strong> possible values.</p>
 </li>
-<li><p>If <em>Allowed Values Entity Name</em> <strong>has</strong> a value, the domain is <strong>all records</strong> of the specified data type.</p>
-<p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a check mark and <em>Allowed Values Property</em> does NOT have a value.</p>
+<li><p>If <em>Allowed Values Entity Name</em> <strong>has</strong> a value, <br> the domain is <strong>all records</strong> of the specified data type.</p>
+<p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a check mark <br> and <em>Allowed Values Property</em> does NOT have a value.</p>
 </li>
-<li><p>If <em>Allowed Values Property</em> has a value, the domain of the current custom property is <strong>equal</strong> to <br> the domain of the custom property specified in this field.</p>
+<li><p>If <em>Allowed Values Property</em> has a value, <br> the custom property domain is <strong>equal</strong> to the custom property domain specified in this field.</p>
 </li>
 </ol>
 <pre><code>CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain

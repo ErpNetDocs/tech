@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Check if the current user has authorization | ERP.net Tech Docs </title>
+    <title>Check if a user has authorization | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Check if the current user has authorization | ERP.net Tech Docs ">
+    <meta name="title" content="Check if a user has authorization | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,7 +77,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="check-if-the-current-user-has-authorization">Check if the current user has authorization</h1>
+<h1 id="check-if-a-user-has-authorization">Check if a user has authorization</h1>
 
 <p>To determine if a logged-in user is authorized to do, see, or edit an entity, you need to know which <strong>group</strong> has such rights. You can then create a calculated attribute that checks if the user is part of that group:</p>
 <pre><code>10: IIF EXP:20 CONST:True CONST:False         
@@ -92,7 +92,7 @@
 </code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True' message, if else - 'False'.</li>
+<li>10: Check the state of EXP:20. If it's true - the calculated attribute displays 'True', if else - 'False'.</li>
 <li>20: Check if the list EXP:30 returns at least one record.</li>
 <li>30: Return the count of records in the filtered list of EXP:40.</li>
 <li>40: Select 'User Groups' filtered by EXP:50.</li>

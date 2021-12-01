@@ -93,10 +93,10 @@
 </ul>
 <p>Every method suggests that a proportion of the amount distributed by the rows should be defined so the distribution can be executed.</p>
 <p>If you have <strong>n</strong> rows on which you have to distribute additional amount, for every row, a weight is defined:</p>
-<p>[<strong>k1</strong>], [<strong>k2</strong>] ... [<strong>kn</strong>]</p>
+<p>[<strong>k<sub>1</sub></strong>], [<strong>k<sub>2</sub></strong>] ... [<strong>k<sub>n</sub></strong>]</p>
 <p>These are different coefficients from those described in <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">rows weighting</a></strong>, but in some specific cases the latter may participate in the calculation of the distribution weights.</p>
-<p>Uf the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k1</strong>] + [<strong>k2</strong>] + ... + [<strong>kn</strong>]) and this amount isn't equal to 0, <br> then the <strong>i</strong>-row of the proportion is [<strong>ki</strong>]/[<strong>S</strong>]:</p>
-<p>[distribution to row <strong>i</strong>] = ROUND([amount] * [<strong>ki</strong>] / [<strong>S</strong>], [Round Scale]),</p>
+<p>Uf the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k<sub>1</sub></strong>] + [<strong>k<sub>2</sub></strong>] + ... + [<strong>k<sub>n</sub></strong>]) and this amount isn't equal to 0, <br> then the <strong>i</strong>-row of the proportion is [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>]:</p>
+<p>[distribution to row <strong>i</strong>] = ROUND([amount] * [<strong>k<sub>i</sub></strong>] / [<strong>S</strong>], [Round Scale]),</p>
 <p>where <em>Round Scale</em> is property of the additional amount definition.</p>
 <p>This is a <strong>standard distribution alogorithm</strong>. A specific case is when [<strong>S</strong>] is <strong>0</strong>.</p>
 <p>Most of the time, the additional amount is distributed evenly throughout the row, using the following formula:</p>
@@ -107,7 +107,7 @@
 <p>[minimal balance distribution on a row] = 1 / 10[Round Scale].</p>
 <p><strong>Example:</strong></p>
 <p>You have <strong>12</strong> rows and the amount of <strong>9.13 EUR</strong> to distribute with the following weights:</p>
-<p>[<strong>k1</strong>] = [<strong>k2</strong>] = ... = [<strong>k10</strong>] = <strong>1</strong>, and [<strong>k11</strong>] = [<strong>k12</strong>] = <strong>0</strong></p>
+<p>[<strong>k<sub>1</sub></strong>] = [<strong>k<sub>2</sub></strong>] = ... = [<strong>k<sub>10</sub></strong>] = <strong>1</strong>, and [<strong>k<sub>11</sub></strong>] = [<strong>k<sub>12</sub></strong>] = <strong>0</strong></p>
 <p><strong>9.13 EUR</strong> is distributed on the first 10 rows and you'll apply the formula to get the the distribution of 9.13 EUR / 10 ~ <strong>0.91 EUR</strong> (assuming you have <em>Round Scale</em> = 2). In this case, you distribute only 10 * 0.91 = <strong>9.10 EUR</strong> and the amount left (<strong>0.03 EUR)</strong> needs to be distributed through the first 10 rows.</p>
 <p>Since you can't distribute less than 1 / 102 = 0.01 EUR, only the first three rows increase by 0.01 EUR.</p>
 <p>This is how the final distribution looks like:</p>

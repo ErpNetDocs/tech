@@ -108,13 +108,13 @@
 <ul>
 <li><p><strong>WHERE</strong> clauses, the conditions are applied together with <strong>[SELECT]</strong> to the whole list and directly on the server. Much faster performance in comparison with <strong>[FILTER]</strong>, especially for a list with lots of records.</p>
 </li>
-<li><p><strong>FILTER</strong> clauses, filters are applied locally (on the client side) to the list that has been returned from the <strong>[SELECT]</strong>.</p>
+<li><p><strong>FILTER</strong> clauses, filters are applied locally (on the client side) to the list returned from <strong>[SELECT]</strong>.</p>
 </li>
 </ul>
 <p>Knowing this, you can reach two basic conclusions:</p>
 <p>First, you should choose <strong>[WHERE]</strong> clauses instead <strong>[FILTER]</strong> clauses, if possible. Most of the other operators are supported in both cases, though <strong>[WHERE]</strong> clauses do have certain limitation. For example, they cannot be used along with <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html">NOT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html">OR</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html">LIKE</a></strong> operators.</p>
-<p>Second, when you have no choice but to use <strong>[FILTER]</strong> clauses, you should always try to narrow down the list that you are returning. Just apply as much <strong>[WHERE]</strong> clauses as possible to the <strong>[SELECT]</strong>. This way, you are filtering the list before it is returned to the <strong>[FILTER]</strong> and therefore, it will contain fewer records, which will lead to a faster calculation.</p>
-<p>OVerall, <strong>[SELECT]</strong> is a very powerful tool that needs to be used wisely.</p>
+<p>Second, when you have no choice but to use <strong>[FILTER]</strong> clauses, you should try to narrow down the list you're returning. Just apply as many <strong>[WHERE]</strong> clauses as possible to <strong>[SELECT]</strong>. This way, you're filtering the list before it's returned to the <strong>[FILTER]</strong> and therefore, it'll contain fewer records, which will lead to a faster calculation.</p>
+<p>Overall, <strong>[SELECT]</strong> is a very powerful tool that needs to be used wisely.</p>
 </article>
           </div>
           

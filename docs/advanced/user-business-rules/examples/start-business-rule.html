@@ -84,7 +84,7 @@
 <p>What if the released state of the sales order is <strong>re-selected</strong> after a month because of an adjustment of the document notes? The rule will be executed again, though the adjustment may be impossible because some of the lots could have expired by this time.</p>
 <p>You can set a business rule that's triggered only when you're releasing a document for the <strong>first</strong> time. This works despite business rules currently not supporting a first releasing event parameter. You can create a calculated attribute like 'IsFirstReleasing' that check whether the releasing is first and returns 'True' or 'False'.</p>
 <p>For more information, see <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html">Check whether the releasing of the document is first or not?</a></strong>.</p>
-<p>You can later use this attribute as a business rule condition <code>#IsFirstReleasing = True</code>, which means the rule will be triggered only when the document is released for the first time and <strong>not</strong> when the released state is re-selected.</p>
+<p>You can use this attribute as a business rule condition <code>#IsFirstReleasing = True</code> - the rule is triggered only when the document is released for the first time, <strong>not</strong> when the released state is re-selected.</p>
 </article>
           </div>
           

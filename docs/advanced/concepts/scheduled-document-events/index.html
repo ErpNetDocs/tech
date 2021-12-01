@@ -82,7 +82,7 @@
 <p>Scheduled document events are postponed events which will be executed <strong>later</strong>.</p>
 <p>They typically appear in the form of numerous recalculations resulting from other events.</p>
 <p>For example, releasing a cost correction creates scheduled events for all affected documents.</p>
-<p>A scheduled document event needs to be executed <strong>before</strong> it's applied. If it's created by a cost correction, the execution causes a resetting of the document state of the store transactions, which was included in the cost correction. The reset triggers the accounting voucher generation procedures and causes re-accounting of documents, including the adjusted cost.</p>
+<p>A scheduled document event needs to be executed <strong>before</strong> it's applied. If it's created by a cost correction, the execution causes a reset of the <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">document state</a></strong> of the store transactions, included in the cost correction. A reset triggers the accounting voucher generation procedures and causes re-accounting of documents, including adjusted cost.</p>
 <p>An execution can be performed:</p>
 <ul>
 <li><p><strong>manually</strong> through the ''Execute Scheduled Events'' navigator</p>

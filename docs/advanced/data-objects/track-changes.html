@@ -99,17 +99,17 @@
 <tr>
 <td>1</td>
 <td>Track last change</td>
-<td>Store information only for the latest modification of the tracked object.</td>
+<td>Stores information for latest modification of the tracked object.</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Track object changes</td>
-<td>All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Do not store information about the changes in the attributes.</td>
+<td>All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Does not store information about the changes in the attributes.</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Track object &amp; attribute changes</td>
-<td>All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding BLOB attributes. <br> These are large-size attributes like images, files, etc.</td>
+<td>All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding BLOB attributes. These are large-size attributes like images, files, etc.</td>
 </tr>
 <tr>
 <td>4</td>
@@ -178,7 +178,7 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <li><strong>Attribute name</strong> - the name of the changed attribute.</li>
 <li><strong>New value</strong> - the string representation (culture insensitive) of the new value.</li>
 </ul>
-<p>Some attribute changes might not be reflected properly by the system. Since the Track Changes system works at application level, changes made by direct SQL statements will <strong>not</strong> be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.</p>
+<p>Some attribute changes might not be reflected properly by the system. Since it works at application level, changes made by direct SQL statements will <strong>not</strong> be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.</p>
 <p>The <em>Document No</em> attribute (set by SQL statements) is often recorded as changed by the <strong>2nd</strong> modification of the document. Therefore, only the <strong>new</strong> values are stored.</p>
 <p>This design was chosen for the following reasons:</p>
 <ul>
@@ -188,11 +188,11 @@ For each successive update of an object in the aggregate, the data in the EDO is
 </li>
 </ul>
 <p>This was the initial and <strong>abandoned</strong> implementation of the track changes system.</p>
-<p>The process needed to synchronously read the previous database value before each update. This slowed down the database transactions and it was decided that the <strong>'new values only'</strong> approach would better fit performance requirements.</p>
+<p>The process needed to synchronously read the previous database value before each update. This slowed down database transactions - the <strong>'new values only'</strong> approach was better fit to meet performance requirements.</p>
 <ul>
-<li><p>The storage of the new values can be performed asynchronously <strong>AFTER</strong> the actual database transaction has completed. In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.</p>
+<li><p>The storage of new values can be performed asynchronously <strong>AFTER</strong> the actual database transaction has completed. In this way, the TC system has minor effect on the speed of every-day OLTP transactions.</p>
 </li>
-<li><p>One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be <strong>lost</strong>. In this case, the object change will still be recorded <strong>synchronously</strong> (as part of the transaction).</p>
+<li><p>One drawback of asynchronous saving: upon server crash, track-changes data about the attribute changes might be <strong>lost</strong>. The object change will still be recorded <strong>synchronously</strong> (as part of the transaction).</p>
 </li>
 </ul>
 <h3 id="level-4---track-object-attribute--blob-changes">Level 4 - track object, attribute &amp; BLOB changes</h3>

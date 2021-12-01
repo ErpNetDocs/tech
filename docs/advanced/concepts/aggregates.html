@@ -81,7 +81,7 @@
 
 <p>Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit.</p>
 <p>For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate. Learn more <strong><a href="https://martinfowler.com/bliki/DDD_Aggregate.html">here</a></strong>.</p>
-<h4 id="in--these-are-single-aggregates">In ERP.net, these are single aggregates:</h4>
+<p><strong>In ERP.net, these are single aggregates:</strong></p>
 <ul>
 <li>a SalesOrder</li>
 <li>the sales order lines of this sales order</li>
@@ -104,7 +104,7 @@
 <li>aggregate commit / alient-commit</li>
 </ul>
 <h4 id="whats-the-difference">What's the difference?</h4>
-<p>When an object commit event occurs, it means the object itself was changed. The aggregate event occurs for the object when there's a change in <strong>ANY</strong> of its constituent objects, but only if the object is an aggregate root.</p>
+<p>When an object commit <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/index.html">event</a></strong> occurs, it means the object itself was changed. The aggregate event occurs for the object when there's a change in <strong>ANY</strong> of its constituent objects, but only if the object is an aggregate root.</p>
 <p>Let's take a look at the following structure, which is a single aggregate in ERP.net:</p>
 <ul>
 <li>a SalesOrder (which is the aggregate's root)</li>
@@ -113,14 +113,14 @@
 <li>the document amounts of this sales order</li>
 <li>the payment plan of this sales order</li>
 </ul>
-<p>The <strong>Commit</strong> event would occur for the sales order <strong>only</strong> if the sales order object itself has changed.</p>
-<p>The <strong>aggregate commit</strong> will occur for the sales order if <strong>any</strong> of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would <strong>still</strong> trigger the sales order aggregate event.</p>
+<p>A <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html">COMMIT</a></strong> event would occur for the sales order <strong>only</strong> if the sales order object itself has changed.</p>
+<p>An <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html">AGGREGATE CLIENT COMMIT</a></strong> event will occur for the sales order if <strong>any</strong> of the objects in the aggregate has changed. Changing a single sales order line without changing the order itself would <strong>still</strong> trigger the aggregate event.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Commit and client-commit have the same meaning. Commit is the low-level event, which is triggered for everything committed to the database. Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>
+<p>Commit and client-commit have the same meaning. <strong>Commit</strong> is a low-level event triggered for anything committed to the database. <strong>Client-commit</strong> is triggered by client requests and is the more light-weight approach.<br>
 Currently, only the agregate client commit event is available for <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user-defined business rules</a></strong>. <br> The aggregate commit will be used only internally, for <strong><a class="xref" href="https://erpnetdocs.github.io/model/templates/template-description-system-business-rules.html">system-defined business rules</a></strong></p>
 </div>
-<p>The end goal is to have a more light approach.</p>
+<p>The end goal is to have a lighter approach.</p>
 <h4 id="see-also">See also:</h4>
 <p><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.ExtensibleDataObjects.html">Systems.Core.ExtensibleDataObjects Entity</a></p>
 </article>
