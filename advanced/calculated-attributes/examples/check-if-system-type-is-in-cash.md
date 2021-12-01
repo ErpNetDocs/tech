@@ -21,11 +21,11 @@ For more information, see **Allow a credit limit override when the client pays i
 
 - 10: Return 'True' of 'False' according to the result of EXP:20
 - 20: Check if EXP:25 is equal to EXP:30  
-- 25: Converts '0' to type **System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType]** using **CAST**
+- 25: Converts '0' to type **System.Nullable`1[Aloe.EnterpriseOne.Model.Finance.Payments.PaymentTypesRepository+SystemType]** using **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)**
 - 30: Get the system type of the payment type which is set in the sales order.
 
 > [!NOTE]
 > 
 > When using **[EQUAL](https://docs.erp.net/tech/advanced/calculated-attributes/operators/equal.html)**, make sure you're comparing parameters from the same type. 
 > If you don’t know which type the object is or what value it's going to return, you can use the **Aloe.EnterpriseOne.Model Documentation**. 
-> In the particular example, check the **[PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html)**, where you'll find that the value corresponding to the system type in 'Cash' is '0'.
+> In the particular example, check **[PaymentTypesRepository.SystemType Enumeration](https://restdev.erp.bg/model/html/2fd52ed9-8c3d-8b99-c824-6574557864c0.html)**, where you'll find the value corresponding to the system type in 'Cash' is '0'.
