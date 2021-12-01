@@ -16,14 +16,14 @@ Here, the coefficient of the specific row is entered in the *Line Percent* field
 
 In this panel, weights are entered in two ways:
 
-- manually, when the document is created
-- setting them as default values in the product definition
+- **manually**, when the document is created
+- setting them as **default values** in the product definition
 
 > [!NOTE] 
 > 
 > If there are no weights for an additional amount in the panel, all weights are equal to **100%**.
 
-Below, brief descriptions and examples for the different input methods are given. For more information on the role of weights/coefficients in the calculation and distribution processes, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+You'll find brief descriptions and examples for different input methods are given. <br> For more information, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
 
 ## Weights & coefficients in product definitions
 
@@ -31,7 +31,9 @@ Sometimes, weights of specific services are known **before** documents are creat
 
 When customs taxes are paid for goods on import, some of the products have taxes and others don't. For many, taxes are defined by law and they're a constant percentage of the product value. You have to enter their weight for the additional amount 'Customs'. 
 
-Then, once the documents are entered in @@name, and a product is selected in a document row, its weight is copied from the product definition into the **Document Line Amount** panel. You can change the default weights of the products.
+Once the documents are entered in @@name and a product is selected in a document row, its weight is copied from the product definition into the **Document Line Amount** panel. 
+
+You can change the default weights of the products.
 
 **Example 1:**
 
