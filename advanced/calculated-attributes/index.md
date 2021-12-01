@@ -23,7 +23,7 @@ You can define the following calculated attribute:
 
 **Explanation:**
 
-- GETREF - gets information from a related entity. The related entity is specified in **Param1**. The desired information is specified in **Param2**.
+- **GETREF** - gets information from a related entity. The related entity is specified in **Param1**. <br> The desired information is specified in **Param2**.
 - Line number 10 is the only line in the calculated attribute
 - The return value is the value of the attribute **DefaultPaymentTermDays** in the customer entity.
 
@@ -46,11 +46,11 @@ The following calculated attribute sums all sales order lines, the product of wh
 
 **Explanation:**
 
-- Line 10: Iterates through the data set, specified on Line 20 (EXP:20), then SUMs the attribute **LineAmount**.
-- Line 20: Filters the lines subset with the filter, specified in Line 30 (EXP:30).
-- Line 30: Creates a filter, which will be satisfied only by products, specified in the query on Line 40 (EXP:40).
-- Line 40: Creates a query, which filters the products with the condition, specified on Line 50.
-- Line 50: Specifies that the condition is comprised of two conditions, linked with **AND**.
+- Line 10: Iterates through the data set on Line 20 (EXP:20); SUMs the attribute **LineAmount**.
+- Line 20: Filters the lines subset with the filter specified in Line 30 (EXP:30).
+- Line 30: Creates a filter which is satisfied only by products in the query on Line 40 (EXP:40).
+- Line 40: Creates a query, which filters the products with the condition specified on Line 50.
+- Line 50: Specifies that the condition is comprised of two conditions linked with **AND**.
 - Line 60: Specifies that the first condition is the value of an attribute called 'CustPropPrj' should be '500'.
 - Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'. <br><br>
 
