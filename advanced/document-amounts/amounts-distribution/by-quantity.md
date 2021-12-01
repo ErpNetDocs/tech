@@ -6,9 +6,9 @@ Therefore, the additional amounts using this property (_Distribute By_ = Quantit
 
 As long as [distribution measurement unit] is the measurement unit from the selected category in the additional amount definition, then for each row, the coefficients are as follows:
 
-[**ki**] = [quantity on row **i**] converted to [distribution measurement unit].
+[**k<sub>i</sub>**] = [quantity on row **i**] converted to [distribution measurement unit].
 
-The additional amount distribution is performed by a standard formula <br> (in proportions [**ki**]/[**S**], if [**S**] is not **0**, or otherwise - equally throughout the rows).
+The additional amount distribution is performed by a standard formula <br> (in proportions [**k<sub>i</sub>**]/[**S**], if [**S**] is not **0**, or otherwise - equally throughout the rows).
 
 **Example 1:**
 
@@ -26,9 +26,9 @@ The product of row #20 has the following dimension: **1 boxes = 10 pieces**. <br
 
 After converting all row quantities to 'boxes', the following coefficients are calculated:
 
-- row #10: [**k1**] = **2**; <br>
-- row #20: [**k2**] = **2.5**; <br>
-- row #30: [**k3**] = **6**. <br>
+- row #10: [**k<sub>1</sub>**] = **2**; <br>
+- row #20: [**k<sub>2</sub>**] = **2.5**; <br>
+- row #30: [**k<sub>3</sub>**] = **6**. <br>
 
 The amount of **42 EUR** is distributed in 2:2.5:6 ratio. The results are:
 
@@ -42,7 +42,7 @@ There is an amount of **42 EUR** of transport as in Example 1. The document rows
 
 row #10 with quantity of **2 boxes** <br> row #20 with quantity of **30 pieces** <br> row #30 with quantity of **-15 kg** 
 
-The coefficients are [**k1**] = **2**, [**k2**] = **3** and [**k3**] =**-5** and total amount of **[S] = 0**.
+The coefficients are [**k<sub>1</sub>**] = **2**, [**k<sub>2</sub>**] = **3** and [**k<sub>3</sub>**] =**-5** and total amount of **[S] = 0**.
 
 In this case, the additional amount is distributed equally among the rows and the result is:
 
