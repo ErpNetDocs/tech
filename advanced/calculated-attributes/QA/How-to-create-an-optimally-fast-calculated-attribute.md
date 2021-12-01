@@ -46,7 +46,7 @@ Keep in mind that when using:
 
 - **WHERE** clauses, the conditions are applied together with **[SELECT]** to the whole list and directly on the server. Much faster performance in comparison with **[FILTER]**, especially for a list with lots of records.
 
--  **FILTER** clauses, filters are applied locally (on the client side) to the list that has been returned from the **[SELECT]**. 
+-  **FILTER** clauses, filters are applied locally (on the client side) to the list returned from **[SELECT]**. 
 
 Knowing this, you can reach two basic conclusions:
 
