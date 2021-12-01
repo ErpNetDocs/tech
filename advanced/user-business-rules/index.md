@@ -36,9 +36,9 @@ The value of a repository name can be selected from a dropdown list. It contains
 
 ### Events
 
-Some events need to happen for a user business rule to become active.
+Some **[events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)** need to happen for a user business rule to become active.
 
-The **[Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)** panel consists of the following fields:
+The **Events** panel consists of the following fields:
 
 - **Event type** - the event the user business rule can be registered for.
 
