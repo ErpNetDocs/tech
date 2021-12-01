@@ -8,9 +8,9 @@ Sometimes, you may want to know whether the 'Released' state of document is sele
 
 А business case may require a certain business rule to be executed only upon first releasing of the document. 
 
-The calculated attributes are a tool which, upon trigger, performs its calculation in **real-time**. If you use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not tomorrow. If you reselect the document state, it may trigger actions that are no longer needed for this record (for more information, see **How to start a business rule only on first releasing**).
+The calculated attributes are a tool which, upon trigger, performs its calculation in **real-time**. If you use a calculated attribute as a condition for a business rule, the condition may be fulfilled today, but not tomorrow. <br> If you reselect the document state, it may trigger actions no longer needed for this record <br> For more information, see **[How to start a business rule only on first releasing](https://docs.erp.net/tech/advanced/user-business-rules/examples/start-business-rule.html)**.
 
-To avoid such an occurrence, you can use a calculated attribute to define whether the releasing of the document is first or not:
+You can use a calculated attribute to define whether the releasing of a document is first or not:
 
 ```
 10: IIF  EXP:20 CONST:false CONST:true
