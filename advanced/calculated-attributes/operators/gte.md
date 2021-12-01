@@ -14,7 +14,7 @@ items: Operators
 | Parameter 2 Type      | numeric (int, double, decimal) or datetime type                                                            |
 | Parameter 3 Name      | -                                                            |
 | Parameter 3 Type      | -                                                            |
-| Return value          | If attribute1 >= attribute2, the returned value is 'True', if else - the operator returns 'False'.                                                          |
+| Return value          | If attribute1 >= attribute2, the returned value is 'True', if else - 'False'.                                                          |
 
 Make sure the compared attributes are from the same type.
 
