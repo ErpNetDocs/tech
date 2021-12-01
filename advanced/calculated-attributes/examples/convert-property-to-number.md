@@ -43,4 +43,4 @@ Let's say you want to multiply the standard price per lot of a product by a coef
 
 > [!NOTE]
 > 
-> When you want to convert a **CustomPropertyValue** to a numeric value like decimal, you need to **CAST** it to a string first!
+> Before converting a **CustomPropertyValue** to a numeric value, you need to **CAST** it to a string first!
