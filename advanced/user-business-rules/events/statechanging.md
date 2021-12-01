@@ -8,7 +8,7 @@
 |**Description**| Occurs during a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** change, specified in the _Parameter_ field.
 |**Version**| Introduced: 2017.1 <br> Updated: -
 
-This event happens during a change. <br><br>
+This event happens **during** a change. <br><br>
 
 **Example 1**
 
