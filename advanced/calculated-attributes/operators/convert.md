@@ -7,7 +7,7 @@ items: Operators
 
 | Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |
-| Description      | Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires **correct** input data - otherwise, loss may occur but no error would be returned. <br> For examplе, if you try to convert the string value of '3.12' to decimal, the conversion would be successful.  |
+| Description      | Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires **correct** input data - otherwise, loss may occur with no error returned. If you convert the string value of '3.12' to decimal, the conversion would be successful.  |
 | Parameter 1 Name | param                                                        |
 | Parameter 1 Type | decimal, int, string or date                                 |
 | Parameter 2 Name | type                                                         |
