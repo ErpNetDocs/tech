@@ -8,13 +8,13 @@ Domain is the range of the allowed values of a particular custom property.
 
 It's determined in one of the following ways, sorted by high-to-low priority:
 
-1. If _Limit To Allowed Values_ **doesn't** have a check mark, any value is valid and <br> the domain is a range of **all** possible values.
+1. If _Limit To Allowed Values_ **doesn't** have a check mark, <br> any value is valid and the domain is a range of **all** possible values.
 
-2. If _Allowed Values Entity Name_ **has** a value, the domain is **all records** of the specified data type.
+2. If _Allowed Values Entity Name_ **has** a value, <br> the domain is **all records** of the specified data type.
    
-     This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Property_ does NOT have a value.
+     This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark <br> and _Allowed Values Property_ does NOT have a value.
 
-3. If _Allowed Values Property_ has a value, the domain of the current custom property is **equal** to <br> the domain of the custom property specified in this field.
+3. If _Allowed Values Property_ has a value, <br> the custom property domain is **equal** to the custom property domain specified in this field.
 
 ```
 CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
