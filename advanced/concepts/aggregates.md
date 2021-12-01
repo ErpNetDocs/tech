@@ -49,14 +49,14 @@ Let's take a look at the following structure, which is a single aggregate in @@n
 
 A **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)** event would occur for the sales order **only** if the sales order object itself has changed. 
 
-An **[AGGREGATE CLIENT COMMING](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)** will occur for the sales order if **any** of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would **still** trigger the sales order aggregate event.
+An **[AGGREGATE CLIENT COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)** event will occur for the sales order if **any** of the objects in the aggregate has changed. Changing a single sales order line without changing the order itself would **still** trigger the aggregate event.
 
 > [!NOTE] 
 > 
-> Commit and client-commit have the same meaning. Commit is the low-level event, which is triggered for everything committed to the database. Client-commit is triggered only based on client requests and is considered the more light-weight approach.<br>
+> Commit and client-commit have the same meaning. **Commit** is a low-level event triggered for anything committed to the database. **Client-commit** is triggered by client requests and is the more light-weight approach.<br>
 > Currently, only the agregate client commit event is available for **[user-defined business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)**. <br> The aggregate commit will be used only internally, for **[system-defined business rules](xref:system-business-rules)**
 
-The end goal is to have a more light approach. 
+The end goal is to have a lighter approach. 
 
 #### See also: 
 
