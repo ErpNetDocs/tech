@@ -20,7 +20,7 @@ To determine if a logged-in user is authorized to do, see, or edit an entity, yo
 
 **Explanation:**
 
-- 10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True' message, if else - 'False'.
+- 10: Check the state of EXP:20. If it's true - the calculated attribute displays 'True', if else - 'False'.
 - 20: Check if the list EXP:30 returns at least one record.
 - 30: Return the count of records in the filtered list of EXP:40.
 - 40: Select 'User Groups' filtered by EXP:50.
