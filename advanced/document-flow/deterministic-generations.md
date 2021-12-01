@@ -49,8 +49,8 @@ Therefore, Generation B is **non-deterministic**
 If a transitional document needs adjustment after it's generated (to be in-line with its parent), an **adjustment document** is created.
 It's a peer document that contains **changes**, and is usually hidden in the document tree.
 
-Adjustment documents are used to **adjust** (patch) main documents. The operation is executed upon setting the adjustment document status.
-Then, the main document is updated to reflect the changes brought by the adjustment document.
+Such documents are used to **adjust** (patch) main documents. The operation is executed upon setting the adjustment document status.
+Then, the main document is updated to reflect the changes.
 
 ## Generating adjustment documents
 
