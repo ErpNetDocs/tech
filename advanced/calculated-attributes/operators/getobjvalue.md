@@ -7,7 +7,7 @@ items: Operators
 
 | Specification| Value|
 | ---- | ----- |
-| Description| Gets a specified value from a specified object. Used when you want to retrieve a value from an object different from the current one. The current object is listed in the _Repository Name_ field of the current row.|
+| Description| Gets a value from a specified object. Used when you want to retrieve a value from an object different from the current one. That object is listed in the _Repository Name_ field of the current row.|
 | Parameter 1 Name| obj |
 | Parameter 1 Type| object |
 | Parameter 2 Name| value |
