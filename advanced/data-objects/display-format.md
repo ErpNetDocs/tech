@@ -68,7 +68,7 @@ Here's an example of how you could customize a product's entity type:
 | `{Code}` | 1103 |
 | `{Code}: ({Name:T})` | 1103: (DEO GALERIA PINK F 150 ML) |
 
-Display formats use **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)**, which gives you the opportunity to customize how your entity types will be displayed.
+Display formats use **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)**, allowing you to customize your entity types.
 
 ## Configuring display format
 
@@ -102,11 +102,13 @@ In this section, you can see several examples of different entity types:
 
 and their corresponding visualization.
 
-### Customers
+#### Customers
 
-**[Customers entity documentation](https://docs.erp.net/model/entities/Crm.Customers.html)**.
+**[Customers entity documentation](https://docs.erp.net/model/entities/Crm.Customers.html)**
 
 #### Sample data
+
+<br>
 
 | Number | Name |
 | --- | --- |
@@ -115,6 +117,8 @@ and their corresponding visualization.
 | ab1234 | Kurtis Dickinson |
 
 #### Display formats
+
+<br>
 
 | Display format | Visualization |
 | --- | --- |
@@ -136,11 +140,13 @@ and their corresponding visualization.
 | `{Number}` | ab1234 |
 | `{Number}: ({Party.PartyName:T})` | ab1234: (Kurtis Dickinson) |
 
-### Products
+#### Products
 
-**[Products entity documentation](https://docs.erp.net/model/entities/General.Products.Products.html)**.
+**[Products entity documentation](https://docs.erp.net/model/entities/General.Products.Products.html)**
 
 #### Sample data
+
+<br>
 
 | Name | Part number |
 | --- | --- |
@@ -149,6 +155,8 @@ and their corresponding visualization.
 | Remote support | 12345678 |
 
 #### Display formats
+
+<br>
 
 | Display format | Visualization |
 | --- | --- |
