@@ -52,6 +52,6 @@ Knowing this, you can reach two basic conclusions:
 
 First, you should choose **[WHERE]** clauses instead **[FILTER]** clauses, if possible. Most of the other operators are supported in both cases, though **[WHERE]** clauses do have certain limitation. For example, they cannot be used along with **[NOT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html)**, **[OR](https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html)** and **[LIKE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html)** operators. 
 
-Second, when you have no choice but to use **[FILTER]** clauses, you should always try to narrow down the list that you are returning. Just apply as much **[WHERE]** clauses as possible to the **[SELECT]**. This way, you are filtering the list before it is returned to the **[FILTER]** and therefore, it will contain fewer records, which will lead to a faster calculation.
+Second, when you have no choice but to use **[FILTER]** clauses, you should try to narrow down the list you're returning. Just apply as many **[WHERE]** clauses as possible to **[SELECT]**. This way, you're filtering the list before it's returned to the **[FILTER]** and therefore, it'll contain fewer records, which will lead to a faster calculation.
 
-OVerall, **[SELECT]** is a very powerful tool that needs to be used wisely.
+Overall, **[SELECT]** is a very powerful tool that needs to be used wisely.
