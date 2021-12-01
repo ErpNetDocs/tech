@@ -8,7 +8,7 @@ Aggregates are patterns in domain-driven design. A DDD aggregate is a cluster of
 
 For an order and its line-items, aggregates will be separate objects, but it's useful to treat them as a single aggregate. Learn more **[here](https://martinfowler.com/bliki/DDD_Aggregate.html)**.
 
-#### In @@name, these are single aggregates:
+**In @@name, these are single aggregates:**
 
 - a SalesOrder
 - the sales order lines of this sales order
@@ -37,7 +37,7 @@ The **Commit** and **ClientCommit** events are now available in two different va
 
 #### What's the difference?
 
-When an object commit event occurs, it means the object itself was changed. The aggregate event occurs for the object when there's a change in **ANY** of its constituent objects, but only if the object is an aggregate root.
+When an object commit **[event](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)** occurs, it means the object itself was changed. The aggregate event occurs for the object when there's a change in **ANY** of its constituent objects, but only if the object is an aggregate root.
 
 Let's take a look at the following structure, which is a single aggregate in @@name:
 
@@ -47,9 +47,9 @@ Let's take a look at the following structure, which is a single aggregate in @@n
 - the document amounts of this sales order
 - the payment plan of this sales order
 
-The **Commit** event would occur for the sales order **only** if the sales order object itself has changed. 
+A **[COMMIT](https://docs.erp.net/tech/advanced/user-business-rules/events/commit.html)** event would occur for the sales order **only** if the sales order object itself has changed. 
 
-The **aggregate commit** will occur for the sales order if **any** of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would **still** trigger the sales order aggregate event.
+An **[AGGREGATE CLIENT COMMING](https://docs.erp.net/tech/advanced/user-business-rules/events/aggregate-client-commit.html)** will occur for the sales order if **any** of the objects in the aggregate has changed. Changing just a single sales order line without changing the order itself would **still** trigger the sales order aggregate event.
 
 > [!NOTE] 
 > 
