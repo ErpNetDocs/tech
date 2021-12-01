@@ -22,13 +22,13 @@ Every method suggests that a proportion of the amount distributed by the rows sh
 
 If you have **n** rows on which you have to distribute additional amount, for every row, a weight is defined:
 
-[**k1**], [**k2**] ... [**kn**]
+[**k<sub>1</sub>**], [**k<sub>2</sub>**] ... [**k<sub>n</sub>**]
 
 These are different coefficients from those described in **[rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
 
-Uf the amount of these coefficients is [**S**] (i.e. [**S**] = [**k1**] + [**k2**] + ... + [**kn**]) and this amount isn't equal to 0, <br> then the **i**-row of the proportion is [**ki**]/[**S**]:
+Uf the amount of these coefficients is [**S**] (i.e. [**S**] = [**k<sub>1</sub>**] + [**k<sub>2</sub>**] + ... + [**k<sub>n</sub>**]) and this amount isn't equal to 0, <br> then the **i**-row of the proportion is [**k<sub>i</sub>**]/[**S**]:
 
-[distribution to row **i**] = ROUND([amount] * [**ki**] / [**S**], [Round Scale]),
+[distribution to row **i**] = ROUND([amount] * [**k<sub>i</sub>**] / [**S**], [Round Scale]),
 
 where *Round Scale* is property of the additional amount definition. 
 
@@ -50,7 +50,7 @@ You can't distribute less than:
 
 You have **12** rows and the amount of **9.13 EUR** to distribute with the following weights: 
 
-[**k1**] = [**k2**] = ... = [**k10**] = **1**, and [**k11**] = [**k12**] = **0**
+[**k<sub>1</sub>**] = [**k<sub>2</sub>**] = ... = [**k<sub>10</sub>**] = **1**, and [**k<sub>11</sub>**] = [**k<sub>12</sub>**] = **0**
 
 **9.13 EUR** is distributed on the first 10 rows and you'll apply the formula to get the the distribution of 9.13 EUR / 10 ~ **0.91 EUR** (assuming you have _Round Scale_ = 2). In this case, you distribute only 10 * 0.91 = **9.10 EUR** and the amount left (**0.03 EUR)** needs to be distributed through the first 10 rows.
 
