@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Calculate standart price per lot based on the ingredients and operations in the recipe
 
-With this attribute, you can calculate the **StandartPricePerLot** that is set in the product’s definition as you save the recipe. **StandartPricePerLot** is determined by the prices of the ingredients and operations used in the particular recipe. 
+With this attribute, you can calculate the **StandartPricePerLot** set in a product’s definition as you save a recipe. **StandartPricePerLot** is determined by the prices of ingredients and operations used in the recipe. 
 
 You can also use this attribute in a business rule to fill in the **PricePerLotValue** of the product in the recipe.
 
@@ -29,5 +29,5 @@ You can also use this attribute in a business rule to fill in the **PricePerLotV
 - 30: Multiply the value of EXP:40 and EXP:45.
 - 40: Divide the **StandardPricePerHourValue** by 60.00 to get the **StandardPrice** per minute.
 - 45: Cast EXP:50 to decimal.
-- 50: Add the values of **RunTimeMinutes** to EXP:60 => EXP:70 to get the full execution time of the operation.
+- 50: Add the **RunTimeMinutes** values to EXP:60 => EXP:70 to get full execution time of the operation.
 
