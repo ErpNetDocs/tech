@@ -9,11 +9,13 @@ These amounts are recorded in the **Аdditional Amounts** panel, found in the fo
 - Transfer orders
 - Transactions 
 
-The input/primary data is entered in the **Additional Amounts** panel, where it's used for calculating the amount and determining its impact on the document. This calculation is executed every time the document is saved and consists of 2 stages:
+The input/primary data is entered in the **Additional Amounts** panel, where it's used for calculating the amount and determining its impact on the document.
 
-1. Amounts determination.
+This calculation is executed every time the document is saved and consists of 2 stages:
 
-2. Stage 1 amounts distribution through the affected documents. <br> That distribution is saved in the document in which it's entered, no matter if the amount affects the current document or more.
+1. **Amounts determination**
+
+2. **Stage 1 amounts distribution through the affected documents** <br> That distribution is saved in the document in which it's entered, no matter if the amount affects the current document or more.
   
 The amount is determined by entering an exact value or by indicating that the amount is calculated as a **percent** of the base document amount or other **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)**. 
 
