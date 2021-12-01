@@ -92,7 +92,7 @@ The **VAT distribution** is as follows:
 
 **Example 2:**
 
-There are **20%** VAT and three document rows - row \#10 with **100 EUR,** row \#20 with **-30 EUR** and row \#30 for **-70 EUR**. 
+There are **20%** VAT and three document rows - \#10 with **100 EUR,** \#20 with **-30 EUR** and \#30 for **-70 EUR**. 
 
 In this case, VAT is **0 EUR**, but it's inappropriate to distribute **0 EUR** on each row, no matter what the coefficients are. By rule, each separate row must have **nonzero** VAT. Even if for some reason the VAT is not equal to **0**, then it shouldn't be distributed equally throughout the rows (as it will be, if you distribute by quantity and have [**S**] = **0**). The amounts on each row are **different**. 
 
