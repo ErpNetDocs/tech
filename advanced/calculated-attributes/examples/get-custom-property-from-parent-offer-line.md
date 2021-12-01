@@ -8,7 +8,7 @@ This attribute determines the value of a particular customer property set for th
 
 Thus, you can use this attribute in a user business rule to **automate** the process. 
 
-For more information on how to create such a rule, see <br> **How to use business rules to set a value into a custom property?**.
+For more information on how to create such a rule, see <br> **[How to use business rules to set a value into a custom property?](https://docs.erp.net/tech/advanced/user-business-rules/Q%26A/set-value-into-custom-property.html)**.
 
 ```
 Repository: Crm.Sales.SalesOrderLines
@@ -37,5 +37,5 @@ Repository: Crm.Sales.SalesOrderLines
 - 50: Cast EXP:60 to "System.Int32".
 - 60: Get the **ParentLineNo** of the sales order line, which is an input for EXP:10.
 - 70: Get the list of child line of the object of EXP:80.
-- 80: Cast the parent document of the sales order line to **Aloe.EnterpriseOne.Model.Crm.Presales.Offer** in order to define the type/entity of the parent document.
+- 80: Cast the parent document of the sales order line to **Aloe.EnterpriseOne.Model.Crm.Presales.Offer** to define the type/entity of the parent document.
 
