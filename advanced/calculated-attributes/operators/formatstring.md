@@ -20,7 +20,7 @@ items: Operators
 > [!NOTE]
 > 
 > The format argument must contain a valid .NET format string, either as a standard string ("C" or "D") or as a pattern of custom characters for dates and numeric values ("MMMM DD, yyyy (dddd)"). <br>
-> For more information about supported format specifiers, see **[Format Specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)**.
+> For more information about supported format specifiers, see **[Format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)**.
 
 **Example:**
 
