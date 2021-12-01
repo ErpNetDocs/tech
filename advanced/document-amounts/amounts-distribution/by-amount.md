@@ -9,15 +9,15 @@ Two types exist:
 
 To define the proportion of row **i**, its coefficient is calculated as follows:
 
-[**ki**] = [distributed to row **i** amount1] + [distributed to row **i** amount2] + ... + [distributed to row **i** amountm].
+[**k<sub>i</sub>**] = [distributed to row **i** amount1] + [distributed to row **i** amount2] + ... + [distributed to row **i** amountm].
 
 'amount1', 'amount2' ... 'amountm' are the additional amounts to which you add the current additional distributed amount (the amounts listed in its definition in the **Document Amount Type Dependencies** panel). 
 
-If there are no such amounts, thеn in this initial calculation, you have [**ki**] = **0**. 
+If there are no such amounts, thеn in this initial calculation, you have [**k<sub>i</sub>**] = **0**. 
 
-If _Base On Lines_ is 'True' (in the additional amount), the row amount is added to the initial value for [**ki**]:
+If _Base On Lines_ is 'True' (in the additional amount), the row amount is added to the initial value for [**ki</sub>**]:
 
-[**ki**] = [**ki**] + [row **i** amount].
+[**ki<sub></sub>**] = [**k<sub>i</sub>**] + [row **i** amount].
 
 This is how each row coefficient is calculated. 
 
@@ -25,9 +25,9 @@ This is how each row coefficient is calculated.
 
 In this case, the amount is distributed equally throughout the rows, and for each row, the calculation is performed like this:
 
-[row **i** distribution] = ROUND([**ki**] * [Input Percent], [Round Scale).
+[row **i** distribution] = ROUND([**k<sub>i</sub>**] * [Input Percent], [Round Scale).
 
-If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row (to multiply the percent by [**ki**], which is the base amount only for the **i** row).
+If a percent is used for the additional amount calculation, it may be used for the calculation of the distributed amount for each row (to multiply the percent by [**k<sub>i</sub>**], which is the base amount only for the **i** row).
 
 You may avoid the disadvantage of even distribution, but the amount distributed to a row may not be equal to the input percent. This is a huge problem for things like VAT.
 
@@ -68,7 +68,7 @@ The document has two rows: row \\#10 for **150 EUR** and row \\#20 for **40 EUR*
 
 For the distribution of corporate discount, there are the following **coefficients**: 
 
-[**k1**] = **150** and [**k2**] = **40** (only the base line amounts are taken into account)
+[**k<sub>1</sub>**] = **150** and [**k<sub>2</sub>**] = **40** (only the base line amounts are taken into account)
 
 The [Corporate Discount] is distributed in 150:40 ratio as follows:
 
@@ -82,8 +82,8 @@ For the next amount - 'Easter bonus' - the distribution is in the same 150:40 ra
 
 For the last additional amount, the coefficients are different. The distributed amounts from the other additional amounts have to be  added to the row amounts. The **coefficients** are as follows:
 
-[**k1**] = [Corporate Discount for row \#10] + [Easter Bonus for row \#10] + [line amount for row \#10] = -4.5 + -7.89 + 150 = 137.61;
-[**k2**] = [Corporate Discount for row \#20] + [Easter Bonus for row \#20] + [line amount for row \#20] = -1.2 + -2.11 + 40 = 36.69.
+[**k<sub>1</sub>**] = [Corporate Discount for row \#10] + [Easter Bonus for row \#10] + [line amount for row \#10] = -4.5 + -7.89 + 150 = 137.61;
+[**k<sub>2</sub>**] = [Corporate Discount for row \#20] + [Easter Bonus for row \#20] + [line amount for row \#20] = -1.2 + -2.11 + 40 = 36.69.
 
 The **VAT distribution** is as follows:
 
