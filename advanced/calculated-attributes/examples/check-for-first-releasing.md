@@ -2,7 +2,7 @@
 items: CalculatedAttributeExamples
 ---
 
-# Check whether the releasing of the document is first or not
+# Check whether the releasing of a document is first or not
 
 Sometimes, you may want to know whether the 'Released' state of document is selected for the first time or not. 
 
