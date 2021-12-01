@@ -19,7 +19,7 @@ items: Operators
 
 > [!NOTE]
 > 
-> The criteria concerning which element is first may not meet your expectations. <br> If sorting matters to you, please use **FIRST** together with the @cao-SORT and @cao-ORDERBY operators.
+> The criteria concerning which element is first may not meet your expectations. <br> If sorting matters to you, please use **FIRST** together with the **[SORT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/sort.html)** and **[ORDERBY](https://docs.erp.net/tech/advanced/calculated-attributes/operators/orderby.html)** operators.
 
 **Example:**
 
