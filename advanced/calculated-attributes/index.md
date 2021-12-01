@@ -54,7 +54,7 @@ The following calculated attribute sums all sales order lines, the product of wh
 - Line 60: Specifies that the first condition is the value of an attribute called 'CustPropPrj' should be '500'.
 - Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'.
 
-This example shows how attributes can calculate complicated formulas, query the database, and get related values.
+Attributes can calculate complicated formulas, query the database and get related values.
 
 --------
 ### See more
