@@ -4,8 +4,8 @@ When distributing by amount, rows amounts are used to define the distribution pr
 
 Two types exist:
 
-- row amounts (only if the additional amount has _Base On Lines_ as 'True');
-- amounts distributed to the rows (only the ones which  participate in the base amount of the current additional amount).
+- **row amounts** (only if the additional amount has _Base On Lines_ as 'True');
+- **amounts distributed to the rows** (only the ones which  participate in the base amount of the current additional amount).
 
 To define the proportion of row **i**, its coefficient is calculated as follows:
 
