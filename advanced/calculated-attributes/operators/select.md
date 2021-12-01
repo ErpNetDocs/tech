@@ -46,7 +46,7 @@ When using **SELECT**, you send a request to the database with as many **[WHERE]
 
 If there's an unsupported filter, then the list returned by **SELECT** may be filtered additionally by **[FILTER]**.
 
-The disadvantages are that a **SELECT** statement makes a direct request to the database, which may influence productivity and slow down the calculation of the attribute. When using **SELECT**, the user has to apply as many **[WHERE]** filters as possible, because this would limit the amount of data which would be extracted from the database into the client. 
+A **SELECT** statement makes a direct request to the database, which may influence productivity and slow down the calculation of the attribute. When using **SELECT**, you have to apply as many **[WHERE]** filters as possible, because this would limit the amount of data extracted from the database into the client. 
 
 If **SELECT** doesn't provide enough filters, the result may be filtered by **[FILTER]**, which operates on data already loaded in the client.
 
