@@ -59,7 +59,8 @@ The system tracks the fulfillment of a document, using several tracking techniqu
 * Natural matching
 * Parent line
 * Fulfillment table
-#### Natural matching
+
+### Natural matching
 
 Natural matching matches the parent and the sub-documents, based on natural attribute values.
 
@@ -89,7 +90,7 @@ Let’s review the previous example in the light of natural matching.
 Natural matching will **not** qualify the shipment of tangerines as execution of the sale of oranges, because it's a different product.
 Even if the customer agrees to accept the tangerines, this can't be represented in the system.
 
-**Another example**
+Another example:
 
 А customer orders a specific lot of a product, but they're ready to accept another lot:
 
