@@ -47,7 +47,7 @@ If you have two document rows - one with a line amount of 150 EUR and another wi
 
 **The calculations for the three additional amounts are as follows:**
 
-- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows);</br> so [Corporate discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
+- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows); so [Corporate discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
 
 - Easter bonus is **-10 EUR** (there's no currency conversion because the amount is in EUR);
 - VAT is calculated:</br>
