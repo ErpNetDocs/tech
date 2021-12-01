@@ -11,7 +11,7 @@ When the value of a calculated attribute is requested, it's calculated "on the f
 > Calculated attribute formulas are compiled to native executable format.<br>
 > Their calculation speed is very similar to the speed of the system-defined calculated attributes.
 
-#### Example 1 - Get default payment term days
+**Example 1 - Get default payment term days**
 
 Suppose that in a sales order, you want to display the customers default payment term (in days).
 
@@ -27,7 +27,7 @@ You can define the following calculated attribute:
 - Line number 10 is the only line in the calculated attribute
 - The return value is the value of the attribute **DefaultPaymentTermDays** in the customer entity.
 
-#### Example 2 - Complex filter and summation
+**Example 2 - Complex filter and summation**
 
 The following calculated attribute sums all sales order lines, the product of which:
 
@@ -52,9 +52,9 @@ The following calculated attribute sums all sales order lines, the product of wh
 - Line 40: Creates a query, which filters the products with the condition, specified on Line 50.
 - Line 50: Specifies that the condition is comprised of two conditions, linked with **AND**.
 - Line 60: Specifies that the first condition is the value of an attribute called 'CustPropPrj' should be '500'.
-- Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'.
+- Line 70: Specifies that the second condition is that the name of the product should contain 'Tool'. <br><br>
 
-Attributes can calculate complicated formulas, query the database and get related values.
+Attributes can calculate complicated formulas, query the database and get related values. 
 
 --------
 ### See more
