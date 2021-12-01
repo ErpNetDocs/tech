@@ -19,7 +19,7 @@ Using the attribute, you can create a business rule which that **prohibits** the
 **Explanation:**
 
 - 10: Check if EXP:20 is true or false. If EXP:20 is true - the calculated attribute displays 'True', else - 'False'.
-- 20: Check if there is **AdjustedDocument**. If there's no such reference, then the document is **not** an adjustment document.
+- 20: Check if there is **AdjustedDocument**. If there's no reference, the document is **not** an adjustment document.
 - 30: Check if EXP:40 is true or false.
 - 40: Check if the value of the custom property 'Property1' is equal to EXP:50.
 - 50: Get the value of the 'Property1' of the adjusted document.
