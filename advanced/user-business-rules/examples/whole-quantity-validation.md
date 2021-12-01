@@ -18,7 +18,9 @@ When this user business rule is activated and you try to release a sales order w
 - line 20 - product B - Quantity 5.00
 
 the system would return an **error** with the text you entered in the action of the user business rule: <br><br> _You have entered decimal number as a quantity. <br>Please, check the data entered in the sales order lines and try again!_
+
 <br>
+
 With this user business rule activated, if the sales order has the following lines,
 
 - line 10 - product A - Quantity 5.00
