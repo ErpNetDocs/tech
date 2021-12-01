@@ -7,7 +7,7 @@ The relationship is contained in the 'parent-document relationship type' attribu
 - **Sub-task** - the child document is a sub-task that must be done to complete the parent document
 - **Next task** - the child document is NOT related to the next task and the parent document can be completed **without** requiring the child document to be completed.
 
-For example, **the sales order-store order** relationship tends to be of 'sub-task' type since the store order must be completed before the sales order. The **offer-sales order** relationship is usually of 'next task' type, as the work on the offer can be completed once the sales order is created. 
+For example, **the sales order-store order** relationship tends to be of 'sub-task' type since the store order must be completed before the sales order. The **offer-sales order** relationship is of 'next task' type, as the work on the offer can be completed once the sales order is created. 
 There's no need to complete the sales order first.
 
 The allowed child document states depend on the relationship type and the parent document state. 
