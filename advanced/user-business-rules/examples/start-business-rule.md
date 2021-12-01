@@ -10,4 +10,4 @@ You can set a business rule that's triggered only when you're releasing a docume
 
 For more information, see **[Check whether the releasing of the document is first or not?](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**. 
 
-You can use this attribute as a business rule condition `#IsFirstReleasing = True`, which means the rule will be triggered only when the document is released for the first time, **not** when the released state is re-selected.
+You can use this attribute as a business rule condition `#IsFirstReleasing = True` - the rule is triggered only when the document is released for the first time, **not** when the released state is re-selected.
