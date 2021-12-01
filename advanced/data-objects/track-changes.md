@@ -14,9 +14,9 @@ Track Changes is a system in @@name which can be used to track changes in а dat
 | Level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
 | 0 | Do not track changes | Do not track any changes for this entity. |
-| 1 | Track last change | Store information only for the latest modification of the tracked object. |
-| 2 | Track object changes| All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Do not store information about the changes in the attributes. |
-| 3 | Track object & attribute changes |  All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding BLOB attributes. <br> These are large-size attributes like images, files, etc.|
+| 1 | Track last change | Stores information for latest modification of the tracked object. |
+| 2 | Track object changes| All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Does not store information about the changes in the attributes. |
+| 3 | Track object & attribute changes |  All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding BLOB attributes. These are large-size attributes like images, files, etc.|
 | 4 | Track object, attribute & BLOB changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
 
 
@@ -94,7 +94,7 @@ But now, data about each attribute (field) change is also kept.
 - **Attribute name** - the name of the changed attribute.
 - **New value** - the string representation (culture insensitive) of the new value.
 
-Some attribute changes might not be reflected properly by the system. Since the Track Changes system works at application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.
+Some attribute changes might not be reflected properly by the system. Since it works at application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.
 
 The *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. Therefore, only the **new** values are stored. 
 
@@ -106,11 +106,11 @@ This design was chosen for the following reasons:
  
 This was the initial and **abandoned** implementation of the track changes system. 
 
-The process needed to synchronously read the previous database value before each update. This slowed down the database transactions and it was decided that the **'new values only'** approach would better fit performance requirements.
+The process needed to synchronously read the previous database value before each update. This slowed down database transactions - the **'new values only'** approach was better fit to meet performance requirements.
 
-- The storage of the new values can be performed asynchronously **AFTER** the actual database transaction has completed. In this way, the Track Changes system has minor effect on the speed of every-day OLTP transactions.
+- The storage of new values can be performed asynchronously **AFTER** the actual database transaction has completed. In this way, the TC system has minor effect on the speed of every-day OLTP transactions.
 
-- One drawback of asynchronous saving is that, upon server crash, track-changes data about the attribute changes might be **lost**. In this case, the object change will still be recorded **synchronously** (as part of the transaction).
+- One drawback of asynchronous saving: upon server crash, track-changes data about the attribute changes might be **lost**. The object change will still be recorded **synchronously** (as part of the transaction).
 
 ### Level 4 - track object, attribute & BLOB changes
 
