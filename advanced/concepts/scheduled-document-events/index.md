@@ -6,7 +6,7 @@ They typically appear in the form of numerous recalculations resulting from othe
 
 For example, releasing a cost correction creates scheduled events for all affected documents. 
  
-A scheduled document event needs to be executed **before** it's applied. If it's created by a cost correction, the execution causes a resetting of the document state of the store transactions, which was included in the cost correction. The reset triggers the accounting voucher generation procedures and causes re-accounting of documents, including the adjusted cost.
+A scheduled document event needs to be executed **before** it's applied. If it's created by a cost correction, the execution causes a reset of the **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** of the store transactions, included in the cost correction. A reset triggers the accounting voucher generation procedures and causes re-accounting of documents, including adjusted cost.
  
 An execution can be performed:
 
