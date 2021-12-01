@@ -74,7 +74,7 @@ If you look at the objects, they'll have the following attributes:
   - First name
   - Last name
 
-If you use table data, in order to access all attributes of a company or a person, you need to **relate** (join) data from different tables, using unique identifiers. These are the so-called 'surrogate keys' because they exist only in the database and have no real-world counterpart. Using such keys and relating data between tables is expected in the world of databases.
+If you use table data to access all attributes of a company or a person, you need to **relate** (join) data from different tables using unique identifiers. These are 'surrogate keys' - they exist only in the database and have no real-world counterpart. Using such keys and relating data between tables is normal in the world of databases.
 
 Internally, the systems use **objects** because it's much easier to process them. Objects already have all necessary attributes related together and there's no need to use identifiers or table relations.
 
