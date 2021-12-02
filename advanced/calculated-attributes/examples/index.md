@@ -16,3 +16,7 @@
 - **[Sales amounts of the customer for the last 30 days](https://docs.erp.net/tech/advanced/calculated-attributes/examples/sales-amounts-last-30-days.html)**
 - **[Specific day from document date](https://docs.erp.net/tech/advanced/calculated-attributes/examples/day-from-document-date.html)**
 - **[Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)**
+
+
+LIST TEST
+[!list items=CalculatedAttributeExamples limit=100 default-text="None"]
