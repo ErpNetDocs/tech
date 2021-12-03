@@ -15,7 +15,7 @@ This requires the previous calculation of the other amounts.
 
 2. If the аdditional аmount is marked as _Base On Lines_, the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights, you multiply by 100%). 
 
-For more information, see [Rows weighting](~/advanced/document-amounts/rows-weighting.md).
+For more information, see [Rows weighting](../advanced/document-amounts/rows-weighting.md).
 
 
 **Example 1:**
