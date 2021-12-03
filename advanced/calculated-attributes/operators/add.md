@@ -34,4 +34,4 @@ OUTPUT: <br> If 'QuantityValue = 1', the output will be '1.25'.
 
 
 #### More examples:
-- **[Total quantity and scrap quantity in recipe ingredients](https://docs.erp.net/tech/advanced/calculated-attributes/examples/total-quantity-and-scrap-in-recipe-ingredients.html)**
+- **[Total quantity and scrap quantity in recipe ingredients](../examples/total-quantity-and-scrap-in-recipe-ingredients.md)**
