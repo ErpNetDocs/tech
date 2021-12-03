@@ -4,7 +4,7 @@ The sequence of documents in a process forms a **document flow**. Just a sequenc
 
 Documents in @@name often have **sub-documents**. 
 
-Most of the time, they're **[automatically generated](https://docs.erp.net/tech/advanced/document-flow/generation.html)** or created by some **[fulfillment function](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**. 
+Most of the time, they're **[automatically generated](generation.md)** or created by some **[fulfillment function](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**. 
 
 However, manually entering a sub-document is also allowed and sometimes encouraged.
 
