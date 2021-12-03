@@ -19,11 +19,11 @@ It defines the allowed spread: a +/- percent by which the goal could be missed b
 
 Data values support **enterprise companies** (for more information, see [Multi-company](https://docs.erp.net/tech/concepts/multi-company.html)).
 
-Together, Data measures and Data values support **custom properties**.
+As all entities, Data measures and Data values support **custom properties**, which allows entering additional information.
 
 Values may be entered on a daily, monthly or yearly basis by the user, an application or other. They may also be entered by multiple sources at the same time.
 
-Data warehouse is after that used in the @@name BI. An external BI also may be used.
+Data warehouse is after that used in the @@name BI or external BI solution.
 
 ### Further reference:
 
