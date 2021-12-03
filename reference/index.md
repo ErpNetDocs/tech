@@ -11,4 +11,4 @@ Select a topic from the list below to learn more.
 - [Forms with activated domain front-end logic](forms-with-activated-domain-front-end-logic.md)
 - [Conversion validation methods](conversion-validation-methods.md)
 
-For additional topics, check out the [Glossary](~/glossary/index.md).
+For additional topics, check out the [Glossary](glossary/index.md).
