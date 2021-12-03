@@ -1347,7 +1347,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-flow/index.html",
-          "hash": "Cj1mOdM9koouiQI8ILpCUQ=="
+          "hash": "031dWFnb1ya8Ik8vAlQgeQ=="
         }
       },
       "is_incremental": false,
@@ -2136,7 +2136,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/products/index.html",
-          "hash": "bd7BJH8sSb5MYwdVPIy8mg=="
+          "hash": "D5bTd3LaqqOiJz78tMIFmQ=="
         }
       },
       "is_incremental": false,
@@ -5034,72 +5034,15 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/entities-validation/code-validation-strict.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/entities-validation/code-validation-strict.html",
-          "hash": "eMBMhznd4tvP0VIdEbfFew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/entities-validation/identifier-validation.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/entities-validation/identifier-validation.html",
-          "hash": "d62BkC1v91VixpPyiUBlFw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/entities-validation/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/entities-validation/index.html",
-          "hash": "84WvVGefKbzR36nbUs4j+Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/entities-validation/username-validation.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/entities-validation/username-validation.html",
-          "hash": "n1e678ayaVb5a3aPrthRVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "reference/glossary/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/glossary/index.html",
-          "hash": "qpECFonX8lnbLNuogilbow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "reference/index.md",
       "output": {
         ".html": {
           "relative_path": "reference/index.html",
-          "hash": "7YK5CbzzaC5ODPZBm2XYuA=="
+          "hash": "PnRbuJtAci8eAQj9gPGFAg=="
         }
       },
       "is_incremental": false,
@@ -5135,7 +5078,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "fAYbIf1t9KqvNeNiEAAAJg=="
+          "hash": "sliy3zqhqL1NVVEzXD+3Uw=="
         }
       },
       "is_incremental": false,
