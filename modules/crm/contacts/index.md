@@ -15,4 +15,4 @@ The activities are like calendar appointments on steroids. Activities
 * Support questionaries (through the use of user defined data attributes)
 And much more.
 
-Activities can be used to automatically create sales opportunities in the [Presales](https://docs.erp.net/tech/modules/crm/presales/index.html) module.
+Activities can be used to automatically create sales opportunities in the [Presales](../crm/presales) module.
