@@ -1167,7 +1167,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "5yrYSCQgvkMxccPWCC+Dmg=="
+          "hash": "rQ0wJszEq+HUdGZUlSQTCg=="
         }
       },
       "is_incremental": false,
@@ -4999,18 +4999,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "reference/conversion-validation-methods.md",
-      "output": {
-        ".html": {
-          "relative_path": "reference/conversion-validation-methods.html",
-          "hash": "twmp+fDgc5Ct0dqz6bReoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "reference/country-specific-functionality.md",
       "output": {
         ".html": {
@@ -5034,15 +5022,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "reference/index.md",
       "output": {
         ".html": {
           "relative_path": "reference/index.html",
-          "hash": "PnRbuJtAci8eAQj9gPGFAg=="
+          "hash": "ZAlaaHbi7rp/B9OK4nk8hw=="
         }
       },
       "is_incremental": false,
@@ -5078,7 +5063,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "sliy3zqhqL1NVVEzXD+3Uw=="
+          "hash": "awm5G3rTB0TzGqY7BUqYDg=="
         }
       },
       "is_incremental": false,
