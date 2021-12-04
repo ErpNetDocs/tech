@@ -18,7 +18,7 @@ This can be defined as follows:
 | 60201   |                    |
 | 60209   | Company X          |
 
-Similarly, products and other definitions can belong to a **single** enterprise company or to **all** enterprise companies.
+Similarly, products and other definitions can belong to a **single** enterprise company or **all** enterprise companies.
 
 > [!NOTE]
 > 
