@@ -1,11 +1,11 @@
-# ERP Instances
+# ERP instances
 
-The ERP.net service is a hosted ERP service. Accessing the data is done through ERP Instances. When you sign up at [erp.net](https://erp.net/), you can create and manage a new ERP Instance.
+The @@name service is a hosted ERP service. Accessing the data is done through ERP instances. 
 
-An ERP Instance is a tenant in the hosting environment. It is multi-company, e.g. it allows managing multiple related legal entities (companies) in one instance. You don't need to create separate instances for each managed company.
+When you sign up at **[erp.net](https://erp.net/)**, you can create and manage a **new** instance. It's a tenant in a hosting environment, allowing the management of multiple related legal entities (companies) in one instance. You don't need to create separate instances per managed company.
 
-Each ERP Instance has a unique name. The instance can be accessed at: https://<<instance_name>>.my.erp.net
+Each instance has a unique **name** and can be accessed at *https://<<instance_name>>.my.erp.net*
 
 For example, the demonstration database, DEMODB, is located at:
 
-> [https://demodb.my.erp.net](https://demodb.my.erp.net/)
+**[https://demodb.my.erp.net](https://demodb.my.erp.net/)**
