@@ -816,13 +816,13 @@
   },
   "concepts/erp-instances.html": {
     "href": "concepts/erp-instances.html",
-    "title": "ERP Instances | ERP.net Tech Docs",
-    "keywords": "ERP Instances The ERP.net service is a hosted ERP service. Accessing the data is done through ERP Instances. When you sign up at erp.net , you can create and manage a new ERP Instance. An ERP Instance is a tenant in the hosting environment. It is multi-company, e.g. it allows managing multiple related legal entities (companies) in one instance. You don't need to create separate instances for each managed company. Each ERP Instance has a unique name. The instance can be accessed at: https://<<instance_name>>.my.erp.net For example, the demonstration database, DEMODB, is located at: https://demodb.my.erp.net"
+    "title": "ERP instances | ERP.net Tech Docs",
+    "keywords": "ERP instances The ERP.net service is a hosted ERP service. Accessing the data is done through ERP instances. When you sign up at erp.net , you can create and manage a new instance. It's a tenant in a hosting environment, allowing the management of multiple related legal entities (companies) in one instance. You don't need to create separate instances per managed company. Each instance has a unique name and can be accessed at https://<<instance_name>>.my.erp.net For example, the demonstration database, DEMODB, is located at: https://demodb.my.erp.net"
   },
   "concepts/index.html": {
     "href": "concepts/index.html",
     "title": "Business logic concepts | ERP.net Tech Docs",
-    "keywords": "Business logic concepts This section contains concepts, applicable to all modules."
+    "keywords": "Business logic concepts This section contains concepts applicable to all modules. Documents Products Multi-language Multi-company support Parties concepts ERP instances"
   },
   "concepts/multi-company.html": {
     "href": "concepts/multi-company.html",
