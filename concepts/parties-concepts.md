@@ -1,9 +1,8 @@
 # Parties concepts
 
-## Description
-Parties in @@name are one of the most widely used definition. Generally, a party is a participant in any business relations or transaction.
+Parties are one of the most widely used definitions in @@name. They usually participate in business relations or transactions.
 
-Examples of parties include:
+Examples include:
 
 - Business customers
 - Consumer customers
@@ -12,47 +11,57 @@ Examples of parties include:
 - Dealers
 - Company locations
 - Departments
-- etc...
 
-### Basic party types
-Parties do not exist by their own. They are always created as another object. Most parties are created as Person or Company. In object terms, it means that Person and Company inherit Party. The Party itself is called to be of type Person or Company.
+## Basic party types
 
-> [!Note]
-> Parties cannot be directly created. They are always instantiated as some sub-type, like Person or Company.
+Parties don't exist on their own - they're always created as separate objects, like person or company. 
 
-This diagram shows the relationship between Party, Person and Company:
+In object terms, it means that 'Person' and 'Company' **inherit** 'Party'. 'Party' is considered **of type** 'Person' or 'Company'.
+
+> [!NOTE]
+> 
+> Parties **can't** be created directly. They're always instantiated as some sub-type, like 'Person' or 'Company'.
+
+This diagram shows the relationship between party, person and company:
 
 ![Party Basic](Party-basic.png)
 
-### Party attributes inheritance
+## Party attributes inheritance
 
-The fact, that Person and Company inherit Party also means, that all attributes of Party are also attributes of Person and Company. <br>
-For example, a Party has an Area attribute. So, all Person and Company objects would also have an "Area" attribute. <br>
-The opposite is not true. E.g. Person and Company objects have attributes, which are specific to them and are not general Party attributes.<br>
-For example:
+All attributes of 'Party' are also attributes of 'Person' and 'Company'. 
+
+For example, if a party has an **Area** attribute, all 'Person' and 'Company' objects would also have it. 
+
+The opposite **isn't** true. 'Person' and 'Company' objects have attributes which are specific only to them.
 
 ![Party Attributes](Party-attributes.png)
 
-Party has Parent Party and Area attributes, which are inherited by Company and Person. But person's "First name" and "Last name" are specific only to persons. Neither companies nor generally parties have "First name".
+In this diagram, 'Party' has **Parent Party** and **Area** attributes, inherited by 'Company' and 'Person'. 
 
-### Relationships with other entity types
+'First name' and 'Last name' are specific only to 'Person'. Neither companies nor parties have them.
 
-Although parties do not exist on their own, they can participate in relationships. For example, a Customer or Supplier contract are objects, which can have a relationship with a Party. Relationship with Party means, that an actual customer contract object would relate to either a Person or a Company. This is shown on the following diagram:
+## Relationships with other entity types
+
+Although parties don't exist on their own, they can participate in **relationships**. 
+
+For example, customer and supplier contracts are objects that can coexist with a party. As a result of the relationship, a both would relate to either a person or a company. This is shown on the following diagram:
 
 ![Party Basic Contracts](Party-basic-contracts.png)
 
-> [!Note]
-> Customer (contract), Supplier (contract) and Dealership (contract) are actually called simply Customer, Supplier and Dealer in @@name.
+> [!NOTE]
+> 
+> In @@name, Customer (contract), Supplier (contract) and Dealership (contract) = Customer, Supplier and Dealer.
 
-> [!Note]
-> The diagram shows, that one Party object can participate in relationships with many Customer contract objects. In fact, however, the current implementation of @@name allows many Customer contracts per Party, but only one for each enterprise company. This means, that one party can have only a single customer contract with any given enterprise company.
+> [!NOTE]
+> 
+> The diagram shows how one 'Party' object can be in relationships with **many** 'Customer contract' objects. The current implementation of @@name allows multiple customer contracts per party, but only **one** for each enterprise company. In other words, a party can only have a single customer contract with any given enterprise company.
 
-To clarify the above diagrams, lets provide an example. Suppose we have:
+Let's suppose you have:
 
-- A customer, which is a company, called "ABC"
-- A supplier, which is a person, named "John"
+- A **customer** (company), called "ABC"
+- A **supplier** (person), named "John"
 
-This will be represented with the following objects:
+This will be represented by the following objects:
 
 - Party (ABC)
 - Company (ABC), which inherits Party (ABC)
@@ -61,22 +70,24 @@ This will be represented with the following objects:
 - Person (John), which inherits from Party (John)
 - Supplier (John), which points to Party (John)
 
-If we query the system with a query, that can be stated as "Show me ALL parties", the result will be:
+If you query the system with something like "Show me ALL parties", the result will be:
 
 - Party (ABC)
 - Party (John)
 
-If we query with "Show me ALL customers", the result will be:
+If you query with "Show me ALL customers", the result will be:
 
 - Customer (ABC)
 
 ## Party hierachy
 
-The basic party types are Person and Company, but there are some more party types. Among them are Department and Division. By using all the party types, the data about parties can be nicely organized. Particularly handy is the ability to hierarchically structure the parties. Having the departments and divisions as parties allows flexible representation of the different corporate hierarchies.
+There are other party types in addition to the main ones. Among them are 'Department' and 'Division'. 
 
-For example, let's have Corporation A structured in the following way:
+By using all types, data about parties can be neatly organized. A useful example is the ability to structure parties **hierarchically**. Having departments and divisions as parties allows for flexible representation of different corporate hierarchies.
 
-- Corporation A
+For example, let's have 'Corporation A' structured in the following way:
+
+- **Corporation A**
   - Division 1
     - Sales Department
     - Marketing Department
@@ -86,9 +97,9 @@ For example, let's have Corporation A structured in the following way:
   - Global Marketing Department
   - Global Accounting Department
 
-The flexible party hierarchy also allows structuring even different companies in a corporation:
+The flexible party hierarchy also allows structuring different companies within a corporation:
 
-- Corporation B
+- **Corporation B**
   - Company A
     - Consumer Electronics Division
       - Sales Department
@@ -100,19 +111,22 @@ The flexible party hierarchy also allows structuring even different companies in
     - Accounting Department
   - Corporate Financials Department
 
-> [!Note]
-> Because our own enterprise companies [Multi-Company](https://docs.erp.net/tech/concepts/multi-company.html) are also companies (which are parties), party hierarchy can be used for organizing both our own corporate structure and the corporate structure of our business partners.
+> [!NOTE]
+> 
+> Because our own enterprise companies **[Multi-company](https://docs.erp.net/tech/concepts/multi-company.html)** are also parties, such hierarchy can be used for organizing our own corporate structure and the corporate structure of our business partners.
 
 ## Party relationships
 
-Party relationships organize the formal and informal relationships between different parties. Using party relationships, information, such as the following can be easily represented:
+Relationships between different parties can be formal or informal. 
+
+Using them allows for the easy representation of information:
 
 - Peter works for Company A
 - Peter is a friend of George
-- Steven is married to Susan since 8/3/2011
+- Steven has been married to Susan since 8/3/2011
 - John worked for Company B from 1/1/2010 till 3/5/2015
 
-The above information is represented in a table in the following way:
+This information, on the other hand, is represented by a table:
 
 | From Party | Relationship Type | To Party  | From Date | To Date  | Notes |
 | :--------- | :---------------- | :-------- | :-------- | :------- | :---- |
@@ -121,4 +135,4 @@ The above information is represented in a table in the following way:
 | Steven     | is husband of     | Susan     | 8/3/2011  |          |       |
 | John       | works for         | Company B | 1/1/2010  | 3/5/2015 |       |
 
-Obviously, From Date and To Date represent the dates when the relationship was established and terminated.
+_From Date_ and _To Date_ represent the dates when the relationship was **established** and **terminated**, respectively.
