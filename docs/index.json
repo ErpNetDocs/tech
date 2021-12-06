@@ -947,12 +947,12 @@
   "modules/community/index.html": {
     "href": "modules/community/index.html",
     "title": "Community | ERP.net Tech Docs",
-    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users."
+    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users. Case Management Digital marketplace Notification settings Notifications Social comments Social group members Social groups Social interactions Social posts Social reactions"
   },
   "modules/community/social-interactions/index.html": {
     "href": "modules/community/social-interactions/index.html",
     "title": "Social interactions | ERP.net Tech Docs",
-    "keywords": "Social interactions This module represents the social interactions between internal and external users, just like in social networks like Facebook. The users are joined to [social groups]((../social-groups.md). Each [social post]((../social-posts.md) is made in a group. There is no personal space like in Facebook. Each post can contain social comments , replies and [reactions]((../social-reactions.md). These can also be attached to any data object in the system. Notifications are special data records that contain information about a single notification for a user. Notification settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. For more information, refer to: Notification settings Notifications Social comments Social group members Social groups Social posts Social reactions"
+    "keywords": "Social interactions This module represents the social interactions between internal and external users, just like in social networks like Facebook. The users are joined to social groups . Each social post is made in a group. There is no personal space like in Facebook. Each post can contain social comments , replies and reactions . These can also be attached to any data object in the system. Notifications are special data records that contain information about a single notification for a user. Notification settings allow users to specify which notifications they want to receive. They can also specify whether the notifications should be sent in-app, by mail or by sms. For more information, refer to: Notification settings Notifications Social comments Social group members Social groups Social posts Social reactions"
   },
   "modules/community/social-interactions/notifications/index.html": {
     "href": "modules/community/social-interactions/notifications/index.html",
