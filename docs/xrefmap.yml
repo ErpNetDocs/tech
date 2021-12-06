@@ -199,6 +199,9 @@ references:
 - uid: notification-settings
   name: Notification settings
   href: modules/community/social-interactions/notifications/settings.html
+- uid: social-interactions
+  name: Social interactions
+  href: modules/community/social-interactions/index.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
