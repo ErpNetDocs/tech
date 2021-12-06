@@ -1,7 +1,3 @@
----
-items: Social-interactions
----
-
 # Social groups
 
 The social groups are the primary areas (circles) where [social interactions](index.md) occur.
