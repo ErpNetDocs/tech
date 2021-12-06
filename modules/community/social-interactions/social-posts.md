@@ -1,7 +1,3 @@
----
-items: Social-interactions
----
-
 # Social posts
 
 This represents a single social post. It resembles a Facebook post.
