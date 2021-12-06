@@ -1,6 +1,3 @@
----
-items: Social-interactions
----
 
 # Social group members
 
