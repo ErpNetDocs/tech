@@ -1,7 +1,3 @@
----
-items: Social-interactions
----
-
 # Social comments
 This represents a comment to a data object within the system. 
 
