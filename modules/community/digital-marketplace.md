@@ -6,17 +6,17 @@ It resembles the way iOS and Android provide apps and other content with access 
 
 The main entities are:
 
-- **Marketplace** - where developers publish and end-users obtain (install) apps. Each marketplace operates only for a single device type (class).
+- **Marketplace** - a place where developers publish and end-users obtain (install) apps. Each marketplace operates only for a single device type (class).
 
-- **Marketplace app** - a third-party app listed on a marketplace and published by an app developer. It manifests a set of permissions which might require functioning. An app can have multiple media resources attached to it. They can be used to display media to the end-user. 
+- **Marketplace app** - a third-party app listed on a marketplace and published by an app developer. It manifests a set of permissions, which it might require in order to function. An app can have multiple media resources attached to it (through its data object). They can be used to display media to the end-user. 
 
 - **Marketplace app permission** - permission which an app might require. There are pre-installed permissions required before installation. Some permissions might be post-install and optional. Each app permission is of Marketplace Permission Type.
 
 - **Marketplace app review** - a review and star rating coming from a user who has installed the app. Uses the Social Interactions module for comments and reactions.
 
-- **Marketplace app license type** - a type of license which can be provided for an installed instance of an app. Some license types allow only a 0 or 1 license qty, while others allow multiple licenses (for example, for any maximum limit of the license).
+- **Marketplace app license type** - a type of license which can be provided for an installed instance of an app. Some license types allow only a 0 or 1 license qty, while others allow multiple licenses (for example, for max users/max GB or any other max limit of the license).
 
-- **Marketplace permission type** - permission which can be granted to an installed application. Each permission type has a permission key - a unique string identifying the permission.
+- **Marketplace permission type** - permission which can be requested/granted to an installed application. Each permission type has a permission key - a unique string identifying the permission.
 
 - **User device** - a device under the user's control. It can be a phone, computer, database, service, user account (in a social network) or anything else which allows secure access for apps to its resources.
 
