@@ -1,5 +1,5 @@
 ---
-items: Social-interactions
+uid: notification-settings
 ---
 
 # Notification settings
