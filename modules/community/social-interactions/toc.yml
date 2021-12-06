@@ -1,16 +1,16 @@
 - name: Overview
   href: index.md
+- name: Social groups
+  href: social-groups.md
+- name: Social group members
+  href: social-group-members.md
+- name: Social posts
+  href: social-posts.md
+- name: Social comments
+  href: social-comments.md
+- name: Social reactions
+  href: social-reactions.md
 - name: Notifications
   href: notifications/toc.yml
   topicHref: notifications/index.md
-- name: Social comments
-  href: social-comments.md
-- name: Social group members
-  href: social-group-members.md
-- name: Social groups
-  href: social-groups.md
-- name: Social posts
-  href: social-posts.md
-- name: Social reactions
-  href: social-reactions.md
   
