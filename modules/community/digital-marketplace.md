@@ -1,7 +1,3 @@
----
-items: Community
----
-
 # Digital marketplace
 
 A digital marketplace is where developers publish apps for the end-users. When an app is activated (installed) on a user device, it is granted certain permissions to access the device resources. The marketplace can, but not necessarily, include functionality for downloading and embedding the app on the device.
@@ -34,4 +30,5 @@ The main entities are:
 
 - **App developer users** - user accounts which have access to an App Developer account. Users can be admins, developers (editing app resources) and moderators (interacting with app users). The user (and his role) can be for the whole developer account, or just for a single app.
 
+(Under development)
 
