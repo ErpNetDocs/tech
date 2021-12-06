@@ -1,7 +1,3 @@
----
-items: social-interactions
----
-
 # Social reactions
 
 Social reactions represent user reactions to social content. They resemble Facebook reactions.
