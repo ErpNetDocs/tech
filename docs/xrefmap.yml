@@ -193,6 +193,12 @@ references:
 - uid: name
   name: name
   href: includes/name.html
+- uid: notifications
+  name: Notifications
+  href: modules/community/social-interactions/notifications/index.html
+- uid: notification-settings
+  name: Notification settings
+  href: modules/community/social-interactions/notifications/settings.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
