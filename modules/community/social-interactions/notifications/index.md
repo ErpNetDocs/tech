@@ -6,7 +6,7 @@ uid: notifications
 
 Notification is a single notification of one user for one event. The event can contain multiple references to objects, definitions, etc.
 
-- Although **notification** is an entity in the [Social interactions](https://docs.erp.net/tech/modules/community/social-interactions/index.html) module, a notification can be raised by any module in the system.
+- Although **notification** is an entity in the @social-interactions module, a notification can be raised by any module in the system.
 
 - Notifications **CAN** specify a data object.
 
@@ -21,7 +21,7 @@ If a user clicks on the notification, the specified URL will be opened.
   - NT_SOC_REPLY - there was a reply to my post or comment
   - NT_SOC_MENTION - I was mentioned in a post or comment
   - NT_SOC_NEW_POST - new post in a group, in which I am member
-  - NT_WM_QTY_BELOW_MIN - in [Warehouse management](https://docs.erp.net/tech/modules/logistics/wms/index.html), when the qty in a tracked bin falls below the minimum
+  - NT_WM_QTY_BELOW_MIN - in @wms, when the qty in a tracked bin falls below the minimum
   
  - When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood it.
  
