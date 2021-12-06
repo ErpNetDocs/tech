@@ -30,5 +30,6 @@ The main entities are:
 
 - **App developer users** - user accounts which have access to an App Developer account. Users can be admins, developers (editing app resources) and moderators (interacting with app users). The user (and his role) can be for the whole developer account, or just for a single app.
 
-(Under development)
+> [!NOTE]
+> The digital marketplace is currently **under development**.
 
