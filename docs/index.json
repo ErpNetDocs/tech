@@ -197,7 +197,7 @@
   "advanced/calculated-attributes/operators/index.html": {
     "href": "advanced/calculated-attributes/operators/index.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators ADD ADDDAYS AND CEILING CONCAT CONVERT COUNT DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
+    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "advanced/calculated-attributes/operators/left.html": {
     "href": "advanced/calculated-attributes/operators/left.html",
@@ -947,7 +947,7 @@
   "modules/community/index.html": {
     "href": "modules/community/index.html",
     "title": "Community | ERP.net Tech Docs",
-    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users. Case Management Digital marketplace Social interactions"
+    "keywords": "Community Community management is the management of the community of a company. This includes all sites, forums, ticketing and support systems, etc. as well as social interaction between all internal and external users. Case Management Digital marketplace Notification settings Notifications Social comments Social group members Social groups Social interactions Social posts Social reactions"
   },
   "modules/community/social-interactions/index.html": {
     "href": "modules/community/social-interactions/index.html",
