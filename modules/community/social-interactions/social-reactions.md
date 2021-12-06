@@ -1,5 +1,5 @@
 ---
-items: Social-interactions
+items: social-interactions
 ---
 
 # Social reactions
