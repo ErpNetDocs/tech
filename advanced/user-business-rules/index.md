@@ -1,3 +1,7 @@
+---
+uid: ubr
+---
+
 # User business rules
 
 These are business rules which you define on your own. 
