@@ -4,7 +4,7 @@ The sequence of documents in a process forms a **document flow**. Just a sequenc
 
 Documents in @@name often have **sub-documents**. 
 
-Most of the time, they're **[automatically generated](generation.md)** or created by some **[fulfillment function](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**. 
+Most of the time, they're **[automatically generated](generation.md)** or created by some **[fulfillment function](fulfillment.md)**. 
 
 However, manually entering a sub-document is also allowed and sometimes encouraged.
 
@@ -22,3 +22,5 @@ The design is achieved with the help of specific **routes** built for each docum
 - **[Parent document relationship type](https://docs.erp.net/tech/advanced/document-flow/parent-document-relationship-type.html)**
 - **[Transitional documents](https://docs.erp.net/tech/advanced/document-flow/transitional-documents.html)**
 - **[Creating a duplicate document and a new document from current](https://docs.erp.net/tech/advanced/document-flow/creating-duplicate.html)**
+
+[!list folder="." depth=0 style="bullet" exclude="index.md" limit=100]
