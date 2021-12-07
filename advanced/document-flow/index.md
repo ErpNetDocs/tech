@@ -15,12 +15,4 @@ The design is achieved with the help of specific **routes** built for each docum
 -------
 ### See more
 
-- **[Generation](https://docs.erp.net/tech/advanced/document-flow/generation.html)**
-- **[Generation procedures](https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html)**
-- **[Deterministic generations](https://docs.erp.net/tech/advanced/document-flow/deterministic-generations.html)**
-- **[Fulfillment](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**
-- **[Parent document relationship type](https://docs.erp.net/tech/advanced/document-flow/parent-document-relationship-type.html)**
-- **[Transitional documents](https://docs.erp.net/tech/advanced/document-flow/transitional-documents.html)**
-- **[Creating a duplicate document and a new document from current](https://docs.erp.net/tech/advanced/document-flow/creating-duplicate.html)**
-
 [!list folder="." depth=0 style="bullet" limit=100]
