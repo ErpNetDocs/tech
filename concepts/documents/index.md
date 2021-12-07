@@ -41,15 +41,15 @@ This is a non-extensive list of the more important attributes:
 
 ### Further reading:
 
-- **[States](https://docs.erp.net/tech/concepts/documents/states.html)**
+- **[States](states.md)**
 
-- **[Display and choose](https://docs.erp.net/tech/concepts/documents/display.html)**
+- **[Display and choose](display.md)**
 
-- **[Adjustments](https://docs.erp.net/tech/concepts/documents/adjustments.html)**
+- **[Adjustments](adjustments.md)**
 
 ### Advanced topics:
 
-- **[Document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)**
+- **[Document flow](/advanced/document-flow/index.md)**
 
-- **[Document amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)**
+- **[Document amounts](/advanced/document-amounts/index.md)**
 
