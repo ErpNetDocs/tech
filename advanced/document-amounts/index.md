@@ -4,20 +4,16 @@ uid: document-amounts
 
 # Additional amounts 
 
-Additional amounts are a mechanism for reporting financial amounts in documents that **aren't** contained in document rows and/or **don't** represent measurement of the main purpose of the document. 
+Additional amounts are a mechanism for reporting financial amounts in documents that **aren't** contained in document lines and/or **don't** represent measurement of the main purpose of the document. 
 
-This main purpose is written in document rows or in the document header. For example:
-
-- product price or product cost (goods or services), which is sold or bought;
+This main purpose is written in document lines or in the document header. An example of amounts reletaed to the main purpose are:
+- product price or product cost of a product (goods or services), which is sold or bought;
 - enterprise company asset price or cost (fixed, financial or rental);
 - value/amount of monetary transaction (transfer, payment or obligation).
 
 The amounts listed above are base amounts in documents and they are **NOT** additional.
 
-It's not proper to report document amounts along with the main purpose. 
-
-Otherwise, they appear as **secondary** effect of the main document purpose. 
-
+Additional amounts, on the other hand, are amounts that should not be indicated together with the main activity or are**secondary** effect of the main document purpose. 
 Here are some examples:
 
 - **VAT (and other taxes)** - taxes are not products an enterprise company is selling, producing or supplying; that's why they're usually reported as additional amounts in the documents;
