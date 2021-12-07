@@ -23,4 +23,4 @@ The design is achieved with the help of specific **routes** built for each docum
 - **[Transitional documents](https://docs.erp.net/tech/advanced/document-flow/transitional-documents.html)**
 - **[Creating a duplicate document and a new document from current](https://docs.erp.net/tech/advanced/document-flow/creating-duplicate.html)**
 
-[!list folder="." depth=0 style="bullet" exclude="index.md" limit=100]
+[!list folder="." depth=0 style="bullet" limit=100]
