@@ -15,29 +15,29 @@ This calculation is executed every time the document is saved and consists of 2 
 
 1. **Amounts determination**
 
-2. **Stage 1 amounts distribution through the affected documents** <br> That distribution is saved in the document in which it's entered, no matter if the amount affects the current document or more.
+2. **Distribution of the detrmined amounts through the affected documents** <br> The distribution is saved in the document in which it's entered, no matter if the amount affects the current or another document.
   
-The amount is determined by entering an exact value or by indicating that the amount is calculated as a **percent** of the base document amount or other **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)**. 
+The amount is determined by entering an exact value, or by indicating that the amount is calculated as a **percent** of the base document amount or other **[additional amounts](/advanced/document-amounts/index.md)**. 
 
-This data is entered by adding the amount to a document in its **Additional Amounts** panel. Then, it's used to **[calculate](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** the real value. 
+This data is entered by adding the amount to a document in its **Additional Amounts** panel. Then, it's used to **[calculate](amounts-calculation/index.md)** the real value. 
   
-After the amount value is calculated, it's **[distributed](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)** among the affected documents. 
+After the amount value is calculated, it's **[distributed](amounts-distribution/index.md)** among the affected documents. 
 
-This is necessary because you often need to determine what part of the additional amount is distributed to a **specific row** - for example, the value of the additional amount VAT for a specific sales order row.
+This is necessary because you often need to determine what part of the additional amount is distributed to a **specific line** - for example, the value of the additional amount VAT for a specific sales order lines.
 
 There may be cases when an additional amount is entered in one document, but it affects others as well. 
 
-**Take the thansport of deliveries from outside the country as an example.** 
+**Take the transport of deliveries from outside the country as an example.** 
 
 In this case, the original purchase invoice for the delivery of goods has arrived and is entered in @@name. 
 
 The purchase invoice is released **before** the purchase invoice for the transport arrives. Transport is entered as an **additional amount** so it can be included in the product's costs. 
 
-Transport can't be entered in the original purchase invoice because the document state, of which it **isn't** a part, is 'Released'. Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's good costs.
+Transport can't be entered in the original purchase invoice (because the document state is Released and also the transport is not actually part of it and it should not be included there). Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's products costs.
 
-As a result, you're able to indicate additional - **[referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**, to distribute the current amount. 
+As a result, you're able to indicate additional - **[referenced documents](referenced-documents.md)**, to which we have to distribute the current amount. 
 
-An amount may be entered in a document or referenced in others - once calculated and distributed, you need to see its **real value**. It's meant to show how the amount affects the business activities of the documents. 
+Thus, once an amount is calculated and distributed (no matter if it is distrubuted only in the document it is entered or it is distributed and in other/referenced documents), to see its real value (this real value shows how the amount affects the business activities from the documents), its distributions should be summed from all documents it is distributed in.
 
-Thus, amount distribution should be **summed** from all documents it's distributed in.
+
 
