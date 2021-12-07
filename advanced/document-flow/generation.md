@@ -1,8 +1,8 @@
 # Document generation
 
-Document generation is a key part of the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.
+Document generation is a key part of the **[document flow](/advanced/document-flow/index.md)** as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.
 
-Generation is a special case of direct **[order fulfillment](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)** when there's only one source document. 
+Generation is a special case of direct **[order fulfillment](fulfillment.md)** when there's only one source document. 
 
 It creates a single target but can often make multiple documents. When many instances are generated, it's because of different values of some key attribute(s) in the different lines of the source document.
 
@@ -10,7 +10,7 @@ It creates a single target but can often make multiple documents. When many inst
 
 Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.
 
-The definition of a document type includes a special sub-entity type called **[workflow routes](https://docs.erp.net/model/entities/Systems.Workflow.Routes.html)**. 
+The definition of a document type includes a special sub-entity type called **[workflow routes](xref:Systems.Workflow.Routes)**. 
 
 These routes specify procedures, conditions and events for the automatic generation of inheriting documents. 
 
@@ -24,7 +24,7 @@ Each document generation route contains the following properties:
 
 - **Generation events**
 
-Events that trigger the document route. The most used event usually changes the **[document state](https://docs.erp.net/tech/concepts/documents/states.html)**.
+Events that trigger the document route. The most used event usually changes the **[document state](/concepts/documents/states.md)**.
 
 - **State**
 
@@ -44,7 +44,7 @@ When not blank, it'll be run only for documents in a specified enterprise compan
 
 - **Generation procedure**
 
-The procedure which will be used to **[generate](https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html)** a target document.
+The procedure which will be used to **[generate](generation-procedures.md)** a target document.
 
 ## Properties of a document generation procedure
 
@@ -65,7 +65,7 @@ Each generation procedure is defined using the following attributes:
    - **Procedure code**<br>
      2 digits which specify the consecutive number of the procedure within the module.
 
-For example, ‘CRM0103’ specifies a procedure in the **[CRM](https://docs.erp.net/tech/modules/crm/index.html)** sub-system, 01-Sales module, procedure #3.
+For example, ‘CRM0103’ specifies a procedure in the **[CRM](/modules/crm/index.md)** sub-system, 01-Sales module, procedure #3.
 
 - **Name**<br>
 
