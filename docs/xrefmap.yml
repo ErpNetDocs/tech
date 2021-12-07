@@ -22,6 +22,9 @@ references:
 - uid: brat-WARNING
   name: WARNING
   href: advanced/user-business-rules/action-types/warning.html
+- uid: ca
+  name: User calculated attributes
+  href: advanced/calculated-attributes/index.html
 - uid: cao-ADD
   name: ADD
   href: advanced/calculated-attributes/operators/add.html
@@ -217,6 +220,9 @@ references:
 - uid: transitional-documents
   name: Transitional documents
   href: advanced/document-flow/transitional-documents.html
+- uid: ubr
+  name: User business rules
+  href: advanced/user-business-rules/index.html
 - uid: webclient
   name: webclient
   href: includes/webclient.html
