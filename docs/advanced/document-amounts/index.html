@@ -79,17 +79,16 @@
             <article class="content wrap" id="_content" data-uid="document-amounts">
 <h1 id="additional-amounts">Additional amounts</h1>
 
-<p>Additional amounts are a mechanism for reporting financial amounts in documents that <strong>aren't</strong> contained in document rows and/or <strong>don't</strong> represent measurement of the main purpose of the document.</p>
-<p>This main purpose is written in document rows or in the document header. For example:</p>
+<p><strong>Additional amounts</strong> are a mechanism for reporting financial amounts in documents that <strong>aren't</strong> contained in document lines and/or <strong>don't</strong> represent measurement of the main purpose of the document.</p>
+<p>This main purpose is written in document lines or in the document header. An example of amounts reletaed to the main purpose are:</p>
 <ul>
-<li>product price or product cost (goods or services), which is sold or bought;</li>
+<li>product price or product cost of a product (goods or services), which is sold or bought;</li>
 <li>enterprise company asset price or cost (fixed, financial or rental);</li>
 <li>value/amount of monetary transaction (transfer, payment or obligation).</li>
 </ul>
 <p>The amounts listed above are base amounts in documents and they are <strong>NOT</strong> additional.</p>
-<p>It's not proper to report document amounts along with the main purpose.</p>
-<p>Otherwise, they appear as <strong>secondary</strong> effect of the main document purpose.</p>
-<p>Here are some examples:</p>
+<p><br><strong>Additional amounts</strong>, on the other hand, are amounts that should not be indicated together with the main activity or are <strong>secondary</strong> effect of the main document purpose.
+Here are some examples:</p>
 <ul>
 <li><p><strong>VAT (and other taxes)</strong> - taxes are not products an enterprise company is selling, producing or supplying; that's why they're usually reported as additional amounts in the documents;</p>
 </li>
@@ -104,14 +103,32 @@
 <li><p><strong>Commissions (and other internal mechanisms for payments or money accounting)</strong> - if used as additional amounts, they can represent a percentage of the document amount and the result can be used for recording internal company performance or personal employee indicators.</p>
 </li>
 </ul>
+<h2 id="usage">Usage</h2>
+<p>Additional amounts are used for different reasons, such as adding amounts to the main business activity in a document or reporting secondary measurements for a business or outside activities.</p>
+<h4 id="calculating-the-amount-to-pay">Calculating the amount to pay</h4>
+<p>Some additional amounts serve to calculate the <strong><a href="/modules/crm/sales/sales-concepts/amount-to-pay.md">amount to pay</a></strong> for a document. This is marked in the definition by adding a check to the <em>Add To Customer</em> field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases.</p>
+<h4 id="calculating-goods-cost">Calculating goods cost</h4>
+<p>Additional amounts may be used to add value to the cost of the goods in the <strong><a href="/modules/logistics/index.html">logistics</a></strong>.</p>
+<p>For example, if the transport is entered as an additional amount when goods are purchased, the transport value will be <strong>added</strong> to the purchase price. When a stock transfer from one store to another is executed and it includes transport cost added to the issued products, the value of this transport should be <strong>added</strong> to the products cost <strong>before</strong> they are received in the second store.</p>
+<p>Adding transport to the purchase price or the store cost is done in the receiving store orders or store transactions. When a row in the sub-document is created, the value of this row is <strong>increased</strong> by the distribution in the current row amount of the transport.</p>
+<p>The same procedure is applied to <strong>all</strong> additional amounts marked as part of the store cost calculation.</p>
+<p>This is the <em>Add To Line</em> field in the definition of the additional amount.</p>
+<h4 id="calculating-outside-activities">Calculating outside activities</h4>
+<p>Additional amounts may also be used to report the external activities of an enterprise company.</p>
+<p>For example, if a salesman in a company receives commission or other additions to their salaries equal to a percentage of the turnover they achieve, the commision may be entered as an additional amount in the sales order, which is a <strong>percentage</strong> of the amount to pay.</p>
 <hr>
 <h3 id="see-more">See more</h3>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/determination-and-recording.html">Determination and recording</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html">Referenced documents</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">Rows weighting</a></strong></li>
+<li><a href="determination-and-recording.html">Additional amounts determination and recording</a></li>
+<li><a href="amounts-distribution/by-amount.html">Amount distribution by amount</a></li>
+<li><a href="amounts-distribution/by-product-definition.html">Amount distribution by product definition</a></li>
+<li><a href="amounts-distribution/by-quantity.html">Amount distribution by quantity</a></li>
+<li><a href="amounts-calculation/index.html">Amounts calculation</a></li>
+<li><a href="amounts-distribution/index.html">Amounts distribution</a></li>
+<li><a href="amounts-calculation/explicit-calculation.html">Explicit value calculation</a></li>
+<li><a href="amounts-calculation/percent-calculation.html">Percent value calculation</a></li>
+<li><a href="referenced-documents.html">Referenced documents</a></li>
+<li><a href="rows-weighting.html">Rows weighting</a></li>
 </ul>
 </article>
           </div>

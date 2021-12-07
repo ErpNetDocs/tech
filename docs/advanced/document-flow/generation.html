@@ -79,12 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="document-generation">Document generation</h1>
 
-<p>Document generation is a key part of the <strong><a href="https://docs.erp.net/tech/advanced/document-flow/index.html">document flow</a></strong> as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.</p>
-<p>Generation is a special case of direct <strong><a href="https://docs.erp.net/tech/advanced/document-flow/fulfillment.html">order fulfillment</a></strong> when there's only one source document.</p>
+<p>Document generation is a key part of the <strong><a href="/advanced/document-flow/index.md">document flow</a></strong> as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.</p>
+<p>Generation is a special case of direct <strong><a href="fulfillment.html">order fulfillment</a></strong> when there's only one source document.</p>
 <p>It creates a single target but can often make multiple documents. When many instances are generated, it's because of different values of some key attribute(s) in the different lines of the source document.</p>
 <h2 id="automating-the-document-generation">Automating the document generation</h2>
 <p>Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.</p>
-<p>The definition of a document type includes a special sub-entity type called <strong><a href="https://docs.erp.net/model/entities/Systems.Workflow.Routes.html">workflow routes</a></strong>.</p>
+<p>The definition of a document type includes a special sub-entity type called <strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Workflow.Routes.html">workflow routes</a></strong>.</p>
 <p>These routes specify procedures, conditions and events for the automatic generation of inheriting documents.</p>
 <p>Each document type can host <strong>many</strong> workflow routes. They start automatically or require user initiation.</p>
 <p>Together, the routes of different document types form a general network graph called <strong>document flow</strong>.</p>
@@ -93,7 +93,7 @@
 <ul>
 <li><strong>Generation events</strong></li>
 </ul>
-<p>Events that trigger the document route. The most used event usually changes the <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">document state</a></strong>.</p>
+<p>Events that trigger the document route. The most used event usually changes the <strong><a href="/concepts/documents/states.md">document state</a></strong>.</p>
 <ul>
 <li><strong>State</strong></li>
 </ul>
@@ -111,7 +111,7 @@
 <ul>
 <li><strong>Generation procedure</strong></li>
 </ul>
-<p>The procedure which will be used to <strong><a href="https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html">generate</a></strong> a target document.</p>
+<p>The procedure which will be used to <strong><a href="generation-procedures.html">generate</a></strong> a target document.</p>
 <h2 id="properties-of-a-document-generation-procedure">Properties of a document generation procedure</h2>
 <p>Generation procedures are fixed procedures provided by the system.</p>
 <p>When defining a document route, you can choose one from a list.</p>
@@ -131,7 +131,7 @@
 </ul>
 </li>
 </ul>
-<p>For example, ‘CRM0103’ specifies a procedure in the <strong><a href="https://docs.erp.net/tech/modules/crm/index.html">CRM</a></strong> sub-system, 01-Sales module, procedure #3.</p>
+<p>For example, ‘CRM0103’ specifies a procedure in the <strong><a href="/modules/crm/index.md">CRM</a></strong> sub-system, 01-Sales module, procedure #3.</p>
 <ul>
 <li><strong>Name</strong><br></li>
 </ul>
