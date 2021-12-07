@@ -35,8 +35,4 @@ Here are some examples:
 -------
 ### See more
 
-- **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)**
-- **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**
-- **[Determination and recording](https://docs.erp.net/tech/advanced/document-amounts/determination-and-recording.html)**
-- **[Referenced documents](https://docs.erp.net/tech/advanced/document-amounts/referenced-documents.html)**
-- **[Rows weighting](https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html)**
+[!list folder="." depth=0 style="bullet" limit=100]
