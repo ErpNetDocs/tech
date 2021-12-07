@@ -1,9 +1,9 @@
 # Amounts calculation
 
-There are two common ways to determine the value of **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)**:
+There are two common ways to determine the value of **[additional amounts](/advanced/document-amounts/index.md)**:
 
-- setting an **[explicit amount](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/explicit-calculation.html)**;
-- setting an amount as a **[percent](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)** of other amounts (additional or base amounts from the document rows)
+- setting an **[explicit amount](explicit-calculation.md)**;
+- setting an amount as a **[percent](percent-calculation.md)** of other amounts (additional or base amounts from the document rows)
 
 Whichever method is used, it becomes a **property** of the document form inside the *Additional Document Amounts* panel and the corresponding *Input Percent*, *Input Amount* and *Input Amount Currency* fields. 
 
@@ -26,5 +26,5 @@ The values entered in *Input Percent* and *Input Amount* can be managed by the *
 ------------
 ### See more
 
-- **[Explicit value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/explicit-calculation.html)**
-- **[Percent value calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)**
+- **[Explicit value calculation](explicit-calculation.md)**
+- **[Percent value calculation](percent-calculation.md)**
