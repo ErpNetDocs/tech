@@ -39,9 +39,9 @@ Some additional amounts serve to calculate the **[amount to pay](/modules/crm/sa
 
 #### Calculating goods cost
 
-Additional amounts may be used to add value to the goods cost in the **[logistics](/modules/logistics/index.html)**.
+Additional amounts may be used to add value to the cost of the goods in the **[logistics](/modules/logistics/index.html)**.
 
-For example, if transport is entered as an additional amount, when goods are purchased, the transport value will be **added** to the purchase price. When a stock transfer from one store to another is executed and it includes transport cost added to the issued products, the value of this transport should be **added** to the products cost **before** they are received in the second store. 
+For example, if the transport is entered as an additional amount when goods are purchased, the transport value will be **added** to the purchase price. When a stock transfer from one store to another is executed and it includes transport cost added to the issued products, the value of this transport should be **added** to the products cost **before** they are received in the second store. 
 
 Adding transport to the purchase price or the store cost is done in the receiving store orders or store transactions. When a row in the sub-document is created, the value of this row is **increased** by the distribution in the current row amount of the transport.
 
@@ -53,7 +53,7 @@ This is the *Add To Line* field in the definition of the additional amount.
 
 Additional amounts may also be used to report the external activities of an enterprise company.
 
-For example, if a salesman in a company receives commissions or other additions to their salaries equal to a percentage of the turnover they achieve, the commision may be entered as an additional amount in the sales order, which is a **percentage** of the amount to pay.
+For example, if a salesman in a company receives commission or other additions to their salaries equal to a percentage of the turnover they achieve, the commision may be entered as an additional amount in the sales order, which is a **percentage** of the amount to pay.
 
 
 -------
