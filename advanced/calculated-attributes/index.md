@@ -1,3 +1,7 @@
+---
+uid: ca
+---
+
 # User calculated attributes
 
 User calculated attributes are user-defined objects which extend the system entities.
