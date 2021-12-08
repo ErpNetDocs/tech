@@ -1,22 +1,22 @@
 # Referenced documents
 
-There are cases when you enter an **[additional amount](https://docs.erp.net/tech/advanced/document-amounts/index.html)** in a document and calculate it, distributing it not only to the rows of the current document, but to others as well. 
+There are cases when you enter an **[additional amount](/advanced/document-amounts/index.md)** in a document and calculate it, distributing it not only to the lines of the current document, but to others as well. 
 
-For example, if there's a purchase invoice for goods transported to your location, and this transport must be paid, then it can be delivered later than the original purchase invoice. That invoice may already be 'Released and possibly 'Completed'. 
+For example, if there's a purchase invoice for goods transported to your location, and this transport must be paid, then it can be delivered later than the original purchase invoice. That original invoice may already be 'Released and possibly 'Completed'. 
 
-As a result, you'll have to enter the transport as additional amount in a **separate** document.
+As a result, you'll have to enter the transport as an additional amount in a **separate** document.
 
-Even if the purchase invoice isn't late, it could still be necessary to enter it in a separate document. This might help when the transport is performed by a different company from the one of the goods supplier. 
+Even if the purchase invoice isn't late, it could still be necessary to enter the transport in a separate document. This might help when the transport is performed by a different company from the supplier of the goods . 
 
-Therefore, you have an additional amount 'transport' in one purchase invoice, which will be distributed to the rows of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**.
+Therefore, you have an additional amount 'transport' in one purchase invoice, which will be distributed to the lines of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics module](/modules/logistics/index.md)**.
 
 The additional amount is calculated and distributed by documents different from the ones in which you enter it. 
 
-This is performed in the **Document Amount Referenced Documents** panel, where for each additional amount of the current document, 0 or more documents can be entered. These documents are usually from the same system type as the current one (invoices, sales orders), or at least support additional amounts. 
+This is performed using the **Document Amount Referenced Documents** panel, where can be specified referenced documents for each additional amount of the current document. These documents are usually from the same system type as the current one (invoices, sales orders), or at least support additional amounts. 
 
-If it's entered in the listed documents, the amount is calculated and distributed by these exact documents. 
+If it's entered in the listed documents, the amount is calculated and distributed by these exact documents (as if the amount was originally entered in the listed documents).  
 
-For every additional amount, the following can be defined:
+The documents which will be used in the calculations are determnined as follows:
 
 - If there's no information for the additional amount in the **Document Amount Referenced Documents** panel, the amount is distributed only in the current document and no other documents;
 
@@ -26,33 +26,36 @@ This makes it possible to enter additional amounts in the document which is dist
 
 > [!NOTE] 
 > 
-> Respectively, this requires listing the current document as 'Referenced', if such distribution is necessary. 
+> Respectively, if we want the same amount to be distrbuten in both the current document and other documents, then this requires listing the current document as 'Referenced' as well. 
 
-For more information, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.md)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.md)**.
 
 Let's see the standard case for referenced document usage: transport of purchased goods. 
 
 **Example 1:**
 
-Purchase invoice #1 has three rows: 
+Purchase invoice #1 has three lines: 
 
-#10 with amount of **50 EUR**, #20 with amount of **80 EUR** and #30 with amount of **140 EUR**
+- #10 with amount of **50 EUR**; <br>
+- #20 with amount of **80 EUR**; <br>
+- #30 with amount of **140 EUR**; <br>
 
-Second purchase invoice #2 is entered with no rows - only additional amount with _Input Amount_ of **38 EUR**. 
+Second purchase invoice #2 is entered with no lines - only an additional amount with _Input Amount_ of **38 EUR**. 
 
-You enter purchase invoice #1 in the **Document Amount Referenced Documents** panel.
+You enter purchase invoice #1 as a referenced document for the additional amount in the **Document Amount Referenced Documents** panel of purchase invoice #2, without adding a record for the purchase invoice #2 itself .
 
-The amount is distributed among the rows from #1, and distribution is entered in purchase invoice #1. This is the resulting distribution, assuming transport is distributed by amount and is rounded up to the second digit:
+The amount is distributed among the lines from #1, and distribution is entered in purchase invoice #1. This is the resulting distribution, assuming transport is distributed by amount and is rounded up to the second digit:
 
-- row #10, purchase invoice #1: **7.04 EUR**; <br>
-- row #20, purchase invoice #1: **11.26 EUR**; <br>
-- row #30, purchase invoice #1: **19.70 EUR**; <br>
+- line #10, purchase invoice #1: **7.04 EUR**; <br>
+- line #20, purchase invoice #1: **11.26 EUR**; <br>
+- line #30, purchase invoice #1: **19.70 EUR**; <br>
 
 **Example 2:**
 
-There's sales order #1 from the end of last year. It has two rows: 
+There's sales order #1 from the end of last year. It has two lines: 
 
-#10 with amount of **100 EUR** and #20 with amount of **80 EUR** 
+- line #10 with amount of **100 EUR**; <br> 
+- line#20 with amount of **80 EUR**; <br> 
 
 You have missed to enter holidays discounts: additional amount 'Christmas discount’
 
@@ -68,7 +71,7 @@ In sales order #2, you enter a new discount for the Easter holidays:
 
 Default Percent: **-2%** <br> Base On Lines: **True** <br>  Distributed By: **Amount** <br> Round Scale: **2** 
 
-This additional amount is applied only to the current document and it's NOT entered in **Document Amount Referenced Documents**. 
+This additional amount is applied only to the current document and it's **NOT** entered in **Document Amount Referenced Documents**. 
 
 Sales order #2 gets a special bonus, which decreases **10%** of the amounts from sales order #1 and #2. 
 
@@ -80,27 +83,29 @@ Distributed By: **Amount**, Round Scale: **2**
 
 For the last additional amount in **Document Amount Referenced Documents**, both orders are listed.
 
-If the rows in sales order #2 are: 
+If the lines in sales order #2 are: 
 
-row #10 with amount of **35 EUR**, row #20 with amount of **75 EUR** and row #30 with amount **40 EUR**, 
+- line #10 with amount of **35 EUR**; <br>
+- line #20 with amount of **75 EUR**; <br> 
+- line #30 with amount **40 EUR**; <br> 
 
-the three additional amounts in sales order #2 are calculated and distributed:
+,the three additional amounts in sales order #2 are calculated and distributed as follows:
 
 - The amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows:
 
-    - row #10, Sales Order #1: **-3 EUR**;<br>
-    - row #20, Sales Order #1: **-2.40 EUR**.<br>
+    - line #10, Sales Order #1: **-3 EUR**;<br>
+    - line #20, Sales Order #1: **-2.40 EUR**.<br>
 
 - The amount of [Easter discount] is **-3 EUR** and it is distributed as follows:
 
-    - row #10, Sales Order #2: **-0.70 EUR**;
-    - row #20, Sales Order #2: **-1.50 EUR**;
-    - row #30, Sales Order #2: **-0.80 EUR**.<br>
+    - line #10, Sales Order #2: **-0.70 EUR**;
+    - line #20, Sales Order #2: **-1.50 EUR**;
+    - line #30, Sales Order #2: **-0.80 EUR**.<br>
 
 - The amount of [Reorder bonus] is **-32.16 EUR** and it is distributed as follows:
 
-    - row #10, Sales Order #1: **-9.70 EUR**;
-    - row #20, Sales Order #1: **-7.76 EUR**;
-    - row #10, Sales Order #2: **-3.43 EUR**;
-    - row #20, Sales Order #2: **-7.35 EUR**;
-    - row #30, Sales Order #2: **-3.92 EUR**.
+    - line #10, Sales Order #1: **-9.70 EUR**;
+    - line #20, Sales Order #1: **-7.76 EUR**;
+    - line #10, Sales Order #2: **-3.43 EUR**;
+    - line #20, Sales Order #2: **-7.35 EUR**;
+    - line #30, Sales Order #2: **-3.92 EUR**.
