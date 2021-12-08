@@ -26,5 +26,4 @@ The values entered in *Input Percent* and *Input Amount* can be managed by the *
 ------------
 ### See more
 
-- **[Explicit value calculation](explicit-calculation.md)**
-- **[Percent value calculation](percent-calculation.md)**
+[!list folder="." depth=0 style="bullet" limit=100]
