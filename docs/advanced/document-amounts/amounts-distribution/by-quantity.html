@@ -79,40 +79,40 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="amount-distribution-by-quantity">Amount distribution by quantity</h1>
 
-<p>When using this distribution method, the coefficients for calculating the proportions [<strong>ki</strong>]/[<strong>S</strong>] are defined by the quantities in the rows on which the additional amount is distributed. It's necessary to bring the quantities to the <strong>same</strong> measurement unit.</p>
-<p>Therefore, the additional amounts using this property (<em>Distribute By</em> = Quantity), are <strong>required</strong> to have a selected option in the <em>Distribute By Measurement Category</em> field. The base measurement unit in the selected category is the unit to which quantities from all rows will be converted. If a row with a product has no such dimension, the calculation stops and an error message is displayed.</p>
-<p>As long as [distribution measurement unit] is the measurement unit from the selected category in the additional amount definition, then for each row, the coefficients are as follows:</p>
-<p>[<strong>k<sub>i</sub></strong>] = [quantity on row <strong>i</strong>] converted to [distribution measurement unit].</p>
-<p>The additional amount distribution is performed by a standard formula <br> (in proportions [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>], if [<strong>S</strong>] is not <strong>0</strong>, or otherwise - equally throughout the rows).</p>
+<p>When using this distribution method, the coefficients for calculating the proportions [<strong>ki</strong>]/[<strong>S</strong>] are defined by the quantities in the lines on which the additional amount is distributed. It's necessary to convert the quantities to the <strong>same</strong> measurement unit.</p>
+<p>Therefore, the additional amounts using this property (<em>Distribute By</em> = Quantity), are <strong>required</strong> to have a selected value in the <em>Distribute By Measurement Category</em> field. The base measurement unit in the selected category is the unit to which quantities from all lines will be converted. If a line with a product has no such dimension, the calculation stops and an error message is displayed.</p>
+<p>As long as [distribution measurement unit] is the measurement unit from the selected category in the additional amount definition, then for each line, the coefficients are as follows:</p>
+<p>[<strong>k<sub>i</sub></strong>] = [quantity on line <strong>i</strong>] converted to [distribution measurement unit].</p>
+<p>The additional amount distribution is performed by a standard formula <br> (in proportions [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>], if [<strong>S</strong>] is not <strong>0</strong>, or otherwise - equally throughout the lines).</p>
 <p><strong>Example 1:</strong></p>
 <p>There's a transport additional amount with input of <strong>42 EUR</strong>, which is paid by goods 'box'.</p>
 <p>In the definition, transport is distributed by quantity and the measurement category is 'Boxes' (base measurement unit = boxes).</p>
-<p>The document where the additional amount is selected has three rows:</p>
-<p>row #10 with quantity of <strong>2 boxes</strong>, <br>
-row #20 with quantity of <strong>25 pieces</strong> <br>
-row #30 with quantity of <strong>18 kg</strong>.</p>
-<p>The product of row #20 has the following dimension: <strong>1 boxes = 10 pieces</strong>. <br> The product of row #30 has the following dimension: <strong>1 boxes = 3 kg</strong>.</p>
-<p>After converting all row quantities to 'boxes', the following coefficients are calculated:</p>
+<p>The document where the additional amount is selected has three lines:</p>
+<p>line #10 with quantity of <strong>2 boxes</strong>, <br>
+line #20 with quantity of <strong>25 pieces</strong> <br>
+line #30 with quantity of <strong>18 kg</strong>.</p>
+<p>The product ofline #20 has the following dimension: <strong>1 boxes = 10 pieces</strong>. <br> The product of line #30 has the following dimension: <strong>1 boxes = 3 kg</strong>.</p>
+<p>After converting all line quantities to 'boxes', the following coefficients are calculated:</p>
 <ul>
-<li>row #10: [<strong>k<sub>1</sub></strong>] = <strong>2</strong>; <br></li>
-<li>row #20: [<strong>k<sub>2</sub></strong>] = <strong>2.5</strong>; <br></li>
-<li>row #30: [<strong>k<sub>3</sub></strong>] = <strong>6</strong>. <br></li>
+<li>line #10: [<strong>k<sub>1</sub></strong>] = <strong>2</strong>; <br></li>
+<li>line #20: [<strong>k<sub>2</sub></strong>] = <strong>2.5</strong>; <br></li>
+<li>line #30: [<strong>k<sub>3</sub></strong>] = <strong>6</strong>. <br></li>
 </ul>
 <p>The amount of <strong>42 EUR</strong> is distributed in 2:2.5:6 ratio. The results are:</p>
 <ul>
-<li>row #10: <strong>42 EUR</strong> * 2 / 10.5 = <strong>8 EUR</strong>; <br></li>
-<li>row #20: <strong>42 EUR</strong> * 2.5 / 10.5 = <strong>10 EUR</strong>; <br></li>
-<li>row #30: <strong>42 EUR</strong> * 6 / 10.5 = <strong>24 EUR</strong>. <br></li>
+<li>line #10: <strong>42 EUR</strong> * 2 / 10.5 = <strong>8 EUR</strong>; <br></li>
+<li>line #20: <strong>42 EUR</strong> * 2.5 / 10.5 = <strong>10 EUR</strong>; <br></li>
+<li>line #30: <strong>42 EUR</strong> * 6 / 10.5 = <strong>24 EUR</strong>. <br></li>
 </ul>
 <p><strong>Example 2:</strong></p>
-<p>There is an amount of <strong>42 EUR</strong> of transport as in Example 1. The document rows are:</p>
-<p>row #10 with quantity of <strong>2 boxes</strong> <br> row #20 with quantity of <strong>30 pieces</strong> <br> row #30 with quantity of <strong>-15 kg</strong></p>
+<p>There is an amount of <strong>42 EUR</strong> of transport as in Example 1. The document lines are:</p>
+<p>line #10 with quantity of <strong>2 boxes</strong> <br> line #20 with quantity of <strong>30 pieces</strong> <br> line #30 with quantity of <strong>-15 kg</strong></p>
 <p>The coefficients are [<strong>k<sub>1</sub></strong>] = <strong>2</strong>, [<strong>k<sub>2</sub></strong>] = <strong>3</strong> and [<strong>k<sub>3</sub></strong>] =<strong>-5</strong> and total amount of <strong>[S] = 0</strong>.</p>
-<p>In this case, the additional amount is distributed equally among the rows and the result is:</p>
+<p>In this case, the additional amount is distributed equally among the lines and the result is:</p>
 <ul>
-<li>row #10: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>; <br></li>
-<li>row #20: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>; <br></li>
-<li>row #30: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>. <br></li>
+<li>line #10: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>; <br></li>
+<li>line #20: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>; <br></li>
+<li>line #30: <strong>42 EUR</strong> / 3 = <strong>14 EUR</strong>. <br></li>
 </ul>
 </article>
           </div>

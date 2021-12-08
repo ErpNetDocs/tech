@@ -79,57 +79,56 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="amounts-distribution">Amounts distribution</h1>
 
-<p>After an additional sum is <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html">calculated</a></strong>, the result is not saved directly in the document, but distributed among document rows with nonzero <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">weight</a></strong> where the additional amount is applied to. This distribution is then reflected in the document.</p>
-<p>After the amount is calculated and distributed, if you need to see the total value of the additional amount, you'll have to sum up all the values from its  distribution. This is easier than saving the total additional amount in the document. To see the VAT or the transport distributed to a specific product, you may often need just the amount distributed to a specific row.</p>
-<p>If you save the total additional amount in the document, you'll have to distribute the amounts at the moment, which isn't effective.</p>
-<p>The following article(s) will descirbe different methods for distributing amounts through rows.</p>
+<p>After an additional sum is <strong><a href="/advanced/document-amounts/amounts-calculation/index.md">calculated</a></strong>, the result is not saved directly in the document, but distributed among document lines with nonzero <strong><a href="lines-weighting.md">weight</a></strong> where the additional amount is applied to. This distribution is then reflected in the document.</p>
+<p>After the amount is calculated and distributed, if you need to see the total value of the additional amount, you'll have to sum up all the values from its  distribution. This is more conveniently than saving the total additional amount in the document. To see the VAT or the transport distributed to a specific product, you may often need just the amount distributed to a specific line.</p>
+<p>The following article(s) will descirbe different methods for distributing amounts through lines.</p>
 <h2 id="common-principle-of-distribution">Common principle of distribution</h2>
 <p>The distribution principle is defined in the additional amount definition  (by <em>Distributed By</em> field).</p>
 <p>There are three basic methods</p>
 <ul>
-<li>by <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html">quantity</a></strong>,</li>
-<li>by <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html">amount</a></strong>,</li>
-<li>by <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html">product definition</a></strong>.</li>
+<li>by <strong><a href="by-quantity.html">quantity</a></strong>,</li>
+<li>by <strong><a href="by-amount.html">amount</a></strong>,</li>
+<li>by <strong><a href="by-product-definition.html">product definition</a></strong>.</li>
 </ul>
-<p>Every method suggests that a proportion of the amount distributed by the rows should be defined so the distribution can be executed.</p>
-<p>If you have <strong>n</strong> rows on which you have to distribute additional amount, for every row, a weight is defined:</p>
+<p>Every method suggests that a proportion of the amount distributed by the lines should be defined so the distribution can be executed.</p>
+<p>If you have <strong>n</strong> lines on which you have to distribute additional amount, a weight is defined for every line:</p>
 <p>[<strong>k<sub>1</sub></strong>], [<strong>k<sub>2</sub></strong>] ... [<strong>k<sub>n</sub></strong>]</p>
-<p>These are different coefficients from those described in <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/rows-weighting.html">rows weighting</a></strong>, but in some specific cases the latter may participate in the calculation of the distribution weights.</p>
-<p>Uf the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k<sub>1</sub></strong>] + [<strong>k<sub>2</sub></strong>] + ... + [<strong>k<sub>n</sub></strong>]) and this amount isn't equal to 0, <br> then the <strong>i</strong>-row of the proportion is [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>]:</p>
-<p>[distribution to row <strong>i</strong>] = ROUND([amount] * [<strong>k<sub>i</sub></strong>] / [<strong>S</strong>], [Round Scale]),</p>
+<p>These are different coefficients from those described in <strong><a href="lines-weighting.md">lines weighting</a></strong>, but in some specific cases the latter may participate in the calculation of the distribution weights.</p>
+<p>Uf the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k<sub>1</sub></strong>] + [<strong>k<sub>2</sub></strong>] + ... + [<strong>k<sub>n</sub></strong>]) and this amount isn't equal to 0, <br> then the <strong>i</strong>-line of the proportion is [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>]:</p>
+<p>[distribution to line <strong>i</strong>] = ROUND([amount] * [<strong>k<sub>i</sub></strong>] / [<strong>S</strong>], [Round Scale]),</p>
 <p>where <em>Round Scale</em> is property of the additional amount definition.</p>
 <p>This is a <strong>standard distribution alogorithm</strong>. A specific case is when [<strong>S</strong>] is <strong>0</strong>.</p>
-<p>Most of the time, the additional amount is distributed evenly throughout the row, using the following formula:</p>
-<p>[row <strong>i</strong> distribution] = ROUND([amount] / [rows count], [Round Scale]),</p>
+<p>Most of the time, the additional amount is distributed evenly throughout the lines, using the following formula:</p>
+<p>[line <strong>i</strong> distribution] = ROUND([amount] / [lines count], [Round Scale]),</p>
 <p>but in some cases, there are more specific calculations, such as when the amount is distributed by amount or by product definition and the additional amount is percent.</p>
-<p>Sometimes, the additional amount may not be distributed evenly among the rows. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all rows - otherwise, there will be no balance. The balance is therefore distributed throughout the first several rows.</p>
+<p>Sometimes, the additional amount may not be distributed evenly among the lines. An attempt is then made to allocate the balance. It's impossible to distribute equal part of the balance to all lines - otherwise, there will be no balance. The balance is therefore distributed throughout the first several lines.</p>
 <p>You can't distribute less than:</p>
-<p>[minimal balance distribution on a row] = 1 / 10[Round Scale].</p>
+<p>[minimal balance distribution on a line = 1 / 10[Round Scale].</p>
 <p><strong>Example:</strong></p>
-<p>You have <strong>12</strong> rows and the amount of <strong>9.13 EUR</strong> to distribute with the following weights:</p>
+<p>You have <strong>12</strong> lines and the amount of <strong>9.13 EUR</strong> to distribute with the following weights:</p>
 <p>[<strong>k<sub>1</sub></strong>] = [<strong>k<sub>2</sub></strong>] = ... = [<strong>k<sub>10</sub></strong>] = <strong>1</strong>, and [<strong>k<sub>11</sub></strong>] = [<strong>k<sub>12</sub></strong>] = <strong>0</strong></p>
-<p><strong>9.13 EUR</strong> is distributed on the first 10 rows and you'll apply the formula to get the the distribution of 9.13 EUR / 10 ~ <strong>0.91 EUR</strong> (assuming you have <em>Round Scale</em> = 2). In this case, you distribute only 10 * 0.91 = <strong>9.10 EUR</strong> and the amount left (<strong>0.03 EUR)</strong> needs to be distributed through the first 10 rows.</p>
-<p>Since you can't distribute less than 1 / 102 = 0.01 EUR, only the first three rows increase by 0.01 EUR.</p>
+<p><strong>9.13 EUR</strong> is distributed on the first 10 lines and you'll apply the formula to get the the distribution of 9.13 EUR / 10 ~ <strong>0.91 EUR</strong> (assuming you have <em>Round Scale</em> = 2). In this case, you distribute only 10 * 0.91 = <strong>9.10 EUR</strong> and the amount left (<strong>0.03 EUR)</strong> needs to be distributed through the first 10 lines.</p>
+<p>Since you can't distribute less than 1 / 102 = 0.01 EUR, only the first three lines increase by 0.01 EUR.</p>
 <p>This is how the final distribution looks like:</p>
 <ul>
-<li><p>on the first three rows, the amount of <strong>0.92 EUR</strong> is distributed;</p>
+<li><p>on the first three lines, the amount of <strong>0.92 EUR</strong> is distributed;</p>
 </li>
-<li><p>on the next seven rows, the amount of <strong>0.91 EUR</strong> is distributed;</p>
+<li><p>on the next seven lines, the amount of <strong>0.91 EUR</strong> is distributed;</p>
 </li>
-<li><p>on the last two rows, no amount is distributed.</p>
+<li><p>on the last two lines, no amount is distributed.</p>
 </li>
 </ul>
 <p>If the round scale is more than 2, there's a chance that part of the amount will be lost.</p>
-<p>For example, if the additional amount is <strong>10 EUR</strong> and it's distributed equally throughout <strong>3</strong> rows and the round scale is <strong>3.</strong>, then for every row, the amount of ROUND(3.333333333333333, 3) = <strong>3.333 EUR</strong> will be distributed.</p>
+<p>For example, if the additional amount is <strong>10 EUR</strong> and it's distributed equally throughout <strong>3</strong> lines and the round scale is <strong>3.</strong>, then for every line, the amount of ROUND(3.333333333333333, 3) = <strong>3.333 EUR</strong> will be distributed.</p>
 <p>When you save a document like this, the numbers after the second digit will be cut.</p>
-<p>In the database, you'll have <strong>3.33 EUR</strong> for each row.</p>
+<p>In the database, you'll have <strong>3.33 EUR</strong> for each line.</p>
 <p>The total amount will be <strong>9.99 EUR</strong> and <strong>0.01 EUR</strong> will be lost.</p>
 <hr>
 <h3 id="see-more">See more</h3>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-amount.html">Amount distribution by amount</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-product-definition.html">Amount distribution by product definition</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/by-quantity.html">Amount distribution by quantity</a></strong></li>
+<li><a href="by-amount.html">Amount distribution by amount</a></li>
+<li><a href="by-product-definition.html">Amount distribution by product definition</a></li>
+<li><a href="by-quantity.html">Amount distribution by quantity</a></li>
 </ul>
 </article>
           </div>

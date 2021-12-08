@@ -1143,7 +1143,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/explicit-calculation.html",
-          "hash": "RkmwYldnu35uWF4gz9cPUg=="
+          "hash": "tSxKYzGUjS03Kd0sFxVjGA=="
         }
       },
       "is_incremental": false,
@@ -1155,19 +1155,22 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/index.html",
-          "hash": "wZeV8R1mzji/P74+wemjhw=="
+          "hash": "lTYqVWcE1wtB20BQWomcGA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "rQ0wJszEq+HUdGZUlSQTCg=="
+          "hash": "gRWvasiZcC5gC71imj6xZA=="
         }
       },
       "is_incremental": false,
@@ -1179,19 +1182,22 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-amount.html",
-          "hash": "+9R/9VGmV3u8WHaKgfBtow=="
+          "hash": "hOYAKJis16NNv8L8xpkzhA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/amounts-distribution/by-product-definition.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-product-definition.html",
-          "hash": "DFoSXhGEgLOiL3B1qDIVuw=="
+          "hash": "Lef8pF895SBcQLG/Q8GAOw=="
         }
       },
       "is_incremental": false,
@@ -1203,19 +1209,22 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/by-quantity.html",
-          "hash": "6D+Nz6vJHW9UEW9Ro5Agng=="
+          "hash": "supXLzw9OHI+R40q4WuwJA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/amounts-distribution/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-distribution/index.html",
-          "hash": "f7mh713j0Aj9OYhWXTliVA=="
+          "hash": "smHXr1uFQ/YP8jym8dAq4g=="
         }
       },
       "is_incremental": false,
@@ -1239,7 +1248,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/index.html",
-          "hash": "MPyTiejqij8mAbvqzyoPXw=="
+          "hash": "oQqhQXN09omlToL/dn2Tow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/document-amounts/lines-weighting.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/document-amounts/lines-weighting.html",
+          "hash": "0lyfbv4CqRek1U9jDrtmIg=="
         }
       },
       "is_incremental": false,
@@ -1251,19 +1272,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/referenced-documents.html",
-          "hash": "aeY3pX4X5odIx4iHRXJ2Gw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/document-amounts/rows-weighting.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/document-amounts/rows-weighting.html",
-          "hash": "8kdgkNv8iG95dtabuYP0ng=="
+          "hash": "YTcgNazj6kBQmJ1ZF8Z7Dw=="
         }
       },
       "is_incremental": false,
@@ -1611,7 +1620,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "oE2sFicRgc50QhJr/iHqHg=="
+          "hash": "SYg8ji5MyQrn24lU9pR2Rw=="
         }
       },
       "is_incremental": false,

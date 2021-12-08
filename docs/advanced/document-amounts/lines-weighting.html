@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Lines weighting | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Lines weighting | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lines-weighting">Lines weighting</h1>
+
+<p>Amounts from document lines often play a major role in the <strong><a href="/advanced/document-amounts/index.html">additional amounts</a></strong> calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts.</p>
+<p>However, there are cases when <strong>not all</strong> lines participate equally in the distribution.</p>
+<p>For example, it's possible for some products in an invoice to be <strong>exempt</strong> from income tax (VAT). This leads to some document lines unable to participate in the VAT calculation. The calculated amount will be distributed only among the ones that <strong>have</strong> participated.</p>
+<p>Similarly, for the 'Customs' additional amount in purchase invoices, a customs fee is due for particular products.</p>
+<p>There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line.</p>
+<p>The feature is found in the <strong>Document: Input line percentages</strong> panel, also known as <strong>amounts distribution by lines</strong>.</p>
+<p>Here, the coefficient of the specific row is entered in the <em>Line Percent</em> field. These specific parameters may only be entered for additional amounts marked as <strong><a href="/advanced/document-amounts/amounts-distribution/index.html">distributed</a></strong> by product definition.</p>
+<p>In this panel, weights are entered in two ways:</p>
+<ul>
+<li><strong>manually</strong>, when the document is created</li>
+<li><strong>automaticall</strong> using pre-entered <strong>default values</strong> in the product'с definition</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If there are no weights for an additional amount in the panel, it is considered that all weights are equal to <strong>100%</strong>.</p>
+</div>
+<p>Below you'll find brief descriptions and examples for different input methods. <br> For more information, see <strong><a href="/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a></strong> and <strong><a href="/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a></strong>.</p>
+<h2 id="default-weightscoefficients-in-product-definitions">Default weights/coefficients in product definitions</h2>
+<p>Sometimes, weights of specific services are known <strong>before</strong> documents are created.</p>
+<p>When customs taxes are paid for goods on import, some of the products have taxes and others don't. For many, taxes are defined by law and they're a constant percentage of the product value. You have to enter their weight for the additional amount 'Customs'.</p>
+<p>Once the documents are entered in ERP.net and a product is selected in a document line, its weight is copied from the product definition into the <strong>Document: Input line percentages</strong> panel. Of course, these are just default values that can be changed if necessary.</p>
+<p><strong>Example 1:</strong></p>
+<p>There's an additional amount 'Customs' with the following properties:</p>
+<ul>
+<li>Distributed By: <strong>Product definition</strong>;</li>
+<li>Default Percent: <strong>100%</strong>.</li>
+</ul>
+<p>You enter a purchase invoice with four lines:</p>
+<ul>
+<li>line #10 for <strong>44 EUR</strong>;</li>
+<li>line #20 for <strong>56 EUR</strong>;</li>
+<li>line #30 for <strong>24 EUR</strong>;</li>
+<li>line #40 for <strong>71 EUR</strong>.</li>
+</ul>
+<p>In line #10, there's a product with default weight for additional amount ‘Customs’ of <strong>5%</strong> <br> and in line #30, there's a product with default weight of <strong>25%</strong>.</p>
+<p>These are the coefficients/weights for each row:</p>
+<ul>
+<li>row #10: weight = <strong>0.05</strong>;</li>
+<li>row #20: weight = <strong>0.00</strong>;</li>
+<li>row #30: weight = <strong>0.25</strong>;</li>
+<li>row #40: weight = <strong>0.00</strong>;</li>
+</ul>
+<p>The 'Customs' amount is <strong>8.20 EUR</strong> and it's distributed as <strong>2.20 EUR : 0 EUR : 6 EUR : 0 EUR</strong></p>
+<h2 id="manual-weightscoefficients-in-the-document">Manual weights/coefficients in the document</h2>
+<p>In certain cases, products weights for specific additional amounts are <strong>not</strong> known in advance. They may depend on a document parameter and rely on the deal type of the sales order.</p>
+<p>Regardless of whether VAT is applicable or not and whether the document lines have different deal types, you will have to enter the weights/coefficients in the specific document, along with deal type.</p>
+<p>Products don't have default weights/coefficients in their definitions in advance.</p>
+<p><strong>Example 2:</strong></p>
+<p>There's an additional amount 'Specific VAT', distributed by product definition with a default percentage of <strong>20%</strong>.</p>
+<p>You enter a sales order with four lines:</p>
+<ul>
+<li>line #10 for <strong>44 EUR</strong>;</li>
+<li>line #20 for <strong>56 EUR</strong>;</li>
+<li>line #30 for <strong>24 EUR</strong>;</li>
+<li>line #40 for <strong>71 EUR</strong>.</li>
+</ul>
+<p>Rows #10 and #20 are exempt from VAT, while the others have 20% VAT.</p>
+<p>You manually set the following percentages (<strong>100%</strong> on lines #30 and #40):</p>
+<ul>
+<li>line #10: weight = <strong>0.00</strong>;</li>
+<li>line #20: weight = <strong>0.00</strong>;</li>
+<li>line #30: weight = <strong>1.00</strong>;</li>
+<li>line #40: weight = <strong>1.00</strong>.</li>
+</ul>
+<p>The Specific VAT is <strong>19 EUR</strong> and it's distributed through the rows as <strong>0 EUR : 0 EUR : 4.80 EUR : 14.20 EUR</strong>.</p>
+<p><strong>Example 3:</strong></p>
+<p>The following example describes a case where data is absent from the <strong>Document: Input line percentages</strong> panel:</p>
+<p>There's an additional amount VAT, distributed by <strong>amount</strong> with a default percentage of <strong>20%</strong>. The amount is not distributed by the product definitions, therefore there will be no data in the <strong>Document: Input line percentages</strong> panel.</p>
+<p>In this case, no weights/coefficients are used for calculating and distributing the VAT amounr, so it is considered that all document lines have <strong>100%</strong> VAT.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/document-amounts/lines-weighting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
