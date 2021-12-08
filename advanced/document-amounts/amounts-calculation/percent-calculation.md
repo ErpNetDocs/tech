@@ -1,19 +1,21 @@
 # Percent value calculation
 
-Here, input percent will be used. 
+Here is the place where the input percent is used. 
 
-You should know the value of the amounts which will be used to apply the percent calculation. It's defined by the additional amount definition in the *Base On Lines* field and the **Document Amount Type Dependencies** panel (also known as **Base Additional Amounts**). 
+Starts by determining the amounts to which the percent calculation will be applied. It's defined by the **Base On Line** field and the **Document Amount Type Dependencies** panel (also known as **Base Additional Amounts**) in the the additional amount definition. 
 
-Тhe base amount for the additional amount is calculated and used to find the end value of that amount with the following formula:
- 
-**[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])**.
- 
-Base amount is defined in two steps:
+Based on the values of these fields is calculated the **base amount** of the additional amounts. The calculation is in two steps:
 
 1. Sum the amounts of the current document to all additional amounts listed in the **Document Amount Type Dependencies** panel. <br>
 This requires the previous calculation of the other amounts.
 
 2. If the аdditional аmount is marked as _Base On Lines_, the sum from p.1 is added to the sum of the document rows, multiplied by their specific weights (if there are no weights, you multiply by 100%). 
+
+
+The resulting base amount is used to find the end value of that amount with the following formula:
+ 
+**[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])**.
+ 
 
 For more information, see [Rows weighting](../rows-weighting.md).
 
@@ -43,11 +45,11 @@ If you have the following additional amounts:
     - the **Document Amount Type Dependencies** panel states that VAT is applied to Corporate discount and Easter bonus;
     - Round Scale is '2';
  
-If you have two document rows - one with a line amount of 150 EUR and another with 40 EUR, <br> then you enter an additional Easter bonus value of -10 EUR. 
+If you have two document lines - one with a line amount of 150 EUR and another with 40 EUR, <br> then you enter an additional Easter bonus value of -10 EUR. 
 
 **The calculations for the three additional amounts are as follows:**
 
-- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document rows); so [Corporate discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
+- Corporate discount base amount is **150 EUR + 40 EUR = 190 EUR** (only the sum of the document lines); so [Corporate discount] is calculated = ROUND(**190 EUR * -0.03, 2**) = **-5.70 EUR**;
 
 - Easter bonus is **-10 EUR** (there's no currency conversion because the amount is in EUR);
 - VAT is calculated:</br>
@@ -65,17 +67,17 @@ You have only one additional amount - commission. Its definition has the followi
 - Add To Line is False;
 - Round Scale is '2'.
 
-The example document has three rows:
+The example document has three lines:
 
-- row #10 with the amount of 150 EUR;
-- row #20 with the amount of 40 EUR; the row contains the specific product;
-- row #30 with the amount of 69 EUR; the row contains the specific product.
+- line #10 with the amount of 150 EUR;
+- line #20 with the amount of 40 EUR; the line contains the specific product;
+- line #30 with the amount of 69 EUR; the line contains the specific product.
 
-So the rows have the following specific weights:
+So the line have the following specific weights:
 
-- row #10: weight = **0.00**;
-- row #20: weight = **1.00**;
-- row #20: weight = **1.00**;
+- line #10: weight = **0.00**;
+- line #20: weight = **1.00**;
+- line #20: weight = **1.00**;
  
 The base amount for the commission  additional amount is calculated as follows:
 
@@ -87,7 +89,7 @@ The final result for the amount is:
 
 >[!NOTE]
 >
-> When you have to calculate percent and the document amount is part of the base amount (*Base On Lines* is True) and it has rows with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the row types - rows with positive amounts and rows with negative amounts - and for every group of rows, the additional amount is calculated separately. 
+> When you have to calculate percent and the document amount is part of the base amount (*Base On Lines* is True) and it has lines with different signs (negative and positive amounts), then there is a specific way to calculate the additional amount. Besides the end result, two subtotals are calculated - [positive amount] and [negative amount]. This is achieved by separating the line types - lines with positive amounts and lines with negative amounts - and for every group of lines, the additional amount is calculated separately. 
 > 
 > Тhe final result is:
 > 
@@ -95,7 +97,7 @@ The final result for the amount is:
 > 
  These two subtotals may be used in the additional amount distribution. 
  
- For further information, see **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+ For further information, see **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.md)**.
 
 **Example 3:**
 
@@ -105,11 +107,11 @@ If you have the following properties in the additional amount, VAT:
 - Round Scale is '2';
 - Base On Lines is True;
 
-the example document has the following rows:
+the example document has the following lines:
 
-- row #10 with the amount of 74 EUR;
-- row #20 with the amount of 26 EUR;
-- row #30 with the amount of -45 EUR;
+- line #10 with the amount of 74 EUR;
+- line #20 with the amount of 26 EUR;
+- line #30 with the amount of -45 EUR;
  
 and the base amount of the additional amount is:
 
