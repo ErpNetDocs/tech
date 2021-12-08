@@ -1,6 +1,6 @@
-# Rows weighting
+# Lines weighting
 
-Line amounts from document rows often play a major role in the **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** calculation. Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. 
+Amounts from document lines often play a major role in the **[additional amounts](/advanced/document-amounts/index.html)** calculation. Either the value of the amount is defined by the row amounts (VAT or customs), or the distribution of the amount through the row depends on the line amounts. 
 
 However, there are cases when **not all** rows participate equally in the distribution.
 
@@ -12,7 +12,7 @@ There's a mechanism that allows for the indication of particular rows as being m
 
 The feature is found in the **Document Line Amounts** panel, also known as **Amounts Distribution By Rows**. 
 
-Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)** by product definition.
+Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](/advanced/document-amounts/amounts-distribution/index.html)** by product definition.
 
 In this panel, weights are entered in two ways:
 
@@ -23,7 +23,7 @@ In this panel, weights are entered in two ways:
 > 
 > If there are no weights for an additional amount in the panel, all weights are equal to **100%**.
 
-You'll find brief descriptions and examples for different input methods are given. <br> For more information, see **[Amounts calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](https://docs.erp.net/tech/advanced/document-amounts/amounts-distribution/index.html)**.
+You'll find brief descriptions and examples for different input methods are given. <br> For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.html)**.
 
 ## Weights & coefficients in product definitions
 
