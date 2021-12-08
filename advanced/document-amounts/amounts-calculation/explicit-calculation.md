@@ -4,12 +4,12 @@ The explicit amount entered through the *Input Amount* and *Input Amount Currenc
 
 **Example:**
 
-There's a document with currency 'EUR' and an additional amount entered as explicit amount - 60 EUR. 
+There's a document with currency 'BGN' and an additional amount entered as explicit amount - 60 EUR. 
 
 The additional amount is set to use round scale-up to the second digit after the decimal point. 
 
-If the conversion rate is 1.96, the additional amount is:
+If the conversion rate is from EUR to BGN 1.96, the additional amount is:
 
-[Input Amount] = ROUND(**60 * 1.96, 2) = 117.60EUR**.
+[Input Amount] = ROUND(**60 * 1.96, 2) = 117.60 BGN**.
 
-See **[Percent calculation](https://docs.erp.net/tech/advanced/document-amounts/amounts-calculation/percent-calculation.html)** for comparison.
+See **[Percent calculation](percent-calculation.md)** for comparison.
