@@ -5,9 +5,9 @@ There are two common ways to determine the value of **[additional amounts](/adva
 - setting an **[explicit amount](explicit-calculation.md)**;
 - setting an amount as a **[percent](percent-calculation.md)** of other amounts (additional or base amounts from the document rows)
 
-Whichever method is used, it becomes a **property** of the document form inside the *Additional Document Amounts* panel and the corresponding *Input Percent*, *Input Amount* and *Input Amount Currency* fields. 
+Which method is used depends on the information iserted into the the *Additional Document Amounts* panel of the document and the corresponding *Input Percent*, *Input Amount* and *Input Amount Currency* fields. 
 
-You either set a value in the *Input Percent* field and leave the other two empty, <br> or set a value for *Input Amount* and *Input Amount Currency* and leave the remaining one empty. 
+Usually, you either set a value in the *Input Percent* field and leave the other two empty, <br> or set a value for *Input Amount* and *Input Amount Currency* and leave the remaining one empty. 
 
 In the additional amount definition, you can control which method for determining the additional amount value is allowed. This is achieved by the *Amount Input Allowed* and *Percent Input Allowed* fields. 
 
@@ -21,7 +21,7 @@ The values entered in *Input Percent* and *Input Amount* can be managed by the *
 
 > [!NOTE]
 > 
-> In both methods, the program calculates an end amount rounded to a specific number of digits after the decimal point. This is an option of the additional amount definition – the *Round Scale* field. <br> The round scale itself isn't used in the end amount. As an intermediate amount, it's used for amount distribution. The rounded amounts are always limited to the second digit after the decimal point before being saved in the database.
+> In both methods, the program calculates an end amount rounded to a specific number of digits after the decimal point. This is an option of the additional amount definition – the *Round Scale* field. <br> The round scale itself isn't used in the end amount. It's used as an intermediate amount for amount distribution. The rounded amounts are always limited to the second digit after the decimal point before being saved in the database.
  
 ------------
 ### See more
