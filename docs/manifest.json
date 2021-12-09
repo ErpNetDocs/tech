@@ -3634,6 +3634,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/excise-initial-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/excise-initial-setup.html",
+          "hash": "Alo7bclBV9oWrq5B9eKXwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/excise-product-categories.md",
       "output": {
         ".html": {
