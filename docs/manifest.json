@@ -3638,7 +3638,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/excise-initial-setup.html",
-          "hash": "Alo7bclBV9oWrq5B9eKXwA=="
+          "hash": "TsjgoCVtq0cW7eQrLLghFQ=="
         }
       },
       "is_incremental": false,
@@ -3663,6 +3663,17 @@
         ".html": {
           "relative_path": "modules/financials/excise/excise-products.html",
           "hash": "I99f40ex5l6IP41D250A5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/image-20211209134740745-16390593696201.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/image-20211209134740745-16390593696201.png"
         }
       },
       "is_incremental": false,
