@@ -2312,6 +2312,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/image-20211209134740745-16390593696201.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/image-20211209134740745-16390593696201.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/general/pictures/fm1.png",
       "output": {
         "resource": {
@@ -3638,7 +3649,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/excise-initial-setup.html",
-          "hash": "TsjgoCVtq0cW7eQrLLghFQ=="
+          "hash": "EgkuqS53jLjsP4BYVsumhA=="
         }
       },
       "is_incremental": false,
