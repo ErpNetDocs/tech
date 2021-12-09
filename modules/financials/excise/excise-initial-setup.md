@@ -4,7 +4,7 @@
 
 ## I.           Prerequisites 
 
-1. The measurement units codes should be defined acording the CL1 nomencature
+1. The measurement units codes should be defined acording the CL1 nomenclature
 
 ![image-20211209134740745](image-20211209134740745-16390593696201.png)
 
