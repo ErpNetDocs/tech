@@ -6,7 +6,7 @@
 
 1. The measurement units codes should be defined acording the CL1 nomencature
 
-![img](file:///C:/Users/I6DC4~1.IVA/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![image-20211209134740745](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20211209134740745.png)
 
  
 
@@ -16,41 +16,45 @@
 
 3.1. Products
 
-\-     **Exc_BrandName** - Търговско наименование – Позволени стойности от номенклатура CL175 – Само от позволените стойности
+\-     **Exc_BrandName** - Allowed values from CL175 nomencature. Limited to alowed values
 
-\-     **Exc_Volume** – Вместимост – Десетично число
+\-     **Exc_Volume** – Volume  – decimal
 
-\-     **Exc_LabelPrice** – Цена по бандерол – Само някой специфични продукти имат такава – Десетично число
+\-     **Exc_LabelPrice** – Price on label – Only for specific products –Decimal
 
 3.2. Documents
 
-\-     **Exc_Purpose** – Предназначение – Позволени стойности от номенклатура CL200 – Само от позволените стойности
+\-     **Exc_Purpose** –  Allowed values from CL200 nomenclature. Limited to alowed values
 
-\-     **Exc_Driver** – Водач – в Стойност се попълва ЕГН, а в Описание – Името на водача на превозното средство
+\-     **Exc_Driver** – In Property Value is filling National number of the vehicle and in Property Decription  – Driver name
 
 3.3. ExciseAdministrativeDocumentLines
 
-\-     **Exc_Payment** – Плащане - Позволени стойности от номенклатура CL163– Само от позволените стойности
+\-     **Exc_Payment** – Allowed values from CL163 nomenclature. Limited to alowed values
 
 3.4. Parties
 
-\-     **Exc_Country** – Държава – Позволени стойности от номенклатура CL8
+\-     **Exc_Country** – Allowed values from CL8 nomenclature
 
-\-     **Exc_Region** – Област - Позволени стойности от номенклатура – CL1101
+\-     **Exc_Region** – Allowed values from CL1101 nomenclature
 
-\-     **Exc_Municipality** – Община - Позволени стойности от номенклатура – CL1102
+\-     **Exc_Municipality** – Allowed values from CL1102 nomenclature
 
-\-     **Exc_City** – Град - Позволени стойности от номенклатура – CL1103
+\-     **Exc_City** – Allowed values from CL1103 nomenclature
 
-\-     **Exc_District** – Квартал - Позволени стойности от номенклатура – CL1104
+\-     **Exc_District** – Allowed values from CL1104 nomenclature
 
-\-     **Exc_Street** – Улица / Адрес – Текст
+\-     **Exc_Street** – Street, Number – Text
 
 3.5. DocumentTypes
 
-\-     **Exc_DocumentType** – Тип документ – Позволени стойности CL2305
+\-     **Exc_DocumentType** – Allowed values from CL2305 nomenclature
 
-\-     **Exc_OperationType** – Тип на извеждането от акцизен склад – 1021,1029
+\-     **Exc_OperationType** – Type of output from Tax Warehouse (For example 1021,1029)
+
+
+
+
 
 II.          Other specific nomenclatures
 
