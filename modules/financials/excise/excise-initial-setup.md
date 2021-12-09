@@ -6,7 +6,7 @@
 
 1. The measurement units codes should be defined acording the CL1 nomencature
 
-![image-20211209134740745](C:\Users\i.ivanov\AppData\Roaming\Typora\typora-user-images\image-20211209134740745.png)
+![image-20211209134740745](image-20211209134740745-16390593696201.png)
 
  
 
