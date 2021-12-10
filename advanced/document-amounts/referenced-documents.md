@@ -71,7 +71,7 @@ In sales order #2, you enter a new discount for the Easter holidays:
 
 Default Percent: **-2%** <br> Base On Lines: **True** <br>  Distributed By: **Amount** <br> Round Scale: **2** 
 
-This additional amount is applied only to the current document and it's **NOT** entered in **Document Amount Referenced Documents**. 
+This additional amount is applied only to the current document and it's NOT entered in **Document Amount Referenced Documents**. 
 
 Sales order #2 gets a special bonus, which decreases **10%** of the amounts from sales order #1 and #2. 
 
