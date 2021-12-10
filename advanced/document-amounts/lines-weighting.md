@@ -8,9 +8,7 @@ For example, it's possible for some products in an invoice to be **exempt** from
 
 Similarly, for the 'Customs' additional amount in purchase invoices, a customs fee is due for particular products.
 
-There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line. 
-
-The feature is found in the **Document: Input line percentages** panel, also known as **amounts distribution by lines**. 
+There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line. The feature is found in the **Document: Input line percentages** panel, also known as **amounts distribution by lines**. 
 
 Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](/advanced/document-amounts/amounts-distribution/index.html)** by product definition.
 
@@ -21,7 +19,7 @@ In this panel, weights are entered in two ways:
 
 > [!NOTE] 
 > 
-> If there are no weights for an additional amount in the panel, it is considered that all weights are equal to **100%**.
+> If there are no weights for an additional amount in the panel, all weights are considered equal to **100%**.
 
 Below you'll find brief descriptions and examples for different input methods. <br> For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.html)**.
 
@@ -90,7 +88,7 @@ The Specific VAT is **19 EUR** and it's distributed through the rows as **0 EUR 
 
 **Example 3:**
 
-The following example describes a case where data is absent from the **Document: Input line percentages** panel:
+This is a case where data is absent from the **Document: Input line percentages** panel:
 
 There's an additional amount VAT, distributed by **amount** with a default percentage of **20%**. The amount is not distributed by the product definitions, therefore there will be no data in the **Document: Input line percentages** panel.
 
