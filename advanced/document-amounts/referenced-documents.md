@@ -26,7 +26,7 @@ This makes it possible to enter additional amounts in the document which is dist
 
 > [!NOTE] 
 > 
-> Respectively, if we want the same amount to be distrbuten in both the current document and other documents, then this requires listing the current document as 'Referenced' as well. 
+> Respectively, if you want the same amount to be distrbuten in both the current document and other documents, this requires listing the current document as 'Referenced' as well. 
 
 For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.md)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.md)**.
 
