@@ -6,9 +6,9 @@ For example, if there's a purchase invoice for goods transported to your locatio
 
 As a result, you'll have to enter the transport as an additional amount in a **separate** document.
 
-Even if the purchase invoice isn't late, it could still be necessary to enter the transport in a separate document. This might help when the transport is performed by a different company from the supplier of the goods . 
+Even if the purchase invoice isn't late, it could still be necessary to enter the transport in a separate document. This might help when the transport is performed by a different company from the supplier of the goods. 
 
-Therefore, you have an additional amount 'transport' in one purchase invoice, which will be distributed to the lines of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics module](/modules/logistics/index.md)**.
+Therefore, the additional amount 'transport' in one purchase invoice will be distributed to the lines of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics module](/modules/logistics/index.md)**.
 
 The additional amount is calculated and distributed by documents different from the ones in which you enter it. 
 
@@ -42,7 +42,7 @@ Purchase invoice #1 has three lines:
 
 Second purchase invoice #2 is entered with no lines - only an additional amount with _Input Amount_ of **38 EUR**. 
 
-You enter purchase invoice #1 as a referenced document for the additional amount in the **Document Amount Referenced Documents** panel of purchase invoice #2, without adding a record for the purchase invoice #2 itself .
+Then, purchase invoice #1 is entered as a referenced document for the additional amount in the **Document Amount Referenced Documents** panel of purchase invoice #2, without adding a record for #2 itself .
 
 The amount is distributed among the lines from #1, and distribution is entered in purchase invoice #1. This is the resulting distribution, assuming transport is distributed by amount and is rounded up to the second digit:
 
@@ -89,18 +89,18 @@ If the lines in sales order #2 are:
 - line #20 with amount of **75 EUR**; <br> 
 - line #30 with amount **40 EUR**; <br> 
 
-,the three additional amounts in sales order #2 are calculated and distributed as follows:
+the three additional amounts in sales order #2 are calculated and distributed as follows:
 
-- The amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows:
+- The amount of [Christmas discount] is **-5.40 EUR** and it is distributed as follows: <br>
 
     - line #10, Sales Order #1: **-3 EUR**;<br>
-    - line #20, Sales Order #1: **-2.40 EUR**.<br>
+    - line #20, Sales Order #1: **-2.40 EUR**.<br><br>
 
 - The amount of [Easter discount] is **-3 EUR** and it is distributed as follows:
 
     - line #10, Sales Order #2: **-0.70 EUR**;
     - line #20, Sales Order #2: **-1.50 EUR**;
-    - line #30, Sales Order #2: **-0.80 EUR**.<br>
+    - line #30, Sales Order #2: **-0.80 EUR**.<br><br>
 
 - The amount of [Reorder bonus] is **-32.16 EUR** and it is distributed as follows:
 
