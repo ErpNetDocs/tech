@@ -35,9 +35,9 @@ The purchase invoice is released **before** the purchase invoice for the transpo
 
 Transport can't be entered in the original purchase invoice (because the document state is Released and also the transport is not actually part of it and it should not be included there). Instead, transport is entered in another document and it should be distributed into the original purchase invoice, so its amount can be **included** in the invoice's products costs.
 
-As a result, you're able to indicate additional - **[referenced documents](referenced-documents.md)**, to which we have to distribute the current amount. 
+As a result, you're able to indicate additional - **[referenced documents](referenced-documents.md)**, to which you have to distribute the current amount. 
 
-Thus, once an amount is calculated and distributed (no matter if it is distrubuted only in the document it is entered or it is distributed and in other/referenced documents), to see its real value (this real value shows how the amount affects the business activities from the documents), its distributions should be summed from all documents it is distributed in.
+No matter if it's distrubuted only in the document it's entered or in other/referenced documents, once an amount is calculated and distributed, to see its real value, which shows how the amount affects business activities from the documents, its distributions should be **summed** from all documents it's distributed in.
 
 
 
