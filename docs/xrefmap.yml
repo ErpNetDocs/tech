@@ -163,6 +163,9 @@ references:
 - uid: coding-systems
   name: Coding systems
   href: modules/general/products/coding-systems.html
+- uid: config-options-reference
+  name: Config options reference
+  href: reference/config-options-reference.html
 - uid: document-amounts
   name: Additional amounts
   href: advanced/document-amounts/index.html
