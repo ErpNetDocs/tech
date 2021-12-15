@@ -1,15 +1,15 @@
 # Initial Setup
  
 
-### 1. The measurement units codes should be defined acording the CL1 nomenclature
+1. The measurement units codes should be defined acording the CL1 nomenclature
 
 ![image-20211209134740745](image-20211209134740745-16390593696201.png)
 
  
 
-### 2. The Base measurement unit of products should be same as measurement unit used in article 28 and article 29 from law on excises and tax warehouses
+2. The Base measurement unit of products should be same as measurement unit used in article 28 and article 29 from law on excises and tax warehouses
 
-### 3. It must be defined custom atributes with the following codes 
+3. It must be defined custom atributes with the following codes 
 
 3.1. Products
 
