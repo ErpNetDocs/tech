@@ -76,7 +76,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="vat-deviation">
 <h1 id="vat-deviation">VAT Deviation</h1>
 
 <p>VAT Deviation is a term used in sales orders and invoices. It is used in POS/store sales and their sales invoices. VAT deviation is the difference between the amount of the document that is obtained, when value added tax is calculated on the total amount of the document (which is the standard method of calculation in ERP.net) and the amount that is obtained when value added tax is charged on each Unit price in the document separately (which is the case for Store sales).</p>
@@ -85,7 +85,8 @@
 <h2 id="calculation">Calculation</h2>
 <p>If we denote the value of the two amounts of the document by <strong>[POS Amount]</strong> and <strong>[Standard Amount]</strong> then the formula would be:</p>
 <p><strong>[VAT Deviation] = [POS Amount] - [Standard Amount]</strong>.</p>
-<p>The difference between <strong>[POS Amount]</strong> and the <strong>[Standard amount]</strong> is that when calculating the <strong>[POS Amount]</strong> VAT is applied to the line amount for each line separately (taking into consideration the standard and specific discounts and then rounding off the result to a second decimal sign before calculating the amount of the line). Whereas while calculating <strong>[Standard Amount]</strong> the value added tax is applied to the entire amount of all lines (the rounding is performed on the total amount).</p>
+<p>The difference between <strong>[POS Amount]</strong> and the <strong>[Standard amount]</strong> is that when calculating the <strong>[POS Amount]</strong> VAT is applied to the line amount for each line separately (taking into consideration the standard and specific discounts and then rounding off the result to a second decimal sign before calculating the amount of the line).
+Whereas while calculating <strong>[Standard Amount]</strong> the value added tax is applied to the entire amount of all lines (the rounding is performed on the total amount).</p>
 <p><strong>[POS Amount]</strong> and <strong>[Standard Amount]</strong> are calculated as follows:</p>
 <p><strong>[Standard Amount]</strong> = Round (<strong>[Line Amount_Line1]</strong> + <strong>[Line Amount_Line2]</strong> + ... + <strong>[Line Amount_LineN]</strong>) * (1 + <strong>[VAT Rate]</strong>))</p>
 <p><strong>[POS Amount] = [POS Line Amount_Line1] + [POS Line Amount_Line2] + ... + [POS Line Amount_LineN]</strong>,</p>

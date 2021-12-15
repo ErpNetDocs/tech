@@ -226,6 +226,9 @@ references:
 - uid: ubr
   name: User business rules
   href: advanced/user-business-rules/index.html
+- uid: vat-deviation
+  name: VAT Deviation
+  href: modules/crm/sales/sales-concepts/vat-deviation.html
 - uid: webclient
   name: webclient
   href: includes/webclient.html
