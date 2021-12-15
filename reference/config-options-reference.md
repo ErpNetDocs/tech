@@ -1,3 +1,8 @@
+---
+uid: config-options-reference
+---
+
+
 # Config options reference
 
 The current article contains a list of configuration keys and their values:
