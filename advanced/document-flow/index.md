@@ -19,3 +19,7 @@ The design is achieved with the help of specific **routes** built for each docum
 
 #### Temp
 [!list folder="." file="*gene*" style="bullet" depth=0 limit=10]
+
+
+#### Temp 2
+[!list folder="." file="*gene*" exclude="*pro*" style="bullet" depth=0 limit=10]
