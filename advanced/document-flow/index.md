@@ -22,4 +22,4 @@ The design is achieved with the help of specific **routes** built for each docum
 
 
 #### Temp 2
-[!list folder="." file="*gene*" exclude="*pro*" style="bullet" depth=0 limit=10]
+[!list folder="." file="*gene*" exclude="det*" style="bullet" depth=0 limit=10]
