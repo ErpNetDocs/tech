@@ -16,10 +16,3 @@ The design is achieved with the help of specific **routes** built for each docum
 ### See more
 
 [!list folder="." depth=0 style="bullet" limit=100]
-
-#### Temp
-[!list folder="." file="*gene*" style="bullet" depth=0 limit=10]
-
-
-#### Temp 2*
-[!list folder="." file="*gene*" exclude="det*" style="bullet" depth=0 limit=10]
