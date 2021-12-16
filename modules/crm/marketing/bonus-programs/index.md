@@ -1,3 +1,7 @@
+---
+uid: bonus-program
+---
+
 # Bonus programs
 
 *Bonus programs* are a tool that automates including a bonus product or a discount on the sales order when the document meets certain conditions. Using bonus program automation reduces the chances that a mistake is made. For example, if the business model requires using a lot of bonuses, there is a high probability an employee would forget to include a free product or a discount, but using bonus programs ensures that if all conditions are met, the customer receives the bonus.
