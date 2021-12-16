@@ -1,3 +1,7 @@
+---
+uid: sales-order-row-types
+---
+
 # Sales order row types
 
 The classification of the *Sales Order* rows describes three main row types - Normal sale, Sales return and Neutral operation. The row type is important for some generation procedures from sales order.
