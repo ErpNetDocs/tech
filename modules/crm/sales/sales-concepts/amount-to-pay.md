@@ -1,3 +1,7 @@
+---
+uid: amount-to-pay
+---
+
 # Amount to pay
 
 Amount to pay is part of the sales orders and invoices. It is the final amount that the customer has to pay on the current document (sales order or invoice). It is calculated as the sum of the row amounts and all additional amounts in the current document which has checked in the Add To Customer attribute in their definitions.
