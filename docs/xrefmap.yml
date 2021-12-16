@@ -4,9 +4,15 @@ references:
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
+- uid: amount-to-pay
+  name: Amount to pay
+  href: modules/crm/sales/sales-concepts/amount-to-pay.html
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: bonus-program
+  name: Bonus programs
+  href: modules/crm/marketing/bonus-programs/index.html
 - uid: brat-FAIL
   name: FAIL
   href: advanced/user-business-rules/action-types/fail.html
@@ -166,6 +172,9 @@ references:
 - uid: config-options-reference
   name: Config options reference
   href: reference/config-options-reference.html
+- uid: deferred-payments-options
+  name: Deferred payments options
+  href: modules/crm/sales/sales-concepts/deferred-payments-options.html
 - uid: document-amounts
   name: Additional amounts
   href: advanced/document-amounts/index.html
@@ -208,6 +217,12 @@ references:
 - uid: notification-settings
   name: Notification settings
   href: modules/community/social-interactions/notifications/settings.html
+- uid: promotional-package
+  name: Promotional packages
+  href: modules/crm/sales/promotional-packages/index.html
+- uid: sales-order-row-types
+  name: Sales order row types
+  href: modules/crm/sales/sales-concepts/sales-order-row-types.html
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
