@@ -35,7 +35,7 @@ Additional amounts are used for different reasons, such as adding amounts to the
 
 #### Calculating the amount to pay
 
-Some additional amounts serve to calculate the **@amount-to-pay** for a document. This is marked in the definition by adding a check to the *Add To Customer* field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
+Some additional amounts serve to calculate the @amount-to-pay for a document. This is marked in the definition by adding a check to the *Add To Customer* field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
 
 #### Calculating goods cost
 
