@@ -1,7 +1,3 @@
----
-uid: logistics
----
-
 # Logistics
 
 - **[Common concepts](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
