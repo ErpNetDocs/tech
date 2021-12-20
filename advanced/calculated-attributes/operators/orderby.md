@@ -15,11 +15,15 @@ items: Operators
 | Parameter 3 Name      | inner clauses (optional)                                                            |
 | Parameter 3 Type      | expression                                                           |
 | Return value          | Ordered result set of a query by the specified column or expression.                                                          |
-| Introduced in version | (In implementation) |
+| Introduced in version | 2020 |
+
+
+> [!NOTE]
+> Not all attributes support sorting by ORDERBY. You can check if the attribute supports ORDERBY in the "Supports Order By: True/False" property of the attribute. The information is available in the Attribute Details section in the model documentation of the entity. E.g. https://docs.erp.net/model/entities/General.Products.Products.html#partnumber
 
 
 **Example:**
-
+_Select the first 5 products with lowest PartNumber._
 ```
 10: SELECT REPO:General.Products.Products EXP:20
 20: TOP CONST:5 EXP:30
