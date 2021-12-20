@@ -1,3 +1,7 @@
+---
+uid: setting-cost-when-purchasing-goods
+---
+
 # Setting cost when purchasing goods
 
 In @@name goods are purchased in two stages:
