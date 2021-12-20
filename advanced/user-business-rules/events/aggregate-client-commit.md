@@ -1,3 +1,6 @@
+---
+uid: aggregate-client-commit
+---
 
 # AGGREGATE CLIENT COMMIT
 
