@@ -226,6 +226,9 @@ references:
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
+- uid: setting-transaction-timestamp-in-reconciliations
+  name: Setting transaction timestamp in reconciliations
+  href: modules/logistics/concepts/setting-transaction-timestamp/setting-transaction-timestamp-in-reconciliations.html
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
