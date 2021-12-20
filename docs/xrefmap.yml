@@ -31,6 +31,9 @@ references:
 - uid: ca
   name: User calculated attributes
   href: advanced/calculated-attributes/index.html
+- uid: calculating-cost-for-produced-products
+  name: Calculating cost for produced products
+  href: modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html
 - uid: cao-ADD
   name: ADD
   href: advanced/calculated-attributes/operators/add.html
