@@ -1,3 +1,7 @@
+---
+uid: calculating-cost-for-produced-products
+---
+
 # Calculating cost for produced products
 
 In the production process, some materials (issued from one or multiple stores) are transformed into a certain output (entered into the store). The cost of the <b>issue</b> transactions has to be transferred to the <b>receipt</b> transactions. This is similar to the transfer and return of goods (see [Calculating cost for transferred products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html?q=Calculating%20cost%20for%20transferred%20products) and [Calculating cost for returned products](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html?q=Calculating%20cost%20for%20returned%20products)). However, the calculations are different.
