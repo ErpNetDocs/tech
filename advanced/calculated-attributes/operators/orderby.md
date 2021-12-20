@@ -19,14 +19,15 @@ items: Operators
 
 
 > [!NOTE]
-> Not all attributes support sorting by ORDERBY. You can check if the attribute supports ORDERBY in the "Supports Order By: True/False" property of the attribute. The information is available in the Attribute Details section in the model documentation of the entity. E.g. https://docs.erp.net/model/entities/General.Products.Products.html#partnumber
+> Not all attributes support sorting by ORDERBY. You can check if the attribute supports ORDERBY in the "Supports Order By: True/False" property of the attribute. The information is available in the Attribute Details section in the model documentation of the entity. E.g. https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#documentdate
 
 
 **Example:**
-_Select the first 5 products with lowest PartNumber._
+_Select the last 5 Sales Order Lines sorted by Sales Order's document date	._
 ```
-10: SELECT REPO:General.Products.Products EXP:20
+10: SELECT REPO:Crm.Sales.SalesOrderLines EXP:20
 20: TOP CONST:5 EXP:30
-30: ORDERBY ATTR:PartNumber CONST:ASC EXP:40
-40: WHERE ...
+30: ORDERBY EXP:40 CONST:DESC EXP:50
+40: GETOBJVALUE	REF:SalesOrder	ATTRIB:DocumentDate		
+50: WHERE ...
 ```
