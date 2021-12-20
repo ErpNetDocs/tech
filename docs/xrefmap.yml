@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: aggregate-client-commit
+  name: AGGREGATE CLIENT COMMIT
+  href: advanced/user-business-rules/events/aggregate-client-commit.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
