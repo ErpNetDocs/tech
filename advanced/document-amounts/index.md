@@ -39,7 +39,7 @@ Some additional amounts serve to calculate the **@amount-to-pay** for a document
 
 #### Calculating goods cost
 
-Additional amounts may be used to add value to the cost of the goods in the **@logistics-module**.
+Additional amounts may be used to add value to the cost of the goods in the @logistics-module 
 
 For example, if the transport is entered as an additional amount when goods are purchased, the transport value will be **added** to the purchase price. When a stock transfer from one store to another is executed and it includes transport cost added to the issued products, the value of this transport should be **added** to the products cost **before** they are received in the second store. 
 
