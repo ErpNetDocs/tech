@@ -1,5 +1,5 @@
 ---
-uid: logistics-documents
+uid: logistics-module
 ---
 
 # Logistics
