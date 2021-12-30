@@ -3452,12 +3452,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/amount-to-pay.html",
-          "hash": "V7Ukdv/ykxB5cJrJYj9GUg=="
+          "hash": "gO9imTknStlkJiC8SuBIqA=="
         }
       },
       "is_incremental": false,
