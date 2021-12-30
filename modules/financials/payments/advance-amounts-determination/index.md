@@ -19,4 +19,4 @@ The advance amounts are extracted from the payment yransaction rows and their ca
 3. For each group, a total amount is determined, which meets the [Is Amount With VAT] parameter, and this total amount is added to the collection of advance amounts.
 4. All rows (from all groups), which contain advance amounts and do not correspond to [Is Amount With VAT], are summed up and they define the remaining amount.
 
-For a more detailed explanation of the algorithm, see [Advance amount calculation algorithm](https://docs.erp.net/tech/modules/financials/payments/advance-amounts-determination/advance-amount-calculation-algorithm.html?q=advance).
+For a more detailed explanation of the algorithm, see [Advance amount calculation algorithm](~/modules/financials/payments/advance-amounts-determination/advance-amount-calculation-algorithm.md).
