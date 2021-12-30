@@ -121,7 +121,7 @@
 <li>row #70,  <i>Line Deal Type</i> = &quot;DealType1&quot;, LineAmount = 24 EUR.</li>
 </ul>
 <p>Thus, in the previous stage for the rows three ideal types are defined - DealType1, DealTyope2 and DealType3. Thus, three bases and three VATs must be calculated - [DealType1:base], [DealType2:base], [DealType3:base], [DealType1:VAT], [DealType2:VAT], [DealType3:VAT]. To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used. For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.</p>
-<p>The VAT additional amount is set in the ERP.net definition (see <a href="%7Eadvanced/document-amounts/index.md">Additional amounts</a>) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the ERP.net company definition), the calculation is interrupted by an error message.</p>
+<p>The VAT additional amount is set in the ERP.net definition (see <a href="../../../advanced/document-amounts/index.html">Additional amounts</a>) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the ERP.net company definition), the calculation is interrupted by an error message.</p>
 <p>The distributed additional amount on the rows is used in the calculation of the VAT amounts. And to calculate the bases amounts - the distributed VAT additional amounts which are added to the base and also the line amounts (but only if in the VAT additional amount Base On Lines is true).</p>
 <p>The bases and VAT’s calculations are performed in three steps:</p>
 <ol>

@@ -3572,15 +3572,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.html",
-          "hash": "yjaWZkSAhqlqHQIzO+b1mg=="
+          "hash": "FOGfn7sn9MaFU/bNiBB82Q=="
         }
       },
       "is_incremental": false,
