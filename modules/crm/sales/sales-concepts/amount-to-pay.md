@@ -21,11 +21,11 @@ So the Amount To Pay is: **54 EUR** = 24 EUR + 21 EUR +9 EUR.
 
 ## Relation To Tax Base And VAT (Invoices)
 
-In most cases, the amount to pay matches the sum of tax base and VAT, like in ***Example 1***, but a difference is possible. It is possible if there are [Additional Amounts](~/tech/advanced/document-amounts/index.md) that are paid by the customer but are not set as base amounts for VAT additional amount.
+In most cases, the amount to pay matches the sum of tax base and VAT, like in ***Example 1***, but a difference is possible. It is possible if there are [Additional Amounts](~/advanced/document-amounts/index.md) that are paid by the customer but are not set as base amounts for VAT additional amount.
 
 #### Example 2 :
 
-There is an invoice with a line amount of **45 EUR** and two [Additional Amounts](~/tech/advanced/document-amounts/index.md) which are paid by the customer:
+There is an invoice with a line amount of **45 EUR** and two [Additional Amounts](~/advanced/document-amounts/index.md) which are paid by the customer:
 
 - VAT, amount: 20% of **45 EUR** = **9 EUR**
 - Penalty Interest - not a VAT base amount, Amount: **20 EUR**
@@ -41,7 +41,7 @@ There is an invoice with two rows:
 - Row #10 - Product **1**, LineAmount: **2 PCS** x **12 EUR** = **24 EUR**
 - Row #20 - Product **2**, LineAmount: **3 PCS** x **7 EUR** = **21 EUR**
 
-and [Additional Amounts](~/tech/advanced/document-amounts/index.md) as follows:
+and [Additional Amounts](~/advanced/document-amounts/index.md) as follows:
 
 - **Tax Base**, Amount: **30 EUR**
 - **VAT**, Amount Percent **20%** of **30 EUR** = **6 EUR**
