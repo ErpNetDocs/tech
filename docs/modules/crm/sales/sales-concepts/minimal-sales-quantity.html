@@ -86,13 +86,16 @@
 </ol>
 <p>If it is set in the product definition, the restriction takes place in every sales order.</p>
 <p>If it is set in the product distribution channel, then it validates the sales order release, only if the distribution channel is selected in the document header. If there are two minimal sales quantities for a product - one in its definition and one set by the product distribution channel, then the more restrictive one is taken into account.</p>
-<blockquote>
-<p>[!NNOTE] : The minimal quantity constraint does not take effect when the user enters a sales return.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The minimal quantity constraint does not take effect when the user enters a sales return.</p>
+</div>
 <p>The restriction is applied on the <em>Quantity Base</em> field in the <em>Sales Order</em> Lines. When such restriction exists it is applied to the calculated quantity in the base measurement unit.</p>
-<blockquote>
-<p>The restriction also calculates the total quantity base of the product in the <em>Sales Order</em> Lines, meaning that if the user enters the product in more than one line and the &gt;total quantity base covers the minimal sales quantity base, then the user would be able to release the sales order.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The restriction also calculates the total quantity base of the product in the <em>Sales Order</em> Lines, meaning that if the user enters the product in more than one line and the
+total quantity base covers the minimal sales quantity base, then the user would be able to release the sales order.</p>
+</div>
 <h4 id="example-1">Example 1:</h4>
 <ul>
 <li><strong>Product A</strong> has a minimal sales quantity base of <strong>3 PCS</strong>. The product base measurement unit is <strong>PCS</strong>. It is declared that <strong>1 KG</strong> of <strong>Product A</strong> is equal to <strong>2 PCS</strong>. In the product definition a minimal sales quantity base of <strong>3.00</strong>.</li>
