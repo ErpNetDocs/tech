@@ -60,7 +60,7 @@ There is an Invoice with 7 rows:
 
 Thus, in the previous stage for the rows three ideal types are defined - DealType1, DealTyope2 and DealType3. Thus, three bases and three VATs must be calculated - [DealType1:base], [DealType2:base], [DealType3:base], [DealType1:VAT], [DealType2:VAT], [DealType3:VAT]. To calculate base and VAT for DealType1 the data from row #10, row #40 and row #70 are used. For the base and VAT of DealType2 only row #20 is used, and for DealType3 - row #30, row #50 and row# 60.
  
-The VAT additional amount is set in the @@name definition (see [Additional amounts](~advanced/document-amounts/index.md)) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the @@name company definition), the calculation is interrupted by an error message. 
+The VAT additional amount is set in the @@name definition (see [Additional amounts](~/advanced/document-amounts/index.md)) of the current document. If the document does not contain the specified VAT additional amount (or there is no such in the @@name company definition), the calculation is interrupted by an error message. 
  
 The distributed additional amount on the rows is used in the calculation of the VAT amounts. And to calculate the bases amounts - the distributed VAT additional amounts which are added to the base and also the line amounts (but only if in the VAT additional amount Base On Lines is true).
  
