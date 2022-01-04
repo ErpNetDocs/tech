@@ -42,4 +42,4 @@ There is a default domain in the databases and the Azure record should be added 
 
 3. There should be a license **SEC01 - Security - Sign in with Azure AD**
 <br>
-If you have any questions, do not hesitate to get back to us.
+
