@@ -14,6 +14,7 @@ It is intended primarily for advanced ERP implementation consultants.
 - **[String interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** - breaking down input string is into expressions.
 - **[Data objects](https://docs.erp.net/tech/advanced/data-objects/index.html)** - data object extensibility systems.
 - **[Jobs](https://docs.erp.net/tech/advanced/jobs/index.html)** - systems which automatically run processes.
+- **Security** - security-related topics.
 
 ## Advanced concepts
 
