@@ -26,3 +26,6 @@
 - name: Jobs
   href: jobs/toc.yml
   topicHref: jobs/index.md
+- name: Security
+  href: security/toc.yml
+  topicHref: security/index.md
