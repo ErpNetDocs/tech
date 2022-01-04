@@ -2337,6 +2337,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/advanced/security/authentication/pictures/azure1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/security/authentication/pictures/azure1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/security/authentication/pictures/azure2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/security/authentication/pictures/azure2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/security/authentication/pictures/azure3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/security/authentication/pictures/azure3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/security/authentication/pictures/azure4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/security/authentication/pictures/azure4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/concepts/Party-attributes.png",
       "output": {
         "resource": {
