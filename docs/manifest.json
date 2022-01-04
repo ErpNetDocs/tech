@@ -1380,7 +1380,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "/PST4bL+6SJ/bMABizYciw=="
+          "hash": "bFzxFuS39Ie5cmhllfFduA=="
         }
       },
       "is_incremental": false,
@@ -1453,6 +1453,86 @@
         ".html": {
           "relative_path": "advanced/jobs/template.html",
           "hash": "JSYYddf4gGMduYlXxET2Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/security/authentication/azuread.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/security/authentication/azuread.html",
+          "hash": "AMdo4TKZdHtivO4dCF1fbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/security/authentication/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/security/authentication/index.html",
+          "hash": "YJlxksmywSpGsJxPFkl+fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/security/authentication/pictures/azure1.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/security/authentication/pictures/azure1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/security/authentication/pictures/azure2.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/security/authentication/pictures/azure2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/security/authentication/pictures/azure3.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/security/authentication/pictures/azure3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/security/authentication/pictures/azure4.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/security/authentication/pictures/azure4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/security/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/security/index.html",
+          "hash": "9zbdRelBf0JqtlW+ee/KNg=="
         }
       },
       "is_incremental": false,
@@ -1620,7 +1700,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "SYg8ji5MyQrn24lU9pR2Rw=="
+          "hash": "i5C1NCMpAefN3JAcuA66dA=="
         }
       },
       "is_incremental": false,
@@ -1848,7 +1928,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/statechanged.html",
-          "hash": "R4eV5N5PRHlZV+/dzZGztA=="
+          "hash": "TNGyEGCYT2IxWdTvK6sTyg=="
         }
       },
       "is_incremental": false,

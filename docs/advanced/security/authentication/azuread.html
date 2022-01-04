@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>STATECHANGED | ERP.net Tech Docs </title>
+    <title>Azure authentication | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="STATECHANGED | ERP.net Tech Docs ">
+    <meta name="title" content="Azure authentication | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,44 +77,54 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="statechanged">STATECHANGED</h1>
+<h1 id="azure-authentication">Azure authentication</h1>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">STATECHANGED</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Layer</strong></td>
-<td style="text-align: left;">Back-end</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Description</strong></td>
-<td style="text-align: left;">Occurs when a <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">document state</a></strong> specified in the <em>Parameter</em> field is changed.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">Introduced: 2017.1 <br> Updated: -</td>
-</tr>
-</tbody>
-</table>
-<p>This event occurs <strong>AFTER</strong> the change of the document state but <strong>BEFORE</strong> that change is saved. <br><br></p>
-<p><strong>Example 1</strong></p>
-<p>There's a <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html">FAIL</a></strong> action set on a STATECHANGED event.</p>
-<p>The rule will be triggered once all rules and validations registered on <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/events/statechanging.html">STATECHANGING</a></strong> are performed. However, this happens <strong>before</strong> the document is saved into the database. When conditions are met and the rule fails, the state of the document <strong>won't</strong> be changed and it'll remain in its previous state.</p>
-<p><strong>Example 2</strong></p>
-<p>When you receive a batch of goods, you want to check if the availability of a product would be over 100 PCS. <br> It's best to use STATECHANGED so the quantities of the current store transaction are included in the calculation. <br><br></p>
-<p>STATECHANGED always goes with an event parameter. Possible values are:</p>
+<p>ERP.net supports Azure as an authentication provider. There are a couple of Azure and ERP.net settings that should be configured for this authentication method to work.</p>
+<p><img src="pictures/azure1.png" alt="picture"></p>
+<h3 id="azure-settings">Azure settings</h3>
+<ol>
+<li><p>Log into your Azure subscription via <a href="https://portal.azure.com">https://portal.azure.com</a>.</p>
+</li>
+<li><p>Manage Azure Active Directory.</p>
+</li>
+<li><p>Register your application with your Azure Active Directory tenant by clicking <strong>App registrations</strong> -&gt; <strong>Register an application</strong>.</p>
+</li>
+</ol>
+<p><img src="pictures/azure2.png" alt="picture"></p>
+<ol start="4">
+<li><p>Enter the required details. You can use anything for the name (for example: ERP.net Identity Server). <br> Leave “<em>Accounts in this organization directory only</em>” checked.</p>
+</li>
+<li><p>Click on Authentication.</p>
+</li>
+<li><p>In the Redirect URI field enter the callback path configured in IdentityServer4 for Azure AD auth. <br>
+This will be <strong>https://<uin>.my.erp.net/id/signin-aad</uin></strong>, where:</p>
+</li>
+</ol>
 <ul>
-<li><strong>PLANNED</strong></li>
-<li><strong>FIRMPLANNED</strong></li>
-<li><strong>RELEASED</strong></li>
-<li><strong>COMPLETED</strong></li>
-<li><strong>CLOSED</strong></li>
+<li><code>&lt;UIN&gt;</code> is the ERP.net unique instance name</li>
+<li><code>/id</code> is the relative path of the ID site</li>
+<li><code>/signin-aad</code> is the endpoint responsible for AZURE AD redirects (/signin-aad is constant for all databases)</li>
 </ul>
+<ol start="7">
+<li><p>Check the ID tokens checkbox.</p>
+</li>
+<li><p>Make a note of your Application (client) ID and Directory (tenant) ID values - they should be copied in the corresponding fields in the Sec_Domain_Providers table.</p>
+</li>
+</ol>
+<h3 id="erpnet-settings">ERP.net settings</h3>
+<ol>
+<li>In the &quot;Setup / Security / Domains&quot; section a &quot;Domain providers&quot; record should be created. <br>
+There is a default domain in the databases and the Azure record should be added there.</li>
+</ol>
+<p><img src="pictures/azure3.png" alt="picture"></p>
+<ol start="2">
+<li>The users are referenced by their email:</li>
+</ol>
+<p><img src="pictures/azure4.png" alt="picture"></p>
+<ol start="3">
+<li>There should be a license <strong>SEC01 - Security - Sign in with Azure AD</strong>
+<br></li>
+</ol>
 </article>
           </div>
           
@@ -123,7 +133,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/statechanged.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/security/authentication/azuread.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
