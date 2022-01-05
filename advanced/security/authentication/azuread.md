@@ -19,7 +19,7 @@ ERP.net supports Azure as an authentication provider. There are a couple of Azur
 5. Click on Authentication.
 
 6. In the Redirect URI field enter the callback path configured in IdentityServer4 for Azure AD auth. <br>
-This will be **https://`<UIN>`.my.erp.net/id/signin-aad**, where:
+This will be **https://'<UIN>'.my.erp.net/id/signin-aad**, where:
 
 - ``<UIN>`` is the ERP.net unique instance name
 - ``/id`` is the relative path of the ID site
