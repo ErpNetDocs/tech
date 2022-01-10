@@ -230,3 +230,11 @@ version 2020.1 is Main Menu.**Warning:** The current key's value will be taken i
 - a.Action: When this key has a value for the particular user and this value is "1", then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user. 
 - b. The user sets it manually (directly in the registry or using the option available in tab File => Settings => Use default Windows mail client).
 - c.The key is introduced in version: - 2019.1
+
+47. Key **CodeNameFormat**
+
+- a.Action: The default display text format for entities that provide Code and Name. The value is an integer number from 1 to 4:
+- "1" - {Code}: {Name}
+- "2" - {Code}
+- "3" - {Name} ({Code})
+- "4" - {Name}
