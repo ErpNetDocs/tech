@@ -234,7 +234,9 @@ version 2020.1 is Main Menu.**Warning:** The current key's value will be taken i
 ## 47. CodeNameFormat
 
 - a.Action: The default display text format for entities that provide Code and Name. The value is an integer number from 1 to 4:
-- "1" - {Code}: {Name}
-- "2" - {Code}
-- "3" - {Name} ({Code})
-- "4" - {Name}
+    - "1" - {Code}: {Name}
+    - "2" - {Code}
+    - "3" - {Name} ({Code})
+    - "4" - {Name}
+- b.The user sets it manually.
+- c.The key is introduced in version: - 2022
