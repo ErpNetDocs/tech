@@ -80,129 +80,93 @@
 <h1 id="config-options-reference">Config options reference</h1>
 
 <p>The current article contains a list of configuration keys and their values:</p>
-<ol>
-<li>Key - <strong>AllowFirmPlannedParentForReleasedChild</strong></li>
-</ol>
+<h2 id="1-allowfirmplannedparentforreleasedchild">1. <strong>AllowFirmPlannedParentForReleasedChild</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot; the following is allows: released subdocuments of FirmPlanned document are allowed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="2">
-<li>Key - <strong>CheckForNonVoidedReferencingDocumentsDisabled</strong></li>
-</ol>
+<h2 id="2-checkfornonvoidedreferencingdocumentsdisabled">2. <strong>CheckForNonVoidedReferencingDocumentsDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="3">
-<li>Key - <strong>CheckForOverexecutionDisabled</strong></li>
-</ol>
+<h2 id="3-checkforoverexecutiondisabled">3. <strong>CheckForOverexecutionDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="4">
-<li>Key - <strong>CheckForOverinvoicedQuantityInSalesOrderLinesDisabled</strong></li>
-</ol>
+<h2 id="4-checkforoverinvoicedquantityinsalesorderlinesdisabled">4. <strong>CheckForOverinvoicedQuantityInSalesOrderLinesDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="5">
-<li>Key - <strong>CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled</strong></li>
-</ol>
+<h2 id="5-checkfortransactionmovementtypedifferentthanparentstoreordermovementtypedisabled">5. <strong>CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, verification that the movement type of the store transaction is the same as the movement type(s) of the parent store order(s) is not performed. In all other cases, the verification is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="6">
-<li>Key - <strong>Default language</strong></li>
-</ol>
+<h2 id="6-default-language">6. <strong>Default language</strong></h2>
 <ul>
 <li>a.Action: Defines the default language of multi-language fields. For example: en - English, bg - Bulgarian.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="7">
-<li>Key - <strong>Default_Enterprise_Company_Location_Id/XXX</strong></li>
-</ol>
+<h2 id="7-default_enterprise_company_location_idxxx">7. <strong>Default_Enterprise_Company_Location_Id/XXX</strong></h2>
 <ul>
 <li>a.Action: Defines the default company location. XXX is the ID of the enterprise company. The value is the ID of the default company location.</li>
 <li>b.Set automatically by the system of the user.</li>
 </ul>
-<ol start="8">
-<li>Key - <strong>Documents/OnlySaveNewVersionsToHistory</strong></li>
-</ol>
+<h2 id="8-documentsonlysavenewversionstohistory">8. <strong>Documents/OnlySaveNewVersionsToHistory</strong></h2>
 <ul>
 <li>a.<em>This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.</em></li>
 <li>b.Action: When the key has value and this value is &quot;1&quot;, the new method is applied. In all other cases, the old method is applied.</li>
 <li>c.The user sets it manually.</li>
 </ul>
-<ol start="9">
-<li><strong>Key - DontCheckForNegativeUnitPrice</strong></li>
-</ol>
+<h2 id="9-dontcheckfornegativeunitprice">9. <strong>DontCheckForNegativeUnitPrice</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, verification for negative values in the Unit Price field is not performed. In all other cases, the verification is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="10">
-<li><strong>Key - Inv/CheckForNegativeAvailability</strong></li>
-</ol>
+<h2 id="10-invcheckfornegativeavailability">10. <strong>Inv/CheckForNegativeAvailability</strong></h2>
 <ul>
 <li>a.Action: When the key has value &quot;1&quot;, verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than &quot;1&quot; the described validations are not performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="11">
-<li>Key - <strong>InvoiceFiscalPrintChangeToState (DEPRECATED)</strong></li>
-</ol>
+<h2 id="11-invoicefiscalprintchangetostate-deprecated">11. <strong>InvoiceFiscalPrintChangeToState (DEPRECATED)</strong></h2>
 <ul>
 <li>a.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="12">
-<li>Key - <strong>InvoiceFiscalPrintUseDistributedAmountsForUnitPrice</strong></li>
-</ol>
+<h2 id="12-invoicefiscalprintusedistributedamountsforunitprice">12. <strong>InvoiceFiscalPrintUseDistributedAmountsForUnitPrice</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="13">
-<li>Key - <strong>Last_Used_Enterprise_Company_Id</strong></li>
-</ol>
+<h2 id="13-last_used_enterprise_company_id">13. <strong>Last_Used_Enterprise_Company_Id</strong></h2>
 <ul>
 <li>a.Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.</li>
 <li>b.Set automatically by the system of the user.</li>
 </ul>
-<ol start="14">
-<li>Key - <strong>Last_Used_Enterprise_Company_Location_Id/XXX</strong></li>
-</ol>
+<h2 id="14-last_used_enterprise_company_location_idxxx">14. <strong>Last_Used_Enterprise_Company_Location_Id/XXX</strong></h2>
 <ul>
 <li>a.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.</li>
 <li>b.Set automatically by the system of the user.</li>
 </ul>
-<ol start="15">
-<li>Кеу - <strong>SalesOrderFiscalPrintChangeToState (DEPRECATED)</strong></li>
-</ol>
+<h2 id="15-кеу---salesorderfiscalprintchangetostate-deprecated">15. Кеу - <strong>SalesOrderFiscalPrintChangeToState (DEPRECATED)</strong></h2>
 <ul>
 <li>a.Action: This key specifies the document state to which a sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the sales order is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="16">
-<li>Key - <strong>SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice</strong></li>
-</ol>
+<h2 id="16-salesorderfiscalprintusedistributedamountsforunitprice">16. <strong>SalesOrderFiscalPrintUseDistributedAmountsForUnitPrice</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the sales order line with VAT included and discounts in the row.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="17">
-<li>Key - <strong>SalesOrdersOverduePaymentOrdersCheckDisabled</strong></li>
-</ol>
+<h2 id="17-salesordersoverduepaymentorderscheckdisabled">17. <strong>SalesOrdersOverduePaymentOrdersCheckDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, on sales order document release overdue payment orders check is not performed. In all other cases, such check is performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="18">
-<li>Key - <strong>SimpleFilterLayout</strong></li>
-</ol>
+<h2 id="18-simplefilterlayout">18. <strong>SimpleFilterLayout</strong></h2>
 <ul>
 <li>a.Action: When the value of the key is &quot;1&quot;, then the &quot;Use simple layout for filter panels&quot; option is check-marked and the visualization of the navigator filter panels for the specified user is in the format &quot;Field OR Value&quot;. If the value of the key is &quot;0&quot;, then the &quot;Use simple layout for filter panels&quot; option is not check-marked and the visualization of the navigator filter panels for the specified user is in the format &quot;Field: Value&quot;.</li>
 <li>b.The user sets it manually through File tab → Settings → &quot;Use simple layout for filter panels&quot;. But if the key is not configured for the particular user, then the system will use the default value. The default value depends on the system version:
@@ -212,16 +176,12 @@
 </ul>
 </li>
 </ul>
-<ol start="19">
-<li>Key - <strong>CheckInvoiceLinesQuantityUnitDisabled</strong></li>
-</ol>
+<h2 id="19-checkinvoicelinesquantityunitdisabled">19. <strong>CheckInvoiceLinesQuantityUnitDisabled</strong></h2>
 <ul>
 <li>a.Action: When the key has value and this value is &quot;1&quot;, when an invoice is released the validation if the measurement unit of the invoice line and the invoiced sales order line are the same is not performed.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="20">
-<li>Key - <strong>AllowBaseAmountsFromThirdDocument</strong></li>
-</ol>
+<h2 id="20-allowbaseamountsfromthirddocument">20. <strong>AllowBaseAmountsFromThirdDocument</strong></h2>
 <ul>
 <li>a.Action: The action of the current key impacts how the additional amounts are distributed. If amount S and B are distributed on document D1 and amount S depends on amount B.
 <ul>
@@ -233,9 +193,7 @@
 </li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="21">
-<li>Key -  <strong>CreateReconciliationsByTimestamp</strong></li>
-</ol>
+<h2 id="21--createreconciliationsbytimestamp">21.  <strong>CreateReconciliationsByTimestamp</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the function &quot;Add the available products&quot; in the reconciliation form and the manually added new rows would use the date of the transaction timestamp in the row, and not the date of the document, to calculate the stocks availability. The stocks availability may be looked at by one of the following methods:
 - Stock movements in the store by the document date;
@@ -243,30 +201,22 @@
 <li>b.Usually, the &quot;i&quot; method is used to define stock availability (i.e. the quantities at a specified date), and method &quot;ii&quot; is used to define the stocks cost (at a specified time)</li>
 <li>c.The user sets it manually.</li>
 </ul>
-<ol start="22">
-<li>Key -  <strong>CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation</strong></li>
-</ol>
+<h2 id="22--costcorrectionscalculatecosttransferdocumentscostbydocumentcurrencyreevaluation">22.  <strong>CostCorrectionsCalculateCostTransferDocumentsCostByDocumentCurrencyReevaluation</strong></h2>
 <ul>
 <li>a.Action: the current key regulates the recalculation of the products costs by the documents which transfer costs (store transfers, work orders, sales returns). When the key has value and this value is &quot;1&quot;, the recalculation is performed as follows: all costs of the issue and receipt store documents are converted to the currency of the master document (the document which transfers the cost). If not, usually the base currency of the issue and receipt store documents is used for the recalculation.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="23">
-<li>Key - <strong>ActiveLanguages</strong></li>
-</ol>
+<h2 id="23-activelanguages">23. <strong>ActiveLanguages</strong></h2>
 <ul>
 <li>a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).</li>
 <li>b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.</li>
 </ul>
-<ol start="24">
-<li>Key -  <strong>CheckForTransactionInvalidLotDisabled</strong></li>
-</ol>
+<h2 id="24--checkfortransactioninvalidlotdisabled">24.  <strong>CheckForTransactionInvalidLotDisabled</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the validation for an invalid lot in the store transaction on document release is not performed. An invalid lot is a lot that is defined for a product, different than the product in the store transaction line. In all other cases, the validation is performed.</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="25">
-<li>Key - <strong>VisualPasteDisabled - suspended</strong></li>
-</ol>
+<h2 id="25-visualpastedisabled---suspended">25. <strong>VisualPasteDisabled - suspended</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, when rows are pasted in a grid they are pasted all at the same time (as it was in version 2.3). In all other cases when rows are pasted in a grid, they are pasted visually - row by row and field by field. Every value is searched between allowed values in drop-down lists.</li>
 <li>b.The user sets it manually</li>
@@ -277,23 +227,17 @@
 <em>- Paste Rows</em>
 <em>- Paste Rows Without On-Screen Validation</em></p>
 </div>
-<ol start="26">
-<li>Key - <strong>RealTimeEventsDisabled</strong></li>
-</ol>
+<h2 id="26--realtimeeventsdisabled">26.  <strong>RealTimeEventsDisabled</strong></h2>
 <ul>
 <li>a.When this key has value and this value is &quot;1&quot;, ERP.net would not proceed connection with the server which sends real-time events.</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="27">
-<li>Key - <strong>RealTimeEventsTimeoutSeconds</strong></li>
-</ol>
+<h2 id="27-realtimeeventstimeoutseconds">27. <strong>RealTimeEventsTimeoutSeconds</strong></h2>
 <ul>
 <li>a.Action: Sets the timeout period for waiting for a server response for real-time events, in seconds. If the server does not raise an event in the specified time, the client sends a new request. The value is a number between 5 and 240. If null, the timeout time is 240 seconds (4 minutes).</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="28">
-<li>Key - <strong>Require strong passwords</strong></li>
-</ol>
+<h2 id="28-require-strong-passwords">28. <strong>Require strong passwords</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, strong password validation is performed. Strong password requirements are as follows:
 <ul>
@@ -305,90 +249,64 @@
 </li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="29">
-<li>Key - <strong>DisableAccountKeyPropertyDotCheck</strong></li>
-</ol>
+<h2 id="29-disableaccountkeypropertydotcheck">29. <strong>DisableAccountKeyPropertyDotCheck</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, when an item key is formed in the accounting voucher rows the validation for no '.' (dot) in the values of the key custom, properties are not performed. For the normal working process of the system, it is important no dots to be part of the values of the key custom properties because the dot is a system character used for item key compilation.</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="30">
-<li>Key - <strong>AllowPlannedDocumentStateInClient</strong></li>
-</ol>
+<h2 id="30-allowplanneddocumentstateinclient">30. <strong>AllowPlannedDocumentStateInClient</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the document state menu would contain Planned state. In all other cases, the user would not be able to select the Planned state on any document.</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="31">
-<li>Key - <strong>DisableProductCopyPropertiesFromOtherProduct</strong></li>
-</ol>
+<h2 id="31-disableproductcopypropertiesfromotherproduct">31. <strong>DisableProductCopyPropertiesFromOtherProduct</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the Product configurator feature for copying the values to custom properties from the custom property which values are products is deactivated.</li>
 <li>b.The user sets it manually</li>
 </ul>
-<ol start="32">
-<li>Key - <strong>PaymentTransactionFiscalPrintChangeToState (DEPRECATED)</strong></li>
-</ol>
+<h2 id="32-paymenttransactionfiscalprintchangetostate-deprecated">32. <strong>PaymentTransactionFiscalPrintChangeToState (DEPRECATED)</strong></h2>
 <ul>
 <li>a.This key specifies the document state to which a payment transaction is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the payment transaction is switched to Released state.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="33">
-<li>Key - <strong>Crm/Sales/SalesOrders/ShowFillLotsInLines</strong></li>
-</ol>
+<h2 id="33-crmsalessalesordersshowfilllotsinlines">33. <strong>Crm/Sales/SalesOrders/ShowFillLotsInLines</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the sales order function &quot;Fill lots in lines&quot; is activated.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="34">
-<li>Key - <strong>General/Contacts/LoadCalendarForLimitedTime</strong></li>
-</ol>
+<h2 id="34-generalcontactsloadcalendarforlimitedtime">34. <strong>General/Contacts/LoadCalendarForLimitedTime</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, the calendar in the Activities navigator loads data only for the displayed period (+/- 1 month) when the user scrolls through the calendar.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="35">
-<li>Key - <strong>DisableDocumentRecalculationOnIdle</strong></li>
-</ol>
+<h2 id="35-disabledocumentrecalculationonidle">35. <strong>DisableDocumentRecalculationOnIdle</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, in the document forms the recalculation of additional amounts, bonus programs, payment plans and etc in real-time would not be performed (Application.Idle event). In such cases, the document would be recalculated only before the COMMIT event and not in real-time while the user enters the</li>
 <li>b.data in the document form. The method referred by the current key is &quot;Document.Recalculate&quot; which performs different actions in the different entities.</li>
 <li>c.The user sets it manually.</li>
 </ul>
-<ol start="36">
-<li>Key - <strong>DisableParentDocumentReset</strong></li>
-</ol>
+<h2 id="36-disableparentdocumentreset">36. <strong>DisableParentDocumentReset</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, on document state change the parent document state is not reset.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="37">
-<li>Key - <strong>RevokedBusinessRules</strong></li>
-</ol>
+<h2 id="37-revokedbusinessrules">37. <strong>RevokedBusinessRules</strong></h2>
 <ul>
 <li>a.Action: When this key has value, the validation and the action of the business rules, which codes are specified as a key value, is not performed. The codes of the business rules must be listed comma-separated (for example 27407, 26881 ..). Since version 2018.2, business rules' codes must be set with their full code including &quot;R&quot; (eg R27408, R26881 ...). If the key value is changed, the client application requires a restart.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="38">
-<li>Key - <strong>DisableQueryingForSaveOnClose</strong></li>
-</ol>
+<h2 id="38-disablequeryingforsaveonclose">38. <strong>DisableQueryingForSaveOnClose</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, on closing of a form which is not saved, if there is a change in any table of the form, no information message for saving or undo of the changes appears.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="39">
-<li>Key - <strong>UseLegacyLoadForLotsIssue</strong></li>
-</ol>
+<h2 id="39-uselegacyloadforlotsissue">39. <strong>UseLegacyLoadForLotsIssue</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot;, for the calculation of the quantity &quot;Available to promise by lots&quot; is used the method that was developed before Version 2018.2. In all other cases, is used the current for Version 2018.2 method which is advisable and has a better performance.</li>
 <li>b.The user sets it manually.</li>
 </ul>
-<ol start="40">
-<li><p>Key - <strong>ReservedLicenses</strong> (not implemented/ cancelled)</p>
-</li>
-<li><p>Key - <strong>EnableCreateGroupForUser</strong></p>
-</li>
-</ol>
+<h2 id="40-reservedlicenses-not-implemented-cancelled">40. <strong>ReservedLicenses</strong> (not implemented/ cancelled)</h2>
+<h2 id="41-enablecreategroupforuser">41. <strong>EnableCreateGroupForUser</strong></h2>
 <ul>
 <li>a.Action: When this key has value and this value is &quot;1&quot; or &quot;true&quot; (case-insensitive), when creating a new user into the database a new group with the user’s name will be created automatically as well.</li>
 <li>b.The user sets it manually.</li>
@@ -398,9 +316,7 @@
 <h5>Note</h5>
 <p>Before version 2019.1 a new user group was created automatically every time when a new user is created and this behaviour could not be disabled. Since version 2019.1 the behaviour is disabled by default and could be activated manually using the current registry key.</p>
 </div>
-<ol start="42">
-<li>Key - <strong>DocumentVersioningSystem</strong></li>
-</ol>
+<h2 id="42-documentversioningsystem">42. <strong>DocumentVersioningSystem</strong></h2>
 <ul>
 <li>a.Action: When the value of this key is &quot;VH&quot; the system will use the &quot;old&quot; document versioning system. If the key's value is &quot;TC&quot; the system will not create records using the &quot;old&quot; document versioning system and will instead use the <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track changes</a> system. The minimum level that is going to be tracked when the &quot;TC&quot; option is activated is &quot;Track Changes Level 3&quot;. If for the particular document entity is chosen a specific level, then this level will be applied only if it is a higher level than level 3. (For more information about the track changes system and its levels, please see topic <a href="https://docs.erp.net/tech/advanced/track-changes.html">Track changes</a></li>
 </ul>
@@ -417,16 +333,12 @@
 </li>
 <li>c.The key is introduced in version: - 2019.1</li>
 </ul>
-<ol start="43">
-<li>Key - <strong>Crm/Pos/PrintGroupedSalesLinesType</strong></li>
-</ol>
+<h2 id="43-crmposprintgroupedsaleslinestype">43. <strong>Crm/Pos/PrintGroupedSalesLinesType</strong></h2>
 <ul>
 <li>a.Action: When the value of this key is &quot;ShortName&quot; then items in the fiscal receipt are grouped by &quot;ShortName&quot; field in the product. When the value of this key is &quot;ProductGroup&quot; then items in the fiscal receipt are grouped by the product group of the product. When the value of this key is different or the key is missing then items in the fiscal receipt are not grouped.</li>
 <li>b.The key is introduced in version: - 2019.1</li>
 </ul>
-<ol start="44">
-<li>Key - <strong>UseStartScreen</strong></li>
-</ol>
+<h2 id="44-usestartscreen">44. <strong>UseStartScreen</strong></h2>
 <ul>
 <li>a.Action: When the value of this key is:
 <ul>
@@ -439,9 +351,7 @@ version 2020.1 is Main Menu.<strong>Warning:</strong> The current key's value wi
 <li>b.The user sets it manually.</li>
 <li>c. The key is introduced in version: - 2020.1</li>
 </ul>
-<ol start="45">
-<li>Key - <strong>UseStartScreenPolicy</strong></li>
-</ol>
+<h2 id="45-usestartscreenpolicy">45. <strong>UseStartScreenPolicy</strong></h2>
 <ul>
 <li>a.Action: When the value of this key is:
 <ul>
@@ -453,13 +363,19 @@ version 2020.1 is Main Menu.<strong>Warning:</strong> The current key's value wi
 <li>b.The user sets it manually.</li>
 <li>c.The key is introduced in version: - 2020.1</li>
 </ul>
-<ol start="46">
-<li>Key <strong>UseDefaultMailClient</strong></li>
-</ol>
+<h2 id="46-usedefaultmailclient">46. <strong>UseDefaultMailClient</strong></h2>
 <ul>
 <li>a.Action: When this key has a value for the particular user and this value is &quot;1&quot;, then when creating an email the system will start the default Windows mail client. This will apply even if there is a mailbox defined for the user.</li>
 <li>b. The user sets it manually (directly in the registry or using the option available in tab File =&gt; Settings =&gt; Use default Windows mail client).</li>
 <li>c.The key is introduced in version: - 2019.1</li>
+</ul>
+<h2 id="47-codenameformat">47. <strong>CodeNameFormat</strong></h2>
+<ul>
+<li>a.Action: The default display text format for entities that provide Code and Name. The value is an integer number from 1 to 4:</li>
+<li>&quot;1&quot; - {Code}: {Name}</li>
+<li>&quot;2&quot; - {Code}</li>
+<li>&quot;3&quot; - {Name} ({Code})</li>
+<li>&quot;4&quot; - {Name}</li>
 </ul>
 </article>
           </div>
