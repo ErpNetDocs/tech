@@ -1700,7 +1700,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "YSOGfFvfVcWLwdwUPRIo3A=="
+          "hash": "7NFywLrUXVWhWr4RpB+YvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/Q&A/azure-service-bus-send-message.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/Q&A/azure-service-bus-send-message.html",
+          "hash": "3Fk1AUpzaaKNcaRHJYqWag=="
         }
       },
       "is_incremental": false,
@@ -1712,7 +1724,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/Q&A/index.html",
-          "hash": "wa3u8JDElCJhCOY2s0VDWA=="
+          "hash": "xb2vp35nl8v0OM8AUxYQQQ=="
         }
       },
       "is_incremental": false,
@@ -1725,6 +1737,30 @@
         ".html": {
           "relative_path": "advanced/user-business-rules/Q&A/set-value-into-custom-property.html",
           "hash": "VRKZPVIrSVLD5zKXrnKjFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/Q&A/slack-send-message.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/Q&A/slack-send-message.html",
+          "hash": "/Va1gkRGpMx/aIll1eYjqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/Q&A/trello-create-card.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/Q&A/trello-create-card.html",
+          "hash": "aUuneU3bdgSCsJSG3hIzcw=="
         }
       },
       "is_incremental": false,
