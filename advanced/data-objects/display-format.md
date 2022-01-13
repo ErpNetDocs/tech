@@ -93,6 +93,28 @@ Just follow the rules when specifying the **string interpolation**.
 > 
 > How do you know the specific attributes of the entity type that you need? <br> Refer to the **[@@erpnet Domain Model documentation](https://docs.erp.net/model/entities/)**. <br> Following the example above, all the necessary information is available in **[Crm.Customers Entity](https://docs.erp.net/model/entities/Crm.Customers.html)**. <br> The display format attribute for an entity is located in the **[Systems.Core.EntitySettings Entity](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat)** table.
 
+## Display format inside look
+
+Each entity type has its corresponding record in another entity- [EntitySettings](https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html). There's an attribute DisplayTextFormat- here is stored the interpolated string, which defines the display format for the entity type. If there's no settings record for an entity, then the default display format takes place.
+
+### Defaults
+
+The default display format for an entity is defined at the system level. For entities that have **Code** and **Name** attributes, the default display format is specified by the database configuration option [CodeNameFormat](../../reference/config-options-reference.md#47-codenameformat) - the system default is **{Name}**.
+
+> [!NOTE]
+> 
+> Often the **Code** and **Name** attributes for an entity are not literally named so. They are expressed by the types **CodeDataMember** and **NameDataMember**.
+
+In the table below you can see some entities and their Code and Name attributes (i.e., the CodeDataMember and NameDataMember):
+
+| Entity    | Code attribute | Name attribute  |
+| --------- | -------------- | --------------- |
+| Products  | PartNumber     | Name            |
+| Customers | Number         | Party.PartyName |
+
+
+**DefaultDisplayTextFormat**, **CodeDataMember** and **NameDataMember** can be found in the documentation of each entity.
+
 ## Examples
 
 In this section, you can see several examples of different entity types: 
