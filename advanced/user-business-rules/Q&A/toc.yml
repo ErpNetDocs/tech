@@ -4,3 +4,7 @@
   href: set-value-into-custom-property.md
 - name: Send a message to Azure Service Bus
   href: azure-service-bus-send-message.md
+- name: Create a card in Trello
+  href: trello-create-card.md
+- name: Send a message in Slack
+  href: slack-send-message.md

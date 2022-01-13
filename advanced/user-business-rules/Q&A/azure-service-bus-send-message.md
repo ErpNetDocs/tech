@@ -36,7 +36,7 @@ Where,
 	where the **\<SIGNATURE\>** is to be calculated as follows:<br/><br/>
 	`urlencode(base64(hmacsha256(urlencode('https://<NAMESPACE NAME>.servicebus.windows.net/') + "\n" + '<TOKEN EXPIRY INSTANT>', '<SHARED ACCESS KEY>')))`
 
-The body is an interpolated string, formed in json format. When evaluated, it will contain the data for the entity in the context of which the business rule is executed.
+The body is an interpolated string, formed in JSON format. When evaluated, it will contain the data for the entity in the context of which the business rule is executed.
 
 ## User business rule
 
