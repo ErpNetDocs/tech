@@ -210,6 +210,37 @@
 <h5>Note</h5>
 <p>How do you know the specific attributes of the entity type that you need? <br> Refer to the <strong><a href="https://docs.erp.net/model/entities/">ERP.net Domain Model documentation</a></strong>. <br> Following the example above, all the necessary information is available in <strong><a href="https://docs.erp.net/model/entities/Crm.Customers.html">Crm.Customers Entity</a></strong>. <br> The display format attribute for an entity is located in the <strong><a href="https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html#displaytextformat">Systems.Core.EntitySettings Entity</a></strong> table.</p>
 </div>
+<h2 id="display-format-inside-look">Display format inside look</h2>
+<p>Each entity type has its corresponding record in another entity- <a href="https://docs.erp.net/model/entities/Systems.Core.EntitySettings.html">EntitySettings</a>. There's an attribute DisplayTextFormat- here is stored the interpolated string, which defines the display format for the entity type. If there's no settings record for an entity, then the default display format takes place.</p>
+<h3 id="defaults">Defaults</h3>
+<p>The default display format for an entity is defined at the system level. For entities that have <strong>Code</strong> and <strong>Name</strong> attributes, the default display format is specified by the database configuration option <a href="../../reference/config-options-reference.html#47-codenameformat">CodeNameFormat</a> - the system default is <strong>{Name}</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Often the <strong>Code</strong> and <strong>Name</strong> attributes for an entity are not literally named so. They are expressed by the types <strong>CodeDataMember</strong> and <strong>NameDataMember</strong>.</p>
+</div>
+<p>In the table below you can see some entities and their Code and Name attributes (i.e., the CodeDataMember and NameDataMember):</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Code attribute</th>
+<th>Name attribute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Products</td>
+<td>PartNumber</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Customers</td>
+<td>Number</td>
+<td>Party.PartyName</td>
+</tr>
+</tbody>
+</table>
+<p><strong>DefaultDisplayTextFormat</strong>, <strong>CodeDataMember</strong> and <strong>NameDataMember</strong> can be found in the documentation of each entity.</p>
 <h2 id="examples">Examples</h2>
 <p>In this section, you can see several examples of different entity types:</p>
 <ul>
