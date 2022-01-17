@@ -74,8 +74,8 @@ Long story short,
 ## See more
 
 - **[WebHooks entity](https://docs.erp.net/model/entities/Systems.Core.WebHooks.html)**
-- **[Webhook action type](../advanced/user-business-rules/action-types/webhook.md)**
-- **[Common webhook use cases](../advanced/user-business-rules/Q%26A/index.md)**
+- **[Webhook action type](../user-business-rules/action-types/webhook.md)**
+- **[Common webhook use cases](../user-business-rules/Q%26A/index.md)**
 - **[Webhook wiki](https://en.wikipedia.org/wiki/Webhook)**
 
-- **[String interpolation](../../string-interpolation/index.html)**
+- **[String interpolation](../string-interpolation/index.html)**

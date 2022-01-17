@@ -8,4 +8,3 @@ This section contains concepts applicable to all modules.
 - **[Multi-company support](./multi-company.md)**
 - **[Parties concepts](./parties-concepts.md)**
 - **[ERP instances](./erp-instances.md)**
-- **[Webhooks](./webhooks.md)**

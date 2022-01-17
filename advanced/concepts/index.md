@@ -1,7 +1,8 @@
 # Concepts
 
-- **[Aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)**
-- **[Object relational mapping](https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html)**
-- **[Master / Detail attributes](https://docs.erp.net/tech/advanced/concepts/master-detail-attributes.html)**
-- **[Scheduled document events](https://docs.erp.net/tech/advanced/concepts/scheduled-document-events/index.html)**
-- **[Default language](https://docs.erp.net/tech/advanced/concepts/default-language.html)**
+- **[Aggregates](./aggregates.md)**
+- **[Object relational mapping](./object-relational-mapping.md)**
+- **[Master / Detail attributes](./master-detail-attributes.md)**
+- **[Scheduled document events](./scheduled-document-events/index.md)**
+- **[Default language](./default-language.md)**
+- **[Webhooks](./webhooks.md)**
