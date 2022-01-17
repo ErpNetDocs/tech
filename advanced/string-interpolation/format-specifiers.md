@@ -122,6 +122,12 @@ Returns:
 
 `2019-05-10 15:18:39.013 → 10 May 2019 5:18:39`
 
+- 'O' - Round-trip date/time pattern. [ISO8601](https://bg.wikipedia.org/wiki/ISO_8601)
+ 
+Returns: 
+
+`2019-05-10 15:18:39.013 → 2019-05-10T15:18:39.00000013Z`
+
 ### Custom format strings
 
 - 'd' - The day of the month, from 1 through 31.
