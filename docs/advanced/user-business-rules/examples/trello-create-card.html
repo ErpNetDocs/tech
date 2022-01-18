@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User business rules - Examples | ERP.net Tech Docs </title>
+    <title>How to create a card in Trello when a sales order has been released? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User business rules - Examples | ERP.net Tech Docs ">
+    <meta name="title" content="How to create a card in Trello when a sales order has been released? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,17 +77,126 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules---examples">User business rules - Examples</h1>
+<h1 id="how-to-create-a-card-in-trello-when-a-sales-order-has-been-released">How to create a card in Trello when a sales order has been released?</h1>
 
+<p>To successfully create a Trello card, you need the following:</p>
 <ul>
-<li><strong><a href="credit-limit-override.html">Allow a credit limit override when a client pays in cash</a></strong></li>
-<li><strong><a href="set-deliveryterms.html">How to set DeliveryTerms in purchase invoice</a></strong></li>
-<li><strong><a href="start-business-rule.html">How to start a business rule only on first releasing</a></strong></li>
-<li><strong><a href="whole-quantity-validation.html">Whole quantity validation</a></strong></li>
-<li><strong><a href="set-value-into-custom-property.html">How to use business rules to set a value into a custom property</a></strong></li>
-<li><strong><a href="azure-service-bus-send-message.html">Send a message to Azure Service Bus when an entity is created or updated</a></strong></li>
-<li><strong><a href="trello-create-card.html">Create a card in Trello when a sales order has been released</a></strong></li>
-<li><strong><a href="slack-send-message.html">Send a message in a channel in Slack when voiding a sales order</a></strong></li>
+<li><a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">Webhook template</a> set up according to the endpoint in Trello REST API.</li>
+<li><a href="../index.html">User business rule</a> configured to trigger when a sales order is released.</li>
+<li>The user business rule must define an <a href="../action-types/webhook.html">action of type WEBHOOK</a>, pointing to the code of the webhook template.</li>
+</ul>
+<h2 id="webhook-template">Webhook template</h2>
+<p>Below is an example of what the webhook template should contain.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute name</th>
+<th>Attribute value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>trello_release_so_01</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Trello - released sales order</td>
+</tr>
+<tr>
+<td>Repository name</td>
+<td>Crm.Sales.SalesOrders</td>
+</tr>
+<tr>
+<td>URL</td>
+<td><span>https://</span>api.trello.com/1/cards?idList=&lt;id_list&gt;&amp;name={DisplayText}&amp;key=&lt;yourKey&gt;&amp;token=&lt;yourToken&gt;</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Creates a card in Trello when a sales order is released.</td>
+</tr>
+</tbody>
+</table>
+<p>Where,</p>
+<ul>
+<li><strong>&lt;yourKey&gt;</strong> and <strong>&lt;yourToken&gt;</strong> - the API keys, provided from Trello.</li>
+<li><strong>&lt;id_list&gt;</strong> - the Id of the list where the new card should be created.</li>
+<li><strong>{DisplayText}</strong> - the name of the card. It is also an interpolated string. It will be evaluated by ERP.net and will contain the display text of the sales order (e.g., <em>Sales Order 00108</em>).</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Body</strong> and <strong>Headers</strong> attributes are missing intentionally. They are not required.</p>
+</div>
+<h2 id="user-business-rule">User business rule</h2>
+<p>А business rule that triggers when a sales order has been released.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Repository</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Crm.Sales.SalesOrders</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Events</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Event type</th>
+<th style="text-align: left;">Event parameter</th>
+<th style="text-align: left;">Execution priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">STATECHANGED</td>
+<td style="text-align: left;">RELEASED</td>
+<td style="text-align: left;">Normal</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Actions</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action No</th>
+<th style="text-align: left;">Action type</th>
+<th style="text-align: left;">Parameter1 type</th>
+<th style="text-align: left;">Parameter1 value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">WEBHOOK</td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">trello_release_so_01</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="see-more">See more</h2>
+<ul>
+<li><strong><a href="../index.html">User business rules</a></strong></li>
+<li><strong><a href="../../string-interpolation/index.html">String interpolation</a></strong></li>
+<li><strong><a href="../../data-objects/display-format.html">Display format</a></strong></li>
+<li><strong><a href="https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/">Trello API Introduction</a></strong></li>
+<li><strong><a href="https://developer.atlassian.com/cloud/trello/rest/api-group-actions/">Trello REST API Reference</a></strong></li>
 </ul>
 </article>
           </div>
@@ -97,7 +206,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/trello-create-card.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
