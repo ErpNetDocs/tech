@@ -8,5 +8,7 @@
   href: push-and-pull-task-management.md
 - name: How It Works
   href: how-it-works/toc.yml
-  
+- name: WMS Worker
+  href: wms-worker//toc.yml
+  topicHref: wms-worker/index.md
   
