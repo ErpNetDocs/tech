@@ -277,3 +277,6 @@ references:
 - uid: wms
   name: Warehouse management
   href: modules/logistics/wms/index.html
+- uid: wms-worker
+  name: WMS Worker
+  href: modules/logistics/wms/wms-worker/index.html

@@ -5218,6 +5218,63 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/wms-worker/compatibility.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/wms-worker/compatibility.html",
+          "hash": "zSPstBP1HEdDwn/olK7qPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/wms-worker/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/wms-worker/index.html",
+          "hash": "I6SWwAEHadHPTTdfLho/0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/location2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/lot.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/lot.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/zone-based-routing.md",
       "output": {
         ".html": {
@@ -5281,7 +5338,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "oRoyC7DQ9Mj3Br6b9r/Dxw=="
+          "hash": "/EoYIHvbxRV6rF6Q6iGh3w=="
         }
       },
       "is_incremental": false,
