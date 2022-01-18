@@ -32,7 +32,7 @@ password: 123
 5. Scan the Location
 ![Location](pictures/location.png)
 6. Scan the Lot
-![Lot](pictures/loct.png)
+![Lot](pictures/lot.png)
 7. Press Execute
 8. Scan the Location for the second line
 ![Location2](pictures/location2.png)
