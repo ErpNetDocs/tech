@@ -8,8 +8,9 @@ These are the requirements for mobile RF handheld devices when using WMS Worker.
 -	Minimum Processor: 1GHZ
 -	The following screen resolutions (pixel dimensions) are supported:
 
-The following Android devices have been tested. Other models may work as well when meeting the other requirements in this document but cannot be guaranteed
-o	Zebra MC ???
+The following Android devices have been tested:
+- ???
+Other models may work as well when meeting the other requirements in this document but cannot be guaranteed.
 
 Recommendations:
 - The manufacturers device software should allow to configure following scanner settings on the device:
