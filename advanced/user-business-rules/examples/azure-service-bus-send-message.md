@@ -33,10 +33,11 @@ Where,
 
 	* **SAS token** - in case of a shared access key.<br/>
 	`Authorization: SharedAccessSignature sr=<NAMESPACE NAME>.servicebus.windows.net&sig=<SIGNATURE>&se=<TOKEN EXPIRY INSTANT>&skn=<SHARED KEY NAME>`,<br/><br/>
-	where the **\<SIGNATURE\>** is to be calculated as follows:<br/><br/>
-	`urlencode(base64(hmacsha256(urlencode('https://<NAMESPACE NAME>.servicebus.windows.net/') + "\n" + '<TOKEN EXPIRY INSTANT>', '<SHARED ACCESS KEY>')))`
+	where the **\<SIGNATURE\>** is to be calculated as follows (pseudocode):<br/><br/>
+	`urlencode(base64(hmacsha256(urlencode('https://<NAMESPACE NAME>.servicebus.windows.net/') + "\n" + '<TOKEN EXPIRY INSTANT>', '<SHARED ACCESS KEY>')))`<br/><br/>
+	For how you can generate a SAS token in different programming languages, visit the following link: [Generate SAS token](https://docs.microsoft.com/en-us/rest/api/eventhub/generate-sas-token)
 
-The body is an interpolated string, formed in JSON format. When evaluated, it will contain the data for the entity in the context of which the business rule is executed.
+* The **Body** is an interpolated string, formed in JSON format. When evaluated, it will contain the data for the entity in the context of which the business rule is executed.
 
 ## User business rule
 
@@ -69,5 +70,5 @@ This seems pretty straightforward. A business rule that will trigger on **AGGREG
 - **[String interpolation](../../string-interpolation/index.md)**
 - **[Service Bus service REST / Send messages to queue](https://docs.microsoft.com/en-us/rest/api/servicebus/send-message-to-queue)**
 - **[Authentication with Shared Access Signatures](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas#generate-a-shared-access-signature-token)**
-- **[Generate a SAS token](https://docs.microsoft.com/en-us/rest/api/eventhub/generate-sas-token)**
+- **[Generate SAS token](https://docs.microsoft.com/en-us/rest/api/eventhub/generate-sas-token)**
 - **[Authenticate from an application](https://docs.microsoft.com/en-us/rest/api/servicebus/get-azure-active-directory-token)**
