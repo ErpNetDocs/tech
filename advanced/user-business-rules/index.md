@@ -90,4 +90,3 @@ A condition is met when the value of the specified attribute and the specified v
 - **[Parameter types](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/index.html)**
 - **[Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**
 - **[Examples](https://docs.erp.net/tech/advanced/user-business-rules/examples/index.html)**
-- **[Q&A](https://docs.erp.net/tech/advanced/user-business-rules/Q%26A/index.html)**

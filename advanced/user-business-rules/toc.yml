@@ -15,7 +15,3 @@
 - name: Examples
   href: examples/toc.yml
   topicHref: examples/index.md
-- name: Q&A
-  href: Q&A/toc.yml
-  topicHref: Q&A/index.md
-  

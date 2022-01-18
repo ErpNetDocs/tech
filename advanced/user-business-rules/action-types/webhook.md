@@ -30,7 +30,7 @@ WEBHOOK is compatible with all events.
 
 ### Example:
 
-А **[business rule](../business-rules/index.html)** executes a webhook when a service activity is created or updated.
+А **[business rule](../business-rules/index.md)** executes a webhook when a service activity is created or updated.
 
 | Repository                             |                 |                    |                  |
 | -------------------------------------- | --------------- | ------------------ | ---------------- |
@@ -88,4 +88,4 @@ Content-Length: 153
 
 - **[Webhook wiki](https://en.wikipedia.org/wiki/Webhook)**
 - **[WebHooks entity](https://docs.erp.net/model/entities/Systems.Core.WebHooks.html)**
-- **[String interpolation](../../string-interpolation/index.html)**
+- **[String interpolation](../../string-interpolation/index.md)**
