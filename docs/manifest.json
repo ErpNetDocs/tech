@@ -3210,6 +3210,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/lot.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/lot.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/zones.png",
       "output": {
         "resource": {
@@ -3404,7 +3437,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/index.html",
-          "hash": "PpdEfRLIkQds558affdpTw=="
+          "hash": "k/GJ+UvdODBC4uXB51SjeQ=="
         }
       },
       "is_incremental": false,
