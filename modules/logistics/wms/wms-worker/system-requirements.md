@@ -28,7 +28,7 @@ Requirements:
 -	Minimum Processor: 1 GHz
 
 Recommendations:
-- The manufacturers device software should allow to configure following scanner settings on the device:
+The manufacturers device software should allow to configure following scanner settings on the device:
 - Convert barcode input via scan head or camera to text
 - Possibility to give an automatic ENTER after a scan
 - Identifies GS1-128/EAN128 barcodes (when such is used in the warehouse)
