@@ -31,12 +31,18 @@ password: 123
 3. Select Warehouse Order 0000000003 
 4. Change the Quantity of the first line to 4
 5. Scan the Location
+
 ![Location](pictures/location.png)
+
 6. Scan the Lot
+
 ![Lot](pictures/lot.png)
+
 7. Press Execute
 8. Scan the Location for the second line
+
 ![Location2](pictures/location2.png)
+
 9. Press Execute
 
 You have executed your first order!
