@@ -16,7 +16,7 @@ WMS Worker is supported in the browsers shown in the following table.
 
 ## OS
 
-The minimmum requirement of the operational system is Android 8.0 (Oreo) or higher
+The minimmum requirement of the operational system is Android 8.0 (Oreo) or higher.
 
 ## Devices
 These are the requirements for the diffeent device types when using WMS Worker.
