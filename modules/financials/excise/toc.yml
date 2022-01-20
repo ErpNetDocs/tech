@@ -1,8 +1,8 @@
 - name: Overview
   href: index.md
-- name: Excise initial setup
-  href: excise-initial-setup.md 
-- name: Excise product categories
-  href: excise-product-categories.md
+- name: Setup
+  href: setup.md 
+- name: Excise categories
+  href: excise-categories.md
 - name: Excise products
   href: excise-products.md 
