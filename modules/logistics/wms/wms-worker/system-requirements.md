@@ -71,5 +71,5 @@ You have a mobile RF handheld devices and you want to make sure it is compatible
 
 9. Press Execute
 
-You have executed your first order!
+You have successfully executed a warehouse order with your device!
 
