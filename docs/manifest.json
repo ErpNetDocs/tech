@@ -3437,7 +3437,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/index.html",
-          "hash": "k/GJ+UvdODBC4uXB51SjeQ=="
+          "hash": "PpdEfRLIkQds558affdpTw=="
         }
       },
       "is_incremental": false,
@@ -3949,23 +3949,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/excise-initial-setup.md",
+      "source_relative_path": "modules/financials/excise/excise-categories.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/excise-initial-setup.html",
-          "hash": "/AlWbms2zUVMcHgEykO7fw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/excise-product-categories.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/excise/excise-product-categories.html",
-          "hash": "15l9FkyRH8l0vK/1EvBmCg=="
+          "relative_path": "modules/financials/excise/excise-categories.html",
+          "hash": "k/wD1vtVCcxuZoQDcmerqA=="
         }
       },
       "is_incremental": false,
@@ -4001,6 +3989,18 @@
         ".html": {
           "relative_path": "modules/financials/excise/index.html",
           "hash": "jwJLWFMFiysJgkr8yEmgFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/setup.html",
+          "hash": "3UqwnhHxC0gE84wg81cNBA=="
         }
       },
       "is_incremental": false,
@@ -5251,18 +5251,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/compatibility.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/compatibility.html",
-          "hash": "zSPstBP1HEdDwn/olK7qPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/index.md",
       "output": {
         ".html": {
@@ -5301,6 +5289,18 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/pictures/lot.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
+          "hash": "NESpsRT89kqc5pOQzYrDkw=="
         }
       },
       "is_incremental": false,
@@ -5371,7 +5371,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "/EoYIHvbxRV6rF6Q6iGh3w=="
+          "hash": "88F2Er1Sc4HekIto/dJvXA=="
         }
       },
       "is_incremental": false,

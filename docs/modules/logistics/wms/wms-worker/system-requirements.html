@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>System requirements | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="System requirements | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="system-requirements">System requirements</h1>
+
+<p>Although WMS workin is web-based and does not require any installation, there are some  minimum system requirements that should be met.</p>
+<h2 id="browser">Browser</h2>
+<p>WMS Worker is supported in the browsers shown in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Chrome, including Android</td>
+<td>Current*</td>
+</tr>
+<tr>
+<td>Microsoft Edge</td>
+<td>Current*</td>
+</tr>
+<tr>
+<td>Mozilla Firefox</td>
+<td>Current*</td>
+</tr>
+</tbody>
+</table>
+<p>*Current refers to the latest version of the browser.</p>
+<h2 id="os">OS</h2>
+<p>The minimmum requirement of the operational system is Android 8.0 (Oreo) or higher.</p>
+<h2 id="devices">Devices</h2>
+<p>These are the requirements for the diffeent device types when using WMS Worker.</p>
+<h4 id="mobile-rf-handheld-devices">Mobile RF handheld devices</h4>
+<p>Requirements:</p>
+<ul>
+<li>Operational system: Android 8.0 (Oreo) or higher</li>
+<li>Minimum RAM: 1 GiB, recommended: 2 GiB or higher</li>
+<li>Minimum Processor: 1 GHz</li>
+</ul>
+<p>Recommendations
+<br>The manufacturers device software should allow to configure following scanner settings on the device:</p>
+<ul>
+<li>Convert barcode input via scan head or camera to text</li>
+<li>Possibility to give an automatic ENTER after a scan</li>
+<li>Identifies GS1-128/EAN128 barcodes (when such is used in the warehouse)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Important note:</strong> Please consult with both your implementatorand and device provider before purchasing a device. They will help you determine the specific requirements that would be most appropriate for the specifics of your business.</p>
+</div>
+<h2 id="compatible-devices">Compatible devices</h2>
+<p>The following Android devices have been tested:</p>
+<ul>
+<li>???</li>
+<li>???</li>
+<li></li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Important note:</strong> Other models may work as well when meeting the other requirements in this document but cannot be guaranteed.</p>
+</div>
+<h2 id="test-device-compatibility">Test device compatibility</h2>
+<p>You have a mobile RF handheld devices and you want to make sure it is compatible with  WMS Worker?
+<br>We've created a test environment where you can test the WMS Worker in action.</p>
+<p><strong>Тo test your device, just follow these steps:</strong></p>
+<ol>
+<li>Open the following link in the browser of the mobile terminal <a href="https://testdb.my.erp.net/cl/wms/">https://testdb.my.erp.net/cl/wms/</a>
+<br> user: admin
+<br> password: 123</li>
+<li>Select Orders</li>
+<li>Select Warehouse Order 0000000003</li>
+<li>Change the Quantity of the first line to 4</li>
+<li>Scan the Location</li>
+</ol>
+<p><img src="pictures/location.png" alt="Location"></p>
+<ol start="6">
+<li>Scan the Lot</li>
+</ol>
+<p><img src="pictures/lot.png" alt="Lot"></p>
+<ol start="7">
+<li>Press Execute</li>
+<li>Scan the Location for the second line</li>
+</ol>
+<p><img src="pictures/location2.png" alt="Location2"></p>
+<ol start="9">
+<li>Press Execute</li>
+</ol>
+<p>You have successfully executed a warehouse order with your device!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/wms-worker/system-requirements.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
