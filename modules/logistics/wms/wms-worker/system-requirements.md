@@ -27,8 +27,8 @@ Requirements:
 -	Minimum RAM: 1 GiB, recommended: 2 GiB or higher
 -	Minimum Processor: 1 GHz
 
-Recommendations:
-The manufacturers device software should allow to configure following scanner settings on the device:
+Recommendations
+<br/>The manufacturers device software should allow to configure following scanner settings on the device:
 - Convert barcode input via scan head or camera to text
 - Possibility to give an automatic ENTER after a scan
 - Identifies GS1-128/EAN128 barcodes (when such is used in the warehouse)
