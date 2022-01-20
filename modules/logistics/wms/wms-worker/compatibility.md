@@ -25,8 +25,8 @@ We've created a test environment where you can test the WMS Worker in action.
 
 How to test your device:
 1. Open the following link in the browser of the mobile terminal https://testdb.my.erp.net/cl/wms/ 
-user: admin
-password: 123
+<br/> user: admin
+<br/> password: 123
 2. Select Orders 
 3. Select Warehouse Order 0000000003 
 4. Change the Quantity of the first line to 4
