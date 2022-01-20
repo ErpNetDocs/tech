@@ -23,7 +23,6 @@ These are the requirements for the diffeent device types when using WMS Worker.
 
 #### Mobile RF handheld devices ####
 Requirements:
-- Operational system: Android 8.0 (Oreo) or higher
 -	Minimum RAM: 1 GiB, recommended: 2 GiB or higher
 -	Minimum Processor: 1 GHz
 
