@@ -34,7 +34,7 @@ Recommendations
 - Identifies GS1-128/EAN128 barcodes (when such is used in the warehouse)
 
 > [!NOTE]
-> **Important note:** Please consult with both your implementatorand and device provider before purchasing a device. They will help you determine the specific requirements that would be most appropriate for the specifics of your business.
+>Please consult with both your implementatorand and device provider before purchasing a device. They will help you determine the specific requirements that would be most appropriate for the specifics of your business.
 
 ## Compatible devices
 The following Android devices have been tested:
@@ -43,7 +43,7 @@ The following Android devices have been tested:
 - 
 
 > [!NOTE]
-> **Important note:** Other models may work as well when meeting the other requirements in this document but cannot be guaranteed.
+>Other models may work as well when meeting the other requirements in this document but cannot be guaranteed.
 
 
 
