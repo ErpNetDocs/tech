@@ -33,6 +33,9 @@ Recommendations
 - Possibility to give an automatic ENTER after a scan
 - Identifies GS1-128/EAN128 barcodes (when such is used in the warehouse)
 
+> [!NOTE]
+> **Important note:** Please consult with both your implementatorand and device provider before purchasing a device. They will help you determine the specific requirements that would be most appropriate for the specifics of your business.
+
 ## Compatible devices
 The following Android devices have been tested:
 - ???
