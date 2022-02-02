@@ -244,6 +244,9 @@ references:
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
+- uid: states
+  name: Document states
+  href: concepts/documents/states.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
