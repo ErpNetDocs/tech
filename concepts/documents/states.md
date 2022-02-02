@@ -1,3 +1,6 @@
+---
+uid: states
+---
 
 # Document states
 
