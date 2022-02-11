@@ -24,7 +24,7 @@ If empty, the comment is a root comment to the data object.
 
 - **Comment text** - comment contents in clear text.
 
-> [!NОТЕ]
+> [!Note]
 > It is planned that text will be allowed to contain some mark-down constructs in the future.
 
 - **Creation time Utc** - automatically set by the server to the time of initial creation of the comment.
