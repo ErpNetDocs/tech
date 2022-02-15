@@ -3557,7 +3557,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.html",
-          "hash": "NYs/mKqxbkhvzYvYWpoTEg=="
+          "hash": "kEtwS1Pz3nSKxm77DicXlw=="
         }
       },
       "is_incremental": false,
@@ -3569,7 +3569,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-product-price.html",
-          "hash": "A2YichDnjDqFcyqbypdlSw=="
+          "hash": "h5uNWpXDoOAZ8gpP6hEmng=="
         }
       },
       "is_incremental": false,
@@ -3785,7 +3785,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html",
-          "hash": "THy1Jd3gNMaafKOhsDobNA=="
+          "hash": "I9/bo5uzeuqvVyK2lwbzGw=="
         }
       },
       "is_incremental": false,
