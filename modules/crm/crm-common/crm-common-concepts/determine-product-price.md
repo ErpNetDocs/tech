@@ -1,3 +1,6 @@
+---
+uid: determine-product-price
+---
 
 # Determine product price
 
