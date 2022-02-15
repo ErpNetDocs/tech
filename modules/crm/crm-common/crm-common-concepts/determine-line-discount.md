@@ -1,6 +1,6 @@
 ---
 uid: determine-line-discount
---
+---
 
 # Determine line discount
 
