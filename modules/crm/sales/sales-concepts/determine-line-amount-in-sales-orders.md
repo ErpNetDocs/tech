@@ -1,3 +1,7 @@
+---
+uid: determine-line-amount-in-sales-orders
+---
+
 # Determine line amount in sales orders
 The line amount in a sales order is formed by the following fields: ***Quantity***, ***Unit Price***, ***Line Standard Discount Percent*** and ***Line Custom Discount Percent***. The fields *Unit Price*, *Line Standard Discount Percent* and *Line Custom Discount Percent* represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
 The formula of the field line amount is rounded up to the second digit and is as follows:
