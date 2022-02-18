@@ -51,7 +51,7 @@ You have a mobile RF handheld devices and you want to make sure it is compatible
 <br/>We've created a test environment where you can test the WMS Worker in action.
 
 **Тo test your device, just follow these steps:**
-1. Open the following link in the browser of the mobile terminal https://testdb.my.erp.net/cl/wms/ 
+1. Open the following link in the browser of the mobile terminal https://testdb.my.erp.net/cl/wmsworker
 <br/> user: admin
 <br/> password: 123
 2. Select Orders 
