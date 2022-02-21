@@ -61,16 +61,20 @@ You have a mobile RF handheld devices and you want to make sure it is compatible
 
 ![Location](pictures/location.png)
 
-6. Scan the Lot
+6.  Scan the Product
+
+![Product](pictures/product.png)
+
+7. Scan the Lot
 
 ![Lot](pictures/lot.png)
 
-7. Press Execute
-8. Scan the Location for the second line
+8. Press Execute
+9. Scan the Location for the second line
 
 ![Location2](pictures/location2.png)
 
-9. Press Execute
+10. Press Execute
 
 You have successfully executed a warehouse order with your device!
 
