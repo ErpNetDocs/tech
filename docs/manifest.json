@@ -5295,12 +5295,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/product.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
-          "hash": "yeWQ8mj73sDB/dfavY+rLQ=="
+          "hash": "8W+u0o/BDfxGYYX+id+uwA=="
         }
       },
       "is_incremental": false,
