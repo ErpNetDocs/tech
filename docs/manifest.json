@@ -3243,6 +3243,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/zones.png",
       "output": {
         "resource": {
