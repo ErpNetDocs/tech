@@ -9,8 +9,6 @@ WMS Worker is supported in the browsers shown in the following table.
 |Browser | Version|
 | ---- | ----- |
 | Google Chrome, including Android |	Current* |
-| Microsoft Edge |	Current* |
-| Mozilla Firefox |	Current* |
 
 *Current refers to the latest version of the browser.
 
