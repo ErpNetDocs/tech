@@ -14,27 +14,9 @@ Here are examples for the different custom property types which are universal to
 > 
 > When a custom property is cast to string, only its value will be processed, not its description.
 
-### Property type is 'Text' 
+### Property type is 'Text', 'Number' or 'Date'
 
-If the property type of the particular custom property is 'Text', use the following expressions:
-
-```
-10: IIF EXP:20 CONST:'null' CONST:'not null'
-20: EQUAL EXP:30 CONST:NULL
-30: CAST ATTRIB:@CustomProperty1 CONST:System.String
-```
-
-**Explanation:**
-
-- 10: if EXP:20 is true, return the text 'null, else - return 'not null'
-- 20: if EXP:30 is empty, return 'true', else - return 'false'
-- 30: cast CustomProperty1 to string
-
-
-### Property type is 'Number' or 'Date'
-
-If the property type of the particular custom property is 'Number' or 'Date', use the following expressions:
-
+If the property type of the particular custom property is 'Text','Number' or 'Date', use the following expressions:
 ```
 10: IIF EXP:20 CONST:'null' CONST:'not null'
 20: OR EXP:30 EXP:40
