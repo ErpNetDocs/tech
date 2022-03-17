@@ -86,20 +86,8 @@
 <h5>Note</h5>
 <p>When a custom property is cast to string, only its value will be processed, not its description.</p>
 </div>
-<h3 id="property-type-is-text">Property type is 'Text'</h3>
-<p>If the property type of the particular custom property is 'Text', use the following expressions:</p>
-<pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
-20: EQUAL EXP:30 CONST:NULL
-30: CAST ATTRIB:@CustomProperty1 CONST:System.String
-</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li>10: if EXP:20 is true, return the text 'null, else - return 'not null'</li>
-<li>20: if EXP:30 is empty, return 'true', else - return 'false'</li>
-<li>30: cast CustomProperty1 to string</li>
-</ul>
-<h3 id="property-type-is-number-or-date">Property type is 'Number' or 'Date'</h3>
-<p>If the property type of the particular custom property is 'Number' or 'Date', use the following expressions:</p>
+<h3 id="property-type-is-text-number-or-date">Property type is 'Text', 'Number' or 'Date'</h3>
+<p>If the property type of the particular custom property is 'Text','Number' or 'Date', use the following expressions:</p>
 <pre><code>10: IIF EXP:20 CONST:'null' CONST:'not null'
 20: OR EXP:30 EXP:40
 30: EQUAL EXP:50 CONST:NULL
