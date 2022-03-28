@@ -1,5 +1,5 @@
 # Initial Setup
- 
+
 
 ## 1. The measurement units codes should be defined acording the CL1 nomenclature
 
@@ -9,7 +9,7 @@
 
 ## 2. The Base measurement unit of products should be same as measurement unit used in article 28 and article 29 from law on excises and tax warehouses
 
-## 3. It must be defined custom atributes with the following codes 
+## 3. It must be defined custom attributes with the following codes 
 
 ### 3.1. Products
 
@@ -21,13 +21,19 @@
 
 ### 3.2. Documents
 
-\-     **Exc_Purpose** –  Allowed values from CL200 nomenclature. Limited to alowed values
+\-      **Exc_Purpose** –  Allowed values from CL200 nomenclature. Limited to alowed values
 
-\-     **Exc_Driver** – In Property Value is filling National number of the vehicle and in Property Decription  – Driver name
+\-      **Exc_Driver** – In Property Value is filling National number of the vehicle and in Property Decription  – Driver name
 
-3.3. ExciseAdministrativeDocumentLines
+\-      **Exc_InputDocumentType** - Value for tag DocumentType in section MeasureValues in the export file
+
+\-      **Exc_InputDocumentNumber** - Value for tag DocumentNumber in section MeasureValues in the export file for eADD
+
+### 3.3. ExciseAdministrativeDocumentLines
 
 \-     **Exc_Payment** – Allowed values from CL163 nomenclature. Limited to alowed values
+
+
 
 ### 3.4. Parties
 
