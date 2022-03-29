@@ -8,3 +8,4 @@
 - **[Send a message to Azure Service Bus when an entity is created or updated](azure-service-bus-send-message.md)**
 - **[Create a card in Trello when a sales order has been released](trello-create-card.md)**
 - **[Send a message in a channel in Slack when voiding a sales order](slack-send-message.md)**
+- **[Set an initial attribute for a new sales order](sales-order-init-attribute.md)**

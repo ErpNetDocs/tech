@@ -6,6 +6,8 @@
   href: client-commit.md
 - name: COMMIT
   href: commit.md
+- name: CREATE NEW
+  href: create-new.md  
 - name: STATECHANGED
   href: statechanged.md
 - name: STATECHANGING

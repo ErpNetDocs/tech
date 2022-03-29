@@ -16,3 +16,5 @@
   href: trello-create-card.md
 - name: Send a message in Slack
   href: slack-send-message.md  
+- name: Set an initial attribute for a new sales order
+  href: sales-order-init-attribute.md
