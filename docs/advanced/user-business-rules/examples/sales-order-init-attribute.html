@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User business rules - Events | ERP.net Tech Docs </title>
+    <title>Set an initial attribute for a new sales order | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User business rules - Events | ERP.net Tech Docs ">
+    <meta name="title" content="Set an initial attribute for a new sales order | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,17 +77,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules---events">User business rules - Events</h1>
+<h1 id="set-an-initial-attribute-for-a-new-sales-order">Set an initial attribute for a new sales order</h1>
 
+<p>If a business logic requires only whole numbers, a <strong><a href="../index.html">user business rule</a></strong> can be set to check users' work.</p>
+<p>For example, a validation of a sales order lines may be applied with the following data:</p>
 <ul>
-<li><strong><a href="aggregate-client-commit.html">AGGREGATE CLIENT COMMIT</a></strong></li>
-<li><strong><a href="client-commit.html">CLIENT COMMIT</a></strong></li>
-<li><strong><a href="commit.html">COMMIT</a></strong></li>
-<li><strong><a href="create-new.html">CREATENEW</a></strong></li>
-<li><strong><a href="statechanged.html">STATECHANGED</a></strong></li>
-<li><strong><a href="statechanging.html">STATECHANGING</a></strong></li>
-<li><strong><a href="voiding.html">VOIDING</a></strong></li>
-<li><strong><a href="business-rules/index.html">Business rules</a></strong></li>
+<li><p><strong>Repository</strong>: Crm.Sales.SalesOrders</p>
+</li>
+<li><p><strong>Events</strong> - <strong><a href="../events/create-new.html">CREATENEW</a></strong></p>
+</li>
+<li><p><strong>Action</strong> - <strong><a href="../action-types/setvalue.html">SETVALUE</a></strong> + Parameter1Type = <code>Attribute</code> + Parameter1 Value = <code>Note</code> + Parameter2Type = <code>Constant</code> + Parameter2 Value = <code>your initial value</code>.</p>
+</li>
+<li><p><strong>Conditions</strong>: No conditions for such a simple task.</p>
+</li>
 </ul>
 </article>
           </div>
@@ -97,7 +99,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/sales-order-init-attribute.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

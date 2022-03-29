@@ -1745,7 +1745,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "wQC7JQW8y1QE0bZRKmRzmw=="
+          "hash": "uMTkQB7YhI7ZZ+SG7JDKtA=="
         }
       },
       "is_incremental": false,
@@ -1945,11 +1945,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/create-new.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/create-new.html",
+          "hash": "aOWDFTixlakufxOeAfmnbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/index.html",
-          "hash": "Vpln9zaKJmQmDM8eAAp76w=="
+          "hash": "hhtu4dnh0vlaGmwibgmCHA=="
         }
       },
       "is_incremental": false,
@@ -2021,7 +2033,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/index.html",
-          "hash": "RCHNkOJ/M3QMlzEYJooBQw=="
+          "hash": "0myJPIHVSoEcqkTr8oHoQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/sales-order-init-attribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/sales-order-init-attribute.html",
+          "hash": "lvvSKRtDGYkL5ytAH9yhfw=="
         }
       },
       "is_incremental": false,
