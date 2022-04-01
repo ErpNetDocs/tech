@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User business rules - Events | ERP.net Tech Docs </title>
+    <title>CREATENEW | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User business rules - Events | ERP.net Tech Docs ">
+    <meta name="title" content="CREATENEW | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,17 +77,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules---events">User business rules - Events</h1>
+<h1 id="createnew">CREATENEW</h1>
 
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">CREATENEW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-end</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs immediately after creating a new object.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2022 <br> Updated: -</td>
+</tr>
+</tbody>
+</table>
+<p>This event occurs immediately after the following core events:</p>
 <ul>
-<li><strong><a href="aggregate-client-commit.html">AGGREGATE CLIENT COMMIT</a></strong></li>
-<li><strong><a href="client-commit.html">CLIENT COMMIT</a></strong></li>
-<li><strong><a href="commit.html">COMMIT</a></strong></li>
-<li><strong><a href="create-new.html">CREATENEW</a></strong></li>
-<li><strong><a href="statechanged.html">STATECHANGED</a></strong></li>
-<li><strong><a href="statechanging.html">STATECHANGING</a></strong></li>
-<li><strong><a href="voiding.html">VOIDING</a></strong></li>
-<li><strong><a href="business-rules/index.html">Business rules</a></strong></li>
+<li>The object creation</li>
+<li>Initialization of its system attributes</li>
+</ul>
+<p>This is the earliest possible point in the object's life cycle.</p>
+<p>A typical use case is when you need to initialize one or more object attributes with user-defined values.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The object has not yet been saved and has never been. I.e., its first commit is coming up.</p>
+</div>
+<hr>
+<h2 id="see-more">See more</h2>
+<ul>
+<li><strong><a href="../examples/sales-order-init-attribute.html">Set an initial attribute for a new sales order</a></strong></li>
 </ul>
 </article>
           </div>
@@ -97,7 +125,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/create-new.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

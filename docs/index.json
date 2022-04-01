@@ -744,10 +744,15 @@
     "title": "COMMIT | ERP.net Tech Docs",
     "keywords": "COMMIT Name COMMIT Layer Back-end Description Occurs when saving a change of an object. Version Introduced: 2017.1 Updated: - This event occurs when data is saved into a database. It's used for all kinds of data types - definitions, documents and more. When an object change is saved, the rule is activated, as long as it meets the conditions. COMMIT may be used to validate that all necessary data of a product is entered. If not - an error could be thrown (with the help of FAIL ) and the product wouldn't be saved in the database until correct data is entered."
   },
+  "advanced/user-business-rules/events/create-new.html": {
+    "href": "advanced/user-business-rules/events/create-new.html",
+    "title": "CREATENEW | ERP.net Tech Docs",
+    "keywords": "CREATENEW Name CREATENEW Layer Back-end Description Occurs immediately after creating a new object. Version Introduced: 2022 Updated: - This event occurs immediately after the following core events: The object creation Initialization of its system attributes This is the earliest possible point in the object's life cycle. A typical use case is when you need to initialize one or more object attributes with user-defined values. Note The object has not yet been saved and has never been. I.e., its first commit is coming up. See more Set an initial attribute for a new sales order"
+  },
   "advanced/user-business-rules/events/index.html": {
     "href": "advanced/user-business-rules/events/index.html",
     "title": "User business rules - Events | ERP.net Tech Docs",
-    "keywords": "User business rules - Events AGGREGATE CLIENT COMMIT CLIENT COMMIT COMMIT STATECHANGED STATECHANGING Business rules VOIDING"
+    "keywords": "User business rules - Events AGGREGATE CLIENT COMMIT CLIENT COMMIT COMMIT CREATENEW STATECHANGED STATECHANGING VOIDING Business rules"
   },
   "advanced/user-business-rules/events/statechanged.html": {
     "href": "advanced/user-business-rules/events/statechanged.html",
@@ -777,7 +782,12 @@
   "advanced/user-business-rules/examples/index.html": {
     "href": "advanced/user-business-rules/examples/index.html",
     "title": "User business rules - Examples | ERP.net Tech Docs",
-    "keywords": "User business rules - Examples Allow a credit limit override when a client pays in cash How to set DeliveryTerms in purchase invoice How to start a business rule only on first releasing Whole quantity validation How to use business rules to set a value into a custom property Send a message to Azure Service Bus when an entity is created or updated Create a card in Trello when a sales order has been released Send a message in a channel in Slack when voiding a sales order"
+    "keywords": "User business rules - Examples Allow a credit limit override when a client pays in cash How to set DeliveryTerms in purchase invoice How to start a business rule only on first releasing Whole quantity validation How to use business rules to set a value into a custom property Send a message to Azure Service Bus when an entity is created or updated Create a card in Trello when a sales order has been released Send a message in a channel in Slack when voiding a sales order Set an initial attribute for a new sales order"
+  },
+  "advanced/user-business-rules/examples/sales-order-init-attribute.html": {
+    "href": "advanced/user-business-rules/examples/sales-order-init-attribute.html",
+    "title": "Set an initial attribute for a new sales order | ERP.net Tech Docs",
+    "keywords": "Set an initial attribute for a new sales order If a business logic requires only whole numbers, a user business rule can be set to check users' work. For example, a validation of a sales order lines may be applied with the following data: Repository : Crm.Sales.SalesOrders Events - CREATENEW Action - SETVALUE + Parameter1Type = Attribute + Parameter1 Value = Note + Parameter2Type = Constant + Parameter2 Value = your initial value . Conditions : No conditions for such a simple task."
   },
   "advanced/user-business-rules/examples/set-deliveryterms.html": {
     "href": "advanced/user-business-rules/examples/set-deliveryterms.html",
