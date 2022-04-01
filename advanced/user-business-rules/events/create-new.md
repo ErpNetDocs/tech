@@ -2,7 +2,7 @@
 
 |Name| CREATENEW
 |:----|:----
-|**Layer**| Back-end
+|**Layer**| Front-end
 |**Description**| Occurs immediately after creating a new object.
 |**Version**| Introduced: 2022 <br> Updated: -
 
