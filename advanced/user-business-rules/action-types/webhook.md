@@ -24,9 +24,7 @@ WEBHOOK is compatible with all events.
 | Client commit (e.g. [CLIENTCOMMIT](../events/client-commit.md), [AGGREGATECLIENTCOMMIT](../events/aggregate-client-commit.md)) | compatible |
 | Document events - (e.g. [STATECHANGING](../events/statechanging.md), [STATECHANGED](../events/statechanged.md), [VOIDING](../events/voiding.md))| compatible |
 | Commit (e.g. [COMMIT](../events/commit.md))                    | compatible                                                   |
-| Front-end (e.g. ATTRIBUTECHANGING, ATTRIBUTECHANGED) | compatible |
-
-
+| Front-end (e.g. CREATENEW, ATTRIBUTECHANGING, ATTRIBUTECHANGED) | compatible |
 
 ### Example:
 
