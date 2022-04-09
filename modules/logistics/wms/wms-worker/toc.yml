@@ -7,7 +7,7 @@
 - name: Availability
   href: availability.md
 - name: Move
-  href: Move.md
+  href: move.md
 - name: Reconcile
   href: reconcile.md
   
