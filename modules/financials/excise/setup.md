@@ -11,13 +11,11 @@
 
 ## 3. It must be defined custom attributes with the following codes 
 
-### 3.1. Products
+### 3.1. Excise Stamp Type
 
 \-     **Exc_BrandName** - Allowed values from CL175 nomencature. Limited to alowed values
 
-\-     **Exc_Volume** – Volume  – decimal
-
-\-     **Exc_LabelPrice** – Price on label – Only for specific products –Decimal
+\-     **Exc_LabelPrice** – Price on label – Only for specific products – Decimal
 
 ### 3.2. Documents
 
