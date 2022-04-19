@@ -5675,39 +5675,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/location2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/lot.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/lot.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-destination.png",
       "output": {
         "resource": {
@@ -5917,17 +5884,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/product.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/product.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-differences.png",
       "output": {
         "resource": {
@@ -6005,6 +5961,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
       "output": {
