@@ -26,7 +26,7 @@ Each warehouse policy can apply to:
 
 * To date
 
-NOTE: Some policies can be applied only at the warehouse level.
+NOTE: Some policies can be applied only at the warehouse or zone level.
 
  
 
