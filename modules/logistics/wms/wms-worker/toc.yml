@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: System requirements
-  href: system-requirements.md
 - name: Orders
   href: orders.md
 - name: Availability
@@ -10,4 +8,5 @@
   href: move.md
 - name: Reconcile
   href: reconcile.md
-  
+- name: System requirements
+  href: system-requirements.md
