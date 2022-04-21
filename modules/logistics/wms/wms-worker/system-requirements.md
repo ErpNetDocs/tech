@@ -34,9 +34,9 @@ Recommendations:
 
 ## Compatible devices
 The following Android devices have been tested:
-- ???
-- ???
-- 
+- Zebra MC9300
+- Zebra TC77
+- M3 Mobile SL20
 
 > [!NOTE]
 >Other models may work as well when meeting the other requirements in this document but cannot be guaranteed.
