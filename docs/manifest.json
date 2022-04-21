@@ -3289,6 +3289,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location_barcode.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/location_barcode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/lot.png",
       "output": {
         "resource": {
@@ -3513,6 +3524,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/product_barcode.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/pictures/product_barcode.png"
         }
       },
       "is_incremental": false,
@@ -5988,7 +6010,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
-          "hash": "ZaYCyDcdN5q3b5k8X6rqAA=="
+          "hash": "8OZU+9YTWUvQ5NPujxy1cw=="
         }
       },
       "is_incremental": false,
