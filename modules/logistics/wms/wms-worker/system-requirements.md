@@ -52,23 +52,27 @@ You have a mobile RF handheld devices and you want to make sure it is compatible
 1. Open the following link in the browser of the mobile terminal https://testdb.my.erp.net/cl/wmsworker
 <br/> user: admin
 <br/> password: 123
+
 2. Select Orders 
+
 3. Select Warehouse Order 0000000011
+
 4. Click Open
+=> the first line is atomatically selected.
+
 5. Click Execute
+
 6. Scan the Location
 
 ![Location](pictures/location_barcode.png)
 
-6.  Scan the Product
+7.  Scan the Product
 
 ![Product](pictures/product_barcode.png)
 
-7. Enter the lot "AL00001" code using the keyboard or select it from the drop-down list.
+8. Enter the lot "AL00001" code using the keyboard or select it from the drop-down list.
 
-8. Enter the quantity 5 PCS using the keyboard.
-
-![Location2](pictures/location2.png)
+9. Enter the quantity 5 PCS using the keyboard.
 
 10. Press Next
 
