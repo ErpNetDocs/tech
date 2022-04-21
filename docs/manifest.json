@@ -5675,6 +5675,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location_barcode.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/location_barcode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-destination.png",
       "output": {
         "resource": {
@@ -5884,6 +5895,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/product_barcode.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/product_barcode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-differences.png",
       "output": {
         "resource": {
@@ -5961,15 +5983,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
-          "hash": "1g1tE4Q5eCJzHR3j5crcmg=="
+          "hash": "ZaYCyDcdN5q3b5k8X6rqAA=="
         }
       },
       "is_incremental": false,
@@ -6040,7 +6059,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "PVFM0eSSlZwWaWrleJn5hQ=="
+          "hash": "EaRloLnfO9Pc0GVS+FIh0Q=="
         }
       },
       "is_incremental": false,
