@@ -46,7 +46,7 @@ The following Android devices have been tested:
 ## Test device compatibility
 
 You have a mobile RF handheld devices and you want to make sure it is compatible with  WMS Worker?
-<br/>We've created a test environment where you can test the WMS Worker in action.
+<br/>We've created a test environment where you can test your device and the WMS Worker in action.
 
 **Тo test your device, just follow these steps:**
 1. Open the following link in the browser of the mobile terminal https://testdb.my.erp.net/cl/wmsworker
