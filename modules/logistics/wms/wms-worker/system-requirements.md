@@ -53,26 +53,24 @@ You have a mobile RF handheld devices and you want to make sure it is compatible
 <br/> user: admin
 <br/> password: 123
 2. Select Orders 
-3. Select Warehouse Order 0000000003 
-4. Change the Quantity of the first line to 4
-5. Scan the Location
+3. Select Warehouse Order 0000000011
+4. Click Open
+5. Click Execute
+6. Scan the Location
 
-![Location](pictures/location.png)
+![Location](pictures/location_barcode.png)
 
 6.  Scan the Product
 
-![Product](pictures/product.png)
+![Product](pictures/product_barcode.png)
 
-7. Scan the Lot
+7. Enter the lot "AL00001" code using the keyboard or select it from the drop-down list.
 
-![Lot](pictures/lot.png)
-
-8. Press Execute
-9. Scan the Location for the second line
+8. Enter the quantity 5 PCS using the keyboard.
 
 ![Location2](pictures/location2.png)
 
-10. Press Execute
+10. Press Next
 
-You have successfully executed a warehouse order with your device!
+You have successfully executed a warehouse order line with your device!
 
