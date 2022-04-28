@@ -28,8 +28,10 @@ The following table contains default system-specified tracking levels:
 | POS terminals | 2 | 2019.1 |
 | Printout layouts | 4 | 2019.1 |
 | Products | 2 | 2019.1 |
+| Trusted Applications | 3 | 2022.1 |
 | User business rules | 3 | 2019.1 |
 | User groups | 3 | 2019.1 |
 | Users | 3 | 2019.1 |
+| Web Sites | 3 | 2022.1 |
 
 For more information on track changes, please check out **[Track Changes](https://docs.erp.net/tech/advanced/data-objects/track-changes.html)**.
