@@ -18,4 +18,7 @@
 - name: CRM common
   href: crm-common/toc.yml
   topicHref:  crm-common/index.md
+- name: Client Center
+  href: clientcenter/toc.yml
+  topicHref:  clientcenter/index.md
   
