@@ -3906,6 +3906,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/error-codes.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/error-codes.html",
+          "hash": "rhNpqgRH94mjmHtVjbGVzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/index.html",
+          "hash": "rHDjaIHGeGGpwvI4Dmisfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/contacts/index.md",
       "output": {
         ".html": {
@@ -3982,7 +4006,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/index.html",
-          "hash": "ShvgMy+51M7XdS6FxDwhLA=="
+          "hash": "b8AvFDLR5o7szTWMyKDxyA=="
         }
       },
       "is_incremental": false,
@@ -6081,7 +6105,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "EaRloLnfO9Pc0GVS+FIh0Q=="
+          "hash": "aOT7fcVT7Wy10kV1kt6/YA=="
         }
       },
       "is_incremental": false,
