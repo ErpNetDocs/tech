@@ -1,3 +1,7 @@
+---
+uid: VMR
+---
+
 # Variable (dynamic) measurement ratios 
 
 *Variable (dynamic) measurement ratios* are a functionality that allows a compensation of stock differences. Stock differences occur if there are variances between the quantity in the base unit of measure and the quantity in the parallel unit of measure. Stock differences may, for example, be caused by natural weight variations in material withdrawals. 
