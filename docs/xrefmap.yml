@@ -274,6 +274,9 @@ references:
 - uid: vat-deviation
   name: VAT Deviation
   href: modules/crm/sales/sales-concepts/vat-deviation.html
+- uid: VMR
+  name: Variable (dynamic) measurement ratios
+  href: concepts/products/variable-dynamic-measurement-rations.html
 - uid: webclient
   name: webclient
   href: includes/webclient.html
