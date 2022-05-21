@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Suggest warehouse locations | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Suggest warehouse locations | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="suggest-warehouse-locations">Suggest warehouse locations</h1>
+
+<p>Coordinates are used to mark exactly where specific products are positioned within a given warehouse. When it’s time for a product to be released, it usually takes time to navigate to its location without any form of guidance. With the Suggest Warehouse Locations feature, you can get an instant suggestion about where you should go.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Warehouse location suggestions are only compatible with lines which are ready for release. They wouldn’t work with mixed lines, or any other types of lines.</p>
+</div>
+<h2 id="specifics">Specifics</h2>
+<p>The function checks whether all warehouse order lines have <em>Task Type == Despatch</em>. If this is false, then an error message appears:</p>
+<p><em>The function can only be used if the task type of all lines is &quot;Despatch&quot;.</em></p>
+<p>For each warehouse order line in a given document, where <em>WarehouseOrderLine.WarehouseLocation == null</em>, are loaded the lines from the Warehouse Availability View, where:</p>
+<ul>
+<li><em>Warehouse = WarehouseOrderLine.WarehouseOrder.Warehouse</em></li>
+<li><em>Product = If ( WarehouseOrderLine.Product != null)</em>, <br>
+then <em>Product == WarehouseOrderLine.Product</em>, <br>
+else skip this line and return <em>WarehouseLocation = null</em> <br></li>
+<li>LogisticUnit = <em>if ( WarehouseOrderLine.LogisticUnit != null)</em>, <br>
+then <em>LogisticUnit == WarehouseOrderLine.LogisticUnit</em>, <br>
+else get the lines for all <em>LogisticUnits</em> <br></li>
+<li>Lot = <em>if ( WarehouseOrderLine.Lot != null)</em>, <br>
+then <em>Lot == WarehouseOrderLine.Lot</em>, <br>
+else get the lines for all <em>Lots</em> <br></li>
+<li>ProductVariant = <em>if ( WarehouseOrderLine.ProductVariant != null)</em>, <br>
+then <em>ProductVariant == WarehouseOrderLine.ProductVariant</em>, <br>
+else get the lines for all <em>ProductVariants</em> <br></li>
+<li>SerialNumber = <em>if ( WarehouseOrderLine.SerialNumber != null)</em>, <br>
+then <em>SerialNumber == WarehouseOrderLine.SerialNumber</em>, <br>
+else get the lines for all <em>SerialNumbers</em> <br></li>
+<li><em>QuantityBaseAvailable != 0</em></li>
+</ul>
+<h2 id="using-suggested-warehouse-locations">Using suggested warehouse locations</h2>
+<p>To begin, click the <strong>Orders</strong> panel.</p>
+<p>This takes you to a list of assigned and unassigned orders.
+Proceed by clicking on the order that you need to perform.</p>
+<p>Open the order.</p>
+<p>Below, you‘ll find a three-dot button:</p>
+<p>From here, you can access the <strong>Suggest Warehouse Locations</strong> feature:</p>
+<p>This immediately triggers a suggestion for warehouse locations from which you can release the product. <br> It can be found within the <em>Loc</em> column:</p>
+<p>In this case, the suggested location for product line 0000001 is “P-01-01-1-A”. You can take the product assigned for release directly from here.
+To proceed with the selected line, click the <strong>Execute</strong> button.</p>
+<p>This takes you to the first screen for dispatching the product. Here, you’ll find more information about the suggested warehouse location, as in how many instances of the product should be released from there.</p>
+<p>To apply the warehouse location suggestion, click the <strong>Use</strong> button.
+This pastes the coordinates in the <em>Location</em> field and takes you to the next step – selecting the product which will be released.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/suggest-warehouse-locations.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
