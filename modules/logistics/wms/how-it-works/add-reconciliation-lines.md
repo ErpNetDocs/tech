@@ -1,4 +1,4 @@
-# Add the reconciliation lines from the WMS module
+# Add reconciliation lines from the WMS module
 
 
 Knowing the exact number of products in a given warehouse location is crucial for keeping order. However, there are often differences between the expected and the actual quantity of a product, which occur during reconciliation. <br /> In such cases, you need to add **reconciliation lines** to the main reconciliation document. 
