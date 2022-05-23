@@ -2596,6 +2596,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/gh.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/gh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/logo.svg",
       "output": {
         "resource": {
@@ -3058,6 +3069,149 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/12.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/23.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/23.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-22.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-33.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-33.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-lines-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-reconc-lines-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-reconc-lines-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-reconclines-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/add-reconclines-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/addreconclines-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/addreconclines-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/arl-1.png",
       "output": {
         "resource": {
@@ -3190,6 +3344,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dd.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/ddd.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/ddd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dddd.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dddd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/ff.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/ff.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/five-zones.png",
       "output": {
         "resource": {
@@ -3234,6 +3432,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/gg.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/gg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/jjjgjjh.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/jjjgjjh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pp.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pppp.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pppp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.png",
       "output": {
         "resource": {
@@ -3249,6 +3491,160 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/six-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-66.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-66.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-77.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-77.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-88.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-88.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-99.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-99.png"
         }
       },
       "is_incremental": false,
@@ -3355,10 +3751,54 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/test4.png"
         }
       },
       "is_incremental": false,
@@ -3381,6 +3821,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/three-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/try.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/try.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/try2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/try2.png"
         }
       },
       "is_incremental": false,
@@ -3425,6 +3887,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/six-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/suggest-locations-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/suggest-locations-6.png"
         }
       },
       "is_incremental": false,
