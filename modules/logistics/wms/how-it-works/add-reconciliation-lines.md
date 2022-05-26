@@ -13,19 +13,19 @@ Once differences in product quantity are found, they need to be accounted. For t
 
 To begin, create a new reconciliation document from the **Logistics --> Inventory** section.
 
-![Picture](pictures/add-lines-11.png)
+![Picture](pictures/create-reconciliation.png)
  
-Fill it with the necessary information, including the **default store** in which the reconciliation is done, and save the document.
+Fill it with the necessary information, including the **Default Store** in which the reconciliation is done, and save the document.
 
-![Picture](pictures/add-lines-22.png)
+![Picture](pictures/default-store.png)
 
-To add reconciliation lines from the WMS module to an existing document, click the **play** **button** at the upper-left corner of the screen. This will check exactly which calculations haven’t been accounted yet, and will load lines for manual accounting.
+To add reconciliation lines from the WMS module to an existing document, click the **play** **button** at the upper-left corner of the screen and then select the **Add the reconciliation lines from the WMS module** option. This will check exactly which calculations haven’t been accounted yet, and will load lines for manual accounting.
 
-![Picture](pictures/add-lines-33.png)
+![Picture](pictures/reconciliation-play.png)
 
 Define the **period** on which you want the data to be based (in days), and click **OK**.
 
-![Picture](pictures/add-lines-4.png)
+![Picture](pictures/reconciliation-period.png)
  
 In the _Lines_ section, unaccounted lines with differences in product quantity that occurred during reconciliation will be listed. 
 
