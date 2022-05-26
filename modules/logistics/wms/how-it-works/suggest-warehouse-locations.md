@@ -2,11 +2,41 @@
 
 Coordinates are used to mark exactly where specific products are positioned within a given warehouse. When it’s time for a product to be released, it usually takes time to navigate to its location without any form of guidance. With the Suggest Warehouse Locations feature, you can get an instant suggestion about where you should go. 
 
-
 > [!NOTE] 
 > 
 > Warehouse location suggestions are only compatible with lines which are ready for release. They wouldn’t work with mixed lines, or any other types of lines.
 
+## Using suggested warehouse locations
+
+To begin, click the **Orders** panel.
+
+![Picture](pictures/orders.png)
+ 
+This takes you to a list of assigned and unassigned orders. 
+Proceed by clicking and opening the order that you need to perform.
+
+![Picture](pictures/open-order.png)
+ 
+Below, you‘ll find a three-dot button, from which you can access the **Suggest Warehouse Locations** feature:
+
+![Picture](pictures/suggest-locations.png)
+
+This immediately triggers a suggestion for warehouse locations from which you can release the product. <br /> It can be found within the _Loc_ column:
+
+![Picture](pictures/location.png)
+
+In this case, the suggested location for product line 0000001 is “P-01-01-1-A”. You can take the product assigned for release directly from here.
+To proceed with the selected line, click the **Execute** button.
+
+![Picture](pictures/execute-order.png)
+
+This takes you to the first screen for dispatching the product. Here, you’ll find more information about the suggested warehouse location, as in how many instances of the product should be released from there.
+
+To apply the warehouse location suggestion, click the **Use** button. 
+This pastes the coordinates in the _Location_ field and takes you to the next step – selecting the product which will be released.
+
+![Picture](pictures/suggested-location.png)
+ 
 ## Specifics
 
 The function checks whether all warehouse order lines have _Task Type == Despatch_. If this is false, then an error message appears:
@@ -32,39 +62,3 @@ For each warehouse order line in a given document, where _WarehouseOrderLine.War
            then _SerialNumber == WarehouseOrderLine.SerialNumber_, <br />
            else get the lines for all _SerialNumbers_ <br />
 - _QuantityBaseAvailable != 0_ 
-
-## Using suggested warehouse locations
-
-To begin, click the **Orders** panel.
-
-![Picture](pictures/suggest-locations-1.png)
- 
-This takes you to a list of assigned and unassigned orders. 
-Proceed by clicking and opening the order that you need to perform.
-
-![Picture](pictures/suggest-locations-3.png)
- 
-Below, you‘ll find a three-dot button, from which you can access the **Suggest Warehouse Locations** feature:
-
-![Picture](pictures/suggest-locations-66.png)
-
-This immediately triggers a suggestion for warehouse locations from which you can release the product. <br /> It can be found within the _Loc_ column:
-
-![Picture](pictures/suggest-locations-77.png)
-
-In this case, the suggested location for product line 0000001 is “P-01-01-1-A”. You can take the product assigned for release directly from here.
-To proceed with the selected line, click the **Execute** button.
-
-![Picture](pictures/suggest-locations-88.png)
-
-This takes you to the first screen for dispatching the product. Here, you’ll find more information about the suggested warehouse location, as in how many instances of the product should be released from there.
-
-![Picture](pictures/suggest-locations-10.png)
-
-To apply the warehouse location suggestion, click the **Use** button. 
-This pastes the coordinates in the _Location_ field and takes you to the next step – selecting the product which will be released.
-
-![Picture](pictures/suggest-locations-99.png)
-
- 
-
