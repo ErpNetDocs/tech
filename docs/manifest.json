@@ -3344,6 +3344,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/create-reconciliation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/create-reconciliation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dd.png",
       "output": {
         "resource": {
@@ -3370,6 +3381,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/dddd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/default-store.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/default-store.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/execute-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/execute-order.png"
         }
       },
       "is_incremental": false,
@@ -3454,6 +3487,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/location.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/open-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/open-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/orders.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/orders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pp.png",
       "output": {
         "resource": {
@@ -3469,6 +3535,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pppp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-period.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-period.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-play.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-play.png"
         }
       },
       "is_incremental": false,
@@ -3645,6 +3733,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations-99.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggest-locations.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggested-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/suggested-location.png"
         }
       },
       "is_incremental": false,
@@ -6212,7 +6322,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.html",
-          "hash": "3COhf4IFm+Cv4I7WextU1g=="
+          "hash": "21FzlS2KZcSrBRosJoFc5g=="
         }
       },
       "is_incremental": false,
@@ -6335,6 +6445,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/orders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png"
         }
       },
       "is_incremental": false,
