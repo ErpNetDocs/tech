@@ -29,5 +29,5 @@ Define the **period** on which you want the data to be based (in days), and clic
  
 In the _Lines_ section, unaccounted lines with differences in product quantity that occurred during reconciliation will be listed. 
 
-
+![Picture](pictures/reconciliation-lines.png)
 
