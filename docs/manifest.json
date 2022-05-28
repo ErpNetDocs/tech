@@ -3542,6 +3542,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/reconciliation-period.png",
       "output": {
         "resource": {
