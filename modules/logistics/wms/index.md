@@ -21,7 +21,7 @@ Warehouse management module follows the concepts of the Warehouse Management Sys
 
 The most important part for achieving operational effectiveness is to properly organize the layout of the warehouses. Layout optimization is outside the scope of this document.
 
-![Zones](zones.png)
+![Zones](pictures/zones.png)
 
 Managed Warehouses are organized using **Zones** and **Locations**. Zones are sub-divisions of a warehouse.
 
@@ -43,7 +43,7 @@ The two most basic documents of WMS are:
 
 The basic operation flow of WMS is the following:
 
-![WMS](WMS.png)
+![WMS](pictures/WMS.png)
 
 The steps, noted in (parens) in the diagram are as follows:
 
@@ -55,7 +55,7 @@ The steps, noted in (parens) in the diagram are as follows:
 
 Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.
 
-![Handy](handy.png)
+![Handy](pictures/handy.png)
 
 ## Push and Pull task management
 
@@ -94,11 +94,11 @@ Pros:
 Cons:
 
 - More expensive - require a central planner.
-- The efficiency of the workers depends heavily on the planner. 
+- The efficiency of the workers depends heavily on the planner.
 
 ### Choosing the right strategy
 
 There can be other organizations of the workflow within a warehouse. The ERP.net data model allows implementing almost any conceivable strategy, with the most prominent ones built-in.
 
-However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is a possible direction. 
+However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is a possible direction.
 Also, mixing robots with human workers might require using custom strategies.
