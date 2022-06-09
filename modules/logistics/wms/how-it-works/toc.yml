@@ -1,10 +1,6 @@
-- name: Warehouse policies
-  href: warehouse-policies.md
-- name: Warehouse order execution
-  href: warehouse-order-execution.md
 - name: Overview
   href: index.md
+- name: Warehouse order execution
+  href: warehouse-order-execution.md
 - name: Add reconciliation lines from the WMS module
   href: add-reconciliation-lines.md
-- name: Suggest warehouse locations
-  href: suggest-warehouse-locations.md
