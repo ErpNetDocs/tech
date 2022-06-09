@@ -1,14 +1,9 @@
 - name: Overview
   href: index.md
-- name: Zones and locations
-  href: zones-and-locations.md
-- name: Zone-based routing
-  href: zone-based-routing.md
-- name: Push and pull task management
-  href: push-and-pull-task-management.md
+- name: How to
+  href: how-to/toc.yml
+- name: WMS Worker
+  href: wms-worker/toc.yml
+  topicHref: wms-worker/index.md
 - name: How it works
   href: how-it-works/toc.yml
-- name: WMS Worker
-  href: wms-worker//toc.yml
-  topicHref: wms-worker/index.md
-  
