@@ -1,2 +1,4 @@
 - name: Overview
   href: index.md
+- name: Setup warehouse
+  href: setup-warehouse/toc.yml
