@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Zone based routing | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Zone based routing | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,11 +77,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="zone-based-routing">Zone based routing</h1>
 
-<ul>
-<li><a href="add-reconciliation-lines.html">Add reconciliation lines from the WMS module</a></li>
-<li><a href="warehouse-order-execution.html">Warehouse order execution</a></li>
-</ul>
+<h2 id="the-basic-idea">The basic idea</h2>
+<p>With zone based routing, the rules for processing the goods are determined based on the zone, in which the goods are stored for each step.
+The zones are sequentially numbered, relative to their &quot;closeness&quot; to final shipping. For example:</p>
+<blockquote>
+<p>1 IN -&gt; 2 INSP -&gt; 3 BULK -&gt; 4 PICK -&gt; 5 KIT -&gt; 6 PACK -&gt; 7 OUT</p>
+<p>RECEIVE ------------&gt; --OPTIMIZE--&gt; ----------------&gt; DISPATCH</p>
+</blockquote>
+<p>The main processes in the warehouse - receive, optimize and dispatch, are ordered consecutively through the zone sequence.
+The receive process starts at the inbound docks and runs until goods are placed in bulk.
+The optimization process usually deals with replenishment of the picking zones, but can also be used for pre-kitting.
+The planning of the dispatch process works backwards - from the final step (the dispatch from the outbound docks) to the first step (usually picking).
+This is similar to how MRP/DRP works, but applied for WMS.</p>
+<p>Zone based routing and sequencing provides great flexibility in the route formation process, while keeping things simple and understandable for the process designers.
+It allows the process designers to focus separately on each zone, leaving the complex full routing formation to the system.
+Zone based routing allows programming of very complicated routes, while still keeping things simple and maintainable.</p>
+<h2 id="how-it-works">How it works?</h2>
+<p>For each zone, there are rules, which define how the goods will be processed, when they pass the zone.
+The rules for a zone are defined separately for each of the WMS processes - receive, dispatch and replenishment.
+The full route is the concatenation of all route steps for each consecutive zone.</p>
+<h2 id="hierarchical-rules">Hierarchical rules</h2>
+<p>Since zones are hierarchical, for any given zone there might be multiple rules, coming from different levels of the hierarchy.
+All rules in the hierarchy are combined when creating the routing.
+Combining the rules is performed separately for each STEP NO within each zone.
+To determine the &quot;winning&quot; rule for each step, the RULE PRIORITY is used within all rules, which satisfy the RULE CONDITIONS.</p>
+<h2 id="start-and-finish-of-the-process">Start and finish of the process</h2>
+<p>The receive process starts at the inbound dock and is planned through the zones, until there are no more steps.
+Usually, it finishes at the BULK zone.
+The dispatch process works in the opposite way - it first determines the quantities needed at the outbound docks, and than determines what previous steps could supply these quantities.
+The optimization process is a middle ground - it just runs for all zones, for which there is a definition for the optimization process.</p>
+<h2 id="movement-between-the-zones">Movement between the zones</h2>
+<p>When a rule has a MOVE task, it orders movement of the goods to another zone.
+The algorithm for determining the routing steps is then restarted for this new zone and so on until the goods reach their final destination and state.</p>
+<h2 id="rule-and-task-conditions">Rule and task conditions</h2>
+<p><em>Rule conditions</em> are evaluated when the routing is determined.
+They can be used to alter the routes based on conditions, which are known by the time the route is created.
+Rule conditions include such things as product group, zone characteristics, etc.</p>
+<p><em>Task conditions</em> are evaluated later in the process and hence allow processing based on what is know in real time during the execution of the order.
+They are first copied to the warehouse order.
+Then, upon actual execution of the order, they are evaluated in real time.
+Task conditions can be based on runtime characteristics like quality inspection status, lot characteristics, etc.</p>
 </article>
           </div>
           
@@ -90,7 +127,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/pictures/zone-based-routing.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -6306,28 +6306,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/WMS.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/WMS.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/handy.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/handy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.md",
       "output": {
@@ -6345,7 +6323,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "m4wJ0MHReaH4nB+baWJObQ=="
+          "hash": "ts1HlMHmMXx/GyzsBya16g=="
         }
       },
       "is_incremental": false,
@@ -6584,18 +6562,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/suggest-warehouse-locations.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/suggest-warehouse-locations.html",
-          "hash": "27ypaF1guVO7JB1vFPA3Ig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/warehouse-order-execution.md",
       "output": {
         ".html": {
@@ -6608,11 +6574,47 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/warehouse-policies.md",
+      "source_relative_path": "modules/logistics/wms/how-to/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/warehouse-policies.html",
-          "hash": "LlNk5zURqNAGsdfoUasWsw=="
+          "relative_path": "modules/logistics/wms/how-to/index.html",
+          "hash": "bI0QPxFhxJVQBRyWJwn5ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.html",
+          "hash": "u/1hL6hqLRECbTns9Y9lPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
+          "hash": "AX5Iq/WbIHFIuxoBYQgh4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html",
+          "hash": "SLQxbloYJ5jH4CvrI1rRIw=="
         }
       },
       "is_incremental": false,
@@ -6624,7 +6626,52 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "68YjNKLedUcw5marwFs87Q=="
+          "hash": "TrEub/j8eg1uaJWb7Q/wpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/WMS.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/WMS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/handy.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/handy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/pictures/zone-based-routing.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/pictures/zone-based-routing.html",
+          "hash": "OiO35XoXNQFJP45DzDU/Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/zones.png"
         }
       },
       "is_incremental": false,
@@ -7033,47 +7080,27 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.html",
+          "hash": "1Zz7iaR/XX5hwCRiTCm/6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
           "hash": "8OZU+9YTWUvQ5NPujxy1cw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/zone-based-routing.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/zone-based-routing.html",
-          "hash": "9PTqnbzU3D5MqY1Yq5drtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/zones-and-locations.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/zones-and-locations.html",
-          "hash": "CR7ZLmQGMJMwMXEC/WW3+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/zones.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/zones.png"
         }
       },
       "is_incremental": false,
@@ -7109,7 +7136,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "8fJYL2Ca/JoSroU5lJ81ug=="
+          "hash": "guyXHvzZ1Y0Ijf8B0GMTNg=="
         }
       },
       "is_incremental": false,

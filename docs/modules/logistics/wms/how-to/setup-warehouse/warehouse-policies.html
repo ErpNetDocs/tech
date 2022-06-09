@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Warehouse policies | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Warehouse policies | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="warehouse-policies">Warehouse policies</h1>
+
+<p>Warehouse policies is a hierarchical system for applying policies to warehouse operations.</p>
+<h1 id="policy-kind">Policy kind</h1>
+<p>Warehouse policies have diferent kinds/types which specify what the actual action of the policy is.</p>
+<p>The list of the policy kinds is system predifined.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AllowProductChange</td>
+<td style="text-align: left;">Allows execution with а different product than the ordered. <br> If <em>ApplicablePolicy = null</em> or <em>ApplicablePolicy.Value</em> <em>== false</em> and <em>WarehouseOrderLine.Product != null</em>, <br> then when executing in <em>Orders</em>, it’s not possible to define <em>Product != WarehouseOrderLine.Product</em>. <br> If another value is defined, an error sound will play, along with the appearance of a popup message: <br> <br> <em>“Product change is not allowed. Please select the suggested product.”</em>  <br><br> • Stored as 'APC'. <br> • Database Value: 'APC' <br> • Model Value: 0 <br> • Domain API Value: 'AllowProductChange'</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowLotChange</td>
+<td style="text-align: left;">Allows execution with a different lot than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.Lot != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>Lot !=WarehouseOrderLine.Lot</em>. &lt;If another value is defined, an error sound is played, along with the appearance of a popup message: <br><br> <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> • Stored as 'ATC'. <br> • Database Value: 'ATC' <br> • Model Value: 1 <br> • Domain API Value: 'AllowLotChange'</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowLocationChange</td>
+<td style="text-align: left;">Allows execution from a different location than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.Location != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>Location != WarehouseOrderLine.Location</em>. If another value is defined, an error sound is played, along with the appearance of a popup message: <br><br> <em>&quot;Location change is not allowed. Please select the suggested location.&quot;</em>  <br><br> • Stored as 'ALC'. <br> • Database Value: 'ALC' <br> • Model Value: 2 <br> • Domain API Value: 'AllowLocationChange'</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowUnitChange</td>
+<td style="text-align: left;">Allows execution of a quantity in a different measurement unit than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.QuantityUnit != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>QuantityUnit != WarehouseOrderLine.QuantityUnit</em>. If another value is defined, <br> an error sound is played, along with the appearance of a popup message: <br> <br>  <em>&quot;Quantity Unit change is not allowed. Please select the suggested quantity unit.&quot;</em> <br><br> • Stored as 'AUC'. <br> • Database Value: 'AUC' <br> • Model Value: 3 <br> • Domain API Value: 'AllowUnitChange'</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequireSourceScan</td>
+<td style="text-align: left;">Requires scanning of the source location when moving or dispatching. <br> If <em>Value == true</em>, then when executing in <em>Orders</em>, the <strong>USE</strong> button in the Location screen will be hidden, while the Availability table will be inaccessible.  <br><br> • Stored as 'RSS'. <br> • Database Value: 'RSS' <br> • Model Value: 4 <br> • Domain API Value: 'RequireSourceScan'</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequireDestinationScan</td>
+<td style="text-align: left;">Requires scanning of the destination location when moving or receiving. <br> If <em>Value == true</em>, then when executing in <em>Orders</em>, the <strong>USE</strong> button in the Destination screen will be hidden. <br><br> • Stored as 'RDS'. <br> • Database Value: 'RDS' <br> • Model Value: 5 <br> • Domain API Value: 'RequireDestinationScan'</td>
+</tr>
+<tr>
+<td style="text-align: left;">AllowLineSkip</td>
+<td style="text-align: left;">Allows skipping of an order line when executing (allow quantity = 0). Not planned for release at the moment. <br><br> • Stored as 'ALS'. <br> • Database Value: 'ALS' <br> • Model Value: 6 <br> • Domain API Value: 'AllowLineSkip'</td>
+</tr>
+<tr>
+<td style="text-align: left;">ZoneType</td>
+<td style="text-align: left;">Specifies the type of zone for receiving, shipping, packing, etc. <br> It can have the following values: <strong>picking</strong>, <strong>packing</strong>, <strong>receiving</strong>, <strong>shipping</strong>, and <strong>storage</strong>. According to the <em>Zone Policies</em> rule, the policy has a &quot;Zone&quot; and there are no “Product”, “Product group” or “Product type” fields.  <br><br> • Stored as 'ZTY'. <br> • Database Value: 'ZTY' <br> • Model Value: 7 <br> • Domain API Value: 'ZoneType'</td>
+</tr>
+</tbody>
+</table>
+<h1 id="applicability">Applicability</h1>
+<p>You set up each warehouse policy by defining the conditions where it applies, to which products and for how long.
+Each warehouse policy can apply to:</p>
+<ul>
+<li><p>Warehouse</p>
+</li>
+<li><p>Zone and its sub-zones</p>
+</li>
+<li><p>Product group and its sub-groups</p>
+</li>
+<li><p>Product type</p>
+</li>
+<li><p>Specific product</p>
+</li>
+<li><p>From date</p>
+</li>
+<li><p>To date</p>
+</li>
+</ul>
+<p>NOTE: Some policies can be applied only at the warehouse or zone level.</p>
+<h1 id="importance">Importance</h1>
+<p>Policies have importance. When evaluating a policy, the setting with the highest importance is applied.</p>
+<p>For example, if a policy is applied to a root zone and to a sub-zone, the importance of the sub-zone setting determines which setting will be applied:</p>
+<ul>
+<li>If the sub-zone setting has higher priority, it will be applied.</li>
+</ul>
+<p>This can be used for hierarchical application of policies for zones.</p>
+<ul>
+<li>If the root zone setting has higher priority, it will be applied.</li>
+</ul>
+<p>This can be used for root zone (or even warehouse level) setting, which overrides the setting for specific zones.</p>
+<p>Importance is an integer value, allowing even negative numbers (for very low importance).</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>
