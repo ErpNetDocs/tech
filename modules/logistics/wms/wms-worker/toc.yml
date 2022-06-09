@@ -8,5 +8,7 @@
   href: move.md
 - name: Reconcile
   href: reconcile.md
+- name: Suggest warehouse locations
+  href: suggest-warehouse-locations.md
 - name: System requirements
   href: system-requirements.md
