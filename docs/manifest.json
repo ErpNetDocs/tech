@@ -4070,6 +4070,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/WMS.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/WMS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/handy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/handy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/zones.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/zones.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/wms-worker/pictures/availability-actions.png",
       "output": {
         "resource": {
@@ -6311,7 +6344,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.html",
-          "hash": "21FzlS2KZcSrBRosJoFc5g=="
+          "hash": "ypTXZysoHIU3/V91s5iMxA=="
         }
       },
       "is_incremental": false,
@@ -6323,7 +6356,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "ts1HlMHmMXx/GyzsBya16g=="
+          "hash": "N8xfryLvTxCgYAyLlt4wIw=="
         }
       },
       "is_incremental": false,
