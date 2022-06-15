@@ -21,6 +21,7 @@ If a user clicks on the notification, the specified URL will be opened.
   - NT_SOC_REPLY - there was a reply to my post or comment
   - NT_SOC_MENTION - I was mentioned in a post or comment
   - NT_SOC_NEW_POST - new post in a group, in which I am member
+  - NT_SOC_REACTION - there was a reaction to my post or comment
   - NT_WM_QTY_BELOW_MIN - in @wms, when the qty in a tracked bin falls below the minimum
   
  - When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood it.
