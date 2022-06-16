@@ -12,6 +12,7 @@ When the task is confirmed as completed, the process continues to the next task 
 ## Result
 When executed, the warehouse order lines with a 'User task' task type create a Document Fulfillment as follows:
 
+```
 DocumentFulfillment.Document = WarehouseOrder
 DocumentFulfillment.DocumentLineId = WarehouseOrderLineId
 DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo
@@ -25,3 +26,4 @@ DocumentFulfillment.Lot = null
 DocumentFulfillment.SerialNumber = null
 DocumentFulfillment.ProductVariant = null
 DocumentFulfillment.DestinationEntityName = ???
+```
