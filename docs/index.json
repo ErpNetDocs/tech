@@ -1547,7 +1547,37 @@
   "modules/logistics/wms/how-it-works/index.html": {
     "href": "modules/logistics/wms/how-it-works/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Reconcile the results from the WMS module Warehouse order execution"
+    "keywords": "Despatch task type Move task type Receive task type Reconcile task type Reconcile the results from the WMS module User task - task type Warehouse order execution"
+  },
+  "modules/logistics/wms/how-it-works/task-types/despatch.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/despatch.html",
+    "title": "Despatch task type | ERP.net Tech Docs",
+    "keywords": "Despatch task type"
+  },
+  "modules/logistics/wms/how-it-works/task-types/index.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/index.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "Task types define the type of the operation (task), which should be performed. E.g. receiving goods, moving products from one location to another, reconciliation and oth. Depending on the task type, the system will guide the user through specific screens and will process the results of the work done in the appropriate way for the task. Мore about the details of the different task types, you can see in topics: Despatch task type Move task type Receive task type Reconcile task type User task - task type"
+  },
+  "modules/logistics/wms/how-it-works/task-types/move.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/move.html",
+    "title": "Move task type | ERP.net Tech Docs",
+    "keywords": "Move task type"
+  },
+  "modules/logistics/wms/how-it-works/task-types/receive.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/receive.html",
+    "title": "Receive task type | ERP.net Tech Docs",
+    "keywords": "Receive task type"
+  },
+  "modules/logistics/wms/how-it-works/task-types/reconcile.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/reconcile.html",
+    "title": "Reconcile task type | ERP.net Tech Docs",
+    "keywords": "Reconcile task type"
+  },
+  "modules/logistics/wms/how-it-works/task-types/user-task.html": {
+    "href": "modules/logistics/wms/how-it-works/task-types/user-task.html",
+    "title": "User task - task type | ERP.net Tech Docs",
+    "keywords": "User task - task type A user task is a task (work) that needs to be done by a human actor (the worker). When the process arrives at such task, the process execution stops and the application displays a text that guides the user of what needs to be done for this task. The text to be displayed must be indicated in advance in the Notes field of the particular Warehouse Order Line. Once the user (worker) has completed the execution of this task, he has to manually confirm that the job is completed. When the task is confirmed as completed, the process continues to the next task that needs to be done (if any). Result When executed, the warehouse order lines with a 'User task' task type create a Document Fulfillment as follows: DocumentFulfillment.Document = WarehouseOrder DocumentFulfillment.DocumentLineId = WarehouseOrderLineId DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo DocumentFulfillment.FulfillmentType = Completed DocumentFulfillment.IsFinal = false DocumentFulfillment.LineType = Line DocumentFulfillment.QuantityBase = 0.00 DocumentFulfillment.StandardQuantity = 0.00 DocumentFulfillment.Product = null DocumentFulfillment.Lot = null DocumentFulfillment.SerialNumber = null DocumentFulfillment.ProductVariant = null DocumentFulfillment.DestinationEntityName = ???"
   },
   "modules/logistics/wms/how-it-works/warehouse-order-execution.html": {
     "href": "modules/logistics/wms/how-it-works/warehouse-order-execution.html",

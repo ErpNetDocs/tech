@@ -6356,7 +6356,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "N8xfryLvTxCgYAyLlt4wIw=="
+          "hash": "s+XmBXoS3nF7BrRvZV/nlw=="
         }
       },
       "is_incremental": false,
@@ -6588,6 +6588,78 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/two-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.html",
+          "hash": "cu06gM9ROk9yzOyceLnjOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/index.html",
+          "hash": "2d3n7RAPJxzCjJEvyNTjVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/move.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/move.html",
+          "hash": "f5J3T30WghIc1ekxWRI/cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/receive.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/receive.html",
+          "hash": "apOmOk2EEGJtBXFdC+hojA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/reconcile.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/reconcile.html",
+          "hash": "DjwYUir5sVQD6eWPxF/Sfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/user-task.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/user-task.html",
+          "hash": "dId9aNrGHhbHd87gaR/afA=="
         }
       },
       "is_incremental": false,
@@ -7169,7 +7241,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "guyXHvzZ1Y0Ijf8B0GMTNg=="
+          "hash": "cpgbSk4EnduhlWdTXfT78A=="
         }
       },
       "is_incremental": false,
