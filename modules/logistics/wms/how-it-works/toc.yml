@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+- name: Task types
+  href: task-types/toc.yml
+  topicHref: task-types/index.md
 - name: Warehouse order execution
   href: warehouse-order-execution.md
 - name: Add reconciliation lines from the WMS module
