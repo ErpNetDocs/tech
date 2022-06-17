@@ -10,5 +10,5 @@ Once the user (worker) has completed the execution of this task, he has to manua
 When the task is confirmed as completed, the process continues to the next task that needs to be done (if any).
 
 ## Result
-When executed, the warehouse order lines with a 'User task' task type create a finished Document Fulfillment. If there is atleast one Document Fulfillment for this line, then the User Task is considered as completed.
+When executed, the warehouse order lines with a 'User task' task type create a finished Document Fulfillment. If there is atleast one document fulfillment for this line, then the user task is considered as completed.
 
