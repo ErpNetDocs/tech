@@ -1,7 +1,7 @@
 # Initial Setup
 
 
-## 1. The measurement units codes should be defined acording the CL1 nomenclature
+## 1. The measurement units codes should be defined according the CL1 nomenclature
 
 ![image-20211209134740745](image-20211209134740745-16390593696201.png)
 
@@ -52,6 +52,116 @@
 \-     **Exc_DocumentType** – Allowed values from CL2305 nomenclature
 
 \-     **Exc_OperationType** – Type of output from Tax Warehouse (For example 1021,1029)
+
+
+
+## 4. Custom attributes for e-AD
+
+### 4.1.   Parties
+
+**\-**     **Exc_Trader_Excise_Number** - Акцизен номер на търговеца
+
+**\-     Exc_EORI** – EORI номер
+
+**\-     Exc_StreetNumber** – Номер
+
+**\-     Exc_Nad_Lng** – Код на език
+
+**\-     Exc_Tax_Warehouse_Excise_Number** – Акцизен номер на данъчния склад
+
+**\-     Exc_Custom_Office** – Номер на митническо управление
+
+**\-     Exc_Member_State_Code** - Код на държава членка
+
+**\-     Exc_Certificate_Of_Exemption** - Сериен номер на сертификат на освободената организация
+
+\-      
+
+ 
+
+### 4.2.    Documents
+
+**\-     Exc_Commercial_Seal_Identification** - Идентификация на търговската пломба
+
+**\-     Exc_TD_Complementary_Information** - Транспорт допълнителна информация
+
+**\-     Exc_TD_Complementary_Information_LNG** – Транспорт език на допълнителната информация
+
+**\-     Exc_Seal_Information** - Информация за пломбата
+
+**\-     Exc_Seal_Information_LNG** - Език на информацията за пломбата
+
+**\-     Exc_Invoice_Number** – Номер на фактурата
+
+**\-     Exc_Invoice_Date** – Дата на фактурата
+
+**\-     Exc_Origin_Type_Code** - Код на вида на произхода
+
+**\-     Exc_Date_Of_Dispatch** - Дата на изпращане
+
+**\-     Exc_Time_Of_Dispatch** – Час на изпращане
+
+**\-     Exc_Upstream_ARC -** АРК нагоре по веригата
+
+**\-     Exc_Import_SAD_Number** - Номер на митническа декларация за внос
+
+**\-     Exc_Date_And_Time_Of_Update_Validation** - Дата и час на валидация на промяната
+
+**\-     Exc_Destination_Type_Code** - Код на типа мястото на получаване
+
+**\-     Exc_Journey_Time** - Времетраене на транспорта
+
+**\-     Exc_Transport_Arrangement** - Код на организацията на транспорта
+
+**\-     Exc_TM_Complementary_Information** – Допълнителна информация за тип транспорт
+
+**\-     Exc_TM_Complementary_Information_LNG** - Език на допълнителната информация за тип транспорт
+
+**\-     Exc_Guarantor_Type_Code** - Код на вида на лицето, предоставящо обезпечение
+
+**\-     Exc_EAD_LNG** - Език на e-AD
+
+**\-     Exc_Date_And_Time_Of_Validation_Of_EAD** - Дата и час на валидация на e-AD
+
+**\-     Exc_Dispatch_Import_Office** - Код на МУ на внос
+
+**\-     Exc_Certificate_Document_Type** - Сертификат тип на документа
+
+**\-     Exc_Certificate_Document_Reference** - Сертификат номер на документ
+
+**\-     Exc_Certificate_Document_Description** - Сертификат описание на документа
+
+**\-     Exc_Certificate_Reference_Of_Document** - Сертификат референция на документа
+
+\-      
+
+ 
+
+ 
+
+### 4.3.    ExciseAdministrativeDocumentLines
+
+**\-     Exc_Gross_Weight** - Брутно тегло
+
+**\-     Exc_Net_Weight**  - Нетно тегло
+
+### 4.4.    ExciseProductType
+
+**\-     Exc_Kind_Of_Packages** - Код на вида опаковка
+
+**\-     Exc_Wine_Product_Category** - Категория на лозаро-винарския продукт
+
+**\-     Exc_Wine_Growing_Zone_Code** - Код на лозарската зона
+
+**\-     Exc_Third_Country_Of_Origin** - Трета държава на произход
+
+**\-     Exc_Wine_Operation_Code** - Код на операция за вино
+
+ 
+
+### 4.5. TransportationVehicles
+
+**\-     Exc_Transport_Units_Code** - Код на транспортната единица
 
 
 
