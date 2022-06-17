@@ -10,20 +10,5 @@ Once the user (worker) has completed the execution of this task, he has to manua
 When the task is confirmed as completed, the process continues to the next task that needs to be done (if any).
 
 ## Result
-When executed, the warehouse order lines with a 'User task' task type create a Document Fulfillment as follows:
+When executed, the warehouse order lines with a 'User task' task type create a finished Document Fulfillment. If there is atleast one Document Fulfillment for this line, then the User Task is considered as completed.
 
-```
-DocumentFulfillment.Document = WarehouseOrder
-DocumentFulfillment.DocumentLineId = WarehouseOrderLineId
-DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo
-DocumentFulfillment.FulfillmentType = Completed
-DocumentFulfillment.IsFinal = false
-DocumentFulfillment.LineType = Line
-DocumentFulfillment.QuantityBase = 0.00
-DocumentFulfillment.StandardQuantity = 0.00
-DocumentFulfillment.Product = null
-DocumentFulfillment.Lot = null
-DocumentFulfillment.SerialNumber = null
-DocumentFulfillment.ProductVariant = null
-DocumentFulfillment.DestinationEntityName = ???
-```
