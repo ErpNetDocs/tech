@@ -85,21 +85,7 @@ The text to be displayed must be indicated in advance in the Notes field of the 
 <p>Once the user (worker) has completed the execution of this task, he has to manually confirm that the job is completed.</p>
 <p>When the task is confirmed as completed, the process continues to the next task that needs to be done (if any).</p>
 <h2 id="result">Result</h2>
-<p>When executed, the warehouse order lines with a 'User task' task type create a Document Fulfillment as follows:</p>
-<pre><code>DocumentFulfillment.Document = WarehouseOrder
-DocumentFulfillment.DocumentLineId = WarehouseOrderLineId
-DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo
-DocumentFulfillment.FulfillmentType = Completed
-DocumentFulfillment.IsFinal = false
-DocumentFulfillment.LineType = Line
-DocumentFulfillment.QuantityBase = 0.00
-DocumentFulfillment.StandardQuantity = 0.00
-DocumentFulfillment.Product = null
-DocumentFulfillment.Lot = null
-DocumentFulfillment.SerialNumber = null
-DocumentFulfillment.ProductVariant = null
-DocumentFulfillment.DestinationEntityName = ???
-</code></pre>
+<p>When executed, the warehouse order lines with a 'User task' task type create a finished Document Fulfillment. If there is atleast one document fulfillment for this line, then the user task is considered as completed.</p>
 </article>
           </div>
           
