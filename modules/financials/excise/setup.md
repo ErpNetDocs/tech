@@ -101,11 +101,7 @@
 
 **\-     Exc_Time_Of_Dispatch** – Час на изпращане
 
-**\-     Exc_Upstream_ARC -** АРК нагоре по веригата
-
 **\-     Exc_Import_SAD_Number** - Номер на митническа декларация за внос
-
-**\-     Exc_Date_And_Time_Of_Update_Validation** - Дата и час на валидация на промяната
 
 **\-     Exc_Destination_Type_Code** - Код на типа мястото на получаване
 
@@ -120,8 +116,6 @@
 **\-     Exc_Guarantor_Type_Code** - Код на вида на лицето, предоставящо обезпечение
 
 **\-     Exc_EAD_LNG** - Език на e-AD
-
-**\-     Exc_Date_And_Time_Of_Validation_Of_EAD** - Дата и час на валидация на e-AD
 
 **\-     Exc_Dispatch_Import_Office** - Код на МУ на внос
 
