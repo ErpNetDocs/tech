@@ -74,8 +74,7 @@
 **\-     Exc_Member_State_Code** - Код на държава членка
 
 **\-     Exc_Certificate_Of_Exemption** - Сериен номер на сертификат на освободената организация
-
-\-      
+     
 
  
 
@@ -127,9 +126,13 @@
 
 **\-     Exc_Certificate_Reference_Of_Document** - Сертификат референция на документа
 
-\-      
+**\-     Exc_Tax_Warehouse_Other_Party** - Данъчен склад контрагент
 
- 
+**\-     Exc_Guarantor** - Търговец, предоставящ обезпечението
+
+**\-     Exc_Transport_Arranger** - Търговец Организатор на транспорта
+     
+
 
  
 
