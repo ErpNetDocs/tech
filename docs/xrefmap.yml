@@ -211,7 +211,7 @@ references:
 - uid: format-specifiers
   name: Format specifiers
   href: advanced/string-interpolation/format-specifiers.html
-- uid: generation-procedures
+- uid: generation-procedures-update
   name: Generation procedures
   href: advanced/document-flow/generation-procedures.html
 - uid: jobs-J30632
