@@ -1,3 +1,7 @@
+---
+uid: deterministic-generations
+---
+
 # Deterministic generations
 
 Not all generations support generating and adjusting (patching) a transitional document. 
