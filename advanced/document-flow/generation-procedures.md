@@ -1,5 +1,5 @@
 ---
-uid: generation-procedures
+uid: generation-procedures-update
 ---
 
 # Generation procedures
