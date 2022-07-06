@@ -6707,7 +6707,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
-          "hash": "AX5Iq/WbIHFIuxoBYQgh4Q=="
+          "hash": "nH+63JGL+DJHgd+pZOlxew=="
         }
       },
       "is_incremental": false,
@@ -7193,7 +7193,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.html",
-          "hash": "1Zz7iaR/XX5hwCRiTCm/6A=="
+          "hash": "tz/i9H1FApcMSHBUKPG5vA=="
         }
       },
       "is_incremental": false,

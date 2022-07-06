@@ -259,6 +259,9 @@ references:
 - uid: states
   name: Document states
   href: concepts/documents/states.html
+- uid: suggest-warehouse-locations
+  name: suggest-warehouse-locations
+  href: modules/logistics/wms/wms-worker/suggest-warehouse-locations.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html

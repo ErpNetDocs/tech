@@ -86,42 +86,42 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Kind</th>
+<th style="text-align: left;">Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">AllowProductChange</td>
-<td style="text-align: left;">Allows execution with а different product than the ordered. <br> If <em>ApplicablePolicy = null</em> or <em>ApplicablePolicy.Value</em> <em>== false</em> and <em>WarehouseOrderLine.Product != null</em>, <br> then when executing in <em>Orders</em>, it’s not possible to define <em>Product != WarehouseOrderLine.Product</em>. <br> If another value is defined, an error sound will play, along with the appearance of a popup message: <br> <br> <em>“Product change is not allowed. Please select the suggested product.”</em>  <br><br> • Stored as 'APC'. <br> • Database Value: 'APC' <br> • Model Value: 0 <br> • Domain API Value: 'AllowProductChange'</td>
+<td style="text-align: left;"><strong>Description:</strong> Allows execution with a different lot than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> Otherwise, the Lot can be changed during the execution.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowLotChange</td>
-<td style="text-align: left;">Allows execution with a different lot than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.Lot != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>Lot !=WarehouseOrderLine.Lot</em>. &lt;If another value is defined, an error sound is played, along with the appearance of a popup message: <br><br> <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> • Stored as 'ATC'. <br> • Database Value: 'ATC' <br> • Model Value: 1 <br> • Domain API Value: 'AllowLotChange'</td>
+<td style="text-align: left;"><strong>Description:</strong> Allows execution with a different lot than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br>  If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br>  If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> Otherwise, the Lot can be changed during the execution.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowLocationChange</td>
-<td style="text-align: left;">Allows execution from a different location than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.Location != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>Location != WarehouseOrderLine.Location</em>. If another value is defined, an error sound is played, along with the appearance of a popup message: <br><br> <em>&quot;Location change is not allowed. Please select the suggested location.&quot;</em>  <br><br> • Stored as 'ALC'. <br> • Database Value: 'ALC' <br> • Model Value: 2 <br> • Domain API Value: 'AllowLocationChange'</td>
+<td style="text-align: left;"><strong>Description:</strong> Allows execution from a different location than the ordered. <br><br><strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Warehouse Location (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different location, the app will make a negative sound and will display a pop message: <em>&quot;Location change is not allowed. Please select the suggested location.&quot;</em> <br><br> Otherwise, the Location can be changed during the execution.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowUnitChange</td>
-<td style="text-align: left;">Allows execution of a quantity in a different measurement unit than the ordered. <br> If <em>Value == false</em> and <em>WarehouseOrderLine.QuantityUnit != null</em>, then when executing in <em>Orders</em>, it’s not possible to define product <em>QuantityUnit != WarehouseOrderLine.QuantityUnit</em>. If another value is defined, <br> an error sound is played, along with the appearance of a popup message: <br> <br>  <em>&quot;Quantity Unit change is not allowed. Please select the suggested quantity unit.&quot;</em> <br><br> • Stored as 'AUC'. <br> • Database Value: 'AUC' <br> • Model Value: 3 <br> • Domain API Value: 'AllowUnitChange'</td>
+<td style="text-align: left;"><strong>Description:</strong>_ Allows execution of a quantity in a different measurement unit than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Quantity Unit which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different quantity unit, the app will make a negative sound and will display a pop message: <em>&quot;Quantity Unit change is not allowed. Please select the suggested quantity unit.&quot;</em> <br><br> Otherwise, the Unit can be changed during the execution.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RequireSourceScan</td>
-<td style="text-align: left;">Requires scanning of the source location when moving or dispatching. <br> If <em>Value == true</em>, then when executing in <em>Orders</em>, the <strong>USE</strong> button in the Location screen will be hidden, while the Availability table will be inaccessible.  <br><br> • Stored as 'RSS'. <br> • Database Value: 'RSS' <br> • Model Value: 4 <br> • Domain API Value: 'RequireSourceScan'</td>
+<td style="text-align: left;"><strong>Description:</strong> Requires scanning of the source location when moving or dispatching. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „true“, then the interface of the Location screen won‘t allow easy selection of the Warehouse Location. <br><br> The USE button will be hidden and the selection through the availability table will be inactive.</td>
 </tr>
 <tr>
 <td style="text-align: left;">RequireDestinationScan</td>
-<td style="text-align: left;">Requires scanning of the destination location when moving or receiving. <br> If <em>Value == true</em>, then when executing in <em>Orders</em>, the <strong>USE</strong> button in the Destination screen will be hidden. <br><br> • Stored as 'RDS'. <br> • Database Value: 'RDS' <br> • Model Value: 5 <br> • Domain API Value: 'RequireDestinationScan'</td>
+<td style="text-align: left;"><strong>Description:</strong> Requires scanning of the destination location when moving or receiving. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „true“, then the interface of the Destination screen won‘t allow easy selection of the Warehouse Location. <br><br> The USE button will be hidden and the selection through the availability table will be inactive.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowLineSkip</td>
-<td style="text-align: left;">Allows skipping of an order line when executing (allow quantity = 0). Not planned for release at the moment. <br><br> • Stored as 'ALS'. <br> • Database Value: 'ALS' <br> • Model Value: 6 <br> • Domain API Value: 'AllowLineSkip'</td>
+<td style="text-align: left;"><strong>Description:</strong> Allows skipping of an order line when executing (allow quantity = 0). <br><br> Not planned for release at the moment.</td>
 </tr>
 <tr>
 <td style="text-align: left;">ZoneType</td>
-<td style="text-align: left;">Specifies the type of zone for receiving, shipping, packing, etc. <br> It can have the following values: <strong>picking</strong>, <strong>packing</strong>, <strong>receiving</strong>, <strong>shipping</strong>, and <strong>storage</strong>. According to the <em>Zone Policies</em> rule, the policy has a &quot;Zone&quot; and there are no “Product”, “Product group” or “Product type” fields.  <br><br> • Stored as 'ZTY'. <br> • Database Value: 'ZTY' <br> • Model Value: 7 <br> • Domain API Value: 'ZoneType'</td>
+<td style="text-align: left;"><strong>Description:</strong> Specifies the type of zone for receiving, shipping, packing, etc. <br> Can be saved only if the Warehouse and Zone fields are filled in. <br> The policy is hierarchical, this means that if it set for a particular zone it will applies to all of its subzones. <br><br> <strong>Possible values:</strong> picking, packing, receiving, shipping, and storage. <br><br> <strong>Action:</strong> Currenty only the picking value is taken into account of the algorithms. It is used by the <a class="xref" href="../../wms-worker/suggest-warehouse-locations.html">suggest-warehouse-locations</a> function.</td>
 </tr>
 </tbody>
 </table>
