@@ -193,6 +193,9 @@ references:
 - uid: determine-product-price
   name: Determine product price
   href: modules/crm/crm-common/crm-common-concepts/determine-product-price.html
+- uid: deterministic-generations
+  name: Deterministic generations
+  href: advanced/document-flow/deterministic-generations.html
 - uid: document-amounts
   name: Additional amounts
   href: advanced/document-amounts/index.html
