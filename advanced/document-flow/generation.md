@@ -1,6 +1,6 @@
 # Document generation
 
-Document generation is a key part of the **[document flow](/advanced/document-flow/index.md)** as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.
+Document generation is a key part of the **[document flow](index.md)** as it's not only used to automate it, but to provide the automatic generation of inheriting documents from a parent document.
 
 Generation is a special case of direct **[order fulfillment](fulfillment.md)** when there's only one source document. 
 
