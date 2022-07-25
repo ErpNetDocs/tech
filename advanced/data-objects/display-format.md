@@ -115,6 +115,18 @@ In the table below you can see some entities and their Code and Name attributes 
 
 **DefaultDisplayTextFormat**, **CodeDataMember** and **NameDataMember** can be found in the documentation of each entity.
 
+### Searchable
+
+**Display text** attribute is searchable. This means that when an entity is searched, the attributes, defined in the **display format** are also searched for a match.
+
+![picture3](./pictures/webclient-custom-display-format.png)
+
+![picture4](./pictures/webclient-search-by-display-format.png)
+
+You can find more information here, 
+<br/>
+https://docs.erp.net/dev/domain-api/query-options/search.html
+
 ## Examples
 
 In this section, you can see several examples of different entity types: 
