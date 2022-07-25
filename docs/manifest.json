@@ -1118,7 +1118,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/display-format.html",
-          "hash": "hyfMJ/7h072tOdX/Jt7K1g=="
+          "hash": "eKomLbLrzCLujqAMSiE4kg=="
         }
       },
       "is_incremental": false,
@@ -1161,10 +1161,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "advanced/data-objects/pictures/webclient-custom-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/data-objects/pictures/webclient-custom-display-format.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "advanced/data-objects/pictures/webclient-dropdown.png",
       "output": {
         "resource": {
           "relative_path": "advanced/data-objects/pictures/webclient-dropdown.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/data-objects/pictures/webclient-search-by-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/data-objects/pictures/webclient-search-by-display-format.png"
         }
       },
       "is_incremental": false,
@@ -4570,12 +4592,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "JgFhL3MnpjgYNyo+YdhTRw=="
+          "hash": "//0OfXURq/Vut47GOd4wqQ=="
         }
       },
       "is_incremental": false,
