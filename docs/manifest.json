@@ -2475,10 +2475,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/advanced/data-objects/pictures/webclient-custom-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/data-objects/pictures/webclient-custom-display-format.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/advanced/data-objects/pictures/webclient-dropdown.png",
       "output": {
         "resource": {
           "relative_path": "docs/advanced/data-objects/pictures/webclient-dropdown.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/data-objects/pictures/webclient-search-by-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/data-objects/pictures/webclient-search-by-display-format.png"
         }
       },
       "is_incremental": false,
