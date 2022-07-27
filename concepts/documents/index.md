@@ -51,5 +51,5 @@ This is a non-extensive list of the more important attributes:
 
 - **[Document flow](/advanced/document-flow/index.md)**
 
-- **[Document amounts](/advanced/document-amounts/index.md)**
+- **[Document amounts](~/advanced/document-amounts/index.md)**
 
