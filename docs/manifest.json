@@ -1229,15 +1229,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.md",
       "output": {
         ".html": {
           "relative_path": "advanced/document-amounts/amounts-calculation/percent-calculation.html",
-          "hash": "gRWvasiZcC5gC71imj6xZA=="
+          "hash": "bhTulhHBKlp+k0oARCt5NA=="
         }
       },
       "is_incremental": false,
@@ -2244,7 +2241,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/documents/index.html",
-          "hash": "33cpVr3v/G8H1/2PGfnhlg=="
+          "hash": "w/SScH3OvdrPsSIPx8pxnQ=="
         }
       },
       "is_incremental": false,
