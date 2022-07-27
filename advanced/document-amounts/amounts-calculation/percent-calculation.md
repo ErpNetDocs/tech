@@ -17,7 +17,7 @@ The resulting base amount is used to find the end value of that amount with the 
 **[Amount] = ROUND([Base Amount] * [Input Percent], [Round Scale])**.
  
 
-For more information, see [Rows weighting](../rows-weighting.md).
+For more information, see [Rows weighting](../lines-weighting.md).
 
 
 **Example 1:**
