@@ -71,7 +71,7 @@ Compatibility allows you to copy values from one custom property to another. Thi
 
 If you use Example 1, you can conclude that:
 
-- 'Property 1' is compatible with 'Property 2'.  Both of them are compatible with 'Property 3' and 'Property 5'. On the other hand, 'Property 1', 'Property 2', 'Property 3' and 'Property 5' are compatible with еach other.
+- 'Property 1' is compatible with 'Property 2'.  Both of them are compatible with 'Property 3' and 'Property 5'. Therefore, 'Property 1', 'Property 2', 'Property 3' and 'Property 5' are compatible with еach other.
 
 - 'Property 4' is compatible with none of the above.
 
