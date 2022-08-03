@@ -10,7 +10,7 @@ Similarly, for the 'Customs' additional amount in purchase invoices, a customs f
 
 There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line. The feature is found in the **Document: Input line percentages** panel, also known as **amounts distribution by lines**. 
 
-Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](../amounts-distribution/index.md)** by product definition.
+Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](amounts-distribution/index.md)** by product definition.
 
 In this panel, weights are entered in two ways:
 
