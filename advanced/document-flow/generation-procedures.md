@@ -6,7 +6,7 @@ uid: generation-procedures-update
 
 Generation procedures are automated procedures which generate documents from other documents.
 
-They're the basis of the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** and the arrows in the document flow diagrams.
+They're the basis of the **[document flow](index.md)** and the arrows in the document flow diagrams.
 
 ## Setup
 
