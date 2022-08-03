@@ -21,7 +21,7 @@ In this panel, weights are entered in two ways:
 > 
 > If there are no weights for an additional amount in the panel, all weights are considered equal to **100%**.
 
-Below you'll find brief descriptions and examples for different input methods. <br> For more information, see **[Amounts calculation](../amounts-calculation/index.md)** and **[Amounts distribution](../amounts-distribution/index.md)**.
+Below you'll find brief descriptions and examples for different input methods. <br> For more information, see **[Amounts calculation](amounts-calculation/index.md)** and **[Amounts distribution](amounts-distribution/index.md)**.
 
 ## Default weights/coefficients in product definitions
 
