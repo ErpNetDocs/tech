@@ -1,6 +1,6 @@
 # Amount distribution by product definition
 
-Distribution by product definition is similar to the **[by amount distribution](by-amount.md)**, the only difference being that **[line weights](lines-weighting.md)** are used. When the additional amount has _Based On Lines_ = True, the distributional coefficients are multiplied by the lines' weights. 
+Distribution by product definition is similar to the **[by amount distribution](by-amount.md)**, the only difference being that **[line weights](/advanced/document-amounts/lines-weighting.md)** are used. When the additional amount has _Based On Lines_ = True, the distributional coefficients are multiplied by the lines' weights. 
 
 The only difference is in the following calculation formula:
 
