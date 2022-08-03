@@ -12,9 +12,9 @@ The distribution principle is defined in the additional amount definition  (by *
 
 There are three basic methods
 
-- by **[quantity](/advanced/document-amounts/by-quantity.md)**,
-- by **[amount](/advanced/document-amounts/by-amount.md)**, 
-- by **[product definition](/advanced/document-amounts/by-product-definition.md)**. 
+- by **[quantity](/advanced/document-amounts/amounts-distribution/by-quantity.md)**,
+- by **[amount](/advanced/document-amounts/amounts-distribution/by-amount.md)**, 
+- by **[product definition](/advanced/document-amounts/amounts-distribution/by-product-definition.md)**. 
  
 Every method suggests that a proportion of the amount distributed by the lines should be defined so the distribution can be executed.
 
