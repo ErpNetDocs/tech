@@ -47,7 +47,7 @@ There is a borderline at the Released state - once reached, the state cannot be 
 
 ## Adjustment documents
 
-[Adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
+[Adjustment documents](/concepts/documents/adjustments.md) are documents, which adjust other documents. Adjustments can be made only on documents, which are in the Released or Completed states.
 
 Adjustment documents can change only primary measurement values. They are usually used to increase or decrease quantities and/or amounts of released documents. Adjustment documents are separate documents, but when applied to a main document, they change its internal values. If an adjusted document is opened on the screen, it will look like it always has been adjusted. The previous versions of the document are securely stored and can be revealed by the document history.
 
