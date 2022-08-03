@@ -6,11 +6,11 @@ uid: transitional-documents
 
 Transitional documents are maintained to contain the most up-to-date information from a parent document. Once generated, they're adjusted with the latest changes after each change in a parent document.
 
-Transitional documents are **hidden** from the **[document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow **contiguous**.
+Transitional documents are **hidden** from the **[document flow](index.md)** by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow **contiguous**.
 
-Only **[deterministic generations](https://docs.erp.net/tech/advanced/document-flow/deterministic-generations.html)** can create such documents.
+Only **[deterministic generations](generation-procedures.md)** can create such documents.
 
-The main purpose of transitional documents is to **decrease** the number of sub-documents in cases when there are many changes in the data from which sub-documents are created by the **[document fulfillment system](https://docs.erp.net/tech/advanced/document-flow/fulfillment.html)**.
+The main purpose of transitional documents is to **decrease** the number of sub-documents in cases when there are many changes in the data from which sub-documents are created by the **[document fulfillment system](fulfillment.md)**.
 
 ## Transitional document setup
 
@@ -43,9 +43,9 @@ If an invoice is **voided**, even more payment orders will be created. The 'coll
 
 **What happens?**
 
-Transitional documents are meаnt to **decrease** the sub-documents' number. Changes are applied as corrections on already existing sub-documents. See **[Adjustment documents](https://docs.erp.net/tech/concepts/documents/adjustments.html)** for more information. 
+Transitional documents are meаnt to **decrease** the sub-documents' number. Changes are applied as corrections on already existing sub-documents. See **[Adjustment documents](~/concepts/documents/adjustments.md)** for more information. 
 
-Another condition is for the existing documents to be 'Released'. If they have a document **[state](https://docs.erp.net/tech/concepts/documents/states.html)** higher than 'Released', new documents are created for the discrepancies that occur.
+Another condition is for the existing documents to be 'Released'. If they have a document **[state](~/concepts/documents/states.md)** higher than 'Released', new documents are created for the discrepancies that occur.
 
 In such а case, you can call the sub-documents **transitional**.
 
