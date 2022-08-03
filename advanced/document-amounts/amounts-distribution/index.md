@@ -1,6 +1,6 @@
 # Amounts distribution
 
-After an additional sum is **[calculated](/advanced/document-amounts/amounts-calculation/index.md)**, the result is not saved directly in the document, but distributed among document lines with nonzero **[weight](lines-weighting.md)** where the additional amount is applied to. This distribution is then reflected in the document. 
+After an additional sum is **[calculated](/advanced/document-amounts/amounts-calculation/index.md)**, the result is not saved directly in the document, but distributed among document lines with nonzero **[weight](/advanced/document-amounts/lines-weighting.md)** where the additional amount is applied to. This distribution is then reflected in the document. 
 
 After the amount is calculated and distributed, if you need to see the total value of the additional amount, you'll have to sum up all the values from its  distribution. This is more conveniently than saving the total additional amount in the document. To see the VAT or the transport distributed to a specific product, you may often need just the amount distributed to a specific line.
 
@@ -12,9 +12,9 @@ The distribution principle is defined in the additional amount definition  (by *
 
 There are three basic methods
 
-- by **[quantity](by-quantity.md)**,
-- by **[amount](by-amount.md)**, 
-- by **[product definition](by-product-definition.md)**. 
+- by **[quantity](/advanced/document-amountsby-quantity.md)**,
+- by **[amount](/advanced/document-amountsby-amount.md)**, 
+- by **[product definition](/advanced/document-amountsby-product-definition.md)**. 
  
 Every method suggests that a proportion of the amount distributed by the lines should be defined so the distribution can be executed.
 
@@ -22,7 +22,7 @@ If you have **n** lines on which you have to distribute additional amount, a wei
 
 [**k<sub>1</sub>**], [**k<sub>2</sub>**] ... [**k<sub>n</sub>**]
 
-These are different coefficients from those described in **[lines weighting](lines-weighting.md)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
+These are different coefficients from those described in **[lines weighting](/advanced/document-amountslines-weighting.md)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
 
 Uf the amount of these coefficients is [**S**] (i.e. [**S**] = [**k<sub>1</sub>**] + [**k<sub>2</sub>**] + ... + [**k<sub>n</sub>**]) and this amount isn't equal to 0, <br> then the **i**-line of the proportion is [**k<sub>i</sub>**]/[**S**]:
 
