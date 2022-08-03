@@ -49,7 +49,7 @@ This is a non-extensive list of the more important attributes:
 
 ### Advanced topics:
 
-- **[Document flow](~/tech/advanced/index.md)**
+- **[Document flow](~/tech/advanced/document-flow/index.md)**
 
 - **[Document amounts](../advanced/document-amounts/index.md)**
 
