@@ -1,6 +1,6 @@
 # Lines weighting
 
-Amounts from document lines often play a major role in the **[additional amounts](/advanced/document-amounts/index.html)** calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts. 
+Amounts from document lines often play a major role in the **[additional amounts](../document-amounts/index.md)** calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts. 
 
 However, there are cases when **not all** lines participate equally in the distribution.
 
@@ -10,7 +10,7 @@ Similarly, for the 'Customs' additional amount in purchase invoices, a customs f
 
 There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line. The feature is found in the **Document: Input line percentages** panel, also known as **amounts distribution by lines**. 
 
-Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](/advanced/document-amounts/amounts-distribution/index.html)** by product definition.
+Here, the coefficient of the specific row is entered in the *Line Percent* field. These specific parameters may only be entered for additional amounts marked as **[distributed](../amounts-distribution/index.md)** by product definition.
 
 In this panel, weights are entered in two ways:
 
@@ -21,7 +21,7 @@ In this panel, weights are entered in two ways:
 > 
 > If there are no weights for an additional amount in the panel, all weights are considered equal to **100%**.
 
-Below you'll find brief descriptions and examples for different input methods. <br> For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.html)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.html)**.
+Below you'll find brief descriptions and examples for different input methods. <br> For more information, see **[Amounts calculation](../amounts-calculation/index.md)** and **[Amounts distribution](../amounts-distribution/index.md)**.
 
 ## Default weights/coefficients in product definitions
 
