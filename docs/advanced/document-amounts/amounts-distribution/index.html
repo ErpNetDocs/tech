@@ -79,21 +79,21 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="amounts-distribution">Amounts distribution</h1>
 
-<p>After an additional sum is <strong><a href="/advanced/document-amounts/amounts-calculation/index.md">calculated</a></strong>, the result is not saved directly in the document, but distributed among document lines with nonzero <strong><a href="lines-weighting.md">weight</a></strong> where the additional amount is applied to. This distribution is then reflected in the document.</p>
+<p>After an additional sum is <strong><a href="/advanced/document-amounts/amounts-calculation/index.md">calculated</a></strong>, the result is not saved directly in the document, but distributed among document lines with nonzero <strong><a href="/advanced/document-amounts/lines-weighting.md">weight</a></strong> where the additional amount is applied to. This distribution is then reflected in the document.</p>
 <p>After the amount is calculated and distributed, if you need to see the total value of the additional amount, you'll have to sum up all the values from its  distribution. This is more conveniently than saving the total additional amount in the document. To see the VAT or the transport distributed to a specific product, you may often need just the amount distributed to a specific line.</p>
 <p>The following article(s) will descirbe different methods for distributing amounts through lines.</p>
 <h2 id="common-principle-of-distribution">Common principle of distribution</h2>
 <p>The distribution principle is defined in the additional amount definition  (by <em>Distributed By</em> field).</p>
 <p>There are three basic methods</p>
 <ul>
-<li>by <strong><a href="by-quantity.html">quantity</a></strong>,</li>
-<li>by <strong><a href="by-amount.html">amount</a></strong>,</li>
-<li>by <strong><a href="by-product-definition.html">product definition</a></strong>.</li>
+<li>by <strong><a href="/advanced/document-amounts/amounts-distribution/by-quantity.md">quantity</a></strong>,</li>
+<li>by <strong><a href="/advanced/document-amounts/amounts-distribution/by-amount.md">amount</a></strong>,</li>
+<li>by <strong><a href="/advanced/document-amounts/amounts-distribution/by-product-definition.md">product definition</a></strong>.</li>
 </ul>
 <p>Every method suggests that a proportion of the amount distributed by the lines should be defined so the distribution can be executed.</p>
 <p>If you have <strong>n</strong> lines on which you have to distribute additional amount, a weight is defined for every line:</p>
 <p>[<strong>k<sub>1</sub></strong>], [<strong>k<sub>2</sub></strong>] ... [<strong>k<sub>n</sub></strong>]</p>
-<p>These are different coefficients from those described in <strong><a href="lines-weighting.md">lines weighting</a></strong>, but in some specific cases the latter may participate in the calculation of the distribution weights.</p>
+<p>These are different coefficients from those described in <strong><a href="/advanced/document-amounts/lines-weighting.md">lines weighting</a></strong>, but in some specific cases the latter may participate in the calculation of the distribution weights.</p>
 <p>Uf the amount of these coefficients is [<strong>S</strong>] (i.e. [<strong>S</strong>] = [<strong>k<sub>1</sub></strong>] + [<strong>k<sub>2</sub></strong>] + ... + [<strong>k<sub>n</sub></strong>]) and this amount isn't equal to 0, <br> then the <strong>i</strong>-line of the proportion is [<strong>k<sub>i</sub></strong>]/[<strong>S</strong>]:</p>
 <p>[distribution to line <strong>i</strong>] = ROUND([amount] * [<strong>k<sub>i</sub></strong>] / [<strong>S</strong>], [Round Scale]),</p>
 <p>where <em>Round Scale</em> is property of the additional amount definition.</p>

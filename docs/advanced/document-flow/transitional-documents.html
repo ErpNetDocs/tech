@@ -80,9 +80,9 @@
 <h1 id="transitional-documents">Transitional documents</h1>
 
 <p>Transitional documents are maintained to contain the most up-to-date information from a parent document. Once generated, they're adjusted with the latest changes after each change in a parent document.</p>
-<p>Transitional documents are <strong>hidden</strong> from the <strong><a href="https://docs.erp.net/tech/advanced/document-flow/index.html">document flow</a></strong> by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow <strong>contiguous</strong>.</p>
-<p>Only <strong><a href="https://docs.erp.net/tech/advanced/document-flow/deterministic-generations.html">deterministic generations</a></strong> can create such documents.</p>
-<p>The main purpose of transitional documents is to <strong>decrease</strong> the number of sub-documents in cases when there are many changes in the data from which sub-documents are created by the <strong><a href="https://docs.erp.net/tech/advanced/document-flow/fulfillment.html">document fulfillment system</a></strong>.</p>
+<p>Transitional documents are <strong>hidden</strong> from the <strong><a href="index.html">document flow</a></strong> by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow <strong>contiguous</strong>.</p>
+<p>Only <strong><a href="generation-procedures.html">deterministic generations</a></strong> can create such documents.</p>
+<p>The main purpose of transitional documents is to <strong>decrease</strong> the number of sub-documents in cases when there are many changes in the data from which sub-documents are created by the <strong><a href="fulfillment.html">document fulfillment system</a></strong>.</p>
 <h2 id="transitional-document-setup">Transitional document setup</h2>
 <p>To set up a document type as transitional:</p>
 <ol>
@@ -102,8 +102,8 @@ for planned payments <strong>№1</strong> и <strong>№2</strong> with invoice
 <p>The sub-documents are now seven. When more invoices are released, more payment orders will be created.</p>
 <p>If an invoice is <strong>voided</strong>, even more payment orders will be created. The 'collective' state of the sub-documents is reached when the voided invoice is no longer reported.</p>
 <p><strong>What happens?</strong></p>
-<p>Transitional documents are meаnt to <strong>decrease</strong> the sub-documents' number. Changes are applied as corrections on already existing sub-documents. See <strong><a href="https://docs.erp.net/tech/concepts/documents/adjustments.html">Adjustment documents</a></strong> for more information.</p>
-<p>Another condition is for the existing documents to be 'Released'. If they have a document <strong><a href="https://docs.erp.net/tech/concepts/documents/states.html">state</a></strong> higher than 'Released', new documents are created for the discrepancies that occur.</p>
+<p>Transitional documents are meаnt to <strong>decrease</strong> the sub-documents' number. Changes are applied as corrections on already existing sub-documents. See <strong><a href="../../concepts/documents/adjustments.html">Adjustment documents</a></strong> for more information.</p>
+<p>Another condition is for the existing documents to be 'Released'. If they have a document <strong><a href="../../concepts/documents/states.html">state</a></strong> higher than 'Released', new documents are created for the discrepancies that occur.</p>
 <p>In such а case, you can call the sub-documents <strong>transitional</strong>.</p>
 <p>If a document is transitional, it's a <strong>property</strong> of the document type definition. Activating this property is available only when all active procedures that create the current document <strong>allow</strong> transitional documents and are set to create а 'Released' document.</p>
 <p>On first sub-document creation, the sub-documents will have 'Released' document state.</p>

@@ -79,12 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="lines-weighting">Lines weighting</h1>
 
-<p>Amounts from document lines often play a major role in the <strong><a href="/advanced/document-amounts/index.html">additional amounts</a></strong> calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts.</p>
+<p>Amounts from document lines often play a major role in the <strong><a href="index.html">additional amounts</a></strong> calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts.</p>
 <p>However, there are cases when <strong>not all</strong> lines participate equally in the distribution.</p>
 <p>For example, it's possible for some products in an invoice to be <strong>exempt</strong> from income tax (VAT). This leads to some document lines unable to participate in the VAT calculation. The calculated amount will be distributed only among the ones that <strong>have</strong> participated.</p>
 <p>Similarly, for the 'Customs' additional amount in purchase invoices, a customs fee is due for particular products.</p>
 <p>There's a mechanism that allows for the indication of particular lines as being more important than others. You can set weights, coefficients, or in some cases percentages for each document line. The feature is found in the <strong>Document: Input line percentages</strong> panel, also known as <strong>amounts distribution by lines</strong>.</p>
-<p>Here, the coefficient of the specific row is entered in the <em>Line Percent</em> field. These specific parameters may only be entered for additional amounts marked as <strong><a href="/advanced/document-amounts/amounts-distribution/index.html">distributed</a></strong> by product definition.</p>
+<p>Here, the coefficient of the specific row is entered in the <em>Line Percent</em> field. These specific parameters may only be entered for additional amounts marked as <strong><a href="amounts-distribution/index.html">distributed</a></strong> by product definition.</p>
 <p>In this panel, weights are entered in two ways:</p>
 <ul>
 <li><strong>manually</strong>, when the document is created</li>
@@ -94,7 +94,7 @@
 <h5>Note</h5>
 <p>If there are no weights for an additional amount in the panel, all weights are considered equal to <strong>100%</strong>.</p>
 </div>
-<p>Below you'll find brief descriptions and examples for different input methods. <br> For more information, see <strong><a href="/advanced/document-amounts/amounts-calculation/index.html">Amounts calculation</a></strong> and <strong><a href="/advanced/document-amounts/amounts-distribution/index.html">Amounts distribution</a></strong>.</p>
+<p>Below you'll find brief descriptions and examples for different input methods. <br> For more information, see <strong><a href="amounts-calculation/index.html">Amounts calculation</a></strong> and <strong><a href="amounts-distribution/index.html">Amounts distribution</a></strong>.</p>
 <h2 id="default-weightscoefficients-in-product-definitions">Default weights/coefficients in product definitions</h2>
 <p>Sometimes, weights of specific services are known <strong>before</strong> documents are created.</p>
 <p>When customs taxes are paid for goods on import, some of the products have taxes and others don't. For many, taxes are defined by law and they're a constant percentage of the product value. You have to enter their weight for the additional amount 'Customs'.</p>
