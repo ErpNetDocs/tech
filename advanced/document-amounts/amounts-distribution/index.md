@@ -22,7 +22,7 @@ If you have **n** lines on which you have to distribute additional amount, a wei
 
 [**k<sub>1</sub>**], [**k<sub>2</sub>**] ... [**k<sub>n</sub>**]
 
-These are different coefficients from those described in **[lines weighting](/advanced/document-amountslines-weighting.md)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
+These are different coefficients from those described in **[lines weighting](/advanced/document-amounts/lines-weighting.md)**, but in some specific cases the latter may participate in the calculation of the distribution weights. 
 
 Uf the amount of these coefficients is [**S**] (i.e. [**S**] = [**k<sub>1</sub>**] + [**k<sub>2</sub>**] + ... + [**k<sub>n</sub>**]) and this amount isn't equal to 0, <br> then the **i**-line of the proportion is [**k<sub>i</sub>**]/[**S**]:
 
