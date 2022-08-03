@@ -24,7 +24,7 @@ There's some exception for technical details like internal identification number
 
 4. If the original has rows of rows of the rows, the step 3 is applied until the original structure is copied.
 
-The new duplicate document must contain **the same** number of records (headers, rows, rows of rows) and structure as the original. Document rows are considered standard rows which most documents have, but properties and **[additional amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** also play a role. 
+The new duplicate document must contain **the same** number of records (headers, rows, rows of rows) and structure as the original. Document rows are considered standard rows which most documents have, but properties and **[additional amounts](../document-amounts/index.md)** also play a role. 
 
 If a document header has its own properties, they are considered document rows. The records in the **Document Amount Referenced Documents** panel are considered rows of rows (rows of the additional amounts). The records in **Document Line Amounts** are considered rows of the standard document rows. 
 
