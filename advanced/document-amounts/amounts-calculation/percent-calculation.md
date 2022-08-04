@@ -97,7 +97,7 @@ The final result for the amount is:
 > 
  These two subtotals may be used in the additional amount distribution. 
  
- For further information, see **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.md)**.
+ For further information, see **[Amounts distribution](../amounts-distribution/index.md)**.
 
 **Example 3:**
 
