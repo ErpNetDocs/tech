@@ -17,7 +17,7 @@ This calculation is executed every time the document is saved and consists of 2 
 
 2. **Distribution of the detrmined amounts through the affected documents** <br> The distribution is saved in the document in which it's entered, no matter if the amount affects the current or another document.
   
-The amount is determined by entering an exact value, or by indicating that the amount is calculated as a **percent** of the base document amount or other **[additional amounts](/advanced/document-amounts/index.md)**. 
+The amount is determined by entering an exact value, or by indicating that the amount is calculated as a **percent** of the base document amount or other **[additional amounts](index.md)**. 
 
 This data is entered by adding the amount to a document in its **Additional Amounts** panel. Then, it's used to **[calculate](amounts-calculation/index.md)** the real value. 
   
