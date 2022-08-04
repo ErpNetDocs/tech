@@ -1,6 +1,6 @@
 # Amounts calculation
 
-There are two common ways to determine the value of **[additional amounts](/advanced/document-amounts/index.md)**:
+There are two common ways to determine the value of **[additional amounts](../document-amounts/index.md)**:
 
 - setting an **[explicit amount](explicit-calculation.md)**;
 - setting an amount as a **[percent](percent-calculation.md)** of other amounts (additional or base amounts from the document rows)
