@@ -58,7 +58,7 @@ There are the following additional amounts:
 
 The document has two lines: line \\#10 for **150 EUR** and line \\#20 for **40 EUR**. 
 
-**[Percent value calculation](/advanced/document-amounts/amounts-calculation/percent-calculation.md)** explains how the additional amounts are calculated:
+**[Percent value calculation](../amounts-calculation/percent-calculation.md)** explains how the additional amounts are calculated:
 
 [Corporate Discount] = -**5.70 EUR**
 
@@ -104,7 +104,7 @@ This is why a specific calculation of the distributed amounts is applied:
 
 > [!NOTE] 
 > 
-> There's a specific case where the additional amount is distributed by **amount**. <br> If some lines/coefficients in the document are positive and others negative, as is described in **[Percent value calculation](/advanced/document-amounts/amounts-calculation/percent-calculation.md)**, except the total amount of the additional amount, there are also two **subtotals** - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the lines with positive amounts and then, the negative subtotal is distributed among the lines with negative amounts. 
+> There's a specific case where the additional amount is distributed by **amount**. <br> If some lines/coefficients in the document are positive and others negative, as is described in **[Percent value calculation](../amounts-calculation/percent-calculation.md)**, except the total amount of the additional amount, there are also two **subtotals** - positive amount/part and negative amount/part. The amount distribution is performed in two stages: first, the positive subtotals are distributed among the lines with positive amounts and then, the negative subtotal is distributed among the lines with negative amounts. 
 
 **Example 3:**
 
