@@ -24,7 +24,7 @@ Each document generation route contains the following properties:
 
 - **Generation events**
 
-Events that trigger the document route. The most used event usually changes the **[document state](/concepts/documents/states.md)**.
+Events that trigger the document route. The most used event usually changes the **[document state](~/concepts/documents/states.md)**.
 
 - **State**
 
@@ -65,7 +65,7 @@ Each generation procedure is defined using the following attributes:
    - **Procedure code**<br>
      2 digits which specify the consecutive number of the procedure within the module.
 
-For example, ‘CRM0103’ specifies a procedure in the **[CRM](/modules/crm/index.md)** sub-system, 01-Sales module, procedure #3.
+For example, ‘CRM0103’ specifies a procedure in the **[CRM](~/modules/crm/index.md)** sub-system, 01-Sales module, procedure #3.
 
 - **Name**<br>
 
