@@ -1,6 +1,6 @@
 # Lines weighting
 
-Amounts from document lines often play a major role in the **[additional amounts](../document-amounts/index.md)** calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts. 
+Amounts from document lines often play a major role in the **[additional amounts](index.md)** calculation. Either the value of the additional amount is defined by the line amounts (VAT or customs), or the distribution of the additional amount through the lines depends on their lines amounts. 
 
 However, there are cases when **not all** lines participate equally in the distribution.
 
