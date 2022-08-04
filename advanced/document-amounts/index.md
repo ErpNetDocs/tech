@@ -35,11 +35,11 @@ Additional amounts are used for different reasons, such as adding amounts to the
 
 #### Calculating the amount to pay
 
-Some additional amounts serve to calculate the @amount-to-pay for a document. This is marked in the definition by adding a check to the *Add To Customer* field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
+Some additional amounts serve to calculate the [amount-to-pay](~/modules/crm/sales/sales-concepts/amount-to-pay.md) for a document. This is marked in the definition by adding a check to the *Add To Customer* field. Usually, these are amounts like VAT, VAT deviation, discounts, increases, decreases. 
 
 #### Calculating goods cost
 
-Additional amounts may be used to add value to the cost of the goods in the @logistics-module 
+Additional amounts may be used to add value to the cost of the goods in the [Logistics](~/modules/logistics/index.md)
 
 For example, if the transport is entered as an additional amount when goods are purchased, the transport value will be **added** to the purchase price. When a stock transfer from one store to another is executed and it includes transport cost added to the issued products, the value of this transport should be **added** to the products cost **before** they are received in the second store. 
 
