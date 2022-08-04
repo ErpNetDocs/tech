@@ -1,6 +1,6 @@
 # Referenced documents
 
-There are cases when you enter an **[additional amount](/advanced/document-amounts/index.md)** in a document and calculate it, distributing it not only to the lines of the current document, but to others as well. 
+There are cases when you enter an **[additional amount](index.md)** in a document and calculate it, distributing it not only to the lines of the current document, but to others as well. 
 
 For example, if there's a purchase invoice for goods transported to your location, and this transport must be paid, then it can be delivered later than the original purchase invoice. That original invoice may already be 'Released and possibly 'Completed'. 
 
@@ -8,7 +8,7 @@ As a result, you'll have to enter the transport as an additional amount in a **s
 
 Even if the purchase invoice isn't late, it could still be necessary to enter the transport in a separate document. This might help when the transport is performed by a different company from the supplier of the goods. 
 
-Therefore, the additional amount 'transport' in one purchase invoice will be distributed to the lines of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics module](/modules/logistics/index.md)**.
+Therefore, the additional amount 'transport' in one purchase invoice will be distributed to the lines of other 'Released' or 'Completed' documents, so its value can be added to the goods cost in **[Logistics module](~/modules/logistics/index.md)**.
 
 The additional amount is calculated and distributed by documents different from the ones in which you enter it. 
 
@@ -28,7 +28,7 @@ This makes it possible to enter additional amounts in the document which is dist
 > 
 > Respectively, if you want the same amount to be distrbuten in both the current document and other documents, this requires listing the current document as 'Referenced' as well. 
 
-For more information, see **[Amounts calculation](/advanced/document-amounts/amounts-calculation/index.md)** and **[Amounts distribution](/advanced/document-amounts/amounts-distribution/index.md)**.
+For more information, see **[Amounts calculation](amounts-calculation/index.md)** and **[Amounts distribution](amounts-distribution/index.md)**.
 
 Let's see the standard case for referenced document usage: transport of purchased goods. 
 
