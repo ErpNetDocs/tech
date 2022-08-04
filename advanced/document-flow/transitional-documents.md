@@ -8,7 +8,7 @@ Transitional documents are maintained to contain the most up-to-date information
 
 Transitional documents are **hidden** from the **[document flow](index.md)** by default, since they're totally automated and not user-created. Another reason for remaining invisible is to keep the document flow **contiguous**.
 
-Only **[deterministic generations](generation-procedures.md)** can create such documents.
+Only **[deterministic generations](deterministic-generations.md)** can create such documents.
 
 The main purpose of transitional documents is to **decrease** the number of sub-documents in cases when there are many changes in the data from which sub-documents are created by the **[document fulfillment system](fulfillment.md)**.
 
