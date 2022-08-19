@@ -7,7 +7,7 @@
 
  
 
-## 2. The Base measurement unit of products should be same as measurement unit used in article 28 and article 29 from law on excises and tax warehouses
+## 2. In the products must be defined Excise Product Type and the measurement unit in the Excise Product Type must be measurement unit used in article 28 and article 29 from law on excises and tax warehouses
 
 ## 3. It must be defined custom attributes with the following codes 
 
@@ -134,7 +134,7 @@
      
 
 
- 
+
 
 ### 4.3.    ExciseAdministrativeDocumentLines
 
