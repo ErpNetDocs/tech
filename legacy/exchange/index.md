@@ -1,3 +1,3 @@
 ## ErpNet Exchange
 
-[ECOD COMARCH EDI](../еcod-comarch-edi/index.md)
+[ECOD COMARCH EDI](../exchange/еcod-comarch-edi/index.md)
