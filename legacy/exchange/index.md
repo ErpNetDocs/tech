@@ -1,7 +1,3 @@
-## ECOD COMARCH EDI
+## ErpNet Exchange
 
-Бизнес логика
-
-Настройки в ERP.net
-
-Съответствие на данните с ERP.net
+[ECOD COMARCH EDI](../еcod-comarch-edi/index.md)
