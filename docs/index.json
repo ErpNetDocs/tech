@@ -944,6 +944,31 @@
     "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",
     "keywords": "Welcome to the ERP.net Technical Documentation The Technical Documentation documents the business logic of ERP.net. It is targeted towards implementation consultants and power users. Learn more Concepts - general concepts, which apply to all modules. Functionality - documentation of the business functions. Advanced - documentation of advanced systems. Other documentations Data model - reference information about the entities, business rules, generations, etc. Developer documentation - information for developers."
   },
+  "legacy/exchange/index.html": {
+    "href": "legacy/exchange/index.html",
+    "title": "ErpNet Exchange | ERP.net Tech Docs",
+    "keywords": "ErpNet Exchange ECOD COMARCH EDI"
+  },
+  "legacy/exchange/еcod-comarch-edi/business-logic/index.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/index.html",
+    "title": "Бизнес логика | ERP.net Tech Docs",
+    "keywords": "Бизнес логика Импорт на поръчки Експорт на стокови разписки Експорт на фактури"
+  },
+  "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html",
+    "title": "Експорт на фактури | ERP.net Tech Docs",
+    "keywords": "Експорт на фактури Този тип задачи позволява експорт на Commarch-bg ECOD Invoices xml файлове от EnterpriseOne база данни. Данните се експортират от документ тип Фактури. Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne Определянето на BuyerILN, SellerILN и InvoiceeILN се прави по следния алгоритъм: NOTE: Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne. Този алгоритъм се използва, когато е отметната отметката \"Използване на Номер на локация на субект\". Ако не е отметната се гледат полетата GLN в субектите. BuyerILN = Location Number в таблица Gen_Party_Location_Numbers., където Party_Id е фирмата на Клиента указан в полето \"Клиент\" в във фактурата и Location Coding System = GLN. SellerILN = Location Number в таблица Gen_Party_Location_Numbers, където: 2.1. Party Id = От направление / Party_Id Partner Location Number = BuyerILN от т.1 и Location Coding System = GLN. 2.2. Ако не се намери запис в т.2.1 то Party Id = От направление / Party_Id Partner Location Number = Null и Location Coding System = GLN. 2.3 Ако не се намери запис в т. 2.2 то Party Id = Собствената фирма Partner Location Number = BuyerILN от т.1 и Location Coding System = GLN. 2.4. Ако не се намери запис в т.2.3 то Party Id = Собствената фирма Partner Location Number = Null и Location Coding System = GLN. InvoiceeILN = Location Number в таблица Gen_Party_Location_Numbers., където Party Id е фирмата на Клиента указан в полето \"Клиент\" в във фактурата и Location Coding System = GLN. 4.DeliveryLocationNumber = Location Number в таблица Gen_Party_Location_Numbers, където: Party Id = Към Субект Document Id е свързаната експедиция към тази фактура"
+  },
+  "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html",
+    "title": "Импорт на поръчки | ERP.net Tech Docs",
+    "keywords": "Импорт на поръчки Този тип задачи позволява импортиране на Commarch-bg ECOD Order xml файлове в ERP.net база данни. Данните се импортират в документ тип Продажба. Алгоритъм за определяне на субектите при импорт на поръчки от ECOD Алгоритъм за определяне на субектите в EnterpriseOne при импорт на поръчки от ECOD. Определянето на Клиент, Собствена фирма, От Направление, Към направление и Доставяне на клиент се прави по следния алгоритъм: NOTE: Този алгоритъм се изпoлзва, когато е отметната отметката \"Използване на Номер на локация на субект\". Ако не е отметната се гледат полетата GLN в субектите. Установява се Собствената фирма: 1.1. Търси се измежду собствените фирми фирма с Location Number = Seller ILN, Partner Location Number = Buyer ILN и Location Coding System = GLN. 1.2. Ако не намери фирма в т. 1.1. то търси фирма с Location Number = Seller ILN, Partner Location Number = Null и Location Coding System = GLN 1.3. Ако не намери фирма в т. 1.1. и 1.2. използва настройката в задачата за определяне на Собствена фирма по подразбиране. Установява се Клиент - фирма, за която Location Number = Buyer ILN, Location Coding System = GLN и Собствена фирма от т.1. Установява се \"От направление\". Това се прави в зависимост от Характеристика за клиент „ECOD_Company_Division ECOD попълване на направление“: 3.1. Ако характеристиката има стойност „Попълва се по CodeByBuyer“ то направлението се установява по Code (Код на направление) = CodeByBuyer таг в импортния файл. Ако не намери направление хвърля грешка. 3.2. Ако характеристиката има стойност „Попълва се по GLN“ то се издирва направлението по по Location Number = Seller ILN, Partner Location Number = Buyer ILN и Location Coding System е GLN. Ако не намери направление хвърля грешка. Установява се \"Към направление\". Направлението се определя, като се търси направление на Клиент от т.2 със същия Код, като направлението от т.3. Ако в т.3 не е намерено направление – остава празно. Установява се Доставяне а клиент в зависимост от опцията \"Определяне на Доставяне на клиент\" в задачата: 5.1. Ако стойността е „Dlivery Point“ се определя обект за който Location Number = DliveryPoint ILN и Location Coding System = GLN и след това Клиент обект в зависимост от собствената фирма от 1. 5.2. Ако стойността е „Order By“ се определя обект за който Location Number = OrderBy ILN и Location Coding System е GLNи след това Клиент обект в зависимост от собствената фирма от 1. Входните данни от файла са: Seller ILN, Buyer ILN, CodeByBuyer, DliveryPoint ILN, OrderBy ILN"
+  },
+  "legacy/exchange/еcod-comarch-edi/index.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/index.html",
+    "title": "ECOD COMARCH EDI | ERP.net Tech Docs",
+    "keywords": "ECOD COMARCH EDI Бизнес логика Настройки в ERP.net Съответствие на данните с ERP.net"
+  },
   "modules/applications/data-warehouse/index.html": {
     "href": "modules/applications/data-warehouse/index.html",
     "title": "Data warehouse | ERP.net Tech Docs",

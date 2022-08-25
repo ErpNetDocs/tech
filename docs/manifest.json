@@ -4608,6 +4608,66 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/index.html",
+          "hash": "jfNqpI2q0M+pqEL5OO8r3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/index.html",
+          "hash": "Y4jRjUrgHOb03WX7J0JMQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html",
+          "hash": "nlo0bYtbxhb/Uxin2dEWlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html",
+          "hash": "E/vKuTvKhGQ2PfHTXBun2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/index.html",
+          "hash": "JWgN9JJETRnrQ9KJkwgQng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "logo.svg",
       "output": {

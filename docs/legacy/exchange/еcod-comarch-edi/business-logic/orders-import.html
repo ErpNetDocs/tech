@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1048;&#1084;&#1087;&#1086;&#1088;&#1090; &#1085;&#1072; &#1087;&#1086;&#1088;&#1098;&#1095;&#1082;&#1080; | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1048;&#1084;&#1087;&#1086;&#1088;&#1090; &#1085;&#1072; &#1087;&#1086;&#1088;&#1098;&#1095;&#1082;&#1080; | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="импорт-на-поръчки">Импорт на поръчки</h2>
+
+<p>Този тип задачи позволява импортиране на Commarch-bg ECOD Order xml файлове в ERP.net база данни.</p>
+<p>Данните се импортират в документ тип Продажба.</p>
+<h3 id="алгоритъм-за-определяне-на-субектите-при-импорт-на-поръчки-от-ecod">Алгоритъм за определяне на субектите при импорт на поръчки от ECOD</h3>
+<p>Алгоритъм за определяне на субектите в EnterpriseOne при импорт на поръчки от ECOD.</p>
+<br>
+<p><strong>Определянето на Клиент, Собствена фирма, От Направление, Към направление и Доставяне на клиент се прави по следния алгоритъм:</strong></p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> Този алгоритъм се изпoлзва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;.
+Ако не е отметната се гледат полетата GLN в субектите.</p>
+</blockquote>
+<ol>
+<li>Установява се Собствената фирма:</li>
+</ol>
+<p>1.1. Търси се измежду собствените фирми фирма с Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System = GLN.</p>
+<p>1.2. Ако не намери фирма в т. 1.1.  то търси фирма с Location Number = Seller ILN, Partner Location Number = Null и Location Coding System = GLN</p>
+<p>1.3. Ако не намери фирма в т. 1.1. и 1.2.  използва настройката в задачата за определяне на Собствена фирма по подразбиране.</p>
+<ol start="2">
+<li><p>Установява се Клиент - фирма, за която Location Number = Buyer  ILN, Location Coding System = GLN  и Собствена фирма от т.1.</p>
+</li>
+<li><p>Установява се &quot;От направление&quot;. Това се прави в зависимост от Характеристика за клиент „ECOD_Company_Division ECOD попълване на направление“:</p>
+</li>
+</ol>
+<p>3.1. Ако характеристиката има стойност „Попълва се по CodeByBuyer“ то направлението се установява по Code (Код на направление) = CodeByBuyer таг в импортния файл. Ако не намери направление хвърля грешка.</p>
+<p>3.2. Ако характеристиката има стойност „Попълва се по GLN“ то се издирва направлението по по Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System е GLN.  Ако не намери направление хвърля грешка.</p>
+<ol start="4">
+<li><p>Установява се &quot;Към направление&quot;. Направлението се определя, като се търси направление на Клиент от т.2 със същия Код, като направлението от т.3. Ако в т.3 не е намерено направление – остава празно.</p>
+</li>
+<li><p>Установява се Доставяне а клиент в зависимост от опцията &quot;Определяне на Доставяне на клиент&quot; в задачата:</p>
+</li>
+</ol>
+<p>5.1. Ако стойността е „Dlivery Point“ се определя обект за който Location Number = DliveryPoint ILN и Location Coding System = GLN и след това Клиент обект в зависимост от собствената фирма от 1.</p>
+<p>5.2. Ако стойността е „Order By“  се определя обект за който Location Number =  OrderBy ILN и Location Coding System е GLNи след това Клиент обект в зависимост от собствената фирма от 1.</p>
+<p>Входните данни от файла са: Seller ILN, Buyer  ILN, CodeByBuyer, DliveryPoint ILN, OrderBy ILN</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/business-logic/orders-import.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
