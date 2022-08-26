@@ -4625,7 +4625,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-goods-receipts.html",
-          "hash": "+6QBdvINeQ5vJAObV7ao0Q=="
+          "hash": "QgznZwTK4Tf/zKdzegq7wA=="
         }
       },
       "is_incremental": false,
@@ -4649,7 +4649,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html",
-          "hash": "fZ8lg/kwL3q0NFvboSDiAA=="
+          "hash": "gW+L3ImMVsOvRYrAXL/3nA=="
         }
       },
       "is_incremental": false,
@@ -4661,7 +4661,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html",
-          "hash": "7U4lieingPGSdMSqFHT4BA=="
+          "hash": "VQuGoqKLVjUBhT8RLcti8A=="
         }
       },
       "is_incremental": false,

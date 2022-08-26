@@ -74,9 +74,9 @@
 
 <p>Този тип задачи позволява експорт на Commarch-bg ECOD Despatch Advices xml файлове от ERP.net база данни.</p>
 <p>Данните се експортират от документ тип Експедиция.</p>
-<h1 id="алгоритъм-за-определяне-на-полетата-buyeriln-selleriln-deliverypointiln-и-ultimateconsigneeiln-при-експорт-на-стокови-разписки">Алгоритъм за определяне на полетата BuyerILN, SellerILN, DeliveryPointILN и UltimateConsigneeILN при експорт на стокови разписки</h1>
+<h3 id="алгоритъм-за-определяне-на-полетата-buyeriln-selleriln-deliverypointiln-и-ultimateconsigneeiln-при-експорт-на-стокови-разписки">Алгоритъм за определяне на полетата BuyerILN, SellerILN, DeliveryPointILN и UltimateConsigneeILN при експорт на стокови разписки</h3>
 <blockquote>
-<p><strong><em>NOTE:</em></strong> Този алгоритъм се използва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;. Ако не е отметната се гледат полетата GLN в субектите.</p>
+<p><strong><em>ЗАБЕЛЕЖКА:</em></strong> Този алгоритъм се използва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;. Ако не е отметната се гледат полетата GLN в субектите.</p>
 </blockquote>
 <p><strong>1.</strong> BuyerILN = Location Number в таблица Gen_Party_Location_Numbers., където Party Id е фирмата на която е обектът указан в полето &quot;Към субект&quot; в експедицията и Location Coding System = GLN.</p>
 <p><strong>2.</strong> SellerILN = Location Number в таблица Gen_Party_Location_Numbers, където:</p>

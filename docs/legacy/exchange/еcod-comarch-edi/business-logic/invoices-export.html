@@ -74,10 +74,10 @@
 
 <p>Този тип задачи позволява експорт на Commarch-bg ECOD Invoices xml файлове от ERP.net база данни.</p>
 <p>Данните се експортират от документ тип Фактури.</p>
-<h1 id="алгоритъм-за-определяне-на-полетата-buyeriln-selleriln-и-invoiceeiln-при-експорт-на-фактури-от-enterpriseone">Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne</h1>
+<h3 id="алгоритъм-за-определяне-на-полетата-buyeriln-selleriln-и-invoiceeiln-при-експорт-на-фактури-от-enterpriseone">Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne</h3>
 <p><strong>Определянето на BuyerILN, SellerILN и InvoiceeILN се прави по следния алгоритъм:</strong></p>
 <blockquote>
-<p><strong><em>NOTE:</em></strong> Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne.  Този алгоритъм се използва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;. Ако не е отметната се гледат полетата GLN в субектите.</p>
+<p><strong><em>ЗАБЕЛЕЖКА:</em></strong> Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne.  Този алгоритъм се използва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;. Ако не е отметната се гледат полетата GLN в субектите.</p>
 </blockquote>
 <p><strong>1.</strong> BuyerILN = Location Number в таблица Gen_Party_Location_Numbers., където Party_Id е фирмата на Клиента указан в полето &quot;Клиент&quot; в във фактурата и Location Coding System = GLN.</p>
 <p><strong>2.</strong> SellerILN = Location Number в таблица Gen_Party_Location_Numbers, където:</p>
