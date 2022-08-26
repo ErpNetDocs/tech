@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ECOD COMARCH EDI | ERP.net Tech Docs </title>
+    <title>&#1057;&#1098;&#1086;&#1090;&#1074;&#1077;&#1090;&#1089;&#1090;&#1074;&#1080;&#1077; &#1085;&#1072; &#1076;&#1072;&#1085;&#1085;&#1080;&#1090;&#1077; &#1089; ERP.net | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ECOD COMARCH EDI | ERP.net Tech Docs ">
+    <meta name="title" content="&#1057;&#1098;&#1086;&#1090;&#1074;&#1077;&#1090;&#1089;&#1090;&#1074;&#1080;&#1077; &#1085;&#1072; &#1076;&#1072;&#1085;&#1085;&#1080;&#1090;&#1077; &#1089; ERP.net | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -70,11 +70,23 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="ecod-comarch-edi">ECOD COMARCH EDI</h2>
+<h2 id="съответствие-на-данните-с-erpnet">Съответствие на данните с ERP.net</h2>
 
-<p><a href="business-logic/index.html">Бизнес логика</a></p>
-<p><a href="settings-in-erp/index.html">Настройки в ERP.net</a></p>
-<p><a href="data-compliance.html">Съответствие на данните с ERP.net</a></p>
+<h3 id="описание-на-съответствията-между-експортните-и-импортните-файлове-от-една-страна-и-erpnet-от-друга">Описание на съответствията между експортните и импортните файлове от една страна и ERP.net от друга</h3>
+<h5 id="1-експорт-на-фактури">1. Експорт на фактури</h5>
+<p>Следващите тагове се взимат от свързаната Експедиция.</p>
+<p><strong>&lt;CodeBySeller&gt;11223344&lt;/CodeBySeller&gt;</strong> в секцията /Document-Invoice/Invoice-Parties/Buyer</p>
+<p>&lt;CodeBySeller&gt;\ = General_PartyLocationNumber.LocationNumber WHERE  Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Party = General_PartyLocationNumber.Party And LocationCodingSystem = INT</p>
+<p><strong>&lt;Name&gt;BUYER COMPANY&lt;/Name&gt;</strong> в секцията /Document-Invoice/Invoice-Header/Delivery</p>
+<p>&lt;Name&gt; = Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Party.. CompanyLocation.Company.PartyName (bg part)</p>
+<p><strong>&lt;StreetAndNumber&gt;Main Street 1&lt;/StreetAndNumber&gt;</strong> в секцията &lt;/Document-Invoice/Invoice-Header/Delivery</p>
+<p>&lt;StreetAndNumber&gt; - Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Name - стринга след първата запетайка.</p>
+<p><strong>&lt;CityName&gt;Sofia&lt;/CityName&gt;</strong> в секцията &lt;/Document-Invoice/Invoice-Header/Delivery</p>
+<p>&lt;CityName&gt; - Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Name - стринга преди първата запетайка.</p>
+<p><strong>&lt;PostalCode&gt;1112&lt;/PostalCode&gt;</strong> в секцията &lt;/Document-Invoice/Invoice-Header/Delivery</p>
+<p>&lt;PostalCode&gt; - Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Party.Area.Code</p>
+<p><strong>&lt;Country&gt;BG</strong> в секцията &lt;/Document-Invoice/Invoice-Header/Delivery</p>
+<p>&lt;Country&gt; - Logistics_Shipment_Shipment.ShipToPartyContactMechanism.Party.. CompanyLocation.Company.Country</p>
 </article>
           </div>
           
@@ -83,7 +95,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/data-compliance.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

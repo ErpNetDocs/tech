@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1085;&#1072; GLN &#1085;&#1086;&#1084;&#1077;&#1088;&#1072; &#1074; ERP.net &#1079;&#1072; ECOD &#1090;&#1088;&#1072;&#1085;&#1089;&#1092;&#1077;&#1088;&#1080; | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1085;&#1072; GLN &#1085;&#1086;&#1084;&#1077;&#1088;&#1072; &#1074; ERP.net &#1079;&#1072; ECOD &#1090;&#1088;&#1072;&#1085;&#1089;&#1092;&#1077;&#1088;&#1080; | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="настройка-на-gln-номера-в-erpnet-за-ecod-трансфери">Настройка на GLN номера в ERP.net за ECOD трансфери</h2>
+
+<p>За осъществяване на интеграцията с ECOD посредством ERP.net Exchange е необходимо да се настрои разполагането на GLN номерата по определен начин.</p>
+<p>Тази настройка се използва, когато отметката  &quot;Използване на Номер на локация на субект&quot; е отметната в дефиницията на задачата.</p>
+<p>GLN номерата се поставят таблица &quot;Номера на локации - субекти&quot; (Gen_Party_Location_Numbers) -  има едноименни панели в дефиницията на субектите. За всеки субект може да има повече от един запис</p>
+<p>Обикновено субектите на на клиента - Клиент и Доставяне на клиент имат по един запис за GLN в таблицата с номера на локации.
+Във фирмата на собствената фирма трябва да има по един запис за всеки клиент, като се попълват полетата &quot;Номер на локация парньор&quot; и &quot;Субект партньор&quot;.  По този начин се указва за кой партньор се използва съответния GLN.  За един клиент може да се използват повече от един GLN - ако клиента има няколко направления и във всяко едно нашата фирма е регистрирана като отделен клиент.
+За всяко направление на клиент трябва да се дефинира по едно направление на собствената фирма със същия код. В направлението на собствената фирма трябва да се направи един запис за GLN, като се попълнят и &quot;Номер на локация парньор&quot; и &quot;Субект партньор&quot;, за да се укаже за кой партньор се използва този GLN.</p>
+<p><strong>Пример за попълване на GLN в база данни с две собствени фирми, които имат Метро за клиент и обменят документи с него по ECOD:
+Нека имаме две собствени фирми Фирма1 и Фирма2, които продават на Метро в две направления - Храни и Козметика.</strong></p>
+<p><strong>Използват се следните GLN:</strong></p>
+<p>Фирма Метро  - 0000000000001</p>
+<p>Метро Обект Люлин - 0000000000002</p>
+<p>Фирма1 регистирана в направление Храни на Метро - 0000000000003. CodeByBuyer = 1001</p>
+<p>Фирма1 регистрирана в направление Козметика на Метро - 0000000000004. CodeByBuyer = 1002</p>
+<p>Фирма2 регистирана в направление Храни на Метро - 0000000000005. CodeByBuyer = 2001</p>
+<p>Фирма2 регистрирана в направление Козметика на Метро - 0000000000006. CodeByBuyer = 2002</p>
+<p><strong>Дефиниране на Метро:</strong></p>
+<ol>
+<li><p>Фирма Метро</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Метро</p>
+<p>Номер на локация = 0000000000001</p>
+</li>
+<li><p>Направление Метро храни Фирма1</p>
+<p>- няма записи в Party Location Numbers</p>
+<p>- Код на направление = 1001</p>
+</li>
+<li><p>Направление Метро козметика Фирма1</p>
+<p>- няма записи в Party Location Numbers</p>
+<p>- Код на направление = 1002</p>
+</li>
+<li><p>Направление Метро храни Фирма2</p>
+<p>- няма записи в Party Location Numbers</p>
+<p>- Код на направление = 2001</p>
+</li>
+<li><p>Направление Метро козметика Фирма2</p>
+<p>- няма записи в Party Location Numbers</p>
+<p>- Код на направление = 2002</p>
+</li>
+<li><p>Доставяне на клиент Метро Люлин</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Метро Люлин</p>
+<p>Номер на локация = 0000000000002</p>
+</li>
+</ol>
+<p><strong>Дефиниране на Фирма1:</strong></p>
+<ol>
+<li><p>Фирма Фирма1</p>
+<p>- запис в Party Location Numbers :</p>
+<p>Субект= Фирма1</p>
+<p>Номер на локация = 0000000000003</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- запис в Party Location Numbers :</p>
+<p>Субект = Фирма1</p>
+<p>Номер на локация = 0000000000004</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+</li>
+<li><p>Направление Фирма1 Метро храни</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Фирма1 Метро храни</p>
+<p>Номер на локация = 0000000000003</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- Код на направление = 1001</p>
+</li>
+<li><p>Направление Фирма1 Метро козметика</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Фирма1 Метро козметика</p>
+<p>Номер на локация = 0000000000004</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- Код на направление = 1002</p>
+</li>
+</ol>
+<p><strong>Дефиниране на Фирма2:</strong></p>
+<ol>
+<li><p>Фирма Фирма2</p>
+<p>- запис в Party Location Numbers :</p>
+<p>Субект = Фирма2</p>
+<p>Номер на локация = 0000000000005</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- запис в Party Location Numbers :</p>
+<p>Субект = Фирма1</p>
+<p>Номер на локация = 0000000000006</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+</li>
+<li><p>Направление Фирма2 Метро храни</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Фирма2 Метро храни</p>
+<p>Номер на локация = 0000000000005</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- Код на направление = 2001</p>
+</li>
+<li><p>Направление Фирма2 Метро козметика</p>
+<p>- един запис в Party Location Numbers :</p>
+<p>Субект = Фирма2 Метро козметика</p>
+<p>Номер на локация = 0000000000006</p>
+<p>Субект Партньор = Метро</p>
+<p>Номер на локация на Партньор = 0000000000001</p>
+<p>- Код на направление = 2002</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/settings-in-erp/gln-codes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

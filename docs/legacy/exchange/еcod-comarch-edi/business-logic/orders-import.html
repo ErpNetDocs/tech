@@ -82,28 +82,25 @@
 <p><strong><em>NOTE:</em></strong> Този алгоритъм се изпoлзва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;.
 Ако не е отметната се гледат полетата GLN в субектите.</p>
 </blockquote>
-<ol>
-<li>Установява се Собствената фирма:</li>
-</ol>
-<p>1.1. Търси се измежду собствените фирми фирма с Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System = GLN.</p>
-<p>1.2. Ако не намери фирма в т. 1.1.  то търси фирма с Location Number = Seller ILN, Partner Location Number = Null и Location Coding System = GLN</p>
-<p>1.3. Ако не намери фирма в т. 1.1. и 1.2.  използва настройката в задачата за определяне на Собствена фирма по подразбиране.</p>
-<ol start="2">
-<li><p>Установява се Клиент - фирма, за която Location Number = Buyer  ILN, Location Coding System = GLN  и Собствена фирма от т.1.</p>
-</li>
-<li><p>Установява се &quot;От направление&quot;. Това се прави в зависимост от Характеристика за клиент „ECOD_Company_Division ECOD попълване на направление“:</p>
-</li>
-</ol>
-<p>3.1. Ако характеристиката има стойност „Попълва се по CodeByBuyer“ то направлението се установява по Code (Код на направление) = CodeByBuyer таг в импортния файл. Ако не намери направление хвърля грешка.</p>
-<p>3.2. Ако характеристиката има стойност „Попълва се по GLN“ то се издирва направлението по по Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System е GLN.  Ако не намери направление хвърля грешка.</p>
-<ol start="4">
-<li><p>Установява се &quot;Към направление&quot;. Направлението се определя, като се търси направление на Клиент от т.2 със същия Код, като направлението от т.3. Ако в т.3 не е намерено направление – остава празно.</p>
-</li>
-<li><p>Установява се Доставяне а клиент в зависимост от опцията &quot;Определяне на Доставяне на клиент&quot; в задачата:</p>
-</li>
-</ol>
-<p>5.1. Ако стойността е „Dlivery Point“ се определя обект за който Location Number = DliveryPoint ILN и Location Coding System = GLN и след това Клиент обект в зависимост от собствената фирма от 1.</p>
-<p>5.2. Ако стойността е „Order By“  се определя обект за който Location Number =  OrderBy ILN и Location Coding System е GLNи след това Клиент обект в зависимост от собствената фирма от 1.</p>
+<p><strong>1.</strong> Установява се Собствената фирма:</p>
+<pre><code>1.1. Търси се измежду собствените фирми фирма с Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System = GLN. 
+
+1.2. Ако не намери фирма в т. 1.1.  то търси фирма с Location Number = Seller ILN, Partner Location Number = Null и Location Coding System = GLN
+
+1.3. Ако не намери фирма в т. 1.1. и 1.2.  използва настройката в задачата за определяне на Собствена фирма по подразбиране.
+</code></pre>
+<p><strong>2.</strong> Установява се Клиент - фирма, за която Location Number = Buyer  ILN, Location Coding System = GLN  и Собствена фирма от т.1.</p>
+<p><strong>3.</strong> Установява се &quot;От направление&quot;. Това се прави в зависимост от Характеристика за клиент „ECOD_Company_Division ECOD попълване на направление“:</p>
+<pre><code>3.1. Ако характеристиката има стойност „Попълва се по CodeByBuyer“ то направлението се установява по Code (Код на направление) = CodeByBuyer таг в импортния файл. Ако не намери направление хвърля грешка.
+
+3.2. Ако характеристиката има стойност „Попълва се по GLN“ то се издирва направлението по по Location Number = Seller ILN, Partner Location Number = Buyer  ILN и Location Coding System е GLN.  Ако не намери направление хвърля грешка.
+</code></pre>
+<p><strong>4.</strong> Установява се &quot;Към направление&quot;. Направлението се определя, като се търси направление на Клиент от т.2 със същия Код, като направлението от т.3. Ако в т.3 не е намерено направление – остава празно.</p>
+<p><strong>5.</strong> Установява се Доставяне а клиент в зависимост от опцията &quot;Определяне на Доставяне на клиент&quot; в задачата:</p>
+<pre><code>5.1. Ако стойността е „Dlivery Point“ се определя обект за който Location Number = DliveryPoint ILN и Location Coding System = GLN и след това Клиент обект в зависимост от собствената фирма от 1.
+
+5.2. Ако стойността е „Order By“  се определя обект за който Location Number =  OrderBy ILN и Location Coding System е GLNи след това Клиент обект в зависимост от собствената фирма от 1.
+</code></pre>
 <p>Входните данни от файла са: Seller ILN, Buyer  ILN, CodeByBuyer, DliveryPoint ILN, OrderBy ILN</p>
 </article>
           </div>

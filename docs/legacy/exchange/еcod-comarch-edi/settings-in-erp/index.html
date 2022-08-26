@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#1045;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090; &#1085;&#1072; &#1092;&#1072;&#1082;&#1090;&#1091;&#1088;&#1080; | ERP.net Tech Docs </title>
+    <title>&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1074; ERP.net | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#1045;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090; &#1085;&#1072; &#1092;&#1072;&#1082;&#1090;&#1091;&#1088;&#1080; | ERP.net Tech Docs ">
+    <meta name="title" content="&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1074; ERP.net | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -70,53 +70,9 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="експорт-на-фактури">Експорт на фактури</h2>
+<h2 id="настройки-в-erpnet">Настройки в ERP.net</h2>
 
-<p>Този тип задачи позволява експорт на Commarch-bg ECOD Invoices xml файлове от ERP.net база данни.</p>
-<p>Данните се експортират от документ тип Фактури.</p>
-<h1 id="алгоритъм-за-определяне-на-полетата-buyeriln-selleriln-и-invoiceeiln-при-експорт-на-фактури-от-enterpriseone">Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne</h1>
-<p><strong>Определянето на BuyerILN, SellerILN и InvoiceeILN се прави по следния алгоритъм:</strong></p>
-<blockquote>
-<p><strong><em>NOTE:</em></strong> Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne.  Този алгоритъм се използва, когато е отметната отметката &quot;Използване на Номер на локация на субект&quot;. Ако не е отметната се гледат полетата GLN в субектите.</p>
-</blockquote>
-<p><strong>1.</strong> BuyerILN = Location Number в таблица Gen_Party_Location_Numbers., където Party_Id е фирмата на Клиента указан в полето &quot;Клиент&quot; в във фактурата и Location Coding System = GLN.</p>
-<p><strong>2.</strong> SellerILN = Location Number в таблица Gen_Party_Location_Numbers, където:</p>
-<pre><code>2.1. Party Id = От направление / Party_Id
-
-Partner Location Number = BuyerILN от т.1
-
-и Location Coding System = GLN.
-
-2.2. Ако не се намери запис в т.2.1 то
-
-Party Id = От направление / Party_Id
-
-Partner Location Number = Null
-
-и Location Coding System = GLN.
-
-2.3 Ако не се намери запис в т. 2.2 то
-
-Party Id = Собствената фирма
-
-Partner Location Number = BuyerILN от т.1
-
-и Location Coding System = GLN.
-
-2.4. Ако не се намери запис в т.2.3 то
-
-Party Id = Собствената фирма
-
-Partner Location Number = Null
-
-и Location Coding System = GLN.
-</code></pre>
-<p><strong>3.</strong> InvoiceeILN = Location Number в таблица Gen_Party_Location_Numbers., където Party Id е фирмата на Клиента указан в полето &quot;Клиент&quot; в във фактурата и Location Coding System = GLN.</p>
-<p><strong>4.</strong> DeliveryLocationNumber = Location Number в таблица Gen_Party_Location_Numbers, където:</p>
-<pre><code>Party Id = Към Субект
-
-Document Id е свързаната експедиция към тази фактура
-</code></pre>
+<p><a href="gln-codes.html">Настройка на GLN номера в ERP.net за ECOD трансфери</a></p>
 </article>
           </div>
           
@@ -125,7 +81,7 @@ Document Id е свързаната експедиция към тази фак�
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/business-logic/invoices-export.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/&#1077;cod-comarch-edi/settings-in-erp/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -4621,11 +4621,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-goods-receipts.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-goods-receipts.html",
+          "hash": "+6QBdvINeQ5vJAObV7ao0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/index.md",
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/index.html",
-          "hash": "Y4jRjUrgHOb03WX7J0JMQg=="
+          "hash": "ZLYy6YkUTHPQ/DmnAY8spg=="
         }
       },
       "is_incremental": false,
@@ -4637,7 +4649,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html",
-          "hash": "nlo0bYtbxhb/Uxin2dEWlA=="
+          "hash": "fZ8lg/kwL3q0NFvboSDiAA=="
         }
       },
       "is_incremental": false,
@@ -4649,7 +4661,19 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html",
-          "hash": "E/vKuTvKhGQ2PfHTXBun2w=="
+          "hash": "7U4lieingPGSdMSqFHT4BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/data-compliance.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/data-compliance.html",
+          "hash": "fG5ZyiEFIy2wAx6J1/5z+g=="
         }
       },
       "is_incremental": false,
@@ -4661,7 +4685,31 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/index.html",
-          "hash": "JWgN9JJETRnrQ9KJkwgQng=="
+          "hash": "ImJogtO9rwUNRU7u1GLjfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/gln-codes.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/gln-codes.html",
+          "hash": "ZvvPZSCx6U7/VXGDu4ITWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/index.html",
+          "hash": "1y0Rn+BodBSJV5JRzchvjQ=="
         }
       },
       "is_incremental": false,
