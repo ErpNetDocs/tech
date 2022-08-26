@@ -4,7 +4,7 @@
 
 Данните се експортират от документ тип Експедиция.
 
-# Алгоритъм за определяне на полетата BuyerILN, SellerILN, DeliveryPointILN и UltimateConsigneeILN при експорт на стокови разписки
+### Алгоритъм за определяне на полетата BuyerILN, SellerILN, DeliveryPointILN и UltimateConsigneeILN при експорт на стокови разписки
 > **_NOTE:_** Този алгоритъм се използва, когато е отметната отметката "Използване на Номер на локация на субект". Ако не е отметната се гледат полетата GLN в субектите.
 
 **1.** BuyerILN = Location Number в таблица Gen_Party_Location_Numbers., където Party Id е фирмата на която е обектът указан в полето "Към субект" в експедицията и Location Coding System = GLN.
