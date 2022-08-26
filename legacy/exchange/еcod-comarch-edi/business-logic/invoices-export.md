@@ -4,7 +4,7 @@
 
 Данните се експортират от документ тип Фактури.
 
-# Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne
+### Алгоритъм за определяне на полетата BuyerILN, SellerILN и InvoiceeILN при експорт на фактури от EnterpriseOne
 
 **Определянето на BuyerILN, SellerILN и InvoiceeILN се прави по следния алгоритъм:**
 
