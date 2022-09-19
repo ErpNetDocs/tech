@@ -6,3 +6,4 @@
 - **[Scheduled document events](./scheduled-document-events/index.md)**
 - **[Default language](./default-language.md)**
 - **[Webhooks](./webhooks.md)**
+- **[Real-time events](./real-time-events.md)**

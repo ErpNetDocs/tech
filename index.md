@@ -5,9 +5,9 @@ It is targeted towards implementation consultants and power users.
 
 ## Learn more
 
-- [Concepts](./concepts/index.html) - general concepts, which apply to all modules.
-- [Functionality](./modules/index.html) - documentation of the business functions.
-- [Advanced](./advanced/index.html) - documentation of advanced systems.
+- [Concepts](./concepts/index.md) - general concepts, which apply to all modules.
+- [Functionality](./modules/index.md) - documentation of the business functions.
+- [Advanced](./advanced/index.md) - documentation of advanced systems.
 
 ## Other documentations
 - [Data model](https://erpnetdocs.github.io/model) - reference information about the entities, business rules, generations, etc.

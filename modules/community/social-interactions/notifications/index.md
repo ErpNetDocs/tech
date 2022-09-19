@@ -4,27 +4,45 @@ uid: notifications
 
 # Notifications
 
-Notification is a single notification of one user for one event. The event can contain multiple references to objects, definitions, etc.
+Notification is a single [notification](https://docs.erp.net/model/entities/Communities.Notifications.html) of one user for one event. The event can contain multiple references to objects, definitions, etc.
 
 - Although **notification** is an entity in the @social-interactions module, a notification can be raised by any module in the system.
+- A notification is most often "transmitted" by a [real-time event](../../../../advanced/concepts/real-time-events.md).
+- Each notification is persistent. It lives in the database (i.e. it has a corresponding record).
+- Notifications **MAY** specify a data object.
 
-- Notifications **CAN** specify a data object.
+> [!NOTE]
+> If a notification specifies a data object, this means that it's related to this data object. However, this attribute is not required and can be null.
 
-If they do, the notification is related to the data object. However, this attribute is not required and can be null.
+## Notification interaction
 
-- Notifications contain URLs.
+Often, the user can interact with a notification. The most common example when the notification appears as a toast- the user can click on it. In this scenario, if the notification is bound to a data object, it will be opened.
 
-If a user clicks on the notification, the specified URL will be opened.
+A simple example:
+- You're following a specific document. E.g., an offer.
+- Someone writes a comment in its corresponding chatter control.
+- If you're online, you'll receive a notification as a toast.
+- If you click on the notification- you'll be navigated to the document (i.e. the offer).
 
-- Each notification has a class which specifies the type of the notification:
-
-  - NT_SOC_REPLY - there was a reply to my post or comment
-  - NT_SOC_MENTION - I was mentioned in a post or comment
-  - NT_SOC_NEW_POST - new post in a group, in which I am member
-  - NT_SOC_REACTION - there was a reaction to my post or comment
-  - NT_WM_QTY_BELOW_MIN - in @wms, when the qty in a tracked bin falls below the minimum
-  
- - When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood it.
+> [!NOTE]
+> When a notification is displayed to a user, it is marked as **read**. This does not guarantee that the user has read or understood it.
  
 > [!NOTE] 
 > The UI in some apps might require the user to actually click on the notification in order to mark it as read.
+
+## Notification classes
+
+Each notification has a class which specifies the type of the notification. Additionally, all notification classes are grouped for better classification.
+
+| Notification class | Group | Description |
+| ---- | ---- | ----------- |
+| NT_DOC_STATE_IMPLICIT | Document | If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification. |
+| NT_SOC_REPLY | Social | There was a reply to your post or comment. |
+| NT_SOC_NEW_POST | Social | New post in a group, in which you're a member. |
+| NT_SOC_MENTION | Social | You're mentioned in a post or comment. |
+| NT_SOC_REACTION | Social | There was a reaction to your post or comment. |
+| NT_WM_QTY_BELOW_MIN | WMS | In @wms, when the qty in a tracked bin falls below the minimum. |
+
+## I don't care about notifications
+
+You can always mute the notification classes you're not interested in. Or you can mute all of them. This way you won't be notified of anything you don't want. For more information see our separate topic [Notification settings](./settings.md)

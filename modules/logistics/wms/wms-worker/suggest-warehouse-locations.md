@@ -23,23 +23,23 @@ Proceed by clicking and opening the order that you need to perform.
  
 Below, you‘ll find a three-dot button, from which you can access the **Suggest Warehouse Locations** feature:
 
-![Picture](pictures/suggest-locations.png)
+![Picture](../how-it-works/pictures/suggest-locations.png)
 
 This immediately triggers a suggestion for warehouse locations from which you can release the product. <br /> It can be found within the _Loc_ column:
 
-![Picture](pictures/location.png)
+![Picture](../how-it-works/pictures/location.png)
 
 In this case, the suggested location for product line 0000001 is “P-01-01-1-A”. You can take the product assigned for release directly from here.
 To proceed with the selected line, click the **Execute** button.
 
-![Picture](pictures/execute-order.png)
+![Picture](../how-it-works/pictures/execute-order.png)
 
 This takes you to the first screen for dispatching the product. Here, you’ll find more information about the suggested warehouse location, as in how many instances of the product should be released from there.
 
 To apply the warehouse location suggestion, click the **Use** button. 
 This pastes the coordinates in the _Location_ field and takes you to the next step – selecting the product which will be released.
 
-![Picture](pictures/suggested-location.png)
+![Picture](../how-it-works/pictures/suggested-location.png)
  
 ## Specifics
 
