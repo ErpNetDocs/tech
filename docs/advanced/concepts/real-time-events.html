@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Concepts | ERP.net Tech Docs </title>
+    <title>Real-time events | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Concepts | ERP.net Tech Docs ">
+    <meta name="title" content="Real-time events | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,17 +77,86 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="concepts">Concepts</h1>
+<h1 id="real-time-events">Real-time events</h1>
 
+<p>The real-time events are a core part of ERP.net. As the name suggests, these are events that are triggered in real time.</p>
+<p>As an end-user experience, the real-time events may seem as &quot;live notifications&quot; (and in a matter of fact they are), but ERP.net makes a distinction between these terms.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A <strong>notification</strong> is a &quot;first-class citizen&quot;- i.e. it's an entity (aggregate root). It lives in the database. <a href="https://docs.erp.net/model/entities/Communities.Notifications.html">Communities.Notifications Entity</a>
+<br> <br>
+On the other hand a <strong>real-time event</strong> is a non-persistent data unit and it's used for on-the-fly signaling of user-relevant events.</p>
+</div>
+<p>Each real-time event consists of a header, specifying its type, as well as a payload- the event data itself.</p>
+<p>As a comparison to the notification definition above:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A real-time event's payload MAY OR MAY NOT hold a notification. See below for more information on all types of real-time events.</p>
+</div>
+<h2 id="a-real-time-event-in-a-nutshell">A real-time event in a nutshell</h2>
+<p>Some of the key aspects:</p>
 <ul>
-<li><strong><a href="aggregates.html">Aggregates</a></strong></li>
-<li><strong><a href="object-relational-mapping.html">Object relational mapping</a></strong></li>
-<li><strong><a href="master-detail-attributes.html">Master / Detail attributes</a></strong></li>
-<li><strong><a href="scheduled-document-events/index.html">Scheduled document events</a></strong></li>
-<li><strong><a href="default-language.html">Default language</a></strong></li>
-<li><strong><a href="webhooks.html">Webhooks</a></strong></li>
-<li><strong><a href="real-time-events.html">Real-time events</a></strong></li>
+<li>They're produced real time and don't depend on the client application.</li>
+<li>They're addressed to the concerned user (i.e. the recipient), regardless of whether it uses ERP.net Windows Client or Web Client.</li>
+<li>The real-time events are &quot;broadcasted&quot; to the target user no matter how many instances of the Windows Client or Web Client are opened.</li>
+<li>They're only created (and sent) when there's someone to receive them. I.e. the target user is online.</li>
+<li>The real-time events themselves aren't persistent data. They aren't stored in the database.</li>
 </ul>
+<h2 id="use-cases">Use-case(s)</h2>
+<p>Obviously, they have one purpose- to notify you of something that concerns you.</p>
+<p><strong>Now</strong></p>
+<p>For example, if someone reacts to your comment:</p>
+<p><img src="pictures/realtime-events-not-web.png" alt="Real-time event"></p>
+<p>Or someone comments on a object you're following (e.g. a specific document like an offer, sales order, etc):</p>
+<p><img src="pictures/realtime-events-not2-web.png" alt="Real-time event"></p>
+<p>What about if there's a planned maintenance?</p>
+<p><img src="pictures/realtime-events-shutdown-web.png" alt="Real-time event"></p>
+<p>Or several events at once:</p>
+<p><img src="pictures/realtime-events-not-web-stacked.png" alt="Real-time event"></p>
+<h2 id="variety-of-types">Variety of types</h2>
+<p>The payload (i.e. the data), provided by the real-time events can be of the following different types:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CM_REMINDER</td>
+<td>Reminder (a.k.a alarm), related to an <a href="https://docs.erp.net/model/entities/General.Contacts.Activities.html">activity</a>.</td>
+</tr>
+<tr>
+<td>MAIL</td>
+<td>Incoming mail <a href="https://docs.erp.net/model/entities/Applications.Mail.Messages.html">message</a>.</td>
+</tr>
+<tr>
+<td>VOIP</td>
+<td>Voice over IP. Incoming call.</td>
+</tr>
+<tr>
+<td>SHUTDOWN</td>
+<td>Warning of an upcoming shutdown event.</td>
+</tr>
+<tr>
+<td>SYS_MSG</td>
+<td>System message.</td>
+</tr>
+<tr>
+<td>PERF</td>
+<td>Performance measurement. This is often a system measurement for the duration of an operation.</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>Social interaction as a notification. <br> For more information, check the separate <a href="../../modules/community/social-interactions/notifications/index.html">notifications documentation topic</a>.</td>
+</tr>
+<tr>
+<td>WRN</td>
+<td>System message.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -96,7 +165,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/concepts/real-time-events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

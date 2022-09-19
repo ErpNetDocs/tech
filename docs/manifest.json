@@ -978,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/concepts/index.html",
-          "hash": "PYQkH7M4zHpQaZ7R1Suicw=="
+          "hash": "yUUEOI2V3tmFAIadECBw1w=="
         }
       },
       "is_incremental": false,
@@ -1003,6 +1003,50 @@
         ".html": {
           "relative_path": "advanced/concepts/object-relational-mapping.html",
           "hash": "2qas85aGwQQhGg20sTKE3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/realtime-events-not-web-stacked.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/realtime-events-not-web-stacked.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/realtime-events-not-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/realtime-events-not-web.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/realtime-events-not2-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/realtime-events-not2-web.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/realtime-events-shutdown-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/realtime-events-shutdown-web.png"
         }
       },
       "is_incremental": false,
@@ -1036,6 +1080,18 @@
       "output": {
         "resource": {
           "relative_path": "advanced/concepts/pictures/webhooks-ubr-view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/concepts/real-time-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/concepts/real-time-events.html",
+          "hash": "1wivyw6MJmSekCgK6kWfaA=="
         }
       },
       "is_incremental": false,
@@ -1758,7 +1814,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "3EYFF57u59Z+fhrzJyfkZg=="
+          "hash": "PvZcnfgxiEDxGmH4qEuvJA=="
         }
       },
       "is_incremental": false,
@@ -1850,11 +1906,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/business-rules/code.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/business-rules/code.html",
+          "hash": "8WBn/K37tHhi8tn4fgwfGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/business-rules/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/business-rules/index.html",
-          "hash": "SnVrZ2JX56t1f7wUJhm0DA=="
+          "hash": "J2SKlpCPy1t/bGFHojf/kQ=="
         }
       },
       "is_incremental": false,
@@ -2392,6 +2460,50 @@
         ".html": {
           "relative_path": "concepts/toc.html",
           "hash": "338KRQnijDBCpNifRzztXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/concepts/pictures/realtime-events-not-web-stacked.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/concepts/pictures/realtime-events-not-web-stacked.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/concepts/pictures/realtime-events-not-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/concepts/pictures/realtime-events-not-web.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/concepts/pictures/realtime-events-not2-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/concepts/pictures/realtime-events-not2-web.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/concepts/pictures/realtime-events-shutdown-web.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/concepts/pictures/realtime-events-shutdown-web.png"
         }
       },
       "is_incremental": false,
@@ -4593,15 +4705,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "//0OfXURq/Vut47GOd4wqQ=="
+          "hash": "Qpe9KpryeZoVH9yAu+HY2w=="
         }
       },
       "is_incremental": false,
@@ -4840,7 +4949,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/social-interactions/notifications/index.html",
-          "hash": "FLOuwijb0occaAS6cB4z7g=="
+          "hash": "WfaFmr1DWK0VuIUpZdBHZA=="
         }
       },
       "is_incremental": false,
@@ -7319,15 +7428,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.html",
-          "hash": "tz/i9H1FApcMSHBUKPG5vA=="
+          "hash": "c3pRZShBkhWjuPYTU0iAkw=="
         }
       },
       "is_incremental": false,
