@@ -109,11 +109,13 @@
 </div>
 <h2 id="notification-classes">Notification classes</h2>
 <p>Each notification has a class which specifies the type of the notification. Additionally, all notification classes are grouped for better classification.</p>
+<p>Also, most of the notifications are created automatically via business rules when the corresponding event occurs (e.g. when someone writes a comment).</p>
 <table>
 <thead>
 <tr>
 <th>Notification class</th>
 <th>Group</th>
+<th>Business rule</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -121,37 +123,46 @@
 <tr>
 <td>NT_DOC_STATE_IMPLICIT</td>
 <td>Document</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R33718.html">R33718</a> Document</strong>- Notify All Implicit Followers</td>
 <td>If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification.</td>
 </tr>
 <tr>
 <td>NT_SOC_REPLY</td>
 <td>Social</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R33428.html">R33428</a> SocialComment</strong>- Notify User Comment Replied</td>
 <td>There was a reply to your post or comment.</td>
 </tr>
 <tr>
 <td>NT_SOC_NEW_POST</td>
 <td>Social</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R33417.html">R33417</a> SocialComment</strong>- Notify All Object Followers</td>
 <td>New post in a group, in which you're a member.</td>
 </tr>
 <tr>
 <td>NT_SOC_MENTION</td>
 <td>Social</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R32943.html">R32943</a> SocialComment</strong>- Notify The Mentioned User</td>
 <td>You're mentioned in a post or comment.</td>
 </tr>
 <tr>
 <td>NT_SOC_REACTION</td>
 <td>Social</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R33427.html">R33427</a> SocialReaction</strong>- Notify User Comment Reaction</td>
 <td>There was a reaction to your post or comment.</td>
 </tr>
 <tr>
 <td>NT_WM_QTY_BELOW_MIN</td>
 <td>WMS</td>
+<td>-</td>
 <td>In <a class="xref" href="../../../logistics/wms/index.html">Warehouse management</a>, when the qty in a tracked bin falls below the minimum.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="i-dont-care-about-notifications">I don't care about notifications</h2>
 <p>You can always mute the notification classes you're not interested in. Or you can mute all of them. This way you won't be notified of anything you don't want. For more information see our separate topic <a href="settings.html">Notification settings</a></p>
+<h2 id="create-notifications-programmatically">Create notifications programmatically</h2>
+<p>It's possible to create notifications programmatically via Domain API. For more information, check the dev topic,</p>
+<p><a href="https://docs.erp.net/dev/domain-api/common-tasks/create-notification.html">https://docs.erp.net/dev/domain-api/common-tasks/create-notification.html</a></p>
 </article>
           </div>
           
