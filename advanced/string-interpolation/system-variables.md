@@ -29,6 +29,7 @@ Below, you can find all system variables, their return type and the resolvers by
 | `$newguid`                   | string              | Serialized random Guid.                                                                                                         | Globally    |
 |                              |                     |                                                                                                                                 |             |
 | `$rooturl`                   | string              | Current database URL.                                                                                                           | @@winclient |
+| `$instance`                  | string              | Current database instance. Equals to `$rooturl`, but without the scheme prefix (i.e., *https://*)                                                                                            | @@winclient |
 | `$dbname`                    | string              | Database name.                                                                                                                  | @@winclient |
 | `$entity` (**obsolete**)     | string              | The entity name the object is part of.                                                                                          | @@winclient |
 | `$idlist`                    | string              | Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a **Navigator Form**. | @@winclient |
