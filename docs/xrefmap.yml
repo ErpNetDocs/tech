@@ -205,6 +205,9 @@ references:
 - uid: erpnet
   name: erpnet
   href: includes/erpnet.html
+- uid: escape-sequences
+  name: Escape sequences
+  href: advanced/string-interpolation/escape-sequences.html
 - uid: extensible-data-objects
   name: EDO
   href: advanced/data-objects/edo.html

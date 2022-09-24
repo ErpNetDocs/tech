@@ -1654,6 +1654,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/string-interpolation/escape-sequences.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/string-interpolation/escape-sequences.html",
+          "hash": "fIGBA/kOBF1kon1Mi59YJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/string-interpolation/examples/constant.md",
       "output": {
         ".html": {
@@ -1790,7 +1802,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/index.html",
-          "hash": "u6ZYpegLymM5Z24+5/Kx3Q=="
+          "hash": "zylQck7mdVk+2vWs1bxV/g=="
         }
       },
       "is_incremental": false,
@@ -1814,7 +1826,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "PvZcnfgxiEDxGmH4qEuvJA=="
+          "hash": "332gyVcZDFVhHvEGCCdl+g=="
         }
       },
       "is_incremental": false,
