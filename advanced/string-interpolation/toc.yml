@@ -7,6 +7,8 @@
   href: format-specifiers.md
 - name: System variables
   href: system-variables.md
+- name: Escape sequences
+  href: escape-sequences.md
 - name: Examples
   href: examples/toc.yml
   topicHref: examples/index.md

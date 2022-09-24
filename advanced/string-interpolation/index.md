@@ -104,7 +104,8 @@ For a 'Number' type, the 'C' format specifier acts as number-to-currency string 
 ------------
 ### See more
 
-- **[Expression types](https://docs.erp.net/tech/advanced/string-interpolation/expression-types/index.html)**
-- **[Format specifiers](https://docs.erp.net/tech/advanced/string-interpolation/format-specifiers.html)**
-- **[System variables](https://docs.erp.net/tech/advanced/string-interpolation/system-variables.html)**
-- **[Examples](https://docs.erp.net/tech/advanced/string-interpolation/examples/index.html)**
+- **[Expression types](./expression-types/index.md)**
+- **[Format specifiers](./format-specifiers.md)**
+- **[System variables](./system-variables.md)**
+- **[Escape sequences](./escape-sequences.md)**
+- **[Examples](./examples/index.md)**
