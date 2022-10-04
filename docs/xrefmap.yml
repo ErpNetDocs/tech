@@ -229,6 +229,9 @@ references:
 - uid: jobs-J30903
   name: J30903 Deletе old document print images
   href: advanced/jobs/J30903.html
+- uid: jobs-J33898
+  name: J33898 Delete old document versions
+  href: advanced/jobs/J33898.html
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html

@@ -584,6 +584,11 @@
     "title": "J30903 Deletе old document print images | ERP.net Tech Docs",
     "keywords": "J30903 Deletе old document print images Code J30903 Entity General.DocumentPrintImages Entity Job type name Deletе Old Document Print Images Parameters DocumentPrintImage.DocumentPrints.Document.EnterpriseCompany.PrintImagesRetentionMonths Description Deletes old document print images whose retention period has expired. Expiration occurs when the period between the print time of the document image and today is larger than the period set in the Print Images Retention Months field in the enterprise company's definition. The default value for that field is 60 months but it can be adjusted according to the company's needs. First to process DocumentPrintImage.DocumentPrints.PrintTime (ASC) Records per iteration 1000 Version Introduced: 2020.1 Note The job will NOT delete the information from the Document Prints panel/table. Information about when and by whom the document has been printed will continue to be available. The job deletes only the visual representation of the document that has been printed. To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
   },
+  "advanced/jobs/J33898.html": {
+    "href": "advanced/jobs/J33898.html",
+    "title": "J33898 Delete old document versions | ERP.net Tech Docs",
+    "keywords": "J33898 Delete old document versions Code J33898 Entity General.DocumentVersions Entity Job type name Delete Old Document Versions Parameters - Description The system job deletes all old document versions, whose UpdateTime is older than 60 days: (UpdateTime - Now()) > 60 days First to process DocumentVersion.UpdateTime (ASC) Records per iteration 1000 Version Introduced: To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
+  },
   "advanced/jobs/template.html": {
     "href": "advanced/jobs/template.html",
     "title": "Jobs documentation template | ERP.net Tech Docs",
