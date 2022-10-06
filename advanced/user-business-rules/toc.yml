@@ -3,9 +3,6 @@
 - name: Action types
   href: action-types/toc.yml
   topicHref: action-types/index.md
-- name: Business rules
-  href: business-rules/toc.yml
-  topicHref: business-rules/index.md
 - name: Parameter types
   href: parameter-types/toc.yml
   topicHref: parameter-types/index.md
