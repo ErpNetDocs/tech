@@ -1838,7 +1838,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "PzOQHpQx5nNcVp56ivd7lg=="
+          "hash": "AdPS9IyjdFHp38EsdMvI0Q=="
         }
       },
       "is_incremental": false,
@@ -1917,60 +1917,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/action-types/webhook.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/webhook.html",
-          "hash": "jgyLLdDqTY16zVixryDsww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/business-rules/code.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/business-rules/code.html",
-          "hash": "8WBn/K37tHhi8tn4fgwfGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/business-rules/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/business-rules/index.html",
-          "hash": "J2SKlpCPy1t/bGFHojf/kQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/business-rules/script-text-max-length.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/business-rules/script-text-max-length.html",
-          "hash": "AveX3XisWu4oBsf66gBaRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/business-rules/valid-icon-format.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/business-rules/valid-icon-format.html",
-          "hash": "zuR3vZ6+Vwkwfgm4hpRwjA=="
+          "hash": "Ue7SqD2PZ1UDG1YzNtCquA=="
         }
       },
       "is_incremental": false,
@@ -1983,30 +1938,6 @@
         ".html": {
           "relative_path": "advanced/user-business-rules/events/aggregate-client-commit.html",
           "hash": "nyzWtLo9nRWx5EUFWKA95A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/events/business-rules/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/events/business-rules/index.html",
-          "hash": "j60A7TYq7kpZmu/eJwF1qw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/user-business-rules/events/business-rules/is-repository-aggregate-root.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/user-business-rules/events/business-rules/is-repository-aggregate-root.html",
-          "hash": "fSxr4qGBTvUUc7+Aq1Mk2w=="
         }
       },
       "is_incremental": false,
@@ -2049,12 +1980,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/index.html",
-          "hash": "hhtu4dnh0vlaGmwibgmCHA=="
+          "hash": "WpyZfHHNVf+VkO+PZidqNw=="
         }
       },
       "is_incremental": false,
