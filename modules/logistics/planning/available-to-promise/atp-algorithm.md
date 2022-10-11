@@ -1,3 +1,7 @@
+---
+uid: ATP-algorithm
+---
+
 ## ATP Algorithm
 
 The current stock holds are added to the unfulfilled store orders chronology. Thus, save for the physical availability, store orders which are not fulfilled, but planned to be on a specific date, are taken into account (the <i>Planned Release Date</i> field indicates this date). Besides physical availability, other already planned stock movements are taken into account.
