@@ -13,6 +13,15 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: ATP
+  name: Available to promise
+  href: modules/logistics/planning/available-to-promise/index.html
+- uid: ATP-algorithm
+  name: ATP Algorithm
+  href: modules/logistics/planning/available-to-promise/atp-algorithm.html
+- uid: ATP-reports
+  name: ATP Reports
+  href: modules/logistics/planning/available-to-promise/atp-reports.html
 - uid: bonus-program
   name: Bonus programs
   href: modules/crm/marketing/bonus-programs/index.html
@@ -247,6 +256,9 @@ references:
 - uid: notification-settings
   name: Notification settings
   href: modules/community/social-interactions/notifications/settings.html
+- uid: PAB
+  name: Projected available balance
+  href: modules/logistics/planning/projected-available-balance.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/promotional-packages/index.html
