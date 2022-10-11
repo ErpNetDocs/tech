@@ -1,3 +1,7 @@
+---
+uid: ATP-reports
+---
+
 # ATP Reports
 
 In Version 2018.2, we introduced two new reports – <b>Available to promise</b> and <b>Available to promise (by lots)</b>. These reports show the quantities available to promise (ATP) (by product or by product lot) from a current or future date, but not only as a calculated number. The reports allow us to see the separate records for all planned movements and therefore the projected available balance (PAB) for the different dates. Using it, we can see which numbers are behind the value of (ATP) and how it is calculated for the different periods.
