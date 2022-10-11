@@ -1,3 +1,7 @@
+---
+uid: PAB
+---
+
 # Projected available balance
 
 ## Description
