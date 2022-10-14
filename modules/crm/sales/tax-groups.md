@@ -10,7 +10,7 @@ To actually apply the effects of the algorithm, you need to configure the deal t
 
 As a result, one and the same product can now be assigned a foreign **or** a national tax group in accordance with the location its sale has been made in.
 
-(screenshot1)
+![Picture](images/screenshot_1.png)
 
 ### Specifics
 
@@ -23,7 +23,7 @@ Make use of the following code:
 _IF Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG') <> 0 <br>
 THEN taxGroup = Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG')_
 
-(screenshot2)
+![Picture](images/screenshot_2.png)
 
 2. When the product type has a tax group different from zero and the applicable legislation is ''BG'', the tax group is going to be the same tax group.
 
@@ -59,4 +59,4 @@ IF LineDealType.TaxCode = "NS" THEN taxGroup = 1
 
 In this scenario, expect a document to be printed for tax group 1 - export.
 
-(screenshot3)
+![Picture](images/screenshot_3.png)
