@@ -6,6 +6,8 @@
   href: price-types.md
 - name: Sales order payment plan
   href: sales-order-payment-plan.md
+- name: Tax group defining algorithm
+  href: tax-groups.md
 - name: Promotional packages
   href: promotional-packages/toc.yml
   topicHref: promotional-packages/index.md
