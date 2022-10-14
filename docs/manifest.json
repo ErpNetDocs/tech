@@ -2711,6 +2711,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/scrshot_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/scrshot_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/scrshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/scrshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/scrshot_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/scrshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/financials/excise/image-20211209134740745-16390593696201.png",
       "output": {
         "resource": {
