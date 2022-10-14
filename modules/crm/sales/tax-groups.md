@@ -12,7 +12,7 @@ As a result, one and the same product can now be assigned a foreign **or** a nat
 
 ![Picture](images/scrshot_1.png)
 
-### Specifics
+## Specifics
 
 There are four scenarios you may stumble upon while using the tax group defining algorithm.
 
@@ -50,12 +50,12 @@ _IF Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG') 
 
 Use the following scheme:
 
-IF LineDealType.TaxCode = "STD" THEN taxGroup = 1
+_IF LineDealType.TaxCode = "STD" THEN taxGroup = 1
 IF LineDealType.TaxCode = "RED" THEN taxGroup = 1
 IF LineDealType.TaxCode = "SPR" THEN taxGroup = 1
 IF LineDealType.TaxCode = "INT" THEN taxGroup = 1
 IF LineDealType.TaxCode = "EXM" THEN taxGroup = 1
-IF LineDealType.TaxCode = "NS" THEN taxGroup = 1
+IF LineDealType.TaxCode = "NS" THEN taxGroup = 1_
 
 In this scenario, expect a document to be printed for tax group 1 - export.
 
