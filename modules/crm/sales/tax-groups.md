@@ -1,4 +1,4 @@
-# Tax groups defining algorithm
+# Tax groups determining algorithm
 
 This algorithm is used to define the tax group specified in a fiscal device print of a sale, invoice or payment document.
 
