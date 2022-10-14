@@ -1554,7 +1554,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J33898.html",
-          "hash": "wlNzbbXYVWtUXA3Me1j/XQ=="
+          "hash": "UVg5iy6DrgmXdy9qOiNPFA=="
         }
       },
       "is_incremental": false,
@@ -5179,6 +5179,51 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/images/file.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/images/file.html",
+          "hash": "Sky+cEQyhH/iamXYLBlQKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/scrshot_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/scrshot_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/scrshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/scrshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/scrshot_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/scrshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/index.md",
       "output": {
         ".html": {
@@ -5340,6 +5385,18 @@
         ".html": {
           "relative_path": "modules/crm/sales/sales-order-payment-plan.html",
           "hash": "AWLfFobbOQwnVqWrXnI6Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/tax-groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/tax-groups.html",
+          "hash": "WiMqANOhkmeztFv/+P0BbQ=="
         }
       },
       "is_incremental": false,
@@ -7439,7 +7496,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "cpgbSk4EnduhlWdTXfT78A=="
+          "hash": "X3+fb397lNeT0OP4HNd3Kg=="
         }
       },
       "is_incremental": false,
