@@ -2700,10 +2700,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/line_deal.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/line_deal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/logo.svg",
       "output": {
         "resource": {
           "relative_path": "docs/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/line_deal.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/line_deal.png"
         }
       },
       "is_incremental": false,
@@ -2737,6 +2759,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/sales/images/scrshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/test.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/test.png"
         }
       },
       "is_incremental": false,
