@@ -25,8 +25,6 @@ IF Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG') <
 THEN taxGroup = Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG')
 ```
 
-![Picture](images/bglegislation.png)
-
 2. When the product type has a tax group **different** from zero and the applicable legislation is ''BG'', the tax group is going to be the same tax group.
 
 Use the code:
@@ -36,6 +34,7 @@ IF Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG') =
 AND LineDealType.Country = 'BG' 
 THEN
 ```
+![Picture](images/bglegislation.png)
 
 3. When the product type has a tax group **equal** to zero and the applicable legislation is ''BG'', the tax group is defined by the tax code of the deal type.
 
@@ -70,7 +69,6 @@ IF LineDealType.TaxCode = "INT" THEN taxGroup = 1
 IF LineDealType.TaxCode = "EXM" THEN taxGroup = 1 
 IF LineDealType.TaxCode = "NS" THEN taxGroup = 1
 ```
+![Picture](images/fr_legislation.png)
 
 In this scenario, expect a document to be printed for tax group 1 - export.
-
-![Picture](images/fr_legislation.png)
