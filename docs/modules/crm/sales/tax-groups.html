@@ -84,7 +84,7 @@
 <p>The final tax group is set to depend not only on the tax group of the product type (default), but on the <strong>deal type</strong> specified in the sales lines.</p>
 <p>To actually apply the effects of the algorithm, you need to configure the deal type's <strong>TaxCode</strong> field.</p>
 <p>As a result, one and the same product can now be assigned a foreign <strong>or</strong> a national tax group in accordance with the location its sale has been made in.</p>
-<p><img src="images/scrshot_1.png" alt="Picture"></p>
+<p><img src="images/linedeal.png" alt="Picture"></p>
 <h2 id="specifics">Specifics</h2>
 <p>There are four scenarios you may stumble upon while using the tax group defining algorithm.</p>
 <ol>
@@ -94,7 +94,6 @@
 <pre><code>IF Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG') &lt;&gt; 0 
 THEN taxGroup = Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislation = 'BG')
 </code></pre>
-<p><img src="images/scrshot_2.png" alt="Picture"></p>
 <ol start="2">
 <li>When the product type has a tax group <strong>different</strong> from zero and the applicable legislation is ''BG'', the tax group is going to be the same tax group.</li>
 </ol>
@@ -103,6 +102,7 @@ THEN taxGroup = Product.ProductType.TaxGroups.TaxGroup (Where ApplicableLegislat
 AND LineDealType.Country = 'BG' 
 THEN
 </code></pre>
+<p><img src="images/bglegislation.png" alt="Picture"></p>
 <ol start="3">
 <li>When the product type has a tax group <strong>equal</strong> to zero and the applicable legislation is ''BG'', the tax group is defined by the tax code of the deal type.</li>
 </ol>
@@ -130,8 +130,8 @@ IF LineDealType.TaxCode = &quot;INT&quot; THEN taxGroup = 1
 IF LineDealType.TaxCode = &quot;EXM&quot; THEN taxGroup = 1 
 IF LineDealType.TaxCode = &quot;NS&quot; THEN taxGroup = 1
 </code></pre>
+<p><img src="images/fr_legislation.png" alt="Picture"></p>
 <p>In this scenario, expect a document to be printed for tax group 1 - export.</p>
-<p><img src="images/scrshot_3.png" alt="Picture"></p>
 </article>
           </div>
           
