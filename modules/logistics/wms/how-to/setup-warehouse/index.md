@@ -2,7 +2,7 @@
 
 To start working with Warehouse Management Module (WMS), you need to complete the setup of the general warehouse definitions – warehouse, locations, workers, and policies.
 
-## Create warehouse definition
+## Create warehouse definition/s
 
 Setting up a warehouse, naturally starts with the creation of the definitions of the warehouse themselves. 
 
