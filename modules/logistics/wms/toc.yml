@@ -2,6 +2,7 @@
   href: index.md
 - name: How to
   href: how-to/toc.yml
+  topicHref: how-to/index.md
 - name: WMS Worker
   href: wms-worker/toc.yml
   topicHref: wms-worker/index.md
