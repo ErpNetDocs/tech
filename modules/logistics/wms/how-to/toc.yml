@@ -2,3 +2,4 @@
   href: index.md
 - name: Setup warehouse
   href: setup-warehouse/toc.yml
+  topicHref: setup-warehouse/index.md
