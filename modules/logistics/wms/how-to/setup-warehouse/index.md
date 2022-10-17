@@ -21,7 +21,7 @@ Usually, the link is one to one - one warehouse is linked to only one store. We 
 ## What to do next?
 You can continue setting up your warehouse by creating zones, locations and qorkers. 
 
-> **_NOTE:_**  Note that in order to work with or test the module or the @wms-worker app, you need to create at least one Warehouse, Zone, Location and Worker.
+> **_NOTE:_**  Note that in order to work with or test the module or the @wms-worker app, you need to create at least one warehouse, zone, location and worker.
 
 More information can be found in the following topics:
 [!list folder="." depth=0 style="bullet" limit=100]
