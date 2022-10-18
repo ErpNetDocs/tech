@@ -2722,10 +2722,65 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/bg_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/bg_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/bglegislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/bglegislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/en_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/en_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/fr_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/fr_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/sales/images/line_deal.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/sales/images/line_deal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/linedeal.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/linedeal.png"
         }
       },
       "is_incremental": false,
