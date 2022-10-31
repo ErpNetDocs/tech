@@ -92,9 +92,7 @@
 </ol>
 <p><img src="pictures/azure2.png" alt="picture"></p>
 <ol start="4">
-<li><p>Enter the required details. You can use anything for the name (for example: ERP.net Identity Server). <br> Leave “<em>Accounts in this organization directory only</em>” checked.</p>
-</li>
-<li><p>Click on Authentication.</p>
+<li><p>Enter the required details. You can use anything for the name (for example: ERP.net Identity Server). <br> Leave “<em>Accounts in this organizational directory only (Default Directory only - Single tenant)</em>” checked.</p>
 </li>
 <li><p>In the Redirect URI field enter the callback path configured in IdentityServer4 for Azure AD auth. <br>
 This will be <strong>https://<code>&lt;UIN&gt;</code>.my.erp.net/id/signin-aad</strong>, where:</p>
@@ -105,25 +103,42 @@ This will be <strong>https://<code>&lt;UIN&gt;</code>.my.erp.net/id/signin-aad</
 <li><code>/id</code> is the relative path of the ID site</li>
 <li><code>/signin-aad</code> is the endpoint responsible for AZURE AD redirects (/signin-aad is constant for all databases)</li>
 </ul>
+<ol start="6">
+<li>In the “<em>Select a platform</em>” drop-down menu, select Web.</li>
+</ol>
+<p><img src="pictures/azure3.png" alt="picture"></p>
 <ol start="7">
-<li><p>Check the ID tokens checkbox.</p>
+<li><p>Confirm the app registration creation by clicking <strong>Register</strong>.</p>
 </li>
-<li><p>Make a note of your Application (client) ID and Directory (tenant) ID values - they should be copied in the corresponding fields in the Sec_Domain_Providers table.</p>
+<li><p>Now, you have a new app registration. Navigate to “<em>App registrations</em>” and open your new app.</p>
 </li>
+</ol>
+<p><img src="pictures/azure4.png" alt="picture"></p>
+<ol start="9">
+<li>Make a note of your Application (client) ID and Directory (tenant) ID values - they should be copied in the corresponding fields in the Sec_Domain_Providers table.</li>
+</ol>
+<p><img src="pictures/azure5.png" alt="picture"></p>
+<ol start="10">
+<li>Open “<em>Authentication</em>”, located in the left pane. <br></li>
+</ol>
+<p>If you have to add more redirect URIs (in case you have more than one instance of ERP.net application server), you can add them via the “<em>Redirect URIs</em>” panel, by clicking <strong>Add URI</strong>. <br></p>
+<p>Additionally, check the ID tokens checkbox.</p>
+<p><img src="pictures/azure6.png" alt="picture"></p>
+<ol start="11">
+<li>Finally, save your changes.</li>
 </ol>
 <h3 id="erpnet-settings">ERP.net settings</h3>
 <ol>
 <li>In the &quot;Setup / Security / Domains&quot; section a &quot;Domain providers&quot; record should be created. <br>
 There is a default domain in the databases and the Azure record should be added there.</li>
 </ol>
-<p><img src="pictures/azure3.png" alt="picture"></p>
+<p><img src="pictures/azure7.png" alt="picture"></p>
 <ol start="2">
 <li>The users are referenced by their email:</li>
 </ol>
-<p><img src="pictures/azure4.png" alt="picture"></p>
+<p><img src="pictures/azure8.png" alt="picture"></p>
 <ol start="3">
-<li>There should be a license <strong>SEC01 - Security - Sign in with Azure AD</strong>
-<br></li>
+<li>There should be a license <strong>SEC01 - Security - Sign in with Azure AD</strong></li>
 </ol>
 </article>
           </div>
