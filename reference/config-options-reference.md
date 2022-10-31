@@ -240,3 +240,8 @@ version 2020.1 is Main Menu.**Warning:** The current key's value will be taken i
     - "4" - {Name}
 - b.The user sets it manually.
 - c.The key is introduced in version: - 2022
+
+## 48. AllowBasicAuthForAllUsers 
+- a.When this key has value and this value is "1", all users can use basic authentication, regardless of their setting.
+- b.The user sets it manually
+- c.The key is introduced in version: - 2023
