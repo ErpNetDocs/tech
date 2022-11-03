@@ -2,6 +2,11 @@
 
 This algorithm is used to define the tax group specified in a fiscal device print of a sale, invoice or payment document.
 
+When we sell a product both in and outside of Bulgaria, in the product settings, the tax group in the product type must be 0 (zero).
+That gives us 2 options to define the tax group in the Sales Order depending on the country where the product will be delivered:
+1. In the Sales order lines in the Line deal type field for sales/deliveries in Bulgaria, we can apply groups from 1 to 4;
+2. In the Sales order lines in the Line deal type field for sales/deliveries outside of Bulgaria, which require the issuance of a fiscal receipt, we can apply group 1.
+
 ## How it works
 
 The final tax group is set to depend not only on the tax group of the product type (default), but on the **deal type** specified in the sales lines.
