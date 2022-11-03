@@ -27,7 +27,7 @@ Jobs can be started **automatically** by an execution system, following a predef
 
 - The time of day is between 22:00 and 03:00.
 - The current server sessions are **fewer** than 5.
-- The last time the job's procedure was completed is **more** than 12 hours from now.
+- The last time the job's procedure was completed is **more** than 30 minutes from now.
 - The procedure is **not** currently working.
 - There are **no** manually started jobs currently running.
 
