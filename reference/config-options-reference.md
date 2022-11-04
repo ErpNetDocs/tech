@@ -12,7 +12,7 @@ Config options are system settings with global and key importance for the operat
 The options set for the database are visible in the Configurations navigator and can have different values in each database. Is 
 
 
-## А list of configuration keys, their action and possible values:##
+## А list of configuration keys, their action and possible values: ##
 
 ## 1. AllowFirmPlannedParentForReleasedChild 
 - a.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
