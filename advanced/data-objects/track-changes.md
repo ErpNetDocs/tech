@@ -120,7 +120,7 @@ It can severely affect storage requirements and should be used only for small ta
 
 ## Configuring track changes
 
-The track-changes functionality is activated through the **Systems.Core.EntitySettings** table.
+The track-changes functionality is activated through the **Entities navigator** (Systems.Core.EntitySettings table).
 
 **Steps:**
  
