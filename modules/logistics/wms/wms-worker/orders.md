@@ -65,9 +65,12 @@ At the bottom of the screen, there are buttons that help complete the order. On 
 
 ## Line Execution
 
+The line execution starts when we press the <b>Execute</b> button in the lines list or when we Scan a code and a matching line is found.
+The execution guides the worker trough the applicable screens. The applicable screens are .... 
+
 ### Location
 
-Pressing the <b>Execute</b> button indicates that the order is in progress. The option to scan the location of the product will appear. There is already a suggested location that can be used if needed by clicking the <b>Use</b> button next to it:
+The option to scan the location of the product will appear. There is already a suggested location that can be used if needed by clicking the <b>Use</b> button next to it:
  
 ![Location](pictures/order-location.png)
 
@@ -80,6 +83,8 @@ Pressing the <b>Execute</b> button indicates that the order is in progress. The 
 Click on the desired location to make the selection.
 
 ### LUN 
+
+
 
 ### Product 
 
