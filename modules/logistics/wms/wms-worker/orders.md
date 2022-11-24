@@ -29,6 +29,8 @@ The details on the screen include:
 
 Click the <b>Open</b> button to open the order.
 
+## Order lines
+
 A summary of the order lines shows up:
 
 ![Open order](pictures/open-order.png)
@@ -48,21 +50,28 @@ The lines contain information about the requested product and its quantity.
 -	<b>Remain</b> - shows what quantity of the product have already been executed. The remaining quantity that needs to be to be procured is the difference between Total and Remain.
 -	<b>Еxec</b> - a check mark that shows if the line is fully executed on not. 
 
-More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the Info button.
+More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the <b>Info button</b>.
+If the line already has an execution, the Info screen contains more details about it as well.
 
-![Open order](pictures/info-button.png)
+![Info button](pictures/info-button.png)
 
-At the bottom of the screen, there are buttons that help complete the order. On the left side is the button to terminate the order (<b>Stop</b>), on the right is the button that indicates that the employee is ready to start the execution of the order (<b>Execute</b>), and in the middle there is a Menu button that allows access to all functions:
+At the top of the screen there is a general <b>Scan field</b>. When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. The scanned value recognition is done by @parcers (e.g. Product Code parcer, GS1-128 Single Product parcer). The list of currently enabled parsers can be seen in the question mark button. 
+
+![Scan field](pictures/scan-field.png)
+
+At the bottom of the screen, there are buttons that help complete the order. On the left side is the button to terminate the order (<b>Stop</b>), on the right is the button that indicates that the employee is ready to start the execution of the order (<b>Execute</b>), and in the middle there is a <b>Menu button</b> that allows access to all functions:
 
 ![Order actions](pictures/order-actions.png)
 
-## Location
+## Line Execution
+
+### Location
 
 Pressing the <b>Execute</b> button indicates that the order is in progress. The option to scan the location of the product will appear. There is already a suggested location that can be used if needed by clicking the <b>Use</b> button next to it:
  
 ![Location](pictures/order-location.png)
 
-## Availability
+### Availability
 
 <b>AVAILABILITY</b> is a reference through which the quantity of the product can be checked at different locations. The availability option is usable when the product has a Lot. Click to expand and see the availability for the specific product:
 
@@ -70,20 +79,33 @@ Pressing the <b>Execute</b> button indicates that the order is in progress. The 
 
 Click on the desired location to make the selection.
 
-## Product 
+### LUN 
+
+### Product 
 
 After selecting the location, a field for scanning the Product will appear. You could use the product suggested by the system by clicking the <b>Use</b> button. The interface allows for the product to be replaced if needed. 
 Even if the product is not replaced, it still needs to be scanned. 
 
 ![Product](pictures/order-product.png)
 
-## Lot
+### Variant
+
+
+### Lot
 
 If the product has a Lot, the system will ask you to enter it. There could be a suggestion you can use again. The Lot can be scanned. However, if it does not have a barcode, it can be entered manually as long as it already exists in the system. You can check the AVAILABILITY section as well, if needed:
 
 ![Lot](pictures/order-lot.png)
 
-## Quantity
+### Serial
+
+Depending on the product, you might be asked for its serial number, with or without suggested value to use and with AVAILABILITY section again:
+
+![Serial](pictures/order-serial.png)
+
+Once the serial number is selected, there is no need to fill in the Quantity field and it can be skipped.
+
+### Quantity
 
 The Quantity field allows the employee to select the unit and quantity of the product:
 
@@ -91,13 +113,7 @@ The Quantity field allows the employee to select the unit and quantity of the pr
 
 You can make the quick suggested action with the <b>Use</b> button or enter it manually. The <b>INFO</b> section underneath summarizes your previous selections.
 
-## Serial
-
-Depending on the product, you might be asked for its serial number, with or without suggested value to use and with AVAILABILITY section again:
-
-![Serial](pictures/order-serial.png)
-
-Once the serial number is selected, there is no need to fill in the Quantity field and it can be skipped.
+### Destination
 
 ## Complete
 
