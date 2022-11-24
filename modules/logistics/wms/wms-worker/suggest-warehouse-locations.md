@@ -2,7 +2,7 @@
 uid: suggest-warehouse-locations
 ---
 
-# 
+# Suggest warehouse locations
 
 Coordinates are used to mark exactly where specific products are positioned within a given warehouse. When it’s time for a product to be released, it usually takes time to navigate to its location without any form of guidance. With the Suggest Warehouse Locations feature, you can get an instant suggestion about where you should go. 
 
