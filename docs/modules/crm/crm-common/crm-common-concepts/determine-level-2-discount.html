@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Suggest warehouse locations | ERP.net Tech Docs </title>
+    <title>Determine level 2 discount | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Suggest warehouse locations | ERP.net Tech Docs ">
+    <meta name="title" content="Determine level 2 discount | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -76,53 +76,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="suggest-warehouse-locations">
-<h1 id="suggest-warehouse-locations">Suggest warehouse locations</h1>
+            <article class="content wrap" id="_content" data-uid="determine-level-2-discount">
+<h1 id="determine-level-2-discount">Determine level 2 discount</h1>
 
-<p>Coordinates are used to mark exactly where specific products are positioned within a given warehouse. When it’s time for a product to be released, it usually takes time to navigate to its location without any form of guidance. With the Suggest Warehouse Locations feature, you can get an instant suggestion about where you should go.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Warehouse location suggestions are only compatible with lines which are ready for release. They wouldn’t work with mixed lines, or any other types of lines.</p>
-</div>
-<h2 id="using-suggested-warehouse-locations">Using suggested warehouse locations</h2>
-<p>To begin, click the <strong>Orders</strong> panel.</p>
-<p><img src="pictures/orders.png" alt="Picture"></p>
-<p>This takes you to a list of assigned and unassigned orders.
-Proceed by clicking and opening the order that you need to perform.</p>
-<p><img src="pictures/open-order.png" alt="Picture"></p>
-<p>Below, you‘ll find a three-dot button, from which you can access the <strong>Suggest Warehouse Locations</strong> feature:</p>
-<p><img src="../how-it-works/pictures/suggest-locations.png" alt="Picture"></p>
-<p>This immediately triggers a suggestion for warehouse locations from which you can release the product. <br> It can be found within the <em>Loc</em> column:</p>
-<p><img src="../how-it-works/pictures/location.png" alt="Picture"></p>
-<p>In this case, the suggested location for product line 0000001 is “P-01-01-1-A”. You can take the product assigned for release directly from here.
-To proceed with the selected line, click the <strong>Execute</strong> button.</p>
-<p><img src="../how-it-works/pictures/execute-order.png" alt="Picture"></p>
-<p>This takes you to the first screen for dispatching the product. Here, you’ll find more information about the suggested warehouse location, as in how many instances of the product should be released from there.</p>
-<p>To apply the warehouse location suggestion, click the <strong>Use</strong> button.
-This pastes the coordinates in the <em>Location</em> field and takes you to the next step – selecting the product which will be released.</p>
-<p><img src="../how-it-works/pictures/suggested-location.png" alt="Picture"></p>
-<h2 id="specifics">Specifics</h2>
-<p>The function checks whether all warehouse order lines have <em>Task Type == Despatch</em>. If this is false, then an error message appears:</p>
-<p><em>The function can only be used if the task type of all lines is &quot;Despatch&quot;.</em></p>
-<p>For each warehouse order line in a given document, where <em>WarehouseOrderLine.WarehouseLocation == null</em>, are loaded the lines from the Warehouse Availability View, where:</p>
+<p>Level 2 discount is determined automatically only if two conditions are met:</p>
 <ul>
-<li><em>Warehouse = WarehouseOrderLine.WarehouseOrder.Warehouse</em></li>
-<li><em>Product = If ( WarehouseOrderLine.Product != null)</em>, <br>
-then <em>Product == WarehouseOrderLine.Product</em>, <br>
-else skip this line and return <em>WarehouseLocation = null</em> <br></li>
-<li>LogisticUnit = <em>if ( WarehouseOrderLine.LogisticUnit != null)</em>, <br>
-then <em>LogisticUnit == WarehouseOrderLine.LogisticUnit</em>, <br>
-else get the lines for all <em>LogisticUnits</em> <br></li>
-<li>Lot = <em>if ( WarehouseOrderLine.Lot != null)</em>, <br>
-then <em>Lot == WarehouseOrderLine.Lot</em>, <br>
-else get the lines for all <em>Lots</em> <br></li>
-<li>ProductVariant = <em>if ( WarehouseOrderLine.ProductVariant != null)</em>, <br>
-then <em>ProductVariant == WarehouseOrderLine.ProductVariant</em>, <br>
-else get the lines for all <em>ProductVariants</em> <br></li>
-<li>SerialNumber = <em>if ( WarehouseOrderLine.SerialNumber != null)</em>, <br>
-then <em>SerialNumber == WarehouseOrderLine.SerialNumber</em>, <br>
-else get the lines for all <em>SerialNumbers</em> <br></li>
-<li><em>QuantityBaseAvailable != 0</em></li>
+<li>a Price list is set and</li>
+<li>the Auto Apply Discount Level of this Price list is set to 2 or higher.</li>
+</ul>
+<p>When trying to determine a level 2 discount, we have to specify some required conditions:</p>
+<ul>
+<li><strong>Product</strong></li>
+<li><strong>Date</strong></li>
+<li><strong>Quantity</strong></li>
+<li><strong>List of customers</strong></li>
+</ul>
+<p>and some not required:</p>
+<ul>
+<li><strong>Enterprise company</strong> - Only in the specified Enterprise Company</li>
+<li><strong>Enterprise company location</strong> - Only in the specified Enterprise Company location</li>
+<li><strong>Price list</strong> - self-explanatory</li>
+<li><strong>Distribution channel</strong> - self-explanatory</li>
+<li><strong>Current line discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
+</ul>
+<p>ERP.net filters all discounts from level 2 that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to <strong>all</strong> customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.</p>
+<p>Generally, the algorithm is the following:</p>
+<ul>
+<li>ERP.net checks if a Price List is set.</li>
+<li>Then checks the Price List’s Auto Apply Discount Level.</li>
+<li>If Auto Apply Discount Level is set to 2 or higher - ERP.net filters the discounts from level 2</li>
+<li>Among the remaining level 2 discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).</li>
+<li>If a current line discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</li>
+</ul>
+<p>So, after the selection process, one and only one discount is selected and applied to the document line.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<ul>
+<li>Discount Discount Level == 2</li>
+<li>Discount From Date is empty or &lt;= required Date</li>
+<li>Discount To Date is empty or &gt;= required Date</li>
+<li>Discount Product is empty or equal to required Product</li>
+<li>Discount Min Quantity is empty or &lt;= required Quantity</li>
+<li>Discount Max Quantity is empty or &gt;= required Quantity</li>
+<li>Discount Customer is empty or it is in the required list of customers</li>
+<li>Discount Product Group is empty, the same as the product group or parent of the product group</li>
+<li>Discount Distribution Channel is empty or equal to required Distribution channel</li>
+<li>Discount Price List is empty or valid for the required Date</li>
+<li>The discount Target group is empty or at least one of the customers is a member of the target group</li>
+<li>Discount Customer type is empty or it is in the list of customer types, derived from the required customer’s list</li>
 </ul>
 </article>
           </div>
@@ -132,7 +132,7 @@ else get the lines for all <em>SerialNumbers</em> <br></li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/wms-worker/suggest-warehouse-locations.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/crm-common/crm-common-concepts/determine-level-2-discount.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

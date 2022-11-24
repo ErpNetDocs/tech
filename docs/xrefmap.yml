@@ -193,6 +193,9 @@ references:
 - uid: deferred-payments-options
   name: Deferred payments options
   href: modules/crm/sales/sales-concepts/deferred-payments-options.html
+- uid: determine-level-2-discount
+  name: Determine level 2 discount
+  href: modules/crm/crm-common/crm-common-concepts/determine-level-2-discount.html
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
   href: modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html
@@ -259,6 +262,9 @@ references:
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html
+- uid: parcers
+  name: Barcode parcers
+  href: modules/logistics/wms/wms-worker/parcers.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/promotional-packages/index.html
@@ -278,7 +284,7 @@ references:
   name: Document states
   href: concepts/documents/states.html
 - uid: suggest-warehouse-locations
-  name: suggest-warehouse-locations
+  name: Suggest warehouse locations
   href: modules/logistics/wms/wms-worker/suggest-warehouse-locations.html
 - uid: system-variables
   name: System variables

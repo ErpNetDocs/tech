@@ -79,13 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="orders">Orders</h1>
 
-<p>The &quot;Orders&quot; menu provides information on upcoming orders.</p>
+<p>The &quot;Orders&quot; menu provides information on upcoming warehouse orders.</p>
 <p><img src="pictures/orders.png" alt="Orders"></p>
 <p>The order navigator is divided in two categories:</p>
 <ul>
-<li><b>ASSIGNED TO ME</b> - the employee who is logged into their own account can check the orders they have for execution</li>
-<li><b>UNASSIGNED</b> - orders that are not redirected to a specific employee and should be executed by someone who can take them</li>
+<li><b>ASSIGNED TO ME</b> - the warehouse worker who is logged into their own account can check the orders they have for execution.</li>
+<li><b>UNASSIGNED</b> - orders that are not assigned to a specific worker and should be executed by someone who can take them.</li>
 </ul>
+<p>Above the list is a search bar that can be used to filter orders. In it, you can search by scanning or entering an order number, party name (if any) or the document type.</p>
 <p>The total number of orders can be checked at the bottom of the page.</p>
 <h2 id="order-details">Order details</h2>
 <p>Click an order to see more information about it.</p>
@@ -96,49 +97,62 @@
 <li><b>Document Date</b> - the date of the order</li>
 <li><b>Creation Time</b> - the time and date of creation of the order;</li>
 <li><b>Lines Count</b> - the rows number in the order table;</li>
-<li><b>Total Qty</b> - the sum of quantities, regardless of the unit of measurement.</li>
+<li><b>Total Qty</b> - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit.</li>
 </ul>
 <p>Click the <b>Open</b> button to open the order.</p>
+<h2 id="order-lines">Order lines</h2>
 <p>A summary of the order lines shows up:</p>
 <p><img src="pictures/open-order.png" alt="Open order"></p>
 <p>The screen has three tabs:</p>
 <ul>
-<li><b>All</b> - shows all lines in the order regardless of whether they have been fulfilled or not</li>
-<li><b>Remaining</b> - shows rows that have not yet been fulfilled</li>
-<li><b>Executed</b> - shows the rows that have already been fulfilled</li>
+<li><b>All</b> - shows all lines in the order regardless of whether they have been executed or not</li>
+<li><b>Remaining</b> - shows rows that have not yet been executed</li>
+<li><b>Executed</b> - shows the rows that have already been executed</li>
 </ul>
 <p>The lines contain information about the requested product and its quantity.</p>
 <ul>
 <li><b>Task</b> - shows the main task;</li>
 <li><b>Loc</b> - stands for Location of the Product.</li>
 <li><b>Prd</b> - stands for Product.</li>
-<li><b>Total Remain</b> - shows how many pieces of the product need to be procured. The amount of the total number is written on the top line - Qty (4), and on the bottom line is written the quantity that remains to be obtained-Remaining (4). In this case, not a single piece of the total number has been received yet, and the necessary 4 pieces are yet to be procured.</li>
-<li><b>Еxec</b> - a check mark appears in this column when the row is completed.</li>
+<li><b>Total</b> - shows what quantity of the product needs to be procured.</li>
+<li><b>Remain</b> - shows what quantity of the product have already been executed. The remaining quantity that needs to be to be procured is the difference between Total and Remain.</li>
+<li><b>Еxec</b> - a check mark that shows if the line is fully executed on not.</li>
 </ul>
-<p>At the bottom of the screen, there are buttons that help complete the order. On the left side is the button to terminate the order (<b>Stop</b>), on the right is the button that indicates that the employee is ready to start the execution of the order (<b>Execute</b>), and in the middle there is a Menu button that allows access to all functions:</p>
+<p>More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the <b>Info button</b>.
+If the line already has an execution, the Info screen contains more details about it as well.</p>
+<p><img src="pictures/info-button.png" alt="Info button"></p>
+<p>At the top of the screen there is a general <b>Scan field</b>. When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. The scanned value recognition is done by <a class="xref" href="parcers.html">Barcode parcers</a> (e.g. Product Code parcer, GS1-128 Single Product parcer). The list of currently enabled parsers can be seen in the question mark button.</p>
+<p><img src="pictures/scan-field.png" alt="Scan field"></p>
+<p>At the bottom of the screen, there are buttons that help complete the order. On the left side is the button to terminate the order (<b>Stop</b>), on the right is the button that indicates that the employee is ready to start the execution of the order (<b>Execute</b>), and in the middle there is a <b>Menu button</b> that allows access to all functions:</p>
 <p><img src="pictures/order-actions.png" alt="Order actions"></p>
-<h2 id="location">Location</h2>
-<p>Pressing the <b>Execute</b> button indicates that the order is in progress. The option to scan the location of the product will appear. There is already a suggested location that can be used if needed by clicking the <b>Use</b> button next to it:</p>
+<h2 id="line-execution">Line Execution</h2>
+<p>The line execution starts when we press the <b>Execute</b> button in the lines list or when we Scan a code and a matching line is found.
+The execution guides the worker trough the applicable screens. The applicable screens are ....</p>
+<h3 id="location">Location</h3>
+<p>The option to scan the location of the product will appear. There is already a suggested location that can be used if needed by clicking the <b>Use</b> button next to it:</p>
 <p><img src="pictures/order-location.png" alt="Location"></p>
-<h2 id="availability">Availability</h2>
+<h3 id="availability">Availability</h3>
 <p><b>AVAILABILITY</b> is a reference through which the quantity of the product can be checked at different locations. The availability option is usable when the product has a Lot. Click to expand and see the availability for the specific product:</p>
 <p><img src="pictures/order-availability.png" alt="Availability"></p>
 <p>Click on the desired location to make the selection.</p>
-<h2 id="product">Product</h2>
+<h3 id="lun">LUN</h3>
+<h3 id="product">Product</h3>
 <p>After selecting the location, a field for scanning the Product will appear. You could use the product suggested by the system by clicking the <b>Use</b> button. The interface allows for the product to be replaced if needed.
 Even if the product is not replaced, it still needs to be scanned.</p>
 <p><img src="pictures/order-product.png" alt="Product"></p>
-<h2 id="lot">Lot</h2>
+<h3 id="variant">Variant</h3>
+<h3 id="lot">Lot</h3>
 <p>If the product has a Lot, the system will ask you to enter it. There could be a suggestion you can use again. The Lot can be scanned. However, if it does not have a barcode, it can be entered manually as long as it already exists in the system. You can check the AVAILABILITY section as well, if needed:</p>
 <p><img src="pictures/order-lot.png" alt="Lot"></p>
-<h2 id="quantity">Quantity</h2>
-<p>The Quantity field allows the employee to select the unit and quantity of the product:</p>
-<p><img src="pictures/order-quantity.png" alt="Quantity"></p>
-<p>You can make the quick suggested action with the <b>Use</b> button or enter it manually. The <b>INFO</b> section underneath summarizes your previous selections.</p>
-<h2 id="serial">Serial</h2>
+<h3 id="serial">Serial</h3>
 <p>Depending on the product, you might be asked for its serial number, with or without suggested value to use and with AVAILABILITY section again:</p>
 <p><img src="pictures/order-serial.png" alt="Serial"></p>
 <p>Once the serial number is selected, there is no need to fill in the Quantity field and it can be skipped.</p>
+<h3 id="quantity">Quantity</h3>
+<p>The Quantity field allows the employee to select the unit and quantity of the product:</p>
+<p><img src="pictures/order-quantity.png" alt="Quantity"></p>
+<p>You can make the quick suggested action with the <b>Use</b> button or enter it manually. The <b>INFO</b> section underneath summarizes your previous selections.</p>
+<h3 id="destination">Destination</h3>
 <h2 id="complete">Complete</h2>
 <p>When you are done with the execution of the order, press <b>Complete Order</b>.
 A pop-up window will appear asking for permission to change the status of the order to Completed.</p>
