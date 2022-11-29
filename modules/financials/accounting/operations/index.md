@@ -1,6 +1,6 @@
 # Operations
 
-**[Algorithm of Currency revaluation](C:\Users\i.ivanov\Documents\GitHub\tech\modules\financials\accounting\operations\currency-revaluation.md)**
+**[Algorithm of Currency revaluation](https://docs.erp.net/tech/modules/financials/accounting/operations/currency-revaluation.html)**
 
 
 
