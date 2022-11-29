@@ -11,7 +11,7 @@
 
 ## 3. It must be defined custom attributes with the following codes 
 
-### 3.1. Excise Stamp Type
+### 3.1. ExciseProductType
 
 \-     **Exc_BrandName** - Allowed values from CL175 nomencature. Limited to alowed values
 
