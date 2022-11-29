@@ -1,4 +1,4 @@
-# Currency revaluation
+# Currency revaluation algorithm
 
 
 
