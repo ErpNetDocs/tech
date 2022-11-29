@@ -4,12 +4,18 @@
 
 
 
-1. Input data
-   - Accounts
-   - Date of revaluation
-   - Currency directory
-2. Revaluation is made for each currency included in currency directory
-3. Calculate Balance и BalanceBase for the date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.
+1. Input data 
+
+   - Document Operation
+
+   - Accounts - accounts in the rows of accounting template of Operation
+   - Date of revaluation = Date of the document Operation
+   - Currency directory - Currency Directory set in Operation
+   - Accounting vouchers
+
+2. Revaluation is made for each currency included in the Currency directory
+
+3. Calculate Balance и BalanceBase for the Date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.
 
    1.1. If [CurrencyValuationMethod](https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod) <> Balance_Reference_Document.
 
