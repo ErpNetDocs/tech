@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+- name: Accounting
+  href: accounting/toc.yml
+  topicHref: accounting/index.md
 - name: Fixed assets
   href: fixed-assets/toc.yml
   topicHref: fixed-assets/index.md
