@@ -5693,6 +5693,42 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/accounting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/accounting/index.html",
+          "hash": "+r6czvuhI8A57TWOfbPhtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/accounting/operations/currency-revaluation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/accounting/operations/currency-revaluation.html",
+          "hash": "0DGHEEXDSeYUkkgyqah46w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/accounting/operations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/accounting/operations/index.html",
+          "hash": "VsG2IT6zw/nW9k2of+Ld0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/cost-accounting/add-production-function.md",
       "output": {
         ".html": {
@@ -5792,7 +5828,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/setup.html",
-          "hash": "aRQ0i1xpX/pAjtpe5fQu/g=="
+          "hash": "MKCVhyO5bm19tW/u0qj4rQ=="
         }
       },
       "is_incremental": false,
