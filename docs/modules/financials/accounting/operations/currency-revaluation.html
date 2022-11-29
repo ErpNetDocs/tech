@@ -82,14 +82,21 @@
 <ol>
 <li><p>Input data</p>
 <ul>
-<li>Accounts</li>
-<li>Date of revaluation</li>
-<li>Currency directory</li>
+<li><p>Document Operation</p>
+</li>
+<li><p>Accounts - accounts in the rows of accounting template of Operation</p>
+</li>
+<li><p>Date of revaluation = Date of the document Operation</p>
+</li>
+<li><p>Currency directory - Currency Directory set in Operation</p>
+</li>
+<li><p>Accounting vouchers</p>
+</li>
 </ul>
 </li>
-<li><p>Revaluation is made for each currency included in currency directory</p>
+<li><p>Revaluation is made for each currency included in the Currency directory</p>
 </li>
-<li><p>Calculate Balance и BalanceBase for the date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.</p>
+<li><p>Calculate Balance и BalanceBase for the Date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.</p>
 <p>1.1. If <a href="https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod">CurrencyValuationMethod</a> &lt;&gt; Balance_Reference_Document.</p>
 <p>Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter. (ReferencedDocument = NULL).</p>
 <p>1.2. If <a href="https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod">CurrencyValuationMethod</a> = Balance_Reference_Document</p>

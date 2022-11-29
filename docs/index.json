@@ -1232,7 +1232,7 @@
   "modules/financials/accounting/operations/currency-revaluation.html": {
     "href": "modules/financials/accounting/operations/currency-revaluation.html",
     "title": "Currency revaluation algorithm | ERP.net Tech Docs",
-    "keywords": "Currency revaluation algorithm Input data Accounts Date of revaluation Currency directory Revaluation is made for each currency included in currency directory Calculate Balance и BalanceBase for the date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument. 1.1. If CurrencyValuationMethod <> Balance_Reference_Document. Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter. (ReferencedDocument = NULL). 1.2. If CurrencyValuationMethod = Balance_Reference_Document Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument. Calculate the Amount of the Exchange difference for the each group in Base Currency. Amount = RoundAmount(BaseCurrency, Balance * CurrencyDirectoryLine.RateMultiplier / CurrencyDirectoryLine.RateDivisor) - BalanceBase) Create Accounting voucher with these differences in BaseCurrency for each group. Amount (Currency, Account, ItemKey, CostCenter, ProfitCenterI, ReferencedDocument)"
+    "keywords": "Currency revaluation algorithm Input data Document Operation Accounts - accounts in the rows of accounting template of Operation Date of revaluation = Date of the document Operation Currency directory - Currency Directory set in Operation Accounting vouchers Revaluation is made for each currency included in the Currency directory Calculate Balance и BalanceBase for the Date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument. 1.1. If CurrencyValuationMethod <> Balance_Reference_Document. Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter. (ReferencedDocument = NULL). 1.2. If CurrencyValuationMethod = Balance_Reference_Document Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument. Calculate the Amount of the Exchange difference for the each group in Base Currency. Amount = RoundAmount(BaseCurrency, Balance * CurrencyDirectoryLine.RateMultiplier / CurrencyDirectoryLine.RateDivisor) - BalanceBase) Create Accounting voucher with these differences in BaseCurrency for each group. Amount (Currency, Account, ItemKey, CostCenter, ProfitCenterI, ReferencedDocument)"
   },
   "modules/financials/accounting/operations/index.html": {
     "href": "modules/financials/accounting/operations/index.html",
@@ -1302,7 +1302,7 @@
   "modules/financials/index.html": {
     "href": "modules/financials/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "VAT Fixed assets Cost accounting Payments Excise"
+    "keywords": "Accounting VAT Fixed assets Cost accounting Payments Excise"
   },
   "modules/financials/overview.html": {
     "href": "modules/financials/overview.html",
