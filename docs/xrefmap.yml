@@ -199,9 +199,9 @@ references:
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
   href: modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html
-- uid: determine-line-discount
-  name: Determine line discount
-  href: modules/crm/crm-common/crm-common-concepts/determine-line-discount.html
+- uid: determine-line-discounts
+  name: Determine line discounts
+  href: modules/crm/crm-common/crm-common-concepts/determine-line-discounts.html
 - uid: determine-product-price
   name: Determine product price
   href: modules/crm/crm-common/crm-common-concepts/determine-product-price.html
