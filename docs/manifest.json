@@ -5243,23 +5243,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/determine-level-2-discount.md",
+      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-level-2-discount.html",
-          "hash": "Jru1ohiFWzg2pmoNaZQcXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discounts.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discounts.html",
-          "hash": "Dr6bIHGXPBDh2iVuWL6ayw=="
+          "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.html",
+          "hash": "cqCS15Q/bfatLmekQPR9zQ=="
         }
       },
       "is_incremental": false,
@@ -7812,7 +7800,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "qqG3zEyRBUXGmqeQvnrZbA=="
+          "hash": "OyxMrwKe2LxjQHoAqdlxdw=="
         }
       },
       "is_incremental": false,
