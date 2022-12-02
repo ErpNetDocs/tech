@@ -1,9 +1,7 @@
 - name: Overview
   href: index.md
-- name: Determine line discounts 
-  href: determine-line-discounts.md
-- name: Determine level 2 discount 
-  href: determine-level-2-discount.md 
+- name: Determine line discount 
+  href: determine-line-discount.md
 - name: Determine product price
   href: determine-product-price.md
 - name: Pricing
