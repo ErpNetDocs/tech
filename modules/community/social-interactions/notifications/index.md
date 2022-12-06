@@ -40,10 +40,11 @@ Also, most of the notifications are created automatically via business rules whe
 | ---- | ---- | ----------- |
 | NT_DOC_STATE_IMPLICIT | Document | **[R33718](https://docs.erp.net/model/business-rules/R33718.html) Document**- Notify All Implicit Followers | If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification. |
 | NT_SOC_REPLY | Social | **[R33428](https://docs.erp.net/model/business-rules/R33428.html) SocialComment**- Notify User Comment Replied | There was a reply to your post or comment. |
-| NT_SOC_NEW_POST | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify All Object Followers | New post in a group, in which you're a member. |
+| NT_SOC_NEW_POST | Social |  | New post in a group, in which you're a member. |
 | NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComment**- Notify The Mentioned User | You're mentioned in a post or comment. |
 | NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User Comment Reaction | There was a reaction to your post or comment. |
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
+| NT_SOC_NEW_COMMENT | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify All Object Followers | New comment to an object you are following. |
 
 ## I don't care about notifications
 
