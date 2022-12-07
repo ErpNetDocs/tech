@@ -2,10 +2,16 @@
   href: index.md
 - name: AGGREGATE CLIENT COMMIT
   href: aggregate-client-commit.md
+- name: AGGREGATE CLIENT COMMITTED
+  href: aggregate-client-committed.md
 - name: CLIENT COMMIT
   href: client-commit.md
+- name: CLIENT COMMITTED
+  href: client-committed.md
 - name: COMMIT
   href: commit.md
+- name: COMMITTED
+  href: committed.md  
 - name: CREATE NEW
   href: create-new.md  
 - name: STATECHANGED

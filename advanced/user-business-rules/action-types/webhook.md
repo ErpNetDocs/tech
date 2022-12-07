@@ -28,7 +28,7 @@ WEBHOOK is compatible with all events.
 
 ### Example:
 
-А **[business rule](../business-rules/index.md)** executes a webhook when a service activity is created or updated.
+А **[business rule](../index.md)** executes a webhook when a service activity is created or updated.
 
 | Repository                             |                 |                    |                  |
 | -------------------------------------- | --------------- | ------------------ | ---------------- |
