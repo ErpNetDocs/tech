@@ -128,34 +128,28 @@
 </tbody>
 </table>
 <p>Let's say you need to get a column with email addresses.</p>
-<p>If a person has more than one email, you should write a random one. <br> If a specific email is needed, more filters could be applied.</p>
 <p>The calculated attribute would have the following expressions:</p>
-<pre><code>10 GETOBJVALUE EXP:20 EXP:15
-15 GETOBJVALUE REF:ContactMechanism ATTRIB:Name
-20 FIRST EXP:21 
-21 FILTER EXP:30 EXP:22
-22 EQUAL EXP:23 EXP:25
-23 GETOBJVALUE REF:ContactMechanism ATTRIB:ContactMechanismType
-25 CAST CONST:1 CONST:Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType
-30 SELECT REPO:General.Contacts.PartyContactMechanisms EXP:40
-40 WHERE EXP:50 
-50 EQUAL ATTRIB:PartyId EXP:60
-60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
+<pre><code>10:GETOBJVALUE	EXP:20	ATTRIB:Name	
+20:GETOBJVALUE	EXP:30	REF:ContactMechanism
+30:FIRST	EXP:40
+40:FILTER	CHILD:ContactMechanisms	EXP:50	
+50:EQUAL	EXP:60	CONST:1			
+60:CAST	EX:70	CONST:System.Int32	
+70:GETOBJVALUE	REF:ContactMechanism	ATTRIB:ContactMechanismType	
 </code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
-<li>10: from the object from EXP:20, get the attribute from EXP:15</li>
-<li>15: get the value of the attribute name from the referent object <strong>ContactMechanism</strong></li>
-<li>20: get the first element from the list in EXP:21</li>
-<li>21: filter the list in EXP:30 by the conditions in EXP:22</li>
-<li>22: check if EXP:23 is equal to EXP:25</li>
-<li>23: get the value of the attribute <strong>ContactMechanismType</strong> from the referent object <strong>ContactMechanism</strong></li>
-<li>25: cast the constant of '1' (integer) to type <strong>Aloe.EnterpriseOne.Model.General.Contacts.ContactMechanismsRepository+ContactMechanismType</strong></li>
-<li>30: select from repository <strong>General.Contacts.PartyContactMechanisms</strong> and filter it by EXP:40</li>
-<li>40: the filter is in EXP:50</li>
-<li>50: check if the value of attribute PartyId is equal to EXP:60</li>
-<li>60: get the value of attribute <strong>PartyId</strong> of the input object of expression 10</li>
+<li>10: get the value of the Name attribute from EXP:20</li>
+<li>20: get the referent object <strong>ContactMechanism</strong> of EXP:30</li>
+<li>30: get the first value of the list returned by EXP:40</li>
+<li>40: filter the list of records in the child table <strong>ContactMechanisms</strong> by the conditions in EXP:50</li>
+<li>50: check if EXP:60 is equal to 1 (1 = email)</li>
+<li>60: cast EXP:70 which contains the <strong>ContactMechanismType</strong> to integer</li>
+<li>70: get the value of the attribute <strong>ContactMechanismType</strong> from the referent object <strong>ContactMechanism</strong></li>
 </ul>
+<p><strong>Notes</strong>
+If a person has more than one email, the attribute will return a random one. If a specific email is needed, more filters could be applied.
+If the person has no emails, the attribute will return an error. If you want to avoid that, you need to couny the records in the CHILD:ContactMechanisms first, and to try to get the email only if the records are more than one.</p>
 </article>
           </div>
           
