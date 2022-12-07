@@ -25,30 +25,23 @@ If a person has more than one email, the attribute will return a random one. <br
 The calculated attribute would have the following expressions:
 
 ```
-10 GETOBJVALUE EXP:20 EXP:15
-15 GETOBJVALUE REF:ContactMechanism ATTRIB:Name
-20 FIRST EXP:21 
-21 FILTER EXP:30 EXP:22
-22 EQUAL EXP:23 CONST: 1
-23 CAST EXP:25 CONST: System.Int32
-23 GETOBJVALUE REF:ContactMechanism ATTRIB:ContactMechanismType
-30 SELECT REPO:General.Contacts.PartyContactMechanisms EXP:40
-40 WHERE EXP:50 
-50 EQUAL ATTRIB:PartyId EXP:60
-60 GETOBJVALUE INPUT:10 ATTRIB:PartyId
+10:GETOBJVALUE	EXP:20	ATTRIB:Name	
+20:GETOBJVALUE	EXP:30	REF:ContactMechanism
+30:FIRST	EXP:40
+40:FILTER	CHILD:ContactMechanisms	EXP:50	
+50:EQUAL	EXP:60	CONST:1			
+60:CAST	EX:70	CONST:System.Int32	
+70:GETOBJVALUE	REF:ContactMechanism	ATTRIB:ContactMechanismType	
 ```
 
 **Explanation:**
 
-- 10: from the object from EXP:20, get the attribute from EXP:15
-- 15: get the value of the attribute name from the referent object **ContactMechanism**
-- 20: get the first element from the list in EXP:21
-- 21: filter the list in EXP:30 by the conditions in EXP:22
-- 22: check if EXP:23 is equal to 1
-- 23: cast EXP:25 which contains the **ContactMechanismType** to integer
-- 25: get the value of the attribute **ContactMechanismType** from the referent object **ContactMechanism**
-- 30: select from repository **General.Contacts.PartyContactMechanisms** and filter it by EXP:40
-- 40: the filter is in EXP:50
-- 50: check if the value of attribute PartyId is equal to EXP:60
-- 60: get the value of attribute **PartyId** of the input object of expression 10
+- 10: get the value of the Name attribute from EXP:20
+- 20: get the referent object **ContactMechanism** of EXP:30
+- 30: get the first value of the list returned by EXP:40
+- 40: filter the list of records in the child table **ContactMechanisms** by the conditions in EXP:50
+- 50: check if EXP:60 is equal to 1 (1 = email)
+- 60: cast EXP:70 which contains the **ContactMechanismType** to integer
+- 70: get the value of the attribute **ContactMechanismType** from the referent object **ContactMechanism**
+
 
