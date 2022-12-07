@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User business rules - Events | ERP.net Tech Docs </title>
+    <title>CLIENT COMMITTED | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User business rules - Events | ERP.net Tech Docs ">
+    <meta name="title" content="CLIENT COMMITTED | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,22 +76,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules---events">User business rules - Events</h1>
+            <article class="content wrap" id="_content" data-uid="client-committed">
+<h1 id="client-committed">CLIENT COMMITTED</h1>
 
 <br>
-<ul>
-<li><strong><a href="aggregate-client-commit.html">AGGREGATE CLIENT COMMIT</a></strong></li>
-<li><strong><a href="aggregate-client-committed.html">AGGREGATE CLIENT COMMITTED</a></strong></li>
-<li><strong><a href="client-commit.html">CLIENT COMMIT</a></strong></li>
-<li><strong><a href="client-committed.html">CLIENT COMMITTED</a></strong></li>
-<li><strong><a href="commit.html">COMMIT</a></strong></li>
-<li><strong><a href="committed.html">COMMITTED</a></strong></li>
-<li><strong><a href="create-new.html">CREATENEW</a></strong></li>
-<li><strong><a href="statechanged.html">STATECHANGED</a></strong></li>
-<li><strong><a href="statechanging.html">STATECHANGING</a></strong></li>
-<li><strong><a href="voiding.html">VOIDING</a></strong></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">CLIENTCOMMITTED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-end</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs after saving a change to an object, made by a client application. If the change is made by the server, this event won't be triggered.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2023 <br> Updated: -</td>
+</tr>
+</tbody>
+</table>
+<p>This event is a variation of <strong><a href="committed.html">COMMITTED</a></strong>. Both occur for a particular object from the repository of a <strong><a href="../index.html">user business rule</a></strong> after an object change is saved.</p>
+<p>However, CLIENT COMMITTED is triggered <strong>only</strong> if the saving was initiated by a client application, such as ERP.net Windows Client or ERP.net Web Client. If an object is modified by the ERP.net server, the event <strong>won't</strong> be triggered.</p>
+<p>This is especially useful for data-sync scenarios when the external application have to be notified (e.g. via a <a href="../action-types/webhook.html">webhook</a>) when an entity changes (or is created).</p>
 </article>
           </div>
           
@@ -100,7 +113,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/client-committed.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

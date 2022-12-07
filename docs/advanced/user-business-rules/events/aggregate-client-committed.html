@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>User business rules - Events | ERP.net Tech Docs </title>
+    <title>AGGREGATE CLIENT COMMITTED | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="User business rules - Events | ERP.net Tech Docs ">
+    <meta name="title" content="AGGREGATE CLIENT COMMITTED | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,22 +76,55 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="user-business-rules---events">User business rules - Events</h1>
+            <article class="content wrap" id="_content" data-uid="aggregate-client-committed">
+<h1 id="aggregate-client-committed">AGGREGATE CLIENT COMMITTED</h1>
 
 <br>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">AGGREGATECLIENTCOMMITTED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Layer</strong></td>
+<td style="text-align: left;">Back-end</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;">Occurs for the aggregate root after a change is made to an <strong><a href="../../concepts/aggregates.html">aggregate</a></strong> object, but only when the change is made by a client application. If it's made by the server, the event won't be triggered.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">Introduced: 2023 <br> Updated:-</td>
+</tr>
+</tbody>
+</table>
+<p>This event is a variation of the <strong><a href="client-committed.html">CLIENT COMMITTED</a></strong> event. It allows triggering <strong><a href="../index.html">user business rules</a></strong> for objects which are an aggregate root. This can happen when there's a change for the object itself and/or when some of its referenced objects are edited.</p>
+<p><strong>Let's take a look at the following structure - a single aggregate in ERP.net:</strong></p>
 <ul>
-<li><strong><a href="aggregate-client-commit.html">AGGREGATE CLIENT COMMIT</a></strong></li>
-<li><strong><a href="aggregate-client-committed.html">AGGREGATE CLIENT COMMITTED</a></strong></li>
-<li><strong><a href="client-commit.html">CLIENT COMMIT</a></strong></li>
-<li><strong><a href="client-committed.html">CLIENT COMMITTED</a></strong></li>
-<li><strong><a href="commit.html">COMMIT</a></strong></li>
-<li><strong><a href="committed.html">COMMITTED</a></strong></li>
-<li><strong><a href="create-new.html">CREATENEW</a></strong></li>
-<li><strong><a href="statechanged.html">STATECHANGED</a></strong></li>
-<li><strong><a href="statechanging.html">STATECHANGING</a></strong></li>
-<li><strong><a href="voiding.html">VOIDING</a></strong></li>
+<li>sales order (which is the aggregate's root)</li>
+<li>sales order lines of this sales order</li>
+<li>distributed amounts for each of these sales order lines</li>
+<li>document amounts of this sales order</li>
+<li>payment plan of this sales order</li>
 </ul>
+<p>In the example above, a CLIENT COMMITTED event would occur for the sales order <strong>only</strong> if its object has changed. The AGGREGATE CLIENT COMMITTED will occur if <strong>any</strong> of the objects in the aggregate have changed. Changing just a single sales order line without changing the order itself <strong>still</strong> triggers the aggregate event.</p>
+<p><strong>In summary, a user business rule with an aggregate client committed event will be triggered when:</strong></p>
+<ul>
+<li><p>the saving was performed by a client application;</p>
+</li>
+<li><p>the repository of the user business rule is an aggregate root entity;</p>
+</li>
+<li><p>there's a change for the aggregate root or for some of its objects, part of the aggregate tree.</p>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The main difference with the &quot;AGGREGATECLIENTCOMMIT&quot; event is that AGGREGATECLIENTCOMMITTED occurs <strong>after</strong> the actual commit. I.e. if AGGREGATECLIENTCOMMITTED triggers, there's a guarantee that the entity <strong>is</strong> already saved and exists in the database.</p>
+</div>
 </article>
           </div>
           
@@ -100,7 +133,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/events/aggregate-client-committed.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

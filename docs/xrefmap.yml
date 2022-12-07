@@ -4,6 +4,9 @@ references:
 - uid: aggregate-client-commit
   name: AGGREGATE CLIENT COMMIT
   href: advanced/user-business-rules/events/aggregate-client-commit.html
+- uid: aggregate-client-committed
+  name: AGGREGATE CLIENT COMMITTED
+  href: advanced/user-business-rules/events/aggregate-client-committed.html
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
@@ -184,9 +187,15 @@ references:
 - uid: cao-WHERE
   name: WHERE
   href: advanced/calculated-attributes/operators/where.html
+- uid: client-committed
+  name: CLIENT COMMITTED
+  href: advanced/user-business-rules/events/client-committed.html
 - uid: coding-systems
   name: Coding systems
   href: modules/general/products/coding-systems.html
+- uid: committed
+  name: COMMITTED
+  href: advanced/user-business-rules/events/committed.html
 - uid: config-options-reference
   name: Config options reference
   href: reference/config-options-reference.html

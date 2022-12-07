@@ -1882,7 +1882,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "AdPS9IyjdFHp38EsdMvI0Q=="
+          "hash": "2i0Ul9TiNOwsxWkJqYvBxg=="
         }
       },
       "is_incremental": false,
@@ -1961,15 +1961,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/action-types/webhook.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/webhook.html",
-          "hash": "Ue7SqD2PZ1UDG1YzNtCquA=="
+          "hash": "OO4VvA7NaYjws0hYp/IM/w=="
         }
       },
       "is_incremental": false,
@@ -1989,11 +1986,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/aggregate-client-committed.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/aggregate-client-committed.html",
+          "hash": "cPs02s/fPeDtLysANrfsAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/client-commit.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/client-commit.html",
           "hash": "J4HSrFAF0xwNjKtHTdN8WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/client-committed.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/client-committed.html",
+          "hash": "SIapOk2V2Wbj3yZDmbldPw=="
         }
       },
       "is_incremental": false,
@@ -2013,6 +2034,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/committed.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/committed.html",
+          "hash": "K49p7H7ki7o3v77YteJIQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/create-new.md",
       "output": {
         ".html": {
@@ -2024,15 +2057,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/events/index.html",
-          "hash": "WpyZfHHNVf+VkO+PZidqNw=="
+          "hash": "Xm4q1LEjaDqi/eO4pSJP5w=="
         }
       },
       "is_incremental": false,
