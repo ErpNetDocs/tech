@@ -20,9 +20,7 @@ Its values and codes are as follows:
 
 Let's say you need to get a column with email addresses. 
 
-
-The calculated attribute would have the following expressions:
-
+The repositiry of the calculated attribute would be "General.Contacts.Parties" and it would have the following expressions:
 ```
 10:GETOBJVALUE	EXP:20	ATTRIB:Name	
 20:GETOBJVALUE	EXP:30	REF:ContactMechanism
