@@ -20,7 +20,6 @@ Its values and codes are as follows:
 
 Let's say you need to get a column with email addresses. 
 
-If a person has more than one email, the attribute will return a random one. <br> If a specific email is needed, more filters could be applied. 
 
 The calculated attribute would have the following expressions:
 
@@ -44,4 +43,6 @@ The calculated attribute would have the following expressions:
 - 60: cast EXP:70 which contains the **ContactMechanismType** to integer
 - 70: get the value of the attribute **ContactMechanismType** from the referent object **ContactMechanism**
 
-
+**Notes**
+If a person has more than one email, the attribute will return a random one. If a specific email is needed, more filters could be applied. 
+If the person has no emails, the attribute will return an error. If you want to avoid that, you need to couny the records in the CHILD:ContactMechanisms first, and to try to get the email only if the records are more than one.
