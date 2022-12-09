@@ -32,7 +32,9 @@ and some not required:
 Generally, the algorithm is the following:
 
 •	ERP.net filters the discounts from the respective level.
+
 •	Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).
+
 •	If a current line discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.
 
 So, after the selection process, one and only one discount is selected and applied to the document line.
