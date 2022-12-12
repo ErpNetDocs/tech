@@ -587,7 +587,7 @@
   "advanced/jobs/J33898.html": {
     "href": "advanced/jobs/J33898.html",
     "title": "J33898 Delete old document versions | ERP.net Tech Docs",
-    "keywords": "J33898 Delete old document versions Code J33898 Entity General.DocumentVersions Entity Job type name Delete Old Document Versions Parameters - Description The system job deletes all old document versions, whose UpdateTime is older than 60 days: (Today - UpdateTime.Date()) > 60 days First to process DocumentVersion.UpdateTime (ASC) Records per iteration 1000 Automatically created YES Version Introduced: To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
+    "keywords": "J33898 Delete old document versions Code J33898 Entity General.DocumentVersions Entity Job type name Delete Old Document Versions Parameters - Description The system job deletes all old document versions, whose UpdateTime is older than 60 months: (Today - UpdateTime) > 60 months First to process DocumentVersion.UpdateTime (ASC) Records per iteration 1000 Automatically created YES Version Introduced: To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
   },
   "advanced/jobs/template.html": {
     "href": "advanced/jobs/template.html",
