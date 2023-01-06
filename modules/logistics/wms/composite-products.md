@@ -25,16 +25,16 @@ How do you create a Composite Product then – here is an example:
 1. Create a new Product.
 This will be your composite product, which you are going to be selling to the customers.
 
-![WMS Worker](pictures/wms-worker.png)
+![Composite Product](pictures/composite-product.png)
 
 2. Create a new Product for all of the composite product‘s components.
 
-![WMS Worker](pictures/wms-worker.png)
+![Component Product](pictures/component-product.png)
 
 3. Add the Products created in step 2 in the Components panel of the Product created in step 1. 
 Make sure that you specify the Quantity, as this is the number of packages of this component that are needed to compose the product.
 
-![WMS Worker](pictures/wms-worker.png)
+![Composite Product Components](pictures/composite-product-components.png)
 
 ## Further reading
 Working with Composite Products
