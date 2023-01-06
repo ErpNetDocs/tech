@@ -21,7 +21,8 @@ This is very common in the furniture industry, where a single wardrobe can be st
 
 > **_NOTE:_** Only products which are not using Variable Measurement Ratios can be defined as composite products.
 
-**Component Product Components** are ordinary products as well. They become components once they are set as a Composite Product Component for another product. It is not necessary for each individual part to be defined as a separate component. Components are rather the packages of parts that are necessary to assemble 1 unit of the final product.
+**Component Product Components** are ordinary products as well. They become components once they are set as a Composite Product Component for another product. 
+It is not necessary for each individual part to be defined as a separate component. Components are rather the packages of parts that are necessary to assemble 1 unit of the final product. For example - wardrobe doors, their handles and screws should be defined as 1 component if they are packed in the same (1) package.
 
 How do you create a Composite Product then – here is an **example:**
 1. Create a new Product.
