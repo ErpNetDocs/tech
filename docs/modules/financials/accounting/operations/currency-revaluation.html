@@ -79,35 +79,35 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="currency-revaluation-algorithm">Currency revaluation algorithm</h1>
 
-<ol>
-<li><p>Input data</p>
+<p>This topic describes the currency revaluation algorithm of accounts have balances in a currency other than the base currency when the revalution is performed using accounting operations.</p>
+<h2 id="input-data">Input data</h2>
 <ul>
-<li><p>Document Operation</p>
-</li>
-<li><p>Accounts - accounts in the rows of accounting template of Operation</p>
-</li>
-<li><p>Date of revaluation = Date of the document Operation</p>
-</li>
-<li><p>Currency directory - Currency Directory set in Operation</p>
-</li>
-<li><p>Accounting vouchers</p>
-</li>
+<li>an accounting Operation document</li>
+<li>a list of Accounts - it is derived from the accounts indicated in the lines of the accounting template set up for the Operation document, where &quot;Amount Column Name&quot; == &quot;Debit Exchange Difference&quot; OR &quot;Credit Exchange Difference&quot;</li>
+<li>Date of revaluation - it is derived from the Document Date of Operation</li>
+<li>Currency directory - it is derived from the Currency Directory set in Operation</li>
+<li>Accounting vouchers</li>
 </ul>
+<h2 id="the-algorithm-action">The algorithm action:</h2>
+<ol>
+<li><p>Get all currencies included in the Currency directory</p>
 </li>
-<li><p>Revaluation is made for each currency included in the Currency directory</p>
-</li>
-<li><p>Calculate Balance и BalanceBase for the Date of revaluation for each Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.</p>
-<p>1.1. If <a href="https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod">CurrencyValuationMethod</a> &lt;&gt; Balance_Reference_Document.</p>
+<li><p>Calculate Balance и BalanceBase for the Date of revaluation for each Account, Currency, Item Key, CostCenter, ProfitCenter and ReferencedDocument.</p>
+<p>1.1. If <a href="https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod">CurrencyValuationMethod</a> != Balance_Reference_Document.</p>
 <p>Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter. (ReferencedDocument = NULL).</p>
 <p>1.2. If <a href="https://docs.erp.net/model/entities/Finance.Accounting.Accounts.html#currencyvaluationmethod">CurrencyValuationMethod</a> = Balance_Reference_Document</p>
 <p>Then data is grouped by Account, Currency, Item Key, CostCenter, ProfutCenter and ReferencedDocument.</p>
 </li>
-<li><p>Calculate the Amount of the Exchange difference for the each group in Base Currency.
-<strong><code>Amount = RoundAmount(BaseCurrency, Balance * CurrencyDirectoryLine.RateMultiplier / CurrencyDirectoryLine.RateDivisor) - BalanceBase)</code></strong></p>
+<li><p>Calculate the Amount in base currency of the Exchange difference for each group
+<br> <strong><code>Amount = RoundAmount(BaseCurrency, Balance * CurrencyDirectoryLine.RateMultiplier / CurrencyDirectoryLine.RateDivisor) - BalanceBase)</code></strong></p>
 </li>
-<li><p>Create Accounting voucher with these differences in BaseCurrency for each group.
-Amount (Currency, Account, ItemKey, CostCenter, ProfitCenterI, ReferencedDocument)</p>
-</li>
+</ol>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> If (templateline.AmountColumnName == Debit_Exchange_Differenc &amp;&amp; Amount &gt; 0) OR (templateline.AmountColum_Name == Credit_Exchange_Difference &amp;&amp; Amount &lt; 0), then it is considered that Amount = 0</p>
+</blockquote>
+<ol start="3">
+<li>Create an Accounting voucher with the calculated base currency amounts of the differences for each group.
+<br> Amount (Currency, Account, ItemKey, CostCenter, ProfitCenterI, ReferencedDocument)</li>
 </ol>
 </article>
           </div>

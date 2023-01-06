@@ -5727,7 +5727,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/accounting/operations/currency-revaluation.html",
-          "hash": "A7xiDBmYHIEgh9GQ695RJw=="
+          "hash": "uVSD/anCvhx/oJcZkIG6uw=="
         }
       },
       "is_incremental": false,
@@ -6917,6 +6917,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/composite-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/composite-products.html",
+          "hash": "qHNAP7E3MAROOYRwlqzpbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.md",
       "output": {
         ".html": {
@@ -7320,6 +7332,39 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/pictures/WMS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/component-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/component-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/composite-product-components.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/composite-product-components.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/composite-product.png"
         }
       },
       "is_incremental": false,
