@@ -4413,6 +4413,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/component-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/component-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/composite-product-components.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/composite-product-components.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/pictures/handy.png",
       "output": {
         "resource": {
