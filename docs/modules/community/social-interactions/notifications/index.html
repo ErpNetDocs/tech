@@ -79,7 +79,8 @@
             <article class="content wrap" id="_content" data-uid="notifications">
 <h1 id="notifications">Notifications</h1>
 
-<p>Notification is a single <a href="https://docs.erp.net/model/entities/Communities.Notifications.html">notification</a> of one user for one event. The event can contain multiple references to objects, definitions, etc.</p>
+<p>Notification is a single <a href="https://docs.erp.net/model/entities/Communities.Notifications.html">notification</a> of one user for one event.
+The event can contain multiple references to objects, definitions, etc.</p>
 <ul>
 <li>Although <strong>notification</strong> is an entity in the <a class="xref" href="../index.html">Social interactions</a> module, a notification can be raised by any module in the system.</li>
 <li>A notification is most often &quot;transmitted&quot; by a <a href="../../../../advanced/concepts/real-time-events.html">real-time event</a>.</li>
@@ -91,7 +92,9 @@
 <p>If a notification specifies a data object, this means that it's related to this data object. However, this attribute is not required and can be null.</p>
 </div>
 <h2 id="notification-interaction">Notification interaction</h2>
-<p>Often, the user can interact with a notification. The most common example when the notification appears as a toast- the user can click on it. In this scenario, if the notification is bound to a data object, it will be opened.</p>
+<p>Often, the user can interact with a notification.
+The most common example when the notification appears as a toast- the user can click on it.
+In this scenario, if the notification is bound to a data object, it will be opened.</p>
 <p>A simple example:</p>
 <ul>
 <li>You're following a specific document. E.g., an offer.</li>
@@ -135,7 +138,7 @@
 <tr>
 <td>NT_SOC_NEW_POST</td>
 <td>Social</td>
-<td></td>
+<td>-</td>
 <td>New post in a group, in which you're a member.</td>
 </tr>
 <tr>
@@ -162,10 +165,18 @@
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33417.html">R33417</a> SocialComment</strong>- Notify All Object Followers</td>
 <td>New comment to an object you are following.</td>
 </tr>
+<tr>
+<td>NT_AE_UPON_UPDATE</td>
+<td>All Entities</td>
+<td><strong><a href="https://docs.erp.net/model/business-rules/R33361.html">R34361</a> All Entities</strong> - Notify All Object Followers Upon Update</td>
+<td>Create notification for all followers of each updated object.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="i-dont-care-about-notifications">I don't care about notifications</h2>
-<p>You can always mute the notification classes you're not interested in. Or you can mute all of them. This way you won't be notified of anything you don't want. For more information see our separate topic <a href="settings.html">Notification settings</a></p>
+<p>You can always mute the notification classes you're not interested in. Or you can mute all of them.
+This way you won't be notified of anything you don't want.
+For more information see our separate topic <a href="settings.html">Notification settings</a></p>
 <h2 id="create-notifications-programmatically">Create notifications programmatically</h2>
 <p>It's possible to create notifications programmatically via Domain API. For more information, check the dev topic,</p>
 <p><a href="https://docs.erp.net/dev/domain-api/common-tasks/create-notification.html">https://docs.erp.net/dev/domain-api/common-tasks/create-notification.html</a></p>
