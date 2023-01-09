@@ -4,7 +4,8 @@ uid: notifications
 
 # Notifications
 
-Notification is a single [notification](https://docs.erp.net/model/entities/Communities.Notifications.html) of one user for one event. The event can contain multiple references to objects, definitions, etc.
+Notification is a single [notification](https://docs.erp.net/model/entities/Communities.Notifications.html) of one user for one event. 
+The event can contain multiple references to objects, definitions, etc.
 
 - Although **notification** is an entity in the @social-interactions module, a notification can be raised by any module in the system.
 - A notification is most often "transmitted" by a [real-time event](../../../../advanced/concepts/real-time-events.md).
@@ -16,7 +17,9 @@ Notification is a single [notification](https://docs.erp.net/model/entities/Comm
 
 ## Notification interaction
 
-Often, the user can interact with a notification. The most common example when the notification appears as a toast- the user can click on it. In this scenario, if the notification is bound to a data object, it will be opened.
+Often, the user can interact with a notification. 
+The most common example when the notification appears as a toast- the user can click on it. 
+In this scenario, if the notification is bound to a data object, it will be opened.
 
 A simple example:
 - You're following a specific document. E.g., an offer.
@@ -40,7 +43,7 @@ Also, most of the notifications are created automatically via business rules whe
 | ---- | ---- | ----------- |
 | NT_DOC_STATE_IMPLICIT | Document | **[R33718](https://docs.erp.net/model/business-rules/R33718.html) Document**- Notify All Implicit Followers | If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification. |
 | NT_SOC_REPLY | Social | **[R33428](https://docs.erp.net/model/business-rules/R33428.html) SocialComment**- Notify User Comment Replied | There was a reply to your post or comment. |
-| NT_SOC_NEW_POST | Social |  | New post in a group, in which you're a member. |
+| NT_SOC_NEW_POST | Social | -  | New post in a group, in which you're a member. |
 | NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComment**- Notify The Mentioned User | You're mentioned in a post or comment. |
 | NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User Comment Reaction | There was a reaction to your post or comment. |
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
@@ -49,7 +52,9 @@ Also, most of the notifications are created automatically via business rules whe
 
 ## I don't care about notifications
 
-You can always mute the notification classes you're not interested in. Or you can mute all of them. This way you won't be notified of anything you don't want. For more information see our separate topic [Notification settings](./settings.md)
+You can always mute the notification classes you're not interested in. Or you can mute all of them. 
+This way you won't be notified of anything you don't want. 
+For more information see our separate topic [Notification settings](./settings.md)
 
 ## Create notifications programmatically
 
