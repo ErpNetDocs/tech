@@ -44,7 +44,7 @@ To begin, go to the contents of a warehouse order (inbound or outbound) and make
 
 Then, click the **play button** and select **Execute lines**.
 
-![Picture](pictures/execute-lines.png)
+![Picture](pictures/executelines.png)
 
 You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking **OK**.
 
@@ -53,6 +53,8 @@ You'll get a warning message preceding the operation. Confirm that you want to p
 The line execution functionality processes every line separately, and if everything is alright, you should get a success message. 
 
 Furthermore, one or two documents will be generated as a result: store transaction and/or document fulfillment. 
+
+![Picture](pictures/success.png)
 
 If there's an error during the execution of the lines, a different message will be displayed on the screen, putting the operation to a halt. 
 
