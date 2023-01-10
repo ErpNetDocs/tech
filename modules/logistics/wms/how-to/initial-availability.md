@@ -26,7 +26,7 @@ Once you’ve made your selections, click OK.
 
 Availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) of the issued orders that belong to the respective warehouse.
 
-![Picture](pictures/links_warehouse.png)
+![Picture](pictures/message-link.png)
 
 If you click on the link, you’ll be taken to the contents of the order. You can preview, edit and execute it on demand.
 
