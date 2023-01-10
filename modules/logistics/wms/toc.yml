@@ -8,3 +8,5 @@
   topicHref: wms-worker/index.md
 - name: How it works
   href: how-it-works/toc.yml
+- name: Composite products
+  href: composite-products.md
