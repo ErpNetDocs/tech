@@ -12,13 +12,17 @@ While defining your warehouse in the WMS module, you can load the initial availa
 
 To begin, click on the **play button** and select **Load initial available balance**.
 
-A separate window will visualize, in which you need to select a store and define the type of the document. 
+A separate window will visualize, in which you need to select a store and define the type of the document.
+
+![Picture](pictures/load-initial-available-balance.png)
 
 The store provides you with initial availability while the document type is used for issuing warehouse orders.
 
 Once you’ve made your selections, click OK.
 
 Availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) of the issued orders that belong to the respective warehouse.
+
+![Picture](pictures/links.png)
 
 If you click on the link, you’ll be taken to the contents of the order. You can preview, edit and execute it on demand.
 
