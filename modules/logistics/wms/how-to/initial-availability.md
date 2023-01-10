@@ -44,9 +44,11 @@ To begin, go to the contents of a warehouse order (inbound or outbound) and make
 
 Then, click the **play button** and select **Execute lines**.
 
-![Picture](pictures/execute-lines-button.png)
+![Picture](pictures/execute-lines.png)
 
 You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking **OK**.
+
+![Picture](pictures/warning-message.png)
 
 The line execution functionality processes every line separately, and if everything is alright, you should get a success message. 
 
