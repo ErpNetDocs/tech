@@ -40,6 +40,8 @@ Line execution is useful if you're creating opening balances, but it can also he
 
 To begin, go to the contents of a warehouse order (inbound or outbound) and make sure to **release** it.
 
+![Picture](pictures/release-document.png)
+
 Then, click the **play button** and select **Execute lines**.
 
 You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking **OK**.
