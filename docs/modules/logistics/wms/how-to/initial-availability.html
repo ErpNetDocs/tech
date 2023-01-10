@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Easy entry of initial availability balances | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Easy entry of initial availability balances | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,14 +77,38 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="easy-entry-of-initial-availability-balances">Easy entry of initial availability balances</h1>
 
-<ul>
-<li><a href="pictures/index.html"></a></li>
-<li><a href="initial-availability.html">Easy entry of initial availability balances</a></li>
-<li><a href="setup-warehouse/index.html">Setup warehouse</a></li>
-<li><a href="setup-warehouse/warehouse-policies.html">Warehouse policies</a></li>
-<li><a href="setup-warehouse/zones-and-locations.html">Warehouse zones and locations</a></li>
-</ul>
+<p>When working in the WMS module, one of the first things you need to do is enter the <strong>initial availability balance</strong>.</p>
+<p>This allows you to keep consistent track of what your warehouse has and never get lost in random numbers.</p>
+<p>For ease of management purposes, the system has <strong>two</strong> functionalities set in place – one for loading the availability and another for executing the lines.</p>
+<h2 id="loading-the-initial-warehouse-availability">Loading the initial warehouse availability</h2>
+<p>While defining your warehouse in the WMS module, you can load the initial availability by selecting one of your existing stores.</p>
+<p>To begin, click on the <strong>play button</strong> and select <strong>Load initial available balance</strong>.</p>
+<p><img src="pictures/loadinitbalance.png" alt="Picture"></p>
+<p>A separate window will visualize, in which you need to select a store and define the type of the document.</p>
+<p><img src="pictures/window.png" alt="Picture"></p>
+<p>The store provides you with initial availability while the document type is used for issuing warehouse orders.</p>
+<p>Once you’ve made your selections, click OK.</p>
+<p><img src="pictures/button-ok.png" alt="Picture"></p>
+<p>Availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) of the issued orders that belong to the respective warehouse.</p>
+<p><img src="pictures/message-link.png" alt="Picture"></p>
+<p>If you click on the link, you’ll be taken to the contents of the order. You can preview, edit and execute it on demand.</p>
+<h2 id="executing-the-lines">Executing the lines</h2>
+<p>The next step in working with initial availabilities is the execution of warehouse order lines.</p>
+<p>This essentially loads what’s left of the (unprocessed) quantities from all document lines which are part of a warehouse order. Already provided information such as line number, product and serial number is used in the process.</p>
+<p>Line execution is useful if you're creating opening balances, but it can also help when a specific warehouse order needs to be issued without using an WMS worker.</p>
+<p>To begin, go to the contents of a warehouse order (inbound or outbound) and make sure to <strong>release</strong> it.</p>
+<p><img src="pictures/release-document.png" alt="Picture"></p>
+<p>Then, click the <strong>play button</strong> and select <strong>Execute lines</strong>.</p>
+<p><img src="pictures/executelines.png" alt="Picture"></p>
+<p>You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking <strong>OK</strong>.</p>
+<p><img src="pictures/warning-message.png" alt="Picture"></p>
+<p>The line execution functionality processes every line separately, and if everything is alright, you should get a success message.</p>
+<p>Furthermore, one or two documents will be generated as a result: store transaction and/or document fulfillment.</p>
+<p><img src="pictures/success.png" alt="Picture"></p>
+<p>If there's an error during the execution of the lines, a different message will be displayed on the screen, putting the operation to a halt.</p>
+<p>Once the error is identified and removed by an operator, you can continue the execution process from where it was stopped.</p>
 </article>
           </div>
           
@@ -93,7 +117,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/initial-availability.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
