@@ -3,3 +3,6 @@
 - name: Setup warehouse
   href: setup-warehouse/toc.yml
   topicHref: setup-warehouse/index.md
+- name: Initial availability balance
+  href: initial-availability.md
+  
