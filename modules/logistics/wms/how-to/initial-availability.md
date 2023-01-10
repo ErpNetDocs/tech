@@ -22,7 +22,7 @@ The store provides you with initial availability while the document type is used
 
 Once you’ve made your selections, click OK.
 
-![Picture](pictures/ok-button.png)
+![Picture](pictures/button-ok.png)
 
 Availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) of the issued orders that belong to the respective warehouse.
 
