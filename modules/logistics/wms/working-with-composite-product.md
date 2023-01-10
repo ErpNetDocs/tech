@@ -26,3 +26,8 @@ The principles for purchasing a composite product are very similar to the princi
 4.These lines are then executed by the warehouse workers using WMS Worker app.
 - Receive (comp) lines are executed as usual for receive operations. See Receive (comp) (link) task type.
 - Dekit line is used for performing a control. How the control is performed depends on the specified level of control. For more information, see Dekit (link) task type.
+
+
+
+
+
