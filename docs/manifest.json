@@ -1906,7 +1906,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/action-types/index.html",
-          "hash": "jEOpjIK7+3nb8J0Ef9a4ig=="
+          "hash": "PjQ32meDijv5TjAvg6x6Ag=="
         }
       },
       "is_incremental": false,
@@ -4395,6 +4395,193 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/two-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/button-ok.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/button-ok.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/execute-lines-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/execute-lines-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/execute-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/execute-lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/executelines.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/executelines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/first-function.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/first-function.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/firstfunction.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/firstfunction.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/links.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/links.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/links_warehouse.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/links_warehouse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/load-initial-available-balance.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/load-initial-available-balance.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/loadinitbalance.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/loadinitbalance.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/loadinitialavailablebalance.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/loadinitialavailablebalance.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/message-link.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/message-link.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/ok-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/ok-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/release-document.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/release-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/success.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/warning-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/warning-message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/window.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/window.png"
         }
       },
       "is_incremental": false,
