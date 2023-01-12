@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
-- name: Calculate standart price per lot based on the ingredients and the operations in the recipe
-  href: calculate-standartpriceperlot.md
+- name: Calculate standard price per lot based on the ingredients and the operations in the recipe
+  href: calculate-standardpriceperlot.md
 - name: Check if a value of a field is changed in the adjustment document
   href: check-if-field-is-changed-in-adjustment.md
 - name: Check if the current user has authorization
