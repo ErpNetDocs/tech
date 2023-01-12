@@ -2,9 +2,9 @@
 items: CalculatedAttributeExamples
 ---
 
-# Calculate standart price per lot based on ingredients and operations in a recipe
+# Calculate standard price per lot based on ingredients and operations in a recipe
 
-With this attribute, you can calculate the **StandartPricePerLot** set in a product’s definition as you save a recipe. **StandartPricePerLot** is determined by the prices of ingredients and operations used in the recipe. 
+With this attribute, you can calculate the **StandardPricePerLot** set in a product’s definition as you save a recipe. **StandardPricePerLot** is determined by the prices of ingredients and operations used in the recipe. 
 
 You can also use this attribute in a business rule to fill in the **PricePerLotValue** of the product in the recipe.
 
