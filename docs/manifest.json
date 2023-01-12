@@ -146,11 +146,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/calculated-attributes/examples/calculate-standartpriceperlot.md",
+      "source_relative_path": "advanced/calculated-attributes/examples/calculate-standardpriceperlot.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/calculated-attributes/examples/calculate-standartpriceperlot.html",
-          "hash": "vQ4k56cqJnXeZGn0u1jgoA=="
+          "relative_path": "advanced/calculated-attributes/examples/calculate-standardpriceperlot.html",
+          "hash": "pduKflYwtc3m9Yni0pKWgQ=="
         }
       },
       "is_incremental": false,
@@ -318,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/examples/index.html",
-          "hash": "eQ++KiDxYrQI2y+LTf5sFw=="
+          "hash": "s6ntkIAOkjlH+sWUCAKzdA=="
         }
       },
       "is_incremental": false,
@@ -1882,7 +1882,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "2i0Ul9TiNOwsxWkJqYvBxg=="
+          "hash": "DOduX7SZEST3M1pnhRrL9g=="
         }
       },
       "is_incremental": false,
