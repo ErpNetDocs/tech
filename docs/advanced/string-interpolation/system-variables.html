@@ -84,17 +84,12 @@
 <p><code>{$date}</code> is a legitimate system variable selector (or expression) which will evaluate to the current date.</p>
 <p>There are also system variables with values depending on specific context, like the current transaction or a specific application. They're evaluated via an externally provided <strong>resolver</strong>.</p>
 <p>Below, you can find all system variables, their return type and the resolvers by which they're supported.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>If a system variable doesn't exist, it won't be evaluated and its expression will be returned <strong>untouched</strong>. <br> <code>{$non-existing-variable}</code> will evalaute to the same thing- <code>{$non-existing-variable}</code>. <br> In contrast, existing system variables with a null value will evaluate to an <strong>empty string</strong>.</p>
-</div>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">System Variable</th>
 <th style="text-align: left;">Type</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Resolver</th>
 </tr>
 </thead>
 <tbody>
@@ -102,112 +97,85 @@
 <td style="text-align: left;"><code>$date</code></td>
 <td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date.</td>
-<td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$time</code></td>
 <td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system time.</td>
-<td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$datetime</code></td>
 <td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date and time.</td>
-<td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$datetimeutc</code></td>
 <td style="text-align: left;">DateTime</td>
 <td style="text-align: left;">Server system date and time in UTC.</td>
-<td style="text-align: left;">Globally</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>$repository</code></td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The repository name the object is part of.</td>
-<td style="text-align: left;">Globally</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$newguid</code></td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Serialized random Guid.</td>
-<td style="text-align: left;">Globally</td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>$rooturl</code></td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Current database URL.</td>
-<td style="text-align: left;">Windows Client</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>$instance</code></td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Current database instance. Equals to <code>$rooturl</code>, but without the scheme prefix (i.e., <em>https://</em>)</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$dbname</code></td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Database name.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>$entity</code> (<strong>obsolete</strong>)</td>
+<td style="text-align: left;"><code>$instance</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current database instance. Equals to <code>$rooturl</code>, but without the scheme prefix (i.e., <em>https://</em>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$rooturl</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Current database URL.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$repository</code><sup><strong>1</strong></sup></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The repository name the object is part of.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$entity</code><sup><strong>1</strong></sup> (<strong>obsolete</strong>)</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The entity name the object is part of.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>$idlist</code></td>
+<td style="text-align: left;"><code>$idlist</code><sup><strong>1</strong></sup></td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a <strong>Navigator Form</strong>.</td>
-<td style="text-align: left;">Windows Client</td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$enterprisecompany</code></td>
 <td style="text-align: left;">EnterpriseCompany</td>
 <td style="text-align: left;">The enterprise company in the current (transaction) context.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$enterprisecompanylocation</code></td>
 <td style="text-align: left;">CompanyLocation</td>
 <td style="text-align: left;">The enterprise company Location in the current (transaction) context.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$user</code></td>
 <td style="text-align: left;">User</td>
 <td style="text-align: left;">User instance of the current user.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$role</code></td>
 <td style="text-align: left;">Role</td>
 <td style="text-align: left;">Role instance of the user's role.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>$language</code></td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The language name (UI culture) of the current user.</td>
-<td style="text-align: left;">Windows Client</td>
 </tr>
 </tbody>
 </table>
+<p><sup><strong>1</strong></sup> When applicable. E.g., <code>$repository</code> can't be evaluated when there's no repository context where the interpolation is performed.</p>
 </article>
           </div>
           
