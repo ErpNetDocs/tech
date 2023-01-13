@@ -26,7 +26,7 @@ Below, you can find all system variables, their return type and the resolvers by
 | `$rooturl`                   | string              | Current database URL.                                                                                                           |
 | `$repository`<sup>**1**</sup>   | string              | The repository name the object is part of.                                                                                      |
 | `$entity`<sup>**1**</sup> (**obsolete**)     | string              | The entity name the object is part of.                                                                                          |
-| `$idlist`                    | string              | Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a **Navigator Form**. |
+| `$idlist`<sup>**1**</sup>                    | string              | Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a **Navigator Form**. |
 | `$enterprisecompany`         | EnterpriseCompany   | The enterprise company in the current (transaction) context.                                                                    |
 | `$enterprisecompanylocation` | CompanyLocation     | The enterprise company Location in the current (transaction) context.                                                           |
 | `$user`                      | User                | User instance of the current user.                                                                                              |
