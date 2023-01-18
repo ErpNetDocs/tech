@@ -42,6 +42,8 @@
   href: in.md  
 - name: INCNUM
   href: incnum.md 
+- name: INTERPOLATE
+  href: interpolate.md   
 - name: LEFT
   href: left.md
 - name: LEN
