@@ -115,6 +115,9 @@ references:
 - uid: cao-INCNUM
   name: INCNUM
   href: advanced/calculated-attributes/operators/incnum.html
+- uid: cao-INTERPOLATE
+  name: INTERPOLATE
+  href: advanced/calculated-attributes/operators/interpolate.html
 - uid: cao-LEFT
   name: LEFT
   href: advanced/calculated-attributes/operators/left.html

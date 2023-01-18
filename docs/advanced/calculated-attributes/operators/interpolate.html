@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CAST | ERP.net Tech Docs </title>
+    <title>INTERPOLATE | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CAST | ERP.net Tech Docs ">
+    <meta name="title" content="INTERPOLATE | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,8 +76,8 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-CAST">
-<h1 id="cast">CAST</h1>
+            <article class="content wrap" id="_content" data-uid="cao-INTERPOLATE">
+<h1 id="interpolate">INTERPOLATE</h1>
 
 <table>
 <thead>
@@ -88,61 +88,98 @@
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>CAST</td>
-</tr>
-<tr>
 <td>Description</td>
-<td>Casts a parameter to a specified type.</td>
+<td>Performs a string interpolation, according to the context of the input or explicitly passed object.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
-<td>param</td>
+<td>InterpolatedString</td>
 </tr>
 <tr>
 <td>Parameter 1 Type</td>
-<td>any type</td>
+<td>string</td>
 </tr>
 <tr>
 <td>Parameter 2 Name</td>
-<td>type</td>
+<td>InterpolationContext (optional)</td>
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types.</td>
+<td>object (DomainObject)</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
-<td></td>
+<td>-</td>
 </tr>
 <tr>
 <td>Parameter 3 Type</td>
-<td></td>
+<td>-</td>
 </tr>
 <tr>
 <td>Return value</td>
-<td>Returns the param converted to the type.</td>
+<td>Returns a string, result from the string interpolation.</td>
 </tr>
 </tbody>
 </table>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The <strong>interpolate</strong> operator fully depends on the ERP.net <strong><a href="../../string-interpolation/index.html">string interpolation functionality</a></strong>. <br> <br>
+All expressions in <code>Parameter 1</code> must conform to the specification.</p>
+</div>
+<p><strong>Examples:</strong></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>CAST is used by other operators to convert their parameters to the same type. <br> The type is usually entered as a constant (CONST).</p>
+<p>The repository of the calculated attribute is <em>Crm.Customers</em>.</p>
 </div>
-<p><strong>Example:</strong></p>
-<p>Let's convert the value of the state of a sales order with type 'enum' to an integer number.</p>
-<p>Conveting to integer allows for comparison between the states (lower -&gt; higher):</p>
-<pre><code>10: CONVERT ATTRIB:State CONST:System.Int32      
+<p>Let's try with something simple. We'll get the country name of the enterprise company for each customer. In English.</p>
+<pre><code>10: INTERPOLATE CONST: Customer's enterprise company country of origin: {EnterpriseCompany.Company.Country.Name:en}
 </code></pre>
-<p>OUTPUT: <br> If 'State = Released', the output will be '30'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
-</div>
-<h4 id="more-examples">More examples:</h4>
+<p>OUTPUT:<br>
+Enterprise company country of origin: Bulgaria</p>
+<p>EXPLAINED:<br>
+The essential part of the CONST parameter is enclosed in curly braces <code>{}</code>. It means the following:</p>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html">Check whether the releasing of the document is first or not</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html">Check if the system type of payment type in the sales order is 'In Cash'</a></strong></li>
+<li><code>{</code> - start of a single interpolated string expression.</li>
+<li><code>EnterpriseCompany</code> - follow the enterprise company reference of the customer.</li>
+<li><code>.Company</code> - follow the company reference of the enterprise company.</li>
+<li><code>.Country</code> - follow the country reference.</li>
+<li><code>.Name</code> - get the Name attribute.</li>
+<li><code>:en</code> - because it's a multilanguage string - show it in English.</li>
+<li><code>}</code> - end of the interpolated string expression.</li>
+</ul>
+<hr>
+<p>Now let's involve a system variable.</p>
+<pre><code>10: INTERPOLATE CONST: What year is it? {$datetime:yyyy}; Who am I? {$user.Name:en}.
+</code></pre>
+<p>OUTPUT: <br>
+What year is it? 2023; Who am I? John Doe
+EXPLAINED:<br></p>
+<ul>
+<li><code>$datetime</code> is the system variable for the current date and time.</li>
+<li>It's followed by the <code>:yyyy</code> format specifier, &quot;extracting&quot; just the year part.</li>
+<li><code>$user</code> is the currently logged in user.</li>
+<li>And with <code>.Name</code> we're getting its Name attribute.</li>
+<li><code>:en</code> in English.</li>
+</ul>
+<p>This example wasn't very practical, but it demonstrates a powerful feature- the <a href="../../string-interpolation/system-variables.html">system variables</a>.</p>
+<hr>
+<p>The next example is something quite useful. We'll define a calculated attribute, returning its data in JSON format. Just with a single line.</p>
+<pre><code>10: INTERPOLATE CONST: {{&quot;Timestamp&quot;: &quot;{$datetimeutc}&quot;, &quot;Id&quot;: &quot;{Id}&quot;, &quot;Number&quot;: &quot;{Number}&quot;, &quot;Active&quot;: {Active}, &quot;Name&quot;: &quot;{Party.PartyName:en}&quot;, &quot;SalesPerson&quot;: &quot;{SalesPerson.Person.PartyName:en}&quot;}}
+</code></pre>
+<p>OUTPUT: <br></p>
+<pre><code>{
+   &quot;Timestamp&quot;:&quot;2023-01-18 12:46:37&quot;,
+   &quot;Id&quot;:&quot;901d254b-7ad9-44e4-ab96-0668e9258311&quot;,
+   &quot;Number&quot;:&quot;ab30162&quot;,
+   &quot;Active&quot;:true,
+   &quot;Name&quot;:&quot;Test PK 1&quot;,
+   &quot;SalesPerson&quot;:&quot;&quot;
+}
+</code></pre>
+<hr>
+<h3 id="see-more">See more</h3>
+<ul>
+<li><strong><a href="../../string-interpolation/index.html">String interpolation</a></strong></li>
 </ul>
 </article>
           </div>
@@ -152,7 +189,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/cast.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/interpolate.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
