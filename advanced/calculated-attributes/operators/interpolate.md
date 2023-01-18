@@ -66,7 +66,7 @@ This example wasn't very practical, but it demonstrates a powerful feature- the 
 
 ---
 
-The next example is something quite useful. We'll define a calculated attribute, returning its data in JSON format. Just with a line.
+The next example is something quite useful. We'll define a calculated attribute, returning its data in JSON format. Just with a single line.
 
 ```
 10: INTERPOLATE CONST: {{"Timestamp": "{$datetimeutc}", "Id": "{Id}", "Number": "{Number}", "Active": {Active}, "Name": "{Party.PartyName:en}", "SalesPerson": "{SalesPerson.Person.PartyName:en}"}}
