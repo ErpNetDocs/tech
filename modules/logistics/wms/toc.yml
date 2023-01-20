@@ -9,4 +9,6 @@
 - name: How it works
   href: how-it-works/toc.yml
 - name: Composite products
-  href: composite-products.md
+  href: composite-products/toc.yml
+  topicHref: composite-products/index.md
+  
