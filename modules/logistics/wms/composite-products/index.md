@@ -31,7 +31,7 @@ How do you create a Composite Product then – here is an **example:**
 
 ![Composite Product](pictures/composite-product.png)
 
-2. Create a new Product for all of the composite product‘s components.
+2. Create a new Product for all of the composite product‘s components / packages.
 
 ![Component Product](pictures/component-product.png)
 
