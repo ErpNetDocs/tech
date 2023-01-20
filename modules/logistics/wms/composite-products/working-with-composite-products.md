@@ -2,7 +2,7 @@
 @composite-products are usually sold and purchased in its entirety but are stored as separate components (boxes) in the warehouse.
 
 ## Selling a composite product
-We already set up our composite product definition, following the steps in the [How to create Composite Products](composite-products.md#how-to-create-composite-products) section.
+We already set up our composite product definition, following the steps in the [How to create Composite Products](index.md#how-to-create-composite-products) section.
 
 Now, lets imagine that we have a customer who wants to buy it, to buy a wardrobe.
 1.	We are creating a Sales Order for 1 wardrobe.
