@@ -41,5 +41,5 @@ How do you create a Composite Product then – here is an **example:**
 ![Composite Product Components](pictures/composite-product-components.png)
 
 ## Further reading
-Working with Composite Products
+[Working with Composite Products](working-with-composite-products.md)
 <br/>Levels of control for Composite Products
