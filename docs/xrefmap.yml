@@ -201,7 +201,7 @@ references:
   href: advanced/user-business-rules/events/committed.html
 - uid: composite-products
   name: Composite Products
-  href: modules/logistics/wms/composite-products.html
+  href: modules/logistics/wms/composite-products/index.html
 - uid: config-options-reference
   name: Config options reference
   href: reference/config-options-reference.html
