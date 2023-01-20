@@ -17,7 +17,7 @@ For this reason, the requisition line is broken down into two types of lines:
 -	Dispatch (comp) – a component dispatch line for each one of the composite product’s components
 -	Kit – and a kit line for the composite product itself
 
-![Outbound Warehouse Order with Composite Product](pictures/wo-composite-product.png)
+![Outbound Warehouse Order with Composite Product](pictures/out-wo-composite-product.png)
 
 4. These lines are then executed by the warehouse workers using WMS Worker app.
 - Dispatch (comp) lines are executed as usual for dispatch operations. See Dispatch (comp) (link) task type.
@@ -29,12 +29,23 @@ How the control is performed depends on the specified level of control. For more
 
 ## Purchasing a composite product
 The principles for purchasing a composite product are very similar to the principles for buying one.
-1.We are creating a procurement document for 1 wardrobe. This document could be a Requisition, Purchase Order or Receiving Order depending on the company's usual process.
-2.The procurement document flow generates a Store Order, which is the link to the WMS module. It generates a Inbound Warehouse Requisition that informs the WMS module that it needs to receive 1 wardrobe.
-3.The Warehouse Requisition creates an Inbound Warehouse Order but the WMS recognizes that the product is in fact a composite product (LOG0502).  For this reason, the requisition line is broken down into two types of lines:
+
+1. We are creating a procurement document for 1 wardrobe. This document could be a Requisition, Purchase Order or Receiving Order depending on the company's usual process.
+![Purchase Order with Composite Product](pictures/inb-wr-composite-product.png)
+
+
+2. The procurement document flow generates a Store Order, which is the link to the WMS module. It generates a Inbound Warehouse Requisition that informs the WMS module that it needs to receive 1 wardrobe.
+
+![Inbound Warehouse Requisition with Composite Product](pictures/wr-composite-product.png)
+
+3. The Warehouse Requisition creates an Inbound Warehouse Order but the WMS recognizes that the product is in fact a composite product (LOG0502).  
+
+4. For this reason, the requisition line is broken down into two types of lines:
 -	Receive (comp) – a component receive line for each one of the composite product’s components
 -	Dekit – and a dekit line for the composite product itself
-4.These lines are then executed by the warehouse workers using WMS Worker app.
+![Inbound Warehouse Order with Composite Product](pictures/inb-wo-composite-product.png)
+
+4. These lines are then executed by the warehouse workers using WMS Worker app.
 - Receive (comp) lines are executed as usual for receive operations. See Receive (comp) (link) task type.
 - Dekit line is used for performing a control. How the control is performed depends on the specified level of control. For more information, see Dekit (link) task type.
 
