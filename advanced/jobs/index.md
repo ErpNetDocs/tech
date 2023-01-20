@@ -68,8 +68,22 @@ LOG:
 [10:04:42] Succeeded: 259
 [10:04:42] Failed: 0
 ```
+
+## Failure log
+
+Each job failure is logged in **Information Messages**. The log contains the reason for the job failure.
+
+**Example:**
+
+Process: *Job J30903 Delete Print Images*
+
+Message
+
+```
+There is a running job. This job execution can't continue and will be skipped.
+```
+
 ----------------
 ### See more
 
-[!list items=Operators limit=100 default-text="None"]
-
+[!list items=Jobs limit=100 default-text="None"]
