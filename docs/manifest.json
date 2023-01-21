@@ -3358,6 +3358,105 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/component-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/component-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/composite-product-components.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/composite-product-components.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/inb-wo-composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/inb-wo-composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/inb-wr-composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/inb-wr-composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/out-wo-composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/out-wo-composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/purchase-order-comp.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/purchase-order-comp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/sales-order-comp.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/sales-order-comp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/wr-composite-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/wr-composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/handy.png",
       "output": {
         "resource": {
