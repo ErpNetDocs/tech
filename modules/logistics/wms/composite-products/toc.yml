@@ -2,3 +2,5 @@
   href: index.md
 - name: Working with Composite Products
   href: working-with-composite-products.md
+- name: Levels of control for Composite Products
+  href: control-levels.md
