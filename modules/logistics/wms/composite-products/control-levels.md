@@ -14,19 +14,23 @@ The control is performed during the order execution in the WMS Worker App (link)
 
 ## Levels
 * **Level 0 - Check All**
+
 Requires all products to be scanned again.
 When executing the Kit/Dekit line, the app shows a screen, where the worker must scan all components of the kit. The component products and product quantities must exactly match those in the composite product's definition, otherwise the system will not activate the Finish button and the line could not be fulfilled.
 ![Level 0](pictures/level0.png)
 
 * **Level 1 - Allow incomplete finish**
+
 Same as level 0, but the application provides an option to still fulfill the order even when they do not match. The option is available trough the “Finish incomplete” button, situated in the button menu.
 ![Level 1](pictures/level1.png)
 
 * **Level 2 - Just preview totals**
+
 The app displays a screen with summarized information for the components of the product from its definition and the executed quantities for the selected order. The information available for counting or checking, but does not require rescanning of the components. The worker certifies that he has completed the check by pressing the Finish button.
 ![Level 2](pictures/level2.png)
 
 * **Level 3 - Check and complete**
+
 The system checks if the whole order execution exactly matches the composite product's definition when a kit/dekit execution is attempted.
 
 If everything mathes – the kit/dekit is successfully executed.
@@ -36,6 +40,7 @@ If there are differences and the validation is unsuccessful, the app shows an er
 ![Level 3 - Unsuccessful](pictures/level3-unsuccessful.png)
 
 * **Level 4 - Autocomplete**
+
 The system automatically executes the kit/dekit operation if all component lines are fulfilled and exactly match the composite product's definition. 
 If the match validation is successful the auto execution simply wont’t work. If the worked tries to execute line manually, similar to level 3, 
 
