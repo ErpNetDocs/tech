@@ -55,4 +55,4 @@ The system automatically executes the kit/dekit operation if all component lines
 If the match validation is successful the auto execution simply wont’t work. 
 
 > **_NOTE:_** Regardless of the level, if the worker tries to avoid the control and tries to execute/finish a kit/dekit line when there is a difference between the actual executed quantity of the components and their definition – it won’t be allowed by the system. It will show an error screen containing more details about where the problem is.
-The only exception of this rule is the “Finish incomplete” button of level .
+The only exception of this rule is the “Finish incomplete” button of level 1.
