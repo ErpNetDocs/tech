@@ -21,7 +21,7 @@ For this reason, the requisition line is broken down into two types of lines:
 
 4. These lines are then executed by the warehouse workers using WMS Worker app.
 - Dispatch (comp) lines are executed as usual for dispatch operations. See Dispatch (comp) (link) task type.
-- Kit line is executed after the Dispatch (comp) lines and it is used for performing a control. 
+- Kit line is executed after the Dispatch (comp) lines. It is used for fulfilling the parent (requisition) line and performing a control. 
 It is very important that the workers will not miss to dispatch some of the components or will not dispatch an additional component by mistake. This would make the customer, the management, or both unhappy.
 How the control is performed depends on the specified level of control. For more information, see Kit (link) task type.
 
@@ -47,7 +47,7 @@ The principles for purchasing a composite product are very similar to the princi
 
 4. These lines are then executed by the warehouse workers using WMS Worker app.
 - Receive (comp) lines are executed as usual for receive operations. See Receive (comp) (link) task type.
-- Dekit line is used for performing a control. How the control is performed depends on the specified level of control. For more information, see Dekit (link) task type.
+- Dekit line can be placed before or after the Receive (comp) lines. It is used for fulfilling the parent (requisition) line and performing a control. The position of the Dekit line and how the control is performed depends on the specified level of control. For more information, see Dekit (link) task type.
 
 
 
