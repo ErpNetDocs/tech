@@ -7248,11 +7248,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/composite-products/control-levels.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/composite-products/control-levels.html",
+          "hash": "XueCZTiy4NKLEgtpCo1yDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/composite-products/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/composite-products/index.html",
-          "hash": "YGBAEHEAXapuiBuQWkMzow=="
+          "hash": "MyduLOneakrRwmy7oBg4tw=="
         }
       },
       "is_incremental": false,
@@ -7315,6 +7327,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level-policies.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level-policies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level0.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level3-successful.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level3-successful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/composite-products/pictures/out-wo-composite-product.png",
       "output": {
         "resource": {
@@ -7363,7 +7441,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/composite-products/working-with-composite-products.html",
-          "hash": "SXRr/AaIXcF+y2jnxx1Ahg=="
+          "hash": "c/FyGNum7Tx7DkzxYsluEg=="
         }
       },
       "is_incremental": false,
@@ -8495,7 +8573,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "2PxUXg/2Xxj61cKNTBZUEQ=="
+          "hash": "Zp7FS+fv81SdCejDMznnrQ=="
         }
       },
       "is_incremental": false,
