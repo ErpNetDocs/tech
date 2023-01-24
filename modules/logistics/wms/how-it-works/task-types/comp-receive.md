@@ -1,1 +1,1 @@
-Component Receive task type
+# Component Receive task type
