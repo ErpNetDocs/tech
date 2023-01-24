@@ -1,7 +1,7 @@
 - name: Receive
   href: receive.md
-- name: Despatch
-  href: despatch.md
+- name: Dispatch
+  href: dispatch.md
 - name: Move
   href: move.md
 - name: Reconcile
