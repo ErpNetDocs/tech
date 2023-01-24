@@ -23,7 +23,7 @@ You can continue setting up your warehouse by creating zones, locations, workers
 
 More information can be found in the following topics:
 -	[Zones and locations](zones-and-locations.md)
--	Warehouse workers (TBD)
+-	[Warehouse workers](warehouse-workers.md)
 -	[Warehouse policies](warehouse-policies.md)
 
 > **_NOTE:_**  Note that in order to work with or test the module or the @wms-worker app, you need to create at least one warehouse, zone, location and worker.
