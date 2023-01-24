@@ -19,9 +19,11 @@ The link is made trough the **Managed Warehouse** field in the store’s definit
 Usually, the link is one to one - one warehouse is linked to only one store. We can still we can still link a single warehouse to two or more stores. We must bear in mind, however, that if a warehouse is linked to more than one stores - the reverse operations, such as warehouse reconciliation may require manual post-processing.
 
 ## What to do next?
-You can continue setting up your warehouse by creating zones, locations and workers. 
+You can continue setting up your warehouse by creating zones, locations, workers and policies. 
 
 More information can be found in the following topics:
-[!list folder="." depth=0 style="bullet" limit=100]
+-	[Zones and locations](zones-and-locations.md)
+-	Warehouse workers (TBD)
+-	[Warehouse policies](warehouse-policies.md)
 
 > **_NOTE:_**  Note that in order to work with or test the module or the @wms-worker app, you need to create at least one warehouse, zone, location and worker.
