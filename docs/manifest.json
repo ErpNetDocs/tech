@@ -4766,6 +4766,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-list-worker.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-list-worker.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/pictures/WMS.png",
       "output": {
         "resource": {
