@@ -256,6 +256,9 @@ references:
 - uid: jobs-J33898
   name: J33898 Delete old document versions
   href: advanced/jobs/J33898.html
+- uid: levels
+  name: Levels of control for composite products
+  href: modules/logistics/wms/composite-products/control-levels.html
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html

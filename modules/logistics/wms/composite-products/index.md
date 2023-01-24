@@ -42,4 +42,4 @@ How do you create a Composite Product then – here is an **example:**
 
 ## Further reading
 [Working with Composite Products](working-with-composite-products.md)
-<br/>Levels of control for Composite Products
+<br/>[Levels of control for Composite Products](control-levels.md)
