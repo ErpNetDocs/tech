@@ -1,6 +1,6 @@
 # Receive task type
 
-Receive task type is used for receiving new inventory into the warehouse. 
+Receive task type is used receipt of new goods into the warehouse. 
 
 The Warehouse Order Lines with Receive task type can be executed using the @wms-worker or the Execute lines function.
 
