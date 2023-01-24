@@ -15,7 +15,7 @@ The Warehouse Transactions and the Document Fulfillment are created as follows:
 
 * **Warehouse Transactions**
 
-*  WarehouseTransaction1 for the goods issue
+**WarehouseTransaction1 for the goods issue**
 `````````
 WarehouseTransaction.WarehouseOrder = WarehouseOrderLine.WarehouseOrder
 
@@ -49,31 +49,31 @@ WarehouseTransaction.CreationTimeUtc = NOW(Utc)
 `````````
  
 
-* WarehouseTransaction2
+**WarehouseTransaction2 for the goods receipt**
 `````````
 WarehouseTransaction.WarehouseOrder = WarehouseOrderLine.WarehouseOrder
 
 WarehouseTransaction.WarehouseOrderLine = WarehouseOrderLine
 
-WarehouseTransaction.ManagedWarehouse = WarehouseOrderLine.WarehouseOrder. ManagedWarehouse
+WarehouseTransaction.ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
 
-WarehouseTransaction.ManagedWarehouseLocation = WarehouseOrderLine.ToWarehouseLocation
+WarehouseTransaction.ManagedWarehouseLocation = the Destination Location set during the line execution
 
-WarehouseTransaction.LogisticUnit = WarehouseOrderLine.LogisticUnit
+WarehouseTransaction.LogisticUnit = the LogisticUnit set during the line execution
 
 WarehouseTransaction.Product = the Product set during the line execution
 
-WarehouseTransaction.ProductVariant = WarehouseOrderLine.ProductVariant
+WarehouseTransaction.ProductVariant = the ProductVariant set during the line execution
 
-WarehouseTransaction.Lot = WarehouseOrderLine.Lot
+WarehouseTransaction.Lot = the Lot set during the line execution
 
-WarehouseTransaction.SerialNumber = WarehouseOrderLine.SerialNumber
+WarehouseTransaction.SerialNumber = the Serial Number set during the line execution
 
 WarehouseTransaction.Direction = IN
 
 WarehouseTransaction.Quantity = the Quantity set during the line execution
 
-WarehouseTransaction.QuantityUnit = WarehouseOrderLine.QuantityUnit
+WarehouseTransaction.QuantityUnit = the Quantity Unit set during the line execution
 
 WarehouseTransaction.CatchQuantity = null
 
