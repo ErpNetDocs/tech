@@ -11,4 +11,4 @@ Having a worker set up, defines which Warehouses will be visible for the user wh
 
 This means that one user might be connected to a multiple warehouses and respectively can be related to more than one worker definitions - one for each warehouse.
 
-The connection between the user and the worker is performed through the Person field - the Person specified in the worker/workers and in the user he is going to use should be the same. 
+The connection between the user and the worker is performed through the Person field - the Person specified in the worker/workers and in the user he is going to use to log into the app should be the same. 
