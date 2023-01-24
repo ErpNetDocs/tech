@@ -277,9 +277,6 @@ references:
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html
-- uid: parcers
-  name: Barcode parcers
-  href: modules/logistics/wms/wms-worker/parcers.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/promotional-packages/index.html
@@ -298,9 +295,6 @@ references:
 - uid: states
   name: Document states
   href: concepts/documents/states.html
-- uid: suggest-warehouse-locations
-  name: Suggest warehouse locations
-  href: modules/logistics/wms/wms-worker/suggest-warehouse-locations.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
@@ -337,6 +331,3 @@ references:
 - uid: wms
   name: Warehouse management
   href: modules/logistics/wms/index.html
-- uid: wms-worker
-  name: WMS Worker
-  href: modules/logistics/wms/wms-worker/index.html

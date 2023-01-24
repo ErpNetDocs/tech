@@ -3413,6 +3413,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level-policies.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level-policies.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level0.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-successful.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-successful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/out-wo-composite-product.png",
       "output": {
         "resource": {
@@ -8015,7 +8081,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.html",
-          "hash": "GISeEy2kfKG8Q9DMJiy9pQ=="
+          "hash": "Jzhk0U6Xi/o77wR8v+IKXg=="
         }
       },
       "is_incremental": false,
@@ -8027,7 +8093,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
-          "hash": "D5KU4qFX6uqeYT/vn5ZjAg=="
+          "hash": "JQNZWqf+/BFF+42AC2QxZw=="
         }
       },
       "is_incremental": false,
@@ -8116,435 +8182,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/availability.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/availability.html",
-          "hash": "zWj0GlMt0qSdeymsldhPGA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/index.html",
-          "hash": "YGwC4AmCBLDD1UtoFe5Xkg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/move.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/move.html",
-          "hash": "r5TQThtZ9kizM3Spaz0ggQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/orders.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/orders.html",
-          "hash": "s8mycSfaJ2dGHDuk/cExmw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/parcers.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/parcers.html",
-          "hash": "qYl23sYhDZmiILpmclNIGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-actions.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-actions.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/location_barcode.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/location_barcode.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-destination.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-destination.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-finish.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-finish.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-lot.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-lot.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-product.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-product.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-quantity.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-quantity.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-successful.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-successful.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-summary.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-summary.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/open-order.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/open-order.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-actions.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-actions.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-availability.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-availability.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-complete.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-complete.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-lot.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-lot.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-product.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-product.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-quantity.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-quantity.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/order-serial.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/order-serial.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/orders.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/orders.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/product_barcode.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/product_barcode.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-differences.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-differences.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-product.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-product.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-quantity.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-quantity.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-summary.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-summary.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/wms-worker.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/wms-worker/pictures/wms-worker.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/reconcile.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/reconcile.html",
-          "hash": "rvYeMVPLNGvXLIO9WjXjGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/suggest-warehouse-locations.html",
-          "hash": "bWV0WCBD5tAbXZ53K89/9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/wms-worker/system-requirements.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/wms-worker/system-requirements.html",
-          "hash": "8OZU+9YTWUvQ5NPujxy1cw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/production/index.md",
       "output": {
         ".html": {
@@ -8573,7 +8210,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "Zp7FS+fv81SdCejDMznnrQ=="
+          "hash": "J5TxlJPJYZnVlygJBvUeAg=="
         }
       },
       "is_incremental": false,
