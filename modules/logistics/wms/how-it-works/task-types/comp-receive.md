@@ -1,0 +1,1 @@
+Component Receive task type
