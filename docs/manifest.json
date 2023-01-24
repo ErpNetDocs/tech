@@ -7531,7 +7531,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "R6ICc8pNeEivCGkwfZmBYw=="
+          "hash": "e0a+GfC65QtXSIAfmIjbCg=="
         }
       },
       "is_incremental": false,
@@ -7770,11 +7770,59 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/comp-dispatch.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/comp-dispatch.html",
+          "hash": "9U6/l6M/9ZQ2PKxOv/ef8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/comp-receive.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/comp-receive.html",
+          "hash": "k72lHSrhG+EWP1KiN4RbaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/count.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/count.html",
+          "hash": "nCfbNn+pA8zTwpsG03VAPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/dekit.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/dekit.html",
+          "hash": "G/ksyBWeLOsZobrEVWtzPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.html",
-          "hash": "cu06gM9ROk9yzOyceLnjOA=="
+          "hash": "W3Hb2zvJAp26105svipS8g=="
         }
       },
       "is_incremental": false,
@@ -7786,7 +7834,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/index.html",
-          "hash": "B2njNdoRVUePV+0A3nu/BA=="
+          "hash": "4hX/1nqIDdAkE/78aRzsHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/kit.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/kit.html",
+          "hash": "GO/VCclaXDCjNT+JhQvwrg=="
         }
       },
       "is_incremental": false,
@@ -7798,7 +7858,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/move.html",
-          "hash": "f5J3T30WghIc1ekxWRI/cA=="
+          "hash": "n6JijowZeu35mjJtQk3Cyw=="
         }
       },
       "is_incremental": false,
@@ -7810,19 +7870,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/receive.html",
-          "hash": "apOmOk2EEGJtBXFdC+hojA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/reconcile.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/task-types/reconcile.html",
-          "hash": "DjwYUir5sVQD6eWPxF/Sfg=="
+          "hash": "Z0/ixQTrp6DBFyCH/4PHKA=="
         }
       },
       "is_incremental": false,
@@ -7858,7 +7906,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "dAS+dNraXhjn+HyRyhBksQ=="
+          "hash": "vJZ/y+LCyAj6du+B5vpa5w=="
         }
       },
       "is_incremental": false,
@@ -8081,7 +8129,29 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.html",
-          "hash": "Jzhk0U6Xi/o77wR8v+IKXg=="
+          "hash": "Xv/cudBNls+UGbPVLskR/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-list-worker.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-list-worker.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png"
         }
       },
       "is_incremental": false,
@@ -8094,6 +8164,18 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
           "hash": "JQNZWqf+/BFF+42AC2QxZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-workers.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-workers.html",
+          "hash": "SfjFXtc5joHm1vyqjlp36g=="
         }
       },
       "is_incremental": false,
@@ -8210,7 +8292,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "J5TxlJPJYZnVlygJBvUeAg=="
+          "hash": "tK4ywb2YZ/4NjdiqsQcqAw=="
         }
       },
       "is_incremental": false,
