@@ -7553,7 +7553,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "e0a+GfC65QtXSIAfmIjbCg=="
+          "hash": "+76/wyOquo+8/vk++adL5Q=="
         }
       },
       "is_incremental": false,
@@ -7840,11 +7840,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.md",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/dispatch.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/task-types/despatch.html",
-          "hash": "W3Hb2zvJAp26105svipS8g=="
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/dispatch.html",
+          "hash": "YZAIgd2ERYXHEy1V6htUjg=="
         }
       },
       "is_incremental": false,
@@ -7856,7 +7856,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/index.html",
-          "hash": "4hX/1nqIDdAkE/78aRzsHA=="
+          "hash": "k2eRMnE5ugxXdi6gPEOjqQ=="
         }
       },
       "is_incremental": false,
@@ -8185,7 +8185,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
-          "hash": "JQNZWqf+/BFF+42AC2QxZw=="
+          "hash": "lgrxiq8N5S6vM2zbE0Kb2w=="
         }
       },
       "is_incremental": false,
@@ -8314,7 +8314,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "tK4ywb2YZ/4NjdiqsQcqAw=="
+          "hash": "eJZ+WjAha8QEAnOyNgOf9w=="
         }
       },
       "is_incremental": false,
