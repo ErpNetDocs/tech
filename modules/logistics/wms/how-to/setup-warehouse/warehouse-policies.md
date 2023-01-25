@@ -1,6 +1,6 @@
 # Warehouse policies
 
-Warehouse policies is a hierarchical system for applying policies to warehouse operations. 
+Warehouse policies are a hierarchical system for applying policies when working with the WMS module.
 
 The most important properties that any policy has are policy kind and value. Policy kinds are predifined system types, which specify the usage of the policy. 
 Different policy kinds have different effect on the system. Some kinds manage certain restrictions during the operations execution of operations, others affect the WMS Worker app's interface, while others store important values that are used by the calculation algorithms.
