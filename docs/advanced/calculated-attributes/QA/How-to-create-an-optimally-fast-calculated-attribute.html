@@ -82,9 +82,11 @@
 <p>When creating a calculated attribute, there are some things to keep in mind in order to create an optimally fast syntax. Let's see some steps that should be followed during the design of the attribute:</p>
 <ol>
 <li>Use <strong>REF</strong> instead of <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong></li>
-<li>If you're using <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong>, use <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html">WHERE</a></strong> clauses instead of <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a></strong> clauses</li>
-<li>Filter the filter - Filter the list returned to the <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a></strong> as much as you can</li>
+<li>If you have to use a <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html">SELECT</a></strong>, use <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html">WHERE</a></strong> clauses instead of <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a></strong> clauses</li>
+<li>If you have to use <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html">FILTER</a></strong>, then pre-filter the list as much as possible using <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html">WHERE</a></strong> clauses</li>
+<li>Add <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html">WHERE</a></strong> coulses by indexed fields</li>
 </ol>
+<h2 id="using-references">Using References</h2>
 <p>Using a <strong>REF</strong> means that you're using the collection of elements that have already been loaded in the memory. The <strong>REF</strong> connection leads only to the records that refer to the current entity.</p>
 <p>Using a <strong>[SELECT]</strong> means that for each attribute calculation, the system will create a request to the server and will look through the whole table that you have selected. A single table could contain millions of records.</p>
 <p>More records means slower calculation. Like any design, when creating a calculated attribute, there is usually more than one way to calculate the value. Sometimes <strong>[SELECT]</strong> is the simplest option to use to reach the value, but you should always try to find a link instead, in order to achieve faster calculation.</p>
@@ -102,18 +104,19 @@
 <pre><code>10     SUM EXP:20 ATTRIB:LineAmountValue                    
 20     GETOBJVALUE REF:SalesOrder CHILD:Lines           
 </code></pre>
-<p>There are some cases where you want to reach the data of a table, to which you could simply use a reference connection. But with <strong>[SELECT]</strong>, there are some tricks that you can master to speed up the calculation.</p>
+<h2 id="using-select">Using SELECT</h2>
+<p>There are some cases where you want to reach the data of a table, to which you could not use a reference connection. But with <strong>[SELECT]</strong>, there are some tricks that you can master to speed up the calculation.</p>
 <p>When you <strong>[SELECT]</strong> a table, you can filter its records with <strong>[WHERE]</strong> or <strong>[FILTER]</strong> clauses.</p>
 <p>Keep in mind that when using:</p>
 <ul>
-<li><p><strong>WHERE</strong> clauses, the conditions are applied together with <strong>[SELECT]</strong> to the whole list and directly on the server. Much faster performance in comparison with <strong>[FILTER]</strong>, especially for a list with lots of records.</p>
-</li>
-<li><p><strong>FILTER</strong> clauses, filters are applied locally (on the client side) to the list returned from <strong>[SELECT]</strong>.</p>
-</li>
+<li><strong>WHERE</strong> clauses, the conditions are applied together with <strong>[SELECT]</strong> to the whole list and directly on the server. Much faster performance in comparison with <strong>[FILTER]</strong>, especially for a list with lots of records.</li>
+<li>the right <strong>WHERE</strong> clauses matters - always try to add atleast one <strong>WHERE</strong> clause with a filter by Indexed fields. Indexed fields help access find and sort information quickly—especially in large tables. So using them, significantly improves the attribute performance.</li>
+<li><strong>FILTER</strong> clauses, filters are applied locally (on the client side) to the list returned from <strong>[SELECT]</strong>.</li>
 </ul>
 <p>Knowing this, you can reach two basic conclusions:</p>
-<p>First, you should choose <strong>[WHERE]</strong> clauses instead <strong>[FILTER]</strong> clauses, if possible. Most of the other operators are supported in both cases, though <strong>[WHERE]</strong> clauses do have certain limitation. For example, they cannot be used along with <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html">NOT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html">OR</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html">LIKE</a></strong> operators.</p>
-<p>Second, when you have no choice but to use <strong>[FILTER]</strong> clauses, you should try to narrow down the list you're returning. Just apply as many <strong>[WHERE]</strong> clauses as possible to <strong>[SELECT]</strong>. This way, you're filtering the list before it's returned to the <strong>[FILTER]</strong> and therefore, it'll contain fewer records, which will lead to a faster calculation.</p>
+<p><strong>First, you should choose [WHERE] clauses instead [FILTER] clauses, if possible.</strong> Most of the other operators are supported in both cases, though <strong>[WHERE]</strong> clauses do have certain limitation. For example, they cannot be used along with <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html">NOT</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html">OR</a></strong> and <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html">LIKE</a></strong> operators.</p>
+<p><strong>Second, always try to add alteast one WHERE clause with a filter by an indexed field.</strong> Check which are the indexed fields of the table you are selecting. To do this, simply <strong>visit the model documentation of the entity and search by &quot;Indexed: True&quot;</strong>. See if there is an indexed field you can add to the filter of the <strong>[WHERE]</strong> clauses to speed up the calculation.</p>
+<p><strong>And third, when you have no choice but to use [FILTER] clauses, you should try to narrow down the list you're returning.</strong> Just apply as many <strong>[WHERE]</strong> clauses as possible to <strong>[SELECT]</strong>. This way, you're filering the list before it's returned to the <strong>[FILTER]</strong> and therefore, it'll contain fewer records, which will lead to a faster calculation.</p>
 <p>Overall, <strong>[SELECT]</strong> is a very powerful tool that needs to be used wisely.</p>
 </article>
           </div>
