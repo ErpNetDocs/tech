@@ -316,6 +316,9 @@ references:
 - uid: VMR
   name: Variable (dynamic) measurement ratios
   href: concepts/products/variable-dynamic-measurement-rations.html
+- uid: warehouse-policies
+  name: Warehouse policies
+  href: modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html
 - uid: webclient
   name: webclient
   href: includes/webclient.html
