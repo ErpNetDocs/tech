@@ -7,10 +7,9 @@ items: CalculatedAttributesQA
 When creating a calculated attribute, there are some things to keep in mind in order to create an optimally fast syntax. Let's see some steps that should be followed during the design of the attribute:
 
 1.  Use **REF** instead of **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**
-2.  If you're using **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**
-* use **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses instead of **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses
-* add **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** by indexed fields
-3.  Filter before filter - Filter the list returned to the **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** in advance 
+2.  If you have to use a **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**, use **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses instead of **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses
+3.  If you have to use **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)**, then pre-filter the list as much as possible using **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses
+4.  Add **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** coulses by indexed fields
 
 ## Using References
 Using a **REF** means that you're using the collection of elements that have already been loaded in the memory. The **REF** connection leads only to the records that refer to the current entity.
@@ -58,7 +57,7 @@ Knowing this, you can reach two basic conclusions:
 
 **First, you should choose [WHERE] clauses instead [FILTER] clauses, if possible.** Most of the other operators are supported in both cases, though **[WHERE]** clauses do have certain limitation. For example, they cannot be used along with **[NOT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html)**, **[OR](https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html)** and **[LIKE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html)** operators. 
 
-**Second, always try to add alteast one WHERE clause with a filter by indexed fields.** Check which are the indexed fields of the table you are selecting. To do this, simply visit the model documentation of the entity and search by "Indexed: True". See if there is an indexed field you can add to the filter of the **[WHERE]** clauses to speed up the calculation.
+**Second, always try to add alteast one WHERE clause with a filter by indexed fields.** Check which are the indexed fields of the table you are selecting. To do this, simply **visit the model documentation of the entity and search by "Indexed: True"**. See if there is an indexed field you can add to the filter of the **[WHERE]** clauses to speed up the calculation.
 
 **And third, when you have no choice but to use [FILTER] clauses, you should try to narrow down the list you're returning.** Just apply as many **[WHERE]** clauses as possible to **[SELECT]**. This way, you're filering the list before it's returned to the **[FILTER]** and therefore, it'll contain fewer records, which will lead to a faster calculation.
 
