@@ -57,7 +57,7 @@ Knowing this, you can reach two basic conclusions:
 
 **First, you should choose [WHERE] clauses instead [FILTER] clauses, if possible.** Most of the other operators are supported in both cases, though **[WHERE]** clauses do have certain limitation. For example, they cannot be used along with **[NOT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/not.html)**, **[OR](https://docs.erp.net/tech/advanced/calculated-attributes/operators/or.html)** and **[LIKE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/like.html)** operators. 
 
-**Second, always try to add alteast one WHERE clause with a filter by indexed fields.** Check which are the indexed fields of the table you are selecting. To do this, simply **visit the model documentation of the entity and search by "Indexed: True"**. See if there is an indexed field you can add to the filter of the **[WHERE]** clauses to speed up the calculation.
+**Second, always try to add alteast one WHERE clause with a filter by an indexed field.** Check which are the indexed fields of the table you are selecting. To do this, simply **visit the model documentation of the entity and search by "Indexed: True"**. See if there is an indexed field you can add to the filter of the **[WHERE]** clauses to speed up the calculation.
 
 **And third, when you have no choice but to use [FILTER] clauses, you should try to narrow down the list you're returning.** Just apply as many **[WHERE]** clauses as possible to **[SELECT]**. This way, you're filering the list before it's returned to the **[FILTER]** and therefore, it'll contain fewer records, which will lead to a faster calculation.
 
