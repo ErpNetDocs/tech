@@ -2,7 +2,7 @@
 
 Receive task type is used receipt of new goods into the warehouse. 
 
-The Warehouse Order Lines with Receive task type can be executed using the @wms-worker or the Execute lines function.
+The Warehouse Order Lines with Receive task type can be executed using the [WMS Worker](xref:wms-worker) or the Execute lines function.
 
 When executed, the system creates 1 Warehouse Transaction and 1 Document Fulfillment as follows:
 
