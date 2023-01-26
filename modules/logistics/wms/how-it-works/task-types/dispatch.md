@@ -1,62 +1,82 @@
 # Dispatch task type
 
-The Dispatch task type is used to issue goods from the warehouse.
+The Dispatch task type's purpose is to issue goods from the warehouse. It is usually used in Warehouse Order Lines that are a result of the document generation of the sales order document flow.
 
 The Warehouse Order Lines with Dispatch task type can be executed using the the Orders menu in [WMS Worker](xref:wms-worker) or the Execute lines function of the Warehouse Order.
+
+## Result
 
 When executed, the system creates 1 Warehouse Transaction and 1 Document Fulfillment as follows:
 
 * **Warehouse Transactions**
 
 `````````
-WarehouseTransaction.WarehouseOrder = WarehouseOrderLine.WarehouseOrder
+WarehouseOrder = WarehouseOrderLine.WarehouseOrder
  
-WarehouseTransaction.WarehouseOrderLine = WarehouseOrderLine
+WarehouseOrderLine = WarehouseOrderLine
+
+TaskType = Dispatch
+
+Direction = OUT
  
-WarehouseTransaction.ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
+ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
  
-WarehouseTransaction.ManagedWarehouseLocation = the Warehouse Location set during the line execution
+ManagedWarehouseLocation = the Warehouse Location specified during the line execution
  
-WarehouseTransaction.LogisticUnit = WarehouseOrderLine.LogisticUnit
+LogisticUnit = the LogisticUnit specified during the line execution 
  
-WarehouseTransaction.Product = the Product set during the line execution
+Product = the Product specified during the line execution 
  
-WarehouseTransaction.ProductVariant = WarehouseOrderLine.ProductVariant
+ProductVariant = the Variant specified during the line execution 
  
-WarehouseTransaction.Lot = WarehouseOrderLine.Lot
+Lot = the Lot specified during the line execution 
  
-WarehouseTransaction.SerialNumber = WarehouseOrderLine.SerialNumber
+SerialNumber = the SerialNumber  specified during the line execution 
  
-WarehouseTransaction.Direction = OUT
+Quantity = the Quantity specified during the line execution
  
-WarehouseTransaction.Quantity = the Quantity set during the line execution
+QuantityUnit = the QuantityUnit specified during the line execution 
+
+QuantityBase = the QuantityBase specified during the line execution 
+
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
  
-WarehouseTransaction.QuantityUnit = WarehouseOrderLine.QuantityUnit
+CreationUser = CurrentUser
  
-WarehouseTransaction.CatchQuantity = null
- 
-WarehouseTransaction.CreationUser = CurrentUser
- 
-WarehouseTransaction.CreationTimeUtc = NOW(Utc)
+CreationTimeUtc = NOW(Utc)
 
 `````````
 
 * **Document Fulfillment**
  
 `````````
-DocumentFulfillment.Document = WarehouseOrder
+Document = WarehouseOrder
  
-DocumentFulfillment.DocumentLineId = WarehouseOrderLineId
+DocumentLineId = WarehouseOrderLineId
  
-DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo
+LineNo = WarehouseOrderLine.LineNo
  
-DocumentFulfillment.FulfillmentType = Completed
+FulfillmentType = Completed
  
-DocumentFulfillment.IsFinal = false
+IsFinal = false
  
-DocumentFulfillment.LineType = Line
- 
-DocumentFulfillment.QuantityBase = the Quantity set during the line execution DocumentFulfillment.CreationUser = CurrentUser
+LineType = Line
 
-DocumentFulfillment.DestinationEntityName = Wms_Warehouse_Transactions
+Product = the Product specified during the line execution 
+ 
+ProductVariant = the Variant specified during the line execution 
+ 
+Lot = the Lot specified during the line execution 
+ 
+SerialNumber = the SerialNumber  specified during the line execution
+ 
+QuantityBase = the QuantityBase specified during the line execution 
+
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
+
+CreationUser = CurrentUser
+
+CreationTimeUtc = NOW(Utc)
+
+DestinationEntityName = Wms_Warehouse_Transactions
 `````````
