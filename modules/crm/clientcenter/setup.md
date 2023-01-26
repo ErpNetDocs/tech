@@ -14,7 +14,7 @@
 - System User Allowed: - check marked
 - Impersonate As Community User Allowed - check marked
 - Impersonate As Internal User Allowed - check marked
-- System user:  <SYSTEM-APPLICATION-USER> 
+- System user:  SYSTEM-APPLICATION-USER 
 - Client type: Confidential
 - Scope: Update   
   
