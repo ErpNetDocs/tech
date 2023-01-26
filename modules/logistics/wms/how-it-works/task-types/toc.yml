@@ -8,3 +8,11 @@
   href: count.md
 - name: User task
   href: user-task.md
+- name: Kit
+  href: kit.md
+- name: Dekit
+  href: dekit.md
+- name: Component Dispatch
+  href: comp-dispatch.md
+- name: Component Receive
+  href: comp-receive.md
