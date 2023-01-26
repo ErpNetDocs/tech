@@ -3,7 +3,7 @@ The Dekit task type is used when working with @composite-products. It can usuall
 
 The purpose of the Dekit task type is to report the dekitting (receiving) of the composite product to the parent line and to carry out control.
 
-The Dekit task type lines do NOT create Warehouse Transactions, as the availability of the composite product itself is kept in the Inventory module. Though, the Dekit line's purpose is very important because it creates DocumentFulfillments to the parent line. It informs it that all components of the composite product are received and therefore the parent line is fullfilled.
+The Dekit task type lines do NOT create Warehouse Transactions, as the availability of the composite product itself is kept in the Inventory module. Though, the Dekit line's purpose is very important because it creates DocumentFulfillments to the parent line. With this, it informs it that all components of the composite product are received and therefore the parent line is fullfilled.
 
 The control during the dekitting process depends on the specified level. For more information, see @levels.
 
