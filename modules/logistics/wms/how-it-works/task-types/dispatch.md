@@ -2,7 +2,7 @@
 
 The Dispatch task type is used to issue goods from the warehouse.
 
-The Warehouse Order Lines with Dispatch task type can be executed using the the Orders menu in @wms-worker or the Execute lines function of the Warehouse Order.
+The Warehouse Order Lines with Dispatch task type can be executed using the the Orders menu in [WMS Worker](xref:wms-worker) or the Execute lines function of the Warehouse Order.
 
 When executed, the system creates 1 Warehouse Transaction and 1 Document Fulfillment as follows:
 
