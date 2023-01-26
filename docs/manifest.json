@@ -8180,12 +8180,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
-          "hash": "lgrxiq8N5S6vM2zbE0Kb2w=="
+          "hash": "gcX5qOrgpB80vOFl1lFJjQ=="
         }
       },
       "is_incremental": false,
