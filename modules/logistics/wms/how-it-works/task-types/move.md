@@ -1,12 +1,10 @@
 # Move task type
 
-Move task type to move goods from one warehouse location to another location within the same warehouse. 
+Move task type's purpose is to move goods from one warehouse location to another location within the same warehouse. 
 
-The moving can be done as an ad hoc operation or can be performed as a part of a Warehouse Order.
+The moving can be done as an ad hoc operation or can be performed as a part of a Warehouse Order. As an ad hoc (single) operation it is performed using the @wms-worker-move menu of @wms-worker. While Warehouse Order Lines with Move task type can be executed using the Orders menu in @wms-worker or the Execute lines function of the Warehouse Order.
 
-As an ad hoc (single) operation it is performed using the @wms-worker-move menu of @wms-worker. 
-
-While Warehouse Order Lines with Move task type can be executed using the Orders menu in @wms-worker or the Execute lines function of the Warehouse Order.
+## Resumt
 
 The moving results in creating 2 Warehouse Transaction - 1 for the goods issue of the previous location and 1 for the goods receipt into the destination location.
 A Document Fulfillment will be created as well, but only if the moving is performed trough executing a Warehouse Order Line.
@@ -17,89 +15,110 @@ The Warehouse Transactions and the Document Fulfillment are created as follows:
 
 **WarehouseTransaction1 for the goods issue**
 `````````
-WarehouseTransaction.WarehouseOrder = WarehouseOrderLine.WarehouseOrder
+WarehouseOrder = if it is an ad hoch operation, then NULL, else WarehouseOrderLine.WarehouseOrder
+ 
+WarehouseOrderLine = if it is an ad hoch operation, then NULL, else WarehouseOrderLine
 
-WarehouseTransaction.WarehouseOrderLine = WarehouseOrderLine
+TaskType = Move
 
-WarehouseTransaction.ManagedWarehouse = WarehouseOrderLine.WarehouseOrder. ManagedWarehouse
+Direction = OUT
+ 
+ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
+ 
+ManagedWarehouseLocation = the Warehouse Location specified during the line execution
+ 
+LogisticUnit = the LogisticUnit specified during the line execution 
+ 
+Product = the Product specified during the line execution 
+ 
+ProductVariant = the Variant specified during the line execution 
+ 
+Lot = the Lot specified during the line execution 
+ 
+SerialNumber = the SerialNumber  specified during the line execution 
+ 
+Quantity = the Quantity specified during the line execution
+ 
+QuantityUnit = the QuantityUnit specified during the line execution 
 
-WarehouseTransaction.ManagedWarehouseLocation = the Warehouse Location set during the line execution
+QuantityBase = the QuantityBase specified during the line execution 
 
-WarehouseTransaction.LogisticUnit = WarehouseOrderLine.LogisticUnit
-
-WarehouseTransaction.Product = the Product set during the line execution
-
-WarehouseTransaction.ProductVariant = WarehouseOrderLine.ProductVariant
-
-WarehouseTransaction.Lot = WarehouseOrderLine.Lot
-
-WarehouseTransaction.SerialNumber = WarehouseOrderLine.SerialNumber
-
-WarehouseTransaction.Direction = OUT
-
-WarehouseTransaction.Quantity = the Quantity set during the line execution
-
-WarehouseTransaction.QuantityUnit = WarehouseOrderLine.QuantityUnit
-
-WarehouseTransaction.CatchQuantity = null
-
-WarehouseTransaction.CreationUser = CurrentUser
-
-WarehouseTransaction.CreationTimeUtc = NOW(Utc)
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
+ 
+CreationUser = CurrentUser
+ 
+CreationTimeUtc = NOW(Utc)
 `````````
  
 
 **WarehouseTransaction2 for the goods receipt**
 `````````
-WarehouseTransaction.WarehouseOrder = WarehouseOrderLine.WarehouseOrder
+WarehouseOrder = if it is an ad hoch operation, then NULL, else WarehouseOrderLine.WarehouseOrder
+ 
+WarehouseOrderLine = if it is an ad hoch operation, then NULL, else WarehouseOrderLine
 
-WarehouseTransaction.WarehouseOrderLine = WarehouseOrderLine
+TaskType = Move
 
-WarehouseTransaction.ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
+Direction = IN
+ 
+ManagedWarehouse = WarehouseOrderLine.WarehouseOrder.ManagedWarehouse
+ 
+ManagedWarehouseLocation = ManagedWarehouseLocation = the Destination Location set during the line execution
+ 
+LogisticUnit = the LogisticUnit specified during the line execution 
+ 
+Product = the Product specified during the line execution 
+ 
+ProductVariant = the Variant specified during the line execution 
+ 
+Lot = the Lot specified during the line execution 
+ 
+SerialNumber = the SerialNumber  specified during the line execution 
+ 
+Quantity = the Quantity specified during the line execution
+ 
+QuantityUnit = the QuantityUnit specified during the line execution 
 
-WarehouseTransaction.ManagedWarehouseLocation = the Destination Location set during the line execution
+QuantityBase = the QuantityBase specified during the line execution 
 
-WarehouseTransaction.LogisticUnit = the LogisticUnit set during the line execution
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
+ 
+CreationUser = CurrentUser
+ 
+CreationTimeUtc = NOW(Utc)
 
-WarehouseTransaction.Product = the Product set during the line execution
-
-WarehouseTransaction.ProductVariant = the ProductVariant set during the line execution
-
-WarehouseTransaction.Lot = the Lot set during the line execution
-
-WarehouseTransaction.SerialNumber = the Serial Number set during the line execution
-
-WarehouseTransaction.Direction = IN
-
-WarehouseTransaction.Quantity = the Quantity set during the line execution
-
-WarehouseTransaction.QuantityUnit = the Quantity Unit set during the line execution
-
-WarehouseTransaction.CatchQuantity = null
-
-WarehouseTransaction.CreationUser = CurrentUser
-
-WarehouseTransaction.CreationTimeUtc = NOW(Utc)
 `````````
  
 
 * **Document Fulfillment**
 `````````
-DocumentFulfillment.Document = WarehouseOrder
+Document = WarehouseOrder
+ 
+DocumentLineId = WarehouseOrderLineId
+ 
+LineNo = WarehouseOrderLine.LineNo
+ 
+FulfillmentType = Completed
+ 
+IsFinal = false
+ 
+LineType = Line
 
-DocumentFulfillment.DocumentLineId = WarehouseOrderLineId
+Product = the Product specified during the line execution 
+ 
+ProductVariant = the Variant specified during the line execution 
+ 
+Lot = the Lot specified during the line execution 
+ 
+SerialNumber = the SerialNumber  specified during the line execution
+ 
+QuantityBase = the QuantityBase specified during the line execution 
 
-DocumentFulfillment.LineNo = WarehouseOrderLine.LineNo
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
 
-DocumentFulfillment.FulfillmentType = Completed
+CreationUser = CurrentUser
 
-DocumentFulfillment.IsFinal = false
+CreationTimeUtc = NOW(Utc)
 
-DocumentFulfillment.LineType = Line
-
-DocumentFulfillment.QuantityBase = the Quantity set during the line execution 
-
-DocumentFulfillment.CreationUser = CurrentUser
-
-DocumentFulfillment.DestinationEntityName = Wms_Warehouse_Transactions
+DestinationEntityName = Wms_Warehouse_Transactions
 `````````
