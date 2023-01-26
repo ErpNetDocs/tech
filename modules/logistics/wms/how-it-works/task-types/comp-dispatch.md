@@ -5,7 +5,7 @@ Its purpose is to issue the composite product's components from the warehouse.
 It can usually be seen in Warehouse Order Lines that are a result of the document generation of the sales order document flow when it contains composite products.
 
 ## Result
-The Component Dispatch lines do NOT create Document Fulfillments, as they represent the dispatching of 1 component of a whole kit. The fulfillment of the kit is performed by the [Kit](kit.md) task type line.
+The Component Dispatch lines do NOT create Document Fulfillments, as they represent the dispatching of 1 component of a whole kit. The fulfillment is trigerred by the dispatching of the whole kit and it is performed trough the [Kit](kit.md) task type line.
 
 When executed, the system creates only a Warehouse Transaction, as follows:
 
