@@ -8,7 +8,7 @@ The Dekit task type lines do NOT create Warehouse Transactions, as the availabil
 The control during the dekitting process depends on the specified level. For more information, see @levels.
 
 The Warehouse Order Lines with Dekit task type can be executed using the WMS Worker or the Execute lines function.
-Note that Dekit lines can only be executed after all of its components' dispatch lines have completed execution.
+Note that Dekit lines can only be executed after all of its components' receive lines have completed execution.
 
 ## Result
 The Dekit task type lines do NOT create Warehouse Transaction, as the availability of the composite product is kept in the Inventory module. 
