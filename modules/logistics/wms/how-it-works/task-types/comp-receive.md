@@ -2,7 +2,7 @@
 The Component Receive task type is used when working with @composite-products. 
 
 Its purpose is to receipt the composite product's components into the warehouse. 
-It can usually be seen in Warehouse Order Lines that are a result of the document generation of the procurement document flow when it contains composite products.t
+It can usually be seen in Warehouse Order Lines that are a result of the document generation of the procurement document flow when it contains composite products.
 
 ## Result
 The Component Receive lines do NOT create Document Fulfillments, as they represent the receiving of 1 component of a whole kit. The fulfillment of the kit is performed by the [Dekit](dekit.md) task type line.
