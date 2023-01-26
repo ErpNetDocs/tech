@@ -17,3 +17,4 @@ Note: For each Enterprise Company, a different site with a different Relative UR
 - Client type: Confidential
 - Scope: Update   
   
+[!Note] Through the Instance Manager you can see and restart all sites.
