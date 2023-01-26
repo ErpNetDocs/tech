@@ -10,13 +10,13 @@
 > For each Enterprise Company, a different site with a different Relative URL or Host should be defined. 
 
 ## Define Trusted Application as follows:  
-- Is Enabled: check marked 
-- System User Allowed: - check marked
+- Is Enabled - check marked 
+- System User Allowed - check marked
 - Impersonate As Community User Allowed - check marked
 - Impersonate As Internal User Allowed - check marked
-- System user:  SYSTEM-APPLICATION-USER 
-- Client type: Confidential
-- Scope: Update   
+- System user - SYSTEM-APPLICATION-USER 
+- Client type - Confidential
+- Scope - Update   
   
 > [!NOTE]
 > Through the Instance Manager you can see and restart all sites.
