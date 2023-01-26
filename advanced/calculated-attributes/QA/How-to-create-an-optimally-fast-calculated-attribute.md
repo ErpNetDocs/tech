@@ -8,8 +8,8 @@ When creating a calculated attribute, there are some things to keep in mind in o
 
 1.  Use **REF** instead of **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**
 2.  If you have to use a **[SELECT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/select.html)**, use **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses instead of **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)** clauses
-3.  If you have to use **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)**, then pre-filter the list as much as possible using **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses
-4.  Add **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** coulses by indexed fields
+3.  If you have to use a **[FILTER](https://docs.erp.net/tech/advanced/calculated-attributes/operators/filter.html)**, then pre-filter the list as much as possible using **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses
+4.  Add **[WHERE](https://docs.erp.net/tech/advanced/calculated-attributes/operators/where.html)** clauses by indexed fields
 
 ## Using References
 Using a **REF** means that you're using the collection of elements that have already been loaded in the memory. The **REF** connection leads only to the records that refer to the current entity.
