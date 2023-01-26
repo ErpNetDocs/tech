@@ -2,7 +2,7 @@
 
 The Kit task type is used when working with @composite-products. It can usually be seen in Warehouse Order Lines that are a result of the document generation of the sales order document flow when it contains composite products.
 
-The purpose of the Kit task type is to report the kitting of the composite product to the parent line and to carry out control. 
+The purpose of the Kit task type is to report the kitting (dispatching) of the composite product to the parent line and to carry out control. 
 
 The Kit task type lines do NOT create Warehouse Transactions, as the availability of the composite product itself is kept in the Inventory module. 
 Though, the Kit line's purpose is very important because it creates DocumentFulfillments to the parent line. It informs it that all components of the composite product's kit are dispatched and therefore the parent line is fullfilled.
