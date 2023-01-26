@@ -10,6 +10,7 @@ Though, the Kit line's purpose is very important because it creates DocumentFulf
 The control during the kitting process depends on the specified level. For more information, see @levels.
 
 The Warehouse Order Lines with Kit task type can be executed using the WMS Worker or the Execute lines function.
+Note that Kit lines can only be executed after all of its components' dispatch lines have completed execution.
 
 ## Result
 The Kit task type lines do NOT create Warehouse Transaction, as the availability of the composite product is kept in the Inventory module. 
