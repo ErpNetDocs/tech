@@ -17,7 +17,7 @@ Note: For each Enterprise Company, a different site with a different Relative UR
 - Client type: Confidential
 - Scope: Update   
   
-[!Note]Through the Instance Manager you can see and restart all sites.
+[!Note] Through the Instance Manager you can see and restart all sites.
 
 ## Setup User settings: 
 1.	New User registers himself from the Client Center – it creates a new User definition as External Community User.  
