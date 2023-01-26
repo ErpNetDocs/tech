@@ -18,3 +18,11 @@ Note: For each Enterprise Company, a different site with a different Relative UR
 - Scope: Update   
   
 [!Note] Through the Instance Manager you can see and restart all sites.
+
+##Setup User settings: 
+1.	New User registers himself from the Client Center – it creates a new User definition as External Community User.  
+2.	Define Person for this User. 
+3.	Define Parent Party for this Person. 
+4.	Define Customer for this Parent Party as follows: 
+    - Enterprise Company 
+    -	Serviced by Enterprise Company Location 
