@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Client Center - a single platform to engage with customers | ERP.net Tech Docs </title>
+    <title>Setup Client Center | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Client Center - a single platform to engage with customers | ERP.net Tech Docs ">
+    <meta name="title" content="Setup Client Center | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,10 +77,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="client-center---a-single-platform-to-engage-with-customers">Client Center - a single platform to engage with customers</h1>
+<h1 id="setup-client-center">Setup Client Center</h1>
 
-<p>Increase collaboration and exchange rich information between employees, suppliers, and customers. Eliminate data redundancy and errors by working with accurate, real-time data about invoices, orders and their status anytime, anywhere.</p>
-<p>Client Center is a functionality, which allows the clients to access their documents and communicate with you online.</p>
+<h2 id="define-website-of-type-clientcenter-as-follows">Define website of type ClientCenter as follows:</h2>
+<ul>
+<li>Enterprise Company</li>
+<li>Relative URL</li>
+<li>Is Active - check marked</li>
+<li>Trusted application – you can create it directly from the website definition form by using the function Create/Update Trusted Application</li>
+</ul>
+<p>Note: For each Enterprise Company, a different site with a different Relative URL or Host should be defined.</p>
+<h2 id="define-trusted-application-as-follows">Define Trusted Application as follows:</h2>
+<ul>
+<li>Is Enabled: check marked</li>
+<li>System User Allowed: - check marked</li>
+<li>Impersonate As Community User Allowed - check marked</li>
+<li>Impersonate As Internal User Allowed - check marked</li>
+<li>System user:  <system-application-user></system-application-user></li>
+<li>Client type: Confidential</li>
+<li>Scope: Update</li>
+</ul>
+<p>[!Note] Through the Instance Manager you can see and restart all sites.</p>
+<h2 id="setup-user-settings">Setup User settings:</h2>
+<ol>
+<li>New User registers himself from the Client Center – it creates a new User definition as External Community User.</li>
+<li>Define Person for this User.</li>
+<li>Define Parent Party for this Person.</li>
+<li>Define Customer for this Parent Party as follows:
+<ul>
+<li>Enterprise Company</li>
+<li>Serviced by Enterprise Company Location</li>
+</ul>
+</li>
+</ol>
 </article>
           </div>
           
@@ -89,7 +118,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/setup.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
