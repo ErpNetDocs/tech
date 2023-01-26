@@ -1,3 +1,7 @@
+---
+uid: warehouse-policies
+---
+
 # Warehouse policies
 
 Warehouse policies are a hierarchical system for applying policies when working with the WMS module.
