@@ -2,3 +2,5 @@
   href: index.md
 - name: Error codes
   href: error-codes.md
+- name: Setup
+  href: setup.md
