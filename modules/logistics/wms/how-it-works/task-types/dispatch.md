@@ -72,7 +72,7 @@ SerialNumber = the SerialNumber  specified during the line execution
  
 QuantityBase = the QuantityBase specified during the line execution 
 
-StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Qauntity, BaseMeasurementUnit)
+StandardQuantity = If Product.AllowVariableMeasurementRatios == true, then get QuantityBase, else CONVERT(Quantity, BaseMeasurementUnit)
 
 CreationUser = CurrentUser
 
