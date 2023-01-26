@@ -1,6 +1,6 @@
 # Kit task type
 
-The Kit task type is used when working with @composite-products. It can usually be seen in Warehouse Order Lines that are a result of the document generation of the procurement document flow when it contains composite products.
+The Kit task type is used when working with @composite-products. It can usually be seen in Warehouse Order Lines that are a result of the document generation of the sales order document flow when it contains composite products.
 
 The purpose of the Kit task type is to report the kitting of the composite product to the parent line and to carry out control. 
 
