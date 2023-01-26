@@ -90,7 +90,7 @@
 <li><p>The Sales Order document flow generates a Store Order, which is the link to the WMS module. It generates a Outbound Warehouse Requisition that informs the WMS module that it needs to dispatch 1 wardrobe.
 <img src="pictures/wr-composite-product.png" alt="Outbound Warehouse Requisition with Composite Product"></p>
 </li>
-<li><p>The Warehouse Requisition creates an Outbound Warehouse Order but the WMS recognizes that the product is in fact a composite product (LOG0502).</p>
+<li><p>The Warehouse Requisition creates an Outbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is in fact a composite product.</p>
 </li>
 </ol>
 <p>For this reason, the requisition line is broken down into two types of lines:</p>
@@ -103,10 +103,9 @@
 <li>These lines are then executed by the warehouse workers using WMS Worker app.</li>
 </ol>
 <ul>
-<li>Dispatch (comp) lines are executed as usual for dispatch operations. See Dispatch (comp) (link) task type.</li>
+<li>Dispatch (comp) lines are executed as usual for dispatch operations.</li>
 <li>Kit line is executed after the Dispatch (comp) lines. It is used for fulfilling the parent (requisition) line and performing a control.
-It is very important that the workers will not miss to dispatch some of the components or will not dispatch an additional component by mistake. This would make the customer, the management, or both unhappy.
-How the control is performed depends on the specified level of control. For more information, see Kit (link) task type.</li>
+How the control is performed depends on the specified level of control. For more information, see <a class="xref" href="control-levels.html">Levels of control for composite products</a> .</li>
 </ul>
 <ol start="5">
 <li>Once the Warehouse Order has been finished the execution information is returned to the Inventory module (the Store Order). Then the Inventory module creates a Store Transaction for the dispatch composite product and the flow continues as normal (as it would for an ordinary product).</li>
@@ -122,7 +121,7 @@ How the control is performed depends on the specified level of control. For more
 </ol>
 <p><img src="pictures/wr-composite-product.png" alt="Inbound Warehouse Requisition with Composite Product"></p>
 <ol start="3">
-<li><p>The Warehouse Requisition creates an Inbound Warehouse Order but the WMS recognizes that the product is in fact a composite product (LOG0502).</p>
+<li><p>The Warehouse Requisition creates an Inbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is in fact a composite product (LOG0502).</p>
 </li>
 <li><p>For this reason, the requisition line is broken down into two types of lines:</p>
 </li>
@@ -136,8 +135,8 @@ How the control is performed depends on the specified level of control. For more
 <li>These lines are then executed by the warehouse workers using WMS Worker app.</li>
 </ol>
 <ul>
-<li>Receive (comp) lines are executed as usual for receive operations. See Receive (comp) (link) task type.</li>
-<li>Dekit line can be placed before or after the Receive (comp) lines. It is used for fulfilling the parent (requisition) line and performing a control. The position of the Dekit line and how the control is performed depends on the specified level of control. For more information, see Dekit (link) task type.</li>
+<li>Receive (comp) lines are executed as usual for receive operations.</li>
+<li>Dekit line can be placed before or after the Receive (comp) lines. It is used for fulfilling the parent (requisition) line and performing a control. The position of the Dekit line and how the control is performed depends on the specified level of control. For more information, see <a class="xref" href="control-levels.html">Levels of control for composite products</a> .</li>
 </ul>
 </article>
           </div>
