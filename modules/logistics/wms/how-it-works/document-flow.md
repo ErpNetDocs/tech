@@ -42,7 +42,7 @@ This phase practically starts in step (3.2) and more precisely, when the step is
 
 The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager. 
 
-**(3.2) When all WO lines are fully executed** and have Completed Document Fulfillments, then the **WO document state is changed to Completed** by the worked. 
+**(3.2) When all WO lines are fully executed** and have Completed Document Fulfillments, then the **WO document can be Completed**. 
 
 Its state is usually changed by the warehouse workers, using the "Complete order" button that shows automatically on their devices after the execution of the last order line.
 
@@ -50,9 +50,12 @@ Its state is usually changed by the warehouse workers, using the "Complete order
 
 The information is brough by generating Completed Document Fulfillment for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
 
+
 **(4) Once the WR's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent SO**. 
 
 The information is again brough by generating Completed Document Fulfillment for the **SO** by another rule [R32687](https://docs.erp.net/model/business-rules/R32687.html). Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WR's DocumentType is checkmarked.
+
+The WR is usually completed by the the warehouse dispatcher or manager. He can .....!!!!!!!!!!!!!!!
 
 **(5) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. 
 
