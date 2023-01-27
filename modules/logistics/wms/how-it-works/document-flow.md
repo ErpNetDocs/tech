@@ -35,7 +35,7 @@ Each line execution generates 2 real time records:
 - (3.1) Completed Document Fulfillment - which records how much of the quantity of the WO lines has been fulfilled by the workers and with what details (product, lot, variant)
 - (3.2) Warehouse Transaction - which updates the availability according to the workes actions (move, dispatch, receive)
 
-### Document completion
+### Completion
 
 **(4) Once the WO is fullly executed and its state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent WR**. The information is brough by generating Completed Document Fulfillment for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
 
