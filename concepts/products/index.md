@@ -29,7 +29,7 @@ In addition to the part number, the user is able to specify alternative **produc
 
 As opposed to part numbers and codes, the **serial numbers** are used to identify not the whole product but its separate pieces and help to keep track of what happens with them (e.g., to whom they are sold, if they are under guarantee, etc.). If the option **Serialized** in the product definition is checked, this product cannot be used in the logistic documents if its serial number is not explicitly indicated. For more information, see [Serial numbers](serial-numbers.md).
 
-@@name allows the separate product units to be grouped in **lots**. An unlimited number of lots could be defined for a particular product. Each lot can contain product units that have the same expiry date or that are received within the same receiving order or that are produced within the same production output order. For more information, see [Lots](~/modules/logistics/inventory/lots/index.md).
+@@name allows the separate product units to be grouped in **lots**. An unlimited number of lots could be defined for a particular product. Each lot can contain product units that have the same expiry date or that are received within the same receiving order or that are produced within the same production output order. For more information, see [Lots](/modules/logistics/inventory/lots/index.md).
 
 In the product definition, you can manage the settings of using lots by determining the following parameters:
 - whether the lots are allowed or not allowed or required
