@@ -43,15 +43,15 @@ The two most basic documents of WMS are:
 
 The basic operation flow of WMS is the following:
 
-![WMS](pictures/WMS.png)
+![WMS](pictures/flow.png)
 
 The steps, noted in (parens) in the diagram are as follows:
 
 1. The outside module/department creates W.R. based on its needs.
 2. Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.
-3. The workers use their handheld devices to execute the order. Each step is recorded as both warehouse transaction and warehouse order execution.
-4. After the WO is fully executed, the warehouse requisition execution is updated.
-5. After the WR is fully executed, the external module/department updates its execution state.
+3. The workers use their handheld devices to execute the order. Each step is recorded as both warehouse transaction and document fulfillments.
+4. After the WO is fully executed (completed), the warehouse requisition fulfillments are updated with the execution information.
+5. After the WR is fully executed, the  external module/department updates its execution state.
 
 Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.
 
