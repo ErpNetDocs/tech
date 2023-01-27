@@ -40,9 +40,8 @@ Each line execution generates 2 real time records:
 ### Completion
 This phase practically starts in step (3.2) and more precisely, when the step is fullly completed. 
 
-The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager. The WO's are usually completed by the workers, while the WR and SO are completed by the person that performs the control.
+The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager. 
 
-The steps: 
 **(3.2) When all WO lines are fully executed** and have Completed Document Fulfillments, then the **WO document state is changed to Completed** by the worked. Its state is usually changed by the warehouse workers, using the "Complete order" button that shows automatically on their devices after the execution of the last order line.
 
 **(4) Once the WO's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent WR**. The information is brough by generating Completed Document Fulfillment for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
