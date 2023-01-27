@@ -30,7 +30,7 @@ The Warehouse Order is the document that contains the actual plan that needs to 
 
 The document fulfillment between the WR and WO is also calculated using the [Fulfillment table method](/advanced/document-flow/fulfillment.md#fulfillment-table). The generation procedure creates Planned Document Fulfillments, which records how much of the quantity of the WR lines has been fulfilled by WO lines.
 
-**(3) The released WO** load in the Orders menu of [WMS Worker](xref:wms-worker), where they are executed by the warehouse workers using the handheld devices.
+**(3) The released WO** load in the Orders menu of **[WMS Worker](xref:wms-worker)**, where they are executed by the warehouse workers using the handheld devices.
 Each line execution generates 2 real time records:
 - **(3.1** Warehouse Transaction - which updates the availability according to the workes actions (move, dispatch, receive)
 - **(3.2)** Completed Document Fulfillment - which records how much of the quantity of the WO lines has been fulfilled by the workers and with what details (product, lot, variant)
