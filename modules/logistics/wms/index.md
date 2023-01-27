@@ -49,7 +49,7 @@ The steps, noted in (parens) in the diagram are as follows:
 
 1. The outside module/department creates W.R. based on its needs. The connection is performed trough the **Iventory Store Orders (S.O.)**.
 2. Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.
-3. The workers use their handheld devices to execute the order. Each step is recorded as both document fulfillments (3.1) and warehouse transactions (3.2).
+3. The workers use their handheld devices and the [WMS Worker app](xref:wms-worker) to execute the order. Each step is recorded as both document fulfillments (3.1) and warehouse transactions (3.2).
 4. After the W.O. is fully executed (completed), the warehouse requisition fulfillments are updated with the execution information.
 5. After the W.R. is fully executed (completed), the store transaction fulfillments are updated with the execution information.
 6. After the S.O. is fully executed (completed), it created the **Inventory Store Transaction** based in the execution information returned by the WMS.
