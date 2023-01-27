@@ -42,13 +42,21 @@ This phase practically starts in step (3.2) and more precisely, when the step is
 
 The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager. 
 
-**(3.2) When all WO lines are fully executed** and have Completed Document Fulfillments, then the **WO document state is changed to Completed** by the worked. Its state is usually changed by the warehouse workers, using the "Complete order" button that shows automatically on their devices after the execution of the last order line.
+**(3.2) When all WO lines are fully executed** and have Completed Document Fulfillments, then the **WO document state is changed to Completed** by the worked. 
 
-**(4) Once the WO's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent WR**. The information is brough by generating Completed Document Fulfillment for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
+Its state is usually changed by the warehouse workers, using the "Complete order" button that shows automatically on their devices after the execution of the last order line.
 
-**(4) Once the WR's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent SO**. The information is again brough by generating Completed Document Fulfillment for the **SO** using the [R32687](https://docs.erp.net/model/business-rules/R32687.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WR's DocumentType is checkmarked.
+**(4) Once the WO's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent WR**. 
 
-**(5) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. The ST line creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained in the  parent SO's completed fulfillments.
+The information is brough by generating Completed Document Fulfillment for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
+
+**(4) Once the WR's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent SO**. 
+
+The information is again brough by generating Completed Document Fulfillment for the **SO** by another rule [R32687](https://docs.erp.net/model/business-rules/R32687.html). Note that, the rule will be triggered only if "Complete Parent Fulfillments" field in the WR's DocumentType is checkmarked.
+
+**(5) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. 
+
+The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the parent SO's completed fulfillments.
 
 
 
