@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document flow in WMS | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Document flow in WMS | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="document-flow-in-wms">Document flow in WMS</h2>
+
+<p>The link between other modules/processes in the system and the WMS is performed through the Inventory module. And more precisely, the document that communicates with the WMS Module is the Inventory Store order.</p>
+<p>The Store Order creates both:</p>
+<ul>
+<li>the Warehouse Requisition that inform the WMS Module what is requested by the other modules/processes;</li>
+<li>and the Store Transaction, which contains the information how these requests are actually fulfilled by WMS module.</li>
+</ul>
+<h2 id="how-it-works">How it works?</h2>
+<p>Here is the scheme of the document and execution flow. The flow can be can be divided into two practical phases:</p>
+<ul>
+<li><strong>generation and execution</strong> - steps (1) - (3.1)
+<br> AND</li>
+<li><strong>completion</strong> - steps (3.2) - (6)</li>
+</ul>
+<p><img src="pictures/flow_detailed.png" alt="Flow"></p>
+<h3 id="generation-and-execution">Generation and execution</h3>
+<p>This phase starts with the releasing of the Store Order.</p>
+<p><strong>(1) The Store Order (SO)</strong> generates a <strong>Warehouse Requisition (WR)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0205.html">LOG0205</a> generation procedure.</p>
+<p>The Warehouse Requisition is the document that informs the WMS Module what is requested by the other modules/processes. Usually the Warehouse Requisition is almost an exact copy of the Store Order.</p>
+<p>The document fulfillment between the SO and WR is calculated using the <a href="/advanced/document-flow/fulfillment.md#fulfillment-table">Fulfillment table method</a>. The generation procedure creates Planned Document Fulfillments, which records how much of the quantity of the WO lines has been fulfilled by WR lines.</p>
+<p><strong>(2) The WR</strong> generates a <strong>Warehouse Orders (WO)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0501.html">LOG0501</a> or <a href="https://docs.erp.net/model/generations/LOG0502.html">LOG0502</a> generation procedure, depending on wherther composite products are used or not.</p>
+<p>The Warehouse Order is the document that contains the actual plan that needs to be executed by the WMS module. The generation of its lines is the place where all plan optimizations, algorithms, and AI should happen.</p>
+<p>The document fulfillment between the WR and WO is also calculated using the <a href="/advanced/document-flow/fulfillment.md#fulfillment-table">Fulfillment table method</a>. The generation procedure creates Planned Document Fulfillments, which records how much of the quantity of the WR lines has been fulfilled by WO lines.</p>
+<p><strong>(3) The released WO</strong> load in the Orders menu of <strong><a href="xref:wms-worker">WMS Worker</a></strong>, where they are executed by the warehouse workers using the handheld devices.
+Each line execution generates 2 real time records:</p>
+<ul>
+<li><strong>(3.1</strong> Warehouse Transaction - which updates the availability according to the workes actions (move, dispatch, receive)</li>
+<li><strong>(3.2)</strong> Completed Document Fulfillment - which records how much of the quantity of the WO lines has been fulfilled by the workers and with what details (product, lot, variant)</li>
+</ul>
+<h3 id="completion">Completion</h3>
+<p>This phase practically starts in step (3.2) and more precisely, when the step is fullly completed.</p>
+<p>The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager.</p>
+<p><strong>(3.2) When all WO lines are fully executed</strong> and have Completed Document Fulfillments, then the <strong>WO document can be Completed</strong>.</p>
+<p>Its state is usually changed by the warehouse workers, using the &quot;Complete order&quot; button that shows automatically on their devices after the execution of the last order line.</p>
+<p><strong>(4) Once the WO's state is changed to Completed</strong> it brings the fulfillment information (quantity, product, lot, variant) back to the <strong>parent WR</strong>.</p>
+<p>The information is brough by generating Completed Document Fulfillment for the <strong>WR</strong> using the <a href="https://docs.erp.net/model/business-rules/R33563.html">R33563</a> business rule. Note that, the rule will be triggered only if &quot;Complete Parent Fulfillments&quot; field in the WO's DocumentType is checkmarked.</p>
+<p><strong>(4) Once the WR's state is changed to Completed</strong> it brings the fulfillment information (quantity, product, lot, variant) back to the <strong>parent SO</strong>.</p>
+<p>The information is again brough by generating Completed Document Fulfillment for the <strong>SO</strong> by another rule <a href="https://docs.erp.net/model/business-rules/R32687.html">R32687</a>. Note that, the rule will be triggered only if &quot;Complete Parent Fulfillments&quot; field in the WR's DocumentType is checkmarked.</p>
+<p>The WR is usually completed by the the warehouse dispatcher or manager. He can .....!!!!!!!!!!!!!!!</p>
+<p><strong>(5) Once the SO's state is changed to Completed</strong> it generates a <strong>Store Transaction (ST)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0207.html">LOG0207</a> generation procedure.</p>
+<p>The <strong>ST lines</strong> creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the parent SO's completed fulfillments.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/document-flow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

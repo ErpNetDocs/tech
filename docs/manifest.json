@@ -2431,7 +2431,7 @@
       "output": {
         ".html": {
           "relative_path": "concepts/products/index.html",
-          "hash": "D5bTd3LaqqOiJz78tMIFmQ=="
+          "hash": "bd7BJH8sSb5MYwdVPIy8mg=="
         }
       },
       "is_incremental": false,
@@ -7560,12 +7560,27 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/document-flow.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/document-flow.html",
+          "hash": "g9pdBEZGNZ5XrfPZ4aJBaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "+76/wyOquo+8/vk++adL5Q=="
+          "hash": "BruSJE1vKNJ4PdrsEjsCSg=="
         }
       },
       "is_incremental": false,
@@ -7621,6 +7636,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/five-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/flow_detailed.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/flow_detailed.png"
         }
       },
       "is_incremental": false,
@@ -8243,12 +8269,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "TrEub/j8eg1uaJWb7Q/wpg=="
+          "hash": "9wgFbXSBH+hyjCH9YYI+EQ=="
         }
       },
       "is_incremental": false,
@@ -8260,6 +8289,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/pictures/WMS.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/pictures/flow.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/pictures/flow.png"
         }
       },
       "is_incremental": false,

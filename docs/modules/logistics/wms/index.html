@@ -116,14 +116,15 @@ They are the internal plan for execution of W.R. They contain routes, locations,
 </li>
 </ul>
 <p>The basic operation flow of WMS is the following:</p>
-<p><img src="pictures/WMS.png" alt="WMS"></p>
+<p><img src="pictures/flow.png" alt="WMS"></p>
 <p>The steps, noted in (parens) in the diagram are as follows:</p>
 <ol>
-<li>The outside module/department creates W.R. based on its needs.</li>
+<li>The outside module/department creates W.R. based on its needs. The connection is performed trough the <strong>Iventory Store Orders (S.O.)</strong>.</li>
 <li>Inside the WMS, the team devises a plan for execution and stores it as a W.O. In the best-case scenario, the creation of WO is totally automated.</li>
-<li>The workers use their handheld devices to execute the order. Each step is recorded as both warehouse transaction and warehouse order execution.</li>
-<li>After the WO is fully executed, the warehouse requisition execution is updated.</li>
-<li>After the WR is fully executed, the external module/department updates its execution state.</li>
+<li>The workers use their handheld devices and the <strong><a href="xref:wms-worker">WMS Worker app</a></strong> to execute the order. Each step is recorded as both document fulfillments (3.1) and warehouse transactions (3.2).</li>
+<li>After the W.O. is fully executed (completed), the warehouse requisition fulfillments are updated with the execution information.</li>
+<li>After the W.R. is fully executed (completed), the store transaction fulfillments are updated with the execution information.</li>
+<li>After the S.O. is fully executed (completed), it created the <strong>Inventory Store Transaction</strong> based in the execution information returned by the WMS.</li>
 </ol>
 <p>Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.</p>
 <p><img src="pictures/handy.png" alt="Handy"></p>
