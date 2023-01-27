@@ -17,6 +17,7 @@ Here is the scheme of the document and execution flow. The flow can be can be di
 
 
 ### Generation and execution
+This phase starts with the releasing of the Store Order.
 
 **(1) The Store Order (SO)** generates a **Warehouse Requisition (WR)** using the [LOG0205](https://docs.erp.net/model/generations/LOG0205.html) generation procedure. 
 
