@@ -3952,6 +3952,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/flow_detailed.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/flow_detailed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/four-zones.png",
       "output": {
         "resource": {
@@ -4825,6 +4836,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/pictures/composite-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/pictures/flow.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/pictures/flow.png"
         }
       },
       "is_incremental": false,
