@@ -34,30 +34,26 @@ If you click on the link, you’ll be taken to the definition of the order. Ther
 
 The next step in the entering of the availabilities is the execution of warehouse order lines. Once the information in them is reviewed and the document is released, the information in them is applied to the Warehouse Availability using this function.
 
-The "Execute lines function" executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number etc. and creates Warehouse Transaction, Document Fulfillments or both.
+The "Execute lines function" executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number etc. and creates Warehouse Transaction, Document Fulfillments or both. The function is especially useful when [entering initial availability](/modules/logistics/wms/how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines in case there is a problem with mobile devices for example.
 
-This essentially loads what’s left of the (unprocessed) quantities from all document lines which are part of a warehouse order. Already provided information such as line number, product and serial number is used in the process.
-
-Line execution is useful if you're creating opening balances, but it can also help when a specific warehouse order needs to be issued without using an WMS worker.
-
-To begin, go to the contents of a warehouse order (inbound or outbound) and make sure to **release** it.
+To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is **released** and if it is not, **release** the document before starting the function.
 
 ![Picture](pictures/release-document.png)
 
-Then, click the **play button** and select **Execute lines**.
+Then, click the **UI Functions** and select **Execute lines**.
 
 ![Picture](pictures/executelines.png)
 
-You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking **OK**.
+You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking **OK**.
 
 ![Picture](pictures/warning-message.png)
 
-The line execution functionality processes every line separately, and if everything is alright, you should get a success message. 
-
-Furthermore, one or two documents will be generated as a result: store transaction and/or document fulfillment. 
+The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message. 
 
 ![Picture](pictures/success.png)
 
-If there's an error during the execution of the lines, a different message will be displayed on the screen, putting the operation to a halt. 
+an informative message is displayed on the screen and the processing is interrupted.
 
-Once the error is identified and removed by an operator, you can continue the execution process from where it was stopped.
+If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.
+
+Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the Document Fulfillments that has been created) and proceed with their execution.
