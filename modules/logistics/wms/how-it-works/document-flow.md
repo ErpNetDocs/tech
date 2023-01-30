@@ -55,14 +55,28 @@ The information is brough by generating **Completed DF** for the **WR** using th
 
 The information is again brough by generating **Completed DF** for the **SO** by another rule [R32687](https://docs.erp.net/model/business-rules/R32687.html). Note that, the rule will be again triggered only if "Complete Parent Fulfillments" field in the WR's DocumentType is checkmarked.
 
-The **WR** is usually completed by the warehouse dispatcher or manager. He can track which **WRs** are fully executed using the **Warehouse Requisition** navigator using a calculated attribute that has been set up in advance. The calculate attribute expressions is added in the end of this topic.
+The **WR** is usually completed by the warehouse dispatcher or manager. "When it is complеted?" depends on the method of control that has been chosed by the organisation:
+* **two-stage control** - by completing the WR and then completing SO
+<br/>OR
+* **one-stage control** - by automatically completing the WR, at the completion of SO
 
-Note: The **WR** could be completed may be completed together with the completion of the **SO** using the "Complete with subdocument" function. For more information, see step 5. The decision whether to use two-stage control (by completing the WR and then completing SO) or one-stage control (by automatically completing the WR, at the completion of SO) is made by the implementer in accordiance with the company's preferences and needs.
+If the organisation **uses two-stage control** the warehouse dispatcher or manager can track which **WRs** are fully executed using the **Warehouse Requisition navigator** using a calculated attribute that has been set up in advance. The calculate attribute expressions is added in the end of this topic. He can complete the executed document using the bulk function "Change state of selected documents => Completed".
+
+If the organisation uses the **one-stage control**, the WR is completed in step (5).
 
 **(5) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. 
 
-The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the parent SO's completed fulfillments.
+The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the **parent SO's** completed fulfillments.
 
+The **SO** is also usually completed by the warehouse dispatcher or manager. He can track which **SOs** are fully executed by the WMS module using the **Store Orders navigator** using a calculated attribute that has been set up in advance. The calculate attribute expressions is added in the end of this topic.
+
+If you are using 
+The **SO** could be completed together with its child **WR**
+
+Note: The **WR** could be completed may be completed together with the completion of the **SO** using the "Complete with subdocument" function. For more information, see step 5. The decision whether to use two-stage control (by completing the WR and then completing SO) or one-stage control (by automatically completing the WR, at the completion of SO) is made by the implementer in accordiance with the company's preferences and needs.
+
+
+### Calculate Attribute Expressions
 
 
 
