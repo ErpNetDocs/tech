@@ -3,6 +3,7 @@
 - name: Setup warehouse
   href: setup-warehouse/toc.yml
   topicHref: setup-warehouse/index.md
-- name: Initial availability balance
+- name: Setup the document flow
+  href: document-flow.md
+- name: Enter initial availability
   href: initial-availability.md
-  
