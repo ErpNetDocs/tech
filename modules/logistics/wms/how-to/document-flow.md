@@ -6,7 +6,7 @@ The Store Order creates both:
 -	the Warehouse Requisition that informs the WMS module what is requested by the other modules/processes;
 -	and the Store Transaction, which contains the information on how these requests are actually fulfilled by the WMS module.
 
-## How it works?
+## How set it up?
 Here is the scheme of the document and execution flow. The flow can be divided into two general phases:
 - **generation and execution** - steps (1) - (3.1)
 <br/> AND
