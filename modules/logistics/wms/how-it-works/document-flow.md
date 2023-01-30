@@ -15,7 +15,6 @@ Here is the scheme of the document and execution flow. The flow can be can be di
 ![Flow](pictures/flow_detailed.png)
 
 
-
 ### Generation and execution
 This phase starts with the releasing of the Store Order.
 
@@ -76,8 +75,16 @@ If the organisation uses the **one-stage control**, the executed **SOs** are com
 
 ### Calculate Attribute Expressions
 
+The information if a **WR or a SO** is fully executed is gathered using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:
+* an attribute in **WR lines** - that shows if the particular line is fully executed
+* a second attribute in **WR** - that uses the first attrute that shows if the whole **WR** is fully executed i.e. if all of its lines are.
+* and a third attrubite in **SO** - that shows if the document is fully executed by the WMS module i.e. if all its child **WRs** are fully executed.
 
+Here is a list with the calculted attribites expressions. Оf course, еach attribute can be modified by the implementator accoring the organisation needs.
 
+* "Is Executed" attribute in **WR lines**
+
+Repository: Logistics.Wms.WarehouseRequisitionLines
 
 
 
