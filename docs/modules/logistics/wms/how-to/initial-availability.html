@@ -80,35 +80,34 @@
 <h1 id="enter-initial-availability">Enter initial availability</h1>
 
 <p>When working in the WMS module, one of the first things you need to do is enter the <strong>initial availability balance</strong>.</p>
-<p>This allows you to keep consistent track of what your warehouse has and never get lost in random numbers.</p>
-<p>For ease of management purposes, the system has <strong>two</strong> functionalities set in place – one for loading the availability and another for executing the lines.</p>
+<p>The system comes with two functions that will help you ease the process – one for loading the current availability from the Inventory module and another that will apply the reviewed availability to the WMS module.</p>
 <h2 id="loading-the-initial-warehouse-availability">Loading the initial warehouse availability</h2>
-<p>While defining your warehouse in the WMS module, you can load the initial availability by selecting one of your existing stores.</p>
-<p>To begin, click on the <strong>play button</strong> and select <strong>Load initial available balance</strong>.</p>
+<p>The first function is located in the Managed Warehouse definition.</p>
+<p>With it, you can enter availability for the current Warehouse by loading the current availability from an existing Store of the Inventory management module.</p>
+<p>The function loads availability from the selected Store and creates Warehouse Orders the for the corresponding Warehouse. The lines of these Warehouse Orders contain the loaded availability.  Then, they can be reviewed, edited (if necessary), and executed by the second function.</p>
+<p>To begin, click on the <strong>UI Functions button</strong> and select <strong>Load initial available balance</strong>.</p>
 <p><img src="pictures/loadinitbalance.png" alt="Picture"></p>
-<p>A separate window will visualize, in which you need to select a store and define the type of the document.</p>
+<p>This will pop up a window, in which you can select the <strong>Store</strong> whose availability you would like to load and the <strong>Document type</strong> of the Warehouse Order that will be created.</p>
 <p><img src="pictures/window.png" alt="Picture"></p>
-<p>The store provides you with initial availability while the document type is used for issuing warehouse orders.</p>
 <p>Once you’ve made your selections, click OK.</p>
 <p><img src="pictures/button-ok.png" alt="Picture"></p>
-<p>Availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) of the issued orders that belong to the respective warehouse.</p>
+<p>The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result.</p>
 <p><img src="pictures/message-link.png" alt="Picture"></p>
-<p>If you click on the link, you’ll be taken to the contents of the order. You can preview, edit and execute it on demand.</p>
+<p>If you click on the link, you’ll be taken to the definition of the order. There you can review and edit (if needed) the results i.e. the warehouse order lines. Once the review is done,  you can release the document and execute its line using the second function.</p>
 <h2 id="executing-the-lines">Executing the lines</h2>
-<p>The next step in working with initial availabilities is the execution of warehouse order lines.</p>
-<p>This essentially loads what’s left of the (unprocessed) quantities from all document lines which are part of a warehouse order. Already provided information such as line number, product and serial number is used in the process.</p>
-<p>Line execution is useful if you're creating opening balances, but it can also help when a specific warehouse order needs to be issued without using an WMS worker.</p>
-<p>To begin, go to the contents of a warehouse order (inbound or outbound) and make sure to <strong>release</strong> it.</p>
+<p>The next step in entering the availabilities is the execution of warehouse order lines. Once the information in them is reviewed and the document is released, the information in them is applied to the Warehouse Availability using this function.</p>
+<p>The &quot;Execute lines function&quot; executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's <a href="/modules/logistics/wms/how-it-works/task-types/index.md">task type</a>. The function is especially useful when <a href="/modules/logistics/wms/how-to/initial-availability.md">entering initial availability</a> in the Warehouse or as a backup way to execute lines without using the <a href="xref:wms-worker">WMS Worker</a> app, in case there is a problem with mobile devices for example.</p>
+<p>To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is <strong>released</strong> and if it is not, <strong>release</strong> the document before starting the function.</p>
 <p><img src="pictures/release-document.png" alt="Picture"></p>
-<p>Then, click the <strong>play button</strong> and select <strong>Execute lines</strong>.</p>
+<p>Then, click the <strong>UI Functions</strong> and select <strong>Execute lines</strong>.</p>
 <p><img src="pictures/executelines.png" alt="Picture"></p>
-<p>You'll get a warning message preceding the operation. Confirm that you want to perform it by clicking <strong>OK</strong>.</p>
+<p>You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking <strong>OK</strong>.</p>
 <p><img src="pictures/warning-message.png" alt="Picture"></p>
-<p>The line execution functionality processes every line separately, and if everything is alright, you should get a success message.</p>
-<p>Furthermore, one or two documents will be generated as a result: store transaction and/or document fulfillment.</p>
+<p>The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message.</p>
 <p><img src="pictures/success.png" alt="Picture"></p>
-<p>If there's an error during the execution of the lines, a different message will be displayed on the screen, putting the operation to a halt.</p>
-<p>Once the error is identified and removed by an operator, you can continue the execution process from where it was stopped.</p>
+<p>an informative message is displayed on the screen and the processing is interrupted.</p>
+<p>If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.</p>
+<p>Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the Document Fulfillments that has been created) and proceed with their execution.</p>
 </article>
           </div>
           

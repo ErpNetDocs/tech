@@ -4656,6 +4656,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/flow_detailed.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/flow_detailed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/links.png",
       "output": {
         "resource": {
@@ -7977,7 +7988,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/document-flow.html",
-          "hash": "+rLpNDLtDOkon1wtlJaHxA=="
+          "hash": "1jcz0ys80+IvmoGGvzaAZQ=="
         }
       },
       "is_incremental": false,
@@ -7996,12 +8007,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/initial-availability.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
-          "hash": "kGMNXlgdRAulJruDzJ+qWw=="
+          "hash": "+wJYQV9qEoJKyOa3lT4Lnw=="
         }
       },
       "is_incremental": false,
