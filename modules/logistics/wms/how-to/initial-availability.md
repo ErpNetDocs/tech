@@ -1,4 +1,4 @@
-# Easy entry of initial availability balances
+# Enter initial availability
 
 When working in the WMS module, one of the first things you need to do is enter the **initial availability balance**. 
 
