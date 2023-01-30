@@ -88,5 +88,23 @@ Repository: Logistics.Wms.WarehouseRequisitionLines
 
 | Exp No | Operator | Parameter1 | P1 Value | Parameter2 | P2 Value | Parameter3 | P3 Value |
 | ------ | -------- |----------- |--------- |----------- |--------- |----------- |--------- |
-| 10 | IF | EXP | 20 | CONST | false | CONST | true |
+| 	10	 | 	IIF	 | 	EXP	 | 	20	 | 	CONST	 | 	TRUE	 | 	CONST	 | 	FALSE	 |
+| 	20	 | 	LTE	 | 	EXP	 | 	30	 | 	EXP	 | 	100	 |				
+| 	30	 | 	SUM	 | 	EXP	 | 	40	 | 	ATTRIB	 | 	StandardQuantity	 |				
+| 	40	 | 	FILTER	 | 	EXP	 | 	50	 | 	EXP	 | 	60	 |				
+| 	50	 | 	GETOBJVALUE	 | 	REF	 | 	WarehouseRequisition	 | 	CHILD	 | 	Fulfillments	 |				
+| 	60	 | 	AND	 | 	EXP	 | 	70	 | 	EXP	 | 	90	 |				
+| 	70	 | 	EQUAL	 | 	ATTRIB	 | 	DocumentLineId	 | 	EXP	 | 	80	 |				
+| 	80	 | 	GETOBJVALUE	 | 	INPUT	 | 	10	 | 	ATTRIB	 | 	Id	 |				
+| 	90	 | 	EQUAL	 | 	EXP	 | 	95	 | 	CONST	 | 	0	 |				
+| 	95	 | 	CAST	 | 	ATTRIB	 | 	FulfillmentType	 | 	CONST	 | 	System.Int32	 |				
+| 	100	 | 	SUM	 | 	EXP	 | 	110	 | 	ATTRIB	 | 	StandardQuantity	 |				
+| 	110	 | 	FILTER	 | 	EXP	 | 	120	 | 	EXP	 | 	130	 |				
+| 	120	 | 	GETOBJVALUE	 | 	REF	 | 	WarehouseRequisition	 | 	CHILD	 | 	Fulfillments	 |				
+| 	130	 | 	AND	 | 	EXP	 | 	140	 | 	EXP	 | 	160	 |				
+| 	140	 | 	EQUAL	 | 	ATTRIB	 | 	DocumentLineId	 | 	EXP	 | 	150	 |				
+| 	150	 | 	GETOBJVALUE	 | 	INPUT	 | 	10	 | 	ATTRIB	 | 	Id	 |				
+| 	160	 | 	EQUAL	 | 	EXP	 | 	170	 | 	CONST	 | 	1	 |				
+| 	170	 | 	CAST	 | 	ATTRIB	 | 	FulfillmentType	 | 	CONST	 | 	System.Int32	 |				
+
 
