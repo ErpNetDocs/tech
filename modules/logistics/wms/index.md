@@ -52,7 +52,7 @@ The steps, noted in (parens) in the diagram are as follows:
 3. The workers use their handheld devices and the **[WMS Worker app](xref:wms-worker)** to execute the order. Each step is recorded as both document fulfillments (3.1) and warehouse transactions (3.2).
 4. After the W.O. is fully executed (completed), the warehouse requisition fulfillments are updated with the execution information.
 5. After the W.R. is fully executed (completed), the store transaction fulfillments are updated with the execution information.
-6. After the S.O. is fully executed (completed), it created the **Inventory Store Transaction** based in the execution information returned by the WMS.
+6. After the S.O. is fully executed (completed), it creates the **Inventory Store Transaction** based in the execution information returned by the WMS.
 
 Typically, managed warehouse operations are executed using some sort of handheld device, which is used to scan bar-codes, NFC tags, etc.
 
