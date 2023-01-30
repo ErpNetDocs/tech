@@ -86,5 +86,7 @@ Here is a list with the calculted attribites expressions. Оf course, еach attr
 
 Repository: Logistics.Wms.WarehouseRequisitionLines
 
-
+| Exp No | Operator | Parameter1 | P1 Value | Parameter2 | P2 Value | Parameter3 | P3 Value |
+| ------ | -------- |----------- |--------- |----------- |--------- |----------- |--------- |
+| 10 | IF | EXP | 20 | CONST | false | CONST | true |
 
