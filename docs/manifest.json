@@ -7582,27 +7582,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/document-flow.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/document-flow.html",
-          "hash": "g9pdBEZGNZ5XrfPZ4aJBaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "BruSJE1vKNJ4PdrsEjsCSg=="
+          "hash": "+76/wyOquo+8/vk++adL5Q=="
         }
       },
       "is_incremental": false,
@@ -7658,17 +7643,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/five-zones.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/flow_detailed.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/flow_detailed.png"
         }
       },
       "is_incremental": false,
@@ -7995,12 +7969,27 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/document-flow.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/document-flow.html",
+          "hash": "+rLpNDLtDOkon1wtlJaHxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "vJZ/y+LCyAj6du+B5vpa5w=="
+          "hash": "YhHJt8NM0y1Tr3FzAWfRPg=="
         }
       },
       "is_incremental": false,
@@ -8012,7 +8001,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
-          "hash": "NJlQhc/9IHim+ZLGecl76A=="
+          "hash": "kGMNXlgdRAulJruDzJ+qWw=="
         }
       },
       "is_incremental": false,
@@ -8079,6 +8068,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/firstfunction.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/flow_detailed.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/flow_detailed.png"
         }
       },
       "is_incremental": false,
@@ -8223,7 +8223,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.html",
-          "hash": "Xv/cudBNls+UGbPVLskR/w=="
+          "hash": "QJgCYfoEaMJJypw+r5wWBQ=="
         }
       },
       "is_incremental": false,
@@ -8299,7 +8299,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "9wgFbXSBH+hyjCH9YYI+EQ=="
+          "hash": "6VaF9iM53DMPtvtbRe9W2Q=="
         }
       },
       "is_incremental": false,
@@ -8403,7 +8403,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "XK9htGXTHe+FS0XfD2yoVQ=="
+          "hash": "H4t3nH6hGizqrOEwyjUFCw=="
         }
       },
       "is_incremental": false,
