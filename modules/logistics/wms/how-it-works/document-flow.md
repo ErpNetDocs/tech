@@ -73,7 +73,7 @@ If the organisation **uses two-stage control**, the executed **SOs** are complet
 If the organisation uses the **one-stage control**, the executed **SOs** are completed along with their child **WR's** the bulk function "Change state of selected documents => Complete with subdocuments" in the same navigator.
 
 
-### Calculate Attribute Expressions
+### "Is Execute" calculate attributes
 
 The information if a **WR or a SO** is fully executed is gathered using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:
 * an attribute in **WR lines** - that shows if the particular line is fully executed
@@ -106,5 +106,36 @@ Repository: Logistics.Wms.WarehouseRequisitionLines
 | 	150	 | 	GETOBJVALUE	 | 	INPUT	 | 	10	 | 	ATTRIB	 | 	Id	 |				
 | 	160	 | 	EQUAL	 | 	EXP	 | 	170	 | 	CONST	 | 	1	 |				
 | 	170	 | 	CAST	 | 	ATTRIB	 | 	FulfillmentType	 | 	CONST	 | 	System.Int32	 |				
+
+
+* "Is Executed" attribute in **WR**
+
+Repository: Logistics.Wms.WarehouseRequisitions
+
+| Exp No | Operator | Parameter1 | P1 Value | Parameter2 | P2 Value | Parameter3 | P3 Value |
+| ------ | -------- |----------- |--------- |----------- |--------- |----------- |--------- |
+| 	10	 | 	IIF	 | 	EXP	 | 	20	 | 	CONST	 | 	FALSE	 | 	CONST	 | 	TRUE	 |
+| 	20	 | 	GTE	 | 	EXP	 | 	30	 | 	CONST	 | 	1	 |				
+| 	30	 | 	COUNT	 | 	EXP	 | 	40	 | 		 | 		 |				
+| 	40	 | 	FILTER	 | 	CHILD	 | 	Lines	 | 	EXP	 | 	50	 |				
+| 	50	 | 	EQUAL	 | 	ATTRIB	 | 	#IsExecutedWRLines	 | 	CONST	 | 	FALSE	 |				
+
+
+* "Is Executed" attribute in **SO**
+
+Repository: Logistics.Inventory.StoreOrders
+
+| Exp No | Operator | Parameter1 | P1 Value | Parameter2 | P2 Value | Parameter3 | P3 Value |
+| ------ | -------- |----------- |--------- |----------- |--------- |----------- |--------- |
+| 	10	 | 	IIF	 | 	EXP	 | 	20	 | 	CONST	 | 	FALSE	 | 	CONST	 | 	TRUE	 |
+| 	20	 | 	GTE	 | 	EXP	 | 	30	 | 	CONST	 | 	1	 |				
+| 	30	 | 	COUNT	 | 	EXP	 | 	31	 | 		 | 		 |				
+| 	31	 | 	FILTER	 | 	EXP	 | 	40	 | 	EXP	 | 	32	 |				
+| 	32	 | 	EQUAL	 | 	ATTRIB	 | 	#IsExecutedWR	 | 	CONST	 | 	FALSE	 |				
+| 	40	 | 	SELECT	 | 	REPO	 | 	Logistics.Wms.WarehouseRequisitions	 | 	EXP	 | 	50	 |				
+| 	50	 | 	WHERE	 | 	EXP	 | 	60	 | 		 | 		 |				
+| 	60	 | 	EQUAL	 | 	ATTRIB	 | 	ParentDocumentId	 | 	EXP	 | 	70	 |				
+| 	70	 | 	GETOBJVALUE	 | 	INPUT	 | 	10	 | 	ATTRIB	 | 	DocumentId	 |				
+
 
 
