@@ -13,7 +13,7 @@ are available only as ad hoch operation (e.g. the Renciliation menu of the WMS W
 [WMS Worker](xref:wms-worker) is our WMS mobile application available on all compatible Android devices, including handheld devices. 
 The Orders menu is used by the warehouse worker to execute the lines of the warehouse orders that has been assigned to them. For more information see [WMS Worker](xref:wms-worker) 
 
-## **Execute lines** UI function 
+## Execute lines UI function 
 
 The "Execute lines" UI function available in the definition of the Warehouse Orders.
 
