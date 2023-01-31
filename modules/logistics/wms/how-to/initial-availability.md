@@ -34,4 +34,4 @@ If you click on the link, you’ll be taken to the definition of the order. Ther
 
 The next step in entering the availabilities is the execution of warehouse order lines. Once they are reviewed and the document is released, the information in them is applied to the Warehouse Availability using the "Execute lines" function. 
 
-For more information about the function and how to use it, see the ["Execute lines UI function"](/modules/logistics/wms/how-to/execute-order-lines.md#execute-lines-ui-function).
+For more information about the function and how to use it, see the ["Execute lines UI function"](https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function).
