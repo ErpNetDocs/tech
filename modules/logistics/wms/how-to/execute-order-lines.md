@@ -6,7 +6,7 @@ The lines of the **WO** can be executed trough the Orders menu of the [WMS Worke
 How these lines are executed, depends on their [Task type](/modules/logistics/wms/how-it-works/task-types/index.md). More information about the purpose of each task type and how it can be executed can be found in the 
 [Task type](/modules/logistics/wms/how-it-works/task-types/index.md) subtopics.
 
-<br/>Note that not all task types are currently available for order lines execution. Some, such as the [Count task type](/modules/logistics/wms/how-it-works/task-types/count.md) for example, 
+Note that, not all task types are currently available for order lines execution. Some, such as the [Count task type](/modules/logistics/wms/how-it-works/task-types/count.md) for example, 
 are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).
 
 ## Orders menu in WMS Worker
