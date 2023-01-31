@@ -8,7 +8,7 @@ How these lines are executed, depends on their [Task type](/modules/logistics/wm
 <br/>Note that not all task types are currently available for order lines execution. Some, such as the [Count task type](/modules/logistics/wms/how-it-works/task-types/count.md) for example, 
 are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).
 
-## The Orders menu in WMS Worker
+## Orders menu in WMS Worker
 [WMS Worker](xref:wms-worker) is our WMS mobile application available on all compatible Android devices, including handheld devices. 
 The Orders menu is used by the warehouse worker to execute the lines of the warehouse orders that has been assigned to them. For more information see [WMS Worker](xref:wms-worker) 
 
