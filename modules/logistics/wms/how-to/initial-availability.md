@@ -32,28 +32,4 @@ If you click on the link, you’ll be taken to the definition of the order. Ther
 
 ## Executing the lines
 
-The next step in entering the availabilities is the execution of warehouse order lines. Once the information in them is reviewed and the document is released, the information in them is applied to the Warehouse Availability using this function.
-
-The "Execute lines function" executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](/modules/logistics/wms/how-it-works/task-types/index.md). The function is especially useful when [entering initial availability](/modules/logistics/wms/how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
-
-To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is **released** and if it is not, **release** the document before starting the function.
-
-![Picture](pictures/release-document.png)
-
-Then, click the **UI Functions** and select **Execute lines**.
-
-![Picture](pictures/executelines.png)
-
-You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking **OK**.
-
-![Picture](pictures/warning-message.png)
-
-The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message. 
-
-![Picture](pictures/success.png)
-
-an informative message is displayed on the screen and the processing is interrupted.
-
-If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.
-
-Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the Document Fulfillments that has been created) and proceed with their execution.
+The next step in entering the availabilities is the execution of warehouse order lines. Once the information in them is reviewed and the document is released, the information in them is applied to the Warehouse Availability using this function. For more information about the "Execute lines" function and how to use it, see the ["Execute lines UI function"](/modules/logistics/wms/how-to/execute-order-lines.md#execute-lines-ui-function).
