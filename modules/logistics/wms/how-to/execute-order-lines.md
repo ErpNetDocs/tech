@@ -14,8 +14,9 @@ The Orders menu is used by the warehouse worker to execute the lines of the ware
 
 ## **Execute lines** UI function 
 
-The "Execute lines" UI function available in the definition of the Warehouse Orders. 
-When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](/modules/logistics/wms/how-it-works/task-types/index.md). The function is especially useful when [entering initial availability](/modules/logistics/wms/how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
+The "Execute lines" UI function available in the definition of the Warehouse Orders.
+
+When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](/modules/logistics/wms/how-it-works/task-types/index.md). <br/>The function is especially useful when [entering initial availability](/modules/logistics/wms/how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
 
 To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is **released** and if it is not, **release** the document before starting the function.
 
@@ -32,8 +33,6 @@ You'll get a confirmation message preceding the operation. Confirm that you want
 The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message. 
 
 ![Picture](pictures/success.png)
-
-an informative message is displayed on the screen and the processing is interrupted.
 
 If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.
 
