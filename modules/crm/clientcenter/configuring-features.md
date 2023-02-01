@@ -28,9 +28,9 @@ Client Center settings should be configured in a key-value pair JSON format.
 
 You need to configure them in the ErpDatabase console as follows:
 
-{
-    "NewOrderDocumentType": "DocumentType.Id",
-    "IsNewOrderEnabled": true/false,
+{<br>
+    "NewOrderDocumentType": "DocumentType.Id",<br>
+    "IsNewOrderEnabled": true/false, <br>
 }
 
 where _NewOrderDocumentType_ takes the valid ID value of a new (sales) order 
@@ -42,10 +42,11 @@ and _IsNewOrderEnabled_ defines if the button for order creation will be shown o
 Depending on how you define the fields, you can encounter the following scenarios:
 
 1.	Both fields are set:
- 
+
+```
     	"NewOrderDocumentType": "07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c",
- 
-   	  "IsNewOrderEnabled": true
+   	"IsNewOrderEnabled": true
+```
 
 This results in the menu button allowing for the creation of a new order to be shown, and the document type to be set as a sales order.
 
@@ -57,7 +58,9 @@ To fix it, you need to erase all inputted values, save your progress, refresh th
 
 2.	Only one of the fields is set:
 
+```
    	  "IsNewOrderEnabled": true
+```
 
 Here, the system will generate another error:
 
@@ -67,9 +70,10 @@ Here, the system will generate another error:
 
 In this scenario, both fields assume two values by default:
 
+```
     	"NewOrderDocumentType": "CRM_SALES_ORDER.Id",
- 
-   	  "IsNewOrderEnabled": false
+        "IsNewOrderEnabled": false
+```
 
 The button used for creating a new order will not be shown. If you try to use a link leading to the direct creation of an order, you’ll see the following message:
 
@@ -89,4 +93,4 @@ By default, the System-Application-User has System rights, but reflects used lic
 
 ## Error visualization
 
-Whenever you encounter a problem in the platform, an appropriate, easy-to-read and interactive **error message** will be shown explaining its nature. 
+When you encounter a problem in the platform, a relevant, easy-to-read and interactive **error message** will be shown explaining its nature. 
