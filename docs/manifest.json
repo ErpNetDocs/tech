@@ -5713,6 +5713,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/platform-features.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/platform-features.html",
+          "hash": "EPagnAAJ2RdiGVits/qn5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/setup.md",
       "output": {
         ".html": {
@@ -7574,7 +7586,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/composite-products/working-with-composite-products.html",
-          "hash": "Fxbzu1bzTRMkuRmDnRaETA=="
+          "hash": "Ounu9s542rl0GA/YamJ0LA=="
         }
       },
       "is_incremental": false,
@@ -8429,7 +8441,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "iOoB1h2O9aCTE2pWIdy//g=="
+          "hash": "K8yErSSp+8vBP2qDKPTA0A=="
         }
       },
       "is_incremental": false,

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Platform features | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Platform features | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="platform-features">Platform features</h1>
+
+<p>Like all ERP websites, the Client Center can have its settings changed on an individual level.</p>
+<p>This includes precise visual and functional configurations.</p>
+<h2 id="configurable-settings">Configurable settings</h2>
+<p>Below is a list of settings you can modify to your liking in the Client Center:</p>
+<ol>
+<li>The ability to reveal or hide the <strong>New Order</strong> button, allowing or restricting users to create new orders and decide their access to the order creation module in general.</li>
+</ol>
+<p>By default, this button is <strong>hidden</strong> for users so as to prevent potential problems and risks.</p>
+<p>You need to <strong>enable</strong> the functionality manually only when that’s necessary.</p>
+<ol start="2">
+<li>The ability to define the user type of the sales order document in accordance with different users’ needs.</li>
+</ol>
+<p>In the case of sale orders, you must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
+<p>This could be useful for separating orders made im the Client Center from those made in other places on the platform.</p>
+<ol start="3">
+<li>The ability to easily generate <strong>comprehensive business analytics</strong> for orders made only in the Client Center.</li>
+</ol>
+<h3 id="json-format-definition">JSON Format Definition</h3>
+<p>Client Center settings should be configured in a key-value pair JSON format.</p>
+<p>You need to configure them in the ErpDatabase console as follows:</p>
+<p>{<br>
+&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,<br>
+&quot;IsNewOrderEnabled&quot;: true/false, <br>
+}</p>
+<p>where <em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order</p>
+<p>and <em>IsNewOrderEnabled</em> defines if the button for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+<h3 id="use-cases">Use-cases</h3>
+<p>Depending on how you define the fields, you can encounter the following scenarios:</p>
+<ol>
+<li>Both fields are set:</li>
+</ol>
+<pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c&quot;,
+   	&quot;IsNewOrderEnabled&quot;: true
+</code></pre>
+<p>This results in the menu button allowing for the creation of a new order to be shown, and the document type to be set as a sales order.</p>
+<p>If the ID doesn’t match any document of type Sales order, you’ll get an error:</p>
+<p><strong>008 - Not well formatted json string</strong></p>
+<p>To fix it, you need to erase all inputted values, save your progress, refresh the website, and insert the correct values.</p>
+<ol start="2">
+<li>Only one of the fields is set:</li>
+</ol>
+<pre><code>   	  &quot;IsNewOrderEnabled&quot;: true
+</code></pre>
+<p>Here, the system will generate another error:</p>
+<p><strong>009 – NewOrderDocumentType is set, but DocumentType is null</strong></p>
+<ol start="3">
+<li>No fields are set:</li>
+</ol>
+<p>In this scenario, both fields assume two values by default:</p>
+<pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;CRM_SALES_ORDER.Id&quot;,
+        &quot;IsNewOrderEnabled&quot;: false
+</code></pre>
+<p>The button used for creating a new order will not be shown. If you try to use a link leading to the direct creation of an order, you’ll see the following message:</p>
+<p><strong>You are not authorized to view this page.</strong></p>
+<h2 id="automatic-tracking">Automatic tracking</h2>
+<p>Whenever you apply or change settings for a website such as the Client Center, they’re <strong>tracked</strong> by the system in real-time and will be reflected immediately.</p>
+<h2 id="user-level-security">User-level security</h2>
+<p>Requests from the Client Center and other websites are made by types of users known as <strong>System-Application-User</strong>.</p>
+<p>They have enough rights to ensure their ability to apply or change settings only in accordance with the normal functioning of the current website. Possible confusion with user access to other places in the platform is essentially eliminated.</p>
+<p>By default, the System-Application-User has System rights, but reflects used licenses as well. It’s assumed whenever a new website is created and whenever a trusted application is added through the UI.</p>
+<h2 id="error-visualization">Error visualization</h2>
+<p>When you encounter a problem in the platform, a relevant, easy-to-read and interactive <strong>error message</strong> will be shown explaining its nature.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/platform-features.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

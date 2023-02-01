@@ -79,18 +79,18 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="working-with-composite-products">Working with Composite Products</h1>
 
-<p><a class="xref" href="index.html">Composite Products</a> are usually sold and purchased in its entirety but are stored as separate components (boxes) in the warehouse.</p>
+<p><a class="xref" href="index.html">Composite Products</a> are usually sold and purchased in their entirety but are stored as separate components (boxes) in the warehouse.</p>
 <h2 id="selling-a-composite-product">Selling a composite product</h2>
 <p>We already set up our composite product definition, following the steps in the <a href="index.html#how-to-create-composite-products">How to create Composite Products</a> section.</p>
-<p>Now, lets imagine that we have a customer who wants to buy it, to buy a wardrobe.</p>
+<p>Now, let's imagine that we have a customer who wants to buy it, to buy a wardrobe.</p>
 <ol>
 <li><p>We are creating a Sales Order for 1 wardrobe.
 <img src="pictures/sales-order-comp.png" alt="Sales Order with Composite Product"></p>
 </li>
-<li><p>The Sales Order document flow generates a Store Order, which is the link to the WMS module. It generates a Outbound Warehouse Requisition that informs the WMS module that it needs to dispatch 1 wardrobe.
+<li><p>The Sales Order document flow generates a Store Order, which is the link to the WMS module. It generates an Outbound Warehouse Requisition that informs the WMS module that it needs to dispatch 1 wardrobe.
 <img src="pictures/wr-composite-product.png" alt="Outbound Warehouse Requisition with Composite Product"></p>
 </li>
-<li><p>The Warehouse Requisition creates an Outbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is in fact a composite product.</p>
+<li><p>The Warehouse Requisition creates an Outbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is, in fact, a composite product.</p>
 </li>
 </ol>
 <p>For this reason, the requisition line is broken down into two types of lines:</p>
@@ -100,7 +100,7 @@
 </ul>
 <p><img src="pictures/out-wo-composite-product.png" alt="Outbound Warehouse Order with Composite Product"></p>
 <ol start="4">
-<li>These lines are then executed by the warehouse workers using WMS Worker app.</li>
+<li>These lines are then executed by the warehouse workers using the WMS Worker app.</li>
 </ol>
 <ul>
 <li>Dispatch (comp) lines are executed as usual for dispatch operations.</li>
@@ -113,15 +113,15 @@ How the control is performed depends on the specified level of control. For more
 <h2 id="purchasing-a-composite-product">Purchasing a composite product</h2>
 <p>The principles for purchasing a composite product are very similar to the principles for buying one.</p>
 <ol>
-<li><p>We are creating a procurement document for 1 wardrobe. This document could be a Requisition, Purchase Order or Receiving Order depending on the company's usual process.
+<li><p>We are creating a procurement document for 1 wardrobe. This document could be a Requisition, Purchase Order, or Receiving Order depending on the company's usual process.
 <img src="pictures/inb-wr-composite-product.png" alt="Purchase Order with Composite Product"></p>
 </li>
-<li><p>The procurement document flow generates a Store Order, which is the link to the WMS module. It generates a Inbound Warehouse Requisition that informs the WMS module that it needs to receive 1 wardrobe.</p>
+<li><p>The procurement document flow generates a Store Order, which is the link to the WMS module. It generates an Inbound Warehouse Requisition that informs the WMS module that it needs to receive 1 wardrobe.</p>
 </li>
 </ol>
 <p><img src="pictures/wr-composite-product.png" alt="Inbound Warehouse Requisition with Composite Product"></p>
 <ol start="3">
-<li><p>The Warehouse Requisition creates an Inbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is in fact a composite product (LOG0502).</p>
+<li><p>The Warehouse Requisition creates an Inbound Warehouse Order but the WMS, and more precisely the <a href="https://github.com/ErpNetDocs/model/blob/master/generations/LOG0502.md">LOG0502</a> generation procedure, recognizes that the product is, in fact, a composite product (LOG0502).</p>
 </li>
 <li><p>For this reason, the requisition line is broken down into two types of lines:</p>
 </li>
@@ -132,7 +132,7 @@ How the control is performed depends on the specified level of control. For more
 <img src="pictures/inb-wo-composite-product.png" alt="Inbound Warehouse Order with Composite Product"></li>
 </ul>
 <ol start="4">
-<li>These lines are then executed by the warehouse workers using WMS Worker app.</li>
+<li>These lines are then executed by the warehouse workers using the WMS Worker app.</li>
 </ol>
 <ul>
 <li>Receive (comp) lines are executed as usual for receive operations.</li>
