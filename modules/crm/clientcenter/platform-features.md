@@ -1,10 +1,10 @@
-# Configuring features
+# Platform features
 
 Like all ERP websites, the Client Center can have its settings changed on an individual level. 
 
 This includes precise visual and functional configurations. 
 
-## Available features
+## Configurable settings
 
 Below is a list of settings you can modify to your liking in the Client Center:
 
@@ -22,7 +22,7 @@ This could be useful for separating orders made im the Client Center from those 
  
 3.	The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
 
-## JSON Format Definition
+### JSON Format Definition
 
 Client Center settings should be configured in a key-value pair JSON format. 
 
@@ -37,7 +37,7 @@ where _NewOrderDocumentType_ takes the valid ID value of a new (sales) order
 
 and _IsNewOrderEnabled_ defines if the button for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
 
-## Use-cases
+### Use-cases
 
 Depending on how you define the fields, you can encounter the following scenarios:
 
