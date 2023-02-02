@@ -8,7 +8,7 @@ Composite products are products composed of individual parts or components that 
 
 This is very common in the furniture industry, where a single wardrobe can be stored in 3 separate boxes (components). In these cases:
 -	we are selling the final product (the wardrobe)
--	the availability in the inventory module is also by final product (the wardrobe). Because the seller needs to know how many wardrobes are available in order to know how much he can sell
+-	the availability in the inventory module is also by final product (the wardrobe). Because the sales persons need to know how many wardrobes are available in order to know how much they can sell
 -	but the availability in the WMS module is by components – because in fact, the warehouse workers have to pick and dispatch all of the wardrobe components to the client
 
 ## The difference between ordinary Products, Composite Products, and Composite Product Components 
