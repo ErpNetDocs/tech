@@ -21,7 +21,7 @@ The control is performed during the order execution in the WMS Worker App (link)
 
 Requires all products to be scanned again.
 
-When executing the Kit/Dekit line, the app shows a screen, where the worker must scan all components of the kit. The component products and product quantities must exactly match those in the composite product's definition, otherwise the system will not activate the Finish button and the line could not be fulfilled.
+When executing the Kit/Dekit line, the app shows a screen, where the workers must scan all components of the kit. The component products and product quantities must exactly match those in the composite product's definition, otherwise the system will not activate the Finish button and the line could not be fulfilled.
 
 ![Level 0](pictures/level0.png)
 
@@ -33,7 +33,7 @@ Same as level 0, but the application provides an option to still fulfill the ord
 
 * **Level 2 - Just preview totals**
 
-The app displays a screen with summarized information for the components of the product from its definition and the executed quantities for the selected order. The information available for counting or checking, but does not require rescanning of the components. The worker certifies that he has completed the check by pressing the Finish button.
+The app displays a screen with summarized information for the components of the product from its definition and the executed quantities for the selected order. The information available for counting or checking, but does not require rescanning of the components. The workers certifiy that they hav completed the check by pressing the Finish button.
 
 ![Level 2](pictures/level2.png)
 
