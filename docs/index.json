@@ -562,7 +562,7 @@
   "advanced/index.html": {
     "href": "advanced/index.html",
     "title": "Advanced section | ERP.net Tech Docs",
-    "keywords": "Advanced section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced systems Document flow - document-related concepts and services. Document amounts - mechanisms for reporting financial amounts in documents. Custom attributes - user-defined data attributes. Calculated attributes - user-defined calculations. User business rules - user-defined and system business rules. String interpolation - breaking down input string is into expressions. Data objects - data object extensibility systems. Jobs - systems which automatically run processes. Security - security-related topics. Advanced concepts Master / Detail attributes Object / Relational mapping Aggregates Scheduled document events"
+    "keywords": "Advanced section This section contains information for advanced concepts, systems and deep dive in the security. It is intended primarily for advanced ERP implementation consultants. Advanced systems Document flow - document-related concepts and services. Document amounts - mechanisms for reporting financial amounts in documents. Custom attributes - user-defined data attributes. Calculated attributes - user-defined calculations. User business rules - user-defined and system business rules. String interpolation - breaking down input string is into expressions. Data objects - data object extensibility systems. Jobs - systems which automatically run processes. Security - security-related topics. Web sites - web sites, part of ERP.net. Advanced concepts Master / Detail attributes Object / Relational mapping Aggregates Scheduled document events"
   },
   "advanced/jobs/index.html": {
     "href": "advanced/jobs/index.html",
@@ -838,6 +838,21 @@
     "href": "advanced/user-business-rules/parameter-types/index.html",
     "title": "Parameter types | ERP.net Tech Docs",
     "keywords": "Parameter types Parameter types specify how to obtain a parameter value: Constant - indicates the value for this param type would be a constant whenever the rule is activated; Attribute - the value of the system or user-defined attribute; Reference - link to another object, typically used with Attribute as a second parameter. The attributes would be attributes of the referenced object - not of the current repository; ChildList - detailed objects related to the current master object; FormattedString - Text which supports multi-line, variable interpolation, and variable formatting."
+  },
+  "advanced/web-sites/index.html": {
+    "href": "advanced/web-sites/index.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": ""
+  },
+  "advanced/web-sites/types/api.html": {
+    "href": "advanced/web-sites/types/api.html",
+    "title": "API | ERP.net Tech Docs",
+    "keywords": "API The web site provides an API to the ERP.net domain model using the OData (Open Data Protocol) standard. This API allows for the creation and consumption of data, in a RESTful manner and provides an opportunity for external applications to interact with the domain model. It enables external applications to access the domain model by querying, filtering, and updating the data through standard HTTP requests. The API provides a convenient and standardized way for external applications to interact with the domain model while also ensuring the security of the data being accessed. The API is secured using OAuth 2.0 , which provides an industry-standard for authorization. Domain API in ERP.net has its separate documentation, available here: https://docs.erp.net/dev/domain-api/index.html Rate limits HTTP response code 429 - Too Many Requests is returned if limits are exceeded. There're several limiters in the API, including: 600 requests per minute per session. No concurrent requests in a single session."
+  },
+  "advanced/web-sites/types/index.html": {
+    "href": "advanced/web-sites/types/index.html",
+    "title": "Types | ERP.net Tech Docs",
+    "keywords": "Types API"
   },
   "concepts/documents/adjustments.html": {
     "href": "concepts/documents/adjustments.html",
