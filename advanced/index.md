@@ -6,19 +6,20 @@ It is intended primarily for advanced ERP implementation consultants.
 
 ## Advanced systems
 
-- **[Document flow](https://docs.erp.net/tech/advanced/document-flow/index.html)** - document-related concepts and services.
-- **[Document amounts](https://docs.erp.net/tech/advanced/document-amounts/index.html)** - mechanisms for reporting financial amounts in documents.
-- **[Custom attributes](https://docs.erp.net/tech/advanced/custom-attributes/index.html)** - user-defined data attributes.
-- **[Calculated attributes](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)** - user-defined calculations.
-- **[User business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** - user-defined and system business rules.
-- **[String interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** - breaking down input string is into expressions.
-- **[Data objects](https://docs.erp.net/tech/advanced/data-objects/index.html)** - data object extensibility systems.
-- **[Jobs](https://docs.erp.net/tech/advanced/jobs/index.html)** - systems which automatically run processes.
-- **Security** - security-related topics.
+- **[Document flow](./document-flow/index.md)** - document-related concepts and services.
+- **[Document amounts](./document-amounts/index.md)** - mechanisms for reporting financial amounts in documents.
+- **[Custom attributes](./custom-attributes/index.md)** - user-defined data attributes.
+- **[Calculated attributes](./calculated-attributes/index.md)** - user-defined calculations.
+- **[User business rules](./user-business-rules/index.md)** - user-defined and system business rules.
+- **[String interpolation](./string-interpolation/index.md)** - breaking down input string is into expressions.
+- **[Data objects](./data-objects/index.md)** - data object extensibility systems.
+- **[Jobs](./jobs/index.md)** - systems which automatically run processes.
+- **[Security](./security/index.md)** - security-related topics.
+- **[Web sites](./web-sites/index.md)** - web sites, part of @@erpnet.
 
 ## Advanced concepts
 
-- **[Master / Detail attributes](https://docs.erp.net/tech/advanced/concepts/master-detail-attributes.html)**
-- **[Object / Relational mapping](https://docs.erp.net/tech/advanced/concepts/object-relational-mapping.html)**
-- **[Aggregates](https://docs.erp.net/tech/advanced/concepts/aggregates.html)**
-- **[Scheduled document events](https://docs.erp.net/tech/advanced/concepts/scheduled-document-events/index.html)**
+- **[Master / Detail attributes](./concepts/master-detail-attributes.md)**
+- **[Object / Relational mapping](./concepts/object-relational-mapping.md)**
+- **[Aggregates](./concepts/aggregates.md)**
+- **[Scheduled document events](./concepts/scheduled-document-events/index.md)**
