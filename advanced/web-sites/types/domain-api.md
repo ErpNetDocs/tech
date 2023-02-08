@@ -29,7 +29,7 @@ Long story short:
 
 If you need an one-liner, just to set up the rate limits:
 
-`{"RateLimits": {"Rpm": 100, "Concurrency": 1}}`
+`{"RateLimits": {"SessionRpm": 100, "SessionConcurrency": 1}}`
 
 _*note the surrounding brackets_
 
@@ -38,8 +38,8 @@ _*note the surrounding brackets_
 The rate limits settings are expressed by a JSON object in the following format:
 ```
 "RateLimits": {
-  "Rpm": <requests-per-minute>,
-  "Concurrency": <concurrent-requests>
+  "SessionRpm": <requests-per-minute>,
+  "SessionConcurrency": <concurrent-requests>
 }
 ```
 
@@ -49,8 +49,8 @@ Here's what it looks like as part of a complete web site configuration:
   "Setting1": 1,
   "Setting2": 2,
   "RateLimits": {
-    "Rpm": <requests-per-minute>,
-    "Concurrency": <concurrent-requests>
+    "SessionRpm": <requests-per-minute>,
+    "SessionConcurrency": <concurrent-requests>
   },
   "AnotherSetting": "test"
 }
