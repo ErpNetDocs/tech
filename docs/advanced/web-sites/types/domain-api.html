@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Types | ERP.net Tech Docs </title>
+    <title>Domain API | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Types | ERP.net Tech Docs ">
+    <meta name="title" content="Domain API | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,11 +76,48 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="types">Types</h1>
+            <article class="content wrap" id="_content" data-uid="wst-DOMAINAPI">
+<h1 id="domain-api">Domain API</h1>
 
+<p>The web site provides Domain API to the ERP.net domain model using the <a href="https://www.odata.org/">OData (Open Data Protocol)</a> standard. Domain API allows for the creation and consumption of data, in a RESTful manner and provides an opportunity for external applications to interact with the domain model.</p>
+<p>It enables external applications to access the domain model by querying, filtering, and updating the data through standard HTTP requests. Domain API provides a convenient and standardized way for external applications to interact with the domain model while also ensuring the security of the data being accessed.</p>
+<p>Domain API is secured using <a href="https://oauth.net/2/">OAuth 2.0</a>, which provides an industry-standard for authorization.</p>
+<h2 id="rate-limits">Rate limits</h2>
+<p>HTTP response code <code>429 - Too Many Requests</code> is returned if limits are exceeded.</p>
+<p>There're several limiters in the API, including:</p>
 <ul>
-<li><a href="domain-api.html">Domain API</a></li>
+<li>600 requests per minute per session.</li>
+<li>No concurrent requests in a single session.</li>
+</ul>
+<h3 id="configuring-rate-limits">Configuring rate limits</h3>
+<p>The limits above are the default ones. You may specify others in the related web site definition.</p>
+<p><img src="../pictures/website-settings.png" alt="Web-site-settings"></p>
+<p>Long story short:</p>
+<p>If you need an one-liner, just to set up the rate limits:</p>
+<p><code>{&quot;RateLimits&quot;: {&quot;Rpm&quot;: 100, &quot;Concurrency&quot;: 1}}</code></p>
+<p><em>*note the surrounding brackets</em></p>
+<hr>
+<p>The rate limits settings are expressed by a JSON object in the following format:</p>
+<pre><code>&quot;RateLimits&quot;: {
+  &quot;Rpm&quot;: &lt;requests-per-minute&gt;,
+  &quot;Concurrency&quot;: &lt;concurrent-requests&gt;
+}
+</code></pre>
+<p>Here's what it looks like as part of a complete web site configuration:</p>
+<pre><code>{
+  &quot;Setting1&quot;: 1,
+  &quot;Setting2&quot;: 2,
+  &quot;RateLimits&quot;: {
+    &quot;Rpm&quot;: &lt;requests-per-minute&gt;,
+    &quot;Concurrency&quot;: &lt;concurrent-requests&gt;
+  },
+  &quot;AnotherSetting&quot;: &quot;test&quot;
+}
+</code></pre>
+<hr>
+<h2 id="see-more">See more</h2>
+<ul>
+<li><strong><a href="https://docs.erp.net/dev/domain-api/index.html">Domain API docs</a></strong></li>
 </ul>
 </article>
           </div>
@@ -90,7 +127,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/web-sites/types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/web-sites/types/domain-api.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

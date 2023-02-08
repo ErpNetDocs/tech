@@ -1894,7 +1894,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "RoUJVUD/vZDy5aDT2kQUBw=="
+          "hash": "oQrvKiTuddBnyyxhvwti0g=="
         }
       },
       "is_incremental": false,
@@ -2285,12 +2285,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "advanced/web-sites/pictures/website-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/web-sites/pictures/website-settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
-      "source_relative_path": "advanced/web-sites/types/api.md",
+      "source_relative_path": "advanced/web-sites/types/domain-api.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/web-sites/types/api.html",
-          "hash": "lPrRQNIDVYxwI2h+3oBEYQ=="
+          "relative_path": "advanced/web-sites/types/domain-api.html",
+          "hash": "gtEuebJpXn0Y40Go4ytHGw=="
         }
       },
       "is_incremental": false,
@@ -2302,7 +2313,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/web-sites/types/index.html",
-          "hash": "4dMKwabWelN81AtByac0+w=="
+          "hash": "/aE0Qpiahd/tfutka+U34A=="
         }
       },
       "is_incremental": false,

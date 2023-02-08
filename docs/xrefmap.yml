@@ -334,6 +334,6 @@ references:
 - uid: wms
   name: Warehouse management
   href: modules/logistics/wms/index.html
-- uid: wst-API
-  name: API
-  href: advanced/web-sites/types/api.html
+- uid: wst-DOMAINAPI
+  name: Domain API
+  href: advanced/web-sites/types/domain-api.html
