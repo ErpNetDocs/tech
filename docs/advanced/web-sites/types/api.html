@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Advanced section | ERP.net Tech Docs </title>
+    <title>API | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Advanced section | ERP.net Tech Docs ">
+    <meta name="title" content="API | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,30 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="advanced-section">Advanced section</h1>
+            <article class="content wrap" id="_content" data-uid="wst-API">
+<h1 id="api">API</h1>
 
-<p>This section contains information for advanced concepts, systems and deep dive in the security.</p>
-<p>It is intended primarily for advanced ERP implementation consultants.</p>
-<h2 id="advanced-systems">Advanced systems</h2>
+<p>The web site provides an API to the ERP.net domain model using the <a href="https://www.odata.org/">OData (Open Data Protocol)</a> standard. This API allows for the creation and consumption of data, in a RESTful manner and provides an opportunity for external applications to interact with the domain model.</p>
+<p>It enables external applications to access the domain model by querying, filtering, and updating the data through standard HTTP requests. The API provides a convenient and standardized way for external applications to interact with the domain model while also ensuring the security of the data being accessed.</p>
+<p>The API is secured using <a href="https://oauth.net/2/">OAuth 2.0</a>, which provides an industry-standard for authorization.</p>
+<p>Domain API in ERP.net has its separate documentation, available here:</p>
+<p><a href="https://docs.erp.net/dev/domain-api/index.html">https://docs.erp.net/dev/domain-api/index.html</a></p>
+<h2 id="rate-limits">Rate limits</h2>
+<p>HTTP response code <code>429 - Too Many Requests</code> is returned if limits are exceeded.</p>
+<p>There're several limiters in the API, including:</p>
 <ul>
-<li><strong><a href="document-flow/index.html">Document flow</a></strong> - document-related concepts and services.</li>
-<li><strong><a href="document-amounts/index.html">Document amounts</a></strong> - mechanisms for reporting financial amounts in documents.</li>
-<li><strong><a href="custom-attributes/index.html">Custom attributes</a></strong> - user-defined data attributes.</li>
-<li><strong><a href="calculated-attributes/index.html">Calculated attributes</a></strong> - user-defined calculations.</li>
-<li><strong><a href="user-business-rules/index.html">User business rules</a></strong> - user-defined and system business rules.</li>
-<li><strong><a href="string-interpolation/index.html">String interpolation</a></strong> - breaking down input string is into expressions.</li>
-<li><strong><a href="data-objects/index.html">Data objects</a></strong> - data object extensibility systems.</li>
-<li><strong><a href="jobs/index.html">Jobs</a></strong> - systems which automatically run processes.</li>
-<li><strong><a href="security/index.html">Security</a></strong> - security-related topics.</li>
-<li><strong><a href="web-sites/index.html">Web sites</a></strong> - web sites, part of ERP.net.</li>
-</ul>
-<h2 id="advanced-concepts">Advanced concepts</h2>
-<ul>
-<li><strong><a href="concepts/master-detail-attributes.html">Master / Detail attributes</a></strong></li>
-<li><strong><a href="concepts/object-relational-mapping.html">Object / Relational mapping</a></strong></li>
-<li><strong><a href="concepts/aggregates.html">Aggregates</a></strong></li>
-<li><strong><a href="concepts/scheduled-document-events/index.html">Scheduled document events</a></strong></li>
+<li>600 requests per minute per session.</li>
+<li>No concurrent requests in a single session.</li>
 </ul>
 </article>
           </div>
@@ -109,7 +99,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/web-sites/types/api.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -135,8 +125,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
