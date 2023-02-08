@@ -2301,7 +2301,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/web-sites/types/domain-api.html",
-          "hash": "gtEuebJpXn0Y40Go4ytHGw=="
+          "hash": "ZzD6XT1TATew+OKwTkp4IA=="
         }
       },
       "is_incremental": false,
@@ -2782,6 +2782,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/advanced/security/authentication/pictures/azure8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/web-sites/pictures/website-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/web-sites/pictures/website-settings.png"
         }
       },
       "is_incremental": false,

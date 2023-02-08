@@ -94,13 +94,13 @@
 <p><img src="../pictures/website-settings.png" alt="Web-site-settings"></p>
 <p>Long story short:</p>
 <p>If you need an one-liner, just to set up the rate limits:</p>
-<p><code>{&quot;RateLimits&quot;: {&quot;Rpm&quot;: 100, &quot;Concurrency&quot;: 1}}</code></p>
+<p><code>{&quot;RateLimits&quot;: {&quot;SessionRpm&quot;: 100, &quot;SessionConcurrency&quot;: 1}}</code></p>
 <p><em>*note the surrounding brackets</em></p>
 <hr>
 <p>The rate limits settings are expressed by a JSON object in the following format:</p>
 <pre><code>&quot;RateLimits&quot;: {
-  &quot;Rpm&quot;: &lt;requests-per-minute&gt;,
-  &quot;Concurrency&quot;: &lt;concurrent-requests&gt;
+  &quot;SessionRpm&quot;: &lt;requests-per-minute&gt;,
+  &quot;SessionConcurrency&quot;: &lt;concurrent-requests&gt;
 }
 </code></pre>
 <p>Here's what it looks like as part of a complete web site configuration:</p>
@@ -108,8 +108,8 @@
   &quot;Setting1&quot;: 1,
   &quot;Setting2&quot;: 2,
   &quot;RateLimits&quot;: {
-    &quot;Rpm&quot;: &lt;requests-per-minute&gt;,
-    &quot;Concurrency&quot;: &lt;concurrent-requests&gt;
+    &quot;SessionRpm&quot;: &lt;requests-per-minute&gt;,
+    &quot;SessionConcurrency&quot;: &lt;concurrent-requests&gt;
   },
   &quot;AnotherSetting&quot;: &quot;test&quot;
 }
