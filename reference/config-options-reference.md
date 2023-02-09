@@ -252,3 +252,15 @@ version 2020.1 is Main Menu.**Warning:** The current key's value will be taken i
 - a.When this key has value and this value is "1", all users can use basic authentication, regardless of their setting.
 - b.The user sets it manually
 - c.The key is introduced in version: - 2023
+
+## 49. Calendar/TimePresets
+- a.When this key has value and conforms to the format below, it overrides the time presets in the [calendar control](https://docs.erp.net/webclient/introduction/my-apps/calendar.html#time-presets).
+```
+<PresetName1>=<H>:<M>;<PresetName2>=<H>:<M>;...
+```
+e.g.,
+```
+Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
+```
+- b.The user sets it manually
+- c.The key is introduced in version: - 2023
