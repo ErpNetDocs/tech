@@ -6,7 +6,7 @@ uid: determine-line-discount
 
 ERP.net allows multiple discounts at multiple levels to be defined.
 
-Typically, Line discount is determined among the discounts from level 1. This means that if we want to calculate Line discount, we might not explicitly specify a Discount Level filter, because its default value is 1.
+Typically, Level 1 discount is determined among the discounts from level 1. This means that if we want to calculate Level 1 discount, we might not explicitly specify a Discount Level filter, because its default value is 1.
 
 For the discounts for all other levels, we need to specify a Discount Level filter that is equal to the level we are trying to calculate.
 
