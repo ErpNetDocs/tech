@@ -126,3 +126,5 @@ By default, the System-Application-User has System rights, but reflects used lic
 ## Error visualization
 
 When you encounter a problem in the platform, a relevant, easy-to-read and interactive **error message** will be shown explaining its nature. 
+
+![picture](pictures/error_message.png)
