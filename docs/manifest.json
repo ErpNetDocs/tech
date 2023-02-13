@@ -13,6 +13,17 @@
       "is_incremental": false
     },
     {
+      "type": "Resource",
+      "source_relative_path": "CL.png",
+      "output": {
+        "resource": {
+          "relative_path": "CL.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
@@ -5770,12 +5781,156 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/CL.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/CL.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/aadd_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/aadd_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/add_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/add_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/client_center.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/client_center.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/eedit_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/eedit_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/error_message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/error_message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/pictures/index.html",
+          "hash": "rOm3KcG/+UrwAViapjO5IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/info_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/info_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/oorder_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/oorder_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/open_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/open_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/order_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/order_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/saved_settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/saved_settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/settings_code.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/settings_code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/platform-features.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/platform-features.html",
-          "hash": "EPagnAAJ2RdiGVits/qn5A=="
+          "hash": "SoNPdOPmib3PQHg1GH3HLg=="
         }
       },
       "is_incremental": false,

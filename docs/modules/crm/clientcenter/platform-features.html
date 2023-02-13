@@ -87,24 +87,48 @@
 <li>The ability to reveal or hide the <strong>New Order</strong> button, allowing or restricting users to create new orders and decide their access to the order creation module in general.</li>
 </ol>
 <p>By default, this button is <strong>hidden</strong> for users so as to prevent potential problems and risks.</p>
-<p>You need to <strong>enable</strong> the functionality manually only when that’s necessary.</p>
+<p><img src="pictures/CL.png" alt="picture"></p>
+<p>You need to enable the functionality <strong>manually</strong> only when that’s necessary.</p>
 <ol start="2">
 <li>The ability to define the user type of the sales order document in accordance with different users’ needs.</li>
 </ol>
 <p>In the case of sale orders, you must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
-<p>This could be useful for separating orders made im the Client Center from those made in other places on the platform.</p>
+<p><img src="pictures/oorder_types.png" alt="picture"></p>
+<p>This could be useful for separating orders made in the Client Center from those made in other places on the platform.</p>
 <ol start="3">
 <li>The ability to easily generate <strong>comprehensive business analytics</strong> for orders made only in the Client Center.</li>
 </ol>
 <h3 id="json-format-definition">JSON Format Definition</h3>
-<p>Client Center settings should be configured in a key-value pair JSON format.</p>
-<p>You need to configure them in the ErpDatabase console as follows:</p>
+<p>Client Center settings must be configured in a <strong>key-value pair JSON format</strong>.</p>
+<ol>
+<li>From your main model environment, expand the website's details by clicking the circular <strong>info button</strong>.</li>
+</ol>
+<p><img src="pictures/info_button.png" alt="picture"></p>
+<p>This will expand a side tab on the right with information just for the particular website (Client Center).</p>
+<p>From there, click the <strong>Open</strong> button.</p>
+<p><img src="pictures/open_button.png" alt="picture"></p>
+<ol start="2">
+<li>You'll be taken to a separate window displaying the website's settings.</li>
+</ol>
+<p>Click the <strong>Edit</strong> button at the top-left corner.</p>
+<p><img src="pictures/eedit_button.png" alt="picture"></p>
+<p>This will make all fields related to the website (such as Type, Enterprise Company and Web Host) <strong>editable</strong>.</p>
+<p>Make sure the <strong>Settings</strong> field is visible. If you don’t see it, toggle the respective slider from the <strong>Show/hide fields</strong> button.</p>
+<p><img src="pictures/aadd_field.png" alt="picture"></p>
+<ol start="3">
+<li>Inside the <strong>Settings</strong> field, you need to define the following:</li>
+</ol>
 <p>{<br>
 &quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,<br>
 &quot;IsNewOrderEnabled&quot;: true/false, <br>
 }</p>
 <p>where <em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order</p>
 <p>and <em>IsNewOrderEnabled</em> defines if the button for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+<p><img src="pictures/settings_code.png" alt="picture"></p>
+<ol start="4">
+<li>Apply the new settings by clicking the <strong>V button</strong>.</li>
+</ol>
+<p><img src="pictures/saved_settings.png" alt="picture"></p>
 <h3 id="use-cases">Use-cases</h3>
 <p>Depending on how you define the fields, you can encounter the following scenarios:</p>
 <ol>
@@ -141,6 +165,7 @@
 <p>By default, the System-Application-User has System rights, but reflects used licenses as well. It’s assumed whenever a new website is created and whenever a trusted application is added through the UI.</p>
 <h2 id="error-visualization">Error visualization</h2>
 <p>When you encounter a problem in the platform, a relevant, easy-to-read and interactive <strong>error message</strong> will be shown explaining its nature.</p>
+<p><img src="pictures/error_message.png" alt="picture"></p>
 </article>
           </div>
           
