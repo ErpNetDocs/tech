@@ -61,7 +61,7 @@ and _IsNewOrderEnabled_ defines if the button for order creation will be shown o
 
 4.	**Apply** the new settings.
 
-### Use-cases
+## Use-cases
 
 Depending on how you define the fields, you can encounter the following scenarios:
 
