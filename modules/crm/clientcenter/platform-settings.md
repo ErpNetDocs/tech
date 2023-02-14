@@ -28,7 +28,7 @@ This could be useful for separating orders made in the Client Center from those 
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
-1.	From your main website environment, expand the Client Center's details with the circular **info button**.
+1.	From your main website environment, expand the Client Center's details with the **circular** **info button**.
 
 This will reveal a side tab on the right with information just for the particular website (Client Center).
 
