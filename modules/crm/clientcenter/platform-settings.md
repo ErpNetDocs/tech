@@ -6,9 +6,9 @@ This includes specific visual and functional modifications.
 
 ### Configuration capabilities
 
-Below is a list of settings you can apply in the Client Center:
+Below is a list of settings you can apply to the Client Center:
 
-- The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module.
+- The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders.
 
 By default, this button is **hidden** so as to prevent potential problems and risks. 
 
