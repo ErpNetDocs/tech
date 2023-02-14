@@ -4,7 +4,7 @@ Like all ERP websites, the Client Center can have its settings changed on an ind
 
 This includes precise visual and functional configurations. 
 
-### Configuration features
+### Configuration capabilities
 
 Below is a list of settings you can modify to your liking in the Client Center:
 
