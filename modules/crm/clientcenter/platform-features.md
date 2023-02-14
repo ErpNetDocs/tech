@@ -20,8 +20,6 @@ You need to enable the functionality **manually** only when that’s necessary.
 
 In the case of sale orders, you must input a **valid** **SalesOrder.DocumentType ID**. 
 
-![picture](pictures/oorder_types.png)
-
 This could be useful for separating orders made in the Client Center from those made in other places on the platform.
  
 3.	The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
@@ -30,9 +28,7 @@ This could be useful for separating orders made in the Client Center from those 
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
-1.	From your main model environment, expand the website's details by clicking the circular **info button**.
-
-![picture](pictures/info_button.png)
+1.	From your main model environment, expand the website's details with the circular **info button**.
 
 This will expand a side tab on the right with information just for the particular website (Client Center).
 
@@ -50,9 +46,7 @@ This will make all fields related to the website (such as Type, Enterprise Compa
 
 Make sure the **Settings** field is visible. If you don’t see it, toggle the respective slider from the **Show/hide fields** button.
 
-![picture](pictures/aadd_field.png)
-
-3.	Inside the **Settings** field, you need to define the following:
+3.	Inside the **Settings** field, you need to input the following:
 
 {<br>
     		"NewOrderDocumentType": "DocumentType.Id",<br>
@@ -65,9 +59,7 @@ and _IsNewOrderEnabled_ defines if the button for order creation will be shown o
 
 ![picture](pictures/settings_code.png)
 
-4.	Apply the new settings by clicking the **V button**.
-
-![picture](pictures/saved_settings.png)
+4.	**Apply** the new settings.
 
 ### Use-cases
 
@@ -126,5 +118,3 @@ By default, the System-Application-User has System rights, but reflects used lic
 ## Error visualization
 
 When you encounter a problem in the platform, a relevant, easy-to-read and interactive **error message** will be shown explaining its nature. 
-
-![picture](pictures/error_message.png)
