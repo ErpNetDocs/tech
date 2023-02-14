@@ -4,6 +4,8 @@ Like all ERP websites, the Client Center can have its settings changed on an ind
 
 This includes precise visual and functional configurations. 
 
+### Configuration features
+
 Below is a list of settings you can modify to your liking in the Client Center:
 
 - The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module in general.
