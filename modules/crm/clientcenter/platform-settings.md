@@ -2,19 +2,19 @@
 
 Like all ERP websites, the Client Center can have its settings changed on an individual level. 
 
-This includes precise visual and functional configurations. 
+This includes specific visual and functional modifications. 
 
 ### Configuration capabilities
 
-Below is a list of settings you can modify to your liking in the Client Center:
+Below is a list of settings you can apply in the Client Center:
 
-- The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module in general.
+- The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module.
 
-By default, this button is **hidden** for users so as to prevent potential problems and risks. 
-
-![picture](pictures/CL.png)
+By default, this button is **hidden** so as to prevent potential problems and risks. 
 
 You need to enable the functionality **manually** only when that’s necessary.
+
+![picture](pictures/CL.png)
 
 - The ability to define the user type of the sales order document in accordance with different users’ needs. 
 
@@ -28,9 +28,9 @@ This could be useful for separating orders made in the Client Center from those 
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
-1.	From your main model environment, expand the website's details with the circular **info button**.
+1.	From your main website environment, expand the Client Center's details with the circular **info button**.
 
-This will expand a side tab on the right with information just for the particular website (Client Center).
+This will reveal a side tab on the right with information just for the particular website (Client Center).
 
 From there, click the **Open** button.
 
@@ -63,7 +63,7 @@ and _IsNewOrderEnabled_ defines if the button for order creation will be shown o
 
 ## Use-cases
 
-Depending on how you define the fields, you can encounter the following scenarios:
+Depending on how you define the settings, you can encounter the following scenarios:
 
 1.	Both fields are set:
 
