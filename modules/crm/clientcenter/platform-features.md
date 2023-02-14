@@ -8,7 +8,7 @@ This includes precise visual and functional configurations.
 
 Below is a list of settings you can modify to your liking in the Client Center:
 
-1.	The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module in general.
+- The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders and decide their access to the order creation module in general.
 
 By default, this button is **hidden** for users so as to prevent potential problems and risks. 
 
@@ -16,15 +16,15 @@ By default, this button is **hidden** for users so as to prevent potential probl
 
 You need to enable the functionality **manually** only when that’s necessary.
 
-2.	The ability to define the user type of the sales order document in accordance with different users’ needs. 
+- The ability to define the user type of the sales order document in accordance with different users’ needs. 
 
 In the case of sale orders, you must input a **valid** **SalesOrder.DocumentType ID**. 
 
 This could be useful for separating orders made in the Client Center from those made in other places on the platform.
  
-3.	The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
+- The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
 
-### JSON Format Definition
+## JSON Format Definition
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
