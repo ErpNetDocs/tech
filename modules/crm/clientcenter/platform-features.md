@@ -1,10 +1,8 @@
-# Platform features
+# Platform settings
 
 Like all ERP websites, the Client Center can have its settings changed on an individual level. 
 
 This includes precise visual and functional configurations. 
-
-## Configurable settings
 
 Below is a list of settings you can modify to your liking in the Client Center:
 
@@ -24,7 +22,7 @@ This could be useful for separating orders made in the Client Center from those 
  
 - The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
 
-## JSON Format Definition
+## JSON format definition
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
