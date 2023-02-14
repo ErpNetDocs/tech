@@ -2569,6 +2569,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/CL.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/CL.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/advanced/concepts/pictures/realtime-events-not-web-stacked.png",
       "output": {
         "resource": {
@@ -2914,6 +2925,138 @@
       "output": {
         "resource": {
           "relative_path": "docs/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/CL.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/CL.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/aadd_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/aadd_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/add_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/add_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/client_center.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/client_center.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/eedit_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/eedit_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/error_message.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/error_message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/info_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/info_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/oorder_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/oorder_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/open_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/open_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/order_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/order_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/saved_settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/saved_settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/settings_code.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/settings_code.png"
         }
       },
       "is_incremental": false,
@@ -5926,11 +6069,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/clientcenter/platform-features.md",
+      "source_relative_path": "modules/crm/clientcenter/platform-settings.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/clientcenter/platform-features.html",
-          "hash": "SoNPdOPmib3PQHg1GH3HLg=="
+          "relative_path": "modules/crm/clientcenter/platform-settings.html",
+          "hash": "KJhtbUxO3RnWhGcp3daxWA=="
         }
       },
       "is_incremental": false,
@@ -8654,7 +8797,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "K8yErSSp+8vBP2qDKPTA0A=="
+          "hash": "7CrYgOY2zoBHeGf4TOnS8w=="
         }
       },
       "is_incremental": false,
