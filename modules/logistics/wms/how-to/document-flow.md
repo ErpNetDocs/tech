@@ -50,7 +50,7 @@ Its state is usually changed by the warehouse workers, using the "Complete order
 The information is brought by generating **Completed DF** for the **WR** using the [R33563](https://docs.erp.net/model/business-rules/R33563.html) business rule. Note that, the rule will be triggered only if the "Complete Parent Fulfillments" field in the WO's DocumentType is checkmarked.
 
 
-**(4) Once the WR's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent SO**. 
+**(5) Once the WR's state is changed to Completed** it brings the fulfillment information (quantity, product, lot, variant) back to the **parent SO**. 
 
 The information is again brough by generating **Completed DF** for the **SO** by another rule [R32687](https://docs.erp.net/model/business-rules/R32687.html). Note that, the rule will be again triggered only if the "Complete Parent Fulfillments" field in the WR's DocumentType is checkmarked.
 
@@ -63,7 +63,7 @@ If the organization **uses two-stage control** the warehouse dispatcher or manag
 
 If the organization uses the **one-stage control**, the **WR** is completed in step (5).
 
-**(5) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the **parent SO's** completed fulfillments.
+**(6) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the **parent SO's** completed fulfillments.
 
 The **SO** is usually completed by the warehouse dispatcher or manager. He can track which **SOs** are fully executed by the WMS module using the **Store Orders navigator** that contains a "Is Executed* calculated attribute that has been set up in advance.  The calculate attribute expressions are added at the end of this topic.
 
