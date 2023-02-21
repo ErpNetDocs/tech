@@ -22,7 +22,7 @@
 > Through the Instance Manager you can see and restart all sites.
 
 ## Setup User settings: 
-1.	New User registers himself from the Client Center – it creates a new User definition as External Community User.  
+1.	New User registers himself from the Client Center register form – that creates a new User definition as External Community User.  
 2.	Define Person for this User.
 3.	Define Parent Party for this Person. 
 4.	Define Customer for this Parent Party as follows: 
