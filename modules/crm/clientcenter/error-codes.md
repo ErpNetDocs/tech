@@ -5,3 +5,5 @@
 * CC005 - EnterpriseCompany is null. Please set EnterpriseCompany in WebSites for the current Client Center.
 * CC006 - Customer By EnterpriseCompany is null. Please set Customer By EnterpriseCompany to the asigned ParentParty for this user.
 * CC007 - ServicedByEnterpriseCompanyLocation is null. Please set ServicedByEnterpriseCompanyLocation to the asigned ParentParty.Customer for this user.
+* CC008 - Not well formatted json string
+* CC009 – NewOrderDocumentType is set, but DocumentType is null
