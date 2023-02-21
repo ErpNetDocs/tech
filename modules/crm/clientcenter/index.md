@@ -14,6 +14,11 @@ Each page works with accurate and simplified data to implement a pleasant and up
 
 ## Features
 
-Depending on its size and reach, one company can have and manage multiple Client Centers. 
+- Depending on its size and reach, one company can have and manage multiple Client Centers. 
 
 This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users that they’re serving.  
+
+- Already made orders can be cancelled before they've been completed.
+
+![picture](pictures/delete_order.png)
+
