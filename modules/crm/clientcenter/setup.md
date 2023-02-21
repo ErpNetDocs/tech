@@ -48,4 +48,5 @@ For example:
 {"NewOrderDocumentType": "85493adb-ac4e-4b3c-89bc-590c4b22404c","IsNewOrderEnabled": true}
 ```
 
-If just one of the JSON settings is set or the Id doesn't match any sales order document type then an [Error Exeption](error-codes.md) CC008 or CC009 will be displayed in the Client Center.
+> [!NOTE]
+> If just one of the JSON settings is set or the Id doesn't match any sales order document type then an [Error Exeption](error-codes.md) CC008 or CC009 will be displayed in the Client Center.
