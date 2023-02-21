@@ -29,8 +29,7 @@
     - Enterprise Company - the same EC as the client center Web site EC
     -	Serviced by Enterprise Company Location 
 
-> [!NOTE]
-> If any of these User settings are missing in the Client Center will be displayed [Error Exception](error-codes.md) from CC002 to CC007 depending on the missing setting.
+If any of these User settings are missing in the Client Center will be displayed [Error Exception](error-codes.md) from CC002 to CC007 depending on the missing setting.
 
 ## Allow New order settings:
 
@@ -48,5 +47,4 @@ For example:
 {"NewOrderDocumentType": "85493adb-ac4e-4b3c-89bc-590c4b22404c","IsNewOrderEnabled": true}
 ```
 
-> [!NOTE]
-> If just one of the JSON settings is set or the Id doesn't match any sales order document type then an [Error Exception](error-codes.md) CC008 or CC009 will be displayed in the Client Center.
+If just one of the JSON settings is set or the Id doesn't match any sales order document type then an [Error Exception](error-codes.md) CC008 or CC009 will be displayed in the Client Center.
