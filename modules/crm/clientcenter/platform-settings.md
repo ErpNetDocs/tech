@@ -20,9 +20,9 @@ You need to enable the functionality **manually** only when that’s necessary.
 
 In the case of sale orders, you must input a **valid** **SalesOrder.DocumentType ID**. 
 
-This could be useful for separating orders made in the Client Center from those made in other places on the platform.
+This could be useful for separating orders made in the Client Center from those made in other modules.
  
-- The ability to easily generate **comprehensive business analytics** for orders made only in the Client Center.
+- The ability to easily generate **comprehensive business analytics** for orders made in the CC.
 
 ## JSON format definition
 
@@ -44,7 +44,9 @@ Click the **Edit** button at the top-left corner.
 
 This will make all fields related to the website (such as Type, Enterprise Company and Web Host) **editable**.
 
-Make sure the **Settings** field is visible. If you don’t see it, toggle the respective slider from the **Show/hide fields** button.
+Make sure the **Settings** field is visible. 
+
+If you don’t see it, toggle the respective slider from the **Show/hide fields** button.
 
 3.	Inside the **Settings** field, you need to input the following:
 
@@ -78,7 +80,7 @@ If the ID doesn’t match any document of type Sales order, you’ll get an erro
 
 **008 - Not well formatted json string**
 
-To fix it, you need to erase all inputted values, save your progress, refresh the website, and insert the correct values.
+You need to erase all inputted values, save your progress, refresh the website, and insert the correct values.
 
 2.	Only one of the fields is set:
 
@@ -99,7 +101,9 @@ In this scenario, both fields assume two values by default:
         "IsNewOrderEnabled": false
 ```
 
-The button used for creating a new order will not be shown. If you try to use a link leading to the direct creation of an order, you’ll see the following message:
+The button used for creating a new order will not be shown. 
+
+If you try to use a link leading to the direct creation of an order, you’ll see the following message:
 
 **You are not authorized to view this page.**
 
@@ -109,9 +113,7 @@ Whenever you apply or change settings for a website such as the Client Center, t
 
 ## User-level security
 
-Requests from the Client Center and other websites are made by types of users known as **System-Application-User**. 
-  
-They have enough rights to ensure their ability to apply or change settings only in accordance with the normal functioning of the current website. Possible confusion with user access to other places in the platform is essentially eliminated.
+Requests from the Client Center and other websites are made by types of users known as **System-Application-User**. They have enough rights to apply or change settings only in accordance with the normal functioning of the current website. Possible confusion with user access to other places in the platform is essentially eliminated.
 
 By default, the System-Application-User has System rights, but reflects used licenses as well. It’s assumed whenever a new website is created and whenever a trusted application is added through the UI.
 
