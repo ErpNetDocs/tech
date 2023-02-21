@@ -106,16 +106,36 @@
 </div>
 <h2 id="setup-user-settings">Setup User settings:</h2>
 <ol>
-<li>New User registers himself from the Client Center – it creates a new User definition as External Community User.</li>
+<li>New User registers himself from the Client Center register form – that creates a new User definition as External Community User.</li>
 <li>Define Person for this User.</li>
 <li>Define Parent Party for this Person.</li>
 <li>Define Customer for this Parent Party as follows:
 <ul>
-<li>Enterprise Company</li>
+<li>Enterprise Company - the same EC as the client center Web site EC</li>
 <li>Serviced by Enterprise Company Location</li>
 </ul>
 </li>
 </ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If any of these User settings are missing in the Client Center will be displayed <a href="error-codes.html">Error Exception</a> from CC002 to CC007 depending on the missing setting.</p>
+</div>
+<h2 id="allow-new-order-settings">Allow New order settings:</h2>
+<p>By Default New order in the Client center is Disabled. To allow the New order you have to set JSON settings in the Web site definition:
+Enter Value to the field Settings as follows and Restart the Site from the Instance manager:</p>
+<pre><code>{&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,&quot;IsNewOrderEnabled&quot;: true}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>DocumentType.EntityName == SalesOrders</p>
+</div>
+<p>For example:</p>
+<pre><code>{&quot;NewOrderDocumentType&quot;: &quot;85493adb-ac4e-4b3c-89bc-590c4b22404c&quot;,&quot;IsNewOrderEnabled&quot;: true}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If just one of the JSON settings is set or the Id doesn't match any sales order document type then an <a href="error-codes.html">Error Exception</a> CC008 or CC009 will be displayed in the Client Center.</p>
+</div>
 </article>
           </div>
           
