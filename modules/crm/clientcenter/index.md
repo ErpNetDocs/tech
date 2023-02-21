@@ -22,3 +22,6 @@ This could be useful for departments dealing with unique sets of tasks and issue
 
 ![picture](pictures/delete_order.png)
 
+- Generated invoices can be downloaded and previewed.
+
+![picture](pictures/download_preview.png)
