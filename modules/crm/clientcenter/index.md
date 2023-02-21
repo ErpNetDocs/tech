@@ -2,6 +2,8 @@
 
 The Client Center is a space which allows ERP.NET clients to assist their own enterprise clients by allowing them to chat with Customer Support, review due payments, access and download invoices, and create sales orders. It’s best used to increase the collaboration and exchange of valuable information between employees, suppliers and customers.
 
+![picture](pictures/intro.png)
+
 Within the Client Center, users with appropriate permissions can see and interact with four different panels. One of them offers a direct communication hotline, while the rest act as shortcuts to pages containing personal documents.
 
 Each page works with accurate and simplified data to implement a pleasant and up-to-date platform experience. Clients are able to look at all of their due payments, sales orders and downloadable invoices on-demand.
