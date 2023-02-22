@@ -14,7 +14,7 @@ Within the Client Center, users with appropriate permissions can see and interac
 
 One of them offers a direct **communication network**, while the rest act as **shortcuts** to pages containing personal documents.
 
-Using the chat panel, clients can reach out to a sales representative regarding any issue or question they're having.
+Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
 
 ![picture](pictures/panells.png)
 
