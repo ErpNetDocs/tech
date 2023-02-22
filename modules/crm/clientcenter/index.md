@@ -44,7 +44,7 @@ This could be useful for departments dealing with unique sets of tasks and issue
 
 The Client Center provides users with the ability to start adding a new sales order just with the click of a button.
 
-However, this feature is **disabled** by default for security reasons. It's recommended that access be granted only to trusted and trained individuals.
+This feature is **disabled** by default for security reasons. It's recommended that access be granted to trusted and trained individuals.
 
 For more information on how to set up Client Center settings, please refer to [Platform settings](https://docs.erp.net/tech/modules/crm/clientcenter/platform-settings.html).
 
