@@ -2976,6 +2976,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/delete_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/delete_order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/download_preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/download_preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/eedit_button.png",
       "output": {
         "resource": {
@@ -3009,6 +3031,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/intro.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/intro.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/menu_items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/menu_items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/oorder_types.png",
       "output": {
         "resource": {
@@ -3035,6 +3079,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/pictures/order_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/panells.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/panells.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/panels.png"
         }
       },
       "is_incremental": false,
@@ -5917,7 +5983,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/index.html",
-          "hash": "rSxhqrBAovRaUP7FqRYWrw=="
+          "hash": "awtJngXaDkt/6h9ewMBfTA=="
         }
       },
       "is_incremental": false,
@@ -5962,6 +6028,28 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/pictures/client_center.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/column_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/column_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/ddownload_preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/ddownload_preview.png"
         }
       },
       "is_incremental": false,
@@ -6410,6 +6498,18 @@
         ".html": {
           "relative_path": "modules/crm/sales/index.html",
           "hash": "x+PmOEvwmNmkGDddylkS1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/multiple-line-discounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/multiple-line-discounts.html",
+          "hash": "+l9OJCt5EpmQ31DNUj3e1w=="
         }
       },
       "is_incremental": false,
@@ -8863,7 +8963,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "7CrYgOY2zoBHeGf4TOnS8w=="
+          "hash": "pLE0wQ0q6t9et60DCEKd9A=="
         }
       },
       "is_incremental": false,

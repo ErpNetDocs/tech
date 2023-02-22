@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Multiple line discounts | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Multiple line discounts | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="multiple-line-discounts">Multiple line discounts</h1>
+
+<h2 id="description">Description</h2>
+<p>ERP.net allows multiple discounts at multiple levels to be defined. The discount level is specified in the discount’s definition.</p>
+<p>The discounts from each level can be applied to the sales order lines automatically, manually, or by using user business rules. For each level you can select only one discount out of all discounts of the given level.</p>
+<p>The discount percentages from all levels are accumulated in cascade in the Line Standard Discount Percent field in the sales order lines.</p>
+<h2 id="applying-multiple-line-discounts-in-sales-orders">Applying multiple line discounts in sales orders</h2>
+<p>Discounts from different levels are applied to the relevant fields of the sales order lines in three alternative ways:</p>
+<ul>
+<li>automatically – by calling the <a href="../crm-common/crm-common-concepts/determine-line-discount.html">Determine line discount method</a></li>
+<li>manually – by selecting a discount from the drop-down list or from a navigator</li>
+<li>using user business rules.</li>
+</ul>
+<p>Note that, discounts from level 2 and above are applied automatically ONLY if a price list is set in the sales order.</p>
+<p>The level up to which discounts are applied automatically depends on the selected value in the Auto Apply Discount Level field in the price list’s definition.</p>
+<p>For example:</p>
+<ul>
+<li>if Auto Apply Discount Level = 1, then level 1 discount is applied</li>
+<li>if Auto Apply Discount Level = 2, then level 1 and level 2 discounts are applied</li>
+<li>if Auto Apply Discount Level = 3, then level 1, level 2 and level 3 discounts are applied.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Increasing the auto apply discount level may have performance implications.</p>
+</div>
+<h2 id="determine-line-standard-discount-percent">Determine line standard discount percent</h2>
+<p>The line standard discount percent is calculated by accumulating in cascade all level discount percentages that were specified in the line. The formula is as follows:</p>
+<p><strong>[Line Standard Discount Percent]</strong> =
+1 – ((1 - IIF(<strong>[Level 1 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 1 Discount Percent]</strong>)</p>
+<ul>
+<li>(1 - IIF(<strong>[Level 2 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 2 Discount Percent]</strong>)</li>
+<li>(1 - IIF(<strong>[Level 3 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 3 Discount Percent]</strong>))</li>
+</ul>
+<h4 id="example-1-">Example 1 :</h4>
+<p>If there are no discounts in the line, then line standard discount percent is:</p>
+<p><strong>[Line Standard Discount Percent]</strong> = 1 - ((1 - 0) * (1 - 0) * (1 - 0)) = <strong>0.00%</strong>.</p>
+<h4 id="example-2-">Example 2 :</h4>
+<p>If the line contains the following discounts - level 1 discount percent = 12%, level 2 discount percent = 5% and level 3 discount percent = 8%, then the line standard discount percent is:</p>
+<p><strong>[Line Standard Discount Percent]</strong> = 1 - ((1 – 0.12) * (1 – 0.05) * (1 – 0.08)) = <strong>23.088%</strong>.</p>
+<h2 id="multiple-line-discounts-in-reality">Multiple line discounts in reality</h2>
+<p>For example, you can define three levels of discounts, and for each of them you can have multiple discounts:</p>
+<p><strong>Level 1</strong> – according to the customer type</p>
+<ul>
+<li>Wholesale customers, product group Foods - 10%</li>
+<li>Wholesale customers, product group Non-food items - 5%</li>
+<li>Retail customers, product group Foods - 8%</li>
+<li>Retail customers, product group Non-food items - 4%</li>
+</ul>
+<p><strong>Level 2</strong> – according to the current promotion</p>
+<ul>
+<li>All customers, product group Foods / Chocolate - 15%</li>
+<li>All customers in Sofia, product group Non-food items - 4%</li>
+</ul>
+<p><strong>Level 3</strong> - according to specific conditions</p>
+<ul>
+<li>If the lot has less than 20 days of expiration date remaining - 5%</li>
+<li>If the line amount is greater then 1000 BGN - 2%</li>
+</ul>
+<p>Then, you can choose Level 1 and Level 2 discounts to be applied automatically by setting up a price list in the sales order with auto apply discount level equal to 2.
+Level 3 discount can be applied automatically as well by defining a user business rule that should be triggered if some specific conditions are met.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/multiple-line-discounts.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
