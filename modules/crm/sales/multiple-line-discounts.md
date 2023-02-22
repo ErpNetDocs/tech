@@ -12,7 +12,7 @@ The discount percentages from all levels are accumulated in cascade in the Line 
 
 Discounts from different levels are applied to the relevant fields of the sales order lines in three alternative ways:
 
-- automatically – by calling the Determine line discount method
+- automatically – by calling the [Determine line discount method](../crm-common/crm-common-concepts/determine-line-discount.md)
 - manually – by selecting a discount from the drop-down list or from a navigator
 - using user business rules.
 
