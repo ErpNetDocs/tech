@@ -25,7 +25,10 @@ For example:
 - if Auto Apply Discount Level = 2, then level 1 and level 2 discounts are applied
 - if Auto Apply Discount Level = 3, then level 1, level 2 and level 3 discounts are applied.
 
-Note: Increasing the auto apply discount level may have performance implications.
+> [!note]
+> 
+> Increasing the auto apply discount level may have performance implications.
+> 
 
 ## Determine line standard discount percent
 
