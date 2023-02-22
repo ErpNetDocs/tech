@@ -2,37 +2,43 @@
 
 The Client Center is a space which allows Erp.Net clients to assist their own enterprise clients by allowing them to chat with Customer Support, review due payments, access and download invoices, and create sales orders. It’s best used to increase the collaboration and exchange of valuable information between employees, suppliers and customers.
 
-Currently, Client Center usage is more suitable for businesses rather than individual users. 
+Currently, Client Center platforms are more suitable for businesses rather than individual users. 
 
-You can build and host your own CC instance from the main website environment, and access it using a custom relative url.
+You can build and host a CC instance from your global website environment, and access it using a custom relative url.
 
 ![picture](pictures/intro.png)
+
+## Features and structure
 
 Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
 
 One of them offers a direct **communication network**, while the rest act as **shortcuts** to pages containing personal documents.
 
+Using the chat panel, clients can reach out to a sales representative regarding any issue or question they're having.
+
 ![picture](pictures/panells.png)
 
-## Pages
+Depending on your business' size and reach, you can create and manage **multiple** Client Centers. 
+
+This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
+
+### Pages
 
 Each page works with accurate and simplified data to implement a pleasant and up-to-date platform experience. 
 
-Clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
+Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
 
 ![picture](pictures/menu_items.png)
 
-### Features
+### Actions
 
-- Depending on its size and reach, you can create and manage multiple Client Centers. 
-
-This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.   
+Clients are able to perform a couple of actions from within the Client Center to enhance their user experience.
 
 - **Additional columns** can be added to provide more information for due payments, past orders and invoices.
 
 ![picture](pictures/column_add.png)
 
-- In the **Orders** page, already issued sales orders can be **cancelled** by a customer before they're finalized.
+- In the **Orders** page, already issued sales orders can be **cancelled** before they're finalized.
 
 ![picture](pictures/delete_order.png)
 
@@ -40,11 +46,11 @@ This could be useful for departments dealing with unique sets of tasks and issue
 
 ![picture](pictures/ddownload_preview.png)
 
-### Create sales orders
+### Creating sales orders
 
-The Client Center provides users with the ability to start adding a new sales order just with the click of a button.
+The Client Center allows users to create a new sales order just with the click of a button.
 
-This feature is **disabled** by default for security reasons. It's recommended that access be granted to trusted and trained individuals.
+This feature is **disabled** by default for security reasons. Access should be granted only to trusted and trained individuals.
 
 For more information on how to set up Client Center settings, please refer to [Platform settings](https://docs.erp.net/tech/modules/crm/clientcenter/platform-settings.html).
 
