@@ -1,7 +1,3 @@
----
-uid: multiple-line-discounts
----
-
 # Multiple line discounts
 
 ## Description
