@@ -48,9 +48,9 @@ Clients are able to perform a couple of actions from within the Client Center to
 
 ### Creating sales orders
 
-The Client Center also allows users to start creating a new sales order just with the click of a button.
+The Client Center also gives users the ability to create a new sales order just with the click of a button.
 
-This feature is **disabled** by default for security reasons. Access should be granted only to trusted and trained individuals.
+This feature is **disabled** by default for security reasons. Access should be granted only when it's necessary.
 
 For more information on how to set up Client Center settings, please refer to [Platform settings](https://docs.erp.net/tech/modules/crm/clientcenter/platform-settings.html).
 
