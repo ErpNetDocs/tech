@@ -8,6 +8,7 @@ The discounts from each level can be applied to the sales order lines automatica
 
 The discount percentages from all levels are accumulated in cascade in the Line Standard Discount Percent field in the sales order lines.
 
+
 ## Applying multiple line discounts in sales orders
 
 Discounts from different levels are applied to the relevant fields of the sales order lines in three alternative ways:
@@ -30,6 +31,7 @@ For example:
 > Increasing the auto apply discount level may have performance implications.
 > 
 
+
 ## Determine line standard discount percent
 
 The line standard discount percent is calculated by accumulating in cascade all level discount percentages that were specified in the line. The formula is as follows:
@@ -50,6 +52,7 @@ If there are no discounts in the line, then line standard discount percent is:
 If the line contains the following discounts - level 1 discount percent = 12%, level 2 discount percent = 5% and level 3 discount percent = 8%, then the line standard discount percent is:
 
 **[Line Standard Discount Percent]** = 1 - ((1 – 0.12) * (1 – 0.05) * (1 – 0.08)) = **23.088%**.
+
 
 ## Multiple line discounts in reality
 
