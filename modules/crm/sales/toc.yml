@@ -4,6 +4,8 @@
   href: pricing.md
 - name: Price types
   href: price-types.md
+- name: Multiple line discounts
+  href: multiple-line-discounts.md
 - name: Sales order payment plan
   href: sales-order-payment-plan.md
 - name: Tax group determining algorithm
