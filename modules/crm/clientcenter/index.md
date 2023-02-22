@@ -38,7 +38,7 @@ This could be useful for departments dealing with unique sets of tasks and issue
 
 - In the **Invoices** page, generated invoices for completed orders can be **downloaded** and **previewed** outside of the platform.
 
-![picture](pictures/download_preview.png)
+![picture](pictures/ddownload_preview.png)
 
 ### Create sales orders
 
