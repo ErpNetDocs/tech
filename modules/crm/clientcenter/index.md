@@ -48,7 +48,7 @@ Clients are able to perform a couple of actions from within the Client Center to
 
 ### Creating sales orders
 
-The Client Center allows users to create a new sales order just with the click of a button.
+The Client Center also allows users to start creating a new sales order just with the click of a button.
 
 This feature is **disabled** by default for security reasons. Access should be granted only to trusted and trained individuals.
 
