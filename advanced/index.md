@@ -11,7 +11,7 @@ It is intended primarily for advanced ERP implementation consultants.
 - **[Custom attributes](./custom-attributes/index.md)** - user-defined data attributes.
 - **[Calculated attributes](./calculated-attributes/index.md)** - user-defined calculations.
 - **[User business rules](./user-business-rules/index.md)** - user-defined and system business rules.
-- **[String interpolation](./string-interpolation/index.md)** - breaking down input string is into expressions.
+- **[String interpolation](./string-interpolation/index.md)** - breaking down input string into expressions.
 - **[Data objects](./data-objects/index.md)** - data object extensibility systems.
 - **[Jobs](./jobs/index.md)** - systems which automatically run processes.
 - **[Security](./security/index.md)** - security-related topics.
