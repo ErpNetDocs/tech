@@ -1517,7 +1517,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "odX9bkwKHxndDqBDNQXSsA=="
+          "hash": "sqH3a1YMP7+b+bNN8BLKvw=="
         }
       },
       "is_incremental": false,
@@ -1881,7 +1881,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/string-interpolation/index.html",
-          "hash": "zylQck7mdVk+2vWs1bxV/g=="
+          "hash": "9RPef7DEdgGBOjbMXEI40g=="
         }
       },
       "is_incremental": false,
