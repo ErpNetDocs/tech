@@ -1,6 +1,6 @@
 ﻿# String interpolation
 
-String interpolation is a process in which an input string is broken down into (interpolation) expressions. 
+String interpolation is a process in which an input string is broken into (interpolation) expressions. 
 
 @@name tries to evaluate each interpolation expression and replace it with its string representation. 
 
