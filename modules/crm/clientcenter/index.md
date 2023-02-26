@@ -16,8 +16,6 @@ One of them offers a direct **communication network**, while the rest act as **s
 
 Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
 
-![picture](pictures/panells.png)
-
 Depending on your business' size and reach, you can create and manage **multiple** Client Centers. 
 
 This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
@@ -28,23 +26,15 @@ Each page works with accurate and simplified data to implement a pleasant and up
 
 Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
 
-![picture](pictures/menu_items.png)
-
 ### Actions
 
 Clients are able to perform a couple of actions from within the Client Center to enhance their user experience.
 
 - **Additional columns** can be added to provide more information for due payments, past orders and invoices.
 
-![picture](pictures/column_add.png)
-
 - In the **Orders** page, already issued sales orders can be **cancelled** before they're finalized.
 
-![picture](pictures/delete_order.png)
-
 - In the **Invoices** page, generated invoices for completed orders can be **downloaded** and **previewed** outside of the platform.
-
-![picture](pictures/ddownload_preview.png)
 
 ### Creating sales orders
 
