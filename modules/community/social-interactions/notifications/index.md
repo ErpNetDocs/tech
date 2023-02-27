@@ -48,7 +48,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User Comment Reaction | There was a reaction to your post or comment. |
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
 | NT_SOC_NEW_COMMENT | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify All Object Followers | New comment to an object you are following. |
-| NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R33361.html) All Entities** - Notify All Object Followers Upon Update | Create notification for all followers of each updated object. |
+| NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R34361.html) All Entities** - Notify All Object Followers Upon Update | Create notification for all followers of each updated object. |
 
 ## I don't care about notifications
 
