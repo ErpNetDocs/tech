@@ -5,25 +5,25 @@ EU Excise
 |**e-ADD tags**|**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
 |**Header**|
-|DocumentNumber                                       | Document.DocumentNumber    |
-| DocumentDate             | Document.DocumentDate               |
-| IsDelayedReporting                                       |IsDeferredSubmission     |
-| IsExciseNote                                                       | @Exc_Purpose  |
-| TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)           |
-|                                                                                 |
-|**PlaceOfIssue**
-|Region                                       | TaxWarehouse.First(Store.@Exc_Region)   |
-|Municipality                        | TaxWarehouse.First(Store.@Exc_Municipality) |
+|DocumentNumber|Document.DocumentNumber|
+| DocumentDate| Document.DocumentDate |
+| IsDelayedReporting |IsDeferredSubmission|
+| IsExciseNote | @Exc_Purpose |
+| TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)|
+|                                                                                   |
+|**PlaceOfIssue**|
+|Region | TaxWarehouse.First(Store.@Exc_Region) |
+|Municipality | TaxWarehouse.First(Store.@Exc_Municipality) |
 | PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
-| City                  | TaxWarehouse.First(Store.@Exc_City)   |
-| District | TaxWarehouse.First(Store.@Exc_District)  |
+| City | TaxWarehouse.First(Store.@Exc_City)|
+| District | TaxWarehouse.First(Store.@Exc_District) |
 | Street | TaxWarehouse.First(Store.@Exc_Street)|
-| StreetNumber  | TaxWarehouse.First(Store.@Exc_StreetNumber) |
+| StreetNumber | TaxWarehouse.First(Store.@Exc_StreetNumber) |
 |                                                                                    |
 |**PersonalDetails**|
 | Name | ReportingPerson.PartyName|
 | EGN | ReportingPerson.NationalNumber |
-|                                             |
+|                                                                                    |
 | **ConsignorTrader**                 |
 | Bulstat   | EnterpriseCompany.Company.RegistrationNumber |
 | TraderName | EnterpriseCompany.Company.PartyName |
