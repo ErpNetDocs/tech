@@ -58,4 +58,16 @@ EU Excise
 | VehicleRegNo | TransportationVehicle.Vehicle.VehicleRegistrationNumber |
 |                                                                                     |
 | **TransporterTrader** |
-
+| IsForeigner | If(TransportationCarrier.Supplier.Company.Country.Code='BG',False,True) |
+| IdentifyNumber | TransportationCarrier.Supplier.Company.RegistrationNumber |
+| TraderName | TransportationCarrier.Supplier.Company.PartyName |
+|                                                                                     |
+| **Driver** |
+| Name | @Exc_Driver.Description |
+| EGN | @Exc_Driver.Value |
+|                                                                                     |
+| **DeliveryPlaceDetails** |
+| IsOTTGObject | FALSE |
+|                                                                                     |
+| **DeliveryPlace** |
+|
