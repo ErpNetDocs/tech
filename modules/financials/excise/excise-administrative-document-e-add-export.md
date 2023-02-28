@@ -105,3 +105,7 @@ EU Excise
 | DocumentNumber | IIF(ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine != NULL AND ExciseAdministrativeDocumentLine.@Exc_IInputDocumentNumberLine != "", ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine, ExciseAdministrativeDocument.@Exc_InputDocumentNumber) |
 |                                                                                      |
 
+
+The symbol "." is used to indicate that a field or data type is being referenced.
+The symbol "@xxxx" is used to indicate a custom property with the code "xxxx". If no field reference is specified after it, the custom property's value is used.
+The symbol "*" denotes multiplication.
