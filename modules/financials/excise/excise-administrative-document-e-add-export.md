@@ -20,8 +20,8 @@ EU Excise
 | Street | TaxWarehouse.First(Store.@Exc_Street)|
 | StreetNumber  | TaxWarehouse.First(Store.@Exc_StreetNumber) |
 |                                                                                    |
-| Unleaded petrol                                              | E420                |
-| Gasoil, unmarked                                             | E430                |
+|**PersonalDetails**   |
+| Name                                           | ReportingPerson.PartyName           |
 | Gasoil, marked                                               | E440                |
 | Kerosene, unmarked                                           | E450                |
 | Kerosene, marked                                             | E460                |
