@@ -35,3 +35,5 @@ EU Excise
 | Region|EnterpriseCompany.Company.@Exc_Region|
 | Municipality|EnterpriseCompany.Company.@Exc_Municipality|
 | PostCode| EnterpriseCompany.Company.ContactMechanism(ContactMechanismType=P)|
+| City | EnterpriseCompany.Company.@Exc_City |
+| District | EnterpriseCompany.Company.@Exc_District District = Right(@Exc_District,2) |
