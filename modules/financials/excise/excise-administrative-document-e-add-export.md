@@ -80,7 +80,7 @@ EU Excise
 |                                                                                     |
 | **eADDGoods** |
 | eADDGood |
-| BrandName | Product.ExciseProductType@Exc_BrandName.Value |
+| BrandName | Product.ExciseProductType @Exc_BrandName.Value |
 | TradeMark | Product.ProductName |
 | APCode | ExciseProduct.Code |
 | CNCode | Product.ExciseProductType.CommodityCode.CommodityCodeField |
