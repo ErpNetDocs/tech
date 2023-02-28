@@ -17,8 +17,9 @@ EU Excise
 | PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
 | City                  | TaxWarehouse.First(Store.@Exc_City)   |
 | District | TaxWarehouse.First(Store.@Exc_District)  |
-| Mineral oils (energy products) <br />Products  failing within CN codes 2707 10, 2707 20, 2707 30, and 2707 50 | E300                |
-| Leaded petrol                                                | E410                |
+| Street | TaxWarehouse.First(Store.@Exc_Street)|
+| StreetNumber  | TaxWarehouse.First(Store.@Exc_StreetNumber) |
+|                                                                                    |
 | Unleaded petrol                                              | E420                |
 | Gasoil, unmarked                                             | E430                |
 | Gasoil, marked                                               | E440                |
