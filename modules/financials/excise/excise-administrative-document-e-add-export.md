@@ -5,6 +5,7 @@ EU Excise
 |**e-ADD tags**                                               |**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
 | **Header**                                     |
+| ------------------------------------------------------------ | ------------------- |
 |DocumentNumber                                       | Document.DocumentNumber    |
 | DocumentDate             | Document.DocumentDate               |
 | IsDelayedReporting                                       |IsDeferredSubmission     |
