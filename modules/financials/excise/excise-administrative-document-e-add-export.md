@@ -5,15 +5,15 @@ EU Excise
 |**e-ADD tags**|**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
 |**Header**|
-|DocumentNumber|Document.DocumentNumber|
+| DocumentNumber|Document.DocumentNumber|
 | DocumentDate| Document.DocumentDate |
 | IsDelayedReporting |IsDeferredSubmission|
 | IsExciseNote | @Exc_Purpose |
 | TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)|
 |                                                                                   |
 |**PlaceOfIssue**|
-|Region | TaxWarehouse.First(Store.@Exc_Region) |
-|Municipality | TaxWarehouse.First(Store.@Exc_Municipality) |
+| Region | TaxWarehouse.First(Store.@Exc_Region) |
+| Municipality | TaxWarehouse.First(Store.@Exc_Municipality) |
 | PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
 | City | TaxWarehouse.First(Store.@Exc_City)|
 | District | TaxWarehouse.First(Store.@Exc_District) |
@@ -29,8 +29,8 @@ EU Excise
 | TraderName | EnterpriseCompany.Company.PartyName |
 | TraderExciseNumber | TaxWarehouse.TraderExciseNumber|
 | TaxWarehouseExciseNumber|TaxWarehouse.TaxWarehouseExciseNumber|
-| Saturated acyclic hydrocarbons                               | E600                |
-| Cyclic hydrocarbons                                          | E700                |
-| Methanol (methyl alcohol)                                    | E800                |
-| Mixture of acyclic hydrocarbons - "FAMAE"                    | E910                |
-| Mixture of acyclic hydrocarbons - others                     | E920                |
+|                                                                                    |
+| **AddressDetails**|
+| Country |EnterpriseCompany.Company.@Exc_Country|
+| Region|EnterpriseCompany.Company.@Exc_Region|
+| Municipality|EnterpriseCompany.Company.@Exc_Municipality|
