@@ -17,39 +17,39 @@ If no policy is specified or applicable for the particular line, then the defaul
 The control is performed during the order execution in the WMS Worker App (link) and more specifically during the execution of the Kit/Dekit lines of the component product. It could be fully automated or might be performed by a person in accordance with the needs of the company and it depends on the specified level of control.
 
 ## Levels
-* **Level 0 - Check All**
+* **Level 50 - Check All**
 
-Requires all products to be scanned again.
+This is the highest and therefore the most restrictive level. It requires all products to be scanned again after picking.
 
 When executing the Kit/Dekit line, the app shows a screen, where the workers must scan all components of the kit. The component products and product quantities must exactly match those in the composite product's definition, otherwise the system will not activate the Finish button and the line could not be fulfilled.
 
-![Level 0](pictures/level0.png)
+![Level 50](pictures/level50.png)
 
-* **Level 1 - Allow incomplete finish**
+* **Level 40 - Check All + allow incomplete finish**
 
-Same as level 0, but the application provides an option to still fulfill the order even when they do not match. The option is available trough the "Finish incomplete" button, situated in the button menu.
+Same as level 50, but the application provides an option to still fulfill the order even when the exepected and the executed contents do not match. The option is available trough the "Finish incomplete" button, situated in the buttons menu.
 
-![Level 1](pictures/level1.png)
+![Level 40](pictures/level40.png)
 
-* **Level 2 - Just preview totals**
+* **Level 30 - Just preview totals**
 
 The app displays a screen with summarized information for the components of the product from its definition and the executed quantities for the selected order. The information available for counting or checking, but does not require rescanning of the components. The workers certifiy that they hav completed the check by pressing the Finish button.
 
-![Level 2](pictures/level2.png)
+![Level 30](pictures/level30.png)
 
-* **Level 3 - Check and complete**
+* **Level 20 - Check and complete**
 
 The system checks if the whole order execution exactly matches the composite product's definition when a kit/dekit execution is attempted.
 
 If everything mathes – the kit/dekit is successfully executed.
 
-![Level 3 - Successful](pictures/level3-successful.png)
+![Level 20 - Successful](pictures/level20-successful.png)
 
 If there are differences and the validation is unsuccessful, the app shows an error.
 
-![Level 3 - Unsuccessful](pictures/level3-unsuccessful.png)
+![Level 20 - Unsuccessful](pictures/level20-unsuccessful.png)
 
-* **Level 4 - Autocomplete**
+* **Level 10 - Autocomplete**
 
 The system automatically executes the kit/dekit operation if all component lines are fulfilled and exactly match the composite product's definition. 
 If the match validation is successful the auto execution simply wont’t work. 
