@@ -13,8 +13,8 @@ EU Excise
 |                                                                                 |
 |**PlaceOfIssue**       |
 |Region                                       | TaxWarehouse.First(Store.@Exc_Region)   |
-| Ethyl alcohol                                                | S300                |
-| Partially denatured alcohol                                  | S400                |
+|Municipality                        | TaxWarehouse.First(Store.@Exc_Municipality) |
+| PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
 | Other products containing ethyl alcohol                      | S500                |
 | Vegetable and animal oils (energy products)<br />Products  falling within CN codes 1507 to 1518, if these are intended for use as  heating fuel or motor fuel | E200                |
 | Mineral oils (energy products) <br />Products  failing within CN codes 2707 10, 2707 20, 2707 30, and 2707 50 | E300                |
