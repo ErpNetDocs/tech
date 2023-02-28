@@ -15,8 +15,8 @@ EU Excise
 |Region                                       | TaxWarehouse.First(Store.@Exc_Region)   |
 |Municipality                        | TaxWarehouse.First(Store.@Exc_Municipality) |
 | PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
-| Other products containing ethyl alcohol                      | S500                |
-| Vegetable and animal oils (energy products)<br />Products  falling within CN codes 1507 to 1518, if these are intended for use as  heating fuel or motor fuel | E200                |
+| City                  | TaxWarehouse.First(Store.@Exc_City)   |
+| District | TaxWarehouse.First(Store.@Exc_District)  |
 | Mineral oils (energy products) <br />Products  failing within CN codes 2707 10, 2707 20, 2707 30, and 2707 50 | E300                |
 | Leaded petrol                                                | E410                |
 | Unleaded petrol                                              | E420                |
