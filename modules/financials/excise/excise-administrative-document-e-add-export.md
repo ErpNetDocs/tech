@@ -37,3 +37,6 @@ EU Excise
 | PostCode| EnterpriseCompany.Company.ContactMechanism(ContactMechanismType=P)|
 | City | EnterpriseCompany.Company.@Exc_City |
 | District | EnterpriseCompany.Company.@Exc_District ___ District = Right(@Exc_District,2) |
+| Street | EnterpriseCompany.Company.@Exc_Street |
+|                                                                                     |
+| **ConsigneeTrader** | 
