@@ -6,11 +6,11 @@ EU Excise
 | ------------------------------------------------------------ | ------------------- |
 |                                     **Header**                                     |
 |DocumentNumber                                       | Document.DocumentNumber    |
-| Fine-cut tobacco for the rolling of cigarettes               | T400                |
-| Other smoking tobacco                                        | T500                |
-| Beer                                                         | B000                |
-| Still wine and still fermented beverages other than wine and  beer | W200                |
-| Sparkling wine and sparkling fermented beverages other than wine  and beer | W300                |
+| DocumentDate             | Document.DocumentDate               |
+| IsDelayedReporting                                       |IsDeferredSubmission     |
+| IsExciseNote                                                       | @Exc_Purpose  |
+| TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)           |
+|                                                                                 |
 | Alcohol - intermediate products                              | I000                |
 | Spirituous beverages                                         | S200                |
 | Ethyl alcohol                                                | S300                |
