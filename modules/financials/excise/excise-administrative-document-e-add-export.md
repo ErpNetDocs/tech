@@ -40,3 +40,7 @@ EU Excise
 | Street | EnterpriseCompany.Company.@Exc_Street |
 |                                                                                     |
 | **ConsigneeTrader** | 
+| IsForeigner | If(OtherParty.Company.Country.Code='BG',False,True) |
+| IdentifyNumber | OtherParty.Company.RegistrationNumber |
+| TraderName | OtherParty.PartyName |
+|                                                                                     |
