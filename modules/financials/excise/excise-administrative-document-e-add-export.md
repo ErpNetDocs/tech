@@ -1,6 +1,6 @@
 # Excise administrative document: e-ADD export
 
-EU Excise
+The table below lists the sources for the tags of the e-ADD xml file:
 
 |**e-ADD tags**|**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
@@ -36,7 +36,7 @@ EU Excise
 | Municipality|EnterpriseCompany.Company.@Exc_Municipality|
 | PostCode| EnterpriseCompany.Company.ContactMechanism(ContactMechanismType=P)|
 | City | EnterpriseCompany.Company.@Exc_City |
-| District | EnterpriseCompany.Company.@Exc_District ___ District = Right(@Exc_District,2) |
+| District | EnterpriseCompany.Company.@Exc_District <br/> District = Right(@Exc_District,2) |
 | Street | EnterpriseCompany.Company.@Exc_Street |
 |                                                                                     |
 | **ConsigneeTrader** | 
@@ -91,7 +91,7 @@ EU Excise
 | Degree | ExciseAlcoholicStrengt |
 | Pieces | Product.ExciseProductType.Capacity |
 | NumberOfPackages | Quantity |
-| TotalAmountPrice | Quantity*Product.@Exc_LabelPrice |
+| TotalAmountPrice | Quantity\*Product.@Exc_LabelPrice |
 | TaxBase | ExciseAmountBase |
 | ExciseDuty | ExciseDutyRateValue |
 | DutyAmount |ExciseAmount |
