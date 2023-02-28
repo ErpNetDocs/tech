@@ -45,3 +45,9 @@ EU Excise
 | TraderName | OtherParty.PartyName |
 |                                                                                     |
 | **AddressDetails** |
+| Country | OtherParty.@Exc_Country |
+| Region | OtherParty.@Exc_Region |
+| Municipality | OtherParty.@Exc_Municipality |
+| PostCode | OtherParty.ContactMechanism(ContactMechanismType=P) |
+| City | OtherParty.@Exc_City |
+\ \
