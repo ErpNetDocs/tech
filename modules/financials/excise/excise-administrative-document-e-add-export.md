@@ -2,16 +2,16 @@
 
 EU Excise
 
-|**e-ADD tags**                                               |**Excise Product Code**|
+|**e-ADD tags**|**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
-|**Header**                                             |
+|**Header**|
 |DocumentNumber                                       | Document.DocumentNumber    |
 | DocumentDate             | Document.DocumentDate               |
 | IsDelayedReporting                                       |IsDeferredSubmission     |
 | IsExciseNote                                                       | @Exc_Purpose  |
 | TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)           |
 |                                                                                 |
-|**PlaceOfIssue**       |
+|**PlaceOfIssue**
 |Region                                       | TaxWarehouse.First(Store.@Exc_Region)   |
 |Municipality                        | TaxWarehouse.First(Store.@Exc_Municipality) |
 | PostCode   |TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))  |
@@ -20,15 +20,15 @@ EU Excise
 | Street | TaxWarehouse.First(Store.@Exc_Street)|
 | StreetNumber  | TaxWarehouse.First(Store.@Exc_StreetNumber) |
 |                                                                                    |
-|**PersonalDetails**   |
-| Name                                           | ReportingPerson.PartyName           |
-| EGN                                           | ReportingPerson.NationalNumber |
+|**PersonalDetails**|
+| Name | ReportingPerson.PartyName|
+| EGN | ReportingPerson.NationalNumber |
 |                                             |
 | **ConsignorTrader**                 |
 | Bulstat   | EnterpriseCompany.Company.RegistrationNumber |
 | TraderName | EnterpriseCompany.Company.PartyName |
 | TraderExciseNumber | TaxWarehouse.TraderExciseNumber|
-| Liquefied petroleum gases and other gaseous hydrocarbons (LPG) | E500                |
+| TaxWarehouseExciseNumber|TaxWarehouse.TaxWarehouseExciseNumber|
 | Saturated acyclic hydrocarbons                               | E600                |
 | Cyclic hydrocarbons                                          | E700                |
 | Methanol (methyl alcohol)                                    | E800                |
