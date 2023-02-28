@@ -25,9 +25,9 @@ EU Excise
 | EGN                                           | ReportingPerson.NationalNumber |
 |                                             |
 | **ConsignorTrader**                 |
-| Heavy fuel oil                                               | E470                |
-| Products failing within CN codes 2710 11 21, 2710 11 25, 2710 19  29 in bulk commercial movements | E480                |
-| Products failing within CN codes 2710 11 to 2710 19 69, not  specified above | E490                |
+| Bulstat   | EnterpriseCompany.Company.RegistrationNumber |
+| TraderName | EnterpriseCompany.Company.PartyName |
+| TraderExciseNumber | TaxWarehouse.TraderExciseNumber|
 | Liquefied petroleum gases and other gaseous hydrocarbons (LPG) | E500                |
 | Saturated acyclic hydrocarbons                               | E600                |
 | Cyclic hydrocarbons                                          | E700                |
