@@ -102,5 +102,6 @@ EU Excise
 | ControlPoint | MeasuringTransaction.MeasuringDeviceCode |
 | TransactionNumber | MeasuringTransaction. Transaction number |
 | DocumentType | IIF(ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine != NULL AND ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine != "", ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine, ExciseAdministrativeDocument.@Exc_InputDocumentType) |
-
+| DocumentNumber | IIF(ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine != NULL AND ExciseAdministrativeDocumentLine.@Exc_IInputDocumentNumberLine != "", ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine, ExciseAdministrativeDocument.@Exc_InputDocumentNumber) |
+|                                                                                      |
 
