@@ -92,5 +92,14 @@ EU Excise
 | Pieces | Product.ExciseProductType.Capacity |
 | NumberOfPackages | Quantity |
 | TotalAmountPrice | Quantity*Product.@Exc_LabelPrice |
+| TaxBase | ExciseAmountBase |
+| ExciseDuty | ExciseDutyRateValue |
+| DutyAmount |ExciseAmount |
+| Payment | @Exc_Payment |
+| Purpose | ExcisePurposeCode.Code |
+|                                                                                      |
+| **MeasureValues**|
+| ControlPoint | MeasuringTransaction.MeasuringDeviceCode |
+
 
 
