@@ -80,7 +80,17 @@ EU Excise
 |                                                                                     |
 | **eADDGoods** |
 | eADDGood |
-| BrandName | Product.ExciseProductType@Exc_BrandName.Value|
+| BrandName | Product.ExciseProductType@Exc_BrandName.Value |
 | TradeMark | Product.ProductName |
+| APCode | ExciseProduct.Code |
+| CNCode | Product.ExciseProductType.CommodityCode.CommodityCodeField |
+| AdditionalCode | Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) |
+| QuantityOfGoods | ExciseQuantity |
+| MissingLabelsCnt | Null |
+| OtherMeasure | ExciseQuantityUnit.Code |
+| Degree | ExciseAlcoholicStrengt |
+| Pieces | Product.ExciseProductType.Capacity |
+| NumberOfPackages | Quantity |
+| TotalAmountPrice | Quantity*Product.@Exc_LabelPrice |
 
 
