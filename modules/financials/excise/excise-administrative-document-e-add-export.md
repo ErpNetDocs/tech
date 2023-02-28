@@ -34,3 +34,4 @@ EU Excise
 | Country |EnterpriseCompany.Company.@Exc_Country|
 | Region|EnterpriseCompany.Company.@Exc_Region|
 | Municipality|EnterpriseCompany.Company.@Exc_Municipality|
+| PostCode| EnterpriseCompany.Company.ContactMechanism(ContactMechanismType=P)|
