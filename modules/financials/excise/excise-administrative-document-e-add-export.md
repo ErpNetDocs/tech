@@ -22,9 +22,9 @@ EU Excise
 |                                                                                    |
 |**PersonalDetails**   |
 | Name                                           | ReportingPerson.PartyName           |
-| Gasoil, marked                                               | E440                |
-| Kerosene, unmarked                                           | E450                |
-| Kerosene, marked                                             | E460                |
+| EGN                                           | ReportingPerson.NationalNumber |
+|                                             |
+| **ConsignorTrader**                 |
 | Heavy fuel oil                                               | E470                |
 | Products failing within CN codes 2710 11 21, 2710 11 25, 2710 19  29 in bulk commercial movements | E480                |
 | Products failing within CN codes 2710 11 to 2710 19 69, not  specified above | E490                |
