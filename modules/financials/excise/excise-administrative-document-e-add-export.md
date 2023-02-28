@@ -50,4 +50,12 @@ EU Excise
 | Municipality | OtherParty.@Exc_Municipality |
 | PostCode | OtherParty.ContactMechanism(ContactMechanismType=P) |
 | City | OtherParty.@Exc_City |
-\ \
+| District | OtherParty.@Exc_District |
+| Street | OtherParty.@Exc_Street |
+|                                                                                     |
+| **TransportDetails** |
+| TransportType | TransportationVehicle.TransportationMode.Code |
+| VehicleRegNo | TransportationVehicle.Vehicle.VehicleRegistrationNumber |
+|                                                                                     |
+| **TransporterTrader** |
+
