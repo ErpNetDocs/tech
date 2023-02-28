@@ -70,4 +70,17 @@ EU Excise
 | IsOTTGObject | FALSE |
 |                                                                                     |
 | **DeliveryPlace** |
-|
+| Country | OtherParty.@Exc_Country |
+| Region | OtherParty.@Exc_Region |
+| Municipality | OtherParty.@Exc_Municipality |
+| PostCode | OtherParty.ContactMechanism(ContactMechanismType=P) |
+| City | OtherParty.@Exc_City |
+| District | OtherParty.@Exc_District |
+| Street | OtherParty.@Exc_Street |
+|                                                                                     |
+| **eADDGoods** |
+| eADDGood |
+| BrandName | Product.ExciseProductType@Exc_BrandName.Value |
+| TradeMark | Product.ProductName |
+
+
