@@ -2,9 +2,9 @@
 
 EU Excise
 
-| **e-ADD tags**                                               |**Excise Product Code**|
+|**e-ADD tags**                                               |**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
-|                                     **Header**                                     |
+| **Header**                                     |
 |DocumentNumber                                       | Document.DocumentNumber    |
 | DocumentDate             | Document.DocumentDate               |
 | IsDelayedReporting                                       |IsDeferredSubmission     |
