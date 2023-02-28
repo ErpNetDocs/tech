@@ -2,7 +2,7 @@
 
 EU Excise
 
-| **e-ADD tags                                                 |Excise Product Code**|
+| **e-ADD tags**                                               |**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
 |                                     **Header**                                     |
 | Cigars and cigarillos                                        | T300                |
