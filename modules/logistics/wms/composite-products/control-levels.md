@@ -17,7 +17,7 @@ If no policy is specified or applicable for the particular line, then the defaul
 The control is performed during the order execution in the WMS Worker App (link) and more specifically during the execution of the Kit/Dekit lines of the component product. It could be fully automated or might be performed by a person in accordance with the needs of the company and it depends on the specified level of control.
 
 ## Levels
-* **Level 50 - Check All**
+* **Level 50 - Check all**
 
 This is the highest and therefore the most restrictive level. It requires all products to be scanned again after picking.
 
@@ -25,7 +25,7 @@ When executing the Kit/Dekit line, the app shows a screen, where the workers mus
 
 ![Level 50](pictures/level50.png)
 
-* **Level 40 - Check All + allow incomplete finish**
+* **Level 40 - Check all + Allow incomplete finish**
 
 Same as level 50, but the application provides an option to still fulfill the order even when the exepected and the executed contents do not match. The option is available trough the "Finish incomplete" button, situated in the buttons menu.
 
