@@ -44,3 +44,4 @@ EU Excise
 | IdentifyNumber | OtherParty.Company.RegistrationNumber |
 | TraderName | OtherParty.PartyName |
 |                                                                                     |
+| **AddressDetails** |
