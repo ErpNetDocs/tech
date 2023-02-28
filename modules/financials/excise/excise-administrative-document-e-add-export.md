@@ -4,16 +4,15 @@ EU Excise
 
 |**e-ADD tags**                                               |**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
-| **Header**                                     |
-| ------------------------------------------------------------ | ------------------- |
+|**Header**                                             |
 |DocumentNumber                                       | Document.DocumentNumber    |
 | DocumentDate             | Document.DocumentDate               |
 | IsDelayedReporting                                       |IsDeferredSubmission     |
 | IsExciseNote                                                       | @Exc_Purpose  |
 | TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)           |
 |                                                                                 |
-| Alcohol - intermediate products                              | I000                |
-| Spirituous beverages                                         | S200                |
+|**PlaceOfIssue**       |
+|Region                                       | TaxWarehouse.First(Store.@Exc_Region)   |
 | Ethyl alcohol                                                | S300                |
 | Partially denatured alcohol                                  | S400                |
 | Other products containing ethyl alcohol                      | S500                |
@@ -34,7 +33,3 @@ EU Excise
 | Methanol (methyl alcohol)                                    | E800                |
 | Mixture of acyclic hydrocarbons - "FAMAE"                    | E910                |
 | Mixture of acyclic hydrocarbons - others                     | E920                |
-
-https://ec.europa.eu/taxation_customs/dds2/seed/help/seedhpep.jsp?callbackuri=CBU-3&Lang=en
-
-![image](https://user-images.githubusercontent.com/50704486/131687821-9fd25ec8-0203-4528-b2ec-e1ec65ee2fc8.png)
