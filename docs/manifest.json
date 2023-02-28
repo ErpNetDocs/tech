@@ -1589,7 +1589,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "TiGwK2CiZvnGtIT//V0Ncw=="
+          "hash": "tfLpsEn1p1OrPvOsdy4W5Q=="
         }
       },
       "is_incremental": false,
@@ -6815,6 +6815,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/excise-administrative-document-e-add-export.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/excise-administrative-document-e-add-export.html",
+          "hash": "IFvGD3ZsNKexu4WQVp6aEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/excise-categories.md",
       "output": {
         ".html": {
@@ -7941,7 +7953,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/composite-products/control-levels.html",
-          "hash": "cf0lP3CPzYIJlO9egz9J5w=="
+          "hash": "gW7Z7NqwtKsrmqWKGSTDTQ=="
         }
       },
       "is_incremental": false,
@@ -8027,10 +8039,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level0.png",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level20-successful.png",
       "output": {
         "resource": {
-          "relative_path": "modules/logistics/wms/composite-products/pictures/level0.png"
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level20-successful.png"
         }
       },
       "is_incremental": false,
@@ -8038,10 +8050,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level1.png",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level20-unsuccessful.png",
       "output": {
         "resource": {
-          "relative_path": "modules/logistics/wms/composite-products/pictures/level1.png"
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level20-unsuccessful.png"
         }
       },
       "is_incremental": false,
@@ -8049,10 +8061,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level2.png",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level30.png",
       "output": {
         "resource": {
-          "relative_path": "modules/logistics/wms/composite-products/pictures/level2.png"
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level30.png"
         }
       },
       "is_incremental": false,
@@ -8060,10 +8072,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level3-successful.png",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level40.png",
       "output": {
         "resource": {
-          "relative_path": "modules/logistics/wms/composite-products/pictures/level3-successful.png"
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level40.png"
         }
       },
       "is_incremental": false,
@@ -8071,10 +8083,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png",
+      "source_relative_path": "modules/logistics/wms/composite-products/pictures/level50.png",
       "output": {
         "resource": {
-          "relative_path": "modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png"
+          "relative_path": "modules/logistics/wms/composite-products/pictures/level50.png"
         }
       },
       "is_incremental": false,
@@ -8985,7 +8997,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "pLE0wQ0q6t9et60DCEKd9A=="
+          "hash": "vDXgXhBa62LIpZWxqhJApg=="
         }
       },
       "is_incremental": false,
