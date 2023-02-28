@@ -5,7 +5,7 @@ EU Excise
 | **e-ADD tags**                                               |**Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
 |                                     **Header**                                     |
-| Cigars and cigarillos                                        | T300                |
+|DocumentNumber                                       | Document.DocumentNumber    |
 | Fine-cut tobacco for the rolling of cigarettes               | T400                |
 | Other smoking tobacco                                        | T500                |
 | Beer                                                         | B000                |
