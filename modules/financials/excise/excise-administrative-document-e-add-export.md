@@ -1,10 +1,10 @@
 # Excise administrative document: e-ADD export
 
-EU Excise products
+EU Excise
 
-| Excise  Products                                             | Excise Product Code |
+| **e-ADD tags                                                 |Excise Product Code**|
 | ------------------------------------------------------------ | ------------------- |
-| Cigarettes                                                   | T200                |
+|                                     **Header**                                     |
 | Cigars and cigarillos                                        | T300                |
 | Fine-cut tobacco for the rolling of cigarettes               | T400                |
 | Other smoking tobacco                                        | T500                |
