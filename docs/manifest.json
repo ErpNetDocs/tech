@@ -1589,7 +1589,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/index.html",
-          "hash": "tfLpsEn1p1OrPvOsdy4W5Q=="
+          "hash": "TiGwK2CiZvnGtIT//V0Ncw=="
         }
       },
       "is_incremental": false,
@@ -3757,6 +3757,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level20-successful.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level20-successful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level20-unsuccessful.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level20-unsuccessful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-successful.png",
       "output": {
         "resource": {
@@ -3772,6 +3794,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level3-unsuccessful.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level30.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level30.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level40.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level40.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/composite-products/pictures/level50.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/composite-products/pictures/level50.png"
         }
       },
       "is_incremental": false,
