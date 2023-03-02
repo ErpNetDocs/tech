@@ -82,6 +82,8 @@ The information whether the **WR or a SO** is fully executed is collected using 
 
 Here is a list with the calculated attribute expressions. Of course, еach attribute can be modified by the implementatior according to the organization's needs.
 
+> **_NOTE:_** You can easily create these attributes in your database by copy-pasting their expression into your database.
+
 * "Is Executed" attribute in **WR lines**
 
 Repository: Logistics.Wms.WarehouseRequisitionLines
