@@ -1,19 +1,19 @@
 ## Check if a dispatch order can be fulfilled
 
-Planning a dispatch Warehouse Order usually leads to the question “Can this order be fulfilled?” i.e. is there enough availability to dispatch all lines of this order?
-To answer this question we have created a set of three calculated attributes:
+Planning a dispatch Warehouse Order usually leads to the question “Can this order be fulfilled?” i.e. "Is there enough availability to dispatch all lines of this order"?
+To help you answer this question, we have created a set of three calculated attributes:
 
 * **"Can Be Fulfilled" attribute in the Warehouse Order Header**
 
-It returns “true” if there is enough availability for all lines of the current Warehouse Order. The attribute can be shown in the Warehouse Orders navigator to help guide the planners on which Warehouse Orders require their attention.
+Returns “true” if there is enough availability for all lines of the current Warehouse Order. The attribute can be shown in the Warehouse Orders navigator to help guide the planners on which Warehouse Orders require their attention.
 
 * **"Line Can Be Fulfilled" attribute in the Warehouse Order Lines**
 
-It returns “true” if there is enough availability for all lines. If it returns “false” it means that there is not enough availability to execute this line and the planner needs to review it and probbaly make some decisions and adjustments before releasing the order – e.g. to select a different lot, to cancel the order, to execute as much as is available and request the rest, etc.
+Returns “true” if there is enough availability to fulfill the current line. If it returns “false” it means that there is not enough availability and the planner needs to review it and probbaly make some decisions and adjustments before releasing the order – e.g. to select a different lot, to cancel the order, to execute as much as is available and request the rest, etc.
 
 * **"Available Quantity Base" attribute in the Warehouse Order Lines**
 
-It returns the sum of the Available Quantity Base for this line. It takes into account whether there is a particular Warehouse Location, Lot, Serial Number, Variant, or Logistic Unit that is specified in the line and shows the availability according to these criteria. 
+Returns the sum of the Available Quantity Base for this line. It takes into account whether there is a particular Warehouse Location, Lot, Serial Number, Variant, or Logistic Unit that is specified in the line and shows the availability according to these criteria. 
 
 ### Calculated attributes expression
 Here is a list with the calculated attribute expressions. Of course, еach attribute can be modified by the implementatior according to the organization's needs.
