@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Check if a dispatch order can be fulfilled | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Check if a dispatch order can be fulfilled | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="check-if-a-dispatch-order-can-be-fulfilled">Check if a dispatch order can be fulfilled</h2>
+
+<p>Planning a dispatch Warehouse Order usually leads to the question “Can this order be fulfilled?” i.e. &quot;Is there enough availability to dispatch all lines of this order&quot;?
+To help you answer this question, we have created a set of three calculated attributes:</p>
+<ul>
+<li><strong>&quot;Can Be Fulfilled&quot; attribute in the Warehouse Order Header</strong></li>
+</ul>
+<p>Returns “true” if there is enough availability for all lines of the current Warehouse Order. The attribute can be shown in the Warehouse Orders navigator to help guide the planners on which Warehouse Orders require their attention.</p>
+<ul>
+<li><strong>&quot;Line Can Be Fulfilled&quot; attribute in the Warehouse Order Lines</strong></li>
+</ul>
+<p>Returns “true” if there is enough availability to fulfill the current line. If it returns “false” it means that there is not enough availability and the planner needs to review it and probbaly make some decisions and adjustments before releasing the order – e.g. to select a different lot, to cancel the order, to execute as much as is available and request the rest, etc.</p>
+<ul>
+<li><strong>&quot;Available Quantity Base&quot; attribute in the Warehouse Order Lines</strong></li>
+</ul>
+<p>Returns the sum of the Available Quantity Base for this line. It takes into account whether there is a particular Warehouse Location, Lot, Serial Number, Variant, or Logistic Unit that is specified in the line and shows the availability according to these criteria.</p>
+<h3 id="calculated-attributes-expression">Calculated attributes expression</h3>
+<p>Here is a list with the calculated attribute expressions. Of course, еach attribute can be modified by the implementatior according to the organization's needs.</p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> You can easily create these attributes in your database by copy-pasting their expression into your database.</p>
+</blockquote>
+<ul>
+<li><strong>&quot;Can Be Fulfilled&quot; attribute</strong></li>
+</ul>
+<p>Repository: Logistics.Wms.WarehouseOrders</p>
+<table>
+<thead>
+<tr>
+<th>Exp No</th>
+<th>Operator</th>
+<th>Parameter1</th>
+<th>P1 Value</th>
+<th>Parameter2</th>
+<th>P2 Value</th>
+<th>Parameter3</th>
+<th>P3 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>20</td>
+<td>CONST</td>
+<td>FALSE</td>
+<td>CONST</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GTE</td>
+<td>EXP</td>
+<td>30</td>
+<td>CONST</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>COUNT</td>
+<td>EXP</td>
+<td>40</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>40</td>
+<td>FILTER</td>
+<td>CHILD</td>
+<td>Lines</td>
+<td>EXP</td>
+<td>50</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>#LineCanBeFulfilled</td>
+<td>CONST</td>
+<td>FALSE</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>&quot;Line Can Be Fulfilled&quot; attribute</strong></li>
+</ul>
+<p>Repository: Logistics.Wms.WarehouseOrderLines</p>
+<table>
+<thead>
+<tr>
+<th>Exp No</th>
+<th>Operator</th>
+<th>Parameter1</th>
+<th>P1 Value</th>
+<th>Parameter2</th>
+<th>P2 Value</th>
+<th>Parameter3</th>
+<th>P3 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>20</td>
+<td>CONST</td>
+<td>TRUE</td>
+<td>CONST</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GTE</td>
+<td>ATTRIB</td>
+<td>#AvailableQuantityBase</td>
+<td>ATTRIB</td>
+<td>QuantityBaseValue</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>&quot;Available Quantity Base&quot; attribute</strong></li>
+</ul>
+<p>Repository: Logistics.Wms.WarehouseOrderLines</p>
+<table>
+<thead>
+<tr>
+<th>Exp No</th>
+<th>Operator</th>
+<th>Parameter1</th>
+<th>P1 Value</th>
+<th>Parameter2</th>
+<th>P2 Value</th>
+<th>Parameter3</th>
+<th>P3 Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>SUM</td>
+<td>EXP</td>
+<td>200</td>
+<td>ATTRIB</td>
+<td>QuantityBaseAvailable</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>200</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>210</td>
+<td>EXP</td>
+<td>300</td>
+<td>EXP</td>
+<td>230</td>
+</tr>
+<tr>
+<td>210</td>
+<td>EQUAL</td>
+<td>EXP</td>
+<td>220</td>
+<td>CONST</td>
+<td>NULL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>220</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>WarehouseLocationId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>230</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>300</td>
+<td>EXP</td>
+<td>240</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>240</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>WarehouseLocationId</td>
+<td>EXP</td>
+<td>250</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>250</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>WarehouseLocationId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>300</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>310</td>
+<td>EXP</td>
+<td>400</td>
+<td>EXP</td>
+<td>330</td>
+</tr>
+<tr>
+<td>310</td>
+<td>EQUAL</td>
+<td>EXP</td>
+<td>320</td>
+<td>CONST</td>
+<td>NULL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>320</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>LotId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>330</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>400</td>
+<td>EXP</td>
+<td>340</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>340</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>LotId</td>
+<td>EXP</td>
+<td>350</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>350</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>LotId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>400</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>410</td>
+<td>EXP</td>
+<td>500</td>
+<td>EXP</td>
+<td>430</td>
+</tr>
+<tr>
+<td>410</td>
+<td>EQUAL</td>
+<td>EXP</td>
+<td>420</td>
+<td>CONST</td>
+<td>NULL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>420</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>SerialNumberId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>430</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>500</td>
+<td>EXP</td>
+<td>440</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>440</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>SerialNumberId</td>
+<td>EXP</td>
+<td>450</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>450</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>SerialNumberId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>500</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>510</td>
+<td>EXP</td>
+<td>600</td>
+<td>EXP</td>
+<td>530</td>
+</tr>
+<tr>
+<td>510</td>
+<td>EQUAL</td>
+<td>EXP</td>
+<td>520</td>
+<td>CONST</td>
+<td>NULL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>520</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>ProductVariantId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>530</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>600</td>
+<td>EXP</td>
+<td>540</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>540</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>ProductVariantId</td>
+<td>EXP</td>
+<td>550</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>550</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>ProductVariantId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>600</td>
+<td>IIF</td>
+<td>EXP</td>
+<td>610</td>
+<td>EXP</td>
+<td>1000</td>
+<td>EXP</td>
+<td>630</td>
+</tr>
+<tr>
+<td>610</td>
+<td>EQUAL</td>
+<td>EXP</td>
+<td>620</td>
+<td>CONST</td>
+<td>NULL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>620</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>LogisticUnitId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>630</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>2000</td>
+<td>EXP</td>
+<td>640</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>640</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>LogisticUnitId</td>
+<td>EXP</td>
+<td>650</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>650</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>LogisticUnitId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1000</td>
+<td>FILTER</td>
+<td>EXP</td>
+<td>2000</td>
+<td>EXP</td>
+<td>1100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1100</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>ProductId</td>
+<td>EXP</td>
+<td>1200</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1200</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>ProductId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2000</td>
+<td>SELECT</td>
+<td>REPO</td>
+<td>Logistics.Wms.WarehouseAvailabilityView</td>
+<td>EXP</td>
+<td>2100</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2100</td>
+<td>WHERE</td>
+<td>EXP</td>
+<td>2200</td>
+<td>EXP</td>
+<td>2400</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2200</td>
+<td>EQUAL</td>
+<td>ATTRIB</td>
+<td>ProductId</td>
+<td>EXP</td>
+<td>2300</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2300</td>
+<td>GETOBJVALUE</td>
+<td>INPUT</td>
+<td>100</td>
+<td>ATTRIB</td>
+<td>ProductId</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2400</td>
+<td>GT</td>
+<td>ATTRIB</td>
+<td>StandardQuantityAvailable</td>
+<td>CONST</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/check-can-be-fulfilled.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
