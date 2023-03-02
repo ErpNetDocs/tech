@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Adjustment-Documents
+  name: Adjustments documents
+  href: concepts/documents/adjustments.html
 - uid: aggregate-client-commit
   name: AGGREGATE CLIENT COMMIT
   href: advanced/user-business-rules/events/aggregate-client-commit.html
@@ -223,6 +226,9 @@ references:
 - uid: document-amounts
   name: Additional amounts
   href: advanced/document-amounts/index.html
+- uid: Documents
+  name: Documents
+  href: concepts/documents/index.html
 - uid: domain-with-property-allowed-values
   name: Domain with property allowed values
   href: advanced/custom-attributes/domain-with-property-allowed-values.html
