@@ -29,7 +29,7 @@ Suggested replenishment requires specific values for certain fields in order to 
 - **Planning Lead Time Days** - Days needed to supply or manufacture the product.
 - **Order Minimum** - Minimum quantity of product that can be ordered at a time.
 - **Order Maximum** - Maximum quantity of product that can be ordered at a time.
-- **Order Multiple** - Tick this box to make the produced product quantity multiple by lot size.
+- **Order Multiple** - Tick this box to make the product quantity multiple by lot size.
 - **Order Lot Size Quantity Base** - The lot size value.
 - **Order Policy** - The policy the replenishment system will follow (leave this as **OPS - Order Point System**). 
 - **Manufacturing Policy** - Used when the procurement type is **Make**. 
