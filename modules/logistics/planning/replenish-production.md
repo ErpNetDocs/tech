@@ -29,13 +29,13 @@ Suggested replenishment requires specific values for certain fields in order to 
 - **Planning Lead Time Days** - Days needed to supply or manufacture the product.
 - **Order Minimum** - Minimum quantity of product that can be ordered at a time.
 - **Order Maximum** - Maximum quantity of product that can be ordered at a time.
-- **Order Multiple** - Tick this box to make the purchased product quantity multiple by lot size.
+- **Order Multiple** - Tick this box to make the produced product quantity multiple by lot size.
 - **Order Lot Size Quantity Base** - The lot size value.
 - **Order Policy** - The policy the replenishment system will follow (leave this as **OPS - Order Point System**). 
 - **Manufacturing Policy** - The manufcaturing product policy used by the replenishment system (must be **MTS - Make-To-Stock**).
 - **From Store** - Used when the procurement type is **Transfer**. 
-- **Preferred Supplier** - Name of the supplier who must have produced the product (will be identical in the purchase order).
-- **Enterprise Company** - Name of the enterprise company associated with the product supply (identical in the purchase order).
+- **Preferred Supplier** - Name of the supplier who must have produced the product (will be identical in the work order).
+- **Enterprise Company** - Name of the enterprise company associated with the product supply (identical in the work order).
 
 When done, **save** the product supply.
  
