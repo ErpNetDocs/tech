@@ -17,10 +17,10 @@ Go to **General** **->** **Products** and select **Product Supply**. From there,
 Make sure to go through each field carefully. 
 
 ![Picture](pictures/purchase_ord.png)
- 
-• **Product** - The product for which a supply (and purchase order) will be made.
-•	**Procurement Type** - The type of action associated with this product (in this case, bought products imply **Buy**).
-•	**Generate Document Type** - The type of document which will be issued according to the supply rules (leave this as **Purchase Order**).
+
+- **Product** - The product for which a supply (and purchase order) will be made.
+- **Procurement Type** - The type of action associated with this product (in this case, bought products imply **Buy**).
+- **Generate Document Type** - The type of document which will be issued according to the supply rules (leave this as **Purchase Order**).
 - **Order Point Quantity Base** - Quantity the product must drop to for replenishment to be triggered.
 - **Planning Maximum Inventory Quantity Base** - Maximum possible quantity of product in the store.
 - **Planning Lead Time Days** - Days needed to supply or manufacture the product.
