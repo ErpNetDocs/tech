@@ -1,6 +1,6 @@
 # Replenishing suggestions for purchase orders
 
-If a store is running low on product quantities, you can take advantage of **automatic replenishing suggestions** to restore the supply to its desired number.
+If a store is running low on product quantities, you can take advantage of **replenishing suggestions** to restore the supply to its desired number.
 
 By following the steps below, while issuing **purchase orders**, you'll be able to generate lines specifically for replenishing product quantities.
 
