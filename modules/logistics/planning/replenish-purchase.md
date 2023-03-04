@@ -2,7 +2,7 @@
 
 If a store is running low on product quantities, you can take advantage of **replenishing suggestions** to restore the supply to its desired number.
 
-By following the steps below, while issuing **purchase orders**, you'll be able to generate lines specifically for replenishing product quantities.
+By following the steps below, while issuing **purchase orders**, you'll be able to generate lines exclusively for replenishing product quantities.
 
 ## Prerequisites
 
@@ -15,6 +15,8 @@ Go to **General** **->** **Products** and select **Product Supply**. From there,
 ![Picture](pictures/product_supply.png)
  
 Make sure to go through each field carefully. 
+
+Suggested replenishment requires specific values for certain fields in order to work.
 
 ![Picture](pictures/purchase_ord.png)
 
