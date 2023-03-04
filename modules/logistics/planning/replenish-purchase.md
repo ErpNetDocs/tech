@@ -1,6 +1,6 @@
 # Replenishing suggestions for purchase orders
 
-If a store is running low on product quantities, you can take advantage of **replenishing suggestions** to restore the supply to its desired number.
+If your store is running low on product quantities, you can take advantage of **replenishing suggestions** to restore the supply to a desired number.
 
 By following the steps below, while issuing **purchase orders**, you'll be able to generate lines exclusively for replenishing product quantities.
 
@@ -20,7 +20,7 @@ Suggested replenishment requires specific values for certain fields in order to 
 
 ![Picture](pictures/purchase_ord.png)
 
-- **Product** - The product for which a supply (and purchase order) will be made.
+- **Product** - The product for which the supply (and a purchase order) will be made.
 - **Procurement Type** - The type of action associated with this product (in this case, bought products imply **Buy**).
 - **Generate Document Type** - The type of document which will be issued according to the supply rules (leave this as **Purchase Order**).
 - **Order Point Quantity Base** - Quantity the product must drop to for replenishment to be triggered.
