@@ -8,3 +8,7 @@
   href: material-requirements-planning.md
 - name: Projected available balance
   href: projected-available-balance.md
+- name: Replenishing suggestions for purchase orders
+  href: replenish-purchase.md
+- name: Replenishing suggestions for work orders
+  href: replenish-production.md
