@@ -3647,6 +3647,204 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/logistics_procurement.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/logistics_procurement.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/pr_ord_cr.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/pr_ord_cr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/pr_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/pr_order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/pr_supply.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/pr_supply.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/pr_supply_make.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/pr_supply_make.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/product_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/product_order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/product_supply.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/product_supply.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/purchase_ord.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/purchase_ord.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/quantit.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/quantit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/save_purchase.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/save_purchase.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/sug_rep.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/sug_rep.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/sug_rep_prod.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/sug_rep_prod.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/tr_lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/tr_lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/tr_ord_cr.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/tr_ord_cr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/tr_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/tr_order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/tr_order_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/tr_order_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/planning/pictures/tr_suggest.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/planning/pictures/tr_suggest.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/WMS.png",
       "output": {
         "resource": {
