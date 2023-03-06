@@ -38,7 +38,7 @@ Suggested replenishment requires specific values for certain fields in order to 
 
 When done, **save** the product supply.
  
-2.	Create a new purchase order from the **Logistics** **->** **Procurement** module. 
+2.	Create a new purchase order from the **Logistics** **->** **Procurement** module or open an existing one. 
 
 ![Picture](pictures/logistics_procurement.png)
 
