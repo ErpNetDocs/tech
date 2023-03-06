@@ -39,7 +39,7 @@ Suggested replenishment requires specific values for certain fields in order to 
 
 When done, **save** the product supply.
  
-2.	Create a new transfer order from the **Logistics** **->** **Inventory** module. 
+2.	Create a new transfer order from the **Logistics** **->** **Inventory** module or open an existing one. 
 
 ![Picture](pictures/tr_ord_cr.png)
 
