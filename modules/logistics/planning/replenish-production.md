@@ -39,7 +39,7 @@ Suggested replenishment requires specific values for certain fields in order to 
 
 When done, **save** the product supply.
  
-2.	Create a new work order from the **Production** **->** **Shop Floor** module. 
+2.	Create a new work order from the **Production** **->** **Shop Floor** module or open an existing one. 
 
 ![Picture](pictures/pr_order.png)
 
