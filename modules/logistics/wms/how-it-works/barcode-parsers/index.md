@@ -5,6 +5,6 @@ How the barcode is recognized, how a suitable line is found, and how its executi
 > **_NOTE:_**  The list of the active parsers can be found in the Question mark button in the Scan field of the Order Lines screen in the WMS Worker app. Their order in this list also shows their application order during the barcode reading. Currently, all available parsers are enabled by default. They cannot be disabled and their application order cannot be changed. 
 
 Here is a list of the available parsers:
-* P01 - Product Code
-* P02 - GS1 - Single Product
-* P03 - GS1 - SSCC
+* [P01: Product Code](p01.md)
+* [P02: GS1 - Single Product](p02.md)
+* [P03: GS1 - SSCC](p03.md)
