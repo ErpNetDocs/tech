@@ -1,0 +1,10 @@
+## Barcode Parsers
+Barcode parsers are used to read and interpret different barcodes. Their algorithm analyzes the barcodes and extracts the encoded data, which can then be used in the WMS Worker app to easily find a suitable warehouse order line and start its execution.
+How the barcode is recognized, how a suitable line is found, and how its execution is started depends on the action of the particular parser. 
+
+> **_NOTE:_**  The list of the active parsers can be found in the Question mark button in the Scan field of the Order Lines screen in the WMS Worker app. Their order in this list also shows their application order during the barcode reading. Currently, all available parsers are enabled by default. They cannot be disabled and their application order cannot be changed. 
+
+Here is a list of the available parsers:
+* P01 - Product Code
+* P02 - GS1 - Single Product
+* P03 - GS1 - SSCC
