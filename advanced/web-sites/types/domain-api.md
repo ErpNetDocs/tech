@@ -26,23 +26,14 @@ The limits above are the default ones. You may specify others in the related web
 
 ![Web-site-settings](../pictures/website-settings.png)
 
-Long story short:
-
-If you need an one-liner, just to set up the rate limits:
-
-`{"RateLimits": {"SessionRpm": 100, "SessionConcurrency": 1, "SessionTransactions": 1}}`
-
-_*note the surrounding brackets_
-
----
 
 The rate limits settings are expressed by a JSON object in the following format:
 ```JSON
 {
   "RateLimits": {
-    "SessionRpm": <requests-per-minute>,
-    "SessionConcurrency": <concurrent-requests>,
-    "SessionTransactions": <number-of-simultaneously-open-transactions>
+    "SessionRpm": <max-requests-per-minute-per-session>,
+    "SessionConcurrentRequests": <max-concurrent-requests-per-session>,
+    "SessionConcurrentTransactions": <number-of-simultaneously-open-transactions-per-session>
   }
 }
 ```
@@ -50,14 +41,11 @@ The rate limits settings are expressed by a JSON object in the following format:
 Here's what it looks like as part of a complete web site configuration:
 ```JSON
 {
-  "Setting1": 1,
-  "Setting2": 2,
   "RateLimits": {
-    "SessionRpm": <requests-per-minute>,
-    "SessionConcurrency": <concurrent-requests>,
-    "SessionTransactions": <number-of-simultaneously-open-transactions>
-  },
-  "AnotherSetting": "test"
+    "SessionRpm": 600,
+    "SessionConcurrentRequests": 1,
+    "SessionConcurrentTransactions": 1
+  }
 }
 ```
 
