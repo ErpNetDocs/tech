@@ -37,16 +37,18 @@ _*note the surrounding brackets_
 ---
 
 The rate limits settings are expressed by a JSON object in the following format:
-```
-"RateLimits": {
-  "SessionRpm": <requests-per-minute>,
-  "SessionConcurrency": <concurrent-requests>,
-  "SessionTransactions": <number-of-simultaneously-open-transactions>
+```JSON
+{
+  "RateLimits": {
+    "SessionRpm": <requests-per-minute>,
+    "SessionConcurrency": <concurrent-requests>,
+    "SessionTransactions": <number-of-simultaneously-open-transactions>
+  }
 }
 ```
 
 Here's what it looks like as part of a complete web site configuration:
-```
+```JSON
 {
   "Setting1": 1,
   "Setting2": 2,
