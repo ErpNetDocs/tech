@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>P01: Product Code parser | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="P01: Product Code parser | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../toc.html">
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
     
-    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:rel" content="../../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
-                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,25 +77,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h2 id="p01-product-code-parser">P01: Product Code parser</h2>
 
-<ul>
-<li><a href="barcode-parsers/index.html">Barcode Parsers</a></li>
-<li><a href="task-types/comp-dispatch.html">Component Dispatch task type</a></li>
-<li><a href="task-types/comp-receive.html">Component Receive task type</a></li>
-<li><a href="task-types/count.html">Count task type</a></li>
-<li><a href="task-types/dekit.html">Dekit task type</a></li>
-<li><a href="task-types/dispatch.html">Dispatch task type</a></li>
-<li><a href="task-types/kit.html">Kit task type</a></li>
-<li><a href="task-types/move.html">Move task type</a></li>
-<li><a href="barcode-parsers/p01.html">P01: Product Code parser</a></li>
-<li><a href="barcode-parsers/p02.html">P02: GS1 - Single Product parser</a></li>
-<li><a href="barcode-parsers/p03.html">P03: GS1 – SSCC parser</a></li>
-<li><a href="task-types/receive.html">Receive task type</a></li>
-<li><a href="add-reconciliation-lines.html">Reconcile the results from the WMS module</a></li>
-<li><a href="task-types/index.html">Task types</a></li>
-<li><a href="task-types/user-task.html">User task - task type</a></li>
-<li><a href="warehouse-order-execution.html">Warehouse order execution</a></li>
-</ul>
+<p>This parser recognizes product part numbers and additional product codes.
+Once triggered, the parser tries to find a product with the string specified in the barcode. If it finds a product, then it searches for an unexecuted Warehouse Order Line with this product. If there is a such line – it starts its execution. If not – it moves to the next active parser.</p>
+<h3 id="a-detailed-description-of-the-parsers-action">A detailed description of the parser’s action:</h3>
+<ol>
+<li>Try to find a product with the same Part Number as the scanned barcode. If the search is successful, then go to step 3. Else go to step 2.</li>
+<li>Try to find a Product with the same additional Product Code as the scanned barcode. If the search is successful, then go to step 3. Else go to step 5.</li>
+<li>Search for an unexecuted Warehouse Order Line with the recognized product. If there is a such line, go to step 4. Else go to step 5.</li>
+<li>Automatically start the line execution of the best matching line.</li>
+<li>Move to the next active parser.</li>
+</ol>
 </article>
           </div>
           
@@ -104,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/barcode-parsers/p01.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -130,8 +123,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
   </body>
 </html>

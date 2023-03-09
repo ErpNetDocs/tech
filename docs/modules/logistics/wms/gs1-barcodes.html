@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Domain API | ERP.net Tech Docs </title>
+    <title>GS1 Barcodes | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Domain API | ERP.net Tech Docs ">
+    <meta name="title" content="GS1 Barcodes | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,45 +76,15 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="wst-DOMAINAPI">
-<h1 id="domain-api">Domain API</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="gs1-barcodes">GS1 Barcodes</h2>
 
-<p>The web site provides Domain API to the ERP.net domain model using the <a href="https://www.odata.org/">OData (Open Data Protocol)</a> standard. Domain API allows for the creation and consumption of data, in a RESTful manner and provides an opportunity for external applications to interact with the domain model.</p>
-<p>It enables external applications to access the domain model by querying, filtering, and updating the data through standard HTTP requests. Domain API provides a convenient and standardized way for external applications to interact with the domain model while also ensuring the security of the data being accessed.</p>
-<p>Domain API is secured using <a href="https://oauth.net/2/">OAuth 2.0</a>, which provides an industry-standard for authorization.</p>
-<h2 id="rate-limits">Rate limits</h2>
-<p>HTTP response code <code>429 - Too Many Requests</code> is returned if limits are exceeded.</p>
-<p>There're several limiters in the API, including:</p>
+<p>GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.</p>
+<p>ERP.net supports GS1 Barcodes and recognizes a number of GS1 identifiers using different <a href="how-it-works/barcode-parsers/index.html">Barcode Parsers</a>.</p>
+<p>For more information, see the documentation of the specific parser:</p>
 <ul>
-<li>600 requests per minute per session.</li>
-<li>No concurrent requests in a single session.</li>
-<li>No more than 1 open transaction at the same time in a single session.</li>
-</ul>
-<h3 id="configuring-rate-limits">Configuring rate limits</h3>
-<p>The limits above are the default ones. You may specify others in the related web site definition.</p>
-<p><img src="../pictures/website-settings.png" alt="Web-site-settings"></p>
-<p>The rate limits settings are expressed by a JSON object in the following format:</p>
-<pre><code class="lang-JSON">{
-  &quot;RateLimits&quot;: {
-    &quot;SessionRpm&quot;: &lt;max-requests-per-minute-per-session&gt;,
-    &quot;SessionConcurrentRequests&quot;: &lt;max-concurrent-requests-per-session&gt;,
-    &quot;SessionConcurrentTransactions&quot;: &lt;number-of-simultaneously-open-transactions-per-session&gt;
-  }
-}
-</code></pre>
-<p>Here's what it looks like as part of a complete web site configuration:</p>
-<pre><code class="lang-JSON">{
-  &quot;RateLimits&quot;: {
-    &quot;SessionRpm&quot;: 600,
-    &quot;SessionConcurrentRequests&quot;: 1,
-    &quot;SessionConcurrentTransactions&quot;: 1
-  }
-}
-</code></pre>
-<hr>
-<h2 id="see-more">See more</h2>
-<ul>
-<li><strong><a href="https://docs.erp.net/dev/domain-api/index.html">Domain API docs</a></strong></li>
+<li><a href="how-it-works/barcode-parsers/p02.html">P02: GS1 - Single Product</a></li>
+<li><a href="how-it-works/barcode-parsers/p03.html">P03: GS1 - SSCC</a></li>
 </ul>
 </article>
           </div>
@@ -124,7 +94,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/web-sites/types/domain-api.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/gs1-barcodes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -2312,7 +2312,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/web-sites/types/domain-api.html",
-          "hash": "ZzD6XT1TATew+OKwTkp4IA=="
+          "hash": "qpKhuFvu0wx6taeW36C/QA=="
         }
       },
       "is_incremental": false,
@@ -8637,6 +8637,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/gs1-barcodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/gs1-barcodes.html",
+          "hash": "U0q818b4/TWLOI3E+Cj1eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.md",
       "output": {
         ".html": {
@@ -8648,12 +8660,63 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/index.html",
+          "hash": "84FaGgcTDp2ciKLeuUitAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p01.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p01.html",
+          "hash": "nuJhWv2kS3q+7V4XxGO0yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p02.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p02.html",
+          "hash": "VYtICULH4U5k/Jmquwi63A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p03.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/p03.html",
+          "hash": "W4CtPiVrd5ozMQUuxj9B+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-it-works/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "+76/wyOquo+8/vk++adL5Q=="
+          "hash": "B0KA0VjXYCp3setgySV3yQ=="
         }
       },
       "is_incremental": false,
@@ -9496,7 +9559,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "1WXslEQM036L39I5unwDXg=="
+          "hash": "88rtQhlcPPtLRonzn96TKA=="
         }
       },
       "is_incremental": false,

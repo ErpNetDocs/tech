@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>P02: GS1 - Single Product parser | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="P02: GS1 - Single Product parser | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="p02-gs1---single-product-parser">P02: GS1 - Single Product parser</h2>
+
+<p>This parser uses some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.</p>
+<p>A list of the identifiers that are recognized by this parser:
+| Identifier | Description | Length |
+| ---------- | ----------- | ------ |
+| (01) | Global Trade Item Number (GTIN) | 14 |
+| (02) | Global Trade Item Number (GTIN) of contained trade items | 14 |
+| (10) | Lot number | variable, up to 20 |
+| (17) | Expiration date (YYMMDD) | 6 |
+| (20) | Product variant | 2 |
+| (21) | Serial number | variable, up to 20 |
+| (37) | Count of trade items | variable, up to 8 |</p>
+<p>Once triggered, the parser tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line. If there is missing information, then it will show the respective screens so the user can fill it in.
+If there is no matching line – it throws an error message and stops the execution.</p>
+<h3 id="specifics-and-optimizations-during-the-line-execution">Specifics and optimizations during the line execution:</h3>
+<ul>
+<li>If there is a specified Location in the line and there is no warehouse policy that requires scanning it – then the line is executed automatically with the specified location.</li>
+<li>If the barcode contains a Lot information, the Lot is not yet created into the database and the matching line is with Receive or Component Receive task type - then the Lot is automatically created by the system. If there is an Expiry Date in the barcode, then this information is written into the new Lot definition as well.</li>
+<li>If the barcode contains Serial Number information, the Serial Number is not yet created into the database and the matching line is with Receive or Component Receive task type - then the Serial Number is automatically created by the system.</li>
+<li>If the barcode contains information about the Count of trade items, then the line is executed with the specified Quantity in it. As a Measurement Unit is considered the Default Measurement System of the Coding System that was used to recognize the product. If none, then the Default Measurement Unit of the Product is taken.</li>
+</ul>
+<h3 id="a-detailed-description-of-the-parsers-action">A detailed description of the parser’s action:</h3>
+<ol>
+<li>If the barcode starts with “(“ OR  it starts with “01 or 02 and the scanned barcode length is = 16 symbols”, then go to step 2. Else, go to step 10.</li>
+<li>Brake the barcode into segments. If the barcode starts with “(“ it is broken down directly, else it is parsed to a barcode with () segments. The recognized identifiers are specified in the table above, all other identifiers are ignored. Go to step 3.</li>
+<li>Make segment validations.</li>
+</ol>
+<ul>
+<li>The barcode must contain one of the segments (01) or (02)</li>
+<li>It must not contain both segments (01) and (02) at the same time.</li>
+<li>If it contains segment (37) it must contain segment (02) as well
+If all validations are successful, go to step 4. Else, throw an error message and stop.</li>
+</ul>
+<ol start="4">
+<li>Try to find a product with the same Part Number or additional Product Code as the scanned barcode. If the search is unsuccessful, then throw &quot;Product not found.&quot;. Else go to step 5.</li>
+<li>Extract the data from the rest of the recognized identifiers – for Lot, Expiry Date, Serial Number…. Go to step 6.</li>
+<li>Validate the extracted data</li>
+</ol>
+<ul>
+<li>If it contains a Lot segment. Check if there is a Lot with this Lot Number for the particular Product. If no Lot is found, but the line task type of the line is Receive or Component Receive, then the Lot will be created automatically during the line Execution. Else, throw &quot;No lot was found for product&quot; and stop.</li>
+<li>If it contains a Variant segment. Check if there is a Variant with this Short Code for the particular Product. If no Variant is found, throw &quot;No variant was found for product&quot; and stop.</li>
+<li>If it contains a Serial Number segment. Check if there is a Serial Number with this Code for the particular Product. If no Serial Number is found but the line task type of the line is Receive or Component Receive, then the Serial Number will be created automatically during the line Execution. Else, throw &quot;No serial was found for product&quot; and stop.
+If all validations are successful, go to step 7.</li>
+</ul>
+<ol start="7">
+<li>Search for an unexecuted Warehouse Order Line that can be fulfilled with the extracted information. If there is a such line, go to step 8. Else, throw &quot;No unexecuted line found that matches the scanned data.&quot; and stop.</li>
+<li>Automatically start the line execution of the best matching line with the data extracted from the barcode.
+If the Warehouse Order Line contains a Location AND the applicable warehouse policy “RequireResourseScan != true”, then the line will be automatically executed with the specified location.
+If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line. If there is missing information, e.g. for Quantity, then it will show the corresponding screens so that the user can fill it in.
+If the barcode contains segment (37) and not all quantity was exhausted by the first line, then start the execution of the next matching line.
+When finished, move to step 9.</li>
+<li>Return to the lines menu.</li>
+<li>Move to the next active parser.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/barcode-parsers/p02.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>
