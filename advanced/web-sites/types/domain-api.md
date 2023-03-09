@@ -18,6 +18,7 @@ HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.
 There're several limiters in the API, including:
 - 600 requests per minute per session.
 - No concurrent requests in a single session.
+- No more than 1 open transaction at the same time in a single session.
 
 ### Configuring rate limits
 
@@ -29,7 +30,7 @@ Long story short:
 
 If you need an one-liner, just to set up the rate limits:
 
-`{"RateLimits": {"SessionRpm": 100, "SessionConcurrency": 1}}`
+`{"RateLimits": {"SessionRpm": 100, "SessionConcurrency": 1, "SessionTransactions": 1}}`
 
 _*note the surrounding brackets_
 
@@ -39,7 +40,8 @@ The rate limits settings are expressed by a JSON object in the following format:
 ```
 "RateLimits": {
   "SessionRpm": <requests-per-minute>,
-  "SessionConcurrency": <concurrent-requests>
+  "SessionConcurrency": <concurrent-requests>,
+  "SessionTransactions": <number-of-simultaneously-open-transactions>
 }
 ```
 
@@ -50,7 +52,8 @@ Here's what it looks like as part of a complete web site configuration:
   "Setting2": 2,
   "RateLimits": {
     "SessionRpm": <requests-per-minute>,
-    "SessionConcurrency": <concurrent-requests>
+    "SessionConcurrency": <concurrent-requests>,
+    "SessionTransactions": <number-of-simultaneously-open-transactions>
   },
   "AnotherSetting": "test"
 }
