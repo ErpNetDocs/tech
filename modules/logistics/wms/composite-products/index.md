@@ -19,7 +19,8 @@ This is very common in the furniture industry, where a single wardrobe can be st
 ## How to create Composite Products?
 **Composite Products** are ordinary products that have defined components for them. In other words, when there is at least one active Composite Product Component that is defined for an ordinary product, then this Product is considered a Composite Product. 
 
-> **_NOTE:_** Only products which are not using Variable Measurement Ratios can be defined as composite products.
+> [!Note]
+> Only products which are not using Variable Measurement Ratios can be defined as composite products.
 
 **Component Product Components** are ordinary products as well. They become components once they are set as a Composite Product Component for another product. 
 
