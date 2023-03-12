@@ -12,7 +12,7 @@ The control levels are set up using the "Kitting Controlling Level" and "Dekitti
 
 ![Level Policies](pictures/level-policies.png)
 
-If no policy is specified or applicable for the particular line, then the default level is 0.
+If no policy is specified or applicable for the particular line, then the default level is 50.
 
 The control is performed during the order execution in the WMS Worker App (link) and more specifically during the execution of the Kit/Dekit lines of the component product. It could be fully automated or might be performed by a person in accordance with the needs of the company and it depends on the specified level of control.
 
