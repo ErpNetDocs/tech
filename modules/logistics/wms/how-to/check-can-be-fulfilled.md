@@ -18,7 +18,8 @@ Returns the sum of the Available Quantity Base for this line. It takes into acco
 ### Calculated attributes expression
 Here is a list with the calculated attribute expressions. Of course, еach attribute can be modified by the implementatior according to the organization's needs.
 
-> **_NOTE:_** You can easily create these attributes in your database by copy-pasting their expression into your database.
+> [!Note]
+> You can easily create these attributes in your database by copy-pasting their expression into your database.
 
 * **"Can Be Fulfilled" attribute**
 
