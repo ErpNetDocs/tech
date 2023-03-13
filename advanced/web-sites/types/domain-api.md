@@ -13,11 +13,11 @@ Domain API is secured using [OAuth 2.0](https://oauth.net/2/), which provides an
 
 ## Rate limits
 
-The rate limits for the Domain API are a set of limits, related to the requests **per each session** that can be made within a specified period. It's used to prevent overloading the Domain API and ensure fair usage for all users (i.e. sessions).
+The rate limits for the Domain API are a set of limits, related to the requests **per each session** that can be made within a specified period. Rate limiting is used to prevent overloading the Domain API and ensure fair usage for all users (i.e. sessions).
 
 ### Types
 
-ERP.net introduces several types rate limits, each targeting a specific use case. All are summarized in the following table and further described in more detail below:
+@@erpnet introduces several types rate limits, each targeting a specific use case. All are summarized in the following table and further described in more detail below:
 
 | Rate limit | Config key | Default value | Error when reached |
 | ----------- | ----------- |
