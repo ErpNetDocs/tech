@@ -283,6 +283,9 @@ references:
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html
+- uid: parcers
+  name: Barcode Parsers
+  href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/promotional-packages/index.html
