@@ -13,12 +13,31 @@ Domain API is secured using [OAuth 2.0](https://oauth.net/2/), which provides an
 
 ## Rate limits
 
-HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.
+The rate limits for the Domain API are a set of limits, related to the requests **per each session** that can be made within a specified period. It's used to prevent overloading the Domain API and ensure fair usage for all users (i.e. sessions).
 
-There're several limiters in the API, including:
-- 600 requests per minute per session.
-- No concurrent requests in a single session.
-- No more than 1 open transaction at the same time in a single session.
+### Types
+
+ERP.net introduces several types rate limits, each targeting a specific use case. All are summarized in the following table and further described in more detail below:
+
+| Rate limit | Config key | Default value | Error when reached |
+| ----------- | ----------- |
+| Requests per minute per session | `SessionRpm` | 600 | 429 - Too Many Requests |
+| Concurrent requests per session | `SessionConcurrentRequests` | 1 | 429 - Too Many Requests |
+| Concurrent transactions per session | `SessionConcurrentTransactions` | 1 | 500 - Internal Server Error |
+
+#### SessionRpm
+
+A session requests per minute rate limit (RPM) is a type of rate limit that restricts the number of API requests made within a single session, measured in minutes. 
+
+The Domain API's session RPM rate limit is set to 600, allowing for up to 600 requests to be made in a one-minute session. Exceeding the limit will result in an HTTP response `429 - Too Many Requests`.
+
+#### SessionConcurrentRequests
+
+Session concurrent requests is a rate limit that restricts the number of concurrent API requests within a single session. The Domain API's limit is 1, allowing only one request at a time during a session. Exceeding the limit will result in an HTTP response `429 - Too Many Requests` until the previous request is completed.
+
+#### SessionConcurrentTransactions
+
+Session concurrent transactions is a rate limit that restricts the number of concurrent API transactions within a session. The Domain API allows only one open transaction at a time during a session. Exceeding the limit will result in an HTTP response `500 - Internal Server Error // You already have an open InMemoryTransaction in this session.` until the previous transaction is open.
 
 ### Configuring rate limits
 
@@ -27,18 +46,8 @@ The limits above are the default ones. You may specify others in the related web
 ![Web-site-settings](../pictures/website-settings.png)
 
 
-The rate limits settings are expressed by a JSON object in the following format:
-```JSON
-{
-  "RateLimits": {
-    "SessionRpm": <max-requests-per-minute-per-session>,
-    "SessionConcurrentRequests": <max-concurrent-requests-per-session>,
-    "SessionConcurrentTransactions": <number-of-simultaneously-open-transactions-per-session>
-  }
-}
-```
+The rate limits settings are expressed by a JSON object in a specific format. Here's what it looks like as part of a complete web site configuration:
 
-Here's what it looks like as part of a complete web site configuration:
 ```JSON
 {
   "RateLimits": {
