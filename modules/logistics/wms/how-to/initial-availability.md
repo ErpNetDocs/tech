@@ -10,7 +10,7 @@ The first function is located in the Managed Warehouse definition.
 
 With it, you can enter availability for the current Warehouse by loading the current availability from an existing Store of the Inventory management module. 
 
-The function loads availability from the selected Store and creates Warehouse Orders the for the corresponding Warehouse. The lines of these Warehouse Orders contain the loaded availability.  Then, they can be reviewed, edited (if necessary), and executed by the second function.
+The function loads availability from the selected Store and creates Warehouse Orders for the corresponding Warehouse. The lines of these Warehouse Orders contain the loaded availability.  Then, they can be reviewed, edited (if necessary), and executed by the second function.
 
 To begin, click on the **UI Functions button** and select **Load initial available balance**.
 
