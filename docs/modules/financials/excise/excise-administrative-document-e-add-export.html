@@ -317,6 +317,18 @@
 <td>TransportationCarrier.Supplier.Company.PartyName</td>
 </tr>
 <tr>
+<td>TransporterCertificateNumber</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateNumber</td>
+</tr>
+<tr>
+<td>CertificateDateOfIssue</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateDateOfIssue</td>
+</tr>
+<tr>
+<td>CertificateExperationDate</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateExperationDate</td>
+</tr>
+<tr>
 <td></td>
 <td></td>
 </tr>
@@ -354,31 +366,31 @@
 </tr>
 <tr>
 <td>Country</td>
-<td>OtherParty.@Exc_Country</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Country, OtherParty.@Exc_Country)</td>
 </tr>
 <tr>
 <td>Region</td>
-<td>OtherParty.@Exc_Region</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Region, OtherParty.@Exc_Region)</td>
 </tr>
 <tr>
 <td>Municipality</td>
-<td>OtherParty.@Exc_Municipality</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Municipality, OtherParty.@Exc_Municipality)</td>
 </tr>
 <tr>
 <td>PostCode</td>
-<td>OtherParty.ContactMechanism(ContactMechanismType=P)</td>
+<td>If(DeliveryParty != Null, DeliveryParty.ContactMechanism(ContactMechanismType=P), OtherParty.ContactMechanism(ContactMechanismType=P))</td>
 </tr>
 <tr>
 <td>City</td>
-<td>OtherParty.@Exc_City</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_City, OtherParty.@Exc_City)</td>
 </tr>
 <tr>
 <td>District</td>
-<td>OtherParty.@Exc_District</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_District, OtherParty.@Exc_District)</td>
 </tr>
 <tr>
 <td>Street</td>
-<td>OtherParty.@Exc_Street</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Street, OtherParty.@Exc_Street)</td>
 </tr>
 <tr>
 <td></td>
