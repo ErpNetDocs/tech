@@ -79,8 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="p03-gs1--sscc-parser">P03: GS1 – SSCC parser</h2>
 
-<p>This parser is used for executing the Warehouse Order lines with the contents of a Logistic Unit (LU). The LU recognition is performed using the GS1 SSCC code and the (01) identifier.</p>
-<p>Once triggered, the parser looks for an active LU with the same Serial Code as the scanned barcode. If there is such LU the parser tries to execute the Warehouse Orders lines with the content of the scanned LU.</p>
+<p>This parser is used for executing the Warehouse Order lines with the contents of a Logistic Unit (LU).</p>
+<p>It is especially useful during the receiving process when the information of the LU's content is pre-received in an Advance Ship Notice (ASN). This way you can create the LU's definitions with their SSCC codes and content information and advance. This would speed up the receiving process significantly, as the worker only needs to scan the barcode upon receipt and the program will automatically find and execute the appropriate order lines.</p>
+<p>The LU recognition is performed using the GS1 SSCC code and the (00) identifier. Once triggered, the parser looks for an active LU with the same Serial Code as the scanned barcode. If there is such LU the parser tries to automatically execute the Warehouse Orders lines with the content of the scanned LU.</p>
 <h3 id="specifics-and-optimizations-during-the-line-execution">Specifics and optimizations during the line execution:</h3>
 <ul>
 <li>If the lines' task type is Receive, then check if the LU is not yet received. This check prevents us from mistakenly scanning the same LU more than once during the receiving process.</li>

@@ -83,62 +83,13 @@
 <p>It enables external applications to access the domain model by querying, filtering, and updating the data through standard HTTP requests. Domain API provides a convenient and standardized way for external applications to interact with the domain model while also ensuring the security of the data being accessed.</p>
 <p>Domain API is secured using <a href="https://oauth.net/2/">OAuth 2.0</a>, which provides an industry-standard for authorization.</p>
 <h2 id="rate-limits">Rate limits</h2>
-<p>The rate limits for the Domain API are a set of limits, related to the requests <strong>per each session</strong> that can be made within a specified period. Rate limiting is used to prevent overloading the Domain API and ensure fair usage for all users (i.e. sessions).</p>
-<h3 id="types">Types</h3>
-<p>ERP.net introduces several types rate limits, each targeting a specific use case. All are summarized in the following table and further described in more detail below:</p>
-<table>
-<thead>
-<tr>
-<th>Rate limit</th>
-<th>Config key</th>
-<th>Default value</th>
-<th>Error when reached</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Requests per minute per session</td>
-<td><code>SessionRpm</code></td>
-<td>600</td>
-<td>429 - Too Many Requests</td>
-</tr>
-<tr>
-<td>Concurrent requests per session</td>
-<td><code>SessionConcurrentRequests</code></td>
-<td>1</td>
-<td>429 - Too Many Requests</td>
-</tr>
-<tr>
-<td>Concurrent transactions per session</td>
-<td><code>SessionConcurrentTransactions</code></td>
-<td>1</td>
-<td>500 - Internal Server Error</td>
-</tr>
-</tbody>
-</table>
-<h4 id="sessionrpm">SessionRpm</h4>
-<p>A session requests per minute rate limit (RPM) is a type of rate limit that restricts the number of API requests made within a single session, measured in minutes.</p>
-<p>The Domain API's session RPM rate limit is set to 600, allowing for up to 600 requests to be made in a one-minute session. Exceeding the limit will result in an HTTP response <code>429 - Too Many Requests</code>.</p>
-<h4 id="sessionconcurrentrequests">SessionConcurrentRequests</h4>
-<p>Session concurrent requests is a rate limit that restricts the number of concurrent API requests within a single session. The Domain API's limit is 1, allowing only one request at a time during a session. Exceeding the limit will result in an HTTP response <code>429 - Too Many Requests</code> until the previous request is completed.</p>
-<h4 id="sessionconcurrenttransactions">SessionConcurrentTransactions</h4>
-<p>Session concurrent transactions is a rate limit that restricts the number of concurrent API transactions within a session. The Domain API allows only one open transaction at a time during a session. Exceeding the limit will result in an HTTP response <code>500 - Internal Server Error // You already have an open InMemoryTransaction in this session.</code> until the previous transaction is open.</p>
-<h3 id="configuring-rate-limits">Configuring rate limits</h3>
-<p>The limits above are the default ones. You may specify others in the related web site definition.</p>
-<p><img src="../pictures/website-settings.png" alt="Web-site-settings"></p>
-<p>The rate limits settings are expressed by a JSON object in a specific format. Here's what it looks like as part of a complete web site configuration:</p>
-<pre><code class="lang-JSON">{
-  &quot;RateLimits&quot;: {
-    &quot;SessionRpm&quot;: 600,
-    &quot;SessionConcurrentRequests&quot;: 1,
-    &quot;SessionConcurrentTransactions&quot;: 1
-  }
-}
-</code></pre>
+<p>Domain API is subject to rate limiting, which means that the number of requests you can make within a given time period is limited. The rate limit policy for this API includes multiple constraints, such as the maximum number of requests per minute, maximum number of concurrent requests, and so on. If you exceed any of these constraints, your requests may be rejected with an error response.</p>
+<p>For more information, see the separate topic <strong><a href="../rate-limits.html">Rate limits</a></strong>.</p>
 <hr>
 <h2 id="see-more">See more</h2>
 <ul>
 <li><strong><a href="https://docs.erp.net/dev/domain-api/index.html">Domain API docs</a></strong></li>
+<li><strong><a href="../rate-limits.html">Rate limits</a></strong></li>
 </ul>
 </article>
           </div>
