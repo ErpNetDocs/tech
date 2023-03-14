@@ -2,4 +2,5 @@
   href: index.md
 - name: Types
   href: types/toc.yml
-  
+- name: Rate limits  
+  href: rate-limits.md
