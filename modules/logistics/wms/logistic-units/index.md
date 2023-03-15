@@ -20,7 +20,7 @@ The Contents panel holds information about what the content of the logistics uni
 
 ![Logistic unit’s contents](pictures/lu-contents.png)
 
-The Specifications panel contains synthesized information about the Logistic Unit. The database can contain any kind of specification, but most client applications and integrated methods process GS1 specifications (application identifiers). These specifications are usually used when generating Logistic Labels.
+The Specifications panel contains synthesized information about the Logistic Unit. The database can contain any kind of specification, but most client applications and integrated methods process GS1 specifications (application identifiers). These specifications are usually used when generating **[Logistic Labels](logistic-labels.md)**.
 
 ![Logistic unit’s specifications](pictures/lu-specifications.png)
 
@@ -55,10 +55,10 @@ The **homogeneous logistic units** contain one type of trade item. This means th
 
 **Example:** *a pallet containing 50 trade item groupings (e.g. boxes)  of shampoo.*
 
-In this case information of GTIN and other trade item information such as Lot, Quantity and , etc. CAN be included in the GS1 barcode and on the logistic label. I.e., for homogeneous logistic units and logistic units that are trade items it is possible to include information about the trade item(s) on the logistic label. This can be useful in situations where no **[Advance Shipping Notice (ASN)](asn.md)** is used or is unavailable and the receiving company is not aware of the content of each specific logistic unit in advance.
+In this case information of GTIN and other trade item information such as Lot, Quantity and , etc. CAN be included in the GS1 barcode and on the **[logistic label](logistic-labels.md)**. I.e., for homogeneous logistic units and logistic units that are trade items it is possible to include information about the trade item(s) on the **[logistic label](logistic-labels.md)**. This can be useful in situations where no **[Advance Shipping Notice (ASN)](asn.md)** is used or is unavailable and the receiving company is not aware of the content of each specific logistic unit in advance.
 
 The **heterogeneous logistic units** contain different types of trade items at the highest level of packaging that are identified with different GTINs. 
 
 **Example:** *a pallet containing 30 standard trade item groupings (e.g. boxes) of shampoo and 20 standard trade item groupings (e.g. boxes) of conditioner.*
 
-In this case information of GTIN and other trade item information such as Lot, Quantity and , etc. CANNOT be included in the GS1 barcode and on the logistic label. I.e., for heterogeneous logistic units it is not possible to include trade item information on the logistic label and therefore the use of advance exchange of and **[Advance Shipping Notice (ASN)](asn.md)** is strongly encouraged. This will allow the exchange of data linked with the SSCC and the logistic units’ content in advance. This way the receiving company can create the logistic units definitions before the shipment arrival, which will allow receiving the unit with a single scan of its SSCC code (for more info, see [GS1 – SSCC barcode parser](xref:P03)). 
+In this case information of GTIN and other trade item information such as Lot, Quantity and , etc. CANNOT be included in the GS1 barcode and on the **[logistic label](logistic-labels.md)**. I.e., for heterogeneous logistic units it is not possible to include trade item information on the logistic label and therefore the use of advance exchange of and **[Advance Shipping Notice (ASN)](asn.md)** is strongly encouraged. This will allow the exchange of data linked with the SSCC and the logistic units’ content in advance. This way the receiving company can create the logistic units definitions before the shipment arrival, which will allow receiving the unit with a single scan of its SSCC code (for more info, see [GS1 – SSCC barcode parser](xref:P03)). 
