@@ -16,6 +16,6 @@ If the [Logistic Unit](index.md) is **homogeneous** (for more information, see [
 
 If the [Logistic Unit](index.md) is **heterogeneous** (for more information, see [Logistic units types](index.md#logistic-units-types)) and therefore contains different types of trade items that are identified with different GTINs, then it is NOT possible to include trade item information on the logistic label. In these cases the data about the expected Logistic Units contents is exchanged prior the shipment arrival using an **[Advance Shipping Notice (ASN)](asn.md)**. 
 
-The labels are typically printed on adhesive labels that are affixed to **[Logistic Unit](index.md)**, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.
+In @@name, the **logistic labels** are created and printed using the standard reports functionality. The labels are typically printed on adhesive labels that are affixed to **[Logistic Unit](index.md)**, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.
 
 By using standardized **logistic labels**, companies can improve the efficiency and accuracy of their supply chain operations, reduce the risk of errors and delays, and improve customer satisfaction by ensuring that the right products are delivered on time.
