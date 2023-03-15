@@ -6,7 +6,7 @@ First warehouse workers are performing the actual counting of the Warehouse Avai
 
 The next step is applying the results of the reconciliation made in the WMS module to the Inventory module and its avalability using the Reconcile document and the **Add the reconciliation lines from the WMS module** UI function.
 
-## Reconcile the availability in the Warehouse Location
+## Reconcile the availability in the Warehouse Locations
 The first step is to reconcile the availability in the desired Warehouse Location/s.
 
 This step is performed by the warehouse workers that count the availability in the chosen warehouse location/s using their handheld devices and the **[Reconcile menu](xref:reconcile-menu) the [WMS Worker](xref:wms-worker) mobile app**. 
