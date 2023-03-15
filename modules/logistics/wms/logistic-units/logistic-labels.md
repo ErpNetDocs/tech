@@ -8,7 +8,7 @@ uid: logistic-labels
 **The GS1 logistic label consists of three sections**:
 -	**The top section** of the label contains information in free format that can be used by the label-making company for various purposes.
 -	**The middle section** contains the encoded data in readable text format, in accordance with GS1 Standards.
--	**The last section** contains the barcode symbols. For the encoding of the information are used **[GS1 barcode](gs1-barcodes.md)** identifiers.
+-	**The last section** contains the barcode symbols. For the encoding of the information are used **[GS1 barcode](/modules/logistics/wms/gs1-barcodes.md)** identifiers.
 
 ![Logistic Label](pictures/logistic-label.png)
 
