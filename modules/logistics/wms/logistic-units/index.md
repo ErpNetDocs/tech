@@ -10,7 +10,7 @@ Logistic units can come in many different forms, including pallets, containers, 
 In the context of logistics and warehousing, logistic units play an important role in the efficient movement of goods through the supply chain. By using standard units, companies can ensure that products are packed and transported in a consistent and predictable way. This helps to reduce the risk of damage or loss during transit, and it also makes it easier to track and manage inventory as it moves through different stages of the supply chain.
 
 ## Logistic unit’s definition
-Logistic Units definition in ERP.net contains important information about the unit’s serial number, type, weight, its contents, and specifications.
+Logistic Units definition in @@name contains important information about the unit’s serial number, type, weight, its contents, and specifications.
 
 ![Logistic unit’s definition](pictures/lu-definition.png)
 
@@ -39,10 +39,10 @@ Example: **(00) 0 9123456 000000009 5**
 
 - **(00) is the Application Identifier (AI)**. It is not a part of the 18-digit code. Therefore, it is not included in the code in the SSCC specification in the logistic unit’s definition. The leading 00 still should be included in the Serial Number field in order to be able to search in the LU drop down lists by scanning the SSCC barcode.
 - **0 **is the Extension Digit**. It can take values from 0 to 9. Its determined by company generating the logistics label and serves to increase the capacity of the Serial Reference within the SSCC. Currently, ERP.net simply sets “0” as a constant.
-- **9123456 is the GS1 Company Prefix**. This is a globally unique number issued to a GS1 member company. It is assigned and provided to the company by the GS1 National Organization. The company prefix gives uniqueness to the generated SSCC, but does not indicate the origin of the goods. The prefix can be of different lengths, depending on the capacity of the prefixes offered by the relevant GS1 National Organization. In ERP.net, the GS1 Company Prefix is specified in the “GS1 SSCC Company Prefix” warehouse policy.
+- **9123456 is the GS1 Company Prefix**. This is a globally unique number issued to a GS1 member company. It is assigned and provided to the company by the GS1 National Organization. The company prefix gives uniqueness to the generated SSCC, but does not indicate the origin of the goods. The prefix can be of different lengths, depending on the capacity of the prefixes offered by the relevant GS1 National Organization. In @@name the GS1 Company Prefix is specified in the “GS1 SSCC Company Prefix” warehouse policy.
 - **000000009 is a Serial Reference**. This is a serial number that is assigned by the company that has created the logistics unit. The reference number has the function of a sequence counter: for example 0000001, 0000002, 0000003,.....0000010, 0000011........9999999.
 Its length varies depending on the length of the GS1 company prefix and is calculated as a function of it: (Extension digit + GS1 Company Prefix + Serial Reference) = 17 digits
-In ERP.net, the Serial Reference is specified in the “GS1 SSCC Next Serial” warehouse policy.
+In @@name the Serial Reference is specified in the “GS1 SSCC Next Serial” warehouse policy.
 -  **5 is a Check Digit**. It is a one-digit number used for data integrity. It is calculated automatically by ERP.net when generating the SSCC code.
 
 ## Logistic units types
