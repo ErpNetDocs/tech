@@ -5,6 +5,11 @@
   topicHref: how-to/index.md
 - name: How it works
   href: how-it-works/toc.yml
+- name: Logistic Units
+  href: logistic-units/toc.yml
+  topicHref: logistic-units/index.md
+- name: GS1 Barcodes
+  href: gs1-barcodes.md
 - name: Composite products
   href: composite-products/toc.yml
   topicHref: composite-products/index.md
