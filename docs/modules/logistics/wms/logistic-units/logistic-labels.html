@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Logistic Labels | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Logistic Labels | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="logistic-labels">
+<h1 id="logistic-labels">Logistic Labels</h1>
+
+<p><strong>GS1 logistic labels</strong> are standardized labels used to identify and track products throughout the supply chain. GS1 is a global organization that sets standards for product and <strong><a href="index.html">Logistic Units</a></strong> identification and communication, and their logistic labeling standards are widely used in the retail and healthcare industries.</p>
+<p><strong>The GS1 logistic label consists of three sections</strong>:</p>
+<ul>
+<li><strong>The top section</strong> of the label contains information in free format that can be used by the label-making company for various purposes.</li>
+<li><strong>The middle section</strong> contains the encoded data in readable text format, in accordance with GS1 Standards.</li>
+<li><strong>The last section</strong> contains the barcode symbols. For the encoding of the information are used <strong><a href="gs1-barcodes.md">GS1 barcode</a></strong> identifiers.</li>
+</ul>
+<p><img src="pictures/logistic-label.png" alt="Logistic Label"></p>
+<p>If the <a href="index.html">Logistic Unit</a> is <strong>homogeneous</strong> (for more information, see <a href="index.html#logistic-units-types">Logistic units types</a>) and therefore contains one type of trade item, in addition to the SSCC code, these labels can include trade item information. This typically includes a Global Trade Item Number (GTIN), which is a unique identifier assigned to each product, as well as other information such as the product description, batch or lot number, and expiration date.</p>
+<p>If the <a href="index.html">Logistic Unit</a> is <strong>heterogeneous</strong> (for more information, see <a href="index.html#logistic-units-types">Logistic units types</a>) and therefore contains different types of trade items that are identified with different GTINs, then it is NOT possible to include trade item information on the logistic label. In these cases the data about the expected Logistic Units contents is exchanged prior the shipment arrival using an <strong><a href="asn.html">Advance Shipping Notice (ASN)</a></strong>.</p>
+<p>In ERP.net, the <strong>logistic labels</strong> are created and printed using the standard reports functionality. The labels are typically printed on adhesive labels that are affixed to <strong><a href="index.html">Logistic Unit</a></strong>, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.</p>
+<p>By using standardized <strong>logistic labels</strong>, companies can improve the efficiency and accuracy of their supply chain operations, reduce the risk of errors and delays, and improve customer satisfaction by ensuring that the right products are delivered on time.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/logistic-labels.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

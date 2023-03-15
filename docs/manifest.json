@@ -8653,7 +8653,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/gs1-barcodes.html",
-          "hash": "U0q818b4/TWLOI3E+Cj1eA=="
+          "hash": "QS8JO1/TLv2RMXstL6cLJQ=="
         }
       },
       "is_incremental": false,
@@ -8680,7 +8680,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/barcode-parsers/index.html",
-          "hash": "mfXdPfl4mMjlj1Viy3NF5Q=="
+          "hash": "WqF1wkL/6MLCQcsNiYXD9A=="
         }
       },
       "is_incremental": false,
@@ -9462,6 +9462,96 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/logistic-units/asn.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/logistic-units/asn.html",
+          "hash": "T+M3K+grjaIejCrh5y3MCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink",
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/logistic-units/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/logistic-units/index.html",
+          "hash": "51CP1o/Yvupxt0vEt+aDYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/logistic-units/logistic-labels.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/logistic-units/logistic-labels.html",
+          "hash": "h0TQ4c1Bzr82znz+OI9nNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/logistic-label.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/logistic-label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/lu-contents.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/lu-contents.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/lu-definition.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/lu-definition.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/lu-specifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/lu-specifications.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/logistics/wms/pictures/WMS.png",
       "output": {
@@ -9559,7 +9649,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "OlaIpra8AGuw5qhzijxGqw=="
+          "hash": "1xlQn/q6z9Xt2YyaASdo+A=="
         }
       },
       "is_incremental": false,

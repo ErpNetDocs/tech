@@ -19,6 +19,9 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: ASN
+  name: Advance Shipping Notice (ASN)
+  href: modules/logistics/wms/logistic-units/asn.html
 - uid: ATP
   name: Available to promise
   href: modules/logistics/planning/available-to-promise/index.html
@@ -265,9 +268,15 @@ references:
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
+- uid: logistic-labels
+  name: Logistic Labels
+  href: modules/logistics/wms/logistic-units/logistic-labels.html
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html
+- uid: LU
+  name: Logistic Units
+  href: modules/logistics/wms/logistic-units/index.html
 - uid: master-detail
   name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
