@@ -34,8 +34,8 @@ Define the **period** on which you want the data to be based (in days), and clic
 
 ![Picture](pictures/reconciliation-period.png)
  
-This will check which Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type   haven’t apllied to the Iventory module using Reconciliation documenys yet, and will create reconciliation lines for them. 
+This will check which Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type haven’t apllied to the Iventory module using Reconciliation documents yet, and will create lines for them. 
 
 ![Picture](pictures/reconciliation-lines.png)
 
-
+Review and edit (if needed) the results i.e. the created renciliation order lines. Once the review is done, you can release the document which will generate Store Transactions for the differences and will update the Inventory Availability.
