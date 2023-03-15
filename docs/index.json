@@ -1694,11 +1694,6 @@
     "title": "GS1 Barcodes | ERP.net Tech Docs",
     "keywords": "GS1 Barcodes GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes. ERP.net supports GS1 Barcodes and recognizes a number of GS1 application identifiers using different Barcode Parsers . For more information, about the supported AI and their implementation, see the documentation of the specific parser: P02: GS1 - Single Product P03: GS1 - SSCC"
   },
-  "modules/logistics/wms/how-it-works/add-reconciliation-lines.html": {
-    "href": "modules/logistics/wms/how-it-works/add-reconciliation-lines.html",
-    "title": "Reconcile the results from the WMS module | ERP.net Tech Docs",
-    "keywords": "Reconcile the results from the WMS module Knowing the exact number of products in a given warehouse location is crucial for keeping order. However, there are often differences between the expected and the actual quantity of a product, which gets caught during reconciliation. In such cases, you need to add reconciliation lines to the main reconciliation document. Note Warehouse locations are reconciled to determine how many products are being stored there. In addition, the difference between expected and actual quantity is calculated as well. Adding reconciliation lines Once differences in product quantity are found, they need to be accounted. For that purpose, you need to use the WMS module . To begin, create a new reconciliation document from the Logistics --> Inventory section. Fill it with the necessary information, including the Default Store in which the reconciliation is done, and save the document. To add reconciliation lines from the WMS module to an existing document, click the play button at the upper-left corner of the screen and then select the Add the reconciliation lines from the WMS module option. This will check exactly which calculations haven’t been accounted yet, and will load lines for manual accounting. Define the period on which you want the data to be based (in days), and click OK . In the Lines section, unaccounted lines with differences in product quantity that occurred during reconciliation will be listed."
-  },
   "modules/logistics/wms/how-it-works/barcode-parsers/index.html": {
     "href": "modules/logistics/wms/how-it-works/barcode-parsers/index.html",
     "title": "Barcode Parsers | ERP.net Tech Docs",
@@ -1722,7 +1717,7 @@
   "modules/logistics/wms/how-it-works/index.html": {
     "href": "modules/logistics/wms/how-it-works/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Barcode Parsers Component Dispatch task type Component Receive task type Count task type Dekit task type Dispatch task type Kit task type Move task type P01: Product Code parser P02: GS1 - Single Product parser P03: GS1 – SSCC parser Receive task type Reconcile the results from the WMS module Task types User task - task type"
+    "keywords": "Barcode Parsers Component Dispatch task type Component Receive task type Count task type Dekit task type Dispatch task type Kit task type Move task type P01: Product Code parser P02: GS1 - Single Product parser P03: GS1 – SSCC parser Receive task type Task types User task - task type"
   },
   "modules/logistics/wms/how-it-works/task-types/comp-dispatch.html": {
     "href": "modules/logistics/wms/how-it-works/task-types/comp-dispatch.html",
@@ -1792,7 +1787,7 @@
   "modules/logistics/wms/how-to/index.html": {
     "href": "modules/logistics/wms/how-to/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability How to execute order lines? Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
+    "keywords": "Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
   },
   "modules/logistics/wms/how-to/initial-availability.html": {
     "href": "modules/logistics/wms/how-to/initial-availability.html",
@@ -1803,6 +1798,11 @@
     "href": "modules/logistics/wms/how-to/pictures/index.html",
     "title": "| ERP.net Tech Docs",
     "keywords": ""
+  },
+  "modules/logistics/wms/how-to/reconcile.html": {
+    "href": "modules/logistics/wms/how-to/reconcile.html",
+    "title": "Reconcile | ERP.net Tech Docs",
+    "keywords": "Reconcile The reconciliation process in name is performed in two steps. First warehouse workers are performing the actual counting of the Warehouse Availability in the Warehouse Locations using the WMS Worker app . The next step is applying the results of the reconciliation made in the WMS module to the Inventory module and its avalability using the Reconcile document and the Add the reconciliation lines from the WMS module UI function. Reconcile the availability in the Warehouse Locations The first step is to reconcile the availability in the desired Warehouse Location/s. This step is performed by the warehouse workers that count the availability in the chosen warehouse location/s using their handheld devices and the Reconcile menu the WMS Worker mobile app . As a result, the app generates Warehouse Transactions with Count task type that adjust the warehouse availability according to the differences that were found during the reconciliation. The Warehouse Availability in this/these Location/s is now correct, but we still need to update the Availability in the Inventory module. Update the availability in the Inventory Module The next step is to update the Inventory Availability. This is performed using the Add the reconciliation lines from the WMS module UI function that can be found in the Reconciliation document’s definition. The functions loads all Count Warehouse Transactions that were now yet applied to the Inventory module and creates Reconciliation lines for them. There, these results can be reviewed, edited (if necessary), and applied to the inventory availability by releasing the Reconcile document and generating Store Transactions. To begin, create a new Reconciliation document from the Logistics --> Inventory section. Fill it with the necessary information, including the Default Store in which the reconciliation is done, and Save the document. To add reconciliation lines from the WMS module to an existing document, click the UI Functions button at the upper-left corner of the screen and then select the Add the reconciliation lines from the WMS module option. Define the period on which you want the data to be based (in days), and click OK . This will check which Warehouse Transactions with Count task type haven’t apllied to the Iventory module using Reconciliation documents yet, and will create lines for them. Review and edit (if needed) the results i.e. the created renciliation order lines. Once the review is done, you can release the document which will generate Store Transactions for the differences and will update the Inventory Availability."
   },
   "modules/logistics/wms/how-to/setup-warehouse/index.html": {
     "href": "modules/logistics/wms/how-to/setup-warehouse/index.html",

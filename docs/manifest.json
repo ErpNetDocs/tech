@@ -5375,6 +5375,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/logistic-label.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/logistic-label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-contents.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-contents.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-definition.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-definition.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-specifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/lu-specifications.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/pictures/WMS.png",
       "output": {
         "resource": {
@@ -8660,18 +8704,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-it-works/add-reconciliation-lines.html",
-          "hash": "ypTXZysoHIU3/V91s5iMxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -8728,29 +8760,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "iPxD+rdwoXm8PFZNTaorBw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/create-reconciliation.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/create-reconciliation.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/default-store.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/default-store.png"
+          "hash": "SEjjd07DIap51mZKbupkFA=="
         }
       },
       "is_incremental": false,
@@ -8839,39 +8849,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/orders.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-lines.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-period.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-period.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-play.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-it-works/pictures/reconciliation-play.png"
         }
       },
       "is_incremental": false,
@@ -9145,7 +9122,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "QzoPZMAi1NMIJqIJgPmaZA=="
+          "hash": "1SjYuSXtKjuEubfXeWKZtg=="
         }
       },
       "is_incremental": false,
@@ -9169,6 +9146,28 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/button-ok.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/create-reconciliation.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/create-reconciliation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/default-store.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/default-store.png"
         }
       },
       "is_incremental": false,
@@ -9331,6 +9330,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/reconcile-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/reconcile-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-period.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-period.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-play.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/reconciliation-play.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/release-document.png",
       "output": {
         "resource": {
@@ -9368,6 +9411,21 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/reconcile.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/reconcile.html",
+          "hash": "KSyTO++3RCjzzfsujbjXag=="
         }
       },
       "is_incremental": false,
@@ -9649,7 +9707,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "1xlQn/q6z9Xt2YyaASdo+A=="
+          "hash": "y157PaPJJMpT9MZbYkkXFA=="
         }
       },
       "is_incremental": false,
