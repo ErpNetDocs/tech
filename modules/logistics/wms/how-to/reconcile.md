@@ -9,7 +9,11 @@ The next step is applying the results of the reconciliation made in the WMS modu
 ## Reconcile the availability in the Warehouse Location
 The first step is to reconcile the availability in the desired Warehouse Location/s.
 
-This step is performed by the warehouse workers that count the availability in the chosen warehouse location/s using their handheld devices and the [Reconcile menu](xref:reconcile-menu) of the mobile app. As a result, the app generates Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type that adjust the warehouse availability according to the differences that were found during the reconciliation.
+This step is performed by the warehouse workers that count the availability in the chosen warehouse location/s using their handheld devices and the [Reconcile menu](xref:reconcile-menu) of the mobile app. 
+
+![Picture](pictures/reconcile-menu.png)
+
+As a result, the app generates Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type that adjust the warehouse availability according to the differences that were found during the reconciliation.
 
 The Warehouse Availability in this/these Location/s is now correct, but we still need to update the Availability in the Inventory module.
 
