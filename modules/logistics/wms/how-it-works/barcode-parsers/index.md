@@ -2,7 +2,7 @@
 uid: parcers
 ---
 
-## Barcode Parsers
+# Barcode Parsers
 Barcode parsers are used to read and interpret different barcodes by the Scan field in the Order Lines menu in the [WMS Worker](xref:wms-worker) app. 
 
 Their algorithm analyzes the barcodes and extracts the encoded data in them. The extracted data is then used by the [WMS Worker](xref:wms-worker) app to easily find a suitable Warehouse Order Line and start its execution.
