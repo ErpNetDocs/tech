@@ -3,9 +3,9 @@ uid: LU
 ---
 
 # Logistic Units
-Logistic units are physical objects or containers that are used to transport goods or products from one location to another. These units are typically standardized and can be handled and transported easily by machinery such as forklifts or conveyor belts.
+**Logistic Units** are physical objects or containers that are used to transport goods or products from one location to another. These units are typically standardized and can be handled and transported easily by machinery such as forklifts or conveyor belts.
 
-Logistic units can come in many different forms, including pallets, containers, and boxes. They are designed to hold a specific amount of products or goods, and their size and shape are usually determined by the requirements of the transportation mode or the storage facility.
+**Logistic Units** can come in many different forms, including pallets, containers, and boxes. They are designed to hold a specific amount of products or goods, and their size and shape are usually determined by the requirements of the transportation mode or the storage facility.
 
 In the context of logistics and warehousing, logistic units play an important role in the efficient movement of goods through the supply chain. By using standard units, companies can ensure that products are packed and transported in a consistent and predictable way. This helps to reduce the risk of damage or loss during transit, and it also makes it easier to track and manage inventory as it moves through different stages of the supply chain.
 
