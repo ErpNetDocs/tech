@@ -11,3 +11,5 @@
   href: execute-order-lines.md
 - name: Check if a dispatch order can be fulfilled
   href: check-can-be-fulfilled.md
+- name: Reconcile
+  href: reconcile.md
