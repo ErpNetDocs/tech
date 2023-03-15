@@ -20,7 +20,7 @@ The Contents panel holds information about what the content of the logistics uni
 
 ![Logistic unit’s contents](pictures/lu-contents.png)
 
-The Specifications panel contains synthesized information about the Logistic Unit. The database can contain any kind of specification, but most client applications and integrated methods process GS1 specifications ([Application Identifiers]((gs1-barcodes.md)). These specifications are usually used when generating **[Logistic Labels](logistic-labels.md)**.
+The Specifications panel contains synthesized information about the Logistic Unit. The database can contain any kind of specification, but most client applications and integrated methods process GS1 specifications ([Application Identifiers](gs1-barcodes.md)). These specifications are usually used when generating **[Logistic Labels](logistic-labels.md)**.
 
 ![Logistic unit’s specifications](pictures/lu-specifications.png)
 
