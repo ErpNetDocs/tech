@@ -1,25 +1,32 @@
-# Reconcile the results from the WMS module
+# Reconcile
 
+The reconciliation process in @name is performed in two stages.
 
-Knowing the exact number of products in a given warehouse location is crucial for keeping order. However, there are often differences between the expected and the actual quantity of a product, which gets caught during reconciliation. <br> In such cases, you need to add **reconciliation lines** to the main reconciliation document. 
+First warehouse workers are performing the actual counting using the [WMS Worker](xref:wms-worker) app. 
 
-> [!NOTE] 
-> 
-> Warehouse locations are reconciled to determine how many products are being stored there. In addition, the difference between expected and actual quantity is calculated as well.
+The next step is applying the results of the reconciliation made in the WMS module to the Inventory module and its avalability using the Reconcile document and the **Add the reconciliation lines from the WMS module** UI function.
 
-## Adding reconciliation lines
+## Reconcile the availability in the Warehouse Location
+The first step is to reconcile the availability in the desired Warehouse Location/s.
 
-Once differences in product quantity are found, they need to be accounted. For that purpose, you need to use the _WMS module_.
+This step is performed by the warehouse workers that count the availability in the chosen warehouse location/s using their handheld devices and the [Reconcile menu](xref:reconcile-menu) of the mobile app. As a result, the app generates Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type that adjust the warehouse availability according to the differences that were found during the reconciliation.
 
-To begin, create a new reconciliation document from the **Logistics --> Inventory** section.
+The Warehouse Availability in this/these Locations is now correct, but we still need to update the Availability in the Inventory module.
+
+## Update the availability in the Inventory Module
+The next step is to update the Inventory Availability. 
+
+This is performed using the **Add the reconciliation lines from the WMS module** UI function that can be found in the Reconciliation document’s definition. The functions loads all [Count]( /how-it-works/task-types/count.md) Warehouse Transactions that were now yet applied to the Inventory module and creates Reconciliation lines for them. There, these results can be reviewed, edited (if necessary), and applied to the inventory availability by releasing the Reconcile document and generating Store Transactions.
+
+To begin, **create a new Reconciliation document** from the Logistics --> Inventory section.
 
 ![Picture](pictures/create-reconciliation.png)
  
-Fill it with the necessary information, including the **Default Store** in which the reconciliation is done, and save the document.
+Fill it with the necessary information, including the **Default Store** in which the reconciliation is done, and **Save** the document.
 
 ![Picture](pictures/default-store.png)
 
-To add reconciliation lines from the WMS module to an existing document, click the **play** **button** at the upper-left corner of the screen and then select the **Add the reconciliation lines from the WMS module** option. This will check exactly which calculations haven’t been accounted yet, and will load lines for manual accounting.
+To add reconciliation lines from the WMS module to an existing document, click the **UI Functions button** at the upper-left corner of the screen and then select the **Add the reconciliation lines from the WMS module** option. 
 
 ![Picture](pictures/reconciliation-play.png)
 
@@ -27,7 +34,8 @@ Define the **period** on which you want the data to be based (in days), and clic
 
 ![Picture](pictures/reconciliation-period.png)
  
-In the _Lines_ section, unaccounted lines with differences in product quantity that occurred during reconciliation will be listed. 
+This will check which Warehouse Transactions with [Count]( /how-it-works/task-types/count.md) task type   haven’t apllied to the Iventory module using Reconciliation documenys yet, and will create reconciliation lines for them. 
 
 ![Picture](pictures/reconciliation-lines.png)
+
 
