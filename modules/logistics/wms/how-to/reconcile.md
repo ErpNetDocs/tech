@@ -4,7 +4,7 @@ The reconciliation process in @name is performed in two steps.
 
 First warehouse workers are performing the actual counting of the Warehouse Availability in the Warehouse Locations using the **[WMS Worker](xref:wms-worker) app**. 
 
-The next step is applying the results of the reconciliation made in the WMS module to the Inventory module and its avalability using the Reconcile document and the **Add the reconciliation lines from the WMS module** UI function.
+The next step is applying the results of the reconciliation made in the WMS module to the Inventory module and its avalability using the Reconcile document and the **Add the reconciliation lines from the WMS module UI function**.
 
 ## Reconcile the availability in the Warehouse Locations
 The first step is to reconcile the availability in the desired Warehouse Location/s.
