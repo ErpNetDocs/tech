@@ -34,9 +34,9 @@ The special FNC1 symbol by default is #, meaning it should be included at the be
 
 '#'+[Related: Logistic Unit - Specifications 02].[Code]+[Related: Logistic Unit - Specifications 02].[Value]+[Related: Logistic Unit - Specifications 10].[Code]+[Related: Logistic Unit - Specifications 10].[Value]+'#'+[Related: Logistic Unit - Specifications 17].[Code]+[Related: Logistic Unit - Specifications 17].[Value]+[Related: Logistic Unit - Specifications 37].[Code]+[Related: Logistic Unit - Specifications 37].[Value]
 
-Here are the files with the source and view of an sample printout report in the logistic unit's definition. The report can be use as a base and be adjusted according to the specific company's needs:
+Here is an archive with the the source and layuot files of an sample printout report in the logistic unit's definition. The report can be use as a base and be adjusted according to the specific company's needs:
 
-- <a id="raw-url" href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/pictures/Logistic_Label.repx">Download "Sample Logistic Label Report Layout"</a>
-- <a id="raw-url" href="https://github.com/ErpNetDocs/tech/raw/master/modules/logistics/wms/logistic-units/pictures/Logistic_Label.dsrc">Download "Sample Logistic Label Data Source"</a>
+- <a id="raw-url" href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/pictures/Logistic_Label_Layout_and_Source.zip">Download "Sample Logistic Label Report Layout and Data Source"</a>
+
 
 The labels are typically printed on adhesive labels that are affixed to **[Logistic Unit](index.md)**, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.
