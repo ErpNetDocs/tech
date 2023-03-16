@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.1.5.0" Ref="0" ControlType="Aloe.EnterpriseOne.Client.Windows.Main.UserInterface.Reports.E1XtraReport, ErpNet.WinClient, Version=23.1.2.56, Culture=neutral, PublicKeyToken=b8b026b65c2533a8" Name="E1XtraReport" XmlReportLanguage="Current" XmlReportVersion="23100256" XmlCustomSummaryFuncs="" XmlCustomRunningTotals="" XmlControlLanguages="" XmlAdvancedExpressions="~Xtra#Base64AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQ1LZXlWYWx1ZVBhaXJzAAMAAwiSAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkdlbmVyaWNFcXVhbGl0eUNvbXBhcmVyYDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dCOYBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dW10CAAAACQIAAAADAAAACQMAAAAEAgAAAJIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuR2VuZXJpY0VxdWFsaXR5Q29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0AAAAABwMAAAAAAQAAAAIAAAAD5AFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0E/P///+QBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuS2V5VmFsdWVQYWlyYDJbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV0sW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAgAAAANrZXkFdmFsdWUBAQYFAAAAEGNhbGN1bGF0ZWRGaWVsZDEGBgAAAAAB+f////z///8GCAAAAAdDT05URU5UCQYAAAAL" Margins="0, 0, 0, 0" PaperKind="A6" PageWidth="413" PageHeight="583" Version="22.1" DataMember="Логистични единици">
+  <Extensions>
+    <Item1 Ref="1" Key="DataSerializationExtension" Value="Custom" />
+    <Item2 Ref="2" Key="DataEditorExtension" Value="Custom" />
+    <Item3 Ref="3" Key="ParameterEditorExtension" Value="Custom" />
+  </Extensions>
+  <FormattingRuleSheet>
+    <Item1 Ref="4" Name="Null37NotVisible" Condition="IsNull([Related: Logistic Unit - Specifications 37].[Code])&#xA;">
+      <Formatting Ref="5" Visible="False" BorderStyle="Inset" StringFormat="Near;Near;0;None;Character;Default" />
+    </Item1>
+    <Item2 Ref="6" Name="Null10NotVisible" Condition="IsNull([Related: Logistic Unit - Specifications 10].[Code])&#xA;">
+      <Formatting Ref="7" Visible="False" BorderStyle="Inset" StringFormat="Near;Near;0;None;Character;Default" />
+    </Item2>
+    <Item3 Ref="8" Name="Null17NotVisible" Condition="IsNull([Related: Logistic Unit - Specifications 17].[Code])&#xA;">
+      <Formatting Ref="9" Visible="False" BorderStyle="Inset" StringFormat="Near;Near;0;None;Character;Default" />
+    </Item3>
+    <Item4 Ref="10" Name="Null02NotVisible" Condition="IsNull([Related: Logistic Unit - Specifications 02].[Code])">
+      <Formatting Ref="11" Visible="False" BorderStyle="Inset" StringFormat="Near;Near;0;None;Character;Default" />
+    </Item4>
+  </FormattingRuleSheet>
+  <CalculatedFields>
+    <Item1 Ref="12" Name="upper_barcode" Expression="'#'+[Related: Logistic Unit - Specifications 02].[Code]+[Related: Logistic Unit - Specifications 02].[Value]+[Related: Logistic Unit - Specifications 10].[Code]+[Related: Logistic Unit - Specifications 10].[Value]+'#'+[Related: Logistic Unit - Specifications 17].[Code]+[Related: Logistic Unit - Specifications 17].[Value]+[Related: Logistic Unit - Specifications 37].[Code]+[Related: Logistic Unit - Specifications 37].[Value]&#xA;" DataMember="Логистични единици" />
+    <Item2 Ref="13" Name="SSCC_Barcode" Expression="'#'+'00'+[Related: Logistic Unit - Specifications 00].[Value]" DataMember="Логистични единици" />
+    <Item3 Ref="14" Name="SSCC" Expression="Iif([Code] == '00',[Value] ,'')" DataMember="Логистични единици.Related: Логистични единици - Спецификации" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="15" ControlType="DetailBand" Name="Detail" PageBreak="AfterBand" HeightF="500.3908">
+      <Controls>
+        <Item1 Ref="16" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" TextAlignment="TopCenter" SizeF="360.4999,24.666664" LocationFloat="23.444994,34.271835" Font="Times New Roman, 18pt, style=Bold" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="17" PropertyName="Text" DataMember="Логистични единици.DomainAttr_#CurrentEnterpriseCompanyName" />
+          </DataBindings>
+          <StylePriority Ref="18" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="19" ControlType="XRLine" Name="line2" SizeF="363.8333,23" LocationFloat="26.778328,71.34985" />
+        <Item3 Ref="20" ControlType="XRLine" Name="line1" SizeF="363.8333,23" LocationFloat="23.444994,265.56232" />
+        <Item4 Ref="21" ControlType="XRBarCode" Name="barCode2" AutoModule="true" SizeF="357.1666,75" LocationFloat="23.444994,383.34607" Font="Times New Roman, 10pt" Padding="10,10,0,0,100">
+          <Symbology Ref="22" Name="DataBar" Type="ExpandedStacked" />
+          <DataBindings>
+            <Item1 Ref="23" PropertyName="Text" DataMember="Логистични единици.SSCC_Barcode" />
+          </DataBindings>
+          <StylePriority Ref="24" UseFont="false" />
+        </Item4>
+        <Item5 Ref="25" ControlType="XRBarCode" Name="barCode1" AutoModule="true" SizeF="363.83325,52.833313" LocationFloat="23.44502,308.06586" Font="Times New Roman, 10pt" Padding="10,10,0,0,100">
+          <Symbology Ref="26" Name="DataBar" Type="ExpandedStacked" />
+          <DataBindings>
+            <Item1 Ref="27" PropertyName="Text" DataMember="Логистични единици.upper_barcode" />
+          </DataBindings>
+          <StylePriority Ref="28" UseFont="false" />
+        </Item5>
+        <Item6 Ref="29" ControlType="XRTable" Name="table1" SizeF="360.49997,144.99998" LocationFloat="26.778328,105.5623" Font="Times New Roman, 12pt" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="30" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="31" ControlType="XRTableCell" Name="tableCell1" Weight="1" Multiline="true" Text="SSCC" Font="Times New Roman, 12pt, style=Bold">
+                  <StylePriority Ref="32" UseFont="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="33" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="34" ControlType="XRTableCell" Name="tableCell2" Weight="1" Multiline="true">
+                  <DataBindings>
+                    <Item1 Ref="35" PropertyName="Text" DataMember="Логистични единици.Related: Logistic Unit - Specifications 00.Value" />
+                  </DataBindings>
+                </Item1>
+              </Cells>
+            </Item2>
+            <Item3 Ref="36" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="37" ControlType="XRTableCell" Name="tableCell3" Weight="0.5" Multiline="true" Text="ITEM NO" Font="Times New Roman, 12pt, style=Bold">
+                  <FormattingRuleLinks>
+                    <Item1 Ref="38" Value="#Ref-10" />
+                  </FormattingRuleLinks>
+                  <StylePriority Ref="39" UseFont="false" />
+                </Item1>
+                <Item2 Ref="40" ControlType="XRTableCell" Name="tableCell4" Weight="0.5" Multiline="true" Text="QTY" Font="Times New Roman, 12pt, style=Bold">
+                  <FormattingRuleLinks>
+                    <Item1 Ref="41" Value="#Ref-4" />
+                  </FormattingRuleLinks>
+                  <StylePriority Ref="42" UseFont="false" />
+                </Item2>
+              </Cells>
+            </Item3>
+            <Item4 Ref="43" ControlType="XRTableRow" Name="tableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="44" ControlType="XRTableCell" Name="tableCell5" Weight="0.5" Multiline="true">
+                  <DataBindings>
+                    <Item1 Ref="45" PropertyName="Text" DataMember="Логистични единици.Related: Logistic Unit - Specifications 02.Value" />
+                  </DataBindings>
+                </Item1>
+                <Item2 Ref="46" ControlType="XRTableCell" Name="tableCell6" Weight="0.5" TextFormatString="{0:n0}" Multiline="true" Font="Times New Roman, 12pt">
+                  <DataBindings>
+                    <Item1 Ref="47" PropertyName="Text" DataMember="Логистични единици.Related: Logistic Unit - Specifications 37.Value" />
+                  </DataBindings>
+                  <StylePriority Ref="48" UseFont="false" />
+                </Item2>
+              </Cells>
+            </Item4>
+            <Item5 Ref="49" ControlType="XRTableRow" Name="tableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="50" ControlType="XRTableCell" Name="tableCell7" Weight="0.5" Multiline="true" Text="EXPIRY (DD/MM/YY)" Font="Times New Roman, 12pt, style=Bold">
+                  <FormattingRuleLinks>
+                    <Item1 Ref="51" Value="#Ref-8" />
+                  </FormattingRuleLinks>
+                  <StylePriority Ref="52" UseFont="false" />
+                </Item1>
+                <Item2 Ref="53" ControlType="XRTableCell" Name="tableCell8" Weight="0.5" Multiline="true" Text="BATCH" Font="Times New Roman, 12pt, style=Bold">
+                  <FormattingRuleLinks>
+                    <Item1 Ref="54" Value="#Ref-6" />
+                  </FormattingRuleLinks>
+                  <StylePriority Ref="55" UseFont="false" />
+                </Item2>
+              </Cells>
+            </Item5>
+            <Item6 Ref="56" ControlType="XRTableRow" Name="tableRow6" Weight="1">
+              <Cells>
+                <Item1 Ref="57" ControlType="XRTableCell" Name="tableCell9" Weight="0.5" TextFormatString="{0:ddMMyy}" Multiline="true">
+                  <DataBindings>
+                    <Item1 Ref="58" PropertyName="Text" DataMember="Логистични единици.Related: Logistic Unit - Specifications 17.Value" />
+                  </DataBindings>
+                </Item1>
+                <Item2 Ref="59" ControlType="XRTableCell" Name="tableCell10" Weight="0.5" Multiline="true" Font="Times New Roman, 12pt">
+                  <DataBindings>
+                    <Item1 Ref="60" PropertyName="Text" DataMember="Логистични единици.Related: Logistic Unit - Specifications 10.Value" />
+                  </DataBindings>
+                  <StylePriority Ref="61" UseFont="false" />
+                </Item2>
+              </Cells>
+            </Item6>
+          </Rows>
+          <StylePriority Ref="62" UseFont="false" />
+        </Item6>
+      </Controls>
+    </Item1>
+  </Bands>
+</XtraReportsLayoutSerializer>

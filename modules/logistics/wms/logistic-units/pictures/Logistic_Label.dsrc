@@ -1,0 +1,186 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Sys_Data_Sources>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Data_Source_Name>Навигатор Логистични единици</Data_Source_Name>
+    <Base_Query_Name>Log_Logistic_Units_Table_Load_Navigator</Base_Query_Name>
+    <Show_Parent_Tables>false</Show_Parent_Tables>
+    <Data_Source_Type>M</Data_Source_Type>
+  </Sys_Data_Sources>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>501599d2-a261-4da8-8042-1da092665b86</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици</Reference_Path>
+    <Filter_Xml />
+    <Table_Name>Навигатор Логистични единици</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>b86fd6ce-b51b-4597-9708-2c68c4be65e6</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Contents@Логистични единици - Състав:Logistic_Unit_Id/Product_Id@Продукти</Reference_Path>
+    <Filter_Xml />
+    <Table_Name>Продукти</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>bb82bf4d-a8cc-4591-9e43-f763e5245c0c</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици</Reference_Path>
+    <Filter_Xml />
+    <Table_Name>Логистични единици</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List>DomainAttributes</Extensions_List>
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>32138521-8ea0-4357-ae24-4c36c7755556</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Contents@Логистични единици - Състав:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml />
+    <Table_Name>Логистични единици - Състав</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List>TextColumns</Extensions_List>
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>928e3c6b-5d9a-4595-b44a-16104276d9f7</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 02:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;02&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 02</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>9d6293d7-d75e-4530-8916-24680cdeb133</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 21:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;21&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 21</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>e4ac0ce1-fae2-4191-85b2-9d2ec5bcaee3</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 17:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;17&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 17</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>84bcf831-25bb-4360-91e5-1f03543ad75e</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 37:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;37&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 37</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>6103152f-6893-45c4-b4f3-3dfa09e1bd94</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 20:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;20&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 20</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>58f4e742-52d0-4599-a55f-74d0087a65a9</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Contents@Логистични единици - Състав:Logistic_Unit_Id/Lot_Id@Складови партиди</Reference_Path>
+    <Filter_Xml />
+    <Table_Name>Складови партиди</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>27bd6d14-1759-43e0-9a1c-f1cf48598857</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 00:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;00&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 00</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+  <Sys_Data_Source_Queries>
+    <Data_Source_Query_Id>4534b75b-ecbc-4ff7-88a8-c52ea4fbf1a4</Data_Source_Query_Id>
+    <Data_Source_Id>f07348d8-5dd4-41cc-b2cb-765402623402</Data_Source_Id>
+    <Reference_Path>Log_Logistic_Units_Table_Load_Navigator@Навигатор Логистични единици/Logistic_Unit_Id@Логистични единици/Log_Logistic_Unit_Specifications@Logistic Unit - Specifications 10:Logistic_Unit_Id</Reference_Path>
+    <Filter_Xml>&lt;FILTER&gt;
+&lt;EXP&gt;
+  &lt;TABLE_NAME&gt;Log_Logistic_Unit_Specifications_Table&lt;/TABLE_NAME&gt;
+  &lt;COLUMN_NAME&gt;Code&lt;/COLUMN_NAME&gt;
+  &lt;FILTER_TYPE&gt;Equals&lt;/FILTER_TYPE&gt;
+  &lt;FILTER_VALUE&gt;10&lt;/FILTER_VALUE&gt;
+  &lt;INCLUDE_NULLS&gt;0&lt;/INCLUDE_NULLS&gt;
+&lt;/EXP&gt;
+&lt;/FILTER&gt;</Filter_Xml>
+    <Table_Name>Logistic Unit - Specifications 10</Table_Name>
+    <Depends_On_Child_Rows>0</Depends_On_Child_Rows>
+    <Extensions_List />
+    <First_Row>false</First_Row>
+  </Sys_Data_Source_Queries>
+</NewDataSet>
