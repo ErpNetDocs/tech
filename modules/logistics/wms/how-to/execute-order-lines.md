@@ -3,10 +3,10 @@ The **Warehouse Order (WO)** is the document that contains the actual plan that 
 
 The lines of the **WO** can be executed trough the Orders menu of the [WMS Worker](xref:wms-worker) or through the **Execute lines** UI function.
 
-How these lines are executed, depends on their [Task type](../modules/logistics/wms/how-it-works/task-types/index.md). More information about the purpose of each task type and how it can be executed can be found in the 
-[Task type](../modules/logistics/wms/how-it-works/task-types/index.md) subtopics.
+How these lines are executed, depends on their [Task type](how-it-works/task-types/index.md). More information about the purpose of each task type and how it can be executed can be found in the 
+[Task type](how-it-works/task-types/index.md) subtopics.
 
-Note that, not all task types are currently available for order lines execution. Some, such as the [Count task type](../modules/logistics/wms/how-it-works/task-types/count.md) for example, 
+Note that, not all task types are currently available for order lines execution. Some, such as the [Count task type](how-it-works/task-types/count.md) for example, 
 are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).
 
 ## Orders menu in WMS Worker
@@ -17,7 +17,7 @@ The Orders menu is used by the warehouse worker to execute the lines of the ware
 
 The "Execute lines" UI function available in the definition of the Warehouse Orders.
 
-When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](../modules/logistics/wms/how-it-works/task-types/index.md). <br/>The function is especially useful when [entering initial availability](../modules/logistics/wms/how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
+When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](how-it-works/task-types/index.md). <br/>The function is especially useful when [entering initial availability](how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
 
 To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is **released** and if it is not, **release** the document before starting the function.
 
