@@ -30,9 +30,8 @@ Here is a picture of the mandatory settings for the barcode field in order to ge
 
 ![Barcode Generation Setttings](pictures/set-up-label.png)
 
-The special FNC1 symbol by default is #, meaning it should be included at the beginning of the barcode and as a separator for the variable length identifiers. The barcode information is extracted using calculated fields. An example of a calculated field that generates the GS1 barcode in a printout is:
-
-'#'+[Related: Logistic Unit - Specifications 02].[Code]+[Related: Logistic Unit - Specifications 02].[Value]+[Related: Logistic Unit - Specifications 10].[Code]+[Related: Logistic Unit - Specifications 10].[Value]+'#'+[Related: Logistic Unit - Specifications 17].[Code]+[Related: Logistic Unit - Specifications 17].[Value]+[Related: Logistic Unit - Specifications 37].[Code]+[Related: Logistic Unit - Specifications 37].[Value]
+The special FNC1 symbol by default is #, meaning it should be included at the beginning of the barcode and as a separator for the variable length identifiers. The barcode information is extracted using calculated fields. An example of a calculated field that generates the GS1 barcode in a printout:
+<br/>*'#'+[Related: Logistic Unit - Specifications 02].[Code]+[Related: Logistic Unit - Specifications 02].[Value]+[Related: Logistic Unit - Specifications 10].[Code]+[Related: Logistic Unit - Specifications 10].[Value]+'#'+[Related: Logistic Unit - Specifications 17].[Code]+[Related: Logistic Unit - Specifications 17].[Value]+[Related: Logistic Unit - Specifications 37].[Code]+[Related: Logistic Unit - Specifications 37].[Value]*
 
 Here is an archive with the the source and layuot files of an sample printout report in the logistic unit's definition. The report can be use as a base and be adjusted according to the specific company's needs:
 
