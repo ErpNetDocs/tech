@@ -81,16 +81,16 @@
 
 <p>The <strong>Warehouse Order (WO)</strong> is the document that contains the actual plan that needs to be executed by the WMS module.</p>
 <p>The lines of the <strong>WO</strong> can be executed trough the Orders menu of the <a href="xref:wms-worker">WMS Worker</a> or through the <strong>Execute lines</strong> UI function.</p>
-<p>How these lines are executed, depends on their <a href="/modules/logistics/wms/how-it-works/task-types/index.md">Task type</a>. More information about the purpose of each task type and how it can be executed can be found in the
-<a href="/modules/logistics/wms/how-it-works/task-types/index.md">Task type</a> subtopics.</p>
-<p>Note that, not all task types are currently available for order lines execution. Some, such as the <a href="/modules/logistics/wms/how-it-works/task-types/count.md">Count task type</a> for example,
+<p>How these lines are executed, depends on their <a href="../modules/logistics/wms/how-it-works/task-types/index.md">Task type</a>. More information about the purpose of each task type and how it can be executed can be found in the
+<a href="../modules/logistics/wms/how-it-works/task-types/index.md">Task type</a> subtopics.</p>
+<p>Note that, not all task types are currently available for order lines execution. Some, such as the <a href="../modules/logistics/wms/how-it-works/task-types/count.md">Count task type</a> for example,
 are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).</p>
 <h2 id="orders-menu-in-wms-worker">Orders menu in WMS Worker</h2>
 <p><a href="xref:wms-worker">WMS Worker</a> is our WMS mobile application available on all compatible Android devices, including handheld devices.
 The Orders menu is used by the warehouse worker to execute the lines of the warehouse orders that has been assigned to them. For more information see <a href="xref:wms-worker">WMS Worker</a></p>
 <h2 id="execute-lines-ui-function">Execute lines UI function</h2>
 <p>The &quot;Execute lines&quot; UI function available in the definition of the Warehouse Orders.</p>
-<p>When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's <a href="/modules/logistics/wms/how-it-works/task-types/index.md">task type</a>. <br>The function is especially useful when <a href="/modules/logistics/wms/how-to/initial-availability.md">entering initial availability</a> in the Warehouse or as a backup way to execute lines without using the <a href="xref:wms-worker">WMS Worker</a> app, in case there is a problem with mobile devices for example.</p>
+<p>When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's <a href="../modules/logistics/wms/how-it-works/task-types/index.md">task type</a>. <br>The function is especially useful when <a href="../modules/logistics/wms/how-to/initial-availability.md">entering initial availability</a> in the Warehouse or as a backup way to execute lines without using the <a href="xref:wms-worker">WMS Worker</a> app, in case there is a problem with mobile devices for example.</p>
 <p>To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is <strong>released</strong> and if it is not, <strong>release</strong> the document before starting the function.</p>
 <p><img src="pictures/release-document.png" alt="Picture"></p>
 <p>Then, click the <strong>UI Functions</strong> and select <strong>Execute lines</strong>.</p>
