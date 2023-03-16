@@ -6624,7 +6624,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/platform-settings.html",
-          "hash": "pGtD4rMix7XEAazne/Azdg=="
+          "hash": "tQk2Lv0TDsxMkGVnHYne/g=="
         }
       },
       "is_incremental": false,
@@ -9622,7 +9622,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/logistic-labels.html",
-          "hash": "HQfHWZeGAABz1DktxGrVBA=="
+          "hash": "YZWuZQv1eoTQBqc8S2g/Cw=="
         }
       },
       "is_incremental": false,
@@ -9667,6 +9667,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/logistic-units/pictures/lu-specifications.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png"
         }
       },
       "is_incremental": false,

@@ -87,10 +87,23 @@
 <li><strong>The last section</strong> contains the barcode symbols. For the encoding of the information are used <strong><a href="/modules/logistics/wms/gs1-barcodes.md">GS1 barcode</a></strong> identifiers.</li>
 </ul>
 <p><img src="pictures/logistic-label.png" alt="Logistic Label"></p>
+<p>The SSCC is the single mandatory element for all GS1 Logistic Labels. Other information, when needed, shall comply with the specifications in this document and with the proper use of GS1 Application Identifiers.</p>
 <p>If the <a href="index.html">Logistic Unit</a> is <strong>homogeneous</strong> (for more information, see <a href="index.html#logistic-units-types">Logistic units types</a>) and therefore contains one type of trade item, in addition to the SSCC code, these labels can include trade item information. This typically includes a Global Trade Item Number (GTIN), which is a unique identifier assigned to each product, as well as other information such as the product description, batch or lot number, and expiration date.</p>
 <p>If the <a href="index.html">Logistic Unit</a> is <strong>heterogeneous</strong> (for more information, see <a href="index.html#logistic-units-types">Logistic units types</a>) and therefore contains different types of trade items that are identified with different GTINs, then it is NOT possible to include trade item information on the logistic label. In these cases the data about the expected Logistic Units contents is exchanged prior the shipment arrival using an <strong><a href="asn.html">Advance Shipping Notice (ASN)</a></strong>.</p>
-<p>In ERP.net, the <strong>logistic labels</strong> are created and printed using the standard reports functionality. The labels are typically printed on adhesive labels that are affixed to <strong><a href="index.html">Logistic Unit</a></strong>, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.</p>
 <p>By using standardized <strong>logistic labels</strong>, companies can improve the efficiency and accuracy of their supply chain operations, reduce the risk of errors and delays, and improve customer satisfaction by ensuring that the right products are delivered on time.</p>
+<h2 id="logistic-labels-in-">Logistic Labels in ERP.net</h2>
+<p>In ERP.net, the <strong>logistic labels</strong> are created and printed using the standard report and printout functionality. They are usually printed from the Logistic Unit definition. The printout as set up using the Reports functionality in ERP.net, as a report for which the “One Row” check-mark is set.</p>
+<p>The information in the logistic label is gathered from the logistic unit's Specifications panel. The Pack functiallity in WMS Worker automatically fills in Specifications with the oppropriate information, following the GS1 Standards and you can directly use this information in your labels.</p>
+<p>Here is a picture of the mandatory settings for the barcode field in order to generate GS1 barcodes from the Specifications.</p>
+<p><img src="pictures/set-up-label.png" alt="Barcode Generation Setttings"></p>
+<p>The special FNC1 symbol by default is #, meaning it should be included at the beginning of the barcode and as a separator for the variable length identifiers. The barcode information is extracted using calculated fields. An example of a calculated field that generates the GS1 barcode in a printout is:</p>
+<p>'#'+[Related: Logistic Unit - Specifications 02].[Code]+[Related: Logistic Unit - Specifications 02].[Value]+[Related: Logistic Unit - Specifications 10].[Code]+[Related: Logistic Unit - Specifications 10].[Value]+'#'+[Related: Logistic Unit - Specifications 17].[Code]+[Related: Logistic Unit - Specifications 17].[Value]+[Related: Logistic Unit - Specifications 37].[Code]+[Related: Logistic Unit - Specifications 37].[Value]</p>
+<p>Here are the files with the source and view of an sample printout report in the logistic unit's definition. The report can be use as a base and be adjusted according to the specific company's needs:</p>
+<ul>
+<li><a id="raw-url" href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/pictures/Logistic_Label.repx">Download &quot;Sample Logistic Label Report Layout&quot;</a></li>
+<li><a id="raw-url" href="https://github.com/ErpNetDocs/tech/raw/master/modules/logistics/wms/logistic-units/pictures/Logistic_Label.dsrc">Download &quot;Sample Logistic Label Data Source&quot;</a></li>
+</ul>
+<p>The labels are typically printed on adhesive labels that are affixed to <strong><a href="index.html">Logistic Unit</a></strong>, and they are scanned at various points in the supply chain to ensure the product is properly tracked and accounted for.</p>
 </article>
           </div>
           

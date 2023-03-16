@@ -86,14 +86,14 @@
 <ul>
 <li>The ability to reveal or hide the <strong>New Order</strong> button, allowing or restricting users to create new orders.</li>
 </ul>
-<p>By default, this button is <strong>hidden</strong> so as to prevent potential problems and risks.</p>
+<p>By default, this button is <strong>hidden</strong> so as to prevent potential information leaks.</p>
 <p>You need to enable the functionality <strong>manually</strong> only when that’s necessary.</p>
 <p><img src="pictures/CL.png" alt="picture"></p>
 <ul>
-<li>The ability to define the user type of the sales order document in accordance with different users’ needs.</li>
+<li>The ability to define the sales order document type for new orders in the Client Center.</li>
 </ul>
-<p>In the case of sale orders, you must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
-<p>This could be useful for separating orders made in the Client Center from those made in other modules.</p>
+<p>You must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
+<p>This could be quite helpful for separating orders made in the Client Center from those made in other modules.</p>
 <ul>
 <li>The ability to easily generate <strong>comprehensive business analytics</strong> for orders made in the CC.</li>
 </ul>
@@ -126,7 +126,7 @@
 <ol start="4">
 <li><strong>Apply</strong> the new settings.</li>
 </ol>
-<h2 id="use-cases">Use-cases</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <p>Depending on how you define the settings, you can encounter the following scenarios:</p>
 <ol>
 <li>Both fields are set:</li>
@@ -158,8 +158,8 @@
 <h2 id="automatic-tracking">Automatic tracking</h2>
 <p>Whenever you apply or change settings for a website such as the Client Center, they’re <strong>tracked</strong> by the system in real-time and will be reflected immediately.</p>
 <h2 id="user-level-security">User-level security</h2>
-<p>Requests from the Client Center and other websites are made by types of users known as <strong>System-Application-User</strong>. They have enough rights to apply or change settings only in accordance with the normal functioning of the current website. Possible confusion with user access to other places in the platform is essentially eliminated.</p>
-<p>By default, the System-Application-User has System rights, but reflects used licenses as well. It’s assumed whenever a new website is created and whenever a trusted application is added through the UI.</p>
+<p>By default the Client Center will use a system user, known as <strong>System-Application-User</strong>. This user should rights to apply or change settings only in accordance with the normal functioning of the current website. For better security, another more, restricted user can be used.</p>
+<p>By default, the System-Application-User has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.</p>
 <h2 id="error-visualization">Error visualization</h2>
 <p>When you encounter a problem in the platform, a relevant, easy-to-read and interactive <strong>error message</strong> will be shown explaining its nature.</p>
 </article>
