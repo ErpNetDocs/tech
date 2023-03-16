@@ -5485,6 +5485,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/set-up-label.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/set-up-label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/pictures/WMS.png",
       "output": {
         "resource": {
@@ -9622,7 +9633,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/logistic-labels.html",
-          "hash": "YZWuZQv1eoTQBqc8S2g/Cw=="
+          "hash": "HlfUOUlusdK9jXcn8oQYrA=="
         }
       },
       "is_incremental": false,
