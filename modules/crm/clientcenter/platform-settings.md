@@ -10,17 +10,17 @@ Below is a list of settings you can apply to the Client Center:
 
 - The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders.
 
-By default, this button is **hidden** so as to prevent potential problems and risks. 
+By default, this button is **hidden** so as to prevent potential information leaks.
 
 You need to enable the functionality **manually** only when that’s necessary.
 
 ![picture](pictures/CL.png)
 
-- The ability to define the user type of the sales order document in accordance with different users’ needs. 
+- The ability to define the sales order document type for new orders in the Client Center. 
 
-In the case of sale orders, you must input a **valid** **SalesOrder.DocumentType ID**. 
+You must input a **valid** **SalesOrder.DocumentType ID**. 
 
-This could be useful for separating orders made in the Client Center from those made in other modules.
+This could be quite helpful for separating orders made in the Client Center from those made in other modules.
  
 - The ability to easily generate **comprehensive business analytics** for orders made in the CC.
 
@@ -63,7 +63,7 @@ and _IsNewOrderEnabled_ defines if the button for order creation will be shown o
 
 4.	**Apply** the new settings.
 
-## Use-cases
+## Troubleshooting
 
 Depending on how you define the settings, you can encounter the following scenarios:
 
@@ -113,9 +113,9 @@ Whenever you apply or change settings for a website such as the Client Center, t
 
 ## User-level security
 
-Requests from the Client Center and other websites are made by types of users known as **System-Application-User**. They have enough rights to apply or change settings only in accordance with the normal functioning of the current website. Possible confusion with user access to other places in the platform is essentially eliminated.
+By default the Client Center will use a system user, known as **System-Application-User**. This user should rights to apply or change settings only in accordance with the normal functioning of the current website. For better security, another more, restricted user can be used. 
 
-By default, the System-Application-User has System rights, but reflects used licenses as well. It’s assumed whenever a new website is created and whenever a trusted application is added through the UI.
+By default, the System-Application-User has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
 
 ## Error visualization
 
