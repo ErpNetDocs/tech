@@ -5,7 +5,7 @@
 
 Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an **[Advance Shipping Notice (ASN)](asn.md)**, for example. 
 
-Here is what to do when you have information about the SSCC codes and its prior the shipment or not.
+Here is what to do depending on whether you have information about the SSCC codes and its prior the shipment or not.
 
 #### The LU’s data is exchanged prior the shipment arrival
 In these cases it is highly advisable to create their definitions into the database before the arrival of the units. This will allow receiving the unit with a single scan of its SSCC code. The worker needs to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
