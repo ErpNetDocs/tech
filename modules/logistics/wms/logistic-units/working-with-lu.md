@@ -33,16 +33,16 @@ Alternatively, you use the SSCC code that has been assigned by the supplier. In 
 Here we have two situations depending on whether you are dispatching an existing LUs or you want to create LUs to pack the dispathed content of an Sales Order.
 
 #### Dispatching existing LU
-<br/>То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
+То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
 
 ![Scan SSCC barcode](pictures/scan-sscc-dispatch.png)
 
 The [P03: GS1 – SSCC barcode parser](/modules/logistics/wms/how-it-works/barcode-parsers/p03.md) will automatically execute the appropriate Warehouse Order lines with the logistic unit’s Contents.
 
 #### Creating new LUs to pack a dispatched Sales Order
-<br/>You have completed the dispatching of a Sales Order and now you want to pack its products into Logistic Units? You can do that by using the Label menu in WMS Worker. 
+You have completed the dispatching of a Sales Order and now you want to pack its products into Logistic Units?
 
-With it you can select the completed Sales Order and create new LU’s for its content.
+You can do that by using the Label menu in WMS Worker. With it you can select the completed Sales Order and create new LU’s for its content.
 
 Then you can print [logistics labels](logistic-labels.md) and attach them to each unit.
 
