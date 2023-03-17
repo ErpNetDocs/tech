@@ -9685,10 +9685,58 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/logistic-units/working-with-lu.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/logistic-units/working-with-lu.html",
+          "hash": "iBuIZ1kQSw07SQNRM/lW2A=="
         }
       },
       "is_incremental": false,
@@ -9792,7 +9840,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "y157PaPJJMpT9MZbYkkXFA=="
+          "hash": "0zK4VZDjdFd9DheQlqNyQQ=="
         }
       },
       "is_incremental": false,
