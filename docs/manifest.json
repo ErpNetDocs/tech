@@ -5485,6 +5485,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-sscc.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-sscc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/set-up-label.png",
       "output": {
         "resource": {
