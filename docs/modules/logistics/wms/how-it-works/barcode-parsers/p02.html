@@ -80,16 +80,53 @@
 <h2 id="p02-gs1---single-product-parser">P02: GS1 - Single Product parser</h2>
 
 <p>This parser uses some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.</p>
-<p>A list of the identifiers that are recognized by this parser:
-| Identifier | Description | Length |
-| ---------- | ----------- | ------ |
-| (01) | Global Trade Item Number (GTIN) | 14 |
-| (02) | Global Trade Item Number (GTIN) of contained trade items | 14 |
-| (10) | Lot number | variable, up to 20 |
-| (17) | Expiration date (YYMMDD) | 6 |
-| (20) | Product variant | 2 |
-| (21) | Serial number | variable, up to 20 |
-| (37) | Count of trade items | variable, up to 8 |</p>
+<p>A list of the identifiers that are recognized by this parser:</p>
+<table>
+<thead>
+<tr>
+<th>Identifier</th>
+<th>Description</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(01)</td>
+<td>Global Trade Item Number (GTIN)</td>
+<td>14</td>
+</tr>
+<tr>
+<td>(02)</td>
+<td>Global Trade Item Number (GTIN) of contained trade items</td>
+<td>14</td>
+</tr>
+<tr>
+<td>(10)</td>
+<td>Lot number</td>
+<td>variable, up to 20</td>
+</tr>
+<tr>
+<td>(17)</td>
+<td>Expiration date (YYMMDD)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>(20)</td>
+<td>Product variant</td>
+<td>2</td>
+</tr>
+<tr>
+<td>(21)</td>
+<td>Serial number</td>
+<td>variable, up to 20</td>
+</tr>
+<tr>
+<td>(37)</td>
+<td>Count of trade items</td>
+<td>variable, up to 8</td>
+</tr>
+</tbody>
+</table>
 <p>Once triggered, the parser tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line. If there is missing information, then it will show the respective screens so the user can fill it in.
 If there is no matching line – it throws an error message and stops the execution.</p>
 <h3 id="specifics-and-optimizations-during-the-line-execution">Specifics and optimizations during the line execution:</h3>
