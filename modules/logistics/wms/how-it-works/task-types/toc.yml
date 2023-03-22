@@ -16,3 +16,7 @@
   href: comp-dispatch.md
 - name: Component Receive
   href: comp-receive.md
+- name: Pack
+  href: pack.md
+- name: Unpack
+  href: unpack.md
