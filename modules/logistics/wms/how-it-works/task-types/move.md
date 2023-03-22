@@ -4,7 +4,7 @@ Move task type's purpose is to move goods from one warehouse location to another
 
 The moving can be done as an ad hoc operation or can be performed as a part of a Warehouse Order. As an ad hoc (single) operation it is performed using the [Move](xref:wms-worker-move) menu of [WMS Worker](xref:wms-worker). While Warehouse Order Lines with Move task type can be executed using the Orders menu in [WMS Worker](xref:wms-worker) or the Execute lines function of the Warehouse Order.
 
-## Resumt
+## Result
 
 The moving results in creating 2 Warehouse Transaction - 1 for the goods issue of the previous location and 1 for the goods receipt into the destination location.
 A Document Fulfillment will be created as well, but only if the moving is performed trough executing a Warehouse Order Line.
