@@ -58,7 +58,7 @@ Direction = IN
  
 ManagedWarehouse = the current Warehouse
  
-ManagedWarehouseLocation = the Warehouse Location specified during the packing
+ManagedWarehouseLocation = the Destination location specified during the packing
  
 LogisticUnit = the LU specified or created during the packing
  
