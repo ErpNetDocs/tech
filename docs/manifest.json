@@ -8870,7 +8870,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "SEjjd07DIap51mZKbupkFA=="
+          "hash": "0IETDLId0xzma0AIOVRIkQ=="
         }
       },
       "is_incremental": false,
@@ -9124,7 +9124,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/index.html",
-          "hash": "k2eRMnE5ugxXdi6gPEOjqQ=="
+          "hash": "DBMsovXMGrpS456drIE+uw=="
         }
       },
       "is_incremental": false,
@@ -9151,7 +9151,22 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/move.html",
-          "hash": "oPkBhqIrRJTDV1qwBX7gsw=="
+          "hash": "X1PuGpNyvWYP5AD8JKqVOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/pack.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/pack.html",
+          "hash": "p2fq3e7PEis5/gfQ5oN65Q=="
         }
       },
       "is_incremental": false,
@@ -9167,6 +9182,21 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/task-types/receive.html",
           "hash": "ESyLDd27rWdh26FssspZPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/task-types/unpack.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/task-types/unpack.html",
+          "hash": "ZrldUAouAF26SMOwmeQ1oQ=="
         }
       },
       "is_incremental": false,
@@ -9873,7 +9903,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "WP1PDQjp9vOnvIU2zZo3cg=="
+          "hash": "wQ9SUi6HhX8uHLX2H37lCQ=="
         }
       },
       "is_incremental": false,

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Task types | ERP.net Tech Docs </title>
+    <title>Unpack task type | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Task types | ERP.net Tech Docs ">
+    <meta name="title" content="Unpack task type | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../../favicon.ico">
@@ -77,24 +77,82 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="task-types">Task types</h1>
+<h1 id="unpack-task-type">Unpack task type</h1>
 
-<p>Task types define the type of the operation (task), which should be performed. E.g. receiving goods, moving products from one location to another, reconciliation and oth.</p>
-<p>Depending on the task type, the system will guide the user through specific screens and will process the results of the work done in the appropriate way for the task.</p>
-<p>Мore about the details of the different task types, you can see in topics:</p>
-<ul>
-<li><a href="comp-dispatch.html">Component Dispatch task type</a></li>
-<li><a href="comp-receive.html">Component Receive task type</a></li>
-<li><a href="count.html">Count task type</a></li>
-<li><a href="dekit.html">Dekit task type</a></li>
-<li><a href="dispatch.html">Dispatch task type</a></li>
-<li><a href="kit.html">Kit task type</a></li>
-<li><a href="move.html">Move task type</a></li>
-<li><a href="pack.html">Pack task type</a></li>
-<li><a href="receive.html">Receive task type</a></li>
-<li><a href="unpack.html">Unpack task type</a></li>
-<li><a href="user-task.html">User task - task type</a></li>
-</ul>
+<p>Unack task type's purpose is to unpack the Contents of an Logistic Unit <a href="/modules/logistics/wms/logistic-units/index.md">Logistic Unit (LU)</a>.</p>
+<p>The packing is performed as an ad hoc operation using the <a href="xref:unpack-menu">Unpack</a> menu of <a href="xref:wms-worker">WMS Worker</a>.</p>
+<h2 id="result">Result</h2>
+<p>The packing results in creating 2 Warehouse Transaction for each line of the LU's availability. The first Warehouse Transaction is needed to issue the products which are no longer the contents of a logistic unit, at the specified destination location.</p>
+<p><strong>WarehouseTransaction1 for the issue of the content from the LU:</strong></p>
+<pre><code>WarehouseOrder = NULL
+ 
+WarehouseOrderLine = NULL
+
+TaskType = Unpack
+
+Direction = OUT
+ 
+ManagedWarehouse = the current Warehouse
+ 
+ManagedWarehouseLocation = the Warehouse Location specified during the unpacking
+ 
+LogisticUnit = the LU specified during the unpacking
+ 
+Product = the available Product 
+ 
+ProductVariant = the available Variant 
+ 
+Lot = the available Lot
+ 
+SerialNumber = the available SerialNumber
+ 
+Quantity = QuantityBaseAvailable
+ 
+QuantityUnit = BaseUnit 
+
+QuantityBase = QuantityBaseAvailable
+
+StandardQuantity = StandardQuantityAvailable
+ 
+CreationUser = CurrentUser
+ 
+CreationTimeUtc = NOW(Utc)
+</code></pre>
+<p><strong>WarehouseTransaction2 for the receipt the products that are no longer a part of the LU:</strong></p>
+<pre><code>WarehouseOrder = NULL
+ 
+WarehouseOrderLine = NULL
+
+TaskType = Unpack
+
+Direction = IN
+ 
+ManagedWarehouse = the current Warehouse
+ 
+ManagedWarehouseLocation = the Destination location specified during the unpacking
+ 
+LogisticUnit = NULL
+ 
+Product = the available Product 
+ 
+ProductVariant = the available Variant 
+ 
+Lot = the available Lot
+ 
+SerialNumber = the available SerialNumber
+ 
+Quantity = QuantityBaseAvailable
+ 
+QuantityUnit = BaseUnit 
+
+QuantityBase = QuantityBaseAvailable
+
+StandardQuantity = StandardQuantityAvailable
+ 
+CreationUser = CurrentUser
+ 
+CreationTimeUtc = NOW(Utc)
+</code></pre>
 </article>
           </div>
           
@@ -103,7 +161,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/task-types/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/task-types/unpack.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
