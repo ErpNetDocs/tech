@@ -96,7 +96,7 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 <tbody>
 <tr>
 <td style="text-align: left;">AllowProductChange</td>
-<td style="text-align: left;"><strong>Description:</strong> Allows execution with a different lot than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> Otherwise, the Lot can be changed during the execution.</td>
+<td style="text-align: left;"><strong>Description:</strong> Allows execution with a different product than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Product which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different product, the app will make a negative sound and will display a pop message: <em>“Product change is not allowed. Please select the suggested product.”</em> <br><br> Otherwise, the Product can be changed during the execution.</td>
 </tr>
 <tr>
 <td style="text-align: left;">AllowLotChange</td>
