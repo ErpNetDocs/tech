@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Excise declaration export | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Excise declaration export | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="excise-declaration-export">Excise declaration export</h1>
+
+<p>The table below lists the sources for the tags of the e-ADD xml file:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Excise declaration</strong></th>
+<th><strong>Source</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Declaration</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>KindOfDeclaration</td>
+<td>EXC00</td>
+<td></td>
+</tr>
+<tr>
+<td>TypeOfDeclaration</td>
+<td>EXC002BG</td>
+<td></td>
+</tr>
+<tr>
+<td>IsCorrectionDeclaration</td>
+<td>IsCorrectionDeclaration = !(IsNullOrEmptyValue(RefNumberOfCorrectedDeclaration ))</td>
+<td></td>
+</tr>
+<tr>
+<td>RefNumberOfCorrectedDeclaration</td>
+<td>RefNumberOfCorrectedDeclaration = ExcDeclarations.@Exc_RefNumberOfCorrectedDeclaration.Value</td>
+<td></td>
+</tr>
+<tr>
+<td>IsDelayedReporting</td>
+<td>IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration)) <br>THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True} <br><br>IF IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration) <br>THEN  {RefNumberOfCorrectedDeclaration - MISSING; IsCorrectionDeclaration = false}</td>
+<td>IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}</td>
+</tr>
+<tr>
+<td>DelayReferenceNumber</td>
+<td>IF NOT(IsNullOrEmpty(@Exc_DelayReferenceNumber)) <br>THEN {DelayReferenceNumber = @Exc_DelayReferenceNumber.Value; IsDelayedReporting = True} <br><br>IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}</td>
+<td></td>
+</tr>
+<tr>
+<td>PreparationDate</td>
+<td>ExciseDeclaration.DocumentDate </td>
+<td></td>
+</tr>
+<tr>
+<td>CustomsOffice</td>
+<td>ExciseDeclaration.TaxWarehouse.CustomsOffice</td>
+<td></td>
+</tr>
+<tr>
+<td>TotalAmountOfExciseDuty</td>
+<td>SUM ExciseGoods ( If Payment = 10, DutyAmount; If Payment = 40, - DutyAmount; IF Payment&lt;&gt; 10 and 40, 0)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Customer</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LegalEntity</td>
+<td>TWH</td>
+<td></td>
+</tr>
+<tr>
+<td>ExciseNumber</td>
+<td>ExciseDeclaration.TaxWarehouse.TaxWarehouseExciseNumber</td>
+<td></td>
+</tr>
+<tr>
+<td>SIC</td>
+<td>MISSING</td>
+<td></td>
+</tr>
+<tr>
+<td>NotificationNumber</td>
+<td>MISSING</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Declarer</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>ExciseDeclaration.ReportingPerson.PartyName.GetLanguageStringOrAny(&quot;bg&quot;)</td>
+<td></td>
+</tr>
+<tr>
+<td>EGN</td>
+<td>ExciseDeclaration.ReportingPerson.NationalNumber</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/&#1077;xcise-declaration-export.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

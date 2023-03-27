@@ -7305,6 +7305,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/еxcise-declaration-export.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/еxcise-declaration-export.html",
+          "hash": "iEq8FUOR4ICPORAT1vbW2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/fixed-assets/depreciation-methods/depreciation-functions.md",
       "output": {
         ".html": {
@@ -9903,7 +9915,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "wQ9SUi6HhX8uHLX2H37lCQ=="
+          "hash": "gFsmJ2dj1JdokbjRIRpMgg=="
         }
       },
       "is_incremental": false,
