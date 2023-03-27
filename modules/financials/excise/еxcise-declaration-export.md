@@ -2,14 +2,15 @@
 
 The table below lists the sources for the tags of the e-ADD xml file:
 
-|**e-ADD tags**|**Excise Product Code**|
+|**Excise declaration**|**Source**|
 | ------------------------------------------------------------ | ------------------- |
-|**Header**||
-| DocumentNumber|Document.DocumentNumber|
-| DocumentDate| Document.DocumentDate |
-| IsDelayedReporting |IsDeferredSubmission|
-| IsExciseNote | @Exc_Purpose |
-| TotalAmountOfExciseDuty |SUM(Lines.ExciseAmount)|
+|**Declaration**||
+| KindOfDeclaration |EXC00|
+| TypeOfDeclaration| EXC002BG |
+| IsCorrectionDeclaration|IsCorrectionDeclaration = !(IsNullOrEmptyValue(RefNumberOfCorrectedDeclaration ))|
+| RefNumberOfCorrectedDeclaration|RefNumberOfCorrectedDeclaration = ExcDeclarations.@Exc_RefNumberOfCorrectedDeclaration.Value |
+| IsDelayedReporting |IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration))   THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True}|
+| |IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration))   THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True}|
 |                                                                                   ||
 |**PlaceOfIssue**||
 | Region | TaxWarehouse.First(Store.@Exc_Region) |
