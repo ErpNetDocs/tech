@@ -10,7 +10,7 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | IsCorrectionDeclaration|IsCorrectionDeclaration = !(IsNullOrEmptyValue(RefNumberOfCorrectedDeclaration ))|
 | RefNumberOfCorrectedDeclaration|RefNumberOfCorrectedDeclaration = ExcDeclarations.@Exc_RefNumberOfCorrectedDeclaration.Value |
 | IsDelayedReporting |IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration))   THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True}|
-|^ ||IF IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration)  THEN  {RefNumberOfCorrectedDeclaration - MISSING; IsCorrectionDeclaration = false}|
+||IF IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration)  THEN  {RefNumberOfCorrectedDeclaration - MISSING; IsCorrectionDeclaration = false}|
 |                                                                                   ||
 |**PlaceOfIssue**||
 | Region | TaxWarehouse.First(Store.@Exc_Region) |
