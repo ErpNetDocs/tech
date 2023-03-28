@@ -25,3 +25,29 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | Name | ExciseDeclaration.ReportingPerson.PartyName.GetLanguageStringOrAny("bg") |
 | EGN | ExciseDeclaration.ReportingPerson.NationalNumber |
 |                                                                                    ||
+|**ReportingPeriod**||
+| ReceivingDate|MISSING|
+| TaxPeriod| |
+| Start|ExciseDeclaration.FromDate |
+| End | ExciseDeclaration.ToDate |
+|                                                                                    ||
+|**AppliedDocuments**||
+| AppliedDocument||
+| DocumentType |10|
+| PurposeOfeAD |MISSING|
+| Description | MISSING|
+| DocumentNumber| EXC102BG|
+| DocumentDate | ExciseDeclaration.ToDate|
+|||
+| **ExciseGoods**| |
+| ExciseGood | |
+| BrandName | ExciseDeclarationLine.Product.ExciseProductType.CustomProperties("Exc_BrandName")?.Value |
+| Trademark | ExciseDeclarationLine.Product.Name.GetLanguageStringOrAny("bg") |
+|  APCode | ExciseDeclarationLine.ExciseProduct?.Code |
+| CNCode  | ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField |
+| Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name.GetLanguageStringOrAny("bg")|
+| AdditionalCode | ExciseDeclarationLine.Product.PartNumber | 
+| QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity.Value | 
+| IntendedUseOfProduct | ExciseDeclarationLine.Document.CustomProperties("Exc_Purpose")?.Value |
+| Purpose | ExciseDeclarationLine.ExcisePurposeCode?.Code |
+
