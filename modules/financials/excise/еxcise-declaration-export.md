@@ -95,3 +95,20 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | RemovedGood | |
 | QuantityToRemove | ExciseQuantity |
 | DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type |
+| DocumentNumber | ExciseAdministrativeDocument.DocumentNumber |
+| DocumentDate | ExciseAdministrativeDocument.DocumentDate |
+| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode |
+| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber |
+| ProductPurpose | ExciseAdministrativeDocument.@Exc_Purpose|
+| GoodProperty | 0 |
+| PaidAkcizQuantity | PaidAkcizQuantity = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE  <br/>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I"  DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)|
+| OwnerShip | Null | 
+| DocumentReturnDate | Null | 
+| Difference | Difference = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE <br/>   ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty= True <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I" <br/> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine) |
+| ADDNoForDifference | ADDNoForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I" <br/> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)|
+| ADDDateForDifference | ADDDateForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I" <br/> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)|
+| PaidAkcizDocument | PaidAkcizDocument = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I" <br/> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine) |
+| PaidAkcizDocDate | PaidAkcizDocDate = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br/>          ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I" <br/> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine) |
+| NumberOfPackages | IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = "PCE" THEN  NumberOfPackages = „QuantityBase" <br/> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code <> "PCE", THEN NumberOfPackages = Null| 
+| DocumentNumberForReducedRate | Null |
+| | |
