@@ -2,7 +2,7 @@
 
 The table below lists the sources for the tags of the e-ADD xml file:
 
-|**Excise declaration tags **|**Source**|
+|**Excise declaration tags**|**Source**|
 | ------------------------------------------------------------ | ------------------- |
 |**Declaration**||
 | KindOfDeclaration |EXC00|
@@ -112,3 +112,18 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | NumberOfPackages | IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = "PCE" THEN  NumberOfPackages = „QuantityBase" <br/> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code <> "PCE", THEN NumberOfPackages = Null| 
 | DocumentNumberForReducedRate | Null |
 | | |
+| **ExciseLabels**||
+| ExciseLabel | | 
+| LabelType | ExciseStampOperationLines.ExciseStampType.Category |
+| CNCode | ExciseStampOperationLines.ExciseProductType.CommodityCode.CommodityCodeField | 
+| APCode | ExciseStampOperationLines.ExciseProductType.ExciseProduct.Code | 
+| TradeName | ExciseStampOperationLines.ExciseProductType.@Exc_BrandName |
+| MeasureUnit | ExciseStampOperationLines.ExciseProductType.MeasurementUnit |
+| Capacity | ExciseStampOperationLines.ExciseProductType.Capacity | 
+| AlcoholicStrength | ExciseStampOperationLines.ExciseProductType.AlcoholicStrength | 
+| AvailableNotGluedBeginningCount | Box1_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False)|
+| AvailableNotGluedEndCount | Box1_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) |
+| AvailableGluedBeginningCount | Box2_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False)|
+| AvailableGluedEndCount | Box2_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) | 
+| AvailableOutsideCountryBeginningCount | Box3_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) |
+| AvailableOutsideCountryEndCount | Box3_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) | 
