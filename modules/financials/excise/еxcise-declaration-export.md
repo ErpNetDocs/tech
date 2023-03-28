@@ -58,4 +58,5 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | Degree | ExciseDeclarationLine.ExciseAlcoholicStrength ?? 0 |
 | TaxBase | ExciseDeclarationLine.ExciseAmountBase |
 | | | 
+|** WarehouseStockLog** ||
 
