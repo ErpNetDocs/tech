@@ -127,3 +127,13 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | AvailableGluedEndCount | Box2_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) | 
 | AvailableOutsideCountryBeginningCount | Box3_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate < ExciseDeclarations.FromDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) |
 | AvailableOutsideCountryEndCount | Box3_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate <= ExciseDeclarations.ToDate And ExciseStampOperation.State >=30 And ExciseStampOperation.Void = False) | 
+| | |
+
+
+
+The symbol "." is used to indicate that a field or data type is being referenced.
+
+
+The symbol "@xxxx" is used to indicate a custom property with the code "xxxx". If no field reference is specified after it, the custom property's value is used.
+
+The symbol "*" denotes multiplication.
