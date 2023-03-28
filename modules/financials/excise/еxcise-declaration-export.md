@@ -2,7 +2,7 @@
 
 The table below lists the sources for the tags of the e-ADD xml file:
 
-|**Excise declaration**|**Source**|
+|**Excise declaration tags **|**Source**|
 | ------------------------------------------------------------ | ------------------- |
 |**Declaration**||
 | KindOfDeclaration |EXC00|
@@ -78,3 +78,13 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | | |
 | **StoredGoods** | |
 | StoredGood | |
+| DeclaredGoodsQuantity | QuantityBase |
+| ActualStoredGoods |  QuantityBase |
+| DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type | 
+| DocumentNumber | ExciseAdministrativeDocument.DocumentNumber | 
+| DocumentDate | If ReferenceDate is not NULL THEN <br/> DocumentDate = ExciseAdministrativeDocument.ReferenceDate ELSE  <br/> DocumentDate = ExciseAdministrativeDocument.DocumentDate|
+| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode | 
+| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber|
+| RealDateIn | ExciseAdministrativeDocument.DocumentDate |
+| GoodsEntryMethod | ExciseAdministrativeDocument.DocumentType.@Exc_EntryMethod |
+| GoodProperty | 0 |
