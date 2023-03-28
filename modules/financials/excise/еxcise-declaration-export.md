@@ -8,7 +8,7 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | KindOfDeclaration |EXC00|
 | TypeOfDeclaration| EXC002BG |
 | IsCorrectionDeclaration|IsCorrectionDeclaration = !(IsNullOrEmptyValue(RefNumberOfCorrectedDeclaration ))|
-| RefNumberOfCorrectedDeclaration|RefNumberOfCorrectedDeclaration = ExcDeclarations.\@Exc_RefNumberOfCorrectedDeclaration.Value |
+| RefNumberOfCorrectedDeclaration|RefNumberOfCorrectedDeclaration = ExcDeclarations.@Exc_RefNumberOfCorrectedDeclaration.Value |
 | IsDelayedReporting |IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration)) <br/>THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True} <br><br>IF IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration) <br/>THEN  {RefNumberOfCorrectedDeclaration - MISSING; IsCorrectionDeclaration = false}|IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br/>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}|
 |DelayReferenceNumber| IF NOT(IsNullOrEmpty(@Exc_DelayReferenceNumber)) <br/>THEN {DelayReferenceNumber = @Exc_DelayReferenceNumber.Value; IsDelayedReporting = True} <br><br>IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br/>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}|
 | PreparationDate | ExciseDeclaration.DocumentDate |
@@ -58,5 +58,5 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | Degree | ExciseDeclarationLine.ExciseAlcoholicStrength ?? 0 |
 | TaxBase | ExciseDeclarationLine.ExciseAmountBase |
 | | | 
-|** WarehouseStockLog** ||
+|**WarehouseStockLog** ||
 
