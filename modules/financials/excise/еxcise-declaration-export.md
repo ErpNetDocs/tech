@@ -68,7 +68,7 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | APCode | ExciseProduct.Code | 
 | Degree| **AverageDegree** = (InitialDegree + AverageDegreeInPeriod)/(InitialQuantity + QuantityInPeriod) and InitialDegree = (IF ExciseAdministrativeDocument.Direction =  "R" AND ExciseAdministrativeDocument.DocumentDate < FromDate THEN SUМ(ExciseQuantity\*ExciseAlcoholicStrength)   IF ExciseAdministrativeDocument.Direction =  "I" ExciseAdministrativeDocument.DocumentDate < FromDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)) <br><br> **InitialQuantity** = (IF ExciseAdministrativeDocument.Direction =  "R" AND ExciseAdministrativeDocument.DocumentDate < FromDate THEN SUМ(ExciseQuantity)               IF ExciseAdministrativeDocument.Direction =  "I" ExciseAdministrativeDocument.DocumentDate < FromDate THEN SUМ(ExciseQuantity)) <br><br> **AverageDegreeInPeriod** = IF ExciseAdministrativeDocument.Direction =  "R" AND ExciseAdministrativeDocument.DocumentDate >= FromDate AND ExciseAdministrativeDocument.DocumentDate <= ToDate THEN SUМ(ExciseQuantity\*ExciseAlcoholicStrength)  <br><br> **QuantityInPeriod** = IF ExciseAdministrativeDocument.Direction =  "R" AND ExciseAdministrativeDocument.DocumentDate >= FromDate AND ExciseAdministrativeDocument.DocumentDate <= ToDate THEN SUМ(ExciseQuantity)|
 | Pieces| Product.<span>@</span>Exc_Volume | 
-| Measure | Product.BaseMeasurementCategory.MeasurementUnits.Code(MeasurementUnits.IsDefaultUnit=True) | 
+| Measure | ExciseQuantityUnit.Code | 
 | InitialAmount | SUM(QuantityBase) WHERE For Each Product <br/> - ExciseAdministrativeDocument.DocumentDate <  ExciseDeclaration.FromDate <br/> - ExciseAdministrativeDocument is Non Voided And Status >= 30 <br/> - If ExciseAdministrativeDocument.Direction = "I" THEN SUM(-QuantityBase)|
 | FinalAmount | SUM(ExciseQuantity) WHERE For Each Product <br/> - ExciseAdministrativeDocument.DocumentDate <=  ExciseDeclaration.ToDate <br/> - ExciseAdministrativeDocument is Non Voided And Status >= 30 <br/> - If ExciseAdministrativeDocument.Direction = "I" THEN SUM(-QuantityBase) <br/> -(ExciseAdministrativeDocumentLine.@Exc_EAD_For_Difference <> NULL OR "") AND (ExciseAdministrativeDocumentLine.@Exc_EAD_For_Not_Received <> NULL OR "")|
 | IntroducedAmount | SUM(QuantityBase) WHERE For Each Product <br/> - ExciseAdministrativeDocument.DocumentDate >=  ExciseDeclaration.FromDate <br/> - ExciseAdministrativeDocument.DocumentDate <=  ExciseDeclaration.ToDate <br/> - ExciseAdministrativeDocument is Non Voided And Status >= 30 <br/> - ExciseAdministrativeDocument.Direction = "R" |
@@ -78,8 +78,8 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | | |
 | **StoredGoods** | |
 | StoredGood | |
-| DeclaredGoodsQuantity | QuantityBase |
-| ActualStoredGoods |  QuantityBase |
+| DeclaredGoodsQuantity | ExciseQuantity |
+| ActualStoredGoods |  ExciseQuantity |
 | DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type | 
 | DocumentNumber | ExciseAdministrativeDocument.DocumentNumber | 
 | DocumentDate | If ReferenceDate is not NULL THEN <br/> DocumentDate = ExciseAdministrativeDocument.ReferenceDate ELSE  <br/> DocumentDate = ExciseAdministrativeDocument.DocumentDate|
@@ -88,3 +88,10 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | RealDateIn | ExciseAdministrativeDocument.DocumentDate |
 | GoodsEntryMethod | ExciseAdministrativeDocument.DocumentType.@Exc_EntryMethod |
 | GoodProperty | 0 |
+| OwnerShip | Null |
+| NumberOfPackages | IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = "PCE" THEN  NumberOfPackages = „QuantityBase" <br/> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code <> "PCE", THEN NumberOfPackages = Null |
+| | |
+| **RemovedGoods** |  |
+| RemovedGood | |
+| QuantityToRemove | ExciseQuantity |
+| DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type |
