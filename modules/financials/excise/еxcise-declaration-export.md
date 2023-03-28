@@ -133,7 +133,12 @@ The table below lists the sources for the tags of the e-ADD xml file:
 
 The symbol "." is used to indicate that a field or data type is being referenced.
 
-
 The symbol "@xxxx" is used to indicate a custom property with the code "xxxx". If no field reference is specified after it, the custom property's value is used.
 
 The symbol "*" denotes multiplication.
+
+The symbol "<>" means different from.
+
+The " <=" symbol means less than or equal to.
+
+The " >=" symbol means greater than or equal to.
