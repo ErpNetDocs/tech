@@ -50,4 +50,12 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity.Value | 
 | IntendedUseOfProduct | ExciseDeclarationLine.Document.CustomProperties("Exc_Purpose")?.Value |
 | Purpose | ExciseDeclarationLine.ExcisePurposeCode?.Code |
+| DutyAmount | ExciseDeclarationLine.ExciseAmount.Value | 
+| Payment | ExciseDeclarationLine.CustomProperties("Exc_Payment")?.Value + "-" + ExciseDeclarationLine.CustomProperties("Exc_Payment")?.Description | 
+| PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  "0.00" | 
+| Pieces | ExciseDeclarationLine.Product.ExciseProductType?.Capacity | 
+| NumberOfPackages | ExciseDeclarationLine.Quantity.Value | 
+| Degree | ExciseDeclarationLine.ExciseAlcoholicStrength ?? 0 |
+| TaxBase | ExciseDeclarationLine.ExciseAmountBase |
+| | | 
 
