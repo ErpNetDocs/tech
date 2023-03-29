@@ -42,19 +42,19 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | **ExciseGoods**| |
 | ExciseGood | |
 | BrandName | ExciseDeclarationLine.Product.ExciseProductType.<span>@</span>Exc_BrandName.Value |
-| Trademark | ExciseDeclarationLine.Product.Name.GetLanguageStringOrAny("bg") |
+| Trademark | ExciseDeclarationLine.Product.Name |
 |  APCode | ExciseDeclarationLine.ExciseProduct.Code |
 | CNCode  | ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField |
-| Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name.GetLanguageStringOrAny("bg")|
+| Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name|
 | AdditionalCode | ExciseDeclarationLine.Product.PartNumber | 
-| QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity.Value | 
+| QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity | 
 | IntendedUseOfProduct | ExciseDeclarationLine.Document.<span>@</span>Exc_Purpose.Value |
 | Purpose | ExciseDeclarationLine.ExcisePurposeCode.Code |
-| DutyAmount | ExciseDeclarationLine.ExciseAmount.Value | 
+| DutyAmount | ExciseDeclarationLine.ExciseAmount | 
 | Payment | ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + "-" + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description | 
 | PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  "0.00" | 
 | Pieces | ExciseDeclarationLine.Product.ExciseProductType.Capacity | 
-| NumberOfPackages | ExciseDeclarationLine.Quantity.Value | 
+| NumberOfPackages | ExciseDeclarationLine.Quantity | 
 | Degree | If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) |
 | TaxBase | ExciseDeclarationLine.ExciseAmountBase |
 | | | 
