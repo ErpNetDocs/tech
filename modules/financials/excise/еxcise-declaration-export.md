@@ -41,21 +41,21 @@ The table below lists the sources for the tags of the e-ADD xml file:
 |||
 | **ExciseGoods**| |
 | ExciseGood | |
-| BrandName | ExciseDeclarationLine.Product.ExciseProductType.@Exc_BrandName.Value |
+| BrandName | ExciseDeclarationLine.Product.ExciseProductType.<span>@</span>Exc_BrandName.Value |
 | Trademark | ExciseDeclarationLine.Product.Name.GetLanguageStringOrAny("bg") |
 |  APCode | ExciseDeclarationLine.ExciseProduct.Code |
 | CNCode  | ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField |
 | Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name.GetLanguageStringOrAny("bg")|
 | AdditionalCode | ExciseDeclarationLine.Product.PartNumber | 
 | QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity.Value | 
-| IntendedUseOfProduct | ExciseDeclarationLine.Document.@Exc_Purpose.Value |
+| IntendedUseOfProduct | ExciseDeclarationLine.Document.<span>@</span>Exc_Purpose.Value |
 | Purpose | ExciseDeclarationLine.ExcisePurposeCode.Code |
 | DutyAmount | ExciseDeclarationLine.ExciseAmount.Value | 
-| Payment | ExciseDeclarationLine.@Exc_Payment.Value + "-" + ExciseDeclarationLine.@Exc_Payment.Description | 
+| Payment | ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + "-" + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description | 
 | PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  "0.00" | 
-| Pieces | ExciseDeclarationLine.Product.ExciseProductType?.Capacity | 
+| Pieces | ExciseDeclarationLine.Product.ExciseProductType.Capacity | 
 | NumberOfPackages | ExciseDeclarationLine.Quantity.Value | 
-| Degree | ExciseDeclarationLine.ExciseAlcoholicStrength ?? 0 |
+| Degree | If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) |
 | TaxBase | ExciseDeclarationLine.ExciseAmountBase |
 | | | 
 |**WarehouseStockLog**||
@@ -83,8 +83,8 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type | 
 | DocumentNumber | ExciseAdministrativeDocument.DocumentNumber | 
 | DocumentDate | If ReferenceDate is not NULL THEN <br/> DocumentDate = ExciseAdministrativeDocument.ReferenceDate ELSE  <br/> DocumentDate = ExciseAdministrativeDocument.DocumentDate|
-| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode | 
-| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber|
+| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode | 
+| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber|
 | RealDateIn | ExciseAdministrativeDocument.DocumentDate |
 | GoodsEntryMethod | ExciseAdministrativeDocument.DocumentType.@Exc_EntryMethod |
 | GoodProperty | 0 |
@@ -97,8 +97,8 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type |
 | DocumentNumber | ExciseAdministrativeDocument.DocumentNumber |
 | DocumentDate | ExciseAdministrativeDocument.DocumentDate |
-| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode |
-| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber |
+| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode |
+| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber |
 | ProductPurpose | ExciseAdministrativeDocument.@Exc_Purpose|
 | GoodProperty | 0 |
 | PaidAkcizQuantity | PaidAkcizQuantity = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE  <br/>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br/> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = "I"  DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)|
