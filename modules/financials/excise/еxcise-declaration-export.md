@@ -41,17 +41,17 @@ The table below lists the sources for the tags of the e-ADD xml file:
 |||
 | **ExciseGoods**| |
 | ExciseGood | |
-| BrandName | ExciseDeclarationLine.Product.ExciseProductType.CustomProperties("Exc_BrandName")?.Value |
+| BrandName | ExciseDeclarationLine.Product.ExciseProductType.@Exc_BrandName.Value |
 | Trademark | ExciseDeclarationLine.Product.Name.GetLanguageStringOrAny("bg") |
-|  APCode | ExciseDeclarationLine.ExciseProduct?.Code |
+|  APCode | ExciseDeclarationLine.ExciseProduct.Code |
 | CNCode  | ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField |
 | Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name.GetLanguageStringOrAny("bg")|
 | AdditionalCode | ExciseDeclarationLine.Product.PartNumber | 
 | QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity.Value | 
-| IntendedUseOfProduct | ExciseDeclarationLine.Document.CustomProperties("Exc_Purpose")?.Value |
-| Purpose | ExciseDeclarationLine.ExcisePurposeCode?.Code |
+| IntendedUseOfProduct | ExciseDeclarationLine.Document.@Exc_Purpose.Value |
+| Purpose | ExciseDeclarationLine.ExcisePurposeCode.Code |
 | DutyAmount | ExciseDeclarationLine.ExciseAmount.Value | 
-| Payment | ExciseDeclarationLine.CustomProperties("Exc_Payment")?.Value + "-" + ExciseDeclarationLine.CustomProperties("Exc_Payment")?.Description | 
+| Payment | ExciseDeclarationLine.@Exc_Payment.Value + "-" + ExciseDeclarationLine.@Exc_Payment.Description | 
 | PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  "0.00" | 
 | Pieces | ExciseDeclarationLine.Product.ExciseProductType?.Capacity | 
 | NumberOfPackages | ExciseDeclarationLine.Quantity.Value | 
