@@ -276,17 +276,17 @@
 </tr>
 <tr>
 <td>BrandName</td>
-<td>ExciseDeclarationLine.Product.ExciseProductType.CustomProperties(&quot;Exc_BrandName&quot;)?.Value</td>
+<td>ExciseDeclarationLine.Product.ExciseProductType.<span>@</span>Exc_BrandName.Value</td>
 <td></td>
 </tr>
 <tr>
 <td>Trademark</td>
-<td>ExciseDeclarationLine.Product.Name.GetLanguageStringOrAny(&quot;bg&quot;)</td>
+<td>ExciseDeclarationLine.Product.Name</td>
 <td></td>
 </tr>
 <tr>
 <td> APCode</td>
-<td>ExciseDeclarationLine.ExciseProduct?.Code</td>
+<td>ExciseDeclarationLine.ExciseProduct.Code</td>
 <td></td>
 </tr>
 <tr>
@@ -296,7 +296,7 @@
 </tr>
 <tr>
 <td>Measure</td>
-<td>ExciseDeclarationLine.ExciseQuantityUnit.Name.GetLanguageStringOrAny(&quot;bg&quot;)</td>
+<td>ExciseDeclarationLine.ExciseQuantityUnit.Name</td>
 <td></td>
 </tr>
 <tr>
@@ -306,47 +306,47 @@
 </tr>
 <tr>
 <td>QuantityOfGoods</td>
-<td>ExciseDeclarationLine.ExciseQuantity.Value</td>
+<td>ExciseDeclarationLine.ExciseQuantity</td>
 <td></td>
 </tr>
 <tr>
 <td>IntendedUseOfProduct</td>
-<td>ExciseDeclarationLine.Document.CustomProperties(&quot;Exc_Purpose&quot;)?.Value</td>
+<td>ExciseDeclarationLine.Document.<span>@</span>Exc_Purpose.Value</td>
 <td></td>
 </tr>
 <tr>
 <td>Purpose</td>
-<td>ExciseDeclarationLine.ExcisePurposeCode?.Code</td>
+<td>ExciseDeclarationLine.ExcisePurposeCode.Code</td>
 <td></td>
 </tr>
 <tr>
 <td>DutyAmount</td>
-<td>ExciseDeclarationLine.ExciseAmount.Value</td>
+<td>ExciseDeclarationLine.ExciseAmount</td>
 <td></td>
 </tr>
 <tr>
 <td>Payment</td>
-<td>ExciseDeclarationLine.CustomProperties(&quot;Exc_Payment&quot;)?.Value + &quot;-&quot; + ExciseDeclarationLine.CustomProperties(&quot;Exc_Payment&quot;)?.Description</td>
+<td>ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + &quot;-&quot; + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description</td>
 <td></td>
 </tr>
 <tr>
 <td>PaidDuty</td>
-<td>IF(<payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  &quot;0.00&quot;</payment></td>
+<td>IF(PaidDuty = 10 or PaidDuty = 40, ExciseDeclarationLine.ExciseAmount, &quot;0.00&quot;)</td>
 <td></td>
 </tr>
 <tr>
 <td>Pieces</td>
-<td>ExciseDeclarationLine.Product.ExciseProductType?.Capacity</td>
+<td>ExciseDeclarationLine.Product.ExciseProductType.Capacity</td>
 <td></td>
 </tr>
 <tr>
 <td>NumberOfPackages</td>
-<td>ExciseDeclarationLine.Quantity.Value</td>
+<td>ExciseDeclarationLine.Quantity</td>
 <td></td>
 </tr>
 <tr>
 <td>Degree</td>
-<td>ExciseDeclarationLine.ExciseAlcoholicStrength ?? 0 </td>
+<td>If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) </td>
 <td></td>
 </tr>
 <tr>
@@ -486,12 +486,12 @@
 </tr>
 <tr>
 <td>ControlPoint</td>
-<td>ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode</td>
 <td></td>
 </tr>
 <tr>
 <td>TransactionNumber</td>
-<td>ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber</td>
 <td></td>
 </tr>
 <tr>
@@ -556,12 +556,12 @@
 </tr>
 <tr>
 <td>ControlPoint</td>
-<td>ExciseAdministrativeDocumentLine.MeasuringTransaction?.MeasuringDeviceCode</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode</td>
 <td></td>
 </tr>
 <tr>
 <td>TransactionNumber</td>
-<td>ExciseAdministrativeDocumentLine.MeasuringTransaction?.TransactionNumber</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber</td>
 <td></td>
 </tr>
 <tr>
