@@ -52,7 +52,7 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | Purpose | ExciseDeclarationLine.ExcisePurposeCode.Code |
 | DutyAmount | ExciseDeclarationLine.ExciseAmount | 
 | Payment | ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + "-" + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description | 
-| PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount.Value  ELSE  "0.00" | 
+| PaidDuty | IF(<Payment> in (10,40)) THEN ExciseDeclarationLine.ExciseAmount  ELSE  "0.00" | 
 | Pieces | ExciseDeclarationLine.Product.ExciseProductType.Capacity | 
 | NumberOfPackages | ExciseDeclarationLine.Quantity | 
 | Degree | If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) |
