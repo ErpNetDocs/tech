@@ -1,6 +1,6 @@
 # Excise declaration export
 
-The table below lists the sources for the tags of the e-ADD xml file:
+The table below lists the sources for the tags of the Excise declaration xml file:
 
 |**Excise declaration tags**|**Source**|
 | ------------------------------------------------------------ | ------------------- |
