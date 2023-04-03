@@ -7245,6 +7245,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/image-20211209134740745-16390593696201.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/image-20211209134740745-16390593696201.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/index.md",
       "output": {
@@ -7257,9 +7268,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/setup.md",
       "output": {
@@ -7344,23 +7352,12 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "modules/financials/excise/image-20211209134740745-16390593696201.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/financials/excise/image-20211209134740745-16390593696201.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/index.html",
-          "hash": "5P8FA9ITSedb0bhYWzhlPg=="
+          "hash": "dB3Aj6Q8QZjh7CQg9lm3Iw=="
         }
       },
       "is_incremental": false,
@@ -9966,7 +9963,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "DJlh2SMv2JGPvzbqAns5Ag=="
+          "hash": "HEIif1PEecLRhFr312hTxw=="
         }
       },
       "is_incremental": false,
