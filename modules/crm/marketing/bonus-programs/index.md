@@ -36,13 +36,14 @@ Conditions for the particular *bonus programs* are set in the ‘condition’ fi
 
 **Currently, two types of bonuses are supported:**
 - Product – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the bonus program fields *For Each* and *Bonus Product Quantity*. For Example: if there is a bonus program with a product 'Pencil', which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'. In the line field *Bonus program* there is information about the name of the bonus program that is currently applied .  
-- Discount – Calculates a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, standard discount applies, which is defined in the bonus program. Bonus programs do not apply to lines with zero quantity.
+- Discount – Sets a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, the standard discount percent **is replaced** by the value set in the ‘Bonus Line Discount Percent’ field.
+- Cascade discount – Sets a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, the value set in the ‘Bonus Line Discount Percent’ field **is applied after** the standard discount percent. So, the standard discount percent is calculated as follows: Standard Discount = 1 - (1 – Line Standard Discount Percent) * (1 - Bonus Line Discount Percent). Bonus programs do not apply to lines with zero quantity.
 
 A bonus type is required for each bonus program. Both bonus types can not be used simultaneously.
 
 |Data fields:|Description:
 |:----|:----|
-|Bonus Action|Specifies the type of the bonus – a product or a discount.
+|Bonus Action|Specifies the type of the bonus – a product, a discount or a cascade discount.
 |Bonus Product|The product that the customer receives for free, if the conditions of the bonus program are met. The field is required when there is value in Bonus Product.
 |Bonus Product Quantity|The quantity of the bonus product. The field is required if there is a value in Bonus Product.
 |Bonus Product Quantity Unit|The measurement unit of the bonus quantity of the product. The field is required if there is a value in Bonus Product.
