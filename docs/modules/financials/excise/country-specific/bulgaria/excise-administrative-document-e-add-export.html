@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Excise administrative document: e-ADD export | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Excise administrative document: e-ADD export | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="excise-administrative-document-e-add-export">Excise administrative document: e-ADD export</h1>
+
+<p>The table below lists the sources for the tags of the e-ADD xml file:</p>
+<table>
+<thead>
+<tr>
+<th><strong>e-ADD tags</strong></th>
+<th><strong>Excise Product Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Header</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentNumber</td>
+<td>Document.DocumentNumber</td>
+</tr>
+<tr>
+<td>DocumentDate</td>
+<td>Document.DocumentDate</td>
+</tr>
+<tr>
+<td>IsDelayedReporting</td>
+<td>IsDeferredSubmission</td>
+</tr>
+<tr>
+<td>IsExciseNote</td>
+<td>@Exc_Purpose</td>
+</tr>
+<tr>
+<td>TotalAmountOfExciseDuty</td>
+<td>SUM(Lines.ExciseAmount)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PlaceOfIssue</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Region</td>
+<td>TaxWarehouse.First(Store.@Exc_Region)</td>
+</tr>
+<tr>
+<td>Municipality</td>
+<td>TaxWarehouse.First(Store.@Exc_Municipality)</td>
+</tr>
+<tr>
+<td>PostCode</td>
+<td>TaxWarehouse.First(Store.ContactMechanism(ContactMechanismType=P))</td>
+</tr>
+<tr>
+<td>City</td>
+<td>TaxWarehouse.First(Store.@Exc_City)</td>
+</tr>
+<tr>
+<td>District</td>
+<td>TaxWarehouse.First(Store.@Exc_District)</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>TaxWarehouse.First(Store.@Exc_Street)</td>
+</tr>
+<tr>
+<td>StreetNumber</td>
+<td>TaxWarehouse.First(Store.@Exc_StreetNumber)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PersonalDetails</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>ReportingPerson.PartyName</td>
+</tr>
+<tr>
+<td>EGN</td>
+<td>ReportingPerson.NationalNumber</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ConsignorTrader</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Bulstat</td>
+<td>EnterpriseCompany.Company.RegistrationNumber</td>
+</tr>
+<tr>
+<td>TraderName</td>
+<td>EnterpriseCompany.Company.PartyName</td>
+</tr>
+<tr>
+<td>TraderExciseNumber</td>
+<td>TaxWarehouse.TraderExciseNumber</td>
+</tr>
+<tr>
+<td>TaxWarehouseExciseNumber</td>
+<td>TaxWarehouse.TaxWarehouseExciseNumber</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>AddressDetails</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Country</td>
+<td>EnterpriseCompany.Company.@Exc_Country</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>EnterpriseCompany.Company.@Exc_Region</td>
+</tr>
+<tr>
+<td>Municipality</td>
+<td>EnterpriseCompany.Company.@Exc_Municipality</td>
+</tr>
+<tr>
+<td>PostCode</td>
+<td>EnterpriseCompany.Company.ContactMechanism(ContactMechanismType=P)</td>
+</tr>
+<tr>
+<td>City</td>
+<td>EnterpriseCompany.Company.@Exc_City</td>
+</tr>
+<tr>
+<td>District</td>
+<td>EnterpriseCompany.Company.@Exc_District <br> District = Right(@Exc_District,2)</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>EnterpriseCompany.Company.@Exc_Street</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ConsigneeTrader</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>IsForeigner</td>
+<td>If(OtherParty.Company.Country.Code='BG',False,True)</td>
+</tr>
+<tr>
+<td>IdentifyNumber</td>
+<td>OtherParty.Company.RegistrationNumber</td>
+</tr>
+<tr>
+<td>TraderName</td>
+<td>OtherParty.PartyName</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>AddressDetails</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Country</td>
+<td>OtherParty.@Exc_Country</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>OtherParty.@Exc_Region</td>
+</tr>
+<tr>
+<td>Municipality</td>
+<td>OtherParty.@Exc_Municipality</td>
+</tr>
+<tr>
+<td>PostCode</td>
+<td>OtherParty.ContactMechanism(ContactMechanismType=P)</td>
+</tr>
+<tr>
+<td>City</td>
+<td>OtherParty.@Exc_City</td>
+</tr>
+<tr>
+<td>District</td>
+<td>OtherParty.@Exc_District</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>OtherParty.@Exc_Street</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>TransportDetails</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>TransportType</td>
+<td>TransportationVehicle.TransportationMode.Code</td>
+</tr>
+<tr>
+<td>VehicleRegNo</td>
+<td>TransportationVehicle.Vehicle.VehicleRegistrationNumber</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>TransporterTrader</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>IsForeigner</td>
+<td>If(TransportationCarrier.Supplier.Company.Country.Code='BG',False,True)</td>
+</tr>
+<tr>
+<td>IdentifyNumber</td>
+<td>TransportationCarrier.Supplier.Company.RegistrationNumber</td>
+</tr>
+<tr>
+<td>TraderName</td>
+<td>TransportationCarrier.Supplier.Company.PartyName</td>
+</tr>
+<tr>
+<td>TransporterCertificateNumber</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateNumber</td>
+</tr>
+<tr>
+<td>CertificateDateOfIssue</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateDateOfIssue</td>
+</tr>
+<tr>
+<td>CertificateExperationDate</td>
+<td>TransportationCarrier.@Exc_TransporterCertificateExperationDate</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Driver</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>@Exc_Driver.Description</td>
+</tr>
+<tr>
+<td>EGN</td>
+<td>@Exc_Driver.Value</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DeliveryPlaceDetails</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>IsOTTGObject</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DeliveryPlace</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Country</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Country, OtherParty.@Exc_Country)</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Region, OtherParty.@Exc_Region)</td>
+</tr>
+<tr>
+<td>Municipality</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Municipality, OtherParty.@Exc_Municipality)</td>
+</tr>
+<tr>
+<td>PostCode</td>
+<td>If(DeliveryParty != Null, DeliveryParty.ContactMechanism(ContactMechanismType=P), OtherParty.ContactMechanism(ContactMechanismType=P))</td>
+</tr>
+<tr>
+<td>City</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_City, OtherParty.@Exc_City)</td>
+</tr>
+<tr>
+<td>District</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_District, OtherParty.@Exc_District)</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>If(DeliveryParty != Null, DeliveryParty.@Exc_Street, OtherParty.@Exc_Street)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>eADDGoods</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>eADDGood</td>
+<td></td>
+</tr>
+<tr>
+<td>BrandName</td>
+<td>Product.ExciseProductType @Exc_BrandName.Value</td>
+</tr>
+<tr>
+<td>TradeMark</td>
+<td>Product.ProductName</td>
+</tr>
+<tr>
+<td>APCode</td>
+<td>ExciseProduct.Code</td>
+</tr>
+<tr>
+<td>CNCode</td>
+<td>Product.ExciseProductType.CommodityCode.CommodityCodeField</td>
+</tr>
+<tr>
+<td>AdditionalCode</td>
+<td>Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”)</td>
+</tr>
+<tr>
+<td>QuantityOfGoods</td>
+<td>ExciseQuantity</td>
+</tr>
+<tr>
+<td>MissingLabelsCnt</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>OtherMeasure</td>
+<td>ExciseQuantityUnit.Code</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>ExciseAlcoholicStrengt</td>
+</tr>
+<tr>
+<td>Pieces</td>
+<td>Product.ExciseProductType.Capacity</td>
+</tr>
+<tr>
+<td>NumberOfPackages</td>
+<td>Quantity</td>
+</tr>
+<tr>
+<td>TotalAmountPrice</td>
+<td>Quantity*Product.@Exc_LabelPrice</td>
+</tr>
+<tr>
+<td>TaxBase</td>
+<td>ExciseAmountBase</td>
+</tr>
+<tr>
+<td>ExciseDuty</td>
+<td>ExciseDutyRateValue</td>
+</tr>
+<tr>
+<td>DutyAmount</td>
+<td>ExciseAmount</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>@Exc_Payment</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>ExcisePurposeCode.Code</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>MeasureValues</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>ControlPoint</td>
+<td>MeasuringTransaction.MeasuringDeviceCode</td>
+</tr>
+<tr>
+<td>TransactionNumber</td>
+<td>MeasuringTransaction. Transaction number</td>
+</tr>
+<tr>
+<td>DocumentType</td>
+<td>IIF(ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine != NULL AND ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine != &quot;&quot;, ExciseAdministrativeDocumentLine.@Exc_InputDocumentTypeLine, ExciseAdministrativeDocument.@Exc_InputDocumentType)</td>
+</tr>
+<tr>
+<td>DocumentNumber</td>
+<td>IIF(ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine != NULL AND ExciseAdministrativeDocumentLine.@Exc_IInputDocumentNumberLine != &quot;&quot;, ExciseAdministrativeDocumentLine.@Exc_InputDocumentNumberLine, ExciseAdministrativeDocument.@Exc_InputDocumentNumber)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The symbol &quot;.&quot; is used to indicate that a field or data type is being referenced.</p>
+<p>The symbol &quot;@xxxx&quot; is used to indicate a custom property with the code &quot;xxxx&quot;. If no field reference is specified after it, the custom property's value is used.</p>
+<p>The symbol &quot;*&quot; denotes multiplication.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/country-specific/bulgaria/excise-administrative-document-e-add-export.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

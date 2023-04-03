@@ -7234,11 +7234,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/excise-administrative-document-e-add-export.md",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-administrative-document-e-add-export.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/excise-administrative-document-e-add-export.html",
-          "hash": "Hk2S9a5r4sph7RgHcg8caA=="
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-administrative-document-e-add-export.html",
+          "hash": "wA/hW9eWs9K61B4s6Qbdow=="
         }
       },
       "is_incremental": false,
@@ -7246,11 +7246,26 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/excise-categories.md",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/excise-categories.html",
-          "hash": "k/wD1vtVCcxuZoQDcmerqA=="
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/index.html",
+          "hash": "tA3jhHQdJfqufiFJ++W7ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/setup.html",
+          "hash": "S0qTP5LDfVicIU/HkgbG9w=="
         }
       },
       "is_incremental": false,
@@ -7258,11 +7273,71 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/excise-products.md",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/еxcise-declaration-export.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/excise-products.html",
-          "hash": "I99f40ex5l6IP41D250A5w=="
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/еxcise-declaration-export.html",
+          "hash": "e8dRlOwIFHxtMxtOFJMw+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/index.html",
+          "hash": "6R8PQRRNYbMhL9dCu+krYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/definitions/excise-categories.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/definitions/excise-categories.html",
+          "hash": "BozhhysKViblyVuZPBZODA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/definitions/excise-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/definitions/excise-products.html",
+          "hash": "G6vso/+0TS7PRcze5q5sWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/definitions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/definitions/index.html",
+          "hash": "iXPCxuSx8PQRnzo/ud8GFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/documents/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/documents/index.html",
+          "hash": "6zyQ8EP2DmQKAfyKktrMdg=="
         }
       },
       "is_incremental": false,
@@ -7286,30 +7361,6 @@
         ".html": {
           "relative_path": "modules/financials/excise/index.html",
           "hash": "5P8FA9ITSedb0bhYWzhlPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/setup.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/excise/setup.html",
-          "hash": "MKCVhyO5bm19tW/u0qj4rQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/еxcise-declaration-export.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/financials/excise/еxcise-declaration-export.html",
-          "hash": "a5g3vfFmO9ZV97+XOw/+Dg=="
         }
       },
       "is_incremental": false,
@@ -9915,7 +9966,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "qxMawQ8XSYclOkch5hyZiQ=="
+          "hash": "DJlh2SMv2JGPvzbqAns5Ag=="
         }
       },
       "is_incremental": false,

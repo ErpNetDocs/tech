@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Initial Setup | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Initial Setup | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="initial-setup">Initial Setup</h1>
+
+<h2 id="1-the-measurement-units-codes-should-be-defined-according-the-cl1-nomenclature">1. The measurement units codes should be defined according the CL1 nomenclature</h2>
+<p><img src="image-20211209134740745-16390593696201.png" alt="image-20211209134740745"></p>
+<h2 id="2-in-the-products-must-be-defined-excise-product-type-and-the-measurement-unit-in-the-excise-product-type-must-be-measurement-unit-used-in-article-28-and-article-29-from-law-on-excises-and-tax-warehouses">2. In the products must be defined Excise Product Type and the measurement unit in the Excise Product Type must be measurement unit used in article 28 and article 29 from law on excises and tax warehouses</h2>
+<h2 id="3-it-must-be-defined-custom-attributes-with-the-following-codes">3. It must be defined custom attributes with the following codes</h2>
+<h3 id="31-exciseproducttype">3.1. ExciseProductType</h3>
+<p>-     <strong>Exc_BrandName</strong> - Allowed values from CL175 nomencature. Limited to alowed values</p>
+<p>-     <strong>Exc_LabelPrice</strong> – Price on label – Only for specific products – Decimal</p>
+<h3 id="32-documents">3.2. Documents</h3>
+<p>-      <strong>Exc_Purpose</strong> –  Allowed values from CL200 nomenclature. Limited to alowed values</p>
+<p>-      <strong>Exc_Driver</strong> – In Property Value is filling National number of the vehicle and in Property Decription  – Driver name</p>
+<p>-      <strong>Exc_InputDocumentType</strong> - Value for tag DocumentType in section MeasureValues in the export file</p>
+<p>-      <strong>Exc_InputDocumentNumber</strong> - Value for tag DocumentNumber in section MeasureValues in the export file for eADD</p>
+<h3 id="33-exciseadministrativedocumentlines">3.3. ExciseAdministrativeDocumentLines</h3>
+<p>-     <strong>Exc_Payment</strong> – Allowed values from CL163 nomenclature. Limited to alowed values</p>
+<h3 id="34-parties">3.4. Parties</h3>
+<p>-     <strong>Exc_Country</strong> – Allowed values from CL8 nomenclature</p>
+<p>-     <strong>Exc_Region</strong> – Allowed values from CL1101 nomenclature</p>
+<p>-     <strong>Exc_Municipality</strong> – Allowed values from CL1102 nomenclature</p>
+<p>-     <strong>Exc_City</strong> – Allowed values from CL1103 nomenclature</p>
+<p>-     <strong>Exc_District</strong> – Allowed values from CL1104 nomenclature</p>
+<p>-     <strong>Exc_Street</strong> – Street, Number – Text</p>
+<h3 id="35-documenttypes">3.5. DocumentTypes</h3>
+<p>-     <strong>Exc_DocumentType</strong> – Allowed values from CL2305 nomenclature</p>
+<p>-     <strong>Exc_OperationType</strong> – Type of output from Tax Warehouse (For example 1021,1029)</p>
+<h2 id="4-custom-attributes-for-e-ad">4. Custom attributes for e-AD</h2>
+<h3 id="41---parties">4.1.   Parties</h3>
+<p><strong>-</strong>     <strong>Exc_Trader_Excise_Number</strong> - Акцизен номер на търговеца</p>
+<p><strong>-     Exc_EORI</strong> – EORI номер</p>
+<p><strong>-     Exc_StreetNumber</strong> – Номер</p>
+<p><strong>-     Exc_Nad_Lng</strong> – Код на език</p>
+<p><strong>-     Exc_Tax_Warehouse_Excise_Number</strong> – Акцизен номер на данъчния склад</p>
+<p><strong>-     Exc_Custom_Office</strong> – Номер на митническо управление</p>
+<p><strong>-     Exc_Member_State_Code</strong> - Код на държава членка</p>
+<p><strong>-     Exc_Certificate_Of_Exemption</strong> - Сериен номер на сертификат на освободената организация</p>
+<h3 id="42----documents">4.2.    Documents</h3>
+<p><strong>-     Exc_Commercial_Seal_Identification</strong> - Идентификация на търговската пломба</p>
+<p><strong>-     Exc_TD_Complementary_Information</strong> - Транспорт допълнителна информация</p>
+<p><strong>-     Exc_TD_Complementary_Information_LNG</strong> – Транспорт език на допълнителната информация</p>
+<p><strong>-     Exc_Seal_Information</strong> - Информация за пломбата</p>
+<p><strong>-     Exc_Seal_Information_LNG</strong> - Език на информацията за пломбата</p>
+<p><strong>-     Exc_Invoice_Number</strong> – Номер на фактурата</p>
+<p><strong>-     Exc_Invoice_Date</strong> – Дата на фактурата</p>
+<p><strong>-     Exc_Origin_Type_Code</strong> - Код на вида на произхода</p>
+<p><strong>-     Exc_Date_Of_Dispatch</strong> - Дата на изпращане</p>
+<p><strong>-     Exc_Time_Of_Dispatch</strong> – Час на изпращане</p>
+<p><strong>-     Exc_Import_SAD_Number</strong> - Номер на митническа декларация за внос</p>
+<p><strong>-     Exc_Destination_Type_Code</strong> - Код на типа мястото на получаване</p>
+<p><strong>-     Exc_Journey_Time</strong> - Времетраене на транспорта</p>
+<p><strong>-     Exc_Transport_Arrangement</strong> - Код на организацията на транспорта</p>
+<p><strong>-     Exc_TM_Complementary_Information</strong> – Допълнителна информация за тип транспорт</p>
+<p><strong>-     Exc_TM_Complementary_Information_LNG</strong> - Език на допълнителната информация за тип транспорт</p>
+<p><strong>-     Exc_Guarantor_Type_Code</strong> - Код на вида на лицето, предоставящо обезпечение</p>
+<p><strong>-     Exc_EAD_LNG</strong> - Език на e-AD</p>
+<p><strong>-     Exc_Dispatch_Import_Office</strong> - Код на МУ на внос</p>
+<p><strong>-     Exc_Certificate_Document_Type</strong> - Сертификат тип на документа</p>
+<p><strong>-     Exc_Certificate_Document_Reference</strong> - Сертификат номер на документ</p>
+<p><strong>-     Exc_Certificate_Document_Description</strong> - Сертификат описание на документа</p>
+<p><strong>-     Exc_Certificate_Reference_Of_Document</strong> - Сертификат референция на документа</p>
+<p><strong>-     Exc_Tax_Warehouse_Other_Party</strong> - Данъчен склад контрагент</p>
+<p><strong>-     Exc_Guarantor</strong> - Търговец, предоставящ обезпечението</p>
+<p><strong>-     Exc_Transport_Arranger</strong> - Търговец Организатор на транспорта</p>
+<h3 id="43----exciseadministrativedocumentlines">4.3.    ExciseAdministrativeDocumentLines</h3>
+<p><strong>-     Exc_Gross_Weight</strong> - Брутно тегло</p>
+<p><strong>-     Exc_Net_Weight</strong>  - Нетно тегло</p>
+<h3 id="44----exciseproducttype">4.4.    ExciseProductType</h3>
+<p><strong>-     Exc_Kind_Of_Packages</strong> - Код на вида опаковка</p>
+<p><strong>-     Exc_Wine_Product_Category</strong> - Категория на лозаро-винарския продукт</p>
+<p><strong>-     Exc_Wine_Growing_Zone_Code</strong> - Код на лозарската зона</p>
+<p><strong>-     Exc_Third_Country_Of_Origin</strong> - Трета държава на произход</p>
+<p><strong>-     Exc_Wine_Operation_Code</strong> - Код на операция за вино</p>
+<h3 id="45-transportationvehicles">4.5. TransportationVehicles</h3>
+<p><strong>-     Exc_Transport_Units_Code</strong> - Код на транспортната единица</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/country-specific/bulgaria/setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>
