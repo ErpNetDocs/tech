@@ -1,12 +1,11 @@
 - name: Overview
   href: index.md
-- name: Setup
-  href: setup.md 
-- name: Categories
-  href: excise-categories.md
-- name: Excise products
-  href: excise-products.md 
-- name: Excise administrative document e-ADD export
-  href: excise-administrative-document-e-add-export.md
-- name: Excise declaration export
-  href: еxcise-declaration-export.md
+- name: Country specific
+  href: country-specific/toc.yml
+  topicHref: country-specific/index.md
+- name: Definitions
+  href: definitions/toc.yml
+  topicHref: definitions/index.md
+- name: Documents
+  href: documents/toc.yml
+  topicHref: documents/index.md
