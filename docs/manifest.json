@@ -3274,6 +3274,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/country-specific/bulgaria/image-20211209134740745-16390593696201.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/country-specific/bulgaria/image-20211209134740745-16390593696201.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/financials/excise/image-20211209134740745-16390593696201.png",
       "output": {
         "resource": {
@@ -6824,7 +6835,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/marketing/bonus-programs/index.html",
-          "hash": "5st1ljdyci4n8uUB4rp+7A=="
+          "hash": "ZrqVvblGAy1YApO8pcwYXg=="
         }
       },
       "is_incremental": false,

@@ -168,12 +168,14 @@
 <h5>Note</h5>
 <p>When forming the maximum and minimum quantity of products purchased with the particular sales order, the system sums a total quantity of all purchased products defined in the bonus program. For example, if a <em>bonus program</em> is valid for two products - product A and product B and the condition for minimum quantity is 5 pieces, the <em>bonus program</em> will be applied no matter what is the ratio between those two products (2 pcs of product A and 3 pcs of product B, 1 pcs of A and 4 of B, 0 pcs of A and 5 of B …).</p>
 </div>
-<p><strong>Currently, two types of bonuses are supported:</strong></p>
+<p><strong>Currently, three types of bonuses are supported:</strong></p>
 <ul>
-<li>Product – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the bonus program fields <em>For Each</em> and <em>Bonus Product Quantity</em>. For Example: if there is a bonus program with a product 'Pencil', which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'. In the line field <em>Bonus program</em> there is information about the name of the bonus program that is currently applied .</li>
-<li>Discount – Calculates a percentage discount for a specific sales order line. Works as follows: To all lines that meet the conditions, standard discount applies, which is defined in the bonus program. Bonus programs do not apply to lines with zero quantity.</li>
+<li><strong>Product</strong> – Аdds a sales order line with a free product. Works as follows: If all conditions are met, a new line with the bonus product is created. The quantity in the line is determined by the values of the bonus program fields <em>For Each</em> and <em>Bonus Product Quantity</em>. For Example: if there is a bonus program with a product 'Pencil', which is offered as a gift for each 10 ordered books, then if in the sale order there are 30 notebooks, a bonus row with 3 pencils will be created. The line amount is '0.00'.</li>
+<li><strong>Discount</strong> – Sets a percentage discount that <strong>replaces the standard discount percent</strong> for a specific sales order line. Works as follows: To all sales order lines that meet the conditions, the standard discount percent is replaced by the value set in the <em>Bonus Line Discount Percent</em> field. Bonus programs do not apply to lines with zero quantity.</li>
+<li><strong>Cascade discount</strong> – Sets a percentage discount that <strong>is applied after the standard discount percent</strong> for a specific sales order line. Works as follows: To all lines that meet the conditions, the value set in the <em>Bonus Line Discount Percent</em> field is applied after the standard discount percent. So, the standard discount percent is calculated as follows: Line Standard Discount Percent = 1 - (1 – Line Standard Discount Percent) * (1 - Bonus Line Discount Percent). Bonus programs do not apply to lines with zero quantity.</li>
 </ul>
-<p>A bonus type is required for each bonus program. Both bonus types can not be used simultaneously.</p>
+<p>In the sales order line field <em>Bonus program</em> there is information about the name of the bonus program that is currently applied.</p>
+<p>A bonus type is required for each bonus program. Bonus types can not be used simultaneously.</p>
 <table>
 <thead>
 <tr>
@@ -184,7 +186,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Bonus Action</td>
-<td style="text-align: left;">Specifies the type of the bonus – a product or a discount.</td>
+<td style="text-align: left;">Specifies the type of the bonus – a product, a discount or a cascade discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Bonus Product</td>
