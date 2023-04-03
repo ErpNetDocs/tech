@@ -1,6 +1,7 @@
 # Excise
 
 
-- **[Excise Initial Setup](https://docs.erp.net/tech/modules/financials/excise/setup.html)**
-- **[Excise product categories](https://docs.erp.net/tech/modules/financials/excise/excise-product-categories.html)**
-- **[Excise products](https://docs.erp.net/tech/modules/financials/excise/excise-products.html)**
+- **[Definitions](https://docs.erp.net/tech/modules/financials/excise/definitions/index.html)**
+- **[Documents](https://docs.erp.net/tech/modules/financials/excise/documents/excise-products.html)**
+- **[Country specific](https://docs.erp.net/tech/modules/financials/excise/country-specific/index.html)**
+
