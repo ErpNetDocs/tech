@@ -34,3 +34,10 @@ OUTPUT:
 > [!NOTE] 
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrders*.
+
+[!NOTE]
+> It is important to note that if the string being passed to the LEN function is empty or null, it will return an error. Therefore, it is recommended to add an IF > > > operator to check whether the string is empty/null before passing it to the LEN function. This will prevent any errors from occurring and ensure that the function > > works as intended.
+**Example:**
+5	IIF	EXP	7	CONST	0	EXP	10
+7	EQUAL	ATTRIB	DocumentNotes	CONST	Null
+10	LEN	ATTRIB	DocumentNotes
