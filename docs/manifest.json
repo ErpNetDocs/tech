@@ -665,7 +665,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/len.html",
-          "hash": "nvKnsal5DtiWwX4xddY5Xg=="
+          "hash": "7ik4U2LuXNmGSySjSwEeEA=="
         }
       },
       "is_incremental": false,
@@ -7345,6 +7345,18 @@
         ".html": {
           "relative_path": "modules/financials/excise/definitions/index.html",
           "hash": "iXPCxuSx8PQRnzo/ud8GFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/documents/excise-definitions.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/documents/excise-definitions.html",
+          "hash": "lolI56mySbwnkxALsSAeFg=="
         }
       },
       "is_incremental": false,
