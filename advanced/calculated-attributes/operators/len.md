@@ -28,8 +28,8 @@ Let's return the length of the notes set in a sales order:
 10: LEN ATTRIB:Notes
 ```
 OUTPUT: 
-<br/> If 'Notes = Apple', the output will be '5'.
-<br/> If 'Notes = I am', the output will be '4'. 
+<br/> If Notes = 'Apple', the output will be '5'.
+<br/> If Notes = 'I am', the output will be '4'. 
 
 > [!NOTE] 
 > 
