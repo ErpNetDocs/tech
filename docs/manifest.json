@@ -7344,7 +7344,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/definitions/index.html",
-          "hash": "iXPCxuSx8PQRnzo/ud8GFw=="
+          "hash": "OS35EdW+OgmgXqdlrImkTg=="
         }
       },
       "is_incremental": false,
@@ -7352,11 +7352,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/documents/excise-definitions.md",
+      "source_relative_path": "modules/financials/excise/definitions/other-excise-definitions.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/documents/excise-definitions.html",
-          "hash": "lolI56mySbwnkxALsSAeFg=="
+          "relative_path": "modules/financials/excise/definitions/other-excise-definitions.html",
+          "hash": "+qv1SM1C/gBhl9/e6ao7aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/documents/excise-administrative-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/documents/excise-administrative-document.html",
+          "hash": "pt0stdBz4y5SCtQxcarwOA=="
         }
       },
       "is_incremental": false,
@@ -7368,7 +7380,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/documents/index.html",
-          "hash": "6zyQ8EP2DmQKAfyKktrMdg=="
+          "hash": "9R/egmm0JsHxKGfV2Q5adQ=="
         }
       },
       "is_incremental": false,
@@ -9986,7 +9998,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "HEIif1PEecLRhFr312hTxw=="
+          "hash": "gHsLb6q3NSkb0uk+DAFJXA=="
         }
       },
       "is_incremental": false,

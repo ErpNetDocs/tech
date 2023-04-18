@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Excise Administrative Document | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Excise Administrative Document | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="excise-administrative-document">Excise Administrative Document</h1>
+
+<p>The Excise Administrative Document or Excise Document is the primary document that describes the movement of excise goods in the tax warehouse for reporting purposes to the customs authorities.</p>
+<p>It describes the receipts and issues in the tax warehouse, movements within the tax warehouse, as well as the calculation of the excise duty that needs to be paid to the customs authorities. It is also the basis for generating the necessary data for reporting purposes and for preparing the excise declaration for the period.</p>
+<p>The following data are filled in the header:</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#administrativereferencecode">Administrative ReferenceCode</a> - The reference code, returned the customs authorities, when the document  is exported to them or reference code in received documents.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#taxwarehouse">TaxWarehouse</a> - Our licensed tax warehouse for which we report to the customs authorities.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#direction">Direction</a> - The direction of the movement of goods. It determines whether the goods are entering or leaving the tax warehouse.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#accrueexciseduty">AccrueExciseDuty</a> - A checkbox that indicates that excise duty is accrued when the goods are removed from the tax warehouse.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#referencedate">ReferenceDate</a> - The date of the reference document when it is issued by an external organization. It is used mainly when receiving goods into the tax warehouse.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#referencedocumentno">ReferenceDocumentNo</a> - The number of the reference document when it is issued by an external organization. It is used mainly when receiving goods into the tax warehouse.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#isdeferredsubmission">IsDeferredSubmission</a> - Indicates whether the movement has begun under the cover of a paper administrative document.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#otherparty">OtherParty</a> - The other party, sending or receiving the goods.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#deliveryparty">DeliveryParty</a> - Indicates the party where the goods are send/received. null means it is the same as Other Party.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationcarrier">TransportationCarrier</a> - The carrier used for the transportation of the goods.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationvehicle">TransportationVehicle</a> - The vehicle, used for the transportation of the goods.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#reportingperson">ReportingPerson</a> - This is the person submitting the declaration.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html</a></p>
+<p>The following data is filled in the rows:</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#product">Product</a> - The product that is input or output from the excise warehouse.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#lot">Lot</a> - The stock batch with which the corresponding product is booked in or out. It is copied from the parent stock receipt and is used to trace the movement in the warehouse - which batch was involved in which receipt and issue documents.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantity">Quantity</a> - Quantity in the unit of measure of the stock transaction in the Warehouse Management module.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantityunit">QuantityUnit</a> - Unit of measure of the stock transaction from the Warehouse Management module.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantitybase">QuantityBase</a> - Quantity in the base unit of measure of the product. The inventory is managed in the base unit of measure in the Warehouse Management module.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisequantity">ExciseQuantity</a> - Quantity in the Excise unit of measure.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisequantityunit">ExciseQuantityUnit</a> - Excise unit of measure. The record-keeping to the customs authorities is in this unit of measure. It is specified in the Excise Product Types, which is set in the product definition.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#measuringtransaction">MeasuringTransaction</a> - Transaction of product input or output, measured with specialized measuring device for excise purposes.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseproduct">ExciseProduct</a> - The Excise product code defined by the taxation and customs authorities. It is specified in the Excise Product Types, which is set in the product definition. It is loaded automatically upon product selection, but can be changed manually.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisepurposecode">ExcisePurposeCode</a> - The Purpose codes specify the different purposes recognized by the authorities for determining the excise rate.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisealcoholicstrength">ExciseAlcoholicStrength</a> - The alcoholic strength, which will be used for Excise reporting purposes. If a Measuring Transaction is specified, it is taken automatically from it upon product selection. If not, it is taken from the Excise Product Types, which is set in the product definition. It can be changed manually.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamountbase">ExciseAmountBase</a> - The base on which the excise rate is calculated. It is automatically calculated using an algorithm defined in <a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseProductCategories.html">Excise Product Categories</a>. Excise Product Categories are part of the definition of ExciseProduct.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyrate">ExciseDutyRate</a> - A reference to the specific rate in the table <a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseDutyRates.html">ExciseDutyRates</a>, which is determined based on the selected Excise Products, Excise Purpose Codes, and Excise Measurement Units.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue">ExciseDutyRateValue</a> - The value of the determined excise rate <a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue">ExciseDutyRate</a>.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamount">ExciseAmount</a> - The calculated amount of excise based on ExciseAmountBase and ExciseDutyRateValue.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/documents/excise-administrative-document.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
