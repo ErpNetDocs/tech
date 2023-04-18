@@ -81,7 +81,8 @@
 
 <p>The Excise Administrative Document or Excise Document is the primary document that describes the movement of excise goods in the tax warehouse for reporting purposes to the customs authorities.</p>
 <p>It describes the receipts and issues in the tax warehouse, movements within the tax warehouse, as well as the calculation of the excise duty that needs to be paid to the customs authorities. It is also the basis for generating the necessary data for reporting purposes and for preparing the excise declaration for the period.</p>
-<p>The following data are filled in the header:</p>
+<hr>
+<p><strong>The following data are filled in the header:</strong></p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#administrativereferencecode">Administrative ReferenceCode</a> - The reference code, returned the customs authorities, when the document  is exported to them or reference code in received documents.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#taxwarehouse">TaxWarehouse</a> - Our licensed tax warehouse for which we report to the customs authorities.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#direction">Direction</a> - The direction of the movement of goods. It determines whether the goods are entering or leaving the tax warehouse.</p>
@@ -94,8 +95,10 @@
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationcarrier">TransportationCarrier</a> - The carrier used for the transportation of the goods.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationvehicle">TransportationVehicle</a> - The vehicle, used for the transportation of the goods.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#reportingperson">ReportingPerson</a> - This is the person submitting the declaration.</p>
+<br>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html</a></p>
-<p>The following data is filled in the rows:</p>
+<hr>
+<p><strong>The following data is filled in the rows:</strong></p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#product">Product</a> - The product that is input or output from the excise warehouse.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#lot">Lot</a> - The stock batch with which the corresponding product is booked in or out. It is copied from the parent stock receipt and is used to trace the movement in the warehouse - which batch was involved in which receipt and issue documents.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantity">Quantity</a> - Quantity in the unit of measure of the stock transaction in the Warehouse Management module.</p>
@@ -111,6 +114,7 @@
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyrate">ExciseDutyRate</a> - A reference to the specific rate in the table <a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseDutyRates.html">ExciseDutyRates</a>, which is determined based on the selected Excise Products, Excise Purpose Codes, and Excise Measurement Units.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue">ExciseDutyRateValue</a> - The value of the determined excise rate <a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue">ExciseDutyRate</a>.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamount">ExciseAmount</a> - The calculated amount of excise based on ExciseAmountBase and ExciseDutyRateValue.</p>
+<br>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html</a></p>
 </article>
           </div>
