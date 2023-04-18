@@ -1,2 +1,3 @@
 - **[Excise product categories](https://docs.erp.net/tech/modules/financials/excise/definition/excise-product-categories.html)**
 - **[Excise products](https://docs.erp.net/tech/modules/financials/excise/definition/excise-products.html)**
+- **[Other excise definitions](https://docs.erp.net/tech/modules/financials/excise/definition/other-excise-definitions.html)** 
