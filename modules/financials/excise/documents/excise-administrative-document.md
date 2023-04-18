@@ -6,9 +6,11 @@ The Excise Administrative Document or Excise Document is the primary document th
 
 It describes the receipts and issues in the tax warehouse, movements within the tax warehouse, as well as the calculation of the excise duty that needs to be paid to the customs authorities. It is also the basis for generating the necessary data for reporting purposes and for preparing the excise declaration for the period.
 
+------
 
 
-The following data are filled in the header:
+
+**The following data are filled in the header:**
 
 [Administrative ReferenceCode](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#administrativereferencecode) - The reference code, returned the customs authorities, when the document  is exported to them or reference code in received documents.
 
@@ -34,15 +36,15 @@ The following data are filled in the header:
 
 [ReportingPerson](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#reportingperson) - This is the person submitting the declaration. 
 
-
+<BR>
 
 https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html
 
+------
 
 
 
-
-The following data is filled in the rows:
+**The following data is filled in the rows:**
 
 [Product](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#product) - The product that is input or output from the excise warehouse.
 
@@ -74,7 +76,7 @@ The following data is filled in the rows:
 
 [ExciseAmount](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamount) - The calculated amount of excise based on ExciseAmountBase and ExciseDutyRateValue.
 
-
+<BR>
 
 https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html
 
