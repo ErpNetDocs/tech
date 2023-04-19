@@ -87,7 +87,7 @@ The table below lists the sources for the tags of the e-ADD xml file:
 | TradeMark | Product.ProductName |
 | APCode | ExciseProduct.Code |
 | CNCode | Product.ExciseProductType.CommodityCode.CommodityCodeField |
-| AdditionalCode | Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) |
+| AdditionalCode | If(Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , Product.PartNumber) |
 | QuantityOfGoods | ExciseQuantity |
 | MissingLabelsCnt | Null |
 | OtherMeasure | ExciseQuantityUnit.Code |
