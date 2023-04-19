@@ -22,7 +22,7 @@ It must be defined custom attributes with the following codes
 
 ### 3.1. ExciseProductType
 
-- **Exc_BrandName** - Allowed values from CL175 nomencature. Limited to alowed values
+- **Exc_BrandName** - Allowed values from CL175 nomenclature. Limited to allowed values
 
 - **Exc_LabelPrice** – Price on label – Only for specific products – Decimal
 
@@ -80,8 +80,9 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 
 ### 3.5. DocumentTypes
 
-- **Exc_DocumentType** – Allowed values from CL2305 nomenclature
-- **Exc_OperationType** – Type of output from Tax Warehouse (For example 1021,1029)
+- **Exc_AAD_Type** - За тага DocumentType в ***** RemovedGood и ***** StoredGood в WarehouseStockLog. Номенклатура CL164.
+
+- **Exc_EntryMethod** - За тага GoodsEntryMethod в ***** StoredGood в WarehouseStockLog. Номенклатура CL165.
 
 
 
