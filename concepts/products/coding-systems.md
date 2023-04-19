@@ -14,3 +14,5 @@ When a product in the sales order is selected through product code via barcode, 
 
 - "Unit Price" must be recalculated according to the [product dimensions](product-dimensions.md).
 
+Test - notifications.
+
