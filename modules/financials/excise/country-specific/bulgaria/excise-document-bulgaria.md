@@ -1,86 +1,127 @@
-# Excise Administrative Document
+# Excise Administrative Document Bulgaria
 
 
 
-The Excise Administrative Document or Excise Document is the primary document that describes the movement of excise goods in the tax warehouse for reporting purposes to the customs authorities.
+Използване на Акцизен документ за Алкохол и алкохолни изделия
 
-It describes the receipts and issues in the tax warehouse, movements within the tax warehouse, as well as the calculation of the excise duty that needs to be paid to the customs authorities. It is also the basis for generating the necessary data for reporting purposes and for preparing the excise declaration for the period.
+### 1. Изготвяне на e-ADD
+
+##### 1.1. В Типа документ
+
+- **@Exc_AAD_Type = 60**
+
+- **@Exc_EntryMethod = 02**
+
+##### 1.2. Данни в шапката на Акцизен документ
+
+- **AdministrativeReferenceCode** - Референтен код, който се връща от митниците, когато документът се изнася до тях, или референтен код в получени документи - UCN. Попълва се с колекция на документа след като сме получили този номер след експорта.
+
+- **TaxWarehouse** - Нашият лицензиран Данъчен склад, за което докладваме на митническите органи.
+
+- **Direction = Issue.**  Посоката на движение на стоките. Определя дали стоките влизат или излизат от Данъчния склад.
+
+- **AccrueExciseDuty = True.**  Поле за отметка, което указва, че митническите задължения се начисляват при изписване на стоките от Данъчния склад.
+
+- **IsDeferredSubmission** - Означава дали движението е започнало на хартиен административен документ.
+
+- **OtherParty** - Другата страна, получаваща стоките.
+
+- **DeliveryParty** - Указва субекта, където стоките се изпращат. Празното поле означава, че това е същата страна като "OtherParty".
+
+- **TransportationCarrier** - Превозвачът, използван за транспортирането на стоките.
+
+- **TransportationVehicle** - Превозното средство, използвано за транспортиране на стоките.
+- **ReportingPerson** - Това е лицет, подаващо документа. 
+
+- **@Exc_Driver.Value** - ЕГН на водача на превозното средстно
+
+- **@Exc_Driver.Description** - Име на водача на превозното средтво
+
+- **@Exc_Purpose** - Предназначениe на E-ADD. Номенклатура CL200
+
+- **@Exc_InputDocumentType** - Стойността за тага DocumentType в раздела MeasureValues на експортния файл. Условно.
+- **@Exc_InputDocumentNumber** - Стойността за тага DocumentNumber в раздела MeasureValues на експортния файл. Условно.
+
+
+
+<BR>
 
 ------
 
 
 
-**The following data are filled in the header:**
+**1.3. Данни в линиите на Акцизен документ**
 
-[Administrative ReferenceCode](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#administrativereferencecode) - The reference code, returned the customs authorities, when the document  is exported to them or reference code in received documents.
+- **Product** - Продуктът, който изписваме от данъчния склад. Копира се от складовия документ.
 
-[TaxWarehouse](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#taxwarehouse) - Our licensed tax warehouse for which we report to the customs authorities.
+- **Lot** - Партида на продукта, ако има. Копира се от складовия документ.
 
-[Direction](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#direction) - The direction of the movement of goods. It determines whether the goods are entering or leaving the tax warehouse.
+- **Quantity** - Количество в мерна единица от складовия документ. Копира се от генериращия складов документ.
 
-[AccrueExciseDuty](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#accrueexciseduty) - A checkbox that indicates that excise duty is accrued when the goods are removed from the tax warehouse.
+- **QuantityUnit** - Мерна единица от складовия документ. Например брой бутилки, кашони и други. Може да се избира в логистичните документи според необходимостта.
 
-[ReferenceDate](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#referencedate) - The date of the reference document when it is issued by an external organization. It is used mainly when receiving goods into the tax warehouse.
+- **QuantityBase** - Кобичество в Базова мерна единица. Основната мерна единица в която се отчитат наличностите в склада. Задава се в дефиницията на продукта. Изчислява се автоматично.
 
-[ReferenceDocumentNo](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#referencedocumentno) - The number of the reference document when it is issued by an external organization. It is used mainly when receiving goods into the tax warehouse.
+- **ExciseQuantity** - Количество в Акцизната мерна единица. Изчислява се автоматично. 
 
-[IsDeferredSubmission](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#isdeferredsubmission) - Indicates whether the movement has begun under the cover of a paper administrative document.
+- **ExciseQuantityUnit** - Акцизна мерна единица. Това е мерната единица, в която се отчитат акцизните продукти пред митническите власти. Определя се от дължавата и зе задава в Тип акцизен продукт. 
 
-[OtherParty](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#otherparty) - The other party, sending or receiving the goods. 
+- **MeasuringTransaction** - Транзакция за вход или изход на продукт, измерена със специализирано измервателно устройство за цели на акцизното облагане. Зарежда се автоматично при генериране на партидата в складовата разписка.
+- **ExciseProduct** - Кодът на Акцизния продукт, дефиниран от данъчните и митническите органи. Той е зададен в типовете на акцизните продукти, които са част от дефиницията на продукта. Зарежда се автоматично при избор на продукта, но може да бъде променен ръчно.
+- **ExcisePurposeCode** - Предназначението определя различните цели, признати от органите за определяне на ставката на акциза. Задължително.
+- **ExciseAlcoholicStrength** - Алкохолният градус, който ще се използва за цели на акцизното облагане. Ако е зададена Измервателна транзакция, то Алкохолният градус се взема автоматично от нея при избор на продукта. Ако не е, то Алкохолният градус се взема от типовете на акцизните продукти, които са зададени в дефиницията на продукта. Може да се променя ръчно.
+- **ExciseAmountBase** - Основата, върху която се изчислява ставката на акциза. Автоматично се изчислява чрез алгоритъм, дефиниран в категориите на акцизните продукти. Категориите на акцизните продукти са част от дефиницията на акцизния продукт.
+- **ExciseDutyRate** - Справка към конкретната ставка в таблицата за акцизни ставки ExciseDutyRates, която се определя въз основа на избраните Акцизни Продукти, Предназначение и Акцизни мерни единици.
+- **ExciseDutyRateValue** - Стойността на определената ставка на акциза ExciseDutyRate.
+- **ExciseAmount** - Изчислената стойност на акциза въз основа на ExciseAmountBase и ExciseDutyRateValue.
 
-[DeliveryParty](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#deliveryparty) - Indicates the party where the goods are send/received. null means it is the same as Other Party. 
+- **@Exc_Payment** - Код на  плащането. Задължително.
 
-[TransportationCarrier](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationcarrier) - The carrier used for the transportation of the goods. 
-
-[TransportationVehicle](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#transportationvehicle) - The vehicle, used for the transportation of the goods. 
-
-[ReportingPerson](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html#reportingperson) - This is the person submitting the declaration. 
-
-<BR>
-
-https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html
-
-------
-
-
-
-**The following data is filled in the rows:**
-
-[Product](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#product) - The product that is input or output from the excise warehouse.
-
-[Lot](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#lot) - The stock batch with which the corresponding product is booked in or out. It is copied from the parent stock receipt and is used to trace the movement in the warehouse - which batch was involved in which receipt and issue documents.
-
-[Quantity](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantity) - Quantity in the unit of measure of the stock transaction in the Warehouse Management module.
-
-[QuantityUnit](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantityunit) - Unit of measure of the stock transaction from the Warehouse Management module.
-
-[QuantityBase](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#quantitybase) - Quantity in the base unit of measure of the product. The inventory is managed in the base unit of measure in the Warehouse Management module.
-
-[ExciseQuantity](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisequantity) - Quantity in the Excise unit of measure.
-
-[ExciseQuantityUnit](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisequantityunit) - Excise unit of measure. The record-keeping to the customs authorities is in this unit of measure. It is specified in the Excise Product Types, which is set in the product definition.
-
-[MeasuringTransaction](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#measuringtransaction) - Transaction of product input or output, measured with specialized measuring device for excise purposes.
-
-[ExciseProduct](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseproduct) - The Excise product code defined by the taxation and customs authorities. It is specified in the Excise Product Types, which is set in the product definition. It is loaded automatically upon product selection, but can be changed manually.
-
-[ExcisePurposeCode](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisepurposecode) - The Purpose codes specify the different purposes recognized by the authorities for determining the excise rate.
-
-[ExciseAlcoholicStrength](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisealcoholicstrength) - The alcoholic strength, which will be used for Excise reporting purposes. If a Measuring Transaction is specified, it is taken automatically from it upon product selection. If not, it is taken from the Excise Product Types, which is set in the product definition. It can be changed manually.
-
-[ExciseAmountBase](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamountbase) - The base on which the excise rate is calculated. It is automatically calculated using an algorithm defined in [Excise Product Categories](https://docs.erp.net/model/entities/Finance.Excise.ExciseProductCategories.html). Excise Product Categories are part of the definition of ExciseProduct.
-
-[ExciseDutyRate](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyrate) - A reference to the specific rate in the table [ExciseDutyRates](https://docs.erp.net/model/entities/Finance.Excise.ExciseDutyRates.html), which is determined based on the selected Excise Products, Excise Purpose Codes, and Excise Measurement Units.
-
-[ExciseDutyRateValue](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue) - The value of the determined excise rate [ExciseDutyRate](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#excisedutyratevalue).
-
-[ExciseAmount](https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html#exciseamount) - The calculated amount of excise based on ExciseAmountBase and ExciseDutyRateValue.
+- **@Exc_InputDocumentTypeLine** - Тип на входния документ. Стойност за етикета DocumentType в секцията MeasureValues в експортния файл. Ако е празно, се използва Exc_InputDocumentType от заглавието на акцизния документ. Условно поле.
+- **@Exc_InputDocumentNumberLine** - Номер на входния документ. Стойност за етикета DocumentNumber в секцията MeasureValues в експортния файл за eADD. Ако е празно, се използва Exc_InputDocumentNumber от заглавието на акцизния документ. Условно поле.
 
 <BR>
 
-https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocumentLines.html
+**1.4. Parties**
+Полета в избраните субекти - Собствена фирма, Данъчен склад, Отсрещна страна и Субект за доставка:
+
+- **ContactMechanisms.PostalCode** - Пощенски код.
+
+- **@Exc_Country** – Държава
+- **@Exc_Region** – Район
+- **@Exc_Municipality** – Община
+- **@Exc_City** – Град
+- **@Exc_District** – Квартал
+- **@Exc_Street** – Улица, Номер
 
 
 
+**Субектът на данъчния склад е складът с най малък Номер на субект измежду складовете в този данъчен склад.**
 
 
+
+**1.5. TransportationCarrier**
+
+- **@Exc_TransporterCertificateNumber** - Номер на сертификат
+
+- **@Exc_TransporterCertificateDateOfIssue** - Дата на издаване на сертификат
+
+- **@Exc_TransporterCertificateExperationDate** - Валидност на сертификат
+
+  
+
+**1.6. TransportationVehicle**
+
+- **TransportationMode.Code**   - Типът транспорт
+
+- **Vehicle.VehicleRegistrationNumber** - Регистрацианният номер на автомобила
+
+
+
+### 2. Изготвяне на E-ADD за неполучени и липсващи изпратени с e-AD 
+
+### 3. Въвеждане на е-AD при получаване
+
+### 4. Изготвяне на вътрешно складови документи за производство
+
+### 5. Изготвяне на E-AD за изпращане
