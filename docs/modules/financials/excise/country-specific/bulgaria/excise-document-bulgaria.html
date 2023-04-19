@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Excise Administrative Document Bulgaria | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Excise Administrative Document Bulgaria | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="excise-administrative-document-bulgaria">Excise Administrative Document Bulgaria</h1>
+
+<p>Използване на Акцизен документ за Алкохол и алкохолни изделия</p>
+<h3 id="1-изготвяне-на-e-add">1. Изготвяне на e-ADD</h3>
+<h5 id="11-в-типа-документ">1.1. В Типа документ</h5>
+<ul>
+<li><p><strong>@Exc_AAD_Type = 60</strong></p>
+</li>
+<li><p><strong>@Exc_EntryMethod = 02</strong></p>
+</li>
+</ul>
+<h5 id="12-данни-в-шапката-на-акцизен-документ">1.2. Данни в шапката на Акцизен документ</h5>
+<ul>
+<li><p><strong>AdministrativeReferenceCode</strong> - Референтен код, който се връща от митниците, когато документът се изнася до тях, или референтен код в получени документи - UCN. Попълва се с колекция на документа след като сме получили този номер след експорта.</p>
+</li>
+<li><p><strong>TaxWarehouse</strong> - Нашият лицензиран Данъчен склад, за което докладваме на митническите органи.</p>
+</li>
+<li><p><strong>Direction = Issue.</strong>  Посоката на движение на стоките. Определя дали стоките влизат или излизат от Данъчния склад.</p>
+</li>
+<li><p><strong>AccrueExciseDuty = True.</strong>  Поле за отметка, което указва, че митническите задължения се начисляват при изписване на стоките от Данъчния склад.</p>
+</li>
+<li><p><strong>IsDeferredSubmission</strong> - Означава дали движението е започнало на хартиен административен документ.</p>
+</li>
+<li><p><strong>OtherParty</strong> - Другата страна, получаваща стоките.</p>
+</li>
+<li><p><strong>DeliveryParty</strong> - Указва субекта, където стоките се изпращат. Празното поле означава, че това е същата страна като &quot;OtherParty&quot;.</p>
+</li>
+<li><p><strong>TransportationCarrier</strong> - Превозвачът, използван за транспортирането на стоките.</p>
+</li>
+<li><p><strong>TransportationVehicle</strong> - Превозното средство, използвано за транспортиране на стоките.</p>
+</li>
+<li><p><strong>ReportingPerson</strong> - Това е лицет, подаващо документа.</p>
+</li>
+<li><p>**@Exc_Driver.Value** - ЕГН на водача на превозното средстно</p>
+</li>
+<li><p>**@Exc_Driver.Description** - Име на водача на превозното средтво</p>
+</li>
+<li><p>**@Exc_Purpose** - Предназначениe на E-ADD. Номенклатура CL200</p>
+</li>
+<li><p>**@Exc_InputDocumentType** - Стойността за тага DocumentType в раздела MeasureValues на експортния файл. Условно.</p>
+</li>
+<li><p>**@Exc_InputDocumentNumber** - Стойността за тага DocumentNumber в раздела MeasureValues на експортния файл. Условно.</p>
+</li>
+</ul>
+<br>
+<hr>
+<p><strong>1.3. Данни в линиите на Акцизен документ</strong></p>
+<ul>
+<li><p><strong>Product</strong> - Продуктът, който изписваме от данъчния склад. Копира се от складовия документ.</p>
+</li>
+<li><p><strong>Lot</strong> - Партида на продукта, ако има. Копира се от складовия документ.</p>
+</li>
+<li><p><strong>Quantity</strong> - Количество в мерна единица от складовия документ. Копира се от генериращия складов документ.</p>
+</li>
+<li><p><strong>QuantityUnit</strong> - Мерна единица от складовия документ. Например брой бутилки, кашони и други. Може да се избира в логистичните документи според необходимостта.</p>
+</li>
+<li><p><strong>QuantityBase</strong> - Кобичество в Базова мерна единица. Основната мерна единица в която се отчитат наличностите в склада. Задава се в дефиницията на продукта. Изчислява се автоматично.</p>
+</li>
+<li><p><strong>ExciseQuantity</strong> - Количество в Акцизната мерна единица. Изчислява се автоматично.</p>
+</li>
+<li><p><strong>ExciseQuantityUnit</strong> - Акцизна мерна единица. Това е мерната единица, в която се отчитат акцизните продукти пред митническите власти. Определя се от дължавата и зе задава в Тип акцизен продукт.</p>
+</li>
+<li><p><strong>MeasuringTransaction</strong> - Транзакция за вход или изход на продукт, измерена със специализирано измервателно устройство за цели на акцизното облагане. Зарежда се автоматично при генериране на партидата в складовата разписка.</p>
+</li>
+<li><p><strong>ExciseProduct</strong> - Кодът на Акцизния продукт, дефиниран от данъчните и митническите органи. Той е зададен в типовете на акцизните продукти, които са част от дефиницията на продукта. Зарежда се автоматично при избор на продукта, но може да бъде променен ръчно.</p>
+</li>
+<li><p><strong>ExcisePurposeCode</strong> - Предназначението определя различните цели, признати от органите за определяне на ставката на акциза. Задължително.</p>
+</li>
+<li><p><strong>ExciseAlcoholicStrength</strong> - Алкохолният градус, който ще се използва за цели на акцизното облагане. Ако е зададена Измервателна транзакция, то Алкохолният градус се взема автоматично от нея при избор на продукта. Ако не е, то Алкохолният градус се взема от типовете на акцизните продукти, които са зададени в дефиницията на продукта. Може да се променя ръчно.</p>
+</li>
+<li><p><strong>ExciseAmountBase</strong> - Основата, върху която се изчислява ставката на акциза. Автоматично се изчислява чрез алгоритъм, дефиниран в категориите на акцизните продукти. Категориите на акцизните продукти са част от дефиницията на акцизния продукт.</p>
+</li>
+<li><p><strong>ExciseDutyRate</strong> - Справка към конкретната ставка в таблицата за акцизни ставки ExciseDutyRates, която се определя въз основа на избраните Акцизни Продукти, Предназначение и Акцизни мерни единици.</p>
+</li>
+<li><p><strong>ExciseDutyRateValue</strong> - Стойността на определената ставка на акциза ExciseDutyRate.</p>
+</li>
+<li><p><strong>ExciseAmount</strong> - Изчислената стойност на акциза въз основа на ExciseAmountBase и ExciseDutyRateValue.</p>
+</li>
+<li><p>**@Exc_Payment** - Код на  плащането. Задължително.</p>
+</li>
+<li><p>**@Exc_InputDocumentTypeLine** - Тип на входния документ. Стойност за етикета DocumentType в секцията MeasureValues в експортния файл. Ако е празно, се използва Exc_InputDocumentType от заглавието на акцизния документ. Условно поле.</p>
+</li>
+<li><p>**@Exc_InputDocumentNumberLine** - Номер на входния документ. Стойност за етикета DocumentNumber в секцията MeasureValues в експортния файл за eADD. Ако е празно, се използва Exc_InputDocumentNumber от заглавието на акцизния документ. Условно поле.</p>
+</li>
+</ul>
+<br>
+<p><strong>1.4. Parties</strong>
+Полета в избраните субекти - Собствена фирма, Данъчен склад, Отсрещна страна и Субект за доставка:</p>
+<ul>
+<li><p><strong>ContactMechanisms.PostalCode</strong> - Пощенски код.</p>
+</li>
+<li><p>**@Exc_Country** – Държава</p>
+</li>
+<li><p>**@Exc_Region** – Район</p>
+</li>
+<li><p>**@Exc_Municipality** – Община</p>
+</li>
+<li><p>**@Exc_City** – Град</p>
+</li>
+<li><p>**@Exc_District** – Квартал</p>
+</li>
+<li><p>**@Exc_Street** – Улица, Номер</p>
+</li>
+</ul>
+<p><strong>Субектът на данъчния склад е складът с най малък Номер на субект измежду складовете в този данъчен склад.</strong></p>
+<p><strong>1.5. TransportationCarrier</strong></p>
+<ul>
+<li><p>**@Exc_TransporterCertificateNumber** - Номер на сертификат</p>
+</li>
+<li><p>**@Exc_TransporterCertificateDateOfIssue** - Дата на издаване на сертификат</p>
+</li>
+<li><p>**@Exc_TransporterCertificateExperationDate** - Валидност на сертификат</p>
+</li>
+</ul>
+<p><strong>1.6. TransportationVehicle</strong></p>
+<ul>
+<li><p><strong>TransportationMode.Code</strong>   - Типът транспорт</p>
+</li>
+<li><p><strong>Vehicle.VehicleRegistrationNumber</strong> - Регистрацианният номер на автомобила</p>
+</li>
+</ul>
+<h3 id="2-изготвяне-на-e-add-за-неполучени-и-липсващи-изпратени-с-e-ad">2. Изготвяне на E-ADD за неполучени и липсващи изпратени с e-AD</h3>
+<h3 id="3-въвеждане-на-е-ad-при-получаване">3. Въвеждане на е-AD при получаване</h3>
+<h3 id="4-изготвяне-на-вътрешно-складови-документи-за-производство">4. Изготвяне на вътрешно складови документи за производство</h3>
+<h3 id="5-изготвяне-на-e-ad-за-изпращане">5. Изготвяне на E-AD за изпращане</h3>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/country-specific/bulgaria/excise-document-bulgaria.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+  </body>
+</html>

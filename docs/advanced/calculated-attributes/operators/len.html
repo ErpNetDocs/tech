@@ -100,6 +100,18 @@
 <td>string</td>
 </tr>
 <tr>
+<td>Description</td>
+<td>Returns the length of a string.</td>
+</tr>
+<tr>
+<td>Parameter 1 Name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>Parameter 1 Type</td>
+<td>string</td>
+</tr>
+<tr>
 <td>Parameter 2 Name</td>
 <td>-</td>
 </tr>
@@ -119,23 +131,29 @@
 <td>Return value</td>
 <td>The string's length.</td>
 </tr>
+<tr>
+<td>Return value</td>
+<td>The string's length.</td>
+</tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Spaces are included when calculating the length.</p>
 </div>
-<p><strong>Example:</strong></p>
-<p>Let's return the length of the notes set in a sales order:</p>
-<pre><code>10: LEN ATTRIB:Notes
-</code></pre>
-<p>OUTPUT:
-<br> If Notes = 'Apple', the output will be '5'.
-<br> If Notes = 'I am', the output will be '4'.</p>
+<p>@@ -34,3 +34,12 @@ OUTPUT:</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em>.</p>
 </div>
+<p>[!NOTE]</p>
+<blockquote>
+<p>It is important to note that if the string being passed to the LEN function is null, it will return an error. Therefore, it is recommended to add an IF &gt; &gt; &gt; operator to check whether the string is null before passing it to the LEN function. This will prevent any errors from occurring and ensure that the function &gt; &gt;
+works as intended.</p>
+</blockquote>
+<p><strong>Example:</strong>
+| 10 |	IIF	EXP	7	CONST	0	EXP	10                  |
+| 20 |  EQUAL	ATTRIB	DocumentNotes	CONST	Null    |
+| 30 |  LEN	ATTRIB	DocumentNotes                 |</p>
 </article>
           </div>
           

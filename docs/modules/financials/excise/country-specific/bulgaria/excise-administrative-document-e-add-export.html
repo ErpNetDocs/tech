@@ -422,7 +422,7 @@
 </tr>
 <tr>
 <td>AdditionalCode</td>
-<td>Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”)</td>
+<td>If(Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , Product.PartNumber)</td>
 </tr>
 <tr>
 <td>QuantityOfGoods</td>

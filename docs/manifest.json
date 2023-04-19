@@ -660,12 +660,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "include-not-found"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/operators/len.md",
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/len.html",
-          "hash": "7ik4U2LuXNmGSySjSwEeEA=="
+          "hash": "X5zx+Ro/bzWdpvmGBIMskg=="
         }
       },
       "is_incremental": false,
@@ -7249,7 +7252,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-administrative-document-e-add-export.html",
-          "hash": "wA/hW9eWs9K61B4s6Qbdow=="
+          "hash": "xoW/EapDCUxb1rd6Heucvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-bulgaria.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-bulgaria.html",
+          "hash": "cZ52djkhXP03I/C99z6BsQ=="
         }
       },
       "is_incremental": false,
@@ -7267,12 +7282,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/index.html",
-          "hash": "tA3jhHQdJfqufiFJ++W7ig=="
+          "hash": "duyzq72an0iOOAs7U6Qyiw=="
         }
       },
       "is_incremental": false,
@@ -7284,7 +7302,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/setup.html",
-          "hash": "S0qTP5LDfVicIU/HkgbG9w=="
+          "hash": "+2UxCESbZRW+66G9W1t+WA=="
         }
       },
       "is_incremental": false,
@@ -7296,7 +7314,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/еxcise-declaration-export.html",
-          "hash": "e8dRlOwIFHxtMxtOFJMw+w=="
+          "hash": "7GJGMEPwHmn8kLlHvYxOHQ=="
         }
       },
       "is_incremental": false,
@@ -7380,7 +7398,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/documents/index.html",
-          "hash": "u3Foqc/m9cVSUk3KC19wcA=="
+          "hash": "2bziUxS7JsPNlKwHhQAZHw=="
         }
       },
       "is_incremental": false,
@@ -9998,7 +10016,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "gHsLb6q3NSkb0uk+DAFJXA=="
+          "hash": "4OEYQOEx2u1xQ7rPa/G64Q=="
         }
       },
       "is_incremental": false,

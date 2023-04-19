@@ -94,27 +94,27 @@
 </tr>
 <tr>
 <td>KindOfDeclaration</td>
-<td>EXC00</td>
+<td>IF (@Exc_KindOfDeclaration != Null, @Exc_KindOfDeclaration, &quot;EXC00&quot;)</td>
 </tr>
 <tr>
 <td>TypeOfDeclaration</td>
-<td>EXC002BG</td>
+<td>IF (@Exc_TypeOfDeclaration != Null, @Exc_TypeOfDeclaration, &quot;EXC002BG&quot;)</td>
 </tr>
 <tr>
 <td>IsCorrectionDeclaration</td>
-<td>IsCorrectionDeclaration = !(IsNullOrEmptyValue(RefNumberOfCorrectedDeclaration))</td>
+<td>IF (RefNumberOfCorrectedDeclaration != Null, True, False)</td>
 </tr>
 <tr>
 <td>RefNumberOfCorrectedDeclaration</td>
-<td>RefNumberOfCorrectedDeclaration = ExcDeclarations.<span>@ </span>Exc_RefNumberOfCorrectedDeclaration.Value</td>
+<td>@Exc_RefNumberOfCorrectedDeclaration</td>
 </tr>
 <tr>
 <td>IsDelayedReporting</td>
-<td>IF NOT(IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration)) <br>THEN {RefNumberOfCorrectedDeclaration = @Exc_RefNumberOfCorrectedDeclaration.Value; IsCorrectionDeclaration = True} <br><br>IF IsNullOrEmpty(@Exc_RefNumberOfCorrectedDeclaration) <br>THEN  {RefNumberOfCorrectedDeclaration - MISSING; IsCorrectionDeclaration = false} IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}</td>
+<td>IF(@Exc_DelayReferenceNumber != Null, True, False)</td>
 </tr>
 <tr>
 <td>DelayReferenceNumber</td>
-<td>IF NOT(IsNullOrEmpty(@Exc_DelayReferenceNumber)) <br>THEN {DelayReferenceNumber = @Exc_DelayReferenceNumber.Value; IsDelayedReporting = True} <br><br>IF IsNullOrEmpty(@Exc_DelayReferenceNumber ) <br>THEN (DelayReferenceNumber - MISSING; IsDelayedReporting = false}</td>
+<td>@Exc_DelayReferenceNumber</td>
 </tr>
 <tr>
 <td>PreparationDate</td>
@@ -258,7 +258,7 @@
 </tr>
 <tr>
 <td>AdditionalCode</td>
-<td>ExciseDeclarationLine.Product.PartNumber</td>
+<td>If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber)</td>
 </tr>
 <tr>
 <td>QuantityOfGoods</td>
@@ -330,7 +330,7 @@
 </tr>
 <tr>
 <td>AdditionalCode</td>
-<td>Product.PartNumber</td>
+<td>If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber)</td>
 </tr>
 <tr>
 <td>APCode</td>
@@ -398,7 +398,7 @@
 </tr>
 <tr>
 <td>DocumentNumber</td>
-<td>ExciseAdministrativeDocument.DocumentNumber</td>
+<td>If <strong>AdministrativeReferenceCode</strong> is not NULL THEN<br> <br> DocumentNumber = ExciseAdministrativeDocument.<strong>AdministrativeReferenceCode</strong><br> <br> ELSE<br> <br> DocumentNumber = ExciseAdministrativeDocument.DocumentNumber<br></td>
 </tr>
 <tr>
 <td>DocumentDate</td>
