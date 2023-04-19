@@ -32,6 +32,6 @@ items: Operators
 works as intended.
 
 **Example:**
-10	IIF	EXP	7	CONST	0	EXP	10
-20	EQUAL	ATTRIB	DocumentNotes	CONST	Null
-30	LEN	ATTRIB	DocumentNotes
+> 10	IIF	EXP	7	CONST	0	EXP	10
+> 20	EQUAL	ATTRIB	DocumentNotes	CONST	Null
+> 30	LEN	ATTRIB	DocumentNotes
