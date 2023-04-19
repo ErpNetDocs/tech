@@ -1,1 +1,1 @@
- [Excise Administrative Document]([Excise Administrative Document | ERP.net Tech Docs](https://docs.erp.net/tech/modules/financials/excise/documents/excise-administrative-document.html)) 
+ [Excise Administrative Document](https://docs.erp.net/tech/modules/financials/excise/documents/excise-administrative-document.html)
