@@ -40,6 +40,6 @@ OUTPUT:
 works as intended.
 
 **Example:**
-5	IIF	EXP	7	CONST	0	EXP	10
-7	EQUAL	ATTRIB	DocumentNotes	CONST	Null
-10	LEN	ATTRIB	DocumentNotes
+10	IIF	EXP	7	CONST	0	EXP	10
+20	EQUAL	ATTRIB	DocumentNotes	CONST	Null
+30	LEN	ATTRIB	DocumentNotes
