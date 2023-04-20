@@ -50,8 +50,8 @@ It must be defined custom attributes with the following codes
 
 The following two characteristics:
 
-- **Exc_EAD_For_Difference** - Number of e-ADD for differences. Conditional field.
-- **Exc_EAD_For_Not_Received** - Number of e-ADD for not received. Conditional field.
+- **Exc_EAD_For_Difference** - Number of e-AD for differences. Conditional field.
+- **Exc_EAD_For_Not_Received** - Number of e-AD for not received. Conditional field.
 
 are used to fill in the following tags from the RemovedGood section of the Excise Declaration:
 
