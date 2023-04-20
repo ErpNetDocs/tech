@@ -1,8 +1,8 @@
 - name: Setup
   href: setup.md 
-- name: Excise Document
-  href: excise-document-bulgaria.md
-- name: Excise administrative document e-ADD export
+- name: Excise Document for Alcohol
+  href: excise-document-alcohol.md
+- name: Export of e-ADD
   href: excise-administrative-document-e-add-export.md
-- name: Excise declaration export
+- name: Export of Excise Declaration
   href: еxcise-declaration-export.md
