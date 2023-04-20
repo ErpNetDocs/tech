@@ -1,6 +1,6 @@
 ### Other Excise Definitions
 
-##### Tax Warehouses
+##### **Tax Warehouses**
 
 Tax Warehouses are a basic nomenclature in the Excise module. It reflects the licensed tax warehouses of the trader. A Tax Warehouse is associated with one or more warehouses from the Inventory module. This way, the movements in these warehouses trigger the creation of excise documents for the tax warehouse.
 
@@ -16,7 +16,7 @@ https://docs.erp.net/model/entities/Finance.Excise.TaxWarehouses.html
 
 
 
-##### Excise Purpose Codes
+##### **Excise Purpose Codes**
 
 Excise Purpose Codes are used to specify the different purposes recognized by authorities when determining the excise rate. Along with the Excise Product, Purpose Codes play a role in calculating the excise rate based on the Excise Duty Rate table issued by the competent authorities.
 
@@ -24,7 +24,7 @@ https://docs.erp.net/model/entities/Finance.Excise.ExcisePurposeCodes.html
 
 
 
-##### Excise Duty Rate
+##### **Excise Duty Rate**
 
 Duty rates are specified by the taxation and customs authorities. They are the basis for the calculation of the excise amount (based on the  calculation algorithm, specified in the Product Category). 
 
@@ -34,7 +34,7 @@ https://docs.erp.net/model/entities/Finance.Excise.ExciseDutyRates.html
 
 
 
-##### Excise Product Types
+##### **Excise Product Types**
 
 Excise Product Type is a definition that describes the attributes of products related to the excise module. An Excise Product Type can be used in many products if they have the same excise properties.
 
@@ -51,7 +51,7 @@ The main excise attributes are:
 
 
 
-##### Excise Stamp Operation Types
+##### **Excise Stamp Operation Types**
 
 Excise Stamp Operation Types define the operation with excise stamps and how it reflects on the three summing boxes - Box1 Effect, Box2 Effect, and Box3 Effect. The definition of Excise Stamp Operation Types sets the specific operation to either add the Quantity to the corresponding Box, subtract it, or leave it unchanged. The summing boxes, Box1 Effect, Box2 Effect, and Box3 Effect, indicate the available quantities of excise stamps in the respective reporting centers required by the customs authorities.
 
@@ -59,7 +59,7 @@ https://docs.erp.net/model/entities/Finance.Excise.ExciseStampOperationTypes.htm
 
 
 
-##### Excise Stamp Lots
+##### **Excise Stamp Lots**
 
 The Excise Stamp Lots are a series of stamps that are obtained from customs authorities. When received, the Quantity,  Start Number and End Number, the Batch number, which describes the attributes of the issue by the customs authorities, and the Purchase batch, which provides a unique identifier for each receipt in the tax warehouse, are recorded.
 
@@ -69,7 +69,7 @@ https://docs.erp.net/model/entities/Finance.Excise.ExciseStampLots.html
 
 
 
-##### Commodity Codes
+##### **Commodity Codes**
 
 Contains the approved commodity codes for each period from The Combined  Nomenclature used within the European Union countries. They are used for reporting Intrastat and Excise. 
 
