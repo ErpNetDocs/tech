@@ -7252,7 +7252,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-administrative-document-e-add-export.html",
-          "hash": "xoW/EapDCUxb1rd6Heucvw=="
+          "hash": "w3Xe2L67c+9VyeQjogWCUQ=="
         }
       },
       "is_incremental": false,
@@ -7260,11 +7260,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-bulgaria.md",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.md",
       "output": {
         ".html": {
-          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-bulgaria.html",
-          "hash": "cZ52djkhXP03I/C99z6BsQ=="
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.html",
+          "hash": "rVrISzISKMbZbDqPagaOdg=="
         }
       },
       "is_incremental": false,
@@ -7282,15 +7282,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/index.html",
-          "hash": "duyzq72an0iOOAs7U6Qyiw=="
+          "hash": "tFnWWouFZA6xVpUIkXcatw=="
         }
       },
       "is_incremental": false,
@@ -7302,7 +7299,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/setup.html",
-          "hash": "+2UxCESbZRW+66G9W1t+WA=="
+          "hash": "pGfBavQvnOkJb51z5PNWPQ=="
         }
       },
       "is_incremental": false,
@@ -7314,7 +7311,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/еxcise-declaration-export.html",
-          "hash": "7GJGMEPwHmn8kLlHvYxOHQ=="
+          "hash": "bx6ghIxES93VQ04Emh3eaA=="
         }
       },
       "is_incremental": false,
@@ -7374,7 +7371,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/definitions/other-excise-definitions.html",
-          "hash": "+qv1SM1C/gBhl9/e6ao7aw=="
+          "hash": "pOhnBW8prg3u+9pCltJHSw=="
         }
       },
       "is_incremental": false,
@@ -10016,7 +10013,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "4OEYQOEx2u1xQ7rPa/G64Q=="
+          "hash": "UD6lNkBtpWb4M1RMPTYq8A=="
         }
       },
       "is_incremental": false,
