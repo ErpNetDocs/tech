@@ -1,4 +1,8 @@
-# Excise administrative document: e-ADD export
+# Export of e-ADD file BG1015
+
+The xml file of e-ADD is exported from the Excise administrative document.
+
+https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html
 
 The table below lists the sources for the tags of the e-ADD xml file:
 
