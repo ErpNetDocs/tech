@@ -1,4 +1,8 @@
-# Excise declaration export
+# Export of Excise Declaration file
+
+The xml file of Excise Declaration is exported from the Excise declaration.
+
+https://docs.erp.net/model/entities/Finance.Excise.ExciseDeclarations.html
 
 The table below lists the sources for the tags of the Excise declaration xml file:
 
