@@ -7260,11 +7260,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-declaration-alcohol.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-declaration-alcohol.html",
+          "hash": "Zsq3NZWIPwyy+xnOfl8yCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.html",
           "hash": "rVrISzISKMbZbDqPagaOdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-stamp-operation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-stamp-operation.html",
+          "hash": "LWcHZRPsLY6cvsOXjtyyog=="
         }
       },
       "is_incremental": false,
