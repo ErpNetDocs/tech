@@ -7264,7 +7264,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-declaration-alcohol.html",
-          "hash": "Zsq3NZWIPwyy+xnOfl8yCw=="
+          "hash": "m125obnJmkMLY9lqd/WIOQ=="
         }
       },
       "is_incremental": false,
@@ -7311,7 +7311,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/index.html",
-          "hash": "tFnWWouFZA6xVpUIkXcatw=="
+          "hash": "tY4lBjNyPZg+mVSEr+q3jA=="
         }
       },
       "is_incremental": false,
@@ -7415,11 +7415,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/documents/excise-declaration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/documents/excise-declaration.html",
+          "hash": "li2nPDaYhkq2fjSVKOtYHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/documents/excise-stamp-operation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/documents/excise-stamp-operation.html",
+          "hash": "pUEzB3BMOad1qWKLzcFEzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/documents/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/documents/index.html",
-          "hash": "2bziUxS7JsPNlKwHhQAZHw=="
+          "hash": "Ux6UQeuEhM1BxPjtnVlFUA=="
         }
       },
       "is_incremental": false,
@@ -10037,7 +10061,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "UD6lNkBtpWb4M1RMPTYq8A=="
+          "hash": "tRNwfmKqW8R3EtK74ol7pw=="
         }
       },
       "is_incremental": false,
