@@ -1,36 +1,34 @@
 # Excise Declaration
 
-Акцизната декларация е документа с който се отчита определен период към митническите власти.
+The excise declaration is the document that reports a certain period to the customs authorities. 
+
 https://docs.erp.net/model/entities/Finance.Excise.ExciseDeclarations.html
 
+### 1. Entering Excise Declaration
 
+The following basic fields are entered:
 
-### 1. Въвеждане на Акцизна декларация.
+**DocumentDate** - Date of declaration preparation.
 
-Въвеждат се следните основни полета:
+**DocumentType** - Type of document.
 
-**DocumentDate** - Дата на изготвяне на декларяцията
+**DocumentNo** - Serial number of the document.
 
-**DocumentType** - Тип на документ
+**TaxWarehouse** - Tax warehouse for which the report is made.
 
-**DocumentNo** - Пореден номер на документ
+**ReportingPerson** - The person submitting the declaration.
 
-**TaxWarehouse** - Данъчен склад за който се прави отчета
+**FromDate** - Start date of the period for which the declaration is made.
 
-**ReportingPerson** - Лицето, което подава декларяцията
+**ToDate** - End date of the period for which the declaration is made.
 
-**FromDate** - Начална дата на периода, за който се изкотвя декларацията
+### 2. Export of Excise Declaration
 
-**ToDate** - Крайна дата на периода за който се изготвя декларацията
+The export of the XML file is made from the web panel in the excise document with the following address:
 
+**{$rooturl}/legal/customs/excdecl/{Id}**
 
+Where **/legal** is the relative URL of the Legal BG website.
 
-### 2. Експорт на Акцизна декларация
+An active Legal BG website is required to export e-ADD files.
 
-​	Експорта на xml файл се прави от WEB панел в Акцизния документ със следния адрес:
-
-​	**{$rooturl}/legal/customs/excdecl/{Id}**
-
-​	Където /legal e относителният URL на сайта Legal BG. 
-
-​	Необходимо е да има активен Legal BG сайт за да може да се прави експорт на e-ADD файлове.
