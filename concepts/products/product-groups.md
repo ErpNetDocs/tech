@@ -8,7 +8,7 @@ Product groups could also facilitate the creation of the individual products. Fo
 
 - Default measurement unit - a measurement unit to be auto assigned to the products created in the group or the sub-group; 
 
-- Product name mask – specifies a mask for the name of the products created in the group or the sub-group. The function allows creation of more accurate names that follow a certain pattern. 
+- Product name mask – specifies a mask for the name of the products created in the group or the sub-group. The function allows creation of more accurate names that follow a certain pattern. The mask needs to be set for each language separately.
 
 Product groups could also contain other important settings, such as 'Product group required properties', 'Principal recipes', 'Product supply', etc.
 
