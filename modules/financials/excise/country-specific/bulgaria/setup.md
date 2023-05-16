@@ -86,7 +86,7 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 
 ### 3.6. Stores
 
-- **Exc_LegalReports** - Include Store in Logistic Reports for Customs
+- **Exc_LegalReports** - If Exc_LegalReports = 1 then include Store in Logistic Reports for Customs
 
 
 
