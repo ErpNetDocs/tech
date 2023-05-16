@@ -84,6 +84,10 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 
 - **Exc_EntryMethod** - За тага GoodsEntryMethod в ***** StoredGood в WarehouseStockLog. Номенклатура CL165.
 
+### 3.6. Stores
+
+- **Exc_LegalReports** - Include Store in Logistic Reports for Customs
+
 
 
 ## 4. Custom attributes for e-AD
