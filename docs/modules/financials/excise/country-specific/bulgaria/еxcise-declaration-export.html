@@ -82,136 +82,512 @@
 <p>The xml file of Excise Declaration is exported from the Excise declaration.</p>
 <p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseDeclarations.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseDeclarations.html</a></p>
 <p>The table below lists the sources for the tags of the Excise declaration xml file:</p>
-<p>|<strong>Excise declaration tags</strong>|<strong>Source</strong>|
-| ------------------------------------------------------------ | ------------------- |
-|<strong>Declaration</strong>||
-| KindOfDeclaration |IF (@Exc_KindOfDeclaration != Null, @Exc_KindOfDeclaration, &quot;EXC00&quot;)|
-| TypeOfDeclaration| IF (@Exc_TypeOfDeclaration != Null, @Exc_TypeOfDeclaration, &quot;EXC002BG&quot;) |
-| IsCorrectionDeclaration | IF (RefNumberOfCorrectedDeclaration != Null, True, False) |
-| RefNumberOfCorrectedDeclaration| @Exc_RefNumberOfCorrectedDeclaration                         |
-| IsDelayedReporting | IF(@Exc_DelayReferenceNumber != Null, True, False)           |
-|DelayReferenceNumber| @Exc_DelayReferenceNumber |
-| PreparationDate | ExciseDeclaration.DocumentDate |
-| CustomsOffice | ExciseDeclaration.TaxWarehouse.CustomsOffice|
-| TotalAmountOfExciseDuty| SUM ExciseGoods ( If Payment = 10, DutyAmount; If Payment = 40, - DutyAmount; IF Payment&lt;&gt; 10 and 40, 0) |
-|                                                                                   ||
-|<strong>Customer</strong>||
-| LegalEntity | TWH |
-| ExciseNumber | ExciseDeclaration.TaxWarehouse.TaxWarehouseExciseNumber  |
-| SIC   |MISSING|
-| NotificationNumber|MISSING|
-|                                                                                    ||
-|<strong>Declarer</strong>||
-| Name | ExciseDeclaration.ReportingPerson.PartyName.GetLanguageStringOrAny(&quot;bg&quot;) |
-| EGN | ExciseDeclaration.ReportingPerson.NationalNumber |
-|                                                                                    ||
-|<strong>ReportingPeriod</strong>||
-| ReceivingDate|MISSING|
-| TaxPeriod| |
-| Start|ExciseDeclaration.FromDate |
-| End | ExciseDeclaration.ToDate |
-|                                                                                    ||
-|<strong>AppliedDocuments</strong>||
-| AppliedDocument||
-| DocumentType |10|
-| PurposeOfeAD |MISSING|
-| Description | MISSING|
-| DocumentNumber| EXC102BG|
-| DocumentDate | ExciseDeclaration.ToDate|
-|||
-| <strong>ExciseGoods</strong>| |
-| ExciseGood | |
-| BrandName | ExciseDeclarationLine.Product.ExciseProductType.<span>@</span>Exc_BrandName.Value |
-| Trademark | ExciseDeclarationLine.Product.Name |
-|  APCode | ExciseDeclarationLine.ExciseProduct.Code |
-| CNCode  | ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField |
-| Measure |	ExciseDeclarationLine.ExciseQuantityUnit.Name|
-| AdditionalCode | If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber) |
-| QuantityOfGoods | ExciseDeclarationLine.ExciseQuantity |
-| IntendedUseOfProduct | ExciseDeclarationLine.Document.<span>@</span>Exc_Purpose.Value |
-| Purpose | ExciseDeclarationLine.ExcisePurposeCode.Code |
-| DutyAmount | ExciseDeclarationLine.ExciseAmount |
-| Payment | ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + &quot;-&quot; + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description |
-| PaidDuty | IF(PaidDuty = 10 or PaidDuty = 40, ExciseDeclarationLine.ExciseAmount, &quot;0.00&quot;) |
-| Pieces | ExciseDeclarationLine.Product.ExciseProductType.Capacity |
-| NumberOfPackages | ExciseDeclarationLine.Quantity |
-| Degree | If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) |
-| TaxBase | ExciseDeclarationLine.ExciseAmountBase |
-| | |
-|<strong>WarehouseStockLog</strong>||
-| WarehouseGoods| |
-| WarehouseGood| |
-| BrandName | Product.<span>@</span>Exc_BrandName.Value |
-| TradeName | Product.ProductName |
-| CNCode | Product.IntrastatCommodityCode.CommodityCodeField |
-| AdditionalCode | If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber) |
-| APCode | ExciseProduct.Code |
-| Degree| <strong>AverageDegree</strong> = If (InitialQuantity + QuantityInPeriod) == 0 Then  ExciseProductType.AlcoholicStrength  Else  (InitialDegree + AverageDegreeInPeriod)/(InitialQuantity + QuantityInPeriod)
-<br><br>
-Where
-<br><br>
-<strong>InitialDegree</strong> = (IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)   IF ExciseAdministrativeDocument.Direction =  &quot;I&quot; ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)) <br><br> <strong>InitialQuantity</strong> = (IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity)               IF ExciseAdministrativeDocument.Direction =  &quot;I&quot; ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity)) <br><br> <strong>AverageDegreeInPeriod</strong> = IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &gt;= FromDate AND ExciseAdministrativeDocument.DocumentDate &lt;= ToDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)  <br><br> <strong>QuantityInPeriod</strong> = IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &gt;= FromDate AND ExciseAdministrativeDocument.DocumentDate &lt;= ToDate THEN SUМ(ExciseQuantity)|
-| Pieces| Product.<span>@</span>Exc_Volume |
-| Measure | ExciseQuantityUnit.Code |
-| InitialAmount | SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &lt;  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - If ExciseAdministrativeDocument.Direction = &quot;I&quot; THEN SUM(-QuantityBase)|
-| FinalAmount | SUM(ExciseQuantity) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - If ExciseAdministrativeDocument.Direction = &quot;I&quot; THEN SUM(-QuantityBase) <br> -(ExciseAdministrativeDocumentLine.@Exc_EAD_For_Difference &lt;&gt; NULL OR &quot;&quot;) AND (ExciseAdministrativeDocumentLine.@Exc_EAD_For_Not_Received &lt;&gt; NULL OR &quot;&quot;)|
-| IntroducedAmount | SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &gt;=  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - ExciseAdministrativeDocument.Direction = &quot;R&quot; |
-| RemovedAmount | RemovedAmount = SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &gt;=  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument.@Exc_Purpose &lt;&gt; 27,90 or 97 (all others except these three) <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> -(ExciseAdministrativeDocumentLine.@Exc_EAD_For_Difference &lt;&gt; NULL OR &quot;&quot;) AND (ExciseAdministrativeDocumentLine.@Exc_EAD_For_Not_Received &lt;&gt; NULL OR &quot;&quot;) |
-| TransportationLosses | 0 |
-| StorageLosses | 0 |
-| | |
-| <strong>StoredGoods</strong> | |
-| StoredGood | |
-| DeclaredGoodsQuantity | ExciseQuantity |
-| ActualStoredGoods |  ExciseQuantity |
-| DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type |
-| DocumentNumber | If <strong>AdministrativeReferenceCode</strong> is not NULL THEN<br> <br> DocumentNumber = ExciseAdministrativeDocument.<strong>AdministrativeReferenceCode</strong><br> <br> ELSE<br> <br> DocumentNumber = ExciseAdministrativeDocument.DocumentNumber<br> |
-| DocumentDate | If ReferenceDate is not NULL THEN <br> DocumentDate = ExciseAdministrativeDocument.ReferenceDate ELSE  <br> DocumentDate = ExciseAdministrativeDocument.DocumentDate|
-| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode |
-| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber|
-| RealDateIn | ExciseAdministrativeDocument.DocumentDate |
-| GoodsEntryMethod | ExciseAdministrativeDocument.DocumentType.@Exc_EntryMethod |
-| GoodProperty | 0 |
-| OwnerShip | Null |
-| NumberOfPackages | IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = &quot;PCE&quot; THEN  NumberOfPackages = „QuantityBase&quot; <br> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code &lt;&gt; &quot;PCE&quot;, THEN NumberOfPackages = Null |
-| | |
-| <strong>RemovedGoods</strong> |  |
-| RemovedGood | |
-| QuantityToRemove | ExciseQuantity |
-| DocumentType | ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type |
-| DocumentNumber | ExciseAdministrativeDocument.DocumentNumber |
-| DocumentDate | ExciseAdministrativeDocument.DocumentDate |
-| ControlPoint | ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode |
-| TransactionNumber | ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber |
-| ProductPurpose | ExciseAdministrativeDocument.@Exc_Purpose|
-| GoodProperty | 0 |
-| PaidAkcizQuantity | PaidAkcizQuantity = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE  <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot;  DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)|
-| OwnerShip | Null |
-| DocumentReturnDate | Null |
-| Difference | Difference = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE <br>   ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty= True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine) |
-| ADDNoForDifference | ADDNoForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)|
-| ADDDateForDifference | ADDDateForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)|
-| PaidAkcizDocument | PaidAkcizDocument = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine) |
-| PaidAkcizDocDate | PaidAkcizDocDate = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br>          ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine) |
-| NumberOfPackages | IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = &quot;PCE&quot; THEN  NumberOfPackages = „QuantityBase&quot; <br> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code &lt;&gt; &quot;PCE&quot;, THEN NumberOfPackages = Null|
-| DocumentNumberForReducedRate | Null |
-| | |
-| <strong>ExciseLabels</strong>||
-| ExciseLabel | |
-| LabelType | ExciseStampOperationLines.ExciseStampType.Category |
-| CNCode | ExciseStampOperationLines.ExciseProductType.CommodityCode.CommodityCodeField |
-| APCode | ExciseStampOperationLines.ExciseProductType.ExciseProduct.Code |
-| TradeName | ExciseStampOperationLines.ExciseProductType.@Exc_BrandName |
-| MeasureUnit | ExciseStampOperationLines.ExciseProductType.MeasurementUnit |
-| Capacity | ExciseStampOperationLines.ExciseProductType.Capacity |
-| AlcoholicStrength | ExciseStampOperationLines.ExciseProductType.AlcoholicStrength |
-| AvailableNotGluedBeginningCount | Box1_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)|
-| AvailableNotGluedEndCount | Box1_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False) |
-| AvailableGluedBeginningCount | Box2_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)|
-| AvailableGluedEndCount | Box2_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False) |
-| AvailableOutsideCountryBeginningCount | Box3_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False) |
-| AvailableOutsideCountryEndCount | Box3_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False) |
-| | |</p>
+<table>
+<thead>
+<tr>
+<th><strong>Excise declaration tags</strong></th>
+<th><strong>Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Declaration</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>KindOfDeclaration</td>
+<td>IF (@Exc_KindOfDeclaration != Null, @Exc_KindOfDeclaration, &quot;EXC00&quot;)</td>
+</tr>
+<tr>
+<td>TypeOfDeclaration</td>
+<td>IF (@Exc_TypeOfDeclaration != Null, @Exc_TypeOfDeclaration, &quot;EXC002BG&quot;)</td>
+</tr>
+<tr>
+<td>IsCorrectionDeclaration</td>
+<td>IF (RefNumberOfCorrectedDeclaration != Null, True, False)</td>
+</tr>
+<tr>
+<td>RefNumberOfCorrectedDeclaration</td>
+<td>@Exc_RefNumberOfCorrectedDeclaration</td>
+</tr>
+<tr>
+<td>IsDelayedReporting</td>
+<td>IF(@Exc_DelayReferenceNumber != Null, True, False)</td>
+</tr>
+<tr>
+<td>DelayReferenceNumber</td>
+<td>@Exc_DelayReferenceNumber</td>
+</tr>
+<tr>
+<td>PreparationDate</td>
+<td>ExciseDeclaration.DocumentDate </td>
+</tr>
+<tr>
+<td>CustomsOffice</td>
+<td>ExciseDeclaration.TaxWarehouse.CustomsOffice</td>
+</tr>
+<tr>
+<td>TotalAmountOfExciseDuty</td>
+<td>SUM ExciseGoods ( If Payment = 10, DutyAmount; If Payment = 40, - DutyAmount; IF Payment&lt;&gt; 10 and 40, 0)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Customer</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>LegalEntity</td>
+<td>TWH</td>
+</tr>
+<tr>
+<td>ExciseNumber</td>
+<td>ExciseDeclaration.TaxWarehouse.TaxWarehouseExciseNumber</td>
+</tr>
+<tr>
+<td>SIC</td>
+<td>MISSING</td>
+</tr>
+<tr>
+<td>NotificationNumber</td>
+<td>MISSING</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Declarer</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>ExciseDeclaration.ReportingPerson.PartyName.GetLanguageStringOrAny(&quot;bg&quot;)</td>
+</tr>
+<tr>
+<td>EGN</td>
+<td>ExciseDeclaration.ReportingPerson.NationalNumber</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ReportingPeriod</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>ReceivingDate</td>
+<td>MISSING</td>
+</tr>
+<tr>
+<td>TaxPeriod</td>
+<td></td>
+</tr>
+<tr>
+<td>Start</td>
+<td>ExciseDeclaration.FromDate</td>
+</tr>
+<tr>
+<td>End</td>
+<td>ExciseDeclaration.ToDate </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>AppliedDocuments</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>AppliedDocument</td>
+<td></td>
+</tr>
+<tr>
+<td>DocumentType</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PurposeOfeAD</td>
+<td>MISSING</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>MISSING</td>
+</tr>
+<tr>
+<td>DocumentNumber</td>
+<td>EXC102BG</td>
+</tr>
+<tr>
+<td>DocumentDate</td>
+<td>ExciseDeclaration.ToDate</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ExciseGoods</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>ExciseGood</td>
+<td></td>
+</tr>
+<tr>
+<td>BrandName</td>
+<td>ExciseDeclarationLine.Product.ExciseProductType.<span>@</span>Exc_BrandName.Value</td>
+</tr>
+<tr>
+<td>Trademark</td>
+<td>ExciseDeclarationLine.Product.Name</td>
+</tr>
+<tr>
+<td> APCode</td>
+<td>ExciseDeclarationLine.ExciseProduct.Code</td>
+</tr>
+<tr>
+<td>CNCode</td>
+<td>ExciseDeclarationLine.Product.ExciseProductType.CommodityCode.CommodityCodeField</td>
+</tr>
+<tr>
+<td>Measure</td>
+<td>ExciseDeclarationLine.ExciseQuantityUnit.Name</td>
+</tr>
+<tr>
+<td>AdditionalCode</td>
+<td>If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber)</td>
+</tr>
+<tr>
+<td>QuantityOfGoods</td>
+<td>ExciseDeclarationLine.ExciseQuantity</td>
+</tr>
+<tr>
+<td>IntendedUseOfProduct</td>
+<td>ExciseDeclarationLine.Document.<span>@</span>Exc_Purpose.Value</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>ExciseDeclarationLine.ExcisePurposeCode.Code</td>
+</tr>
+<tr>
+<td>DutyAmount</td>
+<td>ExciseDeclarationLine.ExciseAmount</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>ExciseDeclarationLine.<span>@</span>Exc_Payment.Value + &quot;-&quot; + ExciseDeclarationLine.<span>@</span>Exc_Payment.Description</td>
+</tr>
+<tr>
+<td>PaidDuty</td>
+<td>IF(PaidDuty = 10 or PaidDuty = 40, ExciseDeclarationLine.ExciseAmount, &quot;0.00&quot;)</td>
+</tr>
+<tr>
+<td>Pieces</td>
+<td>ExciseDeclarationLine.Product.ExciseProductType.Capacity</td>
+</tr>
+<tr>
+<td>NumberOfPackages</td>
+<td>ExciseDeclarationLine.Quantity</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>If (ExciseDeclarationLine.ExciseAlcoholicStrength is not Null, ExciseDeclarationLine.ExciseAlcoholicStrength, 0) </td>
+</tr>
+<tr>
+<td>TaxBase</td>
+<td>ExciseDeclarationLine.ExciseAmountBase</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>WarehouseStockLog</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>WarehouseGoods</td>
+<td></td>
+</tr>
+<tr>
+<td>WarehouseGood</td>
+<td></td>
+</tr>
+<tr>
+<td>BrandName</td>
+<td>Product.<span>@</span>Exc_BrandName.Value</td>
+</tr>
+<tr>
+<td>TradeName</td>
+<td>Product.ProductName</td>
+</tr>
+<tr>
+<td>CNCode</td>
+<td>Product.IntrastatCommodityCode.CommodityCodeField</td>
+</tr>
+<tr>
+<td>AdditionalCode</td>
+<td>If(ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) != Null, ExciseDeclarationLine.Product.ProductCodes. ProductCodeField(Where CodingSystem. Name=”ExciseAdditionalCode”) , ExciseDeclarationLine.Product.PartNumber)</td>
+</tr>
+<tr>
+<td>APCode</td>
+<td>ExciseProduct.Code</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td><strong>AverageDegree</strong> = If (InitialQuantity + QuantityInPeriod) == 0 Then  ExciseProductType.AlcoholicStrength  Else  (InitialDegree + AverageDegreeInPeriod)/(InitialQuantity + QuantityInPeriod) <br><br> <strong>Where</strong> <br><br> <strong>InitialDegree</strong> = (IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)   IF ExciseAdministrativeDocument.Direction =  &quot;I&quot; ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)) <br><br> <strong>InitialQuantity</strong> = (IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity)               IF ExciseAdministrativeDocument.Direction =  &quot;I&quot; ExciseAdministrativeDocument.DocumentDate &lt; FromDate THEN SUМ(ExciseQuantity)) <br><br> <strong>AverageDegreeInPeriod</strong> = IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &gt;= FromDate AND ExciseAdministrativeDocument.DocumentDate &lt;= ToDate THEN SUМ(ExciseQuantity*ExciseAlcoholicStrength)  <br><br> <strong>QuantityInPeriod</strong> = IF ExciseAdministrativeDocument.Direction =  &quot;R&quot; AND ExciseAdministrativeDocument.DocumentDate &gt;= FromDate AND ExciseAdministrativeDocument.DocumentDate &lt;= ToDate THEN SUМ(ExciseQuantity)</td>
+</tr>
+<tr>
+<td>Pieces</td>
+<td>Product.<span>@</span>Exc_Volume</td>
+</tr>
+<tr>
+<td>Measure</td>
+<td>ExciseQuantityUnit.Code</td>
+</tr>
+<tr>
+<td>InitialAmount</td>
+<td>SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &lt;  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - If ExciseAdministrativeDocument.Direction = &quot;I&quot; THEN SUM(-QuantityBase)</td>
+</tr>
+<tr>
+<td>FinalAmount</td>
+<td>SUM(ExciseQuantity) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - If ExciseAdministrativeDocument.Direction = &quot;I&quot; THEN SUM(-QuantityBase) <br> -(ExciseAdministrativeDocumentLine.@Exc_EAD_For_Difference &lt;&gt; NULL OR &quot;&quot;) AND (ExciseAdministrativeDocumentLine.@Exc_EAD_For_Not_Received &lt;&gt; NULL OR &quot;&quot;)</td>
+</tr>
+<tr>
+<td>IntroducedAmount</td>
+<td>SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &gt;=  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - ExciseAdministrativeDocument.Direction = &quot;R&quot;</td>
+</tr>
+<tr>
+<td>RemovedAmount</td>
+<td>RemovedAmount = SUM(QuantityBase) WHERE For Each Product <br> - ExciseAdministrativeDocument.DocumentDate &gt;=  ExciseDeclaration.FromDate <br> - ExciseAdministrativeDocument.DocumentDate &lt;=  ExciseDeclaration.ToDate <br> - ExciseAdministrativeDocument.@Exc_Purpose &lt;&gt; 27,90 or 97 (all others except these three) <br> - ExciseAdministrativeDocument is Non Voided And Status &gt;= 30 <br> - ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> -(ExciseAdministrativeDocumentLine.@Exc_EAD_For_Difference &lt;&gt; NULL OR &quot;&quot;) AND (ExciseAdministrativeDocumentLine.@Exc_EAD_For_Not_Received &lt;&gt; NULL OR &quot;&quot;)</td>
+</tr>
+<tr>
+<td>TransportationLosses</td>
+<td>0</td>
+</tr>
+<tr>
+<td>StorageLosses</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>StoredGoods</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>StoredGood</td>
+<td></td>
+</tr>
+<tr>
+<td>DeclaredGoodsQuantity</td>
+<td>ExciseQuantity</td>
+</tr>
+<tr>
+<td>ActualStoredGoods</td>
+<td>ExciseQuantity</td>
+</tr>
+<tr>
+<td>DocumentType</td>
+<td>ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type</td>
+</tr>
+<tr>
+<td>DocumentNumber</td>
+<td>If <strong>AdministrativeReferenceCode</strong> is not NULL THEN<br> <br> DocumentNumber = ExciseAdministrativeDocument.<strong>AdministrativeReferenceCode</strong><br> <br> ELSE<br> <br> DocumentNumber = ExciseAdministrativeDocument.DocumentNumber<br></td>
+</tr>
+<tr>
+<td>DocumentDate</td>
+<td>If ReferenceDate is not NULL THEN <br> DocumentDate = ExciseAdministrativeDocument.ReferenceDate ELSE  <br> DocumentDate = ExciseAdministrativeDocument.DocumentDate</td>
+</tr>
+<tr>
+<td>ControlPoint</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode</td>
+</tr>
+<tr>
+<td>TransactionNumber</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber</td>
+</tr>
+<tr>
+<td>RealDateIn</td>
+<td>ExciseAdministrativeDocument.DocumentDate</td>
+</tr>
+<tr>
+<td>GoodsEntryMethod</td>
+<td>ExciseAdministrativeDocument.DocumentType.@Exc_EntryMethod</td>
+</tr>
+<tr>
+<td>GoodProperty</td>
+<td>0</td>
+</tr>
+<tr>
+<td>OwnerShip</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>NumberOfPackages</td>
+<td>IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = &quot;PCE&quot; THEN  NumberOfPackages = „QuantityBase&quot; <br> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code &lt;&gt; &quot;PCE&quot;, THEN NumberOfPackages = Null</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>RemovedGoods</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>RemovedGood</td>
+<td></td>
+</tr>
+<tr>
+<td>QuantityToRemove</td>
+<td>ExciseQuantity</td>
+</tr>
+<tr>
+<td>DocumentType</td>
+<td>ExciseAdministrativeDocument.DocumentType.@Exc_AAD_Type</td>
+</tr>
+<tr>
+<td>DocumentNumber</td>
+<td>ExciseAdministrativeDocument.DocumentNumber</td>
+</tr>
+<tr>
+<td>DocumentDate</td>
+<td>ExciseAdministrativeDocument.DocumentDate</td>
+</tr>
+<tr>
+<td>ControlPoint</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.MeasuringDeviceCode</td>
+</tr>
+<tr>
+<td>TransactionNumber</td>
+<td>ExciseAdministrativeDocumentLine.MeasuringTransaction.TransactionNumber</td>
+</tr>
+<tr>
+<td>ProductPurpose</td>
+<td>ExciseAdministrativeDocument.@Exc_Purpose</td>
+</tr>
+<tr>
+<td>GoodProperty</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PaidAkcizQuantity</td>
+<td>PaidAkcizQuantity = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE  <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot;  DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>OwnerShip</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>DocumentReturnDate</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>Difference</td>
+<td>Difference = SUM(ExciseAdministrativeDocumentLines.QuantityToRemove) WHERE <br>   ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty= True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>ADDNoForDifference</td>
+<td>ADDNoForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>ADDDateForDifference</td>
+<td>ADDDateForDifference = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Difference) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>PaidAkcizDocument</td>
+<td>PaidAkcizDocument = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentNumber) WHERE <br> ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>PaidAkcizDocDate</td>
+<td>PaidAkcizDocDate = FIRST(ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.DocumentDate) WHERE <br>          ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.AccrueExciseDuty = True <br>  ExciseAdministrativeDocumentLines.ExciseAdministrativeDocument.Direction = &quot;I&quot; <br> DetermineLine(ExciseAdministrativeDocumentLines.@Exc_EAD_For_Not_Received) = Current(ExciseAdministrativeDocumentLine)</td>
+</tr>
+<tr>
+<td>NumberOfPackages</td>
+<td>IF ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code = &quot;PCE&quot; THEN  NumberOfPackages = „QuantityBase&quot; <br> IF Product.BaseMeasurementCategory.DefaultMeasurementUnits.Code &lt;&gt; &quot;PCE&quot;, THEN NumberOfPackages = Null</td>
+</tr>
+<tr>
+<td>DocumentNumberForReducedRate</td>
+<td>Null</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ExciseLabels</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>ExciseLabel</td>
+<td></td>
+</tr>
+<tr>
+<td>LabelType</td>
+<td>ExciseStampOperationLines.ExciseStampType.Category</td>
+</tr>
+<tr>
+<td>CNCode</td>
+<td>ExciseStampOperationLines.ExciseProductType.CommodityCode.CommodityCodeField</td>
+</tr>
+<tr>
+<td>APCode</td>
+<td>ExciseStampOperationLines.ExciseProductType.ExciseProduct.Code</td>
+</tr>
+<tr>
+<td>TradeName</td>
+<td>ExciseStampOperationLines.ExciseProductType.@Exc_BrandName</td>
+</tr>
+<tr>
+<td>MeasureUnit</td>
+<td>ExciseStampOperationLines.ExciseProductType.MeasurementUnit</td>
+</tr>
+<tr>
+<td>Capacity</td>
+<td>ExciseStampOperationLines.ExciseProductType.Capacity</td>
+</tr>
+<tr>
+<td>AlcoholicStrength</td>
+<td>ExciseStampOperationLines.ExciseProductType.AlcoholicStrength</td>
+</tr>
+<tr>
+<td>AvailableNotGluedBeginningCount</td>
+<td>Box1_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td>AvailableNotGluedEndCount</td>
+<td>Box1_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box1Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td>AvailableGluedBeginningCount</td>
+<td>Box2_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td>AvailableGluedEndCount</td>
+<td>Box2_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box2Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td>AvailableOutsideCountryBeginningCount</td>
+<td>Box3_Availabulity_Begin = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt; ExciseDeclarations.FromDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td>AvailableOutsideCountryEndCount</td>
+<td>Box3_Availabulity_End = SUM(ExciseStampOperationLines.Quantity if  ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Plus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False + ExciseStampOperationLines.Quantity*(-1) if ExciseStampOperation.ExciseStampOperationType.Box3Effect = 'Minus' And  ExciseStampOperation.DocumentDate &lt;= ExciseDeclarations.ToDate And ExciseStampOperation.State &gt;=30 And ExciseStampOperation.Void = False)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>The symbol &quot;.&quot; is used to indicate that a field or data type is being referenced.</p>
 <p>The symbol &quot;@xxxx&quot; is used to indicate a custom property with the code &quot;xxxx&quot;. If no field reference is specified after it, the custom property's value is used.</p>
 <p>The symbol &quot;*&quot; denotes multiplication.</p>
