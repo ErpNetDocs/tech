@@ -101,15 +101,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>The system job deletes all old notifications, whose CreationTimeUtc is older than 7 days: <br>(Now() - CreationTimeUtc) &gt; 7 days</td>
+<td>The system job deletes all old notifications, whose CreationTimeUtc is older than 7 days</td>
 </tr>
 <tr>
 <td style="text-align: left;">First to process</td>
 <td>Notification.CreationTimeUtc (ASC)</td>
-</tr>
-<tr>
-<td style="text-align: left;">Records per iteration</td>
-<td>10 000</td>
 </tr>
 <tr>
 <td style="text-align: left;">Automatically created</td>
