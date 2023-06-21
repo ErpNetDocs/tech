@@ -344,7 +344,7 @@
 </tr>
 <tr>
 <td>Pieces</td>
-<td>Product.<span>@</span>Exc_Volume</td>
+<td>IF EXISTS(MeasurementUnit((IsDefaultUnit == True) &amp;&amp; (MeasurementCategory == ExciseAdministrativeDocumentLine.Product.BaseMeasurementCategory) &amp;&amp; (MeasurementUnitCode == &quot;PCE&quot;)) <br>THEN    ExciseDeclarations.WarehouseGoods.Pieces = ExciseAdministrativeDocumentLine.Product.ExciseProductTypes.Capacity and is exported <br>ELSE   NOT exported</td>
 </tr>
 <tr>
 <td>Measure</td>
