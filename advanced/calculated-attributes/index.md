@@ -23,11 +23,11 @@ You can define the following calculated attribute:
 
 | No | Operation | Param1 | Param2 | Param3 |
 |----|-----------|--------|--------|--------|
-| 10 | GETREF | REF:Customer | ATTRIB:DefaultPaymentTermDays |
+| 10 | GETOBJVALUE | REF:Customer | ATTRIB:DefaultPaymentTermDays ||
 
 **Explanation:**
 
-- **GETREF** - gets information from a related entity. The related entity is specified in **Param1**. <br> The desired information is specified in **Param2**.
+- **GETOBJVALUE ** - gets information from a related entity. The related entity is specified in **Param1**. <br> The desired information is specified in **Param2**.
 - Line number 10 is the only line in the calculated attribute
 - The return value is the value of the attribute **DefaultPaymentTermDays** in the customer entity.
 
