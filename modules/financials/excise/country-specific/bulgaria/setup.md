@@ -24,8 +24,6 @@ It must be defined custom attributes with the following codes
 
 - **Exc_BrandName** - Allowed values from CL175 nomenclature. Limited to allowed values
 
-- **Exc_LabelPrice** – Price on label – Only for specific products – Decimal
-
 ### 3.2. Documents
 
 - **Exc_Purpose** - Allowed values from the CL200 nomenclature. Limited to allowed values. Used in the Excise Document. Mandatory.
@@ -40,6 +38,18 @@ It must be defined custom attributes with the following codes
 
 - **Exc_DelayReferenceNumber** - The number of the resolution for delay. Used in the Excise Declaration. Not mandatory. 
 
+- **Exc_KindOfDeclaration** - Kind of declaration. Allowed values from the CL166 nomenclature.
+
+- **Exc_TypeOfDeclaration** - Type of declaration. Allowed values from the CL132 nomenclature.
+
+- **Exc_Protocol_Date** - Protocol date - Used for Excise Labels findings.
+
+- **Exc_Protocol_Number** - Protocol Number - Used for Excise Labels findings.
+
+  
+  
+  
+  
   
 
 ### 3.3. ExciseAdministrativeDocumentLines
@@ -87,6 +97,14 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 ### 3.6. Stores
 
 - **Exc_LegalReports** - If Exc_LegalReports = 1 then include Store in Logistic Reports for Customs
+
+### 3.7. TransportationCarrier
+
+- **Exc_TransporterCertificateDateOfIssue** - Transporter Certificate Date OfIssue
+- **Exc_TransporterCertificateExperationDate** - Transporter Certificate Experation Date
+- **Exc_TransporterCertificateNumber** - Transporter Certificate Number
+
+
 
 
 
@@ -156,8 +174,9 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 
 - **Exc_Transport_Units_Code** - Transport unit code
 
-
+  
 
 
 
  
+
