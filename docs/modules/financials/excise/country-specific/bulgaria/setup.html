@@ -91,10 +91,7 @@
 <p>It must be defined custom attributes with the following codes</p>
 <h3 id="31-exciseproducttype">3.1. ExciseProductType</h3>
 <ul>
-<li><p><strong>Exc_BrandName</strong> - Allowed values from CL175 nomenclature. Limited to allowed values</p>
-</li>
-<li><p><strong>Exc_LabelPrice</strong> – Price on label – Only for specific products – Decimal</p>
-</li>
+<li><strong>Exc_BrandName</strong> - Allowed values from CL175 nomenclature. Limited to allowed values</li>
 </ul>
 <h3 id="32-documents">3.2. Documents</h3>
 <ul>
@@ -109,6 +106,14 @@
 <li><p><strong>Exc_RefNumberOfCorrectedDeclaration</strong> - The number of the corrected declaration. Used in the Excise Declaration. Not mandatory.</p>
 </li>
 <li><p><strong>Exc_DelayReferenceNumber</strong> - The number of the resolution for delay. Used in the Excise Declaration. Not mandatory.</p>
+</li>
+<li><p><strong>Exc_KindOfDeclaration</strong> - Kind of declaration. Allowed values from the CL166 nomenclature.</p>
+</li>
+<li><p><strong>Exc_TypeOfDeclaration</strong> - Type of declaration. Allowed values from the CL132 nomenclature.</p>
+</li>
+<li><p><strong>Exc_Protocol_Date</strong> - Protocol date - Used for Excise Labels findings.</p>
+</li>
+<li><p><strong>Exc_Protocol_Number</strong> - Protocol Number - Used for Excise Labels findings.</p>
 </li>
 </ul>
 <h3 id="33-exciseadministrativedocumentlines">3.3. ExciseAdministrativeDocumentLines</h3>
@@ -149,6 +154,12 @@
 <h3 id="36-stores">3.6. Stores</h3>
 <ul>
 <li><strong>Exc_LegalReports</strong> - If Exc_LegalReports = 1 then include Store in Logistic Reports for Customs</li>
+</ul>
+<h3 id="37-transportationcarrier">3.7. TransportationCarrier</h3>
+<ul>
+<li><strong>Exc_TransporterCertificateDateOfIssue</strong> - Transporter Certificate Date OfIssue</li>
+<li><strong>Exc_TransporterCertificateExperationDate</strong> - Transporter Certificate Experation Date</li>
+<li><strong>Exc_TransporterCertificateNumber</strong> - Transporter Certificate Number</li>
 </ul>
 <h2 id="4-custom-attributes-for-e-ad">4. Custom attributes for e-AD</h2>
 <h3 id="41---parties">4.1.   Parties</h3>
