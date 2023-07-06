@@ -19,33 +19,10 @@ The list of the policy kinds is system predifined.
 
 | Kind | Details |
 | :------ | :----------------- |
-| AllowProductChange   | 
-**Description:** Allows execution with a different product than the ordered. <br/><br/> 
-**Possible values:** true, false <br/><br/> 
-**Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> 
-If there is an applicable policy to the line and its value is „false“, then the Product which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> 
-If the user tries to enter a different product, the app will make a negative sound and will display a pop message: _“Product change is not allowed. Please select the suggested product.”_ <br/><br/> 
-Otherwise, the Product can be changed during the execution.  |
-| AllowLotChange   | 
-**Description:** Allows execution with a different lot than the ordered. <br/><br/> 
-**Possible values:** true, false <br/><br/> 
-**Action:** Used in the Orders execution in the WMS Worker app. <br/><br/>  
-If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution.
-<br/><br/>  If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: _“Lot change is not allowed. Please select the suggested lot.”_ <br/><br/> 
-Otherwise, the Lot can be changed during the execution.  |
-| AllowLocationChange   |
-**Description:** Allows execution from a different location than the ordered. <br/><br/> 
-**Possible values:** true, false <br/><br/> 
-**Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „false“, then the Warehouse Location (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> 
-If the user tries to enter a different location, the app will make a negative sound and will display a pop message: _"Location change is not allowed. Please select the suggested location."_ <br/><br/> 
-Otherwise, the Location can be changed during the execution. |
-| AllowUnitChange   | 
-**Description:**_ Allows execution of a quantity in a different measurement unit than the ordered. <br/><br/> 
-**Possible values:** true, false <br/><br/> 
-**Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> 
-If there is an applicable policy to the line and its value is „false“, then the Quantity Unit which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> 
-If the user tries to enter a different quantity unit, the app will make a negative sound and will display a pop message: _"Quantity Unit change is not allowed. 
-Please select the suggested quantity unit."_ <br/><br/> Otherwise, the Unit can be changed during the execution.  |
+| AllowProductChange   | **Description:** Allows execution with a different product than the ordered. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „false“, then the Product which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> If the user tries to enter a different product, the app will make a negative sound and will display a pop message: _“Product change is not allowed. Please select the suggested product.”_ <br/><br/> Otherwise, the Product can be changed during the execution.  |
+| AllowLotChange   | **Description:** Allows execution with a different lot than the ordered. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/>  If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/>  If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: _“Lot change is not allowed. Please select the suggested lot.”_ <br/><br/> Otherwise, the Lot can be changed during the execution.  |
+| AllowLocationChange   |**Description:** Allows execution from a different location than the ordered. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „false“, then the Warehouse Location (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> If the user tries to enter a different location, the app will make a negative sound and will display a pop message: _"Location change is not allowed. Please select the suggested location."_ <br/><br/> Otherwise, the Location can be changed during the execution. |
+| AllowUnitChange   | **Description:**_ Allows execution of a quantity in a different measurement unit than the ordered. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „false“, then the Quantity Unit which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br/><br/> If the user tries to enter a different quantity unit, the app will make a negative sound and will display a pop message: _"Quantity Unit change is not allowed. Please select the suggested quantity unit."_ <br/><br/> Otherwise, the Unit can be changed during the execution.  |
 | RequireSourceScan   | **Description:** Requires scanning of the source location when moving or dispatching. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „true“, then the interface of the Location screen won‘t allow easy selection of the Warehouse Location. <br/><br/> The USE button will be hidden and the selection through the availability table will be inactive. |
 | RequireDestinationScan   | **Description:** Requires scanning of the destination location when moving or receiving. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „true“, then the interface of the Destination screen won‘t allow easy selection of the Warehouse Location. <br/><br/> The USE button will be hidden and the selection through the availability table will be inactive. |
 | RequireProductScan   | **Description:** Requires scanning of the product. <br/><br/> **Possible values:** true, false <br/><br/> **Action:** Used in the Orders execution in the WMS Worker app. <br/><br/> If there is an applicable policy to the line and its value is „true“, then the interface of the Product screen won‘t allow easy selection of the Product. <br/><br/> The USE button will be hidden and the selection through the availability table will be inactive. |
