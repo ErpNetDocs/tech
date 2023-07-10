@@ -2312,6 +2312,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "advanced/web-sites/pictures/instance-manager-restart-website.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/web-sites/pictures/instance-manager-restart-website.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "advanced/web-sites/pictures/website-settings.png",
       "output": {
         "resource": {
@@ -2327,7 +2338,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/web-sites/rate-limits.html",
-          "hash": "2eG2wlgftMprtsevj57iTg=="
+          "hash": "5lhj0j+0xCn/S9pSg5EqvQ=="
         }
       },
       "is_incremental": false,
