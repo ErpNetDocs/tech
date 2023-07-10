@@ -46,3 +46,12 @@ The rate limits settings are expressed by a JSON object in a specific format. He
   }
 }
 ```
+
+> [!NOTE]
+> 
+> To apply the changes, a restart of the website is required.
+>
+> This task can be performed by your @@erpnet instance administrator or by accessing the website Instance Manager and navigate to the 'Web Sites' section.
+> 
+> Тypically, Instance Manager is located at the following address: `https://<your-erpnet-instance>.my.erp.net/manage`
+> ![Web-site-restart](./pictures/instance-manager-restart-website.png)
