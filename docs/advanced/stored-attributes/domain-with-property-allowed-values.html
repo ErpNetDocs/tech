@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Domain with property allowed values | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Domain with property allowed values | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="domain-with-property-allowed-values">
+<h1 id="domain-with-property-allowed-values">Domain with property allowed values</h1>
+
+<p>Domain is the range of the allowed values of a particular stored attribute (custom property).</p>
+<p>It's determined in one of the following ways, sorted by high-to-low priority:</p>
+<ol>
+<li><p>If <em>Limit To Allowed Values</em> <strong>doesn't</strong> have a check mark, <br> any value is valid and the domain is a range of <strong>all</strong> possible values.</p>
+</li>
+<li><p>If <em>Allowed Values Entity Name</em> <strong>has</strong> a value, <br> the domain is <strong>all records</strong> of the specified data type.</p>
+<p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a check mark <br> and <em>Allowed Values Property</em> does NOT have a value.</p>
+</li>
+<li><p>If <em>Allowed Values Property</em> has a value, <br> the stored attribute domain is <strong>equal</strong> to the stored attribute domain specified in this field.</p>
+</li>
+</ol>
+<pre><code>CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
+</code></pre>
+<p>This field has a value <strong>ONLY</strong> if <em>Limit To Allowed Values</em> has a checkmark and <em>Allowed Values Entity Name</em> does NOT have a value.</p>
+<ol start="4">
+<li>A range of the <em>Property Allowed Values</em> listed in the <strong>Gen_Property_Allowed_Values</strong> sub-table.</li>
+</ol>
+<p><strong>Example 1:</strong></p>
+<p>Let's assume you have the following properties:</p>
+<ul>
+<li><p>Property 1 (entity name = Products)</p>
+</li>
+<li><p>Property 2 (allowed values property = Property 1)</p>
+</li>
+<li><p>Property 3 (entity name = Products)</p>
+</li>
+<li><p>Property 4 (entity name = Companies)</p>
+</li>
+<li><p>Property 5 (allowed values property = Property 2)</p>
+</li>
+<li><p>Property 6 (limit to allowed values = False)</p>
+</li>
+</ul>
+<p><strong>In this case, the domains are:</strong></p>
+<ul>
+<li><p>Property 1 - Products</p>
+</li>
+<li><p>Property 2 - Products</p>
+</li>
+<li><p>Property 3 - Products</p>
+</li>
+<li><p>Property 4 - Companies</p>
+</li>
+<li><p>Property 5 - Products</p>
+</li>
+<li><p>Property 6 – all possible values</p>
+</li>
+</ul>
+<h2 id="compatible-stored-attributes">Compatible stored attributes</h2>
+<p>Two stored attributes are copy-compatible <strong>ONLY</strong> when their domains are the same.</p>
+<p>Compatibility allows you to copy values from one stored attribute to another. This process could result in an error, but it would be caused by various reasons, such as additional filters being set in the definition.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Additional filters <strong>don't</strong> change the domain of the stored attribute - they simply reduce the range with allowed values.
+It's also possible for future procedures or rules to be added, but they <strong>won’t</strong> change the domain of the stored attribute, either.
+From a programming perspective, the domain of allowed values could be defined as a <strong>stored attribute type</strong>.</p>
+</div>
+<p><strong>Example 2:</strong></p>
+<p>If you use Example 1, you can conclude that:</p>
+<ul>
+<li><p>'Property 1' is compatible with 'Property 2'.  Both of them are compatible with 'Property 3' and 'Property 5'. Therefore, 'Property 1', 'Property 2', 'Property 3' and 'Property 5' are compatible with еach other.</p>
+</li>
+<li><p>'Property 4' is compatible with none of the above.</p>
+</li>
+<li><p>'Property 6' can take any value and it is also incompatible with the other stored attributes.</p>
+</li>
+</ul>
+<h2 id="inheriting-and-hereditary-root">Inheriting and hereditary root</h2>
+<p>A stored attribute inherits another stored attribute by indicating a (hereditary) <strong>parent</strong> property in the <em>Allowed Values Property</em> field. The hereditary root of a stored attribute is considered <strong>grand-parent</strong>, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.</p>
+<p>A hereditary root is defined as follows:</p>
+<ol>
+<li><p>If <em>Allowed Values Property</em> doesn't have a value, the hereditary root is <strong>the stored attribute</strong> itself.</p>
+</li>
+<li><p>Otherwise, it's equal to the hereditary root of the <strong>parent stored attribute</strong>.</p>
+<p>This means that:<br>
+HereditaryRoot (Property) = HereditaryRoot(Property. AllowedValuesProperty)<br>
+i.e. you look recursively in the relation <em>Allowed Values Property</em>.</p>
+</li>
+</ol>
+<p><strong>Example 3:</strong></p>
+<p>According to the example above, stored attributes have the following hereditary roots:</p>
+<ul>
+<li><p>Property 1: Property 1</p>
+</li>
+<li><p>Property 2: Property 1</p>
+</li>
+<li><p>Property 3: Property 3</p>
+</li>
+<li><p>Property 4: Property 4</p>
+</li>
+<li><p>Property 5: Property 1</p>
+</li>
+<li><p>Property 6: Property 6</p>
+</li>
+</ul>
+<h2 id="copying">Copying</h2>
+<p>Hereditary roots determine the most appropriate 'partner' to copy allowed values of stored attributes.</p>
+<p><strong>Example 4:</strong></p>
+<p>Let’s assume that you want to copy stored attributes from a customer to a sales order document.</p>
+<p>The customer has the following properties:</p>
+<ul>
+<li><p>FAVORITE-PRODUCT: (entity name = Products)</p>
+</li>
+<li><p>ADVANCE-PRODUCT: (entity name = Products)</p>
+</li>
+</ul>
+<p>In the sales order document type, the following stored attributes are set:</p>
+<ul>
+<li><p>FAVORITE-PRODUCT-CUSTOMER: Allowed Values Property = CUSTOMER. FAVORITE-PRODUCT</p>
+</li>
+<li><p>SALE-ADVANCE-PRODUCT: Allowed Values Property = CUSTOMER.ADVANCE-PRODUCT</p>
+</li>
+</ul>
+<p><strong>In this case:</strong></p>
+<ul>
+<li><p>All four stored attributes are 'compatible'. They could inherit values from one another.</p>
+</li>
+<li><p>At the same time, only the following pairs have the same hereditary root:</p>
+</li>
+</ul>
+<p>​    A) FAVORITE-PRODUCT-CUSTOMER and FAVORITE-PRODUCT</p>
+<p>​    B) SALE-ADVANCE-PRODUCT and ADVANCE-PRODUCT</p>
+<p>When specifying a customer in a sales order, <strong>only</strong> the stored attributes that have the same hereditary root <br> will be automatically copied to the document.</p>
+<h2 id="stored-attributes-value-priorities">Stored attributes value priorities</h2>
+<p>The priority for automatic copying of stored attributes by the following priorities:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a value with higher priority is found for a stored attribute, it's copied. If not – you should search for values with lower priorities.</p>
+</div>
+<ol>
+<li><p>Values inherited from the parent document. (Priority 80)</p>
+</li>
+<li><p>Values set in the panel <strong>Copy Customer Properties</strong>. (Priority 70)</p>
+<p>This is valid for sales orders, but the same priority applies if there's a similar table for other data.</p>
+</li>
+<li><p>Values of stored attributes with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)</p>
+<p>In general cases, this is the party loaded in the field <em>To Party</em>. <br> Purchase invoices are exceptions - there, the supplier is considered a 'main contractor'.</p>
+</li>
+<li><p>Default values specified in the document type. (Priority 20)</p>
+</li>
+<li><p>If none of the above contains a value for the stored attributes, but the value is instead specified in the document type: Set an empty (NULL) value. (Priority 10)</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Every manual change of a value of a stored attribute should be done after the values are entered in the relevant nomenclatures (enterprise company, customer, parent document etc.)</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/stored-attributes/domain-with-property-allowed-values.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

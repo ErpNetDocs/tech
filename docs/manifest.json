@@ -1149,41 +1149,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "advanced/custom-attributes/domain-with-property-allowed-values.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/custom-attributes/domain-with-property-allowed-values.html",
-          "hash": "gcHXrQx4PeNXBXh+IlAb8g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "advanced/custom-attributes/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "advanced/custom-attributes/index.html",
-          "hash": "AxM7J4i0MR7hO8Ui3bEC9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "advanced/custom-attributes/user-data-attributes.png",
-      "output": {
-        "resource": {
-          "relative_path": "advanced/custom-attributes/user-data-attributes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "advanced/data-objects/default-tracking-levels.md",
       "output": {
         ".html": {
@@ -1515,12 +1480,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/index.md",
       "output": {
         ".html": {
           "relative_path": "advanced/index.html",
-          "hash": "sqH3a1YMP7+b+bNN8BLKvw=="
+          "hash": "Oe65lEpv2amooiwcZywR+A=="
         }
       },
       "is_incremental": false,
@@ -1748,6 +1716,41 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/stored-attributes/domain-with-property-allowed-values.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/stored-attributes/domain-with-property-allowed-values.html",
+          "hash": "vDRj3JuPvnuysBxMuLStXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/stored-attributes/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/stored-attributes/index.html",
+          "hash": "ab1s81O7HJERnmeDrCCR4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/stored-attributes/stored-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/stored-attributes/stored-attributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/string-interpolation/escape-sequences.md",
       "output": {
         ".html": {
@@ -1920,7 +1923,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "WfL85bC36nT4AmYH8AMzGQ=="
+          "hash": "lXuO7ceXqf+amDW8IeGR0A=="
         }
       },
       "is_incremental": false,
