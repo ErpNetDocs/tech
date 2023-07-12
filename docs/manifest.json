@@ -2698,17 +2698,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/advanced/custom-attributes/user-data-attributes.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/advanced/custom-attributes/user-data-attributes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/advanced/data-objects/pictures/entity-type-display-format.png",
       "output": {
         "resource": {
@@ -2845,6 +2834,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/advanced/security/authentication/pictures/azure8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/stored-attributes/stored-attributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/stored-attributes/stored-attributes.png"
         }
       },
       "is_incremental": false,
