@@ -6,9 +6,9 @@
 - name: Document amounts
   href: document-amounts/toc.yml
   topicHref: document-amounts/index.md
-- name: Custom attributes
-  href: custom-attributes/toc.yml
-  topicHref: custom-attributes/index.md
+- name: Stored attributes
+  href: stored-attributes/toc.yml
+  topicHref: stored-attributes/index.md
 - name: Calculated attributes
   href: calculated-attributes/toc.yml
   topicHref: calculated-attributes/index.md

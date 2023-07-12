@@ -4,7 +4,7 @@ uid: domain-with-property-allowed-values
 
 # Domain with property allowed values
 
-Domain is the range of the allowed values of a particular custom property. 
+Domain is the range of the allowed values of a particular stored attribute (custom property). 
 
 It's determined in one of the following ways, sorted by high-to-low priority:
 
@@ -14,13 +14,13 @@ It's determined in one of the following ways, sorted by high-to-low priority:
    
      This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark <br> and _Allowed Values Property_ does NOT have a value.
 
-3. If _Allowed Values Property_ has a value, <br> the custom property domain is **equal** to the custom property domain specified in this field.
+3. If _Allowed Values Property_ has a value, <br> the stored attribute domain is **equal** to the stored attribute domain specified in this field.
 
 ```
 CustomProperty.Domain = CustomProperty.AllowedValuesProperty.Domain
 ```
 
-   This field has a value **ONLY** if _Limit To Allowed Values_ has a check mark and _Allowed Values Entity Name_ does NOT have a value.
+   This field has a value **ONLY** if _Limit To Allowed Values_ has a checkmark and _Allowed Values Entity Name_ does NOT have a value.
 
 4. A range of the _Property Allowed Values_ listed in the **Gen_Property_Allowed_Values** sub-table.
 
@@ -55,17 +55,17 @@ Let's assume you have the following properties:
 
 - Property 6 – all possible values
 
-## Compatible custom properties
+## Compatible stored attributes
 
-Two custom properties are copy-compatible **ONLY** when their domains are the same. 
+Two stored attributes are copy-compatible **ONLY** when their domains are the same. 
 
-Compatibility allows you to copy values from one custom property to another. This process could result in an error, but it would be caused by various reasons, such as additional filters being set in the definition. 
+Compatibility allows you to copy values from one stored attribute to another. This process could result in an error, but it would be caused by various reasons, such as additional filters being set in the definition. 
 
 > [!NOTE]
 > 
-> Additional filters **don't** change the domain of the custom property - they simply reduce the range with allowed values. 
-> It's also possible for future procedures or rules to be added, but they **won’t** change the domain of the custom properties, either.
-> From a programming perspective, the domain of allowed values could be defined as a **custom property type**.
+> Additional filters **don't** change the domain of the stored attribute - they simply reduce the range with allowed values. 
+> It's also possible for future procedures or rules to be added, but they **won’t** change the domain of the stored attribute, either.
+> From a programming perspective, the domain of allowed values could be defined as a **stored attribute type**.
 
 **Example 2:**
 
@@ -75,17 +75,17 @@ If you use Example 1, you can conclude that:
 
 - 'Property 4' is compatible with none of the above.
 
-- 'Property 6' can take any value and it is also incompatible with the other custom properties.
+- 'Property 6' can take any value and it is also incompatible with the other stored attributes.
 
 ## Inheriting and hereditary root
 
-A custom property inherits another custom property by indicating a (hereditary) **parent** property in the _Allowed Values Property_ field. The hereditary root of a custom property is considered **grand-parent**, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.
+A stored attribute inherits another stored attribute by indicating a (hereditary) **parent** property in the _Allowed Values Property_ field. The hereditary root of a stored attribute is considered **grand-parent**, which doesn't have a root on its own. It clearly defines the domain and is a prerequisite for automatic copying of its allowed values.
 
 A hereditary root is defined as follows:
 
-1. If _Allowed Values Property_ doesn't have a value, the hereditary root is **the custom property** itself
+1. If _Allowed Values Property_ doesn't have a value, the hereditary root is **the stored attribute** itself.
 
-2. Otherwise, it's equal to the hereditary root of the **parent custom property**.
+2. Otherwise, it's equal to the hereditary root of the **parent stored attribute**.
 
    This means that:<br>
    HereditaryRoot (Property) = HereditaryRoot(Property. AllowedValuesProperty)<br>
@@ -93,7 +93,7 @@ A hereditary root is defined as follows:
 
 **Example 3:**
 
-According to the example above, custom properties have the following hereditary roots:
+According to the example above, stored attributes have the following hereditary roots:
 
 - Property 1: Property 1
 
@@ -109,11 +109,11 @@ According to the example above, custom properties have the following hereditary 
 
 ## Copying
 
-Hereditary roots determine the most appropriate 'partner' to copy allowed values of custom properties.
+Hereditary roots determine the most appropriate 'partner' to copy allowed values of stored attributes.
 
 **Example 4:** 
 
-Let’s assume that you want to copy custom properties from a customer to a sales order document.
+Let’s assume that you want to copy stored attributes from a customer to a sales order document.
 
 The customer has the following properties:
 
@@ -121,7 +121,7 @@ The customer has the following properties:
 
 - ADVANCE-PRODUCT: (entity name = Products)
 
-In the sales order document type, the following custom properties are set:
+In the sales order document type, the following stored attributes are set:
 
 - FAVORITE-PRODUCT-CUSTOMER: Allowed Values Property = CUSTOMER. FAVORITE-PRODUCT
 
@@ -129,7 +129,7 @@ In the sales order document type, the following custom properties are set:
 
 **In this case:**
 
-- All four custom properties are 'compatible'. They could inherit values from one another.
+- All four stored attributes are 'compatible'. They could inherit values from one another.
 
 - At the same time, only the following pairs have the same hereditary root:
 
@@ -137,15 +137,15 @@ In the sales order document type, the following custom properties are set:
 
 ​    B) SALE-ADVANCE-PRODUCT and ADVANCE-PRODUCT
 
-When specifying a customer in a sales order, **only** the custom properties that have the same hereditary root <br> will be automatically copied to the document.
+When specifying a customer in a sales order, **only** the stored attributes that have the same hereditary root <br> will be automatically copied to the document.
 
-## Custom properties value priorities
+## Stored attributes value priorities
 
-The priority for automatic copying of custom properties by the following priorities:
+The priority for automatic copying of stored attributes by the following priorities:
 
 > [!NOTE]
 >
-> If a value with higher priority is found for a custom property, it's copied. If not – you should search for values with lower priorities.
+> If a value with higher priority is found for a stored attribute, it's copied. If not – you should search for values with lower priorities.
 
 1. Values inherited from the parent document. (Priority 80)
 
@@ -153,14 +153,14 @@ The priority for automatic copying of custom properties by the following priorit
  
    This is valid for sales orders, but the same priority applies if there's a similar table for other data.
 
-3. Values of custom properties with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)
+3. Values of stored attributes with the same hereditary root in the definition of the 'main contractor' of the document. (Priority 50)
    
     In general cases, this is the party loaded in the field _To Party_. <br> Purchase invoices are exceptions - there, the supplier is considered a 'main contractor'. 
 
 4. Default values specified in the document type. (Priority 20)
 
-5. If none of the above contains a value for the custom property, but the value is instead specified in the document type: Set an empty (NULL) value. (Priority 10)
+5. If none of the above contains a value for the stored attributes, but the value is instead specified in the document type: Set an empty (NULL) value. (Priority 10)
 
 > [!NOTE]
 >
-> Every manual change of a value of a custom property should be done after the values are entered in the relevant nomenclatures (enterprise company, customer, parent document etc.)
+> Every manual change of a value of a stored attribute should be done after the values are entered in the relevant nomenclatures (enterprise company, customer, parent document etc.)
