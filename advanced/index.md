@@ -8,7 +8,7 @@ It is intended primarily for advanced ERP implementation consultants.
 
 - **[Document flow](./document-flow/index.md)** - document-related concepts and services.
 - **[Document amounts](./document-amounts/index.md)** - mechanisms for reporting financial amounts in documents.
-- **[Custom attributes](./custom-attributes/index.md)** - user-defined data attributes.
+- **[Custom attributes](./stored-attributes/index.md)** - user-defined data attributes.
 - **[Calculated attributes](./calculated-attributes/index.md)** - user-defined calculations.
 - **[User business rules](./user-business-rules/index.md)** - user-defined and system business rules.
 - **[String interpolation](./string-interpolation/index.md)** - inserting values or expressions into a string, allowing for dynamic and customized output.
