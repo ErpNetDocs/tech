@@ -36,10 +36,10 @@ For example:
 
 The line standard discount percent is calculated by accumulating in cascade all level discount percentages that were specified in the line. The formula is as follows:
 
-**[Line Standard Discount Percent]** = 
-1 – ((1 - IIF(**[Level 1 Discount Percent]** == NULL, 0.00, **[Level 1 Discount Percent]**) 
-* (1 - IIF(**[Level 2 Discount Percent]** == NULL, 0.00, **[Level 2 Discount Percent]**) 
-* (1 - IIF(**[Level 3 Discount Percent]** == NULL, 0.00, **[Level 3 Discount Percent]**))
+**[Line Standard Discount Percent]** = <br> 
+1 – ((1 - IIF(**[Level 1 Discount Percent]** == NULL, 0.00, **[Level 1 Discount Percent]**) \* <br>
+(1 - IIF(**[Level 2 Discount Percent]** == NULL, 0.00, **[Level 2 Discount Percent]**) \* <br> 
+(1 - IIF(**[Level 3 Discount Percent]** == NULL, 0.00, **[Level 3 Discount Percent]**))<br>
 
 #### Example 1 :
 
