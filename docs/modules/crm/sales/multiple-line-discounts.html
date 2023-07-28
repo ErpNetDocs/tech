@@ -104,12 +104,10 @@
 </div>
 <h2 id="determine-line-standard-discount-percent">Determine line standard discount percent</h2>
 <p>The line standard discount percent is calculated by accumulating in cascade all level discount percentages that were specified in the line. The formula is as follows:</p>
-<p><strong>[Line Standard Discount Percent]</strong> =
-1 – ((1 - IIF(<strong>[Level 1 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 1 Discount Percent]</strong>)</p>
-<ul>
-<li>(1 - IIF(<strong>[Level 2 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 2 Discount Percent]</strong>)</li>
-<li>(1 - IIF(<strong>[Level 3 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 3 Discount Percent]</strong>))</li>
-</ul>
+<p><strong>[Line Standard Discount Percent]</strong> = <br>
+1 – ((1 - IIF(<strong>[Level 1 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 1 Discount Percent]</strong>) * <br>
+(1 - IIF(<strong>[Level 2 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 2 Discount Percent]</strong>) * <br>
+(1 - IIF(<strong>[Level 3 Discount Percent]</strong> == NULL, 0.00, <strong>[Level 3 Discount Percent]</strong>))<br></p>
 <h4 id="example-1-">Example 1 :</h4>
 <p>If there are no discounts in the line, then line standard discount percent is:</p>
 <p><strong>[Line Standard Discount Percent]</strong> = 1 - ((1 - 0) * (1 - 0) * (1 - 0)) = <strong>0.00%</strong>.</p>
