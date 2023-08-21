@@ -6,7 +6,7 @@ uid: determine-line-discount
 
 ERP.net allows multiple discounts at multiple levels to be defined.
 
-Typically, Level 1 discount is determined among the discounts from level 1. This means that if we want to calculate Level 1 discount, we might not explicitly specify a Discount Level filter, because its default value is 1.
+Typically, Level 1 discount is determined among the active discounts from level 1. This means that if we want to calculate Level 1 discount, we might not explicitly specify a Discount Level filter, because its default value is 1.
 
 For the discounts for all other levels, we need to specify a Discount Level filter that is equal to the level we are trying to calculate.
 
@@ -26,12 +26,12 @@ and some not required:
 - **Distribution channel** - self-explanatory
 - **Current line discount** - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.
 
-@@name filters all discounts from the respective level that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to **all** customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.
+@@name filters all active discounts from the respective level that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to **all** customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.
  
 
 Generally, the algorithm is the following:
 
-•	ERP.net filters the discounts from the respective level.
+•	ERP.net filters the active discounts from the respective level.
 
 •	Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).
 
@@ -42,6 +42,7 @@ So, after the selection process, one and only one discount is selected and appli
  
 ## Filtering conditions
 
+- Discount Is Active is true
 - Discount Discount Level is equal to the specified level
 - Discount From Date is empty or <= required Date
 - Discount To Date is empty or >= required Date
