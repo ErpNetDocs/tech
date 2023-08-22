@@ -9,6 +9,8 @@
   href: initial-availability.md
 - name: Execute order lines
   href: execute-order-lines.md
+- name: Change worker
+  href: change-worker.md
 - name: Check if a dispatch order can be fulfilled
   href: check-can-be-fulfilled.md
 - name: Reconcile
