@@ -9408,6 +9408,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/change-worker.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/change-worker.html",
+          "hash": "MdcxlQSBppF2bMTIfXKiUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/check-can-be-fulfilled.md",
       "output": {
         ".html": {
@@ -9455,7 +9467,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "1SjYuSXtKjuEubfXeWKZtg=="
+          "hash": "xqt+eYKh3zLT7PWLzL7GJA=="
         }
       },
       "is_incremental": false,
@@ -9468,6 +9480,116 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
           "hash": "P7TF31GNvgz9AAPaCGgnhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_5.png"
         }
       },
       "is_incremental": false,
@@ -10095,7 +10217,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "tRNwfmKqW8R3EtK74ol7pw=="
+          "hash": "bjh+k3uDwkpCvUEKC9L7DQ=="
         }
       },
       "is_incremental": false,
