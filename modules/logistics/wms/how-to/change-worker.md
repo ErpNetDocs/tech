@@ -4,11 +4,12 @@ Upon changing the previous worker, the modified task will no longer be present i
 
  
 
-Note: The function is available only for Warehouse Orders with "Released" status. The change is recorded through an adjustment document.
+> [!NOTE]
+> The function is available only for Warehouse Orders with "Released" status. The change is recorded through an adjustment document.
 
  
 
-How to use it:
+## How to use it:
 
 Open the relevant warehouse order in "Released" status that needs reassignment.
 
