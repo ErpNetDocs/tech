@@ -9597,61 +9597,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 3.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 4.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 5.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/how-to/pictures/Change worker Pic 5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/Change_worker_1.png",
       "output": {
         "resource": {
