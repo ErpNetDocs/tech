@@ -264,3 +264,23 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 ```
 - b.The user sets it manually
 - c.The key is introduced in version: - 2023
+
+## 50./InventoryControl/ReceiveDocumentType
+- a.The key defines the document type of the created document when using Receive function of Inventory Control
+- b.The user sets it manually
+- c.The key is introduced in version: - 23.2
+
+## 51./InventoryControl/IssueDocumentType
+- a.The key defines the document type of the created document when using Issue function of Inventory Control
+- b.The user sets it manually
+- c.The key is introduced in version: - 23.2
+
+## 52./InventoryControl/ScrapDocumentType
+- a.The key defines the document type of the created document when using Scrap function of Inventory Control
+- b.The user sets it manually
+- c.The key is introduced in version: - 23.2
+
+## 53./InventoryControl/ReconcileDocumentType
+- a.The key defines the document type of the created document when using Reconcile function of Inventory Control
+- b.The user sets it manually
+- c.The key is introduced in version: - 23.2
