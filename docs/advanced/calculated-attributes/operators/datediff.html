@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Operators | ERP.net Tech Docs </title>
+    <title>DATEDIFF | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Operators | ERP.net Tech Docs ">
+    <meta name="title" content="DATEDIFF | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,57 +76,60 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="operators">Operators</h1>
+            <article class="content wrap" id="_content" data-uid="cao-DATEDIFF">
+<h1 id="datediff">DATEDIFF</h1>
 
-<ul>
-<li><a href="add.html">ADD</a></li>
-<li><a href="adddays.html">ADDDAYS</a></li>
-<li><a href="and.html">AND</a></li>
-<li><a href="cast.html">CAST</a></li>
-<li><a href="ceiling.html">CEILING</a></li>
-<li><a href="concat.html">CONCAT</a></li>
-<li><a href="convert.html">CONVERT</a></li>
-<li><a href="count.html">COUNT</a></li>
-<li><a href="datediff.html">DATEDIFF</a></li>
-<li><a href="divide.html">DIVIDE</a></li>
-<li><a href="equal.html">EQUAL</a></li>
-<li><a href="filter.html">FILTER</a></li>
-<li><a href="first.html">FIRST</a></li>
-<li><a href="floor.html">FLOOR</a></li>
-<li><a href="formatstring.html">FORMATSTRING</a></li>
-<li><a href="getobjvalue.html">GETOBJVALUE</a></li>
-<li><a href="getvalue.html">GETVALUE</a></li>
-<li><a href="gt.html">GT</a></li>
-<li><a href="gte.html">GTE</a></li>
-<li><a href="iif.html">IIF</a></li>
-<li><a href="in.html">IN</a></li>
-<li><a href="incnum.html">INCNUM</a></li>
-<li><a href="interpolate.html">INTERPOLATE</a></li>
-<li><a href="left.html">LEFT</a></li>
-<li><a href="len.html">LEN</a></li>
-<li><a href="list.html">LIST</a></li>
-<li><a href="lt.html">LT</a></li>
-<li><a href="lte.html">LTE</a></li>
-<li><a href="multiply.html">MULTIPLY</a></li>
-<li><a href="not.html">NOT</a></li>
-<li><a href="or.html">OR</a></li>
-<li><a href="orderby.html">ORDERBY</a></li>
-<li><a href="pos.html">POS</a></li>
-<li><a href="regex.html">REGEX</a></li>
-<li><a href="replace.html">REPLACE</a></li>
-<li><a href="right.html">RIGHT</a></li>
-<li><a href="round.html">ROUND</a></li>
-<li><a href="select.html">SELECT</a></li>
-<li><a href="sort.html">SORT</a></li>
-<li><a href="substring.html">SUBSTRING</a></li>
-<li><a href="sum.html">SUM</a></li>
-<li><a href="today.html">TODAY</a></li>
-<li><a href="tolower.html">TOLOWER</a></li>
-<li><a href="top.html">TOP</a></li>
-<li><a href="toupper.html">TOUPPER</a></li>
-<li><a href="where.html">WHERE</a></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Return the number of days between the two dates</td>
+</tr>
+<tr>
+<td>Parameter 1 Name</td>
+<td>StartDate</td>
+</tr>
+<tr>
+<td>Parameter 1 Type</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Parameter 2 Name</td>
+<td>EndDate</td>
+</tr>
+<tr>
+<td>Parameter 2 Type</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Parameter 3 Name</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Parameter 3 Type</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Return value</td>
+<td>EndDate minus StartDate in days</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<pre><code>10:  DATEDIFF ATTRIB:RequiredDeliveryDate ATTRIB:DocumentDate               
+</code></pre>
+<p>OUTPUT: If 'RequiredDeliveryDate = 2023-10-05' and 'DocumentDate = 2023-09-20' , the output will be '15'.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Crm.Sales.SalesOrder</em></p>
+</div>
+<h4 id="section"></h4>
 </article>
           </div>
           
@@ -135,7 +138,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/datediff.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

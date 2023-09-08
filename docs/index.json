@@ -129,6 +129,11 @@
     "title": "COUNT | ERP.net Tech Docs",
     "keywords": "COUNT Specification Value Description Gets the number of elements contained within a list. Parameter 1 Name list Parameter 1 Type list - repository, child. Parameter 2 Name - Parameter 2 Type - Parameter 3 Name - Parameter 3 Type - Return value int Introduced in version 2020.1 Example: Let's have a number of lines in a document (sales order) returned: 10: COUNT CHILD:Lines Note The repository of the attribute is Crm.Sales.SalesOrders . If you want to expand the example and get the number of lines with quantity greater than or equal to 10, the following attribute would do the job: 10: COUNT EXP:20 20: FILTER CHILD:Lines EXP:30 30: GTE ATTRIB:QuantityValue CONST:10.00"
   },
+  "advanced/calculated-attributes/operators/datediff.html": {
+    "href": "advanced/calculated-attributes/operators/datediff.html",
+    "title": "DATEDIFF | ERP.net Tech Docs",
+    "keywords": "DATEDIFF Specification Value Description Return the number of days between the two dates Parameter 1 Name StartDate Parameter 1 Type Date Parameter 2 Name EndDate Parameter 2 Type Date Parameter 3 Name - Parameter 3 Type - Return value EndDate minus StartDate in days Example: 10: DATEDIFF ATTRIB:RequiredDeliveryDate ATTRIB:DocumentDate OUTPUT: If 'RequiredDeliveryDate = 2023-10-05' and 'DocumentDate = 2023-09-20' , the output will be '15'. Note The repository of the attribute is Crm.Sales.SalesOrder"
+  },
   "advanced/calculated-attributes/operators/divide.html": {
     "href": "advanced/calculated-attributes/operators/divide.html",
     "title": "DIVIDE | ERP.net Tech Docs",
@@ -197,7 +202,7 @@
   "advanced/calculated-attributes/operators/index.html": {
     "href": "advanced/calculated-attributes/operators/index.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
+    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "advanced/calculated-attributes/operators/interpolate.html": {
     "href": "advanced/calculated-attributes/operators/interpolate.html",

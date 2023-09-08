@@ -82,6 +82,9 @@ references:
 - uid: cao-COUNT
   name: COUNT
   href: advanced/calculated-attributes/operators/count.html
+- uid: cao-DATEDIFF
+  name: DATEDIFF
+  href: advanced/calculated-attributes/operators/datediff.html
 - uid: cao-DIVIDE
   name: DIVIDE
   href: advanced/calculated-attributes/operators/divide.html

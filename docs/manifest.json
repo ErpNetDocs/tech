@@ -469,6 +469,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/datediff.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/datediff.html",
+          "hash": "FOc/dCtSlDEGcU0Qk5yskQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/operators/divide.md",
       "output": {
         ".html": {
@@ -629,7 +641,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "gROJM0DCKhXqyee2fjup+w=="
+          "hash": "PjMBkXKh53fYdHPSzQd8sg=="
         }
       },
       "is_incremental": false,
