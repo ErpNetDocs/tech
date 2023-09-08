@@ -473,7 +473,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/datediff.html",
-          "hash": "FOc/dCtSlDEGcU0Qk5yskQ=="
+          "hash": "QoYYku2NUUbDiGUJcmDBlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/operators/datespan.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/operators/datespan.html",
+          "hash": "IMeMNY2Mv2/3+pAwye2cGw=="
         }
       },
       "is_incremental": false,
@@ -641,7 +653,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/operators/index.html",
-          "hash": "PjMBkXKh53fYdHPSzQd8sg=="
+          "hash": "jXmJcaHDJvPzbZrvjCPMbQ=="
         }
       },
       "is_incremental": false,

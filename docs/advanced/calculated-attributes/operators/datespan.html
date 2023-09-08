@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DATEDIFF | ERP.net Tech Docs </title>
+    <title>DATESPAN | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="DATEDIFF | ERP.net Tech Docs ">
+    <meta name="title" content="DATESPAN | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -76,8 +76,8 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="cao-DATEDIFF">
-<h1 id="datediff">DATEDIFF</h1>
+            <article class="content wrap" id="_content" data-uid="cao-DATESPAN">
+<h1 id="datespan">DATESPAN</h1>
 
 <table>
 <thead>
@@ -89,7 +89,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns the difference between dates as the date difference for the specified interval type</td>
+<td>Returns the difference between dates as a duration in the specified interval type. The interval is fulfilled when the same date and time is reached in the next interval.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -117,26 +117,26 @@
 </tr>
 <tr>
 <td>Return value</td>
-<td>If Interval = 'Days' then Day(EndDate) - Day(StartDate)<br>If Interval = 'Months' then Month(EndDate) - Month(StartDate)<br>If Interval = 'Years' then Year(EndDate) - Year(StartDate)</td>
+<td>If Interval = 'Days' then Days(EndDate - StartDate)<br>If Interval = 'Months' then Months(EndDate - StartDate)<br>If Interval = 'Years' then Years(EndDate - StartDate)</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example:</strong></p>
-<pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Days            
+<pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Days             
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2020-01-01 23:59' and 'RequiredDeliveryDate = 2020-01-02 00:01'  , the output will be '1'.</p>
+<p>OUTPUT: If 'DocumentDate = 2020-01-01 23:59' and 'RequiredDeliveryDate = 2020-01-02 00:01'  , the output will be '0'.</p>
 <p>OUTPUT: If 'DocumentDate = 2020-01-01 23:58' and 'RequiredDeliveryDate = 2020-01-02 23:59'  , the output will be '1'.</p>
 <p>OUTPUT: If 'DocumentDate = 2023-09-20' and  'RequiredDeliveryDate = 2023-10-05', the output will be '15'.</p>
 <p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-09-10', the output will be '-10'.</p>
 <p>**</p>
-<pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Months            
+<pre><code>10: 10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Months              
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-05' , the output will be '1'.</p>
+<p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-05' , the output will be '0'.</p>
 <p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-20' , the output will be '1'.</p>
 <p>**</p>
-<pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Years            
+<pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Years               
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-01-20' , the output will be '1'.</p>
+<p>OUTPUT: If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-01-20' , the output will be '0'.</p>
 <p>OUTPUT: If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-10-05' , the output will be '1'.</p>
 <p>**</p>
 <div class="NOTE">
@@ -152,7 +152,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/datediff.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/operators/datespan.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
