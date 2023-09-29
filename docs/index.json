@@ -597,7 +597,7 @@
   "advanced/jobs/J35026.html": {
     "href": "advanced/jobs/J35026.html",
     "title": "J35026 Delete old information messages | ERP.net Tech Docs",
-    "keywords": "J35026 Delete old information messages Code J35026 Entity Systems.Core.InformationMessages Entity Job type name Delete Old Information Messages Parameters - Description The system job deletes all old information messages, whose InformationMessageTime is older than 12 months First to process InformationMessageTime (ASC) Automatically created YES Version Introduced: To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
+    "keywords": "J35026 Delete old information messages Code J35026 Entity Systems.Core.InformationMessages Entity Job type name Delete Old Information Messages Parameters - Description The system job deletes all old information messages, whose InformationMessageTime is older than 12 months First to process InformationMessageTime (ASC) Automatically created YES Version Introduced: v.24 To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template ."
   },
   "advanced/jobs/template.html": {
     "href": "advanced/jobs/template.html",
