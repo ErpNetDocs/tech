@@ -221,3 +221,7 @@ Returns:
 Returns:
  
 `<Description>`
+
+- Language specifier as <\_Lang> suffix - Custom property value also support language specifier for the multilanguage Description.
+  The language can be specified at the end of the format specifier like FORMAT_LANGUAGE.
+  For example: VD_EN, VDI_EN, D_EN where _EN specifies that the english translation of the Description will be returned. 
