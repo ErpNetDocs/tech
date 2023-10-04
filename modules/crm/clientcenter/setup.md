@@ -48,3 +48,17 @@ For example:
 ```
 
 If just one of the JSON settings is set or the Id doesn't match any sales order document type then an [Error Exception](error-codes.md) CC008 or CC009 will be displayed in the Client Center.
+
+
+
+## Is Orders Enabled settings:
+
+By default "Orders" section the Client center is Visible. To hide the "Orders" section you have to set JSON settings in the Web site definition: 
+Enter Value to the field Settings as follows and Restart the Site from the Instance manager:
+
+```
+{"IsOrdersEnabled": true} 
+```
+
+If "IsOrdersEnabled" is not present in the settings, then the "Orders" section is visible.
+
