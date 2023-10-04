@@ -21,7 +21,7 @@ You need to enable the functionality **manually** only when that’s necessary.
 You must input a **valid** **SalesOrder.DocumentType ID**. 
 
 This could be quite helpful for separating orders made in the Client Center from those made in other modules.
- 
+
 - The ability to easily generate **comprehensive business analytics** for orders made in the CC.
 
 ## JSON format definition
@@ -52,12 +52,16 @@ If you don’t see it, toggle the respective slider from the **Show/hide fields*
 
 {<br>
     		"NewOrderDocumentType": "DocumentType.Id",<br>
-    		"IsNewOrderEnabled": true/false, <br>
+    		"IsNewOrderEnabled": true/false, <br>"IsOrdersEnabled": true/false<br>
+
 }
 
-where _NewOrderDocumentType_ takes the valid ID value of a new (sales) order 
+where 
 
-and _IsNewOrderEnabled_ defines if the button for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
+- *NewOrderDocumentType* takes the valid ID value of a new (sales) order.
+
+-  _IsNewOrderEnabled_ defines if the button for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
+- *IsOrdersEnabled* determines whether the "Orders" section will be present in the Client center. (**true** meaning visible, **false** meaning restricted).
 
 ![picture](pictures/settings_code.png)
 
