@@ -118,10 +118,17 @@
 </ol>
 <p>{<br>
 &quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,<br>
-&quot;IsNewOrderEnabled&quot;: true/false, <br>
-}</p>
-<p>where <em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order</p>
-<p>and <em>IsNewOrderEnabled</em> defines if the button for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+&quot;IsNewOrderEnabled&quot;: true/false, <br>&quot;IsOrdersEnabled&quot;: true/false<br></p>
+<p>}</p>
+<p>where</p>
+<ul>
+<li><p><em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order.</p>
+</li>
+<li><p><em>IsNewOrderEnabled</em> defines if the button for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+</li>
+<li><p><em>IsOrdersEnabled</em> determines whether the &quot;Orders&quot; section will be present in the Client center. (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+</li>
+</ul>
 <p><img src="pictures/settings_code.png" alt="picture"></p>
 <ol start="4">
 <li><strong>Apply</strong> the new settings.</li>

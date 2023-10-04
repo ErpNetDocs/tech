@@ -130,6 +130,12 @@ Enter Value to the field Settings as follows and Restart the Site from the Insta
 <pre><code>{&quot;NewOrderDocumentType&quot;: &quot;85493adb-ac4e-4b3c-89bc-590c4b22404c&quot;,&quot;IsNewOrderEnabled&quot;: true}
 </code></pre>
 <p>If just one of the JSON settings is set or the Id doesn't match any sales order document type then an <a href="error-codes.html">Error Exception</a> CC008 or CC009 will be displayed in the Client Center.</p>
+<h2 id="is-orders-enabled-settings">Is Orders Enabled settings:</h2>
+<p>By default &quot;Orders&quot; section the Client center is Visible. To hide the &quot;Orders&quot; section you have to set JSON settings in the Web site definition:
+Enter Value to the field Settings as follows and Restart the Site from the Instance manager:</p>
+<pre><code>{&quot;IsOrdersEnabled&quot;: true} 
+</code></pre>
+<p>If &quot;IsOrdersEnabled&quot; is not present in the settings, then the &quot;Orders&quot; section is visible.</p>
 </article>
           </div>
           
