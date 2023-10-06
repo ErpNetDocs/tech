@@ -55,6 +55,12 @@ The main excise attributes are:
 
 Excise Stamp Operation Types define the operation with excise stamps and how it reflects on the three summing boxes - Box1 Effect, Box2 Effect, and Box3 Effect. The definition of Excise Stamp Operation Types sets the specific operation to either add the Quantity to the corresponding Box, subtract it, or leave it unchanged. The summing boxes, Box1 Effect, Box2 Effect, and Box3 Effect, indicate the available quantities of excise stamps in the respective reporting centers required by the customs authorities.
 
+If the "Is Whole Lot" checkbox is selected for the Excise Stamp Operation Type, then when selecting an Excise Stamp Lot in Excise Stamp Operation Line, the entire quantity from the Excise Stamp Lot is copied into the quantity field. 
+
+If the "Track Sequence" checkbox is selected for the Excise Stamp Operation Type, then when recording ExciseStampOperation, it checks whether the sequence of numbers has been preserved. This means there are no skipped numbers compared to the already entered numbers for this batch and this type of operation. If there are skipped numbers, a Warning is raised. 
+
+If the "Require product" checkbox is selected for the Excise Stamp Operation Type, then when changing the status to Released or higher, it checks that the product in the lines is filled in. 
+
 https://docs.erp.net/model/entities/Finance.Excise.ExciseStampOperationTypes.html
 
 
