@@ -284,3 +284,10 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 - a.The key defines the document type of the created document when using the Reconcile function of Inventory Control
 - b.The user sets it manually
 - c.The key is introduced in version: - 23.2
+
+## 54. WMS/WMS-Worker/EnterQuantities 
+- a.Action: When the value of this key is:
+    - "1" - When Scan single barcode then this is accepted like 1 PCE
+    - "0" - Wnen Scan single barcode then No quantity is accepted, the Worker just finds the line and goes to execute mode.
+- b.The user sets it manually.
+- c.The key is introduced in version: - 23.2
