@@ -285,7 +285,7 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 - b.The user sets it manually
 - c.The key is introduced in version: - 23.2
 
-## 54. WMS/WMS-Worker/EnterQuantities 
+## 54. WMS/WMS-Worker/SingleBarkodScanEtersQuantityOfOnePce
 - a.Action: When the value of this key is:
     - "1" - When Scan single barcode then this is accepted like 1 PCE
     - "0" - Wnen Scan single barcode then No quantity is accepted, the WMS-Worker APP just finds the line and goes to execute mode for this line.
