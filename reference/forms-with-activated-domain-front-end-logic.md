@@ -23,10 +23,10 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Price Types                          | YES                           | 20.1        |
 | Sales Orders                         | YES                           | 2017.1      |
 | Sales Persons                        | YES                           | 20.1        |
-| Deals                                | YES                           | 21.1        |
-| Line Discounts                       | YES                           | 21.1        |
-| Product Prices                       | YES                           | 21.1        |
-| Promotional Packages                 | YES                           | 21.1        |
+| Deals                                | YES                           | 22.1        |
+| Line Discounts                       | YES                           | 22.1        |
+| Product Prices                       | YES                           | 22.1        |
+| Promotional Packages                 | YES                           | 22.1        |
 | **POS module**                       |                               |             |
 | POS Devices                          | YES                           | 20.1        |
 | POS Locations                        | YES                           | 20.1        |
@@ -49,9 +49,9 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Products - Dimensions                | YES                           | 20.1        |
 | Products - Distribution channels     | YES                           | 20.1        |
 | Products - Variants                  | YES                           | 2017.1      |
-| Product variants - Colors            | YES                           | 21.1        |
-| Product variants - Sizes             | YES                           | 21.1        |
-| Product variants - Styles            | YES                           | 21.1        |
+| Product variants - Colors            | YES                           | 22.1        |
+| Product variants - Sizes             | YES                           | 22.1        |
+| Product variants - Styles            | YES                           | 22.1        |
 | **Configurator module**              |                               |             |
 | Product Groups                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
@@ -59,7 +59,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Product group - Required properties  | NO                            | -           |
 | **Contacts & Tasks module**          |                               |             |
 | Activities                           | YES                           | 20.1        |
-| ActivityParticipants                 | YES                           | 21.1        |
+| ActivityParticipants                 | YES                           | 22.1        |
 | Areas                                | YES                           | 20.1        |
 | Call detail                          | YES                           | 20.1        |
 | Companies                            | YES                           | 20.1        |
@@ -70,16 +70,16 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Party Relationship Types             | YES                           | 20.1        |
 | Party Relationships                  | YES                           | 20.1        |
 | Reminders                            | YES                           | 20.1        |
-| Resources                            | YES                           | 21.1        |
+| Resources                            | YES                           | 22.1        |
 | Resources - Availability             | YES                           | 20.1        |
 | Resources - Resource instances       | YES                           | 20.1        |
-| Resource Groups                      | YES                           | 21.1        |
-| Activities - Time intervals          | NO                            | --          |
-| Companies - Divisions                | NO                            | -           |
-| Companies - Employees                | NO                            | -           |
-| Companies - Locations                | NO                            | -           |
-| Parties                              | NO                            | -           |
-| Persons                              | NO                            | -           |
+| Resource Groups                      | YES                           | 22.1        |
+| Activities - Time intervals          | YES                           | 22.1        |
+| Companies - Divisions                | YES                           | 22.1        |
+| Companies - Employees                | YES                           | 22.1        |
+| Companies - Locations                | YES                           | 22.1        |
+| Parties                              | YES                           | 22.1        |
+| Persons                              | YES                           | 22.1        |
 | **Marketing module**                 |                               |             |
 | Bonus Programs                       | YES                           | 20.1        |
 | Campaingns                           | YES                           | 20.1        |
@@ -91,8 +91,8 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | **Distribution module**              |                               |             |
 | Customers - Products                 | YES                           | 20.1        |
 | Sales Person Groups                  | YES                           | 20.1        |
-| Sales Person Targets                 | YES                           | 21.1        |
-| Sales Persons                        | NO                            | -           |
+| Sales Person Targets                 | YES                           | 22.1        |
+| Sales Persons                        | YES                           | 20.1        |
 | **Pricing module**                   |                               |             |
 | Pricing Models                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
@@ -111,61 +111,61 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Store Orders                         | YES                           | 20.1        |
 | Stores                               | YES                           | 20.1        |
 | Transactions                         | YES                           | 20.1        |
-| Cost Corrections                     | YES                           | 21.1        |
-| Reconciliations                      | NO                            | -           |
-| Transfer Orders                      | NO                            | -           |
+| Cost Corrections                     | YES                           | 22.1        |
+| Reconciliations                      | YES                           | 22.1        |
+| Transfer Orders                      | YES                           | 22.1        |
 | **Logistics Planning module**        |                               |             |
-| Product Supply                       | YES                           | 21.1        |
+| Product Supply                       | YES                           | 22.1        |
 | **Procurement module**               |                               |             |
 | Receiving Orders                     | YES                           | 20.1        |
 | Suppliers                            | YES                           | 20.1        |
 | Suppliers - Companies                | YES                           | 20.1        |
 | Suppliers - Persons                  | YES                           | 20.1        |
-| Purchase Control Documents           | YES                           | 21.1        |
-| Purchase Operation Types             | YES                           | 21.1        |
-| Purchase Orders                      | NO                            | -           |
-| Purchase Price Lists                 | YES                           | 21.1        |
-| Purchase Product Prices              | YES                           | 21.1        |
-| Requisitions                         | NO                            | -           |
-| Supplier Types                       | YES                           | 21.1        |
+| Purchase Control Documents           | YES                           | 22.1        |
+| Purchase Operation Types             | YES                           | 22.1        |
+| Purchase Orders                      | YES                           | 22.1        |
+| Purchase Price Lists                 | YES                           | 22.1        |
+| Purchase Product Prices              | YES                           | 22.1        |
+| Requisitions                         | YES                           | 22.1        |
+| Supplier Types                       | YES                           | 22.1        |
 | **Products and Technologies module** |                               |             |
 | Products                             | YES                           | 20.1        |
-| Principal Recipies                   | YES                           | 21.1        |
+| Principal Recipies                   | YES                           | 22.1        |
 | Recipies                             | YES                           | 2015        |
 | **Production Planning module**       |                               |             |
-| Product Supply                       | NO                            | -           |
+| Product Supply                       | YES                           | 22.1        |
 | **Resources module**                 |                               |             |
-| Function Groups                      | YES                           | 21.1        |
-| Functions                            | YES                           | 21.1        |
-| Operation Groups                     | YES                           | 21.1        |
-| Operations                           | YES                           | 21.1        |
-| Resource Groups                      | YES                           | 21.1        |
-| Resources                            | YES                           | 21.1        |
-| Workgroups                           | YES                           | 21.1        |
-| Workgroups - Resources               | YES                           | 21.1        |
-| Work Schedules                       | YES                           | 21.1        |
+| Function Groups                      | YES                           | 22.1        |
+| Functions                            | YES                           | 22.1        |
+| Operation Groups                     | YES                           | 22.1        |
+| Operations                           | YES                           | 22.1        |
+| Resource Groups                      | YES                           | 22.1        |
+| Resources                            | YES                           | 22.1        |
+| Workgroups                           | YES                           | 22.1        |
+| Workgroups - Resources               | YES                           | 22.1        |
+| Work Schedules                       | YES                           | 22.1        |
 | **Shop Floor module**                |                               |             |
-| Consumption Orders                   | NO                            | -           |
-| Output Orders                        | YES                           | 21.1        |
-| Work Orders                          | YES                           | 21.1        |
+| Consumption Orders                   | YES                           | 22.1        |
+| Output Orders                        | YES                           | 22.1        |
+| Work Orders                          | YES                           | 22.1        |
 | **Projects Management module**       |                               |             |
-| Project Tasks                        | NO                            | -           |
-| Projects                             | NO                            | -           |
-| Projects - Risks                     | YES                           | 21.1        |
+| Project Tasks                        | YES                           | 22.1        |
+| Projects                             | YES                           | 22.1        |
+| Projects - Risks                     | YES                           | 22.1        |
 | **Projects Budgeting module**        |                               |             |
-| Resources                            | YES                           | 21.1        |
-| Resource Groups                      | YES                           | 21.1        |
+| Resources                            | YES                           | 22.1        |
+| Resource Groups                      | YES                           | 22.1        |
 | Gen_Resources - Resource Instances   | YES                           | 20.1        |
 | Resources - Availability             | YES                           | 20.1        |
-| Product Variants                     | YES                           | 21.1        |
+| Product Variants                     | YES                           | 22.1        |
 | **Projects Executuion module**       |                               |             |
-| Work Reports                         | YES                           | 21.1        |
+| Work Reports                         | YES                           | 22.1        |
 | **Projects Setup module**            |                               |             |
-| Project Types                        | YES                           | 21.1        |
-| Project Types - Participants Roles   | YES                           | 21.1        |
-| Project Types - Work Elements        | YES                           | 21.1        |
-| Project Types - Work Types           | YES                           | 21.1        |
-| Task Types                           | YES                           | 21.1        |
+| Project Types                        | YES                           | 22.1        |
+| Project Types - Participants Roles   | YES                           | 22.1        |
+| Project Types - Work Elements        | YES                           | 22.1        |
+| Project Types - Work Types           | YES                           | 22.1        |
+| Task Types                           | YES                           | 22.1        |
 | **Payments module**                  |                               |             |
 | Bulk Payment Orders                  | YES                           | 20.1        |
 | Parties - Bank Accounts              | YES                           | 20.1        |
@@ -175,19 +175,19 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Payment Slips                        | YES                           | 20.1        |
 | Payment Transfers                    | YES                           | 20.1        |
 | Payment Types                        | YES                           | 20.1        |
-| Payment Transactions                 | NO                            | -           |
+| Payment Transactions                 | YES                           | 22.1        |
 | **Expenses module**                  |                               |             |
 | Supliers                             | YES                           | 20.1        |
 | Supliers - Companies                 | YES                           | 20.1        |
 | Supliers - Persons                   | YES                           | 20.1        |
-| Purchase Invoice                     | NO                            | -           |
+| Purchase Invoice                     | YES                           | 22.1        |
 | **Accounting module**                |                               |             |
 | Account Groups                       | NO                            | -           |
-| Accounts                             | NO                            | -           |
+| Accounts                             | YES                           | 22.1        |
 | Cost Centers                         | NO                            | -           |
 | Operations                           | NO                            | -           |
 | Profit Centers                       | NO                            | -           |
-| Templates                            | NO                            | -           |
+| Templates                            | YES                           | 22.1        |
 | Vouchers                             | NO                            | -           |
 | **Cost Accounting module**           |                               |             |
 | Cost Distributions                   | NO                            | -           |
@@ -195,104 +195,104 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Financial Statements                 | NO                            | -           |
 | Finanse Analisys Module              | NO                            | -           |
 | **VAT module**                       |                               |             |
-| Deal Types                           | YES                           | 21.1        |
-| Declaring Person                     | NO                            | -           |
+| Deal Types                           | YES                           | 22.1        |
+| Declaring Person                     | YES                           | 22.1        |
 | Document Type VAT Codes              | NO                            | -           |
-| Entries                              | NO                            | -           |
+| Entries                              | YES                           | 22.1        |
 | VAT Declarations                     | NO                            | -           |
 | **Intrastat module**                 |                               |             |
-| Intrastat Declarations               | YES                           | 21.1        |
+| Intrastat Declarations               | YES                           | 22.1        |
 | **Fixed Assets module**              |                               |             |
-| Acquire and Retire Orders            | YES                           | 21.1        |
-| Asset Categories                     | YES                           | 21.1        |
-| Asset Groups                         | YES                           | 21.1        |
-| Asset Transactions                   | YES                           | 21.1        |
-| Assets                               | YES                           | 21.1        |
-| Depreciation Methods                 | YES                           | 21.1        |
-| Depreciation Plans                   | YES                           | 21.1        |
-| Depreciations                        | YES                           | 21.1        |
-| Valuation Methods                    | YES                           | 21.1        |
+| Acquire and Retire Orders            | YES                           | 22.1        |
+| Asset Categories                     | YES                           | 22.1        |
+| Asset Groups                         | YES                           | 22.1        |
+| Asset Transactions                   | YES                           | 22.1        |
+| Assets                               | YES                           | 22.1        |
+| Depreciation Methods                 | YES                           | 22.1        |
+| Depreciation Plans                   | YES                           | 22.1        |
+| Depreciations                        | YES                           | 22.1        |
+| Valuation Methods                    | YES                           | 22.1        |
 | **Lease-Out Management module**      |                               |             |
-| Asset Groups                         | YES                           | 21.1        |
-| Asset Types - Consumables            | YES                           | 21.1        |
-| Asset Types - Properties             | YES                           | 21.1        |
-| Assets                               | NO                            | -           |
-| Assets - Consumables                 | YES                           | 21.1        |
-| Assets Types                         | YES                           | 21.1        |
+| Asset Groups                         | YES                           | 22.1        |
+| Asset Types - Consumables            | YES                           | 22.1        |
+| Asset Types - Properties             | YES                           | 22.1        |
+| Assets                               | YES                           | 22.1        |
+| Assets - Consumables                 | YES                           | 22.1        |
+| Assets Types                         | YES                           | 22.1        |
 | **Service module**                   |                               |             |
-| Service Activities                   | YES                           | 21.1-       |
-| Service Agreements                   | YES                           | 21.1        |
-| Service Object Types                 | YES                           | 21.1        |
-| Service Objects                      | YES                           | 21.1        |
-| Service Orders                       | YES                           | 21.1        |
-| Service Types                        | YES                           | 21.1        |
-| Services                             | YES                           | 21.1        |
-| Services - Ivoicing                  | YES                           | 21.1        |
+| Service Activities                   | YES                           | 22.1        |
+| Service Agreements                   | YES                           | 22.1        |
+| Service Object Types                 | YES                           | 22.1        |
+| Service Objects                      | YES                           | 22.1        |
+| Service Orders                       | YES                           | 22.1        |
+| Service Types                        | YES                           | 22.1        |
+| Services                             | YES                           | 22.1        |
+| Services - Ivoicing                  | YES                           | 22.1        |
 | **Vehicles module**                  |                               |             |
-| Crews                                | YES                           | 21.1        |
-| Equipment Types                      | YES                           | 21.1        |
-| Map Points                           | YES                           | 21.1        |
-| Trips                                | YES                           | 21.1        |
-| Vehicle Equipment                    | YES                           | 21.1        |
-| Vehicle Sets                         | YES                           | 21.1        |
-| Vehicles                             | YES                           | 21.1        |
+| Crews                                | YES                           | 22.1        |
+| Equipment Types                      | YES                           | 22.1        |
+| Map Points                           | YES                           | 22.1        |
+| Trips                                | YES                           | 22.1        |
+| Vehicle Equipment                    | YES                           | 22.1        |
+| Vehicle Sets                         | YES                           | 22.1        |
+| Vehicles                             | YES                           | 22.1        |
 | **Mail module**                      |                               |             |
-| Mail Messages                        | NO                            | -           |
-| Mailboxes                            | NO                            | --          |
+| Mail Messages                        | YES                           | 22.1        |
+| Mailboxes                            | YES                           | 22.1        |
 | **Data Warehouse module**            |                               |             |
 | Data Measures                        | NO                            | -           |
 | Data Measures Groups                 | NO                            | -           |
 | Data Values                          | NO                            | -           |
 | **Personal Data (GDPR) module**      |                               |             |
-| Personal Data Management Processes   | YES                           | 21.1        |
-| Processing Consents                  | YES                           | 21.1        |
-| Rights Requests                      | YES                           | 21.1        |
+| Personal Data Management Processes   | YES                           | 22.1        |
+| Processing Consents                  | YES                           | 22.1        |
+| Rights Requests                      | YES                           | 22.1        |
 | **Asset Maintanance module**         |                               |             |
-| Maintenance Orders                   | YES                           | 21.1        |
-| Maintenance Types Groups             | YES                           | 21.1        |
-| Maintenance Types                    | YES                           | 21.1        |
-| Managed Asset Groups                 | YES                           | 21.1        |
-| Managed Asset Types                  | YES                           | 21.1        |
-| Managed Assets                       | YES                           | 21.1        |
-| Service Centers                      | YES                           | 21.1        |
-| Tracked Parameters                   | YES                           | 21.1        |
+| Maintenance Orders                   | YES                           | 22.1        |
+| Maintenance Types Groups             | YES                           | 22.1        |
+| Maintenance Types                    | YES                           | 22.1        |
+| Managed Asset Groups                 | YES                           | 22.1        |
+| Managed Asset Types                  | YES                           | 22.1        |
+| Managed Assets                       | YES                           | 22.1        |
+| Service Centers                      | YES                           | 22.1        |
+| Tracked Parameters                   | YES                           | 22.1        |
 | **General**                          |                               |             |
-| Administrative Regions               | YES                           | 21.1        |
-| Countries                            | YES                           | 21.1        |
-| Currencies                           | YES                           | 21.1        |
+| Administrative Regions               | YES                           | 22.1        |
+| Countries                            | YES                           | 22.1        |
+| Currencies                           | YES                           | 22.1        |
 | Currency Directories                 | NO                            | -           |
-| Custom Properties                    | YES                           | 21.1        |
-| Custom Properties Categories         | YES                           | 21.1        |
-| Enterprise Companies                 | NO                            | -           |
+| Custom Properties                    | YES                           | 22.1        |
+| Custom Properties Categories         | YES                           | 22.1        |
+| Enterprise Companies                 | YES                           | 22.1        |
 | **Communities**                      |                               |             |
-| Notification Settings                | YES                           | 21.1        |
-| Notifications                        | YES                           | 21.1        |
+| Notification Settings                | YES                           | 22.1        |
+| Notifications                        | YES                           | 22.1        |
 | **Document Model**                   |                               |             |
-| Document Amount Types                | YES                           | 21.1        |
+| Document Amount Types                | YES                           | 22.1        |
 | Document Types - Amounts             | NO                            | -           |
-| Document Types                       | YES                           | 21.1        |
+| Document Types                       | YES                           | 22.1        |
 | Document Types - Security Conditions | NO                            | -           |
 | Printouts                            | NO                            | -           |
-| Printouts - Layouts                  | NO                            | -           |
-| Processes                            | NO                            | -           |
-| Routes                               | NO                            | -           |
-| Sales Orders - Default Payment Plans | YES                           | 21.1        |
+| Printouts - Layouts                  | YES                           | 22.1        |
+| Processes                            | YES                           | 22.1        |
+| Routes                               | YES                           | 22.1        |
+| Sales Orders - Default Payment Plans | YES                           | 22.1        |
 | Sequence Generators                  | NO                            | -           |
 | Sequences                            | NO                            | -           |
 | **Business Rules**                   |                               |             |
 | Calculated Attributes                | YES                           | 2018.1      |
 | User Business Rules                  | YES                           | 2018.1      |
 | **Business Processes**               |                               |             |
-| Business Processes                   | YES                           | 21.1        |
+| Business Processes                   | YES                           | 22.1        |
 | Process Connections                  | NO                            | -           |
 | Process Elements                     | NO                            | -           |
-| Process Groups                       | YES                           | 21.1        |
-| Process Instance                     | YES                           | 21.1        |
-| Process Lanes                        | YES                           | 21.1        |
+| Process Groups                       | YES                           | 22.1        |
+| Process Instance                     | YES                           | 22.1        |
+| Process Lanes                        | YES                           | 22.1        |
 | **Security**                         |                               |             |
 | Access Keys                          | NO                            | -           |
-| Audit Log Entries                    | YES                           | 21.1        |
-| Column Permissions                   | YES                           | 21.1        |
+| Audit Log Entries                    | YES                           | 22.1        |
+| Column Permissions                   | YES                           | 22.1        |
 | Domains                              | NO                            | -           |
 | Entities                             | NO                            | -           |
 | Groups                               | NO                            | -           |
@@ -306,7 +306,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Document Jobs                        | NO                            | -           |
 | External Applications                | NO                            | -           |
 | Jobs                                 | NO                            | -           |
-| Reports                              | NO                            | -           |
-| Translations                         | YES                           | 21.1        |
+| Reports                              | YES                           | 22.1        |
+| Translations                         | YES                           | 22.1        |
 | Web Hosts                            | NO                            | -           |
 | Web Sites                            | NO                            | -           |
