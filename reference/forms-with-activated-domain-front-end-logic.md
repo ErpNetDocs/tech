@@ -55,8 +55,8 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | **Configurator module**              |                               |             |
 | Product Groups                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
-| Product - Custom Properties          | NO                            | -           |
-| Product group - Required properties  | NO                            | -           |
+| Product group - Required properties  | YES                           |             |
+| Product - Custom properties          | YES                           |             |
 | **Contacts & Tasks module**          |                               |             |
 | Activities                           | YES                           | 20.1        |
 | ActivityParticipants                 | YES                           | 22.1        |
@@ -96,7 +96,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | **Pricing module**                   |                               |             |
 | Pricing Models                       | YES                           | 20.1        |
 | Products                             | YES                           | 20.1        |
-| Types                                | NO                            | -           |
+| Types                                | YES                           |             |
 | **Shipment module**                  |                               |             |
 | Shipment Orders                      | YES                           | 20.1        |
 | Shipments                            | YES                           | 20.1        |
@@ -182,24 +182,23 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Supliers - Persons                   | YES                           | 20.1        |
 | Purchase Invoice                     | YES                           | 22.1        |
 | **Accounting module**                |                               |             |
-| Account Groups                       | NO                            | -           |
+| Account Groups                       | YES                           |             |
 | Accounts                             | YES                           | 22.1        |
-| Cost Centers                         | NO                            | -           |
-| Operations                           | NO                            | -           |
-| Profit Centers                       | NO                            | -           |
+| Cost Centers                         | YES                           |             |
+| Operations                           | YES                           |             |
+| Profit Centers                       | YES                           |             |
 | Templates                            | YES                           | 22.1        |
 | Vouchers                             | NO                            | -           |
 | **Cost Accounting module**           |                               |             |
-| Cost Distributions                   | NO                            | -           |
-| Cost Types                           | NO                            | -           |
-| Financial Statements                 | NO                            | -           |
-| Finanse Analisys Module              | NO                            | -           |
+| Cost Distributions                   | YES                           |             |
+| Cost Types                           | YES                           |             |
+| Financial Statements                 | YES                           |             |
 | **VAT module**                       |                               |             |
 | Deal Types                           | YES                           | 22.1        |
 | Declaring Person                     | YES                           | 22.1        |
-| Document Type VAT Codes              | NO                            | -           |
+| Document Type VAT Codes              | YES                           |             |
 | Entries                              | YES                           | 22.1        |
-| VAT Declarations                     | NO                            | -           |
+| VAT Declarations                     | YES                           |             |
 | **Intrastat module**                 |                               |             |
 | Intrastat Declarations               | YES                           | 22.1        |
 | **Fixed Assets module**              |                               |             |
@@ -240,14 +239,14 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Mail Messages                        | YES                           | 22.1        |
 | Mailboxes                            | YES                           | 22.1        |
 | **Data Warehouse module**            |                               |             |
-| Data Measures                        | NO                            | -           |
-| Data Measures Groups                 | NO                            | -           |
-| Data Values                          | NO                            | -           |
+| Data Measures                        | YES                           |             |
+| Data Measures Groups                 | YES                           |             |
+| Data Values                          | YES                           |             |
 | **Personal Data (GDPR) module**      |                               |             |
 | Personal Data Management Processes   | YES                           | 22.1        |
 | Processing Consents                  | YES                           | 22.1        |
 | Rights Requests                      | YES                           | 22.1        |
-| **Asset Maintanance module**         |                               |             |
+| **Asset Maintenance module**         |                               |             |
 | Maintenance Orders                   | YES                           | 22.1        |
 | Maintenance Types Groups             | YES                           | 22.1        |
 | Maintenance Types                    | YES                           | 22.1        |
@@ -260,7 +259,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Administrative Regions               | YES                           | 22.1        |
 | Countries                            | YES                           | 22.1        |
 | Currencies                           | YES                           | 22.1        |
-| Currency Directories                 | NO                            | -           |
+| Currency Directories                 | YES                           |             |
 | Custom Properties                    | YES                           | 22.1        |
 | Custom Properties Categories         | YES                           | 22.1        |
 | Enterprise Companies                 | YES                           | 22.1        |
@@ -269,44 +268,43 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | Notifications                        | YES                           | 22.1        |
 | **Document Model**                   |                               |             |
 | Document Amount Types                | YES                           | 22.1        |
-| Document Types - Amounts             | NO                            | -           |
+| Document Types - Amounts             | YES                           |             |
 | Document Types                       | YES                           | 22.1        |
-| Document Types - Security Conditions | NO                            | -           |
-| Printouts                            | NO                            | -           |
+| Document Types - Security Conditions | YES                           |             |
+| Printouts                            | YES                           |             |
 | Printouts - Layouts                  | YES                           | 22.1        |
 | Processes                            | YES                           | 22.1        |
 | Routes                               | YES                           | 22.1        |
 | Sales Orders - Default Payment Plans | YES                           | 22.1        |
-| Sequence Generators                  | NO                            | -           |
-| Sequences                            | NO                            | -           |
+| Sequence Generators                  | YES                           |             |
+| Sequences                            | YES                           |             |
 | **Business Rules**                   |                               |             |
 | Calculated Attributes                | YES                           | 2018.1      |
 | User Business Rules                  | YES                           | 2018.1      |
 | **Business Processes**               |                               |             |
 | Business Processes                   | YES                           | 22.1        |
-| Process Connections                  | NO                            | -           |
-| Process Elements                     | NO                            | -           |
+| Process Elements                     | YES                           |             |
 | Process Groups                       | YES                           | 22.1        |
 | Process Instance                     | YES                           | 22.1        |
 | Process Lanes                        | YES                           | 22.1        |
 | **Security**                         |                               |             |
-| Access Keys                          | NO                            | -           |
+| Access Keys                          | YES                           |             |
 | Audit Log Entries                    | YES                           | 22.1        |
 | Column Permissions                   | YES                           | 22.1        |
-| Domains                              | NO                            | -           |
-| Entities                             | NO                            | -           |
-| Groups                               | NO                            | -           |
-| Roles                                | NO                            | -           |
-| Roles - Users                        | NO                            | -           |
-| Trusted Applications                 | NO                            | -           |
-| User Groups                          | NO                            | -           |
-| Users                                | NO                            | -           |
+| Domains                              | YES                           |             |
+| Entities                             | YES                           |             |
+| Groups                               | YES                           |             |
+| Roles                                | YES                           |             |
+| Roles - Users                        | YES                           |             |
+| Trusted Applications                 | YES                           |             |
+| User Groups                          | YES                           |             |
+| Users                                | YES                           |             |
 | **Tools**                            |                               |             |
-| Data Sources                         | NO                            | -           |
-| Document Jobs                        | NO                            | -           |
-| External Applications                | NO                            | -           |
-| Jobs                                 | NO                            | -           |
+| Data Sources                         | YES                           |             |
+| Document Jobs                        | YES                           |             |
+| External Applications                | YES                           |             |
+| Jobs                                 | YES                           |             |
 | Reports                              | YES                           | 22.1        |
 | Translations                         | YES                           | 22.1        |
-| Web Hosts                            | NO                            | -           |
-| Web Sites                            | NO                            | -           |
+| Web Hosts                            | YES                           |             |
+| Web Sites                            | YES                           |             |
