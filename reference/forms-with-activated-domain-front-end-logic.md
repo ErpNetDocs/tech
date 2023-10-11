@@ -300,7 +300,7 @@ E.i. if it is activated for the sales ordes form - it is also activated for pane
 | User Groups                          | YES                           |             |
 | Users                                | YES                           |             |
 | **Tools**                            |                               |             |
-| Data Sources                         | YES                           |             |
+| Data Sources                         | YES                           | 22.1        |
 | Document Jobs                        | YES                           |             |
 | External Applications                | YES                           |             |
 | Jobs                                 | YES                           |             |
