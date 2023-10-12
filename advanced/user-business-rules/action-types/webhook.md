@@ -83,6 +83,18 @@ Content-Length: 153
 * All HTTP response codes that are **not** in the range [200-299] (as well as the timeouts) are treated as errors and logged as such.
 * There's a quota allowing logging up to 100 errors per calendar day.
 
+> [!WARNING]
+> 
+> When a webhook action is triggered by events other than \*COMMITTED, the webhook is dispatched. However, at this point, the @@name **transaction is still in progress**.
+>
+> This means that the upcoming changes **haven't yet taken place**.
+>
+> Consequently, if your external application performs a READ operation, there's a chance that you're reading an outdated record— i.e., one that has not yet been physically committed.
+>
+> **The same applies when you CREATE and CHANGE the state of a document simultaneously, i.e., at once, especially when utilizing a [document generation procedure](../../document-flow/generation.html)**.
+>
+> A common approach is for your external application to implement an initial delay upon receiving the webhook, ensuring sufficient time for the entire process (i.e. the @@name transaction) to complete before proceeding with its subsequent actions.
+
 -------------
 ## See more
 
