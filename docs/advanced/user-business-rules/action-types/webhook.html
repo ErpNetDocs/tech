@@ -278,6 +278,14 @@ Content-Length: 153
 <li>All HTTP response codes that are <strong>not</strong> in the range [200-299] (as well as the timeouts) are treated as errors and logged as such.</li>
 <li>There's a quota allowing logging up to 100 errors per calendar day.</li>
 </ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>When a webhook action is triggered by events other than *COMMITTED, the webhook is dispatched. However, at this point, the ERP.net <strong>transaction is still in progress</strong>.</p>
+<p>This means that the upcoming changes <strong>haven't yet taken place</strong>.</p>
+<p>Consequently, if your external application performs a READ operation, there's a chance that you're reading an outdated record— i.e., one that has not yet been physically committed.</p>
+<p><strong>The same applies when you CREATE and CHANGE the state of a document simultaneously, i.e., at once, especially when utilizing a <a href="../../document-flow/generation.html">document generation procedure</a></strong>.</p>
+<p>A common approach is for your external application to implement an initial delay upon receiving the webhook, ensuring sufficient time for the entire process (i.e. the ERP.net transaction) to complete before proceeding with its subsequent actions.</p>
+</div>
 <hr>
 <h2 id="see-more">See more</h2>
 <ul>
