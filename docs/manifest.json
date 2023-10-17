@@ -149,7 +149,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/calculated-attributes/QA/index.html",
-          "hash": "WVfv366wLPO7v0ZWVArtHA=="
+          "hash": "Sz78gidPh+65az9SZqgCag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/QA/what-is-the-difference-between-datespan-and-datediff.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/QA/what-is-the-difference-between-datespan-and-datediff.html",
+          "hash": "1VugPO2dQiUUuUyPuSUfKg=="
         }
       },
       "is_incremental": false,
@@ -1944,7 +1956,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "lXuO7ceXqf+amDW8IeGR0A=="
+          "hash": "l4sdA+untYtGDycKg9tk+g=="
         }
       },
       "is_incremental": false,

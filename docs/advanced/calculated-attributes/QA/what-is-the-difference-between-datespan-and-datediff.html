@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Q &amp; A | ERP.net Tech Docs </title>
+    <title>What is the difference between DATESPAN and DATEDIFF operators? | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Q &amp; A | ERP.net Tech Docs ">
+    <meta name="title" content="What is the difference between DATESPAN and DATEDIFF operators? | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,19 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="q--a">Q &amp; A</h1>
+<h1 id="what-is-the-difference-between-datespan-and-datediff-operators">What is the difference between DATESPAN and DATEDIFF operators?</h1>
 
+<h2 id="datespan">DATESPAN</h2>
+<p><a href="../operators/datespan.html"><strong>DATESPAN</strong></a> calculates the time duration between two dates based on specified intervals, such as days, weeks, or months. It provides the duration within these intervals and is ideal for scenarios where you need to measure time in meaningful units.</p>
+<p>For instance, if you want to know the time gap between two events in days or months, <a href="../operators/datespan.html"><strong>DATESPAN</strong></a> is the go-to operator.</p>
+<p>Example: Consider two dates - <code>2023-01-01 23:59</code>, and <code>2023-01-03 00:00</code>. Using <a href="../operators/datespan.html"><strong>DATESPAN</strong></a> with a day interval, you'd get a result of 1 day, emphasizing the specific interval.</p>
+<p>Another example: If you choose a month as the interval, the same two dates will yield a result of 0 months, focusing on the month-level duration.</p>
+<h2 id="datediff">DATEDIFF</h2>
+<p><a href="../operators/datediff.html"><strong>DATEDIFF</strong></a>, on the other hand, computes the absolute difference between two dates in terms of the specified interval type, like days, months, or years. It's useful when you need a precise count of these units between two dates, disregarding the specific intervals.</p>
+<p>For instance, to determine the exact number of days between two dates, <a href="../operators/datediff.html"><strong>DATEDIFF</strong></a> provides this precise difference.</p>
+<p>Example: If you choose months as the interval, and the dates are <code>2023-01-01</code> and <code>2023-03-01</code>, <a href="../operators/datediff.html"><strong>DATEDIFF</strong></a> would yield 2 months, reflecting the month-level difference.</p>
+<p>In summary, <a href="../operators/datespan.html"><strong>DATESPAN</strong></a> is ideal for measuring time in specified intervals, providing the duration within those intervals (e.g., days, months). <a href="../operators/datediff.html"><strong>DATEDIFF</strong></a>, however, offers the absolute difference between dates in terms of the specified interval type (e.g., days, months), disregarding specific intervals.</p>
+<p>--</p>
 <ul>
-<li><strong><a href="How-to-check-if-a-custom-property-has-value.html">How to check if a custom property has values?</a></strong></li>
-<li><strong><a href="How-to-check-if-a-list-has-values.html">How to check if a list has values?</a></strong></li>
-<li><strong><a href="How-to-check-if-a-field-that-points-to-a-reference-object-has-a-value.html">How to check if a field that points to a reference object has a value?</a></strong></li>
-<li><strong><a href="How-to-create-an-optimally-fast-calculated-attribute.html">How to create an optimally fast calculated attribute?</a></strong></li>
-<li><strong><a href="How-to-determine-the-party-type-of-a-party.html">How to determine the party type of a party?</a></strong></li>
-<li><strong><a href="How-to-get-attribute-value-from-list.html">How to get an attribute value from list?</a></strong></li>
-<li><strong><a href="How-to-get-specific-field-of-a-parent-document.html">How to get a specific field of a parent document?</a></strong></li>
-<li><strong><a href="How-to-show-contact-of-a-person-in-persons-navigator.html">How to show contact of a person in Persons navigator?</a></strong></li>
-<li><strong><a href="How-to-use-a-customer-as-a-company.html">How to use the customer as a company?</a></strong></li>
-<li><strong><a href="what-is-the-difference-between-datespan-and-datediff.html">What is the difference between DATESPAN and DATEDIFF operators?</a></strong></li>
+<li><a href="../operators/datespan.html">DATESPAN operator</a></li>
+<li><a href="../operators/datediff.html">DATEDIFF operator</a></li>
 </ul>
 </article>
           </div>
@@ -99,7 +102,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/QA/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/QA/what-is-the-difference-between-datespan-and-datediff.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
