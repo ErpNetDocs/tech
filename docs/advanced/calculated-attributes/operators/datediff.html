@@ -113,7 +113,7 @@
 </tr>
 <tr>
 <td>Parameter 3 Type</td>
-<td>String (Days, Months, Years) If empty then value is Days</td>
+<td>String (Days, Months, Years). Defaults to Days if not specified.</td>
 </tr>
 <tr>
 <td>Return value</td>
@@ -121,29 +121,41 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Example:</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Parameter 3 (Interval) accepts input in the form of a string, allowing you to specify the interval type as either 'Days' (alias 'D'), 'Months' (alias 'M'), or 'Years' (alias 'Y'). If you don't explicitly specify an interval type, it will default to 'Days'.</p>
+</div>
+<p><strong>Examples:</strong></p>
 <pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Days            
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2020-01-01 23:59' and 'RequiredDeliveryDate = 2020-01-02 00:01'  , the output will be '1'.</p>
-<p>OUTPUT: If 'DocumentDate = 2020-01-01 23:58' and 'RequiredDeliveryDate = 2020-01-02 23:59'  , the output will be '1'.</p>
-<p>OUTPUT: If 'DocumentDate = 2023-09-20' and  'RequiredDeliveryDate = 2023-10-05', the output will be '15'.</p>
-<p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-09-10', the output will be '-10'.</p>
+<p>OUTPUT:
+<br> If 'DocumentDate = 2020-01-01 23:59' and 'RequiredDeliveryDate = 2020-01-02 00:01'  , the output will be '1'.
+<br> If 'DocumentDate = 2020-01-01 23:58' and 'RequiredDeliveryDate = 2020-01-02 23:59'  , the output will be '1'.
+<br> If 'DocumentDate = 2023-09-20' and  'RequiredDeliveryDate = 2023-10-05', the output will be '15'.
+<br> If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-09-10', the output will be '-10'.</p>
 <p>**</p>
 <pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Months            
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-05' , the output will be '1'.</p>
-<p>OUTPUT: If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-20' , the output will be '1'.</p>
+<p>OUTPUT:
+<br> If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-05' , the output will be '1'.
+<br> If 'DocumentDate = 2023-09-20' and 'RequiredDeliveryDate = 2023-10-20' , the output will be '1'.</p>
 <p>**</p>
 <pre><code>10:  DATEDIFF ATTRIB:DocumentDate ATTRIB:RequiredDeliveryDate ATTRIB:Years            
 </code></pre>
-<p>OUTPUT: If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-01-20' , the output will be '1'.</p>
-<p>OUTPUT: If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-10-05' , the output will be '1'.</p>
+<p>OUTPUT:
+<br> If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-01-20' , the output will be '1'.
+<br> If 'DocumentDate = 2023-10-05' and 'RequiredDeliveryDate = 2024-10-05' , the output will be '1'.</p>
 <p>**</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrder</em></p>
 </div>
-<h4 id="section"></h4>
+<hr>
+<h3 id="see-more">See more</h3>
+<ul>
+<li><strong><a href="datespan.html">DATESPAN operator</a></strong></li>
+<li><strong><a href="../QA/what-is-the-difference-between-datespan-and-datediff.html">Difference between DATESPAN and DATEDIFF</a></strong></li>
+</ul>
 </article>
           </div>
           
