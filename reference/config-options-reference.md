@@ -292,7 +292,7 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 - b.The user sets it manually.
 - c.The key is introduced in version: - 23.2
 
-## 55. /WMS/WMS-Worker/ShowAdditionalInformation
+## 55. /WMS/WMS-Worker/OrderDisplayFormat
 - a.Action: When this key has a value, WMS Worker application will display additional information. Depending on the entered key value - in the orders list, you can see the data you need from the current Warehouse order header.
   The value is entered as an interpolated string. You can use also format specifiers. <br>
   For example "My info - {@Property1: VD} ; my store: {Warehouse}" will be displayed as "My info - 01:yes ; my store: Warehouse1"
