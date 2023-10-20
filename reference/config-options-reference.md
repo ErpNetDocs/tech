@@ -191,7 +191,7 @@ The options set for the database are visible in the Configurations navigator and
 - b.The user sets it manually.
 
 ## 40. ReservedLicenses (not implemented/ cancelled)
-    
+
 ## 41. EnableCreateGroupForUser
 - a.Action: When this key has value and this value is "1" or "true" (case-insensitive), when creating a new user into the database a new group with the user’s name will be created automatically as well. 
 - b.The user sets it manually.
@@ -220,7 +220,7 @@ The options set for the database are visible in the Configurations navigator and
     - "1" - the form that is going to be opened when the program is started by the specified user will be the Start screen. 
     - "2" - the starting form will be the Main menu. <br>
     - "0", different from "1" and "2" or the key is not configured for the particular database and user - the system will use the default value. The default value for
-version 2020.1 is Main Menu.**Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
+    version 2020.1 is Main Menu.**Warning:** The current key's value will be taken into account only if there is no global policy specifying the use of the start screen for the whole database using the key "UseStartScreenPolicy"
 - b.The user sets it manually.
 - c. The key is introduced in version: - 2020.1
 
@@ -297,3 +297,8 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
   The value is entered as an interpolated string. You can use also format specifiers. <br>
   For example "My info - {@Property1: VD} ; my store: {Warehouse}" will be displayed as "My info - 01:yes ; my store: Warehouse1"
 - b.The user sets it manually.
+
+## 56. DataSourceTableOptimizationDisabled
+
+- a.Action: When this key has value and this value is "1", all tables in the data source of the printout will be extracted from the database. In all other cases, only the data that is actually used by the layout of the printout will be extracted.
+- b.The user sets it manually
