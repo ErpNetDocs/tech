@@ -8,13 +8,13 @@ The following table contains default system-specified tracking levels:
 
 | Entity | Default tracking level | Activated in version |
 | -- | ------------------------------- | ---------------------------------------------|
-| Documents | 3 | 2019.1 |
 | Calculated attributes | 3 | 2019.1 |
 | Calculated attributes | 3 | 2019.1 |
 | Companies | 3 | 2019.1 |
 | Company locations | 3 | 2019.1 |
 | Config | 3 | 2019.1 |
 | Document types | 4 | 2019.1 |
+| Documents | 3 | 2019.1 |
 | Enterprise companies | 3 | 2019.1 |
 | Entities | 3 | 2019.1 |
 | Group access keys | 3 | 2019.1 |
