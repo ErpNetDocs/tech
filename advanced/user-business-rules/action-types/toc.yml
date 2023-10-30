@@ -11,4 +11,10 @@
 - name: WARNING
   href: warning.md 
 - name: WEBHOOK
-  href: webhook.md 
+  href: webhook.md
+- name: AISET
+  href: aiset.md
+- name: AIVALIDATE
+  href: aivalidate.md
+- name: AIWARNING
+  href: aiwarning.md
