@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AIWARNING | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AIWARNING | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="brat-AIWARNING">
+<h1 id="aiwarning">AIWARNING</h1>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>AIWARNING</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Perform a validation, based on AI prompt. If the validation fails, a warning is sent.</td>
+</tr>
+<tr>
+<td>Parameter 1</td>
+<td>The AI prompt used to perform the validation. Usually, the AI prompt would be an interpolated string, interpolating the values, which should be validated in an AI prompt. It should return &quot;true&quot; if the validation is successful. Any other value (or timeout) would mean failure.</td>
+</tr>
+<tr>
+<td>Parameter 1 type</td>
+<td>Constant (string)</td>
+</tr>
+<tr>
+<td>Parameter 2</td>
+<td>The message, which should be provided to the user if the validation fails. The message might include the validated values using an interpolated (formatted) string parameter.</td>
+</tr>
+<tr>
+<td>Parameter 2 type</td>
+<td>Constant (string)</td>
+</tr>
+<tr>
+<td>Parameter 3</td>
+<td>Timeout, ms (optional)</td>
+</tr>
+<tr>
+<td>Parameter 3 type</td>
+<td>Constant (integer) Default = 2000 ms.</td>
+</tr>
+<tr>
+<td>Examples</td>
+<td>See the <a href="#example">Example</a> section below</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>Introduced in: 24</td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatible-events-chart">Compatible events chart</h2>
+<p>AIWARNING is compatible with all events.</p>
+<table>
+<thead>
+<tr>
+<th>Event type</th>
+<th>Compatibility with AIWARNING</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client commit (e.g. <a href="../events/client-commit.html">CLIENTCOMMIT</a>, <a href="../events/aggregate-client-commit.html">AGGREGATECLIENTCOMMIT</a>)</td>
+<td>compatible</td>
+</tr>
+<tr>
+<td>Client committed (e.g. <a href="../events/client-committed.html">CLIENTCOMMITTED</a>, <a href="../events/aggregate-client-committed.html">AGGREGATECLIENTCOMMITTED</a>)</td>
+<td>compatible</td>
+</tr>
+<tr>
+<td>Document events - (e.g. <a href="../events/statechanging.html">STATECHANGING</a>, <a href="../events/statechanged.html">STATECHANGED</a>, <a href="../events/voiding.html">VOIDING</a>)</td>
+<td>compatible</td>
+</tr>
+<tr>
+<td>Commit (e.g. <a href="../events/commit.html">COMMIT</a>)</td>
+<td>compatible</td>
+</tr>
+<tr>
+<td>Committed (e.g. <a href="../events/committed.html">COMMITTED</a>)</td>
+<td>compatible</td>
+</tr>
+<tr>
+<td>Front-end (e.g. <a href="../events/create-new.html">CREATENEW</a>, ATTRIBUTECHANGING, ATTRIBUTECHANGED)</td>
+<td>compatible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example:</h3>
+<p>А <strong><a href="../index.html">business rule</a></strong> sends a warning when a <a href="https://docs.erp.net/model/entities/General.Contacts.Persons.html#partyname">party name</a> doesn't look like a real one.</p>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General.Contacts.Persons</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Events</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Event type</td>
+<td>Event parameter</td>
+<td>Execution priority</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ATTRIBUTECHANGED</td>
+<td>PartyName</td>
+<td>Normal</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Action No</td>
+<td>Action type</td>
+<td>Parameter1 type</td>
+<td>Parameter1 value</td>
+<td>Parameter2 type</td>
+<td>Parameter2 value</td>
+<td>Parameter3 type (optional)</td>
+<td>Parameter3 value</td>
+</tr>
+<tr>
+<td>1</td>
+<td>AIWARNING</td>
+<td>Constant</td>
+<td>Does this '{PartyName}' seem like a real name?</td>
+<td>Constant</td>
+<td>The provided name '{PartyName}' does not seem like a real one.</td>
+<td>Constant</td>
+<td>10000</td>
+</tr>
+</tbody>
+</table>
+<p>The parameters are as follows:</p>
+<ul>
+<li>Specifies that we're checking if the provided IBAN is valid.</li>
+<li>Specifies the error message to return if the validation fails.</li>
+<li>Specifies that there's a timeout of 2000 milliseconds.</li>
+</ul>
+<h2 id="key-points-and-specific-limitations">Key points and specific limitations</h2>
+<ul>
+<li>The results depend entirely on the AI engine and the specified prompt.</li>
+<li>With vaguer instructions, it's possible to receive different output for the same input.</li>
+<li>If the AI engine doesn't respond within the specified timeout, you will receive an empty string.</li>
+</ul>
+<hr>
+<h2 id="see-more">See more</h2>
+<ul>
+<li><strong><a href="../../string-interpolation/index.html">String interpolation</a></strong></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/action-types/aiwarning.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

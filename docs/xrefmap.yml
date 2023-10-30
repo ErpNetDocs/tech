@@ -34,6 +34,15 @@ references:
 - uid: bonus-program
   name: Bonus programs
   href: modules/crm/marketing/bonus-programs/index.html
+- uid: brat-AISET
+  name: AISET
+  href: advanced/user-business-rules/action-types/aiset.html
+- uid: brat-AIVALIDATE
+  name: AIVALIDATE
+  href: advanced/user-business-rules/action-types/aivalidate.html
+- uid: brat-AIWARNING
+  name: AIWARNING
+  href: advanced/user-business-rules/action-types/aiwarning.html
 - uid: brat-FAIL
   name: FAIL
   href: advanced/user-business-rules/action-types/fail.html
