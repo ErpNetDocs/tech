@@ -2,4 +2,5 @@
   href: index.md
 - name: FormattedString
   href: formattedstring.md
-  
+- name: Interpolate
+  href: interpolate.md
