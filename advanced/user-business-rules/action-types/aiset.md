@@ -11,9 +11,9 @@ items: ActionTypes
 | Parameter 1      | Attribute, which should be set.                              |
 | Parameter 1 type | Attribute                                                    |
 | Parameter 2      | AI Prompt                                                    |
-| Parameter 2 type | Constant (string)                                            |
+| Parameter 2 type | string - Constant, [Formatted string](../parameter-types/formattedstring.md) or [Interpolate](../parameter-types/interpolate.md) |
 | Parameter 3      | Timeout, ms (optional) Default = 2000 ms.                    |
-| Parameter 3 type | Constant (integer)                                           |
+| Parameter 3 type | string - Constant, [Formatted string](../parameter-types/formattedstring.md) or [Interpolate](../parameter-types/interpolate.md) |
 | Examples         | See the [Example](#example) section below                    |
 | Version          | Introduced in: 24                                            |
 
@@ -42,7 +42,7 @@ AISET is compatible with all events.
 | ATTRIBUTECHANGED                       | Name            | Normal             |                  |                  |                  |                  |                  |
 | **Actions**                            |                 |                    |                  |                  |                  |                  |                  |
 | Action No                              | Action type     | Parameter1 type    | Parameter1 value | Parameter2 type  | Parameter2 value | Parameter3 type (optional) | Parameter3 value |
-| 1                                      | AISET           | Attribute          | ShortName        | Constant         | Just return a 4-symbol abbreviation of this input: {Name}. | Constant | 2000 |
+| 1                                      | AISET           | Attribute          | ShortName        | Interpolate      | Just return a 4-symbol abbreviation of this input: {Name}. | Constant | 2000 |
 
 The parameters are as follows:
 - Specifies that we'll set a new value in the ShortName attribute.

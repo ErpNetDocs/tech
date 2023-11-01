@@ -9,9 +9,9 @@ items: ActionTypes
 | ---------------- | ------------------------------------------------------------ |
 | Description      | Perform a validation, based on AI prompt. If the validation fails, a warning is sent. |
 | Parameter 1      | The AI prompt used to perform the validation. Usually, the AI prompt would be an interpolated string, interpolating the values, which should be validated in an AI prompt. It should return "true" if the validation is successful. Any other value (or timeout) would mean failure. |
-| Parameter 1 type | Constant (string)                                            |
+| Parameter 1 type | string - Constant, [Formatted string](../parameter-types/formattedstring.md) or [Interpolate](../parameter-types/interpolate.md) |
 | Parameter 2      | The message, which should be provided to the user if the validation fails. The message might include the validated values using an interpolated (formatted) string parameter. |
-| Parameter 2 type | Constant (string)                                            |
+| Parameter 2 type | string - Constant, [Formatted string](../parameter-types/formattedstring.md) or [Interpolate](../parameter-types/interpolate.md) |
 | Parameter 3      | Timeout, ms (optional)                                       |
 | Parameter 3 type | Constant (integer) Default = 2000 ms.                        |
 | Examples         | See the [Example](#example) section below                    |
@@ -42,7 +42,7 @@ AIWARNING is compatible with all events.
 | ATTRIBUTECHANGED                       | PartyName       | Normal             |                  |                  |                  |                  |                  |
 | **Actions**                            |                 |                    |                  |                  |                  |                  |                  |
 | Action No                              | Action type     | Parameter1 type    | Parameter1 value | Parameter2 type  | Parameter2 value | Parameter3 type (optional) | Parameter3 value |
-| 1                                      | AIWARNING       | Constant           | Does this '{PartyName}' seem like a real name?  | Constant | The provided name '{PartyName}' does not seem like a real one. | Constant | 10000 |
+| 1                                      | AIWARNING       | Interpolate        | Does this '{PartyName}' seem like a real name?  | Interpolate | The provided name '{PartyName}' does not seem like a real one. | Constant | 10000 |
 
 The parameters are as follows:
 - Specifies that we're checking if the provided IBAN is valid.
