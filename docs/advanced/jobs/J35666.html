@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>J35666 Delete old history data for attribute changes | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="J35666 Delete old history data for attribute changes | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="jobs-J35666">
+<h1 id="j35666-delete-old-history-data-for-attribute-changes">J35666 Delete old history data for attribute changes</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Code</th>
+<th>J35666</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Entity</td>
+<td><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Core.AttributeChanges.html">Systems.Core.AttributeChanges View</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Job type name</td>
+<td>Delete old history data for attribute changes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parameters</td>
+<td>/TrackChanges/AttributeChangesRetentionMonths</td>
+</tr>
+<tr>
+<td style="text-align: left;">Description</td>
+<td>Deletes old history data for attribute changes whose object changeset’s TimeUtc is older than 36 months.<br> The default value of 36 months can be adjusted according to the specific needs by configuring and setting a preferred value in the <em>/TrackChanges/AttributeChangesRetentionMonths</em> key.</td>
+</tr>
+<tr>
+<td style="text-align: left;">First to process</td>
+<td>AttributeChange.ObjectChange.ObjectChangeset.TimeUtc (ASC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Automatically created</td>
+<td>YES</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td>Introduced: v.24</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The job will <strong>NOT</strong> delete information from the <strong>Object Changes</strong> and the <strong>Object Changesets</strong> tables. That means that the details regarding when and by whom the document or the definition has been changed will continue to be available. The job deletes only data related to the changed attributes and their updated values.
+To learn more about the documentation template and get a short explanation for each table column, <br> see <a class="xref" href="template.html">Jobs documentation template</a>.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/jobs/J35666.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

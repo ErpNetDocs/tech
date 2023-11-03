@@ -283,6 +283,9 @@ references:
 - uid: jobs-J35026
   name: J35026 Delete old information messages
   href: advanced/jobs/J35026.html
+- uid: jobs-J35666
+  name: J35666 Delete old history data for attribute changes
+  href: advanced/jobs/J35666.html
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
