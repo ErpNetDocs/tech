@@ -10378,12 +10378,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "reference/config-options-reference.md",
       "output": {
         ".html": {
           "relative_path": "reference/config-options-reference.html",
-          "hash": "8SNhdtdm5/9i6I8wnW9FYw=="
+          "hash": "kDSkccQvX/xzUbKuiRP6mA=="
         }
       },
       "is_incremental": false,
