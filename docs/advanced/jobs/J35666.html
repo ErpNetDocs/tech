@@ -97,11 +97,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">Parameters</td>
-<td><a href="../data-objects/track-changes.html"><strong>/TrackChanges/AttributeChangesRetentionMonths</strong></a> key</td>
+<td><strong>/TrackChanges/AttributeChangesRetentionMonths</strong> key</td>
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td>Deletes old history data for attribute changes whose object changeset’s TimeUtc is older than 36 months.<br> The default value of 36 months can be adjusted according to the specific needs by configuring and setting a preferred value in the <a href="../data-objects/track-changes.html"><strong>/TrackChanges/AttributeChangesRetentionMonths</strong></a> key.</td>
+<td>Deletes old history data for attribute changes whose object changeset’s TimeUtc is older than 36 months.<br> The default value of 36 months can be adjusted according to the specific needs by configuring and setting a preferred value in the <strong>/TrackChanges/AttributeChangesRetentionMonths</strong> key*.</td>
 </tr>
 <tr>
 <td style="text-align: left;">First to process</td>
@@ -117,6 +117,7 @@
 </tr>
 </tbody>
 </table>
+<p>*To learn more about the <strong>/TrackChanges/AttributeChangesRetentionMonths</strong> key, see key №57 in <a href="../../reference/config-options-reference.html">Config options</a>.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The job will <strong>NOT</strong> delete information from the <strong>Object Changes</strong> and the <strong>Object Changesets</strong> tables. That means that the details regarding when and by whom the document or the definition has been changed will continue to be available. The job deletes only data related to the changed attributes and their updated values.</p>

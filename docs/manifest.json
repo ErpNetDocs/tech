@@ -1605,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/jobs/J35666.html",
-          "hash": "fl8Pv5ou0/ieYz1eLhzbrA=="
+          "hash": "QpTCm/oYNGLcT7uGHfYAdQ=="
         }
       },
       "is_incremental": false,
@@ -10378,15 +10378,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "reference/config-options-reference.md",
       "output": {
         ".html": {
           "relative_path": "reference/config-options-reference.html",
-          "hash": "kDSkccQvX/xzUbKuiRP6mA=="
+          "hash": "ZRAmzUkkr9ja0Ny88xySMg=="
         }
       },
       "is_incremental": false,
