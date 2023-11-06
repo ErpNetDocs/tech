@@ -1,6 +1,5 @@
 # Assign worker
 The "Assign worker" UI function allows setting a worker responsible for a task in a "Warehouse Order" document. 
-[WMS Worker](setup-warehouse/warehouse-workers.md) interface.
 
 > [!NOTE]
 > This function is accessible only for Warehouse Orders in a state lower than Released.
