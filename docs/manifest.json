@@ -9617,6 +9617,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/assign-worker.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/assign-worker.html",
+          "hash": "Bew2L5RzpIr0B5S/CAug9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/change-worker.md",
       "output": {
         ".html": {
@@ -9676,7 +9688,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "xqt+eYKh3zLT7PWLzL7GJA=="
+          "hash": "V5GUZNQ8CQldoTlLcDCgZA=="
         }
       },
       "is_incremental": false,
@@ -9689,6 +9701,50 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
           "hash": "P7TF31GNvgz9AAPaCGgnhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/Assign_worker_4.png"
         }
       },
       "is_incremental": false,

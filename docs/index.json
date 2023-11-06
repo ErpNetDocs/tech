@@ -1884,6 +1884,11 @@
     "title": "User task - task type | ERP.net Tech Docs",
     "keywords": "User task - task type A user task is a task (work) that needs to be done by a human actor (the worker). When the process arrives at such task, the process execution stops and the application displays a text that guides the user of what needs to be done for this task. The text to be displayed must be indicated in advance in the Notes field of the particular Warehouse Order Line. Once the users (workers) have completed the execution of this task, they have to manually confirm that the job is completed. When the task is confirmed as completed, the process continues to the next task that needs to be done (if any). Result When executed, the warehouse order lines with a 'User task' task type create a finished Document Fulfillment. If there is atleast one document fulfillment for this line, then the user task is considered as completed."
   },
+  "modules/logistics/wms/how-to/assign-worker.html": {
+    "href": "modules/logistics/wms/how-to/assign-worker.html",
+    "title": "Assign worker | ERP.net Tech Docs",
+    "keywords": "Assign worker The \"Assign worker\" UI function allows setting a worker responsible for a task in a \"Warehouse Order\" document. WMS Worker interface. Note This function is accessible only for Warehouse Orders in a state lower than Released. If the current document is in a state Released, you can change the worker by using the Change Worker UI function . How to use it: Open the relevant warehouse order in a state New, Planned or Firm planned. Click on the \"RUN“ button and choose \"Assign worker.\" This action triggers a dropdown list of Warehouse Workers. The displayed workers are filtered based on the warehouse selected in the document. Select the preferred Warehouse Worker from the dropdown list and confirm your choice by clicking \"OK.\" This initiates the function. After refreshing the document, the Warehouse Worker field will show the selected worker."
+  },
   "modules/logistics/wms/how-to/change-worker.html": {
     "href": "modules/logistics/wms/how-to/change-worker.html",
     "title": "Change worker | ERP.net Tech Docs",
@@ -1907,7 +1912,7 @@
   "modules/logistics/wms/how-to/index.html": {
     "href": "modules/logistics/wms/how-to/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
+    "keywords": "Assign worker Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
   },
   "modules/logistics/wms/how-to/initial-availability.html": {
     "href": "modules/logistics/wms/how-to/initial-availability.html",
