@@ -5720,6 +5720,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-list-worker.png",
       "output": {
         "resource": {
@@ -9732,7 +9743,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "N7mlxPMuVlrJ9gRkiJrFRA=="
+          "hash": "APVOTUHPjtANklS4dxnYNA=="
         }
       },
       "is_incremental": false,
@@ -10494,7 +10505,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "Ea1D0eAbcXIBIQKqZScNOg=="
+          "hash": "p3ptYT5kBG8LMVEhvRgmtQ=="
         }
       },
       "is_incremental": false,

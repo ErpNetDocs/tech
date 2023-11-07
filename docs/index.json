@@ -1912,7 +1912,7 @@
   "modules/logistics/wms/how-to/index.html": {
     "href": "modules/logistics/wms/how-to/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Assign worker Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
+    "keywords": "Assign worker Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability Enter quntity of one pce How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
   },
   "modules/logistics/wms/how-to/initial-availability.html": {
     "href": "modules/logistics/wms/how-to/initial-availability.html",
