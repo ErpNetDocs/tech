@@ -1,4 +1,4 @@
-# Enter quntity of one pce.md
+# Enter quntity of one pce
 
 You can decide what the behavior is when entering a barcode.
 When scanning a barcode - you can directly enter 1 pce without going through the quantity screen. 
