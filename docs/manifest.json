@@ -9743,7 +9743,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "APVOTUHPjtANklS4dxnYNA=="
+          "hash": "5OFRSzIw4/YsXeEQh5IWDw=="
         }
       },
       "is_incremental": false,
@@ -10152,12 +10152,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html",
-          "hash": "9Os602xpTmiKCSVrGRx7/g=="
+          "hash": "HzcqpEhE2VOAnwjO6hToNA=="
         }
       },
       "is_incremental": false,
