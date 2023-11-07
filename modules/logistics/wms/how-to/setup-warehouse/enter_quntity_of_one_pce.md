@@ -13,4 +13,4 @@ This setting is accessible by entering a [Config option](:/reference/config-opti
 When the value of the config is "1", then scanning of a single barcode is accepted as 1 PCE <br>
 When the value of the config is "0", then the WMS-Worker APP just finds the line and goes to execute mode for this line. 
 
-![Enter Quantity of one pce](pictures/enter_quntity_of_one_pce.png)
+![Enter Quantity of one pce](pictures/enter-quntity-of-one-pce.png)
