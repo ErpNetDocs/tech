@@ -10152,12 +10152,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html",
-          "hash": "m0Ht9zrQHZbmFYPrj0eORA=="
+          "hash": "a4dIXyEaByaHijYJXeQs1Q=="
         }
       },
       "is_incremental": false,
