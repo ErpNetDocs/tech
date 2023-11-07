@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Enter quntity of one pce | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Enter quntity of one pce | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../toc.html">
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
     
-    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:rel" content="../../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
-                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,23 +76,16 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="enter_quntity_of_one_pce">
+<h1 id="enter-quntity-of-one-pce">Enter quntity of one pce</h1>
 
-<ul>
-<li><a href="pictures/index.html"></a></li>
-<li><a href="setup-warehouse/enter_quntity_of_one_pce.html"></a></li>
-<li><a href="assign-worker.html">Assign worker</a></li>
-<li><a href="change-worker.html">Change worker</a></li>
-<li><a href="check-can-be-fulfilled.html">Check if a dispatch order can be fulfilled</a></li>
-<li><a href="document-flow.html">Document flow in WMS</a></li>
-<li><a href="initial-availability.html">Enter initial availability</a></li>
-<li><a href="execute-order-lines.html">How to execute order lines?</a></li>
-<li><a href="reconcile.html">Reconcile</a></li>
-<li><a href="setup-warehouse/warehouse-policies.html">Warehouse policies</a></li>
-<li><a href="setup-warehouse/index.html">Warehouse setup</a></li>
-<li><a href="setup-warehouse/warehouse-workers.html">Warehouse workers</a></li>
-<li><a href="setup-warehouse/zones-and-locations.html">Warehouse zones and locations</a></li>
-</ul>
+<p>You can decide what the behavior is when entering a barcode.
+When scanning a barcode - you can directly enter 1 pce without going through the quantity screen.
+Or when scanning a barcode - just find the row for that product and enter the quantity in the quantity screen.</p>
+<p>This setting is accessible by entering a <a href=":/reference/config-options-reference.md">Config option</a> - /WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce</p>
+<p>When the value of the config is &quot;1&quot;, then scanning of a single barcode is accepted as 1 PCE <br>
+When the value of the config is &quot;0&quot;, then the WMS-Worker APP just finds the line and goes to execute mode for this line.</p>
+<p><img src="pictures/enter-quantity-of-one-pce.png" alt="Enter Quantity of one pce"></p>
 </article>
           </div>
           
@@ -101,7 +94,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -127,8 +120,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
   </body>
 </html>

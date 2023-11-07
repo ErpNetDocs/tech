@@ -9732,7 +9732,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "V5GUZNQ8CQldoTlLcDCgZA=="
+          "hash": "N7mlxPMuVlrJ9gRkiJrFRA=="
         }
       },
       "is_incremental": false,
@@ -10142,11 +10142,34 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html",
+          "hash": "g0ebdFji3ibdAja7pYAMkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/index.html",
           "hash": "saCUZW9BG3bjM4YE09NmQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png"
         }
       },
       "is_incremental": false,
@@ -10483,7 +10506,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/config-options-reference.html",
-          "hash": "BFo30bGWsCNZzyw4GcZatA=="
+          "hash": "kl10ZxmpYzgOvEKvdg8Mgw=="
         }
       },
       "is_incremental": false,
