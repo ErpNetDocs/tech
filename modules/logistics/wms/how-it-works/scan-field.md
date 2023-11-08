@@ -2,7 +2,7 @@
 
 The SCAN field in the Warehouse Order Lines menu of the WMS Worker app allows you to scan and recognize various types of [Barcode Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html?q=Barcode%20Parsers%20|%20ERP.net%20Tech%20Docs). 
 ## How to use it:
-Depending on the [Config options settings](https://docs.erp.net/tech/reference/config-options-reference.html#54-wmswms-workersinglebarcodescanentersquantityofonepce), the system can automatically enter a [quantity of one pace](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html) for the product when scanned or when the product code is entered. Alternatively, you can use the option for automatic quantity entry to skip the Quantity screen.
+Depending on the [Config options settings](https://docs.erp.net/tech/reference/config-options-reference.html#54-wmswms-workersinglebarcodescanentersquantityofonepce), the system can automatically enter a [quantity of one pce](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html) for the product when scanned or when the product code is entered. Alternatively, you can use the option for automatic quantity entry to skip the Quantity screen.
 
 The SCAN field also provides a quick option for entering or scanning larger quantities of the selected product. Simply enter the total quantity and press "OK" or "Enter," after which you can scan the product's barcode or enter the product code. In this way, the Quantity screen will not be displayed. You can even sum up sequentially entered quantities for a single product.
 
