@@ -6,7 +6,9 @@ Depending on the [Config options settings](https://docs.erp.net/tech/reference/c
 
 The SCAN field also provides a quick option for entering or scanning larger quantities of the selected product. Simply enter the total quantity and press "OK" or "Enter," after which you can scan the product's barcode or enter the product code. In this way, the Quantity screen will not be displayed. You can even sum up sequentially entered quantities for a single product.
 
-For example, if you expect to receive 25 units of the product "Robusta Coffee 250 g" for Inbound Warehouse Order 0000000041, you can enter "5 OK/Enter" and then "10 OK/Enter." The system will automatically sum the quantities, and you can scan the product's barcode or enter the product code and confirm with "OK/Enter." This results in a total of 15 executed units out of the expected 25.
+## Example:
+If you expect to receive 25 units of the product "Robusta Coffee 250 g" for Inbound Warehouse Order 0000000041, you can enter "5 OK/Enter" and then "10 OK/Enter." The system will automatically sum the quantities, and you can scan the product's barcode or enter the product code and confirm with "OK/Enter." This results in a total of 15 executed units out of the expected 25.
+
 
 > [!NOTE]
 > For quantities up to 999, simply enter the digit and press "OK/Enter," while for quantities above 1000, add "*" after the digit and then press "OK/Enter.
