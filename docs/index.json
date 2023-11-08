@@ -1822,7 +1822,12 @@
   "modules/logistics/wms/how-it-works/index.html": {
     "href": "modules/logistics/wms/how-it-works/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Barcode Parsers Component Dispatch task type Component Receive task type Count task type Dekit task type Dispatch task type Kit task type Move task type P01: Product Code parser P02: GS1 - Single Product parser P03: GS1 – SSCC parser Pack task type Receive task type Task types Unpack task type User task - task type"
+    "keywords": "Barcode Parsers Component Dispatch task type Component Receive task type Count task type Dekit task type Dispatch task type Kit task type Move task type P01: Product Code parser P02: GS1 - Single Product parser P03: GS1 – SSCC parser Pack task type Receive task type Task types Unpack task type User task - task type Using the SCAN field in WMS worker"
+  },
+  "modules/logistics/wms/how-it-works/scan-field.html": {
+    "href": "modules/logistics/wms/how-it-works/scan-field.html",
+    "title": "Using the SCAN field in WMS worker | ERP.net Tech Docs",
+    "keywords": "Using the SCAN field in WMS worker The SCAN field in the Warehouse Order Lines menu of the WMS Worker app allows you to scan and recognize various types of Barcode Parsers . How to use it: Depending on the Config options settings , the system can automatically enter a quantity of one pace for the product when scanned or when the product code is entered. Alternatively, you can use the option for automatic quantity entry to skip the Quantity screen. The SCAN field also provides a quick option for entering or scanning larger quantities of the selected product. Simply enter the total quantity and press \"OK\" or \"Enter,\" after which you can scan the product's barcode or enter the product code. In this way, the Quantity screen will not be displayed. You can even sum up sequentially entered quantities for a single product. Example: If you expect to receive 25 units of the product \"Robusta Coffee 250 g\" for Inbound Warehouse Order 0000000041, you can enter \"5 OK/Enter\" and then \"10 OK/Enter.\" The system will automatically sum the quantities, and you can scan the product's barcode or enter the product code and confirm with \"OK/Enter.\" This results in a total of 15 executed units out of the expected 25. Note For quantities up to 999, simply enter the digit and press \"OK/Enter,\" while for quantities above 1000, add \"*\" after the digit and then press \"OK/Enter."
   },
   "modules/logistics/wms/how-it-works/task-types/comp-dispatch.html": {
     "href": "modules/logistics/wms/how-it-works/task-types/comp-dispatch.html",

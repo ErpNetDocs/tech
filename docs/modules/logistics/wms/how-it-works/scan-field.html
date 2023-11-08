@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Using the SCAN field in WMS worker | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Using the SCAN field in WMS worker | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,26 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-the-scan-field-in-wms-worker">Using the SCAN field in WMS worker</h1>
 
-<ul>
-<li><a href="barcode-parsers/index.html">Barcode Parsers</a></li>
-<li><a href="task-types/comp-dispatch.html">Component Dispatch task type</a></li>
-<li><a href="task-types/comp-receive.html">Component Receive task type</a></li>
-<li><a href="task-types/count.html">Count task type</a></li>
-<li><a href="task-types/dekit.html">Dekit task type</a></li>
-<li><a href="task-types/dispatch.html">Dispatch task type</a></li>
-<li><a href="task-types/kit.html">Kit task type</a></li>
-<li><a href="task-types/move.html">Move task type</a></li>
-<li><a href="barcode-parsers/p01.html">P01: Product Code parser</a></li>
-<li><a href="barcode-parsers/p02.html">P02: GS1 - Single Product parser</a></li>
-<li><a href="barcode-parsers/p03.html">P03: GS1 – SSCC parser</a></li>
-<li><a href="task-types/pack.html">Pack task type</a></li>
-<li><a href="task-types/receive.html">Receive task type</a></li>
-<li><a href="task-types/index.html">Task types</a></li>
-<li><a href="task-types/unpack.html">Unpack task type</a></li>
-<li><a href="task-types/user-task.html">User task - task type</a></li>
-<li><a href="scan-field.html">Using the SCAN field in WMS worker</a></li>
-</ul>
+<p>The SCAN field in the Warehouse Order Lines menu of the WMS Worker app allows you to scan and recognize various types of <a href="https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html?q=Barcode%20Parsers%20%7C%20ERP.net%20Tech%20Docs">Barcode Parsers</a>.</p>
+<h2 id="how-to-use-it">How to use it:</h2>
+<p>Depending on the <a href="https://docs.erp.net/tech/reference/config-options-reference.html#54-wmswms-workersinglebarcodescanentersquantityofonepce">Config options settings</a>, the system can automatically enter a <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html">quantity of one pace</a> for the product when scanned or when the product code is entered. Alternatively, you can use the option for automatic quantity entry to skip the Quantity screen.</p>
+<p>The SCAN field also provides a quick option for entering or scanning larger quantities of the selected product. Simply enter the total quantity and press &quot;OK&quot; or &quot;Enter,&quot; after which you can scan the product's barcode or enter the product code. In this way, the Quantity screen will not be displayed. You can even sum up sequentially entered quantities for a single product.</p>
+<h2 id="example">Example:</h2>
+<p>If you expect to receive 25 units of the product &quot;Robusta Coffee 250 g&quot; for Inbound Warehouse Order 0000000041, you can enter &quot;5 OK/Enter&quot; and then &quot;10 OK/Enter.&quot;</p>
+<p><img src="pictures/scan-field-1.png" alt="Picture"><img src="pictures/scan-field-2.png" alt="Picture">
+<img src="pictures/scan-field-3.png" alt="Picture"><img src="pictures/scan-field-4.png" alt="Picture"></p>
+<p>The system will automatically sum the quantities, and you can scan the product's barcode or enter the product code and confirm with &quot;OK/Enter.&quot; This results in a total of 15 executed units out of the expected 25.</p>
+<p><img src="pictures/scan-field-5.png" alt="Picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For quantities up to 999, simply enter the digit and press &quot;OK/Enter,&quot; while for quantities above 1000, add &quot;*&quot; after the digit and then press &quot;OK/Enter.</p>
+</div>
 </article>
           </div>
           
@@ -105,7 +101,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/scan-field.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

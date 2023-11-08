@@ -9326,7 +9326,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "0IETDLId0xzma0AIOVRIkQ=="
+          "hash": "yaco+dFDx/2BDbZ9pabBZw=="
         }
       },
       "is_incremental": false,
@@ -9422,6 +9422,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-it-works/pictures/six-zones.png",
       "output": {
         "resource": {
@@ -9503,6 +9558,18 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/two-zones.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-it-works/scan-field.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-it-works/scan-field.html",
+          "hash": "WNfdpisTSGv2xG5iuXwkwg=="
         }
       },
       "is_incremental": false,
