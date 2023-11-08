@@ -10,10 +10,11 @@ The SCAN field also provides a quick option for entering or scanning larger quan
 If you expect to receive 25 units of the product "Robusta Coffee 250 g" for Inbound Warehouse Order 0000000041, you can enter "5 OK/Enter" and then "10 OK/Enter." 
 
 ![Picture](pictures/scan-field-1.png)![Picture](pictures/scan-field-2.png)
-![Picture](pictures/scan-field-3.png)![Picture](pictures/scan-field-4.png)
+![Picture](pictures/scan-field-3.png)
 
 The system will automatically sum the quantities, and you can scan the product's barcode or enter the product code and confirm with "OK/Enter." This results in a total of 15 executed units out of the expected 25.
 
+![Picture](pictures/scan-field-4.png)
 
 > [!NOTE]
 > For quantities up to 999, simply enter the digit and press "OK/Enter," while for quantities above 1000, add "*" after the digit and then press "OK/Enter.
