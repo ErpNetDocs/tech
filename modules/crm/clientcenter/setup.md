@@ -62,3 +62,15 @@ Enter Value to the field Settings as follows and Restart the Site from the Insta
 
 If "IsOrdersEnabled" is not present in the settings, then the "Orders" section is visible.
 
+
+
+## Hide Lines settings:
+
+In the Client Center, "Lines" are visible by default in both "Invoices" and "Orders". To hide the "Lines", you need to configure JSON settings in the Website Definition:
+Enter the value in the "Settings" field as specified below, and restart the site using the Instance Manager:
+
+```
+{"HideLines": true}
+```
+
+If "HideLines" is not present in the settings, the "Lines" will remain visible in both "Invoices" and "Orders".
