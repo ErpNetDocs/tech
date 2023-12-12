@@ -116,7 +116,7 @@ This will take you to a separate space with direct access to the document type f
 
 ![Issue](pictures/inv_con_issue_docrelease.png)
 
-By tapping on it, you'll access the **Inventory** module from where you can release and complete the transaction.
+By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Issue](pictures/inv_con_issuedoc.png)
 
