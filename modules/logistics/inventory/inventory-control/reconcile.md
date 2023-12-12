@@ -1,6 +1,6 @@
 # Reconcile
 
-This section allows you to **update** the available quantities of your warehouse or shop's products, and **generate** reconciliation documents.
+This section allows you to **update** the available quantities of your inventory or shop's products, and **generate** reconciliation documents.
 
 By occasionally counting everything, it may turn out that some products have fewer or higher quantities, or are no longer present.
 
@@ -42,7 +42,7 @@ For example, out of 150pcs, only 131 may be present. This will be reflected in t
 
 If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
 
-This includes revealing its unique ID, barcode and GTIN, if present, as well as how many instances of it have been **counted**.
+This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it have been **counted**.
 
 If more lots are present, the **available-counted** ratio will be distributed based on the FEFO principle.
 
@@ -58,7 +58,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scan
 
-Simply type in a product's **ID** once (e.g. "0000001") in order to count only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's **code** once (e.g. "0000001") in order to count only one pcs of it. Tap the **blue arrow** to confirm.
 
 ![Reconcile](pictures/count_one_reconcile.png)
 
@@ -66,13 +66,13 @@ Every time you scan, you'll be taken to the **Info** tab for the respective prod
 
 If more lots are present for a product, the FEFO principle determines which lot has pcs counted first.
 
-Incorrect or non-existent product IDs will generate an error.
+Incorrect or non-existent product codes will generate an error.
 
 ![Reconcile](pictures/inv_con_reconcile_err.png)
 
 ### Multiple scans
 
-To count more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then provide the product ID. 
+To count more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then provide the product code. 
 
 This can be done on one line, or on two separate lines for each input. Tap the **blue arrow** to confirm.
 
@@ -104,7 +104,7 @@ Its pcs will be reflected immediately, and once a reconciliation document is rel
 
 ### Zero count
 
-In case you've made a mistake and want to start counting from scratch, type in "0*" followed by the affected product ID.
+In case you've made a mistake and want to start counting from scratch, type in "0*" followed by the affected product code.
 
 If previously available product quantities are now non-existent, make sure to count them (or their lots) with zeroes.
 
@@ -124,7 +124,7 @@ If the counted number is greater than or equal to the available number, the **Fi
 
 Tap on it once to generate your reconciliation document.
 
-This will take you to a separate space with direct access to the document template for this operation.
+This will take you to a separate space with direct access to the document type for this operation.
 
 ![Reconcile](pictures/reconcile_document.png)
 
