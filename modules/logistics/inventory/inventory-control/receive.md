@@ -1,6 +1,6 @@
 # Receive
 
-This section allows you to **confirm** product quantities received by your warehouse or shop's store, and **generate** receipt store transactions.
+This section allows you to **confirm** product quantities received by your inventory or shop's store, and **generate** receipt store transactions.
 
 Ordered quantities which are successfully confirmed and executed are counted towards your store's overall availability.
 
