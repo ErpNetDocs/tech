@@ -13,4 +13,6 @@
   href: projected-availability-report.md
 - name: Receipt and issue balance validation in store transfers
   href: receipt-and-issue-balance-validation-in-store-transfers.md
-  
+- name: Inventory Control
+  href: inventory-control/toc.yml
+  topicHref: inventory-control/index.md
