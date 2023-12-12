@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Receive | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Receive | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="receive">Receive</h1>
+
+<p>This section allows you to <strong>confirm</strong> product quantities received by your inventory or shop's store, and <strong>generate</strong> receipt store transactions.</p>
+<p>Ordered quantities which are successfully confirmed and executed are counted towards your store's overall availability.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Make sure you've set the correct document type for this operation within the <strong><a href="settings.html">Settings</a></strong>.</p>
+<p>You'll then be prompted to select the <strong>released order</strong> for which you want to confirm received product quantities.</p>
+<p>Available orders are filtered by <strong>enterprise company</strong> and <strong>location</strong>.</p>
+<p><img src="pictures/inv_con_receivenew.png" alt="Receive"></p>
+<p>If you tap on one, you'll be taken to the <strong>Receive</strong> module.</p>
+<p><img src="pictures/inv_con_receive_modulenew.png" alt="Receive"></p>
+<h2 id="overview">Overview</h2>
+<p>Receieve is composed of three tabs:</p>
+<ul>
+<li><strong>Ordered</strong></li>
+<li><strong>Executed</strong></li>
+<li><strong>Info</strong></li>
+</ul>
+<h3 id="ordered">Ordered</h3>
+<p>This is where all of your ordered product quantities are listed, together with their lots and product lines, if present.</p>
+<p>One and the same document can have its quantities spread across multiple lots.</p>
+<p><img src="pictures/inv_con_receive_orderednew.png" alt="Receive"></p>
+<h3 id="executed">Executed</h3>
+<p>Here, you can find how many quantities of the products are <strong>executed</strong> as opposed to being <strong>ordered</strong>.</p>
+<p>For example, out of 30 ordered pcs, only 15 may be received. This will be reflected in the receipt store transaction.</p>
+<p><img src="pictures/inv_con_receive_executednew.png" alt="Receive"></p>
+<h3 id="info">Info</h3>
+<p>If you tap on a product from the <strong>Ordered</strong> tab, you'll be shown further information about it here.</p>
+<p>This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be executed.</p>
+<p>If more lots are present, the <strong>ordered-executed</strong> ratio is distributed based on the <strong>FEFO</strong> (first expire - first out) principle.</p>
+<p>For example, 250 product quantities may be distributed across 3 lots with 100, 80 and 70 each.</p>
+<p>The lot with quantities whose date is closest to its expiration point will be prioritised in the execution process.</p>
+<p><img src="pictures/inv_con_receive_infonew.png" alt="Receive"></p>
+<h2 id="scanning">Scanning</h2>
+<p>In order to execute ordered quantities, you need to use the <strong>Scan</strong> field.</p>
+<p>It lets you quickly insert the instances of a product you want to confirm as received either manually or through barcode commands.</p>
+<p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
+<h3 id="individual-scan">Individual scan</h3>
+<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to execute only one pcs of it. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p><img src="pictures/inv_con_receive_singlescan.png" alt="Receive"></p>
+<p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product. Successfully executed pcs are painted in <strong>green</strong>.</p>
+<p>If more lots are present for a product, the <strong>FEFO principle</strong> determines which lot has pcs received first.</p>
+<p>Incorrect product codes will generate an error.</p>
+<p><img src="pictures/inv_con_receive_err.png" alt="Receive"></p>
+<h3 id="multiple-scans">Multiple scans</h3>
+<p>To execute more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;*&quot;, and then provide the product ID.</p>
+<p>This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p><img src="pictures/inv_con_receive_multiscan.png" alt="Receive"></p>
+<p><strong>NOTE!</strong></p>
+<ol>
+<li><p>The <strong>trash bin button</strong> allows you to remove the latest execution, which will restore the previous Executed value.</p>
+</li>
+<li><p>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</p>
+</li>
+<li><p>You can remove inserted multipliers by tapping the <strong>Clear</strong> <strong>button</strong> <strong>(X)</strong>.</p>
+</li>
+<li><p>The executed pcs of a product <strong>cannot</strong> be more than what is ordered.</p>
+</li>
+</ol>
+<p><img src="pictures/inv_con_receive_error.png" alt="Receive"></p>
+<h3 id="zero-count">Zero count</h3>
+<p>In case you've made a mistake and want to start the execution process from scratch, type in &quot;0*&quot; followed by the affected product code.</p>
+<p>If the <strong>Executed</strong> bar is left with zero, this will be interpreted as the product having received &quot;0 pcs&quot; in the final receipt store document.</p>
+<p><img src="pictures/inv_con_receive_zero.png" alt="Receive"></p>
+<h2 id="generate-a-receipt-order-document">Generate a receipt order document</h2>
+<p>Once you're done scanning the ordered product quantities, you can go back to the <strong>Executed</strong> tab to see if you've made any mistakes.</p>
+<p>The <strong>Ordered</strong> value will be positioned above the <strong>Executed</strong> one, making it easy to compare these values.</p>
+<p><img src="pictures/inv_con_receive_greenfinish.png" alt="Receive"></p>
+<p>If all ordered product quantities have been received, the <strong>Finish</strong> button will be painted in green.</p>
+<p><strong>Tap</strong> on it once to generate your receipt store document.</p>
+<p>This will take you to a separate space with direct access to the document template for this operation.</p>
+<p><img src="pictures/inv_con_receive_greendoc.png" alt="Receive"></p>
+<p>By tapping on it, you'll access the <strong>Inventory</strong> module from where you can release and complete the document.</p>
+<p><img src="pictures/inv_con_receive_greendocument.png" alt="Receive"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/inventory-control/receive.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -101,7 +101,7 @@
 <p><strong>(2) The WR</strong> generates a <strong>Warehouse Order (WO)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0501.html">LOG0501</a> or <a href="https://docs.erp.net/model/generations/LOG0502.html">LOG0502</a> generation procedure, depending on whether the organization uses <a class="xref" href="../composite-products/index.html">Composite Products</a> or not.</p>
 <p>The Warehouse Order is the document that contains the actual plan that needs to be executed by the WMS module. The generation of its lines is the place where all plan optimizations, algorithms, and AI should happen.</p>
 <p>The document fulfillment between the <strong>WR and WO</strong> is also calculated using the <a href="/advanced/document-flow/fulfillment.md#fulfillment-table">Fulfillment table method</a>. The generation procedure creates <strong>Planned DF</strong>, which records how much of the quantity of the <strong>WR lines</strong> has been fulfilled by <strong>WO lines</strong>.</p>
-<p><strong>(3) The released WO</strong> loads in the Orders menu of <strong><a href="xref:wms-worker">WMS Worker</a></strong>, where it is executed by the warehouse workers using the handheld devices.
+<p><strong>(3) The released WO</strong> loads in the Orders menu of <strong><a class="xref" href="../wms-worker/index.html">WMS Worker</a></strong>, where it is executed by the warehouse workers using the handheld devices.
 When a <strong>WO line</strong> is executed, the system generates 2 real-time records:</p>
 <ul>
 <li><strong>(3.1) Warehouse Transaction</strong> - which updates the availability according to the workers actions (move, dispatch, receive);</li>

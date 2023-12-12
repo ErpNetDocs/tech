@@ -313,15 +313,27 @@ references:
 - uid: notification-settings
   name: Notification settings
   href: modules/community/social-interactions/notifications/settings.html
+- uid: orders-menu
+  name: Orders
+  href: modules/logistics/wms/wms-worker/orders/index.html
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html
+- uid: pack-menu
+  name: Pack
+  href: modules/logistics/wms/wms-worker/pack.html
 - uid: parcers
   name: Barcode Parsers
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
+- uid: picking-routes
+  name: Picking routes
+  href: modules/logistics/wms/wms-worker/orders/picking-routes.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/promotional-packages/index.html
+- uid: reconcile-menu
+  name: Reconcile
+  href: modules/logistics/wms/wms-worker/reconcile.html
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
@@ -352,6 +364,9 @@ references:
 - uid: ubr
   name: User business rules
   href: advanced/user-business-rules/index.html
+- uid: unpack-menu
+  name: Unpack
+  href: modules/logistics/wms/wms-worker/unpack.html
 - uid: vat-deviation
   name: VAT Deviation
   href: modules/crm/sales/sales-concepts/vat-deviation.html
@@ -376,6 +391,9 @@ references:
 - uid: wms
   name: Warehouse management
   href: modules/logistics/wms/index.html
+- uid: wms-worker
+  name: WMS Worker
+  href: modules/logistics/wms/wms-worker/index.html
 - uid: wst-DOMAINAPI
   name: Domain API
   href: advanced/web-sites/types/domain-api.html

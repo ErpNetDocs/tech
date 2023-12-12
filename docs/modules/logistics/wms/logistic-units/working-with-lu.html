@@ -84,7 +84,7 @@
 <p>Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an <strong><a href="asn.html">Advance Shipping Notice (ASN)</a></strong>, for example.</p>
 <p>Here is what to do depending on whether you have information about the SSCC codes and its prior the shipment or not.</p>
 <h4 id="the-lus-data-is-exchanged-prior-the-shipment-arrival">The LU’s data is exchanged prior the shipment arrival</h4>
-<p>In these cases it is highly advisable to create their definitions into the database before the arrival of the units. This will allow receiving the unit with a single scan of its SSCC code. The worker needs to simply scan the SSCC barcode into the Scan field of the <a href="xref:orders-menu">Orders menu</a> of the WMS Worker app.</p>
+<p>In these cases it is highly advisable to create their definitions into the database before the arrival of the units. This will allow receiving the unit with a single scan of its SSCC code. The worker needs to simply scan the SSCC barcode into the Scan field of the <a class="xref" href="../wms-worker/orders/index.html">Orders menu</a> of the WMS Worker app.</p>
 <p><img src="pictures/scan-sscc.png" alt="Scan SSCC barcode"></p>
 <p>The <a href="/modules/logistics/wms/how-it-works/barcode-parsers/p03.md">P03: GS1 – SSCC barcode parser</a> will automatically find the appropriate Warehouse Order Lines and will automatically execute them with the logistic unit’s Contents.</p>
 <h4 id="the-lus-data-is-not-exchanged-prior-the-shipment-arrival">The LU’s data is NOT exchanged prior the shipment arrival</h4>
@@ -103,7 +103,7 @@
 <h2 id="using-logistics-units-in-the-dispatching-process">Using Logistics Units in the Dispatching Process</h2>
 <p>Here we have two situations depending on whether you are dispatching an existing LUs or you want to create LUs to pack the dispathed content of an Sales Order.</p>
 <h4 id="dispatching-existing-lu">Dispatching existing LU</h4>
-<p>То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the <a href="xref:orders-menu">Orders menu</a> of the WMS Worker app.</p>
+<p>То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the <a class="xref" href="../wms-worker/orders/index.html">Orders menu</a> of the WMS Worker app.</p>
 <p><img src="pictures/scan-sscc-dispatch.png" alt="Scan SSCC barcode"></p>
 <p>The <a href="/modules/logistics/wms/how-it-works/barcode-parsers/p03.md">P03: GS1 – SSCC barcode parser</a> will automatically execute the appropriate Warehouse Order lines with the logistic unit’s Contents.</p>
 <h4 id="creating-new-lus-to-pack-a-dispatched-sales-order">Creating new LUs to pack a dispatched Sales Order</h4>

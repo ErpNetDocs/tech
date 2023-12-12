@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pack | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Pack | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="pack-menu">
+<h1 id="pack">Pack</h1>
+
+<p>The <strong>Pack</strong> menu allows you to add Contents to a <a class="xref" href="../logistic-units/index.html">Logistic Unit (LU)</a>.
+Using this menu, you can either create a new Logistic Unit or choose to add the contents to an existing one. If you are creating a new LU, then the system will automatically assign an SSCC code, and fill in the Contents and the applicable Specifications.</p>
+<p>To Pack the contents, first, select or scan the Location where they are contained:</p>
+<p><img src="pictures/pack-location.png" alt="Location"></p>
+<p>The system will open a screen with a list of the Location’s content that is available to pack.</p>
+<p><img src="pictures/pack-product.png" alt="Product"></p>
+<p>There you can:</p>
+<ul>
+<li>Scan each Product you want to pack and specify its Lot, Variant, Serial (if applicable), and Quantity</li>
+<li>Click on any of the lines of the content to select it and specify the quantity you want to pack</li>
+<li>or if you want to pack all of the Location’s contents, you can simply choose the <strong>Select All</strong> option in the buttons menu.</li>
+</ul>
+<p>Once, you have selected the desired content, press the Pack button.</p>
+<p><img src="pictures/pack-button.png" alt="Pack button"></p>
+<p>This will show a screen where you need to choose the logistic unit you want to pack the Contents – you can either create a new one or select an existing LU.</p>
+<p><img src="pictures/pack-lu.png" alt="Logistic Unit"></p>
+<ul>
+<li>You can create a <strong>new LU using</strong> the <strong>Create logistic unit now</strong> button.</li>
+</ul>
+<p><img src="pictures/pack-new-lu.png" alt="New LU"></p>
+<p>This will automatically assign/create a new LU with a new <strong>SSCC code</strong>, and fill in the <strong>Contents</strong> and the applicable <strong>Specifications</strong>.</p>
+<p>The <strong>SSCC code</strong> is calculated according to the algorithm specified <a href="https://docs.erp.net/tech/modules/logistics/wms/logistic-units/index.html#serial-shipping-container-code-sscc">here.</a></p>
+<p>The <strong>Contents</strong> panel of the new LU is filled in with the selected content during the Pack, which can be reviewed in the Contents table on the current screen.</p>
+<p>The <strong>Specifications</strong> are filled in according to the following criteria:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name</th>
+<th>Value</th>
+<th>Applicable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td>SSCC</td>
+<td>LogisticUnit.SerialCode</td>
+<td>Always</td>
+</tr>
+<tr>
+<td>02</td>
+<td>CONTENT</td>
+<td>Product’s GTIN*</td>
+<td>Only if the LU has 1 content</td>
+</tr>
+<tr>
+<td>10</td>
+<td>LOT</td>
+<td>CONTENT.Lot</td>
+<td>Only if the LU has 1 content</td>
+</tr>
+<tr>
+<td>17</td>
+<td>EXPIRY</td>
+<td>CONTENT.Lot.ExpiryDate</td>
+<td>Only if the LU has 1 content</td>
+</tr>
+<tr>
+<td>20</td>
+<td>VARIANT</td>
+<td>CONTENT.Variant</td>
+<td>Only if the LU has 1 content</td>
+</tr>
+<tr>
+<td>21</td>
+<td>SERIAL</td>
+<td>CONTENT.Serial</td>
+<td>Only if the LU has 1 content</td>
+</tr>
+<tr>
+<td>37</td>
+<td>COUNT</td>
+<td>CONTENT.Quantity</td>
+<td>Only if the LU has 1 content AND CONTENT.Quantity is integer</td>
+</tr>
+</tbody>
+</table>
+<p>*Product’s GTIN – If there is a CodingSystem with the Name “GTIN” and it contains a Product Code for this product, then it is taken. Else take the CONTENT.Product.PartNumber.</p>
+<ul>
+<li>If you want to select an <strong>existing LU</strong> you can scan it in the Logistic Unit field or to choose it from the dropdown list. Note that in this case the LU's Contents and Specifications will not be updated automatically.</li>
+</ul>
+<p><img src="pictures/pack-existing-lu.png" alt="Existing LU"></p>
+<p>The last step is to select the new <strong>Destination</strong> location of the LU and press the <strong>Finish</strong> button to complete the process.</p>
+<p><img src="pictures/pack-destination.png" alt="Destination"></p>
+<p>If all the steps are performed correctly, a message will appear confirming that the operation was successful:</p>
+<p><img src="pictures/move-successful.png" alt="Success"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/wms-worker/pack.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
