@@ -1,6 +1,6 @@
 # Issue
 
-This section allows you to **deduct** product quantities from your warehouse or shop's store, and **generate** issue store documents.
+This section allows you to **deduct** product quantities from your warehouse or shop's store, and **generate** issue store transactions.
 
 Issued quantities which are successfully executed are counted out of your store's overall availability.
 
@@ -96,11 +96,11 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product code.
 
-If the **Executed** bar is left with zero, this will be interpreted as the product being issued "0 pcs" in the final issue store document.
+If the **Executed** bar is left with zero, this will be interpreted as the product being issued "0 pcs" in the final issue store transaction.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
 
-## Generate an issue store document
+## Generate an issue store transaction
 
 Once you're done scanning the desired product quantities, you can go back to the **Executed** tab to see if you've made any mistakes.
 
@@ -110,13 +110,13 @@ The **Ordered** value will be positioned above the **Executed** one, making it e
 
 If all ordered product quantities have been issued, the **Finish** button will be painted in green.
 
-Tap on it once to generate your issue store document.
+Tap on it once to generate your issue store transaction.
 
 This will take you to a separate space with direct access to the document type for this operation.
 
 ![Issue](pictures/inv_con_issue_docrelease.png)
 
-By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
+By tapping on it, you'll access the **Inventory** module from where you can release and complete the transaction.
 
 ![Issue](pictures/inv_con_issuedoc.png)
 
