@@ -1,6 +1,6 @@
 # Receive
 
-This section allows you to **confirm** product quantities received by your warehouse or shop's store, and **generate** receipt store documents.
+This section allows you to **confirm** product quantities received by your warehouse or shop's store, and **generate** receipt store transactions.
 
 Ordered quantities which are successfully confirmed and executed are counted towards your store's overall availability.
 
@@ -38,7 +38,7 @@ One and the same document can have its quantities spread across multiple lots.
 
 Here, you can find how many quantities of the products are **executed** as opposed to being **ordered**.
 
-For example, out of 30 ordered pcs, only 15 may be received. This will be reflected in the receipt store document.
+For example, out of 30 ordered pcs, only 15 may be received. This will be reflected in the receipt store transaction.
 
 ![Receive](pictures/inv_con_receive_executednew.png)
 
@@ -46,7 +46,7 @@ For example, out of 30 ordered pcs, only 15 may be received. This will be reflec
 
 If you tap on a product from the **Ordered** tab, you'll be shown further information about it here.
 
-This includes revealing its unique ID, barcode and GTIN, if present, as well as how many instances of it will be executed.
+This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be executed.
 
 If more lots are present, the **ordered-executed** ratio is distributed based on the **FEFO** (first expire - first out) principle.
 
@@ -66,7 +66,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scan
 
-Simply type in a product's ID once (e.g. "0000001") in order to execute only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. Tap the **blue arrow** to confirm.
 
 ![Receive](pictures/inv_con_receive_singlescan.png)
 
@@ -74,7 +74,7 @@ Every time you scan, you'll be taken to the **Info** tab for the respective prod
 
 If more lots are present for a product, the **FEFO principle** determines which lot has pcs received first.
 
-Incorrect product IDs will generate an error.
+Incorrect product codes will generate an error.
 
 ![Receive](pictures/inv_con_receive_err.png)
 
@@ -100,7 +100,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ### Zero count
 
-In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product ID.
+In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product code.
 
 If the **Executed** bar is left with zero, this will be interpreted as the product having received "0 pcs" in the final receipt store document.
 
