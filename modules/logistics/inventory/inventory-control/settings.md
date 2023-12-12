@@ -1,6 +1,6 @@
 # Settings
 
-This section lets you decide what kind of **document** will be created following each of these actions:
+This section lets you decide what type of **document** will be created following each of these actions:
 
 * **Receive**
 * **Issue**
@@ -8,7 +8,7 @@ This section lets you decide what kind of **document** will be created following
 * **Scrap**
 * **Reconcile**
 
-It's crucial to link the right template to its respective action **before** beginning to do anything within Inventory Control.
+It's crucial to link the right type to its respective action **before** beginning to do anything within Inventory Control.
 
 ![Settings](pictures/inv_con_set.png)
 
@@ -22,7 +22,7 @@ In order to access the Inventory Control Settings, tap on the context menu at th
 
 If you tap on the **downward arrows** of any of the available options, you'll be taken to a list of your existing document types.
 
-It's possible to link any template to either the receive, issue, scrap, transfer or reconcile operation. 
+It's possible to link any type to either the receive, issue, scrap, transfer or reconcile operation. 
 
 One and the same document type can be used for **multiple** operations.
 
