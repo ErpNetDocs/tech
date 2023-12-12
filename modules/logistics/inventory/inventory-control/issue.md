@@ -1,6 +1,6 @@
 # Issue
 
-This section allows you to **deduct** product quantities from your warehouse or shop's store, and **generate** issue store transactions.
+This section allows you to **deduct** product quantities from your inventory or shop's store, and **generate** issue store transactions.
 
 Issued quantities which are successfully executed are counted out of your store's overall availability.
 
