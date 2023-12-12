@@ -1,6 +1,6 @@
 # Scrap
 
-This section allows you to **remove** available quantities from your warehouse or shop's products, and **generate** issue store documents.
+This section allows you to **remove** available quantities from your inventory or shop's products, and **generate** issue store transactions.
 
 Scrapping is done when a product's expiry date is reached (respecting the FEFO rule) or the store no longer needs product quantities.
 
@@ -32,7 +32,7 @@ This is where all of your store products are listed, together with their current
 
 Here, you can find how many quantities of the products are selected for **scrap** as opposed to being **available** in total.
 
-For example, out of 30pcs, only 15 may be scrapped. This will be reflected in the issue store document.
+For example, out of 30pcs, only 15 may be scrapped. This will be reflected in the issue store transaction.
 
 ![Scrap](pictures/inv_con_scrap_scrap.png)
 
@@ -40,7 +40,7 @@ For example, out of 30pcs, only 15 may be scrapped. This will be reflected in th
 
 If you tap on a product from the **Availability** tab, you'll be shown further information about it here.
 
-This includes revealing its unique ID, barcode and GTIN, if present, as well as how many instances of it will be scrapped.
+This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be scrapped.
 
 If more lots are present, the **available-scrap** ratio will be distributed based on the FEFO principle.
 
@@ -56,7 +56,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scrap
 
-Simply type in a product's ID once (e.g. "0000001") in order to scrap only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to scrap only one pcs of it. Tap the **blue arrow** to confirm.
 
 ![Scrap](pictures/inv_con_scrap_individual.png)
 
@@ -64,13 +64,13 @@ Every time you scan, you'll be taken to the **Info** tab for the respective prod
 
 If more lots are present for a product, the FEFO principle determines which lot has pcs scrapped first.
 
-Incorrect IDs will generate an error.
+Incorrect codes will generate an error.
 
 ![Scrap](pictures/inv_con_scrap_err.png)
 
 ### Multiple scraps
 
-To scrap more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then provide the product ID.
+To scrap more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
 
 This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the **blue arrow** to confirm.
 
@@ -90,13 +90,13 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ### Zero count
 
-In case you've made a mistake and want to start the scrap process from scratch, type in "0*" followed by the affected product ID.
+In case you've made a mistake and want to start the scrap process from scratch, type in "0*" followed by the affected product code.
 
-If the **Scrap** bar is left with zero, this will be interpreted as the product having "0 pcs" for scrap in the final issue store document.
+If the **Scrap** bar is left with zero, this will be interpreted as the product having "0 pcs" for scrap in the final issue store transaction.
 
 ![Scrap](pictures/inv_con_scrap_zero.png)
 
-## Generate an issue order document
+## Generate an issue order transaction
 
 Once you're done scanning the desired product quantities, you can go back to the **Scrap** tab to see if you've made any mistakes.
 
@@ -106,9 +106,9 @@ The **Available** value will be positioned above the **Scrap** one, making it ea
 
 If all available product quantities are set to be scrapped, the **Finish** button will be painted in green.
 
-Tap on it once to generate your issue store document.
+Tap on it once to generate your issue store transaction.
 
-This will take you to a separate space with direct access to the document template for this operation.
+This will take you to a separate space with direct access to the document type for this operation.
 
 ![Scrap](pictures/inv_con_scrap_doc.png)
 
