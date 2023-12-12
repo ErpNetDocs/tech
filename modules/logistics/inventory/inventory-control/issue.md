@@ -44,7 +44,7 @@ For example, out of 30 ordered pcs, only 15 may be issued. This will be reflecte
 
 If you tap on a product from the **Ordered** tab, you'll be shown further information about it here.
 
-This includes revealing its unique ID, barcode and GTIN, if present, as well as how many instances of it will be executed.
+This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be executed.
 
 If more lots are present, the **ordered-executed** ratio will be distributed based on the **FEFO** (first expire - first out) principle.
 
@@ -60,7 +60,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scan
 
-Simply type in a product's ID once (e.g. "0000001") in order to execute only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. Tap the **blue arrow** to confirm.
 
 ![Issue](pictures/inv_con_issue_singlescannew.png)
 
@@ -68,13 +68,13 @@ Every time you scan, you'll be taken to the **Info** tab for the respective prod
 
 If more lots are present for a product, the FEFO principle determines which lot has pcs executed first.
 
-Incorrect product IDs will generate an error.
+Incorrect product codes will generate an error.
 
 ![Issue](pictures/inv_con_issue_err.png)
 
 ### Multiple scans
 
-To execute more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then provide the product ID.
+To execute more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
 
 This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the **blue arrow** to confirm.
 
@@ -94,7 +94,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ### Zero count
 
-In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product ID.
+In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product code.
 
 If the **Executed** bar is left with zero, this will be interpreted as the product being issued "0 pcs" in the final issue store document.
 
@@ -112,7 +112,7 @@ If all ordered product quantities have been issued, the **Finish** button will b
 
 Tap on it once to generate your issue store document.
 
-This will take you to a separate space with direct access to the document template for this operation.
+This will take you to a separate space with direct access to the document type for this operation.
 
 ![Issue](pictures/inv_con_issue_docrelease.png)
 
