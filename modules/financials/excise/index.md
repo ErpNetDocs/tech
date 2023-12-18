@@ -4,6 +4,8 @@ According to EU legislation, certain products like alcohol and cigarettes need t
 
 The **Excise** module is designed to assist enterprises in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its available resources, you can create and generate various documents and [definitions](definitions/index.md) related to your excise payments. They must all eventually be included in a final **excise declaration**.
 
+![Excise](pictures/Document_View.png)
+
 > [!NOTE]
 > The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. Excise can currently be used **only** in Bulgaria and features only alcoholic drinks as excise-taxable products. Categories outside of this scope will **not** be taxed.
 
@@ -17,12 +19,16 @@ For example, if a product enters your tax warehouse, a particular **transaction 
 
 In these cases, filling out an **electronic administrative document** allows you to include the respective incoming or outgoing transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
+![Excise](pictures/New_Tax_Warehouse.png)
+
 > [!NOTE]
 > Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
 
 ### Definitions
 
 You can take advantage of a variety of **system** and **custom** definitions. The module allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for tax documents.
+
+![Excise](pictures/excise_product_def.png)
 
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a type for all of your excise products.
@@ -35,6 +41,8 @@ Unless otherwise stated, you need to include **all** of your monthly transaction
 
 > [!NOTE]
 > Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and you **must** include them in the final excise declaration.
+
+![Excise](pictures/New_Excise_Administrative_Document.png)
 
 A typical declaration includes the following:
 
