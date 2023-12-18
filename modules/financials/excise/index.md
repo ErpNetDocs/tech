@@ -54,7 +54,7 @@ When ready, you once again need to export it as an **XML** and send it to the re
 
 ### Post-excise
 
-If your declaration meets all legal requirements, the excise tax is settled and products can be moved freely from one store to another.
+If your declaration meets all legal requirements, the excise tax is **settled** and products can be moved freely from one store to another.
 
 Learn more about Excise in the following articles:
 
