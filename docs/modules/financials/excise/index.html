@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Overview | ERP.net Tech Docs </title>
+    <title>Excise | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Overview | ERP.net Tech Docs ">
+    <meta name="title" content="Excise | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,28 +77,62 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="overview">Overview</h1>
+<h1 id="excise">Excise</h1>
 
-<p>According to EU legislation, certain products need to be taxed additionally when they are imported into a given warehouse. This one-time <strong>excise tax</strong> is due as soon as the product itself is manufactured, and is universal for <strong>all excise products</strong>.</p>
-<p>The <strong>Excise</strong> module is designed to assist enterprises in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using the available templates, you can create and generate various documents and definitions related to the excise payment.</p>
+<p>According to EU legislation, certain products like alcohol and cigarettes need to be taxed additionally whenever they are imported into a given warehouse. This one-time <strong>excise tax</strong> is also due as soon as the product itself is manufactured, and is universal for <strong>all excise products</strong> across the EU.</p>
+<p>The <strong>Excise</strong> module is designed to assist enterprises in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its available resources, you can create and generate various documents and <a href="definitions/index.html">definitions</a> related to your excise payments. They must all eventually be included in a final <strong>excise declaration</strong>.</p>
+<p><img src="pictures/Document_View.png" alt="Excise"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Excise can currently be used <strong>only</strong> in Bulgaria and features only alcoholic drinks as excise-taxable products.</p>
+<p>The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. Excise can currently be used <strong>only</strong> in Bulgaria and features only alcoholic drinks as excise-taxable products. Categories outside of this scope will <strong>not</strong> be taxed.</p>
 </div>
-<h2 id="process-flow">Process flow</h2>
-<p>In order to use this module, you need to define your own digital <strong>tax warehouse</strong>. Its purpose is to store all of your manufactured or bought excise products, and provide regular reports to the tax-collecting agency regarding their movements.</p>
-<p>For instance, depending on how a product enters or leaves the warehouse, a particular <strong>document</strong> needs to be created to reflect the excise tax imposed for this operation. It will be used by the customs agency (or regional equivalent) and includes the respective incoming or outgoing <strong>transaction</strong> associated with the excise products.</p>
+<h2 id="overview">Overview</h2>
+<p>In order to use this module, you first need to define a digital <strong>tax warehouse</strong>. Its purpose is to store all manufactured or imported products which are registered under the common Excise law.</p>
+<p>Owning such a warehouse obligates you to provide regular <strong>reports</strong> of the movements of all excise products. By law, these documents need to be sent over to the customs office and/or your regional tax-collecting agency.</p>
+<p>For example, if a product enters your tax warehouse, a particular <strong>transaction document</strong> needs to be created to reflect the excise tax payment for this operation. The same is true if the product leaves the warehouse either to be sold to a store or moved to another warehouse.</p>
+<p>In these cases, filling out an <strong>electronic administrative document</strong> allows you to include the respective incoming or outgoing transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios.</p>
+<p><img src="pictures/New_Tax_Warehouse.png" alt="Excise"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Tax warehouses are not tied to one physical location. It's possible to add products from <strong>multiple</strong> warehouses into a single tax warehouse as long as they originate from the same city.</p>
+<p>Tax warehouses are <strong>not</strong> tied to a physical location. They are completely <strong>digital</strong> and you can link them to any or all of your existing warehouses, which unites them under one common environment.</p>
 </div>
-<p>Depending on the requirements of your regional agency, in addition to regular reports, all existing documents need to be included and sent into a <strong>final declaration</strong>.</p>
-<p>Once products are sold or simply leave the tax warehouse meeting all legal requirements, their excise tax is settled and they're <strong>no longer</strong> classified as excise products.</p>
+<h3 id="definitions">Definitions</h3>
+<p>You can take advantage of a variety of <strong>system</strong> and <strong>custom</strong> definitions. The module allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for tax documents.</p>
+<p><img src="pictures/excise_product_def.jpg" alt="Excise"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is <strong>impossible</strong> to submit a document without specifying a type for all of your excise products.</p>
+</div>
+<h2 id="excise-declaration">Excise declaration</h2>
+<p>Once filled, a transaction document must be exported as an <strong>XML file</strong> and sent to the relevant taxing authority and/or customs office.</p>
+<p>Unless otherwise stated, you need to include <strong>all</strong> of your monthly transactions in a final <strong>excise declaration</strong>. This document unites the product movements you have reported for the month and further delivers summarized excise status information.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional <strong>transactions</strong> will be generated for each operation and you <strong>must</strong> include them in the final excise declaration.</p>
+</div>
+<p><img src="pictures/New_Excise_Administrative_Document.png" alt="Excise"></p>
+<p>A typical declaration includes the following:</p>
+<ol>
+<li>&quot;From&quot; and &quot;To&quot; date fields which constrain the scope of the declaration</li>
+<li>A list of excise products and their quantities</li>
+<li>Individual and total excise amount owed and paid</li>
+<li>Past and current availability of each excise product</li>
+<li>Incomes and expenses, including how many excise products were imported and exported</li>
+<li>Banderol stamping report</li>
+</ol>
+<p>At any time, you can <strong>visualize</strong> this declaration and correct any encountered mistakes.</p>
+<p>When ready, you once again need to export it as an <strong>XML</strong> and send it to the respective taxing authority.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Customs or other taxing authorities may need <strong>direct access</strong> to your ERP.net system in order to observe your tax warehouse. In the case of Bulgarian clients, for example, there's a separate environment offering the ability for custom agencies to generate reports and see which products are available in a tax warehouse for a specific period of time.</p>
+</div>
+<h3 id="post-excise">Post-excise</h3>
+<p>If your declaration meets all legal requirements, the excise tax is <strong>settled</strong> and products can be moved freely from one store to another.</p>
 <p>Learn more about Excise in the following articles:</p>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/financials/excise/definitions/index.html">Definitions</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/financials/excise/documents/excise-products.html">Documents</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/financials/excise/country-specific/index.html">Country specific</a></strong></li>
+<li><strong><a href="definitions/index.html">Definitions</a></strong></li>
+<li><strong><a href="documents/index.html">Documents</a></strong></li>
+<li><strong><a href="country-specific/index.html">Country specific</a></strong></li>
 </ul>
 </article>
           </div>

@@ -24,6 +24,72 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "Definitions_Setups.png",
+      "output": {
+        "resource": {
+          "relative_path": "Definitions_Setups.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Document_View.png",
+      "output": {
+        "resource": {
+          "relative_path": "Document_View.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Excise_Declaration_New.png",
+      "output": {
+        "resource": {
+          "relative_path": "Excise_Declaration_New.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Excise_Products.png",
+      "output": {
+        "resource": {
+          "relative_path": "Excise_Products.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "New_Excise_Administrative_Document.png",
+      "output": {
+        "resource": {
+          "relative_path": "New_Excise_Administrative_Document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "New_Tax_Warehouse.png",
+      "output": {
+        "resource": {
+          "relative_path": "New_Tax_Warehouse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
@@ -9136,12 +9202,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/index.html",
-          "hash": "6R8PQRRNYbMhL9dCu+krYg=="
+          "hash": "PyMhhQKINTUHmdNiMEKkNQ=="
         }
       },
       "is_incremental": false,
@@ -9177,7 +9246,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/definitions/index.html",
-          "hash": "jDD2oz/xWQtKlsOtd5NzBA=="
+          "hash": "vphlVLnOxpxof9fioJ8exA=="
         }
       },
       "is_incremental": false,
@@ -9237,19 +9306,88 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/documents/index.html",
-          "hash": "Ux6UQeuEhM1BxPjtnVlFUA=="
+          "hash": "ocFE3O/hDEib4VS3S3ZvbA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/index.html",
-          "hash": "dXEEyADnpKmrew1k/u6EIg=="
+          "hash": "E4JNojlo5RnwNAvFKDS0AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/Definitions_Setups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/Definitions_Setups.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/Document_View.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/Document_View.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/Excise_Declaration_New.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/Excise_Declaration_New.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/Excise_Products.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/Excise_Products.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/New_Excise_Administrative_Document.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/New_Excise_Administrative_Document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse.png"
         }
       },
       "is_incremental": false,
@@ -10099,7 +10237,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "G6EAD7yLNejuQ0nzPYlyzg=="
+          "hash": "QVyymvD13ZNG28QXmlDpzQ=="
         }
       },
       "is_incremental": false,
