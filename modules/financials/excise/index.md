@@ -1,4 +1,4 @@
-# Overview
+# Excise
 
 According to EU legislation, certain products like alcohol and cigarettes need to be taxed additionally whenever they are imported into a given warehouse. This one-time **excise tax** is also due as soon as the product itself is manufactured, and is universal for **all excise products** across the EU.
 
@@ -7,7 +7,7 @@ The **Excise** module is designed to assist enterprises in meeting their legal d
 > [!NOTE]
 > The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. Excise can currently be used **only** in Bulgaria and features only alcoholic drinks as excise-taxable products. Categories outside of this scope will **not** be taxed.
 
-## Process flow
+## Overview
 
 In order to use this module, you first need to define a digital **tax warehouse**. Its purpose is to store all manufactured or imported products which are registered under the common Excise law. 
 
@@ -27,7 +27,7 @@ You can take advantage of a variety of **system** and **custom** definitions. Th
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a type for all of your excise products.
 
-### Excise declaration
+## Excise declaration
 
 Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office.
 
