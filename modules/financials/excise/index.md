@@ -59,6 +59,6 @@ If your declaration meets all legal requirements, the excise tax is settled and 
 Learn more about Excise in the following articles:
 
 - **[Definitions](definitions/index.md)**
-- **[Documents](documents/documents.md)**
+- **[Documents](documents/index.md)**
 - **[Country specific](country-specific/index.md)**
 
