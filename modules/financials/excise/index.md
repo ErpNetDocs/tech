@@ -58,7 +58,7 @@ If your declaration meets all legal requirements, the excise tax is settled and 
 
 Learn more about Excise in the following articles:
 
-- **[Definitions](https://docs.erp.net/tech/modules/financials/excise/definitions/index.html)**
-- **[Documents](https://docs.erp.net/tech/modules/financials/excise/documents/excise-products.html)**
-- **[Country specific](https://docs.erp.net/tech/modules/financials/excise/country-specific/index.html)**
+- **[Definitions](definitions/index.md)**
+- **[Documents](documents/documents.md)**
+- **[Country specific](country-specific/index.md)**
 
