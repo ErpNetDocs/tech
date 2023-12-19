@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Recalculating quantities in the WMS Worker | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Recalculating quantities in the WMS Worker | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,27 +77,32 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="recalculating-quantities-in-the-wms-worker">Recalculating quantities in the WMS Worker</h1>
 
-<ul>
-<li><a href="barcode-parsers/index.html">Barcode Parsers</a></li>
-<li><a href="task-types/comp-dispatch.html">Component Dispatch task type</a></li>
-<li><a href="task-types/comp-receive.html">Component Receive task type</a></li>
-<li><a href="task-types/count.html">Count task type</a></li>
-<li><a href="task-types/dekit.html">Dekit task type</a></li>
-<li><a href="task-types/dispatch.html">Dispatch task type</a></li>
-<li><a href="task-types/kit.html">Kit task type</a></li>
-<li><a href="task-types/move.html">Move task type</a></li>
-<li><a href="barcode-parsers/p01.html">P01: Product Code parser</a></li>
-<li><a href="barcode-parsers/p02.html">P02: GS1 - Single Product parser</a></li>
-<li><a href="barcode-parsers/p03.html">P03: GS1 – SSCC parser</a></li>
-<li><a href="task-types/pack.html">Pack task type</a></li>
-<li><a href="recalculate-quantities.html">Recalculating quantities in the WMS Worker</a></li>
-<li><a href="task-types/receive.html">Receive task type</a></li>
-<li><a href="task-types/index.html">Task types</a></li>
-<li><a href="task-types/unpack.html">Unpack task type</a></li>
-<li><a href="task-types/user-task.html">User task - task type</a></li>
-<li><a href="scan-field.html">Using the SCAN field in WMS worker</a></li>
-</ul>
+<p>If a product has a defined additional <strong>coding system</strong> with a default base measurement category, it is possible to <strong>recalculate</strong> the product's quantities when scanning in the WMS Worker app.</p>
+<p><strong>For example:</strong></p>
+<p>You have an order which contains dozens of pcs of coffee which arrive in a box with its own unique code. The box is defined for the coffee as a coding system and has a default base measurement category of 20 pcs. You will be able to instantly execute <strong>20 pcs</strong> of coffee with a <strong>single</strong> scan of the box's product code. This <strong>overrides</strong> the product's own default unit.</p>
+<p>If no measurement category is set, the product will still be recognized but its default unit (e.g. 1pcs) will be taken into account instead.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li><p>Make sure your product has a defined <strong>coding system</strong>.</p>
+<p>You can find a list of all coding systems and create new ones on-demand in the <strong>Web Client</strong>.</p>
+</li>
+<li><p>Use the <strong>WMS Worker App</strong> to open an order and scan the product code of the coding system of the product(s).</p>
+</li>
+</ol>
+<h2 id="how-it-works">How it works</h2>
+<p>Assuming your order consists of a box with several instances of products, you can scan their coding system's product code right away.</p>
+<ol>
+<li><p>Within the <strong>SCAN</strong> field, provide the respective code, or use your mobile device to scan the barcode of the box.</p>
+</li>
+<li><p>The standard <strong>Quantity</strong> step will be skipped and you will only need to select a <strong>lot</strong>.</p>
+</li>
+<li><p>You will get a <strong>suggested</strong> quantity to add to the scan, which is based on the provided measurement unit of the coding system.</p>
+</li>
+<li><p>Click <strong>Next</strong> to confirm the operation. Several or all pcs of the product will be executed <strong>instantly</strong>.</p>
+</li>
+</ol>
 </article>
           </div>
           
@@ -106,7 +111,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/recalculate-quantities.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
