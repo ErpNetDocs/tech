@@ -6,7 +6,7 @@ If a product has a defined additional **coding system** with a default base meas
 
 You have an order which contains dozens of pcs of coffee which arrive in a box with its own unique code. As long as the box is defined for the coffee as an additional coding system and has a default base measurement category (e.g. 20pcs), you will be able to instantly count **multiple** instances of coffee with a **single** scan of the box's product code. This **overrides** the product's own default unit.
 
-If no default measurement category is set, the product would be recognized upon scanning and its default unit (e.g. 1pcs) would be taken into account instead.
+If no measurement category is set, the product will still be recognized but its default unit (e.g. 1pcs) will be taken into account instead.
 
 ### Prerequisites
 
