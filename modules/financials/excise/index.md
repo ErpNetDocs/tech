@@ -28,7 +28,7 @@ In these cases, filling out an **electronic administrative document** allows you
 
 You can take advantage of a variety of **system** and **custom** definitions. The module allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for tax documents.
 
-![Excise](pictures/excise_product_def.jpg)
+![Excise](pictures/excise_product_def.png)
 
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a type for all of your excise products.
