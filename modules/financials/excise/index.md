@@ -11,7 +11,9 @@ The **Excise** module is designed to assist enterprises in meeting their legal d
 
 ## Overview
 
-In order to use this module, you first need to define a digital **tax warehouse**. Its purpose is to store all manufactured or imported products which are registered under the common Excise law. 
+In order to use this module, you first need to define a digital **tax warehouse**. Its purpose is to store all manufactured or imported products which are registered under the common Excise law.
+
+![Excise](pictures/new_tax_warehouses.png)
 
 Owning such a warehouse obligates you to provide regular **reports** of the movements of all excise products. By law, these documents need to be sent over to the customs office and/or your regional tax-collecting agency.
 
@@ -19,7 +21,7 @@ For example, if a product enters your tax warehouse, a particular **transaction 
 
 In these cases, filling out an **electronic administrative document** allows you to include the respective incoming or outgoing transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
-![Excise](pictures/new_tax_warehouses.png)
+![Excise](pictures/eead.png)
 
 > [!NOTE]
 > Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
