@@ -21,7 +21,7 @@ Owning such a warehouse obligates you to provide regular **reports** of the move
 
 By law, these documents need to be sent over to the customs office and/or your regional tax-collecting agency.
 
-For example, if a product enters your tax warehouse, a particular **transaction document** needs to be created to reflect the excise tax payment for this operation. The same is true if the product leaves the warehouse either to be sold to a store or moved to another warehouse. 
+For example, if a product enters your tax warehouse, a **transaction document** needs to be created to reflect the excise tax payment for this operation. The same is true if the product leaves the warehouse either to be sold or moved to another warehouse. 
 
 In these cases, filling out an **electronic administrative document** allows you to include the respective issue or receipt transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
@@ -37,16 +37,16 @@ You can take advantage of a variety of **system** and **custom** definitions. Th
 ![Excise](pictures/definitions_excise.png)
 
 > [!NOTE]
-> Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a type for all of your excise products.
+> Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a product type for all of your excise products.
 
 ## Excise declaration
 
-Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office.
+Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office. Unless otherwise stated, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must generate and send.
 
-Unless otherwise stated, you need to include **all** of your monthly transactions in a final **excise declaration**. This document unites the product movements you have reported for the month and further delivers summarized excise status information.
+This document unites the product operations you have reported for the month and further delivers summarized excise status information.
 
 > [!NOTE]
-> Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and you **must** include them in the final excise declaration.
+> Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and are automatically included in the final excise declaration.
 
 ![Excise](pictures/excise_declare.png)
 
