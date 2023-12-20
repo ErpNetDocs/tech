@@ -63,7 +63,7 @@ When excise products are manufactured, imported or exported from a tax warehouse
 
 In the case of alcoholic beverages, for example, every bottle must have a **banderol stamp**. 
 
-![Excise](pictures/banderol_document.png)
+![Excise](pictures/banderol_documents.png)
 
 You can create new banderol stamps and relate them to specific **operation types** such as:
 
