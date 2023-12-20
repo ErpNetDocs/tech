@@ -7,13 +7,13 @@ The **Excise** module is designed to assist businesses in meeting their legal du
 ![Excise](pictures/excise_modules.png)
 
 > [!NOTE]
-> The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Categories outside of this scope are **not** taxed.
+> The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Product categories outside of this scope are **not** taxed.
 
 ## Overview
 
 The main process flow in Excise goes like this:
 
-> *Tax Warehouse* → *Issue/Receipt Transactions* → *Banderol Stamp Report* → *Excise Declaration*
+> *Tax Warehouse* → *Issue/Receipt Transactions* → *Excise Stamp Operation* → *Excise Declaration*
 
 ## Tax warehouse
 
@@ -21,24 +21,26 @@ To use this module, you first need to define a digital **tax warehouse**.
 
 Its purpose is to store all of your manufactured and imported products which are registered under the common Excise law.
 
+It requires a name and special **numbers** for validation, provided by your customs agency.
+
 ![Excise](pictures/new_tax_warehouses.png)
 
 > [!NOTE]
-> Tax warehouses require special **codes** provided by your customs agency and are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
+> Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
 
 ## Issue/Receipt transactions
 
-Owning such a warehouse obligates you to generate **transaction documents** for all movements of all excise products. 
+Owning a tax warehouse obligates you to generate **transaction documents** for everything that happens to your excise products.
 
 By law, these documents must be exported and sent over to the customs office and/or your regional tax-collecting agency.
 
-**For example:**
+**Example:**
 
-If a product enters your tax warehouse, a **receipt** transaction needs to be created to reflect the excise tax payment for this operation. 
+- If a product enters your tax warehouse, **receipt** transactions need to be created to reflect the excise tax for this operation. 
 
-If the product leaves your tax warehouse either to be sold or moved to another store, generating an **issue** transaction will be necessary. 
+- If a product is sold or leaves your tax warehouse for another, generating the respective **issue** transactions will be necessary. 
 
-In these cases, filling out an **electronic administrative document** allows you to report the respective transaction. Some of the data will be provided by the customs agency. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
+When products are imported from or exported to another tax warehouse, the **electronic administrative document (e-AD)** allows you to report each transaction. If operations are limited to your tax warehouse, you must fill an **electronic excise tax document (e-ETD)** instead.
 
 ![Excise](pictures/eead.png)
 
@@ -51,30 +53,47 @@ Excise allows you to both use and create new excise product [types](definitions/
 ![Excise](pictures/definitions_excise.png)
 
 > [!NOTE]
-> Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **not possible** to submit a document without specifying a product type for all of your excise products.
+> Some excise-related definitions are auto-generated while others need to be manually set-up. It is **not possible** to submit a document without defining a **product type** for all of your excise products.
 
-## Banderol stamp report
+Once you fill a transaction document, you must export it as an **XML file** and send it to your taxing authority and/or customs office. 
 
+## Excise stamp operations
+
+When excise products are manufactured, imported or exported from a tax warehouse, they need to have a **stamp** placed on them.
+
+In the case of alcoholic beverages, for example, every bottle must have a **banderol stamp**. 
+
+![Excise](pictures/banderol_document.png)
+
+You can create new banderol stamps and relate them to specific **operation types** such as:
+
+- Received from the customs (ReceivedExciseLabels)
+- Placed on the bottles within the tax warehouse (UsedExciseLabels)
+- Returned and unused (ReturnedUnusedExciseLabels)
+
+In most cases, banderol stamps are provided by the customs office and placed on every bottle of alcohol.
+
+Reporting all the stamps you have used is a **compulsory section** of the final excise declaration.
+
+> [!NOTE]
+> Banderol stamps have unique serial numbers, emission and date of placement. When creating a banderol report, you generate another **transaction document** which includes the excise operation type, related products and number of used stamps. It is possible for fewer stamps to be placed than originally received.
 
 ## Excise declaration
 
-Once filled, a transaction document must be exported as an **XML file** and sent to a taxing authority and/or customs office. As a legal requirement, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must also export and send.
+As a legal requirement, **all** of your monthly transactions are automatically included in a final **excise declaration**.
 
-The purpose of this document is to unite the transaction documents you have reported for the month, include a banderol stamping report, and summarize your product availability and excise payments.
+It unites the transaction documents you have reported for the month, summarizes your product availability and excise payments, and includes a banderol stamping report.
 
 > [!NOTE]
 > Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and are automatically included in the final excise declaration.
 
 ![Excise](pictures/excise_declare.png)
 
-A typical excise declaration has the following:
+A typical excise declaration has the following sections:
 
-1. "From" and "To" date fields which determine the scope of the declaration (e.g. from the 1st of December until the 31st of December)
-2. A list of excise products and their quantities
-3. Individual and total excise amount owed and paid
-4. Past and current availability of each excise product
-5. Incomes and expenses, including how many excise products were received and issued
-6. **Banderol stamping report**
+1. Excise amount owed and paid for each issue/receipt transaction within the tax warehouse
+2. Past and current availability of each excise product in the tax warehouse, including incomes and expenses 
+3. Banderol stamping report covering each banderol operation
 
 At any time, you can **visualize** this declaration and correct any mistakes before officially submitting. 
 
