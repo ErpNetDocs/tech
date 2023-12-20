@@ -3630,6 +3630,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/excise_product_def.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/excise_product_def.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/general/pictures/fm1.png",
       "output": {
         "resource": {
@@ -9445,6 +9456,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/index.md",
       "output": {
@@ -9506,17 +9520,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/financials/excise/pictures/New_Excise_Administrative_Document.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse.png"
         }
       },
       "is_incremental": false,
