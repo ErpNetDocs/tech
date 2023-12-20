@@ -15,7 +15,7 @@ The main process flow in Excise goes like this:
 
 > *Tax Warehouse* → *Issue/Receipt Transactions* → *Banderol Stamp Report* → *Excise Declaration*
 
-### Tax warehouse
+## Tax warehouse
 
 To use this module, you first need to define a digital **tax warehouse**. 
 
@@ -26,7 +26,7 @@ Its purpose is to store all manufactured or imported products which are register
 > [!NOTE]
 > Tax warehouses require special **codes** provided by your customs agency and are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
 
-### Issue/Receipt transactions
+## Issue/Receipt transactions
 
 Owning such a warehouse obligates you to generate **transaction documents** for all movements of all excise products. 
 
@@ -42,7 +42,7 @@ In these cases, filling out an **electronic administrative document** allows you
 
 ![Excise](pictures/eead.png)
 
-#### Definitions
+### Definitions
 
 You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for transaction documents.
 
@@ -51,21 +51,21 @@ You can take advantage of a variety of **system** and **custom** definitions. Ex
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **not possible** to submit a document without specifying a product type for all of your excise products.
 
-### Banderol stamp report
+## Banderol stamp report
 
 
 ## Excise declaration
 
-Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office. Unless otherwise stated, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must also export and send.
+Once filled, a transaction document must be exported as an **XML file** and sent to a taxing authority and/or customs office. As a legal requirement, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must also export and send.
 
-This document unites the product operations you have reported for the month and further delivers summarized information.
+The purpose of this document is to unite the transaction documents you have reported for the month, include a banderol stamping report, and summarize your product availability and excise payments.
 
 > [!NOTE]
 > Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and are automatically included in the final excise declaration.
 
 ![Excise](pictures/excise_declare.png)
 
-A typical declaration includes the following:
+A typical excise declaration has the following:
 
 1. "From" and "To" date fields which determine the scope of the declaration (e.g. from the 1st of December until the 31st of December)
 2. A list of excise products and their quantities
@@ -74,9 +74,9 @@ A typical declaration includes the following:
 5. Incomes and expenses, including how many excise products were received and issued
 6. **Banderol stamping report**
 
-At any time, you can **visualize** this declaration and correct any encountered mistakes. 
+At any time, you can **visualize** this declaration and correct any mistakes before officially submitting. 
 
-When ready, you once again need to export it as an **XML** and send it to the respective taxing authority.
+When ready, you need to export it as an **XML** file and send it to the respective taxing authority.
 
 > [!NOTE]
 > Customs or other taxing authorities may need **direct access** to your ERP.net system in order to observe your tax warehouse. In the case of Bulgarian clients, for example, there's a **[separate environment](https://testdb-model.my.erp.net/legal)** offering the ability for custom agencies to generate reports and see which products are available in a tax warehouse for a specific period of time.
