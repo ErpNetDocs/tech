@@ -13,7 +13,7 @@ The **Excise** module is designed to assist businesses in meeting their legal du
 
 The main process flow in Excise goes like this:
 
-> *Tax Warehouse* → *Issue/Receipt Transactions* → *Excise Stamp Operation* → *Excise Declaration*
+> *Tax Warehouse* → *Issue/Receipt Transactions* → *Excise Stamp Operations* → *Excise Declaration*
 
 ## Tax warehouse
 
