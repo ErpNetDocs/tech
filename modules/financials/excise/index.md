@@ -43,7 +43,7 @@ You can take advantage of a variety of **system** and **custom** definitions. Th
 
 Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office. Unless otherwise stated, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must generate and send.
 
-This document unites the product operations you have reported for the month and further delivers summarized excise status information.
+This document unites the product operations you have reported for the month and further delivers summarized information.
 
 > [!NOTE]
 > Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional **transactions** will be generated for each operation and are automatically included in the final excise declaration.
@@ -52,12 +52,12 @@ This document unites the product operations you have reported for the month and 
 
 A typical declaration includes the following:
 
-1. "From" and "To" date fields which constrain the scope of the declaration
+1. "From" and "To" date fields which determine the scope of the declaration (e.g. from the 1st of December until the 31st of December)
 2. A list of excise products and their quantities
 3. Individual and total excise amount owed and paid
 4. Past and current availability of each excise product
-5. Incomes and expenses, including how many excise products were imported and exported
-6. Banderol stamping report
+5. Incomes and expenses, including how many excise products were received and issued
+6. **Banderol stamping report**
 
 At any time, you can **visualize** this declaration and correct any encountered mistakes. 
 
