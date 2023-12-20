@@ -1,15 +1,21 @@
 # Excise
 
-According to EU legislation, certain products like alcohol and cigarettes need to be taxed additionally whenever they are imported into a given warehouse. This one-time **excise tax** is also due as soon as the product itself is manufactured, and is universal for **all excise products** across the EU.
+According to EU legislation, certain products like alcohol and cigarettes are subject to **excise tax** whenever they are imported into a warehouse. This one-time fee is also due if the warehouse itself manufactures the products.
 
-The **Excise** module is designed to assist enterprises in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its available resources, you can create and generate various documents and [definitions](definitions/index.md) related to your excise payments. They must all eventually be included in a final **excise declaration**.
+The **Excise** module is designed to assist businesses in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its resources, you can create and generate all the necessary **documents** and **[definitions](definitions/index.md)** related to your excise payments. At the end of each month, they are all included in a final **excise declaration**.
 
 ![Excise](pictures/excise_modules.png)
 
 > [!NOTE]
-> The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Categories outside of this scope are **not** taxed.
+> The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Categories outside of this scope are **not** taxed.
 
 ## Overview
+
+The main process flow in Excise goes like this:
+
+> *Tax Warehouse* → *Issue/Receipt Transactions* → *Banderol Stamp Report* → *Excise Declaration*
+
+### Tax warehouse
 
 In order to use this module, you first need to define a digital **tax warehouse**. 
 
@@ -17,31 +23,37 @@ Its purpose is to store all manufactured or imported products which are register
 
 ![Excise](pictures/new_tax_warehouses.png)
 
-Owning such a warehouse obligates you to provide regular **reports** of the movements of all excise products. 
+### Issue/Receipt transactions
 
-By law, these documents need to be sent over to the customs office and/or your regional tax-collecting agency.
+Owning such a warehouse obligates you to generate **transaction documents** for all movements of all excise products. 
 
-For example, if a product enters your tax warehouse, a **transaction document** needs to be created to reflect the excise tax payment for this operation. The same is true if the product leaves the warehouse either to be sold or moved to another warehouse. 
+By law, these documents must be exported and sent over to the customs office and/or your regional tax-collecting agency.
 
-In these cases, filling out an **electronic administrative document** allows you to include the respective issue or receipt transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
+**For example:**
+
+If a product enters your tax warehouse, a **receipt** transaction needs to be created to reflect the excise tax payment for this operation. 
+
+If the product leaves your tax warehouse either to be sold or moved to another store, generating an **issue** transaction will be necessary. 
+
+In these cases, filling out an **electronic administrative document** allows you to report the respective transaction. Some of the data will be provided by the customs agency. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
 ![Excise](pictures/eead.png)
 
 > [!NOTE]
-> Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
+> Tax warehouses require special **codes** provided by your customs agency and are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
 
 ### Definitions
 
-You can take advantage of a variety of **system** and **custom** definitions. The module allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for tax documents.
+You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for transaction documents.
 
 ![Excise](pictures/definitions_excise.png)
 
 > [!NOTE]
-> Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **impossible** to submit a document without specifying a product type for all of your excise products.
+> Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **not possible** to submit a document without specifying a product type for all of your excise products.
 
 ## Excise declaration
 
-Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office. Unless otherwise stated, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must generate and send.
+Once filled, a transaction document must be exported as an **XML file** and sent to the relevant taxing authority and/or customs office. Unless otherwise stated, **all** of your monthly transactions are automatically included in a final **excise declaration** that you must also export and send.
 
 This document unites the product operations you have reported for the month and further delivers summarized information.
 
