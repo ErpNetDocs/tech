@@ -4,7 +4,7 @@ According to EU legislation, certain products like alcohol and cigarettes need t
 
 The **Excise** module is designed to assist enterprises in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its available resources, you can create and generate various documents and [definitions](definitions/index.md) related to your excise payments. They must all eventually be included in a final **excise declaration**.
 
-![Excise](pictures/excise_module.png)
+![Excise](pictures/excise_modules.png)
 
 > [!NOTE]
 > The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. Excise can currently be used **only** in Bulgaria and features only alcoholic drinks as excise-taxable products. Categories outside of this scope will **not** be taxed.
@@ -19,7 +19,7 @@ For example, if a product enters your tax warehouse, a particular **transaction 
 
 In these cases, filling out an **electronic administrative document** allows you to include the respective incoming or outgoing transaction. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
-![Excise](pictures/new_tax_warehouse.png)
+![Excise](pictures/new_tax_warehouses.png)
 
 > [!NOTE]
 > Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
