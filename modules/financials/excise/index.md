@@ -7,7 +7,7 @@ The **Excise** module is designed to assist enterprises in meeting their legal d
 ![Excise](pictures/excise_modules.png)
 
 > [!NOTE]
-> The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. Excise can currently be used **only** in Bulgaria and features only alcoholic drinks as excise-taxable products. Categories outside of this scope will **not** be taxed.
+> The EU Excise legislation is applicable to all member states, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Categories outside of this scope are **not** taxed.
 
 ## Overview
 
