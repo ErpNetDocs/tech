@@ -1,4 +1,4 @@
-# Recalculating quantities in the WMS Worker 
+# Recalculate quantities in the WMS Worker 
 
 If a product has a defined additional **coding system** with a default base measurement category, it is possible to **recalculate** the product's quantities when scanning in the WMS Worker app.
 
