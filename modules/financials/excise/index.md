@@ -17,7 +17,7 @@ The main process flow in Excise goes like this:
 
 ### Tax warehouse
 
-In order to use this module, you first need to define a digital **tax warehouse**. 
+To use this module, you first need to define a digital **tax warehouse**. 
 
 Its purpose is to store all manufactured or imported products which are registered under the common Excise law.
 
@@ -42,7 +42,7 @@ In these cases, filling out an **electronic administrative document** allows you
 
 ![Excise](pictures/eead.png)
 
-### Definitions
+#### Definitions
 
 You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for transaction documents.
 
@@ -50,6 +50,9 @@ You can take advantage of a variety of **system** and **custom** definitions. Ex
 
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others like product type and capacity need to be manually set-up. It is **not possible** to submit a document without specifying a product type for all of your excise products.
+
+### Banderol stamp report
+
 
 ## Excise declaration
 
