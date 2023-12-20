@@ -1,6 +1,6 @@
 # Excise
 
-According to EU legislation, certain products like alcohol and cigarettes are subject to **excise tax** whenever they are imported into a warehouse. This one-time fee is also due if the warehouse itself manufactures the products.
+According to EU legislation, certain products like alcoholic beverages, beer and cigarettes are subject to **excise tax** whenever they are imported into a warehouse. This one-time fee is also due if the warehouse itself manufactures the products.
 
 The **Excise** module is designed to assist businesses in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its resources, you can create and generate all the necessary **documents** and **[definitions](definitions/index.md)** related to your excise payments. At the end of each month, they are all included in a final **excise declaration**.
 
@@ -44,7 +44,7 @@ In these cases, filling out an **electronic administrative document** allows you
 
 ### Definitions
 
-You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product types and categories, purpose codes, duty rates and many other entities required for transaction documents.
+You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product [types](definitions/excise-products.md) and [categories](definitions/excise-categories.md), purpose codes, duty rates and [other entities](definitions/other-excise-definitions.md) required for transaction documents.
 
 ![Excise](pictures/definitions_excise.png)
 
