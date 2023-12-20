@@ -16,7 +16,7 @@ If no measurement category is set, the product will still be recognized but its 
 
    ![Picture](pictures/coding_systems.png)
 
-3. Use the **[WMS Worker App](/modules/logistics/wms/wms-worker/index.md)** to open an order and scan the product code of the coding system of the product(s).
+3. Use the **[WMS Worker App](/modules/logistics/wms/wms-worker/index.md)** to start an order and scan the product code of the coding system of the product(s).
 
 ## How it works
 
