@@ -19,7 +19,7 @@ The main process flow in Excise goes like this:
 
 To use this module, you first need to define a digital **tax warehouse**. 
 
-Its purpose is to store all manufactured or imported products which are registered under the common Excise law.
+Its purpose is to store all of your manufactured and imported products which are registered under the common Excise law.
 
 ![Excise](pictures/new_tax_warehouses.png)
 
