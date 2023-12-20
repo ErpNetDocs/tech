@@ -60,7 +60,7 @@ When ready, you once again need to export it as an **XML** and send it to the re
 > [!NOTE]
 > Customs or other taxing authorities may need **direct access** to your ERP.net system in order to observe your tax warehouse. In the case of Bulgarian clients, for example, there's a **[separate environment](https://testdb-model.my.erp.net/legal)** offering the ability for custom agencies to generate reports and see which products are available in a tax warehouse for a specific period of time.
 
-![Excise](pictures/legalBG.png)
+![Excise](pictures/legalBGnew.png)
 
 ### Post-excise
 
