@@ -23,6 +23,9 @@ Its purpose is to store all manufactured or imported products which are register
 
 ![Excise](pictures/new_tax_warehouses.png)
 
+> [!NOTE]
+> Tax warehouses require special **codes** provided by your customs agency and are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
+
 ### Issue/Receipt transactions
 
 Owning such a warehouse obligates you to generate **transaction documents** for all movements of all excise products. 
@@ -38,9 +41,6 @@ If the product leaves your tax warehouse either to be sold or moved to another s
 In these cases, filling out an **electronic administrative document** allows you to report the respective transaction. Some of the data will be provided by the customs agency. Excise is equipped with other templates and definitions for most day-to-day scenarios. 
 
 ![Excise](pictures/eead.png)
-
-> [!NOTE]
-> Tax warehouses require special **codes** provided by your customs agency and are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
 
 ### Definitions
 
