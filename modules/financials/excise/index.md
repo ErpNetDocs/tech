@@ -44,7 +44,7 @@ In these cases, filling out an **electronic administrative document** allows you
 
 ### Definitions
 
-You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product [types](definitions/excise-products.md) and [categories](definitions/excise-categories.md), purpose codes, duty rates and [other entities](definitions/other-excise-definitions.md) required for transaction documents.
+You can take advantage of a variety of **system** and **custom** definitions. Excise allows you to both use and create new excise product [types](definitions/excise-products.md) and [categories](definitions/excise-categories.md), stamp lots, duty rates and [other entities](definitions/other-excise-definitions.md) required for transaction documents.
 
 ![Excise](pictures/definitions_excise.png)
 
