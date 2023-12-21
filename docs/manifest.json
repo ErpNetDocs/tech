@@ -3553,6 +3553,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/New_Tax_Warehouse-old.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/New_Tax_Warehouse-old.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/financials/excise/pictures/New_Tax_Warehouse.png",
       "output": {
         "resource": {
@@ -3564,10 +3575,120 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/banderol_document.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/banderol_document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/banderol_documents.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/banderol_documents.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/definitions_excise.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/definitions_excise.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/eead.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/eead.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/excise_declare.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/excise_declare.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/excise_module.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/excise_module.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/excise_modules.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/excise_modules.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/financials/excise/pictures/excise_product_def.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/financials/excise/pictures/excise_product_def.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/legalBG.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/legalBG.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/legalBGnew.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/legalBGnew.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/financials/excise/pictures/new_tax_warehouses.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/financials/excise/pictures/new_tax_warehouses.png"
         }
       },
       "is_incremental": false,
@@ -5676,6 +5797,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/coding_systems.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/coding_systems.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/create-reconciliation.png",
       "output": {
         "resource": {
@@ -5735,6 +5867,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/execute-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/executed_all.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/executed_all.png"
         }
       },
       "is_incremental": false,
@@ -5841,6 +5984,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/lot_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/lot_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/open-order.png",
       "output": {
         "resource": {
@@ -5878,6 +6032,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/pppp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/quantity_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/quantity_select.png"
         }
       },
       "is_incremental": false,
@@ -5966,6 +6131,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan-field-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan_coding_system.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan_coding_system.png"
         }
       },
       "is_incremental": false,
