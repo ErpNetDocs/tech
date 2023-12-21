@@ -29,7 +29,7 @@ if ($lastexitcode -eq 1) {
 
 Write-Host "Getting Latest Changes"
 git checkout master
-git pull --rebase
+git pull --rebase --autostash
 
 Write-Host "Building docfx"
 Invoke-Expression "$docfx build"
