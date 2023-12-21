@@ -13,17 +13,6 @@
       "is_incremental": false
     },
     {
-      "type": "Resource",
-      "source_relative_path": "CL.png",
-      "output": {
-        "resource": {
-          "relative_path": "CL.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
@@ -8117,17 +8106,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "gh.png",
-      "output": {
-        "resource": {
-          "relative_path": "gh.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "includes/erpnet.md",
       "output": {
@@ -8314,17 +8292,6 @@
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/index.html",
           "hash": "1y0Rn+BodBSJV5JRzchvjQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "line_deal.png",
-      "output": {
-        "resource": {
-          "relative_path": "line_deal.png"
         }
       },
       "is_incremental": false,
