@@ -8,4 +8,6 @@
   topicHref: barcode-parsers/index.md
 - name: SCAN field
   href: scan-field.md
+- name: Recalculate product quantities
+  href: recalculate-quantities.md
   
