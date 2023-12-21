@@ -24,72 +24,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "Definitions_Setups.png",
-      "output": {
-        "resource": {
-          "relative_path": "Definitions_Setups.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "Document_View.png",
-      "output": {
-        "resource": {
-          "relative_path": "Document_View.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "Excise_Declaration_New.png",
-      "output": {
-        "resource": {
-          "relative_path": "Excise_Declaration_New.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "Excise_Products.png",
-      "output": {
-        "resource": {
-          "relative_path": "Excise_Products.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "New_Excise_Administrative_Document.png",
-      "output": {
-        "resource": {
-          "relative_path": "New_Excise_Administrative_Document.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "New_Tax_Warehouse.png",
-      "output": {
-        "resource": {
-          "relative_path": "New_Tax_Warehouse.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
@@ -9456,15 +9390,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/index.html",
-          "hash": "xZ4ZO75lCKL79RuUsQndXw=="
+          "hash": "BNZ4csKh7WnlYXgd7FcdDQ=="
         }
       },
       "is_incremental": false,
@@ -9527,10 +9458,142 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse-old.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/New_Tax_Warehouse-old.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/banderol_document.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/banderol_document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/banderol_documents.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/banderol_documents.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/definitions_excise.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/definitions_excise.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/eead.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/eead.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/excise_declare.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/excise_declare.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/excise_module.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/excise_module.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/excise_modules.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/excise_modules.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/financials/excise/pictures/excise_product_def.png",
       "output": {
         "resource": {
           "relative_path": "modules/financials/excise/pictures/excise_product_def.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/legalBG.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/legalBG.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/legalBGnew.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/legalBGnew.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/new_tax_warehouse.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/new_tax_warehouse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/excise/pictures/new_tax_warehouses.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/excise/pictures/new_tax_warehouses.png"
         }
       },
       "is_incremental": false,
@@ -12164,7 +12227,18 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/index.html",
-          "hash": "xGE+lkTo46kuvyrMmaB6EA=="
+          "hash": "UBOr+NCUwRyKz/xzZzclRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/coding_systems.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/coding_systems.png"
         }
       },
       "is_incremental": false,
@@ -12176,6 +12250,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/execute-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/executed_all.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/executed_all.png"
         }
       },
       "is_incremental": false,
@@ -12238,6 +12323,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/lot_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/lot_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-it-works/pictures/open-order.png",
       "output": {
         "resource": {
@@ -12253,6 +12349,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/orders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/quantity_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/quantity_select.png"
         }
       },
       "is_incremental": false,
@@ -12308,6 +12415,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/scan-field-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan_coding_system.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan_coding_system.png"
         }
       },
       "is_incremental": false,
@@ -12407,7 +12525,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/recalculate-quantities.html",
-          "hash": "QyXLK3F88wSns4REAGv/Hw=="
+          "hash": "yiA1eGE6OpBfiVId40VpjA=="
         }
       },
       "is_incremental": false,
@@ -14226,7 +14344,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "MpAlktgntwrZ2ryVugBuUg=="
+          "hash": "BGZ7idQyrPu97BUcS1pqoQ=="
         }
       },
       "is_incremental": false,
