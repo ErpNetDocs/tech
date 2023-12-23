@@ -140,7 +140,7 @@ You can configure one of three **rules** which determine how field changes are t
 
 For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated **Change History** panel, allowing you to see technical details about each modification as well as which user made them.
 
-Within the **Track Attribute Changes** field of a document, it is possible to enforce one of the following rules:
+Within the **Track Attribute Changes** field of a document type configuration, it is possible to enforce one of the following rules:
  
 - **Default** - Allows all changes within the particular document type to be tracked. **Does not** apply if the document is transitional.
 - **Force Enable** - Allows all changes to be tracked **regardless** of whether the document is transitional or not.
