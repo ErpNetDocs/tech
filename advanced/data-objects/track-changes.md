@@ -140,6 +140,10 @@ You can configure one of three **rules** which determine how field changes are t
 
 For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated **Change History** panel, allowing you to see technical details about each modification as well as which user made them.
 
+This may be useful for contracts and other field-sensitive documents but may result in unnecessary accummulation of data if not needed. 
+
+#### Track Attribute Changes rules
+
 Within the **Track Attribute Changes** field of a document type configuration, it is possible to enforce one of the following rules:
  
 - **Default** - Allows all changes within the particular document type to be tracked. **Does not** apply if the document is transitional.
@@ -147,4 +151,4 @@ Within the **Track Attribute Changes** field of a document type configuration, i
 - **Force Disable** - Prevents the ability for changes to be tracked.
 
 > [!NOTE]
-> If you create an adjustment document for the purpose of correcting a field in an existing document, changes **will not** be tracked regardless of the **Track Attribute Changes** field configuration.
+> If you create an **adjustment document** for the purpose of correcting a field in an existing document, changes **will not** be tracked regardless of the **Track Attribute Changes** field configuration.
