@@ -141,8 +141,8 @@ You can configure one of three **rules** which determine how changes are tracked
 Within the **Track Attribute Changes** field, it is possible to apply one of the following values:
  
 - **Default** - Allows all changes within the particular document type to be tracked. **Does not** apply if the document is transitional.
-- **Force Enable** - Allows all changes to be tracked regardless of whether the document is transitional or not.
-- **Force Disable** - Prevents the ability for field changes to be tracked.
+- **Force Enable** - Allows all changes to be tracked **regardless** of whether the document is transitional or not.
+- **Force Disable** - Prevents the ability for changes to be tracked.
 
 > [!NOTE]
 > If you create an adjustment document for the purpose of correcting a field in an existing document, changes **will not** be tracked regardless of the **Track Attribute Changes** field configuration.
