@@ -138,7 +138,7 @@ For document entities, mass activation of the *Track Changes* system using the *
 
 You can configure one of three **rules** which determine how field changes are tracked in a certain document type.
 
-For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated **Change History** panel, allowing you to see technical details about each modification as well as which user made them.
+For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated **Change history** panel, allowing you to see technical details about each modification as well as which user made them.
 
 This may be useful for invoices and other field-sensitive documents but may result in unnecessary accummulation of data if not needed. 
 
@@ -147,8 +147,8 @@ This may be useful for invoices and other field-sensitive documents but may resu
 Within the **Track Attribute Changes** field of a document type configuration, it is possible to enforce one of the following rules:
  
 - **Default** - Allows all changes within the particular document type to be tracked. **Does not** apply if the document is transitional.
-- **Force Enable** - Allows all changes to be tracked **regardless** of whether the document is transitional or not.
 - **Force Disable** - Prevents the ability for changes to be tracked.
+- **Force Enable** - Allows all changes to be tracked **regardless** of whether the document is transitional or not.
 
 > [!NOTE]
 > If you create an **adjustment document** for the purpose of correcting a field in an existing document, changes **will not** be tracked regardless of the **Track Attribute Changes** field configuration.
