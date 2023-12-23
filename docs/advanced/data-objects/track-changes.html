@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Track Changes | ERP.net Tech Docs </title>
+    <title>uid: track-changes | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Track Changes | ERP.net Tech Docs ">
+    <meta name="title" content="uid: track-changes | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -76,9 +76,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="track-changes">
-<h1 id="track-changes">Track Changes</h1>
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="uid-track-changes">uid: track-changes</h2>
 
+<h1 id="track-changes">Track Changes</h1>
 <p>Track Changes is a system in ERP.net which can be used to track changes in а data table.</p>
 <h2 id="tracking-levels">Tracking levels</h2>
 <p><strong><a href="https://docs.erp.net/tech/advanced/data-objects/default-tracking-levels.html">Тracking levels</a></strong> specify the detail level of the tracking, as per the following table:</p>
@@ -211,6 +212,21 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>
+</div>
+<h3 id="enable-or-disable-attributes-change-tracking">Enable or disable attributes change tracking</h3>
+<p>You can configure one of three <strong>rules</strong> which determine how field changes are tracked in a certain document type.</p>
+<p>For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated <strong>Change history</strong> panel, allowing you to see technical details about each modification as well as which user made them.</p>
+<p>This may be useful for invoices and other field-sensitive documents but may result in unnecessary accummulation of data if not needed.</p>
+<h4 id="track-attribute-changes-rules">Track Attribute Changes rules</h4>
+<p>Within the <strong>Track Attribute Changes</strong> field of a document type configuration, it is possible to enforce one of the following rules:</p>
+<ul>
+<li><strong>Default</strong> - Allows all changes within the particular document type to be tracked. <strong>Does not</strong> apply if the document is transitional.</li>
+<li><strong>Force Disable</strong> - Prevents the ability for changes to be tracked.</li>
+<li><strong>Force Enable</strong> - Allows all changes to be tracked <strong>regardless</strong> of whether the document is transitional or not.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you create an <strong>adjustment document</strong> for the purpose of correcting a field in an existing document, changes <strong>will not</strong> be tracked regardless of the <strong>Track Attribute Changes</strong> field configuration.</p>
 </div>
 </article>
           </div>
