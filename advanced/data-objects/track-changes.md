@@ -1,4 +1,3 @@
-![image](https://github.com/ErpNetDocs/tech/assets/75483217/b0f02717-c10e-4931-b182-d9d9d85a82c3)---
 uid: track-changes
 ---
 
@@ -141,7 +140,7 @@ You can configure one of three **rules** which determine how changes are tracked
 
 Within the **Track Attribute Changes** field, it is possible to apply one of the following values:
  
-- **Default** - Allows all changes within the particular document type to be tracked. It **does not** apply if the document is marked as transitional.
+- **Default** - Allows all changes within the particular document type to be tracked. **Does not** apply if the document is transitional.
 - **Force Enable** - Allows all changes to be tracked regardless of whether the document is transitional or not.
 - **Force Disable** - Prevents the ability for field changes to be tracked.
 
