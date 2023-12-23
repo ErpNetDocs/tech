@@ -140,7 +140,7 @@ You can configure one of three **rules** which determine how field changes are t
 
 For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated **Change History** panel, allowing you to see technical details about each modification as well as which user made them.
 
-This may be useful for contracts and other field-sensitive documents but may result in unnecessary accummulation of data if not needed. 
+This may be useful for invoices and other field-sensitive documents but may result in unnecessary accummulation of data if not needed. 
 
 #### Track Attribute Changes rules
 
