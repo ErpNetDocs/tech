@@ -4,8 +4,6 @@ According to EU legislation, certain products like alcoholic beverages, beer and
 
 The **Excise** module is designed to assist businesses in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its resources, you can create and generate all the necessary **[documents](documents/index.md)** and **[definitions](definitions/index.md)** related to your excise payments. At the end of each month, they are all included in a final **excise declaration**.
 
-![Excise](pictures/excise_modules.png)
-
 > [!NOTE]
 > The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Product categories outside of this scope are **not** taxed.
 
@@ -22,8 +20,6 @@ To use this module, you first need to define a digital **tax warehouse**.
 Its purpose is to store all of your manufactured and imported products which are registered under the common Excise law.
 
 It requires a name and special **numbers** for validation, provided by your customs agency.
-
-![Excise](pictures/new_tax_warehouses.png)
 
 > [!NOTE]
 > Tax warehouses are **not** tied to a physical location. They are completely **digital** and you can link them to any or all of your existing warehouses, which unites them under one common environment.
@@ -42,15 +38,11 @@ By law, these documents must be exported and sent over to the customs office and
 
 When products are imported from or exported to another tax warehouse, the **electronic administrative document (e-AD)** allows you to report each transaction. If operations are limited to your tax warehouse, you must fill an **electronic excise tax document (e-ETD)** instead.
 
-![Excise](pictures/eead.png)
-
 ### Definitions
 
 You can take advantage of a variety of **system** and **custom** definitions. 
 
 Excise allows you to both use and create new excise product [types](definitions/excise-products.md), [categories](definitions/excise-categories.md), and [other entities](definitions/other-excise-definitions.md) required for transaction documents.
-
-![Excise](pictures/definitions_excise.png)
 
 > [!NOTE]
 > Some excise-related definitions are auto-generated while others need to be manually set-up. It is **not possible** to submit a document without defining a **product type** for all of your excise products.
@@ -62,8 +54,6 @@ Once you fill a transaction document, you must export it as an **XML file** and 
 When excise products are manufactured, imported or exported from a tax warehouse, they need to have a **stamp** placed on them.
 
 In the case of alcoholic beverages, for example, every bottle must have a **banderol stamp**. 
-
-![Excise](pictures/banderol_documents.png)
 
 You can create new banderol stamps and relate them to specific **operation types** such as:
 
