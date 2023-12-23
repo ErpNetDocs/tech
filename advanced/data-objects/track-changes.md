@@ -1,4 +1,4 @@
----
+![image](https://github.com/ErpNetDocs/tech/assets/75483217/b0f02717-c10e-4931-b182-d9d9d85a82c3)---
 uid: track-changes
 ---
 
@@ -135,4 +135,15 @@ For document entities, mass activation of the *Track Changes* system using the *
 > 
 > If you try to configure a level lower than the default tracking levels, the option will be ignored.
 
+### Enable or disable attributes change tracking
 
+You can configure one of three **rules** which determine how changes are tracked in a certain document type.
+
+Within the **Track Attribute Changes** field, it is possible to apply one of the following values:
+ 
+- **Default** - Allows all changes within the particular document type to be tracked. It **does not** apply if the document is marked as transitional.
+- **Force Enable** - Allows all changes to be tracked regardless of whether the document is transitional or not.
+- **Force Disable** - Prevents the ability for field changes to be tracked.
+
+> [!NOTE]
+> If you create an adjustment document for the purpose of correcting a field in an existing document, changes **will not** be tracked regardless of the **Track Attribute Changes** field configuration.
