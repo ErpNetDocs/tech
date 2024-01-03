@@ -24,15 +24,15 @@ Assuming your order consists of a box with several instances of products, you ca
 
 1. Within the **SCAN** field, provide the respective code, or use your mobile device to scan the barcode of the box.
 
-   ![Picture](pictures/scan_coding_system.png)
+   ![Picture](pictures/scan_coding_system_FIX.png)
    
 2. The standard **Quantity** step will be skipped and you will only need to select a **lot**.
 
-   ![Picture](pictures/lot_select.png)
+   ![Picture](pictures/lot_select_FIX.png)
 
 3. You will get an **auto-suggested** product quantity based on the provided measurement unit of the coding system.
 
-   ![Picture](pictures/quantity_select.png)
+   ![Picture](pictures/quantity_select_FIX.png)
 
 4. Tap **Next** to confirm the operation. Several or all pcs of your product will be executed **instantly**.
 
