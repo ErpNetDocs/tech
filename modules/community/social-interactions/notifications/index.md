@@ -49,6 +49,8 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
 | NT_SOC_NEW_COMMENT | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify All Object Followers | New comment to an object you are following. |
 | NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R34361.html) All Entities** - Notify All Object Followers Upon Update | Create notification for all followers of each updated object. |
+| NT_ACT_REMINDER | Activity Reminders | - | Activity reminder, within the next 15 minutes at the latest. |
+| NT_TODO_REMINDER | Todo Reminders | - | Todo task reminder, within the next 15 minutes at the latest. |
 
 ## I don't care about notifications
 
