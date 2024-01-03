@@ -8422,7 +8422,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/social-interactions/notifications/index.html",
-          "hash": "9TPYIStHXGljJ+8mWnDLGw=="
+          "hash": "33PqghC7SrdDfR9PO3/B6A=="
         }
       },
       "is_incremental": false,
@@ -12477,6 +12477,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/lot_select_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/lot_select_FIX.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-it-works/pictures/open-order.png",
       "output": {
         "resource": {
@@ -12503,6 +12514,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/quantity_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/quantity_select_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/quantity_select_FIX.png"
         }
       },
       "is_incremental": false,
@@ -12569,6 +12591,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-it-works/pictures/scan_coding_system.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-it-works/pictures/scan_coding_system_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-it-works/pictures/scan_coding_system_FIX.png"
         }
       },
       "is_incremental": false,
@@ -12668,7 +12701,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/recalculate-quantities.html",
-          "hash": "yiA1eGE6OpBfiVId40VpjA=="
+          "hash": "uzvPqvNUJI/Ju9JwHPs/2w=="
         }
       },
       "is_incremental": false,
