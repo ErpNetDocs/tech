@@ -10,13 +10,13 @@ If no measurement category is set, the product will still be recognized but its 
 
 ### Prerequisites
 
-1. Make sure your product has a defined **[coding system](/modules/general/products/coding-systems.md)**.
+1. Make sure your product has a defined **[coding system](https://docs.erp.net/tech/modules/general/products/coding-systems.html)**.
    
     You can find a list of all coding systems and create new ones on-demand in the **Web Client**.
 
    ![Picture](pictures/coding_systems.png)
 
-3. Use the **[WMS Worker App](/modules/logistics/wms/wms-worker/index.md)** to start an order and scan the product code of the coding system of the product(s).
+3. Use the **[WMS Worker App](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** to start an order and scan the product code of the coding system of the product(s).
 
 ## How it works
 
