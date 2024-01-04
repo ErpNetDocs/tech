@@ -42,3 +42,6 @@ Assuming your order consists of a box with several instances of products, you ca
 > You can **multiply** a coding system's code just like a regular product unit. For instance, if the coding system has a default measurement unit of 25pcs, multiplying it by 4 will give you 100pcs of the product ready to be scanned in one-go.
 
 
+*The attached screenshots are from version 24.
+
+
