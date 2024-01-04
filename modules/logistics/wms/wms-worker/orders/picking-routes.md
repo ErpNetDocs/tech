@@ -4,8 +4,8 @@ uid: picking-routes
 
 # Picking routes
 Workers who physically pick items for the warehouse orders use picking routes to guide them through the process.
-The route is calculated using the "Suggest warehouse locations" function that is available in the Orders menu of WMS worker. The picking route takes into account the different parameters that are set up for the warehouse, such as:
-- The Zones specified as picking zones through the "Zone Type" policy;
+The route is calculated using the **"Suggest warehouse locations"** function that is available in the Orders menu of WMS worker. The picking route takes into account the different parameters that are set up for the warehouse, such as:
+- The Zones specified as picking zones through the "Zone Type" policy - it is nessesary to set "Policy Kind = Zone Type" and "Value = picking" if you want to use the **"Suggest warehouse locations"** function.
 - The Locations addresses that are used to calculate the best route through the warehouse;
 
 as well as other factors, such as:
