@@ -5984,6 +5984,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/lot_select_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/lot_select_FIX.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/open-order.png",
       "output": {
         "resource": {
@@ -6032,6 +6043,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/quantity_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/quantity_select_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/quantity_select_FIX.png"
         }
       },
       "is_incremental": false,
@@ -6131,6 +6153,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan_coding_system.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan_coding_system_FIX.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-it-works/pictures/scan_coding_system_FIX.png"
         }
       },
       "is_incremental": false,
@@ -8422,7 +8455,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/social-interactions/notifications/index.html",
-          "hash": "33PqghC7SrdDfR9PO3/B6A=="
+          "hash": "1fbuNKW+9eR4vOe1013G4g=="
         }
       },
       "is_incremental": false,
@@ -12701,7 +12734,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-it-works/recalculate-quantities.html",
-          "hash": "uzvPqvNUJI/Ju9JwHPs/2w=="
+          "hash": "tfzocAQ2/XlcyE+vmsjR9w=="
         }
       },
       "is_incremental": false,
@@ -13730,7 +13763,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/picking-routes.html",
-          "hash": "oSEB/5lR+DH/q2ZqywpDsw=="
+          "hash": "rmDq6Crg2F4TR/6UGLinMw=="
         }
       },
       "is_incremental": false,
@@ -14472,7 +14505,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/take.html",
-          "hash": "4HdKQHMFS6K9N0S7ILhgpA=="
+          "hash": "r0R0OsE9PAdvwEgI8rgvdw=="
         }
       },
       "is_incremental": false,
