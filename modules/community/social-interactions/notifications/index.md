@@ -51,7 +51,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R34361.html) All Entities** - Notify All Object Followers Upon Update | Create notification for all followers of each updated object. |
 | NT_ACT_REMINDER | Activity Reminders | - | Activity reminder, within the next 15 minutes at the latest. |
 | NT_TODO_REMINDER | Todo Reminders | - | Todo task reminder, within the next 15 minutes at the latest. |
-| NT_DOC_ASSIGNMENT | Document | **[R35922](https://docs.erp.net/model/business-rules/R35922.html) Document** - Notify Assigned To User Upon Assignment | 
+| NT_DOC_ASSIGNMENT | Document | **[R35922](https://docs.erp.net/model/business-rules/R35922.html) Document** - Notify Assigned To User Upon Assignment | Notify user when a document has been assigned to them.
 
 ## I don't care about notifications
 
