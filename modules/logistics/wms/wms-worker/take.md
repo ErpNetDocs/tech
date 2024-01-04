@@ -22,3 +22,6 @@ After confirmation, the window for execution the order automatically opens, allo
 The "Assigned to" field is automatically filled with his own name, the state of the Warehouse Order is changed to "Released", and it becomes visible in his "ASSIGNED TO ME" tasks list.
 
 ![Product](pictures/take-pic4.png)
+
+*The attached screenshots are from version 24.
+
