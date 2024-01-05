@@ -138,9 +138,9 @@ For document entities, mass activation of the *Track Changes* system using the *
 
 Tracking attributes changing history may be useful for invoices and other field-sensitive documents but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.
 
-You can define how attribute (field) changes to be tracked for documents of a certain type through the Track Attribute Changes field in the document type definition.
+You can define how attribute (field) changes to be tracked for documents of a certain type through the **Track Attribute Changes** field in the document type definition.
 
-Within the Track Attribute Changes field, it is possible to enforce one of the following **rules**:
+Within the **Track Attribute Changes** field, it is possible to enforce one of the following **rules**:
 
 •	**Default** - Allows attribute changes for the documents of the particular document type to be tracked. Does not apply if the document is transitional.
 •	**Force Disable** - Prevents the ability for changes to be tracked.
@@ -149,5 +149,5 @@ Within the Track Attribute Changes field, it is possible to enforce one of the f
 
 > [!NOTE]
 > Regardless of the **Track Attribute Changes** field configuration:
-> \- attribute changes will not be tracked for adjustment documents
-> \- Level 1 and Level 2 tracking levels will continue to apply, so the data collected by them will be stored and available for review.
+> - attribute changes will not be tracked for adjustment documents
+> - Level 1 and Level 2 tracking levels will continue to apply, so the data collected by them will be stored and available for review.
