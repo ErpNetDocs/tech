@@ -213,20 +213,18 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <h5>Note</h5>
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>
 </div>
-<h3 id="enable-or-disable-attributes-change-tracking">Enable or disable attributes change tracking</h3>
-<p>You can configure one of three <strong>rules</strong> which determine how field changes are tracked in a certain document type.</p>
-<p>For instance, if you create a sales order, any subsequent changes to its fields may be collected in a dedicated <strong>Change history</strong> panel, allowing you to see technical details about each modification as well as which user made them.</p>
-<p>This may be useful for invoices and other field-sensitive documents but may result in unnecessary accummulation of data if not needed.</p>
-<h4 id="track-attribute-changes-rules">Track Attribute Changes rules</h4>
-<p>Within the <strong>Track Attribute Changes</strong> field of a document type configuration, it is possible to enforce one of the following rules:</p>
-<ul>
-<li><strong>Default</strong> - Allows all changes within the particular document type to be tracked. <strong>Does not</strong> apply if the document is transitional.</li>
-<li><strong>Force Disable</strong> - Prevents the ability for changes to be tracked.</li>
-<li><strong>Force Enable</strong> - Allows all changes to be tracked <strong>regardless</strong> of whether the document is transitional or not.</li>
-</ul>
+<h3 id="enable-or-disable-attribute-changes-tracking-for-document-entities">Enable or disable attribute changes tracking for document entities</h3>
+<p>Tracking attributes changing history may be useful for invoices and other field-sensitive documents but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.</p>
+<p>You can define how attribute (field) changes to be tracked for documents of a certain type through the Track Attribute Changes field in the document type definition.</p>
+<p>Within the Track Attribute Changes field, it is possible to enforce one of the following <strong>rules</strong>:</p>
+<p>•	<strong>Default</strong> - Allows attribute changes for the documents of the particular document type to be tracked. Does not apply if the document is transitional.
+•	<strong>Force Disable</strong> - Prevents the ability for changes to be tracked.
+•	<strong>Force Enable</strong> - Allows attribute changes to be tracked regardless of whether the document is transitional or not.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you create an <strong>adjustment document</strong> for the purpose of correcting a field in an existing document, changes <strong>will not</strong> be tracked regardless of the <strong>Track Attribute Changes</strong> field configuration.</p>
+<p>Regardless of the <strong>Track Attribute Changes</strong> field configuration:
+- attribute changes will not be tracked for adjustment documents
+- Level 1 and Level 2 tracking levels will continue to apply, so the data collected by them will be stored and available for review.</p>
 </div>
 </article>
           </div>
