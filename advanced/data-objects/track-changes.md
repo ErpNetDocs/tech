@@ -143,7 +143,9 @@ You can define how attribute (field) changes to be tracked for documents of a ce
 Within the **Track Attribute Changes** field, it is possible to enforce one of the following **rules**:
 
 •	**Default** - Allows attribute changes for the documents of the particular document type to be tracked. Does not apply if the document is transitional.
+
 •	**Force Disable** - Prevents the ability for changes to be tracked.
+
 •	**Force Enable** - Allows attribute changes to be tracked regardless of whether the document is transitional or not.
 
 
