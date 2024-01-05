@@ -52,6 +52,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_ACT_REMINDER | Activity Reminders | - | Activity reminder, within the next 15 minutes at the latest. |
 | NT_TODO_REMINDER | Todo Reminders | - | Todo task reminder, within the next 15 minutes at the latest. |
 | NT_DOC_ASSIGNMENT | Document | **[R35922](https://docs.erp.net/model/business-rules/R35922.html) Document** - Notify Assigned To User Upon Assignment | Notify user when a document has been assigned to them.
+| NT_DOC_STATE_ASSIGN | Document | **[R35927](https://docs.erp.net/model/business-rules/R35927.html) Document** - Notify Assigned To User For State Change | Notify the assigned user when the document state is changed.
 
 ## I don't care about notifications
 
