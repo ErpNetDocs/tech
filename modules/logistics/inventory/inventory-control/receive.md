@@ -102,6 +102,7 @@ If the **Executed** bar is left with zero, this will be interpreted as the produ
 
 ![Receive](pictures/inv_con_receive_zero.png)
 
+
 ## Create a receipt store transaction
 
 Once you're done scanning the ordered product quantities, you can go back to the **Executed** tab to see if you've made any mistakes.
