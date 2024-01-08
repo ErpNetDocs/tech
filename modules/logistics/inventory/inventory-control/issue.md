@@ -1,6 +1,6 @@
 # Issue
 
-This section allows you to **deduct** product quantities from your inventory or shop's store, and **generate** issue store transactions.
+This section allows you to **deduct** product quantities from your inventory or shop's store, and **create** issue store transactions.
 
 Issued quantities which are successfully executed are counted out of your store's overall availability.
 
@@ -14,7 +14,7 @@ Available orders are filtered by **enterprise company** and **location**.
 
 ![Issue](pictures/inv_con_issuenew.png)
 
-If you tap on one, you'll be taken to the **Issue** module.
+If you tap on one, you'll be taken to the **Issue** order.
 
 ![Issue](pictures/inv_con_issue_modulenew.png)
 
@@ -36,7 +36,7 @@ This is where all of your ordered product quantities are listed, together with t
 
 Here, you can find how many quantities of the products are **issued** as opposed to being **ordered**.
 
-For example, out of 30 ordered pcs, only 15 may be issued. This will be reflected in the issue store document.
+For example, out of 30 ordered pcs, only 15 may be issued. This will be reflected in the issue store transaction.
 
 ![Issue](pictures/inv_con_issue_executednew.png)
 
@@ -44,7 +44,7 @@ For example, out of 30 ordered pcs, only 15 may be issued. This will be reflecte
 
 If you tap on a product from the **Ordered** tab, you'll be shown further information about it here.
 
-This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be executed.
+This includes revealing its part number and additional codes, if present, as well as ordered/executed quantities.
 
 If more lots are present, the **ordered-executed** ratio will be distributed based on the **FEFO** (first expire - first out) principle.
 
@@ -94,13 +94,13 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ### Zero count
 
-In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product code.
+You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
 
-If the **Executed** bar is left with zero, this will be interpreted as the product being issued "0 pcs" in the final issue store transaction.
+If the Executed bar is left with zero, this will be interpreted as the product having received "0 pcs". In the final receipt store transaction, there will be no lines for the product.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
 
-## Generate an issue store transaction
+## Create an issue store transaction
 
 Once you're done scanning the desired product quantities, you can go back to the **Executed** tab to see if you've made any mistakes.
 
@@ -110,9 +110,9 @@ The **Ordered** value will be positioned above the **Executed** one, making it e
 
 If all ordered product quantities have been issued, the **Finish** button will be painted in green.
 
-Tap on it once to generate your issue store transaction.
+Tap on it once to create your issue store transaction.
 
-This will take you to a separate space with direct access to the document type for this operation.
+This will take you to a separate space with direct link to the document type for this operation.
 
 ![Issue](pictures/inv_con_issue_docrelease.png)
 
