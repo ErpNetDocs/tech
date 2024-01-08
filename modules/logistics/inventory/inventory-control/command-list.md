@@ -14,10 +14,8 @@ All barcodes are grouped into **Quantities** and **Commands**, and each group fe
 
 While quantity barcodes immediately scan a fixed amount of **instances** of a product, commands execute specific **operations**.
 
-![Command list](pictures/commands_list.png)
+![Command list](pictures/commands_list_new.png)
 
-At any time, you can print and use this sheet externally with the help of the **Print** button.
+At any time, you can **print** and use this sheet externally.
 
 Simply scan a barcode and your desired operation will be reflected immediately, without the need to type anything.
-
-![Command list](pictures/print.png)
