@@ -81,7 +81,7 @@ Incorrect product codes will generate an error.
 
 ### Multiple scans
 
-To execute more pcs or the exact number of pcs for a product, specify it first (e.g. "50") and press enter, and then provide the product code.
+To execute more pcs or the exact number of pcs for a product, specify it first (e.g. "35") and press enter, and then provide the product code.
 
 ![Receive](pictures/inv_con_receive_multiscan.png)
 
@@ -96,13 +96,13 @@ To execute more pcs or the exact number of pcs for a product, specify it first (
 
 ### Zero count
 
-In case you've made a mistake and want to start the execution process from scratch, type in "0*" followed by the affected product code.
+You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
 
-If the **Executed** bar is left with zero, this will be interpreted as the product having received "0 pcs" in the final receipt store document.
+If the **Executed** bar is left with zero, this will be interpreted as the product having received "0 pcs". In the final receipt store transaction, there will be no lines for the product.
 
 ![Receive](pictures/inv_con_receive_zero.png)
 
-## Generate a receipt order document
+## Create a receipt store transaction
 
 Once you're done scanning the ordered product quantities, you can go back to the **Executed** tab to see if you've made any mistakes.
 
@@ -112,9 +112,9 @@ The **Ordered** value will be positioned above the **Executed** one, making it e
 
 If all ordered product quantities have been received, the **Finish** button will be painted in green.
 
-**Tap** on it once to generate your receipt store document.
+**Tap** on it once to create your receipt store document.
 
-This will take you to a separate space with direct access to the document template for this operation.
+This will take you to a separate space with direct link to the transaction for this operation.
 
 ![Receive](pictures/inv_con_receive_greendoc.png)
 
