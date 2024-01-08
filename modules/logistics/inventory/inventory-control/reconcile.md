@@ -1,6 +1,6 @@
 # Reconcile
 
-This section allows you to **update** the available quantities of your inventory or shop's products, and **generate** reconciliation documents.
+This section allows you to **update** the available quantities of your inventory or shop's products, and **create** reconciliation documents.
 
 By occasionally counting everything, it may turn out that some products have fewer or higher quantities, or are no longer present.
 
@@ -42,7 +42,7 @@ For example, out of 150pcs, only 131 may be present. This will be reflected in t
 
 If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
 
-This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it have been **counted**.
+This includes revealing its part number and additional codes, if present, as well as counted quantities.
 
 If more lots are present, the **available-counted** ratio will be distributed based on the FEFO principle.
 
@@ -72,19 +72,15 @@ Incorrect or non-existent product codes will generate an error.
 
 ### Multiple scans
 
-To count more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then provide the product code. 
-
-This can be done on one line, or on two separate lines for each input. Tap the **blue arrow** to confirm.
+To count more pcs or the exact number of pcs for a product, specify it first (e.g. "50") and press enter, and then provide the product code.
 
 ![Reconcile](pictures/count_fifty_reconcile.png)
 
-**NOTE!**
-
-1. The **trash bin button** allows you to remove the latest count, which will restore the previous **Counted** value.
-
-2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-
-3. You can remove inserted multipliers by tapping the **Clear button (X)**.
+> [!NOTE]
+> 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
+> 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
+> 3. You can remove inserted multipliers by tapping the **Clear** **button** **(X)**
+> 4. The executed pcs of a product **cannot** be more than what is ordered.
 
 ### Higher count
 
@@ -104,15 +100,13 @@ Its pcs will be reflected immediately, and once a reconciliation document is rel
 
 ### Zero count
 
-In case you've made a mistake and want to start counting from scratch, type in "0*" followed by the affected product code.
-
-If previously available product quantities are now non-existent, make sure to count them (or their lots) with zeroes.
+You can enter a Zero quantity for the products that are missing from the store. Type in "0*" and press Enter followed by the affected product code.
 
 Each zero count is interpreted as the product or lot having "0 pcs" in the final reconciliation document.
 
 ![Reconcile](pictures/count_zero_reconcile.png)
 
-## Generate a reconciliation document
+## Create a reconciliation document
 
 Once you're done scanning the product quantities, you can go back to the **Counted** tab to see if you've made any mistakes.
 
@@ -122,9 +116,9 @@ The **Available** value will be positioned above the **Counted** one, making it 
 
 If the counted number is greater than or equal to the available number, the **Finish** button will be painted in green.
 
-Tap on it once to generate your reconciliation document.
+Tap on it once to create your reconciliation document.
 
-This will take you to a separate space with direct access to the document type for this operation.
+This will take you to a separate space with direct link to the document type for this operation.
 
 ![Reconcile](pictures/reconcile_document.png)
 
