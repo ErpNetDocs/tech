@@ -10631,7 +10631,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/command-list.html",
-          "hash": "RLhCCVXWQPfXV4vznAIgNg=="
+          "hash": "a78+F5aRxXfyzWR+/txirQ=="
         }
       },
       "is_incremental": false,
@@ -10655,7 +10655,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/issue.html",
-          "hash": "HiemM/D+6njcAl9KfnzTBA=="
+          "hash": "jhKHLcDIHaFBEigeCxT7gg=="
         }
       },
       "is_incremental": false,
@@ -10689,6 +10689,28 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/command_list_click.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/command_list_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/command_list_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/command_list_neww.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/command_list_neww.png"
         }
       },
       "is_incremental": false,
@@ -11635,7 +11657,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/receive.html",
-          "hash": "veibs8qFUlCxkV2bUd1zuA=="
+          "hash": "bUGwo1isQzeN2OBj42pKPw=="
         }
       },
       "is_incremental": false,
@@ -11647,7 +11669,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/reconcile.html",
-          "hash": "iL89vWEDWfV/KL/z0j/D9g=="
+          "hash": "EfKnxST0ugIe5i3LIF10Gg=="
         }
       },
       "is_incremental": false,
@@ -11659,7 +11681,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/scrap.html",
-          "hash": "lhRB9REZwHCFp2LITceYgQ=="
+          "hash": "QmGPaFSBvLMC9rJrwznR3w=="
         }
       },
       "is_incremental": false,

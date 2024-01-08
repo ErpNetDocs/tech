@@ -79,8 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="scrap">Scrap</h1>
 
-<p>This section allows you to <strong>remove</strong> available quantities from your inventory or shop's products, and <strong>generate</strong> issue store transactions.</p>
-<p>Scrapping is done when a product's expiry date is reached (respecting the FEFO rule) or the store no longer needs product quantities.</p>
+<p>This section allows you to <strong>remove</strong> available quantities from your inventory or shop's products, and <strong>create</strong> issue store transactions.</p>
+<p>Scrapping is done when a product's expiry date is reached or the store no longer needs product quantities.</p>
 <p>Successfully scrapped quantities are counted <strong>out</strong> of your store's overall availability.</p>
 <p><img src="pictures/inv_con_scrap.png" alt="Scrap"></p>
 <h3 id="prerequisites">Prerequisites</h3>
@@ -101,8 +101,8 @@
 <p>For example, out of 30pcs, only 15 may be scrapped. This will be reflected in the issue store transaction.</p>
 <p><img src="pictures/inv_con_scrap_scrap.png" alt="Scrap"></p>
 <h3 id="info">Info</h3>
-<p>If you tap on a product from the <strong>Availability</strong> tab, you'll be shown further information about it here.</p>
-<p>This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be scrapped.</p>
+<p>If you tap on a product from the Availability tab, you'll be shown further information about it here.</p>
+<p>This includes revealing its part number and additional codes, if present, as well as counted quantities.</p>
 <p>If more lots are present, the <strong>available-scrap</strong> ratio will be distributed based on the FEFO principle.</p>
 <p><img src="pictures/inv_con_scrap_info.png" alt="Scrap"></p>
 <h2 id="scanning">Scanning</h2>
@@ -110,7 +110,7 @@
 <p>It lets you quickly insert the instances of a product you want to scrap either manually or through barcode commands.</p>
 <p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
 <h3 id="individual-scrap">Individual scrap</h3>
-<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to scrap only one pcs of it. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to execute only one pcs of it. You can enter the code manually from the keyboard and tap the blue arrow or press Enter to confirm.</p>
 <p><img src="pictures/inv_con_scrap_individual.png" alt="Scrap"></p>
 <p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product. Successfully scrapped pcs are painted in <strong>green</strong>.</p>
 <p>If more lots are present for a product, the FEFO principle determines which lot has pcs scrapped first.</p>
@@ -120,28 +120,26 @@
 <p>To scrap more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;*&quot;, and then enter the product code.</p>
 <p>This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
 <p><img src="pictures/inv_con_scrap_multi.png" alt="Scrap"></p>
-<p><strong>NOTE!</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
 <ol>
-<li><p>The <strong>trash bin button</strong> allows you to remove the latest scrap, which will restore the previous Scrap value.</p>
-</li>
-<li><p>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</p>
-</li>
-<li><p>You can remove inserted multipliers by tapping the <strong>Clear button (X)</strong>.</p>
-</li>
-<li><p>The desired pcs for scrap <strong>cannot</strong> be more than what is set as available in the system.</p>
-</li>
+<li>The <strong>trash bin button</strong> allows you to remove the latest execution, which will restore the previous Executed value.</li>
+<li>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</li>
+<li>You can remove inserted multipliers by tapping the <strong>Clear</strong> <strong>button</strong> <strong>(X)</strong></li>
+<li>The executed pcs of a product <strong>cannot</strong> be more than what is ordered.</li>
 </ol>
-<p><img src="pictures/inv_con_scrap_error.png" alt="Scrap"></p>
+</div>
 <h3 id="zero-count">Zero count</h3>
-<p>In case you've made a mistake and want to start the scrap process from scratch, type in &quot;0*&quot; followed by the affected product code.</p>
-<p>If the <strong>Scrap</strong> bar is left with zero, this will be interpreted as the product having &quot;0 pcs&quot; for scrap in the final issue store transaction.</p>
+<p>You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.</p>
+<p>If the <strong>Scrap</strong> bar is left with zero, this will be interpreted as the product having deducted &quot;0 pcs&quot;.
+In the final issue store transaction, there will be no lines for the product.</p>
 <p><img src="pictures/inv_con_scrap_zero.png" alt="Scrap"></p>
-<h2 id="generate-an-issue-order-transaction">Generate an issue order transaction</h2>
+<h2 id="create-an-issue-order-transaction">Create an issue order transaction</h2>
 <p>Once you're done scanning the desired product quantities, you can go back to the <strong>Scrap</strong> tab to see if you've made any mistakes.</p>
 <p>The <strong>Available</strong> value will be positioned above the <strong>Scrap</strong> one, making it easy to compare these values.</p>
 <p><img src="pictures/inv_con_scrap_finishgreen.png" alt="Scrap"></p>
 <p>If all available product quantities are set to be scrapped, the <strong>Finish</strong> button will be painted in green.</p>
-<p>Tap on it once to generate your issue store transaction.</p>
+<p>Tap on it once to create your issue store transaction.</p>
 <p>This will take you to a separate space with direct access to the document type for this operation.</p>
 <p><img src="pictures/inv_con_scrap_doc.png" alt="Scrap"></p>
 <p>By tapping on it, you'll access the <strong>Inventory</strong> module from where you can release and complete the document.</p>

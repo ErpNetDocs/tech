@@ -112,7 +112,7 @@
 <p>It lets you quickly insert the instances of a product you want to confirm as issued either manually or through barcode commands.</p>
 <p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
 <h3 id="individual-scan">Individual scan</h3>
-<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to execute only one pcs of it. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to execute only one pcs of it. You can enter the code manually from the keyboard and tap the blue arrow or press Enter to confirm.</p>
 <p><img src="pictures/inv_con_issue_singlescannew.png" alt="Issue"></p>
 <p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product. Successfully executed pcs are painted in <strong>green</strong>.</p>
 <p>If more lots are present for a product, the FEFO principle determines which lot has pcs executed first.</p>
@@ -120,23 +120,20 @@
 <p><img src="pictures/inv_con_issue_err.png" alt="Issue"></p>
 <h3 id="multiple-scans">Multiple scans</h3>
 <p>To execute more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;*&quot;, and then enter the product code.</p>
-<p>This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
 <p><img src="pictures/inv_con_issue_multiscannew.png" alt="Issue"></p>
-<p><strong>NOTE!</strong></p>
+<div class="NOTE">
+<h5>Note</h5>
 <ol>
-<li><p>The <strong>trash bin button</strong> allows you to remove the latest execution, which will restore the previous Executed value.</p>
-</li>
-<li><p>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</p>
-</li>
-<li><p>You can remove inserted multipliers by tapping the <strong>Clear</strong> button (X).</p>
-</li>
-<li><p>The issued pcs of a product <strong>cannot</strong> be more than what is ordered.</p>
-</li>
+<li>The <strong>trash bin button</strong> allows you to remove the latest execution, which will restore the previous Executed value.</li>
+<li>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</li>
+<li>You can remove inserted multipliers by tapping the <strong>Clear</strong> <strong>button</strong> <strong>(X)</strong></li>
+<li>The executed pcs of a product <strong>cannot</strong> be more than what is ordered.</li>
 </ol>
+</div>
 <p><img src="pictures/inv_con_issue_errornew.png" alt="Issue"></p>
 <h3 id="zero-count">Zero count</h3>
 <p>You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.</p>
-<p>If the Executed bar is left with zero, this will be interpreted as the product having received &quot;0 pcs&quot;. In the final receipt store transaction, there will be no lines for the product.</p>
+<p>If the Executed bar is left with zero, this will be interpreted as the product having deducted &quot;0 pcs&quot;. In the final issue store transaction, there will be no lines for the product.</p>
 <p><img src="pictures/inv_con_issue_zeronew.png" alt="Issue"></p>
 <h2 id="create-an-issue-store-transaction">Create an issue store transaction</h2>
 <p>Once you're done scanning the desired product quantities, you can go back to the <strong>Executed</strong> tab to see if you've made any mistakes.</p>
