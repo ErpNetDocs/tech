@@ -38,9 +38,9 @@ For example, out of 30pcs, only 15 may be scrapped. This will be reflected in th
 
 ### Info
 
-If you tap on a product from the **Availability** tab, you'll be shown further information about it here.
+If you tap on a product from the Availability tab, you'll be shown further information about it here.
 
-This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be scrapped.
+This includes revealing its part number and additional codes, if present, as well as counted quantities.
 
 If more lots are present, the **available-scrap** ratio will be distributed based on the FEFO principle.
 
@@ -56,7 +56,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scrap
 
-Simply type in a product's code once (e.g. "0000001") in order to scrap only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. You can enter the code manually from the keyboard and tap the blue arrow or press Enter to confirm.
 
 ![Scrap](pictures/inv_con_scrap_individual.png)
 
@@ -76,27 +76,22 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ![Scrap](pictures/inv_con_scrap_multi.png)
 
-**NOTE!**
-
-1. The **trash bin button** allows you to remove the latest scrap, which will restore the previous Scrap value.
-
-2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-
-3. You can remove inserted multipliers by tapping the **Clear button (X)**.
-
-4. The desired pcs for scrap **cannot** be more than what is set as available in the system.
-
-![Scrap](pictures/inv_con_scrap_error.png)
+> [!NOTE]
+> 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
+> 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
+> 3. You can remove inserted multipliers by tapping the **Clear** **button** **(X)**
+> 4. The executed pcs of a product **cannot** be more than what is ordered.
 
 ### Zero count
 
-In case you've made a mistake and want to start the scrap process from scratch, type in "0*" followed by the affected product code.
+You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
 
-If the **Scrap** bar is left with zero, this will be interpreted as the product having "0 pcs" for scrap in the final issue store transaction.
+If the **Scrap** bar is left with zero, this will be interpreted as the product having deducted "0 pcs". 
+In the final issue store transaction, there will be no lines for the product.
 
 ![Scrap](pictures/inv_con_scrap_zero.png)
 
-## Generate an issue order transaction
+## Create an issue order transaction
 
 Once you're done scanning the desired product quantities, you can go back to the **Scrap** tab to see if you've made any mistakes.
 
@@ -106,7 +101,7 @@ The **Available** value will be positioned above the **Scrap** one, making it ea
 
 If all available product quantities are set to be scrapped, the **Finish** button will be painted in green.
 
-Tap on it once to generate your issue store transaction.
+Tap on it once to create your issue store transaction.
 
 This will take you to a separate space with direct access to the document type for this operation.
 
