@@ -60,7 +60,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 ### Individual scan
 
-Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. You can enter the code manually from the keyboard and tap the blue arrow or press Enter to confirm.
 
 ![Issue](pictures/inv_con_issue_singlescannew.png)
 
@@ -90,9 +90,10 @@ To execute more pcs or the exact number of pcs for a product, specify it first (
 
 You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
 
-If the Executed bar is left with zero, this will be interpreted as the product having received "0 pcs". In the final receipt store transaction, there will be no lines for the product.
+If the Executed bar is left with zero, this will be interpreted as the product having deducted "0 pcs". In the final issue store transaction, there will be no lines for the product.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
+
 
 ## Create an issue store transaction
 
