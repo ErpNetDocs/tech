@@ -1,8 +1,8 @@
 # Scrap
 
-This section allows you to **remove** available quantities from your inventory or shop's products, and **generate** issue store transactions.
+This section allows you to **remove** available quantities from your inventory or shop's products, and **create** issue store transactions.
 
-Scrapping is done when a product's expiry date is reached (respecting the FEFO rule) or the store no longer needs product quantities.
+Scrapping is done when a product's expiry date is reached or the store no longer needs product quantities.
 
 Successfully scrapped quantities are counted **out** of your store's overall availability.
 
