@@ -8455,7 +8455,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/social-interactions/notifications/index.html",
-          "hash": "0ougvLW3KM8+3b9sxhOhug=="
+          "hash": "BCbz5ZJiaCPBD7OECllZSQ=="
         }
       },
       "is_incremental": false,
@@ -10655,7 +10655,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/issue.html",
-          "hash": "Zcpr0wl1IyBEtIjk1RRMnQ=="
+          "hash": "HiemM/D+6njcAl9KfnzTBA=="
         }
       },
       "is_incremental": false,
@@ -11635,7 +11635,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/receive.html",
-          "hash": "tXCNVz79uzSGrckRrnI/Nw=="
+          "hash": "veibs8qFUlCxkV2bUd1zuA=="
         }
       },
       "is_incremental": false,

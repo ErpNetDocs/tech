@@ -79,14 +79,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="issue">Issue</h1>
 
-<p>This section allows you to <strong>deduct</strong> product quantities from your inventory or shop's store, and <strong>generate</strong> issue store transactions.</p>
+<p>This section allows you to <strong>deduct</strong> product quantities from your inventory or shop's store, and <strong>create</strong> issue store transactions.</p>
 <p>Issued quantities which are successfully executed are counted out of your store's overall availability.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Make sure you've set the correct document type for this operation within the <strong><a href="settings.html">Settings</a></strong>.</p>
 <p>You'll then be prompted to select the <strong>released order</strong> for which you want to issue product quantities.</p>
 <p>Available orders are filtered by <strong>enterprise company</strong> and <strong>location</strong>.</p>
 <p><img src="pictures/inv_con_issuenew.png" alt="Issue"></p>
-<p>If you tap on one, you'll be taken to the <strong>Issue</strong> module.</p>
+<p>If you tap on one, you'll be taken to the <strong>Issue</strong> order.</p>
 <p><img src="pictures/inv_con_issue_modulenew.png" alt="Issue"></p>
 <h2 id="overview">Overview</h2>
 <p>Issue is composed of three tabs:</p>
@@ -100,11 +100,11 @@
 <p><img src="pictures/inv_con_issue_orderednew.png" alt="Issue"></p>
 <h3 id="executed">Executed</h3>
 <p>Here, you can find how many quantities of the products are <strong>issued</strong> as opposed to being <strong>ordered</strong>.</p>
-<p>For example, out of 30 ordered pcs, only 15 may be issued. This will be reflected in the issue store document.</p>
+<p>For example, out of 30 ordered pcs, only 15 may be issued. This will be reflected in the issue store transaction.</p>
 <p><img src="pictures/inv_con_issue_executednew.png" alt="Issue"></p>
 <h3 id="info">Info</h3>
 <p>If you tap on a product from the <strong>Ordered</strong> tab, you'll be shown further information about it here.</p>
-<p>This includes revealing its unique code, barcode and GTIN, if present, as well as how many instances of it will be executed.</p>
+<p>This includes revealing its part number and additional codes, if present, as well as ordered/executed quantities.</p>
 <p>If more lots are present, the <strong>ordered-executed</strong> ratio will be distributed based on the <strong>FEFO</strong> (first expire - first out) principle.</p>
 <p><img src="pictures/inv_con_issue_infonew.png" alt="Issue"></p>
 <h2 id="scanning">Scanning</h2>
@@ -135,16 +135,16 @@
 </ol>
 <p><img src="pictures/inv_con_issue_errornew.png" alt="Issue"></p>
 <h3 id="zero-count">Zero count</h3>
-<p>In case you've made a mistake and want to start the execution process from scratch, type in &quot;0*&quot; followed by the affected product code.</p>
-<p>If the <strong>Executed</strong> bar is left with zero, this will be interpreted as the product being issued &quot;0 pcs&quot; in the final issue store transaction.</p>
+<p>You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.</p>
+<p>If the Executed bar is left with zero, this will be interpreted as the product having received &quot;0 pcs&quot;. In the final receipt store transaction, there will be no lines for the product.</p>
 <p><img src="pictures/inv_con_issue_zeronew.png" alt="Issue"></p>
-<h2 id="generate-an-issue-store-transaction">Generate an issue store transaction</h2>
+<h2 id="create-an-issue-store-transaction">Create an issue store transaction</h2>
 <p>Once you're done scanning the desired product quantities, you can go back to the <strong>Executed</strong> tab to see if you've made any mistakes.</p>
 <p>The <strong>Ordered</strong> value will be positioned above the <strong>Executed</strong> one, making it easy to compare these values.</p>
 <p><img src="pictures/inv_con_issue_finishgreen.png" alt="Issue"></p>
 <p>If all ordered product quantities have been issued, the <strong>Finish</strong> button will be painted in green.</p>
-<p>Tap on it once to generate your issue store transaction.</p>
-<p>This will take you to a separate space with direct access to the document type for this operation.</p>
+<p>Tap on it once to create your issue store transaction.</p>
+<p>This will take you to a separate space with direct link to the document type for this operation.</p>
 <p><img src="pictures/inv_con_issue_docrelease.png" alt="Issue"></p>
 <p>By tapping on it, you'll access the <strong>Inventory</strong> module from where you can release and complete the document.</p>
 <p><img src="pictures/inv_con_issuedoc.png" alt="Issue"></p>
