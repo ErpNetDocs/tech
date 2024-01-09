@@ -2,7 +2,7 @@
 
 This section allows you to **transfer** available product quantities from one of your stores to another, and generate transfer orders.
 
-Transfering is useful when a particular store no longer needs certain quantities and has requested to move them to a different one.
+Transfer is useful when a store needs certain quantities available in another store.
 
 Upon every transfer, the sending store must generate a separate **issue store transaction** to reflect the transferred quantities, while the recipient store must generate a **receipt store transaction**. Both documents can be generated through **Inventory Control** or similar modules.
 
