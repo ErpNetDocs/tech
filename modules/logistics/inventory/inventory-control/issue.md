@@ -12,7 +12,7 @@ You'll then be prompted to select the **released order** for which you want to i
 
 Available orders are filtered by **enterprise company** and **location**.
 
-![Issue](pictures/inv_con_issuenew.png)
+![Issue](pictures/issue_new.png)
 
 If you tap on one, you'll be taken to the **Issue** order.
 
