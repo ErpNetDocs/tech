@@ -16,7 +16,7 @@ Available orders are filtered by **enterprise company** and **location**.
 
 If you tap on one, you'll be taken to the **Issue** order.
 
-![Issue](pictures/inv_con_issue_modulenew.png)
+![Issue](pictures/issue_new.png)
 
 ## Overview
 
