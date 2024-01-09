@@ -4928,6 +4928,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/issue_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/issue_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/issue_newnew.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/issue_newnew.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/print.png",
       "output": {
         "resource": {
@@ -11749,7 +11771,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/transfer.html",
-          "hash": "O8WoAYMOECFoT0hVyxVxmg=="
+          "hash": "DnIoaW1N3L8udg4HaDctEQ=="
         }
       },
       "is_incremental": false,
