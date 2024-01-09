@@ -4026,6 +4026,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/command_list_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/command_list_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/command_list_neww.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/command_list_neww.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/commands_list.png",
       "output": {
         "resource": {
@@ -10643,7 +10665,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "ADMbt8IjINlTjYOdJ4hXIQ=="
+          "hash": "SUxpBqTUkaMkOHPihYOOpA=="
         }
       },
       "is_incremental": false,
@@ -10655,7 +10677,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/issue.html",
-          "hash": "jhKHLcDIHaFBEigeCxT7gg=="
+          "hash": "39DBkaHwoZl8ioWsC+/SEA=="
         }
       },
       "is_incremental": false,
@@ -11591,6 +11613,28 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/inventory-control_store.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/issue_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/issue_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/issue_newnew.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/issue_newnew.png"
         }
       },
       "is_incremental": false,
