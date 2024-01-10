@@ -8368,7 +8368,19 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/index.html",
-          "hash": "1y0Rn+BodBSJV5JRzchvjQ=="
+          "hash": "kQKUGCphl8tYgBHyoQL6Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/initial-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/settings-in-erp/initial-setup.html",
+          "hash": "3lwOwr5PloKQVXGvORJlyg=="
         }
       },
       "is_incremental": false,
