@@ -68,7 +68,7 @@ If you want to adjust the reach of the Express menu, click once on the **Pin** b
 
 It can also be used to completely **collapse** the menu.
 
-![Express](pictures/Menu_pin.png)
+![Express](pictures/Menu_pins.png)
 
 ### Get started with Express!
 
