@@ -70,7 +70,7 @@ It can also be used to completely **collapse** the menu.
 
 ![Express](pictures/Menu_pins.png)
 
-### Get started with Express!
+## Get started
 
 Click any of the available modules below to learn more.
 
