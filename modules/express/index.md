@@ -74,8 +74,8 @@ It can also be used to completely **collapse** the menu.
 
 Click any of the available modules below to learn more.
 
-*	**My**
+*	**[My](my/index.md)**
 
-*	**CRM**
+*	**[CRM](crm/index.md)**
 
-*	**General**
+*	**[General](general/index.md)**
