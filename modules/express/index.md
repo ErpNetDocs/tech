@@ -32,11 +32,11 @@ Click the button at the top-left corner of the page to expand the main menu.
 
 Express consists of three main modules which are further divided into sub-modules. 
 
-*	**My**
+*	**[My](my/index.md)**
 
-*	**CRM**
+*	**[CRM](crm/index.md)**
 
-*	**General**
+*	**[General](general/index.md)**
 
 ![Express](pictures/Menu_view.png)
 
