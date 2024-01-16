@@ -7,6 +7,6 @@ The **Customer Relationship Management** module helps you manage and track your 
 It is composed of the following sub-modules:
 
 * **[Common](common.md)**
-* **Marketing**
+* **[Marketing](marketing.md)**
 * **Presales**
 * **Sales**
