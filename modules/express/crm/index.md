@@ -8,5 +8,5 @@ It is composed of the following sub-modules:
 
 * **[Common](common.md)**
 * **[Marketing](marketing.md)**
-* **Presales**
+* **[Presales](presales.md)**
 * **Sales**
