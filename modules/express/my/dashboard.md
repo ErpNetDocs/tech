@@ -27,3 +27,11 @@ In the window that opens, you'll find two tabs:
   Change the order in which widgets appear on the Dashboard by **dragging** them up and down.
 
     ![Express](pictures/Dashboard_reorder.png)
+
+### Interact
+
+Different widgets allow you to perform a variety of actions on-demand.
+
+Take advantage of them to create tasks, schedule meetings, preview your tiles, and much more!
+
+![Express](pictures/interact_dashboard.png)
