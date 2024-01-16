@@ -9,4 +9,4 @@ It is composed of the following sub-modules:
 * **[Common](common.md)**
 * **[Marketing](marketing.md)**
 * **[Presales](presales.md)**
-* **Sales**
+* **[Sales](sales.md)**
