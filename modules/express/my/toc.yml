@@ -1,0 +1,13 @@
+- name: Dashboard
+  href: dashboard.md
+- name: Groups
+  href: groups.md
+- name: Calendar
+  href: calendar.md
+- name: To Do
+  href: todo.md
+- name: Tiles
+  href: tiles.md
+- name: Favorites
+  href: favorites.md
+  
