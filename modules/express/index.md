@@ -1,6 +1,6 @@
 # Express
 
-Express is a module which seamlessly unites team collaboration with business operations, allowing you to increase your productivity and achieve better workflow organization. 
+Express is a system which seamlessly unites team collaboration with business operations, allowing you to increase your productivity and achieve better workflow organization. 
 
 Its intuitive interface and flexible customization capabilities can be used on-demand, as soon as the need for a meeting to be scheduled or a task to be set arises. 
 
