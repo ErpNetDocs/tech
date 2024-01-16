@@ -3465,6 +3465,886 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/CRM.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/CRM.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Common_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Common_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Common_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Common_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Common_customize.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Common_customize.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Common_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Common_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Common_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Common_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_Customize_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_Customize_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_Reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_Reorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_Save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_Save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Marketing_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Marketing_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_Add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_Add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_Reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_Reorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_customize_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_customize_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Presales_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Presales_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Sales_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Sales_create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Sales_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Sales_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/crm/pictures/Sales_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/crm/pictures/Sales_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Contacts_Customize_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Contacts_Customize_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Contacts_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Contacts_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Contacts_Save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Contacts_Save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Contacts_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Contacts_create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Contacts_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Contacts_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/General.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/General.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Products_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Products_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Products_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Products_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Products_customize.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Products_customize.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Products_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Products_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/general/pictures/Products_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/general/pictures/Products_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Calendar_Create_save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Calendar_Create_save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Calendar_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Calendar_create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Calendar_create_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Calendar_create_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Calendar_time_period.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Calendar_time_period.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Calendar_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Calendar_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Contacts_Customize_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Contacts_Customize_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Contacts_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Contacts_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Contacts_Save.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Contacts_Save.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Contacts_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Contacts_create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Contacts_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Contacts_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Dashboard_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Dashboard_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Dashboard_customize.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Dashboard_customize.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Dashboard_reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Dashboard_reorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Dashboard_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Dashboard_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Favorites_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Favorites_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Favorites_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Favorites_edit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Favorites_remove.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Favorites_remove.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Favorites_remove_x.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Favorites_remove_x.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Favorites_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Favorites_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_calendar.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_calendar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_chat.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_chat.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_files.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_members.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_members.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_todo.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_todo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Groups_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Groups_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/My.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/My.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Mys.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Mys.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Tiles_customize_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Tiles_customize_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Tiles_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Tiles_edit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Tiles_menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Tiles_menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Tiles_reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Tiles_reorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/Tiles_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/Tiles_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/ToDo_Create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/ToDo_Create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/ToDo_Reminder_duedate.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/ToDo_Reminder_duedate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/ToDo_create_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/ToDo_create_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/ToDo_done.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/ToDo_done.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/ToDo_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/ToDo_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Express_menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Express_menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Express_notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Express_notifications.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Express_search_bar.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Express_search_bar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_applications.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_applications.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_applications_Items.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_applications_Items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_applications_Items_choose.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_applications_Items_choose.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_applications_Reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_applications_Reorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_pin.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_pin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_pins.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_pins.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/pictures/Menu_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/pictures/Menu_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/financials/excise/country-specific/bulgaria/image-20211209134740745-16390593696201.png",
       "output": {
         "resource": {
@@ -8511,7 +9391,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/social-interactions/notifications/index.html",
-          "hash": "7R9xigGDlSBB3eBITFTk3A=="
+          "hash": "tJfq9cYkfbFWQazNF1fJWQ=="
         }
       },
       "is_incremental": false,
@@ -9309,11 +10189,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/express/crm/common.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/crm/common.html",
+          "hash": "TBQ8lUR5qLeuvkesdEE02g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/express/crm/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/index.html",
-          "hash": "fOwsRnW2r+CoDXvfjnIhKA=="
+          "hash": "Mf8QzRg83tNhYnW4TR61gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/crm/marketing.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/crm/marketing.html",
+          "hash": "kbpwBgY9oN1eo2IKkTrVbg=="
         }
       },
       "is_incremental": false,
@@ -9563,11 +10467,47 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/express/crm/presales.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/crm/presales.html",
+          "hash": "+rARpt8jsDk29D1XdMAwxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/crm/sales.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/crm/sales.html",
+          "hash": "wH9klQTOeiEPWqaWFW0N5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/general/contacts.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/general/contacts.html",
+          "hash": "+UHPaDgPMIZnfCCQw3DW5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/express/general/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/express/general/index.html",
-          "hash": "sTQ8yI6OA0ELvtzF65IBUg=="
+          "hash": "D8HtCbqUN6A1+qy/pOvbig=="
         }
       },
       "is_incremental": false,
@@ -9696,11 +10636,71 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/express/general/products.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/general/products.html",
+          "hash": "jlY41pCIO2PLGnDZlG5Yaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/express/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/express/index.html",
-          "hash": "bEcltunVze9o/2Wkeg1A9g=="
+          "hash": "gxl1yYnKy+F0I75PC5DhuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/calendar.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/calendar.html",
+          "hash": "jMcSoxGjYqGa0Egoslg/Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/dashboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/dashboard.html",
+          "hash": "1LHoIm3oLm6ZH2PpSPBZ1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/favorites.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/favorites.html",
+          "hash": "f2yoQBTXIOBwechs01Rleg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/groups.html",
+          "hash": "5YU0OGeXb9WHooWhQW2XiQ=="
         }
       },
       "is_incremental": false,
@@ -9712,7 +10712,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/index.html",
-          "hash": "p+KdtZK1Y9if/OTa0XGQxQ=="
+          "hash": "EZWOixgCLerMpiTlY8dAeQ=="
         }
       },
       "is_incremental": false,
@@ -10017,6 +11017,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/express/my/pictures/TTiles_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/express/my/pictures/TTiles_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/express/my/pictures/Tiles_customize_view.png",
       "output": {
         "resource": {
@@ -10127,6 +11138,41 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/express/my/pictures/interact_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/express/my/pictures/interact_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/tiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/tiles.html",
+          "hash": "vPDH0rSNPellUF6i8hd6Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/express/my/todo.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/my/todo.html",
+          "hash": "GJppGhV40wPprqekrZvChQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/express/pictures/Express_menu.png",
       "output": {
         "resource": {
@@ -10230,6 +11276,18 @@
       "output": {
         "resource": {
           "relative_path": "modules/express/pictures/Menu_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/express/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/express/toc.html",
+          "hash": "+b24yCXF3ZjHHZG0m7NiSg=="
         }
       },
       "is_incremental": false,
