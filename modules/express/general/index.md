@@ -8,6 +8,6 @@ You can also manage your **products** and their **groups**.
 
 General consists of the following sub-modules:
 
-* **Contacts**
+* **[Contacts](contacts.md)**
   
 * **Products**
