@@ -4,7 +4,7 @@ This module features useful **statistics** on some of your business activities.
 
 It allows for additional **customization** to better fit your business needs. 
 
-![Express](pictures/Tiles_view.png)
+![Express](pictures/TTiles_view.png)
 
 ## Tile actions
 
