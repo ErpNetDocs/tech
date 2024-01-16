@@ -30,6 +30,8 @@ You can decide which definitions appear on the page.
 
 To do that, click the **button** at the top-right corner and select **Customize form**.
 
+![Express](pictures/Marketing_Customize_view.png)
+
 In the window that opens, you will see two tabs:
 
 * **Items**
