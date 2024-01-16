@@ -10,4 +10,4 @@ General consists of the following sub-modules:
 
 * **[Contacts](contacts.md)**
   
-* **Products**
+* **[Products](products.md)**
