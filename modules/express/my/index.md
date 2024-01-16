@@ -6,10 +6,10 @@ This is a personalized space which houses all the information and tools you need
 
 It includes several integral components of the Express system: 
 
-* **Dashboard**
-* **Groups**
-* **Calendar**
-* **To Do**
-* **Tiles**
-* **Favorites**
+* **[Dashboard](dashboard.md)**
+* **[Groups](groups.md)**
+* **[Calendar](calendar.md)**
+* **[To Do](todo.md)**
+* **[Tiles](tiles.md)**
+* **[Favorites](favorites.md)**
   
