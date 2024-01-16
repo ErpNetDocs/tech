@@ -4,7 +4,7 @@ The Dashboard allows you to build a space in accordance with your preferences by
 
 It's entirely **customizable**, giving you the freedom to prioritize what matters most to you, without any mandatory elements. 
 
-It includes easy access to panels from sub-modules such as **Chat**, **Tiles**, **To Do** and **Calendar**, as well as many other items you can choose to additionally add into it.
+It includes easy access to panels from sub-modules such as **To Do** and **Calendar**, as well as many other items you can choose to add into it.
 
 ![Express](pictures/Dashboard_view.png)
 
