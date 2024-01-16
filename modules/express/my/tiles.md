@@ -40,4 +40,4 @@ It opens a separate window with two tabs:
 
   Change the order in which tiles appear by **dragging** them up and down.
 
-  ![Express](pictures/Tiles_reoder.png)
+  ![Express](pictures/Tiles_reorder.png)
