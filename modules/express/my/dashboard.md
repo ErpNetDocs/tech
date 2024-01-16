@@ -4,7 +4,7 @@ The Dashboard allows you to build a space in accordance with your preferences by
 
 It's entirely **customizable**, giving you the freedom to prioritize what matters most to you, without any mandatory elements. 
 
-It includes easy access to panels from sub-modules such as **To Do** and **Calendar**, as well as many other items you can choose to add into it.
+It includes easy access to panels from sub-modules such as **[To Do](todo.md)** and **[Calendar](calendar.md)**, as well as many other items you can choose to add into it.
 
 ![Express](pictures/Dashboard_view.png)
 
@@ -32,6 +32,6 @@ In the window that opens, you'll find two tabs:
 
 Different widgets allow you to perform a variety of actions on-demand.
 
-Take advantage of them to create tasks, schedule meetings, preview your tiles, and much more!
+Take advantage of them to [create tasks](todo.md), [schedule meetings](calendar.md), preview your [tiles](tiles.md), and much more!
 
 ![Express](pictures/interact_dashboard.png)
