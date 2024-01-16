@@ -20,7 +20,7 @@ In the window that opens, you'll find two tabs:
 
   Click on the **sliders** to show or hide widget panels in your Dashboard.
 
-  ![Express](pictures/Dashboard_items.png)
+  ![Express](pictures/Dashboard_Items.png)
 
 * **Reorder**
 
