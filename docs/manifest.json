@@ -4125,6 +4125,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/TTiles_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/TTiles_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/express/my/pictures/Tiles_customize_view.png",
       "output": {
         "resource": {
@@ -4228,6 +4239,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/express/my/pictures/ToDo_view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/express/my/pictures/interact_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/express/my/pictures/interact_dashboard.png"
         }
       },
       "is_incremental": false,
@@ -9367,7 +9389,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/community/index.html",
-          "hash": "PpdEfRLIkQds558affdpTw=="
+          "hash": "yOWR6Swswppg/IhIrLg3nw=="
         }
       },
       "is_incremental": false,
