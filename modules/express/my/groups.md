@@ -22,7 +22,7 @@ This is a shared environment which includes **scheduled events** and **tasks** b
 
 You can create new events for yourself and others, and change the view of the group Calendar directly from here.
 
-![Express](pictures/Groups_view.png)
+![Express](pictures/Groups_calendar.png)
 
 ### To Do
 
