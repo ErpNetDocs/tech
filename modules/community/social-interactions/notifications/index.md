@@ -56,6 +56,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_DOC_UPDATE_ASSIGN | Document | **[R35940](https://docs.erp.net/model/business-rules/R35940.html) Document** - Notify Assigned To User For Update | Notify the assigned user when the document is edited.
 | NT_TODO_ASSIGNMENT | To Do | **[R35962](https://docs.erp.net/model/business-rules/R35962.html) Task** - Notify Assigned To User Upon Assignment | Notify the assigned user when the To Do has been assigned to them.
 | NT_TODO_UPDATE_ASSIGN | To Do | **[R35951](https://docs.erp.net/model/business-rules/R35951.html) Task** - Notify Assigned To User For Update | Notify the assigned user when the To Do is edited.
+| NT_LEAD_UPDATE_ASSIGN | Lead | **[R35958](https://docs.erp.net/model/business-rules/R35958.html) Lead** - Notify Assigned To Sales Person For Update | Notify the assigned sales person's user when the Lead is edited.
 
 ## I don't care about notifications
 
