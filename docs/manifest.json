@@ -9505,6 +9505,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/how-to/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/how-to/index.html",
+          "hash": "arM7tCvJ9E0NQYSdE3ue3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/index.md",
       "output": {
         ".html": {
