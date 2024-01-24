@@ -12,6 +12,12 @@ You can build and host a CC instance from your global website environment, and a
 
 Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
 
+Each Client Center panel works with accurate and simplified data to implement a pleasant and up-to-date platform experience. 
+
+Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
+
+### Panels
+
 **Home** offers a direct communication channel and access to other pages.
 
 Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
@@ -30,15 +36,8 @@ Using the chat panel, clients can reach out to a representative regarding any is
 
 ![picture](pictures/invoicess.png)
 
-Depending on your business' size and reach, you can create and manage **multiple** Client Centers. 
-
-This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
-
-### Pages
-
-Each Client Center page works with accurate and simplified data to implement a pleasant and up-to-date platform experience. 
-
-Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
+![NOTE]
+< Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
 
 ### Creating sales orders
 
