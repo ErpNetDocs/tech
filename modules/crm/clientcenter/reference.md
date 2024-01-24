@@ -1,6 +1,6 @@
 # Reference 
 
-This article contains reference points for specific procedures and concepts within the **Client Center**.
+This article contains reference points for specific procedures, concepts and error codes within the **Client Center**.
 
 ## Setup User settings: 
 
