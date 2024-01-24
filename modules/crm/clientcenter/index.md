@@ -26,21 +26,20 @@ Each page works with accurate and simplified data to implement a pleasant and up
 
 Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
 
+### Creating sales orders
+
+The Client Center gives users the ability to **[create new sales](how-to/create-new-order.md)** order just with the click of a button.
+
+This feature is **disabled** by default for security reasons. Access should be granted only when it's necessary.
+
+For more information on how to set up Client Center settings, please refer to **[this guide](how-to/apply-platform-settings.md)**.
+
 ### Actions
 
-Clients are able to perform a couple of actions from within the Client Center to enhance their user experience.
+Clients are able to perform a couple of **actions** from within the Client Center to enhance their user experience.
 
 - **Additional columns** can be added to provide more information for due payments, past orders and invoices.
 
 - In the **Orders** page, already issued sales orders from the Client Center can be **cancelled** before they're finalized.
 
 - In the **Invoices** page, generated invoices for completed orders can be **downloaded** and **previewed** outside of the platform.
-
-### Creating sales orders
-
-The Client Center also gives users the ability to create a new sales order just with the click of a button.
-
-This feature is **disabled** by default for security reasons. Access should be granted only when it's necessary.
-
-For more information on how to set up Client Center settings, please refer to [Platform settings](https://docs.erp.net/tech/modules/crm/clientcenter/platform-settings.html).
-
