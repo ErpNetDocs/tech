@@ -101,7 +101,7 @@ If you try to use a link leading to the direct creation of an order, you’ll se
 
 **You are not authorized to view this page.**
 
-For more information, see the **[reference](tech/modules/crm/clientcenter/reference.md)**.
+For more information, see the **[reference](/modules/crm/clientcenter/reference.md)**.
 
 ## Automatic tracking
 
