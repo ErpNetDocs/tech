@@ -12,9 +12,9 @@ You can build and host a CC instance from your global website environment, and a
 
 Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
 
-One of them offers a direct **communication channel**, while the rest act as **shortcuts** to pages containing personal and company documents.
+**Home** offers a direct **communication channel**, while the rest act as **shortcuts** to pages containing personal and company documents.
 
-Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
+Using the chat within **Home**, clients can reach out to a representative regarding any issue or question they're having.
 
 Depending on your business' size and reach, you can create and manage **multiple** Client Centers. 
 
