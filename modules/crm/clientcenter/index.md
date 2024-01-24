@@ -12,7 +12,7 @@ You can build and host a CC instance from your global website environment, and a
 
 Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
 
-**Home** offers a direct communication channel, while **Due Payments**, **Orders** and **Invoices** act as shortcuts to pages containing personal and company documents.
+**Home** offers a direct communication channel and access to other pages, while **Due Payments**, **Orders** and **Invoices** contain personal and company documents.
 
 Using the chat within **Home**, clients can reach out to a representative regarding any issue or question they're having.
 
