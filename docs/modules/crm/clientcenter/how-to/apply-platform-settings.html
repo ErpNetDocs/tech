@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to apply platform settings | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to apply platform settings | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-apply-platform-settings">How to apply platform settings</h1>
+
+<p>Like all ERP websites, the Client Center can have its settings changed on an individual level.</p>
+<p>This includes specific visual and functional modifications.</p>
+<h3 id="configuration-capabilities">Configuration capabilities</h3>
+<p>Below is a list of settings you can apply to the Client Center:</p>
+<ul>
+<li><p>The ability to reveal or hide the <strong>New Order</strong> button, allowing or restricting users to create new orders.</p>
+<p>By default, this button is <strong>hidden</strong> so as to prevent potential information leaks.</p>
+<p>You need to enable the functionality <strong>manually</strong> only when that’s necessary.</p>
+</li>
+<li><p>The ability to define the sales order document type for new orders in the Client Center.</p>
+<p>You must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
+<p>This could be quite helpful for separating orders made in the Client Center from those made in other modules.</p>
+</li>
+<li><p>The ability to easily generate <strong>comprehensive business analytics</strong> for orders made in the CC.</p>
+</li>
+</ul>
+<h2 id="json-format-definition">JSON format definition</h2>
+<p>Client Center settings must be configured in a <strong>key-value pair JSON format</strong>.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>You need to navigate to your website's main environment, access the Client Center's details, and enter the website's settings.</p>
+<p>Editing mode must be active for all website-related fields.</p>
+<p>If the <strong>Settings</strong> field is not in view, use the <strong>Show/hide field</strong> button to toggle its visibility.</p>
+<h3 id="step-by-step-process">Step-by-step process</h3>
+<ol>
+<li>Inside the <strong>Settings</strong> field, input the following:</li>
+</ol>
+<p>{<br>
+&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,<br>
+&quot;IsNewOrderEnabled&quot;: true/false, <br>&quot;IsOrdersEnabled&quot;: true/false<br></p>
+<p>}</p>
+<p>where</p>
+<ul>
+<li><p><em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order.</p>
+</li>
+<li><p><em>IsNewOrderEnabled</em> defines if the button for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+</li>
+<li><p><em>IsOrdersEnabled</em> determines whether the &quot;Orders&quot; section will be present in the Client center. (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</p>
+</li>
+</ul>
+<p><img src="pictures/settings_code.png" alt="picture"></p>
+<ol start="2">
+<li><strong>Apply</strong> the new settings.</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Depending on how you define the settings, you can encounter the following scenarios:</p>
+<ol>
+<li>Both fields are set:</li>
+</ol>
+<pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c&quot;,
+   	&quot;IsNewOrderEnabled&quot;: true
+</code></pre>
+<p>This results in the menu button allowing for the creation of a new order to be shown, and the document type to be set as a sales order.</p>
+<p>If the ID doesn’t match any document of type Sales order, you’ll get an error:</p>
+<p><strong>008 - Not well formatted json string</strong></p>
+<p>You need to erase all inputted values, save your progress, refresh the website, and insert the correct values.</p>
+<ol start="2">
+<li>Only one of the fields is set:</li>
+</ol>
+<pre><code>   	  &quot;IsNewOrderEnabled&quot;: true
+</code></pre>
+<p>Here, the system will generate another error:</p>
+<p><strong>009 – NewOrderDocumentType is set, but DocumentType is null</strong></p>
+<ol start="3">
+<li>No fields are set:</li>
+</ol>
+<p>In this scenario, both fields assume two values by default:</p>
+<pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;CRM_SALES_ORDER.Id&quot;,
+        &quot;IsNewOrderEnabled&quot;: false
+</code></pre>
+<p>The button used for creating a new order will not be shown.</p>
+<p>If you try to use a link leading to the direct creation of an order, you’ll see the following message:</p>
+<p><strong>You are not authorized to view this page.</strong></p>
+<p>For more information, see the <strong><a href="/modules/crm/clientcenter/reference.md">reference</a></strong>.</p>
+<h2 id="automatic-tracking">Automatic tracking</h2>
+<p>Whenever you apply or change settings for the Client Center, they’re <strong>tracked</strong> by the system in real-time and are reflected immediately.</p>
+<h2 id="user-level-security">User-level security</h2>
+<p>By default, the Client Center uses a system user known as <strong>System-Application-User</strong>.</p>
+<p>This user has rights to apply or change settings only in accordance with the normal functioning of the website.</p>
+<p>For better security, another more restricted user can be used.</p>
+<p>By default, the <strong>System-Application-User</strong> has System rights, but reflects used licenses as well.</p>
+<p>It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.</p>
+<h2 id="error-visualization">Error visualization</h2>
+<p>When you encounter a problem in the platform, a relevant, easy-to-read and interactive <strong><a href="/modules/crm/clientcenter/reference.md#error-exception-codes">error message</a></strong> will be shown explaining its nature.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/how-to/apply-platform-settings.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

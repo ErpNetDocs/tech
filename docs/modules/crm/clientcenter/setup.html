@@ -79,69 +79,60 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="setup-client-center">Setup Client Center</h1>
 
-<h2 id="define-website-of-type-clientcenter-as-follows">Define website of type ClientCenter as follows:</h2>
-<ul>
-<li>Enterprise Company</li>
-<li>Relative URL</li>
-<li>Is Active - check marked</li>
-<li>Trusted application – you can create it directly from the website definition form by using the function Create/Update Trusted Application</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>For each Enterprise Company, a different site with a different Relative URL or Host should be defined.</p>
-</div>
-<h2 id="define-trusted-application-as-follows">Define Trusted Application as follows:</h2>
-<ul>
-<li>Is Enabled - check marked</li>
-<li>System User Allowed - check marked</li>
-<li>Impersonate As Community User Allowed - check marked</li>
-<li>Impersonate As Internal User Allowed - check marked</li>
-<li>System user - SYSTEM-APPLICATION-USER</li>
-<li>Client type - Confidential</li>
-<li>Scope - Update</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Through the Instance Manager you can see and restart all sites.</p>
-</div>
-<h2 id="setup-user-settings">Setup User settings:</h2>
+<p>There are a couple of actions you can take to set up your <strong>Client Center</strong> effectively.</p>
+<h3 id="define-website-of-type-clientcenter">Define website of type ClientCenter</h3>
+<p>The following fields need to be considered when defining the website:</p>
 <ol>
-<li>New User registers himself from the Client Center register form – that creates a new User definition as External Community User.</li>
-<li>Define Person for this User.</li>
-<li>Define Parent Party for this Person.</li>
-<li>Define Customer for this Parent Party as follows:
+<li><p><strong>Enterprise Company</strong></p>
+</li>
+<li><p><strong>Relative URL</strong></p>
+</li>
+<li><p><strong>Is Active</strong> - must be checked</p>
+</li>
+<li><p><strong>Trusted application</strong> – you can create it from the website definition by using the <strong>Create/Update Trusted Application</strong> function</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You should define a distinct site with a unique <strong>Relative URL</strong> or <strong>Host</strong> for each <strong>Enterprise Company</strong>.</p>
+</div>
+<h3 id="define-trusted-application">Define Trusted Application</h3>
+<p>The following fields need to be considered when defining a trusted application:</p>
+<ol>
+<li><p><strong>Is Enabled</strong> - must be checked</p>
+</li>
+<li><p><strong>System User Allowed</strong> - must be checked</p>
+</li>
+<li><p><strong>Impersonate As Community User Allowed</strong> - must be checked</p>
+</li>
+<li><p><strong>Impersonate As Internal User Allowed</strong> - must be checked</p>
+</li>
+<li><p><strong>System user</strong> - this is the SYSTEM-APPLICATION-USER</p>
+</li>
+<li><p><strong>Client type</strong> - must be set as &quot;Confidential&quot;</p>
+</li>
+<li><p><strong>Scope</strong> - must be set as &quot;Update&quot;</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can observe and restart all sites through the <strong>Instance Manager</strong>.</p>
+</div>
+<h3 id="setup-user-settings">Setup User settings</h3>
+<p>The process of configuring user settings typically goes like this:</p>
+<ol>
+<li><p>A new user is registered in the Client Center; that creates a <strong>new</strong> user definition called &quot;External Community User&quot;.</p>
+</li>
+<li><p>You need to define a <strong>Person</strong> and <strong>Parent Party</strong> for this user.</p>
+</li>
+<li><p>Then, you need to specify a <strong>Customer</strong> for the Parent Party, taking in mind the following:</p>
 <ul>
-<li>Enterprise Company - the same EC as the client center Web site EC</li>
-<li>Serviced by Enterprise Company Location</li>
+<li><strong>Enterprise Company</strong> - must the same as the Client Center's</li>
+<li><strong>Enterprise Company Location</strong> - location of the company</li>
 </ul>
 </li>
 </ol>
-<p>If any of these User settings are missing in the Client Center will be displayed <a href="error-codes.html">Error Exception</a> from CC002 to CC007 depending on the missing setting.</p>
-<h2 id="allow-new-order-settings">Allow New order settings:</h2>
-<p>By Default New order in the Client center is Disabled. To allow the New order you have to set JSON settings in the Web site definition:
-Enter Value to the field Settings as follows and Restart the Site from the Instance manager:</p>
-<pre><code>{&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,&quot;IsNewOrderEnabled&quot;: true}
-</code></pre>
-<div class="NOTE">
-<h5>Note</h5>
-<p>DocumentType.EntityName == SalesOrders</p>
-</div>
-<p>For example:</p>
-<pre><code>{&quot;NewOrderDocumentType&quot;: &quot;85493adb-ac4e-4b3c-89bc-590c4b22404c&quot;,&quot;IsNewOrderEnabled&quot;: true}
-</code></pre>
-<p>If just one of the JSON settings is set or the Id doesn't match any sales order document type then an <a href="error-codes.html">Error Exception</a> CC008 or CC009 will be displayed in the Client Center.</p>
-<h2 id="is-orders-enabled-settings">Is Orders Enabled settings:</h2>
-<p>By default &quot;Orders&quot; section the Client center is Visible. To hide the &quot;Orders&quot; section you have to set JSON settings in the Web site definition:
-Enter Value to the field Settings as follows and Restart the Site from the Instance manager:</p>
-<pre><code>{&quot;IsOrdersEnabled&quot;: true} 
-</code></pre>
-<p>If &quot;IsOrdersEnabled&quot; is not present in the settings, then the &quot;Orders&quot; section is visible.</p>
-<h2 id="hide-lines-settings">Hide Lines settings:</h2>
-<p>In the Client Center, &quot;Lines&quot; are visible by default in both &quot;Invoices&quot; and &quot;Orders&quot;. To hide the &quot;Lines&quot;, you need to configure JSON settings in the Website Definition:
-Enter the value in the &quot;Settings&quot; field as specified below, and restart the site using the Instance Manager:</p>
-<pre><code>{&quot;HideLines&quot;: true}
-</code></pre>
-<p>If &quot;HideLines&quot; is not present in the settings, the &quot;Lines&quot; will remain visible in both &quot;Invoices&quot; and &quot;Orders&quot;.</p>
+<p>If any of these settings are missing, an <strong><a href="reference.html#error-exception-codes">error exception code</a></strong> from CC002 to CC007 will be displayed depending on what's missing.</p>
 </article>
           </div>
           
