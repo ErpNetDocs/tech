@@ -1,4 +1,4 @@
-# Platform settings
+# Apply platform settings
 
 Like all ERP websites, the Client Center can have its settings changed on an individual level. 
 
