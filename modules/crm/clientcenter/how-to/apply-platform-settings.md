@@ -28,27 +28,9 @@ This could be quite helpful for separating orders made in the Client Center from
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
 
-1.	From your main website environment, expand the Client Center's details with the **circular** **info button**.
+Navigate to your website's main environment and access the Client Center's details using the circular info button. By clicking the **Open** button on the side tab you enter the website's settings. Enable editing for all website-related fields by clicking the **Edit** button in the top-left corner. If the **Settings** field is not in view, use the **Show/hide field** button to toggle its visibility.
 
-This will reveal a side tab on the right with information just for the particular website (Client Center).
-
-From there, click the **Open** button.
-
-![picture](pictures/open_button.png)
-
-2.	You'll be taken to a separate window displaying the website's settings.
-
-Click the **Edit** button at the top-left corner.
-
-![picture](pictures/eedit_button.png)
-
-This will make all fields related to the website (such as Type, Enterprise Company and Web Host) **editable**.
-
-Make sure the **Settings** field is visible. 
-
-If you don’t see it, toggle the respective slider from the **Show/hide fields** button.
-
-3.	Inside the **Settings** field, you need to input the following:
+1.	Inside the **Settings** field, you need to input the following:
 
 {<br>
     		"NewOrderDocumentType": "DocumentType.Id",<br>
@@ -65,7 +47,7 @@ where
 
 ![picture](pictures/settings_code.png)
 
-4.	**Apply** the new settings.
+2.	**Apply** the new settings.
 
 ## Troubleshooting
 
