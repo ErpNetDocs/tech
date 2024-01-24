@@ -56,7 +56,7 @@ Enter the value in the "Settings" field as specified below, and restart the site
 
 If "HideLines" is not present in the settings, the "Lines" will remain visible in both "Invoices" and "Orders".
 
-# User error codes for Client Center
+## User error codes for Client Center
 * CC002 - The logged user is not defined as a Person. Please define Person object for this user to use the Client Center.
 * CC003 - Parent party of the logged user is empty. Please set parent party to the company on behalf of which the user is entering Client Center.
 * CC004 - The parent party is not defined as a customer. It should be customer in order to use Client Center.
