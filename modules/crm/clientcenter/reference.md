@@ -2,21 +2,6 @@
 
 This article contains reference points for specific procedures, concepts and error codes within the **Client Center**.
 
-## Setup User settings: 
-
-The process of configuring user settings typically goes like this:
-
-1. A new user is registered in the Client Center; that creates a **new** user definition called "External Community User".
-   
-2. You need to define a **Person** and **Parent Party** for this user.
-          
-3. Then, you need to specify a **Customer** for the Parent Party, taking in mind the following:
-
-   * **Enterprise Company** - must the same as the Client Center's 
-   * **Enterprise Company Location** - location of the company
-
-If any of these settings are missing, an **error exception code** from CC002 to CC007 will be displayed depending on what's missing.
-
 ## Allow New order settings
 
 By Default, the ability to preview and **[create new orders](how-to/create-new-order.md)** in the Client center is **disabled**. 
