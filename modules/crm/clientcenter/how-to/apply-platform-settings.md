@@ -10,17 +10,15 @@ Below is a list of settings you can apply to the Client Center:
 
 - The ability to reveal or hide the **New Order** button, allowing or restricting users to create new orders.
 
-By default, this button is **hidden** so as to prevent potential information leaks.
+    By default, this button is **hidden** so as to prevent potential information leaks.
 
-You need to enable the functionality **manually** only when that’s necessary.
-
-![picture](pictures/CL.png)
+    You need to enable the functionality **manually** only when that’s necessary.
 
 - The ability to define the sales order document type for new orders in the Client Center. 
 
-You must input a **valid** **SalesOrder.DocumentType ID**. 
+    You must input a **valid** **SalesOrder.DocumentType ID**. 
 
-This could be quite helpful for separating orders made in the Client Center from those made in other modules.
+    This could be quite helpful for separating orders made in the Client Center from those made in other modules.
 
 - The ability to easily generate **comprehensive business analytics** for orders made in the CC.
 
