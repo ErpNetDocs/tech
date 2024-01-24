@@ -93,16 +93,24 @@ If you try to use a link leading to the direct creation of an order, you’ll se
 
 **You are not authorized to view this page.**
 
+For more information, see the **[reference](./reference.md)**.
+
 ## Automatic tracking
 
-Whenever you apply or change settings for a website such as the Client Center, they’re **tracked** by the system in real-time and will be reflected immediately.
+Whenever you apply or change settings for the Client Center, they’re **tracked** by the system in real-time and are reflected immediately.
 
 ## User-level security
 
-By default the Client Center will use a system user, known as **System-Application-User**. This user should rights to apply or change settings only in accordance with the normal functioning of the current website. For better security, another more, restricted user can be used. 
+By default, the Client Center uses a system user known as **System-Application-User**. 
 
-By default, the System-Application-User has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
+This user has rights to apply or change settings only in accordance with the normal functioning of the website. 
+
+For better security, another more restricted user can be used. 
+
+By default, the **System-Application-User** has System rights, but reflects used licenses as well. 
+
+It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
 
 ## Error visualization
 
-When you encounter a problem in the platform, a relevant, easy-to-read and interactive **error message** will be shown explaining its nature. 
+When you encounter a problem in the platform, a relevant, easy-to-read and interactive **[error message](./reference.md)** will be shown explaining its nature. 
