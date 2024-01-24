@@ -1,23 +1,27 @@
-# How to create new Orders 
+# How to create a new order
 
-In order to create an order within the **Client Center**, it's mandatory to have the **Product code**. 
+In order to create an order in the **Client Center**, you need to have this feature enabled manually.
 
-To complete the process you need to enter the Product code manually.
+See **[this guide](apply-platform-settings.md)** if you haven't already done that.
 
-## Creating an order 
+When you have access to the new order feature, you need to obtain all the necessary **product codes** to complete your order.
 
-To create a new order click on the **New Order** button of the **Client Center's** menu. 
+## Step-by-step process
+
+1. Click on the **New Order** button in the **Client Center** menu. 
 
 ![picture](pictures/Client_Center_new_oreder_view_24_01.png)
 
-Enter the relevant product code into the **Product code** field.
+2. Enter the respective product code(s) into the **Product code** field.
+
+   Apply a **quantity** value if your order contains multiple instances of the same product.
 
 ![picture](pictures/New_order_Product_code_24_01.png)
 
-Show the order details by clicking on the **Customer** button, which will display the product in the list below.
+3. Click the **plus** button to add your product(s) in the order.
 
 ![picture](pictures/New_Order_Add_new_23_01.png)
 
-Once yo've done that, proceed to finalize the order by clicking the **Order** button.
+4. Proceed to finalize the order by clicking the **Order** button.
 
 ![picture](pictures/New_Order_Oreder_23_01.png)
