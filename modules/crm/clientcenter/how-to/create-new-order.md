@@ -18,6 +18,6 @@ Show the order details by clicking on the **Customer** button, which will displa
 
 ![picture](pictures/New_Order_Add_new_23_01.png)
 
-Once yo've done that, proceed to finalize the order by clicking the Order button.
+Once yo've done that, proceed to finalize the order by clicking the **Order** button.
 
 ![picture](pictures/New_Order_Oreder_23_01.png)
