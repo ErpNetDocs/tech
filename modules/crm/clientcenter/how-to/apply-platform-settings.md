@@ -121,4 +121,4 @@ It’s automatically assigned whenever a new website is created and whenever a t
 
 ## Error visualization
 
-When you encounter a problem in the platform, a relevant, easy-to-read and interactive **[error message](/modules/crm/clientcenter/reference.md)** will be shown explaining its nature. 
+When you encounter a problem in the platform, a relevant, easy-to-read and interactive **[error message](/modules/crm/clientcenter/reference.md#error-exception-codes)** will be shown explaining its nature. 
