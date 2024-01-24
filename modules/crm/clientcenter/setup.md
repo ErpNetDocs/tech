@@ -51,5 +51,5 @@ The process of configuring user settings typically goes like this:
    * **Enterprise Company** - must the same as the Client Center's 
    * **Enterprise Company Location** - location of the company
 
-If any of these settings are missing, an **error exception code** from CC002 to CC007 will be displayed depending on what's missing.
+If any of these settings are missing, an **[error exception code](reference.md#error-exception-codes)** from CC002 to CC007 will be displayed depending on what's missing.
 
