@@ -36,8 +36,9 @@ Using the chat panel, clients can reach out to a representative regarding any is
 
 ![picture](pictures/invoicess.png)
 
-![NOTE]
-< Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
+> [!NOTE]
+>
+> Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
 
 ### Creating sales orders
 
