@@ -22,19 +22,19 @@ Whether they use the shortcuts or the expandable menu on the left side of the sc
 
 Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
 
-![picture](pictures/homechat.png)
+![picture](pictures/hhomechat.png)
 
 **Due Payments** contains a list of your due payments, available to be sorted.
 
-![picture](pictures/duepaymentss.png)
+![picture](pictures/dduepaymentss.png)
 
 **Orders** contains a list of your current orders, with the ability to preview and sort them.
 
-![picture](pictures/orderss.png)
+![picture](pictures/oorderss.png)
 
 **Invoices** keeps all of your invoices for completed orders.
 
-![picture](pictures/invoicess.png)
+![picture](pictures/iinvoicess.png)
 
 > [!NOTE]
 >
