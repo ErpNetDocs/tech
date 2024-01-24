@@ -17,7 +17,7 @@ The following fields need to be considered when defining the website:
 > [!NOTE]
 > You should define a distinct site with a unique **Relative URL** or **Host** for each **Enterprise Company**.
 
-### Define Trusted Application as follows: 
+### Define Trusted Application
 
 The following fields need to be considered when defining a trusted application:
 
@@ -38,7 +38,7 @@ The following fields need to be considered when defining a trusted application:
 > [!NOTE]
 > You can observe and restart all sites through the **Instance Manager**.
 
-### Setup User settings: 
+### Setup User settings
 
 The process of configuring user settings typically goes like this:
 
