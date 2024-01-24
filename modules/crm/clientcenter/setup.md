@@ -38,3 +38,18 @@ The following fields need to be considered when defining a trusted application:
 > [!NOTE]
 > You can observe and restart all sites through the **Instance Manager**.
 
+### Setup User settings: 
+
+The process of configuring user settings typically goes like this:
+
+1. A new user is registered in the Client Center; that creates a **new** user definition called "External Community User".
+   
+2. You need to define a **Person** and **Parent Party** for this user.
+          
+3. Then, you need to specify a **Customer** for the Parent Party, taking in mind the following:
+
+   * **Enterprise Company** - must the same as the Client Center's 
+   * **Enterprise Company Location** - location of the company
+
+If any of these settings are missing, an **error exception code** from CC002 to CC007 will be displayed depending on what's missing.
+
