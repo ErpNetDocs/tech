@@ -12,9 +12,23 @@ You can build and host a CC instance from your global website environment, and a
 
 Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
 
-**Home** offers a direct communication channel and access to other pages, while **Due Payments**, **Orders** and **Invoices** contain personal and company documents.
+**Home** offers a direct communication channel and access to other pages.
 
-Using the chat within **Home**, clients can reach out to a representative regarding any issue or question they're having.
+Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.
+
+![picture](pictures/homechat.png)
+
+**Due Payments** contains a list of your due payments, available to be sorted.
+
+![picture](pictures/duepaymentss.png)
+
+**Orders** contains a list of your current orders, with the ability to preview and sort them.
+
+![picture](pictures/orderss.png)
+
+**Invoices** keeps all of your invoices for completed orders.
+
+![picture](pictures/invoicess.png)
 
 Depending on your business' size and reach, you can create and manage **multiple** Client Centers. 
 
