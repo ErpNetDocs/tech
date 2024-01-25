@@ -40,7 +40,19 @@ Subsequently, when you select a product, it will be scanned the specified number
 
 ![Inventory Control](pictures/Number_scaned_25_01.png)
 
+### Continue the last Operation
 
+In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. Click the **Continue** button to proceed with it.
+
+![Inventory Control](pictures/Last_operation_continue_25_01.png)
+
+If you choose to initiate a new operation before completing the ongoing one, a warning message will appear, prompting you to confirm the termination of the current operation.
+
+![Inventory Control](pictures/Warning_message_25_01.png)
+
+If there are no ongoing operations, the window will indicate that there are no current ones.
+
+![Inventory Control](pictures/No_current_operations_25_01.png)
 
 
 Learn more about Inventory Control in the following articles:
