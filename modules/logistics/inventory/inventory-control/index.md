@@ -6,7 +6,7 @@ It follows a similar logic to the **BarCodeCommand** panel from within the **Des
 
 You can **receive**, **issue**, **reconcile**, **transfer** and **scrap** orders in just a few steps. These actions are **not** synchronized in real-time with the ERP.net system - you need to create the respective receipt transaction, issue transaction, transfer order, and reconciliation documents in order to reflect them. 
 
-![Inventory Control](pictures/inv_con_official.png)
+![Inventory Control](pictures/Index_view_25_01.png)
 
 ### Prerequisites
 
@@ -14,7 +14,34 @@ Before you start using Inventory Control, you'll be prompted to select the **sto
 
 That store will be saved for follow-up operations but can easily be switched to a different one with the help of the **Change** button.
 
-![Inventory Control](pictures/inventory-control_store.png)
+![Inventory Control](pictures/Index_Store_Change_25_01.png)
+
+## Common features
+
+Here, you can observe the most commonly used features in the **Inventory Control** panel.
+
+### Selecting a product from the Info tab
+
+In **Inventory Control**, to choose a product, click on its code in the Info tab. Upon doing so, the code will automatically appear in the **SCAN** field.
+
+![Inventory Control](pictures/Select_product_25_01.png)
+
+### Scan a product multiple times
+
+To scan a product multiple times, enter the desired number of repetitions in the **SCAN** field and click the button with arrow to execute the command. 
+
+![Inventory Control](pictures/Number_scan_25_01.png)
+
+The chosen number will be displayed below.
+
+![Inventory Control](pictures/Number_scan_selected_25_01.png)
+
+Subsequently, when you select a product, it will be scanned the specified number of times.
+
+![Inventory Control](pictures/Number_scaned_25_01.png)
+
+
+
 
 Learn more about Inventory Control in the following articles:
 
