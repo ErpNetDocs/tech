@@ -24,7 +24,7 @@ Here, you can observe the most commonly used features in the **Inventory Control
 
 In **Inventory Control**, to choose a product, click on its code in the Info tab. Upon doing so, the code will automatically appear in the **SCAN** field.
 
-![Inventory Control](pictures/Select_product_25_01.png)
+![Inventory Control](pictures/Selected_product_25_01.png)
 
 ### Scan a product multiple times
 
