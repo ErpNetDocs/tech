@@ -3135,6 +3135,94 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/CL.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/CL.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Client_Center_new_oreder_view_24_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Client_Center_new_oreder_view_24_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_Order_Add_new_23_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_Order_Add_new_23_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_Order_Oreder_23_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_Order_Oreder_23_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_order_Product_code_24_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/New_order_Product_code_24_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/eedit_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/eedit_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/open_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/open_button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/settings_code.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/settings_code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/CL.png",
       "output": {
         "resource": {
@@ -3201,6 +3289,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/dduepaymentss.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/dduepaymentss.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/delete_order.png",
       "output": {
         "resource": {
@@ -3216,6 +3315,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/pictures/download_preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/duepaymentss.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/duepaymentss.png"
         }
       },
       "is_incremental": false,
@@ -3245,6 +3355,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/hhomechat.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/hhomechat.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/homechat.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/homechat.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/iinvoicess.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/iinvoicess.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/info_button.png",
       "output": {
         "resource": {
@@ -3260,6 +3403,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/pictures/intro.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/invoicess.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/invoicess.png"
         }
       },
       "is_incremental": false,
@@ -3289,6 +3443,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/oorderss.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/oorderss.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/open_button.png",
       "output": {
         "resource": {
@@ -3304,6 +3469,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/pictures/order_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/orderss.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/orderss.png"
         }
       },
       "is_incremental": false,
@@ -12919,7 +13095,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "SUxpBqTUkaMkOHPihYOOpA=="
+          "hash": "dMvJm2LXyr93eJ7PftUFmQ=="
         }
       },
       "is_incremental": false,
@@ -12932,6 +13108,116 @@
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/issue.html",
           "hash": "39DBkaHwoZl8ioWsC+/SEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Index_Store_Change_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Index_Store_Change_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Index_view_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Index_view_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Last_operation_continue_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Last_operation_continue_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/No_current_operations_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/No_current_operations_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scan_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scan_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scan_selected_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scan_selected_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scaned_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Number_scaned_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Select_product_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Select_product_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Selected_product_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Selected_product_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Warning_message_25_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/Warning_message_25_01.png"
         }
       },
       "is_incremental": false,
