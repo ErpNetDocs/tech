@@ -54,9 +54,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 > [!NOTE]
 > 1. The **trash bin button** allows you to remove the latest operation, which will restore the previous operation value.
-
 > 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-
 > 3. You can remove inserted multipliers by tapping the **Clear button (X)**.
 
 ### Zero count
