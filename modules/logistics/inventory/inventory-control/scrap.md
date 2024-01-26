@@ -47,7 +47,7 @@ If more lots are present, the **available-scrap** ratio will be distributed base
 ![Scrap](pictures/inv_con_scrap_info.png)
 
 > [!NOTE]
-> 1. The executed pcs of a product **cannot** be more than what is ordered.
+> The executed pcs of a product **cannot** be more than what is ordered.
 
 ![Scrap](pictures/Scanned_quantity_error_26_01.png)
 
