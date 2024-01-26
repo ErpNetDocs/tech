@@ -48,6 +48,16 @@ If more lots are present, the **available-counted** ratio will be distributed ba
 
 ![Reconcile](pictures/info_reconcile.png)
 
+## Scanning
+
+In order to update the currently available quantities of your products, you need to use the **Scan** field.
+
+It lets you quickly insert the instances of a product you want to count either manually or through **barcode commands**.
+
+For a list of available barcode templates, check out the **[Command list](command-list.md)**.
+
+If you're unfamiliar with the process of scanning a product and require assistance, refer to our **[overview](index.md)**.
+
 ### Higher count
 
 The currently available pcs of a product may be **more** than what is set as available in the system.
