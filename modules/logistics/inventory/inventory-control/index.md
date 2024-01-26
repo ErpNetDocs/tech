@@ -82,6 +82,12 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 3. You can remove inserted multipliers by tapping the **Clear button (X)**.
 
+### Zero count
+
+If you enter a zero quantity in the Scan field, all of the entered quantities before will be set to zero.
+
+![Issue](pictures/inv_con_issue_zeronew.png)
+
 
 Learn more about Inventory Control in the following articles:
 
