@@ -73,8 +73,6 @@ If you're unfamiliar with the process of scanning a product and require assistan
 
 ### Zero count
 
-You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
-
 If the **Executed** bar is left with zero, this will be interpreted as the product having received "0 pcs". In the final receipt store transaction, there will be no lines for the product.
 
 ![Receive](pictures/inv_con_receive_zero.png)
