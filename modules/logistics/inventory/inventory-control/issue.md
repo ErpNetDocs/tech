@@ -51,7 +51,7 @@ If more lots are present, the **ordered-executed** ratio will be distributed bas
 ![Issue](pictures/inv_con_issue_infonew.png)
 
 > [!NOTE]
-> 1. The executed pcs of a product **cannot** be more than what is ordered.
+> The executed pcs of a product **cannot** be more than what is ordered.
 
 ![Issue](pictures/inv_con_issue_errornew.png)
 
