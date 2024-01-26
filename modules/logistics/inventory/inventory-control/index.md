@@ -22,13 +22,13 @@ Here, you can observe the most commonly used features in the **Inventory Control
 
 ### Selecting a product from the Info tab
 
-In **Inventory Control**, to choose a product, click on its code in the Info tab. Upon doing so, the code will automatically appear in the **SCAN** field.
+In **Inventory Control**, to choose a product, tap on its code in the Info tab. Upon doing so, the code will automatically appear in the **SCAN** field.
 
 ![Inventory Control](pictures/Selected_product_25_01.png)
 
 ### Scan a product multiple times
 
-To scan a product multiple times, enter the desired number of repetitions in the **SCAN** field and click the button with arrow to execute the command. 
+To scan a product multiple times, enter the desired number of repetitions in the **SCAN** field and tap the button with arrow to execute the command. 
 
 ![Inventory Control](pictures/Number_scan_25_01.png)
 
@@ -42,7 +42,7 @@ Subsequently, when you select a product, it will be scanned the specified number
 
 ### Continue the last Operation
 
-In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. Click the **Continue** button to proceed with it.
+In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. tap the **Continue** button to proceed with it.
 
 ![Inventory Control](pictures/Last_operation_continue_25_01.png)
 
