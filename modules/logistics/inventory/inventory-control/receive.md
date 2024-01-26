@@ -57,7 +57,7 @@ The lot with quantities whose date is closest to its expiration point will be pr
 ![Receive](pictures/inv_con_receive_infonew.png)
 
 > [!NOTE]
-> 1. The executed pcs of a product **cannot** be more than what is ordered.
+> The executed pcs of a product **cannot** be more than what is ordered.
 
 ![Receive](pictures/inv_con_receive_error.png)
 
