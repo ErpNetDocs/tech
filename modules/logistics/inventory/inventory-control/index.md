@@ -32,7 +32,7 @@ For a list of available barcode templates, check out the **[Command list](comman
 
 Simply type in a product's code once (e.g. "0000001") in order to add only one pcs of it. Tap the **blue arrow** to confirm.
 
-![Transfer](pictures/inv_con_transfer_single.png)
+![Transfer](pictures/Index_blue_arrow_26_01.png)
 
 Every time you scan, you'll be taken to the **Info** tab for the respective product. 
 
