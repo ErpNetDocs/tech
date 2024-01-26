@@ -34,7 +34,9 @@ Simply type in a product's code once (e.g. "0000001") in order to add only one p
 
 ![Transfer](pictures/inv_con_transfer_single.png)
 
-Every time you scan, you'll be taken to the **Info** tab for the respective product. Successfully scaned pcs are painted in **green**.
+Every time you scan, you'll be taken to the **Info** tab for the respective product. 
+
+Successfully scaned pcs are painted in **green**.
 
 If more lots are present for a product, the FEFO principle determines which lot has pcs add first.
 
@@ -65,17 +67,21 @@ If you enter a zero quantity in the Scan field, all of the entered quantities be
 
 ### Select a product from the Info tab
 
-You also have the option to scan a product's code only by tapping on its the code within the **Info** tab. When you that, the product code will be automatically entered in the **Scan** field.
+You also have the option to scan a product's code only by tapping on its the code within the **Info** tab. 
+
+When you that, the product code will be automatically entered in the **Scan** field.
 
 ![Inventory Control](pictures/Selected_product_25_01.png)
 
-Prior to scanning a product, you can input a number into the **Scan** field. Once you tap on the product's code, you can scan all of its instances at once.
+Prior to scanning a product, you can input a number into the **Scan** field. 
+
+Once you tap on the product's code, you can scan all of its instances at once.
 
 ![Inventory Control](pictures/Multiple_scanning_26_01.png)
 
 ### Continue last started operation
 
-Inventory Control allows you to resume the last operation you were performing. 
+Inventory Control allows you to **resume** the last operation you were performing. 
 
 If you exited a receive operation mid-way, for example, it will be displayed as a shortcut in the main menu. 
 
@@ -83,7 +89,7 @@ You can tap the Continue button to proceed with it.
 
 ![Inventory Control](pictures/Last_operation_continue_25_01.png)
 
-If you choose to begin a new operation before completing the latest one, a warning will appear, asking you to confirm the termination of the latest operation.
+If you choose to begin a new operation **before** completing the latest one, a **warning** will appear, asking you to confirm the termination of the latest operation.
 
 ![Inventory Control](pictures/Warning_message_25_01.png)
 
