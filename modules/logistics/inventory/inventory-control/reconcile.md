@@ -52,7 +52,7 @@ If more lots are present, the **available-counted** ratio will be distributed ba
 
 In order to update the currently available quantities of your products, you need to use the **Scan** field.
 
-It lets you quickly insert the instances of a product you want to count either manually or through **barcode commands**.
+It lets you quickly insert the instances of a product you want to **count** either manually or through **barcode commands**.
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
