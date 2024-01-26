@@ -48,34 +48,6 @@ If more lots are present, the **available-counted** ratio will be distributed ba
 
 ![Reconcile](pictures/info_reconcile.png)
 
-## Scanning
-
-In order to update the currently available quantities of your products, you need to use the **Scan** field.
-
-It lets you quickly insert the instances of a product you want to count either manually or through **barcode commands**.
-
-For a list of available barcode templates, check out the **[Command list](command-list.md)**.
-
-### Individual scan
-
-Simply type in a product's **code** once (e.g. "0000001") in order to count only one pcs of it. Tap the **blue arrow** to confirm.
-
-![Reconcile](pictures/count_one_reconcile.png)
-
-Every time you scan, you'll be taken to the **Info** tab for the respective product. Successfully counted pcs are painted in **green**.
-
-If more lots are present for a product, the FEFO principle determines which lot has pcs counted first.
-
-Incorrect or non-existent product codes will generate an error.
-
-![Reconcile](pictures/inv_con_reconcile_err.png)
-
-### Multiple scans
-
-To count more pcs or the exact number of pcs for a product, specify it first (e.g. "50") and press enter, and then provide the product code.
-
-![Reconcile](pictures/count_fifty_reconcile.png)
-
 > [!NOTE]
 > 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
 > 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
