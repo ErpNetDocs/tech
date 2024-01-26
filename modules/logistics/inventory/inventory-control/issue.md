@@ -54,7 +54,7 @@ If more lots are present, the **ordered-executed** ratio will be distributed bas
 
 In order to mark product quantities of an order as deducted from your store, you need to use the **Scan** field.
 
-It lets you quickly insert the instances of a product you want to confirm as issued either manually or through barcode commands.
+It lets you quickly insert the instances of a product you want to confirm as **issued** either manually or through barcode commands.
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
@@ -67,10 +67,11 @@ If you're unfamiliar with the process of scanning a product and require assistan
 
 ### Zero count
 
-If the Executed bar is left with zero, this will be interpreted as the product having deducted "0 pcs". In the final issue store transaction, there will be no lines for the product.
+If the Executed bar is left with zero, this will be interpreted as the product having deducted "0 pcs". 
+
+In the final issue store transaction, there will be no lines for the product.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
-
 
 ## Create an issue store transaction
 
