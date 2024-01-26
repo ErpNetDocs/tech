@@ -20,30 +20,6 @@ That store will be saved for follow-up operations but can easily be switched to 
 
 Here, you can observe the most commonly used features in the **Inventory Control** panel.
 
-### Select a product from the Info tab
-
-In **Inventory Control**, you have the option to scan a product by either manually typing its code into the **scan** field or by selecting the code within the **Info** tab. When you choose the latter option, the product code will be automatically entered in the **Scan** field.
-
-![Inventory Control](pictures/Selected_product_25_01.png)
-
-Prior to scanning a product, you can input a number into the **Scan** field. Afterward, when you choose a product, it will be scanned the specified number of times.
-
-![Inventory Control](pictures/Multiple_scanning_26_01.png)
-
-### Continue last started operation
-
-In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. tap the **Continue** button to proceed with it.
-
-![Inventory Control](pictures/Last_operation_continue_25_01.png)
-
-If you choose to initiate a new operation before completing the ongoing one, a warning message will appear, prompting you to confirm the termination of the current operation.
-
-![Inventory Control](pictures/Warning_message_25_01.png)
-
-If there are no ongoing operations, the window will indicate that there are no current ones.
-
-![Inventory Control](pictures/No_current_operations_25_01.png)
-
 ### Scanning
 
 In order to do operations with your products, you need to use the **Scan** field.
@@ -74,7 +50,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ![Transfer](pictures/inv_con_transfer_multiple.png)
 
-**NOTE!**
+[!NOTE]
 
 1. The **trash bin button** allows you to remove the latest operation, which will restore the previous operation value.
 
@@ -87,6 +63,32 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 If you enter a zero quantity in the Scan field, all of the entered quantities before will be set to zero.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
+
+
+### Select a product from the Info tab
+
+In **Inventory Control**, you have the option to scan a product by either manually typing its code into the **scan** field or by selecting the code within the **Info** tab. When you choose the latter option, the product code will be automatically entered in the **Scan** field.
+
+![Inventory Control](pictures/Selected_product_25_01.png)
+
+Prior to scanning a product, you can input a number into the **Scan** field. Afterward, when you choose a product, it will be scanned the specified number of times.
+
+![Inventory Control](pictures/Multiple_scanning_26_01.png)
+
+### Continue last started operation
+
+In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. tap the **Continue** button to proceed with it.
+
+![Inventory Control](pictures/Last_operation_continue_25_01.png)
+
+If you choose to initiate a new operation before completing the ongoing one, a warning message will appear, prompting you to confirm the termination of the current operation.
+
+![Inventory Control](pictures/Warning_message_25_01.png)
+
+If there are no ongoing operations, the window will indicate that there are no current ones.
+
+![Inventory Control](pictures/No_current_operations_25_01.png)
+
 
 
 Learn more about Inventory Control in the following articles:
