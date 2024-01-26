@@ -66,7 +66,7 @@ Its pcs will be reflected immediately, and once a reconciliation document is rel
 
 ### Zero count
 
-You can enter a Zero quantity for the products that are missing from the store. Type in "0*" and press Enter followed by the affected product code.
+You can enter a Zero quantity for the products that are missing from the store. 
 
 Each zero count is interpreted as the product or lot having "0 pcs" in the final reconciliation document.
 
