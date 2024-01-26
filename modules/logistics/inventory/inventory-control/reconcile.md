@@ -48,11 +48,6 @@ If more lots are present, the **available-counted** ratio will be distributed ba
 
 ![Reconcile](pictures/info_reconcile.png)
 
-> [!NOTE]
-> 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
-> 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-> 3. You can remove inserted multipliers by tapping the **Clear** **button** **(X)**
-
 ### Higher count
 
 The currently available pcs of a product may be **more** than what is set as available in the system.
