@@ -89,23 +89,47 @@
 <p><img src="pictures/Index_Store_Change_25_01.png" alt="Inventory Control"></p>
 <h2 id="common-features">Common features</h2>
 <p>Here, you can observe the most commonly used features in the <strong>Inventory Control</strong> panel.</p>
-<h3 id="selecting-a-product-from-the-info-tab">Selecting a product from the Info tab</h3>
-<p>In <strong>Inventory Control</strong>, to choose a product, click on its code in the Info tab. Upon doing so, the code will automatically appear in the <strong>SCAN</strong> field.</p>
+<h3 id="scanning">Scanning</h3>
+<p>In order to scan your products manually, you need to use the <strong>Scan</strong> field.</p>
+<p>It lets you quickly insert the instances of a product you want to add either manually or through barcode commands.</p>
+<p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
+<h3 id="individual-scan">Individual scan</h3>
+<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to add only one pcs of it. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p><img src="pictures/Index_blue_arrow_26_01.png" alt="Transfer"></p>
+<p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product.</p>
+<p>Successfully scaned pcs are painted in <strong>green</strong>.</p>
+<p>If more lots are present for a product, the FEFO principle determines which lot has pcs add first.</p>
+<p>Incorrect product codes will generate an error.</p>
+<p><img src="pictures/inv_con_transfer_err.png" alt="Transfer"></p>
+<h3 id="multiple-scans">Multiple scans</h3>
+<p>To scan more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;*&quot;, and then enter the product code.</p>
+<p>This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p><img src="pictures/inv_con_transfer_multiple.png" alt="Transfer"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<ol>
+<li>The <strong>trash bin button</strong> allows you to remove the latest operation, which will restore the previous operation value.</li>
+<li>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</li>
+<li>You can remove inserted multipliers by tapping the <strong>Clear button (X)</strong>.</li>
+</ol>
+</div>
+<h3 id="zero-count">Zero count</h3>
+<p>If you enter a zero quantity in the <strong>Scan</strong> field, all of the entered quantities before will be set to <strong>zero</strong>.</p>
+<p><img src="pictures/inv_con_issue_zeronew.png" alt="Issue"></p>
+<h3 id="select-a-product-from-the-info-tab">Select a product from the Info tab</h3>
+<p>You also have the option to scan a product's code only by tapping on its the code within the <strong>Info</strong> tab.</p>
+<p>When you do that, the product code will be automatically entered in the <strong>Scan</strong> field.</p>
 <p><img src="pictures/Selected_product_25_01.png" alt="Inventory Control"></p>
-<h3 id="scan-a-product-multiple-times">Scan a product multiple times</h3>
-<p>To scan a product multiple times, enter the desired number of repetitions in the <strong>SCAN</strong> field and click the button with arrow to execute the command.</p>
-<p><img src="pictures/Number_scan_25_01.png" alt="Inventory Control"></p>
-<p>The chosen number will be displayed below.</p>
-<p><img src="pictures/Number_scan_selected_25_01.png" alt="Inventory Control"></p>
-<p>Subsequently, when you select a product, it will be scanned the specified number of times.</p>
-<p><img src="pictures/Number_scaned_25_01.png" alt="Inventory Control"></p>
-<h3 id="continue-the-last-operation">Continue the last Operation</h3>
-<p>In <strong>Inventory Control</strong>, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. Click the <strong>Continue</strong> button to proceed with it.</p>
+<p>If you need to scan <strong>multiple</strong> instances of your product, you can provide a quantity into the Scan field.</p>
+<p>Once you tap on the product's code, you can scan <strong>all</strong> of its instances at once.</p>
+<p><img src="pictures/Multiple_scanning_26_01.png" alt="Inventory Control"></p>
+<h3 id="continue-last-started-operation">Continue last started operation</h3>
+<p>Inventory Control allows you to <strong>resume</strong> the last operation you were performing.</p>
+<p>If you exited a receive operation mid-way, for example, it will be displayed as a <strong>shortcut</strong> in the main menu.</p>
+<p>You can tap the <strong>Continue</strong> button to proceed with it.</p>
 <p><img src="pictures/Last_operation_continue_25_01.png" alt="Inventory Control"></p>
-<p>If you choose to initiate a new operation before completing the ongoing one, a warning message will appear, prompting you to confirm the termination of the current operation.</p>
+<p>If you choose to begin a new operation <strong>before</strong> completing the latest one, a <strong>warning</strong> will appear, asking you to confirm the termination of the latest operation.</p>
 <p><img src="pictures/Warning_message_25_01.png" alt="Inventory Control"></p>
-<p>If there are no ongoing operations, the window will indicate that there are no current ones.</p>
-<p><img src="pictures/No_current_operations_25_01.png" alt="Inventory Control"></p>
 <p>Learn more about Inventory Control in the following articles:</p>
 <ul>
 <li><strong><a href="settings.html">Settings</a></strong></li>

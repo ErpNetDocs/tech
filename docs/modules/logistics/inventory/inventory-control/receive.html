@@ -111,33 +111,18 @@
 <p>The lot with quantities whose date is closest to its expiration point will be prioritised in the execution process.</p>
 <p><img src="pictures/inv_con_receive_infonew.png" alt="Receive"></p>
 <h2 id="scanning">Scanning</h2>
-<p>In order to execute ordered quantities, you need to use the <strong>Scan</strong> field.</p>
-<p>It lets you quickly insert the instances of a product you want to confirm as received either manually or through barcode commands.</p>
+<p>In order to mark product quantities of an order as received, you need to use the <strong>Scan</strong> field.</p>
+<p>It lets you quickly insert the instances of a product you want to <strong>receive</strong> either manually or through barcode commands.</p>
 <p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
-<h3 id="individual-scan">Individual scan</h3>
-<p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to execute only one pcs of it.
-You can enter the code manually from the keyboard and tap the <strong>blue arrow</strong> or press Enter to confirm.</p>
-<p><img src="pictures/inv_con_receive_singlescan.png" alt="Receive"></p>
-<p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product. Successfully executed pcs are painted in <strong>green</strong>.</p>
-<p>If more lots are present for a product, the <strong>FEFO principle</strong> determines which lot has pcs received first.</p>
-<p>Incorrect product codes will generate an error.</p>
-<p><img src="pictures/inv_con_receive_err.png" alt="Receive"></p>
-<h3 id="multiple-scans">Multiple scans</h3>
-<p>To execute more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;35&quot;) and press enter, and then provide the product code.</p>
-<p><img src="pictures/inv_con_receive_multiscan.png" alt="Receive"></p>
+<p>If you're unfamiliar with the process of scanning a product and require assistance, refer to our <strong><a href="index.html">overview</a></strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<ol>
-<li>The <strong>trash bin button</strong> allows you to remove the latest execution, which will restore the previous Executed value.</li>
-<li>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</li>
-<li>You can remove inserted multipliers by tapping the <strong>Clear</strong> <strong>button</strong> <strong>(X)</strong></li>
-<li>The executed pcs of a product <strong>cannot</strong> be more than what is ordered.</li>
-</ol>
+<p>The executed pcs of a product <strong>cannot</strong> be more than what is ordered.</p>
 </div>
 <p><img src="pictures/inv_con_receive_error.png" alt="Receive"></p>
 <h3 id="zero-count">Zero count</h3>
-<p>You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.</p>
-<p>If the <strong>Executed</strong> bar is left with zero, this will be interpreted as the product having received &quot;0 pcs&quot;. In the final receipt store transaction, there will be no lines for the product.</p>
+<p>If the <strong>Executed</strong> bar is left with zero, this will be interpreted as the product having received &quot;0 pcs&quot;.</p>
+<p>In the final receipt store transaction, there will be no lines for the product.</p>
 <p><img src="pictures/inv_con_receive_zero.png" alt="Receive"></p>
 <h2 id="create-a-receipt-store-transaction">Create a receipt store transaction</h2>
 <p>Once you're done scanning the ordered product quantities, you can go back to the <strong>Executed</strong> tab to see if you've made any mistakes.</p>
