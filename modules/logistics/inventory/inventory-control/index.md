@@ -66,7 +66,7 @@ Incorrect product codes will generate an error.
 
 ![Transfer](pictures/inv_con_transfer_err.png)
 
-### Multiple transfers
+### Multiple scans
 
 To scan more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
 
