@@ -20,7 +20,7 @@ That store will be saved for follow-up operations but can easily be switched to 
 
 Here, you can observe the most commonly used features in the **Inventory Control** panel.
 
-### Selecting a product from the Info tab
+### Select a product from the Info tab
 
 In **Inventory Control**, to choose a product, tap on its code in the Info tab. Upon doing so, the code will automatically appear in the **SCAN** field.
 
