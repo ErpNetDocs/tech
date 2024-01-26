@@ -22,7 +22,7 @@ Here, you can observe the most commonly used features in the **Inventory Control
 
 ### Scanning
 
-In order to do operations with your products, you need to use the **Scan** field.
+In order to do add your products, you need to use the **Scan** field.
 
 It lets you quickly insert the instances of a product you want to operate with either manually or through barcode commands.
 
@@ -64,14 +64,13 @@ If you enter a zero quantity in the Scan field, all of the entered quantities be
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
 
-
 ### Select a product from the Info tab
 
-In **Inventory Control**, you have the option to scan a product by either manually typing its code into the **scan** field or by selecting the code within the **Info** tab. When you choose the latter option, the product code will be automatically entered in the **Scan** field.
+You also have the option to scan a product's code only by tapping on its the code within the **Info** tab. When you that, the product code will be automatically entered in the **Scan** field.
 
 ![Inventory Control](pictures/Selected_product_25_01.png)
 
-Prior to scanning a product, you can input a number into the **Scan** field. Afterward, when you choose a product, it will be scanned the specified number of times.
+Prior to scanning a product, you can input a number into the **Scan** field. Once you tap on the product's code, you can scan all of its instances at once.
 
 ![Inventory Control](pictures/Multiple_scanning_26_01.png)
 
