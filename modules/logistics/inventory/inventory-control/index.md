@@ -76,7 +76,11 @@ Prior to scanning a product, you can input a number into the **Scan** field. Onc
 
 ### Continue last started operation
 
-In **Inventory Control**, you have the option to resume the last operation you were performing. The most recent operation will be displayed in the main menu upon opening. tap the **Continue** button to proceed with it.
+Inventory Control allows you to resume the last operation you were performing. 
+
+If you exited a receive operation mid-way, for example, it will be displayed as a shortcut in the main menu. 
+
+You can tap the Continue button to proceed with it.
 
 ![Inventory Control](pictures/Last_operation_continue_25_01.png)
 
