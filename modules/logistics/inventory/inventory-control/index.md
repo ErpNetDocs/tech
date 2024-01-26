@@ -84,14 +84,9 @@ You can tap the Continue button to proceed with it.
 
 ![Inventory Control](pictures/Last_operation_continue_25_01.png)
 
-If you choose to initiate a new operation before completing the ongoing one, a warning message will appear, prompting you to confirm the termination of the current operation.
+If you choose to begin a new operation before completing the latest one, a warning will appear, asking you to confirm the termination of the latest operation.
 
 ![Inventory Control](pictures/Warning_message_25_01.png)
-
-If there are no ongoing operations, the window will indicate that there are no current ones.
-
-![Inventory Control](pictures/No_current_operations_25_01.png)
-
 
 
 Learn more about Inventory Control in the following articles:
