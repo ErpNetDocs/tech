@@ -52,9 +52,9 @@ If more lots are present, the **available-transfer** ratio will be distributed b
 
 ## Scanning
 
-In order to transfer currently available quantities of your products, you need to use the **Scan** field.
+In order to transfer quantities of your products to another store, you need to use the **Scan** field.
 
-It lets you quickly insert the instances of a product you want to transfer either manually or through barcode commands.
+It lets you quickly insert the instances of a product you want to **transfer** either manually or through barcode commands.
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
