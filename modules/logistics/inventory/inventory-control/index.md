@@ -24,19 +24,19 @@ Here, you can observe the most commonly used features in the **Inventory Control
 
 In order to do add your products, you need to use the **Scan** field.
 
-It lets you quickly insert the instances of a product you want to operate with either manually or through barcode commands.
+It lets you quickly insert the instances of a product you want to add either manually or through barcode commands.
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
 ### Individual scan
 
-Simply type in a product's code once (e.g. "0000001") in order to operate with only one pcs of it. Tap the **blue arrow** to confirm.
+Simply type in a product's code once (e.g. "0000001") in order to add only one pcs of it. Tap the **blue arrow** to confirm.
 
 ![Transfer](pictures/inv_con_transfer_single.png)
 
 Every time you scan, you'll be taken to the **Info** tab for the respective product. Successfully scaned pcs are painted in **green**.
 
-If more lots are present for a product, the FEFO principle determines which lot has pcs operated with first.
+If more lots are present for a product, the FEFO principle determines which lot has pcs add first.
 
 Incorrect product codes will generate an error. 
 
@@ -50,8 +50,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ![Transfer](pictures/inv_con_transfer_multiple.png)
 
-[!NOTE]
-
+> [!NOTE]
 1. The **trash bin button** allows you to remove the latest operation, which will restore the previous operation value.
 
 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
