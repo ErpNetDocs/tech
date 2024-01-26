@@ -46,6 +46,14 @@ If more lots are present, the **available-scrap** ratio will be distributed base
 
 ![Scrap](pictures/inv_con_scrap_info.png)
 
+## Scanning
+
+In order to scrap currently available quantities of your products, you need to use the **Scan** field.
+
+It lets you quickly insert the instances of a product you want to scrap either manually or through barcode commands.
+
+For a list of available barcode templates, check out the **[Command list](command-list.md)**.
+
 > [!NOTE]
 > The executed pcs of a product **cannot** be more than what is ordered.
 
