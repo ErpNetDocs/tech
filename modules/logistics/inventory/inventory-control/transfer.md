@@ -52,12 +52,6 @@ If more lots are present, the **available-transfer** ratio will be distributed b
 
 **NOTE!**
 
-1. The **trash bin button** allows you to remove the latest transfer, which will restore the previous Transfer value.
-
-2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-
-3. You can remove inserted multipliers by tapping the **Clear button (X)**.
-
 4. The desired transferred pcs of a product **cannot** be more than what is set as available in the system.
 
 ![Transfer](pictures/inv_con_transfer_error.png)
