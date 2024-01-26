@@ -52,7 +52,7 @@ If more lots are present, the **available-transfer** ratio will be distributed b
 
 **NOTE!**
 
-4. The desired transferred pcs of a product **cannot** be more than what is set as available in the system.
+1. The desired transferred pcs of a product **cannot** be more than what is set as available in the system.
 
 ![Transfer](pictures/inv_con_transfer_error.png)
 
