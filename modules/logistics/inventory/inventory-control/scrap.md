@@ -47,10 +47,10 @@ If more lots are present, the **available-scrap** ratio will be distributed base
 ![Scrap](pictures/inv_con_scrap_info.png)
 
 > [!NOTE]
-> 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
-> 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
-> 3. You can remove inserted multipliers by tapping the **Clear** **button** **(X)**
-> 4. The executed pcs of a product **cannot** be more than what is ordered.
+
+> 1. The executed pcs of a product **cannot** be more than what is ordered.
+
+![Scrap](pictures/Scanned_quantity_error_26_01.png)
 
 ### Zero count
 
