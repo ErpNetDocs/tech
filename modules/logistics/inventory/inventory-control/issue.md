@@ -57,8 +57,6 @@ If more lots are present, the **ordered-executed** ratio will be distributed bas
 
 ### Zero count
 
-You can enter a Zero quantity if it is necessary. If you enter zero quantity, all entered quantities before, will be set to zero.
-
 If the Executed bar is left with zero, this will be interpreted as the product having deducted "0 pcs". In the final issue store transaction, there will be no lines for the product.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
