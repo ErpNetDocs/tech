@@ -61,7 +61,7 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 
 ### Zero count
 
-If you enter a zero quantity in the Scan field, all of the entered quantities before will be set to zero.
+If you enter a zero quantity in the **Scan** field, all of the entered quantities before will be set to **zero**.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
 
@@ -69,23 +69,23 @@ If you enter a zero quantity in the Scan field, all of the entered quantities be
 
 You also have the option to scan a product's code only by tapping on its the code within the **Info** tab. 
 
-When you that, the product code will be automatically entered in the **Scan** field.
+When you do that, the product code will be automatically entered in the **Scan** field.
 
 ![Inventory Control](pictures/Selected_product_25_01.png)
 
 Prior to scanning a product, you can input a number into the **Scan** field. 
 
-Once you tap on the product's code, you can scan all of its instances at once.
+Once you tap on the product's code, you can scan **all** of its instances at once.
 
 ![Inventory Control](pictures/Multiple_scanning_26_01.png)
 
 ### Continue last started operation
 
-Inventory Control allows you to **resume** the last operation you were performing. 
+**Inventory Control** allows you to **resume** the last operation you were performing. 
 
-If you exited a receive operation mid-way, for example, it will be displayed as a shortcut in the main menu. 
+If you exited a receive operation mid-way, for example, it will be displayed as a **shortcut** in the main menu. 
 
-You can tap the Continue button to proceed with it.
+You can tap the **Continue** button to proceed with it.
 
 ![Inventory Control](pictures/Last_operation_continue_25_01.png)
 
