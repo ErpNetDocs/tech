@@ -46,36 +46,6 @@ If more lots are present, the **available-scrap** ratio will be distributed base
 
 ![Scrap](pictures/inv_con_scrap_info.png)
 
-## Scanning
-
-In order to scrap currently available quantities of your products, you need to use the **Scan** field.
-
-It lets you quickly insert the instances of a product you want to scrap either manually or through barcode commands.
-
-For a list of available barcode templates, check out the **[Command list](command-list.md)**.
-
-### Individual scrap
-
-Simply type in a product's code once (e.g. "0000001") in order to execute only one pcs of it. You can enter the code manually from the keyboard and tap the blue arrow or press Enter to confirm.
-
-![Scrap](pictures/inv_con_scrap_individual.png)
-
-Every time you scan, you'll be taken to the **Info** tab for the respective product. Successfully scrapped pcs are painted in **green**.
-
-If more lots are present for a product, the FEFO principle determines which lot has pcs scrapped first.
-
-Incorrect codes will generate an error.
-
-![Scrap](pictures/inv_con_scrap_err.png)
-
-### Multiple scraps
-
-To scrap more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
-
-This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the **blue arrow** to confirm.
-
-![Scrap](pictures/inv_con_scrap_multi.png)
-
 > [!NOTE]
 > 1. The **trash bin button** allows you to remove the latest execution, which will restore the previous Executed value.
 > 2. Any one, two or three-number combination is automatically counted as a **multiplier**. You can insert it without adding "*" in the end.
