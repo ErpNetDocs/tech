@@ -54,7 +54,7 @@ If more lots are present, the **ordered-executed** ratio will be distributed bas
 
 In order to mark product quantities of an order as deducted from your store, you need to use the **Scan** field.
 
-It lets you quickly insert the instances of a product you want to scrap either manually or through barcode commands.
+It lets you quickly insert the instances of a product you want to confirm as issued either manually or through barcode commands.
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
