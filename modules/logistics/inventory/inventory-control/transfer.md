@@ -50,36 +50,6 @@ If more lots are present, the **available-transfer** ratio will be distributed b
 
 ![Transfer](pictures/inv_con_transfer_info.png)
 
-## Scanning
-
-In order to transfer currently available quantities of your products, you need to use the **Scan** field.
-
-It lets you quickly insert the instances of a product you want to transfer either manually or through barcode commands.
-
-For a list of available barcode templates, check out the **[Command list](command-list.md)**.
-
-### Individual transfer
-
-Simply type in a product's code once (e.g. "0000001") in order to transfer only one pcs of it. Tap the **blue arrow** to confirm.
-
-![Transfer](pictures/inv_con_transfer_single.png)
-
-Every time you scan, you'll be taken to the **Info** tab for the respective product. Successfully transferred pcs are painted in **green**.
-
-If more lots are present for a product, the FEFO principle determines which lot has pcs transferred first.
-
-Incorrect product codes will generate an error. 
-
-![Transfer](pictures/inv_con_transfer_err.png)
-
-### Multiple transfers
-
-To transfer more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
-
-This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the **blue arrow** to confirm.
-
-![Transfer](pictures/inv_con_transfer_multiple.png)
-
 **NOTE!**
 
 1. The **trash bin button** allows you to remove the latest transfer, which will restore the previous Transfer value.
