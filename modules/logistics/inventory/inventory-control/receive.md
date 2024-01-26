@@ -64,6 +64,8 @@ It lets you quickly insert the instances of a product you want to scrap either m
 
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
+If you're unfamiliar with the process of scanning a product and require assistance, refer to our overview at **[Index](index.md)**.
+
 > [!NOTE]
 > The executed pcs of a product **cannot** be more than what is ordered.
 
