@@ -5082,6 +5082,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Index_blue_arrow_26_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Index_blue_arrow_26_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Index_view_25_01.png",
       "output": {
         "resource": {
@@ -5097,6 +5108,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Last_operation_continue_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Multiple_scanning_26_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Multiple_scanning_26_01.png"
         }
       },
       "is_incremental": false,
@@ -5141,6 +5163,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Number_scaned_25_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Scanned_quantity_error_26_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/inventory-control/pictures/Scanned_quantity_error_26_01.png"
         }
       },
       "is_incremental": false,
