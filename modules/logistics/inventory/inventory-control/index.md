@@ -103,5 +103,7 @@ Learn more about Inventory Control in the following articles:
 *	**[Command list](command-list.md)**
 
 
+
+
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the **Web Client**
