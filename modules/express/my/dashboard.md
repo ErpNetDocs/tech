@@ -35,3 +35,8 @@ Different widgets allow you to perform a variety of actions on-demand.
 Take advantage of them to [create tasks](todo.md), [schedule meetings](calendar.md), preview your [tiles](tiles.md), and much more!
 
 ![Express](pictures/interact_dashboard.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
