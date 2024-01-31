@@ -41,3 +41,8 @@ It opens a separate window with two tabs:
   Change the order in which tiles appear by **dragging** them up and down.
 
   ![Express](pictures/Tiles_reorder.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
