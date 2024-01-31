@@ -88,3 +88,8 @@ This will take you to a separate space with direct access to the document type f
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Scrap](pictures/inv_con_scrap_documen.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
