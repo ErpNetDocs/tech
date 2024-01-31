@@ -47,3 +47,8 @@ Here, you can see the membership status of each group participant, as well as ac
 Admins can **add** or **remove** team members on-demand. 
 
 ![Express](pictures/Groups_members.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
