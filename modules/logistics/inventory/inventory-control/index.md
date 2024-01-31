@@ -106,4 +106,4 @@ Learn more about Inventory Control in the following articles:
 
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**
+> The screenshots taken for this article are from v24 of the **Web Client**.
