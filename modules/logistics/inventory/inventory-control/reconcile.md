@@ -101,3 +101,8 @@ This will take you to a separate space with direct link to the document type for
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Reconcile](pictures/reconciled_document.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
