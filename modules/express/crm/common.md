@@ -40,3 +40,7 @@ In the window that opens, you will see two tabs:
 
   This would not be applicable if there's only one item category (e.g. Definitions).
 
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
