@@ -104,3 +104,7 @@ Learn more about Excise in the following articles:
 - **[Documents](documents/index.md)**
 - **[Country specific](country-specific/index.md)**
 
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
