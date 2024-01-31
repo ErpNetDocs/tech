@@ -45,3 +45,8 @@ In the window that opens, you will see two tabs:
   You can change the order of the **items' categories** by dragging them up and down.
 
     ![Express](pictures/Marketing_Reorder.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
