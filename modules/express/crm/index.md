@@ -10,3 +10,8 @@ It is composed of the following sub-modules:
 * **[Marketing](marketing.md)**
 * **[Presales](presales.md)**
 * **[Sales](sales.md)**
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
