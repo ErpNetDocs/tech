@@ -92,3 +92,8 @@ This will take you to a separate space with direct access to the document type f
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the order.
 
 ![Transfer](pictures/inv_con_transfer_doc_finish.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
