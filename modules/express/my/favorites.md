@@ -31,3 +31,8 @@ Click on a **red cross** at the top-right corner of a favorite to **remove** it.
 You'll be asked to confirm the action.
 
 ![Express](pictures/Favorites_remove_x.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
