@@ -96,4 +96,4 @@ By tapping on it, you'll access the **Inventory** module from where you can rele
 
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**
+> The screenshots taken for this article are from v24 of the **Web Client**.
