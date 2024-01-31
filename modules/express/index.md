@@ -79,3 +79,8 @@ Click any of the available modules below to learn more.
 *	**[CRM](crm/index.md)**
 
 *	**[General](general/index.md)**
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
