@@ -98,3 +98,8 @@ This will take you to a separate space with direct link to the transaction for t
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Receive](pictures/inv_con_receive_greendocument.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
