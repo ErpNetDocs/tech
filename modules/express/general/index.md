@@ -11,3 +11,8 @@ General consists of the following sub-modules:
 * **[Contacts](contacts.md)**
   
 * **[Products](products.md)**
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
