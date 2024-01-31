@@ -89,12 +89,11 @@ This will take you to a separate space with direct link to the document type for
 
 ![Issue](pictures/inv_con_issue_docrelease.png)
 
-
-
-> [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**
-
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Issue](pictures/inv_con_issuedoc.png)
 
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**
