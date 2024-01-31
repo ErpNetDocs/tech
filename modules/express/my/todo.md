@@ -33,3 +33,8 @@ To complete a task, click on the **circular button** on its left to mark it as d
 It will be placed in the **Completed** category.
 
 ![Express](pictures/ToDo_done.png)
+
+
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
