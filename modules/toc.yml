@@ -2,19 +2,22 @@
   href: index.md
 - name: CRM
   href: crm/toc.yml
+- name: Finance
+  href: financials/toc.yml
+- name: General
+  href: general/toc.yml
 - name: Logistics
   href: logistics/toc.yml
 - name: Production
   href: production/toc.yml
-- name: Project Management
+- name: Projects
   href: projects/toc.yml
-- name: Financials
-  href: financials/toc.yml
+- name: Applications
+  href: applications/toc.yml
 - name: Community Management
   href: community/toc.yml
   topicHref: community/index.md
-- name: Applications
-  href: applications/toc.yml
-- name: General
-  href: general/toc.yml
+- name: Express
+  href: express/toc.yml
+  topicHref: express/index.md
   
