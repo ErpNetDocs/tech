@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get current availability of a product
 
-This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Additional filter Product variant could also be added. 
+This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, store, product, lot, store bin and serial number, because of the unique nature of the repository of the calculation attribute. Additional filter by Product variant could also be added. 
 
 We recommend always filtering by EnterpriseCompanyId, StoreId, and ProductId inside the Select clauses when searching for product availability. If EnterpriseCompanyId or StoreId is missed, the calculation will happen much slower.
 
