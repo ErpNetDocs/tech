@@ -10,13 +10,13 @@ It is important to note that it is mandatory to filter by EnterpriseCompanyId an
 
 This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.
 
-**EnterpriseCompanyId,** 
-**StoreId,** 
-**ProductId,** 
-**LotId,** 
-**StoreBinId,** 
-**SerialNumberId,** 
-**ProductVariantId**
+**EnterpriseCompanyId,** <BR>
+**StoreId,** <BR>
+**ProductId,** <BR>
+**LotId,** <BR>
+**StoreBinId,** <BR>
+**SerialNumberId,** <BR>
+**ProductVariantId**<BR>
 
 The example is suited for consumption order lines, but such an attribute could be used with other documents or definitions as well. 
 
