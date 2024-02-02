@@ -79,49 +79,62 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-current-availability-of-a-product">Get current availability of a product</h1>
 
-<p>This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added.</p>
+<p>This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added.</p>
+<p>It is important to note that it is mandatory to filter by EnterpriseCompanyId and StoreId inside the Select clauses, as if we omit any of them, especially EnterpriseCompanyId, the calculation will happen much slower.</p>
+<p>This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.</p>
+<p><strong>EnterpriseCompanyId,</strong>
+<strong>StoreId,</strong>
+<strong>ProductId,</strong>
+<strong>LotId,</strong>
+<strong>StoreBinId,</strong>
+<strong>SerialNumberId,</strong>
+<strong>ProductVariantId</strong></p>
 <p>The example is suited for consumption order lines, but such an attribute could be used with other documents or definitions as well.</p>
 <pre><code>Repository Name: Production.ShopFloor.ConsumptionOrderLines
 </code></pre>
-<pre><code>10: SUM EXP:20 ATTRIB:QuantityBaseValue 
-20: FILTER EXP:30 EXP:70 
-30: SELECT REPO:Logistics.Inventory.CurrentBalances EXP:40 
-40: WHERE EXP:50 
-50: EQUAL ATTRIB:ProductId  EXP:60 
-60: GETOBJVALUE INPUT:10 ATTRIB:ProductId 
-70: AND EXP:100 EXP:80 
-80: AND EXP:130 EXP:90 
-90: AND EXP:150 EXP:170 
-100: EQUAL ATTRIB:StoreId EXP:110 
-110: CAST EXP:120 CONST:System.Guid 
-120: GETOBJVALUE INPUT:10 ATTRIB:StoreId 
-130: EQUAL ATTRIB:StoreBinId EXP:140 
-140: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId 
-150: EQUAL ATTRIB:LotId EXP:160 
-160: GETOBJVALUE INPUT:10 ATTRIB:LotId 
-170: EQUAL ATTRIB:SerialNumberId EXP:180 
-180: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId 
+<pre><code>10: SUM	EXP:20 ATTRIB:QuantityBaseValue			
+20: SELECT REPO:Logistics.Inventory.CurrentBalances EXP:30	
+30: WHERE EXP:50 EXP:80			
+50: EQUAL ATTRIB:EnterpriseCompanyId EXP:60			
+60: GETOBJVALUE INPUT:10 EXP:70			
+70: GETOBJVALUE	REF:Document ATTRIB:EnterpriseCompanyId		
+80: AND	EXP:120	EXP:90			
+90: AND	EXP:140	EXP:100			
+100: AND EXP:160 EXP:110			
+110: AND EXP:180 EXP:200			
+120: EQUAL ATTRIB:ProductId EXP:130			
+130: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
+140: EQUAL ATTRIB:StoreId EXP:150			
+150: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
+160: EQUAL ATTRIB:StoreBinId EXP:170			
+170: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
+180: EQUAL ATTRIB:LotId EXP:190			
+190: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+200: EQUAL ATTRIB:SerialNumberId EXP:210			
+210: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId		
 </code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
 <li>10: Sum <em>Quantity Base</em> from the filtered list returned by EXP:20</li>
-<li>20: Filter the list from EXP:30 by the clauses of EXP:70</li>
-<li>30: Select repository <strong>Logistics.Inventory.CurrentBalances</strong> and filter by the clauses in EXP:40</li>
-<li>40: Filter the list above by the records WHERE, in which the clauses in EXP:50 are True</li>
-<li>50: Check whether <strong>ATTRIB:ProductId</strong> is equal to EXP:60</li>
-<li>60: Get <strong>ATTRIB:ProductId</strong> from the repository of EXP:10</li>
-<li>70: EXP:100 and EXP:80</li>
-<li>80: EXP:130 and EXP:90</li>
-<li>90: EXP:150 and EXP:170</li>
-<li>100: Check whether <strong>ATTRIB:StoreId</strong> is EQUAL to EXP:110</li>
-<li>110: CAST EXP:120 тo <strong>System.Guid</strong></li>
-<li>120: Get <strong>ATTRIB:StoreId</strong> from the repository of EXP:10</li>
-<li>130: Check whether <strong>ATTRIB:StoreBinId</strong> is EQUAL to EXP:140</li>
-<li>140: Get <strong>ATTRIB:StoreBinId</strong> from the repository of EXP:10</li>
-<li>150: Check whether <strong>ATTRIB:LotId</strong> is EQUAL to EXP:160</li>
-<li>160: Get <strong>ATTRIB:LotId</strong> from the repository of EXP:10</li>
-<li>170: Check whether <strong>ATTRIB:SerialNumberId</strong> is EQUAL to EXP:180</li>
-<li>180: Get <strong>ATTRIB:SerialNumberId</strong> from the repository of EXP:10</li>
+<li>20: Select repository <strong>Logistics.Inventory.CurrentBalances</strong> and filter by the clauses in EXP:30</li>
+<li>30: Filter the list above by the records WHERE, in which the clauses in EXP:50 and EXP:80 are True</li>
+<li>50: Check whether <strong>ATTRIB:EnterpriseCompanyId</strong> is equal to EXP:60</li>
+<li>60: Get value from the repository of EXP:10 and reference EXP:70</li>
+<li>70: Get <strong>ATTRIB:EnterpriseCompanyId</strong>  from the referenced document</li>
+<li>80: EXP:120 EXP:90</li>
+<li>90: EXP:140 EXP:100</li>
+<li>100: EXP:160 EXP:110</li>
+<li>110: EXP:180 EXP:200</li>
+<li>120: Check whether <strong>ATTRIB:ProductId</strong> is EQUAL to EXP:130</li>
+<li>130: Get <strong>ATTRIB:ProductId</strong> from the repository of EXP:10</li>
+<li>140: Check whether <strong>ATTRIB:StoreId</strong> is EQUAL to EXP:150</li>
+<li>150: Get <strong>ATTRIB:StoreId</strong> from the repository of EXP:10</li>
+<li>160: Check whether <strong>ATTRIB:StoreBinId</strong> is EQUAL to EXP:170</li>
+<li>170: Get <strong>ATTRIB:StoreBinId</strong> from the repository of EXP:10</li>
+<li>180: Check whether <strong>ATTRIB:LotId</strong> is EQUAL to EXP:190</li>
+<li>190: Get <strong>ATTRIB:LotId</strong> from the repository of EXP:10</li>
+<li>200: Check whether <strong>ATTRIB:SerialNumberId</strong> is EQUAL to EXP:210</li>
+<li>210: Get <strong>ATTRIB:SerialNumberId</strong> from the repository of EXP:10</li>
 </ul>
 </article>
           </div>
