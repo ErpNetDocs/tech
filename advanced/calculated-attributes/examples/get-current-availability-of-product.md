@@ -4,9 +4,9 @@ items: CalculatedAttributeExamples
 
 # Get current availability of a product
 
-This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added. 
+This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Additional filter Product variant could also be added. 
 
-It is important to note that it is mandatory to filter by EnterpriseCompanyId and StoreId inside the Select clauses, as if we omit any of them, especially EnterpriseCompanyId, the calculation will happen much slower.
+It is important to note that it is mandatory to filter by EnterpriseCompanyId, StoreId, and ProductId inside the Select clauses, as if we miss any of them, the calculation will happen much slower.
 
 This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.
 
@@ -36,14 +36,14 @@ Repository Name: Production.ShopFloor.ConsumptionOrderLines
 90: AND	EXP:140	EXP:100			
 100: AND EXP:160 EXP:110			
 110: AND EXP:180 EXP:200			
-120: EQUAL ATTRIB:ProductId EXP:130			
-130: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
-140: EQUAL ATTRIB:StoreId EXP:150			
-150: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
-160: EQUAL ATTRIB:StoreBinId EXP:170			
-170: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
-180: EQUAL ATTRIB:LotId EXP:190			
-190: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+120: EQUAL ATTRIB:StoreId EXP:130			
+130: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
+140: EQUAL ATTRIB:ProductId EXP:150			
+150: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
+160: EQUAL ATTRIB:LotId EXP:170			
+170: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+180: EQUAL ATTRIB:StoreBinId EXP:190			                  
+190: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
 200: EQUAL ATTRIB:SerialNumberId EXP:210			
 210: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId		
 ```
@@ -60,14 +60,14 @@ Repository Name: Production.ShopFloor.ConsumptionOrderLines
 - 90: EXP:140 EXP:100
 - 100: EXP:160 EXP:110
 - 110: EXP:180 EXP:200
-- 120: Check whether **ATTRIB:ProductId** is EQUAL to EXP:130 
-- 130: Get **ATTRIB:ProductId** from the repository of EXP:10
-- 140: Check whether **ATTRIB:StoreId** is EQUAL to EXP:150 
-- 150: Get **ATTRIB:StoreId** from the repository of EXP:10
-- 160: Check whether **ATTRIB:StoreBinId** is EQUAL to EXP:170
-- 170: Get **ATTRIB:StoreBinId** from the repository of EXP:10
-- 180: Check whether **ATTRIB:LotId** is EQUAL to EXP:190 
-- 190: Get **ATTRIB:LotId** from the repository of EXP:10
+- 120: Check whether **ATTRIB:StoreId** is EQUAL to EXP:130 
+- 130: Get **ATTRIB:StoreId** from the repository of EXP:10
+- 140: Check whether **ATTRIB:ProductId** is EQUAL to EXP:150 
+- 150: Get **ATTRIB:ProductId** from the repository of EXP:10
+- 160: Check whether **ATTRIB:LotId** is EQUAL to EXP:170
+- 170: Get **ATTRIB:LotId** from the repository of EXP:10
+- 180: Check whether **ATTRIB:StoreBinId** is EQUAL to EXP:190 
+- 190: Get **ATTRIB:StoreBinId** from the repository of EXP:10
 - 200: Check whether **ATTRIB:SerialNumberId** is EQUAL to EXP:210 
 - 210: Get **ATTRIB:SerialNumberId** from the repository of EXP:10
 
