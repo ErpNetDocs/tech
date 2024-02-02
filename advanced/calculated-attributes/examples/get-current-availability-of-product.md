@@ -4,7 +4,19 @@ items: CalculatedAttributeExamples
 
 # Get current availability of a product
 
-This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added. 
+This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added. 
+
+It is important to note that it is mandatory to filter by EnterpriseCompanyId and StoreId inside the Select clauses, as if we omit any of them, especially EnterpriseCompanyId, the calculation will happen much slower.
+
+This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.
+
+**EnterpriseCompanyId,** 
+**StoreId,** 
+**ProductId,** 
+**LotId,** 
+**StoreBinId,** 
+**SerialNumberId,** 
+**ProductVariantId**
 
 The example is suited for consumption order lines, but such an attribute could be used with other documents or definitions as well. 
 
@@ -14,45 +26,48 @@ Repository Name: Production.ShopFloor.ConsumptionOrderLines
 
 
 ```
-10: SUM EXP:20 ATTRIB:QuantityBaseValue 
-20: FILTER EXP:30 EXP:70 
-30: SELECT REPO:Logistics.Inventory.CurrentBalances EXP:40 
-40: WHERE EXP:50 
-50: EQUAL ATTRIB:ProductId  EXP:60 
-60: GETOBJVALUE INPUT:10 ATTRIB:ProductId 
-70: AND EXP:100 EXP:80 
-80: AND EXP:130 EXP:90 
-90: AND EXP:150 EXP:170 
-100: EQUAL ATTRIB:StoreId EXP:110 
-110: CAST EXP:120 CONST:System.Guid 
-120: GETOBJVALUE INPUT:10 ATTRIB:StoreId 
-130: EQUAL ATTRIB:StoreBinId EXP:140 
-140: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId 
-150: EQUAL ATTRIB:LotId EXP:160 
-160: GETOBJVALUE INPUT:10 ATTRIB:LotId 
-170: EQUAL ATTRIB:SerialNumberId EXP:180 
-180: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId 
+10: SUM	EXP:20 ATTRIB:QuantityBaseValue			
+20: SELECT REPO:Logistics.Inventory.CurrentBalances EXP:30	
+30: WHERE EXP:50 EXP:80			
+50: EQUAL ATTRIB:EnterpriseCompanyId EXP:60			
+60: GETOBJVALUE INPUT:10 EXP:70			
+70: GETOBJVALUE	REF:Document ATTRIB:EnterpriseCompanyId		
+80: AND	EXP:120	EXP:90			
+90: AND	EXP:140	EXP:100			
+100: AND EXP:160 EXP:110			
+110: AND EXP:180 EXP:200			
+120: EQUAL ATTRIB:ProductId EXP:130			
+130: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
+140: EQUAL ATTRIB:StoreId EXP:150			
+150: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
+160: EQUAL ATTRIB:StoreBinId EXP:170			
+170: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
+180: EQUAL ATTRIB:LotId EXP:190			
+190: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+200: EQUAL ATTRIB:SerialNumberId EXP:210			
+210: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId		
 ```
-
 
 **Explanation:**
 
 - 10: Sum _Quantity Base_ from the filtered list returned by EXP:20
-- 20: Filter the list from EXP:30 by the clauses of EXP:70 
-- 30: Select repository **Logistics.Inventory.CurrentBalances** and filter by the clauses in EXP:40 
-- 40: Filter the list above by the records WHERE, in which the clauses in EXP:50 are True
-- 50: Check whether **ATTRIB:ProductId** is equal to EXP:60 
-- 60: Get **ATTRIB:ProductId** from the repository of EXP:10
-- 70: EXP:100 and EXP:80 
-- 80: EXP:130 and EXP:90 
-- 90: EXP:150 and EXP:170 
-- 100: Check whether **ATTRIB:StoreId** is EQUAL to EXP:110 
-- 110: CAST EXP:120 тo **System.Guid** 
-- 120: Get **ATTRIB:StoreId** from the repository of EXP:10
-- 130: Check whether **ATTRIB:StoreBinId** is EQUAL to EXP:140
-- 140: Get **ATTRIB:StoreBinId** from the repository of EXP:10
-- 150: Check whether **ATTRIB:LotId** is EQUAL to EXP:160 
-- 160: Get **ATTRIB:LotId** from the repository of EXP:10
-- 170: Check whether **ATTRIB:SerialNumberId** is EQUAL to EXP:180 
-- 180: Get **ATTRIB:SerialNumberId** from the repository of EXP:10
+- 20: Select repository **Logistics.Inventory.CurrentBalances** and filter by the clauses in EXP:30 
+- 30: Filter the list above by the records WHERE, in which the clauses in EXP:50 and EXP:80 are True
+- 50: Check whether **ATTRIB:EnterpriseCompanyId** is equal to EXP:60 
+- 60: Get value from the repository of EXP:10 and reference EXP:70
+- 70: Get **ATTRIB:EnterpriseCompanyId**  from the referenced document
+- 80: EXP:120 EXP:90
+- 90: EXP:140 EXP:100
+- 100: EXP:160 EXP:110
+- 110: EXP:180 EXP:200
+- 120: Check whether **ATTRIB:ProductId** is EQUAL to EXP:130 
+- 130: Get **ATTRIB:ProductId** from the repository of EXP:10
+- 140: Check whether **ATTRIB:StoreId** is EQUAL to EXP:150 
+- 150: Get **ATTRIB:StoreId** from the repository of EXP:10
+- 160: Check whether **ATTRIB:StoreBinId** is EQUAL to EXP:170
+- 170: Get **ATTRIB:StoreBinId** from the repository of EXP:10
+- 180: Check whether **ATTRIB:LotId** is EQUAL to EXP:190 
+- 190: Get **ATTRIB:LotId** from the repository of EXP:10
+- 200: Check whether **ATTRIB:SerialNumberId** is EQUAL to EXP:210 
+- 210: Get **ATTRIB:SerialNumberId** from the repository of EXP:10
 
