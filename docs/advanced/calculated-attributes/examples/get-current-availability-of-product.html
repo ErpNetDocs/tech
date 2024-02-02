@@ -79,8 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="get-current-availability-of-a-product">Get current availability of a product</h1>
 
-<p>This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Other filters (product variant and enterprise company) could also be added.</p>
-<p>It is important to note that it is mandatory to filter by EnterpriseCompanyId and StoreId inside the Select clauses, as if we omit any of them, especially EnterpriseCompanyId, the calculation will happen much slower.</p>
+<p>This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Additional filter Product variant could also be added.</p>
+<p>It is important to note that it is mandatory to filter by EnterpriseCompanyId, StoreId, and ProductId inside the Select clauses, as if we miss any of them, the calculation will happen much slower.</p>
 <p>This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.</p>
 <p><strong>EnterpriseCompanyId,</strong> <br>
 <strong>StoreId,</strong> <br>
@@ -102,14 +102,14 @@
 90: AND	EXP:140	EXP:100			
 100: AND EXP:160 EXP:110			
 110: AND EXP:180 EXP:200			
-120: EQUAL ATTRIB:ProductId EXP:130			
-130: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
-140: EQUAL ATTRIB:StoreId EXP:150			
-150: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
-160: EQUAL ATTRIB:StoreBinId EXP:170			
-170: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
-180: EQUAL ATTRIB:LotId EXP:190			
-190: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+120: EQUAL ATTRIB:StoreId EXP:130			
+130: GETOBJVALUE INPUT:10 ATTRIB:StoreId			
+140: EQUAL ATTRIB:ProductId EXP:150			
+150: GETOBJVALUE INPUT:10 ATTRIB:ProductId			
+160: EQUAL ATTRIB:LotId EXP:170			
+170: GETOBJVALUE INPUT:10 ATTRIB:LotId			
+180: EQUAL ATTRIB:StoreBinId EXP:190			                  
+190: GETOBJVALUE INPUT:10 ATTRIB:StoreBinId			
 200: EQUAL ATTRIB:SerialNumberId EXP:210			
 210: GETOBJVALUE INPUT:10 ATTRIB:SerialNumberId		
 </code></pre>
@@ -125,14 +125,14 @@
 <li>90: EXP:140 EXP:100</li>
 <li>100: EXP:160 EXP:110</li>
 <li>110: EXP:180 EXP:200</li>
-<li>120: Check whether <strong>ATTRIB:ProductId</strong> is EQUAL to EXP:130</li>
-<li>130: Get <strong>ATTRIB:ProductId</strong> from the repository of EXP:10</li>
-<li>140: Check whether <strong>ATTRIB:StoreId</strong> is EQUAL to EXP:150</li>
-<li>150: Get <strong>ATTRIB:StoreId</strong> from the repository of EXP:10</li>
-<li>160: Check whether <strong>ATTRIB:StoreBinId</strong> is EQUAL to EXP:170</li>
-<li>170: Get <strong>ATTRIB:StoreBinId</strong> from the repository of EXP:10</li>
-<li>180: Check whether <strong>ATTRIB:LotId</strong> is EQUAL to EXP:190</li>
-<li>190: Get <strong>ATTRIB:LotId</strong> from the repository of EXP:10</li>
+<li>120: Check whether <strong>ATTRIB:StoreId</strong> is EQUAL to EXP:130</li>
+<li>130: Get <strong>ATTRIB:StoreId</strong> from the repository of EXP:10</li>
+<li>140: Check whether <strong>ATTRIB:ProductId</strong> is EQUAL to EXP:150</li>
+<li>150: Get <strong>ATTRIB:ProductId</strong> from the repository of EXP:10</li>
+<li>160: Check whether <strong>ATTRIB:LotId</strong> is EQUAL to EXP:170</li>
+<li>170: Get <strong>ATTRIB:LotId</strong> from the repository of EXP:10</li>
+<li>180: Check whether <strong>ATTRIB:StoreBinId</strong> is EQUAL to EXP:190</li>
+<li>190: Get <strong>ATTRIB:StoreBinId</strong> from the repository of EXP:10</li>
 <li>200: Check whether <strong>ATTRIB:SerialNumberId</strong> is EQUAL to EXP:210</li>
 <li>210: Get <strong>ATTRIB:SerialNumberId</strong> from the repository of EXP:10</li>
 </ul>
