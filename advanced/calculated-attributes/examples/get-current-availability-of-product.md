@@ -6,7 +6,7 @@ items: CalculatedAttributeExamples
 
 This example shows how to create a calculated attribute which returns the sum of the available quantity base of a particular product. Filters are applied by enterprise company, product, store, store bin, lot and serial number, because of the unique nature of the repository of the calculation attribute. Additional filter Product variant could also be added. 
 
-It is important to note that it is mandatory to filter by EnterpriseCompanyId, StoreId, and ProductId inside the Select clauses, as if we miss any of them, the calculation will happen much slower.
+We recommend always filtering by EnterpriseCompanyId, StoreId, and ProductId when searching for product availability. If EnterpriseCompanyId or StoreId is missed, the calculation will happen much slower.
 
 This is the order of filtering for the CurrentBalances. We can exclude filters from bottom to top but we cannot remove filters from above until we have removed all from below.
 
