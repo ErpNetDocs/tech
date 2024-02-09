@@ -15741,7 +15741,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "5OFRSzIw4/YsXeEQh5IWDw=="
+          "hash": "+EC6Hm5mFWF4adC4Hq2q3g=="
         }
       },
       "is_incremental": false,
@@ -15754,6 +15754,30 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
           "hash": "P7TF31GNvgz9AAPaCGgnhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/other settings/Index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/other settings/Index.html",
+          "hash": "SGclShiC+eLRP8YfP/zF/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/how-to/other settings/change order display format.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/how-to/other settings/change order display format.html",
+          "hash": "u45kg057KNsQsZ77aABgMQ=="
         }
       },
       "is_incremental": false,

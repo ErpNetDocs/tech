@@ -2062,12 +2062,22 @@
   "modules/logistics/wms/how-to/index.html": {
     "href": "modules/logistics/wms/how-to/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Assign worker Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability Enter quantity of one pce How to execute order lines? Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
+    "keywords": "Assign worker [Change order display format](~/modules/logistics/wms/how-to/other settings/change order display format.md) Change worker Check if a dispatch order can be fulfilled Document flow in WMS Enter initial availability Enter quantity of one pce How to execute order lines? [Other settings](~/modules/logistics/wms/how-to/other settings/Index.md) Reconcile Warehouse policies Warehouse setup Warehouse workers Warehouse zones and locations"
   },
   "modules/logistics/wms/how-to/initial-availability.html": {
     "href": "modules/logistics/wms/how-to/initial-availability.html",
     "title": "Enter initial availability | ERP.net Tech Docs",
     "keywords": "Enter initial availability When working in the WMS module, one of the first things you need to do is enter the initial availability balance . The system comes with two functions that will help you ease the process – one for loading the current availability from the Inventory module and another that will apply the reviewed availability to the WMS module. Loading the initial warehouse availability The first function is located in the Managed Warehouse definition. With it, you can enter availability for the current Warehouse by loading the current availability from an existing Store of the Inventory management module. The function loads availability from the selected Store and creates Warehouse Orders for the corresponding Warehouse. The lines of these Warehouse Orders contain the loaded availability. Then, they can be reviewed, edited (if necessary), and executed by the second function. To begin, click on the UI Functions button and select Load initial available balance . This will pop up a window, in which you can select the Store whose availability you would like to load and the Document type of the Warehouse Order that will be created. Once you’ve made your selections, click OK. The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result. If you click on the link, you’ll be taken to the definition of the order. There you can review and edit (if needed) the results i.e. the warehouse order lines. Once the review is done, you can release the document and execute its line using the second function. Executing the lines The next step in entering the availabilities is the execution of warehouse order lines. Once they are reviewed and the document is released, the information in them is applied to the Warehouse Availability using the \"Execute lines\" function. For more information about the function and how to use it, see the \"Execute lines UI function\" ."
+  },
+  "modules/logistics/wms/how-to/other settings/change order display format.html": {
+    "href": "modules/logistics/wms/how-to/other settings/change order display format.html",
+    "title": "Change order display format | ERP.net Tech Docs",
+    "keywords": "Change order display format"
+  },
+  "modules/logistics/wms/how-to/other settings/Index.html": {
+    "href": "modules/logistics/wms/how-to/other settings/Index.html",
+    "title": "Other settings | ERP.net Tech Docs",
+    "keywords": "Other settings This folder contains instructions on configuring various settings within the WMS Worker ."
   },
   "modules/logistics/wms/how-to/pictures/index.html": {
     "href": "modules/logistics/wms/how-to/pictures/index.html",
