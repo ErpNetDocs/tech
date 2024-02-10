@@ -15741,7 +15741,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "+EC6Hm5mFWF4adC4Hq2q3g=="
+          "hash": "1gx1lB09ML3sdW6N35vFBQ=="
         }
       },
       "is_incremental": false,
@@ -15773,11 +15773,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-to/other settings/change order display format.md",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/changе-order-display-format.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/wms/how-to/other settings/change order display format.html",
-          "hash": "u45kg057KNsQsZ77aABgMQ=="
+          "relative_path": "modules/logistics/wms/how-to/other-settings/changе-order-display-format.html",
+          "hash": "ZiM+wi7zuDVnil2BmCneUw=="
         }
       },
       "is_incremental": false,
