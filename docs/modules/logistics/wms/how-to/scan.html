@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Use the Scan field | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Use the Scan field | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,25 +77,35 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="use-the-scan-field">Use the Scan field</h1>
 
-<ul>
-<li><a href="pictures/index.html"></a></li>
-<li><a href="assign-worker.html">Assign worker</a></li>
-<li><a href="other-settings/change-order-display-format.html">Change order display format</a></li>
-<li><a href="change-worker.html">Change worker</a></li>
-<li><a href="check-can-be-fulfilled.html">Check if a dispatch order can be fulfilled</a></li>
-<li><a href="document-flow.html">Document flow in WMS</a></li>
-<li><a href="initial-availability.html">Enter initial availability</a></li>
-<li><a href="setup-warehouse/enter_quntity_of_one_pce.html">Enter quantity of one pce</a></li>
-<li><a href="execute-order-lines.html">How to execute order lines?</a></li>
-<li><a href="other-settings/index.html">Other settings</a></li>
-<li><a href="reconcile.html">Reconcile</a></li>
-<li><a href="scan.html">Use the Scan field</a></li>
-<li><a href="setup-warehouse/warehouse-policies.html">Warehouse policies</a></li>
-<li><a href="setup-warehouse/index.html">Warehouse setup</a></li>
-<li><a href="setup-warehouse/warehouse-workers.html">Warehouse workers</a></li>
-<li><a href="setup-warehouse/zones-and-locations.html">Warehouse zones and locations</a></li>
-</ul>
+<p>Each time you wish to fulfill an order, you must scan the corresponding product the exact number of times specified by the order quantity.</p>
+<h2 id="scan-an-item-single-time">Scan an item single time</h2>
+<p>To scan a single item, simply enter the product code into the <strong>Scan</strong> field, then proceed by clicking the <strong>blue arrow</strong> button.</p>
+<p><img src="pictures/Scan_single_12_02.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You may be asked to specify the <strong>Location</strong>, <strong>Lot</strong> and <strong>Quantity</strong> before the product is scanned.</p>
+</div>
+<h2 id="scan-an-item-multiple-times">Scan an item multiple times</h2>
+<p>To scan an item multiple times, input the desired quantity into the <strong>Scan</strong> field, followed by clicking the <strong>blue arrow</strong> button.</p>
+<p><img src="pictures/scan_multiple_12_02.png" alt="picture"></p>
+<p>The quantity you input will be displayed in the <strong>quantity</strong> field beneath the <strong>Scan</strong> field.</p>
+<p>Next, enter the product code into the <strong>Scan</strong> field to finalize the operation.</p>
+<p><img src="pictures/Scan_quantity_box_12_02.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can enhance clarity by adding the multiplication operator &quot;*&quot; after the number in the <strong>Scan</strong> field.</p>
+</div>
+<h2 id="adding-the-number-of-times-a-product-will-be-scanned">Adding the number of times a product will be scanned</h2>
+<p>When scanning a product multiple times, it might be more convenient in certain situations to input the quantity over several entries.</p>
+<p>To do that, enter a number in the <strong>Scan</strong> field and click the <strong>blue arrow</strong> button. Then, repeat the operation one or more times.</p>
+<p>This way, the multiple numbers entered will be summed together, resulting in the final quantity for scanning the product.</p>
+<p><img src="pictures/Scan_multiple_sum_12_02.png" alt="picture"></p>
+<blockquote>
+<p>[!EXAMPLE]
+Entering &quot;1*&quot;, then &quot;2*&quot;, then &quot;3*&quot;, and clicking the <strong>blue arrow</strong> button after each number will result in a final quantity of 6 in the quantity box.</p>
+</blockquote>
 </article>
           </div>
           
@@ -104,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/scan.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

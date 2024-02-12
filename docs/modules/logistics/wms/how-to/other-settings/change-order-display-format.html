@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | ERP.net Tech Docs </title>
+    <title>Change order display format | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | ERP.net Tech Docs ">
+    <meta name="title" content="Change order display format | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../toc.html">
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
     
-    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:rel" content="../../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
-                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,25 +77,27 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="change-order-display-format">Change order display format</h1>
 
-<ul>
-<li><a href="pictures/index.html"></a></li>
-<li><a href="assign-worker.html">Assign worker</a></li>
-<li><a href="other-settings/change-order-display-format.html">Change order display format</a></li>
-<li><a href="change-worker.html">Change worker</a></li>
-<li><a href="check-can-be-fulfilled.html">Check if a dispatch order can be fulfilled</a></li>
-<li><a href="document-flow.html">Document flow in WMS</a></li>
-<li><a href="initial-availability.html">Enter initial availability</a></li>
-<li><a href="setup-warehouse/enter_quntity_of_one_pce.html">Enter quantity of one pce</a></li>
-<li><a href="execute-order-lines.html">How to execute order lines?</a></li>
-<li><a href="other-settings/index.html">Other settings</a></li>
-<li><a href="reconcile.html">Reconcile</a></li>
-<li><a href="scan.html">Use the Scan field</a></li>
-<li><a href="setup-warehouse/warehouse-policies.html">Warehouse policies</a></li>
-<li><a href="setup-warehouse/index.html">Warehouse setup</a></li>
-<li><a href="setup-warehouse/warehouse-workers.html">Warehouse workers</a></li>
-<li><a href="setup-warehouse/zones-and-locations.html">Warehouse zones and locations</a></li>
-</ul>
+<p>In the <strong>WMS Worker</strong>, you have the ability to modify the information displayed for the <strong>Orders</strong>.</p>
+<p>This can be achieved using a <strong>Configuration Key</strong> that presents information through <strong>String Interpolation</strong>.</p>
+<p><img src="pictures/Order_information_09_02.png" alt="picture"></p>
+<h2 id="configuration-key">Configuration Key</h2>
+<p>To change the information that is shown in <strong>WMS Worker – Orders</strong>, you need to use the <strong>Configuration Key in Setup – Core – Config</strong>.</p>
+<p><img src="pictures/Config_view_09_02.png" alt="picture"></p>
+<p>When you do that, a table with all available configurations will open.</p>
+<p><img src="pictures/Core_view_09_02.png" alt="picture"></p>
+<p>Find the <strong>Configuration</strong> named <strong>/WMS/WMS-Worker/OrderDisplayFormat</strong> and open it.</p>
+<p><img src="pictures/Core_config_11_02.png" alt="picture"></p>
+<p>Once you’ve done that you can change the <strong>Key Value</strong> in the <strong>Configuration</strong> using <a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">String Interpolation</a>.
+The <strong>String Interpolation</strong> is taking values from the current <strong>Warehouse Order – WarehouseOrder(id)</strong>.</p>
+<p><img src="pictures/Core_key_value_11_02.png" alt="picture"></p>
+<p>Based on the <strong>Key Value</strong>, different information will be shown  about the orders.</p>
+<h2 id="behavior-in-particular-cases">Behavior in particular cases</h2>
+<p>Here is the expected behavior in some different cases:</p>
+<p>•	If there is no <strong>Configuration Key</strong> set, the information displayed is retrieved from the <strong>To Party</strong> field. This is the default behavior.</p>
+<p>•	If there is a <strong>Configuration Key</strong> set, but the <strong>Key value</strong> field is blank, the information displayed is also retrieved from <strong>To Party</strong> field.</p>
+<p>•	There is a <strong>Configuration Key</strong> set, but the assigned parameters are not returning any value. The information displayed is going to be “-“.</p>
 </article>
           </div>
           
@@ -104,7 +106,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/other-settings/change-order-display-format.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -130,8 +132,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
   </body>
 </html>
