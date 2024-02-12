@@ -8,8 +8,9 @@ To scan a single item, simply enter the product code into the **Scan** field, th
 
 ![picture](pictures/Scan_single_12_02.png)
 
-**Note** : You may be asked to specify the **Location**, **Lot** and **Quantity** before the product is scanned. 
-
+> [!NOTE]
+> You may be asked to specify the **Location**, **Lot** and **Quantity** before the product is scanned. 
+ 
 ## Scan an item multiple times 
 
 To scan an item multiple times, input the desired quantity into the **Scan** field, followed by clicking the **blue arrow** button.
@@ -22,7 +23,8 @@ Next, enter the product code into the **Scan** field to finalize the operation.
 
 ![picture](pictures/Scan_quantity_box_12_02.png)
 
-**Note**: You can enhance clarity by adding the multiplication operator "*" after the number in the **Scan** field.
+> [!NOTE]
+> You can enhance clarity by adding the multiplication operator "*" after the number in the **Scan** field.
 
 ## Adding the number of times a product will be scanned 
 
@@ -34,4 +36,5 @@ This way, the multiple numbers entered will be summed together, resulting in the
 
 ![picture](pictures/Scan_multiple_sum_12_02.png)
 
-**Example** : Entering "1*", then "2*", then "3*", and clicking the **blue arrow** button after each number will result in a final quantity of 6 in the quantity box.
+> [!EXAMPLE]
+> Entering "1*", then "2*", then "3*", and clicking the **blue arrow** button after each number will result in a final quantity of 6 in the quantity box.
