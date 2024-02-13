@@ -18,9 +18,11 @@ You can find it in the **[Config options reference](https://docs.erp.net/tech/re
 
 Once you open the key, change the **Key Value** in the configuration using [string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string). 
 
-![picture](pictures/Core_key_value_11_02.png)
+![picture](pictures/Config_key_value_13__2.png)
 
 Based on what you provide for **Key Value**, different information will be displayed for all of your orders in the WMS Worker.
+
+![picture](pictures/Order_Warehouse_13_02.png)
 
 ### Behavior in particular cases 
 
