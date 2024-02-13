@@ -24,7 +24,7 @@ Based on what you provide for **Key Value**, different information will be displ
 
 ### Behavior in particular cases 
 
-Here is the expected behavior in some different cases:
+Here is the expected behavior in certain cases:
 
 •	If there is no **Configuration Key** set, the information displayed is retrieved from the **To Party** field. This is the default behavior.
 
