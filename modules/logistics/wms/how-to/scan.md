@@ -37,7 +37,5 @@ This way, the multiple numbers entered will be summed together, resulting in the
 ![picture](pictures/Scan_multiple_sum_12_02.png)
 
 > [!NOTE]
->
-> **Example: **
 > 
 > Entering "1*", then "2*", then "3*", and clicking the **blue arrow** button after each number will result in a final quantity of 6 in the quantity box.
