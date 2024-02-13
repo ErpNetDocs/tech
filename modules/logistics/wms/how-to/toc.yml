@@ -17,3 +17,6 @@
   href: check-can-be-fulfilled.md
 - name: Reconcile
   href: reconcile.md
+- name: Other settings
+  href: other-settings/toc.yml
+  topicHref: other-settings/index.md
