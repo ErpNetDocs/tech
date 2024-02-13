@@ -1,33 +1,26 @@
 # Change order display format
 
-In the **WMS Worker**, you have the ability to modify the information displayed for the **Orders**. 
+You can decide exactly what kind of information is displayed for each of your **orders** in the WMS Worker.
 
-This can be achieved using a **Configuration Key** that presents information through **String Interpolation**.
+This can be achieved using a **configuration key** specified in an appropriate **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string)** format.
 
 ![picture](pictures/Order_information_09_02.png)
 
-## Configuration Key
+## How to do it
 
-To change the information that is shown in **WMS Worker – Orders**, you need to use the **Configuration Key in Setup – Core – Config**.
+To change the information that is displayed for your orders, you need to configure the **OrderDisplayFormat** key.
 
-![picture](pictures/Config_view_09_02.png)
-
-When you do that, a table with all available configurations will open. 
-
-![picture](pictures/Core_view_09_02.png)
-
-Find the **Configuration** named **/WMS/WMS-Worker/OrderDisplayFormat** and open it. 
+You can find it in the **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat)**.
 
 ![picture](pictures/Core_config_11_02.png)
 
-Once you’ve done that you can change the **Key Value** in the **Configuration** using [String Interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string). 
-The **String Interpolation** is taking values from the current **Warehouse Order – WarehouseOrder(id)**. 
+Once you open the key, change the **Key Value** in the **Configuration** using [string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string). 
 
 ![picture](pictures/Core_key_value_11_02.png)
 
-Based on the **Key Value**, different information will be shown  about the orders.
+Based on what you provide for **Key Value**, different information will be displayed for each of your orders in the WMS Worker.
 
-## Behavior in particular cases 
+### Behavior in particular cases 
 
 Here is the expected behavior in some different cases:
 
