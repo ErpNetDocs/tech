@@ -79,25 +79,23 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="change-order-display-format">Change order display format</h1>
 
-<p>In the <strong>WMS Worker</strong>, you have the ability to modify the information displayed for the <strong>Orders</strong>.</p>
-<p>This can be achieved using a <strong>Configuration Key</strong> that presents information through <strong>String Interpolation</strong>.</p>
+<p>You have the ability to specify exactly what kind of information is displayed on the first line of each of your <strong>orders</strong> in the WMS Worker.</p>
+<p>This can be achieved using a <strong>configuration key</strong> specified in an appropriate <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">string interpolation</a></strong> format.</p>
 <p><img src="pictures/Order_information_09_02.png" alt="picture"></p>
-<h2 id="configuration-key">Configuration Key</h2>
-<p>To change the information that is shown in <strong>WMS Worker – Orders</strong>, you need to use the <strong>Configuration Key in Setup – Core – Config</strong>.</p>
-<p><img src="pictures/Config_view_09_02.png" alt="picture"></p>
-<p>When you do that, a table with all available configurations will open.</p>
-<p><img src="pictures/Core_view_09_02.png" alt="picture"></p>
-<p>Find the <strong>Configuration</strong> named <strong>/WMS/WMS-Worker/OrderDisplayFormat</strong> and open it.</p>
+<p>Having access to order data before you even take it allows you to instantly learn what it's about even if a few basic details are provided.</p>
+<h2 id="how-to-do-it">How to do it</h2>
+<p>To change the information displayed on the first line of your orders, you need to edit the <strong>OrderDisplayFormat</strong> config key.</p>
+<p>You can learn more about it in the <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat">Config options reference</a></strong>.</p>
 <p><img src="pictures/Core_config_11_02.png" alt="picture"></p>
-<p>Once you’ve done that you can change the <strong>Key Value</strong> in the <strong>Configuration</strong> using <a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">String Interpolation</a>.
-The <strong>String Interpolation</strong> is taking values from the current <strong>Warehouse Order – WarehouseOrder(id)</strong>.</p>
-<p><img src="pictures/Core_key_value_11_02.png" alt="picture"></p>
-<p>Based on the <strong>Key Value</strong>, different information will be shown  about the orders.</p>
-<h2 id="behavior-in-particular-cases">Behavior in particular cases</h2>
-<p>Here is the expected behavior in some different cases:</p>
-<p>•	If there is no <strong>Configuration Key</strong> set, the information displayed is retrieved from the <strong>To Party</strong> field. This is the default behavior.</p>
-<p>•	If there is a <strong>Configuration Key</strong> set, but the <strong>Key value</strong> field is blank, the information displayed is also retrieved from <strong>To Party</strong> field.</p>
-<p>•	There is a <strong>Configuration Key</strong> set, but the assigned parameters are not returning any value. The information displayed is going to be “-“.</p>
+<p>Once you open the key, change its <strong>Key Value</strong> using appropriate <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">string interpolation</a></strong> notation.</p>
+<p><img src="pictures/Config_key_value_13_02.png" alt="picture"></p>
+<p>Based on what you provide for <strong>Key Value</strong>, different information will be displayed on the first line of all of your orders in the <strong>WMS Worker</strong>.</p>
+<p><img src="pictures/Order_Warehouse_13_02.png" alt="picture"></p>
+<h3 id="behavior-in-particular-cases">Behavior in particular cases</h3>
+<p>Here is the expected behavior of changing the order display format in certain cases:</p>
+<p>•	If there is <strong>no</strong> config key set, the information displayed will be retrieved from the <strong>To Party</strong> field. This is the default behavior.</p>
+<p>•	If there is a key set, but the <strong>Key Value</strong> field is left blank, the displayed information will also be retrieved from <strong>To Party</strong> field.</p>
+<p>•	If there is a config key set, but the assigned parameters are <strong>not</strong> returning any value, the displayed information is going to be “-“.</p>
 </article>
           </div>
           

@@ -7931,6 +7931,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_view_09_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_view_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_config_11_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_config_11_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_key_value_11_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_key_value_11_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_view_09_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_view_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Order_information_09_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Order_information_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/Assign_worker_1.png",
       "output": {
         "resource": {
@@ -8078,6 +8133,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/pictures/Change_worker_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_multiple_sum_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_multiple_sum_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_quantity_box_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_quantity_box_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_single_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/Scan_single_12_02.png"
         }
       },
       "is_incremental": false,
@@ -8309,6 +8397,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/pictures/release-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/scan_multiple_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/scan_multiple_12_02.png"
         }
       },
       "is_incremental": false,
@@ -15765,7 +15864,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/change-order-display-format.html",
-          "hash": "UtY9fTMeMC23rEuWJk1joQ=="
+          "hash": "RN3oKy9yUrv7mKYCJdGLQg=="
         }
       },
       "is_incremental": false,
@@ -15778,6 +15877,28 @@
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/index.html",
           "hash": "Yom5i+muYWTFhu+MTdGaVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13__2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13__2.png"
         }
       },
       "is_incremental": false,
@@ -15822,6 +15943,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Core_view_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Order_Warehouse_13_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Order_Warehouse_13_02.png"
         }
       },
       "is_incremental": false,
@@ -16275,7 +16407,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/scan.html",
-          "hash": "lG6BesgpHM3TBD5c37Rxcw=="
+          "hash": "RkT/2QKCcFZCYFRE60Wx9Q=="
         }
       },
       "is_incremental": false,
@@ -17470,7 +17602,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "eVohU2xiDyD7nAuFoSQLVw=="
+          "hash": "8bLz0Y7w7OWAnhp+SVCpyw=="
         }
       },
       "is_incremental": false,
