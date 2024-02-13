@@ -6,6 +6,8 @@ This can be achieved using a **configuration key** specified in an appropriate *
 
 ![picture](pictures/Order_information_09_02.png)
 
+Having access to order information before you even take it allows you to instantly learn what it's about even if only a few basic details are provided.
+
 ## How to do it
 
 To change the information that is displayed for your orders, you need to configure the **OrderDisplayFormat** key.
