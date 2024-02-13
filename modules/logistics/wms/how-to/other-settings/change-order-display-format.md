@@ -1,6 +1,6 @@
 # Change order display format
 
-You can decide exactly what kind of information is displayed for each of your **orders** in the WMS Worker.
+You have the ability to specify exactly what kind of information is displayed on the first line on each of your **orders** in the WMS Worker.
 
 This can be achieved using a **configuration key** specified in an appropriate **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string)** format.
 
