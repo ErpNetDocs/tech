@@ -20,7 +20,7 @@ Once you open the key, change the **Key Value** in the configuration using [stri
 
 ![picture](pictures/Config_key_value_13__2.png)
 
-Based on what you provide for **Key Value**, different information will be displayed for all of your orders in the WMS Worker.
+Based on what you provide for **Key Value**, different information will be displayed for all of your orders in the **WMS Worker**.
 
 ![picture](pictures/Order_Warehouse_13_02.png)
 
