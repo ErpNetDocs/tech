@@ -7931,6 +7931,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13__2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_key_value_13__2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Config_view_09_02.png",
       "output": {
         "resource": {
@@ -7968,6 +7990,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Core_view_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Order_Warehouse_13_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/Order_Warehouse_13_02.png"
         }
       },
       "is_incremental": false,
