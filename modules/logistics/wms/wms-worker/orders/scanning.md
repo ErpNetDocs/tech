@@ -1,38 +1,36 @@
-# Use the Scan field
+# Scanning
 
-Each time you wish to fulfill an order, you must scan the corresponding product the exact number of times specified by the order quantity.
+Each time you wish to **[execute](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)** lines of an order, you must first scan the corresponding products the necessary number of times.
 
-## Scan an item single time 
+## Single scan
 
-To scan a single item, simply enter the product code into the **Scan** field, then proceed by clicking the **blue arrow** button.
+To scan a product once, simply enter its code into the **Scan** field, then click or tap the **blue arrow** button.
 
 ![picture](pictures/Scan_single_12_02.png)
 
 > [!NOTE]
-> You may be asked to specify the **Location**, **Lot** and **Quantity** before the product is scanned. 
+> 
+> You will be taken to the Quantity screen where you need to specify the **Location**, **Lot** and **Quantity** of the product.
  
-## Scan an item multiple times 
+## Multiple scans
 
-To scan an item multiple times, input the desired quantity into the **Scan** field, followed by clicking the **blue arrow** button.
+To scan a product multiple times, input the desired quantity into the **Scan** field, optionally followed by a **"*"** symbol, and then click or tap the **blue arrow** button.
 
 ![picture](pictures/scan_multiple_12_02.png)
 
-The quantity you input will be displayed in the **quantity** field beneath the **Scan** field. 
+The quantity you input will be displayed in a **separate field** under the main **Scan** field. 
 
-Next, enter the product code into the **Scan** field to finalize the operation. 
+You need to enter the product code into the **Scan** field to scan it the desired number of times. 
 
 ![picture](pictures/Scan_quantity_box_12_02.png)
 
-> [!NOTE]
-> You can enhance clarity by adding the multiplication operator "*" after the number in the **Scan** field.
+### Add and see total entered quantity
 
-## Adding the number of times a product will be scanned 
+When scanning a product multiple times, it might sometimes be more convenient to input the quantity several times.
 
-When scanning a product multiple times, it might be more convenient in certain situations to input the quantity over several entries.
+To do that, enter a number in the **Scan** field and click the **blue arrow** button. Then, repeat the operation as many times as needed. 
 
-To do that, enter a number in the **Scan** field and click the **blue arrow** button. Then, repeat the operation one or more times. 
-
-This way, the multiple numbers entered will be summed together, resulting in the final quantity for scanning the product.
+The provided numbers will be **summed together**, and you can see the total quantity for scanning the product.
 
 ![picture](pictures/Scan_multiple_sum_12_02.png)
 
