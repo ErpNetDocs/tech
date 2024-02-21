@@ -1,5 +1,7 @@
 - name: Orders
   href: index.md
+- name: Scanning
+  href: scanning.md
 - name: Lines execution
   href: lines-execution.md
 - name: Picking routes
