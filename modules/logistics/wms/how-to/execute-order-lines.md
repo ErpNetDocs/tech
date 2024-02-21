@@ -12,6 +12,8 @@ Not all task types are currently available for order lines execution.
 
 Some, such as **[count](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/count.html)**, are available only as ad hoch operation (e.g. the Reconciliation menu of the WMS Worker).
 
+If you're not familiar with how
+
 ### Orders menu
 
 The **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** is our WMS mobile application available on all compatible Android devices, including handheld devices.
@@ -22,17 +24,17 @@ The **Orders** menu is used by the warehouse worker to execute the lines of the 
 
 This function is available in the definition of each warehouse order.
 
-When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. 
+When started, it executes warehouse order lines based on the information specified in them, like product, quantity and lot.
 
-As a result, it creates warehouse transactions, document fulfillments, or both, depending on the particular line's [task type](how-it-works/task-types/index.md). 
+As a result, it creates warehouse transactions, document fulfillments, or both, depending on the particular line's **[task type](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/index.html)**. 
 
-The function is especially useful when [entering initial availability](how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
+The function is especially useful when **[entering initial availability](https://docs.erp.net/tech/modules/logistics/wms/how-to/initial-availability.html)** in the warehouse or as a backup way to execute lines without using the WMS Worker, in case there is a problem with mobile devices, for example.
 
 #### Step-by-step 
 
-1. To begin, go to the definition of the Warehouse Order you would like to execute.
+1. To begin, go to the definition of the warehouse wrder you want to execute.
 
-Make sure that its state is **released** and if it is not, **release** the document before starting the function.
+Make sure that its state is **released**. If it's not, **release** the document before starting the function.
 
 ![Picture](pictures/release-document.png)
 
@@ -44,10 +46,12 @@ Make sure that its state is **released** and if it is not, **release** the docum
 
 ![Picture](pictures/warning-message.png)
 
-The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message. 
+The line execution functionality processes every line separately.
+
+If the execution of all lines is successful, the function will finish with a **success message**. 
 
 ![Picture](pictures/success.png)
 
-If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.
+If there's problem during the execution of the lines, the function will stop running and it will display a message giving more details about the problem and its cause.
 
-Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the Document Fulfillments that has been created) and proceed with their execution.
+Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the document fulfillments that have been created) and proceed with their execution.
