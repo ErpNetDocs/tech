@@ -2,7 +2,7 @@
 
 The order line execution starts when you press the **Execute** button in the lines list or when you **scan** a code and a matching line is found.
 
-To learn more about the product scanning process, please read **[here](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html)**.
+Before you begin, make sure you are familiaized with the **[scanning process](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html)** first.
 
 Once the execution begins, it guides you through several screens.
 
