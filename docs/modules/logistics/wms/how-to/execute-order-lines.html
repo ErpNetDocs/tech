@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>How to execute order lines? | ERP.net Tech Docs </title>
+    <title>How to execute order lines | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="How to execute order lines? | ERP.net Tech Docs ">
+    <meta name="title" content="How to execute order lines | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,30 +77,42 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="how-to-execute-order-lines">How to execute order lines?</h1>
+<h1 id="how-to-execute-order-lines">How to execute order lines</h1>
 
-<p>The <strong>Warehouse Order (WO)</strong> is the document that contains the actual plan that needs to be executed by the WMS module.</p>
-<p>The lines of the <strong>WO</strong> can be executed trough the Orders menu of the <a class="xref" href="../wms-worker/index.html">WMS Worker</a> or through the <strong>Execute lines</strong> UI function.</p>
-<p>How these lines are executed, depends on their <a href="how-it-works/task-types/index.md">Task type</a>. More information about the purpose of each task type and how it can be executed can be found in the
-<a href="how-it-works/task-types/index.md">Task type</a> subtopics.</p>
-<p>Note that, not all task types are currently available for order lines execution. Some, such as the <a href="how-it-works/task-types/count.md">Count task type</a> for example,
-are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).</p>
-<h2 id="orders-menu-in-wms-worker">Orders menu in WMS Worker</h2>
-<p><a class="xref" href="../wms-worker/index.html">WMS Worker</a> is our WMS mobile application available on all compatible Android devices, including handheld devices.
-The Orders menu is used by the warehouse worker to execute the lines of the warehouse orders that has been assigned to them. For more information see <a class="xref" href="../wms-worker/index.html">WMS Worker</a></p>
-<h2 id="execute-lines-ui-function">Execute lines UI function</h2>
-<p>The &quot;Execute lines&quot; UI function available in the definition of the Warehouse Orders.</p>
-<p>When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's <a href="how-it-works/task-types/index.md">task type</a>. <br>The function is especially useful when <a href="how-to/initial-availability.md">entering initial availability</a> in the Warehouse or as a backup way to execute lines without using the <a class="xref" href="../wms-worker/index.html">WMS Worker</a> app, in case there is a problem with mobile devices for example.</p>
-<p>To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is <strong>released</strong> and if it is not, <strong>release</strong> the document before starting the function.</p>
+<p>А <strong>warehouse order (WO)</strong> is the document that contains the actual plan that needs to be executed by the WMS module.</p>
+<p>The WO <strong>lines</strong> can be executed through the <strong>Orders</strong> menu of the <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html">WMS Worker</a></strong> or through the <strong>Execute lines</strong> UI function.</p>
+<p>How these lines are executed depends on their <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/index.html">task type</a></strong>.</p>
+<p><strong>NOTE!</strong></p>
+<p>Not all task types are currently available for order lines execution.</p>
+<p>Some, such as <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/count.html">count</a></strong>, are available only as ad hoch operation (e.g. the Reconciliation menu of the WMS Worker).</p>
+<p>If you're not familiar with how</p>
+<h3 id="orders-menu">Orders menu</h3>
+<p>The <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html">WMS Worker</a></strong> is our WMS mobile application available on all compatible Android devices, including handheld devices.</p>
+<p>The <strong>Orders</strong> menu is used by the warehouse worker to execute the lines of the warehouse orders that have been assigned to them.</p>
+<h3 id="execute-lines-ui-function">Execute lines UI function</h3>
+<p>This function is available in the definition of each warehouse order.</p>
+<p>When started, it executes warehouse order lines based on the information specified in them, like product, quantity and lot.</p>
+<p>As a result, it creates warehouse transactions, document fulfillments, or both, depending on the particular line's <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/index.html">task type</a></strong>.</p>
+<p>The function is especially useful when <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/initial-availability.html">entering initial availability</a></strong> in the warehouse or as a backup way to execute lines without using the WMS Worker, in case there is a problem with mobile devices, for example.</p>
+<h4 id="step-by-step">Step-by-step</h4>
+<ol>
+<li>To begin, go to the definition of the warehouse wrder you want to execute.</li>
+</ol>
+<p>Make sure that its state is <strong>released</strong>. If it's not, <strong>release</strong> the document before starting the function.</p>
 <p><img src="pictures/release-document.png" alt="Picture"></p>
-<p>Then, click the <strong>UI Functions</strong> and select <strong>Execute lines</strong>.</p>
+<ol start="2">
+<li>Then, click the <strong>UI Functions</strong> and select <strong>Execute lines</strong>.</li>
+</ol>
 <p><img src="pictures/executelines.png" alt="Picture"></p>
-<p>You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking <strong>OK</strong>.</p>
+<ol start="3">
+<li>You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking <strong>OK</strong>.</li>
+</ol>
 <p><img src="pictures/warning-message.png" alt="Picture"></p>
-<p>The line execution functionality processes every line separately, and if the execution of all lines is successful, the function will finish with a success message.</p>
+<p>The line execution functionality processes every line separately.</p>
+<p>If the execution of all lines is successful, the function will finish with a <strong>success message</strong>.</p>
 <p><img src="pictures/success.png" alt="Picture"></p>
-<p>If there's problem during the execution of the lines, the function will stop running and will display a message giving more details about the problem and its cause.</p>
-<p>Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the Document Fulfillments that has been created) and proceed with their execution.</p>
+<p>If there's problem during the execution of the lines, the function will stop running and it will display a message giving more details about the problem and its cause.</p>
+<p>Once the error is identified and resolved, you can continue the execution process from where it was stopped. The system will automatically detect the unexecuted lines left from the previous attempt (based on the document fulfillments that have been created) and proceed with their execution.</p>
 </article>
           </div>
           

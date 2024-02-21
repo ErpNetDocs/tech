@@ -15853,15 +15853,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/execute-order-lines.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/execute-order-lines.html",
-          "hash": "brSkvcFrM+YgmmVn3qUeiQ=="
+          "hash": "+aT34M8LoFcYtpNHFGo1pQ=="
         }
       },
       "is_incremental": false,
@@ -15873,7 +15870,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "Ol37Cv8aLIOb4Bmqp3fTUw=="
+          "hash": "rxuAWsjbSkH9s0e934fgBA=="
         }
       },
       "is_incremental": false,
@@ -16436,18 +16433,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/how-to/scan.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/how-to/scan.html",
-          "hash": "RkT/2QKCcFZCYFRE60Wx9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.md",
       "output": {
         ".html": {
@@ -16821,7 +16806,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/lines-execution.html",
-          "hash": "2EcXIAGrvXAZ3hGUsi2izA=="
+          "hash": "fsAjwyrmqYsTjQZS1BhdeQ=="
         }
       },
       "is_incremental": false,
@@ -16834,6 +16819,39 @@
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/picking-routes.html",
           "hash": "rmDq6Crg2F4TR/6UGLinMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_multiple_sum_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_multiple_sum_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_quantity_box_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_quantity_box_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_single_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/Scan_single_12_02.png"
         }
       },
       "is_incremental": false,
@@ -17094,6 +17112,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/scan_multiple_12_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/scan_multiple_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/suggest-locations.png",
       "output": {
         "resource": {
@@ -17109,6 +17138,18 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/suggested-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/scanning.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/scanning.html",
+          "hash": "0jZbbu+5+ecUG4kmvaRhGQ=="
         }
       },
       "is_incremental": false,
@@ -17635,7 +17676,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "8bLz0Y7w7OWAnhp+SVCpyw=="
+          "hash": "hh5gF0nHML0Dh650/KJGnQ=="
         }
       },
       "is_incremental": false,
