@@ -1,33 +1,46 @@
-# How to execute order lines?
-The **Warehouse Order (WO)** is the document that contains the actual plan that needs to be executed by the WMS module. 
+# How to execute order lines
 
-The lines of the **WO** can be executed trough the Orders menu of the [WMS Worker](xref:wms-worker) or through the **Execute lines** UI function.
+А **warehouse order (WO)** is the document that contains the actual plan that needs to be executed by the WMS module. 
 
-How these lines are executed, depends on their [Task type](how-it-works/task-types/index.md). More information about the purpose of each task type and how it can be executed can be found in the 
-[Task type](how-it-works/task-types/index.md) subtopics.
+The WO **lines** can be executed through the **Orders** menu of the **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** or through the **Execute lines** UI function.
 
-Note that, not all task types are currently available for order lines execution. Some, such as the [Count task type](how-it-works/task-types/count.md) for example, 
-are available only as ad hoch operation (e.g. the Renciliation menu of the WMS Worker).
+How these lines are executed depends on their **[task type](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/index.html)**.
 
-## Orders menu in WMS Worker
-[WMS Worker](xref:wms-worker) is our WMS mobile application available on all compatible Android devices, including handheld devices. 
-The Orders menu is used by the warehouse worker to execute the lines of the warehouse orders that has been assigned to them. For more information see [WMS Worker](xref:wms-worker) 
+**NOTE!** 
 
-## Execute lines UI function 
+Not all task types are currently available for order lines execution. 
 
-The "Execute lines" UI function available in the definition of the Warehouse Orders.
+Some, such as **[count](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/count.html)**, are available only as ad hoch operation (e.g. the Reconciliation menu of the WMS Worker).
 
-When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. As a result, it creates Warehouse Transactions, Document Fulfillments or both, depending on the particular line's [task type](how-it-works/task-types/index.md). <br/>The function is especially useful when [entering initial availability](how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
+### Orders menu
 
-To begin, go to the definition of the Warehouse Order you would like to execute. Make sure that its state is **released** and if it is not, **release** the document before starting the function.
+The **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** is our WMS mobile application available on all compatible Android devices, including handheld devices.
+
+The **Orders** menu is used by the warehouse worker to execute the lines of the warehouse orders that have been assigned to them. 
+
+### Execute lines UI function 
+
+This function is available in the definition of each warehouse order.
+
+When started, it executes the warehouse order lines according to the information specified in them - product, quantity, lot, serial number, etc.. 
+
+As a result, it creates warehouse transactions, document fulfillments, or both, depending on the particular line's [task type](how-it-works/task-types/index.md). 
+
+The function is especially useful when [entering initial availability](how-to/initial-availability.md) in the Warehouse or as a backup way to execute lines without using the [WMS Worker](xref:wms-worker) app, in case there is a problem with mobile devices for example.
+
+#### Step-by-step 
+
+1. To begin, go to the definition of the Warehouse Order you would like to execute.
+
+Make sure that its state is **released** and if it is not, **release** the document before starting the function.
 
 ![Picture](pictures/release-document.png)
 
-Then, click the **UI Functions** and select **Execute lines**.
+2. Then, click the **UI Functions** and select **Execute lines**.
 
 ![Picture](pictures/executelines.png)
 
-You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking **OK**.
+3. You'll get a confirmation message preceding the operation. Confirm that you want to perform it by clicking **OK**.
 
 ![Picture](pictures/warning-message.png)
 
