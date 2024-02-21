@@ -52,7 +52,7 @@ There could be a **suggestion** again. However, if it does not have a barcode, i
 
 ## Serial
 
-Depending on the product, you might be asked for its serial number, with or without suggested value to use and with AVAILABILITY section again:
+Depending on the product, you might be asked for its serial number, with or without a suggested value, and with the **Availability** section again:
 
 ![Serial](pictures/order-serial.png)
 
