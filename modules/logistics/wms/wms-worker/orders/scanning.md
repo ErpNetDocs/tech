@@ -14,7 +14,7 @@ To scan a product once, simply enter its code into the **Scan** field, then clic
  
 ## Multiple scans
 
-To scan a product multiple times, input the desired quantity into the **Scan** field, optionally followed by a **"*"** symbol, and then click or tap the **blue arrow** button.
+To scan a product multiple times, input the desired quantity into the **Scan** field, optionally followed by a **"*"** operator, and then click or tap the **blue arrow** button.
 
 ![picture](pictures/scan_multiple_12_02.png)
 
