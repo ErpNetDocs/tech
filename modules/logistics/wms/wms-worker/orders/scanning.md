@@ -38,6 +38,6 @@ The provided numbers will be **summed together**, and you can see the total quan
 
 > [!NOTE]
 > 
-> Example:
+> **Example:**
 >
 > Entering "1", "2" and then "3" separately will result in a final quantity of "6" in the quantity box.
