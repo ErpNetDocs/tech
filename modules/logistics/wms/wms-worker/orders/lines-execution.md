@@ -1,7 +1,10 @@
-# Lines Execution
+# Lines execution
 
-The line execution starts when we press the <b>Execute</b> button in the lines list or when we Scan a code and a matching line is found.
-The execution guides the worker trough the applicable screens. The applicable screens are ....
+The order line execution starts when you press the **Execute** button in the lines list or when you **scan** a code and a matching line is found.
+
+To learn more about the product scanning process, please read **[here](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html)**.
+
+Once the execution begins, it guides you through several screens.
 
 ## Location
 
@@ -19,7 +22,7 @@ Click on the desired location to make the selection.
 
 ## LUN
 
-
+To be updated.
 
 ## Product
 
@@ -30,6 +33,7 @@ Even if the product is not replaced, it still needs to be scanned.
 
 ## Variant
 
+To be updated.
 
 ## Lot
 
@@ -54,6 +58,8 @@ The Quantity field allows the employee to select the unit and quantity of the pr
 You can make the quick suggested action with the <b>Use</b> button or enter it manually. The <b>INFO</b> section underneath summarizes your previous selections.
 
 ## Destination
+
+To be updated.
 
 ## Complete
 
