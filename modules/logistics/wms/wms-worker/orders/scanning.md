@@ -24,7 +24,7 @@ You need to enter the product code into the **Scan** field to scan it the desire
 
 ![picture](pictures/Scan_quantity_box_12_02.png)
 
-### Add and see total entered quantity
+## Add and see total entered quantity
 
 When scanning a product multiple times, it might sometimes be more convenient to input the quantity several times.
 
@@ -36,4 +36,6 @@ The provided numbers will be **summed together**, and you can see the total quan
 
 > [!NOTE]
 > 
+> Example:
+>
 > Entering "1*", then "2*", then "3*", and clicking the **blue arrow** button after each number will result in a final quantity of 6 in the quantity box.
