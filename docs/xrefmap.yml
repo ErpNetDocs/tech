@@ -389,7 +389,7 @@ references:
   name: winclientfull
   href: includes/winclientfull.html
 - uid: wms
-  name: Warehouse management
+  name: WMS
   href: modules/logistics/wms/index.html
 - uid: wms-worker
   name: WMS Worker
