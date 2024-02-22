@@ -4,29 +4,11 @@ uid: wms
 
 # WMS 
 
-For larger warehouses with multiple locations, where real-time tracking of stock availability is essential across warehouse locations, we utilize **WMS**. 
-
-Following **Store Orders**, warehouse documents are generated.
+For larger warehouses with multiple locations where real-time tracking of stock availability is essential across warehouse locations, we utilize the **Warehouse management system**. 
 
 ![picture](pictures/WMS_View_21_02.png)
- 
-## Documents
 
-### Warehouse Requisitions 
-
-Contains request for warehouse operation created from another module.
-
-![picture](pictures/WMS_Warehouse_requsitions_21_02.png)
- 
-### Warehouse Orders
-
-Contains order for internal warehouse operation or plan for execution of **Warehouse Requisition**. The **Warehouse Order** is executed within the **WMS Worker**.
- 
-![picture](pictures/WMS_Warehouse_Ordes_21_02.png)
-
-# Warehouse management
-
-Warehouse management module follows the concepts of the Warehouse Management Systems [WMS](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **managed warehouses**.
+**WMS** follows the concepts of [warehouse management systems](https://en.wikipedia.org/wiki/Warehouse_management_system). The main objective for implementing a WMS is to optimize the efficiency of the warehouse operations in the **managed warehouses**.
 
 **Managed warehouses** are physical warehouses, which have managed operation. They exist outside of existing store definitions. The Stores concept is used for the management of inventory levels and general ledger (accounting) entries. Managed Warehouses are sub-level, which is used to manage all warehouse activities, including:
 
