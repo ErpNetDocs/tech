@@ -4,9 +4,9 @@ uid: wms
 
 # WMS 
 
-For larger warehouses with multiple locations, where real-time tracking of stock availability is essential across warehouse locations, we utilize WMS. 
+For larger warehouses with multiple locations, where real-time tracking of stock availability is essential across warehouse locations, we utilize **WMS**. 
 
-Following Store Orders, warehouse documents are generated.
+Following **Store Orders**, warehouse documents are generated.
 
 ![picture](pictures/WMS_View_21_02.png)
  
@@ -20,7 +20,7 @@ Contains request for warehouse operation created from another module.
  
 ### Warehouse Orders
 
-Contains order for internal warehouse operation or plan for execution of Warehouse Requisition. The Warehouse Order is executed within the WMS Worker.
+Contains order for internal warehouse operation or plan for execution of **Warehouse Requisition**. The **Warehouse Order** is executed within the **WMS Worker**.
  
 ![picture](pictures/WMS_Warehouse_Ordes_21_02.png)
 
