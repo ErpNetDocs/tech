@@ -20,7 +20,7 @@ With features such as generating store orders and transactions, as well as manag
 
 **Inventory Control** further enhances your logistics operations by providing a centralized platform for documenting procurement and shipment orders, generating corresponding transactions, and reconciling inventory discrepancies. By leveraging features such as scanning stocks and automatic transaction creation, you can streamline inventory management processes and minimize errors.
 
-The **Warehouse Management System (WMS)** component of the **Logistics Module** elevates your warehouse operations to new heights. With features for generating warehouse documents, managing warehouse requisitions and orders, and fulfilling orders efficiently within the WMS Worker, you can optimize warehouse workflows and improve operational efficiency.
+The **Warehouse Management System (WMS)** component of the **Logistics Module** elevates your warehouse operations to new heights. With features for generating warehouse documents, managing warehouse requisitions and orders, and fulfilling orders efficiently within the **WMS Worker**, you can optimize warehouse workflows and improve operational efficiency.
 
 
 
