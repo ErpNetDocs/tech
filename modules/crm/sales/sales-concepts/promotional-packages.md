@@ -6,7 +6,7 @@ uid: promotional-package
 
 Promotional packages are packages of products which can be added into sales orders. 
  
-After they are added, the products from the package appear as **sales order lines** and their quantity is a multiple of the number of the sold packages. 
+The products from the package appear as **sales order lines** and their quantity is a multiple of the number of the sold packages. 
  
 If a line is added from a promotional package, then the **name** of the promotional package is filled in the **Promotional package** field.
 
