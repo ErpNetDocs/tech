@@ -1,4 +1,4 @@
-# CRM Sales module
+# Sales
 
 > *Activity* → *Opportunity* → *Offer* → **Sales order** → *Invoice order* → *Invoice*
 
