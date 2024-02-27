@@ -16,6 +16,8 @@ This section enables you to access a comprehensive overview of all created produ
 
 ## Set up 
 
+Before you can actually create a product, you need to define a **type** and a **group** for it.
+
 ### Product types 
 
 Before initiating the creation of a product, it's crucial to define a **Product Type**. This can be done by navigating to the **Product Types** panel. 
