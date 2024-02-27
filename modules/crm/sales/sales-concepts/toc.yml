@@ -20,6 +20,6 @@
   href: promotional-packages.md
 - name: VAT deviation
   href: vat-deviation.md
-- name: Algorithms
-  href: algorithms/toc.yml
-  topicHref: algorithms/index.md
+- name: Determining algorithms
+  href: determining-algorithms/toc.yml
+  topicHref: determining-algorithms/index.md
