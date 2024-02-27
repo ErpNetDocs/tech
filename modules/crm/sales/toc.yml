@@ -1,8 +1,9 @@
 - name: Overview
   href: index.md
-- name: Multiple line discounts
-  href: multiple-line-discounts.md
-- name: Sales concepts
+- name: Concepts
   href: sales-concepts/toc.yml
   topicHref: sales-concepts/index.md
- 
+- name: Definitions
+  href: definitions/toc.yml
+  topicHref: definitions/index.md
+  
