@@ -70,9 +70,9 @@ Here's a brief overview highlighting the essential fields, which are frequently 
 
 #### Assign Defaults 
 
-The **Default** fields allow you to specify preset information for sales transactions. For example, if the **Default Currency** is set to BGN, all sales will be automatically conducted in that currency. 
+The **Default** fields allow you to specify preset information for sales transactions. For example, if the **Default Currency** is set to **BGN**, all sales will be automatically conducted in that currency. 
 
-Similarly, if the **Default Payment Term Days** are set to 30, this term will be applied to every sale by default. This principle applies to all default fields within the **New Customer** window.
+Similarly, if the **Default Payment Term Days** are set to **30**, this term will be applied to every sale by default. This principle applies to all default fields within the **New Customer** window.
 
 > [!NOTE]
-> You have the flexibility to modify each default value when executing a Sales Order.
+> You have the flexibility to modify each default value when executing a **Sales Order**.
