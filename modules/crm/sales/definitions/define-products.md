@@ -1,16 +1,14 @@
-# Defining Products and their settings step-by-step guide 
+# Product definition
 
-In the **ERP Web Client**, you have the capability to create and manage products, which are the various items within the enterprise. 
+For the purposes of creating a sales order, you must define and manage **products** which you can sell to customers.
 
-These products can be purchased, stored, sold, and depreciated as needed. Managing products involves configuring details such as descriptions, pricing, inventory levels, and other relevant attributes. 
+This involves adding various **details** about them which you can later make use of while creating the order.
 
-Additionally, the system facilitates seamless digital transactions involving these products, whether it's procurement from suppliers, sales to customers, or internal inventory management. 
+Below is a step-by-step guide on how to define products and configure their settings.
 
-Below is a step-by-step guide outlining how to define products and customize their settings.
+### Navigation
 
-## Navigation
-
-In the **General** module's **Products** model, you'll encounter the **Products** panel. 
+From the **General** module, click on **Products**. There, you'll find the **Products** panel. 
 
 This section enables you to access a comprehensive overview of all created products, create new ones as needed, and review detailed information about each product.
 
