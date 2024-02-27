@@ -4,21 +4,22 @@
   href: pricing.md
 - name: Price types
   href: price-types.md
+- name: Sales order row types
+  href: sales-order-row-types.md
 - name: Amount to pay
   href: amount-to-pay.md
+- name: Sales order payment plan
 - name: Deferred payments options
   href: deferred-payments-options.md
+- name: Minimal sales price
+  href: minimal-sales-price.md
+- name: Minimal sales quantity
+  href: minimal-sales-quantity.md
 - name: Determine line amount in sales orders
   href: determine-line-amount-in-sales-orders.md
 - name: Determine payment account in sales order
   href: determine-payment-account-in-sales-order.md
 - name: Determine tax groups
   href: tax-groups.md
-- name: Minimal sales price
-  href: minimal-sales-price.md
-- name: Minimal sales quantity
-  href: minimal-sales-quantity.md
-- name: Sales order row types
-  href: sales-order-row-types.md
 - name: VAT deviation
   href: vat-deviation.md
