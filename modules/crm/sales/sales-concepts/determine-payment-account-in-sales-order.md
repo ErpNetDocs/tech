@@ -1,7 +1,5 @@
 # Determine payment account in sales order
 
-## The algorithm
-
 The algorithm for the determination of the payment account in the sales order is the following:
 
 SalesOrder.PaymentAccount is set to one of the following (in order of their precedence):
