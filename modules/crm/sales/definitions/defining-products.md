@@ -40,8 +40,9 @@ This ensures seamless documentation and accounting processes within the system.
 
 ![Pictures](pictures/Products_Types_Stocked_27_02.png)
 
-> Note:
-> A product is not exclusively an item; it can also encompass services.
+**Note:**
+
+A product is not exclusively an item; it can also encompass services.
 
 ### Product Group
 
