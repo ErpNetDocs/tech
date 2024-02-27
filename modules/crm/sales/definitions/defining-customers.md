@@ -63,11 +63,7 @@ Here's a brief overview highlighting the essential fields, which are frequently 
 
 •	**Credit Limit**– If sales have been made for a certain amount but payment has not yet been issued, the system will notify you that the customer has exceeded their credit limit.
 
-•	**Customer Status** – You have two options for selling. You can either sell directly to a customer, or you can sell to one customer but ship the order to a different one. 
-
-To accommodate this, there are two checkboxes. If you're shipping directly to the customer that placed the order, check the Allow Use as Primary Customer box. 
-
-If you're shipping to another customer, check the Allow Use As Ship Customer box.
+•	**Customer Status** – You have two options for selling. You can either sell directly to a customer, or you can sell to one customer but ship the order to a different one. To accommodate this, there are two checkboxes. If you're shipping directly to the customer that placed the order, check the Allow Use as Primary Customer box. If you're shipping to another customer, check the Allow Use As Ship Customer box.
 
 > [!NOTE]
 > The **Credit Limit** can be overridden in the Sales Order by authorized personnel.
