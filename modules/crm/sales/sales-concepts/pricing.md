@@ -1,7 +1,5 @@
 # Pricing
 
-### Description
-
 When a user enters a sales order (or similar document), the system automatically assigns the appropriate sales price. 
 
 Selecting the correct price is the main topic of the pricing.
