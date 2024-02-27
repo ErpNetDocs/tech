@@ -18,5 +18,7 @@
   href: minimal-sales-quantity.md
 - name: Sales order row types
   href: sales-order-row-types.md
+- name: Tax groups
+  href: tax-groups.md
 - name: VAT deviation
   href: vat-deviation.md
