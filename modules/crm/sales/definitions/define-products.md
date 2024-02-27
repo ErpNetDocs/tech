@@ -20,9 +20,9 @@ Before you can actually create a product, you need to define a **type** and a **
 
 ### Product types 
 
-Before initiating the creation of a product, it's crucial to define a **Product Type**. This can be done by navigating to the **Product Types** panel. 
+Types allow you to differentiate one kind of a product from another. It is a characteristic that makes products unique and yet strictly related to something.
 
-Click the **"+"** button to begin adding details about your new product.
+To create a new type, navigate to the **Product Types** panel and click on its **"+"** button to begin adding details about your new product type.
 
 ![Pictures](pictures/Products_Types_27_02.png)
 
@@ -46,7 +46,7 @@ By selecting the appropriate checkboxes, you ensure that the generated documents
 
 ### Product groups
 
-The purpose of placing products in groups is to **categorize** them and keep them in one place with others that share the same or similar features.
+The purpose of placing products in groups is to **categorize** them and make them part of something bigger, with other products that share the same or similar features.
 
 To create a new group, navigate to the **Product Groups** panel and click on its **“+”** button.
 
