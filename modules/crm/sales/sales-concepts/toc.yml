@@ -12,13 +12,13 @@
   href: determine-line-amount-in-sales-orders.md
 - name: Determine payment account in sales order
   href: determine-payment-account-in-sales-order.md
+- name: Determine tax groups
+  href: tax-groups.md
 - name: Minimal sales price
   href: minimal-sales-price.md
 - name: Minimal sales quantity
   href: minimal-sales-quantity.md
 - name: Sales order row types
   href: sales-order-row-types.md
-- name: Tax groups
-  href: tax-groups.md
 - name: VAT deviation
   href: vat-deviation.md
