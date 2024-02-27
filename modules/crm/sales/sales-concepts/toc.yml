@@ -9,12 +9,15 @@
 - name: Amount to pay
   href: amount-to-pay.md
 - name: Sales order payment plan
+  href: sales-order-payment-plan.md
 - name: Deferred payments options
   href: deferred-payments-options.md
 - name: Minimal sales price
   href: minimal-sales-price.md
 - name: Minimal sales quantity
   href: minimal-sales-quantity.md
+- name: Promotional packages
+  href: promotional-packages.md
 - name: Determine line amount in sales orders
   href: determine-line-amount-in-sales-orders.md
 - name: Determine payment account in sales order
