@@ -11,7 +11,5 @@ Here, you will find detailed information into common sales-related concepts that
 * **[Minimal sales price](minimal-sales-price.md)**
 * **[Minimal sales quantity](minimal-sales-quantity.md)**
 * **[Promotional packages](promotional-packages.md)**
-* **[Determine line amount in sales orders](determine-line-amount-in-sales-orders.md)**
-* **[Determine payment account in sales order](determine-payment-account-in-sales-order.md)**
-* **[Determine tax groups](tax-groups.md)**
 * **[VAT deviation](vat-deviation.md)**
+* **[Algorightms](algorithms/index.md)**
