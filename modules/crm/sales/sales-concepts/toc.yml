@@ -1,5 +1,9 @@
 - name: Overview
   href: index.md
+- name: Pricing
+  href: pricing.md
+- name: Price types
+  href: price-types.md
 - name: Amount to pay
   href: amount-to-pay.md
 - name: Deferred payments options
@@ -16,4 +20,3 @@
   href: sales-order-row-types.md
 - name: VAT deviation
   href: vat-deviation.md
-  
