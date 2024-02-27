@@ -66,25 +66,29 @@ There are **two** methods for creating a product, both ensuring consistency in t
 
 1. Navigate to the **Create** section within the **Products** panel. Here, you'll find a list of various **product types**.
 
-   Upon selecting a **Product Type**, a window titled **New Product** will open, tailored to the chosen **Product Type**, allowing you to proceed with the creation process.
+   Upon selecting the respective type, a separate window will open, automatically reflecting the chosen product type.
+
+   You can proceed with the creation process by filling out the rest of the details.
 
 ![Pictures](pictures/Products_create_27_02.png)
 
-The second approach involves utilizing the New button situated on the **Products** table. Upon clicking this button, a menu will appear, presenting different **Product Types**. 
+2. Use the **New** button found above the **Products** list. Upon clicking this button, you can select a **product type** from a dropdown menu.
 
-Following the selection of a **Product Type** from the menu, a **New Product** window will emerge, facilitating the creation of this particular type of product.
+Then, you will be taken to the standard product creation form and proceed to add the necessary details.
 
 ![Pictures](pictures/Products_create_New_27_02.png)
 
-Upon accessing the **New Product** window, you have the opportunity to input the desired information into the fields and checkboxes. 
+### New product details
 
-Completing these fields at this stage will streamline the process when executing a Sales Order, as the product information you provide here will automatically populate the **Sales Order** form, ultimately saving you time.
+Once you access the **New Product** window, you can start adding all the necessary details for your product.
+
+Most of the fields are optional. However, whatever information you provide at this point will simplify the process of creating a sales order document later, as it will **automatically** be added in the order creation form.
 
 ![Pictures](pictures/Products_New_Window_25_02.png)
 
-The mandatory fields for product creation include **Product Group**, **Part Number**, **Name**, **Base Measurement category**, and **Measurement Unit**. 
+The mandatory fields for creating a new product include **Product Group**, **Part Number**, **Name**, **Base Measurement category**, and **Measurement Unit**. 
 
-The **Measurement Unit** holds particular significance, as it dictates the standard unit of measurement for the product in the warehouse, regardless of the measurement used for purchasing or selling purposes.
+The **Measurement Unit** is especially important, as it will determine the standard unit of measuring the product in a warehouse, which is **not** the same as the measurement used for purchasing or selling purposes.
   
 ![Pictures](pictures/Products_measurement_unit_27_02.png)
 
@@ -92,15 +96,15 @@ Once you've filled out all the desired fields, click the **Save and Reload** but
 
 ![Pictures](pictures/Products_Save_and_reload_27_02.png)
 
-#### Most common Fields 
+#### Most common fields 
 
-Here's a succinct summary outlining the commonly used fields, along with those less frequently utilized:
+Here's a summary of commonly used fields, along with those less frequently utilized:
 
-•	**Is Serialized** - Activating this checkbox mandates that a Sales Order cannot be fulfilled without a serial number.
+* **Is Serialized** - Clicking this checkbox determines that a sales order **cannot** be fulfilled without a serial number.
 
-•	**Standard Price Per Lot** - This field allows you to designate the standard price for one lot of the product. This price is automatically applied during the sale of the product.
+* **Standard Price Per Lot** - This field allows you to define the standard price for one lot of the product. It is automatically applied during the sale.
 
-•	**Use Lots** - This option enables the product to be stored in Lots. You can choose to allow, not allow, or even require this feature.
+* **Use Lots** - This option enables the product to be stored in lots. You can choose to **allow**, **not allow**, or even **require** this feature.
 
 #### Customize view 
 
