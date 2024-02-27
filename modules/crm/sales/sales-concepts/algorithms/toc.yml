@@ -3,5 +3,5 @@
 - name: Determine payment account in sales order
   href: determine-payment-account-in-sales-order.md
 - name: Determine tax groups
-  href: tax-groups.md
+  href: determine-tax-groups.md
   
