@@ -1,14 +1,16 @@
-# Defining Customers and their settings step-by-step guide 
+# Customer definition
 
-In the **ERP Web Client**, you have the ability to create and manage customers with whom you'll be conducting business. 
+For the purposes of creating a sales order, you must define and manage **customers** to whom you'll be selling your products. 
 
-This involves configuring various details about these clients and facilitating digital transactions between them and your organization. 
+This involves adding various details about them which you can later make use of while creating the order.
 
-Below is a step-by-step guide outlining how to define customers and customize their settings.
+Below is a step-by-step guide on how to define customers and configure their settings.
 
-## Navigation
+### Navigation
 
-Within the **Common** model of the **CRM** module, you'll find the **Customers** panel. Here, you can view all created customers, create new ones, and review the products contracted with each customer.
+From the **CRM** module, click on **Common**. There, you'll find the **Customers** panel. 
+
+Here, you can view all of your customers, create new ones, and review the products contracted with each customer.
 
 ![Pictures](pictures/Products_view_27_02.png)
  
