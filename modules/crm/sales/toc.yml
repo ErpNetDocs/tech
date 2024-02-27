@@ -2,10 +2,6 @@
   href: index.md
 - name: Multiple line discounts
   href: multiple-line-discounts.md
-- name: Sales order payment plan
-  href: sales-order-payment-plan.md
-- name: Tax group determining algorithm
-  href: tax-groups.md
 - name: Promotional packages
   href: promotional-packages/toc.yml
   topicHref: promotional-packages/index.md
