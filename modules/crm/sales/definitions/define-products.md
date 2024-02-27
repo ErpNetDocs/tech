@@ -16,54 +16,57 @@ This section enables you to access a comprehensive overview of all created produ
 
 ## Set up 
 
-### Product Types 
+### Product types 
 
-Before initiating the creation of a product, it's crucial to define a **Product Type**. This can be done by navigating to the **Products** section within the **General** module. 
+Before initiating the creation of a product, it's crucial to define a **Product Type**. This can be done by navigating to the **Product Types** panel. 
 
-Within the setup section of the module, locate the **Product Type** panel. Click the **"+"** button to open the **New Product Type** window.
+Click the **"+"** button to begin adding details about your new product.
 
 ![Pictures](pictures/Products_Types_27_02.png)
 
-In this window, you'll be prompted to add the code assigned to the **Product Type**. Additionally, you can specify a name for the it. 
+You'll be taken to a window where you need to add the **code** assigned to the product type. 
+
+Additionally, you can also specify a **name** for it. 
 
 ![Pictures](pictures/Products_Types_New_27_02.png)
 
-Furthermore, you'll find checkboxes that allow you to define the characteristics of the product. 
+Several **checkboxes** allow you to further define the characteristics of the product. 
 
-These checkboxes play a significant role in determining the type of documents and invoices generated when a Sales Order is placed. 
+This can determine the **type** of documents and invoices generated when a sales order is placed. 
 
 By selecting the appropriate checkboxes, you ensure that the generated documents accurately reflect the nature of the product and meet regulatory requirements. 
-
-This ensures seamless documentation and accounting processes within the system.
 
 ![Pictures](pictures/Products_Types_Stocked_27_02.png)
 
 > [!NOTE]
-> A product is not exclusively an item; it can also encompass services.
+> 
+> Products are not necessarily items; they can also be services.
 
-### Product Group
+### Product groups
 
-The purpose of product groups is to categorize products hierarchically. To create a new **Product Group**, navigate to the **Product Group** panel in the **Products Module**. 
+The purpose of placing products in groups is to **categorize** them and keep them in one place with others that share the same or similar features.
 
-Click on the **“+”** button to open the **New Product Group** window.
+To create a new group, navigate to the **Product Groups** panel and click on its **“+”** button.
 
 ![Pictures](pictures/Products_Groups_add_27_02.png)
 
-The required fields for a Product Group include Code and Name. Provide a unique code and a descriptive name for the group to create it.
+You are required to provide a unique **name** for the group in order to create it.
+
+The group's **code** will be created automatically, starting from 001, but you can always specify it manually.
 
 ![Pictures](pictures/Products_Groups_required_27_02.png)
 
-Within the **Product Group**, you can assign attributes such as **Next Part Number**, **Next Serial Number**, or **Default Measurement**. 
+Within each product group, you can assign attributes such as a **Next Part Number**, a **Next Serial Number**, or a **Default Measurement**. 
 
-Additionally, you have the flexibility to add **Notes** and easily **Activate** or **Deactivate** them as needed.
+Additionally, you have the ability to add **notes** and easily activate or deactivate them as needed.
 
-## Create a Product 
+## Create a product 
 
-There are two methods for creating a product, both ensuring consistency in the final result when selecting the same **Product Type**. 
+There are **two** methods for creating a product, both ensuring consistency in the final result when selecting the same product type. 
 
-In the first method, you navigate to the **Create** section within the **Products** panel. Here, you'll find a list of various **Product Types**. 
+1. Navigate to the **Create** section within the **Products** panel. Here, you'll find a list of various **product types**.
 
-Upon selecting a **Product Type**, a window titled **New Product** will open, tailored to the chosen **Product Type**, allowing you to proceed with the creation process.
+   Upon selecting a **Product Type**, a window titled **New Product** will open, tailored to the chosen **Product Type**, allowing you to proceed with the creation process.
 
 ![Pictures](pictures/Products_create_27_02.png)
 
