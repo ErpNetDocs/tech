@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sales | ERP.net Tech Docs </title>
+    <title>Determine line amount in sales orders | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sales | ERP.net Tech Docs ">
+    <meta name="title" content="Determine line amount in sales orders | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
-    <link rel="shortcut icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
     
-    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:rel" content="../../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,18 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="sales">Sales</h1>
+            <article class="content wrap" id="_content" data-uid="determine-line-amount-in-sales-orders">
+<h1 id="determine-line-amount-in-sales-orders">Determine line amount in sales orders</h1>
 
-<blockquote>
-<p><em>Activity</em> → <em>Opportunity</em> → <em>Offer</em> → <strong>Sales order</strong> → <em>Invoice order</em> → <em>Invoice</em></p>
-</blockquote>
-<p>The sales module is used to manage the preparing and issuing of <a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Sales.SalesOrders.html">sales orders</a> and the related master data.</p>
-<ul>
-<li><strong><a href="sales-concepts/index.html">Common concepts</a></strong></li>
-<li><strong><a href="definitions/index.html">Definitions</a></strong></li>
-<li><strong>How to create a sales order</strong></li>
-</ul>
+<p>The line amount in a sales order is formed by the following fields: <em><strong>Quantity</strong></em>, <em><strong>Unit Price</strong></em>, <em><strong>Line Standard Discount Percent</strong></em> and <em><strong>Line Custom Discount Percent</strong></em>. The fields <em>Unit Price</em>, <em>Line Standard Discount Percent</em> and <em>Line Custom Discount Percent</em> represent the trade conditions in the row. They may be managed/filled as a nomenclature - as product prices, discounts, bonus programs and promotions.
+The formula of the field line amount is rounded up to the second digit and is as follows:</p>
+<p><strong>[LineAmount]</strong> = Round(<strong>[Quantity]</strong> * <strong>[Unit Price]</strong> * (1 - <strong>[Line Standard Discount Percent]</strong>) * (1 - <strong>[Line Custom Discount Percent]</strong>))</p>
+<h4 id="example-1-">Example 1 :</h4>
+<p>In the row there is quantity <strong>7 PCS</strong> and unit price <strong>0.15472 EUR</strong> and no discounts, then the line amount is:</p>
+<p><strong>[Line Amount]</strong> = Round(<strong>7 * 0.15472</strong> * (1 - 0) * (1 - 0)) = Round(<strong>1.08304</strong>) = <strong>1.08</strong>.</p>
+<h4 id="example-2-">Example 2 :</h4>
+<p>In the row there is quantity <strong>27 PCS</strong> and unit price <strong>0.15472 EUR</strong>, the discounts are <strong>19%</strong> and <strong>7%</strong>, then the line amount is:</p>
+<p><strong>[Line Amount]</strong> = Round( <strong>27 * 0.15472</strong> * (1 - <strong>0.19</strong>) * (1 - <strong>0.07</strong>)) = Round(<strong>1.08304</strong>) = <strong>1.08</strong>.</p>
+<p>There are also other row amount types which meaning and calculation are different than those of amount saved in the field LineAmount.</p>
+<p>For more information, see <a href="https://docs.erp.net/tech/modules/crm/sales/sales-concepts/amount-to-pay.html">Amount to pay</a>.</p>
 </article>
           </div>
           
@@ -96,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -122,8 +124,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
   </body>
 </html>

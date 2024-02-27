@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Product definition | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Product definition | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="product-definition">Product definition</h1>
+
+<p>For the purposes of creating a sales order, you must define and manage <strong>products</strong> which you can sell to customers.</p>
+<p>This involves adding various <strong>details</strong> about them which you can later make use of while creating the order.</p>
+<p>Below is a step-by-step guide on how to define products and configure their settings.</p>
+<h3 id="navigation">Navigation</h3>
+<p>From the <strong>General</strong> module, click on <strong>Products</strong>. There, you'll find the <strong>Products</strong> panel.</p>
+<p>This section enables you to access a comprehensive overview of all created products, create new ones as needed, and review detailed information about each product.</p>
+<p><img src="pictures/Products_view_27_02.png" alt="Pictures"></p>
+<h2 id="set-up">Set up</h2>
+<p>Before you can actually create a product, you need to define a <strong>type</strong> and a <strong>group</strong> for it.</p>
+<h3 id="product-types">Product types</h3>
+<p>Types allow you to differentiate one kind of a product from another. It is a characteristic that makes products unique and yet strictly related to something.</p>
+<p>To create a new type, navigate to the <strong>Product Types</strong> panel and click on its <strong>&quot;+&quot;</strong> button to begin adding details about your new product type.</p>
+<p><img src="pictures/Products_Types_27_02.png" alt="Pictures"></p>
+<p>You'll be taken to a window where you need to add the <strong>code</strong> assigned to the product type.</p>
+<p>Additionally, you can also specify a <strong>name</strong> for it.</p>
+<p><img src="pictures/Products_Types_New_27_02.png" alt="Pictures"></p>
+<p>Several <strong>checkboxes</strong> allow you to further define the characteristics of the product.</p>
+<p>This can determine the <strong>type</strong> of documents and invoices generated when a sales order is placed.</p>
+<p>By selecting the appropriate checkboxes, you ensure that the generated documents accurately reflect the nature of the product and meet regulatory requirements.</p>
+<p><img src="pictures/Products_Types_Stocked_27_02.png" alt="Pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Products are not necessarily items; they can also be services.</p>
+</div>
+<h3 id="product-groups">Product groups</h3>
+<p>The purpose of placing products in groups is to <strong>categorize</strong> them and make them part of something bigger, with other products that share the same or similar features.</p>
+<p>To create a new group, navigate to the <strong>Product Groups</strong> panel and click on its <strong>“+”</strong> button.</p>
+<p><img src="pictures/Products_Groups_add_27_02.png" alt="Pictures"></p>
+<p>You are required to provide a unique <strong>name</strong> for the group in order to create it.</p>
+<p>The group's <strong>code</strong> will be created automatically, starting from 001, but you can always specify it manually.</p>
+<p><img src="pictures/Products_Groups_required_27_02.png" alt="Pictures"></p>
+<p>Within each product group, you can assign attributes such as a <strong>Next Part Number</strong>, a <strong>Next Serial Number</strong>, or a <strong>Default Measurement</strong>.</p>
+<p>Additionally, you have the ability to add <strong>notes</strong> and easily activate or deactivate them as needed.</p>
+<h2 id="create-a-product">Create a product</h2>
+<p>There are <strong>two</strong> methods for creating a product, both ensuring consistency in the final result when selecting the same product type.</p>
+<ol>
+<li><p>Navigate to the <strong>Create</strong> section within the <strong>Products</strong> panel. Here, you'll find a list of various <strong>product types</strong>.</p>
+<p>Upon selecting the respective type, a separate window will open, automatically reflecting the chosen product type.</p>
+<p>You can proceed with the creation process by filling out the rest of the details.</p>
+</li>
+</ol>
+<p><img src="pictures/Products_create_27_02.png" alt="Pictures"></p>
+<ol start="2">
+<li>Use the <strong>New</strong> button found above the <strong>Products</strong> list. Upon clicking this button, you can select a <strong>product type</strong> from a dropdown menu.</li>
+</ol>
+<p>Then, you will be taken to the standard product creation form and proceed to add the necessary details.</p>
+<p><img src="pictures/Products_create_New_27_02.png" alt="Pictures"></p>
+<h3 id="new-product-details">New product details</h3>
+<p>Once you access the <strong>New Product</strong> window, you can start adding all the necessary details for your product.</p>
+<p>Most of the fields are optional. However, whatever information you provide at this point will simplify the process of creating a sales order document later, as it will <strong>automatically</strong> be added in the order creation form.</p>
+<p><img src="pictures/Products_New_Window_25_02.png" alt="Pictures"></p>
+<p>The mandatory fields for creating a new product include <strong>Product Group</strong>, <strong>Part Number</strong>, <strong>Name</strong>, <strong>Base Measurement category</strong>, and <strong>Measurement Unit</strong>.</p>
+<p>The <strong>Measurement Unit</strong> is especially important, as it will determine the standard unit of measuring the product in a warehouse, which is <strong>not</strong> the same as the measurement used for purchasing or selling purposes.</p>
+<p><img src="pictures/Products_measurement_unit_27_02.png" alt="Pictures"></p>
+<p>Once you've filled out all the desired fields, click the <strong>Save and Reload</strong> button to complete the creation of a new <strong>Product</strong>.</p>
+<p><img src="pictures/Products_Save_and_reload_27_02.png" alt="Pictures"></p>
+<h4 id="most-common-fields">Most common fields</h4>
+<p>Here's a summary of commonly used fields, along with those less frequently utilized:</p>
+<ul>
+<li><p><strong>Is Serialized</strong> - Clicking this checkbox determines that a sales order <strong>cannot</strong> be fulfilled without a serial number.</p>
+</li>
+<li><p><strong>Standard Price Per Lot</strong> - This field allows you to define the standard price for one lot of the product. It is automatically applied during the sale.</p>
+</li>
+<li><p><strong>Use Lots</strong> - This option enables the product to be stored in lots. You can choose to <strong>allow</strong>, <strong>not allow</strong>, or even <strong>require</strong> this feature.</p>
+</li>
+</ul>
+<h4 id="customize-view">Customize view</h4>
+<p>From the window settings, you have the option to include additional detail panels such as <strong>Lots</strong>, <strong>Serial Numbers</strong>, <strong>Product Prices</strong>, and more.</p>
+<p>This allows you to view existing information and add new options as necessary.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/definitions/define-products.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

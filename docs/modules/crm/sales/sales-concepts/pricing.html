@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pricing | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Pricing | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="pricing">Pricing</h1>
+
+<p>When a user enters a sales order (or similar document), the system automatically assigns the appropriate sales price.</p>
+<p>Selecting the correct price is the main topic of the pricing.</p>
+<h3 id="product-prices-in-reality">Product prices in reality</h3>
+<p>Each product can have multiple prices associated with it.</p>
+<p>For example, product A can have 3 standard prices:</p>
+<ul>
+<li>50.00 USD - open price, for everyone who asks. This price is defined as Standard.</li>
+<li>48.00 USD - for regular customers</li>
+<li>45.00 USD - for special customers</li>
+</ul>
+<p>Additionally, product A can have a special price for some customers:</p>
+<ul>
+<li>44.00 USD for Customer X</li>
+<li>43.50 USD for Customer Y</li>
+</ul>
+<p>Also, there might be a discount campaign:</p>
+<ul>
+<li>42.00 USD for everyone, from 1/1/2021 till 2/2/2021. This price is defined as Promotion and it should be with higher priority than the Standard price.</li>
+</ul>
+<h2 id="entering-product-prices-in-">Entering product prices in ERP.net</h2>
+<p>The following table shows how we can define the prices from the above example in ERP.net.</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Customer</th>
+<th>Price list</th>
+<th>From date</th>
+<th>To date</th>
+<th>Price type</th>
+<th>Priority</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Standard</td>
+<td>1</td>
+<td>50.00</td>
+</tr>
+<tr>
+<td>Product A</td>
+<td></td>
+<td>Regular</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>48.00</td>
+</tr>
+<tr>
+<td>Product A</td>
+<td></td>
+<td>Special</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>45.00</td>
+</tr>
+<tr>
+<td>Product A</td>
+<td>Customer X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>44.00</td>
+</tr>
+<tr>
+<td>Product A</td>
+<td>Customer Y</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>43.50</td>
+</tr>
+<tr>
+<td>Product A</td>
+<td></td>
+<td></td>
+<td>1/1/2021</td>
+<td>2/2/2021</td>
+<td>Promotion</td>
+<td>5</td>
+<td>42.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how--determines-the-correct-price">How ERP.net determines the correct price</h2>
+<p>The most important thing to note is the Price type field. The price type with the lowest Ordinal position is with highest priority.</p>
+<p>If the Price type field has a blank value, the first thing that is taken into consideration is the Priority field of the price. The higher the priority, the more likely the price will be selected.</p>
+<p>After the user specifies the customer, date and product, ERP.net filters all prices, that match this criteria. When a price is defined with blank value for Customer, the price is applicable to <strong>all</strong> customers. The same goes for Price list, From date, To date, etc. Only the Product field is required, it cannot be blank. If it could be blank, this means, that we can define the same price for ALL products.</p>
+<p>Generally, the algorithm is the following:</p>
+<p>ERP.net filters the prices, based on Product, Customer, Price list and all other conditional fields.</p>
+<ul>
+<li>If among the remaining prices, there are prices with defined price type, the one that has a price type with the lowest Ordinal position is selected</li>
+</ul>
+<p>*<em>If there is more than one price within the same lowest Ordinal position, the one with the highest priority is selected</em></p>
+<ul>
+<li>If among the remaining prices, there are no prices with defined price type, the one with the highest priority is selected</li>
+</ul>
+<p>*<em>If there is more than one price within the same highest priority, the newer one is selected (the one with later From date)</em></p>
+<p>So, after the selection process, one and only one price is selected and applied to the sales document.</p>
+<h2 id="more-conditional-filtering-fields">More conditional filtering fields</h2>
+<p>ERP.net employs many more conditional fields, which allow fine-grained tuning of the product pricing strategy. All conditional fields work in the same basic way as described above.</p>
+<p>The following additional conditional fields further filter down the prices:</p>
+<ul>
+<li><strong>Enterprise Company</strong> - for sales only in the specified enterprise company</li>
+<li><strong>Min Quantity</strong> - for sales quantities above (or equal to) the specified</li>
+<li><strong>Max Quantity</strong> - for sales quantities below (or equal to) the specified</li>
+<li><strong>Target Group</strong> - for customers in the target group</li>
+<li><strong>Ship To Customer</strong> - self explanatory</li>
+<li><strong>Distribution Channel</strong> - self explanatory</li>
+<li><strong>Customer Type</strong> - self explanatory</li>
+</ul>
+<h2 id="specifying-the-price">Specifying the price</h2>
+<p>The price is specified using the following fields:</p>
+<ul>
+<li><strong>Price</strong> - the decimal part of the price</li>
+<li><strong>Currency</strong> - the currency of the price</li>
+<li><strong>Quantity</strong> - the quantity for which the price is specified</li>
+<li><strong>Quantity Measurement Unit</strong> - the measurement unit in which the quantity is specified</li>
+</ul>
+<p>Examples:</p>
+<blockquote>
+<p>5.00 USD for 1 pcs</p>
+<p>10.00 EUR for 3 packs</p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/pricing.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

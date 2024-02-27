@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Promotional packages | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Promotional packages | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="promotional-package">
+<h1 id="promotional-packages">Promotional packages</h1>
+
+<p>Promotional packages are packages of products which can be added into sales orders.</p>
+<p>The products from the package appear as <strong>sales order lines</strong> and their quantity is a multiple of the number of the sold packages.</p>
+<p>If a line is added from a promotional package, then the <strong>name</strong> of the promotional package is filled in the <strong>Promotional package</strong> field.</p>
+<p>A promotional package can be applied for a sales order only if it fulfills the <strong>conditions</strong> of the package:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Promotional package fields</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Valid from date</td>
+<td style="text-align: left;">Starting date from which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid to date</td>
+<td style="text-align: left;">End date (inclusive) to which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for price list</td>
+<td style="text-align: left;">Price list for which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for customer</td>
+<td style="text-align: left;">Customer for which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for target group</td>
+<td style="text-align: left;">Target group for which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid For Customer Filter XML</td>
+<td style="text-align: left;">Sets a custom filter for clients. The promotional package only applies if the customer fulfills this condition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for Ship to customer</td>
+<td style="text-align: left;">Ship to customer for which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for Ship to customer Filter XML</td>
+<td style="text-align: left;">The promotional package only applies if the customer, which is supplied, fulfills this condition.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for Distribution channel</td>
+<td style="text-align: left;">Distribution channel, for which the promotional package is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid for Distribution channel Filter XML</td>
+<td style="text-align: left;">The promotional package only applies if the distribution channel in the sales order fulfills this condition.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Promotional package lines</strong></p>
+<p>Promotional packages lines represent the products that are part of  the particular package. Quantity and Standard discount percent adjust are required for each line.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Promotional package line fields</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Line Number</td>
+<td style="text-align: left;">Line number</td>
+</tr>
+<tr>
+<td style="text-align: left;">Product Id</td>
+<td style="text-align: left;">Product code</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quantity</td>
+<td style="text-align: left;">Product quantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unit Price</td>
+<td style="text-align: left;">When filled sets the unit price of the product.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unit Price</td>
+<td style="text-align: left;">CurrencySpecifies the currency of the unit price</td>
+</tr>
+<tr>
+<td style="text-align: left;">Standard discount Percent Adjust</td>
+<td style="text-align: left;">Specifies the amount of change (in percentage points) of the standard discount.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Standard discount Adjust Or Replace</td>
+<td style="text-align: left;">Specifies the type of change of the standard discount.<br> Possible values:</br>• Add – adds the percent set into the field ‘Standard Discount Percent Adjust’ to the already existing trade discount in the sales order lines:<br>Standard Discount = Standard Discount + adjust, where ‘adjust’ is the value in the field ‘Standard Discount Percent Adjust’.</br>• Replace – Saves the percent of the field ‘Standard Discount Percent Adjust’ in the standard discount for the line: Standard Discount = adjust<br>• Mark Down – Applies after the standard discount and is calculated as follows:</br>Standard Discount = 1 - (1 – Standard Discount) * (1 - adjust) <br></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/promotional-packages.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

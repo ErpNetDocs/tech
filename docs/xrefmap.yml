@@ -231,7 +231,7 @@ references:
   href: modules/crm/sales/sales-concepts/deferred-payments-options.html
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
-  href: modules/crm/sales/sales-concepts/determine-line-amount-in-sales-orders.html
+  href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html
 - uid: determine-line-discount
   name: Determine line discount
   href: modules/crm/crm-common/crm-common-concepts/determine-line-discount.html
@@ -330,7 +330,7 @@ references:
   href: modules/logistics/wms/wms-worker/orders/picking-routes.html
 - uid: promotional-package
   name: Promotional packages
-  href: modules/crm/sales/promotional-packages/index.html
+  href: modules/crm/sales/sales-concepts/promotional-packages.html
 - uid: reconcile-menu
   name: Reconcile
   href: modules/logistics/wms/wms-worker/reconcile.html
