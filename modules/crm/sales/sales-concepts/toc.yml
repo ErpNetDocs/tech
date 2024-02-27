@@ -18,11 +18,8 @@
   href: minimal-sales-quantity.md
 - name: Promotional packages
   href: promotional-packages.md
-- name: Determine line amount in sales orders
-  href: determine-line-amount-in-sales-orders.md
-- name: Determine payment account in sales order
-  href: determine-payment-account-in-sales-order.md
-- name: Determine tax groups
-  href: tax-groups.md
 - name: VAT deviation
   href: vat-deviation.md
+- name: Algorithms
+  href: algorithms/toc.yml
+  topicHref: algorithms/index.md
