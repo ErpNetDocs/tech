@@ -8,9 +8,9 @@ Below is a step-by-step guide on how to define customers and configure their set
 
 ### Navigation
 
-From the **CRM** module, click on **Common**. There, you'll find the **Customers** panel. 
+From the **CRM** module, click on **Common**. 
 
-Here, you can view all of your customers, create new ones, and review the products contracted with each customer.
+There, you'll find the **Customers** panel, where you can view all of the customers you have created, with details about each.
 
 ![Pictures](pictures/Products_view_27_02.png)
  
