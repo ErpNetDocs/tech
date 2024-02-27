@@ -79,7 +79,7 @@ Upon accessing the **New Product** window, you have the opportunity to input the
 
 Completing these fields at this stage will streamline the process when executing a Sales Order, as the product information you provide here will automatically populate the **Sales Order** form, ultimately saving you time.
 
-![Pictures](pictures/Products_New_Window_27_02.png)
+![Pictures](pictures/Products_New_Window_26_02.png)
 
 The mandatory fields for product creation include **Product Group**, **Part Number**, **Name**, **Base Measurement category**, and **Measurement Unit**. 
 
