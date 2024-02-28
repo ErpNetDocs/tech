@@ -16,65 +16,76 @@ There, you'll find the **Customers** panel, where you can view all of the custom
  
 ## Set up 
 
-Before initiating the creation of a **Customer**, it's necessary to set up a **Party**, representing an entity not yet designated as a **Customer** but recognized as a company within the system.
+Before you can actually create a customer, it's necessary to set up a **[party](https://docs.erp.net/tech/concepts/parties-concepts.html?q=party)**, representing an entity not yet designated as a customer but recognized by the system as an entitiy that participates in business relations or transactions.
 
-Prior to customer creation, consider establishing a **Customer Type**. This classification helps organize customers based on their parameters.
+Prior to customer creation, you can also consider adding a **customer type**, which can help organize customers based on common characteristics.
 
 > [!NOTE]
-> The **Customer Type** you define can impact the customer creation process, potentially resulting in variations in the fields you can populate.
+> 
+> The type you define can impact the customer creation process, potentially adding different fields for you to fill out.
 
-## Create a Customer 
+## Create a customer 
 
-There are two pathways available for creating a customer. Regardless of which path you choose, if you select the same **Customer Type**, the creation page will remain identical, ensuring consistency in the final result.
+There are **two** ways to create a customer,  both ensuring consistency in the final result when selecting the same customer type.
 
-In the first method, you navigate to the **Create** section within the Customer panel, where you'll encounter a list of various **Document Types**. 
+1. Navigate to the **Create** section within the **Customers** panel. Here, you'll find a list of various **customer types**.
 
-Upon selecting a **Document Type**, a window will open, which allows you to proceed with the creation process tailored to the chosen **Document Type**.
+   Upon selecting the respective type, a separate window will open, automatically reflecting the chosen customer type.
+
+   You can proceed with the creation process by filling out the rest of the details.
 
 ![Pictures](pictures/Customer_Create_section_27_02.png)
  
-The second approach entails using the New button located on the **Customers** table. Clicking this button will display a menu containing various **Document Types**. 
-
-After selecting a **Document** type from the menu, window will appear, enabling you to create this specific type of customer. 
+2. Use the **New** button found above the **Customers** list. Upon clicking this button, you can select a **customer type** from a dropdown menu.
+  
+   Then, you will be taken to the standard customer creation form and proceed to add the necessary details.
 
 ![Pictures](pictures/Customer_create_new_button_27_02.png)
- 
-Once you access the window, you can input the desired information into the fields and checkboxes. 
 
-Filling out these fields now will streamline the process when executing a **Sales Order**, as the customer information you provide here will be automatically populated in the **Sales Order** form, saving you time.
+### New customer details
+ 
+Once you access the **New Customer** window, you can start adding all the necessary details for your customer.
+
+Most of the fields are optional. However, whatever information you provide at this point will simplify the process of creating a sales order document later, as it will **automatically** be added in the order creation form.
 
 ![Pictures](pictures/Customer_New_window_27_02.png)
  
-The only mandatory field is **Party**. Once you select one from the list, you can create the new customer without filling out any other information.
+The only mandatory field is **Party**. 
 
 ![Pictures](pictures/Customer_party_27_02.png)
 
-Once you've filled out all the desired fields, click the **Save and Reload** button to complete the creation of a new customer.
+Once you've filled out all the desired fields, click the **Save and reload** button to complete the creation of the new customer.
 
 ![Pictures](pictures/Customer_Save_and_reload_27_02.png)
  
-#### Most common Fields 
+#### Most common fields 
 
-Here's a brief overview highlighting the essential fields, which are frequently utilized, alongside the less common ones.
+Here's a summary of commonly used fields, along with those less frequently utilized:
 
-•	**Party** – In this field, select the previously created party that you wish to designate as a customer.
+•	**Party** – In this field, select a party that you wish to designate as a customer.
 
-•	**Active** – This **checkbox** allows you to activate or deactivate a **customer**. When unchecked, the customer will no longer be visible in various lists across the platform, such as in **Sales**.
+•	**Active** – This checkbox allows you to **enable** or **disable** a customer. When unchecked, the customer will no longer be visible in various places on the platform.
 
-•	**Date** – You can specify the start and end dates of the contract with this customer using the **From Date** and **Thru Date** fields.
+•	**Date** – You can specify the start and end dates of the sales contract using the **From Date** and **Thru Date** fields.
 
-•	**Credit Limit**– If sales have been made for a certain amount but payment has not yet been issued, the system will notify you that the customer has exceeded their credit limit.
+•	**Credit Limit**– If a sale has been made for a certain amount but payment has not been issued, the system will notify you that the customer has exceeded their credit limit.
 
-•	**Customer Status** – You have two options for selling. You can either sell directly to a customer, or you can sell to one customer but ship the order to a different one. To accommodate this, there are two checkboxes. If you're shipping directly to the customer that placed the order, check the **Allow Use as Primary Customer** box. If you're shipping to another customer, check the **Allow Use As Ship Customer** box.
+•	**Customer Status** – You have two options for selling:
 
-> [!NOTE]
-> The **Credit Limit** can be overridden in the Sales Order by authorized personnel.
+If you're shipping directly to the customer that placed the order, check the **Allow Use As Primary Customer** box. 
 
-#### Assign Defaults 
-
-The **Default** fields allow you to specify preset information for sales transactions. For example, if the **Default Currency** is set to **BGN**, all sales will be automatically conducted in that currency. 
-
-Similarly, if the **Default Payment Term Days** are set to **30**, this term will be applied to every sale by default. This principle applies to all default fields within the creation window.
+If you've made a sale to one customer but are shipping products to another, check the **Allow Use As Ship To Customer** box.
 
 > [!NOTE]
-> You have the flexibility to modify each default value when executing a **Sales Order**.
+> 
+> The **Credit Limit** field value can be overridden by authorized users.
+
+#### Assign defaults 
+
+Fields starting with "Default" allow you to specify template information for customers. 
+
+For example, if the **Default Currency** is set to BGN, all sales with that customer will be automatically conducted in that currency. 
+
+> [!NOTE]
+> 
+> You have the ability to **modify** each default value when creating the sales order itself.
