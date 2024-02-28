@@ -3531,6 +3531,149 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Groups_add_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Groups_add_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Groups_required_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Groups_required_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_25_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_25_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_26_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_26_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_New_Window_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Save_and_reload_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Save_and_reload_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_New_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_New_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_Stocked_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_Types_Stocked_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_create_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_create_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_create_New_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_create_New_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_measurement_unit_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_measurement_unit_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/definitions/pictures/Products_view_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/definitions/pictures/Products_view_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/sales/images/bg_legislation.png",
       "output": {
         "resource": {
@@ -3634,6 +3777,72 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/sales/images/test.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/bg_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/bg_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/bglegislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/bglegislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/en_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/en_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/fr_legislation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/fr_legislation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/line_deal.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/line_deal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/linedeal.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/sales-concepts/determining-algorithms/pictures/linedeal.png"
         }
       },
       "is_incremental": false,
@@ -10895,7 +11104,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/definitions/define-customers.html",
-          "hash": "VXQ/e7OgAAxeKLoa65NXcw=="
+          "hash": "YAY7DKV03Jwm38L0unPLcg=="
         }
       },
       "is_incremental": false,
@@ -10920,6 +11129,72 @@
         ".html": {
           "relative_path": "modules/crm/sales/definitions/index.html",
           "hash": "gM2ihIchL1HquZwzxsKo1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_Create_section_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_Create_section_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_New_window_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_New_window_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_Save_and_reload_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_Save_and_reload_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_create_new_button_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_create_new_button_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_party_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_party_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/Customer_view_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/Customer_view_27_02.png"
         }
       },
       "is_incremental": false,
@@ -11082,6 +11357,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/Sales_module_info_create_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/Sales_module_info_create_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/Sales_module_info_orders_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/Sales_module_info_orders_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/Sales_module_info_related_entities_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/Sales_module_info_related_entities_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/Sales_module_info_sub_entities_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/Sales_module_info_sub_entities_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/Sales_module_info_view_27_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/Sales_module_info_view_27_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales/images/bg_legislation.png",
       "output": {
         "resource": {
@@ -11164,7 +11494,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/index.html",
-          "hash": "i9qZL/lGsHx/L8X4lcnTMA=="
+          "hash": "DTcHQ/URBuiTyz/2NvhmRQ=="
         }
       },
       "is_incremental": false,
