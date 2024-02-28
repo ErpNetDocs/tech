@@ -12,7 +12,7 @@ From the **CRM** module, click on **Common**.
 
 There, you'll find the **Customers** panel, where you can view all of the customers you have created, with details about each.
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_view_27_02.png)
  
 ## Set up 
 
@@ -31,27 +31,27 @@ In the first method, you navigate to the **Create** section within the Customer 
 
 Upon selecting a **Document Type**, a window titled **New Customer** will open. This allows you to proceed with the creation process tailored to the chosen **Document Type**.
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_Create_section_27_02.png)
  
 The second approach entails using the New button located on the **Customers** table. Clicking this button will display a menu containing various **Document Types**. 
 
 After selecting a **Document** type from the menu, a **New Customer** window will appear, enabling you to create this specific type of customer. 
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_create_new_button_27_02.png)
  
 Once you access the **New Customer** window, you can input the desired information into the fields and checkboxes. 
 
 Filling out these fields now will streamline the process when executing a **Sales Order**, as the customer information you provide here will be automatically populated in the **Sales Order** form, saving you time.
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_New_window_27_02.png)
  
 The only mandatory field is **Party**. Once you select one from the list, you can create the new customer without filling out any other information.
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_party_27_02.png)
 
 Once you've filled out all the desired fields, click the **Save and Reload** button to complete the creation of a new customer.
 
-![Pictures](pictures/Products_view_27_02.png)
+![Pictures](pictures/Customer_Save_and_reload_27_02.png)
  
 #### Most common Fields 
 
