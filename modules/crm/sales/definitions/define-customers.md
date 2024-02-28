@@ -29,17 +29,17 @@ There are two pathways available for creating a customer. Regardless of which pa
 
 In the first method, you navigate to the **Create** section within the Customer panel, where you'll encounter a list of various **Document Types**. 
 
-Upon selecting a **Document Type**, a window titled **New Customer** will open. This allows you to proceed with the creation process tailored to the chosen **Document Type**.
+Upon selecting a **Document Type**, a window will open, which allows you to proceed with the creation process tailored to the chosen **Document Type**.
 
 ![Pictures](pictures/Customer_Create_section_27_02.png)
  
 The second approach entails using the New button located on the **Customers** table. Clicking this button will display a menu containing various **Document Types**. 
 
-After selecting a **Document** type from the menu, a **New Customer** window will appear, enabling you to create this specific type of customer. 
+After selecting a **Document** type from the menu, window will appear, enabling you to create this specific type of customer. 
 
 ![Pictures](pictures/Customer_create_new_button_27_02.png)
  
-Once you access the **New Customer** window, you can input the desired information into the fields and checkboxes. 
+Once you access the window, you can input the desired information into the fields and checkboxes. 
 
 Filling out these fields now will streamline the process when executing a **Sales Order**, as the customer information you provide here will be automatically populated in the **Sales Order** form, saving you time.
 
@@ -74,7 +74,7 @@ Here's a brief overview highlighting the essential fields, which are frequently 
 
 The **Default** fields allow you to specify preset information for sales transactions. For example, if the **Default Currency** is set to **BGN**, all sales will be automatically conducted in that currency. 
 
-Similarly, if the **Default Payment Term Days** are set to **30**, this term will be applied to every sale by default. This principle applies to all default fields within the **New Customer** window.
+Similarly, if the **Default Payment Term Days** are set to **30**, this term will be applied to every sale by default. This principle applies to all default fields within the creation window.
 
 > [!NOTE]
 > You have the flexibility to modify each default value when executing a **Sales Order**.
