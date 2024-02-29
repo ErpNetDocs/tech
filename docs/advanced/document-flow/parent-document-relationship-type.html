@@ -84,6 +84,7 @@
 <ul>
 <li><strong>Sub-task</strong> - the child document is a sub-task that must be done to complete the parent document</li>
 <li><strong>Next task</strong> - the child document is NOT related to the next task and the parent document can be completed <strong>without</strong> requiring the child document to be completed.</li>
+<li><strong>Independent task</strong> - the child document is an independent task, and there are no restrictions regarding the states of the parent and the child document.</li>
 </ul>
 <p>For example, <strong>the sales order-store order</strong> relationship tends to be of 'sub-task' type since the store order must be completed before the sales order. The <strong>offer-sales order</strong> relationship is of 'next task' type, as the work on the offer can be completed once the sales order is created.
 There's no need to complete the sales order first.</p>
@@ -157,6 +158,11 @@ There's no need to complete the sales order first.</p>
 <td style="text-align: left;">Next task</td>
 <td style="text-align: left;">Closed</td>
 <td style="text-align: left;">New, Planned, Firm Planned, Released, Completed, Closed</td>
+</tr>
+<tr>
+<td style="text-align: left;">Independent task</td>
+<td style="text-align: left;">Each possible state</td>
+<td style="text-align: left;">Each possible state</td>
 </tr>
 </tbody>
 </table>
