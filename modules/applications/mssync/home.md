@@ -37,7 +37,7 @@ Within this panel, you'll discover details about your current synchronization jo
 
 ![picture](pictures/Home_calendar_01_03.png)
  
-The **UTC (Latest sync)** timestamp indicates the most recent confirmed synchronization.
+The **Latest sync (UTC)** timestamp indicates the most recent confirmed synchronization.
 
 ![picture](pictures/Home_UTC_01_03.png)
 
