@@ -24,9 +24,9 @@ If you use standard **ERP** credentials to log in, **MsSync** will still open, b
 
 The **MSSync** app consists of **three** sections: 
 
--	**[Home](link)**
--	**[Setup](link)**
--	**[Service](link)**
+-	**[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**
+-	**[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
+-	**[Service](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
 
 In **Home**, you'll find personal profile details, general information about the current **state** of your application, as well as **log data** about the latest sync job.
 
