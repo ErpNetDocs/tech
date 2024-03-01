@@ -16,7 +16,7 @@ There are also **logs** detailing all state changes, similar to those found in t
  
 ### Information panel 
 
-This panel stores details regarding the **Operation mode**, **Client Id**, and **Tenant Id**, all of which are based on your profile settings.
+This panel stores details about the **Operation mode** of the app, and reveals the **Client Id**, and **Tenant Id**, which play a role in establishing the two-way synchronization process.
 
 ![picture](pictures/Service_information_01_03.png)
  
@@ -26,9 +26,9 @@ This button sends a request on behalf of ERP.net to access resources already ava
 
 ![picture](pictures/Service_connect_01_03.png)
 
-This permission not only enables modifications to existing resources but also allows the addition of new ones. 
+This permission not only enables modifications to existing resources but also allows the inclusion of new ones. 
 
-Any changes made to resources in **ERP.net** are mirrored in **Office365**, and the other way around. 
+Any changes made to resources in **ERP.net** are mirrored in **Office365**, and vice versa. 
 
 ![picture](pictures/Service_permission_01_03.png) 
 
