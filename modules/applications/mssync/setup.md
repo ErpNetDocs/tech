@@ -18,7 +18,7 @@ There's a panel containing data about your company, including its **name**, **lo
 
 This information is automatically filled in by the system upon your login and is integral for the two-way synchronization process.
 
-For example, if you're creating an event through Outlook, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will **automatically** pick up your default enterprise company data. 
+For example, if you're creating an event through Outlook's Calendar, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will **automatically** pick up your default enterprise company data. 
 
 ![picture](pictures/Setup_company_info_01_03.png)  
 
