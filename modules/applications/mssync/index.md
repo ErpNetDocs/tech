@@ -1,4 +1,4 @@
-# MSsync
+# Overview
 
 MSSync is an application designed to synchronize resources between **ERP.net** and **Office 365**. 
 
