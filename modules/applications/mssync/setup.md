@@ -8,7 +8,7 @@ Below, there's a **slider button** for toggling synchronization for a given job 
 
 ![picture](pictures/Setup_view_01_03.png) 
 
-Below the **State** section, you'll discover a **log** detailing user availability. This log records every change in the **State**.
+Just under the **state** message, you'll find an additional **log** detailing the latest change which occured for MsSync's state.
 
 ![picture](pictures/Setup_logs_01_03.png) 
 
