@@ -14,14 +14,15 @@ Just under the **state** message, you'll find an additional **log** detailing th
 
 ## Company details 
 
-This panel contains data for your **Enterprise Company**, including its name, location, and **Time Zone**. 
+There's a panel containing data for your company, including its **name**, **location**, and **time zone**.
 
-This information is automatically populated by the software upon your login.
+This information is automatically filled in by the system upon your login.
 
 ![picture](pictures/Setup_company_info_01_03.png)  
 
-> [!NOTE] 
-> You assign the information about your company in your profile. A single profile can contain details for more than one company.
+> [!NOTE]
+> 
+> You can assign data about your enterprise company in your profile settings. A single profile can contain details for more than one company.
 
 ![picture](pictures/Setup_profile_info_01_03.png) 
 
