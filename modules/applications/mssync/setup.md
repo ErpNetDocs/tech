@@ -4,7 +4,7 @@ Within this section, you can find data about your default **enterprise company**
 
 This section also showcases the **state** of the app, as visible in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**.
 
-Below, there's a **slider button** for toggling synchronization for a given job on and off.
+Below, there's a list of your sync tasks, with **slider buttons** built into them for toggling synchronization for on and off.
 
 ![picture](pictures/Setup_view_01_03.png) 
 
