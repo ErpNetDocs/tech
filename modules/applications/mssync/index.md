@@ -16,7 +16,7 @@ To establish the link, you will need to **read** and **accept** the permissions 
 
 ![picture](pictures/Overview_permission_01_03.png)
  
-If you use standard **ERP** credentials to log in, **MsSync** will still open, but will essentially deny you any kind of access to its resources. 
+If you use local **ERP** credentials to log in, **MsSync** will still open, but will essentially deny you any kind of access to its resources. 
 
 ![picture](pictures/Overview_error_01_03.png)
  
@@ -34,7 +34,7 @@ In **Home**, you'll find personal profile details, general information about the
 
 In **Setup**, you can see information about your **enterprise company** - the one that is currently linked to **MSSync**. 
 
-Additionally, a **slider** button allows you to toggle synchronization for a specific sync job on or off.
+Additionally, you can toggle synchronization for a specific sync job **on** or **off**.
 
  ![picture](pictures/Overview_setup_01_03.png)
 
