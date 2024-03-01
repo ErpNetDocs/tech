@@ -1,6 +1,6 @@
 # Setup
 
-Within the **Setup** section you can find data about the **Enterprise Company** utilizing the platform, showing details like **location** and **time zone**. 
+Within the **Setup** section, you can find data about the **enterprise company** utilizing the platform, showing details like **location** and **time zone**. 
 
 This section also showcases the **State**, mirroring the information visible in **Home**. You can also find a sliding button for toggling synchronization on and off.
 
