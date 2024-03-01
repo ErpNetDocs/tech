@@ -43,6 +43,8 @@ The **Service** section is meant for users with administrator access levels. It 
 From here, admins can securely connect their **MSSync** instance to **Entra ID** resources that are essential for activating all synchronization-related functionalities. 
 
 ![picture](pictures/Overview_service_01_03.png)
- 
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the **Web Client**.
 
 
