@@ -18,7 +18,7 @@ There's a panel containing data about your company, including its **name**, **lo
 
 This information is automatically filled in by the system upon your login and is integral for the two-way synchronization process.
 
-For example, if you're creating an event through Outlook, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will automatically pick up your default enterprise company data.
+For example, if you're creating an event through Outlook, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will **automatically** pick up your default enterprise company data. 
 
 ![picture](pictures/Setup_company_info_01_03.png)  
 
@@ -30,31 +30,36 @@ For example, if you're creating an event through Outlook, these details cannot b
 
 > [!NOTE]
 > 
-> If no enterprise company is specified, you will get a notification error indicating which sync job is affected.
+> If no enterprise company is specified, you will get a **notification error** indicating which sync job is affected.
 
 ![picture](pictures/Setup_Notifications_01_03.png) 
 
 ## Sync jobs 
 
-As in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**, there’s a panel presenting available **sync jobs**. 
+As in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**, there’s a panel representing your available **sync jobs**. 
 
-Here, alongside the **latest sync**, you'll notice two extra buttons: one for sync jobs **activation** and **deactivation**, and another for **refreshing** the module.
+Here, alongside the **latest sync**, you'll notice two extra buttons: 
+
+* one for sync jobs **activation** and **deactivation**
+* and another for **refreshing** the module.
 
 ![picture](pictures/Setup_jobs_01_03.png) 
 
 ### Activate and deactivate synchronization 
 
-This button **enables** or **disables** the sync job assigned to it. Simply toggle the slider button in the respective direction and the process will commence. 
+This button **enables** or **disables** the sync job assigned to it. 
+
+Simply toggle the slider button in the respective direction and the process will commence. 
 
 On first-time activation, the system will sync data for the **past two weeks and the upcoming year**. 
 
-Afterwards, synchronization will occur **every 15 minutes**.
+Afterwards, synchronization will occur automatically **every 15 minutes**.
  
 ![picture](pictures/Setup_slider_01_03.png) 
 
 ### Full refresh 
 
-When you click on this button, synchronization for the respective job will refresh on-demand, reflecting the last two weeks and the upcoming year.
+When you click on this button, synchronization for the respective job will refresh **on-demand**, reflecting the last two weeks and the upcoming year.
  
 ![picture](pictures/Setup_fullrefresh_01_03.png) 
 
