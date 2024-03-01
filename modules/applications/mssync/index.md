@@ -4,7 +4,7 @@ MSSync is an application designed to synchronize resources between **ERP.net** a
 
 Each synchronization task is referred to as a **job**, allowing resources created in **Office 365** to be automatically reflected in the corresponding module in the **ERP**, and the other way around.
 
-Currently, the only available sync job is for the [Calendar](https://docs.erp.net/tech/modules/express/my/calendar.html), but more will be added in the near future.
+Currently, the only available sync job is for the [Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html), but more will be added in the near future.
 
 ![picture](pictures/Overview_view_01_03.png)
  
