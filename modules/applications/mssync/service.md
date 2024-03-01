@@ -8,13 +8,13 @@ These permissions are essential for enabling synchronization between the company
 
  ![picture](pictures/Service_view_01_03.png)
 
-##№ State 
+### State 
 
 In the **Service** section, you'll find the current **state** of the MsSync app.
 
 There are also **logs** detailing all state changes, similar to those found in the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** section. 
  
-##№ Information panel 
+### Information panel 
 
 This panel stores details regarding the **Operation mode**, **Client id**, and **Tenant id**, all of which are based on your profile settings.
 
