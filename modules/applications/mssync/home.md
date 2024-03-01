@@ -23,7 +23,7 @@ The connection is stable and there aren’t any operational issues.
 
 #### Error: Unauthorized or insufficient permissions
 
-When an error occurs, it indicates a **problem** with the permissions granted for **Office365** to access and modify resources from **ERP**, or the other way around.
+When an error occurs, it indicates a potential **problem** with the permissions granted for **Office365** to access and modify resources from **ERP**, or the other way around.
 
 ![picture](pictures/Home_error_01_03.png)
  
