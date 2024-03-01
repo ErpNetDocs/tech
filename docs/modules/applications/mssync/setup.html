@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Setup | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Setup | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="setup">Setup</h1>
+
+<p>Within this section, you can find data about your default <strong>enterprise company</strong> - the one logged in MsSync, which includes details like <strong>location</strong> and <strong>time zone</strong>.</p>
+<p>This section also showcases the <strong>state</strong> of the app, as visible in <strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong>.</p>
+<p>Below, there's a list of your sync tasks, with <strong>slider buttons</strong> built into them for toggling synchronization for on and off.</p>
+<p><img src="pictures/Setup_view_01_03.png" alt="picture"></p>
+<p>Just under the <strong>state</strong> message, you'll find an additional <strong>log</strong> detailing the latest change which occured for MsSync's state.</p>
+<p><img src="pictures/Setup_logs_01_03.png" alt="picture"></p>
+<h2 id="company-details">Company details</h2>
+<p>There's a panel containing data about your company, including its <strong>name</strong>, <strong>location</strong>, and <strong>time zone</strong>.</p>
+<p>This information is automatically filled in by the system upon your login and is integral for the two-way synchronization process.</p>
+<p>For example, if you're creating an event through Outlook's Calendar, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will <strong>automatically</strong> pick up your default enterprise company data.</p>
+<p><img src="pictures/Setup_company_info_01_03.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can choose your enterprise company in your profile settings. <br><br> A single profile can contain more than one company.</p>
+</div>
+<p><img src="pictures/Setup_profile_info_01_03.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If no enterprise company is specified, you will get a <strong>notification error</strong> indicating which sync job is affected.</p>
+</div>
+<p><img src="pictures/Setup_Notifications_01_03.png" alt="picture"></p>
+<h2 id="sync-jobs">Sync jobs</h2>
+<p>As in <strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong>, there’s a panel representing your available <strong>sync jobs</strong>.</p>
+<p>Here, alongside the <strong>latest sync</strong>, you'll notice two extra buttons:</p>
+<ul>
+<li>one for sync jobs <strong>activation</strong> and <strong>deactivation</strong></li>
+<li>and another for <strong>refreshing</strong> the module.</li>
+</ul>
+<p><img src="pictures/Setup_jobs_01_03.png" alt="picture"></p>
+<h3 id="activate-and-deactivate-synchronization">Activate and deactivate synchronization</h3>
+<p>This button <strong>enables</strong> or <strong>disables</strong> the sync job assigned to it.</p>
+<p>Simply toggle the slider button in the respective direction and the process will commence.</p>
+<p>On first-time activation, the system will sync data for the <strong>past two weeks and the upcoming year</strong>.</p>
+<p>Afterwards, synchronization will occur automatically <strong>every 15 minutes</strong>.</p>
+<p><img src="pictures/Setup_slider_01_03.png" alt="picture"></p>
+<h3 id="full-refresh">Full refresh</h3>
+<p>When you click on this button, synchronization for the respective job will refresh <strong>on-demand</strong>, reflecting the last two weeks and the upcoming year.</p>
+<p><img src="pictures/Setup_fullrefresh_01_03.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/mssync/setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

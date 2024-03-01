@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overview | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Overview | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="overview">Overview</h1>
+
+<p>MsSync is an application designed to synchronize resources between the <strong>ERP.net Web Client</strong> and <strong>Office 365</strong>.</p>
+<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in the <strong>ERP</strong>, and the other way around.</p>
+<p>Currently, the only available sync job is for the <a href="https://docs.erp.net/webclient/introduction/my-apps/calendar.html">Calendar</a>, but more will be added in the near future.</p>
+<p><img src="pictures/Overview_view_nohighlights_01_03.png" alt="picture"></p>
+<h3 id="access">Access</h3>
+<p>To access <strong>MSSync</strong>, it’s mandatory to sign in with an existing <strong>Microsoft account</strong>.</p>
+<p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions Microsoft needs to obtain.</p>
+<p><img src="pictures/Overview_permission_01_03.png" alt="picture"></p>
+<p>If you use local <strong>ERP</strong> credentials to log in, <strong>MsSync</strong> will still open, but will essentially deny you any kind of access to its resources.</p>
+<p><img src="pictures/Overview_error_01_03.png" alt="picture"></p>
+<h2 id="menu">Menu</h2>
+<p>The <strong>MSSync</strong> app consists of <strong>three</strong> sections:</p>
+<ul>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong></li>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Setup</a></strong></li>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Service</a></strong></li>
+</ul>
+<p>In <strong>Home</strong>, you'll find personal profile details, general information about the current <strong>state</strong> of your application, as well as <strong>log data</strong> about the latest sync job.</p>
+<p><img src="pictures/Overview_home_cropepd_01_03.png" alt="picture"></p>
+<p>In <strong>Setup</strong>, you can see information about your <strong>enterprise company</strong> - the one that is currently linked to <strong>MSSync</strong>.</p>
+<p>Additionally, you can toggle synchronization for a specific sync job <strong>on</strong> or <strong>off</strong>.</p>
+<p><img src="pictures/Overview_setup_01_03.png" alt="picture"></p>
+<p>The <strong>Service</strong> section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between <strong>MSSync</strong> and <strong>Office365</strong>.</p>
+<p>From here, admins can securely connect their <strong>MSSync</strong> instance to <strong>Entra ID</strong> resources that are essential for activating all synchronization-related functionalities.</p>
+<p><img src="pictures/Overview_service_01_03.png" alt="picture"></p>
+<p>For more information about navigating, setting up and configuring MsSync, see:</p>
+<ul>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong></li>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Setup</a></strong></li>
+<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Service</a></strong></li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/mssync/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
