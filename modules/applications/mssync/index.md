@@ -6,7 +6,7 @@ Each synchronization task is referred to as a **job**, allowing resources create
 
 Currently, the only available sync job is for the [Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html), but more will be added in the near future.
 
-![picture](pictures/Overview_view_01_03.png)
+![picture](pictures/Overview_view_nohighlights_01_03.png)
  
 ### Access
 
