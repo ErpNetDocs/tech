@@ -34,7 +34,7 @@ Here, alongside the **latest sync**, you'll notice two extra buttons: one for sy
 
 ![picture](pictures/Setup_jobs_01_03.png) 
 
-##№ Activate and deactivate synchronization 
+### Activate and deactivate synchronization 
 
 This button **enables** or **disables** the sync job assigned to it. Simply toggle the slider button in the respective direction and the process will commence. 
 
