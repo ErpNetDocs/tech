@@ -1,6 +1,6 @@
 # Setup
 
-Within this section, you can find data about your **enterprise company** - the one logged in MsSync, which includes details like **location** and **time zone**. 
+Within this section, you can find data about your default **enterprise company** - the one logged in MsSync, which includes details like **location** and **time zone**. 
 
 This section also showcases the **state** of the app, as visible in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**.
 
