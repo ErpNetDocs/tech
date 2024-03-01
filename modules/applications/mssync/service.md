@@ -16,19 +16,19 @@ There are also **logs** detailing all state changes, similar to those found in t
  
 ### Information panel 
 
-This panel stores details regarding the **Operation mode**, **Client id**, and **Tenant id**, all of which are based on your profile settings.
+This panel stores details regarding the **Operation mode**, **Client Id**, and **Tenant Id**, all of which are based on your profile settings.
 
 ![picture](pictures/Service_information_01_03.png)
  
 ## Connect to Microsoft Entra ID 
 
-This button sends a request to your **Enterprise Company** admin, seeking access to resources already available in your **Office365** account. 
+This button sends a request on behalf of ERP.net to access resources already available in your **Office365** account. 
 
 ![picture](pictures/Service_connect_01_03.png)
 
 This permission not only enables modifications to existing resources but also allows the addition of new ones. 
 
-Any changes made to resources in **ERP** are mirrored in **Office365**, and the other way around. 
+Any changes made to resources in **ERP.net** are mirrored in **Office365**, and the other way around. 
 
 ![picture](pictures/Service_permission_01_03.png) 
 
