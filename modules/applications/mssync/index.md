@@ -52,6 +52,6 @@ For more information about navigating, setting up and configuring MsSync, see:
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
 
 
