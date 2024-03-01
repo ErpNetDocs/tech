@@ -22,7 +22,7 @@ This information is automatically filled in by the system upon your login.
 
 > [!NOTE]
 > 
-> You can assign data about your enterprise company in your profile settings. A single profile can contain details for more than one company.
+> You can assign data about your enterprise company in your profile settings. <br><br> A single profile can contain details for more than one company.
 
 ![picture](pictures/Setup_profile_info_01_03.png) 
 
