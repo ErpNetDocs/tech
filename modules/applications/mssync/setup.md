@@ -24,7 +24,7 @@ For example, if you're creating an event through Outlook, these details cannot b
 
 > [!NOTE]
 > 
-> You can choose your enterprise company in your profile settings. <br><br> A single profile can contain more than one company. <br><br>
+> You can choose your enterprise company in your profile settings. <br><br> A single profile can contain more than one company. 
 
 ![picture](pictures/Setup_profile_info_01_03.png) 
 
