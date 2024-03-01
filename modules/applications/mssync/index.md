@@ -30,7 +30,7 @@ The **MSSync** app consists of **three** sections:
 
 In **Home**, you'll find personal profile details, general information about the current **state** of your application, as well as **log data** about the latest sync job.
 
-![picture](pictures/Overview_home_01_03.png) 
+![picture](pictures/Overview_home_cropepd_01_03.png) 
 
 In **Setup**, you can see information about your **enterprise company** - the one that is currently linked to **MSSync**. 
 
