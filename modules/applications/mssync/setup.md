@@ -2,15 +2,11 @@
 
 Within the **Setup** section, you can find data about your **enterprise company** - the one logged in MsSync, which includes details like **location** and **time zone**. 
 
-This section also showcases the **State** of the app. You can find a **slider button** for toggling synchronization for a given job on and off.
+This section also showcases the **state** of the app, as visible in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**.
+
+Below, there's a **slider button** for toggling synchronization for a given job on and off.
 
 ![picture](pictures/Setup_view_01_03.png) 
-
-## State 
-
-The **State** that is shown in the **Home** you can also find in **Setup**. For more information, you can go to the article about **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**. 
-
-![picture](pictures/Setup_state_01_03.png) 
 
 Below the **State** section, you'll discover a **log** detailing user availability. This log records every change in the **State**.
 
