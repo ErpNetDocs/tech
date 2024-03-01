@@ -46,9 +46,9 @@ From here, admins can securely connect their **MSSync** instance to **Entra ID**
 
 For more information about navigating, setting up and configuring MsSync, see:
 
-*	**Home(https://docs.erp.net/tech/modules/applications/mssync/home.html)**
-*	**Setup(https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
-* **Service(https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
+*	**[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**
+*	**[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
+* **[Service](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
 
 > [!NOTE]
 > 
