@@ -38,13 +38,20 @@ Additionally, a **slider** button allows you to toggle synchronization for a spe
 
  ![picture](pictures/Overview_setup_01_03.png)
 
-The **Service** section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between** MSSync** and **Office365**.
+The **Service** section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between **MSSync** and **Office365**.
 
 From here, admins can securely connect their **MSSync** instance to **Entra ID** resources that are essential for activating all synchronization-related functionalities. 
 
 ![picture](pictures/Overview_service_01_03.png)
 
+For more information about navigating, setting up and configuring MsSync, see:
+
+*	**Home(https://docs.erp.net/tech/modules/applications/mssync/home.html)**
+*	**Setup(https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
+* **Service(https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
+
 > [!NOTE]
+> 
 > The screenshots taken for this article are from v24 of the **Web Client**.
 
 
