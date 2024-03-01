@@ -20,20 +20,20 @@ The connection is stable and there aren’t any operational issues.
 
 ### Error: Unauthorized or insufficient permissions
 
-When an error occurs, it indicates a **problem** with the permissions granted for **ERP** to access and modify resources from **Office365** and the other way around.
+When an error occurs, it indicates a **problem** with the permissions granted for **Office365** to access and modify resources from **ERP** and the other way around.
 
 ![picture](pictures/Home_error_01_03.png)
  
-To address this issue, navigate to **Service** and grant permissions by selecting **“Connect to Microsoft Entra ID”**. 
+To address this issue, navigate to **Service** and grant permissions by selecting **Connect to Microsoft Entra ID**. 
 
 For further assistance, refer to our [Service documentation](https://docs.erp.net/tech/modules/applications/mssync/service.html). 
 
 > [!NOTE]
-> To access **Service** you need to be an administrator.
+> To access **Service**, you need to be an administrator.
 
 ## Sync Jobs 
 
-Within this panel, you'll discover details about the current synchronization jobs and their related information. 
+Within this panel, you'll discover details about your current synchronization jobs and their respective information. 
 
 ![picture](pictures/Home_calendar_01_03.png)
  
@@ -41,10 +41,11 @@ The **UTC (Latest sync)** timestamp indicates the most recent confirmed synchron
 
 ![picture](pictures/Home_UTC_01_03.png)
 
-Additionally, **logs** are available detailing operations, including when a resource is retrieved from a **Office365** and when a resource is sent from **ERP **.
+Additionally, **logs** are available for all operations, including when a resource is retrieved from a **Office365** and when a resource is sent from **ERP**.
 
 ![picture](pictures/Home_logs_01_03.png)
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> 
+> The screenshots taken for this article are from v24 of the platform.
  
