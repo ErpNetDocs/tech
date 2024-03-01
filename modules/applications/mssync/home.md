@@ -27,12 +27,7 @@ When an error occurs, it indicates a **problem** with the permissions granted fo
 
 ![picture](pictures/Home_error_01_03.png)
  
-To address this issue, navigate to **Service** and grant permissions by selecting **Connect to Microsoft Entra ID**. 
-
-For further assistance, refer to our [Service documentation](https://docs.erp.net/tech/modules/applications/mssync/service.html). 
-
-> [!NOTE]
-> To access **Service**, you need to be an administrator.
+To address this issue, please refer to our [Service documentation](https://docs.erp.net/tech/modules/applications/mssync/service.html). 
 
 ## Sync jobs 
 
