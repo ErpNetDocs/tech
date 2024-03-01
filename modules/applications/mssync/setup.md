@@ -26,28 +26,29 @@ This information is automatically filled in by the system upon your login.
 
 ![picture](pictures/Setup_profile_info_01_03.png) 
 
-## Sync Jobs 
+## Sync jobs 
 
-As in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)** section, here’s a panel presenting available **Sync Jobs**. 
+As in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**, there’s a panel presenting available **sync jobs**. 
 
-Here, alongside the **UTC (Latest sync)**, you'll notice two extra actions: one for ***Sync Jobs** activation and deactivation, and another for refreshing the module.
+Here, alongside the **latest sync**, you'll notice two extra actions: one for sync jobs **activation** and **deactivation**, and another for **refreshing** the module.
 
 ![picture](pictures/Setup_jobs_01_03.png) 
 
-### Activate and deactivate Sync button
+### Activate and deactivate synchronization 
 
-The function of this button is to initiate the **Sync Job** assigned to it. Simply toggle the sliding button, and the process will commence. 
+This button **enables** or **disables** the sync job assigned to it. Simply toggle the slider button in the respective direction and the process will commence. 
 
-Upon activation, the software will sync data for the preceding two weeks and the upcoming year. Afterwards, synchronization will occur every fifteen minutes.
+On first-time activation, the system will sync data for the **past two weeks and the upcoming year**. Afterwards, synchronization will occur **every 15 minutes**.
  
 ![picture](pictures/Setup_slider_01_03.png) 
 
 ### Full refresh 
 
-This button will initiate a full refresh on the **Sync Job**. When activated, synchronization will again cover the previous two weeks and the forthcoming year.
+When you click on this button, synchronization for the respective job will refresh manually, reflecting **the last two weeks and the upcoming year**.
  
 ![picture](pictures/Setup_fullrefresh_01_03.png) 
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> 
+> The screenshots taken for this article are from v24 of the platform.
 
