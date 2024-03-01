@@ -14,17 +14,25 @@ Just under the **state** message, you'll find an additional **log** detailing th
 
 ## Company details 
 
-There's a panel containing data for your company, including its **name**, **location**, and **time zone**.
+There's a panel containing data about your company, including its **name**, **location**, and **time zone**.
 
-This information is automatically filled in by the system upon your login.
+This information is automatically filled in by the system upon your login and is integral for the two-way synchronization process.
+
+For example, if you're creating an event through Outlook, these details cannot be filled from there as they are not required by default. As long as the connection with MsSync is properly configured, the Outlook event that will appear in the ERP.net Calendar will automatically pick up your default enterprise company data.
 
 ![picture](pictures/Setup_company_info_01_03.png)  
 
 > [!NOTE]
 > 
-> You can assign data about your enterprise company in your profile settings. <br><br> A single profile can contain details for more than one company.
+> You can choose your enterprise company in your profile settings. <br><br> A single profile can contain more than one company. <br><br>
 
 ![picture](pictures/Setup_profile_info_01_03.png) 
+
+> [!NOTE]
+> 
+> If no enterprise company is specified, you will get a notification error indicating which sync job is affected.
+
+![picture](pictures/Setup_Notifications_01_03.png) 
 
 ## Sync jobs 
 
@@ -43,12 +51,6 @@ On first-time activation, the system will sync data for the **past two weeks and
 Afterwards, synchronization will occur **every 15 minutes**.
  
 ![picture](pictures/Setup_slider_01_03.png) 
-
-> [!NOTE]
-> 
-> If there's an error with the synchronization process, you will get a **notification** stating what went wrong and which job was affected.
-
-![picture](pictures/Setup_Notifications_01_03.png) 
 
 ### Full refresh 
 
