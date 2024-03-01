@@ -2,7 +2,7 @@
 
 The **Service** section is exclusively for **ERP.net** admins. 
 
-Here, they can request permissions for accessing **Office365** resources from an admin within the **Enterprise Company**. 
+Here, they can request permissions for accessing **Office365** resources from an admin within their **Enterprise Company**. 
 
 These permissions are essential for enabling synchronization between the company's **Office365** account and the **ERP.net Web Client**. 
 
