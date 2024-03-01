@@ -13,8 +13,6 @@ These permissions are essential for enabling synchronization between the company
 In the **Service** section, you'll find the current **state** of the MsSync app.
 
 There are also **logs** detailing all state changes, similar to those found in the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** section. 
-
-![picture](pictures/Overview_service_01_03.png)
  
 ## Information panel 
 
