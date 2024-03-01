@@ -30,7 +30,7 @@ This information is automatically filled in by the system upon your login.
 
 As in **[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**, there’s a panel presenting available **sync jobs**. 
 
-Here, alongside the **latest sync**, you'll notice two extra actions: one for sync jobs **activation** and **deactivation**, and another for **refreshing** the module.
+Here, alongside the **latest sync**, you'll notice two extra buttons: one for sync jobs **activation** and **deactivation**, and another for **refreshing** the module.
 
 ![picture](pictures/Setup_jobs_01_03.png) 
 
@@ -38,13 +38,15 @@ Here, alongside the **latest sync**, you'll notice two extra actions: one for sy
 
 This button **enables** or **disables** the sync job assigned to it. Simply toggle the slider button in the respective direction and the process will commence. 
 
-On first-time activation, the system will sync data for the **past two weeks and the upcoming year**. Afterwards, synchronization will occur **every 15 minutes**.
+On first-time activation, the system will sync data for the **past two weeks and the upcoming year**. 
+
+Afterwards, synchronization will occur **every 15 minutes**.
  
 ![picture](pictures/Setup_slider_01_03.png) 
 
 ### Full refresh 
 
-When you click on this button, synchronization for the respective job will refresh manually, reflecting **the last two weeks and the upcoming year**.
+When you click on this button, synchronization for the respective job will refresh on-demand, reflecting the last two weeks and the upcoming year.
  
 ![picture](pictures/Setup_fullrefresh_01_03.png) 
 
