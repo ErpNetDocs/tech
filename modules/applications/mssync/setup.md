@@ -46,7 +46,7 @@ Afterwards, synchronization will occur **every 15 minutes**.
 
 > [!NOTE]
 > 
-> You can assign data about your enterprise company in your profile settings. <br><br> A single profile can contain details for more than one company.
+> If there's an error with the synchronization process, you will get a **notification** stating what went wrong and which job was affected.
 
 ![picture](pictures/Setup_Notifications_01_03.png) 
 
