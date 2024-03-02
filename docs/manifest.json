@@ -3135,6 +3135,314 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_UTC_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_UTC_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_calendar_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_calendar_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_error_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_error_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_logs_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_logs_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_state_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_state_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Home_view_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Home_view_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_error_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_error_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_home_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_home_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_home_cropepd_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_home_cropepd_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_permission_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_permission_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_service_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_service_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_setup_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_setup_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_view_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_view_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Overview_view_nohighlights_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Overview_view_nohighlights_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Service_connect_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Service_connect_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Service_information_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Service_information_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Service_permission_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Service_permission_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Service_state_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Service_state_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Service_view_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Service_view_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_Notifications_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_Notifications_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_company_info_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_company_info_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_fullrefresh_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_fullrefresh_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_jobs_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_jobs_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_logs_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_logs_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_profile_info_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_profile_info_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_slider_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_slider_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_state_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_state_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/Setup_view_01_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/Setup_view_01_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/CL.png",
       "output": {
         "resource": {
