@@ -18,13 +18,13 @@ From procurement to shipment, and inventory control to warehouse management, thi
 
 With the ability to establish suppliers, initiate purchase requests, and manage internal requisitions, you gain full visibility and control over your procurement processes.
 
-![picture](pictures/proc_overview.png)
+![picture](pictures/proc_overviewnew.png)
 
 In conjunction with procurement, the **Inventory** module offers advanced capabilities for managing inventory across interconnected warehouses.
 
 From defining store locations to tracking warehouse lots and serial numbers, this module provides the tools you need to maintain accurate inventory records and ensure product traceability.
 
-![picture](pictures/inv_overview.png)
+![picture](pictures/inv_overviewnew.png)
 
 The **Shipment** module plays a vital role in streamlining the shipping process for purchased stock. 
 
@@ -36,7 +36,7 @@ The **Warehouse Management System (WMS)** component of the **Logistics Module** 
 
 With features for generating warehouse documents, managing warehouse requisitions and orders, and fulfilling orders efficiently within the **WMS Worker**, you can optimize warehouse workflows and improve operational efficiency.
 
-![picture](pictures/wms_overview.png)
+![picture](pictures/wms_overviewnew.png)
 
 **Learn more:**
 
