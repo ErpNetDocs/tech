@@ -4,13 +4,9 @@ uid: logistics-module
 
 # Logistics
 
-The **Logistics Module** serves as the cornerstone of efficient warehouse management and product availability control within your business infrastructure. 
+The Logistics module serves as the cornerstone of efficient warehouse management and product availability control within your business infrastructure. It is designed to streamline operations and optimize processes across all aspects of your warehouse operations, providing a comprehensive suite of functionalities.
 
-It is designed to streamline operations and optimize processes across all aspects of your logistics operations.
-
-It also provides a comprehensive suite of functionalities that empower you to effectively manage every aspect of your warehouse operations. 
-
-From procurement to shipment, and inventory control to warehouse management, this module offers a robust set of tools and features to meet the diverse needs of your business.
+From procurement to shipment and inventory control to warehouse management, Logistics offers a robust set of tools and features to meet the demanding needs of your business.
 
 ![picture](pictures/log_finoverview.png)
 
