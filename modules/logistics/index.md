@@ -4,7 +4,7 @@ uid: logistics-module
 
 # Logistics
 
-The Logistics module serves as the cornerstone of efficient warehouse management and product availability control within your business infrastructure. It is designed to streamline operations and optimize processes across all aspects of your warehouse operations, providing a comprehensive suite of functionalities.
+The Logistics module serves as a cornerstone of efficient warehouse management and product availability control within your business infrastructure. It is designed to streamline operations and optimize processes across all aspects of your warehouse operations, offering a comprehensive suite of functionalities.
 
 From procurement to shipment, through inventory control and warehouse management, Logistics offers a robust set of tools and features to meet the demanding needs of your business.
 
@@ -12,17 +12,17 @@ From procurement to shipment, through inventory control and warehouse management
 
 ### Structure
 
-Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other operations made by warehouses on a daily basis:
+Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis:
 
 #### Common
 
-This is where you can create and preview **logistical units**, including their **types**, in order to use them across other submodules.
+This is where you can create and preview **logistical units**, including their **types**, in order to use them as definitions in other submodules.
 
 ![picture](pictures/log_overview.png)
 
 #### Procurement
 
-This is where you can monitor material sourcing within your warehouse environment.
+This is where you can make **purchase orders** for your warehouse.
 
 With the ability to establish suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes.
 
@@ -30,27 +30,27 @@ With the ability to establish suppliers, initiate purchase requests, and manage 
 
 #### Inventory
 
-This submodule offers advanced capabilities and documents related to inventory control and warehouse management.
+This submodule offers advanced capabilities and allows for the creation and release of **documents** related to both inventory control and warehouse management.
 
 From defining store locations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability.
 
-In addition, you can take advantage of the simplified and intuitive **[Inventory Control](https://docs.erp.net/tech/modules/logistics/inventory/inventory-control/index.html)** application.
+In addition, you can also take advantage of its simplified and intuitive **[Inventory Control](https://docs.erp.net/tech/modules/logistics/inventory/inventory-control/index.html)** application.
 
 ![picture](pictures/inv_overviewnew.png)
 
 #### Shipment
 
-Here, you can streamline various shipping processes for your purchased stocks. 
+Here, you can streamline the various shipping processes initiated by your warehouse. 
 
-With features such as generating store orders and transactions, as well as managing shipment orders, you can effectively coordinate and track the movement of goods from your warehouse to your customers.
+By creating shipment orders and transactions, you can effectively coordinate and track the movement of goods from your warehouse to your customers.
 
 ![picture](pictures/ship_overviewnew.png)
 
 #### WMS
 
-The **Warehouse Management System** section works as a separate module dedicated to the more complex managed warehouse operations.
+The **Warehouse Management System** works as its own separate module dedicated to the more complex managed warehouse operations.
 
-It allows you to create warehouse documents, requisitions and orders, as well as fulfill orders efficiently using the integrated **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** application. 
+It allows you to create warehouse documents, requisitions and transactions, as well as fulfill orders efficiently using the integrated **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** application. 
 
 ![picture](pictures/wms_overviewnew.png)
 
