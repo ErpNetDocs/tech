@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ATP Algorithm | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ATP Algorithm | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ATP-algorithm">
+<h2 id="atp-algorithm">ATP Algorithm</h2>
+
+<p>The current stock holds are added to the unfulfilled store orders chronology. Thus, save for the physical availability, store orders which are not fulfilled, but planned to be on a specific date, are taken into account (the <i>Planned Release Date</i> field indicates this date). Besides physical availability, other already planned stock movements are taken into account.</p>
+<p>The calculated quantities for each date from the new chronology are reviewed and the smallest value is selected. This is the ATP quantity for the specified parameters.</p>
+<p>We use the smallest value. If on a date when we have the smallest value a greater value is entered as ATP quantity, and this quantity is used for a new issuing operation, it will not be enough for all ordered operations. The minimum quantity in the new chronology actually shows the greatest value we can use for the date specified as a parameter without violating other issuing store processes.</p>
+<p>Let’s apply that to the example from <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a>:</p>
+<p>After adding the physical availability to the chronology, we have:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Date</th>
+<th style="text-align: center;">Physical availability</th>
+<th style="text-align: center;">Start quantity</th>
+<th style="text-align: center;">Receipt quantity</th>
+<th style="text-align: center;">Issue quantity</th>
+<th style="text-align: center;">End quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2021/10/01</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">11</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/03</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/04</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">21</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/07</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">13</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/09</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/14</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">14</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/16</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/19</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the graphical chart for the new chronology:
+<img src="pictures/picture1.png" alt="Picture1"></p>
+<p>After reviewing the value column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise">available to promise</a> quantity for <b>2021/10/01</b>.</p>
+<h2 id="total-clculations-for-a-period">Total clculations (for a period)</h2>
+<p>When calculating the ATP for a whole period (more than one date), the data gathering, as well as the combination of the chronology and the current stock holds, is executed the way we described earlier. After that, for every date in the period greater than or equal to the date specified as a parameter, the ATP is defined as follows:</p>
+<ol>
+<li><p>The minimum quantity value for the whole period is defined - let's call it <b>min1</b>. Then, we pick the last (greatest) date for this value - <b>date1</b>. For every date from the starting to <b>date1</b> (including), the ATP is <b>min1</b>.</p>
+</li>
+<li><p>If there are dates in the chronology after <b>date1</b>, the minimum quantity value for the period after <b>date1</b> is <b>min2</b>. The last date which has this value is <b>date2</b>. From the date after <b>date1</b> and before <b>date2</b> (including), the ATP is <b>min2</b>.</p>
+</li>
+<li><p>This is repeated until all dates in the chronology are covered.</p>
+</li>
+</ol>
+<p>The period we are making calculations for is divided into several sub-periods (at least one, and at most - equal to the number of dates in the chronology). In the first sub-period, there is a minimum value for the ATP. For each subsequent sub-period, the ATP is greater than the ATP for the previous sub-period.</p>
+<p>For example, let's have have the following chronology for the period between <b>01.10</b> and <b>06.10</b>, calculated after adding the current physical availability to the data from the unexecuted sore oders.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Date</th>
+<th style="text-align: center;">Physical availability</th>
+<th style="text-align: center;">Start quantity</th>
+<th style="text-align: center;">Receipt quantity</th>
+<th style="text-align: center;">Issue quantity</th>
+<th style="text-align: center;">End quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2021/10/01</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/03</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">22</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/08</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/09</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/12</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/15</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/16</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/20</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/21</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/24</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">31</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/30</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;">2021/10/31</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">20</td>
+</tr>
+</tbody>
+</table>
+<p>After reviewing the chronology, we establish that the period from <b>2021/10/01</b> to <b>2021/10/06</b> is divided to three sub-periods: one from <b>2021/10/01</b> to <b>2021/10/14</b>, another from <b>2021/10/15</b> to <b>2021/10/23</b> and a third from <b>2021/10/24</b> to <b>2021/11/06</b>. For the first period, the minimum value (hence the ATP) is <b>3 pcs</b>. For the second period, it is <b>12 pcs</b>, and for the last period, the ATP is <b>20 pcs</b>.</p>
+<p>These calculations are represented by a graphic:</p>
+<p><img src="pictures/picture2.png" alt="Picture2"></p>
+<h2 id="modifications-in-the-agorithm-iplementation">Modifications in the agorithm iplementation</h2>
+<p>There are some specific changes in the ATP calculation for algorithm implementation. When using the unexecuted store orders chronology instead of starting with an opening balance for a defined period, the definition of the start quantity for the unexecuted stre oders is not really effective. All store movements - the unexecuted by now store orders - are used without limits for date and without calculation for the starting value. These movements calculate the ATP for sub-periods. To calculate the ATP for a specific date, we simply take into account the periods before this date and the minimum value from the last period.</p>
+<p>This method is effective enough. However, problems appear when we want to calculate the ATP for a date before all existing unexecuted store orders. There is no sore oders chronology for this date and as the opening balance is not calculated (it would be zero), the previously mentioned principle for ATP calculation cannot be applied.</p>
+<p>When the date for which we calculate the ATP is before the earliest unexecuted store orders,the following principle is applied:</p>
+<ol>
+<li><p>All unexecuted store orders after the specified date are taken into account, and the ATP is calculated according to their chronology. This is a value <a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a>.</p>
+</li>
+<li><p>The current available physical quantity is calculated - value [<b>Current Stock Holds</b>]</p>
+</li>
+<li><p>If there are future unexecuted store orders, (i.e., if [<a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a>]  is not null), then:</p>
+</li>
+</ol>
+<p>[<b>ATP</b>] = min([<a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a>], [<b>Current Stock Holds</b>])</p>
+<ol start="4">
+<li>Otherwise, [<b>ATP</b>] = [<b>Current Stock Holds</b>]</li>
+</ol>
+<p>For example, if the current physical availability is <b>10 pcs</b> and there are the following unexecuted Store Orders:</p>
+<ul>
+<li><p>2021/10/09 - <b>2 pcs</b>, receipt;</p>
+</li>
+<li><p>2021/10/13 - <b>7 pcs</b>, issue;</p>
+</li>
+<li><p>2021/10/16 - <b>6 pcs</b>, receipt.</p>
+</li>
+</ul>
+<p>the ATP for the dates from <b>2021/10/09</b> to <b>2021/10/15</b> (including) is <b>5 pcs</b>. After this date, it is <b>11 pcs</b>.</p>
+<p>If we have the same data from the previous example, but the issue for <b>2021/10/13</b> is <b>1 pcs</b>, then the ATPs would be as follows:</p>
+<ul>
+<li><p>before <b>2021/10/09: 10 pcs</b> (this is the smaller value from the current physical availability and the <a href="https://docs.erp.net/tech/modules/logistics/planning/projected-available-balance.html?q=Projected%20Available%20Balance">projected available balance</a> after <b>2021/10/09</b>);</p>
+</li>
+<li><p>from <b>2021/10/09</b> to <b>2020/10/15</b> (including): <b>11 pcs</b>;</p>
+</li>
+<li><p>from <b>2021/10/16</b> onward: <b>17 pcs</b>.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/available-to-promise/atp-algorithm.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

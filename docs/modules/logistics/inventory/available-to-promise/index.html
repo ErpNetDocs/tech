@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Available to promise | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Available to promise | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ATP">
+<h1 id="available-to-promise">Available to promise</h1>
+
+<h2 id="description">Description</h2>
+<p>The available to promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al">ATP algorithm</a>, which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.</p>
+<p>The parameters, data, and <a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al">ATP algorithm</a> used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).</p>
+<h2 id="parameters">Parameters</h2>
+<p>The main/required parameters are <b>product</b>, <b>own company</b>, and <b>date</b>. The ATP calculation is executed from the date and for the specified product and own company.</p>
+<p>Additional parameters can be set as <b>store</b> and <b>lot</b>. If a store is specified, the calculation will be executed only for this store. Otherwise, the data is collected from all stores (as though it is limited by the product, the own company, and the date). The lot specification is similar.</p>
+<h2 id="data">Data</h2>
+<p>For a standard ATP calculation, two types of data are used:</p>
+<p><b>1. Current stock holds</b>:</p>
+<p>It shows the availability of the product selected in the specified own company. If a store and a lot are provided, the data is filtered by them.</p>
+<p><b>2. Chronology of the store orders which are not executed</b>:</p>
+<p>It loads the chronology of the unfulfilled parts of <i>non-voided</i> store orders, with statuses ranging from &quot;Planned&quot; to &quot;Released&quot;. The data is filtered by the parameters entered for a product, own company, store, and lot. The chronology is sorted by the <i>Planned Release Date</i> field. The data in this field is fundamental for ATP calculations.</p>
+<p>For example, let's assume that we have specified a <b>product</b>, <b>own company</b>, <b>store</b> and <b>lot</b>, and we want to calculate the ATP for date <b>2020/10/01</b>. The physical availability for this date is <b>13 pcs</b>, and before that date there are two unfulfilled, released store orders - one for receiving <b>7 pcs</b> with date <b>2020/09/28</b> and one for issuing <b>4 pcs</b> with date <b>2020/09/29</b>. The documents after <b>2020/10/01</b> are as follows:</p>
+<ul>
+<li><p><b>2020/10/03</b> - released issuing store order for <b>5 pcs</b>, <b>3 pcs</b> of which are fulfilled with a store transaction on the same date, so the unfulfilled quantity is <b>2 pcs;</b></p>
+</li>
+<li><p><b>2020/10/03</b> - released issuing store order for <b>5 pcs</b>, which is fulfilled with a store transaction marked as <i>single execution</i> and contains <b>2 pcs</b> from the same date, so the unfulfilled quantity is <b>0 pcs</b>;</p>
+</li>
+<li><p><b>2020/10/04</b> - planned receipt store order for <b>16 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/04</b> - planned issuing store order for <b>4 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/07</b> - planned issuing store order for <b>8 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/09</b> - planned issuing store order for <b>7 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/14</b> - planned receipt store order for <b>8 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/16</b> - planned receipt store order for <b>4 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/16</b> - planned issuing store order for <b>9 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/19</b> - planned issuing store order for <b>2 pcs</b>, unfulfilled;</p>
+</li>
+</ul>
+<p>The current availability is <b>8 pcs</b>. It is calculated by adding the two issuing store transactions with date <b>2020/10/03</b> to the availability from <b>2020/10/01</b>. The unfulfilled store orders chronology is as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><b>Date</b></th>
+<th style="text-align: left;"><b>Start quantity</b></th>
+<th style="text-align: left;"><b>Receipt quantity</b></th>
+<th style="text-align: left;"><b>Issue quantity</b></th>
+<th style="text-align: left;"><b>End quantity</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2020/10/01</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/03</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/04</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/07</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/09</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">-2</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/14</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/16</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/19</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">-1</td>
+</tr>
+</tbody>
+</table>
+<p>The start quantity on <b>2020/10/01</b> is calculated by the two issuing store orders before <b>2020/10/01</b>. For the next dates, the unfulfilled store orders from the specific date are added.</p>
+<p>Further reading:</p>
+<ul>
+<li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al">ATP algorithm</a></strong></p>
+</li>
+<li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-reports.html?q=ATP%20Reports">ATP Reports</a></strong></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/available-to-promise/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

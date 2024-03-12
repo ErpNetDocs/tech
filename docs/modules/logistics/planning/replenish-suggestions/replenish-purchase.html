@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Replenishing suggestions for purchase orders | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Replenishing suggestions for purchase orders | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="replenishing-suggestions-for-purchase-orders">Replenishing suggestions for purchase orders</h1>
+
+<p>If your store is running low on product quantities, you can take advantage of <strong>replenishing suggestions</strong> to restore the supply to a desired number.</p>
+<p>By following the steps below, while issuing <strong>purchase orders</strong>, you'll be able to generate lines exclusively for replenishing product quantities.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>For the feature to work as expected, you need to have done two things in advance:</p>
+<ol>
+<li>Define a <strong>product supply</strong> suited for purchase orders.</li>
+</ol>
+<p>Go to <strong>General</strong> <strong>-&gt;</strong> <strong>Products</strong> and select <strong>Product Supply</strong>. From there, add a new supply with the <strong>plus</strong> button.</p>
+<p><img src="pictures/product_supply.png" alt="Picture"></p>
+<p>Make sure to go through each field carefully.</p>
+<p>Suggested replenishment requires specific values for certain fields in order to work.</p>
+<p><img src="pictures/purchase_ord.png" alt="Picture"></p>
+<ul>
+<li><strong>Product</strong> - The product for which the supply (and a purchase order) will be made.</li>
+<li><strong>Procurement Type</strong> - The type of action associated with this product (in this case, bought products imply <strong>Buy</strong>).</li>
+<li><strong>Generate Document Type</strong> - The type of document which will be issued according to the supply rules (leave this as <strong>Purchase Order</strong>).</li>
+<li><strong>Order Point Quantity Base</strong> - Quantity the product must drop to for replenishment to be triggered.</li>
+<li><strong>Planning Maximum Inventory Quantity Base</strong> - Maximum possible quantity of product in the store.</li>
+<li><strong>Planning Lead Time Days</strong> - Days needed to supply or manufacture the product.</li>
+<li><strong>Order Minimum</strong> - Minimum quantity of product that can be ordered at a time.</li>
+<li><strong>Order Maximum</strong> - Maximum quantity of product that can be ordered at a time.</li>
+<li><strong>Order Multiple</strong> - Tick this box to make the purchased product quantity multiple by lot size.</li>
+<li><strong>Order Lot Size Quantity Base</strong> - The lot size value.</li>
+<li><strong>Order Policy</strong> - The policy the replenishment system will follow (leave this as <strong>OPS - Order Point System</strong>).</li>
+<li><strong>Manufacturing Policy</strong> - Used when the procurement type is <strong>Make</strong>.</li>
+<li><strong>From Store</strong> - Used when the procurement type is <strong>Transfer</strong>.</li>
+<li><strong>Preferred Supplier</strong> - Name of the supplier who must have produced the product (will be identical in the purchase order).</li>
+<li><strong>Enterprise Company</strong> - Name of the enterprise company associated with the product supply (identical in the purchase order).</li>
+</ul>
+<p>When done, <strong>save</strong> the product supply.</p>
+<ol start="2">
+<li>Create a new purchase order from the <strong>Logistics</strong> <strong>-&gt;</strong> <strong>Procurement</strong> module or open an existing one.</li>
+</ol>
+<p><img src="pictures/logistics_procurement.png" alt="Picture"></p>
+<p>The status of the document should be <strong>below</strong> Released - most often <strong>New</strong>.</p>
+<p>Make sure the product, supplier and store and are identical to the ones you defined for the product supply.</p>
+<p><img src="pictures/save_purchase.png" alt="Picture"></p>
+<h2 id="use-suggest-replenish">Use Suggest replenish</h2>
+<p>You can apply the <strong>Suggest replenish</strong> feature from within your existing purchase order document.</p>
+<p>Click the play button and select <strong>Suggest replenish</strong>.</p>
+<p><img src="pictures/sug_rep.png" alt="Picture"></p>
+<p>If the order has lines, they will be <strong>removed</strong> and new ones will be automatically generated for suggested product quantity replenishing.</p>
+<p><img src="pictures/lines.png" alt="Picture"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/planning/replenish-suggestions/replenish-purchase.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

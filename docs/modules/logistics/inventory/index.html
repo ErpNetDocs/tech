@@ -79,47 +79,51 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="inventory">Inventory</h1>
 
-<p>The <strong>Inventory</strong> module is designed to assist you in managing inventory across all interconnected warehouses.</p>
+<p>Inventory is designed to assist you in the process of inventory control and warehouse management.</p>
+<p>It includes the ability to <strong>create</strong> various invoices, reconciliation documents and transfer orders, add <strong>definitions</strong> and utilize different <strong>views</strong>.</p>
 <p><img src="pictures/Inventory_view_21_02.png" alt="picture"></p>
+<h2 id="documents">Documents</h2>
+<h4 id="transactions">Transactions</h4>
+<p>In <strong>Transaction</strong> you can find the receipts for the Stores. <strong>Store-Receipts</strong> reflect incoming goods, while <strong>Store-Issues</strong> denote outgoing goods.</p>
+<p>Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a <strong>Purchase Order</strong>, a receipt is generated.</p>
+<p><img src="pictures/Inventory_transactions_21_02.png" alt="picture"></p>
+<h4 id="transfer-orders">Transfer Orders</h4>
+<p>Orders for stock transfers between stores.</p>
+<p><img src="pictures/Inventory_Transfer_Orders_21_02.png" alt="picture"></p>
+<h4 id="reconciliations">Reconciliations</h4>
+<p>In <strong>Reconciliations</strong>, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, <strong>Store-Receipts</strong> or <strong>Store-Issues</strong> are generated.</p>
+<p><img src="pictures/Inventory_Reconciliations_21_02.png" alt="picture"></p>
 <h2 id="definitions">Definitions</h2>
-<h3 id="stores">Stores</h3>
+<h4 id="stores">Stores</h4>
 <p><strong>Stores</strong> represent the physical warehouses within your inventory management system. To utilize the inventory, you must define one or more stores to house your inventory.</p>
 <p><img src="pictures/Inventory_stores_21_02.png" alt="picture"></p>
-<p><strong>Lots</strong></p>
+<h4 id="lots">Lots</h4>
 <p>Warehouse lots consist of individual entries for each distinct product, detailing its status, production batch, and specific warehouse conditions.</p>
 <p>The status of each lot can restrict certain operations within the warehouse.</p>
 <p><img src="pictures/Inventory_lots_21_02.png" alt="picture"></p>
-<h3 id="serial-numbers">Serial Numbers</h3>
+<h4 id="serial-numbers">Serial Numbers</h4>
 <p><strong>Serial numbers</strong> are assigned to items and tracked within documents.</p>
 <p>Each serial number generates a unique entry upon its initial occurrence in a document.</p>
 <p>These entries can be removed once the last occurrence of the serial number is deleted from the document.</p>
 <p><img src="pictures/Inventory_serial_number_21_02.png" alt="picture"></p>
-<h3 id="requisition-plan">Requisition Plan</h3>
+<h4 id="requisition-plan">Requisition Plan</h4>
 <p>You have the option to assign the current requisition (MRP) plan, which is designed to maintain optimal inventory levels to meet demand while minimizing excess stock and associated costs.</p>
 <p>This plan involves resetting and regenerating data during each planning cycle.</p>
 <p><img src="pictures/Inventory_requsition_Plan_21_02.png" alt="picture"></p>
-<h2 id="documents">Documents</h2>
-<h3 id="transactions">Transactions</h3>
-<p>In <strong>Transaction</strong> you can find the receipts for the Stores. <strong>Store-Receipts</strong> reflect incoming goods, while <strong>Store-Issues</strong> denote outgoing goods.</p>
-<p>Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a <strong>Purchase Order</strong>, a receipt is generated.</p>
-<p><img src="pictures/Inventory_transactions_21_02.png" alt="picture"></p>
-<h3 id="transfer-orders">Transfer Orders</h3>
-<p>Orders for stock transfers between stores.</p>
-<p><img src="pictures/Inventory_Transfer_Orders_21_02.png" alt="picture"></p>
-<h3 id="reconciliations">Reconciliations</h3>
-<p>In <strong>Reconciliations</strong>, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, <strong>Store-Receipts</strong> or <strong>Store-Issues</strong> are generated.</p>
-<p><img src="pictures/Inventory_Reconciliations_21_02.png" alt="picture"></p>
 <h2 id="views">Views</h2>
-<h3 id="available-to-promise-and-available-to-promise-by-lots">Available To Promise and Available To Promise By Lots</h3>
+<h4 id="available-to-promise-and-available-to-promise-by-lots">Available To Promise and Available To Promise By Lots</h4>
 <p><strong>The Availability to Promise</strong> feature provides quantities available for various date periods, including current and projected availability, while the <strong>Availability to Promise by Lot</strong> feature specifically tracks
 quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.</p>
 <p><img src="pictures/Inventory_views_21_02.png" alt="picture"></p>
+<p>Learn more about Inventory in the following articles:</p>
 <ul>
 <li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/index.html?q=Execute%20store%20orders%20function">Execute store orders function</a></strong></p>
 </li>
 <li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/lots/index.html?q=Lots">Lots</a></strong></p>
 </li>
 <li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/store-orders/index.html?q=Store%20orders">Store orders</a></strong></p>
+</li>
+<li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/available-to-promise/index.html">Available to promise</a></strong></p>
 </li>
 <li><p><strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/projected-availability-report.html?q=Projected%20availability%20report">Projected availability report</a></strong></p>
 </li>
