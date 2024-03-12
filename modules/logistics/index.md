@@ -38,7 +38,7 @@ With features for generating warehouse documents, managing warehouse requisition
 
 - **[Inventory](https://docs.erp.net/tech/modules/logistics/inventory/index.html?q=Inventory)**
 - **[Procurement](https://docs.erp.net/tech/modules/logistics/procurement/index.html?q=Procurement)**
-- **[Shipment]()**
+- **[Shipment](shipment/index.md)**
 - **[Warehouse management (WMS)](https://docs.erp.net/tech/modules/logistics/wms/index.html?q=Warehouse%20management%20(WMS))**
 - **[Concepts](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
 - **[Planning concepts and operations](https://docs.erp.net/tech/modules/logistics/planning/index.html?q=Planning)**
