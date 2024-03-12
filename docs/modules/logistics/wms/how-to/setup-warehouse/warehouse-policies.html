@@ -146,6 +146,10 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 <td style="text-align: left;">GS1SSCCNextSerial</td>
 <td style="text-align: left;"><strong>Description:</strong> Used when working with logistic units and GS1 SSCC barcodes. Specifies the next reference serial number used when generating SSCC codes. А digit number acting as a counter: e.g. 0000001, 0000002… Must be set up after the GS1SSCCCompanyPrefix policy, because its allowed lenght depends on the GS1SSCCCompanyPrefix value's lenght.<br><br> <strong>Possible values:</strong> а digit number, with lenght that is equal to &quot;16 - GS1CompanyPrefix value's lenght&quot;.<br><br> <strong>Action:</strong> Used by alghorithm that generates SSCC codes of the logistic units.</td>
 </tr>
+<tr>
+<td style="text-align: left;">Custom Routing</td>
+<td style="text-align: left;"><strong>Description:</strong> Specifies a custom routing, based on a user-defined attribute of the locations. The policy specifies the code of the user-defined attribute, whose values contain the sequence of the route. The custom routing is employed by the Suggest Routing function and can be defined only at warehouse level.<br><br> <strong>Possible values:</strong> all values are possible, but only a value of a Custom Property Code, which has values in the Warehouse Locations table will affect the Suggest Routing Function <br><br> <strong>Action:</strong> The Suggest Routings function in the Warehouse Order Execution will use the Custom Property Values in the Warehouse Locations panel. The Suggest Routings function will suggest Locations in the order described in the Custom Property Values. The values are taken as a string, so you have to write the values in this format 001,002,003...010..100.</td>
+</tr>
 </tbody>
 </table>
 <h1 id="applicability">Applicability</h1>
