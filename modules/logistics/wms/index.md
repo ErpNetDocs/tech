@@ -4,7 +4,7 @@ uid: wms
 
 # WMS 
 
-For larger warehouses with multiple locations where real-time tracking of stock availability is essential across warehouse locations, we utilize the **Warehouse management system**. 
+For larger warehouses with multiple locations where real-time tracking of stock availability is essential, you can take advantage of the **Warehouse management system**. 
 
 ![picture](pictures/WMS_View_21_02.png)
 
