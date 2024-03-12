@@ -30,7 +30,7 @@ The **Shipment** module plays a vital role in streamlining the shipping process 
 
 With features such as generating store orders and transactions, as well as managing shipment orders, you can effectively coordinate and track the movement of goods from your warehouse to your customers.
 
-![picture](pictures/ship_overview.png)
+![picture](pictures/ship_overviewnew.png)
 
 The **Warehouse Management System (WMS)** component of the **Logistics Module** elevates your warehouse operations to new heights. 
 
