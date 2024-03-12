@@ -1,0 +1,9 @@
+- name: Overview
+  href: index.md 
+- name: Replenishing suggestions for purchase orders
+  href: replenish-purchase.md
+- name: Replenishing suggestions for work orders
+  href: replenish-production.md
+- name: Replenishing suggestions for transfer orders
+  href: replenish-transfer.md
+  
