@@ -16,7 +16,7 @@ Logistics consists of several **submodules** dedicated to the purchase, shipment
 
 #### Common
 
-This is where you can create and preview **logistical units**, including their **types**, in order to use them as definitions in other submodules.
+This is where you can define and preview **logistical units**, including their **types**, in order to use them across other submodules.
 
 ![picture](pictures/log_overview.png)
 
@@ -24,7 +24,7 @@ This is where you can create and preview **logistical units**, including their *
 
 This is where you can make **purchase orders** for your warehouse.
 
-With the ability to establish suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes.
+With the ability to define suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes.
 
 ![picture](pictures/proc_overviewnew.png)
 
@@ -32,7 +32,7 @@ With the ability to establish suppliers, initiate purchase requests, and manage 
 
 This submodule offers advanced capabilities and allows for the creation and release of **documents** related to both inventory control and warehouse management.
 
-From defining store locations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability.
+From defining store locations and making reconciliations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability.
 
 In addition, you can also take advantage of its simplified and intuitive **[Inventory Control](https://docs.erp.net/tech/modules/logistics/inventory/inventory-control/index.html)** application.
 
@@ -40,7 +40,7 @@ In addition, you can also take advantage of its simplified and intuitive **[Inve
 
 #### Shipment
 
-Here, you can streamline the various shipping processes initiated by your warehouse. 
+Here, you can streamline the various **shipping** processes initiated by your warehouse. 
 
 By creating shipment orders and transactions, you can effectively coordinate and track the movement of goods from your warehouse to your customers.
 
@@ -48,7 +48,7 @@ By creating shipment orders and transactions, you can effectively coordinate and
 
 #### WMS
 
-The **Warehouse Management System** works as its own separate module dedicated to the more complex managed warehouse operations.
+The Warehouse Management System works as its own separate module dedicated to the more complex **managed warehouse operations**.
 
 It allows you to create warehouse documents, requisitions and transactions, as well as fulfill orders efficiently using the integrated **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** application. 
 
