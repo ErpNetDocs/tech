@@ -12,7 +12,7 @@ It also provides a comprehensive suite of functionalities that empower you to ef
 
 From procurement to shipment, and inventory control to warehouse management, this module offers a robust set of tools and features to meet the diverse needs of your business.
 
-![picture](pictures/com_overview.png)
+![picture](pictures/log_overview.png)
 
 **Procurement**, one of the key components of the **Logistics Module**, empowers you to monitor material sourcing within your warehouse environment.
 
