@@ -22,10 +22,9 @@ With features such as generating store orders and transactions, as well as manag
 
 The **Warehouse Management System (WMS)** component of the **Logistics Module** elevates your warehouse operations to new heights. With features for generating warehouse documents, managing warehouse requisitions and orders, and fulfilling orders efficiently within the **WMS Worker**, you can optimize warehouse workflows and improve operational efficiency.
 
-
-
-- **[Common concepts](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
+- **[Common](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
 - **[Inventory](https://docs.erp.net/tech/modules/logistics/inventory/index.html?q=Inventory)**
 - **[Planning](https://docs.erp.net/tech/modules/logistics/planning/index.html?q=Planning)**
 - **[Procurement](https://docs.erp.net/tech/modules/logistics/procurement/index.html?q=Procurement)**
+- **[Shipment]()**
 - **[Warehouse management (WMS)](https://docs.erp.net/tech/modules/logistics/wms/index.html?q=Warehouse%20management%20(WMS))**
