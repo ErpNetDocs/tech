@@ -12,7 +12,7 @@ From procurement to shipment, through inventory control and warehouse management
 
 ## Structure
 
-Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis. Each of them allows for the creation and release of respective documents and transactions.
+Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis. Most of them allow for the creation and release of respective documents and transactions.
 
 #### Common
 
