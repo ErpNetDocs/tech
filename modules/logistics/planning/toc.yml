@@ -4,9 +4,6 @@
   href: material-requirements-planning.md
 - name: Projected available balance
   href: projected-available-balance.md
-- name: Replenishing suggestions for purchase orders
-  href: replenish-purchase.md
-- name: Replenishing suggestions for work orders
-  href: replenish-production.md
-- name: Replenishing suggestions for transfer orders
-  href: replenish-transfer.md
+- name: Replenishing suggestions
+  href: replenish-suggestions/toc.yml
+  topicHref: replenish-suggestions/index.md
