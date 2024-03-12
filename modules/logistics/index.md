@@ -10,7 +10,7 @@ From procurement to shipment, through inventory control and warehouse management
 
 ![picture](pictures/log_finoverview.png)
 
-### Structure
+## Structure
 
 Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis:
 
