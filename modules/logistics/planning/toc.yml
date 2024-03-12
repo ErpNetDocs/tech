@@ -1,9 +1,5 @@
-
 - name: Overview
   href: index.md 
-- name: Available to promise
-  href: available-to-promise/toc.yml  
-  topicHref: available-to-promise/index.md
 - name: Material requirements planning
   href: material-requirements-planning.md
 - name: Projected available balance
