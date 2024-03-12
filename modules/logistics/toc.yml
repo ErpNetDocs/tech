@@ -1,17 +1,20 @@
 - name: Overview
   href: index.md
-- name: WMS
-  href: wms/toc.yml
-  topicHref: wms/index.md
 - name: Inventory
   href: inventory/toc.yml
   topicHref: inventory/index.md
-- name: Concepts
-  href: concepts/toc.yml
-  topicHref: concepts/index.md
 - name: Procurement
   href: procurement/toc.yml
   topicHref: procurement/index.md
+- name: Shipment
+  href: procurement/toc.yml
+  topicHref: procurement/index.md
+- name: WMS
+  href: wms/toc.yml
+  topicHref: wms/index.md
+- name: Concepts
+  href: concepts/toc.yml
+  topicHref: concepts/index.md
 - name: Planning
   href: planning/toc.yml
   topicHref: planning/index.md
