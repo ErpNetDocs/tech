@@ -10,31 +10,51 @@ From procurement to shipment, through inventory control and warehouse management
 
 ![picture](pictures/log_finoverview.png)
 
-**Procurement**, one of the key components of the **Logistics Module**, empowers you to monitor material sourcing within your warehouse environment.
+### Structure
 
-With the ability to establish suppliers, initiate purchase requests, and manage internal requisitions, you gain full visibility and control over your procurement processes.
+Logistics consists of several **submodules** dedicated to the purchase, shipment, delivery and other operations made by warehouses on a daily basis:
+
+#### Common
+
+This is where you can create and preview **logistical units**, including their **types**, in order to use them across other submodules.
+
+![picture](pictures/log_overview.png)
+
+#### Procurement
+
+This is where you can monitor material sourcing within your warehouse environment.
+
+With the ability to establish suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes.
 
 ![picture](pictures/proc_overviewnew.png)
 
-In conjunction with procurement, the **Inventory** module offers advanced capabilities for managing inventory across interconnected warehouses.
+#### Inventory
 
-From defining store locations to tracking warehouse lots and serial numbers, this module provides the tools you need to maintain accurate inventory records and ensure product traceability.
+This submodule offers advanced capabilities and documents related to inventory control and warehouse management.
+
+From defining store locations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability.
+
+In addition, you can take advantage of the simplified and intuitive **[Inventory Control](https://docs.erp.net/tech/modules/logistics/inventory/inventory-control/index.html)** application.
 
 ![picture](pictures/inv_overviewnew.png)
 
-The **Shipment** module plays a vital role in streamlining the shipping process for purchased stock. 
+#### Shipment
+
+Here, you can streamline various shipping processes for your purchased stocks. 
 
 With features such as generating store orders and transactions, as well as managing shipment orders, you can effectively coordinate and track the movement of goods from your warehouse to your customers.
 
 ![picture](pictures/ship_overviewnew.png)
 
-The **Warehouse Management System (WMS)** component of the **Logistics Module** elevates your warehouse operations to new heights. 
+#### WMS
 
-With features for generating warehouse documents, managing warehouse requisitions and orders, and fulfilling orders efficiently within the **WMS Worker**, you can optimize warehouse workflows and improve operational efficiency.
+The **Warehouse Management System** section works as a separate module dedicated to the more complex managed warehouse operations.
+
+It allows you to create warehouse documents, requisitions and orders, as well as fulfill orders efficiently using the integrated **[WMS Worker](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/index.html)** application. 
 
 ![picture](pictures/wms_overviewnew.png)
 
-**Learn more:**
+**Learn more about Logistics:**
 
 - **[Inventory](https://docs.erp.net/tech/modules/logistics/inventory/index.html?q=Inventory)**
 - **[Procurement](https://docs.erp.net/tech/modules/logistics/procurement/index.html?q=Procurement)**
