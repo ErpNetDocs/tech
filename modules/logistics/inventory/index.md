@@ -1,8 +1,32 @@
 # Inventory 
 
-The **Inventory** module is designed to assist you in managing inventory across all interconnected warehouses.
+Inventory is designed to assist you in the process of inventory control and warehouse management.
+
+It includes the ability to **create** various invoices, reconciliation documents and transfer orders, add **definitions** and utilize different **views**.
 
 ![picture](pictures/Inventory_view_21_02.png)
+
+## Documents
+
+#### Transactions 
+
+In **Transaction** you can find the receipts for the Stores. **Store-Receipts** reflect incoming goods, while **Store-Issues** denote outgoing goods. 
+
+Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a **Purchase Order**, a receipt is generated. 
+
+![picture](pictures/Inventory_transactions_21_02.png)
+ 
+#### Transfer Orders 
+
+Orders for stock transfers between stores.
+
+![picture](pictures/Inventory_Transfer_Orders_21_02.png)
+ 
+#### Reconciliations
+
+In **Reconciliations**, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, **Store-Receipts** or **Store-Issues** are generated.
+
+![picture](pictures/Inventory_Reconciliations_21_02.png)
  
 ## Definitions 
 
@@ -38,28 +62,6 @@ This plan involves resetting and regenerating data during each planning cycle.
 
  ![picture](pictures/Inventory_requsition_Plan_21_02.png)
 
-## Documents
-
-#### Transactions 
-
-In **Transaction** you can find the receipts for the Stores. **Store-Receipts** reflect incoming goods, while **Store-Issues** denote outgoing goods. 
-
-Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a **Purchase Order**, a receipt is generated. 
-
-![picture](pictures/Inventory_transactions_21_02.png)
- 
-#### Transfer Orders 
-
-Orders for stock transfers between stores.
-
-![picture](pictures/Inventory_Transfer_Orders_21_02.png)
- 
-#### Reconciliations
-
-In **Reconciliations**, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, **Store-Receipts** or **Store-Issues** are generated.
-
-![picture](pictures/Inventory_Reconciliations_21_02.png)
- 
 ## Views 
 
 #### Available To Promise and Available To Promise By Lots
