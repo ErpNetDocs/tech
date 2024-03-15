@@ -8,7 +8,9 @@ Efficient management is essential to ensure seamless integration and efficiency 
 
 ## New logistic unit 
 
-To add a new logistic unit, access the **Logistics** module within the **Common** section and click on the circular "+" button or one of the logistic unit types under **Create**.
+To add a new logistic unit, navigate to the **Logistics** module within the **Common** section. 
+
+You can click on the circular "+" button located on the **Logistic Units** panel or select one of the **logistic unit types** under **Create**.
 
 ![picture](pictures/Logistic_Units_Create_14_03.png)
 
@@ -32,7 +34,7 @@ Once you've completed the previous steps, a new page will open, prompting you to
 - Represented As Product
 - Active Status: Check the box if the logistic unit is active.
 
-Once you've done that click on the **Save and reload** button to finalize the creation. 
+When you are ready, click on the **Save and reload** button to finalize the creation. 
 
 ![picture](pictures/Logistical_Unit_Save_14_03.png)
 
