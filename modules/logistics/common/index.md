@@ -21,7 +21,10 @@ Efficient management is essential to ensure seamless integration and efficiency 
 
 ![picture](pictures/Common_Logistics_Unit_Types_14_03.png)
 
-For further information on configuring and defining Logistics Unit Types and Logistics Units, please visit:
+Learn more about the **Common** section of **Logistics** in the following articles:
+
+*	**[Logistic Unit Types](https://docs.erp.net/tech/modules/logistics/common/logistic-unit-types.html)**
+*	**[Logistic Units](https://docs.erp.net/tech/modules/logistics/common/logistic-units.html)**
 
 > [!NOTE]
 > 
