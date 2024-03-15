@@ -24,7 +24,7 @@ To initiate a purchase request, use the **Purchase Invoice**. Within this docume
 
 **Purchase Orders** are documents sent to suppliers to notify them of an order for goods or services. They serve as official authorization for warehouse workers to accept approved purchases.
 
-![picture](pictures/Procurement_Purchase_Orderes_14_03.png)
+![picture](pictures/Procurement_Purchase_Order_14_03.png)
  
 ### Requisitions 
 
