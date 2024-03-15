@@ -23,3 +23,6 @@ Represents shipments of sales orders to customers.
 ![picture](pictures/Shipment_Shipments_21_02.png)
  
 
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
