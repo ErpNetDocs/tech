@@ -107,3 +107,8 @@ There can be other organizations of the workflow within a warehouse. The ERP.net
 
 However, planning the execution can be externalized to custom apps and services. Applying AI/ML strategies for achieving better efficiency is a possible direction.
 Also, mixing robots with human workers might require using custom strategies.
+
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
