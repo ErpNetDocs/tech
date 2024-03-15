@@ -86,3 +86,8 @@ Learn more about Inventory in the following articles:
 - **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)**
 
 - **[Inventory Control](inventory-control/index.md)**
+
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
