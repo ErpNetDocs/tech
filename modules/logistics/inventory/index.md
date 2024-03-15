@@ -14,19 +14,19 @@ In **Transaction** you can find the receipts for the Stores. **Store-Receipts** 
 
 Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a **Purchase Order**, a receipt is generated. 
 
-![picture](pictures/Inventory_transactions_21_02.png)
+![picture](pictures/Inventory_Transactions_14_03.png)
  
 #### Transfer Orders 
 
 Orders for stock transfers between stores.
 
-![picture](pictures/Inventory_Transfer_Orders_21_02.png)
+![picture](pictures/Inventory_Transactions_Orders_14_03.png)
  
 #### Reconciliations
 
 In **Reconciliations**, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, **Store-Receipts** or **Store-Issues** are generated.
 
-![picture](pictures/Inventory_Reconciliations_21_02.png)
+![picture](pictures/Inventory_Reconiciliations_14_03.png)
  
 ## Definitions 
 
@@ -34,7 +34,7 @@ In **Reconciliations**, you can manage your stock numbers. Based on variations b
 
 **Stores** represent the physical warehouses within your inventory management system. To utilize the inventory, you must define one or more stores to house your inventory.
 
-![picture](pictures/Inventory_stores_21_02.png)
+![picture](pictures/Inventory_Stores_14_03.png)
  
 #### Lots
 
@@ -42,7 +42,7 @@ Warehouse lots consist of individual entries for each distinct product, detailin
 
 The status of each lot can restrict certain operations within the warehouse.
 
-![picture](pictures/Inventory_lots_21_02.png)
+![picture](pictures/Inventory_Lots_14_03.png)
  
 #### Serial Numbers 
 
@@ -52,7 +52,7 @@ Each serial number generates a unique entry upon its initial occurrence in a doc
 
 These entries can be removed once the last occurrence of the serial number is deleted from the document.
 
-![picture](pictures/Inventory_serial_number_21_02.png)
+![picture](pictures/Inventory_Serial_Numbers_14_03.png)
  
 #### Requisition Plan
 
@@ -60,7 +60,7 @@ You have the option to assign the current requisition (MRP) plan, which is desig
 
 This plan involves resetting and regenerating data during each planning cycle.
 
- ![picture](pictures/Inventory_requsition_Plan_21_02.png)
+ ![picture](pictures/Inventory_Requisition_plan_14_03.png)
 
 ## Views 
 
