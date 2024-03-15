@@ -15094,6 +15094,142 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/common/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/common/index.html",
+          "hash": "CxnB3PQz6Gmzd6zE4D/D8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/common/logistic-unit-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/common/logistic-unit-types.html",
+          "hash": "+07SJ2owKdN2P1gW2/tSYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/common/logistic-units.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/common/logistic-units.html",
+          "hash": "Z8oj8MTRSfC/Oy5lab4zfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Common_Logistics_Unit_Types_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Common_Logistics_Unit_Types_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Common_Logistics_Units_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Common_Logistics_Units_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Common_view_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Common_view_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Create_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Create_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_New_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_New_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistical_Unit_Cancel_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistical_Unit_Cancel_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistical_Unit_Save_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistical_Unit_Save_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/common/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/common/pictures/index.html",
+          "hash": "aFaVAAyCU7cZBYwAMzMYNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md",
       "output": {
         ".html": {
@@ -15361,7 +15497,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/index.html",
-          "hash": "MBwVD/dbZt61ds4Bj4LJ3Q=="
+          "hash": "z3Uz+Khpfcpedec+P+ujug=="
         }
       },
       "is_incremental": false,
@@ -15455,7 +15591,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "m7bT+1rYuaqiasCzsYM8bA=="
+          "hash": "cyuB+WbUW1AQ/8Je0otULQ=="
         }
       },
       "is_incremental": false,
@@ -15479,7 +15615,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "vLav7TZuaD3H0Z+vpdLlqA=="
+          "hash": "Vu+MhlINPh9mDJFcYfPOBA=="
         }
       },
       "is_incremental": false,
@@ -16737,10 +16873,87 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Lots_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Lots_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Reconciliations_21_02.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/pictures/Inventory_Reconciliations_21_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Reconiciliations_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Reconiciliations_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Requisition_plan_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Requisition_plan_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Serial_Numbers_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Serial_Numbers_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Stores_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Stores_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Transactions_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Transactions_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/Inventory_Transactions_Orders_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/Inventory_Transactions_Orders_14_03.png"
         }
       },
       "is_incremental": false,
@@ -17569,7 +17782,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/index.html",
-          "hash": "nhemPx9V5gcCvKBUmrpWjw=="
+          "hash": "hlmdkWfqw15ZczWholvc1A=="
         }
       },
       "is_incremental": false,
@@ -17599,10 +17812,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Order_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Order_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Orderes_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Orderes_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Orders_21_02.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/procurement/pictures/Procurement_Purchase_Orders_21_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Requisitions_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurement_Requisitions_14_03.png"
         }
       },
       "is_incremental": false,
@@ -17621,10 +17867,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Suppliers_15_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurement_Suppliers_15_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/procurement/pictures/Procurement_Suppliers_21_02.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/procurement/pictures/Procurement_Suppliers_21_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurement_view_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurement_view_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/procurement/pictures/Procurment_Purchase_Invoice_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/procurement/pictures/Procurment_Purchase_Invoice_14_03.png"
         }
       },
       "is_incremental": false,
@@ -17660,7 +17939,18 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/shipment/index.html",
-          "hash": "LfiB001Ag7C657DILa7r+Q=="
+          "hash": "dFi7MohusZqVuovw+hLc/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/shipment/pictures/Shipment_Orders_15_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/shipment/pictures/Shipment_Orders_15_03.png"
         }
       },
       "is_incremental": false,
@@ -17672,6 +17962,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/shipment/pictures/Shipment_Shipment_Orders_21_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/shipment/pictures/Shipment_Shipments_15_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/shipment/pictures/Shipment_Shipments_15_03.png"
         }
       },
       "is_incremental": false,
@@ -19206,7 +19507,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "Eu1SX8cj/vfwud6dwLQrBA=="
+          "hash": "IGM7YaM/30MDvW1rjr4afw=="
         }
       },
       "is_incremental": false,
@@ -19473,7 +19774,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/index.html",
-          "hash": "FrvdjIbjmMYDgGBkbIZyJQ=="
+          "hash": "LFr9gQWHjXwgg443n9EzzA=="
         }
       },
       "is_incremental": false,
