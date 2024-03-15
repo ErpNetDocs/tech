@@ -1,5 +1,45 @@
 # Logistic Units 
 
-Logistic Units represent the combination of products designated for transportation and/or storage within the supply chain. 
+Logistic units represent the combination of products designated for transportation and/or storage within the supply chain. 
 
 Efficient management is essential to ensure seamless integration and efficiency throughout their logistical lifecycle.
+
+![picture](pictures/Logistic_Units_14_03.png)
+
+## New logistic unit 
+
+To add a new logistic unit, access the **Logistics** module within the **Common** section and click on the circular "+" button or one of the logistic unit types under **Create**.
+
+![picture](pictures/Logistic_Units_Create_14_03.png)
+
+Alternatively, you can select "Logistic Units" and then click on the "New" button located at the top of the table displaying all existing logistic units on the platform.
+
+![picture](pictures/Logistic_Units_New_14_03.png)
+
+> [!NOTE]
+> 
+> You can either choose a logistic unit type or create a logistic unit type without one. 
+> Regardless of the method chosen, the creation process remains the same.
+
+Once you've completed the previous steps, a new page will open, prompting you to fill in several fields:
+
+- Serial Code: This is the only mandatory field.
+- Logistic Unit Type: If you've selected a unit type, it will be automatically added here.
+- Expected Weight: This is the calculated weight.
+- Measured Weight: The weight measured in the warehouse.
+- Cargo Type: Select from the drop-down menu.
+- Notes: Additional notes can be added here.
+- Represented As Product
+- Active Status: Check the box if the logistic unit is active.
+
+Once you've done that click on the **Save and reload** button to finalize the creation. 
+
+![picture](pictures/Logistical_Unit_Save_14_03.png)
+
+To quit the process you can click on **Cancel changes and return**.
+
+![picture](pictures/Logistical_Unit_Cancel_14_03.png)
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
