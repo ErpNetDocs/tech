@@ -63,3 +63,6 @@ It allows you to create warehouse documents, requisitions and transactions, as w
 - **[Concepts](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
 - **[Planning concepts and operations](https://docs.erp.net/tech/modules/logistics/planning/index.html?q=Planning)**
 
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
