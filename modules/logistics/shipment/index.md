@@ -14,13 +14,13 @@ Subsequently, a Shipment Order is created based on the Store Order, facilitating
 
 This represents the order for shipping sales orders to customers.
 
-![picture](pictures/Shipment_Shipment_Orders_21_02.png)
+![picture](pictures/Shipment_Orders_15_03.png)
  
 ### Shipments
 
 Represents shipments of sales orders to customers.
 
-![picture](pictures/Shipment_Shipments_21_02.png)
+![picture](pictures/Shipment_Shipments_15_03.png)
  
 
 > [!NOTE]
