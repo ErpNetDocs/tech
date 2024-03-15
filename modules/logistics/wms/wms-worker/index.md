@@ -22,3 +22,8 @@ Learn more about the WMS Worker in the following articles:
 *	**[Pack](pack.md)**
 *	**[Unpack](unpack.md)**
 *	**[Reconcile](reconcile.md)**
+
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
