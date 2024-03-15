@@ -10,7 +10,7 @@ It includes the ability to **create** various invoices, reconciliation documents
 
 #### Transactions 
 
-In **Transaction** you can find the receipts for the Stores. **Store-Receipts** reflect incoming goods, while **Store-Issues** denote outgoing goods. 
+In **Transaction** you can find the receipts for  your (warehouse’s existing) stores. **Store-Receipts** reflect incoming goods, while **Store-Issues** denote outgoing goods. 
 
 Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a **Purchase Order**, a receipt is generated. 
 
@@ -18,13 +18,17 @@ Outgoing goods in Store-Issues are recorded with negative quantity values. Based
  
 #### Transfer Orders 
 
-Orders for stock transfers between stores.
+The **Transfer Orders** section facilitates seamless stock transfers between stores, offering detailed specifications and customizable workflows. 
+
+It integrates with other panels for inventory management and provides real-time monitoring capabilities for proactive intervention when needed.
 
 ![picture](pictures/Inventory_Transactions_Orders_14_03.png)
  
 #### Reconciliations
 
-In **Reconciliations**, you can manage your stock numbers. Based on variations between recorded stock levels and actual availability, **Store-Receipts** or **Store-Issues** are generated.
+In the **Reconciliations** section, you can efficiently manage your stock availability. 
+
+It generates receipt store transactions (+) and issue store transactions (-) based on variations between recorded stock levels and actual availability, reflecting the differences between stock levels and availability.
 
 ![picture](pictures/Inventory_Reconiciliations_14_03.png)
  
