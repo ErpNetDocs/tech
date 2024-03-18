@@ -14,7 +14,7 @@ Additionally, the section facilitates real-time monitoring and analysis, empower
 
 ### Suppliers  
 
-On the **Procurement** section, it's necessary to establish one or more Suppliers. These **suppliers** are responsible for providing products to the warehouse.
+In the **Procurement** section, it's necessary to establish one or more suppliers. These **suppliers** are responsible for providing products to the warehouse.
 
 ![picture](pictures/Procurement_Suppliers_15_03.png)
   
