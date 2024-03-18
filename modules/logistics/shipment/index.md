@@ -1,10 +1,10 @@
 # Shipment 
 
-The Shipment module is designed to assist in managing the shipping process for purchased stock. 
+The **Shipment** section is designed to assist in managing the shipping process for purchased stock. 
 
-Upon purchasing stock, a Store Order is generated, followed by a Store Transaction. 
+Upon purchasing stock, a **store order** is generated, followed by a **store transaction**. 
 
-Subsequently, a Shipment Order is created based on the Store Order, facilitating the shipment of the stock.
+Subsequently, a **shipment order** is created based on the **store order**, facilitating the shipment of the stock.
 
 ![picture](pictures/Shipment_view_21_02.png)
  
