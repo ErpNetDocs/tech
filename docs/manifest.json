@@ -15351,7 +15351,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/index.html",
-          "hash": "CxnB3PQz6Gmzd6zE4D/D8g=="
+          "hash": "ii/UZTvAG9LffI2PhNYGdw=="
         }
       },
       "is_incremental": false,
@@ -15363,7 +15363,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/logistic-unit-types.html",
-          "hash": "+07SJ2owKdN2P1gW2/tSYQ=="
+          "hash": "PEOTQo0Tgtg3r3u2kBdvxQ=="
         }
       },
       "is_incremental": false,
@@ -15375,7 +15375,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/logistic-units.html",
-          "hash": "Z8oj8MTRSfC/Oy5lab4zfQ=="
+          "hash": "1BuS9/9tMW0X2ia3LSA+iQ=="
         }
       },
       "is_incremental": false,
@@ -15750,7 +15750,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/index.html",
-          "hash": "z3Uz+Khpfcpedec+P+ujug=="
+          "hash": "CcNuu34RqswXoGOuTsOs6w=="
         }
       },
       "is_incremental": false,
@@ -15844,7 +15844,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "cyuB+WbUW1AQ/8Je0otULQ=="
+          "hash": "GSfhUTnqFrjn/aXqi9nDCA=="
         }
       },
       "is_incremental": false,
@@ -15868,7 +15868,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "Vu+MhlINPh9mDJFcYfPOBA=="
+          "hash": "AD+9bgPbdUadW1gTBLCotQ=="
         }
       },
       "is_incremental": false,
@@ -18035,7 +18035,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/index.html",
-          "hash": "hlmdkWfqw15ZczWholvc1A=="
+          "hash": "ltZadIYtsW0dxF5lx+0kIQ=="
         }
       },
       "is_incremental": false,
@@ -18192,7 +18192,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/shipment/index.html",
-          "hash": "dFi7MohusZqVuovw+hLc/Q=="
+          "hash": "nVHKlOg7Zbx3iQ8HdfQUPg=="
         }
       },
       "is_incremental": false,
@@ -19760,7 +19760,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "IGM7YaM/30MDvW1rjr4afw=="
+          "hash": "qRKsUSpwpMHo5JHmjATZmA=="
         }
       },
       "is_incremental": false,
@@ -20027,7 +20027,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/index.html",
-          "hash": "LFr9gQWHjXwgg443n9EzzA=="
+          "hash": "dVYR3RQlE4r6I8YTYpuYlQ=="
         }
       },
       "is_incremental": false,
