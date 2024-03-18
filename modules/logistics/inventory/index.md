@@ -10,15 +10,15 @@ It includes the ability to **create** various invoices, reconciliation documents
 
 #### Transactions 
 
-In **Transaction** you can find the receipts for  your (warehouse’s existing) stores. **Store-Receipts** reflect incoming goods, while **Store-Issues** denote outgoing goods. 
+In **Transaction** you can find the receipts for  your (warehouse’s existing) stores. **Store-receipts** reflect incoming goods, while **store-issues** denote outgoing goods. 
 
-Outgoing goods in Store-Issues are recorded with negative quantity values. Based on a **Purchase Order**, a receipt is generated. 
+Outgoing goods in store-issues are recorded with negative quantity values. Based on a **purchase order**, a receipt is generated. 
 
 ![picture](pictures/Inventory_Transactions_14_03.png)
  
 #### Transfer Orders 
 
-The **Transfer Orders** section facilitates seamless stock transfers between stores, offering detailed specifications and customizable workflows. 
+The **Transfer Orders** panel facilitates seamless stock transfers between stores, offering detailed specifications and customizable workflows. 
 
 It integrates with other panels for inventory management and provides real-time monitoring capabilities for proactive intervention when needed.
 
@@ -26,7 +26,7 @@ It integrates with other panels for inventory management and provides real-time 
  
 #### Reconciliations
 
-In the **Reconciliations** section, you can efficiently manage your stock availability. 
+In the **Reconciliations** panel, you can efficiently manage your stock availability. 
 
 It generates receipt store transactions (+) and issue store transactions (-) based on variations between recorded stock levels and actual availability, reflecting the differences between stock levels and availability.
 
@@ -75,7 +75,7 @@ quantities available for different date periods, considering both current and pr
 
 ![picture](pictures/Inventory_views_21_02.png)
 
-Learn more about Inventory in the following articles:
+Learn more about **Inventory** in the following articles:
  
 - **[Execute store orders function](https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/index.html?q=Execute%20store%20orders%20function)**
 
