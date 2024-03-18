@@ -10,11 +10,11 @@ Efficient management is essential to ensure seamless integration and efficiency 
 
 To add a new logistic unit, navigate to the **Logistics** module within the **Common** section. 
 
-You can click on the circular "+" button located on the **Logistic Units** panel or select one of the **logistic unit types** under **Create**.
+You can click on the circular **"+"** button located on the **Logistic Units** panel or select one of the **logistic unit types** under **Create**.
 
 ![picture](pictures/Logistic_Units_Create_14_03.png)
 
-Alternatively, you can select "Logistic Units" and then click on the "New" button located at the top of the table displaying all existing logistic units on the platform.
+Alternatively, you can select **Logistic Units** and then click on the **New** button located at the top of the table displaying all existing logistic units on the platform.
 
 ![picture](pictures/Logistic_Units_New_14_03.png)
 
