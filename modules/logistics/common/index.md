@@ -1,13 +1,13 @@
 # Common 
 
-In the **Common** section, users can establish **Logistics Unit Types**, defining key attributes for **Logistics Units**. 
+In the **Common** section, users can establish **logistics unit types**, defining key attributes for **logistics units**. 
 These standardized units are subsequently employed across the other modules, ensuring consistency and efficiency in logistics management.
 
 ![picture](pictures/Common_view_14_03.png)
 
 ## Logistics Unit Types
 
-**Logistics Unit Types** are predefined categories that specify the characteristics of units used in handling and transporting goods, such as pallets, containers, or crates. 
+**Logistics unit types** are predefined categories that specify the characteristics of units used in handling and transporting goods, such as pallets, containers, or crates. 
 
 They ensure standardized handling and compatibility across logistics operations.
 
@@ -15,7 +15,7 @@ They ensure standardized handling and compatibility across logistics operations.
 
 ## Logistics Units
 
-Logistic Units represent the combination of products designated for transportation and/or storage within the supply chain. 
+Logistic units represent the combination of products designated for transportation and/or storage within the supply chain. 
 
 Efficient management is essential to ensure seamless integration and efficiency throughout their logistical lifecycle.
 
