@@ -1,6 +1,6 @@
 # Logistic unit types
 
-Logistics Unit Types are predefined categories that specify the characteristics of units used in handling and transporting goods, such as pallets, containers, or crates.
+Logistics unit types are predefined categories that specify the characteristics of units used in handling and transporting goods, such as pallets, containers, or crates.
 
 They ensure standardized handling and compatibility across logistics operations.
 
@@ -8,11 +8,11 @@ They ensure standardized handling and compatibility across logistics operations.
 
 ## New logistic unit type 
 
-To create a new logistic unit type, go to the **Logistics** module in the **Common** section. Then, click on the circular "+" button on the **Logistic Unit Types** panel.
+To create a new logistic unit type, go to the **Logistics** module in the **Common** section. Then, click on the circular "+" button on the **logistic unit types** panel.
 
 ![picture](pictures/Common_view_14_03.png)
 
-Alternatively, choose "Logistic Unit Types" and then click on the "New" button at the top of the table showing all existing logistic unit types on the platform.
+Alternatively, choose **Logistic Unit Types** and then click on the **New** button at the top of the table showing all existing logistic unit types on the platform.
 
 ![picture](pictures/Common_view_14_03.png)
 
