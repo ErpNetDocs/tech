@@ -2,7 +2,7 @@
 
 Inventory is designed to assist you in the process of inventory control and warehouse management.
 
-It includes the ability to **create** various invoices, reconciliation documents and transfer orders, add **definitions** and utilize different **views**.
+It includes the ability to **create** store orders, reconciliation documents, and transfer orders, including their respective invoices. 
 
 You can further take advantage of Inventory's simplified **[Inventory Control](inventory-control/index.md)** application, designed to assist and speed up operations within shops and smaller stores.
 
