@@ -15351,7 +15351,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/index.html",
-          "hash": "ii/UZTvAG9LffI2PhNYGdw=="
+          "hash": "KwVWRTzz8esNPhV/fI0JAA=="
         }
       },
       "is_incremental": false,
@@ -15363,7 +15363,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/logistic-unit-types.html",
-          "hash": "PEOTQo0Tgtg3r3u2kBdvxQ=="
+          "hash": "HHQTfsPPTGDE9zuXg+Gu9Q=="
         }
       },
       "is_incremental": false,
@@ -15375,7 +15375,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/common/logistic-units.html",
-          "hash": "1BuS9/9tMW0X2ia3LSA+iQ=="
+          "hash": "gtAvD9qLHruX2QLj6ntU/Q=="
         }
       },
       "is_incremental": false,
@@ -15438,10 +15438,109 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_New_14_03.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/common/pictures/Logistic_Units_New_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Types19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Types19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Close_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Close_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Save_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_Save_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_Types_view_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_create_new_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_create_new_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_type_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_type_view_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/common/pictures/Logistic_Units_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/common/pictures/Logistic_Units_view_19_03.png"
         }
       },
       "is_incremental": false,
@@ -15619,7 +15718,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/concepts/index.html",
-          "hash": "eY4YreU5vbmwXu7UwNUCxw=="
+          "hash": "JyFsQ/wR9wZ81NxHu1MOzg=="
         }
       },
       "is_incremental": false,
@@ -15750,7 +15849,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/index.html",
-          "hash": "CcNuu34RqswXoGOuTsOs6w=="
+          "hash": "deopq9LcjgDUdrhLC+e7xQ=="
         }
       },
       "is_incremental": false,
@@ -15844,7 +15943,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "GSfhUTnqFrjn/aXqi9nDCA=="
+          "hash": "nUBg/ikwFt3rpLMbSK8wkA=="
         }
       },
       "is_incremental": false,
@@ -15868,7 +15967,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "AD+9bgPbdUadW1gTBLCotQ=="
+          "hash": "Vu+MhlINPh9mDJFcYfPOBA=="
         }
       },
       "is_incremental": false,
@@ -18035,7 +18134,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/procurement/index.html",
-          "hash": "ltZadIYtsW0dxF5lx+0kIQ=="
+          "hash": "SY/krvAAZVfUI6LW0phYVg=="
         }
       },
       "is_incremental": false,
@@ -18192,7 +18291,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/shipment/index.html",
-          "hash": "nVHKlOg7Zbx3iQ8HdfQUPg=="
+          "hash": "6o+rrG26n3jelEpY7Idg8w=="
         }
       },
       "is_incremental": false,
@@ -19760,7 +19859,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/index.html",
-          "hash": "qRKsUSpwpMHo5JHmjATZmA=="
+          "hash": "Fwk/HXmB7m1BND444ayfvg=="
         }
       },
       "is_incremental": false,
@@ -20936,7 +21035,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "8Kfmh/+iscwnCwxDAI0nkg=="
+          "hash": "a5jUXfuHdMSG1/a3pzy6rg=="
         }
       },
       "is_incremental": false,

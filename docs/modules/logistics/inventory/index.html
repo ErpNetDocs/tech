@@ -80,42 +80,44 @@
 <h1 id="inventory">Inventory</h1>
 
 <p>Inventory is designed to assist you in the process of inventory control and warehouse management.</p>
-<p>It includes the ability to <strong>create</strong> various invoices, reconciliation documents and transfer orders, add <strong>definitions</strong> and utilize different <strong>views</strong>.</p>
+<p>It includes the ability to <strong>create</strong> store orders, reconciliation documents, and transfer orders, including their respective invoices.</p>
+<p>You can further take advantage of Inventory's simplified <strong><a href="inventory-control/index.html">Inventory Control</a></strong> application, designed to assist and speed up operations within shops and smaller stores.</p>
 <p><img src="pictures/Inventory_view_21_02.png" alt="picture"></p>
-<h2 id="documents">Documents</h2>
-<h4 id="transactions">Transactions</h4>
-<p>In <strong>Transaction</strong> you can find the receipts for  your (warehouse’s existing) stores. <strong>Store-receipts</strong> reflect incoming goods, while <strong>store-issues</strong> denote outgoing goods.</p>
-<p>Outgoing goods in store-issues are recorded with negative quantity values. Based on a <strong>purchase order</strong>, a receipt is generated.</p>
-<p><img src="pictures/Inventory_Transactions_14_03.png" alt="picture"></p>
-<h4 id="transfer-orders">Transfer Orders</h4>
-<p>The <strong>Transfer Orders</strong> panel facilitates seamless stock transfers between stores, offering detailed specifications and customizable workflows.</p>
-<p>It integrates with other panels for inventory management and provides real-time monitoring capabilities for proactive intervention when needed.</p>
-<p><img src="pictures/Inventory_Transactions_Orders_14_03.png" alt="picture"></p>
-<h4 id="reconciliations">Reconciliations</h4>
-<p>In the <strong>Reconciliations</strong> panel, you can efficiently manage your stock availability.</p>
-<p>It generates receipt store transactions (+) and issue store transactions (-) based on variations between recorded stock levels and actual availability, reflecting the differences between stock levels and availability.</p>
-<p><img src="pictures/Inventory_Reconiciliations_14_03.png" alt="picture"></p>
 <h2 id="definitions">Definitions</h2>
 <h4 id="stores">Stores</h4>
-<p><strong>Stores</strong> represent the physical warehouses within your inventory management system. To utilize the inventory, you must define one or more stores to house your inventory.</p>
+<p>This panel allows you to define virtual representations of your physical <strong>warehouse</strong>.</p>
+<p>To utilize all capabilities of <strong>Inventory</strong>, you must define at least one store.</p>
 <p><img src="pictures/Inventory_Stores_14_03.png" alt="picture"></p>
 <h4 id="lots">Lots</h4>
-<p>Warehouse lots consist of individual entries for each distinct product, detailing its status, production batch, and specific warehouse conditions.</p>
+<p>Warehouse <strong>lots</strong> consist of individual entries for each distinct product, detailing its status, production batch, and specific warehouse conditions.</p>
 <p>The status of each lot can restrict certain operations within the warehouse.</p>
 <p><img src="pictures/Inventory_Lots_14_03.png" alt="picture"></p>
 <h4 id="serial-numbers">Serial Numbers</h4>
-<p><strong>Serial numbers</strong> are assigned to items and tracked within documents.</p>
+<p>These are assigned to items and tracked within documents.</p>
 <p>Each serial number generates a unique entry upon its initial occurrence in a document.</p>
 <p>These entries can be removed once the last occurrence of the serial number is deleted from the document.</p>
 <p><img src="pictures/Inventory_Serial_Numbers_14_03.png" alt="picture"></p>
 <h4 id="requisition-plan">Requisition Plan</h4>
-<p>You have the option to assign the current requisition (MRP) plan, which is designed to maintain optimal inventory levels to meet demand while minimizing excess stock and associated costs.</p>
+<p>You have the option to assign a current requisition (MRP) plan, which is designed to maintain optimal inventory levels to meet demand while minimizing excess stock and associated costs.</p>
 <p>This plan involves resetting and regenerating data during each planning cycle.</p>
 <p><img src="pictures/Inventory_Requisition_plan_14_03.png" alt="picture"></p>
+<h2 id="documents">Documents</h2>
+<h4 id="transactions">Transactions</h4>
+<p>In this panel, you can find all transaction documents related to <strong>movements</strong> in and out of your warehouse’s existing stores.</p>
+<p><strong>Receipt transactions</strong> reflect incoming goods, while <strong>issue store transactions</strong> denote outgoing goods.</p>
+<p>Transactions are always created as a result of a <strong>store order</strong>.</p>
+<p><img src="pictures/Inventory_Transactions_14_03.png" alt="picture"></p>
+<h4 id="transfer-orders">Transfer Orders</h4>
+<p>This panel allows for the creation of documents reflecting product quantities which you <strong>move</strong> from one of your existing stores to another.</p>
+<p>It's an essential part of inventory management and leads to the creation of a receipt transaction for the receiving store and an issue store transaction for the sending store.</p>
+<p><img src="pictures/Inventory_Transactions_Orders_14_03.png" alt="picture"></p>
+<h4 id="reconciliations">Reconciliations</h4>
+<p>In this panel, you can create documents to <strong>update</strong> your warehouse or store's current availability.</p>
+<p>It allows for the creation of receipt store transactions (+) and issue store transactions (-) based on variations between initially counted quantities and actual availability.</p>
+<p><img src="pictures/Inventory_Reconiciliations_14_03.png" alt="picture"></p>
 <h2 id="views">Views</h2>
-<h4 id="available-to-promise-and-available-to-promise-by-lots">Available To Promise and Available To Promise By Lots</h4>
-<p><strong>The Availability to Promise</strong> feature provides quantities available for various date periods, including current and projected availability, while the <strong>Availability to Promise by Lot</strong> feature specifically tracks
-quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.</p>
+<p>The <strong>Availability to Promise</strong> view provides quantities available for various date periods, including current and projected availability.</p>
+<p>The <strong>Availability to Promise by Lot</strong> view specifically tracks quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.</p>
 <p><img src="pictures/Inventory_views_21_02.png" alt="picture"></p>
 <p>Learn more about <strong>Inventory</strong> in the following articles:</p>
 <ul>
