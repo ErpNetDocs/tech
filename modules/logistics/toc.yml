@@ -7,8 +7,8 @@
   href: procurement/toc.yml
   topicHref: procurement/index.md
 - name: Shipment
-  href: procurement/toc.yml
-  topicHref: procurement/index.md
+  href: shipment/toc.yml
+  topicHref: shipment/index.md
 - name: WMS
   href: wms/toc.yml
   topicHref: wms/index.md
