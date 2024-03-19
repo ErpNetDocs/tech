@@ -8,34 +8,6 @@ You can further take advantage of Inventory's simplified **[Inventory Control](i
 
 ![picture](pictures/Inventory_view_21_02.png)
 
-## Documents
-
-#### Transactions 
-
-In this panel, you can find all transaction documents related to **movements** in and out of your warehouse’s existing stores. 
-
-**Receipt transactions** reflect incoming goods, while **issue store transactions** denote outgoing goods. 
-
-Transactions are always created as a result of a **store order**.
-
-![picture](pictures/Inventory_Transactions_14_03.png)
- 
-#### Transfer Orders 
-
-This panel allows for the creation of documents reflecting product quantities which you **move** from one of your existing stores to another.
-
-It's an essential part of inventory management and leads to the creation of a receipt transaction for the receiving store and an issue store transaction for the sending store.
-
-![picture](pictures/Inventory_Transactions_Orders_14_03.png)
- 
-#### Reconciliations
-
-In this panel, you can create documents to **update** your warehouse or store's current availability. 
-
-It allows for the creation of receipt store transactions (+) and issue store transactions (-) based on variations between initially counted quantities and actual availability.
-
-![picture](pictures/Inventory_Reconiciliations_14_03.png)
- 
 ## Definitions 
 
 #### Stores 
@@ -71,6 +43,34 @@ You have the option to assign a current requisition (MRP) plan, which is designe
 This plan involves resetting and regenerating data during each planning cycle.
 
  ![picture](pictures/Inventory_Requisition_plan_14_03.png)
+
+## Documents
+
+#### Transactions 
+
+In this panel, you can find all transaction documents related to **movements** in and out of your warehouse’s existing stores. 
+
+**Receipt transactions** reflect incoming goods, while **issue store transactions** denote outgoing goods. 
+
+Transactions are always created as a result of a **store order**.
+
+![picture](pictures/Inventory_Transactions_14_03.png)
+ 
+#### Transfer Orders 
+
+This panel allows for the creation of documents reflecting product quantities which you **move** from one of your existing stores to another.
+
+It's an essential part of inventory management and leads to the creation of a receipt transaction for the receiving store and an issue store transaction for the sending store.
+
+![picture](pictures/Inventory_Transactions_Orders_14_03.png)
+ 
+#### Reconciliations
+
+In this panel, you can create documents to **update** your warehouse or store's current availability. 
+
+It allows for the creation of receipt store transactions (+) and issue store transactions (-) based on variations between initially counted quantities and actual availability.
+
+![picture](pictures/Inventory_Reconiciliations_14_03.png)
 
 ## Views 
 
