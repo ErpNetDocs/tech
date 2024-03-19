@@ -20,27 +20,29 @@ Alternatively, you can select **Logistic Units** and then click on the **New** b
 
 > [!NOTE]
 > 
-> You can either choose a logistic unit type or create a logistic unit type without one. 
-> Regardless of the method chosen, the creation process remains the same.
+> You can either choose a logistic unit type or create a logistic unit without one. 
 
 Once you've completed the previous steps, a new page will open, prompting you to fill in several fields:
 
-- Serial Code: This is the only mandatory field.
-- Logistic Unit Type: If you've selected a unit type, it will be automatically added here.
-- Expected Weight: This is the calculated weight.
-- Measured Weight: The weight measured in the warehouse.
-- Cargo Type: Select from the drop-down menu.
-- Notes: Additional notes can be added here.
-- Represented As Product
-- Active Status: Check the box if the logistic unit is active.
+* **Serial Code** - This is the only mandatory field.
+  
+* **Logistic Unit Type** - If you've selected a unit type, it will be automatically added here.
+  
+* **Expected Weight** - This is the calculated weight.
+  
+* **Measured Weight** - The weight measured in the warehouse.
+  
+* **Cargo Type** - Select from the drop-down menu.
+  
+* **Notes** - Additional notes can be added here.
+  
+* **Represented As Product**
+  
+* **Active Status** - Check the box if the logistic unit is active.
 
-When you are ready, click on the **Save and reload** button to finalize the creation. 
+When you are ready, click on the **Save and reload** button to finish the creation process
 
 ![picture](pictures/Logistical_Unit_Save_14_03.png)
-
-To quit the process you can click on **Cancel changes and return**.
-
-![picture](pictures/Logistical_Unit_Cancel_14_03.png)
 
 > [!NOTE]
 > 
