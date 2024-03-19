@@ -6,7 +6,7 @@ Examples of logistic unit types include pallets, containers, and crates.
 
 They ensure standardized handling and compatibility across all logistics-related operations.
 
-![picture](pictures/Logistic_Units_Types_view_19_03.png)
+![picture](pictures/Logistic_Units_type_view_19_03.png)
 
 ## New logistic unit type 
 
