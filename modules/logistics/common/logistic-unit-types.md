@@ -12,11 +12,11 @@ They ensure standardized handling and compatibility across all logistics-related
 
 To create a new logistic unit type, click on the circular **"+"** button on the **Logistic Unit Types** panel.
 
-![picture](pictures/Common_view_14_03.png)
+![picture](pictures/Logistic_Units_Create_14_03.png)
 
 Alternatively, click the title of the panel and then the **New** button at the top-right corner of the unit types table.
 
-![picture](pictures/Common_view_14_03.png)
+![picture](pictures/Logistic_Units_New_14_03.png)
 
 You'll be directed to a separate page where you need to fill out several fields:
 
