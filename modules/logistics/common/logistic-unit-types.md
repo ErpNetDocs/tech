@@ -1,38 +1,34 @@
 # Logistic unit types
 
-Logistics unit types are predefined categories that specify the characteristics of units used in handling and transporting goods, such as pallets, containers, or crates.
+A unit type is a custom category that specifies the characteristics of logistics units used in the handling and transportation of products.
 
-They ensure standardized handling and compatibility across logistics operations.
+Examples of logistic unit types include pallets, containers, and crates.
+
+They ensure standardized handling and compatibility across all logistics-related operations.
 
 ![picture](pictures/Common_view_14_03.png)
 
 ## New logistic unit type 
 
-To create a new logistic unit type, go to the **Logistics** module in the **Common** section. Then, click on the circular "+" button on the **logistic unit types** panel.
+To create a new logistic unit type, click on the circular **"+"** button on the **Logistic Unit Types** panel.
 
 ![picture](pictures/Common_view_14_03.png)
 
-Alternatively, choose **Logistic Unit Types** and then click on the **New** button at the top of the table showing all existing logistic unit types on the platform.
+Alternatively, click the title of the panel and then the **New** button at the top-right corner of the unit types table.
 
 ![picture](pictures/Common_view_14_03.png)
 
-> [!NOTE]
-> 
-> Regardless of the method chosen, the creation process for a logistic unit type remains the same.
+You'll be directed to a separate page where you need to fill out several fields:
 
-After completing the previous steps, you'll be directed to a new page where you'll need to fill in several fields:
+* **Code** - Input a unique code for the logistic unit type (required).
+  
+* **Name** - Provide a descriptive name for the logistic unit type (required).
+  
+* **Notes** - Any additional notes or details can be added here.
 
-- Code: Input a unique code for the logistic unit type.
-- Name: Provide a descriptive name for the logistic unit type.
-- Notes: Any additional notes or details can be added here.
-
-When you are ready, click on the **Save and reload** button to finalize the creation. 
+When you are ready, click on the **Save and reload** button to finish the creation process.
 
 ![picture](pictures/Logistical_Unit_Save_14_03.png)
-
-To quit the process, you can click on **Cancel changes and return**.
-
-![picture](pictures/Logistical_Unit_Cancel_14_03.png)
 
 > [!NOTE]
 > 
