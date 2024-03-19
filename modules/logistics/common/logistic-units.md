@@ -4,17 +4,17 @@ A logistic unit represents the composition of products designated for transporta
 
 Once defined, it can be used to specify units across other **Logistics** submodules.
 
-![picture](pictures/Logistic_Units_14_03.png)
+![picture](pictures/Logistic_Units_view_19_03.png)
 
 ## New logistic unit 
 
 To create a new logistic unit, click on the circular **"+"** button located on the **Logistic Units** panel or select one of the **[logistic unit types](logistic-unit-types.md)** under the **Create** button.
 
-![picture](pictures/Logistic_Units_Create_14_03.png)
+![picture](pictures/Logistic_Units_Create_19_03.png)
 
 Alternatively, you can click the title of the panel and then the **New** button located at the top-left corner of the units table.
 
-![picture](pictures/Logistic_Units_New_14_03.png)
+![picture](pictures/Logistic_Units_create_new_19_03.png)
 
 > [!NOTE]
 > 
