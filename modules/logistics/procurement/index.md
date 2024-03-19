@@ -4,7 +4,7 @@ This submodule serves as a comprehensive tool for overseeing and optimizing the 
 
 It plays a pivotal role in streamlining the entire procurement process, from initial supplier selection to final product acquisition.
 
-By leveraging this section, you can effectively track and manage all aspects of procurement, including supplier relationships, purchase order creation, inventory replenishment, and receipt of goods. 
+By leveraging this space, you can effectively track and manage all aspects of procurement, including supplier relationships, purchase order creation, inventory replenishment, and receipt of goods. 
 
 ![picture](pictures/Procurement_view_14_03.png)
  
@@ -18,13 +18,21 @@ First, it's necessary to establish one or more **suppliers** responsible for del
   
 ## Documents 
 
+#### Requisitions 
+
+This panel contains internal requisitions for products, which are then consolidated by the purchase department into **purchase orders**.
+
+A requisitions requires you to specify which store will get your order, the party that will deliver it and all the products that you need. 
+
+When all the details are provided and a subsequent offer is accepted, you can proceed with creating a purchase order to confirm your purchase. 
+
+![picture](pictures/Procurement_Requisitions_14_03.png)
+
 #### Purchase Order 
 
 This panel allows you to create a purchase order which is sent to suppliers to notify them of an order for goods or services. 
 
-It serves as official authorization for warehouse workers to accept approved purchases.
-
-![picture](pictures/Procurement_Purchase_Order_14_03.png)
+It includes the respective invoice and is handed to a store worker responsible for handling the delivered products.
  
 #### Purchase Invoice 
 
@@ -35,12 +43,6 @@ A purchase invoice document requires the provision of a **delivery warehouse** a
 Depending on the chosen supplier, additional information such as **credit limits** and **delivery times** may be specified. 
 
 ![picture](pictures/Procurment_Purchase_Invoice_14_03.png)
- 
-#### Requisitions 
-
-This panel contains internal requisitions for products, which are then consolidated by the purchase department into **purchase orders**.
-
-![picture](pictures/Procurement_Requisitions_14_03.png)
  
 Learn more about **Procurement** here;
 
