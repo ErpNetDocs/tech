@@ -6,7 +6,7 @@ This submodule is designed to assist the process of **shipping** products to dif
  
 ## Documents 
 
-### Shipment Order
+### Shipment Orders
 
 This panel allows for the creation of shipment orders.
 
