@@ -12,7 +12,7 @@ You can further take advantage of Inventory's simplified **[Inventory Control](i
 
 #### Stores 
 
-This panel allows you to define virtual representations of the physical **stores** of your warehouse.
+This panel allows you to define virtual representations of your physical **warehouse**.
 
 To utilize all capabilities of **Inventory**, you must define at least one store.
 
