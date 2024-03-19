@@ -14,7 +14,7 @@ To create a new logistic unit type, click on the circular **"+"** button on the 
 
 ![picture](pictures/Logistic_Units_Create_14_03.png)
 
-Alternatively, click the title of the panel and then the **New** button at the top-right corner of the unit types table.
+Alternatively, click the title of the panel and then the **New** button at the top-left corner of the unit types table.
 
 ![picture](pictures/Logistic_Units_New_14_03.png)
 
