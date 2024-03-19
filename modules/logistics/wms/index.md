@@ -62,6 +62,9 @@ Typically, managed warehouse operations are executed using some sort of handheld
 
 ![Handy](pictures/handy.png)
 
+> [!NOTE]
+> You can take advantage of the dedicated **[WMS Worker](wms-worker/index.md)** application to better control and speed up operations within your managed warehouse.
+
 ## Push and Pull task management
 
 When a warehouse requisition document comes in, there are many ways we can plan how to fulfill it. The plan is represented by warehouse order documents. <br>
