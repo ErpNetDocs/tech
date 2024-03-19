@@ -18,7 +18,7 @@ Alternatively, click the title of the panel and then the **New** button at the t
 
 ![picture](pictures/Logistic_Units_New_14_03.png)
 
-You'll be directed to a separate page where you need to fill out several fields:
+You'll be taken to a separate page where you need to fill out several fields:
 
 * **Code** - Input a unique code for the logistic unit type (required).
   
