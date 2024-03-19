@@ -8,11 +8,11 @@ This submodule is designed to assist the process of **shipping** products to dif
 
 ### Shipment Order
 
+This panel allows for the creation of shipment orders.
+
 When certain products from your warehouse are sold or leave it through any other means, you will need to create an **issue order**, including a respective issue store transaction. 
 
 These documents are then taken by the **Shipment** submodule and lead to the creation of a **shipment order**, confirming that a certain number of products have left the store. 
-
-This panel allows for the creation of shipment orders.
 
 ![picture](pictures/Shipment_Orders_15_03.png)
  
