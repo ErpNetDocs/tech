@@ -8,21 +8,17 @@ These units are subsequently employed across other submodules, ensuring consiste
 
 ### Logistics unit types
 
-Before you can set up a logistics unit, you need to define its **type**. 
+Before you set up a logistics unit, you can optionally define its **type**. 
 
-This is a predefined category that specifies the characteristics of the units used in the handling and transporting of goods, such as pallets, containers, or crates. 
-
-They ensure standardized handling and compatibility across logistics operations.
+This is a predefined category that specifies the characteristics of the unit that will be used in the handling and transporting of goods, such as pallets, containers, or crates. 
 
 ![picture](pictures/Common_Logistics_Units_14_03.png)
 
-### Logistics Units
+### Logistics units
 
-Once you have at least one type set, you can proceed with defining a logistic unit. 
+Regardless of whether you have a type set, you can define as many logistic units as your warehouse needs. 
 
 One unit represents a combination of products designated for transportation and/or storage within the supply chain. 
-
-Efficient management is essential to ensure seamless integration and efficiency throughout their logistical lifecycle.
 
 ![picture](pictures/Common_Logistics_Unit_Types_14_03.png)
 
