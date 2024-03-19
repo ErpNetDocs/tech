@@ -4,31 +4,35 @@ Inventory is designed to assist you in the process of inventory control and ware
 
 It includes the ability to **create** various invoices, reconciliation documents and transfer orders, add **definitions** and utilize different **views**.
 
+You can further take advantage of Inventory's simplified **[Inventory Control](inventory-control/index.md)** application, designed to assist and speed up operations within shops and smaller stores.
+
 ![picture](pictures/Inventory_view_21_02.png)
 
 ## Documents
 
 #### Transactions 
 
-In **Transaction** you can find the receipts for  your (warehouse’s existing) stores. **Store-receipts** reflect incoming goods, while **store-issues** denote outgoing goods. 
+In this panel, you can find all transaction documents related to **movements** in and out of your warehouse’s existing stores. 
 
-Outgoing goods in store-issues are recorded with negative quantity values. Based on a **purchase order**, a receipt is generated. 
+**Receipt transactions** reflect incoming goods, while **issue store transactions** denote outgoing goods. 
+
+Transactions are always created as a result of a **store order**.
 
 ![picture](pictures/Inventory_Transactions_14_03.png)
  
 #### Transfer Orders 
 
-The **Transfer Orders** panel facilitates seamless stock transfers between stores, offering detailed specifications and customizable workflows. 
+This panel allows for the creation of documents reflecting product quantities which you **move** from one of your existing stores to another.
 
-It integrates with other panels for inventory management and provides real-time monitoring capabilities for proactive intervention when needed.
+It's an essential part of inventory management and leads to the creation of a receipt transaction for the receiving store and an issue store transaction for the sending store.
 
 ![picture](pictures/Inventory_Transactions_Orders_14_03.png)
  
 #### Reconciliations
 
-In the **Reconciliations** panel, you can efficiently manage your stock availability. 
+In this panel, you can create documents to **update** your warehouse or store's current availability. 
 
-It generates receipt store transactions (+) and issue store transactions (-) based on variations between recorded stock levels and actual availability, reflecting the differences between stock levels and availability.
+It allows for the creation of receipt store transactions (+) and issue store transactions (-) based on variations between initially counted quantities and actual availability.
 
 ![picture](pictures/Inventory_Reconiciliations_14_03.png)
  
@@ -36,13 +40,15 @@ It generates receipt store transactions (+) and issue store transactions (-) bas
 
 #### Stores 
 
-**Stores** represent the physical warehouses within your inventory management system. To utilize the inventory, you must define one or more stores to house your inventory.
+This panel allows you to define virtual representations of the physical **stores** of your warehouse.
+
+To utilize all capabilities of **Inventory**, you must define at least one store.
 
 ![picture](pictures/Inventory_Stores_14_03.png)
  
 #### Lots
 
-Warehouse lots consist of individual entries for each distinct product, detailing its status, production batch, and specific warehouse conditions. 
+Warehouse **lots** consist of individual entries for each distinct product, detailing its status, production batch, and specific warehouse conditions. 
 
 The status of each lot can restrict certain operations within the warehouse.
 
@@ -50,7 +56,7 @@ The status of each lot can restrict certain operations within the warehouse.
  
 #### Serial Numbers 
 
-**Serial numbers** are assigned to items and tracked within documents. 
+These are assigned to items and tracked within documents. 
 
 Each serial number generates a unique entry upon its initial occurrence in a document. 
 
@@ -60,7 +66,7 @@ These entries can be removed once the last occurrence of the serial number is de
  
 #### Requisition Plan
 
-You have the option to assign the current requisition (MRP) plan, which is designed to maintain optimal inventory levels to meet demand while minimizing excess stock and associated costs. 
+You have the option to assign a current requisition (MRP) plan, which is designed to maintain optimal inventory levels to meet demand while minimizing excess stock and associated costs. 
 
 This plan involves resetting and regenerating data during each planning cycle.
 
@@ -70,8 +76,9 @@ This plan involves resetting and regenerating data during each planning cycle.
 
 #### Available To Promise and Available To Promise By Lots
 
-**The Availability to Promise** feature provides quantities available for various date periods, including current and projected availability, while the **Availability to Promise by Lot** feature specifically tracks 
-quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.
+The **Availability to Promise** view provides quantities available for various date periods, including current and projected availability.
+
+The **Availability to Promise by Lot** view specifically tracks quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.
 
 ![picture](pictures/Inventory_views_21_02.png)
 
@@ -90,7 +97,6 @@ Learn more about **Inventory** in the following articles:
 - **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20and%20issue%20balance%20validation%20in%20store%20transfers)**
 
 - **[Inventory Control](inventory-control/index.md)**
-
 
 > [!NOTE]
 > 
