@@ -12,7 +12,7 @@ Before you set up a logistics unit, you can optionally define its **type**.
 
 This is a predefined category that specifies the characteristics of the unit that will be used in the handling and transporting of goods, such as pallets, containers, or crates. 
 
-![picture](pictures/Common_Logistics_Units_14_03.png)
+![picture](pictures/Common_Logistics_Unit_Types_14_03.png)
 
 ### Logistics units
 
@@ -20,7 +20,7 @@ Regardless of whether you have a type set, you can define as many logistic units
 
 One unit represents a combination of products designated for transportation and/or storage within the supply chain. 
 
-![picture](pictures/Common_Logistics_Unit_Types_14_03.png)
+![picture](pictures/Common_Logistics_Units_14_03.png)
 
 Learn more about **Common** in the following articles:
 
