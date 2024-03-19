@@ -74,8 +74,6 @@ This plan involves resetting and regenerating data during each planning cycle.
 
 ## Views 
 
-#### Available To Promise and Available To Promise By Lots
-
 The **Availability to Promise** view provides quantities available for various date periods, including current and projected availability.
 
 The **Availability to Promise by Lot** view specifically tracks quantities available for different date periods, considering both current and projected availability, with a focus on individual lot quantities and those without lot specifications.
