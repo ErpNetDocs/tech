@@ -1,40 +1,44 @@
 # Procurement
 
-The **Procurement** section within our system serves as a comprehensive tool for overseeing and optimizing the sourcing of materials within the warehouse environment. 
+This submodule serves as a comprehensive tool for overseeing and optimizing the sourcing of materials within the warehouse environment. 
 
-It plays a pivotal role in streamlining the entire procurement process, from initial supplier selection to final product acquisition, ensuring seamless operations and resource management. 
+It plays a pivotal role in streamlining the entire procurement process, from initial supplier selection to final product acquisition.
 
-By leveraging this section, businesses can effectively track and manage all aspects of procurement, including supplier relationships, purchase order creation, inventory replenishment, and receipt of goods. 
-
-Additionally, the section facilitates real-time monitoring and analysis, empowering decision-makers to make informed choices regarding sourcing strategies, supplier performance, and inventory levels.
+By leveraging this section, you can effectively track and manage all aspects of procurement, including supplier relationships, purchase order creation, inventory replenishment, and receipt of goods. 
 
 ![picture](pictures/Procurement_view_14_03.png)
  
 ## Definitions 
 
-### Suppliers  
+#### Suppliers  
 
-In the **Procurement** section, it's necessary to establish one or more suppliers. These **suppliers** are responsible for providing products to the warehouse.
+First, it's necessary to establish one or more **suppliers** responsible for delivering products to the warehouse.
 
 ![picture](pictures/Procurement_Suppliers_15_03.png)
   
 ## Documents 
 
-### Purchase Invoice 
+#### Purchase Order 
 
-To commence a purchase request, utilize the **purchase invoice**. Within this document, specify the desired delivery warehouse and select the supplier responsible for fulfilling the order. Depending on the chosen supplier, additional options such as credit limits and delivery times may be available. 
+This panel allows you to create a purchase order which is sent to suppliers to notify them of an order for goods or services. 
 
-![picture](pictures/Procurment_Purchase_Invoice_14_03.png)
- 
-### Purchase Order 
-
-**Purchase orders** are documents sent to suppliers to notify them of an order for goods or services. They serve as official authorization for warehouse workers to accept approved purchases.
+It serves as official authorization for warehouse workers to accept approved purchases.
 
 ![picture](pictures/Procurement_Purchase_Order_14_03.png)
  
-### Requisitions 
+#### Purchase Invoice 
 
-This section contains internal requisitions for products, which are then aggregated by the purchase department to create **purchase orders**.
+To finish a purchase request, you also need to create its respective **invoice** using this panel.
+
+A purchase invoice document requires the provision of a **delivery warehouse** and a **supplier** responsible for fulfilling the order. 
+
+Depending on the chosen supplier, additional information such as **credit limits** and **delivery times** may be specified. 
+
+![picture](pictures/Procurment_Purchase_Invoice_14_03.png)
+ 
+#### Requisitions 
+
+This panel contains internal requisitions for products, which are then consolidated by the purchase department into **purchase orders**.
 
 ![picture](pictures/Procurement_Requisitions_14_03.png)
  
@@ -43,8 +47,6 @@ Learn more about **Procurement** here;
 - **[Automatic lot creation](https://docs.erp.net/tech/s/logistics/procurement/automatic-lot-creation.html?q=Automatic%20lot%20creation)**
 
 - **[Setting cost when purchasing goods](https://docs.erp.net/tech/s/logistics/procurement/setting-cost-when-purchasing-goods.html?q=Setting%20cost%20when%20purchasing%20goods)**
-
-
 
 > [!NOTE]
 > 
