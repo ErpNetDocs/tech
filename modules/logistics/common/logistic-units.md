@@ -12,7 +12,7 @@ To create a new logistic unit, click on the circular **"+"** button located on t
 
 ![picture](pictures/Logistic_Units_Create_14_03.png)
 
-Alternatively, you can click the title of the panel and then the **New** button located at the top-right corner of the units table.
+Alternatively, you can click the title of the panel and then the **New** button located at the top-left corner of the units table.
 
 ![picture](pictures/Logistic_Units_New_14_03.png)
 
