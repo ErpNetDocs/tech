@@ -1,10 +1,10 @@
 # Shipment 
 
-The **Shipment** section is designed to assist in managing the shipping process for purchased stock. 
+This submodule is designed to assist the process of **shipping** products to different customers.
 
-Upon purchasing stock, a **store order** is generated, followed by a **store transaction**. 
+When certain products from your warehouse are sold or leave it through any other means, you will need to create an **issue order**, including a respective issue store transaction. 
 
-Subsequently, a **shipment order** is created based on the **store order**, facilitating the shipment of the stock.
+These documents are then taken by the **Shipment** submodule and lead to the creation of a **shipment order**, confirming that a certain number of products have left the store. 
 
 ![picture](pictures/Shipment_view_21_02.png)
  
@@ -12,16 +12,15 @@ Subsequently, a **shipment order** is created based on the **store order**, faci
 
 ### Shipment Order
 
-This represents the order for shipping sales orders to customers.
+This panel allows for the creation of shipment orders.
 
 ![picture](pictures/Shipment_Orders_15_03.png)
  
 ### Shipments
 
-Represents shipments of sales orders to customers.
+Once you have created a shipment order based on an existing issue store order and transaction, you also need to create an additional **shipment document**, which includes a recipient party, delivery date and from which store the products are set to leave.
 
 ![picture](pictures/Shipment_Shipments_15_03.png)
- 
 
 > [!NOTE]
 > 
