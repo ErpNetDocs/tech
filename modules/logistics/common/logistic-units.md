@@ -1,44 +1,42 @@
 # Logistic Units 
 
-Logistic units represent the combination of products designated for transportation and/or storage within the supply chain. 
+A logistic unit represents the composition of products designated for transportation and/or storage within the supply chain. 
 
-Efficient management is essential to ensure seamless integration and efficiency throughout their logistical lifecycle.
+Once defined, it can be used to specify units across other **Logistics** submodules.
 
 ![picture](pictures/Logistic_Units_14_03.png)
 
 ## New logistic unit 
 
-To add a new logistic unit, navigate to the **Logistics** module within the **Common** section. 
-
-You can click on the circular **"+"** button located on the **Logistic Units** panel or select one of the **logistic unit types** under **Create**.
+To create a new logistic unit, click on the circular **"+"** button located on the **Logistic Units** panel or select one of the **[logistic unit types](logistic-unit-types.md)** under the **Create** button.
 
 ![picture](pictures/Logistic_Units_Create_14_03.png)
 
-Alternatively, you can select **Logistic Units** and then click on the **New** button located at the top of the table displaying all existing logistic units on the platform.
+Alternatively, you can click the title of the panel and then the **New** button located at the top-right corner of the units table.
 
 ![picture](pictures/Logistic_Units_New_14_03.png)
 
 > [!NOTE]
 > 
-> You can either choose a logistic unit type or create a logistic unit without one. 
+> Choosing a logistic unit type remains optional. You can create a unit without one. 
 
-Once you've completed the previous steps, a new page will open, prompting you to fill in several fields:
+Once you've completed the previous steps, a separate page will open, where you need to fill out several fields:
 
-* **Serial Code** - This is the only mandatory field.
+* **Serial Code** - Serial code of the unit (required).
   
-* **Logistic Unit Type** - If you've selected a unit type, it will be automatically added here.
+* **Logistic Unit Type** - If you've selected a unit type, it will be automatically specified here.
   
-* **Expected Weight** - This is the calculated weight.
+* **Expected Weight** - This is the expected weight of the unit in the measurement unit specified in its type.
   
-* **Measured Weight** - The weight measured in the warehouse.
+* **Measured Weight** - This is the actual weight of the unit in the measurement unit specified in its type.
   
-* **Cargo Type** - Select from the drop-down menu.
+* **Cargo Type** - General type of the cargo that will be used for the unit. Select one from the drop-down menu.
   
 * **Notes** - Additional notes can be added here.
   
-* **Represented As Product**
+* **Represented As Product** - When the logistics unit is also a tradeable item, this field specifies the product used to trade the unit.
   
-* **Active Status** - Check the box if the logistic unit is active.
+* **Active Status** - Check this box to make the logistic unit active.
 
 When you are ready, click on the **Save and reload** button to finish the creation process
 
