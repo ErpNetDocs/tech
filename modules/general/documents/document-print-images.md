@@ -4,11 +4,23 @@ Document print images contain the data of a **printout** of a document as it was
 
 This data is used as a history in order to review the visual representation of the printed document.
 
+![Documents](pictures/print_preview.png)
+
+### Delete old images
+
+Document print images often take the most space in customer databases. One way of managing them is to **delete** the more obsolete records periodically. 
+
+This can be done with the **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)** system job. 
+
+However, there is a way to not even track print records in the first place.
+
 ## Print images tracking
 
-For every document of a given document type, you can configure a setting that allows you to decide when document print images will be tracked.
+For every document type, you can configure a setting that allows you to decide if print images will be tracked for all documents of this particular type.
 
 This is done to ensure that no unnecessary amount of space is accummulated as a result of constant print image tracking.
+
+![Documents](pictures/sales_order_type.png)
 
 ### Step-by-step process
 
@@ -18,12 +30,13 @@ This is done to ensure that no unnecessary amount of space is accummulated as a 
 
 2. Select one of the available settings:
 
-   * **Do not track** - prevents printouts of documents of the respective type to be automatically created
+   * **Do not track** - prevents printouts of all documents of the respective type to be automatically created.
      
-   * **Save source data (compressed)** - allows visual representations of a printed document of the respective type to be saved and previewed.
+   * **Save source data (compressed)** - allows visual representations of printed documents of the respective type to be saved and available for preview.
+  
+     ![Documents](pictures/track_print_images_options.png)
 
-### Delete 
+   If this setting is active, the **Prints** panel of every document of the respective type will begin to create records for print images every time that document is printed.
 
-The **Track Print Images** feature often takes the most space in customer databases. Therefore, it is good to delete obsolete records periodically. 
-
-It is highly recommended that you set up a system job for that purpose, such as **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)**.
+   ![Documents](pictures/print_field_sales_order.png)
+   
