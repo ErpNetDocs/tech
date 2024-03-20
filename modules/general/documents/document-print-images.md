@@ -6,9 +6,9 @@ This data is used as a history in order to review the visual representation of t
 
 ### Delete old images
 
-Document print images often take the most space in customer databases. One way of managing them is to **delete** the more obsolete records periodically. 
+Document print images often take the most space in customer databases. 
 
-This can be done with the **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)** system job. 
+One means of managing them is to **delete** the more obsolete records periodically. This can be done with the **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)** system job. 
 
 However, there is a way to not even track print records in the first place.
 
@@ -16,15 +16,13 @@ However, there is a way to not even track print records in the first place.
 
 For every **document type**, you can configure a **setting** that allows you to decide if printouts will be tracked for all documents of this type.
 
-![Documents](pictures/sales_order_type.png)
-
 This is done to ensure that no unnecessary amount of space is accummulated as a result of constant print image tracking.
 
 ### Step-by-step process
 
 1. Go to a document type definition (e.g. Sales Order) and navigate to the **Track Print Images** field.
 
-   If this field is disabled, enable it using the **Customize panel** option.
+   If this field is not visible, enable it using the **Customize panel** option.
 
 2. Select one of the available settings:
 
