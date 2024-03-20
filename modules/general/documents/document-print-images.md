@@ -4,8 +4,6 @@ Document print images contain the data of a **printout** of a document as it was
 
 This data is used as a history in order to review the visual representation of the printed document.
 
-![Documents](pictures/print_preview.png)
-
 ### Delete old images
 
 Document print images often take the most space in customer databases. One way of managing them is to **delete** the more obsolete records periodically. 
@@ -16,11 +14,9 @@ However, there is a way to not even track print records in the first place.
 
 ## Print images tracking
 
-For every document type, you can configure a setting that allows you to decide if print images will be tracked for all documents of this particular type.
+For every document type, you can configure a **setting** that allows you to decide if printouts will be tracked for all documents of this type.
 
 This is done to ensure that no unnecessary amount of space is accummulated as a result of constant print image tracking.
-
-![Documents](pictures/sales_order_type.png)
 
 ### Step-by-step process
 
@@ -28,7 +24,9 @@ This is done to ensure that no unnecessary amount of space is accummulated as a 
 
    If this field is disabled, enable it using the **Customize panel** option.
 
-2. Select one of the available settings:
+   ![Documents](pictures/sales_order_type.png)
+
+3. Select one of the available settings:
 
    * **Do not track** - prevents printouts of all documents of the respective type to be automatically created.
      
@@ -36,7 +34,7 @@ This is done to ensure that no unnecessary amount of space is accummulated as a 
   
      ![Documents](pictures/track_print_images_options.png)
 
-   If this setting is active, the **Prints** panel of every document of the respective type will begin to create records for print images every time that document is printed.
+     If this setting is active, the **Prints** panel of every document of the respective type will begin to create records for print images every time that document is printed.
 
-   ![Documents](pictures/print_field_sales_order.png)
+     ![Documents](pictures/print_field_sales_order.png)
    
