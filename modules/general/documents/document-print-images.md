@@ -4,7 +4,7 @@ Document print images contain the data of a **printout** of a document as it was
 
 This data is used as a history in order to review the visual representation of the printed document.
 
-## Track Print Images
+## Print images tracking
 
 For every document of a given document type, you can configure a setting that allows you to decide when document print images will be tracked.
 
