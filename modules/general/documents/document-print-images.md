@@ -14,7 +14,9 @@ However, there is a way to not even track print records in the first place.
 
 ## Print images tracking
 
-For every document type, you can configure a **setting** that allows you to decide if printouts will be tracked for all documents of this type.
+For every **document type**, you can configure a **setting** that allows you to decide if printouts will be tracked for all documents of this type.
+
+![Documents](pictures/sales_order_type.png)
 
 This is done to ensure that no unnecessary amount of space is accummulated as a result of constant print image tracking.
 
@@ -24,9 +26,7 @@ This is done to ensure that no unnecessary amount of space is accummulated as a 
 
    If this field is disabled, enable it using the **Customize panel** option.
 
-   ![Documents](pictures/sales_order_type.png)
-
-3. Select one of the available settings:
+2. Select one of the available settings:
 
    * **Do not track** - prevents printouts of all documents of the respective type to be automatically created.
      
