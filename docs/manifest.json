@@ -5731,10 +5731,109 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_New_14_03.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_New_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Close_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Close_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Save_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_Save_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_Types_view_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_create_new_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_create_new_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_type_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_type_view_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_view_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/common/pictures/Logistic_Units_view_19_03.png"
         }
       },
       "is_incremental": false,
@@ -14920,7 +15019,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/general/documents/document-print-images.html",
-          "hash": "NolqDj4LvTUJSDBI7Id0gw=="
+          "hash": "X57Rkc8mH2AfFuL5KNqZHA=="
         }
       },
       "is_incremental": false,
@@ -14933,6 +15032,72 @@
         ".html": {
           "relative_path": "modules/general/documents/index.html",
           "hash": "gV1QipiOQFpCVxb/4pokYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/customize_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/customize_panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/print_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/print_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/print_field_sales_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/print_field_sales_order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/print_preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/print_preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/sales_order_type.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/sales_order_type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/documents/pictures/track_print_images_options.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/documents/pictures/track_print_images_options.png"
         }
       },
       "is_incremental": false,
