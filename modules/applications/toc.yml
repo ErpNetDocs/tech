@@ -1,5 +1,5 @@
 - name: Overview
-  href: overview.md
+  href: index.md
 - name: Service
   href: service/toc.yml
   topicHref: service/index.md
@@ -12,4 +12,3 @@
 - name: MsSync
   href: mssync/toc.yml
   topicHref: mssync/index.md
-  
