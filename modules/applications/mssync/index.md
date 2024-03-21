@@ -19,6 +19,10 @@ To establish the link, you will need to **read** and **accept** the permissions 
 If you use local **ERP** credentials to log in, **MsSync** will still open, but will essentially deny you any kind of access to its resources. 
 
 ![picture](pictures/Overview_error_01_03.png)
+
+> [!NOTE]
+> 
+> You must utilize your **Microsoft account** to reference your **Outlook** calendar. Failure to do so will result in **MSSync** being unable to determine which calendar to reference.
  
 ## Menu
 
@@ -28,7 +32,7 @@ The **MSSync** app consists of **three** sections:
 -	**[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
 -	**[Service](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
 
-In **Home**, you'll find personal profile details, general information about the current **state** of your application, as well as **log data** about the latest sync job.
+In **Home**, you'll find personal profile details, general information about the current **state** of your application, as well as latest **log data** for your activated sync job.
 
 ![picture](pictures/Overview_home_cropepd_01_03.png) 
 
@@ -40,7 +44,7 @@ Additionally, you can toggle synchronization for a specific sync job **on** or *
 
 The **Service** section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between **MSSync** and **Office365**.
 
-From here, admins can securely connect their **MSSync** instance to **Entra ID** resources that are essential for activating all synchronization-related functionalities. 
+From here, admins can securely connect their **MSSync** instance to **Microsoft Entra ID**. This is essential for activating all synchronization-related functionalities. 
 
 ![picture](pictures/Overview_service_01_03.png)
 
