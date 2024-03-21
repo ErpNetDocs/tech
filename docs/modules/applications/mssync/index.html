@@ -79,16 +79,20 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="overview">Overview</h1>
 
-<p>MsSync is an application designed to synchronize resources between the <strong>ERP.net Web Client</strong> and <strong>Office 365</strong>.</p>
-<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in the <strong>ERP</strong>, and the other way around.</p>
-<p>Currently, the only available sync job is for the <a href="https://docs.erp.net/webclient/introduction/my-apps/calendar.html">Calendar</a>, but more will be added in the near future.</p>
+<p>MsSync is an application designed to synchronize resources between <strong>ERP.net</strong> and <strong>Office 365</strong>.</p>
+<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in <strong>ERP.net</strong>, and the other way around.</p>
+<p>An example for such a job is the <strong><a href="https://docs.erp.net/webclient/introduction/my-apps/calendar.html">Calendar</a></strong>.</p>
 <p><img src="pictures/Overview_view_nohighlights_01_03.png" alt="picture"></p>
 <h3 id="access">Access</h3>
 <p>To access <strong>MSSync</strong>, it’s mandatory to sign in with an existing <strong>Microsoft account</strong>.</p>
-<p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions Microsoft needs to obtain.</p>
+<p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions MSSync needs to obtain.</p>
 <p><img src="pictures/Overview_permission_01_03.png" alt="picture"></p>
 <p>If you use local <strong>ERP</strong> credentials to log in, <strong>MsSync</strong> will still open, but will essentially deny you any kind of access to its resources.</p>
 <p><img src="pictures/Overview_error_01_03.png" alt="picture"></p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>You must log in via an existing <strong>Microsoft account</strong> in order to reference your <strong>Outlook</strong> calendar. Otherwise, <strong>MSSync</strong> would be unable to determine which calendar to link to.</p>
+</div>
 <h2 id="menu">Menu</h2>
 <p>The <strong>MSSync</strong> app consists of <strong>three</strong> sections:</p>
 <ul>
@@ -96,13 +100,13 @@
 <li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Setup</a></strong></li>
 <li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Service</a></strong></li>
 </ul>
-<p>In <strong>Home</strong>, you'll find personal profile details, general information about the current <strong>state</strong> of your application, as well as <strong>log data</strong> about the latest sync job.</p>
+<p>In <strong>Home</strong>, you'll find personal profile details, general information about the current <strong>state</strong> of your application, as well as the latest <strong>log data</strong> for your activated sync jobs.</p>
 <p><img src="pictures/Overview_home_cropepd_01_03.png" alt="picture"></p>
 <p>In <strong>Setup</strong>, you can see information about your <strong>enterprise company</strong> - the one that is currently linked to <strong>MSSync</strong>.</p>
 <p>Additionally, you can toggle synchronization for a specific sync job <strong>on</strong> or <strong>off</strong>.</p>
 <p><img src="pictures/Overview_setup_01_03.png" alt="picture"></p>
 <p>The <strong>Service</strong> section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between <strong>MSSync</strong> and <strong>Office365</strong>.</p>
-<p>From here, admins can securely connect their <strong>MSSync</strong> instance to <strong>Entra ID</strong> resources that are essential for activating all synchronization-related functionalities.</p>
+<p>From here, admins can securely connect their <strong>MSSync</strong> instance to their <strong>Microsoft Entra ID</strong>. This is essential for activating all synchronization-related functionalities.</p>
 <p><img src="pictures/Overview_service_01_03.png" alt="picture"></p>
 <p>For more information about navigating, setting up and configuring MsSync, see:</p>
 <ul>
