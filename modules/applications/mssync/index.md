@@ -1,10 +1,10 @@
 # Overview
 
-MsSync is an application designed to synchronize resources between the **ERP.net Web Client** and **Office 365**. 
+MsSync is an application designed to synchronize resources between the **ERP.net** and **Office 365**. 
 
 Each synchronization task is referred to as a **job**, allowing resources created in **Office 365** to be automatically reflected in the corresponding module in the **ERP**, and the other way around.
 
-Currently, the only available sync job is for the [Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html), but more will be added in the near future.
+An example for such a synchronization job is for the [Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html). 
 
 ![picture](pictures/Overview_view_nohighlights_01_03.png)
  
@@ -12,7 +12,7 @@ Currently, the only available sync job is for the [Calendar](https://docs.erp.ne
 
 To access **MSSync**, it’s mandatory to sign in with an existing **Microsoft account**. 
 
-To establish the link, you will need to **read** and **accept** the permissions Microsoft needs to obtain.
+To establish the link, you will need to **read** and **accept** the permissions MSSync needs to obtain.
 
 ![picture](pictures/Overview_permission_01_03.png)
  
