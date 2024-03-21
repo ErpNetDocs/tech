@@ -9,4 +9,7 @@
 - name: Data Warehouse
   href: data-warehouse/toc.yml
   topicHref:  data-warehouse/index.md
+- name: MsSync
+  href: mssync/toc.yml
+  topicHref: mssync/index.md
   
