@@ -10,7 +10,7 @@ Document print images often take the most space in customer databases.
 
 One means of managing them is to **delete** the more obsolete records periodically. This can be done with the **[Deletе old document print images](https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images)** system job. 
 
-However, there is a way to not even track print images records in the first place - for further details, please refer to the **Enable or disable print images tracking** section.
+However, there is a way to not even track print images records in the first place - for further details, please refer to the [**Enable or disable print images tracking**](https://github.com/ErpNetDocs/tech/blob/master/modules/general/documents/document-print-images.md#enable-or-disable-print-images-tracking) section.
 
 ## Enable or disable print images tracking
 
