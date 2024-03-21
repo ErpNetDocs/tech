@@ -81,30 +81,20 @@
 
 <p>Document print images contain the data of a <strong>printout</strong> of a document as it was obtained at the moment of printing.</p>
 <p>This data is used as a history in order to review the visual representation of the printed document.</p>
-<h3 id="delete-old-images">Delete old images</h3>
+<h2 id="delete-old-images">Delete old images</h2>
 <p>Document print images often take the most space in customer databases.</p>
 <p>One means of managing them is to <strong>delete</strong> the more obsolete records periodically. This can be done with the <strong><a href="https://docs.erp.net/tech/advanced/jobs/J30903.html?q=J30903%20Delet%D0%B5%20old%20document%20print%20images">Deletе old document print images</a></strong> system job.</p>
-<p>However, there is a way to not even track print records in the first place.</p>
-<h2 id="print-images-tracking">Print images tracking</h2>
-<p>For every <strong>document type</strong>, you can configure a <strong>setting</strong> that allows you to decide if printouts will be tracked for all documents of this type.</p>
-<p>This is done to ensure that no unnecessary amount of space is accummulated as a result of constant print image tracking.</p>
-<h3 id="step-by-step-process">Step-by-step process</h3>
-<ol>
-<li><p>Go to a document type definition (e.g. Sales Order) and navigate to the <strong>Track Print Images</strong> field.</p>
-<p>If this field is not visible, enable it using the <strong>Customize panel</strong> option.</p>
-</li>
-<li><p>Select one of the available settings:</p>
+<p>However, there is a way to not even track print images records in the first place - for further details, please refer to the <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/documents/document-print-images.md#enable-or-disable-print-images-tracking"><strong>Enable or disable print images tracking</strong></a> section.</p>
+<h2 id="enable-or-disable-print-images-tracking">Enable or disable print images tracking</h2>
+<p>A <strong>setting</strong> is available to control the tracking of print images for all documents of a specific type.</p>
+<p>This functionality is configured through the &quot;Track Print Images&quot; field within the Document Type definition.</p>
+<p>The available settings are:</p>
 <ul>
-<li><p><strong>Do not track</strong> - prevents printouts of all documents of the respective type to be automatically created.</p>
+<li><p><strong>Do not track</strong> - prevents print images of all documents of the respective type from being automatically stored. This can be useful for scenarios where print image tracking is unnecessary or unwanted.</p>
 </li>
-<li><p><strong>Save source data (compressed)</strong> - allows visual representations of printed documents of the respective type to be saved and available for preview.</p>
-<p><img src="pictures/track_print_images_options.png" alt="Documents"></p>
-<p>If this setting is active, the <strong>Prints</strong> panel of every document of the respective type will begin to create records for print images every time that document is printed.</p>
-<p><img src="pictures/print_field_sales_order.png" alt="Documents"></p>
+<li><p><strong>Save source data (compressed)</strong> - enables the tracking of visual representations of printed documents of the respective type. These images are compressed for efficient storage and are available for preview within the system.</p>
 </li>
 </ul>
-</li>
-</ol>
 </article>
           </div>
           
