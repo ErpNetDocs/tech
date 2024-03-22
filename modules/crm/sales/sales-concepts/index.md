@@ -12,4 +12,4 @@ Here, you will find detailed information into common sales-related concepts that
 * **[Minimal sales quantity](minimal-sales-quantity.md)**
 * **[Promotional packages](promotional-packages.md)**
 * **[VAT deviation](vat-deviation.md)**
-* **[Algorithms](determining-algorithms/index.md)**
+* **[Determining algorithms](determining-algorithms/index.md)**
