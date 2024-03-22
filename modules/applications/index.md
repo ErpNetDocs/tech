@@ -1,4 +1,4 @@
-# ERP.net Integrated applications
+# Applications
 
 ERP.net contains various built-in applications:
 
