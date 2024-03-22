@@ -28,11 +28,10 @@ They are used to manage the different aspects of the CRM processes:
 * **[Pre-sales](https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm)** - Opportunities management, quotation, etc.
 * **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales)** - Sales orders, customers, etc.
 * **[Invoicing](https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing)** - Invoicing process management, invoices and BI.
+* **[Marketing](https://docs.erp.net/tech/modules/crm/marketing/index.html)** - Marketing campaigns, activities, distribution channels, etc.
+* **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)** - a single platform to engage with customers
 * **POS** - Manage point-of-sale activities in physical stores.
-* **Marketing** - Marketing campaigns, activities, distribution channels, etc.
 * **Distribution** - field sales, sales person targets management, etc.
 * **Pricing** - price lists management.
 * **Product Configuration** - create products based on specs for job shops (made-to-order and engineer-to-order environments).
 * **Products** - manage products master data - products and product measurements, codes, variants, channel, pictures, groups, etc.
-* **Client Center** - a single platform to engage with customers
-
