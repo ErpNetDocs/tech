@@ -1,4 +1,4 @@
-# Determine payment account in sales order
+# Determine payment account in sales orders
 
 The algorithm for the determination of the payment account in the sales order is the following:
 
