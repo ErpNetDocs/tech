@@ -1081,8 +1081,8 @@
   },
   "modules/applications/index.html": {
     "href": "modules/applications/index.html",
-    "title": "ERP.net Integrated applications | ERP.net Tech Docs",
-    "keywords": "ERP.net Integrated applications ERP.net contains various built-in applications: Service Enterprise asset management Data warehouse MsSync"
+    "title": "Applications | ERP.net Tech Docs",
+    "keywords": "Applications ERP.net contains various built-in applications: Service Enterprise asset management Data warehouse MsSync"
   },
   "modules/applications/mssync/home.html": {
     "href": "modules/applications/mssync/home.html",
@@ -1231,8 +1231,8 @@
   },
   "modules/crm/crm-common/crm-common-concepts/index.html": {
     "href": "modules/crm/crm-common/crm-common-concepts/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "Concepts | ERP.net Tech Docs",
+    "keywords": "Concepts Pricing Determine line discount Determine product price"
   },
   "modules/crm/crm-common/crm-common-concepts/pricing.html": {
     "href": "modules/crm/crm-common/crm-common-concepts/pricing.html",
@@ -1241,13 +1241,13 @@
   },
   "modules/crm/crm-common/index.html": {
     "href": "modules/crm/crm-common/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "Common | ERP.net Tech Docs",
+    "keywords": "Common Concepts"
   },
   "modules/crm/index.html": {
     "href": "modules/crm/index.html",
     "title": "Customer relationship management (CRM) subsystem | ERP.net Tech Docs",
-    "keywords": "Customer relationship management (CRM) subsystem The CRM subsystem in ERP.net is used to manage customer relationships and other front-office activities of a company. General concepts and processes The main process in the CRM subsystem is: Activity → Opportunity → Offer → Sales order → Invoice order → Invoice Activity - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document. Opportunity - sales opportunity, with expected revenue and probability. It does not have detail line items. Offer - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted. Sales order - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale. Invoice order - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue. Invoice - legal and financial document, finalizing the sales process. Note The above diagram shows only the CRM part of the whole process. The full process involves many different modules of the ERP system. Modules There are many modules in the CRM subsystem. They are used to manage the different aspects of the CRM processes: Contacts and tasks - calendar appointments, party definitions, etc. Pre-sales - Opportunities management, quotation, etc. Sales - Sales orders, customers, etc. Invoicing - Invoicing process management, invoices and BI. POS - Manage point-of-sale activities in physical stores. Marketing - Marketing campaigns, activities, distribution channels, etc. Distribution - field sales, sales person targets management, etc. Pricing - price lists management. Product Configuration - create products based on specs for job shops (made-to-order and engineer-to-order environments). Products - manage products master data - products and product measurements, codes, variants, channel, pictures, groups, etc. Client Center - a single platform to engage with customers"
+    "keywords": "Customer relationship management (CRM) subsystem The CRM subsystem in ERP.net is used to manage customer relationships and other front-office activities of a company. General concepts and processes The main process in the CRM subsystem is: Activity → Opportunity → Offer → Sales order → Invoice order → Invoice Activity - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document. Opportunity - sales opportunity, with expected revenue and probability. It does not have detail line items. Offer - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted. Sales order - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale. Invoice order - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue. Invoice - legal and financial document, finalizing the sales process. Note The above diagram shows only the CRM part of the whole process. The full process involves many different modules of the ERP system. Modules There are many modules in the CRM subsystem. They are used to manage the different aspects of the CRM processes: Contacts and tasks - calendar appointments, party definitions, etc. Pre-sales - Opportunities management, quotation, etc. Sales - Sales orders, customers, etc. Invoicing - Invoicing process management, invoices and BI. Marketing - Marketing campaigns, activities, distribution channels, etc. Common concepts - Concepts related to pricing, line discount determination, etc. Client Center - a single platform to engage with customers POS - Manage point-of-sale activities in physical stores. Distribution - field sales, sales person targets management, etc. Product Configuration - create products based on specs for job shops (made-to-order and engineer-to-order environments). Products - manage products master data - products and product measurements, codes, variants, channel, pictures, groups, etc."
   },
   "modules/crm/invoicing/index.html": {
     "href": "modules/crm/invoicing/index.html",
@@ -1336,8 +1336,8 @@
   },
   "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.html": {
     "href": "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.html",
-    "title": "Determine payment account in sales order | ERP.net Tech Docs",
-    "keywords": "Determine payment account in sales order The algorithm for the determination of the payment account in the sales order is the following: SalesOrder.PaymentAccount is set to one of the following (in order of their precedence): If the ShipToCustomer.DefaultPaymentType = SalesOrder.PaymentType AND the ShipToCustomer.PaymentAccount is not null => it is taken. If the Customer.DefaultPaymentType = SalesOrder.PaymentType AND the Customer.PaymentAccount is not null => it is taken. If the PaymentType.DefaultPaymentAccount is not null => it is taken. No changes are applied. The rationale, expected setup and usage Initially, the user chooses a customer. The payment type and the payment account of the customer would be copied to the sales order. Note It is important, that the customers' payment type IS set to some non-null value! The following events happen: The user selects a customer. The payment type of the customer is loaded in the sales order. Since the payment type of the sales order is the same as the customers, the customer’s payment account is copied to the sales order. If however, the user chooses a different payment type, the default account of this new payment type is selected. For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the 'Credit Card' payment type. The event order is the following: The user selects a customer The payment type of the customer is loaded in the sales order. The user selects different payment types. Since the payment type of the sales order is no longer the same as the customers', the payment account of the sales order is now copied from the definition of the payment type."
+    "title": "Determine payment account in sales orders | ERP.net Tech Docs",
+    "keywords": "Determine payment account in sales orders The algorithm for the determination of the payment account in the sales order is the following: SalesOrder.PaymentAccount is set to one of the following (in order of their precedence): If the ShipToCustomer.DefaultPaymentType = SalesOrder.PaymentType AND the ShipToCustomer.PaymentAccount is not null => it is taken. If the Customer.DefaultPaymentType = SalesOrder.PaymentType AND the Customer.PaymentAccount is not null => it is taken. If the PaymentType.DefaultPaymentAccount is not null => it is taken. No changes are applied. The rationale, expected setup and usage Initially, the user chooses a customer. The payment type and the payment account of the customer would be copied to the sales order. Note It is important, that the customers' payment type IS set to some non-null value! The following events happen: The user selects a customer. The payment type of the customer is loaded in the sales order. Since the payment type of the sales order is the same as the customers, the customer’s payment account is copied to the sales order. If however, the user chooses a different payment type, the default account of this new payment type is selected. For example, the customer usually pays cash and has a cash payment account specified. But now he chose to pay by credit card. In this case, the system loads the payment account of the 'Credit Card' payment type. The event order is the following: The user selects a customer The payment type of the customer is loaded in the sales order. The user selects different payment types. Since the payment type of the sales order is no longer the same as the customers', the payment account of the sales order is now copied from the definition of the payment type."
   },
   "modules/crm/sales/sales-concepts/determining-algorithms/determine-tax-groups.html": {
     "href": "modules/crm/sales/sales-concepts/determining-algorithms/determine-tax-groups.html",
@@ -1346,13 +1346,13 @@
   },
   "modules/crm/sales/sales-concepts/determining-algorithms/index.html": {
     "href": "modules/crm/sales/sales-concepts/determining-algorithms/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "Determining algorithms | ERP.net Tech Docs",
+    "keywords": "Determining algorithms Here is a list of determining algorithms, each explained in a separate article: Determine line amount in sales orders Determine payment account in sales orders Determine tax groups"
   },
   "modules/crm/sales/sales-concepts/index.html": {
     "href": "modules/crm/sales/sales-concepts/index.html",
     "title": "Sales concepts | ERP.net Tech Docs",
-    "keywords": "Sales concepts Here, you will find detailed information into common sales-related concepts that will help you use and understand the Sales module better. Pricing Price types Sales order row types Amount to pay Sales order payment plan Deferred payments options Minimal sales price Minimal sales quantity Promotional packages VAT deviation Algorightms"
+    "keywords": "Sales concepts Here, you will find detailed information into common sales-related concepts that will help you use and understand the Sales module better. Pricing Price types Sales order row types Amount to pay Sales order payment plan Deferred payments options Minimal sales price Minimal sales quantity Promotional packages VAT deviation Determining algorithms"
   },
   "modules/crm/sales/sales-concepts/minimal-sales-price.html": {
     "href": "modules/crm/sales/sales-concepts/minimal-sales-price.html",
@@ -1621,8 +1621,8 @@
   },
   "modules/financials/index.html": {
     "href": "modules/financials/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": "Accounting VAT Fixed assets Cost accounting Payments Excise"
+    "title": "Finance | ERP.net Tech Docs",
+    "keywords": "Finance Accounting VAT Fixed assets Cost accounting Payments Excise"
   },
   "modules/financials/overview.html": {
     "href": "modules/financials/overview.html",
@@ -1641,8 +1641,8 @@
   },
   "modules/financials/payments/index.html": {
     "href": "modules/financials/payments/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "Payments | ERP.net Tech Docs",
+    "keywords": "Payments Advanced amount determination"
   },
   "modules/financials/VAT/defining-vat-and-base-for-vat-entries.html": {
     "href": "modules/financials/VAT/defining-vat-and-base-for-vat-entries.html",
@@ -1661,8 +1661,8 @@
   },
   "modules/general/documents/index.html": {
     "href": "modules/general/documents/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "Documents | ERP.net Tech Docs",
+    "keywords": "Documents Document print images"
   },
   "modules/general/folders.html": {
     "href": "modules/general/folders.html",
@@ -1671,8 +1671,8 @@
   },
   "modules/general/index.html": {
     "href": "modules/general/index.html",
-    "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "title": "General | ERP.net Tech Docs",
+    "keywords": "General Documents File manager Products"
   },
   "modules/general/products/coding-systems.html": {
     "href": "modules/general/products/coding-systems.html",
@@ -1847,7 +1847,7 @@
   "modules/logistics/index.html": {
     "href": "modules/logistics/index.html",
     "title": "Logistics | ERP.net Tech Docs",
-    "keywords": "Logistics The Logistics module serves as a cornerstone of efficient warehouse management and product availability control within your business infrastructure. It is designed to streamline operations and optimize processes across all aspects of your warehouse operations, offering a comprehensive suite of functionalities. From procurement to shipment, through inventory control and warehouse management, Logistics offers a robust set of tools and features to meet the demanding needs of your business. Structure Logistics consists of several submodules dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis. Most of them allow for the creation and release of respective documents and transactions. Common This is where you can define and preview logistical units , including their types , in order to use them across other submodules. Procurement This is where you can make purchase orders for your warehouse. With the ability to define suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes. Inventory This submodule offers advanced capabilities and allows for the creation and release of documents related to both inventory control and warehouse management. From defining store locations and making reconciliations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability. In addition, you can also take advantage of its simplified and intuitive Inventory Control application. Shipment Here, you can streamline the various shipping processes initiated by your warehouse. By creating shipment orders and transactions, you can effectively coordinate and track the movement of goods from your warehouse to your customers. WMS The Warehouse Management System works as its own separate module dedicated to the more complex managed warehouse operations . It allows you to create warehouse documents, requisitions and transactions, as well as fulfill orders efficiently using the integrated WMS Worker application. Learn more about Logistics: Common Inventory Procurement [Shipment](shipment/index.md]( https://docs.erp.net/tech/modules/logistics/shipment/index.html ) Warehouse management (WMS) Concepts Planning concepts and operations Note The screenshots taken for this article are from v24 of the platform."
+    "keywords": "Logistics The Logistics module serves as a cornerstone of efficient warehouse management and product availability control within your business infrastructure. It is designed to streamline operations and optimize processes across all aspects of your warehouse operations, offering a comprehensive suite of functionalities. From procurement to shipment, through inventory control and warehouse management, Logistics offers a robust set of tools and features to meet the demanding needs of your business. Structure Logistics consists of several submodules dedicated to the purchase, shipment, delivery and other processes made by warehouses on a daily basis. Most of them allow for the creation and release of respective documents and transactions. Common This is where you can define and preview logistical units , including their types , in order to use them across other submodules. Procurement This is where you can make purchase orders for your warehouse. With the ability to define suppliers, initiate purchase requests, and manage internal requisitions, you gain full control over your procurement processes. Inventory This submodule offers advanced capabilities and allows for the creation and release of documents related to both inventory control and warehouse management. From defining store locations and making reconciliations to tracking warehouse lots and serial numbers, Inventory provides the tools you need to maintain accurate records and ensure product traceability. In addition, you can also take advantage of its simplified and intuitive Inventory Control application. Shipment Here, you can streamline the various shipping processes initiated by your warehouse. By creating shipment orders and transactions, you can effectively coordinate and track the movement of goods from your warehouse to your customers. WMS The Warehouse Management System works as its own separate module dedicated to the more complex managed warehouse operations . It allows you to create warehouse documents, requisitions and transactions, as well as fulfill orders efficiently using the integrated WMS Worker application. Learn more about Logistics: Common Inventory Procurement Shipment Warehouse management (WMS) Concepts Planning concepts and operations Note The screenshots taken for this article are from v24 of the platform."
   },
   "modules/logistics/inventory/available-to-promise/atp-algorithm.html": {
     "href": "modules/logistics/inventory/available-to-promise/atp-algorithm.html",
@@ -2321,13 +2321,13 @@
   },
   "modules/production/index.html": {
     "href": "modules/production/index.html",
-    "title": "ERP.net production | ERP.net Tech Docs",
-    "keywords": "ERP.net production"
+    "title": "Production | ERP.net Tech Docs",
+    "keywords": "Production To be updated."
   },
   "modules/projects/index.html": {
     "href": "modules/projects/index.html",
-    "title": "ERP.net Project management | ERP.net Tech Docs",
-    "keywords": "ERP.net Project management"
+    "title": "Project Management | ERP.net Tech Docs",
+    "keywords": "Project Management To be updated."
   },
   "README.html": {
     "href": "README.html",
