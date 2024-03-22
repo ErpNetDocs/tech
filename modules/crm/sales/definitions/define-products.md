@@ -8,7 +8,7 @@ Below is a step-by-step guide on how to define products and configure their sett
 
 ### Navigation
 
-From the **General** module, click on **Products**. There, you'll find the **Products** panel. 
+From the **[General](https://docs.erp.net/tech/modules/general/index.html)** module, click on **[Products](https://docs.erp.net/tech/modules/general/products/index.html)**. There, you'll find the **Products** panel. 
 
 This section enables you to access a comprehensive overview of all created products, create new ones as needed, and review detailed information about each product.
 
