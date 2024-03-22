@@ -59,7 +59,7 @@ It allows you to create warehouse documents, requisitions and transactions, as w
 - **[Common](https://docs.erp.net/tech/modules/logistics/common/index.html)**
 - **[Inventory](https://docs.erp.net/tech/modules/logistics/inventory/index.html?q=Inventory)**
 - **[Procurement](https://docs.erp.net/tech/modules/logistics/procurement/index.html?q=Procurement)**
-- **[Shipment](shipment/index.md](https://docs.erp.net/tech/modules/logistics/shipment/index.html)**
+- **[Shipment](https://docs.erp.net/tech/modules/logistics/shipment/index.html)**
 - **[Warehouse management (WMS)](https://docs.erp.net/tech/modules/logistics/wms/index.html?q=Warehouse%20management%20(WMS))**
 - **[Concepts](https://docs.erp.net/tech/modules/logistics/concepts/index.html?q=Common%20concepts)**
 - **[Planning concepts and operations](https://docs.erp.net/tech/modules/logistics/planning/index.html?q=Planning)**
