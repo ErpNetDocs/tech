@@ -15,7 +15,7 @@
 - name: Marketing
   href: marketing/toc.yml
   topicHref:  marketing/index.md
-- name: CRM common
+- name: Common
   href: crm-common/toc.yml
   topicHref:  crm-common/index.md
 - name: Client Center
