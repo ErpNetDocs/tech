@@ -8,7 +8,7 @@ Below is a step-by-step guide on how to define customers and configure their set
 
 ### Navigation
 
-From the **CRM** module, click on **Common**. 
+From the **[CRM](https://docs.erp.net/tech/modules/crm/index.html)** module, click on **[Common](https://docs.erp.net/tech/modules/crm/crm-common/index.html)**. 
 
 There, you'll find the **Customers** panel, where you can view all of the customers you have created, with details about each.
 
