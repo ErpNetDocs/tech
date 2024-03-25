@@ -25,3 +25,7 @@ When you have access to the New Order functionality, you need to obtain all the 
 4. Proceed to finalize the order by clicking the **Order** button.
 
 ![picture](pictures/New_Order_Oreder_23_01.png)
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
