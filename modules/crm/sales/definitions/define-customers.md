@@ -86,6 +86,8 @@ Fields starting with "Default" allow you to specify template information for cus
 
 For example, if the **Default Currency** is set to BGN, all sales with that customer will be automatically conducted in that currency. 
 
+You have the ability to **modify** each default value when creating the sales order itself.
+
 > [!NOTE]
 > 
-> You have the ability to **modify** each default value when creating the sales order itself.
+> The screenshots taken for this article are from v24 of the platform.
