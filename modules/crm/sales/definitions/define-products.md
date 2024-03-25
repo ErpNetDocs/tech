@@ -113,3 +113,7 @@ Here's a summary of commonly used fields, along with those less frequently utili
 From the window settings, you have the option to include additional detail panels such as **Lots**, **Serial Numbers**, **Product Prices**, and more. 
 
 This allows you to view existing information and add new options as necessary.
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
