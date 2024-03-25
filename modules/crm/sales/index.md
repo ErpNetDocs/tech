@@ -52,3 +52,7 @@ Learn more about **Sales** here:
 
 * **[Common concepts](sales-concepts/index.md)**
 * **[Definitions](definitions/index.md)**
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
