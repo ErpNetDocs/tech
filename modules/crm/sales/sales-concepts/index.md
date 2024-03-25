@@ -1,6 +1,6 @@
 # Sales concepts
 
-Here, you will find detailed information into common sales-related concepts that will help you use and understand the Sales module better.
+Here, you will find detailed information about common sales-related concepts that will help you use and understand Sales in ERP.net better.
 
 * **[Pricing](pricing.md)**
 * **[Price types](price-types.md)**
