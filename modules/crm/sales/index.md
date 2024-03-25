@@ -1,56 +1,54 @@
 # Sales
 
-The **Sales** module, focused around the Orders panel, plays a crucial role in managing sales operations within the **ERP system**. 
+The **Sales** module plays a pivotal role in documenting sales operations within **ERP.net**. It is through here that you can **preview**, **create** and **release** different kinds of sales orders.
 
-This panel consolidates essential functionalities for handling sales orders and related entities. 
+Consisting of one panel, **Sales** consolidates essential functionalities for creating and managing sales orders and their related entities. 
 
-Let's explore the distinct sections within the Orders panel to understand its comprehensive capabilities.
+It also makes use of previously specified sales order **[definitions](definitions/index.md)** that are necessary for the creation of the respective documents.
 
 ![Images](images/Sales_module_info_view_27_02.png)
 
-## Orders Panel
+## Orders panel
 
-The **Orders** panel serves as the central hub within the **Sales** module, encompassing essential functionalities for managing sales operations. 
+This panel serves as the central hub of the **Sales** module, allowing you to **access** all of your existing sales orders as well as instantly begin **creating** new ones.
 
-It consists of three main sections: **Create**, **Sub Entities**, and Related** Entities**. 
+It consists of three main sections: **Create**, **Sub Entities**, and **Related Entities**. 
 
-Additionally, users can view all **Sales Orders** by clicking on the **Orders**, providing a comprehensive overview of all active orders within the system.
- 
- ![Images](images/Sales_module_info_orders_27_02.png)
+![Images](images/sales_orders_highlighted.png)
 
-### Create Section
+To see your sales order documents, simply click on the panel's **title**. 
 
-Within the **Create** section, users can initiate various types of sales orders to accommodate different sales scenarios. 
+This takes you to the **Orders** page containing all sales orders related to your enterprise company.
 
-This includes creating **Direct Sale Orders**, **POS Sales Orders**, **Return Orders**, and more.
+From here, you can **preview** each and every one of them, **filter** the table to show entries matching specific criteria, and **create** new orders on-demand.
 
-![Images](images/Sales_module_info_create_27_02.png) 
+![Images](images/sales_orders_panel.png)
 
-### Sub Entities Section
+### Create
 
-The **Sub Entities** section allows users to configure specific details within each **Sales Order**. 
+You can use this section of the **Orders** panel to begin **creating** various types of sales orders.
 
-This includes setting up promotional packages, defining payment plans, and managing individual order lines with precision.
+Options include Direct Sale Orders, POS Sales Orders, Return Orders, and more.
+
+![Images](images/Sales_module_info_create_27_02.png)
+
+### Sub entities
+
+This section allows you to preview already created **definitions** that take part in the final sales order document. 
+
+It includes seeing promotional packages, payment plans, and sales order lines.
 
 ![Images](images/Sales_module_info_sub_entities_27_02.png)
 
-### Related Entities Section 
+### Related entities 
 
-In the **Related Entities** section, users can seamlessly integrate and track various entities associated with **Sales Orders**. 
+In this section, you can track various **operations** associated with sales orders. 
 
-This includes monitoring state changes, managing prints, tracking parties involved, monitoring line amounts, and overseeing order fulfillment. 
-
-Additionally, users can attach files, access document amounts, track references, and engage in collaborative discussions to ensure transparency and efficiency throughout the sales process.
+This includes monitoring state changes, prints, parties, line amounts, and order fulfillment. 
 
 ![Images](images/Sales_module_info_related_entities_27_02.png)
 
-
-
-
-> *Activity* → *Opportunity* → *Offer* → **Sales order** → *Invoice order* → *Invoice*
-
-The sales module is used to manage the preparing and issuing of [sales orders](xref:Crm.Sales.SalesOrders) and the related master data. 
+Learn more about **Sales** here:
 
 * **[Common concepts](sales-concepts/index.md)**
 * **[Definitions](definitions/index.md)**
-* **How to create a sales order**
