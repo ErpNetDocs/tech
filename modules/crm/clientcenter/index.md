@@ -58,6 +58,6 @@ Users are able to perform a couple of **actions** from within the Client Center 
 
 - Generated invoices for any orders can be **downloaded** and **previewed** outside of the platform.
 
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> 
+> The screenshots taken for this article are from v24 of the platform.
