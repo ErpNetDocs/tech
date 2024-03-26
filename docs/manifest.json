@@ -4169,6 +4169,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/sales_orders_highlighted.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/sales_orders_highlighted.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/sales/images/sales_orders_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/sales/images/sales_orders_panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/sales/images/scrshot_1.png",
       "output": {
         "resource": {
