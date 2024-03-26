@@ -12033,7 +12033,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/how-to/create-new-order.html",
-          "hash": "RCNHNKq0Cd6qjmuz7Zz5+A=="
+          "hash": "b/h598czDkkRK6xPfrU8ww=="
         }
       },
       "is_incremental": false,
@@ -12157,7 +12157,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/index.html",
-          "hash": "Q458ISZebB4hRoFclK1QKw=="
+          "hash": "9Xbf4fXW+YTg8FSzc0t3GA=="
         }
       },
       "is_incremental": false,
@@ -12693,7 +12693,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/definitions/define-customers.html",
-          "hash": "4wU9DY3G6O2//HRF+o9wSA=="
+          "hash": "Dd6lubnIjgbAxFtVcwEzUQ=="
         }
       },
       "is_incremental": false,
@@ -12705,7 +12705,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/definitions/define-products.html",
-          "hash": "a+Eql6jLB2Q4FZapACtMog=="
+          "hash": "1FFR3yeI5PYxVMQWf0Y3XA=="
         }
       },
       "is_incremental": false,
@@ -13078,12 +13078,34 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/sales_orders_highlighted.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/sales_orders_highlighted.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/images/sales_orders_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/images/sales_orders_panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/index.html",
-          "hash": "DTcHQ/URBuiTyz/2NvhmRQ=="
+          "hash": "YE//4E/vpNI+PZ6fp5hhfA=="
         }
       },
       "is_incremental": false,
@@ -13233,7 +13255,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/index.html",
-          "hash": "xn0w57L6aZGl0KKDC2jL+A=="
+          "hash": "ILJoNsp15AtxkvG2rbQWGA=="
         }
       },
       "is_incremental": false,
