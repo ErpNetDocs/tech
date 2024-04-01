@@ -36,5 +36,21 @@ After completing these steps, click on **Save and reload** to finalize the creat
 
 ![picture](pictures/Setup_user_create_person_fields_01_04.png)
 
+### Check if the parent party is a customer 
+
+To open the parent party, click on it within the form. Afterward, locate the **Customers** panel. 
+
+If it's not visible, you can add it by accessing the **Related data** menu within the **customize form** option.
+
+In the **Customers** panel, you should verify if two columns are filled. The **Enterprise Company**, which should be your company, and the **Serviced By Enterprise Company Location**.
+
+If they are empty, you'll need to create a new project where you can fill in these fields.
+
+> [!NOTE]
+> 
+> If any of these settings are missing, an error exception code from CC002 to CC007 will be displayed depending on what's missing.
 
 
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
