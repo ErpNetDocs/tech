@@ -6,7 +6,7 @@ Currently, Client Center platforms are more suitable for businesses rather than 
 
 You can build and host a CC instance from your global website environment, and access it using a custom relative url.
 
-![picture](pictures/intro.png)
+![picture](pictures/Client_center_index_Home_31_03.png)
 
 ## Features and structure
 
@@ -34,7 +34,7 @@ Using the chat panel, clients can reach out to a representative regarding any is
 
 **Invoices** keeps all of your invoices for completed orders.
 
-![picture](pictures/iinvoicess.png)
+![picture](pictures/Client_center_index_Invoices_31_03.png)
 
 > [!NOTE]
 >
