@@ -8,8 +8,6 @@ By Default, the ability to preview and **[create new orders](how-to/create-new-o
 
 To enable it, you have to apply **JSON settings** in the website's definition: 
 
-### JSON settings
-
 Enter a **value** for the Settings field and **restart** the website using the Instance manager:
 
 ```
@@ -49,8 +47,6 @@ If "IsOrdersEnabled" is not present in the settings, the **Orders** section will
 Lines are visible by default in both the **Invoices** and the **Orders** sections of the Client Center.
 
 To hide them, you have to apply **JSON settings** in the website's definition: 
-
-### JSON settings
 
 Enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
 
