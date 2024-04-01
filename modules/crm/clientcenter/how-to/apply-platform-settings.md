@@ -57,7 +57,7 @@ where
 
 Depending on how you define the settings, you can encounter the following scenarios:
 
-1.	Both fields are set:
+1.	Both settings are set:
 
 ```
     	"NewOrderDocumentType": "07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c",
@@ -72,7 +72,7 @@ If the ID doesn’t match any document of type Sales order, you’ll get an erro
 
 You need to erase all inputted values, save your progress, refresh the website, and insert the correct values.
 
-2.	Only one of the fields is set:
+2.	Only one of the settings is set:
 
 ```
    	  "IsNewOrderEnabled": true
@@ -82,7 +82,7 @@ Here, the system will generate another error:
 
 **009 – NewOrderDocumentType is set, but DocumentType is null**
 
-3.	No fields are set:
+3.	No settings are set:
 
 In this scenario, both fields assume two values by default:
 
