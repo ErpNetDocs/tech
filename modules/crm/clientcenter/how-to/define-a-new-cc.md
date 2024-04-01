@@ -1,6 +1,6 @@
 # Definition of a client center website
 
-These are the websites that are hosted for the database.
+This article provides a detailed, step-by-step guide on creating a website within the ERP platform.
 
 ## Navigation 
 
