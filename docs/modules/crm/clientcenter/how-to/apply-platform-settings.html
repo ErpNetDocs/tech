@@ -92,8 +92,6 @@
 <p>You must input a <strong>valid</strong> <strong>SalesOrder.DocumentType ID</strong>.</p>
 <p>This could be quite helpful for separating orders made in the Client Center from those made in other modules.</p>
 </li>
-<li><p>The ability to easily generate <strong>comprehensive business analytics</strong> for orders made in the CC.</p>
-</li>
 </ul>
 <h2 id="json-format-definition">JSON format definition</h2>
 <p>Client Center settings must be configured in a <strong>key-value pair JSON format</strong>.</p>
@@ -125,7 +123,7 @@
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>Depending on how you define the settings, you can encounter the following scenarios:</p>
 <ol>
-<li>Both fields are set:</li>
+<li>Both settings are set:</li>
 </ol>
 <pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c&quot;,
    	&quot;IsNewOrderEnabled&quot;: true
@@ -135,14 +133,14 @@
 <p><strong>008 - Not well formatted json string</strong></p>
 <p>You need to erase all inputted values, save your progress, refresh the website, and insert the correct values.</p>
 <ol start="2">
-<li>Only one of the fields is set:</li>
+<li>Only one of the settings is set:</li>
 </ol>
 <pre><code>   	  &quot;IsNewOrderEnabled&quot;: true
 </code></pre>
 <p>Here, the system will generate another error:</p>
 <p><strong>009 – NewOrderDocumentType is set, but DocumentType is null</strong></p>
 <ol start="3">
-<li>No fields are set:</li>
+<li>No settings are set:</li>
 </ol>
 <p>In this scenario, both fields assume two values by default:</p>
 <pre><code>    	&quot;NewOrderDocumentType&quot;: &quot;CRM_SALES_ORDER.Id&quot;,
@@ -151,7 +149,7 @@
 <p>The button used for creating a new order will not be shown.</p>
 <p>If you try to use a link leading to the direct creation of an order, you’ll see the following message:</p>
 <p><strong>You are not authorized to view this page.</strong></p>
-<p>For more information, see the <strong><a href="/modules/crm/clientcenter/reference.md">reference</a></strong>.</p>
+<p>For more information, see the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html">reference</a></strong>.</p>
 <h2 id="automatic-tracking">Automatic tracking</h2>
 <p>Whenever you apply or change settings for the Client Center, they’re <strong>tracked</strong> by the system in real-time and are reflected immediately.</p>
 <h2 id="user-level-security">User-level security</h2>
