@@ -20,8 +20,6 @@ Below is a list of settings you can apply to the Client Center:
 
     This could be quite helpful for separating orders made in the Client Center from those made in other modules.
 
-- The ability to easily generate **comprehensive business analytics** for orders made in the CC.
-
 ## JSON format definition
 
 Client Center settings must be configured in a **key-value pair JSON format**. 
