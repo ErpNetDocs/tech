@@ -8,7 +8,7 @@ To create an account, the user should click on **Create new local account** in t
 
 Next, they should fill out a form with their information and proceed to create the account.
 
-![picture](pictures/Create_account_user_01_04.png)
+![picture](pictures/Setup_user_account_01_04.png)
 
 ## Setup users account 
 
@@ -44,7 +44,11 @@ If it's not visible, you can add it by accessing the **Related data** menu withi
 
 In the **Customers** panel, you should verify if two columns are filled. The **Enterprise Company**, which should be your company, and the **Serviced By Enterprise Company Location**.
 
+![picture](pictures/Setup_customers_columns_01_04.png)
+
 If they are empty, you'll need to create a new project where you can fill in these fields.
+
+![picture](pictures/New_customer_setup_01_04.png)
 
 > [!NOTE]
 > 
