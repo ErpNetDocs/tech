@@ -52,7 +52,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
    ![picture](pictures/Setup_customers_columns_01_04.png)
 
-6. Click on **Save and reload** to apply your changes for the **Parent Party** of the user.
+6. Click on **Save and reload** to apply your changes. <br>
 
 If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**.
 
