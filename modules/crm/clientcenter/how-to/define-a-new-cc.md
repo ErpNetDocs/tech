@@ -1,57 +1,34 @@
-# Definition of a client center website
+# How to define a website of type Client Center
 
-This article provides a detailed, step-by-step guide on creating a website within the ERP platform.
+This article provides a step-by-step guide on creating a Client Center website through ERP.net.
 
-## Navigation 
+### Prerequisites 
 
-To define a website categorized as **client center** type, navigate to the **Web Sites** panel within the **Core** section of the **Setup** module.
+To define a website of **Client Center** type, navigate to the **Web Sites** panel within the **Core** section of the **Setup** module.
 
 ![picture](pictures/Setup_Core_Website_01_04.png)
 
-## Define a website 
+### Website definition
 
-There are two pathways available for defining a website. Regardless of which path you choose, the creation page will remain identical, ensuring consistency in the final result.
-
-In the first method, simply click on the circular button featuring a **"+"** sign located on the **Web Sites** panel. 
-
-Upon clicking, a new window will open, allowing you to proceed with the definition process.
-
-![picture](pictures/Web_Sites_Create_01_04.png)
- 
-The second approach involves utilizing the **New** button situated on the **Web Sites** table. To access the **Web Sites** table, simply click on the **Web Sites** panel. 
-
-This action will open the same window as in the first approach, enabling you to proceed with your definition.
-
-![picture](pictures/Website_new_01_04.png)
-
-Upon accessing the definition window, you can enter the relevant information into the provided fields and checkboxes.
+Upon accessing the **New Web Site** form, you need to enter relevant data into the provided fields.
 
 ![picture](pictures/New_Web_Site_01_04.png)
  
-The only mandatory field is **Web Site Type**. Once you select one from the list, you can create the new customer without filling out any other information.
+1. The only mandatory field is **Web Site Type**. In this case, it should be set to **Client Center**. 
 
-You can change the **Relative Url**, which is "cc" by default. 
+2. Make sure you've selected the appropriate **Enterprise Company**. 
 
-![picture](pictures/New_Web_Sites_fields_01_04.png)
+3. Additionally, you may change the **Relative Url** of the website, which is set to "cc" by default. 
 
-### Create a trusted application 
-
-To create a trusted application, click on **Run**, then select the **Create/Update Trusted Application** option.
+4. It's necessary to create a **trusted application**.
+   
+   To do so, click on **Run**, select the **Create/Update Trusted Application** option, and confirm with **OK**.
 
 ![picture](pictures/Create_Update_Trusted_app_01_04.png)
 
-> [!NOTE]
->
-> You will be asked to confirm your intension. 
-
-Once you complete this step, the application will be created, and you can access it through the form.
+Once you complete this step, the website will be created and you can access its internal application through the form.
 
 ![picture](pictures/Trusted_app_open_01_04.png)
-
-Upon opening it, you'll be able to view the details about the application.
-
-![picture](pictures/Trusted_app_details_01_04.png)
-
 
 > [!NOTE]
 > 
