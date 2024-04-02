@@ -36,17 +36,19 @@ Once a customer has sent a request for an account, you can begin to configure it
 
    ![picture](pictures/Setup_user_create_person_fields_01_04.png)
 
-4. Click on **Save and reload** to finish creating the new person. You will be redirected back to the user.
+4. Click on **Save and reload** to finish creating the new person. 
 
 5. Make sure that the **Parent Party** of the **Person** of the user is a customer of the current **Enterprise Company**.
    
-   To do so, click on it within the form. Then, locate its **Customers** panel. If the panel is not visible, you can add it through the **Customize form** option.
+   To do so, click on it within the form. Then, locate its **Customers** panel.
+
+   If the panel is not visible, you can add it through the **Customize form** option.
 
    In the **Customers** panel, you should verify that two fields are filled: **Enterprise Company** and **Serviced By Enterprise Company Location**.
 
    ![picture](pictures/Setup_customers_columns_01_04.png)
 
-6. Click on **Save and reload** to apply your changes for the **Parent Party**.
+7. Click on **Save and reload** to apply your changes for the **Parent Party**.
 
 > [!NOTE]
 > 
