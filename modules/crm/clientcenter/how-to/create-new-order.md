@@ -1,6 +1,6 @@
 # How to create a new order
 
-In order to create an order in the **Client Center**, you need to have this feature enabled manually.
+To create an order in the **Client Center**, you need to have this feature enabled manually.
 
 See **[this guide](apply-platform-settings.md)** if you haven't already done that.
 
