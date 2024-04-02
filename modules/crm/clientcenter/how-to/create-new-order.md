@@ -2,9 +2,9 @@
 
 To create an order in the **Client Center**, you need to have this feature enabled manually.
 
-See **[this guide](apply-platform-settings.md)** if you haven't already done that.
+Learn how to **[apply platform settings](apply-platform-settings.md)** if you haven't already done that.
 
-When you have access to the New Order functionality, you need to obtain all the necessary **product codes** to complete your order.
+As soon as you get access to the New Order functionality, you need to obtain all the necessary **product codes** to complete your order.
 
 ## Step-by-step process
 
