@@ -20,7 +20,7 @@ Once a customer has sent a request for an account, you can begin to configure it
 
 2. Upon accessing the navigator, locate the new account and click on the **Edit** button located to the left of the **Login** details.
 
-![picture](pictures/Setup_User_table_01_04.png)
+   ![picture](pictures/Setup_User_table_01_04.png)
 
 3. Assign a **person** to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.
    
@@ -44,14 +44,11 @@ Once a customer has sent a request for an account, you can begin to configure it
 
    ![picture](pictures/Setup_customers_columns_01_04.png)
 
-   If they are empty, you'll need to create a new customer where you can fill in these fields.
+   > [!NOTE]
+   > 
+   > If any of these settings are not configured, an error exception code from CC002 to CC007 will be displayed depending on what's missing.
 
 5. Click on **Save and reload** to apply your changes.
-
-> [!NOTE]
-> 
-> If any of these settings are missing, an error exception code from CC002 to CC007 will be displayed depending on what's missing.
-
 
 > [!NOTE]
 > 
