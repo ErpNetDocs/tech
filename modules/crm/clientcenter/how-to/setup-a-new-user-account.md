@@ -40,7 +40,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
    
    You will be brought back to the user definition form. Click on **Save and reload** again to apply all settings.
 
-5. Make sure that the **Parent Party** of the **Person** of the user (the same one in which they are employed) is a customer of the current **Enterprise Company**.
+5. Make sure that the **Parent Party** of the **Person** (the same one in which they are employed) is a customer of the current **Enterprise Company**.
    
    To do so, open it from within the **Person** form and locate its **Customers** panel. If the panel is not visible, add it through the **Customize form** option.
 
