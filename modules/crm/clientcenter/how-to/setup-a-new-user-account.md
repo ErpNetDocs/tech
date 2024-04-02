@@ -54,7 +54,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 6. Click on **Save and reload** to apply your changes. <br><br>
 
-If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**.
+If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. <br><br>
 
 > [!NOTE]
 > 
