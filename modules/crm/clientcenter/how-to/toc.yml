@@ -1,7 +1,6 @@
-- name: Overview
+- name: Step-by-step guides
   href: index.md
 - name: Create new order
   href: create-new-order
 - name: Apply platform settings
   href: apply-platform-settings.md
-  
