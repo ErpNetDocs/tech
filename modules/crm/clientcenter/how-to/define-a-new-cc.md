@@ -22,7 +22,11 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 3. Additionally, you may change the **Relative Url** of the website, which is set to "cc" by default. 
 
-4. It's necessary to create a **trusted application**.
+> [!NOTE]
+> 
+> You should define a distinct site with a unique **Relative URL** or **Host** for each **Enterprise Company**.
+
+4. It's necessary to create a **trusted application** to ensure the security and integrity of the new website.
    
    To do so, click on **Run**, select the **Create/Update Trusted Application** option, and confirm with **OK**.
 
