@@ -30,7 +30,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ![picture](pictures/Trusted_app_open_01_04.png)
 
-Proceed with **[defining a user](setup-a-new-user-account.md)**.
+If you've passed all the steps successfully, you may proceed to **[define a user](setup-a-new-user-account.md)** who can access the Client Center.
 
 > [!NOTE]
 > 
