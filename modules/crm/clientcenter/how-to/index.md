@@ -1,4 +1,4 @@
-# Step-by-step guides
+# How To
 
 Here, you can find step-by-step guides that help you better understand processes within the **Client Center**.
 
