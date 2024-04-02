@@ -40,9 +40,9 @@ Once a customer has sent a request for an account, they will appear as an **Exte
    
    You will be brought back to the user definition form. Click on **Save and reload** again to apply all settings.
 
-5. Make sure that the **Parent Party** of the **Person** (the same one in which they are employed) is a customer of the current **Enterprise Company**.
+5. Make sure that the **Parent Party** of the **Person** (the one in which they are employed) is a customer of the current **Enterprise Company**.
    
-   To do so, open it from the **Person** form and locate its **Customers** panel. If the panel is not visible, add it through the **Customize form** option.
+   To do so, open it from the **Person** form and locate its **Customers** panel. If it's not visible, add it through the **Customize form** option.
 
    In the **Customers** panel, verify that two fields are filled:
 
@@ -50,7 +50,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
    * **Serviced By Enterprise Company Location** - the respective Enterprise Company must be serviced by a particular location.
 
-   ![picture](pictures/Setup_customers_columns_01_04.png)
+   ![picture](pictures/customer.png)
 
 6. Click on **Save and reload** to apply your changes. <br><br>
 
