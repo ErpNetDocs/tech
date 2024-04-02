@@ -6,51 +6,47 @@ If you haven't created such a website already, please refer to **[this guide](de
 
 ### Prerequisites
 
-Before a user can be granted access to a Client Center by an administrator, they must first have created their **local account**. 
+Before a user can be granted access to a Client Center by an administrator, they must first have issued a request for a **local account**. 
 
 Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/Setup_user_account_01_04.png)
 
-## Set up the user account 
+## Set up user account 
 
-After a customer of your client has created an account, as an administrator, you need to configure several settings for the new account.
+Once a customer has sent a request for an account, you can begin to configure it.
 
-To proceed, navigate to **Users** within the **Security** section of the **Setup** module.
+1. Navigate to the **Users** panel within the **Security** section of the **Setup** module.
 
-Upon opening the **Users** navigator, utilize the filter row to locate the new account by its name.
+2. Upon accessing the navigator, locate the new account and click on the **Edit** button located to the left of the **Login** details.
 
 ![picture](pictures/Setup_User_table_01_04.png)
 
-Access the account and click on the **Edit** button located at the top left corner of the table.
+3. Assign a **person** to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.
+   
+   Either right-click on the **Person** field or click the **three-dot button**. In both cases, this will expand a dropdown menu where you need to select **Create new**.
+   
+   ![picture](pictures/Setup_user_create_person_01_04.png)
 
-To add a **person** for the user, you can either click on the **Person** field and open the menu from the three-dotted button, or simply right-click on the field.
+   You will be redirected to a separate form for the creation of a new person.
 
-Select the **Create new** option, which will redirect you to a new window where you can create a new person.
+   There are three critical fields: **First Name**, **Last Name** and **Parent Party**.
 
-![picture](pictures/Setup_user_create_person_01_04.png)
+   ![picture](pictures/Setup_user_create_person_fields_01_04.png)
 
-### Create a new Person 
+4. Check if the **Parent Party** is a customer.
+   
+   To open the parent party, click on it within the form. Afterward, locate the **Customers** panel. 
 
-Within this form, there are three critical fields that necessitate completion. You must enter the user's first and last name and select the **parent party** from the dropdown menu.
+   If it's not visible, you can add it through the **Customize form** option.
 
-After completing these steps, click on **Save and reload** to finalize the creation.
+   In the **Customers** panel, you should verify that two fields are filled: **Enterprise Company** and **Serviced By Enterprise Company Location**.
 
-![picture](pictures/Setup_user_create_person_fields_01_04.png)
+   ![picture](pictures/Setup_customers_columns_01_04.png)
 
-### Check if the Parent Party is a customer 
+   If they are empty, you'll need to create a new customer where you can fill in these fields.
 
-To open the parent party, click on it within the form. Afterward, locate the **Customers** panel. 
-
-If it's not visible, you can add it by accessing the **Related data** menu within the **customize form** option.
-
-In the **Customers** panel, you should verify if two columns are filled. The **Enterprise Company**, which should be your company, and the **Serviced By Enterprise Company Location**.
-
-![picture](pictures/Setup_customers_columns_01_04.png)
-
-If they are empty, you'll need to create a new project where you can fill in these fields.
-
-![picture](pictures/New_customer_setup_01_04.png)
+5. Click on **Save and reload** to apply your changes.
 
 > [!NOTE]
 > 
