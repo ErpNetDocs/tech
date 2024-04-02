@@ -12,7 +12,7 @@ Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/Setup_user_account_01_04.png)
 
-## Set up user account 
+## Set up a user account 
 
 Once a customer has sent a request for an account, they will appear as an **External Community User** which you can begin to configure.
 
