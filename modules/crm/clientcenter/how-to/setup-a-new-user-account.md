@@ -20,7 +20,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 2. Upon accessing the navigator, locate the user account and click on the **Edit** button located to the left of its **Login** details.
 
-   ![picture](pictures/Setup_User_table_01_04.png)
+   ![picture](pictures/Setup_User_table_02_04.png)
 
 3. Assign a **person** to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.
    
