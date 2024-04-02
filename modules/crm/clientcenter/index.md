@@ -46,7 +46,7 @@ The Client Center gives users the ability to **[create new sales orders](how-to/
 
 This feature is **disabled** by default for security reasons. Access should be granted only when it's necessary.
 
-For more information on how to set up Client Center settings, please refer to **[this guide](how-to/apply-platform-settings.md)** and the **[reference](reference.md)**
+For more information on how to define and set up Client Center, please refer to our **[step-by-step guides](how-to/index.md)** and the **[reference](reference.md)**
 
 ### Actions
 
