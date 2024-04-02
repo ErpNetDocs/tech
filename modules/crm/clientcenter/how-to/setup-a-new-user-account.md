@@ -1,8 +1,8 @@
-# Setup a new user account  
+# How to define a user
 
 To initiate the setup of a new user account, the individual must first create the account, after which an administrator can configure it accordingly.
 
-## Create a new account as a user 
+## Create an account 
 
 To create an account, the user should click on **Create new local account** in the login menu of the **ERP.net** client center. 
 
@@ -10,7 +10,7 @@ Next, they should fill out a form with their information and proceed to create t
 
 ![picture](pictures/Setup_user_account_01_04.png)
 
-## Setup users account 
+## Set up the user account 
 
 After a customer of your client has created an account, as an administrator, you need to configure several settings for the new account.
 
@@ -28,7 +28,7 @@ Select the **Create new** option, which will redirect you to a new window where 
 
 ![picture](pictures/Setup_user_create_person_01_04.png)
 
-### Create a new person 
+### Create a new Person 
 
 Within this form, there are three critical fields that necessitate completion. You must enter the user's first and last name and select the **parent party** from the dropdown menu.
 
@@ -36,7 +36,7 @@ After completing these steps, click on **Save and reload** to finalize the creat
 
 ![picture](pictures/Setup_user_create_person_fields_01_04.png)
 
-### Check if the parent party is a customer 
+### Check if the Parent Party is a customer 
 
 To open the parent party, click on it within the form. Afterward, locate the **Customers** panel. 
 
