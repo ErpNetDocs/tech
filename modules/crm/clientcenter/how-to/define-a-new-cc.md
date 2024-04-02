@@ -6,6 +6,10 @@ This article provides a step-by-step guide on creating a Client Center website t
 
 To define a website of **Client Center** type, navigate to the **Web Sites** panel within the **Core** section of the **Setup** module.
 
+> [!NOTE]
+> 
+> You can observe and restart all sites through the **Instance Manager**.
+
 ### Website definition
 
 Upon accessing the **New Web Site** form, you need to enter relevant data into the provided fields.
@@ -29,10 +33,6 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
    The new Client Center website will be created and you can access its internal application details through the form.
 
 ![picture](pictures/Trusted_app_open_01_04.png)
-
-> [!NOTE]
-> 
-> You can observe and restart all sites through the **Instance Manager**.
 
 If you've passed all the steps successfully, you may proceed to **[define users](setup-a-new-user-account.md)** who can access the Client Center.
 
