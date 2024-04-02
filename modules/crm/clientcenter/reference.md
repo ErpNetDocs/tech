@@ -2,9 +2,9 @@
 
 This article contains reference points for specific procedures, concepts and error codes within the **Client Center**.
 
-## Allow New order settings
+## IsNewOrderEnabled settings
 
-By Default, the ability to preview and **[create new orders](how-to/create-new-order.md)** in the Client center is **disabled**. 
+By default, the ability to preview and **[create new orders](how-to/create-new-order.md)** in the Client Center is **disabled**. 
 
 To enable it, you have to apply **JSON settings** in the website's definition.
 
@@ -26,7 +26,7 @@ For example:
 
 If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error exception code** CC008 or CC009 will be displayed.
 
-## Is Orders Enabled settings
+## IsOrdersEnabled settings
 
 By default, the **Orders** section of the Client Center is **enabled**. 
 
@@ -40,7 +40,7 @@ Enter a **value** for the Settings field and **restart** the website using the I
 
 If "IsOrdersEnabled" is not present in the settings, the **Orders** section will still be visible.
 
-## Hide Lines settings:
+## HideLines settings:
 
 Lines are visible by default in both the **Invoices** and the **Orders** sections of the Client Center.
 
