@@ -84,7 +84,7 @@ Here, the system will generate another error:
 
 3.	No settings are set:
 
-In this scenario, both fields assume two values by default:
+In this scenario, both settings assume two values by default:
 
 ```
     	"NewOrderDocumentType": "CRM_SALES_ORDER.Id",
