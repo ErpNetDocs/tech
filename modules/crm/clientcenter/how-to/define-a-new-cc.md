@@ -6,8 +6,6 @@ This article provides a step-by-step guide on creating a Client Center website t
 
 To define a website of **Client Center** type, navigate to the **Web Sites** panel within the **Core** section of the **Setup** module.
 
-![picture](pictures/Setup_Core_Website_01_04.png)
-
 ### Website definition
 
 Upon accessing the **New Web Site** form, you need to enter relevant data into the provided fields.
