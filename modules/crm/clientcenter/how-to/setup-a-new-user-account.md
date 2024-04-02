@@ -54,6 +54,8 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 6. Click on **Save and reload** to apply your changes for the **Parent Party** of the user.
 
+If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**.
+
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
