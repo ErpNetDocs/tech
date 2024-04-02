@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Definition of a client center website | ERP.net Tech Docs </title>
+    <title>How to define a website of type Client Center | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Definition of a client center website | ERP.net Tech Docs ">
+    <meta name="title" content="How to define a website of type Client Center | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,36 +77,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="definition-of-a-client-center-website">Definition of a client center website</h1>
+<h1 id="how-to-define-a-website-of-type-client-center">How to define a website of type Client Center</h1>
 
-<p>This article provides a detailed, step-by-step guide on creating a website within the ERP platform.</p>
-<h2 id="navigation">Navigation</h2>
-<p>To define a website categorized as <strong>client center</strong> type, navigate to the <strong>Web Sites</strong> panel within the <strong>Core</strong> section of the <strong>Setup</strong> module.</p>
-<p><img src="pictures/Setup_Core_Website_01_04.png" alt="picture"></p>
-<h2 id="define-a-website">Define a website</h2>
-<p>There are two pathways available for defining a website. Regardless of which path you choose, the creation page will remain identical, ensuring consistency in the final result.</p>
-<p>In the first method, simply click on the circular button featuring a <strong>&quot;+&quot;</strong> sign located on the <strong>Web Sites</strong> panel.</p>
-<p>Upon clicking, a new window will open, allowing you to proceed with the definition process.</p>
-<p><img src="pictures/Web_Sites_Create_01_04.png" alt="picture"></p>
-<p>The second approach involves utilizing the <strong>New</strong> button situated on the <strong>Web Sites</strong> table. To access the <strong>Web Sites</strong> table, simply click on the <strong>Web Sites</strong> panel.</p>
-<p>This action will open the same window as in the first approach, enabling you to proceed with your definition.</p>
-<p><img src="pictures/Website_new_01_04.png" alt="picture"></p>
-<p>Upon accessing the definition window, you can enter the relevant information into the provided fields and checkboxes.</p>
-<p><img src="pictures/New_Web_Site_01_04.png" alt="picture"></p>
-<p>The only mandatory field is <strong>Web Site Type</strong>. Once you select one from the list, you can create the new customer without filling out any other information.</p>
-<p>You can change the <strong>Relative Url</strong>, which is &quot;cc&quot; by default.</p>
-<p><img src="pictures/New_Web_Sites_fields_01_04.png" alt="picture"></p>
-<h3 id="create-a-trusted-application">Create a trusted application</h3>
-<p>To create a trusted application, click on <strong>Run</strong>, then select the <strong>Create/Update Trusted Application</strong> option.</p>
-<p><img src="pictures/Create_Update_Trusted_app_01_04.png" alt="picture"></p>
+<p>This article provides a step-by-step guide on creating a Client Center website through ERP.net.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>To define a website of <strong>Client Center</strong> type, navigate to the <strong>Web Sites</strong> panel within the <strong>Core</strong> section of the <strong>Setup</strong> module.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You will be asked to confirm your intension.</p>
+<p>You can observe and restart all sites through the <strong>Instance Manager</strong>.</p>
 </div>
-<p>Once you complete this step, the application will be created, and you can access it through the form.</p>
+<h3 id="website-definition">Website definition</h3>
+<p>Upon accessing the <strong>New Web Site</strong> form, you need to enter relevant data into the provided fields.</p>
+<p><img src="pictures/New_Web_Site_01_04.png" alt="picture"></p>
+<ol>
+<li><p>The only mandatory field is <strong>Web Site Type</strong>. In this case, it should be set to <strong>Client Center</strong>.</p>
+</li>
+<li><p>Make sure you've selected the appropriate <strong>Enterprise Company</strong>.</p>
+</li>
+<li><p>Additionally, you may change the <strong>Relative Url</strong> of the website, which is set to &quot;cc&quot; by default.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You should define a distinct site with a unique <strong>Relative URL</strong> or <strong>Host</strong> for each <strong>Enterprise Company</strong>.</p>
+</div>
+<ol start="4">
+<li><p>It's necessary to create a <strong>trusted application</strong> to ensure the security and integrity of the new website.</p>
+<p>To do so, click on <strong>Run</strong>, select the <strong>Create/Update Trusted Application</strong> option, and confirm with <strong>OK</strong>.</p>
+</li>
+</ol>
+<p><img src="pictures/Create_Update_Trusted_app_01_04.png" alt="picture"></p>
+<ol start="5">
+<li><p>Once you complete this step, hit <strong>Save and reload</strong>.</p>
+<p>The new Client Center website will be created and you can access its internal application details through the form.</p>
+</li>
+</ol>
 <p><img src="pictures/Trusted_app_open_01_04.png" alt="picture"></p>
-<p>Upon opening it, you'll be able to view the details about the application.</p>
-<p><img src="pictures/Trusted_app_details_01_04.png" alt="picture"></p>
+<p>If you've passed all the steps successfully, you may proceed to <strong><a href="setup-a-new-user-account.html">define users</a></strong> who can access the Client Center.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v24 of the platform.</p>

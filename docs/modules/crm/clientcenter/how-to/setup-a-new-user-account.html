@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Setup a new user account | ERP.net Tech Docs </title>
+    <title>How to define a user | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Setup a new user account | ERP.net Tech Docs ">
+    <meta name="title" content="How to define a user | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -77,37 +77,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="setup-a-new-user-account">Setup a new user account</h1>
+<h1 id="how-to-define-a-user">How to define a user</h1>
 
-<p>To initiate the setup of a new user account, the individual must first create the account, after which an administrator can configure it accordingly.</p>
-<h2 id="create-a-new-account-as-a-user">Create a new account as a user</h2>
-<p>To create an account, the user should click on <strong>Create new local account</strong> in the login menu of the <strong>ERP.net</strong> client center.</p>
-<p>Next, they should fill out a form with their information and proceed to create the account.</p>
-<p><img src="pictures/Setup_user_account_01_04.png" alt="picture"></p>
-<h2 id="setup-users-account">Setup users account</h2>
-<p>After a customer of your client has created an account, as an administrator, you need to configure several settings for the new account.</p>
-<p>To proceed, navigate to <strong>Users</strong> within the <strong>Security</strong> section of the <strong>Setup</strong> module.</p>
-<p>Upon opening the <strong>Users</strong> navigator, utilize the filter row to locate the new account by its name.</p>
-<p><img src="pictures/Setup_User_table_01_04.png" alt="picture"></p>
-<p>Access the account and click on the <strong>Edit</strong> button located at the top left corner of the table.</p>
-<p>To add a <strong>person</strong> for the user, you can either click on the <strong>Person</strong> field and open the menu from the three-dotted button, or simply right-click on the field.</p>
-<p>Select the <strong>Create new</strong> option, which will redirect you to a new window where you can create a new person.</p>
+<p>This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website.</p>
+<p>If you haven't created such a website already, please refer to <strong><a href="define-a-new-cc.html">this guide</a></strong>.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before a user can be granted access to a Client Center by an administrator, they must first have issued a request for a <strong>local account</strong>.</p>
+<p>Required fields are <strong>Е-mail</strong>, <strong>Full Name</strong>, and <strong>Password</strong>.</p>
+<p><img src="pictures/Setup_user_account_02_04.png" alt="picture"></p>
+<h2 id="set-up-a-user-account">Set up a user account</h2>
+<p>Once a customer has sent a request for an account, they will appear as an <strong>External Community User</strong> which you can begin to configure.</p>
+<ol>
+<li><p>Navigate to the <strong>Users</strong> panel within the <strong>Security</strong> section of the <strong>Setup</strong> module.</p>
+</li>
+<li><p>Upon accessing the navigator, locate the user account and click on the <strong>Edit</strong> button located to the left of its <strong>Login</strong> details.</p>
+<p><img src="pictures/Setup_User_table_02_04.png" alt="picture"></p>
+</li>
+<li><p>Assign a <strong>person</strong> to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.</p>
+<p>Either right-click on the <strong>Person</strong> field or click the <strong>three-dot button</strong>.</p>
+<p>In both cases, this will expand a dropdown menu where you need to select <strong>Create new</strong>.</p>
 <p><img src="pictures/Setup_user_create_person_01_04.png" alt="picture"></p>
-<h3 id="create-a-new-person">Create a new person</h3>
-<p>Within this form, there are three critical fields that necessitate completion. You must enter the user's first and last name and select the <strong>parent party</strong> from the dropdown menu.</p>
-<p>After completing these steps, click on <strong>Save and reload</strong> to finalize the creation.</p>
+<p>You will be redirected to a separate form for the creation of a new person.</p>
+<p>There are three critical fields: <strong>First Name</strong>, <strong>Last Name</strong> and <strong>Parent Party</strong>.</p>
 <p><img src="pictures/Setup_user_create_person_fields_01_04.png" alt="picture"></p>
-<h3 id="check-if-the-parent-party-is-a-customer">Check if the parent party is a customer</h3>
-<p>To open the parent party, click on it within the form. Afterward, locate the <strong>Customers</strong> panel.</p>
-<p>If it's not visible, you can add it by accessing the <strong>Related data</strong> menu within the <strong>customize form</strong> option.</p>
-<p>In the <strong>Customers</strong> panel, you should verify if two columns are filled. The <strong>Enterprise Company</strong>, which should be your company, and the <strong>Serviced By Enterprise Company Location</strong>.</p>
-<p><img src="pictures/Setup_customers_columns_01_04.png" alt="picture"></p>
-<p>If they are empty, you'll need to create a new project where you can fill in these fields.</p>
-<p><img src="pictures/New_customer_setup_01_04.png" alt="picture"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If any of these settings are missing, an error exception code from CC002 to CC007 will be displayed depending on what's missing.</p>
-</div>
+</li>
+<li><p>Click on <strong>Save and reload</strong> to finish creating the new person.</p>
+<p>You will be brought back to the user definition form. Click on <strong>Save and reload</strong> again to apply all settings.</p>
+</li>
+<li><p>Make sure that the <strong>Parent Party</strong> of the <strong>Person</strong> (the one in which they are employed) is a customer of the current <strong>Enterprise Company</strong>.</p>
+<p>To do so, open it from the <strong>Person</strong> form and locate its <strong>Customers</strong> panel. If it's not visible, add it through the <strong>Customize form</strong> option.</p>
+<p>In the <strong>Customers</strong> panel, verify that two fields are filled:</p>
+<ul>
+<li><p><strong>Enterprise Company</strong> - the Parent Party is a customer of this company, for which the Client Center is created.</p>
+</li>
+<li><p><strong>Serviced By Enterprise Company Location</strong> - the respective Enterprise Company must be serviced by a particular location.</p>
+</li>
+</ul>
+<p><img src="pictures/customers.png" alt="picture"></p>
+</li>
+<li><p>Click on <strong>Save and reload</strong> to apply your changes. <br><br></p>
+</li>
+</ol>
+<p>If you've passed all the steps successfully, you may proceed to <strong><a href="apply-platform-settings.html">apply platform settings</a></strong>. <br><br></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v24 of the platform.</p>
