@@ -1,6 +1,10 @@
 - name: Step-by-step guides
   href: index.md
-- name: Create new order
-  href: create-new-order
+- name: Define a Client Center
+  href: define-a-new-cc.md
+- name: Define a user
+  href: setup-a-new-user-account.md
 - name: Apply platform settings
   href: apply-platform-settings.md
+- name: Create new order
+  href: create-new-order
