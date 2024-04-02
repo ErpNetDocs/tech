@@ -10,7 +10,7 @@ Before a user can be granted access to a Client Center by an administrator, they
 
 Required fields are **Е-mail**, **Full Name**, and **Password**.
 
-![picture](pictures/Setup_user_account_01_04.png)
+![picture](pictures/Setup_user_account_02_04.png)
 
 ## Set up a user account 
 
