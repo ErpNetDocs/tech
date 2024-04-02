@@ -4,7 +4,7 @@ The Client Center allows Erp.Net clients to assist their own clients by allowing
 
 Currently, Client Center platforms are more suitable for businesses rather than individual users. 
 
-You can build and host a CC instance from your global website environment, and access it using a custom relative url.
+You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your global website environment, and access it using a custom relative url.
 
 ![picture](pictures/Client_center_index_Home_31_03.png)
 
