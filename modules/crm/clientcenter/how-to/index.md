@@ -5,4 +5,7 @@ Here, you can find step-by-step guides that help you better understand processes
 * **[Create new order](create-new-order.md)**
   
 * **[Apply platform settings](apply-platform-settings.md)**
+
+* **[Set up a new user account](setup-a-new-user-account.md)**
   
+* **[Define a new Client Center](define-a-new-cc.md)**
