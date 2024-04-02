@@ -24,7 +24,9 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ![picture](pictures/Create_Update_Trusted_app_01_04.png)
 
-5. Once you complete this step and hit **Save and reload**, the website will be created and you can access its internal application details through the form.
+5. Once you complete this step, hit **Save and reload**.
+   
+   The new Client Center website will be created and you can access its internal application details through the form.
 
 ![picture](pictures/Trusted_app_open_01_04.png)
 
