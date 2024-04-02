@@ -1,4 +1,4 @@
-- name: Step-by-step guides
+- name: How To
   href: index.md
 - name: Define a Client Center
   href: define-a-new-cc.md
