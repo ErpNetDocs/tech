@@ -1,12 +1,14 @@
 # How to define a user
 
-To initiate the setup of a new user account, the individual must first create the account, after which an administrator can configure it accordingly.
+This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website.
 
-## Create an account 
+If you haven't created such a website already, please refer to **[this guide](define-a-new-cc.md)**.
 
-To create an account, the user should click on **Create new local account** in the login menu of the **ERP.net** client center. 
+### Prerequisites
 
-Next, they should fill out a form with their information and proceed to create the account.
+Before a user can be granted access to a Client Center by an administrator, they must first have created their local account. 
+
+Required fields are **email**, **name**, and **password**.
 
 ![picture](pictures/Setup_user_account_01_04.png)
 
