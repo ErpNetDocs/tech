@@ -8,7 +8,7 @@ If you haven't created such a website already, please refer to **[this guide](de
 
 Before a user can be granted access to a Client Center by an administrator, they must first have created their **local account**. 
 
-Required fields are **Е-Мail**, **Full Name**, and **Password**.
+Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/Setup_user_account_01_04.png)
 
