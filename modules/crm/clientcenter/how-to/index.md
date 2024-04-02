@@ -2,7 +2,7 @@
 
 Here, you can find step-by-step guides that help you better understand processes within the **Client Center**.
 
-* **[Define a new Client Center](define-a-new-cc.md)**
+* **[Define a website of type Client Center](define-a-new-cc.md)**
 
 * **[Define a user](setup-a-new-user-account.md)**
 
