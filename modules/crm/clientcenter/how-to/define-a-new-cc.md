@@ -34,4 +34,8 @@ If you've passed all the steps successfully, you may proceed to **[define users]
 
 > [!NOTE]
 > 
+> You can observe and restart all sites through the **Instance Manager**.
+
+> [!NOTE]
+> 
 > The screenshots taken for this article are from v24 of the platform.
