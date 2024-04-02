@@ -42,11 +42,11 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 5. Make sure that the **Parent Party** of the **Person** (the same one in which they are employed) is a customer of the current **Enterprise Company**.
    
-   To do so, open it from within the **Person** form and locate its **Customers** panel. If the panel is not visible, add it through the **Customize form** option.
+   To do so, open it from the **Person** form and locate its **Customers** panel. If the panel is not visible, add it through the **Customize form** option.
 
    In the **Customers** panel, verify that two fields are filled:
 
-   * **Enterprise Company** - the Parent Party is a customer of this company.
+   * **Enterprise Company** - the Parent Party is a customer of this company, for which the Client Center is created.
 
    * **Serviced By Enterprise Company Location** - the respective Enterprise Company must be serviced by a particular location.
 
