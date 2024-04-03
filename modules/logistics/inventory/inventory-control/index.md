@@ -65,15 +65,15 @@ If you enter a zero quantity in the **Scan** field, all of the entered quantitie
 
 ### Select a product from the Info tab
 
-You also have the option to scan a product's code only by tapping on its the code within the **Info** tab. 
+You also have the option to enter a product's code only by tapping on its code within the **Info** tab. 
 
 When you do that, the product code will be automatically entered in the **Scan** field.
 
 ![Inventory Control](pictures/Selected_product_25_01.png)
 
-If you need to scan **multiple** instances of your product, you can provide a quantity into the Scan field.
+If you need to scan **multiple** quantities of your product, you can provide a quantity into the Scan field.
 
-Once you tap on the product's code, you can scan **all** of its instances at once.
+Once you tap on the product's code, you can enter **all** of the quantities at once.
 
 ![Inventory Control](pictures/Multiple_scanning_26_01.png)
 
