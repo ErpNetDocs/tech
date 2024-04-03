@@ -62,18 +62,18 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    ![Pictures](pictures/variables.png)
 
-   Keep in mind that writing interpolated strings comes with a few rules and limitations:
-
-   * The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out receipt rows.
+   Keep in mind that writing interpolated strings comes with a few rules and limitations. The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out fiscal receipt rows.
 
    * You should use the following operators to transfer interpolated strings to another row:
    
      "\r\n", "\\n", "'\\r", "\n", "\r".
 
-     The string will be transfered into two or more rows as long as it contains symbols such as <CR> <LF>, <CR>, <LF> or it contains a sequence of "\n" or "\r" symbols.
+     The string will be transfered into a new row as long as it contains symbols such as "<CR> <LF>, <CR>, <LF>" or a sequence of "\n" or "\r" symbols.
+
+    * To prevent receipts becoming too long in size, there is a limit in terms of how many symbols can be provided and how many new rows with interpolated strings can be created.
 
    * Text will be automatically trasferred on a new line as long as identical symbols are present to fill the rest of the previous line. In that case, the identical symbols will be scrapped and whatever follows them is moved to a new line.
-     
+       
      **Example:**
      
      "This is <br>
@@ -85,7 +85,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
      "This is text"<br>
      "+++++++++++++more text"
 
-     And the length of each row depends on the cash register's capabilities. <br>
+     The length of each row depends on the cash register's capabilities. <br><br>
 
 6. When you're ready building your fiscal receipt template, click **Save and reload**.
 
