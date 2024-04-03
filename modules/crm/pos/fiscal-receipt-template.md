@@ -2,7 +2,7 @@
 
 Receipt templates can provide businesses with a customizable solution that enhances their fiscal printing process. They serve as pre-designed formats that you can easily modify and apply on a document type level.
 
-By creating such templates, you gain the flexibility to incorporate personalized text in different sections on the fiscal receipt itself. This includes the ability to define:
+By creating such templates, you gain the flexibility to incorporate personalized text using **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** in different sections on the fiscal receipt itself. This includes the ability to define:
 
 * **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt.
   
