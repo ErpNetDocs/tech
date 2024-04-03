@@ -71,7 +71,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
      The string will be transfered into a new row as long as it contains symbols such as "<CR> <LF>, <CR>, <LF>" or a sequence of "\n" or "\r" symbols.
 
-    * To prevent receipts becoming too long in size, there is a limit in terms of how many symbols can be provided and how many new rows with interpolated strings can be created.
+  * To prevent receipts becoming too long in size, there is a limit in terms of how many symbols can be provided and how many new rows with interpolated strings can be created.
 
    * Text will be automatically trasferred on a new line as long as identical symbols are present to fill the rest of the previous line. In that case, the identical symbols will be scrapped and whatever follows them is moved to a new line.
        
