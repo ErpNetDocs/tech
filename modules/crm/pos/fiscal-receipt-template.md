@@ -28,7 +28,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    This takes you to a new page specifically designed for customizing the printouts of fiscal receipts, providing you     with a comprehensive set of options to personalize a template according to your preferences.
 
-   ![Pictures](pictures/Screenshot_4.png)
+   ![Pictures](pictures/Screenshot_44.png)
 
 3. The first required step in crafting a new template is providing a distinctive **name** for it.
    
