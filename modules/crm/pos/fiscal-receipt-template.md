@@ -76,13 +76,13 @@ To craft a distinctive template tailored to your business needs, you need to fol
      
      **Example:**
      
-     "text for <br><br>
-       test\+++++++++++++++++++++++++++++++++++<br><br>
+     "This is <br><br>
+       text\+++++++++++++++++++++++++++++++++++<br>
      ++++++++++++++++++++++++++ more text"
 
      **This will result in two lines:**
 
-     "text for test"<br><br>
+     "This is text"<br>
      "+++++++++++++more text"
 
      And the length of each row depends on the cash register's capabilities.
