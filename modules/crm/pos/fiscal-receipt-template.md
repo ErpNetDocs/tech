@@ -85,9 +85,9 @@ To craft a distinctive template tailored to your business needs, you need to fol
      "This is text"<br>
      "+++++++++++++more text"
 
-     And the length of each row depends on the cash register's capabilities.
+     And the length of each row depends on the cash register's capabilities. <br>
 
-6. When you're ready, click **Save and reload**.
+6. When you're ready building your fiscal receipt template, click **Save and reload**.
 
    ![Pictures](pictures/templatereadysaved.png)
 
