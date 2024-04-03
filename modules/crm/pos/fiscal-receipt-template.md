@@ -1,19 +1,15 @@
 # Overview
 
-Fiscal receipts help customers prove they have paid, and they help businesses confirm they've provided what was purchased.
-As a business owner or process manager, you understand the importance of streamlining receipt management to track what is coming in and going out of your organization.
-Often business-to-business transactions depend on receipts to keep a record of the transaction.
-We're rolling out a new feature that allows customization of fiscal receipts.
-We're excited to announce the introduction of our innovative Fiscal Receipt Templates, providing businesses with a customizable solution for enhancing their fiscal documentation process.
+Receipt templates can provide businesses with a customizable solution that enhances their fiscal printing process. They serve as pre-designed formats that you can easily modify and apply on a document type level.
 
-### What is a receipts template?
+By creating such templates, you gain the flexibility to incorporate personalized text in different places on the fiscal receipt itself. This includes the following sections:
 
-A receipt template serves as a pre-designed format that business owners can easily customize to adapt a variety of transactions, offering a convenient solution for efficient documentation. 
-In this regard, ERP.NET presents an innovative feature allowing users to create templates, offering the flexibility to incorporate personalized text chosen by the customer.
-Employing a template offers company owners a distinct opportunity to differentiate themselves from competitors by embedding unique text or enticing discounts directly onto receipts.
-This strategic customization not only increases the overall branding but also has the potential to significantly boost sales. By leveraging personalized elements, such as catchy slogans, promotional offers, or exclusive discounts, businesses can captivate their customers' attention and foster stronger brand loyalty. This tailored approach not only sets the company apart but also creates memorable and engaging experiences for customers, ultimately driving increased revenue and market differentiation.
+* **Custom Header**
+* **Custom Row Header**
+* **Custom Row Footer**
+* **Custom Footer**
 
-## Creating Template
+## Creating a template
 
 To craft a distinctive template tailored to our specifications, we begin by accessing the CRM panel at the top of the interface and selecting POS
  
