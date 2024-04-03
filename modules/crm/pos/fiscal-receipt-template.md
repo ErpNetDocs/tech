@@ -6,9 +6,9 @@ By creating such templates, you gain the flexibility to incorporate personalized
 
 * **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt, above the system header.
   
-* **Custom Row Header** - refers to the text that will be printed before certain rows of the fiscal receipt.
+* **Custom Row Header** - refers to the text that will be printed before certain lines of the fiscal receipt.
   
-* **Custom Row Footer** - refers to the text that will be printed after certain rows of the fiscal receipt.
+* **Custom Row Footer** - refers to the text that will be printed after certain lines of the fiscal receipt.
   
 * **Custom Footer** - refers to the text that will be printed at the bottom of the fiscal receipt, next to the system footer.
 
@@ -26,7 +26,7 @@ By tailoring these elements to their specific needs, users can ensure that every
 
 ![Pictures](pictures/mceclip5png.png)
 
-## Creating a template
+## Creating a receipt template
 
 To craft a distinctive template tailored to your business needs, you need to follow a specific set of steps.
 
@@ -63,17 +63,17 @@ To craft a distinctive template tailored to your business needs, you need to fol
    ![Pictures](pictures/variables.png)
 
   > [!WARNING] 
-  > Keep in mind that writing interpolated strings comes with a few rules and limitations. The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out fiscal receipt rows.
+  > Keep in mind that writing interpolated strings comes with a few rules and limitations. The width of a line is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out fiscal receipt lines.
 
-   * You should use the following operators to transfer interpolated strings to another row:
+   * You should use the following operators to transfer interpolated strings to another line:
    
      "\r\n", "\\n", "'\\r", "\n", "\r".
 
-     The string will be transfered into a new row as long as it contains symbols such as "<CR> <LF>, <CR>, <LF>" or a sequence of "\n" or "\r" symbols.
+     The string will be transfered into a new line as long as it contains symbols such as "<CR> <LF>, <CR>, <LF>" or a sequence of "\n" or "\r" symbols.
 
-  * To prevent receipts becoming too long in size, there is a limit in terms of how many symbols can be provided and how many new rows with interpolated strings can be created.
+  * To prevent receipts becoming too long in size, there is a limit in terms of how many symbols can be provided and how many new lines with interpolated strings can be created.
 
-   * Text will be automatically trasferred on a new line as long as identical symbols are present to fill the rest of the previous line. In that case, the identical symbols will be scrapped and whatever follows them is moved to a new line.
+   * Text on one line will be automatically trasferred on a new line if identical symbols are present to fill the entire new line. In that case, the line with identical symbols is considered "separating" and it will be scrapped, but whatever preceded it will be moved to a new line.
        
      **Example:**
      
@@ -86,7 +86,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
      "This is text"<br>
      "+++++++++++++more text"
 
-     The length of each row depends on the cash register's capabilities. <br><br>
+     The length of each line depends on the cash register's capabilities. <br><br>
 
 6. When you're ready building your fiscal receipt template, click **Save and reload**.
 
@@ -98,13 +98,13 @@ To craft a distinctive template tailored to your business needs, you need to fol
  
 ## Defining a template for a document type
 
-Now that you've created a template, you are ready to link it to a document template. 
+Now that you've created a template, you are ready to link it to a document type. 
 
 1. Navigate to a document, e.g. a sales order, and open its **document type**.
 
    ![Pictures](pictures/documenttypes.png)
 
-2. Edit the document type definition and locate the **Printouts** panel. If it isn't already visible, add it through the **Customize panel** feature.
+2. Edit the document type definition and locate the **Printouts** panel. If it isn't already visible, add it through the **Customize form** feature.
   
 3. From the **Fiscal Receipt Template** field, select the fiscal receipt template you created.
 
