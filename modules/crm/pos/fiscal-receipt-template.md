@@ -76,14 +76,16 @@ To craft a distinctive template tailored to your business needs, you need to fol
      
      **Example:**
      
-     "text for
-       test\+++++++++++++++++++++++++++++++++++
+     "text for <br><br>
+       test\+++++++++++++++++++++++++++++++++++<br><br>
      ++++++++++++++++++++++++++ more text"
 
-     This will result in two lines:
+     **This will result in two lines:**
 
-     "text for test"
+     "text for test"<br><br>
      "+++++++++++++more text"
+
+     And the length of each row depends on the cash register's capabilities.
 
 6. When you're ready, click **Save and reload**.
 
