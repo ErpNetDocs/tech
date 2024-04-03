@@ -44,7 +44,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
 5. Click the **three-dot button** on any **Custom** field to open a separate window with several customization options.
 
-   ![Pictures](pictures/buttonclick.png)
+   ![Pictures](pictures/button_click.png)
 
    It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be arranged across one or more rows.
 
