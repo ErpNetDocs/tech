@@ -62,7 +62,8 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    ![Pictures](pictures/variables.png)
 
-   Keep in mind that writing interpolated strings comes with a few rules and limitations. The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out fiscal receipt rows.
+  > [!WARNING] 
+  > Keep in mind that writing interpolated strings comes with a few rules and limitations. The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out fiscal receipt rows.
 
    * You should use the following operators to transfer interpolated strings to another row:
    
