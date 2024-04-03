@@ -3597,6 +3597,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_User_table_02_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_User_table_02_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_Users_01_04.png",
       "output": {
         "resource": {
@@ -3634,6 +3645,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_user_account_01_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_user_account_02_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Setup_user_account_02_04.png"
         }
       },
       "is_incremental": false,
@@ -3700,6 +3722,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/Website_new_01_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/customer.png"
         }
       },
       "is_incremental": false,
@@ -3810,6 +3843,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/pictures/column_add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/customers.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/customers.png"
         }
       },
       "is_incremental": false,
@@ -13201,7 +13245,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/pos/fiscal-receipt-template.html",
-          "hash": "cjNFRX2lP/XegYzCEU6YhA=="
+          "hash": "xNKMC/MSat7nV/P1w+aOdA=="
         }
       },
       "is_incremental": false,
@@ -13213,7 +13257,414 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/pos/index.html",
-          "hash": "ZU28ihVhMZcCW3iTTvZDDA=="
+          "hash": "XHfbg8mf2UQvLNLpSQIkZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_133.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_133.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_144.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_144.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_15.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_16.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_17.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_17.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_18.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_19.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_20.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_21.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_21.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_22.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_44.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_44.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_88.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_88.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/Screenshot_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/Screenshot_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/button_click.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/button_click.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/documenttype.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/documenttype.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/documenttypes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/documenttypes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip5png.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip5png.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/template_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/template_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/templateready.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/templateready.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/templatereadysaved.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/templatereadysaved.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/templatesaved.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/templatesaved.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/templateselected.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/templateselected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/variables.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/variables.png"
         }
       },
       "is_incremental": false,
@@ -16776,7 +17227,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "Vu+MhlINPh9mDJFcYfPOBA=="
+          "hash": "TEMSYwluyfREqye0LWl3TQ=="
         }
       },
       "is_incremental": false,
