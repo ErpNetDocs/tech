@@ -4,47 +4,47 @@ Receipt templates can provide businesses with a customizable solution that enhan
 
 By creating such templates, you gain the flexibility to incorporate personalized text in different sections on the fiscal receipt itself. This includes the ability to define:
 
-* **Custom Header**
-* **Custom Row Header**
-* **Custom Row Footer**
-* **Custom Footer**
+* **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt.
+  
+* **Custom Row Header** - refers to the text that will be printed on certain rows within the middle portion of the fiscal receipt.
+  
+* **Custom Row Footer** - refers to the text that will be printed on certain rows within the lower portion of the fiscal receipt.
+  
+* **Custom Footer** - refers to the text that will be printed at the bottom of the fiscal receipt.
+
+By tailoring these elements to their specific needs, users can ensure that every receipt reflects the identity and values of their company, sending the right messages and ultimately enhancing customer experience.
 
 ![Pictures](pictures/mceclip5png.png)
 
 ## Creating a template
 
-To craft a distinctive template tailored to our specifications, we begin by accessing the CRM panel at the top of the interface and selecting POS
+To craft a distinctive template tailored to your business needs, you need to follow a specific set of steps.
+
+1. Locate the **Fiscal Receipt Templates** panel within the **POS** section of the **CRM** module.
+
+2. Click on the panel's **Plus** button to initiate the creation of a new template.
+
+   This takes you to a new page specifically designed for customizing the printouts of fiscal receipts, providing you     with a comprehensive set of options to personalize a template according to your preferences.
+
+3. The first required step in crafting a new template is providing a distinctive **name** for it.
+   
+   You can do that by using the **Template Name** field.
+
+4. Decide whether to include the **Print System Header** and **Print System Row Header** options.
+
+   This determines if custom headers and row headers will be printed as part of a fiscal receipt.
+
+   To select these options, simply press on their respective **check boxes**. 
+
+5. Click the **three-dot button** on any **Custom** field to open a separate window with several customization options. 
+
+   It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be
+   arranged across one or more rows.
+   
+   You can use the **search bar** to locate a particular interpolated string from within the **System Variables**
+   section. The latter allows you to choose variables such as date, time, or location of the current transaction that
+   will be updated automatically.
  
-This action directs us to a page where we can locate the Fiscal Receipt Templates panel.
-
-Upon locating this panel, we click on the Plus button to initiate the creation of a new template.
-
-This action navigates us to a new page specifically designed for customizing the printouts of fiscal receipts, providing us with a comprehensive set of options to personalize the template according to our preferences.
-
-With these templates, users gain the flexibility to personalize every aspect of their receipts, including custom headers, row headers, row footers, and overall footers. This level of customization empowers businesses to craft receipts that precisely meet their unique requirements and branding preferences. By tailoring these elements to their specific needs, users can ensure that every receipt reflects the identity and values of their company, ultimately enhancing the customer experience and reinforcing brand consistency across all touch points.
-The initial step in crafting a new template is selecting a distinctive name for it.
-We can do that by using the field Template Name
-
-Once we've designated a name for our new template, the subsequent step involves deciding whether we wish to include the Print the system header and Print the system row header options. These choices determine whether the default system headers and row headers will be included in our template's layout.
-
-To select these options, simply press the check mark next to Print the system header and Print the system row header, marking them with a check mark. This action signifies that you want to include the default system headers and row headers in your template's layout.
-
-The Custom Header refers to the text that will be printed at the top of the bill printouts. This typically includes details about the property, such as its name, address, and other relevant information. It serves as a prominent section that provides important context and branding for the receipt.
-
-By selecting the three-dot button, you will access a new page offering several options. You can find one in every felt with the same options. 
-
-Here, you can input your interpolated strings, enabling you to use them as suggestions when choosing that specific template.
- 
-You can use the search bar to locate a particular interpolated string among those you've inputted. This functionality helps for better organization, allowing you to quickly select specific strings for use within your template.
-System Variables allows you to choose from the drop-down menu with variables such as date, time, or location of the current transaction that will be updated automatically.
- 
-The Custom Row Header feature offers the option to print specific text at certain rows within the middle section of the receipt.
- 
-The Custom Row Footer feature provides the option to print text at the low part of the receipt once it's been closed.
- 
-Custom Footer - the text will be printed at the bottom.
-For instance, you could include a message like “Thank you for being our guests." This allows businesses to express appreciation to their customers and leave a positive impression after completing a transaction.
-
 ## How to use fiscal receipts templates
 
 Now that we've created our templates, we are ready to put them into action. To do so, we navigate to the Sales panel and select Orders.
