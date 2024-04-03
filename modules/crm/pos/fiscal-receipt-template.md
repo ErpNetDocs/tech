@@ -45,7 +45,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
    section. The latter allows you to choose variables such as date, time, or location of the current transaction that
    will be updated automatically.
 
-   > ![NOTE]
+   > [!NOTE]
    >
    > Interpolated strings can include text, domain attributes, and system variables available in the respective document type (e.g. sales order) for which you are creating a fiscal receipt template. You can also import user-defined calculated attributes, which allow for various calculations of prices, amounts, discounts, and more, all of which are printed on the receipt.
  
@@ -67,3 +67,7 @@ Selecting the Edit button grants you the ability to make desired modifications t
 
 Once you have made the desired changes to your template, simply click on the Save and Reload button to apply your modifications.
 screnshot
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
