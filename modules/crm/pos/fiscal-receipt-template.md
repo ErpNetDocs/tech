@@ -64,19 +64,19 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    Keep in mind that writing interpolated strings comes with a few rules and limitations:
 
-   * The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you align or fill out rows.
+   * The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you want to align or fill out receipt rows.
 
-   * You should use the following operators to transfer an interpolated string to another row:
+   * You should use the following operators to transfer interpolated strings to another row:
    
      "\r\n", "\\n", "'\\r", "\n", "\r".
 
      The string will be transfered into two or more rows as long as it contains symbols such as <CR> <LF>, <CR>, <LF> or it contains a sequence of "\n" or "\r" symbols.
 
-   * Text can be automatically trasferred on a new line as long as that line contains identical symbols that fill it. In that case, the line is considered "separating", meaning that the identical symbols are scrapped and whatever follows them is moved to a new line.
+   * Text will be automatically trasferred on a new line as long as identical symbols are present to fill the rest of the previous line. In that case, the identical symbols will be scrapped and whatever follows them is moved to a new line.
      
      **Example:**
      
-     "This is <br><br>
+     "This is <br>
        text\+++++++++++++++++++++++++++++++++++<br>
      ++++++++++++++++++++++++++ more text"
 
