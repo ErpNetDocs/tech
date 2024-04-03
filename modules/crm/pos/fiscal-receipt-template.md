@@ -9,6 +9,8 @@ By creating such templates, you gain the flexibility to incorporate personalized
 * **Custom Row Footer**
 * **Custom Footer**
 
+![Pictures](pictures/mceclip5.png)
+
 ## Creating a template
 
 To craft a distinctive template tailored to our specifications, we begin by accessing the CRM panel at the top of the interface and selecting POS
