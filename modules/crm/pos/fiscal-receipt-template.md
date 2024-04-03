@@ -9,7 +9,7 @@ By creating such templates, you gain the flexibility to incorporate personalized
 * **Custom Row Footer**
 * **Custom Footer**
 
-![Pictures](pictures/mceclip5.png)
+![Pictures](pictures/mceclip5png.png)
 
 ## Creating a template
 
