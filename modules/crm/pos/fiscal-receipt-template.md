@@ -101,7 +101,7 @@ Now that you've created a template, you are ready to link it to a document templ
 
 1. Navigate to a document, e.g. a sales order, and open its **document type**.
 
-   ![Pictures](pictures/documenttype.png)
+   ![Pictures](pictures/documenttypes.png)
 
 2. Edit the document type definition and locate the **Printouts** panel. If it isn't already visible, add it through the **Customize panel** feature.
   
