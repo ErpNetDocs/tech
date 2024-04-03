@@ -100,8 +100,8 @@ To craft a distinctive template tailored to your business needs, you need to fol
 Now that you've created a template, you are ready to link it to a document template. 
 
 1. Navigate to a document, e.g. a sales order, and open its **document type**.
- 
-  ![Pictures](pictures/documenttype.png)
+
+   ![Pictures](pictures/documenttype.png)
 
 2. Edit the document type definition and locate the **Printouts** panel. If it isn't already visible, add it through the **Customize panel** feature.
   
@@ -109,7 +109,9 @@ Now that you've created a template, you are ready to link it to a document templ
 
    ![Pictures](pictures/template_select.png)
 
-4. Click **Save and reload** to apply your changes. The fiscal receipt template will now be enforced for all documents of the respective document type.
+4. Click **Save and reload** to apply your changes.
+  
+   The fiscal receipt template will now be enforced for all documents of the respective document type.
 
 > [!NOTE]
 > 
