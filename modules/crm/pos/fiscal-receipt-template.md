@@ -22,9 +22,13 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
 1. Locate the **Fiscal Receipt Templates** panel within the **POS** section of the **CRM** module.
 
+   ![Pictures](pictures/Screenshot_22.png)
+
 2. Click on the panel's **Plus** button to initiate the creation of a new template.
 
    This takes you to a new page specifically designed for customizing the printouts of fiscal receipts, providing you     with a comprehensive set of options to personalize a template according to your preferences.
+
+   ![Pictures](pictures/Screenshot_4.png)
 
 3. The first required step in crafting a new template is providing a distinctive **name** for it.
    
@@ -34,13 +38,19 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    This determines if custom headers and row headers will be printed as part of a fiscal receipt.
 
-   To select these options, simply press on their respective **check boxes**. 
+   To select these options, simply press on their respective **check boxes**.
 
-5. Click the **three-dot button** on any **Custom** field to open a separate window with several customization options. 
+   ![Pictures](pictures/Screenshot_8.png)
+
+5. Click the **three-dot button** on any **Custom** field to open a separate window with several customization options.
+
+   ![Pictures](pictures/Screenshot_13.png)
 
    It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be
    arranged across one or more rows.
-   
+
+   ![Pictures](pictures/Screenshot_14.png)
+
    You can use the **search bar** to locate a particular interpolated string from within the **System Variables**
    section. The latter allows you to choose variables such as date, time, or location of the current transaction that
    will be updated automatically.
