@@ -44,16 +44,17 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
 5. Click the **three-dot button** on any **Custom** field to open a separate window with several customization options.
 
-   ![Pictures](pictures/Screenshot_133.png)
+   ![Pictures](pictures/buttonclick.png)
 
-   It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be
-   arranged across one or more rows.
+   It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be arranged across one or more rows.
 
-   ![Pictures](pictures/Screenshot_144.png)
+   ![Pictures](pictures/variables.png)
 
-   You can use the **search bar** to locate a particular interpolated string from within the **System Variables**
-   section. The latter allows you to choose variables such as date, time, or location of the current transaction that
-   will be updated automatically.
+   You can use the **search bar** to locate a particular interpolated string from within the **System Variables** section. The latter allows you to choose variables such as date,    time, or location of the current transaction that will be updated automatically.
+
+6. When you're ready, click **Save and reload**.
+
+   ![Pictures](pictures/templatereadysaved.png)
 
 > [!NOTE] 
 >
