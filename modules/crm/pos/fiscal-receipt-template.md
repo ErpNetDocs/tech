@@ -6,7 +6,7 @@ By creating such templates, you gain the flexibility to incorporate personalized
 
 * **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt.
   
-* **Custom Row Header** - refers to the text that will be printed on certain rows within the middle portion of the fiscal receipt.
+* **Custom Row Header** - refers to the text that will be printed on certain rows within the mid portion of the fiscal receipt.
   
 * **Custom Row Footer** - refers to the text that will be printed on certain rows within the lower portion of the fiscal receipt.
   
