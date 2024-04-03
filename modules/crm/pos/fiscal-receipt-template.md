@@ -95,24 +95,21 @@ To craft a distinctive template tailored to your business needs, you need to fol
 >
 > Interpolated strings can include text, domain attributes, and system variables available in the respective document type (e.g. sales order) for which you are creating a fiscal receipt template. <br><br> You can also import user-defined calculated attributes, which allow for various calculations of prices, amounts, discounts, and more, all of which are printed on the receipt.
  
-## How to use fiscal receipts templates
+## Defining a template for a document type
 
-Now that we've created our templates, we are ready to put them into action. To do so, we navigate to the Sales panel and select Orders.
+Now that you've created a template, you are ready to link it to a document template. 
+
+1. Navigate to a document, e.g. a sales order, and open its **document type**.
  
-In this panel, we can select a document.
- 
-Once the document is opened, a new page will display all the relevant information. From there, we proceed by clicking on Document Type. 
- 
-This action will direct us to the Detail panel and from there we can open our document.
+  ![Pictures](pictures/documenttype.png)
 
-When we select the Printouts panel and click on the field labeled Fiscal Receipt Template, it opens the detailed panel associated with selecting the template for fiscal receipts. This panel allows us to choose from the available templates we have created.
+2. Edit the document type definition and locate the **Printouts** panel. If it isn't already visible, add it through the **Customize panel** feature.
+  
+3. From the **Fiscal Receipt Template** field, select the fiscal receipt template you created.
 
-Select open and the template will appear.
+   ![Pictures](pictures/template_select.png)
 
-Selecting the Edit button grants you the ability to make desired modifications to the selected template. Each field within the editing interface provides the option to utilize interpolated strings, provided you've added them during the template creation process.
-
-Once you have made the desired changes to your template, simply click on the Save and Reload button to apply your modifications.
-screnshot
+4. Click **Save and reload** to apply your changes. The fiscal receipt template will now be enforced for all documents of the respective document type.
 
 > [!NOTE]
 > 
