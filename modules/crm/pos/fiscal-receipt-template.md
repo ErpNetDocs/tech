@@ -4,13 +4,23 @@ Receipt templates can provide businesses with a customizable solution that enhan
 
 By creating such templates, you gain the flexibility to incorporate personalized text using **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** in different sections on the fiscal receipt itself. This includes the ability to define:
 
-* **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt.
+* **Custom Header** - refers to the text that will be printed at the top of the fiscal receipt, above the system header.
   
-* **Custom Row Header** - refers to the text that will be printed on certain rows within the mid portion of the fiscal receipt.
+* **Custom Row Header** - refers to the text that will be printed before certain rows of the fiscal receipt.
   
-* **Custom Row Footer** - refers to the text that will be printed on certain rows within the lower portion of the fiscal receipt.
+* **Custom Row Footer** - refers to the text that will be printed after certain rows of the fiscal receipt.
   
-* **Custom Footer** - refers to the text that will be printed at the bottom of the fiscal receipt.
+* **Custom Footer** - refers to the text that will be printed at the bottom of the fiscal receipt, next to the system footer.
+
+It's possible to take fiscal receipt customization even further by defining interpolated strings:
+
+* **Before/after a sale**
+
+* **Before/after a discount**
+
+* **Before/after a subtotal**
+
+* **Before/after payment**
 
 By tailoring these elements to their specific needs, users can ensure that every receipt reflects the identity and values of their company, sending the right messages and ultimately enhancing customer experience.
 
@@ -26,7 +36,7 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
 2. Click on the panel's **Plus** button to initiate the creation of a new template.
 
-   This takes you to a new page specifically designed for customizing the printouts of fiscal receipts, providing you     with a comprehensive set of options to personalize a template according to your preferences.
+   This takes you to a new page specifically designed for customizing the printouts of fiscal receipts, providing you with a comprehensive set of options to personalize a template according to your preferences.
 
    ![Pictures](pictures/Screenshot_44.png)
 
@@ -46,11 +56,34 @@ To craft a distinctive template tailored to your business needs, you need to fol
 
    ![Pictures](pictures/button_click.png)
 
-   It is here that you can provide **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section. They will be arranged across one or more rows.
+   It is here that you can provide text as well as **[interpolated strings](https://docs.erp.net/tech/advanced/string-interpolation/index.html)** for defining what exactly will be written in each respective section.
+
+   You can also locate and directly add **system variables** such as date, time, or location.
 
    ![Pictures](pictures/variables.png)
 
-   You can use the **search bar** to locate a particular interpolated string from within the **System Variables** section. The latter allows you to choose variables such as date,    time, or location of the current transaction that will be updated automatically.
+   Keep in mind that writing interpolated strings comes with a few rules and limitations:
+
+   * The width of a row is considered a unique parameter for each cash register. Therefore, certain symbols need to be added when you align or fill out rows.
+
+   * You should use the following operators to transfer an interpolated string to another row:
+   
+     "\r\n", "\\n", "'\\r", "\n", "\r".
+
+     The string will be transfered into two or more rows as long as it contains symbols such as <CR> <LF>, <CR>, <LF> or it contains a sequence of "\n" or "\r" symbols.
+
+   * Text can be automatically trasferred on a new line as long as that line contains identical symbols that fill it. In that case, the line is considered "separating", meaning that the identical symbols are scrapped and whatever follows them is moved to a new line.
+     
+     **Example:**
+     
+     "text for
+       test\+++++++++++++++++++++++++++++++++++
+     ++++++++++++++++++++++++++ more text"
+
+     This will result in two lines:
+
+     "text for test"
+     "+++++++++++++more text"
 
 6. When you're ready, click **Save and reload**.
 
