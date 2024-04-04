@@ -12725,7 +12725,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/how-to/apply-platform-settings.html",
-          "hash": "qZTAgeaYBvd6+IXMjXiOmQ=="
+          "hash": "F7uwfvy77Oio0IyY3egvBw=="
         }
       },
       "is_incremental": false,
@@ -13099,15 +13099,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account.html",
-          "hash": "x/TsMPgCGWxdosvH0+zDUw=="
+          "hash": "/jmz5Etqu6xLe/w1386nsQ=="
         }
       },
       "is_incremental": false,
@@ -22702,7 +22699,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "ClXaAjdVduppiJAWPC9uPA=="
+          "hash": "VNpQU+ZNO90OmzRvY38sWQ=="
         }
       },
       "is_incremental": false,
