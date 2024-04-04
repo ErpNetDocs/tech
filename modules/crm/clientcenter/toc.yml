@@ -1,8 +1,7 @@
 - name: Overview
   href: index.md
-- name: Step-by-step guides
-  href: how-to/toc.yml
-  topicHref: how-to/index.md
 - name: Reference
   href: reference.md
-  
+- name: Step-by-step guides
+  href: how-to/toc.yml
+  topicHref: how-to/index.md 
