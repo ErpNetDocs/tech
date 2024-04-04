@@ -50,7 +50,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
    * **Serviced By Enterprise Company Location** - the respective Enterprise Company must be serviced by a particular location.
 
-   ![picture](pictures/customers.png)
+   ![picture](pictures/customer.png)
 
 6. Click on **Save and reload** to apply your changes. <br><br>
 
