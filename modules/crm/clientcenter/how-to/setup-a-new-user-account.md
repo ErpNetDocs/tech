@@ -1,4 +1,4 @@
-# How to define a user
+# How to define a user of a Client Center
 
 This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website.
 
