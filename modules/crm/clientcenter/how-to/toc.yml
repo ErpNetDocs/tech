@@ -7,4 +7,4 @@
 - name: Apply platform settings
   href: apply-platform-settings.md
 - name: Create new order
-  href: create-new-order
+  href: create-new-order.md
