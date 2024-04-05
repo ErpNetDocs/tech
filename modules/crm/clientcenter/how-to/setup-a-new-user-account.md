@@ -54,7 +54,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 6. Click on **Save and reload** to apply your changes. <br><br>
 
-If any of the user configuration settings are not properly applied, a respective **[error](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
+If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
 
 If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. <br><br>
 
