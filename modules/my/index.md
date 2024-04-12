@@ -2,7 +2,7 @@
 
 **My** is your personalized environment housing all the relevant information essential for your daily routines.
 
-[!pictures](pictures/MyOverview.png)
+![pictures](pictures/MyOverview.png)
 
 In the My menu, you can find applications like:
 
