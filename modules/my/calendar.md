@@ -1,14 +1,12 @@
 # My Calendar
 
-The **ERP's Web Client Calendar** is a powerful time-management tool, allowing users to efficiently organize, monitor, and synchronize activities, events, and tasks. 
+The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, events and tasks. 
 
-It consolidates group activities, promoting collaboration. 
-
-Its features include creating events, customizing views (e.g., Workweek, Month), navigating dates, and accessing scheduled events easily.
+It also sums up **group** activities from the social groups you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
 
 ## Navigation 
 
-You can find your personal **Calendar** within the **My** module.
+You can find your personal **Calendar** in the **My** module.
 
 ![picture](pictures/Screenshot_1.png)
 
