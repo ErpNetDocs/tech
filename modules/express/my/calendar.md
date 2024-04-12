@@ -43,6 +43,5 @@ When ready, click **Save and reload**, and the activity will be added to your Ca
 ![Express](pictures/Calendar_Create_save.png)
 
 
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
