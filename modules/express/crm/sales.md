@@ -16,7 +16,7 @@ You need to fill the **creation form** with data essential for the order.
 
 Once ready, click the **Save and reload** button.
 
-[Express](pictures/Sales_save.png)
+![Express](pictures/Sales_save.png)
 
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the platform.
