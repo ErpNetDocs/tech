@@ -40,7 +40,5 @@ In the window that opens, you will see two tabs:
 
   ![Express](pictures/Presales_Reorder.png)
 
-
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
