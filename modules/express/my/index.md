@@ -12,8 +12,6 @@ It includes several integral components of the Express system:
 * **[To Do](todo.md)**
 * **[Tiles](tiles.md)**
 * **[Favorites](favorites.md)**
-  
-
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
