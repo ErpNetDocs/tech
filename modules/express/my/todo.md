@@ -35,6 +35,5 @@ It will be placed in the **Completed** category.
 ![Express](pictures/ToDo_done.png)
 
 
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
