@@ -4,10 +4,6 @@ The **ERP.net Calendar** is a powerful time-management tool, allowing you to eff
 
 It also sums up **group** activities from the social groups you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
 
-## Navigation 
-
-You can find your personal **Calendar** in the **My** module.
-
 ![picture](pictures/Screenshot_1.png)
 
 ## Time period
