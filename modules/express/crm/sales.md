@@ -18,7 +18,5 @@ Once ready, click the **Save and reload** button.
 
 [Express](pictures/Sales_save.png)
 
-
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
