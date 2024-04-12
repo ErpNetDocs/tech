@@ -71,10 +71,20 @@ to more details, like the event's scheduled hours.
  
 ## Edit Event
 
-You can open the event by clicking on its title, which will display all its details and list of potential participants. If you wish to edit any aspect, such as the subject, the date or any other aspects you can click the edit button on the top left corner. Upon saving the changes, they will be immediately reflected in the **Calendar**.
+You can open the event by clicking on its title, which will display all its details and list of potential participants. 
+
+If you wish to edit any aspect, such as the subject, the date or any other aspects you can click the edit button on the top left corner. 
+
+Upon saving the changes, they will be immediately reflected in the **Calendar**.
 
 ## Panel menu 
 
 In the **Panel menu** you can maximize your screen, adjust **Calendar view types** and create events.
 
-The Calendar is not confined to a single location. Upon accessing your personalized **Dashboard**, you will find it integrated as a panel, accessible whenever needed. Here, all its features are centralized alongside other vital ** My** components, offering a cohesive user experience. Additionally, you have the freedom to rearrange the Calendar panel by opening the **Customize window** of the **Dashboard** and dragging it to your preferred position.
+The Calendar is not confined to a single location. 
+
+Upon accessing your personalized **Dashboard**, you will find it integrated as a panel, accessible whenever needed. 
+
+Here, all its features are centralized alongside other vital ** My** components, offering a cohesive user experience.
+
+Additionally, you have the freedom to rearrange the Calendar panel by opening the **Customize window** of the **Dashboard** and dragging it to your preferred position.
