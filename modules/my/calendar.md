@@ -16,7 +16,7 @@ The **Calendar** allows users to specify custom time periods, such as specific h
 
 To change the calendar's display, access the dropdown menu at the top left of your page and select either **Month** or **Workweek** views.
 
-> ![NOTE]
+> [!NOTE]
 > You can also adjust the **Calendar display view** from the **Panel menu ** of the **Calendar page**.
  
 To revisit past events or navigate to a specific week or month, use the arrow buttons. Depending on whether you're in the **Month** or **Week** view, this will adjust the calendar accordingly.
