@@ -17,3 +17,6 @@ In the My menu, you can find applications like:
 * **To Do** 
 
 If you want to learn more about them, please refer to their respective technical guides.
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the platform.
