@@ -2,21 +2,21 @@
 
 The **My** module is a personalized environment housing information that is essential to your day-to-day activities.
 
-It consists of independent, interactive applications, some of which can be integrated as panels in other modules. 
+It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.
 
 ![pictures](pictures/MyOverview.png)
 
-In the **My** module, you can find standalone applications like:
+In the **My** module, you can find the following applications:
 
-* **Calendar** 
 * **Dashboard** 
-* **Documents** 
-* **Favorites** 
-* **Groups** 
-* **Notifications** 
-* **Tiles** 
+* **Groups**
+* **Calendar** 
+* **To Do**
 * **Timeline** 
-* **To Do** 
+* **Tiles** 
+* **Favorites** 
+* **Notifications** 
+* **Documents** 
 
 If you want to learn more about them, please refer to their respective technical guides.
 
