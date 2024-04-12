@@ -37,6 +37,5 @@ Take advantage of them to [create tasks](todo.md), [schedule meetings](calendar.
 ![Express](pictures/interact_dashboard.png)
 
 
-
 > [!NOTE]
-> The screenshots taken for this article are from v24 of the **Web Client**.
+> The screenshots taken for this article are from v24 of the platform.
