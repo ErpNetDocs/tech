@@ -64,7 +64,7 @@ When you're finished, click **Save and reload**, and the activity will be added 
 You can also create events from the **Panel menu** of the **Calendar page**.
 When you click on the selected date and click **Panel menu** that will give you the chance to create event.
 
-![picture](pictures/Screenshot_9.png)
+![picture](pictures/Screenshot_10.png)
  
 ## Access an event
 
