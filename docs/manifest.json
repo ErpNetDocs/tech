@@ -14789,7 +14789,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/common.html",
-          "hash": "z2XGPRbDSUIi/QtJLq73nQ=="
+          "hash": "yxjbL/3hZ/xu/QPWTCSgXQ=="
         }
       },
       "is_incremental": false,
@@ -14801,7 +14801,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/index.html",
-          "hash": "iAA+w6wWvVUwPk0h2FF35Q=="
+          "hash": "a23ysgI1LbTwh3GGwxpCfw=="
         }
       },
       "is_incremental": false,
@@ -14813,7 +14813,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/marketing.html",
-          "hash": "Jf8PDPlqreAFpmZrJMiJ1A=="
+          "hash": "fKcsi6hWRrospLlLPn3yLw=="
         }
       },
       "is_incremental": false,
@@ -15067,7 +15067,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/presales.html",
-          "hash": "PUFRxvk/uaSj885GKs+xAg=="
+          "hash": "fDqCYzKeukH5ZFD0cawkeQ=="
         }
       },
       "is_incremental": false,
@@ -15079,7 +15079,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/crm/sales.html",
-          "hash": "gptNitXLE9c1+0hfOy8RoA=="
+          "hash": "cNxdwV879K3wtFnmabdWAA=="
         }
       },
       "is_incremental": false,
@@ -15091,7 +15091,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/general/contacts.html",
-          "hash": "1dk5caU/DutWyx9DTxwZ0Q=="
+          "hash": "eQAHOVfHE2v0t68VSY88UA=="
         }
       },
       "is_incremental": false,
@@ -15103,7 +15103,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/general/index.html",
-          "hash": "f0PFTC1ehL2TbDXC+v3XjA=="
+          "hash": "30yoEK2k5uAsvKOxcwgBMQ=="
         }
       },
       "is_incremental": false,
@@ -15236,7 +15236,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/general/products.html",
-          "hash": "+ydNGgj7fE0oAcJDowzKXQ=="
+          "hash": "MUMrSDsYJMVpDk0cSjaV+A=="
         }
       },
       "is_incremental": false,
@@ -15248,7 +15248,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/index.html",
-          "hash": "tcO+h2F5SWUtFm/vANbK7g=="
+          "hash": "IeWu7RS+eQuEFb4N1/7l8A=="
         }
       },
       "is_incremental": false,
@@ -15260,7 +15260,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/calendar.html",
-          "hash": "djH7z7zTUfkcRPpXsJ/CqA=="
+          "hash": "Qg4HQ/sCnAqJK5JHWiGUuw=="
         }
       },
       "is_incremental": false,
@@ -15272,7 +15272,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/dashboard.html",
-          "hash": "MiiCmrj9rtYJ+4pSE6FX9A=="
+          "hash": "ODuqeCJtHl+kJqLTYvtFZQ=="
         }
       },
       "is_incremental": false,
@@ -15284,7 +15284,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/favorites.html",
-          "hash": "n/QnTqfSS5rKoX7FYgx3rQ=="
+          "hash": "5MMC1Htr/Rzu0vj33t9BLw=="
         }
       },
       "is_incremental": false,
@@ -15296,7 +15296,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/groups.html",
-          "hash": "0IoIepmmC9DBvJ+ZAcZRkw=="
+          "hash": "DPdxF3a1jyD0R+xLjUkHyg=="
         }
       },
       "is_incremental": false,
@@ -15308,7 +15308,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/index.html",
-          "hash": "6VbU6oFfO66qoHwD7UlM2A=="
+          "hash": "+SM19fGuZizNoN+skhTCRg=="
         }
       },
       "is_incremental": false,
@@ -15749,7 +15749,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/tiles.html",
-          "hash": "pReUKSQEbmkvHY5Vv5DJ9g=="
+          "hash": "24zeLpMfxr3NE52+29nO7w=="
         }
       },
       "is_incremental": false,
@@ -15761,7 +15761,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/express/my/todo.html",
-          "hash": "xLjz8m6FPTFzgBtO/zjZTg=="
+          "hash": "gS7MxL3y8xj4ZXA3d45xMw=="
         }
       },
       "is_incremental": false,
@@ -22659,11 +22659,166 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/my/calendar.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/calendar.html",
+          "hash": "E5yG+Eg0DgMxrNGPPR5WzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/my/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/my/index.html",
-          "hash": "XzLzIqpBDfUnGKfwGSIREQ=="
+          "hash": "FV1wYY7IxjE74UzipZp5Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/MyModule.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/MyModule.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/MyOverview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/MyOverview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/My_Module.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/My_Module.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/Screenshot_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/Screenshot_9.png"
         }
       },
       "is_incremental": false,
@@ -22699,7 +22854,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "VNpQU+ZNO90OmzRvY38sWQ=="
+          "hash": "OD2T2Nc4lO6zNr39TGLEBA=="
         }
       },
       "is_incremental": false,
