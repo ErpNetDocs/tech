@@ -6,14 +6,14 @@
 
 In the My menu, you can find applications like:
 
-•	**Calendar** 
-•	**Dashboard** 
-•	**Documents** 
-•	**Favorites** 
-•	**Groups** 
-•	**Notifications** 
-•	**Tiles** 
-•	**Timeline** 
-•	**To Do** 
+* **Calendar** 
+* **Dashboard** 
+* **Documents** 
+* **Favorites** 
+* **Groups** 
+* **Notifications** 
+* **Tiles** 
+* **Timeline** 
+* **To Do** 
 
 If you want to learn more about them, please refer to their respective technical guides.
