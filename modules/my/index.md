@@ -1,10 +1,12 @@
 # Overview
 
-**My** is your personalized environment housing all the relevant information essential for your daily routines.
+The **My** module is a personalized environment housing information that is essential to your day-to-day activities.
+
+It consists of independent, interactive applications, some of which can be integrated as panels in other modules. 
 
 ![pictures](pictures/MyOverview.png)
 
-In the My menu, you can find applications like:
+In the **My** module, you can find standalone applications like:
 
 * **Calendar** 
 * **Dashboard** 
