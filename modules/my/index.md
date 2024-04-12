@@ -4,7 +4,7 @@ The **My** module is a personalized environment housing information that is esse
 
 It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.
 
-![pictures](pictures/MyOverview.png)
+![pictures](pictures/MyModule.png)
 
 In the **My** module, you can find the following applications:
 
