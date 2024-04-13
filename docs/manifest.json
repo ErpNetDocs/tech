@@ -11945,6 +11945,149 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/MyModule.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/MyModule.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/MyOverview.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/MyOverview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/My_Module.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/My_Module.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/pictures/Screenshot_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/pictures/Screenshot_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "includes/erpnet.md",
       "output": {
