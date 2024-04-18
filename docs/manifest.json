@@ -3135,6 +3135,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/logo_old.svg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/logo_old.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/applications/mssync/pictures/Home_UTC_01_03.png",
       "output": {
         "resource": {
