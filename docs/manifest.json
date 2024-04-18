@@ -12303,6 +12303,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "logo_old.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo_old.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/applications/data-warehouse/index.md",
       "output": {
