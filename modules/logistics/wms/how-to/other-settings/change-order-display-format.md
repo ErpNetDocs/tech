@@ -24,6 +24,13 @@ Based on what you provide for **Key Value**, different information will be displ
 
 ![picture](pictures/Order_Warehouse_13_02.png)
 
+The same information is now available not only in the list of Work orders, but also inside the Warehouse Order.
+
+For example, in order to keep the worker informed about Who the client is (ToParty), Time for execution (@TFEX: V, which is a custom property value) and any important Notes (DocumentNotes), chain these fields into the string and the information will be on top row.
+
+The key value: Customer: {ToParty}, Time for execution: {@TFEX: V}, Important: {DocumentNotes}
+
+
 ### Behaviour in particular cases 
 
 Here is the expected behavior of changing the order display format in certain cases:
