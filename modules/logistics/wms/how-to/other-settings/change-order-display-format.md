@@ -24,11 +24,11 @@ Based on what you provide for **Key Value**, different information will be displ
 
 ![picture](pictures/Order_Warehouse_13_02.png)
 
-### Behavior in particular cases 
+### Behaviour in particular cases 
 
 Here is the expected behavior of changing the order display format in certain cases:
 
-•	If there is **no** config key set, the information displayed will be retrieved from the **To Party** field. This is the default behavior.
+•	If there is **no** config key set, the information displayed will be retrieved from the **To Party** field. This is the default behaviour.
 
 •	If there is a key set, but the **Key Value** field is left blank, the displayed information will also be retrieved from **To Party** field.
 
