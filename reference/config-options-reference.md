@@ -293,8 +293,8 @@ Morning=10:00;Lunch=12:30;Afternoon=15:00;Dinner=19:00
 - c.The key is introduced in version: - 23.2
 
 ## 55. /WMS/WMS-Worker/OrderDisplayFormat
-- a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the first row in the WO list Order information.
-  Depending on the entered key value - in the orders list, you can see the data you need from the current Warehouse order header.
+- a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the first row with Order information in the WO list and inside the WO.
+  Depending on the entered key value - in the orders list and inside the WO, you can see the data you need from the current Warehouse order header.
   The value is entered as an interpolated string. You can use also format specifiers. <br>
   For example "My info - {@Property1: VD} ; my store: {Warehouse}" will be displayed as "My info - 01:yes ; my store: Warehouse1"
 - b.If the key is not defined, the WMS Worker will display the default information, which is coming from To Party field in the WO header.
