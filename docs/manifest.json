@@ -21049,19 +21049,22 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/change-order-display-format.html",
-          "hash": "RN3oKy9yUrv7mKYCJdGLQg=="
+          "hash": "vcd96F48o2HVXqjnXI5o5g=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/other-settings/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/index.html",
-          "hash": "Yom5i+muYWTFhu+MTdGaVQ=="
+          "hash": "7c9HAh32CJ2/TTvIVlgtSw=="
         }
       },
       "is_incremental": false,
@@ -21150,6 +21153,28 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/Order_information_09_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/string_WO.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/string_WO.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/string_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/string_list.png"
         }
       },
       "is_incremental": false,
@@ -23031,7 +23056,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/config-options-reference.html",
-          "hash": "9h41VixVu0Yzl1S9H3hRrA=="
+          "hash": "doDsZpK6ZxnwwV503XdIcQ=="
         }
       },
       "is_incremental": false,

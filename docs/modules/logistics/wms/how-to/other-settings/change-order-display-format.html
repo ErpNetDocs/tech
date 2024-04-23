@@ -91,9 +91,15 @@
 <p><img src="pictures/Config_key_value_13_02.png" alt="picture"></p>
 <p>Based on what you provide for <strong>Key Value</strong>, different information will be displayed on the first line of all of your orders in the <strong>WMS Worker</strong>.</p>
 <p><img src="pictures/Order_Warehouse_13_02.png" alt="picture"></p>
-<h3 id="behavior-in-particular-cases">Behavior in particular cases</h3>
+<p>For example, in order to keep the worker informed about Who the client is (ToParty), Time for execution (@TFEX: V, which is a custom property value) and any important Notes (DocumentNotes), chain these fields into the string and the information will be on top row.</p>
+<p><b> Key Value: Customer: {ToParty}, Time for execution: {@TFEX: V}, Important: {DocumentNotes}</b></p>
+<p><img src="pictures/string_list.png" alt="picture"></p>
+<p><br><br>
+The same information is now available not only in the list of Work orders, but also inside the Warehouse Order.</p>
+<p><img src="pictures/string_WO.png" alt="picture"></p>
+<h3 id="behaviour-in-particular-cases">Behaviour in particular cases</h3>
 <p>Here is the expected behavior of changing the order display format in certain cases:</p>
-<p>•	If there is <strong>no</strong> config key set, the information displayed will be retrieved from the <strong>To Party</strong> field. This is the default behavior.</p>
+<p>•	If there is <strong>no</strong> config key set, the information displayed will be retrieved from the <strong>To Party</strong> field. This is the default behaviour.</p>
 <p>•	If there is a key set, but the <strong>Key Value</strong> field is left blank, the displayed information will also be retrieved from <strong>To Party</strong> field.</p>
 <p>•	If there is a config key set, but the assigned parameters are <strong>not</strong> returning any value, the displayed information is going to be “-“.</p>
 </article>
