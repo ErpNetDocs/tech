@@ -40,6 +40,8 @@
   href: gt.md   
 - name: GTE
   href: gte.md 
+- name: IFERROR
+  href: iferror.md 
 - name: IIF
   href: iif.md   
 - name: IN
