@@ -10362,6 +10362,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/string_WO.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/string_WO.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/string_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/other-settings/pictures/string_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/Assign_worker_1.png",
       "output": {
         "resource": {
@@ -21056,15 +21078,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/how-to/other-settings/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/index.html",
-          "hash": "7c9HAh32CJ2/TTvIVlgtSw=="
+          "hash": "2ibcXAmhkUuCWC660xPOLQ=="
         }
       },
       "is_incremental": false,
