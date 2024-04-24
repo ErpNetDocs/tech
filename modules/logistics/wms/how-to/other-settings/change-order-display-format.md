@@ -25,14 +25,14 @@ Based on what you provide for **Key Value**, different information will be displ
 ![picture](pictures/Order_Warehouse_13_02.png)
 
 
-For example, in order to keep the worker informed about Who the client is (ToParty), Time for execution (@TFEX: V, which is a custom property value) and any important Notes (DocumentNotes), chain these fields into the string and the information will be on top row.
+For example, in order to keep the worker informed about who the client is (ToParty), Time for execution (@TFEX: V, which is a custom property value) and any important Notes (DocumentNotes), chain these fields into the string and the information will be on top row.
 
 <B> Key Value: Customer: {ToParty}, Time for execution: {@TFEX: V}, Important: {DocumentNotes}</B>
 
 ![picture](pictures/string_list.png)
 
 <br><br>
-The same information is now available not only in the list of Work orders, but also inside the Warehouse Order.
+The same information is now available not only in the list of orders, but also inside the Warehouse order.
 
 ![picture](pictures/string_WO.png)
 
