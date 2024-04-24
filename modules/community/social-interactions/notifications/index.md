@@ -59,6 +59,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_LEAD_ASSIGNMENT | Lead | **[R35980](https://docs.erp.net/model/business-rules/R35980.html) Lead** - Notify Assigned To Sales Person Upon Assignment | Notify the assigned sales person's user when the Lead has been assigned to them.
 | NT_LEAD_UPDATE_ASSIGN | Lead | **[R35958](https://docs.erp.net/model/business-rules/R35958.html) Lead** - Notify Assigned To Sales Person For Update | Notify the assigned sales person's user when the Lead is edited.
 | NT_ACTPARTICIPANTS_ASSIGN | Activity | **[R36471](https://docs.erp.net/model/business-rules/R36471.html) Activity** - Notify Activity Participants Upon Assignment | Notify users when they are assigned as participants in the Activity.
+| NT_COMPILATION | Compilation | **[R36563](https://docs.erp.net/model/business-rules/R36563.html) Compilation** - Notify On Completion | the user who initiated the compilation when the compilation is finished.
 
 ## I don't care about notifications
 
