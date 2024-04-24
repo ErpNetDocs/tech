@@ -127,6 +127,9 @@ references:
 - uid: cao-GTE
   name: GTE
   href: advanced/calculated-attributes/operators/gte.html
+- uid: cao-IFERROR
+  name: IFERROR
+  href: advanced/calculated-attributes/operators/iferror.html
 - uid: cao-IIF
   name: IIF
   href: advanced/calculated-attributes/operators/iif.html

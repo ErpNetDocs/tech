@@ -189,6 +189,11 @@
     "title": "GTE | ERP.net Tech Docs",
     "keywords": "GTE Specification Value Description Checks if an attribute value is greater than or equal to another attribute's value (or a constant). Parameter 1 Name attribute1 Parameter 1 Type numeric (int, double, decimal) or datetime type Parameter 2 Name attribute2 Parameter 2 Type numeric (int, double, decimal) or datetime type Parameter 3 Name - Parameter 3 Type - Return value If attribute1 >= attribute2, the returned value is 'True', if else - 'False'. Make sure the compared attributes are from the same type. For example, Parameter 1 and Parameter 2 must be both integers, or doubles, or decimals, or datetime. Example: 10: GT ATTRIB:LineNo CONST:30 OUTPUT: If 'LineNo = 40', the output will be 'True'. If 'LineNo = 30', the output will be 'True'. If 'LineNo = 20', the output will be 'False'. Note The repository of the attribute is Crm.Sales.SalesOrderLines"
   },
+  "advanced/calculated-attributes/operators/iferror.html": {
+    "href": "advanced/calculated-attributes/operators/iferror.html",
+    "title": "IFERROR | ERP.net Tech Docs",
+    "keywords": "IFERROR Specification Value Name IFERROR Description Evaluates an expression and returns a specified value if the expression returns an error. Otherwise returns the value of the expression itself. Parameter 1 Name Value Parameter 1 Type any type Parameter 2 Name ValueIfError Parameter 2 Type any type Parameter 3 Name Parameter 3 Type Return value When the expression returns a value other than error, then the value of the Parameter 1 is returned. When the expression evaluates to an error, then the value of the Parameter 2 is returned. Example: 10: IFERROR EXP:20 CONST:'Error in calculation' 20: DIVIDE CONST:2.00 ATTRIB:QuantityValue OUTPUT: If 'QuantityValue = 1.00', the output will be 2. If 'QuantityValue = 0.00', the output will be 'Error in calculation'. Note The repository of the attribute is Crm.Sales.SalesOrderLines"
+  },
   "advanced/calculated-attributes/operators/iif.html": {
     "href": "advanced/calculated-attributes/operators/iif.html",
     "title": "IIF | ERP.net Tech Docs",
@@ -207,7 +212,7 @@
   "advanced/calculated-attributes/operators/index.html": {
     "href": "advanced/calculated-attributes/operators/index.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DATESPAN DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
+    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DATESPAN DIVIDE EQUAL FILTER FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IFERROR IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "advanced/calculated-attributes/operators/interpolate.html": {
     "href": "advanced/calculated-attributes/operators/interpolate.html",
