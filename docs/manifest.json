@@ -11991,6 +11991,314 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_Create_activity_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_Create_activity_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_Save_and_reload_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_Save_and_reload_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_activity_creation_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_activity_creation_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_change_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Calendar_change_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Chat_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Chat_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Create_finish_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Create_finish_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Create_icon_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Create_icon_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Create_suggestions_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Create_suggestions_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Create_tab_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Create_tab_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_suggestions_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_suggestions_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_window_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_add_window_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_change_role_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_change_role_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_create_finish_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_create_finish_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_remove_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_remove_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_remove_settings_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_remove_settings_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_settings_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_settings_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_Members_view_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_Members_view_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_files_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_files_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_files_settings_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_files_settings_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_files_upload_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_files_upload_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_files_upload_window_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_files_upload_window_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_task_complete_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_task_complete_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_task_create_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_task_create_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_task_creation_finish_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_task_creation_finish_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_task_reminders_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_task_reminders_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/my/groups/pictures/Groups_task_view_01_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/my/groups/pictures/Groups_task_view_01_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/my/pictures/MyModule.png",
       "output": {
         "resource": {
