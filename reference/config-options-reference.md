@@ -311,3 +311,8 @@ When the key is not defined or has no value, the retention period is set to 36 m
 If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job is configured and active - the old history data for attribute changes, whose retention period is expired, will be deleted.
 - c.The user sets it manually.
 - d.The key is introduced in version: - 24
+
+- ## 58. /Acc/DisableAccountFilterLimit
+- a.Action: When the key is not defined or has value and this value is "0", data loading is not allowed in Chronological Statement Navigator if a filter is applied for more than 10 accounts or no accounts. An error message will be displayed.
+  When the key has value "1" the warning message will be displayed and then data will be loaded.
+- b.The user sets it manually
