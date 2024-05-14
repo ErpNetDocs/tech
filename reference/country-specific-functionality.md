@@ -81,7 +81,7 @@ This article contains information about the correlation between the system deal 
 | Column25_Data | Base Amount Third Party Operation               | Данъчна основа от посредник в тристранна операция            | Доставки като посредник при тристранна операция              | Base Amount | -                        |
 | Column25_Data | Base Amount Third Party Operation               | Данъчна основа от посредник в тристранна операция            | Доставки като посредник при тристранна операция (авансови плащания) | Base Amount | -                        |
 
-
+The "Нулеви сделки" Deal Type fills in the data in columns 1 through 8. They are used in combination with "Внос по чл. 167а от ЗДДС".
 
 **Purchases ledger**
 
@@ -100,3 +100,5 @@ This article contains information about the correlation between the system deal 
 | Column13_Data | VAT Amount With Partial Tax Credit        | ДДС с право на частичен данъчен кредит            | Сделки, внос и ВОП с право на частичен данъчен кредит | VAT Amount  | -                        |
 | Column14_Data | Annual Correction                         | Годишна корекция                                  | Годишна корекция                                      | VAT Amount  | -                        |
 | Column15_Data | Base Amount Third Party Operation         | Данъчна основа от посредник в тристранна операция | Придобиване от посредник в тристранна операция        | Base Amount | -                        |
+
+The "Нулеви сделки" Deal Type fills in the data in columns 1 through 8. They are used in combination with "Внос по чл. 167а от ЗДДС".
