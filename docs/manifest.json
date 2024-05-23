@@ -22102,6 +22102,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/logistic-units/pictures/logistic-label.png",
       "output": {
         "resource": {
@@ -22194,7 +22238,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/working-with-lu.html",
-          "hash": "/T5QUCZRpcO3JUE4OAQH9g=="
+          "hash": "SavpreV4RVqAkYIfBiI9LA=="
         }
       },
       "is_incremental": false,
@@ -22346,7 +22390,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/index.html",
-          "hash": "EruDYjIYr4Y1YJLWieI1Ug=="
+          "hash": "XGUXFFmlLp8RR1mOIMqWdw=="
         }
       },
       "is_incremental": false,
