@@ -53,6 +53,9 @@ The lines contain information about the requested product and its quantity.
 -	<b>Total</b> - shows what quantity of the product needs to be procured.
 -	<b>Remain</b> - shows what quantity of the product have already been executed. The remaining quantity that needs to be to be procured is the difference between Total and Remain.
 -	<b>Еxec</b> - a check mark that shows if the line is fully executed on not.
+-	<b>Standard Quantity </b> - a consistent reference for products with variable units.
+-	<b>Total base Quantity </b> - determined by the number of sets multiplicated by the number of pieces in each set.
+
 
 More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the <b>Info button</b>.
 If the line already has an execution, the Info screen contains more details about it as well.
