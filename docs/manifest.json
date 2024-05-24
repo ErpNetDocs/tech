@@ -10891,6 +10891,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/logistic-units/pictures/logistic-label.png",
       "output": {
         "resource": {
