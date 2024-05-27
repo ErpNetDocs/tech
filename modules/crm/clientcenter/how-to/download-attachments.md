@@ -12,7 +12,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 
 ## Step-by-step process
 
-1.	Click on the **Invoices** button in the **Client Center** menu.
+1.	Navigate to the **Invoices** portion of the **Client Center** menu.
 	
 2.	Open an invoice with attachments by clicking on its respective **button**.
      
@@ -21,7 +21,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 > [!WARNING]
 > File attachments whose Access Permission field is not set to **Internal users+external users** will not appear in the Files section. <br> If none of the invoice’s attachments have this setting configured, the Files section will not appear at all.
 
-3. Click on a desired file once to immediately download and save it on your device.
+3. **Click** on a desired file once to immediately download and save it on your device.
 
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the platform.
