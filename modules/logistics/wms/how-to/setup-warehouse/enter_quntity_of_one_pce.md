@@ -4,13 +4,15 @@ uid: enter_quntity_of_one_pce
 
 # Enter quantity of one pce
 
-You can decide what the behavior is when entering a barcode.
-When scanning a barcode - you can directly enter 1 pce without going through the quantity screen. 
-Or when scanning a barcode - just find the row for that product and enter the quantity in the quantity screen.
+You can configure the behavior when scanning a barcode in the WMS-Worker app. 
 
-This setting is accessible by entering a [Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html) - /WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce
+The settings determine whether scanning a barcode automatically enters a quantity of one piece or simply locates the product row and allows for manual quantity entry.
 
-- When the value of the config is "1", then scanning of a single barcode is accepted as 1 PCE <br>
-- When the value of the config is "0", then the WMS-Worker APP just finds the line and goes to execute mode for this line. 
+To adjust this setting, use the following [config options reference](https://docs.erp.net/tech/reference/config-options-reference.html) :
+
+`/WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce`.
+
+- When the value of this configuration is set to "1", scanning a barcode directly enters a quantity of one piece.
+- When the value is set to "0", the WMS-Worker app locates the product row and switches to execute mode for that line, allowing for manual quantity entry.
 
 ![pictures](pictures/Logistic_enter_quntity_of_one_pce_27_05.png)
