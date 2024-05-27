@@ -13,6 +13,7 @@ For example, if the last LUN bears the code <b>012A01</b>, and we initiate the c
 ![Pictures](Pictures/UI_multiple_LUNs_2.png)
 
 The new last LUN will be <b>012A11</b>.
+
 ![Pictures](Pictures/UI_multiple_LUNs_3.png)
 
 Having the new LUNs at hand you can print labels and stick them to the designated items.
