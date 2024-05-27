@@ -18,13 +18,13 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 
    ![picture](pictures/step_1.png)
 	
-3.	Open an invoice with attachments by clicking on its respective **button**.
+2.	Open an invoice with attachments by clicking on its respective **button**.
 
-   ![picture](pictures/step 2.png)
+   ![picture](pictures/step_2.png)
      
     The invoice’s attachments will appear in a dedicated **Files** section. You can see their names, file extensions, and size.
 
-	![picture](pictures/step 3.png)
+	![picture](pictures/step_3.png)
 
 > [!WARNING]
 > File attachments whose **Access Permission** field is not set to **Internal users + external users** will not appear in the Files section. <br> If none of the invoice’s attachments have this setting configured, the Files section will not appear at all.
