@@ -8,3 +8,5 @@
   href: apply-platform-settings.md
 - name: Create new order
   href: create-new-order.md
+- name: Download attachments from an invoice
+  href: download-attachments.md
