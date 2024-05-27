@@ -27,7 +27,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 	![picture](pictures/step_3.png)
 
 3. **Click** on a desired file once to immediately download and save it on your device.
-
+<br>
 > [!WARNING]
 > File attachments whose **Access Permission** field is not set to **Internal users + external users** will not appear in the Files section. <br><br> If none of the invoice’s attachments have this setting configured, the Files section will not appear at all.
 
