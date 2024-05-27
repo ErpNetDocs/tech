@@ -19,7 +19,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
     The invoice’s attachments will appear in the Files section. You can see their names, file extensions, and size.
 
 > [!WARNING]
-> File attachments whose Access Permission field is not set to **Internal users+external users** will not appear in the Files section. <br> If none of the invoice’s attachments have this setting configured, the Files section will not appear at ![image](https://github.com/ErpNetDocs/tech/assets/75483217/0e92fc3b-8473-4fd0-8dd1-990d8bd355c1)
+> File attachments whose Access Permission field is not set to **Internal users+external users** will not appear in the Files section. <br> If none of the invoice’s attachments have this setting configured, the Files section will not appear at all.
 
 3. Click on a desired file once to immediately download and save it on your device.
 
