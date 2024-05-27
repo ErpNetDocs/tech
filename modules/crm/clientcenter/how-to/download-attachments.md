@@ -8,7 +8,7 @@ To be able to view and download file attachments from an invoice in the Client C
 
 Simply navigate to the respective invoice, expand the **Files** panel, open its **Details** and set the value of the **Access Permissions** field to **Internal users + external users**.
 
-![picture](pictures/access_permission.png)
+![picture](pictures/accesss_permission.png)
 
 This must be applied for **every** invoice attachment you wish to see and download from within your Client Center website.
 
