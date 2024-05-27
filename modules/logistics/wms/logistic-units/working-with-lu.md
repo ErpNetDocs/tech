@@ -30,7 +30,7 @@ If you do, you can assing your own SSCC code. In this case you need to pack the 
 Alternatively, you use the SSCC code that has been assigned by the supplier. In this case you need to manually create the LU definition into the database, where you need to specify both its SSCC and Contents. Then you still have to Pack its content by using the Pack menu in WMS Worker by selecting the defined LU. This will update the availability with the information that these product are now contained in this LU.
 
 ## Using Logistics Units in the Dispatching Process
-Here we have two situations depending on whether you are dispatching an existing LUs or you want to create LUs to pack the dispathed content of an Sales Order.
+Here we have two situations depending on whether you are dispatching an existing LUs or you want to create LUs to pack the dispatched content of an Sales Order.
 
 #### Dispatching existing LU
 То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
