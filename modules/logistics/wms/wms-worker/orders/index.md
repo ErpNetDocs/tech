@@ -30,8 +30,8 @@ The details on the screen include:
 -	<b>Creation Time</b> - the time and date of creation of the order;
 -	<b>Lines Count</b> - the rows number in the order table;
 -	<b>Total Qty</b> - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit.
--	<b>Standard Quantity </b> - a consistent reference for products with variable units.
--	<b>Total base Quantity </b> - determined by the number of sets multiplicated by the number of pieces in each set.
+-	<b>Standard Quantity </b> - a consistent reference measure used for products that come in variable units or packaging, providing a baseline for inventory management and transactions.
+-	<b>Total base Quantity </b> - the overall quantity of individual items, calculated by multiplying the number of sets by the number of pieces per set.
 
 Click the <b>Open</b> button to open the order.
 
