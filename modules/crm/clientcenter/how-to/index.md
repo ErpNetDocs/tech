@@ -10,5 +10,5 @@ Here, you can find step-by-step guides that help you better understand processes
 
 * **[Create new order](create-new-order.md)**
 
-* **[Download attached files from an Invoice](download-attachments.md)**
+* **[Download attached files from an invoice](download-attachments.md)**
     
