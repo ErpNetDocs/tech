@@ -16,13 +16,13 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 
 1.	Navigate to the **Invoices** portion of the **Client Center** menu.
 
-   ![picture](pictures/step_1.png)
+  	![picture](pictures/step_1.png)
 	
-2.	Open an invoice with attachments by clicking on its respective **button**.
+3.	Open an invoice with attachments by clicking on its respective **button**.
 
-   ![picture](pictures/step_2.png)
-     
-    The invoice’s attachments will appear in a dedicated **Files** section. You can see their names, file extensions, and size.
+  	![picture](pictures/step_2.png)
+
+  	The invoice’s attachments will appear in a dedicated **Files** section. You can see their names, file extensions, and size.
 
 	![picture](pictures/step_3.png)
 
