@@ -9,4 +9,6 @@ Here, you can find step-by-step guides that help you better understand processes
 * **[Apply platform settings](apply-platform-settings.md)**
 
 * **[Create new order](create-new-order.md)**
+
+* **[Download attached files from an Invoice](download-attachments.md)**
     
