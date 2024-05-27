@@ -18,7 +18,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 
   	![picture](pictures/step_1.png)
 	
-3.	Open an invoice with attachments by clicking on its respective **button**.
+2.	Open an invoice with attachments by clicking on its respective **button**.
 
   	![picture](pictures/step_2.png)
 
