@@ -14,7 +14,7 @@ This must be applied for **every** invoice attachment you wish to see and downlo
 
 ## Step-by-step process
 
-1.	Navigate to the **Invoices** portion of the **Client Center** menu.
+1.	Navigate to the **Invoices** panel of the **Client Center** menu.
 
   	![picture](pictures/step_1.png)
 	
