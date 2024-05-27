@@ -2,6 +2,7 @@
   href: index.md
 - name: How to
   href: how-to/toc.yml
+  topicHref: how-to/index.md
 - name: Working with Logistic Units
   href: working-with-lu.md
 - name: Logistic Labels
