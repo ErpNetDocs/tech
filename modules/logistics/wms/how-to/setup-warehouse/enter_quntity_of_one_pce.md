@@ -6,7 +6,7 @@ uid: enter_quntity_of_one_pce
 
 You can configure what happens when you enter a barcode in the WMS Worker app. 
 
-To adjust this setting, use the following **[config options reference](https://docs.erp.net/tech/reference/config-options-reference.html)**:
+To adjust this setting, use the following **[config options reference](https://docs.erp.net/tech/reference/config-options-reference.html#54-wmswms-workersinglebarcodescanentersquantityofonepce)**:
 
 `/WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce`
 
