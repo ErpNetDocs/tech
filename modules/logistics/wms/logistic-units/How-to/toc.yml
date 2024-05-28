@@ -1,6 +1,6 @@
  - name: Overview
    href: index.md 
- - name: Working with Logistic Units
+ - name: Work with LUs
    href: working-with-lu.md
  - name: Create a new LU
    href: Create_New_LU.md
