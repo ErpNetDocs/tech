@@ -1,3 +1,5 @@
+#### Work with Logistics Units 
+
 ## Using Logistics Units in the Receiving Process
 
 Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an **[Advance Shipping Notice (ASN)](asn.md)**, for example. 
