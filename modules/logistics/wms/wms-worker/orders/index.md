@@ -1,4 +1,4 @@
-![image](https://github.com/ErpNetDocs/tech/assets/75483217/cdfa73cd-0964-4d3d-8fc5-2127e3f006fa)---
+---
 uid: orders-menu
 ---
 
