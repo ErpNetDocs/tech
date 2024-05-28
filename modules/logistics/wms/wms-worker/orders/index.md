@@ -30,9 +30,8 @@ The details on the screen include:
 -	**Creation Time** - the time and date of creation of the order
 -	**Status** - the status of the order
 -	**Lines Count** - the rows number in the order table
--	**Total Qty** - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit
--	**Total Base Qty** - the overall quantity of individual items, calculated by multiplying the number of sets by the number of pieces per set
-
+-	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
+-	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
 Click **Start** to open the order.
 
