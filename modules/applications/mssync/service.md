@@ -38,5 +38,9 @@ The "Give Permissions" ensures that the MsSync app has all the necessary permiss
 
 This process is essential for activating all available features and ensuring a seamless user experience.
 
+![picture](pictures/service-give-permissions.png)
+
+--
+
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the platform.
