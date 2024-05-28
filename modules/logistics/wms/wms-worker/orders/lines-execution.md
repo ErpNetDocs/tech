@@ -64,9 +64,19 @@ This screen allows employees to select the unit and quantity of the product:
 
 ![Quantity](pictures/order-quantity.png)
 
-You can make the quick suggested action with the <b>Use</b> button or enter it manually. 
+You can take **suggested** values quickly with the help of the **arrow** button, or enter the quantity manually, including changing its **measurement unit**, if necessary.
 
-The <b>Info</b> section underneath summarizes your previous selections.
+### Standard quantity
+
+The Quantity screen includes a dedicated **standard quantity** value for products with changeable metric units. 
+
+If you modify the original quantity base, the standard one will also undergo automatic recalculation. However, you cannot modify it on its own.
+
+![Quantity](pictures/standard_quantity.png)
+
+## Info
+
+This section summarizes your previous selections.
 
 ## Destination
 
