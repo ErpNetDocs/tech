@@ -69,10 +69,10 @@ When scanning a value in this field, a matching unexecuted line is searched thro
 > The scanned value recognition is done by **[Barcode Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html?q=barcode%20pars)** such as Product Code and GS1 - Single Product. <br>
 > The list of currently active parsers can be seen by accessing the vertical three-dot **Menu button** at the bottom of the app.
 
-At the bottom of the screen, there are buttons for managing the order.
+At the bottom of the screen, there are buttons for managing the order:
 
 - **Stop** - terminates the order 
 - **Execute** - allows for line execution; will change to **Complete Order** when all lines have been executed
-- **Menu** - allows access to several additional functions:
+- **Menu** - allows access to several additional functions like **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)** and **[Active Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html)**
 
 ![Order actions](pictures/menu_actions.png)
