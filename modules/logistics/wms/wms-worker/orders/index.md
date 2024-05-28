@@ -21,7 +21,7 @@ The **total** number of orders can be checked at the bottom of the page.
 
 Click on an order to see more information about it.
 
-![Order details](pictures/order_lines_new.png)
+![Order details](pictures/wms-worker-total-base-qty.png)
 
 The details on the screen include:
 
