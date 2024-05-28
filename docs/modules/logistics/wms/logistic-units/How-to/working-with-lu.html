@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Using Logistics Units in the Receiving Process | ERP.net Tech Docs </title>
+    <title>Work with Logistic Units | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Using Logistics Units in the Receiving Process | ERP.net Tech Docs ">
+    <meta name="title" content="Work with Logistic Units | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../../../favicon.ico">
@@ -77,8 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="using-logistics-units-in-the-receiving-process">Using Logistics Units in the Receiving Process</h2>
+<h1 id="work-with-logistic-units">Work with Logistic Units</h1>
 
+<h2 id="using-logistic-units-in-the-receiving-process">Using Logistic Units in the Receiving Process</h2>
 <p>Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an <strong><a href="asn.md">Advance Shipping Notice (ASN)</a></strong>, for example.</p>
 <p>Here is what to do depending on whether you have information about the SSCC codes and its prior the shipment or not.</p>
 <h4 id="the-lus-data-is-exchanged-prior-the-shipment-arrival">The LU’s data is exchanged prior the shipment arrival</h4>
@@ -98,7 +99,7 @@
 <p>Once, the content is received, you can decide whether you still want to handle it as a whole Logistic Unit?</p>
 <p>If you do, you can assing your own SSCC code. In this case you need to pack the content using the Pack menu in WMS Worker and choose its “Create logic unit now” button. This will automatically create new LU with the new SSCC code, the scanned contents and appropriate specifications. Then you just need to print and attach new <a href="logistic-labels.md">logistics labels</a> with the newly assigned SSCC barcode.</p>
 <p>Alternatively, you use the SSCC code that has been assigned by the supplier. In this case you need to manually create the LU definition into the database, where you need to specify both its SSCC and Contents. Then you still have to Pack its content by using the Pack menu in WMS Worker by selecting the defined LU. This will update the availability with the information that these product are now contained in this LU.</p>
-<h2 id="using-logistics-units-in-the-dispatching-process">Using Logistics Units in the Dispatching Process</h2>
+<h2 id="using-logistic-units-in-the-dispatching-process">Using Logistic Units in the Dispatching Process</h2>
 <p>Here we have two situations depending on whether you are dispatching an existing LUs or you want to create LUs to pack the dispatched content of an Sales Order.</p>
 <h4 id="dispatching-existing-lu">Dispatching existing LU</h4>
 <p>То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the <a class="xref" href="../../wms-worker/orders/index.html">Orders menu</a> of the WMS Worker app.</p>

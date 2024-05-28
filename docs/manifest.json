@@ -11034,6 +11034,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/scan-sscc-dispatch.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/scan-sscc-dispatch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/scan-sscc.png",
       "output": {
         "resource": {
@@ -22486,7 +22497,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/How-to/Create_New_LU.html",
-          "hash": "IVY5YEA+sEGLVWU6Ox5oHg=="
+          "hash": "fTBdNVGEHU5zN2mh7BMtPQ=="
         }
       },
       "is_incremental": false,
@@ -22564,7 +22575,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/How-to/create_LUNs.html",
-          "hash": "nxmFpi+d9JChJrRIYnSsFg=="
+          "hash": "pEj3+Hr0jl8x5CESVcbZDQ=="
         }
       },
       "is_incremental": false,
@@ -22576,7 +22587,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/How-to/index.html",
-          "hash": "FfCJ38R8asFjqm+Rn8GWHg=="
+          "hash": "RVgpYhT0Cf2H84Lux08GaQ=="
         }
       },
       "is_incremental": false,
@@ -22591,7 +22602,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/How-to/working-with-lu.html",
-          "hash": "/duiw3LklkuiaFDPt6FWFA=="
+          "hash": "TYZp7m4g7pFMgud5ujm8iw=="
         }
       },
       "is_incremental": false,
@@ -22607,18 +22618,6 @@
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/asn.html",
           "hash": "T+M3K+grjaIejCrh5y3MCA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/logistic-units/create_LUNs.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/logistic-units/create_LUNs.html",
-          "hash": "mBmDMb50lL0v2vDPU1rtfg=="
         }
       },
       "is_incremental": false,
@@ -22646,39 +22645,6 @@
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/logistic-labels.html",
           "hash": "AxzDB9cTD8GzVBH3dJrU3Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/UI_multiple_LUNs_3.png"
         }
       },
       "is_incremental": false,
@@ -22730,55 +22696,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc-dispatch.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-sscc.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/logistics/wms/logistic-units/pictures/scan-trade-item-info.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/logistic-units/pictures/set-up-label.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/logistic-units/working-with-lu.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/logistic-units/working-with-lu.html",
-          "hash": "i/0fJEHzy4Smp+aFUK9f3A=="
         }
       },
       "is_incremental": false,
