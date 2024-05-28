@@ -11001,6 +11001,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_create_new_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_create_new_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistical_Unit_Save_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/Logistical_Unit_Save_14_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_1.png",
       "output": {
         "resource": {
@@ -13355,12 +13388,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/mssync/pictures/service-give-permissions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/mssync/pictures/service-give-permissions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/applications/mssync/service.md",
       "output": {
         ".html": {
           "relative_path": "modules/applications/mssync/service.html",
-          "hash": "fHpyEXhYmKsLnY1xh2vc1Q=="
+          "hash": "jH7S2/pDKv7buV/NwbEHLQ=="
         }
       },
       "is_incremental": false,
