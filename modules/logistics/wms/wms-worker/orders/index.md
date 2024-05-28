@@ -1,4 +1,4 @@
----
+![image](https://github.com/ErpNetDocs/tech/assets/75483217/cdfa73cd-0964-4d3d-8fc5-2127e3f006fa)---
 uid: orders-menu
 ---
 
@@ -10,8 +10,8 @@ This menu provides information on upcoming warehouse orders.
 
 The order navigator is divided in two categories:
 
--	<b>ASSIGNED TO ME</b> - the warehouse worker who is logged into their own account can check the orders they have for execution.
--	<b>UNASSIGNED</b> - orders that are not assigned to a specific worker and should be executed by someone who can take them.
+-	**ASSIGNED TO ME** - the warehouse worker who is logged into their own account can check the orders they have for execution.
+-	**UNASSIGNED** - orders that are not assigned to a specific worker and should be executed by someone who can take them.
 
 Above the list is a search bar that can be used to filter orders. In it, you can search by scanning or entering an order number, party name (if any) or the document type.
 
@@ -39,32 +39,43 @@ Click **Start** to open the order.
 
 A summary of the order lines shows up:
 
-![Open order](pictures/open-order1.png)
+![Open order](pictures/order_lines_new.png)
 
 The screen has three tabs:
 
--	<b>All</b> - shows all lines in the order regardless of whether they have been executed or not
--	<b>Remaining</b> - shows rows that have not yet been executed
--	<b>Executed</b> - shows the rows that have already been executed
+-	**All** - shows all lines in the order regardless of whether they have been executed or not
+-	**Remaining** - shows rows that have not yet been executed
+-	**Executed** - shows the rows that have already been executed
 
 The lines contain information about the requested product and its quantity.
 
--	<b>Task</b> - shows the main task;
--	<b>Loc</b> - stands for Location of the Product.
--	<b>Prd</b> - stands for Product.
--	<b>Total</b> - shows what quantity of the product needs to be procured.
--	<b>Remain</b> - shows what quantity of the product have already been executed. The remaining quantity that needs to be to be procured is the difference between Total and Remain.
--	<b>Еxec</b> - a check mark that shows if the line is fully executed on not.
+-	**Task** - shows the main task
+-	**Loc** - location of the product
+-	**Prd** - shows the product itself
+-	**Total** - shows what quantity of the product needs to be procured
+-	**Remain** - shows what quantity of the product has already been executed; the remaining quantity that needs to be to be procured is the difference between Total and Remain.
+-	**Еxec** - a check mark that shows if the line is fully executed on not
 
-More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the <b>Info button</b>.
+More details about each line e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the product's **info button**.
+
 If the line already has an execution, the Info screen contains more details about it as well.
 
 ![Info button](pictures/info-button.png)
 
-At the top of the screen there is a general <b>Scan field</b>. When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. The scanned value recognition is done by [Barcode Parsers](xref:parsers) (e.g. Product Code parcer, GS1-128 Single Product parcer). The list of currently enabled parsers can be seen in the question mark button.
+At the top of the screen there is a general **Scan field**. 
+
+When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. 
+
+The scanned value recognition is done by [Barcode Parsers](xref:parsers) (e.g. Product Code parcer, GS1-128 Single Product parcer). 
+
+The list of currently enabled parsers can be seen in the question mark button.
 
 ![Scan field](pictures/scan-field1.png)
 
-At the bottom of the screen, there are buttons that help complete the order. On the left side is the button to terminate the order (<b>Stop</b>), on the right is the button that indicates that the employee is ready to start the execution of the order (<b>Execute</b>), and in the middle there is a <b>Menu button</b> that allows access to all functions:
+At the bottom of the screen, there are buttons that help complete the order. 
+
+- **Stop** - terminates the order 
+- **Execute** - indicates that the employee is ready to start the execution of the order
+- **Menu** - allows access to all functions:
 
 ![Order actions](pictures/order-actions.png)
