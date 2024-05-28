@@ -7,7 +7,7 @@ Here is what to do depending on whether you have information about the SSCC code
 #### The LU’s data is exchanged prior the shipment arrival
 In these cases it is highly advisable to create their definitions into the database before the arrival of the units. This will allow receiving the unit with a single scan of its SSCC code. The worker needs to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
 
-![Scan SSCC barcode](pictures/scan-sscc.png)
+![Scan SSCC barcode](Pictures/scan-sscc.png)
 
 The [P03: GS1 – SSCC barcode parser](/modules/logistics/wms/how-it-works/barcode-parsers/p03.md) will automatically find the appropriate Warehouse Order Lines and will automatically execute them with the logistic unit’s Contents.
 
@@ -15,7 +15,7 @@ The [P03: GS1 – SSCC barcode parser](/modules/logistics/wms/how-it-works/barco
 - **If the shipping label contains trade item information**
 <br/>If the LU is homogeneous, then its Shipping Label probably contains trade item information about the product, lot, etc.. This means then you can still receive the LU contents by simply scanning the trade information label.
 
-![Scan Trade Item Info barcode](pictures/scan-trade-item-info.png)
+![Scan Trade Item Info barcode](Pictures/scan-trade-item-info.png)
 
    - **If the shipping label DOES NOT contain trade item information**
 <br/>In these cases you need to inspect the LU content in order to know what it actually is. Once you know its content, you can receive it by executing the Order lines for each product.
@@ -32,7 +32,7 @@ Here we have two situations depending on whether you are dispatching an existing
 #### Dispatching existing LU
 То dispatch an existing LU you need to simply scan the SSCC barcode into the Scan field of the [Orders menu](xref:orders-menu) of the WMS Worker app. 
 
-![Scan SSCC barcode](pictures/scan-sscc-dispatch.png)
+![Scan SSCC barcode](Pictures/scan-sscc-dispatch.png)
 
 The [P03: GS1 – SSCC barcode parser](/modules/logistics/wms/how-it-works/barcode-parsers/p03.md) will automatically execute the appropriate Warehouse Order lines with the logistic unit’s Contents.
 
