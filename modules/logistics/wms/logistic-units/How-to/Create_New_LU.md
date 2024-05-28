@@ -1,4 +1,4 @@
-## Create a new logistic unit 
+## Create a new LU 
 
 To create a new logistic unit, click on the circular **"+"** button located on the **Logistic Units** panel or select one of the **[logistic unit types](logistic-unit-types.md)** under the **Create** button.
 
