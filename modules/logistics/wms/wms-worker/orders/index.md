@@ -76,4 +76,4 @@ At the bottom of the screen, there are buttons that help complete the order.
 - **Execute** - indicates that the employee is ready to start the execution of the order
 - **Menu** - allows access to all functions:
 
-![Order actions](pictures/menu-actions.png)
+![Order actions](pictures/menu_actions.png)
