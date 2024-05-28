@@ -22497,7 +22497,40 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/logistic-units/How-to/Create_New_LU.html",
-          "hash": "fTBdNVGEHU5zN2mh7BMtPQ=="
+          "hash": "1+GuFf0JK/jx6OrBbtu5xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_Create_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_Create_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_create_new_19_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistic_Units_create_new_19_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistical_Unit_Save_14_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/Logistical_Unit_Save_14_03.png"
         }
       },
       "is_incremental": false,
