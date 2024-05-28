@@ -1,3 +1,5 @@
+# Create multiple LUNs
+
 ## Creating several LUNs of the same series
 
 In order to facilitate the creation of new LUNs and organize better the received/dispatched packages you can initiate the creation of a number of LUNs of the same series at once.
