@@ -3752,6 +3752,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/access_permission.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/access_permission.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/access_permissions.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/access_permissions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/accesss_permission.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/accesss_permission.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/customer.png",
       "output": {
         "resource": {
@@ -3789,6 +3822,72 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/settings_code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step 3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/how-to/pictures/step_3.png"
         }
       },
       "is_incremental": false,
@@ -10858,6 +10957,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/Logistic_enter_quntity_of_one_pce_27_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/Logistic_enter_quntity_of_one_pce_27_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png",
       "output": {
         "resource": {
@@ -10884,6 +10994,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/logistic-units/How-to/Pictures/UI_multiple_LUNs_3.png"
         }
       },
       "is_incremental": false,
@@ -11166,6 +11309,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/assigned_unassigned.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/assigned_unassigned.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/execute-order.png",
       "output": {
         "resource": {
@@ -11181,6 +11335,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/info-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/info_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/info_order.png"
         }
       },
       "is_incremental": false,
@@ -11214,6 +11379,28 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/location_barcode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/logistics_WMS_Worker_28_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/logistics_WMS_Worker_28_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/menu_actions.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/menu_actions.png"
         }
       },
       "is_incremental": false,
@@ -11364,6 +11551,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/order_lines_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/order_lines_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/orders.png",
       "output": {
         "resource": {
@@ -11419,6 +11617,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/scan_field.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/scan_field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/scan_multiple_12_02.png",
       "output": {
         "resource": {
@@ -11445,6 +11654,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/suggested-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/wms-worker-total-base-qty.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/wms-worker/orders/pictures/wms-worker-total-base-qty.png"
         }
       },
       "is_incremental": false,
@@ -22273,6 +22493,28 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/scan-sscc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/scan-sscc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/scan-trade-item-info.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/logistic-units/How-to/Pictures/scan-trade-item-info.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/wms/logistic-units/How-to/create_LUNs.md",
       "output": {
@@ -22626,7 +22868,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/index.html",
-          "hash": "uwzYaqX/NFSKFwAPblRN1g=="
+          "hash": "r/Bz3qgXXSsUAOH9CqLUqQ=="
         }
       },
       "is_incremental": false,
@@ -22638,7 +22880,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/lines-execution.html",
-          "hash": "fsAjwyrmqYsTjQZS1BhdeQ=="
+          "hash": "YrMSomz1Q5XnBeEMkL7hYg=="
         }
       },
       "is_incremental": false,
@@ -23014,6 +23256,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/scan_multiple_12_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/standard_quantity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/standard_quantity.png"
         }
       },
       "is_incremental": false,
@@ -24096,7 +24349,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "j4zDXa/Ij8J+Im01KHJv8g=="
+          "hash": "tEjp/XTaJvw14sva1yQHmw=="
         }
       },
       "is_incremental": false,
