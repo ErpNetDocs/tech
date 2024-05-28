@@ -1,6 +1,3 @@
-# Working with Logistic Units
-@LU (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound, and internal warehouse operations using LUs.
-
 ## Using Logistics Units in the Receiving Process
 
 Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an **[Advance Shipping Notice (ASN)](asn.md)**, for example. 
