@@ -61,7 +61,7 @@ More details about each line, e.g. the full name of the product, the ordered lot
 
 At the top of the screen, there is a general **Scan field**. 
 
-When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution is started automatically. 
+When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its **[execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)** is started automatically. 
 
 ![Scan field](pictures/scan_field.png)
 
@@ -72,7 +72,7 @@ When scanning a value in this field, a matching unexecuted line is searched thro
 At the bottom of the screen, there are buttons for managing the order:
 
 - **Stop** - terminates the order 
-- **Execute** - allows for line execution; will change to **Complete Order** when all lines have been executed
+- **Execute** - allows for **[line execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)**; will change to **Complete Order** when all lines have been executed
 - **Menu** - allows access to several additional functions like **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)** 
 
 ![Order actions](pictures/menu_actions.png)
