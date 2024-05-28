@@ -33,7 +33,7 @@ The details on the screen include:
 -	**Total Qty** - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual items, calculated by multiplying the number of sets by the number of pieces per set
 
-Click the <b>Open</b> button to open the order.
+Click **Start** to open the order.
 
 ## Order lines
 
