@@ -255,7 +255,7 @@ references:
   href: advanced/stored-attributes/domain-with-property-allowed-values.html
 - uid: enter_quntity_of_one_pce
   name: Enter quantity of one pce
-  href: modules/logistics/wms/how-to/setup-warehouse/enter_quntity_of_one_pce.html
+  href: modules/logistics/wms/how-to/setup-warehouse/enter-quantity-of-one-pce.html
 - uid: erpnet
   name: erpnet
   href: includes/erpnet.html
