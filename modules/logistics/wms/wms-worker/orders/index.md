@@ -4,7 +4,7 @@ uid: orders-menu
 
 # Orders
 
-The "Orders" menu provides information on upcoming warehouse orders.
+This menu provides information on upcoming warehouse orders.
 
 ![Orders](pictures/orders.png)
 
@@ -21,7 +21,7 @@ The total number of orders can be checked at the bottom of the page.
 
 Click an order to see more information about it.
 
-![Order details](pictures/order-details.png)
+![Order details](pictures/wms-worker-total-base-qty.png)
 
 The details on the screen include:
 
