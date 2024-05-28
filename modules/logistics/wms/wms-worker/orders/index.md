@@ -13,13 +13,13 @@ The order navigator is divided into two categories:
 -	**ASSIGNED TO ME** - the warehouse worker who is logged into their own account can check the orders they have for execution
 -	**UNASSIGNED** - orders that are not assigned to a specific worker and can be executed by anyone who can take them
 
-Above the list is a **search bar** that can be used to filter orders. You can search by scanning or entering an order number, party name (if any), or document type.
+Above the list, there is a **search bar** that can be used to filter orders. You can search by scanning or entering an order number, a party name (if any), or a document type.
 
 The **total** number of orders can be checked at the bottom of the page.
 
 ## Order details
 
-Click an order to see more information about it.
+Click on an order to see more information about it.
 
 ![Order details](pictures/order_lines_new.png)
 
@@ -37,24 +37,23 @@ Click **Start** to open the order.
 
 ## Order lines
 
-A summary of the order lines shows up:
+Once an order is started, a summary of its lines will show up:
 
 ![Open order](pictures/order_lines_new.png)
 
-The screen has three tabs:
+On this screen, you will find three tabs dedicated to line execution:
 
--	**All** - shows all lines in the order regardless of whether they have been executed or not
+-	**All** - shows all lines of the order regardless of whether they have been executed or not
 -	**Remaining** - shows rows that have not yet been executed
 -	**Executed** - shows the rows that have already been executed
 
-The lines contain information about the requested product and its quantity.
+All lines contain information about the requested product and its quantity.
 
 -	**Task** - shows the main task
--	**Loc** - location of the product
+-	**Loc** - shows the location of the product
 -	**Prd** - shows the product itself
--	**Total** - shows what quantity of the product needs to be procured
--	**Remain** - shows what quantity of the product has already been executed; the remaining quantity that needs to be to be procured is the difference between Total and Remain.
--	**Еxec** - a check mark that shows if the line is fully executed on not
+-	**Total/Exec** - shows what quantity of the product needs to be procure compared to what quantity has already been executed
+- **Еxec** - a check mark that appears only if the line is fully executed
 
 More details about each line, e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the line's respective **info button**. If an execution has already taken place, the **Info** screen will include details about it as well.
 
