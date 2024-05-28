@@ -64,11 +64,11 @@ At the top of the screen, there is a general **Scan field**.
 
 When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. 
 
+![Scan field](pictures/scan_field.png)
+
 > [!NOTE]
 > The scanned value recognition is done by **[Barcode Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html?q=barcode%20pars)** such as Product Code and GS1 - Single Product. <br>
 > The list of currently active parsers can be seen by accessing the vertical three-dot **Menu button** at the bottom of the app.
-
-![Scan field](pictures/scan-field1.png)
 
 At the bottom of the screen, there are buttons for managing the order.
 
