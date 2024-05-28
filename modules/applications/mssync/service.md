@@ -32,5 +32,11 @@ Any changes made to resources in **ERP.net** are mirrored in **Office365**, and 
 
 ![picture](pictures/Service_permission_01_03.png) 
 
+## Give permissions
+
+The "Give Permissions" ensures that the MsSync app has all the necessary permissions to function optimally. It's recommended that **an admin user** click the "Give Permissions" button after the very first start of the app. This action will automatically check and configure all required permissions specific to the various job types.
+
+This process is essential for activating all available features and ensuring a seamless user experience.
+
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the platform.
