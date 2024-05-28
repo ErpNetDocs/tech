@@ -25,13 +25,13 @@ Click an order to see more information about it.
 
 The details on the screen include:
 
--	<b>Assigned To</b> - the employee who has to execute the order;
--	<b>Document Date</b> - the date of the order
--	<b>Creation Time</b> - the time and date of creation of the order;
--	<b>Lines Count</b> - the rows number in the order table;
--	<b>Total Qty</b> - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit.
--	<b>Standard Quantity </b> - a consistent reference measure used for products that come in variable units or packaging, providing a baseline for inventory management and transactions.
--	<b>Total base Quantity </b> - the overall quantity of individual items, calculated by multiplying the number of sets by the number of pieces per set.
+-	**Assigned To** - the employee who has to execute the order
+-	**Document Date** - the date of the order
+-	**Creation Time** - the time and date of creation of the order
+-	**Status** - the status of the order
+-	**Lines Count** - the rows number in the order table
+-	**Total Qty** - the sum of quantities. If there are lines in different measurement units, there will be separate totals for each unit
+-	**Total Base Qty** - the overall quantity of individual items, calculated by multiplying the number of sets by the number of pieces per set
 
 Click the <b>Open</b> button to open the order.
 
