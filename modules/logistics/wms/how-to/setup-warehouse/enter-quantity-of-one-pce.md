@@ -10,7 +10,7 @@ To adjust this setting, use the following **[config options reference](https://d
 
 `/WMS/WMS-Worker/SingleBarcodeScanEntersQuantityOfOnePce`
 
-- When the value of this config is set to "1", scanning of a single barcode is interpreted as 1 PCE.
-- When the value is set to "0", the WMS Worker app locates the line and switches to execute mode for that line.
+- When the value of this config is set to "1", any PCE you input will be scanned automatically, bypassing the Quantity screen.
+- When the value is set to "0", the WMS Worker locates the line and switches to execute mode for that line.
 
 ![pictures](pictures/Logistic_enter_quntity_of_one_pce_27_05.png)
