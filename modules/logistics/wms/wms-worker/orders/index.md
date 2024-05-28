@@ -56,13 +56,13 @@ The lines contain information about the requested product and its quantity.
 -	**Remain** - shows what quantity of the product has already been executed; the remaining quantity that needs to be to be procured is the difference between Total and Remain.
 -	**Еxec** - a check mark that shows if the line is fully executed on not
 
-More details about each line, e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the respective **info button**. If the line already has an execution, the Info screen will include details about it as well.
+More details about each line, e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the line's respective **info button**. If an execution has already taken place, the **Info** screen will include details about it as well.
 
 ![Info button](pictures/info_order.png)
 
 At the top of the screen, there is a general **Scan field**. 
 
-When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution of the line is started automatically. 
+When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its execution is started automatically. 
 
 ![Scan field](pictures/scan_field.png)
 
