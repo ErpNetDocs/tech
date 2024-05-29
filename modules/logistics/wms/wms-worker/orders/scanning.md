@@ -4,7 +4,7 @@ Each time you wish to **[execute](https://docs.erp.net/tech/modules/logistics/wm
 
 ## Single scan
 
-To scan a product once, simply enter its code into the **Scan** field, then click or tap the **blue arrow** button.
+To scan a product once, simply enter its code into the **Scan** field, then tap the **blue arrow** button.
 
 ![picture](pictures/Scan_single_12_02.png)
 
