@@ -3466,6 +3466,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/applications/mssync/pictures/service-give-permissions.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/mssync/pictures/service-give-permissions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/how-to/Setup_user_account_01_04.png",
       "output": {
         "resource": {
@@ -22937,7 +22948,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/lines-execution.html",
-          "hash": "YrMSomz1Q5XnBeEMkL7hYg=="
+          "hash": "jBnibSYMGthGKLcscsBR0Q=="
         }
       },
       "is_incremental": false,
@@ -23368,7 +23379,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/scanning.html",
-          "hash": "0jZbbu+5+ecUG4kmvaRhGQ=="
+          "hash": "sj4w7LHbYwgxz+UWvrsqFA=="
         }
       },
       "is_incremental": false,
