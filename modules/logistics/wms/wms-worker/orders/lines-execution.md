@@ -68,7 +68,7 @@ You can take **suggested** values quickly with the help of the **arrow** button,
 
 ### Standard quantity
 
-The Quantity screen includes a dedicated **standard quantity** value for products with changeable metric units. 
+The Quantity screen includes a dedicated **standard quantity** value for products with variable measurement ratios. 
 
 If you modify the quantity base, the standard one will also undergo automatic recalculation. However, you cannot modify it on its own.
 
