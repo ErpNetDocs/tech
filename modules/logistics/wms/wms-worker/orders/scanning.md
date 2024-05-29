@@ -1,6 +1,6 @@
 # Scanning
 
-Each time you wish to **[execute](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)** lines of an order, you must first scan the corresponding products the necessary number of times.
+Each time you wish to **[execute](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)** lines of an order, you must first scan the corresponding products as many times as necessary.
 
 ## Single scan
 
