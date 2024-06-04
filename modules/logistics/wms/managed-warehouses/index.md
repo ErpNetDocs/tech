@@ -14,7 +14,7 @@ To access your managed warehouses, navigate to **Logistics**, then **WMS**, and 
 
 Clicking the panel title will display a table listing all the managed warehouses and various options for managing them.
 
-![pictures](pictures/Managed_Warehouses_view_03_06.png)
+![pictures](pictures/Managed_Warehouses_view_04_06.png)
 
 ## Warehouse components 
 
@@ -26,13 +26,13 @@ They can be subsequently modified if the warehouse experiences any alterations.
 
 This section contain only the name of the warehouse and notes about it. 
 
-![pictures](pictures/Managed_Warehouses_workers_03_06.png)
+![pictures](pictures/Managed_Warehouses_warehouses_04_06.png)
 
 ### Workers 
 
 The Workers section on the platform provides detailed information about each worker in the managed warehouses. 
 
-![pictures](pictures/Managed_Warehouses_workers_03_06.png)
+![pictures](pictures/Managed_Warehouses_workers_04_06.png)
 
 You can find information about every worker in a table that includes the following details:
 
@@ -57,7 +57,7 @@ You can find information about every worker in a table that includes the followi
 
 In the **Policies** section, the system presents details regarding specific policies related to the managed warehouse. 
 
-![pictures](pictures/Managed_Warehouses_policies_03_06.png)
+![pictures](pictures/Managed_Warehouses_policies_04_06.png)
 
 Each policy is associated with a particular zone, denoted by its code. 
 
@@ -67,7 +67,7 @@ Additional information provided includes the type of policy, its corresponding v
 
 In the **Locations** section, the system displays details about specific locations within the managed warehouse. 
 
-![pictures](pictures/Managed_Warehouses_locations_03_06.png)
+![pictures](pictures/Managed_Warehouses_locations_04_06.png)
 
 Each location is identified by its unique address within the warehouse zone. 
 
@@ -77,7 +77,7 @@ The table also provides any additional notes relevant to each location.
 
 In the **Zones** section, the system provides information about different zones within the managed warehouse. 
 
-![pictures](pictures/Managed_Warehouses_zones_03_06.png)
+![pictures](pictures/Managed_Warehouses_zones_04_06.png)
 
 Each zone is identified by its name and may include additional notes for clarification. 
 
