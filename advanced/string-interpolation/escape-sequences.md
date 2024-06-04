@@ -11,7 +11,7 @@ Let's form the most typical example of an escape sequence as a question:
 
 _How do you put a "new line" in a single input field?_
 
-If you can't thing of it now, how about this:
+If you can't think of it now, how about this:
 
 `\r\n`
 
