@@ -51,7 +51,7 @@ You can find information about every worker in a table that includes the followi
 
 - **Active To** - The termination date of the worker's activity in the warehouse. This can be NULL for workers who are still active and have not been terminated previously.
 
-- **User** - Identifies the user account linked to the worker, typically used for logging in and performing tasks within the warehouse system.
+- **User** - Refers to the user account associated with the worker, primarily used for logging in and executing tasks within the warehouse system. This includes only internal and virtual users.
 
 ### Policies 
 
