@@ -26,7 +26,7 @@ They can be subsequently modified if the warehouse experiences any alterations.
 
 This section contain only the name of the warehouse and notes about it. 
 
-![pictures](pictures/Managed_Warehouses_warehouses_04_06.png)
+![pictures](pictures/Managed_Warehouses_warehouse_04_06.png)
 
 ### Workers 
 
