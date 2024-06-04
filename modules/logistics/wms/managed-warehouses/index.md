@@ -38,7 +38,7 @@ You can find information about every worker in a table that includes the followi
 
 - **Name** - The worker's full name, which can be recorded in multiple languages. This ensures proper identification and communication within diverse teams.
 
-- **Person** - Defines the individual worker, specifying if the worker is a human. If NULL, it means the person's identity is unknown or the worker might be a non-human entity such as a robot.
+- **Person** - Defines the individual worker, specifying if the worker is a person. If NULL, it means the person's identity is unknown or the worker might be a non-person entity.
 
 > [!NOTE]
 > A Person is defined based on a user profile and is read-only.
