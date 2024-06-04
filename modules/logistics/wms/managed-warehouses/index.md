@@ -1,6 +1,6 @@
 # Managed Warehouses 
 
-In the ERP.net system, **Managed Warehouses** represent complex storage facilities for efficient inventory management. 
+In the ERP.net, **managed warehouses** represent complex storage facilities for efficient inventory management. 
 
 These warehouses are carefully organized into various components such as locations, zones, policies, and workers. 
 
@@ -8,11 +8,11 @@ This structured approach allows for precise tracking, better organization, and s
 
 ## Navigation 
 
-To view existing managed warehouses or create a new one, navigate to **Logistics**, then **WMS**, and select the **Managed Warehouses** panel. 
+To access your managed warehouses, navigate to **Logistics**, then **WMS**, and select the **Managed Warehouses** panel. 
 
 ![pictures](pictures/Managed_Warehouses_navigation_03_06.png)
 
-Opening the main entry on this panel will display a table listing all the managed warehouses and various options for controlling them.
+Clicking the panel title will display a table listing all the managed warehouses and various options for managing them.
 
 ![pictures](pictures/Managed_Warehouses_view_03_06.png)
 
@@ -22,6 +22,12 @@ The components of the managed warehouses are established during their creation.
 
 They can be subsequently modified if the warehouse experiences any alterations.
 
+### Warehouse 
+
+This section contain only the name of the warehouse and notes about it. 
+
+![pictures](pictures/Managed_Warehouses_workers_03_06.png)
+
 ### Workers 
 
 The Workers section on the platform provides detailed information about each worker in the managed warehouses. 
@@ -29,8 +35,6 @@ The Workers section on the platform provides detailed information about each wor
 ![pictures](pictures/Managed_Warehouses_workers_03_06.png)
 
 You can find information about every worker in a table that includes the following details:
-
-- **Warehouse** - Indicates the specific warehouse where the worker is employed. This helps identify the worker's location and assignment within the company's network.
 
 - **Name** - The worker's full name, which can be recorded in multiple languages. This ensures proper identification and communication within diverse teams.
 
