@@ -24,13 +24,13 @@ They can be subsequently modified if the warehouse experiences any alterations.
 
 ### Warehouse 
 
-This section contain only the name of the warehouse and notes about it. 
+This panel contain only the name of the warehouse and notes about it. 
 
 ![pictures](pictures/Managed_Warehouses_warehouse_04_06.png)
 
 ### Workers 
 
-The Workers section on the platform provides detailed information about each worker in the managed warehouses. 
+The Workers panel on the platform provides detailed information about each worker in the managed warehouses. 
 
 ![pictures](pictures/Managed_Warehouses_workers_04_06.png)
 
@@ -55,7 +55,7 @@ You can find information about every worker in a table that includes the followi
 
 ### Policies 
 
-In the **Policies** section, the system presents details regarding specific policies related to the managed warehouse. 
+In the **Policies** panel, the system presents details regarding specific policies related to the managed warehouse. 
 
 ![pictures](pictures/Managed_Warehouses_policies_04_06.png)
 
@@ -65,7 +65,7 @@ Additional information provided includes the type of policy, its corresponding v
 
 ### Locations
 
-In the **Locations** section, the system displays details about specific locations within the managed warehouse. 
+In the **Locations** panel, the system displays details about specific locations within the managed warehouse. 
 
 ![pictures](pictures/Managed_Warehouses_locations_04_06.png)
 
@@ -75,7 +75,7 @@ The table also provides any additional notes relevant to each location.
 
 ### Zones 
 
-In the **Zones** section, the system provides information about different zones within the managed warehouse. 
+In the **Zones** panel, the system provides information about different zones within the managed warehouse. 
 
 ![pictures](pictures/Managed_Warehouses_zones_04_06.png)
 
