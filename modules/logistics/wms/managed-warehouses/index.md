@@ -53,6 +53,9 @@ You can find information about every worker in a table that includes the followi
 
 - **User** - Refers to the user account associated with the worker, primarily used for logging in and executing tasks within the warehouse system. This includes only internal and virtual users.
 
+> [!NOTE]
+> A User cannot be updated if they are already assigned and their associated person has been changed.
+
 ### Policies 
 
 In the **Policies** panel, the system presents details regarding specific policies related to the managed warehouse. 
