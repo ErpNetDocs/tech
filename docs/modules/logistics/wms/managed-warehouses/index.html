@@ -79,32 +79,33 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="managed-warehouses">Managed Warehouses</h1>
 
-<p>In the ERP.net system, <strong>Managed Warehouses</strong> represent complex storage facilities for efficient inventory management.</p>
+<p>In the ERP.net, <strong>managed warehouses</strong> represent complex storage facilities for efficient inventory management.</p>
 <p>These warehouses are carefully organized into various components such as locations, zones, policies, and workers.</p>
 <p>This structured approach allows for precise tracking, better organization, and streamlined logistics within the warehouse, ensuring optimal operational efficiency.</p>
 <h2 id="navigation">Navigation</h2>
-<p>To view existing managed warehouses or create a new one, navigate to <strong>Logistics</strong>, then <strong>WMS</strong>, and select the <strong>Managed Warehouses</strong> panel.</p>
+<p>To access your managed warehouses, navigate to <strong>Logistics</strong>, then <strong>WMS</strong>, and select the <strong>Managed Warehouses</strong> panel.</p>
 <p><img src="pictures/Managed_Warehouses_navigation_03_06.png" alt="pictures"></p>
-<p>Opening the main entry on this panel will display a table listing all the managed warehouses and various options for controlling them.</p>
-<p><img src="pictures/Managed_Warehouses_view_03_06.png" alt="pictures"></p>
+<p>Clicking the panel title will display a table listing all the managed warehouses and various options for managing them.</p>
+<p><img src="pictures/Managed_Warehouses_view_04_06.png" alt="pictures"></p>
 <h2 id="warehouse-components">Warehouse components</h2>
 <p>The components of the managed warehouses are established during their creation.</p>
 <p>They can be subsequently modified if the warehouse experiences any alterations.</p>
+<h3 id="warehouse">Warehouse</h3>
+<p>This panel contain only the name of the warehouse and notes about it.</p>
+<p><img src="pictures/Managed_Warehouses_warehouse_04_06.png" alt="pictures"></p>
 <h3 id="workers">Workers</h3>
-<p>The Workers section on the platform provides detailed information about each worker in the managed warehouses.</p>
-<p><img src="pictures/Managed_Warehouses_workers_03_06.png" alt="pictures"></p>
+<p>The Workers panel on the platform provides detailed information about each worker in the managed warehouses.</p>
+<p><img src="pictures/Managed_Warehouses_workers_04_06.png" alt="pictures"></p>
 <p>You can find information about every worker in a table that includes the following details:</p>
 <ul>
-<li><p><strong>Warehouse</strong> - Indicates the specific warehouse where the worker is employed. This helps identify the worker's location and assignment within the company's network.</p>
-</li>
 <li><p><strong>Name</strong> - The worker's full name, which can be recorded in multiple languages. This ensures proper identification and communication within diverse teams.</p>
 </li>
-<li><p><strong>Person</strong> - Defines the individual worker, specifying if the worker is a human. If NULL, it means the person's identity is unknown or the worker might be a non-human entity such as a robot.</p>
+<li><p><strong>Person</strong> - Defines the individual worker, specifying if the worker is a person. If NULL, it means the person's identity is unknown or the worker might be a non-person entity.</p>
 </li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A Person is defined based on a user profile and is read-only.</p>
+<p>The Person column is read-only, with each person being defined by their user profile.</p>
 </div>
 <ul>
 <li><p><strong>Notes</strong> - Any additional information or special instructions related to the worker's role and responsibilities.</p>
@@ -115,22 +116,26 @@
 </li>
 <li><p><strong>Active To</strong> - The termination date of the worker's activity in the warehouse. This can be NULL for workers who are still active and have not been terminated previously.</p>
 </li>
-<li><p><strong>User</strong> - Identifies the user account linked to the worker, typically used for logging in and performing tasks within the warehouse system.</p>
+<li><p><strong>User</strong> - Refers to the user account associated with the worker, primarily used for logging in and executing tasks within the warehouse system. This includes only internal and virtual users.</p>
 </li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A User cannot be updated if they are already assigned and their associated person has been changed.</p>
+</div>
 <h3 id="policies">Policies</h3>
-<p>In the <strong>Policies</strong> section, the system presents details regarding specific policies related to the managed warehouse.</p>
-<p><img src="pictures/Managed_Warehouses_policies_03_06.png" alt="pictures"></p>
+<p>In the <strong>Policies</strong> panel, the system presents details regarding specific policies related to the managed warehouse.</p>
+<p><img src="pictures/Managed_Warehouses_policies_04_06.png" alt="pictures"></p>
 <p>Each policy is associated with a particular zone, denoted by its code.</p>
 <p>Additional information provided includes the type of policy, its corresponding value, and any associated product group codes.</p>
 <h3 id="locations">Locations</h3>
-<p>In the <strong>Locations</strong> section, the system displays details about specific locations within the managed warehouse.</p>
-<p><img src="pictures/Managed_Warehouses_locations_03_06.png" alt="pictures"></p>
+<p>In the <strong>Locations</strong> panel, the system displays details about specific locations within the managed warehouse.</p>
+<p><img src="pictures/Managed_Warehouses_locations_04_06.png" alt="pictures"></p>
 <p>Each location is identified by its unique address within the warehouse zone.</p>
 <p>The table also provides any additional notes relevant to each location.</p>
 <h3 id="zones">Zones</h3>
-<p>In the <strong>Zones</strong> section, the system provides information about different zones within the managed warehouse.</p>
-<p><img src="pictures/Managed_Warehouses_zones_03_06.png" alt="pictures"></p>
+<p>In the <strong>Zones</strong> panel, the system provides information about different zones within the managed warehouse.</p>
+<p><img src="pictures/Managed_Warehouses_zones_04_06.png" alt="pictures"></p>
 <p>Each zone is identified by its name and may include additional notes for clarification.</p>
 <p>The table also indicates the parent zone, if applicable, and assigns a unique code to each zone for identification purposes.</p>
 </article>
