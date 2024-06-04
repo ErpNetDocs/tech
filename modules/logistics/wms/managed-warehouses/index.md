@@ -41,7 +41,7 @@ You can find information about every worker in a table that includes the followi
 - **Person** - Defines the individual worker, specifying if the worker is a person. If NULL, it means the person's identity is unknown or the worker might be a non-person entity.
 
 > [!NOTE]
-> A Person is defined based on a user profile and is read-only.
+> The Person column is read-only, with each person being defined by their user profile.
 
 - **Notes** - Any additional information or special instructions related to the worker's role and responsibilities.
 
