@@ -11254,6 +11254,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_locations_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_locations_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_navigation_03_06.png",
       "output": {
         "resource": {
@@ -11276,10 +11287,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_policies_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_policies_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_view_03_06.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_view_03_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_view_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_view_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_warehouse_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_warehouse_04_06.png"
         }
       },
       "is_incremental": false,
@@ -11298,10 +11342,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_workers_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_workers_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_zones_03_06.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_zones_03_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_zones_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_zones_04_06.png"
         }
       },
       "is_incremental": false,
