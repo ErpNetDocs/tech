@@ -30,7 +30,9 @@ This panel contains the **name** of the warehouse and some optional **notes** ab
 
 ### Workers 
 
-This panel contains a list of workers assigned to the managed warehouse.
+This panel contains a list of workers assigned to the managed warehouse. 
+
+The access each has to the warehouse is determined by the **user account** they're associated with.
 
 ![pictures](pictures/Managed_Warehouses_workers_04_06.png)
 
@@ -51,7 +53,7 @@ You can find the following information about every worker:
 
 - **Active To** - The termination date of the worker's activity in the warehouse. This can be NULL for workers who are still active and have not been terminated previously.
 
-- **User** - Refers to the user name associated with the worker. This includes only internal and virtual users.
+- **User** - Refers to the user account associated with the worker. This includes only internal and virtual users.
 
 > [!NOTE]
 > Updating the User will also update the Person.
