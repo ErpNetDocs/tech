@@ -30,7 +30,7 @@ This panel contains the **name** of the warehouse and some optional **notes** ab
 
 ### Workers 
 
-This panel contains a list of workers assigned to the managed warehouse. 
+This panel contains a list of **[workers](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-workers.html)** assigned to the managed warehouse. 
 
 The access each has to the warehouse is determined by the **user account** they're associated with.
 
@@ -38,17 +38,17 @@ The access each has to the warehouse is determined by the **user account** they'
 
 ### Policies 
 
-In the **Policies** panel, you can find details about the policies of the current managed warehouse. 
-
-![pictures](pictures/Managed_Warehouses_policies_04_06.png)
+In the **Policies** panel, you can find details about the **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** of the current managed warehouse. 
 
 Each policy is associated with a particular zone, denoted by its code. 
 
 Additional information includes the type of policy, its corresponding value, and any associated product group codes.
 
+![pictures](pictures/Managed_Warehouses_policies_04_06.png)
+
 ### Locations
 
-In the **Locations** panel, you can find details about the locations of the current managed warehouse. 
+In the **Locations** panel, you can find details about the **[locations](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the current managed warehouse. 
 
 ![pictures](pictures/Managed_Warehouses_locations_04_06.png)
 
@@ -58,10 +58,10 @@ The table also provides additional notes relevant for each location.
 
 ### Zones 
 
-In the **Zones** panel, you can find details about the zones of the managed warehouse. 
-
-![pictures](pictures/Managed_Warehouses_zones_04_06.png)
+In the **Zones** panel, you can find details about the **[zones](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the managed warehouse. 
 
 Each zone is identified by its name and may include additional notes for clarification. 
 
 The table also indicates the parent zone, if applicable, and assigns a unique code to each zone for identification purposes.
+
+![pictures](pictures/Managed_Warehouses_zones_04_06.png)
