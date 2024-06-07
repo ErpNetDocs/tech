@@ -32,4 +32,4 @@ The **WMS Worker app** determines which warehouses to show to the currently logg
 
 In other words, workers will only have access to those warehouses where their user accounts are added. 
 
-![Warehouses List in the App](pictures/warehouse-list-worker.png)
+![Warehouses List in the App](pictures/wms_worker_user.png)
