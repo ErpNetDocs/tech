@@ -8,6 +8,9 @@
 - name: Logistic units
   href: logistic-units/toc.yml
   topicHref: logistic-units/index.md
+- name: Managed warehouses
+  href: managed-warehouses/toc.yml
+  topicHref: managed-warehouses/index.md
 - name: GS1 barcodes
   href: gs1-barcodes.md
 - name: Composite products
