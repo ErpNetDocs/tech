@@ -6,7 +6,7 @@ In ERP.net, they are organized into various locations and zones, each enforcing 
 
 This structured approach allows for precise tracking, better organization and streamlined logistics within the managed warehouse.
 
-You can find more information about how to set up a warehouse **[here](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/index.html)**.
+You can find more information on how to set up a warehouse **[here](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/index.html)**.
 
 ### Navigation 
 
