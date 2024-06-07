@@ -40,28 +40,22 @@ The access each has to the warehouse is determined by the **user account** they'
 
 In the **Policies** panel, you can find details about the **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** of the current managed warehouse. 
 
-Each policy is associated with a particular zone, denoted by its code. 
-
-Additional information includes the type of policy, its corresponding value, and any associated product group codes.
+Each policy has a type and is associated with a particular product group and code. 
 
 ![pictures](pictures/Managed_Warehouses_policies_04_06.png)
 
 ### Locations
 
-In the **Locations** panel, you can find details about the **[locations](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the current managed warehouse. 
+In the **Locations** panel, you can find details about all existing **[locations](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the current managed warehouse. 
+
+Each location is identified by its unique **address** within the warehouse zone. 
 
 ![pictures](pictures/Managed_Warehouses_locations_04_06.png)
-
-Each location is identified by its unique address within the warehouse zone. 
-
-The table also provides additional notes relevant for each location.
 
 ### Zones 
 
 In the **Zones** panel, you can find details about the **[zones](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the managed warehouse. 
 
-Each zone is identified by its name and may include additional notes for clarification. 
-
-The table also indicates the parent zone, if applicable, and assigns a unique code to each zone for identification purposes.
+Each zone has a **name** and may include a **parent zone** as well as a unique code for identification.
 
 ![pictures](pictures/Managed_Warehouses_zones_04_06.png)
