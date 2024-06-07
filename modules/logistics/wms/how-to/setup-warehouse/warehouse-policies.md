@@ -13,6 +13,7 @@ Warehouse policies can be set up for different warehouses, zones or even product
 
 
 # Available policy kinds
+
 Policy kinds specify what the actual action of the policy is. 
 
 The list of the policy kinds is system predifined.  
@@ -43,6 +44,7 @@ The list of the policy kinds is system predifined.
 # Applicability
 
 You set up each warehouse policy by defining the conditions where it applies, to which products and for how long. 
+
 Each warehouse policy can apply to:
 
 * Warehouse
@@ -59,9 +61,8 @@ Each warehouse policy can apply to:
 
 * To date
 
-NOTE: Some policies can be applied only at the warehouse or zone level.
-
- 
+> [!NOTE]
+> Some policies can be applied only at the warehouse or zone level.
 
 # Importance
 
