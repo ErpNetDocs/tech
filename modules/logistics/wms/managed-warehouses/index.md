@@ -32,7 +32,7 @@ This panel contains the **name** of the warehouse and some optional **notes** ab
 
 This panel contains a list of **[workers](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-workers.html)** assigned to the managed warehouse. 
 
-The access each has to the warehouse is determined by the **user account** they're associated with.
+The access each has to the warehouse is determined by the **User** they're associated with.
 
 ![pictures](pictures/Managed_Warehouses_workers_04_06.png)
 
@@ -40,7 +40,7 @@ The access each has to the warehouse is determined by the **user account** they'
 
 In the **Policies** panel, you can find details about the **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** of the current managed warehouse. 
 
-Each policy has a type and is associated with a particular product group and code. 
+Each policy has a **kind** and a **value** and is associated with a particular **product group** and **code**. 
 
 ![pictures](pictures/Managed_Warehouses_policies_04_06.png)
 
@@ -48,7 +48,7 @@ Each policy has a type and is associated with a particular product group and cod
 
 In the **Locations** panel, you can find details about all existing **[locations](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the current managed warehouse. 
 
-Each location is identified by its unique **address** within the warehouse zone. 
+Each location is identified by its unique **address** within a warehouse **zone**. 
 
 ![pictures](pictures/Managed_Warehouses_locations_04_06.png)
 
@@ -56,6 +56,6 @@ Each location is identified by its unique **address** within the warehouse zone.
 
 In the **Zones** panel, you can find details about the **[zones](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/zones-and-locations.html)** of the managed warehouse. 
 
-Each zone has a **name** and may include a **parent zone** as well as a unique code for identification.
+Each zone has a **name** and may include a **parent zone** as well as a unique **code** for identification.
 
 ![pictures](pictures/Managed_Warehouses_zones_04_06.png)
