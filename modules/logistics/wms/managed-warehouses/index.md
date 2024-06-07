@@ -36,28 +36,6 @@ The access each has to the warehouse is determined by the **user account** they'
 
 ![pictures](pictures/Managed_Warehouses_workers_04_06.png)
 
-You can find the following information about every worker:
-
-- **Name** - This the worker's full name.
-
-- **Person** - Specifies the person representing the worker. If a **User** is not set for the worker, this column will be NULL as well, which means that the person's identity may be unknown or the worker might be a non-person entity.
-
-> [!NOTE]
-> The **Person** column is read-only.
-
-- **Notes** - Additional information or special instructions related to the worker's role and responsibilities.
-
-- **Is Active** - Specifies whether the worker is active and capable of executing tasks. 
-
-- **Active From** - The date the worker's record became active in the warehouse. This helps in tracking the duration of the worker's service.
-
-- **Active To** - The termination date of the worker's activity in the warehouse. This can be NULL for workers who are still active and have not been terminated previously.
-
-- **User** - Refers to the user account associated with the worker. This includes only internal and virtual users.
-
-> [!NOTE]
-> Updating the User will also update the Person.
-
 ### Policies 
 
 In the **Policies** panel, you can find details about the policies of the current managed warehouse. 
