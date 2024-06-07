@@ -22593,6 +22593,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/Managed_Warehouses_workers_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/Managed_Warehouses_workers_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png",
       "output": {
         "resource": {
@@ -22625,6 +22636,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/wms_worker_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/setup-warehouse/pictures/wms_worker_user.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -22633,7 +22655,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html",
-          "hash": "sFvZ5Tzli0LRy7jsAk11VA=="
+          "hash": "fR+gbdLvxK1bWIEvk0MZ1Q=="
         }
       },
       "is_incremental": false,
@@ -22645,7 +22667,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/setup-warehouse/warehouse-workers.html",
-          "hash": "t7wZo9eteNCeL3En3nCjjg=="
+          "hash": "KkVW1R1ZH7pZKYU8J7SfiQ=="
         }
       },
       "is_incremental": false,
@@ -22931,7 +22953,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/managed-warehouses/index.html",
-          "hash": "6rbWmTQYqN1tJRTr6Mdofg=="
+          "hash": "jfSuPORIkqYKCCEg7AP0/Q=="
         }
       },
       "is_incremental": false,
@@ -23053,18 +23075,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/managed-warehouses/pictures/Managed_Warehouses_zones_04_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/logistics/wms/managed-warehouses/pictures/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/wms/managed-warehouses/pictures/index.html",
-          "hash": "hd8NP4qB97U6Oa/Q1+D4Nw=="
         }
       },
       "is_incremental": false,
@@ -24694,7 +24704,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "Luc51OfDlxQW52BvAB04Iw=="
+          "hash": "WrP3SE/r6fBxcm55kBBH/Q=="
         }
       },
       "is_incremental": false,
