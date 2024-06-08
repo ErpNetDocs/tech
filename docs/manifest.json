@@ -10979,6 +10979,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/Managed_Warehouses_workers_04_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/Managed_Warehouses_workers_04_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/enter-quantity-of-one-pce.png",
       "output": {
         "resource": {
@@ -11005,6 +11016,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/warehouse-workers-panel.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/wms_worker_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/setup-warehouse/pictures/wms_worker_user.png"
         }
       },
       "is_incremental": false,
