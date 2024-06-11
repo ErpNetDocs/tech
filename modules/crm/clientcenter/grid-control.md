@@ -1,6 +1,6 @@
 # Grid control 
 
-The **ERP.net** **Grid control** is a component used for displaying, organizing, and manipulating tabular data across its modules. 
+The **Grid control** is a component used for displaying, organizing, and manipulating tabular data across its modules. 
 
 It provides functionalities like sorting, filtering, and summarizing data, enhancing user interaction with large datasets.
 
