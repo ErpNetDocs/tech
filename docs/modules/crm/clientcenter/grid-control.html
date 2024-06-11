@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Grid control | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Grid control | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="grid-control">Grid control</h1>
+
+<p>The <strong>Grid control</strong> is a component used for displaying, organizing, and manipulating tabular data across its modules.</p>
+<p>It provides functionalities like sorting, filtering, and summarizing data, enhancing user interaction with large datasets.</p>
+<h2 id="total-summary">Total summary</h2>
+<p><strong>Total summary</strong> is a feature that automatically displays the count for document numbers and the sum for remaining amounts across all pages, providing a comprehensive data overview without the need for activation.</p>
+<p><img src="pictures/Grid_control_summary_11_06.png" alt="picture"></p>
+<h2 id="advanced-filtering-and-search">Advanced Filtering and Search</h2>
+<p>With the addition of a <strong>Column filter</strong> and <strong>Search field</strong>, you can filter and search through large datasets.</p>
+<h3 id="column-filter">Column filter</h3>
+<p>In the column filter, you can specify the information to be displayed in a particular column.</p>
+<p>For instance, you can filter a date column to show only a specific year or month, or filter a column to display only entries with a certain name or amount.</p>
+<p><img src="pictures/Grid_control_column_filter_11_06.png" alt="picture"></p>
+<h3 id="search-field">Search field</h3>
+<p>In the Search Bar, you can filter the entire table by entering a word, letter, or number, and it will display only the items containing the specified input in any of their columns.</p>
+<p><img src="pictures/Grid_control_filter_box_11_06.png" alt="picture"></p>
+<h2 id="grouping-and-summarization">Grouping and Summarization</h2>
+<p>The grid control supports data grouping with <strong>Group footer summary</strong>, allowing users to organize data hierarchically and see summary information for each group, including counts and sums.</p>
+<p>By dragging and dropping a column header into the <strong>”Drag a column header here to group by that column”</strong> row, you can group the data by that column.</p>
+<p><img src="pictures/Grid_control_grouping_11_06.png" alt="picture"></p>
+<p>To group by multiple columns, simply drag additional column headers next to the first one.</p>
+<p>The data will be grouped first by the initial column, followed by the subsequent columns.</p>
+<p><img src="pictures/Grid_control_multiple_grouping_11_06.png" alt="picture"></p>
+<h2 id="column-chooser">Column chooser</h2>
+<p>The <strong>Column Chooser</strong> feature allows you to decide which columns to display in the table.
+To access it, click on the blue icon at the top right of the column.</p>
+<p><img src="pictures/Grid_control_column_chooser_11_06.png" alt="picture"></p>
+<p>To select columns for display, simply check the ones you want to show and leave unchecked the ones you want to hide.</p>
+<p><img src="pictures/Grid_control_column_chooser_procedure_11_06.png" alt="picture"></p>
+<h2 id="layout-persistence">Layout Persistence</h2>
+<p>Users can save and restore their grid layout settings, ensuring their preferred view is maintained across sessions for a more personalized and consistent experience.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/grid-control.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

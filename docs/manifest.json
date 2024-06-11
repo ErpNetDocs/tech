@@ -13745,6 +13745,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/grid-control.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/grid-control.html",
+          "hash": "Sgldu3i7Szkj4geocUU1qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/how-to/apply-platform-settings.md",
       "output": {
         ".html": {
@@ -14285,6 +14297,83 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/pictures/Client_center_index_Invoices_31_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_chooser_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_chooser_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_chooser_procedure_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_chooser_procedure_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_filter_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_column_filter_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_filter_box_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_filter_box_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_grouping_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_grouping_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_multiple_grouping_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_multiple_grouping_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/Grid_control_summary_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/Grid_control_summary_11_06.png"
         }
       },
       "is_incremental": false,
