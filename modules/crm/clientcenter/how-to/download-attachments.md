@@ -4,7 +4,7 @@ This article provides a step-by-step guide on downloading attached files from an
 
 ### Prerequisites
 
-To be able to view and download file attachments from an invoice in the Client Center, you must configure its **Access Permissions** field through your ERP.net platform instance.
+To be able to view and download file attachments from an invoice in the Client Center, you must configure its **[Access Permissions field](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** through the **Files** panel of your ERP.net platform instance.
 
 Simply navigate to the respective invoice, expand the **Files** panel, open its **Details** and set the value of the **Access Permissions** field to **Internal users + external users**.
 
@@ -12,7 +12,7 @@ Simply navigate to the respective invoice, expand the **Files** panel, open its 
 
 This must be applied for **every** invoice attachment you wish to see and download from within your Client Center website.
 
-## Step-by-step process
+## Step-by-step process in the Client Center
 
 1.	Navigate to the **Invoices** panel of the **Client Center** menu.
 
