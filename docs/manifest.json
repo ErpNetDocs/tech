@@ -3939,6 +3939,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_chooser_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_chooser_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_chooser_procedure_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_chooser_procedure_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_filter_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_column_filter_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_filter_box_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_filter_box_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_grouping_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_grouping_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_multiple_grouping_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_multiple_grouping_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_summary_11_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/crm/clientcenter/pictures/Grid_control_summary_11_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/pictures/aadd_field.png",
       "output": {
         "resource": {
@@ -13797,7 +13874,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/how-to/download-attachments.html",
-          "hash": "cU3P0UgbDCy7+czZjdc8Ew=="
+          "hash": "7jP6nJOyljP2iBdS0emk9Q=="
         }
       },
       "is_incremental": false,
