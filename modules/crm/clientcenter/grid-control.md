@@ -1,18 +1,18 @@
 # Grid control 
 
-The **Grid control** is a component used for displaying, organizing, and manipulating tabular data across its modules. 
+The **Grid control** comprises a collection of tools built-in within Client Center navigators. 
 
-It provides functionalities like sorting, filtering, and summarizing data, enhancing user interaction with large datasets.
+It offers functionalities like sorting, filtering, and summarizing information, which are collectively responsible for displaying, organizing, and manipulating tabular data.
 
 ## Total summary
 
-**Total summary** is a feature that automatically displays the count for document numbers and the sum for remaining amounts across all pages, providing a comprehensive data overview without the need for activation.
+The **Total summary** option automatically displays the **count** of document numbers and the **sum** of remaining amounts across all pages, providing a comprehensive data overview without the need for activation.
 
 ![picture](pictures/Grid_control_summary_11_06.png)
 
-## Advanced Filtering and Search
+## Advanced filtering and search
 
-With the addition of a **Column filter** and **Search field**, you can filter and search through large datasets.
+With the addition of a **Column filter** and a **Search bar**, you can filter and search through large datasets.
 
 ### Column filter
 
