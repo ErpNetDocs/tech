@@ -14,7 +14,7 @@ Information is displayed at the bottom of the table, under the **Document No** a
 
 ## Filter and search
 
-Using the built-in **Column filter** and the **Search Box**, you can easily filter your existing documents, as well as search for and find specific ones.
+Using the **Column filter** and the **Search Box**, you can easily filter your existing documents, as well as search for and find specific ones.
 
 ### Column filter
 
@@ -28,7 +28,7 @@ For instance, you may filter the **Date** column to display documents only from 
 
 ### Search Box
 
-Using the Search Box, you can input a word, letter, or number, to see items containing your specified input in **any** of the navigator's columns.
+The Search Box allows you to input a word, letter, or number and then see items containing that input in **any** of the navigator's columns.
 
 ![picture](pictures/Grid_control_filter_box_11_06.png)
 
