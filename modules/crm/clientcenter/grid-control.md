@@ -2,60 +2,65 @@
 
 The **Grid control** comprises a collection of tools built-in within Client Center navigators. 
 
-It offers functionalities like sorting, filtering, and summarizing information, which are collectively responsible for displaying, organizing, and manipulating tabular data.
+It offers functionalities like sorting, filtering, and summarizing information, which are collectively responsible for displaying and organizing data in a more intuitive, use-case-specific way.
 
 ## Total summary
 
-The **Total summary** option automatically displays the **count** of document numbers and the **sum** of remaining amounts across all pages, providing a comprehensive data overview without the need for activation.
+The **Total summary** option automatically calculates the **Count** (number) of documents and the total **Sum** of amounts across all pages of a given navigator.
 
 ![picture](pictures/Grid_control_summary_11_06.png)
 
-## Advanced filtering and search
+## Filter and search
 
-With the addition of a **Column filter** and a **Search bar**, you can filter and search through large datasets.
+Using the built-in **Column filter** and the **Search Box**, you can easily filter large numbers of documents, as well as search for and find specific ones.
 
 ### Column filter
 
-In the column filter, you can specify the information to be displayed in a particular column. 
+The Column filter is accessible through the **funnel button** at the far-right of a column's title.
 
-For instance, you can filter a date column to show only a specific year or month, or filter a column to display only entries with a certain name or amount.
+Once you expand it, you can decide exactly how that particular column should filter the navigator's contents.
+
+For instance, you can filter the **Date** column to display documents from only a specific month of a year, or the **Type name** column to show records only of a given type.
 
 ![picture](pictures/Grid_control_column_filter_11_06.png)
 
-### Search field
+### Search Box
 
-In the Search Bar, you can filter the entire table by entering a word, letter, or number, and it will display only the items containing the specified input in any of their columns.
+Using the Search Box, you can input a word, letter, or number, to see items containing your specified input in **any** of the navigator's columns.
 
 ![picture](pictures/Grid_control_filter_box_11_06.png)
 
-## Grouping and Summarization
+## Grouping and summarizing
 
-The grid control supports data grouping with **Group footer summary**, allowing users to organize data hierarchically and see summary information for each group, including counts and sums.
+You can **group** a navigator's contents by their column headers in order to organize them in a more specific tree-like hierarchical structure.
 
-By dragging and dropping a column header into the **”Drag a column header here to group by that column”** row, you can group the data by that column. 
+Taking advantage of the **Group footer summary** option, you can also see summarized information for each group that includes counts and sums.
+
+To group, simply drag and drop a column header into the **”_Drag a column header here to group by that column_”** row found above the table.
 
 ![picture](pictures/Grid_control_grouping_11_06.png)
 
-To group by multiple columns, simply drag additional column headers next to the first one. 
+You can also group by **multiple** columns by dragging and dropping additional column headers next to the first one. 
 
-The data will be grouped first by the initial column, followed by the subsequent columns.
+Existing records will first be grouped by the initial column, and then by each subsequent one you include.
 
 ![picture](pictures/Grid_control_multiple_grouping_11_06.png)
 
 ## Column chooser
 
-The **Column Chooser** feature allows you to decide which columns to display in the table. 
-To access it, click on the blue icon at the top right of the column. 
+The **Column Chooser** option allows you to decide which columns to display in a navigator, as well as determine their order.
+
+To access it, click on the **blue icon** at the top-right of the page. 
 
 ![picture](pictures/Grid_control_column_chooser_11_06.png)
 
-To select columns for display, simply check the ones you want to show and leave unchecked the ones you want to hide.
+Choose which columns will be displayed by checking the ones that you want to show.
 
 ![picture](pictures/Grid_control_column_chooser_procedure_11_06.png)
 
 ## Layout Persistence
 
-Users can save and restore their grid layout settings, ensuring their preferred view is maintained across sessions for a more personalized and consistent experience.
+However you modify your Client Center navigator layout, your last preferred view will be loaded the next time you log-in, ensuring a personalized and consistent experience.
 
 > [!NOTE]
 > 
