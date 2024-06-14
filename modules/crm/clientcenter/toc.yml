@@ -2,6 +2,8 @@
   href: index.md
 - name: Reference
   href: reference.md
+- name: Grid control
+  href: grid-control.md
 - name: Step-by-step guides
   href: how-to/toc.yml
   topicHref: how-to/index.md 
