@@ -60,9 +60,9 @@ Choose which columns will be displayed by checking the ones that you want to sho
 
 ![picture](pictures/Grid_control_column_chooser_procedure_11_06.png)
 
-## Layout persistence
+## Save and restore layout
 
-However you modify your Client Center navigator layout, your last preferred view will be loaded the next time you log in, ensuring a personalized and consistent experience.
+However you modify your Client Center navigator layout, your last preferred view will be **saved** and **restored** the next time you log in, ensuring a personalized and consistent experience.
 
 > [!NOTE]
 > 
