@@ -62,7 +62,7 @@ Choose which columns will be displayed by checking the ones that you want to sho
 
 ## Layout persistence
 
-However you modify your Client Center navigator layout, your last preferred view will be loaded the next time you log-in, ensuring a personalized and consistent experience.
+However you modify your Client Center navigator layout, your last preferred view will be loaded the next time you log in, ensuring a personalized and consistent experience.
 
 > [!NOTE]
 > 
