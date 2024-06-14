@@ -6,13 +6,15 @@ It offers functionalities like sorting, filtering, and summarizing information, 
 
 ## Total summary
 
-The **Total summary** option automatically calculates the **Count** (number) of documents and the total **Sum** of amounts across all pages of a given navigator.
+The **Total summary** option automatically calculates the **Count** (number) of documents and the total **Sum** of their amounts across all pages of a given navigator.
+
+Information is displayed at the bottom of the table, under the **Document No** and **Amount** columns, respectively.
 
 ![picture](pictures/Grid_control_summary_11_06.png)
 
 ## Filter and search
 
-Using the built-in **Column filter** and the **Search Box**, you can easily filter large numbers of documents, as well as search for and find specific ones.
+Using the built-in **Column filter** and the **Search Box**, you can easily filter your existing documents, as well as search for and find specific ones.
 
 ### Column filter
 
@@ -20,7 +22,7 @@ The Column filter is accessible through the **funnel button** at the far-right o
 
 Once you expand it, you can decide exactly how that particular column should filter the navigator's contents.
 
-For instance, you can filter the **Date** column to display documents from only a specific month of a year, or the **Type name** column to show records only of a given type.
+For instance, you may filter the **Date** column to display documents only from a specific month of a year, or the **Type name** column to show records only from a given type.
 
 ![picture](pictures/Grid_control_column_filter_11_06.png)
 
@@ -34,9 +36,9 @@ Using the Search Box, you can input a word, letter, or number, to see items cont
 
 You can **group** a navigator's contents by their column headers in order to organize them in a more specific tree-like hierarchical structure.
 
-Taking advantage of the **Group footer summary** option, you can also see summarized information for each group that includes counts and sums.
+With the **Group footer summary** option, you can also see summarized information for each group, which includes **counts** for document numbers and **sums** for document amounts.
 
-To group, simply drag and drop a column header into the **”_Drag a column header here to group by that column_”** row found above the table.
+To group, simply drag and drop a column header into the **”_Drag a column header here to group by that column_”** row above the table.
 
 ![picture](pictures/Grid_control_grouping_11_06.png)
 
@@ -50,7 +52,7 @@ Existing records will first be grouped by the initial column, and then by each s
 
 The **Column Chooser** option allows you to decide which columns to display in a navigator, as well as determine their order.
 
-To access it, click on the **blue icon** at the top-right of the page. 
+To access it, click on the **blue icon** above the Search Box. 
 
 ![picture](pictures/Grid_control_column_chooser_11_06.png)
 
