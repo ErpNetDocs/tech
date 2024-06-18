@@ -12,10 +12,10 @@ This event occurs immediately **before** the value changes.
 
 A typical use case is when you need to save, set, or calculate something based on the previous (old) value of the field.
 
-_**Example**_
+**Example**
 
-**Event:** ATTRIBUTECHANING(QuantityValue)
-<br/>**Action:** ActionType: SETVALUE | Attribute: Notes | Attribute: QuantityValue
+_**Event:**_ ATTRIBUTECHANING(QuantityValue)
+<br/>_**Action:**_ ActionType: SETVALUE | Attribute: Notes | Attribute: QuantityValue
 
 The Quantity in the line is **5.00**.
 <br/>The user changes the Quantity to **7.00**.
