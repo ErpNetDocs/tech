@@ -1969,7 +1969,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "f/mB17ZqiqU3a9VrEtNQWw=="
+          "hash": "PMG6kotfHOkwXvEEBbEUqA=="
         }
       },
       "is_incremental": false,
@@ -2117,6 +2117,30 @@
         ".html": {
           "relative_path": "advanced/user-business-rules/events/aggregate-client-committed.html",
           "hash": "cPs02s/fPeDtLysANrfsAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/attributechanged.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/attributechanged.html",
+          "hash": "MNfDv9ljH7qiwGj9sk2aFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/attributechanging.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/attributechanging.html",
+          "hash": "afi4ZDKVzMUlpvktihm8hw=="
         }
       },
       "is_incremental": false,
