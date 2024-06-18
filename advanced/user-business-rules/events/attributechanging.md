@@ -10,4 +10,4 @@ The ATTRIBUTECHANGING event is always used with a **Parameter**, which is the na
 
 This event occurs immediately before the value changes.
 
-A typical use case is when you need to save or calculate something based on the previous (old) value of the field.
+A typical use case is when you need to save, set or calculate something based on the previous (old) value of the field.
