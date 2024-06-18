@@ -844,6 +844,11 @@
     "title": "User business rules - Examples | ERP.net Tech Docs",
     "keywords": "User business rules - Examples Allow a credit limit override when a client pays in cash How to set DeliveryTerms in purchase invoice How to start a business rule only on first releasing Whole quantity validation How to use business rules to set a value into a custom property Send a message to Azure Service Bus when an entity is created or updated Create a card in Trello when a sales order has been released Send a message in a channel in Slack when voiding a sales order Set an initial attribute for a new sales order"
   },
+  "advanced/user-business-rules/examples/manage-user-status.html": {
+    "href": "advanced/user-business-rules/examples/manage-user-status.html",
+    "title": "Use system variables for managing user status in documents | ERP.net Tech Docs",
+    "keywords": "Use system variables for managing user status in documents You can use two system variables for the \"STATECHANGED\" and \"STATECHANGING\" events to manage the user status of a document. They can be used across any business rules . $FromUserStatusId – relates to the initial user status. $ToUserStatusId – relates to the targeted user status. In order to manage these variables, you can select them from the list of attributes of the Condition of the user business rule. Then, proceed to specify the ID of the respective user status in the Value field. Step-by-step example In this example, we will call the \"STATECHANGING\" event for documents of type BGVATDeclarations . Create at least two new user statuses. Add a new business rule using the $ToUserStatusId variable. Create one offer. As part of the rule conditions, change the target Attribute and its Value . Every time a condition is met, you should get a \"Yes\" warning. This will result in changing the user status of the document."
+  },
   "advanced/user-business-rules/examples/sales-order-init-attribute.html": {
     "href": "advanced/user-business-rules/examples/sales-order-init-attribute.html",
     "title": "Set an initial attribute for a new sales order | ERP.net Tech Docs",

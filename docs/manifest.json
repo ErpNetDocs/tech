@@ -2292,6 +2292,62 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/manage-user-status.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/manage-user-status.html",
+          "hash": "bVgmp8cil1uSUAq8TfXkdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/step_one.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/step_one.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/step_two.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/step_two.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/step_twoo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/step_twoo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/step_twooo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/step_twooo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/sales-order-init-attribute.md",
       "output": {
         ".html": {
