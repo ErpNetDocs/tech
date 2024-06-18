@@ -7,11 +7,13 @@ They can be used across any **[business rules](https://docs.erp.net/tech/advance
 - **$FromUserStatusId** – relates to the initial user status.
 - **$ToUserStatusId** – relates to the targeted user status.
    
-You need to first select them from the list of attributes of the **Condition** of the user business rule and then specify the **ID** of the user status in the **Value** field.
+In order to manage these variables, you can select them from the list of attributes of the **Condition** of the user business rule.
+
+Then, proceed to specify the **ID** of the respective user status in the **Value** field.
 
 ### Step-by-step example
 
-In this example, we will call the STATECHANGING event for documents of type *BGVATDeclarations*. 
+In this example, we will call the "STATECHANGING" event for documents of type *BGVATDeclarations*. 
 
 1. Create at least two new user statuses.
 
