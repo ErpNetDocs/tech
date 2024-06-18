@@ -1,6 +1,6 @@
 # Use system variables for managing user status in documents
 
-You can use two system variables for the "STATECHANGED" and "STATECHANGING" document events to manage the user status of a document.
+You can use two system variables for the "STATECHANGED" and "STATECHANGING" events to manage the user status of a document.
 
 They can be used across any **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)**.
 
