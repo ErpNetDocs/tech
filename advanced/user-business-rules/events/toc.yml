@@ -4,6 +4,10 @@
   href: aggregate-client-commit.md
 - name: AGGREGATE CLIENT COMMITTED
   href: aggregate-client-committed.md
+- name: ATTRIBUTECHANGED
+  href: attributechanged.md
+- name: ATTRIBUTECHANGING
+  href: attributechanging.md
 - name: CLIENT COMMIT
   href: client-commit.md
 - name: CLIENT COMMITTED
