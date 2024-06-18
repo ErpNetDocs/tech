@@ -21,7 +21,7 @@ In this example, we will call the "STATECHANGING" event for documents of type *B
 
 2. Add a new business rule using the _$ToUserStatusId_ variable.
  
-	![picture](pictures/step_two.png)
+	![picture](pictures/step_twoo.png)
 
 3. Create one offer. As part of the rule conditions, change the target **Attribute** and its **Value**.
   
