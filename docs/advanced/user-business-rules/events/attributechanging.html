@@ -104,9 +104,9 @@
 <p>The ATTRIBUTECHANGING event is always used with a <strong>Parameter</strong>, which is the name of the Attribute (Field) whose value change triggers the event.</p>
 <p>This event occurs immediately <strong>before</strong> the value changes.</p>
 <p>A typical use case is when you need to save, set, or calculate something based on the previous (old) value of the field.</p>
-<p><em><strong>Example</strong></em></p>
-<p><strong>Event:</strong> ATTRIBUTECHANING(QuantityValue)
-<br><strong>Action:</strong> ActionType: SETVALUE | Attribute: Notes | Attribute: QuantityValue</p>
+<p><strong>Example</strong></p>
+<p><em><strong>Event:</strong></em> ATTRIBUTECHANING(QuantityValue)
+<br><em><strong>Action:</strong></em> ActionType: SETVALUE | Attribute: Notes | Attribute: QuantityValue</p>
 <p>The Quantity in the line is <strong>5.00</strong>.
 <br>The user changes the Quantity to <strong>7.00</strong>.
 <br>The change of the Quantity field triggers the rule and sets the Old value i.e. <strong>5.00</strong> to the Notes field.</p>
