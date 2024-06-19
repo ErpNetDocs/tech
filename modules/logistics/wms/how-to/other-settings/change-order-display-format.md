@@ -10,7 +10,7 @@ Having access to order data before you even take it allows you to instantly lear
 
 ## How to do it
 
-To change the information displayed on the first line of your orders, you need to edit the **OrderDisplayFormat** config key.
+To change the information displayed on the first line of your orders, you need to edit the **/WMS/WMS-Worker/OrderDisplayFormat** config key.
 
 You can learn more about it in the **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat)**.
 
