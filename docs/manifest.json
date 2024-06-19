@@ -3095,6 +3095,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/step_one.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/step_one.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/step_two.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/step_two.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/step_twoo.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/step_twoo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/step_twooo.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/step_twooo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/advanced/web-sites/pictures/instance-manager-restart-website.png",
       "output": {
         "resource": {
@@ -22265,7 +22309,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/other-settings/change-order-display-format.html",
-          "hash": "xBY4+wW0tDqQugJLqUGr5Q=="
+          "hash": "fJKHR/GfnMyxHOUdv7dgxA=="
         }
       },
       "is_incremental": false,
