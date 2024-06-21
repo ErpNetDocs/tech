@@ -138,7 +138,7 @@ Scheduling might be needed for different reasons:
 - The mileage for the next maintenance was reached (by tracked parameter).
 - The asset was purchased second hand and one initial maintenance should be scheduled after up to 20 days (manually planned).
 
-Each of the above represents a ***Managed asset maintenance schedules***. They can be both manually entered or automatically planned.
+Each of the above represents a **maintenance schedule** which can be both manually entered or automatically planned.
 
 > [!NOTE]
 > Emergency repair is not planned and it is not considered scheduled maintenance. <br> Emergency repairs are directly processed through **maintenance orders**.
