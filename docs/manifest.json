@@ -13391,7 +13391,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/enterprise-asset-management/index.html",
-          "hash": "4k/3Sknk+pcI3nGWqTuobA=="
+          "hash": "P6DXQ97kK8GzO94HCLKnLQ=="
         }
       },
       "is_incremental": false,
@@ -13783,6 +13783,18 @@
         ".html": {
           "relative_path": "modules/applications/mssync/setup.html",
           "hash": "g30xpb/aDefs6bgg2SF0DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/rental/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/rental/index.html",
+          "hash": "wXtAsRQaU4SOPlgjerluEw=="
         }
       },
       "is_incremental": false,

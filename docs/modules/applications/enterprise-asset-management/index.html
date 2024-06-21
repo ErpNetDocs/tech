@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enterprise asset management | ERP.net Tech Docs </title>
+    <title>Asset Management | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enterprise asset management | ERP.net Tech Docs ">
+    <meta name="title" content="Asset Management | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,62 +77,28 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="enterprise-asset-management">Enterprise asset management</h1>
+<h1 id="asset-management">Asset Management</h1>
 
-<h2 id="description">Description</h2>
-<p>From Wikipedia:</p>
-<p>Enterprise asset management (EAM) involves the maintenance management of an organization’s physical assets throughout each asset's lifecycle. EAM is used to plan, optimize, execute, and track the needed maintenance activities with the associated priorities, skills, materials, tools, and information. This covers the design, construction, commissioning, operations, maintenance and decommissioning or replacement of plant, equipment and facilities.</p>
-<p>You can learn more at:</p>
-<p><a href="https://en.wikipedia.org/wiki/Enterprise_asset_management">https://en.wikipedia.org/wiki/Enterprise_asset_management</a></p>
-<p>In ERP.net, the EAM deals with the maintenance and locations of the company assets.</p>
-<p>In the following sections, we will describe the different entity types, comprising the EAM data model.</p>
+<p><strong>Enterprise asset management (EAM)</strong> involves the maintenance management of an organization’s physical assets throughout each asset's lifecycle. It is used to plan, optimize, execute, and track the needed maintenance activities with the associated priorities, skills, materials, tools, and information. This covers the design, construction, commissioning, operations, maintenance and decommissioning or replacement of plant, equipment and facilities.</p>
+<p>You can learn more about EAM <strong><a href="https://en.wikipedia.org/wiki/Enterprise_asset_management">here</a></strong>.</p>
+<hr>
+<p>In ERP.net, EAM deals with the <strong>maintenance</strong> and <strong>locations</strong> of the company assets.</p>
+<p>In the following sections, we will describe the different entity types comprising the EAM data model.</p>
 <h2 id="maintenance-types">Maintenance types</h2>
-<p>When planning the required maintenance for an asset, there are different types of maintenance that can be required.</p>
+<p>When planning the required maintenance of an asset, you can schedule and perform different types of maintenance procedures.</p>
 <p>For example, if we have a car, we can plan:</p>
 <ul>
 <li>Insurance renewal - once per year</li>
-<li>Oil change - each 20,000 km</li>
+<li>Oil change - every 20,000 km</li>
 <li>Gearbox check - every 5 years OR 100,000 km</li>
 </ul>
-<p>Each of the above maintenances represents a different <em><strong>maintenance type</strong></em>.</p>
-<p>In an enterprise, there might be many different types of assets. Each type of asset requires different maintenance types. Some maintenance types might be applicable for multiple asset types and others -  unique for specific asset types.</p>
-<p>There might be many maintenance types and they need to be organized. That is why, there is the hierarchical organization, called <em><strong>Maintenance type groups</strong></em>.</p>
-<h2 id="asset-types">Asset types</h2>
-<p>In an enterprise, there might be many assets, which need to be managed. However, the different types of assets need different kinds of management. For this reason, we can define different <em><strong>asset types</strong></em>.</p>
-<p>Example asset types:</p>
-<ul>
-<li>Car</li>
-<li>Heavy truck</li>
-<li>Aircraft</li>
-<li>Building</li>
-<li>Street lamp</li>
-<li>Computer</li>
-</ul>
-<h2 id="asset-type---tracked-parameters">Asset type - tracked parameters</h2>
-<p>For each asset type, we can track different parameters. For example:</p>
-<ul>
-<li>Car
-<ul>
-<li>Mileage (in km)</li>
-</ul>
-</li>
-<li>Heavy truck
-<ul>
-<li>Mileage (in km)</li>
-<li>Cycles</li>
-</ul>
-</li>
-<li>Airplane
-<ul>
-<li>Flight hours</li>
-<li>Cycles</li>
-</ul>
-</li>
-</ul>
-<p>The tracked parameters are used to track the usage and wearing out of the asset and hence plan the desired maintenance.</p>
-<h2 id="asset-type---maintenance-mypes">Asset type - maintenance mypes</h2>
-<p>For each asset type, we define what kind of maintenance is needed for the assets of that type. Also, we can define a default schedule.</p>
-<p>For example:</p>
+<p>Each of the above represents a different <strong>maintenance type</strong> which can be scheduled based on a date and a tracked parameter change.</p>
+<p>In an enterprise, there can be many different <strong>types of assets</strong>, each requiring its own maintenance type.</p>
+<p>Some maintenance types may be applicable to multiple asset types and others -  unique for specific asset types.</p>
+<p>When a lot of maintenace types are present, they can be organized into <strong>Maintenance type groups</strong>.</p>
+<h3 id="asset-type-maintenance">Asset type maintenance</h3>
+<p>For each asset type, you can define what kind of maintenance is needed for its assets, as well as a default schedule.</p>
+<p><strong>Examples:</strong></p>
 <ul>
 <li>Car
 <ul>
@@ -160,23 +126,67 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You can see here that although both cars and heavy trucks need oil change, the required mileage is different. In practice, every car and truck might have even different mileage requirements.</p>
+<p>Although both cars and heavy trucks need oil change, the required mileage is different. <br> In practice, every car and truck may have different mileage requirements.</p>
 </div>
+<h2 id="managed-asset-types">Managed asset types</h2>
+<p>Depending on the management required by each asset, there can be different <strong>asset types</strong>.</p>
+<p>These are used to categorize the assets and the tracked parameters for each type.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Car</li>
+<li>Heavy truck</li>
+<li>Aircraft</li>
+<li>Building</li>
+<li>Street lamp</li>
+<li>Computer</li>
+</ul>
+<h3 id="tracked-parameters">Tracked parameters</h3>
+<p>For each asset type, you can track different parameters.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Car
+<ul>
+<li>Mileage (in km)</li>
+</ul>
+</li>
+<li>Heavy truck
+<ul>
+<li>Mileage (in km)</li>
+<li>Cycles</li>
+</ul>
+</li>
+<li>Airplane
+<ul>
+<li>Flight hours</li>
+<li>Cycles</li>
+</ul>
+</li>
+</ul>
+<p>The tracked parameters are used to track the usage and wearing out of the asset and hence plan the desired maintenance.</p>
 <h2 id="service-centers">Service centers</h2>
-<p>When planning the maintenance of the assets, the different maintenances are executed by different <em><strong>service centers</strong></em>. Then, each maintenance schedule for an asset is assigned to a different service center.</p>
-<p>The service center might be an authorized service center for the asset. But it might also be an employee(s), executing the desired maintenance.</p>
+<p>When planning the maintenance of assets, maintenance procedures are executed by different <strong>service centers</strong>.</p>
+<p>This works when each maintenance schedule for an asset is assigned to a respective service center.</p>
+<p>The service center could be an authorized service center for the asset, but it may also be an employee executing the desired maintenance.</p>
 <h2 id="managed-assets">Managed assets</h2>
-<p>Finally, we can define every asset, the maintenance of which will be managed by the application. The asset can be defined in other parts of the ERP - as fixed asset, as vehicle (in Fleet management), etc. Defining the asset in the EAM application as <em><strong>managed asset</strong></em>, allows its maintenance to be managed.</p>
-<p>Example managed assets:</p>
+<p>Managed assets are resources or items that an enterprise company company owns and keeps track of, such as equipment, vehicles, rental properties, or service tools. In ERP.net, these assets are organized and undergo maintenance planning and execution, location assignments tracking, etc.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Every fixed asset, rental asset, fleet vehicle, and service object can be linked to a managed asset through the <strong><a href="https://docs.erp.net/model/entities/Applications.AssetManagement.ManagedAssets.html">Managed Asset field</a></strong> present in their definitions. When creating them, make sure to specify the appropriate managed asset they will be tied to.</p>
+</div>
+<p>Defining assets as <strong>managed</strong> allows them to be tracked in one place - the definition of the managed asset they're related to. All you need to do is integrate them as <strong>panels</strong>, if they aren't already. That way, you will be able to see and access all of their important information.</p>
+<p>For additional convenience, you can also generate <strong>custom reports</strong> for all fixed assets, rental assets, fleet vehicles and service objects united under a common managed asset.</p>
+<p><strong>Examples:</strong></p>
 <ul>
 <li>Car Peugeot 508, Y2016, Reg.No. CC0303PM</li>
 <li>Car Jeep Grand Cherokee, Y2017, Reg.No.YY0202PS</li>
-<li>Mobile Station 5011, Address:...etc.</li>
+<li>Mobile Station 5011, Address</li>
 </ul>
-<p>Because there might be many managed assets, they are organized in a hierarchy of <em><strong>managed asset groups</strong></em>.</p>
-<h2 id="managed-assets---maintenance-schedules">Managed assets - maintenance schedules</h2>
-<p>When an asset is defined as specific <em><strong>asset type</strong></em>, it inherits some default maintenance schedules. However, each asset might be of different age and wear and might have unique maintenance needs. Hence, the specific maintenance schedules of each specific managed asset are defined in <em><strong>Managed asset maintenance schedules</strong></em>.</p>
-<p>For example:</p>
+<p>Since there could be many managed assets, they can organized in a hierarchy of <strong>Managed asset groups</strong>.</p>
+<h3 id="maintenance-schedules">Maintenance schedules</h3>
+<p>When an asset has a <strong>type</strong> defined for it, it inherits some default maintenance schedules.</p>
+<p>However, each asset may be of different age and wear and might have unique maintenance needs.</p>
+<p>That is why specific <strong>maintenance schedules</strong> for each managed asset are necessary.</p>
+<p><strong>Examples:</strong></p>
 <ul>
 <li>Car Peugeot 508, Y2016, Reg.No. CC0303PM
 <ul>
@@ -191,25 +201,27 @@
 </ul>
 </li>
 </ul>
-<h2 id="managed-assets---scheduled-maintenances">Managed assets - scheduled maintenances</h2>
-<p>The maintenance schedules define the general plan for maintenance. However, we have to schedule each specific maintenance as well. The scheduling might be for different reasons:</p>
+<h3 id="scheduled-maintenances">Scheduled maintenances</h3>
+<p>Maintenance schedules define the general plan for maintenance. However, you need to schedule each specific maintenance as well.</p>
+<p>Scheduling might be needed for different reasons:</p>
 <ul>
 <li>The time limit after the last maintenance was reached (by date).</li>
 <li>The mileage for the next maintenance was reached (by tracked parameter).</li>
 <li>The asset was purchased second hand and one initial maintenance should be scheduled after up to 20 days (manually planned).</li>
 </ul>
-<p>Each of the above represents a <em><strong>Managed asset maintenance schedules</strong></em>. They can be both manually entered or automatically planned.</p>
+<p>Each of the above represents a <strong>maintenance schedule</strong> which can be both manually entered or automatically planned.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Emergency repair is not planned hence it is not scheduled maintenance. Emergency repairs are directly processed through Maintenance orders (which will be shortly presented).</p>
+<p>Emergency repair is not planned and it is not considered scheduled maintenance. <br> Emergency repairs are directly processed through <strong>maintenance orders</strong>.</p>
 </div>
-<h2 id="managed-assets---locations">Managed assets - locations</h2>
-<p>The EAM module allows the tracking of asset assignments to different company locations and responsible persons. Assets can also be re-assigned multiple times (even within a month).</p>
+<h3 id="locations">Locations</h3>
+<p>The EAM module allows for the tracking of asset assignments by different company locations and responsible persons.</p>
+<p>Assets can also be re-assigned multiple times (even within a month).</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Asset assignment can be used to determine the cost centers to which the depreciation will be distributed.</p>
 </div>
-<p>Asset locations contains data about each assignment:</p>
+<p>Asset locations contain the following data about each assignment:</p>
 <ul>
 <li>Date of assignment</li>
 <li>Company location</li>
@@ -217,17 +229,18 @@
 <li>Notes - for more precise location or other notes.</li>
 </ul>
 <h2 id="maintenance-orders">Maintenance orders</h2>
-<p>The <em><strong>maintenance order</strong></em> document is the final data piece in the EAM data model. It represents one concrete appointment for a specific type of maintenance(s) for one (or many) specific asset(s).</p>
-<p>It is created by the maintenance planner to denote the actual appointment with the service center.</p>
-<p>The statuses of the maintenance order correspond to the progress of the maintenance:</p>
+<p>The <strong>maintenance order</strong> document is the final data piece in the EAM data model. It represents one specific appointment for a specific type of maintenance for one (or many) specific assets.</p>
+<p>Orders are created by the maintenance planner to denote the actual appointment with the service center.</p>
+<p>Document statuses correspond to the progress of the maintenance:</p>
 <ul>
-<li>Firm Planned - the maintenance is appointed with the service center for specific time and date.</li>
-<li>Released - the maintenance has started (used mostly for maintenances which are performed in-house)</li>
-<li>Completed - the maintenance was performed.</li>
+<li><strong>Firm Planned</strong> - the maintenance is appointed with the service center for specific time and date.</li>
+<li><strong>Released</strong> - the maintenance has started (used mostly for maintenances which are performed in-house)</li>
+<li><strong>Completed</strong> - the maintenance was performed.</li>
 </ul>
 <p>Maintenance orders can create other sub-documents to represent the actual work (like service orders) or the materials requested and used (store order / store transaction), etc.</p>
-<h2 id="maintenance-order---lines">Maintenance order - lines</h2>
-<p>One maintenance order can appoint at once the maintenance of many managed assets. Each maintenance type for each asset is represented with one <em><strong>maintenance order line</strong></em>.</p>
+<h3 id="lines">Lines</h3>
+<p>One maintenance order can appoint the maintenance of multiple managed assets.</p>
+<p>Each maintenance type for each asset is represented by one <strong>maintenance order line</strong>.</p>
 </article>
           </div>
           
