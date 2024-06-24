@@ -2,8 +2,8 @@
 
 You can use system variables for **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** with the "STATECHANGED" and "STATECHANGING" events to trigger specific actions when changing the user status of a document.
 
-- **$FromUserStatusId** – the rule is tied to the initial user status
-- **$ToUserStatusId** – the rule is tied to the user status the initial one will be changed to
+- **$FromUserStatusId** - ties the rule to the initial user status, ensuring that actions are triggered based on the starting status of a document
+- **$ToUserStatusId** - ties the rule to the target user status, allowing actions to be triggered when the document transitions to the specified status.
 
 ## Set up a business rule
 
@@ -13,11 +13,11 @@ In the end, we should trigger a warning message when changing an offer's documen
 
 ### Step-by-step example
 
-1. If not present, create at least two user statuses for the _FIRMPLANNING_ document state of the _Offer_ document type.
-2. Define a _STATECHANGING_ event with a _FIRMPLANNING_ parameter.
+1. If not present, create at least two user statuses for the _FIRMPLANNED_ document state of the _Offer_ document type.
+2. Define a _STATECHANGING_ event with a _FIRMPLANNED_ parameter.
 3. In the **Conditions** panel, select _$ToUserStatusId_ from the **Attribute name** field.
 
-   Within the **Value** field, input the ID of the user status corresponding with the _FIRMLANNING_ state of the Offer document type.
+   Within the **Value** field, input the ID of the user status corresponding with the _FIRMPLANNED_ state of the Offer document type.
 
 	![picture](pictures/conditions_set.png)
 
