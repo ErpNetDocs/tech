@@ -91,8 +91,9 @@ If you choose to begin a new operation **before** completing the latest one, a *
 
 ![Inventory Control](pictures/Warning_message_25_01.png)
 
-[!NOTE]
-If in the middle of the execution you decide to change Language, Company or Location from the User menu, you will be taken to the initial IC screen with no progress saved.
+>[!NOTE]
+
+>If in the middle of the execution you decide to change Language, Company or Location from the User menu, you will be taken to the initial IC screen with no progress saved.
 
 
 Learn more about Inventory Control in the following articles:
