@@ -2296,7 +2296,51 @@
       "output": {
         ".html": {
           "relative_path": "advanced/user-business-rules/examples/manage-user-status.html",
-          "hash": "bVgmp8cil1uSUAq8TfXkdA=="
+          "hash": "WuFCtaWstAjbL85hEy1Vww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/condition_set.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/condition_set.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/conditions_set.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/conditions_set.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/statechanged.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/statechanged.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/user-business-rules/examples/pictures/statechangeds.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/user-business-rules/examples/pictures/statechangeds.png"
         }
       },
       "is_incremental": false,
@@ -19068,7 +19112,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/index.html",
-          "hash": "BNK14JYJJYVk5s8PLQyF1g=="
+          "hash": "TrkNtVDPuzr7kUsoxsMifg=="
         }
       },
       "is_incremental": false,
