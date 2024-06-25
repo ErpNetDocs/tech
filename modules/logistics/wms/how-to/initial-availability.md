@@ -39,11 +39,10 @@ When you open the definition of the created order/s, you can review and edit the
 
 The information specified in these lines will be directly used to form the availability. 
 
-Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
+Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. Please specify a warehouse worker as well, as it is a required field to release the document. You can select any worker you prefer.
 
-![Picture](pictures/result-order.png)
+![Picture](pictures/result_order.png)
 
-Please specify a warehouse worker as well, as it is a required field to release the document. You can select any worker you prefer.
 
 ## Execute the lines to form the availability
 
