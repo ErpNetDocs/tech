@@ -81,7 +81,8 @@
 
 <p>When working in the WMS module, one of the first things you need to do is enter the <strong>initial availability balance</strong>.</p>
 <p>The system comes with two functions that will help you ease the process – one for loading the current availability from the Inventory module and another that will apply the reviewed availability to the WMS module.</p>
-<h2 id="loading-the-initial-warehouse-availability">Loading the initial warehouse availability</h2>
+<p>Here are more details on what they do and how to use them.</p>
+<h2 id="loading-the-inventory-availability-using-the-load-initial-available-balance-ui-function">Loading the inventory availability using the 'Load initial available balance' UI function</h2>
 <p>The first function is located in the Managed Warehouse definition.</p>
 <p>With it, you can enter availability for the current Warehouse by loading the current availability from an existing Store of the Inventory management module.</p>
 <p>The function loads availability from the selected Store and creates Warehouse Orders for the corresponding Warehouse. The lines of these Warehouse Orders contain the loaded availability.  Then, they can be reviewed, edited (if necessary), and executed by the second function.</p>
@@ -91,12 +92,15 @@
 <p><img src="pictures/window.png" alt="Picture"></p>
 <p>Once you’ve made your selections, click OK.</p>
 <p><img src="pictures/button-ok.png" alt="Picture"></p>
-<p>The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result.</p>
+<p>The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result. Click on the link to open the definition of the created order/s.</p>
 <p><img src="pictures/message-link.png" alt="Picture"></p>
-<p>If you click on the link, you’ll be taken to the definition of the order. There you can review and edit (if needed) the results i.e. the warehouse order lines. Once the review is done,  you can release the document and execute its line using the second function.</p>
-<h2 id="executing-the-lines">Executing the lines</h2>
-<p>The next step in entering the availabilities is the execution of warehouse order lines. Once they are reviewed and the document is released, the information in them is applied to the Warehouse Availability using the &quot;Execute lines&quot; function.</p>
-<p>For more information about the function and how to use it, see the <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function">&quot;Execute lines UI function&quot;</a>.</p>
+<h2 id="review-and-edit-the-results">Review and edit the results</h2>
+<p>When you open the definition of the created order/s, you can review and edit the results of the previous function i.e. the warehouse order lines.</p>
+<p>The information specified in these lines will be directly used to form the availability.</p>
+<p>Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the <a class="xref" href="../logistic-units/index.html">Logistic Units</a> (if any), and make any additional changes to the information in the lines to achieve the desired availability. Please specify a warehouse worker as well, as it is a required field to release the document. You can select any worker you prefer.</p>
+<p><img src="pictures/order_definition.png" alt="Picture"></p>
+<h2 id="execute-the-lines-to-form-the-availability">Execute the lines to form the availability</h2>
+<p>Once all the information in the lines is filled and reviewed, it is time to release the document and execute its line using the second function - the &quot;Execute lines&quot; function. For more information about the function and how to use it, see the <a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function">&quot;Execute lines UI function&quot;</a>.</p>
 </article>
           </div>
           

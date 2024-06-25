@@ -3139,6 +3139,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/condition_set.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/condition_set.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/conditions_set.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/conditions_set.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/statechanged.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/statechanged.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/statechangeds.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/advanced/user-business-rules/examples/pictures/statechangeds.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/advanced/user-business-rules/examples/pictures/step_one.png",
       "output": {
         "resource": {
@@ -22329,7 +22373,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/execute-order-lines.html",
-          "hash": "+aT34M8LoFcYtpNHFGo1pQ=="
+          "hash": "CzegkNOSBYQgYSWTqQt7oA=="
         }
       },
       "is_incremental": false,
@@ -22353,7 +22397,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/initial-availability.html",
-          "hash": "P7TF31GNvgz9AAPaCGgnhg=="
+          "hash": "tggJisrmE9gI/pagszxWbw=="
         }
       },
       "is_incremental": false,
@@ -22815,6 +22859,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/order_definition.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/order_definition.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/reconcile-menu.png",
       "output": {
         "resource": {
@@ -22863,6 +22918,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/release-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/result_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/result_order.png"
         }
       },
       "is_incremental": false,
