@@ -41,7 +41,7 @@ The information specified in these lines will be directly used to form the avail
 
 Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. Please specify a warehouse worker as well, as it is a required field to release the document. You can select any worker you prefer.
 
-![Picture](pictures/result_order.png)
+![Picture](pictures/order_definition.png)
 
 
 ## Execute the lines to form the availability
