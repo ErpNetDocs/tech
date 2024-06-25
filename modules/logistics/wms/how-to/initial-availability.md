@@ -35,8 +35,6 @@ Now it's time to execute the lines.
 
 The next step in entering the availabilities is executing the warehouse order and the information in its lines.
 
-When you open the definition of the created order/s, you can review and edit the results i.e. the warehouse order lines. The information specified in these lines will be directly used to form the availability.  
-
-At this step, you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
+When you open the definition of the created order/s, you can review and edit the results of the previous function i.e. the warehouse order lines. The information specified in these lines will be directly used to form the availability. Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
 
 Once all the information in the lines is filled and reviewed, it is time to release the document and execute its line using the second function - the "Execute lines" function. For more information about the function and how to use it, see the ["Execute lines UI function"](https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function).
