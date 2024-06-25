@@ -4,7 +4,10 @@ When working in the WMS module, one of the first things you need to do is enter 
 
 The system comes with two functions that will help you ease the process – one for loading the current availability from the Inventory module and another that will apply the reviewed availability to the WMS module.
 
-## Loading the initial warehouse availability
+Here are more details on what they do and how to use them.
+
+
+## Loading the inventory availability using the 'Load initial available balance' UI function
 
 The first function is located in the Managed Warehouse definition. 
 
@@ -28,13 +31,18 @@ The availabilities from the selected store will be loaded, and you'll receive a 
 
 ![Picture](pictures/message-link.png)
 
-Now it's time to execute the lines.
 
-
-## Executing the lines
+## Review and edit the results
 
 The next step in entering the availabilities is executing the warehouse order and the information in its lines.
 
-When you open the definition of the created order/s, you can review and edit the results of the previous function i.e. the warehouse order lines. The information specified in these lines will be directly used to form the availability. Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
+When you open the definition of the created order/s, you can review and edit the results of the previous function i.e. the warehouse order lines.
+
+The information specified in these lines will be directly used to form the availability. 
+
+Therefore this is the step, where you should review the quantities, assign the Warehouse Locations and the @LU (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
+
+
+## Execute the lines to form the availability
 
 Once all the information in the lines is filled and reviewed, it is time to release the document and execute its line using the second function - the "Execute lines" function. For more information about the function and how to use it, see the ["Execute lines UI function"](https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function).
