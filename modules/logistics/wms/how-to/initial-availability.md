@@ -24,14 +24,19 @@ Once you’ve made your selections, click OK.
 
 ![Picture](pictures/button-ok.png)
 
-The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result.
+The availabilities from the selected store will be loaded, and you'll receive a message containing the link(s) with the created document/s that contains the result. Click on the link to open the definition of the created order/s. 
 
 ![Picture](pictures/message-link.png)
 
-If you click on the link, you’ll be taken to the definition of the order. There you can review and edit (if needed) the results i.e. the warehouse order lines. Once the review is done,  you can release the document and execute its line using the second function.
+Now it's time to execute the lines.
+
 
 ## Executing the lines
 
-The next step in entering the availabilities is the execution of warehouse order lines. Once they are reviewed and the document is released, the information in them is applied to the Warehouse Availability using the "Execute lines" function. 
+The next step in entering the availabilities is executing the warehouse order and the information in its lines.
+
+When you open the definition of the created order/s, you can review and edit the results i.e. the warehouse order lines.  The information specified in these lines will be directly used to form the availability.  At this, you should review the quantities, assign the Warehouse Locations and the Logistic Units (if any), and make any additional changes to the information in the lines to achieve the desired availability. 
+
+Once all the information in the lines is filled and reviewed, it is time to release the document and execute its line using the second function - the "Execute lines" function. 
 
 For more information about the function and how to use it, see the ["Execute lines UI function"](https://docs.erp.net/tech/modules/logistics/wms/how-to/execute-order-lines.html#execute-lines-ui-function).
