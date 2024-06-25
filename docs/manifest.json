@@ -11158,6 +11158,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/order_definition.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/order_definition.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/reconcile-menu.png",
       "output": {
         "resource": {
@@ -11206,6 +11217,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/logistics/wms/how-to/pictures/release-document.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/wms/how-to/pictures/result_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/wms/how-to/pictures/result_order.png"
         }
       },
       "is_incremental": false,
@@ -13492,6 +13514,96 @@
         ".html": {
           "relative_path": "modules/applications/index.html",
           "hash": "0MSMjkRZiVpmqKRnTCW0bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/lease-out-manager/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/lease-out-manager/index.html",
+          "hash": "HsBa/HJajSCPWLwBjCtgdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/lease-out-manager/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/lease-out-manager/pictures/index.html",
+          "hash": "2XFs0hE+fObri27Vmm5Lcg=="
         }
       },
       "is_incremental": false,
