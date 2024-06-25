@@ -24,7 +24,7 @@ The **Orders** menu is used by the warehouse worker to execute the lines of the 
 
 This function is available in the definition of each warehouse order.
 
-When started, it executes warehouse order lines based on the information specified in them, like product, quantity and lot.
+When initiated, it executes warehouse order lines based on the specified information, such as product, quantity, lot, warehouse location, and other details.
 
 As a result, it creates warehouse transactions, document fulfillments, or both, depending on the particular line's **[task type](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/task-types/index.html)**. 
 
