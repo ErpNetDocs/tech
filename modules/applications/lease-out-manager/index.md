@@ -14,7 +14,7 @@ The **Documents** section contains all essential records and contracts related t
 
 It provides a centralized repository for managing lease agreements and transaction records, ensuring easy access and organization of important documents.
 
-![picture](pictures/Overview_view_nohighlights_01_03.png)
+![picture](pictures/Lease_out_documents_25_06.png)
 
 ### Rent Lease Contracts Navigator
 
