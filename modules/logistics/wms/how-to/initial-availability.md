@@ -34,7 +34,6 @@ The availabilities from the selected store will be loaded, and you'll receive a 
 
 ## Review and edit the results
 
-The next step in entering the availabilities is executing the warehouse order and the information in its lines.
 
 When you open the definition of the created order/s, you can review and edit the results of the previous function i.e. the warehouse order lines.
 
