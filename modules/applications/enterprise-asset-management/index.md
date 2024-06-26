@@ -94,7 +94,16 @@ The service center could be an authorized service center for the asset, but it m
 
 ## Managed assets
 
-Managed assets are resources or items that an enterprise company company owns and keeps track of, such as equipment, vehicles, rental properties, or service tools. In @@name, these assets are organized and undergo maintenance planning and execution, location assignments tracking, etc.
+Managed assets are resources or items that an enterprise company owns or leases and keeps track of, such as equipment, vehicles, rental properties, or service tools. In @@name, these assets are organized and undergo maintenance planning and execution, location assignments tracking, etc.
+
+**Examples:**
+
+- Car Peugeot 508, Y2016, Reg.No. CC0303PM
+- Car Jeep Grand Cherokee, Y2017, Reg.No.YY0202PS
+- Mobile Station 5011, Address: 250 Market Street
+- Apartment 3B, 120 Main Street, Cityville
+- Mobile Generator Unit 201, Address: 789 Industrial Road
+- MRI Scanner, Address: 456 Health Ave
 
 >[!IMPORTANT]
 > Every fixed asset, rental asset, fleet vehicle, and service object can be linked to a managed asset through the **[Managed Asset field](https://docs.erp.net/model/entities/Applications.AssetManagement.ManagedAssets.html)** present in their definitions. When creating them, make sure to specify the appropriate managed asset they will be tied to.
@@ -102,12 +111,6 @@ Managed assets are resources or items that an enterprise company company owns an
 Defining assets as **managed** allows them to be tracked in one place - the definition of the managed asset they're related to. All you need to do is integrate them as **panels**, if they aren't already. That way, you will be able to see and access all of their important information.
 
 For additional convenience, you can also generate **custom reports** for all fixed assets, rental assets, fleet vehicles and service objects united under a common managed asset.
-
-**Examples:**
-
-- Car Peugeot 508, Y2016, Reg.No. CC0303PM
-- Car Jeep Grand Cherokee, Y2017, Reg.No.YY0202PS
-- Mobile Station 5011, Address
 
 Since there could be many managed assets, they can organized in a hierarchy of **Managed asset groups**.
 
