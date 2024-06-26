@@ -38,9 +38,7 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you from when they have been leased and until when.
-
-This lets you know immediately when they will be free to lease again.
+The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you from when they have been leased and until when. This lets you know when they will be free to lease again.
 
 ## Reports
 
@@ -71,6 +69,10 @@ Focuses on the consumables often purchased with rental assets.
 The **Definitions** portion of Rental provides detailed information about all rentable assets and their classifications. 
 
 It's here that you can also add new asset types and groups necessary for the creation of a rental asset.
+
+> [!NOTE]
+> Certain definitions can also be created during the process of filling out the lease contract. <br>
+> All the information you provide for a rental asset in advance of creating a lease contract will be automatically added when you select the rental asset for that contract.
 
 ![picture](pictures/Lease_out_definitions_25_06.png)
 
