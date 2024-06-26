@@ -71,7 +71,7 @@ The **Definitions** portion of Rental provides detailed information about all re
 It's here that you can also add new asset types and groups necessary for the creation of a rental asset.
 
 > [!NOTE]
-> Certain definitions can also be created during the process of filling out the lease contract. <br>
+> Certain definitions can also be created during the process of filling out the lease contract. <br><br>
 > All the information you provide for a rental asset in advance of creating a lease contract will be automatically added when you select the rental asset for that contract.
 
 ![picture](pictures/Lease_out_definitions_25_06.png)
