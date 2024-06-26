@@ -8,7 +8,7 @@ By providing a structured and detailed approach to asset management, the **Renta
 
 ![picture](pictures/Lease_out_view_25_06.png)
 
-## DOCUMENTS
+## Documents
 
 The **Documents** section contains all essential records and contracts related to the leasing process. 
 
@@ -24,7 +24,7 @@ Contains the lease contracts for rental assets, providing a centralized location
 
 Access all transaction records, including the records of handover and handing-over activities related to the rental assets.
 
-## FUNCTIONS
+## Functions
 
 The **Functions** section includes tools that facilitate the day-to-day management of leasing activities. 
 
@@ -36,7 +36,7 @@ It offers functionalities that help users keep track of key dates and events, en
 
 Manage and track important dates and events related to lease contracts and transactions, ensuring timely renewals and compliance.
 
-## REPORTS
+## Reports
 
 The **Reports** section generates comprehensive insights and summaries of the leasing activities. 
 
@@ -60,7 +60,7 @@ Contains detailed records of all transactions, including handover and handing-ov
 
 Focuses on the consumables associated with lease contracts, helping users to track and manage expendable items.
 
-## DEFINITIONS
+## Definitions
 
 The **Definitions** section provides detailed information about all rentable assets and their classifications. 
 
@@ -104,7 +104,7 @@ Defines different types of consumable items related to rental assets.
 
 Provides the functionality to define new types of consumable items, ensuring comprehensive categorization.
 
-## SETTINGS
+## Settings
 
 The **Settings** section allows users to define the properties and attributes of various asset types. 
 
