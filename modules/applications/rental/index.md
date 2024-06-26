@@ -1,10 +1,10 @@
-# Lease Out-Management 
+# Rental
 
-The **Lease Out-Management** module in **ERP.net** is a comprehensive tool designed to manage the leasing process of rental assets efficiently. 
+The **Rental** module is a comprehensive tool designed to manage the leasing process of rental assets efficiently. 
 
-Located in the applications section, this module is divided into various panels and sections, each serving a specific function to ensure effective management of leases, assets, and transactions. 
+Located in the Applications section, this module is divided into various panels and sections, each serving a specific function to ensure effective management of leases, assets, and transactions. 
 
-By providing a structured and detailed approach to asset management, the **Lease Out-Management** module helps organizations optimize their rental operations and enhance their leasing processes.
+By providing a structured and detailed approach to asset management, the **Rental** module helps organizations optimize their rental operations and enhance their leasing processes.
 
 ![picture](pictures/Lease_out_view_25_06.png)
 
