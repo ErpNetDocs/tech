@@ -76,39 +76,23 @@ It's here that you can also add new asset types and groups necessary for the cre
 
 ### Rental Assets
 
-This is where rental assets are stored. 
-
-### Create New Rental Assets
-
-Allows users to add new assets to the rental inventory, ensuring the database is up-to-date.
+This is where rental assets are created and stored. 
 
 ### Asset Types
 
-Defines the various types of assets available for rent, providing a structured classification for better management.
-
-### Create New Asset Types
-
-Enables users to define new asset types, ensuring flexibility in asset categorization.
+Defines the various types of assets available for rent which are later tied to a rental asset.
 
 ### Asset Groups
 
-Groups rentable assets into a hierarchy of logical groups, simplifying the management of large inventories.
+Categorizes rentable assets into hierarchies of larger groups.
 
 ### Assets – Consumables
 
-Contains information about consumable items related to rental assets, aiding in the management of these expendables.
-
-### Create New Assets – Consumables
-
-Allows the addition of new consumable items to the inventory.
+Creates and contains consumable items related to rental assets.
 
 ### Asset Types – Consumables
 
-Defines different types of consumable items related to rental assets.
-
-### Create New Asset Types – Consumables
-
-Provides the functionality to define new types of consumable items, ensuring comprehensive categorization.
+Defines the different types of consumable items related to rental assets.
 
 ## Settings
 
