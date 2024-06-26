@@ -8,7 +8,7 @@ By providing a structured approach as well as the ability to generate detailed r
 
 > [!NOTE]
 > Rental is referred to as **Lease-Out Management** in the ERP.net Desktop Client. <br><br>
-> To make this overview more comprehensive, screenshots and references will be used from the Desktop Client.
+> For the purposes of this overview, screenshots and references will be used from the Desktop Client.
 
 ![picture](pictures/Lease_out_view_25_06.png)
 
