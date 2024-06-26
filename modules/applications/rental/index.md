@@ -14,9 +14,9 @@ By providing a structured approach as well as the ability to generate detailed r
 
 ## Documents
 
-The **Documents** section contains all essential records and contracts related to the leasing process. 
+The **Documents** portion of Rental contains all essential records and contracts related to the leasing process. 
 
-It provides a centralized repository for managing lease agreements and transaction records, ensuring easy access and organization of important documents.
+It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.
 
 ![picture](pictures/Lease_out_documents_25_06.png)
 
