@@ -132,7 +132,7 @@ Defines the different types of consumable items related to rental assets.
 
 The **Settings** portion of Rental allows you to define or change individual properties and attributes of various asset types. 
 
-This ensures a more custom approach to how you structure your rental assets.
+This includes different user characteristics and ensures a more custom approach to how you structure your rental assets.
 
 ![picture](pictures/Lease_out_settings_25_06.png)
 
