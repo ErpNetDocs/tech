@@ -108,6 +108,8 @@ Managed assets are resources or items that an enterprise company owns or leases 
 >[!IMPORTANT]
 > Every fixed asset, rental asset, fleet vehicle, and service object can be linked to a managed asset through the **[Managed Asset field](https://docs.erp.net/model/entities/Applications.AssetManagement.ManagedAssets.html)** present in their definitions. When creating them, make sure to specify the appropriate managed asset they will be tied to.
 
+![Pictures](pictures/asset_managed_example.png)
+
 Defining assets as **managed** allows them to be tracked in one place - the definition of the managed asset they're related to. All you need to do is integrate them as **panels**, if they aren't already. That way, you will be able to see and access all of their important information.
 
 For additional convenience, you can also generate **custom reports** for all fixed assets, rental assets, fleet vehicles and service objects united under a common managed asset.
