@@ -66,13 +66,13 @@ Focuses on the consumables often purchased with rental assets.
 
 ## Definitions
 
-The **Definitions** portion of Rental provides detailed information about all rentable assets and their classifications. 
+The **Definitions** portion of Rental provides detailed information about all rentable assets, their classifications and consumables. 
 
-It's here that you can also add new asset types and groups necessary for the creation of a rental asset.
+It's here, for instance, that you can add new asset types and groups necessary for the creation of the rental asset itself.
 
 > [!NOTE]
 > Certain definitions can also be created during the process of filling out the lease contract. <br><br>
-> All the information you provide for a rental asset in advance of creating a lease contract will be automatically added when you select the rental asset for that contract.
+> All the information you provide for a rental asset in advance of creating a lease contract will be automatically added in that contract when you select the respective rental asset.
 
 ![picture](pictures/Lease_out_definitions_25_06.png)
 
@@ -82,15 +82,15 @@ This is where rental assets are created and stored.
 
 ### Asset Types
 
-Defines the various types of assets available for rent which are later tied to a rental asset.
+Defines the various rental asset types which are later tied to a rental asset.
 
 ### Asset Groups
 
-Categorizes rentable assets into hierarchies of larger groups.
+Categorizes rental assets into hierarchies of larger groups.
 
 ### Assets – Consumables
 
-Creates and contains consumable items related to rental assets.
+Defines consumable items related to rental assets.
 
 ### Asset Types – Consumables
 
@@ -100,7 +100,7 @@ Defines the different types of consumable items related to rental assets.
 
 The **Settings** portion of Rental allows you to define or change individual properties and attributes of various asset types. 
 
-This ensures a more custom approach to how you define your assets.
+This ensures a more custom approach to how you structure your rental assets.
 
 ![picture](pictures/Lease_out_settings_25_06.png)
 
