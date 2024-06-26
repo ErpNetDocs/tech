@@ -4,7 +4,7 @@ The **Rental** section is designed to oversee and control the leasing process of
 
 Located in the **Applications** module, it is divided into various panels, each serving a specific function to ensure effective management of documents, assets, and transactions. 
 
-By providing a structured and detailed approach, **Rental** offers a comprehensive solution to all rental-related processes and operations.
+By providing a structured approach as well as the ability to generate detailed reports, **Rental** offers a comprehensive aid to all rental-related processes and operations.
 
 > [!NOTE]
 > Rental is referred to as **Lease-Out Management** in the ERP.net Desktop Client. <br><br>
