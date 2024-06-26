@@ -3370,6 +3370,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/applications/mssync/pictures/Home_UTC_01_03.png",
       "output": {
         "resource": {
@@ -13501,7 +13567,18 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/enterprise-asset-management/index.html",
-          "hash": "P6DXQ97kK8GzO94HCLKnLQ=="
+          "hash": "tN20qJoVmop290d6gRB3CA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/enterprise-asset-management/pictures/asset_managed_example.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/enterprise-asset-management/pictures/asset_managed_example.png"
         }
       },
       "is_incremental": false,
@@ -13513,19 +13590,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/index.html",
-          "hash": "0MSMjkRZiVpmqKRnTCW0bw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/applications/lease-out-manager/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/applications/lease-out-manager/index.html",
-          "hash": "HsBa/HJajSCPWLwBjCtgdA=="
+          "hash": "AbyeYHumVV7dXf+hqXGh8Q=="
         }
       },
       "is_incremental": false,
@@ -13592,18 +13657,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/index.html",
-          "hash": "2XFs0hE+fObri27Vmm5Lcg=="
         }
       },
       "is_incremental": false,
@@ -13994,7 +14047,73 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/rental/index.html",
-          "hash": "wXtAsRQaU4SOPlgjerluEw=="
+          "hash": "VwErdcQl7M1zi6q83d8oCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_definitions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_definitions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_documents_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_documents_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_functions_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_functions_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_reports_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_reports_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_settings_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_settings_25_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Lease_out_view_25_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Lease_out_view_25_06.png"
         }
       },
       "is_incremental": false,
@@ -25250,7 +25369,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "q93RR3fNtV3JJpS2LKipWg=="
+          "hash": "h7OOkRmdeLg2nhsjr6BN7g=="
         }
       },
       "is_incremental": false,
