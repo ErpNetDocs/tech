@@ -1,6 +1,6 @@
 # Rental
 
-The **Rental** section is designed to oversee and control the leasing process of all ERP.net rental assets. 
+The **Rental** section is designed to oversee and control the leasing process of all owned and rented assets. 
 
 Located in the **Applications** module, it is divided into various panels, each serving a specific function to ensure effective management of documents, assets, and transactions. 
 
