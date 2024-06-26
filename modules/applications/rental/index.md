@@ -1,3 +1,0 @@
-# Rental
-
-To be updated.
