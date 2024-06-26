@@ -1,10 +1,14 @@
 # Rental
 
-The **Rental** module is a comprehensive tool designed to manage the leasing process of rental assets efficiently. 
+The **Rental** section is a comprehensive tool designed to manage the leasing process of rental assets efficiently. 
 
-Located in the Applications section, this module is divided into various panels and sections, each serving a specific function to ensure effective management of leases, assets, and transactions. 
+Located in the **Applications** module, it is divided into various panels and sections, each serving a specific function to ensure effective management of leases, assets, and transactions. 
 
 By providing a structured and detailed approach to asset management, the **Rental** module helps organizations optimize their rental operations and enhance their leasing processes.
+
+> [!NOTE]
+> Rental is referred to as Lease-Out Management in the ERP.net Desktop Client. <br>
+> For the purposes of this overview, screenshots and references will be used from the Desktop Client.
 
 ![picture](pictures/Lease_out_view_25_06.png)
 
