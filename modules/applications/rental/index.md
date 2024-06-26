@@ -12,21 +12,47 @@ By providing a structured approach as well as the ability to generate detailed r
 
 ![picture](pictures/Lease_out_view_25_06.png)
 
+### Types
+
+There are two types of assets which you can create and manage through Rental:
+
+1. **Rental assets** - specified in the lease contract lines
+2. **Consumables** - specified in a separate Lease Line Consumable panel
+
+In the context of a rental asset, a consumable typically refers to items or materials that are used up and need to be replaced regularly as part of the asset's operation or maintenance. 
+
+Consumables are therefore tied to a rental asset but are treated as distinct **products**. The rental asset itself is expected to be returned in reusable condition.
+
+> [!NOTE]
+> Each rental asset can also be categorized as a **[Managed Asset](https://docs.erp.net/tech/modules/applications/enterprise-asset-management/index.html#managed-assets)**.
+
 ## Documents
 
-The **Documents** portion of Rental contains all essential records and contracts related to the leasing process. 
+The **Documents** portion of Rental contains all essential transactions and contracts related to the leasing process, including:
+
+1. Lease contract  - the main lease document containing the rental asset/s and its consumable/s
+2. Issue transaction - contains the date of leasing out (deliver) the rental asset
+3. Receipt transaction - contains the date of return (receive) of the rental asset 
 
 It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.
 
 ![picture](pictures/Lease_out_documents_25_06.png)
 
+### Document flow
+
+A sample document flow for leasing out assets and consumables goes like this:
+
+> Lease Contract --> Issue Transaction --> Receipt Transaction --> Sales Order (Consumable) --> Sales Order (Rent)
+
 ### Rent Lease Contracts Navigator
 
-Contains all existing lease contract agreements issued for rental assets, also offering the ability to create new ones.
+This navigator contains all existing lease contract agreements issued for rental assets, including those for consumables, and also offers the ability to create new ones.
+
+You can include as many rental assets in a lease contract as needed. Required information includes defining a **time period type** for lease, **start date** and **end date**.
 
 ### Transactions Navigator
 
-Gives access to all transaction records associated with a lease contract, including those for handover and handing-over activities.
+Gives access to all protocols following or associated with a lease contract, including those for handover and handing-over activities.
 
 ## Functions
 
@@ -38,7 +64,7 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you from when they have been leased and until when. This lets you know when they will be free to lease again.
+The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
 
 ## Reports
 
@@ -68,21 +94,25 @@ Focuses on the consumables often purchased with rental assets.
 
 The **Definitions** portion of Rental provides detailed information about all rentable assets, their classifications and consumables. 
 
-It's here, for instance, that you can add new asset types and groups necessary for the creation of the rental asset itself.
+It's here, for instance, that you can add new asset **types** and **groups** necessary for the creation of the rental asset itself.
 
 > [!NOTE]
 > Certain definitions can also be created during the process of filling out the lease contract. <br><br>
-> All the information you provide for a rental asset in advance of creating a lease contract will be automatically added in that contract when you select the respective rental asset.
+> All the information you provide for a rental asset in advance of creating a lease contract will be automatically added in that contract's lines when you select the respective rental asset.
 
 ![picture](pictures/Lease_out_definitions_25_06.png)
 
 ### Rental Assets
 
-This is where rental assets are created and stored. 
+This is where rental assets are created and stored. Each has a **code** and a **name** and must first be defined a **group** with a **type**.
+
+It is necessary to associate it with an existing **sales product** for which a transaction will later be issued.
+
+You can also specify additional information for the rental asset, including tying it to a **fixed asset**.
 
 ### Asset Types
 
-Defines the various rental asset types which are later tied to a rental asset.
+Defines the various rental asset types which that need to be tied to a rental asset group.
 
 ### Asset Groups
 
@@ -90,7 +120,9 @@ Categorizes rental assets into hierarchies of larger groups.
 
 ### Assets – Consumables
 
-Defines consumable items related to rental assets.
+This is where consumables are created and stored. Each has a **code** and a **name** and must be defined a **product** with a certain **quantity**.
+
+One or more quantities of a particular consumable are always tied to one rental asset a time.
 
 ### Asset Types – Consumables
 
