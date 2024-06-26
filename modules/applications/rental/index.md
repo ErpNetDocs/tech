@@ -22,39 +22,41 @@ It provides a centralized repository for managing lease agreements and transacti
 
 ### Rent Lease Contracts Navigator
 
-Contains the lease contracts for rental assets, providing a centralized location for managing and reviewing lease agreements.
+Contains all existing lease contract agreements issued for rental assets, also offering the ability to create new ones.
 
 ### Transactions Navigator
 
-Access all transaction records, including the records of handover and handing-over activities related to the rental assets.
+Gives access to all transaction records associated with a lease contract, including those for handover and handing-over activities.
 
 ## Functions
 
-The **Functions** section includes tools that facilitate the day-to-day management of leasing activities. 
+This section includes tools that facilitate the day-to-day management of lease activities. 
 
-It offers functionalities that help users keep track of key dates and events, ensuring smooth operation and timely actions.
+It offers functionalities that help you stay on track with key dates and schedules.
 
 ![picture](pictures/Lease_out_functions_25_06.png)
 
 ### Calendar
 
-Manage and track important dates and events related to lease contracts and transactions, ensuring timely renewals and compliance.
+The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you from when they have been leased and until when.
+
+This lets you know immediately when they will be free to lease again.
 
 ## Reports
 
-The **Reports** section generates comprehensive insights and summaries of the leasing activities. 
+Rental allows you to generate comprehensive reports summarizing your leasing activities. 
 
-These reports help users monitor the status of assets, track lease contract details, and review transaction histories.
+These include monitoring the status of assets, tracking lease contract details, and reviewing transaction history.
 
 ![picture](pictures/Lease_out_reports_25_06.png)
 
-### Assets status
+### Assets status report
 
-Provides a comprehensive overview of the current status of all assets, helping users to monitor asset availability and condition.
+Provides a comprehensive overview of the current status of all assets, revealing their current availability and condition.
 
 ### Lease Contracts – Lines
 
-Breaks down the details of each lease contract, providing line-by-line insights into contract terms and conditions.
+Breaks down each lease contract into its lines, giving insights into contract terms and conditions.
 
 ### Transactions – Lines
 
@@ -62,19 +64,19 @@ Contains detailed records of all transactions, including handover and handing-ov
 
 ### Lease Contracts - Lines – Consumables
 
-Focuses on the consumables associated with lease contracts, helping users to track and manage expendable items.
+Focuses on the consumables often purchased with rental assets.
 
 ## Definitions
 
-The **Definitions** section provides detailed information about all rentable assets and their classifications. 
+The **Definitions** portion of Rental provides detailed information about all rentable assets and their classifications. 
 
-It allows users to create and manage new asset types and groups, ensuring a well-organized inventory.
+It's here that you can also add new asset types and groups necessary for the creation of a rental asset.
 
 ![picture](pictures/Lease_out_definitions_25_06.png)
 
 ### Rental Assets
 
-Contains detailed information about all rentable assets, serving as the primary database for asset management.
+This is where rental assets are stored. 
 
 ### Create New Rental Assets
 
@@ -110,16 +112,16 @@ Provides the functionality to define new types of consumable items, ensuring com
 
 ## Settings
 
-The **Settings** section allows users to define the properties and attributes of various asset types. 
+The **Settings** portion of Rental allows you to define or change individual properties and attributes of various asset types. 
 
-This ensures detailed and precise descriptions, enabling better management and customization of assets.
+This ensures a more custom approach to how you define your assets.
 
 ![picture](pictures/Lease_out_settings_25_06.png)
 
 ### Asset Types – Properties
 
-Defines the properties and attributes of various asset types, ensuring detailed and precise asset descriptions.
+Defines the properties and attributes of various asset types.
 
 ### Create New Asset Types – Properties
 
-Allows the creation of new properties for asset types, enhancing the customization and specificity of asset management.
+Allows for the creation of new properties for asset types, enhancing the customization and specificity of asset management.
