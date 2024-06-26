@@ -118,10 +118,3 @@ This ensures a more custom approach to how you define your assets.
 
 ![picture](pictures/Lease_out_settings_25_06.png)
 
-### Asset Types – Properties
-
-Defines the properties and attributes of various asset types.
-
-### Create New Asset Types – Properties
-
-Allows for the creation of new properties for asset types, enhancing the customization and specificity of asset management.
