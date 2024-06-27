@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Adjusted Base Cost | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Adjusted Base Cost | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="adjusted-base-cost">Adjusted Base Cost</h1>
+
+<p>Over time, discrepancies between the base cost and adjusted cost of products can accumulate, leading to inaccuracies in cost data.</p>
+<p>The <strong>Adjusted Base Cost</strong> feature aligns <strong>Line Base Cost</strong> with <strong>Base Cost Adjustment</strong>, reducing the need for frequent corrections.</p>
+<p>This is crucial as frequent corrections are labor-intensive and resource-demanding, particularly with increasing database sizes.</p>
+<h2 id="using-adjusted-base-cost">Using Adjusted Base Cost</h2>
+<p>Here, you'll find detailed steps on how to effectively use the feature.</p>
+<h3 id="periodic-execution">Periodic Execution</h3>
+<p>The <strong>Adjusted Base Cost</strong> feature operates regularly, typically every month.</p>
+<p>This ensures timely adjustments to reflect current inventory conditions following monthly corrections.</p>
+<h3 id="verifying-base-cost-accuracy">Verifying Base Cost accuracy</h3>
+<p>To ensure the accuracy of the base cost, performing a cost correction is advisable.</p>
+<h4 id="cost-correction">Cost Correction</h4>
+<p>Cost correction adjusts costs over a specified period.</p>
+<h5 id="navigation">Navigation</h5>
+<p>To initiate a new cost correction:</p>
+<ul>
+<li>Go to <strong>Logistics</strong> -&gt; <strong>Inventory Management</strong> -&gt; <strong>Cost Correction Navigator</strong> -&gt; <strong>Create New Cost Correction</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_New_correction_27_06.png" alt="picture"></p>
+<h5 id="creating-a-cost-correction">Creating a Cost Correction</h5>
+<p>To create a cost correction:</p>
+<ul>
+<li>Fill in the required fields, including the start and end of the period.</li>
+<li>Click <strong>Save</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_correction_dates_27_06.png" alt="picture"></p>
+<ul>
+<li>After saving, navigate to <strong>Functions</strong> and select <strong>Recalculate corrections for the period</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Functions_recalculate_27_06.png" alt="picture"></p>
+<p>Once prepared:</p>
+<ul>
+<li>Go to <strong>Home</strong> and then <strong>Released</strong> to change the document stage.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Home_Released_27_06.png" alt="picture"></p>
+<ul>
+<li>Confirm changing the document status to <strong>Released</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_confirm_27_06.png" alt="picture"></p>
+<h3 id="special-document-type">Special document type</h3>
+<p>The next step is creating a document to execute the function, using the <strong>Cost creation transaction</strong> type.</p>
+<h4 id="navigation-1">Navigation</h4>
+<p>To create this document:</p>
+<ul>
+<li>Navigate to <strong>Logistics</strong> -&gt; <strong>Inventory Management</strong> -&gt; <strong>Transaction Navigator</strong> -&gt; <strong>Create New Cost creation transaction</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Transaction_Navigator_27_06.png" alt="picture"></p>
+<h4 id="creating-a-warehouse-receipt-with-cost-creation-transaction-type">Creating a Warehouse Receipt with Cost creation transaction type</h4>
+<p>Fill in necessary fields such as Store, Movement Type (set as <strong>Receipt</strong>), and Document Currency.</p>
+<ul>
+<li>Click <strong>Save</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Fill_and_save_27_06.png" alt="picture"></p>
+<p>After saving:</p>
+<ul>
+<li>Go to <strong>Functions</strong> and click <strong>Adjust base costs</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Functions_adjust_27_06.png" alt="picture"></p>
+<p>The feature calculates variances between <strong>Base Cost</strong> and <strong>Adjusted Cost</strong> for each product within the warehouse, recording the variance in <strong>Base Cost</strong> upon posting the warehouse receipt to align both figures.</p>
+<ul>
+<li>Click <strong>Released</strong> to change the document stage.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_Released_27_06.png" alt="picture"></p>
+<ul>
+<li>Confirm changing the status to <strong>Released</strong>.</li>
+</ul>
+<p><img src="pictures/Adjustment_Base_cost_confirm_relesed_27_06.png" alt="picture"></p>
+<p>A specialized <strong>Cost Source</strong> named <strong>Adjustment</strong> captures and stores values within the <strong>Base Cost</strong> of the warehouse receipt.</p>
+<p>During subsequent adjustments, any recorded discrepancies in <strong>Base Cost</strong> are offset against <strong>Adjusted Cost</strong>, maintaining equilibrium as quantities normalize to zero.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/adjusted-base-cost-feature.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

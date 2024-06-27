@@ -79,13 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="excise">Excise</h1>
 
-<p>According to EU legislation, certain products like alcoholic beverages, beer and cigarettes are subject to <strong>excise tax</strong> whenever they are imported into a warehouse. This one-time fee is also due if the warehouse itself manufactures the products.</p>
+<p>According to EU legislation, certain products like alcoholic beverages, beer, energy and cigarettes are subject to <strong>excise tax</strong> whenever they leave a tax warehouse.</p>
 <p>The <strong>Excise</strong> module is designed to assist businesses in meeting their legal duties to regional custom agencies or other institutions requiring excise taxes. Using its resources, you can create and generate all the necessary <strong><a href="documents/index.html">documents</a></strong> and <strong><a href="definitions/index.html">definitions</a></strong> related to your excise payments. At the end of each month, they are all included in a final <strong>excise declaration</strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted. For example, since Excise can currently be used in Bulgaria, it is legally obligated to feature alcoholic drinks as excise-taxable products. Product categories outside of this scope are <strong>not</strong> taxed.</p>
+<p>The EU Excise legislation is applicable to all member states and affects all excise products, but there are regional differences in how documents are filled and submitted.</p>
 </div>
-<h2 id="overview">Overview</h2>
 <p>The main process flow in Excise goes like this:</p>
 <blockquote>
 <p><em>Tax Warehouse</em> → <em>Issue/Receipt Transactions</em> → <em>Excise Stamp Operations</em> → <em>Excise Declaration</em></p>
@@ -96,7 +95,7 @@
 <p>It requires a name and special <strong>numbers</strong> for validation, provided by your customs agency.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Tax warehouses are <strong>not</strong> tied to a physical location. They are completely <strong>digital</strong> and you can link them to any or all of your existing warehouses, which unites them under one common environment.</p>
+<p>Tax warehouses are linked to a specific geographic location, but they can encompass more than one inventory store defined in the software.</p>
 </div>
 <h2 id="issuereceipt-transactions">Issue/Receipt transactions</h2>
 <p>Owning a tax warehouse obligates you to generate <strong>transaction documents</strong> for everything that happens to your excise products.</p>
@@ -108,51 +107,51 @@
 <li><p>If a product is sold or leaves your tax warehouse for another, generating the respective <strong>issue</strong> transactions will be necessary.</p>
 </li>
 </ul>
-<p>When products are imported from or exported to another tax warehouse, the <strong>electronic administrative document (e-AD)</strong> allows you to report each transaction. If operations are limited to your tax warehouse, you must fill an <strong>electronic excise tax document (e-ETD)</strong> instead.</p>
+<p>When products are imported from or exported to another tax warehouse, the <strong>electronic administrative document (e-AD)</strong> allows you to report each transaction. If operations are limited to your tax warehouse, you must fill an <strong>electronic excise tax document (e-ADD)</strong> instead.</p>
 <h3 id="definitions">Definitions</h3>
 <p>You can take advantage of a variety of <strong>system</strong> and <strong>custom</strong> definitions.</p>
 <p>Excise allows you to both use and create new excise product <a href="definitions/excise-products.html">types</a>, <a href="definitions/excise-categories.html">categories</a>, and <a href="definitions/other-excise-definitions.html">other entities</a> required for transaction documents.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Some excise-related definitions are auto-generated while others need to be manually set-up. It is <strong>not possible</strong> to submit a document without defining a <strong>product type</strong> for all of your excise products.</p>
+<p>Some excise-related definitions are auto-generated while others need to be manually set-up. It is <strong>not possible</strong> to submit a document without defining a <strong>excise product type</strong> for all of your excise products.</p>
 </div>
 <p>Once you fill a transaction document, you must export it as an <strong>XML file</strong> and send it to your taxing authority and/or customs office.</p>
 <h2 id="excise-stamp-operations">Excise stamp operations</h2>
 <p>When excise products are manufactured, imported or exported from a tax warehouse, they need to have a <strong>stamp</strong> placed on them.</p>
-<p>In the case of alcoholic beverages, for example, every bottle must have a <strong>banderol stamp</strong>.</p>
-<p>You can create new banderol stamps and relate them to specific <strong>operation types</strong> such as:</p>
+<p>In the case of alcoholic beverages, for example, every bottle must have a <strong>excise stamp</strong>.</p>
+<p>You can create new excise stamps and relate them to specific <strong>operation types</strong> such as:</p>
 <ul>
-<li>Received from the customs (ReceivedExciseLabels)</li>
-<li>Placed on the bottles within the tax warehouse (UsedExciseLabels)</li>
-<li>Returned and unused (ReturnedUnusedExciseLabels)</li>
+<li>Received from the customs</li>
+<li>Placed on the bottles within the tax warehouse</li>
+<li>Returned unused</li>
 </ul>
-<p>In most cases, banderol stamps are provided by the customs office and placed on every bottle of alcohol.</p>
+<p>In most cases, excise stamps are provided by the customs office and placed on every bottle of alcohol.</p>
 <p>Reporting all the stamps you have used is a <strong>compulsory section</strong> of the final excise declaration.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Banderol stamps have unique serial numbers, emission and date of placement. When creating a banderol report, you generate another <strong>transaction document</strong> which includes the excise operation type, related products and number of used stamps. It is possible for fewer stamps to be placed than originally received.</p>
+<p>Excise stamps have unique serial numbers, emission and date of placement. When creating a excise stamp report, you generate another <strong>transaction document</strong> which includes the excise operation type, related products and number of used stamps. It is possible for fewer stamps to be placed than originally received.</p>
 </div>
 <h2 id="excise-declaration">Excise declaration</h2>
 <p>As a legal requirement, <strong>all</strong> of your monthly transactions are automatically included in a final <strong>excise declaration</strong>.</p>
-<p>It unites the transaction documents you have reported for the month, summarizes your product availability and excise payments, and includes a banderol stamping report.</p>
+<p>It unites the transaction documents you have reported for the month, summarizes your product availability and excise payments, and includes a excise stamping report.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Customs offices may have the legal right to also electronically scan the movements of products in and out of your tax warehouse. Additional <strong>transactions</strong> will be generated for each operation and are automatically included in the final excise declaration.</p>
+<p>Customs offices may have the legal authority to electronically monitor the movement of products in and out of your tax warehouse.</p>
 </div>
 <p><img src="pictures/excise_declare.png" alt="Excise"></p>
 <p>A typical excise declaration has the following sections:</p>
 <ol>
 <li>Excise amount owed and paid for each issue/receipt transaction within the tax warehouse</li>
 <li>Past and current availability of each excise product in the tax warehouse, including incomes and expenses</li>
-<li>Banderol stamping report covering each banderol operation</li>
+<li>Excise stamping report covering each banderol operation</li>
 </ol>
 <p>At any time, you can <strong>visualize</strong> this declaration and correct any mistakes before officially submitting.</p>
 <p>When ready, you need to export it as an <strong>XML</strong> file and send it to the respective taxing authority.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Customs or other taxing authorities may need <strong>direct access</strong> to your ERP.net system in order to observe your tax warehouse. In the case of Bulgarian clients, for example, there's a <strong><a href="https://testdb-model.my.erp.net/legal">separate environment</a></strong> offering the ability for custom agencies to generate reports and see which products are available in a tax warehouse for a specific period of time.</p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240627135948467.png" alt="image-20240627135948467"></p>
 </div>
-<p><img src="pictures/legalBGnew.png" alt="Excise"></p>
 <h3 id="post-excise">Post-excise</h3>
 <p>If your declaration meets all legal requirements, the excise tax is <strong>settled</strong> and products can be moved freely from one store to another.</p>
 <p>Learn more about Excise in the following articles:</p>
@@ -161,10 +160,8 @@
 <li><strong><a href="documents/index.html">Documents</a></strong></li>
 <li><strong><a href="country-specific/index.html">Country specific</a></strong></li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the <strong>Web Client</strong>.</p>
-</div>
+<blockquote>
+</blockquote>
 </article>
           </div>
           
