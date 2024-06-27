@@ -83,6 +83,8 @@ The feature calculates variances between **Base Cost** and **Adjusted Cost** for
 
 - Confirm changing the status to **Released**.
 
+![picture](pictures/Adjustment_Base_cost_confirm_relesed_27_06.png)
+
 A specialized **Cost Source** named **Adjustment** captures and stores values within the **Base Cost** of the warehouse receipt. 
 
 During subsequent adjustments, any recorded discrepancies in **Base Cost** are offset against **Adjusted Cost**, maintaining equilibrium as quantities normalize to zero.
