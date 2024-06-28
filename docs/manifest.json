@@ -3260,6 +3260,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/asset_managed_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/asset_managed_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/concepts/Party-attributes.png",
       "output": {
         "resource": {
@@ -3385,6 +3396,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/applications/enterprise-asset-management/pictures/asset_managed_example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/enterprise-asset-management/pictures/asset_managed_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/enterprise-asset-management/pictures/asset_managed_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/enterprise-asset-management/pictures/assetmanaged_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/enterprise-asset-management/pictures/assetmanaged_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/enterprise-asset-management/pictures/example_final.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/enterprise-asset-management/pictures/example_final.png"
         }
       },
       "is_incremental": false,
