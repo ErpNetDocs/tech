@@ -111,7 +111,7 @@ Managed assets are resources or items that an enterprise company owns or leases 
 
 Defining assets as **managed** allows them to be tracked in one place - the definition of the managed asset they're related to. All you need to do is integrate them as **panels**, if they aren't already. That way, you will be able to see and access all of their important information.
 
-![Pictures](pictures/asset_managed_example.png)
+![Pictures](pictures/asset_managed_example_new.png)
 
 For additional convenience, you can also generate **custom reports** for all fixed assets, rental assets, fleet vehicles and service objects united under a common managed asset.
 
