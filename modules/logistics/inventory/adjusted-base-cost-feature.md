@@ -1,37 +1,34 @@
 # Adjusted Base Cost
 
-Over time, discrepancies between the base cost and adjusted cost of products can accumulate, leading to inaccuracies in cost data.
+Over time, differences between the base cost and the original cost of products can accumulate, leading to inaccuracies in the final cost calculation.
 
-The **Adjusted Base Cost** feature aligns **Line Base Cost** with **Base Cost Adjustment**, reducing the need for frequent corrections. 
+The **Adjusted Base Cost** feature eliminates the need to issue cost correction documents for issue store transactions, as it automatically aligns each **Line Base Cost** with its respective **Base Cost Adjustment**, whenever such is present.
 
-This is crucial as frequent corrections are labor-intensive and resource-demanding, particularly with increasing database sizes.
+This speeds up the process of original cost calculation, limits the frequence of making cost corrections, and decreases the possibility of producing errors and miscalculations when taking into account all adjustments that have taken place for the base cost of products.
 
 ## Using Adjusted Base Cost
 
-Here, you'll find detailed steps on how to effectively use the feature.
+Here, you'll find detailed steps on how to effectively perform base cost adjustment.
 
 ### Periodic Execution
 
-The **Adjusted Base Cost** feature operates regularly, typically every month. 
+The **Adjusted Base Cost** feature operates regularly, typically at the end of every month. 
 
 This ensures timely adjustments to reflect current inventory conditions following monthly corrections.
 
-### Verifying Base Cost accuracy
+### Cost correction
 
-To ensure the accuracy of the base cost, performing a cost correction is advisable.
+To ensure the accuracy of the base cost, you first need to make a monthly cost correction.
 
-#### Cost Correction
-
-Cost correction adjusts costs over a specified period.
-
-##### Navigation
+The Cost correction adjusts costs over a specified period.
 
 To initiate a new cost correction:
+
 - Go to **Logistics** -> **Inventory Management** -> **Cost Correction Navigator** -> **Create New Cost Correction**.
 
 ![picture](pictures/Adjustment_Base_cost_New_correction_27_06.png)
 
-##### Creating a Cost Correction
+Creating a Cost Correction
 
 To create a cost correction:
 - Fill in the required fields, including the start and end of the period.
@@ -55,8 +52,6 @@ Once prepared:
 ### Special document type
 
 The next step is creating a document to execute the function, using the **Cost creation transaction** type.
-
-#### Navigation
 
 To create this document:
 - Navigate to **Logistics** -> **Inventory Management** -> **Transaction Navigator** -> **Create New Cost creation transaction**.
