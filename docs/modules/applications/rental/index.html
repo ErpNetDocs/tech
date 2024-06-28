@@ -79,8 +79,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="rental">Rental</h1>
 
-<p>The <strong>Rental</strong> section is designed to oversee and control the leasing process of all owned and rented assets.</p>
-<p>Located in the <strong>Applications</strong> module, it is divided into various panels, each serving a specific function to ensure effective management of documents, assets, and transactions.</p>
+<p>The <strong>Rental</strong> section is designed to oversee and control the leasing process of all owned and re-leased assets.</p>
+<p>Located in the <strong>Applications</strong> module, it is divided into various panels, each serving a specific function to ensure effective management of assets, documents, and transactions.</p>
 <p>By providing a structured approach as well as the ability to generate detailed reports, <strong>Rental</strong> offers a comprehensive aid to all rental-related processes and operations.</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -91,8 +91,8 @@ For the purposes of this overview, screenshots and references will be used from 
 <h3 id="types">Types</h3>
 <p>There are two types of assets which you can create and manage through Rental:</p>
 <ol>
-<li><strong>Rental assets</strong> - specified in the lease contract lines</li>
-<li><strong>Consumables</strong> - specified in a separate Lease Line Consumable panel</li>
+<li><strong>Rental assets</strong></li>
+<li><strong>Consumables</strong></li>
 </ol>
 <p>In the context of a rental asset, a consumable typically refers to items or materials that are used up and need to be replaced regularly as part of the asset's operation or maintenance.</p>
 <p>Consumables are therefore tied to a rental asset but are treated as distinct <strong>products</strong>. The rental asset itself is expected to be returned in reusable condition.</p>
@@ -118,25 +118,26 @@ For the purposes of this overview, screenshots and references will be used from 
 <p>This navigator contains all existing lease contract agreements issued for rental assets, including those for consumables, and also offers the ability to create new ones.</p>
 <p>You can include as many rental assets in a lease contract as needed. Required information includes defining a <strong>time period type</strong> for lease, <strong>start date</strong> and <strong>end date</strong>.</p>
 <h3 id="transactions-navigator">Transactions Navigator</h3>
-<p>Gives access to all protocols following or associated with a lease contract, including those for handover and handing-over activities.</p>
+<p>Gives access to all protocols following or associated with a lease contract.</p>
+<p>It includes useful filtering capabilities, thanks to which you can quickly and easily summarize protocol data in a convenient format.</p>
 <h2 id="functions">Functions</h2>
 <p>This section includes tools that facilitate the day-to-day management of lease activities.</p>
 <p>It offers functionalities that help you stay on track with key dates and schedules.</p>
 <p><img src="pictures/Lease_out_functions_25_06.png" alt="picture"></p>
 <h3 id="calendar">Calendar</h3>
-<p>The Calendar provides a quick overview of all of your rental assets' <strong>work schedules</strong>, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.</p>
+<p>The Calendar provides a quick overview of all of your rental assets' <strong>availability</strong>, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.</p>
 <h2 id="reports">Reports</h2>
 <p>Rental allows you to generate comprehensive reports summarizing your leasing activities.</p>
 <p>These include monitoring the status of assets, tracking lease contract details, and reviewing transaction history.</p>
 <p><img src="pictures/Lease_out_reports_25_06.png" alt="picture"></p>
 <h3 id="assets-status-report">Assets status report</h3>
-<p>Provides a comprehensive overview of the current status of all assets, revealing their current availability and condition.</p>
+<p>Provides a comprehensive overview of the current status of all assets, revealing their current availability/occupancy.</p>
 <h3 id="lease-contracts--lines">Lease Contracts – Lines</h3>
 <p>Breaks down each lease contract into its lines, giving insights into contract terms and conditions.</p>
 <h3 id="transactions--lines">Transactions – Lines</h3>
-<p>Contains detailed records of all transactions, including handover and handing-over records, to ensure transparency and accountability in asset management.</p>
+<p>Contains detailed records of all transactions, ensuring transparency and accountability in rental asset management.</p>
 <h3 id="lease-contracts---lines--consumables">Lease Contracts - Lines – Consumables</h3>
-<p>Focuses on the consumables often purchased with rental assets.</p>
+<p>Focuses on the consumables purchased with rental assets.</p>
 <h2 id="definitions">Definitions</h2>
 <p>The <strong>Definitions</strong> portion of Rental provides detailed information about all rentable assets, their classifications and consumables.</p>
 <p>It's here, for instance, that you can add new asset <strong>types</strong> and <strong>groups</strong> necessary for the creation of the rental asset itself.</p>
@@ -148,14 +149,15 @@ All the information you provide for a rental asset in advance of creating a leas
 <p><img src="pictures/Lease_out_definitions_25_06.png" alt="picture"></p>
 <h3 id="rental-assets">Rental Assets</h3>
 <p>This is where rental assets are created and stored. Each has a <strong>code</strong> and a <strong>name</strong> and must first be defined a <strong>group</strong> with a <strong>type</strong>.</p>
-<p>It is necessary to associate it with an existing <strong>sales product</strong> for which a transaction will later be issued.</p>
+<p>It is necessary to associate it with an existing <strong>sales product</strong> for which a <strong>sales order</strong> will later be issued.</p>
 <p>You can also specify additional information for the rental asset, including tying it to a <strong>fixed asset</strong>.</p>
 <h3 id="asset-types">Asset Types</h3>
-<p>Defines the various rental asset types which that need to be tied to a rental asset group.</p>
+<p>Defines the various rental asset types which need to be tied to a rental asset group.</p>
 <h3 id="asset-groups">Asset Groups</h3>
 <p>Categorizes rental assets into hierarchies of larger groups.</p>
 <h3 id="assets--consumables">Assets – Consumables</h3>
-<p>This is where consumables are created and stored. Each has a <strong>code</strong> and a <strong>name</strong> and must be defined a <strong>product</strong> with a certain <strong>quantity</strong>.</p>
+<p>This is where consumables are created and information for existing ones can be previewed.</p>
+<p>Each consumable has a <strong>code</strong> and a <strong>name</strong> and must be defined a <strong>product</strong> with a certain <strong>quantity</strong>.</p>
 <p>One or more quantities of a particular consumable are always tied to one rental asset a time.</p>
 <h3 id="asset-types--consumables">Asset Types – Consumables</h3>
 <p>Defines the different types of consumable items related to rental assets.</p>

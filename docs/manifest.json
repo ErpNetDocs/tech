@@ -2594,6 +2594,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "asset_managed_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "asset_managed_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "concepts/Party-attributes.png",
       "output": {
         "resource": {
@@ -8419,6 +8430,116 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Fill_and_save_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Fill_and_save_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Functions_adjust_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Functions_adjust_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Functions_recalculate_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Functions_recalculate_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Home_Released_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Home_Released_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_New_correction_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_New_correction_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Released_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Released_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Transaction_Navigator_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_Transaction_Navigator_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_confirm_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_confirm_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_confirm_relesed_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_confirm_relesed_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_correction_dates_27_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/Adjustment_Base_cost_correction_dates_27_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/inventory/pictures/Inventory_Lots_14_03.png",
       "output": {
         "resource": {
@@ -13647,7 +13768,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/enterprise-asset-management/index.html",
-          "hash": "tN20qJoVmop290d6gRB3CA=="
+          "hash": "08mY+aKZjQHA/Jk6qmHN3g=="
         }
       },
       "is_incremental": false,
@@ -13665,78 +13786,45 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/enterprise-asset-management/pictures/asset_managed_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/enterprise-asset-management/pictures/asset_managed_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/enterprise-asset-management/pictures/assetmanaged_example_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/enterprise-asset-management/pictures/assetmanaged_example_new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/enterprise-asset-management/pictures/example_final.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/enterprise-asset-management/pictures/example_final.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/applications/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/applications/index.html",
           "hash": "AbyeYHumVV7dXf+hqXGh8Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_definitions_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_documents_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_functions_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_reports_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_settings_25_06.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/applications/lease-out-manager/pictures/Lease_out_view_25_06.png"
         }
       },
       "is_incremental": false,
@@ -14127,7 +14215,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/rental/index.html",
-          "hash": "VwErdcQl7M1zi6q83d8oCA=="
+          "hash": "1hmHkXBeVpN47lgnl+IJLw=="
         }
       },
       "is_incremental": false,
@@ -19361,7 +19449,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/adjusted-base-cost-feature.html",
-          "hash": "1huoibBzFn1MsxIK21w1GQ=="
+          "hash": "8+BsBnpliG01m0vggXgQMw=="
         }
       },
       "is_incremental": false,
