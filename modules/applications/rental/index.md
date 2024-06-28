@@ -1,8 +1,8 @@
 # Rental
 
-The **Rental** section is designed to oversee and control the leasing process of all owned and rented assets. 
+The **Rental** section is designed to oversee and control the leasing process of all owned and re-leased assets. 
 
-Located in the **Applications** module, it is divided into various panels, each serving a specific function to ensure effective management of documents, assets, and transactions. 
+Located in the **Applications** module, it is divided into various panels, each serving a specific function to ensure effective management of assets, documents, and transactions. 
 
 By providing a structured approach as well as the ability to generate detailed reports, **Rental** offers a comprehensive aid to all rental-related processes and operations.
 
@@ -16,8 +16,8 @@ By providing a structured approach as well as the ability to generate detailed r
 
 There are two types of assets which you can create and manage through Rental:
 
-1. **Rental assets** - specified in the lease contract lines
-2. **Consumables** - specified in a separate Lease Line Consumable panel
+1. **Rental assets** 
+2. **Consumables** 
 
 In the context of a rental asset, a consumable typically refers to items or materials that are used up and need to be replaced regularly as part of the asset's operation or maintenance. 
 
@@ -52,7 +52,9 @@ You can include as many rental assets in a lease contract as needed. Required in
 
 ### Transactions Navigator
 
-Gives access to all protocols following or associated with a lease contract, including those for handover and handing-over activities.
+Gives access to all protocols following or associated with a lease contract. 
+
+It includes useful filtering capabilities, thanks to which you can quickly and easily summarize protocol data in a convenient format. 
 
 ## Functions
 
@@ -64,7 +66,7 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all of your rental assets' **work schedules**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
+The Calendar provides a quick overview of all of your rental assets' **availability**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
 
 ## Reports
 
@@ -76,7 +78,7 @@ These include monitoring the status of assets, tracking lease contract details, 
 
 ### Assets status report
 
-Provides a comprehensive overview of the current status of all assets, revealing their current availability and condition.
+Provides a comprehensive overview of the current status of all assets, revealing their current availability/occupancy.
 
 ### Lease Contracts – Lines
 
@@ -84,11 +86,11 @@ Breaks down each lease contract into its lines, giving insights into contract te
 
 ### Transactions – Lines
 
-Contains detailed records of all transactions, including handover and handing-over records, to ensure transparency and accountability in asset management.
+Contains detailed records of all transactions, ensuring transparency and accountability in rental asset management.
 
 ### Lease Contracts - Lines – Consumables
 
-Focuses on the consumables often purchased with rental assets.
+Focuses on the consumables purchased with rental assets.
 
 ## Definitions
 
@@ -106,13 +108,13 @@ It's here, for instance, that you can add new asset **types** and **groups** nec
 
 This is where rental assets are created and stored. Each has a **code** and a **name** and must first be defined a **group** with a **type**.
 
-It is necessary to associate it with an existing **sales product** for which a transaction will later be issued.
+It is necessary to associate it with an existing **sales product** for which a **sales order** will later be issued.
 
 You can also specify additional information for the rental asset, including tying it to a **fixed asset**.
 
 ### Asset Types
 
-Defines the various rental asset types which that need to be tied to a rental asset group.
+Defines the various rental asset types which need to be tied to a rental asset group.
 
 ### Asset Groups
 
@@ -120,9 +122,11 @@ Categorizes rental assets into hierarchies of larger groups.
 
 ### Assets – Consumables
 
-This is where consumables are created and stored. Each has a **code** and a **name** and must be defined a **product** with a certain **quantity**.
+This is where consumables are created and information for existing ones can be previewed. 
 
-One or more quantities of a particular consumable are always tied to one rental asset a time.
+Each consumable has a **code** and a **name** and must be defined a **product** with a certain **quantity**.
+
+One or more quantities of a particular consumable are always tied to one rental asset a time. 
 
 ### Asset Types – Consumables
 
