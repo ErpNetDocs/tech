@@ -1,16 +1,18 @@
 # Adjusted Base Cost
 
-The **Adjusted Base Cost** feature is responsible for automatically adding each **Base Cost Adjustment** to its respective **Line Base Cost**. 
+The **Adjusted Base Cost** feature is responsible for aligning the **Original Cost** of store products with their often-adjusted **Base Cost**.
 
-It achieves this by simultaneously deducting the respective adjustment from itself and adding it to the base cost.
+It achieves this by simultaneously deducting each **Base Cost Adjustment** and adding it to its associated **Line Base Cost** 
 
-This speeds up the process of issuing transactions as it limits the often-frequent need to make cost corrections resulting from accummulated discrepancies between original and base cost calculations.
+This speeds up the process of processing different transactions, allowing them to assume the correct (or most correct) original costs of products.
+
+It also limits the need to make frequent cost corrections resulting from accummulated discrepancies between original and base cost calculations.
 
 ## Using Adjusted Base Cost
 
 Here, you'll find detailed steps on how to effectively perform base cost adjustment.
 
-### 1. Create a Cost Correction document
+### 1. Create a monthly Cost Correction document
 
 You first need to create a monthly cost correction responsible for adjusting your stores' costs over a specified period.
 
@@ -24,21 +26,22 @@ Then, navigate to the **Functions** tab and select **Recalculate corrections for
 
 Once prepared, **Release** the document.
 
-### 2. Create a new document type
+### 2. Add a new document type
 
 The next step is creating a special document of type **Cost Correction**.
 
-Its purpose is to generate a cost correction for the actual costs of the current transaction.
+Its purpose is to generate a cost correction for the actual costs of the current cost correction transaction.
 
 ### 3. Create a Cost correction transaction
 
-Start creating a cost correction transaction using the new document type you've created.
+Start creating a cost correction transaction using the document type you've created.
 
 Required fields are:
 
 - **Store** - the store for which the transaction will be issued
-- **Movement Type** - set as Receipt
-- **Document Currency** - main currency of the enterprise company.
+- **Movement Type** - set as *Receipt*
+- **Document Currency** - main currency of the enterprise company
+- **Cost Source** - source of the document, set automatically; after the function is applied, it changes to *Adjustment*.
 
 ![picture](pictures/Adjustment_Base_cost_Fill_and_save_27_06.png)
 
@@ -56,4 +59,5 @@ Values added to the **Line Base Cost** will be simultaneously subtracted from th
 
 ![picture](pictures/Adjustment_Base_cost_Released_27_06.png) 
 
-The **Cost Source** of the document will change to **Adjustment**.
+> [!NOTE]
+> Following a recent application of the function, transactions will now assume the **correct (or most correct)** original costs of products.
