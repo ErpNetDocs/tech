@@ -19489,11 +19489,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/adjusted-base-cost-feature.md",
+      "source_relative_path": "modules/logistics/inventory/adjusted-base-cost.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/inventory/adjusted-base-cost-feature.html",
-          "hash": "8+BsBnpliG01m0vggXgQMw=="
+          "relative_path": "modules/logistics/inventory/adjusted-base-cost.html",
+          "hash": "UUux9xYex3k7p3uYbjDpfg=="
         }
       },
       "is_incremental": false,
