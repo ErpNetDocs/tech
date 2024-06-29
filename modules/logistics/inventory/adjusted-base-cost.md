@@ -57,5 +57,3 @@ Values added to the **Line Base Cost** will be simultaneously subtracted from th
 ![picture](pictures/Adjustment_Base_cost_Released_27_06.png) 
 
 The **Cost Source** of the document will change to **Adjustment**.
-
-During subsequent adjustments, any recorded discrepancies in **Base Cost** are offset against **Adjusted Cost**, maintaining equilibrium as quantities normalize to zero.
