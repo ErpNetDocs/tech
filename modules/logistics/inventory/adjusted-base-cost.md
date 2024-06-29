@@ -1,85 +1,61 @@
 # Adjusted Base Cost
 
-Over time, differences between the base cost and the original cost of products can accumulate, leading to inaccuracies in the final cost calculation.
+The **Adjusted Base Cost** feature is responsible for automatically adding each **Base Cost Adjustment** to its respective **Line Base Cost**. 
 
-The **Adjusted Base Cost** feature eliminates the need to issue cost correction documents for issue store transactions, as it automatically aligns each **Line Base Cost** with its respective **Base Cost Adjustment**, whenever such is present.
+It achieves this by simultaneously deducting the respective adjustment from itself and adding it to the base cost.
 
-This speeds up the process of original cost calculation, limits the frequence of making cost corrections, and decreases the possibility of producing errors and miscalculations when taking into account all adjustments that have taken place for the base cost of products.
+This speeds up the process of issuing transactions as it limits the often-frequent need to make cost corrections resulting from accummulated discrepancies between original and base cost calculations.
 
 ## Using Adjusted Base Cost
 
 Here, you'll find detailed steps on how to effectively perform base cost adjustment.
 
-### Periodic Execution
+### 1. Create a Cost Correction document
 
-The **Adjusted Base Cost** feature operates regularly, typically at the end of every month. 
-
-This ensures timely adjustments to reflect current inventory conditions following monthly corrections.
-
-### Cost correction
-
-To ensure the accuracy of the base cost, you first need to make a monthly cost correction.
-
-The Cost correction adjusts costs over a specified period.
-
-To initiate a new cost correction:
-
-- Go to **Logistics** -> **Inventory Management** -> **Cost Correction Navigator** -> **Create New Cost Correction**.
+You first need to create a monthly cost correction responsible for adjusting your stores' costs over a specified period.
 
 ![picture](pictures/Adjustment_Base_cost_New_correction_27_06.png)
 
-Creating a Cost Correction
+Fill in the **from** and **thru date** of the period and click **Save**.
 
-To create a cost correction:
-- Fill in the required fields, including the start and end of the period.
-- Click **Save**.
-
-![picture](pictures/Adjustment_Base_cost_correction_dates_27_06.png)
-
-- After saving, navigate to **Functions** and select **Recalculate corrections for the period**.
+Then, navigate to the **Functions** tab and select **Recalculate corrections for the period**.
 
 ![picture](pictures/Adjustment_Base_cost_Functions_recalculate_27_06.png)
 
-Once prepared:
-- Go to **Home** and then **Released** to change the document stage.
+Once prepared, **Release** the document.
 
-![picture](pictures/Adjustment_Base_cost_Home_Released_27_06.png)
+### 2. Create a new document type
 
-- Confirm changing the document status to **Released**.
+The next step is creating a special document of type **Cost Correction**.
 
-![picture](pictures/Adjustment_Base_cost_confirm_27_06.png)
+Its purpose is to generate a cost correction for the actual costs of the current transaction.
 
-### Special document type
+### 3. Create a Cost correction transaction
 
-The next step is creating a document to execute the function, using the **Cost creation transaction** type.
+Start creating a cost correction transaction using the new document type you've created.
 
-To create this document:
-- Navigate to **Logistics** -> **Inventory Management** -> **Transaction Navigator** -> **Create New Cost creation transaction**.
+Required fields are:
 
-![picture](pictures/Adjustment_Base_cost_Transaction_Navigator_27_06.png) 
-
-#### Creating a Warehouse Receipt with Cost creation transaction type
-
-Fill in necessary fields such as Store, Movement Type (set as **Receipt**), and Document Currency.
-- Click **Save**.
+- **Store** - the store for which the transaction will be issued
+- **Movement Type** - set as Receipt
+- **Document Currency** - main currency of the enterprise company.
 
 ![picture](pictures/Adjustment_Base_cost_Fill_and_save_27_06.png)
- 
-After saving:
-- Go to **Functions** and click **Adjust base costs**. 
+
+### 4. Apply the function
+
+**Save** the document, navigate to **Functions** and select **Adjust base costs**.
 
 ![picture](pictures/Adjustment_Base_cost_Functions_adjust_27_06.png) 
 
-The feature calculates variances between **Base Cost** and **Adjusted Cost** for each product within the warehouse, recording the variance in **Base Cost** upon posting the warehouse receipt to align both figures.
+The function will load all products (with 0 quantities) from the selected store whose base costs are different from their original line costs.
 
-- Click **Released** to change the document stage.
+It is only after **releasing** this transaction that it will match their current base costs with their adjusted costs.
+
+Values added to the **Line Base Cost** will be simultaneously subtracted from the **Base Cost Adjustment**.
 
 ![picture](pictures/Adjustment_Base_cost_Released_27_06.png) 
 
-- Confirm changing the status to **Released**.
-
-![picture](pictures/Adjustment_Base_cost_confirm_relesed_27_06.png)
-
-A specialized **Cost Source** named **Adjustment** captures and stores values within the **Base Cost** of the warehouse receipt. 
+The **Cost Source** of the document will change to **Adjustment**.
 
 During subsequent adjustments, any recorded discrepancies in **Base Cost** are offset against **Adjusted Cost**, maintaining equilibrium as quantities normalize to zero.
