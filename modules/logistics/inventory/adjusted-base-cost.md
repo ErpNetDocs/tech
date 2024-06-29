@@ -2,17 +2,21 @@
 
 The **Adjusted Base Cost** feature is responsible for aligning the **Original Cost** of store products with their often-adjusted **Base Cost**.
 
-It achieves this by simultaneously deducting each **Base Cost Adjustment** and adding it to its associated **Line Base Cost** 
+It achieves this by simultaneously deducting the **Base Cost Adjustment** of every product and adding it to its associated **Line Base Cost** 
 
-This speeds up the process of processing different transactions, allowing them to assume the correct (or most correct) original costs of products. It also limits the need to make frequent cost corrections resulting from accummulated discrepancies between original and base cost calculations.
+This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products. 
+
+It also limits the need to make frequent cost corrections due to accummulated discrepancies between original and base cost calculations.
 
 ## Using Adjusted Base Cost
 
 Here, you'll find detailed steps on how to effectively perform base cost adjustment.
 
-### 1. Create a monthly Cost Correction document
+### 1. Create a Cost Correction document
 
-You first need to create a monthly cost correction responsible for adjusting your stores' costs over a specified period.
+You first need to create a cost correction responsible for adjusting your stores' costs over a specified period.
+
+This is typically done once every month.
 
 ![picture](pictures/Adjustment_Base_cost_New_correction_27_06.png)
 
