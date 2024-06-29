@@ -62,4 +62,4 @@ Values added to the **Line Base Cost** will be simultaneously subtracted from th
 ![picture](pictures/Adjustment_Base_cost_Released_27_06.png) 
 
 > [!NOTE]
-> Following a recent application of the function, transactions will now assume the **correct (or most correct)** original costs of products.
+> Following a recent application of the function, transactions will now assume the **correct (or most correct)** base costs of products.
