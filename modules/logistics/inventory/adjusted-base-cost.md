@@ -4,9 +4,7 @@ The **Adjusted Base Cost** feature is responsible for aligning the **Original Co
 
 It achieves this by simultaneously deducting each **Base Cost Adjustment** and adding it to its associated **Line Base Cost** 
 
-This speeds up the process of processing different transactions, allowing them to assume the correct (or most correct) original costs of products.
-
-It also limits the need to make frequent cost corrections resulting from accummulated discrepancies between original and base cost calculations.
+This speeds up the process of processing different transactions, allowing them to assume the correct (or most correct) original costs of products. It also limits the need to make frequent cost corrections resulting from accummulated discrepancies between original and base cost calculations.
 
 ## Using Adjusted Base Cost
 
