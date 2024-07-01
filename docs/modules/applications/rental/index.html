@@ -95,39 +95,46 @@ For the purposes of this overview, screenshots and references will be used from 
 <li><strong>Consumables</strong></li>
 </ol>
 <p>In the context of a rental asset, a consumable typically refers to items or materials that are used up and need to be replaced regularly as part of the asset's operation or maintenance.</p>
-<p>Consumables are therefore tied to a rental asset but are treated as distinct <strong>products</strong>. The rental asset itself is expected to be returned in reusable condition.</p>
+<p>Consumables are tied to a rental asset but are treated as products distinct from it. They are <strong>sold</strong> and not returned, while the rental asset itself is <strong>leased</strong> for a specific period of time, and is therefore expected to be returned in reusable condition.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Each rental asset can also be categorized as a <strong><a href="https://docs.erp.net/tech/modules/applications/enterprise-asset-management/index.html#managed-assets">Managed Asset</a></strong>.</p>
 </div>
 <h2 id="documents">Documents</h2>
-<p>The <strong>Documents</strong> portion of Rental contains all essential transactions and contracts related to the leasing process, including:</p>
-<ol>
-<li>Lease contract  - the main lease document containing the rental asset/s and its consumable/s</li>
-<li>Issue transaction - contains the date of leasing out (deliver) the rental asset</li>
-<li>Receipt transaction - contains the date of return (receive) of the rental asset</li>
-</ol>
+<p>The <strong>Documents</strong> portion of Rental contains all essential transactions and contracts related to the leasing process.</p>
 <p>It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.</p>
+<ol>
+<li><strong>Lease contract</strong>  - the main lease document containing the rental asset/s and its consumables, if such are applicable</li>
+<li><strong>Transaction (Deliver)</strong> - a protocol confirming the handover of the rental asset; it contains the start date of the negotiated lease period</li>
+<li><strong>Transaction (Receive)</strong> - a protocol confirming the return of the rental asset; it contains the end date of the negotiated lease period</li>
+<li><strong>Transaction (Write Off Not Returned)</strong> - a protocol confirming that the rental asset has not been returned by the leaser</li>
+<li><strong>Transaction (Status Report)</strong> - a protocol describing the rental assets handed over to a leaser (can be used for inspection).</li>
+</ol>
 <p><img src="pictures/Lease_out_documents_25_06.png" alt="picture"></p>
 <h3 id="document-flow">Document flow</h3>
-<p>A sample document flow for leasing out assets and consumables goes like this:</p>
+<p>A typical document flow for leasing out rental assets with consumables goes like this:</p>
 <blockquote>
-<p>Lease Contract --&gt; Issue Transaction --&gt; Receipt Transaction --&gt; Sales Order (Consumable) --&gt; Sales Order (Rent)</p>
+<p><strong>Lease Contract --&gt; Transaction (Deliver), Transaction (Receive), Sales Order (Rent), Sales Order (Consumable)</strong></p>
 </blockquote>
+<p>Upon release, the lease contract will lead to the simultaneous generation of a transaction (deliver) protocol, a transaction (receive) protocol, a sales order accounting for the rent, and a sales order accounting for the consumable(s).</p>
 <h3 id="rent-lease-contracts-navigator">Rent Lease Contracts Navigator</h3>
-<p>This navigator contains all existing lease contract agreements issued for rental assets, including those for consumables, and also offers the ability to create new ones.</p>
-<p>You can include as many rental assets in a lease contract as needed. Required information includes defining a <strong>time period type</strong> for lease, <strong>start date</strong> and <strong>end date</strong>.</p>
+<p>This navigator contains all existing <strong>lease contract agreements</strong> issued for rental assets, including those for consumables, and offers the ability to create new ones.</p>
+<p>It is also equipped with a handful of <strong>filtering capabilities</strong> designed to speed up the process of extracting information in a convenient and systematized way.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When creating a lease contract, you can include as many rental assets in it as needed, and additionally fill out necessary data for each.</p>
+</div>
 <h3 id="transactions-navigator">Transactions Navigator</h3>
-<p>Gives access to all protocols following or associated with a lease contract.</p>
-<p>It includes useful filtering capabilities, thanks to which you can quickly and easily summarize protocol data in a convenient format.</p>
+<p>Gives access to all <strong>protocols</strong> following or associated with a lease contract.</p>
+<p>Like the Lease Contracts Navigator, it includes useful <strong>filtering capabilities</strong> through which you can quickly and easily summarize protocol data in a convenient format.</p>
 <h2 id="functions">Functions</h2>
-<p>This section includes tools that facilitate the day-to-day management of lease activities.</p>
+<p>This section includes <strong>tools</strong> that facilitate the day-to-day management of lease activities.</p>
 <p>It offers functionalities that help you stay on track with key dates and schedules.</p>
 <p><img src="pictures/Lease_out_functions_25_06.png" alt="picture"></p>
 <h3 id="calendar">Calendar</h3>
-<p>The Calendar provides a quick overview of all of your rental assets' <strong>availability</strong>, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.</p>
+<p>The Calendar provides a quick overview of all rental assets' <strong>occupancy</strong>, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.</p>
 <h2 id="reports">Reports</h2>
-<p>Rental allows you to generate comprehensive reports summarizing your leasing activities.</p>
+<p>Rental allows you to generate comprehensive <strong>reports</strong> summarizing your leasing activities.</p>
 <p>These include monitoring the status of assets, tracking lease contract details, and reviewing transaction history.</p>
 <p><img src="pictures/Lease_out_reports_25_06.png" alt="picture"></p>
 <h3 id="assets-status-report">Assets status report</h3>
