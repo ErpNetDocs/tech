@@ -73,9 +73,7 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all rental assets' **occupancy**, showing you the customers to which they were leased, from when they have been leased and until when. 
-
-It lets you know when they will be free to lease again, including the periods when they will not be leased.
+The Calendar provides a quick overview of all rental assets' **occupancy**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
 
 ## Reports
 
