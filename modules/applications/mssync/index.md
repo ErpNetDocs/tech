@@ -10,17 +10,17 @@ An example of such a job is the **[Calendar](https://docs.erp.net/webclient/intr
  
 ### Getting Started
 
-First, you need to make sure that your organization uses **[Azure Athentication](advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is set up in ERP.NET.
+First, ensure that your organization uses **[Azure Athentication](advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is configured in ERP.NET.
 
+Second, a website with the type "Microsoft Sync" must be set up in your ERP.NET database.
 
-Second, an ERP.net admin needs to login to **MSSync** and grant access to your domain using the **[Service](tech/modules/applications/mssync/service.md)**
+Third, an ERP.NET admin needs to log in to MSSync and grant access to your domain using the **[Service](tech/modules/applications/mssync/service.md)** menu.
 
+Finally, each user who wants to use synchronization must sign in to **MSSync** to activate it, following these steps:
 
-Then, as a final step, each user that wants to use the synchronization must sign in **MSSync** to activate it. 
+1. Login to the company's **MSSync** website. To access **MSSync**, it’s mandatory to sign in using the **'Sign in with Microsoft'** button with the **Microsoft account** provided by your organization. 
 
-To access **MSSync**, it’s mandatory to sign in using the **'Sign in with Microsoft'** button with the **Microsoft account** provided by your organization. 
-
-To establish the link, you will need to **read** and **accept** the permissions MSSync needs to obtain.
+2. To establish the link, you will need to **read** and **accept** the permissions MSSync needs to obtain.
 
 ![picture](pictures/Overview_permission_01_03.png)
  
@@ -32,7 +32,7 @@ If you use local **ERP** credentials to log in, **MsSync** will still open, but 
 > 
 > You must log in via an existing **Microsoft account** in order to reference your **Outlook** calendar. Otherwise, **MSSync** would be unable to determine which calendar to link to.
 
-Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** menu.
+3. Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** menu.
  
 ## Main menu
 
