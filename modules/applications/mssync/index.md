@@ -1,16 +1,24 @@
 # Overview
 
-MsSync is an application designed to synchronize resources between **ERP.net** and **Office 365**. 
+MsSync is a website application designed to synchronize resources between **ERP.net** and **Office 365**. 
 
 Each synchronization task is referred to as a **job**, allowing resources created in **Office 365** to be automatically reflected in the corresponding module in **ERP.net**, and the other way around.
 
-An example for such a job is the **[Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html)**. 
+An example of such a job is the **[Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html)**. 
 
 ![picture](pictures/Overview_view_nohighlights_01_03.png)
  
-### Access
+### Getting Started
 
-To access **MSSync**, it’s mandatory to sign in with an existing **Microsoft account**. 
+First, you need to make sure that your organization uses **[Azure Athentication](advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is set up in ERP.NET.
+
+
+Second, an ERP.net admin needs to login to **MSSync** and grant access to your domain using the **[Service](tech/modules/applications/mssync/service.md)**
+
+
+Then, as a final step, each user that wants to use the synchronization must sign in **MSSync** to activate it. 
+
+To access **MSSync**, it’s mandatory to sign in using the **'Sign in with Microsoft'** button with the **Microsoft account** provided by your organization. 
 
 To establish the link, you will need to **read** and **accept** the permissions MSSync needs to obtain.
 
@@ -48,7 +56,7 @@ From here, admins can securely connect their **MSSync** instance to their **Micr
 
 ![picture](pictures/Overview_service_01_03.png)
 
-For more information about navigating, setting up and configuring MsSync, see:
+For more information about navigating, setting up, and configuring MsSync, see:
 
 *	**[Home](https://docs.erp.net/tech/modules/applications/mssync/home.html)**
 *	**[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)**
