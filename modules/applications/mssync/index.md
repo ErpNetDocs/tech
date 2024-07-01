@@ -31,8 +31,10 @@ If you use local **ERP** credentials to log in, **MsSync** will still open, but 
 > [!WARNING]
 > 
 > You must log in via an existing **Microsoft account** in order to reference your **Outlook** calendar. Otherwise, **MSSync** would be unable to determine which calendar to link to.
+
+Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** menu.
  
-## Menu
+## Main menu
 
 The **MSSync** app consists of **three** sections: 
 
