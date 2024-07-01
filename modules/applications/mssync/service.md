@@ -4,7 +4,7 @@ The **Service** section is exclusively for @@name admins.
 
 Here, they can request permissions for accessing **Microsoft 365** resources from an admin within their **enterprise company**. 
 
-These permissions are essential for enabling synchronization between the company's **Microsoft 365** account and the **ERP.net Web Client**. 
+These permissions are essential for enabling synchronization between the company's **Microsoft 365** account and the @@name Web Client. 
 
  ![picture](pictures/Service_view_01_03.png)
 
