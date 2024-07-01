@@ -1,22 +1,22 @@
 # Overview
 
-MsSync is a website application designed to synchronize resources between **ERP.net** and **Office 365**. 
+MsSync is a website application designed to synchronize resources between @@name and **Office 365**. 
 
-Each synchronization task is referred to as a **job**, allowing resources created in **Office 365** to be automatically reflected in the corresponding module in **ERP.net**, and the other way around.
+Each synchronization task is referred to as a **job**, allowing resources created in **Office 365** to be automatically reflected in the corresponding module in @@name, and the other way around.
 
 An example of such a job is the **[Calendar](https://docs.erp.net/webclient/introduction/my-apps/calendar.html)**. 
 
 ![picture](pictures/Overview_view_nohighlights_01_03.png)
  
-### Getting Started
+### Getting started
 
-First, ensure that your organization uses **[Azure Athentication](advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is configured in ERP.NET.
+First, ensure that your organization uses **[Azure Athentication](/advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is configured in @@name.
 
-Second, a website with the type "Microsoft Sync" must be set up in your ERP.NET database.
+Second, a **website** with the type "Microsoft Sync" must be set up in your @@name database.
 
-Third, an ERP.NET admin needs to log in to MSSync and grant access to your domain using the **[Service](tech/modules/applications/mssync/service.md)** menu.
+Third, an @@name **admin** needs to log in to MSSync and grant access to your **Microsoft 365** resources using the **[Service](service.md)** menu.
 
-Finally, each user who wants to use synchronization must sign in to **MSSync** to activate it, following these steps:
+Finally, **each user** who wants to use synchronization must sign in to MSSync to activate it, following these steps:
 
 1. Login to the company's **MSSync** website. To access **MSSync**, it’s mandatory to sign in using the **'Sign in with Microsoft'** button with the **Microsoft account** provided by your organization. 
 
@@ -32,7 +32,7 @@ If you use local **ERP** credentials to log in, **MsSync** will still open, but 
 > 
 > You must log in via an existing **Microsoft account** in order to reference your **Outlook** calendar. Otherwise, **MSSync** would be unable to determine which calendar to link to.
 
-3. Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** menu.
+3. Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the **[Setup](setup.md)** menu.
  
 ## Main menu
 
