@@ -79,16 +79,21 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="overview">Overview</h1>
 
-<p>MsSync is a website application designed to synchronize resources between <strong>ERP.net</strong> and <strong>Office 365</strong>.</p>
-<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in <strong>ERP.net</strong>, and the other way around.</p>
+<p>MsSync is a website application designed to synchronize resources between ERP.net and <strong>Office 365</strong>.</p>
+<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in ERP.net, and the other way around.</p>
 <p>An example of such a job is the <strong><a href="https://docs.erp.net/webclient/introduction/my-apps/calendar.html">Calendar</a></strong>.</p>
 <p><img src="pictures/Overview_view_nohighlights_01_03.png" alt="picture"></p>
-<h3 id="getting-started">Getting Started</h3>
-<p>First, you need to make sure that your organization uses <strong><a href="advanced/security/authentication/azuread.md">Azure Athentication</a></strong> and that the organization's <strong><a href="/advanced/security/authentication/azuread.md#erpnet-settings">domain</a></strong> is set up in ERP.NET.</p>
-<p>Second, an ERP.net admin needs to login to <strong>MSSync</strong> and grant access to your domain using the <strong><a href="tech/modules/applications/mssync/service.md">Service</a></strong></p>
-<p>Then, as a final step, each user that wants to use the synchronization must sign in <strong>MSSync</strong> to activate it.</p>
-<p>To access <strong>MSSync</strong>, it’s mandatory to sign in using the <strong>'Sign in with Microsoft'</strong> button with the <strong>Microsoft account</strong> provided by your organization.</p>
-<p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions MSSync needs to obtain.</p>
+<h3 id="getting-started">Getting started</h3>
+<p>First, ensure that your organization uses <strong><a href="/advanced/security/authentication/azuread.md">Azure Athentication</a></strong> and that the organization's <strong><a href="/advanced/security/authentication/azuread.md#erpnet-settings">domain</a></strong> is configured in ERP.net.</p>
+<p>Second, a <strong>website</strong> with the type &quot;Microsoft Sync&quot; must be set up in your ERP.net database.</p>
+<p>Third, an ERP.net <strong>admin</strong> needs to log in to MSSync and grant access to your <strong>Microsoft 365</strong> resources using the <strong><a href="service.html">Service</a></strong> menu.</p>
+<p>Finally, <strong>each user</strong> who wants to use synchronization must sign in to MSSync to activate it, following these steps:</p>
+<ol>
+<li><p>Login to the company's <strong>MSSync</strong> website. To access <strong>MSSync</strong>, it’s mandatory to sign in using the <strong>'Sign in with Microsoft'</strong> button with the <strong>Microsoft account</strong> provided by your organization.</p>
+</li>
+<li><p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions MSSync needs to obtain.</p>
+</li>
+</ol>
 <p><img src="pictures/Overview_permission_01_03.png" alt="picture"></p>
 <p>If you use local <strong>ERP</strong> credentials to log in, <strong>MsSync</strong> will still open, but will essentially deny you any kind of access to its resources.</p>
 <p><img src="pictures/Overview_error_01_03.png" alt="picture"></p>
@@ -96,7 +101,10 @@
 <h5>Warning</h5>
 <p>You must log in via an existing <strong>Microsoft account</strong> in order to reference your <strong>Outlook</strong> calendar. Otherwise, <strong>MSSync</strong> would be unable to determine which calendar to link to.</p>
 </div>
-<h2 id="menu">Menu</h2>
+<ol start="3">
+<li>Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the <strong><a href="setup.html">Setup</a></strong> menu.</li>
+</ol>
+<h2 id="main-menu">Main menu</h2>
 <p>The <strong>MSSync</strong> app consists of <strong>three</strong> sections:</p>
 <ul>
 <li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong></li>
