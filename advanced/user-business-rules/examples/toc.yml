@@ -18,6 +18,6 @@
   href: slack-send-message.md  
 - name: Set an initial attribute for a new sales order
   href: sales-order-init-attribute.md
-- name: Manage user status
+- name: Manage user status of documents
   href: manage-user-status.md
   
