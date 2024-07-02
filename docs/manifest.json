@@ -8760,6 +8760,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174915036.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174915036.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174945963.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174945963.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175025054.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175025054.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175041200.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175041200.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175058385.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175058385.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175112409.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175112409.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175133330.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175133330.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/logistics/logistics-common-module-concepts/available-to-promise/pictures/picture1.png",
       "output": {
         "resource": {
@@ -19493,7 +19570,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/adjust-base-cost.html",
-          "hash": "aJ4EP7pJnjIROHGExIMqAw=="
+          "hash": "1Ha5l6G7sgEo96ykwUdu9A=="
         }
       },
       "is_incremental": false,
@@ -21225,6 +21302,83 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175133330.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175949791.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175949791.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180030136.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180030136.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180046094.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180046094.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180105136.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180105136.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180119642.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180119642.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180138001.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180138001.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180154136.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702180154136.png"
         }
       },
       "is_incremental": false,
