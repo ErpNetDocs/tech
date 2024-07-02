@@ -36,7 +36,7 @@ You first need to create a cost correction responsible for adjusting your stores
 
 This is typically done once every month.
 
-![picture](pictures/Adjustment_Base_cost_New_correction_27_06.png)
+![image-20240702114342042](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702114342042.png)
 
 Fill in the **from** and **thru date** of the period and click **Save**.
 
@@ -67,7 +67,7 @@ Required fields are:
 
 ![image-20240702112548927](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702112548927.png) 
 
-The function will load all products (with 0 quantities) from the selected store whose base costs are different from their original line costs.
+The function will load all available products from the selected store whose base costs are different from their original line costs.
 
 ![image-20240702112913195](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702112913195.png)
 
