@@ -22,7 +22,7 @@ It also limits the need to make frequent cost corrections due to accumulated dis
 
 After executing the function and processing the document, the cumulative Corrected Cost for this inventory transaction will stay at zero, meaning the cost in the store will not change.
 
-![image-20240702174915036](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174915036.png)
+![image-20240702175949791](pictures/adjust-base-cost/image-20240702175949791.png)
 
 
 
@@ -36,7 +36,7 @@ You first need to create a cost correction responsible for adjusting your stores
 
 This is typically done once every month.
 
-![image-20240702174945963](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174945963.png)
+![image-20240702180030136](pictures/adjust-base-cost/image-20240702180030136.png)
 
 
 
@@ -44,7 +44,7 @@ Fill in the **from** and **thru date** of the period and click **Save**.
 
 Then, navigate to the **Functions** tab and select **Recalculate corrections for the period**.
 
-![image-20240702175025054](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175025054.png)
+![image-20240702180046094](pictures/adjust-base-cost/image-20240702180046094.png)
 
 
 
@@ -63,7 +63,7 @@ Required fields are:
 - **Document Currency** - main currency of the enterprise company
 - **Cost Source** - source of the document, set automatically; after the function is applied, it changes to *Adjustment*.
 
-![image-20240702175041200](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175041200.png)
+![image-20240702180105136](pictures/adjust-base-cost/image-20240702180105136.png)
 
 
 
@@ -71,13 +71,13 @@ Required fields are:
 
 **Save** the document, navigate to **Functions** and select **Adjust base costs**.
 
-![image-20240702175058385](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175058385.png)
+![image-20240702180119642](pictures/adjust-base-cost/image-20240702180119642.png)
 
- 
+
 
 The function will load all available products from the selected store whose base costs are different from their original line costs.
 
-![image-20240702175112409](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175112409.png)
+![image-20240702180138001](pictures/adjust-base-cost/image-20240702180138001.png)
 
 
 
@@ -85,9 +85,9 @@ It is only after **releasing** this transaction that it will match their current
 
 Values added to the **Line Base Cost** will be simultaneously subtracted from the **Base Cost Adjustment**.
 
-![image-20240702175133330](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175133330.png)
+![image-20240702180154136](pictures/adjust-base-cost/image-20240702180154136.png)
 
- 
+
 
 > [!NOTE]
 > Following a recent application of the function, transactions will now assume the **correct (or most correct)** base costs of products.
