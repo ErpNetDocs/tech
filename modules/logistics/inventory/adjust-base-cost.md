@@ -22,9 +22,9 @@ It also limits the need to make frequent cost corrections due to accumulated dis
 
 After executing the function and processing the document, the cumulative Corrected Cost for this inventory transaction will stay at zero, meaning the cost in the store will not change.
 
+![image-20240702174915036](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174915036.png)
 
 
-![image-20240701180124882](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240701180124882.png)
 
 ## Using Adjust Base Cost
 
@@ -36,13 +36,17 @@ You first need to create a cost correction responsible for adjusting your stores
 
 This is typically done once every month.
 
-![image-20240702114342042](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702114342042.png)
+![image-20240702174945963](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174945963.png)
+
+
 
 Fill in the **from** and **thru date** of the period and click **Save**.
 
 Then, navigate to the **Functions** tab and select **Recalculate corrections for the period**.
 
-![image-20240702111849715](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702111849715.png)
+![image-20240702175025054](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175025054.png)
+
+
 
 Once prepared, **Release** the document.
 
@@ -59,17 +63,21 @@ Required fields are:
 - **Document Currency** - main currency of the enterprise company
 - **Cost Source** - source of the document, set automatically; after the function is applied, it changes to *Adjustment*.
 
-![image-20240702112510927](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702112510927.png)
+![image-20240702175041200](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175041200.png)
+
+
 
 ### 3. Apply the function
 
 **Save** the document, navigate to **Functions** and select **Adjust base costs**.
 
-![image-20240702112548927](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702112548927.png) 
+![image-20240702175058385](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175058385.png)
+
+ 
 
 The function will load all available products from the selected store whose base costs are different from their original line costs.
 
-![image-20240702112913195](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702112913195.png)
+![image-20240702175112409](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175112409.png)
 
 
 
@@ -77,7 +85,9 @@ It is only after **releasing** this transaction that it will match their current
 
 Values added to the **Line Base Cost** will be simultaneously subtracted from the **Base Cost Adjustment**.
 
-![image-20240702113849706](C:\Users\i.ivanov.ERPBG\AppData\Roaming\Typora\typora-user-images\image-20240702113849706.png) 
+![image-20240702175133330](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175133330.png)
+
+ 
 
 > [!NOTE]
 > Following a recent application of the function, transactions will now assume the **correct (or most correct)** base costs of products.
