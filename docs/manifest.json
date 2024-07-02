@@ -19493,7 +19493,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/adjust-base-cost.html",
-          "hash": "tj8rAgA7WBHbQRgEtB1kaw=="
+          "hash": "aJ4EP7pJnjIROHGExIMqAw=="
         }
       },
       "is_incremental": false,
@@ -21148,6 +21148,83 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/pictures/Inventory_views_21_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174915036.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174915036.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174945963.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702174945963.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175025054.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175025054.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175041200.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175041200.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175058385.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175058385.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175112409.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175112409.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175133330.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/pictures/adjust-base-cost/image-20240702175133330.png"
         }
       },
       "is_incremental": false,
