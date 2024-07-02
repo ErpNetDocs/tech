@@ -19489,11 +19489,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/adjusted-base-cost.md",
+      "source_relative_path": "modules/logistics/inventory/adjust-base-cost.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/inventory/adjusted-base-cost.html",
-          "hash": "oBx7oRwf72/dlFsm8HKA5Q=="
+          "relative_path": "modules/logistics/inventory/adjust-base-cost.html",
+          "hash": "tj8rAgA7WBHbQRgEtB1kaw=="
         }
       },
       "is_incremental": false,
@@ -19587,7 +19587,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/index.html",
-          "hash": "nUBg/ikwFt3rpLMbSK8wkA=="
+          "hash": "bZSHx+ql3ogYO8p/OfZYEQ=="
         }
       },
       "is_incremental": false,
@@ -25703,7 +25703,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "h7OOkRmdeLg2nhsjr6BN7g=="
+          "hash": "sYqUoSq66Sz77IYPgOvbRw=="
         }
       },
       "is_incremental": false,
