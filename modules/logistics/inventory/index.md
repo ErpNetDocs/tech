@@ -84,6 +84,8 @@ Learn more about **Inventory** in the following articles:
  
 - **[Execute store orders function](https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/index.html?q=Execute%20store%20orders%20function)**
 
+- **[Adjust base cost function](adjust-base-cost.md)**
+- 
 - **[Lots](https://docs.erp.net/tech/modules/logistics/inventory/lots/index.html?q=Lots)**
 
 - **[Store orders](https://docs.erp.net/tech/modules/logistics/inventory/store-orders/index.html?q=Store%20orders)**
