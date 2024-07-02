@@ -95,16 +95,16 @@
 <li>The goal is to transfer the cost brought in by the function from &quot;Line Base Cost&quot; to &quot;Base Cost Adjustment&quot; with opposite sign ensuring the total Adjusted Cost of the document remains zero.</li>
 </ul>
 <p>After executing the function and processing the document, the cumulative Corrected Cost for this inventory transaction will stay at zero, meaning the cost in the store will not change.</p>
-<p>![image-20240702174915036](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174915036.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702175949791.png" alt="image-20240702175949791"></p>
 <h2 id="using-adjust-base-cost">Using Adjust Base Cost</h2>
 <p>Here, you'll find detailed steps on how to effectively perform base cost adjustment.</p>
 <h3 id="1-create-a-cost-correction-document">1. Create a Cost Correction document</h3>
 <p>You first need to create a cost correction responsible for adjusting your stores' costs over a specified period.</p>
 <p>This is typically done once every month.</p>
-<p>![image-20240702174945963](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702174945963.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180030136.png" alt="image-20240702180030136"></p>
 <p>Fill in the <strong>from</strong> and <strong>thru date</strong> of the period and click <strong>Save</strong>.</p>
 <p>Then, navigate to the <strong>Functions</strong> tab and select <strong>Recalculate corrections for the period</strong>.</p>
-<p>![image-20240702175025054](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175025054.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180046094.png" alt="image-20240702180046094"></p>
 <p>Once prepared, <strong>Release</strong> the document.</p>
 <h3 id="2-create-a-cost-correction-transaction">2. Create a Cost correction transaction</h3>
 <p>Start creating a cost correction transaction using the document type you've created.</p>
@@ -115,15 +115,15 @@
 <li><strong>Document Currency</strong> - main currency of the enterprise company</li>
 <li><strong>Cost Source</strong> - source of the document, set automatically; after the function is applied, it changes to <em>Adjustment</em>.</li>
 </ul>
-<p>![image-20240702175041200](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175041200.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180105136.png" alt="image-20240702180105136"></p>
 <h3 id="3-apply-the-function">3. Apply the function</h3>
 <p><strong>Save</strong> the document, navigate to <strong>Functions</strong> and select <strong>Adjust base costs</strong>.</p>
-<p>![image-20240702175058385](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175058385.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180119642.png" alt="image-20240702180119642"></p>
 <p>The function will load all available products from the selected store whose base costs are different from their original line costs.</p>
-<p>![image-20240702175112409](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175112409.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180138001.png" alt="image-20240702180138001"></p>
 <p>It is only after <strong>releasing</strong> this transaction that it will match their current base costs with their adjusted costs.</p>
 <p>Values added to the <strong>Line Base Cost</strong> will be simultaneously subtracted from the <strong>Base Cost Adjustment</strong>.</p>
-<p>![image-20240702175133330](C:\Users\i.ivanov.ERPBG\OneDrive - ERP Bulgaria Ltd\Documents\GitHub\tech\modules\logistics\inventory\pictures\adjust-base-cost\image-20240702175133330.png)</p>
+<p><img src="pictures/adjust-base-cost/image-20240702180154136.png" alt="image-20240702180154136"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Following a recent application of the function, transactions will now assume the <strong>correct (or most correct)</strong> base costs of products.</p>
