@@ -104,7 +104,7 @@ For the purposes of this overview, screenshots and references will be used from 
 <p>The <strong>Documents</strong> portion of Rental contains all essential transactions and contracts related to the leasing process.</p>
 <p>It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.</p>
 <ol>
-<li><strong>Lease contract</strong>  - the main lease document containing the rental asset/s and its consumables, if such are applicable</li>
+<li><strong>Lease contract</strong>  - the main lease document containing the rental asset/s and its consumables, if such are applicable; it also includes the lease time period negotiated for every rental asset</li>
 <li><strong>Transaction (Deliver)</strong> - a protocol confirming the handover of the rental asset; it contains the start date of the negotiated lease period</li>
 <li><strong>Transaction (Receive)</strong> - a protocol confirming the return of the rental asset; it contains the end date of the negotiated lease period</li>
 <li><strong>Transaction (Write Off Not Returned)</strong> - a protocol confirming that the rental asset has not been returned by the leaser</li>
@@ -117,6 +117,10 @@ For the purposes of this overview, screenshots and references will be used from 
 <p><strong>Lease Contract --&gt; Transaction (Deliver), Transaction (Receive), Sales Order (Rent), Sales Order (Consumable)</strong></p>
 </blockquote>
 <p>Upon release, the lease contract will lead to the simultaneous generation of a transaction (deliver) protocol, a transaction (receive) protocol, a sales order accounting for the rent, and a sales order accounting for the consumable(s).</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Like all other ERP.net modules, Rental allows you to set up a personalized document flow that meets the individual needs of your business or organization.</p>
+</div>
 <h3 id="rent-lease-contracts-navigator">Rent Lease Contracts Navigator</h3>
 <p>This navigator contains all existing <strong>lease contract agreements</strong> issued for rental assets, including those for consumables, and offers the ability to create new ones.</p>
 <p>It is also equipped with a handful of <strong>filtering capabilities</strong> designed to speed up the process of extracting information in a convenient and systematized way.</p>

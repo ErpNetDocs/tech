@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Adjusted Base Cost | ERP.net Tech Docs </title>
+    <title>Adjust Base Cost | ERP.net Tech Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Adjusted Base Cost | ERP.net Tech Docs ">
+    <meta name="title" content="Adjust Base Cost | ERP.net Tech Docs ">
     <meta name="generator" content="docfx 2.56.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,26 +77,36 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="adjusted-base-cost">Adjusted Base Cost</h1>
+<h1 id="adjust-base-cost">Adjust Base Cost</h1>
 
-<p>The <strong>Adjusted Base Cost</strong> feature is responsible for aligning the <strong>Original Cost</strong> of store products with their often-adjusted <strong>Base Cost</strong>.</p>
+<p>The <strong>Adjust Base Cost</strong> feature is responsible for aligning the <strong>Original Cost</strong> of store products with their often-adjusted <strong>Base Cost</strong>.</p>
 <p>It achieves this by simultaneously deducting the <strong>Base Cost Adjustment</strong> of every product and adding it to its associated <strong>Line Base Cost</strong></p>
 <p>This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products.</p>
-<p>It also limits the need to make frequent cost corrections due to accummulated discrepancies between original and base cost calculations.</p>
-<h2 id="using-adjusted-base-cost">Using Adjusted Base Cost</h2>
+<p>It also limits the need to make frequent cost corrections due to accumulated discrepancies between original and base cost calculations.</p>
+<h2 id="preliminary-setup">Preliminary Setup</h2>
+<h3 id="1-create-a-new-document-type">1. <strong>Create a New Document Type</strong></h3>
+<ul>
+<li>Create a new Document type of Inventory Transaction entity where the function will be invoked. This document type will be unified across the database and applicable to all stores.</li>
+<li>The document will not generate accounting entries but will generate a Cost Correction for the current document.</li>
+</ul>
+<h3 id="2-configure-document-route-for-cost-correction">2. <strong>Configure Document Route for Cost Correction</strong></h3>
+<ul>
+<li>In the newly created document type, set up a Document Route for generating the Cost Correction for the current document.</li>
+<li>The goal is to transfer the cost brought in by the function from &quot;Line Base Cost&quot; to &quot;Base Cost Adjustment&quot; with opposite sign ensuring the total Adjusted Cost of the document remains zero.</li>
+</ul>
+<p>After executing the function and processing the document, the cumulative Corrected Cost for this inventory transaction will stay at zero, meaning the cost in the store will not change.</p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240701180124882.png" alt="image-20240701180124882"></p>
+<h2 id="using-adjust-base-cost">Using Adjust Base Cost</h2>
 <p>Here, you'll find detailed steps on how to effectively perform base cost adjustment.</p>
 <h3 id="1-create-a-cost-correction-document">1. Create a Cost Correction document</h3>
 <p>You first need to create a cost correction responsible for adjusting your stores' costs over a specified period.</p>
 <p>This is typically done once every month.</p>
-<p><img src="pictures/Adjustment_Base_cost_New_correction_27_06.png" alt="picture"></p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702114342042.png" alt="image-20240702114342042"></p>
 <p>Fill in the <strong>from</strong> and <strong>thru date</strong> of the period and click <strong>Save</strong>.</p>
 <p>Then, navigate to the <strong>Functions</strong> tab and select <strong>Recalculate corrections for the period</strong>.</p>
-<p><img src="pictures/Adjustment_Base_cost_Functions_recalculate_27_06.png" alt="picture"></p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702111849715.png" alt="image-20240702111849715"></p>
 <p>Once prepared, <strong>Release</strong> the document.</p>
-<h3 id="2-add-a-new-document-type">2. Add a new document type</h3>
-<p>The next step is creating a special document of type <strong>Cost Correction</strong>.</p>
-<p>Its purpose is to generate a cost correction for the actual costs of the current cost correction transaction.</p>
-<h3 id="3-create-a-cost-correction-transaction">3. Create a Cost correction transaction</h3>
+<h3 id="2-create-a-cost-correction-transaction">2. Create a Cost correction transaction</h3>
 <p>Start creating a cost correction transaction using the document type you've created.</p>
 <p>Required fields are:</p>
 <ul>
@@ -105,14 +115,15 @@
 <li><strong>Document Currency</strong> - main currency of the enterprise company</li>
 <li><strong>Cost Source</strong> - source of the document, set automatically; after the function is applied, it changes to <em>Adjustment</em>.</li>
 </ul>
-<p><img src="pictures/Adjustment_Base_cost_Fill_and_save_27_06.png" alt="picture"></p>
-<h3 id="4-apply-the-function">4. Apply the function</h3>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702112510927.png" alt="image-20240702112510927"></p>
+<h3 id="3-apply-the-function">3. Apply the function</h3>
 <p><strong>Save</strong> the document, navigate to <strong>Functions</strong> and select <strong>Adjust base costs</strong>.</p>
-<p><img src="pictures/Adjustment_Base_cost_Functions_adjust_27_06.png" alt="picture"></p>
-<p>The function will load all products (with 0 quantities) from the selected store whose base costs are different from their original line costs.</p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702112548927.png" alt="image-20240702112548927"></p>
+<p>The function will load all available products from the selected store whose base costs are different from their original line costs.</p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702112913195.png" alt="image-20240702112913195"></p>
 <p>It is only after <strong>releasing</strong> this transaction that it will match their current base costs with their adjusted costs.</p>
 <p>Values added to the <strong>Line Base Cost</strong> will be simultaneously subtracted from the <strong>Base Cost Adjustment</strong>.</p>
-<p><img src="pictures/Adjustment_Base_cost_Released_27_06.png" alt="picture"></p>
+<p><img src="C:%5CUsers%5Ci.ivanov.ERPBG%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20240702113849706.png" alt="image-20240702113849706"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Following a recent application of the function, transactions will now assume the <strong>correct (or most correct)</strong> base costs of products.</p>
