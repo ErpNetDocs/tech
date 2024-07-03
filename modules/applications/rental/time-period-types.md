@@ -34,20 +34,20 @@ Navigate to Applications -> Rental -> Rental Assets.
 
 You can open an existing rental asset by clicking on its name or creating a new one.
 
-![picture](pictures/ Time_Period_Types_Navigation_03_07.png)
+![picture](pictures/Time_Period_Types_Navigation_03_07.png)
 
 ### Assign a Time Period Type
 
 After opening a **Rental Asset**, find the **Time Period Type** field and choose an option from the dropdown menu.
 
-![picture](pictures/ Time_Period_Types_Choose_03_07.png)
+![picture](pictures/Time_Period_Types_Choose_03_07.png)
 
 Assigning a time period type to a **Rental Asset** ensures:
 
 - When **Rent Lease Contracts** are created for the **Rental Asset**, the assigned time period type is automatically applied by default.
 - You can still adjust the time period type for individual **Rent Lease Contracts** as necessary.
 
-![picture](pictures/ Time_Period_Types.png)
+![picture](pictures/Time_Period_Types.png)
 
 ### Number of Periods field 	
 
@@ -57,7 +57,7 @@ You can also locate this field in the **Transactions**, though it is not always 
 
 If the contract period is adjusted and the handover transaction is released, the **Number of Periods** field will be recalculated accordingly.
 
-![picture](pictures/ Time_Period_Types.png)
+![picture](pictures/Time_Period_Types.png)
 
 ### Examples 
 
