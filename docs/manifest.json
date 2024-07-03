@@ -14486,6 +14486,54 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Navi_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Navi_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Navigation_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Navigation_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/rental/time-period-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/rental/time-period-types.html",
+          "hash": "KpS8CAaBe/RRk1I/MitxxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/applications/service/index.md",
       "output": {

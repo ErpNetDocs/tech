@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Time Period Types | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Time Period Types | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="time-period-types">Time Period Types</h1>
+
+<p>The <strong>Time Period Type</strong> field in the <strong>Rental Asset</strong> definition includes several options:</p>
+<h2 id="full-days">Full Days</h2>
+<p>This method calculates the total number of complete days a rental asset is used, without considering specific reception and delivery hours.</p>
+<p>It offers a straightforward calculation of full calendar days.</p>
+<h2 id="24-hour-periods">24-Hour Periods</h2>
+<p>This method counts started 24-hour periods, taking into account the reception and delivery times specified in the protocols.</p>
+<p>If protocols are not used and only a <strong>Rent Lease Contract</strong> is present, it functions like the <strong>Full Days</strong> method, providing flexibility based on available documentation.</p>
+<h2 id="overnight-stays">Overnight Stays</h2>
+<p>This option counts the number of overnight stays or shifts, giving a clear picture of the actual rental usage for nights spent.</p>
+<h2 id="months">Months</h2>
+<p>This value calculates the number of months from the selected start date to the same date of the following month.</p>
+<p>It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.</p>
+<h2 id="default-time-period-type-for-rental-assets">Default Time Period Type for Rental Assets</h2>
+<p>When managing Rental Assets in <strong>ERP.net</strong>, you can assign a default time period type during creation or editing.</p>
+<h3 id="navigation">Navigation</h3>
+<p>Navigate to Applications -&gt; Rental -&gt; Rental Assets.</p>
+<p>You can open an existing rental asset by clicking on its name or creating a new one.</p>
+<p><img src="pictures/Time_Period_Types_Navi_03_07.png" alt="picture"></p>
+<h3 id="assign-a-time-period-type">Assign a Time Period Type</h3>
+<p>After opening a <strong>Rental Asset</strong>, find the <strong>Time Period Type</strong> field and choose an option from the dropdown menu.</p>
+<p><img src="pictures/Time_Period_Types_Choose_03_07.png" alt="picture"></p>
+<p>Assigning a time period type to a <strong>Rental Asset</strong> ensures:</p>
+<ul>
+<li>When <strong>Rent Lease Contracts</strong> are created for the <strong>Rental Asset</strong>, the assigned time period type is automatically applied by default.</li>
+<li>You can still adjust the time period type for individual <strong>Rent Lease Contracts</strong> as necessary.</li>
+</ul>
+<p><img src="pictures/Time_Period_Types.png" alt="picture"></p>
+<h3 id="number-of-periods-field">Number of Periods field</h3>
+<p>In a <strong>Rent Lease Contract</strong>, the <strong>Number of Periods</strong> field indicates how many units of the selected <strong>Time Period Type</strong> are required for the duration of the contract.</p>
+<p>You can also locate this field in the <strong>Transactions</strong>, though it is not always automatically computed there.</p>
+<p>If the contract period is adjusted and the handover transaction is released, the <strong>Number of Periods</strong> field will be recalculated accordingly.</p>
+<p><img src="pictures/Time_Period_Types.png" alt="picture"></p>
+<h3 id="examples">Examples</h3>
+<h4 id="full-days-1">Full Days</h4>
+<p><strong>Method Definition:</strong> Calculates the total number of complete days a rental asset is used, without considering specific reception and delivery hours.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Start Date:</strong> June 1, 2024</li>
+<li><strong>End Date:</strong> June 10, 2024</li>
+</ul>
+<p>Using the Full Days method, the calculation would simply count each day from June 1 to June 10, inclusive.</p>
+<ul>
+<li>Number of days: ( 10 ) days (June 1 to June 10)</li>
+</ul>
+<h4 id="24-hour-periods-1">24-Hour Periods</h4>
+<p><strong>Method Definition:</strong> Counts started 24-hour periods, considering specific reception and delivery times if protocols are in place. If no specific times are specified, it functions like the Full Days method.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Start Date:</strong> July 1, 2024, 10:00 AM</li>
+<li><strong>End Date:</strong> July 5, 2024, 9:00 AM</li>
+</ul>
+<p>In this case, the rental period would be counted in 24-hour periods from the start time of July 1, 10:00 AM.</p>
+<ul>
+<li>July 1, 10:00 AM to July 2, 10:00 AM = 1 period</li>
+<li>July 2, 10:00 AM to July 3, 10:00 AM = 1 period</li>
+<li>July 3, 10:00 AM to July 4, 10:00 AM = 1 period</li>
+<li>July 4, 10:00 AM to July 5, 9:00 AM = 1 period</li>
+</ul>
+<p>Total 24-hour periods: ( 4 ) periods</p>
+<h4 id="overnight-stays-1">Overnight Stays</h4>
+<p><strong>Method Definition:</strong> Counts the number of overnight stays or shifts, providing a clear picture of the actual rental usage in terms of nights spent.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Start Date:</strong> August 1, 2024, check-in at 6:00 PM</li>
+<li><strong>End Date:</strong> August 5, 2024, check-out at 10:00 AM</li>
+</ul>
+<p>This method counts each night the asset is used for accommodation, regardless of the time of check-in and check-out.</p>
+<ul>
+<li>August 1 (night) to August 2 (morning) = 1 stay</li>
+<li>August 2 (night) to August 3 (morning) = 1 stay</li>
+<li>August 3 (night) to August 4 (morning) = 1 stay</li>
+<li>August 4 (night) to August 5 (morning) = 1 stay</li>
+</ul>
+<p>Total overnight stays: ( 4 ) stays</p>
+<h4 id="months-1">Months</h4>
+<p><strong>Method Definition:</strong> Calculates the number of months from the selected start date to the same date of the following month. Ideal for long-term rentals.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Start Date:</strong> September 15, 2024</li>
+<li><strong>End Date:</strong> November 15, 2024</li>
+</ul>
+<p>This method counts the number of full months between the start and end dates.</p>
+<ul>
+<li>September 15 to October 15 = 1 month</li>
+<li>October 15 to November 15 = 1 month</li>
+</ul>
+<p>Total months: ( 2 ) months</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/rental/time-period-types.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
