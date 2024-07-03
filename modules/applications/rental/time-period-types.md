@@ -34,7 +34,7 @@ Navigate to Applications -> Rental -> Rental Assets.
 
 You can open an existing rental asset by clicking on its name or creating a new one.
 
-![picture](pictures/Time_Period_Types_Navigation_03_07.png)
+![picture](pictures/Time_Period_Types_Navi_03_07.png)
 
 ### Assign a Time Period Type
 
