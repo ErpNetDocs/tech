@@ -118,7 +118,7 @@ This method counts the number of full months between the start and end dates.
 
 Total months: \( 2 \) months
 
-![picture](pictures/Time_Period_Types_Month_03_07.png)
+![picture](pictures/Time_Period_Types_Months_period_03_07.png)
 
 > [!NOTE]
 > 
