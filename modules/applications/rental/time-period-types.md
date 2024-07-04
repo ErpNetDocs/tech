@@ -2,23 +2,23 @@
 
 The **Time Period Type** field in the **Rental Asset** definition includes several options:
 
-### Full Days
+## Full Days
 
 This method calculates the total number of complete days a rental asset is used, without considering specific reception and delivery hours. 
 
 It offers a straightforward calculation of full calendar days.
 
-### 24-Hour Periods
+## 24-Hour Periods
 
 This method counts started 24-hour periods, taking into account the reception and delivery times specified in the protocols. 
 
 If protocols are not used and only a **Rent Lease Contract** is present, it functions like the **Full Days** method, providing flexibility based on available documentation.
 
-### Overnight Stays
+## Overnight Stays
 
 This option counts the number of overnight stays or shifts, giving a clear picture of the actual rental usage for nights spent.
 
-### Months
+## Months
 
 This value calculates the number of months from the selected start date to the same date of the following month. 
 
@@ -47,7 +47,7 @@ Assigning a time period type to a **Rental Asset** ensures:
 - When **Rent Lease Contracts** are created for the **Rental Asset**, the assigned time period type is automatically applied by default.
 - You can still adjust the time period type for individual **Rent Lease Contracts** as necessary.
 
-![picture](pictures/Time_Period_Types.png)
+![picture](pictures/Time_Period_Types_Contract_03_07.png)
 
 ### Number of Periods  	
 
@@ -57,7 +57,7 @@ You can also locate this field in the **Transactions**, though it is not always 
 
 If the contract period is adjusted and the handover transaction is released, the **Number of Periods** field will be recalculated accordingly.
 
-![picture](pictures/Time_Period_Types.png)
+![picture](pictures/Time_Period_Types_Number_Of_Periods_03_07.png)
 
 ### Examples 
 
@@ -72,6 +72,8 @@ If the contract period is adjusted and the handover transaction is released, the
 Using the Full Days method, the calculation would simply count each day from June 1 to June 10, inclusive.
 
 - Number of days: \( 10 \) days (June 1 to June 10)
+
+![picture](pictures/Time_Period_Types_Full_Days_03_07.png)
 
 #### 24-Hour Periods
 
@@ -90,6 +92,8 @@ In this case, the rental period would be counted in 24-hour periods from the sta
 
 Total 24-hour periods: \( 4 \) periods
 
+![picture](pictures/Time_Period_Types_24_Hours_03_07.png)
+
 #### Overnight Stays
 
 **Method Definition:** Counts the number of overnight stays or shifts, providing a clear picture of the actual rental usage in terms of nights spent.
@@ -107,6 +111,8 @@ This method counts each night the asset is used for accommodation, regardless of
 
 Total overnight stays: \( 4 \) stays
 
+![picture](pictures/Time_Period_Types_Night_03_07.png)
+
 #### Months
 
 **Method Definition:** Calculates the number of months from the selected start date to the same date of the following month. Ideal for long-term rentals.
@@ -121,3 +127,5 @@ This method counts the number of full months between the start and end dates.
 - October 15 to November 15 = 1 month
 
 Total months: \( 2 \) months
+
+![picture](pictures/Time_Period_Types_Months_03_07.png)
