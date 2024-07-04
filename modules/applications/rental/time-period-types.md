@@ -2,9 +2,7 @@
 
 When defining a rental asset, you can specify one of four **time period types** for it to determine the unit by which the periods of renting this asset will be measured. 
 
-The **Time Period Type** field expands into a dropdown menu with the following options:
-
-![picture](pictures/Time_Period_Types_Choose_03_07.png)
+Clicking on the **Time Period Type** field expands it into a dropdown menu with the following options:
 
 ### Full Days
 
@@ -26,32 +24,36 @@ Calculates the number of full calendar months that pass during a specified time 
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
 
-## Time Period Type in the Lease contract lines 
+![picture](pictures/Time_Period_Types_Choose_03_07.png)
 
-Each rental asset you add to the lease contract can have a default time period type assigned during its definition.
+## Time period type in the Lease contract lines 
 
-This setting will be automatically applied in the **lease contract line** the rental asset is added to, and you can still change it before releasing the document. 
+Each rental asset you add to a lease contract will assume its **default** time period type value assigned during its definition.
+
+This value will be automatically reflected in the **lease contract line** the rental asset is added to.
+
+However, you can always **change** it at any point prior to releasing the document. 
 
 > [!Note]
-> The time period type specified in the lease contract is prioritised over the one provided for the rental asset definition.
+> The time period type of a rental asset specified in the lease contract lines is **prioritised** over the one provided in its definition.
 
 ![picture](pictures/Time_Period_Types_Contract_03_07.png)
 
 ## Number of periods  	
 
-Based on the Start and End date of the lease specified for a particular Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated.
+Based on the Start and End date of the lease specified for a particular Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. Its purpose is to reveal **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
 
-This applies for the lease contracts lines and the lines of subsequent transactions of type Receive and Write Off Not Returned.
+This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
 > [!NOTE]
-> In order for the **Number of Periods** to be calculated for a receive transaction, the respective deliver transaction must be set to **Released**.
+> In order for the **Number of Periods** to be calculated for a Receive transaction, the respective Deliver transaction document must be set to **Released**.
 
 ![picture](pictures/Time_Period_Types_Transactions_03_07.png)
 
-In addition, once a lease contract is generated, the subsequent sales order accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
+In addition, once a lease contract is generated, the subsequently generated **sales order** accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
 
 > [!WARNING]
-> If you **modify** the Start and/or End date field for a lease contract that is already created, it will lead to the re-generation of its respective transactions.
+> If you **modify** the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already generated, the respective document will be re-generated with the latest values updated.
 
 ### Examples
 
