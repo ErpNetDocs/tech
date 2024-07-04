@@ -14443,7 +14443,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/rental/index.html",
-          "hash": "1G8nd9kY8c0kYTGoxkz+qQ=="
+          "hash": "Mtv76fcxn+J1ycnlXyQskg=="
         }
       },
       "is_incremental": false,
@@ -14517,10 +14517,76 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_Stay_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_Stay_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png",
       "output": {
         "resource": {
           "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Contract_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Contract_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Months_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Months_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Months_period_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Months_period_03_07.png"
         }
       },
       "is_incremental": false,
@@ -14549,15 +14615,56 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Night_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Night_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Number_Of_Periods_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Number_Of_Periods_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Number_of_Period_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Number_of_Period_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Transactions_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Transactions_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/applications/rental/time-period-types.md",
       "output": {
         ".html": {
           "relative_path": "modules/applications/rental/time-period-types.html",
-          "hash": "KpS8CAaBe/RRk1I/MitxxQ=="
+          "hash": "I6uK6m9Z8gRc3PJSnUMcgA=="
         }
       },
       "is_incremental": false,
@@ -25902,7 +26009,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "sYqUoSq66Sz77IYPgOvbRw=="
+          "hash": "gB2kyqxiuj/FhMhKgh7xWw=="
         }
       },
       "is_incremental": false,
