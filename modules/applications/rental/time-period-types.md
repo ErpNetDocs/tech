@@ -4,9 +4,13 @@ When defining a rental asset, you can specify one of four **time period types** 
 
 ![picture](pictures/Time_Period_Types_Choose_03_07.png)
 
+## Options
+
 ### Full Days
 
-Calculates the total number of complete days a rental asset is used, without considering the receive and delivery hours specified in the respective transactions.
+Calculates the total number of complete days a rental asset is used.
+
+It **does not** consider the receive and delivery hours specified in the respective Receive and Delivery transactions.
 
 ### 24-Hour Periods
 
@@ -16,7 +20,7 @@ If no protocols are generated in addition to the contract, it functions like the
 
 ### Overnight Stays
 
-Calculates the number of times the date in a specified period changes, assuming that it does that only once when one day transitions into the next.
+Calculates the number of times the date in a specified period changes, assuming it does that only once when a day transitions into another.
 
 ### Months
 
@@ -24,7 +28,7 @@ Calculates the number of full calendar months that pass during a specified time 
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
 
-## Time period type in the Lease contract lines 
+### Changing the Time Period Type
 
 Each rental asset you add to a lease contract will assume its **default** time period type value assigned during its definition.
 
@@ -39,19 +43,19 @@ However, you can always **change** it at any point prior to releasing the docume
 
 ## Number of periods  	
 
-Based on the Start and End date of the lease specified for a particular Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. Its purpose is to reveal **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
+Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. Its purpose is to reveal **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
 
 This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
 > [!NOTE]
-> In order for the **Number of Periods** to be calculated for a Receive transaction, the respective Deliver transaction document must be set to **Released**.
+> The **Number of Periods** for a Receive transaction will be calculated only after the respective Deliver transaction is set to **Released**.
 
 ![picture](pictures/Time_Period_Types_Transactions_03_07.png)
 
 In addition, once a lease contract is generated, the subsequently generated **sales order** accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
 
 > [!WARNING]
-> If you **modify** the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already generated, the respective document will be re-generated with the latest values updated.
+> If you **modify** the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already created, the respective document will be **re-generated**, and the value of the Number of Periods field will be **re-calculated**.
 
 ### Examples
 
