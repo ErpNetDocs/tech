@@ -45,7 +45,7 @@ However, you can always **change** it at any point prior to releasing the docume
 
 ## Number of periods  	
 
-Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. Its purpose is to reveal **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
+Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. It reveals **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
 
 This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
@@ -58,6 +58,8 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 
 > [!WARNING]
 > If you **modify** the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already created, the respective document will be **re-generated**, and the value of the Number of Periods field will be **re-calculated**.
+
+---
 
 ### Examples
 
