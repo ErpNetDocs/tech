@@ -34,6 +34,7 @@ This setting will be automatically applied in the **lease contract line** the re
 
 > [!Note]
 > The time period type specified in the lease contract is prioritised over the one provided for the rental asset definition.
+
 ![picture](pictures/Time_Period_Types_Contract_03_07.png)
 
 ## Number of periods  	
