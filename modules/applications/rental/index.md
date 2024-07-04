@@ -150,6 +150,7 @@ This includes different user characteristics and ensures a more custom approach 
 
 ![picture](pictures/Lease_out_settings_25_06.png)
 
-
-![image](https://github.com/ErpNetDocs/tech/assets/75483217/f2d8ad5d-0505-4bc1-b2d5-6232e7f3c796)
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
 
