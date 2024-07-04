@@ -1,8 +1,8 @@
 # Time period types
 
-When defining a rental asset, you can specify one of four **time period types** for it to determine the unit by which the periods of renting this asset will be measured. 
+When defining a rental asset, you can specify one of four **time period types** for it to determine the unit by which the periods of renting this asset will be measured. Clicking on the **Time Period Type** field expands it into a dropdown menu with the following options:
 
-Clicking on the **Time Period Type** field expands it into a dropdown menu with the following options:
+![picture](pictures/Time_Period_Types_Choose_03_07.png)
 
 ### Full Days
 
@@ -23,8 +23,6 @@ Calculates the number of times the date in a specified period changes, assuming 
 Calculates the number of full calendar months that pass during a specified time range, taking into account shorter and longer months.
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
-
-![picture](pictures/Time_Period_Types_Choose_03_07.png)
 
 ## Time period type in the Lease contract lines 
 
