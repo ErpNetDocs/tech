@@ -3887,6 +3887,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Navi_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Navi_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Navigation_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Navigation_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/crm/clientcenter/how-to/Setup_user_account_01_04.png",
       "output": {
         "resource": {
@@ -13792,15 +13825,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "4HJ4WE8n+X+nAoDRox+Nqw=="
+          "hash": "fsV/OD6w6Dk/gEtytMCbgA=="
         }
       },
       "is_incremental": false,
