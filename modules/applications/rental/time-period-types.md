@@ -28,6 +28,8 @@ Calculates the number of full calendar months that pass during a specified time 
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
 
+---
+
 ### Changing the Time Period Type
 
 Each rental asset you add to a lease contract will assume its **default** time period type value assigned during its definition.
