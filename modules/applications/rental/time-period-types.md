@@ -61,16 +61,16 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 
 ---
 
-### Examples
+### Examples for calculating Number of Periods
 
 #### Full Days
 
 - **Start Date:** June 1, 2024
 - **End Date:** June 10, 2024
 
-Using the Full Days method, the calculation would simply count each day from June 1 to June 10, inclusive.
+Using the **Full Days** setting, the field will count each day from June 1 to June 10, inclusive.
 
-- Number of days: \( 10 \) days (June 1 to June 10)
+**Number of Periods**: \( 10 \) 
 
 ![picture](pictures/Time_Period_Types_Full_Days_03_07.png)
 
@@ -79,30 +79,30 @@ Using the Full Days method, the calculation would simply count each day from Jun
 - **Start Date:** July 1, 2024, 10:00 AM
 - **End Date:** July 5, 2024, 9:00 AM
 
-In this case, the rental period would be counted in 24-hour periods from the start time of July 1, 10:00 AM.
+In this case, the field will count only the 24-hour periods starting from July 1, 10:00 AM, onwards.
 
 - July 1, 10:00 AM to July 2, 10:00 AM = 1 period
 - July 2, 10:00 AM to July 3, 10:00 AM = 1 period
 - July 3, 10:00 AM to July 4, 10:00 AM = 1 period
 - July 4, 10:00 AM to July 5, 9:00 AM = 1 period
 
-Total 24-hour periods: \( 4 \) periods
+**Number of Periods**: \( 4 \) 
 
 ![picture](pictures/Time_Period_Types_24_Hours_Stay_03_07.png)
 
 #### Overnight Stays
 
-- **Start Date:** August 1, 2024, check-in at 6:00 PM
-- **End Date:** August 5, 2024, check-out at 10:00 AM
+- **Start Date:** August 1, 2024, 6:00 PM
+- **End Date:** August 5, 2024, 10:00 AM
 
-This method counts each night the asset is used for accommodation, regardless of the time of check-in and check-out.
+This method counts each night that has passed since the asset has been leased.
 
 - August 1 (night) to August 2 (morning) = 1 stay
 - August 2 (night) to August 3 (morning) = 1 stay
 - August 3 (night) to August 4 (morning) = 1 stay
 - August 4 (night) to August 5 (morning) = 1 stay
 
-Total overnight stays: \( 4 \) stays
+**Number of Periods:** \( 4 \) 
 
 ![picture](pictures/Time_Period_Types_Night_03_07.png)
 
@@ -111,12 +111,12 @@ Total overnight stays: \( 4 \) stays
 - **Start Date:** September 15, 2024
 - **End Date:** November 15, 2024
 
-This method counts the number of full months between the start and end dates.
+This method counts the number of full calendar months that have passed between the start and end date.
 
 - September 15 to October 15 = 1 month
 - October 15 to November 15 = 1 month
 
-Total months: \( 2 \) months
+**Number of Periods:** \( 2 \) 
 
 ![picture](pictures/Time_Period_Types_Months_period_03_07.png)
 
