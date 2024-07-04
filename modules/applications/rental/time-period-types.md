@@ -2,23 +2,23 @@
 
 The **Time Period Type** field in the **Rental Asset** definition includes several options:
 
-## Full Days
+##№ Full Days
 
 This method calculates the total number of complete days a rental asset is used, without considering specific reception and delivery hours. 
 
 It offers a straightforward calculation of full calendar days.
 
-## 24-Hour Periods
+##№ 24-Hour Periods
 
 This method counts started 24-hour periods, taking into account the reception and delivery times specified in the protocols. 
 
 If protocols are not used and only a **Rent Lease Contract** is present, it functions like the **Full Days** method, providing flexibility based on available documentation.
 
-## Overnight Stays
+#№# Overnight Stays
 
 This option counts the number of overnight stays or shifts, giving a clear picture of the actual rental usage for nights spent.
 
-## Months
+##№ Months
 
 This value calculates the number of months from the selected start date to the same date of the following month. 
 
@@ -49,7 +49,7 @@ Assigning a time period type to a **Rental Asset** ensures:
 
 ![picture](pictures/Time_Period_Types.png)
 
-### Number of Periods field 	
+### Number of Periods  	
 
 In a **Rent Lease Contract**, the **Number of Periods** field indicates how many units of the selected **Time Period Type** are required for the duration of the contract. 
 
