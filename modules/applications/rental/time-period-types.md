@@ -1,4 +1,4 @@
-![image](https://github.com/ErpNetDocs/tech/assets/75483217/72575da6-378b-4e7c-aa78-bd573f22f526)# Time Period Types
+# Time period types
 
 When defining a rental asset, you can specify one of four **time period types** for it to determine the unit by which the periods of renting this asset will be measured. 
 
