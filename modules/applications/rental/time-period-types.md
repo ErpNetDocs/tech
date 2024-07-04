@@ -68,9 +68,9 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 - **Start Date:** June 1, 2024
 - **End Date:** June 10, 2024
 
-Using the **Full Days** setting, the field will count each day from June 1 to June 10, inclusive.
+Using this setting, the field will count each day from June 1 to June 10, inclusive.
 
-**Number of Periods**: \( 10 \) 
+**Number of Periods**: 10 
 
 ![picture](pictures/Time_Period_Types_Full_Days_03_07.png)
 
@@ -86,7 +86,7 @@ In this case, the field will count only the 24-hour periods starting from July 1
 - July 3, 10:00 AM to July 4, 10:00 AM = 1 period
 - July 4, 10:00 AM to July 5, 9:00 AM = 1 period
 
-**Number of Periods**: \( 4 \) 
+**Number of Periods**: 4
 
 ![picture](pictures/Time_Period_Types_24_Hours_Stay_03_07.png)
 
@@ -102,7 +102,7 @@ This method counts each night that has passed since the asset has been leased.
 - August 3 (night) to August 4 (morning) = 1 stay
 - August 4 (night) to August 5 (morning) = 1 stay
 
-**Number of Periods:** \( 4 \) 
+**Number of Periods:** 4 
 
 ![picture](pictures/Time_Period_Types_Night_03_07.png)
 
@@ -116,7 +116,7 @@ This method counts the number of full calendar months that have passed between t
 - September 15 to October 15 = 1 month
 - October 15 to November 15 = 1 month
 
-**Number of Periods:** \( 2 \) 
+**Number of Periods:** 2 
 
 ![picture](pictures/Time_Period_Types_Months_period_03_07.png)
 
