@@ -32,7 +32,7 @@ The **Documents** portion of Rental contains all essential transactions and cont
 
 It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.
 
-1. **Lease contract**  - the main lease document containing the rental asset/s and its consumables, if such are applicable; it also includes the lease time period negotiated for every rental asset
+1. **Lease contract**  - the main lease document containing the rental asset/s and its consumables, if such are applicable; it also includes the **[lease time period](time-period-types.md)** negotiated for every rental asset
 2. **Transaction (Deliver)** - a protocol confirming the handover of the rental asset; it contains the start date of the negotiated lease period
 3. **Transaction (Receive)** - a protocol confirming the return of the rental asset; it contains the end date of the negotiated lease period
 4. **Transaction (Write Off Not Returned)** - a protocol confirming that the rental asset has not been returned by the leaser
