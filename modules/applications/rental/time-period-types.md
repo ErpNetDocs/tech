@@ -53,11 +53,17 @@ Assigning a time period type to a **Rental Asset** ensures:
 
 In a **Rent Lease Contract**, the **Number of Periods** field indicates how many units of the selected **Time Period Type** are required for the duration of the contract. 
 
+![picture](pictures/Time_Period_Types_Number_of_Period_03_07.png)
+
 You can also locate this field in the **Transactions**, though it is not always automatically computed there.
 
-If the contract period is adjusted and the Deliver transaction is released, the **Number of Periods** field will be recalculated accordingly.
+If the contract period is adjusted and the **Deliver Transaction** is released, the **Number of Periods** field will be recalculated accordingly. 
 
-![picture](pictures/Time_Period_Types_Number_of_Period_03_07.png)
+> [!NOTE]
+> The **Number of Periods** field is not calculated and will not be referenced in any feature calculations for the **Deliver Transaction**.
+
+> [!NOTE]
+> The **Number of Periods** field is used to calculate the **Quantity** field in the **Sales Order**.
 
 ### Examples 
 
@@ -129,3 +135,7 @@ This method counts the number of full months between the start and end dates.
 Total months: \( 2 \) months
 
 ![picture](pictures/Time_Period_Types_Months_period_03_07.png)
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
