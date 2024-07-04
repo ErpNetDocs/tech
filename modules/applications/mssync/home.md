@@ -46,4 +46,3 @@ Additiony, **logs** are available for all operations, including when a resource 
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
- 
