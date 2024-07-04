@@ -55,7 +55,7 @@ In a **Rent Lease Contract**, the **Number of Periods** field indicates how many
 
 You can also locate this field in the **Transactions**, though it is not always automatically computed there.
 
-If the contract period is adjusted and the handover transaction is released, the **Number of Periods** field will be recalculated accordingly.
+If the contract period is adjusted and the Deliver transaction is released, the **Number of Periods** field will be recalculated accordingly.
 
 ![picture](pictures/Time_Period_Types_Number_of_Period_03_07.png)
 
