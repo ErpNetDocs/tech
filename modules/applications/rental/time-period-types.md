@@ -57,7 +57,7 @@ You can also locate this field in the **Transactions**, though it is not always 
 
 If the contract period is adjusted and the handover transaction is released, the **Number of Periods** field will be recalculated accordingly.
 
-![picture](pictures/Time_Period_Types_Number_Of_Periods_03_07.png)
+![picture](pictures/Time_Period_Types_Number_of_Period_03_07.png)
 
 ### Examples 
 
