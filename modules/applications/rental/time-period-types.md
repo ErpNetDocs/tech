@@ -73,7 +73,7 @@ Using the Full Days method, the calculation would simply count each day from Jun
 
 - Number of days: \( 10 \) days (June 1 to June 10)
 
-![picture](pictures/Time_Period_Types_24_Hours_Stay_03_07.png)
+![picture](pictures/Time_Period_Types_Full_Days_03_07.png)
 
 #### 24-Hour Periods
 
@@ -92,7 +92,7 @@ In this case, the rental period would be counted in 24-hour periods from the sta
 
 Total 24-hour periods: \( 4 \) periods
 
-![picture](pictures/Time_Period_Types_24_Hours_03_07.png)
+![picture](pictures/Time_Period_Types_24_Hours_Stay_03_07.png)
 
 #### Overnight Stays
 
@@ -128,4 +128,4 @@ This method counts the number of full months between the start and end dates.
 
 Total months: \( 2 \) months
 
-![picture](pictures/Time_Period_Types_Months_03_07.png)
+![picture](pictures/Time_Period_Types_Months_period_03_07.png)
