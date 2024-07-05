@@ -90,7 +90,7 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 
 *Number of Periods:* *30* 
 
-![picture](pictures/Time_Period_Types_Night_03_07.png)
+![picture](pictures/Time_Period_Types_Overnight_03_07.png)
 
 #### Months
 
@@ -99,7 +99,7 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 
 *Number of Periods:* *7* 
 
-![picture](pictures/Time_Period_Types_Months_period_03_07.png)
+![picture](pictures/Time_Period_Types_M_03_07.png)
 
 > [!NOTE]
 > 
