@@ -4,7 +4,7 @@ The **Assign worker** UI function allows setting a worker responsible for a task
 
 > [!NOTE]
 > This function is accessible only for Warehouse Orders in a state **lower** than Released.
-> If the current document is Released, you can **change** the worker by using the [Change Worker UI function](change-worker.md).
+> If the current document is Released, you can **change** the worker by using the **[Change Worker UI function](change-worker.md)**.
 
 ## Step-by-step guide
 
