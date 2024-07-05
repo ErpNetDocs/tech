@@ -16,9 +16,11 @@ The **Assign worker** UI function allows setting a worker responsible for a task
   
    ![Picture](pictures/assign_worker_single.png)
 
-3. This action triggers a dropdown list of available warehouse workers. The displayed workers are filtered based on the warehouse selected in the document.
+3. This action triggers a dropdown list of available warehouse workers.
 
-   Select the preferred worker from the dropdown list and confirm your choice by clicking **OK** This executes the function.
+   The displayed workers are filtered based on the **warehouse** selected in the document.
+
+   **Select** the preferred worker from the dropdown list and confirm your choice by clicking **OK**. This executes the function.
 
    ![Picture](pictures/select_single_worker.png)
 
