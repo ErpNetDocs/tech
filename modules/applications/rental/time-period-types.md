@@ -2,7 +2,7 @@
 
 When defining a rental asset, you can specify one of four **time period types** for it to determine the unit by which the periods of renting this asset will be measured. Clicking on the **Time Period Type** field expands it into a dropdown menu with the following options:
 
-![picture](pictures/Time_Period_Types_Choose_03_07.png)
+![picture](pictures/Time_Period_Types_Rental_Asset_03_07.png)
 
 ## Options
 
@@ -41,18 +41,18 @@ However, you can always **change** it at any point prior to releasing the docume
 > [!Note]
 > The time period type of a rental asset specified in the lease contract lines is **prioritised** over the one provided in its definition.
 
-![picture](pictures/Time_Period_Types_Contract_03_07.png)
+![picture](pictures/Time_Period_Types_Change_03_07.png)
 
 ## Number of periods  	
 
 Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. It reveals **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
 
+![picture](pictures/Time_Period_Types_Contract_Number_03_07.png)
+
 This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
 > [!NOTE]
 > The **Number of Periods** for a Receive transaction will be calculated only after the respective Deliver transaction is set to **Released**.
-
-![picture](pictures/Time_Period_Types_Transactions_03_07.png)
 
 In addition, once a lease contract is generated, the subsequently generated **sales order** accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
 
@@ -65,58 +65,39 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 
 #### Full Days
 
-- **Start Date:** June 1, 2024
-- **End Date:** June 10, 2024
+- **Start Date:** July 1, 2024
+- **End Date:** July 31, 2024
 
-Using this setting, the field will count each day from June 1 to June 10, inclusive.
+Using this setting, the field will count each day from July 1 to July 31, inclusive.
 
-*Number of Periods*: *10* 
+*Number of Periods*: *31* 
 
-![picture](pictures/Time_Period_Types_Full_Days_03_07.png)
+![picture](pictures/Time_Period_Types_Full_03_07.png)
 
 #### 24-Hour Periods
 
-- **Start Date:** July 1, 2024, 10:00 AM
-- **End Date:** July 5, 2024, 9:00 AM
+- **Start Date:** July 1, 2024
+- **End Date:** July 31, 2024
 
-In this case, the field will count only the 24-hour periods starting from July 1, 10:00 AM, onwards.
+*Number of Periods*: *31*
 
-- July 1, 10:00 AM to July 2, 10:00 AM = 1 period
-- July 2, 10:00 AM to July 3, 10:00 AM = 1 period
-- July 3, 10:00 AM to July 4, 10:00 AM = 1 period
-- July 4, 10:00 AM to July 5, 9:00 AM = 1 period
-
-*Number of Periods*: *4*
-
-![picture](pictures/Time_Period_Types_24_Hours_Stay_03_07.png)
+![picture](pictures/Time_Period_Types_24_H_03_07.png)
 
 #### Overnight Stays
 
-- **Start Date:** August 1, 2024, 6:00 PM
-- **End Date:** August 5, 2024, 10:00 AM
+- **Start Date:** July 1, 2024
+- **End Date:** July 31, 2024
 
-This method counts each night that has passed since the asset has been leased.
-
-- August 1 (night) to August 2 (morning) = 1 stay
-- August 2 (night) to August 3 (morning) = 1 stay
-- August 3 (night) to August 4 (morning) = 1 stay
-- August 4 (night) to August 5 (morning) = 1 stay
-
-*Number of Periods:* *4* 
+*Number of Periods:* *30* 
 
 ![picture](pictures/Time_Period_Types_Night_03_07.png)
 
 #### Months
 
-- **Start Date:** September 15, 2024
-- **End Date:** November 15, 2024
+- **Start Date:** February 1, 2024
+- **End Date:** September 1, 2024
 
-This method counts the number of full calendar months that have passed between the start and end date.
-
-- September 15 to October 15 = 1 month
-- October 15 to November 15 = 1 month
-
-*Number of Periods:* *2* 
+*Number of Periods:* *7* 
 
 ![picture](pictures/Time_Period_Types_Months_period_03_07.png)
 
