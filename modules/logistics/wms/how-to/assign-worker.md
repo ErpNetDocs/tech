@@ -36,7 +36,7 @@ This saves time and effort as you don't have to go through each order individual
 
 1. Navigate to your **Warehouse Orders** list and choose **Multi select** from the panel's menu.
 
-  ![Picture](pictures/multi_select.png)
+   ![Picture](pictures/multi_select.png)
 
 2. Select two or more warehouse orders with or without workers assigned. Make sure they are **all** in a state lower than Released.
    
