@@ -50,10 +50,6 @@ This saves time and effort as you don't have to go through each order individual
 
    The selected worker will be immediately assigned to the respective orders.
 
-   If you happen to choose an order in a state Released or higher, the function will result in an **error**.
-
-   ![Picture](pictures/error_message.png)
-
-
+  
 
 
