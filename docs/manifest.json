@@ -1190,7 +1190,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/data-objects/default-tracking-levels.html",
-          "hash": "Q2iB5KuuuDfMVbGu0gYsFg=="
+          "hash": "wB95T7HgS4AkSXyai5JdQA=="
         }
       },
       "is_incremental": false,
@@ -3887,10 +3887,76 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_24_Hours_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_24_Hours_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_24_Hours_Stay_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_24_Hours_Stay_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png",
       "output": {
         "resource": {
           "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Choose_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Contract_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Contract_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Months_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Months_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Months_period_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Months_period_03_07.png"
         }
       },
       "is_incremental": false,
@@ -3913,6 +3979,50 @@
       "output": {
         "resource": {
           "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Navigation_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Night_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Night_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Number_Of_Periods_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Number_Of_Periods_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Number_of_Period_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Number_of_Period_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Transactions_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/modules/applications/rental/pictures/Time_Period_Types_Transactions_03_07.png"
         }
       },
       "is_incremental": false,
@@ -14517,6 +14627,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_H_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_H_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_03_07.png",
       "output": {
         "resource": {
@@ -14532,6 +14653,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/applications/rental/pictures/Time_Period_Types_24_Hours_Stay_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Change_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Change_03_07.png"
         }
       },
       "is_incremental": false,
@@ -14561,10 +14693,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Contract_Number_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Contract_Number_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png",
       "output": {
         "resource": {
           "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Full_Days_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_M_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_M_03_07.png"
         }
       },
       "is_incremental": false,
@@ -14649,6 +14814,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Overnight_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Overnight_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Rental_Asset_03_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/applications/rental/pictures/Time_Period_Types_Rental_Asset_03_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/applications/rental/pictures/Time_Period_Types_Transactions_03_07.png",
       "output": {
         "resource": {
@@ -14664,7 +14851,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/applications/rental/time-period-types.html",
-          "hash": "I6uK6m9Z8gRc3PJSnUMcgA=="
+          "hash": "E+ISGLa+I6Vk5bKxqSVniQ=="
         }
       },
       "is_incremental": false,
@@ -23196,7 +23383,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/assign-worker.html",
-          "hash": "/INHttI2lf/FSDO1Jv/3nw=="
+          "hash": "1gvrvYlSuA0TOGo0MGu9Ag=="
         }
       },
       "is_incremental": false,
@@ -23256,7 +23443,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/wms/how-to/index.html",
-          "hash": "uvxiXIzUggjbdql7Bk+A1g=="
+          "hash": "qavNEeUGwwEBnk2h8o4Xsw=="
         }
       },
       "is_incremental": false,
@@ -23542,6 +23729,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/assign_multiple.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/assign_multiple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/assign_worker_single.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/assign_worker_single.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/button-ok.png",
       "output": {
         "resource": {
@@ -23568,6 +23777,17 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/default-store.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/error_message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/error_message.png"
         }
       },
       "is_incremental": false,
@@ -23719,6 +23939,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/multi_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/multi_select.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/ok-button.png",
       "output": {
         "resource": {
@@ -23818,10 +24049,54 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/select_multiple.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/select_multiple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/select_single_worker.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/select_single_worker.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/single_worker_selected.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/single_worker_selected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/success.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/warehouse_worker_empty.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/warehouse_worker_empty.png"
         }
       },
       "is_incremental": false,
