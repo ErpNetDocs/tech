@@ -28,19 +28,17 @@ The **Assign worker** UI function allows setting a worker responsible for a task
 
 ## Assign multiple workers
 
-Using the Multi-select UI feature embedded into panels, you can assign workers to multiple warehouse orders simultaneously.
+Using the **[Multi select](https://docs.erp.net/webclient/introduction/navigator-features.html#panel-menu)** UI feature embedded into panels, you can assign workers to multiple warehouse orders simultaneously.
 
 This saves time and effort as you don't have to go through each order individually.
 
-1. Navigate to your **Warehouse Orders** list and select **Multi select** from the panel's menu.
+1. Navigate to your **Warehouse Orders** list and choose **Multi select** from the panel's menu.
 
   ![Picture](pictures/multi_select.png)
 
-2. Select two or more warehouse orders with or without workers assigned. 
-
-   Once again make sure they are all in a state lower than Released.
+2. Select two or more warehouse orders with or without workers assigned. Make sure they are **all** in a state lower than Released.
    
-   Then, click the **Run** button and select the **Assign worker** function.
+   Then, click the **Run** button and execute the **Assign worker** function.
 
    ![Picture](pictures/assign_multiple.png)
 
@@ -48,11 +46,11 @@ This saves time and effort as you don't have to go through each order individual
 
    ![Picture](pictures/select_multiple.png)
 
-The selected worker will be immediately assigned to the respective orders.
+   The selected worker will be immediately assigned to the respective orders.
 
-If you happen to choose an order in a state Released or higher, the function will result in an **error**.
+   If you happen to choose an order in a state Released or higher, the function will result in an **error**.
 
-![Picture](pictures/error_message.png)
+   ![Picture](pictures/error_message.png)
 
 
 
