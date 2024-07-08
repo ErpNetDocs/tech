@@ -3,20 +3,12 @@
 - name: How To
   href: how-to/toc.yml
   topicHref: how-to/index.md
-- name: Lots
-  href: lots/toc.yml
-  topicHref: lots/index.md
-- name: Store orders
-  href: store-orders/toc.yml
-  topicHref: store-orders/index.md
 - name: Available to promise
   href: available-to-promise/toc.yml
   topicHref: available-to-promise/index.md
 - name: Concepts
   href: concepts/toc.yml
   topicHref: concepts/index.md
-- name: Receipt and issue balance validation in store transfers
-  href: receipt-and-issue-balance-validation-in-store-transfers.md
 - name: Inventory Control
   href: inventory-control/toc.yml
   topicHref: inventory-control/index.md
