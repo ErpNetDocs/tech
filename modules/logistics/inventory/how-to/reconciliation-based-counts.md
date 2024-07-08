@@ -1,10 +1,11 @@
 # Calculate reconciliation based on the counts
 
-This function takes the rows of counted product quantities displayed in the **Counts** panel of a reconciliation order and summarizes them into lines in the **Lines** panel.
+This function takes the rows of product quantities displayed in the **Counts** panel of a reconciliation order and summarizes them into lines in the **Lines** panel.
 
 For example, six rows of counted quantities of the same product will be summarized into one line.
 
-> [!WARNING] It is not possible to run the function if:
+> [!WARNING]
+> It is not possible to run the function if: <br>
 > * a **Default Store** and a **Reconciliation Type** are not specified for the document
 > * the document is in a state **higher than or equal to** Released  <br>
 > * counted products belong to a product group and/or a store **different** from the **Default Product Group** and the **Default Store** of the order.
