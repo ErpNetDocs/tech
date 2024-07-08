@@ -18,7 +18,7 @@ For instance:
 
 ### Lines data
 
-Once product quantities from the Counts panel are summarized into lines in the Lines panel, the following information is revealed for each line:
+Once product quantities from the Counts panel are summarized into lines, the following information is revealed for each line:
 
 * **Product** - the product whose quantities are counted
 
