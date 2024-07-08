@@ -101,6 +101,39 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 
 ![picture](pictures/Time_Period_Types_M_03_07.png)
 
+### Examples for calculating Number of Periods in Transactions 
+
+#### Full Days
+
+- **Start Date and Time**: July 1, 2024, 10:00 AM
+- **End Date and Time**: July 31, 2024, 10:00 AM
+
+*Number of Periods:* *31* 
+
+#### 24-Hour Periods
+
+- **Start Date and Time**: July 1, 2024, 3:00 PM
+- **End Date and Time**: July 31, 2024, 2:00 PM
+
+*Number of Periods:* *30* 
+
+#### Overnight Stays
+
+- **Start Date and Time**: July 1, 2024, 8:00 PM
+- **End Date and Time**: July 31, 2024, 7:00 AM
+
+*Number of Periods:* *30* 
+
+#### Months
+
+- **Start Date and Time**: February 1, 2024, 9:00 AM
+- **End Date and Time**: September 1, 2024, 9:00 AM
+
+*Number of Periods:* *7* 
+
+> [!NOTE]
+> In the **Deliver Transaction**, the **Number of Periods** field is not calculated and will not be referenced in any operational features.
+
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
