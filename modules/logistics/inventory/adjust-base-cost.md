@@ -1,15 +1,11 @@
 # Adjust Base Cost
 
-The **Adjust Base Cost** feature is responsible for aligning the **Original Cost** of store products with their often-adjusted **Base Cost**.
+The **Adjust Base Cost** feature is responsible for aligning the **Original Cost** of store products with their **Base Cost**. It achieves this by simultaneously deducting the **Base Cost Adjustment** of every product and adding it to its associated **Line Base Cost**.
 
-It achieves this by simultaneously deducting the **Base Cost Adjustment** of every product and adding it to its associated **Line Base Cost** 
-
-This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products. 
-
-It also limits the need to make frequent cost corrections due to accumulated discrepancies between original and base cost calculations.
+This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products. It also limits the need to make frequent cost corrections due to accumulated discrepancies between original and base cost calculations.
 
 ## Preliminary Setup
-
+---
 ### 1. **Create a New Document Type**
 
 - Create a new Document type of Inventory Transaction entity where the function will be invoked. This document type will be unified across the database and applicable to all stores.
@@ -24,8 +20,6 @@ After executing the function and processing the document, the cumulative Correct
 
 ![image-20240702175949791](pictures/adjust-base-cost/image-20240702175949791.png)
 
-
-
 ## Using Adjust Base Cost
 
 Here, you'll find detailed steps on how to effectively perform base cost adjustment.
@@ -38,19 +32,13 @@ This is typically done once every month.
 
 ![image-20240702180030136](pictures/adjust-base-cost/image-20240702180030136.png)
 
-
-
 Fill in the **from** and **thru date** of the period and click **Save**.
 
 Then, navigate to the **Functions** tab and select **Recalculate corrections for the period**.
 
 ![image-20240702180046094](pictures/adjust-base-cost/image-20240702180046094.png)
 
-
-
 Once prepared, **Release** the document.
-
-
 
 ### 2. Create a Cost correction transaction
 
@@ -65,29 +53,21 @@ Required fields are:
 
 ![image-20240702180105136](pictures/adjust-base-cost/image-20240702180105136.png)
 
-
-
 ### 3. Apply the function
 
 **Save** the document, navigate to **Functions** and select **Adjust base costs**.
 
 ![image-20240702180119642](pictures/adjust-base-cost/image-20240702180119642.png)
 
-
-
 The function will load all available products from the selected store whose base costs are different from their original line costs.
 
 ![image-20240702180138001](pictures/adjust-base-cost/image-20240702180138001.png)
-
-
 
 It is only after **releasing** this transaction that it will match their current base costs with their adjusted costs.
 
 Values added to the **Line Base Cost** will be simultaneously subtracted from the **Base Cost Adjustment**.
 
 ![image-20240702180154136](pictures/adjust-base-cost/image-20240702180154136.png)
-
-
 
 > [!NOTE]
 > Following a recent application of the function, transactions will now assume the **correct (or most correct)** base costs of products.
