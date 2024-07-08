@@ -48,7 +48,7 @@ Products that are not counted will **have** lines created for them with quantiti
 
 ### Behavior based on zero counts
 
-Depending on whether zero quantities are present in the **Counts** panel of the reconciliation document, the function behaves in one of two ways:
+Depending on whether zero quantities are present in the **Counts** panel, the function behaves in one of two ways:
 
 1. **There's at least one** counted zero quantity of a product as well as other quantities different from zero.
 
