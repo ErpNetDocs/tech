@@ -5,4 +5,6 @@
   topicHref: execute-store-orders/index.md
 - name: Adjust base cost
   href: adjust-base-cost.md
+- name: Calculate reconciliation based on counts
+  href: reconciliation-based-counts.md
   
