@@ -52,7 +52,7 @@ Based on the Start and End date of the lease, as well as the Time Period Type sp
 This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
 > [!NOTE]
-> The **Number of Periods** for a Receive transaction will be calculated only after the previously generated Deliver transaction from the same document flow is set to **Released**.
+> The **Number of Periods** for a Receive transaction will be calculated only after the previously generated Deliver transaction from the same **[document flow](https://github.com/ErpNetDocs/tech/blob/master/modules/applications/rental/index.md#document-flow)** is set to **Released**.
 
 In addition, once a lease contract is generated, the subsequently generated **sales order** accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
 
