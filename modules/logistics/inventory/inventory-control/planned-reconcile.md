@@ -92,5 +92,5 @@ You can see the scanned products in **Counted**.
 ![picture](pictures/Planned_Reconciliation_Counted_08_07.png) 
 
 [!]Note:
-The platform retains information about ongoing **Planned Reconciliations **persistently, even if you navigate away from the page or close the platform entirely.
+The platform retains information about ongoing **Planned Reconciliations** persistently, even if you navigate away from the page or close the platform entirely.
 
