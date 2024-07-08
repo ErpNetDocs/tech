@@ -67,7 +67,6 @@ The start quantity on <b>2020/10/01</b> is calculated by the two issuing store o
 
 Further reading:
 
-- **[ATP algorithm](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al)**
+- **[ATP algorithm](atp-algorithm.md)**
 
-- **[ATP Reports](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-reports.html?q=ATP%20Reports)**
-
+- **[ATP Reports](atp-reports.md)**
