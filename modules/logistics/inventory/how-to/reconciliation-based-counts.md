@@ -73,6 +73,6 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
    You will be asked to confirm the execution of the function. Click **OK**.
 
-   ![pictures](pictures/warning.png)
+   ![pictures](pictures/warnings.png)
 
 2. If all conditions are met, new product lines will be created in the **Lines** panel of the reconciliation order.
