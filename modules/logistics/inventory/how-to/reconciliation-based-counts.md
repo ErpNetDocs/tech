@@ -4,11 +4,11 @@ The **Calculate reconciliation, based on the counts** function takes the rows of
 
 For instance: 
 
-* There are six rows of counted quantities of the same product in the **Counts** panel.
+1. There are six rows of counted quantities of the same product in the **Counts** panel.
 
-* The function is run. 
+2. The function is run. 
 
-* All rows are summarized into a single line in the **Lines** panel.
+3. All rows are summarized into a single line in the **Lines** panel.
 
 > [!WARNING]
 > It is not possible to run the function if: <br>
