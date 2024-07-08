@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Execute store orders function | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Execute store orders function | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/execute-store-orders/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="execute-store-orders-function">Execute store orders function</h1>
+
+<p>This function allows easier work with the barcode scanner and more functional methods for the execution of one store order row by more than one transaction row. This is useful in case the user operates with lots or serial numbers, etc.</p>
+<p>The function contains two main components:</p>
+<ul>
+<li><em>Store Orders</em> panel</li>
+<li><em>Input Data</em> panel</li>
+</ul>
+<h2 id="store-orders-panel">Store Orders panel</h2>
+<p>It loads the unfulfilled store order rows according to the filters in the navigator. The data includes the ordered quantity of the row, the executed part of that quantity and the remaining quantity (the unfulfilled part). This data is read-only except for the <em>Input Quantity</em> which is used for easier data entering.</p>
+<h2 id="input-data-panel">Input Data panel</h2>
+<p>This panel is editable by the users. They enter information about what store transactions are executed in the current moment and do not mark the specific store orders that they are executing. This is defined automatically by the system.</p>
+<p>The data that is entered is <em><strong>Product, Lot, Serial Number, Quantity, Measurement Unit</strong></em> and <em><strong>Base Quantity</strong></em>. There are several methods to enter such information:</p>
+<ul>
+<li>Manually. This is the rarest method used. To be more precise, it is for editing information entered by any other method.</li>
+<li>Using the <em>Input Quantity</em> field in the <em>Store Orders</em> panel. When the user enters data in it, it automatically creates new row in the Input data panel with the entered quantity and the product, lot, serial number and measurement unit copied from the store order row ,  Also, the new row in the Input data panel is marked as reserved for the row in the store order rows panel. This method's purpose is to support the old method from the old execution navigator, where the user always enters the exact Store order row that he is executing.</li>
+<li>Using barcode scanner (or other system for control/counting/marking the stocks). This is considered as the standard way to enter data, where the user does not specify the store order row and only marks the store transaction.</li>
+</ul>
+<h2 id="distributing-the-executions">Distributing the executions</h2>
+<p>The data entered in the Input data panel has to be distributed through the rows from the Store Orders panel. This is performed after each change in the Input data panel. The distribution is executed by <a href="https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.html?q=Store%20order%20rows%20execution%20algorithm">store order rows execution algorithm</a> and all calculations about the quantity are based on <em>Base Quantity</em>. The store order rows form the list [ORD] and the data in the Input data panel forms the list <strong>[EXC]</strong>.</p>
+<p>There is a small difference from the <a href="https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/store-order-rows-execution-algorithm.html?q=algorithm">algorithm</a> - rows from the Input data panel <em>reserved</em> to specific store order row, always execute this specified row. The algorithm is not allowed to distribute them to other rows. The purpose of this is to avoid a situation when  the user enters quantity in <em>Input Quantity</em> field and it is distributed to another store order row (just because the algorithm considers it as with higher priority than the one that the user has chosen). So this gives the user the ability to mark specific rows for execution.</p>
+<p>The distributed quantities are illustrated as sub-rows of the store order rows. They contain data (quantity, lot, serial number and more) from the Input data panel which may be different than the data in the Store order row.</p>
+<h2 id="creating-transaction">Creating transaction</h2>
+<p>In the end, when the user creates transaction, its rows are based on the distributed executions. For example,  if a store order row has 4 distributed sub-rows of execution, then the Transaction has 4 rows with the information from the Input data panel and all those rows are executing the specific store order row.</p>
+<p>When the transaction is created, the data in the Input data panel is deleted and the navigator is ready to be used again.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/execute-store-orders/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

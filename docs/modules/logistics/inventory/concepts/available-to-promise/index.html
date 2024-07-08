@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Available to promise | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Available to promise | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/available-to-promise/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ATP">
+<h1 id="available-to-promise">Available to promise</h1>
+
+<p>The available to promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the <strong><a href="atp-algorithm.html">ATP algorithm</a></strong>, which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.</p>
+<p>The parameters, data, and <strong><a href="atp-algorithm.html">ATP algorithm</a></strong> used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).</p>
+<h2 id="parameters">Parameters</h2>
+<p>The main/required parameters are <b>product</b>, <b>own company</b>, and <b>date</b>. The ATP calculation is executed from the date and for the specified product and own company.</p>
+<p>Additional parameters can be set as <b>store</b> and <b>lot</b>. If a store is specified, the calculation will be executed only for this store. Otherwise, the data is collected from all stores (as though it is limited by the product, the own company, and the date). The lot specification is similar.</p>
+<h2 id="data">Data</h2>
+<p>For a standard ATP calculation, two types of data are used:</p>
+<p><b>1. Current stock holds</b>:</p>
+<p>It shows the availability of the product selected in the specified own company. If a store and a lot are provided, the data is filtered by them.</p>
+<p><b>2. Chronology of the store orders which are not executed</b>:</p>
+<p>It loads the chronology of the unfulfilled parts of <i>non-voided</i> store orders, with statuses ranging from &quot;Planned&quot; to &quot;Released&quot;. The data is filtered by the parameters entered for a product, own company, store, and lot. The chronology is sorted by the <i>Planned Release Date</i> field. The data in this field is fundamental for ATP calculations.</p>
+<p>For example, let's assume that we have specified a <b>product</b>, <b>own company</b>, <b>store</b> and <b>lot</b>, and we want to calculate the ATP for date <b>2020/10/01</b>. The physical availability for this date is <b>13 pcs</b>, and before that date there are two unfulfilled, released store orders - one for receiving <b>7 pcs</b> with date <b>2020/09/28</b> and one for issuing <b>4 pcs</b> with date <b>2020/09/29</b>. The documents after <b>2020/10/01</b> are as follows:</p>
+<ul>
+<li><p><b>2020/10/03</b> - released issuing store order for <b>5 pcs</b>, <b>3 pcs</b> of which are fulfilled with a store transaction on the same date, so the unfulfilled quantity is <b>2 pcs;</b></p>
+</li>
+<li><p><b>2020/10/03</b> - released issuing store order for <b>5 pcs</b>, which is fulfilled with a store transaction marked as <i>single execution</i> and contains <b>2 pcs</b> from the same date, so the unfulfilled quantity is <b>0 pcs</b>;</p>
+</li>
+<li><p><b>2020/10/04</b> - planned receipt store order for <b>16 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/04</b> - planned issuing store order for <b>4 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/07</b> - planned issuing store order for <b>8 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/09</b> - planned issuing store order for <b>7 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/14</b> - planned receipt store order for <b>8 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/16</b> - planned receipt store order for <b>4 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/16</b> - planned issuing store order for <b>9 pcs</b>, unfulfilled;</p>
+</li>
+<li><p><b>2020/10/19</b> - planned issuing store order for <b>2 pcs</b>, unfulfilled;</p>
+</li>
+</ul>
+<p>The current availability is <b>8 pcs</b>. It is calculated by adding the two issuing store transactions with date <b>2020/10/03</b> to the availability from <b>2020/10/01</b>. The unfulfilled store orders chronology is as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><b>Date</b></th>
+<th style="text-align: left;"><b>Start quantity</b></th>
+<th style="text-align: left;"><b>Receipt quantity</b></th>
+<th style="text-align: left;"><b>Issue quantity</b></th>
+<th style="text-align: left;"><b>End quantity</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2020/10/01</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/03</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/04</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/07</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/09</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">-2</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/14</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/16</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2020/10/19</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">-1</td>
+</tr>
+</tbody>
+</table>
+<p>The start quantity on <b>2020/10/01</b> is calculated by the two issuing store orders before <b>2020/10/01</b>. For the next dates, the unfulfilled store orders from the specific date are added.</p>
+<hr>
+<p>Further reading:</p>
+<ul>
+<li><p><strong><a href="atp-algorithm.html">ATP algorithm</a></strong></p>
+</li>
+<li><p><strong><a href="atp-reports.html">ATP Reports</a></strong></p>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/available-to-promise/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

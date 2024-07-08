@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ATP Reports | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ATP Reports | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/available-to-promise/atp-reports.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ATP-reports">
+<h1 id="atp-reports">ATP Reports</h1>
+
+<p>In Version 2018.2, we introduced two new reports – <b>Available to promise</b> and <b>Available to promise (by lots)</b>. These reports show the quantities available to promise (ATP) (by product or by product lot) from a current or future date, but not only as a calculated number. The reports allow us to see the separate records for all planned movements and therefore the projected available balance (PAB) for the different dates. Using it, we can see which numbers are behind the value of (ATP) and how it is calculated for the different periods.</p>
+<h1 id="details">Details</h1>
+<p>The ATP available on a given date is the quantity that can be promised to orders scheduled for shipment (for more information, see <strong><a href="index.html">available to promise</a></strong>) from that date to the date of the next planned movement. That is why the ATP in the reports is calculated from each scheduled date. In ERP.net, this is the planned release date of the store orders. The records represent the chronology of the unfulfilled parts of non-voided store orders, which has statuses from planned to released included. There is a separate record for each combination of <b>date, product, enterprise company and store</b>. In the available to promise (by lots) report, the records are also separated by a <b>lot</b>.</p>
+<p>The calculation of ATP is based not only on the data of the <b>chronology of the store orders which are not executed</b>, but also on the information of the current stock holds (see <strong><a href="index.html">available to promise</a></strong>). However, for the particular product or store, there may not be any unfulfilled shipments or deliveries and therefore those records won’t exist in the reports. For this reason, the reports start with an auxiliary line with a fictive “From date” which is equal to 01.01.2000 and contains the information for the starting availability, i.e. the <b>current availability</b>.</p>
+<p><b>As mentioned above, the rest of the records represent the chronology of the store orders which are not executed</b>.</p>
+<p>They contain information for:</p>
+<ul>
+<li><p><b><i>Movements base</i></b> - The sum of the quantity of all planned stock movements (issue and receipt) on this date in base measurement unit.</p>
+</li>
+<li><p><b><i>Movements to date base</i></b> - A running total of the quantity of all planned stock movements (issue and receipt) until this date (inclusive) in base measurement unit.</p>
+</li>
+<li><p><b><i>Projected availability</i></b> -  Projected Availability in base measurement unit on a particular date. A running total of the projected/expected available quantity calculated by adding supply or subtracting demand in chronological order in base measurement unit. The value includes all expected stock movements (issue and receipt) until this date (inclusive) and the current availability.</p>
+</li>
+<li><p><b><i>ATP Base</i></b> - Indicates the promissory amount in base unit valid from a specified date to the date of the next stock movement. This is the minimum quantity available for use for future issuing operations (sales, use in production, etc.), and which will not violate the planned issue operations.</p>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/available-to-promise/atp-reports.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

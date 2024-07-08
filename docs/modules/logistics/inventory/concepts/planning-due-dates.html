@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Store orders - planning and due dates | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Store orders - planning and due dates | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/planning-due-dates.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="store-orders---planning-and-due-dates">Store orders - planning and due dates</h1>
+
+<p>The current article describes the purpose and usage of the planning and due dates in the store order headers - Planned Release date, Planned Completion date and Due date attributes.</p>
+<h2 id="planned-release-date">Planned release date</h2>
+<p>The date specifies when, by plan, the execution of the store order should start. I.e. <em>by plan</em> on this date the first store transaction for the current store order should be released (if the store order is fulfilled at once, it would be the only store transaction).</p>
+<h2 id="planned-completion-date">Planned completion date</h2>
+<p>This is the date when, by plan, the execution of the store order should end. If can be considered as the date when the last store transaction for the current store order is released. But it would be more precise to say that this is the date when the last non-completed store transaction is <em>completed</em>, since the releasing of the store transaction does not guarantee that the process of execution of the store order is completed and the quantities and/or the costs may be modified by corrective documents to the released store transaction.</p>
+<h2 id="due-date">Due date</h2>
+<p>This is the end term for completion of the store order execution. The meaningful store order suggests the following to be true: Planned Release date =&lt; Planned Completion date =&lt; Due date. This still allows us to have different due dates and planned completion dates.</p>
+<p>For example, if we have the following dates:</p>
+<ul>
+<li>Planned release date = 2020/10/01</li>
+<li>Planned completion date = 2020/10/05</li>
+<li>Due date = 2020/10/08</li>
+</ul>
+<p>It would mean that we plan to execute the order from 1th October to 5th October but the due date allows us a three days delay. This could happen if the execution plan is scheduled for this period (1th-5th October) because of purchase or production orders (because of resource optimisation, for example) but the due date is defined by another module (for example - by the delivery date to the customer).</p>
+<p>Thus, the planned release date and planned completion date are used because of the production and procurement plan while the Due date is because of other modules which generate Store orders and it is used for control of the deadline. Planned release date is essential for the <strong><a href="available-to-promise/index.html">available to promise</a></strong> calculation and the <strong><a href="projected-available-balance.md">projected available balance</a></strong>. Thus, by the planning dates the user is able to define more precisely the information about when a specified quantity of a product is expected to be produced or delivered.</p>
+<p>For example, if a delivery of a large quantity of a product is expected but the delivery would be executed partially and not at once  - several deliveries, so separated store orders could be created and each store order would define the different periods for each delivery stage. The advantage in this case is that the users would have more detailed information on when exactly the products are expected to be placed in the store. If we create one store order and the planned release date is the start of the first delivery, then the users would know that the whole quantity would be available at the first stage of the delivery.</p>
+<p>For more information, see <strong><a href="available-to-promise/index.html">available to promise</a></strong>.</p>
+<h2 id="how-are-the-attributes-filled-in-by-generation-procedures">How are the attributes filled in by generation procedures?</h2>
+<p>Here we explain how the planning and due dates are filled in when the store order is generated by another document. For more precise information about the specific generation procedure Wiki should be referred to.</p>
+<h3 id="when-generated-by-sales-order">When generated by sales order</h3>
+<p>All generation procedures from sales orders define the planning and due dates in the store orders as follows:</p>
+<ul>
+<li>Due date = Required Delivery date;</li>
+<li>Planned Release date = Required Delivery date;</li>
+<li>Planned Completion date = Required Delivery date.</li>
+</ul>
+<p>Required Delivery date is found in the sales order lines or in the sales order header (if the lines have no value).</p>
+<h3 id="when-generated-by-transfer-orders">When generated by transfer orders</h3>
+<p>For receipt store orders the dates are filled in as follows:</p>
+<ul>
+<li>Due date = Default Due date in;</li>
+<li>Planned Release date = Default Due date in;</li>
+<li>Planned Completion date = Default Due date in.</li>
+</ul>
+<p>For issue store orders the dates are filled in as follows:</p>
+<ul>
+<li>Due date = Default Due date out;</li>
+<li>Planned Release Date = Default Due date out;</li>
+<li>Planned Completion Date = Default Due date out.</li>
+</ul>
+<p>Default Due date in and Default Due date out are found in the transfer order lines.</p>
+<h3 id="when-generated-by-shipment-orders">When generated by shipment orders</h3>
+<p>Here, the planning and Due dates are filled in as follows:</p>
+<ul>
+<li>Due date = Required Delivery date;</li>
+<li>Planned Release Date = Required Delivery date;</li>
+<li>Planned Completion date = Required Delivery date.</li>
+</ul>
+<p>Required Delivery date is found in the Shipment order header.</p>
+<h3 id="when-generated-by-shipments">When generated by shipments</h3>
+<p>Here, the planning and Due dates are filled in as follows:</p>
+<ul>
+<li>Due date = if the largest Required Delivery date has value - this is the date, if not - the Document date;</li>
+<li>Planned Release date = if the largest Required Delivery date has value - this is the date, if not - the Document date;</li>
+<li>Planned Completion date = if the largest Required Delivery Date has value - this is the date, if not - the Document date.</li>
+</ul>
+<p>The largest Required Delivery date is the largest Required Delivery date from the Shipments headers and the line Required Delivery date from the Shipment lines.</p>
+<h3 id="when-generated-by-consumption-orders">When generated by consumption orders</h3>
+<p>When issuing store orders are generated, the dates are filled in as follows:</p>
+<ul>
+<li>Due date - if the cheduled Date Time attribute from the Consumption order line has value - this is the date, else - the date of the first release of the consumption order;</li>
+<li>Planned Release date - Scheduled Date Time;</li>
+<li>Planned Completion date - Scheduled Date Time.</li>
+</ul>
+<p>Scheduled Date Time is found in the Consumption Order lines.</p>
+<h3 id="when-generated-by-output-orders">When generated by output orders</h3>
+<p>When receiving store orders are generated, the dates are filled in as follows:</p>
+<ul>
+<li>Due date - Due date from the work order;</li>
+<li>Planned Release date - Release date from the work order;</li>
+<li>Planned Completion date - Due date from the work order.</li>
+</ul>
+<p>For each output order line, the Due date and the Release date from the work order are the dates of the work order selected in the output order line.</p>
+<h3 id="when-generated-by-receiving-order">When generated by receiving order</h3>
+<p>All generation procedures of store order from receiving order fill the planning and Due dates as follows:</p>
+<ul>
+<li>Due date - today's date;</li>
+<li>Planned Release date - Planned Release date from the receiving order;</li>
+<li>Planned Completion date - Planned Delivery date from the receiving order.</li>
+</ul>
+<p>Planned Release date and Planned Delivery date from the Receiving order are attributes of the Receiving order header.</p>
+<h3 id="when-generated-by-service-activity">When generated by service activity</h3>
+<p>All generation procedures of store order from receiving order fill the planning and Due dates as follows:</p>
+<ul>
+<li>Due date - today's date;</li>
+<li>Planned Release date - null/empty value;</li>
+<li>Planned Completion date - null/empty value.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/planning-due-dates.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adjust base costs | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adjust base costs | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/adjust-base-cost.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="adjust-base-costs">Adjust base costs</h1>
+
+<p>The <strong>Adjust base costs</strong> function is responsible for aligning the <strong>Original Cost</strong> of store products with their <strong>Base Cost</strong>. It achieves this by simultaneously deducting the <strong>Base Cost Adjustment</strong> of every product and adding it to its associated <strong>Line Base Cost</strong>.</p>
+<p>This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products. It also limits the need to make frequent cost corrections due to accumulated discrepancies between original and base cost calculations.</p>
+<h2 id="preliminary-setup">Preliminary Setup</h2>
+<hr>
+<h3 id="1-create-a-new-document-type">1. <strong>Create a New Document Type</strong></h3>
+<ul>
+<li>Create a new Document type of Inventory Transaction entity where the function will be invoked. This document type will be unified across the database and applicable to all stores.</li>
+<li>The document will not generate accounting entries but will generate a Cost Correction for the current document.</li>
+</ul>
+<h3 id="2-configure-document-route-for-cost-correction">2. <strong>Configure Document Route for Cost Correction</strong></h3>
+<ul>
+<li>In the newly created document type, set up a Document Route for generating the Cost Correction for the current document.</li>
+<li>The goal is to transfer the cost brought in by the function from &quot;Line Base Cost&quot; to &quot;Base Cost Adjustment&quot; with opposite sign ensuring the total Adjusted Cost of the document remains zero.</li>
+</ul>
+<p>After executing the function and processing the document, the cumulative Corrected Cost for this inventory transaction will stay at zero, meaning the cost in the store will not change.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702175949791.png" alt="image-20240702175949791"></p>
+<h2 id="using-adjust-base-costs">Using Adjust base costs</h2>
+<hr>
+<p>Here, you'll find detailed steps on how to effectively perform base cost adjustment.</p>
+<h3 id="1-create-a-cost-correction-document">1. Create a Cost Correction document</h3>
+<p>You first need to create a cost correction responsible for adjusting your stores' costs over a specified period.</p>
+<p>This is typically done once every month.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702180030136.png" alt="image-20240702180030136"></p>
+<p>Fill in the <strong>from</strong> and <strong>thru date</strong> of the period and click <strong>Save</strong>.</p>
+<p>Then, navigate to the <strong>Functions</strong> tab and select <strong>Recalculate corrections for the period</strong>.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702180046094.png" alt="image-20240702180046094"></p>
+<p>Once prepared, <strong>Release</strong> the document.</p>
+<h3 id="2-create-a-cost-correction-transaction">2. Create a Cost correction transaction</h3>
+<p>Start creating a cost correction transaction using the document type you've created.</p>
+<p>Required fields are:</p>
+<ul>
+<li><strong>Store</strong> - the store for which the transaction will be issued</li>
+<li><strong>Movement Type</strong> - set as <em>Receipt</em></li>
+<li><strong>Document Currency</strong> - main currency of the enterprise company</li>
+<li><strong>Cost Source</strong> - source of the document, set automatically; after the function is applied, it changes to <em>Adjustment</em>.</li>
+</ul>
+<p><img src="../pictures/adjust-base-cost/image-20240702180105136.png" alt="image-20240702180105136"></p>
+<h3 id="3-apply-the-function">3. Apply the function</h3>
+<p><strong>Save</strong> the document, navigate to <strong>Functions</strong> and select <strong>Adjust base costs</strong>.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702180119642.png" alt="image-20240702180119642"></p>
+<p>The function will load all available products from the selected store whose base costs are different from their original line costs.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702180138001.png" alt="image-20240702180138001"></p>
+<p>It is only after <strong>releasing</strong> this transaction that it will match their current base costs with their adjusted costs.</p>
+<p>Values added to the <strong>Line Base Cost</strong> will be simultaneously subtracted from the <strong>Base Cost Adjustment</strong>.</p>
+<p><img src="../pictures/adjust-base-cost/image-20240702180154136.png" alt="image-20240702180154136"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Following a recent application of the function, transactions will now assume the <strong>correct (or most correct)</strong> base costs of products.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/adjust-base-cost.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

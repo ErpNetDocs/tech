@@ -6,13 +6,13 @@ references:
   href: modules/logistics/wms/logistic-units/asn.html
 - uid: ATP
   name: Available to promise
-  href: modules/logistics/inventory/available-to-promise/index.html
+  href: modules/logistics/inventory/concepts/available-to-promise/index.html
 - uid: ATP-algorithm
   name: ATP-algorithm
-  href: modules/logistics/inventory/available-to-promise/atp-algorithm.html
+  href: modules/logistics/inventory/concepts/available-to-promise/atp-algorithm.html
 - uid: ATP-reports
   name: ATP Reports
-  href: modules/logistics/inventory/available-to-promise/atp-reports.html
+  href: modules/logistics/inventory/concepts/available-to-promise/atp-reports.html
 - uid: Adjustment-Documents
   name: Adjustments documents
   href: concepts/documents/adjustments.html

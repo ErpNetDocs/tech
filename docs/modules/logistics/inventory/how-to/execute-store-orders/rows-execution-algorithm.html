@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Store order rows execution algorithm | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Store order rows execution algorithm | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/execute-store-orders/rows-execution-algorithm.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="store-order-rows-execution-algorithm">Store order rows execution algorithm</h1>
+
+<p>This algorithm is applied when there are many unfulfilled store orders or products going in and out of the store. The purpose is to create transactions, fulfilling the orders as correctly as possible. The idea behind the algorithm is that the system automatically defines which store orders should be fulfilled and what part of them - automatically, without user interference. This allows faster processing of the issue and receipt transactions, especially when the data (orders and products) volume is large.</p>
+<p>The starting data for the algorithm is two lists:</p>
+<ul>
+<li>list of unfulfilled store order rows - <strong>[ORD]</strong>. This list is usually a partial sample of all unfulfilled store orders in the database, e.g the orders from a certain customer/supplier or certain order. In <strong>[ORD]</strong> there are only the quantities which are unfulfilled, because if for a given store order row for <strong>10 PCS</strong> there are released transactions with <strong>7 PCS</strong>, then in <strong>[ORD]</strong> the quantity for this row would be <strong>3 PCS</strong>. The rows completely fulfilled by transactions are not part of <strong>[ORD]</strong>;</li>
+<li>List of store transactions - <strong>[FUL]</strong>, which contain data about products currently being moved in or out of the store. The data consist of <strong>Product, Lot, Serial Number</strong> and <strong>Quantity</strong>.  Afterwards, data is saved in the newly created Transactions. The list <strong>[FUL]</strong> is usually the result of a control system (such as barcode scanner) which is placed at the entrance/exit of the store.</li>
+</ul>
+<p>Both lists must consist of the same type of operations - meaning <strong>[ORD]</strong> is a list of receipt store order rows and <strong>[FUL]</strong> is a list of receipt store order rows or if <strong>[ORD]</strong> contains only issue store order rows and <strong>[FUL]</strong> is a list of issue store order rows. If <strong>[ORD]</strong> and <strong>[FUL]</strong> contain both issue and receipt transactions, then the lists must be separated into two uniform parts and the algorithm will be applied on each part separately.</p>
+<h2 id="store-orders-execution-algorithm">Store orders execution algorithm</h2>
+<p>The purpose of the algorithm is the distribution of all operations/quantities from <strong>[FUL]</strong>  to the rows of <strong>[ORD]</strong>. It is possible that some operations are defined as fulfilment of one row from <strong>[ORD]</strong>. Besides, the quantities from one operation can be separated amongst more than one row.</p>
+<p>At first, the two lists are sorted. <strong>[FUL]</strong> is sorted according to the entering order of the operations. <strong>[ORD]</strong> is sorted by <em>Document Date, Document Number</em> and <em>Line Number</em> (this is standard sorting, but other types of sorting using data from CRM or SCM modules which has initialized
+the orders are also possible). These sortings set a kind of initial priority, which should be used for orders fulfilment. Then, the algorithm continues to 4 stages and at each operations/quantities from <strong>[FUL]</strong> are compared to <strong>[ORD]</strong> rows by defined criteria.</p>
+<p>At each stage the system goes through <strong>[FUL]</strong> (after it is sorted) and for each operation with quantity no equal to zero (the quantity may be 0 at a previous stage) the following actions are executed:</p>
+<ol>
+<li>Search for a row in <strong>[ORD]</strong> that matches the operation according to the current stage criteria.</li>
+<li>If there is no such row, the algorithm goes to step 7. If there is such a row, the algorithm continues to the next step.</li>
+<li>The part of the operation quantity this row fulfills is defined. At stage I, II and III the quantity is defined by comparison of the row quantities and the operations quantities. The smaller value is defined as quantity. Exception is stage IV where the algorithm takes the quantity in the operation.</li>
+<li>A new transaction row is created with the <strong>Product, Lot</strong> and <strong>Serial Number</strong> from the operation and the quantity defined in step 3. As a <em>transaction timestamp</em> in the transaction row, the current date and time is set. Also, the row from <strong>[ORD]</strong>, which is found in step 1, is marked in the transaction row.</li>
+<li>The row from step 1 and the operation are edited and their quantity is decreased by the quantity from step 3 (i.e. the algorithm updates what is left for fulfilment).</li>
+<li>If the remaining quantity in the operation is different than 0, all steps by now are repeated. Otherwise, the algorithm goes to the next step.</li>
+<li>The processing of the current operation is over and the algorithm goes to the next one.</li>
+</ol>
+<p>So for each operation the algorithm finds a store order row, fulfilling it, according to the current criteria, and this is repeated until the quantity in the operation is 0 or there are no store orders found (that match the operation).</p>
+<p>The criteria by which the store order row is found for a given operation is a comparison between the row and the operation by their values of <strong>Product, Lot</strong> and <strong>Serial number</strong>. Three types of comparison exist:</p>
+<ul>
+<li><em>Exact match</em> means that the row and the operation have the same value. For example, <em>exact lot match</em> means that either the row and the operation have the same lot or both have no lot specified.</li>
+<li><em>Weakened match</em> means that either the value is the same in both (row, operation) or one of them may be null. For example, <em>weakened lot match</em> returns match even if the operation has a lot and in the row there is no lot.</li>
+<li><em>Free match</em> means that the algorithm does not take into account the values and always returns a match.</li>
+</ul>
+<p>At the different stages there are the following criteria for store order rows fulfilment:</p>
+<ul>
+<li>Stage I: Searching for a match by <strong>Product</strong> and by <strong>Lot</strong> and by <strong>Serial number</strong>. Also, it is required that  the quantity in the row should be different than 0 (in this stage this should be true for each row in <strong>[ORD]</strong>).</li>
+<li>Stage II: Searching for a match by <strong>Product</strong> and <em>weakened match</em> by <strong>Lot</strong> and by <strong>Serial number</strong>. Again, it is required that the quantities in the order rows are different  than 0 (here, it is possible that zero quantity rows are found because of the update in stage I).</li>
+<li>Stage III: Searching for a match by <strong>Product</strong>, <em>free match</em> by <strong>Lot</strong> and by <strong>Serial number</strong> and non-zero quantities in the order rows.</li>
+<li>Stage IV: Searching for a match by <strong>Product</strong> and <em>free match</em> by <strong>Lot</strong> and by <strong>Serial number</strong>. The difference from stage III is that here the quantities in the rows can be zero.</li>
+</ul>
+<p>It becomes clear that in the first stage the algorithm tries to strictly comply with the product, lot and serial number, and during the next stages the algorithm weakens the criteria allowing violation of the lots and serial numbers from the store orders. At stage III over execution is still not allowed (because of the non-zero quantities criteria). The purpose of the last stage is to be used in cases when the user issues/receives more than what was ordered. So in the last stage the user is able to fulfill orders with zero quantities, combined with the way of defining the quantities of stage III - the over execution is allowed. If the quantities from <strong>[FUL]</strong> are not more than the quantities in <strong>[ORD]</strong>, then stage IV will not be reached at all.</p>
+<p>Also, in each stage the algorithm requires <em>exact match</em> by <strong>Product</strong>. This means that if in <strong>[FUL]</strong> there are products that are not listed in <strong>[ORD]</strong>, then they will remain even after stage IV. Those cases (by now) are not covered by the system and have to be managed by the user. Otherwise, after stage IV in all operations from <strong>[FUL]</strong> there would only be zero quantities. By this we reach the purpose that all quantities in <strong>[FUL]</strong> should be distributed to a row from <strong>[ORD]</strong>.</p>
+<p><em><strong>Example 1:</strong></em></p>
+<p>There are the following rows in <strong>[ORD]</strong> (serial numbers are null everywhere):</p>
+<p><strong>row 10, Product #1, 4 PCS, Lot #ab17</strong></p>
+<p><strong>row 20, Product #1, 3 PCS, Lot #ss54</strong></p>
+<p><strong>row 30, Product #1, 2 PCS</strong></p>
+<p><strong>row 40, Product #1, 7 PCS, Lot #ts23</strong></p>
+<p>In <strong>[FUL]</strong> there is only one operation for <strong>Product #1, Lot#ab17</strong>, with no serial number and quantity of <strong>14 PCS</strong>.</p>
+<p>So in stage I the algorithm will cover <strong>row 10</strong> by <strong>4 PCS</strong> from the operation, at stage II the algorithm will cover <strong>row 30</strong> and at stage III the algorithm will cover part of <strong>row 40</strong>.</p>
+<p>This is how the lists <strong>[ORD]</strong> and <strong>[FUL]</strong> will look like at each stage:</p>
+<p>After stage I:
+|<strong>[ORD]</strong>|<strong>[FUL]</strong>|
+|:----|:----|
+<strong>row 10, Product #1, 0 PCS, lot #ab17</strong>|<strong>Product #1, lot #ab17, 10 PCS</strong>
+<strong>row 20, Product #1, 3 PCS, lot #ss54</strong>|
+<strong>row 30, Product #1, 2 PCS</strong>|
+<strong>row 40, Product #1, 7 PCS, lot #ts23</strong>|</p>
+<p>After stage II:
+|<strong>[ORD]</strong>|<strong>[FUL]</strong>|
+|:----|:----|
+<strong>row 10, Product #1, 0 PCS, lot #ab17</strong>|<strong>Product #1, lot #ab17, 8 PCS</strong>|
+<strong>row 20, Product #1, 3 PCS, lot #ss54</strong>|
+<strong>row 30, Product #1, 0 PCS</strong>|
+<strong>row 40, Product #1, 7 PCS, lot #ts23</strong></p>
+<p>After stage III:
+|<strong>[ORD]</strong>|<strong>[FUL]</strong>|
+|:----|:----|
+<strong>row 10, Product #1, 0 PCS, lot #ab17</strong>|<strong>Product #1, lot #ab17, 0 PCS</strong>|
+<strong>row 20, Product #1, 0 PCS, lot #ss54</strong>|
+<strong>row 30, Product #1, 0 PCS</strong>|
+<strong>row 40, Product #1, 2 PCS, lot #ts23</strong>|</p>
+<p><em><strong>Example 2:</strong></em></p>
+<p>If there are the same <strong>[ORD]</strong> and <strong>[FUL]</strong> except for the fact that the quantity in <strong>[FUL]</strong> is <strong>18 PCS</strong> (i.e. <strong>2</strong> more than the orders).</p>
+<p>Then in stages I and II the fulfilments will be the same. At stage III <strong>row 40</strong> will be fulfilled completely and at stage IV the remaining <strong>2 PCS</strong> from <strong>[FUL]</strong> will cover <strong>row 10</strong> and it will be over executed.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/execute-store-orders/rows-execution-algorithm.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

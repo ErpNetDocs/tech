@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Receipt and issue balance validation in store transfers | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Receipt and issue balance validation in store transfers | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/receipt-and-issue-balance-validation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="receipt-and-issue-balance-validation-in-store-transfers">Receipt and issue balance validation in store transfers</h1>
+
+<p>The current article describes the validation if the <strong>receipt</strong> does not exceed the <strong>issue</strong> in the product transfer. In this case a transfer may be any of the following actions:</p>
+<ul>
+<li>moving a product from one store to another store by a store transfer;</li>
+<li>products production (that it is considered that the materials are issued and transferred as a new product into another store);</li>
+<li>returning products by a customer (this is considered a transfer - the products are issued from one store and given to the customer and then they return\transfer them to the same or other store);</li>
+<li>returning a rented asset which has been delivered to the customer (here the situation is similar to the returning of sold products except that the returning may happen or not, but after we delivered assets to the renters, we expect their return is mandatory when the rental contract expires).</li>
+</ul>
+<p>This validation is important so unrealistic situations can be avoided (for example - transactions with incorrect chronology) which may lead to incorrect goods cost.</p>
+<p>For more information on cost calculation, see <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.html?q=Calculating%20Cost%20For%20Transferred%20Products">Calculating cost for transferred products</a>, <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-returned-products.html?q=Calculating%20Cost%20For%20Returned%20Products">Calculating cost for returned products</a>, <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-produced-products.html?q=Calculating%20cost%20for%20produced%20products">Calculating cost for produced products</a> and <a href="https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-when-returning-rented-assets.html?q=Calculating%20cost%20when%20returning%20rented%20assets">Calculating cost when returning rented assets</a>.</p>
+<h2 id="validation-in-transfer-of-one-product">Validation in transfer of one product</h2>
+<p>Usually in store transfers one product is issued from one store and the same product is entered into the target store (the same record in the products nomenclature). The current article describes the validation in this usual type of transfer. Other transfers (such as production, where one product (or more) are issued from the first store and other products (or products) are entered into the target store) is not covered in the current article.</p>
+<p>The validation is applied on every issue and receipt transaction release (from the respective store). And the validation applies on every transfer row. All issue transactions and all receipt transactions, resulting from the current row, are summed up.</p>
+<p>At first, these operations are ordered. For every two store transactions - <strong>[transaction 1]</strong> and <strong>[transaction 2]</strong>, their chronological order has to be defined. This is executed as follows:</p>
+<ul>
+<li>If the <em>transaction timestamps</em> of <strong>[transaction 1]</strong> and <strong>[transaction 2]</strong> are different - the transaction with a smaller timestamp is before the other</li>
+<li>If the <em>transaction timestamps</em> are equal, but the movement type is not the same (issue or receipt) - then the issue transaction is before the receipt transaction.</li>
+<li>If the <em>transaction timestamps</em> are equal and both transactions are <strong>issued</strong> - then the transaction with a bigger quantity is placed before the other.</li>
+<li>If the <em>transaction timestamps</em> are equal and both transactions are <strong>receipts</strong> - then the transaction with <em>less</em> quantity is placed before the other.</li>
+</ul>
+<p>After the transactions are ordered chronologically, the costs are set to zero:</p>
+<p><strong>[issue quantity total]</strong> = 0 and <strong>[receipt quantity total]</strong> = 0.</p>
+<p>Then, for every element of the ordered list with transactions, depending on its direction - issue or receipt - its base quantity is added to the respective total. Then, the system checks if <strong>[issue quantity total]</strong> &lt; <strong>[receipt quantity total]</strong> is true. If it is true, the current operation (transaction release) is aborted and an error message appears. If it is false, then the system moves to the next element of the ordered list of transactions.</p>
+<p>If the <em>Transaction Timestamps</em> are equal in <strong>receipt</strong> transactions, the transactions are in quantity ascending order because the following case is possible: the first transaction is an issue transaction of <strong>10 PCS</strong> at <strong>12:42</strong>, the next operation is a <strong>receipt</strong> transaction of <strong>10 PCS</strong> at <strong>13:17</strong> and there are two more <strong>receipt</strong> transactions with equal <em>Transaction Timestamps</em> of <strong>13:31</strong> - one transaction for <strong>3 PCS</strong> and one transaction for <strong>-3 PCS</strong>. The last two transactions may appear after correction of the <strong>receipt</strong> document of 10 PCS. So if the transactions are not in ascending order, it is possible to add the quantity of the transaction with quantity of <strong>3 PCS</strong> first and in this moment the <strong>[issue quantity total] = 10</strong> and <strong>[receipt quantity total] = 13</strong>, which may mislead us for imbalance between <strong>issue</strong> and <strong>receipt</strong> transactions, no matter that the next transaction immediately fixes it.</p>
+<p>Under the same considerations, the <strong>issue</strong> transactions with equal <em>Transaction Timestamps</em> are in quantity descending order. It is possible to correct the first operation with <strong>-3 PCS</strong> and this correction will have the same <em>Transaction Timestamp</em> as the original transaction. Then if the <strong>-3 PCS</strong> transaction is first, there will be redundant/non-existing imbalance - <strong>[issue quantity total]</strong> = <strong>-3</strong> and <strong>[receipt quantity total] = 0</strong>.</p>
+<h2 id="validation-in-transfer-of-different-products-production">Validation in transfer of different products (production)</h2>
+<p>In production there is a change in the algorithm above. As the products that are received in the target store (manufactured goods) are usually different from the ones that we issue from the first store, it is not appropriate to check directly if <strong>[issue quantity total] &gt; [receipt quantity total]</strong>. Also, it is not appropriate to sum quantities of different materials/products in one total <strong>[issue quantity total]</strong>. This is the reason for the different calculation of the <strong>[issue quantity total]</strong>.</p>
+<p>Instead of summing the <strong>issue</strong> transactions in one <strong>[issue quantity total]</strong> , each material/product has its own total and the result is several totals. These totals and the quantities that are defined by the manufactured good recipes are used to calculate if enough materials are issued by the current moment. This quantity is added to the <strong>[issue quantity total]</strong>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/concepts/receipt-and-issue-balance-validation.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
