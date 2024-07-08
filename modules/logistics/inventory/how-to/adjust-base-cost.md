@@ -1,6 +1,6 @@
-# Adjust Base Cost
+# Adjust base costs
 
-The **Adjust Base Cost** feature is responsible for aligning the **Original Cost** of store products with their **Base Cost**. It achieves this by simultaneously deducting the **Base Cost Adjustment** of every product and adding it to its associated **Line Base Cost**.
+The **Adjust base costs** function is responsible for aligning the **Original Cost** of store products with their **Base Cost**. It achieves this by simultaneously deducting the **Base Cost Adjustment** of every product and adding it to its associated **Line Base Cost**.
 
 This speeds up the process of processing transactions, allowing them to assume the correct (or most correct) base costs of products. It also limits the need to make frequent cost corrections due to accumulated discrepancies between original and base cost calculations.
 
