@@ -140,8 +140,5 @@ Keep in mind that the hours for handing over and receiving the rental asset are 
 *Number of Periods:* *7* 
 
 > [!NOTE]
-> In the **Deliver Transaction**, the **Number of Periods** field is not calculated and will not be referenced in any operational features.
-
-> [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
