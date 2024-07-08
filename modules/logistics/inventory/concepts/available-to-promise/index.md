@@ -63,6 +63,8 @@ The current availability is <b>8 pcs</b>. It is calculated by adding the two iss
 
 The start quantity on <b>2020/10/01</b> is calculated by the two issuing store orders before <b>2020/10/01</b>. For the next dates, the unfulfilled store orders from the specific date are added.
 
+--- 
+
 Further reading:
 
 - **[ATP algorithm](atp-algorithm.md)**
