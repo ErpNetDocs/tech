@@ -4,11 +4,9 @@ uid: PAB
 
 # Projected available balance
 
-## Description
-
 Projected available balance (PAB) shows the inventory balance projected into the future. It is the running sum of the current stock holds with scheduled receipts added, minus planned issue stock orders.
 
-The projected available balance is used in the calculation of the [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=available%20to%20promise).
+The projected available balance is used in the calculation of the **[available to promise](../inventory/concepts/available-to-promise/index.md)**.
 
 ## The algorithm
 
