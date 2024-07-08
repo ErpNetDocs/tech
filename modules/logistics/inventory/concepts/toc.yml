@@ -4,6 +4,9 @@
   href: lots.md
 - name: Store orders - planning and due dates
   href: planning-due-dates.md
+- name: Available to promise
+  href: available-to-promise/toc.yml
+  topicHref: available-to-promise/index.md
 - name: Projected availability report
   href: projected-availability-report.md
 - name: Receipt and issue balance validation in store transfers
