@@ -26,7 +26,7 @@ Once product quantities from the Counts panel are summarized into lines in the L
 
 * **QuantityUnit** - the measurement unit of the product
 
-* **AvailableQuantityBase** - the current product availability, filtered by the Default Store and the Default Product Group of the reconciliation order 
+* **AvailableQuantityBase** - the current product availability, filtered by Default Store and Default Product Group 
 
 * **Store** - the store to which the product belongs.
 
