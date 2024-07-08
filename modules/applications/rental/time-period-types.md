@@ -8,7 +8,7 @@ When defining a rental asset, you can specify one of four **time period types** 
 
 ### Full Days
 
-Calculates the total number of complete days a rental asset is used.
+Calculates the total number of complete days a rental asset is used, including the specified start and end date.
 
 It **does not** consider the receive and delivery hours specified in the respective Receive and Delivery transactions.
 
@@ -20,11 +20,11 @@ If no protocols are generated in addition to the contract, it functions like the
 
 ### Overnight Stays
 
-Calculates the number of nights (how many times the date in a specified period changes).
+Calculates the number of nights, or how many times the date in a specified period changes.
 
 ### Months
 
-Calculates the number of months that pass between the selected start and end dates, taking into account months with 28, 29, 30 and 31 days.
+Calculates the number of months full calendar months, taking into account months with 28, 29, 30 and 31 days.
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
 
@@ -65,14 +65,12 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 
 The following examples show how the Number of Periods field is calculcated in the lease contract lines.
 
-Keep in mind that the hours for handing over and receiving the rental asset are not taken into account.
+Keep in mind that the hours for delivering and receiving the rental asset are not taken into account.
 
 #### Full Days
 
 - **Start Date:** July 1, 2024
 - **End Date:** July 31, 2024
-
-Using this setting, the field will count each day from July 1 to July 31, inclusive.
 
 *Number of Periods*: *31* 
 
@@ -104,6 +102,8 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 *Number of Periods:* *7* 
 
 ![picture](pictures/Time_Period_Types_M_03_07.png)
+
+---
 
 ### Examples for calculating Number of Periods in Receive transaction lines 
 
