@@ -20,8 +20,8 @@ After executing the function and processing the document, the cumulative Correct
 
 ![image-20240702175949791](../pictures/adjust-base-cost/image-20240702175949791.png)
 
-## Using Adjust Base Cost
-
+## Using Adjust base costs
+---
 Here, you'll find detailed steps on how to effectively perform base cost adjustment.
 
 ### 1. Create a Cost Correction document
