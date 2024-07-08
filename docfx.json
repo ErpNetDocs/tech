@@ -26,9 +26,10 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "modern"
+      "modern",
+      "templates/material"
     ],
-    "postProcessors": [],
+    "postProcessors": ["ExtractSearchIndex"],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
