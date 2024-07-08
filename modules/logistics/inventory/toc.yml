@@ -12,8 +12,9 @@
 - name: Available to promise
   href: available-to-promise/toc.yml
   topicHref: available-to-promise/index.md
-- name: Projected availability report
-  href: projected-availability-report.md
+- name: Concepts
+  href: concepts/toc.yml
+  topicHref: concepts/index.md
 - name: Receipt and issue balance validation in store transfers
   href: receipt-and-issue-balance-validation-in-store-transfers.md
 - name: Inventory Control
