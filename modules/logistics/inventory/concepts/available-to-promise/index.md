@@ -4,8 +4,6 @@ uid: ATP
 
 # Available to promise
 
-## Description
-
 The available to promise (ATP) for a product and a date is the minimum quantity available for use in future issuing operations (sales, production, etc). It will not interfere with the issue operations, including this product, no matter if they are already planned, finished, or being executed just now. The calculation of the ATP is made by dates and it has meaning for the present or future dates. There is no use calculating it for past periods. Even more, the [ATP algorithm](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al), which is used for the calculation, is based on the fact that the ATP quantities are calculated for a date greater than or equal to today's date. This is because the current stock holds are used instead of their movements chronology.
 
 The parameters, data, and [ATP algorithm](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/atp-algorithm.html?q=atp%20al) used for the ATP calculation are shown below. We will try to calculate the ATP for a specific date. Then, there is a detailed example of an ATP calculation for a long period (more than one date).
