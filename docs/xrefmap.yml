@@ -1,9 +1,33 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: ASN
+  name: Advance Shipping Notice (ASN)
+  href: modules/logistics/wms/logistic-units/asn.html
+- uid: ATP
+  name: Available to promise
+  href: modules/logistics/inventory/available-to-promise/index.html
+- uid: ATP-algorithm
+  name: ATP-algorithm
+  href: modules/logistics/inventory/available-to-promise/atp-algorithm.html
+- uid: ATP-reports
+  name: ATP Reports
+  href: modules/logistics/inventory/available-to-promise/atp-reports.html
 - uid: Adjustment-Documents
   name: Adjustments documents
   href: concepts/documents/adjustments.html
+- uid: Documents
+  name: Documents
+  href: concepts/documents/index.html
+- uid: LU
+  name: Logistic Units
+  href: modules/logistics/wms/logistic-units/index.html
+- uid: PAB
+  name: Projected available balance
+  href: modules/logistics/planning/projected-available-balance.html
+- uid: VMR
+  name: Variable (dynamic) measurement ratios
+  href: concepts/products/variable-dynamic-measurement-rations.html
 - uid: aggregate-client-commit
   name: AGGREGATE CLIENT COMMIT
   href: advanced/user-business-rules/events/aggregate-client-commit.html
@@ -19,18 +43,6 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
-- uid: ASN
-  name: Advance Shipping Notice (ASN)
-  href: modules/logistics/wms/logistic-units/asn.html
-- uid: ATP
-  name: Available to promise
-  href: modules/logistics/inventory/available-to-promise/index.html
-- uid: ATP-algorithm
-  name: ATP Algorithm
-  href: modules/logistics/inventory/available-to-promise/atp-algorithm.html
-- uid: ATP-reports
-  name: ATP Reports
-  href: modules/logistics/inventory/available-to-promise/atp-reports.html
 - uid: bonus-program
   name: Bonus programs
   href: modules/crm/marketing/bonus-programs/index.html
@@ -247,9 +259,6 @@ references:
 - uid: document-amounts
   name: Additional amounts
   href: advanced/document-amounts/index.html
-- uid: Documents
-  name: Documents
-  href: concepts/documents/index.html
 - uid: domain-with-property-allowed-values
   name: Domain with property allowed values
   href: advanced/stored-attributes/domain-with-property-allowed-values.html
@@ -301,27 +310,21 @@ references:
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html
-- uid: LU
-  name: Logistic Units
-  href: modules/logistics/wms/logistic-units/index.html
 - uid: master-detail
   name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
 - uid: name
   name: name
   href: includes/name.html
-- uid: notifications
-  name: Notifications
-  href: modules/community/social-interactions/notifications/index.html
 - uid: notification-settings
   name: Notification settings
   href: modules/community/social-interactions/notifications/settings.html
+- uid: notifications
+  name: Notifications
+  href: modules/community/social-interactions/notifications/index.html
 - uid: orders-menu
   name: Orders
   href: modules/logistics/wms/wms-worker/orders/index.html
-- uid: PAB
-  name: Projected available balance
-  href: modules/logistics/planning/projected-available-balance.html
 - uid: pack-menu
   name: Pack
   href: modules/logistics/wms/wms-worker/pack.html
@@ -373,9 +376,6 @@ references:
 - uid: vat-deviation
   name: VAT Deviation
   href: modules/crm/sales/sales-concepts/vat-deviation.html
-- uid: VMR
-  name: Variable (dynamic) measurement ratios
-  href: concepts/products/variable-dynamic-measurement-rations.html
 - uid: warehouse-policies
   name: Warehouse policies
   href: modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html

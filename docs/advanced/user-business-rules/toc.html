@@ -5,12 +5,12 @@
       <form class="toc-filter">
         <span class="glyphicon glyphicon-filter filter-icon"></span>
         <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
-        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+        <input type="text" id="toc_filter_input" placeholder="Filter by title" onkeypress="if(event.keyCode==13) {return false;}">
       </form>
     </div>
     <div class="sidetoc">
       <div class="toc" id="toc">
-          
+
           <ul class="nav level1">
                 <li>
                     <a href="index.html" name="" title="Overview">Overview</a>
@@ -18,7 +18,7 @@
                 <li>
                     <span class="expand-stub"></span>
                     <a href="action-types/index.html" name="" title="Action types">Action types</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="action-types/index.html" name="" title="Overview">Overview</a>
@@ -38,31 +38,24 @@
                           <li>
                               <a href="action-types/warning.html" name="" title="WARNING">WARNING</a>
                           </li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="expand-stub"></span>
-                    <a href="business-rules/index.html" name="" title="Business rules">Business rules</a>
-                    
-                    <ul class="nav level2">
                           <li>
-                              <a href="business-rules/index.html" name="" title="Overview">Overview</a>
+                              <a href="action-types/webhook.html" name="" title="WEBHOOK">WEBHOOK</a>
                           </li>
                           <li>
-                              <a href="business-rules/valid-icon-format.html" name="" title="Valid icon format">Valid icon format</a>
+                              <a href="action-types/aiset.html" name="" title="AISET">AISET</a>
                           </li>
                           <li>
-                              <a href="business-rules/script-text-max-length.html" name="" title="Script text max length">Script text max length</a>
+                              <a href="action-types/aivalidate.html" name="" title="AIVALIDATE">AIVALIDATE</a>
                           </li>
                           <li>
-                              <a href="business-rules/code.html" name="" title="Code (Code)">Code (Code)</a>
+                              <a href="action-types/aiwarning.html" name="" title="AIWARNING">AIWARNING</a>
                           </li>
                     </ul>
                 </li>
                 <li>
                     <span class="expand-stub"></span>
                     <a href="parameter-types/index.html" name="" title="Parameter types">Parameter types</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="parameter-types/index.html" name="" title="Overview">Overview</a>
@@ -70,12 +63,15 @@
                           <li>
                               <a href="parameter-types/formattedstring.html" name="" title="FormattedString">FormattedString</a>
                           </li>
+                          <li>
+                              <a href="parameter-types/interpolate.html" name="" title="Interpolate">Interpolate</a>
+                          </li>
                     </ul>
                 </li>
                 <li>
                     <span class="expand-stub"></span>
                     <a href="events/index.html" name="" title="Events">Events</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="events/index.html" name="" title="Overview">Overview</a>
@@ -84,10 +80,28 @@
                               <a href="events/aggregate-client-commit.html" name="" title="AGGREGATE CLIENT COMMIT">AGGREGATE CLIENT COMMIT</a>
                           </li>
                           <li>
+                              <a href="events/aggregate-client-committed.html" name="" title="AGGREGATE CLIENT COMMITTED">AGGREGATE CLIENT COMMITTED</a>
+                          </li>
+                          <li>
+                              <a href="events/attributechanged.html" name="" title="ATTRIBUTECHANGED">ATTRIBUTECHANGED</a>
+                          </li>
+                          <li>
+                              <a href="events/attributechanging.html" name="" title="ATTRIBUTECHANGING">ATTRIBUTECHANGING</a>
+                          </li>
+                          <li>
                               <a href="events/client-commit.html" name="" title="CLIENT COMMIT">CLIENT COMMIT</a>
                           </li>
                           <li>
+                              <a href="events/client-committed.html" name="" title="CLIENT COMMITTED">CLIENT COMMITTED</a>
+                          </li>
+                          <li>
                               <a href="events/commit.html" name="" title="COMMIT">COMMIT</a>
+                          </li>
+                          <li>
+                              <a href="events/committed.html" name="" title="COMMITTED">COMMITTED</a>
+                          </li>
+                          <li>
+                              <a href="events/create-new.html" name="" title="CREATE NEW">CREATE NEW</a>
                           </li>
                           <li>
                               <a href="events/statechanged.html" name="" title="STATECHANGED">STATECHANGED</a>
@@ -98,53 +112,45 @@
                           <li>
                               <a href="events/voiding.html" name="" title="VOIDING">VOIDING</a>
                           </li>
-                          <li>
-                              <span class="expand-stub"></span>
-                              <a href="events/business-rules/index.html" name="" title="Business Rules">Business Rules</a>
-                              
-                              <ul class="nav level3">
-                                    <li>
-                                        <a href="events/business-rules/index.html" name="" title="Overview">Overview</a>
-                                    </li>
-                                    <li>
-                                        <a href="events/business-rules/repository-aggregate-root.md" name="" title="Is repository aggregate root">Is repository aggregate root</a>
-                                    </li>
-                              </ul>
-                          </li>
                     </ul>
                 </li>
                 <li>
                     <span class="expand-stub"></span>
                     <a href="examples/index.html" name="" title="Examples">Examples</a>
-                    
+
                     <ul class="nav level2">
                           <li>
                               <a href="examples/index.html" name="" title="Overview">Overview</a>
                           </li>
                           <li>
-                              <a href="examples/credit-limit-override.html" name="" title="Allow a credit limit override when the client pays in cash">Allow a credit limit override when the client pays in cash</a>
+                              <a href="examples/credit-limit-override.html" name="" title="Allow a credit limit override when a client pays in cash">Allow a credit limit override when a client pays in cash</a>
                           </li>
                           <li>
-                              <a href="examples/set-deliveryterms.html" name="" title="How to set DeliveryTerms in purchase invoice?">How to set DeliveryTerms in purchase invoice?</a>
+                              <a href="examples/set-deliveryterms.html" name="" title="Set DeliveryTerms in purchase invoice">Set DeliveryTerms in purchase invoice</a>
                           </li>
                           <li>
-                              <a href="examples/start-business-rule.html" name="" title="How to start a business rule only on first releasing?">How to start a business rule only on first releasing?</a>
+                              <a href="examples/start-business-rule.html" name="" title="Start a business rule only on first releasing">Start a business rule only on first releasing</a>
                           </li>
                           <li>
                               <a href="examples/whole-quantity-validation.html" name="" title="Whole quantity validation">Whole quantity validation</a>
                           </li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="expand-stub"></span>
-                    <a href="Q%26A/index.html" name="" title="Q&amp;A">Q&amp;A</a>
-                    
-                    <ul class="nav level2">
                           <li>
-                              <a href="Q%26A/index.html" name="" title="Overview">Overview</a>
+                              <a href="examples/set-value-into-custom-property.html" name="" title="Set value into custom property">Set value into custom property</a>
                           </li>
                           <li>
-                              <a href="Q%26A/set-value-into-custom-property.html" name="" title="Set value into custom property">Set value into custom property</a>
+                              <a href="examples/azure-service-bus-send-message.html" name="" title="Send a message to Azure Service Bus">Send a message to Azure Service Bus</a>
+                          </li>
+                          <li>
+                              <a href="examples/trello-create-card.html" name="" title="Create a card in Trello">Create a card in Trello</a>
+                          </li>
+                          <li>
+                              <a href="examples/slack-send-message.html" name="" title="Send a message in Slack">Send a message in Slack</a>
+                          </li>
+                          <li>
+                              <a href="examples/sales-order-init-attribute.html" name="" title="Set an initial attribute for a new sales order">Set an initial attribute for a new sales order</a>
+                          </li>
+                          <li>
+                              <a href="examples/manage-user-status.html" name="" title="Manage user status of documents">Manage user status of documents</a>
                           </li>
                     </ul>
                 </li>

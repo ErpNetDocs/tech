@@ -1,0 +1,2 @@
+
+{"order":100,"items":[{"name":"Overview","href":"index.html","topicHref":"index.html"},{"name":"Operations","href":"operations/index.html","topicHref":"operations/index.html","includedFrom":"~/modules/financials/accounting/operations/toc.yml","items":[{"name":"Overview","href":"operations/index.html","topicHref":"operations/index.html"},{"name":"Currency revaluation","href":"operations/currency-revaluation.html","topicHref":"operations/currency-revaluation.html"}]}]}

@@ -1,82 +1,90 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Calculating cost for transferred products | ERP.net Tech Docs </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Calculating cost for transferred products | ERP.net Tech Docs ">
-    <meta name="generator" content="docfx 2.56.9.0">
-    
-    <link rel="shortcut icon" href="../../../../../favicon.ico">
-    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../../../toc.html">
-    <meta property="docfx:tocrel" content="../../../../toc.html">
-    
-    <meta property="docfx:rel" content="../../../../../">
-    
+      <title>Calculating cost for transferred products | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Calculating cost for transferred products | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../../../../../index.html">
-                <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list"></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+
+        <article data-uid="">
 <h1 id="calculating-cost-for-transferred-products">Calculating cost for transferred products</h1>
 
 <p>Store Transfers create two parallel sub-document flows - receipt and issue flow. The cost of the issue store transactions is calculated by the average cost in the store, while the one in the receipt store transactions - specifically by the store transfer. It is formed by the following two components:</p>
@@ -87,7 +95,7 @@
 </li>
 </ul>
 <p>For each store transfer the following must be valid:</p>
-<p><b>[receipt cost] = [issue cost] + [<a href="https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts">Additional amounts</a> for cost]<b><p>
+<p><b>[receipt cost] = [issue cost] + [<a href="https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts">Additional amounts</a> for cost]<b></b></b></p>
 <p>Each store transaction row is calculated separately (so [<a href="https://docs.erp.net/tech/advanced/document-amounts/index.html?q=Additional%20amounts">Additional amounts</a> for cost] is the additional amount distributed to the current row). These calculations are executed when the receipt store order is generated and the calculated cost is saved in the <i>Line Cost</i> field in the rows of the store order. So if the generated store order receipt follows the generation of the issue documents (orders and their executions, providing the issue cost), then the issue cost may be copied to the receipt orders.</p>
 <p><b><i>Example 1</i></b>:</p>
 <p>There is a store transfer with two rows - row #1 with Product 1 for <b>10 PCS</b> and row #2 with Product 2 for <b>12 PCS</b>. At first, there are two issue transactions:</p>
@@ -121,7 +129,7 @@
 <p>When executing this store order, the receipt cost will be equal to the issue cost.</p>
 <p>The next example describes the calculations when there is an additional amount for the transport added to the goods cost.</p>
 <p><b><i>Continuation of Example 1:</i></b></p>
-<p>There is an additional transport amount of </b>66</b> (in document currency) distributed in the two rows as follows:</p>
+<p>There is an additional transport amount of 66 (in document currency) distributed in the two rows as follows:</p>
 <p><b>30</b> on the first row and <b>36</b> on the second row.</p>
 <p>These amounts will be added to the row costs in the generated store orders, proportionally to their quantities. So their rows become:</p>
 <ul>
@@ -169,42 +177,30 @@
 </ul>
 <p>The user is not able to change the <i>transaction timestamp</i> to a value less than 10 Dec 2020 <b>17:04</b>. After releasing the transaction <b>receipt</b>, the user is not able to void the <b>issue</b> transaction because on 10 Dec 2020 <b>17:27</b> there will be a total <b>issue</b> of <b>0 PCS</b>, which is less than the total <b>receipt</b> of <b>1PCS</b>.</p>
 <p>For more information about the validation, see <strong><a href="https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html?q=Receipt%20And%20Issue%20Balance%20Validation%20In%20Store%20Transfers">Receipt and issue balance validation in store transfers</a></strong>.</p>
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/original-cost-calculation/calculating-cost-for-transferred-products.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+    </footer>
   </body>
 </html>
