@@ -61,7 +61,7 @@ In addition, once a lease contract is generated, the subsequently generated **sa
 
 ---
 
-### Examples for calculating Number of Periods
+### Examples for calculating Number of Periods in Lease contract lines
 
 #### Full Days
 
@@ -101,7 +101,7 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 
 ![picture](pictures/Time_Period_Types_M_03_07.png)
 
-### Examples for calculating Number of Periods in Transactions 
+### Examples for calculating Number of Periods in Transaction lines 
 
 #### Full Days
 
