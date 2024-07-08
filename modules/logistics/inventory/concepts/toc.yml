@@ -1,3 +1,10 @@
 - name: Overview
   href: index.md
-  
+- name: Lots
+  href: lots.md
+- name: Store orders - planning and due dates
+  href: planning-due-dates.md
+- name: Projected availability report
+  href: projected-availability-report.md
+- name: Receipt and issue balance validation in store transfers
+  href: receipt-and-issue-balance-validation.md
