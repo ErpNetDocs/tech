@@ -5,6 +5,7 @@ When defining a rental asset, you can specify one of four **time period types** 
 ![picture](pictures/Time_Period_Types_Rental_Asset_03_07.png)
 
 ## Options
+---
 
 ### Full Days
 
