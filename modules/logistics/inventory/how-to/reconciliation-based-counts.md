@@ -8,7 +8,7 @@ For example, six rows of counted quantities of the same product will be summariz
 > It is not possible to run the function if: <br>
 > * a **Default Store** and a **Reconciliation Type** are not specified for the document
 > * the document is in a state **higher than or equal to** Released  <br>
-> * counted products belong to a product group and/or a store **different** from the **Default Product Group** and the **Default Store** of the order.
+> * counted products belong to a product group and/or a store **different** from the **Default Product Group** and the **Default Store**
 
 ### Lines data
 
