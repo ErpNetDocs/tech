@@ -104,8 +104,6 @@ Keep in mind that the hours for delivering and receiving the rental asset are no
 
 ![picture](pictures/Time_Period_Types_M_03_07.png)
 
----
-
 ### Examples for calculating Number of Periods in Receive transaction lines 
 
 The following examples show how the Number of Periods field is calculcated in the receive transaction lines.
