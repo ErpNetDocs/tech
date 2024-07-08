@@ -1,8 +1,8 @@
 - name: Overview
   href: index.md
-- name: Execute store orders function
-  href: execute-store-orders-function/toc.yml
-  topicHref: execute-store-orders-function/index.md
+- name: How To
+  href: how-to/toc.yml
+  topicHref: hpw-to/index.md
 - name: Adjust base cost function
   href: adjust-base-cost.md
   topicHref: adjust-base-cost.md  
