@@ -10,7 +10,7 @@ The calculated quantities for each date from the new chronology are reviewed and
 
 We use the smallest value. If on a date when we have the smallest value a greater value is entered as ATP quantity, and this quantity is used for a new issuing operation, it will not be enough for all ordered operations. The minimum quantity in the new chronology actually shows the greatest value we can use for the date specified as a parameter without violating other issuing store processes.
 
-Let’s apply that to the example from [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise):
+Let’s apply that to the example from **[available to promise](index.md)**:
 
 After adding the physical availability to the chronology, we have:
 
@@ -28,7 +28,7 @@ After adding the physical availability to the chronology, we have:
 Here is the graphical chart for the new chronology:
 ![Picture1](pictures/picture1.png)
  
-After reviewing the value column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the [available to promise](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html?q=Available%20to%20Promise) quantity for <b>2021/10/01</b>.
+After reviewing the value column (or following the lowest values in the graphical chart), you can see that the lowest value is <b>6 pcs</b>. This is the **[available to promise](index.md)** quantity for <b>2021/10/01</b>.
 
 ## Total clculations (for a period)
 
