@@ -2,8 +2,8 @@
 
 Here, you will find common inventory management-related concepts and operations explained and illustrated with examples.
 
-* **[Lots](https://docs.erp.net/tech/modules/logistics/inventory/lots/index.html)**
-* **[Store orders planning and due dates](https://docs.erp.net/tech/modules/logistics/inventory/store-orders/store-orders-concepts/store-orders-planning-and-due-dates.html)**
-* **[Available to promise](https://docs.erp.net/tech/modules/logistics/inventory/available-to-promise/index.html)**
-* **[Projected availability report](https://docs.erp.net/tech/modules/logistics/inventory/projected-availability-report.html)**
-* **[Receipt and issue balance validation in store transfers](https://docs.erp.net/tech/modules/logistics/inventory/receipt-and-issue-balance-validation-in-store-transfers.html)**
+* **[Lots](lots.md)**
+* **[Store orders planning and due dates](planning-due-dates.md)**
+* **[Available to promise](available-to-promise/index.md)**
+* **[Projected availability report](projected-availability-report.md)**
+* **[Receipt and issue balance validation in store transfers](receipt-and-issue-balance-validation.md)**
