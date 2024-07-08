@@ -20,11 +20,11 @@ If no protocols are generated in addition to the contract, it functions like the
 
 ### Overnight Stays
 
-Calculates the number of times the date in a specified period changes, assuming it does that only once when a day transitions into another.
+Calculates the number of nights (how many times the date in a specified period changes).
 
 ### Months
 
-Calculates the number of full calendar months that pass during a specified time range, taking into account shorter and longer months.
+Calculates the number of months that pass between the selected start and end dates, taking into account months with 28, 29, 30 and 31 days.
 
 It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.
 
@@ -45,23 +45,27 @@ However, you can always **change** it at any point prior to releasing the docume
 
 ## Number of periods  	
 
-Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional **Number of Periods** field is automatically calculated. It reveals **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
+Based on the Start and End date of the lease, as well as the Time Period Type specified for the asset, an additional **Number of Periods** field is automatically calculated. It reveals **how many** full days, 24-hour periods, overnight stays, or months the asset will be leased for.
 
 ![picture](pictures/Time_Period_Types_Contract_Number_03_07.png)
 
 This automatic calculation applies for the **lease contracts lines** containing the respective rental asset(s), as well as for the lines of subsequently generated **transaction protocols** of type "Receive" and "Write Off Not Returned".
 
 > [!NOTE]
-> The **Number of Periods** for a Receive transaction will be calculated only after the respective Deliver transaction is set to **Released**.
+> The **Number of Periods** for a Receive transaction will be calculated only after the previously generated Deliver transaction from the same document flow is set to **Released**.
 
 In addition, once a lease contract is generated, the subsequently generated **sales order** accounting for the rent will base its **Quantity** field on the calculcated **Number of Periods** field. 
 
 > [!WARNING]
-> If you **modify** the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already created, the respective document will be **re-generated**, and the value of the Number of Periods field will be **re-calculated**.
+> If you **modify** the rental asset, as well as the Start and/or End date fields for a Lease contract, a Receive transaction, or a Write Off Not Returned transaction, the respective documents from the document flow will be **re-generated**, and the value of the Number of Periods field will be **re-calculated**.
 
 ---
 
 ### Examples for calculating Number of Periods in Lease contract lines
+
+The following examples show how the Number of Periods field is calculcated in the lease contract lines.
+
+Keep in mind that the hours for handing over and receiving the rental asset are not taken into account.
 
 #### Full Days
 
@@ -101,7 +105,11 @@ Using this setting, the field will count each day from July 1 to July 31, inclus
 
 ![picture](pictures/Time_Period_Types_M_03_07.png)
 
-### Examples for calculating Number of Periods in Transaction lines 
+### Examples for calculating Number of Periods in Receive transaction lines 
+
+The following examples show how the Number of Periods field is calculcated in the receive transaction lines.
+
+Keep in mind that the hours for handing over and receiving the rental asset are taken into account.
 
 #### Full Days
 
