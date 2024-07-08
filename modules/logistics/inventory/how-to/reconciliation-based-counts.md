@@ -1,8 +1,14 @@
 # Calculate reconciliation based on the counts
 
-This function takes the rows of product quantities displayed in the **Counts** panel of a reconciliation order and summarizes them into lines in the **Lines** panel.
+The **Calculate reconciliation, based on the counts** function takes the rows of product quantities counted in the **Counts** panel of a reconciliation order and summarizes them into lines in the **Lines** panel.
 
-For example, six rows of counted quantities of the same product will be summarized into one line.
+For instance: 
+
+* There are six rows of counted quantities of the same product in the **Counts** panel.
+
+* The function is run. 
+
+* All rows are summarized into a single line in the **Lines** panel.
 
 > [!WARNING]
 > It is not possible to run the function if: <br>
@@ -16,7 +22,7 @@ Once product quantities from the Counts panel are summarized into lines in the L
 
 * **Product** - the product whose quantities are counted
 
-* **Quantity** - a sum of the product's quantities, grouped by product
+* **Quantity** - a sum of the product's counted quantities, grouped by product
 
 * **QuantityUnit** - the measurement unit of the product
 
@@ -38,7 +44,7 @@ Products that are not counted **don't have** lines created for them and their cu
 
 Lines are created for **all** counted products and filled with the respective lines data.
 
-Products that are not counted will have **lines** created for them with quantities set to "0".
+Products that are not counted will **have** lines created for them with quantities set to "0".
 
 ### Behavior based on zero counts
 
