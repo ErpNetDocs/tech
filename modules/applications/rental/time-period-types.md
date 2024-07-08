@@ -113,29 +113,29 @@ Keep in mind that the hours for handing over and receiving the rental asset are 
 
 #### Full Days
 
-- **Start Date and Time**: July 1, 2024, 10:00 AM
-- **End Date and Time**: July 31, 2024, 10:00 AM
+- **Start Date**: July 1, 2024, 10:00 AM
+- **End Date**: July 31, 2024, 10:00 AM
 
 *Number of Periods:* *31* 
 
 #### 24-Hour Periods
 
-- **Start Date and Time**: July 1, 2024, 3:00 PM
-- **End Date and Time**: July 31, 2024, 2:00 PM
+- **Start Date**: July 1, 2024, 3:00 PM
+- **End Date**: July 31, 2024, 2:00 PM
 
 *Number of Periods:* *30* 
 
 #### Overnight Stays
 
-- **Start Date and Time**: July 1, 2024, 8:00 PM
-- **End Date and Time**: July 31, 2024, 7:00 AM
+- **Start Date**: July 1, 2024, 8:00 PM
+- **End Date**: July 31, 2024, 7:00 AM
 
 *Number of Periods:* *30* 
 
 #### Months
 
-- **Start Date and Time**: February 1, 2024, 9:00 AM
-- **End Date and Time**: September 1, 2024, 9:00 AM
+- **Start Date**: February 1, 2024, 9:00 AM
+- **End Date**: September 1, 2024, 9:00 AM
 
 *Number of Periods:* *7* 
 
