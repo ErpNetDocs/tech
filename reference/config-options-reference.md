@@ -316,3 +316,13 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - a.Action: When the key is not defined or has value and this value is "0", data loading is not allowed in Chronological Statement Navigator if a filter is applied for more than 10 accounts or no accounts. An error message will be displayed.<br>
   When the key has value "1" the warning message will be displayed and then data will be loaded.
 - b.The user sets it manually
+
+## 59. AI/Assistant/CountTokens
+- a.Action: When this key has a value of '1', it determines whether an AI assistant should count the tokens and return the count to the end user.
+- b.The user sets it manually
+- c.The key is introduced in version: - 24.1
+
+## 60. AI/Assistant/AdditionalInstructions
+- a.Action: Additional instructions, passed to the AI assistant.
+- b.The user sets it manually
+- c.The key is introduced in version: - 24.1

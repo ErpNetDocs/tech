@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Time period types | ERP.net Tech Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Time period types | ERP.net Tech Docs ">
+    <meta name="generator" content="docfx 2.56.9.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="time-period-types">Time period types</h1>
+
+<p>When defining a rental asset, you can specify one of four <strong>time period types</strong> for it to determine the unit by which the periods of renting this asset will be measured. Clicking on the <strong>Time Period Type</strong> field expands it into a dropdown menu with the following options:</p>
+<p><img src="pictures/Time_Period_Types_Rental_Asset_03_07.png" alt="picture"></p>
+<h2 id="options">Options</h2>
+<h3 id="full-days">Full Days</h3>
+<p>Calculates the total number of complete days a rental asset is used.</p>
+<p>It <strong>does not</strong> consider the receive and delivery hours specified in the respective Receive and Delivery transactions.</p>
+<h3 id="24-hour-periods">24-Hour Periods</h3>
+<p>Calculates all started 24-hour periods, taking into account the receive and delivery times specified in the respective transactions.</p>
+<p>If no protocols are generated in addition to the contract, it functions like the <strong>Full Days</strong> setting.</p>
+<h3 id="overnight-stays">Overnight Stays</h3>
+<p>Calculates the number of times the date in a specified period changes, assuming it does that only once when a day transitions into another.</p>
+<h3 id="months">Months</h3>
+<p>Calculates the number of full calendar months that pass during a specified time range, taking into account shorter and longer months.</p>
+<p>It is ideal for long-term rentals, providing an easy way to calculate monthly rental periods.</p>
+<hr>
+<h3 id="changing-the-time-period-type">Changing the Time Period Type</h3>
+<p>Each rental asset you add to a lease contract will assume its <strong>default</strong> time period type value assigned during its definition.</p>
+<p>This value will be automatically reflected in the <strong>lease contract line</strong> the rental asset is added to.</p>
+<p>However, you can always <strong>change</strong> it at any point prior to releasing the document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The time period type of a rental asset specified in the lease contract lines is <strong>prioritised</strong> over the one provided in its definition.</p>
+</div>
+<p><img src="pictures/Time_Period_Types_Change_03_07.png" alt="picture"></p>
+<h2 id="number-of-periods">Number of periods</h2>
+<p>Based on the Start and End date of the lease specified for the Time Period Type of a rental asset, an additional <strong>Number of Periods</strong> field is automatically calculated. It reveals <strong>how many</strong> full days, 24-hour periods, overnight stays, or months the asset will be leased for.</p>
+<p><img src="pictures/Time_Period_Types_Contract_Number_03_07.png" alt="picture"></p>
+<p>This automatic calculation applies for the <strong>lease contracts lines</strong> containing the respective rental asset(s), as well as for the lines of subsequently generated <strong>transaction protocols</strong> of type &quot;Receive&quot; and &quot;Write Off Not Returned&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Number of Periods</strong> for a Receive transaction will be calculated only after the respective Deliver transaction is set to <strong>Released</strong>.</p>
+</div>
+<p>In addition, once a lease contract is generated, the subsequently generated <strong>sales order</strong> accounting for the rent will base its <strong>Quantity</strong> field on the calculcated <strong>Number of Periods</strong> field.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If you <strong>modify</strong> the Start and/or End date field for a Lease contract, Receive, or a Write Off Not Returned transaction that is already created, the respective document will be <strong>re-generated</strong>, and the value of the Number of Periods field will be <strong>re-calculated</strong>.</p>
+</div>
+<hr>
+<h3 id="examples-for-calculating-number-of-periods">Examples for calculating Number of Periods</h3>
+<h4 id="full-days-1">Full Days</h4>
+<ul>
+<li><strong>Start Date:</strong> July 1, 2024</li>
+<li><strong>End Date:</strong> July 31, 2024</li>
+</ul>
+<p>Using this setting, the field will count each day from July 1 to July 31, inclusive.</p>
+<p><em>Number of Periods</em>: <em>31</em></p>
+<p><img src="pictures/Time_Period_Types_Full_03_07.png" alt="picture"></p>
+<h4 id="24-hour-periods-1">24-Hour Periods</h4>
+<ul>
+<li><strong>Start Date:</strong> July 1, 2024</li>
+<li><strong>End Date:</strong> July 31, 2024</li>
+</ul>
+<p><em>Number of Periods</em>: <em>31</em></p>
+<p><img src="pictures/Time_Period_Types_24_H_03_07.png" alt="picture"></p>
+<h4 id="overnight-stays-1">Overnight Stays</h4>
+<ul>
+<li><strong>Start Date:</strong> July 1, 2024</li>
+<li><strong>End Date:</strong> July 31, 2024</li>
+</ul>
+<p><em>Number of Periods:</em> <em>30</em></p>
+<p><img src="pictures/Time_Period_Types_Overnight_03_07.png" alt="picture"></p>
+<h4 id="months-1">Months</h4>
+<ul>
+<li><strong>Start Date:</strong> February 1, 2024</li>
+<li><strong>End Date:</strong> September 1, 2024</li>
+</ul>
+<p><em>Number of Periods:</em> <em>7</em></p>
+<p><img src="pictures/Time_Period_Types_M_03_07.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/rental/time-period-types.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

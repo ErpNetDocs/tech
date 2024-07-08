@@ -21,44 +21,54 @@ There are two types of assets which you can create and manage through Rental:
 
 In the context of a rental asset, a consumable typically refers to items or materials that are used up and need to be replaced regularly as part of the asset's operation or maintenance. 
 
-Consumables are therefore tied to a rental asset but are treated as distinct **products**. The rental asset itself is expected to be returned in reusable condition.
+Consumables are tied to a rental asset but are treated as products distinct from it. They are **sold** and not returned, while the rental asset itself is **leased** for a specific period of time, and is therefore expected to be returned in reusable condition.
 
 > [!NOTE]
 > Each rental asset can also be categorized as a **[Managed Asset](https://docs.erp.net/tech/modules/applications/enterprise-asset-management/index.html#managed-assets)**.
 
 ## Documents
 
-The **Documents** portion of Rental contains all essential transactions and contracts related to the leasing process, including:
-
-1. Lease contract  - the main lease document containing the rental asset/s and its consumable/s
-2. Issue transaction - contains the date of leasing out (deliver) the rental asset
-3. Receipt transaction - contains the date of return (receive) of the rental asset 
+The **Documents** portion of Rental contains all essential transactions and contracts related to the leasing process.
 
 It provides a centralized repository for managing lease agreements and transaction records, ensuring their easy access and organization.
+
+1. **Lease contract**  - the main lease document containing the rental asset/s and its consumables, if such are applicable; it also includes the **[lease time period](time-period-types.md)** negotiated for every rental asset
+2. **Transaction (Deliver)** - a protocol confirming the handover of the rental asset; it contains the start date of the negotiated lease period
+3. **Transaction (Receive)** - a protocol confirming the return of the rental asset; it contains the end date of the negotiated lease period
+4. **Transaction (Write Off Not Returned)** - a protocol confirming that the rental asset has not been returned by the leaser
+5. **Transaction (Status Report)** - a protocol describing the rental assets handed over to a leaser (can be used for inspection).
 
 ![picture](pictures/Lease_out_documents_25_06.png)
 
 ### Document flow
 
-A sample document flow for leasing out assets and consumables goes like this:
+A typical document flow for leasing out rental assets with consumables goes like this:
 
-> Lease Contract --> Issue Transaction --> Receipt Transaction --> Sales Order (Consumable) --> Sales Order (Rent)
+> **Lease Contract --> Transaction (Deliver), Transaction (Receive), Sales Order (Rent), Sales Order (Consumable)**
+
+Upon release, the lease contract will lead to the simultaneous generation of a transaction (deliver) protocol, a transaction (receive) protocol, a sales order accounting for the rent, and a sales order accounting for the consumable(s).
+
+> [!TIP]
+> Like all other ERP.net modules, Rental allows you to set up a personalized document flow that meets the individual needs of your business or organization.
 
 ### Rent Lease Contracts Navigator
 
-This navigator contains all existing lease contract agreements issued for rental assets, including those for consumables, and also offers the ability to create new ones.
+This navigator contains all existing **lease contract agreements** issued for rental assets, including those for consumables, and offers the ability to create new ones.
 
-You can include as many rental assets in a lease contract as needed. Required information includes defining a **time period type** for lease, **start date** and **end date**.
+It is also equipped with a handful of **filtering capabilities** designed to speed up the process of extracting information in a convenient and systematized way. 
+
+> [!NOTE]
+> When creating a lease contract, you can include as many rental assets in it as needed, and additionally fill out necessary data for each.
 
 ### Transactions Navigator
 
-Gives access to all protocols following or associated with a lease contract. 
+Gives access to all **protocols** following or associated with a lease contract. 
 
-It includes useful filtering capabilities, thanks to which you can quickly and easily summarize protocol data in a convenient format. 
+Like the Lease Contracts Navigator, it includes useful **filtering capabilities** through which you can quickly and easily summarize protocol data in a convenient format. 
 
 ## Functions
 
-This section includes tools that facilitate the day-to-day management of lease activities. 
+This section includes **tools** that facilitate the day-to-day management of lease activities. 
 
 It offers functionalities that help you stay on track with key dates and schedules.
 
@@ -66,11 +76,11 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all of your rental assets' **availability**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
+The Calendar provides a quick overview of all rental assets' **occupancy**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
 
 ## Reports
 
-Rental allows you to generate comprehensive reports summarizing your leasing activities. 
+Rental allows you to generate comprehensive **reports** summarizing your leasing activities. 
 
 These include monitoring the status of assets, tracking lease contract details, and reviewing transaction history.
 
@@ -139,4 +149,8 @@ The **Settings** portion of Rental allows you to define or change individual pro
 This includes different user characteristics and ensures a more custom approach to how you structure your rental assets.
 
 ![picture](pictures/Lease_out_settings_25_06.png)
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
 

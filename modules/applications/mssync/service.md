@@ -1,10 +1,10 @@
 # Service 
 
-The **Service** section is exclusively for **ERP.net** admins. 
+The **Service** section is exclusively for @@name admins. 
 
-Here, they can request permissions for accessing **Office365** resources from an admin within their **enterprise company**. 
+Here, they can request permissions for accessing **Microsoft 365** resources from an admin within their **enterprise company**. 
 
-These permissions are essential for enabling synchronization between the company's **Office365** account and the **ERP.net Web Client**. 
+These permissions are essential for enabling synchronization between the company's **Microsoft 365** account and the @@name Web Client. 
 
  ![picture](pictures/Service_view_01_03.png)
 
@@ -22,13 +22,13 @@ This panel stores details about the **Operation mode** of the app, and reveals t
  
 ## Connect to Microsoft Entra ID 
 
-This button sends a request on behalf of ERP.net to access resources already available in your **Office365** account. 
+This button sends a request on behalf of ERP.net to access resources already available in your **Microsoft 365** account. 
 
 ![picture](pictures/Service_connect_01_03.png)
 
 This permission not only enables modifications to existing resources but also allows the inclusion of new ones. 
 
-Any changes made to resources in **ERP.net** are mirrored in **Office365**, and vice versa. 
+Any changes made to resources in @@name are mirrored in **Microsoft 365**, and vice versa. 
 
 ![picture](pictures/Service_permission_01_03.png) 
 

@@ -79,22 +79,45 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="assign-worker">Assign worker</h1>
 
-<p>The &quot;Assign worker&quot; UI function allows setting a worker responsible for a task in a &quot;Warehouse Order&quot; document.</p>
+<p>The <strong>Assign worker</strong> UI function allows setting a worker responsible for a task in a warehouse order document.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This function is accessible only for Warehouse Orders in a state lower than Released.
-If the current document is in a state Released, you can change the worker by using the <a href="change-worker.html">Change Worker UI function</a>.</p>
+<p>This function is accessible only for Warehouse Orders in a state <strong>lower</strong> than Released.
+If the current document is Released, you can <strong>change</strong> the worker by using the <strong><a href="change-worker.html">Change Worker UI function</a></strong>.</p>
 </div>
-<h2 id="how-to-use-it">How to use it:</h2>
-<p>Open the relevant warehouse order in a state New, Planned or Firm planned.</p>
-<p><img src="pictures/Assign_worker_1.png" alt="Picture"></p>
-<p>Click on the &quot;RUN“ button and choose &quot;Assign worker.&quot; This action triggers a dropdown list of Warehouse Workers.
-The displayed workers are filtered based on the warehouse selected in the document.</p>
-<p><img src="pictures/Assign_worker_2.png" alt="Picture"></p>
-<p>Select the preferred Warehouse Worker from the dropdown list and confirm your choice by clicking &quot;OK.&quot; This initiates the function.</p>
-<p><img src="pictures/Assign_worker_3.png" alt="Picture"></p>
-<p>After refreshing the document, the Warehouse Worker field will show the selected worker.</p>
-<p><img src="pictures/Assign_worker_4.png" alt="Picture"></p>
+<h2 id="step-by-step-guide">Step-by-step guide</h2>
+<ol>
+<li><p>Open a warehouse order in a state New, Planned or Firm planned.</p>
+<p><img src="pictures/warehouse_worker_empty.png" alt="Picture"></p>
+</li>
+<li><p>Click on the <strong>Run</strong> button and choose <strong>Assign worker</strong>.</p>
+<p><img src="pictures/assign_worker_single.png" alt="Picture"></p>
+</li>
+<li><p>This action triggers a dropdown list of available warehouse workers.</p>
+<p>The displayed workers are filtered based on the <strong>warehouse</strong> selected in the document.</p>
+<p><strong>Select</strong> the preferred worker from the dropdown list and confirm your choice by clicking <strong>OK</strong>. This executes the function.</p>
+<p><img src="pictures/select_single_worker.png" alt="Picture"></p>
+</li>
+<li><p>After refreshing the document, the <strong>Warehouse Worker</strong> field will show the selected worker.</p>
+<p><img src="pictures/single_worker_selected.png" alt="Picture"></p>
+</li>
+</ol>
+<h2 id="assign-multiple-workers">Assign multiple workers</h2>
+<p>Using the <strong><a href="https://docs.erp.net/webclient/introduction/navigator-features.html#panel-menu">Multi select</a></strong> UI feature embedded into panels, you can assign workers to multiple warehouse orders simultaneously.</p>
+<p>This saves time and effort as you don't have to go through each order individually.</p>
+<ol>
+<li><p>Navigate to your <strong>Warehouse Orders</strong> list and choose <strong>Multi select</strong> from the panel's menu.</p>
+<p><img src="pictures/multi_select.png" alt="Picture"></p>
+</li>
+<li><p>Select two or more warehouse orders with or without workers assigned. Make sure they are <strong>all</strong> in a state lower than Released.</p>
+<p>Then, click the <strong>Run</strong> button and execute the <strong>Assign worker</strong> function.</p>
+<p><img src="pictures/assign_multiple.png" alt="Picture"></p>
+</li>
+<li><p>Choose a worker to assign and hit <strong>OK</strong>.</p>
+<p><img src="pictures/select_multiple.png" alt="Picture"></p>
+<p>The selected worker will be immediately assigned to the respective orders.</p>
+</li>
+</ol>
 </article>
           </div>
           
