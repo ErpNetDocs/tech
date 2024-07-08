@@ -47,7 +47,7 @@ Lines are created for **all** counted products and filled with the respective li
 Products that are not counted will **have** lines created for them with quantities set to "0".
 
 > [!NOTE]
-> Products that are counted but are not part of the current store's availability will still have lines created for them, where **AvailableQuantityBase is equal to 0**. 
+> Products that are counted but are not part of the current store's availability will still have lines created for them, where **AvailableQuantityBase will be equal to 0**. 
 
 ### Behavior based on zero counts
 
