@@ -1,4 +1,4 @@
-# Reconcile
+# Quick Reconcile
 
 This section allows you to **update** the available quantities of your inventory or shop's products, and **create** reconciliation documents.
 
@@ -6,7 +6,7 @@ By occasionally counting everything, it may turn out that some products have few
 
 The reverse could also be true: new products may be identified but not entered into the system.
 
-**Inventory Control** allows you to reflect any of these changes within its **Reconcile** section.
+**Inventory Control** allows you to reflect any of these changes within its **Quick Reconcile** section.
 
 ![Reconcile](pictures/reconcile-section.png)
 
