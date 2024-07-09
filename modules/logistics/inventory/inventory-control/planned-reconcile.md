@@ -38,7 +38,7 @@ To perform a reconciliation, you must fill in certain fields: **Default Store**,
 
 There are two options for **Reconciliation Type**: **Full** and **Partial**. 
 
-![picture](pictures/Planned_Reconciliation_Type_09_07.png) 
+![picture](pictures/Planned_Reconciliation_Types_09_07.png) 
 
 To proceed with a **Planned Reconciliation**, you must first select a product group. 
 
