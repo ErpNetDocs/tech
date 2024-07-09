@@ -63,7 +63,7 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
    In this scenario, all quantities of the same product are **summed** in the Lines panel.
 
-   ![pictures](pictures/sum.png)
+   ![pictures](pictures/zero_other.png)
   
 2. **The only** counted quantity for one or more products is zero.
 
