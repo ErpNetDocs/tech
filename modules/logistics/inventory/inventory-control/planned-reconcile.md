@@ -137,7 +137,7 @@ Inside, you can see that its **Counts** panel has reflected all counted instance
 
 Using a handy **function**, you can consolidate product quantities from the **Counts** panel into summarized lines in the **Lines** panel.
 
-This ensures that products counted in the same store and belonging to the same product group are either summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
+This ensures that products counted in the same store and belonging to the same product group are **automatically** summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
 
 ![picture](pictures/lines_panels.png) 
 
