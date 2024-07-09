@@ -53,7 +53,6 @@ Products that are not counted will **have** lines created for them with quantiti
 ![pictures](pictures/full_reconc.png)
 
 > [!NOTE]
-> For Full reconciliation, lines for zero quantities are created **only** for products that are not counted and have **the same** store and product group as the Default Store and Default Product Group of the reconciliation order. <br>
 > Products that are counted but are not part of the current store's availability will still have lines created for them, where **AvailableQuantityBase will be equal to 0**. 
 
 ### Behavior based on zero counts
