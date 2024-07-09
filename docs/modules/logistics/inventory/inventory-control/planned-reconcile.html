@@ -93,20 +93,20 @@
 <p>In contrast, <strong>Quick Reconciliation</strong> is designed for fast, on-the-spot counts or when discrepancies are observed.</p>
 <h2 id="navigation">Navigation</h2>
 <p>To use <strong>Planned Reconciliation</strong>, go to <strong>Logistics -&gt; Inventory Control -&gt; Planned Reconciliation</strong>.</p>
-<p><img src="pictures/Planned_Reconciliation_Nav_08_07.png" alt="picture"></p>
+<p><img src="pictures/Planned_Reconciliation_Navigation_09_07.png" alt="picture"></p>
 <h2 id="planned-reconciliation-usage">Planned Reconciliation usage</h2>
 <p>Here are the steps required to perform a <strong>Planned Reconciliation</strong>.</p>
 <h3 id="create-a-reconciliation-document">Create a Reconciliation document</h3>
-<p>The reconciliation is for store reconciliations (physical counting), useful for real-world inventories and establishing an opening balance.</p>
+<p>The reconciliation is for store reconciliations (physical counting), useful for real-world inventories, and establishing an opening balance.</p>
 <h4 id="navigation-1">Navigation</h4>
 <p>Go to <strong>Logistics -&gt; Inventory -&gt; Reconciliations -&gt; Create Reconciliation</strong>.</p>
-<p><img src="pictures/Planned_Reconciliation_Reconciliation_Nav_08_07.png" alt="picture"></p>
+<p><img src="pictures/Planned_Reconciliation_Navigation_Reconciliations_09_07.png" alt="picture"></p>
 <h4 id="new-reconciliation">New Reconciliation</h4>
-<p>To perform a reconciliation, you need to fill in certain fields: <strong>Default Store</strong>, <strong>Default Product Group</strong>, and <strong>Reconciliation Type</strong>.</p>
-<p><img src="pictures/Planned_Reconciliation_Reconciliation_08_07.png" alt="picture"></p>
+<p>To perform a reconciliation, you must fill in certain fields: <strong>Default Store</strong>, <strong>Default Product Group</strong>, and <strong>Reconciliation Type</strong>.</p>
+<p><img src="pictures/Planned_Reconciliation_Reconciliations_09_07.png" alt="picture"></p>
 <h6 id="reconciliation-type">Reconciliation Type</h6>
-<p>For <strong>Reconciliation Type</strong>, there are two options: <strong>Full</strong> and <strong>Partial</strong>.</p>
-<p><img src="pictures/Planned_Reconciliation_Types_08_07.png" alt="picture"></p>
+<p>There are two options for <strong>Reconciliation Type</strong>: <strong>Full</strong> and <strong>Partial</strong>.</p>
+<p><img src="pictures/Planned_Reconciliation_Types_09_07.png" alt="picture"></p>
 <p>To proceed with a <strong>Planned Reconciliation</strong>, you must first select a product group.</p>
 <p>During the audit of this group, uncounted products will have their quantities set to zero in <strong>Full Reconciliation</strong>, while in <strong>Partial Reconciliation</strong>, their previous quantities will be retained.</p>
 <p>[!]Note:
@@ -126,6 +126,8 @@ If a reconciliation has a product group, it will be named accordingly. If not, i
 <p><img src="pictures/Planned_Reconciliation_Availability_no_group_08_07.png" alt="picture"></p>
 <h3 id="scan-products">Scan Products</h3>
 <p>To scan products, click on them and then click the arrow button.</p>
+<p>[!]Note:
+For more information about how to scan a product, go to our article on the <a href="https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan">subject</a></p>
 <p><img src="pictures/Planned_Reconciliation_Scan_08_07.png" alt="picture"></p>
 <p>The info panel logs all scans, showing the time of each scan.</p>
 <p><img src="pictures/Planned_Reconciliation_Time_08_07.png" alt="picture"></p>
@@ -136,6 +138,14 @@ You can see the scanned products in <strong>Counted</strong>.</p>
 <p><img src="pictures/Planned_Reconciliation_Counted_08_07.png" alt="picture"></p>
 <p>[!]Note:
 The platform retains information about ongoing <strong>Planned Reconciliations</strong> persistently, even if you navigate away from the page or close the platform entirely.</p>
+<h1 id="calculate-reconciliation-based-on-the-counts">Calculate reconciliation based on the counts</h1>
+<p>The &quot;Calculate reconciliation based on the counts&quot; function consolidates product quantities from the Counts panel of a reconciliation order into summarized lines in the Lines panel.</p>
+<p>It ensures that products counted in the same store and product group are either summed up or represented with a zero quantity, depending on the reconciliation type (Partial or Full).</p>
+<p>For more information, you can read our <a href="https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html">article</a> on the subject.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
 
 </article>
 
