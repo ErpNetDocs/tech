@@ -8,7 +8,7 @@ The reverse could also be true: new products may be identified but not entered i
 
 **Inventory Control** allows you to reflect any of these changes within its **Quick Reconcile** section.
 
-![Reconcile](pictures/reconcile-section.png)
+![Reconcile](pictures/quick-reconc.png)
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ Once you're done scanning the product quantities, you can go back to the **Count
 
 The **Available** value will be positioned above the **Counted** one, making it easy to compare past and present values.
 
-![Reconcile](pictures/inv_con_reconcile_finishgreen.png)
+![Reconcile](pictures/finish.png)
 
 If the counted number is greater than or equal to the available number, the **Finish** button will be painted in green.
 
@@ -101,8 +101,6 @@ This will take you to a separate space with direct link to the document type for
 By tapping on it, you'll access the **Inventory** module from where you can release and complete the document.
 
 ![Reconcile](pictures/reconciled_document.png)
-
-
 
 > [!NOTE]
 > The screenshots taken for this article are from v24 of the **Web Client**.
