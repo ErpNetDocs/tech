@@ -12,7 +12,7 @@ In contrast, **Quick Reconciliation** is designed for fast, on-the-spot counts o
 
 To use **Planned Reconciliation**, go to **Logistics -> Inventory Control -> Planned Reconciliation**. 
 
-![picture](pictures/Planned_Reconciliation_Nav_08_07.png)
+![picture](pictures/Planned_Reconciliation_Navigation_09_07.png)
 
 ## Planned Reconciliation usage
 
@@ -26,19 +26,19 @@ The reconciliation is for store reconciliations (physical counting), useful for 
 
 Go to **Logistics -> Inventory -> Reconciliations -> Create Reconciliation**.
 
-![picture](pictures/Planned_Reconciliation_Reconciliation_Nav_08_07.png)
+![picture](pictures/Planned_Reconciliation_Navigation_Reconciliations_09_07.png)
 
 #### New Reconciliation 
 
 To perform a reconciliation, you must fill in certain fields: **Default Store**, **Default Product Group**, and **Reconciliation Type**.
 
-![picture](pictures/Planned_Reconciliation_Reconciliation_08_07.png) 
+![picture](pictures/Planned_Reconciliation_Reconciliation_09_07.png) 
 
 ###### Reconciliation Type
 
 There are two options for **Reconciliation Type**: **Full** and **Partial**. 
 
-![picture](pictures/Planned_Reconciliation_Types_08_07.png) 
+![picture](pictures/Planned_Reconciliation_Type_09_07.png) 
 
 To proceed with a **Planned Reconciliation**, you must first select a product group. 
 
