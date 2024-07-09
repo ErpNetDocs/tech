@@ -6,4 +6,4 @@ This is typically achieved through executing UI functions.
 
 * **[Execute store orders](https://docs.erp.net/tech/modules/logistics/inventory/execute-store-orders-function/index.html)**
 * **[Adjust base cost](https://docs.erp.net/tech/modules/logistics/inventory/adjust-base-cost.html)**
-* **[Calculate reconciliation based on counts]()**
+* **[Calculate reconciliation based on counts](reconciliation-based-counts.md)**
