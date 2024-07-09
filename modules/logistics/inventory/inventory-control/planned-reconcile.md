@@ -2,9 +2,7 @@
 
 This section allows you to count and update product quantities available in a store based on an existing reconciliation order.
 
-**Planned reconcile** is ideal for larger inventories where annual reconciliations or planned audits are performed for individual stores and product groups.
-
-It also makes the process more flexible by offering one of two **reconciliation types**.
+**Planned reconcile** is ideal for larger inventories where annual reconciliations or planned audits are performed for individual stores and product groups. It also makes the process more flexible by offering one of two **reconciliation types**.
 
 In contrast, **[Quick reconcile](quick-reconcile.md)** is designed for fast, on-the-spot reconciliations, even when minor discrepancies are observed. 
 
@@ -18,19 +16,13 @@ You need to have at least one existing reconciliation order to use this module.
 
 ### Create an order
 
-1. Go to **Logistics -> Inventory -> Reconciliations** and select **Create Reconciliation**.
+When creating a reconciliation order, you need to select a **Default Store** for it, and optionally choose a **Default Product Group**.
 
-![picture](pictures/Planned_Reconciliation_Navigation_Reconciliations_09_07.png)
+![picture](pictures/Planned_Reconciliation_Reconciliations_09_07.png)
 
-You need to select a **Default Store** for the document and optionally choose a **Default Product Group**.
+There are two **types** of reconciliation orders: **Full** and **Partial**. 
 
-![picture](pictures/Planned_Reconciliation_Reconciliations_09_07.png) 
-
-### Reconciliation Type
-
-There are two types of reconciliation orders: **Full** and **Partial**. 
-
-Depending on which one you choose, you can determine what happens when reconciliation lines are created. 
+Depending on which one you choose, you can determine what happens with counted and not counted product quantities. 
 
 * **Full** - Products that are not counted are considered missing and will get a quantity of "0" assigned.
   
@@ -39,7 +31,7 @@ Depending on which one you choose, you can determine what happens when reconcili
 ![picture](pictures/Planned_Reconciliation_Types_09_07.png) 
 
 > [!Note]
-> For a reconciliation order to be recognized in **Planned Reconcile**, its state needs to be higher than **Planned** or **Firm planned**.
+> For a reconciliation order to be recognized in **Planned Reconcile**, its state needs to **Planned** or **Firm planned**.
  
 ![picture](pictures/Planned_Reconciliation_Planned_08_07.png) 
 
@@ -47,7 +39,7 @@ Depending on which one you choose, you can determine what happens when reconcili
 
 When you access **Planned Reconcile**, it will load a list of existing reconciliation orders filtered by the following criteria:
 
-* They are of states "Planned" and "Firm planned".
+* Their states are "Planned" or "Firm planned".
   
 * All of them have a **Default Store** equivalent to the one selected for Inventory Control.
   
@@ -58,7 +50,7 @@ Documents not matching these conditions will **not** be visualized.
 ![picture](pictures/Planned_Reconciliation_Inventory_control_view_08_07.png) 
 
 > [!Note] 
-> If a reconciliation order has a **Default Product Group** assigned, it will be named accordingly. If not, its name will be replaced by a dash.
+> If a reconciliation order has a **Default Product Group** assigned, it will be named by it. If not, its name will be replaced by a dash.
 
 ---
 
@@ -86,9 +78,7 @@ Each count operation will have its own line, and the newest one will be position
 
 ### Info
 
-This tab includes details about the products, including additional codes, if present, as well as the total counted quantities up to this moment and the ability to **scrap** them.
-
-If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
+This tab includes details about the products, including additional codes, if present, as well as the total counted quantities up to this moment and the ability to **scrap** them. If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
 
 All registered counts feature the **date and time** when they occured, and can be individually **deleted**.
 
@@ -96,13 +86,15 @@ All registered counts feature the **date and time** when they occured, and can b
 
 ## Scanning
 
-In order to count quantities of products, you need to use the **Scan** field.
+In order to count quantities of products in Planned Reconcile, you need to use the **Scan** field.
 
 It lets you quickly insert the instances of a product you want to **count** either manually or through **[barcode commands](command-list.md)**.
 
 If you're unfamiliar with the process of scanning a product and require assistance, refer to our **[Inventory Control overview](index.md)**.
 
-![picture](pictures/Planned_Reconciliation_Scan_08_07.png) 
+![picture](pictures/Planned_Reconciliation_Scan_08_07.png)
+
+### Common features
 
 Just like in **[Quick Reconcile](quick-reconcile.md)**, you can:
 
@@ -114,6 +106,8 @@ Just like in **[Quick Reconcile](quick-reconcile.md)**, you can:
 
 You can count **zero** quantities of products as many times as needed without changing the total counted quantity up to this moment.
 
+This will result in **new lines** being created.
+
 Only when "0" is the final counted number will the quantity of the product change to zero in the final reconciliation document.
 
 ### No counts
@@ -121,11 +115,11 @@ Only when "0" is the final counted number will the quantity of the product chang
 If you skip counting any quantities of a product, this will be interpreted differently based on the **Reconciliation Type** of the respective order.
 
 > [!Note]
-> If you leave **Planned Reconcile** in the middle of counting, your progress will be saved. This applies even if you begin other operations within **[Inventory Control](index.md)**. 
+> If you leave **Planned Reconcile** in the middle of counting, your progress will be saved. <br> This applies even if you begin other operations within **[Inventory Control](index.md)**. 
 
 ## Parallel counting
 
-One or more workers can **simultaneously** count product quantities for the same reconciliation order.
+Multiple workers can **simultaneously** count product quantities for the same reconciliation order.
 
 Even if you have started the counting process and left it midway, another worker can join in and continue from where you left off.
 
@@ -133,7 +127,7 @@ The latest **Counted** value, therefore, is never lost, and counting is always d
 
 ## Calculate reconciliation based on counts
 
-Once you are done counting product quantities, click **Close** and return to the respective reconciliation order within the **Inventory** module. 
+Once you are done counting product quantities, click **Close** and return to the respective reconciliation order within **Inventory**. 
 
 Inside, you can see that its **Counts** panel has reflected all counted instances of products, revealing further information about each. 
 
@@ -141,9 +135,9 @@ Inside, you can see that its **Counts** panel has reflected all counted instance
 
 Using a handy **function**, you can consolidate product quantities from the **Counts** panel into summarized lines in the **Lines** panel.
 
-This ensures that products counted in the same store and product group are either summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
+This ensures that products counted in the same store and belonging to the same product group are either summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
 
-![picture](pictures/lines_panel.png) 
+![picture](pictures/lines_panels.png) 
 
 For more information, please refer to **[Calculate reconciliation, based on the counts](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html)**.
 
