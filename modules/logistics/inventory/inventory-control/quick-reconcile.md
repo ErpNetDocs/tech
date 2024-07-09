@@ -18,7 +18,7 @@ You don't need an existing order to use this module. All of your store's product
 
 ## Overview
 
-Reconcile is composed of three tabs:
+Quick Reconcile is composed of three tabs:
 
 * **Availability**
 * **Counted**
