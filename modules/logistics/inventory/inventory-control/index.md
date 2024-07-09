@@ -100,15 +100,12 @@ Learn more about Inventory Control in the following articles:
 * **[Settings](settings.md)**
 *	**[Receive](receive.md)**
 *	**[Issue](issue.md)**
-*	**[Reconcile](reconcile.md)**
+*	**[Planned Reconcile](planned-reconcile.md)**
+*	**[Quick Reconcile](quick-reconcile.md)**
 *	**[Transfer](transfer.md)**
 *	**[Scrap](scrap.md)**
 *	**[Command list](command-list.md)**
 
-
-
-
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
-
