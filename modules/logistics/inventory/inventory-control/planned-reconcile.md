@@ -54,7 +54,7 @@ Documents not matching these conditions will **not** be visualized.
 
 ---
 
-Planned Reconcile is composed of three tabs:
+**Planned Reconcile** is composed of three tabs:
 
 * **Availability**
 * **Counted**
