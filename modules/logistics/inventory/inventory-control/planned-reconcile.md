@@ -125,7 +125,11 @@ The latest **Counted** value, therefore, is never lost, and counting is always d
 
 ## Calculate reconciliation based on counts
 
-Once you are done counting product quantities, click **Close** and return to the respective reconciliation order within **Inventory**. 
+Once you are done counting product quantities, click **Close**. This will bring you back to the main Inventory Control application.
+
+![picture](pictures/close.png) 
+
+Navigate to the respective reconciliation order within **Inventory**.
 
 Inside, you can see that its **Counts** panel has reflected all counted instances of products, revealing further information about each. 
 
