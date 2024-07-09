@@ -30,6 +30,8 @@ Once product quantities from the Counts panel are summarized into lines, the fol
 
 * **Store** - the store to which the product belongs.
 
+![pictures](pictures/linedata.png)
+
 ### Behavior based on Reconciliation type
 
 Depending on the **Reconciliation type** of the document, the function behaves in one of two ways:
@@ -39,6 +41,8 @@ Depending on the **Reconciliation type** of the document, the function behaves i
 Lines are created for **all** counted products and filled with the respective lines data.
 
 Products that are not counted **don't have** lines created for them and their current availability will not be changed.
+
+![pictures](pictures/partial_reconc.png)
   
 **Full**
 
@@ -46,7 +50,10 @@ Lines are created for **all** counted products and filled with the respective li
 
 Products that are not counted will **have** lines created for them with quantities set to "0".
 
+![pictures](pictures/full_reconc.png)
+
 > [!NOTE]
+> For Full reconciliation, lines for zero quantities are created **only** for products that are not counted and have **the same** store and product group as the Default Store and Default Product Group of the reconciliation order. <br>
 > Products that are counted but are not part of the current store's availability will still have lines created for them, where **AvailableQuantityBase will be equal to 0**. 
 
 ### Behavior based on zero counts
@@ -55,24 +62,32 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
 1. **There's at least one** counted zero quantity of a product as well as other quantities different from zero.
 
-   In this scenario, all quantities of the same product are **summed** in the Lines panel. 
+   In this scenario, all quantities of the same product are **summed** in the Lines panel.
+
+   ![pictures](pictures/sum.png)
   
 2. **The only** counted quantity for one or more products is zero.
 
    In this scenario, each product that has a zero quantity counted will get a line in the Lines panel with quantity set to **"0"**.
 
+   ![pictures](pictures/zero_only.png)
+
 > [!NOTE]
-> Lines for zero quantities are created **only** for products that are not counted and have **the same** store and product group as the Default Store and Default Product Group of the reconciliation order. <br>
 > If a product is available in a different store or belongs to a different product group, **no line will be created for it**.
 
 ## Execute the function
 
 1. Open a reconciliation order, click on the **Run** button and select **Calculate reconciliation, based on the counts**
 
-   ![pictures](pictures/function.png)
+   ![pictures](pictures/function_exec.png)
 
    You will be asked to confirm the execution of the function. Click **OK**.
 
-   ![pictures](pictures/warnings.png)
+   ![pictures](pictures/function_warning.png)
 
 2. If all conditions are met, new product lines will be created in the **Lines** panel of the reconciliation order.
+
+   ![pictures](pictures/summed_quantities.png)
+
+
+   
