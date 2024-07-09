@@ -78,6 +78,9 @@ To scan products, click on them and then click the arrow button.
 
 ![picture](pictures/Planned_Reconciliation_Scan_08_07.png) 
 
+[!] Note:
+For more information about how to scan a product, please refer to our [article](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan) on the subject.
+
 The info panel logs all scans, showing the time of each scan. 
 
 ![picture](pictures/Planned_Reconciliation_Time_08_07.png) 
@@ -94,3 +97,10 @@ You can see the scanned products in **Counted**.
 [!]Note:
 The platform retains information about ongoing **Planned Reconciliations** persistently, even if you navigate away from the page or close the platform entirely.
 
+# Calculate reconciliation based on the counts
+
+The "Calculate reconciliation based on the counts" function consolidates product quantities from the Counts panel of a reconciliation order into summarized lines in the Lines panel.
+
+It ensures that products counted in the same store and product group are either summed up or represented with a zero quantity, depending on the reconciliation type (Partial or Full).
+
+For more information, you can read our [article](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html) on the subject.
