@@ -78,11 +78,11 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
 1. Open a reconciliation order, click on the **Run** button and select **Calculate reconciliation, based on the counts**
 
-   ![pictures](pictures/function_exec.png)
+   ![pictures](pictures/function_execs.png)
 
    You will be asked to confirm the execution of the function. Click **OK**.
 
-   ![pictures](pictures/function_warning.png)
+   ![pictures](pictures/function_warnings.png)
 
 2. If all conditions are met, new product lines will be created in the **Lines** panel of the reconciliation order.
 
