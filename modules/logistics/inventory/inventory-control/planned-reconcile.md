@@ -110,9 +110,7 @@ This will result in **new lines** being created.
 
 Only when "0" is the final counted number will the quantity of the product change to zero in the final reconciliation document.
 
-### No counts
-
-If you skip counting any quantities of a product, this will be interpreted differently based on the **Reconciliation Type** of the respective order.
+![picture](pictures/zero_count.png) 
 
 > [!Note]
 > If you leave **Planned Reconcile** in the middle of counting, your progress will be saved. <br> This applies even if you begin other operations within **[Inventory Control](index.md)**. 
