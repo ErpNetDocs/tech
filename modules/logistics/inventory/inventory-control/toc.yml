@@ -6,8 +6,10 @@
   href: receive.md
 - name: Issue
   href: issue.md
-- name: Reconcile
-  href: reconcile.md
+- name: Planned Reconcile
+  href: planned-reconcile.md
+- name: Quick Reconcile
+  href: quick-reconcile.md
 - name: Transfer
   href: transfer.md
 - name: Scrap
