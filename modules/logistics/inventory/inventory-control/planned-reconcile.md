@@ -1,12 +1,76 @@
-# Planned Reconciliation 
+# Planned Reconcile
 
-In **ERP.net**, **Planned Reconciliation** optimizes inventory management by allowing users to efficiently organize and filter inventories based on their status (Planned, Firm Planned), store location, and recent dates. 
+This section allows you to count and update the available product quantities of your inventory based on an existing reconciliation order.
 
-This feature enhances visibility and control, providing comprehensive details such as **Default Product Group**, **Document Number**, and **Document Date** directly within the inventory list.
+It optimizes the inventory management process by allowing you to filter products by their product groups and a store. 
 
-**Planned Reconciliation** is ideal for comprehensive, scheduled inventories, such as annual counts or planned audits based on product groups. 
+It further makes the process flexible by offering one of two reconciliation types.
 
-In contrast, **Quick Reconciliation** is designed for fast, on-the-spot counts or when discrepancies are observed. 
+**Planned reconciliation** is ideal for larger inventories where annual counts or planned audits are performed for individual stores and product groups. 
+
+In contrast, **[Quick reconciliation](quick-reconcile.md)** is designed for fast, on-the-spot counts or even when minor discrepancies are observed. 
+
+![pictures](pictures/planned_reconc.png)
+
+### Prerequisites
+
+Make sure you've set the correct document type for this operation within the **[Settings](settings.md)**.
+
+You need to create a reconciliation order in order to use this module.
+
+## Overview
+
+Planned Reconcile is composed of three tabs:
+
+* **Availability**
+* **Counted**
+* **Info**
+
+### Availability
+
+This is where all of your reconciliation order products are listed, together with their current quantities and lots, if present.
+
+### Counted
+
+Here, you can find how many quantities of the products have been **counted** as opposed to being **available** in total.
+
+For example, out of 150pcs, only 131 may be present. This will be reflected in the reconciliation document.
+
+### Info
+
+If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
+
+This includes revealing its part number and additional codes, if present, as well as counted quantities.
+
+If more lots are present, the **available-counted** ratio will be distributed based on the FEFO principle.
+
+## Scanning
+
+In order to count the currently available quantities of your products, you need to use the **Scan** field.
+
+It lets you quickly insert the instances of a product you want to **count** either manually or through **barcode commands**.
+
+For a list of available barcode templates, check out the **[Command list](command-list.md)**.
+
+If you're unfamiliar with the process of scanning a product and require assistance, refer to our **[overview](index.md)**.
+
+### Higher count
+
+The currently available pcs of a product may be **more** than what is set as available in the system.
+
+You can update the number by providing the higher counted value, which will be reflected in the final reconciliation document.
+
+### New count
+
+If a product previously absent from the system is now available, you can **add** it by scanning it.
+
+Its pcs will be reflected immediately, and once a reconciliation document is released, the **Available** bar will be updated with the new quantity.
+
+### Zero count
+
+You can enter a Zero quantity for the products that are missing from the store. 
+
+Each zero count is interpreted as the product or lot having "0 pcs" in the final reconciliation document.
 
 ## Navigation 
 
@@ -76,8 +140,8 @@ If no product group is assigned, the entire storage availability will be shown.
 
 To scan products, click on them and then click the arrow button.
 
-[!]Note:
-For more information about how to scan a product, go to our article on the [subject]( https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan)
+> [!Note]
+> For more information about how to scan a product, go to our article on the [subject]( https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan)
 
 ![picture](pictures/Planned_Reconciliation_Scan_08_07.png) 
 
@@ -89,21 +153,21 @@ You can also delete scans from this log if necessary.
 
 ![picture](pictures/Planned_Reconciliation_Delete_logs_08_07.png) 
 
-[!]Note:
-You can see the scanned products in **Counted**.
+> [!Note]
+> You can see the scanned products in **Counted**.
 
 ![picture](pictures/Planned_Reconciliation_Counted_08_07.png) 
 
-[!]Note:
-The platform retains information about ongoing **Planned Reconciliations** persistently, even if you navigate away from the page or close the platform entirely.
+> [!Note]
+> The platform retains information about ongoing **Planned Reconciliations** persistently, even if you navigate away from the page or close the platform entirely.
 
-# Calculate reconciliation based on the counts
+## Calculate reconciliation based on counts
 
-The "Calculate reconciliation based on the counts" function consolidates product quantities from the Counts panel of a reconciliation order into summarized lines in the Lines panel.
+The Calculate reconciliation based on the counts function consolidates product quantities from the Counts panel of a reconciliation order into summarized lines in the Lines panel.
 
 It ensures that products counted in the same store and product group are either summed up or represented with a zero quantity, depending on the reconciliation type (Partial or Full).
 
-For more information, you can read our [article](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html) on the subject.
+For more information, please refer to this **[article](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html)**.
 
 > [!NOTE]
 > 
