@@ -20,7 +20,7 @@ Here are the steps required to perform a **Planned Reconciliation**.
 
 ### Create a Reconciliation document 
 
-The reconciliation is for store reconciliations (physical counting), useful for real-world inventories and establishing an opening balance.
+The reconciliation is for store reconciliations (physical counting), useful for real-world inventories, and establishing an opening balance.
 
 #### Navigation 
 
@@ -30,13 +30,13 @@ Go to **Logistics -> Inventory -> Reconciliations -> Create Reconciliation**.
 
 #### New Reconciliation 
 
-To perform a reconciliation, you need to fill in certain fields: **Default Store**, **Default Product Group**, and **Reconciliation Type**.
+To perform a reconciliation, you must fill in certain fields: **Default Store**, **Default Product Group**, and **Reconciliation Type**.
 
 ![picture](pictures/Planned_Reconciliation_Reconciliation_08_07.png) 
 
 ###### Reconciliation Type
 
-For **Reconciliation Type**, there are two options: **Full** and **Partial**. 
+There are two options for **Reconciliation Type**: **Full** and **Partial**. 
 
 ![picture](pictures/Planned_Reconciliation_Types_08_07.png) 
 
@@ -76,10 +76,10 @@ If no product group is assigned, the entire storage availability will be shown.
 
 To scan products, click on them and then click the arrow button.
 
-![picture](pictures/Planned_Reconciliation_Scan_08_07.png) 
+[!]Note:
+For more information about how to scan a product, go to our article on the [subject]( https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan)
 
-[!] Note:
-For more information about how to scan a product, please refer to our [article](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html?q=scan) on the subject.
+![picture](pictures/Planned_Reconciliation_Scan_08_07.png) 
 
 The info panel logs all scans, showing the time of each scan. 
 
@@ -104,3 +104,4 @@ The "Calculate reconciliation based on the counts" function consolidates product
 It ensures that products counted in the same store and product group are either summed up or represented with a zero quantity, depending on the reconciliation type (Partial or Full).
 
 For more information, you can read our [article](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html) on the subject.
+
