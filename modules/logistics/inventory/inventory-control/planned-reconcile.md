@@ -105,3 +105,6 @@ It ensures that products counted in the same store and product group are either 
 
 For more information, you can read our [article](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html) on the subject.
 
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
