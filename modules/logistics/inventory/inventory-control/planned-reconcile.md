@@ -32,7 +32,7 @@ Go to **Logistics -> Inventory -> Reconciliations -> Create Reconciliation**.
 
 To perform a reconciliation, you must fill in certain fields: **Default Store**, **Default Product Group**, and **Reconciliation Type**.
 
-![picture](pictures/Planned_Reconciliation_Reconciliation_09_07.png) 
+![picture](pictures/Planned_Reconciliation_Reconciliations_09_07.png) 
 
 ###### Reconciliation Type
 
