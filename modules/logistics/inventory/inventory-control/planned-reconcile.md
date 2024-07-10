@@ -36,8 +36,6 @@ Depending on which one you choose, you can determine what happens with counted a
 ## Overview
 
 When you access **Planned Reconcile**, it will load a list of existing reconciliations filtered by the following criteria:
-
-* Their states are "Planned" or "Firm planned".
   
 * All of them have a **Default Store** equivalent to the one selected for Inventory Control.
   
