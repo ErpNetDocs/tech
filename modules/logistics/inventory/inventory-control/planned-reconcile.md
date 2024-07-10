@@ -154,7 +154,7 @@ Using a **UI function**, you can consolidate individual quantity counts from the
 
 This ensures that products counted in the same store are **automatically** summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
 
-For more information, please refer to **[Calculate reconciliation, based on the counts](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html)**.
+For more information, please refer to **[Calculate reconciliation, based on the counts](../inventory/how-to/reconciliation-based-counts.md)**.
 
 ![picture](pictures/lines_panels.png) 
 
