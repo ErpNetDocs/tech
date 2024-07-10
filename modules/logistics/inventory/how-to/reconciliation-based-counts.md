@@ -13,7 +13,7 @@ For instance:
 > [!WARNING]
 > It is not possible to run the function if: <br>
 > * a **Default Store** and a **Reconciliation Type** are not specified for the document
-> * the document is in a state Released or higher <br>
+> * the document is in a state **Released or higher** <br>
 
 ### Lines data
 
@@ -48,6 +48,10 @@ Products that are not counted **don't have** lines created for them and their cu
 Lines are created for **all** counted products and filled with the respective lines data.
 
 Products that are not counted will **have** lines created for them with quantities set to "0".
+
+If a **Default Product Group** is assigned, uncounted quantities will be set to "0" only for products from that group.
+
+In that case, counted products from different product groups will **not** have lines created for them when the function is run.
 
 ![pictures](pictures/full_reconc.png)
 
