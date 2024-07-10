@@ -9076,10 +9076,100 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/full_reconc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/full_reconc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/how-to/pictures/function.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/how-to/pictures/function.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/function_exec.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/function_exec.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/function_execs.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/function_execs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/function_warning.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/function_warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/function_warnings.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/function_warnings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/linedata.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/linedata.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/partial_reconc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/partial_reconc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/sum.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/sum.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/summed_quantities.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/summed_quantities.png"
         }
       },
       "version": ""
@@ -9100,6 +9190,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/how-to/pictures/warnings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/zero_only.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/zero_only.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/zero_other.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/zero_other.png"
         }
       },
       "version": ""
@@ -9509,10 +9619,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/calc_func.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/calc_func.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/change-documents.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/change-documents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/close.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/close.png"
         }
       },
       "version": ""
@@ -9603,6 +9733,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/counted_reconcile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/counts_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/counts_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/finish.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/finish.png"
         }
       },
       "version": ""
@@ -10369,10 +10519,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/lines_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/lines_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/lines_panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/lines_panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/planned_reconc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/planned_reconc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/print.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/print.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/quick-reconc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/quick-reconc.png"
         }
       },
       "version": ""
@@ -10418,6 +10608,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/zero_count.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/zero_count.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/logistics/inventory/inventory-control/planned-reconcile.md",
       "output": {
@@ -10429,20 +10629,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/inventory-control/receive.md",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/quick-reconcile.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/inventory/inventory-control/receive.html"
+          "relative_path": "modules/logistics/inventory/inventory-control/quick-reconcile.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/inventory-control/reconcile.md",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/receive.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/inventory/inventory-control/reconcile.html"
+          "relative_path": "modules/logistics/inventory/inventory-control/receive.html"
         }
       },
       "version": ""

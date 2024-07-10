@@ -120,14 +120,17 @@
 <li><p><strong>Store</strong> - the store to which the product belongs.</p>
 </li>
 </ul>
+<p><img src="pictures/linedata.png" alt="pictures"></p>
 <h3 id="behavior-based-on-reconciliation-type">Behavior based on Reconciliation type</h3>
 <p>Depending on the <strong>Reconciliation type</strong> of the document, the function behaves in one of two ways:</p>
 <p><strong>Partial</strong></p>
 <p>Lines are created for <strong>all</strong> counted products and filled with the respective lines data.</p>
 <p>Products that are not counted <strong>don't have</strong> lines created for them and their current availability will not be changed.</p>
+<p><img src="pictures/partial_reconc.png" alt="pictures"></p>
 <p><strong>Full</strong></p>
 <p>Lines are created for <strong>all</strong> counted products and filled with the respective lines data.</p>
 <p>Products that are not counted will <strong>have</strong> lines created for them with quantities set to &quot;0&quot;.</p>
+<p><img src="pictures/full_reconc.png" alt="pictures"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Products that are counted but are not part of the current store's availability will still have lines created for them, where <strong>AvailableQuantityBase will be equal to 0</strong>.</p>
@@ -137,24 +140,26 @@
 <ol>
 <li><p><strong>There's at least one</strong> counted zero quantity of a product as well as other quantities different from zero.</p>
 <p>In this scenario, all quantities of the same product are <strong>summed</strong> in the Lines panel.</p>
+<p><img src="pictures/zero_other.png" alt="pictures"></p>
 </li>
 <li><p><strong>The only</strong> counted quantity for one or more products is zero.</p>
 <p>In this scenario, each product that has a zero quantity counted will get a line in the Lines panel with quantity set to <strong>&quot;0&quot;</strong>.</p>
+<p><img src="pictures/zero_only.png" alt="pictures"></p>
 </li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Lines for zero quantities are created <strong>only</strong> for products that are not counted and have <strong>the same</strong> store and product group as the Default Store and Default Product Group of the reconciliation order. <br>
-If a product is available in a different store or belongs to a different product group, <strong>no line will be created for it</strong>.</p>
+<p>If a product is available in a different store or belongs to a different product group, <strong>no line will be created for it</strong>.</p>
 </div>
 <h2 id="execute-the-function">Execute the function</h2>
 <ol>
 <li><p>Open a reconciliation order, click on the <strong>Run</strong> button and select <strong>Calculate reconciliation, based on the counts</strong></p>
-<p><img src="pictures/function.png" alt="pictures"></p>
+<p><img src="pictures/function_execs.png" alt="pictures"></p>
 <p>You will be asked to confirm the execution of the function. Click <strong>OK</strong>.</p>
-<p><img src="pictures/warnings.png" alt="pictures"></p>
+<p><img src="pictures/function_warnings.png" alt="pictures"></p>
 </li>
 <li><p>If all conditions are met, new product lines will be created in the <strong>Lines</strong> panel of the reconciliation order.</p>
+<p><img src="pictures/summed_quantities.png" alt="pictures"></p>
 </li>
 </ol>
 

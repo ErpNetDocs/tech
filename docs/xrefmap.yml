@@ -244,6 +244,9 @@ references:
 - uid: deferred-payments-options
   name: Deferred payments options
   href: modules/crm/sales/sales-concepts/deferred-payments-options.html
+- uid: defining-vat-and-base-for-vat-entries
+  name: Defining VAT and base for VAT Entries
+  href: modules/financials/VAT/defining-vat-and-base-for-vat-entries.html
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
   href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html

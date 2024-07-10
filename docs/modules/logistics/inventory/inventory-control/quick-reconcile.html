@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Quick Reconcile | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Quick Reconcile | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/inventory-control/quick-reconcile.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="quick-reconcile">Quick Reconcile</h1>
+
+<p>This section allows you to <strong>update</strong> the available quantities of your inventory or shop's products, and <strong>create</strong> reconciliation documents.</p>
+<p>By occasionally counting everything, it may turn out that some products have fewer or higher quantities, or are no longer present.</p>
+<p>The reverse could also be true: new products may be identified but not entered into the system.</p>
+<p><strong>Inventory Control</strong> allows you to reflect any of these changes within its <strong>Quick Reconcile</strong> section.</p>
+<p><img src="pictures/quick-reconc.png" alt="Reconcile"></p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Make sure you've set the correct document type for this operation within the <strong><a href="settings.html">Settings</a></strong>.</p>
+<p>You don't need an existing order to use this module. All of your store's product quantities will be listed.</p>
+<h2 id="overview">Overview</h2>
+<p>Quick Reconcile is composed of three tabs:</p>
+<ul>
+<li><strong>Availability</strong></li>
+<li><strong>Counted</strong></li>
+<li><strong>Info</strong></li>
+</ul>
+<h3 id="availability">Availability</h3>
+<p>This is where all of your products are listed, together with their current quantities and lots, if present.</p>
+<p><img src="pictures/availability_reconcile.png" alt="Reconcile"></p>
+<h3 id="counted">Counted</h3>
+<p>Here, you can find how many quantities of the products have been <strong>counted</strong> as opposed to being <strong>available</strong> in total.</p>
+<p>For example, out of 150pcs, only 131 may be present. This will be reflected in the reconciliation document.</p>
+<p><img src="pictures/counted_reconcile.png" alt="Reconcile"></p>
+<h3 id="info">Info</h3>
+<p>If you tap on a product from the <strong>Availability</strong> tab, you'll be shown further information about it here.</p>
+<p>This includes revealing its part number and additional codes, if present, as well as counted quantities.</p>
+<p>If more lots are present, the <strong>available-counted</strong> ratio will be distributed based on the FEFO principle.</p>
+<p><img src="pictures/info_reconcile.png" alt="Reconcile"></p>
+<h2 id="scanning">Scanning</h2>
+<p>In order to update the currently available quantities of your products, you need to use the <strong>Scan</strong> field.</p>
+<p>It lets you quickly insert the instances of a product you want to <strong>count</strong> either manually or through <strong>barcode commands</strong>.</p>
+<p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
+<p>If you're unfamiliar with the process of scanning a product and require assistance, refer to our <strong><a href="index.html">overview</a></strong>.</p>
+<h3 id="higher-count">Higher count</h3>
+<p>The currently available pcs of a product may be <strong>more</strong> than what is set as available in the system.</p>
+<p>You can update the number by providing the higher counted value, which will be reflected in the final reconciliation document.</p>
+<p><img src="pictures/count_higher_reconcile.png" alt="Reconcile"></p>
+<h3 id="new-count">New count</h3>
+<p>If a product previously absent from the system is now available, you can <strong>add</strong> it by scanning it.</p>
+<p>Its pcs will be reflected immediately, and once a reconciliation document is released, the <strong>Available</strong> bar will be updated with the new quantity.</p>
+<p><img src="pictures/inv_con_reconcile_newproduct.png" alt="Reconcile"></p>
+<h3 id="zero-count">Zero count</h3>
+<p>You can enter a Zero quantity for the products that are missing from the store.</p>
+<p>Each zero count is interpreted as the product or lot having &quot;0 pcs&quot; in the final reconciliation document.</p>
+<p><img src="pictures/count_zero_reconcile.png" alt="Reconcile"></p>
+<h2 id="create-a-reconciliation-document">Create a reconciliation document</h2>
+<p>Once you're done scanning the product quantities, you can go back to the <strong>Counted</strong> tab to see if you've made any mistakes.</p>
+<p>The <strong>Available</strong> value will be positioned above the <strong>Counted</strong> one, making it easy to compare past and present values.</p>
+<p><img src="pictures/finish.png" alt="Reconcile"></p>
+<p>If the counted number is greater than or equal to the available number, the <strong>Finish</strong> button will be painted in green.</p>
+<p>Tap on it once to create your reconciliation document.</p>
+<p>This will take you to a separate space with direct link to the document type for this operation.</p>
+<p><img src="pictures/reconcile_document.png" alt="Reconcile"></p>
+<p>By tapping on it, you'll access the <strong>Inventory</strong> module from where you can release and complete the document.</p>
+<p><img src="pictures/reconciled_document.png" alt="Reconcile"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the <strong>Web Client</strong>.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/inventory-control/quick-reconcile.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
