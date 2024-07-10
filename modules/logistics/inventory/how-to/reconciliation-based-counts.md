@@ -76,7 +76,7 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
 ## Execute the function
 
-1. Open a reconciliation order, click on the **Run** button and select **Calculate reconciliation, based on the counts**
+1. Open a reconciliation, click on the **Run** button and select **Calculate reconciliation, based on the counts**
 
    ![pictures](pictures/function_execs.png)
 
@@ -88,5 +88,6 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
    ![pictures](pictures/summed_quantities.png)
 
-
-   
+> [!IMPORTANT]
+> The function can be run as many times as needed in case additional counts need to be added, edited or deleted. <br>
+> Each run will result in the removal of all existing Lines and a new calculation for the counts will be started.
