@@ -1,6 +1,6 @@
 # Calculate reconciliation based on the counts
 
-The **Calculate reconciliation, based on the counts** function takes the rows of product quantities counted in the **Counts** panel of a reconciliation order and summarizes them into lines in the **Lines** panel.
+The **Calculate reconciliation, based on the counts** function takes the rows of product quantities counted in the **Counts** panel of a reconciliation and summarizes them into lines in the **Lines** panel.
 
 For instance: 
 
@@ -84,7 +84,7 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
    ![pictures](pictures/function_warnings.png)
 
-2. If all conditions are met, new product lines will be created in the **Lines** panel of the reconciliation order.
+2. If all conditions are met, new product lines will be created in the **Lines** panel of the reconciliation.
 
    ![pictures](pictures/summed_quantities.png)
 
