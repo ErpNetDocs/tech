@@ -127,9 +127,21 @@ Once you are done counting product quantities, click **Close**. This will bring 
 
 ![picture](pictures/close.png) 
 
-Navigate to the respective reconciliation within **Inventory**.
+Store managers responsible for completing the reconciliation procedure need to navigate to the respective reconciliation within the **Inventory** module.
 
-Inside, you can see that its **Counts** panel has reflected all counted instances of products, revealing further information about each. 
+Inside, the **Counts** panel will have reflected all counted instances of the products, revealing further information about each, such as:
+
+* **Creation Time Utc** 
+  
+* **Creation User**
+  
+* **Product**
+
+* **Quantity**
+
+> [!NOTE]
+> Here, the manager will see all counted quantities from different users. <br>
+> These quantities can be **edited** manually from here, if needed.
 
 ![picture](pictures/counts_panel.png) 
 
