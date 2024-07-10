@@ -106,7 +106,7 @@ You can count **zero** quantities of products as many times as needed without ch
 
 This will result in **new lines** being created.
 
-Only when "0" is the final counted number will the quantity of the product change to zero in the final reconciliation document.
+If the only count is "0", then the quantity of the product will be zero in the final reconciliation document.
 
 ![picture](pictures/zero_count.png) 
 
