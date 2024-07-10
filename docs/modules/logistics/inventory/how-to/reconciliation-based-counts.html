@@ -87,7 +87,7 @@
         <article data-uid="">
 <h1 id="calculate-reconciliation-based-on-the-counts">Calculate reconciliation based on the counts</h1>
 
-<p>The <strong>Calculate reconciliation, based on the counts</strong> function takes the rows of product quantities counted in the <strong>Counts</strong> panel of a reconciliation order and summarizes them into lines in the <strong>Lines</strong> panel.</p>
+<p>The <strong>Calculate reconciliation, based on the counts</strong> function takes the rows of product quantities counted in the <strong>Counts</strong> panel of a reconciliation and summarizes them into lines in the <strong>Lines</strong> panel.</p>
 <p>For instance:</p>
 <ol>
 <li><p>There are six rows of counted quantities of the same product in the <strong>Counts</strong> panel.</p>
@@ -102,8 +102,7 @@
 <p>It is not possible to run the function if: <br></p>
 <ul>
 <li>a <strong>Default Store</strong> and a <strong>Reconciliation Type</strong> are not specified for the document</li>
-<li>the document is in a state <strong>higher than or equal to</strong> Released  <br></li>
-<li>counted products belong to a product group and/or a store <strong>different</strong> from the <strong>Default Product Group</strong> and the <strong>Default Store</strong></li>
+<li>the document is in a state <strong>Released or higher</strong> <br></li>
 </ul>
 </div>
 <h3 id="lines-data">Lines data</h3>
@@ -130,10 +129,12 @@
 <p><strong>Full</strong></p>
 <p>Lines are created for <strong>all</strong> counted products and filled with the respective lines data.</p>
 <p>Products that are not counted will <strong>have</strong> lines created for them with quantities set to &quot;0&quot;.</p>
+<p>If a <strong>Default Product Group</strong> is assigned, uncounted quantities will be set to &quot;0&quot; only for products from that group.</p>
+<p>In that case, counted products from different product groups will <strong>not</strong> have lines created for them when the function is run.</p>
 <p><img src="pictures/full_reconc.png" alt="pictures"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Products that are counted but are not part of the current store's availability will still have lines created for them, where <strong>AvailableQuantityBase will be equal to 0</strong>.</p>
+<p>Products that are counted but are not part of the current store's availability will have lines created for them.</p>
 </div>
 <h3 id="behavior-based-on-zero-counts">Behavior based on zero counts</h3>
 <p>Depending on whether zero quantities are present in the <strong>Counts</strong> panel, the function behaves in one of two ways:</p>
@@ -147,21 +148,22 @@
 <p><img src="pictures/zero_only.png" alt="pictures"></p>
 </li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If a product is available in a different store or belongs to a different product group, <strong>no line will be created for it</strong>.</p>
-</div>
 <h2 id="execute-the-function">Execute the function</h2>
 <ol>
-<li><p>Open a reconciliation order, click on the <strong>Run</strong> button and select <strong>Calculate reconciliation, based on the counts</strong></p>
+<li><p>Open a reconciliation, click on the <strong>Run</strong> button and select <strong>Calculate reconciliation, based on the counts</strong></p>
 <p><img src="pictures/function_execs.png" alt="pictures"></p>
 <p>You will be asked to confirm the execution of the function. Click <strong>OK</strong>.</p>
 <p><img src="pictures/function_warnings.png" alt="pictures"></p>
 </li>
-<li><p>If all conditions are met, new product lines will be created in the <strong>Lines</strong> panel of the reconciliation order.</p>
+<li><p>If all conditions are met, new product lines will be created in the <strong>Lines</strong> panel of the reconciliation.</p>
 <p><img src="pictures/summed_quantities.png" alt="pictures"></p>
 </li>
 </ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The function can be run as many times as needed in case additional counts need to be added, edited or deleted. <br>
+Each run will result in the removal of all existing Lines and a new calculation for the counts will be started.</p>
+</div>
 
 </article>
 
