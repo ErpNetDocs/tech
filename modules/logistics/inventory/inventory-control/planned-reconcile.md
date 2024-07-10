@@ -117,9 +117,9 @@ If the only count is "0", then the quantity of the product will be zero in the f
 
 Multiple workers can **simultaneously** count product quantities for the same reconciliation.
 
-Even if you have started the counting process and left it midway, another worker can join in and continue from where you left off.
+Once another worker logs in, they can start counting their own counts within the same document. 
 
-The latest **Counted** value, therefore, is never lost, and counting is always done in real-time.
+This is **independent** from previously started counts - every user will see only the quantities that they have counted.
 
 ## Calculate reconciliation based on counts
 
