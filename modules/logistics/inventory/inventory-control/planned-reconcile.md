@@ -24,7 +24,7 @@ Depending on which one you choose, you can determine what happens with counted a
 
 * **Full** - Products that are not counted are considered missing and will get a quantity of "0" assigned.
   
-* **Partial** - Products that are not counted are not reconciled and their quantity will remain the same.
+* **Partial** - Products that are not counted are not reconciled and their availability will remain the same.
 
 ![picture](pictures/Planned_Reconciliation_Types_09_07.png) 
 
