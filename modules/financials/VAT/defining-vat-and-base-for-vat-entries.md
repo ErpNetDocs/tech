@@ -1,3 +1,7 @@
+---
+uid: jobs-J30724
+---
+
 # Defining VAT and base for VAT Entries
 
 The current article describes how the numeric values are defined - base and VAT, which are saved in the VAT Entries when this document is created automatically from other documents in @@name. Currently, the documents which create VAT Entries are:
