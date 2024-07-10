@@ -1,5 +1,5 @@
 ---
-uid: jobs-J30724
+uid: defining-vat-and-base-for-vat-entries
 ---
 
 # Defining VAT and base for VAT Entries
