@@ -14,7 +14,6 @@ For instance:
 > It is not possible to run the function if: <br>
 > * a **Default Store** and a **Reconciliation Type** are not specified for the document
 > * the document is in a state Released or higher <br>
-> * counted products belong to a product group and/or a store **different** from the **Default Product Group** and the **Default Store**
 
 ### Lines data
 
