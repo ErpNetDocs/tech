@@ -74,9 +74,6 @@ Depending on whether zero quantities are present in the **Counts** panel, the fu
 
    ![pictures](pictures/zero_only.png)
 
-> [!NOTE]
-> If a product is available in a different store or belongs to a different product group, **no line will be created for it**.
-
 ## Execute the function
 
 1. Open a reconciliation order, click on the **Run** button and select **Calculate reconciliation, based on the counts**
