@@ -121,7 +121,7 @@ Once another worker logs in, they can start counting their own counts within the
 
 This is **independent** from previously started counts - every user will see only the quantities that they have counted.
 
-## Calculate reconciliation based on counts
+## Calculate reconciliation based on the counts
 
 Once you are done counting product quantities, click **Close**. This will bring you back to the main Inventory Control application.
 
@@ -145,13 +145,13 @@ Inside, the **Counts** panel will have reflected all counted instances of the pr
 
 ![picture](pictures/counts_panel.png) 
 
-Using a handy **function**, you can consolidate individual quantity counts from the **Counts** panel into summarized lines in the **Lines** panel.
+Using a **UI function**, you can consolidate individual quantity counts from the **Counts** panel into summarized lines in the **Lines** panel.
 
-This ensures that products counted in the same store and belonging to the same product group are **automatically** summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
-
-![picture](pictures/lines_panels.png) 
+This ensures that products counted in the same store are **automatically** summed up or represented by a zero quantity, depending on the selected reconciliation type (Partial or Full).
 
 For more information, please refer to **[Calculate reconciliation, based on the counts](https://docs.erp.net/tech/modules/logistics/inventory/how-to/reconciliation-based-counts.html)**.
+
+![picture](pictures/lines_panels.png) 
 
 > [!NOTE]
 > 
