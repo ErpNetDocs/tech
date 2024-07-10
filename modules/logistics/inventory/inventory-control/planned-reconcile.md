@@ -39,7 +39,7 @@ When you access **Planned Reconcile**, it will load a list of existing reconcili
   
 * All of them have a **Default Store** equivalent to the one selected for Inventory Control.
   
-* Each document's **Date** is no older than seven days prior to the current day and/or not newer than seven days following the current day. 
+* Each document's **Date** is no older than seven days prior to the current day. 
 
 Documents not matching these conditions will **not** be visualized.
 
