@@ -26,7 +26,7 @@ Depending on which one you choose, you can determine what happens with counted a
   
 * **Partial** - Products that are not counted are not reconciled and their availability will remain the same.
 
-> [!IMPORANT]
+> [!IMPORTANT]
 > If the Reconciliation Type is Full and a Default Product Group is assigned, uncounted quantities will be set to "0" **only** for products from that group.
 
 ![picture](pictures/Planned_Reconciliation_Types_09_07.png) 
