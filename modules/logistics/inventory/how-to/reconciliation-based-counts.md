@@ -56,7 +56,7 @@ In that case, counted products from different product groups will **not** have l
 ![pictures](pictures/full_reconc.png)
 
 > [!NOTE]
-> Products that are counted but are not part of the current store's availability will still have lines created for them, where **AvailableQuantityBase will be equal to 0**. 
+> Products that are counted but are not part of the current store's availability will have lines created for them.
 
 ### Behavior based on zero counts
 
