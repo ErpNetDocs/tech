@@ -76,7 +76,7 @@ Each count operation will have its own line, and the newest one will be position
 
 ### Info
 
-This tab includes details about the products, including additional codes, if present, as well as the total counted quantities up to this moment and the ability to **scrap** them. If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
+This tab includes details about the products, including additional codes, if present, as well as the total counted quantities up to this moment and the ability to **delete** them. If you tap on a product from the **Availability** tab, you'll be shown further information about it here. 
 
 All registered counts feature the **date and time** when they occured, and can be individually **deleted**.
 
