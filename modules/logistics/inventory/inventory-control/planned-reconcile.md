@@ -37,9 +37,11 @@ Depending on which one you choose, you can determine what happens with counted a
 
 When you access **Planned Reconcile**, it will load a list of existing reconciliations filtered by the following criteria:
   
+* Their **Enterprise Company** and **Enterprise Company Location** are the ones the user is currently logged into.
+
 * All of them have a **Default Store** equivalent to the one selected for Inventory Control.
   
-* Each document's **Date** is no older than seven days prior to the current day. 
+* Each document's **Date** is no older than seven days prior to the current day.
 
 Documents not matching these conditions will **not** be visualized.
 
