@@ -67,6 +67,8 @@ This is where all of your store products are listed, together with their current
 
 If the reconciliation has a **Default Product Group** assigned, only products belonging to that group will be shown.
 
+In that case, attempting to scan a product from another product group will result in an **error** being thrown.
+
 ![picture](pictures/Planned_Reconciliation_Availability_08_07.png) 
 
 ### Counted
