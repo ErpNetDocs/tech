@@ -6,7 +6,7 @@ uid: orders-menu
 
 This menu provides information on upcoming warehouse orders.
 
-![Orders](pictures/wms_menu.png)
+![Orders](pictures/wms_newmenu.png)
 
 The order navigator is divided into two categories:
 
