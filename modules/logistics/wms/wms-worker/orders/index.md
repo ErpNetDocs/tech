@@ -45,31 +45,29 @@ Once you open an order, you can see the following details about it:
 -	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
----
-
 ## Section breakdown
 
 The **Orders** screen consists of the following sections:
 
-**Started by me**
+### Started by me
 
 These are all the *Released* warehouse orders which are started by and assigned to the **currently** logged-in user.
 
-**Assigned to me**
+### Assigned to me
 
 Contains orders in states higher than *New* and lower than *Released*. They are assigned to the **currently** logged-in user.
 
-**Unassigned**
+### Unassigned
 
 Orders with states higher than *New* and lower than *Released*. 
 
 They are **not** assigned to a specific worker and can be executed by anyone who takes them.
 
-**Started by others**
+### Started by others
 
 Here, you will find all *Released* orders which are assigned to users **different** from the currently logged-in one.
 
-**Assigned to others**
+### Assigned to others
 
 This section contains orders in states higher than *New* and lower than *Released*.
 
