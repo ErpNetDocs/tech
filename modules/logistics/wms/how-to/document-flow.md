@@ -121,6 +121,7 @@ You can start this generation every time you want to make a **WR** for further e
  - 
  - Destination State - Released;
  
+![SO](pictures/document-flow-store-order.png)
 
 ##### Warehouse Requisition Document Flow settings:
 
@@ -132,7 +133,7 @@ To set up creation of **Warehouse Order** some of the fields in the Route should
  - Allowed Generation Types - Both (Auto and Manually)
  - Destination State - **Firm Planned** - the WO should be created to Firm Planned state because you have to assign a Worker for it. Depending on the Warehouse processes you can Assign Workers one by one or use [Assign Worker for multiple rows UI function](assign-worker.md). You also can leave the Order without Assignment so the Workers can Take the Orders by themselves through the WMS Worker before they start to execute it;
 
-
+![WR](pictures/requisition-df.png)
 
 
 ### "Is Executed" calculated attributes
