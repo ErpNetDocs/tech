@@ -123,13 +123,15 @@ Upon clicking it, the order will be **re-assigned** to you, **released** and **o
 
 ![Orders](pictures/assigned_to_others.png)
 
+---
+
 ### Policies for order section visibility
 
-There are three **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** determining which sections can be seen and which will remain hidden.
+There are three **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** determining which sections can be **seen** and which will remain **hidden**.
 
-They apply for the entire store, not taking into account any provided zones, products, or other filters.
+They apply for the entire **store**, not taking into account any provided zones, products, or other filters.
 
-Here's a brief summary for each:
+Here's a brief summary of each:
 
 1. **Unassigned Orders Section Visibility** - covers the "Unassigned" section
 
@@ -163,11 +165,12 @@ On this screen, you will find three tabs dedicated to line execution:
 
 All lines contain information about the requested product and its quantity.
 
--	**Task** - shows the main task
--	**Loc** - shows the location of the product
--	**Prd** - shows the product itself
--	**Total/Exec** - shows what quantity of the product needs to be procure compared to what quantity has already been executed
-- **Еxec** - a check mark that appears only if the line is fully executed
+-	**No** - shows the line number and its associated task (e.g. Receive)
+-	**Location** - shows the location of the product
+-	**Product** - shows the product itself
+-	**Order/Exec** - shows what quantity of the product needs to be procured compared to what quantity has already been executed
+
+ 	A **check mark** will appear on the right of the Order/Exec counter only if the line is fully executed.
 
 More details about each line, e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the line's respective **info button**. If an execution has already taken place, the **Info** screen will include details about it as well.
 
@@ -182,6 +185,8 @@ When scanning a value in this field, a matching unexecuted line is searched thro
 > [!NOTE]
 > The scanned value recognition is done by **[Barcode Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html)** such as Product Code and GS1 - Single Product. <br>
 > The list of currently active parsers can be seen by accessing the vertical three-dot **Menu button** at the bottom of the app.
+
+## Order line actions
 
 At the bottom of the screen, there are buttons for managing the order:
 
