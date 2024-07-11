@@ -144,6 +144,7 @@ In this case, you have to complete the Warehouse Order with the quantities you h
 When you already have the missing quantities and you want to execute them from the same <strong>SO</strong>, you can manually start <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a> generaton.<br>
 This generation will create a new <strong>WR</strong> for the differences between the ordered quantities in the <strong>SO</strong> and the executed quantities from the Completed fulfillments.
 You can start this generation every time you want to make a <strong>WR</strong> for further execution.</p>
+<p>Once you Create the new Warehouse Requisition the executing process continues with the same logic as the straight WR executing.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.</p>
@@ -157,29 +158,40 @@ You can start this generation every time you want to make a <strong>WR</strong> 
 <li>set True to &quot;Create Fulfillments On Completion&quot; field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO.</li>
 </ul>
 <h5 id="store-order-document-flow-settings">Store Order Document Flow settings:</h5>
-<p>(1) To set up creation of Warehouse Requisiton some of the fields in the Route should be set as:</p>
+<p>(1) To set up creation of <strong>Warehouse Requisiton</strong> some of the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
 <li>Condition States Bit Mask - Released;</li>
 <li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0205.html">LOG0205</a></li>
-<li>Destination State - Released;</li>
 <li>Allowed Generation Types - Both (Auto and Manually)</li>
+<li>Destination State - Released;</li>
 </ul>
-<p>(2) To set up creation of Store Transaction the fields in the Route should be set as:</p>
+<p>(2) To set up creation of <strong>Store Transaction</strong> the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
 <li>Condition States Bit Mask - Released,Completed - the completed state is used when you don't want to do any further executions;</li>
-<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0207.html">LOG0207</a>;</li>
 <li>Allowed Generation Types - Both (Auto and Manually)</li>
+<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0207.html">LOG0207</a>;</li>
 </ul>
-<p>(3) To set up creation of Warehouse Requisiton for Further Execution some of the fields in the Route should be set as:</p>
+<p>(3) To set up creation of <strong>Warehouse Requisiton for Further Execution</strong> some of the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
 <li>Condition States Bit Mask - Released;</li>
 <li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a>;</li>
-<li>Destination State - Released;</li>
 <li>Allowed Generation Types - <strong>Manually</strong></li>
+<li>Destination State - Released;</li>
 </ul>
+<p><img src="pictures/store-order-df.png" alt="SO"></p>
+<h5 id="warehouse-requisition-document-flow-settings">Warehouse Requisition Document Flow settings:</h5>
+<p>To set up creation of <strong>Warehouse Order</strong> some of the fields in the Route should be set as:</p>
+<ul>
+<li>Process Event - Change of state;</li>
+<li>Condition States Bit Mask - Released;</li>
+<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0501.html">LOG0501</a>;</li>
+<li>Allowed Generation Types - Both (Auto and Manually)</li>
+<li>Destination State - <strong>Firm Planned</strong> - the WO should be created to Firm Planned state because you have to assign a Worker for it. Depending on the Warehouse processes you can Assign Workers one by one or use <a href="assign-worker.html">Assign Worker for multiple rows UI function</a>. You also can leave the Order without Assignment so the Workers can Take the Orders by themselves through the WMS Worker before they start to execute it;</li>
+</ul>
+<p><img src="pictures/requisition-df.png" alt="WR"></p>
 <h3 id="is-executed-calculated-attributes">&quot;Is Executed&quot; calculated attributes</h3>
 <p>The information whether the <strong>WR or a SO</strong> is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:</p>
 <ul>
