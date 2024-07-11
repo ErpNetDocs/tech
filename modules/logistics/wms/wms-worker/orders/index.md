@@ -34,6 +34,8 @@ It allows you to execute the following actions:
 
 Once an order is opened, you can see the following details about it:
 
+![Order details](pictures/details.png)
+
 - **Enterprise Company** - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash
 -	**Assigned To** - the employee who has to execute the order
 -	**Document Date** - the date of the order
@@ -43,7 +45,7 @@ Once an order is opened, you can see the following details about it:
 -	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
- 	![Order details](pictures/details.png)
+---
 
 ### Section breakdown
 
@@ -72,6 +74,8 @@ Here, you will find all *Released* orders which are assigned to users **differen
 This section contains orders in states higher than *New* and lower than *Released*.
 
 They are assigned to users **different** from the currently logged-in one.
+
+---
 
 ### Action buttons
 
