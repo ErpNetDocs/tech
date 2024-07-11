@@ -77,7 +77,9 @@ If the organization uses the **one-stage control**, the executed **SOs** are com
 In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
 In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
 When you already have the missing quantities you want to execute them from the same Store Order, you can manually start [LOG0209](xref:LOG0209).
-You have to set up this Generation in the Document flow by using only Manually 
+You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
+
+This generation will create a new Warehouse Requisition for the differecenes between the ordered quantities in the Store Order and actually executed quantities from the Completed in the Documents fullfiments table.
 
 
 ### "Is Executed" calculated attributes
