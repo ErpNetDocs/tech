@@ -79,7 +79,7 @@ In this case, you have to complete the Warehouse Order with the quantities you h
 When you already have the missing quantities you want to execute them from the same Store Order, you can manually start [LOG0209](xref:LOG0209).
 You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
-This generation will create a new Warehouse Requisition for the differecenes between the ordered quantities in the Store Order and actually executed quantities from the Completed in the Documents fullfiments table.
+This generation will create a new Warehouse Requisition for the differences between the ordered quantities in the Store Order and executed quantities from the Completed fulfillments. You can start this generation every time you want to make a requisition for further execution.
 
 
 ### "Is Executed" calculated attributes
