@@ -88,14 +88,35 @@ You can start this generation every time you want to make a **WR** for further e
 ### Recommended settings for the Document flow and Document Types
 
 ##### Document Types: 
-- create different Document types for Receipt and Issue Store Order
-- create different Document types for Straight and Further Warehouse Requisitions, again separated by movement type
-- create different Document types for Straight and Further Warehouse Orders, again separated by movement type
+- create different Document types for Receipt and Issue Store Order, which are used only for WMS; 
+- create different Document types for Straight and Further Warehouse Requisitions, separated by movement type;
+- create different Document types for Straight and Further Warehouse Orders, separated by movement type;
 - set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO. 
 
-##### Document Flow:
+##### Store Order Document Flow settings:
 
-(1) 
+(1) To set up creation of Warehouse Requisiton some of the fields in the Route should be set as:
+
+ - Process Event - Change of state;
+ - Condition States Bit Mask - Released;
+ - Procedure Name - [LOG0205](xref:LOG0205)
+ - Destination State - Released;
+ - Allowed Generation Types - Both (Auto and Manually)
+
+(2) To set up creation of Store Transaction the fields in the Route should be set as:
+
+ - Process Event - Change of state;
+ - Condition States Bit Mask - Released,Completed - the completed state is used when you don't want to do any further executions;
+ - Procedure Name - [LOG0207](xref:LOG0207);
+ - Allowed Generation Types - Both (Auto and Manually)
+
+(3) To set up creation of Warehouse Requisiton for Further Execution some of the fields in the Route should be set as:
+
+ - Process Event - Change of state;
+ - Condition States Bit Mask - Released;
+ - Procedure Name - [LOG0209](xref:LOG0209);
+ - Destination State - Released;
+ - Allowed Generation Types - **Manually**
 
 
 
