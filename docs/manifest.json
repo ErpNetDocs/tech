@@ -13993,10 +13993,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_mes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_mes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_others.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_others.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_otherss.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/assigned_to_otherss.png"
         }
       },
       "version": ""
@@ -14403,10 +14423,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_mes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_mes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_others.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_others.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_otherss.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/started_by_otherss.png"
         }
       },
       "version": ""
@@ -14437,6 +14477,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/unassigned.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/unassigneds.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/unassigneds.png"
         }
       },
       "version": ""
