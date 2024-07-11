@@ -74,13 +74,15 @@ If the organization uses the **one-stage control**, the executed **SOs** are com
 
 ### Generation for further execution (manual generation only)
 
-In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
-In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
-When you already have the missing quantities you want to execute them from the same Store Order, you can manually start [LOG0209](xref:LOG0209).
-You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
+In Warehouses is not always possible to execute all of the ordered quantities. 
+For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all. <br>
+In this case, you have to complete the Warehouse Order with the quantities you have at the moment.<br><br>
+When you already have the missing quantities and you want to execute them from the same **SO**, you can manually start [LOG0209](xref:LOG0209) generaton.<br>
+This generation will create a new **WR** for the differences between the ordered quantities in the **SO** and the executed quantities from the Completed fulfillments. 
+You can start this generation every time you want to make a **WR** for further execution.
 
-This generation will create a new Warehouse Requisition for the differences between the ordered quantities in the Store Order and executed quantities from the Completed fulfillments. You can start this generation every time you want to make a requisition for further execution.
-
+> [!Note]
+> You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
 ### "Is Executed" calculated attributes
 
