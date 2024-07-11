@@ -47,7 +47,7 @@ Once you open an order, you can see the following details about it:
 
 ---
 
-### Section breakdown
+## Section breakdown
 
 The **Orders** screen consists of the following sections:
 
