@@ -85,7 +85,7 @@ You can start this generation every time you want to make a **WR** for further e
 > You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
 
-### Recommended settings for the Document flow 
+### Recommended settings for the Document flow and Document Types
 
 
 
