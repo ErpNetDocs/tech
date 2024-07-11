@@ -30,6 +30,21 @@ It allows you to execute the following actions:
 
   ![Orders](pictures/refresh_orders.png)
 
+### Order details
+
+Once an order is opened, you can see the following details about it:
+
+- **Enterprise Company** - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash
+-	**Assigned To** - the employee who has to execute the order
+-	**Document Date** - the date of the order
+-	**Creation Time** - the time and date of creation of the order
+-	**Status** - the status of the order
+-	**Lines Count** - the rows number in the order table
+-	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
+-	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
+
+ 	![Order details](pictures/details.png)
+
 ### Section breakdown
 
 The **Orders** screen consists of the following sections:
@@ -103,21 +118,6 @@ Accessing an order from here reveals general information about it, as well as a 
 Upon clicking it, the order will be **re-assigned** to you, **released** and **opened**.
 
 ![Orders](pictures/assigned_to_others.png)
-
-### Order details
-
-Once an order is opened, you can see the following details about it:
-
-- **Enterprise Company** - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash
--	**Assigned To** - the employee who has to execute the order
--	**Document Date** - the date of the order
--	**Creation Time** - the time and date of creation of the order
--	**Status** - the status of the order
--	**Lines Count** - the rows number in the order table
--	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
--	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
-
-  ![Order details](pictures/details.png)
 
 ## Order lines
 
