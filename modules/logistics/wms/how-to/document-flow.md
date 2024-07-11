@@ -87,12 +87,18 @@ You can start this generation every time you want to make a **WR** for further e
 
 ### Recommended settings for the Document flow and Document Types
 
-(1) Document Types: 
+##### Document Types: 
 - create different Document types for Receipt and Issue Store Order
 - create different Document types for Straight and Further Warehouse Requisitions, again separated by movement type
 - create different Document types for Straight and Further Warehouse Orders, again separated by movement type
-- set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to fulfillments  
- 
+- set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO. 
+
+##### Document Flow:
+
+(1) 
+
+
+
 
 
 
