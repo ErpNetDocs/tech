@@ -81,6 +81,8 @@ When you already have the missing quantities and you want to execute them from t
 This generation will create a new **WR** for the differences between the ordered quantities in the **SO** and the executed quantities from the Completed fulfillments. 
 You can start this generation every time you want to make a **WR** for further execution.
 
+Once you Create the new Warehouse Requisition the executing process continues with the same logic as the straight WR executing.
+
 > [!Note]
 > You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
