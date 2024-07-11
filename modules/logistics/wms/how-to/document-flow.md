@@ -76,6 +76,8 @@ If the organization uses the **one-stage control**, the executed **SOs** are com
 
 In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
 In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
+When you already have the missing quantities you want to execute them by the same Store Order, you can manually start 
+
 
 ### "Is Executed" calculated attributes
 
