@@ -136,20 +136,20 @@ Here's a brief summary of each:
 1. **Unassigned Orders Section Visibility** - covers the "Unassigned" section
 
    - If set to **True**, the section will be visible for all workers defined for the respective store
-   - If set to **False**, it will be hidden
-   - If a policy is **not specified**, it will be revealed by default.
+   - If set to **False**, it will be hidden from them
+   - If a policy is **not specified**, the section will be revealed by default.
 
 2. **Started by Others Section Visibility** - covers the "Started by others" section
    
    - If set to **True**, the section will be visible for all workers defined for the respective store
-   - If set to **False**, it will be hidden
-   - If a policy is **not specified**, it will be revealed by default.
+   - If set to **False**, it will be hidden from them
+   - If a policy is **not specified**, the section will be revealed by default.
 
 3. **Assigned to Others Section Visibility** - covers the "Assigned to others" section
 
    - If set to **True**, the section will be visible for all workers defined for the respective store
-   - If set to **False**, it will be hidden
-   - If a policy is **not specified**, it will be revealed by default.
+   - If set to **False**, it will be hidden from them
+   - If a policy is **not specified**, the section will be revealed by default.
      
 ## Order lines
 
