@@ -76,9 +76,8 @@ If the organization uses the **one-stage control**, the executed **SOs** are com
 
 In Warehouses, it is not always possible to execute all ordered quantities.<br>
 For instance, there might be insufficient availability of certain products preventing you from Dispatching the entire order. In these cases, you might want to Dispatch what you have now and Dispatch the rest when it becomes available. The same applies if the supplier has sent a less quantity than requested.<br><br> 
-In such scenarios, you should complete the Warehouse Order with the currently available quantities.
-When the missing quantities become available you can execute the rest from the same **SO** using the LOG0209 generation procedure.<br>
-This process will create a new **(WR)** for the differences between the ordered quantities in the **SO** and the quantities already fulfilled. <br>
+In such scenarios, you should complete the Warehouse Order with the currently available quantities and when the missing quantities become available you can execute the rest from the same **SO** using the LOG0209 generation procedure.<br>
+This action will create a new **(WR)** for the differences between the ordered quantities in the **SO** and the quantities already fulfilled. <br>
 You can initiate this generation whenever a WR is needed for further execution.
 
 Once you Create the new **WR**, the execution process continues following the same logic as the standard WR execution.
