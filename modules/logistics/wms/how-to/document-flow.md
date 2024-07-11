@@ -103,7 +103,6 @@ You can start this generation every time you want to make a **WR** for further e
  - Allowed Generation Types - Both (Auto and Manually)
  - Destination State - Released;
 
-
 (2) To set up creation of **Store Transaction** the fields in the Route should be set as:
 
  - Process Event - Change of state;
@@ -111,14 +110,12 @@ You can start this generation every time you want to make a **WR** for further e
  - Allowed Generation Types - Both (Auto and Manually)
  - Procedure Name - [LOG0207](xref:LOG0207);
  
-
 (3) To set up creation of **Warehouse Requisiton for Further Execution** some of the fields in the Route should be set as:
 
  - Process Event - Change of state;
  - Condition States Bit Mask - Released;
  - Procedure Name - [LOG0209](xref:LOG0209);
  - Allowed Generation Types - **Manually**
- - 
  - Destination State - Released;
  
 ![SO](pictures/store-order-df.png)
@@ -134,7 +131,6 @@ To set up creation of **Warehouse Order** some of the fields in the Route should
  - Destination State - **Firm Planned** - the WO should be created to Firm Planned state because you have to assign a Worker for it. Depending on the Warehouse processes you can Assign Workers one by one or use [Assign Worker for multiple rows UI function](assign-worker.md). You also can leave the Order without Assignment so the Workers can Take the Orders by themselves through the WMS Worker before they start to execute it;
 
 ![WR](pictures/requisition-df.png)
-
 
 ### "Is Executed" calculated attributes
 
