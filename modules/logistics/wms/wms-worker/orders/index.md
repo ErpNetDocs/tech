@@ -87,7 +87,7 @@ Accessing an order from here reveals general information about it, as well as a 
 
 Upon clicking it, you'll **open** the order and will be able to continue with its processing.
 
-![Orders](pictures/started_by_me.png)
+![Orders](pictures/started_by_mes.png)
 
 **Assigned to me**
 
@@ -95,7 +95,7 @@ Accessing an order from here reveals general information about it, as well as a 
 
 Upon clicking it, the order will be **released** and **opened**.
 
-![Orders](pictures/assigned_to_me.png)
+![Orders](pictures/assigned_to_mes.png)
 
 **Unassigned**
 
@@ -103,7 +103,7 @@ Accessing an order from here reveals general information about it, as well as a 
 
 Upon clicking it, the order will be **assigned** to you, **released** and **opened**.
 
-![Orders](pictures/unassigned.png)
+![Orders](pictures/unassigneds.png)
 
 **Started by others**
 
@@ -111,7 +111,7 @@ Accessing an order from here reveals general information about it, as well as a 
 
 Upon clicking it, you'll **open** the order.
 
-![Orders](pictures/started_by_others.png)
+![Orders](pictures/started_by_otherss.png)
 
 **Assigned to others**
 
@@ -119,7 +119,7 @@ Accessing an order from here reveals general information about it, as well as a 
 
 Upon clicking it, the order will be **re-assigned** to you, **released** and **opened**.
 
-![Orders](pictures/assigned_to_others.png)
+![Orders](pictures/assigned_to_otherss.png)
 
 ---
 
