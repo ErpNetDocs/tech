@@ -121,7 +121,7 @@ You can start this generation every time you want to make a **WR** for further e
  - 
  - Destination State - Released;
  
-![SO](pictures/document-flow-store-order.png)
+![SO](pictures/store-order-df.png)
 
 ##### Warehouse Requisition Document Flow settings:
 
