@@ -138,13 +138,13 @@ When a <strong>WO line</strong> is executed, the system generates 2 real-time re
 <strong>Store Orders navigator</strong>.</p>
 <p>If the organization uses the <strong>one-stage control</strong>, the executed <strong>SOs</strong> are completed along with their child <strong>WR's</strong> the bulk function &quot;Change state of selected documents =&gt; Complete with subdocuments&quot; in the same navigator.</p>
 <h3 id="generation-for-further-execution-manual-generation-only">Generation for further execution (manual generation only)</h3>
-<p>In Warehouses is not always possible to execute all of the ordered quantities.
-For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all. <br>
-In this case, you have to complete the Warehouse Order with the quantities you have at the moment.<br><br>
-When you already have the missing quantities and you want to execute them from the same <strong>SO</strong>, you can manually start <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a> generaton.<br>
-This generation will create a new <strong>WR</strong> for the differences between the ordered quantities in the <strong>SO</strong> and the executed quantities from the Completed fulfillments.
-You can start this generation every time you want to make a <strong>WR</strong> for further execution.</p>
-<p>Once you Create the new Warehouse Requisition the executing process continues with the same logic as the straight WR executing.</p>
+<p>In Warehouses, it is not always possible to execute all ordered quantities.<br>
+For instance, there might be insufficient availability of certain products to Dispatch the entire order, or the supplier may have sent a smaller quantity than requested, preventing you from Receiving the full order.<br>
+In such scenarios, you must complete the Warehouse Order with the quantities currently available. <br><br>
+When the missing quantities become available and you need to execute them from the same <strong>SO</strong>, you can manually initiate the LOG0209 generation.<br>
+This process will create a new <strong>(WR)</strong> for the differences between the ordered quantities in the <strong>SO</strong> and the quantities already fulfilled. <br>
+You can initiate this generation whenever a WR is needed for further execution.</p>
+<p>Once you Create the new <strong>WR</strong>, the execution process continues following the same logic as the standard WR execution.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.</p>
