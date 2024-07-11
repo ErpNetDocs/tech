@@ -90,8 +90,8 @@ Once you Create the new **WR**, the execution process continues following the sa
 
 #### Document Types: 
 - create different Document types for Receipt and Issue Store Order, which are used only for WMS; 
-- create different Document types for standart and Further Warehouse Requisitions, separated by movement type;
-- create different Document types for standart and Further Warehouse Orders, separated by movement type;
+- create different Document types for standard and Further Warehouse Requisitions, separated by movement type;
+- create different Document types for standard and Further Warehouse Orders, separated by movement type;
 - set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO. 
 
 #### Store Order Document Flow settings:
