@@ -18,13 +18,13 @@ Here is the scheme of the document and execution flow. The flow can be divided i
 ### Generation and execution phase
 This phase starts with the release of the Store Order.
 
-**(1) The Store Order (SO)** generates a **Warehouse Requisition (WR)** using the [LOG0205](https://docs.erp.net/model/generations/LOG0205.html) generation procedure. 
+**(1) The Store Order (SO)** generates a **Warehouse Requisition (WR)** using the [LOG0205](xref:LOG0205) generation procedure. 
 
 The Warehouse Requisition is the document that informs the WMS Module what is requested by the other modules/processes. Usually, the Warehouse Requisition is almost an exact copy of the Store Order. 
 
 The document fulfillment between the SO and WR is calculated using the [Fulfillment table method](/advanced/document-flow/fulfillment.md#fulfillment-table). The generation procedure creates **Planned Document Fulfillments (DF)**, which records how much of the ordered quantity of the **SO lines** has been fulfilled by **WR lines**.
 
-**(2) The WR** generates a **Warehouse Order (WO)** using the [LOG0501](https://docs.erp.net/model/generations/LOG0501.html) or [LOG0502](https://docs.erp.net/model/generations/LOG0502.html) generation procedure, depending on whether the organization uses @composite-products or not.
+**(2) The WR** generates a **Warehouse Order (WO)** using the [LOG0501](xref:LOG0501) or [LOG0502](xref:LOG0502) generation procedure, depending on whether the organization uses @composite-products or not.
 
 The Warehouse Order is the document that contains the actual plan that needs to be executed by the WMS module. The generation of its lines is the place where all plan optimizations, algorithms, and AI should happen. 
 
@@ -63,7 +63,7 @@ If the organization **uses two-stage control** the warehouse dispatcher or manag
 
 If the organization uses the **one-stage control**, the **WR** is completed in step (5).
 
-**(6) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](https://docs.erp.net/model/generations/LOG0207.html) generation procedure. The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the **parent SO's** completed fulfillments.
+**(6) Once the SO's state is changed to Completed** it generates a **Store Transaction (ST)** using the [LOG0207](xref:LOG0207) generation procedure. The **ST lines** creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the **parent SO's** completed fulfillments.
 
 The **SO** is usually completed by the warehouse dispatcher or manager. He can track which **SOs** are fully executed by the WMS module using the **Store Orders navigator** that contains a "Is Executed* calculated attribute that has been set up in advance.  The calculate attribute expressions are added at the end of this topic.
 
