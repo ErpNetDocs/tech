@@ -89,13 +89,13 @@ Once you Create the new Warehouse Requisition the executing process continues wi
 
 ### Recommended settings for the Document flow and Document Types
 
-##### Document Types: 
+#### Document Types: 
 - create different Document types for Receipt and Issue Store Order, which are used only for WMS; 
 - create different Document types for Straight and Further Warehouse Requisitions, separated by movement type;
 - create different Document types for Straight and Further Warehouse Orders, separated by movement type;
 - set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO. 
 
-##### Store Order Document Flow settings:
+#### Store Order Document Flow settings:
 
 (1) To set up creation of **Warehouse Requisiton** some of the fields in the Route should be set as:
 
@@ -122,7 +122,7 @@ Once you Create the new Warehouse Requisition the executing process continues wi
  
 ![SO](pictures/store-order-df.png)
 
-##### Warehouse Requisition Document Flow settings:
+#### Warehouse Requisition Document Flow settings:
 
 To set up creation of **Warehouse Order** some of the fields in the Route should be set as:
 
