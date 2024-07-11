@@ -137,6 +137,10 @@ When a <strong>WO line</strong> is executed, the system generates 2 real-time re
 <p>If the organization <strong>uses two-stage control</strong>, the executed <strong>SOs</strong> are completed using the bulk function &quot;Change state of selected documents =&gt; Completed&quot; in the
 <strong>Store Orders navigator</strong>.</p>
 <p>If the organization uses the <strong>one-stage control</strong>, the executed <strong>SOs</strong> are completed along with their child <strong>WR's</strong> the bulk function &quot;Change state of selected documents =&gt; Complete with subdocuments&quot; in the same navigator.</p>
+<h3 id="generation-for-further-execution-manual-generation-only">Generation for further execution (manual generation only)</h3>
+<p>In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
+In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
+When you already have the missing quantities you want to execute them by the same Store Order, you can manually start <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a></p>
 <h3 id="is-executed-calculated-attributes">&quot;Is Executed&quot; calculated attributes</h3>
 <p>The information whether the <strong>WR or a SO</strong> is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:</p>
 <ul>
