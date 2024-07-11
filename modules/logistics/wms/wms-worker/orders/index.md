@@ -6,7 +6,7 @@ uid: orders-menu
 
 This menu provides information on upcoming warehouse orders.
 
-![Orders](pictures/assigned_unassigned.png)
+![Orders](pictures/wms_menu.png)
 
 The order navigator is divided into two categories:
 
@@ -39,7 +39,7 @@ Click **Start** to open the order.
 
 Once an order is started, a summary of its lines will show up:
 
-![Open order](pictures/order_lines_new.png)
+![Open order](pictures/lines_data_wms.png)
 
 On this screen, you will find three tabs dedicated to line execution:
 
@@ -57,13 +57,13 @@ All lines contain information about the requested product and its quantity.
 
 More details about each line, e.g. the full name of the product, the ordered lot, variant, serial number, etc. can be accessed via the line's respective **info button**. If an execution has already taken place, the **Info** screen will include details about it as well.
 
-![Info button](pictures/info_order.png)
+![Info button](pictures/info_wms.png)
 
 At the top of the screen, there is a general **Scan field**. 
 
 When scanning a value in this field, a matching unexecuted line is searched through the lines list. If such a line is found, its **[execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)** is started automatically. 
 
-![Scan field](pictures/scan_field.png)
+![Scan field](pictures/scan_wms.png)
 
 > [!NOTE]
 > The scanned value recognition is done by **[Barcode Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html)** such as Product Code and GS1 - Single Product. <br>
@@ -75,4 +75,4 @@ At the bottom of the screen, there are buttons for managing the order:
 - **Execute** - allows for **[line execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)**; will change to **Complete Order** when all lines have been executed
 - **Menu** - allows access to several additional functions like **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)** 
 
-![Order actions](pictures/menu_actions.png)
+![Order actions](pictures/menu_wms.png)
