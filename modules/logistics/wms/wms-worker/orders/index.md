@@ -16,23 +16,27 @@ The Orders navigator consists of the following sections:
 
 **Started by me**
 
-These are all the *Released* warehouse orders which are started by and assigned to the currently logged-in user.
+These are all the *Released* warehouse orders which are started by and assigned to the **currently** logged-in user.
 
 **Assigned to me**
 
-Contains orders in states higher than *New* and lower than *Released*. They are assigned* to the currently logged-in user.
+Contains orders in states higher than *New* and lower than *Released*. They are assigned to the **currently** logged-in user.
 
 **Unassigned**
 
-Orders with states higher than *New* and lower than *Released*. They are **not** assigned to a specific worker and can be executed by anyone who takes them.
+Orders with states higher than *New* and lower than *Released*. 
+
+They are **not** assigned to a specific worker and can be executed by anyone who takes them.
 
 **Started by others**
 
-Here, you will find all *Released* orders which are assigned to users different from the currently logged-in one.
+Here, you will find all *Released* orders which are assigned to users **different** from the currently logged-in one.
 
 **Assigned to others**
 
-This final section contains orders in states higher than *New* and lower than *Released*, and assigned to users different from the currently logged-in one.
+This section contains orders in states higher than *New* and lower than *Released*.
+
+They are assigned to users **different** from the currently logged-in one.
 
 ### Action buttons
 
