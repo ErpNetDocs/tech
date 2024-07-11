@@ -95,38 +95,42 @@ You can start this generation every time you want to make a **WR** for further e
 
 ##### Store Order Document Flow settings:
 
-(1) To set up creation of Warehouse Requisiton some of the fields in the Route should be set as:
+(1) To set up creation of **Warehouse Requisiton** some of the fields in the Route should be set as:
 
  - Process Event - Change of state;
  - Condition States Bit Mask - Released;
  - Procedure Name - [LOG0205](xref:LOG0205)
- - Destination State - Released;
  - Allowed Generation Types - Both (Auto and Manually)
+ - Destination State - Released;
 
-(2) To set up creation of Store Transaction the fields in the Route should be set as:
+
+(2) To set up creation of **Store Transaction** the fields in the Route should be set as:
 
  - Process Event - Change of state;
  - Condition States Bit Mask - Released,Completed - the completed state is used when you don't want to do any further executions;
- - Procedure Name - [LOG0207](xref:LOG0207);
  - Allowed Generation Types - Both (Auto and Manually)
+ - Procedure Name - [LOG0207](xref:LOG0207);
+ 
 
-(3) To set up creation of Warehouse Requisiton for Further Execution some of the fields in the Route should be set as:
+(3) To set up creation of **Warehouse Requisiton for Further Execution** some of the fields in the Route should be set as:
 
  - Process Event - Change of state;
  - Condition States Bit Mask - Released;
  - Procedure Name - [LOG0209](xref:LOG0209);
- - Destination State - Released;
  - Allowed Generation Types - **Manually**
+ - 
+ - Destination State - Released;
+ 
 
 ##### Warehouse Requisition Document Flow settings:
+
+To set up creation of **Warehouse Order** some of the fields in the Route should be set as:
 
  - Process Event - Change of state;
  - Condition States Bit Mask - Released;
  - Procedure Name - [LOG0501](xref:LOG0501);
  - Allowed Generation Types - Both (Auto and Manually)
  - Destination State - **Firm Planned** - the WO should be created to Firm Planned state because you have to assign a Worker for it. Depending on the Warehouse processes you can Assign Workers one by one or use [Assign Worker for multiple rows UI function](assign-worker.md). You also can leave the Order without Assignment so the Workers can Take the Orders by themselves through the WMS Worker before they start to execute it;
-
-
 
 
 
