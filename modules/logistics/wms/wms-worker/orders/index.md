@@ -8,7 +8,17 @@ This screen gives access to all upcoming warehouse orders that are available for
 
 They are distributed into **five sections** and sorted in an **ascending** order in each.
 
-![Orders](pictures/wms_newmenu.png)
+![Orders](pictures/main_menu.png)
+
+### Search and totals
+
+Above the sections, there is a **search bar** that can be used to filter the existing orders. 
+
+You can search by scanning or entering an order number, a party name (if any), or a document type.
+
+For reference, the **Total** number of orders can be checked at the bottom-left corner of the page.
+
+![Orders](pictures/search_totals_wms.png)
 
 ### Section breakdown
 
@@ -88,6 +98,7 @@ Upon clicking it, the order will be **re-assigned** to you, **released** and **o
 
 Once an order is opened, you can see the following details about it:
 
+- **Enterprise Company** - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash
 -	**Assigned To** - the employee who has to execute the order
 -	**Document Date** - the date of the order
 -	**Creation Time** - the time and date of creation of the order
@@ -96,15 +107,7 @@ Once an order is opened, you can see the following details about it:
 -	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
-![Order details](pictures/wms-worker-total-base-qty.png)
-
-### Other features
-
-Above the sections, there is a **search bar** that can be used to filter orders. 
-
-You can search by scanning or entering an order number, a party name (if any), or a document type.
-
-The **Total** number of orders can be checked at the bottom-left corner of the page.
+![Order details](pictures/details.png)
 
 ## Order lines
 
