@@ -84,6 +84,11 @@ You can start this generation every time you want to make a **WR** for further e
 > [!Note]
 > You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
+
+### Recommended settings for the Document flow 
+
+
+
 ### "Is Executed" calculated attributes
 
 The information whether the **WR or a SO** is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:
