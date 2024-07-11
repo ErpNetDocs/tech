@@ -50,3 +50,7 @@ After filtering, 3 valid **routes** remain, each with a different **Document Typ
 
 1. Access **Inventory Control > Warehouse / Receive**.
 2. Open **StoreOrder for Inventory Control - 00001**.
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
