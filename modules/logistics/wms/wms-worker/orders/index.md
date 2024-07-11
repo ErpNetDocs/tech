@@ -123,6 +123,32 @@ Upon clicking it, the order will be **re-assigned** to you, **released** and **o
 
 ![Orders](pictures/assigned_to_others.png)
 
+### Policies for order section visibility
+
+There are three **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** determining which sections can be seen and which will remain hidden.
+
+They apply for the entire store, not taking into account any provided zones, products, or other filters.
+
+Here's a brief summary for each:
+
+1. **Unassigned Orders Section Visibility** - covers the "Unassigned" section
+
+   - If set to **True**, the section will be visible for all workers defined for the respective store
+   - If set to **False**, it will be hidden
+   - If a policy is **not specified**, it will be revealed by default.
+
+2. **Started by Others Section Visibility** - covers the "Started by others" section
+   
+   - If set to **True**, the section will be visible for all workers defined for the respective store
+   - If set to **False**, it will be hidden
+   - If a policy is **not specified**, it will be revealed by default.
+
+3. **Assigned to Others Section Visibility** - covers the "Assigned to others" section
+
+   - If set to **True**, the section will be visible for all workers defined for the respective store
+   - If set to **False**, it will be hidden
+   - If a policy is **not specified**, it will be revealed by default.
+     
 ## Order lines
 
 Once an order is taken, started, continued or joined, a summary of its lines will show up:
@@ -163,7 +189,7 @@ At the bottom of the screen, there are buttons for managing the order:
 - **Execute** - allows for **[line execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)**; will change to **Complete Order** when all lines have been executed
 - **Menu** - allows access to several additional functions like:
   
-  - **Refresh**, which will instantly refresh the contents of the order.
+  - **Refresh**, which will instantly refresh the contents of the order
     
   - **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)**
     
