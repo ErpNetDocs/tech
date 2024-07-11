@@ -91,7 +91,7 @@ You can start this generation every time you want to make a **WR** for further e
 - create different Document types for Receipt and Issue Store Order
 - create different Document types for Straight and Further Warehouse Requisitions, again separated by movement type
 - create different Document types for Straight and Further Warehouse Orders, again separated by movement type
-- set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is 
+- set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to fulfillments  
  
 
 
