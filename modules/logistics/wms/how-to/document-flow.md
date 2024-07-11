@@ -72,6 +72,10 @@ If the organization **uses two-stage control**, the executed **SOs** are complet
 
 If the organization uses the **one-stage control**, the executed **SOs** are completed along with their child **WR's** the bulk function "Change state of selected documents => Complete with subdocuments" in the same navigator.
 
+### Generation for further execution (manual generation only)
+
+In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
+In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
 
 ### "Is Executed" calculated attributes
 
