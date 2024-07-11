@@ -20,9 +20,19 @@ For reference, the **Total** number of orders can be checked at the bottom-left 
 
 ![Orders](pictures/search_totals_wms.png)
 
+### Context menu
+
+The **Orders** screen features a Context menu, accessible through the three-dot button at the bottom.
+
+It allows you to execute the following actions:
+
+* **Refresh** - When triggered, it will instantly refresh the contents of the page, taking into account orders previously not added and dismissing the ones that have been voided.
+
+  ![Orders](pictures/refresh_orders.png)
+
 ### Section breakdown
 
-The Orders navigator consists of the following sections:
+The **Orders** screen consists of the following sections:
 
 **Started by me**
 
@@ -107,7 +117,7 @@ Once an order is opened, you can see the following details about it:
 -	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
-![Order details](pictures/details.png)
+  ![Order details](pictures/details.png)
 
 ## Order lines
 
