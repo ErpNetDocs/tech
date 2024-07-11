@@ -161,6 +161,9 @@ At the bottom of the screen, there are buttons for managing the order:
 
 - **Stop** - terminates the order 
 - **Execute** - allows for **[line execution](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/lines-execution.html)**; will change to **Complete Order** when all lines have been executed
-- **Menu** - allows access to several additional functions like **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)**, **Active Parsers**, and **Refresh**, which will instantly refresh the contents of the order.
+- **Menu** - allows access to several additional functions like:
+  - **[Suggest Routing](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/picking-routes.html?q=suggest%20routing)**,
+  - **[Active Parsers](https://docs.erp.net/tech/modules/logistics/wms/how-it-works/barcode-parsers/index.html?q=active%20parsers)**
+  - **Refresh**, which will instantly refresh the contents of the order.
 
   ![Order actions](pictures/menu_wms.png)
