@@ -32,7 +32,7 @@ It allows you to execute the following actions:
 
 ### Order details
 
-Once an order is opened, you can see the following details about it:
+Once you open an order, you can see the following details about it:
 
 ![Order details](pictures/details.png)
 
@@ -127,7 +127,7 @@ Upon clicking it, the order will be **re-assigned** to you, **released** and **o
 
 ### Policies for order section visibility
 
-There are three **[policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** determining which sections can be **seen** and which will remain **hidden**.
+There are three **[warehouse policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** determining which sections can be **seen** and which will remain **hidden**.
 
 They apply for the entire **store**, not taking into account any provided zones, products, or other filters.
 
@@ -150,6 +150,9 @@ Here's a brief summary of each:
    - If set to **True**, the section will be visible for all workers defined for the respective store
    - If set to **False**, it will be hidden from them
    - If a policy is **not specified**, the section will be revealed by default.
+
+> [!NOTE]
+> For more information about these policies, please refer to **[Warehouse policies](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)**.
      
 ## Order lines
 
