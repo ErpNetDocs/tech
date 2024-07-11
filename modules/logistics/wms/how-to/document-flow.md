@@ -74,18 +74,17 @@ If the organization uses the **one-stage control**, the executed **SOs** are com
 
 ### Generation for further execution (manual generation only)
 
-In Warehouses is not always possible to execute all of the ordered quantities. 
-For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all. <br>
-In this case, you have to complete the Warehouse Order with the quantities you have at the moment.<br><br>
-When you already have the missing quantities and you want to execute them from the same **SO**, you can manually start [LOG0209](xref:LOG0209) generaton.<br>
-This generation will create a new **WR** for the differences between the ordered quantities in the **SO** and the executed quantities from the Completed fulfillments. 
-You can start this generation every time you want to make a **WR** for further execution.
+In Warehouses, it is not always possible to execute all ordered quantities.<br>
+For instance, there might be insufficient availability of certain products to Dispatch the entire order, or the supplier may have sent a smaller quantity than requested, preventing you from Receiving the full order.<br> 
+In such scenarios, you must complete the Warehouse Order with the quantities currently available. <br><br>
+When the missing quantities become available and you need to execute them from the same **SO**, you can manually initiate the LOG0209 generation.<br>
+This process will create a new **(WR)** for the differences between the ordered quantities in the **SO** and the quantities already fulfilled. <br>
+You can initiate this generation whenever a WR is needed for further execution.
 
-Once you Create the new Warehouse Requisition the executing process continues with the same logic as the straight WR executing.
+Once you Create the new **WR**, the execution process continues following the same logic as the standard WR execution.
 
 > [!Note]
 > You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
-
 
 ### Recommended settings for the Document flow and Document Types
 
