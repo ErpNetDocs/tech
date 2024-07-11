@@ -103,10 +103,10 @@
 <p><img src="pictures/flow_detailed.png" alt="Flow"></p>
 <h3 id="generation-and-execution-phase">Generation and execution phase</h3>
 <p>This phase starts with the release of the Store Order.</p>
-<p><strong>(1) The Store Order (SO)</strong> generates a <strong>Warehouse Requisition (WR)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0205.html">LOG0205</a> generation procedure.</p>
+<p><strong>(1) The Store Order (SO)</strong> generates a <strong>Warehouse Requisition (WR)</strong> using the <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0205.html">LOG0205</a> generation procedure.</p>
 <p>The Warehouse Requisition is the document that informs the WMS Module what is requested by the other modules/processes. Usually, the Warehouse Requisition is almost an exact copy of the Store Order.</p>
 <p>The document fulfillment between the SO and WR is calculated using the <a href="/advanced/document-flow/fulfillment.md#fulfillment-table">Fulfillment table method</a>. The generation procedure creates <strong>Planned Document Fulfillments (DF)</strong>, which records how much of the ordered quantity of the <strong>SO lines</strong> has been fulfilled by <strong>WR lines</strong>.</p>
-<p><strong>(2) The WR</strong> generates a <strong>Warehouse Order (WO)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0501.html">LOG0501</a> or <a href="https://docs.erp.net/model/generations/LOG0502.html">LOG0502</a> generation procedure, depending on whether the organization uses <a class="xref" href="../composite-products/index.html">Composite Products</a> or not.</p>
+<p><strong>(2) The WR</strong> generates a <strong>Warehouse Order (WO)</strong> using the <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0501.html">LOG0501</a> or <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0502.html">LOG0502</a> generation procedure, depending on whether the organization uses <a class="xref" href="../composite-products/index.html">Composite Products</a> or not.</p>
 <p>The Warehouse Order is the document that contains the actual plan that needs to be executed by the WMS module. The generation of its lines is the place where all plan optimizations, algorithms, and AI should happen.</p>
 <p>The document fulfillment between the <strong>WR and WO</strong> is also calculated using the <a href="/advanced/document-flow/fulfillment.md#fulfillment-table">Fulfillment table method</a>. The generation procedure creates <strong>Planned DF</strong>, which records how much of the quantity of the <strong>WR lines</strong> has been fulfilled by <strong>WO lines</strong>.</p>
 <p><strong>(3) The released WO</strong> loads in the Orders menu of <strong><a class="xref" href="../wms-worker/index.html">WMS Worker</a></strong>, where it is executed by the warehouse workers using the handheld devices.
@@ -132,15 +132,54 @@ When a <strong>WO line</strong> is executed, the system generates 2 real-time re
 </ul>
 <p>If the organization <strong>uses two-stage control</strong> the warehouse dispatcher or manager can track which <strong>WRs</strong> are fully executed using the <strong>Warehouse Requisition navigator</strong> that contains a &quot;Is Executed* calculated attribute that has been set up in advance. The calculated attribute expressions are added at the end of this topic. Then, the executed documents can be completed using the bulk function &quot;Change state of selected documents =&gt; Completed&quot; in the same navigator.</p>
 <p>If the organization uses the <strong>one-stage control</strong>, the <strong>WR</strong> is completed in step (5).</p>
-<p><strong>(6) Once the SO's state is changed to Completed</strong> it generates a <strong>Store Transaction (ST)</strong> using the <a href="https://docs.erp.net/model/generations/LOG0207.html">LOG0207</a> generation procedure. The <strong>ST lines</strong> creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the <strong>parent SO's</strong> completed fulfillments.</p>
+<p><strong>(6) Once the SO's state is changed to Completed</strong> it generates a <strong>Store Transaction (ST)</strong> using the <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0207.html">LOG0207</a> generation procedure. The <strong>ST lines</strong> creation is based on the fulfillment information (quantity, product, lot, variant) of the WMS module, which is contained by the <strong>parent SO's</strong> completed fulfillments.</p>
 <p>The <strong>SO</strong> is usually completed by the warehouse dispatcher or manager. He can track which <strong>SOs</strong> are fully executed by the WMS module using the <strong>Store Orders navigator</strong> that contains a &quot;Is Executed* calculated attribute that has been set up in advance.  The calculate attribute expressions are added at the end of this topic.</p>
 <p>If the organization <strong>uses two-stage control</strong>, the executed <strong>SOs</strong> are completed using the bulk function &quot;Change state of selected documents =&gt; Completed&quot; in the
 <strong>Store Orders navigator</strong>.</p>
 <p>If the organization uses the <strong>one-stage control</strong>, the executed <strong>SOs</strong> are completed along with their child <strong>WR's</strong> the bulk function &quot;Change state of selected documents =&gt; Complete with subdocuments&quot; in the same navigator.</p>
 <h3 id="generation-for-further-execution-manual-generation-only">Generation for further execution (manual generation only)</h3>
-<p>In Warehouses is not always possible to execute all of the ordered quantities. For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all.
-In this case, you have to complete the Warehouse Order with the quantities you have at the moment.
-When you already have the missing quantities you want to execute them by the same Store Order, you can manually start <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a></p>
+<p>In Warehouses is not always possible to execute all of the ordered quantities.
+For example, there is no availability of some products to Dispatch all of them or the supplier sent less quantity from the order and you can't Receive it all. <br>
+In this case, you have to complete the Warehouse Order with the quantities you have at the moment.<br><br>
+When you already have the missing quantities and you want to execute them from the same <strong>SO</strong>, you can manually start <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a> generaton.<br>
+This generation will create a new <strong>WR</strong> for the differences between the ordered quantities in the <strong>SO</strong> and the executed quantities from the Completed fulfillments.
+You can start this generation every time you want to make a <strong>WR</strong> for further execution.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.</p>
+</div>
+<h3 id="recommended-settings-for-the-document-flow-and-document-types">Recommended settings for the Document flow and Document Types</h3>
+<h5 id="document-types">Document Types:</h5>
+<ul>
+<li>create different Document types for Receipt and Issue Store Order, which are used only for WMS;</li>
+<li>create different Document types for Straight and Further Warehouse Requisitions, separated by movement type;</li>
+<li>create different Document types for Straight and Further Warehouse Orders, separated by movement type;</li>
+<li>set True to &quot;Create Fulfillments On Completion&quot; field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO.</li>
+</ul>
+<h5 id="store-order-document-flow-settings">Store Order Document Flow settings:</h5>
+<p>(1) To set up creation of Warehouse Requisiton some of the fields in the Route should be set as:</p>
+<ul>
+<li>Process Event - Change of state;</li>
+<li>Condition States Bit Mask - Released;</li>
+<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0205.html">LOG0205</a></li>
+<li>Destination State - Released;</li>
+<li>Allowed Generation Types - Both (Auto and Manually)</li>
+</ul>
+<p>(2) To set up creation of Store Transaction the fields in the Route should be set as:</p>
+<ul>
+<li>Process Event - Change of state;</li>
+<li>Condition States Bit Mask - Released,Completed - the completed state is used when you don't want to do any further executions;</li>
+<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0207.html">LOG0207</a>;</li>
+<li>Allowed Generation Types - Both (Auto and Manually)</li>
+</ul>
+<p>(3) To set up creation of Warehouse Requisiton for Further Execution some of the fields in the Route should be set as:</p>
+<ul>
+<li>Process Event - Change of state;</li>
+<li>Condition States Bit Mask - Released;</li>
+<li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0209.html">LOG0209</a>;</li>
+<li>Destination State - Released;</li>
+<li>Allowed Generation Types - <strong>Manually</strong></li>
+</ul>
 <h3 id="is-executed-calculated-attributes">&quot;Is Executed&quot; calculated attributes</h3>
 <p>The information whether the <strong>WR or a SO</strong> is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:</p>
 <ul>
