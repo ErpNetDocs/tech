@@ -317,8 +317,8 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   When the key has value "1" the warning message will be displayed and then data will be loaded.
 - b.The user sets it manually
 
-## 59. AI/Assistant/CountTokens
-- a.Action: When this key has a value of '1', it determines whether an AI assistant should count the tokens and return the count to the end user.
+## 59. AI/Assistant/DebugMode
+- a.Action: When this key has a value of '1', it determines whether an AI assistant will operate in debug mode.
 - b.The user sets it manually
 - c.The key is introduced in version: - 24.1
 
