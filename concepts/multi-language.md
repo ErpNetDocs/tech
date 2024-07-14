@@ -28,30 +28,12 @@ Depending on the client application, translation can sometimes be **automated**.
 
 Some applications support using an online service like Google Translate to automatically translate a string to other languages. Translation is better suited to **Description** and **Notes** attributes.
 
-## Transliteration
+## Transliteration of names and addresses from Cyrillic
 
-Transliteration is the process of **translating** one language version of a string to another, based on the sounding of the string. It works great for people and company names and addresses. It allows branch offices to work in their local language, and reports can still be shown in corporate language.
+Transliteration is the process of converting text from one language script to another, based on the phonetic sounds of the original text.
+This is particularly useful for names of people, companies, and addresses, allowing local branch offices in Cyrillic-using countries to operate in their native language while maintaining consistency in corporate reports.
 
-For example, the Russian "Иван" would be transliterated in English as "Ivan".
+For example, "Елена" (in Cyrillic) would be transliterated as "Elena" (in Latin) and vice versa.
 
-Transliteration works in **two** ways: manual and automatic.
-
-### Manual transliteration
-
-This transliteration is actually automatic, but initiated manually while editing the different language versions of a multi-language string. The client application usually provides a function button which transliterates the current language version to other languages.
-
-### Automatic transliteration
-
-Automatic transliteration occurs when the system needs to display multi-language strings in a **different** language, but the translation isn't saved in the database.
-
-For example, an employee working in a branch office in Russia enters "Иван" as a first name. 
-
-The database saves **only** the Russian version. 
-
-Another employee at a British location requests to see the name of the same person. 
-
-The system would **automatically** transliterate the string and display it as "Ivan".
-
-> [!NOTE]
-> 
-> Transliteration works normally from Latin to Cyrillic.
+When users enter data, they enter it using their current language setting.
+If the user does not enter the latin translation, the system automatically generates one, based on transliteration.
