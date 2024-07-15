@@ -37,11 +37,11 @@ Once you open an order, you can see the following details about it:
 ![Order details](pictures/details.png)
 
 - **Order Display Format** - the same Display format from the orders list
--	**Assigned To** - the employee who has to execute the order
+-	**Assigned To** - the Worker to which the order is assigned
 -	**Document Date** - the date of the order
 -	**Creation Time** - the time and date of creation of the order
 -	**Status** - the status of the order
--	**Lines Count** - the rows number in the order table
+-	**Lines Count** - the number of the order's lines
 -	**Total Qty** - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit
 -	**Total Base Qty** - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).
 
