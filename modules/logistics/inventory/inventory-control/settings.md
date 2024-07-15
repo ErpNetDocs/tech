@@ -13,7 +13,7 @@ It's crucial to link the right type to its respective action **before** beginnin
 ![Settings](pictures/inv_con_set.png)
 
 > [!IMPORTANT]
-> For the Receive and Issue functions, under certain conditions, the **Document Type** specified in the **[Document Routes](../how-to/document-type-routes.md)** of the respective order will also be taken into account when a transaction is created.
+> For the Receive and Issue functions, under certain conditions, the **Document Type** specified in the **[Document Routes](../how-to/document-type-routes.md)** of the respective order will also be taken into account when the final transaction is created.
 
 ### Navigation
 
