@@ -28,7 +28,7 @@ This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue]
 
    - **No** valid result is returned from the Document Routes but a Document Type **is** specified in the Inventory Control Settings for the receive or issue function.
 
-     => A store order of the respective type will be created based on what is provided in the Settings.
+     => A store order of the respective type will be created based on what is provided in the **Settings**.
 
    - **Only one** valid result is returned from the Document Routes (or **multiple** valid results all pointing to **the same** Document Type)
 
