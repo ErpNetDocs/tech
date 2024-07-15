@@ -14,7 +14,7 @@ They are distributed into **five sections** and sorted in an **ascending** order
 
 Above the sections, there is a **search bar** that can be used to filter the existing orders. 
 
-You can search by scanning or entering an order number, a party name (if any), or any information set up by [Order display format](~/how-to/other-settings/change-order-display-format.md)
+You can search by scanning or entering an order number, a party name (if any), or any information set up by [Order display format](../how-to/other-settings/change-order-display-format.md)
 
 For reference, the **Total** number of orders can be checked at the bottom-left corner of the page.
 
