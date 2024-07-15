@@ -36,7 +36,7 @@ Once you open an order, you can see the following details about it:
 
 ![Order details](pictures/details.png)
 
-- **Enterprise Company** - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash
+- **Order Display Format** - the same Display format from the orders list
 -	**Assigned To** - the employee who has to execute the order
 -	**Document Date** - the date of the order
 -	**Creation Time** - the time and date of creation of the order
