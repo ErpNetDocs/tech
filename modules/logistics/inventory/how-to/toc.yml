@@ -7,4 +7,5 @@
   href: adjust-base-cost.md
 - name: Calculate reconciliation based on counts
   href: reconciliation-based-counts.md
-  
+- name: Use the Document Type from Routings to create a new document
+  href: document-type-routings.md
