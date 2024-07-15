@@ -1,8 +1,8 @@
 # Use the Document Type from Routes to create a new document
 
-If certain conditions are met, it is possible to create new documents through **[Inventory Control](./inventory-control/index.md)** by taking in mind both the Document Type specified in the **[Settings](./inventory-control/settings.md)** as well as the Document Type defined in the **Document Routes** for the respective order.
+If certain conditions are met, it is possible to create new documents through **[Inventory Control](../inventory-control/index.md)** by taking in mind both the Document Type specified in the **[Settings](../inventory-control/settings.md)** as well as the Document Type defined in the **Document Routes** for the respective order.
 
-This applies to the **[Receive](./inventory-control/receive.md)** and **[Issue](./inventory-control/issue.md)** operations, providing more flexibility when defining the final documents they can generate.
+This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue](../inventory-control/issue.md)** operations, providing more flexibility when defining the final documents they can generate.
 
 ## Step-by-step process
 
