@@ -92,7 +92,7 @@
 <p><img src="pictures/main_menu.png" alt="Orders"></p>
 <h3 id="search-and-totals">Search and totals</h3>
 <p>Above the sections, there is a <strong>search bar</strong> that can be used to filter the existing orders.</p>
-<p>You can search by scanning or entering an order number, a party name (if any), or a document type.</p>
+<p>You can search by scanning or entering an order number, a party name (if any), or any information set up by <a href="/modules/logistics/wms/how-to/other-settings/change-order-display-format.md">Order display format</a></p>
 <p>For reference, the <strong>Total</strong> number of orders can be checked at the bottom-left corner of the page.</p>
 <p><img src="pictures/search_totals_wms.png" alt="Orders"></p>
 <h3 id="context-menu">Context menu</h3>
@@ -107,29 +107,27 @@
 <p>Once you open an order, you can see the following details about it:</p>
 <p><img src="pictures/details.png" alt="Order details"></p>
 <ul>
-<li><strong>Enterprise Company</strong> - name of the associated enterprise company, positioned at the top; if not present, it will be replaced by a dash</li>
-<li><strong>Assigned To</strong> - the employee who has to execute the order</li>
+<li><strong>Order Display Format</strong> - the same Display format from the orders list</li>
+<li><strong>Assigned To</strong> - the Worker to which the order is assigned</li>
 <li><strong>Document Date</strong> - the date of the order</li>
 <li><strong>Creation Time</strong> - the time and date of creation of the order</li>
 <li><strong>Status</strong> - the status of the order</li>
-<li><strong>Lines Count</strong> - the rows number in the order table</li>
+<li><strong>Lines Count</strong> - the number of the order's lines</li>
 <li><strong>Total Qty</strong> - the sum of product quantities; if there are lines in different measurement units, there will be separate totals for each unit</li>
 <li><strong>Total Base Qty</strong> - the overall quantity of individual products, grouped according to the respective measurement unit (e.g. 8 sets total qty equals 96 pcs base qty).</li>
 </ul>
 <h2 id="section-breakdown">Section breakdown</h2>
 <p>The <strong>Orders</strong> screen consists of the following sections:</p>
 <h4 id="started-by-me">Started by me</h4>
-<p>These are all the <em>Released</em> warehouse orders which are started by and assigned to the <strong>currently</strong> logged-in user.</p>
+<p>These are all the <em>Released</em> warehouse orders which are assigned to the <strong>currently</strong> logged-in user.</p>
 <h4 id="assigned-to-me">Assigned to me</h4>
-<p>Contains orders in states higher than <em>New</em> and lower than <em>Released</em>. They are assigned to the <strong>currently</strong> logged-in user.</p>
+<p>Contains Planned and Firm Planned orders which are assigned to the <strong>currently</strong> logged-in user.</p>
 <h4 id="unassigned">Unassigned</h4>
-<p>Orders with states higher than <em>New</em> and lower than <em>Released</em>.</p>
-<p>They are <strong>not</strong> assigned to a specific worker and can be executed by anyone who takes them.</p>
+<p>Contains Planned and Firm Planned orders which are <strong>not</strong> assigned to a specific worker and can be executed by anyone who takes them.</p>
 <h4 id="started-by-others">Started by others</h4>
 <p>Here, you will find all <em>Released</em> orders which are assigned to users <strong>different</strong> from the currently logged-in one.</p>
 <h4 id="assigned-to-others">Assigned to others</h4>
-<p>This section contains orders in states higher than <em>New</em> and lower than <em>Released</em>.</p>
-<p>They are assigned to users <strong>different</strong> from the currently logged-in one.</p>
+<p>Contains Planned and Firm Planned orders which are assigned to users <strong>different</strong> from the currently logged-in one.</p>
 <hr>
 <h3 id="action-buttons">Action buttons</h3>
 <p>When accessing an order, different <strong>buttons</strong> will be visualized based on the section you access the order from.</p>

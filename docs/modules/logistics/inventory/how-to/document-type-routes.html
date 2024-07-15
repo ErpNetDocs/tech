@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Use the Document Type from Routes to create a new document | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Use the Document Type from Routes to create a new document | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/document-type-routes.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="use-the-document-type-from-routes-to-create-a-new-document">Use the Document Type from Routes to create a new document</h1>
+
+<p>If certain conditions are met, it is possible to create new documents through <strong><a href="../inventory-control/index.html">Inventory Control</a></strong> by taking in mind both the Document Type specified in the <strong><a href="../inventory-control/settings.html">Settings</a></strong> as well as the Document Type defined in the <strong>Document Routes</strong> for the respective order.</p>
+<p>This applies to the <strong><a href="../inventory-control/receive.html">Receive</a></strong> and <strong><a href="../inventory-control/issue.html">Issue</a></strong> operations, providing more flexibility when defining the final documents they can generate.</p>
+<h2 id="step-by-step-process">Step-by-step process</h2>
+<ol>
+<li><p>Perform a validation check for the receive/issue store order by <strong>filtering</strong> the following fields in the <em>Document TypesFormRoutings</em> panel of the <em>StoreOrders</em> data type:</p>
+<ul>
+<li><p><strong>ProcessEvent</strong>: Must be &quot;Change of state&quot;.</p>
+</li>
+<li><p><strong>ConditionStatesBitMask</strong>: Must include &quot;Released&quot;.</p>
+</li>
+<li><p><strong>Destination DocumentType</strong>: Must be a document of data type &quot;Transactions&quot;.</p>
+<p>When the store order is created, the Route’s activity must fit within the period specified in the <em>ActivationDate</em> and <em>DeactivationDate</em> fields. Keep in mind that these fields may be empty.</p>
+</li>
+<li><p><strong>IsActive</strong>: Must be &quot;True&quot;.</p>
+</li>
+<li><p><strong>ConditionEnterpriseCompany</strong>: Must match the <em>StoreOrder.EnterpriseCompany</em> or be empty.</p>
+</li>
+<li><p><strong>AllowedGenerationTypes</strong>: Must be set to &quot;Only Manually&quot;.</p>
+</li>
+</ul>
+</li>
+<li><p>Once the filtering procedure is over, you need to <strong>extract</strong> information about the <strong>Document Type</strong> from the remaining <strong>routes</strong>.</p>
+</li>
+<li><p>Keeping in mind the <strong>results</strong> of the validation check as well as the <strong>Document Type</strong> specified in the <strong>Inventory Control Settings</strong>, you can encounter the following situations:</p>
+<ul>
+<li><p><strong>No</strong> valid result is returned from the Document Routes and <strong>no</strong> Document Type is specified in the Inventory Control Settings for the receive or issue function.</p>
+<p>=&gt; An error will be thrown: &quot;<em>No document type selected</em>&quot;.</p>
+</li>
+<li><p><strong>No</strong> valid result is returned from the Document Routes but a Document Type <strong>is</strong> specified in the Inventory Control Settings for the receive or issue function.</p>
+<p>=&gt; A store order of the respective type will be created based on what is provided in the <strong>Settings</strong>.</p>
+</li>
+<li><p><strong>Only one</strong> valid result is returned from the Document Routes (or <strong>multiple</strong> valid results all pointing to <strong>the same</strong> Document Type)</p>
+<p>=&gt; A Document Type is selected <strong>regardless</strong> of what is specified in the Inventory Control Settings.</p>
+</li>
+<li><p><strong>Multiple different</strong> results are returned from the Document Routes.</p>
+<p>=&gt; A <strong>selection menu</strong> is displayed with a dropdown list containing all returned results from the Document Routes plus the Document Type specified in the Inventory Control Settings.</p>
+<p><img src="pictures/Document_Type_10_07.png" alt="pictures"></p>
+<p>The dropdown list will have a <strong>default</strong> value, determined as follows:</p>
+<ul>
+<li><p>If at least <strong>one</strong> of the returned results <strong>matches</strong> the Document Type specified in the Inventory Control Settings, that Document Type is chosen as the default.</p>
+</li>
+<li><p>If <strong>none</strong> of the returned results match the Document Type specified in the Inventory Control Settings, or if no Document Type is specified in these Settings, the default value is the Document Type with the smallest <strong>Code</strong> value among the routes (<em>DocumentType.Code</em>).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/document-type-routes.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

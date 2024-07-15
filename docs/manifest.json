@@ -9033,10 +9033,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/inventory/how-to/document-type-selection.md",
+      "source_relative_path": "modules/logistics/inventory/how-to/document-type-routes.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/inventory/how-to/document-type-selection.html"
+          "relative_path": "modules/logistics/inventory/how-to/document-type-routes.html"
         }
       },
       "version": ""
