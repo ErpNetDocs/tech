@@ -34,7 +34,7 @@ This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue]
 
      => A Document Type is selected **regardless** of what is specified in the Inventory Control Settings.
 
-   - **Multiple different** results are returned from the Document Routes
+   - **Multiple different** results are returned from the Document Routes.
 
      => A **selection menu** is displayed with a dropdown list containing all returned results from the Document Routes plus the Document Type specified in the Inventory Control Settings.
   
