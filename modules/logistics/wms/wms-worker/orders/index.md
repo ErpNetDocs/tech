@@ -47,27 +47,41 @@ Once you open an order, you can see the following details about it:
 
 ## Section breakdown
 
-The **Orders** screen consists of the following sections:
+The **Orders** screen consists of five sections. 
+
+Depending on a warehouse's organization and processes, the warehouse manager can assign orders to workers or they can take the orders they want to execute.
+
+In some warehouses, orders can be executed by one or multiple workers.
 
 #### Started by me
 
-These are all the *Released* warehouse orders which are assigned to the **currently** logged-in user.
+These are all orders assigned by the warehouse manager to a specific worker who is expected to execute them.
+
+They are all *Released* and appear only for the **currently** logged-in user in this section.
 
 #### Assigned to me
 
-Contains Planned and Firm Planned orders which are assigned to the **currently** logged-in user.
+Similarly to Started by me, the orders in this section are assigned by the warehouse manager to a specific worker who is supposed to execute them.
+
+The section contains Planned and Firm Planned orders which are assigned to the **currently** logged-in user.
 
 #### Unassigned
 
-Contains Planned and Firm Planned orders which are **not** assigned to a specific worker and can be executed by anyone who takes them.
+This section is meant for scenarios where warehouse managers do not assign orders but workers simply take them instead.
+
+It contains Planned and Firm Planned orders which are **not** assigned to a specific worker and can be executed by anyone who takes them.
 
 #### Started by others
 
-Here, you will find all *Released* orders which are assigned to users **different** from the currently logged-in one.
+In this section, orders can be executed by two or more workers, one of which is responsible for the orders and the other cooperating in their execution.
+
+It contains *Released* orders which are assigned to users **different** from the currently logged-in one.
 
 #### Assigned to others
 
-Contains Planned and Firm Planned orders which are assigned to users **different** from the currently logged-in one.
+The orders in this section are  assigned to a specific worker and visible to the current user (who can also take them).
+
+It contains Planned and Firm Planned orders which are assigned to users **different** from the currently logged-in one.
 
 ---
 
