@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > The following function is scheduled to be deprecated in v24.
-> For more up-to-date information, please refer to **[Orders](orders/index.md)**
+> For more up-to-date information, please refer to **[Orders](orders/index.md).**
 
 The <b>"Start"</b> function allows the warehouse worker to initiate work on a selected Warehouse Order (WO) from his „ASSIGNED TO ME“ task list.
 
