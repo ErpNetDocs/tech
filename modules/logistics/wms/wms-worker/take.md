@@ -1,6 +1,6 @@
 # Take
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > The following function is scheduled to be deprecated in v24.
 > For more up-to-date information, please refer to **[Orders](orders.md)**
 
