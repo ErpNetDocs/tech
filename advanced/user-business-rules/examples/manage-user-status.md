@@ -14,7 +14,7 @@ In the end, we should trigger a warning message when changing an offer's documen
 ### Step-by-step example
 
 1. If not present, create at least two user statuses for the _FIRMPLANNED_ document state of the _Offer_ document type.
-2. Define a _STATECHANGING_ event with a _FIRMPLANNED_ parameter.
+2. Define a _STATECHANGED_ event with a _FIRMPLANNED_ parameter.
 3. In the **Conditions** panel, select _$ToUserStatusId_ from the **Attribute name** field.
 
    Within the **Value** field, input the ID of the user status corresponding with the _FIRMPLANNED_ state of the Offer document type.
