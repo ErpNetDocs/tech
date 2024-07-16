@@ -44,7 +44,7 @@ This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue]
                
         - If at least **one** of the returned results **matches** the Document Type specified in the Inventory Control Settings, that Document Type is chosen as the default.
           
-        - If **none** of the returned results match the Document Type specified in the Inventory Control Settings, or if no Document Type is specified in these Settings, the default value is the Document Type with the smallest **Code** value among the routes (*DocumentType.Code*).
+        - If **none** of the returned results match the Document Type specified in the Inventory Control Settings, or if no Document Type is specified in these Settings, the default value is the Document Type **Code** with the smallest **Code** value.
 
 > [!NOTE]
 > 
