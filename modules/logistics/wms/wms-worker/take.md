@@ -2,7 +2,9 @@
 
 > [!IMPORTANT]
 > The following function is scheduled to be deprecated in v24.
-> For more up-to-date information, please refer to **[Orders](orders.md)**
+> For more up-to-date information, please refer to **[Orders](orders/index.md).**
+
+</br></br>
 
 In the "Orders" menu of the WMS Worker, two categories are displayed: „ASSIGNED TO ME“ and “UNASSIGNED”.
 
