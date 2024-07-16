@@ -1,5 +1,9 @@
 # Take
 
+> ![IMPORTANT]
+> The following function is scheduled to be deprecated in v24.
+> For more up-to-date information, please refer to **[Orders](orders.md)**
+
 In the "Orders" menu of the WMS Worker, two categories are displayed: „ASSIGNED TO ME“ and “UNASSIGNED”.
 
 The <b>“Take”</b> function allows the warehouse worker to select a Warehouse Order (WO) from the “UNASSIGNED” list and assign it to himself. The WO will quickly and easily appear in their „ASSIGNED TO ME“ task list for execution.
@@ -22,6 +26,3 @@ After confirmation, the window for execution the order automatically opens, allo
 The "Assigned to" field is automatically filled with his own name, the state of the Warehouse Order is changed to "Released", and it becomes visible in his "ASSIGNED TO ME" tasks list.
 
 ![Product](pictures/take-pic4.png)
-
-*The attached screenshots are from version 24.
-
