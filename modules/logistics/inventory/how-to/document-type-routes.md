@@ -18,7 +18,7 @@ This applies to the **[Receive](../inventory-control/receive.md)** and **[Issue]
    - **ConditionEnterpriseCompany**: Must match the *StoreOrder.EnterpriseCompany* or be empty.
    - **AllowedGenerationTypes**: Must be set to "Only Manually".
 
-2. Once the filtering procedure is over, you need to **extract** information about the **Document Type** from the remaining **routes**.
+2. Once the filtering procedure is complete, only the **Document type** is extracted from the remaining **routes**.
 
 3. Keeping in mind the **results** of the validation check as well as the **Document Type** specified in the **Inventory Control Settings**, you can encounter the following situations:
    
