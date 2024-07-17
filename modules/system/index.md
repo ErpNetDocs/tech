@@ -2,6 +2,8 @@
 
 The **System** module forms the foundational infrastructure of ERP.net, facilitating functions such as data management, security configuration, process monitoring, and business automation. It enables efficient customization, secure access control, and integration with external systems, ensuring operational support and regulatory compliance.
 
+![pictures](pictures/system.png)
+
 ## Internal System Data
 
 **Internal System Data** manages and tracks the essential data elements and configurations within the system. It ensures data consistency, version control, and comprehensive auditing for robust data management.
