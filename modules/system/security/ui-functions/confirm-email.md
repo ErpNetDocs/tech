@@ -64,7 +64,7 @@ By following these steps, you can efficiently manage email confirmations for use
 6. **Confirm Email Dialog**
    - A dialog box will appear asking: **Do you wish to send a confirmation email to the user's email?** Click **OK** to send the verification email.
   
-     ![picture](pictures/Email_Web_Confirm_edit_17_07.png)
+     ![picture](pictures/Email_Web_Confirm_email_17_07.png)
 
 ## Error Handling
 
