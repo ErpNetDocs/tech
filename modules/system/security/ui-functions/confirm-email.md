@@ -64,7 +64,7 @@ By following these steps, you can efficiently manage email confirmations for use
 6. **Confirm Email Dialog**
    - A dialog box will appear asking: **Do you wish to send a confirmation email to the user's email?** Click **OK** to send the verification email.
   
-     ![picture](pictures/Email_Web_Confirm_email_17_07.png)
+     ![picture](pictures/Email_Web_Confirm_or_cancel_17_07.png)
 
 ## Error Handling
 
@@ -90,7 +90,6 @@ When you confirm, the user will receive an email with the following content:
 > [!NOTE]
 >
 > Starting from version 25, upon successful completion of the email validation process, the user's "Email Confirmed" status will automatically be set to True in ERP.net.
-
 
 > [!NOTE]
 > 
