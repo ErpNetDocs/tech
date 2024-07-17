@@ -10,7 +10,7 @@ To learn more about the apps in a group, use the following list:
 - **[General](https://docs.erp.net/tech/modules/general/index.html)**
 - **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**
 - **[Applications](https://docs.erp.net/tech/modules/applications/index.html)**
-- **[Security](https://docs.erp.net/tech/modules/security/index.html)**
+- **[System](https://docs.erp.net/tech/modules/system/index.html)**
 - **[Community](https://docs.erp.net/tech/modules/community/index.html)**
 - **[Express](https://docs.erp.net/tech/modules/express/index.html)**
 
