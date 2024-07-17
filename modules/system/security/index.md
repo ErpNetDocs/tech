@@ -12,7 +12,7 @@ This module plays a crucial role in maintaining the integrity and confidentialit
   - Groups of users providing collective access to secured data, facilitating efficient permission management.
 
 - **Trusted Applications**
-  - Applications trusted to access ERP data securely, ensuring controlled and secure integration with external systems.
+  - Applications trusted to access ERP.net data securely, ensuring controlled integration with external systems.
 
 - **Users**
   - User logins managing access and roles within the system, ensuring authenticated user interaction.
