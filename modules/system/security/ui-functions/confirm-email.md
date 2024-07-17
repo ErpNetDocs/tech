@@ -87,4 +87,11 @@ When you confirm, the user will receive an email with the following content:
   Thank you for your cooperation. If you did not initiate this process, please contact the system administrator for assistance.
   ```
 
-**Note:** Starting from version 25, upon successful completion of the email validation process, the user's "Email Confirmed" status will automatically be set to True in ERP.net.
+> [!NOTE]
+>
+> Starting from version 25, upon successful completion of the email validation process, the user's "Email Confirmed" status will automatically be set to True in ERP.net.
+
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 of the platform.
