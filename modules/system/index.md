@@ -1,6 +1,6 @@
 # System
 
-The **System** module forms the foundational infrastructure of our enterprise software, facilitating functions such as data management, security configuration, process monitoring, and business automation. It enables efficient customization, secure access control, and integration with external systems, ensuring operational support and regulatory compliance.
+The **System** module forms the foundational infrastructure of ERP.net, facilitating functions such as data management, security configuration, process monitoring, and business automation. It enables efficient customization, secure access control, and integration with external systems, ensuring operational support and regulatory compliance.
 
 ## Internal System Data
 
