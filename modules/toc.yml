@@ -17,6 +17,9 @@
   href: projects/toc.yml
 - name: Applications
   href: applications/toc.yml
+- name: System
+  href: system/toc.yml
+  topicHref: system/index.md
 - name: Community Management
   href: community/toc.yml
   topicHref: community/index.md
