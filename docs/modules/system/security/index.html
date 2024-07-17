@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>ERP.net Internal modules | ERP.net Tech Docs </title>
+      <title>Security | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="ERP.net Internal modules | ERP.net Tech Docs ">
+      <meta name="title" content="Security | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="../">
+      <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/system/security/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,32 +85,84 @@
         </div>
 
         <article data-uid="">
-<h1 id="-internal-modules">ERP.net Internal modules</h1>
+<h1 id="security">Security</h1>
 
-<p>The internal modules in ERP.net are divided in application groups.</p>
-<p>To learn more about the apps in a group, use the following list:</p>
+<p>The <strong>Security</strong> module focuses on managing access controls and permissions within the system to safeguard sensitive data and ensure secure user interactions.</p>
+<p>It encompasses features such as defining user roles, setting system permissions, managing access keys for data security, and controlling visibility of UI elements based on user roles and preferences.</p>
+<p>This module plays a crucial role in maintaining the integrity and confidentiality of system data and operations.</p>
+<p><img src="pictures/security.png" alt="pictures"></p>
+<h2 id="definitions">Definitions</h2>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/my/index.html">My</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/index.html">CRM</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/financials/index.html">Finance</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/general/index.html">General</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/logistics/index.html">Logistics</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/index.html">Applications</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/system/index.html">System</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/community/index.html">Community</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/express/index.html">Express</a></strong></li>
+<li><p><strong>Groups</strong></p>
+<ul>
+<li>Groups of users providing collective access to secured data, facilitating efficient permission management.</li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Your ERP instance might contain external applications which might not be documented here.</p>
-<p>External applications are tightly integrated in the User menu.</p>
-<p>Sometimes, external apps replicate the visuals of the internal apps and might be indistinguishable.</p>
-</div>
+</li>
+<li><p><strong>Trusted Applications</strong></p>
+<ul>
+<li>Applications trusted to access ERP.net data securely, ensuring controlled integration with external systems.</li>
+</ul>
+</li>
+<li><p><strong>Users</strong></p>
+<ul>
+<li>User logins managing access and roles within the system, ensuring authenticated user interaction.</li>
+</ul>
+</li>
+</ul>
+<h2 id="setup">Setup</h2>
+<ul>
+<li><p><strong>Domains</strong></p>
+<ul>
+<li>Represents user domains with distinct email configurations, organising users into separate administrative units.</li>
+</ul>
+</li>
+<li><p><strong>Entities</strong></p>
+<ul>
+<li>Contains entities with secured access, defining access permissions for specific data entities.</li>
+</ul>
+</li>
+<li><p><strong>Roles</strong></p>
+<ul>
+<li>Various roles defining user permissions and capabilities, managing user access based on predefined roles.</li>
+</ul>
+</li>
+</ul>
+<h2 id="views">Views</h2>
+<ul>
+<li><strong>System Permissions</strong>
+<ul>
+<li>Controls access to different parts of the software based on predefined permissions, ensuring data and system security.</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-data">System Data</h2>
+<ul>
+<li><p><strong>Access Keys</strong></p>
+<ul>
+<li>Provides a basic locking mechanism for data security by assigning access keys to records, managing data access through user groups.</li>
+</ul>
+</li>
+<li><p><strong>Column Permissions</strong></p>
+<ul>
+<li>Manages user permissions for accessing specific system data columns, ensuring controlled data visibility.</li>
+</ul>
+</li>
+<li><p><strong>External Applications</strong></p>
+<ul>
+<li>Lists external applications authorised to run operations, facilitating integration and external system management.</li>
+</ul>
+</li>
+<li><p><strong>Visual Permissions</strong></p>
+<ul>
+<li>Manages permissions for client applications to show/hide UI elements based on user roles and preferences.</li>
+</ul>
+</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/system/security/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

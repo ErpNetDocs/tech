@@ -15517,6 +15517,245 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/pictures/system.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/pictures/system.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/pictures/systemnew.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/pictures/systemnew.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/pictures/security.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/pictures/security.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/ui-functions/confirm-email.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/ui-functions/confirm-email.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/ui-functions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/ui-functions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_Confirm_edit_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_Confirm_edit_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_confirm_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_confirm_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_edit_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_edit_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_email_change_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_email_change_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_nav_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_nav_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_edit_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_edit_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_or_cancel_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_or_cancel_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_confirm_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_confirm_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_edit_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_edit_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_email_change_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_email_change_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_nav_17_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_nav_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/ui-functions/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/ui-functions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/ui-functions/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/ui-functions/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/toc.yml",
       "output": {
