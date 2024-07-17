@@ -6,6 +6,8 @@ It encompasses features such as defining user roles, setting system permissions,
 
 This module plays a crucial role in maintaining the integrity and confidentiality of system data and operations.
 
+![pictures](pictures/security.png)
+
 ## Definitions 
 
 - **Groups**
