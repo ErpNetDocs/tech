@@ -22,7 +22,7 @@ The **System** module forms the foundational infrastructure of ERP.net, facilita
 
 ## Security
 
-[**Security**]() provides robust mechanisms for managing user access, permissions, and roles, ensuring data protection and secure integration with external applications. It includes tools for setting up user domains, groups, and system-wide permissions.
+**[**Security**](security/index.md)** provides robust mechanisms for managing user access, permissions, and roles, ensuring data protection and secure integration with external applications. It includes tools for setting up user domains, groups, and system-wide permissions.
 
 ## Internal System Data
 
