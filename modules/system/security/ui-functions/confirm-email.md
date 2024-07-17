@@ -12,7 +12,7 @@ By following these steps, you can efficiently manage email confirmations for use
    - Log in to the system using your **administrator credentials**.
 
 2. **Navigate to User Settings**
-   - Go to **Setup** > **Security** > **Users** and select the user you want to edit.
+   - Go to **System** > **Security** > **Users** and select the user you want to edit.
 
 3. **Enter Edit Mode**
    - Click on the user to open their details, then enter the **edit mode** by clicking the **Edit** button.
