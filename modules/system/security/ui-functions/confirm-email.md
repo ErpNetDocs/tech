@@ -1,109 +1,94 @@
 # Confirm Email
 
-The **Confirm Email** feature in ERP.net allows administrators to send email verification requests easily. 
+The **Confirm Email** function allows administrators to quickly send a confirmation request to the email address specified in a user's profile.
 
-This feature enhances security and ensures that users' email addresses are verified correctly. 
+It streamlines the overall email verification process by saving time and ensuring that a provided address is fully authentic.
 
-By following these steps, you can efficiently manage email confirmations for users within both the desktop and web clients.
+> [!IMPORTANT]
+> The function will **not** work if:
+> 
+> * you're in **Edit mode** for the user profile
+> * the **Email** field of the user is **empty**
+> * the email of the user is **already confirmed**.
 
-## Using the Desktop Client
+## Using the function in the ERP.net Web Client
 
-1. **Log In**
+Below is a step-by-step guide for using the **Confirm Email** function in the @@name Web Client.
 
-  Log in to the system using your **administrator credentials**.
+1. Navigate to the **Users** panel and open the user whose email you want to confirm.
 
-2. **Navigate to User Settings**
-
-  Go to **Setup** > **Security** > **Users** and select the user you want to edit.
+   Make sure this email is specified in the **Email** field.
   
-![picture](pictures/Email_Desctop_nav_17_07.png)
+   ![picture](pictures/Email_Web_nav_17_07.png)
 
-3. **Enter Edit Mode**
+2. To trigger the function, click the **Run** button and select **Confirm Email**.
 
-  Click on the user to open their details, then enter the **edit mode** by clicking the **Edit** button.
+   This will **not** be possible if you enter Edit mode for the user.
   
-![picture](pictures/Email_Desctop_edit_17_07.png)
+   ![picture](pictures/Email_Web_confirm_17_07.png)
 
-4. **Update Email**
+3. A pop-up will appear asking whether you want to send the confirmation email.
 
-  In the **User** panel, enter the email address in the **Email** field and **save** the changes.
+   Click **OK** to proceed. 
   
-![picture](pictures/Email_Desctop_email_change_17_07.png)
+   ![picture](pictures/Email_Web_Confirm_or_cancel_17_07.png)
 
-5. **Access Confirm Email Function**
+   The user should receive their confirmation request provided that their email address hasn't been already verified.
 
-  Navigate to the **Functions** tab and click the **Confirm Email** button.
-  
-![picture](pictures/Email_Desctop_confirm_17_07.png)
+   Inside, the message will look like this: </br></br>
 
-6. **Confirm Email Dialog**
+   _"Hi [User Name],_
 
-  A dialog box will appear asking: **Do you wish to send a confirmation email to the user's email?** Click **OK** to send the verification email.
-  
-![picture](pictures/Email_Desctop_Confirm_edit_17_07.png)
+   _We have received a request to update your email address. Please confirm this change by following this link below:_
 
-## Using the Web Client
+   _[Link]_
 
-1. **Log In**
-
-  Log in to the system using your **administrator credentials**.
-
-2. **Navigate to User Settings**
-  
-  Go to **System** > **Security** > **Users** and select the user you want to edit.
-  
-![picture](pictures/Email_Web_nav_17_07.png)
-
-3. **Enter Edit Mode**
-
-  Click on the user to open their details, then enter the **edit mode** by clicking the **Edit** button.
-  
-![picture](pictures/Email_Web_edit_17_07.png)
-
-4. **Update Email**
-
-  In the **User** panel, enter the email address in the **Email** field and **save** the changes.
-  
-![picture](pictures/Email_Web_email_change_17_07.png)
-
-5. **Access Confirm Email Function**
-
-  Click the **Run** button and select **Confirm Email** from the list.
-  
-![picture](pictures/Email_Web_confirm_17_07.png)
-
-6. **Confirm Email Dialog**
-
-  A dialog box will appear asking: **Do you wish to send a confirmation email to the user's email?** Click **OK** to send the verification email.
-  
-![picture](pictures/Email_Web_Confirm_or_cancel_17_07.png)
-
-## Error Handling
-
-1. **Email Field Empty**
-
-  If the **Email** field is not filled, you will receive an error message:
-  - "Function cannot be started. The 'Email' field is not filled in."
-
-2. **Email Already Confirmed**
-
-  If the email is already confirmed, you will receive an error message:
-  - "Function cannot be started. Email {User.Email} has already been successfully confirmed."
-
-## Confirmation Email Content
-
-When you confirm, the user will receive an email with the following content:
-
-  ```
-  Hi [User Name],
-  We have received a request to update your email address. Please confirm this change by following this link below:
-  [Link]
-  Thank you for your cooperation. If you did not initiate this process, please contact the system administrator for assistance.
-  ```
+   _Thank you for your cooperation. If you did not initiate this process, please contact the system administrator for assistance."_ </br></br>
 
 > [!NOTE]
->
-> Starting from version 25, upon successful completion of the email validation process, the user's "Email Confirmed" status will automatically be set to True in ERP.net.
+> Upon clicking their verification link, a user will be taken to a one-time login form where they need to enter their credentials in order to access their profile. Inside, they can confirm their email address by either changing it or keeping the one they've provided.
+   
+## Using the function in the ERP.net Desktop Client
+
+The **Confirm Email** function can also be executed in the @@name Desktop Client.
+
+1. Navigate to the **Users** navigator and open the user whose email you want to confirm.
+  
+   ![picture](pictures/Email_Desctop_nav_17_07.png)
+  
+2. Navigate to the **Functions** tab and click on the **Confirm Email** function.
+  
+   ![picture](pictures/Email_Desctop_confirm_17_07.png)
+
+3. A pop-up will appear asking whether you want to send the confirmation email.
+
+   Click **OK** to proceed.
+  
+   ![picture](pictures/Email_Desctop_Confirm_edit_17_07.png)
+
+   The user should receive their confirmation request provided that their email address hasn't been already verified.
+
+## Email Confirmed status
+
+Starting from ERP.net version 25, upon successful completion of the email confirmation process, the **Email Confirmed** field in the definition of the user will be automatically set to "True" (as represented by a check mark in a box).
+
+This field **cannot** be modified in any way, unless the **Email** field of the user is changed or deleted.
+
+In that case, a new confirmation process will be necessary for the email to be verified. 
+
+If the process is successful, the **Email Confirmed** field of the respective user will be set to "True" once again.
+
+## Error messages
+
+The **Confirm Email** function will be prevented from executing and will throw an error message in the following scenarios:
+
+1. The **Email** field of the user is not filled:
+
+   _"Function cannot be started. The 'Email' field is not filled in."_
+
+2. The email of the user is **already confirmed**:
+
+   _"Function cannot be started. Email {User.Email} has already been successfully confirmed."_
 
 > [!NOTE]
 > 
