@@ -25,13 +25,13 @@ Below is a step-by-step guide for using the **Confirm Email** function in the @@
 
    This will **not** be possible if you enter Edit mode for the user.
   
-   ![picture](pictures/Email_Web_Confirm_email_change_19_07.png)
+   ![picture](pictures/Email_Web_Confirm_email_17_07.png)
 
 3. A pop-up will appear asking whether you want to send the confirmation email.
 
    Click **OK** to proceed. 
   
-   ![picture](pictures/Email_Web_Confirm_change_19_07.png)
+   ![picture](pictures/Email_Web_Confirm_email_change_19_07.png)
 
    The user should receive their confirmation request provided that their email address hasn't been already verified.
 
