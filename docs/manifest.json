@@ -15611,6 +15611,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_Confirm_edit_19_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_Confirm_edit_19_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Desctop_confirm_17_07.png",
       "output": {
         "resource": {
@@ -15651,6 +15661,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_change_19_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_change_19_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_edit_17_07.png",
       "output": {
         "resource": {
@@ -15661,10 +15681,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_edit_19_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_edit_19_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_17_07.png",
       "output": {
         "resource": {
           "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_17_07.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_change_19_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/Email_Web_Confirm_email_change_19_07.png"
         }
       },
       "version": ""
@@ -15720,11 +15760,51 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/email_confirmed.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/email_confirmed.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/error1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/error1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/error2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/error2.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/system/security/ui-functions/pictures/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/system/security/ui-functions/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/ui-functions/pictures/navigate.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/ui-functions/pictures/navigate.png"
         }
       },
       "version": ""

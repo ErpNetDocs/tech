@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
       
       <meta name="docfx:rel" content="../../../../">
       
@@ -87,95 +87,80 @@
         <article data-uid="">
 <h1 id="confirm-email">Confirm Email</h1>
 
-<p>The <strong>Confirm Email</strong> feature in ERP.net allows administrators to send email verification requests easily.</p>
-<p>This feature enhances security and ensures that users' email addresses are verified correctly.</p>
-<p>By following these steps, you can efficiently manage email confirmations for users within both the desktop and web clients.</p>
-<h2 id="using-the-desktop-client">Using the Desktop Client</h2>
+<p>The <strong>Confirm Email</strong> function allows administrators to quickly send a confirmation request to the email address specified in a user's profile.</p>
+<p>It streamlines the overall email verification process by saving time and ensuring that a provided address is fully authentic.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The function will <strong>not</strong> work if:</p>
+<ul>
+<li>you're in <strong>Edit mode</strong> for the user profile; in this case, it will be greyed out</li>
+<li>the <strong>Email</strong> field of the user is <strong>empty</strong>; in this case, it will result in an error</li>
+<li>the email of the user is <strong>already confirmed</strong>; in this case, it will result in an error.</li>
+</ul>
+</div>
+<h2 id="using-the-function-in-the-erpnet-web-client">Using the function in the ERP.net Web Client</h2>
+<p>Below is a step-by-step guide for using the <strong>Confirm Email</strong> function in the ERP.net Web Client.</p>
 <ol>
-<li><strong>Log In</strong></li>
-</ol>
-<p>Log in to the system using your <strong>administrator credentials</strong>.</p>
-<ol start="2">
-<li><strong>Navigate to User Settings</strong></li>
-</ol>
-<p>Go to <strong>Setup</strong> &gt; <strong>Security</strong> &gt; <strong>Users</strong> and select the user you want to edit.</p>
-<p><img src="pictures/Email_Desctop_nav_17_07.png" alt="picture"></p>
-<ol start="3">
-<li><strong>Enter Edit Mode</strong></li>
-</ol>
-<p>Click on the user to open their details, then enter the <strong>edit mode</strong> by clicking the <strong>Edit</strong> button.</p>
-<p><img src="pictures/Email_Desctop_edit_17_07.png" alt="picture"></p>
-<ol start="4">
-<li><strong>Update Email</strong></li>
-</ol>
-<p>In the <strong>User</strong> panel, enter the email address in the <strong>Email</strong> field and <strong>save</strong> the changes.</p>
-<p><img src="pictures/Email_Desctop_email_change_17_07.png" alt="picture"></p>
-<ol start="5">
-<li><strong>Access Confirm Email Function</strong></li>
-</ol>
-<p>Navigate to the <strong>Functions</strong> tab and click the <strong>Confirm Email</strong> button.</p>
-<p><img src="pictures/Email_Desctop_confirm_17_07.png" alt="picture"></p>
-<ol start="6">
-<li><strong>Confirm Email Dialog</strong></li>
-</ol>
-<p>A dialog box will appear asking: <strong>Do you wish to send a confirmation email to the user's email?</strong> Click <strong>OK</strong> to send the verification email.</p>
-<p><img src="pictures/Email_Desctop_Confirm_edit_17_07.png" alt="picture"></p>
-<h2 id="using-the-web-client">Using the Web Client</h2>
-<ol>
-<li><strong>Log In</strong></li>
-</ol>
-<p>Log in to the system using your <strong>administrator credentials</strong>.</p>
-<ol start="2">
-<li><strong>Navigate to User Settings</strong></li>
-</ol>
-<p>Go to <strong>System</strong> &gt; <strong>Security</strong> &gt; <strong>Users</strong> and select the user you want to edit.</p>
-<p><img src="pictures/Email_Web_nav_17_07.png" alt="picture"></p>
-<ol start="3">
-<li><strong>Enter Edit Mode</strong></li>
-</ol>
-<p>Click on the user to open their details, then enter the <strong>edit mode</strong> by clicking the <strong>Edit</strong> button.</p>
-<p><img src="pictures/Email_Web_edit_17_07.png" alt="picture"></p>
-<ol start="4">
-<li><strong>Update Email</strong></li>
-</ol>
-<p>In the <strong>User</strong> panel, enter the email address in the <strong>Email</strong> field and <strong>save</strong> the changes.</p>
-<p><img src="pictures/Email_Web_email_change_17_07.png" alt="picture"></p>
-<ol start="5">
-<li><strong>Access Confirm Email Function</strong></li>
-</ol>
-<p>Click the <strong>Run</strong> button and select <strong>Confirm Email</strong> from the list.</p>
+<li><p>Navigate to the <strong>Users</strong> panel and open the user whose email you want to confirm.</p>
+<p>Make sure this email is specified in their <strong>Email</strong> field.</p>
+<p><img src="pictures/navigate.png" alt="picture"></p>
+</li>
+<li><p>To trigger the function, click the <strong>Run</strong> button and select <strong>Confirm Email</strong>.</p>
+<p>This will <strong>not</strong> be possible if you enter Edit mode for the user.</p>
 <p><img src="pictures/Email_Web_confirm_17_07.png" alt="picture"></p>
-<ol start="6">
-<li><strong>Confirm Email Dialog</strong></li>
+</li>
+<li><p>A pop-up will appear asking whether you want to send the confirmation email.</p>
+<p>Click <strong>OK</strong> to proceed.</p>
+<p><img src="pictures/Email_Web_Confirm_email_change_19_07.png" alt="picture"></p>
+<p>The user should receive their confirmation request provided that their email address hasn't been already verified.</p>
+<p>Inside, the message will look like this: <br><br></p>
+<p><em>&quot;Hi [User Name],</em></p>
+<p><em>We have received a request to update your email address. Please confirm this change by following this link below:</em></p>
+<p><em>[Link]</em></p>
+<p><em>Thank you for your cooperation. If you did not initiate this process, please contact the system administrator for assistance.&quot;</em> <br><br></p>
+</li>
 </ol>
-<p>A dialog box will appear asking: <strong>Do you wish to send a confirmation email to the user's email?</strong> Click <strong>OK</strong> to send the verification email.</p>
-<p><img src="pictures/Email_Web_Confirm_or_cancel_17_07.png" alt="picture"></p>
-<h2 id="error-handling">Error Handling</h2>
-<ol>
-<li><strong>Email Field Empty</strong></li>
-</ol>
-<p>If the <strong>Email</strong> field is not filled, you will receive an error message:</p>
-<ul>
-<li>&quot;Function cannot be started. The 'Email' field is not filled in.&quot;</li>
-</ul>
-<ol start="2">
-<li><strong>Email Already Confirmed</strong></li>
-</ol>
-<p>If the email is already confirmed, you will receive an error message:</p>
-<ul>
-<li>&quot;Function cannot be started. Email {User.Email} has already been successfully confirmed.&quot;</li>
-</ul>
-<h2 id="confirmation-email-content">Confirmation Email Content</h2>
-<p>When you confirm, the user will receive an email with the following content:</p>
-<pre><code>Hi [User Name],
-We have received a request to update your email address. Please confirm this change by following this link below:
-[Link]
-Thank you for your cooperation. If you did not initiate this process, please contact the system administrator for assistance.
-</code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Starting from version 25, upon successful completion of the email validation process, the user's &quot;Email Confirmed&quot; status will automatically be set to True in ERP.net.</p>
+<p>Upon clicking their verification link, a user will be taken to a one-time login form where they need to enter their credentials in order to access their profile. Inside, they can confirm their email address by either changing it or keeping the one they've provided.</p>
 </div>
+<h2 id="using-the-function-in-the-erpnet-desktop-client">Using the function in the ERP.net Desktop Client</h2>
+<p>The <strong>Confirm Email</strong> function can also be executed in the ERP.net Desktop Client.</p>
+<ol>
+<li><p>Navigate to the <strong>Users</strong> navigator and open the user whose email you want to confirm.</p>
+<p><img src="pictures/Email_Desctop_nav_17_07.png" alt="picture"></p>
+</li>
+<li><p>Navigate to the <strong>Functions</strong> tab and click on the <strong>Confirm Email</strong> function.</p>
+<p><img src="pictures/Email_Desctop_confirm_17_07.png" alt="picture"></p>
+</li>
+<li><p>A pop-up will appear asking whether you want to send the confirmation email.</p>
+<p>Click <strong>OK</strong> to proceed.</p>
+<p><img src="pictures/Email_Desctop_Confirm_edit_19_07.png" alt="picture"></p>
+<p>The user should receive their confirmation request provided that their email address hasn't been already verified.</p>
+</li>
+</ol>
+<h2 id="email-confirmed-status">Email Confirmed status</h2>
+<p>Starting from ERP.net version 25, upon successful completion of the email confirmation process, the <strong>Email Confirmed</strong> field in the definition of the user will be automatically set to &quot;True&quot; (as represented by a check mark in a box).</p>
+<p><img src="pictures/email_confirmed.png" alt="picture"></p>
+<p>This field <strong>cannot</strong> be modified in any way, unless the <strong>Email</strong> of the user is changed or deleted.</p>
+<p>In that case, a new confirmation process will be necessary for the email to be verified.</p>
+<p>If the process is successful, the <strong>Email Confirmed</strong> field of the respective user will be set to &quot;True&quot; once again.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This feature will be available from version 25 onward. Your current platform instance may not support it yet.</p>
+</div>
+<h2 id="error-messages">Error messages</h2>
+<p>The <strong>Confirm Email</strong> function will be prevented from executing and will throw an error message in the following scenarios:</p>
+<ol>
+<li><p>The <strong>Email</strong> field of the user is not filled:</p>
+<p><em>&quot;Function cannot be started. The 'Email' field is not filled in.&quot;</em></p>
+<p><img src="pictures/error1.png" alt="picture"></p>
+</li>
+<li><p>The email of the user is <strong>already confirmed</strong>:</p>
+<p><em>&quot;Function cannot be started. Email {User.Email} has already been successfully confirmed.&quot;</em></p>
+<p><img src="pictures/error2.png" alt="picture"></p>
+</li>
+</ol>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v24 of the platform.</p>
