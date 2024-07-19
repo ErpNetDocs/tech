@@ -4,6 +4,8 @@ The **Security** section focuses on managing access controls and permissions wit
 
 It offers features such as defining user roles, configuring system permissions, managing access keys for data security, and controlling the visibility of UI elements based on roles and preferences. 
 
+In addition, you can perform a variety of **[UI functions](ui-functions/index.md)**.
+
 ![pictures](pictures/security.png)
 
 ## Definitions 
