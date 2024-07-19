@@ -25,7 +25,7 @@ Below is a step-by-step guide for using the **Confirm Email** function in the @@
 
    This will **not** be possible if you enter Edit mode for the user.
   
-   ![picture](pictures/Email_Web_Confirm_email_17_07.png)
+   ![picture](pictures/Email_Web_confirm_17_07.png)
 
 3. A pop-up will appear asking whether you want to send the confirmation email.
 
