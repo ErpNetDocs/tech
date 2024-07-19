@@ -1,10 +1,8 @@
 # Security 
 
-The **Security** module focuses on managing access controls and permissions within the system to safeguard sensitive data and ensure secure user interactions. 
+The **Security** section focuses on managing access controls and permissions within the system to safeguard sensitive data and ensure adequate user interactions. It  plays a crucial role in maintaining the integrity and confidentiality of ERP.net system data and operations.
 
-It encompasses features such as defining user roles, setting system permissions, managing access keys for data security, and controlling visibility of UI elements based on user roles and preferences. 
-
-This module plays a crucial role in maintaining the integrity and confidentiality of system data and operations.
+It offers features such as defining user roles, configuring system permissions, managing access keys for data security, and controlling the visibility of UI elements based on roles and preferences. 
 
 ![pictures](pictures/security.png)
 
