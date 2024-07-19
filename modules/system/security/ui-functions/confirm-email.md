@@ -74,7 +74,7 @@ Starting from ERP.net version 25, upon successful completion of the email confir
 
 ![picture](pictures/email_confirmed.png)
 
-This field **cannot** be modified in any way, unless the **Email** field of the user is changed or deleted.
+This field **cannot** be modified in any way, unless the **Email** of the user is changed or deleted.
 
 In that case, a new confirmation process will be necessary for the email to be verified. 
 
