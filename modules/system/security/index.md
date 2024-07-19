@@ -9,40 +9,40 @@ It offers features such as defining user roles, configuring system permissions, 
 ## Definitions 
 
 - **Groups**
-  - Groups of users providing collective access to secured data, facilitating efficient permission management.
+  - Groups of users with collective access to secure data.
 
 - **Trusted Applications**
-  - Applications trusted to access ERP.net data securely, ensuring controlled integration with external systems.
-
+  - Applications trusted to access ERP.net data securely.
+    
 - **Users**
-  - User logins managing access and roles within the system, ensuring authenticated user interaction.
+  - All user logins with assigned roles within the system.
 
 ## Setup 
 
 - **Domains**
-  - Represents user domains with distinct email configurations, organising users into separate administrative units.
+  - Represents user domains with distinct email configurations, organizing users into separate administrative units.
 
 - **Entities**
-  - Contains entities with secured access, defining access permissions for specific data entities.
+  - Contains entities which can have specific access permissions granted.
 
 - **Roles**
-  - Various roles defining user permissions and capabilities, managing user access based on predefined roles.
+  - Various roles granting different permissions and capabilities, applicable to existing users.
 
 ## Views
 
 - **System Permissions**
-  - Controls access to different parts of the software based on predefined permissions, ensuring data and system security.
+  - Controls access to different parts of ERP.net based on predefined permissions.
 
 ## System Data
 
 - **Access Keys**
-  - Provides a basic locking mechanism for data security by assigning access keys to records, managing data access through user groups.
+  - Provides a basic locking mechanism for data security by assigning access keys to records.
 
 - **Column Permissions**
-  - Manages user permissions for accessing specific system data columns, ensuring controlled data visibility.
+  - Manages user permissions for accessing specific system data columns.
 
 - **External Applications**
-  - Lists external applications authorised to run operations, facilitating integration and external system management.
-
+  - Lists external applications authorised to run operations.
+    
 - **Visual Permissions**
   - Manages permissions for client applications to show/hide UI elements based on user roles and preferences.
