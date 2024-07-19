@@ -6,11 +6,11 @@ The **System** module forms the foundational infrastructure of ERP.net, facilita
 
 ## Business Processes
 
-**Business Processes** automates and visualises business workflows through user-defined rules, calculated attributes, and property management. It supports process optimization and ensures seamless operational efficiency with detailed process diagrams.
+**Business Processes** automates and visualizes business workflows through user-defined rules, calculated attributes, and property management. It supports process optimization and ensures seamless operational efficiency with detailed process diagrams.
 
 ## Configuration
 
-**Configuration** centralises the setup and management of system-wide options, jobs, translations, and web integrations. It provides the tools to customise and optimise system behaviour and performance according to organisational needs.
+**Configuration** centralizes the setup and management of system-wide options, jobs, translations, and web integrations. It provides the tools to customize and optimize system behaviour and performance according to organizational needs.
 
 ## Document Flow
 
