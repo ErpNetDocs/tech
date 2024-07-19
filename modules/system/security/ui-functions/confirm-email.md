@@ -17,7 +17,7 @@ Below is a step-by-step guide for using the **Confirm Email** function in the @@
 
 1. Navigate to the **Users** panel and open the user whose email you want to confirm.
 
-   Make sure this email is specified in the **Email** field.
+   Make sure this email is specified in their **Email** field.
   
    ![picture](pictures/navigate.png)
 
