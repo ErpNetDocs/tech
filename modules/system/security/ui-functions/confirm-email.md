@@ -31,7 +31,7 @@ Below is a step-by-step guide for using the **Confirm Email** function in the @@
 
    Click **OK** to proceed. 
   
-   ![picture](pictures/Email_Web_Confirm_edit_19_07.png)
+   ![picture](pictures/Email_Web_Confirm_change_19_07.png)
 
    The user should receive their confirmation request provided that their email address hasn't been already verified.
 
