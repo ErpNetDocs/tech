@@ -31,6 +31,7 @@ It offers features such as defining user roles, configuring system permissions, 
 ## Views
 
 - **System Permissions**
+  
   - Controls access to different parts of ERP.net based on predefined permissions.
 
 ## System Data
