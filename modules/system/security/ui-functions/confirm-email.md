@@ -7,9 +7,9 @@ It streamlines the overall email verification process by saving time and ensurin
 > [!IMPORTANT]
 > The function will **not** work if:
 > 
-> * you're in **Edit mode** for the user profile
-> * the **Email** field of the user is **empty**
-> * the email of the user is **already confirmed**.
+> * you're in **Edit mode** for the user profile; in this case, it will be greyed out
+> * the **Email** field of the user is **empty**; in this case, it will result in an error 
+> * the email of the user is **already confirmed**; in this case, it will result in an error.
 
 ## Using the function in the ERP.net Web Client
 
@@ -19,7 +19,7 @@ Below is a step-by-step guide for using the **Confirm Email** function in the @@
 
    Make sure this email is specified in the **Email** field.
   
-   ![picture](pictures/Email_Web_nav_17_07.png)
+   ![picture](pictures/navigate.png)
 
 2. To trigger the function, click the **Run** button and select **Confirm Email**.
 
@@ -72,11 +72,16 @@ The **Confirm Email** function can also be executed in the @@name Desktop Client
 
 Starting from ERP.net version 25, upon successful completion of the email confirmation process, the **Email Confirmed** field in the definition of the user will be automatically set to "True" (as represented by a check mark in a box).
 
+![picture](pictures/email_confirmed.png)
+
 This field **cannot** be modified in any way, unless the **Email** field of the user is changed or deleted.
 
 In that case, a new confirmation process will be necessary for the email to be verified. 
 
 If the process is successful, the **Email Confirmed** field of the respective user will be set to "True" once again.
+
+> [!NOTE]
+> This feature will be available from version 25 onward. Your current platform instance may not support it yet.
 
 ## Error messages
 
@@ -86,9 +91,13 @@ The **Confirm Email** function will be prevented from executing and will throw a
 
    _"Function cannot be started. The 'Email' field is not filled in."_
 
+   ![picture](pictures/error1.png)
+
 2. The email of the user is **already confirmed**:
 
    _"Function cannot be started. Email {User.Email} has already been successfully confirmed."_
+
+      ![picture](pictures/error2.png)
 
 > [!NOTE]
 > 
