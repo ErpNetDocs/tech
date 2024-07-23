@@ -76,13 +76,13 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of the **occupancy** of all rental assets that are part of an existing lease contract.
+The Calendar provides a quick overview of the **occupancy** of all rental assets for which there is a lease contract.
 
 It also shows:
 
 * the **leaseholders** to which the assets were handed over
 * **from when** they have been leased and **until when**
-* the **status** of the current lease contract the were leased through
+* the **status** of the current lease contract they were leased through
 
 ## Reports
 
