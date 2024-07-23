@@ -76,7 +76,13 @@ It offers functionalities that help you stay on track with key dates and schedul
 
 ### Calendar
 
-The Calendar provides a quick overview of all rental assets' **occupancy**, showing you the customers to which they were leased, from when they have been leased and until when. It lets you know when they will be free to lease again, including the periods when they will not be leased.
+The Calendar provides a quick overview of the **occupancy** of all rental assets that are part of an existing lease contract.
+
+It also shows:
+
+* the **leaseholders** to which the assets were handed over
+* **from when** they have been leased and **until when**
+* the **status** of the current lease contract the were leased through
 
 ## Reports
 
@@ -88,7 +94,11 @@ These include monitoring the status of assets, tracking lease contract details, 
 
 ### Assets status report
 
-Provides a comprehensive overview of the current status of all assets, revealing their current availability/occupancy.
+Provides a detailed overview of the state of all assets, revealing their **current occupancy** as well as the **current date(s)** on which they are available to lease.
+
+These dates can **change** depending on the lease contracts a rental asset is part of, but this will always be reflected by the report.
+
+You can also see the **last date** of the final lease contract a rental asset is currently part of. After that date, the asset will be completely available to lease and the report will not feature any occupancy periods.
 
 ### Lease Contracts – Lines
 
