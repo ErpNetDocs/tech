@@ -80,9 +80,9 @@ The Calendar provides a quick overview of the **occupancy** of all rental assets
 
 It also shows:
 
-* the **leaseholders** to which the assets were handed over
-* **from when** they have been leased and **until when**
-* the **status** of the current lease contract they were leased through
+* the **lessees** to which the assets were leased
+* **from when** the assets have been leased and **until when**
+* the **status** of the current lease contract agreement they are part of
 
 ## Reports
 
