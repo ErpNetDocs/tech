@@ -94,7 +94,7 @@ These include monitoring the status of assets, tracking lease contract details, 
 
 ### Assets status report
 
-Provides a detailed overview of the state of all assets, revealing their **current occupancy** as well as the **current date(s)** on which they are available to lease. These dates can **change** depending on the lease contracts a rental asset is part of, but this will always be reflected by the report.
+Provides a detailed overview of the state of all assets, revealing their **current occupancy** as well as the **current date(s)** on which they are available to lease. These dates can **change** depending on the lease contracts a rental asset is part of, but this is always reflected by the report.
 
 You can also see the **last date** of the final lease contract a rental asset is currently part of. After that date, the asset will be completely available to lease and the report will not feature any occupancy periods.
 
