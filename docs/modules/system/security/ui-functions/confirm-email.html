@@ -88,7 +88,7 @@
 <h1 id="confirm-email">Confirm Email</h1>
 
 <p>The <strong>Confirm Email</strong> function allows administrators to quickly send a confirmation request to the email address specified in a user's profile.</p>
-<p>It streamlines the overall email verification process by saving time and ensuring that a provided address is fully authentic.</p>
+<p>It streamlines the overall email verification process by saving time and ensuring a provided address is up-to-date.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>The function will <strong>not</strong> work if:</p>
@@ -140,27 +140,15 @@
 </li>
 </ol>
 <h2 id="email-confirmed-status">Email Confirmed status</h2>
-<p>Starting from ERP.net version 25, upon successful completion of the email confirmation process, the <strong>Email Confirmed</strong> field in the definition of the user will be automatically set to &quot;True&quot; (as represented by a check mark in a box).</p>
+<p>Starting from ERP.net version 25, the <strong>Email Confirmed</strong> field in the definition of the user will automatically get a <strong>check mark</strong> if the email confirmation process is successful.</p>
 <p><img src="pictures/email_confirmed.png" alt="picture"></p>
-<p>This field <strong>cannot</strong> be modified in any way, unless the <strong>Email</strong> of the user is changed or deleted.</p>
+<p>This field <strong>cannot</strong> be modified manually. However, its check mark will disappear if the <strong>Email</strong> of the user is changed or deleted.</p>
 <p>In that case, a new confirmation process will be necessary for the email to be verified.</p>
-<p>If the process is successful, the <strong>Email Confirmed</strong> field of the respective user will be set to &quot;True&quot; once again.</p>
+<p>If the process is successful, the <strong>Email Confirmed</strong> field of the respective user will receive a check mark once again.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>This feature will be available from version 25 onward. Your current platform instance may not support it yet.</p>
 </div>
-<h2 id="error-messages">Error messages</h2>
-<p>The <strong>Confirm Email</strong> function will be prevented from executing and will throw an error message in the following scenarios:</p>
-<ol>
-<li><p>The <strong>Email</strong> field of the user is not filled:</p>
-<p><em>&quot;Function cannot be started. The 'Email' field is not filled in.&quot;</em></p>
-<p><img src="pictures/error1.png" alt="picture"></p>
-</li>
-<li><p>The email of the user is <strong>already confirmed</strong>:</p>
-<p><em>&quot;Function cannot be started. Email {User.Email} has already been successfully confirmed.&quot;</em></p>
-<p><img src="pictures/error2.png" alt="picture"></p>
-</li>
-</ol>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v24 of the platform.</p>
