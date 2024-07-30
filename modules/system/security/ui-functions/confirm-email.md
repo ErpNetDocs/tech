@@ -70,33 +70,21 @@ The **Confirm Email** function can also be executed in the @@name Desktop Client
 
 ## Email Confirmed status
 
-Starting from ERP.net version 25, upon successful completion of the email confirmation process, the **Email Confirmed** field in the definition of the user will be automatically set to "True" (as represented by a check mark in a box).
+Starting from ERP.net version 25, the **Email Confirmed** field in the definition of the user will automatically get a **check mark** if the email confirmation process is successful.
 
 ![picture](pictures/email_confirmed.png)
 
-This field **cannot** be modified in any way, unless the **Email** of the user is changed or deleted.
+This field **cannot** be modified manually. However, its check mark will disappear if the **Email** of the user is changed or deleted.
 
 In that case, a new confirmation process will be necessary for the email to be verified. 
 
-If the process is successful, the **Email Confirmed** field of the respective user will be set to "True" once again.
+If the process is successful, the **Email Confirmed** field of the respective user will receive a check mark once again.
 
 > [!NOTE]
 > This feature will be available from version 25 onward. Your current platform instance may not support it yet.
 
-## Error messages
-
-The **Confirm Email** function will be prevented from executing and will throw an error message in the following scenarios:
-
-1. The **Email** field of the user is not filled:
-
-   _"Function cannot be started. The 'Email' field is not filled in."_
-
-   ![picture](pictures/error1.png)
-
-2. The email of the user is **already confirmed**:
-
-   _"Function cannot be started. Email {User.Email} has already been successfully confirmed."_
-
+> [!NOTE]
+> The screenshots taken for this article are from v24 and v25 of the platform.
       ![picture](pictures/error2.png)
 
 > [!NOTE]
