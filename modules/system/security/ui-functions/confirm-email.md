@@ -2,7 +2,7 @@
 
 The **Confirm Email** function allows administrators to quickly send a confirmation request to the email address specified in a user's profile.
 
-It streamlines the overall email verification process by saving time and ensuring that a provided address is fully authentic.
+It streamlines the overall email verification process by saving time and ensuring a provided address is up-to-date.
 
 > [!IMPORTANT]
 > The function will **not** work if:
