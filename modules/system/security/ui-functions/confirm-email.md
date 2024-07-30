@@ -84,9 +84,4 @@ If the process is successful, the **Email Confirmed** field of the respective us
 > This feature will be available from version 25 onward. Your current platform instance may not support it yet.
 
 > [!NOTE]
-> The screenshots taken for this article are from v24 and v25 of the platform.
-      ![picture](pictures/error2.png)
-
-> [!NOTE]
-> 
 > The screenshots taken for this article are from v24 of the platform.
