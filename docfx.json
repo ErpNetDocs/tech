@@ -8,7 +8,7 @@
     ],
     "resource": [
       {
-        "files": [ "images/**", "**.svg", "**.png" ],
+        "files": [ "images/**", "**.svg", "**.png", "favicon.ico" ],
         "exclude": [ "docs/**/*.*" ]
       }
     ],
@@ -18,7 +18,8 @@
     "dest": "docs",
     "globalMetadata": {
       "_appTitle": "ERP.net Tech Docs",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_appFaviconPath": "favicon.ico"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
