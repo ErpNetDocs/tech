@@ -327,7 +327,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - b.The user sets it manually
 - c.The key is introduced in version: - 24.1
 
-## 56. /WMS/WMS-Worker/ProductDisplayFormat
+## 61. /WMS/WMS-Worker/ProductDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Product field in the Warehouse order line list.
   Depending on the entered key value - in the orders line list, you can see the data you need from the current Warehouse order line.
   The value is entered as an interpolated string. You can use also format specifiers. <br>
@@ -335,7 +335,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - b.If the key is not defined, the WMS Worker will display the default information, coming from the Product field and follow the default Web client display text format for Product, which is Product.Name.
 - c.The user sets it manually.
 
-## 57. /WMS/WMS-Worker/LocationDisplayFormat
+## 62. /WMS/WMS-Worker/LocationDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Location field in the Warehouse order line list.
   Depending on the entered key value - in the orders list, you can see the data you need from the current Warehouse order line.
   The value is entered as an interpolated string. You can use also format specifiers. <br>
