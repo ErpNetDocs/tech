@@ -340,5 +340,5 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   Depending on the entered key value - in the orders list and inside the WO, you can see the data you need from the current Warehouse order line.
   The value is entered as an interpolated string. You can use also format specifiers. <br>
   For example "location: {Location} ; forklift - {@Property2: VD}" will be displayed as "location: 01-02-A2 ; forklift: 01:yes"
-- b.If the key is not defined, the WMS Worker will display the default information, which is coming from coming from the Location field.
+- b.If the key is not defined, the WMS Worker will display the default information, which is coming from the Location field.
 - c.The user sets it manually.
