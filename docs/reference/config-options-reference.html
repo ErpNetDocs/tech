@@ -489,6 +489,24 @@ When the key has value &quot;1&quot; the warning message will be displayed and t
 <li>b.The user sets it manually</li>
 <li>c.The key is introduced in version: - 24.1</li>
 </ul>
+<h2 id="56-wmswms-workerproductdisplayformat">56. /WMS/WMS-Worker/ProductDisplayFormat</h2>
+<ul>
+<li>a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Product field in the Warehouse order line list.
+Depending on the entered key value - in the orders line list, you can see the data you need from the current Warehouse order line.
+The value is entered as an interpolated string. You can use also format specifiers. <br>
+For example &quot;my product: {Product.PartNumber}; size: {@Property1: VD}&quot; will be displayed as &quot;my product: 0000001 ; size: 01:big&quot;</li>
+<li>b.If the key is not defined, the WMS Worker will display the default information, coming from the Product field and follow the default Web client display text format for Product, which is Product.Name.</li>
+<li>c.The user sets it manually.</li>
+</ul>
+<h2 id="57-wmswms-workerlocationdisplayformat">57. /WMS/WMS-Worker/LocationDisplayFormat</h2>
+<ul>
+<li>a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Location field in the Warehouse order line list.
+Depending on the entered key value - in the orders list, you can see the data you need from the current Warehouse order line.
+The value is entered as an interpolated string. You can use also format specifiers. <br>
+For example &quot;location: {Location} ; forklift - {@Property2: VD}&quot; will be displayed as &quot;location: 01-02-A2 ; forklift: 01:yes&quot;</li>
+<li>b.If the key is not defined, the WMS Worker will display the default information, which is coming from the Location field.</li>
+<li>c.The user sets it manually.</li>
+</ul>
 
 </article>
 
