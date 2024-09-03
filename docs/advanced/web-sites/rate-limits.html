@@ -130,11 +130,13 @@
 <p>A session requests per minute (RPM) rate limit restricts the number of API requests that can be made within a single session, measured over a one-minute period.</p>
 <p>The default session RPM rate limit is set to 600, allowing up to 600 requests per minute. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests.</p>
 <h3 id="sessionconcurrentrequests">SessionConcurrentRequests</h3>
-<p>Session concurrent requests is a rate limit that restricts the number of simultaneous API requests within a single session. The default limit is set to 1, allowing only one request at a time during a session. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests until the previous request is completed.</p>
+<p>Session concurrent requests is a rate limit that restricts the number of simultaneous API requests within a single session. The default limit is set to 1, allowing only one request at a time during a session.</p>
+<p>If the concurrency limit is reached, an internal queue with a size of 5 is used to hold additional requests. If the queue is full, all further requests will immediately return a 429 - Too Many Requests response.</p>
 <h3 id="sessionconcurrenttransactions">SessionConcurrentTransactions</h3>
 <p>Session concurrent transactions is a rate limit that restricts the number of simultaneous API transactions within a session. By default, only one open transaction is allowed at a time during a session. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests until the current transaction is completed.</p>
 <h3 id="globalconcurrentrequests">GlobalConcurrentRequests</h3>
-<p><code>GlobalConcurrentRequests</code> is a rate limit that restricts the total number of concurrent API requests across all sessions. The default limit is set to 2, but it can be configured to allow up to the lesser of the number of processor cores or 4 concurrent requests. If this global limit is exceeded, new requests will receive an HTTP response of 429 - Too Many Requests until the number of active requests falls below the threshold.</p>
+<p><code>GlobalConcurrentRequests</code> is a rate limit that restricts the total number of concurrent API requests across all sessions. The default limit is set to 2, but it can be configured to allow up to the lesser of the number of processor cores or 4 concurrent requests.</p>
+<p>If the concurrency limit is reached, an internal queue with a size of 5 is used to hold additional requests. If the queue is full, all further requests will immediately return a 429 - Too Many Requests response.</p>
 <h2 id="configuring-rate-limits">Configuring rate limits</h2>
 <p>The limits above are the default ones. You may specify others in the related web site definition.</p>
 <p><img src="pictures/website-settings.png" alt="Web-site-settings"></p>
