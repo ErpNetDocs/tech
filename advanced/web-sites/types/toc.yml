@@ -2,3 +2,5 @@
   href: index.md
 - name: DOMAIN API
   href: domain-api.md
+- name: TABLE API
+  href: table-api.md  

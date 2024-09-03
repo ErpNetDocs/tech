@@ -6,27 +6,37 @@ Exceeding any type of limit will result in an HTTP response `429 - Too Many Requ
 
 ## Types
 
-@@erpnet introduces several types rate limits, each targeting a specific use case. All are summarized in the following table and further described in more detail below:
+"@@erpnet introduces several types of rate limits, each targeting a specific use case. These rate limits are summarized in the following table and described in more detail below.
 
 | Rate limit | Config key | Default value |
 | ----------- | ----------- |
 | Requests per minute per session | `SessionRpm` | 600 |
 | Concurrent requests per session | `SessionConcurrentRequests` | 1 |
 | Concurrent transactions per session | `SessionConcurrentTransactions` | 1 |
+| Global concurrent requests | `GlobalConcurrentRequests` | 2 |
+
+> [!NOTE]
+> 
+> Please note that the support for these rate limits may vary across different websites, so you should refer to the documentation of the specific site you are interested in for more information.
+> 
 
 ### SessionRpm
 
-A session requests per minute rate limit (RPM) is a type of rate limit that restricts the number of API requests made within a single session, measured in minutes. 
+A session requests per minute (RPM) rate limit restricts the number of API requests that can be made within a single session, measured over a one-minute period.
 
-The default session RPM rate limit is set to 600, allowing for up to 600 requests to be made in a one-minute session. Exceeding the limit will result in an HTTP response `429 - Too Many Requests`.
+The default session RPM rate limit is set to 600, allowing up to 600 requests per minute. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests.
 
 ### SessionConcurrentRequests
 
-Session concurrent requests is a rate limit that restricts the number of concurrent API requests within a single session. The default limit is 1, allowing only one request at a time during a session. Exceeding the limit will result in an HTTP response `429 - Too Many Requests` until the previous request is completed.
+Session concurrent requests is a rate limit that restricts the number of simultaneous API requests within a single session. The default limit is set to 1, allowing only one request at a time during a session. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests until the previous request is completed.
 
 ### SessionConcurrentTransactions
 
-Session concurrent transactions is a rate limit that restricts the number of concurrent API transactions within a session. The default behavior allows only one open transaction at a time during a session. Exceeding the limit will result in an HTTP response `429 - Too Many Requests` until the previous transaction is open.
+Session concurrent transactions is a rate limit that restricts the number of simultaneous API transactions within a session. By default, only one open transaction is allowed at a time during a session. Exceeding this limit will result in an HTTP response of 429 - Too Many Requests until the current transaction is completed.
+
+### GlobalConcurrentRequests
+
+`GlobalConcurrentRequests` is a rate limit that restricts the total number of concurrent API requests across all sessions. The default limit is set to 2, but it can be configured to allow up to the lesser of the number of processor cores or 4 concurrent requests. If this global limit is exceeded, new requests will receive an HTTP response of 429 - Too Many Requests until the number of active requests falls below the threshold.
 
 ## Configuring rate limits
 

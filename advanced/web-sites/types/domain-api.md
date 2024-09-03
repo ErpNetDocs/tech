@@ -17,6 +17,14 @@ Domain API is subject to rate limiting, which means that the number of requests 
 
 For more information, see the separate topic **[Rate limits](../rate-limits.md)**.
 
+### Applicable rate limits
+
+Below are the rate limiting options supported by Domain API:
+
+- **[SessionRpm](../rate-limits.md#sessionrpm)** - Limits API requests per minute per session.
+- **[SessionConcurrentRequests](../rate-limits.md#sessionconcurrentrequests)** - Restricts simultaneous API requests in a session.
+- **[SessionConcurrentTransactions](../rate-limits.md#sessionconcurrenttransactions)** - Limits the number of concurrent transactions in a session.
+
 -------------
 ## See more
 
