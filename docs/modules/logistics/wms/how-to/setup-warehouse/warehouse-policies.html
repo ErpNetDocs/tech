@@ -176,6 +176,7 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 </tr>
 </tbody>
 </table>
+<p>| PreviouslyEnteredQuantityIsAcceptedDirectly | <strong>Description:</strong> This policy allows you ti decide when a quantity screen is visible and how to enter quantities when executing lines . <br><br> <strong>Possible values:</strong> true/false <br><br> <strong>Action:</strong> Used in the Executing orders' lines in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „true“, then the Quantity screen won't show up when executing lines. When a single barcode is scanned then this is accepted as 1 PCE. If more quantity is scanned, for example, 300 PCE (300*), and then the barcode is scanned, the accepted quantity will be 300 PCE. <br><br> If there is an applicable policy to the Warehouse and its value is „false“ or there is no defined policy, the default behavior is used. The Quantity screen will always show up and you can enter or edit the entered quantities in it.|</p>
 <h1 id="applicability">Applicability</h1>
 <p>You set up each warehouse policy by defining the conditions where it applies, to which products and for how long.</p>
 <p>Each warehouse policy can apply to:</p>
