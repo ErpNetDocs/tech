@@ -103,35 +103,35 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">AllowProductChange</td>
+<td style="text-align: left;"><strong>AllowProductChange</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Allows execution with a different product than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Product which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different product, the app will make a negative sound and will display a pop message: <em>“Product change is not allowed. Please select the suggested product.”</em> <br><br> Otherwise, the Product can be changed during the execution.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AllowLotChange</td>
+<td style="text-align: left;"><strong>AllowLotChange</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Allows execution with a different lot than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br>  If there is an applicable policy to the line and its value is „false“, then the Lot (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br>  If the user tries to enter a different lot, the app will make a negative sound and will display a pop message: <em>“Lot change is not allowed. Please select the suggested lot.”</em> <br><br> Otherwise, the Lot can be changed during the execution.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AllowLocationChange</td>
+<td style="text-align: left;"><strong>AllowLocationChange</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Allows execution from a different location than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Warehouse Location (if any) which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different location, the app will make a negative sound and will display a pop message: <em>&quot;Location change is not allowed. Please select the suggested location.&quot;</em> <br><br> Otherwise, the Location can be changed during the execution.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AllowUnitChange</td>
+<td style="text-align: left;"><strong>AllowUnitChange</strong></td>
 <td style="text-align: left;"><strong>Description:</strong>_ Allows execution of a quantity in a different measurement unit than the ordered. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „false“, then the Quantity Unit which was initially specified in the Warehouse Order Line cannot be changed during the line execution. <br><br> If the user tries to enter a different quantity unit, the app will make a negative sound and will display a pop message: <em>&quot;Quantity Unit change is not allowed. Please select the suggested quantity unit.&quot;</em> <br><br> Otherwise, the Unit can be changed during the execution.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequireSourceScan</td>
+<td style="text-align: left;"><strong>RequireSourceScan</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Requires scanning of the source location when receiving, moving or dispatching. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „true“, then the interface of the Location screen won‘t allow easy selection of the Warehouse Location. <br><br> The USE button will be hidden and the selection through the availability table will be inactive.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequireDestinationScan</td>
+<td style="text-align: left;"><strong>RequireDestinationScan</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Requires scanning of the destination location when moving. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „true“, then the interface of the Destination screen won‘t allow easy selection of the Warehouse Location. <br><br> The USE button will be hidden and the selection through the availability table will be inactive.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequireProductScan</td>
+<td style="text-align: left;"><strong>RequireProductScan</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Requires scanning of the product. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders execution in the WMS Worker app. <br><br> If there is an applicable policy to the line and its value is „true“, then the interface of the Product screen won‘t allow easy selection of the Product. <br><br> The USE button will be hidden and the selection through the availability table will be inactive.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AllowLineSkip</td>
+<td style="text-align: left;"><strong>AllowLineSkip</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Allows skipping of an order line when executing (allow quantity = 0). <br><br> Not planned for release at the moment.</td>
 </tr>
 <tr>
@@ -139,43 +139,43 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 <td style="text-align: left;"><strong>Description:</strong> Specifies the type of zone for receiving, shipping, packing, etc. <br> Can be saved only if the Warehouse and Zone fields are filled in. <br> The policy is hierarchical, this means that if it set for a particular zone it will applies to all of its subzones. <br><br> <strong>Possible values:</strong> picking, packing, receiving, shipping, and storage. <br><br> <strong>Action:</strong> Currenty only the picking value is taken into account of the algorithms. It is used by the <a href="xref:suggest-warehouse-locations">Suggest warehouse locations funtion</a>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">KittingControllingLevel</td>
+<td style="text-align: left;"><strong>KittingControllingLevel</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Used when working with composite products. Specifies the level of control during the kitting of the composite product’s components. <br><br> <strong>Possible values:</strong> 10, 20, 30, 40, 50 <br><br> <strong>Action:</strong> Depends on the specified level. For more information, see <a class="xref" href="../../composite-products/control-levels.html">Levels of control for composite products</a> .</td>
 </tr>
 <tr>
-<td style="text-align: left;">DekittingControllingLevel</td>
+<td style="text-align: left;"><strong>DekittingControllingLevel</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Used when working with composite products. Specifies the level of control during the dekitting of the composite product. <br><br> <strong>Possible values:</strong> 10, 20, 30, 40, 50 <br><br> <strong>Action:</strong> Depends on the specified level. For more information, see <a class="xref" href="../../composite-products/control-levels.html">Levels of control for composite products</a> .</td>
 </tr>
 <tr>
-<td style="text-align: left;">GS1SSCCCompanyPrefix</td>
+<td style="text-align: left;"><strong>GS1SSCCCompanyPrefix</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Used when working with logistic units and GS1 SSCC barcodes. Specifies the GS1 company prefix issued by the national GS1 organization. <br><br> <strong>Possible values:</strong> а digit number <br><br> <strong>Action:</strong> Used by alghorithm that generates SSCC codes of the logistic units.</td>
 </tr>
 <tr>
-<td style="text-align: left;">GS1SSCCNextSerial</td>
+<td style="text-align: left;"><strong>GS1SSCCNextSerial</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Used when working with logistic units and GS1 SSCC barcodes. Specifies the next reference serial number used when generating SSCC codes. А digit number acting as a counter: e.g. 0000001, 0000002… Must be set up after the GS1SSCCCompanyPrefix policy, because its allowed lenght depends on the GS1SSCCCompanyPrefix value's lenght.<br><br> <strong>Possible values:</strong> а digit number, with lenght that is equal to &quot;16 - GS1CompanyPrefix value's lenght&quot;.<br><br> <strong>Action:</strong> Used by alghorithm that generates SSCC codes of the logistic units.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CustomRouting</td>
+<td style="text-align: left;"><strong>CustomRouting</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Specifies a custom routing, based on a user-defined attribute of the locations. The policy specifies the code of the user-defined attribute, whose values contain the sequence of the route. The custom routing is employed by the Suggest Routing function and can be defined only at warehouse level.<br><br> <strong>Possible values:</strong> all values are possible, but only a value of a Custom Property Code, which has values in the Warehouse Locations table will affect the Suggest Routing Function <br><br> <strong>Action:</strong> The Suggest Routing function in the Warehouse Order Execution will use the Custom Property Values in the Warehouse Locations panel. The Suggest Routings function will suggest Locations in the order described in the Custom Property Values. The values are taken as a string, so you have to write the values in this format 001,002,003...010..100.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UnassignedOrdersSectionVisibility</td>
+<td style="text-align: left;"><strong>UnassignedOrdersSectionVisibility</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Depending on your warehouse's organization, you can prevent warehouse workers from seeing and taking Unassigned orders. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders list in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „false“, then the Unassigned section will be hidden from the Workers' orders list in this Warehouse. <br><br> If there is an applicable policy to the Warehouse and its value is „true“ or there is no defined policy, then the Unassigned section will be visible in the Workers' orders list in this Warehouse. <br><br>The policy can be defined only at warehouse level.</td>
 </tr>
 <tr>
-<td style="text-align: left;">StartedByOthersSectionVisibility</td>
+<td style="text-align: left;"><strong>StartedByOthersSectionVisibility</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Depending on your warehouse's organization, you can prevent warehouse workers from seeing and joining Started by others orders. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders list in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „false“, then the Stared by Others section will be hidden from the Workers' orders list in this Warehouse. <br><br> If there is an applicable policy to the Warehouse and its value is „true“ or there is no defined policy, then the Started by Others section will be visible in the Workers' orders list in this Warehouse. <br><br>The policy can be defined only at warehouse level.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssignedToOthersSectionVisibility</td>
+<td style="text-align: left;"><strong>AssignedToOthersSectionVisibility</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Depending on your warehouse's organization, you can prevent warehouse workers from seeing and taking Assigned to Others orders. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders list in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „false“, then the Assigned to Others section will be hidden from the Workers' orders list in this Warehouse. <br><br> If there is an applicable policy to the Warehouse and its value is „true“ or there is no defined policy, then the Assigned to Others section will be visible in the Workers' orders list in this Warehouse. <br><br>The policy can be defined only at warehouse level.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LogisticUnitScreenVisibility</td>
+<td style="text-align: left;"><strong>LogisticUnitScreenVisibility</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> When executing an order line, with this policy you can decide when a logistic unit screen is visible. <br><br> <strong>Possible values:</strong> always, default, never <br><br> <strong>Action:</strong> Used in the Executing orders' lines in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „always“, then the Logistic Unit screen will always show up when executing lines. <br><br> If there is an applicable policy to the Warehouse and its value is „default“ or there is no defined policy, then the Logistic Unit screen will show up only if you selected one in the Warehouse Order Line before executing it with the WMS Worker. And also when there is an availability in some Logistic unit for this Product. <br><br>If there is an applicable policy to the Warehouse and its value is „never“, then the Logistic Unit screen will never show up when executing lines.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SkipQuantityScreen</td>
+<td style="text-align: left;"><strong>SkipQuantityScreen</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> This policy allows you to decide when a quantity screen is visible and how to enter quantities when executing lines . <br><br> <strong>Possible values:</strong> true/false <br><br> <strong>Action:</strong> Used in the Executing orders' lines in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „true“, then the Quantity screen won't show up when executing lines. When a single barcode is scanned then this is accepted as 1 PCE. If more quantity is scanned, for example, 300 PCE (300*), and then the barcode is scanned, the accepted quantity will be 300 PCE. <br><br> If there is an applicable policy to the Warehouse and its value is „false“ or there is no defined policy, the default behavior is used. The Quantity screen will always show up and you can edit the quantities in it.</td>
 </tr>
 </tbody>
