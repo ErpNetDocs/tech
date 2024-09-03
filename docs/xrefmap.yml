@@ -403,3 +403,6 @@ references:
 - uid: wst-DOMAINAPI
   name: Domain API
   href: advanced/web-sites/types/domain-api.html
+- uid: wst-TABLEAPI
+  name: Table API
+  href: advanced/web-sites/types/table-api.html

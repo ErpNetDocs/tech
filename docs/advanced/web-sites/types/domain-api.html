@@ -93,6 +93,13 @@
 <h2 id="rate-limits">Rate limits</h2>
 <p>Domain API is subject to rate limiting, which means that the number of requests you can make within a given time period is limited. The rate limit policy for this API includes multiple constraints, such as the maximum number of requests per minute, maximum number of concurrent requests, and so on. If you exceed any of these constraints, your requests may be rejected with an error response.</p>
 <p>For more information, see the separate topic <strong><a href="../rate-limits.html">Rate limits</a></strong>.</p>
+<h3 id="applicable-rate-limits">Applicable rate limits</h3>
+<p>Below are the rate limiting options supported by Domain API:</p>
+<ul>
+<li><strong><a href="../rate-limits.html#sessionrpm">SessionRpm</a></strong> - Limits API requests per minute per session.</li>
+<li><strong><a href="../rate-limits.html#sessionconcurrentrequests">SessionConcurrentRequests</a></strong> - Restricts simultaneous API requests in a session.</li>
+<li><strong><a href="../rate-limits.html#sessionconcurrenttransactions">SessionConcurrentTransactions</a></strong> - Limits the number of concurrent transactions in a session.</li>
+</ul>
 <hr>
 <h2 id="see-more">See more</h2>
 <ul>
