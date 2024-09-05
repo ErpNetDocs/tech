@@ -137,3 +137,6 @@ Content-Length: 153
 - **[Create a card in Trello](../user-business-rules/examples/trello-create-card.md)**
 - **[Send a message in a channel in Slack](../user-business-rules/examples/slack-send-message.md)**
 - **[String interpolation](../string-interpolation/index.md)**
+
+> [!NOTE]
+> The screenshots taken for this article are from v24 of the platform.
