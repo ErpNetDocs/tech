@@ -24,13 +24,13 @@ The process of triggering a webhook is divided into two stages.
 
 The webhook template is just an entity, part of the Systems.Core namespace ([Systems.Core.WebHooks](https://docs.erp.net/model/entities/Systems.Core.WebHooks.html)).
 
-![Webhooks entity](./pictures/webhooks-repo-focus.png)
+![Webhooks entity](./pictures/Web_Hookes_path_05_09.png)
 
 The attributes are self-explanatory and must be filled in to meet the requirements of the external system (which will de facto receive the webhook).
 
 Let's see some of the more interesting attribute values in the example below.
 
-![Webhooks add/edit](./pictures/webhooks-onerow-edit.png)
+![Webhooks add/edit](./pictures/Web_Hookes_info_05_09.png)
 
 The **Repository Name** must match the one in the user business rule.
 
@@ -70,7 +70,7 @@ We already have a webhook template, but the final step is to reference it from a
 
 Let's take a look at the picture below:
 
-![Webhook in a UBR](./pictures/webhooks-ubr-view.png)
+![Webhook in a UBR](./pictures/Web_Hookes_Bussiness_Rule_05_09.png)
 
 This is the definition of a user business rule. The following key points need to be mentioned:
 
