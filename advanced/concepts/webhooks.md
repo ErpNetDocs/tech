@@ -131,7 +131,7 @@ Content-Length: 153
 ## **See more**
 
 - **[Webhook wiki](https://en.wikipedia.org/wiki/Webhook)**
-- **[WebHooks entity](https://docs.erp.net/model/entities/Systems.Core.WebHooks.html)**
+- **[WebHooks entity](https://docs.erp.net/model/entities/Systems.Config.WebHooks.html)**
 - **[Webhook action type](../user-business-rules/action-types/webhook.md)**
 - **[Send a message to Azure Service Bus](../user-business-rules/examples/azure-service-bus-send-message.md)**
 - **[Create a card in Trello](../user-business-rules/examples/trello-create-card.md)**
