@@ -957,6 +957,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/Web_Hookes_Bussiness_Rule_05_09.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/Web_Hookes_Bussiness_Rule_05_09.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/Web_Hookes_info_05_09.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/Web_Hookes_info_05_09.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/concepts/pictures/Web_Hookes_path_05_09.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/concepts/pictures/Web_Hookes_path_05_09.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "advanced/concepts/pictures/realtime-events-not-web-stacked.png",
       "output": {
         "resource": {

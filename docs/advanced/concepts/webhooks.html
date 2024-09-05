@@ -85,33 +85,33 @@
         </div>
 
         <article data-uid="">
-<h1 id="webhooks">Webhooks</h1>
+<h1 id="webhooks"><strong>Webhooks</strong></h1>
 
-<p>Seemingly, a webhook is just an HTTP POST request, but behind the curtains this simple form of messaging can be responsible for a variety of use cases. In practice the webhooks are used as custom callbacks. These callbacks are triggered when a specific event occurs.</p>
-<h2 id="use-cases">Use cases</h2>
+<p>Seemingly, a webhook is just an HTTP POST request, but behind the curtains, this simple form of messaging can be responsible for a variety of use cases. In practice, webhooks are used as custom callbacks. These callbacks are triggered when a specific event occurs.</p>
+<h2 id="use-cases"><strong>Use cases</strong></h2>
 <p>The introduction of webhooks reveals a wide variety of use cases. Some brief examples of such:</p>
 <ul>
-<li>Real time custom data synchronization with external systems.</li>
-<li>Ability to implement more complex real time business logic from external applications.</li>
+<li>Real-time custom data synchronization with external systems.</li>
+<li>Ability to implement more complex real-time business logic from external applications.</li>
 <li>Integration with external BPM platform orchestrators.</li>
-<li>Real time message sending to message brokers such as <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview/">Azure Service Bus</a> and <a href="https://www.rabbitmq.com/">RabbitMQ</a>.</li>
-<li>External logging or chat services as <a href="https://slack.com/">Slack</a>, <a href="https://www.graylog.org/">Graylog</a>.</li>
-<li>Issue and project tracking systems- create issues in <a href="https://www.atlassian.com/software/jira/">Jira</a> or cards in a <a href="https://trello.com/">Trello</a> list.</li>
+<li>Real-time message sending to message brokers such as <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview/">Azure Service Bus</a> and <a href="https://www.rabbitmq.com/">RabbitMQ</a>.</li>
+<li>External logging or chat services like <a href="https://slack.com/">Slack</a>, <a href="https://www.graylog.org/">Graylog</a>.</li>
+<li>Issue and project tracking systems - create issues in <a href="https://www.atlassian.com/software/jira/">Jira</a> or cards in a <a href="https://trello.com/">Trello</a> list.</li>
 </ul>
-<h2 id="setting-things-up">Setting things up</h2>
+<h2 id="setting-things-up"><strong>Setting things up</strong></h2>
 <p>The process of triggering a webhook is divided into two stages.</p>
 <ul>
-<li>You need to create a webhook template created that specifies the contents of the webhook, as well as the endpoint it will trigger.</li>
+<li>You need to create a webhook template that specifies the contents of the webhook, as well as the endpoint it will trigger.</li>
 <li>Then you need to have an event that will trigger the webhook via its template. Such an event can be raised by the <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html">user-defined business rules</a>.</li>
 </ul>
-<h3 id="webhook-template">Webhook template</h3>
-<p>The webhook template is just an entity, part of the Systems.Core namespace <a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">(Systems.Core.WebHooks)</a>.</p>
-<p><img src="pictures/webhooks-repo-focus.png" alt="Webhooks entity"></p>
-<p>The attribute are self-explanatory and must be filled in to meet the requirements of the external system (which will de facto receive the webhook).</p>
+<h3 id="webhook-template"><strong>Webhook template</strong></h3>
+<p>The webhook template is just an entity, part of the Systems.Core namespace (<a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">Systems.Core.WebHooks</a>).</p>
+<p><img src="pictures/Web_Hookes_path_05_09.png" alt="Webhooks entity"></p>
+<p>The attributes are self-explanatory and must be filled in to meet the requirements of the external system (which will de facto receive the webhook).</p>
 <p>Let's see some of the more interesting attribute values in the example below.</p>
-<p><img src="pictures/webhooks-onerow-edit.png" alt="Webhooks add/edit"></p>
+<p><img src="pictures/Web_Hookes_info_05_09.png" alt="Webhooks add/edit"></p>
 <p>The <strong>Repository Name</strong> must match the one in the user business rule.</p>
-<p><strong>URL</strong> and <strong>Body</strong> attributes contain the destination address and the body content of the webhook. As you see can they're interpolated strings.</p>
+<p><strong>URL</strong> and <strong>Body</strong> attributes contain the destination address and the body content of the webhook. As you can see, they're interpolated strings.</p>
 <pre><code>https://my.extsvc.com:12345/{EntityName}/{Id}
 
 {{
@@ -122,32 +122,32 @@
     &quot;State&quot;: &quot;{State}&quot;
 }}
 </code></pre>
-<p>After evaluation they will look like this,</p>
+<p>After evaluation, they will look like this:</p>
 <pre><code>https://my.extsvc.com:12345/Srv_Service_Activities/{925bc44b-787e-4e73-b8da-a4dfd2e442b6}
 
 {
-    &quot;Id&quot;: &quot;{925bc44b-787e-4e73-b8da-a4dfd2e442b6}&quot;,
+    &quot;Id&quot;: &quot;925bc44b-787e-4e73-b8da-a4dfd2e442b6&quot;,
     &quot;Number&quot;: &quot;000015&quot;,
     &quot;Date&quot;: &quot;13.01.2022&quot;,
     &quot;Subject&quot;: &quot;Test service activity&quot;,
     &quot;State&quot;: &quot;New&quot;
 }
 </code></pre>
-<p>The Headers content is pretty straightforward. It contains an authorization token as a constant and a format specifier for the body (application/json).</p>
-<h3 id="event-user-business-rule">Event (user business rule)</h3>
+<p>The Headers content is straightforward. It contains an authorization token as a constant and a format specifier for the body (application/json).</p>
+<h3 id="event-user-business-rule"><strong>Event (user business rule)</strong></h3>
 <p>We already have a webhook template, but the final step is to reference it from a user business rule when a particular event occurs.</p>
-<p>Let's take a look at the picture below,</p>
-<p><img src="pictures/webhooks-ubr-view.png" alt="Webook in a UBR"></p>
+<p>Let's take a look at the picture below:</p>
+<p><img src="pictures/Web_Hookes_Bussiness_Rule_05_09.png" alt="Webhook in a UBR"></p>
 <p>This is the definition of a user business rule. The following key points need to be mentioned:</p>
 <ul>
-<li>The business rule is defined for the Applications.Service.ServiceActivities repository.</li>
-<li>It has a defined event of type AGGREGATECLIENTCOMMIT.</li>
-<li>Introduces an action of type WEBHOOK with a single parameter equal to &quot;wh_01&quot;.</li>
+<li>The business rule is defined for the <code>Applications.Service.ServiceActivities</code> repository.</li>
+<li>It has a defined event of type <code>AGGREGATECLIENTCOMMIT</code>.</li>
+<li>Introduces an action of type <code>WEBHOOK</code> with a single parameter equal to <code>&quot;wh_01&quot;</code>.</li>
 </ul>
-<p>Long story short,</p>
-<p><em>A webhook template with code wh_01 will be triggered on each COMMIT in the ServiceActivities aggregate tree.</em></p>
-<h2 id="example">Example</h2>
-<p>А <strong><a href="../user-business-rules/index.html">business rule</a></strong> executes a webhook when a service activity is created or updated.</p>
+<p>Long story short:</p>
+<p><em>A webhook template with code <code>wh_01</code> will be triggered on each <code>COMMIT</code> in the <code>ServiceActivities</code> aggregate tree.</em></p>
+<h2 id="example"><strong>Example</strong></h2>
+<p>A <strong><a href="../user-business-rules/index.html">business rule</a></strong> executes a webhook when a service activity is created or updated.</p>
 <table>
 <thead>
 <tr>
@@ -202,7 +202,7 @@
 </tr>
 </tbody>
 </table>
-<p>The value of the WEBHOOK's Parameter1 is simply the code of the corresponding <a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">Web Hook</a> entity.</p>
+<p>The value of the WEBHOOK's Parameter1 is simply the code of the corresponding <a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">WebHook</a> entity.</p>
 <table>
 <thead>
 <tr>
@@ -241,11 +241,11 @@
 </tr>
 <tr>
 <td>Notes</td>
-<td>Sends a HTTP POST request to the target url, identifying the updated service activity.</td>
+<td>Sends an HTTP POST request to the target URL, identifying the updated service activity.</td>
 </tr>
 </tbody>
 </table>
-<p>The table above shows the webhook template &quot;behind&quot; the code &quot;wh_01&quot;. Note that the values for the URL and body properties are using string interpolation. And because a webhook is by definition just a HTTP POST request, you can see below what the HTTP message would look like, according to the examples above.</p>
+<p>The table above shows the webhook template &quot;behind&quot; the code &quot;wh_01&quot;. Note that the values for the URL and body properties are using string interpolation. And because a webhook is by definition just an HTTP POST request, you can see below what the HTTP message would look like, according to the examples above.</p>
 <pre><code>POST /Srv_Service_Activities HTTP/1.1
 Host: my-external-system:12345
 User-Agent: ERP.net
@@ -261,16 +261,20 @@ Content-Length: 153
 }
 </code></pre>
 <hr>
-<h2 id="see-more">See more</h2>
+<h2 id="see-more"><strong>See more</strong></h2>
 <ul>
 <li><strong><a href="https://en.wikipedia.org/wiki/Webhook">Webhook wiki</a></strong></li>
-<li><strong><a href="https://docs.erp.net/model/entities/Systems.Core.WebHooks.html">WebHooks entity</a></strong></li>
+<li><strong><a href="https://docs.erp.net/model/entities/Systems.Config.WebHooks.html">WebHooks entity</a></strong></li>
 <li><strong><a href="../user-business-rules/action-types/webhook.html">Webhook action type</a></strong></li>
 <li><strong><a href="../user-business-rules/examples/azure-service-bus-send-message.html">Send a message to Azure Service Bus</a></strong></li>
 <li><strong><a href="../user-business-rules/examples/trello-create-card.html">Create a card in Trello</a></strong></li>
 <li><strong><a href="../user-business-rules/examples/slack-send-message.html">Send a message in a channel in Slack</a></strong></li>
 <li><strong><a href="../string-interpolation/index.html">String interpolation</a></strong></li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
 
 </article>
 
