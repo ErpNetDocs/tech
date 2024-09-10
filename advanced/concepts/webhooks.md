@@ -22,7 +22,7 @@ The process of triggering a webhook is divided into two stages.
 
 ### **Webhook template**
 
-The webhook template is just an entity, part of the Systems.Core namespace ([Systems.Core.WebHooks](https://docs.erp.net/model/entities/Systems.Core.WebHooks.html)).
+The webhook template is just an entity, part of the Systems.Core namespace ([Systems.Config.WebHooks](https://docs.erp.net/model/entities/Systems.Config.WebHooks.html)).
 
 ![Webhooks entity](./pictures/Web_Hookes_path_05_09.png)
 
