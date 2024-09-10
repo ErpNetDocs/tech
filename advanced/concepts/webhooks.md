@@ -68,7 +68,7 @@ https://my.extsvc.com:12345/Srv_Service_Activities/{925bc44b-787e-4e73-b8da-a4df
 
 ### 2. Event (user business rule)
 
-We already have a webhook template, but the final step is to reference it from a **[user business rule](../user-business-rules/index.md)** when a particular event occurs.
+We already have a webhook template, but the final step is to reference it from a **[user business rule](https://docs.erp.net/model/entities/Systems.Bpm.Processes.html)** when a particular event occurs.
 
 Let's take a look at the picture below:
 
