@@ -159,6 +159,10 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 <td style="text-align: left;"><strong>Description:</strong> Specifies a custom routing, based on a user-defined attribute of the locations. The policy specifies the code of the user-defined attribute, whose values contain the sequence of the route. The custom routing is employed by the Suggest Routing function and can be defined only at warehouse level.<br><br> <strong>Possible values:</strong> all values are possible, but only a value of a Custom Property Code, which has values in the Warehouse Locations table will affect the Suggest Routing Function <br><br> <strong>Action:</strong> The Suggest Routing function in the Warehouse Order Execution will use the Custom Property Values in the Warehouse Locations panel. The Suggest Routings function will suggest Locations in the order described in the Custom Property Values. The values are taken as a string, so you have to write the values in this format 001,002,003...010..100.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><br><br> The policy can be defined only at warehouse level.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>UnassignedOrdersSectionVisibility</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> Depending on your warehouse's organization, you can prevent warehouse workers from seeing and taking Unassigned orders. <br><br> <strong>Possible values:</strong> true, false <br><br> <strong>Action:</strong> Used in the Orders list in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „false“, then the Unassigned section will be hidden from the Workers' orders list in this Warehouse. <br><br> If there is an applicable policy to the Warehouse and its value is „true“ or there is no defined policy, then the Unassigned section will be visible in the Workers' orders list in this Warehouse. <br><br>The policy can be defined only at warehouse level.</td>
 </tr>
@@ -177,6 +181,10 @@ Different policy kinds have different effect on the system. Some kinds manage ce
 <tr>
 <td style="text-align: left;"><strong>BarcodeScanEntersQuantityOfOnePce</strong></td>
 <td style="text-align: left;"><strong>Description:</strong> If no quantity is entered, scanning a barcode in the SCAN field enters 1 PCE. <br><br> <strong>Possible values:</strong> true/false <br><br> <strong>Action:</strong> Used in the Executing orders' lines in the WMS Worker app. <br><br>If there is an applicable policy to the Warehouse and its value is „true“, then If no quantity is entered, scanning a barcode in the SCAN field enters 1 PCE. <br><br> If there is an applicable policy to the Warehouse and its value is „false“ or there is no defined policy, the default behavior is used. A quantity of 1 PCE will not be entered and the quantity is expected to be entered in the quantity screen.<br><br> Note: If more quantity is scanned, for example, 300 PCE (300*), and then the barcode is scanned, the accepted quantity will be 300 PCE. But this has always happened regardless of the policy value.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Routing algorithm</strong></td>
+<td style="text-align: left;"><strong>Description:</strong> Used for Suggest Routing UI function in Warehouse Order Lines.The policy specifies how the UI function will be executed, depence of the value of this policy.<br><br> <strong>Possible values:</strong> fixed, smart <br><br> <strong>Action:</strong> If there is an applicable policy to the Warehouse and its value is „fixed“, the suggested locations will follow exactly the string of their addresses or their Priorities defined by the Custom Routing policy. There won't be any considerations about the availability of the locations, except for the zero quantities. <br><br> If there is an applicable policy to the Warehouse and its value is „smart“ or there is no defined policy, then default behavior is used. The suggested locations again will follow the string of their addresses or their Priorities defined by the Custom Routing policy, but also their availabilities will be consider.  <br><br> The policy can be defined only at warehouse level.</td>
 </tr>
 </tbody>
 </table>
