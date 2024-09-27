@@ -2,22 +2,23 @@
   href: index.md
 - name: Allow a credit limit override when a client pays in cash
   href: credit-limit-override.md
+- name: Create a card in Trello
+  href: trello-create-card.md
+- name: Manage user status of documents
+  href: manage-user-status.md
+- name: Send a message in Slack
+  href: slack-send-message.md
+- name: Send a message to Azure Service Bus
+  href: azure-service-bus-send-message.md
 - name: Set DeliveryTerms in purchase invoice
   href: set-deliveryterms.md
+- name: Set an initial attribute for a new sales order
+  href: sales-order-init-attribute.md
+- name: Set value into amount and quantity fields
+  href: set-quantity-or-amount.md
+- name: Set value into custom property
+  href: set-value-into-custom-property.md
 - name: Start a business rule only on first releasing
   href: start-business-rule.md
 - name: Whole quantity validation
   href: whole-quantity-validation.md
-- name: Set value into custom property
-  href: set-value-into-custom-property.md
-- name: Send a message to Azure Service Bus
-  href: azure-service-bus-send-message.md
-- name: Create a card in Trello
-  href: trello-create-card.md
-- name: Send a message in Slack
-  href: slack-send-message.md  
-- name: Set an initial attribute for a new sales order
-  href: sales-order-init-attribute.md
-- name: Manage user status of documents
-  href: manage-user-status.md
-  
