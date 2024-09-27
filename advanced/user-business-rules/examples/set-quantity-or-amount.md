@@ -12,7 +12,7 @@ If you want to fill in the **"VATAmountBase"** in VAT Entries entity, you must c
 
 ### More Information
 
-For further details about Amount and Quantity data types, refer to the official documentation:
+For further details about Amount and Quantity data types, refer to the model documentation:
 
 - [Amount Data Type](https://docs.erp.net/model/data-types.html#amount)
 - [Quantity Data Type](https://docs.erp.net/model/data-types.html#quantity)
