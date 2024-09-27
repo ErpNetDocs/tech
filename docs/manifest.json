@@ -2338,6 +2338,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/set-quantity-or-amount.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/set-quantity-or-amount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/set-value-into-custom-property.md",
       "output": {
         ".html": {
