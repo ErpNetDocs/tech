@@ -113,7 +113,7 @@ The options set for the database are visible in the Configurations navigator and
 - b.The user sets it manually.
 
 ## 23. ActiveLanguages
-- a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 15 languages are supported).
+- a.Action: Displays the languages which are active in the current database. If there is no value, all languages are active (currently 140 languages are supported).
 - b.Automatically by the form for editing the languages list, which opens from the Edit Languages menu.
 
 ## 24.  CheckForTransactionInvalidLotDisabled
