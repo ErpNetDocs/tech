@@ -342,3 +342,10 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   For example "location: {Location} ; forklift - {@Property2: VD}" will be displayed as "location: 01-02-A2 ; forklift: 01:yes"
 - b.If the key is not defined, the WMS Worker will display the default information, which is coming from the Location field.
 - c.The user sets it manually.
+
+## 63. /Inv/ListAllStoresForTransfers
+a.Action: When the value of this key is:
+"1" - When the key is defined and its value is 1, all defined stores will be listed in the ToStore field in the Transfer function.
+"0" - When a key is defined and its value is 0 or there is no defined key, only the stores to which the user has permission will be listed.
+b.The user sets it manually.
+c.The key is introduced in version: - 24
