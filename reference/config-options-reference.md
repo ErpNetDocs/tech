@@ -344,8 +344,8 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - c.The user sets it manually.
 
 ## 63. /Inv/ListAllStoresForTransfers
-a.Action: When the value of this key is:
-"1" - When the key is defined and its value is 1, all defined stores will be listed in the ToStore field in the Transfer function.
+- a.Action: When the value of this key is: <br>
+"1" - When the key is defined and its value is 1, all defined stores will be listed in the ToStore field in the Transfer function.<br>
 "0" - When a key is defined and its value is 0 or there is no defined key, only the stores to which the user has permission will be listed.
-b.The user sets it manually.
-c.The key is introduced in version: - 24
+- b.The user sets it manually.
+- c.The key is introduced in version: - 24
