@@ -12,7 +12,7 @@ items: ActionTypes
 | Parameter 1 type | Guid, String, List                                           |
 | Parameter 2      | The text displayed in the notification. |
 | Parameter 2 type | String // usually used in combination with **[formatted string](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html)**  |
-| Parameter 3      | (Optional) The class which will be set for the notification. It must meet the format specified in [R35312 Notifications - Validate Notification Class](/model/business-rules/R35312.md) <br> If the parameter isn't explicitly set, a default value will be used instead: 'USR' + '\_' + 'BR' + '\_'  + 'UserBusinessRule.Code', e.g. 'USR_BR_0005'. <br><br> For more information about classes, see **[Notifications](https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html)**. |
+| Parameter 3      | (Optional) The class which will be set for the notification. It must meet the format specified in [R35312 Notifications - Validate Notification Class](/ErpNetDocs/model/business-rules/R35312.md) <br> If the parameter isn't explicitly set, a default value will be used instead: 'USR' + '\_' + 'BR' + '\_'  + 'UserBusinessRule.Code', e.g. 'USR_BR_0005'. <br><br> For more information about classes, see **[Notifications](https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html)**. |
 | Parameter 3 type | String                                                       |
 | Examples         | see the **Example** section below                            |
 | Version          | Introduced in: 2020.1                                        |
