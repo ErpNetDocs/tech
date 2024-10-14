@@ -42,4 +42,4 @@ NOTIFYUSER is **not** compatible with all events.
 | Change of state       | RELEASED        | Normal             |                  |                                                              |                                             |                 |                         |
 | **Actions**           |                 |                    |                  |                                                              |                                             |                 |                         |
 | Action No             | Action type     | Parameter1 type    | Parameter1 value | Parameter2 type                                              | Parameter2 value                            | Parameter3 type | Parameter3 value        |
-| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | Formatted string | sales order {DocumentNo} has been released. | Constant        | USR_SOReleased_CODE123 |
+| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | Formatted string | sales order {DocumentNo} has been released. | Constant        | USR_SALESPERSON_SORELEASED |
