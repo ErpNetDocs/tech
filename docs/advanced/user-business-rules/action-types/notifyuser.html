@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td>Parameter 3</td>
-<td>(Optional) The class which will be set for the notification. If the parameter isn't explicitly set, a default value will be used instead: 'BR' + '_' + 'UserBusinessRule.Code', e.g. 'BR_0005'. <br><br> For more information about classes, see <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong>.</td>
+<td>(Optional) The class which will be set for the notification. It must meet the format specified in <a href="https://docs.erp.net/model/business-rules/R35312.html">R35312 Notifications - Validate Notification Class</a> <br> If the parameter isn't explicitly set, a default value will be used instead: 'USR' + '_' + 'BR' + '_'  + 'UserBusinessRule.Code', e.g. 'USR_BR_0005'. <br><br> For more information about classes, see <strong><a href="https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html">Notifications</a></strong>.</td>
 </tr>
 <tr>
 <td>Parameter 3 type</td>
@@ -245,7 +245,7 @@
 <td>Formatted string</td>
 <td>sales order {DocumentNo} has been released.</td>
 <td>Constant</td>
-<td>Sales_Person_SOReleased</td>
+<td>USR_SALESPERSON_SORELEASED</td>
 </tr>
 </tbody>
 </table>
