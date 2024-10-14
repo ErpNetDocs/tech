@@ -12,7 +12,7 @@ items: ActionTypes
 | Parameter 1 type | Guid, String, List                                           |
 | Parameter 2      | The text displayed in the notification. |
 | Parameter 2 type | String // usually used in combination with **[formatted string](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/formattedstring.html)**  |
-| Parameter 3      | (Optional) The class which will be set for the notification. If the parameter isn't explicitly set, a default value will be used instead: 'USR' + '_' + 'BR' + '_'  + 'UserBusinessRule.Code', e.g. 'USR_BR_0005'. <br><br> For more information about classes, see **[Notifications](https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html)**. |
+| Parameter 3      | (Optional) The class which will be set for the notification. If the parameter isn't explicitly set, a default value will be used instead: 'USR' + '\_' + 'BR' + '\_'  + 'UserBusinessRule.Code', e.g. 'USR_BR_0005'. <br><br> For more information about classes, see **[Notifications](https://docs.erp.net/tech/modules/community/social-interactions/notifications/index.html)**. |
 | Parameter 3 type | String                                                       |
 | Examples         | see the **Example** section below                            |
 | Version          | Introduced in: 2020.1                                        |
@@ -42,4 +42,4 @@ NOTIFYUSER is **not** compatible with all events.
 | Change of state       | RELEASED        | Normal             |                  |                                                              |                                             |                 |                         |
 | **Actions**           |                 |                    |                  |                                                              |                                             |                 |                         |
 | Action No             | Action type     | Parameter1 type    | Parameter1 value | Parameter2 type                                              | Parameter2 value                            | Parameter3 type | Parameter3 value        |
-| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | Formatted string | sales order {DocumentNo} has been released. | Constant        | Sales_Person_SOReleased |
+| 1                     | NOTIFYUSER      | Attribute          | SalesPersonId    | Formatted string | sales order {DocumentNo} has been released. | Constant        | USR_SOReleased_CODE123 |
