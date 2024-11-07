@@ -350,7 +350,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - b.The user sets it manually.
 - c.The key is introduced in version: - 24
 
-## 64. /Documents/AllowtCompleteWithSubdocumentsIncludingUnreleased
+## 64. /Documents/AllowCompleteWithSubdocumentsIncludingUnreleased
 - a.Action: When the value of this key is: <br>
 "1" - When the key is defined and set to 1, 'Complete with sub-documents, including unreleased' will be available as a Completed status option.<br>
 "0" - When the key is defined and set to 0, or if no key is defined, 'Complete with sub-documents, including unreleased' will not be available as a Completed status option.<br>
