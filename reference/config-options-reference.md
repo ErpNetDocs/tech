@@ -349,3 +349,10 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 "0" - When a key is defined and its value is 0 or there is no defined key, only the stores to which the user has permission will be listed.
 - b.The user sets it manually.
 - c.The key is introduced in version: - 24
+
+## 64. /Documents/ListCompleteWithSubdocumentsIncludingUnreleased
+- a.Action: When the value of this key is: <br>
+"1" - When the key is defined and its value is 1, "Complete with sub - documents including unreleased" will be listed in the Completed status option list.<br>
+"0" - When a key is defined and its value is 0 or there is no defined key, "Complete with sub - documents including unreleased" will not be listed in the Completed status option list.<br>
+- b.The user sets it manually.
+- c.The key is introduced in version: - 25
