@@ -20,7 +20,7 @@ The table below lists the sources for the tags of the Excise declaration xml fil
 | TotalAmountOfExciseDuty| SUM ExciseGoods ( If Payment = 10, DutyAmount; If Payment = 40, - DutyAmount; IF Payment<> 10 and 40, 0) |
 |                                                                                   ||
 |**Customer**||
-| LegalEntity | TWH |
+| LegalEntity | ExciseDeclaration.TaxWarehouse.@Exc_Legal_Entity |
 | ExciseNumber | ExciseDeclaration.TaxWarehouse.TaxWarehouseExciseNumber  |
 | SIC   |MISSING|
 | NotificationNumber|MISSING|
