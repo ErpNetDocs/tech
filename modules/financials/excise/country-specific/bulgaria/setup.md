@@ -101,10 +101,17 @@ The purpose is to indicate in the current e-ADD for differences or not received 
 ### 3.7. TransportationCarrier
 
 - **Exc_TransporterCertificateDateOfIssue** - Transporter Certificate Date OfIssue
+
 - **Exc_TransporterCertificateExperationDate** - Transporter Certificate Experation Date
+
 - **Exc_TransporterCertificateNumber** - Transporter Certificate Number
 
+  
+  
 
+### 3.8. Tax Warehouse
+
+- **Exc_Legal_Entity** - Legal Entity. Номенклатура CL131.
 
 
 
