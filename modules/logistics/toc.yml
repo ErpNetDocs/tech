@@ -1,8 +1,5 @@
 - name: Overview
   href: index.md
-- name: Common
-  href: common/toc.yml
-  topicHref: common/index.md
 - name: Inventory
   href: inventory/toc.yml
   topicHref: inventory/index.md
