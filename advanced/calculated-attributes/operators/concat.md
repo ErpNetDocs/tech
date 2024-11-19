@@ -29,9 +29,9 @@ OUTPUT: <br> If 'Notes  = Apple', the output will be 'RedApple'.
 > 
 > The repository of the attribute is *Crm.Sales.SalesOrderLines*
 
-If you want to expand the example, you can add a space between the both strings:
+If you want to expand the example, you can add a space ( CONST:' ') between the both strings:
 ```
 10: CONCAT CONST:Red EXP:20 
 20: CONCAT CONST:' ' ATTRIB:Notes
 ```
-OUTPUT:<br> If 'Notes  = Apple', the output will be 'Red Apple'.
+OUTPUT:<br> If Notes = Apple, the output will be = Red Apple
