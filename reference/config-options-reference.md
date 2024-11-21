@@ -320,12 +320,12 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 ## 59. AI/Assistant/DebugMode
 - a.Action: When this key has a value of '1', it determines whether an AI assistant will operate in debug mode.
 - b.The user sets it manually
-- c.The key is introduced in version: - 24.1
+- c.The key is introduced in version: - 24
 
 ## 60. AI/Assistant/AdditionalInstructions
 - a.Action: Additional instructions, passed to the AI assistant.
 - b.The user sets it manually
-- c.The key is introduced in version: - 24.1
+- c.The key is introduced in version: - 24
 
 ## 61. /WMS/WMS-Worker/ProductDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Product field in the Warehouse order line list.
@@ -348,7 +348,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 "1" - When the key is defined and its value is 1, all defined stores will be listed in the ToStore field in the Transfer function.<br>
 "0" - When a key is defined and its value is 0 or there is no defined key, only the stores to which the user has permission will be listed.
 - b.The user sets it manually.
-- c.The key is introduced in version: - 24
+- c.The key is introduced in version: - 24 SP5
 
 ## 64. /Documents/AllowCompleteWithSubdocumentsIncludingUnreleased
 - a.Action: When the value of this key is: <br>
