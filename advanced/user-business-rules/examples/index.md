@@ -1,3 +1,3 @@
 # User business rules - Examples
 
-[!list items=UserBusinessRulesExamples limit=100 default-text="None"]
+[!list folder="." depth=0 style="bullet" limit=100]

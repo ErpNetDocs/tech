@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # How to send a message in a channel in Slack when voiding a sales order?
 
 The following is required to send a message in Slack when а sales order is voiding:

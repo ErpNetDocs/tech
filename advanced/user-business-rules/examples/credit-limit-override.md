@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # Allow a credit limit override when a client pays in cash
 
 If the system type of a payment type in a sales order document is set as 'In cash', you can create a **[business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** that inserts a check mark in the field *Credit Limit Override*.

@@ -1,9 +1,13 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # How to use business rules to set a value into a custom property?
 
 You can use **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** to set values into different fields, including custom properties **[action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html)**. 
 
 To set a value into a custom property, you'll either copy or get that value from another custom property. Alternatively, you can use an attribute/field/constant with data type 'String'.
- 
+
 **Example 1** 
 
 Let's say you have a sales order document.
@@ -31,11 +35,11 @@ Action No|Action type|Parameter1 type|Parameter1 value|Parameter2 type|Parameter
 > [!NOTE] 
 > 
 > Both the custom property's **value** and **description** are copied.
- 
+
 > [!NOTE] 
 > 
 > In this case, there are **NO** limitations for custom properties in which you set the value to inherit its allowed values from another entity or custom property. The only condition is the setting in both custom properties to follow the principles described in **Inheriting and copying custom properties**.
- 
+
 **Example 2** 
 
 Let's say you have a sales order document.

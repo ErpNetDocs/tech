@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # Whole quantity validation
 
 If a business logic requires only whole numbers, a **[user business rule](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** can be set to check users' work.

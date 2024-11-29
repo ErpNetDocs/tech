@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 ## Set value into Amount and Quantity fields
 
 Values cannot be set directly in the main **Amount** and **Quantity** fields, as these fields require a specific format that includes both a 'Value' and a 'Unit of Measure.

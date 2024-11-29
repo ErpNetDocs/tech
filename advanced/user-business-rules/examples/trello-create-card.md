@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # How to create a card in Trello when a sales order has been released?
 
 To successfully create a Trello card, you need the following:

@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # How to send a message to Azure Service Bus when an entity is created or updated?
 
 To be able to send a message to Azure Service Bus you need to have a:

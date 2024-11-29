@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # Set the VAT rate depending on Deal type
 
 In Sales orders, the VAT rate can be set dynamically based on the selected DealType in the header using the following rule.

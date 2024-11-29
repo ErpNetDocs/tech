@@ -1,3 +1,7 @@
+---
+items: UserBusinessRuleExamples
+---
+
 # Manage the user status of a document
 
 You can use system variables for **[business rules](https://docs.erp.net/tech/advanced/user-business-rules/index.html)** with the "STATECHANGED" and "STATECHANGING" events to trigger specific actions when changing the user status of a document.
