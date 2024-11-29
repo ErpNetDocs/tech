@@ -1,3 +1,3 @@
 # Operators
 
-[!list items=Operators limit=100 default-text="None"]
+[!list folder="." depth=0 style="bullet" limit=200]
