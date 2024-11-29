@@ -18,7 +18,7 @@
   href: set-quantity-or-amount.md
 - name: Set value into custom property
   href: set-value-into-custom-property.md
-- name: set-vat-percent-by-deal-type
+- name: Set the VAT rate depending on DealType
   href: set-vat-percent-by-deal-type.md
 - name: Start a business rule only on first releasing
   href: start-business-rule.md
