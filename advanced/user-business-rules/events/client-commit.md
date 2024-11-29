@@ -1,3 +1,8 @@
+---
+uid: client-commit
+items: events
+---
+
 # CLIENT COMMIT
 
 <br>

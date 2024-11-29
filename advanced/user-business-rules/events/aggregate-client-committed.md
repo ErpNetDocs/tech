@@ -1,5 +1,6 @@
 ---
 uid: aggregate-client-committed
+items: events
 ---
 
 # AGGREGATE CLIENT COMMITTED

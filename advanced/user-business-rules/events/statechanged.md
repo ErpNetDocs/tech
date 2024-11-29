@@ -1,11 +1,16 @@
+---
+uid: statechanged
+items: events
+---
+
 # STATECHANGED
- 
+
 |Name|STATECHANGED
 |:-----|:-----
 |**Layer**|Back-end
 |**Description**|Occurs when a **[document state](https://docs.erp.net/tech/concepts/documents/states.html)** specified in the _Parameter_ field is changed.
 |**Version**|Introduced: 2017.1 <br> Updated: -
- 
+
 This event occurs **AFTER** the change of the document state but **BEFORE** that change is saved. <br><br>
 
 **Example 1**

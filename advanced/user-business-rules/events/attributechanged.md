@@ -1,3 +1,8 @@
+---
+uid: attributechanged
+items: events
+---
+
 # ATTRIBUTECHANGED
 
 |Name| ATTRIBUTECHANGED

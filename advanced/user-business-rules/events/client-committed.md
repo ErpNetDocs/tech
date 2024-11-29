@@ -1,5 +1,6 @@
 ---
 uid: client-committed
+items: events
 ---
 
 # CLIENT COMMITTED

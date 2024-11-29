@@ -1,3 +1,8 @@
+---
+uid: voiding
+items: events
+---
+
 # VOIDING
 
 <br>

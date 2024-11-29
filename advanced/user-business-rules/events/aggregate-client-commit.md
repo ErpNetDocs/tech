@@ -1,5 +1,6 @@
 ---
 uid: aggregate-client-commit
+items: events
 ---
 
 # AGGREGATE CLIENT COMMIT

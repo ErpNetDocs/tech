@@ -1,3 +1,8 @@
+---
+uid: create-new
+items: events
+---
+
 # CREATENEW
 
 |Name| CREATENEW

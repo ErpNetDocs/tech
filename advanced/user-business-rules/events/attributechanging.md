@@ -1,3 +1,8 @@
+---
+uid: attributechanging
+items: events
+---
+
 # ATTRIBUTECHANGING
 
 |Name| ATTRIBUTECHANGING
