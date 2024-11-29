@@ -10,7 +10,7 @@
   href: attributechanging.md
 - name: BEFORERECALCULATE
   href: beforerecalculate.md
-  - name: CLIENT COMMIT
+- name: CLIENT COMMIT
   href: client-commit.md
 - name: CLIENT COMMITTED
   href: client-committed.md
