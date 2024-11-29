@@ -2368,6 +2368,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/examples/set-vat-percent-by-deal-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/examples/set-vat-percent-by-deal-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/examples/slack-send-message.md",
       "output": {
         ".html": {
