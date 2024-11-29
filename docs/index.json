@@ -852,7 +852,7 @@
   "advanced/user-business-rules/examples/index.html": {
     "href": "advanced/user-business-rules/examples/index.html",
     "title": "User business rules - Examples | ERP.net Tech Docs",
-    "keywords": "User business rules - Examples Allow a credit limit override when a client pays in cash Set DeliveryTerms in purchase invoice Start a business rule only on first releasing Whole quantity validation Use business rules to set a value into a custom property Send a message to Azure Service Bus when an entity is created or updated Create a card in Trello when a sales order has been released Send a message in a channel in Slack when voiding a sales order Set an initial attribute for a new sales order Manage user status of documents Set the VAT rate depending on Deal type"
+    "keywords": "User business rules - Examples Allow a credit limit override when a client pays in cash How to create a card in Trello when a sales order has been released? How to send a message in a channel in Slack when voiding a sales order? How to send a message to Azure Service Bus when an entity is created or updated? How to use business rules to set a value into a custom property? Manage the user status of a document Set DeliveryTerms in purchase invoice Set an initial attribute for a new sales order Set the VAT rate depending on Deal type Set value into Amount and Quantity fields Start a business rule only on first releasing Whole quantity validation"
   },
   "advanced/user-business-rules/examples/manage-user-status.html": {
     "href": "advanced/user-business-rules/examples/manage-user-status.html",
