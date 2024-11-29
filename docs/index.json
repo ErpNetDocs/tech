@@ -52,7 +52,7 @@
   "advanced/calculated-attributes/QA/index.html": {
     "href": "advanced/calculated-attributes/QA/index.html",
     "title": "Q & A | ERP.net Tech Docs",
-    "keywords": "Q & A How to check if a custom property has values? How to check if a list has values? How to check if a field that points to a reference object has a value? How to create an optimally fast calculated attribute? How to determine the party type of a party? How to get an attribute value from list? How to get a specific field of a parent document? How to show contact of a person in Persons navigator? How to use the customer as a company? What is the difference between DATESPAN and DATEDIFF operators?"
+    "keywords": "Q & A How to check if a custom property has values? How to check if a field that points to a reference object has a value? How to check if a list has values? How to create an optimally fast calculated attribute? How to determine the party type of a party? How to get attribute value from list? How to get specific field of a parent document? How to show contact of a person in Persons navigator? How to use a customer as a company? What is the difference between DATESPAN and DATEDIFF operators?"
   },
   "advanced/calculated-attributes/QA/what-is-the-difference-between-datespan-and-datediff.html": {
     "href": "advanced/calculated-attributes/QA/what-is-the-difference-between-datespan-and-datediff.html",
@@ -272,7 +272,7 @@
   "advanced/calculated-attributes/operators/index.html": {
     "href": "advanced/calculated-attributes/operators/index.html",
     "title": "Operators | ERP.net Tech Docs",
-    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DATESPAN DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IFERROR IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
+    "keywords": "Operators ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DATESPAN DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IFERROR IIF IN INCNUM INTERPOLATE LEFT LEN LIKE LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "advanced/calculated-attributes/operators/interpolate.html": {
     "href": "advanced/calculated-attributes/operators/interpolate.html",
