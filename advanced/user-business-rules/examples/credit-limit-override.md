@@ -7,7 +7,7 @@ You can get that information using **[this](https://docs.erp.net/tech/advanced/c
 To set a rule to allow a credit limit override when a client pays in cash, use the following data:
 
 |Repository|
-|:----
+|:----|
 |Crm.Sales.SalesOrders
 
 |Events|
