@@ -43,6 +43,9 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: beforerecalculate
+  name: BEFORERECALCULATE
+  href: advanced/user-business-rules/events/beforerecalculate.html
 - uid: bonus-program
   name: Bonus programs
   href: modules/crm/marketing/bonus-programs/index.html

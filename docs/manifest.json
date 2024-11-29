@@ -2095,6 +2095,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/events/beforerecalculate.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/events/beforerecalculate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/user-business-rules/events/client-commit.md",
       "output": {
         ".html": {
@@ -9363,6 +9373,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/issue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/IC_GS1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/IC_GS1_1.png"
         }
       },
       "version": ""

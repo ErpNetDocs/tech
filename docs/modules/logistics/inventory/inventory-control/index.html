@@ -88,7 +88,7 @@
 <h1 id="inventory-control">Inventory Control</h1>
 
 <p>Inventory Control is a mobile inventory management application designed to speed up and simplify basic operations with store orders. It's perfectly suitable for shops and smaller stores.</p>
-<p>It follows a similar logic to the <strong>BarCodeCommand</strong> panel from within the <strong>Desktop Client</strong>, but much simpler. It works only with a simple barcodes and allows workers to complete their daily tasks quickly, without going through the more complex procedures of the <strong><a href="/modules/logistics/wms/wms-worker/index.md">WMS module</a></strong>.</p>
+<p>It follows a similar logic to the <strong>BarCodeCommand</strong> panel from within the <strong>Desktop Client</strong>, but much simpler. It allows workers to complete their daily tasks quickly, without going through the more complex procedures of the <strong><a href="/modules/logistics/wms/wms-worker/index.md">WMS module</a></strong>.</p>
 <p>You can <strong>receive</strong>, <strong>issue</strong>, <strong>reconcile</strong>, <strong>transfer</strong> and <strong>scrap</strong> orders in just a few steps. These actions are <strong>not</strong> synchronized in real-time with the ERP.net system - you need to create the respective receipt transaction, issue transaction, transfer order, and reconciliation documents in order to reflect them.</p>
 <p><img src="pictures/Index_view_25_01.png" alt="Inventory Control"></p>
 <h3 id="prerequisites">Prerequisites</h3>
@@ -131,6 +131,51 @@
 <p>If you need to scan <strong>multiple</strong> quantities of your product, you can provide a quantity into the Scan field.</p>
 <p>Once you tap on the product's code, you can enter <strong>all</strong> of the quantities at once.</p>
 <p><img src="pictures/Multiple_scanning_26_01.png" alt="Inventory Control"></p>
+<h3 id="scan-a-gs1">Scan a GS1</h3>
+<p>Inventory Control also supports GS1 Barcodes and recognizes a number of GS1 application identifiers.</p>
+<p>GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.</p>
+<p>Inventory Control works with some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.</p>
+<p>A list of the identifiers that are recognized:</p>
+<table>
+<thead>
+<tr>
+<th>Identifier</th>
+<th>Description</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(01)</td>
+<td>Global Trade Item Number (GTIN)</td>
+<td>14</td>
+</tr>
+<tr>
+<td>(02)</td>
+<td>Global Trade Item Number (GTIN) of contained trade items</td>
+<td>14</td>
+</tr>
+<tr>
+<td>(10)</td>
+<td>Lot number</td>
+<td>variable, up to 20</td>
+</tr>
+<tr>
+<td>(21)</td>
+<td>Serial number</td>
+<td>variable, up to 20</td>
+</tr>
+<tr>
+<td>(37)</td>
+<td>Count of trade items</td>
+<td>variable, up to 8</td>
+</tr>
+</tbody>
+</table>
+<p>Once triggered, it tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line.
+If there is no matching line – it throws an error message and stops the execution.</p>
+<p>For example, if there is a Store Order line that contains a product with Part Number 000008, a specific lot 77677, and a quantity of 300 pcs and you scan the following barcode (02)000008(10)77677(37)300, this line will be automatically fulfilled.
+<img src="pictures/IC_GS1_1.png" alt="Inventory Control"></p>
 <h3 id="continue-last-started-operation">Continue last started operation</h3>
 <p>Inventory Control allows you to <strong>resume</strong> the last operation you were performing.</p>
 <p>If you exited a receive operation mid-way, for example, it will be displayed as a <strong>shortcut</strong> in the main menu.</p>
