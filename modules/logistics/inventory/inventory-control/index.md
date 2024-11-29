@@ -4,25 +4,7 @@ Inventory Control is a mobile inventory management application designed to speed
 
 It follows a similar logic to the **BarCodeCommand** panel from within the **Desktop Client**, but much simpler. It allows workers to complete their daily tasks quickly, without going through the more complex procedures of the **[WMS module](/modules/logistics/wms/wms-worker/index.md)**.
 
-It also supports GS1 Barcodes and recognizes a number of GS1 application identifiers using different Barcode Parsers.
 
-GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.
-
-Inventory Control works with some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.
-
-A list of the identifiers that are recognized:
-
-| Identifier | Description | Length | 
-| ---------- | ----------- | ------ |
-| (01) | Global Trade Item Number (GTIN) | 14 |
-| (02) | Global Trade Item Number (GTIN) of contained trade items | 14 |
-| (10) | Lot number | variable, up to 20 |
-| (21) | Serial number | variable, up to 20 |
-| (37) | Count of trade items | variable, up to 8 |
-
-
-Once triggered, it tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line.
-If there is no matching line – it throws an error message and stops the execution.
  
 
 
@@ -98,6 +80,32 @@ If you need to scan **multiple** quantities of your product, you can provide a q
 Once you tap on the product's code, you can enter **all** of the quantities at once.
 
 ![Inventory Control](pictures/Multiple_scanning_26_01.png)
+
+### Scan a GS1 
+
+Inventory Control also supports GS1 Barcodes and recognizes a number of GS1 application identifiers.
+
+GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.
+
+Inventory Control works with some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.
+
+A list of the identifiers that are recognized:
+
+| Identifier | Description | Length | 
+| ---------- | ----------- | ------ |
+| (01) | Global Trade Item Number (GTIN) | 14 |
+| (02) | Global Trade Item Number (GTIN) of contained trade items | 14 |
+| (10) | Lot number | variable, up to 20 |
+| (21) | Serial number | variable, up to 20 |
+| (37) | Count of trade items | variable, up to 8 |
+
+
+Once triggered, it tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line.
+If there is no matching line – it throws an error message and stops the execution.
+
+For example, if there is a Store Order line that contains a product with Part Number 000008, a specific lot 77677, and a quantity of 300 pcs and you scan the following barcode (02)000008(10)77677(37)300, this line will be automatically fulfilled.
+![Inventory Control](pictures/IC_GS1.png)
+
 
 ### Continue last started operation
 
