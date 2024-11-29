@@ -104,8 +104,8 @@ Once triggered, it tries to break the GS1 barcode into separate parts to extract
 If there is no matching line – it throws an error message and stops the execution.
 
 For example, if there is a Store Order line that contains a product with Part Number 000008, a specific lot 77677, and a quantity of 300 pcs and you scan the following barcode (02)000008(10)77677(37)300, this line will be automatically fulfilled.
-![Inventory Control](pictures/IC_GS1_1.png)
 
+![Inventory Control](pictures/IC_GS1_2.png)
 
 ### Continue last started operation
 
