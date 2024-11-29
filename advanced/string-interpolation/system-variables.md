@@ -27,10 +27,10 @@ Below, you can find all system variables, their return type and the resolvers by
 | `$repository`<sup>**1**</sup>   | string              | The repository name the object is part of.                                                                                      |
 | `$entity`<sup>**1**</sup> (**obsolete**)     | string              | The entity name the object is part of.                                                                                          |
 | `$idlist`<sup>**1**</sup>                    | string              | Comma-separated list with Ids (serialized Guid) of the current context. For example, the selected rows in a **Navigator Form**. |
-| `$enterprisecompany`         | EnterpriseCompany   | The enterprise company in the current (transaction) context.                                                                    |
-| `$enterprisecompanylocation` | CompanyLocation     | The enterprise company Location in the current (transaction) context.                                                           |
-| `$user`                      | User                | User instance of the current user.                                                                                              |
-| `$role`                      | Role                | Role instance of the user's role.                                                                                               |
+| `$enterprisecompany`         | [EnterpriseCompanies](https://docs.erp.net/model/entities/General.EnterpriseCompanies.html)   | The enterprise company in the current (transaction) context.                                                                    |
+| `$enterprisecompanylocation` | [CompanyLocations](https://docs.erp.net/model/entities/General.Contacts.CompanyLocations.html)     | The enterprise company Location in the current (transaction) context.                                                           |
+| `$user`                      | [Public.Users](https://docs.erp.net/model/entities/Public.Users.html)                | User instance of the current user.                                                                                              |
+| `$role`                      | [Roles](https://docs.erp.net/model/entities/Systems.Security.Roles.html)                | Role instance of the user's role.                                                                                               |
 | `$language`                  | string              | The language name (UI culture) of the current user.                                                                             |
 
 <sup>**1**</sup> When applicable. E.g., `$repository` can't be evaluated when there's no repository context where the interpolation is performed.
