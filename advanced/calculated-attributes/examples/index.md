@@ -1,3 +1,3 @@
 # Examples
 
-[!list items=CalculatedAttributeExamples limit=100 default-text="None"]
+[!list folder="." depth=0 style="bullet" limit=100]
