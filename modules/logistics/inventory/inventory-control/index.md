@@ -2,7 +2,40 @@
 
 Inventory Control is a mobile inventory management application designed to speed up and simplify basic operations with store orders. It's perfectly suitable for shops and smaller stores.
 
-It follows a similar logic to the **BarCodeCommand** panel from within the **Desktop Client**, but much simpler. It works only with a simple barcodes and allows workers to complete their daily tasks quickly, without going through the more complex procedures of the **[WMS module](/modules/logistics/wms/wms-worker/index.md)**. 
+It follows a similar logic to the **BarCodeCommand** panel from within the **Desktop Client**, but much simpler. 
+
+It works with a simple barcodes and allows workers to complete their daily tasks quickly, without going through the more complex procedures of the **[WMS module](/modules/logistics/wms/wms-worker/index.md)**.
+
+It also supports the following Identifiers from GS1 Coding system:
+
+
+GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.
+
+ERP.net supports GS1 Barcodes and recognizes a number of GS1 application identifiers using different Barcode Parsers.
+
+For more information, about the supported AI and their implementation, see the documentation of the specific parser:
+
+
+## P02: GS1 - Single Product parser
+
+This parser uses some of the most popular GS1 identifiers to recognize the product and the additional information that comes with it and is also encoded into the barcode.
+
+A list of the identifiers that are recognized by this parser:
+
+| Identifier | Description | Length | 
+| ---------- | ----------- | ------ |
+| (01) | Global Trade Item Number (GTIN) | 14 |
+| (02) | Global Trade Item Number (GTIN) of contained trade items | 14 |
+| (10) | Lot number | variable, up to 20 |
+| (21) | Serial number | variable, up to 20 |
+| (37) | Count of trade items | variable, up to 8 |
+
+
+Once triggered, the parser tries to break the GS1 barcode into separate parts to extract the information encoded in it. If there are no errors during this operation, it starts looking for an appropriate line that can be executed with the recognized information. When it finds the best matching line, it starts its execution. If the information is enough to fulfill the line, then the system will not ask the user for anything and will automatically execute the line.
+If there is no matching line – it throws an error message and stops the execution.
+ 
+
+
 
 You can **receive**, **issue**, **reconcile**, **transfer** and **scrap** orders in just a few steps. These actions are **not** synchronized in real-time with the ERP.net system - you need to create the respective receipt transaction, issue transaction, transfer order, and reconciliation documents in order to reflect them. 
 
