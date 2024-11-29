@@ -43,6 +43,12 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: attributechanged
+  name: ATTRIBUTECHANGED
+  href: advanced/user-business-rules/events/attributechanged.html
+- uid: attributechanging
+  name: ATTRIBUTECHANGING
+  href: advanced/user-business-rules/events/attributechanging.html
 - uid: beforerecalculate
   name: BEFORERECALCULATE
   href: advanced/user-business-rules/events/beforerecalculate.html
@@ -229,12 +235,18 @@ references:
 - uid: cao-WHERE
   name: WHERE
   href: advanced/calculated-attributes/operators/where.html
+- uid: client-commit
+  name: CLIENT COMMIT
+  href: advanced/user-business-rules/events/client-commit.html
 - uid: client-committed
   name: CLIENT COMMITTED
   href: advanced/user-business-rules/events/client-committed.html
 - uid: coding-systems
   name: Coding systems
   href: modules/general/products/coding-systems.html
+- uid: commit
+  name: COMMIT
+  href: advanced/user-business-rules/events/commit.html
 - uid: committed
   name: COMMITTED
   href: advanced/user-business-rules/events/committed.html
@@ -244,6 +256,9 @@ references:
 - uid: config-options-reference
   name: Config options reference
   href: reference/config-options-reference.html
+- uid: create-new
+  name: CREATENEW
+  href: advanced/user-business-rules/events/create-new.html
 - uid: deferred-payments-options
   name: Deferred payments options
   href: modules/crm/sales/sales-concepts/deferred-payments-options.html
@@ -358,6 +373,12 @@ references:
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
+- uid: statechanged
+  name: STATECHANGED
+  href: advanced/user-business-rules/events/statechanged.html
+- uid: statechanging
+  name: STATECHANGING
+  href: advanced/user-business-rules/events/statechanging.html
 - uid: states
   name: Document states
   href: concepts/documents/states.html
@@ -382,6 +403,9 @@ references:
 - uid: vat-deviation
   name: VAT Deviation
   href: modules/crm/sales/sales-concepts/vat-deviation.html
+- uid: voiding
+  name: VOIDING
+  href: advanced/user-business-rules/events/voiding.html
 - uid: warehouse-policies
   name: Warehouse policies
   href: modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html

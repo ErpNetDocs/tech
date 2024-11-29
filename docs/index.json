@@ -822,7 +822,7 @@
   "advanced/user-business-rules/events/index.html": {
     "href": "advanced/user-business-rules/events/index.html",
     "title": "User business rules - Events | ERP.net Tech Docs",
-    "keywords": "User business rules - Events AGGREGATE CLIENT COMMIT AGGREGATE CLIENT COMMITTED CLIENT COMMIT CLIENT COMMITTED COMMIT COMMITTED CREATENEW STATECHANGED STATECHANGING VOIDING"
+    "keywords": "User business rules - Events AGGREGATE CLIENT COMMIT AGGREGATE CLIENT COMMITTED ATTRIBUTECHANGED ATTRIBUTECHANGING BEFORERECALCULATE CLIENT COMMIT CLIENT COMMITTED COMMIT COMMITTED CREATENEW STATECHANGED STATECHANGING VOIDING"
   },
   "advanced/user-business-rules/events/statechanged.html": {
     "href": "advanced/user-business-rules/events/statechanged.html",
