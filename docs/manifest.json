@@ -9389,6 +9389,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/IC_GS1_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/IC_GS1_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/Index_Store_Change_25_01.png",
       "output": {
         "resource": {
