@@ -107,6 +107,8 @@ For example, if there is a Store Order line that contains a product with Part Nu
 
 ![Inventory Control](pictures/IC_GS1_2.png)
 
+> [!NOTE] The indetifier (21) for Selial Number is also recognized, but for now its just saved in the memory of the IC application.
+
 ### Continue last started operation
 
 Inventory Control allows you to **resume** the last operation you were performing. 
