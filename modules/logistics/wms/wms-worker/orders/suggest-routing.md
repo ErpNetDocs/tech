@@ -14,15 +14,17 @@ A picking route considers various parameters configured for the warehouse, inclu
 
 - **Zones**: These are designated as picking zones through the "Zone Type" policy. 
 
-  _To properly use the function, ensure that "Policy Kind = Zone Type" and "Value = picking" are set._
+  _To properly use the function, ensure that "TaskType == Dispatch" and "ZoneType = picking"._
 
 - **Location Addresses**: These addresses are essential for calculating the optimal route through the warehouse.
+
+  For each addresses, ensure that _"ZoneType == Picking"_.
 
 - **Availability**: The system suggests locations which have enough availability to execute the respective order lines.
 
   However, this can be **disabled** in favour of a more custom setting, where locations are suggested as **strings** based on their **Address** or user-defined value specified in the **[CustomRouting policy](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)**.
 
-  Only locations with availability greater than zero are suggested.
+  In all cases, only locations with availability greater than zero are suggested.
   
 - **Lot Expiry Date**: This ensures that items nearing expiration are prioritized.
 
@@ -38,13 +40,16 @@ The **Suggest Routing** function follows a specific **[RoutingAlgorithm policy](
 
 This policy allows users to define their own routes for collecting warehouse products. It achieves this by assuming the **Code** of a location as its primary value. Therefore, the policy can have one of two values applied:
 
-* **Fixed** - Suggested locations follow exactly the string of their addresses or their Priorities defined in the **CustomRouting** policy. Availability of the locations is not taken into account, except that it must be greater than zero.
+* **Fixed** - Suggested locations are ordered by the strings of their addresses or by priority values specified in the **CustomRouting** policy. Availability of the locations is not taken into account, except that it must be greater than zero.
   
-* **Smart** - Suggested locations follow exactly the string of their addresses or their Priorities defined in the **CustomRouting** policy. Locations must have enough availability in order to be suggested.
+* **Smart** - Suggested locations are ordered by the strings of their addresses or by priority values specified in the **CustomRouting** policy. Locations must have enough availability in order to be suggested.
 
 * In case **no policy** is defined, the default **Smart** behaviour is applied.
 
 Upon identifying whether the policy is Fixed or Smart, the **Suggest Routing** function is able to return the appropriate location(s).
+
+> [!NOTE]
+> If a **Fixed** _RoutingAlgorithm_ policy is applied, it will come into effect in  the **WMS Worker** and the **warehouse order definition**, as they both can utilize the Suggest Routing function.
 
 ## Using the function
 
