@@ -53,35 +53,35 @@ Upon identifying whether the policy is Fixed or Smart, the **Suggest Routing** f
 
 ## Using the function
 
-Start by opening the **Orders** menu of **WMS Worker**. 
+1. Start by opening the **Orders** menu of **WMS Worker**. 
 
-This takes you to the list of orders that are available for execution for the current worker.
+    This takes you to the list of orders that are available for execution for the current worker.
 
-Click on the **outbound order** you would like to execute.
+    ![Picture](pictures/orders.png)
 
-![Picture](pictures/orders.png)
+2. Click on the **outbound order** you would like to execute.
 
-This will open a screen containing the lines of the order and their details.
+    This will open a screen containing the lines of the order and their details.
 
-![Picture](pictures/open-order.png)
+    ![Picture](pictures/open-order.png)
 
-At the bottom of the screen, you will find a three-dot button, from which you can access the **Suggest Routing** function:
+3. At the bottom of the screen, you will find a three-dot button, from which you can access the **Suggest Routing** function.
 
-![Picture](pictures/function_highlighted.png)
+   This will start the processing of the lines and the calculation of the function.
 
-This will start the processing of the lines and the calculation of the function.
+    ![Picture](pictures/function_highlighted.png)
 
-![Picture](pictures/processing.png)
+4. When the processing is done, the function will load all **Locations** that were successfully determined in the **Loc** column and will automatically sort the lines ascending by the location's address.
 
-When the processing is done, the function will load all Locations that were successfully determined in the **Loc** column and will automatically sort the lines ascending by the location's address.
+    This will form the route that the worker needs to follow to sequentially to collect all products from the order.
 
-This will form the route that the worker needs to follow to sequentially collect all products from the order.
+    ![Picture](pictures/location.png)
 
-![Picture](pictures/location.png)
+5. The worker can start following the route by clicking the **Execute** button.
+  
+   This will display the first screen which contains the information about the suggested Location and will lead the worker to it.
 
-The worker can start following the route by clicking the **Execute** button. This will display the first screen which contains the information about the suggested Location and will lead the worker to it.
-
-![Picture](pictures/execute-order.png)
+    ![Picture](pictures/execute-order.png)
 
 When the worker reaches the Location, he has to scan the Location and perform the rest of the line execution as usual.
 
