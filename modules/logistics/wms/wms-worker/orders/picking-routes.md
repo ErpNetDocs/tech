@@ -1,30 +1,37 @@
 ---
-uid: picking-routes
+uid: suggest-routing
 ---
 
-# Picking routes
-Workers who physically pick items for the warehouse orders use picking routes to guide them through the process.
-The route is calculated using the **"Suggest Routing"** function that is available in the Orders menu of WMS worker. The picking route takes into account the different parameters that are set up for the warehouse, such as:
-- The Zones specified as picking zones through the "Zone Type" policy - it is necessary to set "Policy Kind = Zone Type" and "Value = picking" if you want to use the **"Suggest Routing"** function.
-- The Locations addresses that are used to calculate the best route through the warehouse;
+# Suggest Routing
 
-as well as other factors, such as:
+Workers who physically pick items for warehouse orders utilize **picking routes** to navigate through the process efficiently. Such routes are calculated using the **Suggest Routing** function, which is accessible in the **Orders** menu of the **WMS worker**.
 
-- the availability in the different locations – suggests the location with the smallest availability that is enough to fulfill the order;
-- and the lot’s Expiry Date.
+A picking route considers various parameters configured for the warehouse, including:
 
-> [!NOTE]
-> The Pick task type is not yet supported by the system. Is is replaced by the Dispatch task type, which directly issues the product from the Warehousе.
+- **Zones**: These are designated as picking zones through the "Zone Type" policy. 
 
-Currently, the function can only be used for dispatch Warehouse Orders i.e. Warehouse Orders whose lines are only with Dispatch or Comp-dispatch task type.
+  _To properly use the function, ensure that "Policy Kind = Zone Type" and "Value = picking" are set._
 
+- **Location Addresses**: These addresses are essential for calculating the optimal route through the warehouse.
 
-## How to use it?
+Additionally, other factors are taken into account, such as:
 
-Open the **Orders** menu of WMS Worker.
+- **Availability**: The system suggests locations with the least availability that can still fulfill the order.
+  
+- **Lot Expiry Date**: This ensures that items nearing expiration are prioritized.
 
-This takes you to a list of the orders that are available for execution for the current worker.
-Click on the outbound order you would like to execute.
+> [!Important] 
+> The "Pick" task type is **not** currently supported by the system. <br> It has been replaced by the "Dispatch" task type, which directly issues products from the warehouse. <br> <br>
+> Therefore, at present, the **Suggest Routing** function can only be utilized for **dispatch warehouse orders**, specifically those whose lines consist solely of "Dispatch" or "Comp-dispatch" task types. <br> <br>
+> You will get an **error** if you attempt to execute the function on an order with a different task type.
+
+## Using the function
+
+Start by opening the **Orders** menu of **WMS Worker**. 
+
+This takes you to the list of orders that are available for execution for the current worker.
+
+Click on the **outbound order** you would like to execute.
 
 ![Picture](pictures/orders.png)
 
@@ -32,7 +39,7 @@ This will open a screen containing the lines of the order and their details.
 
 ![Picture](pictures/open-order.png)
 
-At the bottom of the screen, you will find a three-dot button, from which you can access the **Suggest Warehouse Locations** function:
+At the bottom of the screen, you will find a three-dot button, from which you can access the **Suggest Routing** function:
 
 ![Picture](pictures/suggest-locations.png)
 
@@ -56,7 +63,8 @@ Once the execution of the first line is finished, the system will bring the work
 
 ![Picture](pictures/next-line.png)
 
-### What if the function could not suggest a location for all lines?
+## Possible incomplete suggestions
+
 The order lines for which the system could not find a suitable Location to suggest will be sorted last - after all lines with successfully suggested locations.
 
 ![Picture](pictures/no-location.png)
