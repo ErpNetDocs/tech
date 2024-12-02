@@ -4,5 +4,5 @@
   href: scanning.md
 - name: Lines execution
   href: lines-execution.md
-- name: Picking routes
-  href: picking-routes.md
+- name: Suggest Routing
+  href: suggest-routing.md
