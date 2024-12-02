@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Suggest Routing | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Suggest Routing | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/wms-worker/orders/suggest-routing.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="suggest-routing">
+<h1 id="suggest-routing">Suggest Routing</h1>
+
+<p>Workers who physically pick items for warehouse orders utilize <strong>picking routes</strong> to navigate through the process efficiently. Such routes are calculated using the <strong>Suggest Routing</strong> UI function, which is accessible in the <strong>Orders</strong> menu of the <strong>WMS worker</strong>.</p>
+<h3 id="parameters-to-consider">Parameters to consider</h3>
+<p>A picking route considers various parameters configured for the warehouse, including:</p>
+<ul>
+<li><p><strong>Zones</strong>: These are designated as picking zones through the &quot;Zone Type&quot; policy.</p>
+<p><em>To properly use the function, ensure that &quot;TaskType == Dispatch&quot; and &quot;ZoneType = picking&quot;.</em></p>
+</li>
+<li><p><strong>Location Addresses</strong>: These addresses are essential for calculating the optimal route through the warehouse.</p>
+<p>For each addresses, ensure that <em>&quot;ZoneType == Picking&quot;</em>.</p>
+</li>
+<li><p><strong>Availability</strong>: The system suggests locations which have enough availability to execute the respective order lines.</p>
+<p>However, this can be <strong>disabled</strong> in favour of a more custom setting, where locations are suggested as <strong>strings</strong> based on their <strong>Address</strong> or user-defined value specified in the <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html">CustomRouting policy</a></strong>.</p>
+<p>In all cases, only locations with availability greater than zero are suggested.</p>
+</li>
+<li><p><strong>Lot Expiry Date</strong>: This ensures that items nearing expiration are prioritized.</p>
+</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The &quot;Pick&quot; task type is <strong>not</strong> currently supported by the system. <br> It has been replaced by the &quot;Dispatch&quot; task type, which directly issues products from the warehouse. <br> <br>
+Therefore, at present, the <strong>Suggest Routing</strong> function can only be utilized for <strong>dispatch warehouse orders</strong>, specifically those whose lines consist solely of &quot;Dispatch&quot; or &quot;Comp-dispatch&quot; task types. <br> <br>
+You will get an <strong>error</strong> if you attempt to execute the function on an order with a different task type. <br><br>
+<img src="pictures/error_suggest.png" alt="Picture"></p>
+</div>
+<h3 id="policy">Policy</h3>
+<p>The <strong>Suggest Routing</strong> function follows a specific <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html">RoutingAlgorithm policy</a></strong> through which it calculates how to suggest locations.</p>
+<p>This policy allows users to define their own routes for collecting warehouse products. It achieves this by assuming the <strong>Code</strong> of a location as its primary value. Therefore, the policy can have one of two values applied:</p>
+<ul>
+<li><p><strong>Fixed</strong> - Suggested locations are ordered by the strings of their addresses or by priority values specified in the <strong>CustomRouting</strong> policy. Availability of the locations is not taken into account, except that it must be greater than zero.</p>
+</li>
+<li><p><strong>Smart</strong> - Suggested locations are ordered by the strings of their addresses or by priority values specified in the <strong>CustomRouting</strong> policy. Locations must have enough availability in order to be suggested.</p>
+</li>
+<li><p>In case <strong>no policy</strong> is defined, the default <strong>Smart</strong> behaviour is applied.</p>
+</li>
+</ul>
+<p>Upon identifying whether the policy is Fixed or Smart, the <strong>Suggest Routing</strong> function is able to return the appropriate location(s).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a <strong>Fixed</strong> <em>RoutingAlgorithm</em> policy is applied, it will come into effect in  the <strong>WMS Worker</strong> and the <strong>warehouse order definition</strong>, as they both can utilize the Suggest Routing function.</p>
+</div>
+<h2 id="using-the-function">Using the function</h2>
+<ol>
+<li><p>Start by opening the <strong>Orders</strong> menu of <strong>WMS Worker</strong>.</p>
+<p>This takes you to the list of orders that are available for execution for the current worker.</p>
+<p><img src="pictures/new_orders.png" alt="Picture"></p>
+</li>
+<li><p>Click on the <strong>outbound order</strong> you would like to execute.</p>
+<p>This will open a screen containing the lines of the order and their details.</p>
+<p><img src="pictures/new_open-order.png" alt="Picture"></p>
+</li>
+<li><p>At the bottom of the screen, you will find a three-dot button, from which you can access the <strong>Suggest Routing</strong> function.</p>
+<p>This will start the processing of the lines and the calculation of the function.</p>
+<p><img src="pictures/function_highlightedd.png" alt="Picture"></p>
+</li>
+<li><p>When the processing is done, the function will load all <strong>Locations</strong> that were successfully determined in the <strong>Location</strong> column. This will form the <strong>route</strong> that you need to follow sequentially to collect all products from the order.</p>
+<p>The lines will be automatically sorted by the location address or user-defined values specified in the <em><strong>CustomRouting</strong></em> policy. If defined, the <em><strong>RoutingAlgorithm</strong></em> policy will determine whether locations with enough availability or any availability greater than zero are shown.</p>
+<p><img src="pictures/new_location.png" alt="Picture"></p>
+</li>
+<li><p>To begin following the route, click the <strong>Execute</strong> button.</p>
+<p>This will lead you to the first screen which contains information about the suggested Location.</p>
+<p><img src="pictures/new_execute-order.png" alt="Picture"></p>
+</li>
+<li><p>When you reach the Location, <strong>scan</strong> it and perform the rest of the line execution as usual.</p>
+</li>
+<li><p>Once the execution of the first line is finished, the system will bring you back to the lines menu.</p>
+<p>The next line will be automatically selected and available for execution, thus leading you to the <strong>next</strong> Location of the route.</p>
+<p><img src="pictures/new_next-line.png" alt="Picture"></p>
+</li>
+</ol>
+<h3 id="incomplete-suggestions">Incomplete suggestions</h3>
+<p>Order lines for which the function could not find a suitable Location to suggest will be sorted <strong>last</strong> - after all lines with successfully suggested locations.</p>
+<p><img src="pictures/new_no-location.png" alt="Picture"></p>
+<p>This way, when you finish following the suggested route, you can still execute the remaining lines without suggestions.</p>
+<p>The system will not guide you to a particular location. However, the <strong>Location</strong> screen during the line execution will contain convenient panels like <strong>Availability</strong>, which you can use to find a location from where you can still pick the product.</p>
+<p><img src="pictures/location-availability.png" alt="Picture"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/wms-worker/orders/suggest-routing.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

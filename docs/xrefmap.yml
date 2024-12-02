@@ -352,9 +352,6 @@ references:
 - uid: parcers
   name: Barcode Parsers
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
-- uid: picking-routes
-  name: Picking routes
-  href: modules/logistics/wms/wms-worker/orders/picking-routes.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/sales/sales-concepts/promotional-packages.html
@@ -382,6 +379,9 @@ references:
 - uid: states
   name: Document states
   href: concepts/documents/states.html
+- uid: suggest-routing
+  name: Suggest Routing
+  href: modules/logistics/wms/wms-worker/orders/suggest-routing.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
