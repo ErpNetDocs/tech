@@ -4,7 +4,7 @@ uid: suggest-routing
 
 # Suggest Routing
 
-Workers who physically pick items for warehouse orders utilize **picking routes** to navigate through the process efficiently. Such routes are calculated using the **Suggest Routing** function, which is accessible in the **Orders** menu of the **WMS worker**.
+Workers who physically pick items for warehouse orders utilize **picking routes** to navigate through the process efficiently. Such routes are calculated using the **Suggest Routing** UI function, which is accessible in the **Orders** menu of the **WMS worker**.
 
 A picking route considers various parameters configured for the warehouse, including:
 
@@ -23,7 +23,8 @@ Additionally, other factors are taken into account, such as:
 > [!Important] 
 > The "Pick" task type is **not** currently supported by the system. <br> It has been replaced by the "Dispatch" task type, which directly issues products from the warehouse. <br> <br>
 > Therefore, at present, the **Suggest Routing** function can only be utilized for **dispatch warehouse orders**, specifically those whose lines consist solely of "Dispatch" or "Comp-dispatch" task types. <br> <br>
-> You will get an **error** if you attempt to execute the function on an order with a different task type.
+> You will get an **error** if you attempt to execute the function on an order with a different task type. <br><br>
+> ![Picture](pictures/error_suggest.png)
 
 ## Using the function
 
@@ -41,7 +42,7 @@ This will open a screen containing the lines of the order and their details.
 
 At the bottom of the screen, you will find a three-dot button, from which you can access the **Suggest Routing** function:
 
-![Picture](pictures/suggest-locations.png)
+![Picture](pictures/function_highlighted.png)
 
 This will start the processing of the lines and the calculation of the function.
 
