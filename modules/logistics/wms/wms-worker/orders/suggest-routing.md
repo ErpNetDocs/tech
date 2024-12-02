@@ -69,15 +69,13 @@ Upon identifying whether the policy is Fixed or Smart, the **Suggest Routing** f
 
     ![Picture](pictures/function_highlightedd.png)
 
-4. When the processing is done, the function will load all **Locations** that were successfully determined in the **Loc** column.
+4. When the processing is done, the function will load all **Locations** that were successfully determined in the **Location** column. This will form the **route** that you need to follow sequentially to collect all products from the order.
 
-   The lines will be automatically sorted by the location address or user-defined values specified in the *CustomRouting* policy.
+   The lines will be automatically sorted by the location address or user-defined values specified in the ***CustomRouting*** policy. If defined, the _**RoutingAlgorithm**_ policy will determine whether locations with enough availability or any availability greater than zero are shown.
    
-    This will form the **route** that you need to follow sequentially to collect all products from the order.
-
     ![Picture](pictures/new_location.png)
 
-5. To start following the route, click the **Execute** button.
+5. To begin following the route, click the **Execute** button.
   
    This will lead you to the first screen which contains information about the suggested Location.
 
