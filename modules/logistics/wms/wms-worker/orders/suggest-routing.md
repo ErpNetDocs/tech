@@ -6,6 +6,10 @@ uid: suggest-routing
 
 Workers who physically pick items for warehouse orders utilize **picking routes** to navigate through the process efficiently. Such routes are calculated using the **Suggest Routing** UI function, which is accessible in the **Orders** menu of the **WMS worker**.
 
+![Picture](pictures/function_highlighted.png)
+
+### Parameters to consider
+
 A picking route considers various parameters configured for the warehouse, including:
 
 - **Zones**: These are designated as picking zones through the "Zone Type" policy. 
@@ -14,9 +18,11 @@ A picking route considers various parameters configured for the warehouse, inclu
 
 - **Location Addresses**: These addresses are essential for calculating the optimal route through the warehouse.
 
-Additionally, other factors are taken into account, such as:
+- **Availability**: The system suggests locations which have enough availability to execute the respective order lines.
 
-- **Availability**: The system suggests locations with the least availability that can still fulfill the order.
+  However, this can be **disabled** in favour of a more custom setting, where locations are suggested as **strings** based on their **Address** or user-defined value specified in the **[CustomRouting policy](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)**.
+
+  Only locations with availability greater than zero are suggested.
   
 - **Lot Expiry Date**: This ensures that items nearing expiration are prioritized.
 
@@ -25,6 +31,20 @@ Additionally, other factors are taken into account, such as:
 > Therefore, at present, the **Suggest Routing** function can only be utilized for **dispatch warehouse orders**, specifically those whose lines consist solely of "Dispatch" or "Comp-dispatch" task types. <br> <br>
 > You will get an **error** if you attempt to execute the function on an order with a different task type. <br><br>
 > ![Picture](pictures/error_suggest.png)
+
+### Policy
+
+The **Suggest Routing** function follows a specific **[RoutingAlgorithm policy](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html)** through which it calculates how to suggest locations. 
+
+This policy allows users to define their own routes for collecting warehouse products. It achieves this by assuming the **Code** of a location as its primary value. Therefore, the policy can have one of two values applied:
+
+* **Fixed** - Suggested locations follow exactly the string of their addresses or their Priorities defined in the **CustomRouting** policy. Availability of the locations is not taken into account, except that it must be greater than zero.
+  
+* **Smart** - Suggested locations follow exactly the string of their addresses or their Priorities defined in the **CustomRouting** policy. Locations must have enough availability in order to be suggested.
+
+* In case **no policy** is defined, the default **Smart** behaviour is applied.
+
+Upon identifying whether the policy is Fixed or Smart, the **Suggest Routing** function is able to return the appropriate location(s).
 
 ## Using the function
 
