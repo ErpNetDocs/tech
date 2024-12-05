@@ -16,6 +16,8 @@
   href: minimal-sales-price.md
 - name: Minimal sales quantity
   href: minimal-sales-quantity.md
+- name: Multiple line discounts
+  href: multiple-line-discounts.md
 - name: Promotional packages
   href: promotional-packages.md
 - name: VAT deviation
