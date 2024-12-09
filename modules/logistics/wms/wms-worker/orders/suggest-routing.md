@@ -4,7 +4,7 @@ uid: suggest-routing
 
 # Suggest Routing
 
-Workers who physically pick items for warehouse orders utilize **picking routes** to be navigated the process efficiently. Such routes are calculated using the **Suggest Routing** UI function, accessible in the **Orders** menu of the **WMS worker**.
+Workers who physically pick items for warehouse orders utilize **picking routes** to efficiently navigate the process. Such routes are calculated using the **Suggest Routing** UI function, accessible in the **Orders** menu of the **WMS worker**.
 
 ### Parameters to consider
 
@@ -47,7 +47,7 @@ This policy allows users to define their own routes for collecting warehouse pro
 Upon identifying whether the policy is Fixed or Smart, the **Suggest Routing** function is able to return the appropriate location(s).
 
 > [!NOTE]
-> If a **Fixed** _RoutingAlgorithm_ policy is applied, it will come into effect in  the **WMS Worker** and the **warehouse order definition**, as they both can utilize the Suggest Routing function.
+> If a **Fixed** _RoutingAlgorithm_ policy is applied, it will come into effect in the **WMS Worker** and the **warehouse order definition**, as they both can utilize the Suggest Routing function.
 
 ## Using the function
 
