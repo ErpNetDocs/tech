@@ -26,11 +26,8 @@ A picking route considers various parameters configured for the warehouse, inclu
   
 - **Lot Expiry Date**: This ensures that items nearing expiration are prioritized.
 
-> [!Important] 
-> The "Pick" task type is **not** currently supported by the system. <br> It has been replaced by the "Dispatch" task type, which directly issues products from the warehouse. <br> <br>
-> Therefore, at present, the **Suggest Routing** function can only be utilized for **dispatch warehouse orders**, specifically those whose lines consist solely of "Dispatch" or "Comp-dispatch" task types. <br> <br>
-> You will get an **error** if you attempt to execute the function on an order with a different task type. <br><br>
-> ![Picture](pictures/error_suggest.png)
+> [!Note] 
+> The **Suggest Routing** function can only be utilized for **dispatch warehouse orders**, specifically those whose lines consist solely of "Dispatch" or "Comp-dispatch" task types. <br> <br>
 
 ### Policy
 
