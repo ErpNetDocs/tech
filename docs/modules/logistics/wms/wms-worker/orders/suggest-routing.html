@@ -104,12 +104,9 @@
 <li><p><strong>Lot Expiry Date</strong>: This ensures that items nearing expiration are prioritized.</p>
 </li>
 </ul>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>The &quot;Pick&quot; task type is <strong>not</strong> currently supported by the system. <br> It has been replaced by the &quot;Dispatch&quot; task type, which directly issues products from the warehouse. <br> <br>
-Therefore, at present, the <strong>Suggest Routing</strong> function can only be utilized for <strong>dispatch warehouse orders</strong>, specifically those whose lines consist solely of &quot;Dispatch&quot; or &quot;Comp-dispatch&quot; task types. <br> <br>
-You will get an <strong>error</strong> if you attempt to execute the function on an order with a different task type. <br><br>
-<img src="pictures/error_suggest.png" alt="Picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Suggest Routing</strong> function can only be utilized for <strong>dispatch warehouse orders</strong>, specifically those whose lines consist solely of &quot;Dispatch&quot; or &quot;Comp-dispatch&quot; task types. <br> <br></p>
 </div>
 <h3 id="policy">Policy</h3>
 <p>The <strong>Suggest Routing</strong> function follows a specific <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse/warehouse-policies.html">RoutingAlgorithm policy</a></strong> through which it calculates how to suggest locations.</p>
