@@ -2922,10 +2922,80 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-goods-receipts.md",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/desadv-iln-algorithm.md",
       "output": {
         ".html": {
-          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-goods-receipts.html"
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/desadv-iln-algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/packing-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/packing-reference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/packing-reference/dataurlimage.png",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/packing-reference/dataurlimage.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/invoice-iln-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/invoice-iln-algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/order-iln-algorithm.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/order-iln-algorithm.html"
         }
       },
       "version": ""
@@ -2936,26 +3006,6 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.md",
-      "output": {
-        ".html": {
-          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/invoices-export.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.md",
-      "output": {
-        ".html": {
-          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/orders-import.html"
         }
       },
       "version": ""
