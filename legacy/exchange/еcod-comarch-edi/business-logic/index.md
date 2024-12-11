@@ -1,7 +1,7 @@
 ## Бизнес логика
 
-[Импорт на поръчки](orders-import.md)
+[Импорт на поръчки](./import-orders/index.md)
 
-[Експорт на стокови разписки](export-goods-receipts.md)
+[Експорт на стокови разписки](./export-despatch-advice/index.md)
 
-[Експорт на фактури](invoices-export.md)
+[Експорт на фактури](./export-invoices/index.md)
