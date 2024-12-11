@@ -1097,7 +1097,7 @@
   "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/index.html": {
     "href": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Импорт на поръчки Този тип задачи позволява импортиране на Commarch-bg ECOD Order xml файлове в ERP.net база данни. Данните се импортират в документ тип Продажба. [Алгоритъм за определяне на ILN полетата](Алгоритъм за определяне на ILN полетата)"
+    "keywords": "Импорт на поръчки Този тип задачи позволява импортиране на Commarch-bg ECOD Order xml файлове в ERP.net база данни. Данните се импортират в документ тип Продажба. Алгоритъм за определяне на ILN полетата"
   },
   "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/order-iln-algorithm.html": {
     "href": "legacy/exchange/еcod-comarch-edi/business-logic/import-orders/order-iln-algorithm.html",
