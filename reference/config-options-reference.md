@@ -341,7 +341,8 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   The value is entered as an interpolated string. You can use also format specifiers. <br>
   For example "location: {Location} ; forklift - {@Property2: VD}" will be displayed as "location: 01-02-A2 ; forklift: 01:yes"
 - b.If the key is not defined, the WMS Worker will display the default information, which is coming from the Location field.
-- c.The user sets it manually.
+- c.With the Suggest Routing function the string for the location is called with a dollar sign: {$WarehouseLocation}
+- d.The user sets it manually.
 
 ## 63. /Inv/ListAllStoresForTransfers
 - a.Action: When the value of this key is: <br>
