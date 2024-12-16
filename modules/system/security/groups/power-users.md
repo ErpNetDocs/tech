@@ -28,8 +28,7 @@ The primary purpose of this role is to allow users to manage security settings w
      - **Database Value:** `P`
      - **Model Value:** 4
    - **Display Name:** In the user interface, this group is displayed as:
-     - **English:** Power Users
-     - **Localized (Bulgarian):** Потребители с разширени права
+     - ** Power Users **
 
 ## **Implementation Details**
 
@@ -39,11 +38,13 @@ The primary purpose of this role is to allow users to manage security settings w
 
 2. **UI Restrictions**
 
-   - The Power Users group is displayed in the program’s dropdown list as “Power Users | Потребители с разширени права.”
+   - The Power Users group is displayed in the program’s dropdown list as “Power Users”.
    - Editing restrictions for this group are enforced by front-end validation and back-end rules (e.g., error thrown on unauthorized modification attempts).
 
 3. **Business Rule Enforcement**
 
    - Rule **R37166 SecurityGroup – System Group Update Not Allowed** ensures that users cannot modify the Power Users group configuration.
 
-The Power Users role enhances system functionality by delegating access control responsibilities to designated users without compromising administrative security. This role bridges the gap between Normal Users and Administrators, ensuring a scalable and secure management framework.
+The Power Users role enhances system functionality by delegating access control responsibilities to designated users without compromising administrative security. 
+
+This role bridges the gap between Normal Users and Administrators, ensuring a scalable and secure management framework.
