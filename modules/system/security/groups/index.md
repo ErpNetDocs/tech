@@ -1,4 +1,4 @@
-**Overview of User Roles in the System**
+** # Overview of User Roles in the System**
 
 The system supports multiple user roles, each designed to manage access and permissions for different levels of functionality. These roles are integral to maintaining data security and ensuring the appropriate allocation of responsibilities within the platform. The following user roles are defined:
 
