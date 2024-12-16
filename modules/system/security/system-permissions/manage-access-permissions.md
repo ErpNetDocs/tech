@@ -1,10 +1,10 @@
-# Manage Access Permissions**
+# ** Manage Access Permissions**
 
 The **Manage Access Permissions** key is designed to provide select users or groups access to the **Security** panel (in the Desktop Client) or the **Access Permissions** panel (in the Web Client). 
 
 Only users with this key will see these panels in their respective environments.
 
-![pictures](pictures/System_permissions_overview.png)
+![pictures](pictures/Manage_access_permissions.png)
 
 ## **Key Details**
 - **Key Name:** Manage Access Permissions
@@ -19,6 +19,8 @@ Only users with this key will see these panels in their respective environments.
 A new business rule ensures proper implementation:
 - **Rule Name:** R37166 SecurityGroup – System Group Update Not Allowed
 - **Functionality:** Prevents unauthorized modifications to the Power Users and Administrators groups, which are automatically assigned this key.
+
+![pictures](pictures/Error_message.jpg)
 
 ---
 
