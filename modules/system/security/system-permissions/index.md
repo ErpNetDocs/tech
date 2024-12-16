@@ -4,7 +4,6 @@ The **System Permissions** panel is a central hub for managing user access to va
 
 It allows administrators to grant or restrict permissions by assigning specific keys to groups or individual users.
 
----
 
 The System Permissions panel enables precise control over user access through permission keys. 
 
