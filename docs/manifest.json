@@ -15788,6 +15788,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/system/security/groups/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/groups/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/groups/power-users.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/groups/power-users.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/system/security/index.md",
       "output": {
         ".html": {
@@ -15802,6 +15822,56 @@
       "output": {
         "resource": {
           "relative_path": "modules/system/security/pictures/security.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/system-permissions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/system-permissions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/system-permissions/manage-access-permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/system-permissions/manage-access-permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/Manage_access_permissions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/system-permissions/pictures/Manage_access_permissions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/system-permissions/pictures/index.html"
         }
       },
       "version": ""
