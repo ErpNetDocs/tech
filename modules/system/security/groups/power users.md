@@ -4,7 +4,7 @@ The Power Users role is a system-defined group created to provide select users w
 
 The primary purpose of this role is to allow users to manage security settings without accessing other administrator-level controls.
 
-## **Key Features and Functionality:**
+## **Key Features and Functionality**
 
 1. **Access Permissions Panel**
 
@@ -31,7 +31,7 @@ The primary purpose of this role is to allow users to manage security settings w
      - **English:** Power Users
      - **Localized (Bulgarian):** Потребители с разширени права
 
-## **Implementation Details:**
+## **Implementation Details**
 
 1. **Group Creation**
 
