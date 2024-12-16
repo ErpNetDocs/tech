@@ -15,3 +15,5 @@ Below is a brief description of key functionalities:
 - **Permission Assignment:** Administrators can assign or revoke specific permission keys for groups or individual users.
 - **Role-Based Access:** Keys can be applied to predefined groups, such as Administrators, Power Users, and Normal Users.
 - **Visibility Control:** Keys determine whether users can access certain panels, including Security and Access Permissions.
+
+![pictures](pictures/security.png)
