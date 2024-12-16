@@ -10,6 +10,8 @@ The System Permissions panel enables precise control over user access through pe
 
 These keys define what actions users can perform and which sections they can access. 
 
+---
+
 Below is a brief description of key functionalities:
 
 - **Permission Assignment:** Administrators can assign or revoke specific permission keys for groups or individual users.
