@@ -1,10 +1,10 @@
-# ** Manage Access Permissions **
+# **Manage Access Permissions**
 
 The **Manage Access Permissions** key is designed to provide select users or groups access to the **Security** panel (in the Desktop Client) or the **Access Permissions** panel (in the Web Client). 
 
 Only users with this key will see these panels in their respective environments.
 
-![pictures](pictures/Manage_access_permissions.png)
+![pictures](pictures/Manage_access_permissions_17_12.png)
 
 ## **Key Details**
 - **Key Name:** Manage Access Permissions
