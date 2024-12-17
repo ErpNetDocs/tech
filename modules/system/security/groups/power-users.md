@@ -35,6 +35,8 @@ The primary purpose of this role is to allow users to manage security settings w
 1. **Group Creation**
 
    - A new system-defined group is added to the `Systems.Security.Groups` entity with the type `PowerUsers`.
+  
+   ![pictures](pictures/Power_user_group_17_12.png)
 
 2. **UI Restrictions**
 
