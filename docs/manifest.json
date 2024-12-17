@@ -15797,6 +15797,26 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/Power_user_group_17_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/Power_user_group_17_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/groups/pictures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/groups/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/system/security/groups/power-users.md",
       "output": {
@@ -15858,10 +15878,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/Manage_access_permissions_17_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/system-permissions/pictures/Manage_access_permissions_17_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview.png",
       "output": {
         "resource": {
           "relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview_17_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/system-permissions/pictures/System_permissions_overview_17_12.png"
         }
       },
       "version": ""
