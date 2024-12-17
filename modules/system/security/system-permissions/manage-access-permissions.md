@@ -1,4 +1,4 @@
-# ** Manage Access Permissions**
+# ** Manage Access Permissions **
 
 The **Manage Access Permissions** key is designed to provide select users or groups access to the **Security** panel (in the Desktop Client) or the **Access Permissions** panel (in the Web Client). 
 
