@@ -18,4 +18,4 @@ Below is a brief description of key functionalities:
 - **Role-Based Access:** Keys can be applied to predefined groups, such as Administrators, Power Users, and Normal Users.
 - **Visibility Control:** Keys determine whether users can access certain panels, including Security and Access Permissions.
 
-![pictures](pictures/System_permissions_overview.png)
+![pictures](pictures/System_permissions_overview_17_12.png)
