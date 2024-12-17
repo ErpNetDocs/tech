@@ -28,7 +28,7 @@ The primary purpose of this role is to allow users to manage security settings w
      - **Database Value:** `P`
      - **Model Value:** 4
    - **Display Name:** In the user interface, this group is displayed as:
-     - ** Power Users **
+     - **Power Users**
 
 ## **Implementation Details**
 
