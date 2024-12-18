@@ -168,7 +168,9 @@ You can initiate this generation whenever a WR is needed for further execution.<
 <p>(2) To set up the creation of <strong>Store Transaction</strong> the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
-<li>Condition States Bit Mask - Released, Completed - the completed state is used when you don't want to do any further executions;</li>
+<li>Condition States Bit Mask: <br>
+- Released, Completed - the completed state is used when you don't want to do any further executions; <br>
+- Completed Warehouse Requisition - this event is used when you want to generate the Store Transaction automatically when the warehouse requisition state is changed to completed.</li>
 <li>Allowed Generation Types - Both (Auto and Manually)</li>
 <li>Procedure Name - <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0207.html">LOG0207</a>;</li>
 </ul>
