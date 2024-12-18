@@ -106,7 +106,9 @@ Once you Create the new **WR**, the execution process continues following the sa
 (2) To set up the creation of **Store Transaction** the fields in the Route should be set as:
 
  - Process Event - Change of state;
- - Condition States Bit Mask - Released, Completed - the completed state is used when you don't want to do any further executions;
+ - Condition States Bit Mask 
+           - Released, Completed - the completed state is used when you don't want to do any further executions;
+           - Completed Warehouse Requisition - this event is used when you want to generate the Store Transaction autonatically when the warehouse requisition state is changed to completed.
  - Allowed Generation Types - Both (Auto and Manually)
  - Procedure Name - [LOG0207](xref:LOG0207);
  
