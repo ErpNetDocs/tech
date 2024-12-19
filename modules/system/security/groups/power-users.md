@@ -2,7 +2,7 @@
 
 **Power Users** is a system-defined **[group type](index.md#group-types)** providing select users with privileges elevated above those of the **Normal user-definable group** type but below the **Administrators** type. Its primary purpose is to allow users to access permissions via the **Security (Access Permissions)** panel, as well as have the option to make this panel visible or hidden for regular users.
 
-![pictures](pictures/Power_user_group_17_12.png)
+![pictures](pictures/Power_user_group_19_12.png)
 
 ### System Data
 
