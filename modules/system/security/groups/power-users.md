@@ -13,7 +13,7 @@
 
 ## Key features
 
-1. Gives access to regular users to the **Security (Access Permissions)** panel.
+1. Gives or restricts access of regular users to the **Security (Access Permissions)** panel.
 
 2. Users are always **manually** added to this group.
 
