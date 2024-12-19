@@ -1,6 +1,8 @@
 # **Manage Access Permissions**
 
-The **Manage Access Permissions** key is designed to provide select users and **[groups](../groups/index.md)** access to the **Security** (Desktop Client) and **Access Permissions** (Web Client) panel. Only users and groups assigned this key are able to see and access these panels in their respective environments.
+The **Manage Access Permissions** key provides users and **[groups](../groups/index.md)** access to the **Security** (Desktop Client) and **Access Permissions** (Web Client) panel. 
+
+Only users and groups assigned this key are able to see and access these panels in their respective environments.
 
 ![pictures](pictures/Manage_access_permissions_17_12.png)
 
