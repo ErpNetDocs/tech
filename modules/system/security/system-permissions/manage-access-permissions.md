@@ -19,6 +19,6 @@ Only users and groups assigned this key are able to see and access these panels 
 
 The Manage Access Permissions key:
 
-- Allows the **Power Users** and **Administrators** groups to see and access the **Security/Access Permissions** panel.
+- Allows the **[Power Users](./security/groups/power-users.md)** and **Administrators** groups to see and access the **Security/Access Permissions** panel.
   
 - **Restricts** visibility to this panel for users/groups not having the key.
