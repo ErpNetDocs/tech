@@ -4,6 +4,13 @@
 
 ![pictures](pictures/Power_user_group_17_12.png)
 
+#### System Data
+
+- **[GroupType Value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype):** `P`
+- **Description:** PowerUsers
+- **Database Value:** `P`
+- **Model Value:** 4
+
 ## Key features
 
 1. Users are always **manually** added to the Power users group.
@@ -15,10 +22,4 @@
    Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
    ![pictures](pictures/Error_window_18_12.png)
-
-## System Data
-
-- **[GroupType Value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype):** `P`
-- **Description:** PowerUsers
-- **Database Value:** `P`
-- **Model Value:** 4
+   
