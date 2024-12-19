@@ -13,11 +13,13 @@
 
 ## Key features
 
-1. Users are always **manually** added to the Power users group.
+1. Gives access to regular users to the **Security (Access Permissions)** panel.
 
-   Unlike the **Administrators** group type, there is no checkbox or automated assignment process.
+2. Users are always **manually** added to this group.
 
-2. Power users is a **system** group type and **cannot** be edited directly by users. This includes changing its name and headers.
+   Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
+
+3. This group **cannot** be edited directly by users. This includes changing its name and header.
 
    Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
