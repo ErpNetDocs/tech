@@ -15,7 +15,7 @@
 
 The Power Users group:
 
-1. Grants access to the **Security (Access Permissions)** panel and allows Power Users to decide whether to make it accessible to regular users.
+1. Grants access to the **Security (Access Permissions)** panel and allows Power Users to make it accessible/hidden from regular users.
 
 2. Has users always **manually** added.
 
