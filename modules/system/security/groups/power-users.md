@@ -6,7 +6,7 @@
 
 ## Key features
 
-1. Users can be **manually** added to the Power users group by System Administrators.
+1. Users are always **manually** added to the Power users group.
 
    Unlike the **Administrators** group type, there is no checkbox or automated assignment process.
 
