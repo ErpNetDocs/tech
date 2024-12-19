@@ -12,7 +12,7 @@
 
 2. Power users is a **system** group type and **cannot** be edited directly by users.
 
-   Any attempt by users to modify it will result in an **error**, ensured by bysiness rule **[R37166 SecurityGroup – System Group Update Not Allowed](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
+   Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
    ![pictures](pictures/Error_window_18_12.png)
 
