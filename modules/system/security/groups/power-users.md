@@ -1,6 +1,6 @@
 # Power Users
 
-**Power Users** is a system-defined **[group type](index.md#group-types)** providing select users with privileges elevated above those of the **Normal user-definable group** type but below the **Administrators** type. Its primary purpose is to allow users to access the **Access Permissions** panel of the **Security** section, as well as have the option to make this panel visible or hidden for normal users.
+**Power Users** is a system-defined **[group type](index.md#group-types)** providing select users with privileges elevated above those of the **Normal user-definable group** type but below the **Administrators** type. Its primary purpose is to allow users to access rights via the **Security (Access Permissions)** panel, as well as have the option to make this panel visible or hidden for normal users.
 
 ![pictures](pictures/Power_user_group_17_12.png)
 
@@ -17,7 +17,7 @@
 
    Unlike the **Administrators** group type, there is no checkbox or automated assignment process.
 
-2. Power users is a **system** group type and **cannot** be edited directly by users.
+2. Power users is a **system** group type and **cannot** be edited directly by users. This includes changing its name and headers.
 
    Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
