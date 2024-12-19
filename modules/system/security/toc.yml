@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+- name: Groups
+  href: groups/toc.yml
+  topicHref: groups/index.md
 - name: UI Functions
   href: ui-functions/toc.yml
   topicHref: ui-functions/index.md
