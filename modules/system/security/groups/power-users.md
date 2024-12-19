@@ -4,7 +4,7 @@
 
 ![pictures](pictures/Power_user_group_17_12.png)
 
-#### System Data
+### System Data
 
 - **[GroupType Value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype):** `P`
 - **Description:** PowerUsers
