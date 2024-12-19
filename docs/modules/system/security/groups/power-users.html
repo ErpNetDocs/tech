@@ -85,69 +85,31 @@
         </div>
 
         <article data-uid="">
-<h1 id="power-users"><strong>Power Users</strong></h1>
+<h1 id="power-users">Power Users</h1>
 
-<p>The Power Users role is a system-defined group created to provide select users with elevated privileges above Normal Users but below full administrative rights.</p>
-<p>The primary purpose of this role is to allow users to manage security settings without accessing other administrator-level controls.</p>
-<h2 id="key-features-and-functionality"><strong>Key Features and Functionality</strong></h2>
-<ol>
-<li><p><strong>Access Permissions Panel</strong></p>
+<p><strong>Power Users</strong> is a system-defined <strong><a href="index.html#group-types">group type</a></strong> providing select users with privileges elevated above those of the <strong>Normal user-definable group</strong> type but below the <strong>Administrators</strong> type.</p>
+<p>Its primary purpose is to allow users to access permissions via the <strong>Security</strong> (Desktop Client) and <strong>Access Permissions</strong> (Web Client) panel, as well as have the option to make this panel visible or hidden for regular users.</p>
+<p>Access to the panel is further defined through the <strong><a href="../system-permissions/manage-access-permissions.html">Manage Access Permissions key</a></strong>, which is assigned to the <strong>Power Users</strong> group.</p>
+<p><img src="pictures/Power_user_group_19_12.png" alt="pictures"></p>
+<h3 id="system-data">System Data</h3>
 <ul>
-<li>Power Users have exclusive access to the Security (Access Permissions) panel, enabling them to manage access rights for other users.</li>
-<li>This panel is hidden for Normal Users.</li>
-</ul>
-</li>
-<li><p><strong>Manual User Assignment</strong></p>
-<ul>
-<li>Users are manually added to the Power Users group by system administrators. Unlike the Administrators group, there is no checkbox or automated assignment process.</li>
-</ul>
-</li>
-<li><p><strong>Restricted Group Management</strong></p>
-<ul>
-<li>The Power Users group is a system group and cannot be edited directly by users.</li>
-<li>Any attempt to modify this group will result in an error, similar to the behavior for the Administrators group.</li>
-</ul>
-</li>
-<li><p><strong>Database and System Configuration</strong></p>
-<ul>
-<li><strong>GroupType Value:</strong> The <code>GroupType</code> value is for Power Users:
-<ul>
-<li><strong>Value:</strong> <code>P</code></li>
+<li><strong><a href="https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype">GroupType Value</a>:</strong> <code>P</code></li>
 <li><strong>Description:</strong> PowerUsers</li>
 <li><strong>Database Value:</strong> <code>P</code></li>
 <li><strong>Model Value:</strong> 4</li>
 </ul>
-</li>
-<li><strong>Display Name:</strong> In the user interface, this group is displayed as:
-<ul>
-<li><strong>Power Users</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="implementation-details"><strong>Implementation Details</strong></h2>
+<h2 id="key-features">Key features</h2>
+<p>The Power Users group:</p>
 <ol>
-<li><p><strong>Group Creation</strong></p>
-<ul>
-<li>A new system-defined group is added to the <code>Systems.Security.Groups</code> entity with the type <code>PowerUsers</code>.</li>
-</ul>
-<p><img src="pictures/Power_user_group_17_12.png" alt="pictures"></p>
+<li><p>Grants access to the <strong>Security (Access Permissions)</strong> panel and allows Power Users to make it accessible/hidden for regular users.</p>
 </li>
-<li><p><strong>UI Restrictions</strong></p>
-<ul>
-<li>The Power Users group is displayed in the program’s dropdown list as “Power Users”.</li>
-<li>Editing restrictions for this group are enforced by front-end validation and back-end rules (e.g., error thrown on unauthorized modification attempts).</li>
-</ul>
+<li><p>Has users always <strong>manually added</strong>. Unlike in the <strong>Administrators</strong> group type, there is no checkbox or automated assignment process.</p>
 </li>
-<li><p><strong>Business Rule Enforcement</strong></p>
-<ul>
-<li>Rule <strong>R37166 SecurityGroup – System Group Update Not Allowed</strong> ensures that users cannot modify the Power Users group configuration.</li>
-</ul>
+<li><p><strong>Cannot</strong> be edited directly by users. This includes changing its name and header.</p>
+<p>Any attempt by users to modify it will result in an <strong>error</strong>, ensured by <strong><a href="https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement">business rule R37166</a></strong>.</p>
+<p><img src="pictures/Error_window_19_12.jpg" alt="pictures"></p>
 </li>
 </ol>
-<p>The Power Users role enhances system functionality by delegating access control responsibilities to designated users without compromising administrative security.</p>
-<p>This role bridges the gap between Normal Users and Administrators, ensuring a scalable and secure management framework.</p>
 
 </article>
 

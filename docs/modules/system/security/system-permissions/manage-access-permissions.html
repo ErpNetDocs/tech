@@ -87,65 +87,29 @@
         <article data-uid="">
 <h1 id="manage-access-permissions"><strong>Manage Access Permissions</strong></h1>
 
-<p>The <strong>Manage Access Permissions</strong> key is designed to provide select users or groups access to the <strong>Security</strong> panel (in the Desktop Client) or the <strong>Access Permissions</strong> panel (in the Web Client).</p>
-<p>Only users with this key will see these panels in their respective environments.</p>
+<p>The <strong>Manage Access Permissions</strong> key provides select users and <strong><a href="../groups/index.html">groups</a></strong> access to the <strong>Security</strong> (Desktop) and <strong>Access Permissions</strong> (Web) panel. Only users and groups assigned this key are able to see and access these panels in their respective environments.</p>
 <p><img src="pictures/Manage_access_permissions_17_12.png" alt="pictures"></p>
-<h2 id="key-details"><strong>Key Details</strong></h2>
+<h3 id="system-data">System data</h3>
 <ul>
-<li><strong>Key Name:</strong> Manage Access Permissions</li>
-<li><strong>Key Description:</strong> Allows users to manage access rights for other users.</li>
-<li><strong>Default Groups:</strong>
+<li><p><strong>Name:</strong> Manage Access Permissions</p>
+</li>
+<li><p><strong>Description:</strong> Allows users to manage access rights for other users.</p>
+</li>
+<li><p><strong>Default Groups:</strong></p>
 <ul>
-<li>Administrators</li>
-<li>Power Users</li>
+<li><strong>Administrators</strong></li>
+<li><strong><a href="../groups/power-users.html">Power Users</a></strong></li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<p><strong>Note:</strong> If a group does not have this key, its members will not see the Security/Access Permissions panels.</p>
-</blockquote>
-<h2 id="business-rule-enforcement"><strong>Business Rule Enforcement</strong></h2>
-<p>A new business rule ensures proper implementation:</p>
+<h2 id="key-features">Key features</h2>
+<p>The Manage Access Permissions key:</p>
 <ul>
-<li><strong>Rule Name:</strong> R37166 SecurityGroup – System Group Update Not Allowed</li>
-<li><strong>Functionality:</strong> Prevents unauthorized modifications to the Power Users and Administrators groups, which are automatically assigned this key.</li>
+<li><p>Allows the <strong><a href="../groups/power-users.html">Power Users</a></strong> and <strong>Administrators</strong> groups to see and access the <strong>Security/Access Permissions</strong> panel.</p>
+</li>
+<li><p><strong>Restricts</strong> visibility to this panel for users/groups not having the key.</p>
+</li>
 </ul>
-<p><img src="pictures/Error_message.jpg" alt="pictures"></p>
-<hr>
-<h2 id="implementation-details"><strong>Implementation Details</strong></h2>
-<h3 id="database-changes"><strong>Database Changes</strong></h3>
-<p>A new permission key is added to the database with the following configuration:</p>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Key</td>
-<td>ManageAccessPermissions</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>Manage Access Permissions</td>
-</tr>
-<tr>
-<td>Default Groups</td>
-<td>Administrators, Power Users</td>
-</tr>
-</tbody>
-</table>
-<h3 id="user-interface"><strong>User Interface</strong></h3>
-<ul>
-<li>The <strong>Manage Access Permissions</strong> key appears in the System Permissions dropdown menu.</li>
-<li>Users with this key can access the <strong>Security/Access Permissions</strong> panels seamlessly.</li>
-<li>Visibility is hidden for users without this key.</li>
-</ul>
-<hr>
-<p>The <strong>Manage Access Permissions</strong> key enhances the platform’s role-based access control by delegating permission management to designated groups without compromising security.</p>
-<p>By default, this key is assigned to the <strong>Administrators</strong> and <strong>Power Users</strong> groups, ensuring that users in these roles have the necessary access to manage permissions efficiently.</p>
 
 </article>
 

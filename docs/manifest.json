@@ -15798,10 +15798,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/Error_window_18_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/Error_window_18_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/groups/pictures/Power_user_group_17_12.png",
       "output": {
         "resource": {
           "relative_path": "modules/system/security/groups/pictures/Power_user_group_17_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/Power_user_group_19_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/Power_user_group_19_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/groups_intro.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/groups_intro.png"
         }
       },
       "version": ""
@@ -15817,11 +15847,34 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/inside_group.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/inside_group.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/system/security/groups/power-users.md",
       "output": {
         ".html": {
           "relative_path": "modules/system/security/groups/power-users.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/groups/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/groups/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/groups/toc.json"
         }
       },
       "version": ""
@@ -15862,6 +15915,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/system/security/system-permissions/manage-access-permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/system-permissions/pictures/Error_window_18_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/system-permissions/pictures/Error_window_18_12.png"
         }
       },
       "version": ""
@@ -15912,6 +15975,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/system/security/system-permissions/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/system-permissions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/system-permissions/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/system-permissions/toc.json"
         }
       },
       "version": ""
