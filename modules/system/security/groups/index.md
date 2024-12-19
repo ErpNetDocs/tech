@@ -26,6 +26,6 @@ Any custom groups can be created freely. However, there are only a few **types**
 
    General access to the platform without limitations to user participation.
 
-5. **[Power users](power-users.md)**
+5. **[Power users](power-users.md)** _(cannot be modified as it is system-defined)_
 
    Expanded access that offers more than a user-definable group but less than one for administrators.
