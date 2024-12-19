@@ -16,7 +16,7 @@
 
    ![pictures](pictures/Error_window_18_12.png)
 
-### Database and System Configuration
+## Database and System Configuration
 
 - **GroupType Value:** The `GroupType` value is for Power Users:
   
