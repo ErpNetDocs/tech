@@ -18,12 +18,9 @@
 
 ## Database and System Configuration
 
-- **GroupType Value:** The `GroupType` value is for Power Users:
+- **GroupType Value:** The **[GroupType value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype)** is for Power Users:
   
    - **Value:** `P`
    - **Description:** PowerUsers
    - **Database Value:** `P`
    - **Model Value:** 4
-   - **Display Name:** In the user interface, this group is displayed as:
-     
-     - **Power Users**  
