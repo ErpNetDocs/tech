@@ -46,6 +46,8 @@ The primary purpose of this role is to allow users to manage security settings w
 3. **Business Rule Enforcement**
 
    - Rule **R37166 SecurityGroup – System Group Update Not Allowed** ensures that users cannot modify the Power Users group configuration.
+  
+     ![pictures](pictures/Error_window_18_12.png)
 
 The Power Users role enhances system functionality by delegating access control responsibilities to designated users without compromising administrative security. 
 
