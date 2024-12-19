@@ -1,23 +1,31 @@
-# ** User Roles in the System**
+# Groups
 
-The system supports multiple user roles, each designed to manage access and permissions for different levels of functionality. 
+Groups are designed to provide predefined level of access to secure data for specific users. 
 
-These roles are integral to maintaining data security and ensuring the appropriate allocation of responsibilities within the platform. 
+This is integral to ensuring the appropriate allocation of responsibilities within the platform.
 
-The following user roles are defined:
+![Groups](pictures/groups_intro.png)
 
-1. **Normal Users**
+## Group types
 
-   - Standard role with limited access to functionalities and panels.
+Any custom groups can be created freely. However, there are only a few **types** that can be assigned to them:
 
-2. **Administrators**
+1. **Normal user-definable group**
 
-   - Full access to all system functionalities, including security and permissions management.
+   Default type with limited access to the platform.
 
-3. **Everybody**
+2. **System group for one user** _(cannot be modified as it is system-defined)_
 
-   - A general role applied to all users for basic system operations.
+   Full access to the platform and its features. Exclusive to one user.
 
-4. **Power Users**
+3. **Administrators** _(cannot be modified as it is system-defined)_
 
-   - A role with elevated permissions, specifically designed to fill the gap between Normal Users and Administrators. This role allows for greater functionality without granting full administrative privileges.
+   Full access to the platform and its features.
+   
+4. **Everybody** _(cannot be modified as it is system-defined)_
+
+   General access to the platform without limitations to user participation.
+
+5. **Power users**
+
+   Expanded access that offers more than a user-definable group but less than one for administrators.
