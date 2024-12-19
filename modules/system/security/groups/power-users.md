@@ -16,11 +16,9 @@
 
    ![pictures](pictures/Error_window_18_12.png)
 
-## Database and System Configuration
+## System Data
 
-- **GroupType Value:** The **[GroupType value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype)** is for Power Users:
-  
-   - **Value:** `P`
-   - **Description:** PowerUsers
-   - **Database Value:** `P`
-   - **Model Value:** 4
+- **[GroupType Value](https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype):** `P`
+- **Description:** PowerUsers
+- **Database Value:** `P`
+- **Model Value:** 4
