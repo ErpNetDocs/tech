@@ -3,6 +3,9 @@
 - name: Groups
   href: groups/toc.yml
   topicHref: groups/index.md
+- name: System Permissions
+  href: system-permissions/toc.yml
+  topicHref: system-permissions/index.md
 - name: UI Functions
   href: ui-functions/toc.yml
   topicHref: ui-functions/index.md
