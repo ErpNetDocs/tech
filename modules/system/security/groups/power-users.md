@@ -15,11 +15,9 @@
 
 The Power Users group:
 
-1. Grants access to the **Security (Access Permissions)** panel and allows Power Users to make it accessible/hidden from regular users.
+1. Grants access to the **Security (Access Permissions)** panel and allows Power Users to make it accessible/hidden for regular users.
 
-2. Has users always **manually** added.
-
-   Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
+2. Has users always **manually added**. Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
 
 3. **Cannot** be edited directly by users. This includes changing its name and header.
 
