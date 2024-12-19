@@ -23,5 +23,5 @@ The Power Users group:
 
    Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
-   ![pictures](pictures/Error_window_18_12.png)
+   ![pictures](pictures/Error_window_19_12.png)
    
