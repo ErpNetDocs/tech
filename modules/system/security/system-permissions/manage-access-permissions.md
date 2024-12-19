@@ -20,7 +20,7 @@ A new business rule ensures proper implementation:
 - **Rule Name:** R37166 SecurityGroup – System Group Update Not Allowed
 - **Functionality:** Prevents unauthorized modifications to the Power Users and Administrators groups, which are automatically assigned this key.
 
-![pictures](pictures/Error_message.jpg)
+![pictures](pictures/Error_window_18_12.png)
 
 ---
 
