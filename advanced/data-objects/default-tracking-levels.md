@@ -9,6 +9,7 @@ The following table contains default system-specified tracking levels:
 | Entity | Default tracking level | Activated in version |
 | -- | ------------------------------- | ---------------------------------------------|
 | Calculated attributes | 3 | 2019.1 |
+| Cases | 4 | 25 |
 | Companies | 3 | 2019.1 |
 | Company locations | 3 | 2019.1 |
 | Config | 3 | 2019.1 |
