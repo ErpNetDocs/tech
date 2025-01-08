@@ -2922,6 +2922,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/filter-by-custom-property.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/filter-by-custom-property.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/desadv-iln-algorithm.md",
       "output": {
         ".html": {
@@ -2946,6 +2966,26 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/packing-reference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/filter-by-custom-property/image-20250108152647351.png",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/filter-by-custom-property/image-20250108152647351.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/filter-by-custom-property/image.png",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/pictures/filter-by-custom-property/image.png"
         }
       },
       "version": ""

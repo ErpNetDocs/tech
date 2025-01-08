@@ -1069,6 +1069,16 @@
     "title": "| ERP.net Tech Docs",
     "keywords": "ErpNet Exchange ECOD COMARCH EDI"
   },
+  "legacy/exchange/еcod-comarch-edi/business-logic/common/filter-by-custom-property.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/common/filter-by-custom-property.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "Филтриране по документна характериситка в задачите При експорт на фактури и стокови разписки в настроките на задачана има филтър по стойност на Документна характеристика. Тя определя, че ще се екпортират само тези документи, които имат такава стойност за избраната характеристика. В падащия списък за избор на характеристика се показват само тези документни характеристики, които са указани в дефиницията на някой тип документ за Фактури или Експедиции (в таблица \"Характеристики за тип документ\")."
+  },
+  "legacy/exchange/еcod-comarch-edi/business-logic/common/index.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/common/index.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "Общи Общи бизнес логики Филтриране на документите по потребителска харктеристика"
+  },
   "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/desadv-iln-algorithm.html": {
     "href": "legacy/exchange/еcod-comarch-edi/business-logic/export-despatch-advice/desadv-iln-algorithm.html",
     "title": "| ERP.net Tech Docs",
@@ -1107,7 +1117,7 @@
   "legacy/exchange/еcod-comarch-edi/business-logic/index.html": {
     "href": "legacy/exchange/еcod-comarch-edi/business-logic/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": "Бизнес логика Импорт на поръчки Експорт на стокови разписки Експорт на фактури"
+    "keywords": "Бизнес логика Общи Импорт на поръчки Експорт на стокови разписки Експорт на фактури"
   },
   "legacy/exchange/еcod-comarch-edi/data-compliance.html": {
     "href": "legacy/exchange/еcod-comarch-edi/data-compliance.html",
