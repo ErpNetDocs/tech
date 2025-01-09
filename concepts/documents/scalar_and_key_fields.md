@@ -4,7 +4,7 @@ uid: Scalar and Key Fields
 
 # Scalar and Key fields
 
-Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. This article explores the roles of scalar, key, and non-participating fields in the difference system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
+Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar, key, and non-participating fields in the difference system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
 
 # Scalar Fields
 Scalar fields in documents represent the quantitative effects of those documents. These fields typically include quantities —such as counts of products, materials, or people— and monetary values. Scalar fields are the foundation of the difference system, providing the basic numerical data on which calculations are performed.
