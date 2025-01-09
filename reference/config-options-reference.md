@@ -361,6 +361,6 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 ## 65. /JobsManager/IgnoreSessionsForIdleSchedule
 - a.Action: When the value of this key is: <br>
 "1" - When the key is defined and set to 1, Jobs marked as Run On Idle will start automatically at the scheduled time regardless of current server sessions.<br>
-"0" - When the key is defined and set to 0, or if no key is defined, Jobs marked as Run On Idle will start automatically at the scheduled time only if the server sessions are less than 5.<br>
+"0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, Jobs marked as Run On Idle will start automatically at the scheduled time only if the server sessions are less than 5.<br>
 - b.The user sets it manually.
 - c.The key is introduced in version: - 24 SP7
