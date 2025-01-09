@@ -4,20 +4,22 @@ uid: Scalar and Key Fields
 
 # Scalar and Key fields
 
-Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar, key, and non-participating fields in the discrepancies system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
+Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar, key, and non-participating fields in the discrepancy system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
 
 # Scalar Fields
-Scalar fields in documents represent the quantitative effects of those documents. These fields typically include quantities —such as counts of products, materials, or people— and monetary values. Theys are the foundation of the <b>discrepancies system</b>, providing the basic numerical data on which calculations are performed.
+Scalar fields in documents represent the quantitative effects of those documents. These fields typically include quantities — such as counts of products, materials, or people — and monetary values. Theys are the foundation of the <b>discrepancy system</b>, providing the basic numerical data on which calculations are performed.
 For example, consider a Store order for 100 units of a product. When a corresponding store transaction document is created, it will attempt to account for the entire 100 units. However, if a sub-document has already been generated for 42 units, the discrepancies system calculates the remaining quantity by subtracting the 42 units from the original 100, yielding a difference of 58 units. In this case, the system creates a new document for the remaining 58 units. 
 
-Scalar fields also play a crucial role in <b>document adjustments</b>. When an adjustment is created, its scalar field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. For additional information, see article ["Adjustments"](adjustments.md).
-Determining Scalar Fields
+Scalar fields also play a crucial role in [<b>Adjustments</b>](adjustments.md). When an adjustment is created, its scalar field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. 
+
+## Determining Scalar Fields
 Most fields that represent quantities or monetary amounts are classified as scalar. If a field represents such data, it is almost always considered scalar. However, there are notable exceptions where fields, although representing quantities or amounts, are derived from other scalar fields or external calculations and are therefore not declared scalar.
 
 For example:
 
-•	Expedition and Expedition Order Rows: Fields such as “Net, kg,” “Gross, kg,” “Volume, l,” and others reflect physical characteristics of goods. These values are derived from row quantities using measurement ratios or user input. Since these fields are recalculated for every document—whether manually entered, generated, corrected, or processed through the difference system—they are not scalar.
-•	Cost Fields in Warehouse Receipts: System cost fields, such as cost in base currency, warehouse currency, product currency, and document currency, depend on the cost source. If the cost source is “document,” these fields are derived from the row amount after applying currency conversions. If the cost source is “warehouse,” the values depend solely on row quantities and current warehouse costs, which are external to the document. In both cases, these fields are systematically recalculated rather than declared scalar.
+•	Shipments and Shipment Order Lines: Fields such as “Net, kg,” “Gross, kg,” “Volume, l,” and others reflect physical characteristics of goods. These values are derived from quantities in the lines, using product dimensions ratios or user input. Since these fields are recalculated for every document — whether manually entered, generated, corrected, or processed through the discrepancy system — they are not scalar;
+
+•	Cost fields in Store transactions: system cost fields, such as cost in base currency, warehouse currency, product currency, and document currency, depend on the cost source. If the cost source is “document,” these fields are derived from the line amount after applying currency conversions. If the cost source is “warehouse,” the values depend solely on line quantities and current warehouse costs, which are external to the document. In both cases, these fields are systematically recalculated rather than declared scalar.
 
 # Key Fields
 Key fields are identifiers that distinguish parts of a document or groups of documents within a larger set. They serve as natural, analytical, or business keys, allowing the system to recognize distinct captions, lines, or other business components. Key fields are integral to the difference system, as they enable the segmentation of documents into components and determine the extent to which each part has been fulfilled.
