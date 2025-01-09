@@ -2,17 +2,17 @@
 uid: Scalar and Key Fields
 ---
 
-# Scalar and Key fields
+# Scalar-value and Key fields
 
-Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar, key, and non-participating fields in the discrepancy system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
+Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar-value, key, and non-participating fields in the discrepancy system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
 
-# Scalar Fields
+# Scalar-value Fields
 Scalar fields in documents represent the quantitative effects of those documents. These fields typically include quantities — such as counts of products, materials, or people — and monetary values. Theys are the foundation of the <b>discrepancy system</b>, providing the basic numerical data on which calculations are performed.
 For example, consider a Store order for 100 units of a product. When a corresponding store transaction document is created, it will attempt to account for the entire 100 units. However, if a sub-document has already been generated for 42 units, the discrepancies system calculates the remaining quantity by subtracting the 42 units from the original 100, yielding a difference of 58 units. In this case, the system creates a new document for the remaining 58 units. 
 
-Scalar fields also play a crucial role in [<b>Adjustments</b>](adjustments.md). When an adjustment is created, its scalar field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. 
+Scalar-value fields also play a crucial role in [<b>Adjustments</b>](adjustments.md). When an adjustment is created, its scalar-value field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. 
 
-## Determining Scalar Fields
+## Determining Scalar-value Fields
 Most fields that represent quantities or monetary amounts are classified as scalar. If a field represents such data, it is almost always considered scalar. However, there are notable exceptions where fields, although representing quantities or amounts, are derived from other scalar fields or external calculations and are therefore not declared scalar.
 
 For example:
