@@ -26,9 +26,9 @@ The mechanism, when an adjustment document (when the document state is switched 
 
 3. If a corresponding record is found in the main document, then the system reviews all the fields in the correction record and the following applies to each field:
 
-   ​        a. if the field is a *key field* (see the article about Key and Scalar-Valued Fields), then it is checked if it has the same value in the main document and in the adjustment document; if there is a difference, the adjustment is rolled back, and the user is notified by an error message;
+   ​        a. if the field is a *key field* (see the article about [Scalar and Key Fields](scalar_and_key_fields.md), then it is checked if it has the same value in the main document and in the adjustment document; if there is a difference, the adjustment is rolled back, and the user is notified by an error message;
 
-   ​        b. if the field is *scalar-valued* (see the article about Key and Scalar-Valued Fields), then the value of the adjustment record is ***added*** to the value of the main record;
+   ​        b. if the field is *scalar-valued*, then the value of the adjustment record is ***added*** to the value of the main record;
 
    ​        c. if the field is neither *key* nor *scalar-valued*, then the value of the main record is ***replaced*** by the value of the adjustment record.
 
