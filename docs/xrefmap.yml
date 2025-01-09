@@ -25,6 +25,9 @@ references:
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html
+- uid: Scalar and Key Fields
+  name: Scalar-value and Key fields
+  href: concepts/documents/scalar_and_key_fields.html
 - uid: VMR
   name: Variable (dynamic) measurement ratios
   href: concepts/products/variable-dynamic-measurement-rations.html

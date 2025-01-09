@@ -2663,6 +2663,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "concepts/documents/scalar_and_key_fields.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/documents/scalar_and_key_fields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "concepts/documents/states.md",
       "output": {
         ".html": {
@@ -2936,6 +2946,16 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/pictures/filter-by-custom-property/image-20250109161237558.png",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/pictures/filter-by-custom-property/image-20250109161237558.png"
         }
       },
       "version": ""
