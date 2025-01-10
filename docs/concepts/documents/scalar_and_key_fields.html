@@ -107,11 +107,11 @@ When released documents are updated through adjustment documents, key fields are
 •	Store in Store Orders: This key field is used when documents from modules such as Procurement and Sales create Store Orders for receiving or issuing goods across multiple stores. If the parent document’s quantities are edited, the system checks existing warehouse orders to determine how much of the quantities have already been processed. Since these checks are performed separately for each store, the store field is key;</p>
 <p>•	Store in Store Transactons: If a store order generates a store transaction specifying a store, this field becomes key. Altering it in the transaction document would violate the discrepancy system’s integrity, as key field differences are not permitted. This ensures that sub-documents remain consistent with their parent documents.</p>
 <p>In addition to business logic, fields related to units of measure or currencies are always classified as key. This prevents inconsistencies between sub-documents and parent documents, simplifying scalar field calculations and corrections by avoiding the need for complex conversions.</p>
-<h2 id="key-field-classification-involves-several-considerations">Key field classification involves several considerations:</h2>
-<p><strong>1.</strong>	Is the field essential for distinguishing specific business processes or components? If yes, it is likely key.
-<strong>2.</strong>	Should the parent document enforce a fixed value for the field in sub-documents? If yes, it is likely key.
-<strong>3.</strong>	Can the field’s value be modified in a released document through adjustments? If yes, it is probably not key.
-<strong>4.</strong>	Does the field indicate a unit of measure, currency, or other scalar-related metric? If yes, it must be key.</p>
+<p><b> Key field classification involves several considerations:</b></p>
+<p><strong>1.</strong>	Is the field essential for distinguishing specific business processes or components? If yes, it is likely key.</p>
+<p><strong>2.</strong>	Should the parent document enforce a fixed value for the field in sub-documents? If yes, it is likely key.</p>
+<p><strong>3.</strong>	Can the field’s value be modified in a released document through adjustments? If yes, it is probably not key.</p>
+<p><strong>4.</strong>	Does the field indicate a unit of measure, currency, or other scalar-related metric? If yes, it must be key.</p>
 <h1 id="other-fields">Other Fields</h1>
 <p>Fields that are neither scalar nor key, such as notes or dates, do not participate in the difference system. These fields are excluded from discrepancy calculations and are not assigned analytical significance. They can be updated through corrections, but their updates follow a simpler principle: the latest adjustment sets the current value. Exceptions to this behavior occur when specific fields, such as cost fields in warehouse receipts, undergo recalculations triggered by status changes.</p>
 
