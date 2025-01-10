@@ -40,8 +40,11 @@ In addition to business logic, fields related to units of measure or currencies 
 ## Key field classification involves several considerations:
 
 **1.**	Is the field essential for distinguishing specific business processes or components? If yes, it is likely key.
+
 **2.**	Should the parent document enforce a fixed value for the field in sub-documents? If yes, it is likely key.
+
 **3.**	Can the field’s value be modified in a released document through adjustments? If yes, it is probably not key.
+
 **4.**	Does the field indicate a unit of measure, currency, or other scalar-related metric? If yes, it must be key.
 
 # Other Fields
