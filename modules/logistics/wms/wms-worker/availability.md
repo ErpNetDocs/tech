@@ -1,10 +1,10 @@
 # Availability
 
-The system provides quick and easy availability checks. A location or product should be selected to get the search engine up and running:
+The system provides quick and easy availability checks. A location, product or LUN should be selected to get the search engine up and running:
 
 ![Availability](pictures/availability.png)
 
-The availability shows after your selection:
+If you select Location for example, the availability shows after your selection:
  
 ![Availability details](pictures/availability-details.png)
 
@@ -25,3 +25,5 @@ Once you have selected a location or product, you have the following actions ava
 -	<b>Clear</b> - to clear the field and potentially enter a new value
  
 ![Availability actions](pictures/availability-actions.png)
+
+If you select directly a LUN, the availability of this particulary LUN is shown. In the LUN field you can enter values from LogisticUnits.SerialCode. The location is only one, you can read more about prevent LUN to be in diferent locations here. You will see the availability only in this LUN:
