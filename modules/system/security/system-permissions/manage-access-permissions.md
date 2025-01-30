@@ -13,13 +13,13 @@ The **Manage Access Permissions** key grants selected **[security groups](../gro
 * **Default Groups:**
   
   * **Administrators**
-  * **Power Users**
+  * **[Power Users](../groups/power-users.md)**
 
 
 ### Key features
 
 The Manage Access Permissions key:
 
-* Allows the **Power Users** and **Administrators** groups to see and access the **Security/Access Permissions panel**.
+* Allows the **[Power Users](../groups/power-users.md)** and **Administrators** groups to see and access the **Security/Access Permissions panel**.
 
 * Restricts visibility to this panel for groups not having the key.
