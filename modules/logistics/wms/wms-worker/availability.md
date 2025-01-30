@@ -2,11 +2,11 @@
 
 The system provides quick and easy availability checks. A location, product or LUN should be selected to get the search engine up and running:
 
-![Availability](pictures/availability_new.png)
+![Availability](pictures/availability-new.png)
 
 If you select Location for example, the availability shows after your selection:
  
-![Availability details](pictures/availability_location_new.png)
+![Availability details](pictures/availability-location-new.png)
 
 You will find the following information about the product:
 -	<b>Location</b> - The location of the product
