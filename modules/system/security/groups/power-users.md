@@ -1,10 +1,8 @@
 # Power Users
 
-**Power Users** is a system-defined **[group type](index.md#group-types)** providing select users with privileges elevated above those of the **Normal user-definable group** type but below the **Administrators** type. 
+**Power Users** is a system-defined **[group type](index.md#group-types)** that serves as an intermediate tier between administrators and regular users. It offers elevated permissions without granting full administrative privileges.
 
-Its primary purpose is to allow users to access permissions via the **Security** (Desktop Client) and **Access Permissions** (Web Client) panel, as well as have the option to make this panel visible or hidden for regular users.
-
-Access to the panel is further defined through the **[Manage Access Permissions key](../system-permissions/manage-access-permissions.md)**, which is assigned to the **Power Users** group.
+The Power Users group can manage access rights via the **Security panel** (Desktop) and **Access Permissions panel** (Web), which are hidden by default for regular users. This reduces Power Users' dependency on administrators for certain security tasks.
 
 ![pictures](pictures/Power_user_group_19_12.png)
 
@@ -17,15 +15,11 @@ Access to the panel is further defined through the **[Manage Access Permissions 
 
 ## Key features
 
-The Power Users group:
+1. Members are always **manually added** to the Power Users group. Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
 
-1. Grants access to the **Security (Access Permissions)** panel and allows Power Users to make it accessible/hidden for regular users.
+2. The Power Users group **cannot** be edited directly by users. This includes changing its name and header.
 
-2. Has users always **manually added**. Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
-
-3. **Cannot** be edited directly by users. This includes changing its name and header.
-
-   Any attempt by users to modify it will result in an **error**, ensured by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
+   Any attempt by users to modify it will result in an **error**, handled by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
    ![pictures](pictures/Error_window_19_12.jpg)
    
