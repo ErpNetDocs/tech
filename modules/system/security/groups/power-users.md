@@ -14,7 +14,7 @@ The Power Users group can manage access rights via the **Security panel** (Deskt
 - **Model Value:** 4
 
 > [!NOTE]
-> Together with the Administrators group, the Power Users group is assigned the **[Manage Access Permissions key](../system-permissions/manage-access-permissions.md)**, which enables it to view and interact with the Security/Access permissions panel.
+> The Power Users group is assigned the **[Manage Access Permissions key](../system-permissions/manage-access-permissions.md)** which enables it to view and interact with the Security/Access permissions panel.
 
 
 ## Key features
