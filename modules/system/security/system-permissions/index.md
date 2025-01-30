@@ -1,6 +1,6 @@
 # System Permissions
 
-The **System Permissions** panel is a central hub for managing user access to various functionalities across the platform. 
+The **System Permissions** panel serves as a central hub for managing user access to various platform functionalities. 
 
 Administrators can grant or restrict permissions by assigning specific **system keys** to security groups. These keys define what actions users can perform and which sections they can access. 
 
