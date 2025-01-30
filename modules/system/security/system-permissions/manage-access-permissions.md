@@ -8,7 +8,7 @@ The **Manage Access Permissions** key grants selected **[security groups](../gro
 
 * **Name:** Manage Access Permissions
 
-* **Description:** Allows users to manage access rights for other users.
+* **Description:** Allows groups to manage access rights for other users.
 
 * **Default Groups:**
   
