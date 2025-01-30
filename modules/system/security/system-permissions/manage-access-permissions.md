@@ -4,18 +4,6 @@ The **Manage Access Permissions** key grants selected **[security groups](../gro
 
 ![pictures](pictures/Manage_access_permissions_17_12.png)
 
-### System data
-
-* **Name:** Manage Access Permissions
-
-* **Description:** Allows groups to manage access rights for other users.
-
-* **Default Groups:**
-  
-  * **Administrators**
-  * **[Power Users](../groups/power-users.md)**
-
-
 ### Key features
 
 The Manage Access Permissions key:
