@@ -87,9 +87,8 @@
         <article data-uid="">
 <h1 id="power-users">Power Users</h1>
 
-<p><strong>Power Users</strong> is a system-defined <strong><a href="index.html#group-types">group type</a></strong> providing select users with privileges elevated above those of the <strong>Normal user-definable group</strong> type but below the <strong>Administrators</strong> type.</p>
-<p>Its primary purpose is to allow users to access permissions via the <strong>Security</strong> (Desktop Client) and <strong>Access Permissions</strong> (Web Client) panel, as well as have the option to make this panel visible or hidden for regular users.</p>
-<p>Access to the panel is further defined through the <strong><a href="../system-permissions/manage-access-permissions.html">Manage Access Permissions key</a></strong>, which is assigned to the <strong>Power Users</strong> group.</p>
+<p><strong>Power Users</strong> is a system-defined <strong><a href="index.html#group-types">group type</a></strong> that serves as an intermediate tier between administrators and regular users. It offers elevated permissions without granting full administrative privileges.</p>
+<p>The Power Users group can manage access rights via the <strong>Security panel</strong> (Desktop) and <strong>Access Permissions panel</strong> (Web), which are hidden by default for regular users. This reduces Power Users' dependency on administrators for certain security tasks.</p>
 <p><img src="pictures/Power_user_group_19_12.png" alt="pictures"></p>
 <h3 id="system-data">System Data</h3>
 <ul>
@@ -98,15 +97,16 @@
 <li><strong>Database Value:</strong> <code>P</code></li>
 <li><strong>Model Value:</strong> 4</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Power Users group is assigned the <strong><a href="../system-permissions/manage-access-permissions.html">Manage Access Permissions key</a></strong> which enables it to view and interact with the Security/Access permissions panel.</p>
+</div>
 <h2 id="key-features">Key features</h2>
-<p>The Power Users group:</p>
 <ol>
-<li><p>Grants access to the <strong>Security (Access Permissions)</strong> panel and allows Power Users to make it accessible/hidden for regular users.</p>
+<li><p>Members are always <strong>manually added</strong> to the Power Users group. Unlike in the <strong>Administrators</strong> group type, there is no checkbox or automated assignment process.</p>
 </li>
-<li><p>Has users always <strong>manually added</strong>. Unlike in the <strong>Administrators</strong> group type, there is no checkbox or automated assignment process.</p>
-</li>
-<li><p><strong>Cannot</strong> be edited directly by users. This includes changing its name and header.</p>
-<p>Any attempt by users to modify it will result in an <strong>error</strong>, ensured by <strong><a href="https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement">business rule R37166</a></strong>.</p>
+<li><p>The Power Users group <strong>cannot</strong> be edited directly by users. This includes changing its name and header.</p>
+<p>Any attempt by users to modify it will result in an <strong>error</strong>, handled by <strong><a href="https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement">business rule R37166</a></strong>.</p>
 <p><img src="pictures/Error_window_19_12.jpg" alt="pictures"></p>
 </li>
 </ol>
