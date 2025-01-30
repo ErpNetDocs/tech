@@ -13,6 +13,10 @@ The Power Users group can manage access rights via the **Security panel** (Deskt
 - **Database Value:** `P`
 - **Model Value:** 4
 
+> [!NOTE]
+> Power Users are assigned the **[Manage Access Permissions key](../system-permissions/manage-access-permissions.md)**.
+
+
 ## Key features
 
 1. Members are always **manually added** to the Power Users group. Unlike in the **Administrators** group type, there is no checkbox or automated assignment process.
