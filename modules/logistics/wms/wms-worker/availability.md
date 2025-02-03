@@ -20,4 +20,4 @@ You will find the following information about the product:
 
 If you select a LUN, the availability of this particular LUN is shown. In the LUN field, you can enter values from LogisticUnits.SerialCode. The location is only one, you can read more about preventing LUN from being in different locations. You will see the availability only in this LUN:
 
-![Availability lun](pictures/availability-lun.png)
+![Availability lun](pictures/availability--by-lun.png)
