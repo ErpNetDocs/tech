@@ -3,7 +3,8 @@ The store order can be created using different measurement units for the "Quanti
 
 ## How it works? ##
 The menu is available for operations Receive and Issue. 
-The settingis remembered per user and independently for the forementioned operations.
+The settings are remembered per user and independently for the forementioned operations.
+(pictures/chooseunit1.png)
 
 A user initiates a Receive operation for an Order. By default, the order lines are displayed in the ordered measurement units unless changed.
 In the example below, a Receive order includes three lines for products ordered in different measurement units.
