@@ -23,6 +23,7 @@ By changing the display measurement unit through the menu, the ordered quantitie
 During order execution, users can switch between measurement units for convenience.
 
 Upon order completion, the Store transaction is recorded in the originally ordered measurement units.
+
 ![StoreTransaction](pictures/chooseunit4.png)
 
 With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!
