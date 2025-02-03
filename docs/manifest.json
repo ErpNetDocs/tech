@@ -9469,6 +9469,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/ChooseUnit.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/inventory-control/ChooseUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/inventory/inventory-control/command-list.md",
       "output": {
         ".html": {
@@ -9873,6 +9883,46 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/change-documents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu4.png"
         }
       },
       "version": ""
