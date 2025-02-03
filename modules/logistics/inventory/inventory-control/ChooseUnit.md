@@ -16,7 +16,7 @@ Product "Grape Juice" has a default measurement unit of "Litre" but is currently
 
 When scanning 1 unit of "Grape Juice" (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).
 
-![Scan](pictures/choosmenu3.png)
+![Scan](pictures/choosemenu3.png)
 
 By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.
 
