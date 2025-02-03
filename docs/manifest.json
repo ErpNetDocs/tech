@@ -14866,6 +14866,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-by-lun.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-by-lun.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-details.png",
       "output": {
         "resource": {
