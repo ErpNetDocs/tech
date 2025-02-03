@@ -19,3 +19,5 @@ You will find the following information about the product:
 -	<b>Unit</b> - Unit for the shown quantity
 
 If you select a LUN, the availability of this particular LUN is shown. In the LUN field, you can enter values from LogisticUnits.SerialCode. The location is only one, you can read more about preventing LUN from being in different locations. You will see the availability only in this LUN:
+
+![Availability details](pictures/availability-lun-new.png)
