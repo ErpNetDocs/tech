@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Work with Logistic Units | ERP.net Tech Docs </title>
+      <title> | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Work with Logistic Units | ERP.net Tech Docs ">
+      <meta name="title" content=" | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
       <link rel="stylesheet" href="../../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
       
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -63,41 +63,27 @@
     </header>
 
     <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
-        </div>
-      </div>
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
 
         <article data-uid="">
-<h1 id="work-with-logistic-units">Work with Logistic Units</h1>
 
-<p><a class="xref" href="../index.html">Logistic Units</a> (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease.</p>
+<h2 id="експорт-на-кредитно-известие-когато-в-системата-няма-данни-за-оригиналния-документ">Експорт на кредитно известие, когато в системата няма данни за оригиналния документ</h2>
+<p>При началото на използване на ERP.net,  когато след внедряването е започне работа, оригиналните фактури не присъстват като документи в системата. Тогава полето Оригинална факткура в кредитното известие няма стойност.</p>
+<p>За да може експорта да се осъществи е необходимо да му се подадат Номер на оригинална фактура и Дата на оригинална фактура. Това се прави, като тези стойности се подават в характеристики за документ, както следва:</p>
 <ul>
-<li><a href="Create_New_LU.html"></a></li>
-<li><a href="create_LUNs.html">Create multiple LUNs</a></li>
-<li><a href="working-with-lu.html">Work with Logistic Units</a></li>
+<li>Номер на оригинална фактура - Потребителска характеристика за документ с код <strong>Exch_InvoiceReferenceNumber</strong></li>
+<li>Дата на оригинална фактура - Потребителска характеристика за документ с код <strong>Exch_InvoiceReferenceDate</strong></li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

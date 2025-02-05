@@ -1099,6 +1099,11 @@
     "title": "| ERP.net Tech Docs",
     "keywords": "Активиране на Packing-Reference секцията за поддръжка на SSCC кодове Секцията Packing-Reference се активира, ако има попълнен поне един SSCC код, попълнен в свързаният ред от складова разписка. SSCC кодовете се дефинират, като потребитлска характеристика за редове на складова разписка с код Exch_SSCC_STL Ако няма референтен ред на складова разписка се приема, че няма SSCC код за този ред SSCC код се попълва от експорта в тага в секцията Packing-Reference Ако в един ред има попълнена SSCC код, то всички редове трябва да имат. Не се допуска само някой от редовете да имат."
   },
+  "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.html": {
+    "href": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.html",
+    "title": "| ERP.net Tech Docs",
+    "keywords": "Експорт на кредитно известие, когато в системата няма данни за оригиналния документ При началото на използване на ERP.net, когато след внедряването е започне работа, оригиналните фактури не присъстват като документи в системата. Тогава полето Оригинална факткура в кредитното известие няма стойност. За да може експорта да се осъществи е необходимо да му се подадат Номер на оригинална фактура и Дата на оригинална фактура. Това се прави, като тези стойности се подават в характеристики за документ, както следва: Номер на оригинална фактура - Потребителска характеристика за документ с код Exch_InvoiceReferenceNumber Дата на оригинална фактура - Потребителска характеристика за документ с код Exch_InvoiceReferenceDate"
+  },
   "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/index.html": {
     "href": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/index.html",
     "title": "| ERP.net Tech Docs",
@@ -2372,7 +2377,7 @@
   "modules/logistics/wms/logistic-units/How-to/index.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/index.html",
     "title": "Work with Logistic Units | ERP.net Tech Docs",
-    "keywords": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create a new LU Create multiple LUNs Work with Logistic Units"
+    "keywords": "Work with Logistic Units Logistic Units (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease. Create multiple LUNs Work with Logistic Units"
   },
   "modules/logistics/wms/logistic-units/How-to/working-with-lu.html": {
     "href": "modules/logistics/wms/logistic-units/How-to/working-with-lu.html",

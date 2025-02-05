@@ -3022,6 +3022,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/export-credit-note.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/export-invoices/index.md",
       "output": {
         ".html": {
