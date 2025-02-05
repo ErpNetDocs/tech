@@ -523,6 +523,15 @@ For example &quot;location: {Location} ; forklift - {Document.@Property2: VD}&qu
 &quot;0&quot; - When the key is defined and set to 0, or if no key is defined, 'Complete with sub-documents, including unreleased' will not be available as a Completed status option.<br></li>
 <li>b.The user sets it manually.</li>
 <li>c.The key is introduced in version: - 25</li>
+<li></li>
+</ul>
+<h2 id="65-jobsmanagerignoresessionsforidleschedule">65. /JobsManager/IgnoreSessionsForIdleSchedule</h2>
+<ul>
+<li>a.Action: When the value of this key is: <br>
+&quot;1&quot; - When the key is defined and set to 1, Jobs marked as Run On Idle will start automatically at the scheduled time regardless of current server sessions.<br>
+&quot;0&quot; - When the key is defined and set to 0 or a value different from 1, or if no key is defined, Jobs marked as Run On Idle will start automatically at the scheduled time only if the server sessions are less than 5.<br></li>
+<li>b.The user sets it manually.</li>
+<li>c.The key is introduced in version: - 24 SP7</li>
 </ul>
 
 </article>

@@ -37,11 +37,14 @@ For example:
 
 In addition to business logic, fields related to units of measure or currencies are always classified as key. This prevents inconsistencies between sub-documents and parent documents, simplifying scalar field calculations and corrections by avoiding the need for complex conversions.
 
-## Key field classification involves several considerations:
+<b> Key field classification involves several considerations:</b>
 
 **1.**	Is the field essential for distinguishing specific business processes or components? If yes, it is likely key.
+
 **2.**	Should the parent document enforce a fixed value for the field in sub-documents? If yes, it is likely key.
+
 **3.**	Can the field’s value be modified in a released document through adjustments? If yes, it is probably not key.
+
 **4.**	Does the field indicate a unit of measure, currency, or other scalar-related metric? If yes, it must be key.
 
 # Other Fields

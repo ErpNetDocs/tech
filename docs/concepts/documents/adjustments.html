@@ -101,8 +101,8 @@
 <li><p>If no corresponding record is found in the main document (this is possible only if the current record is in the rows of the adjustment document), then the adjustment record is simply added to the corresponding table in the main document with no changes in it;</p>
 </li>
 <li><p>If a corresponding record is found in the main document, then the system reviews all the fields in the correction record and the following applies to each field:</p>
-<p>​        a. if the field is a <em>key field</em> (see the article about Key and Scalar-Valued Fields), then it is checked if it has the same value in the main document and in the adjustment document; if there is a difference, the adjustment is rolled back, and the user is notified by an error message;</p>
-<p>​        b. if the field is <em>scalar-valued</em> (see the article about Key and Scalar-Valued Fields), then the value of the adjustment record is <em><strong>added</strong></em> to the value of the main record;</p>
+<p>​        a. if the field is a <em>key field</em> (see the article about <a href="scalar_and_key_fields.html">Scalar and Key Fields</a>), then it is checked if it has the same value in the main document and in the adjustment document; if there is a difference, the adjustment is rolled back, and the user is notified by an error message;</p>
+<p>​        b. if the field is <em>scalar-valued</em>, then the value of the adjustment record is <em><strong>added</strong></em> to the value of the main record;</p>
 <p>​        c. if the field is neither <em>key</em> nor <em>scalar-valued</em>, then the value of the main record is <em><strong>replaced</strong></em> by the value of the adjustment record.</p>
 </li>
 </ol>

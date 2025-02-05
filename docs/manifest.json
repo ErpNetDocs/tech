@@ -2663,6 +2663,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "concepts/documents/scalar_and_key_fields.md",
+      "output": {
+        ".html": {
+          "relative_path": "concepts/documents/scalar_and_key_fields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "concepts/documents/states.md",
       "output": {
         ".html": {
@@ -2936,6 +2946,16 @@
       "output": {
         ".html": {
           "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/pictures/filter-by-custom-property/image-20250109161237558.png",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/exchange/еcod-comarch-edi/business-logic/common/pictures/filter-by-custom-property/image-20250109161237558.png"
         }
       },
       "version": ""
@@ -9449,6 +9469,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/ChooseUnit.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/inventory-control/ChooseUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/inventory/inventory-control/command-list.md",
       "output": {
         ".html": {
@@ -9853,6 +9883,46 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/inventory-control/pictures/change-documents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/choosemenu4.png"
         }
       },
       "version": ""
@@ -14846,6 +14916,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-by-lun.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-by-lun.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-details.png",
       "output": {
         "resource": {
@@ -14856,10 +14936,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-location-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-location-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability.png",
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/pictures/availability.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability_location_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability_location_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/availability_new.png"
         }
       },
       "version": ""

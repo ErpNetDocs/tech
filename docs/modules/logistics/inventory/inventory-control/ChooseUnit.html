@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Power Users | ERP.net Tech Docs </title>
+      <title>Measurement unit of the order | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Power Users | ERP.net Tech Docs ">
+      <meta name="title" content="Measurement unit of the order | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/system/security/groups/power-users.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/inventory-control/ChooseUnit.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,36 +85,29 @@
         </div>
 
         <article data-uid="">
-<h1 id="power-users">Power Users</h1>
+<h1 id="measurement-unit-of-the-order">Measurement unit of the order</h1>
 
-<p><strong>Power Users</strong> is a system-defined <strong><a href="index.html#group-types">group type</a></strong> that serves as an intermediate tier between administrators and regular users. It offers elevated permissions without granting full administrative privileges.</p>
-<p>The Power Users group can manage access rights via the <strong>Security panel</strong> (Desktop) and <strong>Access Permissions panel</strong> (Web), which are hidden by default for regular users. This reduces Power Users' dependency on administrators for certain security tasks.</p>
-<p><img src="pictures/Power_user_group_19_12.png" alt="pictures"></p>
-<h3 id="system-data">System Data</h3>
-<ul>
-<li><strong><a href="https://docs.erp.net/model/entities/Systems.Security.Groups.html#grouptype">GroupType Value</a>:</strong> <code>P</code></li>
-<li><strong>Description:</strong> PowerUsers</li>
-<li><strong>Database Value:</strong> <code>P</code></li>
-<li><strong>Model Value:</strong> 4</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The Power Users group is assigned the <strong><a href="../system-permissions/manage-access-permissions.html">Manage Access Permissions key</a></strong> which enables it to view and interact with the Security/Access permissions panel.</p>
-</div>
-<h2 id="key-features">Key features</h2>
-<ol>
-<li><p>Members are always <strong>manually added</strong> to the Power Users group. Unlike in the <strong>Administrators</strong> group type, there is no checkbox or automated assignment process.</p>
-</li>
-<li><p>The Power Users group <strong>cannot</strong> be edited directly by users. This includes changing its name and header.</p>
-<p>Any attempt by users to modify it will result in an <strong>error</strong>, handled by <strong><a href="https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement">business rule R37166</a></strong>.</p>
-<p><img src="pictures/Error_window_19_12.jpg" alt="pictures"></p>
-</li>
-</ol>
+<p>The store order can be created using different measurement units for the &quot;Quantity Unit&quot; field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the &quot;Choose Measurement Unit&quot; menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.</p>
+<h2 id="how-it-works">How it works?</h2>
+<p>The menu is available for operations Receive and Issue.
+The settings are remembered per user and independently for the forementioned operations.</p>
+<p><img src="pictures/choosemenu1.png" alt="Menu"></p>
+<p>A user initiates a Receive operation for an Order. By default, the order lines are displayed in the ordered measurement units unless changed.
+In the example below, a Receive order includes three lines for products ordered in different measurement units.</p>
+<p><img src="pictures/choosemenu2.png" alt="Order"></p>
+<p>Product &quot;Grape Juice&quot; has a default measurement unit of &quot;Litre&quot; but is currently ordered in &quot;Carton box.&quot; The conversion is as follows: 1 Carton box = 6 Litres = 12 pcs (Base unit).</p>
+<p>When scanning 1 unit of &quot;Grape Juice&quot; (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).</p>
+<p><img src="pictures/choosemenu3.png" alt="Scan"></p>
+<p>By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.</p>
+<p>During order execution, users can switch between measurement units for convenience.</p>
+<p>Upon order completion, the Store transaction is recorded in the originally ordered measurement units.</p>
+<p><img src="pictures/choosemenu4.png" alt="StoreTransaction"></p>
+<p>With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/system/security/groups/power-users.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/inventory-control/ChooseUnit.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
