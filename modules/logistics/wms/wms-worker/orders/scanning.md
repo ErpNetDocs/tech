@@ -2,6 +2,7 @@
 
 This topic will explain how to scan and work with quantity, location, and logistic units (LUNs) in the SCAN field to speed up the order execution process.
 
+![Scan field current values](pictures/Scan-field-current-values.png)
 
 ## Single Scan
 Single Scan
