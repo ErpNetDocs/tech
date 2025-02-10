@@ -3,7 +3,7 @@
 To scan a product once, simply scan or manually enter its product or additional code into the SCAN field and tap the blue arrow button. This will initiate the execution of the line for that product. During execution, the system will guide you through the necessary screens for Location, Lot, Logistic Unit, and any other required information. After completing these steps, you will be prompted to enter the Quantity.
 
 > [!Note]
-> This topic is only for scanning simple codes, if you want to read about GS1 or SSCC codes, click here: [GS1 Barcodes](/modules/logistics/wms/gs1-barcodes.md)
+> This topic is only for scanning simple codes, if you want to read about GS1 or SSCC codes, click here: [GS1 Barcodes](../modules/logistics/wms/gs1-barcodes.md)
 
 ## Work with quantity, current location, and currnet logistic units (LUNs):
 
