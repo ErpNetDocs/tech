@@ -3,14 +3,14 @@
 To scan a product once, simply scan or manually enter its product or additional code into the SCAN field and tap the blue arrow button. This will initiate the execution of the line for that product. During execution, the system will guide you through the necessary screens for Location, Lot, Logistic Unit, and any other required information. After completing these steps, you will be prompted to enter the Quantity.
 
 > [!Note]
-> This topic is only for scanning simple codes, if you want to read about GS1 or SSCC codes, click here: [GS1 Barcodes](../wms/gs1-barcodes.md)
+> This topic is only for scanning simple codes, if you want to read about GS1 or SSCC codes, click here: [GS1 Barcodes](../gs1-barcodes.md)
 
 ## Work with quantity, current location, and currnet logistic units (LUNs):
 
 ![Scan field current values](pictures/Scan-field-current-values.png)
 
 > [!Note]
-> Next functionalities correspond to Parsers (P04, P05, and P06). If you'd like to learn more about barcode parsers, click here: [Barcode Parsers](../wms/how-it-works/barcode-parsers/index.md)
+> Next functionalities correspond to Parsers (P04, P05, and P06). If you'd like to learn more about barcode parsers, click here: [Barcode Parsers](../how-it-works/barcode-parsers/index.md)
 
 ## Multiple Scans
 To scan a product multiple times, scan or manually enter the desired quantity into the SCAN field and tap the blue arrow button to confirm. Quantities over 999 must be followed by ("*"), while for quantities up to 999, the asterisk is optional. If the asterisk is omitted for smaller numbers, the system will still recognize it as a quantity.
