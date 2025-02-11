@@ -109,6 +109,10 @@
 <p>The SCAN field supports scanning Logistic Units (LUNs) that are not in SSCC format. When a valid LUN is scanned, it will be displayed as a line under the SCAN field, following the same structure as quantities and locations. The LUN line will appear below both the quantity and location lines.</p>
 <p>Once a LUN is scanned, it will remain stored in WMS Worker’s memory until another LUN is scanned or the current LUN is removed by clicking the X. If a LUN is scanned followed by a product from the list, the LUN screen will be skipped. If there is also a current location, both the location and product screens will be skipped, and the user will go directly to the quantity screen (unless there are lots, serial numbers, etc.).</p>
 <p>After completing a line, the worker will return to the line list, and the current LUN will remain. If another product is scanned, the same process will repeat. If a current LUN is stored and a line is executed without scanning a product, the LUN screen will be skipped, and the stored LUN will be automatically applied to that line.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A logistic unit (LUN) cannot have availability in more than one location. If an attempt is made to place a logistic unit in a location while it already has availability in another location, an error will be thrown.</p>
+</div>
 <h2 id="updated-scan-priorities">Updated Scan Priorities</h2>
 <p>The updated scanning priorities are as follows (from highest to lowest): Quantity, Location, LUN, Product. If the same code is used for both a location and a LUN (which is rare), the scan will be treated as a location.</p>
 <p>If the scanned code is not recognized as a quantity, location, LUN, or product, an error message will be displayed:</p>
