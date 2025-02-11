@@ -28,6 +28,9 @@ Then, click the desired location to make the selection.
 
 To be updated.
 
+> [!Note]
+> A logistic unit (LUN) cannot have availability in more than one location. If an attempt is made to place a logistic unit in a location while it already has availability in another location, an error will be thrown.
+
 ## Product
 
 After selecting the location, a field for confirming the scanning of the product will appear. 
