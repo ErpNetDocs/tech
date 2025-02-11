@@ -33,6 +33,10 @@ Once a LUN is scanned, it will remain stored in WMS Worker’s memory until anot
 
 After completing a line, the worker will return to the line list, and the current LUN will remain. If another product is scanned, the same process will repeat. If a current LUN is stored and a line is executed without scanning a product, the LUN screen will be skipped, and the stored LUN will be automatically applied to that line.
 
+> [!Note]
+> A logistic unit (LUN) cannot have availability in more than one location. If an attempt is made to place a logistic unit in a location while it already has availability in another location, an error will be thrown.
+
+
 ## Updated Scan Priorities
 The updated scanning priorities are as follows (from highest to lowest): Quantity, Location, LUN, Product. If the same code is used for both a location and a LUN (which is rare), the scan will be treated as a location.
 
