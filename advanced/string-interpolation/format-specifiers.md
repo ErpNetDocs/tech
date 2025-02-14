@@ -18,7 +18,7 @@ There are two main types of format specifiers:
 
 The list below contains the most frequently used .Net format specifiers. 
 
-For a complete list and more information, please look at the official .Net documentation site.
+For a complete list and more information, please look at the official .Net documentation site here: https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings#standard-format-specifiers
 
 ### Numeric format specifiers
 
