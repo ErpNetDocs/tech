@@ -26,7 +26,7 @@ If there is no suggested LUN or you prefer to scan a different one, simply scan 
 ## Step 3: Product
 After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.
 
-![Product](pictures/product-screen.png)
+![Product](pictures/product-screen-2.png)
 
 If the product has not been scanned or suggested, you will need to manually scan or select the correct product.
 
