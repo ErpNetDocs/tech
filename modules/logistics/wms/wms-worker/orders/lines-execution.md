@@ -1,7 +1,7 @@
 # Lines Execution
 Order line execution begins when you press the Execute button in the lines list or scan a code that matches a line.
 
-![order-line-screen](pictures/order-line-screen.png)
+![order-line-screen](pictures/order-lines-screen.png)
 
 Before starting, ensure you are familiar with the [scanning process](scanning.md).
 
