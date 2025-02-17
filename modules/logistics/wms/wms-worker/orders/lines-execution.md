@@ -1,98 +1,62 @@
-# Lines execution
+# Lines Execution
+Order line execution begins when you press the Execute button in the lines list or scan a code that matches a line.
 
-The order line execution starts when you press the **Execute** button in the lines list or when you **scan** a code and a matching line is found.
+Before starting, ensure you are familiar with the scanning process.
 
-Before you begin, make sure you are familiaized with the **[scanning process](https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html)** first.
+Once execution starts, you will go through several steps.
 
-Once the execution begins, it guides you through several screens.
+## Step 1: Location
+The system first prompts you to scan the location of the product. If a suggested location exists, you can either scan the actual location or click Use to apply the suggested one.
 
-## Location
+If there is a Current Location already stored (as described in the previous documentation), the location screen will be skipped, and the system will automatically apply the stored location to the order.
 
-The option to scan the location of the product will appear first. 
+If there is no suggested location or if you prefer to scan a different one, simply scan the correct location.
 
-There is already a **suggested** location that can be used if needed. Click the <b>Use</b> button to apply it:
+## Step 2: LUN (Logistic Unit)
+After the location is confirmed, the system will prompt you to scan the Logistic Unit (LUN). If a suggested LUN is available, you can either scan it or click Use to apply the suggested one.
 
-![Location](pictures/order-location.png)
+If there is a Current LUN already stored (as described in the previous documentation), the LUN screen will be skipped, and the system will automatically apply the stored LUN to the order.
 
-## Availability
+If there is no suggested LUN or you prefer to scan a different one, simply scan the correct LUN.
 
-This screen is a reference through which the quantity of the product can be checked at different locations. 
+## Step 3: Product
+After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field or suggested by the system, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.
 
-It is used when the product has a **lot**. Click to expand and see the availability for the specific product:
+If the product has not been scanned or suggested, you will need to manually scan or select the correct product.
 
-![Availability](pictures/order-availability.png)
 
-Then, click the desired location to make the selection.
 
-## LUN
+## Step 4: Lot (if applicable)
+If the product belongs to a lot, the system will ask for the lot number. A suggested lot might appear, and you can use it by clicking Use, or enter the lot manually if it is not pre-filled or scanned.
 
-To be updated.
 
-> [!Note]
-> A logistic unit (LUN) cannot have availability in more than one location. If an attempt is made to place a logistic unit in a location while it already has availability in another location, an error will be thrown.
 
-## Product
+You can refer to the Availability screen if you need to check lot details.
 
-After selecting the location, a field for confirming the scanning of the product will appear. 
+## Step 5: Serial Number (if applicable)
+For products with serial numbers, the system will request the serial number, which may or may not have a suggestion. You can either scan the serial or use the suggested one.
 
-You can use the product **suggested** by the system by clicking the <b>Use</b> button. 
 
-The system allows for the product to be replaced, if needed. Even if the product is not replaced, it still needs to be scanned.
 
-![Product](pictures/order-product.png)
+Once the serial number is confirmed, the Quantity field will be skipped automatically.
 
-## Variant
+## Step 6: Quantity
+Next, the system prompts for the quantity of the product. You can either manually enter the quantity or click the arrow button to use the suggested quantity.
 
-To be updated.
 
-## Lot
 
-If the product has a **lot**, the system will ask you to enter it. 
+If a quantity has already been entered in the SCAN field or if there is an active policy that allows accepting a quantity of one, the Quantity screen will be skipped, and the system will automatically apply the entered quantity.
 
-There could be a **suggestion** again. However, if it does not have a barcode, it can be entered manually as long as it already exists in the system. You can check the **Availability** section as well, if needed.
+If necessary, you can also change the unit of measurement for the product.
 
-![Lot](pictures/order-lot.png)
+Standard Quantity
+For products with variable measurement ratios, the system will display a standard quantity value. Modifying the base quantity will automatically recalculate the standard quantity, but the standard quantity itself cannot be directly modified.
 
-## Serial
 
-Depending on the product, you might be asked for its serial number, with or without a suggested value, and with the **Availability** section again:
 
-![Serial](pictures/order-serial.png)
+## Step 7: Complete Order
+Once all information is confirmed (location, product, LUN, lot, serial number, and quantity), you can proceed to complete the order. Press the Complete Order button to finalize the process. A confirmation dialog will appear, asking for permission to change the order status to Completed.
 
-Once the serial number is selected, there is no need to fill in the Quantity field and it can be skipped.
 
-## Quantity
 
-This screen allows employees to select the unit and quantity of the product:
-
-![Quantity](pictures/order-quantity.png)
-
-You can take **suggested** values quickly with the help of the **arrow** button, or enter the quantity manually, including changing its **measurement unit**, if necessary.
-
-### Standard quantity
-
-The Quantity screen includes a dedicated **standard quantity** value for products with variable measurement ratios. 
-
-If you modify the quantity base, the standard one will also undergo automatic recalculation. However, you cannot modify it on its own.
-
-![Quantity](pictures/standard_quantity.png)
-
-## Info
-
-This section summarizes your previous selections.
-
-## Destination
-
-To be updated.
-
-## Complete
-
-When you are done with the execution of the order, press the <b>Complete Order</b> button.
-
-A pop-up window will appear asking for **permission** to change the status of the order to Completed.
-
-![Location](pictures/order-complete.png)
-
-After clicking **Yes**, you will be returned to the main **Orders** page and will be able to pick a new order to complete.
-
-The execution of the order is reflected in the **total number of orders** at the bottom of the screen.
+After confirming, the system will return you to the main Orders page, where you can select a new order to execute.
