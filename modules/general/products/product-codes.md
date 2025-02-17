@@ -24,4 +24,4 @@ Optimized Barcode Scanning: Clear, non-overlapping product codes facilitate fast
 
 Better Scalability and Code Management: By adhering to a strict non-overlapping product code format, businesses can more easily scale their coding systems, introduce new products, and update existing ones without the need for complex code restructuring.
 
-For best practices, consider referencing guidelines such as [GS1 standards](../logistics/wms/gs1-barcodes.md) for product numbering and barcoding, which emphasize the use of globally unique identifiers and non-overlapping codes to ensure accuracy and traceability across supply chains.
+For best practices, consider referencing guidelines such as [GS1 standards](../../logistics/wms/gs1-barcodes.md) for product numbering and barcoding, which emphasize the use of globally unique identifiers and non-overlapping codes to ensure accuracy and traceability across supply chains.
