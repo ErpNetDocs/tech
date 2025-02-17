@@ -15,10 +15,9 @@
 - name: Marketing
   href: marketing/toc.yml
   topicHref:  marketing/index.md
-- name: Common
-  href: crm-common/toc.yml
-  topicHref:  crm-common/index.md
+- name: Pricing
+  href: pricing/toc.yml
+  topicHref:  pricing/index.md
 - name: Client Center
   href: clientcenter/toc.yml
   topicHref:  clientcenter/index.md
-  

@@ -1,0 +1,11 @@
+- name: Overview
+  href: index.md
+- name: Price types
+  href: price-types.md
+- name: Multiple line discounts
+  href: multiple-line-discounts.md
+- name: Promotional packages
+  href: promotional-packages.md
+- name: Determining algorithms
+  href: determining-algorithms/toc.yml
+  topicHref: determining-algorithms/index.md

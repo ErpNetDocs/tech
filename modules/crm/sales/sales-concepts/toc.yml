@@ -1,9 +1,5 @@
 - name: Overview
   href: index.md
-- name: Pricing
-  href: pricing.md
-- name: Price types
-  href: price-types.md
 - name: Sales order row types
   href: sales-order-row-types.md
 - name: Amount to pay
@@ -16,10 +12,6 @@
   href: minimal-sales-price.md
 - name: Minimal sales quantity
   href: minimal-sales-quantity.md
-- name: Multiple line discounts
-  href: multiple-line-discounts.md
-- name: Promotional packages
-  href: promotional-packages.md
 - name: VAT deviation
   href: vat-deviation.md
 - name: Determining algorithms
