@@ -1,4 +1,4 @@
 - name: Overview
   href: index.md
-- name: Change order display format
+- name: Modify the displayed information inside an order
   href: change-order-display-format.md
