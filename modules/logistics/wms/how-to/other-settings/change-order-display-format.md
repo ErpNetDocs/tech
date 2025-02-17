@@ -1,6 +1,6 @@
-# Change order display format
+# Change the diplayed information inside a warehouse order
 
-You have the ability to specify exactly what kind of information is displayed on the first line of each of your **orders** in the WMS Worker.
+You have the ability to specify exactly what kind of information is displayed on the first line of each of your **orders** in the WMS Worker. Additionally, you can modify the information for fields Product and Location inside the order.
 
 This can be achieved using a **configuration key** specified in an appropriate **[string interpolation](https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string)** format.
 
