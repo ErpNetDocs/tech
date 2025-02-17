@@ -48,6 +48,7 @@ Once the serial number is confirmed, the Quantity field will be skipped automati
 
 ## Step 6: Quantity
 Next, the system prompts for the quantity of the product. You can either manually enter the quantity or click the arrow button to use the suggested quantity.
+
 ![Quantity](pictures/quantity-screen.png)
 
 If a quantity has already been entered in the SCAN field or if there is an active policy that allows accepting a quantity of one, the Quantity screen will be skipped, and the system will automatically apply the entered quantity.
