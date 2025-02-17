@@ -38,10 +38,10 @@ The same information is now available not only in the list of orders, but also i
 
 ### Customizable data in fields Product and Location
 
-Just the same way users can choose what information to be visible in the forementioned fields, inside the warehouse order. Config options put to use are:
+Just the same way users can set which desired information to be at hand in the forementioned fields, inside the warehouse order. Workers can better orient themselves regarding product and location details. Config options put to use are:
 <b> #61 WMS/WMS Worker/ProductDisplayTextFormat and #62 WMS/WMS Worker/LocationDisplayTextFormat </b>
 
-These options allow warehouse operators to display specific data about products and locations directly within the fields of warehouse orders in the WMS Worker application. workers can better orient themselves regarding product and location details.
+
 
 
 
