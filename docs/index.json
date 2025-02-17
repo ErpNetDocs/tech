@@ -1392,7 +1392,7 @@
   "modules/crm/pricing/determining-algorithms/index.html": {
     "href": "modules/crm/pricing/determining-algorithms/index.html",
     "title": "| ERP.net Tech Docs",
-    "keywords": ""
+    "keywords": "ADD ADDDAYS AND CAST CEILING CONCAT CONVERT COUNT DATEDIFF DATESPAN DIVIDE EQUAL FILTER FIRST FLOOR FORMATSTRING GETOBJVALUE GETVALUE GT GTE IFERROR IIF IN INCNUM INTERPOLATE LEFT LEN LIST LT LTE MULTIPLY NOT OR ORDERBY POS REGEX REPLACE RIGHT ROUND SELECT SORT SUBSTRING SUM TODAY TOLOWER TOP TOUPPER WHERE"
   },
   "modules/crm/pricing/index.html": {
     "href": "modules/crm/pricing/index.html",
@@ -1482,7 +1482,7 @@
   "modules/crm/sales/sales-concepts/index.html": {
     "href": "modules/crm/sales/sales-concepts/index.html",
     "title": "Sales concepts | ERP.net Tech Docs",
-    "keywords": "Sales concepts Here, you will find detailed information about common sales-related concepts that will help you use and understand sales in ERP.net better. Pricing Price types Sales order row types Amount to pay Sales order payment plan Deferred payments options Minimal sales price Minimal sales quantity Promotional packages VAT deviation Determining algorithms"
+    "keywords": "Sales concepts Here, you will find detailed information about common sales-related concepts that will help you use and understand sales in ERP.net better. Sales order row types Amount to pay Sales order payment plan Deferred payments options Minimal sales price Minimal sales quantity VAT deviation Determining algorithms"
   },
   "modules/crm/sales/sales-concepts/minimal-sales-price.html": {
     "href": "modules/crm/sales/sales-concepts/minimal-sales-price.html",

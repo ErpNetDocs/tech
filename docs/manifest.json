@@ -5625,6 +5625,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/create-order.md",
       "output": {
