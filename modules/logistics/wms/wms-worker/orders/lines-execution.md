@@ -8,7 +8,7 @@ Once execution starts, you will go through several steps.
 ## Step 1: Location
 The system first prompts you to scan the location of the product. If a suggested location exists, you can either scan the actual location or click Use to apply the suggested one.
 
-[Location](.png)
+[Location](order-location.png)
 
 If there is a Current Location already stored (as described in the previous documentation), the location screen will be skipped, and the system will automatically apply the stored location to the order.
 
@@ -17,7 +17,7 @@ If there is no suggested location or if you prefer to scan a different one, simp
 ## Step 2: LUN (Logistic Unit)
 After the location is confirmed, the system will prompt you to scan the Logistic Unit (LUN). If a suggested LUN is available, you can either scan it or click Use to apply the suggested one.
 
-[LUN](.png)
+[LUN](logistic-unit-screen.png)
 
 If there is a Current LUN already stored (as described in the previous documentation), the LUN screen will be skipped, and the system will automatically apply the stored LUN to the order.
 
