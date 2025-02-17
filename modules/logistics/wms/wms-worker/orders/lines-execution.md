@@ -8,6 +8,8 @@ Once execution starts, you will go through several steps.
 ## Step 1: Location
 The system first prompts you to scan the location of the product. If a suggested location exists, you can either scan the actual location or click Use to apply the suggested one.
 
+[Location](.png)
+
 If there is a Current Location already stored (as described in the previous documentation), the location screen will be skipped, and the system will automatically apply the stored location to the order.
 
 If there is no suggested location or if you prefer to scan a different one, simply scan the correct location.
@@ -15,12 +17,16 @@ If there is no suggested location or if you prefer to scan a different one, simp
 ## Step 2: LUN (Logistic Unit)
 After the location is confirmed, the system will prompt you to scan the Logistic Unit (LUN). If a suggested LUN is available, you can either scan it or click Use to apply the suggested one.
 
+[LUN](.png)
+
 If there is a Current LUN already stored (as described in the previous documentation), the LUN screen will be skipped, and the system will automatically apply the stored LUN to the order.
 
 If there is no suggested LUN or you prefer to scan a different one, simply scan the correct LUN.
 
 ## Step 3: Product
-After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field or suggested by the system, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.
+After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.
+
+[Product](.png)
 
 If the product has not been scanned or suggested, you will need to manually scan or select the correct product.
 
@@ -43,14 +49,13 @@ Once the serial number is confirmed, the Quantity field will be skipped automati
 ## Step 6: Quantity
 Next, the system prompts for the quantity of the product. You can either manually enter the quantity or click the arrow button to use the suggested quantity.
 
-
-
 If a quantity has already been entered in the SCAN field or if there is an active policy that allows accepting a quantity of one, the Quantity screen will be skipped, and the system will automatically apply the entered quantity.
 
 If necessary, you can also change the unit of measurement for the product.
 
-Standard Quantity
-For products with variable measurement ratios, the system will display a standard quantity value. Modifying the base quantity will automatically recalculate the standard quantity, but the standard quantity itself cannot be directly modified.
+> [!Note]
+> Standard Quantity
+> For products with variable measurement ratios, the system will display a standard quantity value. Modifying the base quantity will automatically recalculate the standard quantity, but the standard quantity itself cannot be directly modified.
 
 
 
@@ -60,3 +65,7 @@ Once all information is confirmed (location, product, LUN, lot, serial number, a
 
 
 After confirming, the system will return you to the main Orders page, where you can select a new order to execute.
+
+## Conclusion 
+
+As in previous versions, you can also scan or enter a product directly into the SCAN field. If a location, product, and logistic unit (LUN) are all scanned, followed by a quantity, and no additional information such as lots or serial numbers is required, the system will skip the usual execution steps for that line. Instead, the line will be automatically executed with the scanned or entered data, including the location, product, LUN, and quantity, without the need to go through the individual screens for each step.
