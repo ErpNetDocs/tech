@@ -12,7 +12,7 @@ Having access to order data before you even take it allows you to instantly lear
 
 To change the information displayed on the first line of your orders, you need to edit the **/WMS/WMS-Worker/OrderDisplayFormat** config key.
 
-You can learn more about it in the **[Config options reference](https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat)**.
+You can learn more about it in the **[OrderDisplayTextFormat](https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat)**.
 
 ![picture](pictures/Core_config_11_02.png)
 
@@ -40,7 +40,7 @@ The same information is now available not only in the list of orders, but also i
 
 Just the same way users can set which desired information to be at hand in the forementioned fields, inside the warehouse order. Workers can better orient themselves regarding product and location details. Config options put to use are:
 
-[#61 WMS/WMS Worker/ProductDisplayTextFormat](https://docs.erp.net/tech/reference/config-options-reference.html#62-wmswms-workerlocationdisplayformat) </br><br> [#62 WMS/WMS Worker/LocationDisplayTextFormat](https://docs.erp.net/tech/reference/config-options-reference.html#61-wmswms-workerproductdisplayformat)
+**[ProductDisplayTextFormat](https://docs.erp.net/tech/reference/config-options-reference.html#62-wmswms-workerlocationdisplayformat) </br><br> [LocationDisplayTextFormat](https://docs.erp.net/tech/reference/config-options-reference.html#61-wmswms-workerproductdisplayformat)**
 
 ![picture](pictures/prdandloc.png)
 
