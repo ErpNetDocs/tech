@@ -93,7 +93,7 @@
 <p>Having access to order data before you even take it allows you to instantly learn what it's about even if a few basic details are provided.</p>
 <h2 id="how-to-do-it">How to do it</h2>
 <p>To change the information displayed on the first line of your orders, you need to edit the <strong>/WMS/WMS-Worker/OrderDisplayFormat</strong> config key.</p>
-<p>You can learn more about it in the <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat">Config options reference</a></strong>.</p>
+<p>You can learn more about it in the <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html#55-wmswms-workerorderdisplayformat">OrderDisplayTextFormat</a></strong>.</p>
 <p><img src="pictures/Core_config_11_02.png" alt="picture"></p>
 <p>Once you open the key, change its <strong>Key Value</strong> using appropriate <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">string interpolation</a></strong> notation.</p>
 <p><img src="pictures/Config_key_value_13_02.png" alt="picture"></p>
@@ -106,8 +106,8 @@
 The same information is now available not only in the list of orders, but also inside the Warehouse order.</p>
 <p><img src="pictures/string_WO.png" alt="picture"></p>
 <h2 id="customizable-data-in-fields-product-and-location">Customizable data in fields Product and Location</h2>
-<p>Just the same way users can set which desired information to be at hand in the forementioned fields, inside the warehouse order. Workers can better orient themselves regarding product and location details. Config options put to use are:
-<b> #61 WMS/WMS Worker/ProductDisplayTextFormat and #62 WMS/WMS Worker/LocationDisplayTextFormat </b></p>
+<p>Just the same way users can set which desired information to be at hand in the forementioned fields, inside the warehouse order. Workers can better orient themselves regarding product and location details. Config options put to use are:</p>
+<p><strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html#62-wmswms-workerlocationdisplayformat">ProductDisplayTextFormat</a> <br><br> <a href="https://docs.erp.net/tech/reference/config-options-reference.html#61-wmswms-workerproductdisplayformat">LocationDisplayTextFormat</a></strong></p>
 <p><img src="pictures/prdandloc.png" alt="picture"></p>
 <h3 id="behaviour-in-particular-cases">Behaviour in particular cases</h3>
 <p>Here is the expected behavior of changing the order display format in certain cases:</p>
