@@ -5008,40 +5008,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-line-discount.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/determine-product-price.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/determine-product-price.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/crm-common/crm-common-concepts/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/crm-common/crm-common-concepts/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/pricing.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/pricing.html"
         }
       },
       "version": ""
@@ -6052,10 +6022,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.html"
         }
       },
       "version": ""
@@ -14323,6 +14313,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/complete-the-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/complete-the-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/details.png",
       "output": {
         "resource": {
@@ -14417,6 +14417,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/location-availability.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/location-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/location-screen.png"
         }
       },
       "version": ""
@@ -14707,6 +14717,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/processing.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/product-screen-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/product-screen-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/product-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/product-screen.png"
         }
       },
       "version": ""

@@ -273,10 +273,10 @@ references:
   href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html
 - uid: determine-line-discount
   name: Determine line discount
-  href: modules/crm/crm-common/crm-common-concepts/determine-line-discount.html
+  href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.html
 - uid: determine-product-price
   name: Determine product price
-  href: modules/crm/crm-common/crm-common-concepts/determine-product-price.html
+  href: modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.html
 - uid: deterministic-generations
   name: Deterministic generations
   href: advanced/document-flow/deterministic-generations.html
