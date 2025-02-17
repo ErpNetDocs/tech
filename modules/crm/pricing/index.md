@@ -58,6 +58,8 @@ Generally, the algorithm is the following:
 
 So, after the selection process, one and only one price is selected and applied to the sales document.
 
+**For a detailed description of the algorithm of the method determining the product price, see @determine-product-price topic.**
+
 ## More conditional filtering fields
 
 @@name employs many more conditional fields, which allow fine-grained tuning of the product pricing strategy. All conditional fields work in the same basic way as described above.
