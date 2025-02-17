@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Lines execution | ERP.net Tech Docs </title>
+      <title>Lines Execution | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Lines execution | ERP.net Tech Docs ">
+      <meta name="title" content="Lines Execution | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
@@ -85,59 +85,50 @@
         </div>
 
         <article data-uid="">
-<h1 id="lines-execution">Lines execution</h1>
+<h1 id="lines-execution">Lines Execution</h1>
 
-<p>The order line execution starts when you press the <strong>Execute</strong> button in the lines list or when you <strong>scan</strong> a code and a matching line is found.</p>
-<p>Before you begin, make sure you are familiaized with the <strong><a href="https://docs.erp.net/tech/modules/logistics/wms/wms-worker/orders/scanning.html">scanning process</a></strong> first.</p>
-<p>Once the execution begins, it guides you through several screens.</p>
-<h2 id="location">Location</h2>
-<p>The option to scan the location of the product will appear first.</p>
-<p>There is already a <strong>suggested</strong> location that can be used if needed. Click the <b>Use</b> button to apply it:</p>
+<p>Order line execution begins when you press the Execute button in the lines list or scan a code that matches a line.</p>
+<p>Before starting, ensure you are familiar with the scanning process.</p>
+<p>Once execution starts, you will go through several steps.</p>
+<h2 id="step-1-location">Step 1: Location</h2>
+<p>The system first prompts you to scan the location of the product. If a suggested location exists, you can either scan the actual location or click Use to apply the suggested one.</p>
 <p><img src="pictures/order-location.png" alt="Location"></p>
-<h2 id="availability">Availability</h2>
-<p>This screen is a reference through which the quantity of the product can be checked at different locations.</p>
-<p>It is used when the product has a <strong>lot</strong>. Click to expand and see the availability for the specific product:</p>
-<p><img src="pictures/order-availability.png" alt="Availability"></p>
-<p>Then, click the desired location to make the selection.</p>
-<h2 id="lun">LUN</h2>
-<p>To be updated.</p>
+<p>If there is a Current Location already stored (as described in the previous documentation), the location screen will be skipped, and the system will automatically apply the stored location to the order.</p>
+<p>If there is no suggested location or if you prefer to scan a different one, simply scan the correct location.</p>
+<h2 id="step-2-lun-logistic-unit">Step 2: LUN (Logistic Unit)</h2>
+<p>After the location is confirmed, the system will prompt you to scan the Logistic Unit (LUN). If a suggested LUN is available, you can either scan it or click Use to apply the suggested one.</p>
+<p><img src="pictures/logistic-unit-screen.png" alt="LUN"></p>
+<p>If there is a Current LUN already stored (as described in the previous documentation), the LUN screen will be skipped, and the system will automatically apply the stored LUN to the order.</p>
+<p>If there is no suggested LUN or you prefer to scan a different one, simply scan the correct LUN.</p>
+<h2 id="step-3-product">Step 3: Product</h2>
+<p>After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.</p>
+<p><img src="pictures/order-product.png" alt="Product"></p>
+<p>If the product has not been scanned or suggested, you will need to manually scan or select the correct product.</p>
+<h2 id="step-4-lot-if-applicable">Step 4: Lot (if applicable)</h2>
+<p>If the product belongs to a lot, the system will ask for the lot number. A suggested lot might appear, and you can use it by clicking Use, or enter the lot manually if it is not pre-filled or scanned.</p>
+<p>You can refer to the Availability screen if you need to check lot details.</p>
+<h2 id="step-5-serial-number-if-applicable">Step 5: Serial Number (if applicable)</h2>
+<p>For products with serial numbers, the system will request the serial number, which may or may not have a suggestion. You can either scan the serial or use the suggested one.</p>
+<p>Once the serial number is confirmed, the Quantity field will be skipped automatically.</p>
+<h2 id="step-6-quantity">Step 6: Quantity</h2>
+<p>Next, the system prompts for the quantity of the product. You can either manually enter the quantity or click the arrow button to use the suggested quantity.</p>
+<p><img src="pictures/quantity-screen-1.png" alt="Quantity"></p>
+<p>If a quantity has already been entered in the SCAN field or if there is an active policy that allows accepting a quantity of one, the Quantity screen will be skipped, and the system will automatically apply the entered quantity.</p>
+<p>If necessary, you can also change the unit of measurement for the product.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A logistic unit (LUN) cannot have availability in more than one location. If an attempt is made to place a logistic unit in a location while it already has availability in another location, an error will be thrown.</p>
+<p>Standard Quantity
+For products with variable measurement ratios, the system will display a standard quantity value. Modifying the base quantity will automatically recalculate the standard quantity, but the standard quantity itself cannot be directly modified.</p>
 </div>
-<h2 id="product">Product</h2>
-<p>After selecting the location, a field for confirming the scanning of the product will appear.</p>
-<p>You can use the product <strong>suggested</strong> by the system by clicking the <b>Use</b> button.</p>
-<p>The system allows for the product to be replaced, if needed. Even if the product is not replaced, it still needs to be scanned.</p>
-<p><img src="pictures/order-product.png" alt="Product"></p>
-<h2 id="variant">Variant</h2>
-<p>To be updated.</p>
-<h2 id="lot">Lot</h2>
-<p>If the product has a <strong>lot</strong>, the system will ask you to enter it.</p>
-<p>There could be a <strong>suggestion</strong> again. However, if it does not have a barcode, it can be entered manually as long as it already exists in the system. You can check the <strong>Availability</strong> section as well, if needed.</p>
-<p><img src="pictures/order-lot.png" alt="Lot"></p>
-<h2 id="serial">Serial</h2>
-<p>Depending on the product, you might be asked for its serial number, with or without a suggested value, and with the <strong>Availability</strong> section again:</p>
-<p><img src="pictures/order-serial.png" alt="Serial"></p>
-<p>Once the serial number is selected, there is no need to fill in the Quantity field and it can be skipped.</p>
-<h2 id="quantity">Quantity</h2>
-<p>This screen allows employees to select the unit and quantity of the product:</p>
-<p><img src="pictures/order-quantity.png" alt="Quantity"></p>
-<p>You can take <strong>suggested</strong> values quickly with the help of the <strong>arrow</strong> button, or enter the quantity manually, including changing its <strong>measurement unit</strong>, if necessary.</p>
-<h3 id="standard-quantity">Standard quantity</h3>
-<p>The Quantity screen includes a dedicated <strong>standard quantity</strong> value for products with variable measurement ratios.</p>
-<p>If you modify the quantity base, the standard one will also undergo automatic recalculation. However, you cannot modify it on its own.</p>
-<p><img src="pictures/standard_quantity.png" alt="Quantity"></p>
-<h2 id="info">Info</h2>
-<p>This section summarizes your previous selections.</p>
-<h2 id="destination">Destination</h2>
-<p>To be updated.</p>
-<h2 id="complete">Complete</h2>
-<p>When you are done with the execution of the order, press the <b>Complete Order</b> button.</p>
-<p>A pop-up window will appear asking for <strong>permission</strong> to change the status of the order to Completed.</p>
-<p><img src="pictures/order-complete.png" alt="Location"></p>
-<p>After clicking <strong>Yes</strong>, you will be returned to the main <strong>Orders</strong> page and will be able to pick a new order to complete.</p>
-<p>The execution of the order is reflected in the <strong>total number of orders</strong> at the bottom of the screen.</p>
+<h2 id="info-panels">Info Panels</h2>
+<p>The system includes several info panels available on all screens during order execution: Info, Availability, Order, and Picture. These panels display context-specific information, such as stock details by location on the Location screen, by logistic unit on the LUN screen, etc.</p>
+<p>The system tracks the last state of each panel (opened or closed). Depending on your usage, the panel will maintain its previous state when you continue with your tasks, streamlining the workflow.</p>
+<h2 id="complete-order">Complete Order</h2>
+<p>Once all information is confirmed (location, product, LUN, lot, serial number, and quantity), you can proceed to complete the order. Press the Complete Order button to finalize the process. A confirmation dialog will appear, asking for permission to change the order status to Completed.</p>
+<p><img src="pictures/order-complete.png" alt="order-complete"></p>
+<p>After confirming, the system will return you to the main Orders page, where you can select a new order to execute.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As in previous versions, you can also scan or enter a product directly into the SCAN field. If a location, product, and logistic unit (LUN) are all scanned, followed by a quantity, and no additional information such as lots or serial numbers is required, the system will skip the usual execution steps for that line. Instead, the line will be automatically executed with the scanned or entered data, including the location, product, LUN, and quantity, without the need to go through the individual screens for each step.</p>
 
 </article>
 

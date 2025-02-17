@@ -14433,6 +14433,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/logistic-unit-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/logistic-unit-screen.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/logistics_WMS_Worker_28_05.png",
       "output": {
         "resource": {
@@ -14697,6 +14707,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/product_barcode.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/quantity-screen-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/quantity-screen-1.png"
         }
       },
       "version": ""
