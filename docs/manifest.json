@@ -13002,6 +13002,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/prdandloc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/other-settings/pictures/prdandloc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/other-settings/pictures/string_WO.png",
       "output": {
         "resource": {

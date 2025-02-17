@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Change order display format | ERP.net Tech Docs </title>
+      <title>Modify the displayed information inside a warehouse order | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Change order display format | ERP.net Tech Docs ">
+      <meta name="title" content="Modify the displayed information inside a warehouse order | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../../favicon.ico">
@@ -85,9 +85,9 @@
         </div>
 
         <article data-uid="">
-<h1 id="change-order-display-format">Change order display format</h1>
+<h1 id="modify-the-displayed-information-inside-a-warehouse-order">Modify the displayed information inside a warehouse order</h1>
 
-<p>You have the ability to specify exactly what kind of information is displayed on the first line of each of your <strong>orders</strong> in the WMS Worker.</p>
+<p>You have the ability to specify exactly what kind of information is displayed on the first line of each of your <strong>orders</strong> in the WMS Worker. Additionally, you can modify the information for fields Product and Location inside the order.</p>
 <p>This can be achieved using a <strong>configuration key</strong> specified in an appropriate <strong><a href="https://docs.erp.net/tech/advanced/string-interpolation/index.html?q=string">string interpolation</a></strong> format.</p>
 <p><img src="pictures/Order_information_09_02.png" alt="picture"></p>
 <p>Having access to order data before you even take it allows you to instantly learn what it's about even if a few basic details are provided.</p>
@@ -105,9 +105,10 @@
 <p><br><br>
 The same information is now available not only in the list of orders, but also inside the Warehouse order.</p>
 <p><img src="pictures/string_WO.png" alt="picture"></p>
-<h3 id="customizable-data-in-fields-product-and-location">Customizable data in fields Product and Location</h3>
+<h2 id="customizable-data-in-fields-product-and-location">Customizable data in fields Product and Location</h2>
 <p>Just the same way users can set which desired information to be at hand in the forementioned fields, inside the warehouse order. Workers can better orient themselves regarding product and location details. Config options put to use are:
 <b> #61 WMS/WMS Worker/ProductDisplayTextFormat and #62 WMS/WMS Worker/LocationDisplayTextFormat </b></p>
+<p><img src="pictures/prdandloc.png" alt="picture"></p>
 <h3 id="behaviour-in-particular-cases">Behaviour in particular cases</h3>
 <p>Here is the expected behavior of changing the order display format in certain cases:</p>
 <p>•	If there is <strong>no</strong> config key set, the information displayed will be retrieved from the <strong>To Party</strong> field. This is the default behaviour.</p>
