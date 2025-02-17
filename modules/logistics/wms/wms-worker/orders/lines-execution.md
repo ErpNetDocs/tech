@@ -8,7 +8,7 @@ Once execution starts, you will go through several steps.
 ## Step 1: Location
 The system first prompts you to scan the location of the product. If a suggested location exists, you can either scan the actual location or click Use to apply the suggested one.
 
-![Location](pictures/order-location.png)
+![Location](pictures/location-screen.png)
 
 If there is a Current Location already stored (as described in the previous documentation), the location screen will be skipped, and the system will automatically apply the stored location to the order.
 
@@ -26,7 +26,7 @@ If there is no suggested LUN or you prefer to scan a different one, simply scan 
 ## Step 3: Product
 After confirming the location and LUN, the system will prompt you to scan the product. If the product is already entered in the SCAN field, the Product screen will be skipped, and the system will automatically apply the scanned or suggested product.
 
-![Product](pictures/order-product.png)
+![Product](pictures/product-screen.png)
 
 If the product has not been scanned or suggested, you will need to manually scan or select the correct product.
 
@@ -67,7 +67,7 @@ The system tracks the last state of each panel (opened or closed). Depending on 
 ## Complete Order
 Once all information is confirmed (location, product, LUN, lot, serial number, and quantity), you can proceed to complete the order. Press the Complete Order button to finalize the process. A confirmation dialog will appear, asking for permission to change the order status to Completed.
 
-![order-complete](pictures/order-complete.png)
+![complete-the-order](pictures/complete-the-order.png)
 
 After confirming, the system will return you to the main Orders page, where you can select a new order to execute.
 
