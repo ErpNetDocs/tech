@@ -1,4 +1,4 @@
-# Modify the displayed information inside a warehouse order
+# Modify the displayed information in an order
 
 You have the ability to specify exactly what kind of information is displayed on the first line of each of your **orders** in the WMS Worker. Additionally, you can modify the information for fields Product and Location inside the order.
 
