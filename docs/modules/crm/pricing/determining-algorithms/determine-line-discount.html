@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Sales concepts | ERP.net Tech Docs </title>
+      <title>Determine line discount | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Sales concepts | ERP.net Tech Docs ">
+      <meta name="title" content="Determine line discount | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/determining-algorithms/determine-line-discount.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,28 +84,55 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="sales-concepts">Sales concepts</h1>
+        <article data-uid="determine-line-discount">
+<h1 id="determine-line-discount">Determine line discount</h1>
 
-<p>Here, you will find detailed information about common sales-related concepts that will help you use and understand sales in ERP.net better.</p>
+<p>ERP.net allows multiple discounts at multiple levels to be defined.</p>
+<p>Typically, Level 1 discount is determined among the active discounts from level 1. This means that if we want to calculate Level 1 discount, we might not explicitly specify a Discount Level filter, because its default value is 1.</p>
+<p>For the discounts for all other levels, we need to specify a Discount Level filter that is equal to the level we are trying to calculate.</p>
+<p>When trying to determine a discount for each level, we have to specify some required conditions:</p>
 <ul>
-<li><strong><a href="pricing.md">Pricing</a></strong></li>
-<li><strong><a href="price-types.md">Price types</a></strong></li>
-<li><strong><a href="sales-order-row-types.html">Sales order row types</a></strong></li>
-<li><strong><a href="amount-to-pay.html">Amount to pay</a></strong></li>
-<li><strong><a href="sales-order-payment-plan.html">Sales order payment plan</a></strong></li>
-<li><strong><a href="deferred-payments-options.html">Deferred payments options</a></strong></li>
-<li><strong><a href="minimal-sales-price.html">Minimal sales price</a></strong></li>
-<li><strong><a href="minimal-sales-quantity.html">Minimal sales quantity</a></strong></li>
-<li><strong><a href="promotional-packages.md">Promotional packages</a></strong></li>
-<li><strong><a href="vat-deviation.html">VAT deviation</a></strong></li>
-<li><strong><a href="determining-algorithms/index.html">Determining algorithms</a></strong></li>
+<li><strong>Product</strong></li>
+<li><strong>Date</strong></li>
+<li><strong>Quantity</strong></li>
+<li><strong>List of customers</strong></li>
+</ul>
+<p>and some not required:</p>
+<ul>
+<li><strong>Discount level</strong> – default is 1, can be changed if we are calculating the discount for a higher level</li>
+<li><strong>Enterprise company</strong> - Only in the specified Enterprise Company</li>
+<li><strong>Enterprise company location</strong> - Only in the specified Enterprise Company location</li>
+<li><strong>Price list</strong> - self-explanatory</li>
+<li><strong>Distribution channel</strong> - self-explanatory</li>
+<li><strong>Current line discount</strong> - The current discount should not be changed if it satisfies the conditions and has the same priority as the determined top discount.</li>
+</ul>
+<p>ERP.net filters all active discounts from the respective level that match these criteria. When a discount is defined with a blank value for the Customer, the discount applies to <strong>all</strong> customers. The same goes for Customer Type, Product, From Date To Date, MinQuantity, MaxQuantity, Enterprise Company, Price List, etc.</p>
+<p>Generally, the algorithm is the following:</p>
+<p>•	ERP.net filters the active discounts from the respective level.</p>
+<p>•	Among the remaining discounts, the one with the highest priority is selected. If there is more than one price within the same highest priority, the newer one is selected (the one with later From Date).</p>
+<p>•	If a current line discount is provided and it satisfies the conditions and has the same priority as the selected one, then the current line discount is selected.</p>
+<p>So, after the selection process, one and only one discount is selected and applied to the document line.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<ul>
+<li>Discount Is Active is true</li>
+<li>Discount Discount Level is equal to the specified level</li>
+<li>Discount From Date is empty or &lt;= required Date</li>
+<li>Discount To Date is empty or &gt;= required Date</li>
+<li>Discount Product is empty or equal to required Product</li>
+<li>Discount Min Quantity is empty or &lt;= required Quantity</li>
+<li>Discount Max Quantity is empty or &gt;= required Quantity</li>
+<li>Discount Customer is empty or it is in the required list of customers</li>
+<li>Discount Product Group is empty, the same as the product group or parent of the product group</li>
+<li>Discount Distribution Channel is empty or equal to required Distribution channel</li>
+<li>Discount Price List is empty or valid for the required Date</li>
+<li>The discount Target group is empty or at least one of the customers is a member of the target group</li>
+<li>Discount Customer type is empty or it is in the list of customer types, derived from the required customer’s list</li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/determining-algorithms/determine-line-discount.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

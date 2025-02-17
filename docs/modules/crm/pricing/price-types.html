@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Sales concepts | ERP.net Tech Docs </title>
+      <title>Price types | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Sales concepts | ERP.net Tech Docs ">
+      <meta name="title" content="Price types | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../../../../favicon.ico">
-      <link rel="stylesheet" href="../../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../../public/main.css">
-      <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../toc.html">
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
       
-      <meta name="docfx:rel" content="../../../../">
+      <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/price-types.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../../../public/docfx.min.js"></script>
+      <script type="module" src="./../../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../../index.html">
-            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,27 +85,21 @@
         </div>
 
         <article data-uid="">
-<h1 id="sales-concepts">Sales concepts</h1>
+<h1 id="price-types">Price types</h1>
 
-<p>Here, you will find detailed information about common sales-related concepts that will help you use and understand sales in ERP.net better.</p>
-<ul>
-<li><strong><a href="pricing.md">Pricing</a></strong></li>
-<li><strong><a href="price-types.md">Price types</a></strong></li>
-<li><strong><a href="sales-order-row-types.html">Sales order row types</a></strong></li>
-<li><strong><a href="amount-to-pay.html">Amount to pay</a></strong></li>
-<li><strong><a href="sales-order-payment-plan.html">Sales order payment plan</a></strong></li>
-<li><strong><a href="deferred-payments-options.html">Deferred payments options</a></strong></li>
-<li><strong><a href="minimal-sales-price.html">Minimal sales price</a></strong></li>
-<li><strong><a href="minimal-sales-quantity.html">Minimal sales quantity</a></strong></li>
-<li><strong><a href="promotional-packages.md">Promotional packages</a></strong></li>
-<li><strong><a href="vat-deviation.html">VAT deviation</a></strong></li>
-<li><strong><a href="determining-algorithms/index.html">Determining algorithms</a></strong></li>
-</ul>
+<p><strong>Price types</strong> are used to set additional priority conditions for the prices.</p>
+<p>5 is the highest priority level that can be selected in the <em>Priority</em> field of the price.</p>
+<p>To add an additional higher priority, a price type must be <strong>defined</strong> and <strong>selected</strong> as a price type of the price.</p>
+<p><strong>Priorities</strong> among the different price types are set by filling a number in the ordinal position field in the definition of the price type – the lower the number, the higher the priority.</p>
+<h4 id="price-types-add-additional-priority-under-the-following-algorithm">Price types add additional priority under the <strong>following algorithm:</strong></h4>
+<p>If a price has a defined price type, this price will be with the highest priority among other prices - no matter their level of priority.</p>
+<p>If more than one price has a defined price type, the price with the price type that has the lowest ordinal position will be with the highest priority.</p>
+<p>If more than one price has a defined price type and their price types have equal ordinal positions, the price with the highest priority will be selected.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/price-types.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

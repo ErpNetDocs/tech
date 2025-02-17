@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Sales concepts | ERP.net Tech Docs </title>
+      <title>Determine product price | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Sales concepts | ERP.net Tech Docs ">
+      <meta name="title" content="Determine product price | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/determining-algorithms/determine-product-price.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,28 +84,55 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="sales-concepts">Sales concepts</h1>
+        <article data-uid="determine-product-price">
+<h1 id="determine-product-price">Determine product price</h1>
 
-<p>Here, you will find detailed information about common sales-related concepts that will help you use and understand sales in ERP.net better.</p>
+<p>When trying to determine a product price, we have to specify some required conditions:</p>
 <ul>
-<li><strong><a href="pricing.md">Pricing</a></strong></li>
-<li><strong><a href="price-types.md">Price types</a></strong></li>
-<li><strong><a href="sales-order-row-types.html">Sales order row types</a></strong></li>
-<li><strong><a href="amount-to-pay.html">Amount to pay</a></strong></li>
-<li><strong><a href="sales-order-payment-plan.html">Sales order payment plan</a></strong></li>
-<li><strong><a href="deferred-payments-options.html">Deferred payments options</a></strong></li>
-<li><strong><a href="minimal-sales-price.html">Minimal sales price</a></strong></li>
-<li><strong><a href="minimal-sales-quantity.html">Minimal sales quantity</a></strong></li>
-<li><strong><a href="promotional-packages.md">Promotional packages</a></strong></li>
-<li><strong><a href="vat-deviation.html">VAT deviation</a></strong></li>
-<li><strong><a href="determining-algorithms/index.html">Determining algorithms</a></strong></li>
+<li><strong>Product</strong></li>
+<li><strong>Quantity</strong></li>
+<li><strong>QuantityUnit</strong></li>
+<li><strong>Date</strong></li>
+</ul>
+<p>and some not required:</p>
+<ul>
+<li><strong>Customer</strong></li>
+<li><strong>Ship to customer</strong></li>
+<li><strong>Enterprise company</strong> - Only in the specified enterprised company</li>
+<li><strong>Enterprise company location</strong> - Only in the specified enterprise company location</li>
+<li><strong>Distribution channel</strong> - self-explanatory</li>
+<li><strong>Price list</strong> - self-explanatory</li>
+<li><strong>Current product price</strong> - The current product price should not be changed if it satisfies the conditions and has the same priority as the determined top price.</li>
+</ul>
+<p>ERP.net filters all product prices for the given product that match these criteria. When a product price is defined with a blank value for the customer, the product price applies to <strong>all</strong> customers. The same goes for Ship To Customer, From Date, Thru Date and all not required parameters from the list above.</p>
+<p>Generally, the algorithm is the following:</p>
+<ul>
+<li>ERP.net filters the product prices.</li>
+<li>Each of the selected product prices is checked if min and max’s quantities are respectively less and greater than the provided quantity. The price ist of the product price is checked for validity according to the date. If Ship To Customer is provided, its party is considered a Target Party, else the customer's party is taken. If the product price has a target group specified, the target party should be a member of that group or null.</li>
+<li>Among the remaining product prices, the top priority price is selected considering the lowest Price Type's Ordinal Pos, the highest Priority and the newer From Date.</li>
+<li>If a Current Product Price is provided and it satisfies the conditions and has the same priority as the selected one, then the current product price is selected.</li>
+</ul>
+<p>So, after the selection process, one and only one product price is selected and applied to the document line.</p>
+<h2 id="filtering-conditions">Filtering conditions</h2>
+<ul>
+<li>From Date is empty or &lt;= required Date</li>
+<li>Thru Date is empty or &gt;= required Date</li>
+<li>Product is equal to required Product</li>
+<li>Customer is empty or it is equal to the required Customer</li>
+<li>Ship To Customer is empty or it is equal to the required Ship To Customer</li>
+<li>Min Quantity is empty or &lt;= required Quantity</li>
+<li>Max Quantity is empty or &gt;= required Quantity</li>
+<li>Enterprise Company is empty or equal to required Enterprise Company</li>
+<li>Enterprise Company Location is empty or equal to required Enterprise Company Location</li>
+<li>Distribution Channel is empty or equal to the required Distribution channel</li>
+<li>Price List is empty or valid for the required Date</li>
+<li>The target group is empty or the ship to the customer or the customer is a member of the target group</li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales/sales-concepts/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pricing/determining-algorithms/determine-product-price.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

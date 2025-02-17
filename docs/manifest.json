@@ -5008,52 +5008,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/crm/crm-common/crm-common-concepts/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/crm/crm-common/crm-common-concepts/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/crm-common/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/crm/crm-common/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/crm-common/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/crm/crm-common/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/index.md",
       "output": {
         ".html": {
@@ -5589,6 +5543,89 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/determining-algorithms/determine-line-discount.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/determining-algorithms/determine-line-discount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/determining-algorithms/determine-product-price.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/determining-algorithms/determine-product-price.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/determining-algorithms/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/determining-algorithms/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pricing/determining-algorithms/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/determining-algorithms/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pricing/determining-algorithms/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/multiple-line-discounts.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/multiple-line-discounts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/price-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/price-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/pricing/promotional-packages.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pricing/promotional-packages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/create-order.md",
       "output": {
         ".html": {
@@ -6022,30 +6059,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-payment-account-in-sales-order.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.html"
         }
       },
       "version": ""
@@ -6169,46 +6186,6 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/sales-concepts/minimal-sales-quantity.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/multiple-line-discounts.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/multiple-line-discounts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/price-types.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/price-types.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/pricing.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/pricing.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/crm/sales/sales-concepts/promotional-packages.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/sales/sales-concepts/promotional-packages.html"
         }
       },
       "version": ""
@@ -14637,6 +14614,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/order-details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/orders/pictures/order-lines-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/orders/pictures/order-lines-screen.png"
         }
       },
       "version": ""

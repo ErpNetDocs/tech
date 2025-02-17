@@ -273,10 +273,10 @@ references:
   href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html
 - uid: determine-line-discount
   name: Determine line discount
-  href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-discount.html
+  href: modules/crm/pricing/determining-algorithms/determine-line-discount.html
 - uid: determine-product-price
   name: Determine product price
-  href: modules/crm/sales/sales-concepts/determining-algorithms/determine-product-price.html
+  href: modules/crm/pricing/determining-algorithms/determine-product-price.html
 - uid: deterministic-generations
   name: Deterministic generations
   href: advanced/document-flow/deterministic-generations.html
@@ -357,7 +357,7 @@ references:
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
 - uid: promotional-package
   name: Promotional packages
-  href: modules/crm/sales/sales-concepts/promotional-packages.html
+  href: modules/crm/pricing/promotional-packages.html
 - uid: reconcile-menu
   name: Reconcile
   href: modules/logistics/wms/wms-worker/reconcile.html
