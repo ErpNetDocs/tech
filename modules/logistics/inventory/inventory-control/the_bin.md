@@ -47,7 +47,7 @@ You decide to delete the quantity of the unspecified lot of product Y:
 
   **Result:**
 + The quantity for the unspecified lot of product Y in the Executed field is deleted.
-+ The row related to this product in tab Executed is removed.
++ The row related to this product and lot in tab Executed shows a dash "-".
 + After deletion, it appears as if the lot was never executed.
   
 ![Receive2](pictures/deleterowatreceive.png)
