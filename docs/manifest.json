@@ -10029,6 +10029,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/deleteallatreceive.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/deleteallatreceive.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/deleteallatreconciliation.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/deleteallatreconciliation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/finish.png",
       "output": {
         "resource": {
@@ -10943,6 +10963,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/inventory-control/settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/the_bin.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/inventory-control/the_bin.html"
         }
       },
       "version": ""

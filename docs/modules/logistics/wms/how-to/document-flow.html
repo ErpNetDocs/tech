@@ -101,7 +101,7 @@
 <li><strong>completion</strong> - steps (3.2) - (6)</li>
 </ul>
 <p><img src="pictures/flow_detailed.png" alt="Flow"></p>
-<h3 id="generation-and-execution-phase">Generation and execution phase</h3>
+<h2 id="generation-and-execution-phase">Generation and execution phase</h2>
 <p>This phase starts with the release of the Store Order.</p>
 <p><strong>(1) The Store Order (SO)</strong> generates a <strong>Warehouse Requisition (WR)</strong> using the <a class="xref" href="https://erpnetdocs.github.io/model/generations/LOG0205.html">LOG0205</a> generation procedure.</p>
 <p>The Warehouse Requisition is the document that informs the WMS Module what is requested by the other modules/processes. Usually, the Warehouse Requisition is almost an exact copy of the Store Order.</p>
@@ -115,7 +115,7 @@ When a <strong>WO line</strong> is executed, the system generates 2 real-time re
 <li><strong>(3.1) Warehouse Transaction</strong> - which updates the availability according to the workers actions (move, dispatch, receive);</li>
 <li><strong>(3.2) Completed DF</strong> - which records how much of the quantity of the WO lines has been fulfilled by the workers and with what details (product, lot, variant).</li>
 </ul>
-<h3 id="completion-phase">Completion phase</h3>
+<h2 id="completion-phase">Completion phase</h2>
 <p>This phase practically starts in step (3.2) and more precisely, when the step is fully completed.</p>
 <p>The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager.</p>
 <p><strong>(3.2) When all WO lines are fully executed</strong> and have Completed Document Fulfillments, then the <strong>WO document can be Completed</strong>.</p>
@@ -137,7 +137,7 @@ When a <strong>WO line</strong> is executed, the system generates 2 real-time re
 <p>If the organization <strong>uses two-stage control</strong>, the executed <strong>SOs</strong> are completed using the bulk function &quot;Change state of selected documents =&gt; Completed&quot; in the
 <strong>Store Orders navigator</strong>.</p>
 <p>If the organization uses the <strong>one-stage control</strong>, the executed <strong>SOs</strong> are completed along with their child <strong>WR's</strong> the bulk function &quot;Change state of selected documents =&gt; Complete with subdocuments&quot; in the same navigator.</p>
-<h3 id="generation-for-further-execution-manual-generation-only">Generation for further execution (manual generation only)</h3>
+<h2 id="generation-for-further-execution-manual-generation-only">Generation for further execution (manual generation only)</h2>
 <p>In Warehouses, it is not always possible to execute all ordered quantities.<br>
 For instance, there might be insufficient availability of certain products preventing you from Dispatching the entire order. In these cases, you might want to Dispatch what you have now and Dispatch the rest when it becomes available. The same applies if the supplier has sent a less quantity than requested.<br><br>
 In such scenarios, you should complete the Warehouse Order with the currently available quantities and when the missing quantities become available you can execute the rest from the same <strong>SO</strong> using the LOG0209 generation procedure.<br>
@@ -148,15 +148,15 @@ You can initiate this generation whenever a WR is needed for further execution.<
 <h5>Note</h5>
 <p>You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.</p>
 </div>
-<h3 id="recommended-settings-for-the-document-flow-and-document-types">Recommended settings for the Document flow and Document Types</h3>
-<h4 id="document-types">Document Types:</h4>
+<h2 id="recommended-settings-for-the-document-flow-and-document-types">Recommended settings for the Document flow and Document Types</h2>
+<h3 id="document-types">Document Types:</h3>
 <ul>
 <li>create different Document types for Receipt and Issue Store Order, which are used only for WMS;</li>
 <li>create different Document types for standard and Further Warehouse Requisitions, separated by movement type;</li>
 <li>create different Document types for standard and Further Warehouse Orders, separated by movement type;</li>
 <li>set True to &quot;Create Fulfillments On Completion&quot; field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO.</li>
 </ul>
-<h4 id="store-order-document-flow-settings">Store Order Document Flow settings:</h4>
+<h3 id="store-order-document-flow-settings">Store Order Document Flow settings:</h3>
 <p>(1) To set up the creation of <strong>Warehouse Requisition</strong> some of the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
@@ -183,7 +183,7 @@ You can initiate this generation whenever a WR is needed for further execution.<
 <li>Destination State - Released;</li>
 </ul>
 <p><img src="pictures/store-order-df.png" alt="SO"></p>
-<h4 id="warehouse-requisition-document-flow-settings">Warehouse Requisition Document Flow settings:</h4>
+<h3 id="warehouse-requisition-document-flow-settings">Warehouse Requisition Document Flow settings:</h3>
 <p>To set up the creation of <strong>Warehouse Order</strong> some of the fields in the Route should be set as:</p>
 <ul>
 <li>Process Event - Change of state;</li>
@@ -193,7 +193,7 @@ You can initiate this generation whenever a WR is needed for further execution.<
 <li>Destination State - <strong>Firm Planned</strong> - the WO should be created to Firm Planned state because you have to assign a Worker for it. Depending on the Warehouse processes you can Assign Workers one by one or use <a href="assign-worker.html">Assign Worker for multiple rows UI function</a>. You also can leave the Order without Assignment so the Workers can Take the Orders by themselves through the WMS Worker before they start to execute it;</li>
 </ul>
 <p><img src="pictures/requisition-df.png" alt="WR"></p>
-<h3 id="is-executed-calculated-attributes">&quot;Is Executed&quot; calculated attributes</h3>
+<h2 id="is-executed-calculated-attributes">&quot;Is Executed&quot; calculated attributes</h2>
 <p>The information whether the <strong>WR or a SO</strong> is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:</p>
 <ul>
 <li>an attribute in <strong>WR lines</strong> - that shows if the particular line is fully executed</li>
