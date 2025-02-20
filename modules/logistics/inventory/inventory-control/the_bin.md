@@ -37,7 +37,7 @@ The "small" bin is used to delete individual product count rows at all IC operat
 **Steps:**
   
 Let say you execute a Receive operation of an Order consisting of three lines, for two products X and Y, and product Y is ordered in a lot as well. Execution of 8pcs of product Y results in distribution of the quantity between the unspecified product lot (4pcs) and the specified lot (4pcs). Now each line has been executed as seen in tab Executed and in Executed field.
-You decide to delete the quantity of one of the lots of product Y:
+You decide to delete the quantity of the unspecified lot of product Y:
 
 1. Navigate to the Info tab of product Y;
 2. Locate the small bin on the row, next to the desired qunatity ("4");
@@ -52,7 +52,9 @@ You decide to delete the quantity of one of the lots of product Y:
   
 ![Receive2](pictures/deleterowatreceive.png)
 
-Another example at operation Quick Reconcile, in which you count 2000cs of product X. The amount is distributed 
+Another example at operation Quick Reconcile, and you count 4000pcs of product X. The amount is distributed between the available lots. You decide to delete the counted quantity of the specified lot ("00022"). Simply click on the bin in the row of the lot, next to quantity "100" and without any warning, it will be deleted. The row in tab Counted will also be deleted.
+
+![Quickrec](pictures/deleterowatquickrec.png)
 
 By using these bin functionalities effectively, you can ensure accurate inventory management while maintaining flexibility in operations.
 
