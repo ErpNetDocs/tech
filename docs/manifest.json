@@ -10049,6 +10049,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/deleterowatquickrec.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/deleterowatquickrec.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/deleterowatreceive.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/deleterowatreceive.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/finish.png",
       "output": {
         "resource": {
