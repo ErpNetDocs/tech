@@ -1,6 +1,10 @@
+---
+uid: bin
+---
+
 # **How to Use the Bin in Inventory Control**
 
-In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both accessible in the **info** panel:
+In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the **Info** panel:
 
 * Delete-all Bin (Large Bin) and
 * Delete-row Bin (Small Bin)
