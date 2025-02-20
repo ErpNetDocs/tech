@@ -141,4 +141,4 @@ Learn more about Inventory Control in the following articles:
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v.24 of the platform.
