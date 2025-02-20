@@ -69,6 +69,5 @@ For more information see our separate topic [Notification settings](./settings.m
 
 ## Create notifications programmatically
 
-It's possible to create notifications programmatically via Domain API. For more information, check the dev topic,
-
+It's possible to create notifications programmatically via Domain API. For more information, check the dev topic
 https://docs.erp.net/dev/domain-api/common-tasks/create-notification.html
