@@ -15,7 +15,7 @@ Here is the scheme of the document and execution flow. The flow can be divided i
 ![Flow](pictures/flow_detailed.png)
 
 
-### Generation and execution phase
+## Generation and execution phase
 This phase starts with the release of the Store Order.
 
 **(1) The Store Order (SO)** generates a **Warehouse Requisition (WR)** using the [LOG0205](xref:LOG0205) generation procedure. 
@@ -36,7 +36,7 @@ When a **WO line** is executed, the system generates 2 real-time records:
 - **(3.2) Completed DF** - which records how much of the quantity of the WO lines has been fulfilled by the workers and with what details (product, lot, variant).
 
 
-### Completion phase
+## Completion phase
 This phase practically starts in step (3.2) and more precisely, when the step is fully completed. 
 
 The completion process is triggered by the warehouse workers but it is usually finished by the person controlling the flow of processes in the warehouse - the warehouse dispatcher or manager. 
@@ -72,7 +72,7 @@ If the organization **uses two-stage control**, the executed **SOs** are complet
 
 If the organization uses the **one-stage control**, the executed **SOs** are completed along with their child **WR's** the bulk function "Change state of selected documents => Complete with subdocuments" in the same navigator.
 
-### Generation for further execution (manual generation only)
+## Generation for further execution (manual generation only)
 
 In Warehouses, it is not always possible to execute all ordered quantities.<br>
 For instance, there might be insufficient availability of certain products preventing you from Dispatching the entire order. In these cases, you might want to Dispatch what you have now and Dispatch the rest when it becomes available. The same applies if the supplier has sent a less quantity than requested.<br><br> 
@@ -85,15 +85,15 @@ Once you Create the new **WR**, the execution process continues following the sa
 > [!Note]
 > You have to set up this Generation in the Document flow by using only Manually in the Allowed generation types field.
 
-### Recommended settings for the Document flow and Document Types
+## Recommended settings for the Document flow and Document Types
 
-#### Document Types: 
+### Document Types: 
 - create different Document types for Receipt and Issue Store Order, which are used only for WMS; 
 - create different Document types for standard and Further Warehouse Requisitions, separated by movement type;
 - create different Document types for standard and Further Warehouse Orders, separated by movement type;
 - set True to "Create Fulfillments On Completion" field in the WR and WO document types - this is required to bring the fulfillments from WO through WR to SO. 
 
-#### Store Order Document Flow settings:
+### Store Order Document Flow settings:
 
 (1) To set up the creation of **Warehouse Requisition** some of the fields in the Route should be set as:
 
@@ -122,7 +122,7 @@ Once you Create the new **WR**, the execution process continues following the sa
  
 ![SO](pictures/store-order-df.png)
 
-#### Warehouse Requisition Document Flow settings:
+### Warehouse Requisition Document Flow settings:
 
 To set up the creation of **Warehouse Order** some of the fields in the Route should be set as:
 
@@ -134,7 +134,7 @@ To set up the creation of **Warehouse Order** some of the fields in the Route sh
 
 ![WR](pictures/requisition-df.png)
 
-### "Is Executed" calculated attributes
+## "Is Executed" calculated attributes
 
 The information whether the **WR or a SO** is fully executed is collected using three calculated attributes. They allow us to have that information on three different stages of the Completion phase which are of great importance:
 * an attribute in **WR lines** - that shows if the particular line is fully executed
