@@ -1,3 +1,6 @@
+---
+uid: choose_unit
+---
 # Measurement unit of the order #
 The store order can be created using different measurement units for the "Quantity Unit" field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the "Choose Measurement Unit" menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.
 
