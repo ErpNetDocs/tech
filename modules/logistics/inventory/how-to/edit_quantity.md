@@ -1,5 +1,5 @@
 ---
-uid: edit-quantity
+uid: edit_quantity
 ---
 
 # **How to edit quantity**
