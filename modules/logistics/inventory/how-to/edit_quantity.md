@@ -20,20 +20,23 @@ Whether due to scanning errors, miscounts, or handling variations in products wi
 
 When any quantity is scanned it enters the designated field - executed, transfer, scrap. Only the quantity field in tab Info is editable.
 Let say you transfer 500pcs of product X. You realize you need to correct the quantity to 250pcs.
-![Transfer1](pictures/editQ1.png)
 
-    **Steps:**
+![Transfer1](pictures/editQ1.png)
+  
+**Steps:**
     1. Navigate to tab Info of product X
     2. Click in the light-grey quantity field that contais "500"
         -> a pop-up edit-box will appear
     3. Enter the correct quantity "250" from the keyboard or use the down arrow
-    4. Confirm the new quantity with "Ok"
+    4. Confirm with "Ok"
+
 ![Transfer2](pictures/editQ2.png)
-    
-    **Result:**
+
+**Result:**
     1. The new quantity is saved in the field
     2. The field in tab Transfer is edited too
     3. The quantity can be edited until a Transfer Order is created with button Finish
+
 ![Transfer3](pictures/editQ3.png)
   
 
