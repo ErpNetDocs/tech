@@ -60,7 +60,7 @@ The following escape sequences are defined and supported in @@erpnet.
 
 _*NEW LINE is platform dependent_.
 
-Any other escape sequence that not part of the supported ones will be escaped by removing the backslash. E.g., 
+Any other escape sequence that is not part of the supported ones will be escaped by removing the backslash. E.g., 
 
 * This: `\z`, will become this: `z`
 * `\A` - `A`
