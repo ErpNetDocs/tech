@@ -8,3 +8,4 @@ This is typically achieved through executing different **UI functions**.
 * **[Adjust base cost](https://docs.erp.net/tech/modules/logistics/inventory/adjust-base-cost.html)**
 * **[Calculate reconciliation based on counts](reconciliation-based-counts.md)**
 * **[Use the Document Type from Routings to create a new document](document-type-routings.md)**
+* **[Use the Bin](https://docs.erp.net/tech/modules/logistics/inventory/inventory-control/the_bin.html))**
