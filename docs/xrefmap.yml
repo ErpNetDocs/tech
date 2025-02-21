@@ -55,6 +55,9 @@ references:
 - uid: beforerecalculate
   name: BEFORERECALCULATE
   href: advanced/user-business-rules/events/beforerecalculate.html
+- uid: bin
+  name: How to Use the Bin in Inventory Control
+  href: modules/logistics/inventory/inventory-control/the_bin.html
 - uid: bonus-program
   name: Bonus programs
   href: modules/crm/marketing/bonus-programs/index.html
@@ -238,6 +241,9 @@ references:
 - uid: cao-WHERE
   name: WHERE
   href: advanced/calculated-attributes/operators/where.html
+- uid: choose_unit
+  name: Measurement unit of the order
+  href: modules/logistics/inventory/inventory-control/ChooseUnit.html
 - uid: client-commit
   name: CLIENT COMMIT
   href: advanced/user-business-rules/events/client-commit.html
