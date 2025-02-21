@@ -1,4 +1,4 @@
-- name: How To
+- name: How to
   href: index.md
 - name: Execute store orders
   href: execute-store-orders/toc.yml
@@ -12,3 +12,5 @@
 - name: Use the Bin
   href: the_bin.md
   topicHref: inventory-control/the_bin.md
+- name: Edit quantity
+  href: edit_quantity.md
