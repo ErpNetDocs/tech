@@ -27,7 +27,7 @@ Let say you transfer 500pcs of product X. You realize you need to correct the qu
 **Steps:**
 
     1. Navigate to tab Info of product X
-    2. Click in the light-grey quantity field that contais "500"
+    2. Click in the light-grey quantity field that contains "500"
         -> a pop-up edit-box will appear
     3. Enter the correct quantity "250" from the keyboard or use the down arrow
     4. Confirm with "Ok"
