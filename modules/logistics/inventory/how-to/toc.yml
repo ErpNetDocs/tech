@@ -9,3 +9,5 @@
   href: reconciliation-based-counts.md
 - name: Use the Document Type from Routes to create a new document
   href: document-type-routes.md
+- name: Use the Bin
+  href: the_bin.md
