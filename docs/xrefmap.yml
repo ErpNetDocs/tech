@@ -292,6 +292,9 @@ references:
 - uid: domain-with-property-allowed-values
   name: Domain with property allowed values
   href: advanced/stored-attributes/domain-with-property-allowed-values.html
+- uid: edit_quantity
+  name: How to edit quantity
+  href: modules/logistics/inventory/how-to/edit_quantity.html
 - uid: enter_quntity_of_one_pce
   name: Enter quantity of one pce
   href: modules/logistics/wms/how-to/setup-warehouse/enter-quantity-of-one-pce.html

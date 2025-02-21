@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Work with Logistic Units | ERP.net Tech Docs </title>
+      <title>How to edit quantity | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Work with Logistic Units | ERP.net Tech Docs ">
+      <meta name="title" content="How to edit quantity | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../../../../../favicon.ico">
-      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../../../public/main.css">
-      <meta name="docfx:navrel" content="../../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../../toc.html">
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
       
-      <meta name="docfx:rel" content="../../../../../">
+      <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/edit_quantity.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../../../index.html">
-            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,20 +84,43 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="work-with-logistic-units">Work with Logistic Units</h1>
+        <article data-uid="edit_quantity">
+<h1 id="how-to-edit-quantity"><strong>How to edit quantity</strong></h1>
 
-<p><a class="xref" href="../index.html">Logistic Units</a> (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease.</p>
+<p>For the sake of accuracy, efficiency, and flexibility in inventory operations, workers can <strong>edit the executed quantity</strong> at operations Receive, Issue, Scrap, Transfer, and Quick Reconcile.
+Whether due to scanning errors, miscounts, or handling variations in products with lots and variants it is necessary to do on-the-go corrections directly during execution, eliminating the need for later adjustments in the Store transaction. Here is a detailed instruction on how to perform the corrections.</p>
+<h2 id="key-details">Key details</h2>
 <ul>
-<li><a href="Create_New_LU.html"></a></li>
-<li><a href="create_LUNs.html">Create multiple LUNs</a></li>
-<li><a href="working-with-lu.html">Work with Logistic Units</a></li>
+<li>the editable field is accesible in tab Info only</li>
+<li>it is light-grey</li>
+<li>the edit is performed in a pop-up box</li>
+<li>the box is supplied with up/down keys plus you can input digits from the keyboard as well</li>
+<li>the edit needs confirmation</li>
+<li>multiple edits are possible</li>
 </ul>
+<h2 id="perform-a-quantity-edit-at-operations-receive-issue-transfer-or-scrap">Perform a quantity edit at operations Receive, Issue, Transfer or Scrap</h2>
+<p>When any quantity is scanned it enters the designated field - executed, transfer, scrap. Only the quantity field in tab Info is editable.</p>
+<p>Let say you transfer 500pcs of product X. You realize you need to correct the quantity to 250pcs.</p>
+<p><img src="pictures/editQ1.png" alt="Transfer1"></p>
+<p><strong>Steps:</strong></p>
+<pre><code>1. Navigate to tab Info of product X
+2. Click in the light-grey quantity field that contains &quot;500&quot;
+    -&gt; a pop-up edit-box will appear
+3. Enter the correct quantity &quot;250&quot; from the keyboard or use the down arrow
+4. Confirm with &quot;Ok&quot;
+</code></pre>
+<p><img src="pictures/editQ2.png" alt="Transfer2"></p>
+<p><strong>Result:</strong></p>
+<pre><code>1. The new quantity is saved in the field
+2. The field in tab Transfer is edited too
+3. The quantity can be edited until a Transfer Order is created with button Finish
+</code></pre>
+<p><img src="pictures/editQ3.png" alt="Transfer3"></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/edit_quantity.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

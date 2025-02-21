@@ -9223,6 +9223,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/how-to/edit_quantity.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/how-to/edit_quantity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/logistics/inventory/how-to/execute-store-orders/index.md",
       "output": {
         ".html": {
@@ -9280,6 +9290,36 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/inventory/how-to/pictures/document-routes-doc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/editQ1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/editQ1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/editQ2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/editQ2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/editQ3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/editQ3.png"
         }
       },
       "version": ""
