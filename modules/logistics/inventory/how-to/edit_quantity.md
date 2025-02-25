@@ -45,7 +45,7 @@ Let say you **transfer** 500pcs of product X. You realize you need to correct th
 >[!WARNING]
 > Corrections to zero (0) are possible.<br>
 >
->! Corrections to "0" at operation Quick Reconcile means "counted 0 pcs", not "never counted". A line in the finishing document will be created.<br>
->! Correction to "0" does not create zero quantity lines at the other operations.
+>* Corrections to "0" at Quick Reconcile mean "counted 0 pcs", not "never counted". Zero quantity lines in the finishing document will be created.<br>
+>* Corrections to "0" do not create zero quantity lines at the other operations.
 >
 >
