@@ -9,14 +9,15 @@ Whether due to scanning errors, miscounts, or handling variations in products wi
 
 
 ## Key details
+
 * the editable field is accesible in tab Info only
 * it is light-grey
 * the edit is performed in a pop-up box
 * the box is supplied with up/down keys plus you can input digits from the keyboard as well
 * the edit needs confirmation
 * multiple edits are possible
-
-## Perform a quantity edit at operations Receive, Issue, Transfer, Scrap and Quick reconcile
+  
+## Perform a quantity edit 
 
 When any quantity is scanned it enters the designated field - executed, transfer, scrap, counted. Only the quantity field in tab Info is editable.
 
@@ -42,10 +43,17 @@ Let say you **transfer** 500pcs of product X. You realize you need to correct th
 
 ![Transfer3](pictures/editQ3.png)
   
->[!WARNING]
+>[!NOTE]
 > Corrections to zero (0) are possible.<br>
+
+>[!WARNING]
+>* Corrections to "0" at Quick Reconcile mean "counted 0 pcs", not "never counted".<br>
 >
->* Corrections to "0" at Quick Reconcile mean "counted 0 pcs", not "never counted". Zero quantity lines in the finishing document will be created.<br>
->* Corrections to "0" do not create zero quantity lines at the other operations.
+![QuickReconcile1](pictures/editQ4.png)
+
+>* Zero quantity lines in the finishing document will be created.
+> 
+![QuickReconcile2](pictures/editQ5.png)
 >
->
+>[!WARNING] 
+* Corrections to "0" do not create zero quantity lines at the other operations.
