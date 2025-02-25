@@ -16,11 +16,11 @@ Whether due to scanning errors, miscounts, or handling variations in products wi
 * the edit needs confirmation
 * multiple edits are possible
 
-## Perform a quantity edit at operations Receive, Issue, Transfer or Scrap 
+## Perform a quantity edit at operations Receive, Issue, Transfer, Scrap and Quick reconcile
 
-When any quantity is scanned it enters the designated field - executed, transfer, scrap. Only the quantity field in tab Info is editable.
+When any quantity is scanned it enters the designated field - executed, transfer, scrap, counted. Only the quantity field in tab Info is editable.
 
-Let say you transfer 500pcs of product X. You realize you need to correct the quantity to 250pcs.
+Let say you **transfer** 500pcs of product X. You realize you need to correct the quantity to 250pcs.
 
 ![Transfer1](pictures/editQ1.png)
   
@@ -42,4 +42,10 @@ Let say you transfer 500pcs of product X. You realize you need to correct the qu
 
 ![Transfer3](pictures/editQ3.png)
   
-
+>[!WARNING]
+> Corrections to zero (0) are possible.<br>
+>
+>! Corrections to "0" at operation Quick Reconcile means "counted 0 pcs", not "never counted". A line in the finishing document will be created.<br>
+>! Correction to "0" does not create zero quantity lines at the other operations.
+>
+>
