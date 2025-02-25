@@ -27,19 +27,19 @@ Let say you **transfer** 500pcs of product X. You realize you need to correct th
   
 **Steps:**
 
-    1. Navigate to tab Info of product X
-    2. Click in the light-grey quantity field that contains "500"
+1. Navigate to tab Info of product X
+2. Click in the light-grey quantity field that contains "500"
         -> a pop-up edit-box will appear
-    3. Enter the correct quantity "250" from the keyboard or use the down arrow
-    4. Confirm with "Ok"
+3. Enter the correct quantity "250" from the keyboard or use the down arrow
+4. Confirm with "Ok"
 
 ![Transfer2](pictures/editQ2.png)
 
 **Result:**
 
-    1. The new quantity is saved in the field
-    2. The field in tab Transfer is edited too
-    3. The quantity can be edited until a Transfer Order is created with button Finish
+1. The new quantity is saved in the field
+2. The field in tab Transfer is edited too
+3. The quantity can be edited until a Transfer Order is created with button Finish
 
 ![Transfer3](pictures/editQ3.png)
   
