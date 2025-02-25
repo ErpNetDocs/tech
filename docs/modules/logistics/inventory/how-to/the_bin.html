@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>How to Use the Bin in Inventory Control | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="How to Use the Bin in Inventory Control | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/the_bin.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="the_bin">
+<h1 id="how-to-use-the-bin-in-inventory-control"><strong>How to Use the Bin in Inventory Control</strong></h1>
+
+<p>In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the <strong>Info</strong> panel:</p>
+<ul>
+<li>Delete-all Bin (Large Bin) and</li>
+<li>Delete-row Bin (Small Bin)</li>
+</ul>
+<h2 id="using-the-delete-all-bin">Using the Delete-all bin</h2>
+<p>The &quot;large bin&quot; is located at the top, on the product row. It is used to delete all counts and executions for a specific product, marking it as unexecuted or not counted at all. The process is similar for all operations like Receive, Issue, Scrap, Transfer, Quick reconcile and Planned reconcile.</p>
+<p><strong>Steps:</strong></p>
+<p>Let say you execute a Receive operation of an Order consisting of three lines - products X, Y and Z. Each line has been executed as seen in tab Executed and in Executed field.
+You decide to delete all executed quantities for product X:</p>
+<ol>
+<li>Navigate to the Info tab of product X.</li>
+<li>Locate the large bin at the top of the product row.</li>
+<li>Click on the bin icon -&gt; A pop-up message appears to confirm deletion.</li>
+<li>Choose Delete to confirm.</li>
+</ol>
+<p><strong>Result:</strong></p>
+<ul>
+<li>The quantity for product X in the Executed field is deleted</li>
+<li>The row related to this product in tab Executed is removed.</li>
+<li>After deletion, it appears as if the product was never executed.</li>
+</ul>
+<p><img src="pictures/deleteallatreceive.png" alt="Receive1"></p>
+<p>Another example at operation <strong>Planned Reconcile</strong>, in which you count 50pcs of product X and 20pcs of product Y. In field Counted is entered the quantity for each product and in tab Counted are registered the rows for the counted products. You decide to delete all counts for product X. Execute the forementioned steps (1-4). As a result all counted quantity for product X is deleted as if never counted. If you check the records in panel Counts in Reconciliation document, you will see that the line is also removed from there.</p>
+<p><img src="pictures/deleteallatreconciliation.png" alt="PlannedReconciliation"></p>
+<h2 id="using-the-delete-row-bin">Using the Delete-row bin</h2>
+<p>The &quot;small&quot; bin is used to delete individual product count rows at all IC operations. It is helpful with products having lots or variants, allowing users to delete distributed quantities for specific lots or variants. For example, if a scanned quantity is spread across multiple lots, users can now remove the count for a chosen lot without affecting others.</p>
+<p><strong>Steps:</strong></p>
+<p>Let say you execute a Receive operation of an Order consisting of three lines, for two products X and Y, and product Y is ordered in a lot as well. Execution of 8pcs of product Y results in distribution of the quantity between the unspecified product lot (4pcs) and the specified lot (4pcs). Now each line has been executed as seen in tab Executed and in Executed field.
+You decide to delete the quantity of the unspecified lot of product Y:</p>
+<ol>
+<li>Navigate to the Info tab of product Y;</li>
+<li>Locate the small bin on the row, next to the desired qunatity (&quot;4&quot;);</li>
+<li>Click on the bin icon.</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>No confirmation message for the deletion will pop-up!</p>
+</div>
+<p><strong>Result:</strong></p>
+<ul>
+<li>The quantity for the unspecified lot of product Y in the Executed field is deleted.</li>
+<li>The row related to this product and lot in tab Executed shows a dash &quot;-&quot;.</li>
+<li>After deletion, it appears as if the lot was never executed.</li>
+</ul>
+<p><img src="pictures/deleterowatreceive.png" alt="Receive2"></p>
+<p>Another example at operation Quick Reconcile, and you count 4000pcs of product X. The amount is distributed between the available lots. You decide to delete the counted quantity of the specified lot (&quot;00022&quot;). Simply click on the bin in the row of the lot, next to quantity &quot;100&quot; and without any warning, it will be deleted. The row in tab Counted will also be deleted.</p>
+<p><img src="pictures/deleterowatquickrec.png" alt="Quickrec"></p>
+<p>By using these bin functionalities effectively, you can ensure accurate inventory management while maintaining flexibility in operations.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/inventory/how-to/the_bin.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

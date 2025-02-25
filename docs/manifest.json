@@ -9286,6 +9286,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/deleteallatreceive.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/deleteallatreceive.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/deleteallatreconciliation.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/deleteallatreconciliation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/deleterowatquickrec.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/deleterowatquickrec.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/deleterowatreceive.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/deleterowatreceive.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/how-to/pictures/document-routes-doc.png",
       "output": {
         "resource": {
@@ -9490,6 +9530,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/logistics/inventory/how-to/reconciliation-based-counts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/logistics/inventory/how-to/the_bin.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/logistics/inventory/how-to/the_bin.html"
         }
       },
       "version": ""

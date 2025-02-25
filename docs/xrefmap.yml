@@ -400,6 +400,9 @@ references:
 - uid: template-description-jobs
   name: Jobs documentation template
   href: advanced/jobs/template.html
+- uid: the_bin
+  name: How to Use the Bin in Inventory Control
+  href: modules/logistics/inventory/how-to/the_bin.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html
