@@ -10,7 +10,7 @@
 - name: Use the Document Type from Routes to create a new document
   href: document-type-routes.md
 - name: Use the Bin
-  href: the_bin.md
+  href: modules/logistics/inventory/inventory-control/the_bin.md
   topicHref: inventory-control/the_bin.md
 - name: Edit quantity
   href: edit_quantity.md
