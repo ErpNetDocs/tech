@@ -51,9 +51,11 @@ Let say you **transfer** 500pcs of product X. You realize you need to correct th
 
 ![QuickReconcile1](pictures/editQ4.png)
 <br>
->* Zero quantity lines in the finishing document will be created.
+
+> * Zero quantity lines in the finishing document will be created.
 
 ![QuickReconcile2](pictures/editQ5.png)
 <br>
+
 >[!WARNING] 
->* Corrections to "0" do not create zero quantity lines at the other operations.
+>* Corrections to "0" at the other operations do not create zero quantity lines.
