@@ -23,7 +23,7 @@ When scanning 1 unit of "Grape Juice" (code: 963963), the system correctly recal
 ![Scan](pictures/choosemenu3.png)
 
 >[!Note]
-> The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code once, the system will check which default measurement unit is linked with it and then recalculate the quantity according to the chosen measurement unit for visialization.
+> The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code, the system automatically identifies its default measurement unit and recalculates the quantity based on the selected visualization unit."
 
 By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.
 
