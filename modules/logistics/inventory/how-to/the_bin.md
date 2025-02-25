@@ -1,5 +1,5 @@
 ---
-uid: bin
+uid: the_bin
 ---
 
 # **How to Use the Bin in Inventory Control**
