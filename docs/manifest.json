@@ -9326,6 +9326,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/editQ4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/editQ4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/how-to/pictures/editQ5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/how-to/pictures/editQ5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/how-to/pictures/full_reconc.png",
       "output": {
         "resource": {

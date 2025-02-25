@@ -98,24 +98,51 @@ Whether due to scanning errors, miscounts, or handling variations in products wi
 <li>the edit needs confirmation</li>
 <li>multiple edits are possible</li>
 </ul>
-<h2 id="perform-a-quantity-edit-at-operations-receive-issue-transfer-or-scrap">Perform a quantity edit at operations Receive, Issue, Transfer or Scrap</h2>
-<p>When any quantity is scanned it enters the designated field - executed, transfer, scrap. Only the quantity field in tab Info is editable.</p>
-<p>Let say you transfer 500pcs of product X. You realize you need to correct the quantity to 250pcs.</p>
+<h2 id="perform-a-quantity-edit">Perform a quantity edit</h2>
+<p>When any quantity is scanned it enters the designated field - executed, transfer, scrap, counted. Only the quantity field in tab Info is editable.</p>
+<p>Let say you <strong>transfer</strong> 500pcs of product X. You realize you need to correct the quantity to 250pcs.</p>
 <p><img src="pictures/editQ1.png" alt="Transfer1"></p>
 <p><strong>Steps:</strong></p>
-<pre><code>1. Navigate to tab Info of product X
-2. Click in the light-grey quantity field that contains &quot;500&quot;
-    -&gt; a pop-up edit-box will appear
-3. Enter the correct quantity &quot;250&quot; from the keyboard or use the down arrow
-4. Confirm with &quot;Ok&quot;
-</code></pre>
+<ol>
+<li>Navigate to tab Info of product X</li>
+<li>Click in the light-grey quantity field that contains &quot;500&quot;
+-&gt; a pop-up edit-box will appear</li>
+<li>Enter the correct quantity &quot;250&quot; from the keyboard or use the down arrow</li>
+<li>Confirm with &quot;Ok&quot;</li>
+</ol>
 <p><img src="pictures/editQ2.png" alt="Transfer2"></p>
 <p><strong>Result:</strong></p>
-<pre><code>1. The new quantity is saved in the field
-2. The field in tab Transfer is edited too
-3. The quantity can be edited until a Transfer Order is created with button Finish
-</code></pre>
+<ol>
+<li>The new quantity is saved in the field</li>
+<li>The field in tab Transfer is edited too</li>
+<li>The quantity can be edited until a Transfer Order is created with button Finish</li>
+</ol>
 <p><img src="pictures/editQ3.png" alt="Transfer3"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Corrections to zero (0) are possible.<br></p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<ul>
+<li>Corrections to &quot;0&quot; at Quick Reconcile mean &quot;counted 0 pcs&quot;, not &quot;never counted&quot;.<br></li>
+</ul>
+</div>
+<p><img src="pictures/editQ4.png" alt="QuickReconcile1">
+<br></p>
+<blockquote>
+<ul>
+<li>Zero quantity lines in the finishing document will be created.</li>
+</ul>
+</blockquote>
+<p><img src="pictures/editQ5.png" alt="QuickReconcile2">
+<br></p>
+<div class="WARNING">
+<h5>Warning</h5>
+<ul>
+<li>Corrections to &quot;0&quot; do not create zero quantity lines at the other operations.</li>
+</ul>
+</div>
 
 </article>
 
