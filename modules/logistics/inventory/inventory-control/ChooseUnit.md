@@ -6,6 +6,7 @@ The store order can be created using different measurement units for the "Quanti
 
 ## How it works? ##
 The menu is available for operations Receive and Issue. 
+It offers a choice, known as the measurement unit used for order visualization.
 The settings are remembered per user and independently for the forementioned operations.
 
 ![Menu](pictures/choosemenu1.png)
@@ -20,6 +21,9 @@ Product "Grape Juice" has a default measurement unit of "Litre" but is currently
 When scanning 1 unit of "Grape Juice" (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).
 
 ![Scan](pictures/choosemenu3.png)
+
+>[!Note]
+>The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code once, the system will check which default measurement >unit is linked with it and then recalculate the quantity according to the chosen measurement unit for visialization
 
 By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.
 
