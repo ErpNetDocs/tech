@@ -58,6 +58,7 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_TODO_UPDATE_ASSIGN | To Do | **[R35951](https://docs.erp.net/model/business-rules/R35951.html) Task** - Notify Assigned To User For Update | Notify the assigned user when the To Do is edited.
 | NT_LEAD_ASSIGNMENT | Lead | **[R35980](https://docs.erp.net/model/business-rules/R35980.html) Lead** - Notify Assigned To Sales Person Upon Assignment | Notify the assigned sales person's user when the Lead has been assigned to them.
 | NT_LEAD_UPDATE_ASSIGN | Lead | **[R35958](https://docs.erp.net/model/business-rules/R35958.html) Lead** - Notify Assigned To Sales Person For Update | Notify the assigned sales person's user when the Lead is edited.
+| NT_CASE_ASSIGNMENT | Case | **[R38379](https://docs.erp.net/model/business-rules/R38379.html) Case** - Notify Assigned To User On Assignment | Notify the assigned user when the Case has been assigned to them.
 | NT_ACTPARTICIPANTS_ASSIGN | Activity | **[R36471](https://docs.erp.net/model/business-rules/R36471.html) Activity** - Notify Activity Participants Upon Assignment | Notify users when they are assigned as participants in the Activity.
 | NT_COMPILATION_COMPLETION | Compilation | **[R36563](https://docs.erp.net/model/business-rules/R36563.html) Compilation** - Notify On Completion | Notify the user who initiated the compilation when the compilation is finished.
 
