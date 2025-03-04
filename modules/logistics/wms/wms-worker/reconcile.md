@@ -8,7 +8,7 @@ The <b>Reconcile</b> menu allows you to make a comparison between the quantity o
 
 The location barcode must be scanned (by scanning Product, Lot, Serial, etc) or selected from the drop-down menu first:
 
-![Location](pictures/reconcile-location.png)
+
  
 The system will give you a summary of the information it has for that product:
 
