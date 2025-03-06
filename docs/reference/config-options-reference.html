@@ -523,7 +523,6 @@ For example &quot;location: {Location} ; forklift - {Document.@Property2: VD}&qu
 &quot;0&quot; - When the key is defined and set to 0, or if no key is defined, 'Complete with sub-documents, including unreleased' will not be available as a Completed status option.<br></li>
 <li>b.The user sets it manually.</li>
 <li>c.The key is introduced in version: - 25</li>
-<li></li>
 </ul>
 <h2 id="65-jobsmanagerignoresessionsforidleschedule">65. /JobsManager/IgnoreSessionsForIdleSchedule</h2>
 <ul>
@@ -534,11 +533,13 @@ For example &quot;location: {Location} ; forklift - {Document.@Property2: VD}&qu
 <li>c.The key is introduced in version: - 24 SP7</li>
 </ul>
 <h2 id="66-monitoringauditlogentriesretentionmonths">66. /Monitoring/AuditLogEntriesRetentionMonths</h2>
-<p>•	a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the Sys_Audit_Log_Entries table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
+<ul>
+<li>a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Monitoring.AuditLogEntries.html">Audit Log Entries</a> table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
 When the key is not defined or has no value, the retention period is set to 12 months by default.<br>
-If the J38417 Delete old audit logs  job is configured and active - the audit log entries, whose retention period is expired, will be deleted.<br>
-•	b.The user sets it manually.<br>
-•	c.The key is introduced in version: - 25<br></p>
+If the <a href="../advanced/jobs/J38417.html">J38417 Delete old audit logs</a> job is configured and active - the audit log entries, whose retention period is expired, will be deleted.<br></li>
+<li>b.The user sets it manually.<br></li>
+<li>c.The key is introduced in version: - 25<br></li>
+</ul>
 
 </article>
 
