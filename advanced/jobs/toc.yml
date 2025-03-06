@@ -16,3 +16,5 @@
   href: J35026.md
 - name: J35666 Delete old history data for attribute changes
   href: J35666.md
+- name: J38417 Delete old audit logs
+  href: J38417.md
