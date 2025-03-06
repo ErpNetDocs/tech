@@ -364,3 +364,11 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 "0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, Jobs marked as Run On Idle will start automatically at the scheduled time only if the server sessions are less than 5.<br>
 - b.The user sets it manually.
 - c.The key is introduced in version: - 24 SP7
+
+## 66. /Monitoring/AuditLogEntriesRetentionMonths
+•	a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the Sys_Audit_Log_Entries table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
+When the key is not defined or has no value, the retention period is set to 12 months by default.
+If the J38417 Delete old audit logs  job is configured and active - the audit log entries, whose retention period is expired, will be deleted.
+•	b.The user sets it manually.
+•	c.The key is introduced in version: - 25
+
