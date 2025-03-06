@@ -368,7 +368,7 @@ references:
   name: Promotional packages
   href: modules/crm/pricing/promotional-packages.html
 - uid: reconcile-menu
-  name: Reconcile
+  name: WMS Worker - Reconcile Menu
   href: modules/logistics/wms/wms-worker/reconcile.html
 - uid: sales-order-row-types
   name: Sales order row types
