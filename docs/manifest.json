@@ -15146,6 +15146,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/Reconcile-by-LUN.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/Reconcile-by-LUN.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/availability-actions.png",
       "output": {
         "resource": {
@@ -15416,6 +15426,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-lun.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-lun.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-product.png",
       "output": {
         "resource": {
@@ -15440,6 +15460,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile-summary.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile_by_LUN.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/reconcile_by_LUN.png"
         }
       },
       "version": ""
