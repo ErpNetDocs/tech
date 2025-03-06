@@ -617,7 +617,7 @@
   "advanced/jobs/J38417.html": {
     "href": "advanced/jobs/J38417.html",
     "title": "J38417 Delete old audit logs | ERP.net Tech Docs",
-    "keywords": "J38417 Delete old audit logs Code J38417 Entity Systems.Core.AuditLogEntries Job type name Delete old audit logs Parameters /Monitoring/AuditLogEntriesRetentionMonths key Description Deletes old audit log entries whose EventTimeUtc is older than 12 months. The default value of 12 months can be adjusted according to the specific needs by configuring and setting a preferred value in the /Monitoring/AuditLogEntriesRetentionMonths key*. First to process N/A Automatically created YES Version Introduced: v.25 *To learn more about the /Monitoring/AttributeChangesRetentionMonths key, see key №66 in Config options. To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template."
+    "keywords": "J38417 Delete old audit logs Code J38417 Entity Systems.Monitoring.AuditLogEntries Job type name Delete old audit logs Parameters /Monitoring/AuditLogEntriesRetentionMonths key Description Deletes old audit log entries whose EventTimeUtc is older than 12 months. The default value of 12 months can be adjusted according to the specific needs by configuring and setting a preferred value in the /Monitoring/AuditLogEntriesRetentionMonths key*. First to process N/A Automatically created YES Version Introduced: v.25 *To learn more about the /Monitoring/AttributeChangesRetentionMonths key, see key №66 in Config options. To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template."
   },
   "advanced/jobs/index.html": {
     "href": "advanced/jobs/index.html",
