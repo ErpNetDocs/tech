@@ -334,6 +334,9 @@ references:
 - uid: jobs-J35666
   name: J35666 Delete attribute changes history
   href: advanced/jobs/J35666.html
+- uid: jobs-J38417
+  name: J38417 Delete old audit logs
+  href: advanced/jobs/J38417.html
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
