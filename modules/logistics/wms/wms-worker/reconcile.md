@@ -4,7 +4,7 @@ uid: reconcile-menu
 
 # WMS Worker - Reconcile Menu
 
-The Reconcile menu allows you to make a comparison between the quantity of the product counted by the employees and the expected availability. The comparison is performed by Lots and Serial numbers, and the final records for any discrepancies are saved when the **Finish** button is clicked.
+The Reconcile menu allows you to make a comparison between the quantity of the product counted by the employees and the expected availability. The final records for any discrepancies are saved when the **Finish** button is clicked.
 
 ## Reconcile by Location or Logistic Unit (LUN)
 
