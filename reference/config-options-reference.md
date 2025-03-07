@@ -366,7 +366,7 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - c.The key is introduced in version: - 24 SP7
 
 ## 66. /Monitoring/AuditLogEntriesRetentionMonths
--	a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  [Audit Log Entries](xref:Systems.Monitoring.AuditLogEntries) table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
+-	a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  [Audit Log Entries](xref:Systems.Monitoring.AuditLogEntries) table). The retention period starts from the date set in [Event_Time_Utc](xref:Systems.Monitoring.AuditLogEntries.Event_Time_Utc) field.
 When the key is not defined or has no value, the retention period is set to 12 months by default.<br>
 If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configured and active - the audit log entries, whose retention period is expired, will be deleted.<br>
 -	b.The user sets it manually.<br>
