@@ -534,7 +534,7 @@ For example &quot;location: {Location} ; forklift - {Document.@Property2: VD}&qu
 </ul>
 <h2 id="66-monitoringauditlogentriesretentionmonths">66. /Monitoring/AuditLogEntriesRetentionMonths</h2>
 <ul>
-<li>a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Monitoring.AuditLogEntries.html">Audit Log Entries</a> table). The retention period starts from the date set in AuditLogEntries.Event_Time_Utc field.
+<li>a.Action: When the key is defined and has a value, its value specifies the retention period, in months, of audit log entries (these are the records in the  <a class="xref" href="https://erpnetdocs.github.io/model/entities/Systems.Monitoring.AuditLogEntries.html">Audit Log Entries</a> table). The retention period starts from the date set in <a href="xref:Systems.Monitoring.AuditLogEntries.Event_Time_Utc">Event_Time_Utc</a> field.
 When the key is not defined or has no value, the retention period is set to 12 months by default.<br>
 If the <a href="../advanced/jobs/J38417.html">J38417 Delete old audit logs</a> job is configured and active - the audit log entries, whose retention period is expired, will be deleted.<br></li>
 <li>b.The user sets it manually.<br></li>
