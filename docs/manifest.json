@@ -8792,16 +8792,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/goods-cost/Costing methods.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/logistics/concepts/goods-cost/Costing methods.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/logistics/concepts/goods-cost/cost-correction/basic-algorithm-for-cost-correction-calculation.md",
       "output": {
         ".html": {
@@ -8855,10 +8845,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/goods-cost/costing-methods/Costing methods.md",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/costing-methods/costing-methods.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/concepts/goods-cost/costing-methods/Costing methods.html"
+          "relative_path": "modules/logistics/concepts/goods-cost/costing-methods/costing-methods.html"
         }
       },
       "version": ""

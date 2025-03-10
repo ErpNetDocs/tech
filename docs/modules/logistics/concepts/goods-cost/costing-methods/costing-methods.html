@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Costing methods | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Costing methods | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/costing-methods/costing-methods.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="costing-methods">Costing methods</h1>
+
+<p>In ERP.net, costing methods can be configured both globally at the Enterprise Company level and individually for each product. The application priorities are as follows:
+•	If a method is specified in both the Product definition and the Enterprise Company definition, the one from the Product is with higher priority;
+•	If no method is specified in the Product definition, the one from the Enterprise Company is used. Since the costing method is a mandatory field for the Enterprise Company, it will always have a defined value.</p>
+<p>*Regardless of where the method is specified, the cost price is calculated in the same way.</p>
+<p>ERP.net supports multiple costing methods to accommodate diverse business needs. The available costing methods include:</p>
+<h1 id="1-average-cost-for-the-whole-product">1. <strong>Average cost for the whole product:</strong></h1>
+<p>The most commonly used method, given that not all products have lots. It is used when when lots are not assigned to the product or when tracking cost price by lots is unnecessary.</p>
+<p>The cost is calculated by taking the value of all available products, regardless of whether they have lots or not, and averaging it.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Product X</strong> has 100 units in stock.</li>
+<li>50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.</li>
+</ul>
+<p>To calculate the average cost:</p>
+<ul>
+<li>Total cost = (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = <strong>900 BGN.</strong></li>
+<li>Average cost per unit = 900 BGN / 100 units = <strong>9 BGN</strong> per unit.</li>
+</ul>
+<p>In this case, the cost is averaged across all units, regardless of whether they have lots assigned to them.</p>
+<h1 id="2-separate-cost-for-each-lot">2. <strong>Separate cost for each lot:</strong></h1>
+<p>Used when products have unique lots and it is important to calculate the cost price of each separately (due to different acquisition prices, regulatory requirements, or other reasons).
+The cost is calculated by taking the value of all available products by lots and averaging it for each lot. If for the same product there are availabilities without a lot, then cost for them is calculated by assuming that all are a part of a single, unified lot.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Product Y</strong> has two lots:
+<ul>
+<li><strong>Lot 1:</strong> 50 units at 8 BGN each.</li>
+<li><strong>Lot 2:</strong> 50 units at 12 BGN each.</li>
+</ul>
+</li>
+</ul>
+<p>To calculate the cost for each lot separately:</p>
+<ul>
+<li><strong>Lot 1 cost:</strong> 50 units * 8 BGN = <strong>400 BGN.</strong></li>
+<li><strong>Lot 2 cost:</strong> 50 units * 12 BGN = <strong>600 BGN.</strong></li>
+</ul>
+<p>If there are 30 units of Product Y available without a lot:</p>
+<ul>
+<li>These 30 units are considered part of a <strong>single, unified lot.</strong></li>
+<li>The cost for these units would be averaged like this: (30 * 10 BGN) = <strong>300 BGN</strong> (assuming an average price of 10 BGN per unit).</li>
+</ul>
+<p>Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.</p>
+<h1 id="3-average-partitioned-by-reserved-for-document">3 <strong>Average, partitioned by Reserved for document:</strong></h1>
+<p>Used in situations where it is necessary to separate the cost of specific lots related to a given document (e.g., sales order, purchase order, or other).</p>
+<p>The cost is calculated as follows:</p>
+<ul>
+<li><p>For lots <strong>reserved for the same document,</strong> the cost price is determined by averaging the cost of all available quantities within those lots.</p>
+</li>
+<li><p>For the remaining lots <strong>not reserved for any document,</strong> the cost is calculated by treating all of them as part of a single, unified lot and averaging the cost across all these lots.</p>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Product W</strong> has four lots:
+<ul>
+<li><strong>Lot 1:</strong> 10 units at 5 BGN each (Reserved for a sales order).</li>
+<li><strong>Lot 2:</strong> 20 units at 6 BGN each (Reserved for the same sales order).</li>
+<li><strong>Lot 3:</strong> 15 units at 7 BGN each (Not reserved for any document).</li>
+<li><strong>Lot 4:</strong> 25 units at 8 BGN each (Not reserved for any document).</li>
+</ul>
+</li>
+</ul>
+<p>To calculate the cost:</p>
+<ol>
+<li><strong>For the reserved lots (Lot 1 and Lot 2):</strong></li>
+</ol>
+<p>These lots are reserved for the same sales order, so their costs are calculated separately:</p>
+<ul>
+<li><strong>Lot 1 cost</strong> = 10 units * 5 BGN = <strong>50 BGN.</strong></li>
+<li><strong>Lot 2 cost</strong> = 20 units * 6 BGN = <strong>120 BGN.</strong></li>
+</ul>
+<p>The average cost for the reserved lots is calculated as:
+(50 BGN+120 BGN) / (10 units+20 units) =170 BGN / 30 units = 5.67 BGN / unit</p>
+<ol start="2">
+<li><strong>For the unreserved lots (Lot 3 and Lot 4):</strong>
+These lots are not reserved for any document, so they are treated as a single unified lot:</li>
+</ol>
+<ul>
+<li><strong>Lot 3 cost</strong> = 15 units * 7 BGN = <strong>105 BGN.</strong></li>
+<li><strong>Lot 4 cost</strong> = 25 units * 8 BGN = <strong>200 BGN.</strong>
+The average cost for the unreserved lots is calculated as:
+(105 BGN+200 BGN) / (15 units+25 units) = 305 BGN / 40 units = 7.63 BGN/unit</li>
+</ul>
+<p><strong>Summary of Costs:</strong></p>
+<ul>
+<li><strong>Reserved lots:</strong> Average cost = <strong>5.67 BGN/unit.</strong></li>
+<li><strong>Unreserved lots:</strong> Average cost = <strong>7.63 BGN/unit.</strong></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/concepts/goods-cost/costing-methods/costing-methods.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
