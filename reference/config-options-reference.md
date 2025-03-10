@@ -372,3 +372,10 @@ If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configur
 -	b.The user sets it manually.<br>
 -	c.The key is introduced in version: - 25<br>
 
+## 67. /id/UserNameAutoComplete
+-	a.Action: When the value of this key is:<br>
+"1" - When the key is defined and set to 1, the autocomplete option for the user/email field of the Desktop client login screen is turned on. This means that saved data from previous logins will be listed when clicking into the field.<br>
+"0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, the autocomplete option for the user/email field of the Desktop client login screen is turned off.<br>
+-	b.The user sets it manually.<br>
+-	c.The key is introduced in version: - 24 SP10<br>
+
