@@ -1,8 +1,19 @@
 # Costing methods
 
+The costing methods are used to determine the exact cost price of products, which is essential for:
+
+- Pricing: Knowing the cost price helps companies set competitive and profitable prices for their products.
+
+- Cost control: By analyzing the cost price, companies can identify and reduce unnecessary expenses.
+
+- Planning and budgeting: Accurate cost price is the basis for effective financial planning and budgeting.
+
+and others.
+
+
 In @@name, costing methods can be configured both globally at the Enterprise Company level and individually for each product. The application priorities are as follows:
-•	If a method is specified in both the Product definition and the Enterprise Company definition, the one from the Product is with higher priority;
-•	If no method is specified in the Product definition, the one from the Enterprise Company is used. Since the costing method is a mandatory field for the Enterprise Company, it will always have a defined value.
+-	If a method is specified in both the Product definition and the Enterprise Company definition, the one from the Product is with higher priority;
+-	If no method is specified in the Product definition, the one from the Enterprise Company is used. Since the costing method is a mandatory field for the Enterprise Company, it will always have a defined value.
 
 *Regardless of where the method is specified, the cost price is calculated in the same way.
 
