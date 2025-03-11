@@ -113,7 +113,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">First to process</td>
-<td>DocumentPrintImage.DocumentPrints.PrintTime (ASC)</td>
+<td>-</td>
 </tr>
 <tr>
 <td style="text-align: left;">Automatically created</td>
@@ -121,7 +121,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Version</td>
-<td>Introduced: 2020.1<br> Updated: 2024 - the job is automatically created and activated into the databases</td>
+<td>Introduced: 2020.1<br> Updated: 24 - the job is automatically created and activated into the databases <br> Updated: 24 SP9 - Sorting by DocumentPrintImage.DocumentPrints.PrintTime (ASC) has been removed for performance reasons. As a result, the job will no longer prioritize deleting the oldest records. Instead, any record that falls within the expired retention period might be deleted in the iteration, regardless of order. It is considered that the order of deleting of obsolete records is not important, especially in favor of the job's speed, the number of processed records, and overall efficiency.</td>
 </tr>
 </tbody>
 </table>
