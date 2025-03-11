@@ -46,6 +46,9 @@ In the transactions, the cost comes in four currencies: <b>base cost, product co
 
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
+## Costing methods
+@@name supports multiple costing methods to accommodate diverse business needs. For more information, see the  Costing methods topic.
+
 For more specific information about cost calculations see the following articles:
 - **[Cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=Cost%20correction)** 
 
