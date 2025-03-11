@@ -47,7 +47,7 @@ In the transactions, the cost comes in four currencies: <b>base cost, product co
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
 ## Costing methods
-@@name supports multiple costing methods to accommodate diverse business needs. For more information, see the  Costing methods topic.
+@@name supports multiple costing methods to accommodate diverse business needs. For more information, see the [Costing methods](costing-methods.md) topic.
 
 
 <br/>For more specific information about cost calculations see the following articles:
