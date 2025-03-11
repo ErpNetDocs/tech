@@ -51,7 +51,10 @@ For each store transaction, the cost is calculated in all four currencies when d
 
 
 <br/>For more specific information about cost calculations see the following articles:
-- **[Cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=Cost%20correction)** 
+- **[Costing methods](costing-methods.md)**
+  
+- **[Original cost calculation](original-cost-calculation/index.md)** 
 
-- **[Original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20cost%20calculation)** 
+- **[Cost correction](cost-correction/index.md)** 
+
 
