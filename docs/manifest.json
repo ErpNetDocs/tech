@@ -8845,10 +8845,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/logistics/concepts/goods-cost/costing-methods/costing-methods.md",
+      "source_relative_path": "modules/logistics/concepts/goods-cost/costing-methods.md",
       "output": {
         ".html": {
-          "relative_path": "modules/logistics/concepts/goods-cost/costing-methods/costing-methods.html"
+          "relative_path": "modules/logistics/concepts/goods-cost/costing-methods.html"
         }
       },
       "version": ""
