@@ -5,4 +5,4 @@
 - name: Cost correction
   href: cost-correction/toc.yml
 - name: Costing methods
-  href: costing-methods/toc.yml
+  href: costing-methods.md
