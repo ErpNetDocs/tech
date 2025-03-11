@@ -47,6 +47,18 @@ In the transactions, the cost comes in four currencies: <b>base cost, product co
 For each store transaction, the cost is calculated in all four currencies when defined automatically.
 
 For more specific information about cost calculations see the following articles:
+
+## Costing methods 
+The costing methods are used to determine the exact cost price of products, which is essential for:
+
+- Pricing: Knowing the cost price helps companies set competitive and profitable prices for their products.
+
+- Cost control: By analyzing the cost price, companies can identify and reduce unnecessary expenses.
+
+- Planning and budgeting: Accurate cost price is the basis for effective financial planning and budgeting.
+
+and others.
+
 - **[Cost correction](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/cost-correction/index.html?q=Cost%20correction)** 
 
 - **[Original cost calculation](https://docs.erp.net/tech/modules/logistics/concepts/goods-cost/original-cost-calculation/index.html?q=Original%20cost%20calculation)** 
