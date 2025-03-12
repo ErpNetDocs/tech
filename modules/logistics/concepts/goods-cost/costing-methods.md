@@ -14,7 +14,7 @@ In @@name, costing methods can be configured both globally at the Enterprise Com
 -	If a method is specified in both the Product definition and the Enterprise Company definition, the one from the Product is with higher priority;
 -	If no method is specified in the Product definition, the one from the Enterprise Company is used. Since the costing method is a mandatory field for the Enterprise Company, it will always have a defined value.
 
-*Regardless of where the method is specified, the cost price is calculated in the same way.
+> **_NOTE:_** Regardless of where the method is specified, the cost price is calculated in the same way.
 
 
 @@name supports multiple costing methods to accommodate diverse business needs. The available costing methods include:
