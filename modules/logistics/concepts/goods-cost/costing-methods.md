@@ -45,18 +45,16 @@ Used when products have unique lots and it is important to calculate the cost pr
 **Example:**
  
 - **Product Y** has two lots: 
-     - **Lot 1:** 50 units at 8 BGN each.
-     - **Lot 2:** 50 units at 12 BGN each.
+     - **Lot 1:** 100 units in stock - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
+     - **Lot 2:** 100 units in stock - 50 units were bought at 4 BGN each, and 50 units were bought at 6 BGN each.
    
 To calculate the cost for each lot separately:
- 
-- **Lot 1 cost:** 50 units * 8 BGN = **400 BGN.**
-- **Lot 2 cost:** 50 units * 12 BGN = **600 BGN.**
+- **Lot 1 cost:** (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = **900 BGN** total cost and **9 BGN** per unit.
+- **Lot 2 cost:** (50 * 4) + (50 * 6) = 200 BGN + 300 BGN = **500 BGN**  total cost and **5 BGN** per unit.
   
-If there are 30 units of Product Y available without a lot:
- 
-- These 30 units are considered part of a **single, unified lot.**
-- The cost for these units would be averaged like this: (30 * 10 BGN) = **300 BGN** (assuming an average price of 10 BGN per unit).
+If there are another 100 units of Product Y available **without a lot**, they are considered part of a **single, unified lot.** 
+- **No lot:** 100 units in stock - 50 units were bought at 2 BGN each, and 50 units were bought at 4 BGN each.
+- **No lot cost:** (50 * 2) + (50 * 4) = 100 BGN + 200 BGN = **300 BGN** total cost and **3 BGN** per unit.
   
 Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.
 
@@ -71,30 +69,21 @@ The cost is calculated as follows:
 **Example:**
  
 - **Product W** has four lots: 
-     - **Lot 1:** 10 units at 5 BGN each (Reserved for a sales order).
-     - **Lot 2:** 20 units at 6 BGN each (Reserved for the same sales order).
-     - **Lot 3:** 15 units at 7 BGN each (Not reserved for any document).
-     - **Lot 4:** 25 units at 8 BGN each (Not reserved for any document).
+     - **Lot 1:** 10 units in stock at 5 BGN each (Reserved for a sales order).
+     - **Lot 2:** 20 units in stock 6 BGN each (Reserved for the same sales order).
+     - **Lot 3:** 15 units in stock 7 BGN each (Not reserved for any document).
+     - **Lot 4:** 25 units in stock 8 BGN each (Not reserved for any document).
    
 To calculate the cost:
  
 1. **For the reserved lots (Lot 1 and Lot 2):**
- 
- These lots are reserved for the same sales order, so their costs are calculated separately:
-- **Lot 1 cost** = 10 units * 5 BGN = **50 BGN.**
-- **Lot 2 cost** = 20 units * 6 BGN = **120 BGN.**
-
-The average cost for the reserved lots is calculated as:
-  (50 BGN+120 BGN) / (10 units+20 units) =170 BGN / 30 units = 5.67 BGN / unit
+ These lots are reserved for the same sales order, so their costs are calculated by averaging the cost for both of them:
+  - Total cost = (10 * 5) + (20 * 6) = 50 BGN + 120 BGN = **170 BGN.**
+  - Average cost per unit = 170 BGN / 30 units = **5.67 BGN** per unit.
 
 2. **For the unreserved lots (Lot 3 and Lot 4):**
  These lots are not reserved for any document, so they are treated as a single unified lot:
-- **Lot 3 cost** = 15 units * 7 BGN = **105 BGN.**
-- **Lot 4 cost** = 25 units * 8 BGN = **200 BGN.**
-The average cost for the unreserved lots is calculated as:
-(105 BGN+200 BGN) / (15 units+25 units) = 305 BGN / 40 units = 7.63 BGN/unit
+  - Total cost = (15 * 7) + (25 * 8) = 105 BGN + 200 BGN = **305 BGN.**
+  - Average cost per unit = 305 BGN / 40 units = **7.63 BGN** per unit.
 
-**Summary of Costs:**
- 
-- **Reserved lots:** Average cost = **5.67 BGN/unit.**
-- **Unreserved lots:** Average cost = **7.63 BGN/unit.**
+
