@@ -49,12 +49,21 @@ Used when products have unique lots and it is important to calculate the cost pr
      - **Lot 2:** 100 units in stock - 50 units were bought at 4 BGN each, and 50 units were bought at 6 BGN each.
    
 To calculate the cost for each lot separately:
-- **Lot 1 cost:** (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = **900 BGN** total cost and **9 BGN** per unit.
-- **Lot 2 cost:** (50 * 4) + (50 * 6) = 200 BGN + 300 BGN = **500 BGN**  total cost and **5 BGN** per unit.
+
+**Lot 1 cost:** 
+  - Total cost = (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = **900 BGN.**
+  - Average cost per unit = 900 BGN / 100 units = **9 BGN** per unit.
+
+**Lot 2 cost:** 
+  - Total cost = (50 * 4) + (50 * 6) = 200 BGN + 300 BGN = **500 BGN.** 
+  - Average cost per unit = 500 BGN / 100 units = **5 BGN** per unit.
   
-If there are another 100 units of Product Y available **without a lot**, they are considered part of a **single, unified lot.** 
-- **No lot:** 100 units in stock - 50 units were bought at 2 BGN each, and 50 units were bought at 4 BGN each.
-- **No lot cost:** (50 * 2) + (50 * 4) = 100 BGN + 200 BGN = **300 BGN** total cost and **3 BGN** per unit.
+<br/>If there are another 100 units of Product Y available **without a lot**, they are considered part of a **single, unified lot.** 
+
+**No lot:** 100 units in stock - 50 units were bought at 2 BGN each, and 50 units were bought at 4 BGN each.
+
+ - Total cost = (50 * 2) + (50 * 4) = 100 BGN + 200 BGN = **300 BGN.**
+ - Average cost per unit = 300 BGN / 100 units = **3 BGN** per unit.
   
 Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.
 
@@ -76,13 +85,17 @@ The cost is calculated as follows:
    
 To calculate the cost:
  
-1. **For the reserved lots (Lot 1 and Lot 2):**
- These lots are reserved for the same sales order, so their costs are calculated by averaging the cost for both of them:
+**For the reserved lots (Lot 1 and Lot 2):**
+
+ These lots are reserved for the same sales order, so their costs are calculated by averaging the cost for both (all) of them:
+ 
   - Total cost = (10 * 5) + (20 * 6) = 50 BGN + 120 BGN = **170 BGN.**
   - Average cost per unit = 170 BGN / 30 units = **5.67 BGN** per unit.
 
-2. **For the unreserved lots (Lot 3 and Lot 4):**
+**For the unreserved lots (Lot 3 and Lot 4):**
+
  These lots are not reserved for any document, so they are treated as a single unified lot:
+
   - Total cost = (15 * 7) + (25 * 8) = 105 BGN + 200 BGN = **305 BGN.**
   - Average cost per unit = 305 BGN / 40 units = **7.63 BGN** per unit.
 
