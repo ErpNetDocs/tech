@@ -19,7 +19,7 @@ In @@name, costing methods can be configured both globally at the Enterprise Com
 
 @@name supports multiple costing methods to accommodate diverse business needs. The available costing methods include:
 
-# 1. **Average cost for the whole product:**
+## 1. **Average cost for the whole product:**
 The most commonly used method, given that not all products have lots. It is used when when lots are not assigned to the product or when tracking cost price by lots is unnecessary.
 
   The cost is calculated by taking the value of all available products, regardless of whether they have lots or not, and averaging it.
@@ -37,7 +37,7 @@ The most commonly used method, given that not all products have lots. It is used
   In this case, the cost is averaged across all units, regardless of whether they have lots assigned to them.
 
 
-# 2. **Separate cost for each lot:** 
+## 2. **Separate cost for each lot:** 
 Used when products have unique lots and it is important to calculate the cost price of each separately (due to different acquisition prices, regulatory requirements, or other reasons). 
 The cost is calculated by taking the value of all available products by lots and averaging it for each lot. If for the same product there are availabilities without a lot, then cost for them is calculated by assuming that all are a part of a single, unified lot.
 
@@ -59,7 +59,7 @@ If there are 30 units of Product Y available without a lot:
   
 Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.
 
-# 3 **Average, partitioned by Reserved for document:** 
+## 3 **Average, partitioned by Reserved for document:** 
 Used in situations where it is necessary to separate the cost of specific lots related to a given document (e.g., sales order, purchase order, or other). 
 
 The cost is calculated as follows:
