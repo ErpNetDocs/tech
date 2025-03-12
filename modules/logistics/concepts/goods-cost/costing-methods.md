@@ -10,7 +10,8 @@ The costing methods are used to determine the exact cost price of products, whic
 
 and others.
 
-In @@name, costing methods can be configured both globally at the Enterprise Company level and individually for each product. The application priorities are as follows:
+<br/>In @@name, costing methods can be configured both globally at the Enterprise Company level and individually for each Product. 
+The application priorities are as follows:
 -	If a method is specified in both the Product definition and the Enterprise Company definition, the one from the Product is with higher priority;
 -	If no method is specified in the Product definition, the one from the Enterprise Company is used. Since the costing method is a mandatory field for the Enterprise Company, it will always have a defined value.
 
