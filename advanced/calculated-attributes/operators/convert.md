@@ -30,8 +30,6 @@ Let's convert the quantity value of a sales order line, which is a decimal numbe
 OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.
 
 
-
-
 #### More examples:
 
 - **[Convert a value of a custom property to a number](../examples/convert-property-to-number.md)**
