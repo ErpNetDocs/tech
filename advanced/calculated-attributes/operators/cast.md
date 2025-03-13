@@ -28,9 +28,7 @@ Conveting to integer allows for comparison between the states (lower -> higher):
 ```
 OUTPUT: <br> If 'State = Released', the output will be '30'.
 
-> [!NOTE] 
-> 
-> The repository of the attribute is Crm.Sales.SalesOrders
+> **Tip:** If you can change the type using the `CAST` operator, you should typically use the `CONVERT` operator instead—and vice versa.
 
 #### More examples:
 
