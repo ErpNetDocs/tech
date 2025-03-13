@@ -97,7 +97,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires <strong>correct</strong> input data - otherwise, loss may occur with no error returned. If you convert the string value of '3.12' to decimal, the conversion will be successful.</td>
+<td>The CONVERT operator converts a parameter to a specified type. <br>It is commonly used by other operators to ensure parameter values are of the same type, particularly when the type of both of these parameters is a standard .net type. <br> Accurate input data is crucial for successful conversion; otherwise, data loss may occur without triggering an error. For instance, converting the string '3.12' to a decimal will succeed, but attempting to convert 'abc' to a numeric type will fail.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -134,10 +134,6 @@
 <pre><code>10: CONVERT ATTRIB: QuantityValue CONST: System.Int32                  
 </code></pre>
 <p>OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em>.</p>
-</div>
 <blockquote>
 <p><strong>Tip:</strong> If you can change the type using the <code>CONVERT</code> operator, you should typically use the <code>CAST</code> operator instead—and vice versa.</p>
 </blockquote>
