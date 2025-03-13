@@ -4,7 +4,9 @@ items: CalculatedAttributeExamples
 
 # Convert a value of a custom property to a number
 
-The values of custom properties are a specific type of value that the **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** operator doesn't know how to handle. For this reason, if you want to CONVERT a custom property's value to a number, you have to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it first. 
+The values of custom properties are a specific type of value that the **[CONVERT](https://docs.erp.net/tech/advanced/calculated-attributes/operators/convert.html)** operator doesn't know how to handle. 
+
+For this reason, if you want to CONVERT a custom property's value to a number, you have to **[CAST](https://docs.erp.net/tech/advanced/calculated-attributes/operators/cast.html)** it first. 
 
 
 **Example:**
