@@ -34,5 +34,5 @@ OUTPUT: <br> If 'State = Released', the output will be '30'.
 
 - **[Check whether the releasing of the document is first or not](../examples/check-for-first-releasing.md)**
 - **[Check if the system type of payment type in the sales order is 'In Cash'](../examples/check-if-system-type-is-in-cash.md)**
-- - **[Convert a value of a custom property to a number](../examples/convert-property-to-number.md)**
+- **[Convert a value of a custom property to a number](../examples/convert-property-to-number.md)**
 
