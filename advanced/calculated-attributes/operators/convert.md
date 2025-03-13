@@ -7,7 +7,7 @@ items: Operators
 
 | Specification    | Value                                                        |
 | ---------------- | ------------------------------------------------------------ |
-| Description      | Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires **correct** input data - otherwise, loss may occur with no error returned. If you convert the string value of '3.12' to decimal, the conversion will be successful.  |
+| Description      | The CONVERT operator converts a parameter to a specified type. <br>It is commonly used by other operators to ensure parameter values are of the same type, particularly when the type of both of these parameters is a standard .net type. <br> Accurate input data is crucial for successful conversion; otherwise, data loss may occur without triggering an error. For instance, converting the string '3.12' to a decimal will succeed, but attempting to convert 'abc' to a numeric type will fail. |
 | Parameter 1 Name | param                                                        |
 | Parameter 1 Type | decimal, int, string, or date                                 |
 | Parameter 2 Name | type                                                         |
@@ -26,9 +26,6 @@ Let's convert the quantity value of a sales order line, which is a decimal numbe
 ```
 OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.
 
-> [!NOTE]
-> 
-> The repository of the attribute is *Crm.Sales.SalesOrderLines*.
 
 > **Tip:** If you can change the type using the `CONVERT` operator, you should typically use the `CAST` operator instead—and vice versa.
 
