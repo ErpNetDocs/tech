@@ -71,7 +71,7 @@ To calculate the cost for each lot separately:
 Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.
 </details>
 
-## 3 **Average, partitioned by Reserved for document:** 
+## 3. **Average, partitioned by Reserved for document:** 
 Used in situations where it is necessary to separate the cost of specific lots related to a given document (e.g., sales order, purchase order, or other). 
 
 The cost is calculated as follows:
