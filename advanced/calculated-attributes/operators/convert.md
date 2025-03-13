@@ -17,7 +17,7 @@ items: Operators
 | Return value     | Returns the param converted to the type.                     |
 
 
-<br/>**Tip:** If you can change the type using the 'CONVERT' operator, you should typically use the 'cao-CAST' operator instead—and vice versa.
+<br/>**Tip:** If you can change the type using the CONVERT operator, you should typically use the @cao-CAST operator instead—and vice versa.
 
 
 <br/>**Example:**
