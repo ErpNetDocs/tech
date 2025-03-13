@@ -101,7 +101,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>Casts a parameter to a specified type.</td>
+<td>The CAST operator converts a parameter to a specified type. It is commonly used by other operators to ensure parameter values are of the same type, particularly when the type one of these parameters is a custom ERP.net type, such as a specific enum.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>string - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types.</td>
+<td>const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types +  custom ERP.net types, such as specific enum types.</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
@@ -133,24 +133,24 @@
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>CAST is used by other operators to convert their parameters to the same type. <br> The type is usually entered as a constant (CONST).</p>
-</div>
 <p><strong>Example:</strong></p>
-<p>Let's convert the value of the state of a sales order with type 'enum' to an integer number.</p>
-<p>Conveting to integer allows for comparison between the states (lower -&gt; higher):</p>
-<pre><code>10: CAST ATTRIB:State CONST:System.Int32      
+<p>Let's convert the value of the state of a sales order with the type 'enum' to an integer number.</p>
+<p>Converting to an integer allows for comparison between the states (lower -&gt; higher):</p>
+<pre><code>10: CAST ATTRIB: State  CONST: System.Int32      
 </code></pre>
 <p>OUTPUT: <br> If 'State = Released', the output will be '30'.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is Crm.Sales.SalesOrders</p>
-</div>
+<blockquote>
+<p><strong>Tip:</strong> If you can change the type using the <code>CAST</code> operator, you should typically use the <code>CONVERT</code> operator instead—and vice versa.</p>
+</blockquote>
 <h4 id="more-examples">More examples:</h4>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html">Check whether the releasing of the document is first or not</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html">Check if the system type of payment type in the sales order is 'In Cash'</a></strong></li>
+<li><strong><a href="../examples/check-for-first-releasing.html">Check whether the releasing of the document is first or not</a></strong></li>
+<li><strong><a href="../examples/check-if-system-type-is-in-cash.html">Check if the system type of payment type in the sales order is 'In Cash'</a></strong></li>
+<li>
+<ul>
+<li><strong><a href="../examples/convert-property-to-number.html">Convert a value of a custom property to a number</a></strong></li>
+</ul>
+</li>
 </ul>
 
 </article>

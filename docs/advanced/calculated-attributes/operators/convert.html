@@ -97,7 +97,7 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires <strong>correct</strong> input data - otherwise, loss may occur with no error returned. If you convert the string value of '3.12' to decimal, the conversion would be successful.</td>
+<td>Returns an object of specified type, the value of which is equivalent to the specified object. <br> This conversion requires <strong>correct</strong> input data - otherwise, loss may occur with no error returned. If you convert the string value of '3.12' to decimal, the conversion will be successful.</td>
 </tr>
 <tr>
 <td>Parameter 1 Name</td>
@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td>Parameter 1 Type</td>
-<td>decimal, int, string or date</td>
+<td>decimal, int, string, or date</td>
 </tr>
 <tr>
 <td>Parameter 2 Name</td>
@@ -131,16 +131,19 @@
 </table>
 <p><strong>Example:</strong></p>
 <p>Let's convert the quantity value of a sales order line, which is a decimal number, to an integer number:</p>
-<pre><code>10: CONVERT ATTRIB:QuantityValue CONST:System.Int32                  
+<pre><code>10: CONVERT ATTRIB: QuantityValue CONST: System.Int32                  
 </code></pre>
 <p>OUTPUT: <br> If 'QuantityValue = 12.14', the output will be '12'.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attribute is <em>Crm.Sales.SalesOrderLines</em>.</p>
 </div>
+<blockquote>
+<p><strong>Tip:</strong> If you can change the type using the <code>CONVERT</code> operator, you should typically use the <code>CAST</code> operator instead—and vice versa.</p>
+</blockquote>
 <h4 id="more-examples">More examples:</h4>
 <ul>
-<li><strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/examples/convert-property-to-number.html">Convert a value of a custom property to a number</a></strong></li>
+<li><strong><a href="../examples/convert-property-to-number.html">Convert a value of a custom property to a number</a></strong></li>
 </ul>
 
 </article>
