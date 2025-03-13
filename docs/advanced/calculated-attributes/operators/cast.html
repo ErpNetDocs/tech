@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td>Parameter 2 Type</td>
-<td>const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types +  custom ERP.net types (e.g., a specific enum)</td>
+<td>const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .Net types +  custom ERP.net types (e.g., a specific enum)</td>
 </tr>
 <tr>
 <td>Parameter 3 Name</td>
@@ -133,15 +133,13 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Example:</strong></p>
+<p><br><strong>Tip:</strong> If you can change the type using the <code>CAST</code> operator, you should typically use the <code>@CONVERT</code> operator instead—and vice versa.</p>
+<p><br><strong>Example:</strong></p>
 <p>Let's convert the value of the state of a sales order with the type 'enum' to an integer number.</p>
 <p>Converting to an integer allows for comparison between the states (lower -&gt; higher):</p>
 <pre><code>10: CAST ATTRIB: State  CONST: System.Int32      
 </code></pre>
 <p>OUTPUT: <br> If 'State = Released', the output will be '30'.</p>
-<blockquote>
-<p><strong>Tip:</strong> If you can change the type using the <code>CAST</code> operator, you should typically use the <code>CONVERT</code> operator instead—and vice versa.</p>
-</blockquote>
 <h4 id="more-examples">More examples:</h4>
 <ul>
 <li><strong><a href="../examples/check-for-first-releasing.html">Check whether the releasing of the document is first or not</a></strong></li>
