@@ -17,7 +17,7 @@ items: Operators
 | Parameter 3 Type |
 | Return value | Returns the param converted to the type. |
 
-<br/>**Tip:** If you can change the type using the `CAST` operator, you should typically use the `@CONVERT` operator instead—and vice versa.
+<br/>**Tip:** If you can change the type using the CAST operator, you should typically use the @CONVERT operator instead—and vice versa.
 
 
 <br/>**Example:**
