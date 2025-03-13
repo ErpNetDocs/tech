@@ -27,16 +27,16 @@ The most commonly used method, given that not all products have lots. It is used
 
 <details>
   <summary>Click here so see the <b>Example:</b></summary>
+<br/> 
+<b>Product X</b> has 100 units in stock - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
+
+
+<br/>To calculate the average cost:
  
-  - **Product X** has 100 units in stock.
-  - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
+- Total cost = (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = **900 BGN.**
+- Average cost per unit = 900 BGN / 100 units = **9 BGN** per unit.
   
-  To calculate the average cost:
- 
-  - Total cost = (50 * 8) + (50 * 10) = 400 BGN + 500 BGN = **900 BGN.**
-  - Average cost per unit = 900 BGN / 100 units = **9 BGN** per unit.
-  
-  In this case, the cost is averaged across all units, regardless of whether they have lots assigned to them.
+In this case, the cost is averaged across all units, regardless of whether they have lots assigned to them.
 </details>
 
 ## 2. **Separate cost for each lot:** 
@@ -47,9 +47,9 @@ Used when products have unique lots and it is important to calculate the cost pr
 <details>
   <summary>Click here so see the <b>Example:</b></summary>
  
-- **Product Y** has two lots: 
-     - **Lot 1:** 100 units in stock - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
-     - **Lot 2:** 100 units in stock - 50 units were bought at 4 BGN each, and 50 units were bought at 6 BGN each.
+**Product Y** has two lots: 
+- **Lot 1:** 100 units in stock - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
+- **Lot 2:** 100 units in stock - 50 units were bought at 4 BGN each, and 50 units were bought at 6 BGN each.
    
 To calculate the cost for each lot separately:
 
@@ -82,11 +82,11 @@ The cost is calculated as follows:
 <details>
   <summary>Click here so see the <b>Example:</b></summary>
   
-<br/>- **Product W** has four lots: 
-     - **Lot 1:** 10 units in stock at 5 BGN each (Reserved for a sales order).
-     - **Lot 2:** 20 units in stock 6 BGN each (Reserved for the same sales order).
-     - **Lot 3:** 15 units in stock 7 BGN each (Not reserved for any document).
-     - **Lot 4:** 25 units in stock 8 BGN each (Not reserved for any document).
+<br/>**Product W** has four lots: 
+- **Lot 1:** 10 units in stock at 5 BGN each (Reserved for a sales order).
+- **Lot 2:** 20 units in stock 6 BGN each (Reserved for the same sales order).
+- **Lot 3:** 15 units in stock 7 BGN each (Not reserved for any document).
+- **Lot 4:** 25 units in stock 8 BGN each (Not reserved for any document).
    
 To calculate the cost:
  
