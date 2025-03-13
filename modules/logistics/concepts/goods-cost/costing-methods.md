@@ -25,7 +25,8 @@ The most commonly used method, given that not all products have lots. It is used
 
   The cost is calculated by taking the value of all available products, regardless of whether they have lots or not, and averaging it.
 
-**Example:**
+<details>
+  <summary>Click here so see the <b>Example:</b></summary>
  
   - **Product X** has 100 units in stock.
   - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
@@ -36,14 +37,15 @@ The most commonly used method, given that not all products have lots. It is used
   - Average cost per unit = 900 BGN / 100 units = **9 BGN** per unit.
   
   In this case, the cost is averaged across all units, regardless of whether they have lots assigned to them.
-
+</details>
 
 ## 2. **Separate cost for each lot:** 
 Used when products have unique lots and it is important to calculate the cost price of each separately (due to different acquisition prices, regulatory requirements, or other reasons). 
 
  The cost is calculated by taking the value of all available products by lots and averaging it for each lot. If for the same product, there are availabilities without a lot, then the cost for them is calculated by assuming that all are a part of a single, unified lot.
 
-**Example:**
+<details>
+  <summary>Click here so see the <b>Example:</b></summary>
  
 - **Product Y** has two lots: 
      - **Lot 1:** 100 units in stock - 50 units were bought at 8 BGN each, and 50 units were bought at 10 BGN each.
@@ -65,8 +67,9 @@ To calculate the cost for each lot separately:
 
  - Total cost = (50 * 2) + (50 * 4) = 100 BGN + 200 BGN = **300 BGN.**
  - Average cost per unit = 300 BGN / 100 units = **3 BGN** per unit.
-  
+
 Each lot has its own cost calculated separately, and products without a lot are treated as part of a unified cost group.
+</details>
 
 ## 3 **Average, partitioned by Reserved for document:** 
 Used in situations where it is necessary to separate the cost of specific lots related to a given document (e.g., sales order, purchase order, or other). 
@@ -76,9 +79,10 @@ The cost is calculated as follows:
 
 - For the remaining lots **not reserved for any document,** the cost is calculated by treating all of them as part of a single, unified lot and averaging the cost across all these lots.
 
-**Example:**
- 
-- **Product W** has four lots: 
+<details>
+  <summary>Click here so see the <b>Example:</b></summary>
+  
+<br/>- **Product W** has four lots: 
      - **Lot 1:** 10 units in stock at 5 BGN each (Reserved for a sales order).
      - **Lot 2:** 20 units in stock 6 BGN each (Reserved for the same sales order).
      - **Lot 3:** 15 units in stock 7 BGN each (Not reserved for any document).
@@ -100,4 +104,4 @@ To calculate the cost:
   - Total cost = (15 * 7) + (25 * 8) = 105 BGN + 200 BGN = **305 BGN.**
   - Average cost per unit = 305 BGN / 40 units = **7.63 BGN** per unit.
 
-
+</details>
