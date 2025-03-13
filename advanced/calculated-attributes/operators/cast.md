@@ -12,13 +12,15 @@ items: Operators
 | Parameter 1 Name | 	param |
 | Parameter 1 Type | 	any type |
 | Parameter 2 Name | 	type |
-| Parameter 2 Type | const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types +  custom @@name types (e.g., a specific enum)  |
+| Parameter 2 Type | const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .Net types +  custom @@name types (e.g., a specific enum)  |
 | Parameter 3 Name |
 | Parameter 3 Type |
 | Return value | Returns the param converted to the type. |
 
+<br/>**Tip:** If you can change the type using the `CAST` operator, you should typically use the `@CONVERT` operator instead—and vice versa.
 
-**Example:**
+
+<br/>**Example:**
 
 Let's convert the value of the state of a sales order with the type 'enum' to an integer number. 
 
@@ -28,7 +30,6 @@ Converting to an integer allows for comparison between the states (lower -> high
 ```
 OUTPUT: <br> If 'State = Released', the output will be '30'.
 
-> **Tip:** If you can change the type using the `CAST` operator, you should typically use the `CONVERT` operator instead—and vice versa.
 
 #### More examples:
 
