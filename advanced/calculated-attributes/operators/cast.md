@@ -27,7 +27,7 @@ Let's convert the value of the state of a sales order with type 'enum' to an int
 
 Conveting to integer allows for comparison between the states (lower -> higher):
 ```
-10: CONVERT ATTRIB:State CONST:System.Int32      
+10: CAST ATTRIB:State CONST:System.Int32      
 ```
 OUTPUT: <br> If 'State = Released', the output will be '30'.
 
