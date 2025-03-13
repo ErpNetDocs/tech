@@ -20,11 +20,11 @@ items: Operators
 
 **Example:**
 
-Let's convert the value of the state of a sales order with type 'enum' to an integer number. 
+Let's convert the value of the state of a sales order with the type 'enum' to an integer number. 
 
-Conveting to integer allows for comparison between the states (lower -> higher):
+Converting to an integer allows for comparison between the states (lower -> higher):
 ```
-10: CAST ATTRIB:State CONST:System.Int32      
+10: CAST ATTRIB: State  CONST: System.Int32      
 ```
 OUTPUT: <br> If 'State = Released', the output will be '30'.
 
@@ -32,6 +32,7 @@ OUTPUT: <br> If 'State = Released', the output will be '30'.
 
 #### More examples:
 
-- **[Check whether the releasing of the document is first or not](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-for-first-releasing.html)**
-- **[Check if the system type of payment type in the sales order is 'In Cash'](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-system-type-is-in-cash.html)**
+- **[Check whether the releasing of the document is first or not](../examples/check-for-first-releasing.md)**
+- **[Check if the system type of payment type in the sales order is 'In Cash'](../examples/check-if-system-type-is-in-cash.md)**
+- - **[Convert a value of a custom property to a number](../examples/convert-property-to-number.md)**
 
