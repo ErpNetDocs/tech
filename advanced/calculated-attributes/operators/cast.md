@@ -8,7 +8,7 @@ items: Operators
 | Specification | Value |
 | ---- | ----- |
 | Name | CAST |
-| Description | The CAST operator converts a parameter to a specified type. It is commonly used by other operators to ensure parameter values are of the same type, particularly when one of these parameters is a custom @@name type (e.g., a specific enum).  |
+| Description | The CAST operator converts a parameter to a specified type. It is commonly used by other operators to ensure parameter values are of the same type, particularly when the type one of these parameters is a custom @@name type (e.g., a specific enum).  |
 | Parameter 1 Name | 	param |
 | Parameter 1 Type | 	any type |
 | Parameter 2 Name | 	type |
