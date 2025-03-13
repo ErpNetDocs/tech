@@ -338,7 +338,7 @@ references:
   name: J38417 Delete old audit logs
   href: advanced/jobs/J38417.html
 - uid: jobs-J38458
-  name: J38458 Delete old information messages
+  name: J38458 Complete unfinished time entries
   href: advanced/jobs/J38458.html
 - uid: levels
   name: Levels of control for composite products
