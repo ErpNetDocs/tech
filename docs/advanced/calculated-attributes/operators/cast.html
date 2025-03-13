@@ -140,7 +140,7 @@
 <p><strong>Example:</strong></p>
 <p>Let's convert the value of the state of a sales order with type 'enum' to an integer number.</p>
 <p>Conveting to integer allows for comparison between the states (lower -&gt; higher):</p>
-<pre><code>10: CONVERT ATTRIB:State CONST:System.Int32      
+<pre><code>10: CAST ATTRIB:State CONST:System.Int32      
 </code></pre>
 <p>OUTPUT: <br> If 'State = Released', the output will be '30'.</p>
 <div class="NOTE">
