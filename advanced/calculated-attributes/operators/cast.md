@@ -12,7 +12,7 @@ items: Operators
 | Parameter 1 Name | 	param |
 | Parameter 1 Type | 	any type |
 | Parameter 2 Name | 	type |
-| Parameter 2 Type | const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types +  custom @@name types, such as specific enum types.  |
+| Parameter 2 Type | const - 'System.Int32', 'System.String', 'System.Decimal', 'System.Double' and all standard .net types +  custom @@name types (e.g., a specific enum)  |
 | Parameter 3 Name |
 | Parameter 3 Type |
 | Return value | Returns the param converted to the type. |
