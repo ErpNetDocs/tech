@@ -622,7 +622,7 @@
   "advanced/jobs/J38458.html": {
     "href": "advanced/jobs/J38458.html",
     "title": "J38458 Complete unfinished time entries | ERP.net Tech Docs",
-    "keywords": "J38458 Complete unfinished time entries Code J38458 Entity Agile.Projects.TimeEntries Entity Job type name Complete unfinished time entries Parameters - Description The system job completes unfinished time entries whose Date is at least one day old by setting the End Time field to 23:59:00. First to process - Automatically created YES Version Introduced: v.25 To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template."
+    "keywords": "J38458 Complete unfinished time entries Code J38458 Entity Projects.Agile.TimeEntries Entity Job type name Complete unfinished time entries Parameters - Description The system job completes unfinished time entries whose Date is at least one day old by setting the End Time field to 23:59:00. First to process - Automatically created YES Version Introduced: v.25 To learn more about the documentation template and get a short explanation for each table column, see Jobs documentation template."
   },
   "advanced/jobs/index.html": {
     "href": "advanced/jobs/index.html",
