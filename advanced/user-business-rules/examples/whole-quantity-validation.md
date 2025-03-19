@@ -14,7 +14,7 @@ For example, a validation of a sales order lines may be applied with the followi
 
 - **Action** - **[FAIL](https://docs.erp.net/tech/advanced/user-business-rules/action-types/fail.html)** + Parameter1Type = Constant + Parameter1 Value = "You have entered decimal number as a quantity. Please, check the data entered in the sales order lines and try again!"
 
-- **Conditions**: check if the **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/index.html)** from the example in here is equal to 'False'
+- **Conditions**: check if the **[calculated attribute](https://docs.erp.net/tech/advanced/calculated-attributes/examples/check-if-quantity-is-whole-number.html)** from the example in here is equal to 'False'
 
 When this user business rule is activated and you try to release a sales order with the following lines,
 
