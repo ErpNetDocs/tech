@@ -107,7 +107,7 @@
 <tr>
 <td>1</td>
 <td>Track last change</td>
-<td>Stores information for latest modification of the tracked object.</td>
+<td>Stores information for the latest modification of the tracked object.</td>
 </tr>
 <tr>
 <td>2</td>
@@ -132,7 +132,7 @@
 <h3 id="level-0---do-not-track-changes">Level 0 - do not track changes.</h3>
 <p>No information is stored.</p>
 <h3 id="level-1---track-last-change">Level 1 - track last change</h3>
-<p>This is the lightest tracking mode with least storage requirements. Information is stored only for the latest modification, in **@Systems.Core.ExtensibleDataObjects**.</p>
+<p>This is the lightest tracking mode with the least storage requirements. Information is stored only for the latest modification, in **@Systems.Core.ExtensibleDataObjects**.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>An <strong><a href="https://docs.erp.net/tech/advanced/data-objects/edo.html">extensible data object</a></strong> is created and maintained ONLY for the root object of the <strong><a href="https://docs.erp.net/tech/advanced/concepts/aggregates.html">aggregates</a></strong>. <br>
@@ -160,7 +160,7 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <ul>
 <li><strong>User</strong> - the user who initiated the server request.</li>
 <li><strong>Time</strong> (UTC) - server time in UTC showing when the request was executed.</li>
-<li><strong>Application</strong> - the name of the client application which executed the request.</li>
+<li><strong>Application</strong> - the name of the client application that executed the request.</li>
 <li><strong>Server version</strong> - the version of the server by the time the request was executed.</li>
 </ul>
 <ol start="2">
@@ -170,48 +170,48 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <p>The following data is stored:</p>
 <ul>
 <li><strong>Repository name</strong> - the name of the repository containing the object.</li>
-<li><strong>Entity item id</strong> - the Id of the tracked object.</li>
-<li><strong>Change type</strong> - the type of modification: C, U or D for Create/Update/Delete.</li>
-<li><strong>Root object id</strong> - the Id of the EDO for the root object of the aggregates.</li>
+<li><strong>Entity item id</strong> - the ID of the tracked object.</li>
+<li><strong>Change type</strong> - the type of modification: C, U, or D for Create/Update/Delete.</li>
+<li><strong>Root object id</strong> - the ID of the EDO for the root object of the aggregates.</li>
 </ul>
 <h3 id="level-3---track-object--attribute-changes">Level 3 - track object &amp; attribute changes</h3>
-<p>When this level is selected, all data from Level 2 is still stored and maintained.</p>
-<p>But now, data about each attribute (field) change is also kept.</p>
+<p>When this level is selected, all data from Level 2 is still stored and maintained. But now, data about each attribute (field) change is also kept.</p>
+<p>When activated, stores the following data about each attribute change within the entity:</p>
+<ul>
+<li><strong>Attribute name</strong> -The name of the attribute that was changed.</li>
+<li><strong>New value</strong> - A culture-insensitive string representation of the updated value.</li>
+</ul>
+<p><strong>Example:</strong> <code>[Default Customer Credit Limit Base] set to BGN 20000.00</code></p>
+<p>Attribute changes for the record can be viewed through the <strong>Changes History mode</strong> in the ERP.net web client. The option is accessible from the Form Menu for each entity record definition.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This level can consume A LOT of disk space. Use it only when absolutely necessary. <br> Also, make sure to setup some cleanup process (integrated or external).</p>
+<p>This level can consume an increased amount of disk space. Use it only when necessary. <br> Additionally, ensure to set up some cleanup process (integrated or external).</p>
 </div>
-<p><strong>Attribute changes</strong> stores the following data about each attribute change:</p>
+<p>Some attribute changes might not be reflected properly by the system. Since it works at the application level, changes made by direct SQL statements will <strong>not</strong> be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.<br>
+Such an example is the <em>Document No</em> attribute (set by SQL statements) is often recorded as changed by the <strong>2nd</strong> modification of the document.</p>
+<p>Additionally, certain attributes have tracking disabled at the system level. This means that even if attribute tracking is enabled for a table, changes to specific attributes or fields will still not be recorded.<br>
+Such an example is the <em>Last Interaction Time UTC</em> field in Social Groups. This field is designed to capture frequent updates from system processes. Enabling tracking for it would generate excessive load, potentially impacting system performance and stability.</p>
+<p><strong>Attribute changes storage and processing</strong></p>
+<p><strong>Before v24:</strong></p>
 <ul>
-<li><strong>Attribute name</strong> - the name of the changed attribute.</li>
-<li><strong>New value</strong> - the string representation (culture insensitive) of the new value.</li>
+<li>Each attribute change was stored as a separate entry in the <code>Sys_Attribute_Changes</code> table, leading to increased storage usage and performance overhead.</li>
+<li>Record creation and updates were processed <strong>synchronously</strong>, which could slow down operations.</li>
 </ul>
-<p>Some attribute changes might not be reflected properly by the system. Since it works at application level, changes made by direct SQL statements will <strong>not</strong> be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.</p>
-<p>The <em>Document No</em> attribute (set by SQL statements) is often recorded as changed by the <strong>2nd</strong> modification of the document. Therefore, only the <strong>new</strong> values are stored.</p>
-<p>This design was chosen for the following reasons:</p>
+<p><strong>As of v24:</strong></p>
 <ul>
-<li><p>Both old values AND new values are <strong>not</strong> stored to save space.</p>
-</li>
-<li><p>If only old values are stored, the track-changes algorithm can save some space, but performance <strong>will</strong> suffer. Initial object creation doesn't need to store values.</p>
-</li>
+<li>Attribute changes are now stored in the <code>Old_Values_Json</code> field within the <code>Sys_Object_Changes</code> table. To optimize storage, JSON data exceeding 50 characters is compressed.</li>
+<li>Instead of logging changes synchronously, tracking operations are now processed <strong>asynchronously</strong> in the background, reducing performance impact on user operations.</li>
 </ul>
-<p>This was the initial and <strong>abandoned</strong> implementation of the track changes system.</p>
-<p>The process needed to synchronously read the previous database value before each update. This slowed down database transactions - the <strong>'new values only'</strong> approach was better fit to meet performance requirements.</p>
-<ul>
-<li><p>The storage of new values can be performed asynchronously <strong>AFTER</strong> the actual database transaction has completed. In this way, the TC system has minor effect on the speed of every-day OLTP transactions.</p>
-</li>
-<li><p>One drawback of asynchronous saving: upon server crash, track-changes data about the attribute changes might be <strong>lost</strong>. The object change will still be recorded <strong>synchronously</strong> (as part of the transaction).</p>
-</li>
-</ul>
+<p>This resulted in major optimizations: attribute tracking time was reduced by approximately 64%, while storage usage saw a significant drop, with Sys_Attribute_Changes now taking up zero additional space-cutting storage needs by over 50%</p>
 <h3 id="level-4---track-object-attribute--blob-changes">Level 4 - track object, attribute &amp; BLOB changes</h3>
 <p>Same as Level 3, but the values of BLOB attributes are also saved.</p>
-<p>It can severely affect storage requirements and should be used only for small tables and as last-resort measure.</p>
+<p>It can severely affect storage requirements and should be used only for small tables and as a last-resort measure.</p>
 <h2 id="configuring-track-changes">Configuring track changes</h2>
 <p>The track-changes functionality is activated through the <strong>Entities navigator</strong> (Systems.Core.EntitySettings table).</p>
 <p><strong>Steps:</strong></p>
 <ol>
 <li>Create a record in <em>Entity Types</em>, specifying the desired entity.</li>
-<li>In the <em>Track Changes Level</em> field, fill the desired tracking level.</li>
+<li>In the <em>Track Changes Level</em> field, fill in the desired tracking level.</li>
 <li>Save and close.</li>
 <li>Tracking will soon start.</li>
 </ol>
@@ -221,7 +221,7 @@ For each successive update of an object in the aggregate, the data in the EDO is
 <p>If you try to configure a level lower than the default tracking levels, the option will be ignored.</p>
 </div>
 <h3 id="enable-or-disable-attribute-changes-tracking-for-document-entities">Enable or disable attribute changes tracking for document entities</h3>
-<p>Tracking attributes changing history may be useful for invoices and other field-sensitive documents but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.</p>
+<p>Tracking attributes changing history may be useful for invoices and other field-sensitive documents, but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.</p>
 <p>You can define how attribute (field) changes to be tracked for documents of a certain type through the <strong>Track Attribute Changes</strong> field in the document type definition.</p>
 <p>Within the <strong>Track Attribute Changes</strong> field, it is possible to enforce one of the following <strong>rules</strong>:</p>
 <p>•	<strong>Default</strong> - Allows attribute changes for the documents of the particular document type to be tracked. Does not apply if the document is transitional.</p>
