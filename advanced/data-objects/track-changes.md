@@ -14,7 +14,7 @@ Track Changes is a system in @@name which can be used to track changes in а dat
 | Level | Name | Description |
 | -- | ------------------------------- | ---------------------------------------------|
 | 0 | Do not track changes | Do not track any changes for this entity. |
-| 1 | Track last change | Stores information for latest modification of the tracked object. |
+| 1 | Track last change | Stores information for the latest modification of the tracked object. |
 | 2 | Track object changes| All the data of Level 1 <br> + <br> General tracking information about each update of the object. <br> Does not store information about the changes in the attributes. |
 | 3 | Track object & attribute changes |  All the data of Level 2 <br> + <br> Information about the changes in the attributes, excluding BLOB attributes. These are large-size attributes like images, files, etc.|
 | 4 | Track object, attribute & BLOB changes | All the data of Level 3 <br> + <br> Changes in the values of BLOB attributes.                |
@@ -32,7 +32,7 @@ No information is stored.
 
 ### Level 1 - track last change
 
-This is the lightest tracking mode with least storage requirements. Information is stored only for the latest modification, in **@Systems.Core.ExtensibleDataObjects**.
+This is the lightest tracking mode with the least storage requirements. Information is stored only for the latest modification, in **@Systems.Core.ExtensibleDataObjects**.
 
 > [!NOTE] 
 > 
@@ -65,7 +65,7 @@ Each change-set stores the following data:
 
 - **User** - the user who initiated the server request.
 - **Time** (UTC) - server time in UTC showing when the request was executed.
-- **Application** - the name of the client application which executed the request.
+- **Application** - the name of the client application that executed the request.
 - **Server version** - the version of the server by the time the request was executed.
 
 2. **Object changes** stores one row for each modified object. 
@@ -75,9 +75,9 @@ One change-set can contain data about multiple object changes.
 The following data is stored:
 
 - **Repository name** - the name of the repository containing the object.
-- **Entity item id** - the Id of the tracked object.
-- **Change type** - the type of modification: C, U or D for Create/Update/Delete.
-- **Root object id** - the Id of the EDO for the root object of the aggregates.
+- **Entity item id** - the ID of the tracked object.
+- **Change type** - the type of modification: C, U, or D for Create/Update/Delete.
+- **Root object id** - the ID of the EDO for the root object of the aggregates.
 
 ### Level 3 - track object & attribute changes
 
@@ -96,10 +96,11 @@ Attribute changes for the record can be viewed through the **Changes History mod
 > 
 > This level can consume an increased amount of disk space. Use it only when necessary. <br> Additionally, ensure to set up some cleanup process (integrated or external).
 
-Some attribute changes might not be reflected properly by the system. Since it works at the application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design. For example, the *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. 
+Some attribute changes might not be reflected properly by the system. Since it works at the application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.  
+Such an example is the *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. 
 
 Additionally, certain attributes have tracking disabled at the system level. This means that even if attribute tracking is enabled for a table, changes to specific attributes or fields will still not be recorded.  
-One such example is the *Last Interaction Time Utc* field in Social Groups. This field is designed to capture frequent updates from system processes. Enabling tracking for it would generate excessive load, potentially impacting system performance and stability.  
+Such an example is the *Last Interaction Time UTC* field in Social Groups. This field is designed to capture frequent updates from system processes. Enabling tracking for it would generate excessive load, potentially impacting system performance and stability.  
 
 **Attribute changes storage and processing**
 
@@ -111,14 +112,14 @@ One such example is the *Last Interaction Time Utc* field in Social Groups. This
 - Attribute changes are now stored in the `Old_Values_Json` field within the `Sys_Object_Changes` table. To optimize storage, JSON data exceeding 50 characters is compressed.  
 - Instead of logging changes synchronously, tracking operations are now processed **asynchronously** in the background, reducing performance impact on user operations.  
 
-This resulted in major optimizations: attribute tracking time was reduced by approximately 64%, while storage usage saw a significant drop, with Sys_Attribute_Changes now taking up zero additional space—cutting storage needs by over 50%
+This resulted in major optimizations: attribute tracking time was reduced by approximately 64%, while storage usage saw a significant drop, with Sys_Attribute_Changes now taking up zero additional space-cutting storage needs by over 50%
 
 
 ### Level 4 - track object, attribute & BLOB changes
 
 Same as Level 3, but the values of BLOB attributes are also saved. 
 
-It can severely affect storage requirements and should be used only for small tables and as last-resort measure.
+It can severely affect storage requirements and should be used only for small tables and as a last-resort measure.
 
 ## Configuring track changes
 
@@ -127,7 +128,7 @@ The track-changes functionality is activated through the **Entities navigator** 
 **Steps:**
  
 1. Create a record in *Entity Types*, specifying the desired entity.
-2. In the *Track Changes Level* field, fill the desired tracking level.
+2. In the *Track Changes Level* field, fill in the desired tracking level.
 3. Save and close.
 4. Tracking will soon start.
 
@@ -139,7 +140,7 @@ For document entities, mass activation of the *Track Changes* system using the *
 
 ### Enable or disable attribute changes tracking for document entities
 
-Tracking attributes changing history may be useful for invoices and other field-sensitive documents but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.
+Tracking attributes changing history may be useful for invoices and other field-sensitive documents, but may result in unnecessary accumulation of data if not needed. Therefore, a specific configuration can be applied to each document type.
 
 You can define how attribute (field) changes to be tracked for documents of a certain type through the **Track Attribute Changes** field in the document type definition.
 
