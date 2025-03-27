@@ -81,36 +81,38 @@ The following data is stored:
 
 ### Level 3 - track object & attribute changes
 
-When this level is selected, all data from Level 2 is still stored and maintained. 
+When this level is selected, all data from Level 2 is still stored and maintained. But now, data about each attribute (field) change is also kept. 
 
-But now, data about each attribute (field) change is also kept.
+When activated, stores the following data about each attribute change within the entity:
+ 
+- **Attribute name** -The name of the attribute that was changed.
+- **New value** - A culture-insensitive string representation of the updated value.
+
+**Example:** `[Default Customer Credit Limit Base] set to BGN 20000.00`
+
+Attribute changes for the record can be viewed through the **Changes History mode** in the @@name web client. The option is accessible from the Form Menu for each entity record definition.
 
 > [!NOTE] 
 > 
-> This level can consume A LOT of disk space. Use it only when absolutely necessary. <br> Also, make sure to setup some cleanup process (integrated or external).
+> This level can consume an increased amount of disk space. Use it only when necessary. <br> Additionally, ensure to set up some cleanup process (integrated or external).
 
-**Attribute changes** stores the following data about each attribute change:
- 
-- **Attribute name** - the name of the changed attribute.
-- **New value** - the string representation (culture insensitive) of the new value.
+Some attribute changes might not be reflected properly by the system. Since it works at the application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design. For example, the *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. 
 
-Some attribute changes might not be reflected properly by the system. Since it works at application level, changes made by direct SQL statements will **not** be recorded. When a future update occurs, the system will record the changes to the attribute as if they're being made by the next update. This behavior is part of its core design.
+Additionally, certain attributes have tracking disabled at the system level. This means that even if attribute tracking is enabled for a table, changes to specific attributes or fields will still not be recorded.  
+One such example is the *Last Interaction Time Utc* field in Social Groups. This field is designed to capture frequent updates from system processes. Enabling tracking for it would generate excessive load, potentially impacting system performance and stability.  
 
-The *Document No* attribute (set by SQL statements) is often recorded as changed by the **2nd** modification of the document. Therefore, only the **new** values are stored. 
+**Attribute changes storage and processing**
 
-This design was chosen for the following reasons:
+**Before v24:**  
+- Each attribute change was stored as a separate entry in the `Sys_Attribute_Changes` table, leading to increased storage usage and performance overhead.  
+- Record creation and updates were processed **synchronously**, which could slow down operations.
 
-- Both old values AND new values are **not** stored to save space.
+**As of v24:**  
+- Attribute changes are now stored in the `Old_Values_Json` field within the `Sys_Object_Changes` table. To optimize storage, JSON data exceeding 50 characters is compressed.  
+- Instead of logging changes synchronously, tracking operations are now processed **asynchronously** in the background, reducing performance impact on user operations.  
 
-- If only old values are stored, the track-changes algorithm can save some space, but performance **will** suffer. Initial object creation doesn't need to store values. 
- 
-This was the initial and **abandoned** implementation of the track changes system. 
+This resulted in major optimizations: attribute tracking time was reduced by approximately 64%, while storage usage saw a significant drop, with Sys_Attribute_Changes now taking up zero additional space—cutting storage needs by over 50%
 
-The process needed to synchronously read the previous database value before each update. This slowed down database transactions - the **'new values only'** approach was better fit to meet performance requirements.
-
-- The storage of new values can be performed asynchronously **AFTER** the actual database transaction has completed. In this way, the TC system has minor effect on the speed of every-day OLTP transactions.
-
-- One drawback of asynchronous saving: upon server crash, track-changes data about the attribute changes might be **lost**. The object change will still be recorded **synchronously** (as part of the transaction).
 
 ### Level 4 - track object, attribute & BLOB changes
 
