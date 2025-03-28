@@ -61,6 +61,6 @@ Knowing this, you can reach two basic conclusions:
 
 **And third, when you have no choice but to use [FILTER] clauses, you should try to narrow down the list you're returning.** Just apply as many **[WHERE]** clauses as possible to **[SELECT]**. This way, you're filering the list before it's returned to the **[FILTER]** and therefore, it'll contain fewer records, which will lead to a faster calculation.
 
-
+***To optimize the calculated attribute further, you can also use the TOP and ORDERBY operators. TOP returns only the first N elements of the result set, while ORDERBY specifies the column or expression on which the result set is sorted. Using these operators as clauses of the SELECT statement can help to speed up the calculation of your attribute by returning only a subset of the data and organizing it in a way that makes it easier to process.
 
 Overall, **[SELECT]** is a very powerful tool that needs to be used wisely.
