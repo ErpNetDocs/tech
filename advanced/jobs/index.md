@@ -20,14 +20,14 @@ Jobs can be started **automatically** by an execution system, following a predef
 
 > [!NOTE]
 > 
-> Idle jobs are started in non-busy hours, subject to availability of resources.
+> Idle jobs are started in non-busy hours, subject to the availability of resources.
 > A job uses the **on-idle** auto-start schedule only when the *Is Active* and *Run On Idle* options are activated in its definition.
 
-**The jobs execution system works only when the following requirements are met:**
+**The job's execution system works only when the following requirements are met:**
 
 - The time of day is between 22:00 and 05:00.
-- The current server sessions are **fewer** than 5.
-- The last time the job's procedure was completed is **more** than 30 minutes from now.
+- The current server sessions are **fewer** than 5. (this requirement can be manipulated through the /JobsManager/IgnoreSessionsForIdleSchedule config option)
+- The last time the job's procedure was completed is **more** than 30 minutes ago.
 - The procedure is **not** currently working.
 - There are **no** manually started jobs currently running.
 
@@ -47,13 +47,13 @@ This way, its execution begins **immediately**, without the need to wait for the
 
 **There are a few important things to keep in mind when executing a job manually:**
 
-- The same job **can't** be executed more than once simultaneously (e.g. "in parallel").
-- The jobs execution system will **discard** its job's queue if there's a manual job execution running.
+- The same job **can't** be executed more than once simultaneously (e.g., "in parallel").
+- The job execution system will **discard** its job's queue if manual job execution is running.
 - A job execution **won't** start if the *Is Active* option is disabled in its definition.
 
 ## Execution log
 
-Each job execution is logged in **Information Messages**. The log contains information about the starting time, ending time, the processed records and errors that have occurred during the processing.
+Each job execution is logged in **Information Messages**. The log contains information about the starting time, ending time, the processed records, and errors that have occurred during the processing.
 
 **Example:**
 
