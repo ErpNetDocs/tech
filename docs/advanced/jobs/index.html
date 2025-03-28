@@ -98,14 +98,14 @@
 <p>Jobs can be started <strong>automatically</strong> by an execution system, following a predefined schedule.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Idle jobs are started in non-busy hours, subject to availability of resources.
+<p>Idle jobs are started in non-busy hours, subject to the availability of resources.
 A job uses the <strong>on-idle</strong> auto-start schedule only when the <em>Is Active</em> and <em>Run On Idle</em> options are activated in its definition.</p>
 </div>
-<p><strong>The jobs execution system works only when the following requirements are met:</strong></p>
+<p><strong>The job's execution system works only when the following requirements are met:</strong></p>
 <ul>
 <li>The time of day is between 22:00 and 05:00.</li>
-<li>The current server sessions are <strong>fewer</strong> than 5.</li>
-<li>The last time the job's procedure was completed is <strong>more</strong> than 30 minutes from now.</li>
+<li>The current server sessions are <strong>fewer</strong> than 5. (this requirement can be manipulated through the /JobsManager/IgnoreSessionsForIdleSchedule config option)</li>
+<li>The last time the job's procedure was completed is <strong>more</strong> than 30 minutes ago.</li>
 <li>The procedure is <strong>not</strong> currently working.</li>
 <li>There are <strong>no</strong> manually started jobs currently running.</li>
 </ul>
@@ -118,12 +118,12 @@ A job uses the <strong>on-idle</strong> auto-start schedule only when the <em>Is
 <p>This way, its execution begins <strong>immediately</strong>, without the need to wait for the next on-idle iteration.</p>
 <p><strong>There are a few important things to keep in mind when executing a job manually:</strong></p>
 <ul>
-<li>The same job <strong>can't</strong> be executed more than once simultaneously (e.g. &quot;in parallel&quot;).</li>
-<li>The jobs execution system will <strong>discard</strong> its job's queue if there's a manual job execution running.</li>
+<li>The same job <strong>can't</strong> be executed more than once simultaneously (e.g., &quot;in parallel&quot;).</li>
+<li>The job execution system will <strong>discard</strong> its job's queue if manual job execution is running.</li>
 <li>A job execution <strong>won't</strong> start if the <em>Is Active</em> option is disabled in its definition.</li>
 </ul>
 <h2 id="execution-log">Execution log</h2>
-<p>Each job execution is logged in <strong>Information Messages</strong>. The log contains information about the starting time, ending time, the processed records and errors that have occurred during the processing.</p>
+<p>Each job execution is logged in <strong>Information Messages</strong>. The log contains information about the starting time, ending time, the processed records, and errors that have occurred during the processing.</p>
 <p><strong>Example:</strong></p>
 <p>Process: <em>Job J30777 Finish Store Transactions</em></p>
 <p>Message</p>
