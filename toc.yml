@@ -1,10 +1,14 @@
+pdf: true
+pdfFileName: Tech.pdf
+order: 200
+items:
 - name: Concepts
-  href: concepts/
+  href: concepts/toc.yml
 - name: Modules
-  href: modules/
+  href: modules/toc.yml
 - name: Advanced
-  href: advanced/  
+  href: advanced/toc.yml
 - name: Reference
-  href: reference/
-- name: Return to DOCS ⏶
+  href: reference/toc.yml
+- name: Return to DOCS
   href: https://docs.erp.net/

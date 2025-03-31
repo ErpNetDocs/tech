@@ -1,0 +1,38 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [ "toc.yml", "**.md", "**/toc.yml" ],
+        "exclude": [ "docs/**/*.*" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "images/**", "**.svg", "**.png", "favicon.ico" ],
+        "exclude": [ "docs/**/*.*" ]
+      }
+    ],
+    "xref": [
+      "https://erpnetdocs.github.io/model/xrefmap.yml"
+    ],
+    "dest": "docs",
+    "globalMetadata": {
+      "_appTitle": "ERP.net Tech Docs",
+      "_enableSearch": true,
+      "_appFaviconPath": "favicon.ico",
+    },
+    "globalMetadataFiles": [],	
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern",
+      "templates/material"
+    ],
+    "postProcessors": ["ExtractSearchIndex"],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
