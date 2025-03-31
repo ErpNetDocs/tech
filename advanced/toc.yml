@@ -1,5 +1,6 @@
 - name: Overview
   href: index.md
+  topicHref: index.md
 - name: Document flow
   href: document-flow/toc.yml
   topicHref: document-flow/index.md
@@ -20,6 +21,7 @@
   topicHref: string-interpolation/index.md  
 - name: Data objects
   href: data-objects/toc.yml
+  topicHref: data-objects/index.md  
 - name: Concepts
   href: concepts/toc.yml 
   topicHref: concepts/index.md

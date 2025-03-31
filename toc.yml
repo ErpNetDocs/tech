@@ -3,11 +3,15 @@ pdfFileName: Tech.pdf
 items:
 - name: Concepts
   href: concepts/toc.yml
+  topicHref: concepts/index.md
 - name: Modules
   href: modules/toc.yml
+  topicHref: modules/index.md
 - name: Advanced
   href: advanced/toc.yml
+  topicHref: advanced/index.md
 - name: Reference
   href: reference/toc.yml
+  topicHref: reference/index.md
 - name: Return to DOCS
   href: https://docs.erp.net/
