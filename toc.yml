@@ -1,6 +1,5 @@
 pdf: true
 pdfFileName: Tech.pdf
-order: 200
 items:
 - name: Concepts
   href: concepts/toc.yml

@@ -20,7 +20,8 @@
       "_appTitle": "ERP.net Tech Docs",
       "_enableSearch": true,
       "_appFaviconPath": "favicon.ico",
-	  "pdf": false
+	  "pdf": false,
+	  "_disableToc": false
     },
     "globalMetadataFiles": [],	
     "fileMetadataFiles": [],
