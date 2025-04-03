@@ -2,7 +2,7 @@
 
 Count task types are used for warehouse reconciliation.
 
-The reconciliation is performed as an ad hoc (single) operation using the [Reconcile](xref:wms-worker-reconcile) menu of [WMS Worker](xref:wms-worker).
+The reconciliation is performed as an ad hoc (single) operation using the [Reconcile](xref:reconcile-menu) menu of [WMS Worker](xref:wms-worker).
 
 ## Result
 
