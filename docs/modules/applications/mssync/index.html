@@ -87,56 +87,14 @@
         <article data-uid="">
 <h1 id="overview">Overview</h1>
 
-<p>MsSync is a website application designed to synchronize resources between ERP.net and <strong>Office 365</strong>.</p>
-<p>Each synchronization task is referred to as a <strong>job</strong>, allowing resources created in <strong>Office 365</strong> to be automatically reflected in the corresponding module in ERP.net, and the other way around.</p>
-<p>An example of such a job is the <strong><a href="https://docs.erp.net/webclient/introduction/my-apps/calendar.html">Calendar</a></strong>.</p>
+<p>MSSync is a website application designed to synchronize resources between ERP.net and <strong>Office 365</strong>.</p>
+<p>In this documentation, you'll find everything you need to get started and make the most out of MSSync:</p>
+<ul>
+<li><strong><a href="getting-started/index.html">Getting Started</a></strong>: Learn about the app's user interface, how to navigate through the home page, set up MSSync, and configure the service settings.</li>
+<li><strong><a href="getting-started/service.html#connect-to-microsoft-entra-id">Initial MSSync configuration</a></strong>: A mandatory requirement for the first-time setup of MSSync, which must be performed by an admin.</li>
+<li><strong><a href="sync-jobs/index.html">Sync Jobs</a></strong>: Detailed guides on the information, requirements, and specific steps for setting up and managing your sync jobs.</li>
+</ul>
 <p><img src="pictures/Overview_view_nohighlights_01_03.png" alt="picture"></p>
-<h3 id="getting-started">Getting started</h3>
-<p>First, ensure that your organization uses <strong><a href="/advanced/security/authentication/azuread.md">Azure Athentication</a></strong> and that the organization's <strong><a href="/advanced/security/authentication/azuread.md#erpnet-settings">domain</a></strong> is configured in ERP.net.</p>
-<p>Second, a <strong>website</strong> with the type &quot;Microsoft Sync&quot; must be set up in your ERP.net database.</p>
-<p>Third, an ERP.net <strong>admin</strong> needs to log in to MSSync and grant access to your <strong>Microsoft 365</strong> resources using the <strong><a href="service.html">Service</a></strong> menu.</p>
-<p>Finally, <strong>each user</strong> who wants to use synchronization must sign in to MSSync to activate it, following these steps:</p>
-<ol>
-<li><p>Login to the company's <strong>MSSync</strong> website. To access <strong>MSSync</strong>, it’s mandatory to sign in using the <strong>'Sign in with Microsoft'</strong> button with the <strong>Microsoft account</strong> provided by your organization.</p>
-</li>
-<li><p>To establish the link, you will need to <strong>read</strong> and <strong>accept</strong> the permissions MSSync needs to obtain.</p>
-</li>
-</ol>
-<p><img src="pictures/Overview_permission_01_03.png" alt="picture"></p>
-<p>If you use local <strong>ERP</strong> credentials to log in, <strong>MsSync</strong> will still open, but will essentially deny you any kind of access to its resources.</p>
-<p><img src="pictures/Overview_error_01_03.png" alt="picture"></p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>You must log in via an existing <strong>Microsoft account</strong> in order to reference your <strong>Outlook</strong> calendar. Otherwise, <strong>MSSync</strong> would be unable to determine which calendar to link to.</p>
-</div>
-<ol start="3">
-<li>Then select your default enterprise company, location, and time zone and activate the desired synchronizations using the <strong><a href="setup.html">Setup</a></strong> menu.</li>
-</ol>
-<h2 id="main-menu">Main menu</h2>
-<p>The <strong>MSSync</strong> app consists of <strong>three</strong> sections:</p>
-<ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Setup</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Service</a></strong></li>
-</ul>
-<p>In <strong>Home</strong>, you'll find personal profile details, general information about the current <strong>state</strong> of your application, as well as the latest <strong>log data</strong> for your activated sync jobs.</p>
-<p><img src="pictures/Overview_home_cropepd_01_03.png" alt="picture"></p>
-<p>In <strong>Setup</strong>, you can see information about your <strong>enterprise company</strong> - the one that is currently linked to <strong>MSSync</strong>.</p>
-<p>Additionally, you can toggle synchronization for a specific sync job <strong>on</strong> or <strong>off</strong>.</p>
-<p><img src="pictures/Overview_setup_01_03.png" alt="picture"></p>
-<p>The <strong>Service</strong> section is meant for users with administrator access levels. It reveals more technical and sensitive details used in the communication between <strong>MSSync</strong> and <strong>Office365</strong>.</p>
-<p>From here, admins can securely connect their <strong>MSSync</strong> instance to their <strong>Microsoft Entra ID</strong>. This is essential for activating all synchronization-related functionalities.</p>
-<p><img src="pictures/Overview_service_01_03.png" alt="picture"></p>
-<p>For more information about navigating, setting up, and configuring MsSync, see:</p>
-<ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/home.html">Home</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Setup</a></strong></li>
-<li><strong><a href="https://docs.erp.net/tech/modules/applications/mssync/setup.html">Service</a></strong></li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
-</div>
 
 </article>
 

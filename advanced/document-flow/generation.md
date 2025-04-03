@@ -10,7 +10,7 @@ It creates a single target but can often make multiple documents. When many inst
 
 Having just a single document as a source allows for easy document generation. One instance can create multiple and different types of target documents under different conditions and events.
 
-The definition of a document type includes a special sub-entity type called **[workflow routes](xref:Systems.Workflow.Routes)**. 
+The definition of a document type includes a special sub-entity type called **[workflow routes](xref:Systems.Documents.Routes)**. 
 
 These routes specify procedures, conditions and events for the automatic generation of inheriting documents. 
 

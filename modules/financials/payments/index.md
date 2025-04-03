@@ -1,3 +1,3 @@
 # Payments
 
-* **[Advanced amount determination](advance-amount-determination.md)**
+* **[Advanced amount determination](./advance-amounts-determination/index.md)**

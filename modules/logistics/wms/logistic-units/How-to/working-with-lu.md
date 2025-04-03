@@ -2,7 +2,7 @@
 
 ## Using Logistic Units in the Receiving Process
 
-Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an **[Advance Shipping Notice (ASN)](asn.md)**, for example. 
+Using LUs in the receiving process can significantly reduce the amount of time and effort it requires, especially if the the data about the expected Logistic Units contents is exchanged prior the shipment arrival via using an **[Advance Shipping Notice (ASN)](../../logistic-units/asn.md)**, for example. 
 
 Here is what to do depending on whether you have information about the SSCC codes and its prior the shipment or not.
 
@@ -24,7 +24,7 @@ The [P03: GS1 – SSCC barcode parser](/modules/logistics/wms/how-it-works/barco
 
 Once, the content is received, you can decide whether you still want to handle it as a whole Logistic Unit? 
 
-If you do, you can assing your own SSCC code. In this case you need to pack the content using the Pack menu in WMS Worker and choose its “Create logic unit now” button. This will automatically create new LU with the new SSCC code, the scanned contents and appropriate specifications. Then you just need to print and attach new [logistics labels](logistic-labels.md) with the newly assigned SSCC barcode.
+If you do, you can assing your own SSCC code. In this case you need to pack the content using the Pack menu in WMS Worker and choose its “Create logic unit now” button. This will automatically create new LU with the new SSCC code, the scanned contents and appropriate specifications. Then you just need to print and attach new [logistics labels](../../logistic-units/logistic-labels.md) with the newly assigned SSCC barcode.
 
 Alternatively, you use the SSCC code that has been assigned by the supplier. In this case you need to manually create the LU definition into the database, where you need to specify both its SSCC and Contents. Then you still have to Pack its content by using the Pack menu in WMS Worker by selecting the defined LU. This will update the availability with the information that these product are now contained in this LU.
 
@@ -43,7 +43,7 @@ You have completed the dispatching of a Sales Order and now you want to pack its
 
 You can do that by using the Label menu in WMS Worker. With it you can select the completed Sales Order and create new LU’s for its content.
 
-Then you can print [logistics labels](logistic-labels.md) and attach them to each unit.
+Then you can print [logistics labels](../../logistic-units/logistic-labels.md) and attach them to each unit.
 
 
 

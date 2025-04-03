@@ -147,19 +147,11 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
-<p>@@ -34,3 +34,12 @@ OUTPUT:</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The repository of the attribute is <em>Crm.Sales.SalesOrders</em>.</p>
-</div>
-<p>[!NOTE]</p>
-<blockquote>
 <p>It is important to note that if the string being passed to the LEN function is null, it will return an error. Therefore, it is recommended to add an IF &gt; &gt; &gt; operator to check whether the string is null before passing it to the LEN function. This will prevent any errors from occurring and ensure that the function &gt; &gt;
 works as intended.</p>
-</blockquote>
-<p><strong>Example:</strong>
-| 10 |	IIF	EXP	7	CONST	0	EXP	10                  |
+</div>
+<p><strong>Example:</strong></p>
+<p>| 10 |	IIF	EXP	7	CONST	0	EXP	10                  |
 | 20 |  EQUAL	ATTRIB	DocumentNotes	CONST	Null    |
 | 30 |  LEN	ATTRIB	DocumentNotes                 |</p>
 

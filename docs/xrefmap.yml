@@ -22,6 +22,9 @@ references:
 - uid: LU
   name: Logistic Units
   href: modules/logistics/wms/logistic-units/index.html
+- uid: P03
+  name: P03
+  href: modules/logistics/wms/how-it-works/barcode-parsers/p03.html
 - uid: PAB
   name: Projected available balance
   href: modules/logistics/planning/projected-available-balance.html

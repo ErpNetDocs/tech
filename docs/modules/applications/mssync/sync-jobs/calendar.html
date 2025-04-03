@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Calendar | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Calendar | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/mssync/sync-jobs/calendar.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="calendar">Calendar</h1>
+
+<p>The Calendar Sync Job enables the synchronization of calendar events between Microsoft 365 and your ERP.net instance. This feature ensures that all calendar events created or updated in Microsoft 365 are automatically reflected in ERP.net as corresponding activities and vice-versa.</p>
+<h2 id="system-requirements">System requirements</h2>
+<ol>
+<li><strong>Document Type <em>Meeting</em> for Activity Entity</strong></li>
+</ol>
+<p>A document type with the code <strong><em>Meeting</em></strong> must exist for the <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html">Activity entity</a> within ERP.net.</p>
+<p>If this document type does not exist, the MSSync service user must have permissions to create it. This is required when syncing Microsoft 365 calendar events that result in the creation of new activities in ERP.net.</p>
+<ol start="2">
+<li><strong>MSSync service user must be an admin</strong></li>
+</ol>
+<p>When the default activity document type is secured with <code>CanUpdate</code> and/or <code>CanVoid</code> permissions, the service user must be able to grant these permissions to itself.</p>
+<h2 id="per-user-requirements">Per user requirements</h2>
+<ol>
+<li><strong>Valid and enabled mailbox on Microsoft 365 side</strong></li>
+</ol>
+<p>The calendar events are managed by the mailbox, so each user must have a valid and enabled mailbox in Microsoft 365. Only users with an active mailbox can have calendar events synchronized.</p>
+<ol start="2">
+<li><strong>Each user has default enterprise company and location</strong></li>
+</ol>
+<p>This is required when creating new activities in ERP.net. Since an activity is essentially a document, each document requires the <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompany">EnterpriseCompany</a> and <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompanylocation">EnterpriseCompanyLocation</a> properties to be filled.</p>
+<h2 id="initial-sync-first-time-synchronization">Initial sync (first-time synchronization)</h2>
+<ol>
+<li>Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized.</li>
+</ol>
+<p>In other words, MSSync will pull all Microsoft 365 events from today until the next month and create corresponding ERP.net activities.</p>
+<h2 id="considerations-and-specific-scenarios">Considerations and specific scenarios</h2>
+<ul>
+<li>ERP.net activities older than 1 day will not be synchronized.</li>
+<li>When an ERP.net activity is in read-only state (<code>Released</code>, <code>Closed</code>), all updates triggered from Microsoft 365 will fail. This will result in a synchronization conflict, and the Microsoft 365 activity will be marked accordingly.</li>
+<li>Recurring events are not supported.</li>
+<li>When an event is deleted in Microsoft 365, the corresponding ERP.net activity will be voided.</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://docs.erp.net/model/entities/General.Activities.Activities.html">https://docs.erp.net/model/entities/General.Activities.Activities.html</a></li>
+<li><a href="https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0">https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/applications/mssync/sync-jobs/calendar.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -25,5 +25,5 @@ The Power Users group can manage access rights via the **Security panel** (Deskt
 
    Any attempt by users to modify it will result in an **error**, handled by **[business rule R37166](https://docs.erp.net/tech/modules/system/security/system-permissions/manage-access-permissions.html?q=R37166#business-rule-enforcement)**.
 
-   ![pictures](pictures/Error_window_19_12.jpg)
+   ![pictures](./pictures/Error_window_19_12.png)
    

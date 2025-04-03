@@ -8,7 +8,7 @@ The main process in the CRM subsystem is:
 
 > *Activity* → *Opportunity* → *Offer* → *Sales order* → *Invoice order* → *Invoice*
 
-* **[Activity](xref:General.Contacts.Activities)** - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.
+* **[Activity](xref:General.Activities.Activities)** - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.
 * **[Opportunity](xref:Crm.Presales.Deals)** - sales opportunity, with expected revenue and probability. It does not have detail line items.
 * **[Offer](xref:Crm.Presales.Offers)** - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted.
 * **[Sales order](xref:Crm.Sales.SalesOrders)** - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale.

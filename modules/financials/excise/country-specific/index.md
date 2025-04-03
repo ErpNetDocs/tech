@@ -1,3 +1,3 @@
 # Country-specific
 
-- **[Bulgaria](bulgaria.md)**
+- **[Bulgaria](./bulgaria/index.md)**

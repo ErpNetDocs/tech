@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/TFSAgent15/_work/21/s",
+  "source_base_path": "C:/Users/peter/projects/erp/docs/tech",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -3268,10 +3268,53 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/applications/mssync/home.md",
+      "source_relative_path": "modules/applications/mssync/getting-started/home.md",
       "output": {
         ".html": {
-          "relative_path": "modules/applications/mssync/home.html"
+          "relative_path": "modules/applications/mssync/getting-started/home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/mssync/getting-started/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/getting-started/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/mssync/getting-started/service.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/getting-started/service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/mssync/getting-started/setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/getting-started/setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/applications/mssync/getting-started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/getting-started/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/applications/mssync/getting-started/toc.json"
         }
       },
       "version": ""
@@ -3588,20 +3631,43 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/applications/mssync/service.md",
+      "source_relative_path": "modules/applications/mssync/sync-jobs/calendar.md",
       "output": {
         ".html": {
-          "relative_path": "modules/applications/mssync/service.html"
+          "relative_path": "modules/applications/mssync/sync-jobs/calendar.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/applications/mssync/setup.md",
+      "source_relative_path": "modules/applications/mssync/sync-jobs/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/applications/mssync/setup.html"
+          "relative_path": "modules/applications/mssync/sync-jobs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/applications/mssync/sync-jobs/mail.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/sync-jobs/mail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/applications/mssync/sync-jobs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/applications/mssync/sync-jobs/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/applications/mssync/sync-jobs/toc.json"
         }
       },
       "version": ""
@@ -16262,6 +16328,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/system/security/groups/pictures/Error_window_18_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/groups/pictures/Error_window_19_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/groups/pictures/Error_window_19_12.png"
         }
       },
       "version": ""

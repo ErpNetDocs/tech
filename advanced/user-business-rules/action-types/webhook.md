@@ -91,7 +91,7 @@ Content-Length: 153
 >
 > Consequently, if your external application performs a READ operation, there's a chance that you're reading an outdated record— i.e., one that has not yet been physically committed.
 >
-> **The same applies when you CREATE and CHANGE the state of a document simultaneously, i.e., at once, especially when utilizing a [document generation procedure](../../document-flow/generation.html)**.
+> **The same applies when you CREATE and CHANGE the state of a document simultaneously, i.e., at once, especially when utilizing a [document generation procedure](../../document-flow/generation.md)**.
 >
 > A common approach is for your external application to implement an initial delay upon receiving the webhook, ensuring sufficient time for the entire process (i.e. the @@name transaction) to complete before proceeding with its subsequent actions.
 

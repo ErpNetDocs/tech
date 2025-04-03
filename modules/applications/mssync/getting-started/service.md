@@ -6,31 +6,31 @@ Here, they can request permissions for accessing **Microsoft 365** resources fro
 
 These permissions are essential for enabling synchronization between the company's **Microsoft 365** account and the @@name Web Client. 
 
- ![picture](pictures/Service_view_01_03.png)
+ ![picture](../pictures/Service_view_01_03.png)
 
 ### State 
 
 In the **Service** section, you'll find the current **state** of the MsSync app.
 
-There are also **logs** detailing all state changes, similar to those found in the **[Setup](https://docs.erp.net/tech/modules/applications/mssync/setup.html)** section. 
+There are also **logs** detailing all state changes, similar to those found in the **[Setup](setup.md)** section. 
  
 ### Information panel 
 
 This panel stores details about the **Operation mode** of the app, and reveals the **Client Id**, and **Tenant Id**, which play a role in establishing the two-way synchronization process.
 
-![picture](pictures/Service_information_01_03.png)
+![picture](../pictures/Service_information_01_03.png)
  
 ## Connect to Microsoft Entra ID 
 
 This button sends a request on behalf of ERP.net to access resources already available in your **Microsoft 365** account. 
 
-![picture](pictures/Service_connect_01_03.png)
+![picture](../pictures/Service_connect_01_03.png)
 
 This permission not only enables modifications to existing resources but also allows the inclusion of new ones. 
 
 Any changes made to resources in @@name are mirrored in **Microsoft 365**, and vice versa. 
 
-![picture](pictures/Service_permission_01_03.png) 
+![picture](../pictures/Service_permission_01_03.png) 
 
 ## Give permissions
 
@@ -38,7 +38,7 @@ The "Give Permissions" ensures that the MsSync app has all the necessary permiss
 
 This process is essential for activating all available features and ensuring a seamless user experience.
 
-![picture](pictures/service-give-permissions.png)
+![picture](../pictures/service-give-permissions.png)
 
 --
 
