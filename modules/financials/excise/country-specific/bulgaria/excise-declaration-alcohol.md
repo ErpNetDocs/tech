@@ -1,34 +1,46 @@
-# Excise Declaration
+# Акзцизна декларация за алкохол и алкохолни изделия
 
-The excise declaration is the document that reports a certain period to the customs authorities. 
+Акцизната декларация е документът, с който се отчита определен период пред митническите органи.
 
 https://docs.erp.net/model/entities/Finance.Excise.ExciseDeclarations.html
 
-### 1. Entering Excise Declaration
 
-The following basic fields are entered:
 
-**DocumentDate** - Date of declaration preparation.
+### 1. Първоначални настройки
 
-**DocumentType** - Type of document.
+1.1. Дефинира се отделен тип документ за декларацията за алкохол
+1.2. Дефинират се следните потребителски характеристики за типа документ и те са задължителни:
 
-**DocumentNo** - Serial number of the document.
+- @Exc_TypeOfDeclaration	Тип на акцизна декларация	Стойност по подразбиране: EXC002BG
+- @Exc_KindOfDeclaration	Вид на акцизна декларация	Стойност по подразбиране: EXC00
 
-**TaxWarehouse** - Tax warehouse for which the report is made.
+### 1. Въвеждане на Акцизна Декларация
 
-**ReportingPerson** - The person submitting the declaration.
+Въвеждат се следните основни полета:
 
-**FromDate** - Start date of the period for which the declaration is made.
+**DocumentDate** – Дата на съставяне на декларацията.
 
-**ToDate** - End date of the period for which the declaration is made.
+**DocumentType** – Вид на документа.
 
-### 2. Export of Excise Declaration
+**DocumentNo** – Пореден номер на документа.
 
-The export of the XML file is made from the web panel in the excise document with the following address:
+**TaxWarehouse** – Данъчен склад, за който се изготвя справката.
+
+**ReportingPerson** – Лице, подаващо декларацията.
+
+**FromDate** – Начална дата на периода, за който се подава декларацията.
+
+**ToDate** – Крайна дата на периода, за който се подава декларацията.
+
+------
+
+### 2. Експорт на Акцизна Декларация
+
+Експортът на XML файл се извършва от уеб панела в акцизния документ на следния адрес:
 
 **{$rooturl}/legal/customs/excdecl/{Id}**
 
-Where **/legal** is the relative URL of the Legal BG website.
+Където **/legal** е относителният URL на Legal BG уебсайта.
 
-An active Legal BG website is required to export e-ADD files.
+За експортиране на e-ADD файлове е необходимо наличието на активен Legal BG уебсайт.
 
