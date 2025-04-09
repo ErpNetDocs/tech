@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Акцизен документ за Електричество | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Акцизен документ за Електричество | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/country-specific/bulgaria/excise-document-electricity.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="акцизен-документ-за-електричество">Акцизен документ за Електричество</h1>
+
+<p>За отчитане на приходите и разходите в данъчния склад се използва формата Акцизен данъчен документ.</p>
+<p><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html">https://docs.erp.net/model/entities/Finance.Excise.ExciseAdministrativeDocuments.html</a></p>
+<p>Тук ще опишем как се въвевеждат най често използваните документи за отчитане към митничиските власти.</p>
+<h3 id="1-първоначални-настройки">1. Първоначални настройки</h3>
+<p>1.1. В Категория акцизни продукти в Алгоритъм за изчисление се указва Количество</p>
+<p>1.2. Трябва да се дефинира данъчен склад, дори и регистрацията да не е Данъчен склад. В данъчния склад се записват основните дефиниции на регистрираното лице:</p>
+<ul>
+<li><p><strong>Акцизен номер на търговеца</strong></p>
+</li>
+<li><p><strong>Акцизен номер на данъчния склад</strong> - попълва се същия, като на търговеца, ако регистрацията не е за данъчен скрлад</p>
+</li>
+<li><p><strong>Тип на лицето</strong> - това на типа на регистрацията на търговеца.</p>
+</li>
+<li><p><strong>Митническо управление</strong> - това е кода на митническото управление</p>
+</li>
+</ul>
+<p>1.3. Дефитиране на Тип акцизен продукт</p>
+<ul>
+<li><strong>Акцизен продукт</strong> - Акцизен продукт спорен номенкатурата. Най често това е E12</li>
+<li><strong>Мерна единица</strong> – Акцизна мерна единиза от номенклатурата на митниците.  Мерна единица с код KWH.</li>
+<li><strong>Хармонизиран стоков код</strong> – Код по КН от номенклатурата на митниците.</li>
+<li><strong>Вместимост</strong> - оставя се празно</li>
+<li><strong>Търговско наименование</strong> - незадължително.</li>
+</ul>
+<h3 id="2-изготвяне-на-e-add">2. Изготвяне на e-ADD</h3>
+<h5 id="21-данни-в-шапката-на-акцизен-документ">2.1. Данни в шапката на Акцизен документ</h5>
+<ul>
+<li><p><strong>AdministrativeReferenceCode</strong> - Референтен код, който се връща от митниците, когато документът се изнася до тях, или референтен код в получени документи - UCN. Попълва се с колекция на документа след като сме получили този номер след експорта.</p>
+</li>
+<li><p><strong>TaxWarehouse</strong> - Нашият лицензиран Данъчен склад, за което докладваме на митническите органи.</p>
+</li>
+<li><p><strong>Direction = Issue.</strong>  Посоката на движение на стоките. Определя дали стоките влизат или излизат от Данъчния склад.</p>
+</li>
+<li><p><strong>AccrueExciseDuty = True.</strong>  Поле за отметка, което указва, че митническите задължения се начисляват при изписване на стоките от Данъчния склад.</p>
+</li>
+<li><p><strong>IsDeferredSubmission</strong> - Означава дали движението е започнало на хартиен административен документ.</p>
+</li>
+<li><p><strong>OtherParty</strong> - Партито на собствената фирма</p>
+</li>
+<li><p><strong>DeliveryParty</strong> - Празно</p>
+</li>
+<li><p><strong>TransportationCarrier</strong> - Празно</p>
+</li>
+<li><p><strong>TransportationVehicle</strong> - Празно</p>
+</li>
+<li><p><strong>ReportingPerson</strong> - Това е лицет, подаващо документа.</p>
+</li>
+<li><p>**@Exc_Purpose** - Предназначениe на E-ADD. Номенклатура CL200</p>
+</li>
+</ul>
+<br>
+<hr>
+<p><strong>2.2. Данни в линиите на Акцизен документ</strong></p>
+<ul>
+<li><strong>Product</strong> - Продуктът, който изписваме от данъчния склад. Копира се от складовия документ.</li>
+<li><strong>Quantity</strong> - Количество в мерна единица от складовия документ. Копира се от генериращия складов документ.</li>
+<li><strong>QuantityUnit</strong> - Мерна единица от складовия документ. Например брой бутилки, кашони и други. Може да се избира в логистичните документи според необходимостта.</li>
+<li><strong>QuantityBase</strong> - Кобичество в Базова мерна единица. Основната мерна единица в която се отчитат наличностите в склада. Задава се в дефиницията на продукта. Изчислява се автоматично.</li>
+<li><strong>ExciseQuantity</strong> - Количество в Акцизната мерна единица. Изчислява се автоматично.</li>
+<li><strong>ExciseQuantityUnit</strong> - Акцизна мерна единица. Това е мерната единица, в която се отчитат акцизните продукти пред митническите власти. Определя се от дължавата и зе задава в Тип акцизен продукт.</li>
+<li><strong>MeasuringTransaction</strong> - Транзакция за вход или изход на продукт, измерена със специализирано измервателно устройство за цели на акцизното облагане. Зарежда се автоматично при генериране на партидата в складовата разписка.</li>
+<li><strong>ExciseProduct</strong> - Кодът на Акцизния продукт, дефиниран от данъчните и митническите органи. Той е зададен в типовете на акцизните продукти, които са част от дефиницията на продукта. Зарежда се автоматично при избор на продукта, но може да бъде променен ръчно.</li>
+<li><strong>ExcisePurposeCode</strong> - Предназначението определя различните цели, признати от органите за определяне на ставката на акциза. Задължително.</li>
+<li><strong>ExciseAmountBase</strong> - Основата, върху която се изчислява ставката на акциза. Автоматично се изчислява чрез алгоритъм, дефиниран в категориите на акцизните продукти. Категориите на акцизните продукти са част от дефиницията на акцизния продукт.</li>
+<li><strong>ExciseDutyRate</strong> - Справка към конкретната ставка в таблицата за акцизни ставки ExciseDutyRates, която се определя въз основа на избраните Акцизни Продукти, Предназначение и Акцизни мерни единици.</li>
+<li><strong>ExciseDutyRateValue</strong> - Стойността на определената ставка на акциза ExciseDutyRate.</li>
+<li><strong>ExciseAmount</strong> - Изчислената стойност на акциза въз основа на ExciseAmountBase и ExciseDutyRateValue.</li>
+<li>**@Exc_Payment** - Код на  плащането. Задължително.</li>
+</ul>
+<br>
+<p><strong>1.4. Parties</strong>
+Полета в избраните субекти - Собствена фирма, Данъчен склад:</p>
+<ul>
+<li><p><strong>ContactMechanisms.PostalCode</strong> - Пощенски код.</p>
+</li>
+<li><p>**@Exc_Country** – Държава</p>
+</li>
+<li><p>**@Exc_Region** – Район</p>
+</li>
+<li><p>**@Exc_Municipality** – Община</p>
+</li>
+<li><p>**@Exc_City** – Град</p>
+</li>
+<li><p>**@Exc_District** – Квартал</p>
+</li>
+<li><p>**@Exc_Street** – Улица, Номер</p>
+</li>
+</ul>
+<p><strong>Субектът на данъчния склад е Складът с най малък Номер на субект измежду складовете в този данъчен склад.</strong>
+Тоест задължително трябва да се направи склад, въпреки, че електричеството не се складира.</p>
+<p><strong>1.7. Експорт на e-ADD файл</strong></p>
+<p>​	Експорта на e-ADD файл се прави от WEB панел в Акцизния документ със следния адрес:</p>
+<p>​	<strong>{$rooturl}/legal/customs/exciseduties/{Id}</strong></p>
+<p>​	Където /legal e относителният URL на сайта Legal BG.</p>
+<p>​	Необходимо е да има активен Legal BG сайт за да може да се прави експорт на e-ADD файлове.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/excise/country-specific/bulgaria/excise-document-electricity.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

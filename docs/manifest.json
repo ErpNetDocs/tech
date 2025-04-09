@@ -5216,6 +5216,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/pos/configure-pos.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pos/configure-pos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/pos/fiscal-receipt-template.md",
       "output": {
         ".html": {
@@ -7554,10 +7564,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-declaration-electricity.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-declaration-electricity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.md",
       "output": {
         ".html": {
           "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-alcohol.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-electricity.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/excise/country-specific/bulgaria/excise-document-electricity.html"
         }
       },
       "version": ""

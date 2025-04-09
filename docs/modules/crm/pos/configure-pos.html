@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pos/configure-pos.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h3 id="настройки-за-работа-с-пос-модула">Настройки за работа с ПОС модула</h3>
+<p>За да работи коректно POS модула са необходими първончални настройки.</p>
+<ol>
+<li><p>Дефиниране на POS Location</p>
+<p>ПОС локацията е дефиниция, която определя даден Enterpise Company Location, като ПОС обект.  Трябва предварително да е дефиниран самия Enterpise Company Location.
+След дефиниране на POS Location към нея дефинират POS Operators и POS Terminals</p>
+</li>
+<li><p>Дефиниране на POS Terminals</p>
+<p>Във всяка локация можем да дефинираме един и или повече POS Terminals.
+The POS Terminal е мястото, където се регстрира продажбата и където се дефинират различните POS Devices, които се използват там. Например фискални устрайства, платежни терминали, везни и  други.</p>
+<p>Едно от POS Devices може да се укаже по подразбиране и то се зарежда при създаване на нова продажба на този термнал.</p>
+</li>
+<li><p>Дефиниране на POS Devices</p>
+<p>POS устройствата се дефинират за конкретен POS Terminal.</p>
+<p>​</p>
+<ol>
+<li>В собствените фирми, които трябва да се работи с EnterpriseOne POS е необходимо да се укаже „Приложимо законодателство“ = „България“</li>
+</ol>
+<p><img src="https://support.erp.net/hc/article_attachments/360003164800/mceclip0.png" alt="mceclip0.png"></p>
+<ol>
+<li>Необходимо е за всеки Филиал, който е търговски обект да се дефинира съответна ПОС Локация.</li>
+</ol>
+<p><img src="https://support.erp.net/hc/article_attachments/360003252419/mceclip1.png" alt="mceclip1.png"></p>
+<p>Веднъж зададена ПОС локацията не може да се изтрие или променя. Може само да се деактивира.</p>
+<ol>
+<li>Необходимо е да се дефинират ПОС роли – например Управител и Магазинер.</li>
+<li>За всяка ПОС локация се дефинират ПОС терминали и ПОС оператори</li>
+</ol>
+<p>В дефиницията на ПОС операторите трябва да се укаже потребител, който задължително е свързан с лице.</p>
+<p>По подразбиране номерацията на ПОС операторите започва от 0001 за  всяка локация. Ако е необходимо обаче да се достъпват ФУ от други  локации то номерата на операторите трябва да се направят уникални в  рамките на собствената фирма.</p>
+<ol>
+<li>За терминалите, където е необходимо се дефинират Фискални устройства</li>
+</ol>
+<p><img src="https://support.erp.net/hc/article_attachments/360003164880/mceclip2.png" alt="mceclip2.png"></p>
+<ul>
+<li>Тип устройство: Фискален принтер</li>
+<li>Регистрационен номер: Регистрационен номер на ФУ – с главни букви, тъй като някой устройства изискват точно главни букви.</li>
+<li>Протокол за връзка: FP</li>
+<li>Електронният адрес на ФУ се задава във формат: „http://Address:8001/printers/Printer Id“</li>
+<li>Самата библиотека може да се свали от:</li>
+</ul>
+<p><a href="https://github.com/erpnet/ErpNet.FP">https://github.com/erpnet/ErpNet.FP</a></p>
+<ol>
+<li>За всяко фискално устройство трябва да се дефинира една ПОС поредица – 7 цифров номер от който започва УНП – Например 0000001.</li>
+</ol>
+<p><img src="https://support.erp.net/hc/article_attachments/360003164900/mceclip3.png" alt="mceclip3.png"></p>
+<ol>
+<li>В дефинициите на типовете продукти трябва да се укаже данъчна група.</li>
+</ol>
+<p>Ако не е указана по подразбиране се взима данъчна група 2.</p>
+<p><img src="https://support.erp.net/hc/article_attachments/360003164920/mceclip4.png" alt="mceclip4.png"></p>
+<p>Съответствието с групите във фискалните устройства в България е:</p>
+<p>Група А – Група 1</p>
+<p>Група Б – Група 2</p>
+<p>Група В – Група 3</p>
+<p>Група С – Група 4</p>
+<ol>
+<li>В начините на плащане които изискват печат на ФУ трябва да се отбележи „Изисква фискален бон“ и „Системен начин на плащане“</li>
+</ol>
+<p><img src="https://support.erp.net/hc/article_attachments/360003252439/mceclip5.png" alt="mceclip5.png"></p>
+<p>В момента от еднократните начини на плащане за печат на ФУ се поддържат В брой, Чрез карта и С Чек</p>
+<p>Настройката е еднократна и не подлежи на промяна в последствие.</p>
+<ol>
+<li><p>В типа документ за връщане, в настройки за продажби да се отбележи  &quot;Разрешени посоки&quot; = &quot;Връщане на продажба&quot;. Това е критерият по който се разпознава дали една продажба е връщане или не е.</p>
+</li>
+<li><p>За справките за НАП трябва да се направят следните настройки:</p>
+</li>
+</ol>
+<p>- Да настрои ID сайт</p>
+<p>- Да се настрои Legal_BG сайт</p>
+<p>- Да се създаде външен потребител в ID сайта – създава се през интерфейса на сайта.</p>
+<p>- Да се дадат права на този потребител до Системни права / Достъп до справките в Legal_BG</p>
+<p>- Да се дадат права на този потребител до собствената фирма</p>
+<p>- За справките вътре в системата трябва да се създаде друг вътрешен  потребител, който да има съответните права - най добре пълни до всички  модули, без право за редакция на документи и без да е администратор.</p>
+<ol>
+<li>Необходимо е да се инсталира „EnterpriseOne POS“.</li>
+<li>Необходимо е базата да има лиценз за работа с EnterpriseOne POS</li>
+<li>Ако ще се печати от форма Продажба, трябва всички документи в потока да се генерират пуснати, защото след печат програмата завършва потока.</li>
+<li>Необходимо е в потока генерациите на Нареждане за фактуриране от  продажба и Счетоводна статия от складовата разписка да се дефинират като Следващ документ, за да останат пуснати при завършване на потока. Това  ще позволи да се направи корекция на себестойност на склада и създаване  на фактури в последствие. Съответно генерацията на счетоводна статия  трябва да се случва на Завършен статус за да се преосчетоводи при  корекция.</li>
+</ol>
+<p>​</p>
+</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/pos/configure-pos.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
