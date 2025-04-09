@@ -38,14 +38,21 @@ For example, "Елена" (in Cyrillic) would be transliterated as "Elena" (in L
 When users enter data, they enter it using their current language setting.
 If the user does not enter the latin translation, the system automatically generates one, based on transliteration.
 
-## The role of the Default language of the instance
+## Default Language Configuration
+The default language is fundamental to the system's operation from day one. It serves as the base language from which all translations are derived and to which they are returned. Once the default language is set, it is strongly recommended not to change it.
 
-The base's language is crucial for its being and functioning, from day ONE. It is called "Default language" and this is the language from and to which all translations are executed. Once set it is strictly not advisable to be changed.
-The switch is a configuration option called "Default language"  - _Defines the default language of multilanguage fields. For example: en - English, bg - Bulgarian._
-Can be found in:
- - Dektop  - Settings/Tools/Setup/Configurations
- - WEB client - System/Configurations/Setup/Config
+This setting is configured via the “Default language” option, which defines the default language for multilingual fields. For example:
+en – English
+bg – Bulgarian
+
+_You can find the configuration here:_
+- Desktop Client: Settings > Tools > Setup > Configurations
+- Web Client: System > Configurations > Setup > Config
+
 > [!WARNING]
 > 
-> Due to the way Multilanguage strings work - they do not keep track of the previous language - if you change the Default language of the instance at some point, all translations will be lost, all current strings become invalid.<br>
+> Due to the architecture of multilingual strings, the system does not keep track of previous language values. If you change the default language after it has been initially set:
+> - All existing translations will be lost
+> - Current string values will become invalid
+> - The instance will require complete retranslation of all fields.
 
