@@ -1,3 +1,3 @@
 # Country-specific
 
-- **[Bulgaria](./bulgaria/index.md)**
+[!list folder="." depth=0 style="bullet" limit=100]
