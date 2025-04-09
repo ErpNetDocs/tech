@@ -1701,8 +1701,8 @@
   },
   "modules/financials/excise/country-specific/bulgaria/index.html": {
     "href": "modules/financials/excise/country-specific/bulgaria/index.html",
-    "title": "| ERP.net Tech Docs",
-    "summary": "Excise Initial Setup Excise document for alcohol Export of e-ADD Excise declaration for alcohol Export of Excise Declaration"
+    "title": "Bulgaria | ERP.net Tech Docs",
+    "summary": "Bulgaria Excise stamp operation Export of Excise Declaration file Export of e-ADD file BG1015 Initial Setup Акзцизна декларация за алкохол и алкохолни изделия Акцизен документ за Алкохол и алкохолни напитки Акцизен документ за Електричество Акцизна декларация за електричество"
   },
   "modules/financials/excise/country-specific/bulgaria/setup.html": {
     "href": "modules/financials/excise/country-specific/bulgaria/setup.html",
@@ -1717,7 +1717,7 @@
   "modules/financials/excise/country-specific/index.html": {
     "href": "modules/financials/excise/country-specific/index.html",
     "title": "Country-specific | ERP.net Tech Docs",
-    "summary": "Country-specific Bulgaria"
+    "summary": "Country-specific Bulgaria Excise stamp operation Export of Excise Declaration file Export of e-ADD file BG1015 Initial Setup Акзцизна декларация за алкохол и алкохолни изделия Акцизен документ за Алкохол и алкохолни напитки Акцизен документ за Електричество Акцизна декларация за електричество"
   },
   "modules/financials/excise/definitions/excise-categories.html": {
     "href": "modules/financials/excise/definitions/excise-categories.html",
