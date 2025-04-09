@@ -2,9 +2,13 @@
   href: setup.md 
 - name: Excise Document for Alcohol
   href: excise-document-alcohol.md
+- name: Excise Document for Electricity
+  href: excise-declaration-electricity.md
 - name: Export of e-ADD
   href: excise-administrative-document-e-add-export.md
 - name: Excise Declaration for Alcohol
   href: excise-declaration-alcohol.md
+- name: Excise Declaration for Electricity
+  href: excise-declaration-electricity.md
 - name: Export of Excise Declaration
   href: еxcise-declaration-export.md
