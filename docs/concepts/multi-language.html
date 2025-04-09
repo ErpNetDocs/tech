@@ -128,6 +128,25 @@ This is particularly useful for names of people, companies, and addresses, allow
 <p>For example, &quot;Елена&quot; (in Cyrillic) would be transliterated as &quot;Elena&quot; (in Latin) and vice versa.</p>
 <p>When users enter data, they enter it using their current language setting.
 If the user does not enter the latin translation, the system automatically generates one, based on transliteration.</p>
+<h2 id="default-language-configuration">Default Language Configuration</h2>
+<p>The default language is fundamental to the system's operation from day one. It serves as the base language from which all translations are derived and to which they are returned. Once the default language is set, it is strongly recommended not to change it.</p>
+<p>This setting is configured via the “Default language” option, which defines the default language for multilingual fields. For example:
+en – English
+bg – Bulgarian</p>
+<p><em>You can find the configuration here:</em></p>
+<ul>
+<li>Desktop Client: Settings &gt; Tools &gt; Setup &gt; Configurations</li>
+<li>Web Client: System &gt; Configurations &gt; Setup &gt; Config</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Due to the architecture of multilingual strings, the system does not keep track of previous language values. If you change the default language after it has been initially set:</p>
+<ul>
+<li>All existing translations will be lost</li>
+<li>Current string values will become invalid</li>
+<li>The instance will require complete retranslation of all fields.</li>
+</ul>
+</div>
 
 </article>
 
