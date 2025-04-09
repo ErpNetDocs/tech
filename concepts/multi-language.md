@@ -45,7 +45,7 @@ This setting is configured via the “Default language” option, which defines 
 en – English
 bg – Bulgarian
 
-_You can find the configuration here:_
+You can find the configuration here:
 - Desktop Client: Settings > Tools > Setup > Configurations
 - Web Client: System > Configurations > Setup > Config
 
