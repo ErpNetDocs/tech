@@ -37,3 +37,15 @@ For example, "Елена" (in Cyrillic) would be transliterated as "Elena" (in L
 
 When users enter data, they enter it using their current language setting.
 If the user does not enter the latin translation, the system automatically generates one, based on transliteration.
+
+## The role of the Default language of the instance
+
+The base's language is crucial for its being and functioning, from day ONE. It is called "Default language" and this is the language from and to which all translations are executed. Once set it is strictly not advisable to be changed.
+The switch is a configuration option called "Default language"  - _Defines the default language of multilanguage fields. For example: en - English, bg - Bulgarian._
+Can be found in:
+ - Dektop  - Settings/Tools/Setup/Configurations
+ - WEB client - System/Configurations/Setup/Config
+> [!WARNING]
+> 
+> Due to the way Multilanguage strings work - they do not keep track of the previous language - if you change the Default language of the instance at some point, all translations will be lost, all current strings become invalid.<br>
+
