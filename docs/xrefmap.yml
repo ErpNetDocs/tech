@@ -343,6 +343,9 @@ references:
 - uid: jobs-J38458
   name: J38458 Complete unfinished time entries
   href: advanced/jobs/J38458.html
+- uid: jobs-J38662
+  name: J38662 Calculate Historical Reporting Currency Amounts
+  href: advanced/jobs/J38662.html
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
