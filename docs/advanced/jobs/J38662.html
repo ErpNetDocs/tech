@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>J38662 Calculate Historical Reporting Currency Amounts | ERP.net Tech Docs </title>
+      <title>J38662 Calculate historical Reporting currency amounts | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="J38662 Calculate Historical Reporting Currency Amounts | ERP.net Tech Docs ">
+      <meta name="title" content="J38662 Calculate historical Reporting currency amounts | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,7 +85,7 @@
         </div>
 
         <article data-uid="jobs-J38662">
-<h1 id="j38662-calculate-historical-reporting-currency-amounts">J38662 Calculate Historical Reporting Currency Amounts</h1>
+<h1 id="j38662-calculate-historical-reporting-currency-amounts">J38662 Calculate historical Reporting currency amounts</h1>
 
 <table>
 <thead>
@@ -101,7 +101,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Job type name</td>
-<td>Calculate Historical Reporting Currency Amounts</td>
+<td>Calculate historical reporting currency amounts</td>
 </tr>
 <tr>
 <td style="text-align: left;">Parameters</td>
@@ -109,7 +109,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
-<td><em><strong>Calculations Performed:</strong></em><br><strong>ReportingCurrencyDebit = DebitBC * ReportingCurrencyRate<br>ReportingCurrencyCredit = CreditBC * ReportingCurrencyRate<br></strong><br><em><strong>Execution Logic:</strong></em><br>Processes only documents whose date is:<br>Earlier than the <strong>ToDate</strong><br><br>If <strong>LastProcessedDate</strong> has a value → processes documents with a date greater than <strong>LastProcessedDate</strong><br>If <strong>LastProcessedDate</strong> is empty:<br>If <strong>FromDate</strong> has a value → processing starts from the <strong>FromDate</strong><br>If <strong>FromDate</strong> is also empty → processing starts from the oldest document in the database<br><br>The calculated values are stored in the fields:<br><br><strong>ReportingCurrencyDebit</strong><br><br><strong>ReportingCurrencyCredit</strong><br><br>Upon successful execution, the job updates the <strong>LastProcessedDate</strong> with the last processed document date.<br><br>If <strong>ToDate</strong> is empty, the job does not make any changes.</td>
+<td><em><strong>Calculations Performed:</strong></em><br><strong>ReportingCurrencyDebit = DebitBC * ReportingCurrencyRate<br>ReportingCurrencyCredit = CreditBC * ReportingCurrencyRate<br></strong><br><em><strong>Execution Logic:</strong></em><br>Processes only documents whose date is:<br>Earlier than the <strong>ToDate</strong><br><br>If <strong>LastProcessedDate</strong> has a value → processes documents with a date greater than <strong>LastProcessedDate</strong><br>If <strong>LastProcessedDate</strong> is empty:<br>If <strong>FromDate</strong> has a value → processing starts from the <strong>FromDate</strong><br>If <strong>FromDate</strong> is also empty → processing starts from the oldest document in the database<br><br>The calculated values are stored in the fields:<br><br><strong>ReportingCurrencyDebit</strong><br><strong>ReportingCurrencyCredit</strong><br><br>Upon successful execution, the job updates the <strong>LastProcessedDate</strong> with the last processed document date.<br><br>If <strong>ToDate</strong> is empty, the job does not make any changes.</td>
 </tr>
 <tr>
 <td style="text-align: left;">First to process</td>
