@@ -379,3 +379,10 @@ If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configur
 -	b.The user sets it manually.<br>
 -	c.The key is introduced in version: - 24 SP10<br>
 
+
+
+## 68. /Finance.Accounting/RCDate_EC{EnterpriseCompany.Id}
+
+- a.Action: Defines the parameter **LastProcessedDate**. **EnterpriseCompany.Id** is the ID of the enterprise company. The value is the **LastProcessedDate** parameter for the job type **J38662** **Calculate Historical Reporting Currency Amounts**
+- b.Set automatically by the Job **J38662**.
+
