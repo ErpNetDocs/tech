@@ -1568,6 +1568,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J38722.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J38722.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/jobs/index.md",
       "output": {
         ".html": {

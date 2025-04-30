@@ -346,6 +346,9 @@ references:
 - uid: jobs-J38662
   name: J38662 Calculate historical Reporting currency amounts
   href: advanced/jobs/J38662.html
+- uid: jobs-J38722
+  name: J38722 Complete old store orders
+  href: advanced/jobs/J38722.html
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
