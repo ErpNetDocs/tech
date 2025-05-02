@@ -128,7 +128,6 @@ In this scenario, if the notification is bound to a data object, it will be open
 <th>Group</th>
 <th>Business rule</th>
 <th>Description</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -137,182 +136,156 @@ In this scenario, if the notification is bound to a data object, it will be open
 <td>Document</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33718.html">R33718</a> Document</strong>- Notify All Implicit Followers</td>
 <td>If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_REPLY</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33428.html">R33428</a> SocialComment</strong>- Notify User Comment Replied</td>
 <td>There was a reply to your post or comment.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_NEW_POST</td>
 <td>Social</td>
 <td>-</td>
 <td>New post in a group, in which you're a member.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_MENTION</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R32943.html">R32943</a> SocialComment</strong>- Notify The Mentioned User</td>
 <td>You're mentioned in a post or comment.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_REACTION</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33427.html">R33427</a> SocialReaction</strong>- Notify User Comment Reaction</td>
 <td>There was a reaction to your post or comment.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_NEW_COMMUNITY_USER</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33153.html">R33153</a> Security Users</strong>- Notify Admins On Community User Creation</td>
 <td>New external (community) user '{Login}' is created.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_GROUP_MEMBER_ADDED</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R37141.html">R37141</a> Social Group</strong>- Notify Group Members Changed</td>
 <td>You were added to the group '{Group.Name}'.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_GROUP_MEMBER_REMOVED</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R37141.html">R37141</a> Social Group</strong>- Notify Group Members Changed</td>
 <td>You were removed from the group '{Group.Name}'.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_GROUP_MEMBERSHIP_ADDED</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R37141.html">R38542</a> Social Group</strong>- Notify the New Member upon adding him to a group</td>
 <td>You were added to the group '{Group.Name}'.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_GROUP_MEMBERSHIP_REMOVED</td>
 <td>Social</td>
-<td>-</td>
-<td>*Social Group**- Notify Member upon removing him from a group</td>
-<td>You were removed from the group '{Group.Name}'.</td>
+<td>*Social Group**- Notify Member upon removing him from a group - You were removed from the group '{Group.Name}'.</td>
+<td></td>
 </tr>
 <tr>
 <td>NT_WM_QTY_BELOW_MIN</td>
 <td>WMS</td>
 <td>-</td>
 <td>In <a class="xref" href="../../../logistics/wms/index.html">WMS</a>, when the qty in a tracked bin falls below the minimum.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_SOC_NEW_COMMENT</td>
 <td>Social</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R33417.html">R33417</a> SocialComment</strong>- Notify All Object Followers</td>
 <td>New comment to an object you are following.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_ALL_UPDATE</td>
 <td>All Entities</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R34361.html">R34361</a> All Entities</strong> - Notify All Object Followers Upon Update</td>
 <td>Create notification for all followers of each updated object.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_ACT_REMINDER</td>
 <td>Activity Reminders</td>
 <td>-</td>
 <td>Activity reminder, within the next 15 minutes at the latest.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_TODO_REMINDER</td>
 <td>Todo Reminders</td>
 <td>-</td>
 <td>Todo task reminder, within the next 15 minutes at the latest.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_DOC_ASSIGNMENT</td>
 <td>Document</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35922.html">R35922</a> Document</strong> - Notify Assigned To User Upon Assignment</td>
 <td>Notify user when a document has been assigned to them.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_DOC_STATE_ASSIGN</td>
 <td>Document</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35927.html">R35927</a> Document</strong> - Notify Assigned To User For State Change</td>
 <td>Notify the assigned user when the document state is changed.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_DOC_UPDATE_ASSIGN</td>
 <td>Document</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35940.html">R35940</a> Document</strong> - Notify Assigned To User For Update</td>
 <td>Notify the assigned user when the document is edited.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_TODO_ASSIGNMENT</td>
 <td>To Do</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35962.html">R35962</a> Task</strong> - Notify Assigned To User Upon Assignment</td>
 <td>Notify the assigned user when the To Do has been assigned to them.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_TODO_UPDATE_ASSIGN</td>
 <td>To Do</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35951.html">R35951</a> Task</strong> - Notify Assigned To User For Update</td>
 <td>Notify the assigned user when the To Do is edited.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_LEAD_ASSIGNMENT</td>
 <td>Lead</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35980.html">R35980</a> Lead</strong> - Notify Assigned To Sales Person Upon Assignment</td>
 <td>Notify the assigned sales person's user when the Lead has been assigned to them.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_LEAD_UPDATE_ASSIGN</td>
 <td>Lead</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R35958.html">R35958</a> Lead</strong> - Notify Assigned To Sales Person For Update</td>
 <td>Notify the assigned sales person's user when the Lead is edited.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_CASE_ASSIGNMENT</td>
 <td>Case</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R38379.html">R38379</a> Case</strong> - Notify Assigned To User On Assignment</td>
 <td>Notify the assigned user when the Case has been assigned to them.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_CASE_UPDATE_ASSIGN</td>
 <td>Case</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R38389.html">R38389</a> Case</strong> - Notify Assigned To User For Update</td>
 <td>Notify the assigned user when the Case is edited.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_ACTPARTICIPANTS_ASSIGN</td>
 <td>Activity</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R36471.html">R36471</a> Activity</strong> - Notify Activity Participants Upon Assignment</td>
 <td>Notify users when they are assigned as participants in the Activity.</td>
-<td></td>
 </tr>
 <tr>
 <td>NT_COMPILATION_COMPLETION</td>
 <td>Compilation</td>
 <td><strong><a href="https://docs.erp.net/model/business-rules/R36563.html">R36563</a> Compilation</strong> - Notify On Completion</td>
 <td>Notify the user who initiated the compilation when the compilation is finished.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
