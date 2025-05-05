@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Parameters</td>
-<td><strong>EnterpriseCompany</strong><br>Used for retrieving the exchange rate and the start date. <br><br><strong>ReportingCurrency</strong><br><br>Retrieved from EnterpriseCompany.ReportingCurrency.<br><br><strong>FromDate</strong> (Optional, default is NULL)<br>The starting date for processing. It is set within the task. If left empty, the processing begins from the oldest available documents.<br><br><strong>ToDate</strong><br>Retrieved from EnterpriseCompany.ReportingCurrencyStartDate. If empty, no calculations are performed.<br><br><strong>ReportingCurrencyRate</strong><br>Retrieved from EnterpriseCompany.ReportingCurrencyRate.<br><br><strong>LastProcessedDate</strong><br>The last date up to which calculations have been completed. The value is retrieved and stored from <strong>/Finance.Accounting/RCDate_EC{EnterpriseCompany.Id}</strong>.</td>
+<td><strong>EnterpriseCompany</strong><br>Used for retrieving the exchange rate and the start date. <br><br><strong>ReportingCurrency</strong><br><br>Retrieved from EnterpriseCompany.ReportingCurrency.<br><br><strong>FromDate</strong> (Optional, default is NULL)<br>The starting date for processing. It is set within the task. If left empty, the processing begins from the oldest available documents.<br><br><strong>ToDate</strong><br>Retrieved from EnterpriseCompany.ReportingCurrencyStartDate. If empty, no calculations are performed.<br><br><strong>ReportingCurrencyRate</strong><br>Retrieved from EnterpriseCompany.ReportingCurrencyRate.<br><br><strong>LastProcessedDate</strong><br>The last date up to which calculations have been completed. The value is retrieved and stored from EnterpriseCompany.ReportingCurrencyProcessedDate.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Description</td>
@@ -125,8 +125,6 @@
 </tr>
 </tbody>
 </table>
-<p>*<strong>/Finance.Accounting/RCDate_EC{EnterpriseCompany.Id}</strong>  has different value for each   <strong>EnterpriseCompany</strong></p>
-<p>*To learn more about the <strong>/Finance.Accounting/RCDate_EC{EnterpriseCompany.Id}</strong> key, see key №68 in <a href="../../reference/config-options-reference.html">Config options</a>.</p>
 <p>To learn more about the documentation template and get a short explanation for each table column, <br> see <a class="xref" href="template.html">Jobs documentation template</a>.</p>
 
 </article>
