@@ -265,6 +265,56 @@
 The language can be specified at the end of the format specifier like FORMAT_LANGUAGE.
 For example: VD_EN, VDI_EN, D_EN where _EN specifies that the english translation of the Description will be returned.</li>
 </ul>
+<h3 id="quantity-and-amount">Quantity and Amount</h3>
+<p>The following custom format specifiers are supported for quantity and amount values.</p>
+<h4 id="quantity">Quantity</h4>
+<p>Supported formats are:</p>
+<ul>
+<li><p><code>Q</code> – The default format: <code>{Value:#,##0.000} {Unit}</code><br>
+Returns:<br>
+<code>12.3456 ('Q')</code> → <code>12.346 kg</code></p>
+</li>
+<li><p><code>UV</code> – Unit first, then value: <code>{Unit} {Value:#,##0.000}</code><br>
+Returns:<br>
+<code>12.3456 ('UV')</code> → <code>kg 12.346</code></p>
+</li>
+<li><p><code>VU</code> – Value first, then unit: <code>{Value:#,##0.000} {Unit}</code><br>
+Returns:<br>
+<code>12.3456 ('VU')</code> → <code>12.346 kg</code></p>
+</li>
+<li><p><code>V</code> – Value only: <code>{Value:#,##0.000}</code><br>
+Returns:<br>
+<code>12.3456 ('V')</code> → <code>12.346</code></p>
+</li>
+<li><p><em>Any number format</em> – Applies the specified number format to the value only: <code>{Value:format}</code><br>
+Returns:<br>
+<code>12.3456 ('N1')</code> → <code>12.3</code></p>
+</li>
+</ul>
+<h4 id="amount">Amount</h4>
+<p>Supported formats are:</p>
+<ul>
+<li><p><code>A</code> – The default format: <code>{Currency} {Value:#,##0.00}</code><br>
+Returns:<br>
+<code>1234.5 USD ('A')</code> → <code>USD 1,234.50</code></p>
+</li>
+<li><p><code>CV</code> – Currency first: <code>{Currency} {Value:N2}</code><br>
+Returns:<br>
+<code>1234.5 USD ('CV')</code> → <code>USD 1,234.50</code></p>
+</li>
+<li><p><code>VC</code> – Value first: <code>{Value:N2} {Currency}</code><br>
+Returns:<br>
+<code>1234.5 USD ('VC')</code> → <code>1,234.50 USD</code></p>
+</li>
+<li><p><code>V</code> – Value only: <code>{Value:N2}</code><br>
+Returns:<br>
+<code>1234.5 ('V')</code> → <code>1,234.50</code></p>
+</li>
+<li><p><em>Any number format</em> – Applies the specified number format to the value only: <code>{Value:format}</code><br>
+Returns:<br>
+<code>1234.5 ('C')</code> → <code>$1,234.50</code></p>
+</li>
+</ul>
 
 </article>
 
