@@ -224,4 +224,56 @@ Returns:
 
 - Language specifier as <\_Lang> suffix - Custom property value also support language specifier for the multilanguage Description.
   The language can be specified at the end of the format specifier like FORMAT_LANGUAGE.
-  For example: VD_EN, VDI_EN, D_EN where _EN specifies that the english translation of the Description will be returned. 
+  For example: VD_EN, VDI_EN, D_EN where _EN specifies that the english translation of the Description will be returned.
+
+### Quantity and Amount
+
+The following custom format specifiers are supported for quantity and amount values.
+
+#### Quantity
+
+Supported formats are:
+
+- `Q` – The default format: `{Value:#,##0.000} {Unit}`  
+  Returns:  
+  `12.3456 ('Q')` → `12.346 kg`
+
+- `UV` – Unit first, then value: `{Unit} {Value:#,##0.000}`  
+  Returns:  
+  `12.3456 ('UV')` → `kg 12.346`
+
+- `VU` – Value first, then unit: `{Value:#,##0.000} {Unit}`  
+  Returns:  
+  `12.3456 ('VU')` → `12.346 kg`
+
+- `V` – Value only: `{Value:#,##0.000}`  
+  Returns:  
+  `12.3456 ('V')` → `12.346`
+
+- *Any number format* – Applies the specified number format to the value only: `{Value:format}`  
+  Returns:  
+  `12.3456 ('N1')` → `12.3`
+
+#### Amount
+
+Supported formats are:
+
+- `A` – The default format: `{Currency} {Value:#,##0.00}`  
+  Returns:  
+  `1234.5 USD ('A')` → `USD 1,234.50`
+
+- `CV` – Currency first: `{Currency} {Value:N2}`  
+  Returns:  
+  `1234.5 USD ('CV')` → `USD 1,234.50`
+
+- `VC` – Value first: `{Value:N2} {Currency}`  
+  Returns:  
+  `1234.5 USD ('VC')` → `1,234.50 USD`
+
+- `V` – Value only: `{Value:N2}`  
+  Returns:  
+  `1234.5 ('V')` → `1,234.50`
+
+- *Any number format* – Applies the specified number format to the value only: `{Value:format}`  
+  Returns:  
+  `1234.5 ('C')` → `$1,234.50`
