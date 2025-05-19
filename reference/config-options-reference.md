@@ -317,12 +317,12 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
   When the key has value "1" the warning message will be displayed and then data will be loaded.
 - b.The user sets it manually
 
-## 59. AI/Assistant/DebugMode
+## 59. /AI/Assistant/DebugMode
 - a.Action: When this key has a value of '1', it determines whether an AI assistant will operate in debug mode.
 - b.The user sets it manually
 - c.The key is introduced in version: - 24
 
-## 60. AI/Assistant/AdditionalInstructions
+## 60. /AI/Assistant/AdditionalInstructions
 - a.Action: Additional instructions, passed to the AI assistant.
 - b.The user sets it manually
 - c.The key is introduced in version: - 24
@@ -379,5 +379,7 @@ If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configur
 -	b.The user sets it manually.<br>
 -	c.The key is introduced in version: - 24 SP10<br>
 
-
-
+## 68. /AI/Chat/ContextDepth
+- a.Action: Context depth is the number of previous comments that will be included in the prompt. Defaults to `100`.
+- b.The user sets it manually
+- c.The key is introduced in version: - 25
