@@ -107,6 +107,16 @@
 <li><strong>Each user has default enterprise company and location</strong></li>
 </ol>
 <p>This is required when creating new activities in ERP.net. Since an activity is essentially a document, each document requires the <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompany">EnterpriseCompany</a> and <a href="https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompanylocation">EnterpriseCompanyLocation</a> properties to be filled.</p>
+<ol start="3">
+<li><strong>Each user must enable their own synchronization</strong></li>
+</ol>
+<p>Each user is responsible for enabling their own synchronization setting.<br>
+For example:</p>
+<ul>
+<li>User1 creates an activity and includes User2 as a participant.</li>
+<li>The activity will only appear in Outlook if User1 has synchronization enabled.</li>
+<li>The same applies in reverse.</li>
+</ul>
 <h2 id="initial-sync-first-time-synchronization">Initial sync (first-time synchronization)</h2>
 <ol>
 <li>Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized.</li>
