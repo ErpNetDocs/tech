@@ -30,6 +30,15 @@ The calendar events are managed by the mailbox, so each user must have a valid a
 
 This is required when creating new activities in @@name. Since an activity is essentially a document, each document requires the [EnterpriseCompany](https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompany) and [EnterpriseCompanyLocation](https://docs.erp.net/model/entities/General.Activities.Activities.html#enterprisecompanylocation) properties to be filled.
 
+3. **Each user must enable their own synchronization**
+
+Each user is responsible for enabling their own synchronization setting.  
+For example:  
+- User1 creates an activity and includes User2 as a participant.  
+- The activity will only appear in Outlook if User1 has synchronization enabled.  
+- The same applies in reverse.
+  
+
 ## Initial sync (first-time synchronization)
 
 1. Only remote events (from Microsoft 365) occurring from today until one month later will be synchronized.
