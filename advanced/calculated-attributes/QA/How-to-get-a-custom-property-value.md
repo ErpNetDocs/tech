@@ -7,11 +7,11 @@ items: CalculatedAttributesQA
 This article explains how to extract either the **value** or the **description** of a custom property in calculated attributes. Depending on your needs (e.g., display purposes, filtering in `WHERE` clauses, or other), you can choose the appropriate method described below.
 
 
-## Getting the Value of a vustom property
+## Getting the Value of a custom property
 
 There are two methods to retrieve only the **value** of a custom property:
 
-### Method 1: Using @FORMATSTRING
+### Method 1: Using FORMATSTRING
 
 This method is ideal for display purposes or simple outputs.
 
@@ -27,7 +27,7 @@ If 'Property1 = Value1: Description1', the output will be 'Value1'.
 
 **Note:** This method may not be usable in WHERE clauses within a SELECT statement due to type compatibility. 
 
-### Method 2: Using @CAST
+### Method 2: Using CAST
 
 For use in WHERE clauses or type-sensitive operations, the value should be explicitly cast to the appropriate type.
 ```
