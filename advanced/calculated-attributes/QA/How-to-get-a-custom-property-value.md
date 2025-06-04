@@ -23,7 +23,7 @@ FORMATSTRING ATTRIB: @Property1 CONST: V
 - `V` – is the format specifier for description.
 
 OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Value1'.
+<br/>If 'Property1 = Value1: Description1', the output will be 'Value1'.
 
 **Note:** This method may not be usable in WHERE clauses within a SELECT statement due to type compatibility. 
 
@@ -37,7 +37,7 @@ CAST ATTRIB: @Property1 CONST: System.String
 - Casts the custom property value to a `System.String` type for safe usage in filters and logical expressions.
 
 OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Value1'.
+<br/>If 'Property1 = Value1: Description1', the output will be 'Value1'.
 
 ## Getting the Description of a custom property
 
@@ -49,7 +49,7 @@ FORMATSTRING ATTRIB @Property1 CONST:D
 - `D` – is the format specifier for description.
 
 OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Description1'.
+<br/>If 'Property1 = Value1: Description1', the output will be 'Description1'.
 
 **Note:** This is currently the only supported method to retrieve the description of a custom property. It may not be usable in WHERE clauses within a SELECT statement due to type compatibility. In this case, you can use a comparison by the value of the property instead of the description. 
 
