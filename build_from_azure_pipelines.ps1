@@ -28,7 +28,13 @@ if ($lastexitcode -eq 1) {
 }
 
 # Silently abort any in-progress rebase (no-op if there isn’t one)
-git rebase --abort 2>$null
+try
+{
+    git rebase --abort 2>$null
+} catch
+{
+    # Write-Host "Caught: no rebase was in progress. Moving on..."
+}
 
 Write-Host "Getting Latest Changes"
 git checkout master
