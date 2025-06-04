@@ -2,7 +2,7 @@
 items: CalculatedAttributesQA
 ---
 
-# How to get only the value or the description of a custom property
+# How to get only the value or only the description of a custom property
 
 This article explains how to extract either the **value** or the **description** of a custom property in calculated attributes. Depending on your needs (e.g., display purposes, filtering in `WHERE` clauses, or other), you can choose the appropriate method described below.
 
