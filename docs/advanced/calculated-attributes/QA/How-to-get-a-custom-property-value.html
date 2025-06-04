@@ -88,9 +88,9 @@
 <h1 id="how-to-get-only-the-value-or-only-the-description-of-a-custom-property">How to get only the value or only the description of a custom property</h1>
 
 <p>This article explains how to extract either the <strong>value</strong> or the <strong>description</strong> of a custom property in calculated attributes. Depending on your needs (e.g., display purposes, filtering in <code>WHERE</code> clauses, or other), you can choose the appropriate method described below.</p>
-<h2 id="getting-the-value-of-a-vustom-property">Getting the Value of a vustom property</h2>
+<h2 id="getting-the-value-of-a-custom-property">Getting the Value of a custom property</h2>
 <p>There are two methods to retrieve only the <strong>value</strong> of a custom property:</p>
-<h3 id="method-1-using-">Method 1: Using @FORMATSTRING</h3>
+<h3 id="method-1-using-formatstring">Method 1: Using FORMATSTRING</h3>
 <p>This method is ideal for display purposes or simple outputs.</p>
 <pre><code>FORMATSTRING ATTRIB: @Property1 CONST: V
 </code></pre>
@@ -99,9 +99,9 @@
 <li><code>V</code> – is the format specifier for description.</li>
 </ul>
 <p>OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
+<br>If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
 <p><strong>Note:</strong> This method may not be usable in WHERE clauses within a SELECT statement due to type compatibility.</p>
-<h3 id="method-2-using-">Method 2: Using @CAST</h3>
+<h3 id="method-2-using-cast">Method 2: Using CAST</h3>
 <p>For use in WHERE clauses or type-sensitive operations, the value should be explicitly cast to the appropriate type.</p>
 <pre><code>CAST ATTRIB: @Property1 CONST: System.String
 </code></pre>
@@ -109,7 +109,7 @@ If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
 <li>Casts the custom property value to a <code>System.String</code> type for safe usage in filters and logical expressions.</li>
 </ul>
 <p>OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
+<br>If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
 <h2 id="getting-the-description-of-a-custom-property">Getting the Description of a custom property</h2>
 <p>To get only the <strong>description</strong> of a custom property, use:</p>
 <pre><code>FORMATSTRING ATTRIB @Property1 CONST:D
@@ -118,7 +118,7 @@ If 'Property1 = Value1: Description1', the output will be 'Value1'.</p>
 <li><code>D</code> – is the format specifier for description.</li>
 </ul>
 <p>OUTPUT:
-If 'Property1 = Value1: Description1', the output will be 'Description1'.</p>
+<br>If 'Property1 = Value1: Description1', the output will be 'Description1'.</p>
 <p><strong>Note:</strong> This is currently the only supported method to retrieve the description of a custom property. It may not be usable in WHERE clauses within a SELECT statement due to type compatibility. In this case, you can use a comparison by the value of the property instead of the description.</p>
 <h2 id="useful-links">Useful Links</h2>
 <ul>
