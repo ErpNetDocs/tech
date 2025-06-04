@@ -27,12 +27,18 @@ if ($lastexitcode -eq 1) {
     git remote add ssh $remote
 }
 
+# Silently abort any in-progress rebase (no-op if there isn’t one)
+git rebase --abort 2>$null
+
 Write-Host "Getting Latest Changes"
 git checkout master
 git pull --rebase
 
 Write-Host "Building docfx"
 Invoke-Expression "$docfx build"
+
+# Rebase again in case there was a push during the docfx build.
+git pull --rebase
 
 Write-Host "Upload Changes to Github"
 git add -A
