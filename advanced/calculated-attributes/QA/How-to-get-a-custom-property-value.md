@@ -55,8 +55,8 @@ If 'Property1 = Value1: Description1', the output will be 'Description1'.
 
 ## Useful Links
 
-- [FORMATSTRING operator](../advanced/calculated-attributes/operators/formatstring.md)
-- [Format specifiers](../advanced/string-interpolation/format-specifiers.md)
-- [CAST operator](../advanced/calculated-attributes/operators/cast.md)
-- [Convert пroperty to нumber еxample](../advanced/calculated-attributes/examples/convert-property-to-number.md)
-- [How to check if a custom property has value](../advanced/calculated-attributes/QA/How-to-check-if-a-custom-property-has-value.md)
+- [FORMATSTRING operator](../operators/formatstring.md)
+- [Format specifiers](../../string-interpolation/format-specifiers.md)
+- [CAST operator](../operators/cast.md)
+- [Convert property to number еxample](../examples/convert-property-to-number.md)
+- [How to check if a custom property has value](../QA/How-to-check-if-a-custom-property-has-value.md)
