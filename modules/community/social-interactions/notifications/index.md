@@ -47,8 +47,6 @@ Also, most of the notifications are created automatically via business rules whe
 | NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComment**- Notify The Mentioned User | You're mentioned in a post or comment. |
 | NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User Comment Reaction | There was a reaction to your post or comment. |
 | NT_NEW_COMMUNITY_USER | Social | **[R33153](https://docs.erp.net/model/business-rules/R33153.html) Security Users**- Notify Admins On Community User Creation | New external (community) user '{Login}' is created.|
-| NT_SOC_GROUP_MEMBER_ADDED | Social | **[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Notify Group Members Changed | You were added to the group '{Group.Name}'.|
-| NT_SOC_GROUP_MEMBER_REMOVED | Social | **[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Notify Group Members Changed | You were removed from the group '{Group.Name}'.|
 | NT_SOC_GROUP_MEMBERSHIP_ADDED | Social | **[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Create comment in the chat upon adding a member to a group | You were added to the group '{Group.Name}'.|
 | NT_SOC_GROUP_MEMBERSHIP_REMOVED | Social |**[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Create comment in the chat upon removing a member from a group | You were removed from the group '{Group.Name}'.|
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
