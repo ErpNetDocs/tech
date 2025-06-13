@@ -4,6 +4,8 @@
   href: calculate-standardpriceperlot.md
 - name: Check if a value of a field is changed in the adjustment document
   href: check-if-field-is-changed-in-adjustment.md
+- name: Check if an entity record has attached files
+  href: check-if-entity-has-attached-files.md
 - name: Check if the current user has authorization
   href: check-if-user-has-authorization.md
 - name: Check if the quantity is a whole number
