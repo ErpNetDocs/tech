@@ -12,7 +12,7 @@
   href: How-to-determine-the-party-type-of-a-party.md
 - name: How to get attribute value from a list?
   href: How-to-get-attribute-value-from-list.md
-- name: How to get a custom property value?
+- name: How to get only the value or only the description of a custom property?
   href: How-to-get-a-custom-property-value.md
 - name: How to get a specific field of a parent document?
   href: How-to-get-specific-field-of-a-parent-document.md
