@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Examples | ERP.net Tech Docs </title>
+      <title>Check if an entity record has attached files | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Examples | ERP.net Tech Docs ">
+      <meta name="title" content="Check if an entity record has attached files | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-entity-has-attached-files.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,32 +85,46 @@
         </div>
 
         <article data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="check-if-an-entity-record-has-attached-files">Check if an entity record has attached files</h1>
 
+<p>This example demonstrates how to create a calculated attribute that checks whether any files are attached to a specific record in the system — such as a document (e.g., Sales Order, Invoice), a definition record (e.g., Product definition, Lot definition), or other.</p>
+<p>The result is a boolean value – <code>1</code> if there is at least one file attached, and <code>0</code> otherwise.</p>
+<h2 id="use-case">Use Case</h2>
+<p>Sometimes it's necessary to visually indicate in the UI or trigger business logic based on whether an entity has associated files (e.g., documents, images, contracts). This calculated attribute can be used in views, reports, or workflows to enable such logic.</p>
+<h2 id="logic-overview">Logic Overview</h2>
+<p>The attribute performs the following operations:</p>
+<ol>
+<li>Selects the <code>Files</code> child collection of the extensible entity.</li>
+<li>Filters the files to match the current entity’s <code>Id</code> against the <code>EntityItemId</code>.</li>
+<li>Counts the filtered records.</li>
+<li>Compares the count to 1 or more.</li>
+<li>Returns <code>1</code> if there is at least one file, otherwise returns <code>0</code>.</li>
+</ol>
+<h2 id="expression">Expression</h2>
+<pre><code>10 IIF EXP 20 CONST 1 CONST 0
+20 GTE EXP 30 CONST 1
+30 COUNT EXP 40
+40 GETOBJVALUE EXP 50 CHILD Files
+50 FIRST EXP 60
+60 SELECT REPO Systems.Core.ExtensibleDataObjects EXP 70
+70 WHERE EXP 80
+80 EQUAL ATTRIB EntityItemId EXP 90
+90 GETOBJVALUE INPUT 10 ATTRIB Id
+
+</code></pre>
+<h2 id="explanation">Explanation</h2>
 <ul>
-<li><a href="calculate-standardpriceperlot.html">Calculate standard price per lot based on ingredients and operations in a recipe</a></li>
-<li><a href="check-if-quantity-is-whole-number.html">Check if a quantity is a whole number</a></li>
-<li><a href="check-if-user-has-authorization.html">Check if a user has authorization</a></li>
-<li><a href="check-if-field-is-changed-in-adjustment.html">Check if a value of a field is changed in an adjustment document</a></li>
-<li><a href="check-if-entity-has-attached-files.html">Check if an entity record has attached files</a></li>
-<li><a href="check-if-system-type-is-in-cash.html">Check if the system type of a payment type in a sales order is 'In cash'</a></li>
-<li><a href="check-for-first-releasing.html">Check whether the releasing of a document is first or not</a></li>
-<li><a href="compare-unit-and-standard-unit-price.html">Compare unit price and standard unit price</a></li>
-<li><a href="convert-property-to-number.html">Convert a value of a custom property to a number</a></li>
-<li><a href="format-property-date.html">Format date type custom property</a></li>
-<li><a href="get-custom-property-from-parent-offer-line.html">Get a value of a custom property in sales order lines from the parent offer line</a></li>
-<li><a href="get-atp.html">Get available to promise (ATP) quantity</a></li>
-<li><a href="get-current-availability-of-product.html">Get current availability of a product</a></li>
-<li><a href="get-value-and-description-of-referent-object.html">Get value and description of referent object</a></li>
-<li><a href="sales-amounts-last-30-days.html">Sales amounts of a customer for the last 30 days</a></li>
-<li><a href="day-from-document-date.html">Specific day from document date</a></li>
-<li><a href="total-quantity-and-scrap-in-recipe-ingredients.html">Total quantity and scrap quantity in recipe ingredients</a></li>
+<li><code>GETOBJVALUE INPUT 10 ATTRIB Id</code>: gets the current entity's ID.</li>
+<li><code>SELECT ... WHERE ...</code>: filters files in <code>Systems.Core.ExtensibleDataObjects</code> where <code>EntityItemId</code> equals the entity's ID.</li>
+<li><code>COUNT</code>: counts the matching files.</li>
+<li><code>GTE ... CONST 1</code>: checks if the count is greater than or equal to 1.</li>
+<li><code>IIF</code>: returns 1 if the condition is true, otherwise 0.</li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/check-if-entity-has-attached-files.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

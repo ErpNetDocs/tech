@@ -175,6 +175,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/check-if-entity-has-attached-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/check-if-entity-has-attached-files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/check-if-field-is-changed-in-adjustment.md",
       "output": {
         ".html": {
