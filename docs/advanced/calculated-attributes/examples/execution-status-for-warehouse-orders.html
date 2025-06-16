@@ -102,9 +102,10 @@
 <h2 id="step-1-check-if-the-order-is-not-started-status_notstarted">Step 1: Check if the Order is Not Started (#Status_NotStarted)</h2>
 <p>This attribute checks if the warehouse order has no fulfillments.</p>
 <h3 id="expression">Expression</h3>
-<p>10: IIF EXP:20 CONST:True CONST:False<br>
-20: EQUAL EXP:30 CONST:0<br>
-30: COUNT CHILD:Fulfillments</p>
+<pre><code>10: IIF EXP:20 CONST:True CONST:False  
+20: EQUAL EXP:30 CONST:0  
+30: COUNT CHILD:Fulfillments
+</code></pre>
 <h3 id="explanation">Explanation</h3>
 <ul>
 <li>10: Returns True if EXP:20 is true; otherwise returns False.</li>
@@ -114,11 +115,12 @@
 <h2 id="step-2-check-if-all-lines-are-fulfilled-status_fulfilled">Step 2: Check if All Lines are Fulfilled (#Status_Fulfilled)</h2>
 <p>This attribute verifies whether all lines in the warehouse order are fulfilled.</p>
 <h3 id="expression-1">Expression</h3>
-<p>10: IIF EXP:20 CONST:false CONST:true<br>
-20: GTE EXP:30 CONST:1<br>
-30: COUNT EXP:40<br>
-40: FILTER CHILD:Lines EXP:50<br>
-50: EQUAL ATTRIB:#LineIsFulfilled CONST:false</p>
+<pre><code>10: IIF EXP:20 CONST:false CONST:true  
+20: GTE EXP:30 CONST:1  
+30: COUNT EXP:40  
+40: FILTER CHILD:Lines EXP:50  
+50: EQUAL ATTRIB:#LineIsFulfilled CONST:false
+</code></pre>
 <h3 id="explanation-1">Explanation</h3>
 <ul>
 <li>10: Returns false if EXP:20 is true, true otherwise.</li>
@@ -130,13 +132,14 @@
 <h2 id="step-3-determine-execution-status-executionstatus">Step 3: Determine Execution Status (ExecutionStatus)</h2>
 <p>This attribute returns a string value representing the current status of the warehouse order.</p>
 <h3 id="expression-2">Expression</h3>
-<p>10: IIF EXP:20 CONST:NotStarted EXP:30<br>
-20: EQUAL ATTRIB:#Status_NotStarted CONST:True<br>
-30: IIF EXP:40 CONST:Completed EXP:50<br>
-40: EQUAL ATTRIB:#Status_Fulfilled CONST:True<br>
-50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress<br>
-60: GTE EXP:70 CONST:40<br>
-70: CAST ATTRIB:State CONST:System.Int32</p>
+<pre><code>10: IIF EXP:20 CONST:NotStarted EXP:30  
+20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
+30: IIF EXP:40 CONST:Completed EXP:50  
+40: EQUAL ATTRIB:#Status_Fulfilled CONST:True  
+50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
+60: GTE EXP:70 CONST:40  
+70: CAST ATTRIB:State CONST:System.Int32
+</code></pre>
 <h3 id="explanation-2">Explanation</h3>
 <ul>
 <li>10: If #Status_NotStarted is True → returns NotStarted.</li>
