@@ -1,10 +1,8 @@
 # Setup Warehouse Manager View
 
-# Warehouse Manager View – Technical Overview
-
 ## Access and Purpose
 
-The **Warehouse Manager View** is a **Saved View** in the ERP.net **Desktop Client**, accessed via the Warehouse Orders Navigator. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
+The **Warehouse Manager View** is a **Saved View** in the ERP.net **Desktop Client**, accessed via the `WarehouseOrders Navigator`. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
 
 - Quick access to order states and statuses
 - Visual status feedback via conditional formatting
@@ -17,7 +15,7 @@ The view is structured in **two parts**:
 
 ### 1. Main Navigator (Left Pane)
 
-Displays a list of Warehouse Orders with enhanced color-coded status visualization.
+Displays a list of `Warehouse Orders` with enhanced color-coded status visualization.
 
 #### Conditional Appearance (CA) Rules
 
@@ -38,15 +36,16 @@ There are **four Web View panels**, configured to load documents in `Single Reco
 
 Displays the selected `Warehouse Order` form, including:
 
-- **Lines** – With custom indicators:
+- **Lines** – Show:
   - Fulfilled Quantity
   - Remaining Quantity
   - Fulfillment Status
+
 - **Transactions** – Show:
   - User who executed the operation
   - Timestamp of execution
-  - Line-level details (product, location, lot, quantity, etc.)
-    
+  - Line-level details (product, quantity, location, batch/serial numbers, etc.)
+
 ### Setup
 
 Use the following in **Change View → Source URL (with placeholders)**:
@@ -76,7 +75,6 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Pare
 - Users can mark the requisition as **Completed**
 - This triggers automatic **Store Order Posting**
 - A corresponding **Store Transaction** is generated
-- Related links to execution logic and trigger flow will be added here
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
@@ -91,7 +89,6 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.P
 ### Functional Highlights
 
 - Enables creation of **Follow-Up Store Orders** (e.g., for unfulfilled lines)
-- A link to the partial fulfillment logic or UI command will be provided
 
 ## Web Panel 4: Warehouse Orders Navigator
 
@@ -105,3 +102,4 @@ Embeds the navigator **again**, enabling **mass operations** such as:
 - The instance name in the Web Panel URLs should reflect the current ERP tenant (e.g., `internal-nbeta`).
 - Use the `Change View` mode to customize or replicate this layout for other operational views.
 - Conditional Appearances (CA) referenced in this view are defined in a separate documentation section.
+
