@@ -70,4 +70,3 @@ This attribute calculates the remaining quantity by subtracting the fulfilled qu
 - RemainingQuantity gives you how much is still pending based on the initial ordered quantity.
 
 This structure ensures clean reuse, type safety, and clear traceability of fulfillment logic in warehouse workflows.
-```
