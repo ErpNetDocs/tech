@@ -4,7 +4,7 @@
 
 ## Access and Purpose
 
-The **Warehouse Manager View** is a **Saved View** in the ERP.net **Desktop Client**, accessed via the `WarehouseOrders Navigator`. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
+The **Warehouse Manager View** is a **Saved View** in the ERP.net **Desktop Client**, accessed via the Warehouse Orders Navigator. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
 
 - Quick access to order states and statuses
 - Visual status feedback via conditional formatting
@@ -17,7 +17,7 @@ The view is structured in **two parts**:
 
 ### 1. Main Navigator (Left Pane)
 
-Displays a list of `Warehouse Orders` with enhanced color-coded status visualization.
+Displays a list of Warehouse Orders with enhanced color-coded status visualization.
 
 #### Conditional Appearance (CA) Rules
 
@@ -42,8 +42,11 @@ Displays the selected `Warehouse Order` form, including:
   - Fulfilled Quantity
   - Remaining Quantity
   - Fulfillment Status
-- **Transactions** – Bound to order lines
-
+- **Transactions** – Show:
+  - User who executed the operation
+  - Timestamp of execution
+  - Line-level details (product, location, lot, quantity, etc.)
+    
 ### Setup
 
 Use the following in **Change View → Source URL (with placeholders)**:
