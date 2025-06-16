@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Setup Warehouse Manager View | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Setup Warehouse Manager View | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/setup-warehouse-manager-view.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="setup-warehouse-manager-view">Setup Warehouse Manager View</h1>
+
+<h2 id="access-and-purpose">Access and Purpose</h2>
+<p>The <strong>Warehouse Manager View</strong> is a Saved View in the ERP.net Desktop Client, accessed via the WarehouseOrders Navigator. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:</p>
+<ul>
+<li>Quick access to order states and statuses</li>
+<li>Visual status feedback via conditional formatting</li>
+<li>Multi-level document inspection and control</li>
+<li>Mass-assignment and execution of warehouse orders</li>
+</ul>
+<h2 id="interface-composition">Interface Composition</h2>
+<p>The view is structured in two parts:</p>
+<h3 id="1-main-navigator-left-pane">1. Main Navigator (Left Pane)</h3>
+<p>Displays a list of Warehouse Orders with enhanced color-coded status visualization.</p>
+<h4 id="conditional-appearance-ca-rules">Conditional Appearance (CA) Rules</h4>
+<p>The navigator includes multiple Conditional Appearances (CAs):</p>
+<ul>
+<li>By Progress:
+<ul>
+<li>Green – Completed</li>
+<li>Yellow – Released</li>
+<li>Red – Completed with shortages</li>
+<li>Gray – Not Started</li>
+</ul>
+</li>
+<li>By Direction:
+<ul>
+<li>Additional icon or formatting indicating the logistical flow direction</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-web-panels-right-pane">2. Web Panels (Right Pane)</h3>
+<p>There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.</p>
+<h2 id="web-panel-1-warehouse-order-details">Web Panel 1: Warehouse Order Details</h2>
+<p>Displays the selected Warehouse Order form, including:</p>
+<ul>
+<li><p><strong>Lines</strong> – Show:</p>
+<ul>
+<li>Fulfilled Quantity</li>
+<li>Remaining Quantity</li>
+<li>Fulfillment Status</li>
+</ul>
+</li>
+<li><p><strong>Transactions</strong> – Show:</p>
+<ul>
+<li>User who executed the operation</li>
+<li>Timestamp of execution</li>
+<li>Line-level details (product, quantity, location, batch/serial numbers, etc.)</li>
+</ul>
+</li>
+</ul>
+<h3 id="setup">Setup</h3>
+<p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
+</code></pre>
+<p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
+<h3 id="functional-highlights">Functional Highlights</h3>
+<ul>
+<li>Lines display execution progress via embedded CA rules</li>
+<li>Users can mark the order as Completed directly from this panel</li>
+</ul>
+<h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
+<p>Displays the Warehouse Requisition associated with the selected order.</p>
+<h3 id="setup-1">Setup</h3>
+<p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
+</code></pre>
+<p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
+<h3 id="functional-highlights-1">Functional Highlights</h3>
+<ul>
+<li>Users can mark the requisition as Completed</li>
+<li>This triggers automatic Store Order Posting</li>
+<li>A corresponding Store Transaction is generated</li>
+</ul>
+<h2 id="web-panel-3-store-order-grandparent-document">Web Panel 3: Store Order (Grandparent Document)</h2>
+<p>Displays the parent of the requisition, which is the Store Order.</p>
+<h3 id="setup-2">Setup</h3>
+<p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
+</code></pre>
+<p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
+<h3 id="functional-highlights-2">Functional Highlights</h3>
+<ul>
+<li>Enables creation of Follow-Up Store Orders (e.g., for unfulfilled lines)</li>
+</ul>
+<h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
+<p>Embeds the navigator again, enabling mass operations such as:</p>
+<ul>
+<li>Multi-select assignment of orders to a specific performer</li>
+<li>Execution of bulk UI actions (via toolbar)</li>
+</ul>
+<h3 id="setup-3">Setup</h3>
+<p>In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.<br>
+The panel’s name can be adjusted using the <strong>Panel title</strong> field.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The instance name in the Web Panel URLs should reflect the current ERP tenant (e.g., <code>internal-nbeta</code>)</li>
+<li>Use the Change View mode to customize or replicate this layout for other operational views</li>
+<li>Conditional Appearances (CA</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-to/setup-warehouse-manager-view.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

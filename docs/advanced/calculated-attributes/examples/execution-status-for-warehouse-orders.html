@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Examples | ERP.net Tech Docs </title>
+      <title>ExecutionStatus for Warehouse Orders | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Examples | ERP.net Tech Docs ">
+      <meta name="title" content="ExecutionStatus for Warehouse Orders | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,34 +85,81 @@
         </div>
 
         <article data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="executionstatus-for-warehouse-orders">ExecutionStatus for Warehouse Orders</h1>
 
+<p>This example defines a calculated attribute that returns a descriptive status value for a warehouse order. The logic uses two supporting attributes:</p>
+<ol>
+<li>#Status_NotStarted – returns True if the warehouse order has no fulfillments.</li>
+<li>#Status_Fulfilled – returns True if there are no unfulfilled lines.</li>
+</ol>
+<p>The final attribute, ExecutionStatus, evaluates those and returns one of the following values:</p>
 <ul>
-<li><a href="calculate-standardpriceperlot.html">Calculate standard price per lot based on ingredients and operations in a recipe</a></li>
-<li><a href="check-if-quantity-is-whole-number.html">Check if a quantity is a whole number</a></li>
-<li><a href="check-if-user-has-authorization.html">Check if a user has authorization</a></li>
-<li><a href="check-if-field-is-changed-in-adjustment.html">Check if a value of a field is changed in an adjustment document</a></li>
-<li><a href="check-if-entity-has-attached-files.html">Check if an entity record has attached files</a></li>
-<li><a href="check-if-system-type-is-in-cash.html">Check if the system type of a payment type in a sales order is 'In cash'</a></li>
-<li><a href="check-for-first-releasing.html">Check whether the releasing of a document is first or not</a></li>
-<li><a href="compare-unit-and-standard-unit-price.html">Compare unit price and standard unit price</a></li>
-<li><a href="convert-property-to-number.html">Convert a value of a custom property to a number</a></li>
-<li><a href="executed-and-remaining-quantities-for-warehouse-order-lines.html">Executed and Remaining Quantities for Warehouse Order Lines</a></li>
-<li><a href="execution-status-for-warehouse-orders.html">ExecutionStatus for Warehouse Orders</a></li>
-<li><a href="format-property-date.html">Format date type custom property</a></li>
-<li><a href="get-custom-property-from-parent-offer-line.html">Get a value of a custom property in sales order lines from the parent offer line</a></li>
-<li><a href="get-atp.html">Get available to promise (ATP) quantity</a></li>
-<li><a href="get-current-availability-of-product.html">Get current availability of a product</a></li>
-<li><a href="get-value-and-description-of-referent-object.html">Get value and description of referent object</a></li>
-<li><a href="sales-amounts-last-30-days.html">Sales amounts of a customer for the last 30 days</a></li>
-<li><a href="day-from-document-date.html">Specific day from document date</a></li>
-<li><a href="total-quantity-and-scrap-in-recipe-ingredients.html">Total quantity and scrap quantity in recipe ingredients</a></li>
+<li>NotStarted</li>
+<li>Completed</li>
+<li>ClosedWithIssues</li>
+<li>InProgress</li>
 </ul>
+<h2 id="step-1-check-if-the-order-is-not-started-status_notstarted">Step 1: Check if the Order is Not Started (#Status_NotStarted)</h2>
+<p>This attribute checks if the warehouse order has no fulfillments.</p>
+<h3 id="expression">Expression</h3>
+<p>10: IIF EXP:20 CONST:True CONST:False<br>
+20: EQUAL EXP:30 CONST:0<br>
+30: COUNT CHILD:Fulfillments</p>
+<h3 id="explanation">Explanation</h3>
+<ul>
+<li>10: Returns True if EXP:20 is true; otherwise returns False.</li>
+<li>20: Compares the result of EXP:30 to 0.</li>
+<li>30: Counts how many fulfillments the warehouse order has.</li>
+</ul>
+<h2 id="step-2-check-if-all-lines-are-fulfilled-status_fulfilled">Step 2: Check if All Lines are Fulfilled (#Status_Fulfilled)</h2>
+<p>This attribute verifies whether all lines in the warehouse order are fulfilled.</p>
+<h3 id="expression-1">Expression</h3>
+<p>10: IIF EXP:20 CONST:false CONST:true<br>
+20: GTE EXP:30 CONST:1<br>
+30: COUNT EXP:40<br>
+40: FILTER CHILD:Lines EXP:50<br>
+50: EQUAL ATTRIB:#LineIsFulfilled CONST:false</p>
+<h3 id="explanation-1">Explanation</h3>
+<ul>
+<li>10: Returns false if EXP:20 is true, true otherwise.</li>
+<li>20: Checks if there is at least one line that is not fulfilled.</li>
+<li>30: Counts lines filtered by EXP:40.</li>
+<li>40: Filters child Lines based on EXP:50.</li>
+<li>50: Filters lines where #LineIsFulfilled is false.</li>
+</ul>
+<h2 id="step-3-determine-execution-status-executionstatus">Step 3: Determine Execution Status (ExecutionStatus)</h2>
+<p>This attribute returns a string value representing the current status of the warehouse order.</p>
+<h3 id="expression-2">Expression</h3>
+<p>10: IIF EXP:20 CONST:NotStarted EXP:30<br>
+20: EQUAL ATTRIB:#Status_NotStarted CONST:True<br>
+30: IIF EXP:40 CONST:Completed EXP:50<br>
+40: EQUAL ATTRIB:#Status_Fulfilled CONST:True<br>
+50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress<br>
+60: GTE EXP:70 CONST:40<br>
+70: CAST ATTRIB:State CONST:System.Int32</p>
+<h3 id="explanation-2">Explanation</h3>
+<ul>
+<li>10: If #Status_NotStarted is True → returns NotStarted.</li>
+<li>30: If not, and #Status_Fulfilled is True → returns Completed.</li>
+<li>50: Otherwise:
+<ul>
+<li>If document State (as integer) &gt;= 40 → returns ClosedWithIssues.</li>
+<li>Else → returns InProgress.</li>
+</ul>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>#Status_NotStarted checks whether the warehouse order has no fulfillments.</li>
+<li>#Status_Fulfilled ensures all lines in the order are fulfilled.</li>
+<li>ExecutionStatus combines both checks with the document state to give a readable, traceable lifecycle label for the order.</li>
+</ul>
+<p>This attribute is intended for use in manager dashboards and WMS views to help warehouse supervisors track progress and identify issues quickly.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

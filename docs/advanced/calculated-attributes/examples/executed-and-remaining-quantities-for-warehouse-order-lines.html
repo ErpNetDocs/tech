@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Examples | ERP.net Tech Docs </title>
+      <title>Executed and Remaining Quantities for Warehouse Order Lines | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Examples | ERP.net Tech Docs ">
+      <meta name="title" content="Executed and Remaining Quantities for Warehouse Order Lines | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/executed-and-remaining-quantities-for-warehouse-order-lines.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,34 +85,68 @@
         </div>
 
         <article data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="executed-and-remaining-quantities-for-warehouse-order-lines">Executed and Remaining Quantities for Warehouse Order Lines</h1>
 
+<p>This example demonstrates how to define and combine two calculated attributes used in warehouse order lines:</p>
+<ol>
+<li>#ExecutedQuantity – calculates the total fulfilled quantity for a line using document fulfillments. This attribute can also be reused independently in other calculations and reports.</li>
+<li>RemainingQuantity – calculates the remaining quantity by subtracting the executed quantity from the ordered (standard) quantity.</li>
+</ol>
+<h2 id="step-1-fulfilled-quantity-per-line-executedquantity">Step 1: Fulfilled Quantity per Line (#ExecutedQuantity)</h2>
+<p>This attribute calculates the total fulfilled quantity for a specific line by summing StandardQuantity from all related DocumentFulfillments.</p>
+<h3 id="expression">Expression</h3>
+<p>10: SUM EXP:20 ATTRIB:StandardQuantity<br>
+20: SELECT REPO:General.Documents.DocumentFulfillments EXP:30<br>
+30: WHERE EXP:40<br>
+40: EQUAL ATTRIB:DocumentLineId EXP:50<br>
+50: GETOBJVALUE INPUT:10 ATTRIB:Id</p>
+<h3 id="explanation">Explanation</h3>
 <ul>
-<li><a href="calculate-standardpriceperlot.html">Calculate standard price per lot based on ingredients and operations in a recipe</a></li>
-<li><a href="check-if-quantity-is-whole-number.html">Check if a quantity is a whole number</a></li>
-<li><a href="check-if-user-has-authorization.html">Check if a user has authorization</a></li>
-<li><a href="check-if-field-is-changed-in-adjustment.html">Check if a value of a field is changed in an adjustment document</a></li>
-<li><a href="check-if-entity-has-attached-files.html">Check if an entity record has attached files</a></li>
-<li><a href="check-if-system-type-is-in-cash.html">Check if the system type of a payment type in a sales order is 'In cash'</a></li>
-<li><a href="check-for-first-releasing.html">Check whether the releasing of a document is first or not</a></li>
-<li><a href="compare-unit-and-standard-unit-price.html">Compare unit price and standard unit price</a></li>
-<li><a href="convert-property-to-number.html">Convert a value of a custom property to a number</a></li>
-<li><a href="executed-and-remaining-quantities-for-warehouse-order-lines.html">Executed and Remaining Quantities for Warehouse Order Lines</a></li>
-<li><a href="execution-status-for-warehouse-orders.html">ExecutionStatus for Warehouse Orders</a></li>
-<li><a href="format-property-date.html">Format date type custom property</a></li>
-<li><a href="get-custom-property-from-parent-offer-line.html">Get a value of a custom property in sales order lines from the parent offer line</a></li>
-<li><a href="get-atp.html">Get available to promise (ATP) quantity</a></li>
-<li><a href="get-current-availability-of-product.html">Get current availability of a product</a></li>
-<li><a href="get-value-and-description-of-referent-object.html">Get value and description of referent object</a></li>
-<li><a href="sales-amounts-last-30-days.html">Sales amounts of a customer for the last 30 days</a></li>
-<li><a href="day-from-document-date.html">Specific day from document date</a></li>
-<li><a href="total-quantity-and-scrap-in-recipe-ingredients.html">Total quantity and scrap quantity in recipe ingredients</a></li>
+<li>10: Sums the StandardQuantity from all document fulfillments selected in EXP:20.</li>
+<li>20: Selects fulfillments linked to the current line.</li>
+<li>30: Filters fulfillments using the condition in EXP:40.</li>
+<li>40: Checks if DocumentLineId from the fulfillment matches the current line's Id.</li>
+<li>50: Retrieves the Id of the current line from input 10.</li>
 </ul>
+<p>This attribute can be used independently to track execution progress per line and is reused in the RemainingQuantity calculation below.</p>
+<h2 id="step-2-remaining-quantity-remainingquantity">Step 2: Remaining Quantity (RemainingQuantity)</h2>
+<p>This attribute calculates the remaining quantity by subtracting the fulfilled quantity from the ordered quantity.</p>
+<h3 id="expression-1">Expression</h3>
+<p>10: ADD EXP:20 EXP:30<br>
+20: SUM EXP:40 ATTRIB:StandardQuantityValue<br>
+30: SUM EXP:40 EXP:37<br>
+35: CAST ATTRIB:#ExecutedQuantity CONST:System.Decimal<br>
+36: MULTIPLY EXP:35 CONST:-1.00<br>
+37: CAST EXP:36 CONST:System.Decimal<br>
+40: SELECT REPO:Logistics.Wms.WarehouseOrderLines EXP:50<br>
+50: WHERE EXP:60<br>
+60: EQUAL ATTRIB:Id EXP:70<br>
+70: GETOBJVALUE INPUT:10 ATTRIB:Id</p>
+<h3 id="explanation-1">Explanation</h3>
+<ul>
+<li>10: Adds the ordered quantity (EXP:20) and the negative of the fulfilled quantity (EXP:30) to calculate remaining.</li>
+<li>20: Sums StandardQuantityValue for all relevant warehouse order lines.</li>
+<li>30: Sums negative #ExecutedQuantity values (EXP:37).</li>
+<li>35: Retrieves the calculated value from attribute #ExecutedQuantity and casts it to Decimal.</li>
+<li>36: Multiplies the executed quantity by -1.00 to make it negative.</li>
+<li>37: Casts the result of the multiplication to Decimal, ensuring numeric consistency.</li>
+<li>40: Selects warehouse order lines to evaluate.</li>
+<li>50: Applies filtering logic.</li>
+<li>60: Compares current line’s Id with the referenced one.</li>
+<li>70: Fetches the current line’s Id from input 10.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>#ExecutedQuantity gives you how much has been fulfilled per line and is useful on its own for reporting, monitoring and further calculations.</li>
+<li>RemainingQuantity gives you how much is still pending based on the initial ordered quantity.</li>
+</ul>
+<p>This structure ensures clean reuse, type safety, and clear traceability of fulfillment logic in warehouse workflows.</p>
+<pre><code></code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/executed-and-remaining-quantities-for-warehouse-order-lines.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
