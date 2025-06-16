@@ -1,2 +1,2 @@
-Setup Warehouse Manager View
+# Setup Warehouse Manager View
 
