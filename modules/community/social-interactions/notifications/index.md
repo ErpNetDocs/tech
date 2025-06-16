@@ -42,20 +42,20 @@ Also, most of the notifications are created automatically via business rules whe
 | Notification class | Group | Business rule | Description |
 | ---- | ---- | ----------- |
 | NT_DOC_STATE_IMPLICIT | Document | **[R33718](https://docs.erp.net/model/business-rules/R33718.html) Document**- Notify All Implicit Followers | If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification. |
-| NT_SOC_REPLY | Social | **[R33428](https://docs.erp.net/model/business-rules/R33428.html) SocialComment**- Notify User Comment Replied | There was a reply to your post or comment. |
-| NT_SOC_NEW_POST | Social | -  | New post in a group, in which you're a member. |
-| NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComment**- Notify The Mentioned User | You're mentioned in a post or comment. |
-| NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User Comment Reaction | There was a reaction to your post or comment. |
-| NT_NEW_COMMUNITY_USER | Social | **[R33153](https://docs.erp.net/model/business-rules/R33153.html) Security Users**- Notify Admins On Community User Creation | New external (community) user '{Login}' is created.|
+| NT_SOC_REPLY | Social | **[R33428](https://docs.erp.net/model/business-rules/R33428.html) SocialComment**- Notify the User on Comment Replied | There was a reply to your post or comment. |
+| NT_SOC_NEW_SYSTEM_COMMENT | Social | **[Case 38542] SocialComments**- Notify the members on a group event | New system comment to an object you are following.|
+| NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComments**- Notify the mentioned User | You're mentioned in a post or comment. |
+| NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User on Comment Reaction | There was a reaction to your post or comment. |
+| NT_NEW_COMMUNITY_USER | Social | **[R33153](https://docs.erp.net/model/business-rules/R33153.html) Security Users**- Notify Admins on Community User Creation | New external (community) user '{Login}' is created.|
 | NT_SOC_GROUP_MEMBERSHIP_ADDED | Social | **[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Notify the user upon adding him to a group | You were added to the group '{Group.Name}'.|
 | NT_SOC_GROUP_MEMBERSHIP_REMOVED | Social |**[R37141](https://docs.erp.net/model/business-rules/R37141.html) Social Group**- Notify the user upon removing him from a group. | You were removed from the group '{Group.Name}'.|
 | NT_WM_QTY_BELOW_MIN | WMS | - | In @wms, when the qty in a tracked bin falls below the minimum. |
-| NT_SOC_NEW_COMMENT | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify All Object Followers | New comment to an object you are following. |
-| NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R34361.html) All Entities** - Notify All Object Followers Upon Update | Create notification for all followers of each updated object. |
+| NT_SOC_NEW_COMMENT | Social | **[R33417](https://docs.erp.net/model/business-rules/R33417.html) SocialComment**- Notify all Object Followers | New comment to an object you are following. |
+| NT_ALL_UPDATE | All Entities | **[R34361](https://docs.erp.net/model/business-rules/R34361.html) All Entities** - Notify All Object Followers upon Update | Create notification for all followers of each updated object. |
 | NT_ACT_REMINDER | Activity Reminders | - | Activity reminder, within the next 15 minutes at the latest. |
 | NT_TODO_REMINDER | Todo Reminders | - | Todo task reminder, within the next 15 minutes at the latest. |
-| NT_DOC_ASSIGNMENT | Document | **[R35922](https://docs.erp.net/model/business-rules/R35922.html) Document** - Notify Assigned To User Upon Assignment | Notify user when a document has been assigned to them.
-| NT_DOC_STATE_ASSIGN | Document | **[R35927](https://docs.erp.net/model/business-rules/R35927.html) Document** - Notify Assigned To User For State Change | Notify the assigned user when the document state is changed.
+| NT_DOC_ASSIGNMENT | Document | **[R35922](https://docs.erp.net/model/business-rules/R35922.html) Document** - Notify Assigned To User upon Assignment | Notify user when a document has been assigned to them.
+| NT_DOC_STATE_ASSIGN | Document | **[R35927](https://docs.erp.net/model/business-rules/R35927.html) Document** - Notify Assigned To User for State Change | Notify the assigned user when the document state is changed.
 | NT_DOC_UPDATE_ASSIGN | Document | **[R35940](https://docs.erp.net/model/business-rules/R35940.html) Document** - Notify Assigned To User For Update | Notify the assigned user when the document is edited.
 | NT_TODO_ASSIGNMENT | To Do | **[R35962](https://docs.erp.net/model/business-rules/R35962.html) Task** - Notify Assigned To User Upon Assignment | Notify the assigned user when the To Do has been assigned to them.
 | NT_TODO_UPDATE_ASSIGN | To Do | **[R35951](https://docs.erp.net/model/business-rules/R35951.html) Task** - Notify Assigned To User For Update | Notify the assigned user when the To Do is edited.
