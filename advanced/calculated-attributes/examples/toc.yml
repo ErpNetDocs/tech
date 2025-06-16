@@ -34,4 +34,5 @@
   href: format-property-date.md
 - name: Get available to promise (ATP) quantity
   href: get-atp.md
-  
+- name: Executed and Remaining Quantities for Warehouse Order Lines
+  href: executed-and-remaining-quantities-for-warehouse-order-lines.md  
