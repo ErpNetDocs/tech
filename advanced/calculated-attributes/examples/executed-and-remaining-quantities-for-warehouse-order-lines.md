@@ -15,11 +15,13 @@ This attribute calculates the total fulfilled quantity for a specific line by su
 
 ### Expression
 
+```
 10: SUM EXP:20 ATTRIB:StandardQuantity  
 20: SELECT REPO:General.Documents.DocumentFulfillments EXP:30  
 30: WHERE EXP:40  
 40: EQUAL ATTRIB:DocumentLineId EXP:50  
 50: GETOBJVALUE INPUT:10 ATTRIB:Id
+```
 
 ### Explanation
 
@@ -36,7 +38,7 @@ This attribute can be used independently to track execution progress per line an
 This attribute calculates the remaining quantity by subtracting the fulfilled quantity from the ordered quantity.
 
 ### Expression
-
+```
 10: ADD EXP:20 EXP:30  
 20: SUM EXP:40 ATTRIB:StandardQuantityValue  
 30: SUM EXP:40 EXP:37  
