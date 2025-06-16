@@ -21,11 +21,11 @@ The final attribute, ExecutionStatus, evaluates those and returns one of the fol
 This attribute checks if the warehouse order has no fulfillments.
 
 ### Expression
-
+```
 10: IIF EXP:20 CONST:True CONST:False  
 20: EQUAL EXP:30 CONST:0  
 30: COUNT CHILD:Fulfillments
-
+```
 ### Explanation
 
 - 10: Returns True if EXP:20 is true; otherwise returns False.
@@ -37,13 +37,13 @@ This attribute checks if the warehouse order has no fulfillments.
 This attribute verifies whether all lines in the warehouse order are fulfilled.
 
 ### Expression
-
+```
 10: IIF EXP:20 CONST:false CONST:true  
 20: GTE EXP:30 CONST:1  
 30: COUNT EXP:40  
 40: FILTER CHILD:Lines EXP:50  
 50: EQUAL ATTRIB:#LineIsFulfilled CONST:false
-
+```
 ### Explanation
 
 - 10: Returns false if EXP:20 is true, true otherwise.
@@ -57,7 +57,7 @@ This attribute verifies whether all lines in the warehouse order are fulfilled.
 This attribute returns a string value representing the current status of the warehouse order.
 
 ### Expression
-
+```
 10: IIF EXP:20 CONST:NotStarted EXP:30  
 20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
 30: IIF EXP:40 CONST:Completed EXP:50  
@@ -65,6 +65,7 @@ This attribute returns a string value representing the current status of the war
 50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
 60: GTE EXP:70 CONST:40  
 70: CAST ATTRIB:State CONST:System.Int32
+```
 
 ### Explanation
 
