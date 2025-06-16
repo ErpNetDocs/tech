@@ -49,6 +49,7 @@ This attribute calculates the remaining quantity by subtracting the fulfilled qu
 50: WHERE EXP:60  
 60: EQUAL ATTRIB:Id EXP:70  
 70: GETOBJVALUE INPUT:10 ATTRIB:Id
+```
 
 ### Explanation
 
