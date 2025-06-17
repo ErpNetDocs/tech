@@ -43,7 +43,7 @@ Also, most of the notifications are created automatically via business rules whe
 | ---- | ---- | ----------- |
 | NT_DOC_STATE_IMPLICIT | Document | **[R33718](https://docs.erp.net/model/business-rules/R33718.html) Document**- Notify All Implicit Followers | If a document changes its state and you're following an entity, related to this document (e.g. its customer, its document type, etc) you'll receive a notification. |
 | NT_SOC_REPLY | Social | **[R33428](https://docs.erp.net/model/business-rules/R33428.html) SocialComment**- Notify the User on Comment Replied | There was a reply to your post or comment. |
-| NT_SOC_NEW_SYSTEM_COMMENT | Social | **[Case 38542] SocialComments**- Notify the members on a group event | New system comment to an object you are following.|
+| NT_SOC_NEW_SYSTEM_COMMENT | Social | - Notify the members on a group event | New system comment to an object you are following.|
 | NT_SOC_MENTION | Social | **[R32943](https://docs.erp.net/model/business-rules/R32943.html) SocialComments**- Notify the mentioned User | You're mentioned in a post or comment. |
 | NT_SOC_REACTION | Social | **[R33427](https://docs.erp.net/model/business-rules/R33427.html) SocialReaction**- Notify User on Comment Reaction | There was a reaction to your post or comment. |
 | NT_NEW_COMMUNITY_USER | Social | **[R33153](https://docs.erp.net/model/business-rules/R33153.html) Security Users**- Notify Admins on Community User Creation | New external (community) user '{Login}' is created.|
