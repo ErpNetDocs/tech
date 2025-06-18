@@ -13,7 +13,7 @@ The final attribute, ExecutionStatus, evaluates those and returns one of the fol
 
 - NotStarted
 - Completed
-- ClosedWithIssues
+- CompletedWithIssues
 - InProgress
 
 ## Step 1: Check if the Order is Not Started (#Status_NotStarted)
@@ -62,7 +62,7 @@ This attribute returns a string value representing the current status of the war
 20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
 30: IIF EXP:40 CONST:Completed EXP:50  
 40: EQUAL ATTRIB:#Status_Fulfilled CONST:True  
-50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
+50: IIF EXP:60 CONST:CompletedWithIssues CONST:InProgress  
 60: GTE EXP:70 CONST:40  
 70: CAST ATTRIB:State CONST:System.Int32
 ```
@@ -72,7 +72,7 @@ This attribute returns a string value representing the current status of the war
 - 10: If #Status_NotStarted is True → returns NotStarted.
 - 30: If not, and #Status_Fulfilled is True → returns Completed.
 - 50: Otherwise:
-  - If document State (as integer) >= 40 → returns ClosedWithIssues.
+  - If document State (as integer) >= 40 → returns CompletedWithIssues.
   - Else → returns InProgress.
 
 ## Summary
