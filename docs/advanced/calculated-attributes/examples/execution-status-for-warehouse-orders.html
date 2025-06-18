@@ -96,7 +96,7 @@
 <ul>
 <li>NotStarted</li>
 <li>Completed</li>
-<li>ClosedWithIssues</li>
+<li>CompletedWithIssues</li>
 <li>InProgress</li>
 </ul>
 <h2 id="step-1-check-if-the-order-is-not-started-status_notstarted">Step 1: Check if the Order is Not Started (#Status_NotStarted)</h2>
@@ -136,7 +136,7 @@
 20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
 30: IIF EXP:40 CONST:Completed EXP:50  
 40: EQUAL ATTRIB:#Status_Fulfilled CONST:True  
-50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
+50: IIF EXP:60 CONST:CompletedWithIssues CONST:InProgress  
 60: GTE EXP:70 CONST:40  
 70: CAST ATTRIB:State CONST:System.Int32
 </code></pre>
@@ -146,7 +146,7 @@
 <li>30: If not, and #Status_Fulfilled is True → returns Completed.</li>
 <li>50: Otherwise:
 <ul>
-<li>If document State (as integer) &gt;= 40 → returns ClosedWithIssues.</li>
+<li>If document State (as integer) &gt;= 40 → returns CompletedWithIssues.</li>
 <li>Else → returns InProgress.</li>
 </ul>
 </li>
