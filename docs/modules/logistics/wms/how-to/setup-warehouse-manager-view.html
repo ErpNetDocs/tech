@@ -97,10 +97,10 @@
 </ul>
 <h2 id="interface-composition">Interface Composition</h2>
 <p>The view is structured in two parts:</p>
-<h3 id="1-main-navigator-left-pane">1. Main Navigator (Left Pane)</h3>
+<h3 id="1-main-navigator-left-panel">1. Main Navigator (Left Panel)</h3>
 <p>Displays a list of Warehouse Orders with enhanced color-coded status visualization.</p>
-<h4 id="conditional-appearance-ca-rules">Conditional Appearance (CA) Rules</h4>
-<p>The navigator includes multiple Conditional Appearances (CAs):</p>
+<h4 id="calculated-attributes">Calculated Attributes</h4>
+<p>The navigator includes several example calculated attributes configured to demonstrate typical scenarios:</p>
 <ul>
 <li>By Progress:
 <ul>
@@ -112,12 +112,16 @@
 </li>
 <li>By Direction:
 <ul>
-<li>Additional icon or formatting indicating the logistical flow direction</li>
+<li>Indicates the logistical flow direction with specific formatting</li>
 </ul>
 </li>
 </ul>
+<p>These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.</p>
+<p>You can see how these attributes are created [here].</p>
 <h3 id="2-web-panels-right-pane">2. Web Panels (Right Pane)</h3>
-<p>There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.</p>
+<p>There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.
+The content in these panels is automatically synchronized with the selection in the navigator on the left.
+When a Warehouse Order is selected, each panel displays information relevant to that specific order.</p>
 <h2 id="web-panel-1-warehouse-order-details">Web Panel 1: Warehouse Order Details</h2>
 <p>Displays the selected Warehouse Order form, including:</p>
 <ul>
