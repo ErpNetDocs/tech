@@ -13,24 +13,32 @@ The **Warehouse Manager View** is a Saved View in the ERP.net Desktop Client, ac
 
 The view is structured in two parts:
 
-### 1. Main Navigator (Left Pane)
+### 1. Main Navigator (Left Panel)
 
 Displays a list of Warehouse Orders with enhanced color-coded status visualization.
 
-#### Conditional Appearance (CA) Rules
+#### Calculated Attributes
 
-The navigator includes multiple Conditional Appearances (CAs):
+The navigator includes several example calculated attributes configured to demonstrate typical scenarios:
+
 - By Progress:
   - Green – Completed
   - Yellow – Released
   - Red – Completed with shortages
   - Gray – Not Started
 - By Direction:
-  - Additional icon or formatting indicating the logistical flow direction
+  - Indicates the logistical flow direction with specific formatting
+
+These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
+
+You can see how these attributes are created [here].
+
 
 ### 2. Web Panels (Right Pane)
 
-There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.
+There are four Web View panels, configured to load documents in Single Record form via dynamic URLs. 
+The content in these panels is automatically synchronized with the selection in the navigator on the left. 
+When a Warehouse Order is selected, each panel displays information relevant to that specific order.
 
 ## Web Panel 1: Warehouse Order Details
 
