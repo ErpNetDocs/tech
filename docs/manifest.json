@@ -335,6 +335,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/calculated-attributes/examples/requisition-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/calculated-attributes/examples/requisition-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/calculated-attributes/examples/sales-amounts-last-30-days.md",
       "output": {
         ".html": {

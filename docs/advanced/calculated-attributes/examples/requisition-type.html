@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Examples | ERP.net Tech Docs </title>
+      <title>RequisitionType of the Requisition linked to a Warehouse Order | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Examples | ERP.net Tech Docs ">
+      <meta name="title" content="RequisitionType of the Requisition linked to a Warehouse Order | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/requisition-type.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,35 +85,33 @@
         </div>
 
         <article data-uid="">
-<h1 id="examples">Examples</h1>
+<h1 id="requisitiontype-of-the-requisition-linked-to-a-warehouse-order">RequisitionType of the Requisition linked to a Warehouse Order</h1>
 
+<p>This attribute extracts the direction (type) of the requisition document associated with a warehouse order. It resolves the requisition type by navigating through a line in the order and following its reference back to the parent requisition document.</p>
+<p>The value returned corresponds to the <strong>RequisitionType</strong> field of the requisition (e.g. <code>Inbound</code>, <code>Outbound</code>, etc.).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attribute is <em>Logistics.Wms.WarehouseOrders</em></p>
+</div>
+<h3 id="expression">Expression</h3>
+<pre><code>10: GETOBJVALUE EXP:20 EXP:30  
+20: FIRST CHILD:Lines  
+30: GETOBJVALUE REF:ParentDocument EXP:40  
+40: GETVALUE ATTRIB:RequisitionType
+</code></pre>
+<h3 id="explanation">Explanation</h3>
 <ul>
-<li><a href="calculate-standardpriceperlot.html">Calculate standard price per lot based on ingredients and operations in a recipe</a></li>
-<li><a href="check-if-quantity-is-whole-number.html">Check if a quantity is a whole number</a></li>
-<li><a href="check-if-user-has-authorization.html">Check if a user has authorization</a></li>
-<li><a href="check-if-field-is-changed-in-adjustment.html">Check if a value of a field is changed in an adjustment document</a></li>
-<li><a href="check-if-entity-has-attached-files.html">Check if an entity record has attached files</a></li>
-<li><a href="check-if-system-type-is-in-cash.html">Check if the system type of a payment type in a sales order is 'In cash'</a></li>
-<li><a href="check-for-first-releasing.html">Check whether the releasing of a document is first or not</a></li>
-<li><a href="compare-unit-and-standard-unit-price.html">Compare unit price and standard unit price</a></li>
-<li><a href="convert-property-to-number.html">Convert a value of a custom property to a number</a></li>
-<li><a href="executed-and-remaining-quantities-for-warehouse-order-lines.html">Executed and Remaining Quantities for Warehouse Order Lines</a></li>
-<li><a href="execution-status-for-warehouse-orders.html">ExecutionStatus for Warehouse Orders</a></li>
-<li><a href="format-property-date.html">Format date type custom property</a></li>
-<li><a href="get-custom-property-from-parent-offer-line.html">Get a value of a custom property in sales order lines from the parent offer line</a></li>
-<li><a href="get-atp.html">Get available to promise (ATP) quantity</a></li>
-<li><a href="get-current-availability-of-product.html">Get current availability of a product</a></li>
-<li><a href="get-value-and-description-of-referent-object.html">Get value and description of referent object</a></li>
-<li><a href="requisition-type.html">RequisitionType of the Requisition linked to a Warehouse Order</a></li>
-<li><a href="sales-amounts-last-30-days.html">Sales amounts of a customer for the last 30 days</a></li>
-<li><a href="day-from-document-date.html">Specific day from document date</a></li>
-<li><a href="total-quantity-and-scrap-in-recipe-ingredients.html">Total quantity and scrap quantity in recipe ingredients</a></li>
+<li>20: Retrieves the first line from the warehouse order.</li>
+<li>30: Follows the reference from the line to its parent document (assumed to be a requisition).</li>
+<li>40: Extracts the value of the RequisitionType attribute from the requisition.</li>
+<li>10: Returns the requisition type as the final value.</li>
 </ul>
+<p>This attribute is useful when you need to display or filter warehouse orders based on the requisition’s direction (e.g. in dashboards or grids).</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/calculated-attributes/examples/requisition-type.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
