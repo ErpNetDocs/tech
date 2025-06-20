@@ -11,4 +11,4 @@ Here, you will find step-by-step guides on how to perform various actions within
 * **[Check if a dispatch order can be fulfilled](https://docs.erp.net/tech/modules/logistics/wms/how-to/check-can-be-fulfilled.html)**
 * **[Reconcile](https://docs.erp.net/tech/modules/logistics/wms/how-to/reconcile.html)**
 * **[Apply other settings](https://docs.erp.net/tech/modules/logistics/wms/how-to/other-settings/index.html)**
-  
+* **[Setup Warehouse Manager View](https://docs.erp.net/tech/modules/logistics/wms/how-to/setup-warehouse-manager-view.html)**  
