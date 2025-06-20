@@ -2397,7 +2397,7 @@
   "modules/logistics/wms/how-to/index.html": {
     "href": "modules/logistics/wms/how-to/index.html",
     "title": "How To | ERP.net Tech Docs",
-    "summary": "How To Here, you will find step-by-step guides on how to perform various actions within the WMS module. Set up a warehouse Set up a document flow Enter initial availability Execute order lines Assign worker Change worker Check if a dispatch order can be fulfilled Reconcile Apply other settings"
+    "summary": "How To Here, you will find step-by-step guides on how to perform various actions within the WMS module. Set up a warehouse Set up a document flow Enter initial availability Execute order lines Assign worker Change worker Check if a dispatch order can be fulfilled Reconcile Apply other settings Setup Warehouse Manager View"
   },
   "modules/logistics/wms/how-to/initial-availability.html": {
     "href": "modules/logistics/wms/how-to/initial-availability.html",
