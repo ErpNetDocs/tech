@@ -31,7 +31,7 @@ The navigator includes several example calculated attributes configured to demon
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
 
-You can see how these attributes are created [here].
+You can see how these attributes are created [here](/advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
 
 
 ### 2. Web Panels (Right Pane)
