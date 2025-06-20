@@ -31,7 +31,7 @@ The navigator includes several example calculated attributes configured to demon
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
 
-You can see how By Progress attributes are created here [Execution status for warehouse orders](/advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
+You can see how By Progress attributes are created here [Execution status for warehouse orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
 You can see how By Progress attributes are created here [Execution status for warehouse orders](/advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
 
 
