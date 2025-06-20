@@ -87,8 +87,9 @@
         <article data-uid="">
 <h1 id="executionstatus-for-warehouse-orders">ExecutionStatus for Warehouse Orders</h1>
 
-<p>This example defines a calculated attribute that returns a descriptive status value for a warehouse order. The logic uses two supporting attributes:</p>
+<p>This example defines a calculated attribute that returns a descriptive status value for a warehouse order. The logic uses three supporting attributes:</p>
 <ol>
+<li>#LineIsFulfilled – returns True if a line is considered fulfilled based on quantity logic.</li>
 <li>#Status_NotStarted – returns True if the warehouse order has no fulfillments.</li>
 <li>#Status_Fulfilled – returns True if there are no unfulfilled lines.</li>
 </ol>
@@ -96,68 +97,84 @@
 <ul>
 <li>NotStarted</li>
 <li>Completed</li>
-<li>CompletedWithIssues</li>
+<li>ClosedWithIssues</li>
 <li>InProgress</li>
 </ul>
-<h2 id="step-1-check-if-the-order-is-not-started-status_notstarted">Step 1: Check if the Order is Not Started (#Status_NotStarted)</h2>
-<p>This attribute checks if the warehouse order has no fulfillments.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The repository of the attributes is <em>Logistics.Wms.WarehouseOrders</em> for ExecutionStatus and its status flags, and <em>Logistics.Wms.WarehouseOrderLines</em> for #LineIsFulfilled.</p>
+</div>
+<h2 id="attribute-lineisfulfilled">Attribute: #LineIsFulfilled</h2>
 <h3 id="expression">Expression</h3>
+<pre><code>10: IIF EXP:20 CONST:true CONST:false  
+20: LTE ATTRIB:StandardQuantityValue EXP:100  
+100: SUM EXP:110 ATTRIB:StandardQuantity  
+110: FILTER EXP:120 EXP:130  
+120: GETOBJVALUE REF:WarehouseOrder CHILD:Fulfillments  
+130: AND EXP:140 EXP:160  
+140: EQUAL ATTRIB:DocumentLineId EXP:150  
+150: GETOBJVALUE INPUT:10 ATTRIB:Id  
+160: EQUAL EXP:170 CONST:1  
+170: CAST ATTRIB:FulfillmentType CONST:System.Int32
+</code></pre>
+<h3 id="explanation">Explanation</h3>
+<ul>
+<li>100–170: Sums the StandardQuantity from all document fulfillments for the current line, where FulfillmentType = 1 and DocumentLineId matches the current line’s Id.</li>
+<li>20: Compares if the fulfilled quantity is greater than or equal to StandardQuantityValue.</li>
+<li>10: Returns true if the condition is met, otherwise false.</li>
+</ul>
+<h2 id="attribute-status_notstarted">Attribute: #Status_NotStarted</h2>
+<h3 id="expression-1">Expression</h3>
 <pre><code>10: IIF EXP:20 CONST:True CONST:False  
 20: EQUAL EXP:30 CONST:0  
 30: COUNT CHILD:Fulfillments
 </code></pre>
-<h3 id="explanation">Explanation</h3>
+<h3 id="explanation-1">Explanation</h3>
 <ul>
-<li>10: Returns True if EXP:20 is true; otherwise returns False.</li>
-<li>20: Compares the result of EXP:30 to 0.</li>
-<li>30: Counts how many fulfillments the warehouse order has.</li>
+<li>30: Counts how many fulfillments the order has.</li>
+<li>20: Checks whether the count is 0.</li>
+<li>10: Returns true if there are no fulfillments, false otherwise.</li>
 </ul>
-<h2 id="step-2-check-if-all-lines-are-fulfilled-status_fulfilled">Step 2: Check if All Lines are Fulfilled (#Status_Fulfilled)</h2>
-<p>This attribute verifies whether all lines in the warehouse order are fulfilled.</p>
-<h3 id="expression-1">Expression</h3>
+<h2 id="attribute-status_fulfilled">Attribute: #Status_Fulfilled</h2>
+<h3 id="expression-2">Expression</h3>
 <pre><code>10: IIF EXP:20 CONST:false CONST:true  
 20: GTE EXP:30 CONST:1  
 30: COUNT EXP:40  
 40: FILTER CHILD:Lines EXP:50  
 50: EQUAL ATTRIB:#LineIsFulfilled CONST:false
 </code></pre>
-<h3 id="explanation-1">Explanation</h3>
+<h3 id="explanation-2">Explanation</h3>
 <ul>
-<li>10: Returns false if EXP:20 is true, true otherwise.</li>
-<li>20: Checks if there is at least one line that is not fulfilled.</li>
-<li>30: Counts lines filtered by EXP:40.</li>
-<li>40: Filters child Lines based on EXP:50.</li>
 <li>50: Filters lines where #LineIsFulfilled is false.</li>
+<li>40: Applies the filter to all child lines.</li>
+<li>30: Counts how many unfulfilled lines there are.</li>
+<li>20: Checks if there is at least one.</li>
+<li>10: Returns false if there are any unfulfilled lines, true if all are fulfilled.</li>
 </ul>
-<h2 id="step-3-determine-execution-status-executionstatus">Step 3: Determine Execution Status (ExecutionStatus)</h2>
-<p>This attribute returns a string value representing the current status of the warehouse order.</p>
-<h3 id="expression-2">Expression</h3>
+<h2 id="attribute-executionstatus">Attribute: ExecutionStatus</h2>
+<h3 id="expression-3">Expression</h3>
 <pre><code>10: IIF EXP:20 CONST:NotStarted EXP:30  
 20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
 30: IIF EXP:40 CONST:Completed EXP:50  
 40: EQUAL ATTRIB:#Status_Fulfilled CONST:True  
-50: IIF EXP:60 CONST:CompletedWithIssues CONST:InProgress  
+50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
 60: GTE EXP:70 CONST:40  
 70: CAST ATTRIB:State CONST:System.Int32
 </code></pre>
-<h3 id="explanation-2">Explanation</h3>
+<h3 id="explanation-3">Explanation</h3>
 <ul>
-<li>10: If #Status_NotStarted is True → returns NotStarted.</li>
-<li>30: If not, and #Status_Fulfilled is True → returns Completed.</li>
-<li>50: Otherwise:
-<ul>
-<li>If document State (as integer) &gt;= 40 → returns CompletedWithIssues.</li>
-<li>Else → returns InProgress.</li>
-</ul>
-</li>
+<li>20: Checks if the order has no fulfillments.</li>
+<li>40: Checks if all lines are fulfilled.</li>
+<li>60–70: Checks if the document state is greater than or equal to 40.</li>
+<li>10: Returns NotStarted, Completed, ClosedWithIssues or InProgress depending on the conditions above.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>#Status_NotStarted checks whether the warehouse order has no fulfillments.</li>
-<li>#Status_Fulfilled ensures all lines in the order are fulfilled.</li>
-<li>ExecutionStatus combines both checks with the document state to give a readable, traceable lifecycle label for the order.</li>
+<li>#LineIsFulfilled determines whether a single line is fulfilled based on fulfillment documents and quantity comparison.</li>
+<li>#Status_NotStarted checks if there are no fulfillments in the order.</li>
+<li>#Status_Fulfilled verifies whether all lines in the order are fulfilled.</li>
+<li>ExecutionStatus combines the above with the document state to provide a readable and traceable status for the order lifecycle.</li>
 </ul>
-<p>This attribute is intended for use in manager dashboards and WMS views to help warehouse supervisors track progress and identify issues quickly.</p>
 
 </article>
 
