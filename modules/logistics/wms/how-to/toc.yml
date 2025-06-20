@@ -20,6 +20,6 @@
 - name: Other settings
   href: other-settings/toc.yml
   topicHref: other-settings/index.md
-- href: Setup Warehouse Manager View
-  topicHref: setup-warehouse-manager-view.md
+- name: Setup Warehouse Manager View
+  href: setup-warehouse-manager-view.md
   
