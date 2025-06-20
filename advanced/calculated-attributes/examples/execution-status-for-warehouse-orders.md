@@ -4,21 +4,44 @@ items: CalculatedAttributeExamples
 
 # ExecutionStatus for Warehouse Orders
 
-This example defines a calculated attribute that returns a descriptive status value for a warehouse order. The logic uses two supporting attributes:
+This example defines a calculated attribute that returns a descriptive status value for a warehouse order. The logic uses three supporting attributes:
 
-1. #Status_NotStarted – returns True if the warehouse order has no fulfillments.
-2. #Status_Fulfilled – returns True if there are no unfulfilled lines.
+1. #LineIsFulfilled – returns True if a line is considered fulfilled based on quantity logic.
+2. #Status_NotStarted – returns True if the warehouse order has no fulfillments.
+3. #Status_Fulfilled – returns True if there are no unfulfilled lines.
 
 The final attribute, ExecutionStatus, evaluates those and returns one of the following values:
 
-- NotStarted
-- Completed
-- CompletedWithIssues
+- NotStarted  
+- Completed  
+- ClosedWithIssues  
 - InProgress
 
-## Step 1: Check if the Order is Not Started (#Status_NotStarted)
+> [!NOTE]  
+> The repository of the attributes is *Logistics.Wms.WarehouseOrders* for ExecutionStatus and its status flags, and *Logistics.Wms.WarehouseOrderLines* for #LineIsFulfilled.
 
-This attribute checks if the warehouse order has no fulfillments.
+## Attribute: #LineIsFulfilled
+
+### Expression
+```
+10: IIF EXP:20 CONST:true CONST:false  
+20: LTE ATTRIB:StandardQuantityValue EXP:100  
+100: SUM EXP:110 ATTRIB:StandardQuantity  
+110: FILTER EXP:120 EXP:130  
+120: GETOBJVALUE REF:WarehouseOrder CHILD:Fulfillments  
+130: AND EXP:140 EXP:160  
+140: EQUAL ATTRIB:DocumentLineId EXP:150  
+150: GETOBJVALUE INPUT:10 ATTRIB:Id  
+160: EQUAL EXP:170 CONST:1  
+170: CAST ATTRIB:FulfillmentType CONST:System.Int32
+```
+### Explanation
+
+- 100–170: Sums the StandardQuantity from all document fulfillments for the current line, where FulfillmentType = 1 and DocumentLineId matches the current line’s Id.
+- 20: Compares if the fulfilled quantity is greater than or equal to StandardQuantityValue.
+- 10: Returns true if the condition is met, otherwise false.
+
+## Attribute: #Status_NotStarted
 
 ### Expression
 ```
@@ -28,13 +51,11 @@ This attribute checks if the warehouse order has no fulfillments.
 ```
 ### Explanation
 
-- 10: Returns True if EXP:20 is true; otherwise returns False.
-- 20: Compares the result of EXP:30 to 0.
-- 30: Counts how many fulfillments the warehouse order has.
+- 30: Counts how many fulfillments the order has.
+- 20: Checks whether the count is 0.
+- 10: Returns true if there are no fulfillments, false otherwise.
 
-## Step 2: Check if All Lines are Fulfilled (#Status_Fulfilled)
-
-This attribute verifies whether all lines in the warehouse order are fulfilled.
+## Attribute: #Status_Fulfilled
 
 ### Expression
 ```
@@ -46,15 +67,13 @@ This attribute verifies whether all lines in the warehouse order are fulfilled.
 ```
 ### Explanation
 
-- 10: Returns false if EXP:20 is true, true otherwise.
-- 20: Checks if there is at least one line that is not fulfilled.
-- 30: Counts lines filtered by EXP:40.
-- 40: Filters child Lines based on EXP:50.
 - 50: Filters lines where #LineIsFulfilled is false.
+- 40: Applies the filter to all child lines.
+- 30: Counts how many unfulfilled lines there are.
+- 20: Checks if there is at least one.
+- 10: Returns false if there are any unfulfilled lines, true if all are fulfilled.
 
-## Step 3: Determine Execution Status (ExecutionStatus)
-
-This attribute returns a string value representing the current status of the warehouse order.
+## Attribute: ExecutionStatus
 
 ### Expression
 ```
@@ -62,23 +81,20 @@ This attribute returns a string value representing the current status of the war
 20: EQUAL ATTRIB:#Status_NotStarted CONST:True  
 30: IIF EXP:40 CONST:Completed EXP:50  
 40: EQUAL ATTRIB:#Status_Fulfilled CONST:True  
-50: IIF EXP:60 CONST:CompletedWithIssues CONST:InProgress  
+50: IIF EXP:60 CONST:ClosedWithIssues CONST:InProgress  
 60: GTE EXP:70 CONST:40  
 70: CAST ATTRIB:State CONST:System.Int32
 ```
-
 ### Explanation
 
-- 10: If #Status_NotStarted is True → returns NotStarted.
-- 30: If not, and #Status_Fulfilled is True → returns Completed.
-- 50: Otherwise:
-  - If document State (as integer) >= 40 → returns CompletedWithIssues.
-  - Else → returns InProgress.
+- 20: Checks if the order has no fulfillments.
+- 40: Checks if all lines are fulfilled.
+- 60–70: Checks if the document state is greater than or equal to 40.
+- 10: Returns NotStarted, Completed, ClosedWithIssues or InProgress depending on the conditions above.
 
 ## Summary
 
-- #Status_NotStarted checks whether the warehouse order has no fulfillments.
-- #Status_Fulfilled ensures all lines in the order are fulfilled.
-- ExecutionStatus combines both checks with the document state to give a readable, traceable lifecycle label for the order.
-
-This attribute is intended for use in manager dashboards and WMS views to help warehouse supervisors track progress and identify issues quickly.
+- #LineIsFulfilled determines whether a single line is fulfilled based on fulfillment documents and quantity comparison.
+- #Status_NotStarted checks if there are no fulfillments in the order.
+- #Status_Fulfilled verifies whether all lines in the order are fulfilled.
+- ExecutionStatus combines the above with the document state to provide a readable and traceable status for the order lifecycle.
