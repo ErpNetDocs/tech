@@ -1,16 +1,11 @@
 # Setup Warehouse Manager View
 
-The Warehouse Manager View in ERP.net provides warehouse supervisors with a unified interface to monitor and control warehouse operations. 
-This view facilitates the entire fulfillment process, from reviewing incoming requisitions to managing warehouse orders and initiating follow-up actions when necessary.
+## Overview
 
-## Access and Purpose
+The Warehouse Manager View in ERP.net provides warehouse supervisors with a unified interface to monitor and control warehouse operations.  
+This view facilitates the entire fulfillment process — from reviewing incoming requisitions to monitoring execution, managing follow-ups, and assigning new orders.
 
-The **Warehouse Manager View** is a Saved View in the ERP.net Desktop Client, accessed via the WarehouseOrders Navigator. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
-
-- Quick access to order states and statuses
-- Visual status feedback via conditional formatting
-- Multi-level document inspection and control
-- Mass-assignment and execution of warehouse orders
+The view guides the manager through the full execution flow — from monitoring fulfillment progress and confirming requisitions, to initiating follow-up orders and reassigning new tasks.
 
 ## Interface Composition
 
@@ -34,16 +29,16 @@ The navigator includes several example calculated attributes configured to demon
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
 
-You can see how By Progress attributes are created here: [Execution status for warehouse orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
-You can see how By Direction attribute is created here: [Execution status for warehouse orders](../../../../advanced/calculated-attributes/examples/requisition-type.md)
-
-
+You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Fulfilled and remaining quantity attributes](#)  
+You can see how **Fulfillment Status** is created here: [Fulfillment status attribute](#)
 
 ### 2. Web Panels (Right Pane)
 
-There are four Web View panels, configured to load documents in Single Record form via dynamic URLs. 
-The content in these panels is automatically synchronized with the selection in the navigator on the left. 
-When a Warehouse Order is selected, each panel displays information relevant to that specific order.
+There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.  
+Three of them are automatically synchronized with the selection in the navigator on the left — when a Warehouse Order is selected, each panel displays information related to that specific order.  
+The fourth panel embeds the same navigator again and is used for assigning orders directly from within the view.
+
+---
 
 ## Web Panel 1: Warehouse Order Details
 
@@ -67,18 +62,12 @@ The **Transactions** section shows:
 - Timestamp of execution  
 - Line-level details (product, quantity, location, lot, serial numbers, etc.)
 
-### Setup
-
-In Change View mode, enter the following in the field **Source URL (with placeholders)**:
-```
-https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
-```
-You can also customize the panel’s name using the **Panel title** field.
-
 #### Functional Highlights
 
 - The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
 - The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.
+
+---
 
 ## Web Panel 2: Requisition (Parent Document)
 
@@ -95,8 +84,9 @@ You can also customize the panel’s name using the **Panel title** field.
 
 #### Functional Highlights
 
-- Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel either to initiate a follow-up or to verify that everything is complete.
+- Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.
 
+---
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
@@ -117,23 +107,22 @@ You can also customize the panel’s name using the **Panel title** field.
 
 - Create a follow-up Store Order using the UI function [Create Follow-Up Store Order](#).
 
+---
 
 ## Web Panel 4: Warehouse Orders Navigator
 
-This panel embeds the Warehouse Orders navigator again, making it possible to perform bulk actions on multiple orders directly from the view.
+This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.
 
 #### Functional Highlights
 
-- Assign selected orders to a specific performer using the UI function [Assign Worker](#)  
-- Change the performer of already assigned orders via [Change Worekr](#)
+- Assign selected orders to a specific performer using the UI function [Assign to performer](#)  
+- Change the performer of already assigned orders via [Change performer](#)
 
 ### Setup
 
 In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.  
 The panel’s name can be adjusted using the **Panel title** field.
 
-
-> [!NOTE]
-> - Use the Change View mode to customize or replicate this layout for other operational views
-> - The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance  
-
+> [!NOTE]  
+> Use the Change View mode to customize or replicate this layout for other operational views.  
+> The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance.
