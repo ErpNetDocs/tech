@@ -121,15 +121,16 @@ This panel embeds the Warehouse Orders navigator again, making it possible to pe
 
 #### Functional Highlights
 
-- Assign selected orders to a specific performer using the UI function [Assign to performer](#)  
-- Change the performer of already assigned orders via [Change performer](#)
+- Assign selected orders to a specific performer using the UI function [Assign Worker](#)  
+- Change the performer of already assigned orders via [Change Worekr](#)
 
 ### Setup
 
 In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.  
 The panel’s name can be adjusted using the **Panel title** field.
 
-![Notes] 
-- Use the Change View mode to customize or replicate this layout for other operational views  
-- The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance  
+
+> [!NOTE]
+> - Use the Change View mode to customize or replicate this layout for other operational views
+> - The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance  
 
