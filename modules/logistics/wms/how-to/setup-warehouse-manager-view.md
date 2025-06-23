@@ -1,5 +1,8 @@
 # Setup Warehouse Manager View
 
+The Warehouse Manager View in ERP.net provides warehouse supervisors with a unified interface to monitor and control warehouse operations. 
+This view facilitates the entire fulfillment process, from reviewing incoming requisitions to managing warehouse orders and initiating follow-up actions when necessary.
+
 ## Access and Purpose
 
 The **Warehouse Manager View** is a Saved View in the ERP.net Desktop Client, accessed via the WarehouseOrders Navigator. It is designed to provide warehouse supervisors with a consolidated operational interface that enables:
