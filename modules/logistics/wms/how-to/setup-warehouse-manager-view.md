@@ -72,14 +72,15 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
 ```
 You can also customize the panel’s name using the **Panel title** field.
 
-### Functional Highlights
+#### Functional Highlights
 
-- Lines display execution progress via embedded CA rules
-- Users can mark the order as Completed directly from this panel
+- The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
+- The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.
 
 ## Web Panel 2: Requisition (Parent Document)
 
-Displays the Warehouse Requisition associated with the selected order.
+This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.  
+When the requisition is marked as Completed, the corresponding Store Transaction is automatically created through the document event [Completed Warehouse Requisition](#).
 
 ### Setup
 
@@ -89,11 +90,10 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Pare
 ```
 You can also customize the panel’s name using the **Panel title** field.
 
-### Functional Highlights
+#### Functional Highlights
 
-- Users can mark the requisition as Completed
-- This triggers automatic Store Order Posting
-- A corresponding Store Transaction is generated
+- Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel either to initiate a follow-up or to verify that everything is complete.
+
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
