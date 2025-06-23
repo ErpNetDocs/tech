@@ -29,8 +29,8 @@ The navigator includes several example calculated attributes configured to demon
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
 
-You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Fulfilled and remaining quantity attributes](#)  
-You can see how **Fulfillment Status** is created here: [Fulfillment status attribute](#)
+You can see how **By Progress** attributes are created here: [Execution Status for Warehouse Orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)  
+You can see how the **By Direction** attribute is created here: [Requisition Type](../../../../advanced/calculated-attributes/examples/requisition-type.md)
 
 ### 2. Web Panels (Right Panel)
 
@@ -51,8 +51,8 @@ In addition to the standard data, the following calculated attributes are shown 
 - Remaining Quantity  
 - Fulfillment Status  
 
-You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Fulfilled and remaining quantity attributes](#)  
-You can see how **Fulfillment Status** is created here: [Fulfillment status attribute](#)
+You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Executed and Remaining Quantities for Warehouse Order Lines](../../../../advanced/calculated-attributes/examples/executed-and-remaining-quantities-for-warehouse-order-lines.md)  
+You can see how **Fulfillment Status** is created here: [Execution Status for Warehouse Orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
 
 The **Transactions** section shows:
 
