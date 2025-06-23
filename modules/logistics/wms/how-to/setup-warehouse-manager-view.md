@@ -52,7 +52,7 @@ In addition to the standard data, the following calculated attributes are shown 
 - Fulfillment Status  
 
 You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Executed and Remaining Quantities for Warehouse Order Lines](../../../../advanced/calculated-attributes/examples/executed-and-remaining-quantities-for-warehouse-order-lines.md)  
-You can see how **Fulfillment Status** is created here: [Execution Status for Warehouse Orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)
+You can see how **Fulfillment Status** is created here: [Execution Status for Warehouse Orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md) -  CA #LineIsFulfilled
 
 The **Transactions** section shows:
 
