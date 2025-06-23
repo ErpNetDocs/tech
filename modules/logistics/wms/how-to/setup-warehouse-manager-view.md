@@ -68,7 +68,7 @@ The **Transactions** section shows:
 ## Web Panel 2: Requisition (Parent Document)
 
 This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.  
-When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order. [Completed Warehouse Requisition](document-flow). 
+When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order. [Completed Warehouse Requisition](document-flow.md). 
 
 ### Setup
 
