@@ -113,13 +113,12 @@ This view facilitates the entire fulfillment process — from reviewing incoming
 </li>
 </ul>
 <p>These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.</p>
-<p>You can see how <strong>Fulfilled Quantity</strong> and <strong>Remaining Quantity</strong> are created here: <a href="#">Fulfilled and remaining quantity attributes</a><br>
-You can see how <strong>Fulfillment Status</strong> is created here: <a href="#">Fulfillment status attribute</a></p>
-<h3 id="2-web-panels-right-pane">2. Web Panels (Right Pane)</h3>
+<p>You can see how <strong>By Progress</strong> attributes are created here: <a href="../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.html">Execution Status for Warehouse Orders</a><br>
+You can see how the <strong>By Direction</strong> attribute is created here: <a href="../../../../advanced/calculated-attributes/examples/requisition-type.html">Requisition Type</a></p>
+<h3 id="2-web-panels-right-panel">2. Web Panels (Right Panel)</h3>
 <p>There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.<br>
 Three of them are automatically synchronized with the selection in the navigator on the left — when a Warehouse Order is selected, each panel displays information related to that specific order.<br>
 The fourth panel embeds the same navigator again and is used for assigning orders directly from within the view.</p>
-<hr>
 <h2 id="web-panel-1-warehouse-order-details">Web Panel 1: Warehouse Order Details</h2>
 <p>This panel displays the Single Record Form of the Warehouse Order selected in the navigator on the left.</p>
 <p>It provides a complete operational view of the order — allowing warehouse managers to track what has been ordered, how much has been fulfilled, and how execution is progressing.<br>
@@ -130,8 +129,8 @@ The <strong>Lines</strong> section includes all key information about the ordere
 <li>Remaining Quantity</li>
 <li>Fulfillment Status</li>
 </ul>
-<p>You can see how <strong>Fulfilled Quantity</strong> and <strong>Remaining Quantity</strong> are created here: <a href="#">Fulfilled and remaining quantity attributes</a><br>
-You can see how <strong>Fulfillment Status</strong> is created here: <a href="#">Fulfillment status attribute</a></p>
+<p>You can see how <strong>Fulfilled Quantity</strong> and <strong>Remaining Quantity</strong> are created here: <a href="../../../../advanced/calculated-attributes/examples/executed-and-remaining-quantities-for-warehouse-order-lines.html">Executed and Remaining Quantities for Warehouse Order Lines</a><br>
+You can see how <strong>Fulfillment Status</strong> is created here: <a href="../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.html">Execution Status for Warehouse Orders</a> -  CA #LineIsFulfilled</p>
 <p>The <strong>Transactions</strong> section shows:</p>
 <ul>
 <li>User who executed the operation</li>
@@ -143,10 +142,9 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="#"
 <li>The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.</li>
 <li>The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.</li>
 </ul>
-<hr>
 <h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
 <p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
-When the requisition is marked as Completed, the corresponding Store Transaction is automatically created through the document event <a href="#">Completed Warehouse Requisition</a>.</p>
+When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order. <a href="document-flow">Completed Warehouse Requisition</a>.</p>
 <h3 id="setup">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
@@ -156,7 +154,6 @@ When the requisition is marked as Completed, the corresponding Store Transaction
 <ul>
 <li>Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.</li>
 </ul>
-<hr>
 <h2 id="web-panel-3-store-order-grandparent-document">Web Panel 3: Store Order (Grandparent Document)</h2>
 <p>This panel displays the Single Record Form of the Store Order, which is the grandparent document of the selected Warehouse Order.<br>
 It is used to review the source document that generated the requisition.<br>
@@ -171,17 +168,18 @@ This action starts a new execution cycle by generating a new requisition and War
 <ul>
 <li>Create a follow-up Store Order using the UI function <a href="#">Create Follow-Up Store Order</a>.</li>
 </ul>
-<hr>
 <h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
 <p>This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.</p>
 <h4 id="functional-highlights-3">Functional Highlights</h4>
 <ul>
-<li>Assign selected orders to a specific performer using the UI function <a href="#">Assign to performer</a></li>
-<li>Change the performer of already assigned orders via <a href="#">Change performer</a></li>
+<li>Assign selected orders to a specific worker using the UI function <a href="assign-worker.html#">Assign Worker</a></li>
+<li>Change the performer of already assigned orders via Change Worker UI function</li>
 </ul>
 <h3 id="setup-2">Setup</h3>
-<p>In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.<br>
-The panel’s name can be adjusted using the <strong>Panel title</strong> field.</p>
+<p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders
+</code></pre>
+<p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Use the Change View mode to customize or replicate this layout for other operational views.<br>
