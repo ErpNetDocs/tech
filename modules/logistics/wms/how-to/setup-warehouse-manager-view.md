@@ -107,8 +107,8 @@ This panel embeds the Warehouse Orders navigator again, making it possible to ma
 
 #### Functional Highlights
 
-- Assign selected orders to a specific performer using the UI function [Assign to performer](#)  
-- Change the performer of already assigned orders via [Change performer](#)
+- Assign selected orders to a specific worker using the UI function [Assign Worker](assign-worker.md#assign-multiple-workers)  
+- Change the performer of already assigned orders via Change Worker UI function
 
 ### Setup
 
