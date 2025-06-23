@@ -44,17 +44,25 @@ When a Warehouse Order is selected, each panel displays information relevant to 
 
 ## Web Panel 1: Warehouse Order Details
 
-Displays the selected Warehouse Order form, including:
+This panel displays the Single Record Form of the Warehouse Order selected in the navigator on the left.
 
-- **Lines** – Show:
-  - Fulfilled Quantity
-  - Remaining Quantity
-  - Fulfillment Status
+It provides a complete operational view of the order — allowing warehouse managers to track what has been ordered, how much has been fulfilled, and how execution is progressing.  
+The **Lines** section includes all key information about the ordered items, such as product, quantity, unit of measure, and other essential system fields.
 
-- **Transactions** – Show:
-  - User who executed the operation
-  - Timestamp of execution
-  - Line-level details (product, quantity, location, batch/serial numbers, etc.)
+In addition to the standard data, the following calculated attributes are shown to highlight execution progress:
+
+- Fulfilled Quantity  
+- Remaining Quantity  
+- Fulfillment Status  
+
+You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Fulfilled and remaining quantity attributes](#)  
+You can see how **Fulfillment Status** is created here: [Fulfillment status attribute](#)
+
+The **Transactions** section shows:
+
+- User who executed the operation  
+- Timestamp of execution  
+- Line-level details (product, quantity, location, lot, serial numbers, etc.)
 
 ### Setup
 
