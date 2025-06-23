@@ -129,8 +129,7 @@ This panel embeds the Warehouse Orders navigator again, making it possible to pe
 In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.  
 The panel’s name can be adjusted using the **Panel title** field.
 
-![Notes]
-
+![Notes] 
 - Use the Change View mode to customize or replicate this layout for other operational views  
 - The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance  
 
