@@ -32,7 +32,7 @@ These are just examples provided for convenience. Users can define and apply the
 You can see how **Fulfilled Quantity** and **Remaining Quantity** are created here: [Fulfilled and remaining quantity attributes](#)  
 You can see how **Fulfillment Status** is created here: [Fulfillment status attribute](#)
 
-### 2. Web Panels (Right Pane)
+### 2. Web Panels (Right Panel)
 
 There are four Web View panels, configured to load documents in Single Record form via dynamic URLs.  
 Three of them are automatically synchronized with the selection in the navigator on the left — when a Warehouse Order is selected, each panel displays information related to that specific order.  
