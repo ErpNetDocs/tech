@@ -28,6 +28,7 @@ The navigator includes several example calculated attributes configured to demon
   - Indicates the logistical flow direction with specific formatting
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
+The visual effect for the progress attribute is achieved through Expression Format Conditions applied in the navigator.
 
 You can see how **By Progress** attributes are created here: [Execution Status for Warehouse Orders](../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.md)  
 You can see how the **By Direction** attribute is created here: [Requisition Type](../../../../advanced/calculated-attributes/examples/requisition-type.md)
