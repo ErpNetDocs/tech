@@ -112,7 +112,8 @@ This view facilitates the entire fulfillment process — from reviewing incoming
 </ul>
 </li>
 </ul>
-<p>These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.</p>
+<p>These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
+The visual effect for the progress attribute is achieved through Expression Format Conditions applied in the navigator.</p>
 <p>You can see how <strong>By Progress</strong> attributes are created here: <a href="../../../../advanced/calculated-attributes/examples/execution-status-for-warehouse-orders.html">Execution Status for Warehouse Orders</a><br>
 You can see how the <strong>By Direction</strong> attribute is created here: <a href="../../../../advanced/calculated-attributes/examples/requisition-type.html">Requisition Type</a></p>
 <h3 id="2-web-panels-right-panel">2. Web Panels (Right Panel)</h3>
@@ -144,7 +145,7 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="..
 </ul>
 <h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
 <p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
-When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order. <a href="document-flow">Completed Warehouse Requisition</a>.</p>
+When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - <a href="document-flow.html">Completed Warehouse Requisition</a>.</p>
 <h3 id="setup">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
@@ -164,13 +165,12 @@ This action starts a new execution cycle by generating a new requisition and War
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<h4 id="functional-highlights-2">Functional Highlights</h4>
-<ul>
-<li>Create a follow-up Store Order using the UI function <a href="#">Create Follow-Up Store Order</a>.</li>
-</ul>
+<p>Use the <strong>UI Functions</strong> button to create a <strong>Requisition for Further Execution</strong>.<br>
+Select the document type for the new requisition from those allowed in the <a href="document-flow.html">Document Route</a>.
+This action starts a new execution cycle for the newly created requisition.</p>
 <h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
 <p>This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.</p>
-<h4 id="functional-highlights-3">Functional Highlights</h4>
+<h4 id="functional-highlights-2">Functional Highlights</h4>
 <ul>
 <li>Assign selected orders to a specific worker using the UI function <a href="assign-worker.html#">Assign Worker</a></li>
 <li>Change the performer of already assigned orders via Change Worker UI function</li>
