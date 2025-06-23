@@ -112,8 +112,11 @@ This panel embeds the Warehouse Orders navigator again, making it possible to ma
 
 ### Setup
 
-In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.  
-The panel’s name can be adjusted using the **Panel title** field.
+In Change View mode, enter the following in the field **Source URL (with placeholders)**:
+```
+https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders
+```
+You can also customize the panel’s name using the **Panel title** field.
 
 > [!NOTE]  
 > Use the Change View mode to customize or replicate this layout for other operational views.  
