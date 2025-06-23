@@ -38,8 +38,6 @@ There are four Web View panels, configured to load documents in Single Record fo
 Three of them are automatically synchronized with the selection in the navigator on the left — when a Warehouse Order is selected, each panel displays information related to that specific order.  
 The fourth panel embeds the same navigator again and is used for assigning orders directly from within the view.
 
----
-
 ## Web Panel 1: Warehouse Order Details
 
 This panel displays the Single Record Form of the Warehouse Order selected in the navigator on the left.
@@ -67,8 +65,6 @@ The **Transactions** section shows:
 - The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
 - The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.
 
----
-
 ## Web Panel 2: Requisition (Parent Document)
 
 This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.  
@@ -85,8 +81,6 @@ You can also customize the panel’s name using the **Panel title** field.
 #### Functional Highlights
 
 - Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.
-
----
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
@@ -106,8 +100,6 @@ You can also customize the panel’s name using the **Panel title** field.
 #### Functional Highlights
 
 - Create a follow-up Store Order using the UI function [Create Follow-Up Store Order](#).
-
----
 
 ## Web Panel 4: Warehouse Orders Navigator
 
