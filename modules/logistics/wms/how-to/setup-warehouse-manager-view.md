@@ -97,7 +97,10 @@ You can also customize the panel’s name using the **Panel title** field.
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
-Displays the parent of the requisition, which is the Store Order.
+This panel displays the Single Record Form of the Store Order, which is the grandparent document of the selected Warehouse Order.  
+It is used to review the source document that generated the requisition.  
+If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.  
+This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.
 
 ### Setup
 
@@ -107,24 +110,27 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.P
 ```
 You can also customize the panel’s name using the **Panel title** field.
 
-### Functional Highlights
+#### Functional Highlights
 
-- Enables creation of Follow-Up Store Orders (e.g., for unfulfilled lines)
+- Create a follow-up Store Order using the UI function [Create Follow-Up Store Order](#).
+
 
 ## Web Panel 4: Warehouse Orders Navigator
 
-Embeds the navigator again, enabling mass operations such as:
+This panel embeds the Warehouse Orders navigator again, making it possible to perform bulk actions on multiple orders directly from the view.
 
-- Multi-select assignment of orders to a specific performer
-- Execution of bulk UI actions (via toolbar)
+#### Functional Highlights
+
+- Assign selected orders to a specific performer using the UI function [Assign to performer](#)  
+- Change the performer of already assigned orders via [Change performer](#)
 
 ### Setup
 
 In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.  
 The panel’s name can be adjusted using the **Panel title** field.
 
-## Notes
+![Notes]
 
-- The instance name in the Web Panel URLs should reflect the current ERP tenant (e.g., `internal-nbeta`)
-- Use the Change View mode to customize or replicate this layout for other operational views
-- Conditional Appearances (CA
+- Use the Change View mode to customize or replicate this layout for other operational views  
+- The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance  
+
