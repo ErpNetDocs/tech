@@ -98,9 +98,9 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.P
 ```
 You can also customize the panel’s name using the **Panel title** field.
 
-#### Functional Highlights
-
-- Create a follow-up Store Order using the UI function [Create Follow-Up Store Order](#).
+Use the **UI Functions** button to create a **Requisition for Further Execution**.  
+Select the document type for the new requisition from those allowed in the [Document Route](document-flow.md).
+This action starts a new execution cycle for the newly created requisition.
 
 ## Web Panel 4: Warehouse Orders Navigator
 
