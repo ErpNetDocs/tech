@@ -146,50 +146,54 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="#"
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<h3 id="functional-highlights">Functional Highlights</h3>
+<h4 id="functional-highlights">Functional Highlights</h4>
 <ul>
-<li>Lines display execution progress via embedded CA rules</li>
-<li>Users can mark the order as Completed directly from this panel</li>
+<li>The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.</li>
+<li>The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.</li>
 </ul>
 <h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
-<p>Displays the Warehouse Requisition associated with the selected order.</p>
+<p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
+When the requisition is marked as Completed, the corresponding Store Transaction is automatically created through the document event <a href="#">Completed Warehouse Requisition</a>.</p>
 <h3 id="setup-1">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<h3 id="functional-highlights-1">Functional Highlights</h3>
+<h4 id="functional-highlights-1">Functional Highlights</h4>
 <ul>
-<li>Users can mark the requisition as Completed</li>
-<li>This triggers automatic Store Order Posting</li>
-<li>A corresponding Store Transaction is generated</li>
+<li>Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel either to initiate a follow-up or to verify that everything is complete.</li>
 </ul>
 <h2 id="web-panel-3-store-order-grandparent-document">Web Panel 3: Store Order (Grandparent Document)</h2>
-<p>Displays the parent of the requisition, which is the Store Order.</p>
+<p>This panel displays the Single Record Form of the Store Order, which is the grandparent document of the selected Warehouse Order.<br>
+It is used to review the source document that generated the requisition.<br>
+If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.<br>
+This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.</p>
 <h3 id="setup-2">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<h3 id="functional-highlights-2">Functional Highlights</h3>
+<h4 id="functional-highlights-2">Functional Highlights</h4>
 <ul>
-<li>Enables creation of Follow-Up Store Orders (e.g., for unfulfilled lines)</li>
+<li>Create a follow-up Store Order using the UI function <a href="#">Create Follow-Up Store Order</a>.</li>
 </ul>
 <h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
-<p>Embeds the navigator again, enabling mass operations such as:</p>
+<p>This panel embeds the Warehouse Orders navigator again, making it possible to perform bulk actions on multiple orders directly from the view.</p>
+<h4 id="functional-highlights-3">Functional Highlights</h4>
 <ul>
-<li>Multi-select assignment of orders to a specific performer</li>
-<li>Execution of bulk UI actions (via toolbar)</li>
+<li>Assign selected orders to a specific performer using the UI function <a href="#">Assign Worker</a></li>
+<li>Change the performer of already assigned orders via <a href="#">Change Worekr</a></li>
 </ul>
 <h3 id="setup-3">Setup</h3>
 <p>In Change View mode, you can configure this panel to display the Warehouse Orders navigator again by setting a saved view.<br>
 The panel’s name can be adjusted using the <strong>Panel title</strong> field.</p>
-<h2 id="notes">Notes</h2>
+<div class="NOTE">
+<h5>Note</h5>
 <ul>
-<li>The instance name in the Web Panel URLs should reflect the current ERP tenant (e.g., <code>internal-nbeta</code>)</li>
 <li>Use the Change View mode to customize or replicate this layout for other operational views</li>
-<li>Conditional Appearances (CA</li>
+<li>The instance name in the Web Panel URLs must match the name of your specific ERP tenant instance</li>
 </ul>
+</div>
 
 </article>
 
