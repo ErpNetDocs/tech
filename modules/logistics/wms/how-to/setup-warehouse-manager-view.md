@@ -65,7 +65,8 @@ The **Transactions** section shows:
 - Timestamp of execution  
 - Line-level details (product, quantity, location, lot, serial numbers, etc.)
 
-Setup
+### Setup
+
 In Change View mode, enter the following in the field Source URL (with placeholders):
 ```
 https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
