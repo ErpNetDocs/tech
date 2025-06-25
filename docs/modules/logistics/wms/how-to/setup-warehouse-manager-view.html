@@ -140,6 +140,11 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="..
 <li>Timestamp of execution</li>
 <li>Line-level details (product, quantity, location, lot, serial numbers, etc.)</li>
 </ul>
+<h3 id="setup">Setup</h3>
+<p>In Change View mode, enter the following in the field Source URL (with placeholders):</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
+</code></pre>
+<p>You can also customize the panel’s name using the Panel title field.</p>
 <h4 id="functional-highlights">Functional Highlights</h4>
 <ul>
 <li>The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.</li>
@@ -149,7 +154,7 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="..
 <p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
 When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - <a href="document-flow.html">Completed Warehouse Requisition</a>.</p>
 <p><img src="pictures/requisition.png" alt="requisition"></p>
-<h3 id="setup">Setup</h3>
+<h3 id="setup-1">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
 </code></pre>
@@ -164,7 +169,7 @@ It is used to review the source document that generated the requisition.<br>
 If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.<br>
 This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.</p>
 <p><img src="pictures/store-order.png" alt="store-order"></p>
-<h3 id="setup-1">Setup</h3>
+<h3 id="setup-2">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
 </code></pre>
@@ -180,7 +185,7 @@ This action starts a new execution cycle for the newly created requisition.</p>
 <li>Assign selected orders to a specific worker using the UI function <a href="assign-worker.html#">Assign Worker</a></li>
 <li>Change the performer of already assigned orders via Change Worker UI function</li>
 </ul>
-<h3 id="setup-2">Setup</h3>
+<h3 id="setup-3">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders
 </code></pre>
