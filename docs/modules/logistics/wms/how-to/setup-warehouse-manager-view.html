@@ -92,6 +92,7 @@
 This view facilitates the entire fulfillment process — from reviewing incoming requisitions to monitoring execution, managing follow-ups, and assigning new orders.</p>
 <p>The view guides the manager through the full execution flow — from monitoring fulfillment progress and confirming requisitions, to initiating follow-up orders and reassigning new tasks.</p>
 <h2 id="interface-composition">Interface Composition</h2>
+<p><img src="pictures/main-panels.png" alt="main-panels"></p>
 <p>The view is structured in two parts:</p>
 <h3 id="1-main-navigator-left-panel">1. Main Navigator (Left Panel)</h3>
 <p>Displays a list of Warehouse Orders with enhanced color-coded status visualization.</p>
@@ -124,6 +125,7 @@ The fourth panel embeds the same navigator again and is used for assigning order
 <p>This panel displays the Single Record Form of the Warehouse Order selected in the navigator on the left.</p>
 <p>It provides a complete operational view of the order — allowing warehouse managers to track what has been ordered, how much has been fulfilled, and how execution is progressing.<br>
 The <strong>Lines</strong> section includes all key information about the ordered items, such as product, quantity, unit of measure, and other essential system fields.</p>
+<p><img src="pictures/order.png" alt="order"></p>
 <p>In addition to the standard data, the following calculated attributes are shown to highlight execution progress:</p>
 <ul>
 <li>Fulfilled Quantity</li>
@@ -146,6 +148,7 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="..
 <h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
 <p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
 When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - <a href="document-flow.html">Completed Warehouse Requisition</a>.</p>
+<p><img src="pictures/requisition.png" alt="requisition"></p>
 <h3 id="setup">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
@@ -160,6 +163,7 @@ When the requisition is marked as Completed, the corresponding Store Transaction
 It is used to review the source document that generated the requisition.<br>
 If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.<br>
 This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.</p>
+<p><img src="pictures/store-order.png" alt="store-order"></p>
 <h3 id="setup-1">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
@@ -170,6 +174,7 @@ Select the document type for the new requisition from those allowed in the <a hr
 This action starts a new execution cycle for the newly created requisition.</p>
 <h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
 <p>This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.</p>
+<p><img src="pictures/assign-worker-nav.png" alt="assign-worker-nav"></p>
 <h4 id="functional-highlights-2">Functional Highlights</h4>
 <ul>
 <li>Assign selected orders to a specific worker using the UI function <a href="assign-worker.html#">Assign Worker</a></li>

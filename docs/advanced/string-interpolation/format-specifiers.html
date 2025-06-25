@@ -206,14 +206,16 @@
 <p>They're different for the different data types and are described below.</p>
 <h3 id="multilanguge-string">Multilanguge string</h3>
 <ul>
-<li><p>'C', 'CURRENT' - returns the string of the current value.</p>
+<li><p>'C', 'CURRENT', 'G' - returns the string of the current value.</p>
 </li>
-<li><p>'D', 'DUMP' - returns the content of the multilanguage string in the format:</p>
+<li><p>'D', 'DUMP', 'CONTENTS' - returns the content of the multilanguage string in the format:</p>
 </li>
 </ul>
-<p><code>EN=&lt;english-string&gt; DE=&lt;german-string&gt;</code></p>
+<p><code>EN='&lt;english-string&gt;' DE='&lt;german-string&gt;'</code></p>
 <ul>
 <li><p>'T', 'TRANSLITERATED' - returns transliteration to the current language.</p>
+</li>
+<li><p>'A', 'ANY' - returns any language string, that has a value. Checks the current string first, but if it is empty, returns any string or null.</p>
 </li>
 <li><p>format specifiers for a particular language - return the translation of a specified language.</p>
 </li>

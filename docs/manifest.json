@@ -13501,6 +13501,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/assign-worker-nav.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/assign-worker-nav.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/assign_multiple.png",
       "output": {
         "resource": {
@@ -13691,6 +13701,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/main-panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/main-panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/message-link.png",
       "output": {
         "resource": {
@@ -13715,6 +13735,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/ok-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/order.png"
         }
       },
       "version": ""
@@ -13791,6 +13821,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/requisition.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/requisition.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/how-to/pictures/result_order.png",
       "output": {
         "resource": {
@@ -13845,6 +13885,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/how-to/pictures/store-order-df.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/how-to/pictures/store-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/how-to/pictures/store-order.png"
         }
       },
       "version": ""
