@@ -65,6 +65,11 @@ The **Transactions** section shows:
 - Timestamp of execution  
 - Line-level details (product, quantity, location, lot, serial numbers, etc.)
 
+#### Functional Highlights
+
+- The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
+- The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.
+
 ### Setup
 
 In Change View mode, enter the following in the field Source URL (with placeholders):
@@ -73,17 +78,16 @@ https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
 ```
 You can also customize the panel’s name using the Panel title field.
 
-#### Functional Highlights
-
-- The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
-- The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.
-
 ## Web Panel 2: Requisition (Parent Document)
 
 This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.  
 When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - [Completed Warehouse Requisition](document-flow.md). 
 
 ![requisition](pictures/requisition.png)
+
+#### Functional Highlights
+
+- Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.
 
 ### Setup
 
@@ -92,10 +96,6 @@ In Change View mode, enter the following in the field **Source URL (with placeho
 https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
 ```
 You can also customize the panel’s name using the **Panel title** field.
-
-#### Functional Highlights
-
-- Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.
 
 ## Web Panel 3: Store Order (Grandparent Document)
 
@@ -106,6 +106,10 @@ This action starts a new execution cycle by generating a new requisition and War
 
 ![store-order](pictures/store-order.png)
 
+Use the **UI Functions** button to create a **Requisition for Further Execution**.  
+Select the document type for the new requisition from those allowed in the [Document Route](document-flow.md).
+This action starts a new execution cycle for the newly created requisition.
+
 ### Setup
 
 In Change View mode, enter the following in the field **Source URL (with placeholders)**:
@@ -113,10 +117,6 @@ In Change View mode, enter the following in the field **Source URL (with placeho
 https://<instance>.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
 ```
 You can also customize the panel’s name using the **Panel title** field.
-
-Use the **UI Functions** button to create a **Requisition for Further Execution**.  
-Select the document type for the new requisition from those allowed in the [Document Route](document-flow.md).
-This action starts a new execution cycle for the newly created requisition.
 
 ## Web Panel 4: Warehouse Orders Navigator
 
