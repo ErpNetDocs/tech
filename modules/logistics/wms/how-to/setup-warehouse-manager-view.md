@@ -22,7 +22,7 @@ The navigator includes several example calculated attributes configured to demon
 - By Progress:
   - Green – Completed
   - Yellow – Released
-  - Red – Completed with shortages
+  - Red – Completed with issues
   - Gray – Not Started
 - By Direction:
   - Indicates the logistical flow direction with specific formatting
