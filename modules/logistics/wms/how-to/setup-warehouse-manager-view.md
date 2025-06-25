@@ -9,8 +9,6 @@ The view guides the manager through the full execution flow — from monitoring 
 
 ## Interface Composition
 
-![main-panels](pictures/main-panels.png)
-
 The view is structured in two parts:
 
 ### 1. Main Navigator (Left Panel)
@@ -28,6 +26,8 @@ The navigator includes several example calculated attributes configured to demon
   - Gray – Not Started
 - By Direction:
   - Indicates the logistical flow direction with specific formatting
+ 
+![main-panels](pictures/main-panels.png)
 
 These are just examples provided for convenience. Users can define and apply their own calculated attributes according to their operational needs.
 The visual effect for the progress attribute is achieved through Expression Format Conditions applied in the navigator.
