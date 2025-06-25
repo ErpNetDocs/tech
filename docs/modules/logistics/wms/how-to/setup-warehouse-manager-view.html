@@ -140,43 +140,43 @@ You can see how <strong>Fulfillment Status</strong> is created here: <a href="..
 <li>Timestamp of execution</li>
 <li>Line-level details (product, quantity, location, lot, serial numbers, etc.)</li>
 </ul>
-<h3 id="setup">Setup</h3>
-<p>In Change View mode, enter the following in the field Source URL (with placeholders):</p>
-<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
-</code></pre>
-<p>You can also customize the panel’s name using the Panel title field.</p>
 <h4 id="functional-highlights">Functional Highlights</h4>
 <ul>
 <li>The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.</li>
 <li>The warehouse manager can then see the updated status here and proceed to the next steps using the following panels.</li>
 </ul>
+<h3 id="setup">Setup</h3>
+<p>In Change View mode, enter the following in the field Source URL (with placeholders):</p>
+<pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
+</code></pre>
+<p>You can also customize the panel’s name using the Panel title field.</p>
 <h2 id="web-panel-2-requisition-parent-document">Web Panel 2: Requisition (Parent Document)</h2>
 <p>This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.<br>
 When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - <a href="document-flow.html">Completed Warehouse Requisition</a>.</p>
 <p><img src="pictures/requisition.png" alt="requisition"></p>
+<h4 id="functional-highlights-1">Functional Highlights</h4>
+<ul>
+<li>Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.</li>
+</ul>
 <h3 id="setup-1">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Wms_WarehouseRequisitions({Parent.Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<h4 id="functional-highlights-1">Functional Highlights</h4>
-<ul>
-<li>Depending on whether the order was fulfilled in full or requires further execution, the manager can choose to proceed to the next panel — either to initiate a follow-up or to verify that everything is complete.</li>
-</ul>
 <h2 id="web-panel-3-store-order-grandparent-document">Web Panel 3: Store Order (Grandparent Document)</h2>
 <p>This panel displays the Single Record Form of the Store Order, which is the grandparent document of the selected Warehouse Order.<br>
 It is used to review the source document that generated the requisition.<br>
 If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.<br>
 This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.</p>
 <p><img src="pictures/store-order.png" alt="store-order"></p>
+<p>Use the <strong>UI Functions</strong> button to create a <strong>Requisition for Further Execution</strong>.<br>
+Select the document type for the new requisition from those allowed in the <a href="document-flow.html">Document Route</a>.
+This action starts a new execution cycle for the newly created requisition.</p>
 <h3 id="setup-2">Setup</h3>
 <p>In Change View mode, enter the following in the field <strong>Source URL (with placeholders)</strong>:</p>
 <pre><code>https://&lt;instance&gt;.my.erp.net/cl/forms/Logistics_Inventory_StoreOrders({Parent.Parent.Id})
 </code></pre>
 <p>You can also customize the panel’s name using the <strong>Panel title</strong> field.</p>
-<p>Use the <strong>UI Functions</strong> button to create a <strong>Requisition for Further Execution</strong>.<br>
-Select the document type for the new requisition from those allowed in the <a href="document-flow.html">Document Route</a>.
-This action starts a new execution cycle for the newly created requisition.</p>
 <h2 id="web-panel-4-warehouse-orders-navigator">Web Panel 4: Warehouse Orders Navigator</h2>
 <p>This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.</p>
 <p><img src="pictures/assign-worker-nav.png" alt="assign-worker-nav"></p>
