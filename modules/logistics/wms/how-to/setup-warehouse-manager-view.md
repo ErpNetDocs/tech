@@ -65,6 +65,13 @@ The **Transactions** section shows:
 - Timestamp of execution  
 - Line-level details (product, quantity, location, lot, serial numbers, etc.)
 
+Setup
+In Change View mode, enter the following in the field Source URL (with placeholders):
+```
+https://<instance>.my.erp.net/cl/forms/Logistics_Wms_WarehouseOrders({Id})
+```
+You can also customize the panel’s name using the Panel title field.
+
 #### Functional Highlights
 
 - The order is marked as Completed automatically when the warehouse worker finishes it through the handheld device.  
