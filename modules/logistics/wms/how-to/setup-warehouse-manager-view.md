@@ -9,6 +9,8 @@ The view guides the manager through the full execution flow — from monitoring 
 
 ## Interface Composition
 
+[main-panels](main-panels.png)
+
 The view is structured in two parts:
 
 ### 1. Main Navigator (Left Panel)
@@ -46,6 +48,8 @@ This panel displays the Single Record Form of the Warehouse Order selected in th
 It provides a complete operational view of the order — allowing warehouse managers to track what has been ordered, how much has been fulfilled, and how execution is progressing.  
 The **Lines** section includes all key information about the ordered items, such as product, quantity, unit of measure, and other essential system fields.
 
+[order](order.png)
+
 In addition to the standard data, the following calculated attributes are shown to highlight execution progress:
 
 - Fulfilled Quantity  
@@ -71,6 +75,8 @@ The **Transactions** section shows:
 This panel displays the Single Record Form of the Warehouse Requisition that is the parent document of the selected Warehouse Order.  
 When the requisition is marked as Completed, the corresponding Store Transaction is automatically created based on a document event configured in the Store Order - [Completed Warehouse Requisition](document-flow.md). 
 
+[requisition](requisition.png)
+
 ### Setup
 
 In Change View mode, enter the following in the field **Source URL (with placeholders)**:
@@ -90,6 +96,8 @@ It is used to review the source document that generated the requisition.
 If some lines remain unfulfilled, the manager can create a follow-up Store Order from here.  
 This action starts a new execution cycle by generating a new requisition and Warehouse Order, which will then appear in Panel 1 and Panel 4 for further processing.
 
+[store-order](store-order.png)
+
 ### Setup
 
 In Change View mode, enter the following in the field **Source URL (with placeholders)**:
@@ -105,6 +113,8 @@ This action starts a new execution cycle for the newly created requisition.
 ## Web Panel 4: Warehouse Orders Navigator
 
 This panel embeds the Warehouse Orders navigator again, making it possible to manage multiple orders at once using group operations.
+
+[assign-worker-nav](assign-worker-nav.png)
 
 #### Functional Highlights
 
