@@ -24,8 +24,8 @@ The navigator includes several example calculated attributes configured to demon
   - Yellow – Released
   - Red – Completed with issues
   - Gray – Not Started
-- By Direction:
-  - Indicates the logistical flow direction with specific formatting
+- By Direction:  
+  - Shows the logistical flow direction based on a calculated attribute
  
 ![main-panels](pictures/main-panels.png)
 
