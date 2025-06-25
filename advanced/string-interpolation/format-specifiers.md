@@ -162,13 +162,15 @@ They're different for the different data types and are described below.
 
 ### Multilanguge string
 
-- 'C', 'CURRENT' - returns the string of the current value.
+- 'C', 'CURRENT', 'G' - returns the string of the current value.
 
-- 'D', 'DUMP' - returns the content of the multilanguage string in the format: 
+- 'D', 'DUMP', 'CONTENTS' - returns the content of the multilanguage string in the format: 
 
-`EN=<english-string> DE=<german-string>`
+`EN='<english-string>' DE='<german-string>'`
  
 - 'T', 'TRANSLITERATED' - returns transliteration to the current language.
+
+- 'A', 'ANY' - returns any language string, that has a value. Checks the current string first, but if it is empty, returns any string or null.  
 
 - format specifiers for a particular language - return the translation of a specified language. 
  
