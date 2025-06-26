@@ -554,6 +554,26 @@ If the <a href="../advanced/jobs/J38417.html">J38417 Delete old audit logs</a> j
 <li>b.The user sets it manually</li>
 <li>c.The key is introduced in version: - 25</li>
 </ul>
+<h2 id="69-aiassistantadditionalnavigatorinstructions">69. /AI/Assistant/AdditionalNavigatorInstructions</h2>
+<ul>
+<li>a.Action: Additional instructions, passed to the AI assistant when it is launched from a navigator or report form. Defines additional guidance passed to the AI Assistant to tailor its behavior in navigator or report contexts. If no custom value is specified by the user, the system default instructions are applied.
+The default instructions are:</li>
+</ul>
+<pre><code>If there is an attached file, consider that it might be a JSON file exported from our ERP system.
+
+- The file contains a report/navigator.
+- The report’s name is in the &quot;title&quot; key.
+- The report’s description is in the &quot;description&quot; key.
+- The records are inside the array named &quot;objects&quot;.
+
+Please load and understand the structure of the file. Actually read it, don't pretend to have read it.
+Remember the contents of this file for future questions next questions might relate to its data.
+If you need to analyze the data, you may use Python code.
+</code></pre>
+<ul>
+<li>b.The user sets it manually</li>
+<li>c.The key is introduced in version: - 26</li>
+</ul>
 
 </article>
 
