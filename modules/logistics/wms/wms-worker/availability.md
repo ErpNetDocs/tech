@@ -21,3 +21,13 @@ You will find the following information about the product:
 If you select a LUN, the availability of this particular LUN is shown. In the LUN field, you can enter values from LogisticUnits.SerialCode. The location is only one, you can read more about preventing LUN from being in different locations. You will see the availability only in this LUN:
 
 ![Availability by_lun](pictures/availability-by-lun.png)
+
+### Details panel on row selection
+
+Tapping a row opens a **Details** panel showing the full names of all fields. Labels are bold and displayed above their values for improved readability.
+
+For the **Product**, both the product code (`PartNumber`) and the name are shown, one below the other.
+
+This view makes it easier to inspect item information in context, especially when products have similar names, lots, or serials.
+
+![Details-panel](pictures/details-panel.png)
