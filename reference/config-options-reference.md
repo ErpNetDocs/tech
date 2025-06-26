@@ -383,3 +383,22 @@ If the [J38417 Delete old audit logs](~/advanced/jobs/J38417.md) job is configur
 - a.Action: Context depth is the number of previous comments that will be included in the prompt. Defaults to `100`.
 - b.The user sets it manually
 - c.The key is introduced in version: - 25
+
+## 69. /AI/Assistant/AdditionalNavigatorInstructions
+- a.Action: Additional instructions, passed to the AI assistant when it is launched from a navigator or report form. Defines additional guidance passed to the AI Assistant to tailor its behavior in navigator or report contexts. If no custom value is specified by the user, the system default instructions are applied.
+The default instructions are:
+````
+If there is an attached file, consider that it might be a JSON file exported from our ERP system.
+
+- The file contains a report/navigator.
+- The report’s name is in the "title" key.
+- The report’s description is in the "description" key.
+- The records are inside the array named "objects".
+
+Please load and understand the structure of the file. Actually read it, don't pretend to have read it.
+Remember the contents of this file for future questions next questions might relate to its data.
+If you need to analyze the data, you may use Python code.
+````
+- b.The user sets it manually
+- c.The key is introduced in version: - 26
+
