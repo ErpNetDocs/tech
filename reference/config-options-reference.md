@@ -323,9 +323,9 @@ If the [J35666 Delete attribute changes history](~/advanced/jobs/J35666.md) job 
 - c.The key is introduced in version: - 24
 
 ## 60. /AI/Assistant/AdditionalInstructions
-- a.Action: Additional instructions, passed to the AI assistant.
+- a.Action: Additional instructions, passed to the AI assistant when it is launched from a single record form (definition). Defines additional guidance passed to the AI Assistant to tailor its behavior to a single record context. If no custom value is specified by the user, the system default instructions are applied.
 - b.The user sets it manually
-- c.The key is introduced in version: - 24
+- c.The key is introduced in version: - 24, Changed in version: 26 - Since this version, it no longer contains instructions for all form types. It is now valid only for single-record forms. For navigator forms, a different key is used: "/AI/Assistant/AdditionalNavigatorInstructions"."
 
 ## 61. /WMS/WMS-Worker/ProductDisplayFormat
 - a.Action: When this key is defined, the WMS Worker application will display the data you need replacing the Product field in the Warehouse order line list.
