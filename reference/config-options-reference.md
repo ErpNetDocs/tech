@@ -12,22 +12,22 @@ Config options are system settings with global and key importance for the operat
 The options set for the database are visible in the Configurations navigator and can have different values in each database. 
 
 
-## А list of configuration keys, their action and possible values: ##
+## А list of configuration keys, their action, and possible values: ##
 
 ## 1. AllowFirmPlannedParentForReleasedChild 
-- a.Action: When the key has value and this value is "1" the following is allows: released subdocuments of FirmPlanned document are allowed.
+- a.Action: When the key has value and this value is "1", the following is allowed: released subdocuments of the FirmPlanned document are allowed.
 - b.The user sets it manually.
 
 ## 2. CheckForNonVoidedReferencingDocumentsDisabled
-- a.Action: When the key has value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
+- a.Action: When the key hasa  value and this value is "1", verification for references between the documents is not performed when a document is made void. In all other cases, the verification is performed. 
 - b.The user sets it manually.
 
 ## 3. CheckForOverexecutionDisabled
-- a.Action: When the key has value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
+- a.Action: When the key has a value and this value is "1", verification for over execution of the parent order documents is not performed. In all other cases, the verification is performed. 
 - b.The user sets it manually.
 
 ## 4. CheckForOverinvoicedQuantityInSalesOrderLinesDisabled
-- a.Action: When the key has value and this value is "1", verification for invoicing greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
+- a.Action: When the key has a value and this value is "1", verification for invoicing a greater quantity than the sold quantity is not performed. In all other cases, the verification is performed. 
 - b.The user sets it manually.
 
 ## 5. CheckForTransactionMovementTypeDifferentThanParentStoreOrderMovementTypeDisabled
@@ -40,11 +40,11 @@ The options set for the database are visible in the Configurations navigator and
 
 ## 7. Default_Enterprise_Company_Location_Id/XXX
 - a.Action: Defines the default company location. XXX is the ID of the enterprise company. The value is the ID of the default company location.
-- b.Set automatically by the system of the user.
+- b.Set automatically by the system for the user.
 
 ## 8. Documents/OnlySaveNewVersionsToHistory
-- a.*This key is used for compatibility with older versions of the software. The old method of saving a document in the document history is to save the previous version before the current version is saved. The new method is to save the current version.*
-- b.Action: When the key has value and this value is "1", the new method is applied. In all other cases, the old method is applied.
+- a.*This key is used for compatibility with older versions of the software. The old method of saving a document in the document history was to save the previous version before the current version was saved. The new method is to save the current version.*
+- b.Action: When the key has a value and this value is "1", the new method is applied. In all other cases, the old method is applied.
 - c.The user sets it manually.
 
 ## 9. DontCheckForNegativeUnitPrice
@@ -52,24 +52,24 @@ The options set for the database are visible in the Configurations navigator and
 - b.The user sets it manually.
 
 ## 10. Inv/CheckForNegativeAvailability
-- a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative and also if the document date is not today's date, the validation checks for not negative stock balance for the dates in the transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different than "1" the described validations are not performed.
+- a.Action: When the key has value "1", verification for negative stock balance is performed. The verification checks if the stock balance after the current operation would not become negative, and also if the document date is not today's date, the validation checks for a non-negative stock balance for the dates in the transaction timestamps in the store transaction rows. If the key has an empty value (null) or its value is different from "1", the described validations are not performed.
 - b.The user sets it manually.
 
 ## 11. InvoiceFiscalPrintChangeToState (DEPRECATED)
-- a.Action: This key specifies the document state to which an invoice is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to Released state.
+- a.Action: This key specifies the document state to which an invoice is switched after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the invoice is switched to the Released state.
 - b.The user sets it manually.
 
 ## 12. InvoiceFiscalPrintUseDistributedAmountsForUnitPrice
-- a.Action: When the key has value and this value is "1", the unit price which is sent to the fiscal printer is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
+- a.Action: When the key has value and this value is "1", the unit price, which is sent to the fiscal printer, is calculated through the distributed amounts, which are added to the products. In all other cases, the unit price is calculated as follows: the unit price in the document line with VAT included and discounts in the row.
 - b.The user sets it manually.
 
 ## 13. Last_Used_Enterprise_Company_Id
-- a.Action: Defines the last used by the user enterprise company. The value is the id of the enterprise company.
-- b.Set automatically by the system of the user.
+- a.Action: Contains the last enterprise company used by the user. The value is the ID of the enterprise company.
+- b.Set automatically by the system for the user.
 
 ## 14. Last_Used_Enterprise_Company_Location_Id/XXX
-- a.Defines the last used by the user enterprise company location. The value is the id of the enterprise company location.
-- b.Set automatically by the system of the user.
+- a.Action: Contains the last enterprise company location used by the user. The value is the ID of the enterprise company location.
+- b.Set automatically by the system for the user.
 
 ## 15. Кеу - SalesOrderFiscalPrintChangeToState (DEPRECATED)
 - a.Action: This key specifies the document state to which a sales order is switched to after the receipt is printed. The key value is the numeric value of the document states (0 = New, 10 = Planned, 20 = FirmPlanned, 30 = Released, 40 = Completed). In all other cases, the sales order is switched to Released state.
