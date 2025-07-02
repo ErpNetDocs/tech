@@ -65,6 +65,9 @@ Also, most of the notifications are created automatically via business rules whe
 |22| NT_CASE_UPDATE_ASSIGN | Case | **[R38389](https://docs.erp.net/model/business-rules/R38389.html) Case** - Notify Assigned To User For Update | Notify the assigned user when the Case is edited.
 |23| NT_ACTPARTICIPANTS_ASSIGN | Activity | **[R36471](https://docs.erp.net/model/business-rules/R36471.html) Activity** - Notify Activity Participants Upon Assignment | Notify users when they are assigned as participants in the Activity.
 |24| NT_COMPILATION_COMPLETION | Compilation | **[R36563](https://docs.erp.net/model/business-rules/R36563.html) Compilation** - Notify On Completion | Notify the user who initiated the compilation when the compilation is finished.
+|25| NT_WEBSITE_EXT_MSSYNC | System |  - | Notify corresponding user that the MS Sync experienced an error.
+|26| NT_WEBSITE_EXT_VIDEOCONFERENCING | System |  - | Notify corresponding user that a Video Conference (meeting) has started.
+|27| NT_WEBSITE_EXT_VIDEOCONFERENCING_RECORDING | System |  - | Notify corresponding user that a new recording from a Video Conference (meeting) is available.
 
 ## I don't care about notifications
 
