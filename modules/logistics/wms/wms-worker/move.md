@@ -9,7 +9,7 @@ You can now perform a transfer either by **Location** or directly by **Logistic 
 - **Move by Location**  
   - Activates the Location field  
 - **Move by LUN**  
-  - Activates the LUN field (accepts active LogisticUnits.SerialCode)  
+  - Activates the LUN field 
   - The system validates that the LUN exists and has availability in the current warehouse
 
 ![Radio-buttons](pictures/radio-buttons.png)
