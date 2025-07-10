@@ -2,8 +2,6 @@
 
 This screen allows you to perform product transfers within the warehouse using one of two options:
 
----
-
 ## Move by Location or LUN
 
 You can now perform a transfer either by **Location** or directly by **Logistic Unit (LUN)**. Use the radio buttons at the top of the screen to select the preferred method:
@@ -16,8 +14,6 @@ You can now perform a transfer either by **Location** or directly by **Logistic 
 
 You can toggle between the two modes by clicking the radio buttons or directly inside the respective input field. The last selected mode is remembered and restored for your next session.
 
----
-
 ## Location Scanning and Execution
 
 - Scanning a **Location** opens the product selection screen as usual  
@@ -29,8 +25,6 @@ You can toggle between the two modes by clicking the radio buttons or directly i
   - the quantity  
   - other **product details**
 
----
-
 ## LUN Product Selection and Execution
 
 - When using **Move by LUN**, the system will:  
@@ -38,8 +32,6 @@ You can toggle between the two modes by clicking the radio buttons or directly i
   - Skip the intermediate step where a Location and LUN are combined  
   - Automatically treat the transfer as **"Move the whole LUN"** (no manual checkbox required)  
 - The associated Location is derived from the LUN automatically, as a LUN can only belong to one location
-
----
 
 ## Summary
 
