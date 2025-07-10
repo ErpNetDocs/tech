@@ -15512,6 +15512,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-by-lun.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-by-lun.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-destination.png",
       "output": {
         "resource": {
@@ -15552,6 +15562,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-product-only.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-product-only.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-product.png",
       "output": {
         "resource": {
@@ -15586,6 +15606,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/pictures/move-summary.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/move-whole.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/move-whole.png"
         }
       },
       "version": ""
@@ -15666,6 +15696,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/logistics/wms/wms-worker/pictures/product_barcode.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/logistics/wms/wms-worker/pictures/radio-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/wms/wms-worker/pictures/radio-buttons.png"
         }
       },
       "version": ""

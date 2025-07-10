@@ -87,34 +87,59 @@
         <article data-uid="">
 <h1 id="move">Move</h1>
 
-<p>The <b>Move</b> page allows you to make a warehouse transfer. To move products from one location to another, you must first select or scan:</p>
+<p>This screen allows you to perform product transfers within the warehouse using one of two options:</p>
+<h2 id="move-by-location-or-lun">Move by Location or LUN</h2>
+<p>You can now perform a transfer either by <strong>Location</strong> or directly by <strong>Logistic Unit (LUN)</strong>. Use the radio buttons at the top of the screen to select the preferred method:</p>
 <ul>
-<li>the current location of the product</li>
-</ul>
-<p><img src="pictures/move-location.png" alt="Location"></p>
+<li><strong>Move by Location</strong>
 <ul>
-<li>the product itself</li>
+<li>Activates the Location field</li>
 </ul>
-<p><img src="pictures/move-product.png" alt="Product"></p>
-<p>Availability indicates the amount of product available at a location. To transfer the whole quantity or the Lot of one product, you can click on the corresponding row in the Availability table.</p>
+</li>
+<li><strong>Move by LUN</strong>
 <ul>
-<li>Lot (you can use the suggested value</li>
+<li>Activates the LUN field (accepts active <code>LogisticUnits.SerialCode</code>)</li>
+<li>The system validates that the LUN exists and has availability in the current warehouse</li>
 </ul>
-<p><img src="pictures/move-lot.png" alt="Lot"></p>
+</li>
+</ul>
+<p><img src="pictures/radio-buttons.png" alt="Radio-buttons"></p>
+<p>You can toggle between the two modes by clicking the radio buttons or directly inside the respective input field. The last selected mode is remembered and restored for your next session.</p>
+<h2 id="location-scanning-and-execution">Location Scanning and Execution</h2>
 <ul>
-<li>Quantity and unit</li>
+<li>Scanning a <strong>Location</strong> opens the product selection screen as usual</li>
+<li>Scanning a <strong>LUN</strong> immediately opens the product list for that LUN</li>
+<li>You can also move the <strong>entire LUN</strong> by using the <strong>Move whole logistic unit</strong> checkbox</li>
+<li></li>
 </ul>
-<p><img src="pictures/move-quantity.png" alt="Quantity"></p>
-<p>To add more products, you need to click the Add More button (from the menu button at the bottom of the page).</p>
-<p><img src="pictures/move-summary.png" alt="Summary"></p>
-<p>If you move several products at the same time, they will all be transferred to the same place.
-If you want to transfer them to different places, they must be moved separately.</p>
-<p>Press the <b>Move</b> button to finish the process.</p>
-<p>The last step is to set the new destination of the products.</p>
-<p><img src="pictures/move-destination.png" alt="Destination"></p>
-<p>When you are ready you need to press the <img src="pictures/move-finish.png" alt="Finish"> button.</p>
-<p>If all the steps are performed correctly, a message will appear confirming that the operation was successful:</p>
-<p><img src="pictures/move-successful.png" alt="Success"></p>
+<p><img src="pictures/move-whole.png" alt="Move-whole"></p>
+<ul>
+<li>If you are <strong>not moving the entire Logistic Unit</strong>, the next screen will prompt you to select:
+<ul>
+<li>the product</li>
+<li>the lot or serial number (if applicable)</li>
+<li>the quantity</li>
+<li>other <strong>product details</strong></li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><img src="pictures/move-product-only.png" alt="Move-product-only"></p>
+<h2 id="lun-product-selection-and-execution">LUN Product Selection and Execution</h2>
+<ul>
+<li>When using <strong>Move by LUN</strong>, the system will:
+<ul>
+<li>Automatically show the list of products in the selected LUN</li>
+<li>Skip the intermediate step where a Location and LUN are combined</li>
+<li>Automatically treat the transfer as <strong>&quot;Move the whole LUN&quot;</strong> (no manual checkbox required)</li>
+</ul>
+</li>
+<li>The associated Location is derived from the LUN automatically, as a LUN can only belong to one location</li>
+</ul>
+<p><img src="pictures/move-by-lun.png" alt="Move-by-lun"></p>
+<h2 id="summary">Summary</h2>
+<p>If you move several products at the same time, they will all be transferred to the same place. If you want to transfer them to different places, they must be moved separately.</p>
+<p>Press the <strong>Move</strong> button to continue, set the destination, and press <strong>Finish</strong> to complete the operation.</p>
 
 </article>
 
