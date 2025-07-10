@@ -20,7 +20,9 @@ You can toggle between the two modes by clicking the radio buttons or directly i
 
 - Scanning a **Location** opens the product selection screen as usual  
 - Scanning a **LUN** immediately opens the product list for that LUN  
-- You can also move the **entire LUN** by using the **Move whole logistic unit** checkbox  
+- You can also move the **entire LUN** by using the **Move whole logistic unit** checkbox 
+![Move-whole](pictures/move-whole.png)
+ 
 - If you are **not moving the entire Logistic Unit**, the next screen will prompt you to select:  
   - the product  
   - the lot or serial number (if applicable)  
