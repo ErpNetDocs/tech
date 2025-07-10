@@ -28,6 +28,7 @@ You can toggle between the two modes by clicking the radio buttons or directly i
   - the lot or serial number (if applicable)  
   - the quantity  
   - other **product details**
+![Move-product-only](pictures/move-product-only.png)
 
 ## LUN Product Selection and Execution
 
