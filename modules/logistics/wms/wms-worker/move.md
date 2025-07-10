@@ -12,7 +12,7 @@ You can now perform a transfer either by **Location** or directly by **Logistic 
   - Activates the LUN field (accepts active `LogisticUnits.SerialCode`)  
   - The system validates that the LUN exists and has availability in the current warehouse
 
-![Radio buttons](radio-buttons.png)
+![Radio-buttons](radio-buttons.png)
 
 You can toggle between the two modes by clicking the radio buttons or directly inside the respective input field. The last selected mode is remembered and restored for your next session.
 
