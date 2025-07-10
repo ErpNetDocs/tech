@@ -37,6 +37,8 @@ You can toggle between the two modes by clicking the radio buttons or directly i
   - Automatically treat the transfer as **"Move the whole LUN"** (no manual checkbox required)  
 - The associated Location is derived from the LUN automatically, as a LUN can only belong to one location
 
+![Move-by-lun](pictures/move-by-lun.png)
+
 ## Summary
 
 If you move several products at the same time, they will all be transferred to the same place. If you want to transfer them to different places, they must be moved separately.
