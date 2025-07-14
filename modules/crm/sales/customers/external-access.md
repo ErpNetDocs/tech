@@ -27,8 +27,10 @@ There are 6 different roles for external customer access which can be assigned t
 **5. L80 - Admin** - Ensures full access to all customer data. 
 **6. L90 - Owner** - The same as Admin. Once assigned, Owner access cannot be revoked by anyone, including Admins.
 
-## Grant or revoke access
+## Grant access
 
 To give permissions to a user, you need to insert a new entry into the table and fill out the respective fields.
 
 ![pictures](pictures/grant_new_access.png)
+
+Once saved, these settings can always be changed later.
