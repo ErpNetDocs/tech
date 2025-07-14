@@ -18,7 +18,7 @@ This panel offers quick access to **orders** and **invoices**, as well as **due 
 
 It keeps a real-time metric of how many orders and invoices were produced for the current month.
 
-![picture](pictures/hhomechat.png)
+![picture](pictures/home_v26.png)
 
 > [!NOTE]
 > 
@@ -49,9 +49,13 @@ Users with Admin and Owner role access have the ability to manage existing users
 
 This is achieved through a dedicated User Management panel.
 
+![picture](pictures/user_management.png)
+
 ### Customer Profile
 
 This is where customers can see more information about their company, including UIN and VAT number.
+
+![picture](pictures/customer_profile.png)
 
 > [!NOTE]
 >
