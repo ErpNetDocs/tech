@@ -72,7 +72,7 @@ This page is where customers can see more information about their registered com
 
 Individual access to Client Center sections is determined strictly based on the **[external access role](../sales/customers/external-access.md)** a user is assigned.
 
-Each subsequent role in the list below also includes the rights granted by the previous.
+Each subsequent role in the table below also includes the rights granted by the previous.
 
 | Role                   | Home | Orders              | Billing              | User Management | Customer Information | Notes                                                                                   |
 |-------------------------|------|----------------------|----------------------|------------------|------------------------|-----------------------------------------------------------------------------------------|
