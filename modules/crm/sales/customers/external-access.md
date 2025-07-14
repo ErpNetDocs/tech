@@ -19,7 +19,7 @@ The table consists of the following columns:
 
 - **Notes** - Optional notes for the external access.
 
-#### Roles
+### Roles
 
 There are 6 different roles for external customer access which can be assigned to a user.
 
