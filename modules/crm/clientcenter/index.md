@@ -47,7 +47,7 @@ It is comprised of three sections:
 
 Users with Admin and Owner role access have the ability to manage existing users and add new ones to the current Client Center.
 
-This is achieved through a dedicated User Management panel.
+This is achieved through a dedicated **User Management** panel.
 
 ![picture](pictures/user_management.png)
 
@@ -81,4 +81,4 @@ Users are able to perform a couple of **actions** from within the Client Center 
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v.26 of the platform.
