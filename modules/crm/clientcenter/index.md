@@ -8,15 +8,15 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 ## Structure
 
-The Client Center has a hierarchical menu structure where, depending on their **assigned role**, users can see and interact with up to **five unique sections**. 
+The Client Center has a hierarchical menu structure consisting of several **sections** and **pages**. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
 
-Each section works with accurate and simplified data, allowing customers to look at documents important to them **on-demand**.
+Access to the sections is determined based on the **role** a user is assigned.
 
 ### Home
 
-This is the default landing page of the Client Center, offering quick access to **orders** and **invoices**, as well as **due payments**.
+This is the default landing page of the Client Center, offering quick access to all **orders**, **invoices**, and **due payments**.
 
-It keeps a real-time metric of how many orders and invoices were produced for the current month.
+It also keeps a real-time metric of how many orders and invoices were produced for the current month.
 
 ![picture](pictures/home_v26.png)
 
@@ -68,13 +68,13 @@ This page is where customers can see more information about their registered com
 
 ## Features
 
-Users are able to perform a couple of **actions** from within the Client Center to enhance their experience.
+Users can perform a couple of actions from within the Client Center:
 
-- **Additional columns** can be added through the **Column Chooser** to provide more information for due payments, past orders and invoices.
+- Customize a page's layout by adding additional columns or hiding existing ones through the **Column Chooser**.
 
-- In the **Orders** panel, already issued sales orders from the Client Center can be **cancelled** before they're finalized.
+- **Cancel** already issued sales orders before they're finalized.
 
-- Generated invoices for any orders can be downloaded and previewed outside of the platform.
+- **Download** invoices to preview them outside of the Client Center.
 
 > [!NOTE]
 > 
