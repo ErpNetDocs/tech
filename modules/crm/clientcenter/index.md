@@ -12,7 +12,7 @@ The Client Center has a hierarchical menu structure consisting of several **sect
 
 > [!Important]
 >
-> Access to the sections and pages is defined through **external access roles**. You can learn more about them **[below](index.md#role-based-access)**.
+> User access to the Client Center is determined through **external access roles**. You can learn more about them **[below](index.md#role-based-access)**.
 
 ### Home
 
