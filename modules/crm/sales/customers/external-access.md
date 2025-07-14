@@ -21,7 +21,7 @@ The table consists of the following columns:
 
 ### Roles
 
-There are 6 different roles for external customer access which can be assigned to a user.
+A user can be assigned one of 6 different roles for external customer access:
 
 1. **L10 - Basic** - Allows basic rights, with mostly limited access.
 2. **L20 - Orders** - Grants access to sales orders, excluding lines and price data.
