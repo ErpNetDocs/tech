@@ -66,7 +66,7 @@ This page is where customers can see more information about their registered com
 
 ## Role-based access 
 
-Individual access to Client Center sections is determined strictly based on the **[external access role](crm/sales/customers/external-access.md)** a user is assigned:
+Individual access to Client Center sections is determined strictly based on the **[external access role](./sales/customers/external-access.md)** a user is assigned:
 
 1. **L10 - Basic** - Allows basic rights. All sections and pages are hidden except for **Home** and **Customer Information**.
 2. **L20 - Orders** - Grants access to the **Orders** page where sales orders are stored. Excludes price data.
