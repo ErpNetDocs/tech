@@ -34,7 +34,7 @@ It is comprised of two pages:
 > [!NOTE]
 > 
 > The New Order page is **disabled** by default for security reasons. <br>
-> For more information, please refer to our **[step-by-step guides](how-to/index.md)** and the **[Settings and error reference](reference.md)**
+> For more information on how to enable it, please refer to our **[step-by-step guides](how-to/index.md)** and the **[Settings and error reference](reference.md)**
 
 ### Billing
 
