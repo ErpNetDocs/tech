@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Reference | ERP.net Tech Docs </title>
+      <title>Settings and errors | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Reference | ERP.net Tech Docs ">
+      <meta name="title" content="Settings and errors | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,10 +85,10 @@
         </div>
 
         <article data-uid="">
-<h1 id="reference">Reference</h1>
+<h1 id="settings-and-errors">Settings and errors</h1>
 
-<p>This article contains reference points for specific procedures, concepts and error codes within the <strong>Client Center</strong>.</p>
-<h2 id="isneworderenabled-settings">IsNewOrderEnabled settings</h2>
+<p>This article contains reference points for specific JSON settings and error codes within the <strong>Client Center</strong>.</p>
+<h2 id="isneworderenabled-setting">IsNewOrderEnabled setting</h2>
 <p>By default, the ability to preview and <strong><a href="how-to/create-new-order.html">create new orders</a></strong> in the Client Center is <strong>disabled</strong>.</p>
 <p>To enable it, you have to apply <strong>JSON settings</strong> in the website's definition.</p>
 <p>Enter a <strong>value</strong> for the Settings field and <strong>restart</strong> the website using the Instance manager:</p>
@@ -102,14 +102,14 @@
 <pre><code>{&quot;NewOrderDocumentType&quot;: &quot;85493adb-ac4e-4b3c-89bc-590c4b22404c&quot;,&quot;IsNewOrderEnabled&quot;: true}
 </code></pre>
 <p>If only one of the JSON settings is set or the ID doesn't match any sales order document type, an <strong>error exception code</strong> CC008 or CC009 will be displayed.</p>
-<h2 id="isordersenabled-settings">IsOrdersEnabled settings</h2>
+<h2 id="isordersenabled-setting">IsOrdersEnabled setting</h2>
 <p>By default, the <strong>Orders</strong> section of the Client Center is <strong>enabled</strong>.</p>
 <p>To disable it, you have to apply <strong>JSON settings</strong> in the website's definition.</p>
 <p>Enter a <strong>value</strong> for the Settings field and <strong>restart</strong> the website using the Instance manager:</p>
 <pre><code>{&quot;IsOrdersEnabled&quot;: false} 
 </code></pre>
 <p>If &quot;IsOrdersEnabled&quot; is not present in the settings, the <strong>Orders</strong> section will still be visible.</p>
-<h2 id="hidelines-settings">HideLines settings:</h2>
+<h2 id="hidelines-setting">HideLines setting</h2>
 <p>Lines are visible by default in both the <strong>Invoices</strong> and the <strong>Orders</strong> sections of the Client Center.</p>
 <p>To hide them, you have to apply <strong>JSON settings</strong> in the website's definition.</p>
 <p>Enter the following <strong>value</strong> for the Settings field and <strong>restart</strong> the website using the Instance Manager:</p>

@@ -87,45 +87,139 @@
         <article data-uid="">
 <h1 id="client-center">Client Center</h1>
 
-<p>The Client Center allows Erp.Net clients to assist their own clients by allowing them to chat with Customer Support, review due payments, access and download invoices, and create sales orders. It’s best used to provide faster support and increase speed of new orders.</p>
-<p>Currently, Client Center platforms are more suitable for businesses rather than individual users.</p>
+<p>The Client Center allows Erp.Net clients to assist their customers by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders.</p>
 <p>You can <strong><a href="how-to/define-a-new-cc.html">build and host</a></strong> a CC instance from your global website environment, and access it using a custom relative url.</p>
-<p><img src="pictures/Client_center_index_Home_31_03.png" alt="picture"></p>
-<h2 id="features-and-structure">Features and structure</h2>
-<p>Within the Client Center, users with appropriate permissions can see and interact with four different <strong>panels</strong>.</p>
-<p>Each Client Center panel works with accurate and simplified data to implement a pleasant and up-to-date platform experience.</p>
-<p>Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices <strong>on-demand</strong>.</p>
-<h3 id="panels">Panels</h3>
-<p><strong>Home</strong> offers a direct communication channel and access to other pages.</p>
-<p>Using the chat panel, clients can reach out to a representative regarding any issue or question they're having.</p>
-<p><img src="pictures/hhomechat.png" alt="picture"></p>
-<p><strong>Due Payments</strong> contains a list of your due payments, available to be sorted.</p>
-<p><img src="pictures/dduepaymentss.png" alt="picture"></p>
-<p><strong>Orders</strong> contains a list of your current orders, with the ability to preview and sort them.</p>
-<p><img src="pictures/oorderss.png" alt="picture"></p>
-<p><strong>Invoices</strong> keeps all of your invoices for completed orders.</p>
-<p><img src="pictures/Client_center_index_Invoices_31_03.png" alt="picture"></p>
+<p><img src="pictures/client_center_v26.png" alt="picture"></p>
+<h2 id="structure">Structure</h2>
+<p>The Client Center has a hierarchical menu structure consisting of several <strong>sections</strong> and <strong>pages</strong>. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them <strong>on-demand</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>User access to the Client Center is determined through <strong>external access roles</strong>. You can learn more about them <strong><a href="index.html#role-based-access">below</a></strong>.</p>
+</div>
+<h3 id="home">Home</h3>
+<p>This is the default landing page of the Client Center, offering quick access to all <strong>orders</strong>, <strong>invoices</strong>, and <strong>due payments</strong>.</p>
+<p>It also keeps a real-time metric of how many orders and invoices were produced for the current month.</p>
+<p><img src="pictures/home_v26.png" alt="picture"></p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>As of v.26, the Chat integration is <strong>no longer available</strong>.</p>
+</div>
+<h3 id="orders">Orders</h3>
+<p>This section is responsible for storing existing orders and facilitating the creation of new ones.</p>
+<p>It is comprised of two pages:</p>
+<ul>
+<li><strong>Orders</strong></li>
+<li><strong>New Order</strong></li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
+<p>The New Order page is <strong>disabled</strong> by default for security reasons. <br>
+For more information on how to enable it, please refer to our <strong><a href="how-to/index.html">step-by-step guides</a></strong> and the <strong><a href="reference.html">Settings and error reference</a></strong></p>
+</div>
+<h3 id="billing">Billing</h3>
+<p>This section keeps a log of billing-related documents and allows for their close inspection.</p>
+<p>It is comprised of three pages:</p>
+<ul>
+<li><strong>Invoices</strong></li>
+<li><strong>DuePayments</strong></li>
+<li><strong>Payment History</strong></li>
+</ul>
+<h3 id="user-management">User Management</h3>
+<p>This page is for managing the customer's existing users by determining the level of access they have to the Client Center.</p>
+<p>It further allows the removal of existing users and addition of new ones.</p>
+<p><img src="pictures/user_management.png" alt="picture"></p>
+<h3 id="customer-profile">Customer Profile</h3>
+<p>This page is where customers can see more information about their registered company, including UIN and VAT number.</p>
+<p><img src="pictures/customer_profile.png" alt="picture"></p>
+<div class="TIP">
+<h5>Tip</h5>
 <p>Depending on your business' size and reach, you can create and manage <strong>multiple</strong> Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.</p>
 </div>
-<h3 id="creating-sales-orders">Creating sales orders</h3>
-<p>The Client Center gives users the ability to <strong><a href="how-to/create-new-order.html">create new sales orders</a></strong> with just the click of a button.</p>
-<p>This feature is <strong>disabled</strong> by default for security reasons. Access should be granted only when it's necessary.</p>
-<p>For more information on how to define and set up Client Center, please refer to our <strong><a href="how-to/index.html">step-by-step guides</a></strong> and the <strong><a href="reference.html">reference</a></strong></p>
-<h3 id="actions">Actions</h3>
-<p>Users are able to perform a couple of <strong>actions</strong> from within the Client Center to enhance their experience.</p>
+<h2 id="role-based-access">Role-based access</h2>
+<p>Individual access to Client Center sections is determined strictly based on the <strong><a href="../sales/customers/external-access.html">external access role</a></strong> a user is assigned.</p>
+<p>Each subsequent role in the table below also includes the rights granted by the previous.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Home</th>
+<th>Orders</th>
+<th>Billing</th>
+<th>User Management</th>
+<th>Customer Information</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L10 - Basic</strong></td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>Basic access.</td>
+</tr>
+<tr>
+<td><strong>L20 - Orders</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>Access to <strong>Orders</strong> without price data.</td>
+</tr>
+<tr>
+<td><strong>L30 - Orders + Prices</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>Access to <strong>Orders</strong>, including price details.</td>
+</tr>
+<tr>
+<td><strong>L40 - Billing</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+<td>Adds access to <strong>Invoices</strong>, <strong>DuePayments</strong>, and <strong>Payment History</strong>.</td>
+</tr>
+<tr>
+<td><strong>L80 - Admin</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full access, including to <strong>User Management</strong>.</td>
+</tr>
+<tr>
+<td><strong>L90 - Owner</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Same as Admin, but Owner access <strong>cannot</strong> be revoked by anyone, including Admins.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="features">Features</h2>
+<p>Users can perform a couple of actions from within the Client Center:</p>
 <ul>
-<li><p><strong>Additional columns</strong> can be added to provide more information for <strong>due payments</strong>, <strong>past orders</strong> and <strong>invoices</strong>.</p>
+<li><p>Customize a page's layout with <strong><a href="grid-control.html">Grid Control</a></strong> capabilities</p>
 </li>
-<li><p>In the <strong>Orders</strong> page, already issued sales orders from the Client Center can be <strong>cancelled</strong> before they're finalized.</p>
+<li><p><strong>Cancel</strong> already issued sales orders before they're finalized.</p>
 </li>
-<li><p>Generated invoices for any orders can be <strong>downloaded</strong> and <strong>previewed</strong> outside of the platform.</p>
+<li><p><strong>Download</strong> invoices to preview them outside of the Client Center.</p>
 </li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
 </div>
 
 </article>
