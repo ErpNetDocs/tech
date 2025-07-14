@@ -26,9 +26,9 @@ For instance, you may filter the **Date** column to display documents only from 
 
 ![picture](pictures/Grid_control_column_filter_11_06.png)
 
-### Search Box
+### Search bar
 
-The Search Box allows you to input a word, letter, or number and then see items containing that input in **any** of the navigator's columns.
+The Search bar allows you to input a word, letter, or number and then see items containing that input in **any** of the navigator's columns.
 
 ![picture](pictures/Grid_control_filter_box_11_06.png)
 
@@ -52,18 +52,22 @@ Existing records will first be grouped by the initial column, and then by each s
 
 The **Column Chooser** option allows you to decide which columns to display in a navigator, as well as determine their order.
 
-To access it, click on the **blue icon** above the Search Box. 
+To access it, click on the **Column Chooser** button above the Ssearch bar. 
 
-![picture](pictures/Grid_control_column_chooser_11_06.png)
+![picture](pictures/columnchooser_v26.png)
 
 Choose which columns will be displayed by checking the ones that you want to show.
 
-![picture](pictures/Grid_control_column_chooser_procedure_11_06.png)
+![picture](pictures/columns_v26.png)
 
 ## Save and restore layout
 
-However you modify your Client Center navigator layout, your last preferred view will be **saved** and **restored** the next time you log in, ensuring a personalized and consistent experience.
+However you modify your Client Center navigator layout, your last preferred view will be **saved** and **restored** the next time you log in, ensuring a consistent experience.
+
+You can always reset your layout to its default view by clicking **Reset Layout**.
+
+![picture](pictures/resetlayout_v26.png)
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v24 and v26 of the platform.
