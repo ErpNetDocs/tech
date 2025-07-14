@@ -52,7 +52,7 @@ Existing records will first be grouped by the initial column, and then by each s
 
 The **Column Chooser** option allows you to decide which columns to display in a navigator, as well as determine their order.
 
-To access it, click on the **Column Chooser** button above the Ssearch bar. 
+To access it, click on the **Column Chooser** button above the Search bar. 
 
 ![picture](pictures/columnchooser_v26.png)
 
