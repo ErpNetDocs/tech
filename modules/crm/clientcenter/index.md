@@ -20,7 +20,7 @@ It also keeps a real-time metric of how many orders and invoices were produced f
 
 ![picture](pictures/home_v26.png)
 
-> [!NOTE]
+> [!Warning]
 > 
 > As of v.26, the Chat feature of the Home panel is **no longer available**.
 
