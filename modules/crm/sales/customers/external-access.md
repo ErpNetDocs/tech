@@ -1,8 +1,8 @@
 # External Access
 
-The External Access table is responsible for granting external and internal users permissions to **specific customer data**.
+The **External Access** table of the **[Customers panel](index.md)** is responsible for granting external and internal users permissions to **specific customer data**.
 
-In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it allows customers' users to see exactly what they need once they log into the platform. 
+In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it allows customers' individual users to see exactly what they need once they log into the platform. 
 
 ![pictures](pictures/customers_external_access.png)
 
@@ -10,10 +10,10 @@ In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it a
 
 The table consists of the following columns:
 
-- **Customer** - The **[customer](index.md)** whose data will be accessed.
+- **Customer** - The customer whose data will be accessed.
 - **User** - The user to whom the access will be granted.
-- **Role** - The role of the user, which defines the granted access.
-- **Days Back Access** - The maximum number of past days the user is allowed to view the data.
+- **Role** - The role of the user, which defines the level of granted access.
+- **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
   
   If left empty, it assumes unlimited.
 
@@ -32,7 +32,7 @@ A user can be assigned one of 6 different roles for external customer access:
 
 ## Grant access
 
-To give permissions to a user, you need to insert a new entry into the table and fill out the respective fields.
+To give external access to a user, you need to insert a new entry into the table and fill out the respective fields.
 
 ![pictures](pictures/grant_new_access.png)
 
