@@ -10,7 +10,7 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 The Client Center has a hierarchical menu structure consisting of several **sections** and **pages**. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
 
-Access to the sections and pages is defined through external access roles. You can read more about them **[below](index.md#role-based-access)**
+Access to the sections and pages is defined through **external access roles**. You can learn more about them **[below](index.md#role-based-access)**.
 
 ### Home
 
