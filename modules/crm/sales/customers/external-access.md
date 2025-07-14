@@ -2,7 +2,7 @@
 
 The External Access table is responsible for granting external and internal users permissions to **specific customer data**.
 
-In the case of the **[Client Center](../../crm/clientcenter/index.md)**, it allows customers' users to see exactly what they need once they log into the platform. 
+In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it allows customers' users to see exactly what they need once they log into the platform. 
 
 ![pictures](pictures/customers_external_access.png)
 
