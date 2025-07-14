@@ -10,7 +10,9 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 The Client Center has a hierarchical menu structure consisting of several **sections** and **pages**. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
 
-Access to the sections and pages is defined through **external access roles**. You can learn more about them **[below](index.md#role-based-access)**.
+> [!Important]
+>
+> Access to the sections and pages is defined through **external access roles**. You can learn more about them **[below](index.md#role-based-access)**.
 
 ### Home
 
@@ -62,7 +64,7 @@ This page is where customers can see more information about their registered com
 
 ![picture](pictures/customer_profile.png)
 
-> [!NOTE]
+> [!Tip]
 >
 > Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
 
