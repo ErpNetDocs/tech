@@ -74,21 +74,14 @@ Individual access to Client Center sections is determined strictly based on the 
 
 Each subsequent role in the list below also includes the rights granted by the previous.
 
-1. **L10 - Basic** - Allows basic rights. All sections and pages are hidden except for **Home** and **Customer Information**.
-2. **L20 - Orders** - Grants access to the **Orders** page where sales orders are stored. Excludes price data.
-3. **L30 - Orders with Prices** - Provides access to the **Orders** page where sales orders are stored. Includes all of their details.
-4. **L40 - Billing** - Gives access to billing-related pages like **Invoices**, **DuePayments** and **Payment History**.
-5. **L80 - Admin** - Ensures full access to all customer data, including the **User Management** page.
-6. **L90 - Owner** - The same as Admin. However, once assigned, Owner access **cannot** be revoked by anyone, including Admins.
-
-| Level                   | Home | Orders              | Billing              | User Management | Customer Information | Notes                                                                                   |
+| Role                   | Home | Orders              | Billing              | User Management | Customer Information | Notes                                                                                   |
 |-------------------------|------|----------------------|----------------------|------------------|------------------------|-----------------------------------------------------------------------------------------|
-| **L10 - Basic**         | ✅   | ❌                   | ❌                   | ❌               | ✅                     | Basic access. Only Home and Customer Information are visible.                           |
-| **L20 - Orders**        | ✅   | ✅ (no prices)       | ❌                   | ❌               | ✅                     | Access to Orders without price data.                                                    |
-| **L30 - Orders + Prices** | ✅ | ✅ (with prices)     | ❌                   | ❌               | ✅                     | Full access to Orders, including pricing details.                                       |
-| **L40 - Billing**       | ✅   | ✅ (with prices)     | ✅                   | ❌               | ✅                     | Adds access to billing pages: Invoices, DuePayments, Payment History.                  |
-| **L80 - Admin**         | ✅   | ✅ (with prices)     | ✅                   | ✅               | ✅                     | Full access, including User Management.                                                 |
-| **L90 - Owner**         | ✅   | ✅ (with prices)     | ✅                   | ✅               | ✅                     | Same as Admin, but Owner access **cannot** be revoked by anyone, including Admins.      |
+| **L10 - Basic**         | ✅   | ❌                   | ❌                   | ❌               | ✅                     | Basic access.                           |
+| **L20 - Orders**        | ✅   | ✅        | ❌                   | ❌               | ✅                     | Access to Orders without price data.                                                    |
+| **L30 - Orders + Prices** | ✅ | ✅      | ❌                   | ❌               | ✅                     | Access to Orders, including price details.                                       |
+| **L40 - Billing**       | ✅   | ✅      | ✅                   | ❌               | ✅                     | Adds access to **Invoices**, **DuePayments**, and **Payment History**.                  |
+| **L80 - Admin**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Full access, including User Management.                                                 |
+| **L90 - Owner**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Same as Admin, but Owner access **cannot** be revoked by anyone, including Admins.      |
 
 
 ## Features
