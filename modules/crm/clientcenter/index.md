@@ -6,15 +6,15 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 ![picture](pictures/client_center_v26.png)
 
-## Features and structure
+## Structure
 
-Depending on their **assigned role**, users may see and interact with up to **five panels**. 
+The Client Center has a hierarchical menu structure where, depending on their **assigned role**, users can see and interact with up to **five unique sections**. 
 
-Each Client Center panel works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
+Each section works with accurate and simplified data, allowing customers to look at documents important to them **on-demand**.
 
 ### Home
 
-This panel offers quick access to **orders** and **invoices**, as well as **due payments**.
+This is the default landing page of the Client Center, offering quick access to **orders** and **invoices**, as well as **due payments**.
 
 It keeps a real-time metric of how many orders and invoices were produced for the current month.
 
@@ -26,18 +26,23 @@ It keeps a real-time metric of how many orders and invoices were produced for th
 
 ### Orders
 
-This panel is responsible for storing existing orders and facilitating the creation of new ones. 
+This section is responsible for storing existing orders and facilitating the creation of new ones. 
 
-It is comprised of two sections:
+It is comprised of two pages:
 
 * **Orders**
-* **New Order** 
+* **New Order**
+
+> [!NOTE]
+> 
+> The New Order page is **disabled** by default for security reasons. <br>
+> For more information, please refer to our **[step-by-step guides](how-to/index.md)** and the **[Settings and error reference](reference.md)**
 
 ### Billing
 
-This panel keeps log of billing-related documents and allows for their close inspection, and in the case of invoices - external downloading.
+This section keeps a log of billing-related documents and allows for their close inspection, and in the case of invoices - external downloading.
 
-It is comprised of three sections:
+It is comprised of three pages:
 
 * **Invoices**
 * **DuePayments**
@@ -45,15 +50,15 @@ It is comprised of three sections:
 
 ### User Management
 
-Users with Admin and Owner role access have the ability to manage existing users and add new ones to the current Client Center.
+Users with Admin and Owner role access have the ability to manage existing users and add new ones to their Client Center.
 
-This is achieved through a dedicated **User Management** panel.
+This is achieved through the **User Management** page.
 
 ![picture](pictures/user_management.png)
 
 ### Customer Profile
 
-This is where customers can see more information about their company, including UIN and VAT number.
+This page is where customers can see more information about their registered company, including UIN and VAT number.
 
 ![picture](pictures/customer_profile.png)
 
@@ -61,15 +66,7 @@ This is where customers can see more information about their company, including 
 >
 > Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
 
-### Creating sales orders
-
-The Client Center gives users the ability to **[create new sales orders](how-to/create-new-order.md)** with just the click of a button.
-
-This feature is **disabled** by default for security reasons. Access should be granted only when it's necessary.
-
-For more information on how to define and set up Client Center, please refer to our **[step-by-step guides](how-to/index.md)** and the **[JSON settings reference](reference.md)**
-
-### Actions
+## Features
 
 Users are able to perform a couple of **actions** from within the Client Center to enhance their experience.
 
