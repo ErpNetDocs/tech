@@ -1,12 +1,14 @@
 # Client Center
 
-The Client Center allows Erp.Net clients to assist their own clients by allowing them to chat with Customer Support, review due payments, access and download invoices, and create sales orders. It’s best used to provide faster support and increase speed of new orders.
-
-Currently, Client Center platforms are more suitable for businesses rather than individual users. 
+The Client Center allows Erp.Net clients to assist their own customers by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders. 
 
 You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your global website environment, and access it using a custom relative url.
 
-![picture](pictures/Client_center_index_Home_31_03.png)
+![picture](pictures/client_center_v26.png)
+
+> [!NOTE]
+> 
+> As of v.26, the Chat is no longer available.
 
 ## Features and structure
 
