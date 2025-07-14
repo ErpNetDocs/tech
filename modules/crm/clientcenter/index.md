@@ -10,8 +10,6 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 The Client Center has a hierarchical menu structure consisting of several **sections** and **pages**. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
 
-Access to the sections is determined based on the **role** a user is assigned.
-
 ### Home
 
 This is the default landing page of the Client Center, offering quick access to all **orders**, **invoices**, and **due payments**.
@@ -50,9 +48,9 @@ It is comprised of three pages:
 
 ### User Management
 
-Users with Admin and Owner role access have the ability to manage existing users and add new ones to their Client Center.
+This page is for managing the customer's existing users by determining the level of access they have to the Client Center.
 
-This is achieved through the **User Management** page.
+It further allows the removal of existing users and addition of new ones.
 
 ![picture](pictures/user_management.png)
 
@@ -65,6 +63,17 @@ This page is where customers can see more information about their registered com
 > [!NOTE]
 >
 > Depending on your business' size and reach, you can create and manage **multiple** Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.
+
+## Role-based access 
+
+Individual access to Client Center sections is determined strictly based on the **[external access role](crm/sales/customers/external-access.md)** a user is assigned:
+
+1. **L10 - Basic** - Allows basic rights. All sections and pages are hidden except for **Home** and **Customer Information**.
+2. **L20 - Orders** - Grants access to the **Orders** page where sales orders are stored. Excludes price data.
+3. **L30 - Orders with Prices** - Provides access to the **Orders** page where sales orders are stored. Includes all of their details.
+4. **L40 - Billing** - Gives access to billing-related pages like **Invoices**, **DuePayments** and **Payment History**.
+5. **L80 - Admin** - Ensures full access to all customer data, including the **User Management** page.
+6. **L90 - Owner** - The same as Admin. However, once assigned, Owner access **cannot** be revoked by anyone, including Admins.
 
 ## Features
 
