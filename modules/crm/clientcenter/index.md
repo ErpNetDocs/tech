@@ -12,11 +12,11 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 ## Features and structure
 
-Within the Client Center, users with appropriate permissions can see and interact with four different **panels**. 
+Depending on **assigned roles**, users can see and interact with up to **five panels**. 
 
 Each Client Center panel works with accurate and simplified data to implement a pleasant and up-to-date platform experience. 
 
-Whether they use the shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
+Whether they use shortcuts or the expandable menu on the left side of the screen, clients are able to look at all of their due payments, sales orders and invoices **on-demand**.
 
 ### Panels
 
