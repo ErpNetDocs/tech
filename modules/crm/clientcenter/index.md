@@ -10,6 +10,8 @@ You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your 
 
 The Client Center has a hierarchical menu structure consisting of several **sections** and **pages**. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them **on-demand**.
 
+Access to the sections and pages is defined through external access roles. You can read more about them **[below](index.md#role-based-access)**
+
 ### Home
 
 This is the default landing page of the Client Center, offering quick access to all **orders**, **invoices**, and **due payments**.
@@ -79,7 +81,7 @@ Individual access to Client Center sections is determined strictly based on the 
 
 Users can perform a couple of actions from within the Client Center:
 
-- Customize a page's layout by adding additional columns or hiding existing ones through the **Column Chooser**.
+- Customize a page's layout with **[Grid Control](grid-control.md)** capabilities
 
 - **Cancel** already issued sales orders before they're finalized.
 
