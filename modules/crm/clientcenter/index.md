@@ -40,7 +40,7 @@ It is comprised of two pages:
 
 ### Billing
 
-This section keeps a log of billing-related documents and allows for their close inspection, and in the case of invoices - external downloading.
+This section keeps a log of billing-related documents and allows for their close inspection.
 
 It is comprised of three pages:
 
