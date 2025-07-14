@@ -1,6 +1,6 @@
 # External Access
 
-The **External Access** table of the [Customers panel](index.md) is responsible for granting external and internal users permissions to **specific customer data**.
+The **External Access** table is responsible for granting external and internal users permissions to **specific customer data**.
 
 In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it allows customers' individual users to see exactly what they need once they log into the platform. 
 
@@ -21,7 +21,9 @@ The table consists of the following columns:
 
 ### Roles
 
-A user can be assigned one of 6 different roles for external customer access:
+A user can be assigned one of 6 different roles for external customer access. 
+
+Each subsequent role in the list below also includes the rights granted by the previous.
 
 1. **L10 - Basic** - Allows basic rights, with mostly limited access.
 2. **L20 - Orders** - Grants access to sales orders, excluding lines and price data.
