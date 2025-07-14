@@ -13,7 +13,10 @@ The table consists of the following columns:
 - **Customer** - The **[customer](index.md)** whose data will be accessed.
 - **User** - The user to whom the access will be granted.
 - **Role** - The role of the user, which defines the granted access.
-- **Days Back Access** - The maximum number of past days the user is allowed to view the data. If left empty, it assumes unlimited. Set to 30 by default.
+- **Days Back Access** - The maximum number of past days the user is allowed to view the data.
+  
+  If left empty, it assumes unlimited.
+
 - **Notes** - Optional notes for the external access.
 
 #### Roles
