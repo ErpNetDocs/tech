@@ -4,9 +4,9 @@ This article contains reference points for specific JSON settings and error code
 
 ## IsNewOrderEnabled setting
 
-By default, the ability to preview and **[create new orders](how-to/create-new-order.md)** in the Client Center is **disabled**. 
+By default, the ability to **[create new orders](how-to/create-new-order.md)** in the Client Center is disabled. 
 
-To enable it, you have to apply **JSON settings** in the website's definition.
+To enable it, you have to apply the necessary **JSON setting** in the website's definition.
 
 Enter a **value** for the Settings field and **restart** the website using the Instance manager:
 
@@ -24,35 +24,79 @@ For example:
 {"NewOrderDocumentType": "85493adb-ac4e-4b3c-89bc-590c4b22404c","IsNewOrderEnabled": true}
 ```
 
-If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error exception code** CC008 or CC009 will be displayed.
+If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error exception code** CC008 or CC009 is displayed.
 
 ## IsOrdersEnabled setting
 
 By default, the **Orders** section of the Client Center is **enabled**. 
 
-To disable it, you have to apply **JSON settings** in the website's definition.
-
-Enter a **value** for the Settings field and **restart** the website using the Instance manager:
+To disable it, enter the following **value** in the Settings field and **restart** the website using the Instance manager:
 
 ```
 {"IsOrdersEnabled": false} 
 ```
 
-If "IsOrdersEnabled" is not present in the settings, the **Orders** section will still be visible.
+> [!NOTE]
+>
+> If "IsOrdersEnabled" is not present in the settings, the Orders section will still be visible.
 
 ## HideLines setting
 
-Lines are visible by default in both the **Invoices** and the **Orders** sections of the Client Center.
+Document lines are visible by default both in the **Billing** and the **Orders** sections of the Client Center.
 
-To hide them, you have to apply **JSON settings** in the website's definition.
-
-Enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+To hide them, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
 
 ```
 {"HideLines": true}
 ```
 
-If "HideLines" is not present in the settings, lines will remain visible in both **Invoices** and **Orders**.
+> [!NOTE]
+> 
+> If "HideLines" is not present in the settings, lines will remain visible.
+
+## HideCustomerProducts
+
+Customer products are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
+
+To hide the products and this tab, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+
+```
+{"HideCustomerProducts": true}
+```
+
+## HideDistributionChannel
+
+Products linked to a customer's default distribution channel are visible by default during the creation of a new order in the Client Center.
+
+To hide the products and this tab, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+
+```
+{"HideDistributionChannel": true}
+```
+
+## DefaultStore
+
+You can set a default store for every new order created in the Client Center.
+
+To do so, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+
+```
+{"DefaultStore": ID}
+```
+
+where ID is the identifier of the store (e.g. 00002).
+
+## SiteChannel: DistributionChannel.Code
+
+Each Client Center has its own site, or distribution channel. 
+
+This can be overridden by specifying the code of another distribution channel in the following setting:
+
+```
+"SiteChannel": DistributionChannel.Code
+```
+
+where DistributionChannel.Code is the code of the channel (e.g. "CC").
 
 ## Error exception codes
 
