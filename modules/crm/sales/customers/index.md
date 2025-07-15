@@ -22,7 +22,7 @@ The system allows you to select a customer type directly from here: **Customer**
 
 ![pictures](pictures/customer_type_add.png)
 
-The creation form establishes the customer's profile, financial defaults, and system permissions. 
+Creating a new customer involves configuring their identification, financial defaults like payment methods and credit limits, as well as operational settings for delivery terms and **distribution channels**. 
 
 For more information on how to complete it, please refer to **[this article](../sales/definitions/define-customers.md)**.
 
