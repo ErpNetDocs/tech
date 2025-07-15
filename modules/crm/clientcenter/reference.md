@@ -28,7 +28,7 @@ For example:
 {"NewOrderDocumentType": "85493adb-ac4e-4b3c-89bc-590c4b22404c","IsNewOrderEnabled": true}
 ```
 
-If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error exception code** CC008 or CC009 is displayed.
+If only one of the JSON settings is set or the ID doesn't match any sales order document type, an **error code** CC008 or CC009 is displayed.
 
 ## IsOrdersEnabled setting
 
@@ -50,7 +50,7 @@ To hide them, enter the following **value** in the Settings field:
 {"HideLines": true}
 ```
 
-## HideCustomerProducts
+## HideCustomerProducts setting
 
 Customer products are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
@@ -60,7 +60,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 {"HideCustomerProducts": true}
 ```
 
-## HideDistributionChannel
+## HideDistributionChannel setting
 
 Products linked to a customer's default distribution channel are visible by default during the creation of a new order in the Client Center.
 
@@ -70,7 +70,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 {"HideDistributionChannel": true}
 ```
 
-## DefaultStore
+## DefaultStore setting
 
 You can set a default store for every new order created in the Client Center.
 
@@ -82,7 +82,7 @@ To do so, enter the following **value** in the Settings field:
 
 where ID is the identifier of the store (e.g. 00002).
 
-## SiteChannel
+## SiteChannel setting
 
 Each Client Center has its own site, or distribution channel. 
 
