@@ -1,6 +1,12 @@
 # How to create a new order
 
-To create an order in the **Client Center**, you need to have this feature enabled manually.
+> [!IMPORTANT]
+> **The step-by-step guide presented in this article is not relevant to ERP.net v.26**. <br>
+> **Please refer to the** **[New Order](../orders/new-order.md)** **screen documentation to get the latest information**.
+
+---
+
+To create an order in the **Client Center**, you need to have this feature enabled.
 
 Learn how to **[apply platform settings](apply-platform-settings.md)** if you haven't already done that.
 
