@@ -14,15 +14,15 @@ New Order consists of two primary tabs, but it can be configured to include two 
 
 1. **Order** - This is where the order is built. You can add products manually by entering their codes and specifying their quantities.
 
-![pictures](pictures/order_tab.png)
+   ![pictures](pictures/order_tab.png)
    
 2. **My Products** - All customer products will appear here. You can add them to the order simply by specifying their quantities. They will appear in the **Order** tab.
 
-![pictures](pictures/my_products_tab.png)
+   ![pictures](pictures/my_products_tab.png)
    
 3. **Customer's default distribution channel** - If the JSON setting for hiding this channel is disabled and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
 
-![pictures](pictures/channel_customer_tab.png)
+   ![pictures](pictures/channel_customer_tab.png)
 
 4. **Client Center's default distribution channel** - If the JSON setting for showing this channel is configured and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
 
