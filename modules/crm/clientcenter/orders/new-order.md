@@ -66,8 +66,10 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/place_order_warning.png)
 
-   > [!NOTE]
-   > 
-   > You can start an order and switch to a different page or choose to place it later. <br> <br>
-   > The latest active user session is retaind and the order is automatically saved and registered with status **"New"**.
+   Newly created orders are stored in the **[Orders](index.md)** page.
+
+> [!NOTE]
+> 
+> You can start an order and switch to a different page or choose to place it later. <br> <br>
+> The latest active user session is retaind and the order is automatically saved and registered with status **"New"**.
    
