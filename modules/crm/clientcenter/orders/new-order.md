@@ -35,22 +35,36 @@ New Order consists of two primary tabs, but it can be configured to include more
 1. To begin, add products to the order. There are several ways to do this:
    
     1.1.   From the **Order** tab, click the **Add** button. This will reveal the **Code** and **Qty** fields, where you can respectively provide the code of the product and how many instances of it you need ordered.
+
+   ![pictures](pictures/add_button.png)
    
    When you click **Save**, the product will be added with all the respective information about it, such as Unit, Price, and Discount.
+
+   ![pictures](pictures/added_product.png)
 
    1.2.   From the **My Products** tab, click on the **Quantity** field of a **customer product** row and specify the exact quantity you need ordered.
 
    This will automatically add it in the **Order** tab.
 
+   ![pictures](pictures/quantity_myproducts.png)
+
    1.3.   Depending on how your Client Center is configured, users may be able to add products linked to their customer's **default distribution channel**.
 
       The process to add them is identical to the **My Products** tab.
 
+   ![pictures](pictures/quantity_distribution_channel_customer.png)
+
    1.4.  If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
 
-2. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
+   ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
-3. To finish the order, click **Place Order**. You'll be asked to confirm.
+3. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
+
+   ![pictures](pictures/edit_delete_product.png)
+
+4. To finish the order, click **Place Order**. You'll be asked to confirm.
+
+   ![pictures](pictures/place_order_warning.png)
 
 > [!NOTE]
 > 
