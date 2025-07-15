@@ -8,4 +8,4 @@
   topicHref: definitions/index.md
 - name: Customers
   href: customers/toc.yml
-  topicHref: customers/external-access.md
+  topicHref: customers/index.md
