@@ -20,11 +20,11 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/my_products_tab.png)
    
-3. If the **[JSON setting for hiding the customer's default distribution channel](modules/crm/clientcenter/reference.md**)** is disabled and that channel has linked products, an extra tab named after the channel will appear. It will display the related products, which you can add to the order.
+3. If the **[JSON setting for hiding the customer's default distribution channel](/clientcenter/reference.md**)** is disabled and that channel has linked products, an extra tab named after the channel will appear. It will display the related products, which you can add to the order.
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. If the **[JSON setting for specifying a custom channel for the Client Center](modules/crm/clientcenter/reference.md)** is configured and that channel has linked products, an extra tab named after that channel will appear. It will display the related products, which you can add to the order.
+4. If the **[JSON setting for specifying a custom channel for the Client Center](/clientcenter/reference.md)** is configured and that channel has linked products, an extra tab named after that channel will appear. It will display the related products, which you can add to the order.
 
    In the event where a custom JSON configuration is not set, the system will automatically link the sales order to a distribution channel with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
 
