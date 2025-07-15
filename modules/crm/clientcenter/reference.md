@@ -84,9 +84,9 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## SiteChannel setting
 
-Each Client Center has its own site, or distribution channel. 
+Each Client Center has its own site, or **distribution channel**. 
 
-This can be overridden by specifying the **code value** of another distribution channel in the Settings field:
+It can be overridden by specifying the **code value** of another distribution channel in the Settings field:
 
 ```
 "SiteChannel": DistributionChannel.Code
