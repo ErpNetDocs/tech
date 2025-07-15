@@ -12,9 +12,9 @@ This is a multi-tab interface designed to handle the filling out and placement o
 
 New Order consists of two primary tabs, but it can be configured to include two more:
 
-1. **Order**
+1. **Order** - This is where the order is built. You can add products manually by entering their codes and specifying their quantities.
    
-2. **My Products**
+2. **My Products** - All customer products will appear here. You can add them to the order simply by specifying their quantities. They will appear in the **Order** tab.
    
 3. If the JSON setting for showing the **customer's default distribution channel** is enabled, you will be able to see one extra tab carrying that channel's name.
 
