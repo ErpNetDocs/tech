@@ -12,7 +12,7 @@ The table provides a comprehensive view of each customer's profile in your organ
 
 For every customer record, you can see their **financial setup**, including which default price list they use, their standard payment method and account, and their assigned currency for transactions. 
 
-The table also displays **operational details** such as default delivery terms, distribution channels, credit limits, and which sales person and collections employee are responsible for managing their account.
+The table also displays **operational details** such as default delivery terms, **distribution channels**, credit limits, and which sales person and collections employee are responsible for managing their account.
 
 ## Create a new customer
 
@@ -22,8 +22,10 @@ The system allows you to select a customer type directly from here: **Customer**
 
 ![pictures](pictures/customer_type_add.png)
 
-Creating a new customer involves configuring their identification, financial defaults like payment methods and credit limits, as well as operational settings for delivery terms and **distribution channels**. 
+Creating a new customer involves setting up their identification, financial and operational defaults, system permissions, and enterprise assignments for immediate use in sales processing.
 
-For more information on how to complete it, please refer to **[this article](../sales/definitions/define-customers.md)**.
+It also involves adding **products**, **prices** and other entities contracted with them.
+
+For more information, please refer to **[How to define a customer](../sales/definitions/define-customers.md)**.
 
 ![pictures](pictures/addnew_customer.png)
