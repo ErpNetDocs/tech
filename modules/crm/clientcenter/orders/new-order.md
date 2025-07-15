@@ -16,15 +16,11 @@ New Order consists of two primary tabs, but it can be configured to include two 
    
 2. **My Products** - All customer products will appear here. You can add them to the order simply by specifying their quantities. They will appear in the **Order** tab.
    
-3. If the JSON setting for showing the **customer's default distribution channel** is enabled, you will be able to see one extra tab carrying that channel's name.
+3. **Customer's default distribution channel** - If the JSON setting for hiding this channel is disabled and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
 
-   Inside, you can see products linked to that customer's distribution channel.
+4. **Client Center's default distribution channel** - If the JSON setting for showing this channel is configured and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
 
-4. If the JSON setting for showing the **Client Center's default distribution channel** is configured, you will be able to see one extra tab carrying that channel's name.
-
-   Inside, you can see products linked to the Client Center's distribution channel.
-
-   In the event where the configuration is not set, the system will automatically link the created sales order to a distribution channel with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created.
+   In the event where the JSON configuration is not set, the system will automatically link the created sales order to a distribution channel with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created.
 
 ## Step-by-step process
 
@@ -38,7 +34,7 @@ New Order consists of two primary tabs, but it can be configured to include two 
 
    This will **automatically** add it in the **Order** tab.
 
-   1.3.   Depending on how your Client Center instance is **configured** to work with distribution channels, users may be able to add products linked to their customer's **distribution channel**.
+   1.3.   Depending on how your Client Center instance is **configured**, users may be able to add products linked to their customer's **default distribution channel**.
 
    These products will be available in a separate tab that carries the channel's name, e.g. "Online store". The process to add them is identical to the **My Products** tab.
 
