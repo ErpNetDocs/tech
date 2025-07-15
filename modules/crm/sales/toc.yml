@@ -6,4 +6,6 @@
 - name: Definitions
   href: definitions/toc.yml
   topicHref: definitions/index.md
-  
+- name: Customers
+  href: customers/toc.yml
+  topicHref: customers/external-access.md
