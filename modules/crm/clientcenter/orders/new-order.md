@@ -16,7 +16,9 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All **customer products** will appear here. You can add them to the order simply by specifying their quantities. They will automatically appear in the **Order** tab.
+2. **My Products** - All **customer products** will appear here. You can add them to the order simply by specifying their quantities.
+  
+   They will automatically appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
@@ -48,7 +50,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/quantity_myproducts.png)
 
-   1.3.   Depending on how your Client Center is configured, users may be able to add products linked to their customer's **default distribution channel**.
+   1.3.   Depending on how a Client Center is configured, users may add products linked to their customer's **default distribution channel**.
 
       The process to add them is identical to the **My Products** tab.
 
