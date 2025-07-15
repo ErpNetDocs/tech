@@ -10,29 +10,29 @@ This is a multi-tab interface designed to handle the filling out and placement o
 
 ### Structure
 
-New Order consists of two primary tabs, but it can be configured to include two more:
+New Order consists of two primary tabs, but it can be configured to include more:
 
-1. **Order** - This is where the order is built. You can add products manually by entering their codes and specifying their quantities.
+1. **Order** - This is where the order is built. You can add products manually by entering their **code** and **quantity**.
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All customer products will appear here. You can add them to the order simply by specifying their quantities. They will appear in the **Order** tab.
+2. **My Products** - All **customer products** will appear here. You can add them to the order simply by specifying their quantities. They will automatically appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
-3. **Customer's default distribution channel** - If the JSON setting for hiding this channel is disabled and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
+3. If the **[JSON setting for hiding the customer's default distribution channel](../reference.md**)** is disabled and that channel has linked products, an extra tab named after the channel will appear. It will display the related products, which you can add to the order.
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. **Client Center's default distribution channel** - If the JSON setting for showing this channel is configured and the channel has products linked to it, you will be able to see one extra tab carrying that channel's name. Inside, you will see the respective products.
+4. If the **[JSON setting for specifying a custom channel for the Client Center](../reference.md)** is configured and that channel has linked products, an extra tab named after that channel will appear. It will display the related products, which you can add to the order.
 
-   In the event where the JSON configuration is not set, the system will automatically link the created sales order to a distribution channel with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created.
+   In the event where a custom JSON configuration is not set, the system will automatically link the sales order to a distribution channel with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
 
    ![pictures](pictures/channel_CC_tab.png)
 
-## Step-by-step process
+## Create a new order
 
-1. Add products to the order. There are several ways to do this:
+1. To begin, add products to the order. There are several ways to do this:
    
     1.1.   From the **Order** tab, click the **Add** button. This will reveal the **Code** and **Qty** fields, where you can respectively provide the code of the product and how many instances of it you need ordered.
    
@@ -40,22 +40,20 @@ New Order consists of two primary tabs, but it can be configured to include two 
 
    1.2.   From the **My Products** tab, click on the **Quantity** field of a **customer product** row and specify the exact quantity you need ordered.
 
-   This will **automatically** add it in the **Order** tab.
+   This will automatically add it in the **Order** tab.
 
-   1.3.   Depending on how your Client Center instance is **configured**, users may be able to add products linked to their customer's **default distribution channel**.
+   1.3.   Depending on how your Client Center is configured, users may be able to add products linked to their customer's **default distribution channel**.
 
-   These products will be available in a separate tab that carries the channel's name, e.g. "Online store". The process to add them is identical to the **My Products** tab.
+      The process to add them is identical to the **My Products** tab.
 
-   1.4.  If the Client Center itself has a default distribution channel **configured**, an additional tab will also be available carrying that channel's name.
+   1.4.  If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
 
-   Products linked to the channel will be available for selection.
-
-2. When you're done specifying the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
+2. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
 
 3. To finish the order, click **Place Order**. You'll be asked to confirm.
 
 > [!NOTE]
 > 
 > You can start an order and switch to a different page or choose to place it later. <br> <br>
-> The latest active user session is kept for **20 minutes**, and the order is automatically saved and registered with status **"New"**.
+> The latest active user session is retaind and the order is automatically saved and registered with status **"New"**.
    
