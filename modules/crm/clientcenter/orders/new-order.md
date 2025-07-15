@@ -58,11 +58,11 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
-3. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
+2. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
 
    ![pictures](pictures/edit_delete_product.png)
 
-4. To finish the order, click **Place Order**. You'll be asked to confirm.
+3. To finish the order, click **Place Order**. You'll be asked to confirm.
 
    ![pictures](pictures/place_order_warning.png)
 
