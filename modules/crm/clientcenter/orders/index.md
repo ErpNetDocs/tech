@@ -24,11 +24,11 @@ You can find the following information about each sales order in the table:
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about a sales order.
 
-![pictures](pictures/orders_details_button.png)
+![pictures](pictures/order_details_button.png)
 
 This includes customer and enterprise company data, as well as individual document lines breakdown.
 
-![pictures](pictures/orders_details.png)
+![pictures](pictures/order_details.png)
 
 Here, it is also possible to **cancel** the order before it is released.
 
