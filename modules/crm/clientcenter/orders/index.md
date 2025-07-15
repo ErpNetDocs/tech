@@ -10,7 +10,7 @@ It is visible to all Client Center users accessing this customers's data with an
 
 You can find the following information about each sales order in the table:
 
-- **Date** - Date of creation (or registration) of the document.
+- **Date** - Date of submission (or registration) of the document.
 - **Type name** - Type of the document, Sales Order by default.
 - **Document No** - The document number.
 - **Amount** - The amount of the sales order. This data is visible to users with an external role **L30 - Orders with Prices** and above.
@@ -30,7 +30,7 @@ This includes customer and enterprise company data, as well as individual docume
 
 ![pictures](pictures/order_details.png)
 
-Here, it is also possible to **cancel** the order before it is released.
+Here, it is also possible to **cancel** the submitted order before it is released.
 
 ![pictures](pictures/cancel_order.png)
 
