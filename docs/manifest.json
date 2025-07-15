@@ -4747,6 +4747,199 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/orders/new-order.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/orders/new-order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/add_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/add_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/added_product.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/added_product.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/all_products_ordered.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/all_products_ordered.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/cancel_order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/cancel_order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/channel_CC_tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/channel_CC_tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/channel_customer_tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/channel_customer_tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/edit_delete_product.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/edit_delete_product.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/my_products_tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/my_products_tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_details_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_details_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/place_order_warning.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/place_order_warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/quantity_distribution_channel_clientcenter.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/quantity_distribution_channel_clientcenter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/quantity_distribution_channel_customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/quantity_distribution_channel_customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/quantity_myproducts.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/quantity_myproducts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/clientcenter/orders/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/orders/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/clientcenter/orders/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/pictures/CL.png",
       "output": {
@@ -5363,6 +5556,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/marketing/distribution-channels/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/marketing/index.md",
       "output": {
         ".html": {
@@ -5935,6 +6138,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/addnew_customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/addnew_customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/customer_type_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/customer_type_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales/customers/pictures/customers_external_access.png",
       "output": {
         "resource": {
@@ -5945,10 +6168,33 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/customers_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/customers_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales/customers/pictures/grant_new_access.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales/customers/pictures/grant_new_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/sales/customers/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales/customers/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/sales/customers/toc.json"
         }
       },
       "version": ""
