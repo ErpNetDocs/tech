@@ -20,7 +20,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/my_products_tab.png)
    
-3. If the **[JSON setting for hiding the customer's default distribution channel](/clientcenter/reference.md**)** is disabled and that channel has linked products, an extra tab named after the channel will appear. It will display the related products, which you can add to the order.
+3. If the **[JSON setting for hiding the customer's default distribution channel](/modules/crm/clientcenter/reference.md**)** is disabled and that channel has linked products, an extra tab named after the channel will appear. It will display the related products, which you can add to the order.
 
    ![pictures](pictures/channel_customer_tab.png)
 
