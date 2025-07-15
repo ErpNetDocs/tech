@@ -26,6 +26,6 @@ Creating a new customer involves setting up their identification, financial and 
 
 It also involves adding **products**, **prices** and other entities contracted with them.
 
-For more information, please refer to **[How to define a customer](./sales/definitions/define-customers.md)**.
+For more information, please refer to **[How to define a customer](modules/crm/sales/definitions/define-customers.md)**.
 
 ![pictures](pictures/addnew_customer.png)
