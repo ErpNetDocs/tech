@@ -1,7 +1,7 @@
 # How to create a new order
 
 > [!IMPORTANT]
-> **The step-by-step guide presented in this article is not relevant to ERP.net v.26**. <br>
+> **The step-by-step guide presented in this article is not relevant to ERP.net v.26 and above**. <br>
 > **Please refer to the** **[New Order](../orders/new-order.md)** **screen documentation to get the latest information**.
 
 ---
