@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+- name: Orders
+  href: orders/toc.yml
+  topicHref: orders/index.md
 - name: Settings and errors
   href: reference.md
 - name: Grid control
