@@ -13,12 +13,16 @@ You can find the following information about each sales order in the table:
 - **Date** - Date of submission (or registration) of the document.
 - **Type name** - Type of the document, Sales Order by default.
 - **Document No** - The document number.
-- **Amount** - The amount of the sales order. This data is visible to users with an external role **L30 - Orders with Prices** and above.
+- **Amount** - The amount of the sales order. 
 - **Status** - Current state of the order (e.g. New, Ordered, Cancelled).
 
+> [!Important]
+>
+> Pricing data like Amount is visible ONLY to users with an external role **L30 - Orders with Prices** and above.
+
 > [!NOTE]
-> 
-> Users can start the creation of an order and switch to a different page or choose to finish it later. <br> The order will still be automatically saved and registered with status **"New"**.
+>
+> Orders that are started but not placed are automatically saved and registered with status **New**.
 
 ### Expanded view
 
