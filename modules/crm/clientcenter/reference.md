@@ -2,13 +2,17 @@
 
 This article contains reference points for specific JSON settings and error codes within the **Client Center**.
 
+If a setting is not explicitly added in the definition of the Client Center website, its rule will **not** be enforced.
+
+To apply a new setting, you need to **restart** the website using the **Instance Manager**.
+
 ## IsNewOrderEnabled setting
 
 By default, the ability to **[create new orders](how-to/create-new-order.md)** in the Client Center is disabled. 
 
 To enable it, you have to apply the necessary **JSON setting** in the website's definition.
 
-Enter a **value** for the Settings field and **restart** the website using the Instance manager:
+Enter the following **value** in the Settings field:
 
 ```
 {"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": true}
@@ -30,35 +34,27 @@ If only one of the JSON settings is set or the ID doesn't match any sales order 
 
 By default, the **Orders** section of the Client Center is **enabled**. 
 
-To disable it, enter the following **value** in the Settings field and **restart** the website using the Instance manager:
+To disable it, enter the following **value** in the Settings field:
 
 ```
 {"IsOrdersEnabled": false} 
 ```
 
-> [!NOTE]
->
-> If "IsOrdersEnabled" is not present in the settings, the Orders section will still be visible.
-
 ## HideLines setting
 
 Document lines are visible by default both in the **Billing** and the **Orders** sections of the Client Center.
 
-To hide them, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+To hide them, enter the following **value** in the Settings field:
 
 ```
 {"HideLines": true}
 ```
 
-> [!NOTE]
-> 
-> If "HideLines" is not present in the settings, lines will remain visible.
-
 ## HideCustomerProducts
 
 Customer products are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
-To hide the products and this tab, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+To hide the products and this tab, enter the following **value** in the Settings field:
 
 ```
 {"HideCustomerProducts": true}
@@ -68,7 +64,7 @@ To hide the products and this tab, enter the following **value** for the Setting
 
 Products linked to a customer's default distribution channel are visible by default during the creation of a new order in the Client Center.
 
-To hide the products and this tab, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+To hide the products and this tab, enter the following **value** in the Settings field:
 
 ```
 {"HideDistributionChannel": true}
@@ -78,7 +74,7 @@ To hide the products and this tab, enter the following **value** for the Setting
 
 You can set a default store for every new order created in the Client Center.
 
-To do so, enter the following **value** for the Settings field and **restart** the website using the Instance Manager:
+To do so, enter the following **value** in the Settings field:
 
 ```
 {"DefaultStore": ID}
@@ -86,11 +82,11 @@ To do so, enter the following **value** for the Settings field and **restart** t
 
 where ID is the identifier of the store (e.g. 00002).
 
-## SiteChannel: DistributionChannel.Code
+## SiteChannel
 
 Each Client Center has its own site, or distribution channel. 
 
-This can be overridden by specifying the code of another distribution channel in the following setting:
+This can be overridden by specifying the **code value** of another distribution channel in the Settings field:
 
 ```
 "SiteChannel": DistributionChannel.Code
