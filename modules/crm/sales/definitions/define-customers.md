@@ -100,7 +100,7 @@ To add products for a customer, you need to enable the hidden **Products** detai
 
 Then, you can proceed to add as many products as needed.
 
-![Pictures](pictures/products_detail_panel.png)
+![Pictures](pictures/products_details_panel.png)
 
 > [!NOTE]
 > 
