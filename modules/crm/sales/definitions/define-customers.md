@@ -48,9 +48,9 @@ There are **two** ways to create a customer,  both ensuring consistency in the f
 
 ### New customer details
  
-Once you access the **New Customer** window, you can start adding all the necessary details for your customer.
+Once you access the **New Customer** window, you can start adding all the necessary details for your customer, such as the price list they will use, the payment terms under which they will work, their credit limit, sales representative, and a preferred **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)**.
 
-Most of the fields are optional. However, whatever information you provide at this point will simplify the process of creating a sales order document later, as it will **automatically** be added in the order creation form.
+Most of the fields are optional. However, the more you fill out now, the more will **automatically** be added in the sales order creation form where this customer is selected.
 
 ![Pictures](pictures/Customer_New_window_27_02.png)
  
@@ -73,6 +73,8 @@ Here's a summary of commonly used fields, along with those less frequently utili
 •	**Date** – You can specify the start and end dates of the sales contract using the **From Date** and **Thru Date** fields.
 
 •	**Credit Limit**– If a sale has been made for a certain amount but payment has not been issued, the system will notify you that the customer has exceeded their credit limit.
+
+- **Default Distribution Channel** - A customer can have a preferred pathway through which their products will be delivered.
 
 •	**Customer Status** – You have two options for selling:
 
