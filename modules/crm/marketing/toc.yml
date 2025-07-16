@@ -1,7 +1,9 @@
 - name: Overview
   href: index.md
+- name: Distribution channels
+  href: distribution-channels/toc.yml
+  topicHref: distribution-channels/index.md
 - name: Bonus programs
   href: bonus-programs/toc.yml
   topicHref: bonus-programs/index.md
-
   
