@@ -44,7 +44,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/added_product.png)
 
-   1.2.   From the **My Products** tab, click on the **Quantity** field of a **customer product** row and specify the exact quantity you need ordered.
+   1.2.   From the **My Products** tab, click on the **Quantity** field of a **[customer product](/modules/crm/sales/definitions/define-customers.md#customer-products)** row and specify the exact quantity you need ordered.
 
    This will automatically add it in the **Order** tab.
 
