@@ -1,20 +1,18 @@
 # Distribution channels
 
-A distribution channel can be defined as a distinct pathway through which goods or services are delivered from an organization to its customers. It is a key commercial dimension used to segment sales processes, pricing, and delivery strategies based on target markets or customer types.
-
-In ERP.net, a distribution channel represents a business-specific route through which a company offers and sells products or services. It is a configurable entity that links products with sales conditions like price lists, payment terms, and document flows. 
+A distribution channel can be defined as a distinct pathway through which goods or services are delivered from an organization to its customers. In ERP.net, it represents a configurable entity through which a company offers and sells its products or services. 
 
 ![pictures](pictures/distribution_channels.png)
 
 ### Details
 
-The table provides a structured overview of all defined distribution channels within your organization. For every channel record, you can see its unique **Code** and descriptive **Name** that indicates its business purpose (e.g. Retailer, Client Center). The **Is Active** column shows whether the channel is currently enabled for operational use. 
+The **Distribution Channels** table provides a structured overview of all defined distribution channels within your organization. For every channel record, you can see its unique **Code** and descriptive **Name** that indicates its business purpose (e.g. Retailer, Client Center). The **Is Active** column shows whether the channel is currently enabled for operational use. 
 
 If you click on the **name** of a channel or the **blue arrow button** on the left of its row, you can expand it to see more details.
 
 ![pictures](pictures/expand_details.png)
 
-This includes the **orders** and **products** tied to it.
+This includes any **orders** and **products** tied to it.
 
 ![pictures](pictures/channel_details.png)
 
@@ -36,18 +34,18 @@ You can easily create a new channel on-demand.
 
   ![pictures](pictures/new_channel_create.png)
 
-### Distribution channel products
+### Link products
 
-Once you fill in the main details, you can associate specific products with the new channel. 
+Once you fill in the main details, you can associate specific **products** with the new channel. 
 
-This step ensures that products are always available for sale through that channel, and with appropriate predefined settings like **From Date** and **To Date**.
+This step ensures that products are always available for sale through that channel, explicitly marked with a starting **From Date** and (optionally) an ending **To Date**.
 
 ![pictures](pictures/channel_products_add.png)
 
 > [!Tip]
 >
-> As of v.26, the ERP.net **Client Center** makes use of distribution channels. In the website definition, there is a default distribution channel with code "CC" and name "Client Center", ensuring that products always have a pathway through which they can be delivered. <br> <br>
-> If products are associated with this channel, they can be added directly into a sales order while it is being created. 
+> As of v.26, the ERP.net **[Client Center](/modules/crm/clientcenter/index.md)** makes use of distribution channels. In the website definition, there is a **Default Distribution Channel** with code "CC" and name "Client Center", ensuring that products always have a pathway through which they can be delivered. <br> <br>
+> If products are associated with this channel, they can be added directly into a sales order while it is being created in the Client Center. 
 
 
   
