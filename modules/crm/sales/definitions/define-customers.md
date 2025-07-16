@@ -64,23 +64,21 @@ Once you've filled out all the desired fields, click the **Save and reload** but
  
 #### Most common fields 
 
-Here's a summary of commonly used fields, along with those less frequently utilized:
+Here's a list of commonly used fields:
 
-•	**Party** – In this field, select a party that you wish to designate as a customer.
+-	**Active** – This checkbox allows you to **enable** or **disable** a customer. When unchecked, the customer will no longer be visible in various places on the platform.
 
-•	**Active** – This checkbox allows you to **enable** or **disable** a customer. When unchecked, the customer will no longer be visible in various places on the platform.
+-	**From Date/Thru Date** – You can specify the start and end dates of the sales contract.
 
-•	**Date** – You can specify the start and end dates of the sales contract using the **From Date** and **Thru Date** fields.
-
-•	**Credit Limit**– If a sale has been made for a certain amount but payment has not been issued, the system will notify you that the customer has exceeded their credit limit.
+-	**Credit Limit**– If a sale has been made for a certain amount but payment has not been issued, the system will notify you that the customer has exceeded their credit limit.
 
 - **Default Distribution Channel** - A customer can have a preferred pathway through which their products will be delivered.
 
-•	**Customer Status** – You have two options for selling:
+- **Customer Status** – You have two options for selling:
 
-If you're shipping directly to the customer that placed the order, check the **Allow Use As Primary Customer** box. 
+- If you're shipping directly to the customer that placed the order, check the **Allow Use As Primary Customer** box. 
 
-If you've made a sale to one customer but are shipping products to another, check the **Allow Use As Ship To Customer** box.
+- If you've made a sale to one customer but are shipping products to another, check the **Allow Use As Ship To Customer** box.
 
 > [!NOTE]
 > 
@@ -94,6 +92,16 @@ For example, if the **Default Currency** is set to BGN, all sales with that cust
 
 You have the ability to **modify** each default value when creating the sales order itself.
 
+## Customer products
+
+A customer can have products negotiated specifically for them. They can be added in the document lines of a sales order through the dedicated **[Customer products](https://docs.erp.net/webclient/introduction/how-to/functional-panels/customer-products.html)** functional panel, as well as in the lines of a sales order created through the **[Client Center](/modules/crm/clientcenter/index.md)**.
+
+To add products for a customer, you need to enable the hidden **Products** detail panel through the **Customize form** feature.
+
+Then, you can proceed to add as many products as needed.
+
+![Pictures](pictures/products_detail_panel.png)
+
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v24 and v26 of the platform.
