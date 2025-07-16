@@ -12,7 +12,7 @@ The table provides a comprehensive view of each customer's profile in your organ
 
 For every customer record, you can see their **financial setup**, including which default price list they use, their standard payment method and account, and their assigned currency for transactions. 
 
-The table also displays **operational details** such as default delivery terms, **distribution channels**, credit limits, and which sales person and collections employee are responsible for managing their account.
+The table also displays operational details such as default delivery terms, **[default distribution channel](/modules/crm/marketing/distribution-channels/index.md)**, credit limits, and which sales person and collections employee are responsible for managing their account.
 
 ## Create a new customer
 
