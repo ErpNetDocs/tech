@@ -13,6 +13,10 @@ From the **[CRM](https://docs.erp.net/tech/modules/crm/index.html)** module, cli
 There, you'll find the **Customers** panel, where you can view all of the customers you have created, with details about each.
 
 ![Pictures](pictures/Customer_view_27_02.png)
+
+> [!NOTE]
+> 
+> As of ERP.net v.26, Customers can be found in the **[Sales](/modules/crm/sales/index.md)** module.
  
 ## Set up 
 
