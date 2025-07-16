@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Distribution channels | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Distribution channels | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -85,7 +85,44 @@
         </div>
 
         <article data-uid="">
+<h1 id="distribution-channels">Distribution channels</h1>
 
+<p>A distribution channel can be defined as a distinct pathway through which goods or services are delivered. In ERP.net, it represents a configurable entity through which a company (or customer) offers and sells its products or services.</p>
+<p><img src="pictures/distribution_channels.png" alt="pictures"></p>
+<h3 id="details">Details</h3>
+<p>The <strong>Distribution Channels</strong> table provides a structured overview of all defined distribution channels within your organization. For every channel record, you can see its unique <strong>Code</strong> and descriptive <strong>Name</strong> that indicates its business purpose (e.g. Retailer, Client Center). The <strong>Is Active</strong> column shows whether the channel is currently enabled for operational use.</p>
+<p>If you click on the <strong>name</strong> of a channel or the <strong>blue arrow button</strong> on the left of its row, you can expand it to see more details.</p>
+<p><img src="pictures/expand_details.png" alt="pictures"></p>
+<p>This includes any <strong>orders</strong> and <strong>products</strong> tied to it.</p>
+<p><img src="pictures/channel_details.png" alt="pictures"></p>
+<h2 id="create-a-new-distribution-channel">Create a new distribution channel</h2>
+<p>You can easily create a new channel on-demand.</p>
+<ol>
+<li>To begin, click the <strong>New</strong> button.</li>
+</ol>
+<p><img src="pictures/new_channel_add.png" alt="pictures"></p>
+<ol start="2">
+<li><p>Enter a short, unique <strong>Code</strong> identifier for the channel (e.g., OL, CC).</p>
+</li>
+<li><p>Fill in the <strong>Name</strong> field with a user-friendly label for the channel.</p>
+</li>
+<li><p>Use the <strong>Is Active</strong> checkbox to indicate whether the distribution channel should be immediately available for use.</p>
+</li>
+<li><p>Add an optional <strong>Description</strong> to provide additional context.</p>
+</li>
+</ol>
+<p><img src="pictures/new_channel_create.png" alt="pictures"></p>
+<h3 id="link-products">Link products</h3>
+<p>Once you fill in the main details, you can associate specific <strong>products</strong> with the new channel.</p>
+<p>This step ensures that products are available for sale through that channel, optionally marked with a <strong>From Date</strong> and <strong>To Date</strong> indicating when the product is listed and de-listed.</p>
+<p><img src="pictures/channel_products_add.png" alt="pictures"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The ERP.net <strong><a href="/modules/crm/clientcenter/index.md">Client Center</a></strong> makes use of distribution channels. In the website definition, there is a <strong>Default Distribution Channel</strong> with code &quot;CC&quot; and name &quot;Client Center&quot;, ensuring that products have a pathway through which they can be delivered. <br> <br>
+If products are associated with this channel, they can be added directly into a sales order while it is being created in the <strong>Client Center</strong>. <br> <br>
+ERP.net <strong><a href="/modules/crm/sales/customers/index.md">customers</a></strong> also work with distribution channels. A customer entity can have a preferred <strong>Default Distribution Channel</strong> they can use for listing products. <br> <br>
+If products are associated with this channel, they can be added directly into a sales order in the <strong>Client Center</strong>.</p>
+</div>
 
 </article>
 

@@ -5565,6 +5565,79 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/channel_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/channel_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/channel_products_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/channel_products_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/distribution_channels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/distribution_channels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/expand_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/expand_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/new_channel_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/new_channel_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/pictures/new_channel_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/distribution-channels/pictures/new_channel_create.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/marketing/distribution-channels/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/marketing/distribution-channels/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/marketing/distribution-channels/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/marketing/index.md",
       "output": {
@@ -6425,6 +6498,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales/definitions/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/definitions/pictures/products_details_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/definitions/pictures/products_details_panel.png"
         }
       },
       "version": ""
