@@ -38,7 +38,7 @@ You can easily create a new channel on-demand.
 
 Once you fill in the main details, you can associate specific **products** with the new channel. 
 
-This step ensures that products are always available for sale through that channel, explicitly marked with a starting **From Date** and (optionally) an ending **To Date**.
+This step ensures that products are available for sale through that channel, optionally marked with a **From Date** and **To Date** indicating when the product is listed and de-listed.
 
 ![pictures](pictures/channel_products_add.png)
 
