@@ -50,7 +50,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/quantity_myproducts.png)
 
-   1.3.   Depending on how a Client Center is configured, users may add products linked to their customer's **[default distribution channel](/modules/crm/sales/definitions/define-customers.md)**.
+   1.3.   Depending on how a Client Center is configured, users may add products linked to their customer's **[default distribution channel](/modules/crm/sales/definitions/define-customers.md#new-customer-details)**.
 
       The process to add them is identical to the **My Products** tab.
 
