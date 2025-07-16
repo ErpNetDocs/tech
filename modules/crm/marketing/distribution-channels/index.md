@@ -44,7 +44,7 @@ This step ensures that products are always available for sale through that chann
 
 > [!Tip]
 >
-> As of v.26, the ERP.net **[Client Center](/modules/crm/clientcenter/index.md)** makes use of distribution channels. In the website definition, there is a **Default Distribution Channel** with code "CC" and name "Client Center", ensuring that products always have a pathway through which they can be delivered. <br> <br>
+> As of v.26, the ERP.net **[Client Center](/modules/crm/clientcenter/index.md)** makes use of distribution channels. In the website definition, there is a **Default Distribution Channel** with code "CC" and name "Client Center", ensuring that products have a pathway through which they can be delivered. <br> <br>
 > If products are associated with this channel, they can be added directly into a sales order while it is being created in the Client Center. 
 
 
