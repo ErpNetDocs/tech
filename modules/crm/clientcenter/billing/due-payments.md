@@ -10,7 +10,7 @@ It is accessible by Client Center users with **[external role](/modules/crm/sale
 
 You can find the following information about each due payment in the table:
 
-- **Ref document date** - The date when the invoice document for which there is a due payment was created.
+- **Ref document date** - The date when the reference document for which there is a due payment was created.
 - **Remaining amount** - The amount due to be paid.
 - **Currency** - The currency of the respective amount.
 - **Invoice No** - Number of the invoice document for which there is a due payment.
@@ -23,6 +23,6 @@ Simply click on the respective column's box to add it.
 
 ![pictures](pictures/duepayments_columns.png)
 
-This will essentially expand the table to your preferences.
+This can significantly expand the table with information like due date, paid amount, and number of overdue days.
 
 ![pictures](pictures/duepayments_expanded.png)
