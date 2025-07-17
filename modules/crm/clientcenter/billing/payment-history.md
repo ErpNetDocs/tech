@@ -4,8 +4,6 @@ The Payment History page stores all customer payments made within the past 12 mo
 
 It is accessible to users with the **[external role](/modules/crm/sales/customers/external-access.md#roles)** **L40 – Billing** and above.
 
-![pictures](pictures/payment_history.png)
-
 ### Details
 
 You can find the following information about each payment in the table:
@@ -23,7 +21,7 @@ You can find the following information about each payment in the table:
 
 ### Expanded view
 
-The table displays the most important columns by default, but with the Client Center's built-in **[Column Chooser](./grid-control.md#column-chooser)**, you can reveal more.
+The table displays the most important columns by default, but with the Client Center's built-in **[Column Chooser](../grid-control.md#column-chooser)**, you can reveal more.
 
 Simply click on the respective column's box to add it.
 
