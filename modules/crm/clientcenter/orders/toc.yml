@@ -1,5 +1,7 @@
-- name: Orders
+- name: Overview
   href: index.md
+- name: Orders
+  href: orders.md
 - name: New Order
   href: new-order.md
   
