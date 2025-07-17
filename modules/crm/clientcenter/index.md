@@ -46,8 +46,8 @@ This section keeps a log of billing-related documents and allows for their close
 
 It is comprised of three pages:
 
-* **Invoices**
-* **DuePayments**
+* **[Invoices](billing/invoices.md)**
+* **[DuePayments](billing/duepayments.md)**
 * **Payment History**
 
 ### User Management
