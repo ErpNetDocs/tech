@@ -52,7 +52,7 @@ To hide them, enter the following **value** in the Settings field:
 
 ## HideCustomerProducts setting
 
-**[Customer products](modules/crm/sales/definitions/define-customers.md#customer-products)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
+**[Customer products](/modules/crm/sales/definitions/define-customers.md#customer-products)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
@@ -62,7 +62,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 
 ## HideDistributionChannel setting
 
-Products linked to a **[customer](modules/crm/sales/customers/index.md)**'s default **[distribution channel](modules/crm/marketing/distribution-channels/index.md)** are visible by default during the creation of a new order in the Client Center.
+Products linked to a customer's default **[distribution channel](modules/crm/marketing/distribution-channels/index.md)** are visible by default during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
@@ -84,7 +84,7 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## SiteChannel setting
 
-Each Client Center has its own site, or **distribution channel**. 
+Each Client Center has its own site, or **[distribution channel](modules/crm/marketing/distribution-channels/index.md)**. 
 
 It can be overridden by specifying the **code value** of another distribution channel in the Settings field:
 
