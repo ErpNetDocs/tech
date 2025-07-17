@@ -40,17 +40,17 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/add_button.png)
    
-   When you click **Save**, the product will be added with all the respective information about it, such as Unit, Price, and Discount.
+   When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
 
    ![pictures](pictures/added_product.png)
 
-   1.2.   From the **My Products** tab, click on the **Quantity** field of a **[customer product](/modules/crm/sales/definitions/define-customers.md#customer-products)** row and specify the exact quantity you need ordered.
+   1.2.   From the **My Products** tab, click on the **Quantity** field of a pre-agreed **[customer product](/modules/crm/sales/definitions/define-customers.md#customer-products)** row and specify the exact quantity you need ordered. 
 
-   This will automatically add it in the **Order** tab.
+   This will automatically add it in the **Order** tab with the respective information.
 
    ![pictures](pictures/quantity_myproducts.png)
 
-   1.3.   Depending on how a Client Center is configured, users may add products linked to their customer's **[default distribution channel](/modules/crm/sales/definitions/define-customers.md#new-customer-details)**.
+   1.3.   Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](/modules/crm/sales/definitions/define-customers.md#new-customer-details)**.
 
       The process to add them is identical to the **My Products** tab.
 
@@ -64,7 +64,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/edit_delete_product.png)
 
-3. To finish the order, click **Place Order**. You'll be asked to confirm.
+3. To finish the order, click **Place Order**. You'll be asked to confirm if all order details have been reviewed.
 
    ![pictures](pictures/place_order_warning.png)
 
