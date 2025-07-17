@@ -28,7 +28,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
 4. If the **[JSON setting for specifying a custom channel for the Client Center](../reference.md#sitechannel-setting)** is configured and that channel has linked products, an extra tab named after that channel will appear. It will display the related products, which you can add to the order.
 
-   In the event where a custom JSON configuration is not set, the system will automatically link the sales order to a **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)** with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
+   In the event where a custom JSON configuration is not set, the system automatically links the sales order to a **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)** with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
 
    ![pictures](pictures/channel_CC_tab.png)
 
