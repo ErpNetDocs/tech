@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Billing | ERP.net Tech Docs </title>
+      <title>Due payments | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Billing | ERP.net Tech Docs ">
+      <meta name="title" content="Due payments | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/billing/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/billing/due-payments.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,22 +85,30 @@
         </div>
 
         <article data-uid="">
-<h1 id="billing">Billing</h1>
+<h1 id="due-payments">Due payments</h1>
 
-<p>The Billing section of the <strong>Client Center</strong> provides a centralized view of customer financial documents across three dedicated pages. It is accessible to users with the <strong><a href="/modules/crm/sales/customers/external-access.md#roles">external role</a></strong> <strong>L40 – Billing</strong> and above.</p>
+<p>The Due payments page keeps a log of all customer due (unresolved) payments, with relevant information for each of them.</p>
+<p>It is accessible by Client Center users with <strong><a href="/modules/crm/sales/customers/external-access.md#roles">external role</a></strong> <strong>L40 - Billing</strong> and above.</p>
+<p><img src="pictures/duepayments_page.png" alt="pictures"></p>
+<h3 id="details">Details</h3>
+<p>You can find the following information about each due payment in the table:</p>
 <ul>
-<li><p><strong><a href="invoices.html">Invoices</a></strong>: Displays all customer invoices, including key details such as document number, amount, and creation date, also offering a download capability.</p>
-</li>
-<li><p><strong><a href="due-payments.html">DuePayments</a></strong>: Lists all unresolved customer payments, showing essential data like remaining amount, reference date, and linked invoice number.</p>
-</li>
-<li><p><strong>Payment History</strong>: Provides an overview of all payments made within the past 12 months, including date, amount, currency, and related documents.</p>
-</li>
+<li><strong>Ref document date</strong> - The date when the reference document for which there is a due payment was created.</li>
+<li><strong>Remaining amount</strong> - The amount due to be paid.</li>
+<li><strong>Currency</strong> - The currency of the respective amount.</li>
+<li><strong>Invoice No</strong> - Number of the invoice document for which there is a due payment.</li>
 </ul>
+<h3 id="expanded-view">Expanded view</h3>
+<p>With the Client Center's built-in <strong><a href="./grid-control.md#column-chooser">Column Chooser</a></strong>, you can reveal more information about the payments in the table.</p>
+<p>Simply click on the respective column's box to add it.</p>
+<p><img src="pictures/duepayments_columns.png" alt="pictures"></p>
+<p>This can significantly expand the table with information like due date, paid amount, and number of overdue days.</p>
+<p><img src="pictures/duepayments_expanded.png" alt="pictures"></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/billing/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/billing/due-payments.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -4245,10 +4245,133 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/billing/due-payments.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/billing/due-payments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/billing/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/billing/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/billing/invoices.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/billing/invoices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/billing/payment-history.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/billing/payment-history.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_columns.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_columns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_expanded.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_expanded.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_download.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_download.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_module.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_module.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_select.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/clientcenter/billing/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/billing/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/clientcenter/billing/toc.json"
         }
       },
       "version": ""
@@ -4752,6 +4875,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/orders/new-order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/orders/orders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/orders/orders.html"
         }
       },
       "version": ""

@@ -105,22 +105,22 @@
 </code></pre>
 <p>If only one of the JSON settings is set or the ID doesn't match any sales order document type, an <strong>error code</strong> CC008 or CC009 is displayed.</p>
 <h2 id="isordersenabled-setting">IsOrdersEnabled setting</h2>
-<p>By default, the <strong>Orders</strong> section of the Client Center is <strong>enabled</strong>.</p>
+<p>By default, the <strong><a href="orders/index.html">Orders</a></strong> section of the Client Center is <strong>enabled</strong>.</p>
 <p>To disable it, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;IsOrdersEnabled&quot;: false} 
 </code></pre>
 <h2 id="hidelines-setting">HideLines setting</h2>
-<p>Document lines are visible by default both in the <strong>Billing</strong> and the <strong>Orders</strong> sections of the Client Center.</p>
+<p>Document lines are visible by default both in the <strong><a href="billing/index.html">Billing</a></strong> and the <strong><a href="orders/index.html">Orders</a></strong> sections of the Client Center.</p>
 <p>To hide them, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideLines&quot;: true}
 </code></pre>
 <h2 id="hidecustomerproducts-setting">HideCustomerProducts setting</h2>
-<p>Customer products are visible by default in the <strong>My Products</strong> tab during the creation of a new order in the Client Center.</p>
+<p><strong><a href="/modules/crm/sales/definitions/define-customers.md#customer-products">Customer products</a></strong> are visible by default in the <strong>My Products</strong> tab during the creation of a new order in the Client Center.</p>
 <p>To hide the products and this tab, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideCustomerProducts&quot;: true}
 </code></pre>
 <h2 id="hidedistributionchannel-setting">HideDistributionChannel setting</h2>
-<p>Products linked to a customer's default distribution channel are visible by default during the creation of a new order in the Client Center.</p>
+<p>Products linked to a customer's default <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution channel</a></strong> are visible by default during the creation of a new order in the Client Center.</p>
 <p>To hide the products and this tab, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideDistributionChannel&quot;: true}
 </code></pre>
@@ -131,7 +131,7 @@
 </code></pre>
 <p>where ID is the identifier of the store (e.g. 00002).</p>
 <h2 id="sitechannel-setting">SiteChannel setting</h2>
-<p>Each Client Center has its own site, or <strong>distribution channel</strong>.</p>
+<p>Each Client Center has its own site, or <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution channel</a></strong>.</p>
 <p>It can be overridden by specifying the <strong>code value</strong> of another distribution channel in the Settings field:</p>
 <pre><code>&quot;SiteChannel&quot;: DistributionChannel.Code
 </code></pre>
