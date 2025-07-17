@@ -16,8 +16,6 @@ You can find the following information about each invoice in the table:
 - **Date** - Date of creation of the document.
 - **Amount** - The amount of the invoice.
 
-![pictures](pictures/invoices_rows.png)
-
 ### Expanded view
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about an invoice.
