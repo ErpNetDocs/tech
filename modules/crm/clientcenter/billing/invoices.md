@@ -20,7 +20,7 @@ You can find the following information about each invoice in the table:
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about an invoice.
 
-![pictures](pictures/invoices_detail_button.png)
+![pictures](pictures/invoices_select.png)
 
 This includes customer, status and enterprise company data, as well as individual document lines breakdown.
 
