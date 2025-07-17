@@ -3,6 +3,9 @@
 - name: Orders
   href: orders/toc.yml
   topicHref: orders/index.md
+- name: Billing
+  href: billing/toc.yml
+  topicHref: billing/index.md
 - name: Settings and errors
   href: reference.md
 - name: Grid control
