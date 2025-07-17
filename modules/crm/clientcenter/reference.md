@@ -32,7 +32,7 @@ If only one of the JSON settings is set or the ID doesn't match any sales order 
 
 ## IsOrdersEnabled setting
 
-By default, the **Orders** section of the Client Center is **enabled**. 
+By default, the **[Orders](orders/index.md)** section of the Client Center is **enabled**. 
 
 To disable it, enter the following **value** in the Settings field:
 
@@ -42,7 +42,7 @@ To disable it, enter the following **value** in the Settings field:
 
 ## HideLines setting
 
-Document lines are visible by default both in the **Billing** and the **Orders** sections of the Client Center.
+Document lines are visible by default both in the **[Billing](billing/index.md)** and the **[Orders](orders/index.md)** sections of the Client Center.
 
 To hide them, enter the following **value** in the Settings field:
 
@@ -52,7 +52,7 @@ To hide them, enter the following **value** in the Settings field:
 
 ## HideCustomerProducts setting
 
-Customer products are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
+**[Customer products](modules/crm/sales/definitions/define-customers.md#customer-products)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
@@ -62,7 +62,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 
 ## HideDistributionChannel setting
 
-Products linked to a customer's default distribution channel are visible by default during the creation of a new order in the Client Center.
+Products linked to a **[customer](modules/crm/sales/customers/index.md)**'s default **[distribution channel](modules/crm/marketing/distribution-channels/index.md)** are visible by default during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
