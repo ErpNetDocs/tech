@@ -2,7 +2,7 @@
 
 Order creation through the Client Center is disabled by default. You need to enable the respective global JSON settings first.
 
-Once that's done, users with **[external role](/modules/crm/sales/customers/external-access.md)** **L20 - Orders** and above will get access to the **New Order** page.
+Once that's done, users with **[external role](/modules/crm/sales/customers/external-access.md#roles)** **L20 - Orders** and above will get access to the **New Order** page.
 
 This is a multi-tab interface designed to handle the filling out and placement of new sales orders.
 
