@@ -16,7 +16,7 @@ The Client Center has a hierarchical menu structure consisting of several **sect
 
 ### Home
 
-This is the default landing page of the Client Center, offering quick access to all **orders**, **invoices**, and **due payments**.
+This is the default landing page of the Client Center, offering quick access to all **orders**, **invoices**, and **due payments** based on predefined role access.
 
 It also keeps a real-time metric of how many orders and invoices were produced for the current month.
 
