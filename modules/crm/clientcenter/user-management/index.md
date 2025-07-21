@@ -11,15 +11,7 @@ The page is visible to all Client Center users with **[external access role](/mo
 You can find the following information about each user in the table:
 
 * **User** -  Name of the user in the format {Name} <{Login}> [{UserType:DB}] as defined in **[Systems.Security.Users](https://docs.erp.net/model/entities/Systems.Security.Users.html)**.
-* **Role** - External access role of the user.
-  
-    - **L10 - Basic** - Allows basic rights, with mostly limited access.
-    - **L20 - Orders** - Grants access to sales orders, excluding lines and price data.
-    - **L30 - Orders with Prices** - Provides access to sales orders and all of their details.
-    - **L40 - Billing** - Gives access to billing-related documents, such as due payments, invoices and payment history.
-    - **L80 - Admin** - Ensures full access to all customer data.
-    - **L90 - Owner** - The same as Admin. Once assigned, Owner access cannot be revoked by anyone, including Admins.
-      
+* **Role** - **[External access role](./index.md#role-based-access)** of the user. Each subsequent role in the includes the rights granted by the previous.
 * **Access Back (days)** - The maximum number of past days the user is allowed to view data to which their role grants them access.
 * **Notes** - Optional notes for the user.
 
