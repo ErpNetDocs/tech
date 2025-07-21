@@ -16,9 +16,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All **[customer products](/modules/crm/sales/definitions/define-customers.md#customer-products)** will appear here. You can add them to the order simply by specifying their quantities in the **Quantity** field.
-  
-   They will automatically appear in the **Order** tab.
+2. **My Products** - All **[customer products](/modules/crm/sales/definitions/define-customers.md#customer-products)** will appear here. You can add them to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will automatically appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
