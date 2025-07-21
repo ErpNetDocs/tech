@@ -25,13 +25,13 @@ You can find the following information about each user in the table:
 
 ## Add user
 
-Admins and Owners can add any user from within their organization into the Client Center.
+Admins and Owners can add any already registered external and internal user from within their organization into the Client Center.
 
 1. To begin, click **Add User**.
    
    ![pictures](pictures/user_management_adduser.png)
    
-2. This will trigger a window where you need to provide the user's registered email address.
+2. This will trigger a window where you need to provide the user's email address.
 
    ![pictures](pictures/user_add.png)
 
@@ -39,7 +39,7 @@ Admins and Owners can add any user from within their organization into the Clien
 
    ![pictures](pictures/user_management_error.png)
 
-3. Proceed to fill out necessary **Days Back Access** and **Role** fields. 
+3. Proceed to fill out necessary **Days Back Access** and **Role** fields. The name will be filled out automatically.
 
    When done, click **Save**.
 
