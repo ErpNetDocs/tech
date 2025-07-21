@@ -50,9 +50,9 @@ It is comprised of three pages:
 * **[DuePayments](billing/duepayments.md)**
 * **Payment History**
 
-### [User Management](user-management/index.md)
+### User Management
 
-This page is for managing the customer's existing users by determining the level of access they have to the Client Center.
+The **[User Management](user-management/index.md)** page is for managing the customer's existing users by determining the level of access they have to the Client Center.
 
 It further allows the removal of existing users and addition of new ones.
 
