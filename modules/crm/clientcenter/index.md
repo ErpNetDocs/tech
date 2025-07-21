@@ -79,7 +79,7 @@ Each subsequent role in the table below also includes the rights granted by the 
 | **L10 - Basic**         | ✅   | ❌                   | ❌                   | ❌               | ✅                     | Basic access to the **Home** and **Customer Profile** pages.                           |
 | **L20 - Orders**        | ✅   | ✅        | ❌                   | ❌               | ✅                     | Access to **[Orders](orders/index.md)** and **[New Order](orders/new-order.md)**, excluding Price, Discount and Amount.                                                   |
 | **L30 - Orders + Prices** | ✅ | ✅      | ❌                   | ❌               | ✅                     | Like **L20 Orders**, but including Price, Discount and Amount.                                    |
-| **L40 - Billing**       | ✅   | ✅      | ✅                   | ❌               | ✅                     | Adds access to **[Invoices](invoices/index.md)**, **[DuePayments](invoices/duepayments.md)**, and **Payment History**.                  |
+| **L40 - Billing**       | ✅   | ✅      | ✅                   | ❌               | ✅                     | Adds access to **[Invoices](billing/invoices.md)**, **[Due Payments](billing/due-payments.md)**, and **Payment History**.                  |
 | **L80 - Admin**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Full access, including to **[User Management](user-management/index.md)**.                                                 |
 | **L90 - Owner**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Same as Admin, but Owner access **cannot** be revoked by anyone, including Admins.      |
 
