@@ -5566,6 +5566,89 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_actions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_actions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_delete_warning.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_delete_warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_adduser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_adduser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/clientcenter/user-management/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/user-management/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/clientcenter/user-management/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/contacts/index.md",
       "output": {

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>User Management | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="User Management | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -85,7 +85,42 @@
         </div>
 
         <article data-uid="">
+<h1 id="user-management">User Management</h1>
 
+<p>The User Management page is an administrative hub for a customers' users in the <strong>Client Center</strong>. It is an alternative to the <strong><a href="/modules/crm/sales/customers/external-access.md">standard way of setting up external customer access</a></strong> and allows customers' individual users to see exactly what they need once they log into the platform.</p>
+<p>The page is visible to all Client Center users with <strong><a href="/modules/crm/sales/customers/external-access.md#roles">external access role</a></strong> <strong>L80 - Admin</strong> and above.</p>
+<p><img src="pictures/user_management_page.png" alt="pictures"></p>
+<h3 id="details">Details</h3>
+<p>You can find the following information about each user in the table:</p>
+<ul>
+<li><strong>User</strong> -  Name of the user in the format {Name} &lt;{Login}&gt; [{UserType:DB}] as defined in <strong><a href="https://docs.erp.net/model/entities/Systems.Security.Users.html">Systems.Security.Users</a></strong>.</li>
+<li><strong>Role</strong> - <strong><a href="../index.html#role-based-access">External access role</a></strong> of the user. Each subsequent role in the includes the rights granted by the previous.</li>
+<li><strong>Access Back (days)</strong> - The maximum number of past days the user is allowed to view data to which their role grants them access.</li>
+<li><strong>Notes</strong> - Optional notes for the user.</li>
+</ul>
+<h2 id="add-user">Add user</h2>
+<p>Admins and Owners can add any already registered external and internal user from within their organization into the Client Center.</p>
+<ol>
+<li><p>To begin, click <strong>Add User</strong>.</p>
+<p><img src="pictures/user_management_adduser.png" alt="pictures"></p>
+</li>
+<li><p>This will trigger a window where you need to provide the user's email address.</p>
+<p><img src="pictures/user_add.png" alt="pictures"></p>
+<p>If no email record is found, you will get an <strong>error</strong>.</p>
+<p><img src="pictures/user_management_error.png" alt="pictures"></p>
+</li>
+<li><p>Proceed to fill out necessary <strong>Days Back Access</strong> and <strong>Role</strong> fields. The name will be filled out automatically.</p>
+<p>When done, click <strong>Save</strong>.</p>
+<p><img src="pictures/user_fields.png" alt="pictures"></p>
+<p>The new user will be added to the table.</p>
+</li>
+</ol>
+<h3 id="actions">Actions</h3>
+<p>You can change any of the details of an existing user with the help of the <strong>Edit button</strong>.</p>
+<p>Alternatively, you may <strong>remove</strong> a user's access to the Client Center with the <strong>Delete button</strong>.</p>
+<p><img src="pictures/user_actions.png" alt="pictures"></p>
+<p>This action will only revoke the external access, not delete the actual user.</p>
+<p><img src="pictures/user_delete_warning.png" alt="pictures"></p>
 
 </article>
 
