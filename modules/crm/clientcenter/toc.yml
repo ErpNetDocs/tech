@@ -6,6 +6,9 @@
 - name: Billing
   href: billing/toc.yml
   topicHref: billing/index.md
+- name: User Management
+  href: user-management/toc.yml
+  topicHref: user-management/index.md
 - name: Settings and errors
   href: reference.md
 - name: Grid control
