@@ -1,6 +1,6 @@
 # New Order
 
-Order creation through the Client Center is disabled by default. You need to enable the respective global JSON settings first.
+Order creation through the Client Center is disabled by default. You need to **enable** the respective **[global JSON settings first](../reference.md#isneworderenabled-setting)**
 
 Once that's done, users with **[external role](/modules/crm/sales/customers/external-access.md#roles)** **L20 - Orders** and above will get access to the **New Order** page.
 
