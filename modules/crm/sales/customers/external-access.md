@@ -25,7 +25,7 @@ A user can be assigned one of 6 different roles for external customer access.
 
 Each subsequent role in the list below also includes the rights granted by the previous.
 
-1. **L10 - Basic** - Allows basic rights, with mostly limited access.
+1. **L10 - Basic** - Allows basic rights, with access limited strictly to the **Home** and **Customer Profile** pages.
 2. **L20 - Orders** - Grants access to sales orders, excluding lines and price data.
 3. **L30 - Orders with Prices** - Provides access to sales orders and all of their details.
 4. **L40 - Billing** - Gives access to billing-related documents, such as due payments, invoices and payment history.
