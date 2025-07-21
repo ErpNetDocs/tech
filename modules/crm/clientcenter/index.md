@@ -77,8 +77,8 @@ Each subsequent role in the table below also includes the rights granted by the 
 | Role                   | Home | Orders              | Billing              | User Management | Customer Information | Notes                                                                                   |
 |-------------------------|------|----------------------|----------------------|------------------|------------------------|-----------------------------------------------------------------------------------------|
 | **L10 - Basic**         | ✅   | ❌                   | ❌                   | ❌               | ✅                     | Basic access.                           |
-| **L20 - Orders**        | ✅   | ✅        | ❌                   | ❌               | ✅                     | Access to **Orders** without price data.                                                    |
-| **L30 - Orders + Prices** | ✅ | ✅      | ❌                   | ❌               | ✅                     | Access to **Orders**, including price details.                                       |
+| **L20 - Orders**        | ✅   | ✅        | ❌                   | ❌               | ✅                     | Access to **Orders**, excluding Price, Discount and Amount.                                                   |
+| **L30 - Orders + Prices** | ✅ | ✅      | ❌                   | ❌               | ✅                     | Access to **Orders**, including Price, Discount and Amount.                                    |
 | **L40 - Billing**       | ✅   | ✅      | ✅                   | ❌               | ✅                     | Adds access to **Invoices**, **DuePayments**, and **Payment History**.                  |
 | **L80 - Admin**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Full access, including to **User Management**.                                                 |
 | **L90 - Owner**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Same as Admin, but Owner access **cannot** be revoked by anyone, including Admins.      |
