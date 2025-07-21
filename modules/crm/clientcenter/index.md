@@ -52,9 +52,9 @@ It is comprised of three pages:
 
 ### User Management
 
-The **[User Management](user-management/index.md)** page is for managing the customer's existing users by determining the level of access they have to the Client Center.
+The **[User Management](user-management/index.md)** page manages a customer's existing users by determining the level of access they have to the Client Center.
 
-It further allows the removal of existing users and addition of new ones.
+It is an alternative to the standard way of setting up external customer access.
 
 ![picture](pictures/user_management.png)
 
