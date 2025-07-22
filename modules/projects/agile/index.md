@@ -35,3 +35,9 @@ At its core, the module introduces configurable structures to reflect business l
 - **Project-based access control**, ensuring users see and interact only with relevant projects and Cases, while maintaining strict security boundaries.
 
 Together, these tools provide agile teams with structure, transparency, and flexibility — allowing them to deliver value continuously, adapt quickly, and scale their efforts confidently across the organization.
+
+## Learn more about Agile PM here:
+- [Configuration and structure](configuration-and-structure/index.md)
+- Cases
+- Advanced features
+- Security
