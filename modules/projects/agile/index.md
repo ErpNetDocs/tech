@@ -26,7 +26,7 @@ At its core, the module introduces configurable structures to reflect business l
 
 ---
 
-## Key Capabilities
+## Key capabilities
 
 - **Automated assignment logic** via configurable Assignment Rules, ensuring that each Case is routed to the most appropriate user based on project context, state, and role.
 - **Work-in-progress (WIP) limits**, which help prevent overload and maintain a steady flow of work across critical workflow stages.
