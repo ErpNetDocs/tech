@@ -21,6 +21,7 @@ This setup ensures consistency across the system and prevents Case misclassifica
 
 **Configuration path:** *Case Category definition → Project Types panel*
 
+![Allowed Project Types](pictures/category-project-types.png)
 
 ### Allowed Parent Categories
 
