@@ -62,6 +62,6 @@ When a Case is opened, the dropdown for the current System State will include on
 
 This mechanism ensures contextual relevance and prevents confusion or misclassification.
 
-**Configuration path:** *User State definition → Case Categories panel*
+**Configuration path:** *User State definition → Case Categories panel* 
 
 ![User States](pictures/user-state-form.png)
