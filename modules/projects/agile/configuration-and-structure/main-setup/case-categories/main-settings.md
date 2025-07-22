@@ -41,3 +41,17 @@ These parent-child rules ensure logical structure and prevent recursive or nonse
 **Configuration path:** *Case Category definition → Allowed Parents panel*  
 *Display panel name:* **Allowed Parents**  
 *System panel name:* **Relationships**
+
+**Examples of Case Categories with their allowed Project Types and parent context**
+
+| **Case Category**     | **Allowed Project Types**                             | **Allowed Parent Categories**         |
+|-----------------------|--------------------------------------------------------|----------------------------------------|
+| Bug                   | Product Development                                    | User Story, Feature, Epic              |
+| Feature               | Product Development                                    | Epic, Initiative                       |
+| User Story            | Product Development<br>Website Development            | Epic, Initiative                       |
+| QA Task               | Product Development<br>Client Implementation          | Feature                                |
+| Discussion            | Client Implementation<br>Process Optimization         | Epic, Initiative, Feature              |
+| Scheduled Task        | Process Optimization<br>Client Implementation         | –                                      |
+| Social Media Task     | Social Media Strategy                                  | Campaign Concept, Initiative           |
+| Campaign Concept      | Social Media Strategy                                  | Initiative                             |
+
