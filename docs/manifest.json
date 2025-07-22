@@ -17196,6 +17196,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/case-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/case-categories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-advanced.png",
       "output": {
         "resource": {
@@ -17253,16 +17263,6 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png"
         }
       },
       "version": ""
@@ -17336,16 +17336,6 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/README.html"
         }
       },
       "version": ""
