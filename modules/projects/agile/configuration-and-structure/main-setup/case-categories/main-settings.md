@@ -43,6 +43,8 @@ These parent-child rules ensure logical structure and prevent recursive or nonse
 *Display panel name:* **Allowed Parents**  
 *System panel name:* **Relationships**
 
+![Allowed Parent Categories](pictures/category-parents.png)
+
 **Examples of Case Categories with their allowed Project Types and parent context**
 
 | **Case Category**     | **Allowed Project Types**                             | **Allowed Parent Categories**         |
