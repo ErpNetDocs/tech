@@ -49,7 +49,7 @@ A well-defined order helps guide users through a consistent and intuitive workfl
 *System panel name:* **User State**
 
 
-#### Applying User States to Case Categories
+### Applying User States to Case Categories
 
 Each **User State** must be made applicable to one or more **Case Categories**.  
 This ensures that the User State will be available for selection only in Cases that belong to the allowed categories.
