@@ -271,6 +271,9 @@ references:
 - uid: config-options-reference
   name: Config options reference
   href: reference/config-options-reference.html
+- uid: configuration-and-structure
+  name: configuration-and-structure
+  href: modules/projects/agile/configuration-and-structure/index.html
 - uid: create-new
   name: CREATENEW
   href: advanced/user-business-rules/events/create-new.html
@@ -361,9 +364,6 @@ references:
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html
-- uid: main-setup
-  name: main-setup
-  href: modules/projects/agile/configuration-and-structure/index.html
 - uid: master-detail
   name: Master / Detail attributes
   href: advanced/concepts/master-detail-attributes.html
