@@ -2669,6 +2669,11 @@
     "title": "| ERP.net Tech Docs",
     "summary": "Configuration and structure This section provides an overview of the foundational elements required to configure Agile PM successfully: Main Setup – defines core components such as Project Types, Case Categories, and User States that support classification and workflow consistency. Project Definitions – introduces the structures used to execute and manage actual work, including Projects, Areas, and Milestones."
   },
+  "modules/projects/agile/configuration-and-structure/main-setup/index.html": {
+    "href": "modules/projects/agile/configuration-and-structure/main-setup/index.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "Main setup To enable users to work effectively in Agile PM, several structural elements must be defined in advance. These include: Project Types – required for creating Projects Case Categories – required for creating Cases User States – optional but highly recommended for customizing Case workflows Each of these components supports the internal logic of the organization and ensures consistency across project execution. They should be configured according to the organization’s internal classification, workflow processes, and project practices."
+  },
   "modules/projects/agile/index.html": {
     "href": "modules/projects/agile/index.html",
     "title": "| ERP.net Tech Docs",
