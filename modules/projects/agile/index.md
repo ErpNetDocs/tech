@@ -9,8 +9,6 @@ Unlike traditional Waterfall models, Agile PM supports continuous delivery and a
 What sets Agile PM in ERP.net apart from general-purpose project management tools is its **native integration** within the ERP ecosystem — enabling unified user management, shared workflow logic with other ERP objects, and seamless access to business data such as users, clients, social groups, financials, and resource availability.  
 All activities are performed within a single, secure system, without the need to switch platforms or integrate third-party tools — ensuring consistent governance, traceability, and compliance across the entire organization.
 
----
-
 ## Core structures
 
 At its core, the module introduces configurable structures to reflect business logic and internal workflows:
@@ -23,8 +21,6 @@ At its core, the module introduces configurable structures to reflect business l
 - **System States** define the main workflow lifecycle of tasks.
 - **User States** extend this lifecycle by adding more granular tracking within each system-defined stage.
 - **Cases** serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.
-
----
 
 ## Key capabilities
 
