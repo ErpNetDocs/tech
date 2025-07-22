@@ -45,16 +45,15 @@ This template is defined in the Description Template field within the Case Categ
 
 The purpose of the template is to help users describe the Case in a structured, unified, and consistent manner.
 
-- It may include formatting guidelines, placeholder phrases, and system variables  
-  ([docs.erp.net - system variables](https://docs.erp.net/tech/advanced/string-interpolation/system-variables.html))
-- Users can modify the content as needed when entering the details of a specific Case.
+- It may include formatting guidelines, placeholder phrases, and system variables
+- Users can modify the content as needed when entering the details of a specific Case
 
 **Example:**  
 For a User Story category, the template might include:
 
-> “As a [type of user/role],  
+> As a [type of user/role],  
 > I want to [perform an action / achieve a goal],  
-> So that [benefit/value it delivers]”
+> So that [benefit/value it delivers]
 
 **Configuration path:** *Case Category definition → Template panel*  
 *Display panel name:* **Template**  
