@@ -1,14 +1,10 @@
 ---
-uid: main-setup
+uid: configuration-and-structure
 ---
 
-## Main setup
+## Configuration and structure
 
-To enable users to work effectively in Agile PM, several structural elements must be defined in advance. These include:
+This section provides an overview of the foundational elements required to configure Agile PM successfully:
 
-- **Project Types** – required for creating Projects
-- **Case Categories** – required for creating Cases
-- **User States** – optional but highly recommended for customizing Case workflows
-
-Each of these components supports the internal logic of the organization and ensures consistency across project execution.  
-They should be configured according to the organization’s internal classification, workflow processes, and project practices.
+- **Main Setup** – defines core components such as Project Types, Case Categories, and User States that support classification and workflow consistency.
+- **Project Definitions** – introduces the structures used to execute and manage actual work, including Projects, Areas, and Milestones.
