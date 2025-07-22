@@ -2674,6 +2674,11 @@
     "title": "| ERP.net Tech Docs",
     "summary": "Main setup To enable users to work effectively in Agile PM, several structural elements must be defined in advance. These include: Project Types – required for creating Projects Case Categories – required for creating Cases User States – optional but highly recommended for customizing Case workflows Each of these components supports the internal logic of the organization and ensures consistency across project execution. They should be configured according to the organization’s internal classification, workflow processes, and project practices."
   },
+  "modules/projects/agile/configuration-and-structure/main-setup/project-types.html": {
+    "href": "modules/projects/agile/configuration-and-structure/main-setup/project-types.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "Project Types Projects in Agile PM are specific initiatives that always belong to a Project Type. Project Types are required for creating Projects in Agile PM. Each Project Type represents a general category of projects that share common goals, structure, or internal classification. For example, a marketing agency may frequently work on websites or digital campaigns. In this case, “Website Development” or “Social Media Strategy” could be defined as Project Types. Note A Project Type is not: a business division a specific product or service a particular project Instead, it is a high-level classification of project nature based on the organization’s internal taxonomy. Examples of Project Types and Projects by Industry: Project Type Project Industry Social Media Strategy Instagram Ads Q3 Launch TikTok Teasers Marketing Agency Process Optimization Loan Workflow Automation HR Onboarding Streamline Banking / Corporate Product Development Time Tracker App Client Portal UI Revamp Software Development Client Implementation ERP Setup GreenEnergy CRM Rollout for EcoSoft IT / ERP Services Website Development Corporate Website Redesign Landing Page Generator Digital / Web Services"
+  },
   "modules/projects/agile/index.html": {
     "href": "modules/projects/agile/index.html",
     "title": "| ERP.net Tech Docs",

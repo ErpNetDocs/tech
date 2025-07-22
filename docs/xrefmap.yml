@@ -388,6 +388,9 @@ references:
 - uid: parcers
   name: Barcode Parsers
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
+- uid: project-types
+  name: project-types
+  href: modules/projects/agile/configuration-and-structure/main-setup/project-types.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/pricing/promotional-packages.html
