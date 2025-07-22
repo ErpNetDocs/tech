@@ -20,6 +20,7 @@ A marketing agency may frequently work on websites or digital campaigns. In this
 > 
 > Instead, it is a high-level classification of project nature based on the organization’s internal taxonomy.
 
+![Project_Types](pictures/project-types.png)
 
 **Examples of Project Types and Projects by Industry:**
 
