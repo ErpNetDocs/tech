@@ -17,6 +17,7 @@ The System State **"Consider"** may include user-defined sub-states such as:
 
 These User States appear as **dropdown options** on the Case form, allowing the user to specify the exact sub-stage of the work.
 
+![User States](pictures/user-states.png)
 
 ### Linking a User State to a System State
 
@@ -62,3 +63,5 @@ When a Case is opened, the dropdown for the current System State will include on
 This mechanism ensures contextual relevance and prevents confusion or misclassification.
 
 **Configuration path:** *User State definition → Case Categories panel*
+
+![User States](pictures/user-state-form.png)
