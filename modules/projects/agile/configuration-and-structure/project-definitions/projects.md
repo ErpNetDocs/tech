@@ -16,6 +16,7 @@ Each Project belongs to exactly one Project Type.
 >  
 *For examples of real-world Projects and their types, see Project Types.
 
+![Projects](pictures/projects.png)
 
 ### Responsibility and collaboration settings
 
@@ -26,6 +27,8 @@ Each Project must have a designated **Owner** — the person responsible for its
 *System panel name:* **Project**  
 *Display field name:* **Owner**  
 *System field name:* **Primary User**
+
+![Project Basic](pictures/project-basic.png)
 
 If the Project is initiated by or serves an external party, a **Customer** can also be specified.  
 However, for internal initiatives, this field may remain empty.
@@ -38,6 +41,7 @@ This group represents the team or department involved in the discussions and dec
 *Display panel name:* **Advanced**  
 *System panel name:* **Project**
 
+![Project Advanced](pictures/project-advanced.png)
 
 ### WIP (work-in-progress) Limits
 
@@ -59,3 +63,6 @@ If a limit is exceeded, the system will block transitions to the respective stat
 *System panel name:* **Project**  
 *Display field name:* **Consider WIP Limit, Ready WIP Limit, and In Progress WIP Limit fields**  
 *System field name:* **Consider WIP Limit, Ready WIP Limit, and In Progress WIP Limit fields**
+
+![Project WIP Limits](pictures/project-wip.png)
+
