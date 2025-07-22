@@ -15,13 +15,13 @@ All activities are performed within a single, secure system, without the need to
 
 At its core, the module introduces configurable structures to reflect business logic and internal workflows:
 
-- **Projects** act as high-level containers that group related work, resources, milestones, and configuration settings.
-- **Project Types** help classify projects.
-- **Project Areas** divide work into manageable domains.
-- **Milestones** highlight key delivery points along the project timeline.
-- **Case Categories** determine task structure and flow.
+- [Projects](configuration-and-structure/project-definitions/projects.md) act as high-level containers that group related work, resources, milestones, and configuration settings.
+- [Project Types](configuration-and-structure/main-setup/project-types.md) help classify projects.
+- [Project Areas](configuration-and-structure/project-definitions/project-areas.md) divide work into manageable domains.
+- [Project Milestones](configuration-and-structure/project-definitions/project-milestones.md) highlight key delivery points along the project timeline.
+- [Case Categories](configuration-and-structure/main-setup/case-categories/index.md) determine task structure and flow.
 - **System States** define the main workflow lifecycle of tasks.
-- **User States** extend this lifecycle by adding more granular tracking within each system-defined stage.
+- [User States](configuration-and-structure/main-setup/user-states.md) extend this lifecycle by adding more granular tracking within each system-defined stage.
 - **Cases** serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.
 
 ## Key capabilities
