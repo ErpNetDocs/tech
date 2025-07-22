@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/project-types.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/user-states.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,66 +84,57 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="project-types">
+        <article data-uid="user-states">
 
-<h2 id="project-types">Project Types</h2>
-<p>Projects in Agile PM are specific initiatives that always belong to a Project Type.<br>
-<strong>Project Types are required for creating Projects in Agile PM.</strong></p>
-<p>Each Project Type represents a general category of projects that share common goals, structure, or internal classification.</p>
-<p><strong>For example:</strong>
-A marketing agency may frequently work on websites or digital campaigns. In this case, “Website Development” or “Social Media Strategy” could be defined as Project Types.</p>
+<h2 id="user-states">User States</h2>
+<p>In Agile PM, each Case progresses through a sequence of <strong>States</strong> that represent different phases in its lifecycle. These include both:</p>
+<ul>
+<li><strong>System States</strong> – the default, predefined workflow stages</li>
+<li><strong>User States</strong> – custom sub-stages defined by the organization to reflect internal processes</li>
+</ul>
+<p>While System States represent the standard process flow, User States allow teams to extend these phases with more granular sub-stages that match their internal procedures, providing better visibility and control over the actual status of work.</p>
+<p><strong>For example:</strong><br>
+The System State <strong>“Consider”</strong> may include user-defined sub-states such as:<br>
+“Needs a meeting”, “For approval” and “Needs clarification”.</p>
+<p>These User States appear as <strong>dropdown options</strong> on the Case form, allowing the user to specify the exact sub-stage of the work.</p>
+<h3 id="linking-a-user-state-to-a-system-state">Linking a User State to a System State</h3>
+<p>Each <strong>User State</strong> must be explicitly linked to a specific <strong>System State</strong>.<br>
+This defines which System State the User State extends and determines in which System State dropdown it will be available in the Case form.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A Project Type is not:</p>
-<ul>
-<li>a business division</li>
-<li>a specific product or service</li>
-<li>a particular project</li>
-</ul>
-<p>Instead, it is a high-level classification of project nature based on the organization’s internal taxonomy.</p>
+<p>The <strong>CLOSED</strong> System State is an exception — it does not support its own User States.<br>
+Instead, it inherits the User State that was set when the Case was transitioned to <strong>RESOLVED</strong>.<br>
+This ensures that the final state of the Case remains consistent with how the work was completed or resolved.</p>
 </div>
-<p><strong>Examples of Project Types and Projects by Industry:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Project Type</strong></th>
-<th><strong>Project</strong></th>
-<th><strong>Industry</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Social Media Strategy</td>
-<td>Instagram Ads Q3<br>Launch TikTok Teasers</td>
-<td>Marketing Agency</td>
-</tr>
-<tr>
-<td>Process Optimization</td>
-<td>Loan Workflow Automation<br>HR Onboarding Streamline</td>
-<td>Banking / Corporate</td>
-</tr>
-<tr>
-<td>Product Development</td>
-<td>Time Tracker App<br>Client Portal UI Revamp</td>
-<td>Software Development</td>
-</tr>
-<tr>
-<td>Client Implementation</td>
-<td>ERP Setup GreenEnergy<br>CRM Rollout for EcoSoft</td>
-<td>IT / ERP Services</td>
-</tr>
-<tr>
-<td>Website Development</td>
-<td>Corporate Website Redesign<br>Landing Page Generator</td>
-<td>Digital / Web Services</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Configuration path:</strong> <em>User State definition → General panel → System State field</em><br>
+<em>Display panel name:</em> <strong>General</strong><br>
+<em>System panel name:</em> <strong>User State</strong></p>
+<h3 id="ordering-of-user-states">Ordering of User States</h3>
+<p>User States have an <strong>internal sequence</strong> within each System State. This sequence controls the order in which the User States are displayed in the dropdown menu on the Case form.</p>
+<p>The order is managed via the <strong>Ord</strong> field:</p>
+<ul>
+<li>By default, the system assigns the next available number based on the highest existing value within the same System State.</li>
+<li>However, the value can be manually edited by users to adjust the display order.</li>
+</ul>
+<p>A well-defined order helps guide users through a consistent and intuitive workflow.</p>
+<p><strong>Configuration path:</strong> <em>User State definition → General panel → Ord field</em><br>
+<em>Display panel name:</em> <strong>General</strong><br>
+<em>System panel name:</em> <strong>User State</strong></p>
+<h4 id="applying-user-states-to-case-categories">Applying User States to Case Categories</h4>
+<p>Each <strong>User State</strong> must be made applicable to one or more <strong>Case Categories</strong>.<br>
+This ensures that the User State will be available for selection only in Cases that belong to the allowed categories.</p>
+<p>When a Case is opened, the dropdown for the current System State will include only those User States that are:</p>
+<ul>
+<li>Linked to that System State</li>
+<li>Marked as applicable for the Case’s Category</li>
+</ul>
+<p>This mechanism ensures contextual relevance and prevents confusion or misclassification.</p>
+<p><strong>Configuration path:</strong> <em>User State definition → Case Categories panel</em></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/project-types.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/user-states.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
