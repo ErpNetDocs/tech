@@ -16,5 +16,5 @@ Typical examples include bugs, features, enhancements, user stories, scheduled t
 
 The detailed setup of Case Categories is organized into two sections:
 
-- **Main Settings** – define allowed project types and parent relationships.
-- **Advanced Settings** – control additional behavior such as mandatory parents, visibility of system states, and default description templates.
+- [Main settings](main-settings.md) – define allowed project types and parent relationships.
+- [Advanced settings](advanced-settings.md) – control additional behavior such as mandatory parents, visibility of system states, and default description templates.
