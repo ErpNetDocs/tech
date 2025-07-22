@@ -367,6 +367,9 @@ references:
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html
+- uid: main-settings
+  name: main-settings
+  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories/main-settings.html
 - uid: main-setup
   name: main-setup
   href: modules/projects/agile/configuration-and-structure/main-setup/index.html
