@@ -12,8 +12,8 @@ In Agile PM, each Case progresses through a sequence of **States** that represen
 While System States represent the standard process flow, User States allow teams to extend these phases with more granular sub-stages that match their internal procedures, providing better visibility and control over the actual status of work.
 
 **For example:**  
-The System State **“Consider”** may include user-defined sub-states such as:  
-“Needs a meeting”, “For approval” and “Needs clarification”.
+The System State **"Consider"** may include user-defined sub-states such as:  
+"Needs a meeting", "For approval" and "Needs clarification".
 
 These User States appear as **dropdown options** on the Case form, allowing the user to specify the exact sub-stage of the work.
 
