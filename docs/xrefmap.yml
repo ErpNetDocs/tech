@@ -249,7 +249,7 @@ references:
   href: advanced/calculated-attributes/operators/where.html
 - uid: case-categories
   name: case-categories
-  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories.html
+  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.html
 - uid: choose_unit
   name: Measurement unit of the order
   href: modules/logistics/inventory/inventory-control/ChooseUnit.html

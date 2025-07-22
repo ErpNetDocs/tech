@@ -17166,10 +17166,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.md",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.md",
       "output": {
         ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.html"
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.json"
         }
       },
       "version": ""
