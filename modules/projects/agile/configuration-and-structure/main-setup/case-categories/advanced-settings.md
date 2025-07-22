@@ -36,6 +36,7 @@ It also supports a gradual rollout of User States:
 *Display panel name:* **Advanced**  
 *System panel name:* **Case Category**
 
+![Category Advanced](pictures/category-advanced.png)
 
 ### Description Template
 
@@ -58,3 +59,5 @@ For a User Story category, the template might include:
 **Configuration path:** *Case Category definition → Template panel*  
 *Display panel name:* **Template**  
 *System panel name:* **Case Category (Description Template field)**
+
+![Description Template](pictures/category-template.png)
