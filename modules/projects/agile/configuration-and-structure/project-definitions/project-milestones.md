@@ -24,6 +24,8 @@ Instead, Agile milestones are **lightweight coordination tools** that help teams
 A project of type **Product Development** may include Milestones such as  
 **Beta Release**, **Public Launch**, or **Security Audit**, helping the team align around shared delivery goals.
 
+![Project Milestones](pictures/project-milestones.png)
+
 Each Milestone can optionally include a **Completion Date**, which indicates the point in time by which relevant work (e.g. Cases) is expected to be completed.  
 This can be used as a soft deadline to guide planning and execution.
 
@@ -34,3 +36,6 @@ This can be used as a soft deadline to guide planning and execution.
 **Configuration path:** *Project Milestone definition → General panel → Project and Completion Date fields*  
 *Display panel name:* **General**  
 *System panel name:* **Project Milestone**
+
+![Project Milestone Form](pictures/project-milestone-form.png)
+
