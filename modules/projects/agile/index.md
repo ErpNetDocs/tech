@@ -2,6 +2,8 @@
 uid: agile
 ---
 
+# Agile PM
+
 The **Agile Project Management** module in ERP.net enables organizations to manage projects in a flexible, iterative, and feedback-driven way — fully aligned with the principles of agile methodologies.
 
 Unlike traditional Waterfall models, Agile PM supports continuous delivery and adaptive planning, making it ideal for dynamic environments such as software development, marketing, finance, and internal process optimization.
