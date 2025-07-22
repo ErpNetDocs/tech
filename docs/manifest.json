@@ -17156,6 +17156,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/projects/agile/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/projects/agile/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/index.md",
       "output": {
         ".html": {

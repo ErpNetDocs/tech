@@ -43,6 +43,9 @@ references:
 - uid: aggregates
   name: Aggregates
   href: advanced/concepts/aggregates.html
+- uid: agile
+  name: agile
+  href: modules/projects/agile/index.html
 - uid: amount-to-pay
   name: Amount to pay
   href: modules/crm/sales/sales-concepts/amount-to-pay.html
