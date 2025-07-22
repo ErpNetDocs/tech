@@ -13,7 +13,6 @@ For example, a marketing agency may frequently work on websites or digital campa
 
 > [!Note]
 > A Project Type is not:
-> 
 > - a business division  
 > - a specific product or service  
 > - a particular project  
