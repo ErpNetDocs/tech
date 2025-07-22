@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/project-types.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/project-areas.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,67 +84,56 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="project-types">
+        <article data-uid="project-areas">
 
-<h2 id="project-types">Project Types</h2>
-<p>Projects in Agile PM are specific initiatives that always belong to a Project Type.<br>
-<strong>Project Types are required for creating Projects in Agile PM.</strong></p>
-<p>Each Project Type represents a general category of projects that share common goals, structure, or internal classification.</p>
-<p><strong>For example:</strong>
-A marketing agency may frequently work on websites or digital campaigns. In this case, “Website Development” or “Social Media Strategy” could be defined as Project Types.</p>
+<h2 id="project-areas">Project Areas</h2>
+<p>A <strong>Project Area</strong> in ERP.net represents a distinct structural unit within a Project, typically focused on a specific part of the overall work.<br>
+It is used to divide a Project into smaller, more manageable components that can be handled independently, either by different teams or based on specialized responsibilities.</p>
+<p>Each Project can consist of one or more Project Areas, depending on its complexity and structure.</p>
+<p><strong>For example</strong>:
+A project of type <strong>Client Implementation</strong> may include Project Areas such as <strong>Data Migration</strong>, <strong>System Configuration</strong>, and <strong>User Training</strong>, each handled by specialized teams.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A Project Type is not:</p>
-<ul>
-<li>a business division</li>
-<li>a specific product or service</li>
-<li>a particular project</li>
-</ul>
-<p>Instead, it is a high-level classification of project nature based on the organization’s internal taxonomy.</p>
+<p>While each Project Area typically belongs to a specific Project, it is also possible to define shared Project Areas that span across all Projects.<br>
+To do this, leave the <em>Project</em> field empty.</p>
 </div>
-<p><img src="pictures/project-types.png" alt="Project_Types"></p>
-<p><strong>Examples of Project Types and Projects by Industry:</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Project Type</strong></th>
-<th><strong>Project</strong></th>
-<th><strong>Industry</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Social Media Strategy</td>
-<td>Instagram Ads Q3<br>Launch TikTok Teasers</td>
-<td>Marketing Agency</td>
-</tr>
-<tr>
-<td>Process Optimization</td>
-<td>Loan Workflow Automation<br>HR Onboarding Streamline</td>
-<td>Banking / Corporate</td>
-</tr>
-<tr>
-<td>Product Development</td>
-<td>Time Tracker App<br>Client Portal UI Revamp</td>
-<td>Software Development</td>
-</tr>
-<tr>
-<td>Client Implementation</td>
-<td>ERP Setup GreenEnergy<br>CRM Rollout for EcoSoft</td>
-<td>IT / ERP Services</td>
-</tr>
-<tr>
-<td>Website Development</td>
-<td>Corporate Website Redesign<br>Landing Page Generator</td>
-<td>Digital / Web Services</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Configuration path:</strong> <em>Project Area definition → Advanced panel → Project field</em><br>
+<em>Display panel name:</em> <strong>Advanced</strong><br>
+<em>System panel name:</em> <strong>Project Area</strong></p>
+<h3 id="responsibility-and-collaboration-settings">Responsibility and collaboration settings</h3>
+<p>Each Project Area may have a designated <strong>Owner</strong> — the person responsible for overseeing and coordinating the work within that Area.<br>
+A <strong>Social Group</strong> can also be assigned to the Project Area — just like in Projects — to represent the team or department involved in discussions and decisions related to that area.<br>
+This helps ensure accountability, collaboration, and clear ownership over specific sections of the project.</p>
+<p><strong>Configuration path:</strong></p>
+<ul>
+<li><p><em>Project Area definition → Basic panel → Owner field</em><br>
+<em>Display panel name:</em> <strong>Basic</strong><br>
+<em>System panel name:</em> <strong>Project Area</strong><br>
+<em>Display field name:</em> <strong>Owner</strong><br>
+<em>System field name:</em> <strong>Primary User</strong></p>
+</li>
+<li><p><em>Project Area definition → Advanced panel → Social Group field</em><br>
+<em>Display panel name:</em> <strong>Advanced</strong><br>
+<em>System panel name:</em> <strong>Project Area</strong></p>
+</li>
+</ul>
+<h3 id="wip-work-in-progress-limits">WIP (work-in-progress) Limits</h3>
+<p>Like Projects, Project Areas may also use WIP Limits to control the number of Cases that are allowed to remain in specific workflow states within that Area.<br>
+These limits are applied <strong>per Project Area</strong>, and they function independently from the WIP limits defined at the Project level.<br>
+This mechanism ensures that each Area of the project stays manageable and avoids bottlenecks.</p>
+<p>A separate WIP limit can be defined for each of the following System States:<br>
+<strong>CONSIDER, READY, IN PROGRESS</strong></p>
+<p>If a limit is exceeded, the system will block transitions to the respective state until the number of Cases in that state within the same Project Area in the Case’s Project falls below the defined limit.</p>
+<p><strong>Configuration path:</strong> <em>Project Area Definition → WIP Limits panel → Consider, Ready, and In Progress fields</em><br>
+<em>Display panel name:</em> <strong>WIP Limits</strong><br>
+<em>System panel name:</em> <strong>Project</strong></p>
+<p><em>Display field name:</em> <strong>Consider, Ready, and In Progress fields</strong><br>
+<em>System field name:</em> <strong>Consider WIP Limit, Ready WIP Limit, and In Progress WIP Limit fields</strong></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/main-setup/project-types.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/project-areas.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

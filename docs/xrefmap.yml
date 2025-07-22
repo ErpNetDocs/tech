@@ -394,9 +394,21 @@ references:
 - uid: parcers
   name: Barcode Parsers
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
+- uid: project-areas
+  name: project-areas
+  href: modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html
+- uid: project-definitions
+  name: project-definitions
+  href: modules/projects/agile/configuration-and-structure/project-definitions/index.html
+- uid: project-milestones
+  name: project-milestones
+  href: modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.html
 - uid: project-types
   name: project-types
   href: modules/projects/agile/configuration-and-structure/main-setup/project-types.html
+- uid: projects
+  name: projects
+  href: modules/projects/agile/configuration-and-structure/project-definitions/projects.html
 - uid: promotional-package
   name: Promotional packages
   href: modules/crm/pricing/promotional-packages.html
