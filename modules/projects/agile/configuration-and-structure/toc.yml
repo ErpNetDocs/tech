@@ -1,2 +1,5 @@
 - name: Overview
   href: index.md
+- name: Main setup
+  href: main-setup/toc.yml
+  
