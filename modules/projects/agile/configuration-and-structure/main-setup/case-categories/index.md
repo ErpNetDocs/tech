@@ -12,6 +12,8 @@ Case Category is a classification unit that groups Cases with a similar purpose,
 
 Typical examples include bugs, features, enhancements, user stories, scheduled tasks, feedback, internal discussions, etc.
 
+![Case Categories](pictures/case-categories.png)
+
 The detailed setup of Case Categories is organized into two sections:
 
 - **Main Settings** – define allowed project types and parent relationships.
