@@ -20,6 +20,7 @@ A project of type **Client Implementation** may include Project Areas such as **
 *Display panel name:* **Advanced**  
 *System panel name:* **Project Area**
 
+![Project Areas](pictures/project-areas.png)
 
 ### Responsibility and collaboration settings
 
@@ -38,6 +39,8 @@ This helps ensure accountability, collaboration, and clear ownership over specif
   *Display panel name:* **Advanced**  
   *System panel name:* **Project Area**
 
+![Project Area Form](pictures/project-area-form.png)
+
 ### WIP (work-in-progress) Limits
 
 Like Projects, Project Areas may also use WIP Limits to control the number of Cases that are allowed to remain in specific workflow states within that Area.  
@@ -55,3 +58,6 @@ If a limit is exceeded, the system will block transitions to the respective stat
 
 *Display field name:* **Consider, Ready, and In Progress fields**  
 *System field name:* **Consider WIP Limit, Ready WIP Limit, and In Progress WIP Limit fields**
+
+![Project Area WIP](pictures/project-area-wip.png)
+
