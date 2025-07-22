@@ -1,4 +1,8 @@
-## 1. Main Setup
+---
+uid: main-setup
+---
+
+## Main setup
 
 To enable users to work effectively in Agile PM, several structural elements must be defined in advance. These include:
 
