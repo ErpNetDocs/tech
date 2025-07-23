@@ -84,7 +84,7 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="time-tracking">
 
 <h2 id="time-tracking">Time tracking</h2>
 <p>The <strong>Time tracking</strong> feature in ERP.net's <strong>Agile PM</strong> module enables precise recording of the time employees spend working on individual Cases. This functionality supports:</p>
@@ -129,18 +129,18 @@
 <h3 id="managing-time-entries">Managing Time Entries</h3>
 <p>To maintain accuracy and flexibility in time tracking, the system supports both manual adjustments and automated mechanisms for handling time entries.</p>
 <ul>
-<li><p><strong>Manual Adjustments:</strong><br>
+<li><p><strong>Manual adjustments</strong><br>
 Users can manually edit the <strong>start</strong> and <strong>end</strong> times of any time entry. They can also change the <strong>related Case</strong>, in case the time was logged against the wrong item.<br>
 This is useful when the timer was started or stopped too early or too late, when the entry needs to reflect work done outside real-time logging, or when it was linked to the wrong Case.</p>
 <p><img src="pictures/time-entry.png" alt="Time Entry Form"></p>
 </li>
-<li><p><strong>Automatic Closure:</strong><br>
+<li><p><strong>Automatic closure</strong><br>
 A system job named <strong>&quot;Complete unfinished time entries&quot;</strong> (<code>J38458</code>) is automatically created in the system. It runs nightly and completes time entries whose <strong>Date is at least one day old</strong>, by setting their <strong>End Time</strong> field to 23:59.</p>
 </li>
 </ul>
 <p>This ensures that time entries do not remain open indefinitely and helps maintain accurate reporting.<br>
 The job runs automatically but can also be executed manually when needed — for example, to immediately close older entries left open by mistake.</p>
-<p><em>Detailed information about the job can be found here: <strong>J38458 Complete unfinished time entries</strong></em></p>
+<p><em>Detailed information about the job can be found here: <a href="/advanced/jobs/J38458.md">J38458 Complete unfinished time entries</a></em></p>
 <h3 id="reports-and-timesheets">Reports and timesheets</h3>
 <p>Time tracking data can be analyzed through the <strong>Time Entries</strong> navigator in the <strong>Agile PM</strong> module. This interface provides managers with a flexible and detailed view of all logged time, with support for dynamic grouping and filtering.</p>
 <p>One of the key tools in these reports is the calculated field <strong>Duration Hours</strong>, which automatically shows how long each time entry lasted — providing a consistent basis for analysis across Cases, users, and projects.</p>

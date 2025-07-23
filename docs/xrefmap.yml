@@ -52,6 +52,9 @@ references:
 - uid: applicable-legislations
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
+- uid: assignment-rules
+  name: assignment-rules
+  href: modules/projects/agile/advanced-features/assignment-rules.html
 - uid: attributechanged
   name: ATTRIBUTECHANGED
   href: advanced/user-business-rules/events/attributechanged.html
@@ -430,6 +433,9 @@ references:
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
+- uid: security
+  name: security
+  href: modules/projects/agile/security.html
 - uid: setting-cost-when-purchasing-goods
   name: Setting cost when purchasing goods
   href: modules/logistics/procurement/setting-cost-when-purchasing-goods.html
@@ -463,6 +469,9 @@ references:
 - uid: the_bin
   name: How to Use the Bin in Inventory Control
   href: modules/logistics/inventory/how-to/the_bin.html
+- uid: time-tracking
+  name: time-tracking
+  href: modules/projects/agile/advanced-features/time-tracking.html
 - uid: track-changes
   name: Track Changes
   href: advanced/data-objects/track-changes.html

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/security.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="security">
+
+<h2 id="security">Security</h2>
+<h3 id="project-based-access-control">Project-based access control</h3>
+<p>To enhance confidentiality and governance in <strong>Agile PM</strong>, ERP.net introduces project-level access control using Access Keys. This security model ensures that only authorized users and teams can view or act on Cases associated with sensitive projects.</p>
+<p>Access permissions are defined centrally within the <strong>Access Permissions</strong> panel of each Project and include:</p>
+<ul>
+<li><p><strong>Basic permissions:</strong></p>
+<ul>
+<li><strong>Update</strong> – modify the project or its related Cases</li>
+<li><strong>Delete</strong> – remove the project</li>
+<li><strong>Administer</strong> – full control over the project setup and its security settings</li>
+</ul>
+</li>
+<li><p><strong>Extended permissions</strong> (specific to Agile PM Cases):</p>
+<ul>
+<li><strong>Change to CONSIDER</strong></li>
+<li><strong>Change to READY</strong></li>
+<li><strong>Change to IN PROGRESS</strong></li>
+<li><strong>Change to WAITING</strong></li>
+<li><strong>Change to RESOLVED</strong></li>
+<li><strong>Change to CLOSED</strong></li>
+</ul>
+</li>
+</ul>
+<p><code>[screenshot]</code></p>
+<p>These extended permissions regulate <strong>status transitions</strong> for Cases under the project.<br>
+For example, if a user only has the &quot;Change to READY&quot; right for a project, they can only move Cases into that state — and not others.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>These permissions are automatically inherited by all Cases linked to the Project.</p>
+</div>
+<p>When a user attempts an unauthorized state change, they receive a clear error message indicating the lack of permission to perform that specific transition for the project’s Cases.</p>
+<h3 id="visibility-filtering">Visibility filtering</h3>
+<p>To prevent unauthorized access to sensitive Cases, the system applies secure filtering at the data level:</p>
+<ul>
+<li>In the <strong>Cases navigator</strong>, users only see Cases linked to Projects for which they have access rights.</li>
+<li>In the <strong>Global Search</strong>, Cases outside the user's access scope are excluded from the results.</li>
+</ul>
+<p>This ensures that users can only discover and interact with project information that aligns with their granted permissions, reinforcing data confidentiality across the <strong>Agile PM</strong> module.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/security.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
