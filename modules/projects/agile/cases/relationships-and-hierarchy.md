@@ -14,7 +14,7 @@ The **Parent** dropdown lists only those Cases whose **Category is explicitly al
 These rules are defined at the Case Category level to enforce logical and consistent structures.
 *For configuration details, see Case Categories –> Main settings –> Allowed parent categories*.
 
-![screenshot_22]
+ ![Parent Field](pictures/case-parent.png)
 
 When a parent Case is selected, the following project-related fields are automatically populated with the corresponding values from the parent Case *(if still empty in the current Case)*:  
 **Project, Project Area, and Project Milestone.**  
@@ -34,4 +34,4 @@ The tree is built using the **Parent** field and shows key details for each Case
 
 The dedicated hierarchy panel is available in the side menu of both the Case navigator and the Case form.
 
-![screenshot_23]
+ ![Hierarchy Panel](pictures/case-hierarchy.png)
