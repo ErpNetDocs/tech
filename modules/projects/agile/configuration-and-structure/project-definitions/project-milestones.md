@@ -4,7 +4,7 @@ uid: project-milestones
 
 ## Project Milestones
 
-Project Milestones in @@name represent significant checkpoints within a Project — key dates or events that help teams monitor progress, align expectations, and prepare for upcoming deliverables.
+**Project Milestones** in **Agile PM** represent significant checkpoints within a [Project](projects.md) — key dates or events that help teams monitor progress, align expectations, and prepare for upcoming deliverables.
 
 Milestones may correspond to internal or external deadlines, such as a product release, a feature freeze, a client presentation, or a critical review session.  
 They do not control the sequence of work but signal important targets in the project timeline.
@@ -26,7 +26,7 @@ A project of type **Product Development** may include Milestones such as
 
 ![Project Milestones](pictures/project-milestones.png)
 
-Each Milestone can optionally include a **Completion Date**, which indicates the point in time by which relevant work (e.g. Cases) is expected to be completed.  
+Each Milestone can optionally include a **Completion Date**, which indicates the point in time by which relevant work (e.g. [Cases](../../cases/index.md)) is expected to be completed.  
 This can be used as a soft deadline to guide planning and execution.
 
 > [!Note]
@@ -34,8 +34,7 @@ This can be used as a soft deadline to guide planning and execution.
 > To do this, simply leave the *Project* field empty.
 
 **Configuration path:** *Project Milestone definition → General panel → Project and Completion Date fields*  
-*Display panel name:* **General**  
-*System panel name:* **Project Milestone**
+*Display panel name:* `General`<br>
+*System panel name:* `Project Milestone`
 
 ![Project Milestone Form](pictures/project-milestone-form.png)
-
