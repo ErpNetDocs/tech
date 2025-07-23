@@ -20,7 +20,7 @@ The standard System States are:
 - **Resolved** – work on the Case is completed, awaiting final review or closure.
 - **Closed** – the Case is finalized. Once closed, it becomes read-only and cannot be edited.
 
-![System States](pictures/case-system-states.png)
+![System States](pictures/system-states.png)
 
 > [!Note]
 > Some System States may be hidden in the Case form, depending on the Case Category configuration.  
@@ -49,4 +49,4 @@ This functionality helps teams reflect the true status of work more precisely, w
 > User States are optional and appear only when defined for the selected System State and Case Category.  
 > *For configuration details and setup instructions, see User States.*
 
-![User States](pictures/case-user-states.png)
+![User States](pictures/user-states.png)
