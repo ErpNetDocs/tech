@@ -2,3 +2,5 @@
   href: index.md
 - name: Configuration and structure
   href: configuration-and-structure/toc.yml
+- name: Cases
+  href: cases/toc.yml
