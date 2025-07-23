@@ -60,7 +60,7 @@ First the administrator must create a new user in the system:
 
 11. The user can now log in to the platform using the given login and the newly set password.
 
-12. The **User Type** will automatically change to:  Internal and the user will be assigned to the group:Everybody
+12. The **User Type** will automatically change to:  Internal and the user will be assigned to the **group**: Everybody
   
 ### ⚠️ Note:
 If a role has not been assigned, after login the user might encounter this error:
