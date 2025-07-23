@@ -17156,6 +17156,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/advanced-features/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/advanced-features/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/projects/agile/advanced-features/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/advanced-features/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/projects/agile/advanced-features/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/cases/case-creation.md",
       "output": {
         ".html": {
@@ -18061,16 +18084,6 @@
       "output": {
         ".html": {
           "relative_path": "modules/system/security/how-to/pictures/pics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/plususer.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/plususer.png"
         }
       },
       "version": ""

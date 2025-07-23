@@ -89,16 +89,21 @@
 
 <p>To create an account for a new user, an <strong>email invitation</strong> must be sent to this user from an administrator.<br>
 The process involves two participants – the <strong>administrator</strong> of the instance and the <strong>new user</strong>.</p>
-<hr>
 <h2 id="administrator-steps">Administrator Steps</h2>
 <p>First the administrator must create a new user in the system:</p>
-<ol>
-<li><p>Go to the <strong>Security</strong> module and open navigator <strong>&quot;Users&quot;</strong>.</p>
-</li>
-<li><p>On the header line (the horizontal grey line), find the <strong>“plus”</strong> button and click on it.<br>
-This will open a form that you should fill in. It looks like this:</p>
-</li>
-<li><p>Fill in several required fields:</p>
+<p><strong>1.</strong> Go to the <strong>Security</strong> module and open navigator <strong>&quot;Users&quot;</strong>.</p>
+<blockquote>
+<p><img src="pictures/navuser.png" alt="Navigator"></p>
+</blockquote>
+<p><strong>2.</strong> On the header line (the horizontal grey line), find the <strong>“plus”</strong> button and click on it.</p>
+<blockquote>
+<p><img src="pictures/plususer.png" alt="AddUser"></p>
+</blockquote>
+<p>This will open a form that you should fill in. It looks like this:</p>
+<blockquote>
+<p><img src="pictures/formuser.png" alt="Form"></p>
+</blockquote>
+<p><strong>3.</strong> Fill in several required fields:</p>
 <ul>
 <li><strong>Login</strong> – the login name of the user</li>
 <li><strong>Name</strong> – the name of the user</li>
@@ -109,47 +114,46 @@ Clicking on it will open a dropdown menu. You must choose:
 </code></pre>
 </li>
 </ul>
-</li>
-<li><p>Assign a role for the new user – you can do it now or at a later stage.<br>
+<p><strong>4.</strong> Assign a role for the new user – you can do it now or at a later stage.<br>
 This is done in the <strong>&quot;Roles&quot;</strong> panel.<br>
 Find the <strong>“plus”</strong> icon on the right side and add a new line in the panel.<br>
 In column <strong>&quot;Role&quot;</strong>, choose an available role (e.g. Salesperson, Manager, Worker, etc.).<br>
 You can assign several roles per user.</p>
-</li>
-<li><p>Find the <strong>“Save”</strong> button with a downward arrow.<br>
-Click the arrow and save the new user using:</p>
-<pre><code class="lang-text">Save and reload
-</code></pre>
-<p>At this stage, a new user is created and saved in the platform. It is time to send the invitation.</p>
-</li>
-<li><p>On the header line, click <strong>“Run”</strong>.</p>
-</li>
-<li><p>Choose the option:</p>
+<blockquote>
+<p><img src="pictures/roleuser.png" alt="Role"></p>
+</blockquote>
+<p><strong>5.</strong> Save the new user by clicking the arrow next to &quot;Save&quot; using option &quot;Save and reload&quot;</p>
+<blockquote>
+<p><img src="pictures/readyuser.png" alt="FilledForm"></p>
+</blockquote>
+<p>At this stage, a new user is created and saved in the platform. It is time to <strong>send the invitation</strong>.</p>
+<p><strong>6.</strong> On the header line, click <strong>“Run”</strong>.</p>
+<p><strong>7.</strong> Choose the option:</p>
 <pre><code class="lang-text">Send invitation mail
 </code></pre>
-<p>The system will ask for confirmation. Confirm by clicking <strong>OK</strong>.<br>
-This sends an email to the user.</p>
-</li>
-</ol>
+<p>The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.</p>
 <hr>
+<blockquote>
+<p><img src="pictures/inviteuser.png" alt="Invite"></p>
+</blockquote>
 <h2 id="user-steps">User Steps</h2>
-<ol start="8">
-<li><p>The user will receive an email <strong>from</strong>: notification@erpnet.info,  <strong>Subject:</strong>   Invitation to join {InstanceName.my.erp.net}</p>
-</li>
-<li><p>The user must click the <strong>Create Account</strong> link and will be transferred to a form.<br>
+<p><strong>8.</strong> The user will receive an email <strong>from</strong>: notification@erpnet.info,  <strong>Subject:</strong>   Invitation to join {InstanceName.my.erp.net}</p>
+<p><strong>9.</strong> The user must click the <strong>Create Account</strong> link and will be transferred to a form.<br>
 In the form, <strong>Login</strong> and <strong>Name</strong> are already filled – <strong>do not change them!</strong><br>
 Input only an <strong>8-character password</strong> and <strong>confirm</strong>.</p>
-</li>
-<li><p>The user can now log in to the platform using the given login and the newly set password.</p>
-</li>
-<li><p>The <strong>User Type</strong> will automatically change to:  Internal and the user will be assigned to the <strong>group</strong>: Everybody</p>
-</li>
-</ol>
-<h3 id="-note">⚠️ Note:</h3>
+<blockquote>
+<p><img src="pictures/mailuser.png" alt="mail"></p>
+</blockquote>
+<p><strong>10.</strong> The user can now log in to the platform using the given login and the newly set password.</p>
+<p><strong>11.</strong> The <strong>User Type</strong> will automatically change to:  Internal and the user will be assigned to the <strong>group</strong>: Everybody</p>
+<div class="NOTE">
+<h5>Note</h5>
+</div>
 <p>If a role has not been assigned, after login the user might encounter this error:</p>
-<pre><code class="lang-text">&quot;The currently logged user {UserName} has no assigned roles.
-Please contact your system administrator to configure the roles for user {UserName}.&quot;
-</code></pre>
+<blockquote>
+<p><em>&quot;The currently logged user {UserName} has no assigned roles.
+Please contact your system administrator to configure the roles for user {UserName}.</em></p>
+</blockquote>
 <p>In this case, the user should contact the administrator for assistance.</p>
 
 </article>
