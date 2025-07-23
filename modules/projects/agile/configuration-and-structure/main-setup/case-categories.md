@@ -86,7 +86,7 @@ This is controlled by the Requires Parent setting in the Case Category definitio
 This setting helps enforce hierarchical consistency, especially in workflows where certain types of Cases must always be linked to broader context items such as User Stories, Features, or Epics.
 
 **Configuration path:** *Case Category definition → Advanced panel → Requires Parent field*  
-*Display panel name:* `Advanced`<br>  
+*Display panel name:* `Advanced`  
 *System panel name:* `Case Category`
 
 
@@ -130,7 +130,7 @@ For a User Story category, the template might include:
 > I want to [perform an action / achieve a goal],  
 > So that [benefit/value it delivers]
 
-**Configuration path:** *Case Category definition → Template panel* 
+**Configuration path:** *Case Category definition → Template panel*<br> 
 *Display panel name:* `Template`<br>
 *System panel name:* `Case Category (Description Template field)`
 
