@@ -44,6 +44,6 @@ This template is meant to guide users in providing a structured, consistent, and
 
 Users are free to edit or replace the template content before saving the Case.
 
-*For setup details, see [Case Categories –> Advanced Settings –> Description Template](../configuration-and-structure/main-setup/case-categories.md#description-template)*
+*For setup details, see [Case Categories –> Advanced settings –> Description Template](../configuration-and-structure/main-setup/case-categories.md#description-template)*
 
 ![Template](pictures/case-template.png)
