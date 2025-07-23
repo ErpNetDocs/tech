@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/relationships-and-hierarchy.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,35 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="relationships-and-hierarchy">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
-<ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
-</ul>
+<h2 id="relationships--hierarchy">Relationships &amp; hierarchy</h2>
+<h3 id="parent-case-logic">Parent case logic</h3>
+<p>Cases in <strong>Agile PM</strong> can be structured in hierarchical relationships, allowing teams to break down complex work into smaller, interrelated tasks.</p>
+<p>A relationship is established when a Case is linked to a parent Case via the <strong>Parent</strong> field.</p>
+<p>The <strong>Parent</strong> dropdown lists only those Cases whose <strong>Category is explicitly allowed</strong> to act as a parent to the <strong>Category of the current Case</strong>, based on the configured category relationship rules.<br>
+These rules are defined at the Case Category level to enforce logical and consistent structures.
+<em>For configuration details, see Case Categories –&gt; Main settings –&gt; Allowed parent categories</em>.</p>
+<p>![screenshot_22]</p>
+<p>When a parent Case is selected, the following project-related fields are automatically populated with the corresponding values from the parent Case <em>(if still empty in the current Case)</em>:<br>
+<strong>Project, Project Area, and Project Milestone.</strong><br>
+This ensures consistency across sub-cases, reduces manual input, and streamlines the subcase creation process.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the selected Case Category is configured with the <strong>Requires Parent</strong> option, the system enforces a validation rule that ensures the <strong>Parent</strong> field is populated before the Case can be saved.<br>
+<em>For configuration details, see Case Categories –&gt; Advanced settings –&gt; Requires parent setting.</em></p>
+</div>
+<h3 id="case-hierarchy-panel">Case Hierarchy panel</h3>
+<p>A visual hierarchy is available through the <strong>Case hierarchy</strong> side panel.<br>
+This panel displays the full structure of parent and subcases — from the top-level (root) case down to the most deeply nested items.</p>
+<p>The tree is built using the <strong>Parent</strong> field and shows key details for each Case when selected, including its state, assignee, category, milestone, and priority.</p>
+<p>The dedicated hierarchy panel is available in the side menu of both the Case navigator and the Case form.</p>
+<p>![screenshot_23]</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/relationships-and-hierarchy.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

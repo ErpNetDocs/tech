@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/resp-priority-time-logging.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,42 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="resp-priority-time-logging">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
+<h2 id="responsibility-priority-and-time-logging">Responsibility, priority and time logging</h2>
+<h3 id="ownership-and-assignment">Ownership and assignment</h3>
+<p>Each Case includes two distinct roles that help define responsibility and execution:</p>
 <ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
+<li><strong>Owner</strong> – the user ultimately responsible for the Case.</li>
+<li><strong>Assigned user</strong> – the user currently expected to work on and progress the Case.</li>
 </ul>
+<p>By default, the <strong>Owner</strong> is automatically set to the user who creates the Case. However, ownership can be manually changed to delegate responsibility — for example, when a supervisor creates a Case on behalf of a colleague.</p>
+<p>The <strong>Assigned To</strong> field <em>(System name: <code>Assigned To User</code>)</em> specifies the person actively working on the Case at any given time. This enables clear task ownership at the execution level and helps manage workloads across team members.</p>
+<p>This separation between ownership and assignment supports flexible workflows, including delegation, escalation, and collaborative execution.<br>
+For instance, a Case might be created and owned by a project lead but assigned to a team member for resolution.</p>
+<p>The <strong>Assigned To</strong> field can be populated either manually or automatically through user-defined <strong>Assignment Rules</strong> — a system for defining routing logic based on project, states, category, and other contextual criteria.<br>
+This helps streamline operations by reducing manual effort and ensuring Cases are assigned to the right person.<br>
+<em>For configuration and automation options, see Assignment Rules.</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a Case is transitioned to the <strong>Resolved</strong> state, the system automatically reassigns it to its <strong>Owner</strong>.<br>
+This ensures that the responsible person reviews or finalizes the Case before closure.</p>
+</div>
+<h3 id="priority">Priority</h3>
+<p>Each Case has a <strong>Priority</strong> field used to indicate its urgency and importance within the project.<br>
+The values range from <strong>7</strong> (lowest) to <strong>1</strong> (highest), enabling teams to triage tasks and allocate resources accordingly.</p>
+<p>The Priority can be set manually when creating or editing a Case, but the system also adjusts it automatically in specific scenarios — for example, if the initial priority is <strong>3</strong> or higher and the Case enters the <strong>In Progress</strong> state, it is updated to <strong>2</strong>.
+This mechanism helps surface more critical tasks once they are actively being worked on, ensuring they receive the appropriate level of attention.</p>
+<h3 id="logged-time">Logged Time</h3>
+<p>The <strong>Logged Time</strong> field displays the total duration of work logged via Time Entries for the Case.<br>
+It offers immediate insight into the actual effort invested, supporting both progress tracking and retrospective analysis.</p>
+<p>In combination with the <strong>Estimated Time Hours</strong> field — which captures the initial time expectation for completing the Case — users and managers can evaluate how accurately the effort was projected, identify underestimations, and refine future planning.</p>
+<p><em>For more details about time tracking and Time Entry creation, see Time Tracking.</em></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/resp-priority-time-logging.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

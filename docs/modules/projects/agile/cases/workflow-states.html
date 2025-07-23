@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/workflow-states.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,54 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="workflow-states">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
+<h2 id="workflow-states">Workflow states</h2>
+<h3 id="system-states">System States</h3>
+<p>Each Case progresses through a predefined set of <strong>System States</strong>, reflecting its current stage in the workflow. These states guide users through the lifecycle of the task — from initial planning to resolution and closure.</p>
+<p>The standard System States are:</p>
+<p><strong>Backlog → Consider → Ready → In Progress → Waiting → Resolved → Closed</strong></p>
 <ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
+<li><strong>Backlog</strong> – the initial state where the Case is drafted. It typically contains a description of the issue or request.</li>
+<li><strong>Consider</strong> – used for analysis, planning, or review before committing to work.</li>
+<li><strong>Ready</strong> – signals that the Case is approved and ready to be started.</li>
+<li><strong>In Progress</strong> – indicates that work on the Case has begun.</li>
+<li><strong>Waiting</strong> – temporarily halts progress, usually due to pending feedback or external dependencies.</li>
+<li><strong>Resolved</strong> – work on the Case is completed, awaiting final review or closure.</li>
+<li><strong>Closed</strong> – the Case is finalized. Once closed, it becomes read-only and cannot be edited.</li>
 </ul>
+<p>![screenshot_12]</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some System States may be hidden in the Case form, depending on the Case Category configuration.<br>
+<em>For details, see Case Categories –&gt; Advanced Settings –&gt; Visibility of System States.</em></p>
+</div>
+<p>Users can move Cases forward or backward between states, depending on workflow permissions and process requirements.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Case must always transition through <strong>Resolved</strong> before it can be <strong>Closed</strong>, ensuring that all necessary work is reviewed and finalized before the Case becomes final and read-only.</p>
+</div>
+<h3 id="user-states">User States</h3>
+<p>While System States define the main lifecycle stages, <strong>User States</strong> provide more granular control and reflect the internal processes within each stage.</p>
+<p>When a System State has applicable User States (based on the Case Category), the user is prompted to select a sub-stage from a dropdown menu when changing the Case state.<br>
+This allows users to add more context, such as:</p>
+<ul>
+<li>&quot;For approval&quot; or &quot;Needs a meeting&quot; for the <strong>Consider</strong> state</li>
+<li>&quot;Ready for design&quot; or &quot;Ready for execution&quot; for the <strong>Ready</strong> state</li>
+<li>&quot;Completed&quot; or &quot;Rejected&quot; for the <strong>Resolved</strong> state</li>
+</ul>
+<p>This functionality helps teams reflect the true status of work more precisely, without modifying the core state logic.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>User States are optional and appear only when defined for the selected System State and Case Category.<br>
+<em>For configuration details and setup instructions, see User States.</em></p>
+</div>
+<p>![screenshot_13]</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/workflow-states.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

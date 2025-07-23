@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/notifications.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,33 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="notifications">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
+<h2 id="notifications">Notifications</h2>
+<p><strong>Agile PM</strong> provides built-in mechanisms to keep users informed about changes and activity in Cases.<br>
+These mechanisms ensure that the right people are always aware of updates relevant to their role in the process.</p>
+<h3 id="notifications-for-assigned-users">Notifications for assigned users</h3>
+<p><strong>Agile PM</strong> automatically notifies users who are assigned to a Case, helping them stay informed about relevant activities:</p>
 <ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
+<li>When a user is newly assigned to a Case, the system sends them a notification to ensure they are aware of the new assignment.</li>
+<li>If the Case is later updated by another user (without changing the assignment) - the currently assigned user is notified again.</li>
 </ul>
+<p>This ensures that assignees are kept informed not only at the moment of assignment, but also as the Case evolves, allowing them to react promptly to changes that may affect their work.</p>
+<h3 id="notifications-for-followers">Notifications for followers</h3>
+<p>All users who follow a Case receive notifications about key activities — including state changes, field updates in the Case form, entries in the Developments panel, and comments in the Discuss panel.</p>
+<p>Followers may include team members who have:</p>
+<ul>
+<li>manually subscribed to the Case, or</li>
+<li>been tagged in a Discussion comment on the Case.</li>
+</ul>
+<p>To ensure users stay informed about Cases they initiate, <strong>Agile PM</strong> automatically sets the Case <strong>creator</strong> as a follower.<br>
+This guarantees that the creator is notified of all future changes, even if they are not actively assigned to the Case.</p>
+<p>![screenshot_18]</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/notifications.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

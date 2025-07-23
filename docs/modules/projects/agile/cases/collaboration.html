@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/collaboration.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,39 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="collaboration">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
+<h2 id="collaboration">Collaboration</h2>
+<h3 id="discussions">Discussions</h3>
+<p>Each Case in <strong>Agile PM</strong> includes a built-in <strong>Discuss side panel</strong> — an internal chat space where users can exchange informal comments related to the Case.<br>
+Unlike the official log of Developments, this feature is designed for ongoing collaboration, clarification, and decision-making, without cluttering the formal history.</p>
+<p>The Discuss panel is accessible directly from the Case form and allows team members to:</p>
 <ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
+<li>Share progress updates, notes, and clarifications</li>
+<li>Ask questions or request feedback</li>
+<li>Discuss decisions informally before applying changes to the Case</li>
 </ul>
+<p>![screenshot_14]<br>
+![screenshot_15]</p>
+<p>This feature helps maintain contextual communication within the Case, reduces reliance on external messaging tools, and simplifies future reference by keeping all discussions tied to the Case itself.</p>
+<h3 id="social-groups-integration">Social Groups integration</h3>
+<p>The <strong>Agile PM</strong> module includes built-in integration with the <strong>Social Groups</strong> application of ERP.net to facilitate collaboration and ensure access to relevant project-related communication.</p>
+<p>The connection between a Case and its working group is established through the <strong>Social Group</strong> field on the Case form.<br>
+This field can be selected manually from a dropdown list of available Social Groups, but is typically populated automatically by the system according to the following logic:</p>
+<ul>
+<li>If the selected <strong>Project Area</strong> has an associated Social Group, it is assigned to the Case</li>
+<li>If no group is defined at the Project Area level, the system assigns the group from the <strong>Project</strong></li>
+</ul>
+<p>This ensures that each Case is linked to the most contextually appropriate team space.</p>
+<p>Users can click the link in the <strong>Social Group</strong> field in the Case form to open a side panel. From there, they can select <strong>Open</strong> to access the full group in the Groups application, where they can view discussions, files, and additional context related to the broader initiative.</p>
+<p>![screenshot_16]</p>
+<p>Additionally, a dedicated <strong>Cases</strong> tab in the <strong>Groups</strong> app lists all cases linked to the group and allows direct creation of new cases, which are automatically associated with the current group.</p>
+<p>![screenshot_17]</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/collaboration.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

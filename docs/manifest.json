@@ -17166,10 +17166,290 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/collaboration.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/collaboration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/comments-and-developments.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/comments-and-developments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/cases/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/cases/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/notifications.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/notifications.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-add-comment.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-add-comment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-comment-development.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-comment-development.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-creation.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-creation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-developments.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-developments.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-discuss-notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-discuss-notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-discuss.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-discuss.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-files.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-initialization.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-initialization.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-main-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-main-fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-parent-development-update.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-parent-development-update.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-parent.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-parent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-social-group.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-social-group.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-system-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-system-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-tasks.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-tasks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-user-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-user-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/cases.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/notifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/notifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/social-group-cases.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/social-group-cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/relationships-and-hierarchy.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/relationships-and-hierarchy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/resp-priority-time-logging.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/resp-priority-time-logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/supporting-tools.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/supporting-tools.html"
         }
       },
       "version": ""
@@ -17183,6 +17463,26 @@
         },
         ".json": {
           "relative_path": "modules/projects/agile/cases/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/wip-limits.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/wip-limits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/workflow-states.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/workflow-states.html"
         }
       },
       "version": ""

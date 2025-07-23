@@ -265,6 +265,12 @@ references:
 - uid: coding-systems
   name: Coding systems
   href: modules/general/products/coding-systems.html
+- uid: collaboration
+  name: collaboration
+  href: modules/projects/agile/cases/collaboration.html
+- uid: comments-and-developments
+  name: comments-and-developments
+  href: modules/projects/agile/cases/comments-and-developments.html
 - uid: commit
   name: COMMIT
   href: advanced/user-business-rules/events/commit.html
@@ -415,6 +421,12 @@ references:
 - uid: reconcile-menu
   name: WMS Worker - Reconcile Menu
   href: modules/logistics/wms/wms-worker/reconcile.html
+- uid: relationships-and-hierarchy
+  name: relationships-and-hierarchy
+  href: modules/projects/agile/cases/relationships-and-hierarchy.html
+- uid: resp-priority-time-logging
+  name: resp-priority-time-logging
+  href: modules/projects/agile/cases/resp-priority-time-logging.html
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
@@ -439,6 +451,9 @@ references:
 - uid: suggest-routing
   name: Suggest Routing
   href: modules/logistics/wms/wms-worker/orders/suggest-routing.html
+- uid: supporting-tools
+  name: supporting-tools
+  href: modules/projects/agile/cases/supporting-tools.html
 - uid: system-variables
   name: System variables
   href: advanced/string-interpolation/system-variables.html
@@ -484,12 +499,18 @@ references:
 - uid: winclientfull
   name: winclientfull
   href: includes/winclientfull.html
+- uid: wip-limits
+  name: wip-limits
+  href: modules/projects/agile/cases/wip-limits.html
 - uid: wms
   name: WMS
   href: modules/logistics/wms/index.html
 - uid: wms-worker
   name: WMS Worker
   href: modules/logistics/wms/wms-worker/index.html
+- uid: workflow-states
+  name: workflow-states
+  href: modules/projects/agile/cases/workflow-states.html
 - uid: wst-DOMAINAPI
   name: Domain API
   href: advanced/web-sites/types/domain-api.html

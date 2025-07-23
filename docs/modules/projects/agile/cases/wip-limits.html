@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/wip-limits.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,29 +84,38 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="wip-limits">
 
-<h2 id="cases">Cases</h2>
-<p><strong>Cases</strong> are the core operational unit in the <strong>Agile PM</strong> module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task.</p>
-<p>A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified.</p>
-<p>The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.</p>
-<p>The sections that follow cover the full lifecycle of a Case and its supporting functionality:</p>
+<h2 id="wip-work-in-progress-limits">WIP (work-in-progress) limits</h2>
+<p><strong>Work-in-Progress (WIP) limits</strong> are a key control mechanism in the <strong>Agile PM</strong> module that helps prevent excessive accumulation of active tasks in specific workflow stages.<br>
+They support balanced task distribution, reduce bottlenecks, and maintain a steady pace of execution.</p>
+<h3 id="wip-limit-enforcement">WIP limit enforcement</h3>
+<p>WIP limits are automatically enforced during Case state transitions — specifically when a user attempts to move a Case into one of the following <strong>System States</strong>:</p>
 <ul>
-<li><a href="case-creation.html">Case creation</a></li>
-<li><a href="comments-and-developments.html">Comments &amp; Developments</a></li>
-<li><a href="workflow-states.html">Workflow states</a></li>
-<li><a href="resp-priority-time-logging.html">Responsibility, priority and time logging</a></li>
-<li><a href="wip-limits.html">WIP (work-in-progress) limits</a></li>
-<li><a href="collaboration.html">Collaboration</a></li>
-<li><a href="notifications.html">Notifications</a></li>
-<li><a href="supporting-tools.html">Supporting tools</a></li>
-<li><a href="relationships-and-hierarchy.html">Relationships &amp; hierarchy</a></li>
+<li><strong>Consider</strong></li>
+<li><strong>Ready</strong></li>
+<li><strong>In Progress</strong></li>
 </ul>
+<p>If a WIP limit is exceeded, the system will block the transition and display a clear message to the user.</p>
+<h3 id="wip-limit-evaluation-logic">WIP limit evaluation logic</h3>
+<p>The logic for determining whether a WIP limit is exceeded is as follows:</p>
+<ul>
+<li><p><strong>If no Project Area is assigned to the Case, or the assigned Project Area has no WIP limit for the target state:</strong><br>
+The system checks if the Case's <strong>Project</strong> has a limit for that state.<br>
+It then counts all Cases in the same Project that are currently in the target System State.<br>
+If the count <strong>exceeds</strong> the defined limit, the transition is blocked.</p>
+</li>
+<li><p><strong>If the Case has a Project Area with a WIP limit for the target state:</strong><br>
+The system counts only the Cases that belong to the <strong>same Project Area</strong> and are linked to the <strong>same Project</strong> as the Case's Project.<br>
+If this count <strong>exceeds</strong> the defined limit, the transition is blocked.</p>
+</li>
+</ul>
+<p><em>For configuration paths, see: Projects (Project-level WIP limit setup) and Project Areas (Project Area-level WIP limit setup)</em></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/wip-limits.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
