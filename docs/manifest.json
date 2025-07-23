@@ -17445,6 +17445,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/wip-limits.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/wip-limits.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/cases/relationships-and-hierarchy.md",
       "output": {
