@@ -17156,6 +17156,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/projects/agile/cases/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/projects/agile/cases/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/configuration-and-structure/index.md",
       "output": {
         ".html": {
@@ -17628,6 +17651,29 @@
         },
         ".json": {
           "relative_path": "modules/system/security/groups/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/how to/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/how to/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how to/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/how to/toc.json"
         }
       },
       "version": ""

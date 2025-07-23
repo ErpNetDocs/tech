@@ -2664,6 +2664,11 @@
     "title": "Production | ERP.net Tech Docs",
     "summary": "Production To be updated."
   },
+  "modules/projects/agile/cases/index.html": {
+    "href": "modules/projects/agile/cases/index.html",
+    "title": "| ERP.net Tech Docs",
+    "summary": "Cases Cases are the core operational unit in the Agile PM module of ERP.net. They represent individual tasks or work items that collectively contribute to the execution of a project — whether internal or external. Each Case acts as a self-contained document that tracks the progress, communication, and activity history related to a single task. A Case evolves as work is performed. It starts with an initial definition, progresses through various workflow stages, and is eventually closed when the task is completed and verified. The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items. The sections that follow cover the full lifecycle of a Case and its supporting functionality: Case creation Comments & developments Workflow states Responsibility, priority and time tracking WIP (work-in-progress) limits Collaboration Notifications Supporting tools Relationships & hierarchy"
+  },
   "modules/projects/agile/configuration-and-structure/index.html": {
     "href": "modules/projects/agile/configuration-and-structure/index.html",
     "title": "| ERP.net Tech Docs",
@@ -2738,6 +2743,11 @@
     "href": "modules/system/security/groups/power-users.html",
     "title": "Power Users | ERP.net Tech Docs",
     "summary": "Power Users Power Users is a system-defined group type that serves as an intermediate tier between administrators and regular users. It offers elevated permissions without granting full administrative privileges. The Power Users group can manage access rights via the Security panel (Desktop) and Access Permissions panel (Web), which are hidden by default for regular users. This reduces Power Users' dependency on administrators for certain security tasks. System Data GroupType Value: P Description: PowerUsers Database Value: P Model Value: 4 Note The Power Users group is assigned the Manage Access Permissions key which enables it to view and interact with the Security/Access permissions panel. Key features Members are always manually added to the Power Users group. Unlike in the Administrators group type, there is no checkbox or automated assignment process. The Power Users group cannot be edited directly by users. This includes changing its name and header. Any attempt by users to modify it will result in an error, handled by business rule R37166."
+  },
+  "modules/system/security/how to/index.html": {
+    "href": "modules/system/security/how to/index.html",
+    "title": "How To | ERP.net Tech Docs",
+    "summary": "How To Here, you will find step-by-step guides on how to perform various actions within the Security module."
   },
   "modules/system/security/index.html": {
     "href": "modules/system/security/index.html",
