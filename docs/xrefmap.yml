@@ -249,7 +249,7 @@ references:
   href: advanced/calculated-attributes/operators/where.html
 - uid: case-categories
   name: case-categories
-  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.html
+  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories.html
 - uid: choose_unit
   name: Measurement unit of the order
   href: modules/logistics/inventory/inventory-control/ChooseUnit.html
@@ -286,6 +286,9 @@ references:
 - uid: defining-vat-and-base-for-vat-entries
   name: Defining VAT and base for VAT Entries
   href: modules/financials/VAT/defining-vat-and-base-for-vat-entries.html
+- uid: definitions
+  name: definitions
+  href: modules/projects/agile/configuration-and-structure/project-definitions/index.html
 - uid: determine-line-amount-in-sales-orders
   name: Determine line amount in sales orders
   href: modules/crm/sales/sales-concepts/determining-algorithms/determine-line-amount-in-sales-orders.html
@@ -367,9 +370,6 @@ references:
 - uid: logistics-module
   name: Logistics
   href: modules/logistics/index.html
-- uid: main-settings
-  name: main-settings
-  href: modules/projects/agile/configuration-and-structure/main-setup/case-categories/main-settings.html
 - uid: main-setup
   name: main-setup
   href: modules/projects/agile/configuration-and-structure/main-setup/index.html
@@ -397,9 +397,6 @@ references:
 - uid: project-areas
   name: project-areas
   href: modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html
-- uid: project-definitions
-  name: project-definitions
-  href: modules/projects/agile/configuration-and-structure/project-definitions/index.html
 - uid: project-milestones
   name: project-milestones
   href: modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.html

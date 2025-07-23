@@ -87,18 +87,159 @@
         <article data-uid="case-categories">
 
 <h2 id="case-categories">Case Categories</h2>
-<p>Once Project Types have been defined, the next essential step in setting up Agile PM is to define the Case Categories — a required element before any Cases can be created.<br>
+<p>Once <a href="../project-types.md">Project Types</a> have been defined, the next essential step in setting up Agile PM is to define the Case Categories — a required element before any Cases can be created.<br>
 Case Category is a classification unit that groups Cases with a similar purpose, structure, or role within the workflow. It is used for:</p>
 <ul>
 <li>Organizing and classifying individual Cases</li>
 <li>Reflecting the internal workflow logic of the organization</li>
 </ul>
 <p>Typical examples include bugs, features, enhancements, user stories, scheduled tasks, feedback, internal discussions, etc.</p>
+<p><img src="pictures/case-categories.png" alt="Case Categories"></p>
 <p>The detailed setup of Case Categories is organized into two sections:</p>
 <ul>
-<li><strong>Main Settings</strong> – define allowed project types and parent relationships.</li>
-<li><strong>Advanced Settings</strong> – control additional behavior such as mandatory parents, visibility of system states, and default description templates.</li>
+<li><a href="main-settings.md">Main settings</a> – define allowed project types and parent relationships.</li>
+<li><a href="advanced-settings.md">Advanced settings</a> – control additional behavior such as mandatory parents, visibility of system states, and default description templates.</li>
 </ul>
+<h2 id="main-settings">Main settings</h2>
+<h3 id="allowed-project-types">Allowed Project Types</h3>
+<p>Each Case Category must be explicitly linked to one or more Project Types.<br>
+This means that a Case of a given Category can only be associated with Projects of an allowed Type.</p>
+<p><strong>For example:</strong></p>
+<ul>
+<li><p>The &quot;User Story&quot; category may allow Cases to be created only in Projects of type:</p>
+<ul>
+<li>Business Analysis</li>
+<li>Website Development</li>
+</ul>
+</li>
+<li><p>A Project of type Marketing Campaign will not appear in the selection list when creating a User Story.</p>
+</li>
+</ul>
+<p>This setup ensures consistency across the system and prevents Case misclassification.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Project Types panel</em></p>
+<p><img src="pictures/category-project-types.png" alt="Allowed Project Types"></p>
+<h3 id="allowed-parent-categories">Allowed Parent Categories</h3>
+<p>When defining a Case Category, it is also possible to specify which other Case Categories are allowed to act as parents for this Category.<br>
+This enables organizations to control the hierarchy of Cases based on business logic.</p>
+<p><strong>For example:</strong></p>
+<ul>
+<li>A Case of category &quot;User Story&quot; may only be allowed to be subordinated to parent Cases from categories such as:
+<ul>
+<li>User Story</li>
+<li>Feature</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Initiative</li>
+</ul>
+</li>
+<li>It would typically not be allowed to have another User Story as a parent, unless explicitly configured.</li>
+</ul>
+<p>These parent-child rules ensure logical structure and prevent recursive or nonsensical relationships between Cases.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Allowed Parents panel</em><br>
+<em>Display panel name:</em> <strong>Allowed Parents</strong><br>
+<em>System panel name:</em> <strong>Relationships</strong></p>
+<p><img src="pictures/category-parents.png" alt="Allowed Parent Categories"></p>
+<p><strong>Examples of Case Categories with their allowed Project Types and parent context</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Case Category</strong></th>
+<th><strong>Allowed Project Types</strong></th>
+<th><strong>Allowed Parent Categories</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bug</td>
+<td>Product Development</td>
+<td>User Story, Feature, Epic</td>
+</tr>
+<tr>
+<td>Feature</td>
+<td>Product Development</td>
+<td>Epic, Initiative</td>
+</tr>
+<tr>
+<td>User Story</td>
+<td>Product Development<br>Website Development</td>
+<td>Epic, Initiative</td>
+</tr>
+<tr>
+<td>QA Task</td>
+<td>Product Development<br>Client Implementation</td>
+<td>Feature</td>
+</tr>
+<tr>
+<td>Discussion</td>
+<td>Client Implementation<br>Process Optimization</td>
+<td>Epic, Initiative, Feature</td>
+</tr>
+<tr>
+<td>Scheduled Task</td>
+<td>Process Optimization<br>Client Implementation</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Social Media Task</td>
+<td>Social Media Strategy</td>
+<td>Campaign Concept, Initiative</td>
+</tr>
+<tr>
+<td>Campaign Concept</td>
+<td>Social Media Strategy</td>
+<td>Initiative</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-settings">Advanced settings</h2>
+<h3 id="requires-parent-setting">Requires parent setting</h3>
+<p>Each Case Category can specify whether a parent Case is mandatory when creating a new Case of that category.<br>
+This is controlled by the Requires Parent setting in the Case Category definition.</p>
+<ul>
+<li>If the Requires Parent field is checked, the system will validate that the Parent field is populated when the Case is saved.</li>
+<li>If the field is not checked, a Case can be created without a parent.</li>
+</ul>
+<p>This setting helps enforce hierarchical consistency, especially in workflows where certain types of Cases must always be linked to broader context items such as User Stories, Features, or Epics.</p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Advanced panel → Requires Parent field</em><br>
+<em>Display panel name:</em> <strong>Advanced</strong><br>
+<em>System panel name:</em> <strong>Case Category</strong></p>
+<h3 id="visibility-of-system-states">Visibility of System States</h3>
+<p>The visibility of System States in the status bar of a Case form can be controlled via the <em>Hide Unused System States</em> option in the Case Category definition.</p>
+<ul>
+<li>When enabled, only System States that have at least one defined and active User State will be visible in the Case form.</li>
+<li>When disabled (which is the default), all System States are shown, even if no User States are assigned to them.</li>
+</ul>
+<p>This setting is useful in workflows where certain System States are not applicable.<br>
+Hiding unused states improves clarity and reduces interface noise — especially in teams that rely on a simplified or custom progression of work.</p>
+<p>It also supports a gradual rollout of User States:</p>
+<ul>
+<li>Initially, teams may define only a few User States while keeping all System States visible.</li>
+<li>Later, once the complete User State model is configured, the <em>Hide Unused System States</em> option can be activated to hide irrelevant system states and finalize the workflow experience.</li>
+</ul>
+<p><em>(For more on System States, see section … For User States, see section …)</em></p>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Advanced panel → Hide Unused System States field</em><br>
+<em>Display panel name:</em> <strong>Advanced</strong><br>
+<em>System panel name:</em> <strong>Case Category</strong></p>
+<p><img src="pictures/category-advanced.png" alt="Category Advanced"></p>
+<h3 id="description-template">Description Template</h3>
+<p>Each Case Category can include a description template — a block of predefined text that is automatically displayed when a new Case of that category is created.<br>
+This template is defined in the Description Template field within the Case Category setup.</p>
+<p>The purpose of the template is to help users describe the Case in a structured, unified, and consistent manner.</p>
+<ul>
+<li>It may include formatting guidelines, placeholder phrases, and system variables</li>
+<li>Users can modify the content as needed when entering the details of a specific Case</li>
+</ul>
+<p><strong>Example:</strong><br>
+For a User Story category, the template might include:</p>
+<blockquote>
+<p>As a [type of user/role],<br>
+I want to [perform an action / achieve a goal],<br>
+So that [benefit/value it delivers]</p>
+</blockquote>
+<p><strong>Configuration path:</strong> <em>Case Category definition → Template panel</em><br>
+<em>Display panel name:</em> <strong>Template</strong><br>
+<em>System panel name:</em> <strong>Case Category (Description Template field)</strong></p>
+<p><img src="pictures/category-template.png" alt="Description Template"></p>
 
 </article>
 

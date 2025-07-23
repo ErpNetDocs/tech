@@ -17166,93 +17166,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/advanced-settings.md",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.md",
       "output": {
         ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/advanced-settings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/main-settings.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/main-settings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/case-categories.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/case-categories.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-advanced.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-advanced.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-parents.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-parents.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-project-types.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-project-types.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/pictures/category-template.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories/toc.json"
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/case-categories.html"
         }
       },
       "version": ""
@@ -17263,6 +17180,56 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/case-categories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-advanced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-parents.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-parents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-project-types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-project-types.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/main-setup/pictures/category-template.png"
         }
       },
       "version": ""
