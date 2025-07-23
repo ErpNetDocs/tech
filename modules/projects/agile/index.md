@@ -8,7 +8,7 @@ The **Agile Project Management** module in @@name enables organizations to manag
 
 Unlike traditional Waterfall models, Agile PM supports continuous delivery and adaptive planning, making it ideal for dynamic environments such as software development, marketing, finance, and internal process optimization.
 
-What sets **Agile PM** in @@name apart from general-purpose project management tools is its **native integration** within the ERP ecosystem — enabling unified user management, shared workflow logic with other ERP objects, and seamless access to business data such as users, clients, social groups, financials, and resource availability.  
+What sets **Agile PM** in @@name apart from general-purpose project management tools is its **native integration within the ERP ecosystem** — enabling unified user management, shared workflow logic with other ERP objects, and seamless access to business data such as users, clients, social groups, financials, and resource availability.  
 All activities are performed within a single, secure system, without the need to switch platforms or integrate third-party tools — ensuring consistent governance, traceability, and compliance across the entire organization.
 
 ## Core structures
@@ -20,9 +20,9 @@ At its core, the module introduces configurable structures to reflect business l
 - [Project Areas](configuration-and-structure/project-definitions/project-areas.md) divide work into manageable domains.
 - [Project Milestones](configuration-and-structure/project-definitions/project-milestones.md) highlight key delivery points along the project timeline.
 - [Case Categories](configuration-and-structure/main-setup/case-categories.md) determine task structure and flow.
-- **System States** define the main workflow lifecycle of tasks.
+- [System States](cases/workflow-states.md#system-states) define the main workflow lifecycle of tasks.
 - [User States](configuration-and-structure/main-setup/user-states.md) extend this lifecycle by adding more granular tracking within each system-defined stage.
-- **Cases** serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.
+- [Cases](cases/index.md) serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.
 
 ## Key capabilities
 
@@ -38,6 +38,6 @@ Together, these tools provide agile teams with structure, transparency, and flex
 
 ## Learn more about Agile PM here:
 - [Configuration and structure](configuration-and-structure/index.md)
-- Cases
+- [Cases](cases/index.md)
 - Advanced features
 - Security
