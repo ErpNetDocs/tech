@@ -3,6 +3,6 @@
 - name: Project Types
   href: project-types.md
 - name: Case Categories
-  href: case-categories/toc.yml
+  href: case-categories.md
 - name: User States
   href: user-states.md
