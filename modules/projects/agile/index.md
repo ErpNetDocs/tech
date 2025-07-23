@@ -40,4 +40,4 @@ Together, these tools provide agile teams with structure, transparency, and flex
 - [Configuration and structure](configuration-and-structure/index.md)
 - [Cases](cases/index.md)
 - [Advanced features](advanced-features/index.md)
-- Security
+- [Security](security.md)
