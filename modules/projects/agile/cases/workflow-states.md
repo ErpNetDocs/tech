@@ -47,6 +47,6 @@ This functionality helps teams reflect the true status of work more precisely, w
 
 > [!Note]
 > User States are optional and appear only when defined for the selected System State and Case Category.  
-> *For configuration details and setup instructions, see User States.*
+> *For configuration details and setup instructions, see [User States](../configuration-and-structure/main-setup/user-states.md).*
 
 ![User States](pictures/user-states.png)
