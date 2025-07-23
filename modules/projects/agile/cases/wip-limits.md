@@ -7,7 +7,8 @@ uid: wip-limits
 **Work-in-Progress (WIP) limits** are a key control mechanism in the **Agile PM** module that helps prevent excessive accumulation of active tasks in specific workflow stages.  
 They support balanced task distribution, reduce bottlenecks, and maintain a steady pace of execution.
 
-### When WIP Limits Are Enforced
+
+### WIP limit enforcement
 
 WIP limits are automatically enforced during Case state transitions — specifically when a user attempts to move a Case into one of the following **System States**:
 
