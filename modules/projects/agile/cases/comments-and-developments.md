@@ -40,7 +40,7 @@ This template is meant to guide users in providing a structured, consistent, and
 
 - Placeholder phrases (e.g., "As a [user], I want to [action], so that [goal]")
 - Formatting guidelines
-- System variables
+- [System variables](/advanced/string-interpolation/system-variables.md)
 
 Users are free to edit or replace the template content before saving the Case.
 
