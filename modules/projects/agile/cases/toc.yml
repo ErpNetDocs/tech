@@ -1,2 +1,20 @@
 - name: Overview
   href: index.md
+- name: Case creation
+  href: case-creation.md
+- name: Comments & Developments
+  href: comments-and-developments.md
+- name: Workflow states
+  href: workflow-states.md
+- name: Responsibility, priority & time logging
+  href: resp-priority-time-logging.md
+- name: WIP limits
+  href: wip-limits.md
+- name: Collaboration
+  href: collaboration.md
+- name: Notifications
+  href: notifications.md
+- name: Supporting tools
+  href: supporting-tools.md
+- name: Relationships & hierarchy 
+  href: relationships-and-hierarchy.md
