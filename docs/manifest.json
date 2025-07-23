@@ -17165,6 +17165,56 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/stop-timer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/stop-timer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/advanced-features/time-tracking.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/advanced-features/time-tracking.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/projects/agile/advanced-features/toc.yml",
       "output": {
