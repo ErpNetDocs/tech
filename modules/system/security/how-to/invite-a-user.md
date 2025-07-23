@@ -51,14 +51,8 @@ First the administrator must create a new user in the system:
 
 ## User Steps
 
-8. The user will receive an email from:  
-   ```text
-   notification@erpnet.info
-   ```  
-   **Subject:**  
-   ```text
-   Invitation to join {InstanceName.my.erp.net}
-   ```
+8. The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
+   
 
 9. The user must click the **Create Account** link and will be transferred to a form.  
    In the form, **Login** and **Name** are already filled – **do not change them!**  
@@ -66,23 +60,14 @@ First the administrator must create a new user in the system:
 
 11. The user can now log in to the platform using the given login and the newly set password.
 
-12. The **User Type** will automatically change to:
-   ```text
-   Internal
-   ```  
-   and the user will be assigned to the group:
-   ```text
-   Everybody
-   ```
-
----
-
+12. The **User Type** will automatically change to:  Internal and the user will be assigned to the group:Everybody
+  
 ### ⚠️ Note:
 If a role has not been assigned, after login the user might encounter this error:
 
 ```text
-~~The currently logged user {UserName} has no assigned roles.
-Please contact your system administrator to configure the roles for user {UserName}.~~
+*"The currently logged user {UserName} has no assigned roles.
+Please contact your system administrator to configure the roles for user {UserName}."*
 ```
 
 In this case, the user should contact the administrator for assistance.
