@@ -17156,6 +17156,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/advanced-features/assignment-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/advanced-features/assignment-rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/advanced-features/index.md",
       "output": {
         ".html": {
@@ -17176,20 +17186,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entry.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png"
+          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entry.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-button.png",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/timer-button2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-button.png"
+          "relative_path": "modules/projects/agile/advanced-features/pictures/timer-button2.png"
         }
       },
       "version": ""

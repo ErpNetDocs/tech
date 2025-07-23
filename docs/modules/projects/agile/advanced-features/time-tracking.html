@@ -95,9 +95,9 @@
 </ul>
 <h3 id="starting-and-stopping-the-timer">Starting and stopping the timer</h3>
 <p>Time tracking is always initiated from the <strong>Case form</strong>. A timer button appears in the title bar when no other session is active, or when the active timer corresponds to the current Case. Clicking this button starts or stops the timer, creating or completing a time entry accordingly.</p>
-<p><code>[screenshot_1]</code></p>
+<p><img src="pictures/timer-button2.png" alt="Timer Button"></p>
 <p>Once tracking is active, the session can be stopped either from the <strong>Case form where the timer was started</strong> or from the <strong>navigation bar</strong>, via the timer icon and its dropdown menu. This design allows users to stop the timer regardless of where they are in the system. For example, if they have navigated away from the Case while continuing work, there's no need to return to the original Case form just to end the session.</p>
-<p><code>screenshot_2</code></p>
+<p><img src="pictures/stop-timer.png" alt="Stop Timer"></p>
 <h3 id="timer-menu">Timer menu</h3>
 <p>The timer icon in both the <strong>Case form</strong> and the <strong>navigation bar</strong> includes a dropdown menu with time tracking actions. The available options vary depending on whether a time tracking session is currently active.</p>
 <ul>
@@ -125,14 +125,14 @@
 </li>
 </ul>
 <p>These menu options help users manage their time tracking efficiently without leaving their current context, ensuring flexibility and accuracy in daily work reporting.</p>
-<p><code>[screenshot_3]</code></p>
+<p><img src="pictures/timer-menu.png" alt="Timer Menu"></p>
 <h3 id="managing-time-entries">Managing Time Entries</h3>
 <p>To maintain accuracy and flexibility in time tracking, the system supports both manual adjustments and automated mechanisms for handling time entries.</p>
 <ul>
 <li><p><strong>Manual Adjustments:</strong><br>
 Users can manually edit the <strong>start</strong> and <strong>end</strong> times of any time entry. They can also change the <strong>related Case</strong>, in case the time was logged against the wrong item.<br>
 This is useful when the timer was started or stopped too early or too late, when the entry needs to reflect work done outside real-time logging, or when it was linked to the wrong Case.</p>
-<p><code>[screenshot]</code></p>
+<p><img src="pictures/time-entry.png" alt="Time Entry Form"></p>
 </li>
 <li><p><strong>Automatic Closure:</strong><br>
 A system job named <strong>&quot;Complete unfinished time entries&quot;</strong> (<code>J38458</code>) is automatically created in the system. It runs nightly and completes time entries whose <strong>Date is at least one day old</strong>, by setting their <strong>End Time</strong> field to 23:59.</p>
