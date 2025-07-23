@@ -2,7 +2,7 @@
 uid: comments-and-developments
 ---
 
-## Comments & Developments
+## Comments & developments
 
 Each Case includes a **Comment** field *(System name: `Description`)*, which allows users to enter structured text using formatting tools — such as headings, bullet points, attachments, and images. This enables a clear and detailed overview of the task at hand.
 
