@@ -15,8 +15,11 @@ The Discuss panel is accessible directly from the Case form and allows team memb
 - Ask questions or request feedback  
 - Discuss decisions informally before applying changes to the Case
 
-![screenshot_14]  
-![screenshot_15]
+![Discuss Panel](pictures/case-discuss.png)
+
+When a new comment is added, all users who are tagged or who follow the Case receive a notification, ensuring that relevant stakeholders stay informed.
+
+![Discuss Notifications](pictures/case-discuss-notifications.png)
 
 This feature helps maintain contextual communication within the Case, reduces reliance on external messaging tools, and simplifies future reference by keeping all discussions tied to the Case itself.
 
@@ -35,8 +38,8 @@ This ensures that each Case is linked to the most contextually appropriate team 
 
 Users can click the link in the **Social Group** field in the Case form to open a side panel. From there, they can select **Open** to access the full group in the Groups application, where they can view discussions, files, and additional context related to the broader initiative.
 
-![screenshot_16]
+![Social Group](pictures/case-social-group.png)
 
 Additionally, a dedicated **Cases** tab in the **Groups** app lists all cases linked to the group and allows direct creation of new cases, which are automatically associated with the current group.
 
-![screenshot_17]
+![Cases Tab](pictures/social-group-cases.png)
