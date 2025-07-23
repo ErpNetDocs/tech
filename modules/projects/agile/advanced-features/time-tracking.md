@@ -62,7 +62,7 @@ The job runs automatically but can also be executed manually when needed — for
 *Detailed information about the job can be found here: **J38458 Complete unfinished time entries***
 
 
-### Reports and Timesheets
+### Reports and timesheets
 
 Time tracking data can be analyzed through the **Time Entries** navigator in the **Agile PM** module. This interface provides managers with a flexible and detailed view of all logged time, with support for dynamic grouping and filtering.
 
