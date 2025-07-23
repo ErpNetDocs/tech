@@ -32,11 +32,13 @@ First the administrator must create a new user in the system:
 
 8. The user will receive an email from sender e-mail "notification@erpnet.info", Subject: "Invitation to join {InstanceName.my.erp.net}."
 
-9. The user must click on the Create Account link and will be transferred to a form.
-    In the form, Login and Name are already filled.
-   Input only a 8 character password. Confirm.
-
-10. The user can now login with the given Login and the set password.
+9. The user must click on the **Create Account** link and will be transferred to a form.
+   In the form, Login and Name are already filled - Do not change them!
+   Input only a 8 character password.
+   Confirm.
+   
+11. The user can now login in the platform with the given login and the set password.
+12. The User type will the automatically changed to “Internal” and will be assigned to the “Everybody” User Group
 
     Note: If a role has not been assigned, after the ogin, the user might encounter an error like this:
     "The currently logged user {UserName} has no addigned roles. Please contact your system administrator to configure the roles for user {UserName}"
