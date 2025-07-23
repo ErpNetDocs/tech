@@ -4,7 +4,7 @@ uid: definitions
 
 ## Definitions
 
-Once the core structural elements of Agile PM have been configured — such as Project Types, Case Categories, and User States — the next step is to define the specific project-level structures that will be used in practice.
+Once the core structural elements of Agile PM have been configured — such as [Project Types](../main-setup/project-types.md), [Case Categories](../main-setup/case-categories.md), and [User States](../main-setup/user-states.md) — the next step is to define the specific project-level structures that will be used in practice.
 
 These include:
 
