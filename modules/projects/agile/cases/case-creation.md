@@ -20,7 +20,7 @@ Once a Case Category is selected, the system initiates a new Case form, preconfi
 
 The **Case Category** controls both the structure and logic of the Case form – including visible fields and panels, applicable system and user states, required parent settings, and allowed project types. This ensures consistency with internal processes and helps users provide only the relevant information, reducing clutter and improving efficiency.
 
-*For full configuration details of Case Categories, see Case Categories.*
+*For full configuration details of Case Categories, see [Case Categories](../configuration-and-structure/main-setup/case-categories.md).*
 
 
 ### Initialization
@@ -33,7 +33,7 @@ When initializing a new Case, users are required to provide two key pieces of in
 
 > [!Note]
 > The Project dropdown lists only those Projects that belong to a Project Type explicitly allowed for the selected Case Category. This ensures logical consistency and prevents cases from being linked to incompatible projects.    
-> *For configuration details, see Case Categories → Main Settings → Allowed Project Types.*
+> *For configuration details, see [Case Categories → Main settings → Allowed Project Types](../configuration-and-structure/main-setup/case-categories.md##allowed-project-types).*
 
 In addition, the system automatically generates a unique Case number to ensure consistent identification across the Agile PM module.
 
