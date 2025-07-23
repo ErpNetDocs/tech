@@ -4,7 +4,7 @@ uid: projects
 
 ## Projects
 
-A **Project** in @@name represents a business initiative with a defined goal – such as delivering a product, providing a service, or executing an internal improvement.  
+A **Project** in **Agile PM** represents a business initiative with a defined goal – such as delivering a product, providing a service, or executing an internal improvement.  
 Projects can be client-facing or internal, and they structure the work, timeline, people, and deliverables related to the initiative.
 
 A Project can only be created if [Project Types](../main-setup/project-types.md) have already been defined.  
