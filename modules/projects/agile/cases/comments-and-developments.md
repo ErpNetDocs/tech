@@ -10,8 +10,7 @@ When a user writes in the Comment field and saves the Case, the system automatic
 
 The screenshots below show this process — from writing the comment to seeing it registered as a structured development log.
 
-![screenshot_7]  
-![screenshot_8]
+![Case Comment](pictures/case-add-description.png)
 
 The **Developments** panel serves as the complete activity history of the Case.  
 It automatically logs:
@@ -24,13 +23,13 @@ It automatically logs:
 
 This mechanism ensures transparency, traceability, and auditability throughout the Case lifecycle — from creation to closure.
 
-![screenshot_9]
+![Case Developments](pictures/case-developments.png)
 
 When the **Parent** field is modified, development records are generated not only for the current Case, but also for the affected parent(s). These entries indicate the establishment or removal of a sub-case relationship, ensuring full traceability across hierarchical structures.
 
 *For more details on how case hierarchies work and how the **Parent** field influences structure and inheritance, see section Relationships & Hierarchy.*
 
-![screenshot_10]
+![Developments On Parent Change](pictures/case-parent-development-update.png)
 
 
 ### Description Templates
@@ -47,4 +46,4 @@ Users are free to edit or replace the template content before saving the Case.
 
 *For setup details, see Case Categories –> Advanced Settings –> Description Template.*
 
-![screenshot_11]
+![Template](pictures/case-template.png)
