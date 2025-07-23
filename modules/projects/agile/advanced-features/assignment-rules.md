@@ -1,3 +1,7 @@
+---
+uid: assignment-rules
+---
+
 ## Assignment rules
 
 **Case assignments** in Agile PM can be managed either **manually** or **automatically**. While manual assignment is always available, organizations can streamline their workflows by defining Assignment Rules — a flexible system for automatic case routing based on predefined criteria.
