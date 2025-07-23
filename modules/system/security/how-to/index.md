@@ -2,4 +2,4 @@
 
 Here, you will find step-by-step guides on how to perform various actions within the **Security** module.
 
-* **[Invite a user to an instance](https://)**
+* **[Invite a user to a WEB instance](https://)**
