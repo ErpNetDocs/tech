@@ -12,19 +12,19 @@ These panels are available from the Case form and include:
   Tasks are private by default but can also be assigned to other users working on the same Case.  
   This allows users to track any subtasks without affecting the Case’s main flow.
 
-  ![screenshot_19]
+  ![Tasks](pictures/case-tasks.png)
 
 - **Files**  
   Files such as documents and images can be uploaded through the **Files** side panel.  
   This ensures that all relevant materials are centralized and accessible to team members in the context of their work.
 
-  ![screenshot_20]
+   ![Files](pictures/case-files.png)
 
 - **Notifications**  
   The **Notifications** panel displays alerts triggered by Case activity — including status changes, field updates, or mentions in the Discuss panel.  
   *Note: This panel complements the broader notification logic described in Notifications.*
 
-  ![screenshot_21]
+   ![Notifications](pictures/case-notifications.png)
 
 - **AI Assistant**  
   The **AI Assistant** side panel provides users with contextual support directly within the Case form.  
