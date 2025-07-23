@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
       
       <meta name="docfx:rel" content="../../../../">
       
@@ -96,7 +96,7 @@
 <p>By default, the <strong>Owner</strong> is automatically set to the user who creates the Case. However, ownership can be manually changed to delegate responsibility — for example, when a supervisor creates a Case on behalf of a colleague.</p>
 <p>The <strong>Assigned To</strong> field <em>(System name: <code>Assigned To User</code>)</em> specifies the person actively working on the Case at any given time. This enables clear task ownership at the execution level and helps manage workloads across team members.</p>
 <p>This separation between ownership and assignment supports flexible workflows, including delegation, escalation, and collaborative execution.<br>
-For instance, a Case might be created and owned by a project lead but assigned to a team member for resolution.</p>
+For instance, a Case might be created and owned by a project lead but assigned to a team member for execution.</p>
 <p>The <strong>Assigned To</strong> field can be populated either manually or automatically through user-defined <strong>Assignment Rules</strong> — a system for defining routing logic based on project, states, category, and other contextual criteria.<br>
 This helps streamline operations by reducing manual effort and ensuring Cases are assigned to the right person.<br>
 <em>For configuration and automation options, see Assignment Rules.</em></p>
@@ -105,16 +105,19 @@ This helps streamline operations by reducing manual effort and ensuring Cases ar
 <p>When a Case is transitioned to the <strong>Resolved</strong> state, the system automatically reassigns it to its <strong>Owner</strong>.<br>
 This ensures that the responsible person reviews or finalizes the Case before closure.</p>
 </div>
+<p><img src="pictures/case-responsibility.png" alt="Responsibility"></p>
 <h3 id="priority">Priority</h3>
 <p>Each Case has a <strong>Priority</strong> field used to indicate its urgency and importance within the project.<br>
 The values range from <strong>7</strong> (lowest) to <strong>1</strong> (highest), enabling teams to triage tasks and allocate resources accordingly.</p>
 <p>The Priority can be set manually when creating or editing a Case, but the system also adjusts it automatically in specific scenarios — for example, if the initial priority is <strong>3</strong> or higher and the Case enters the <strong>In Progress</strong> state, it is updated to <strong>2</strong>.
 This mechanism helps surface more critical tasks once they are actively being worked on, ensuring they receive the appropriate level of attention.</p>
+<p><img src="pictures/case-priority.png" alt="Priority"></p>
 <h3 id="logged-time">Logged Time</h3>
 <p>The <strong>Logged Time</strong> field displays the total duration of work logged via Time Entries for the Case.<br>
 It offers immediate insight into the actual effort invested, supporting both progress tracking and retrospective analysis.</p>
 <p>In combination with the <strong>Estimated Time Hours</strong> field — which captures the initial time expectation for completing the Case — users and managers can evaluate how accurately the effort was projected, identify underestimations, and refine future planning.</p>
 <p><em>For more details about time tracking and Time Entry creation, see Time Tracking.</em></p>
+<p><img src="pictures/case-time.png" alt="Logged Time"></p>
 
 </article>
 

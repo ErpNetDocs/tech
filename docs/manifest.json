@@ -17336,6 +17336,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-priority.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-priority.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-responsibility.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-responsibility.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/projects/agile/cases/pictures/case-social-group.png",
       "output": {
         "resource": {
@@ -17360,6 +17380,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/agile/cases/pictures/case-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-time.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/case-time.png"
         }
       },
       "version": ""
