@@ -39,5 +39,5 @@ Together, these tools provide agile teams with structure, transparency, and flex
 ## Learn more about Agile PM here:
 - [Configuration and structure](configuration-and-structure/index.md)
 - [Cases](cases/index.md)
-- Advanced features
+- [Advanced features](advanced-features/index.md)
 - Security
