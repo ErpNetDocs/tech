@@ -6,6 +6,8 @@ A Case evolves as work is performed. It starts with an initial definition, progr
 
 The screenshot below shows the Cases navigator, grouped by Project and Case Type (Case Category), providing a structured overview of all ongoing work items.
 
+ ![Cases](pictures/cases.png)
+
 The sections that follow cover the full lifecycle of a Case and its supporting functionality:
 
 - [Case creation](case-creation.md)
