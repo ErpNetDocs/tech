@@ -4,8 +4,8 @@ uid: case-categories
 
 ## Case Categories
 
-Once [Project Types](../project-types.md) have been defined, the next essential step in setting up Agile PM is to define the Case Categories — a required element before any Cases can be created.  
-Case Category is a classification unit that groups Cases with a similar purpose, structure, or role within the workflow. It is used for:
+Once [Project Types](../project-types.md) have been defined, the next essential step in setting up **Agile PM** is to define the Case Categories — a required element before any Cases can be created.  
+**Case Category** is a classification unit that groups Cases with a similar purpose, structure, or role within the workflow. It is used for:
 
 - Organizing and classifying individual Cases  
 - Reflecting the internal workflow logic of the organization
@@ -14,18 +14,13 @@ Typical examples include bugs, features, enhancements, user stories, scheduled t
 
 ![Case Categories](pictures/case-categories.png)
 
-The detailed setup of Case Categories is organized into two sections:
-
-- [Main settings](main-settings.md) – define allowed project types and parent relationships.
-- [Advanced settings](advanced-settings.md) – control additional behavior such as mandatory parents, visibility of system states, and default description templates.
-
 
 ## Main settings
 
 ### Allowed Project Types
 
-Each Case Category must be explicitly linked to one or more Project Types.  
-This means that a Case of a given Category can only be associated with Projects of an allowed Type.
+Each Case Category must be explicitly linked to one or more **Project Types**.  
+This means that a Case of a given Category can only be associated with Projects of an allowed type.
 
 **For example:**
 
@@ -58,8 +53,8 @@ This enables organizations to control the hierarchy of Cases based on business l
 These parent-child rules ensure logical structure and prevent recursive or nonsensical relationships between Cases.
 
 **Configuration path:** *Case Category definition → Allowed Parents panel*  
-*Display panel name:* **Allowed Parents**  
-*System panel name:* **Relationships**
+*Display panel name:* `Allowed Parents`<br> 
+*System panel name:* `Relationships`
 
 ![Allowed Parent Categories](pictures/category-parents.png)
 
@@ -91,8 +86,8 @@ This is controlled by the Requires Parent setting in the Case Category definitio
 This setting helps enforce hierarchical consistency, especially in workflows where certain types of Cases must always be linked to broader context items such as User Stories, Features, or Epics.
 
 **Configuration path:** *Case Category definition → Advanced panel → Requires Parent field*  
-*Display panel name:* **Advanced**  
-*System panel name:* **Case Category**
+*Display panel name:* `Advanced`<br>  
+*System panel name:* `Case Category`
 
 
 ### Visibility of System States
@@ -113,8 +108,8 @@ It also supports a gradual rollout of User States:
 *(For more on System States, see section … For User States, see section …)*
 
 **Configuration path:** *Case Category definition → Advanced panel → Hide Unused System States field*  
-*Display panel name:* **Advanced**  
-*System panel name:* **Case Category**
+*Display panel name:* `Advanced`<br>
+*System panel name:* `Case Category`
 
 ![Category Advanced](pictures/category-advanced.png)
 
@@ -131,12 +126,12 @@ The purpose of the template is to help users describe the Case in a structured, 
 **Example:**  
 For a User Story category, the template might include:
 
-> As a [type of user/role],  
+> As a [type of user/role],
 > I want to [perform an action / achieve a goal],  
 > So that [benefit/value it delivers]
 
-**Configuration path:** *Case Category definition → Template panel*  
-*Display panel name:* **Template**  
-*System panel name:* **Case Category (Description Template field)**
+**Configuration path:** *Case Category definition → Template panel* 
+*Display panel name:* `Template`<br>
+*System panel name:* `Case Category (Description Template field)`
 
 ![Description Template](pictures/category-template.png)
