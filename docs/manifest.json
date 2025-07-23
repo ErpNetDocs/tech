@@ -17156,6 +17156,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/cases/case-creation.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/cases/case-creation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/cases/index.md",
       "output": {
         ".html": {
@@ -17651,29 +17661,6 @@
         },
         ".json": {
           "relative_path": "modules/system/security/groups/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/system/security/how to/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/system/security/how to/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "modules/system/security/how to/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "modules/system/security/how to/toc.html"
-        },
-        ".json": {
-          "relative_path": "modules/system/security/how to/toc.json"
         }
       },
       "version": ""

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/case-creation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="case-creation">
+
+<h2 id="case-creation">Case creation</h2>
+<h3 id="category-selection">Category selection</h3>
+<p>Before a Case is created, the user must first select a Case Category. This initial choice defines the Case’s purpose and structural behavior within the system.</p>
+<p>Users can initiate Case creation from several entry points:</p>
+<ul>
+<li>From the <strong>Home screen</strong> – via direct shortcuts for the predefined Case Categories</li>
+<li>From the <strong>Cases navigator</strong> or <strong>Side menu</strong> – by clicking the &quot;+&quot; button, listing all available active Case Categories</li>
+</ul>
+<p>![screenshot_2]</p>
+<p>Once a Case Category is selected, the system initiates a new Case form, preconfigured with the logic, layout, and validations defined for that category.</p>
+<p>![screenshot_3]</p>
+<p>The <strong>Case Category</strong> controls both the structure and logic of the Case form – including visible fields and panels, applicable system and user states, required parent settings, and allowed project types. This ensures consistency with internal processes and helps users provide only the relevant information, reducing clutter and improving efficiency.</p>
+<p><em>For full configuration details of Case Categories, see Case Categories.</em></p>
+<h3 id="initialization">Initialization</h3>
+<p>When initializing a new Case, users are required to provide two key pieces of information:</p>
+<ul>
+<li>the <strong>Project</strong> to which the Case belongs</li>
+<li>a short <strong>Title</strong>, which serves as the Case’s primary identifier in lists and reports</li>
+</ul>
+<p>![screenshot_4]</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Project dropdown lists only those Projects that belong to a Project Type explicitly allowed for the selected Case Category. This ensures logical consistency and prevents cases from being linked to incompatible projects.<br>
+<em>For configuration details, see Case Categories → Main Settings → Allowed Project Types.</em></p>
+</div>
+<p>In addition, the system automatically generates a unique Case number to ensure consistent identification across the Agile PM module.</p>
+<p>Beyond these required elements, users are encouraged to complete additional fields to better position the Case within the organization’s workflow. The set of available fields depends on the selected Case Category, which controls the form layout.</p>
+<h3 id="case-fields-grouped-by-purpose">Case fields grouped by purpose</h3>
+<h4 id="project-context">Project context</h4>
+<ul>
+<li><strong>Area</strong> (System name: <code>Project Area</code>) – A subdivision within the project for more precise categorization</li>
+<li><strong>Milestone</strong> (System name: <code>Project Milestone</code>) – A key phase or delivery checkpoint that the Case supports</li>
+</ul>
+<h4 id="assignment-and-responsibility">Assignment and responsibility</h4>
+<ul>
+<li><strong>Owner</strong> (System name: <code>Owner User</code>) – The person ultimately responsible for the Case <em>(required; defaults to creator)</em></li>
+<li><strong>Assigned To</strong> (System name: <code>Assigned To User</code>) – The user currently expected to work on the Case</li>
+<li><strong>Social Group</strong> – The team or department involved in discussions and execution</li>
+</ul>
+<h4 id="time-and-planning">Time and planning</h4>
+<ul>
+<li><strong>Due Date and Time</strong> – The expected completion deadline</li>
+<li><strong>Estimated Time Hours</strong> – A forecast of the time required to complete the task</li>
+<li><strong>Priority</strong> – From 7 (lowest) to 1 (highest), used to triage tasks and focus effort</li>
+</ul>
+<h4 id="stakeholder-involvement">Stakeholder involvement</h4>
+<ul>
+<li><strong>Stakeholder Party</strong> – An internal or external party with a vested interest in the outcome of the Case</li>
+</ul>
+<h4 id="relationships-and-linking">Relationships and linking</h4>
+<ul>
+<li><strong>Parent</strong> – Allows the Case to be structured as a sub-case of another</li>
+<li><strong>Duplicate Of Case</strong> – Optionally links the Case to another one it duplicates</li>
+</ul>
+<p>Although the fields above are grouped by purpose for clarity, the actual Case form — in its fabric layout — organizes them into two main interface tabs: <strong>Basic</strong> and <strong>Advanced</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Thе fabric layout of the Case form is the standard configuration provided by the system.<br>
+Its actual content and structure may vary depending on the selected Case Category and any user-defined layout settings configured for it.</p>
+</div>
+<p>![screenshot_5]
+![screenshot_6]</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/cases/case-creation.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

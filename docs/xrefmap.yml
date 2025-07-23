@@ -250,6 +250,9 @@ references:
 - uid: case-categories
   name: case-categories
   href: modules/projects/agile/configuration-and-structure/main-setup/case-categories.html
+- uid: case-creation
+  name: case-creation
+  href: modules/projects/agile/cases/case-creation.html
 - uid: choose_unit
   name: Measurement unit of the order
   href: modules/logistics/inventory/inventory-control/ChooseUnit.html
