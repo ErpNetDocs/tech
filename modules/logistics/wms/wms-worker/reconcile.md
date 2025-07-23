@@ -49,6 +49,12 @@ Total difference shows the reported differences at this Location.
  
 ![Summary](pictures/reconcile-summary.png)
 
+# Auto-accepting non-counted products
+
+If you click the Accept Non Counted button during reconciliation, all products at the current location that were not counted will be automatically accepted as correct with their expected quantities.
+
+This action will also set the IsAutoAccepted flag in the corresponding WarehouseTransactions, marking that the uncounted differences were accepted for this location.
+
 ## Finish and Save
 
 The ![Finish](pictures/move-finish.png)  button means that the counting is complete, and you are ready to save the data to the system. 
