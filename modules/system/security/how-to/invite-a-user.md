@@ -62,9 +62,8 @@ First the administrator must create a new user in the system:
 
 12. The **User Type** will automatically change to:  Internal and the user will be assigned to the **group**: Everybody
   
-### ⚠️ Note:
+### ⚠️ Note: 
 If a role has not been assigned, after login the user might encounter this error:
-
 ```text
 "The currently logged user {UserName} has no assigned roles.
 Please contact your system administrator to configure the roles for user {UserName}."
