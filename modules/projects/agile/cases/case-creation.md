@@ -6,7 +6,7 @@ uid: case-creation
 
 ### Category selection
 
-Before a Case is created, the user must first select a Case Category. This initial choice defines the Case’s purpose and structural behavior within the system.
+Before a Case is created, the user must first select a **Case Category**. This initial choice defines the Case’s purpose and structural behavior within the system.
 
 Users can initiate Case creation from several entry points:
 - From the **Home screen** – via direct shortcuts for the predefined Case Categories  
