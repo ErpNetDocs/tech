@@ -22,7 +22,7 @@ These panels are available from the Case form and include:
 
 - **Notifications**  
   The **Notifications** panel displays alerts triggered by Case activity — including status changes, field updates, or mentions in the Discuss panel.  
-  *Note: This panel complements the broader notification logic described in Notifications.*
+  *Note: This panel complements the broader notification logic described in [Notifications](notifications.md).*
 
    ![Notifications](pictures/case-notifications.png)
 
