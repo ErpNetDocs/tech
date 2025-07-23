@@ -33,7 +33,7 @@ When initializing a new Case, users are required to provide two key pieces of in
 
 > [!Note]
 > The Project dropdown lists only those Projects that belong to a Project Type explicitly allowed for the selected Case Category. This ensures logical consistency and prevents cases from being linked to incompatible projects.    
-> *For configuration details, see [Case Categories → Main settings → Allowed Project Types](../configuration-and-structure/main-setup/case-categories.md##allowed-project-types).*
+> *For configuration details, see [Case Categories → Main settings → Allowed Project Types](../configuration-and-structure/main-setup/case-categories.md#allowed-project-types).*
 
 In addition, the system automatically generates a unique Case number to ensure consistent identification across the Agile PM module.
 
