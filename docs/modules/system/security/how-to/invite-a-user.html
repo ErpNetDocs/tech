@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../../public/main.css">
       <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
       
       <meta name="docfx:rel" content="../../../../">
       
@@ -87,10 +87,50 @@
         <article data-uid="">
 <h1 id="how-to-invite-a-user-to-a-web-instance">How to invite a user to a WEB instance</h1>
 
-<p>To create an account for a new user, an email invitation must be sent to this user from you. The process involves two participnats - tha administrator of the instance and the new user.</p>
-<p>First the administrator must create a new user in the system.</p>
+<p>To create an account for a new user, an <strong>email invitation</strong> must be sent to this user from you. The process involves two participnats - tha administrator of the instance and the new user.</p>
+<p>First the administrator must create a new user in the system:</p>
 <ol>
-<li>Go to “Security” module and open navigator &quot;Users&quot;</li>
+<li><p>Go to “Security” module and open navigator &quot;Users&quot;</p>
+</li>
+<li><p>On the header line (the horizontal grey line) find the “plus” button and click on it
+This will open a form that you should fill in. It looks like this:</p>
+</li>
+<li><p>Fill in several required fields</p>
+<ul>
+<li>Login - the login name of the user</li>
+<li>Name - the name of the user</li>
+<li>Email - a valid email address, to receive the invitation</li>
+<li>User Type - this is a very important field at this point. Clicking on it will open a dropdown menu. You must chose “Invitation Internal (No login)“</li>
+</ul>
+</li>
+<li><p>Assign a role for the new user - you can do it now, or at a later stage.
+This is done in panel &quot;Roles&quot;.
+Find the “Plus” icon on the right side and add a new line in the panel. In column &quot;Role&quot; choose an available role e.g. Salesperson, Manager, Worker etc.
+You can assign several roles per user.</p>
+</li>
+<li><p>Now find the “Save” button with a downward strike. Click the downward strike and save the new user with &quot;Save and reload&quot; button.</p>
+<p>At this stage a new user is created and saved in the platform. It is time to send the invitation.</p>
+</li>
+<li><p>On the header line, click “Run”.</p>
+</li>
+<li><p>Choose option &quot;Send invitation mail&quot;
+The system will ask for confirmation. Confirm by clicking OK.
+This sends an email to the user</p>
+</li>
+<li><p>The user will receive an email from sender e-mail &quot;notification@erpnet.info&quot;, Subject: &quot;Invitation to join {InstanceName.my.erp.net}.&quot;</p>
+</li>
+<li><p>The user must click on the <strong>Create Account</strong> link and will be transferred to a form.
+In the form, Login and Name are already filled - Do not change them!
+Input only a 8 character password.
+Confirm.</p>
+</li>
+<li><p>The user can now login in the platform with the given login and the set password.</p>
+</li>
+<li><p>The User type will the automatically changed to “Internal” and will be assigned to the “Everybody” User Group</p>
+<p>Note: If a role has not been assigned, after the ogin, the user might encounter an error like this:
+&quot;The currently logged user {UserName} has no addigned roles. Please contact your system administrator to configure the roles for user {UserName}&quot;
+In this case he should seek assistance from the administrator.</p>
+</li>
 </ol>
 
 </article>

@@ -87,11 +87,12 @@
         <article data-uid="user-states">
 
 <h2 id="user-states">User States</h2>
-<p>In Agile PM, each Case progresses through a sequence of <strong>States</strong> that represent different phases in its lifecycle. These include both:</p>
+<p>In <strong>Agile PM</strong>, each Case progresses through a sequence of <strong>States</strong> that represent different phases in its lifecycle. These include both:</p>
 <ul>
 <li><strong>System States</strong> – the default, predefined workflow stages</li>
 <li><strong>User States</strong> – custom sub-stages defined by the organization to reflect internal processes</li>
 </ul>
+<p>For more details on System States, see <a href="../../cases/workflow-states.html#system-states">Cases -&gt; Workflow states -&gt; System State</a>.</p>
 <p>While System States represent the standard process flow, User States allow teams to extend these phases with more granular sub-stages that match their internal procedures, providing better visibility and control over the actual status of work.</p>
 <p><strong>For example:</strong><br>
 The System State <strong>&quot;Consider&quot;</strong> may include user-defined sub-states such as:<br>
@@ -108,8 +109,8 @@ Instead, it inherits the User State that was set when the Case was transitioned 
 This ensures that the final state of the Case remains consistent with how the work was completed or resolved.</p>
 </div>
 <p><strong>Configuration path:</strong> <em>User State definition → General panel → System State field</em><br>
-<em>Display panel name:</em> <strong>General</strong><br>
-<em>System panel name:</em> <strong>User State</strong></p>
+<em>Display panel name:</em> <code>General</code><br>
+<em>System panel name:</em> <code>User State</code></p>
 <h3 id="ordering-of-user-states">Ordering of User States</h3>
 <p>User States have an <strong>internal sequence</strong> within each System State. This sequence controls the order in which the User States are displayed in the dropdown menu on the Case form.</p>
 <p>The order is managed via the <strong>Ord</strong> field:</p>
@@ -119,8 +120,8 @@ This ensures that the final state of the Case remains consistent with how the wo
 </ul>
 <p>A well-defined order helps guide users through a consistent and intuitive workflow.</p>
 <p><strong>Configuration path:</strong> <em>User State definition → General panel → Ord field</em><br>
-<em>Display panel name:</em> <strong>General</strong><br>
-<em>System panel name:</em> <strong>User State</strong></p>
+<em>Display panel name:</em> <code>General</code><br>
+<em>System panel name:</em> <code>User State</code></p>
 <h3 id="applying-user-states-to-case-categories">Applying User States to Case Categories</h3>
 <p>Each <strong>User State</strong> must be made applicable to one or more <strong>Case Categories</strong>.<br>
 This ensures that the User State will be available for selection only in Cases that belong to the allowed categories.</p>

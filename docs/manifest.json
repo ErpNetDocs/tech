@@ -17976,6 +17976,96 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/formuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/formuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/inviteuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/inviteuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/mailuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/mailuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/navuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/navuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/how-to/pictures/pics.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how-to/pictures/pics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/plususer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/plususer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/readyuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/readyuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/roleuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/roleuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/usertype.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/usertype.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/system/security/how-to/toc.yml",
       "output": {

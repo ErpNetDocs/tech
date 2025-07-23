@@ -87,7 +87,7 @@
         <article data-uid="project-areas">
 
 <h2 id="project-areas">Project Areas</h2>
-<p>A <strong>Project Area</strong> in ERP.net represents a distinct structural unit within a Project, typically focused on a specific part of the overall work.<br>
+<p>A <strong>Project Area</strong> in <strong>Agile PM</strong> represents a distinct structural unit within a <a href="projects.html">Project</a>, typically focused on a specific part of the overall work.<br>
 It is used to divide a Project into smaller, more manageable components that can be handled independently, either by different teams or based on specialized responsibilities.</p>
 <p>Each Project can consist of one or more Project Areas, depending on its complexity and structure.</p>
 <p><strong>For example</strong>:
@@ -98,39 +98,39 @@ A project of type <strong>Client Implementation</strong> may include Project Are
 To do this, leave the <em>Project</em> field empty.</p>
 </div>
 <p><strong>Configuration path:</strong> <em>Project Area definition → Advanced panel → Project field</em><br>
-<em>Display panel name:</em> <strong>Advanced</strong><br>
-<em>System panel name:</em> <strong>Project Area</strong></p>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Project Area</code></p>
 <p><img src="pictures/project-areas.png" alt="Project Areas"></p>
 <h3 id="responsibility-and-collaboration-settings">Responsibility and collaboration settings</h3>
 <p>Each Project Area may have a designated <strong>Owner</strong> — the person responsible for overseeing and coordinating the work within that Area.<br>
-A <strong>Social Group</strong> can also be assigned to the Project Area — just like in Projects — to represent the team or department involved in discussions and decisions related to that area.<br>
+A <strong>Social Group</strong> can also be assigned to the Project Area — just like in <a href="projects.html">Projects</a> — to represent the team or department involved in discussions and decisions related to that area.<br>
 This helps ensure accountability, collaboration, and clear ownership over specific sections of the project.</p>
 <p><strong>Configuration path:</strong></p>
 <ul>
 <li><p><em>Project Area definition → Basic panel → Owner field</em><br>
-<em>Display panel name:</em> <strong>Basic</strong><br>
-<em>System panel name:</em> <strong>Project Area</strong><br>
-<em>Display field name:</em> <strong>Owner</strong><br>
-<em>System field name:</em> <strong>Primary User</strong></p>
+<em>Display panel name:</em> <code>Basic</code><br>
+<em>System panel name:</em> <code>Project Area</code><br>
+<em>Display field name:</em> <code>Owner</code><br>
+<em>System field name:</em> <code>Primary User</code></p>
 </li>
 <li><p><em>Project Area definition → Advanced panel → Social Group field</em><br>
-<em>Display panel name:</em> <strong>Advanced</strong><br>
-<em>System panel name:</em> <strong>Project Area</strong></p>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Project Area</code></p>
 </li>
 </ul>
 <p><img src="pictures/project-area-form.png" alt="Project Area Form"></p>
 <h3 id="wip-work-in-progress-limits">WIP (work-in-progress) Limits</h3>
-<p>Like Projects, Project Areas may also use WIP Limits to control the number of Cases that are allowed to remain in specific workflow states within that Area.<br>
+<p>Like <a href="projects.html">Projects</a>, Project Areas may also use WIP Limits to control the number of Cases that are allowed to remain in specific workflow states within that Area.<br>
 These limits are applied <strong>per Project Area</strong>, and they function independently from the WIP limits defined at the Project level.<br>
 This mechanism ensures that each Area of the project stays manageable and avoids bottlenecks.</p>
 <p>A separate WIP limit can be defined for each of the following System States:<br>
 <strong>CONSIDER, READY, IN PROGRESS</strong></p>
 <p>If a limit is exceeded, the system will block transitions to the respective state until the number of Cases in that state within the same Project Area in the Case’s Project falls below the defined limit.</p>
 <p><strong>Configuration path:</strong> <em>Project Area Definition → WIP Limits panel → Consider, Ready, and In Progress fields</em><br>
-<em>Display panel name:</em> <strong>WIP Limits</strong><br>
-<em>System panel name:</em> <strong>Project</strong></p>
-<p><em>Display field name:</em> <strong>Consider, Ready, and In Progress fields</strong><br>
-<em>System field name:</em> <strong>Consider WIP Limit, Ready WIP Limit, and In Progress WIP Limit fields</strong></p>
+<em>Display panel name:</em> <code>WIP Limits</code><br><br>
+<em>System panel name:</em> <code>Project</code><br>
+<em>Display field name:</em> <code>Consider</code>, <code>Ready</code>, and <code>In Progress</code> fields <br>
+<em>System field name:</em> <code>Consider WIP Limit</code>, <code>Ready WIP Limit</code>, and <code>In Progress WIP Limit</code> fields</p>
 <p><img src="pictures/project-area-wip.png" alt="Project Area WIP"></p>
 
 </article>
