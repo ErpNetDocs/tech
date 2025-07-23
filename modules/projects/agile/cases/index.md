@@ -8,12 +8,12 @@ The screenshot below shows the Cases navigator, grouped by Project and Case Type
 
 The sections that follow cover the full lifecycle of a Case and its supporting functionality:
 
-- Case creation  
-- Comments & Developments  
-- Workflow states
-- Responsibility, priority and time tracking  
-- WIP (work-in-progress) limits  
-- Collaboration  
-- Notifications  
-- Supporting tools  
-- Relationships & hierarchy
+- [Case creation](case-creation.md)
+- [Comments & Developments](comments-and-developments.md)
+- [Workflow states](workflow-states.md)
+- [Responsibility, priority and time logging](resp-priority-time-logging.md)
+- [WIP (work-in-progress) limits](wip-limits.md)
+- [Collaboration](collaboration.md)
+- [Notifications](notifications.md)
+- [Supporting tools](supporting-tools.md)
+- [Relationships & hierarchy](relationships-and-hierarchy.md)
