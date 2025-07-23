@@ -19,7 +19,7 @@ At its core, the module introduces configurable structures to reflect business l
 - [Project Types](configuration-and-structure/main-setup/project-types.md) help classify projects.
 - [Project Areas](configuration-and-structure/project-definitions/project-areas.md) divide work into manageable domains.
 - [Project Milestones](configuration-and-structure/project-definitions/project-milestones.md) highlight key delivery points along the project timeline.
-- [Case Categories](configuration-and-structure/main-setup/case-categories/index.md) determine task structure and flow.
+- [Case Categories](configuration-and-structure/main-setup/case-categories.md) determine task structure and flow.
 - **System States** define the main workflow lifecycle of tasks.
 - [User States](configuration-and-structure/main-setup/user-states.md) extend this lifecycle by adding more granular tracking within each system-defined stage.
 - **Cases** serve as the core work units, bringing together all these structures into actionable items that move through the project lifecycle.
