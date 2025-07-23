@@ -32,4 +32,4 @@ The logic for determining whether a WIP limit is exceeded is as follows:
   The system counts only the Cases that belong to the **same Project Area** and are linked to the **same Project** as the Case's Project.  
   If this count **exceeds** the defined limit, the transition is blocked.
 
-*For configuration paths, see: Projects (Project-level WIP limit setup) and Project Areas (Project Area-level WIP limit setup)*
+*For configuration paths, see: [Projects -> WIP (work-in-progress) Limits](../configuration-and-structure/project-definitions/projects.md#wip-work-in-progress-limits) and [Project Areas -> WIP (work-in-progress) Limits](../configuration-and-structure/project-definitions/project-areas.md#wip-work-in-progress-limits)*
