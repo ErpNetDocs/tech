@@ -12,11 +12,11 @@ Users can initiate Case creation from several entry points:
 - From the **Home screen** – via direct shortcuts for the predefined Case Categories  
 - From the **Cases navigator** or **Side menu** – by clicking the "+" button, listing all available active Case Categories
 
-![screenshot_2]
+![Case Creation](pictures/case-creation.png)
 
 Once a Case Category is selected, the system initiates a new Case form, preconfigured with the logic, layout, and validations defined for that category.
 
-![screenshot_3]
+![Case Initialization](pictures/case-initialization.png)
 
 The **Case Category** controls both the structure and logic of the Case form – including visible fields and panels, applicable system and user states, required parent settings, and allowed project types. This ensures consistency with internal processes and helps users provide only the relevant information, reducing clutter and improving efficiency.
 
@@ -29,7 +29,7 @@ When initializing a new Case, users are required to provide two key pieces of in
 - the **Project** to which the Case belongs  
 - a short **Title**, which serves as the Case’s primary identifier in lists and reports
 
-![screenshot_4]
+![Case Main Fields](pictures/case-main-fields.png)
 
 > [!Note]
 > The Project dropdown lists only those Projects that belong to a Project Type explicitly allowed for the selected Case Category. This ensures logical consistency and prevents cases from being linked to incompatible projects.    
@@ -68,5 +68,4 @@ Although the fields above are grouped by purpose for clarity, the actual Case fo
 > Thе fabric layout of the Case form is the standard configuration provided by the system.    
 > Its actual content and structure may vary depending on the selected Case Category and any user-defined layout settings configured for it.
 
-![screenshot_5]
-![screenshot_6]
+![Case Form](pictures/case-form.png)
