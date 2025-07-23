@@ -4,10 +4,12 @@ uid: user-states
 
 ## User States
 
-In Agile PM, each Case progresses through a sequence of **States** that represent different phases in its lifecycle. These include both:
+In **Agile PM**, each Case progresses through a sequence of **States** that represent different phases in its lifecycle. These include both:
 
 - **System States** – the default, predefined workflow stages
 - **User States** – custom sub-stages defined by the organization to reflect internal processes
+
+For more details on System States, see [Cases -> Workflow states -> System State](../../cases/workflow-states.md#system-states).
 
 While System States represent the standard process flow, User States allow teams to extend these phases with more granular sub-stages that match their internal procedures, providing better visibility and control over the actual status of work.
 
