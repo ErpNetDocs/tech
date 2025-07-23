@@ -1,5 +1,5 @@
 ---
-uid: main-settings
+uid: case-categories
 ---
 
 ## Case Categories
