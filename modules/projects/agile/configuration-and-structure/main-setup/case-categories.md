@@ -19,6 +19,8 @@ The detailed setup of Case Categories is organized into two sections:
 - [Main settings](main-settings.md) – define allowed project types and parent relationships.
 - [Advanced settings](advanced-settings.md) – control additional behavior such as mandatory parents, visibility of system states, and default description templates.
 
+
+
 ## Main settings
 
 ### Allowed Project Types
@@ -74,6 +76,8 @@ These parent-child rules ensure logical structure and prevent recursive or nonse
 | Scheduled Task        | Process Optimization<br>Client Implementation         | –                                      |
 | Social Media Task     | Social Media Strategy                                  | Campaign Concept, Initiative           |
 | Campaign Concept      | Social Media Strategy                                  | Initiative                             |
+
+
 
 ## Advanced settings
 
