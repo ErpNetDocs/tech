@@ -29,4 +29,4 @@ Followers may include team members who have:
 To ensure users stay informed about Cases they initiate, **Agile PM** automatically sets the Case **creator** as a follower.  
 This guarantees that the creator is notified of all future changes, even if they are not actively assigned to the Case.
 
-![screenshot_18]
+![Notifications](pictures/notifications.png)
