@@ -41,24 +41,24 @@ Beyond these required elements, users are encouraged to complete additional fiel
 
 ### Case fields grouped by purpose
 
-#### Project context
+**Project context**
 - **Area** (System name: `Project Area`) – a subdivision within the project for more precise categorization  
 - **Milestone** (System name: `Project Milestone`) – a key phase or delivery checkpoint that the Case supports
 
-#### Assignment and responsibility
+**Assignment and responsibility**
 - **Owner** (System name: `Owner User`) – the person ultimately responsible for the Case *(required; defaults to creator)*  
 - **Assigned To** (System name: `Assigned To User`) – the user currently expected to work on the Case  
 - **Social Group** – the team or department involved in discussions and execution
 
-#### Time and planning
+**Time and planning**
 - **Due Date and Time** – the expected completion deadline  
 - **Estimated Time Hours** – a forecast of the time required to complete the task  
 - **Priority** – from 7 (lowest) to 1 (highest), used to triage tasks and focus effort
 
-#### Stakeholder involvement
+**Stakeholder involvement**
 - **Stakeholder Party** – an internal or external party with a vested interest in the outcome of the Case
 
-#### Relationships and linking
+**Relationships and linking**
 - **Parent** – allows the Case to be structured as a sub-case of another  
 - **Duplicate Of Case** – optionally links the Case to another one it duplicates
 
