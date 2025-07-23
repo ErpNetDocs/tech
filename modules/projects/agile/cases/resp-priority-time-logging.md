@@ -1,5 +1,5 @@
 ---
-uid: resp-priority-time-tracking
+uid: resp-priority-time-logging
 ---
 
 ## Responsibility, priority and time logging
