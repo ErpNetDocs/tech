@@ -11,7 +11,7 @@ The **Time tracking** feature in @@name's **Agile PM** module enables precise re
 
 Time tracking is always initiated from the **Case form**. A timer button appears in the title bar when no other session is active, or when the active timer corresponds to the current Case. Clicking this button starts or stops the timer, creating or completing a time entry accordingly.
 
-![Timer Button](pictures/timer-button.png)
+![Timer Button](pictures/timer-button2.png)
 
 Once tracking is active, the session can be stopped either from the **Case form where the timer was started** or from the **navigation bar**, via the timer icon and its dropdown menu. This design allows users to stop the timer regardless of where they are in the system. For example, if they have navigated away from the Case while continuing work, there's no need to return to the original Case form just to end the session.
 
