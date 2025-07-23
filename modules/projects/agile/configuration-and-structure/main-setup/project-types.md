@@ -4,7 +4,7 @@ uid: project-types
 
 ## Project Types
 
-Projects in Agile PM are specific initiatives that always belong to a Project Type.  
+Projects in Agile PM are specific initiatives that always belong to a **Project Type**.  
 **Project Types are required for creating Projects in Agile PM.**
 
 Each Project Type represents a general category of projects that share common goals, structure, or internal classification.
