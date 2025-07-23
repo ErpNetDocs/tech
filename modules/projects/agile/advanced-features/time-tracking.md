@@ -11,11 +11,11 @@ The **Time tracking** feature in @@name's **Agile PM** module enables precise re
 
 Time tracking is always initiated from the **Case form**. A timer button appears in the title bar when no other session is active, or when the active timer corresponds to the current Case. Clicking this button starts or stops the timer, creating or completing a time entry accordingly.
 
-`[screenshot_1]`
+![Timer Button](pictures/timer-button.png)
 
 Once tracking is active, the session can be stopped either from the **Case form where the timer was started** or from the **navigation bar**, via the timer icon and its dropdown menu. This design allows users to stop the timer regardless of where they are in the system. For example, if they have navigated away from the Case while continuing work, there's no need to return to the original Case form just to end the session.
 
-`screenshot_2`
+![Stop Timer](pictures/stop-timer.png)
 
 
 ### Timer menu
@@ -40,7 +40,7 @@ The timer icon in both the **Case form** and the **navigation bar** includes a d
 
 These menu options help users manage their time tracking efficiently without leaving their current context, ensuring flexibility and accuracy in daily work reporting.
 
-`[screenshot_3]`
+![Timer Menu](pictures/timer-menu.png)
 
 
 ### Managing Time Entries
@@ -51,7 +51,7 @@ To maintain accuracy and flexibility in time tracking, the system supports both 
   Users can manually edit the **start** and **end** times of any time entry. They can also change the **related Case**, in case the time was logged against the wrong item.  
   This is useful when the timer was started or stopped too early or too late, when the entry needs to reflect work done outside real-time logging, or when it was linked to the wrong Case.
 
-  `[screenshot]`
+  ![Time Entry Form](pictures/time-entry.png)
 
 - **Automatic Closure:**  
   A system job named **"Complete unfinished time entries"** (`J38458`) is automatically created in the system. It runs nightly and completes time entries whose **Date is at least one day old**, by setting their **End Time** field to 23:59.
@@ -60,7 +60,6 @@ This ensures that time entries do not remain open indefinitely and helps maintai
 The job runs automatically but can also be executed manually when needed — for example, to immediately close older entries left open by mistake.
 
 *Detailed information about the job can be found here: **J38458 Complete unfinished time entries***
-
 
 
 ### Reports and Timesheets
