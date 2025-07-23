@@ -49,7 +49,7 @@ Total difference shows the reported differences at this Location.
  
 ![Summary](pictures/reconcile-summary.png)
 
-# Auto-accepting non-counted products
+## Auto-accepting non-counted products
 
 If you click the Accept Non Counted button during reconciliation, all products at the current location that were not counted will be automatically accepted as correct with their expected quantities.
 
