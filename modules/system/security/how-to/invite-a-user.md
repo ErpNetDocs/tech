@@ -61,7 +61,7 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
    
 > ![mail](pictures/mailuser.png)
 
-**10.** The user can now log in to the platform using the given login and the newly set password.
+**10.** The user can now log into the platform using the given login and the newly set password.
 
 **11.** The **User Type** will automatically change to:  Internal and the user will be assigned to the **group**: Everybody
   
