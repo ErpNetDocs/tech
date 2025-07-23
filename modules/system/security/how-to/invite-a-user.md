@@ -81,8 +81,8 @@ First the administrator must create a new user in the system:
 If a role has not been assigned, after login the user might encounter this error:
 
 ```text
-The currently logged user {UserName} has no assigned roles.
-Please contact your system administrator to configure the roles for user {UserName}.
+_The currently logged user {UserName} has no assigned roles.
+Please contact your system administrator to configure the roles for user {UserName}._
 ```
 
 In this case, the user should contact the administrator for assistance.
