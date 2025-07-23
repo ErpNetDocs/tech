@@ -32,8 +32,8 @@ This defines which System State the User State extends and determines in which S
 > This ensures that the final state of the Case remains consistent with how the work was completed or resolved.
 
 **Configuration path:** *User State definition → General panel → System State field*  
-*Display panel name:* **General**  
-*System panel name:* **User State**
+*Display panel name:* `General`<br> 
+*System panel name:* `User State`
 
 
 ### Ordering of User States
@@ -48,8 +48,8 @@ The order is managed via the **Ord** field:
 A well-defined order helps guide users through a consistent and intuitive workflow.
 
 **Configuration path:** *User State definition → General panel → Ord field*  
-*Display panel name:* **General**  
-*System panel name:* **User State**
+*Display panel name:* `General`<br>
+*System panel name:* `User State`
 
 
 ### Applying User States to Case Categories
