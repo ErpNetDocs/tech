@@ -9,7 +9,7 @@ Projects in **Agile PM** are specific initiatives that always belong to a **Proj
 
 Each Project Type represents a general category of projects that share common goals, structure, or internal classification.
 
-**For example:** 
+**For example:**<br>
 A marketing agency may frequently work on websites or digital campaigns. In this case, "Website Development" or "Social Media Strategy" could be defined as Project Types.
 
 > [!Note]
