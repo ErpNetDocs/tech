@@ -1,3 +1,7 @@
+---
+uid: time-tracking
+---
+
 ## Time tracking
 
 The **Time tracking** feature in @@name's **Agile PM** module enables precise recording of the time employees spend working on individual Cases. This functionality supports:
