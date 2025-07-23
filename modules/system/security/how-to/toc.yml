@@ -1,0 +1,4 @@
+- name: How to
+  href: index.md
+- name: Invite a user in WEB instance
+  href: invite-a-user-in-web-instance.md
