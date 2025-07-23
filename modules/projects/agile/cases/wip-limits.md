@@ -34,5 +34,5 @@ The logic for determining whether a WIP limit is exceeded is as follows:
 
 *For configuration paths, see: [Projects -> WIP (work-in-progress) Limits](../configuration-and-structure/project-definitions/projects.md#wip-work-in-progress-limits) and [Project Areas -> WIP (work-in-progress) Limits](../configuration-and-structure/project-definitions/project-areas.md#wip-work-in-progress-limits)*
 
-![WIP Limits](wip-limits.png)
+![WIP Limits](pictures/wip-limits.png)
 
