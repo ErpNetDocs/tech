@@ -20,7 +20,6 @@ The detailed setup of Case Categories is organized into two sections:
 - [Advanced settings](advanced-settings.md) – control additional behavior such as mandatory parents, visibility of system states, and default description templates.
 
 
-
 ## Main settings
 
 ### Allowed Project Types
