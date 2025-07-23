@@ -16,7 +16,7 @@ By default, the **Owner** is automatically set to the user who creates the Case.
 The **Assigned To** field *(System name: `Assigned To User`)* specifies the person actively working on the Case at any given time. This enables clear task ownership at the execution level and helps manage workloads across team members.
 
 This separation between ownership and assignment supports flexible workflows, including delegation, escalation, and collaborative execution.  
-For instance, a Case might be created and owned by a project lead but assigned to a team member for resolution.
+For instance, a Case might be created and owned by a project lead but assigned to a team member for execution.
 
 The **Assigned To** field can be populated either manually or automatically through user-defined **Assignment Rules** — a system for defining routing logic based on project, states, category, and other contextual criteria.  
 This helps streamline operations by reducing manual effort and ensuring Cases are assigned to the right person.  
