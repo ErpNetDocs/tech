@@ -9,3 +9,6 @@
 - name: UI Functions
   href: ui-functions/toc.yml
   topicHref: ui-functions/index.md
+- name: How to
+  href: how-to/toc.yml
+  topicHref: groups/index.md
