@@ -17206,20 +17206,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-add-comment.png",
+      "source_relative_path": "modules/projects/agile/cases/pictures/case-add-description.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-add-comment.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-comment-development.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-comment-development.png"
+          "relative_path": "modules/projects/agile/cases/pictures/case-add-description.png"
         }
       },
       "version": ""
@@ -17356,16 +17346,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-system-states.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-system-states.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/projects/agile/cases/pictures/case-tasks.png",
       "output": {
         "resource": {
@@ -17380,16 +17360,6 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/agile/cases/pictures/case-template.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/projects/agile/cases/pictures/case-user-states.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/projects/agile/cases/pictures/case-user-states.png"
         }
       },
       "version": ""
@@ -17420,6 +17390,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/agile/cases/pictures/social-group-cases.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/system-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/system-states.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/cases/pictures/user-states.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/cases/pictures/user-states.png"
         }
       },
       "version": ""
@@ -17961,6 +17951,39 @@
         },
         ".json": {
           "relative_path": "modules/system/security/groups/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/how-to/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how-to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/system/security/how-to/invite-a-user.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how-to/invite-a-user.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/system/security/how-to/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/system/security/how-to/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/system/security/how-to/toc.json"
         }
       },
       "version": ""
