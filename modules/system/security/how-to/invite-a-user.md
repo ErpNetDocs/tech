@@ -14,8 +14,7 @@ First the administrator must create a new user in the system:
 **2.** On the header line (the horizontal grey line), find the **“plus”** button and click on it.  
 >![AddUser](pictures/plususer.png)
 
-This will open a form that you should fill in. It looks like this:
->![Formuser](pictures/.png)
+This will open a form that you should fill in. 
 
 **3.** Fill in several required fields:
    - **Login** – the login name of the user
@@ -32,13 +31,16 @@ This will open a form that you should fill in. It looks like this:
    Find the **“plus”** icon on the right side and add a new line in the panel.  
    In column **"Role"**, choose an available role (e.g. Salesperson, Manager, Worker, etc.).  
    You can assign several roles per user.
-  > ![Role](pictures/roleuser.png)
+   
+  > ![Readyuser](pictures/readyuser.png)
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
-> ![Readyuser](pictures.png)
+> ![Saveuser](pictures/saveuser.png)
    
-   At this stage, a new user is created and saved in the platform. It is time to **send the invitation**.
+   At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
+   
+   It is time to **send the invitation**.
 
 **6.** On the header line, click **“Run”**.
 
@@ -46,6 +48,7 @@ This will open a form that you should fill in. It looks like this:
    ```text
    Send invitation mail
    ```  
+> ![Inviteuser](pictures/inviteuser.png)
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.
 
 ---
@@ -64,7 +67,7 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
 
 **10.** The user can now log into the platform using the given login and the newly set password.
 
-**11.** The **User Type** will automatically change to "Internal" and the user will be assigned to the **group** "Everybody"
+**11.** The **User Type** will automatically change to "Internal" 
   
 > [!NOTE] 
 If a role has not been assigned, after login the user might encounter this error:
