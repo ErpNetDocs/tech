@@ -34,8 +34,10 @@ Each subsequent role in the list below also includes the rights granted by the p
 
 ## Grant access
 
-To give external access to a user, you need to insert a new entry into the table and fill out the respective fields.
+To give external access to a user, you need to insert them as a new entry into the table and fill out the respective fields.
+
+The user must already be registered and prepared for the Client Center. You can learn more about this setup process **[here](/modules/crm/clientcenter/how-to/setup-a-new-user-account.md)**.
 
 ![pictures](pictures/grant_new_access.png)
 
-Once saved, these settings can always be changed later.
+Once saved, a user's external access settings can always be changed later.
