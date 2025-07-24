@@ -36,7 +36,7 @@ This will open a form that you should fill in.
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
-![Saveuser](pictures/saveuser.png)
+![Saveuser](pictures/save.png)
    
 At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
    
