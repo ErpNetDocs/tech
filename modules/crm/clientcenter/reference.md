@@ -4,7 +4,7 @@ This article contains reference points for specific JSON settings and error code
 
 If a setting is not explicitly added in the definition of the Client Center website, its rule will **not** be enforced.
 
-To **[apply](how-to/apply-platform-settings.md)** a new setting, you need to **restart** the website using the **Instance Manager**.
+To **[apply a setting](how-to/apply-platform-settings.md)**, you need to **restart** the website using the **Instance Manager**.
 
 ## IsNewOrderEnabled setting
 
@@ -93,6 +93,10 @@ It can be overridden by specifying the **code value** of another distribution ch
 ```
 
 where DistributionChannel.Code is the code of the channel (e.g. "CC").
+
+> [!NOTE]
+> 
+> Settings are **[applied](how-to/apply-platform-settings.md)** in a key-value pair JSON format in the **Settings** field of the Client Center website definition. 
 
 ## Error exception codes
 
