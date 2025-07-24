@@ -51,18 +51,17 @@ This will open a form that you should fill in.
 > ![Inviteuser](pictures/inviteuser.png)
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.
 
----
-> ![Inviteuser](pictures/.png)
-
 ## User Steps
 
 **8.** The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
-> ![Email](pictures/.png)
+> ![Email](pictures/mailuser.png)
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
-   In the form, **email** and **Name** are already filled – **do not change them!**  
-   Input only an **8-character password** and **confirm**.
-> ![Formtofill](pictures/.png)
+   In the form, **email** is elready filled.
+   Enter your name.
+   Create an **8-character password** and **confirm**.
+
+> ![Formtofill](pictures/formfill.png)
 
 
 **10.** The user can now log into the platform using the given login and the newly set password.
