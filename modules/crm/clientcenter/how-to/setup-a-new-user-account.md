@@ -52,11 +52,13 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
    ![picture](pictures/customer.png)
 
-6. Click on **Save and reload** to apply your changes. <br><br>
+6. Click on **Save and reload** to apply your changes.
 
 7. Define the appropriate level of **[external access](/modules/crm/sales/customers/external-access.md)** for the user.
 
    This is necessary for them to be able to see the kind of documents and information suitable for their role in your organization.
+
+   ![picture](pictures/external_access.png)
 
 > [!Warning]
 > If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
