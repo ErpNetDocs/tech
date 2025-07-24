@@ -13,7 +13,7 @@ Assignment Rules are configured in the **Agile PM → Setup → Assignment Rules
 
 Each rule includes several key fields that define:
 
-**Rule availability (activation conditions)**
+**Rule availability (activation conditions)** <br>
 These settings determine whether the rule is eligible for evaluation:
 
 - **Active** – indicates whether the rule is currently enabled. Only active rules are considered by the system.
@@ -21,7 +21,7 @@ These settings determine whether the rule is eligible for evaluation:
 - **From Date / To Date** – optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.
 
 
-**Rule trigger (matching conditions)**
+**Rule trigger (matching conditions)** <br>
 These fields define when the rule is evaluated and executed:
 
 - **Condition Fields** – define the conditions under which the rule applies.  
@@ -35,7 +35,7 @@ These fields define when the rule is evaluated and executed:
   The number is auto-generated but can be modified manually if needed.
 
 
-**Assignment logic (execution behavior)**
+**Assignment logic (execution behavior)** <br>
 This setting defines who the Case should be assigned to when the rule is triggered:
 
   - **Assignment Kind** – specifies how the system determines the assignee. The available options include:
@@ -60,7 +60,7 @@ This setup provides flexibility to support both static and dynamic assignment pa
 `[screenshot]`
 
 
-## Rule Logic
+## Rule logic
 
 Assignment Rules are automatically evaluated whenever a Case is updated and the value of one or more **Condition Fields** is changed. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.
 
