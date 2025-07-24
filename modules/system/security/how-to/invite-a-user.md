@@ -32,7 +32,7 @@ This will open a form that you should fill in.
    In column **"Role"**, choose an available role (e.g. Salesperson, Manager, Worker, etc.).  
    You can assign several roles per user.
    
-  > ![Readyuser](pictures/readyuser.png)
+![Readyuser](pictures/readyuser.png)
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
