@@ -86,7 +86,7 @@ The system evaluates all **active** Assignment Rules and applies the following c
 - The current date must be within the rule’s validity period (`From Date` and `To Date`)
 - Each of the Condition Fields in the rule must either:
   - Match the current value in the Case, or
-  - Be left empty, which means “applies to all”
+  - Be left empty, which means "applies to all"
 
 If multiple rules match:
 - The rule with the highest **Priority** is selected
