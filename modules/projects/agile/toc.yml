@@ -4,7 +4,7 @@
   href: configuration-and-structure/toc.yml
 - name: Cases
   href: cases/toc.yml
-- name: Advanced Features
+- name: Advanced features
   href: advanced-features/toc.yml
 - name: Security
   href: security.md
