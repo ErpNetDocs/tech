@@ -97,6 +97,70 @@ If multiple rules match:
 Once the best-matching rule is identified, the system determines the appropriate user based on the rule’s **Assignment Kind** (e.g., *Area Responsible*, *Specific User*, *Current User*).  
 That user is then assigned to the Case by updating its `Assigned To User` field.
 
-#### Example:
+#### Example
 
-> If a Case is updated with Project Area set to "QA" and System State set to "Ready for Testing", it can automatically be assigned to the responsible user for that area.
+> A Case is initially created with the following values:  
+> - Project = Website Redesign
+> - Project Milestone = 01. Concept Approval
+> - Project Area = UX & Content Strategy
+> - Case Category = User Story  
+> - System State = CONSIDER
+> - User State = For approval
+> - Assigned To User = Jacob Turner
+> - Stakeholder Party = *null*
+>
+> The Case is then updated with: 
+> - System State = READY
+> - User State = "For Design"
+>
+> There are four active Assignment Rules in the system:
+>
+> **Rule №10**  
+> - Project = Website Redesign
+> - Project Area = *null* (applies to all) 
+> - Project Milestone = *null* (applies to all) 
+> - Case Category = *null* (applies to all) 
+> - Stakeholder Party = *null* (applies to all) 
+> - System State = CONSIDER
+> - User State = For approval
+> - Assignment Kind = Project Responsible //Jacob Turner
+> - Priority = Medium
+>
+>  **Rule №20**  
+> - Project = Website Redesign"
+> - Project Area = *null* (applies to all) 
+> - Project Milestone = *null* (applies to all) 
+> - Case Category = *null* (applies to all) 
+> - Stakeholder Party = *null* (applies to all) 
+> - System State = READY
+> - User State = For Design
+> - Assignment Kind = Specific User
+> - Assign To User = Michael Reeds
+> - Priority = Medium
+>
+>  **Rule №30**  
+> - Project = Website Redesign"
+> - Project Area = *null* (applies to all) 
+> - Project Milestone = *null* (applies to all) 
+> - Case Category = User Story 
+> - Stakeholder Party = *null* (applies to all) 
+> - System State = READY
+> - User State = For Design
+> - Assignment Kind = Area Responsible //Sophie Fletcher
+> - Priority = Medium
+>
+> **Rule №40**  
+> - Project = Product Design
+> - Project Area = *null* (applies to all) 
+> - Project Milestone = *null* (applies to all) 
+> - Case Category = Discussion (applies to all) 
+> - Stakeholder Party = *null* (applies to all) 
+> - System State = READY
+> - User State = For Design
+> - Assignment Kind = Specific User
+> - Assign To User = Ryan Powell
+> - Priority = Medium
+>
+> Rules №20 and №30 both match the current Case values.  
+> Since they have the same priority, the rule with the higher **Rule No.** is selected.  
+> ➤ The Case is assigned to **Sophie Fletcher**, the Primary User of Project Area "UX & Content Strategy".
