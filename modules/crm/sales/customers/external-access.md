@@ -41,3 +41,7 @@ The user must already be registered and prepared for the Client Center. You can 
 ![pictures](pictures/grant_new_access.png)
 
 Once saved, a user's external access settings can always be changed later.
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v24 and v26 of the platform.
