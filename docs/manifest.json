@@ -18190,10 +18190,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/saveuser.png",
+      "source_relative_path": "modules/system/security/how-to/pictures/save.png",
       "output": {
         "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/saveuser.png"
+          "relative_path": "modules/system/security/how-to/pictures/save.png"
         }
       },
       "version": ""
