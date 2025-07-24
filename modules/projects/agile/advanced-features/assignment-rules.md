@@ -90,7 +90,7 @@ The system evaluates all **active** Assignment Rules and applies the following c
 
 If multiple rules match:
 - The rule with the highest **Priority** is selected
-- If multiple rules share the same priority, the one with the highest **Rule No.** is applied
+- If multiple rules share the same priority, the rule with the highest **Rule No.** takes precedence.
 
 ### 3. Assignment execution
 
