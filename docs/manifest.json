@@ -17186,20 +17186,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-form.png",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-form2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-form.png"
+          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-form2.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic.png",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic2.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic.png"
+          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic2.png"
         }
       },
       "version": ""
