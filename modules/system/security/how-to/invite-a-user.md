@@ -8,11 +8,11 @@ The process involves two participants – the **administrator** of the instance 
 First the administrator must create a new user in the system:
 
 **1.** Go to the **Security** module and open navigator **"Users"**.
->![Navigator](pictures/navuser.png)
+![Navigator](pictures/navuser.png)
 
 
 **2.** On the header line (the horizontal grey line), find the **“plus”** button and click on it.  
->![AddUser](pictures/plususer.png)
+![AddUser](pictures/plususer.png)
 
 This will open a form that you should fill in. 
 
@@ -36,7 +36,7 @@ This will open a form that you should fill in.
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
-> ![Saveuser](pictures/saveuser.png)
+   ![Saveuser](pictures/saveuser.png)
    
    At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
    
@@ -48,27 +48,27 @@ This will open a form that you should fill in.
    ```text
    Send invitation mail
    ```  
-> ![Inviteuser](pictures/invite.png)
+![Inviteuser](pictures/invite.png)
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.
 
 ## User Steps
 
 **8.** The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
-> ![Email](pictures/mailuser.png)
+![Email](pictures/mailuser.png)
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
-> In the form, **email** is elready filled.
-> Enter user's name.
-> Create an **8-character password** and **confirm**.
+In the form, **email** is elready filled.
+Enter user's name.
+Create an **8-character password** and **confirm**.
 
-> ![Formtofill](pictures/formfill.png)
+![Formtofill](pictures/formfill.png)
 
 
 **10.** The user can now log into the platform using the given login and the newly set password.
 
 **11.** The **User Type** will automatically change to "Internal" 
 
-> ![Finale](pictures/finale.png)
+![Finale](pictures/finale.png)
   
 > [!NOTE] 
 If a role has not been assigned, after login the user might encounter this error:
