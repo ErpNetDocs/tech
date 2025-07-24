@@ -18110,6 +18110,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/finale.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/finale.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/formfill.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/formfill.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/invite.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/invite.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/mailuser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/mailuser.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/security/how-to/pictures/navuser.png",
       "output": {
         "resource": {
@@ -18124,6 +18164,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/system/security/how-to/pictures/pics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/system/security/how-to/pictures/plususer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/security/how-to/pictures/plususer.png"
         }
       },
       "version": ""

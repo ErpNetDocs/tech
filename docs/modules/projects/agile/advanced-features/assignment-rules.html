@@ -91,19 +91,21 @@
 <h3 id="rule-settings">Rule settings</h3>
 <p>Assignment Rules are configured in the <strong>Agile PM → Setup → Assignment Rules</strong> section.</p>
 <p>Each rule includes several key fields that define:</p>
-<p><strong>Rule availability (activation conditions)</strong>
+<p><strong>Rule availability (activation conditions)</strong> <br>
 These settings determine whether the rule is eligible for evaluation:</p>
 <ul>
-<li><p><strong>Is Active</strong> – indicates whether the rule is currently enabled. Only active rules are considered by the system.</p>
+<li><p><strong>Active</strong> – indicates whether the rule is currently enabled. Only active rules are considered by the system.</p>
 </li>
 <li><p><strong>From Date / To Date</strong> – optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.</p>
 </li>
 </ul>
-<p><strong>Rule trigger (matching conditions)</strong>
+<p><strong>Rule trigger (matching conditions)</strong> <br>
 These fields define when the rule is evaluated and executed:</p>
 <ul>
-<li><p><strong>Condition Fields</strong> – the rule is triggered when one or more of these Case fields match the configured values:<br>
-<em>Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.</em></p>
+<li><p><strong>Condition Fields</strong> – define the conditions under which the rule applies.<br>
+For each of these fields, the system compares the value from the Case with the value from the same field in the rule.<br>
+If the rule’s field value is empty, it is treated as a match for any value in the Case.<br>
+The fields include: <em>Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.</em></p>
 </li>
 <li><p><strong>Priority</strong> – defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.</p>
 </li>
@@ -111,7 +113,7 @@ These fields define when the rule is evaluated and executed:</p>
 The number is auto-generated but can be modified manually if needed.</p>
 </li>
 </ul>
-<p><strong>Assignment logic (execution behavior)</strong>
+<p><strong>Assignment logic (execution behavior)</strong> <br>
 This setting defines who the Case should be assigned to when the rule is triggered:</p>
 <ul>
 <li><p><strong>Assignment Kind</strong> – specifies how the system determines the assignee. The available options include:</p>
@@ -134,14 +136,45 @@ This setting defines who the Case should be assigned to when the rule is trigger
 </ul>
 <p>This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.</p>
 <p><code>[screenshot]</code></p>
-<h3 id="rule-logic">Rule logic</h3>
-<p>Assignment Rules are automatically evaluated whenever one of the configured <strong>condition fields</strong> is modified in a Case. This allows the system to dynamically react to changes in the Case’s state, structure, or categorization.</p>
-<p>When a Case is updated, the system checks all <strong>active</strong> Assignment Rules whose condition fields are affected. If multiple rules match, the one with the <strong>highest priority</strong> is applied.<br>
-If more than one rule shares the highest priority, the one with the <strong>highest Rule No.</strong> is selected.</p>
-<p>Once a matching rule is found, the system executes the corresponding assignment action based on the <strong>Assignment Kind</strong> defined in the rule, assigning the Case to the designated user by updating the <strong>Assigned To User</strong> field.</p>
-<p>This logic allows cases to be automatically routed as soon as a key attribute changes.</p>
-<p><strong>For example:</strong> <br>
-If a Case is moved to the state &quot;In Progress&quot; and its Project Area is &quot;Infrastructure&quot;, it can automatically be assigned to the responsible user for that area.</p>
+<h2 id="rule-logic">Rule logic</h2>
+<p>Assignment Rules are automatically evaluated whenever a Case is updated and one or more of its Condition Fields change. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.</p>
+<p>The logic follows these main steps:</p>
+<h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
+<p>When any of the following <strong>Condition Fields</strong> in the Case is changed:</p>
+<ul>
+<li>Project</li>
+<li>Project Area</li>
+<li>Project Milestone</li>
+<li>Case Category</li>
+<li>Stakeholder Party</li>
+<li>System State</li>
+<li>User State</li>
+</ul>
+<p>The system begins rule evaluation based on the updated values.</p>
+<h3 id="2-rule-evaluation">2. Rule evaluation</h3>
+<p>The system evaluates all <strong>active</strong> Assignment Rules and applies the following conditions:</p>
+<ul>
+<li>The rule must be active (<code>Active = True</code>)</li>
+<li>The current date must be within the rule’s validity period (<code>From Date</code> and <code>To Date</code>)</li>
+<li>Each of the Condition Fields in the rule must either:
+<ul>
+<li>Match the current value in the Case, or</li>
+<li>Be left empty, which means &quot;applies to all&quot;</li>
+</ul>
+</li>
+</ul>
+<p>If multiple rules match:</p>
+<ul>
+<li>The rule with the highest <strong>Priority</strong> is selected</li>
+<li>If multiple rules share the same priority, the rule with the highest <strong>Rule No.</strong> takes precedence.</li>
+</ul>
+<h3 id="3-assignment-execution">3. Assignment execution</h3>
+<p>Once the best-matching rule is identified, the system determines the appropriate user based on the rule’s <strong>Assignment Kind</strong> (e.g., <em>Area Responsible</em>, <em>Specific User</em>, <em>Current User</em>).<br>
+That user is then assigned to the Case by updating its <code>Assigned To User</code> field.</p>
+<h4 id="example">Example:</h4>
+<blockquote>
+<p>If a Case is updated with Project Area set to &quot;QA&quot; and System State set to &quot;Ready for Testing&quot;, it can automatically be assigned to the responsible user for that area.</p>
+</blockquote>
 
 </article>
 
