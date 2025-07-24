@@ -16,7 +16,7 @@ Each rule includes several key fields that define:
 **Rule availability (activation conditions)**
 These settings determine whether the rule is eligible for evaluation:
 
-- **Is Active** – indicates whether the rule is currently enabled. Only active rules are considered by the system.
+- **Active** – indicates whether the rule is currently enabled. Only active rules are considered by the system.
 
 - **From Date / To Date** – optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.
 
@@ -24,8 +24,10 @@ These settings determine whether the rule is eligible for evaluation:
 **Rule trigger (matching conditions)**
 These fields define when the rule is evaluated and executed:
 
-- **Condition Fields** – the rule is triggered when one or more of these Case fields match the configured values:  
-  *Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.*
+- **Condition Fields** – define the conditions under which the rule applies.  
+  For each of these fields, the system compares the value from the Case with the value from the same field in the rule.  
+  If the rule’s field value is empty, it is treated as a match for any value in the Case.  
+  The fields include: *Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.*
 
 - **Priority** – defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.
 
@@ -58,16 +60,43 @@ This setup provides flexibility to support both static and dynamic assignment pa
 `[screenshot]`
 
 
-### Rule logic
+## Rule Logic
 
-Assignment Rules are automatically evaluated whenever one of the configured **condition fields** is modified in a Case. This allows the system to dynamically react to changes in the Case’s state, structure, or categorization.
+Assignment Rules are automatically evaluated whenever a Case is updated and the value of one or more **Condition Fields** is changed. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.
 
-When a Case is updated, the system checks all **active** Assignment Rules whose condition fields are affected. If multiple rules match, the one with the **highest priority** is applied.  
-If more than one rule shares the highest priority, the one with the **highest Rule No.** is selected.
+The logic follows these main steps:
 
-Once a matching rule is found, the system executes the corresponding assignment action based on the **Assignment Kind** defined in the rule, assigning the Case to the designated user by updating the **Assigned To User** field.
+### 1. Rule trigger
 
-This logic allows cases to be automatically routed as soon as a key attribute changes. 
+The system listens for changes to any of the **Condition Fields**:
+- Project
+- Project Area
+- Project Milestone
+- Case Category
+- Stakeholder Party
+- System State
+- User State
 
-**For example:** <br>
-If a Case is moved to the state "In Progress" and its Project Area is "Infrastructure", it can automatically be assigned to the responsible user for that area.
+When a change occurs, the system begins rule evaluation based on the updated values.
+
+### 2. Rule matching and filtering
+
+The system evaluates all **active** Assignment Rules and applies the following conditions:
+- The rule must be active (`Active = True`)
+- The current date must be within the rule’s validity period (`From Date` and `To Date`)
+- Each of the Condition Fields in the rule must either:
+  - Match the current value in the Case, or
+  - Be left empty, which means “applies to all”
+
+If multiple rules match:
+- The rule with the highest **Priority** is selected
+- If multiple rules share the same priority, the one with the highest **Rule No.** is applied
+
+### 3. Assignment execution
+
+Once the best-matching rule is identified, the system determines the appropriate user based on the rule’s **Assignment Kind** (e.g., *Area Responsible*, *Specific User*, *Current User*).  
+That user is then assigned to the Case by updating its `Assigned To User` field.
+
+#### Example:
+
+> If a Case is updated with Project Area set to "QA" and System State set to "Ready for Testing", it can automatically be assigned to the responsible user for that area.
