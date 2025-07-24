@@ -66,7 +66,8 @@ Create an **8-character password** and **confirm**.
 
 **10.** The user can now log into the platform using the given login and the newly set password.
 
-**11.** The **User Type** will automatically change to "Internal" 
+**11.** The **User Type** will automatically change to "Internal" <br><br>
+The final result looks like this:
 
 ![Finale](pictures/finale.png)
   
