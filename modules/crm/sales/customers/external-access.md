@@ -44,4 +44,4 @@ Once saved, a user's external access settings can always be changed later.
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 and v26 of the platform.
+> The screenshots taken for this article are from v26 of the platform.
