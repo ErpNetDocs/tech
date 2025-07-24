@@ -4737,6 +4737,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/external_access.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/external_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/index.md",
       "output": {
@@ -17170,6 +17180,36 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/advanced-features/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/rule-logic.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/rules.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/rules.png"
         }
       },
       "version": ""

@@ -135,7 +135,7 @@ This setting defines who the Case should be assigned to when the rule is trigger
 </li>
 </ul>
 <p>This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.</p>
-<p><code>[screenshot]</code></p>
+<p><img src="pictures/rule-form.png" alt="Rule Form"></p>
 <h2 id="rule-logic">Rule logic</h2>
 <p>Assignment Rules are automatically evaluated whenever a Case is updated and one or more of its Condition Fields change. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.</p>
 <p>The logic follows these main steps:</p>
@@ -171,10 +171,81 @@ This setting defines who the Case should be assigned to when the rule is trigger
 <h3 id="3-assignment-execution">3. Assignment execution</h3>
 <p>Once the best-matching rule is identified, the system determines the appropriate user based on the rule’s <strong>Assignment Kind</strong> (e.g., <em>Area Responsible</em>, <em>Specific User</em>, <em>Current User</em>).<br>
 That user is then assigned to the Case by updating its <code>Assigned To User</code> field.</p>
-<h4 id="example">Example:</h4>
+<h4 id="example">Example</h4>
 <blockquote>
-<p>If a Case is updated with Project Area set to &quot;QA&quot; and System State set to &quot;Ready for Testing&quot;, it can automatically be assigned to the responsible user for that area.</p>
+<p>A Case is initially created with the following values:</p>
+<ul>
+<li>Project = Website Redesign</li>
+<li>Project Milestone = 01. Concept Approval</li>
+<li>Project Area = UX &amp; Content Strategy</li>
+<li>Case Category = User Story</li>
+<li>System State = CONSIDER</li>
+<li>User State = For approval</li>
+<li>Assigned To User = Jacob Turner</li>
+<li>Stakeholder Party = <em>null</em></li>
+</ul>
+<p>The Case is then updated with:</p>
+<ul>
+<li>System State = READY</li>
+<li>User State = &quot;For Design&quot;</li>
+</ul>
+<p>There are four active Assignment Rules in the system:</p>
+<p><strong>Rule №10</strong></p>
+<ul>
+<li>Project = Website Redesign</li>
+<li>Project Area = <em>null</em> (applies to all)</li>
+<li>Project Milestone = <em>null</em> (applies to all)</li>
+<li>Case Category = <em>null</em> (applies to all)</li>
+<li>Stakeholder Party = <em>null</em> (applies to all)</li>
+<li>System State = CONSIDER</li>
+<li>User State = For approval</li>
+<li>Assignment Kind = Project Responsible //Jacob Turner</li>
+<li>Priority = Medium</li>
+</ul>
+<p><strong>Rule №20</strong></p>
+<ul>
+<li>Project = Website Redesign</li>
+<li>Project Area = <em>null</em> (applies to all)</li>
+<li>Project Milestone = <em>null</em> (applies to all)</li>
+<li>Case Category = <em>null</em> (applies to all)</li>
+<li>Stakeholder Party = <em>null</em> (applies to all)</li>
+<li>System State = READY</li>
+<li>User State = For Design</li>
+<li>Assignment Kind = Specific User</li>
+<li>Assign To User = Michael Reeds</li>
+<li>Priority = Medium</li>
+</ul>
+<p><strong>Rule №30</strong></p>
+<ul>
+<li>Project = Website Redesign&quot;</li>
+<li>Project Area = <em>null</em> (applies to all)</li>
+<li>Project Milestone = <em>null</em> (applies to all)</li>
+<li>Case Category = User Story</li>
+<li>Stakeholder Party = <em>null</em> (applies to all)</li>
+<li>System State = READY</li>
+<li>User State = For Design</li>
+<li>Assignment Kind = Area Responsible //Sophie Fletcher</li>
+<li>Priority = Medium</li>
+</ul>
+<p><strong>Rule №40</strong></p>
+<ul>
+<li>Project = Product Strategy</li>
+<li>Project Area = <em>null</em> (applies to all)</li>
+<li>Project Milestone = <em>null</em> (applies to all)</li>
+<li>Case Category = Design Issue</li>
+<li>Stakeholder Party = <em>null</em> (applies to all)</li>
+<li>System State = READY</li>
+<li>User State = For Design</li>
+<li>Assignment Kind = Specific User</li>
+<li>Assign To User = Ryan Powell</li>
+<li>Priority = Medium</li>
+</ul>
+<p>Rules №20 and №30 both match the current Case values.<br>
+Since they have the same priority, the rule with the higher <strong>Rule No.</strong> is selected.<br>
+➤ The Case is assigned to <strong>Sophie Fletcher</strong>, the Primary User of Project Area &quot;UX &amp; Content Strategy&quot;.</p>
 </blockquote>
+<p><img src="pictures/rules.png" alt="Rules">
+<img src="pictures/rule-logic.png" alt="Rule Logic"></p>
 
 </article>
 
