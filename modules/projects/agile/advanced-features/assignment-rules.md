@@ -57,7 +57,7 @@ This setting defines who the Case should be assigned to when the rule is trigger
 
 This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.
 
-![Rule Form](pictures/rule-form.png)
+![Rule Form](pictures/rule-form2.png)
 
 
 ## Rule logic
@@ -166,4 +166,4 @@ That user is then assigned to the Case by updating its `Assigned To User` field.
 > ➤ The Case is assigned to **Sophie Fletcher**, the Primary User of Project Area "UX & Content Strategy".
 
 ![Rules](pictures/rules.png)
-![Rule Logic](pictures/rule-logic.png)
+![Rule Logic](pictures/rule-logic2.png)
