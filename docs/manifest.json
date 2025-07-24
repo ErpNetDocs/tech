@@ -18110,36 +18110,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/formuser.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/formuser.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/inviteuser.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/inviteuser.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/mailuser.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/mailuser.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "modules/system/security/how-to/pictures/navuser.png",
       "output": {
         "resource": {
@@ -18170,20 +18140,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/roleuser.png",
+      "source_relative_path": "modules/system/security/how-to/pictures/saveuser.png",
       "output": {
         "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/roleuser.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "modules/system/security/how-to/pictures/usertype.png",
-      "output": {
-        "resource": {
-          "relative_path": "modules/system/security/how-to/pictures/usertype.png"
+          "relative_path": "modules/system/security/how-to/pictures/saveuser.png"
         }
       },
       "version": ""
