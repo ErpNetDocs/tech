@@ -62,11 +62,11 @@ This setup provides flexibility to support both static and dynamic assignment pa
 
 ## Rule logic
 
-Assignment Rules are automatically evaluated whenever a Case is updated and the value of one or more **Condition Fields** is changed. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.
+Assignment Rules are automatically evaluated whenever a Case is updated and one or more of its Condition Fields change. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.
 
 The logic follows these main steps:
 
-### 1. Rule evaluation trigger
+### 1. Triggering rule evaluation
 
 When any of the following **Condition Fields** in the Case is changed:
 - Project
