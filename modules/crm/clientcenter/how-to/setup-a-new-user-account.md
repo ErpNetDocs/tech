@@ -16,7 +16,7 @@ Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 Once a customer has sent a request for an account, they will appear as an **External Community User** which you can begin to configure.
 
-1. Navigate to the **Users** panel within the **Security** section of the **Setup** module.
+1. Navigate to the **Users** panel within the **[Security](/modules/system/security/index.md)** section of the **Setup** module.
 
 2. Upon accessing the navigator, locate the user account and click on the **Edit** button located to the left of its **Login** details.
 
@@ -54,10 +54,16 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 6. Click on **Save and reload** to apply your changes. <br><br>
 
-If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
+7. Define the appropriate level of **[external access](/modules/crm/sales/customers/external-access.md)** for the user.
 
-If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. <br><br>
+   This is necessary for them to be able to see the kind of documents and information suitable for their role in your organization.
+
+> [!Warning]
+> If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
+
+> [!TIP]
+> If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. <br><br>
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 of the platform.
+> The screenshots taken for this article are from v24 and v26 of the platform.
