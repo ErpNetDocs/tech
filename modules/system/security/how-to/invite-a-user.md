@@ -15,7 +15,7 @@ First the administrator must create a new user in the system:
 >![AddUser](pictures/plususer.png)
 
 This will open a form that you should fill in. It looks like this:
->![Form](pictures/formuser.png)
+>![Formuser](pictures/.png)
 
 **3.** Fill in several required fields:
    - **Login** – the login name of the user
@@ -36,7 +36,7 @@ This will open a form that you should fill in. It looks like this:
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
-> ![FilledForm](pictures/readyuser.png)
+> ![Readyuser](pictures.png)
    
    At this stage, a new user is created and saved in the platform. It is time to **send the invitation**.
 
@@ -49,17 +49,18 @@ This will open a form that you should fill in. It looks like this:
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.
 
 ---
-> ![Invite](pictures/inviteuser.png)
+> ![Inviteuser](pictures/.png)
 
 ## User Steps
 
 **8.** The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
+> ![Email](pictures/.png)
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
    In the form, **email** and **Name** are already filled – **do not change them!**  
    Input only an **8-character password** and **confirm**.
-   
-> ![mail](pictures/mailuser.png)
+> ![Formtofill](pictures/.png)
+
 
 **10.** The user can now log into the platform using the given login and the newly set password.
 
