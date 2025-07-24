@@ -150,10 +150,10 @@ That user is then assigned to the Case by updating its `Assigned To User` field.
 > - Priority = Medium
 >
 > **Rule №40**  
-> - Project = Product Design
+> - Project = Product Strategy
 > - Project Area = *null* (applies to all) 
 > - Project Milestone = *null* (applies to all) 
-> - Case Category = Discussion (applies to all) 
+> - Case Category = Design Issue 
 > - Stakeholder Party = *null* (applies to all) 
 > - System State = READY
 > - User State = For Design
