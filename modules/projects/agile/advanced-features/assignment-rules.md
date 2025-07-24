@@ -4,53 +4,53 @@ uid: assignment-rules
 
 ## Assignment rules
 
-**Case assignments** in Agile PM can be managed either **manually** or **automatically**. While manual assignment is always available, organizations can streamline their workflows by defining Assignment Rules — a flexible system for automatic case routing based on predefined criteria.
+Case assignments in **Agile PM** can be managed either **manually** or **automatically**. While manual assignment is always available, organizations can streamline their workflows by defining **Assignment Rules** — a flexible system for automatic case routing based on predefined criteria.
 
 
 ### Rule settings
 
 Assignment Rules are configured in the **Agile PM → Setup → Assignment Rules** section.  
+
 Each rule includes several key fields that define:
 
 **Rule availability (activation conditions)**
-
 These settings determine whether the rule is eligible for evaluation:
 
-- **Is Active** – Indicates whether the rule is currently enabled. Only active rules are considered by the system.
+- **Is Active** – indicates whether the rule is currently enabled. Only active rules are considered by the system.
 
-- **From Date / To Date** – Optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.
+- **From Date / To Date** – optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.
+
 
 **Rule trigger (matching conditions)**
-
 These fields define when the rule is evaluated and executed:
 
-- **Condition Fields** – The rule is triggered when one or more of these Case fields match the configured values:  
+- **Condition Fields** – the rule is triggered when one or more of these Case fields match the configured values:  
   *Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.*
 
-- **Priority** – Defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.
+- **Priority** – defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.
 
-- **Rule No.** – A unique sequence number used to determine precedence when more than one rule shares the highest priority.  
+- **Rule No.** – a unique sequence number used to determine precedence when more than one rule shares the highest priority.  
   The number is auto-generated but can be modified manually if needed.
 
-**Assignment logic (execution behavior)**
 
+**Assignment logic (execution behavior)**
 This setting defines who the Case should be assigned to when the rule is triggered:
 
-- **Assignment Kind** – Specifies how the system determines the assignee. The available options include:
+  - **Assignment Kind** – specifies how the system determines the assignee. The available options include:
 
-  - **Area Responsible** – Assigns to the user set as *Primary User* for the **Project Area**.  
+  - **Area Responsible** – assigns to the user set as *Primary User* for the **Project Area**.  
     *Suitable for domain-specific team structures.*
 
-  - **Project Responsible** – Assigns to the user set as *Primary User* for the **Project**.  
+  - **Project Responsible** – assigns to the user set as *Primary User* for the **Project**.  
     *Useful for centralized case control or project leadership.*
 
-  - **Case Owner** – Assigns to the user set as *Owner* of the Case.  
+  - **Case Owner** – assigns to the user set as *Owner* of the Case.  
     *Ensures that the designated responsible party receives it.*
 
-  - **Current User** – Assigns to the user performing the triggering change (e.g., status update).  
+  - **Current User** – assigns to the user performing the triggering change (e.g., status update).  
     *Enables contextual or self-assignment.*
 
-  - **Specific User** – Assigns to a fixed, manually selected user.  
+  - **Specific User** – assigns to a fixed, manually selected user.  
     *In this case, the **Assign To User** field becomes mandatory.*
 
 This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.
