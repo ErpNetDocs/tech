@@ -66,9 +66,9 @@ Assignment Rules are automatically evaluated whenever a Case is updated and the 
 
 The logic follows these main steps:
 
-### 1. Rule trigger
+### 1. Rule evaluation trigger
 
-The system listens for changes to any of the **Condition Fields**:
+When any of the following **Condition Fields** in the Case is changed:
 - Project
 - Project Area
 - Project Milestone
@@ -77,9 +77,9 @@ The system listens for changes to any of the **Condition Fields**:
 - System State
 - User State
 
-When a change occurs, the system begins rule evaluation based on the updated values.
+The system begins rule evaluation based on the updated values.
 
-### 2. Rule matching and filtering
+### 2. Rule evaluation
 
 The system evaluates all **active** Assignment Rules and applies the following conditions:
 - The rule must be active (`Active = True`)
