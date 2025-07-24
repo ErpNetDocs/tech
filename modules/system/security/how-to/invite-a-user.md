@@ -36,11 +36,11 @@ This will open a form that you should fill in.
 
 **5.** Save the new user by clicking the arrow next to "Save" using option "Save and reload"
    
-   ![Saveuser](pictures/saveuser.png)
+![Saveuser](pictures/saveuser.png)
    
-   At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
+At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
    
-   It is time to **send the invitation**.
+It is time to **send the invitation**.
 
 **6.** On the header line, click **“Run”**.
 
@@ -57,8 +57,8 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
 ![Email](pictures/mailuser.png)
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
-In the form, **email** is elready filled.
-Enter user's name.
+In the form, **email** is elready filled.<br>
+Enter user's name.<br>
 Create an **8-character password** and **confirm**.
 
 ![Formtofill](pictures/formfill.png)
