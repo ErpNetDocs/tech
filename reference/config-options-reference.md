@@ -406,6 +406,6 @@ If you need to analyze the data, you may use Python code.
 - a.Action: When this key is defined, the Inventory Control application will display the data you need, replacing the first row with Order information in the Store Orders list.
   Depending on the entered key value - in the orders list you can see the data you need from the current Store Order header.
   The value is entered as an interpolated string. You can also use format specifiers. <br>
-  For example "My info - {Parent}, Notes: {DocumentNotes:T}, {MasterDocument} will be displayed as "Invoice Order 00001 ; Notes: ASAP ; Sales Order 00001
+  For example "{Parent}, Notes: {DocumentNotes:T}, {MasterDocument} will be displayed as "Invoice Order 00001 ; Notes: ASAP ; Sales Order 00001
 - b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.
 - c.The user sets it manually.
