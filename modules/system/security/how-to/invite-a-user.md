@@ -56,7 +56,7 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
 **8.** The user will receive an email **from**: notification@erpnet.info,  **Subject:**   Invitation to join {InstanceName.my.erp.net}
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
-   In the form, **Login** and **Name** are already filled – **do not change them!**  
+   In the form, **email** and **Name** are already filled – **do not change them!**  
    Input only an **8-character password** and **confirm**.
    
 > ![mail](pictures/mailuser.png)
