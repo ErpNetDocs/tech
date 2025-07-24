@@ -48,7 +48,7 @@ This will open a form that you should fill in.
    ```text
    Send invitation mail
    ```  
-> ![Inviteuser](pictures/inviteuser.png)
+> ![Inviteuser](pictures/invite.png)
 The system will ask for confirmation. Confirm by clicking OK. This sends an email to the user.
 
 ## User Steps
