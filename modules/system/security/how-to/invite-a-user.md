@@ -57,9 +57,9 @@ The system will ask for confirmation. Confirm by clicking OK. This sends an emai
 > ![Email](pictures/mailuser.png)
    
 **9.** The user must click the **Create Account** link and will be transferred to a form.  
-   In the form, **email** is elready filled.
-   Enter your name.
-   Create an **8-character password** and **confirm**.
+> In the form, **email** is elready filled.
+> Enter user's name.
+> Create an **8-character password** and **confirm**.
 
 > ![Formtofill](pictures/formfill.png)
 
