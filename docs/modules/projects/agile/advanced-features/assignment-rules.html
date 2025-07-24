@@ -87,51 +87,49 @@
         <article data-uid="assignment-rules">
 
 <h2 id="assignment-rules">Assignment rules</h2>
-<p><strong>Case assignments</strong> in Agile PM can be managed either <strong>manually</strong> or <strong>automatically</strong>. While manual assignment is always available, organizations can streamline their workflows by defining Assignment Rules — a flexible system for automatic case routing based on predefined criteria.</p>
+<p>Case assignments in <strong>Agile PM</strong> can be managed either <strong>manually</strong> or <strong>automatically</strong>. While manual assignment is always available, organizations can streamline their workflows by defining <strong>Assignment Rules</strong> — a flexible system for automatic case routing based on predefined criteria.</p>
 <h3 id="rule-settings">Rule settings</h3>
-<p>Assignment Rules are configured in the <strong>Agile PM → Setup → Assignment Rules</strong> section.<br>
-Each rule includes several key fields that define:</p>
-<p><strong>Rule availability (activation conditions)</strong></p>
-<p>These settings determine whether the rule is eligible for evaluation:</p>
+<p>Assignment Rules are configured in the <strong>Agile PM → Setup → Assignment Rules</strong> section.</p>
+<p>Each rule includes several key fields that define:</p>
+<p><strong>Rule availability (activation conditions)</strong>
+These settings determine whether the rule is eligible for evaluation:</p>
 <ul>
-<li><p><strong>Is Active</strong> – Indicates whether the rule is currently enabled. Only active rules are considered by the system.</p>
+<li><p><strong>Is Active</strong> – indicates whether the rule is currently enabled. Only active rules are considered by the system.</p>
 </li>
-<li><p><strong>From Date / To Date</strong> – Optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.</p>
+<li><p><strong>From Date / To Date</strong> – optional start and end dates that define a period during which the rule is valid. Useful for setting temporary or seasonal rules.</p>
 </li>
 </ul>
-<p><strong>Rule trigger (matching conditions)</strong></p>
-<p>These fields define when the rule is evaluated and executed:</p>
+<p><strong>Rule trigger (matching conditions)</strong>
+These fields define when the rule is evaluated and executed:</p>
 <ul>
-<li><p><strong>Condition Fields</strong> – The rule is triggered when one or more of these Case fields match the configured values:<br>
+<li><p><strong>Condition Fields</strong> – the rule is triggered when one or more of these Case fields match the configured values:<br>
 <em>Project, Project Area, Project Milestone, Case Category, Stakeholder Party, System State, or User State.</em></p>
 </li>
-<li><p><strong>Priority</strong> – Defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.</p>
+<li><p><strong>Priority</strong> – defines the importance level of the rule. When multiple rules match, the one with the highest priority is applied.</p>
 </li>
-<li><p><strong>Rule No.</strong> – A unique sequence number used to determine precedence when more than one rule shares the highest priority.<br>
+<li><p><strong>Rule No.</strong> – a unique sequence number used to determine precedence when more than one rule shares the highest priority.<br>
 The number is auto-generated but can be modified manually if needed.</p>
 </li>
 </ul>
-<p><strong>Assignment logic (execution behavior)</strong></p>
-<p>This setting defines who the Case should be assigned to when the rule is triggered:</p>
+<p><strong>Assignment logic (execution behavior)</strong>
+This setting defines who the Case should be assigned to when the rule is triggered:</p>
 <ul>
-<li><p><strong>Assignment Kind</strong> – Specifies how the system determines the assignee. The available options include:</p>
-<ul>
-<li><p><strong>Area Responsible</strong> – Assigns to the user set as <em>Primary User</em> for the <strong>Project Area</strong>.<br>
+<li><p><strong>Assignment Kind</strong> – specifies how the system determines the assignee. The available options include:</p>
+</li>
+<li><p><strong>Area Responsible</strong> – assigns to the user set as <em>Primary User</em> for the <strong>Project Area</strong>.<br>
 <em>Suitable for domain-specific team structures.</em></p>
 </li>
-<li><p><strong>Project Responsible</strong> – Assigns to the user set as <em>Primary User</em> for the <strong>Project</strong>.<br>
+<li><p><strong>Project Responsible</strong> – assigns to the user set as <em>Primary User</em> for the <strong>Project</strong>.<br>
 <em>Useful for centralized case control or project leadership.</em></p>
 </li>
-<li><p><strong>Case Owner</strong> – Assigns to the user set as <em>Owner</em> of the Case.<br>
+<li><p><strong>Case Owner</strong> – assigns to the user set as <em>Owner</em> of the Case.<br>
 <em>Ensures that the designated responsible party receives it.</em></p>
 </li>
-<li><p><strong>Current User</strong> – Assigns to the user performing the triggering change (e.g., status update).<br>
+<li><p><strong>Current User</strong> – assigns to the user performing the triggering change (e.g., status update).<br>
 <em>Enables contextual or self-assignment.</em></p>
 </li>
-<li><p><strong>Specific User</strong> – Assigns to a fixed, manually selected user.<br>
+<li><p><strong>Specific User</strong> – assigns to a fixed, manually selected user.<br>
 <em>In this case, the <strong>Assign To User</strong> field becomes mandatory.</em></p>
-</li>
-</ul>
 </li>
 </ul>
 <p>This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.</p>
