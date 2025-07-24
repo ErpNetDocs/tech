@@ -127,7 +127,7 @@ That user is then assigned to the Case by updating its `Assigned To User` field.
 > - Priority = Medium
 >
 >  **Rule №20**  
-> - Project = Website Redesign"
+> - Project = Website Redesign
 > - Project Area = *null* (applies to all) 
 > - Project Milestone = *null* (applies to all) 
 > - Case Category = *null* (applies to all) 
