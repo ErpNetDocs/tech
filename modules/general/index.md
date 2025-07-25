@@ -1,5 +1,5 @@
 # General
 
 * **[Documents](documents/index.md)**
-* **[File manager](folders.md)**
-* **[Products](products/index.md)**
+*  **[Products](products/index.md)**
+*  **[Files](folders.md)**
