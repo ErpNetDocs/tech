@@ -1,3 +1,3 @@
 # Files
 
-* **[File manager](filemanager.md)**
+* **[File manager](folders.md)**
