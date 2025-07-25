@@ -1,0 +1,19 @@
+- name: Overview
+  href: index.md
+- name: Execution context
+  href: execution-context/index.md  
+- name: Accessing Domain Model
+  href: domain-model/index.md
+  items:
+  - name: Overview
+    href: domain-model/index.md
+  - name: Entity operations
+    href: domain-model/entity-operations.md
+  - name: Special types
+    href: domain-model/special-types.md
+  - name: Advanced examples
+    href: domain-model/advanced-examples.md  
+- name: Global action object
+  href: global-action-object/index.md
+- name: Limitations and best practices
+  href: ./limitations-best-practices.md

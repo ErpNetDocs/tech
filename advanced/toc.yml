@@ -21,7 +21,10 @@
   topicHref: string-interpolation/index.md  
 - name: Data objects
   href: data-objects/toc.yml
-  topicHref: data-objects/index.md  
+  topicHref: data-objects/index.md
+- name: Scripting
+  href: scripting/toc.yml
+  topicHref: scripting/index.md    
 - name: Concepts
   href: concepts/toc.yml 
   topicHref: concepts/index.md

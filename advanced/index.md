@@ -13,6 +13,7 @@ It is intended primarily for advanced ERP implementation consultants.
 - **[User business rules](./user-business-rules/index.md)** - user-defined and system business rules.
 - **[String interpolation](./string-interpolation/index.md)** - inserting values or expressions into a string, allowing for dynamic and customized output.
 - **[Data objects](./data-objects/index.md)** - data object extensibility systems.
+- **[Scripting](./scripting/index.md)** - enhance @@name functionality with scripting.
 - **[Jobs](./jobs/index.md)** - systems which automatically run processes.
 - **[Security](./security/index.md)** - security-related topics.
 - **[Web sites](./web-sites/index.md)** - web sites, part of @@erpnet.
