@@ -47,6 +47,28 @@ Object initializers make scripts more concise and easier to read, especially whe
 
 In advanced scenarios, you may need to retrieve entities based on multiple criteria, ranges, references to other entities, or special options.
 
+### Shorthand equals syntax
+
+ou can use the shorthand filtering syntax when you want to match by `equals`, without writing it explicitly.
+
+- Regular syntax:
+
+```js
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: { equals: true },
+    customerType: { equals: customerType }
+});
+```
+
+- Shorthand syntax:
+
+```js
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: true,
+    customerType: customerType
+});
+```
+
 ### Filter by multiple property Values
 
 Retrieve all customers who are active and have a specific customer type.
@@ -142,16 +164,16 @@ This query will return up to three customer entities that are active.
 
 When performing queries with the `query()` method, the following comparison operators are supported:
 
-| Operator             | Description                                  |
-| -------------------- | -------------------------------------------- |
-| `equals`             | Equal to                                     |
-| `in`                 | In a list of values                          |
-| `greaterthanorequal` | Greater than or equal to                     |
-| `lessthanorequal`    | Less than or equal to                        |
-| `like`               | SQL-style pattern matching                   |
-| `contains`           | Contains substring                           |
-| `startswith`         | Starts with substring                        |
-| `endswith`           | Ends with substring                          |
+| Operator             | Description                                  | Syntax / Example                       |
+| -------------------- | -------------------------------------------- | -------------------------------------- |
+| `equals`             | Equal to                                     | `status: { equals: "Active" }`         |
+| `in`                 | In a list of values                          | `country: { in: ["US", "CA"] }`        |
+| `greaterthanorequal` | Greater than or equal to                     | `age: { greaterthanorequal: 21 }`      |
+| `lessthanorequal`    | Less than or equal to                        | `age: { lessthanorequal: 100 }`        |
+| `like`               | SQL-style pattern matching                   | `name: { like: "%Corp%" }`             |
+| `contains`           | Contains substring                           | `description: { contains: "premium" }` |
+| `startswith`         | Starts with substring                        | `email: { startswith: "support@" }`    |
+| `endswith`           | Ends with substring                          | `filename: { endswith: ".pdf" }`       |
 
 ### Combined advanced query example
 
