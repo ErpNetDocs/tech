@@ -2696,6 +2696,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/user-business-rules/scripting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/user-business-rules/scripting/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "advanced/user-business-rules/toc.yml",
       "output": {

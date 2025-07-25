@@ -122,6 +122,24 @@ var customer = Domain.Crm.Sales.CustomersRepository.createNew({
 <p>Object initializers make scripts more concise and easier to read, especially when working with complex or nested entities.</p>
 <h2 id="advanced-queries-and-filtering">Advanced queries and filtering</h2>
 <p>In advanced scenarios, you may need to retrieve entities based on multiple criteria, ranges, references to other entities, or special options.</p>
+<h3 id="shorthand-equals-syntax">Shorthand equals syntax</h3>
+<p>ou can use the shorthand filtering syntax when you want to match by <code>equals</code>, without writing it explicitly.</p>
+<ul>
+<li>Regular syntax:</li>
+</ul>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: { equals: true },
+    customerType: { equals: customerType }
+});
+</code></pre>
+<ul>
+<li>Shorthand syntax:</li>
+</ul>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: true,
+    customerType: customerType
+});
+</code></pre>
 <h3 id="filter-by-multiple-property-values">Filter by multiple property Values</h3>
 <p>Retrieve all customers who are active and have a specific customer type.</p>
 <pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
@@ -191,40 +209,49 @@ var customers = Domain.Crm.Sales.CustomersRepository.query(
 <tr>
 <th>Operator</th>
 <th>Description</th>
+<th>Syntax / Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>equals</code></td>
 <td>Equal to</td>
+<td><code>status: { equals: &quot;Active&quot; }</code></td>
 </tr>
 <tr>
 <td><code>in</code></td>
 <td>In a list of values</td>
+<td><code>country: { in: [&quot;US&quot;, &quot;CA&quot;] }</code></td>
 </tr>
 <tr>
 <td><code>greaterthanorequal</code></td>
 <td>Greater than or equal to</td>
+<td><code>age: { greaterthanorequal: 21 }</code></td>
 </tr>
 <tr>
 <td><code>lessthanorequal</code></td>
 <td>Less than or equal to</td>
+<td><code>age: { lessthanorequal: 100 }</code></td>
 </tr>
 <tr>
 <td><code>like</code></td>
 <td>SQL-style pattern matching</td>
+<td><code>name: { like: &quot;%Corp%&quot; }</code></td>
 </tr>
 <tr>
 <td><code>contains</code></td>
 <td>Contains substring</td>
+<td><code>description: { contains: &quot;premium&quot; }</code></td>
 </tr>
 <tr>
 <td><code>startswith</code></td>
 <td>Starts with substring</td>
+<td><code>email: { startswith: &quot;support@&quot; }</code></td>
 </tr>
 <tr>
 <td><code>endswith</code></td>
 <td>Ends with substring</td>
+<td><code>filename: { endswith: &quot;.pdf&quot; }</code></td>
 </tr>
 </tbody>
 </table>
