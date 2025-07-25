@@ -9,6 +9,8 @@
 - name: Events
   href: events/toc.yml
   topicHref: events/index.md
+- name: Scripting
+  href: scripting/index.md  
 - name: Examples
   href: examples/toc.yml
   topicHref: examples/index.md

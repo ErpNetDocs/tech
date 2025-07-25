@@ -82,11 +82,22 @@ A condition is met when the value of the specified attribute and the specified v
 
 - **Parameter1 value**, **Parameter2 value**, **Parameter3 value** - the actual value of the parameter.
 
+### Scripting
+
+User business rules support embedded scripts, allowing you to define custom logic in JavaScript.
+
+Scripts can automate calculations, validate data, trigger workflows, or interact with the full Domain Model of your @@name instance.
+
+Scripts run in a secure, sandboxed environment.
+
+For more details and advanced scripting scenarios, see the [Scripting documentation](../scripting/index.md).
+
 -------------
 ### See more
 
-- **[Action types](https://docs.erp.net/tech/advanced/user-business-rules/action-types/index.html)**
-- **[Business rules](https://docs.erp.net/tech/advanced/user-business-rules/business-rules/index.html)**
-- **[Parameter types](https://docs.erp.net/tech/advanced/user-business-rules/parameter-types/index.html)**
-- **[Events](https://docs.erp.net/tech/advanced/user-business-rules/events/index.html)**
-- **[Examples](https://docs.erp.net/tech/advanced/user-business-rules/examples/index.html)**
+- **[Action types](./action-types/index.md)**
+- **[Business rules](./index.md)**
+- **[Parameter types](./parameter-types/index.md)**
+- **[Events](./events/index.md)**
+- **[Scripting](../scripting/index.md)**
+- **[Examples](./examples/index.md)**
