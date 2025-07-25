@@ -9158,16 +9158,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/general/folders.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/general/folders.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/general/index.md",
       "output": {
         ".html": {
