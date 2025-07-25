@@ -2,7 +2,7 @@
 
 Different files are created and stored inside the **File manager** . It follows a hierarchical tree order, similar to the one found in [Product groups](https://docs.erp.net/tech/modules/general/products/product-groups/index.html). With the help of the ribbons, you are able to peek inside a complex structure without getting lost.
 
-![File Manager](pictures/fm17.png)
+![File Manager](general/pictures/fm17.png)
 
 Each folder can have an unlimited number of **subfolders**, the order of which is decided by pre-defined filters. You can view the contents of a folder if you right-click it and select the **Definition** command. The contents of the folder can be seen in the window that opens. There are also options to **rename**, **remove**, or create a **new** subfolder within the selected folder.
 
