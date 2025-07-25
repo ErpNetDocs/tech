@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Overview | ERP.net Tech Docs </title>
+      <title>Limitations and best practices | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Overview | ERP.net Tech Docs ">
+      <meta name="title" content="Limitations and best practices | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/limitations-best-practices.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,36 +85,61 @@
         </div>
 
         <article data-uid="">
-<h1 id="overview">Overview</h1>
+<h1 id="limitations-and-best-practices">Limitations and best practices</h1>
 
-<p>The <strong>My</strong> module is a personalized environment housing information that is essential to your day-to-day activities.</p>
-<p>It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.</p>
-<p><img src="pictures/MyModule.png" alt="pictures"></p>
-<p>In the <strong>My</strong> module, you can find the following applications:</p>
+<p>This page describes key limitations to consider when writing scripts, along with recommended best practices to ensure reliability, security, and maintainability in ERP.net.</p>
+<h2 id="limitations">Limitations</h2>
 <ul>
-<li><strong>AI Assistant</strong></li>
-<li><strong>Calendar</strong></li>
-<li><strong>Dashboard</strong></li>
-<li><strong>Documents</strong></li>
-<li><strong>Favorites</strong></li>
-<li><strong>Folders</strong></li>
-<li><strong>Groups</strong></li>
-<li><strong>Notifications</strong></li>
-<li><strong>Search</strong></li>
-<li><strong>Tiles</strong></li>
-<li><strong>Timeline</strong></li>
-<li><strong>To Do</strong></li>
+<li><p><strong>Sandboxed Environment:</strong><br>
+Scripts run in a restricted sandbox. Access to system resources (files, network, OS) is limited to what is explicitly provided (such as the <a href="domain-model/index.html">Domain Model</a> and <a href="global-action-object/index.html">Action object</a>).</p>
+</li>
+<li><p><strong>No Control Over Transactions:</strong><br>
+Scripts do not control transaction boundaries. Changes take effect only if the outer logic commits the transaction.</p>
+</li>
+<li><p><strong>Timeouts and Resource Usage:</strong><br>
+Scripts have execution timeouts and limits on memory or CPU usage, as defined by system configuration.</p>
+<ul>
+<li>Memory allocations limit: 50 MB per script.</li>
+<li>Execution timeout: 5 seconds per script.</li>
+<li>Maximum statements: 500,000 JavaScript statements.</li>
 </ul>
-<p>If you want to learn more about them, please refer to their respective technical guides.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
-</div>
+</li>
+<li><p><strong>Limited Language Support:</strong><br>
+Official support is for JavaScript only. C# scripting is legacy, not recommended, and will be removed in future versions.</p>
+</li>
+<li><p><strong>Module/Context Availability:</strong><br>
+Not all parts of the system support scripting. The available context and objects depend on where the script is triggered.</p>
+</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><p><strong>Always check for nulls:</strong><br>
+The <code>subject</code> variable and other context objects may be null. Check before using them.</p>
+</li>
+<li><p><strong>Use logging wisely:</strong><br>
+Log important actions and errors for traceability, but avoid excessive logging that could clutter the system.</p>
+</li>
+<li><p><strong>Limit data volume:</strong><br>
+Use <code>fetch</code> and filters to limit the amount of data processed in queries. Avoid large result sets in scripts.</p>
+</li>
+<li><p><strong>Handle errors gracefully:</strong><br>
+Use <code>Action.error()</code> and <code>Action.cancel()</code> to manage errors and control script flow.</p>
+</li>
+<li><p><strong>Write clear, maintainable code:</strong><br>
+Use comments, meaningful variable names, and consistent formatting for easier maintenance and debugging.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="global-action-object/index.html">Action Object</a></li>
+<li><a href="domain-model/entity-operations.html">Entity Operations</a></li>
+<li><a href="domain-model/advanced-examples.html">Advanced Examples</a></li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/limitations-best-practices.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

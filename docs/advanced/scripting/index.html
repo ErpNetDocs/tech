@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Scripting | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Scripting | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="scripting">Scripting</h1>
+
+<p>The scripting feature in ERP.net provides users with a powerful tool to customize and extend core business functionality.</p>
+<p>By enabling the creation and execution of scripts within your instance, this feature makes it possible to automate business processes, implement custom business rules, and adapt workflows to unique organizational requirements.</p>
+<p>Scripting enhances the flexibility of ERP.net, allowing businesses to efficiently tailor their operations to specific needs.</p>
+<h2 id="abstract">Abstract</h2>
+<p>This documentation describes the ERP.net scripting feature, including how to create, execute, and manage scripts within your instance.</p>
+<p>It covers supported scripting languages, integration with the domain model, available APIs, example use cases, and important security considerations.</p>
+<h2 id="supported-scripting-languages">Supported scripting languages</h2>
+<p>ERP.net supports the following scripting languages:</p>
+<ul>
+<li><p><strong>JavaScript</strong>: JavaScript is the officially supported scripting language. All new scripts should be written using standard JavaScript syntax.</p>
+</li>
+<li><p><strong>C#</strong>: It's available as a <strong>legacy</strong> feature. Support for C# scripts <strong>will be removed</strong> in future releases and its use is <strong>not recommended</strong> for new development.</p>
+</li>
+</ul>
+<h2 id="scripting-availability">Scripting availability</h2>
+<p>Scripting is currently available only within <a href="../user-business-rules/index.html">User Business Rules</a>.</p>
+<p>Support for additional modules, where scripting will be available, is planned for future releases.</p>
+<h2 id="script-access-scope">Script access scope</h2>
+<p>What a script can access depends on where it is executed within the system. In most cases, scripts have access to the <strong><a href="domain-model/index.html">Domain Model</a></strong>, allowing you to read, create, and update entities.</p>
+<p>Additionally, scripts always have access to the <strong><a href="global-action-object/index.html">Global action object</a></strong>- helper that provides quick access to commonly used actions.</p>
+<p>The available objects and data may vary depending on the specific context in which the script runs.</p>
+<p>Always refer to the documentation for your script's entry point to see exactly what is accessible in that environment.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><p>Full use of the scripting language syntax and all language constructs.</p>
+</li>
+<li><p>Blazing fast execution with minimal footprint.</p>
+</li>
+<li><p>Access to the current execution context (the object that triggered the script).</p>
+</li>
+<li><p>Access the entire ERP.net Domain Model from your script.</p>
+</li>
+<li><p>Global <code>Action</code> object for quick execution of common functions and host-specific operations.</p>
+</li>
+<li><p>Access to current session data.</p>
+</li>
+<li><p>Safe, sandboxed script execution.</p>
+</li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<p>The scripting feature in ERP.net is accessible from specific modules and workflows, such as <strong>user-defined business rules</strong> within your instance.</p>
+<p>It allows you to embed custom logic directly where business decisions or specific custom processes are required.</p>
+<h3 id="how-to-create-a-script">How to create a script</h3>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The examples below are tailored for scripting within <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html">User Business Rules</a>.</p>
+</div>
+<ol>
+<li><p>Navigate to a module where scripting is supported (e.g., <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html">User Business Rules</a>).</p>
+</li>
+<li><p>Create a new rule or edit an existing one.</p>
+</li>
+<li><p>In the <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html#scriptlanguage">Script Language</a> attribute, select the desired scripting language/platform, and enter your script in the <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html#scripttext">Script Text</a> field.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>JavaScript is the recommended and officially supported scripting language.</p>
+</div>
+<ol start="4">
+<li><p>Complete the remaining required fields for the user business rule- such as when it should be triggered, the context repository, etc.</p>
+</li>
+<li><p>Save.</p>
+</li>
+</ol>
+<p>Done.</p>
+<p>The script will execute every time the rule is activated.</p>
+<h3 id="your-first-script">Your first script</h3>
+<p>A classic way to get started with scripting is to log a simple message. The following example demonstrates how to write &quot;hello world&quot; to the system log whenever the rule is triggered:</p>
+<pre><code class="lang-js">Action.log(&quot;hello world&quot;);
+</code></pre>
+<p>Once the rule containing this script is activated, you'll see &quot;hello world&quot; appear as a new <a href="https://docs.erp.net/model/entities/Systems.Monitoring.InformationMessages.html">information message</a>.</p>
+<p>This serves as a simple test to confirm that your scripting environment is working correctly.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>Action</code> variable is a reference to the <strong>global action object</strong>. You can find more information and usage details <a href="global-action-object/index.html">here</a>.</p>
+</div>
+<h2 id="next-steps">Next steps</h2>
+<ul>
+<li><strong><a href="execution-context/index.html">Execution context</a></strong></li>
+<li><strong><a href="domain-model/index.html">Accessing Domain Model</a></strong></li>
+<li><strong><a href="global-action-object/index.html">Global action object</a></strong></li>
+<li><strong><a href="limitations-best-practices.html">Limitations and best practices</a></strong></li>
+<li><strong><a href="https://github.com/erpnet/JavaScriptExamples">JavaScript examples</a></strong></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

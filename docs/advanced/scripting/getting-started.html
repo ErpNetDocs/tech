@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Overview | ERP.net Tech Docs </title>
+      <title> | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Overview | ERP.net Tech Docs ">
+      <meta name="title" content=" | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/getting-started.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,36 +85,50 @@
         </div>
 
         <article data-uid="">
-<h1 id="overview">Overview</h1>
 
-<p>The <strong>My</strong> module is a personalized environment housing information that is essential to your day-to-day activities.</p>
-<p>It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.</p>
-<p><img src="pictures/MyModule.png" alt="pictures"></p>
-<p>In the <strong>My</strong> module, you can find the following applications:</p>
-<ul>
-<li><strong>AI Assistant</strong></li>
-<li><strong>Calendar</strong></li>
-<li><strong>Dashboard</strong></li>
-<li><strong>Documents</strong></li>
-<li><strong>Favorites</strong></li>
-<li><strong>Folders</strong></li>
-<li><strong>Groups</strong></li>
-<li><strong>Notifications</strong></li>
-<li><strong>Search</strong></li>
-<li><strong>Tiles</strong></li>
-<li><strong>Timeline</strong></li>
-<li><strong>To Do</strong></li>
-</ul>
-<p>If you want to learn more about them, please refer to their respective technical guides.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>The scripting feature in ERP.net is accessible from specific modules and workflows, such as <strong>user-defined business rules</strong> within your instance.</p>
+<p>It allows you to embed custom logic directly where business decisions or specific custom processes are required.</p>
+<h3 id="how-to-create-a-script">How to create a script</h3>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
+<p>The examples below are tailored for scripting within <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html">User Business Rules</a>.</p>
+</div>
+<ol>
+<li><p>Navigate to a module where scripting is supported (e.g., <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html">User Business Rules</a>).</p>
+</li>
+<li><p>Create a new rule or edit an existing one.</p>
+</li>
+<li><p>In the <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html#scriptlanguage">Script Language</a> attribute, select the desired scripting language/platform, and enter your script in the <a href="https://docs.erp.net/model/entities/Systems.Bpm.UserBusinessRules.html#scripttext">Script Text</a> field.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>JavaScript is the recommended and officially supported scripting language.</p>
+</div>
+<ol start="4">
+<li><p>Complete the remaining required fields for the user business rule- such as when it should be triggered, the context repository, etc.</p>
+</li>
+<li><p>Save.</p>
+</li>
+</ol>
+<p>Done.</p>
+<p>The script will execute every time the rule is activated.</p>
+<h3 id="your-first-script">Your first script</h3>
+<p>A classic way to get started with scripting is to log a simple message. The following example demonstrates how to write &quot;hello world&quot; to the system log whenever the rule is triggered:</p>
+<pre><code class="lang-js">Action.log(&quot;hello world&quot;);
+</code></pre>
+<p>Once the rule containing this script is activated, you'll see &quot;hello world&quot; appear as a new <a href="https://docs.erp.net/model/entities/Systems.Monitoring.InformationMessages.html">information message</a>.</p>
+<p>This serves as a simple test to confirm that your scripting environment is working correctly.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>Action</code> variable is a reference to the <strong>global action object</strong>. You can find more information and usage details <a href="global-action-object/index.html">here</a>.</p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/getting-started.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

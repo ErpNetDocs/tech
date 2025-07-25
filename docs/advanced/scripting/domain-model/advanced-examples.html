@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Advanced examples | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Advanced examples | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/advanced-examples.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="advanced-examples">Advanced examples</h1>
+
+<p>This section demonstrates advanced scripting scenarios in the ERP.net Domain Model, providing solutions for more complex business requirements and illustrating powerful techniques you can use in your scripts.</p>
+<h2 id="object-initializers">Object initializers</h2>
+<p>Object initializers let you create and configure entities (including related objects) in a single, concise statement.</p>
+<h3 id="before-without-object-initializer">Before: Without object initializer</h3>
+<pre><code class="lang-js">// Create a customer and related entities step by step
+var customer = Domain.Crm.Sales.CustomersRepository.createNew();
+customer.Number = 321;
+customer.Active = true;
+
+var customerType = Domain.Crm.Sales.CustomerTypesRepository.createNew();
+customerType.Name = 'VIP';
+customer.CustomerType = customerType;
+
+var party = Domain.General.Contacts.PersonsRepository.createNew();
+party.FirstName = 'John';
+party.LastName = 'Doe';
+customer.Party = party;
+</code></pre>
+<h3 id="after-using-object-initializer">After: Using object initializer</h3>
+<pre><code class="lang-js">// Create and initialize everything in one statement
+var customer = Domain.Crm.Sales.CustomersRepository.createNew({
+    Number: 321,
+    Active: true,
+    CustomerType: Domain.Crm.Sales.CustomerTypesRepository.createNew({
+        Name: 'VIP'
+    }),
+    Party: Domain.General.Contacts.PersonsRepository.createNew({
+        FirstName: 'John',
+        LastName: 'Doe'
+    })
+});
+</code></pre>
+<p>Object initializers make scripts more concise and easier to read, especially when working with complex or nested entities.</p>
+<h2 id="advanced-queries-and-filtering">Advanced queries and filtering</h2>
+<p>In advanced scenarios, you may need to retrieve entities based on multiple criteria, ranges, references to other entities, or special options.</p>
+<h3 id="filter-by-multiple-property-values">Filter by multiple property Values</h3>
+<p>Retrieve all customers who are active and have a specific customer type.</p>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: true,
+    customerType: { equals: customerType }
+});
+</code></pre>
+<h3 id="search-within-date-or-number-ranges">Search within date or number ranges</h3>
+<p>Find all customers whose <code>fromDate</code> is within a specific range:</p>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
+    fromDate: [
+        { greaterthanorequal: new Date(2025, 6, 1) },
+        { lessthanorequal: new Date(2025, 6, 10) }
+    ]
+});
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When using the JavaScript Date constructor, months are zero-based (i.e., January is 0, July is 6).
+So <code>new Date(2025, 6, 1)</code> creates a date for <code>01-07-2025</code>.</p>
+</div>
+<h3 id="query-by-references">Query by references</h3>
+<p>You can filter entities based on their relationship to other entities by passing a reference in your query filter.</p>
+<p>This is useful when you want to retrieve records linked to a specific related object, such as finding all customers associated with a particular person.</p>
+<pre><code class="lang-js">// Assume 'person1' is a Person entity obtained earlier in the script.
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    party: { equals: person1 }
+});
+</code></pre>
+<p>This example will return all customer entities where the party property references the <code>person1</code> object.</p>
+<p>You can also use reference filters with other related properties, such as retrieving all sales orders for a particular customer:</p>
+<pre><code class="lang-js">// Assume 'customer' is a Customer entity.
+var salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
+    customer: { equals: customer }
+});
+</code></pre>
+<h3 id="include-or-exclude-null-values">Include or exclude <code>null</code> values</h3>
+<p>You can include or exclude entities where a specific property is not set (i.e., is <code>null</code>).</p>
+<p>This is helpful when you want to combine results for both a particular value and records where the property is not set.</p>
+<pre><code class="lang-js">// Find customers where 'number' is '0' or is not set (null).
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    number: [
+        { equals: '0' },
+        { includeNulls: true }
+  ]
+});
+</code></pre>
+<p>This query returns all customers whose number is <code>'0'</code>, as well as customers where the number property is not set at all.</p>
+<h3 id="limit-the-number-of-results-returned">Limit the number of results returned</h3>
+<p>You can control how many entities are returned from a query by using the <code>fetch</code> option.</p>
+<p>This is especially useful for paging or performance optimization.</p>
+<pre><code class="lang-js">// Fetch only the first 3 active customers.
+var customers = Domain.Crm.Sales.CustomersRepository.query(
+    { active: true },
+    { fetch: 3 }
+);
+</code></pre>
+<p>This query will return up to three customer entities that are active.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not specify the fetch option, the default maximum number of results returned is <code>1000</code>.</p>
+</div>
+<h3 id="query-comparison-operators">Query comparison operators</h3>
+<p>When performing queries with the <code>query()</code> method, the following comparison operators are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>equals</code></td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td>In a list of values</td>
+</tr>
+<tr>
+<td><code>greaterthanorequal</code></td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td><code>lessthanorequal</code></td>
+<td>Less than or equal to</td>
+</tr>
+<tr>
+<td><code>like</code></td>
+<td>SQL-style pattern matching</td>
+</tr>
+<tr>
+<td><code>contains</code></td>
+<td>Contains substring</td>
+</tr>
+<tr>
+<td><code>startswith</code></td>
+<td>Starts with substring</td>
+</tr>
+<tr>
+<td><code>endswith</code></td>
+<td>Ends with substring</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combined-advanced-query-example">Combined advanced query example</h3>
+<p>This example retrieves up to 10 active customers who:</p>
+<ul>
+<li>Belong to a specific customer type,</li>
+<li>Were created in July 2025,</li>
+<li>Are either related to a specific person or have no related party assigned.</li>
+</ul>
+<pre><code class="lang-js">// Assume 'customerType' and 'person1' are entities obtained earlier
+var customers = Domain.Crm.Sales.CustomersRepository.query(
+    {
+        active: true,
+        customerType: { equals: customerType },
+        fromDate: [
+            { greaterthanorequal: new Date(2025, 6, 1) },  // 2025-07-01
+            { lessthanorequal: new Date(2025, 6, 31) }     // 2025-07-31
+        ],
+        party: [
+            { equals: person1 },
+            { includeNulls: true }
+        ]
+    },
+    {
+        fetch: 10
+    }
+);
+</code></pre>
+<ul>
+<li><strong>active: true</strong> - Only customers marked as active.</li>
+<li><strong>customerType: { equals: customerType }</strong> - Filter by a specific customer type entity.</li>
+<li><strong>fromDate</strong> - Limits results to those created in July 2025.</li>
+<li><strong>party</strong> - Includes customers linked to <code>person1</code> or with no party assigned <code>null</code>.</li>
+<li><strong>fetch: 10</strong> - Limits the result set to 10 records.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The JavaScript Date constructor uses zero-based months (0 = January, 6 = July).</p>
+</div>
+<h2 id="flexible-type-matching-in-queries-and-assignments">Flexible type matching in queries and assignments</h2>
+<p>In many cases, you don't need to provide an exact type when assigning values or building query filters - ERP.net will automatically handle certain conversions for you.</p>
+<h3 id="dates">Dates</h3>
+<p>When working with date properties, you can provide values as JavaScript Date objects, or as ISO date strings (e.g., &quot;2025-07-01&quot;):</p>
+<pre><code class="lang-js">// Both examples are valid for date filtering:
+var customers1 = Domain.Crm.Sales.CustomersRepository.query({
+    fromDate: { equals: new Date(2025, 6, 1) }
+});
+
+var customers2 = Domain.Crm.Sales.CustomersRepository.query({
+    fromDate: { equals: &quot;2025-07-01&quot; }
+});
+</code></pre>
+<h3 id="multilanguage-strings">Multilanguage strings</h3>
+<p>For properties that expect a <code>MultilanguageString</code>, you can assign a plain string.</p>
+<p>The system will automatically create a multilanguage value using the current language.</p>
+<pre><code class="lang-js">// Assign a plain string; it will be set as a multilanguage value in the user's current culture.
+person.FirstName = &quot;John&quot;;
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/advanced-examples.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

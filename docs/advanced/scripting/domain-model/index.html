@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Overview | ERP.net Tech Docs </title>
+      <title>Domain Model | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Overview | ERP.net Tech Docs ">
+      <meta name="title" content="Domain Model | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../public/main.css">
-      <meta name="docfx:navrel" content="../../toc.html">
-      <meta name="docfx:tocrel" content="../../toc.html">
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
       
-      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../public/docfx.min.js"></script>
+      <script type="module" src="./../../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../logo.svg" alt="">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,36 +85,33 @@
         </div>
 
         <article data-uid="">
-<h1 id="overview">Overview</h1>
+<h1 id="domain-model">Domain Model</h1>
 
-<p>The <strong>My</strong> module is a personalized environment housing information that is essential to your day-to-day activities.</p>
-<p>It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.</p>
-<p><img src="pictures/MyModule.png" alt="pictures"></p>
-<p>In the <strong>My</strong> module, you can find the following applications:</p>
+<p>Scripts in ERP.net can directly interact with the ERP.net <a href="https://docs.erp.net/model/entities/index.html">Domain Model</a>, providing access to all entities and their properties.</p>
+<p>This allows you to read, create, update, and delete data as part of your custom logic.</p>
+<p>Through the scripting interface, you work with the same Domain Model objects used throughout ERP.net, making it possible to automate operations, enforce complex rules, or integrate data from different parts of your instance.</p>
+<p>With direct ERP.net Domain Model access, scripts can:</p>
 <ul>
-<li><strong>AI Assistant</strong></li>
-<li><strong>Calendar</strong></li>
-<li><strong>Dashboard</strong></li>
-<li><strong>Documents</strong></li>
-<li><strong>Favorites</strong></li>
-<li><strong>Folders</strong></li>
-<li><strong>Groups</strong></li>
-<li><strong>Notifications</strong></li>
-<li><strong>Search</strong></li>
-<li><strong>Tiles</strong></li>
-<li><strong>Timeline</strong></li>
-<li><strong>To Do</strong></li>
+<li><p>Retrieve existing records and entity collections.</p>
+</li>
+<li><p>Create and initialize new entities.</p>
+</li>
+<li><p>Update properties of entities.</p>
+</li>
+<li><p>Delete entities when necessary.</p>
+</li>
 </ul>
-<p>If you want to learn more about them, please refer to their respective technical guides.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
-</div>
+<p>--</p>
+<p>For a step-by-step guide on how to retrieve, create, update, and delete entities in your scripts, see the <a href="entity-operations.html">Entity operations section</a>.</p>
+<p>It covers the most common tasks and patterns you'll need when working with the Domain Model.</p>
+<p>--</p>
+<p>For more complex Domain Model scripting scenarios, custom entity workflows, and advanced tips, visit the <a href="advanced-examples.html">Advanced examples section</a>.</p>
+<p>There you'll find practical solutions and best practices for handling sophisticated data operations and integrating business logic with the Domain Model.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/my/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

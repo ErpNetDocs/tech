@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/global-action-object/api-reference.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="api-reference">API Reference</h2>
+<h3 id="methods">Methods</h3>
+<h4 id="actionlogmessage-string-void"><code>Action.log(message: string): void</code></h4>
+<p>Logs an informational message.</p>
+<ul>
+<li><strong>Creates:</strong> <a href="https://docs.erp.net/model/entities/Systems.Monitoring.InformationMessages.html">Information Message</a> (type: <code>Information</code>)</li>
+</ul>
+<pre><code class="lang-js">Action.log(&quot;Order completed.&quot;);
+</code></pre>
+<hr>
+<h4 id="actionerrormessage-string-void"><code>Action.error(message: string): void</code></h4>
+<p>Logs an error message.</p>
+<ul>
+<li><strong>Creates:</strong> <a href="https://docs.erp.net/model/entities/Systems.Monitoring.InformationMessages.html">Information Message</a> (type: <code>Error</code>)</li>
+</ul>
+<pre><code class="lang-js">Action.error(&quot;Order validation failed.&quot;);
+</code></pre>
+<hr>
+<h4 id="actioncancelmessage-string-void"><code>Action.cancel(message?: string): void</code></h4>
+<p>Cancels script execution and throws an exception.</p>
+<ul>
+<li><strong>Parameter:</strong> <code>message</code> (optional) – Reason for cancellation</li>
+<li><strong>Effect:</strong> Halts execution immediately</li>
+</ul>
+<pre><code class="lang-js">Action.cancel(&quot;This operation is not permitted.&quot;);
+Action.cancel(); // Uses a generic message
+</code></pre>
+<hr>
+<h3 id="properties">Properties</h3>
+<h4 id="actionnotify"><code>Action.notify</code></h4>
+<p>Notification helpers.</p>
+<h5 id="actionnotifyuseruserid-string-message-string-void"><code>Action.notify.user(userId: string, message: string): void</code></h5>
+<p>Sends a notification to a specific user.</p>
+<pre><code class="lang-js">Action.notify.user(&quot;6dc7e681-8b65-4095-beb1-b3bc0c948b7c&quot;, &quot;Please review this document.&quot;);
+</code></pre>
+<hr>
+<h4 id="actionuser"><code>Action.user</code></h4>
+<p>Read-only object with information about the current user.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>id</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User ID</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>name</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>roles</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated role names</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>locale</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Default language code</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>email</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Email address</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js">var userId = Action.user.id;
+var roles = Action.user.roles;
+</code></pre>
+<hr>
+<h4 id="actionsession"><code>Action.session</code></h4>
+<p>Read-only object with information about the current session.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>id</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Session ID</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startedAt</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ISO 8601 UTC session start time</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js">var sessionId = Action.session.id;
+var start = Action.session.startedAt;
+</code></pre>
+<hr>
+<h4 id="actionhttp"><code>Action.http</code></h4>
+<p>HTTP request helpers.</p>
+<h5 id="actionhttpgeturl-string-headers-string-string"><code>Action.http.get(url: string, headers?: string): string</code></h5>
+<p>Sends an HTTP GET request.</p>
+<pre><code class="lang-js">var response = Action.http.get(&quot;https://api.example.com/status&quot;);
+var response2 = Action.http.get(
+  &quot;https://api.example.com/status&quot;,
+  &quot;Authorization: Bearer TOKEN&quot;
+);
+</code></pre>
+<h5 id="actionhttpposturl-string-body-string-headers-string-string"><code>Action.http.post(url: string, body: string, headers?: string): string</code></h5>
+<p>Sends an HTTP POST request with a request body and optional headers.</p>
+<pre><code class="lang-js">var response = Action.http.post(
+  &quot;https://api.example.com/data&quot;,
+  '{ &quot;value&quot;: 42 }',
+  &quot;Content-Type: application/json\nAuthorization: Bearer TOKEN&quot;
+);
+</code></pre>
+<hr>
+<h3 id="summary-table">Summary Table</h3>
+<table>
+<thead>
+<tr>
+<th>Property/Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Action.log(message)</code></td>
+<td>Log informational message</td>
+</tr>
+<tr>
+<td><code>Action.error(message)</code></td>
+<td>Log error message</td>
+</tr>
+<tr>
+<td><code>Action.cancel([message])</code></td>
+<td>Cancel script execution</td>
+</tr>
+<tr>
+<td><code>Action.notify.user(userId, message)</code></td>
+<td>Send notification to user</td>
+</tr>
+<tr>
+<td><code>Action.user</code></td>
+<td>Current user information</td>
+</tr>
+<tr>
+<td><code>Action.session</code></td>
+<td>Current session information</td>
+</tr>
+<tr>
+<td><code>Action.http.get(url, [headers])</code></td>
+<td>Send HTTP GET request</td>
+</tr>
+<tr>
+<td><code>Action.http.post(url, body, [headers])</code></td>
+<td>Send HTTP POST request with body/headers</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/global-action-object/api-reference.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

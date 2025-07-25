@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Entity operations | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Entity operations | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/entity-operations.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="entity-operations">Entity operations</h1>
+
+<p>Scripts in ERP.net allow you to perform full CRUD operations- Retrieve, Create, Update, and Delete- on entities from the Domain Model.</p>
+<p>The examples below demonstrate typical usage patterns.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For details on how to access all available entities, and their properties, refer to the <a href="https://docs.erp.net/model/entities/index.html">Domain Model documentation</a>.
+This resource provides the exact paths and structure you need when working with different parts of the model in your scripts.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any modification made in a script- creation, update, or delete- will not take effect until the actual transaction is committed.
+The script itself <strong>does not</strong> control the transaction; committing or rolling back changes is handled by the outer business logic that invoked the script.</p>
+</div>
+<h2 id="accessing-the-current-entity-aka-subject">Accessing the current entity (a.k.a <code>subject</code>)</h2>
+<p>You can access the entity that triggered the script using the <code>subject</code> variable. This variable is automatically provided in the script's context and refers to the object that caused the script to execute.</p>
+<p>E.g., in a user business rule attached to the <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html">Customers repository</a>, the <code>subject</code> variable will refer to the specific customer entity being processed when the script runs.</p>
+<p>You can use <code>subject</code> to read or modify its properties directly.</p>
+<pre><code class="lang-js">// The subject is a customer. We can change some of its properties.
+// Activate the current customer and set a new number
+subject.Active = false;
+subject.Number = 'CUST-002';
+</code></pre>
+<h2 id="retrieve">Retrieve</h2>
+<p>Scripts can retrieve entities from the Domain Model using queries or by directly fetching an entity by its identifier.</p>
+<h3 id="getbyid">GetById</h3>
+<p>Use the repository's <code>getById()</code> method to retrieve a single entity by its unique identifier.</p>
+<pre><code class="lang-js">// Example: Get a customer by ID
+var customerId = &quot;12345678-90ab-cdef-1234-567890abcdef&quot;;
+var customer = Domain.Crm.Sales.CustomersRepository.getById(customerId);
+if (customer) {
+  // Do something with the customer entity.
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Always check if the result is <code>null</code> to handle cases where the entity is not found.</p>
+</div>
+<h3 id="query">Query</h3>
+<p>Use the repository's <code>query()</code> method to search for and retrieve collections of entities matching specific criteria.</p>
+<pre><code class="lang-js">// Example: Get all active customers
+var activeCustomers = Domain.Crm.Sales.CustomersRepository.query({
+    active: { equals: true }
+})
+</code></pre>
+<p>This will retrieve all customers where the <code>active</code> property is set to <code>true</code>.</p>
+<p>--</p>
+<p>This script is triggered from a business rule attached to the Customers repository. It retrieves all sales orders for the current <a href="https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#customer">customer</a> (<code>subject</code>) where the order date (<a href="https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#documentdate">documentDate</a>) is today.</p>
+<pre><code class="lang-js">// Example: Get all sales orders from today for the current customer
+var today = new Date();
+var todaysSalesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
+    customer: { equals: subject },
+    documentDate: { equals: today }
+});
+</code></pre>
+<h2 id="create">Create</h2>
+<h3 id="creating-a-new-entity">Creating a new entity</h3>
+<p>Entities can be created using the appropriate repository's <code>createNew()</code> method. This will instantiate a new entity object that you can initialize with the required property values before saving or using it in your logic.</p>
+<p>For example, to create a new customer:</p>
+<pre><code class="lang-js">// Create a new customer
+var customer = Domain.Crm.Sales.CustomersRepository.createNew();
+customer.Number = 123;
+customer.Active = true;
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Make sure to set all required properties and observe any business rules or validation logic relevant to the entity you are creating.</p>
+</div>
+<p>You can also create and assign related entities (such as customer types, parties) immediately after creation:</p>
+<pre><code class="lang-js">// Create a new customer and assign a new customer type and a new party.
+var myCustomerType = Domain.Crm.Sales.CustomerTypesRepository.createNew();
+myCustomerType.Name = &quot;Retail&quot;;
+
+var myCustomerPerson = Domain.General.Contacts.PersonsRepository.createNew();
+myCustomerPerson.FirstName = &quot;John&quot;;
+myCustomerPerson.LastName = &quot;Doe&quot;;
+
+var customer = Domain.Crm.Sales.CustomersRepository.createNew();
+customer.CustomerType = myCustomerType;
+customer.Party = myCustomerPerson;
+</code></pre>
+<p>This approach is especially useful when building documents or records that require multiple related entities to be created together.</p>
+<h3 id="creating-multiple-entities-in-a-loop">Creating multiple entities in a loop</h3>
+<p>You can create multiple entities by using a loop and setting their properties individually.
+This approach is useful when you need to generate a series of related records, such as sales order lines or batch entries.</p>
+<pre><code class="lang-js">// Create a sales order.
+var salesOrder = Domain.Crm.Sales.SalesOrdersRepository.createNew();
+salesOrder.DocumentType = Domain.Systems.Documents.DocumentTypesRepository.createNew();
+salesOrder.DocumentType.EntityName = 'Crm_Sales_Orders';
+salesOrder.DocumentDate = new Date();
+salesOrder.DocumentNo = '12345';
+salesOrder.Customer = Domain.Crm.Sales.CustomersRepository.createNew();
+salesOrder.Customer.Party = Domain.General.Contacts.CompaniesRepository.createNew();
+salesOrder.Customer.Party.Name = 'My Company Ltd.';
+
+// Create 10 sales order lines.
+for (let i = 0; i &lt; 10; i++) {
+    let salesOrderLine = Domain.Crm.Sales.SalesOrderLinesRepository.createNew();
+    salesOrderLine.SalesOrder = salesOrder;
+    salesOrderLine.LineNo = (i + 1) * 10;
+    salesOrderLine.Product = Domain.General.Products.ProductsRepository.createNew();
+    salesOrderLine.Quantity = new Domain.Quantity(10, null);
+}
+</code></pre>
+<p>This technique gives you more control over property assignment and is especially helpful for more complex initialization or conditional logic.</p>
+<h2 id="update">Update</h2>
+<p>Entities can be updated by setting their properties to new values.</p>
+<p>If you have a reference to an entity- whether retrieved via <code>query()</code>, <code>getById()</code>, or from the <code>subject</code> variable- you can modify its properties directly in your script.</p>
+<h3 id="updating-properties">Updating properties</h3>
+<p>Here's how to update fields of an existing entity:</p>
+<pre><code class="lang-js">// Example: Update a customer's status and number
+subject.Active = false;
+subject.Number = &quot;CUST-999&quot;;
+</code></pre>
+<p>If you need to update an entity obtained from a repository:</p>
+<pre><code class="lang-js">// Get a specific customer and update its properties
+var customer = Domain.Crm.Sales.CustomersRepository.getById(&quot;12345678-90ab-cdef-1234-567890abcdef&quot;);
+if (customer) {
+    customer.Active = true;
+    customer.Number = &quot;CUST-1000&quot;;
+}
+</code></pre>
+<h3 id="batch-updates">Batch updates</h3>
+<p>You can update multiple entities in a loop:</p>
+<pre><code class="lang-js">// Example: Deactivate all customers whose ThruDate is before today
+var today = new Date();
+
+var expiredCustomers = Domain.Crm.Sales.CustomersRepository.query({
+    thruDate: { lessthan: today }
+});
+
+for (let i = 0; i &lt; expiredCustomers.length; i++) {
+    expiredCustomers[i].Active = false;
+}
+</code></pre>
+<p>This script finds all customers with a <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#thrudate">ThruDate</a> earlier than today and sets their <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#active">Active</a> property to false.</p>
+<h2 id="delete">Delete</h2>
+<p>Entities can be deleted in scripts using the <code>Delete()</code> method. This removes the entity from the system. You can delete individual entities or all items in a collection.</p>
+<h3 id="deleting-a-single-entity">Deleting a single entity</h3>
+<p>Call the <code>Delete()</code> method on an entity object to remove it:</p>
+<pre><code class="lang-js">// Example: Delete a customer
+var customer = Domain.Crm.Sales.CustomersRepository.getById(&quot;12345678-90ab-cdef-1234-567890abcdef&quot;);
+if (customer) {
+    customer.Delete();
+}
+</code></pre>
+<h3 id="deleting-all-items-in-a-collection">Deleting all items in a collection</h3>
+<p>Some collections (e.g., document lines) support the <code>DeleteAll()</code> method, which deletes every entity in the collection:</p>
+<pre><code class="lang-js">// Example: Delete all lines from a sales order
+var salesOrder = subject;
+if (salesOrder.Lines) {
+    salesOrder.Lines.DeleteAll();
+}
+</code></pre>
+<h3 id="deleting-a-specific-object-from-a-collection">Deleting a specific object from a collection</h3>
+<p>You can also delete a specific entity from a collection using <code>Delete(obj)</code>:</p>
+<pre><code class="lang-js">var salesOrderLine = salesOrder.Lines[0];
+salesOrder.Lines.Delete(salesOrderLine);
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Use delete operations with caution.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/entity-operations.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

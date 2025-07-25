@@ -1661,6 +1661,129 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/domain-model/advanced-examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/domain-model/advanced-examples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/domain-model/entity-operations.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/domain-model/entity-operations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/domain-model/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/domain-model/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/domain-model/special-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/domain-model/special-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/execution-context/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/execution-context/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/global-action-object/api-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/global-action-object/api-reference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/global-action-object/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/global-action-object/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/scripting/limitations-best-practices.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/limitations-best-practices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "advanced/scripting/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/scripting/toc.html"
+        },
+        ".json": {
+          "relative_path": "advanced/scripting/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/security/authentication/azuread.md",
       "output": {
         ".html": {
@@ -8996,6 +9119,39 @@
         },
         ".json": {
           "relative_path": "modules/general/documents/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/files/folders.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/files/folders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/files/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/files/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/files/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/files/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/files/toc.json"
         }
       },
       "version": ""

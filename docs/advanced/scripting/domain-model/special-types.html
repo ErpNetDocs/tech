@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>User business rules - Examples | ERP.net Tech Docs </title>
+      <title>Special types | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="User business rules - Examples | ERP.net Tech Docs ">
+      <meta name="title" content="Special types | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/special-types.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,27 +85,67 @@
         </div>
 
         <article data-uid="">
-<h1 id="user-business-rules---examples">User business rules - Examples</h1>
+<h1 id="special-types">Special types</h1>
 
-<ul>
-<li><a href="set-quantity-or-amount.html"></a></li>
-<li><a href="credit-limit-override.html">Allow a credit limit override when a client pays in cash</a></li>
-<li><a href="trello-create-card.html">How to create a card in Trello when a sales order has been released?</a></li>
-<li><a href="slack-send-message.html">How to send a message in a channel in Slack when voiding a sales order?</a></li>
-<li><a href="azure-service-bus-send-message.html">How to send a message to Azure Service Bus when an entity is created or updated?</a></li>
-<li><a href="set-value-into-custom-property.html">How to use business rules to set a value into a custom property?</a></li>
-<li><a href="manage-user-status.html">Manage the user status of a document</a></li>
-<li><a href="set-deliveryterms.html">Set DeliveryTerms in purchase invoice</a></li>
-<li><a href="sales-order-init-attribute.html">Set an initial attribute for a new sales order</a></li>
-<li><a href="set-vat-percent-by-deal-type.html">Set the VAT rate depending on Deal type</a></li>
-<li><a href="start-business-rule.html">Start a business rule only on first releasing</a></li>
-<li><a href="whole-quantity-validation.html">Whole quantity validation</a></li>
-</ul>
+<p>The ERP.net Domain Model provides a set of advanced types designed to address complex business requirements, including custom properties, multilingual data, precise amounts, and quantities.</p>
+<p>This section describes how to work with these types in your scripts.</p>
+<h2 id="custom-properties">Custom properties</h2>
+<p>Entities can have user-defined (custom) properties that are accessible via the CustomProperties collection.</p>
+<pre><code class="lang-js">// Access the value of a custom property by its code
+var value = subject.CustomProperties['C1'].Value;
+
+// Update the value of a custom property
+subject.CustomProperties['C1'] = 'New custom value';
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can find more information about custom properties <a href="../../stored-attributes/index.html">here</a>.</p>
+</div>
+<h2 id="multilanguage-strings">Multilanguage strings</h2>
+<p><code>MultilanguageString</code> enables storing and accessing text values in multiple languages.</p>
+<pre><code class="lang-js">// Create a multilingual string with values for different languages
+var str = new Domain.MultilanguageString({
+    en: 'Hello',
+    bg: 'Здрасти',
+    fr: 'Bonjour'
+});
+</code></pre>
+<p>To retrieve the value for a specific language, use the corresponding language code:</p>
+<pre><code class="lang-js">// Get the value in English
+var englishValue = str['en']; // 'Hello'
+
+// Get the value in Bulgarian
+var bulgarianValue = str['bg']; // 'Здрасти'
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><code>MultilanguageString</code> is immutable. Once created, its values cannot be changed.</p>
+<p>If you need a different value, create a new instance with the updated translations.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can find more information about multi-language strings <a href="../../../concepts/multi-language.html">here</a>.</p>
+</div>
+<h2 id="amount">Amount</h2>
+<p>The <code>Amount</code> type allows for accurate calculations with currency values.</p>
+<pre><code class="lang-js">// Create an amount and perform arithmetic operations
+// Example: EUR must be a valid currency object, e.g., retrieved from the subject, a repository or related entity.
+var amount = new Domain.Amount(10, EUR);
+var total = Domain.Amount.Multiply(amount, 5); // Result: 50 EUR
+</code></pre>
+<h2 id="quantity">Quantity</h2>
+<p><code>Quantity</code> supports operations with amounts and units.</p>
+<pre><code class="lang-js">// Create quantities and calculate ratios
+// Example: Pcs must be a valid unit object, e.g., retrieved from the subject, a repository or related entity.
+var quantity1 = new Domain.Quantity(10, Pcs);
+var quantity2 = new Domain.Quantity(5, Pcs);
+var ratio = Domain.Quantity.Divide(quantity1, quantity2); // Result: 2
+</code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/user-business-rules/examples/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/scripting/domain-model/special-types.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
