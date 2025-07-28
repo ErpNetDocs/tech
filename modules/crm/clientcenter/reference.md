@@ -144,3 +144,9 @@ where DistributionChannel.Code is the code of the channel (e.g. "CC").
 * **CC009**
 
   Incorrect setup of Client Center - the option NewOrderDocumentType is set, but DocumentType is null.
+
+  * **CC010**
+
+  The logged-in user does not have a defined role.
+  Please add the user to the Crm_Customer_External_Access table and assign an appropriate role.
+
