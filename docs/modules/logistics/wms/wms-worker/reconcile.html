@@ -108,15 +108,31 @@
 <p><img src="pictures/reconcile-differences.png" alt="Differences"></p>
 <h2 id="deleting-counted-data">Deleting Counted Data</h2>
 <p>If the Counted data needs to be deleted, this can be done by clicking on the Recycle bin icon on the right.</p>
+<h2 id="auto-accepting-non-counted-products">Auto-accepting non-counted products</h2>
+<p>During reconciliation, the context menu includes an option called Accept Non Counted.</p>
+<p>When selected, the system automatically accepts all products at the current location that have not been physically counted, treating them as counted with their expected quantities.</p>
+<h4 id="what-happens-when-the-button-is-pressed">What happens when the button is pressed:</h4>
+<p>All uncounted products (displayed in black) are automatically marked as counted with zero difference. They will immediately turn green in the list, as if counted and matching the expected quantity.</p>
+<p>In the Review screen, these products will not appear, since only products with differences are shown.</p>
+<p>When clicking Finish, a Warehouse Transaction is created for each of these products:</p>
+<ul>
+<li>TaskType = Count</li>
+<li>Direction = IN</li>
+<li>Quantity = 0</li>
+<li>IsAutoAccepted = True</li>
+</ul>
+<p>The IsAutoAccepted field is a boolean indicator in the Warehouse Transactions, showing that the product was accepted without being physically counted.</p>
+<p>If any of the automatically accepted products are later edited (e.g. counted manually or deleted with the bin icon), the system considers them as manually counted instead. In this case:</p>
+<p>The IsAutoAccepted value is set to False</p>
+<p>The previously accepted quantity is reset to zero, to avoid duplication. The product must then be counted again from scratch.</p>
+<p>This feature is designed to speed up the reconciliation process and to provide a clear distinction between physically verified quantities and those accepted based on system expectations.
+It also serves as a control mechanism for the reconciliation process and the employees performing the inventory.</p>
 <h2 id="review-and-total-difference">Review and Total Difference</h2>
 <p>When the counting is complete, you can see a Review of all rows in the table with their matches and differences. If there are rows in which no counted information is entered, they will be displayed with negative values of the expected quantity.
 This means that these products may have been available, but since they were not reported, they are recorded as missing.</p>
 <p>Review shows the results of the counting and in that sense - the Reconcile of the whole location.</p>
 <p>Total difference shows the reported differences at this Location.</p>
 <p><img src="pictures/reconcile-summary.png" alt="Summary"></p>
-<h2 id="auto-accepting-non-counted-products">Auto-accepting non-counted products</h2>
-<p>If you click the Accept Non Counted button during reconciliation, all products at the current location that were not counted will be automatically accepted as correct with their expected quantities.</p>
-<p>This action will also set the IsAutoAccepted flag in the corresponding WarehouseTransactions, marking that the uncounted differences were accepted for this location.</p>
 <h2 id="finish-and-save">Finish and Save</h2>
 <p>The <img src="pictures/move-finish.png" alt="Finish">  button means that the counting is complete, and you are ready to save the data to the system.</p>
 <p>If all the steps are performed correctly, a message will appear confirming that the operation was successful:</p>
