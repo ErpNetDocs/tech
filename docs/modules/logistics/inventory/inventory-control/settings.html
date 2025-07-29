@@ -101,14 +101,67 @@
 <h5>Important</h5>
 <p>For the Receive and Issue functions, under certain conditions, the <strong>Document Type</strong> specified in the <strong><a href="../how-to/document-type-routes.html">Document Routes</a></strong> of the respective order will also be taken into account when the final transaction is created.</p>
 </div>
-<h3 id="navigation">Navigation</h3>
+<h2 id="navigation">Navigation</h2>
 <p>In order to access the Inventory Control Settings, tap on the context menu at the bottom of the screen and select <strong>Settings</strong>.</p>
 <p><img src="pictures/settings_click.png" alt="Settings"></p>
-<h3 id="configuration">Configuration</h3>
+<h2 id="configuration">Configuration</h2>
 <p>If you tap on the <strong>downward arrows</strong> of any of the available options, you'll be taken to a list of your existing document types.</p>
 <p>It's possible to link any type to either the receive, issue, scrap, transfer or reconcile operation.</p>
 <p>One and the same document type can be used for <strong>multiple</strong> operations.</p>
 <p><img src="pictures/change-documents.png" alt="Settings"></p>
+<h2 id="use-the-document-type-from-routes-to-create-a-new-document">Use the Document Type from Routes to create a new document</h2>
+<p>If certain conditions are met, it is possible to create new documents through <strong><a href="index.html">Inventory Control</a></strong> by taking in mind both the Document Type specified in the <strong><a href="settings.html">Settings</a></strong> as well as the Document Type defined in the <strong>Document Routes</strong> for the respective order.</p>
+<p>This applies to the <strong><a href="receive.html">Receive</a></strong> and <strong><a href="issue.html">Issue</a></strong> operations, providing more flexibility when defining the final documents they can generate.</p>
+<h3 id="step-by-step-process">Step-by-step process</h3>
+<ol>
+<li><p>Perform a validation check for the receive/issue store order by <strong>filtering</strong> the following fields in the <em>Document TypesFormRoutings</em> panel of the <em>StoreOrders</em> data type:</p>
+<ul>
+<li><p><strong>ProcessEvent</strong>: Must be &quot;Change of state&quot;.</p>
+</li>
+<li><p><strong>ConditionStatesBitMask</strong>: Must include &quot;Released&quot;.</p>
+</li>
+<li><p><strong>Destination DocumentType</strong>: Must be a document of data type &quot;Transactions&quot;.</p>
+<p>When the store order is created, the Route’s activity must fit within the period specified in the <em>ActivationDate</em> and <em>DeactivationDate</em> fields. Keep in mind that these fields may be empty.</p>
+</li>
+<li><p><strong>IsActive</strong>: Must be &quot;True&quot;.</p>
+</li>
+<li><p><strong>ConditionEnterpriseCompany</strong>: Must match the <em>StoreOrder.EnterpriseCompany</em> or be empty.</p>
+</li>
+<li><p><strong>AllowedGenerationTypes</strong>: Must be set to &quot;Only Manually&quot;.</p>
+</li>
+</ul>
+</li>
+<li><p>Once the filtering procedure is complete, only the <strong>Document type</strong> is extracted from the remaining <strong>routes</strong>.</p>
+</li>
+<li><p>Keeping in mind the <strong>results</strong> of the validation check as well as the <strong>Document Type</strong> specified in the <strong>Inventory Control Settings</strong>, you can encounter the following situations:</p>
+<ul>
+<li><p><strong>No</strong> valid result is returned from the Document Routes and <strong>no</strong> Document Type is specified in the Inventory Control Settings for the receive or issue function.</p>
+<p>=&gt; An error will be thrown: &quot;<em>No document type selected</em>&quot;.</p>
+</li>
+<li><p><strong>No</strong> valid result is returned from the Document Routes but a Document Type <strong>is</strong> specified in the Inventory Control Settings for the receive or issue function.</p>
+<p>=&gt; A store order of the respective type will be created based on what is provided in the <strong>Settings</strong>.</p>
+</li>
+<li><p><strong>Only one</strong> valid result is returned from the Document Routes (or <strong>multiple</strong> valid results all pointing to <strong>the same</strong> Document Type)</p>
+<p>=&gt; A Document Type is selected <strong>regardless</strong> of what is specified in the Inventory Control Settings.</p>
+</li>
+<li><p><strong>Multiple different</strong> results are returned from the Document Routes.</p>
+<p>=&gt; A <strong>selection menu</strong> is displayed with a dropdown list containing all returned results from the Document Routes plus the Document Type specified in the Inventory Control <strong><a href="settings.html">Settings</a></strong>.</p>
+<p><img src="pictures/document-routes-doc.png" alt="pictures"></p>
+<p>The dropdown list will have a <strong>default</strong> value, determined as follows:</p>
+<ul>
+<li><p>If at least <strong>one</strong> of the returned results <strong>matches</strong> the Document Type specified in the Inventory Control Settings, that Document Type is chosen as the default.</p>
+</li>
+<li><p>If <strong>none</strong> of the returned results match the Document Type specified in the Inventory Control Settings, or if no Document Type is specified in these Settings, the default value is the Document Type <strong>Code</strong> with the smallest <strong>Code</strong> value.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
 
 </article>
 
