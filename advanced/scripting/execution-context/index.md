@@ -33,6 +33,4 @@ Action.log("Processing customer: " + subject.Number);
 The execution context depends on where and how the script is triggered.
 E.g., the type of the `subject` variable will change based on the business rule's entry point and the repository to which it is attached. If a rule is attached to the Customers repository, subject will be a Customer entity; if attached to another repository, `subject` will represent an instance of that entity type.
 
-In some cases, the `subject` variable may be null (e.g., if the script is not triggered by a specific entity). It is a good practice to check whether `subject` is available before using it in your script.
-
 Always refer to the documentation for your specific script entry point to understand exactly which context variables and objects will be available during execution.

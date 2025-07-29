@@ -90,7 +90,9 @@ Scripts can automate calculations, validate data, trigger workflows, or interact
 
 Scripts run in a secure, sandboxed environment.
 
-For more details and advanced scripting scenarios, see the [Scripting documentation](../scripting/index.md).
+For guidance on using scripting inside business rules, see the Business Rules section of the [Scripting documentation](./scripting/index.md).
+
+For a complete reference that covers every advanced scenario, consult the full [Scripting documentation](./scripting/index.md).
 
 -------------
 ### See more
@@ -99,5 +101,5 @@ For more details and advanced scripting scenarios, see the [Scripting documentat
 - **[Business rules](./index.md)**
 - **[Parameter types](./parameter-types/index.md)**
 - **[Events](./events/index.md)**
-- **[Scripting](../scripting/index.md)**
+- **[Scripting](./scripting/index.md)**
 - **[Examples](./examples/index.md)**

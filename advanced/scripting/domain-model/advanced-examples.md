@@ -47,6 +47,17 @@ Object initializers make scripts more concise and easier to read, especially whe
 
 In advanced scenarios, you may need to retrieve entities based on multiple criteria, ranges, references to other entities, or special options.
 
+### Filter by multiple data attributes
+
+Retrieve all customers who are active and have a specific customer type.
+
+```js
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: true,
+    customerType: { equals: customerType }
+});
+```
+
 ### Shorthand equals syntax
 
 ou can use the shorthand filtering syntax when you want to match by `equals`, without writing it explicitly.
@@ -66,17 +77,6 @@ var customers = Domain.Crm.Sales.CustomersRepository.query({
 var customers = Domain.Crm.Sales.CustomersRepository.query({
     active: true,
     customerType: customerType
-});
-```
-
-### Filter by multiple property Values
-
-Retrieve all customers who are active and have a specific customer type.
-
-```js
-var customers = Domain.Crm.Sales.CustomersRepository.query({
-    active: true,
-    customerType: { equals: customerType }
 });
 ```
 
@@ -111,9 +111,9 @@ var customers = Domain.Crm.Sales.CustomersRepository.query({
 });
 ```
 
-This example will return all customer entities where the party property references the `person1` object.
+This example returns all customer entities whose party reference points to the `person1` object.
 
-You can also use reference filters with other related properties, such as retrieving all sales orders for a particular customer:
+You can also use reference filters with other related data attributes, such as retrieving all sales orders for a particular customer:
 
 ```js
 // Assume 'customer' is a Customer entity.
@@ -124,9 +124,9 @@ var salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
 
 ### Include or exclude `null` values
 
-You can include or exclude entities where a specific property is not set (i.e., is `null`).
+You can include or exclude entities where a specific data attribute is not set (i.e., is `null`).
 
-This is helpful when you want to combine results for both a particular value and records where the property is not set.
+This is helpful when you want to combine results for both a particular value and records where the data attribute is not set.
 
 ```js
 // Find customers where 'number' is '0' or is not set (null).
@@ -138,7 +138,7 @@ var customers = Domain.Crm.Sales.CustomersRepository.query({
 });
 ```
 
-This query returns all customers whose number is `'0'`, as well as customers where the number property is not set at all.
+This query returns all customers whose number is `'0'`, as well as customers where the number data attribute is not set at all.
 
 ### Limit the number of results returned
 
@@ -174,6 +174,31 @@ When performing queries with the `query()` method, the following comparison oper
 | `contains`           | Contains substring                           | `description: { contains: "premium" }` |
 | `startswith`         | Starts with substring                        | `email: { startswith: "support@" }`    |
 | `endswith`           | Ends with substring                          | `filename: { endswith: ".pdf" }`       |
+
+### Query by a list of values (`in`)
+
+Retrieve entities whose field matches any value in a given list.
+
+```js
+var customers = Domain.Crm.Sales.CustomersRepository.query(
+	{
+		number: { in: ["12321", "000345"] }
+	});
+```
+
+### Pattern matching with wildcards (`like`)
+
+Use SQL-style % wildcard to find values that match a string pattern.
+
+```js
+var customers = Domain.Crm.Sales.CustomersRepository.query(
+	{
+		number: { like: '%432%' }
+	});
+""",
+```
+
+Use like when you need flexible text searches that aren't covered by `contains`, `startswith`, or `endswith`.
 
 ### Combined advanced query example
 
@@ -220,7 +245,7 @@ In many cases, you don't need to provide an exact type when assigning values or 
 
 ### Dates
 
-When working with date properties, you can provide values as JavaScript Date objects, or as ISO date strings (e.g., "2025-07-01"):
+When working with date data attributes, you can provide values as JavaScript Date objects, or as ISO date strings (e.g., "2025-07-01"):
 
 ```js
 // Both examples are valid for date filtering:
@@ -235,7 +260,7 @@ var customers2 = Domain.Crm.Sales.CustomersRepository.query({
 
 ### Multilanguage strings
 
-For properties that expect a `MultilanguageString`, you can assign a plain string.
+For data attributes that expect a `MultilanguageString`, you can assign a plain string.
 
 The system will automatically create a multilanguage value using the current language.
 

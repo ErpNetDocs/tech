@@ -1,6 +1,6 @@
 # Domain Model
 
-Scripts in @@name can directly interact with the @@name [Domain Model](https://docs.erp.net/model/entities/index.html), providing access to all entities and their properties.
+Scripts in @@name can directly interact with the @@name [Domain Model](https://docs.erp.net/model/entities/index.html), providing access to all entities and their attributes.
 
 This allows you to read, create, update, and delete data as part of your custom logic.
 
@@ -12,7 +12,7 @@ With direct @@name Domain Model access, scripts can:
 
 - Create and initialize new entities.
 
-- Update properties of entities.
+- Update attributes of entities.
 
 - Delete entities when necessary.
 

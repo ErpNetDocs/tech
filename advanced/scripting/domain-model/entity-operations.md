@@ -6,7 +6,7 @@ The examples below demonstrate typical usage patterns.
 
 > [!NOTE]
 > 
-> For details on how to access all available entities, and their properties, refer to the [Domain Model documentation](https://docs.erp.net/model/entities/index.html).
+> For details on how to access all available entities, and their attributes, refer to the [Domain Model documentation](https://docs.erp.net/model/entities/index.html).
 > This resource provides the exact paths and structure you need when working with different parts of the model in your scripts.
 
 > [!NOTE]
@@ -20,10 +20,10 @@ You can access the entity that triggered the script using the `subject` variable
 
 E.g., in a user business rule attached to the [Customers repository](https://docs.erp.net/model/entities/Crm.Sales.Customers.html), the `subject` variable will refer to the specific customer entity being processed when the script runs.
 
-You can use `subject` to read or modify its properties directly.
+You can use `subject` to read or modify its attributes directly.
 
 ```js
-// The subject is a customer. We can change some of its properties.
+// The subject is a customer. We can change some of its data attributes.
 // Activate the current customer and set a new number
 subject.Active = false;
 subject.Number = 'CUST-002';
@@ -61,7 +61,7 @@ var activeCustomers = Domain.Crm.Sales.CustomersRepository.query({
 })
 ```
 
-This will retrieve all customers where the `active` property is set to `true`.
+This will retrieve all customers where the `active` data attribute is set to `true`.
 
 --
 
@@ -80,7 +80,7 @@ var todaysSalesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
 
 ### Creating a new entity
 
-Entities can be created using the appropriate repository's `createNew()` method. This will instantiate a new entity object that you can initialize with the required property values before saving or using it in your logic.
+Entities can be created using the appropriate repository's `createNew()` method. This will instantiate a new entity object that you can initialize with the required data attribute values before saving or using it in your logic.
 
 For example, to create a new customer:
 
@@ -93,7 +93,7 @@ customer.Active = true;
 
 > [!NOTE]
 >
-> Make sure to set all required properties and observe any business rules or validation logic relevant to the entity you are creating.
+> Make sure to set all required attributes and observe any business rules or validation logic relevant to the entity you are creating.
 
 You can also create and assign related entities (such as customer types, parties) immediately after creation:
 
@@ -115,7 +115,7 @@ This approach is especially useful when building documents or records that requi
 
 ### Creating multiple entities in a loop
 
-You can create multiple entities by using a loop and setting their properties individually.
+You can create multiple entities by using a loop and setting their attributes individually.
 This approach is useful when you need to generate a series of related records, such as sales order lines or batch entries.
 
 ```js
@@ -135,19 +135,19 @@ for (let i = 0; i < 10; i++) {
     salesOrderLine.SalesOrder = salesOrder;
     salesOrderLine.LineNo = (i + 1) * 10;
     salesOrderLine.Product = Domain.General.Products.ProductsRepository.createNew();
-    salesOrderLine.Quantity = new Domain.Quantity(10, null);
+    salesOrderLine.Quantity = new Domain.Types.Quantity(10, null);
 }
 ```
 
-This technique gives you more control over property assignment and is especially helpful for more complex initialization or conditional logic.
+This technique gives you more control over attribute assignment and is especially helpful for more complex initialization or conditional logic.
 
 ## Update
 
-Entities can be updated by setting their properties to new values.
+Entities can be updated by setting their attributes to new values.
 
-If you have a reference to an entity- whether retrieved via `query()`, `getById()`, or from the `subject` variable- you can modify its properties directly in your script.
+If you have a reference to an entity- whether retrieved via `query()`, `getById()`, or from the `subject` variable- you can modify its attributes directly in your script.
 
-### Updating properties
+### Updating data attributes
 
 Here's how to update fields of an existing entity:
 
@@ -160,7 +160,7 @@ subject.Number = "CUST-999";
 If you need to update an entity obtained from a repository:
 
 ```js
-// Get a specific customer and update its properties
+// Get a specific customer and update its data attributes
 var customer = Domain.Crm.Sales.CustomersRepository.getById("12345678-90ab-cdef-1234-567890abcdef");
 if (customer) {
     customer.Active = true;
@@ -177,7 +177,7 @@ You can update multiple entities in a loop:
 var today = new Date();
 
 var expiredCustomers = Domain.Crm.Sales.CustomersRepository.query({
-    thruDate: { lessthan: today }
+    thruDate: { lessthanorequal: today }
 });
 
 for (let i = 0; i < expiredCustomers.length; i++) {
@@ -185,7 +185,7 @@ for (let i = 0; i < expiredCustomers.length; i++) {
 }
 ```
 
-This script finds all customers with a [ThruDate](https://docs.erp.net/model/entities/Crm.Sales.Customers.html#thrudate) earlier than today and sets their [Active](https://docs.erp.net/model/entities/Crm.Sales.Customers.html#active) property to false.
+This script finds all customers with a [ThruDate](https://docs.erp.net/model/entities/Crm.Sales.Customers.html#thrudate) earlier than today and sets their [Active](https://docs.erp.net/model/entities/Crm.Sales.Customers.html#active) data attribute to false.
 
 ## Delete
 

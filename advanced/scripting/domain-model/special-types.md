@@ -2,6 +2,8 @@
 
 The @@name Domain Model provides a set of advanced types designed to address complex business requirements, including custom properties, multilingual data, precise amounts, and quantities.
 
+All special types are defined in the `Domain.Types` namespace.
+
 This section describes how to work with these types in your scripts.
 
 ## Custom properties
@@ -26,7 +28,7 @@ subject.CustomProperties['C1'] = 'New custom value';
 
 ```js
 // Create a multilingual string with values for different languages
-var str = new Domain.MultilanguageString({
+var str = new Domain.Types.MultilanguageString({
     en: 'Hello',
     bg: 'Здрасти',
     fr: 'Bonjour'
@@ -60,8 +62,8 @@ The `Amount` type allows for accurate calculations with currency values.
 ```js
 // Create an amount and perform arithmetic operations
 // Example: EUR must be a valid currency object, e.g., retrieved from the subject, a repository or related entity.
-var amount = new Domain.Amount(10, EUR);
-var total = Domain.Amount.Multiply(amount, 5); // Result: 50 EUR
+var amount = new Domain.Types.Amount(10, EUR);
+var total = Domain.Types.Amount.Multiply(amount, 5); // Result: 50 EUR
 ```
 
 ## Quantity
@@ -71,7 +73,7 @@ var total = Domain.Amount.Multiply(amount, 5); // Result: 50 EUR
 ```js
 // Create quantities and calculate ratios
 // Example: Pcs must be a valid unit object, e.g., retrieved from the subject, a repository or related entity.
-var quantity1 = new Domain.Quantity(10, Pcs);
-var quantity2 = new Domain.Quantity(5, Pcs);
-var ratio = Domain.Quantity.Divide(quantity1, quantity2); // Result: 2
+var quantity1 = new Domain.Types.Quantity(10, Pcs);
+var quantity2 = new Domain.Types.Quantity(5, Pcs);
+var ratio = Domain.Types.Quantity.Divide(quantity1, quantity2); // Result: 2
 ```
