@@ -62,3 +62,31 @@ The ![Finish](pictures/move-finish.png)  button means that the counting is compl
 If all the steps are performed correctly, a message will appear confirming that the operation was successful:
 
 ![Success](pictures/move-successful.png)
+
+## Auto-accepting non-counted products
+During reconciliation, the context menu includes an option called Accept Non Counted.
+
+When selected, the system automatically accepts all products at the current location that have not been physically counted, treating them as counted with their expected quantities.
+
+#### What happens when the button is pressed:
+All uncounted products (displayed in black) are automatically marked as counted with zero difference. They will immediately turn green in the list, as if counted and matching the expected quantity.
+
+In the Review screen, these products will not appear, since only products with differences are shown.
+
+When clicking Finish, a Warehouse Transaction is created for each of these products:
+
+- TaskType = Count
+- Direction = IN
+- Quantity = 0
+- IsAutoAccepted = True
+
+The IsAutoAccepted field is a boolean indicator in the Warehouse Transactions, showing that the product was accepted without being physically counted.
+
+If any of the automatically accepted products are later edited (e.g. counted manually or deleted with the bin icon), the system considers them as manually counted instead. In this case:
+
+The IsAutoAccepted value is set to False
+
+The previously accepted quantity is reset to zero, to avoid duplication. The product must then be counted again from scratch.
+
+This feature is designed to speed up the reconciliation process and to provide a clear distinction between physically verified quantities and those accepted based on system expectations.
+It also serves as a control mechanism for the reconciliation process and the employees performing the inventory.
