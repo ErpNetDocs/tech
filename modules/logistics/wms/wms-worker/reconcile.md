@@ -38,31 +38,6 @@ After clicking the Next button, the corresponding row in the table will be color
 
 If the Counted data needs to be deleted, this can be done by clicking on the Recycle bin icon on the right.
 
-## Review and Total Difference
-
-When the counting is complete, you can see a Review of all rows in the table with their matches and differences. If there are rows in which no counted information is entered, they will be displayed with negative values of the expected quantity.
-This means that these products may have been available, but since they were not reported, they are recorded as missing.
-
-Review shows the results of the counting and in that sense - the Reconcile of the whole location.
-
-Total difference shows the reported differences at this Location.
- 
-![Summary](pictures/reconcile-summary.png)
-
-## Auto-accepting non-counted products
-
-If you click the Accept Non Counted button during reconciliation, all products at the current location that were not counted will be automatically accepted as correct with their expected quantities.
-
-This action will also set the IsAutoAccepted flag in the corresponding WarehouseTransactions, marking that the uncounted differences were accepted for this location.
-
-## Finish and Save
-
-The ![Finish](pictures/move-finish.png)  button means that the counting is complete, and you are ready to save the data to the system. 
-
-If all the steps are performed correctly, a message will appear confirming that the operation was successful:
-
-![Success](pictures/move-successful.png)
-
 ## Auto-accepting non-counted products
 During reconciliation, the context menu includes an option called Accept Non Counted.
 
@@ -90,3 +65,23 @@ The previously accepted quantity is reset to zero, to avoid duplication. The pro
 
 This feature is designed to speed up the reconciliation process and to provide a clear distinction between physically verified quantities and those accepted based on system expectations.
 It also serves as a control mechanism for the reconciliation process and the employees performing the inventory.
+
+## Review and Total Difference
+
+When the counting is complete, you can see a Review of all rows in the table with their matches and differences. If there are rows in which no counted information is entered, they will be displayed with negative values of the expected quantity.
+This means that these products may have been available, but since they were not reported, they are recorded as missing.
+
+Review shows the results of the counting and in that sense - the Reconcile of the whole location.
+
+Total difference shows the reported differences at this Location.
+
+![Summary](pictures/reconcile-summary.png)
+
+## Finish and Save
+
+The ![Finish](pictures/move-finish.png)  button means that the counting is complete, and you are ready to save the data to the system. 
+
+If all the steps are performed correctly, a message will appear confirming that the operation was successful:
+
+![Success](pictures/move-successful.png)
+
