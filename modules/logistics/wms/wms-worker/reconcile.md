@@ -66,6 +66,8 @@ The previously accepted quantity is reset to zero, to avoid duplication. The pro
 This feature is designed to speed up the reconciliation process and to provide a clear distinction between physically verified quantities and those accepted based on system expectations.
 It also serves as a control mechanism for the reconciliation process and the employees performing the inventory.
 
+![AcceptNonCounted](pictures/accept-non-counted.png)
+
 ## Review and Total Difference
 
 When the counting is complete, you can see a Review of all rows in the table with their matches and differences. If there are rows in which no counted information is entered, they will be displayed with negative values of the expected quantity.
