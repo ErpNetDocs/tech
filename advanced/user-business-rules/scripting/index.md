@@ -30,7 +30,7 @@ With scripting, the same business requirement can be enforced much more simply a
 - **Script Language:** JavaScript
 - **Script Text:**
 ```js
-if (subject.Quantity && subject.Quantity.Value % 1 !== 0) {
+if (subject.Quantity != null && subject.Quantity.Value % 1 !== 0) {
     Action.cancel("You have entered a decimal number as a quantity. Please, check the data entered in the sales order lines and try again!");
 }
 ```

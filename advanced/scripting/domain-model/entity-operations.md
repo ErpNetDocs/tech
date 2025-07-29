@@ -41,11 +41,11 @@ Use the repository's `getById()` method to retrieve a single entity by its uniqu
 // Example: Get a customer by ID
 var customerId = "12345678-90ab-cdef-1234-567890abcdef";
 var customer = Domain.Crm.Sales.CustomersRepository.getById(customerId);
-if (customer) {
+if (customer != null) {
   // Do something with the customer entity.
 }
-```
 
+j```
 > [!NOTE]
 >
 > Always check if the result is `null` to handle cases where the entity is not found.
@@ -162,7 +162,7 @@ If you need to update an entity obtained from a repository:
 ```js
 // Get a specific customer and update its data attributes
 var customer = Domain.Crm.Sales.CustomersRepository.getById("12345678-90ab-cdef-1234-567890abcdef");
-if (customer) {
+if (customer != null) {
     customer.Active = true;
     customer.Number = "CUST-1000";
 }
@@ -198,7 +198,7 @@ Call the `Delete()` method on an entity object to remove it:
 ```js
 // Example: Delete a customer
 var customer = Domain.Crm.Sales.CustomersRepository.getById("12345678-90ab-cdef-1234-567890abcdef");
-if (customer) {
+if (customer != null) {
     customer.Delete();
 }
 ```
@@ -210,7 +210,7 @@ Some collections (e.g., document lines) support the `DeleteAll()` method, which 
 ```js
 // Example: Delete all lines from a sales order
 var salesOrder = subject;
-if (salesOrder.Lines) {
+if (salesOrder.Lines.Count > 0) {
     salesOrder.Lines.DeleteAll();
 }
 ```
