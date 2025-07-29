@@ -91,7 +91,7 @@
 <p>The examples below demonstrate typical usage patterns.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>For details on how to access all available entities, and their properties, refer to the <a href="https://docs.erp.net/model/entities/index.html">Domain Model documentation</a>.
+<p>For details on how to access all available entities, and their attributes, refer to the <a href="https://docs.erp.net/model/entities/index.html">Domain Model documentation</a>.
 This resource provides the exact paths and structure you need when working with different parts of the model in your scripts.</p>
 </div>
 <div class="NOTE">
@@ -102,8 +102,8 @@ The script itself <strong>does not</strong> control the transaction; committing 
 <h2 id="accessing-the-current-entity-aka-subject">Accessing the current entity (a.k.a <code>subject</code>)</h2>
 <p>You can access the entity that triggered the script using the <code>subject</code> variable. This variable is automatically provided in the script's context and refers to the object that caused the script to execute.</p>
 <p>E.g., in a user business rule attached to the <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html">Customers repository</a>, the <code>subject</code> variable will refer to the specific customer entity being processed when the script runs.</p>
-<p>You can use <code>subject</code> to read or modify its properties directly.</p>
-<pre><code class="lang-js">// The subject is a customer. We can change some of its properties.
+<p>You can use <code>subject</code> to read or modify its attributes directly.</p>
+<pre><code class="lang-js">// The subject is a customer. We can change some of its data attributes.
 // Activate the current customer and set a new number
 subject.Active = false;
 subject.Number = 'CUST-002';
@@ -115,22 +115,26 @@ subject.Number = 'CUST-002';
 <pre><code class="lang-js">// Example: Get a customer by ID
 var customerId = &quot;12345678-90ab-cdef-1234-567890abcdef&quot;;
 var customer = Domain.Crm.Sales.CustomersRepository.getById(customerId);
-if (customer) {
+if (customer != null) {
   // Do something with the customer entity.
 }
-</code></pre>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Always check if the result is <code>null</code> to handle cases where the entity is not found.</p>
-</div>
-<h3 id="query">Query</h3>
-<p>Use the repository's <code>query()</code> method to search for and retrieve collections of entities matching specific criteria.</p>
-<pre><code class="lang-js">// Example: Get all active customers
+
+j```
+&gt; [!NOTE]
+&gt;
+&gt; Always check if the result is `null` to handle cases where the entity is not found.
+
+### Query
+
+Use the repository's `query()` method to search for and retrieve collections of entities matching specific criteria.
+
+```js
+// Example: Get all active customers
 var activeCustomers = Domain.Crm.Sales.CustomersRepository.query({
     active: { equals: true }
 })
 </code></pre>
-<p>This will retrieve all customers where the <code>active</code> property is set to <code>true</code>.</p>
+<p>This will retrieve all customers where the <code>active</code> data attribute is set to <code>true</code>.</p>
 <p>--</p>
 <p>This script is triggered from a business rule attached to the Customers repository. It retrieves all sales orders for the current <a href="https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#customer">customer</a> (<code>subject</code>) where the order date (<a href="https://docs.erp.net/model/entities/Crm.Sales.SalesOrders.html#documentdate">documentDate</a>) is today.</p>
 <pre><code class="lang-js">// Example: Get all sales orders from today for the current customer
@@ -142,7 +146,7 @@ var todaysSalesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
 </code></pre>
 <h2 id="create">Create</h2>
 <h3 id="creating-a-new-entity">Creating a new entity</h3>
-<p>Entities can be created using the appropriate repository's <code>createNew()</code> method. This will instantiate a new entity object that you can initialize with the required property values before saving or using it in your logic.</p>
+<p>Entities can be created using the appropriate repository's <code>createNew()</code> method. This will instantiate a new entity object that you can initialize with the required data attribute values before saving or using it in your logic.</p>
 <p>For example, to create a new customer:</p>
 <pre><code class="lang-js">// Create a new customer
 var customer = Domain.Crm.Sales.CustomersRepository.createNew();
@@ -151,7 +155,7 @@ customer.Active = true;
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Make sure to set all required properties and observe any business rules or validation logic relevant to the entity you are creating.</p>
+<p>Make sure to set all required attributes and observe any business rules or validation logic relevant to the entity you are creating.</p>
 </div>
 <p>You can also create and assign related entities (such as customer types, parties) immediately after creation:</p>
 <pre><code class="lang-js">// Create a new customer and assign a new customer type and a new party.
@@ -168,7 +172,7 @@ customer.Party = myCustomerPerson;
 </code></pre>
 <p>This approach is especially useful when building documents or records that require multiple related entities to be created together.</p>
 <h3 id="creating-multiple-entities-in-a-loop">Creating multiple entities in a loop</h3>
-<p>You can create multiple entities by using a loop and setting their properties individually.
+<p>You can create multiple entities by using a loop and setting their attributes individually.
 This approach is useful when you need to generate a series of related records, such as sales order lines or batch entries.</p>
 <pre><code class="lang-js">// Create a sales order.
 var salesOrder = Domain.Crm.Sales.SalesOrdersRepository.createNew();
@@ -186,23 +190,23 @@ for (let i = 0; i &lt; 10; i++) {
     salesOrderLine.SalesOrder = salesOrder;
     salesOrderLine.LineNo = (i + 1) * 10;
     salesOrderLine.Product = Domain.General.Products.ProductsRepository.createNew();
-    salesOrderLine.Quantity = new Domain.Quantity(10, null);
+    salesOrderLine.Quantity = new Domain.Types.Quantity(10, null);
 }
 </code></pre>
-<p>This technique gives you more control over property assignment and is especially helpful for more complex initialization or conditional logic.</p>
+<p>This technique gives you more control over attribute assignment and is especially helpful for more complex initialization or conditional logic.</p>
 <h2 id="update">Update</h2>
-<p>Entities can be updated by setting their properties to new values.</p>
-<p>If you have a reference to an entity- whether retrieved via <code>query()</code>, <code>getById()</code>, or from the <code>subject</code> variable- you can modify its properties directly in your script.</p>
-<h3 id="updating-properties">Updating properties</h3>
+<p>Entities can be updated by setting their attributes to new values.</p>
+<p>If you have a reference to an entity- whether retrieved via <code>query()</code>, <code>getById()</code>, or from the <code>subject</code> variable- you can modify its attributes directly in your script.</p>
+<h3 id="updating-data-attributes">Updating data attributes</h3>
 <p>Here's how to update fields of an existing entity:</p>
 <pre><code class="lang-js">// Example: Update a customer's status and number
 subject.Active = false;
 subject.Number = &quot;CUST-999&quot;;
 </code></pre>
 <p>If you need to update an entity obtained from a repository:</p>
-<pre><code class="lang-js">// Get a specific customer and update its properties
+<pre><code class="lang-js">// Get a specific customer and update its data attributes
 var customer = Domain.Crm.Sales.CustomersRepository.getById(&quot;12345678-90ab-cdef-1234-567890abcdef&quot;);
-if (customer) {
+if (customer != null) {
     customer.Active = true;
     customer.Number = &quot;CUST-1000&quot;;
 }
@@ -213,21 +217,21 @@ if (customer) {
 var today = new Date();
 
 var expiredCustomers = Domain.Crm.Sales.CustomersRepository.query({
-    thruDate: { lessthan: today }
+    thruDate: { lessthanorequal: today }
 });
 
 for (let i = 0; i &lt; expiredCustomers.length; i++) {
     expiredCustomers[i].Active = false;
 }
 </code></pre>
-<p>This script finds all customers with a <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#thrudate">ThruDate</a> earlier than today and sets their <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#active">Active</a> property to false.</p>
+<p>This script finds all customers with a <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#thrudate">ThruDate</a> earlier than today and sets their <a href="https://docs.erp.net/model/entities/Crm.Sales.Customers.html#active">Active</a> data attribute to false.</p>
 <h2 id="delete">Delete</h2>
 <p>Entities can be deleted in scripts using the <code>Delete()</code> method. This removes the entity from the system. You can delete individual entities or all items in a collection.</p>
 <h3 id="deleting-a-single-entity">Deleting a single entity</h3>
 <p>Call the <code>Delete()</code> method on an entity object to remove it:</p>
 <pre><code class="lang-js">// Example: Delete a customer
 var customer = Domain.Crm.Sales.CustomersRepository.getById(&quot;12345678-90ab-cdef-1234-567890abcdef&quot;);
-if (customer) {
+if (customer != null) {
     customer.Delete();
 }
 </code></pre>
@@ -235,7 +239,7 @@ if (customer) {
 <p>Some collections (e.g., document lines) support the <code>DeleteAll()</code> method, which deletes every entity in the collection:</p>
 <pre><code class="lang-js">// Example: Delete all lines from a sales order
 var salesOrder = subject;
-if (salesOrder.Lines) {
+if (salesOrder.Lines.Count &gt; 0) {
     salesOrder.Lines.DeleteAll();
 }
 </code></pre>

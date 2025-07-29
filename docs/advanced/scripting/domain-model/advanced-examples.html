@@ -122,6 +122,13 @@ var customer = Domain.Crm.Sales.CustomersRepository.createNew({
 <p>Object initializers make scripts more concise and easier to read, especially when working with complex or nested entities.</p>
 <h2 id="advanced-queries-and-filtering">Advanced queries and filtering</h2>
 <p>In advanced scenarios, you may need to retrieve entities based on multiple criteria, ranges, references to other entities, or special options.</p>
+<h3 id="filter-by-multiple-data-attributes">Filter by multiple data attributes</h3>
+<p>Retrieve all customers who are active and have a specific customer type.</p>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
+    active: true,
+    customerType: { equals: customerType }
+});
+</code></pre>
 <h3 id="shorthand-equals-syntax">Shorthand equals syntax</h3>
 <p>ou can use the shorthand filtering syntax when you want to match by <code>equals</code>, without writing it explicitly.</p>
 <ul>
@@ -138,13 +145,6 @@ var customer = Domain.Crm.Sales.CustomersRepository.createNew({
 <pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
     active: true,
     customerType: customerType
-});
-</code></pre>
-<h3 id="filter-by-multiple-property-values">Filter by multiple property Values</h3>
-<p>Retrieve all customers who are active and have a specific customer type.</p>
-<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query({
-    active: true,
-    customerType: { equals: customerType }
 });
 </code></pre>
 <h3 id="search-within-date-or-number-ranges">Search within date or number ranges</h3>
@@ -169,16 +169,16 @@ var customers = Domain.Crm.Sales.CustomersRepository.query({
     party: { equals: person1 }
 });
 </code></pre>
-<p>This example will return all customer entities where the party property references the <code>person1</code> object.</p>
-<p>You can also use reference filters with other related properties, such as retrieving all sales orders for a particular customer:</p>
+<p>This example returns all customer entities whose party reference points to the <code>person1</code> object.</p>
+<p>You can also use reference filters with other related data attributes, such as retrieving all sales orders for a particular customer:</p>
 <pre><code class="lang-js">// Assume 'customer' is a Customer entity.
 var salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
     customer: { equals: customer }
 });
 </code></pre>
 <h3 id="include-or-exclude-null-values">Include or exclude <code>null</code> values</h3>
-<p>You can include or exclude entities where a specific property is not set (i.e., is <code>null</code>).</p>
-<p>This is helpful when you want to combine results for both a particular value and records where the property is not set.</p>
+<p>You can include or exclude entities where a specific data attribute is not set (i.e., is <code>null</code>).</p>
+<p>This is helpful when you want to combine results for both a particular value and records where the data attribute is not set.</p>
 <pre><code class="lang-js">// Find customers where 'number' is '0' or is not set (null).
 var customers = Domain.Crm.Sales.CustomersRepository.query({
     number: [
@@ -187,7 +187,7 @@ var customers = Domain.Crm.Sales.CustomersRepository.query({
   ]
 });
 </code></pre>
-<p>This query returns all customers whose number is <code>'0'</code>, as well as customers where the number property is not set at all.</p>
+<p>This query returns all customers whose number is <code>'0'</code>, as well as customers where the number data attribute is not set at all.</p>
 <h3 id="limit-the-number-of-results-returned">Limit the number of results returned</h3>
 <p>You can control how many entities are returned from a query by using the <code>fetch</code> option.</p>
 <p>This is especially useful for paging or performance optimization.</p>
@@ -255,6 +255,22 @@ var customers = Domain.Crm.Sales.CustomersRepository.query(
 </tr>
 </tbody>
 </table>
+<h3 id="query-by-a-list-of-values-in">Query by a list of values (<code>in</code>)</h3>
+<p>Retrieve entities whose field matches any value in a given list.</p>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query(
+	{
+		number: { in: [&quot;12321&quot;, &quot;000345&quot;] }
+	});
+</code></pre>
+<h3 id="pattern-matching-with-wildcards-like">Pattern matching with wildcards (<code>like</code>)</h3>
+<p>Use SQL-style % wildcard to find values that match a string pattern.</p>
+<pre><code class="lang-js">var customers = Domain.Crm.Sales.CustomersRepository.query(
+	{
+		number: { like: '%432%' }
+	});
+&quot;&quot;&quot;,
+</code></pre>
+<p>Use like when you need flexible text searches that aren't covered by <code>contains</code>, <code>startswith</code>, or <code>endswith</code>.</p>
 <h3 id="combined-advanced-query-example">Combined advanced query example</h3>
 <p>This example retrieves up to 10 active customers who:</p>
 <ul>
@@ -295,7 +311,7 @@ var customers = Domain.Crm.Sales.CustomersRepository.query(
 <h2 id="flexible-type-matching-in-queries-and-assignments">Flexible type matching in queries and assignments</h2>
 <p>In many cases, you don't need to provide an exact type when assigning values or building query filters - ERP.net will automatically handle certain conversions for you.</p>
 <h3 id="dates">Dates</h3>
-<p>When working with date properties, you can provide values as JavaScript Date objects, or as ISO date strings (e.g., &quot;2025-07-01&quot;):</p>
+<p>When working with date data attributes, you can provide values as JavaScript Date objects, or as ISO date strings (e.g., &quot;2025-07-01&quot;):</p>
 <pre><code class="lang-js">// Both examples are valid for date filtering:
 var customers1 = Domain.Crm.Sales.CustomersRepository.query({
     fromDate: { equals: new Date(2025, 6, 1) }
@@ -306,7 +322,7 @@ var customers2 = Domain.Crm.Sales.CustomersRepository.query({
 });
 </code></pre>
 <h3 id="multilanguage-strings">Multilanguage strings</h3>
-<p>For properties that expect a <code>MultilanguageString</code>, you can assign a plain string.</p>
+<p>For data attributes that expect a <code>MultilanguageString</code>, you can assign a plain string.</p>
 <p>The system will automatically create a multilanguage value using the current language.</p>
 <pre><code class="lang-js">// Assign a plain string; it will be set as a multilanguage value in the user's current culture.
 person.FirstName = &quot;John&quot;;

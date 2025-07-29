@@ -112,7 +112,6 @@ Action.log(&quot;Processing customer: &quot; + subject.Number);
 <h2 id="context-can-vary">Context can vary</h2>
 <p>The execution context depends on where and how the script is triggered.
 E.g., the type of the <code>subject</code> variable will change based on the business rule's entry point and the repository to which it is attached. If a rule is attached to the Customers repository, subject will be a Customer entity; if attached to another repository, <code>subject</code> will represent an instance of that entity type.</p>
-<p>In some cases, the <code>subject</code> variable may be null (e.g., if the script is not triggered by a specific entity). It is a good practice to check whether <code>subject</code> is available before using it in your script.</p>
 <p>Always refer to the documentation for your specific script entry point to understand exactly which context variables and objects will be available during execution.</p>
 
 </article>

@@ -114,7 +114,7 @@ Write your script directly in the business rule's <code>ScriptText</code> attrib
 <li><strong>Script Language:</strong> JavaScript</li>
 <li><strong>Script Text:</strong></li>
 </ul>
-<pre><code class="lang-js">if (subject.Quantity &amp;&amp; subject.Quantity.Value % 1 !== 0) {
+<pre><code class="lang-js">if (subject.Quantity != null &amp;&amp; subject.Quantity.Value % 1 !== 0) {
     Action.cancel(&quot;You have entered a decimal number as a quantity. Please, check the data entered in the sales order lines and try again!&quot;);
 }
 </code></pre>
