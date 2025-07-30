@@ -17,7 +17,7 @@ You can find the following information about each due payment in the table:
 
 ### Expanded view
 
-With the Client Center's built-in **[Column Chooser](./grid-control.md#column-chooser)**, you can reveal more information about the payments in the table.
+With the Client Center's built-in **[Column Chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser)**, you can reveal more information about the payments in the table.
 
 Simply click on the respective column's box to add it.
 
