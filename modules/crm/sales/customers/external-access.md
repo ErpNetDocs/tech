@@ -2,7 +2,7 @@
 
 The **External Access** table is responsible for granting external and internal users access to specific customer data.
 
-In the case of the **[Client Center](/modules/crm/clientcenter/index.md)**, it allows customers' individual users to see exactly what they need once they log into the platform. 
+In the case of the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**, it allows customers' individual users to see exactly what they need once they log into the platform. 
 
 ![pictures](pictures/customers_external_access.png)
 
@@ -34,9 +34,9 @@ Each subsequent role in the list below also includes the rights granted by the p
 
 ## Grant access
 
-To give external access to a user, you need to insert them as a new entry into the table and fill out the respective fields.
+To give external access to a user, you need to insert them as a new entry into the table and fill out the respective fields. The user must already be registered and prepared for the Client Center. 
 
-The user must already be registered and prepared for the Client Center. You can learn more about this setup process **[here](/modules/crm/clientcenter/how-to/setup-a-new-user-account.md)**.
+You can learn more about this setup process **[here](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account.html)**.
 
 ![pictures](pictures/grant_new_access.png)
 
