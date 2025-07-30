@@ -1,6 +1,6 @@
 # Client Center
 
-The Client Center allows Erp.Net clients to assist their **[customers](/modules/crm/sales/customers/index.md)** by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders. 
+The Client Center allows Erp.Net clients to assist their **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders. 
 
 You can **[build and host](how-to/define-a-new-cc.md)** a CC instance from your global website environment, and access it using a custom relative url.
 
@@ -45,7 +45,7 @@ This section keeps a log of billing-related documents and allows for their close
 It is comprised of three pages:
 
 * **[Invoices](billing/invoices.md)**
-* **[DuePayments](billing/duepayments.md)**
+* **[DuePayments](billing/due-payments.md)**
 * **Payment History**
 
 ### User Management
