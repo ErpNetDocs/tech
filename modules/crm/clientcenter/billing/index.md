@@ -1,6 +1,6 @@
 # Billing
 
-The Billing section of the **Client Center** provides a centralized view of customer financial documents across three dedicated pages. It is accessible to users with the **[external role](/modules/crm/sales/customers/external-access.md#roles)** **L40 – Billing** and above.
+The Billing section of the **Client Center** provides a centralized view of customer financial documents across three dedicated pages. It is accessible to users with the **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L40 – Billing** and above.
 
 - **[Invoices](invoices.md)**: Displays all customer invoices, including key details such as document number, amount, and creation date, also offering a download capability. 
 
