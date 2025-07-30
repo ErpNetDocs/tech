@@ -1,8 +1,8 @@
 # User Management 
 
-The User Management page is an administrative hub for a customers' users in the **Client Center**. It is an alternative to the **[standard way of setting up external customer access](/modules/crm/sales/customers/external-access.md)** and allows customers' individual users to see exactly what they need once they log into the platform.
+The User Management page is an administrative hub for a customers' users in the **Client Center**. It is an alternative to the **[standard way of setting up external customer access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)** and allows customers' individual users to see exactly what they need once they log into the platform.
 
-The page is visible to all Client Center users with **[external access role](/modules/crm/sales/customers/external-access.md#roles)** **L80 - Admin** and above.
+The page is visible to all Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
 
 ![pictures](pictures/user_management_page.png)
 
