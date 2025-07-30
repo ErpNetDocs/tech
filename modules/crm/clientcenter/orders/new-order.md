@@ -16,7 +16,7 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All **[customer products](/modules/crm/sales/definitions/define-customers.md#customer-products)** will appear here. You can add them to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will automatically appear in the **Order** tab.
+2. **My Products** - All **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** will appear here. You can add them to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will automatically appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
@@ -30,7 +30,7 @@ New Order consists of two primary tabs, but it can be configured to include more
   
    It will display the products tied to this channel, and you can specify their quantities to add them to the order.
 
-   In the event where a custom channel is not set, the system automatically links the sales order to a **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)** with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
+   In the event where a custom channel is not set, the system automatically links the sales order to a **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
 
    ![pictures](pictures/channel_CC_tab.png)
 
@@ -46,13 +46,13 @@ New Order consists of two primary tabs, but it can be configured to include more
 
    ![pictures](pictures/added_product.png)
 
-   1.2.   From the **My Products** tab, click on the **Quantity** field of a **[customer product](/modules/crm/sales/definitions/define-customers.md#customer-products)** row and specify the exact quantity you need ordered. 
+   1.2.   From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered. 
 
    This will automatically add it in the **Order** tab with the respective information.
 
    ![pictures](pictures/quantity_myproducts.png)
 
-   1.3.   Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](/modules/crm/sales/definitions/define-customers.md#new-customer-details)**.
+   1.3.   Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details)**.
 
       The process to add them is identical to the **My Products** tab.
 
