@@ -4,12 +4,13 @@ uid: agile
 
 # Agile PM
 
-The **Agile Project Management** module in @@name enables organizations to manage projects in a flexible, iterative, and feedback-driven way — fully aligned with the principles of agile methodologies.
+The **Agile Project Management** (Agile PM) module in @@name enables organizations to manage projects in a flexible, iterative, and feedback-driven way — fully aligned with the principles of agile methodologies.
 
 Unlike traditional Waterfall models, Agile PM supports continuous delivery and adaptive planning, making it ideal for dynamic environments such as software development, marketing, finance, and internal process optimization.
 
-What sets **Agile PM** in @@name apart from general-purpose project management tools is its **native integration within the ERP ecosystem** — enabling unified user management, shared workflow logic with other ERP objects, and seamless access to business data such as users, clients, social groups, financials, and resource availability.  
-All activities are performed within a single, secure system, without the need to switch platforms or integrate third-party tools — ensuring consistent governance, traceability, and compliance across the entire organization.
+What sets **Agile PM** in @@name apart from general-purpose project management tools is its **native integration with the ERP.net platform** — providing direct access to enterprise data, built-in collaboration via Social Groups, and consistent logic, UI, and controls shared across the entire ERP.net system.
+All activities are performed within a single, secure system, without the need to switch platforms or integrate third-party tools — ensuring consistent governance, traceability, and compliance across the organization.
+
 
 ## Core structures
 
