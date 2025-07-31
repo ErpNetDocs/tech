@@ -17392,6 +17392,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/advanced-features/pictures/time-entries.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/projects/agile/advanced-features/pictures/time-entry.png",
       "output": {
         "resource": {
