@@ -2,3 +2,4 @@
   href: index.md
 - name: Agile PM
   href: agile/toc.yml
+  topicHref: agile/index.md
