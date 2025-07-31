@@ -81,4 +81,4 @@ This helps managers to:
 
 This flexible reporting view supports informed decision-making, promotes transparency, and improves planning accuracy across Agile teams.
 
-`[screenshot]`
+![Time Entries](pictures/time-entries.png)
