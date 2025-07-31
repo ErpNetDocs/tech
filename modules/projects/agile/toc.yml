@@ -2,9 +2,13 @@
   href: index.md
 - name: Configuration and structure
   href: configuration-and-structure/toc.yml
+  topicHref: configuration-and-structure/index.html
 - name: Cases
   href: cases/toc.yml
+  topicHref: cases/index.html
 - name: Advanced features
   href: advanced-features/toc.yml
+  topicHref: advanced-features/index.html
 - name: Security
   href: security.md
+  
