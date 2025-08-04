@@ -131,6 +131,30 @@
 <p>If you need to scan <strong>multiple</strong> quantities of your product, you can provide a quantity into the Scan field.</p>
 <p>Once you tap on the product's code, you can enter <strong>all</strong> of the quantities at once.</p>
 <p><img src="pictures/Multiple_scanning_26_01.png" alt="Inventory Control"></p>
+<hr>
+<h2 id="uid-choose_unit">uid: choose_unit</h2>
+<h1 id="measurement-unit-of-the-order">Measurement unit of the order</h1>
+<p>The store order can be created using different measurement units for the &quot;Quantity Unit&quot; field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the &quot;Choose Measurement Unit&quot; menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.</p>
+<h2 id="how-it-works">How it works?</h2>
+<p>The menu is available for operations Receive and Issue.
+It offers a choice, known as the measurement unit used for order visualization.
+The settings are remembered per user and independently for the forementioned operations.</p>
+<p><img src="pictures/choosemenu1.png" alt="Menu"></p>
+<p>A user initiates a Receive operation for an Order. By default, the order lines are displayed in the ordered measurement units unless changed.
+In the example below, a Receive order includes three lines for products ordered in different measurement units.</p>
+<p><img src="pictures/choosemenu2.png" alt="Order"></p>
+<p>Product &quot;Grape Juice&quot; has a default measurement unit of &quot;Litre&quot; but is currently ordered in &quot;Carton box.&quot; The conversion is as follows: 1 Carton box = 6 Litres = 12 pcs (Base unit).</p>
+<p>When scanning 1 unit of &quot;Grape Juice&quot; (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).</p>
+<p><img src="pictures/choosemenu3.png" alt="Scan"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code, the system automatically identifies its default measurement unit and recalculates the quantity based on the selected visualization unit.</p>
+</div>
+<p>By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.</p>
+<p>During order execution, users can switch between measurement units for convenience.</p>
+<p>Upon order completion, the Store transaction is recorded in the originally ordered measurement units.</p>
+<p><img src="pictures/choosemenu4.png" alt="StoreTransaction"></p>
+<p>With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!</p>
 <h3 id="scan-a-gs1">Scan a GS1</h3>
 <p>Inventory Control also supports GS1 Barcodes and recognizes a number of GS1 application identifiers.</p>
 <p>GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.</p>
@@ -180,6 +204,56 @@ If there is no matching line – it throws an error message and stops the execut
 <h5>Note</h5>
 <p>The identifier (21) Serial Number is also recognized, but for now, it's just saved in the memory of the IC application.</p>
 </div>
+<h1 id="how-to-use-the-bin-in-inventory-control"><strong>How to Use the Bin in Inventory Control</strong></h1>
+<p>In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the <strong>Info</strong> panel:</p>
+<ul>
+<li>Delete-all Bin (Large Bin) and</li>
+<li>Delete-row Bin (Small Bin)</li>
+</ul>
+<h2 id="using-the-delete-all-bin">Using the Delete-all bin</h2>
+<p>The &quot;large bin&quot; is located at the top, on the product row. It is used to delete all counts and executions for a specific product, marking it as unexecuted or not counted at all. The process is similar for all operations like Receive, Issue, Scrap, Transfer, Quick reconcile and Planned reconcile.</p>
+<p><strong>Steps:</strong></p>
+<p>Let say you execute a Receive operation of an Order consisting of three lines - products X, Y and Z. Each line has been executed as seen in tab Executed and in Executed field.
+You decide to delete all executed quantities for product X:</p>
+<ol>
+<li>Navigate to the Info tab of product X.</li>
+<li>Locate the large bin at the top of the product row.</li>
+<li>Click on the bin icon -&gt; A pop-up message appears to confirm deletion.</li>
+<li>Choose Delete to confirm.</li>
+</ol>
+<p><strong>Result:</strong></p>
+<ul>
+<li>The quantity for product X in the Executed field is deleted</li>
+<li>The row related to this product in tab Executed is removed.</li>
+<li>After deletion, it appears as if the product was never executed.</li>
+</ul>
+<p><img src="pictures/deleteallatreceive.png" alt="Receive1"></p>
+<p>Another example at operation <strong>Planned Reconcile</strong>, in which you count 50pcs of product X and 20pcs of product Y. In field Counted is entered the quantity for each product and in tab Counted are registered the rows for the counted products. You decide to delete all counts for product X. Execute the forementioned steps (1-4). As a result all counted quantity for product X is deleted as if never counted. If you check the records in panel Counts in Reconciliation document, you will see that the line is also removed from there.</p>
+<p><img src="pictures/deleteallatreconciliation.png" alt="PlannedReconciliation"></p>
+<h2 id="using-the-delete-row-bin">Using the Delete-row bin</h2>
+<p>The &quot;small&quot; bin is used to delete individual product count rows at all IC operations. It is helpful with products having lots or variants, allowing users to delete distributed quantities for specific lots or variants. For example, if a scanned quantity is spread across multiple lots, users can now remove the count for a chosen lot without affecting others.</p>
+<p><strong>Steps:</strong></p>
+<p>Let say you execute a Receive operation of an Order consisting of three lines, for two products X and Y, and product Y is ordered in a lot as well. Execution of 8pcs of product Y results in distribution of the quantity between the unspecified product lot (4pcs) and the specified lot (4pcs). Now each line has been executed as seen in tab Executed and in Executed field.
+You decide to delete the quantity of the unspecified lot of product Y:</p>
+<ol>
+<li>Navigate to the Info tab of product Y;</li>
+<li>Locate the small bin on the row, next to the desired qunatity (&quot;4&quot;);</li>
+<li>Click on the bin icon.</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>No confirmation message for the deletion will pop-up!</p>
+</div>
+<p><strong>Result:</strong></p>
+<ul>
+<li>The quantity for the unspecified lot of product Y in the Executed field is deleted.</li>
+<li>The row related to this product and lot in tab Executed shows a dash &quot;-&quot;.</li>
+<li>After deletion, it appears as if the lot was never executed.</li>
+</ul>
+<p><img src="pictures/deleterowatreceive.png" alt="Receive2"></p>
+<p>Another example at operation Quick Reconcile, and you count 4000pcs of product X. The amount is distributed between the available lots. You decide to delete the counted quantity of the specified lot (&quot;00022&quot;). Simply click on the bin in the row of the lot, next to quantity &quot;100&quot; and without any warning, it will be deleted. The row in tab Counted will also be deleted.</p>
+<p><img src="pictures/deleterowatquickrec.png" alt="Quickrec"></p>
+<p>By using these bin functionalities effectively, you can ensure accurate inventory management while maintaining flexibility in operations.</p>
 <h3 id="continue-last-started-operation">Continue last started operation</h3>
 <p>Inventory Control allows you to <strong>resume</strong> the last operation you were performing.</p>
 <p>If you exited a receive operation mid-way, for example, it will be displayed as a <strong>shortcut</strong> in the main menu.</p>
