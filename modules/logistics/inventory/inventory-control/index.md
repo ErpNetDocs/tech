@@ -12,14 +12,13 @@ You can **receive**, **issue**, **reconcile**, **transfer** and **scrap** orders
 
 Before you start using Inventory Control, you'll be prompted to select the **store** for which you want to perform different operations.
 
-That store will be saved for follow-up operations but can easily be switched to a different one with the help of the **Change** button.
+That store will be saved for follow-up operations but can easily be switched to a different one with **Change** button.
 
 ![Inventory Control](pictures/Index_Store_Change_25_01.png)
 
-## Common features
+## Working with Inventory Operations
 
-Here, you can observe the most commonly used features in the **Inventory Control** panel.
-
+The following sections describe the core functionalities available in the Inventory Control panel. These include product scanning, quantity entry, quick selection, and support for advanced barcode formats — all designed to streamline daily inventory tasks across different types of store operations.
 ### Scanning
 
 In order to scan your products manually, you need to use the **Scan** field.
@@ -105,13 +104,10 @@ For example, if there is a Store Order line that contains a product with Part Nu
 > [!NOTE]
 > The identifier (21) Serial Number is also recognized, but for now, it's just saved in the memory of the IC application.
 
----
-uid: choose_unit
----
-# Measurement unit of the order #
+## Measurement unit of the order 
 The store order can be created using different measurement units for the "Quantity Unit" field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the "Choose Measurement Unit" menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.
 
-## How it works? ##
+### How it works? ##
 The menu is available for operations Receive and Issue. 
 It offers a choice, known as the measurement unit used for order visualization.
 The settings are remembered per user and independently for the forementioned operations.
@@ -142,14 +138,14 @@ Upon order completion, the Store transaction is recorded in the originally order
 
 With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!
 
-# **How to Use the Bin in Inventory Control**
+## **How to Use the Bin in Inventory Control**
 
 In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the **Info** panel:
 
 * Delete-all Bin (Large Bin) and
 * Delete-row Bin (Small Bin)
 
-## Using the Delete-all bin 
+### Using the Delete-all bin 
 
 The "large bin" is located at the top, on the product row. It is used to delete all counts and executions for a specific product, marking it as unexecuted or not counted at all. The process is similar for all operations like Receive, Issue, Scrap, Transfer, Quick reconcile and Planned reconcile.
 
@@ -174,7 +170,7 @@ Another example at operation **Planned Reconcile**, in which you count 50pcs of 
 
 ![PlannedReconciliation](pictures/deleteallatreconciliation.png) 
 
-## Using the Delete-row bin
+### Using the Delete-row bin
 
 The "small" bin is used to delete individual product count rows at all IC operations. It is helpful with products having lots or variants, allowing users to delete distributed quantities for specific lots or variants. For example, if a scanned quantity is spread across multiple lots, users can now remove the count for a chosen lot without affecting others. 
 
@@ -202,7 +198,7 @@ Another example at operation Quick Reconcile, and you count 4000pcs of product X
 
 By using these bin functionalities effectively, you can ensure accurate inventory management while maintaining flexibility in operations.
 
-### Continue last started operation
+## Continue last started operation
 
 Inventory Control allows you to **resume** the last operation you were performing. 
 
@@ -221,15 +217,12 @@ If you choose to begin a new operation **before** completing the latest one, a *
 
 Learn more about Inventory Control in the following articles:
 
-* **[Settings](settings.md)**
+
 *	**[Receive](receive.md)**
 *	**[Issue](issue.md)**
-*	**[Planned Reconcile](planned-reconcile.md)**
+*	**[Scrap](scrap.md)**
 *	**[Quick Reconcile](quick-reconcile.md)**
 *	**[Transfer](transfer.md)**
-*	**[Scrap](scrap.md)**
+*	**[Planned Reconcile](planned-reconcile.md)**
+*	**[Settings](settings.md)**
 *	**[Command list](command-list.md)**
-
-> [!NOTE]
-> 
-> The screenshots taken for this article are from v.24 of the platform.
