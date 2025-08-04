@@ -131,30 +131,6 @@
 <p>If you need to scan <strong>multiple</strong> quantities of your product, you can provide a quantity into the Scan field.</p>
 <p>Once you tap on the product's code, you can enter <strong>all</strong> of the quantities at once.</p>
 <p><img src="pictures/Multiple_scanning_26_01.png" alt="Inventory Control"></p>
-<hr>
-<h2 id="uid-choose_unit">uid: choose_unit</h2>
-<h1 id="measurement-unit-of-the-order">Measurement unit of the order</h1>
-<p>The store order can be created using different measurement units for the &quot;Quantity Unit&quot; field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the &quot;Choose Measurement Unit&quot; menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.</p>
-<h2 id="how-it-works">How it works?</h2>
-<p>The menu is available for operations Receive and Issue.
-It offers a choice, known as the measurement unit used for order visualization.
-The settings are remembered per user and independently for the forementioned operations.</p>
-<p><img src="pictures/choosemenu1.png" alt="Menu"></p>
-<p>A user initiates a Receive operation for an Order. By default, the order lines are displayed in the ordered measurement units unless changed.
-In the example below, a Receive order includes three lines for products ordered in different measurement units.</p>
-<p><img src="pictures/choosemenu2.png" alt="Order"></p>
-<p>Product &quot;Grape Juice&quot; has a default measurement unit of &quot;Litre&quot; but is currently ordered in &quot;Carton box.&quot; The conversion is as follows: 1 Carton box = 6 Litres = 12 pcs (Base unit).</p>
-<p>When scanning 1 unit of &quot;Grape Juice&quot; (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).</p>
-<p><img src="pictures/choosemenu3.png" alt="Scan"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code, the system automatically identifies its default measurement unit and recalculates the quantity based on the selected visualization unit.</p>
-</div>
-<p>By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.</p>
-<p>During order execution, users can switch between measurement units for convenience.</p>
-<p>Upon order completion, the Store transaction is recorded in the originally ordered measurement units.</p>
-<p><img src="pictures/choosemenu4.png" alt="StoreTransaction"></p>
-<p>With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!</p>
 <h3 id="scan-a-gs1">Scan a GS1</h3>
 <p>Inventory Control also supports GS1 Barcodes and recognizes a number of GS1 application identifiers.</p>
 <p>GS1 barcodes are a type of barcode used in retail and supply chain operations to identify items. They are used in many countries and are based on the international GS1 standard. These barcodes use a list of different application identifiers (AI) to encode additional data into the barcode such as quantity, lot, expiration date, serial number, and other attributes.</p>
@@ -204,6 +180,30 @@ If there is no matching line – it throws an error message and stops the execut
 <h5>Note</h5>
 <p>The identifier (21) Serial Number is also recognized, but for now, it's just saved in the memory of the IC application.</p>
 </div>
+<hr>
+<h2 id="uid-choose_unit">uid: choose_unit</h2>
+<h1 id="measurement-unit-of-the-order">Measurement unit of the order</h1>
+<p>The store order can be created using different measurement units for the &quot;Quantity Unit&quot; field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the &quot;Choose Measurement Unit&quot; menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.</p>
+<h2 id="how-it-works">How it works?</h2>
+<p>The menu is available for operations Receive and Issue.
+It offers a choice, known as the measurement unit used for order visualization.
+The settings are remembered per user and independently for the forementioned operations.</p>
+<p><img src="pictures/choosemenu1.png" alt="Menu"></p>
+<p>A user initiates a Receive operation for an Order. By default, the order lines are displayed in the ordered measurement units unless changed.
+In the example below, a Receive order includes three lines for products ordered in different measurement units.</p>
+<p><img src="pictures/choosemenu2.png" alt="Order"></p>
+<p>Product &quot;Grape Juice&quot; has a default measurement unit of &quot;Litre&quot; but is currently ordered in &quot;Carton box.&quot; The conversion is as follows: 1 Carton box = 6 Litres = 12 pcs (Base unit).</p>
+<p>When scanning 1 unit of &quot;Grape Juice&quot; (code: 963963), the system correctly recalculates the quantity using the ratio relative to the base measurement unit. This results in a recorded quantity of 1/6 of a Carton box (0.167) or 2 pcs (Base unit).</p>
+<p><img src="pictures/choosemenu3.png" alt="Scan"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The product code is permanently associated with the product's default measurement unit. This means that when you scan the product code, the system automatically identifies its default measurement unit and recalculates the quantity based on the selected visualization unit.</p>
+</div>
+<p>By changing the display measurement unit through the menu, the ordered quantities are recalculated based on the product dimensions and predefined conversion ratios.</p>
+<p>During order execution, users can switch between measurement units for convenience.</p>
+<p>Upon order completion, the Store transaction is recorded in the originally ordered measurement units.</p>
+<p><img src="pictures/choosemenu4.png" alt="StoreTransaction"></p>
+<p>With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!</p>
 <h1 id="how-to-use-the-bin-in-inventory-control"><strong>How to Use the Bin in Inventory Control</strong></h1>
 <p>In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the <strong>Info</strong> panel:</p>
 <ul>
