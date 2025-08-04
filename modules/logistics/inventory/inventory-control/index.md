@@ -30,7 +30,7 @@ The displayed line will not wrap to a second row — if it's too long, it will b
 > If the configuration key is not defined at all, the system will fall back to the default behavior and display the To Party.
 > If the key exists but has no value, the result will be an empty line (displayed as a dash).
 
-You can include format specifiers and combine multiple fields as needed. You’ll see the configured format applied when browsing orders before starting operations like Receive or Issue. For more details, see the Configuration Options Reference (option 70).
+You can include format specifiers and combine multiple fields as needed. You’ll see the configured format applied when browsing orders before starting operations like Receive or Issue. For more details, see the **![Config Options Reference](xref: config-options-reference]** (option 70).
 
 ## Working with Inventory Operations
 
