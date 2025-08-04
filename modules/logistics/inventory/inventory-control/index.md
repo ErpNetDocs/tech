@@ -11,7 +11,6 @@ You can **receive**, **issue**, **reconcile**, **transfer** and **scrap** orders
 ### Prerequisites
 
 Before you start using Inventory Control, you'll be prompted to select the **store** for which you want to perform different operations.
-
 That store will be saved for follow-up operations but can easily be switched to a different one with **Change** button.
 
 ![Inventory Control](pictures/Index_Store_Change_25_01.png)
@@ -22,9 +21,7 @@ The following sections describe the core functionalities available in the Invent
 ### Scanning
 
 In order to scan your products manually, you need to use the **Scan** field.
-
 It lets you quickly insert the instances of a product you want to add either manually or through barcode commands.
-
 For a list of available barcode templates, check out the **[Command list](command-list.md)**.
 
 ### Individual scan
@@ -33,20 +30,16 @@ Simply type in a product's code once (e.g. "0000001") in order to add only one p
 
 ![Transfer](pictures/Index_blue_arrow_26_01.png)
 
-Every time you scan, you'll be taken to the **Info** tab for the respective product. 
-
-Successfully scaned pcs are painted in **green**.
-
-If more lots are present for a product, the FEFO principle determines which lot has pcs add first.
-
-Incorrect product codes will generate an error. 
+- Every time you scan, you'll be taken to the **Info** tab for the respective product.
+- Successfully scaned pcs are painted in **green**.
+- If more lots are present for a product, the FEFO principle determines which lot has pcs add first.
+- Incorrect product codes will generate an error. 
 
 ![Transfer](pictures/inv_con_transfer_err.png)
 
 ### Multiple scans
 
 To scan more pcs or the exact number of pcs for a product, specify it first (e.g. "50"), add a "*", and then enter the product code.
-
 This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the **blue arrow** to confirm.
 
 ![Transfer](pictures/inv_con_transfer_multiple.png)
@@ -61,6 +54,9 @@ This can be done on one line (e.g. 50*1001150), or on two separate lines for eac
 If you enter a zero quantity in the **Scan** field, all of the entered quantities before will be set to **zero**.
 
 ![Issue](pictures/inv_con_issue_zeronew.png)
+
+> [!NOTE]
+> Entering a zero count behaves differently depending on the operation type and should be interpreted within the specific context of each process.
 
 ### Select a product from the Info tab
 
