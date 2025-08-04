@@ -18,7 +18,7 @@ That store will be saved for follow-up operations but can easily be switched to 
 ## Order Display Format
 By default, each Store Order in the Inventory Control order list displays the To Party as the first line of information. However, this behavior can be customized through a configuration key.
 
-If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. You can use interpolated strings with placeholders that pull data from the header of the current Store Order — for example:
+If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using string interpolation, allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
 Parent: {Parent}, Notes: {DocumentNotes:T}, Master: {MasterDocument}
 
 This would be displayed like:
