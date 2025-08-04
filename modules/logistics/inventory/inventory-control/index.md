@@ -24,6 +24,8 @@ Parent: {Parent}, Notes: {DocumentNotes:T}, Master: {MasterDocument}
 This would be displayed like:
 Parent: Invoice Order 00001, Notes: ASAP, Master: Sales Order 00001
 
+![Order Display Format](pictures/order-display-format.png)
+
 The displayed line will not wrap to a second row — if it's too long, it will be trimmed.
 
 > [!NOTE]
