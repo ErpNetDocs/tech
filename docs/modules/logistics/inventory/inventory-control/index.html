@@ -88,42 +88,58 @@
 <h1 id="inventory-control">Inventory Control</h1>
 
 <p>Inventory Control is a mobile inventory management application designed to speed up and simplify basic operations with store orders. It's perfectly suitable for shops and smaller stores.</p>
-<p>It follows a similar logic to the <strong>BarCodeCommand</strong> panel from within the <strong>Desktop Client</strong>, but much simpler. It allows workers to complete their daily tasks quickly, without going through the more complex procedures of the <strong><a href="/modules/logistics/wms/wms-worker/index.md">WMS module</a></strong>.</p>
+<p>It follows a similar logic to the <strong>BarCodeCommand</strong> panel from within the <strong>Desktop Client</strong>, but much simpler. It allows workers to complete their daily tasks quickly, without going through the more complex procedures of the <strong><a href="/modules/logistics/wms/wms-worker/index.md">WMS Worker</a></strong>.</p>
 <p>You can <strong>receive</strong>, <strong>issue</strong>, <strong>reconcile</strong>, <strong>transfer</strong> and <strong>scrap</strong> orders in just a few steps. These actions are <strong>not</strong> synchronized in real-time with the ERP.net system - you need to create the respective receipt transaction, issue transaction, transfer order, and reconciliation documents in order to reflect them.</p>
 <p><img src="pictures/Index_view_25_01.png" alt="Inventory Control"></p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Before you start using Inventory Control, you'll be prompted to select the <strong>store</strong> for which you want to perform different operations.</p>
-<p>That store will be saved for follow-up operations but can easily be switched to a different one with the help of the <strong>Change</strong> button.</p>
+<p>Before you start using Inventory Control, you'll be prompted to select the <strong>store</strong> for which you want to perform different operations.
+That store will be saved for follow-up operations but can easily be switched to a different one with <strong>Change</strong> button.</p>
 <p><img src="pictures/Index_Store_Change_25_01.png" alt="Inventory Control"></p>
-<h2 id="common-features">Common features</h2>
-<p>Here, you can observe the most commonly used features in the <strong>Inventory Control</strong> panel.</p>
+<h2 id="order-display-format">Order Display Format</h2>
+<p>By default, each Store Order in the Inventory Control order list displays the To Party as the first line of information. However, this behavior can be customized through a configuration key.</p>
+<p>If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using string interpolation, allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
+Parent: {Parent}, Notes: {DocumentNotes:T}, Master: {MasterDocument}</p>
+<p>This would be displayed like:
+Parent: Invoice Order 00001, Notes: ASAP, Master: Sales Order 00001</p>
+<p>The displayed line will not wrap to a second row — if it's too long, it will be trimmed.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the configuration key is not defined at all, the system will fall back to the default behavior and display the To Party.
+If the key exists but has no value, the result will be an empty line (displayed as a dash).</p>
+</div>
+<p>You can include format specifiers and combine multiple fields as needed. You’ll see the configured format applied when browsing orders before starting operations like Receive or Issue. For more details, see the Configuration Options Reference (option 70).</p>
+<h2 id="working-with-inventory-operations">Working with Inventory Operations</h2>
+<p>The following sections describe the core functionalities available in the Inventory Control panel. These include product scanning, quantity entry, quick selection, and support for advanced barcode formats — all designed to streamline daily inventory tasks across different types of store operations.</p>
 <h3 id="scanning">Scanning</h3>
-<p>In order to scan your products manually, you need to use the <strong>Scan</strong> field.</p>
-<p>It lets you quickly insert the instances of a product you want to add either manually or through barcode commands.</p>
-<p>For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
+<p>In order to scan your products manually, you need to use the <strong>Scan</strong> field.
+It lets you quickly insert the instances of a product you want to add either manually or through barcode commands.
+For a list of available barcode templates, check out the <strong><a href="command-list.html">Command list</a></strong>.</p>
 <h3 id="individual-scan">Individual scan</h3>
 <p>Simply type in a product's code once (e.g. &quot;0000001&quot;) in order to add only one pcs of it. Tap the <strong>blue arrow</strong> to confirm.</p>
 <p><img src="pictures/Index_blue_arrow_26_01.png" alt="Transfer"></p>
-<p>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product.</p>
-<p>Successfully scaned pcs are painted in <strong>green</strong>.</p>
-<p>If more lots are present for a product, the FEFO principle determines which lot has pcs add first.</p>
-<p>Incorrect product codes will generate an error.</p>
+<ul>
+<li>Every time you scan, you'll be taken to the <strong>Info</strong> tab for the respective product.</li>
+<li>Successfully scaned pcs are painted in <strong>green</strong>.</li>
+<li>If more lots are present for a product, the FEFO principle determines which lot has pcs add first.</li>
+<li>Incorrect product codes will generate an error.</li>
+</ul>
 <p><img src="pictures/inv_con_transfer_err.png" alt="Transfer"></p>
 <h3 id="multiple-scans">Multiple scans</h3>
-<p>To scan more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;*&quot;, and then enter the product code.</p>
-<p>This can be done on one line (e.g. 50*1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
+<p>To scan more pcs or the exact number of pcs for a product, specify it first (e.g. &quot;50&quot;), add a &quot;<em>&quot;, and then enter the product code.
+This can be done on one line (e.g. 50</em>1001150), or on two separate lines for each input. Tap the <strong>blue arrow</strong> to confirm.</p>
 <p><img src="pictures/inv_con_transfer_multiple.png" alt="Transfer"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<ol>
+<ul>
 <li>The <strong>trash bin button</strong> allows you to remove the latest operation, which will restore the previous operation value.</li>
 <li>Any one, two or three-number combination is automatically counted as a <strong>multiplier</strong>. You can insert it without adding &quot;*&quot; in the end.</li>
 <li>You can remove inserted multipliers by tapping the <strong>Clear button (X)</strong>.</li>
-</ol>
-</div>
+</ul>
 <h3 id="zero-count">Zero count</h3>
 <p>If you enter a zero quantity in the <strong>Scan</strong> field, all of the entered quantities before will be set to <strong>zero</strong>.</p>
 <p><img src="pictures/inv_con_issue_zeronew.png" alt="Issue"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Entering a zero count behaves differently depending on the operation type and should be interpreted within the specific context of each process.</p>
+</div>
 <h3 id="select-a-product-from-the-info-tab">Select a product from the Info tab</h3>
 <p>You also have the option to enter a product's code only by tapping on its code within the <strong>Info</strong> tab.</p>
 <p>When you do that, the product code will be automatically entered in the <strong>Scan</strong> field.</p>
@@ -180,11 +196,9 @@ If there is no matching line – it throws an error message and stops the execut
 <h5>Note</h5>
 <p>The identifier (21) Serial Number is also recognized, but for now, it's just saved in the memory of the IC application.</p>
 </div>
-<hr>
-<h2 id="uid-choose_unit">uid: choose_unit</h2>
-<h1 id="measurement-unit-of-the-order">Measurement unit of the order</h1>
+<h2 id="measurement-unit-of-the-order">Measurement unit of the order</h2>
 <p>The store order can be created using different measurement units for the &quot;Quantity Unit&quot; field, even for the same product. These units could include kg, packet, carton box, liter, pcs, bulk, bottle, and more. To ease the process for users, the &quot;Choose Measurement Unit&quot; menu is available within the order. Its main purpose is to make the order execution more user-friendly and help streamline the counting of various storage and distribution units.</p>
-<h2 id="how-it-works">How it works?</h2>
+<h3 id="how-it-works">How it works?</h3>
 <p>The menu is available for operations Receive and Issue.
 It offers a choice, known as the measurement unit used for order visualization.
 The settings are remembered per user and independently for the forementioned operations.</p>
@@ -204,13 +218,13 @@ In the example below, a Receive order includes three lines for products ordered 
 <p>Upon order completion, the Store transaction is recorded in the originally ordered measurement units.</p>
 <p><img src="pictures/choosemenu4.png" alt="StoreTransaction"></p>
 <p>With this innovation, workers can scan and process different units of the same product effortlessly, making inventory management more adaptable, efficient, and user-friendly. Try it out today and experience a new level of control over your operations!</p>
-<h1 id="how-to-use-the-bin-in-inventory-control"><strong>How to Use the Bin in Inventory Control</strong></h1>
+<h2 id="how-to-use-the-bin-in-inventory-control"><strong>How to Use the Bin in Inventory Control</strong></h2>
 <p>In our Inventory Control module, the bin plays a crucial role in managing product counts. There are two types of bins used in all operations, both available in the <strong>Info</strong> panel:</p>
 <ul>
 <li>Delete-all Bin (Large Bin) and</li>
 <li>Delete-row Bin (Small Bin)</li>
 </ul>
-<h2 id="using-the-delete-all-bin">Using the Delete-all bin</h2>
+<h3 id="using-the-delete-all-bin">Using the Delete-all bin</h3>
 <p>The &quot;large bin&quot; is located at the top, on the product row. It is used to delete all counts and executions for a specific product, marking it as unexecuted or not counted at all. The process is similar for all operations like Receive, Issue, Scrap, Transfer, Quick reconcile and Planned reconcile.</p>
 <p><strong>Steps:</strong></p>
 <p>Let say you execute a Receive operation of an Order consisting of three lines - products X, Y and Z. Each line has been executed as seen in tab Executed and in Executed field.
@@ -230,7 +244,7 @@ You decide to delete all executed quantities for product X:</p>
 <p><img src="pictures/deleteallatreceive.png" alt="Receive1"></p>
 <p>Another example at operation <strong>Planned Reconcile</strong>, in which you count 50pcs of product X and 20pcs of product Y. In field Counted is entered the quantity for each product and in tab Counted are registered the rows for the counted products. You decide to delete all counts for product X. Execute the forementioned steps (1-4). As a result all counted quantity for product X is deleted as if never counted. If you check the records in panel Counts in Reconciliation document, you will see that the line is also removed from there.</p>
 <p><img src="pictures/deleteallatreconciliation.png" alt="PlannedReconciliation"></p>
-<h2 id="using-the-delete-row-bin">Using the Delete-row bin</h2>
+<h3 id="using-the-delete-row-bin">Using the Delete-row bin</h3>
 <p>The &quot;small&quot; bin is used to delete individual product count rows at all IC operations. It is helpful with products having lots or variants, allowing users to delete distributed quantities for specific lots or variants. For example, if a scanned quantity is spread across multiple lots, users can now remove the count for a chosen lot without affecting others.</p>
 <p><strong>Steps:</strong></p>
 <p>Let say you execute a Receive operation of an Order consisting of three lines, for two products X and Y, and product Y is ordered in a lot as well. Execution of 8pcs of product Y results in distribution of the quantity between the unspecified product lot (4pcs) and the specified lot (4pcs). Now each line has been executed as seen in tab Executed and in Executed field.
@@ -254,7 +268,7 @@ You decide to delete the quantity of the unspecified lot of product Y:</p>
 <p>Another example at operation Quick Reconcile, and you count 4000pcs of product X. The amount is distributed between the available lots. You decide to delete the counted quantity of the specified lot (&quot;00022&quot;). Simply click on the bin in the row of the lot, next to quantity &quot;100&quot; and without any warning, it will be deleted. The row in tab Counted will also be deleted.</p>
 <p><img src="pictures/deleterowatquickrec.png" alt="Quickrec"></p>
 <p>By using these bin functionalities effectively, you can ensure accurate inventory management while maintaining flexibility in operations.</p>
-<h3 id="continue-last-started-operation">Continue last started operation</h3>
+<h2 id="continue-last-started-operation">Continue last started operation</h2>
 <p>Inventory Control allows you to <strong>resume</strong> the last operation you were performing.</p>
 <p>If you exited a receive operation mid-way, for example, it will be displayed as a <strong>shortcut</strong> in the main menu.</p>
 <p>You can tap the <strong>Continue</strong> button to proceed with it.</p>
@@ -267,19 +281,15 @@ You decide to delete the quantity of the unspecified lot of product Y:</p>
 </div>
 <p>Learn more about Inventory Control in the following articles:</p>
 <ul>
-<li><strong><a href="settings.html">Settings</a></strong></li>
 <li><strong><a href="receive.html">Receive</a></strong></li>
 <li><strong><a href="issue.html">Issue</a></strong></li>
-<li><strong><a href="planned-reconcile.html">Planned Reconcile</a></strong></li>
+<li><strong><a href="scrap.html">Scrap</a></strong></li>
 <li><strong><a href="quick-reconcile.html">Quick Reconcile</a></strong></li>
 <li><strong><a href="transfer.html">Transfer</a></strong></li>
-<li><strong><a href="scrap.html">Scrap</a></strong></li>
+<li><strong><a href="planned-reconcile.html">Planned Reconcile</a></strong></li>
+<li><strong><a href="settings.html">Settings</a></strong></li>
 <li><strong><a href="command-list.html">Command list</a></strong></li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The screenshots taken for this article are from v.24 of the platform.</p>
-</div>
 
 </article>
 
