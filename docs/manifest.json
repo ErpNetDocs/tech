@@ -12016,6 +12016,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/order-display-format.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/logistics/inventory/inventory-control/pictures/order-display-format.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/logistics/inventory/inventory-control/pictures/planned_reconc.png",
       "output": {
         "resource": {
