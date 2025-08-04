@@ -18,7 +18,7 @@ That store will be saved for follow-up operations but can easily be switched to 
 ## Order Display Format
 By default, each Store Order in the Inventory Control order list displays the To Party as the first line of information. However, this behavior can be customized through a configuration key.
 
-If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using ![String Interpolation](../../../advanced/string-interpolation/index.md), allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
+If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using **[String Interpolation](../../../advanced/string-interpolation/index.md)**, allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
 Parent: {Parent}, Notes: {DocumentNotes:T}, Master: {MasterDocument}
 
 This would be displayed like:
@@ -30,7 +30,7 @@ The displayed line will not wrap to a second row — if it's too long, it will b
 > If the configuration key is not defined at all, the system will fall back to the default behavior and display the To Party.
 > If the key exists but has no value, the result will be an empty line (displayed as a dash).
 
-You can include format specifiers and combine multiple fields as needed. You’ll see the configured format applied when browsing orders before starting operations like ![Receive](receive.md) or ![Issue](issue.md). For more details, see the **![Config Options Reference](xref: config-options-reference)** (option 70).
+You can include format specifiers and combine multiple fields as needed. You’ll see the configured format applied when browsing orders before starting operations like [Receive](receive.md) or [Issue](issue.md). For more details, see the **[Config Options Reference](xref: config-options-reference)** (option 70).
 
 ## Working with Inventory Operations
 
