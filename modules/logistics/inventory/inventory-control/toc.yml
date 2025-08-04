@@ -1,22 +1,18 @@
 - name: Overview
   href: index.md
-- name: Settings
-  href: settings.md
 - name: Receive
   href: receive.md
 - name: Issue
   href: issue.md
-- name: Planned Reconcile
-  href: planned-reconcile.md
-- name: Quick Reconcile
-  href: quick-reconcile.md
 - name: Transfer
   href: transfer.md
 - name: Scrap
   href: scrap.md
+- name: Quick Reconcile
+  href: quick-reconcile.md
+- name: Planned Reconcile
+  href: planned-reconcile.md  
 - name: Command list
   href: command-list.md
-- name: Measurement unit of the order
-  href: ChooseUnit.md
-- name: The Bin
-  href: the_bin.md
+- name: Settings
+  href: settings.md
