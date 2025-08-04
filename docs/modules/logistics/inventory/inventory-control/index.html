@@ -97,7 +97,7 @@ That store will be saved for follow-up operations but can easily be switched to 
 <p><img src="pictures/Index_Store_Change_25_01.png" alt="Inventory Control"></p>
 <h2 id="order-display-format">Order Display Format</h2>
 <p>By default, each Store Order in the Inventory Control order list displays the To Party as the first line of information. However, this behavior can be customized through a configuration key.</p>
-<p>If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using <img src="../../../advanced/string-interpolation/md" alt="String Interpolation">, allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
+<p>If the /InventoryControl/OrderDisplayFormat option is defined, the content of the first line will follow the pattern specified in the key’s value. The format is defined using <img src="../../../advanced/string-interpolation/index.md" alt="String Interpolation">, allowing you to insert placeholders that pull data from the header of the current Store Order — for example:
 Parent: {Parent}, Notes: {DocumentNotes:T}, Master: {MasterDocument}</p>
 <p>This would be displayed like:
 Parent: Invoice Order 00001, Notes: ASAP, Master: Sales Order 00001</p>
