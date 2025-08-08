@@ -18,7 +18,7 @@ You can find the following information about each sales order in the table:
 
 > [!Important]
 >
-> Pricing data like Amount is visible ONLY to users with an external role **L30 - Orders with Prices** and above.
+> Pricing data like **Amount** is visible ONLY to users with an external role **L30 - Orders with Prices** and above.
 
 > [!NOTE]
 >
@@ -32,11 +32,13 @@ If you click the **blue arrow button** on the leftmost portion of a row, you can
 
 The document itself includes customer and enterprise company data, as well as individual lines breakdown.
 
-![pictures](pictures/order_details.png)
+From here, it is possible to **download** the sales order as a PDF file.
 
-Here, it is also possible to **cancel** the submitted order before it is released.
+![pictures](pictures/order_details_download.png)
 
-![pictures](pictures/cancel_order.png)
+You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
+
+![pictures](pictures/order_cancel.png)
 
 > [!NOTE]
 > 
