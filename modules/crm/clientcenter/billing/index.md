@@ -6,4 +6,4 @@ The Billing section of the **Client Center** provides a centralized view of cust
 
 - **[DuePayments](due-payments.md)**: Lists all unresolved customer payments, showing essential data like remaining amount, reference date, and linked invoice number.
 
-- **Payment History**: Provides an overview of all payments made within the past 12 months, including date, amount, currency, and related documents.
+- **[Payment History](payment-history.md)**: Provides an overview of all payments made within the past 12 months, including date, amount, currency, and related documents.
