@@ -87,19 +87,19 @@
         <article data-uid="">
 <h1 id="user-management">User Management</h1>
 
-<p>The User Management page is an administrative hub for a customers' users in the <strong>Client Center</strong>. It is an alternative to the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">standard way of setting up external customer access</a></strong> and allows customers' individual users to see exactly what they need once they log into the platform.</p>
+<p>The User Management page is an administrative hub for a customer's users in the <strong>Client Center</strong>. It complements the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">standard way of setting up external customer access</a></strong> by allowing individual users to be managed so that each sees exactly what they need once they log into the platform.</p>
 <p>The page is visible to all Client Center users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external access role</a></strong> <strong>L80 - Admin</strong> and above.</p>
 <p><img src="pictures/user_management_page.png" alt="pictures"></p>
 <h3 id="details">Details</h3>
 <p>You can find the following information about each user in the table:</p>
 <ul>
 <li><strong>User</strong> -  Name of the user in the format {Name} &lt;{Login}&gt; [{UserType:DB}] as defined in <strong><a href="https://docs.erp.net/model/entities/Systems.Security.Users.html">Systems.Security.Users</a></strong>.</li>
-<li><strong>Role</strong> - <strong><a href="../index.html#role-based-access">External access role</a></strong> of the user. Each subsequent role in the includes the rights granted by the previous.</li>
+<li><strong>Role</strong> - <strong><a href="../index.html#role-based-access">External access role</a></strong> of the user. Each superior role includes the rights granted by roles with fewer permissions.</li>
 <li><strong>Access Back (days)</strong> - The maximum number of past days the user is allowed to view data to which their role grants them access.</li>
 <li><strong>Notes</strong> - Optional notes for the user.</li>
 </ul>
 <h2 id="add-user">Add user</h2>
-<p>Admins and Owners can add any already registered external and internal user from within their organization into the Client Center.</p>
+<p>Admins and Owners can add any already registered user from within their customer's organization into the Client Center.</p>
 <ol>
 <li><p>To begin, click <strong>Add User</strong>.</p>
 <p><img src="pictures/user_management_adduser.png" alt="pictures"></p>

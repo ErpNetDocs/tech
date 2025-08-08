@@ -4497,6 +4497,36 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_columns.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_columns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_expanded.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_expanded.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/clientcenter/billing/toc.yml",
       "output": {
@@ -5124,6 +5154,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_cancel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_cancel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_details.png",
       "output": {
         "resource": {
@@ -5138,6 +5178,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/order_details_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_details_download.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_details_download.png"
         }
       },
       "version": ""
@@ -5164,10 +5214,60 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_sele.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_sele.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_select.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/place_order_warning.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/place_order_warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/product_info_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/product_info_details.png"
         }
       },
       "version": ""

@@ -127,13 +127,14 @@
 <h2 id="defaultstore-setting">DefaultStore setting</h2>
 <p>You can set a default store for every new order created in the Client Center.</p>
 <p>To do so, enter the following <strong>value</strong> in the Settings field:</p>
-<pre><code>{&quot;DefaultStore&quot;: ID}
+<pre><code>{&quot;DefaultStore&quot;: &quot;ID&quot;}
 </code></pre>
 <p>where ID is the identifier of the store (e.g. 00002).</p>
 <h2 id="sitechannel-setting">SiteChannel setting</h2>
-<p>Each Client Center has its own site, or <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution channel</a></strong>.</p>
-<p>It can be overridden by specifying the <strong>code value</strong> of another distribution channel in the Settings field:</p>
-<pre><code>&quot;SiteChannel&quot;: DistributionChannel.Code
+<p>Each Client Center has its own <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution (site) channel</a></strong>.</p>
+<p>If a custom distribution channel is not explicitly defined, the Client Center is automatically assigned a distribution channel with code <strong>&quot;CC&quot;</strong> and name <strong>&quot;Client Center&quot;</strong>. When products are linked to this channel, they will appear as part of a tab carrying that channel's name in the <strong><a href="orders/new-order.html">New Order</a></strong> module.</p>
+<p>Site channels can be overridden by specifying the <strong>code value</strong> of another distribution channel in the Settings field:</p>
+<pre><code>&quot;SiteChannel&quot;: &quot;DistributionChannel.Code&quot;
 </code></pre>
 <p>where DistributionChannel.Code is the code of the channel (e.g. &quot;CC&quot;).</p>
 <div class="NOTE">

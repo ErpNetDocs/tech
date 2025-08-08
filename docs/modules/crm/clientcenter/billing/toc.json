@@ -1,2 +1,2 @@
 
-{"order":100,"items":[{"name":"Overview","href":"index.html","topicHref":"index.html"},{"name":"Invoices","href":"invoices.html","topicHref":"invoices.html"},{"name":"DuePayments","href":"due-payments.html","topicHref":"due-payments.html"}],"pdf":false}
+{"order":100,"items":[{"name":"Overview","href":"index.html","topicHref":"index.html"},{"name":"Invoices","href":"invoices.html","topicHref":"invoices.html"},{"name":"Due Payments","href":"due-payments.html","topicHref":"due-payments.html"},{"name":"Payment History","href":"payment-history.html","topicHref":"payment-history.html"}],"pdf":false}

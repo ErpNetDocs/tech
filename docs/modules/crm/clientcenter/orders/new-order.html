@@ -87,29 +87,35 @@
         <article data-uid="">
 <h1 id="new-order">New Order</h1>
 
-<p>Order creation through the Client Center is disabled by default. You need to <strong>enable</strong> the respective <strong><a href="../reference.html#isneworderenabled-setting">global JSON settings first</a></strong></p>
+<p>Order creation through the Client Center is disabled by default. You need to <strong>enable</strong> the respective <strong><a href="../reference.html#isneworderenabled-setting">global JSON settings first</a></strong>.</p>
 <p>Once that's done, users with <strong><a href="../sales/customers/external-access.md#roles">external role</a></strong> <strong>L20 - Orders</strong> and above will get access to the <strong>New Order</strong> page.</p>
 <p>This is a multi-tab interface designed to handle the filling out and placement of new sales orders.</p>
 <p><img src="pictures/new_order_panel.png" alt="pictures"></p>
 <h3 id="structure">Structure</h3>
-<p>New Order consists of two primary tabs, but it can be configured to include more:</p>
+<p>New Order consists of one primary tab, but it can be configured to include more:</p>
 <ol>
-<li><p><strong>Order</strong> - This is where the order is built. You can add products manually by entering their <strong>code</strong> and <strong>quantity</strong>.</p>
+<li><p><strong>Order</strong> - This is where the order is built. You can add products manually by entering their <strong>code</strong> and <strong>quantity</strong> or automatically through other tabs.</p>
 <p><img src="pictures/order_tab.png" alt="pictures"></p>
 </li>
-<li><p><strong>My Products</strong> - All <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer products</a></strong> will appear here. You can add them to the order simply by specifying their quantities in the <strong>Quantity</strong> field. Once a quantity is set, the respective product will automatically appear in the <strong>Order</strong> tab.</p>
+<li><p><strong>My Products</strong> - All <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer products</a></strong> are stored here. This tab can be hidden or enabled with an appropriate <strong><a href="../reference.html#hidecustomerproducts-setting">JSON setting</a></strong>.</p>
+<p>You can add customer products to the order simply by specifying their quantities in the <strong>Quantity</strong> field. Once a quantity is set, the respective product will appear in the <strong>Order</strong> tab.</p>
 <p><img src="pictures/my_products_tab.png" alt="pictures"></p>
 </li>
-<li><p>If the <strong><a href="../reference.html#hidedistributionchannel-setting">JSON setting for hiding the customer's default distribution channel</a></strong> is disabled and that channel has linked products, an <strong>extra tab</strong> named after the channel will appear.</p>
-<p>It will display the products tied to this channel, and you can specify their quantities to add them to the order.</p>
+<li><p>A tab listing products linked to the <strong>customer's default distribution channel</strong> - It can be optionally revealed with a <strong><a href="../reference.html#hidedistributionchannel-setting">JSON setting</a></strong> and always carries the name of that channel.</p>
+<p>You can specify product quantities in the <strong>Quantity</strong> field to add them to the order. Once a quantity is set, the respective product will appear in the <strong>Order</strong> tab.</p>
 <p><img src="pictures/channel_customer_tab.png" alt="pictures"></p>
 </li>
-<li><p>If the <strong><a href="../reference.html#sitechannel-setting">JSON setting for specifying a custom channel for the Client Center</a></strong> is configured and that channel has linked products, an <strong>extra tab</strong> named after that channel will appear.</p>
-<p>It will display the products tied to this channel, and you can specify their quantities to add them to the order.</p>
-<p>In the event where a custom channel is not set, the system automatically links the sales order to a <strong><a href="https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html">distribution channel</a></strong> with <strong>code &quot;CC&quot;</strong> and <strong>name &quot;Client Center&quot;</strong>. If such channel does not exist, it will be created after the order is placed.</p>
+<li><p>A tab listing products linked to the <strong>Client Center's distribution channel</strong> - It can be enabled with a <strong><a href="../reference.html#sitechannel-setting">JSON setting</a></strong> and always carries the name of that channel.</p>
+<p>Like in all other tabs, you can specify product quantities in the <strong>Quantity</strong> field to add them to the order.</p>
 <p><img src="pictures/channel_CC_tab.png" alt="pictures"></p>
 </li>
 </ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can see details about a product if you click on either its <strong>code</strong> or <strong>name</strong>. <br> <br>
+This will trigger a pop-up containing more information, including a product picture, if available.</p>
+</div>
+<p><img src="pictures/product_info_details.png" alt="pictures"></p>
 <h2 id="create-a-new-order">Create a new order</h2>
 <ol>
 <li><p>To begin, add products to the order. There are several ways to do this:</p>
