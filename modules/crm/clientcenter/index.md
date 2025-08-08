@@ -46,7 +46,7 @@ It is comprised of three pages:
 
 * **[Invoices](billing/invoices.md)**
 * **[DuePayments](billing/due-payments.md)**
-* **Payment History**
+* **[Payment History](billing/payment-history.md)**
 
 ### User Management
 
