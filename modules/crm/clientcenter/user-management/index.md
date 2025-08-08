@@ -11,13 +11,13 @@ The page is visible to all Client Center users with **[external access role](htt
 You can find the following information about each user in the table:
 
 * **User** -  Name of the user in the format {Name} <{Login}> [{UserType:DB}] as defined in **[Systems.Security.Users](https://docs.erp.net/model/entities/Systems.Security.Users.html)**.
-* **Role** - **[External access role](../index.md#role-based-access)** of the user. Each subsequent role in the includes the rights granted by the previous.
+* **Role** - **[External access role](../index.md#role-based-access)** of the user. Each superior role includes the rights granted by roles with fewer permissions.
 * **Access Back (days)** - The maximum number of past days the user is allowed to view data to which their role grants them access.
 * **Notes** - Optional notes for the user.
 
 ## Add user
 
-Admins and Owners can add any already registered external and internal user from within their organization into the Client Center.
+Admins and Owners can add any already registered user from within their customer's organization into the Client Center.
 
 1. To begin, click **Add User**.
    
