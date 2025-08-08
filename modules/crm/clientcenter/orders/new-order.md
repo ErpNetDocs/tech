@@ -32,8 +32,6 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    Like in all other tabs, you can specify product quantities in the **Quantity** field to add them to the order.
 
-   If a distribution channel is not set for your Client Center, the system will automatically link the sales order to a **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** with **code "CC"** and **name "Client Center"**. If such a channel does not exist, it will be created after the order is placed.
-
    ![pictures](pictures/channel_CC_tab.png)
 
 > [!TIP]
