@@ -16,7 +16,7 @@ You can find the following information about each invoice in the table:
 - **Date** - Date of creation of the document.
 - **Amount** - The amount of the invoice.
 
-### Expanded view
+### Invoice document
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about an invoice.
 
@@ -26,7 +26,7 @@ This includes customer, status and enterprise company data, as well as individua
 
 ![pictures](pictures/invoices_details.png)
 
-You can also optionally **download** an invoice for external view.
+You can also optionally **download** an invoice as a PDF file.
 
 ![pictures](pictures/invoices_download.png)
 
