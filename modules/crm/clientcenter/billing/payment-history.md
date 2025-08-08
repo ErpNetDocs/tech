@@ -33,6 +33,6 @@ This can expand the table with information like order number and covered amount.
 
 ![pictures](pictures/payment_history_expanded.png)
 
-> ![NOTE]
+> [!NOTE]
 > The screenshots taken for this article are from v26 of the platform.
 > 
