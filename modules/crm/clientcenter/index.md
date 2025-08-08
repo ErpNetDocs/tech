@@ -30,7 +30,7 @@ This section is responsible for storing existing orders and facilitating the cre
 
 It is comprised of two pages:
 
-* **[Orders](orders/index.md)**
+* **[Orders](orders/orders.md)**
 * **[New Order](orders/new-order.md)**
 
 > [!NOTE]
