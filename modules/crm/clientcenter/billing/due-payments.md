@@ -1,6 +1,6 @@
-# Due payments
+# Due Payments
 
-The Due payments page keeps a log of all customer due (unresolved) payments, with relevant information for each of them.
+The Due Payments page keeps a log of all customer due (unresolved) payments, with relevant information for each of them.
 
 It is accessible by Client Center users with **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L40 - Billing** and above.
 
@@ -26,3 +26,7 @@ Simply click on the respective column's box to add it.
 This can significantly expand the table with information like due date, paid amount, and number of overdue days.
 
 ![pictures](pictures/duepayments_expanded.png)
+
+> [!NOTE]
+> The screenshots taken for this article are from v26 of the platform.
+> 
