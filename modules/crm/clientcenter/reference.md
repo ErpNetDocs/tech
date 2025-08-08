@@ -77,19 +77,21 @@ You can set a default store for every new order created in the Client Center.
 To do so, enter the following **value** in the Settings field:
 
 ```
-{"DefaultStore": ID}
+{"DefaultStore": "ID"}
 ```
 
 where ID is the identifier of the store (e.g. 00002).
 
 ## SiteChannel setting
 
-Each Client Center has its own site, or **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)**. 
+Each Client Center has its own site channel, or **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)**. 
 
-It can be overridden by specifying the **code value** of another distribution channel in the Settings field:
+If not explicitly defined, it is automatically assigned a distribution channel with code **"CC"** and name **"Client Center"**
+
+Site channels can be overridden by specifying the **code value** of another distribution channel in the Settings field:
 
 ```
-"SiteChannel": DistributionChannel.Code
+"SiteChannel": "DistributionChannel.Code"
 ```
 
 where DistributionChannel.Code is the code of the channel (e.g. "CC").
