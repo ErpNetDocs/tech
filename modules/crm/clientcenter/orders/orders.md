@@ -4,7 +4,7 @@ The Orders page is home to all sales orders linked to a customer.
 
 It is visible to all Client Center users accessing this customers's data with an **[external role](../sales/customers/external-access.md#roles)** **L20 - Orders** and above.
 
-![pictures](pictures/orders_screen_new.png)
+![pictures](pictures/orders_screen.png)
 
 ### Details
 
@@ -28,7 +28,7 @@ You can find the following information about each sales order in the table:
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can open a sales order document.
 
-![pictures](pictures/order_select.png)
+![pictures](pictures/orders_sele.png)
 
 The document itself includes customer and enterprise company data, as well as individual lines breakdown.
 
