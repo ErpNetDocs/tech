@@ -52,7 +52,7 @@ It is comprised of three pages:
 
 The **[User Management](user-management/index.md)** page manages a customer's existing users by determining the level of access they have to the Client Center.
 
-It is an alternative to the standard way of setting up external customer access.
+It complements the **[standard way of setting up external customer access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
 
 ![picture](pictures/user_management.png)
 
