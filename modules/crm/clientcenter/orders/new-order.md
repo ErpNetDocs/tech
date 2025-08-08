@@ -36,6 +36,13 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    ![pictures](pictures/channel_CC_tab.png)
 
+> [!TIP]
+> 
+> You can see details about a product if you click on either its **code** or **name**. <br> <br>
+> This will trigger a pop-up containing more information, including a product picture, if available.
+
+![pictures](pictures/product_info_details.png)
+
 ## Create a new order
 
 1. To begin, add products to the order. There are several ways to do this:
