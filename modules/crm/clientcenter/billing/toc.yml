@@ -2,6 +2,7 @@
   href: index.md
 - name: Invoices
   href: invoices.md
-- name: DuePayments
+- name: Due Payments
   href: due-payments.md
-  
+- name: Payment History
+  href: payment-history.md
