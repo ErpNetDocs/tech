@@ -24,13 +24,13 @@ You can find the following information about each sales order in the table:
 >
 > Orders that are started but not placed are automatically saved and registered with status **New**.
 
-### Expanded view
+### Sales order document 
 
-If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about a sales order.
+If you click the **blue arrow button** on the leftmost portion of a row, you can open a sales order document.
 
 ![pictures](pictures/order_details_button.png)
 
-This includes customer and enterprise company data, as well as individual document lines breakdown.
+The document itself includes customer and enterprise company data, as well as individual lines breakdown.
 
 ![pictures](pictures/order_details.png)
 
