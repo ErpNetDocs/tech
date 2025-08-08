@@ -1,8 +1,8 @@
 # External Access
 
-The **External Access** table is responsible for granting external and internal users access to specific customer data.
+The **External Access** table is responsible for granting external and internal users access to specific customer data in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
 
-In the case of the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**, it allows customers' individual users to see exactly what they need once they log into the platform. 
+It allows customers' individual users to see exactly what they need once they log into the platform. 
 
 ![pictures](pictures/customers_external_access.png)
 
