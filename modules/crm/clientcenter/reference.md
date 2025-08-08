@@ -84,9 +84,9 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## SiteChannel setting
 
-Each Client Center has its own site channel, or **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)**. 
+Each Client Center has its own **[distribution (site) channel](/modules/crm/marketing/distribution-channels/index.md)**. 
 
-If not explicitly defined, it is automatically assigned a distribution channel with code **"CC"** and name **"Client Center"**
+If a custom distribution channel is not explicitly defined, the Client Center is automatically assigned a distribution channel with code **"CC"** and name **"Client Center"**. When products are linked to this channel, they will appear as part of a tab carrying that channel's name in the **[New Order](orders/new-order.md)** module.  
 
 Site channels can be overridden by specifying the **code value** of another distribution channel in the Settings field:
 
