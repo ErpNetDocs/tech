@@ -90,7 +90,7 @@ Users can perform a couple of actions from within the Client Center:
 
 - **Cancel** already issued sales orders before they're finalized.
 
-- **Download** invoices to preview them outside of the Client Center.
+- **Download** orders and invoices as PDFs for preview outside of the Client Center.
 
 > [!NOTE]
 > 
