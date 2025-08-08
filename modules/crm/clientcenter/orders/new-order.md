@@ -28,7 +28,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. A tab listing products linked to the **Client Center's distribution channel** - It can be enabled with a **[JSON setting](../reference.md#hidecustomchannel-setting)** and always carries the name of that channel.
+4. A tab listing products linked to the **Client Center's distribution channel** - It can be enabled with a **[JSON setting](../reference.md#sitechannel-setting)** and always carries the name of that channel.
 
    Like in all other tabs, you can specify product quantities in the **Quantity** field to add them to the order.
 
