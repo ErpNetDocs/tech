@@ -10,27 +10,29 @@ This is a multi-tab interface designed to handle the filling out and placement o
 
 ### Structure
 
-New Order consists of two primary tabs, but it can be configured to include more:
+New Order consists of one primary tab, but it can be configured to include more:
 
-1. **Order** - This is where the order is built. You can add products manually by entering their **code** and **quantity**.
+1. **Order** - This is where the order is built. You can add products manually by entering their **code** and **quantity** or automatically through other tabs.
 
    ![pictures](pictures/order_tab.png)
    
-2. **My Products** - All **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** will appear here. You can add them to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will automatically appear in the **Order** tab.
+2. **My Products** - All **[customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** are stored here. This tab can be hidden or enabled with an appropriate **[JSON setting](../reference.md#hidecustomerproducts-setting)**.
+  
+   You can add customer products to the order simply by specifying their quantities in the **Quantity** field. Once a quantity is set, the respective product will appear in the **Order** tab.
 
    ![pictures](pictures/my_products_tab.png)
    
-3. If the **[JSON setting for hiding the customer's default distribution channel](../reference.md#hidedistributionchannel-setting)** is disabled and that channel has linked products, an **extra tab** named after the channel will appear.
-  
-   It will display the products tied to this channel, and you can specify their quantities to add them to the order.
+3. A tab listing products linked to the **customer's default distribution channel** - It can be optionally revealed with a **[JSON setting](../reference.md#hidedistributionchannel-setting)** and always carries the name of that channel.
+
+   You can specify product quantities in the **Quantity** field to add them to the order. Once a quantity is set, the respective product will appear in the **Order** tab.
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. If the **[JSON setting for specifying a custom channel for the Client Center](../reference.md#sitechannel-setting)** is configured and that channel has linked products, an **extra tab** named after that channel will appear.
-  
-   It will display the products tied to this channel, and you can specify their quantities to add them to the order.
+4. A tab listing products linked to the **Client Center's distribution channel** - It can be enabled with a **[JSON setting](../reference.md#hidecustomchannel-setting)** and always carries the name of that channel.
 
-   In the event where a custom channel is not set, the system automatically links the sales order to a **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** with **code "CC"** and **name "Client Center"**. If such channel does not exist, it will be created after the order is placed.
+   Like in all other tabs, you can specify product quantities in the **Quantity** field to add them to the order.
+
+   If a distribution channel is not set for your Client Center, the system will automatically link the sales order to a **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** with **code "CC"** and **name "Client Center"**. If such a channel does not exist, it will be created after the order is placed.
 
    ![pictures](pictures/channel_CC_tab.png)
 
