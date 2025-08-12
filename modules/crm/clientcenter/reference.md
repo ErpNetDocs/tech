@@ -72,7 +72,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 
 ## DefaultStore setting
 
-You can set a default store for every new order created in the Client Center.
+You can set a default store for every new order created in the Client Center. This is a prerequisite when you want to see the actual product availability when adding quantities of a product to the order.
 
 To do so, enter the following **value** in the Settings field:
 
@@ -81,6 +81,20 @@ To do so, enter the following **value** in the Settings field:
 ```
 
 where ID is the identifier of the store (e.g. 00002).
+
+## AvailabilityMax setting
+
+This configuration ensures that the full availability of a product is not directly shown after a certain threshold. 
+
+For instance, if set to "100" and a user requests to add 200 pcs of a product, they will need to call a sales representative and ask them.
+
+To enforce the rule, enter the following **value** in the Settings field:
+
+```
+{"DefaultStore": <number>}
+```
+
+where <number> is a whole number specifying the maximum pcs that can be revealed in the **Availability** column.
 
 ## SiteChannel setting
 
