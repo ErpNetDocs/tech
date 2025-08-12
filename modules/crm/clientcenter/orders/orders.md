@@ -40,6 +40,14 @@ You can also **cancel** a submitted order before it is released. This will trigg
 
 ![pictures](pictures/order_cancel.png)
 
+#### Attachments
+
+If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.
+
+**Clicking once** on a file will trigger its download.
+
+![pictures](pictures/order_file_download.png)
+
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v.26 of the platform.
