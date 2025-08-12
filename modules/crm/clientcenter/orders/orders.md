@@ -24,7 +24,7 @@ You can find the following information about each sales order in the table:
 >
 > Orders that are started but not placed are automatically saved and registered with status **New**.
 
-### Sales order document 
+## Sales order document 
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can open a sales order document.
 
@@ -32,7 +32,7 @@ The document itself includes customer and enterprise company data, as well as in
 
 ![pictures](pictures/orders_sele.png)
 
-#### Actions
+### Actions
 
 1. It is possible to **download** a sales order as a PDF file.
 
