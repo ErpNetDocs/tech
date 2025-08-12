@@ -38,8 +38,9 @@ New Order consists of one primary tab, but it can be configured to include more:
 
 > [!TIP]
 >
-> You can see details about a product if you click on either its **code** or **name**. <br> <br>
-> This will trigger a pop-up containing more information, including a product picture, if available. Clicking the picture once will expand it further, hiding the remaining details.
+> You can see details about a product if you click on either its **code** or **name**. <br>
+> This will trigger a pop-up containing more information, including a product picture, if available. <br>
+> Clicking the picture once will expand it further, hiding the remaining details.
    
    ![pictures](pictures/product_info_details.png)
 
@@ -49,27 +50,27 @@ To begin, add products to the order. There are several ways to do this:
    
 1. From the **Order** tab, click the **Add** button. This will reveal the **Code** and **Qty** fields, where you can respectively provide the code of the product and how many instances of it you need ordered.
 
-![pictures](pictures/add_button.png)
+   ![pictures](pictures/add_button.png)
    
-When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
+   When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
 
 ![pictures](pictures/added_product.png)
 
 2. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered.
 
-This will automatically add it in the **Order** tab with the respective information.
+   This will automatically add it in the **Order** tab with the respective information.
 
-![pictures](pictures/quantity_myproducts.png)
+   ![pictures](pictures/quantity_myproducts.png)
 
 3. Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details)**.
    
-The process to add them is identical to the **My Products** tab.
+   The process to add them is identical to the **My Products** tab.
 
-![pictures](pictures/quantity_distribution_channel_customer.png)
+   ![pictures](pictures/quantity_distribution_channel_customer.png)
 
 4. If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
 
-![pictures](pictures/quantity_distribution_channel_clientcenter.png)
+   ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
 ### Default store and product availability 
 
