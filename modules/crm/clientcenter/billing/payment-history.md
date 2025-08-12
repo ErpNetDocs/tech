@@ -2,7 +2,7 @@
 
 The Payment History page stores all customer payments made within the past 12 months.
 
-It is accessible to users with the **[external role](/modules/crm/sales/customers/external-access.md#roles)** **L40 – Billing** and above.
+It is accessible to users with the **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L40 – Billing** and above.
 
 ![pictures](pictures/payment_history_panel.png)
 
