@@ -39,7 +39,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 > [!TIP]
 >
 > You can see details about a product if you click on either its **code** or **name**. <br> <br>
-> This will trigger a pop-up containing more information, including a product picture, if available.
+> This will trigger a pop-up containing more information, including a product picture, if available. Clicking the picture once will expand it further, hiding the remaining details.
    
    ![pictures](pictures/product_info_details.png)
 
@@ -55,14 +55,14 @@ When you click **Save**, the product will be added with all the respective infor
 
 ![pictures](pictures/added_product.png)
 
-2. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered. 
+2. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered.
 
 This will automatically add it in the **Order** tab with the respective information.
 
 ![pictures](pictures/quantity_myproducts.png)
 
 3. Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details)**.
-
+   
 The process to add them is identical to the **My Products** tab.
 
 ![pictures](pictures/quantity_distribution_channel_customer.png)
