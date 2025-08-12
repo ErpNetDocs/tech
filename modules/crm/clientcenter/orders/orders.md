@@ -46,7 +46,7 @@ If present, files attached to an order will be displayed in a dedicated section,
 
 **Clicking once** on a file will trigger its download.
 
-![pictures](pictures/order_file_download.png)
+![pictures](pictures/order_file_downloads.png)
 
 > [!NOTE]
 > 
