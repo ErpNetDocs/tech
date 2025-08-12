@@ -40,6 +40,30 @@ To disable it, enter the following **value** in the Settings field:
 {"IsOrdersEnabled": false} 
 ```
 
+## OrderDocumentTypes
+
+This setting defines which document types are shown in the **[Orders](orders/orders.md)** module. 
+
+To include a type to be shown, enter its **ID** in the Settings field. Multiple types can be specified - simply separate them by a comma.
+
+```
+"OrderDocumentTypes": ["DocumentType1.Id", "DocumentType2.Id", "DocumentTypeN.Id"]
+```
+
+If a value for this setting is not specified, **all document types** in the module are displayed.
+
+## InvoiceDocumentTypes
+
+This setting defines which document types are shown in the **[Invoices](billing/invoices.md)** module. 
+
+To include a type to be shown, enter its **ID** in the Settings field. Multiple types can be specified - simply separate them by a comma.
+
+```
+"InvoiceDocumentTypes": ["DocumentType1.Id", "DocumentType2.Id", "DocumentTypeN.Id"]
+```
+
+If a value for this setting is not specified, **all document types** in the module are displayed.
+
 ## HideLines setting
 
 Document lines are visible by default both in the **[Billing](billing/index.md)** and the **[Orders](orders/index.md)** sections of the Client Center.
