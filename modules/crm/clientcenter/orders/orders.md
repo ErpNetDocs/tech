@@ -26,9 +26,11 @@ You can find the following information about each order in the table:
 
 ### Document types
 
-Administrators can optionally configure the Orders page interface to display only orders of a certain document type.
+By default, the Orders page displays all order documents of all document types.
 
-The **OrderDocumentTypes JSON setting** defines which document type or types are shown as listed by their IDs. Types that are not specified are automatically filtered out.
+Administrators can optionally configure it to display only orders of a certain type. 
+
+If set, the **[OrderDocumentTypes JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#orderdocumenttypes-setting)** determines which order document type or types can be shown.
 
 ## Order document 
 
