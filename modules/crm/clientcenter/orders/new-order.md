@@ -43,7 +43,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
 ## Create a new order
 
-1. To begin, add products to the order. There are several ways to do this:
+### 1. To begin, add products to the order. There are several ways to do this:
    
     1.1.   From the **Order** tab, click the **Add** button. This will reveal the **Code** and **Qty** fields, where you can respectively provide the code of the product and how many instances of it you need ordered.
 
@@ -69,17 +69,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
-2. When you're done adding the quantities of the desired products, you can always **edit** or **delete** some of them if needed.
-
-   ![pictures](pictures/edit_delete_product.png)
-
-3. To finish the order, click **Place Order**. You'll be asked to confirm if all order details have been reviewed.
-
-   ![pictures](pictures/place_order_warning.png)
-
-   Newly created orders are stored in the **[Orders](index.md)** page.
-
-### Default store and product availability 
+### 2. Default store and product availability 
 
 All sales orders in the Client Center can have a **store** automatically set for them after they are created. Administrators can define it with the respective **[JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting)**. If not set, the **Store** field will remain empty.
 
@@ -89,7 +79,19 @@ The **Availability** column can be optionally revealed in the Order tab through 
 
 - If the specified quantity of the product is less than or equal to the available quantity, a **green** **"Yes"** **label** will be shown (e.g. 12pcs are requested, but there are 15 in total)
 - If the specified quantity of the product is more than what is available, the **actual available quantity** will be shown in **red** (e.g. 2pcs are requested, but only 1 is present in reality)
-- If the specified quantity of the product is more than what is possible to be revealed in the **Availability** column (as per the **[AvailabilityMax setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting)**), a **"Call" message** will be shown, indicating the need to contact a sales representative to confirm if the requested quantity is actually available. This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.
+- If the specified quantity of the product is more than what is possible to be revealed in the **Availability** column (as per the **[AvailabilityMax setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting)**), a **"Call" message** will be shown, indicating the need to contact a sales representative to confirm if the requested quantity is actually available.
+
+  This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.
+
+### 3. When you're done adding the quantities of the desired products, you can always edit or **delete** some of them if needed.
+
+   ![pictures](pictures/edit_delete_product.png)
+
+### 4. To finish the order, click **Place Order**. You'll be asked to confirm if all order details have been reviewed.
+
+   ![pictures](pictures/place_order_warning.png)
+
+   Newly created orders are stored in the **[Orders](index.md)** page.
 
 > [!NOTE]
 > 
