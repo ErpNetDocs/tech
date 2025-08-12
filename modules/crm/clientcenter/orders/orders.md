@@ -36,17 +36,17 @@ The document itself includes customer and enterprise company data, as well as in
 
 1. It is possible to **download** a sales order as a PDF file.
 
-  ![pictures](pictures/order_details_download.png)
+    ![pictures](pictures/order_details_download.png)
    
 2. If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.
 
-  **Clicking once** on a file will trigger its download.
+    **Clicking once** on a file will trigger its download.
 
-  ![pictures](pictures/order_file_downloads.png)
+    ![pictures](pictures/order_file_downloads.png)
 
 3. You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
 
-  ![pictures](pictures/order_cancel.png)
+    ![pictures](pictures/order_cancel.png)
 
 > [!NOTE]
 > 
