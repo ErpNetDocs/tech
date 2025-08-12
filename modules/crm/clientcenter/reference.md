@@ -8,7 +8,7 @@ To **[apply a setting](how-to/apply-platform-settings.md)**, you need to **resta
 
 ## IsNewOrderEnabled setting
 
-By default, the ability to **[create new orders](how-to/create-new-order.md)** in the Client Center is disabled. 
+By default, the ability to **[create new orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)** in the Client Center is disabled. 
 
 To enable it, you have to apply the necessary **JSON setting** in the website's definition.
 
@@ -72,9 +72,9 @@ To hide the products and this tab, enter the following **value** in the Settings
 
 ## DefaultStore setting
 
-You can set a default store for every new order created in the Client Center. This is a prerequisite when you want to see the actual product availability when adding quantities of a product to the order.
+You can set a default store for every **[new order](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)** created in the Client Center. This is a prerequisite when you want to see the actual availability when adding quantities of a product to the order, as long as an AvailabilityMax setting is also in place.
 
-To do so, enter the following **value** in the Settings field:
+To set a default store, enter the following **value** in the Settings field:
 
 ```
 {"DefaultStore": "ID"}
@@ -84,7 +84,7 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## AvailabilityMax setting
 
-This setting defines the maximum  product (stock) quantity to be displayed directly in the **Availability** column of the new order creation module. It is also a prerequisite for availability to be shown, provided a DefaultStore is also present.
+This setting defines the maximum  product (stock) quantity to be displayed directly in the **Availability** column when creating a **[new order](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)**. It is also a prerequisite for availability to be shown as a whole, provided a DefaultStore is also present.
 
 For instance, if the Max threshold is set to "100", but 200pcs of a product are requested, the user will need to **call** a sales representative to confirm if the quantity is present. This will be necessary regardless of whether the actual availability is larger or smaller than the one requested.
 
