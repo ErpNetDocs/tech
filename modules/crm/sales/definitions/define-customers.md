@@ -16,7 +16,7 @@ There, you'll find the **Customers** panel, where you can view all of the custom
 
 > [!NOTE]
 > 
-> As of ERP.net v.26, Customers can be found in the **[Sales](/modules/crm/sales/index.md)** module.
+> As of ERP.net v.26, Customers can be found in the **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html)** module.
  
 ## Set up 
 
@@ -48,7 +48,7 @@ There are **two** ways to create a customer,  both ensuring consistency in the f
 
 ### New customer details
  
-Once you access the **New Customer** window, you can start adding all the necessary details for your customer, such as the price list they will use, the payment terms under which they will work, their credit limit, sales representative, and a preferred **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)**.
+Once you access the **New Customer** window, you can start adding all the necessary details for your customer, such as the price list they will use, the payment terms under which they will work, their credit limit, sales representative, and a preferred **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**.
 
 Most of the fields are optional. However, the more you fill out now, the more will **automatically** be added in the sales order creation form where this customer is selected.
 
@@ -94,7 +94,7 @@ You have the ability to **modify** each default value when creating the sales or
 
 ## Customer products
 
-A customer can have products negotiated specifically for them. They can be added in the document lines of a sales order through the dedicated **[Customer products](https://docs.erp.net/webclient/introduction/how-to/functional-panels/customer-products.html)** functional panel, as well as in the lines of a sales order created through the **[Client Center](/modules/crm/clientcenter/index.md)**.
+A customer can have products negotiated specifically for them. They can be added directly in the document lines of a sales order or through the dedicated **[Customer products](https://docs.erp.net/webclient/introduction/how-to/functional-panels/customer-products.html)** functional panel, as well as in the lines of a sales order created through the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
 
 To add products for a customer, you need to enable the hidden **Products** detail panel through the **Customize form** feature.
 
