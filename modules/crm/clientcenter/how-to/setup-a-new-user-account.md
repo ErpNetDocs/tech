@@ -54,7 +54,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 6. Click on **Save and reload** to apply your changes.
 
-7. Define the appropriate level of **[external access](/modules/crm/sales/customers/external-access.md)** for the user.
+7. Define the appropriate level of **[external access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** for the user.
 
    This is necessary for them to be able to see the kind of documents and information suitable for their role in your organization.
 
