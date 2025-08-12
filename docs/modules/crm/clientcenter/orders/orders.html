@@ -87,16 +87,16 @@
         <article data-uid="">
 <h1 id="orders">Orders</h1>
 
-<p>The Orders page is home to all sales orders linked to a customer.</p>
-<p>It is visible to all Client Center users accessing this customers's data with an <strong><a href="../sales/customers/external-access.md#roles">external role</a></strong> <strong>L20 - Orders</strong> and above.</p>
+<p>The Orders page is home to all orders linked to a customer.</p>
+<p>It is visible to all Client Center users accessing this customers's data with an <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external role</a></strong> <strong>L20 - Orders</strong> and above.</p>
 <p><img src="pictures/orders_screen.png" alt="pictures"></p>
 <h3 id="details">Details</h3>
-<p>You can find the following information about each sales order in the table:</p>
+<p>You can find the following information about each order in the table:</p>
 <ul>
 <li><strong>Date</strong> - Date of submission (or registration) of the document.</li>
-<li><strong>Type name</strong> - Type of the document, Sales Order by default.</li>
+<li><strong>Type name</strong> - Type of the document, e.g. Sales Order.</li>
 <li><strong>Document No</strong> - The document number.</li>
-<li><strong>Amount</strong> - The amount of the sales order.</li>
+<li><strong>Amount</strong> - The amount of the order.</li>
 <li><strong>Status</strong> - Current state of the order (e.g. New, Ordered, Cancelled).</li>
 </ul>
 <div class="IMPORTANT">
@@ -107,14 +107,29 @@
 <h5>Note</h5>
 <p>Orders that are started but not placed are automatically saved and registered with status <strong>New</strong>.</p>
 </div>
-<h3 id="sales-order-document">Sales order document</h3>
-<p>If you click the <strong>blue arrow button</strong> on the leftmost portion of a row, you can open a sales order document.</p>
+<h3 id="document-types">Document types</h3>
+<p>By default, the Orders page displays all order documents of all document types.</p>
+<p>Administrators can optionally configure it to display only orders of a certain type.</p>
+<p>If set, the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#orderdocumenttypes-setting">OrderDocumentTypes JSON setting</a></strong> determines which order document type or types can be shown.</p>
+<h2 id="order-document">Order document</h2>
+<p>If you click the <strong>blue arrow button</strong> on the leftmost portion of a row, you can open an order document.</p>
+<p>Inside, you can find customer and enterprise company data, as well as individual lines breakdown.</p>
 <p><img src="pictures/orders_sele.png" alt="pictures"></p>
-<p>The document itself includes customer and enterprise company data, as well as individual lines breakdown.</p>
-<p>From here, it is possible to <strong>download</strong> the sales order as a PDF file.</p>
+<h3 id="actions">Actions</h3>
+<ol>
+<li><p>It is possible to <strong>download</strong> an order as a PDF file.</p>
 <p><img src="pictures/order_details_download.png" alt="pictures"></p>
-<p>You can also <strong>cancel</strong> a submitted order before it is released. This will trigger a notification for confirmation.</p>
+</li>
+<li><p>If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.</p>
+<p><strong>Clicking once</strong> on a file's name will trigger its download.</p>
+<p>File attachments whose <strong><a href="https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html">Access Permission</a></strong> field is not set to <strong>&quot;Internal users + external users&quot;</strong> will not appear in the <strong>Files</strong> section.</p>
+<p>If none of the order’s attachments have this setting configured, the <strong>Files</strong> section will not appear at all.</p>
+<p><img src="pictures/order_file_downloads.png" alt="pictures"></p>
+</li>
+<li><p>You can also <strong>cancel</strong> a submitted order before it is released. This will trigger a notification for confirmation.</p>
 <p><img src="pictures/order_cancel.png" alt="pictures"></p>
+</li>
+</ol>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v.26 of the platform.</p>

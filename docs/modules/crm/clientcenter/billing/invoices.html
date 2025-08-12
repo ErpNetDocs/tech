@@ -99,12 +99,21 @@
 <li><strong>Date</strong> - Date of creation of the document.</li>
 <li><strong>Amount</strong> - The amount of the invoice.</li>
 </ul>
-<h3 id="invoice-document">Invoice document</h3>
+<h3 id="document-types">Document types</h3>
+<p>By default, the <strong>Invoices</strong> page displays all invoices of all document types.</p>
+<p>Administrators can optionally configure it to display only invoices of a certain type.</p>
+<p>If set, the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#invoicedocumenttypes-setting">InvoiceDocumentTypes JSON setting</a></strong> determines which invoice document type or types can be shown.</p>
+<h2 id="invoice-document">Invoice document</h2>
 <p>If you click the <strong>blue arrow button</strong> on the leftmost portion of a row, you can reveal more details about an invoice.</p>
 <p><img src="pictures/invoices_select.png" alt="pictures"></p>
 <p>This includes customer, status and enterprise company data, as well as individual document lines breakdown.</p>
 <p><img src="pictures/invoices_details.png" alt="pictures"></p>
-<p>You can also optionally <strong>download</strong> an invoice as a PDF file.</p>
+<p>If present, files attached to an invoice will be displayed in a dedicated section, along with their name, extension and size.</p>
+<p><strong>Clicking once</strong> on a file's name will trigger its download.</p>
+<p>File attachments whose <strong><a href="https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html">Access Permission</a></strong> field is not set to <strong>&quot;Internal users + external users&quot;</strong> will not appear in the <strong>Files</strong> section.</p>
+<p>If none of the invoice’s attachments have this setting configured, the <strong>Files</strong> section will not appear at all.</p>
+<p><img src="pictures/invoices_attachment.png" alt="pictures"></p>
+<p>You can also optionally <strong>download</strong> the entire invoice as a PDF file.</p>
 <p><img src="pictures/invoices_download.png" alt="pictures"></p>
 <div class="NOTE">
 <h5>Note</h5>

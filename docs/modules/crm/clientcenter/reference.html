@@ -91,7 +91,7 @@
 <p>If a setting is not explicitly added in the definition of the Client Center website, its rule will <strong>not</strong> be enforced.</p>
 <p>To <strong><a href="how-to/apply-platform-settings.html">apply a setting</a></strong>, you need to <strong>restart</strong> the website using the <strong>Instance Manager</strong>.</p>
 <h2 id="isneworderenabled-setting">IsNewOrderEnabled setting</h2>
-<p>By default, the ability to <strong><a href="how-to/create-new-order.html">create new orders</a></strong> in the Client Center is disabled.</p>
+<p>By default, the ability to <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html">create new orders</a></strong> in the Client Center is disabled.</p>
 <p>To enable it, you have to apply the necessary <strong>JSON setting</strong> in the website's definition.</p>
 <p>Enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,&quot;IsNewOrderEnabled&quot;: true}
@@ -109,29 +109,55 @@
 <p>To disable it, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;IsOrdersEnabled&quot;: false} 
 </code></pre>
+<h2 id="orderdocumenttypes-setting">OrderDocumentTypes setting</h2>
+<p>This setting defines which document types are shown in the <strong><a href="orders/orders.html">Orders</a></strong> module.</p>
+<p>To include a type to be shown, enter its <strong>ID</strong> in the Settings field. Multiple types can be specified - simply separate them by a comma.</p>
+<pre><code>&quot;OrderDocumentTypes&quot;: [&quot;DocumentType1.Id&quot;, &quot;DocumentType2.Id&quot;, &quot;DocumentTypeN.Id&quot;]
+</code></pre>
+<p>If a value for this setting is not specified, <strong>all document types</strong> in the module are displayed.</p>
+<h2 id="invoicedocumenttypes-setting">InvoiceDocumentTypes setting</h2>
+<p>This setting defines which document types are shown in the <strong><a href="billing/invoices.html">Invoices</a></strong> module.</p>
+<p>To include a type to be shown, enter its <strong>ID</strong> in the Settings field. Multiple types can be specified - simply separate them by a comma.</p>
+<pre><code>&quot;InvoiceDocumentTypes&quot;: [&quot;DocumentType1.Id&quot;, &quot;DocumentType2.Id&quot;, &quot;DocumentTypeN.Id&quot;]
+</code></pre>
+<p>If a value for this setting is not specified, <strong>all document types</strong> in the module are displayed.</p>
 <h2 id="hidelines-setting">HideLines setting</h2>
 <p>Document lines are visible by default both in the <strong><a href="billing/index.html">Billing</a></strong> and the <strong><a href="orders/index.html">Orders</a></strong> sections of the Client Center.</p>
 <p>To hide them, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideLines&quot;: true}
 </code></pre>
 <h2 id="hidecustomerproducts-setting">HideCustomerProducts setting</h2>
-<p><strong><a href="/modules/crm/sales/definitions/define-customers.md#customer-products">Customer products</a></strong> are visible by default in the <strong>My Products</strong> tab during the creation of a new order in the Client Center.</p>
+<p><strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html">Customer products</a></strong> are visible by default in the <strong>My Products</strong> tab during the creation of a new order in the Client Center.</p>
 <p>To hide the products and this tab, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideCustomerProducts&quot;: true}
 </code></pre>
 <h2 id="hidedistributionchannel-setting">HideDistributionChannel setting</h2>
-<p>Products linked to a customer's default <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution channel</a></strong> are visible by default during the creation of a new order in the Client Center.</p>
+<p>Products linked to a customer's default <strong><a href="https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html">distribution channel</a></strong> are visible by default during the creation of a new order in the Client Center.</p>
 <p>To hide the products and this tab, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;HideDistributionChannel&quot;: true}
 </code></pre>
 <h2 id="defaultstore-setting">DefaultStore setting</h2>
-<p>You can set a default store for every new order created in the Client Center.</p>
-<p>To do so, enter the following <strong>value</strong> in the Settings field:</p>
+<p>You can set a default store for every <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html">new order</a></strong> created in the Client Center. This is a prerequisite when you want to see the actual availability when adding quantities of a product to the order, as long as an AvailabilityMax setting is also in place.</p>
+<p>To set a default store, enter the following <strong>value</strong> in the Settings field:</p>
 <pre><code>{&quot;DefaultStore&quot;: &quot;ID&quot;}
 </code></pre>
 <p>where ID is the identifier of the store (e.g. 00002).</p>
+<h2 id="availabilitymax-setting">AvailabilityMax setting</h2>
+<p>This setting defines the maximum  product (stock) quantity to be displayed directly in the <strong>Availability</strong> column when creating a <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html">new order</a></strong>. It is also a prerequisite for availability to be shown as a whole, provided a DefaultStore is also present.</p>
+<p>For instance, if the Max threshold is set to &quot;100&quot;, but 200pcs of a product are requested, the user will need to <strong>call</strong> a sales representative to confirm if the quantity is present. This will be necessary regardless if the actual availability is larger or smaller than the one requested.</p>
+<p>The AvailabilityMax value is taken from the <strong><a href="https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html#atpbase">ATPBase</a></strong> field in the <strong><a href="https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html">AvailableToPromise</a></strong> report, using the row where:</p>
+<ul>
+<li><strong>Store</strong> = DefaultStore</li>
+<li><strong>Product</strong> = Current Product</li>
+<li><strong>EnterpriseCompany</strong> = current Client Center’s WebSite.EnterpriseCompany</li>
+<li><strong>FromDate</strong> = latest date ≤ today</li>
+</ul>
+<p>To enforce the rule, enter the following <strong>value</strong> in the Settings field:</p>
+<pre><code>{&quot;AvailabilityMax&quot;: &lt;number&gt;}
+</code></pre>
+<p>where <number> is an integer representing the maximum pcs that can be directly visualized in the <strong>Availability</strong> column.</number></p>
 <h2 id="sitechannel-setting">SiteChannel setting</h2>
-<p>Each Client Center has its own <strong><a href="/modules/crm/marketing/distribution-channels/index.md">distribution (site) channel</a></strong>.</p>
+<p>Each Client Center has its own <strong><a href="https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html">distribution (site) channel</a></strong>.</p>
 <p>If a custom distribution channel is not explicitly defined, the Client Center is automatically assigned a distribution channel with code <strong>&quot;CC&quot;</strong> and name <strong>&quot;Client Center&quot;</strong>. When products are linked to this channel, they will appear as part of a tab carrying that channel's name in the <strong><a href="orders/new-order.html">New Order</a></strong> module.</p>
 <p>Site channels can be overridden by specifying the <strong>code value</strong> of another distribution channel in the Settings field:</p>
 <pre><code>&quot;SiteChannel&quot;: &quot;DistributionChannel.Code&quot;

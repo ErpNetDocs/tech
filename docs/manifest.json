@@ -4458,6 +4458,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_attachment.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_attachment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_details.png",
       "output": {
         "resource": {
@@ -5154,10 +5164,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_availability.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_availability.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_cancel.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/order_cancel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_column_chooser.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_column_chooser.png"
         }
       },
       "version": ""
@@ -5188,6 +5218,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/order_details_download.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_file_download.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_file_download.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_file_downloads.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_file_downloads.png"
         }
       },
       "version": ""

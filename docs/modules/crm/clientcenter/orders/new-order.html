@@ -88,16 +88,17 @@
 <h1 id="new-order">New Order</h1>
 
 <p>Order creation through the Client Center is disabled by default. You need to <strong>enable</strong> the respective <strong><a href="../reference.html#isneworderenabled-setting">global JSON settings first</a></strong>.</p>
-<p>Once that's done, users with <strong><a href="../sales/customers/external-access.md#roles">external role</a></strong> <strong>L20 - Orders</strong> and above will get access to the <strong>New Order</strong> page.</p>
+<p>Once that's done, users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external role</a></strong> <strong>L20 - Orders</strong> and above will get access to the <strong>New Order</strong> page.</p>
 <p>This is a multi-tab interface designed to handle the filling out and placement of new sales orders.</p>
 <p><img src="pictures/new_order_panel.png" alt="pictures"></p>
-<h3 id="structure">Structure</h3>
+<h2 id="structure">Structure</h2>
 <p>New Order consists of one primary tab, but it can be configured to include more:</p>
 <ol>
-<li><p><strong>Order</strong> - This is where the order is built. You can add products manually by entering their <strong>code</strong> and <strong>quantity</strong> or automatically through other tabs.</p>
+<li><p><strong>Order</strong> - This is where the order is built. You can add products manually by entering their <strong>code</strong> and <strong>quantity</strong>.</p>
+<p>Product quantities specified in other tabs will automatically appear here.</p>
 <p><img src="pictures/order_tab.png" alt="pictures"></p>
 </li>
-<li><p><strong>My Products</strong> - All <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer products</a></strong> are stored here. This tab can be hidden or enabled with an appropriate <strong><a href="../reference.html#hidecustomerproducts-setting">JSON setting</a></strong>.</p>
+<li><p><strong>My Products</strong> - All available <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer products</a></strong> are stored here. This tab can be hidden or enabled with an appropriate <strong><a href="../reference.html#hidecustomerproducts-setting">JSON setting</a></strong>.</p>
 <p>You can add customer products to the order simply by specifying their quantities in the <strong>Quantity</strong> field. Once a quantity is set, the respective product will appear in the <strong>Order</strong> tab.</p>
 <p><img src="pictures/my_products_tab.png" alt="pictures"></p>
 </li>
@@ -105,41 +106,60 @@
 <p>You can specify product quantities in the <strong>Quantity</strong> field to add them to the order. Once a quantity is set, the respective product will appear in the <strong>Order</strong> tab.</p>
 <p><img src="pictures/channel_customer_tab.png" alt="pictures"></p>
 </li>
-<li><p>A tab listing products linked to the <strong>Client Center's distribution channel</strong> - It can be enabled with a <strong><a href="../reference.html#sitechannel-setting">JSON setting</a></strong> and always carries the name of that channel.</p>
+<li><p>A tab listing products linked to the <strong>Client Center's distribution channel</strong> - It can be optionally enabled with a <strong><a href="../reference.html#sitechannel-setting">JSON setting</a></strong> and always carries the name of that channel.</p>
 <p>Like in all other tabs, you can specify product quantities in the <strong>Quantity</strong> field to add them to the order.</p>
 <p><img src="pictures/channel_CC_tab.png" alt="pictures"></p>
 </li>
 </ol>
 <div class="TIP">
 <h5>Tip</h5>
-<p>You can see details about a product if you click on either its <strong>code</strong> or <strong>name</strong>. <br> <br>
-This will trigger a pop-up containing more information, including a product picture, if available.</p>
+<p>You can see details about a product if you click on either its <strong>code</strong> or <strong>name</strong>. <br>
+This will trigger a <strong>pop-up</strong> containing more information, including a <strong>product picture</strong>, if available. <br>
+<strong>Clicking</strong> the picture once will expand it further, hiding the remaining details.</p>
 </div>
 <p><img src="pictures/product_info_details.png" alt="pictures"></p>
 <h2 id="create-a-new-order">Create a new order</h2>
+<p>To begin, add products to the order. There are several ways to do this:</p>
 <ol>
-<li><p>To begin, add products to the order. There are several ways to do this:</p>
-<p>1.1.   From the <strong>Order</strong> tab, click the <strong>Add</strong> button. This will reveal the <strong>Code</strong> and <strong>Qty</strong> fields, where you can respectively provide the code of the product and how many instances of it you need ordered.</p>
+<li><p>From the <strong>Order</strong> tab, click the <strong>Add</strong> button. This will reveal the <strong>Code</strong> and <strong>Qty</strong> fields, where you can respectively provide the code of the product and how many instances of it you need ordered.</p>
 <p><img src="pictures/add_button.png" alt="pictures"></p>
 <p>When you click <strong>Save</strong>, the product will be added with all the respective information about it, like <strong>Unit</strong>, <strong>Price</strong>, and <strong>Discount</strong>.</p>
 <p><img src="pictures/added_product.png" alt="pictures"></p>
-<p>1.2.   From the <strong>My Products</strong> tab, click on the <strong>Quantity</strong> field of a <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer product</a></strong> row and specify the exact quantity you need ordered.</p>
+</li>
+<li><p>From the <strong>My Products</strong> tab, click on the <strong>Quantity</strong> field of a <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer product</a></strong> row and specify the exact quantity you need ordered.</p>
 <p>This will automatically add it in the <strong>Order</strong> tab with the respective information.</p>
 <p><img src="pictures/quantity_myproducts.png" alt="pictures"></p>
-<p>1.3.   Depending on how the Client Center is configured, users may add products linked to their customer's <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details">default distribution channel</a></strong>.</p>
+</li>
+<li><p>Depending on how the Client Center is configured, users may add products linked to their customer's <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details">default distribution channel</a></strong>.</p>
 <p>The process to add them is identical to the <strong>My Products</strong> tab.</p>
 <p><img src="pictures/quantity_distribution_channel_customer.png" alt="pictures"></p>
-<p>1.4.  If the Client Center's <strong>distribution channel</strong> has products linked to it, they will be available for selection as well.</p>
+</li>
+<li><p>If the Client Center's <strong>distribution channel</strong> has products linked to it, they will be available for selection as well.</p>
 <p><img src="pictures/quantity_distribution_channel_clientcenter.png" alt="pictures"></p>
 </li>
-<li><p>When you're done adding the quantities of the desired products, you can always <strong>edit</strong> or <strong>delete</strong> some of them if needed.</p>
-<p><img src="pictures/edit_delete_product.png" alt="pictures"></p>
-</li>
-<li><p>To finish the order, click <strong>Place Order</strong>. You'll be asked to confirm if all order details have been reviewed.</p>
-<p><img src="pictures/place_order_warning.png" alt="pictures"></p>
-<p>Newly created orders are stored in the <strong><a href="index.html">Orders</a></strong> page.</p>
-</li>
 </ol>
+<h3 id="default-store-and-product-availability">Default store and product availability</h3>
+<p>All sales orders in the Client Center can have a <strong>store</strong> automatically set for them after they are created. Administrators can define it with the respective <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting">JSON setting</a></strong>. If not defined, the <strong>Store</strong> field will remain empty.</p>
+<p>Provided a store is specified and a <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting">maximum availability threshold</a></strong> is in place, you will be able to see the <strong>availability</strong> of all products you wish to include in the order.</p>
+<p>The <strong>Availability</strong> column can be optionally revealed through the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser">Column Chooser</a></strong>, and it can have one of the following values:</p>
+<ul>
+<li><p>If the specified quantity of the product is less than or equal to the available quantity, a <strong>green</strong> <strong>&quot;Yes&quot;</strong> <strong>label</strong> will be shown (e.g. 12pcs are requested, but there are 15 in total)</p>
+</li>
+<li><p>If the specified quantity of the product is more than what is available, the <strong>actual available quantity</strong> will be shown in <strong>red</strong> (e.g. 2pcs are requested, but only 1 is present in reality)</p>
+</li>
+<li><p>If the specified quantity of the product is more than what is possible to be revealed in the <strong>Availability</strong> column (as per the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting">AvailabilityMax setting</a></strong>), a <strong>&quot;Call&quot; message</strong> will be shown, indicating the need to contact a sales representative to confirm if the requested quantity is actually available.</p>
+<p>This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.</p>
+<p><img src="pictures/order_availability.png" alt="pictures"></p>
+</li>
+</ul>
+<h3 id="modify-or-delete-quantities">Modify or delete quantities</h3>
+<p>When you're done adding the quantities of the desired products, you can always <strong>edit</strong> or <strong>delete</strong> some of them if needed.</p>
+<p><img src="pictures/edit_delete_product.png" alt="pictures"></p>
+<p>Alternatively, you may remove all of them with the <strong>Delete All</strong> button.</p>
+<h3 id="confirm-and-place">Confirm and place</h3>
+<p>To conclude the order, click <strong>Place Order</strong>. You'll be asked to confirm if all details have been reviewed.</p>
+<p><img src="pictures/place_order_warning.png" alt="pictures"></p>
+<p>Newly created orders are stored on the <strong><a href="index.html">Orders</a></strong> page.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You can start an order and switch to a different page or choose to place it later. <br> <br>
