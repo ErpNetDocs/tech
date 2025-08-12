@@ -8,7 +8,7 @@ This is a multi-tab interface designed to handle the filling out and placement o
 
 ![pictures](pictures/new_order_panel.png)
 
-### Structure
+## Structure
 
 New Order consists of one primary tab, but it can be configured to include more:
 
@@ -28,7 +28,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    ![pictures](pictures/channel_customer_tab.png)
 
-4. A tab listing products linked to the **Client Center's distribution channel** - It can be enabled with a **[JSON setting](../reference.md#sitechannel-setting)** and always carries the name of that channel.
+4. A tab listing products linked to the **Client Center's distribution channel** - It can be optionally enabled with a **[JSON setting](../reference.md#sitechannel-setting)** and always carries the name of that channel.
 
    Like in all other tabs, you can specify product quantities in the **Quantity** field to add them to the order.
 
@@ -78,6 +78,18 @@ New Order consists of one primary tab, but it can be configured to include more:
    ![pictures](pictures/place_order_warning.png)
 
    Newly created orders are stored in the **[Orders](index.md)** page.
+
+### Default store and product availability 
+
+All sales orders in the Client Center can have a **store** automatically set for them after they are created. Administrators can define it with the respective **[JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting)**. If not set, the **Store** field will remain empty.
+
+Provided a store is specified and a **[maximum availability threshold](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting)** is defined, you will be able to see the **availability** of all products you want to include in the order.
+
+The **Availability** column can be optionally revealed in the Order tab through the **[Column Chooser](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html#column-chooser)**, and it can have one of the following values:
+
+- If the specified quantity of the product is less than or equal to the available quantity, a **green** **"Yes"** **label** will be shown (e.g. 12pcs are requested, but there are 15 in total)
+- If the specified quantity of the product is more than what is available, the **actual available quantity** will be shown in **red** (e.g. 2pcs are requested, but only 1 is present in reality)
+- If the specified quantity of the product is more than what is possible to be revealed in the **Availability** column (as per the **[AvailabilityMax setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting)**), a **"Call" message** will be shown, indicating the need to contact a sales representative to confirm if the requested quantity is actually available. This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.
 
 > [!NOTE]
 > 
