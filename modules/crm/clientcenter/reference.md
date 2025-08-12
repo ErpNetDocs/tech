@@ -40,7 +40,7 @@ To disable it, enter the following **value** in the Settings field:
 {"IsOrdersEnabled": false} 
 ```
 
-## OrderDocumentTypes
+## OrderDocumentTypes setting
 
 This setting defines which document types are shown in the **[Orders](orders/orders.md)** module. 
 
@@ -52,7 +52,7 @@ To include a type to be shown, enter its **ID** in the Settings field. Multiple 
 
 If a value for this setting is not specified, **all document types** in the module are displayed.
 
-## InvoiceDocumentTypes
+## InvoiceDocumentTypes setting
 
 This setting defines which document types are shown in the **[Invoices](billing/invoices.md)** module. 
 
