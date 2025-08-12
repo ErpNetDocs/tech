@@ -42,11 +42,11 @@ The document itself includes customer and enterprise company data, as well as in
 
     **Clicking once** on a file's name will trigger its download.
 
-    ![pictures](pictures/order_file_downloads.png)
-   
-    File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section.
+   File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section.
 
     If none of the order’s attachments have this setting configured, the Files section will not appear at all.
+
+    ![pictures](pictures/order_file_downloads.png)
 
 3. You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
 
