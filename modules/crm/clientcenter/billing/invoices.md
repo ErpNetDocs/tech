@@ -26,7 +26,13 @@ This includes customer, status and enterprise company data, as well as individua
 
 ![pictures](pictures/invoices_details.png)
 
-You can also optionally **download** an invoice as a PDF file.
+If present, files attached to an invoice will be displayed in a dedicated section, along with their name, extension and size.
+
+Clicking once on a file's name will trigger its download.
+
+![pictures](pictures/invoices_attachment.png)
+
+You can also optionally **download** the entire invoice as a PDF file.
 
 ![pictures](pictures/invoices_download.png)
 
