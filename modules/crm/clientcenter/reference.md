@@ -52,7 +52,7 @@ To hide them, enter the following **value** in the Settings field:
 
 ## HideCustomerProducts setting
 
-**[Customer products](/modules/crm/sales/definitions/define-customers.md#customer-products)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
+**[Customer products](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html)** are visible by default in the **My Products** tab during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
@@ -62,7 +62,7 @@ To hide the products and this tab, enter the following **value** in the Settings
 
 ## HideDistributionChannel setting
 
-Products linked to a customer's default **[distribution channel](/modules/crm/marketing/distribution-channels/index.md)** are visible by default during the creation of a new order in the Client Center.
+Products linked to a customer's default **[distribution channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** are visible by default during the creation of a new order in the Client Center.
 
 To hide the products and this tab, enter the following **value** in the Settings field:
 
@@ -84,7 +84,7 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## SiteChannel setting
 
-Each Client Center has its own **[distribution (site) channel](/modules/crm/marketing/distribution-channels/index.md)**. 
+Each Client Center has its own **[distribution (site) channel](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**. 
 
 If a custom distribution channel is not explicitly defined, the Client Center is automatically assigned a distribution channel with code **"CC"** and name **"Client Center"**. When products are linked to this channel, they will appear as part of a tab carrying that channel's name in the **[New Order](orders/new-order.md)** module.  
 
