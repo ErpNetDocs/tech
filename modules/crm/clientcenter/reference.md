@@ -84,17 +84,24 @@ where ID is the identifier of the store (e.g. 00002).
 
 ## AvailabilityMax setting
 
-This configuration ensures that the full availability of a product is not directly shown after a certain threshold. 
+This setting defines the maximum  product (stock) quantity to be displayed directly in the **Availability** column of the new order creation module. It is also a prerequisite for availability to be shown, provided a DefaultStore is also present.
 
-For instance, if set to "100" and a user requests to add 200 pcs of a product, they will need to call a sales representative and ask them.
+For instance, if the Max threshold is set to "100", but 200pcs of a product are requested, the user will need to **call** a sales representative to confirm if the quantity is present. This will be necessary regardless of whether the actual availability is larger or smaller than the one requested.
+
+The AvailabilityMax value is taken from the **[ATPBase](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html#atpbase)** field in the **[AvailableToPromise](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)** report, using the row where:
+
+- **Store** = DefaultStore
+- **Product** = Current Product
+- **EnterpriseCompany** = current Client Center’s WebSite.EnterpriseCompany
+- **FromDate** = latest date ≤ today
 
 To enforce the rule, enter the following **value** in the Settings field:
 
 ```
-{"DefaultStore": <number>}
+{"AvailabilityMax": <number>}
 ```
 
-where <number> is a whole number specifying the maximum pcs that can be revealed in the **Availability** column.
+where <number> is an integer representing the maximum pcs that can be directly visualized in the **Availability** column.
 
 ## SiteChannel setting
 
