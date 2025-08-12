@@ -16,7 +16,7 @@ You can find the following information about each invoice in the table:
 - **Date** - Date of creation of the document.
 - **Amount** - The amount of the invoice.
 
-### Invoice document
+## Invoice document
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about an invoice.
 
@@ -28,7 +28,11 @@ This includes customer, status and enterprise company data, as well as individua
 
 If present, files attached to an invoice will be displayed in a dedicated section, along with their name, extension and size.
 
-Clicking once on a file's name will trigger its download.
+**Clicking once** on a file's name will trigger its download.
+
+File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section.
+
+If none of the invoice’s attachments have this setting configured, the **Files** section will not appear at all.
 
 ![pictures](pictures/invoices_attachment.png)
 
