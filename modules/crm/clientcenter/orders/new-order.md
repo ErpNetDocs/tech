@@ -43,7 +43,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
 ## Create a new order
 
-### 1. To begin, add products to the order. There are several ways to do this:
+1. To begin, add products to the order. There are several ways to do this:
    
     1.1.   From the **Order** tab, click the **Add** button. This will reveal the **Code** and **Qty** fields, where you can respectively provide the code of the product and how many instances of it you need ordered.
 
@@ -69,7 +69,7 @@ New Order consists of one primary tab, but it can be configured to include more:
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
-### 2. Default store and product availability 
+#### Default store and product availability 
 
 All sales orders in the Client Center can have a **store** automatically set for them after they are created. Administrators can define it with the respective **[JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#defaultstore-setting)**. If not set, the **Store** field will remain empty.
 
@@ -83,11 +83,11 @@ The **Availability** column can be optionally revealed in the Order tab through 
 
   This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.
 
-### 3. When you're done adding the quantities of the desired products, you can always edit or **delete** some of them if needed.
+2. When you're done adding the quantities of the desired products, you can always edit or **delete** some of them if needed.
 
    ![pictures](pictures/edit_delete_product.png)
 
-### 4. To finish the order, click **Place Order**. You'll be asked to confirm if all order details have been reviewed.
+3. To finish the order, click **Place Order**. You'll be asked to confirm if all order details have been reviewed.
 
    ![pictures](pictures/place_order_warning.png)
 
