@@ -39,8 +39,8 @@ New Order consists of one primary tab, but it can be configured to include more:
 > [!TIP]
 >
 > You can see details about a product if you click on either its **code** or **name**. <br>
-> This will trigger a pop-up containing more information, including a product picture, if available. <br>
-> Clicking the picture once will expand it further, hiding the remaining details.
+> This will trigger a **pop-up** containing more information, including a **product picture**, if available. <br>
+> **Clicking** the picture once will expand it further, hiding the remaining details.
    
    ![pictures](pictures/product_info_details.png)
 
