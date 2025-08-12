@@ -16,6 +16,14 @@ You can find the following information about each invoice in the table:
 - **Date** - Date of creation of the document.
 - **Amount** - The amount of the invoice.
 
+### Document types
+
+By default, the **Invoices** page displays all invoices of all document types.
+
+Administrators can optionally configure it to display only invoices of a certain type. 
+
+If set, the **[InvoiceDocumentTypes JSON setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#invoicedocumenttypes-setting)** determines which invoice document type or types can be shown.
+
 ## Invoice document
 
 If you click the **blue arrow button** on the leftmost portion of a row, you can reveal more details about an invoice.
