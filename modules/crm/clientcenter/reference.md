@@ -86,7 +86,7 @@ where ID is the identifier of the store (e.g. 00002).
 
 This setting defines the maximum  product (stock) quantity to be displayed directly in the **Availability** column when creating a **[new order](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html)**. It is also a prerequisite for availability to be shown as a whole, provided a DefaultStore is also present.
 
-For instance, if the Max threshold is set to "100", but 200pcs of a product are requested, the user will need to **call** a sales representative to confirm if the quantity is present. This will be necessary regardless of whether the actual availability is larger or smaller than the one requested.
+For instance, if the Max threshold is set to "100", but 200pcs of a product are requested, the user will need to **call** a sales representative to confirm if the quantity is present. This will be necessary regardless if the actual availability is larger or smaller than the one requested.
 
 The AvailabilityMax value is taken from the **[ATPBase](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html#atpbase)** field in the **[AvailableToPromise](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)** report, using the row where:
 
