@@ -1,6 +1,6 @@
 # Orders
 
-The Orders page is home to all sales orders linked to a customer.
+The Orders page is home to all orders linked to a customer.
 
 It is visible to all Client Center users accessing this customers's data with an **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L20 - Orders** and above.
 
@@ -8,12 +8,12 @@ It is visible to all Client Center users accessing this customers's data with an
 
 ### Details
 
-You can find the following information about each sales order in the table:
+You can find the following information about each order in the table:
 
 - **Date** - Date of submission (or registration) of the document.
-- **Type name** - Type of the document, Sales Order by default.
+- **Type name** - Type of the document, e.g. Sales Order.
 - **Document No** - The document number.
-- **Amount** - The amount of the sales order. 
+- **Amount** - The amount of the order. 
 - **Status** - Current state of the order (e.g. New, Ordered, Cancelled).
 
 > [!Important]
@@ -24,17 +24,23 @@ You can find the following information about each sales order in the table:
 >
 > Orders that are started but not placed are automatically saved and registered with status **New**.
 
-## Sales order document 
+### Document types
 
-If you click the **blue arrow button** on the leftmost portion of a row, you can open a sales order document.
+Administrators can optionally configure the Orders page interface to display only orders of a certain document type.
 
-The document itself includes customer and enterprise company data, as well as individual lines breakdown.
+The **OrderDocumentTypes JSON setting** defines which document type or types are shown as listed by their IDs. Types that are not specified are automatically filtered out.
+
+## Order document 
+
+If you click the **blue arrow button** on the leftmost portion of a row, you can open an order document.
+
+Inside, you can find customer and enterprise company data, as well as individual lines breakdown.
 
 ![pictures](pictures/orders_sele.png)
 
 ### Actions
 
-1. It is possible to **download** a sales order as a PDF file.
+1. It is possible to **download** an order as a PDF file.
 
     ![pictures](pictures/order_details_download.png)
    
