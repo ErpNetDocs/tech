@@ -44,7 +44,7 @@ The document itself includes customer and enterprise company data, as well as in
 
    File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section.
 
-    If none of the order’s attachments have this setting configured, the Files section will not appear at all.
+    If none of the order’s attachments have this setting configured, the **Files** section will not appear at all.
 
     ![pictures](pictures/order_file_downloads.png)
 
