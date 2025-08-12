@@ -54,7 +54,7 @@ To begin, add products to the order. There are several ways to do this:
    
    When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
 
-![pictures](pictures/added_product.png)
+   ![pictures](pictures/added_product.png)
 
 2. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered.
 
@@ -87,6 +87,8 @@ The **Availability** column can be optionally revealed through the **[Column Cho
 - If the specified quantity of the product is more than what is possible to be revealed in the **Availability** column (as per the **[AvailabilityMax setting](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html?q=defaultstore#availabilitymax-setting)**), a **"Call" message** will be shown, indicating the need to contact a sales representative to confirm if the requested quantity is actually available.
 
   This is necessary regardless of whether the real availabilty is smaller or larger than the one requested.
+
+  ![pictures](pictures/order_availability.png)
 
 ### Modify or delete quantities
 
