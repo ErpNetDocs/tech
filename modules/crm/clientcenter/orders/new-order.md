@@ -96,8 +96,6 @@ When you're done adding the quantities of the desired products, you can always *
 
 ![pictures](pictures/edit_delete_product.png)
 
-Alternatively, you may remove all of them with the **Delete All** button.
-
 ### Confirm and place
 
 To conclude the order, click **Place Order**. You'll be asked to confirm if all details have been reviewed.
@@ -110,4 +108,7 @@ Newly created orders are stored on the **[Orders](index.md)** page.
 > 
 > You can start an order and switch to a different page or choose to place it later. <br> <br>
 > The latest active user session is retained and the order is **automatically saved** and registered with status **"New"**.
-   
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v.26 of the platform.
