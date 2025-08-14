@@ -36,6 +36,8 @@ This includes customer, status and enterprise company data, as well as individua
 
 If present, files attached to an invoice will be displayed in a dedicated section, along with their name, extension and size.
 
+**Clicking once** on a file's name will trigger its download.
+
 > [!NOTE]
 > File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section. <br> <br>
 > If none of the invoice’s attachments have this setting configured, the **Files** section will not appear at all.
