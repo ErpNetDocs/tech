@@ -107,7 +107,7 @@ Newly created orders are stored on the **[Orders](index.md)** page.
 > [!NOTE]
 > 
 > You can start an order and switch to a different page or choose to place it later. <br> <br>
-> The latest active user session is retained and the order is **automatically saved** and registered with status **"New"**.
+> The order will be **automatically saved** and registered with status **"New"**.
 
 > [!NOTE]
 > 
