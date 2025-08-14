@@ -42,17 +42,17 @@ Inside, you can find customer and enterprise company data, as well as individual
 
 It is possible to **download** an order as a PDF file.
 
-    ![pictures](pictures/order_details_download.png)
+![pictures](pictures/order_details_download.png)
    
 If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.
 
 **Clicking once** on a file's name will trigger its download.
 
-![pictures](pictures/order_file_downloads.png)
-
 > [!NOTE]
 > File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section. <br> <br>
 > If none of the order’s attachments have this setting configured, the **Files** section will not appear at all.
+
+![pictures](pictures/order_file_downloads.png)
 
 You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
 
