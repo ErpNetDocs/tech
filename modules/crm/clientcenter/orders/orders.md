@@ -40,25 +40,23 @@ Inside, you can find customer and enterprise company data, as well as individual
 
 ![pictures](pictures/orders_sele.png)
 
-### Actions
-
-1. It is possible to **download** an order as a PDF file.
+It is possible to **download** an order as a PDF file.
 
     ![pictures](pictures/order_details_download.png)
    
-2. If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.
+If present, files attached to an order will be displayed in a dedicated section, along with their name, extension and size.
 
-    **Clicking once** on a file's name will trigger its download.
+**Clicking once** on a file's name will trigger its download.
 
-   File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section.
+![pictures](pictures/order_file_downloads.png)
 
-    If none of the order’s attachments have this setting configured, the **Files** section will not appear at all.
+> [!NOTE]
+> File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section. <br> <br>
+> If none of the order’s attachments have this setting configured, the **Files** section will not appear at all.
 
-    ![pictures](pictures/order_file_downloads.png)
+You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
 
-3. You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
-
-    ![pictures](pictures/order_cancel.png)
+![pictures](pictures/order_cancel.png)
 
 > [!NOTE]
 > 
