@@ -1,3 +1,7 @@
+---
+uid: orders-and-offers
+---
+
 # Sales Orders & Offers  
 
 Salesperson assignment is automatically triggered whenever a Sales Order or Offer is saved, and the *Salesperson* field is empty.  
