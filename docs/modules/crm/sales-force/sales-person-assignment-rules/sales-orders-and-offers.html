@@ -117,6 +117,15 @@ This enables the system to evaluate the document context and assign it to the mo
 <h2 id="3-assignment-execution">3. Assignment execution</h2>
 <p>Once the best-matching rule is identified, the system automatically assigns the corresponding <strong>Sales Person</strong> to the document.</p>
 <p>If a <em>Salesperson</em> has already been entered, no automatic assignment is performed.</p>
+<h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
+<p>The Sales Order form includes a UI function called <em>Assign Default Salesperson</em>, available from the <strong>Run</strong> menu for each record.</p>
+<p>This function allows users to manually apply the same assignment logic described above, even when a Salesperson is already selected.<br>
+It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).</p>
+<p>This is especially useful when rules are introduced or updated after documents have been created, enabling users or managers to update existing assignments accordingly.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The function is only available for saved documents and is disabled when the document has a status of <em>Released</em> or higher.</p>
+</div>
 
 </article>
 
