@@ -292,6 +292,9 @@ references:
 - uid: create-new
   name: CREATENEW
   href: advanced/user-business-rules/events/create-new.html
+- uid: customers
+  name: Customers
+  href: modules/crm/sales-force/sales-person-assignment-rules/customers.html
 - uid: deferred-payments-options
   name: Deferred payments options
   href: modules/crm/sales/sales-concepts/deferred-payments-options.html
@@ -373,6 +376,9 @@ references:
 - uid: jobs-J38722
   name: J38722 Complete old store orders
   href: advanced/jobs/J38722.html
+- uid: leads
+  name: Leads
+  href: modules/crm/sales-force/sales-person-assignment-rules/leads.html
 - uid: levels
   name: Levels of control for composite products
   href: modules/logistics/wms/composite-products/control-levels.html
@@ -397,6 +403,12 @@ references:
 - uid: notifications
   name: Notifications
   href: modules/community/social-interactions/notifications/index.html
+- uid: opportunities
+  name: Opportunities
+  href: modules/crm/sales-force/sales-person-assignment-rules/opportunities.html
+- uid: orders-and-offers
+  name: Sales Orders & Offers
+  href: modules/crm/sales-force/sales-person-assignment-rules/sales-orders-and-offers.html
 - uid: orders-menu
   name: Orders
   href: modules/logistics/wms/wms-worker/orders/index.html

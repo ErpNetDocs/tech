@@ -6700,6 +6700,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/customers.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/customers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/index.md",
       "output": {
         ".html": {
@@ -6710,10 +6720,40 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/leads.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/leads.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/opportunities.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/opportunities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/rule-settings.md",
       "output": {
         ".html": {
           "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/rule-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/sales-orders-and-offers.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/sales-orders-and-offers.html"
         }
       },
       "version": ""

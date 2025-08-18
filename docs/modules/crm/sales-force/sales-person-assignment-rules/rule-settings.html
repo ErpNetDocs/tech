@@ -88,14 +88,14 @@
 <h1 id="rule-settings">Rule settings</h1>
 
 <p>Assignment Rules are configured in the <em>Sales Force → Definitions → Sales Person Assignment Rules</em> section.</p>
-<p>Each rule includes several key parameters:</p>
+<p>Each rule is defined by the following settings:</p>
 <h2 id="rule-availability-activation-conditions">Rule availability (activation conditions)</h2>
 <p>These settings determine whether the rule is eligible for evaluation:</p>
 <ul>
 <li><strong>Active</strong> – indicates whether the rule is currently enabled. Only active rules are considered by the system.</li>
 <li><strong>From Date</strong> / <strong>To Date</strong> – optional start and end dates that define a period when the rule is applicable. Useful for setting temporary rules.</li>
 </ul>
-<h2 id="rule-trigger-matching-conditions">Rule trigger (matching conditions)</h2>
+<h2 id="rule-triggers-matching-conditions">Rule triggers (matching conditions)</h2>
 <p>The criteria for applying a rule are defined by specifying values in <strong>condition fields</strong>.<br>
 The available condition fields are: <strong>Enterprise Company</strong>, <strong>Company Division</strong>, <strong>Sales Area</strong>, and <strong>Customer Type</strong>.</p>
 <p>When the system evaluates a rule, it compares each condition field with the corresponding value from the source record (e.g. Offer, Sales Order, Opportunity, Customer, Lead) or related records.<br>
@@ -109,9 +109,9 @@ For a rule to match:</p>
 <p>This setting controls how the assignment is performed. It involves two components:</p>
 <ul>
 <li><strong>Assignment application</strong> – specifies whether the rule applies to Customers (Customer or Lead) or to Documents (Offer, Sales Order, or Opportunity). One of these must be selected.</li>
-<li><strong>Sales Person</strong> – this is the user to whom the customer/document should be assigned.</li>
+<li><strong>Sales Person</strong> – specifies the user to whom the customer/document should be assigned.</li>
 </ul>
-<h2 id="rule-conflict-resolution-advanced-options">Rule conflict resolution (advanced options)</h2>
+<h2 id="advanced-options-rule-conflict-resolution">Advanced options (rule conflict resolution)</h2>
 <p>These settings define how the system resolves conflicts when multiple rules are applicable at the same time:</p>
 <ul>
 <li><strong>Priority</strong> – defines the importance level of the rule. Priority may be: <em>highest</em>, <em>high</em>, <em>medium</em>, <em>low</em>, <em>lowest</em>.<br>

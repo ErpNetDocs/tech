@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Work with Logistic Units | ERP.net Tech Docs </title>
+      <title>Opportunities | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Work with Logistic Units | ERP.net Tech Docs ">
+      <meta name="title" content="Opportunities | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../../../../../favicon.ico">
-      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../../../public/main.css">
-      <meta name="docfx:navrel" content="../../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
       
-      <meta name="docfx:rel" content="../../../../../">
+      <meta name="docfx:rel" content="../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales-force/sales-person-assignment-rules/opportunities.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../../../../public/docfx.min.js"></script>
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../../../index.html">
-            <img id="logo" class="svg" src="../../../../../logo.svg" alt="">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,20 +84,52 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="work-with-logistic-units">Work with Logistic Units</h1>
+        <article data-uid="opportunities">
+<h1 id="opportunities">Opportunities</h1>
 
-<p><a class="xref" href="../index.html">Logistic Units</a> (LU) are an item established for logistics operations, such as receving, storage, movement, and dispathing. It represents all physical units handled in the same manner during logistic operations. When working with LUs, it is possible to execute inbound, outbound,internal warehouse operations, as well as create them with ease.</p>
+<p>Salesperson assignment is automatically triggered whenever any of the following fields in an Opportunity are changed: <em>Enterprise Company, From Division, or Party</em>.<br>
+This allows the system to assign the most appropriate Leading <strong>Sales Person</strong> based on predefined assignment logic.</p>
+<p>The logic follows these main steps:</p>
+<h2 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h2>
+<p>Assignment Rules are automatically evaluated when any of the following fields in an Opportunity are updated:</p>
 <ul>
-<li><a href="Create_New_LU.html"></a></li>
-<li><a href="create_LUNs.html">Create multiple LUNs</a></li>
-<li><a href="working-with-lu.html">Work with Logistic Units</a></li>
+<li><em>Enterprise Company</em></li>
+<li><em>From Division</em></li>
+<li><em>Party</em></li>
 </ul>
+<p>In addition, the Party selected in the Opportunity must have a defined Customer record for the same Enterprise Company.</p>
+<h2 id="2-rule-evaluation">2. Rule evaluation</h2>
+<p>The system evaluates all <strong>active Sales Person Assignment Rules</strong> that are configured to <strong>apply to documents</strong>, based on the following conditions:</p>
+<ul>
+<li>The rule must be active on the Opportunity’s document date (i.e., the document’s date must fall between the rule’s <em>From Date</em> and <em>To Date</em>, if defined).</li>
+<li>The <em>Enterprise Company</em> specified in the rule must match the one in the Opportunity.</li>
+<li>The following fields in the rule must either match the values related to the Opportunity or be left unspecified:
+<ul>
+<li><em>Company Division</em> – as specified in the Opportunity (<em>From Company Division</em> field)</li>
+<li><em>Customer Type</em> – as specified in the Customer linked to the selected Party (<em>Customer Type</em> field)</li>
+<li><em>Sales Area</em> – as defined in the Customer’s Party (<em>Area</em> field)</li>
+</ul>
+</li>
+</ul>
+<p>If multiple rules match:</p>
+<ul>
+<li>The one with the <strong>highest Priority</strong> is selected.</li>
+<li>If multiple rules share the same priority, the rule with the <strong>highest Rule No.</strong> takes precedence.</li>
+</ul>
+<h2 id="3-assignment-execution">3. Assignment execution</h2>
+<p>Once the best-matching rule is identified, the system automatically assigns the corresponding <strong>Sales Person</strong> to the <em>Leading Sales Person</em> field in the Opportunity.</p>
+<ul>
+<li>If no applicable rule is found, the field remains empty.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the system can determine a Salesperson based on the current user or an existing Customer record, that assignment takes precedence over the rule-based logic.</p>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/logistic-units/How-to/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/sales-force/sales-person-assignment-rules/opportunities.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
