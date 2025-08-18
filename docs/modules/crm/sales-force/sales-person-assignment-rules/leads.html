@@ -87,36 +87,51 @@
         <article data-uid="leads">
 <h1 id="leads">Leads</h1>
 
-<p>Salesperson assignment is automatically triggered whenever a <strong>Lead</strong> is saved and the <em>Assigned To</em> field is empty.<br>
+<h2 id="assignment-logic">Assignment logic</h2>
+<p>Sales Person assignment is automatically triggered whenever a <strong>Lead</strong> is saved and the <em>Assigned To Sales Person</em> field is empty.<br>
 This allows the system to assign each lead to the most appropriate sales representative, based on the relationship with a known company and its customer profile.</p>
 <p>The logic follows these main steps:</p>
-<h2 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h2>
+<h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
 <p>Assignment Rules are automatically evaluated when the Lead is saved and <strong>all</strong> of the following conditions are met:</p>
 <ul>
-<li>The <em>Assigned To</em> field is empty</li>
+<li>The <em>Assigned To Sales Person</em> field is empty</li>
 <li>An <em>Identified Company</em> is selected in the Lead</li>
 <li>The <em>Identified Company</em> has a defined Customer record for the same Enterprise Company as the Lead</li>
 </ul>
-<h2 id="2-rule-evaluation">2. Rule evaluation</h2>
+<h3 id="2-rule-evaluation">2. Rule evaluation</h3>
 <p>The system evaluates all <strong>active Sales Person Assignment Rules</strong> that are configured to <strong>apply to customers</strong>, based on the following conditions:</p>
 <ul>
 <li>The rule must be active on the current date (i.e., today must fall between the rule’s <em>From Date</em> and <em>To Date</em>, if defined).</li>
 <li>The <em>Enterprise Company</em> specified in the rule must be the same as in the Lead.</li>
 <li>The following fields in the rule must either match the values defined in the related Customer record or be left unspecified:
 <ul>
-<li><em>Customer Type</em> – as defined in the Customer</li>
-<li><em>Sales Area</em> – as defined in the Customer’s Party</li>
+<li><em>Customer Type</em> – as defined in the Customer (<em>Customer Type</em> field)</li>
+<li><em>Sales Area</em> – as defined in the Customer’s Party (<em>Area</em> field)</li>
 </ul>
 </li>
 </ul>
 <p>If multiple rules match:</p>
 <ul>
 <li>The one with the <strong>highest Priority</strong> is selected.</li>
-<li>If multiple rules share the same priority, the rule with the <strong>highest Rule No.</strong> takes precedence.</li>
+<li>If multiple rules share the same priority, the rule with the <strong>highest Rule No</strong> takes precedence.</li>
 </ul>
-<h2 id="3-assignment-execution">3. Assignment execution</h2>
+<h3 id="3-assignment-execution">3. Assignment execution</h3>
 <p>Once the best-matching rule is identified, the system automatically assigns the corresponding <strong>Sales Person</strong> to the Lead.</p>
 <p>If a <em>Sales Person</em> has already been entered in the <em>Assigned To</em> field, no automatic assignment is performed.</p>
+<h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
+<p>The Lead form includes a UI function called <strong>Assign Default Sales Person</strong>, available from the <strong>Run</strong> menu of the record.</p>
+<p>This function allows users to manually apply the same assignment logic described above, even when a <em>Sales Person</em> is already selected.</p>
+<p>It performs validation before proceeding:</p>
+<ul>
+<li>It checks that an <em>Identified Company</em> is selected.</li>
+<li>It confirms that this company has a defined Customer record for the same Enterprise Company as the Lead.</li>
+</ul>
+<p>If these conditions are met, the user is prompted to confirm the reassignment. Upon confirmation, the system evaluates the applicable rules and updates the <em>Assigned To Sales Person</em> field accordingly.</p>
+<p>This is useful when rules are introduced or changed after the lead has been created, allowing updates to reflect current logic.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The function is only available for saved leads and is disabled while in edit mode or if the lead is already closed.</p>
+</div>
 
 </article>
 

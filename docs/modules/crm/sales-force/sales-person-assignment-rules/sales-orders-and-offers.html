@@ -88,8 +88,8 @@
 <h1 id="sales-orders--offers">Sales Orders &amp; Offers</h1>
 
 <h2 id="assignment-logic">Assignment logic</h2>
-<p>Sales Person assignment is automatically triggered whenever a Sales Order or Offer is saved, and the <em>Sales Person</em> field is empty.<br>
-This enables the system to evaluate the context of the document and assign it to the most appropriate person in charge.</p>
+<p>Sales Person assignment is automatically triggered whenever a <strong>Sales Order</strong> or <strong>Offer</strong> is saved, and the <em>Sales Person</em> field is empty.<br>
+This enables the system to evaluate the context of the document and assign it to the most appropriate <strong>Sales Person</strong> in charge.</p>
 <p>The logic follows these main steps:</p>
 <h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
 <p>Assignment Rules are automatically evaluated when the document is saved, and <strong>all</strong> of the following conditions are met:</p>
@@ -120,9 +120,9 @@ This enables the system to evaluate the context of the document and assign it to
 <p>If a <em>Sales Person</em> is already assigned, the assignment remains unchanged.</p>
 <h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
 <p>The Sales Order form includes a UI function called <strong>Assign Default Sales Person</strong>, available from the <strong>Run</strong> menu for each record.</p>
-<p>This function allows users to manually apply the same assignment logic described above, even when a Sales Person is already selected.<br>
+<p>This function allows users to manually apply the same assignment logic described above, even when a <em>Sales Person</em> is already selected.<br>
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).</p>
-<p>This is especially useful when rules are introduced or updated after documents have been created, enabling users or managers to update existing assignments accordingly.</p>
+<p>TThis is particularly useful when rules are introduced or modified after documents have already been created, enabling realignment with the current assignment strategy.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The function is only available for saved documents and is disabled when the document has a state <em>Released</em> or higher.</p>

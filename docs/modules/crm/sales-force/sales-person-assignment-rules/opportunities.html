@@ -88,7 +88,7 @@
 <h1 id="opportunities">Opportunities</h1>
 
 <h2 id="assignment-logic">Assignment logic</h2>
-<p>Sales Person assignment is automatically triggered whenever any of the following fields in an Opportunity are changed: <em>Enterprise Company, From Division, or Party</em>.<br>
+<p>Sales Person assignment is automatically triggered whenever any of the following fields in an <strong>Opportunity</strong> are changed: <em>Enterprise Company, From Division, or Party</em>.<br>
 This allows the system to assign the most appropriate <strong>Leading Sales Person</strong> based on predefined assignment logic.</p>
 <p>The logic follows these main steps:</p>
 <h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
@@ -126,7 +126,7 @@ This allows the system to assign the most appropriate <strong>Leading Sales Pers
 </div>
 <h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
 <p>The Opportunity form includes a UI function called <strong>Assign Default Salesperson</strong>, available from the <strong>Run</strong> menu of the record.</p>
-<p>This function allows users to manually apply the same assignment logic described above — even when a <em>Sales Person</em> is already selected.<br>
+<p>This function allows users to manually apply the same assignment logic described above, even when a <em>Leading Sales Person</em> is already selected.<br>
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).</p>
 <p>Before executing, the system verifies that the selected Party has a defined Customer record for the same Enterprise Company as the Enterprise Company of the document.<br>
 If not, the function is aborted with an appropriate error message.<br>

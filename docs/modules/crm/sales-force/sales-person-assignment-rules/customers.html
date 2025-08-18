@@ -87,34 +87,44 @@
         <article data-uid="customers">
 <h1 id="customers">Customers</h1>
 
-<p>Salesperson assignment is automatically triggered whenever a <strong>Customer</strong> record is saved and the <em>Sales Person</em> field is empty.<br>
+<h2 id="assignment-logic">Assignment logic</h2>
+<p>Sales Person assignment is automatically triggered whenever a <strong>Customer</strong> record is saved, and the <em>Sales Person</em> field is empty.<br>
 This allows the system to assign each customer to the most appropriate sales representative based on key customer attributes.</p>
 <p>The logic follows these main steps:</p>
-<h2 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h2>
+<h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
 <p>Assignment Rules are automatically evaluated when the Customer is saved and the following condition is met:</p>
 <ul>
 <li>The <em>Sales Person</em> field is empty</li>
 </ul>
-<h2 id="2-rule-evaluation">2. Rule evaluation</h2>
+<h3 id="2-rule-evaluation">2. Rule evaluation</h3>
 <p>The system evaluates all <strong>active Sales Person Assignment Rules</strong> that are configured to <strong>apply to customers</strong>, based on the following conditions:</p>
 <ul>
 <li>The rule must be active on the current date (i.e., today must fall between the rule’s <em>From Date</em> and <em>To Date</em>, if defined).</li>
 <li>The <em>Enterprise Company</em> specified in the rule must be the same as in the customer record.</li>
 <li>The following fields in the rule must either match the values related to the customer or be left unspecified:
 <ul>
-<li><em>Customer Type</em> – as defined in the Customer</li>
-<li><em>Sales Area</em> – as defined in the Customer’s Party</li>
+<li><em>Customer Type</em> – as defined in the Customer (<em>Area</em> field)</li>
+<li><em>Sales Area</em> – as defined in the Customer’s Party (<em>Area</em> field)</li>
 </ul>
 </li>
 </ul>
 <p>If multiple rules match:</p>
 <ul>
 <li>The one with the <strong>highest Priority</strong> is selected.</li>
-<li>If multiple rules share the same priority, the rule with the <strong>highest Rule No.</strong> takes precedence.</li>
+<li>If multiple rules share the same priority, the rule with the <strong>highest Rule No</strong> takes precedence.</li>
 </ul>
-<h2 id="3-assignment-execution">3. Assignment execution</h2>
+<h3 id="3-assignment-execution">3. Assignment execution</h3>
 <p>Once the best-matching rule is identified, the system automatically assigns the corresponding <strong>Sales Person</strong> to the customer record.</p>
-<p>If a <em>Sales Person</em> has already been entered, no automatic assignment is performed.</p>
+<p>If a <em>Sales Person</em> is already assigned, the assignment remains unchanged.</p>
+<h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
+<p>The Customer form includes a UI function called <strong>Assign Default Sales Person</strong>, available from the <strong>Run</strong> menu of the record.</p>
+<p>This function allows users to manually apply the same assignment logic described above, even when a <em>Sales Person</em> is already selected.<br>
+It evaluates the current customer data and, if a matching rule is found, replaces the existing Sales Person with the one specified in the rule.</p>
+<p>This is particularly useful when assignment rules are introduced or modified after customer records have been created, allowing users to align existing assignments with the updated logic.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The function is available only for saved customer records and is disabled while in edit mode.</p>
+</div>
 
 </article>
 
