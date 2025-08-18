@@ -34,7 +34,7 @@ This setting controls how the assignment is performed. It involves two component
 - **Sales Person** – this is the user to whom the customer/document should be assigned.  
 
 
-## Rule conflict resolution (advanced options)
+## Rule conflict resolution
 These settings define how the system resolves conflicts when multiple rules are applicable at the same time:  
 
 - **Priority** – defines the importance level of the rule. Priority may be: *highest*, *high*, *medium*, *low*, *lowest*.  
