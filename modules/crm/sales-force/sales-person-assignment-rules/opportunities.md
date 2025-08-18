@@ -4,7 +4,7 @@ uid: opportunities
 
 # Opportunities  
 
-## Assignment Logic  
+## Assignment logic  
 Sales Person assignment is automatically triggered whenever any of the following fields in an Opportunity are changed: *Enterprise Company, From Division, or Party*.  
 This allows the system to assign the most appropriate **Leading Sales Person** based on predefined assignment logic.  
 
