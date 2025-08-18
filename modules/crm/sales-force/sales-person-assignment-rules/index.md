@@ -44,7 +44,7 @@ This feature allows team managers to quickly reassign records in line with curre
 ## Learn more
 For more details about configuring and applying assignment rules, see:
 
-- [**Rule Settings**](./Rule-Settings.md) – how to configure assignment rules and their key parameters.  
+- [**Rule settings**](./Rule-Settings.md) – how to configure assignment rules and their key parameters.  
 - [**Sales Orders & Offers**](./Sales-Orders-Offers.md) – how rules are applied when saving sales documents.  
 - [**Opportunities**](./Opportunities.md) – how rules are triggered when opportunity fields are updated.  
 - [**Customers**](./Customers.md) – how rules assign salespeople to customer records.  
