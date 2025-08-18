@@ -15,7 +15,7 @@ These settings determine whether the rule is eligible for evaluation:
 - **From Date** / **To Date** – optional start and end dates that define a period when the rule is applicable. Useful for setting temporary rules.  
 
 
-## Rule trigger (matching conditions) 
+## Rule triggers (matching conditions) 
 The criteria for applying a rule are defined by specifying values in **condition fields**.  
 The available condition fields are: **Enterprise Company**, **Company Division**, **Sales Area**, and **Customer Type**.  
 
