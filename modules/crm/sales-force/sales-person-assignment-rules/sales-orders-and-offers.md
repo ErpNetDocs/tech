@@ -5,8 +5,8 @@ uid: orders-and-offers
 # Sales Orders & Offers  
 
 ## Assignment logic  
-Sales Person assignment is automatically triggered whenever a Sales Order or Offer is saved, and the *Sales Person* field is empty.  
-This enables the system to evaluate the context of the document and assign it to the most appropriate person in charge.  
+Sales Person assignment is automatically triggered whenever a **Sales Order** or **Offer** is saved, and the *Sales Person* field is empty.  
+This enables the system to evaluate the context of the document and assign it to the most appropriate **Sales Person** in charge.  
 
 The logic follows these main steps:  
 
@@ -42,10 +42,10 @@ If a *Sales Person* is already assigned, the assignment remains unchanged.
 
 The Sales Order form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu for each record.  
 
-This function allows users to manually apply the same assignment logic described above, even when a Sales Person is already selected.  
+This function allows users to manually apply the same assignment logic described above, even when a *Sales Person* is already selected.  
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
 
-This is especially useful when rules are introduced or updated after documents have been created, enabling users or managers to update existing assignments accordingly.  
+TThis is particularly useful when rules are introduced or modified after documents have already been created, enabling realignment with the current assignment strategy.  
 
 > [!NOTE]  
 > The function is only available for saved documents and is disabled when the document has a state *Released* or higher.  
