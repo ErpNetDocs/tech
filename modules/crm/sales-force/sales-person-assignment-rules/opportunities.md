@@ -5,7 +5,7 @@ uid: opportunities
 # Opportunities  
 
 ## Assignment logic  
-Sales Person assignment is automatically triggered whenever any of the following fields in an **Opportunity** are changed: *Enterprise Company, From Division, or Party*.  
+Sales Person assignment is automatically triggered whenever any of the following fields in an **Opportunity** are changed: *Enterprise Company, From Company Division, or Party*.  
 This allows the system to assign the most appropriate **Leading Sales Person** based on predefined assignment logic.  
 
 The logic follows these main steps:  
@@ -13,10 +13,10 @@ The logic follows these main steps:
 ### 1. Triggering rule evaluation  
 Assignment Rules are automatically evaluated when any of the following fields in an Opportunity are updated: 
 - *Enterprise Company*  
-- *From Division*  
+- *From Company Division*  
 - *Party*  
 
-In addition, the Party selected in the Opportunity must have a defined Customer record for the same Enterprise Company as the document's Enterprise Company.  
+In addition, the Party selected in the Opportunity must have a defined Customer record for the same Enterprise Company as the Opportunity's Enterprise Company.  
 
 
 ### 2. Rule evaluation  
@@ -41,7 +41,6 @@ If no applicable rule is found, the field remains empty.
 
 > [!NOTE]  
 > If the system can determine a Sales Person based on the current user or an existing Customer record, that assignment takes precedence over the rule-based logic.
-
 
 
 ## Manual assignment via UI function  
