@@ -42,8 +42,7 @@ This feature allows team managers to quickly reassign records in line with curre
 
 
 ## Learn more
-Assignment rules are evaluated differently depending on the type of record.  
-For details, see:
+For more details about configuring and applying assignment rules, see:
 
 - [**Rule Settings**](./Rule-Settings.md) – how to configure assignment rules and their key parameters.  
 - [**Sales Orders & Offers**](./Sales-Orders-Offers.md) – how rules are applied when saving sales documents.  
