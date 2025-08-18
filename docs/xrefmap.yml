@@ -430,6 +430,9 @@ references:
 - uid: resp-priority-time-logging
   name: resp-priority-time-logging
   href: modules/projects/agile/cases/resp-priority-time-logging.html
+- uid: rule-settings
+  name: Rule settings
+  href: modules/crm/sales-force/sales-person-assignment-rules/rule-settings.html
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
