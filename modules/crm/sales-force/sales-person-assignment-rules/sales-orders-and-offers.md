@@ -5,7 +5,7 @@ uid: orders-and-offers
 # Sales Orders & Offers  
 
 Salesperson assignment is automatically triggered whenever a Sales Order or Offer is saved, and the *Salesperson* field is empty.  
-This enables the system to evaluate the document context and assign it to the most appropriate person in charge.  
+This enables the system to evaluate the context of the document and assign it to the most appropriate person in charge.  
 
 The logic follows these main steps:  
 
@@ -13,7 +13,7 @@ The logic follows these main steps:
 ## 1. Triggering rule evaluation  
 Assignment Rules are automatically evaluated when the document is saved, and **all** of the following conditions are met:  
 
-- The *Salesperson* field is empty  
+- The *Sales Person* field is empty  
 - A *Customer* is selected in the document  
 
 
@@ -29,23 +29,23 @@ The system evaluates all **active Sales Person Assignment Rules** that are confi
 
 If multiple rules match:  
 - The one with the **highest Priority** is selected.  
-- If multiple rules share the same priority, the rule with the **highest Rule No.** takes precedence.  
+- If multiple rules share the same priority, the rule with the **highest Rule No** takes precedence.  
 
 
 ## 3. Assignment execution  
 Once the best-matching rule is identified, the system automatically assigns the corresponding **Sales Person** to the document.  
 
-If a *Salesperson* has already been entered, no automatic assignment is performed.  
+If a *Sales Person* is already assigned, the assignment remains unchanged.
 
 
 ## Manual assignment via UI function  
 
-The Sales Order form includes a UI function called *Assign Default Salesperson*, available from the **Run** menu for each record.  
+The Sales Order form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu for each record.  
 
-This function allows users to manually apply the same assignment logic described above, even when a Salesperson is already selected.  
+This function allows users to manually apply the same assignment logic described above, even when a Sales Person is already selected.  
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
 
 This is especially useful when rules are introduced or updated after documents have been created, enabling users or managers to update existing assignments accordingly.  
 
 > [!NOTE]  
-> The function is only available for saved documents and is disabled when the document has a status of *Released* or higher.  
+> The function is only available for saved documents and is disabled when the document has a state *Released* or higher.  
