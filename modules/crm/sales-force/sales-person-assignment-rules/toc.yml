@@ -2,4 +2,11 @@
   href: index.md
 - name: Rule settings
   href: rule-settings.md
-  
+- name: Sales Orders & Offers
+  href: sales-orders-and-offers.md
+- name: Opportunities
+  href: opportunities.md
+- name: Customers
+  href: customers.md
+- name: Leads
+  href: leads.md
