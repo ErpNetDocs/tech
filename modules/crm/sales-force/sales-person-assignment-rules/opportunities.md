@@ -58,5 +58,5 @@ If the condition is met, the user is prompted to confirm the reassignment.
 This is particularly useful when rules are introduced or modified after opportunities have already been created, enabling realignment with the current assignment strategy.  
 
 > [!NOTE]  
-> The function is only available for saved opportunities and is disabled when the document has a state *Released* or higher.  
+> The function is disabled while the document is in edit mode or when its statе is Released or higher.
 
