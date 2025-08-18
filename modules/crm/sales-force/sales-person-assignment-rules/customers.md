@@ -46,4 +46,4 @@ It evaluates the current customer data and, if a matching rule is found, replace
 This is particularly useful when assignment rules are introduced or modified after customer records have been created, allowing users to align existing assignments with the updated logic.  
 
 > [!NOTE]  
-> The function is available only for saved customer records and is disabled while in edit mode.  
+> The function is disabled while the customer is in edit mode.
