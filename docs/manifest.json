@@ -6690,6 +6690,52 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/sales-force/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/sales-force/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/sales-force/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/crm/sales/create-order.md",
       "output": {
         ".html": {

@@ -433,6 +433,9 @@ references:
 - uid: sales-order-row-types
   name: Sales order row types
   href: modules/crm/sales/sales-concepts/sales-order-row-types.html
+- uid: sales-person-assignment-rules
+  name: Sales Person Assignment Rules
+  href: modules/crm/sales-force/sales-person-assignment-rules/index.html
 - uid: security
   name: security
   href: modules/projects/agile/security.html
