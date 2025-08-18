@@ -4,20 +4,20 @@ uid: orders-and-offers
 
 # Sales Orders & Offers  
 
-Salesperson assignment is automatically triggered whenever a Sales Order or Offer is saved, and the *Salesperson* field is empty.  
+## Assignment logic  
+Sales Person assignment is automatically triggered whenever a Sales Order or Offer is saved, and the *Sales Person* field is empty.  
 This enables the system to evaluate the context of the document and assign it to the most appropriate person in charge.  
 
 The logic follows these main steps:  
 
-
-## 1. Triggering rule evaluation  
+### 1. Triggering rule evaluation  
 Assignment Rules are automatically evaluated when the document is saved, and **all** of the following conditions are met:  
 
 - The *Sales Person* field is empty  
 - A *Customer* is selected in the document  
 
 
-## 2. Rule evaluation  
+### 2. Rule evaluation  
 The system evaluates all **active Sales Person Assignment Rules** that are configured to **apply to documents**, based on the following conditions:  
 
 - The rule must be active on the document’s date (i.e., the document’s date must fall between the rule’s *From Date* and *To Date*, if defined).  
@@ -32,7 +32,7 @@ If multiple rules match:
 - If multiple rules share the same priority, the rule with the **highest Rule No** takes precedence.  
 
 
-## 3. Assignment execution  
+### 3. Assignment execution  
 Once the best-matching rule is identified, the system automatically assigns the corresponding **Sales Person** to the document.  
 
 If a *Sales Person* is already assigned, the assignment remains unchanged.
