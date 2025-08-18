@@ -9,6 +9,9 @@
 - name: Sales
   href: sales/toc.yml
   topicHref: sales/index.md
+- name: Sales Force
+  href: sales-force/toc.yml
+  topicHref: sales-force/index.md
 - name: Invoicing
   href: invoicing/toc.yml
   topicHref: invoicing/index.md
