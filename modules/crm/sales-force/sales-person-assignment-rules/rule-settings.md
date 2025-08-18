@@ -6,7 +6,7 @@ uid: rule-settings
 
 Assignment Rules are configured in the *Sales Force → Definitions → Sales Person Assignment Rules* section.  
 
-Each rule includes several key parameters:  
+Each rule is defined by the following settings:
 
 ## Rule availability (activation conditions)  
 These settings determine whether the rule is eligible for evaluation:  
