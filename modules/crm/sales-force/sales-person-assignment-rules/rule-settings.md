@@ -31,7 +31,7 @@ For a rule to match:
 This setting controls how the assignment is performed. It involves two components:  
 
 - **Assignment application** – specifies whether the rule applies to Customers (Customer or Lead) or to Documents (Offer, Sales Order, or Opportunity). One of these must be selected.  
-- **Sales Person** – this is the user to whom the customer/document should be assigned.  
+- **Sales Person** – specifies the user to whom the customer/document should be assigned.  
 
 
 ## Rule conflict resolution
