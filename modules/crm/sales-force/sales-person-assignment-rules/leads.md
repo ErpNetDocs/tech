@@ -54,7 +54,5 @@ If these conditions are met, the user is prompted to confirm the reassignment. U
 This is useful when rules are introduced or changed after the lead has been created, allowing updates to reflect current logic.  
 
 > [!NOTE]  
-> The function is only available for saved leads and is disabled while in edit mode or if the lead is already closed.  
-
-
+> The function is disabled while the lead is in edit mode or when it is already closed.
 
