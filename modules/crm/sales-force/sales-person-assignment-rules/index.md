@@ -35,7 +35,7 @@ Assignment rules take effect when a sales-related document or definition is save
 This ensures that the assignment is consistently controlled by the configured rules — not by the individual user.
 
 
-## Quick assignment editing in the UI
+## Quick assignment editing with UI functions
 If you need to apply rules to existing records, you can update assignments directly from the related document or definition (e.g., Opportunity, Offer, Customer). Select **Run** on the record, then choose **Assign Default Salesperson** from the dropdown menu. The system will apply the relevant rule — even replacing a manually selected salesperson — with the default one defined in the rules.  
 
 This feature allows team managers to quickly reassign records in line with current or newly introduced assignment rules.
