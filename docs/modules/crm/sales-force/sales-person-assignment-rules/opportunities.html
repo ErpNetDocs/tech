@@ -88,17 +88,17 @@
 <h1 id="opportunities">Opportunities</h1>
 
 <h2 id="assignment-logic">Assignment logic</h2>
-<p>Sales Person assignment is automatically triggered whenever any of the following fields in an <strong>Opportunity</strong> are changed: <em>Enterprise Company, From Division, or Party</em>.<br>
+<p>Sales Person assignment is automatically triggered whenever any of the following fields in an <strong>Opportunity</strong> are changed: <em>Enterprise Company, From Company Division, or Party</em>.<br>
 This allows the system to assign the most appropriate <strong>Leading Sales Person</strong> based on predefined assignment logic.</p>
 <p>The logic follows these main steps:</p>
 <h3 id="1-triggering-rule-evaluation">1. Triggering rule evaluation</h3>
 <p>Assignment Rules are automatically evaluated when any of the following fields in an Opportunity are updated:</p>
 <ul>
 <li><em>Enterprise Company</em></li>
-<li><em>From Division</em></li>
+<li><em>From Company Division</em></li>
 <li><em>Party</em></li>
 </ul>
-<p>In addition, the Party selected in the Opportunity must have a defined Customer record for the same Enterprise Company as the document's Enterprise Company.</p>
+<p>In addition, the Party selected in the Opportunity must have a defined Customer record for the same Enterprise Company as the Opportunity's Enterprise Company.</p>
 <h3 id="2-rule-evaluation">2. Rule evaluation</h3>
 <p>The system evaluates all <strong>active Sales Person Assignment Rules</strong> that are configured to <strong>apply to documents</strong>, based on the following conditions:</p>
 <ul>
@@ -134,7 +134,7 @@ If the condition is met, the user is prompted to confirm the reassignment.</p>
 <p>This is particularly useful when rules are introduced or modified after opportunities have already been created, enabling realignment with the current assignment strategy.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The function is only available for saved opportunities and is disabled when the document has a state <em>Released</em> or higher.</p>
+<p>The function is disabled while the document is in edit mode or when its statе is Released or higher.</p>
 </div>
 
 </article>

@@ -121,7 +121,7 @@ This allows the system to assign each lead to the most appropriate sales represe
 <h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
 <p>The Lead form includes a UI function called <strong>Assign Default Sales Person</strong>, available from the <strong>Run</strong> menu of the record.</p>
 <p>This function allows users to manually apply the same assignment logic described above, even when a <em>Sales Person</em> is already selected.</p>
-<p>It performs validation before proceeding:</p>
+<p>It performs the following validation before proceeding:</p>
 <ul>
 <li>It checks that an <em>Identified Company</em> is selected.</li>
 <li>It confirms that this company has a defined Customer record for the same Enterprise Company as the Lead.</li>
@@ -130,7 +130,7 @@ This allows the system to assign each lead to the most appropriate sales represe
 <p>This is useful when rules are introduced or changed after the lead has been created, allowing updates to reflect current logic.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The function is only available for saved leads and is disabled while in edit mode or if the lead is already closed.</p>
+<p>The function is disabled while the lead is in edit mode or when it is already closed.</p>
 </div>
 
 </article>
