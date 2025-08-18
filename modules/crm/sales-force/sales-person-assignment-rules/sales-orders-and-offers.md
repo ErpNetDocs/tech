@@ -36,3 +36,16 @@ If multiple rules match:
 Once the best-matching rule is identified, the system automatically assigns the corresponding **Sales Person** to the document.  
 
 If a *Salesperson* has already been entered, no automatic assignment is performed.  
+
+
+## Manual assignment via UI function  
+
+The Sales Order form includes a UI function called *Assign Default Salesperson*, available from the **Run** menu for each record.  
+
+This function allows users to manually apply the same assignment logic described above, even when a Salesperson is already selected.  
+It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
+
+This is especially useful when rules are introduced or updated after documents have been created, enabling users or managers to update existing assignments accordingly.  
+
+> [!NOTE]  
+> The function is only available for saved documents and is disabled when the document has a status of *Released* or higher.  
