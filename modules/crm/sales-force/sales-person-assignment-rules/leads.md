@@ -44,7 +44,7 @@ The Lead form includes a UI function called **Assign Default Sales Person**, ava
 
 This function allows users to manually apply the same assignment logic described above, even when a *Sales Person* is already selected.  
 
-It performs validation before proceeding:  
+It performs the following validation before proceeding:  
 
 - It checks that an *Identified Company* is selected.  
 - It confirms that this company has a defined Customer record for the same Enterprise Company as the Lead.  
