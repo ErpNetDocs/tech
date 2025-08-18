@@ -48,4 +48,4 @@ It evaluates the applicable rules and replaces the current assignment with the o
 TThis is particularly useful when rules are introduced or modified after documents have already been created, enabling realignment with the current assignment strategy.  
 
 > [!NOTE]  
-> The function is only available for saved documents and is disabled when the document has a state *Released* or higher.  
+> The function is disabled while the document is in edit mode or when its statе is *Released* or higher.  
