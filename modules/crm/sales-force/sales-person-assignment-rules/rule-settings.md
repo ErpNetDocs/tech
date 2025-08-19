@@ -40,7 +40,7 @@ The rule is evaluated when the following fields from the relevant customer, lead
   - **Documents**: includes Offers, Sales Orders, and Opportunities.
 
 - **Sales Person**  
-  The person to whom the customer/document should be assigned.
+  The sales person to whom the customer/document should be assigned.
 
 ## Conflict resolution
 
