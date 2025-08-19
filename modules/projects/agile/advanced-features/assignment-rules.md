@@ -2,7 +2,7 @@
 uid: assignment-rules
 ---
 
-## Assignment rules
+# Assignment rules
 
 Case assignments in **Agile PM** can be managed either **manually** or **automatically**. While manual assignment is always available, organizations can streamline their workflows by defining **Assignment Rules** — a flexible system for automatic case routing based on predefined criteria.
 
@@ -73,6 +73,48 @@ This setting defines who the Case will be assigned to when the rule is triggered
 > This setup provides flexibility to support both static and dynamic assignment patterns, allowing the system to reflect organizational structure, business rules, and real-time actions.
 
 ![Rule Form](pictures/rule-form2.png)
+
+
+# Rule logic
+
+Assignment Rules are automatically evaluated whenever a Case is updated and one or more of its Condition Fields change. This enables the system to respond dynamically to changes in the Case’s structure, categorization, or state.
+
+The logic follows these main steps:
+
+## 1. Triggering rule evaluation
+
+When any of the following **Condition Fields** in the Case is changed:
+
+- Project  
+- Project Area  
+- Project Milestone  
+- Case Category  
+- Stakeholder Party  
+- System State  
+- User State  
+
+The system begins rule evaluation based on the updated values.
+
+## 2. Rule evaluation
+
+The system evaluates all **active** Assignment Rules and applies the following conditions:
+
+- The rule must be active (**Active = True**)  
+- The current date must be within the rule’s validity period (**From Date** and **To Date**)  
+- Each of the Condition Fields in the rule must either:  
+  - Match the current value in the Case, or  
+  - Be left empty, which means “applies to all”
+
+If multiple rules match:
+
+- The rule with the highest **Priority** is selected  
+- If multiple rules share the same priority, the rule with the highest **Rule No.** takes precedence.
+
+## 3. Assignment execution
+
+Once the best-matching rule is identified, the system determines the appropriate user based on the rule’s **Assignment Kind** (e.g., _Area Responsible_, _Specific User_, _Current User_).  
+That user is then assigned to the Case by updating its **Assigned To User** field.
+
 
 #### Example
 
