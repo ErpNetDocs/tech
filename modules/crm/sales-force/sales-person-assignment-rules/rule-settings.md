@@ -37,7 +37,7 @@ The rule is evaluated when the following fields from the relevant customer, lead
 - **Apply To**  
   Defines what the rule applies to:  
   - **Customers**: includes both Customers and Leads.  
-  - **Documents**: includes Offers, Sales Orders, and Opportunities.
+  - **Documents**: includes Offers, Sales Orders, and Opportunities.<br>
 
 - **Sales Person**  
   The sales person to whom the customer/document should be assigned.
