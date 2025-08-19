@@ -53,7 +53,7 @@ references:
   name: Country-specific functionality
   href: reference/country-specific-functionality.html
 - uid: assignment-rules
-  name: assignment-rules
+  name: Assignment rules
   href: modules/projects/agile/advanced-features/assignment-rules.html
 - uid: attributechanged
   name: ATTRIBUTECHANGED
