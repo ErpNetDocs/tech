@@ -87,39 +87,67 @@
         <article data-uid="rule-settings">
 <h1 id="rule-settings">Rule settings</h1>
 
-<p>Assignment Rules are configured in the <em>Sales Force → Definitions → Sales Person Assignment Rules</em> section.</p>
-<p>Each rule is defined by the following settings:</p>
-<h2 id="rule-availability-activation-conditions">Rule availability (activation conditions)</h2>
-<p>These settings determine whether the rule is eligible for evaluation:</p>
+<p><strong>Sales Person Assignment Rules</strong> are used to automatically assign a sales person to customers, leads, or sales-related documents, based on selected criteria. This topic explains the available configuration options for each rule.</p>
+<h2 id="rule-availability">Rule availability</h2>
+<p>Each rule can be enabled or disabled and limited to a specific period:</p>
 <ul>
-<li><strong>Active</strong> – indicates whether the rule is currently enabled. Only active rules are considered by the system.</li>
-<li><strong>From Date</strong> / <strong>To Date</strong> – optional start and end dates that define a period when the rule is applicable. Useful for setting temporary rules.</li>
-</ul>
-<h2 id="rule-triggers-matching-conditions">Rule triggers (matching conditions)</h2>
-<p>The criteria for applying a rule are defined by specifying values in <strong>condition fields</strong>.<br>
-The available condition fields are: <strong>Enterprise Company</strong>, <strong>Company Division</strong>, <strong>Sales Area</strong>, and <strong>Customer Type</strong>.</p>
-<p>When the system evaluates a rule, it compares each condition field with the corresponding value from the source record (e.g. Offer, Sales Order, Opportunity, Customer, Lead) or related records.<br>
-For a rule to match:</p>
+<li><p><strong>Active</strong><br>
+Indicates whether the rule is active. Only active rules are considered during assignment.</p>
+</li>
+<li><p><strong>From Date / To Date</strong><br>
+Optional date range in which the rule is valid.</p>
 <ul>
-<li>The <strong>Enterprise Company</strong> in the rule must match the one in the source record.</li>
-<li>The other condition fields must either match the corresponding values in the source record or be left empty in the rule.</li>
-<li>You can define one or more condition fields — the more you specify, the more narrowly the rule will apply.</li>
+<li>If empty, the rule is always valid.</li>
+<li>If both dates are set, the system applies the rule only within that range.</li>
+<li>If only one date is set, the rule is considered valid from or until that date.</li>
 </ul>
-<h2 id="assignment-logic-execution-behavior">Assignment logic (execution behavior)</h2>
-<p>This setting controls how the assignment is performed. It involves two components:</p>
+</li>
+</ul>
+<h2 id="rule-triggers">Rule triggers</h2>
+<p>The rule is evaluated when the following fields from the relevant customer, lead, or sales document match the values specified in the rule:</p>
 <ul>
-<li><strong>Assignment application</strong> – specifies whether the rule applies to Customers (Customer or Lead) or to Documents (Offer, Sales Order, or Opportunity). One of these must be selected.</li>
-<li><strong>Sales Person</strong> – specifies the user to whom the customer/document should be assigned.</li>
+<li><p><strong>Enterprise Company</strong><br>
+Must match the Enterprise Company of the record to which the rule is being applied. (This field is mandatory.)</p>
+</li>
+<li><p><strong>Company Division</strong>, <strong>Sales Area</strong>, <strong>Customer Type</strong><br>
+Optional filters. If filled, the value must be the same as in the relevant customer, lead, or document.
+If left empty, the rule will match any value for that field.</p>
+</li>
 </ul>
-<h2 id="advanced-options-rule-conflict-resolution">Advanced options (rule conflict resolution)</h2>
-<p>These settings define how the system resolves conflicts when multiple rules are applicable at the same time:</p>
+<blockquote>
+<p>The more filters you set, the more specific the rule becomes. A rule with empty fields is more generic and may match a wider range of cases.</p>
+</blockquote>
+<h2 id="assignment-target">Assignment target</h2>
 <ul>
-<li><strong>Priority</strong> – defines the importance level of the rule. Priority may be: <em>highest</em>, <em>high</em>, <em>medium</em>, <em>low</em>, <em>lowest</em>.<br>
-When multiple rules match the same conditions, the one with the highest priority is applied.</li>
-<li><strong>Rule No</strong> – a unique sequence number used to determine precedence when two or more rules share the same priority.<br>
-In such cases, the rule with the highest number is applied.<br>
-The rule number is auto-generated but can be modified manually if needed.</li>
+<li><p><strong>Apply To</strong><br>
+Defines what the rule applies to:</p>
+<ul>
+<li><strong>Customers</strong>: includes both Customers and Leads.</li>
+<li><strong>Documents</strong>: includes Offers, Sales Orders, and Opportunities.</li>
 </ul>
+</li>
+<li><p><strong>Sales Person</strong><br>
+The person to whom the customer/document should be assigned.</p>
+</li>
+</ul>
+<h2 id="conflict-resolution">Conflict resolution</h2>
+<p>When multiple rules match a given scenario, the system uses the following criteria to choose the most appropriate one:</p>
+<ul>
+<li><p><strong>Priority</strong><br>
+Select from: Highest, High, Medium, Low, Lowest.<br>
+Rules with higher priority are preferred over lower-priority ones.</p>
+</li>
+<li><p><strong>Rule No</strong><br>
+A unique number assigned to each rule.</p>
+<ul>
+<li>Used as a tie-breaker when two or more rules share the same priority.</li>
+<li>The rule with the higher number will be used.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Tip: You can manually edit Rule No to control the order in which rules are evaluated.</p>
+</blockquote>
 
 </article>
 
