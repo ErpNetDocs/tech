@@ -24,7 +24,7 @@ Each rule can be enabled or disabled and limited to a specific time period:
   - If both dates are set, the system applies the rule only within that range.  
   - If only one date is set, the rule is considered valid from or until that date.
 
-## Rule Triggers
+## Rule triggers
 
 The rule is evaluated when one or more of the following fields from the Case match the values specified in the rule: *Project*, *Project Area*, *Project Milestone*, *Case Category*, *Stakeholder Party*, *System State*, and *User State*.
 
@@ -33,7 +33,7 @@ The rule is evaluated when one or more of the following fields from the Case mat
 
 > The more fields you fill in, the more specific the rule becomes. Rules with empty condition fields are more general and apply to a broader range of cases.
 
-## Conflict Resolution
+## Conflict resolution
 
 When multiple rules match a given scenario, the system uses the following criteria to select which one to apply:
 
@@ -48,7 +48,7 @@ When multiple rules match a given scenario, the system uses the following criter
 
 > Tip: You can manually adjust Rule No to influence rule precedence.
 
-## Assignment Logic
+## Assignment logic
 
 This setting defines who the Case will be assigned to when the rule is triggered:
 
