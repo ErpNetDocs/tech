@@ -54,23 +54,25 @@ To begin, add products to the order. There are several ways to do this:
 
    ![pictures](pictures/add_button.png)
    
-   When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**. The **Discount** field is associated with _LineStandardDiscountPercent_.
+   When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
+
+   Note that the **Discount** field is associated with **_LineStandardDiscountPercent_**.
 
    ![pictures](pictures/added_product.png)
 
-2. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered.
+3. From the **My Products** tab, click on the **Quantity** field of a **[customer product](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products)** row and specify the exact quantity you need ordered.
 
    This will automatically add it in the **Order** tab with the respective information.
 
    ![pictures](pictures/quantity_myproducts.png)
 
-3. Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details)**.
+4. Depending on how the Client Center is configured, users may add products linked to their customer's **[default distribution channel](https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#new-customer-details)**.
    
    The process to add them is identical to the **My Products** tab.
 
    ![pictures](pictures/quantity_distribution_channel_customer.png)
 
-4. If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
+5. If the Client Center's **distribution channel** has products linked to it, they will be available for selection as well.
 
    ![pictures](pictures/quantity_distribution_channel_clientcenter.png)
 
