@@ -56,7 +56,7 @@ To begin, add products to the order. There are several ways to do this:
    
    When you click **Save**, the product will be added with all the respective information about it, like **Unit**, **Price**, and **Discount**.
 
-   Note that the **Discount** field is associated with **_LineStandardDiscountPercent_**.
+   Note that the value of the **Discount** column is associated with **_LineStandardDiscountPercent_**.
 
    ![pictures](pictures/added_product.png)
 
