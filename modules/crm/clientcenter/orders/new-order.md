@@ -100,6 +100,10 @@ When you're done adding the quantities of the desired products, you can always *
 
 ![pictures](pictures/edit_delete_product.png)
 
+The New Order module also provides the added benefit of **automatically** **saving** the latest state of the order. 
+
+This means that if you switch to a different page or choose to place your order later, it will always be **automatically saved** and registered with status **"New"**.
+
 ### Confirm and place
 
 To conclude the order, click **Place Order**. You'll be asked to confirm if all details have been reviewed.
@@ -107,11 +111,6 @@ To conclude the order, click **Place Order**. You'll be asked to confirm if all 
 ![pictures](pictures/place_order_warning.png)
 
 Newly created orders are stored on the **[Orders](index.md)** page.
-
-> [!NOTE]
-> 
-> You can start an order and switch to a different page or choose to place it later. <br> <br>
-> The order will be **automatically saved** and registered with status **"New"**.
 
 > [!NOTE]
 > 
