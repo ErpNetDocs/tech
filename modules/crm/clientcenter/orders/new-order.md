@@ -2,15 +2,20 @@
 
 Order creation through the Client Center is disabled by default. You need to **enable** the respective **[global JSON settings first](../reference.md#isneworderenabled-setting)**.
 
-Once that's done, users with **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L20 - Orders** and above will get access to the **New Order** page.
+Once that's done, users with **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L20 - Orders** and above will get access to the **New Order** module.
 
-This is a multi-tab interface designed to handle the filling out and placement of new sales orders.
+This is a multi-tab interface designed to handle the filling out and placement of new sales orders. 
 
 ![pictures](pictures/new_order_panel.png)
 
+
 ## Structure
 
-New Order consists of one primary tab, but it can be configured to include more:
+As soon as you access the module, you can find which is the **Supplier**, **Customer** and **Document No** for that order.
+
+![pictures](pictures/order_tab_header.png)
+
+New Order consists of one primary tab - **Order**, but it can be configured to include more:
 
 1. **Order** - This is where the order is built. You can add products manually by entering their **code** and **quantity**.
 
