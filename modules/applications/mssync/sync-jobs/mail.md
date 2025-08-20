@@ -30,9 +30,9 @@ Synchronizing with a mailbox that has encryption enabled in @@name is not suppor
 
 ## Initial sync (first-time synchronization)
 
-1. Only remote messages (from Microsoft 365) older than 7 days and up to the present will be synchronized.
+1. Only remote messages (from Microsoft 365) received within the last 7 days will be synchronized.
 
-2. Only local messages (from @@name) older than 7 days and up to the present will be synchronized.
+2. Only local messages (from @@name) received within the last 7 days will be synchronized.
 
 ## Considerations and specific scenarios
 
