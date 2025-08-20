@@ -88,11 +88,13 @@
 <h1 id="new-order">New Order</h1>
 
 <p>Order creation through the Client Center is disabled by default. You need to <strong>enable</strong> the respective <strong><a href="../reference.html#isneworderenabled-setting">global JSON settings first</a></strong>.</p>
-<p>Once that's done, users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external role</a></strong> <strong>L20 - Orders</strong> and above will get access to the <strong>New Order</strong> page.</p>
+<p>Once that's done, users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external role</a></strong> <strong>L20 - Orders</strong> and above will get access to the <strong>New Order</strong> module.</p>
 <p>This is a multi-tab interface designed to handle the filling out and placement of new sales orders.</p>
 <p><img src="pictures/new_order_panel.png" alt="pictures"></p>
 <h2 id="structure">Structure</h2>
-<p>New Order consists of one primary tab, but it can be configured to include more:</p>
+<p>As soon as you access the module, you can find which is the <strong>Supplier</strong>, <strong>Customer</strong> and <strong>Document No</strong> for that order.</p>
+<p><img src="pictures/order_tab_header.png" alt="pictures"></p>
+<p>New Order consists of one primary tab - <strong>Order</strong>, but it can be configured to include more:</p>
 <ol>
 <li><p><strong>Order</strong> - This is where the order is built. You can add products manually by entering their <strong>code</strong> and <strong>quantity</strong>.</p>
 <p>Product quantities specified in other tabs will automatically appear here.</p>
@@ -111,12 +113,10 @@
 <p><img src="pictures/channel_CC_tab.png" alt="pictures"></p>
 </li>
 </ol>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can see details about a product if you click on either its <strong>code</strong> or <strong>name</strong>. <br>
-This will trigger a <strong>pop-up</strong> containing more information, including a <strong>product picture</strong>, if available. <br>
-<strong>Clicking</strong> the picture once will expand it further, hiding the remaining details.</p>
-</div>
+<h3 id="product-info">Product info</h3>
+<p>You can see details about a product if you click on either its <strong>code</strong> or <strong>name</strong>. <br></p>
+<p>This will trigger the <strong>Product Info</strong> pop-up which contains more information, including a <strong>product picture</strong>, if available. <br></p>
+<p><strong>Clicking</strong> the picture once will expand it further, hiding the remaining details.</p>
 <p><img src="pictures/product_info_details.png" alt="pictures"></p>
 <h2 id="create-a-new-order">Create a new order</h2>
 <p>To begin, add products to the order. There are several ways to do this:</p>
@@ -124,6 +124,7 @@ This will trigger a <strong>pop-up</strong> containing more information, includi
 <li><p>From the <strong>Order</strong> tab, click the <strong>Add</strong> button. This will reveal the <strong>Code</strong> and <strong>Qty</strong> fields, where you can respectively provide the code of the product and how many instances of it you need ordered.</p>
 <p><img src="pictures/add_button.png" alt="pictures"></p>
 <p>When you click <strong>Save</strong>, the product will be added with all the respective information about it, like <strong>Unit</strong>, <strong>Price</strong>, and <strong>Discount</strong>.</p>
+<p>Note that the value of the <strong>Discount</strong> column is associated with <strong><em>LineStandardDiscountPercent</em></strong>.</p>
 <p><img src="pictures/added_product.png" alt="pictures"></p>
 </li>
 <li><p>From the <strong>My Products</strong> tab, click on the <strong>Quantity</strong> field of a <strong><a href="https://docs.erp.net/tech/modules/crm/sales/definitions/define-customers.html#customer-products">customer product</a></strong> row and specify the exact quantity you need ordered.</p>
@@ -155,15 +156,12 @@ This will trigger a <strong>pop-up</strong> containing more information, includi
 <h3 id="modify-or-delete-quantities">Modify or delete quantities</h3>
 <p>When you're done adding the quantities of the desired products, you can always <strong>edit</strong> or <strong>delete</strong> some of them if needed.</p>
 <p><img src="pictures/edit_delete_product.png" alt="pictures"></p>
+<p>The New Order module also provides the added benefit of <strong>automatically</strong> <strong>saving</strong> the latest state of the order.</p>
+<p>This means that if you switch to a different page or choose to place your order later, it will always be <strong>automatically saved</strong> and registered with status <strong>&quot;New&quot;</strong>.</p>
 <h3 id="confirm-and-place">Confirm and place</h3>
 <p>To conclude the order, click <strong>Place Order</strong>. You'll be asked to confirm if all details have been reviewed.</p>
 <p><img src="pictures/place_order_warning.png" alt="pictures"></p>
 <p>Newly created orders are stored on the <strong><a href="index.html">Orders</a></strong> page.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>You can start an order and switch to a different page or choose to place it later. <br> <br>
-The order will be <strong>automatically saved</strong> and registered with status <strong>&quot;New&quot;</strong>.</p>
-</div>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v.26 of the platform.</p>

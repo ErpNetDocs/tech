@@ -5254,6 +5254,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_tab_header.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_tab_header.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_page.png",
       "output": {
         "resource": {
