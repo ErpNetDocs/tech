@@ -87,54 +87,75 @@
         <article data-uid="">
 <h1 id="my-calendar">My Calendar</h1>
 
-<p>The <strong>ERP.net Calendar</strong> is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, events and tasks.</p>
-<p>It also sums up <strong>group</strong> activities from the social groups you take part in, whenever you are marked as the responsible person, organizer, or a participant.</p>
-<p><img src="pictures/Screenshot_1.png" alt="picture"></p>
-<h2 id="time-period">Time period</h2>
-<p>The <strong>Calendar</strong> allows users to specify custom time periods, such as specific hours within a day or a range of dates spanning multiple days, weeks, months, or years, depending on their scheduling needs.</p>
-<p><img src="pictures/Screenshot_2.png" alt="picture"></p>
-<p>To change the calendar's display, access the dropdown menu at the top left of your page and select either <strong>Month</strong> or <strong>Workweek</strong> views.</p>
-<p><img src="pictures/Screenshot_3.png" alt="picture"></p>
+<p>The <strong>ERP.net Calendar</strong> is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, activitys and tasks.</p>
+<p>It also sums up group activities from the <strong><a href="groups/features-in-groups.html">social groups</a></strong> you take part in, whenever you are marked as the responsible person, organizer, or a participant.</p>
+<p><img src="pictures/new_calendar_overview.png" alt="picture"></p>
+<h2 id="interface">Interface</h2>
+<h3 id="views">Views</h3>
+<p>The Calendar has several <strong>views</strong> allowing you to either narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters.</p>
+<p>By default, the <strong>Month</strong> view is applied, showing the days of the current month and the activities in it, but you can change it at any time.</p>
+<p>Simply click on the dropdown menu and select one of the other views.</p>
+<p><img src="pictures/new_calendar_view.png" alt="picture"></p>
+<h3 id="navigation">Navigation</h3>
+<p>Using either the left (previous) or right (next) arrows, you can navigate across quarters, months, weeks and days.</p>
+<p>This allows you to revisit past activities or preview incoming ones.</p>
+<p><img src="pictures/calendar_switch_monthss.png" alt="picture"></p>
+<p>Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.</p>
+<p>Use the <strong>mini-calendar</strong> to select a specific date, month, or year.</p>
+<p>If you've navigated away and wish to return to the present date, simply click <strong>Today</strong>.</p>
+<p><img src="pictures/calendar_mini.png" alt="picture"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can also change the Calendar display view from the <strong>three-dot menu</strong> at the upper-right part of the page.</p>
+</div>
+<p><img src="pictures/calendar_view_modes.png" alt="picture"></p>
+<h2 id="business-week-numbering">Business week numbering</h2>
+<p>The ERP.net Calendar employs the <strong><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 standard</a></strong> for identifying and tracking the number of weeks of a calendar year.</p>
+<ul>
+<li>The last week of the previous year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 52 of 2023)</li>
+<li>The first week of the next year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 1 of 2024)</li>
+</ul>
+<p>However, there is a notable difference in how it approaches the first and last weeks of the year.</p>
+<p>When the last ISO week of the previous year falls into the first three days of the next year, it is <strong>always marked as week 0 for the new year</strong>.</p>
+<p><img src="pictures/week_zero.png" alt="picture"></p>
+<p>This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward to avoid confusion.</p>
+<h3 id="monthly-and-weekly-notation">Monthly and weekly notation</h3>
+<p>Within the Calendar, you can see each week labeled with its corresponding <strong>BW number</strong>, which stands for &quot;Business Week number&quot;.</p>
+<p>In <strong>Workweek</strong> view, this label is positioned at the upper-left corner of the Calendar, clearly identifying which week of the year this is.</p>
+<p><img src="pictures/business_week_view.png" alt="picture"></p>
+<p>In <strong>Month</strong> view, the number of labels depends on how many weeks that month has.</p>
+<p><img src="pictures/business_week_monthvieww.png" alt="picture"></p>
+<p>In other Calendar views as well as ERP.net navigators, you will find BW labels in the <strong>mini calendar</strong>.</p>
+<p><img src="pictures/business_week_mini.png" alt="picture"></p>
+<h2 id="activities">Activities</h2>
+<p>Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.</p>
+<p>As a general rule, this includes activities where you are designated as <strong>Owner</strong>, <strong>Responsible Party</strong> or <strong>Participant</strong>.</p>
+<h3 id="details">Details</h3>
+<p>If you hover the mouse over an existing activity, you can see more <strong>details</strong> about it in a pop-up.</p>
+<p><img src="pictures/activity_details.png" alt="picture"></p>
+<p>In Month view, it is also possible to see a <strong>list of all activity</strong> for a given day by clicking the <strong>circular button</strong> at the top-right corner of a date.</p>
+<p><img src="pictures/activities_fortheday.png" alt="picture"></p>
+<h3 id="create-an-activity">Create an activity</h3>
+<p>To add a new activity from scratch, click on a date and press the <strong>Create</strong> button.</p>
+<p>It will expand a dropdown with several options, including a meeting, task or even sick day.</p>
+<p><img src="pictures/create_activity.png" alt="picture"></p>
+<p>Once you make your choice, you will be taken to the <strong>Activity document form</strong> where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.</p>
+<p>These fields also serve as crucial piece of data that will appear in all intended participants' Calendars.</p>
+<p>You can add a <strong>Subject</strong>, <strong>Start</strong> and <strong>End Time</strong>, as well as a <strong>Responsible Party</strong>.</p>
+<p><img src="pictures/Screenshot_8.png" alt="picture"></p>
+<p>When you're finished, click <strong>Save and reload</strong>, and the activity will be added to your <strong>Calendar</strong>.</p>
+<h2 id="edit-activity">Edit activity</h2>
+<p>You can open any activity by clicking on its title.</p>
+<p>Inside the document, you can change the subject, date or any other aspect.</p>
+<p><img src="pictures/activity_document.png" alt="picture"></p>
+<p>Upon saving the changes, they will be immediately reflected in the Calendar.</p>
+<h2 id="broader-use">Broader use</h2>
+<p>The Calendar is not confined to a single location.</p>
+<p>In the ERP.net <strong>Dashboard</strong>, for instance, you can integrate it as a panel, accessible whenever needed.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You can also adjust the <strong>Calendar display view</strong> from the <strong>Panel menu</strong> of the <strong>Calendar page</strong>.</p>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
 </div>
-<p><img src="pictures/Screenshot_4.png" alt="picture"></p>
-<p>To revisit past events or navigate to a specific week or month, use the arrow buttons. Depending on whether you're in the <strong>Month</strong> or <strong>Week</strong> view, this will adjust the calendar accordingly.</p>
-<p><img src="pictures/Screenshot_5.png" alt="picture"></p>
-<p>Depending on your current view, you can select a specific week or month from the blue-colored menu.</p>
-<p>Use the mini-calendar to select a specific date, month, or year. If you've navigated away and wish to return to the present date, simply click <strong>Today</strong>.</p>
-<p><img src="pictures/Screenshot_6.png" alt="picture"></p>
-<h2 id="create-an-event">Create an event</h2>
-<p>Your events are summarized and displayed within the <strong>Calendar</strong>, with their titles fitting into the respective time slots, covering activities where you are designated as assigned owner status, or added as a participant.</p>
-<p>To start creating an event, you have to click on the date and press the <strong>Create</strong> button.</p>
-<p><img src="pictures/Screenshot_7.png" alt="picture"></p>
-<p>With this button you can choose to create meeting, task or to mark the day as a sick day.</p>
-<p>This action will lead you to a dedicated page where you can provide necessary information regarding the activity and individuals who may be involved.</p>
-<p>Another way is to doble click on the selected date and you will find yourself on the <strong>New Activity</strong> creation form, where you can fill in basic information for the meeting, task or reminder you want to set.</p>
-<p>In the process of event creation it is important to fill the filds that will provide the information about the event.</p>
-<p>These fields serve as crucial conduits for relaying essential information to all intended participants.</p>
-<p>You can add the name of the document, of the subject you wish to discuss, priority level of the meeting and responsible person for the task.</p>
-<p>When you're finished, click <strong>Save and reload</strong>, and the activity will be added to your <strong>Calendar</strong>.</p>
-<p><img src="pictures/Screenshot_8.png" alt="picture"></p>
-<p>You can also create events from the <strong>Panel menu</strong> of the <strong>Calendar page</strong>.
-When you click on the selected date and click <strong>Panel menu</strong> that will give you the chance to create event.</p>
-<p><img src="pictures/Screenshot_10.png" alt="picture"></p>
-<h2 id="access-an-event">Access an event</h2>
-<p>If you want to check a specific information about your event you can access it through the calendar.</p>
-<p>When you click on a date containing an event, a circular button will emerge at the top-right corner, giving you access
-to more details, like the event's scheduled hours.</p>
-<p><img src="pictures/Screenshot_10.png" alt="picture"></p>
-<h2 id="edit-event">Edit Event</h2>
-<p>You can open the event by clicking on its title, which will display all its details and list of potential participants.</p>
-<p>If you wish to edit any aspect, such as the subject, the date or any other aspects you can click the edit button on the top left corner.</p>
-<p>Upon saving the changes, they will be immediately reflected in the <strong>Calendar</strong>.</p>
-<h2 id="panel-menu">Panel menu</h2>
-<p>In the <strong>Panel menu</strong> you can maximize your screen, adjust <strong>Calendar view types</strong> and create events.</p>
-<p>The Calendar is not confined to a single location.</p>
-<p>Upon accessing your personalized <strong>Dashboard</strong>, you will find it integrated as a panel, accessible whenever needed.</p>
-<p>Here, all its features are centralized alongside other vital ** My** components, offering a cohesive user experience.</p>
-<p>Additionally, you have the freedom to rearrange the Calendar panel by opening the <strong>Customize window</strong> of the <strong>Dashboard</strong> and dragging it to your preferred position.</p>
 
 </article>
 

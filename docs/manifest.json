@@ -17421,6 +17421,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "modules/my/groups/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/groups/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/groups/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/my/index.md",
       "output": {
@@ -17556,6 +17569,176 @@
       "output": {
         "resource": {
           "relative_path": "modules/my/pictures/Screenshot_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/activities_fortheday.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/activities_fortheday.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/activity_create_modes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/activity_create_modes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/activity_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/activity_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/activity_document.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/activity_document.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/business_week_mini.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/business_week_mini.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/business_week_monthview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/business_week_monthview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/business_week_monthvieww.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/business_week_monthvieww.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/business_week_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/business_week_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/calendar_mini.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/calendar_mini.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/calendar_switch_months.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/calendar_switch_months.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/calendar_switch_monthss.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/calendar_switch_monthss.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/calendar_view_modes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/calendar_view_modes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/create_activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/create_activity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/new_calendar_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/new_calendar_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/new_calendar_timeperiod.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/new_calendar_timeperiod.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/new_calendar_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/new_calendar_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/week_zero.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/week_zero.png"
         }
       },
       "version": ""
