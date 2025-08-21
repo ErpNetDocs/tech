@@ -90,3 +90,8 @@ Upon accessing your personalized **Dashboard**, you will find it integrated as a
 Here, all its features are centralized alongside other vital ** My** components, offering a cohesive user experience.
 
 Additionally, you have the freedom to rearrange the Calendar panel by opening the **Customize window** of the **Dashboard** and dragging it to your preferred position.
+
+> [!Note]
+> The screenshots taken for this article are from v.26 of the platform.
+
+
