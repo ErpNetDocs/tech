@@ -6,31 +6,68 @@ It also sums up group activities from the **[social groups](groups/features-in-g
 
 ![picture](pictures/new_calendar_overview.png)
 
-## Time period
+## Interface
 
-The **Calendar** allows users to specify custom time periods, such as specific hours within a day or a range of dates spanning multiple days, weeks, months, or years, depending on their scheduling needs.
+### Views
 
-![picture](pictures/new_calendar_timeperiod.png)
+The Calendar has several **views** allowing you to either narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters. 
 
-To change the calendar's display, access the dropdown menu at the top left of your page and select either **Month** or **Workweek** views.
+By default, the **Month** view is applied, showing the days of the current month and the activities in it, but you can change it at any time.
+
+Simply click on the dropdown menu and select one of the other views.
 
 ![picture](pictures/new_calendar_view.png)
 
-> [!NOTE]
-> You can also adjust the **Calendar display view** from the **Panel menu** of the **Calendar page**.
+### Navigation
 
-![picture](pictures/calendar_view_modes.png)
- 
-To revisit past events or navigate to a specific week or month, use the arrow buttons. Depending on whether you're in the **Month** or **Week** view, this will adjust the calendar accordingly.
+Using either the left (previous) or right (next) arrows, you can navigate across quarters, months, weeks and days. 
+
+This allows you to revisit past events or preview incoming ones.
 
 ![picture](pictures/calendar_switch_months.png)
- 
-Depending on your current view, you can select a specific week or month from the blue-colored menu.
 
-Use the mini-calendar to select a specific date, month, or year. If you've navigated away and wish to return to the present date, simply click **Today**.
+Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.
+
+Use the **mini-calendar** to select a specific date, month, or year. 
+
+If you've navigated away and wish to return to the present date, simply click **Today**.
 
 ![picture](pictures/calendar_mini.png)
- 
+
+> [!Tip]
+> You can also change the Calendar display view from the **three-dot menu** at the upper-right part of the page.
+
+![picture](pictures/calendar_view_modes.png)
+
+## Business week numbering
+
+The @@name Calendar employs the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for identifying and tracking the number of weeks of a calendar year. 
+
+- The last week of the previous year is **always marked with the number corresponding to that year** (e.g. week 52 of 2023)
+- The first week of the next year is **always marked with the number corresponding to that year** (e.g. week 1 of 2024)
+
+However, there is a notable difference in how it approaches the first and last weeks of the year.
+
+When the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
+
+With this approach, the Calendar treats January 1st as the true beginning of a year, yet still respecting ISO boundaries from Week 1 onward for compatibility.
+
+### Monthly and weekly notation
+
+Within the Calendar, you can see each week labeled with its corresponding **BW number**, which stands for "Business Week number".
+
+In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly identifying which week of the year this is.
+
+![picture](pictures/business_week_view.png)
+
+In **Month** view, the number of labels depends on how many weeks that month has.
+
+![picture](pictures/business_week_monthview.png)
+
+In other Calendar views as well as @@name navigators, you will find BW labels in the **mini calendar**.
+
+![picture](pictures/business_week_mini.png)
+
 ## Create an event
 
 Your events are summarized and displayed within the **Calendar**, with their titles fitting into the respective time slots, covering activities where you are designated as assigned owner status, or added as a participant.
