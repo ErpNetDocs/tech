@@ -48,6 +48,3 @@ This step ensures that products are available for sale through that channel, opt
 > If products are associated with this channel, they can be added directly into a sales order while it is being created in the **Client Center**. <br> <br>
 > ERP.net **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** also work with distribution channels. A customer entity can have a preferred **Default Distribution Channel** they can use for listing products. <br> <br>
 > If products are associated with this channel, they can be added directly into a sales order in the **Client Center**. 
-
-
-  
