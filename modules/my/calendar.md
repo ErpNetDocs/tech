@@ -1,6 +1,6 @@
 # My Calendar
 
-The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, events and tasks. 
+The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, activitys and tasks. 
 
 It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
 
@@ -22,7 +22,7 @@ Simply click on the dropdown menu and select one of the other views.
 
 Using either the left (previous) or right (next) arrows, you can navigate across quarters, months, weeks and days. 
 
-This allows you to revisit past events or preview incoming ones.
+This allows you to revisit past activities or preview incoming ones.
 
 ![picture](pictures/calendar_switch_monthss.png)
 
@@ -70,67 +70,55 @@ In other Calendar views as well as @@name navigators, you will find BW labels in
 
 ![picture](pictures/business_week_mini.png)
 
-## Create an event
+## Activities
 
-Your events are summarized and displayed within the **Calendar**, with their titles fitting into the respective time slots, covering activities where you are designated as assigned owner status, or added as a participant.
+Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.
 
-To start creating an event, you have to click on the date and press the **Create** button.
+As a general rule, this includes activities where you are designated as **Owner**, **Responsible Party** or **Participant**.
+
+### Details
+
+If you hover the mouse over an existing activity, you can see more **details** about it in a pop-up.
+
+![picture](pictures/activity_details.png)
+
+In Month view, it is also possible to see a **list of all activity** for a given day by clicking the **circular button** at the top-right corner of a date.
+
+![picture](pictures/activities_fortheday.png)
+
+### Create an activity
+
+To add a new activity from scratch, click on a date and press the **Create** button.
+
+It will expand a dropdown with several options, including a meeting, task or even sick day.
 
 ![picture](pictures/create_activity.png)
 
-With this button you can choose to create meeting, task or to mark the day as a sick day.
+Once you make your choice, you will be taken to the **Activity document form** where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.
 
-This action will lead you to a dedicated page where you can provide necessary information regarding the activity and individuals who may be involved.
+These fields also serve as crucial piece of data that will appear in all intended participants' Calendars.
 
-Another way is to doble click on the selected date and you will find yourself on the **New Activity** creation form, where you can fill in basic information for the meeting, task or reminder you want to set.
-
-In the process of event creation it is important to fill the filds that will provide the information about the event.
-
-These fields serve as crucial conduits for relaying essential information to all intended participants.
-
-You can add the name of the document, of the subject you wish to discuss, priority level of the meeting and responsible person for the task.
-
-When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
+You can add a **Subject**, **Start** and **End Time**, as well as a **Responsible Party**.
 
 ![picture](pictures/Screenshot_8.png)
- 
-You can also create events from the **Panel menu** of the **Calendar page**.
-When you click on the selected date and click **Panel menu** that will give you the chance to create event.
 
-![picture](pictures/activity_create_modes.png)
+When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
  
-## Access an event
+## Edit activity
 
-If you want to check a specific information about your event you can access it through the calendar. 
- 
-When you click on a date containing an event, a circular button will emerge at the top-right corner, giving you access 
-to all events for the given day.
+You can open any activity by clicking on its title.
 
-![picture](pictures/activities_fortheday.png)
- 
-## Edit Event
-
-You can open the event by clicking on its title, which will display all its details and list of potential participants. 
+Inside the document, you can change the subject, date or any other aspect.
 
 ![picture](pictures/activity_document.png)
 
-If you wish to edit any aspect, such as the subject, the date or any other aspects you can click the edit button on the top left corner. 
+Upon saving the changes, they will be immediately reflected in the Calendar.
 
-Upon saving the changes, they will be immediately reflected in the **Calendar**.
-
-## Panel menu 
-
-In the **Panel menu** you can maximize your screen, adjust **Calendar view types** and create events.
+## Broader use
 
 The Calendar is not confined to a single location. 
 
-Upon accessing your personalized **Dashboard**, you will find it integrated as a panel, accessible whenever needed. 
-
-Here, all its features are centralized alongside other vital ** My** components, offering a cohesive user experience.
-
-Additionally, you have the freedom to rearrange the Calendar panel by opening the **Customize window** of the **Dashboard** and dragging it to your preferred position.
+In the @@name **Dashboard**, for instance, you can integrate it as a panel, accessible whenever needed. 
 
 > [!Note]
 > The screenshots taken for this article are from v.26 of the platform.
-
-
