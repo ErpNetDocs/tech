@@ -47,4 +47,7 @@ This step ensures that products are available for sale through that channel, opt
 > The ERP.net **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)** makes use of distribution channels. In the website definition, there is a **Default Distribution Channel** with code "CC" and name "Client Center", ensuring that products have a pathway through which they can be delivered. <br> <br>
 > If products are associated with this channel, they can be added directly into a sales order while it is being created in the **Client Center**. <br> <br>
 > ERP.net **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** also work with distribution channels. A customer entity can have a preferred **Default Distribution Channel** they can use for listing products. <br> <br>
-> If products are associated with this channel, they can be added directly into a sales order in the **Client Center**. 
+> If products are associated with this channel, they can be added directly into a sales order in the **Client Center**.
+
+> [!Note]
+> The screenshots taken for this article are from v.26 of the platform.
