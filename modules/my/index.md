@@ -9,12 +9,12 @@ It consists of several applications that are simultaneously independent, interco
 In the **My** module, you can find the following applications:
 
 * **AI Assistant**
-* **Calendar**
+* **[Calendar](calendar.md)**
 * **Dashboard**
 * **Documents**
 * **Favorites**
 * **Folders**
-* **Groups**
+* **[Groups](groups/index.md)**
 * **Notifications**
 * **Search** 
 * **Tiles**
