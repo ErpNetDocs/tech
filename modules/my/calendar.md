@@ -24,7 +24,7 @@ Using either the left (previous) or right (next) arrows, you can navigate across
 
 This allows you to revisit past events or preview incoming ones.
 
-![picture](pictures/calendar_switch_months.png)
+![picture](pictures/calendar_switch_monthss.png)
 
 Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.
 
@@ -50,7 +50,9 @@ However, there is a notable difference in how it approaches the first and last w
 
 When the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
 
-With this approach, the Calendar treats January 1st as the true beginning of a year, yet still respecting ISO boundaries from Week 1 onward for compatibility.
+![picture](pictures/week_zero.png)
+
+This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward to avoid confusion.
 
 ### Monthly and weekly notation
 
@@ -62,7 +64,7 @@ In **Workweek** view, this label is positioned at the upper-left corner of the C
 
 In **Month** view, the number of labels depends on how many weeks that month has.
 
-![picture](pictures/business_week_monthview.png)
+![picture](pictures/business_week_monthvieww.png)
 
 In other Calendar views as well as @@name navigators, you will find BW labels in the **mini calendar**.
 
