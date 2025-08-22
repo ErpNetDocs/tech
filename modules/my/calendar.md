@@ -1,6 +1,6 @@
 # My Calendar
 
-The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities, activitys and tasks. 
+The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities and tasks. 
 
 It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
 
@@ -10,7 +10,7 @@ It also sums up group activities from the **[social groups](groups/features-in-g
 
 ### Views
 
-The Calendar has several **views** allowing you to either narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters. 
+The Calendar has several **views** allowing you to narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters. 
 
 By default, the **Month** view is applied, showing the days of the current month and the activities in it, but you can change it at any time.
 
@@ -20,7 +20,7 @@ Simply click on the dropdown menu and select one of the other views.
 
 ### Navigation
 
-Using either the left (previous) or right (next) arrows, you can navigate across quarters, months, weeks and days. 
+Using either the **left (previous)** or **right (next)** **arrows**, you can navigate across quarters, months, weeks and days. 
 
 This allows you to revisit past activities or preview incoming ones.
 
@@ -28,7 +28,7 @@ This allows you to revisit past activities or preview incoming ones.
 
 Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.
 
-Use the **mini-calendar** to select a specific date, month, or year. 
+Use the **date picker** to select a specific date, month, or year. 
 
 If you've navigated away and wish to return to the present date, simply click **Today**.
 
@@ -41,32 +41,30 @@ If you've navigated away and wish to return to the present date, simply click **
 
 ## Business week numbering
 
-The @@name Calendar employs the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for identifying and tracking the number of weeks of a calendar year. 
+The @@name Calendar employs the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for tracking the number of weeks of a calendar year: 
 
 - The last week of the previous year is **always marked with the number corresponding to that year** (e.g. week 52 of 2023)
 - The first week of the next year is **always marked with the number corresponding to that year** (e.g. week 1 of 2024)
 
-However, there is a notable difference in how it approaches the first and last weeks of the year.
+However, when the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
 
-When the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
+This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward.
 
 ![picture](pictures/week_zero.png)
-
-This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward to avoid confusion.
 
 ### Monthly and weekly notation
 
 Within the Calendar, you can see each week labeled with its corresponding **BW number**, which stands for "Business Week number".
 
-In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly identifying which week of the year this is.
+In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly showing which week of the year this is.
 
 ![picture](pictures/business_week_view.png)
 
-In **Month** view, the number of labels depends on how many weeks that month has.
+In **Month** view, the labels are positioned vertically on the left of the Calendar, and their number depends on how many weeks the month has.
 
 ![picture](pictures/business_week_monthvieww.png)
 
-In other Calendar views as well as @@name navigators, you will find BW labels in the **mini calendar**.
+In other Calendar views as well as @@name navigators making use of the **date picker**, you will also find BW labels.
 
 ![picture](pictures/business_week_mini.png)
 
@@ -74,17 +72,23 @@ In other Calendar views as well as @@name navigators, you will find BW labels in
 
 Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.
 
-As a general rule, this includes activities where you are designated as **Owner**, **Responsible Party** or **Participant**.
-
 ### Details
 
 If you hover the mouse over an existing activity, you can see more **details** about it in a pop-up.
 
 ![picture](pictures/activity_details.png)
 
-In Month view, it is also possible to see a **list of all activity** for a given day by clicking the **circular button** at the top-right corner of a date.
+In Month view, the **starting time** of an activity is always shown to the left of its title.
+
+It is also possible to see a **list of all activities** for a given day by clicking the **circular button** at the top-right corner of a date.
 
 ![picture](pictures/activities_fortheday.png)
+
+### Scope of activities
+
+As a general rule, the Calendar shows you all activities where you are designated as the **Owner**, **Responsible Party** or a **Participant**.
+
+The Calendar will also show activities from **social groups** you take part in. If a member from your organization is not part of the same groups as you are, they will not be able to see nor access your group events, and vice versa.
 
 ### Create an activity
 
