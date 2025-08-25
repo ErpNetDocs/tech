@@ -56,7 +56,7 @@ This way, the Calendar treats January 1st as the true beginning of a year, yet s
 
 Within the Calendar, you can see each week labeled with its corresponding **BW number**, which stands for "Business Week number".
 
-In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly showing which week of the year this is.
+In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly showing which week of the year it is.
 
 ![picture](pictures/business_week_view.png)
 
@@ -64,9 +64,12 @@ In **Month** view, the labels are positioned vertically on the left of the Calen
 
 ![picture](pictures/business_week_monthvieww.png)
 
-In other Calendar views as well as @@name navigators making use of the **date picker**, you will also find BW labels.
+In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels.
 
 ![picture](pictures/business_week_mini.png)
+
+> [!NOTE]
+> All ERP.net navigators with time-based columns like Document Date support **[business week grouping](https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals)**, which allows you to group any records of documents by the business week they were created in. 
 
 ## Activities
 
