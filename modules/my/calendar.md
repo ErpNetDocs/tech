@@ -68,7 +68,7 @@ In other Calendar views as well as navigators making use of the **date picker**,
 ![picture](pictures/business_week_mini.png)
 
 > [!NOTE]
-> All ERP.net navigators with time-based columns like Document Date support **[business week grouping](https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals)**, which allows you to group any records of documents by the business week they were created in. 
+> All @@name navigators with time-based columns like Document Date support **[business week grouping](https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals)**, which allows you to group any records of documents by the business week they were created in. 
 
 ## Activities
 
