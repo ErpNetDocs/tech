@@ -1,4 +1,4 @@
-# Tech overview of Groups
+# Groups
 
 Groups, found within the **My** section, serve as a convenient platform for seamless communication, document sharing, task scheduling, and assignment among you and your colleagues.
 
