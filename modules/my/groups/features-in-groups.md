@@ -34,9 +34,19 @@ Once you filled every field, click **Save and reload** and the activity will be 
 
 ![picture](pictures/save_reload.png) 
 
-Group activities where you are not a **Participant**, **Responsible Party** or **Owner** will still appear in the group Calendar for you to see but **NOT** in your personal Calendar. 
+### Business week labels
 
-If you're not a member of a group, its activities will also not be shown in your Calendar, nor will be accessible in any other way. Even if members from your own organization are part of that group, only they will retain access to these activities. 
+The group Calendar makes use of a "Business Week" numbering logic which is used to count the number of weeks in a year through a custom implementation of the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)**.
+
+You can read more about how it works **[here](https://docs.erp.net/tech/modules/my/calendar.html#business-week-numbering)**.
+
+### Activity accesss
+
+Group activities where you are not a **Participant**, **Responsible Party** or **Owner** will still appear in the Calendar of the group you are a member of, but **NOT** in your **[personal Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
+
+If you're not a member of a group, its activities will not be shown in your Calendar, nor can be accessible in any other way. Even if you once were a member and were subsequently removed from that group, all access to its activities is automatically revoked.
+
+Below, you can see how the **My Calendar** interface looks when group activites are automatically synced from the social group a user is part of. One event in which they are not a Participant, nor an Owner or Responsible Party is missing.
 
 ![picture](pictures/mycalendar_groups.png) 
  
