@@ -1,6 +1,6 @@
 # My Calendar
 
-The **ERP.net Calendar** is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities and tasks. 
+The ERP.net Calendar is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your events and tasks. Its features include previewing and creating **activities**, applying different **views**, navigating across various **time periods**, as well as accessing any type of **scheduled event** easily.
 
 It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
 
@@ -10,27 +10,27 @@ It also sums up group activities from the **[social groups](groups/features-in-g
 
 ### Views
 
-The Calendar has several **views** allowing you to narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters. 
+The Calendar has several **views** allowing you to narrow down your activities to the ones you have for the current day, week, or month(s), or even see them spread across the year's quarters. 
 
-By default, the **Month** view is applied, showing the days of the current month and the activities in it, but you can change it at any time.
+By default, the **Month** view is applied, showing the days of the current month and the activities in it. 
 
-Simply click on the dropdown menu and select one of the other views.
+You can change this at any time by clicking the respective dropdown menu and selecting one of the other views.
 
 ![picture](pictures/new_calendar_view.png)
 
 ### Navigation
 
-Using either the **left (previous)** or **right (next)** **arrows**, you can navigate across quarters, months, weeks and days. 
+Using either the **left (previous)** or **right (next)** arrows, you can navigate across quarters, months, weeks and days. 
 
 This allows you to revisit past activities or preview incoming ones.
 
 ![picture](pictures/calendar_switch_monthss.png)
 
-Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.
+Depending on your current view, you can navigate to a **specific week or month** from the blue-colored menu.
 
-Use the **date picker** to select a specific date, month, or year. 
+Use the **date picker** to select any given date, month, or year. 
 
-If you've navigated away and wish to return to the present date, simply click **Today**.
+If you've navigated too far away and wish to quickly go back to the present date, simply click **Today**.
 
 ![picture](pictures/calendar_mini.png)
 
@@ -41,14 +41,13 @@ If you've navigated away and wish to return to the present date, simply click **
 
 ## Business week numbering
 
-The @@name Calendar employs the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for tracking the number of weeks of a calendar year: 
+The @@name Calendar uses the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for tracking the number of weeks in a calendar year: 
 
-- The last week of the previous year is **always marked with the number corresponding to that year** (e.g. week 52 of 2023)
-- The first week of the next year is **always marked with the number corresponding to that year** (e.g. week 1 of 2024)
+- All weeks are counted **chronologically** (e.g. week 42 of 2022 corresponds to the 42nd week of that year)
+- The first week of a year is **always marked with the number corresponding to that year** (e.g. week 1 of 2023)
+- The last week of a year is **always marked with the number corresponding to that year** (e.g. week 52 of 2024)
 
-When the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
-
-This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward.
+However, when the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**. This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward for compatibility.
 
 ![picture](pictures/week_zero.png)
 
@@ -56,7 +55,7 @@ This way, the Calendar treats January 1st as the true beginning of a year, yet s
 
 Within the Calendar, you can see each week labeled with its corresponding **BW number**, which stands for "Business Week number".
 
-In **Workweek** view, this label is positioned at the upper-left corner of the Calendar, clearly showing which week of the year it is.
+In **Workweek** view, this label is positioned at the upper-left corner of the Calendar.
 
 ![picture](pictures/business_week_view.png)
 
@@ -64,7 +63,7 @@ In **Month** view, labels are positioned on the left of the Calendar, and their 
 
 ![picture](pictures/business_week_monthvieww.png)
 
-In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels.
+In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels for convenience.
 
 ![picture](pictures/business_week_mini.png)
 
