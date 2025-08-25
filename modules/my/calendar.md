@@ -2,7 +2,7 @@
 
 The ERP.net Calendar is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your events and tasks. Its features include previewing and creating **activities**, applying different **views**, navigating across various **time periods**, as well as accessing any type of **scheduled event** easily.
 
-It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the Responsible Party, Owner, or Participant. 
+It also sums up group activities from the **[social groups](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar)** you take part in.
 
 ![picture](pictures/new_calendar_overview.png)
 
@@ -76,7 +76,11 @@ Your activities are summarized and displayed within the Calendar, with their tit
 
 ### Details
 
-If you hover the mouse over an existing activity, you can see more **details** about it in a pop-up.
+If you hover the mouse over an existing activity, you can see more **details** about it in a tooltip.
+
+This includes the Subject, time range, Responsible Party, Target Party, and Document Type. 
+
+If participants are included, up to the first three will be listed under a dedicated "Participants" section.
 
 ![picture](pictures/activity_details.png)
 
@@ -103,6 +107,18 @@ It will expand a dropdown with several options, including a meeting, task, or si
 Once you make your choice, you will be taken to the **Activity document form** where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.
 
 These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.
+
+#### Role assignment 
+
+When a user creates an activity, the Assigned To User field is automatically populated with their username. At the same time, the Person associated with them is automatically set as the **Responsible Party** and **Owner Party**.
+
+You can assign a different user to the document by changing the value of the **Assigned To User** field. This will automatically change the **Responsible Party** field as well, in case there is a Person associated with that user. 
+
+If there isn't one, the Responsible Party field will be left **blank**. 
+
+You can choose a Responsible Party **different** from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a **Participant Person**.
+
+This is ensured with **[business rule R38894](https://docs.erp.net/model/business-rules/R38894.html)**.
 
 When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
 
