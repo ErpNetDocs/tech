@@ -46,13 +46,13 @@ The @@name Calendar employs the **[ISO 8601 standard](https://en.wikipedia.org/w
 - The last week of the previous year is **always marked with the number corresponding to that year** (e.g. week 52 of 2023)
 - The first week of the next year is **always marked with the number corresponding to that year** (e.g. week 1 of 2024)
 
-However, when the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
+When the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**.
 
 This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward.
 
 ![picture](pictures/week_zero.png)
 
-### Monthly and weekly notation
+### Monthly and weekly labels
 
 Within the Calendar, you can see each week labeled with its corresponding **BW number**, which stands for "Business Week number".
 
@@ -60,7 +60,7 @@ In **Workweek** view, this label is positioned at the upper-left corner of the C
 
 ![picture](pictures/business_week_view.png)
 
-In **Month** view, the labels are positioned vertically on the left of the Calendar, and their number depends on how many weeks the month has.
+In **Month** view, labels are positioned on the left of the Calendar, and their number depends on how many weeks the month has.
 
 ![picture](pictures/business_week_monthvieww.png)
 
@@ -83,7 +83,7 @@ If you hover the mouse over an existing activity, you can see more **details** a
 
 In Month view, the **starting time** of an activity is always shown to the left of its title.
 
-It is also possible to see a **list of all activities** for a given day by clicking the **circular button** at the top-right corner of a date.
+You can also see a **list of all activities** for a given day by clicking the **circular button** at the top-right corner of a date.
 
 ![picture](pictures/activities_fortheday.png)
 
@@ -91,7 +91,7 @@ It is also possible to see a **list of all activities** for a given day by click
 
 As a general rule, the Calendar shows you all activities where you are designated as the **Owner**, **Responsible Party** or a **Participant**.
 
-The Calendar will also show activities from **social groups** you take part in. If a member from your organization is not part of the same groups as you are, they will not be able to see nor access your group events, and vice versa.
+The Calendar will also show activities from **[social groups](groups/features-in-groups.md)** you take part in. If a member from your organization is not part of the same groups as you are, they will not be able to see nor access your group events, and vice versa.
 
 ### Create an activity
 
