@@ -90,35 +90,33 @@ You can also see a **list of all activities** for a given day by clicking the **
 
 As a general rule, the Calendar shows you all activities where you are designated as the **Owner**, **Responsible Party** or a **Participant**.
 
-The Calendar will also display activities from **[social groups](groups/features-in-groups.md)** you take part in. This once again includes activities where you are either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the **[group-integrated Calendar](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access)**.
+The Calendar will also display activities from **[social groups](groups/features-in-groups.md)** you take part in. You once again need to be either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the **[group-integrated Calendar](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access)**.
 
 ### Create an activity
 
 To add a new activity from scratch, click on a date and press the **Create** button.
 
-It will expand a dropdown with several options, including a meeting, task or even sick day.
+It will expand a dropdown with several options, including a meeting, task, or sick day.
 
 ![picture](pictures/create_activity.png)
 
 Once you make your choice, you will be taken to the **Activity document form** where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.
 
-These fields also serve as crucial piece of data that will appear in all intended participants' Calendars.
-
-You can add a **Subject**, **Start** and **End Time**, as well as a **Responsible Party**.
-
-![picture](pictures/Screenshot_8.png)
+These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.
 
 When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
+
+![picture](pictures/save_reload.png)
  
-## Edit activity
+### Edit an activity
 
 You can open any activity by clicking on its title.
 
-Inside the document, you can change the subject, date or any other aspect.
+Inside the document, you can change the subject, date or any other information.
 
 ![picture](pictures/activity_document.png)
 
-Upon saving the changes, they will be immediately reflected in the Calendar.
+Upon saving the changes, they will be immediately reflected in your Calendar.
 
 ## Broader use
 
