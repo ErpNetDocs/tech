@@ -17411,11 +17411,91 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/calendar_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/calendar_groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/chat_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/chat_groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/create_act.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/create_act.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/files_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/files_groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/my/groups/pictures/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/my/groups/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/members_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/members_groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/mycalendar_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/mycalendar_groups.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/save_reload.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/save_reload.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/groups/pictures/todo_groups.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/groups/pictures/todo_groups.png"
         }
       },
       "version": ""
@@ -17615,6 +17695,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/pictures/assigned_to_responsible_owner.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/assigned_to_responsible_owner.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/pictures/business_week_mini.png",
       "output": {
         "resource": {
@@ -17705,6 +17795,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/pictures/different_assigned_to.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/different_assigned_to.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/different_responsible_owner.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/different_responsible_owner.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/edit_event.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/edit_event.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/pictures/new_calendar_overview.png",
       "output": {
         "resource": {
@@ -17729,6 +17849,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/my/pictures/new_calendar_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/save_reload.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/save_reload.png"
         }
       },
       "version": ""

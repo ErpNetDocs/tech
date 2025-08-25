@@ -87,22 +87,22 @@
         <article data-uid="">
 <h1 id="my-calendar">My Calendar</h1>
 
-<p>The <strong>ERP.net Calendar</strong> is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your personal activities and tasks.</p>
-<p>It also sums up group activities from the <strong><a href="groups/features-in-groups.html">social groups</a></strong> you take part in, whenever you are marked as the responsible person, organizer, or a participant.</p>
+<p>The ERP.net Calendar is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your events and tasks. Its features include previewing and creating <strong>activities</strong>, applying different <strong>views</strong>, navigating across various <strong>time periods</strong>, as well as accessing any type of <strong>scheduled event</strong> easily.</p>
+<p>It also sums up group activities from the <strong><a href="https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar">social groups</a></strong> you take part in.</p>
 <p><img src="pictures/new_calendar_overview.png" alt="picture"></p>
 <h2 id="interface">Interface</h2>
 <h3 id="views">Views</h3>
-<p>The Calendar has several <strong>views</strong> allowing you to narrow down your activities to the current day, week, or month(s), or even see them spread across the year's quarters.</p>
-<p>By default, the <strong>Month</strong> view is applied, showing the days of the current month and the activities in it, but you can change it at any time.</p>
-<p>Simply click on the dropdown menu and select one of the other views.</p>
+<p>The Calendar has several <strong>views</strong> allowing you to narrow down your activities to the ones you have for the current day, week, or month(s), or even see them spread across the year's quarters.</p>
+<p>By default, the <strong>Month</strong> view is applied, showing the days of the current month and the activities in it.</p>
+<p>You can change this at any time by clicking the respective dropdown menu and selecting one of the other views.</p>
 <p><img src="pictures/new_calendar_view.png" alt="picture"></p>
 <h3 id="navigation">Navigation</h3>
-<p>Using either the <strong>left (previous)</strong> or <strong>right (next)</strong> <strong>arrows</strong>, you can navigate across quarters, months, weeks and days.</p>
+<p>Using either the <strong>left (previous)</strong> or <strong>right (next)</strong> arrows, you can navigate across quarters, months, weeks and days.</p>
 <p>This allows you to revisit past activities or preview incoming ones.</p>
 <p><img src="pictures/calendar_switch_monthss.png" alt="picture"></p>
-<p>Depending on your current view, you can navigate to a specific week or month from the blue-colored menu.</p>
-<p>Use the <strong>date picker</strong> to select a specific date, month, or year.</p>
-<p>If you've navigated away and wish to return to the present date, simply click <strong>Today</strong>.</p>
+<p>Depending on your current view, you can navigate to a <strong>specific week or month</strong> from the blue-colored menu.</p>
+<p>Use the <strong>date picker</strong> to select any given date, month, or year.</p>
+<p>If you've navigated too far away and wish to quickly go back to the present date, simply click <strong>Today</strong>.</p>
 <p><img src="pictures/calendar_mini.png" alt="picture"></p>
 <div class="TIP">
 <h5>Tip</h5>
@@ -110,47 +110,62 @@
 </div>
 <p><img src="pictures/calendar_view_modes.png" alt="picture"></p>
 <h2 id="business-week-numbering">Business week numbering</h2>
-<p>The ERP.net Calendar employs the <strong><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 standard</a></strong> for tracking the number of weeks of a calendar year:</p>
+<p>The ERP.net Calendar uses the <strong><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 standard</a></strong> for tracking the number of weeks in a calendar year:</p>
 <ul>
-<li>The last week of the previous year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 52 of 2023)</li>
-<li>The first week of the next year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 1 of 2024)</li>
+<li>All weeks are counted <strong>chronologically</strong> (e.g. week 42 of 2022 corresponds to the 42nd week of that year)</li>
+<li>The first week of a year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 1 of 2023)</li>
+<li>The last week of a year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 52 of 2024)</li>
 </ul>
-<p>However, when the last ISO week of the previous year falls into the first three days of the next year, it is <strong>always marked as week 0 for the new year</strong>.</p>
-<p>This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward.</p>
+<p>However, when the last ISO week of the previous year falls into the first three days of the next year, it is <strong>always marked as week 0 for the new year</strong>. This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward for compatibility.</p>
 <p><img src="pictures/week_zero.png" alt="picture"></p>
-<h3 id="monthly-and-weekly-notation">Monthly and weekly notation</h3>
+<h3 id="monthly-and-weekly-labels">Monthly and weekly labels</h3>
 <p>Within the Calendar, you can see each week labeled with its corresponding <strong>BW number</strong>, which stands for &quot;Business Week number&quot;.</p>
-<p>In <strong>Workweek</strong> view, this label is positioned at the upper-left corner of the Calendar, clearly showing which week of the year this is.</p>
+<p>In <strong>Workweek</strong> view, this label is positioned at the upper-left corner of the Calendar.</p>
 <p><img src="pictures/business_week_view.png" alt="picture"></p>
-<p>In <strong>Month</strong> view, the labels are positioned vertically on the left of the Calendar, and their number depends on how many weeks the month has.</p>
+<p>In <strong>Month</strong> view, labels are positioned on the left of the Calendar, and their number depends on how many weeks the month has.</p>
 <p><img src="pictures/business_week_monthvieww.png" alt="picture"></p>
-<p>In other Calendar views as well as ERP.net navigators making use of the <strong>date picker</strong>, you will also find BW labels.</p>
+<p>In other Calendar views as well as navigators making use of the <strong>date picker</strong>, you will also find BW labels for convenience.</p>
 <p><img src="pictures/business_week_mini.png" alt="picture"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All ERP.net navigators with time-based columns like Document Date support <strong><a href="https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals">business week grouping</a></strong>, which allows you to group any records of documents by the business week they were created in.</p>
+</div>
 <h2 id="activities">Activities</h2>
 <p>Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.</p>
 <h3 id="details">Details</h3>
-<p>If you hover the mouse over an existing activity, you can see more <strong>details</strong> about it in a pop-up.</p>
+<p>If you hover the mouse over an existing activity, you can see more <strong>details</strong> about it in a tooltip.</p>
+<p>This includes the Subject, time range, Responsible Party, Target Party, and Document Type.</p>
+<p>If participants are included, up to the first three will be listed under a dedicated &quot;Participants&quot; section.</p>
 <p><img src="pictures/activity_details.png" alt="picture"></p>
 <p>In Month view, the <strong>starting time</strong> of an activity is always shown to the left of its title.</p>
-<p>It is also possible to see a <strong>list of all activities</strong> for a given day by clicking the <strong>circular button</strong> at the top-right corner of a date.</p>
+<p>You can also see a <strong>list of all activities</strong> for a given day by clicking the <strong>circular button</strong> at the top-right corner of a date.</p>
 <p><img src="pictures/activities_fortheday.png" alt="picture"></p>
 <h3 id="scope-of-activities">Scope of activities</h3>
 <p>As a general rule, the Calendar shows you all activities where you are designated as the <strong>Owner</strong>, <strong>Responsible Party</strong> or a <strong>Participant</strong>.</p>
-<p>The Calendar will also show activities from <strong>social groups</strong> you take part in. If a member from your organization is not part of the same groups as you are, they will not be able to see nor access your group events, and vice versa.</p>
+<p>The Calendar will also display activities from <strong><a href="groups/features-in-groups.html">social groups</a></strong> you take part in. You once again need to be either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the <strong><a href="https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access">group-integrated Calendar</a></strong>.</p>
 <h3 id="create-an-activity">Create an activity</h3>
 <p>To add a new activity from scratch, click on a date and press the <strong>Create</strong> button.</p>
-<p>It will expand a dropdown with several options, including a meeting, task or even sick day.</p>
+<p>It will expand a dropdown with several options, including a meeting, task, or sick day.</p>
 <p><img src="pictures/create_activity.png" alt="picture"></p>
 <p>Once you make your choice, you will be taken to the <strong>Activity document form</strong> where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.</p>
-<p>These fields also serve as crucial piece of data that will appear in all intended participants' Calendars.</p>
-<p>You can add a <strong>Subject</strong>, <strong>Start</strong> and <strong>End Time</strong>, as well as a <strong>Responsible Party</strong>.</p>
-<p><img src="pictures/Screenshot_8.png" alt="picture"></p>
+<p>These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.</p>
+<h4 id="responsible-party-and-assigned-to-user">Responsible Party and Assigned To User</h4>
+<p>When a user creates an activity, the <strong>Assigned To User</strong> field is automatically populated with their username. At the same time, the Person associated with them is automatically set as the <strong>Responsible Party</strong> and <strong>Owner Party</strong>.</p>
+<p><img src="pictures/assigned_to_responsible_owner.png" alt="picture"></p>
+<p>You can assign a different user to the document by changing the value of the <strong>Assigned To User</strong> field. This will automatically change the <strong>Responsible Party</strong> field as well, in case there is a Person associated with that user.</p>
+<p>If there isn't one, the <strong>Responsible Party</strong> field will be left <strong>blank</strong>.</p>
+<p>This is ensured with business rule <strong><a href="https://docs.erp.net/model/business-rules/R38826.html">R38826</a></strong>.</p>
+<p><img src="pictures/different_assigned_to.png" alt="picture"></p>
+<h4 id="responsible-party-different-from-owner-party">Responsible Party different from Owner Party</h4>
+<p>You can choose a Responsible Party who is <strong>different</strong> from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a <strong>Participant Person</strong>.</p>
+<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38894.html">business rule R38894</a></strong>.</p>
+<p><img src="pictures/different_responsible_owner.png" alt="picture"></p>
 <p>When you're finished, click <strong>Save and reload</strong>, and the activity will be added to your <strong>Calendar</strong>.</p>
-<h2 id="edit-activity">Edit activity</h2>
-<p>You can open any activity by clicking on its title.</p>
-<p>Inside the document, you can change the subject, date or any other aspect.</p>
-<p><img src="pictures/activity_document.png" alt="picture"></p>
-<p>Upon saving the changes, they will be immediately reflected in the Calendar.</p>
+<p><img src="pictures/save_reload.png" alt="picture"></p>
+<h3 id="edit-an-activity">Edit an activity</h3>
+<p>You can open any activity document by clicking on its title. Inside, you can <strong>edit</strong> the subject, date, participants or any other information.</p>
+<p>When done, click <strong>Save and reload</strong>. Your changes will be immediately reflected in your Calendar.</p>
+<p><img src="pictures/edit_event.png" alt="picture"></p>
 <h2 id="broader-use">Broader use</h2>
 <p>The Calendar is not confined to a single location.</p>
 <p>In the ERP.net <strong>Dashboard</strong>, for instance, you can integrate it as a panel, accessible whenever needed.</p>
