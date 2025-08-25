@@ -40,7 +40,7 @@ The group Calendar makes use of a "Business Week" numbering logic which is used 
 
 You can read more about how it works **[here](https://docs.erp.net/tech/modules/my/calendar.html#business-week-numbering)**.
 
-### Activity accesss
+### Activity access
 
 Group activities where you are not a **Participant**, **Responsible Party** or **Owner** will still appear in the Calendar of the group you are a member of, but **NOT** in your **[personal Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
 
