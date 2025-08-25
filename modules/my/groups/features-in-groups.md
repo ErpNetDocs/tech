@@ -10,15 +10,15 @@ The **Chat** feature facilitates rapid communication among group participants.
 
 It offers standard industry features such as message previewing and sending, reacting to and replying to messages from others, and even editing one's messages.
 
-![picture](pictures/Groups_Chat_01_05.png)
+![picture](pictures/chat_groups.png)
  
 ## Calendar 
 
 The calendar feature enables authorized members to create and view a range of events and meetings, visible to the entire group. 
 
-Any group activities you create or participate in will also be reflected in your **Calendar**. 
+Any group activities you create or participate in will also be reflected in your **[Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
 
-![picture](pictures/Groups_Calendar_01_05.png) 
+![picture](pictures/calendar_groups.png) 
 
 ### Time period of the calendar
 
@@ -52,7 +52,7 @@ With **Member** or **Admin** permissions, you can create new tasks and assign th
 
 Any to-dos added or assigned to you will also be visible in your personal Do space.
 
-![picture](pictures/Groups_task_view_01_05.png) 
+![picture](pictures/todo_groups.png) 
 
 ### Create a task
 
@@ -82,7 +82,7 @@ Within the Files tab, you have access to file attachments uploaded by either you
 
 Each file includes details such as its format, the name of the author, and the date and time of upload. 
 
-![picture](pictures/Groups_files_01_05.png)  
+![picture](pictures/files_groups.png)  
 
 ### Upload files 
 
@@ -108,7 +108,7 @@ The **Members** tab contains a list of all members within the current group alon
 
 Admins have the exclusive authority to add or remove participants and adjust their permission levels as needed.
 
-![picture](pictures/Groups_Members_view_01_05.png)   
+![picture](pictures/members_groups.png)   
 
 ### Admin settings 
 
