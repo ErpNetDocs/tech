@@ -108,13 +108,17 @@ Once you make your choice, you will be taken to the **Activity document form** w
 
 These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.
 
-#### Role assignment 
+#### Responsible Party and Assigned To User 
 
 When a user creates an activity, the Assigned To User field is automatically populated with their username. At the same time, the Person associated with them is automatically set as the **Responsible Party** and **Owner Party**.
 
 You can assign a different user to the document by changing the value of the **Assigned To User** field. This will automatically change the **Responsible Party** field as well, in case there is a Person associated with that user. 
 
 If there isn't one, the Responsible Party field will be left **blank**. 
+
+This is ensured with business rule **[R38826](https://docs.erp.net/model/business-rules/R38826.html)**.
+
+#### Responsible Party different from Owner Party
 
 You can choose a Responsible Party **different** from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a **Participant Person**.
 
