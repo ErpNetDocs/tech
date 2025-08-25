@@ -136,13 +136,11 @@ When you're finished, click **Save and reload**, and the activity will be added 
  
 ### Edit an activity
 
-You can open any activity by clicking on its title.
+You can open any activity document by clicking on its title. Inside, you can **edit** the subject, date, participants or any other information.
 
-Inside the document, you can change the subject, date or any other information.
+When done, click **Save and reload**. Your changes will be immediately reflected in your Calendar.
 
-![picture](pictures/activity_document.png)
-
-Upon saving the changes, they will be immediately reflected in your Calendar.
+![picture](pictures/edit_event.png)
 
 ## Broader use
 
