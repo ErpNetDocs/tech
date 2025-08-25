@@ -2,11 +2,11 @@
 
 Groups is a sub-section of **My** that provides a convenient platform for effortless communication, document exchange, task scheduling, and assignment among you and your colleagues. 
 
-Groups are created by an **admin** in the platform when they are needed, between people in the same company. 
+Groups are created by an **Admin** in the platform when they are needed, between people in the same company. 
 
 ## Chat 
 
-The **Chat** feature facilitates rapid communication among group participants. 
+The **Chat** tab facilitates rapid communication among group participants. 
 
 It offers standard industry features such as message previewing and sending, reacting to and replying to messages from others, and even editing one's messages.
 
@@ -14,35 +14,31 @@ It offers standard industry features such as message previewing and sending, rea
  
 ## Calendar 
 
-The calendar feature enables authorized members to create and view a range of events and meetings, visible to the entire group. 
+The Calendar tab enables authorized members to create and view a range of events and meetings visible to the entire group. 
 
 Any group activities you create or participate in will also be reflected in your **[Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
 
 ![picture](pictures/calendar_groups.png) 
 
-### Time period of the calendar
-
-To adjust the time period displayed on the calendar, utilize the dropdown menu. 
-
-You can select whether you prefer the period type to be **Month** or **Workweek**.
- 
-![picture](pictures/Groups_Calendar_change_01_05.png)
-
 ### Create a new activity 
 
 Use the **Create** button to create a new activity. 
 
-Choose the type of activity you want to create from the drop-down list.
+Choose the type of activity you want to create from the dropdown list.
 
-![picture](pictures/Groups_Calendar_Create_activity_01_05.png)
+![picture](pictures/create_act.png)
 
 To create a new activity you need to fill a form with information about the activity and the participants in it.  
 
-![picture](pictures/Groups_Calendar_activity_creation_01_05.png) 
-
 Once you filled every field, click **Save and reload** and the activity will be added to the calendar. 
 
-![picture](pictures/Groups_Calendar_Save_and_reload_01_05.png) 
+![picture](pictures/save_reload.png) 
+
+Group activities where you are not a **Participant**, **Responsible Party** or **Owner** will still appear in the group Calendar for you to see but **NOT** in your personal Calendar. 
+
+If you're not a member of a group, its activities will also not be shown in your Calendar, nor will be accessible in any other way. Even if members from your own organization are part of that group, only they will retain access to these activities. 
+
+![picture](pictures/mycalendar_groups.png) 
  
 ## To Do 
 
