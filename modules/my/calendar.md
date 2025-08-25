@@ -2,7 +2,7 @@
 
 The ERP.net Calendar is a powerful time-management tool, allowing you to efficiently organize, monitor and synchronize your events and tasks. Its features include previewing and creating **activities**, applying different **views**, navigating across various **time periods**, as well as accessing any type of **scheduled event** easily.
 
-It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the responsible person, organizer, or a participant. 
+It also sums up group activities from the **[social groups](groups/features-in-groups.md)** you take part in, whenever you are marked as the Responsible Party, Owner, or Participant. 
 
 ![picture](pictures/new_calendar_overview.png)
 
@@ -90,7 +90,7 @@ You can also see a **list of all activities** for a given day by clicking the **
 
 As a general rule, the Calendar shows you all activities where you are designated as the **Owner**, **Responsible Party** or a **Participant**.
 
-The Calendar will also show activities from **[social groups](groups/features-in-groups.md)** you take part in. If a member from your organization is not part of the same groups as you are, they will not be able to see nor access your group events, and vice versa.
+The Calendar will also display activities from **[social groups](groups/features-in-groups.md)** you take part in. This once again includes activities where you are either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the **[group-integrated Calendar](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access)**.
 
 ### Create an activity
 
