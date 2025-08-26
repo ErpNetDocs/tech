@@ -1,6 +1,6 @@
 # How to define a website of type Client Center
 
-This article provides a step-by-step guide on creating a Client Center website through ERP.net.
+This article provides a step-by-step guide on creating a Client Center website through @@name.
 
 ### Prerequisites 
 
