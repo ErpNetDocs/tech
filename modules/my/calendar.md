@@ -140,13 +140,15 @@ You can open any activity document by clicking on its title. Inside, you can **e
 
 When done, you need to once again click **Save and reload**. Your changes will be immediately reflected in your Calendar.
 
-![picture](pictures/savee_reload.png)
+![picture](pictures/editt_event.png)
 
 ## Broader use
 
-The Calendar is not confined to a single location. 
+The Calendar is not tied to one specific location. 
 
-In the @@name **Dashboard**, for instance, you can integrate it as a panel, accessible whenever needed. 
+In other modules like the **Dashboard**, for instance, you can integrate it as a panel, accessible whenever needed. 
+
+![picture](pictures/calendar_dashboard.png)
 
 > [!Note]
 > The screenshots taken for this article are from v.26 of the platform.
