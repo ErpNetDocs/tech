@@ -110,9 +110,7 @@ These fields also serve as crucial piece of data that will appear in all potenti
 
 #### Responsible Party and Assigned To User 
 
-When a user creates an activity, the **Assigned To User** field is automatically linked to the user associated with the document's **Responsible Party**. 
-
-If there is no Person associated with the **Responsible Party**, the **Assigned To User** field will be left **blank**.
+When a user creates an activity, the **Assigned To User** field is automatically linked to the user associated with the document's **Responsible Party**. If there is no Person associated with the Responsible Party, the Assigned To User field will be left **blank**.
 
 This is ensured with **[business rule R38288](https://docs.erp.net/model/business-rules/R38288.html?q=R38288)**.
 
