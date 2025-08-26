@@ -10,10 +10,10 @@ Here, you will find a guide on how to create a new group in @@name.
 
     ![picture](pictures/Groups_Create_tab_01_05.png) 
 
-  As you begin typing a user's name, the platform will offer suggestions to streamline the process.
+    As you begin typing a user's name, the platform will offer suggestions to streamline the process.
 
     ![picture](pictures/Groups_Create_suggestions_01_05.png) 
 
-3. Compose the first message for the group and send it. This action will complete the creation process.
+4. Compose the first message for the group and send it. This action will complete the creation process.
 
     ![picture](pictures/Groups_Create_finish_01_05.png) 
