@@ -132,15 +132,15 @@ This is ensured with **[business rule R38894](https://docs.erp.net/model/busines
 
 When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
 
-![picture](pictures/savee_reload.png)
+![picture](pictures/save_reload.png)
  
 ### Edit an activity
 
 You can open any activity document by clicking on its title. Inside, you can **edit** the subject, date, participants or any other information.
 
-When done, click **Save and reload**. Your changes will be immediately reflected in your Calendar.
+When done, you need to once again click **Save and reload**. Your changes will be immediately reflected in your Calendar.
 
-![picture](pictures/edit_event.png)
+![picture](pictures/savee_reload.png)
 
 ## Broader use
 
