@@ -65,7 +65,7 @@ In **Month** view, labels are positioned on the left of the Calendar, and their 
 
 In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels for convenience.
 
-![picture](pictures/business_week_mini.png)
+![picture](pictures/bw_datepicker.png)
 
 > [!NOTE]
 > All @@name navigators with time-based columns like Document Date support **[business week grouping](https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals)**, which allows you to group any records of documents by the business week they were created in. 
