@@ -110,7 +110,11 @@ These fields also serve as crucial piece of data that will appear in all potenti
 
 #### Responsible Party and Assigned To User 
 
-When a user creates an activity, the **Assigned To User** field is automatically populated with their username. At the same time, the Person associated with them is automatically set as the **Responsible Party** and **Owner Party**.
+When a user creates an activity, the **Assigned To User** field is automatically linked to the user associated with the document's **Responsible Party**. 
+
+If there is no Person associated with the **Responsible Party**, the **Assigned To User** field will be left **blank**.
+
+This is ensured with **[business rule R38288](https://docs.erp.net/model/business-rules/R38288.html?q=R38288)**.
 
 ![picture](pictures/assigned_to_responsible_owner.png)
 
@@ -118,7 +122,7 @@ You can assign a different user to the document by changing the value of the **A
 
 If there isn't one, the **Responsible Party** field will be left **blank**. 
 
-This is ensured with business rule **[R38826](https://docs.erp.net/model/business-rules/R38826.html)**.
+This is ensured with **[business rule R38826](https://docs.erp.net/model/business-rules/R38826.html)**.
 
 ![picture](pictures/different_assigned_to.png)
 
@@ -126,7 +130,10 @@ This is ensured with business rule **[R38826](https://docs.erp.net/model/busines
 
 You can choose a Responsible Party who is **different** from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a **Participant Person**.
 
-This is ensured with **[business rule R38894](https://docs.erp.net/model/business-rules/R38894.html)**.
+This is ensured with **[business rule R38894](https://docs.erp.net/model/business-rules/R38894.html)**, which checks the following:
+
+- If there is **only one** participant present, they are replaced with the new Responsible Party.
+- If there is **more than one** participant, the Responsible Party is included as long as they have not been already added. 
 
 ![picture](pictures/different_responsible_owner.png)
 
