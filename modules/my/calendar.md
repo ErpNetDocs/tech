@@ -142,11 +142,9 @@ When done, you need to once again click **Save and reload**. Your changes will b
 
 ![picture](pictures/editt_event.png)
 
-## Broader use
-
-The Calendar is not tied to one specific location. 
-
-In other modules like the **Dashboard**, for instance, you can integrate it as a panel, accessible whenever needed. 
+> [!TIP]
+> The Calendar is not tied to one specific location. <br>
+> Apart from being able to interact with it in a **group-specific context**, you can also integrate it as a panel in the **Dashboard**.
 
 ![picture](pictures/calendar_dashboard.png)
 
