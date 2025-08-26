@@ -132,7 +132,7 @@ This is ensured with **[business rule R38894](https://docs.erp.net/model/busines
 
 When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
 
-![picture](pictures/save_reload.png)
+![picture](pictures/savee_reload.png)
  
 ### Edit an activity
 
