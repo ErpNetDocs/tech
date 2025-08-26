@@ -17745,6 +17745,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/pictures/bw_datepicker.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/bw_datepicker.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/calendar_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/calendar_dashboard.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/pictures/calendar_mini.png",
       "output": {
         "resource": {
@@ -17825,6 +17845,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/pictures/editt_event.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/editt_event.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/pictures/new_calendar_overview.png",
       "output": {
         "resource": {
@@ -17859,6 +17889,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/my/pictures/save_reload.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/savee_reload.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/savee_reload.png"
         }
       },
       "version": ""

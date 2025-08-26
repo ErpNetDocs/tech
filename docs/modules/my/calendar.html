@@ -125,7 +125,7 @@
 <p>In <strong>Month</strong> view, labels are positioned on the left of the Calendar, and their number depends on how many weeks the month has.</p>
 <p><img src="pictures/business_week_monthvieww.png" alt="picture"></p>
 <p>In other Calendar views as well as navigators making use of the <strong>date picker</strong>, you will also find BW labels for convenience.</p>
-<p><img src="pictures/business_week_mini.png" alt="picture"></p>
+<p><img src="pictures/bw_datepicker.png" alt="picture"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>All ERP.net navigators with time-based columns like Document Date support <strong><a href="https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals">business week grouping</a></strong>, which allows you to group any records of documents by the business week they were created in.</p>
@@ -134,8 +134,8 @@
 <p>Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.</p>
 <h3 id="details">Details</h3>
 <p>If you hover the mouse over an existing activity, you can see more <strong>details</strong> about it in a tooltip.</p>
-<p>This includes the Subject, time range, Responsible Party, Target Party, and Document Type.</p>
-<p>If participants are included, up to the first three will be listed under a dedicated &quot;Participants&quot; section.</p>
+<p>This includes the <strong>Subject</strong>, <strong>time range</strong>, <strong>Responsible Party</strong>, <strong>Target Party</strong>, and <strong>Document Type</strong>.</p>
+<p>If participants are included, up to the first three will be listed under a dedicated &quot;<strong>Participants</strong>&quot; section.</p>
 <p><img src="pictures/activity_details.png" alt="picture"></p>
 <p>In Month view, the <strong>starting time</strong> of an activity is always shown to the left of its title.</p>
 <p>You can also see a <strong>list of all activities</strong> for a given day by clicking the <strong>circular button</strong> at the top-right corner of a date.</p>
@@ -150,25 +150,33 @@
 <p>Once you make your choice, you will be taken to the <strong>Activity document form</strong> where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.</p>
 <p>These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.</p>
 <h4 id="responsible-party-and-assigned-to-user">Responsible Party and Assigned To User</h4>
-<p>When a user creates an activity, the <strong>Assigned To User</strong> field is automatically populated with their username. At the same time, the Person associated with them is automatically set as the <strong>Responsible Party</strong> and <strong>Owner Party</strong>.</p>
+<p>When a user creates an activity, the <strong>Assigned To User</strong> field is automatically linked to the user associated with the document's <strong>Responsible Party</strong>. If there is no Person associated with the Responsible Party, the Assigned To User field will be left <strong>blank</strong>.</p>
+<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38288.html?q=R38288">business rule R38288</a></strong>.</p>
 <p><img src="pictures/assigned_to_responsible_owner.png" alt="picture"></p>
 <p>You can assign a different user to the document by changing the value of the <strong>Assigned To User</strong> field. This will automatically change the <strong>Responsible Party</strong> field as well, in case there is a Person associated with that user.</p>
 <p>If there isn't one, the <strong>Responsible Party</strong> field will be left <strong>blank</strong>.</p>
-<p>This is ensured with business rule <strong><a href="https://docs.erp.net/model/business-rules/R38826.html">R38826</a></strong>.</p>
+<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38826.html">business rule R38826</a></strong>.</p>
 <p><img src="pictures/different_assigned_to.png" alt="picture"></p>
 <h4 id="responsible-party-different-from-owner-party">Responsible Party different from Owner Party</h4>
 <p>You can choose a Responsible Party who is <strong>different</strong> from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a <strong>Participant Person</strong>.</p>
-<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38894.html">business rule R38894</a></strong>.</p>
+<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38894.html">business rule R38894</a></strong>, which checks the following:</p>
+<ul>
+<li>If there is <strong>only one</strong> participant present, they are replaced with the new Responsible Party.</li>
+<li>If there is <strong>more than one</strong> participant, the Responsible Party is included as long as they have not been already added.</li>
+</ul>
 <p><img src="pictures/different_responsible_owner.png" alt="picture"></p>
 <p>When you're finished, click <strong>Save and reload</strong>, and the activity will be added to your <strong>Calendar</strong>.</p>
 <p><img src="pictures/save_reload.png" alt="picture"></p>
 <h3 id="edit-an-activity">Edit an activity</h3>
 <p>You can open any activity document by clicking on its title. Inside, you can <strong>edit</strong> the subject, date, participants or any other information.</p>
-<p>When done, click <strong>Save and reload</strong>. Your changes will be immediately reflected in your Calendar.</p>
-<p><img src="pictures/edit_event.png" alt="picture"></p>
-<h2 id="broader-use">Broader use</h2>
-<p>The Calendar is not confined to a single location.</p>
-<p>In the ERP.net <strong>Dashboard</strong>, for instance, you can integrate it as a panel, accessible whenever needed.</p>
+<p>When done, you need to once again click <strong>Save and reload</strong>. Your changes will be immediately reflected in your Calendar.</p>
+<p><img src="pictures/editt_event.png" alt="picture"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>The Calendar is not tied to one specific location</strong>. <br>
+Apart from being able to interact with it in a <strong><a href="https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar">group-specific context</a></strong>, you can also integrate it as a panel in the <strong>Dashboard</strong>.</p>
+</div>
+<p><img src="pictures/calendar_dashboard.png" alt="picture"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v.26 of the platform.</p>
