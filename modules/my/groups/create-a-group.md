@@ -1,6 +1,6 @@
-# A step-by-step guide on how to create a group 
+# Create a group 
 
-Here, you will find a detailed guide on how to create a new group **ERP.net**. 
+Here, you will find a detailed guide on how to create a new group in @@name. 
 
 ## Creation process 
 
