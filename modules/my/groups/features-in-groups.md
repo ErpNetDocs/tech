@@ -30,7 +30,7 @@ Choose the type of activity you want to create from the dropdown list.
 
 To create a new activity you need to fill a form with information about the activity and the participants in it.  
 
-Once you filled every field, click **Save and reload** and the activity will be added to the calendar. 
+Once you fill every field, click **Save and reload** and the activity will be added to the calendar. 
 
 ![picture](pictures/save_reload.png) 
 
@@ -44,9 +44,9 @@ You can read more about how it works **[here](https://docs.erp.net/tech/modules/
 
 Group activities where you are not a **Participant**, **Responsible Party** or **Owner** will still appear in the Calendar of the group you are a member of, but **NOT** in your **[personal Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
 
-If you're not a member of a group, its activities will not be shown in your Calendar, nor can be accessible in any other way. Even if you once were a member and were subsequently removed from that group, all access to its activities is automatically revoked.
+If you're not a member of a group, its activities will **not** be shown in your Calendar, nor can be accessible through the Navigator, Global Search, and when accessing it directly via link or ID. Even if you once were a member and were subsequently removed from that group, all access to its activities is **automatically revoked**.
 
-Below, you can see how the **My Calendar** interface looks when group activites are automatically synced from the social group a user is part of. One event in which they are not a Participant, nor an Owner or Responsible Party is missing.
+Below, you can see how the **My Calendar** interface looks when group activites are automatically synced from the social group a user is part of. 
 
 ![picture](pictures/mycalendar_groups.png) 
  
