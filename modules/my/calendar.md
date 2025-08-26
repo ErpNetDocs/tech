@@ -78,9 +78,9 @@ Your activities are summarized and displayed within the Calendar, with their tit
 
 If you hover the mouse over an existing activity, you can see more **details** about it in a tooltip.
 
-This includes the Subject, time range, Responsible Party, Target Party, and Document Type. 
+This includes the **Subject**, **time range**, **Responsible Party**, **Target Party**, and **Document Type**. 
 
-If participants are included, up to the first three will be listed under a dedicated "Participants" section.
+If participants are included, up to the first three will be listed under a dedicated "**Participants**" section.
 
 ![picture](pictures/activity_details.png)
 
