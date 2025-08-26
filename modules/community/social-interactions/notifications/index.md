@@ -68,6 +68,7 @@ Also, most of the notifications are created automatically via business rules whe
 |25| NT_WEBSITE_EXT_MSSYNC | System |  - | Notify corresponding user that the MS Sync experienced an error.
 |26| NT_WEBSITE_EXT_VIDEOCONFERENCING | System |  - | Notify corresponding user that a Video Conference (meeting) has started.
 |27| NT_WEBSITE_EXT_VIDEOCONFERENCING_RECORDING | System |  - | Notify corresponding user that a new recording from a Video Conference (meeting) is available.
+|28| NT_INSTANCE_CHANGE_REQUEST_ASSIGN | System | Rxxxxx| Notify the assigned user when the Instance Change Request has been assigned to them. |
 
 ## I don't care about notifications
 
