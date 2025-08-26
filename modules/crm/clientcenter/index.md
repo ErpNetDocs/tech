@@ -2,7 +2,7 @@
 
 The Client Center (CC) allows @@name clients to assist their **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders. 
 
-You can **[create your own Client Center](how-to/define-a-new-cc.md)** from the **Web Sites** page, where you can define its core settings, access levels and URL path.
+You can **[create your own Client Center](how-to/define-a-new-cc.md)** **by defining a new Web Site in @@name**, where you can configure its **[core settings](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**, **[access levels](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** and URL path.
 
 ![picture](pictures/client_center_v26.png)
 
