@@ -12,10 +12,10 @@ Entities can have user-defined (custom) properties that are accessible via the C
 
 ```js
 // Access the value of a custom property by its code
-var value = subject.CustomProperties['C1'].Value;
+var value = subject.CustomProperties['@C1'].Value;
 
 // Update the value of a custom property
-subject.CustomProperties['C1'] = 'New custom value';
+subject.CustomProperties['@C1'] = 'New custom value';
 ```
 
 > [!NOTE]
