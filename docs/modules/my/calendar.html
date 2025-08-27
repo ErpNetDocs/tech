@@ -147,7 +147,7 @@
 <p><img src="pictures/bw_datepicker.png" alt="picture"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>All ERP.net navigators with time-based columns like Document Date support <strong><a href="https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#group-by-intervals">business week grouping</a></strong>, which allows you to group any records of documents by the business week they were created in.</p>
+<p>All ERP.net navigators with time-based columns like Document Date support <strong><a href="https://docs.erp.net/webclient/introduction/navigator-features.html?q=features#grouping">business week grouping</a></strong>, which allows you to group any records of documents by the business week they were created in.</p>
 </div>
 <h2 id="activities">Activities</h2>
 <p>Your activities are summarized and displayed within the Calendar, with their titles fitting into the respective time slots.</p>
@@ -164,28 +164,10 @@
 <p>The Calendar will also display activities from <strong><a href="groups/features-in-groups.html">social groups</a></strong> you take part in. You once again need to be either the Owner, Responsible Party or a Participant. If you're neither of those, you will still see the actvities but only within the <strong><a href="https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#activity-access">group-integrated Calendar</a></strong>.</p>
 <h3 id="create-an-activity">Create an activity</h3>
 <p>To add a new activity from scratch, click on a date and press the <strong>Create</strong> button.</p>
-<p>It will expand a dropdown with several options, including a meeting, task, or sick day.</p>
+<p>It will expand a dropdown with several activity types.</p>
 <p><img src="pictures/create_activity.png" alt="picture"></p>
 <p>Once you make your choice, you will be taken to the <strong>Activity document form</strong> where you need to fill out all the necessary fields regarding the activity and individuals who may be involved in it.</p>
 <p>These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.</p>
-<h4 id="responsible-party-and-assigned-to-user">Responsible Party and Assigned To User</h4>
-<p>When a user creates an activity, the <strong>Assigned To User</strong> field is automatically linked to the user associated with the document's <strong>Responsible Party</strong>. If there is no Person associated with the Responsible Party, the Assigned To User field will be left <strong>blank</strong>.</p>
-<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38288.html?q=R38288">business rule R38288</a></strong>.</p>
-<p><img src="pictures/assigned_to_responsible_owner.png" alt="picture"></p>
-<p>You can assign a different user to the document by changing the value of the <strong>Assigned To User</strong> field. This will automatically change the <strong>Responsible Party</strong> field as well, in case there is a Person associated with that user.</p>
-<p>If there isn't one, the <strong>Responsible Party</strong> field will be left <strong>blank</strong>.</p>
-<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38826.html">business rule R38826</a></strong>.</p>
-<p><img src="pictures/different_assigned_to.png" alt="picture"></p>
-<h4 id="responsible-party-different-from-owner-party">Responsible Party different from Owner Party</h4>
-<p>You can choose a Responsible Party who is <strong>different</strong> from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a <strong>Participant Person</strong>.</p>
-<p>This is ensured with <strong><a href="https://docs.erp.net/model/business-rules/R38894.html">business rule R38894</a></strong>, which checks the following:</p>
-<ul>
-<li>If there is <strong>only one</strong> participant present, they are replaced with the new Responsible Party.</li>
-<li>If there is <strong>more than one</strong> participant, the Responsible Party is included as long as they have not been already added.</li>
-</ul>
-<p><img src="pictures/different_responsible_owner.png" alt="picture"></p>
-<p>When you're finished, click <strong>Save and reload</strong>, and the activity will be added to your <strong>Calendar</strong>.</p>
-<p><img src="pictures/save_reload.png" alt="picture"></p>
 <h3 id="edit-an-activity">Edit an activity</h3>
 <p>You can open any activity document by clicking on its title. Inside, you can <strong>edit</strong> the subject, date, participants or any other information.</p>
 <p>When done, you need to once again click <strong>Save and reload</strong>. Your changes will be immediately reflected in your Calendar.</p>
