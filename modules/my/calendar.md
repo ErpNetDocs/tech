@@ -102,7 +102,7 @@ The Calendar will also display activities from **[social groups](groups/features
 
 To add a new activity from scratch, click on a date and press the **Create** button.
 
-It will expand a dropdown with several options, including a meeting, task, or sick day.
+It will expand a dropdown with several activity types.
 
 ![picture](pictures/create_activity.png)
 
@@ -110,37 +110,6 @@ Once you make your choice, you will be taken to the **Activity document form** w
 
 These fields also serve as crucial piece of data that will appear in all potential participants' Calendars.
 
-#### Responsible Party and Assigned To User 
-
-When a user creates an activity, the **Assigned To User** field is automatically linked to the user associated with the document's **Responsible Party**. If there is no Person associated with the Responsible Party, the Assigned To User field will be left **blank**.
-
-This is ensured with **[business rule R38288](https://docs.erp.net/model/business-rules/R38288.html?q=R38288)**.
-
-![picture](pictures/assigned_to_responsible_owner.png)
-
-You can assign a different user to the document by changing the value of the **Assigned To User** field. This will automatically change the **Responsible Party** field as well, in case there is a Person associated with that user. 
-
-If there isn't one, the **Responsible Party** field will be left **blank**. 
-
-This is ensured with **[business rule R38826](https://docs.erp.net/model/business-rules/R38826.html)**.
-
-![picture](pictures/different_assigned_to.png)
-
-#### Responsible Party different from Owner Party
-
-You can choose a Responsible Party who is **different** from the Owner Party. In that case, the Responsible Party will be automatically included in the Participants list as a **Participant Person**.
-
-This is ensured with **[business rule R38894](https://docs.erp.net/model/business-rules/R38894.html)**, which checks the following:
-
-- If there is **only one** participant present, they are replaced with the new Responsible Party.
-- If there is **more than one** participant, the Responsible Party is included as long as they have not been already added. 
-
-![picture](pictures/different_responsible_owner.png)
-
-When you're finished, click **Save and reload**, and the activity will be added to your **Calendar**.
-
-![picture](pictures/save_reload.png)
- 
 ### Edit an activity
 
 You can open any activity document by clicking on its title. Inside, you can **edit** the subject, date, participants or any other information.
