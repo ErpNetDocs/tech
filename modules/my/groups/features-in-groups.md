@@ -34,11 +34,11 @@ Once you fill every field, click **Save and reload** and the activity will be ad
 
 ![picture](pictures/save_reload.png) 
 
-### Business week labels
+### Business Week Number
 
-The group Calendar makes use of a "Business Week" numbering logic which is used to count the number of weeks in a year through a custom implementation of the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)**.
+The group Calendar makes use of the **Business Week standard** which is used to track the number of weeks in a year, ensuring each week corresponds to its respective calendar year.
 
-You can read more about how it works **[here](https://docs.erp.net/tech/modules/my/calendar.html#business-week-numbering)**.
+You can read more about how it's implemented **[here](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)**.
 
 ### Activity access
 
