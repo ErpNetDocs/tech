@@ -39,17 +39,23 @@ If you've navigated too far away and wish to quickly go back to the present date
 
 ![picture](pictures/calendar_view_modes.png)
 
-## Business week numbering
+## Business Week Number
 
-The @@name Calendar uses the **[ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601)** for tracking the number of weeks in a calendar year: 
+The Calendar follows the @@name **Business Week (BW) standard** for numbering weeks in a calendar year. This standard is based on **ISO 8601**, but it applies specific improvements to:
 
-- All weeks are counted **chronologically** (e.g. week 42 of 2022 corresponds to the 42nd week of that year)
-- The first week of a year is **always marked with the number corresponding to that year** (e.g. week 1 of 2023)
-- The last week of a year is **always marked with the number corresponding to that year** (e.g. week 52 of 2024)
+- ensure weeks always align with their calendar year
+- prevent confusion in reports or documents where dates at the beginning or end of a year may be assigned to a different year.
 
-However, when the last ISO week of the previous year falls into the first three days of the next year, it is **always marked as week 0 for the new year**. This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward for compatibility.
+Here are the two key differences:
 
-![picture](pictures/week_zero.png)
+| Month    | ISO 8601                                                                 | Business Week                                                                 |
+|----------|--------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| January  | The first 1–3 days of January may belong to the last week of the previous year (**e.g. 01.01.2027 → ISO 53/2026**) ⚠️ | These days are assigned to **week 0 of the current year** (**e.g. 01.01.2027 → BW 0/2027**) ✅ |
+| December | The last days of December may belong to Week 1 of the next year (**e.g. 31.12.2018 → ISO 1/2019**) ⚠️ | These days remain in the **final week of the current year** (**e.g. 31.12.2018 → BW 53/2018**) ✅|
+
+The BW number **always reflects the actual calendar year of the date**. This avoids mismatches across year boundaries, ensures chronological order, and keeps all documents and reports from a given year grouped correctly.
+
+![picture](pictures/business_week_monthvieww.png)
 
 ### Monthly and weekly labels
 
@@ -58,10 +64,6 @@ Within the Calendar, you can see each week labeled with its corresponding **BW n
 In **Workweek** view, this label is positioned at the upper-left corner of the Calendar.
 
 ![picture](pictures/business_week_view.png)
-
-In **Month** view, labels are positioned on the left of the Calendar, and their number depends on how many weeks the month has.
-
-![picture](pictures/business_week_monthvieww.png)
 
 In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels for convenience.
 
