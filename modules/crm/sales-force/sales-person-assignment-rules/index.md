@@ -30,7 +30,7 @@ Each type of target is evaluated according to specific logic tailored to that re
 
 
 ## How it works for users
-Assignment rules take effect when a sales-related document or definition is saved with the **Salesperson field** (the field designating the assigned salesperson) left empty. Upon saving, the system checks the record against the predefined rules and assigns it to the salesperson specified by the best-matching rule.
+Assignment rules take effect when a sales-related document or definition is saved with the **salesperson field** (the field designating the assigned salesperson) left empty. Upon saving, the system checks the record against the predefined rules and assigns it to the salesperson specified by the best-matching rule.
 
 This ensures that the assignment is consistently controlled by the configured rules — not by the individual user.
 
