@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>J39082 Instance Changes Processor | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="J39082 Instance Changes Processor | ERP.net Tech Docs ">
       
       
-      <link rel="icon" href="../../../../favicon.ico">
-      <link rel="stylesheet" href="../../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../../public/main.css">
-      <meta name="docfx:navrel" content="../../../../toc.html">
-      <meta name="docfx:tocrel" content="../../../../toc.html">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
       
-      <meta name="docfx:rel" content="../../../../">
+      <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/advanced/jobs/J39082.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../../../public/docfx.min.js"></script>
+      <script type="module" src="./../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../../index.html">
-            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,33 +84,53 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="jobs-J39082">
+<h1 id="j39082-instance-changes-processor">J39082 <strong>Instance Changes Processor</strong></h1>
 
-<ul>
-<li><a href="barcode-parsers/p03.html"></a></li>
-<li><a href="barcode-parsers/index.html">Barcode Parsers</a></li>
-<li><a href="task-types/comp-dispatch.html">Component Dispatch task type</a></li>
-<li><a href="task-types/comp-receive.html">Component Receive task type</a></li>
-<li><a href="task-types/count.html">Count task type</a></li>
-<li><a href="task-types/dekit.html">Dekit task type</a></li>
-<li><a href="task-types/dispatch.html">Dispatch task type</a></li>
-<li><a href="task-types/kit.html">Kit task type</a></li>
-<li><a href="task-types/move.html">Move task type</a></li>
-<li><a href="barcode-parsers/p01.html">P01: Product Code parser</a></li>
-<li><a href="barcode-parsers/p02.html">P02: GS1 - Single Product parser</a></li>
-<li><a href="task-types/pack.html">Pack task type</a></li>
-<li><a href="recalculate-quantities.html">Recalculate quantities in the WMS Worker</a></li>
-<li><a href="task-types/receive.html">Receive task type</a></li>
-<li><a href="task-types/index.html">Task types</a></li>
-<li><a href="task-types/unpack.html">Unpack task type</a></li>
-<li><a href="task-types/user-task.html">User task - task type</a></li>
-<li><a href="scan-field.html">Using the SCAN field in WMS worker</a></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>J39082</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entity</td>
+<td>Systems.Core.InstanceChangeRequests</td>
+</tr>
+<tr>
+<td>Job type name</td>
+<td><strong>Instance Changes Processor</strong></td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>Systems.Core.InstanceChangeRequests</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>This is a system job that applies changes to the instance based on the data in InstanceChangeRequests.<br>Examples of supported changes include:<br><br>Changing the base currency<br><br>Setting or updating the reporting currency<br><br>Updating default currency values<br><br>The exact behavior of the job depends on the value of the Change_Kind field.<br><br>Supported Change Types<br>REP = Reporting Currency Change<br><br>The system job updates the following fields in the company record:<br><br>ReportingCurrency<br><br>ReportingCurrencyStartDate<br><br>ReportingCurrencyProcessedDate<br><br>ReportingCurrencyEndDate<br><br>ReportingCurrencyRate<br><br>The data is taken from the Settings_Json field.<br>Tags matching the above field names must be defined in the JSON.<br><br>Note: ReportingCurrencyProcessedDate should not be set manually – the job will clear it automatically.<br><br>BAS = Base Currency Change<br><br>The system job executes the procedure ConvertToNewBaseCurrency when the Execution_Date is reached.<br><br>Example execution:<br><br>EXEC ConvertToNewBaseCurrency 'BGN', 'EUR', 0.5112918, '2026-01-01', '2025EUR_Changeover'<br><br><br>Parameters passed:<br><br>Old_Value_Currency_Id<br><br>New_Value_Currency_Id<br><br>CurrencyRate<br><br>Effective_Date<br><br>CurrencyDirectory<br><br>CurrencyRate and CurrencyDirectory are provided as JSON tags.<br><br>DEF = Currency of Defaults Change<br><br>The system job executes the procedure ChangeDefaultCurrency when the Execution_Date is reached.<br><br>Example execution:<br><br>EXEC ChangeDefaultCurrency 'BGN', 'EUR', 0.5112918812, '2026-01-01', '2025EUR_Changeover'<br><br><br>Parameters passed:<br><br>Old_Value_Currency_Id<br><br>New_Value_Currency_Id<br><br>CurrencyRate<br><br>Effective_Date<br><br>CurrencyDirectory<br><br>CurrencyRate and CurrencyDirectory are provided as JSON tags.</td>
+</tr>
+<tr>
+<td>First to process</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Automatically created</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>Introduced: 2026</td>
+</tr>
+</tbody>
+</table>
+<p>To learn more about the documentation template and get a short explanation for each table column, see <a href="template.html">Jobs documentation template</a>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/logistics/wms/how-it-works/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/advanced/jobs/J39082.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

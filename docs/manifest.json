@@ -1628,6 +1628,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "advanced/jobs/J39082.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/jobs/J39082.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "advanced/jobs/index.md",
       "output": {
         ".html": {

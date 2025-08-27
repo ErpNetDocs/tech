@@ -109,21 +109,40 @@
 <p>You can also change the Calendar display view from the <strong>three-dot menu</strong> at the upper-right part of the page.</p>
 </div>
 <p><img src="pictures/calendar_view_modes.png" alt="picture"></p>
-<h2 id="business-week-numbering">Business week numbering</h2>
-<p>The ERP.net Calendar uses the <strong><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 standard</a></strong> for tracking the number of weeks in a calendar year:</p>
+<h2 id="business-week-number">Business Week Number</h2>
+<p>The Calendar follows the ERP.net <strong>Business Week (BW) standard</strong> for numbering weeks in a calendar year. This standard is based on <strong>ISO 8601</strong>, but it applies specific improvements to:</p>
 <ul>
-<li>All weeks are counted <strong>chronologically</strong> (e.g. week 42 of 2022 corresponds to the 42nd week of that year)</li>
-<li>The first week of a year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 1 of 2023)</li>
-<li>The last week of a year is <strong>always marked with the number corresponding to that year</strong> (e.g. week 52 of 2024)</li>
+<li>ensure weeks always align with their calendar year</li>
+<li>prevent confusion in reports or documents where dates at the beginning or end of a year may be assigned to a different year.</li>
 </ul>
-<p>However, when the last ISO week of the previous year falls into the first three days of the next year, it is <strong>always marked as week 0 for the new year</strong>. This way, the Calendar treats January 1st as the true beginning of a year, yet still respects the ISO standard from Week 1 onward for compatibility.</p>
-<p><img src="pictures/week_zero.png" alt="picture"></p>
+<p>Here are the two key differences:</p>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>ISO 8601</th>
+<th>Business Week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January</td>
+<td>The first 1–3 days of January may belong to the last week of the previous year (<strong>e.g. 01.01.2027 → ISO 53/2026</strong>) ⚠️</td>
+<td>These days are assigned to <strong>week 0 of the current year</strong> (<strong>e.g. 01.01.2027 → BW 0/2027</strong>) ✅</td>
+</tr>
+<tr>
+<td>December</td>
+<td>The last days of December may belong to Week 1 of the next year (<strong>e.g. 31.12.2018 → ISO 1/2019</strong>) ⚠️</td>
+<td>These days remain in the <strong>final week of the current year</strong> (<strong>e.g. 31.12.2018 → BW 53/2018</strong>) ✅</td>
+</tr>
+</tbody>
+</table>
+<p>The BW number <strong>always reflects the actual calendar year of the date</strong>. This avoids mismatches across year boundaries, ensures chronological order, and keeps all documents and reports from a given year grouped correctly.</p>
+<p><img src="pictures/business_week_monthvieww.png" alt="picture"></p>
 <h3 id="monthly-and-weekly-labels">Monthly and weekly labels</h3>
 <p>Within the Calendar, you can see each week labeled with its corresponding <strong>BW number</strong>, which stands for &quot;Business Week number&quot;.</p>
 <p>In <strong>Workweek</strong> view, this label is positioned at the upper-left corner of the Calendar.</p>
 <p><img src="pictures/business_week_view.png" alt="picture"></p>
-<p>In <strong>Month</strong> view, labels are positioned on the left of the Calendar, and their number depends on how many weeks the month has.</p>
-<p><img src="pictures/business_week_monthvieww.png" alt="picture"></p>
 <p>In other Calendar views as well as navigators making use of the <strong>date picker</strong>, you will also find BW labels for convenience.</p>
 <p><img src="pictures/bw_datepicker.png" alt="picture"></p>
 <div class="NOTE">
