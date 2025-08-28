@@ -38,6 +38,9 @@ Once the best-matching rule is identified, the system automatically assigns the 
 
 If a *Sales Person* has already been entered in the *Assigned To Sales Person* field, no automatic assignment is performed.  
 
+![Rules](pictures/rules-lead.png)
+![Rule Logic Sales Order](pictures/rule-logic-lead.png)
+
 ## Manual assignment via UI function  
 
 The Lead form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu of the record.  
@@ -55,4 +58,6 @@ This is useful when rules are introduced or changed after the lead has been crea
 
 > [!NOTE]  
 > The function is disabled while the lead is in edit mode or when it is already closed.
+>
 
+![UI Function Lead](pictures/ui-function-lead.png)
