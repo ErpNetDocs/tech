@@ -50,4 +50,4 @@ This is particularly useful when assignment rules are introduced or modified aft
 > [!NOTE]  
 > The function is disabled while the customer is in edit mode.
 
-![UI Function Customer](pictures/ui-function-customer.png)
+![UI Function Customer](pictures/ui-function-customer2.png)
