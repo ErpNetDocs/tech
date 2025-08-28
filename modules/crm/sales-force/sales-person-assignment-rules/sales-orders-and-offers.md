@@ -37,15 +37,20 @@ Once the best-matching rule is identified, the system automatically assigns the 
 
 If a *Sales Person* is already assigned, the assignment remains unchanged.
 
+![Rules](pictures/rules.png)
+![Rule Logic Sales Order](pictures/rule-logic-order.png)
 
 ## Manual assignment via UI function  
 
-The Sales Order form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu for each record.  
+The Sales Order & Offer form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu for each record.  
 
 This function allows users to manually apply the same assignment logic described above, even when a *Sales Person* is already selected.  
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
 
-TThis is particularly useful when rules are introduced or modified after documents have already been created, enabling realignment with the current assignment strategy.  
+This is particularly useful when rules are introduced or modified after documents have already been created, enabling realignment with the current assignment strategy.  
 
 > [!NOTE]  
-> The function is disabled while the document is in edit mode or when its statе is *Released* or higher.  
+> The function is disabled while the document is in edit mode or when its statе is *Released* or higher.
+
+![Rules](pictures/rules.png)
+![UI Function Sales Order](pictures/ui-function-order.png)
