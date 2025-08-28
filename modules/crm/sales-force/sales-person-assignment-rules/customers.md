@@ -22,7 +22,7 @@ The system evaluates all **active Sales Person Assignment Rules** that are confi
 - The rule must be active on the current date (i.e., today must fall between the rule’s *From Date* and *To Date*, if defined).  
 - The *Enterprise Company* specified in the rule must be the same as in the customer record.  
 - The following fields in the rule must either match the values related to the customer or be left unspecified:  
-  - *Customer Type* – as defined in the Customer (*Area* field)   
+  - *Customer Type* – as defined in the Customer (*Customer Type* field)   
   - *Sales Area* – as defined in the Customer’s Party (*Area* field)  
 
 If multiple rules match:  
@@ -35,6 +35,8 @@ Once the best-matching rule is identified, the system automatically assigns the 
 
 If a *Sales Person* is already assigned, the assignment remains unchanged.
 
+![Rules](pictures/rules2.png)
+![Rule Logic Customer](pictures/rule-logic-customer.png)
 
 ## Manual assignment via UI function  
 
@@ -47,3 +49,5 @@ This is particularly useful when assignment rules are introduced or modified aft
 
 > [!NOTE]  
 > The function is disabled while the customer is in edit mode.
+
+![UI Function Customer](pictures/ui-function-customer.png)
