@@ -35,7 +35,7 @@ Once the best-matching rule is identified, the system automatically assigns the 
 
 If a *Sales Person* is already assigned, the assignment remains unchanged.
 
-![Rules](pictures/rules2.png)
+![Rules](pictures/rules-customer.png)
 ![Rule Logic Customer](pictures/rule-logic-customer.png)
 
 ## Manual assignment via UI function  
