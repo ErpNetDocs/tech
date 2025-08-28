@@ -37,7 +37,7 @@ Once the best-matching rule is identified, the system automatically assigns the 
 
 If a *Sales Person* is already assigned, the assignment remains unchanged.
 
-![Rules](pictures/rules.png)
+![Rules](pictures/rules2.png)
 ![Rule Logic Sales Order](pictures/rule-logic-order2.png)
 
 ## Manual assignment via UI function  
@@ -52,4 +52,4 @@ This is particularly useful when rules are introduced or modified after document
 > [!NOTE]  
 > The function is disabled while the document is in edit mode or when its statе is *Released* or higher.
 
-![UI Function Sales Order](pictures/ui-function-order2.png)
+![UI Function Sales Order](pictures/ui-function-order.png)
