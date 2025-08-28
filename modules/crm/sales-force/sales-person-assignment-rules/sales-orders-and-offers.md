@@ -52,5 +52,4 @@ This is particularly useful when rules are introduced or modified after document
 > [!NOTE]  
 > The function is disabled while the document is in edit mode or when its statе is *Released* or higher.
 
-![Rules](pictures/rules.png)
 ![UI Function Sales Order](pictures/ui-function-order.png)
