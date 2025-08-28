@@ -56,3 +56,5 @@ When multiple rules match a given scenario, the system uses the following criter
   - The rule with the higher number will be used.
 
 > Tip: You can manually edit Rule No to control the order in which rules are evaluated.
+
+![Rule Form](pictures/rule-form.png)
