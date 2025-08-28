@@ -36,7 +36,7 @@ If multiple rules match:
 ### 3. Assignment execution  
 Once the best-matching rule is identified, the system automatically assigns the corresponding **Sales Person** to the Lead.  
 
-If a *Sales Person* has already been entered in the *Assigned To* field, no automatic assignment is performed.  
+If a *Sales Person* has already been entered in the *Assigned To Sales Person* field, no automatic assignment is performed.  
 
 ## Manual assignment via UI function  
 
