@@ -6759,6 +6759,76 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-order2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-order2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-order.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-customer2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-customer2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-offer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-offer.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/rule-settings.md",
       "output": {

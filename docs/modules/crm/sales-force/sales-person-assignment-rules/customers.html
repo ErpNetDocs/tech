@@ -103,7 +103,7 @@ This allows the system to assign each customer to the most appropriate sales rep
 <li>The <em>Enterprise Company</em> specified in the rule must be the same as in the customer record.</li>
 <li>The following fields in the rule must either match the values related to the customer or be left unspecified:
 <ul>
-<li><em>Customer Type</em> – as defined in the Customer (<em>Area</em> field)</li>
+<li><em>Customer Type</em> – as defined in the Customer (<em>Customer Type</em> field)</li>
 <li><em>Sales Area</em> – as defined in the Customer’s Party (<em>Area</em> field)</li>
 </ul>
 </li>
@@ -116,6 +116,8 @@ This allows the system to assign each customer to the most appropriate sales rep
 <h3 id="3-assignment-execution">3. Assignment execution</h3>
 <p>Once the best-matching rule is identified, the system automatically assigns the corresponding <strong>Sales Person</strong> to the customer record.</p>
 <p>If a <em>Sales Person</em> is already assigned, the assignment remains unchanged.</p>
+<p><img src="pictures/rules-customer.png" alt="Rules">
+<img src="pictures/rule-logic-customer.png" alt="Rule Logic Customer"></p>
 <h2 id="manual-assignment-via-ui-function">Manual assignment via UI function</h2>
 <p>The Customer form includes a UI function called <strong>Assign Default Sales Person</strong>, available from the <strong>Run</strong> menu of the record.</p>
 <p>This function allows users to manually apply the same assignment logic described above, even when a <em>Sales Person</em> is already selected.<br>
@@ -125,6 +127,7 @@ It evaluates the current customer data and, if a matching rule is found, replace
 <h5>Note</h5>
 <p>The function is disabled while the customer is in edit mode.</p>
 </div>
+<p><img src="pictures/ui-function-customer2.png" alt="UI Function Customer"></p>
 
 </article>
 
