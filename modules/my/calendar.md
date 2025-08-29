@@ -39,7 +39,7 @@ If you've navigated too far away and wish to quickly go back to the present date
 
 ![picture](pictures/calendar_view_modes.png)
 
-## Business Week Number
+## Business Week number
 
 The Calendar follows the @@name **Business Week (BW) standard** for numbering weeks in a calendar year. This standard is based on **ISO 8601**, but it applies specific improvements to:
 
