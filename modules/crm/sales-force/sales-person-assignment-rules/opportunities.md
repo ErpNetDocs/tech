@@ -45,7 +45,7 @@ If no applicable rule is found, the field remains empty.
 
 ## Manual assignment via UI function  
 
-The Opportunity form includes a UI function called **Assign Default Salesperson**, available from the **Run** menu of the record.  
+The Opportunity form includes a UI function called **Assign Default Sales Person**, available from the **Run** button menu.  
 
 This function allows users to manually apply the same assignment logic described above, even when a *Leading Sales Person* is already selected.  
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
