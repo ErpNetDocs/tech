@@ -42,7 +42,7 @@ If a *Sales Person* is already assigned, the assignment remains unchanged.
 
 ## Manual assignment via UI function  
 
-The Sales Order & Offer form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu for each record.  
+The Sales Order & Offer form includes a UI function called **Assign Default Sales Person**, available from the **Run** button menu.    
 
 This function allows users to manually apply the same assignment logic described above, even when a *Sales Person* is already selected.  
 It evaluates the applicable rules and replaces the current assignment with the one determined by the best-matching rule (if found).  
