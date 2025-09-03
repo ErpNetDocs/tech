@@ -6780,6 +6780,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-lead.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-lead.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-order2.png",
       "output": {
         "resource": {
@@ -6814,6 +6824,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-customer2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-lead.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-lead.png"
         }
       },
       "version": ""
