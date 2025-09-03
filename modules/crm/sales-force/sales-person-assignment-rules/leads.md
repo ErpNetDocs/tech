@@ -43,7 +43,7 @@ If a *Sales Person* has already been entered in the *Assigned To Sales Person* f
 
 ## Manual assignment via UI function  
 
-The Lead form includes a UI function called **Assign Default Sales Person**, available from the **Run** menu of the record.  
+The Lead form includes a UI function called **Assign Default Sales Person**, available from the **Run** button menu.    
 
 This function allows users to manually apply the same assignment logic described above, even when a *Sales Person* is already selected.  
 
