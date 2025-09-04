@@ -6790,6 +6790,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-opportunity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-opportunity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rule-logic-order2.png",
       "output": {
         "resource": {
@@ -6804,6 +6814,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-opportunity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/rules-opportunity.png"
         }
       },
       "version": ""
@@ -6844,6 +6864,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-offer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-opportunity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales-force/sales-person-assignment-rules/pictures/ui-function-opportunity.png"
         }
       },
       "version": ""
