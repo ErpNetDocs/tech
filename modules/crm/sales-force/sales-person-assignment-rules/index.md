@@ -30,9 +30,12 @@ Each type of target is evaluated according to specific logic tailored to that re
 
 
 ## How it works for users
-Assignment rules take effect when a sales-related document or definition is saved with the **salesperson field** (the field designating the assigned salesperson) left empty. Upon saving, the system checks the record against the predefined rules and assigns it to the salesperson specified by the best-matching rule.
+Assignment rules are evaluated by the system either when a new or existing sales-related record is saved, or — in specific cases like Opportunities — when certain key fields are modified.
 
-This ensures that the assignment is consistently controlled by the configured rules — not by the individual user.
+If no salesperson has been assigned through another rule or manual input, and the record meets the trigger conditions, the system looks for active rules that match the record’s context. It then applies the rule with the highest priority.
+If multiple rules have the same priority, the one with the latest Rule No is selected.
+
+This ensures that sales ownership is assigned consistently and automatically, based on predefined business rules — not individual user actions.
 
 
 ## Quick assignment editing with UI functions
