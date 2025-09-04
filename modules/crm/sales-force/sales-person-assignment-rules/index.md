@@ -32,7 +32,7 @@ Each type of target is evaluated according to specific logic tailored to that re
 ## How it works for users
 Assignment rules are evaluated by the system either when a new or existing sales-related record is saved, or — in specific cases like Opportunities — when certain key fields are modified.
 
-If no salesperson has been assigned through another rule or manual input, and the record meets the trigger conditions, the system looks for active rules that match the record’s context. It then applies the rule with the highest priority.
+If no salesperson has been assigned through another system rule or manual input, and the record meets the trigger conditions, the system looks for active assignment rules that match the record’s context. It then applies the rule with the highest priority.
 If multiple rules have the same priority, the one with the latest Rule No is selected.
 
 This ensures that sales ownership is assigned consistently and automatically, based on predefined business rules — not individual user actions.
