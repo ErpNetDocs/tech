@@ -39,6 +39,7 @@ Once the best-matching rule is identified, the system automatically assigns the 
 If a *Sales Person* has already been entered in the *Assigned To Sales Person* field, no automatic assignment is performed.  
 
 ![Rules](pictures/rules-customer.png)
+
 ![Rule Logic Lead](pictures/rule-logic-lead.png)
 
 ## Manual assignment via UI function  
