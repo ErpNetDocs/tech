@@ -57,7 +57,7 @@ Before executing, the system verifies that the selected Party has a defined Cust
 If not, the function is aborted with an appropriate error message.  
 If the condition is met, the user is prompted to confirm the reassignment.  
 
-![Rule Logic Opportunity](pictures/ui-function-opportunity.png)
+![UI Function Opportunity](pictures/ui-function-opportunity.png)
 
 This is particularly useful when rules are introduced or modified after opportunities have already been created, enabling realignment with the current assignment strategy.  
 
