@@ -42,6 +42,9 @@ If no applicable rule is found, the field remains empty.
 > [!NOTE]  
 > If the system can determine a Sales Person based on the current user or an existing Customer record, that assignment takes precedence over the rule-based logic.
 
+![Rules](pictures/rules-opportunity.png)
+
+![Rule Logic Opportunity](pictures/rule-logic-opportunity.png)
 
 ## Manual assignment via UI function  
 
@@ -53,6 +56,8 @@ It evaluates the applicable rules and replaces the current assignment with the o
 Before executing, the system verifies that the selected Party has a defined Customer record for the same Enterprise Company as the Enterprise Company of the document.  
 If not, the function is aborted with an appropriate error message.  
 If the condition is met, the user is prompted to confirm the reassignment.  
+
+![Rule Logic Opportunity](pictures/ui-function-opportunity.png)
 
 This is particularly useful when rules are introduced or modified after opportunities have already been created, enabling realignment with the current assignment strategy.  
 
