@@ -2,7 +2,7 @@
 
 This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website **in @@name version 24**.
 
-For details on how to define a user of a Client Center in @@name version 25 and above, please see **[this guide]()**.
+For details on how to define a user of a Client Center in @@name version 26 and above, please see **[this guide]()**.
 
 > [!NOTE]
 > If you haven't created a Client Center website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
