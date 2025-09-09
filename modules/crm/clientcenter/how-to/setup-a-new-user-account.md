@@ -9,7 +9,7 @@ For details on how to define a user of a Client Center in @@name version 26 and 
 
 ### Prerequisites
 
-Before a user can be granted access to a Client Center by an administrator, they must first create a **local account**. 
+Before a user can be granted access to a Client Center by an administrator, they must first issue a request for a **local account**. 
 
 Required fields are **Е-mail**, **Full Name**, and **Password**.
 
