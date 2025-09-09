@@ -13,7 +13,7 @@ Before a user can be granted access to a Client Center by an administrator, they
 
 Required fields are **Е-mail**, **Full Name**, and **Password**.
 
-![picture](pictures/Setup_user_account_02_04.png)
+![picture](pictures/local_user_account.png)
 
 ## Set up a user account 
 
@@ -23,11 +23,11 @@ Administrators are assigned the **[external access role](https://docs.erp.net/te
 
 1. To begin, make sure you are logged into the customer whose data you wish to share with the user.
 
-   ![picture](pictures/local_user_account.png)
+   ![picture](pictures/customer_choose.png)
    
 2. Navigate to the **User Management** page and click **Add User**. This will trigger a window where you need to provide the user's **email address**.
 
-   ![picture](pictures/local_user_account.png)
+   ![picture](pictures/add_user.png)
    
 3. Proceed to fill out the **Days Back Access** field. This is the maximum number of past days the user is allowed to view data to which their role grants them access.
 
