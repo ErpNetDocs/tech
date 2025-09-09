@@ -1,8 +1,11 @@
-# How to define a user of a Client Center
+# How to define a user of a Client Center (v.24)
 
-This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website.
+This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website **in @@name version 24**.
 
-If you haven't created such a website already, please refer to **[this guide](define-a-new-cc.md)**.
+For details on how to define a user of a Client Center in @@name version 25 and above, please see **[this guide]()**.
+
+> [!NOTE]
+> If you haven't created a Client Center website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
 
 ### Prerequisites
 
