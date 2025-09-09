@@ -4891,6 +4891,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/access_role_new_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/access_role_new_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/accesss_permission.png",
       "output": {
         "resource": {
@@ -4901,10 +4911,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/add_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/add_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/customer.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/customer_choose.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/customer_choose.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/days_back_access.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/days_back_access.png"
         }
       },
       "version": ""
@@ -4935,6 +4975,26 @@
       "output": {
         ".html": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/local_user_account.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/local_user_account.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/new_user_new_center.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/new_user_new_center.png"
         }
       },
       "version": ""
@@ -5015,6 +5075,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/step_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v25.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v25.html"
         }
       },
       "version": ""
