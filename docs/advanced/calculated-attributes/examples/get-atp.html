@@ -87,55 +87,60 @@
         <article data-uid="">
 <h1 id="get-available-to-promise-atp-quantity">Get available to promise (ATP) quantity</h1>
 
-<p>This example shows how you can create a calculated attribute which gets the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html">avaible to promise (ATP)</a></strong> quantity on a particular date using the <strong>AvailableToPromise</strong> view.</p>
+<p>This example shows how you can create a calculated attribute that gets the <strong><a href="https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html">avaible to promise (ATP)</a></strong> quantity on a particular date using the <strong>AvailableToPromise</strong> view.</p>
 <p>In the example, you'll learn how to get the ATP quantity in a shipment order line on its required delivery date.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The repository of the attributes is <em>Logistics.Shipment.ShipmentOrderLines</em></p>
+<p>The <code>ORDERBY</code> operator for <code>FromDate</code> in this report is supported starting from <strong>version 26</strong>.<br>
+In earlier versions of ERP.net, <code>ORDERBY</code> was not available, so the same behavior had to be achieved by combining a <code>FILTER</code> with a <code>SORT</code>.</p>
 </div>
 <pre><code>
-10	GETOBJVALUE	EXP:20	ATTRIB:ATPBaseValue		
-20	FIRST	EXP:30				
-30	SORT	EXP:40	ATTRIB:FromDate	CONST:DESC
-40	SELECT	REPO:Logistics.Inventory.DemandManagement.AvailableToPromise	EXP:50		
-50	WHERE	EXP:80	EXP:60		
-60	AND	EXP:110	EXP:70		
-70	AND	EXP:140	EXP:170		
-80	EQUAL	ATTRIB:ProductId	EXP:90		
-90	GETOBJVALUE	INPUT:10	EXP:100		
-100	GETOBJVALUE	REF:ParentSalesOrderLine	ATTRIB:ProductId		
-110	EQUAL	ATTRIB:StoreId	EXP:120		
-120	GETOBJVALUE	INPUT:10	EXP:130		
-130	GETOBJVALUE	REF:ParentSalesOrderLine	ATTRIB:LineStoreId		
-140	EQUAL	ATTRIB:EnterpriseCompanyId	EXP:150		
-150	GETOBJVALUE	INPUT:10	EXP:160		
-160	GETOBJVALUE	REF:ShipmentOrder	ATTRIB:EnterpriseCompanyId		
-170	LTE	ATTRIB:FromDate	EXP:180		
-180	GETOBJVALUE	INPUT:10	EXP:190		
-190	GETOBJVALUE	REF:ShipmentOrder	ATTRIB:RequiredDeliveryDate		
+10  GETOBJVALUE   EXP:20                                                      ATTRIB:A TPBaseValue
+20  FIRST         EXP:30
+30  SELECT        REPO:Logistics.Inventory.DemandManagement.AvailableToPromise  EXP:40
+40  TOP           CONST:1                                                    EXP:50
+50  ORDERBY       ATTRIB:FromDate   CONST:DESC                               EXP:60
+60  WHERE         EXP:90    EXP:70
+70  AND           EXP:120   EXP:80
+80  AND           EXP:150   EXP:180
+90  EQUAL         ATTRIB:ProductId                                            EXP:100
+100 GETOBJVALUE   INPUT:10                                                   EXP:110
+110 GETOBJVALUE   REF:ParentSalesOrderLine   ATTRIB:ProductId
+120 EQUAL         ATTRIB:StoreId                                               EXP:130
+130 GETOBJVALUE   INPUT:10                                                   EXP:140
+140 GETOBJVALUE   REF:ParentSalesOrderLine   ATTRIB:LineStoreId
+150 EQUAL         ATTRIB:EnterpriseCompanyId                                   EXP:160
+160 GETOBJVALUE   INPUT:10                                                   EXP:170
+170 GETOBJVALUE   REF:ShipmentOrder          ATTRIB:EnterpriseCompanyId
+180 LTE           ATTRIB:FromDate                                              EXP:190
+190 GETOBJVALUE   INPUT:10                                                   EXP:200
+200 GETOBJVALUE   REF:ShipmentOrder          ATTRIB:RequiredDeliveryDate
+
 
 </code></pre>
 <p><strong>Explanation:</strong></p>
 <ul>
-<li>10: Get the <strong>ATPBaseValue</strong> of the <strong>AvailableToPromise</strong> record returned by EXP:20</li>
-<li>20: Get the first record of the list returned by EXP:30</li>
-<li>30: Sort the list returned by EXP:40 - descending by the value of the <strong>FromDate</strong> attribute</li>
-<li>40: Select the <strong>AvailableToPromise</strong> records which are matching the clauses of EXP:50</li>
-<li>50: Filter the the records for which EXP:80 and EXP:60 are True</li>
-<li>60: Filter the the records for which EXP:110 and EXP:70 are True</li>
-<li>70: Filter the the records for which EXP:140 and EXP:170 are True</li>
-<li>80: Return 'True' if the <strong>ProductId</strong> of the <strong>AvailableToPromise</strong> record is equal to EXP:90</li>
-<li>90: Get EXP:100 from the repository of EXP:10 i.e. of the current shipment order line</li>
-<li>100: Get the <strong>ProductId</strong> of the <strong>ParentSalesOrderLine</strong></li>
-<li>110: Return 'True' if the <strong>StoreId</strong> of the <strong>AvailableToPromise</strong> record is equal to EXP:120</li>
-<li>120: Get EXP:130 from the repository of EXP:10 i.e. of the current shipment order line</li>
-<li>130: Get the <strong>LineStoreId</strong> of <strong>ParentSalesOrderLine</strong></li>
-<li>140: Return 'True' if the <strong>EnterpriseCompanyId</strong> of the <strong>AvailableToPromise</strong> record is equal to EXP:150</li>
-<li>150: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line</li>
-<li>160: Get the <strong>EnterpriseCompanyId</strong> of the <strong>ShipmentOrder</strong></li>
-<li>170: Return 'True' if the <strong>FromDate</strong> of the <strong>AvailableToPromise</strong> record lower or equal to EXP:180</li>
-<li>180: Get EXP:160 from the repository of EXP:10 i.e. of the current shipment order line</li>
-<li>160: Get the <strong>RequiredDeliveryDate</strong> of the <strong>ShipmentOrder</strong></li>
+<li><strong>10</strong>: Gets the <code>ATPBaseValue</code> of the record returned by <strong>EXP:20</strong>.</li>
+<li><strong>20</strong>: Takes the first element from the list returned by <strong>EXP:30</strong>.</li>
+<li><strong>30</strong>: Selects the <code>AvailableToPromise</code> records from the repository.</li>
+<li><strong>40</strong>: Limits the result set to <strong>1</strong> record from <strong>EXP:50</strong>.</li>
+<li><strong>50</strong>: Orders the records by <code>FromDate</code> in descending order (most recent first).</li>
+<li><strong>60</strong>: Filters the records for which both <strong>EXP:90</strong> and <strong>EXP:70</strong> are <code>True</code>.</li>
+<li><strong>70</strong>: Returns <code>True</code> only if both <strong>EXP:120</strong> and <strong>EXP:80</strong> are <code>True</code>.</li>
+<li><strong>80</strong>: Returns <code>True</code> only if both <strong>EXP:150</strong> and <strong>EXP:180</strong> are <code>True</code>.</li>
+<li><strong>90</strong>: Returns <code>True</code> if the <code>ProductId</code> of the <code>AvailableToPromise</code> record is equal to <strong>EXP:100</strong>.</li>
+<li><strong>100</strong>: Gets <strong>EXP:110</strong> from the repository of <strong>INPUT:10</strong> (i.e., from the current shipment order line).</li>
+<li><strong>110</strong>: Gets the <code>ProductId</code> of the <code>ParentSalesOrderLine</code>.</li>
+<li><strong>120</strong>: Returns <code>True</code> if the <code>StoreId</code> of the <code>AvailableToPromise</code> record is equal to <strong>EXP:130</strong>.</li>
+<li><strong>130</strong>: Gets <strong>EXP:140</strong> from the repository of <strong>INPUT:10</strong>.</li>
+<li><strong>140</strong>: Gets the <code>LineStoreId</code> of the <code>ParentSalesOrderLine</code>.</li>
+<li><strong>150</strong>: Returns <code>True</code> if the <code>EnterpriseCompanyId</code> of the <code>AvailableToPromise</code> record is equal to <strong>EXP:160</strong>.</li>
+<li><strong>160</strong>: Gets <strong>EXP:170</strong> from the repository of <strong>INPUT:10</strong>.</li>
+<li><strong>170</strong>: Gets the <code>EnterpriseCompanyId</code> of the <code>ShipmentOrder</code>.</li>
+<li><strong>180</strong>: Returns <code>True</code> if the <code>FromDate</code> of the <code>AvailableToPromise</code> record is less than or equal to <strong>EXP:190</strong>.</li>
+<li><strong>190</strong>: Gets <strong>EXP:200</strong> from the repository of <strong>INPUT:10</strong>.</li>
+<li><strong>200</strong>: Gets the <code>RequiredDeliveryDate</code> of the <code>ShipmentOrder</code>.</li>
 </ul>
 
 </article>
