@@ -11,6 +11,9 @@ In the example, you'll learn how to get the ATP quantity in a shipment order lin
 > [!NOTE]
 > 
 > The repository of the attributes is *Logistics.Shipment.ShipmentOrderLines*
+> 
+> The `ORDERBY` operator for `FromDate` in this report is supported starting from **version 26**.  
+> In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.  
 
 ```
 
