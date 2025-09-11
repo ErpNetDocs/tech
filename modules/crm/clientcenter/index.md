@@ -50,9 +50,9 @@ It is comprised of three pages:
 
 ### User Management
 
-The **[User Management](user-management/index.md)** page manages a customer's existing users by determining the level of access they have to the Client Center.
+The **[User Management](user-management/index.md)** page manages a customer's existing users by adding them or removing them from the Client Center.
 
-It complements the **[standard way of setting up external customer access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
+It also determines the level of access they have.
 
 ![picture](pictures/user_management.png)
 
@@ -68,9 +68,9 @@ This page is where customers can see more information about their registered com
 
 ## Role-based access 
 
-Individual access to Client Center sections is determined strictly based on the **[external access role](../sales/customers/external-access.md#roles)** a user is assigned.
+Individual access to the Client Center is determined based on the **[external access role](../sales/customers/external-access.md#roles)** a user is assigned.
 
-Each subsequent role in the table below also includes the rights granted by the previous.
+Each subsequent role in the table below also includes the rights granted by the previous:
 
 | Role                   | Home | Orders              | Billing              | User Management | Customer Information | Notes                                                                                   |
 |-------------------------|------|----------------------|----------------------|------------------|------------------------|-----------------------------------------------------------------------------------------|
@@ -81,6 +81,33 @@ Each subsequent role in the table below also includes the rights granted by the 
 | **L80 - Admin**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Full access, including to **[User Management](user-management/index.md)**.                                                 |
 | **L90 - Owner**         | ✅   | ✅      | ✅                   | ✅               | ✅                     | Same as Admin, but Owner access **cannot** be revoked by anyone, including Admins.      |
 
+> [!NOTE]
+> 
+> Any registered user can be added to a Client Center by another user with external access role **Admin** and above. <br>
+> To see how users are defined for a Client Center, please read the following **[step-by-step guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**
+
+## Multi-customer login
+
+The Client Center offers **multi-customer support**, which allows users to have easy access to specific data for more than one customer at the same time.
+
+The relationship between users and customers is derived from the @@name **[External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**, which is used as a point of reference for establishing the type of access a user has to a particular customer.
+
+It can also be defined in the Client Center **[User Management page](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html)**, provided there is already one Admin or Owner who can directly **[add the user](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** by their email.
+
+**Example:**
+
+| User   | Customer   | Role                  | Notes                                                                                           |
+|--------|------------|----------------------|-------------------------------------------------------------------------------------------------|
+| John | Nimero Ltd | **L40 - Billing**             | Access to billing-related data.                                              |
+| John | Olivia-Green | **L30 - Orders + Prices**      | Full access to Orders.                        |
+
+The **quick-switch** mechanism of the Client Center allows for an easy back-and-forth navigation between customers. Located at the upper-right corner of the platform, it dynamically fetches the latest information from the External Access table.
+
+![picture](pictures/multi_customer.png)
+
+If multiple customers are detected for the same user, upon first-time login, the user will be asked to select the respective customer they wish to log into. The selected option will be saved as a cookie in the browser, allowing for future sign-ins to be **automated** and not requiring the selection again. 
+
+If the user has access only to a single customer, this pop-up will not appear and the login will complete at once.
 
 ## Features
 
