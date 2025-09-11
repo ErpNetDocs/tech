@@ -3,10 +3,12 @@
 - name: Define a Client Center
   href: define-a-new-cc.md
 - name: Define a user
-  href: setup-a-new-user-account.md
+  href: setup-a-new-user-account-v26.md
 - name: Apply platform settings
   href: apply-platform-settings.md
 - name: Create new order
   href: create-new-order.md
 - name: Download attachments from an invoice
   href: download-attachments.md
+- name: Define a user (v.24)
+  href: setup-a-new-user-account-v24.md
