@@ -1,23 +1,26 @@
 # How to define a user of a Client Center (v.24)
 
-This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website **in @@name version 24**.
+This is a step-by-step guide on defining a new user of Client Center (CC) **in @@name version 24**.
 
-For details on how to define a user of a Client Center in @@name version 26 and above, please see **[this guide]()**.
+For details on how to define a user of a Client Center in @@name version 26 and above, please see **[this guide](setup-a-new-user-account-v26.md)**.
 
 > [!NOTE]
-> If you haven't created a Client Center website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
+> 
+> If you haven't created a CC website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
 
-### Prerequisites
+## Local account request
 
 Before a user can be granted access to a Client Center by an administrator, they must first issue a request for a **local account**. 
 
-Required fields are **Е-mail**, **Full Name**, and **Password**.
+Accessing the CC log-in page allows them to open **local account creation form**. Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/Setup_user_account_02_04.png)
 
-## Set up a user account 
+## Set up a user account
 
-Once a customer has sent a request for an account, they will appear as an **External Community User** which you can begin to configure.
+Once a user has sent a request for an account, they will appear as an **External Community User**.
+
+An Administrator can configure them in the **@@name Web Client** by executing the following steps:
 
 1. Navigate to the **Users** panel within the **[Security](/modules/system/security/index.md)** section of the **Setup** module.
 
@@ -25,7 +28,7 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
    ![picture](pictures/Setup_User_table_02_04.png)
 
-3. Assign a **person** to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.
+3. Assign a **Person** to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.
    
    Either right-click on the **Person** field or click the **three-dot button**.
 
@@ -59,11 +62,13 @@ Once a customer has sent a request for an account, they will appear as an **Exte
 
 
 > [!Warning]
+> 
 > If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
 
 > [!TIP]
-> If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. <br><br>
+> 
+> If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. 
 
 > [!NOTE]
 > 
-> The screenshots taken for this article are from v24 and v26 of the platform.
+> The screenshots taken for this article are from v24 of the platform.
