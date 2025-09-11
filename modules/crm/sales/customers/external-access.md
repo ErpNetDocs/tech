@@ -60,7 +60,7 @@ To do this from within the **External Access** table, follow these steps:
 
 5. Clicking **Save and close** will apply all changes and/or additions for the customer.
 
-   To add the same user for another customer, repeat all steps above for another customer of your choice.
+   To enable **multi-customer login** for the same user, repeat all steps above for another customer of your choice.
 
     ![pictures](pictures/save_close.png)
 
