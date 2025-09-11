@@ -1,8 +1,10 @@
 # User Management 
 
-The User Management page is an administrative hub for a customer's users in the **Client Center**, allowing them to be added into it with a specific **external access role**.
+The User Management page is an administrative hub for a customer's users in the **Client Center**.
 
-The page is visible to all Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
+It allows registered users to be added into a Client Center with a specific **role** or removed from it entirely.
+
+The page is only visible to Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
 
 ![pictures](pictures/user_management_page.png)
 
@@ -19,7 +21,7 @@ You can find the following information about each user in the table:
 
 Admins and Owners can add any **already registered** user from within their customer's organization into the Client Center.
 
-To learn how a new user account is registered, read the **[following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+To learn how a new user account is registered and defined for a Client Center, read the **[following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 1. Click the **Add User** buttom.
    
@@ -43,8 +45,7 @@ To learn how a new user account is registered, read the **[following guide](http
 
 > [!TIP]
 > 
-> To expand a user's access to **more** customers within the same Client Center, you must have Admin access to **at least two** customer environments. <br>
-> You only need to switch to the customer profile of your choice and follow the same steps as described above. <br>
+> To expand a user's access to **more** customers within the same Client Center, you must have Admin access to **at least two** customer environments. Then, you only need to switch to the customer profile of your choice and follow the same steps as described above. <br>
 > This will essentially enable a **multi-customer login** for the user's account.
 
 ### Actions
