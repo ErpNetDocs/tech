@@ -42,7 +42,7 @@ To do this from within the **External Access** table, follow these steps:
 
    ![pictures](pictures/customize_form.png)
 
-2. Click the **pen button** of the form to enable editing within the **External Access** panel.
+2. Click the **Edit button** of the form to enable editing within the **External Access** panel.
 
    ![pictures](pictures/pen_customer.png)
 
