@@ -1,12 +1,13 @@
 # User Management 
 
-The User Management page is an administrative hub for a customer's users in the **Client Center**. It derives all user-customer relationships from the **[External Access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)** table.
-
-It also allows registered users to be **added** into the Client Center with a specific access role, and existing ones to be **modified** or **removed** from it entirely.
+The User Management page is an administrative hub for a customer's users in the **Client Center**. It also allows registered users to be **added** into the Client Center with a specific access role, and existing ones to be **modified** or **removed** from it entirely.
 
 The page is only visible to Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
 
 ![pictures](pictures/user_management_page.png)
+
+> [!NOTE]
+> User-to-customer relationships are sourced from the **[@@ name External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
 
 ### Details
 
