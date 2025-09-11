@@ -5001,6 +5001,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/no_access.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/no_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/open_button.png",
       "output": {
         "resource": {
@@ -5081,20 +5091,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v25.md",
+      "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v25.html"
+          "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account.md",
+      "source_relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.md",
       "output": {
         ".html": {
-          "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account.html"
+          "relative_path": "modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html"
         }
       },
       "version": ""
@@ -5807,6 +5817,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/multi_customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/multi_customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/new_home.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/new_home.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/pictures/oorder_types.png",
       "output": {
         "resource": {
@@ -5871,6 +5901,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/pictures/panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/popup_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/popup_select.png"
         }
       },
       "version": ""
@@ -7066,10 +7106,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/customize_form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/customize_form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/sales/customers/pictures/grant_new_access.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales/customers/pictures/grant_new_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/no_access.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/no_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/pen_customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/pen_customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/pen_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/pen_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/plus_user.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/plus_user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/save_close.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/save_close.png"
         }
       },
       "version": ""

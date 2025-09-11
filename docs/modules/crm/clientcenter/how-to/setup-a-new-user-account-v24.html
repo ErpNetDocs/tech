@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>How to define a user of a Client Center (v.24) | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="How to define a user of a Client Center (v.24) | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="how-to-define-a-user-of-a-client-center-v24">How to define a user of a Client Center (v.24)</h1>
+
+<p>This is a step-by-step guide on defining a new user of Client Center (CC) <strong>in ERP.net version 24</strong>.</p>
+<p>For details on how to define a user of a Client Center in <strong>ERP.net version 26</strong> and above, please see <strong><a href="setup-a-new-user-account-v26.html">this guide</a></strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you haven't created a CC website already, please read <strong><a href="define-a-new-cc.html">Define a new Client Center</a></strong>.</p>
+</div>
+<h2 id="local-account-request">Local account request</h2>
+<p>Before a user can be granted access to a Client Center by an administrator, they must first issue a request for a <strong>local account</strong>.</p>
+<p>Accessing the CC log-in page allows them to open <strong>local account creation form</strong>. Required fields are <strong>Е-mail</strong>, <strong>Full Name</strong>, and <strong>Password</strong>.</p>
+<p><img src="pictures/Setup_user_account_02_04.png" alt="picture"></p>
+<h2 id="set-up-a-user-account">Set up a user account</h2>
+<p>Once a user has sent a request for an account, they will appear as an <strong>External Community User</strong>.</p>
+<p>An Administrator can configure them in the <strong>ERP.net Web Client</strong> by executing the following steps:</p>
+<ol>
+<li><p>Navigate to the <strong>Users</strong> panel within the <strong><a href="/modules/system/security/index.md">Security</a></strong> section of the <strong>Setup</strong> module.</p>
+</li>
+<li><p>Upon accessing the navigator, locate the user account and click on the <strong>Edit</strong> button located to the left of its <strong>Login</strong> details.</p>
+<p><img src="pictures/Setup_User_table_02_04.png" alt="picture"></p>
+</li>
+<li><p>Assign a <strong>Person</strong> to the user. If such hasn't already been registered on the platform, you can create a new one on the spot.</p>
+<p>Either right-click on the <strong>Person</strong> field or click the <strong>three-dot button</strong>.</p>
+<p>In both cases, this will expand a dropdown menu where you need to select <strong>Create new</strong>.</p>
+<p><img src="pictures/Setup_user_create_person_01_04.png" alt="picture"></p>
+<p>You will be redirected to a separate form for the creation of a new person.</p>
+<p>There are three critical fields: <strong>First Name</strong>, <strong>Last Name</strong> and <strong>Parent Party</strong>.</p>
+<p><img src="pictures/Setup_user_create_person_fields_01_04.png" alt="picture"></p>
+</li>
+<li><p>Click on <strong>Save and reload</strong> to finish creating the new person.</p>
+<p>You will be brought back to the user definition form. Click on <strong>Save and reload</strong> again to apply all settings.</p>
+</li>
+<li><p>Make sure that the <strong>Parent Party</strong> of the <strong>Person</strong> (the one in which they are employed) is a customer of the current <strong>Enterprise Company</strong>.</p>
+<p>To do so, open it from the <strong>Person</strong> form and locate its <strong>Customers</strong> panel. If it's not visible, add it through the <strong>Customize form</strong> option.</p>
+<p>In the <strong>Customers</strong> panel, verify that two fields are filled:</p>
+<ul>
+<li><p><strong>Enterprise Company</strong> - the Parent Party is a customer of this company, for which the Client Center is created.</p>
+</li>
+<li><p><strong>Serviced By Enterprise Company Location</strong> - the respective Enterprise Company must be serviced by a particular location.</p>
+</li>
+</ul>
+<p><img src="pictures/customer.png" alt="picture"></p>
+</li>
+<li><p>Click on <strong>Save and reload</strong> to apply your changes.</p>
+</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If any of the user configuration settings are not properly applied, a respective <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes">error message</a></strong> will be shown.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you've passed all the steps successfully, you may proceed to <strong><a href="apply-platform-settings.html">apply platform settings</a></strong>.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v24 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

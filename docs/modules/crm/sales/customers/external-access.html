@@ -87,17 +87,17 @@
         <article data-uid="">
 <h1 id="external-access">External Access</h1>
 
-<p>The <strong>External Access</strong> table is responsible for granting external and internal users access to specific customer data in the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html">Client Center</a></strong>.</p>
-<p>It allows customers' individual users to see exactly what they need once they log into the platform.</p>
+<p>The <strong>External Access</strong> table lists all users who have access to specific <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/index.html">customers</a></strong> in the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html">Client Center</a></strong>.</p>
+<p>It also offers a way of setting up new users and defining their access for different customers in the Client Center.</p>
 <p><img src="pictures/customers_external_access.png" alt="pictures"></p>
-<h3 id="columns">Columns</h3>
+<h3 id="interface">Interface</h3>
 <p>The table consists of the following columns:</p>
 <ul>
-<li><p><strong>Customer</strong> - The customer whose data will be accessed.</p>
+<li><p><strong>Customer</strong> - The customer whose data is accessible to the user.</p>
 </li>
-<li><p><strong>User</strong> - The user to whom the access will be granted.</p>
+<li><p><strong>User</strong> - The user account to whom the access is granted.</p>
 </li>
-<li><p><strong>Role</strong> - The role of the user, which defines the level of granted access.</p>
+<li><p><strong>Role</strong> - The <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access">external access role</a></strong> of the user, which defines the level of granted access.</p>
 </li>
 <li><p><strong>Days Back Access</strong> - The maximum number of past days the user is allowed to view data (e.g. sales order records).</p>
 <p>If left empty, it assumes unlimited.</p>
@@ -106,7 +106,7 @@
 </li>
 </ul>
 <h3 id="roles">Roles</h3>
-<p>A user can be assigned one of 6 different roles for external customer access.</p>
+<p>A user can have one of 6 different roles for external customer access.</p>
 <p>Each subsequent role in the list below also includes the rights granted by the previous.</p>
 <ol>
 <li><strong>L10 - Basic</strong> - Provides basic access.</li>
@@ -116,11 +116,35 @@
 <li><strong>L80 - Admin</strong> - Ensures full access to all customer data.</li>
 <li><strong>L90 - Owner</strong> - The same as Admin. Once assigned, Owner access cannot be revoked by anyone, including Admins.</li>
 </ol>
-<h2 id="grant-access">Grant access</h2>
-<p>To give external access to a user, you need to insert them as a new entry into the table and fill out the respective fields. The user must already be registered and prepared for the Client Center.</p>
-<p>You can learn more about this setup process <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account.html">here</a></strong>.</p>
-<p><img src="pictures/grant_new_access.png" alt="pictures"></p>
-<p>Once saved, a user's external access settings can always be changed later.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A tabular breakdown of external access roles can be found in the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access">Client Center documentation</a></strong>.</p>
+</div>
+<h2 id="grant-and-edit-access">Grant and edit access</h2>
+<p>The External Access table allows you to define new users, as well as modify and remove existing ones.</p>
+<p>To do so:</p>
+<ol>
+<li><p>Select a customer from the table and reveal the <strong>External Access</strong> panel from the <strong>Customize Form</strong> option of the main customer form.</p>
+<p><img src="pictures/customize_form.png" alt="pictures"></p>
+</li>
+<li><p>Click the <strong>Edit button</strong> of the form to enable editing within the <strong>External Access</strong> panel.</p>
+<p><img src="pictures/pen_customer.png" alt="pictures"></p>
+</li>
+<li><p>To add a new user for the customer, click the <strong>+ button</strong> and fill out the respective <strong>User</strong>, <strong>Role</strong> and <strong>Days Back Access</strong> fields.</p>
+<p><img src="pictures/plus_user.png" alt="pictures"></p>
+</li>
+<li><p>To change the details of an existing user, simply click the <strong>pen button</strong> to the left of their name and proceed to insert your edits.</p>
+<p><img src="pictures/pen_user.png" alt="pictures"></p>
+</li>
+<li><p>Clicking <strong>Save and close</strong> will apply all changes and/or additions for the customer.</p>
+<p><img src="pictures/save_close.png" alt="pictures"></p>
+<p>To enable <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login">multi-customer login in the Client Center</a></strong> for the same user, repeat all steps above for another customer of your choice.</p>
+</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>A faster way of adding new users and defining their access level to a Client Center is described <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html">in the following guide</a></strong>.</p>
+</div>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The screenshots taken for this article are from v26 of the platform.</p>

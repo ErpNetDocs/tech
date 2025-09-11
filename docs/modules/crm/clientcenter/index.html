@@ -89,7 +89,7 @@
 
 <p>The Client Center (CC) allows ERP.net clients to assist their <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/index.html">customers</a></strong> by allowing them to see and create sales orders, review due payments, as well as access and download invoices. It’s best used to provide faster support and increased speed of new orders.</p>
 <p>You can <strong><a href="how-to/define-a-new-cc.html">create your own Client Center</a></strong> by defining a new <strong>Web Site</strong> with the appropriate <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html">settings</a></strong> and <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access">user access levels</a></strong>.</p>
-<p><img src="pictures/client_center_v26.png" alt="picture"></p>
+<p><img src="pictures/new_home.png" alt="picture"></p>
 <h2 id="structure">Structure</h2>
 <p>The Client Center has a hierarchical menu structure consisting of several <strong>sections</strong> and <strong>pages</strong>. Each works with accurate and simplified data to implement a seamless platform experience, allowing customers to look at documents important to them <strong>on-demand</strong>.</p>
 <div class="IMPORTANT">
@@ -124,8 +124,8 @@ For more information on how to enable it, please refer to the <strong><a href="h
 <li><strong><a href="billing/payment-history.html">Payment History</a></strong></li>
 </ul>
 <h3 id="user-management">User Management</h3>
-<p>The <strong><a href="user-management/index.html">User Management</a></strong> page manages a customer's existing users by determining the level of access they have to the Client Center.</p>
-<p>It complements the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">standard way of setting up external customer access</a></strong>.</p>
+<p>The <strong><a href="user-management/index.html">User Management</a></strong> page manages a customer's existing users by adding them or removing them from the Client Center.</p>
+<p>It also determines the level of access they have.</p>
 <p><img src="pictures/user_management.png" alt="picture"></p>
 <h3 id="customer-profile">Customer Profile</h3>
 <p>This page is where customers can see more information about their registered company, including UIN and VAT number.</p>
@@ -135,8 +135,8 @@ For more information on how to enable it, please refer to the <strong><a href="h
 <p>Depending on your business' size and reach, you can create and manage <strong>multiple</strong> Client Centers. <br> <br> This could be useful for departments dealing with unique sets of tasks and issues, as their customized version of the Client Center will remain completely tailored to the users they’re serving.</p>
 </div>
 <h2 id="role-based-access">Role-based access</h2>
-<p>Individual access to Client Center sections is determined strictly based on the <strong><a href="../sales/customers/external-access.html#roles">external access role</a></strong> a user is assigned.</p>
-<p>Each subsequent role in the table below also includes the rights granted by the previous.</p>
+<p>Individual access to the Client Center is determined based on the <strong><a href="../sales/customers/external-access.html#roles">external access role</a></strong> a user is assigned.</p>
+<p>Each subsequent role in the table below also includes the rights granted by the previous:</p>
 <table>
 <thead>
 <tr>
@@ -206,6 +206,47 @@ For more information on how to enable it, please refer to the <strong><a href="h
 </tr>
 </tbody>
 </table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any registered user can be added to a Client Center by another user with external access role <strong>Admin</strong> and above. <br>
+To see how users are defined for a Client Center, please read the following <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html">step-by-step guide</a></strong></p>
+</div>
+<h2 id="multi-customer-login">Multi-customer login</h2>
+<p>The Client Center offers <strong>multi-customer support</strong>, which allows users to have easy access to specific data for more than one customer at the same time.</p>
+<p>The relationship between users and customers is derived from the ERP.net <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">External Access table</a></strong>, which is used as a point of reference for establishing the type of access a user has to a particular customer.</p>
+<p>Users can also be granted access for customer data through the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html">User Management page</a></strong>, provided there is already one Admin or Owner who can directly <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user">add them</a></strong>.</p>
+<p><strong>Example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>User</th>
+<th>Customer</th>
+<th>Role</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Nimero Ltd</td>
+<td><strong>L40 - Billing</strong></td>
+<td>Access to billing-related data.</td>
+</tr>
+<tr>
+<td>John</td>
+<td>Olivia-Green</td>
+<td><strong>L30 - Orders + Prices</strong></td>
+<td>Full access to Orders.</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>quick-switch</strong> mechanism of the Client Center allows for an easy back-and-forth navigation between customers.</p>
+<p>Located at the upper-right corner of the platform, it dynamically fetches the latest information from the <strong>External Access</strong> table.</p>
+<p><img src="pictures/multi_customer.png" alt="picture"></p>
+<p>If multiple customers are detected for the same user, upon first-time login, the user will be <strong>asked</strong> to select a customer they wish to log into.</p>
+<p>This choice will be <strong>stored</strong> as a cookie in the browser, allowing for future sign-ins to be <strong>automated</strong> and not requiring the selection again.</p>
+<p><img src="pictures/popup_select.png" alt="picture"></p>
+<p>If the user has access only to a single customer, this pop-up will not appear and the login will complete at once.</p>
 <h2 id="features">Features</h2>
 <p>Users can perform a couple of actions from within the Client Center:</p>
 <ul>

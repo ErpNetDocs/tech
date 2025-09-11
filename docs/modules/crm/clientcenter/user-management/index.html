@@ -87,9 +87,13 @@
         <article data-uid="">
 <h1 id="user-management">User Management</h1>
 
-<p>The User Management page is an administrative hub for a customer's users in the <strong>Client Center</strong>. It complements the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">standard way of setting up external customer access</a></strong> by allowing individual users to be managed so that each sees exactly what they need once they log into the platform.</p>
-<p>The page is visible to all Client Center users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external access role</a></strong> <strong>L80 - Admin</strong> and above.</p>
+<p>The User Management page is an administrative hub for a customer's users in the <strong>Client Center</strong>. It also allows registered users to be <strong>added</strong> into the Client Center with a specific access role, and existing ones to be <strong>modified</strong> or <strong>removed</strong> from it entirely.</p>
+<p>The page is only visible to Client Center users with <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles">external access role</a></strong> <strong>L80 - Admin</strong> and above.</p>
 <p><img src="pictures/user_management_page.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>User-to-customer relationships are sourced from the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html">@@ name External Access table</a></strong>.</p>
+</div>
 <h3 id="details">Details</h3>
 <p>You can find the following information about each user in the table:</p>
 <ul>
@@ -99,12 +103,13 @@
 <li><strong>Notes</strong> - Optional notes for the user.</li>
 </ul>
 <h2 id="add-user">Add user</h2>
-<p>Admins and Owners can add any already registered user from within their customer's organization into the Client Center.</p>
+<p>Admins and Owners can add any <strong>already registered</strong> user from within their customer's organization into the Client Center.</p>
+<p>To learn how a new user account is registered and defined for a Client Center, read the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html">following guide</a></strong>.</p>
 <ol>
-<li><p>To begin, click <strong>Add User</strong>.</p>
+<li><p>Click the <strong>Add User</strong> buttom.</p>
 <p><img src="pictures/user_management_adduser.png" alt="pictures"></p>
 </li>
-<li><p>This will trigger a window where you need to provide the user's email address.</p>
+<li><p>This will trigger a window where you need to provide the user's exact <strong>email address</strong>.</p>
 <p><img src="pictures/user_add.png" alt="pictures"></p>
 <p>If no email record is found, you will get an <strong>error</strong>.</p>
 <p><img src="pictures/user_management_error.png" alt="pictures"></p>
@@ -112,15 +117,25 @@
 <li><p>Proceed to fill out necessary <strong>Days Back Access</strong> and <strong>Role</strong> fields. The name will be filled out automatically.</p>
 <p>When done, click <strong>Save</strong>.</p>
 <p><img src="pictures/user_fields.png" alt="pictures"></p>
-<p>The new user will be added to the table.</p>
+<p>The new user will be added for the respective customer.</p>
 </li>
 </ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To expand a user's access to <strong>more</strong> customers within the same Client Center, you must have Admin access to <strong>at least two</strong> customer environments. Then, you only need to switch to the customer profile of your choice and follow the same steps as described above. <br>
+This will essentially enable a <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login">multi-customer login</a></strong> for the user's account.</p>
+</div>
 <h3 id="actions">Actions</h3>
 <p>You can change any of the details of an existing user with the help of the <strong>Edit button</strong>.</p>
-<p>Alternatively, you may <strong>remove</strong> a user's access to the Client Center with the <strong>Delete button</strong>.</p>
+<p>This includes their external access role days back access setting.</p>
+<p>Alternatively, you may <strong>remove</strong> a user's access to the Client Center with the <strong>trash bin</strong>.</p>
 <p><img src="pictures/user_actions.png" alt="pictures"></p>
-<p>This action will only revoke the external access, not delete the actual user.</p>
+<p>Note that this action will only revoke the user's external access to the Client Center, not delete the actual user.</p>
 <p><img src="pictures/user_delete_warning.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v26 of the platform.</p>
+</div>
 
 </article>
 
