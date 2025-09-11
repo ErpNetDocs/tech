@@ -34,7 +34,7 @@ A tabular breakdown of external access roles can be found in the **[Client Cente
 
 ## Grant and edit access
 
-You can define new users for one or more customers **[directly through the Client Center itself](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-26.html)**.
+You can define new users for one or more customers **[directly through the Client Center itself](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 To do this from within the **External Access** table, follow these steps:
 
@@ -62,7 +62,7 @@ To do this from within the **External Access** table, follow these steps:
 
 > [!TIP]
 > 
-> A faster way of adding new users and defining their access level to a Client Center is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-26.html)**.
+> A faster way of adding new users and defining their access level to a Client Center is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 > [!NOTE]
 > 
