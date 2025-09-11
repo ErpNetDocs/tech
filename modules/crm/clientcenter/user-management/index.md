@@ -46,7 +46,7 @@ To learn how a new user account is registered and defined for a Client Center, r
 > [!TIP]
 > 
 > To expand a user's access to **more** customers within the same Client Center, you must have Admin access to **at least two** customer environments. Then, you only need to switch to the customer profile of your choice and follow the same steps as described above. <br>
-> This will essentially enable a **multi-customer login** for the user's account.
+> This will essentially enable a **[multi-customer login](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the user's account.
 
 ### Actions
 
