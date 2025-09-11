@@ -101,11 +101,17 @@ It can also be defined in the Client Center **[User Management page](https://doc
 | John | Nimero Ltd | **L40 - Billing**             | Access to billing-related data.                                              |
 | John | Olivia-Green | **L30 - Orders + Prices**      | Full access to Orders.                        |
 
-The **quick-switch** mechanism of the Client Center allows for an easy back-and-forth navigation between customers. Located at the upper-right corner of the platform, it dynamically fetches the latest information from the External Access table.
+The **quick-switch** mechanism of the Client Center allows for an easy back-and-forth navigation between customers. 
+
+Located at the upper-right corner of the platform, it dynamically fetches the latest information from the **External Access** table.
 
 ![picture](pictures/multi_customer.png)
 
-If multiple customers are detected for the same user, upon first-time login, the user will be asked to select the respective customer they wish to log into. The selected option will be saved as a cookie in the browser, allowing for future sign-ins to be **automated** and not requiring the selection again. 
+If multiple customers are detected for the same user, upon first-time login, the user will be **asked** to select the respective customer they wish to log into. 
+
+The selected option will be **saved** as a cookie in the browser, allowing for future sign-ins to be **automated** and not requiring the selection again. 
+
+![picture](pictures/popup_select.png)
 
 If the user has access only to a single customer, this pop-up will not appear and the login will complete at once.
 
