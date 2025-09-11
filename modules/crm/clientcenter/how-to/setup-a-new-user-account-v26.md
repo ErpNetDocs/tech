@@ -11,7 +11,7 @@ For details on how to define a user of a Client Center in **@@name version 24**,
 
 Before a user can be granted access to a Client Center by an Administrator, they must first create a **local account**. 
 
-Accessing the CC log-in page allows them to open local account creation form. Required fields are **Е-mail**, **Full Name**, and **Password**.
+Accessing the CC log-in page allows them to open **local account creation form**. Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/local_user_account.png)
 
