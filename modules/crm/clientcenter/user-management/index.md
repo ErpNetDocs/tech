@@ -1,6 +1,6 @@
 # User Management 
 
-The User Management page is an administrative hub for a customer's users in the **Client Center**. It complements the **[standard way of setting up external customer access](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)** by allowing individual users to be managed so that each sees exactly what they need once they log into the platform. 
+The User Management page is an administrative hub for a customer's users in the **Client Center**, allowing them to be added into it with a specific **external access role**.
 
 The page is visible to all Client Center users with **[external access role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L80 - Admin** and above.
 
@@ -17,13 +17,15 @@ You can find the following information about each user in the table:
 
 ## Add user
 
-Admins and Owners can add any already registered user from within their customer's organization into the Client Center.
+Admins and Owners can add any **already registered** user from within their customer's organization into the Client Center.
 
-1. To begin, click **Add User**.
+To learn how a new user account is registered, read the **[following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+
+1. Click the **Add User** buttom.
    
    ![pictures](pictures/user_management_adduser.png)
    
-2. This will trigger a window where you need to provide the user's email address.
+2. This will trigger a window where you need to provide the user's exact **email address**.
 
    ![pictures](pictures/user_add.png)
 
@@ -37,16 +39,28 @@ Admins and Owners can add any already registered user from within their customer
 
    ![pictures](pictures/user_fields.png)
 
-   The new user will be added to the table.
+   The new user will be added for the respective customer.
+
+> [!TIP]
+> 
+> To expand a user's access to **more** customers within the same Client Center, you must have Admin access to **at least two** customer environments. <br>
+> You only need to switch to the customer profile of your choice and follow the same steps as described above. <br>
+> This will essentially enable a **multi-customer login** for the user's account.
 
 ### Actions
 
 You can change any of the details of an existing user with the help of the **Edit button**.
 
-Alternatively, you may **remove** a user's access to the Client Center with the **Delete button**.
+This includes their external access role days back access setting.
+
+Alternatively, you may **remove** a user's access to the Client Center with the **trash bin**.
 
 ![pictures](pictures/user_actions.png)
 
-This action will only revoke the external access, not delete the actual user.
+Note that this action will only revoke the user's external access to the Client Center, not delete the actual user.
 
 ![pictures](pictures/user_delete_warning.png)
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v26 of the platform.
