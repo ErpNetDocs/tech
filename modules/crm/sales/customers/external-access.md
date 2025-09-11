@@ -60,9 +60,9 @@ To do so:
 
 5. Clicking **Save and close** will apply all changes and/or additions for the customer.
 
-   If you want to enable **[multi-customer login in the Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the same user, repeat all steps above for another customer of your choice.
-
     ![pictures](pictures/save_close.png)
+
+   To enable **[multi-customer login in the Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the same user, repeat all steps above for another customer of your choice.
 
 > [!TIP]
 > 
