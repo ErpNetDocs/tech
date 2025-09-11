@@ -2,6 +2,8 @@
 
 The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
 
+It offers an alternative to the **[standard way](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** of setting up new users and defining their access for different customers in a Client Center.
+
 ![pictures](pictures/customers_external_access.png)
 
 ### Interface
@@ -30,7 +32,9 @@ Each subsequent role in the list below also includes the rights granted by the p
 5. **L80 - Admin** - Ensures full access to all customer data. 
 6. **L90 - Owner** - The same as Admin. Once assigned, Owner access cannot be revoked by anyone, including Admins.
 
-A tabular breakdown of external access roles can be found in the **[Client Center documentation](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)**.
+> [!NOTE]
+>
+> A tabular breakdown of external access roles can be found in the **[Client Center documentation](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)**.
 
 ## Grant and edit access
 
