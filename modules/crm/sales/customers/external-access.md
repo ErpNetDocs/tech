@@ -2,7 +2,7 @@
 
 The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
 
-It offers an alternative to the **[standard way](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** of setting up new users and defining their access for different customers in a Client Center.
+It also offers a way of setting up new users and defining their access for different customers in the Client Center.
 
 ![pictures](pictures/customers_external_access.png)
 
@@ -38,9 +38,9 @@ Each subsequent role in the list below also includes the rights granted by the p
 
 ## Grant and edit access
 
-You can define new users for one or more customers **[directly through the Client Center itself](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+The External Access table allows you to define new users, as well as modify and remove existing ones.
 
-To do this from within the **External Access** table, follow these steps:
+To do so:
 
 1. Select a customer from the table and reveal the **External Access** panel from the **Customize Form** option of the main customer form.
 
@@ -60,7 +60,7 @@ To do this from within the **External Access** table, follow these steps:
 
 5. Clicking **Save and close** will apply all changes and/or additions for the customer.
 
-   To enable **multi-customer login** for the same user, repeat all steps above for another customer of your choice.
+   If you want to enable **[multi-customer login in the Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the same user, repeat all steps above for another customer of your choice.
 
     ![pictures](pictures/save_close.png)
 
