@@ -1,6 +1,6 @@
 # How to define a user of a Client Center (v.26)
 
-This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website **in @@name version 25**.
+This article provides a step-by-step guide on defining a new user and configuring their access to a Client Center website **in @@name version 26**.
 
 For details on how to define a user of a Client Center in @@name version 24, please see **[this guide]()**.
 
@@ -17,7 +17,11 @@ Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ## Set up a user account 
 
-Once a user has created their account, an Administrator of a Client Center can add them in the respective desired environment through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page.
+Once a user has created their account, an Administrator of a Client Center must add them in the respective desired environment through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page.
+
+Otherwise, the new user will not have access to use the Client Center.
+
+![picture](pictures/no_access.png)
 
 Administrators are assigned the **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin**, which guarantees them full reach of all customer data, including the ability to manage users.
 
