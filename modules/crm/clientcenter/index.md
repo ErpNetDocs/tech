@@ -92,7 +92,7 @@ The Client Center offers **multi-customer support**, which allows users to have 
 
 The relationship between users and customers is derived from the @@name **[External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**, which is used as a point of reference for establishing the type of access a user has to a particular customer.
 
-It can also be defined in the Client Center **[User Management page](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html)**, provided there is already one Admin or Owner who can directly **[add the user](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** by their email.
+Users can also be granted access for customer data through the **[User Management page](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html)**, provided there is already one Admin or Owner who can directly **[add them](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)**.
 
 **Example:**
 
