@@ -4,7 +4,7 @@ The Client Center (CC) allows @@name clients to assist their **[customers](https
 
 You can **[create your own Client Center](how-to/define-a-new-cc.md)** by defining a new **Web Site** with the appropriate **[settings](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)** and **[user access levels](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)**.
 
-![picture](pictures/client_center_v26.png)
+![picture](pictures/new_home.png)
 
 ## Structure
 
