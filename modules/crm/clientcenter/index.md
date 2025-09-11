@@ -107,7 +107,7 @@ Located at the upper-right corner of the platform, it dynamically fetches the la
 
 ![picture](pictures/multi_customer.png)
 
-If multiple customers are detected for the same user, upon first-time login, the user will be **asked** to select the customer they wish to log into. 
+If multiple customers are detected for the same user, upon first-time login, the user will be **asked** to select a customer they wish to log into. 
 
 This choice will be **stored** as a cookie in the browser, allowing for future sign-ins to be **automated** and not requiring the selection again. 
 
