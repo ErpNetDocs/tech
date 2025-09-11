@@ -1,18 +1,16 @@
 # External Access
 
-The **External Access** table is responsible for granting external and internal users access to specific customer data in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
-
-It allows customers' individual users to see exactly what they need once they log into the platform. 
+The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
 
 ![pictures](pictures/customers_external_access.png)
 
-### Columns
+### Interface
 
 The table consists of the following columns:
 
-- **Customer** - The customer whose data will be accessed.
-- **User** - The user to whom the access will be granted.
-- **Role** - The role of the user, which defines the level of granted access.
+- **Customer** - The customer whose data is accessible to the user.
+- **User** - The user account to whom the access is granted.
+- **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
 - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
   
   If left empty, it assumes unlimited.
@@ -21,7 +19,7 @@ The table consists of the following columns:
 
 ### Roles
 
-A user can be assigned one of 6 different roles for external customer access. 
+A user can have one of 6 different roles for external customer access. 
 
 Each subsequent role in the list below also includes the rights granted by the previous.
 
@@ -32,15 +30,39 @@ Each subsequent role in the list below also includes the rights granted by the p
 5. **L80 - Admin** - Ensures full access to all customer data. 
 6. **L90 - Owner** - The same as Admin. Once assigned, Owner access cannot be revoked by anyone, including Admins.
 
-## Grant access
+A tabular breakdown of external access roles can be found in the **[Client Center documentation](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)**.
 
-To give external access to a user, you need to insert them as a new entry into the table and fill out the respective fields. The user must already be registered and prepared for the Client Center. 
+## Grant and edit access
 
-You can learn more about this setup process **[here](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account.html)**.
+You can define new users for one or more customers **[directly through the Client Center itself](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-26.html)**.
 
-![pictures](pictures/grant_new_access.png)
+To do this from within the **External Access** table, follow these steps:
 
-Once saved, a user's external access settings can always be changed later.
+1. Select a customer from the table and reveal the **External Access** panel from the **Customize Form** option of the main customer form.
+
+   ![pictures](pictures/customize_form.png)
+
+2. Click the **pen button** of the form to enable editing within the **External Access** panel.
+
+   ![pictures](pictures/pen_customer.png)
+
+3. To add a new user for the customer, click the **+ button** and fill out the respective **User**, **Role** and **Days Back Access** fields.
+
+   ![pictures](pictures/plus_user.png)
+
+4. To change the details of an existing user, simply click the **pen button** to the left of their name and proceed to insert your edits.
+
+   ![pictures](pictures/pen_user.png)
+
+5. Clicking **Save and close** will apply all changes and/or additions for the customer.
+
+   To add the same user for another customer, repeat all steps above for another customer of your choice.
+
+    ![pictures](pictures/save_close.png)
+
+> [!TIP]
+> 
+> A faster way of adding new users and defining their access level to a Client Center is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-26.html)**.
 
 > [!NOTE]
 > 
