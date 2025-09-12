@@ -27,7 +27,7 @@ Omission of this step will result in a critical lack-of-access **error message**
 
 ### Step-by-step process
 
-1. If using **multi-customer log-in**, make sure you are logged into the **[customer](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** whose data you wish to share with the user.
+1. If using **[multiple customers](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#multi-customer-login)**, make sure you are logged into the **[customer](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** whose data you wish to share with the user.
 
    To expand a user's access to more of your customers within the same Client Center, **switch** to another customer profile and **repeat** all steps as described below.
 
