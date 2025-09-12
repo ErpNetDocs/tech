@@ -54,11 +54,11 @@ The **Column Chooser** option allows you to decide which columns to display in a
 
 To access it, click on the **Column Chooser** button above the Search bar. 
 
-![picture](pictures/columnchooser_v26.png)
+![picture](pictures/columnchooser_v26_new.png)
 
 Choose which columns will be displayed by checking the ones that you want to show.
 
-![picture](pictures/columns_v26.png)
+![picture](pictures/columns_v26_new.png)
 
 ## Save and restore layout
 
@@ -66,7 +66,7 @@ However you modify your Client Center navigator layout, your last preferred view
 
 You can always reset your layout to its default view by clicking **Reset Layout**.
 
-![picture](pictures/resetlayout_v26.png)
+![picture](pictures/resetlayout_v26_new.png)
 
 > [!NOTE]
 > 
