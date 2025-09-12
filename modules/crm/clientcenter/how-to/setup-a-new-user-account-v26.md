@@ -29,8 +29,6 @@ Omission of this step will result in a critical lack-of-access **error message**
 
 1. If using **[multiple customers](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#multi-customer-login)**, make sure you are logged into the **[customer](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** whose data you wish to share with the user.
 
-   To expand a user's access to more of your customers within the same Client Center, **switch** to another customer profile and **repeat** all steps as described below.
-
    ![picture](pictures/customer_choose.png)
    
 2. Navigate to the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html)** page and click **Add User**.
@@ -53,11 +51,14 @@ Omission of this step will result in a critical lack-of-access **error message**
 
    ![picture](pictures/new_user_new_center.png)
 
-> [!Warning]
-> If any of the configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
 
 > [!TIP]
-> If you've passed all the steps successfully, you may proceed to **[apply global platform settings](apply-platform-settings.md)**. <br><br>
+>
+> To expand a user's access to more of your customers, **switch** to another customer profile and **repeat** all steps described above. <br>
+> If you've passed all the steps successfully, you may proceed to **[apply global platform settings](apply-platform-settings.md)**.
+
+> [!Warning]
+> If any of the configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
 
 > [!NOTE]
 > 
