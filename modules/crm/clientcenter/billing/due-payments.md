@@ -4,7 +4,7 @@ The Due Payments page keeps a log of all customer due (unresolved) payments, wit
 
 It is accessible by Client Center users with **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L40 - Billing** and above.
 
-![pictures](pictures/duepayments_page.png)
+![pictures](pictures/duepayments_page_new.png)
 
 ### Details
 
