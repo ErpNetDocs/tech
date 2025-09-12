@@ -6,7 +6,7 @@ Once that's done, users with **[external role](https://docs.erp.net/tech/modules
 
 This is a multi-tab interface designed to handle the filling out and placement of new sales orders. 
 
-![pictures](pictures/new_order_panel_new.png)
+![pictures](pictures/new_order_panel_new_new.png)
 
 
 ## Structure
