@@ -38,7 +38,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ![picture](pictures/Trusted_app_open_01_04.png)
 
-If you've passed all the steps successfully, you may proceed to **[define users](setup-a-new-user-account.md)** who can access the Client Center.
+If you've passed all the steps successfully, you may proceed to **[define users](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** who can access the Client Center.
 
 > [!NOTE]
 > 
