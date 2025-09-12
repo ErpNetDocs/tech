@@ -2,7 +2,7 @@
 
 This is a step-by-step guide on defining a new user of Client Center (CC) **in @@name version 24**.
 
-For details on how to define a user of a Client Center in **@@name version 26** and above, please see **[this guide](setup-a-new-user-account-v26.md)**.
+For details on how to define a user of a Client Center in **@@name version 26** and above, please see **[this guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 > [!NOTE]
 > 
