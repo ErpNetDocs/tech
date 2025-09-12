@@ -7,7 +7,7 @@ The page is only visible to Client Center users with **[external access role](ht
 ![pictures](pictures/user_management_page_new.png)
 
 > [!NOTE]
-> User-to-customer relationships are sourced from the **[@@ name External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
+> User-to-customer relationships are sourced from the **[@@name External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**.
 
 ### Details
 
