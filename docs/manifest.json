@@ -4468,6 +4468,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_page_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/duepayments_page_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_attachment.png",
       "output": {
         "resource": {
@@ -4508,6 +4518,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_module_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/invoices_module_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/billing/pictures/invoices_select.png",
       "output": {
         "resource": {
@@ -4528,6 +4548,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_columns_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_columns_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_expanded.png",
       "output": {
         "resource": {
@@ -4542,6 +4572,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_panel_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/billing/pictures/payment_history_panel_new.png"
         }
       },
       "version": ""
@@ -5254,6 +5294,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel_new_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/new_order_panel_new_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_availability.png",
       "output": {
         "resource": {
@@ -5334,6 +5394,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_file_downloads_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/order_file_downloads_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/order_tab.png",
       "output": {
         "resource": {
@@ -5364,6 +5434,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_page_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_page_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_page_new_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_page_new_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen.png",
       "output": {
         "resource": {
@@ -5378,6 +5468,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen_new_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/orders/pictures/orders_screen_new_new.png"
         }
       },
       "version": ""
@@ -5627,10 +5727,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/columnchooser_v26_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/columnchooser_v26_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/pictures/columns_v26.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/pictures/columns_v26.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/columns_v26_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/columns_v26_new.png"
         }
       },
       "version": ""
@@ -5927,6 +6047,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/pictures/resetlayout_v26_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/pictures/resetlayout_v26_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/pictures/saved_settings.png",
       "output": {
         "resource": {
@@ -6054,6 +6184,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_page_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/user-management/pictures/user_management_page_new.png"
         }
       },
       "version": ""
