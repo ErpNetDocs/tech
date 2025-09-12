@@ -22,7 +22,7 @@ Once a user has sent a request for an account, they will appear as an **External
 
 An Administrator can configure them in the **@@name Web Client** by executing the following steps:
 
-1. Navigate to the **Users** panel within the **[Security](/modules/system/security/index.md)** section of the **Setup** module.
+1. Navigate to the **Users** panel within the **[Security](https://docs.erp.net/tech/modules/system/security/index.html)** section of the **Setup** module.
 
 2. Upon accessing the navigator, locate the user account and click on the **Edit** button located to the left of its **Login** details.
 
