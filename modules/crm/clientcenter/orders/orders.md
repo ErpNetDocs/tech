@@ -4,7 +4,7 @@ The Orders page is home to all orders linked to a customer.
 
 It is visible to all Client Center users accessing this customers's data with an **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L20 - Orders** and above.
 
-![pictures](pictures/orders_screen.png)
+![pictures](pictures/orders_screen_new.png)
 
 ### Details
 
@@ -52,7 +52,7 @@ If present, files attached to an order will be displayed in a dedicated section,
 > File attachments whose **[Access Permission](https://docs.erp.net/webclient/introduction/how-to/access-permission-field.html)** field is not set to **"Internal users + external users"** will not appear in the **Files** section. <br> <br>
 > If none of the order’s attachments have this setting configured, the **Files** section will not appear at all.
 
-![pictures](pictures/order_file_downloads.png)
+![pictures](pictures/order_file_downloads_new.png)
 
 You can also **cancel** a submitted order before it is released. This will trigger a notification for confirmation.
 
