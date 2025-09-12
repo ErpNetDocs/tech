@@ -4,7 +4,7 @@ The Orders page is home to all orders linked to a customer.
 
 It is visible to all Client Center users accessing this customers's data with an **[external role](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#roles)** **L20 - Orders** and above.
 
-![pictures](pictures/orders_page_new.png)
+![pictures](pictures/orders_page_new_new.png)
 
 ### Details
 
