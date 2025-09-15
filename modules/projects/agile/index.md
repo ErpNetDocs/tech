@@ -16,10 +16,12 @@ All activities are performed within a single, secure system, without the need to
 
 At its core, the module introduces configurable structures to reflect business logic and internal workflows:
 
-- [Projects](configuration-and-structure/project-definitions/projects.md) act as high-level containers that group related work, resources, milestones, and configuration settings.
+- [Projects](configuration-and-structure/project-definitions/projects.md) define agile work initiatives by grouping related cases, areas, milestones, sprints, and configurations within a common execution context.
+- [Project Groups](configuration-and-structure/project-definitions/project-groups.md) enable logical grouping of projects that share common configurations such as areas and milestones.
 - [Project Types](configuration-and-structure/main-setup/project-types.md) help classify projects.
 - [Project Areas](configuration-and-structure/project-definitions/project-areas.md) divide work into manageable domains.
 - [Project Milestones](configuration-and-structure/project-definitions/project-milestones.md) highlight key delivery points along the project timeline.
+- [Sprints](configuration-and-structure/project-definitions/sprints.md) represent fixed timeboxes (typically 1–4 weeks) during which a team works to complete a set of cases toward a defined sprint goal.
 - [Case Categories](configuration-and-structure/main-setup/case-categories.md) determine task structure and flow.
 - [System States](cases/workflow-states.md#system-states) define the main workflow lifecycle of tasks.
 - [User States](configuration-and-structure/main-setup/user-states.md) extend this lifecycle by adding more granular tracking within each system-defined stage.
