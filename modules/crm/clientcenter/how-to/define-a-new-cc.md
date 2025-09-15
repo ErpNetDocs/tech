@@ -2,6 +2,10 @@
 
 This article provides a step-by-step guide on creating a Client Center website through @@name.
 
+> [!WARNING]
+> The information presented is relevant for @@name version 24. <br>
+> As of @@name version 26, website configuration takes place under **System** -> **Configuration** -> **Web Sites**.
+
 ### Prerequisites 
 
 To define a website of **Client Center** type, navigate to the **Web Sites** panel within the **Core** section of the **Setup** module.
