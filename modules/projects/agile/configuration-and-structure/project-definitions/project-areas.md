@@ -7,16 +7,19 @@ uid: project-areas
 A **Project Area** in **Agile PM** represents a distinct structural unit within a [Project](projects.md), typically focused on a specific part of the overall work.  
 It is used to divide a Project into smaller, more manageable components that can be handled independently, either by different teams or based on specialized responsibilities.
 
-Each Project or Project Group can consist of one or more Project Areas, depending on its complexity and structure.
+Each Project Area can be defined at different levels, depending on the desired scope:  
+- specific to a single Project,  
+- shared across a Project Group, or  
+- global, valid for all Projects and Groups in the system.  
 
 **For example**:
 A project of type **Client Implementation** may include Areas such as **Data Migration**, **System Configuration**, and **User Training**. Alternatively, a project group such as **Marketing Projects** may include shared areas like **Campaigns** and **Content Creation**, available to all projects in that group.
 
-> [!Note]
-> While each Project Area typically belongs to a specific Project, it is also possible to define shared Areas:
-> If the *Project* field is filled, the Area applies only to that Project.
-> If the *Project* field is empty but *Project Group* is selected, the Area applies to all Projects in that group.
-> If both *Project* and *Project Group* are empty, the Area is considered global, valid for all Projects and Project Groups.
+> [!Note]  
+> The scope of a Project Area depends on the combination of the **Project** and **Project Group** fields:<br>  
+> • If **Project** is selected, the Area applies only to that Project.<br>  
+> • If **Project** is empty but **Project Group** is selected, the Area applies to all Projects in that group.<br>  
+> • If both fields are empty, the Area is considered **global**, valid across the entire Agile PM module.  
 
 **Configuration path:** *Project Area definition → Advanced panel → Project and Project Group fields*  
 *Display panel name:* `Advanced`<br>
