@@ -3,8 +3,8 @@
 This article provides a step-by-step guide on creating a Client Center website through @@name.
 
 > [!WARNING]
-> The information presented is relevant for @@name version 24. <br>
-> As of @@name version 26, website configuration takes place under **System** -> **Configuration** -> **Web Sites**.
+> The information presented is relevant for **@@name version 24**. <br>
+> As of **@@name version 26**, website configuration takes place under **System** -> **Configuration** -> **Web Sites**.
 
 ### Prerequisites 
 
