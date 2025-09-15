@@ -4,7 +4,7 @@ The **My** module is a personalized environment housing information that is esse
 
 It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.
 
-![pictures](pictures/MyModule.png)
+![pictures](pictures/my_v26.png)
 
 In the **My** module, you can find the following applications:
 
@@ -20,8 +20,3 @@ In the **My** module, you can find the following applications:
 * **Tiles**
 * **Timeline** 
 * **To Do**
-
-If you want to learn more about them, please refer to their respective technical guides.
-
-> [!NOTE]
-> The screenshots taken for this article are from v24 of the platform.
