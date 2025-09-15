@@ -8,15 +8,15 @@ It consists of several applications that are simultaneously independent, interco
 
 In the **My** module, you can find the following applications:
 
-* **AI Assistant**
-* **[Calendar](calendar.md)**
-* **Dashboard**
-* **Documents**
-* **Favorites**
-* **Folders**
 * **[Groups](groups/index.md)**
+* * **Dashboard**
 * **Notifications**
-* **Search** 
+* **[Calendar](calendar.md)**
+* **Timeline**
 * **Tiles**
-* **Timeline** 
+* **Favorites**
 * **To Do**
+* **AI Assistant**
+* **Documents**
+* **Folders**
+* **Search** 
