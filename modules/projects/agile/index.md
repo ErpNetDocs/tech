@@ -16,7 +16,7 @@ All activities are performed within a single, secure system, without the need to
 
 At its core, the module introduces configurable structures to reflect business logic and internal workflows:
 
-- [Projects](configuration-and-structure/project-definitions/projects.md) define agile work initiatives by grouping related cases, areas, milestones, sprints, and configurations within a common execution context.
+- [Projects](configuration-and-structure/project-definitions/projects.md) define agile initiatives by grouping related cases, areas, milestones, sprints, and configurations within a common execution context.
 - [Project Groups](configuration-and-structure/project-definitions/project-groups.md) enable logical grouping of projects that share common configurations such as areas and milestones.
 - [Project Types](configuration-and-structure/main-setup/project-types.md) help classify projects.
 - [Project Areas](configuration-and-structure/project-definitions/project-areas.md) divide work into manageable domains.
