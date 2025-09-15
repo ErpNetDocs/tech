@@ -9,7 +9,7 @@ It consists of several applications that are simultaneously independent, interco
 In the **My** module, you can find the following applications:
 
 * **[Groups](groups/index.md)**
-* **Dashboard**
+* **[Dashboard](dashboard.md)**
 * **Notifications**
 * **[Calendar](calendar.md)**
 * **Timeline**
