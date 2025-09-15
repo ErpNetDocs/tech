@@ -4961,6 +4961,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/click_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/click_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/click_system_data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/click_system_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/customer.png",
       "output": {
         "resource": {
@@ -4991,6 +5011,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/download_attach.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/download_attach.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/eedit_button.png",
       "output": {
         "resource": {
@@ -5005,6 +5035,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/external_access.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/files_reveal.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/files_reveal.png"
         }
       },
       "version": ""
@@ -17542,6 +17582,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/my/dashboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/dashboard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/my/groups/create-a-group.md",
       "output": {
         ".html": {
@@ -18255,6 +18305,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/pictures/dashboard_v26.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/dashboard_v26.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/pictures/different_assigned_to.png",
       "output": {
         "resource": {
@@ -18289,6 +18349,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/my/pictures/editt_event.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/my_v26.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/my_v26.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/pictures/my_v266.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/pictures/my_v266.png"
         }
       },
       "version": ""

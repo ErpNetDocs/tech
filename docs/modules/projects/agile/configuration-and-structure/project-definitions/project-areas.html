@@ -87,20 +87,27 @@
         <article data-uid="project-areas">
 
 <h2 id="project-areas">Project Areas</h2>
-<p>A <strong>Project Area</strong> in <strong>Agile PM</strong> represents a distinct structural unit within a <a href="projects.html">Project</a>, typically focused on a specific part of the overall work.<br>
-It is used to divide a Project into smaller, more manageable components that can be handled independently, either by different teams or based on specialized responsibilities.</p>
-<p>Each Project can consist of one or more Project Areas, depending on its complexity and structure.</p>
+<p>A <strong>Project Area</strong> in <strong>Agile PM</strong> represents a distinct structural unit, typically focused on a specific part of the overall work.<br>
+It provides a way to break down initiatives into smaller, more manageable components that can be handled independently by different teams or based on specialized expertise.</p>
+<p><img src="pictures/project-areas.png" alt="Project Areas"></p>
+<p>Each Project Area can be defined at different levels, depending on the desired scope:</p>
+<ul>
+<li>specific to a single Project,</li>
+<li>shared across a Project Group, or</li>
+<li>global, valid for all Projects and Groups in the system.</li>
+</ul>
 <p><strong>For example</strong>:
-A project of type <strong>Client Implementation</strong> may include Project Areas such as <strong>Data Migration</strong>, <strong>System Configuration</strong>, and <strong>User Training</strong>, each handled by specialized teams.</p>
+A project of type <strong>Client Implementation</strong> may include Areas such as <strong>Data Migration</strong>, <strong>System Configuration</strong>, and <strong>User Training</strong>. Alternatively, a project group such as <strong>Marketing Projects</strong> may include shared areas like <strong>Campaigns</strong> and <strong>Content Creation</strong>, available to all projects in that group.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>While each Project Area typically belongs to a specific Project, it is also possible to define shared Project Areas that span across all Projects.<br>
-To do this, leave the <em>Project</em> field empty.</p>
+<p>The scope of a Project Area depends on the combination of the <strong>Project</strong> and <strong>Project Group</strong> fields:<br>
+• If <strong>Project</strong> is selected, the Area applies only to that Project.<br>
+• If <strong>Project</strong> is empty but <strong>Project Group</strong> is selected, the Area applies to all Projects in that group.<br>
+• If both fields are empty, the Area is considered <strong>global</strong>, valid across the entire Agile PM module.</p>
 </div>
-<p><strong>Configuration path:</strong> <em>Project Area definition → Advanced panel → Project field</em><br>
+<p><strong>Configuration path:</strong> <em>Project Area definition → Advanced panel → Project and Project Group fields</em><br>
 <em>Display panel name:</em> <code>Advanced</code><br>
 <em>System panel name:</em> <code>Project Area</code></p>
-<p><img src="pictures/project-areas.png" alt="Project Areas"></p>
 <h3 id="responsibility-and-collaboration-settings">Responsibility and collaboration settings</h3>
 <p>Each Project Area may have a designated <strong>Owner</strong> — the person responsible for overseeing and coordinating the work within that Area.<br>
 A <strong>Social Group</strong> can also be assigned to the Project Area — just like in <a href="projects.html">Projects</a> — to represent the team or department involved in discussions and decisions related to that area.<br>
