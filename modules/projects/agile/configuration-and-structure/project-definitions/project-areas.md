@@ -16,9 +16,9 @@ Each Project Area can be defined at different levels, depending on the desired s
 A project of type **Client Implementation** may include Areas such as **Data Migration**, **System Configuration**, and **User Training**. Alternatively, a project group such as **Marketing Projects** may include shared areas like **Campaigns** and **Content Creation**, available to all projects in that group.
 
 > [!Note]  
-> The scope of a Project Area depends on the combination of the **Project** and **Project Group** fields:<br>  
-> • If **Project** is selected, the Area applies only to that Project.<br>  
-> • If **Project** is empty but **Project Group** is selected, the Area applies to all Projects in that group.<br>  
+> The scope of a Project Area depends on the combination of the **Project** and **Project Group** fields:  
+> • If **Project** is selected, the Area applies only to that Project.  
+> • If **Project** is empty but **Project Group** is selected, the Area applies to all Projects in that group.  
 > • If both fields are empty, the Area is considered **global**, valid across the entire Agile PM module.  
 
 **Configuration path:** *Project Area definition → Advanced panel → Project and Project Group fields*  
