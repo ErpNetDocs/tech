@@ -8,7 +8,7 @@ Once the core structural elements of Agile PM have been configured — such as [
 
 These include:
 
-- [Projects](projects.md) – representing actual business initiatives
+- [Projects](projects.md) – business initiatives serving as containers for agile work.
 - [Project Groups](project-groups.md) – logical groupings of projects that share common configurations such as areas and milestones. 
 - [Project Areas](project-areas.md) – subdivisions used to organize work within a Project, across a Project Group, or globally across all Projects and Project Groups.
 - [Project Milestones](project-milestones.md) – checkpoints representing key events and goals within a Project, within a Project Group, or globally across all Projects and Project Groups.
