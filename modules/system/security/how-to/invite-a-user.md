@@ -38,7 +38,7 @@ This will open a form that you should fill in.
    
 ![Saveuser](pictures/save.png)
    
-At this stage, a new user is created and saved in the platform, He is assigned to the **group** "Everybody".
+At this stage, a new user is created and saved in the platform. He is assigned to the **group** "Everybody".
    
 It is time to **send the invitation**.
 
