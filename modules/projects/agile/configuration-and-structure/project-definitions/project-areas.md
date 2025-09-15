@@ -7,6 +7,8 @@ uid: project-areas
 A **Project Area** in **Agile PM** represents a distinct structural unit within a [Project](projects.md), typically focused on a specific part of the overall work.  
 It is used to divide a Project into smaller, more manageable components that can be handled independently, either by different teams or based on specialized responsibilities.
 
+![Project Areas](pictures/project-areas.png)
+
 Each Project Area can be defined at different levels, depending on the desired scope:  
 - specific to a single Project,  
 - shared across a Project Group, or  
@@ -25,7 +27,6 @@ A project of type **Client Implementation** may include Areas such as **Data Mig
 *Display panel name:* `Advanced`<br>
 *System panel name:* `Project Area`
 
-![Project Areas](pictures/project-areas.png)
 
 ### Responsibility and collaboration settings
 
