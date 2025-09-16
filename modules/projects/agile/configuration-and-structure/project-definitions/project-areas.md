@@ -9,6 +9,8 @@ It provides a way to break down initiatives into smaller, more manageable compon
 
 ![Project Areas](pictures/project-areas.png)
 
+### Scope levels
+
 Each Project Area can be defined at different levels, depending on the desired scope:  
 - specific to a single Project,  
 - shared across a Project Group, or  
