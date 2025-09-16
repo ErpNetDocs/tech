@@ -18,6 +18,7 @@ Each Project belongs to exactly one Project Type.
 
 ![Projects](pictures/projects.png)
 
+
 ### Responsibility and collaboration settings
 
 Each Project must have a designated **Owner** — the person responsible for its execution and coordination.
@@ -42,6 +43,21 @@ This group represents the team or department involved in the discussions and dec
 *System panel name:* `Project`
 
 ![Project Advanced](pictures/project-advanced.png)
+
+
+## Association with Project Groups
+Each Project can optionally be associated with a [Project Group](project-group.md), which enables multiple related projects to share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
+This allows organizations to avoid duplication and manage shared structures more efficiently across related initiatives.  
+
+**For example**:
+The **Marketing Projects** group may include projects such as **Website Redesign** and **Campaign Launch**, both benefiting from shared areas and milestones defined at the group level.  
+
+**Configuration path:** *Project definition → Advanced panel → Project Group field*  
+*Display panel name:* `Advanced`<br>
+*System panel name:* `Project`<br>
+
+![Project Group Association](pictures/group-association.png)
+
 
 ### WIP (work-in-progress) Limits
 
