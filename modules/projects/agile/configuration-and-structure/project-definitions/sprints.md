@@ -19,6 +19,12 @@ They are used to:
 - Only one active Sprint is allowed per Project and Social Group combination, preventing overlap in execution.  
 - [Cases](../../cases/index.md) can be assigned to exactly one Sprint at a time; if not assigned, they remain in the backlog.
 
+**Configuration path:** *Sprint definition → General panel*
+*Display panel name:* `General`  
+*System panel name:* `Sprint`  
+
+![Sprint Form](pictures/sprint-form.png)
+
 ### Difference from Milestones  
 Sprints focus on driving work forward within short, fixed cycles,  
 while Milestones mark important checkpoints or delivery targets on the broader project timeline. 
@@ -27,9 +33,3 @@ while Milestones mark important checkpoints or delivery targets on the broader p
 A Website Redesign project might define a sprint dedicated to updating the homepage layout and navigation.  
 At the same time, a Product Development project could run a sprint focused on implementing a new API module.  
 Each sprint has its own start and end dates, goal, and progress tracking, while still aligning with the broader project milestones.  
-
-**Configuration path:** *Sprint definition → General panel*
-*Display panel name:* `General`  
-*System panel name:* `Sprint`  
-
-![Sprint Form](pictures/sprint-form.png)
