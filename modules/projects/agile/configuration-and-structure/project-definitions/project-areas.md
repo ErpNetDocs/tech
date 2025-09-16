@@ -16,7 +16,7 @@ Each Project Area can be defined at different levels, depending on the desired s
 - shared across a Project Group, or  
 - global, valid for all Projects and Groups in the system.  
 
-**For example**:
+**For example**:<br>
 A project of type **Client Implementation** may include Areas such as **Data Migration**, **System Configuration**, and **User Training**. Alternatively, a project group such as **Marketing Projects** may include shared areas like **Campaigns** and **Content Creation**, available to all projects in that group.
 
 > [!Note]  
