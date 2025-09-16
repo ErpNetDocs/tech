@@ -50,7 +50,7 @@ This group represents the team or department involved in the discussions and dec
 Each Project can optionally be associated with a [Project Group](project-group.md), which enables multiple related projects to share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
 This allows organizations to avoid duplication and manage shared structures more efficiently across related initiatives.  
 
-**For example**:
+**For example**:<br>
 The **Marketing Projects** group may include projects such as **Website Redesign** and **Campaign Launch**, both benefiting from shared areas and milestones defined at the group level.  
 
 **Configuration path:** *Project definition → Advanced panel → Project Group field*  
