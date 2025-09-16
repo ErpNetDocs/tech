@@ -61,6 +61,13 @@ Beyond these required elements, users are encouraged to complete additional fiel
 - **Estimated Time Hours** – a forecast of the time required to complete the task  
 - **Priority** – from 7 (lowest) to 1 (highest), used to triage tasks and focus effort
 
+**Iteration planning**  
+- **Sprint** – the timebox (iteration) in which the Case is planned to be completed. If empty, the Case remains in the backlog.  
+  > [!Note]  
+  > The dropdown lists only sprints that are not Completed or Cancelled.  
+
+- **Story Points** – an estimate of the effort to complete the Case, expressed in whole numbers and used for sprint planning and velocity tracking. Higher values indicate greater complexity or workload.  
+
 **Stakeholder involvement**
 - **Stakeholder Party** – an internal or external party with a vested interest in the outcome of the Case
 
