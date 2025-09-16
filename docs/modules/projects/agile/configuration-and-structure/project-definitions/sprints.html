@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/sprints.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,39 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="definitions">
+        <article data-uid="sprints">
 
-<h2 id="definitions">Definitions</h2>
-<p>Once the core structural elements of Agile PM have been configured — such as <a href="../main-setup/project-types.html">Project Types</a>, <a href="../main-setup/case-categories.html">Case Categories</a>, and <a href="../main-setup/user-states.html">User States</a> — the next step is to define the specific project-level structures that will be used in practice.</p>
-<p>These include:</p>
+<h2 id="sprints">Sprints</h2>
+<p>A <strong>Sprint</strong> in <strong>Agile PM</strong> represents a fixed timebox (typically 1–4 weeks) during which a team works to complete a set of <a href="../../cases/index.html">Cases</a> toward a defined sprint goal. Sprints provide short, iterative cycles that support planning, progress tracking, and continuous delivery.</p>
+<p>They are used to:</p>
 <ul>
-<li><a href="projects.html">Projects</a> – business initiatives serving as containers for agile work.</li>
-<li><a href="project-groups.html">Project Groups</a> – logical groupings of projects that share common configurations such as areas and milestones.</li>
-<li><a href="project-areas.html">Project Areas</a> – subdivisions used to organize work within a Project, across a Project Group, or globally across all Projects and Project Groups.</li>
-<li><a href="project-milestones.html">Project Milestones</a> – checkpoints representing key events and goals within a Project, within a Project Group, or globally across all Projects and Project Groups.</li>
-<li><a href="sprints.html">Sprints</a> – fixed timeboxes (typically 1–4 weeks) used to plan and track the execution of cases toward a defined sprint goal.</li>
+<li>Focus teams on a clear and achievable short-term goal.</li>
+<li>Track velocity and predict delivery capacity over time.</li>
+<li>Provide checkpoints for review, feedback, and adaptation.</li>
 </ul>
-<p>These elements provide the operational framework within which work is planned, executed, and monitored.<br>
-They are built on top of the foundational setup from <a href="../main-setup/index.html">Main setup</a> section and are essential for the day-to-day functioning of the <strong>Agile PM</strong> module.</p>
+<p><img src="pictures/sprints.png" alt="Sprints"></p>
+<h3 id="scope-and-constraints">Scope and constraints</h3>
+<ul>
+<li>Each Sprint belongs to a single <strong>Project</strong>, and may optionally be linked to a <strong>Social Group</strong> (team).</li>
+<li>Only one active Sprint is allowed per Project and Social Group combination, preventing overlap in execution.</li>
+<li><a href="../../cases/index.html">Cases</a> can be assigned to exactly one Sprint at a time; if not assigned, they remain in the backlog.</li>
+</ul>
+<p><strong>Configuration path:</strong> <em>Sprint definition → General panel</em><br>
+<em>Display panel name:</em> <code>General</code><br>
+<em>System panel name:</em> <code>Sprint</code></p>
+<p><img src="pictures/sprint-form.png" alt="Sprint Form"></p>
+<h3 id="difference-from-milestones">Difference from Milestones</h3>
+<p>Sprints focus on driving work forward within short, fixed cycles,<br>
+While Milestones mark important checkpoints or delivery targets on the broader project timeline.</p>
+<p><strong>For example:</strong><br>
+A <strong>Website Redesign</strong> project might define a sprint dedicated to updating the homepage layout and navigation.<br>
+At the same time, a <strong>Product Development</strong> project could run a sprint focused on implementing a new API module.<br>
+Each sprint has its own start and end dates, goal, and progress tracking, while still aligning with the broader project milestones.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/sprints.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

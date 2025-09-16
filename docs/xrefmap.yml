@@ -469,6 +469,9 @@ references:
 - uid: social-interactions
   name: Social interactions
   href: modules/community/social-interactions/index.html
+- uid: sprints
+  name: sprints
+  href: modules/projects/agile/configuration-and-structure/project-definitions/sprints.html
 - uid: statechanged
   name: STATECHANGED
   href: advanced/user-business-rules/events/statechanged.html

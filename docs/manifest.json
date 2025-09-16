@@ -19249,6 +19249,26 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprint-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprints.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/sprints.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-areas.md",
       "output": {
@@ -19284,6 +19304,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/projects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/sprints.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/sprints.html"
         }
       },
       "version": ""
