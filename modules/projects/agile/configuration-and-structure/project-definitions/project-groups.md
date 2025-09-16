@@ -4,8 +4,7 @@ uid: project-groups
 
 ## Project Groups
 
-A **Project Group** in **Agile PM** represents a logical grouping of Projects that share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md).  
-They provide a way to centrally manage shared structures across related Projects, without making them global for all Projects and Groups.  
+A **Project Group** in **Agile PM** represents a logical grouping of Projects that share common configurations such as [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md). They provide a way to centrally manage shared structures across related Projects, without making them global for all Projects and Groups.  
 
 Each Project may belong to one Group, and any Areas or Milestones linked to that Group apply automatically to all its Projects.
 
