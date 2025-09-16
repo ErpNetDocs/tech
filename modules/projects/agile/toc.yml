@@ -9,6 +9,3 @@
 - name: Advanced features
   href: advanced-features/toc.yml
   topicHref: advanced-features/index.md
-- name: Security
-  href: security.md
-  
