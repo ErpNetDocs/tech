@@ -42,7 +42,7 @@ This group represents the team or department involved in the discussions and dec
 *Display panel name:* `Advanced`<br>
 *System panel name:* `Project`
 
-![Project Advanced](pictures/project-advanced.png)
+![Project Responsibility](pictures/project-responsibility.png)
 
 
 ### Association with Project Groups
