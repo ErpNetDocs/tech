@@ -36,6 +36,8 @@ Without assigned Projects, a Project Group exists as a definition but does not p
 *Display panel name:* `General`  
 *System panel name:* `Project Group`  
 
+![Project Group Form](pictures/group-form.png)
+
 ## Relations
 - **Projects** – a Project may optionally be associated with one Project Group  
 - **Project Areas** – can be linked to a Project Group; in this case they apply to all Projects in the group  
