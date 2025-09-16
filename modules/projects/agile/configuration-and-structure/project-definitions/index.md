@@ -15,4 +15,4 @@ These include:
 - [Sprints](sprints.md) – fixed timeboxes (typically 1–4 weeks) used to plan and track the execution of cases toward a defined sprint goal.
 
 These elements provide the operational framework within which work is planned, executed, and monitored.  
-They are built on top of the foundational setup from section 1 and are essential for the day-to-day functioning of the Agile PM module.
+They are built on top of the foundational setup from [Main setup](../main-setup/index.md) section and are essential for the day-to-day functioning of the **Agile PM** module.
