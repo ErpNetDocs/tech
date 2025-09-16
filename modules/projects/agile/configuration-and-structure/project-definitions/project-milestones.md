@@ -27,17 +27,16 @@ Instead, Agile milestones are **lightweight coordination tools** that help teams
 Each Project Milestone can be defined at different levels, depending on the desired scope:
 - specific to a single Project,  
 - shared across a Project Group, or  
-- global, valid for all Projects and Groups in the system.  
+- global, valid for all Projects and Groups in the system.
 
+**For example**:
+A **Product Development** project may include milestones such as **Beta Release**, **Public Launch**, or **Security Audit**, helping the team align around shared delivery goals.  Alternatively, a project group such as **Marketing Projects** may define shared milestones like **Campaign Kickoff** or **Annual Review**, available to all projects in that group.
 
 > [!Note]  
 > The scope of a Project Milestone depends on the combination of the **Project** and **Project Group** fields:  
 > • If **Project** is selected, the Milestone applies only to that Project.  
 > • If **Project** is empty but **Project Group** is selected, the Milestone applies to all Projects in that group.  
 > • If both fields are empty, the Milestone is considered **global**, valid across the entire Agile PM module.
-
-**For example**:
-A **Product Development** project may include milestones such as **Beta Release**, **Public Launch**, or **Security Audit**, helping the team align around shared delivery goals.  Alternatively, a project group such as **Marketing Projects** may define shared milestones like **Campaign Kickoff** or **Annual Review**, available to all projects in that group.
 
 **Configuration path:** *Project Milestone definition → Advanced panel → Project and Project Group fields*  
 *Display panel name:* `Advanced`<br>
