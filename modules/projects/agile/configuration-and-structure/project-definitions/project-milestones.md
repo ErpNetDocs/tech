@@ -45,7 +45,7 @@ A **Product Development** project may include milestones such as **Beta Release*
 
 ![Project Milestone Scope](pictures/milestone-scope.png)
 
-## Additional properties
+### Additional properties
 
 Each Milestone can optionally include a **Completion Date**, which indicates the point in time by which relevant work (e.g. [Cases](../../cases/index.md)) is expected to be completed.  
 This can be used as a soft deadline to guide planning and execution.
@@ -54,4 +54,4 @@ This can be used as a soft deadline to guide planning and execution.
 *Display panel name:* `General`<br>
 *System panel name:* `Project Milestone`
 
-![Milestone Completion Date](pictures/milestone-complition.png)
+![Milestone Completion Date](pictures/milestone-completion.png)
