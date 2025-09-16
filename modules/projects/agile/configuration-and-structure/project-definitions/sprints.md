@@ -4,8 +4,7 @@ uid: sprints
 
 ## Sprints
 
-A **Sprint** in **Agile PM** represents a fixed timebox (typically 1–4 weeks) during which a team works to complete a set of [Cases](../../cases/index.md) toward a defined sprint goal.  
-Sprints provide short, iterative cycles that support planning, progress tracking, and continuous delivery.  
+A **Sprint** in **Agile PM** represents a fixed timebox (typically 1–4 weeks) during which a team works to complete a set of [Cases](../../cases/index.md) toward a defined sprint goal. Sprints provide short, iterative cycles that support planning, progress tracking, and continuous delivery.  
 
 They are used to:  
 - Focus teams on a clear and achievable short-term goal.  
