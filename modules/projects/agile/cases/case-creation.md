@@ -44,12 +44,11 @@ Beyond these required elements, users are encouraged to complete additional fiel
 **Project context**
 - **Area** (System name: `Project Area`) – a subdivision within the project for more precise categorization  
 - **Milestone** (System name: `Project Milestone`) – a key phase or delivery checkpoint that the Case supports
-
-> [!Note]  
-> The dropdowns for **Area** and **Milestone** list only those that are:  
-> • linked to the selected Project  
-> • linked to the Project Group of that Project (when not tied to another specific Project)  
-> • global (not tied to any Project or Project Group).  
+  > [!Note]  
+  > The dropdowns for **Area** and **Milestone** list only those that are:  
+  > • linked to the selected Project  
+  > • linked to the Project Group of that Project (when not tied to another specific Project)  
+  > • global (not tied to any Project or Project Group).  
 
 **Assignment and responsibility**
 - **Owner** (System name: `Owner User`) – the person ultimately responsible for the Case *(required; defaults to creator)*  
