@@ -29,7 +29,7 @@ Each Project Milestone can be defined at different levels, depending on the desi
 - shared across a Project Group, or  
 - global, valid for all Projects and Groups in the system.
 
-**For example**:
+**For example**:<br>
 A **Product Development** project may include milestones such as **Beta Release**, **Public Launch**, or **Security Audit**, helping the team align around shared delivery goals.  Alternatively, a project group such as **Marketing Projects** may define shared milestones like **Campaign Kickoff** or **Annual Review**, available to all projects in that group.
 
 > [!Note]  
