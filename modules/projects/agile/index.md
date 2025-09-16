@@ -35,7 +35,6 @@ At its core, the module introduces configurable structures to reflect business l
 - **Progress and workload monitoring**, based on workflow states and activity logs (case developments), helping teams and managers track task movement, detect delays, and identify bottlenecks.
 - **Hierarchical case structuring**, enabling teams to break down the work within a project into traceable, manageable units using parent-child relationships.
 - **Integrated collaboration features**, including Social Group associations, internal discussions, activity logs, and smart notifications — all embedded directly into the Case form.
-- **Project-based access control**, ensuring users see and interact only with relevant projects and Cases, while maintaining strict security boundaries.
 
 Together, these tools provide agile teams with structure, transparency, and flexibility — allowing them to deliver value continuously, adapt quickly, and scale their efforts confidently across the organization.
 
@@ -43,4 +42,3 @@ Together, these tools provide agile teams with structure, transparency, and flex
 - [Configuration and structure](configuration-and-structure/index.md)
 - [Cases](cases/index.md)
 - [Advanced features](advanced-features/index.md)
-- [Security](security.md)
