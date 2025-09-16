@@ -19,7 +19,7 @@ They are used to:
 - Only one active Sprint is allowed per Project and Social Group combination, preventing overlap in execution.  
 - [Cases](../../cases/index.md) can be assigned to exactly one Sprint at a time; if not assigned, they remain in the backlog.
 
-**Configuration path:** *Sprint definition → General panel*
+**Configuration path:** *Sprint definition → General panel*<br>
 *Display panel name:* `General`  
 *System panel name:* `Sprint`  
 
