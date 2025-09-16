@@ -26,7 +26,7 @@ They are used to:
 
 ### Difference from Milestones  
 Sprints focus on driving work forward within short, fixed cycles,  
-while Milestones mark important checkpoints or delivery targets on the broader project timeline. 
+While Milestones mark important checkpoints or delivery targets on the broader project timeline. 
 
 **For example:**  
 A Website Redesign project might define a sprint dedicated to updating the homepage layout and navigation.  
