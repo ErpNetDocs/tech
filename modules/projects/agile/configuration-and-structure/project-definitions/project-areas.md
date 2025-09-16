@@ -46,7 +46,7 @@ This helps ensure accountability, collaboration, and clear ownership over specif
   *Display panel name:* `Advanced`<br>
   *System panel name:* `Project Area`
 
-![Project Area Responsibility](pictures/area-responsibilty.png)
+![Project Area Responsibility](pictures/area-responsibility.png)
 
 ### WIP (work-in-progress) Limits
 
