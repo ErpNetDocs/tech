@@ -19110,30 +19110,70 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-advanced.png",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-advanced.png"
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-responsibility.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-area-form.png",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-scope.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-area-form.png"
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-scope.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-area-wip.png",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-wip.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-area-wip.png"
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/area-wip.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-association.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-association.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/group-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-completion.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/milestone-scope.png"
         }
       },
       "version": ""
@@ -19160,10 +19200,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-milestone-form.png",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-groups.png",
       "output": {
         "resource": {
-          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-milestone-form.png"
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-groups.png"
         }
       },
       "version": ""
@@ -19174,6 +19214,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-milestones.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/pictures/project-responsibility.png"
         }
       },
       "version": ""
@@ -19204,6 +19254,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/agile/configuration-and-structure/project-definitions/project-groups.html"
         }
       },
       "version": ""

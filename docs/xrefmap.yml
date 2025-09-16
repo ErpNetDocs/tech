@@ -424,6 +424,9 @@ references:
 - uid: project-areas
   name: project-areas
   href: modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html
+- uid: project-groups
+  name: project-groups
+  href: modules/projects/agile/configuration-and-structure/project-definitions/project-groups.html
 - uid: project-milestones
   name: project-milestones
   href: modules/projects/agile/configuration-and-structure/project-definitions/project-milestones.html

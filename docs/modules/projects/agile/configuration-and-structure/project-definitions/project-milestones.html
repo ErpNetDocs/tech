@@ -87,33 +87,46 @@
         <article data-uid="project-milestones">
 
 <h2 id="project-milestones">Project Milestones</h2>
-<p><strong>Project Milestones</strong> in <strong>Agile PM</strong> represent significant checkpoints within a <a href="projects.html">Project</a> — key dates or events that help teams monitor progress, align expectations, and prepare for upcoming deliverables.</p>
-<p>Milestones may correspond to internal or external deadlines, such as a product release, a feature freeze, a client presentation, or a critical review session.<br>
-They do not control the sequence of work but signal important targets in the project timeline.</p>
+<p><strong>Project Milestones</strong> in <strong>Agile PM</strong> represent significant checkpoints — key dates or events that help teams monitor progress, align expectations, and prepare for upcoming deliverables.</p>
+<p>They may correspond to internal or external deadlines, such as a product release, a feature freeze, a client presentation, or a critical review session.<br>
+Milestones do not control the sequence of work but signal important targets in the project timeline.</p>
 <h4 id="what-a-milestone-is-not-in-agile">What a Milestone is <em>not</em> in Agile</h4>
 <p>A Milestone in Agile is <strong>not</strong>:</p>
 <ul>
 <li>A fixed deadline that marks the <em>end</em> of the entire project</li>
 <li>A rigid checkpoint enforced regardless of team velocity or feedback</li>
 <li>A traditional Gantt-style dependency or sequential barrier</li>
-<li>A sign that “everything must be done” by that date</li>
+<li>A sign that &quot;everything must be done&quot; by that date</li>
 </ul>
 <p>Instead, Agile milestones are <strong>lightweight coordination tools</strong> that help teams focus on meaningful outcomes without introducing unnecessary rigidity.</p>
-<p><strong>For example</strong>:
-A project of type <strong>Product Development</strong> may include Milestones such as<br>
-<strong>Beta Release</strong>, <strong>Public Launch</strong>, or <strong>Security Audit</strong>, helping the team align around shared delivery goals.</p>
 <p><img src="pictures/project-milestones.png" alt="Project Milestones"></p>
-<p>Each Milestone can optionally include a <strong>Completion Date</strong>, which indicates the point in time by which relevant work (e.g. <a href="../../cases/index.html">Cases</a>) is expected to be completed.<br>
-This can be used as a soft deadline to guide planning and execution.</p>
+<h3 id="scope-levels">Scope levels</h3>
+<p>Each Project Milestone can be defined at different levels, depending on the desired scope:</p>
+<ul>
+<li>specific to a single Project,</li>
+<li>shared across a Project Group, or</li>
+<li>global, valid for all Projects and Groups in the system.</li>
+</ul>
+<p><strong>For example</strong>:
+A <strong>Product Development</strong> project may include milestones such as <strong>Beta Release</strong>, <strong>Public Launch</strong>, or <strong>Security Audit</strong>, helping the team align around shared delivery goals.  Alternatively, a project group such as <strong>Marketing Projects</strong> may define shared milestones like <strong>Campaign Kickoff</strong> or <strong>Annual Review</strong>, available to all projects in that group.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>While each Project Milestone usually references a specific Project, it is possible to define a global Milestone that can be used across all Projects.<br>
-To do this, simply leave the <em>Project</em> field empty.</p>
+<p>The scope of a Project Milestone depends on the combination of the <strong>Project</strong> and <strong>Project Group</strong> fields:<br>
+• If <strong>Project</strong> is selected, the Milestone applies only to that Project.<br>
+• If <strong>Project</strong> is empty but <strong>Project Group</strong> is selected, the Milestone applies to all Projects in that group.<br>
+• If both fields are empty, the Milestone is considered <strong>global</strong>, valid across the entire Agile PM module.</p>
 </div>
-<p><strong>Configuration path:</strong> <em>Project Milestone definition → General panel → Project and Completion Date fields</em><br>
+<p><strong>Configuration path:</strong> <em>Project Milestone definition → Advanced panel → Project and Project Group fields</em><br>
+<em>Display panel name:</em> <code>Advanced</code><br>
+<em>System panel name:</em> <code>Project Milestone</code></p>
+<p><img src="pictures/milestone-scope.png" alt="Project Milestone Scope"></p>
+<h3 id="additional-properties">Additional properties</h3>
+<p>Each Milestone can optionally include a <strong>Completion Date</strong>, which indicates the point in time by which relevant work (e.g. <a href="../../cases/index.html">Cases</a>) is expected to be completed.<br>
+This can be used as a soft deadline to guide planning and execution.</p>
+<p><strong>Configuration path:</strong> <em>Project Milestone definition → General panel → Completion Date field</em><br>
 <em>Display panel name:</em> <code>General</code><br>
 <em>System panel name:</em> <code>Project Milestone</code></p>
-<p><img src="pictures/project-milestone-form.png" alt="Project Milestone Form"></p>
+<p><img src="pictures/milestone-completion.png" alt="Milestone Completion Date"></p>
 
 </article>
 

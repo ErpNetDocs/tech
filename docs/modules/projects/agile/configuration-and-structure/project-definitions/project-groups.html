@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/project-groups.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,43 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="definitions">
+        <article data-uid="project-groups">
 
-<h2 id="definitions">Definitions</h2>
-<p>Once the core structural elements of Agile PM have been configured — such as <a href="../main-setup/project-types.html">Project Types</a>, <a href="../main-setup/case-categories.html">Case Categories</a>, and <a href="../main-setup/user-states.html">User States</a> — the next step is to define the specific project-level structures that will be used in practice.</p>
-<p>These include:</p>
+<h2 id="project-groups">Project Groups</h2>
+<p>A <strong>Project Group</strong> in <strong>Agile PM</strong> represents a logical grouping of Projects that share common configurations such as <a href="project-areas.html">Project Areas</a> and <a href="project-milestones.html">Project Milestones</a>. They provide a way to centrally manage shared structures across related Projects, without making them global for all Projects and Groups.</p>
+<p>Each Project may belong to one Group, and any Areas or Milestones linked to that Group apply automatically to all its Projects.</p>
+<p><strong>For example</strong>:<br>
+A company manages various projects — such as Website Redesign, Campaign Launch, SEO Optimization, Mobile App, API Platform, and Reporting Module.</p>
+<p>Some of these projects share common structures that are not relevant to the others.<br>
+Instead of duplicating the same areas and milestones in each project, or defining them globally where they would appear in unrelated projects, the company can organize them into <strong>Project Groups</strong>.</p>
+<p>In this case, the company might define:</p>
 <ul>
-<li><a href="projects.html">Projects</a> – business initiatives serving as containers for agile work.</li>
-<li><a href="project-groups.html">Project Groups</a> – logical groupings of projects that share common configurations such as areas and milestones.</li>
-<li><a href="project-areas.html">Project Areas</a> – subdivisions used to organize work within a Project, across a Project Group, or globally across all Projects and Project Groups.</li>
-<li><a href="project-milestones.html">Project Milestones</a> – checkpoints representing key events and goals within a Project, within a Project Group, or globally across all Projects and Project Groups.</li>
-<li><a href="sprints.md">Sprints</a> – fixed timeboxes (typically 1–4 weeks) used to plan and track the execution of cases toward a defined sprint goal.</li>
+<li>a <strong>Marketing Projects</strong> group for Website Redesign, Campaign Launch, and SEO Optimization</li>
+<li>a <strong>Product Development Projects</strong> group for Mobile App, API Platform, and Reporting Module</li>
 </ul>
-<p>These elements provide the operational framework within which work is planned, executed, and monitored.<br>
-They are built on top of the foundational setup from section 1 and are essential for the day-to-day functioning of the Agile PM module.</p>
+<p>This way, marketing projects can share milestones like &quot;Campaign Live&quot;, while product development projects can share areas like &quot;Release Management&quot;, without interfering with each other.</p>
+<p><em>To explore how <a href="project-areas.html">Project Areas</a> and <a href="project-milestones.html">Project Milestones</a> are set up in detail,<br>
+and how their scope is controlled by Projects and Project Groups, see the respective documentation pages.</em></p>
+<p><img src="pictures/project-groups.png" alt="Project Groups"></p>
+<h3 id="creating-a-project-group">Creating a Project Group</h3>
+<p>Defining a Project Group is a simple process — you only need to provide:</p>
+<ul>
+<li>a <strong>Code</strong> (unique identifier),</li>
+<li>a <strong>Name</strong>,</li>
+<li>and optionally a <strong>Description</strong> of the group’s scope or purpose.</li>
+</ul>
+<p>This makes Project Groups lightweight structures that are easy to set up and maintain.</p>
+<p>However, to use Project Groups effectively, at least one Project should be associated with them.<br>
+Without assigned Projects, a Project Group exists as a definition but does not provide practical benefits.</p>
+<p><strong>Configuration path:</strong> <em>Project Group definition → General panel → Code, Name and Description fields</em><br>
+<em>Display panel name:</em> <code>General</code><br>
+<em>System panel name:</em> <code>Project Group</code></p>
+<p><img src="pictures/group-form.png" alt="Project Group Form"></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/agile/configuration-and-structure/project-definitions/project-groups.md/#L1" class="edit-link">Suggest improvement to this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
