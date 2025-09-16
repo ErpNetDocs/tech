@@ -29,6 +29,6 @@ Sprints focus on driving work forward within short, fixed cycles,
 While Milestones mark important checkpoints or delivery targets on the broader project timeline. 
 
 **For example:**  
-A Website Redesign project might define a sprint dedicated to updating the homepage layout and navigation.  
-At the same time, a Product Development project could run a sprint focused on implementing a new API module.  
+A **Website Redesign** project might define a sprint dedicated to updating the homepage layout and navigation.  
+At the same time, a **Product Development** project could run a sprint focused on implementing a new API module.  
 Each sprint has its own start and end dates, goal, and progress tracking, while still aligning with the broader project milestones.  
