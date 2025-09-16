@@ -40,11 +40,7 @@ Without assigned Projects, a Project Group exists as a definition but does not p
 
 ### Relations
 Project Groups act as a connector between Projects and shared configurations.  
-They influence how Projects, Areas, and Milestones are applied across the system:
-
-- **Projects** – a Project may optionally be associated with one Project Group.  
-- **Project Areas** – when linked to a Project Group, Areas apply to all Projects in that group.  
-- **Project Milestones** – when linked to a Project Group, Milestones apply to all Projects in that group.
+A Project may belong to one Group, and Areas or Milestones linked to that Group apply to all its Projects.  
 
 *For more details on how [Project Areas](project-areas.md) and [Project Milestones](project-milestones.md) are defined and applied,  
 and how their scope is influenced by Projects and Project Groups, see the respective documentation pages.*
