@@ -10,9 +10,11 @@ For details on how to define a user of a Client Center in **@@name version 24**,
 
 ## Local account creation
 
-Before a user can be assigned an **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** for a Client Center, they must first create a **local account**. 
+Before a user can get access to a Client Center through **[external access role assignment](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)**, they must first create a **local account**. 
 
-Accessing the CC log-in page allows them to open **local account creation form**. 
+Accessing the CC log-in page allows them to access the **local account creation form**. 
+
+![picture](pictures/create_local.png)
 
 Required fields are **Е-mail**, **Full Name**, and **Password**.
 
