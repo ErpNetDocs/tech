@@ -6,7 +6,7 @@ For details on how to define a user of a Client Center in **@@name version 24**,
 
 > [!NOTE]
 > If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**. <br>
-> To learn how to apply global platform settings, please read **[Apply platform settings](apply-platform-settings.md)**
+> To learn how to apply global platform settings, please read **[Apply platform settings](apply-platform-settings.md)**.
 
 ## Local account creation
 
