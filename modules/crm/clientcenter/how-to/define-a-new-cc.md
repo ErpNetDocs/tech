@@ -34,13 +34,13 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
    
    To do so, click on **Run**, select the **Create/Update Trusted Application** option, and confirm with **OK**.
 
-![picture](pictures/Create_Update_Trusted_app_01_04.png)
+   ![picture](pictures/Create_Update_Trusted_app_01_04.png)
 
 5. Once you complete this step, hit **Save and reload**.
    
    The new Client Center website will be created and you can access its internal application details through the form.
 
-![picture](pictures/Trusted_app_open_01_04.png)
+   ![picture](pictures/Trusted_app_open_01_04.png)
 
 If you've passed all the steps successfully, you may proceed to **[define users](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** who can access the Client Center.
 
