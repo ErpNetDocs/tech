@@ -88,7 +88,7 @@ Each subsequent role in the table below also includes the rights granted by the 
 
 ## Multi-customer login
 
-The Client Center offers **multi-customer support**, which allows users to have easy access to specific data for more than one customer at the same time.
+The Client Center offers **multi-customer support**, which allows users to have easy access to specific data for more than one customer.
 
 The relationship between users and customers is derived from the @@name **[External Access table](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html)**, which is used as a point of reference for establishing the type of access a user has to a particular customer.
 
