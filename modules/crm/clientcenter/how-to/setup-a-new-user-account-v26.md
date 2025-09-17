@@ -10,19 +10,23 @@ For details on how to define a user of a Client Center in **@@name version 24**,
 
 ## Local account creation
 
-Before a user can be granted access to a Client Center by an Administrator, they must first create a **local account**. 
+Before a user can be assigned an **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** for a Client Center, they must first create a **local account**. 
 
-Accessing the CC log-in page allows them to open **local account creation form**. Required fields are **Е-mail**, **Full Name**, and **Password**.
+Accessing the CC log-in page allows them to open **local account creation form**. 
+
+Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ![picture](pictures/local_user_account.png)
 
 ## Adding local user account in CC
 
-Once a user has created their account, an Administrator of a Client Center must add them in the respective desired environment through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page.
-
-Administrators are assigned the **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin**, which guarantees them full reach of all customer data, including the ability to manage users.
+Once a user has created their local account, another user with an **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin** or **Owner** in the Client Center can add them there through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page. The Admin and Owner roles provide full reach of all customer data, including the ability to add, remove, and manage users for that customer.  
 
 Omission of this step will result in a **critical lack-of-access** **error message** for the new user when attempting to log in.
+
+> [!NOTE]
+> 
+> By default, the @@name Administrator has the **Owner** role in their Client Center, which allows them to assign any role to any external or internal user. 
 
 ### Step-by-step process
 
