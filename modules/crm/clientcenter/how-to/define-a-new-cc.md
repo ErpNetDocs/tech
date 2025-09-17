@@ -13,7 +13,7 @@ To set up a website of **Client Center** type, navigate to the **Web Sites** pan
 
 ![picture](pictures/web_sites_panel.png)
 
-Then, click the **+ button** to begin creating a new web site.
+Then, click the **New button** to begin creating a new web site.
 
 ![picture](pictures/new_add_website.png)
 
@@ -35,11 +35,11 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 4. It's necessary to create a **trusted application** to ensure the security and integrity of the new website.
    
-   You can do that from the Run button or through the dedicated Trusted Application field. 
+   You can do that from the **Run** button or through the dedicated **Trusted Application** field. 
 
    ![picture](pictures/trusted_app.png)
 
-5. Specify settings that will apply to your Client Center website.
+5. Specify **settings** that will apply to your Client Center website.
 
    You can do this now or later when **editing** the web site. More information can be found **below**.
 
@@ -51,9 +51,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ## Apply platform settings
 
-Like all ERP websites, the Client Center can have its settings changed on an individual level. 
-
-This includes specific visual and functional modifications. 
+Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications. 
 
 Below is a list of settings you can apply to the Client Center. An extensive list can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 
@@ -82,65 +80,20 @@ where
 
 ![picture](pictures/settings_code.png)
 
-### Troubleshooting
-
-Depending on how you define the settings, you can encounter the following scenarios:
-
-1.	Both settings are set:
-
-```
-    	"NewOrderDocumentType": "07c7ef2f-abc1-47d9-9d40-bc1e0acd1e7c",
-   	"IsNewOrderEnabled": true
-```
-
-This results in the menu button allowing for the creation of a new order to be shown, and the document type to be set as a sales order.
-
-If the ID doesn’t match any document of type Sales order, you’ll get an error:
-
-**008 - Not well formatted json string**
-
-You need to erase all inputted values, save your progress, refresh the website, and insert the correct values.
-
-2.	Only one of the settings is set:
-
-```
-   	  "IsNewOrderEnabled": true
-```
-
-Here, the system will generate another error:
-
-**009 – NewOrderDocumentType is set, but DocumentType is null**
-
-3.	No settings are set:
-
-In this scenario, both settings assume two values by default:
-
-```
-    	"NewOrderDocumentType": "CRM_SALES_ORDER.Id",
-        "IsNewOrderEnabled": false
-```
-
-The button used for creating a new order will not be shown. 
-
-If you try to use a link leading to the direct creation of an order, you’ll see the following message:
-
-**You are not authorized to view this page.**
-
-For more information, see the **[reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**.
-
-### Automatic tracking
-
-Whenever you apply or change settings for the Client Center, they’re **tracked** by the system in real-time and are reflected immediately.
+> [!NOTE]
+> 
+> Whenever you apply or change settings for the Client Center, they’re **tracked** by the system in real-time and are reflected immediately.
 
 ### User-level security
 
-By default, the Client Center uses a system user known as **System-Application-User**. This user has rights to apply or change settings only in accordance with the normal functioning of the website. For better security, another more restricted user can be used. 
+By default, the Client Center uses a system user known as *System-Application-User*. This user has rights to apply or change settings only in accordance with the normal functioning of the website. For better security, another more restricted user can be used. 
 
-By default, the **System-Application-User** has System rights, but reflects used licenses as well. 
+The **System-Application-User** has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
 
-It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
+---
+#### See next:
 
-If you've passed all the steps successfully, you may proceed to **[define users](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** who can access the Client Center.
+- **[Set up a new user account](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** 
 
 > [!NOTE]
 > 
