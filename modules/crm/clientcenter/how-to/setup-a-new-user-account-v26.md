@@ -1,4 +1,4 @@
-# How to define a user of a Client Center (v.26)
+# How to add new users and manage permissions (v.26)
 
 This is a step-by-step guide on defining a new user and configuring their access to a Client Center (CC) **in @@name version 26**.
 
