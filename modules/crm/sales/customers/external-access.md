@@ -42,27 +42,31 @@ The External Access table allows you to define new users, as well as modify and 
 
 To do so:
 
-1. Select a customer from the customer form. and reveal the **External Access** panel from the **Customize Form** option of the main customer form.
+1. Select a customer from the navigator and reveal the **Customize form** feature of the main customer form.
+
+   ![pictures](pictures/custom_form.png)
+
+2. Reveal the **External Access** panel.
 
    ![pictures](pictures/customize_form.png)
 
-2. Click the **Edit button** of the form to enable editing within the **External Access** panel.
+3. Click the **Edit button** of the form to enable editing within the **External Access** panel.
 
    ![pictures](pictures/pen_customer.png)
 
-3. To add a new user for the customer, click the **+ button** and fill out the respective **User**, **Role** and **Days Back Access** fields.
+4. To add a new user for the customer, click the **+ button** and fill out the respective **User**, **Role** and **Days Back Access** fields.
 
-  - **User** - The user account to whom the access is granted. 
-  - **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
-  - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
+    - **User** - The user account to whom the access is granted. 
+    - **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
+    - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
 
     ![pictures](pictures/plus_user.png)
 
-4. To change the details of an existing user, simply click the **pen button** to the left of their name and proceed to insert your edits.
+5. To change the details of an existing user, simply click the **pen button** to the left of their name and proceed to insert your edits.
 
    ![pictures](pictures/pen_user.png)
 
-5. Clicking **Save and close** will apply all changes and/or additions for the customer.
+6. Clicking **Save and close** will apply all changes and/or additions for the customer.
 
     ![pictures](pictures/save_close.png)
 
