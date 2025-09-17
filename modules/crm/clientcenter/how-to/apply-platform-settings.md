@@ -118,7 +118,3 @@ It’s automatically assigned whenever a new website is created and whenever a t
 ## Error visualization
 
 When you encounter a problem in the platform, a relevant, easy-to-read and interactive **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown explaining its nature. 
-
-> [!NOTE]
-> 
-> The screenshots taken for this article are from v24 of the platform.
