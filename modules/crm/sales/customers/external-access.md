@@ -56,7 +56,7 @@ To do so:
   - **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
   - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
 
-   ![pictures](pictures/plus_user.png)
+  ![pictures](pictures/plus_user.png)
 
 4. To change the details of an existing user, simply click the **pen button** to the left of their name and proceed to insert your edits.
 
