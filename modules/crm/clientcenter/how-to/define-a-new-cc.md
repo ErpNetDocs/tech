@@ -1,4 +1,4 @@
-# How to define a website of type Client Center
+# How to set up a Client Center
 
 This article provides a step-by-step guide on creating a Client Center website through @@name.
 
