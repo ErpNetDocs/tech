@@ -41,7 +41,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 5. Specify **settings** that will apply to your Client Center website.
 
-   You can do this now or later when **editing** the web site. More information can be found **below**.
+   You can do this now or later when **editing** the web site. More information can be found **[below](define-a-new-cc.md#apply-platform-settings)**.
 
 6. Once you are ready, click **Save and reload**.
    
@@ -53,7 +53,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications. 
 
-Below is a list of settings you can apply to the Client Center. An extensive list can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
+Below are important settings you can apply to the Client Center. An extensive list can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 
 - The ability to reveal or hide the **[New Order module](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html?q=new%20order)**.
 
@@ -82,7 +82,7 @@ where
 
 > [!NOTE]
 > 
-> Whenever you apply or change settings for the Client Center, they’re **tracked** by the system in real-time and are reflected immediately.
+> Whenever you apply or change settings for the Client Center, you need to **restart** the website through the **Instance Manager**.
 
 ### User-level security
 
