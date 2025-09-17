@@ -22,9 +22,7 @@ Once a user has created their account, an Administrator of a Client Center must 
 
 Administrators are assigned the **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin**, which guarantees them full reach of all customer data, including the ability to manage users.
 
-Omission of this step will result in a critical lack-of-access **error message** for the new user when attempting to log in.
-
-![picture](pictures/no_access.png)
+Omission of this step will result in a **critical lack-of-access** **error message** for the new user when attempting to log in.
 
 ### Step-by-step process
 
