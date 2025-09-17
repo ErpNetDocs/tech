@@ -22,13 +22,13 @@ Required fields are **Е-mail**, **Full Name**, and **Password**.
 
 ## Adding local user account in CC
 
-Once a user has created their local account, another user with an **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin** or **Owner** in the Client Center can add them there through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page. The Admin and Owner roles provide full reach of all customer data, including the ability to add, remove, and manage users for that customer.  
+Once a user has created their local account, another user with an **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)** **Admin** or **Owner** in а Client Center can add them there through the **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user)** page. The Admin and Owner roles provide full reach of all customer data, including the ability to add, remove, and manage users for that customer.  
 
 Omission of this step will result in a **critical lack-of-access** **error message** for the new user when attempting to log in.
 
 > [!NOTE]
 > 
-> By default, the @@name Administrator has the **Owner** role in their Client Center, which allows them to assign any role to any external or internal user. 
+> By default, the @@name Administrator gets the **Owner** role in the Client Center they create, which allows them to assign any role to any external or internal user of their choice. A user with the Admin role can in turn can start adding other users with varying levels of access into that same Client Center through the **User Management** page.
 
 ### Step-by-step process
 
