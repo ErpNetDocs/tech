@@ -65,10 +65,6 @@ An Administrator can configure them in the **@@name Web Client** by executing th
 > 
 > If any of the user configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
 
-> [!TIP]
-> 
-> If you've passed all the steps successfully, you may proceed to **[apply platform settings](apply-platform-settings.md)**. 
-
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v24 of the platform.
