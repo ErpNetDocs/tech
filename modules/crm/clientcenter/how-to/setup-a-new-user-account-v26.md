@@ -5,7 +5,8 @@ This is a step-by-step guide on defining a new user and configuring their access
 For details on how to define a user of a Client Center in **@@name version 24**, please see **[this guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.html)**.
 
 > [!NOTE]
-> If you haven't created a CC website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
+> If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**. <br>
+> To learn how to apply global platform settings, please read **[Apply platform settings](apply-platform-settings.md)**
 
 ## Local account creation
 
@@ -54,8 +55,7 @@ Omission of this step will result in a critical lack-of-access **error message**
 
 > [!TIP]
 >
-> To expand a user's access to more of your customers, **switch** to another customer profile and **repeat** all steps described above. <br>
-> If you've passed all the steps successfully, you may proceed to **[apply global platform settings](apply-platform-settings.md)**.
+> To expand a user's access to more of your customers, **switch** to another customer and **repeat** all steps described above.
 
 > [!Warning]
 > If any of the configuration settings are not properly applied, a respective **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown. 
