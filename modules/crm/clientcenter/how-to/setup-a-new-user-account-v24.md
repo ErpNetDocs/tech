@@ -6,7 +6,7 @@ For details on how to define a user of a Client Center in **@@name version 26** 
 
 > [!NOTE]
 > 
-> If you haven't created a CC website already, please read **[Define a new Client Center](define-a-new-cc.md)**.
+> If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**.
 
 ## Local account request
 
