@@ -42,7 +42,7 @@ The External Access table allows you to define new users, as well as modify and 
 
 To do so:
 
-1. Select a customer from the table and reveal the **External Access** panel from the **Customize Form** option of the main customer form.
+1. Select a customer from the customer form. and reveal the **External Access** panel from the **Customize Form** option of the main customer form.
 
    ![pictures](pictures/customize_form.png)
 
@@ -51,6 +51,10 @@ To do so:
    ![pictures](pictures/pen_customer.png)
 
 3. To add a new user for the customer, click the **+ button** and fill out the respective **User**, **Role** and **Days Back Access** fields.
+
+  - **User** - The user account to whom the access is granted. 
+  - **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
+  - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
 
    ![pictures](pictures/plus_user.png)
 
@@ -66,7 +70,7 @@ To do so:
 
 > [!TIP]
 > 
-> A faster way of adding new users and defining their access level to a Client Center is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+> The Client Center also allows you to add users to the External Access table and manage their access level. <br> The process is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 > [!NOTE]
 > 
