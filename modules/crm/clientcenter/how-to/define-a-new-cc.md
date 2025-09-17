@@ -51,58 +51,38 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ## Apply platform settings
 
-Like all @@name websites, the Client Center can have certain settings applied for it.
+Like all ERP websites, the Client Center can have its settings changed on an individual level. 
 
 This includes specific visual and functional modifications. 
 
-Below are examples of important settings you can apply to your Client Center website:
+Below is a list of settings you can apply to the Client Center. An extensive list can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 
-- The ability to reveal or hide the **New Order** menu, allowing or restricting users to create new orders.
+- The ability to reveal or hide the **[New Order module](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html?q=new%20order)**.
 
-    By default, this button is **hidden** so as to prevent potential information leaks.
-
-    You need to enable the functionality **manually** only when that’s necessary.
-
-- The ability to define the sales order document type for new orders in the Client Center. 
-
-    You must input a **valid** **SalesOrder.DocumentType ID**. 
-
-    This could be quite helpful for separating orders made in the Client Center from those made in other modules.
+- The ability to define which document types are shown in the **[Orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html)** and the **[Invoices](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html)** modules.
 
 ### JSON format definition
 
-Client Center settings must be configured in a **key-value pair JSON format**. 
+Client Center settings are defined in the **Settings** field of the Web Site creation form.
 
-### Prerequisites
+They must be configured in a **key-value pair JSON format**. 
 
-You need to navigate to your website's main environment, access the Client Center's details, and enter the website's settings. 
-
-Editing mode must be active for all website-related fields. 
-
-If the **Settings** field is not in view, use the **Show/hide field** button to toggle its visibility.
-
-### Step-by-step process
-
-1.	Inside the **Settings** field, input the following:
+**Example:**
 
 {<br>
-    		"NewOrderDocumentType": "DocumentType.Id",<br>
-    		"IsNewOrderEnabled": true/false, <br>"IsOrdersEnabled": true/false<br>
-
+"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": false <br>
+"IsOrdersEnabled": true 
 }
 
 where 
 
 - *NewOrderDocumentType* takes the valid ID value of a new (sales) order.
-
--  _IsNewOrderEnabled_ defines if the button for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
+-  _IsNewOrderEnabled_ defines if the module for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
 - *IsOrdersEnabled* determines whether the "Orders" section will be present in the Client center. (**true** meaning visible, **false** meaning restricted).
 
 ![picture](pictures/settings_code.png)
 
-2.	**Apply** the new settings.
-
-## Troubleshooting
+### Troubleshooting
 
 Depending on how you define the settings, you can encounter the following scenarios:
 
@@ -148,32 +128,19 @@ If you try to use a link leading to the direct creation of an order, you’ll se
 
 For more information, see the **[reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**.
 
-## Automatic tracking
+### Automatic tracking
 
 Whenever you apply or change settings for the Client Center, they’re **tracked** by the system in real-time and are reflected immediately.
 
-## User-level security
+### User-level security
 
-By default, the Client Center uses a system user known as **System-Application-User**. 
-
-This user has rights to apply or change settings only in accordance with the normal functioning of the website. 
-
-For better security, another more restricted user can be used. 
+By default, the Client Center uses a system user known as **System-Application-User**. This user has rights to apply or change settings only in accordance with the normal functioning of the website. For better security, another more restricted user can be used. 
 
 By default, the **System-Application-User** has System rights, but reflects used licenses as well. 
 
 It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
 
-## Error visualization
-
-When you encounter a problem in the platform, a relevant, easy-to-read and interactive **[error message](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#error-exception-codes)** will be shown explaining its nature. 
-
-
 If you've passed all the steps successfully, you may proceed to **[define users](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** who can access the Client Center.
-
-> [!Tip]
-> 
-> All sites can be observed, managed and restarted through the **Instance Manager**.
 
 > [!NOTE]
 > 
