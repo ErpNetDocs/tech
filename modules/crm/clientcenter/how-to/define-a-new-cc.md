@@ -92,6 +92,7 @@ The **System-Application-User** has System rights, but reflects used licenses as
 ---
 #### See next:
 
+- **[Settings and errors](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 - **[Set up a new user account](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** 
 
 > [!NOTE]
