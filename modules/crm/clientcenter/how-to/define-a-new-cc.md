@@ -67,16 +67,17 @@ They must be configured in a **key-value pair JSON format**.
 
 **Example:**
 
-{<br>
-"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": false <br>
+```
+{
+"NewOrderDocumentType": "DocumentType.Id","IsNewOrderEnabled": false
 "IsOrdersEnabled": true 
 }
-
+```
 where 
 
 - *NewOrderDocumentType* takes the valid ID value of a new (sales) order.
 -  _IsNewOrderEnabled_ defines if the module for order creation will be shown or hidden to the users when they log into the system (**true** meaning visible, **false** meaning restricted).
-- *IsOrdersEnabled* determines whether the "Orders" section will be present in the Client center. (**true** meaning visible, **false** meaning restricted).
+- *IsOrdersEnabled* determines whether the "Orders" section will be present in the Client center (**true** meaning visible, **false** meaning restricted).
 
 ![picture](pictures/settings_code.png)
 
