@@ -4961,6 +4961,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/cc_access_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/cc_access_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/click_details.png",
       "output": {
         "resource": {
@@ -4975,6 +4985,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/click_system_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/create_local.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/create_local.png"
         }
       },
       "version": ""
@@ -5065,6 +5085,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/local_user_account.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/new_add_website.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/new_add_website.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/new_cc_fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/new_cc_fields.png"
         }
       },
       "version": ""
@@ -5165,6 +5205,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/step_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/trusted_app.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/trusted_app.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/web_sites_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/web_sites_panel.png"
         }
       },
       "version": ""
@@ -7250,6 +7310,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/sales/customers/pictures/addnew_customer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/sales/customers/pictures/custom_form.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/sales/customers/pictures/custom_form.png"
         }
       },
       "version": ""

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>How to define a website of type Client Center | ERP.net Tech Docs </title>
+      <title>How to set up a Client Center | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="How to define a website of type Client Center | ERP.net Tech Docs ">
+      <meta name="title" content="How to set up a Client Center | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -85,51 +85,86 @@
         </div>
 
         <article data-uid="">
-<h1 id="how-to-define-a-website-of-type-client-center">How to define a website of type Client Center</h1>
+<h1 id="how-to-set-up-a-client-center">How to set up a Client Center</h1>
 
 <p>This article provides a step-by-step guide on creating a Client Center website through ERP.net.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>The information presented is relevant for <strong>ERP.net version 24</strong>. <br>
-As of <strong>ERP.net version 26</strong>, website configuration takes place under <strong>System</strong> -&gt; <strong>Configuration</strong> -&gt; <strong>Web Sites</strong>.</p>
-</div>
-<h3 id="prerequisites">Prerequisites</h3>
-<p>To define a website of <strong>Client Center</strong> type, navigate to the <strong>Web Sites</strong> panel within the <strong>Core</strong> section of the <strong>Setup</strong> module.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You can observe and restart all sites through the <strong>Instance Manager</strong>.</p>
+<p>As of <strong>ERP.net version 26</strong>, website configuration takes place under <strong>System</strong> -&gt; <strong>Configuration</strong> -&gt; <strong>Web Sites</strong>. <br>
+For version 24, you can find the Web Sites panel under <strong>Setup</strong> -&gt; <strong>Core</strong>.</p>
 </div>
+<h2 id="step-by-step-process">Step by step process</h2>
+<p>To set up a website of <strong>Client Center</strong> type, navigate to the <strong>Web Sites</strong> panel within the <strong>Configuration</strong> section of the <strong>System</strong> module.</p>
+<p><img src="pictures/web_sites_panel.png" alt="picture"></p>
+<p>Then, click the <strong>New button</strong> to begin creating a new web site.</p>
+<p><img src="pictures/new_add_website.png" alt="picture"></p>
 <h3 id="website-definition">Website definition</h3>
 <p>Upon accessing the <strong>New Web Site</strong> form, you need to enter relevant data into the provided fields.</p>
-<p><img src="pictures/New_Web_Site_01_04.png" alt="picture"></p>
+<p><img src="pictures/new_cc_fields.png" alt="picture"></p>
 <ol>
 <li><p>The only mandatory field is <strong>Web Site Type</strong>. In this case, it should be set to <strong>Client Center</strong>.</p>
 </li>
-<li><p>Make sure you've selected the appropriate <strong>Enterprise Company</strong>.</p>
+<li><p>Make sure you've selected the appropriate <strong>Enterprise Company</strong>. The currently logged-in one is chosen by default.</p>
 </li>
-<li><p>Additionally, you may change the <strong>Relative Url</strong> of the website, which is set to &quot;cc&quot; by default.</p>
+<li><p>Additionally, you may specify the <strong>Relative Url</strong> of the website, which is set to &quot;cc&quot; by default.</p>
 </li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
+<div class="TIP">
+<h5>Tip</h5>
 <p>You should define a distinct site with a unique <strong>Relative URL</strong> or <strong>Host</strong> for each <strong>Enterprise Company</strong>.</p>
 </div>
 <ol start="4">
 <li><p>It's necessary to create a <strong>trusted application</strong> to ensure the security and integrity of the new website.</p>
-<p>To do so, click on <strong>Run</strong>, select the <strong>Create/Update Trusted Application</strong> option, and confirm with <strong>OK</strong>.</p>
+<p>You can do that from the <strong>Run</strong> button or through the dedicated <strong>Trusted Application</strong> field.</p>
+<p><img src="pictures/trusted_app.png" alt="picture"></p>
 </li>
-</ol>
-<p><img src="pictures/Create_Update_Trusted_app_01_04.png" alt="picture"></p>
-<ol start="5">
-<li><p>Once you complete this step, hit <strong>Save and reload</strong>.</p>
+<li><p>Specify <strong>settings</strong> that will apply to your Client Center website.</p>
+<p>You can do this now or later when <strong>editing</strong> the web site. More information can be found <strong><a href="define-a-new-cc.html#apply-platform-settings">below</a></strong>.</p>
+</li>
+<li><p>Once you are ready, click <strong>Save and reload</strong>.</p>
 <p>The new Client Center website will be created and you can access its internal application details through the form.</p>
+<p><img src="pictures/cc_access_new.png" alt="picture"></p>
 </li>
 </ol>
-<p><img src="pictures/Trusted_app_open_01_04.png" alt="picture"></p>
-<p>If you've passed all the steps successfully, you may proceed to <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html">define users</a></strong> who can access the Client Center.</p>
+<h2 id="apply-platform-settings">Apply platform settings</h2>
+<p>Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications.</p>
+<p>Below are important settings you can apply to the Client Center. An extensive list can be found in the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html">Settings and errors reference</a></strong></p>
+<ul>
+<li><p>The ability to reveal or hide the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html?q=new%20order">New Order module</a></strong>.</p>
+</li>
+<li><p>The ability to define which document types are shown in the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html">Orders</a></strong> and the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html">Invoices</a></strong> modules.</p>
+</li>
+</ul>
+<h3 id="json-format-definition">JSON format definition</h3>
+<p>Client Center settings are defined in the <strong>Settings</strong> field of the Web Site creation form.</p>
+<p>They must be configured in a <strong>key-value pair JSON format</strong>.</p>
+<p><strong>Example:</strong></p>
+<pre><code>{&quot;NewOrderDocumentType&quot;: &quot;DocumentType.Id&quot;,&quot;IsNewOrderEnabled&quot;: false
+&quot;IsOrdersEnabled&quot;: true}
+</code></pre>
+<p><strong>where</strong></p>
+<ul>
+<li><em>NewOrderDocumentType</em> takes the valid ID value of a new (sales) order.</li>
+<li><em>IsNewOrderEnabled</em> defines if the module for order creation will be shown or hidden to the users when they log into the system (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</li>
+<li><em>IsOrdersEnabled</em> determines whether the &quot;Orders&quot; section will be present in the Client center (<strong>true</strong> meaning visible, <strong>false</strong> meaning restricted).</li>
+</ul>
+<p><img src="pictures/settings_code.png" alt="picture"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The screenshots taken for this article are from v24 of the platform.</p>
+<p>Whenever you apply or change settings for the Client Center, you need to <strong>restart</strong> the website through the <strong>Instance Manager</strong>.</p>
+</div>
+<h3 id="user-level-security">User-level security</h3>
+<p>By default, the Client Center uses a system user known as <em>System-Application-User</em>. This user has rights to apply or change settings only in accordance with the normal functioning of the website. For better security, another more restricted user can be used.</p>
+<p>The <strong>System-Application-User</strong> has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.</p>
+<hr>
+<h4 id="see-next">See next:</h4>
+<ul>
+<li><strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/reference.html">Settings and errors</a></strong></li>
+<li><strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html">Set up a new user account</a></strong></li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v26 of the platform.</p>
 </div>
 
 </article>

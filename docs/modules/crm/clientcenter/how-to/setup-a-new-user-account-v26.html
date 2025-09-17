@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>How to define a user of a Client Center (v.26) | ERP.net Tech Docs </title>
+      <title>How to add new users and manage permissions (v.26) | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="How to define a user of a Client Center (v.26) | ERP.net Tech Docs ">
+      <meta name="title" content="How to add new users and manage permissions (v.26) | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../../favicon.ico">
@@ -85,23 +85,28 @@
         </div>
 
         <article data-uid="">
-<h1 id="how-to-define-a-user-of-a-client-center-v26">How to define a user of a Client Center (v.26)</h1>
+<h1 id="how-to-add-new-users-and-manage-permissions-v26">How to add new users and manage permissions (v.26)</h1>
 
 <p>This is a step-by-step guide on defining a new user and configuring their access to a Client Center (CC) <strong>in ERP.net version 26</strong>.</p>
 <p>For details on how to define a user of a Client Center in <strong>ERP.net version 24</strong>, please see <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.html">this guide</a></strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you haven't created a CC website already, please read <strong><a href="define-a-new-cc.html">Define a new Client Center</a></strong>.</p>
+<p>If you haven't created a CC website already, please read <strong><a href="define-a-new-cc.html">Set up a Client Center</a></strong>. <br>
+To learn how to apply global platform settings, please read <strong><a href="apply-platform-settings.html">Apply platform settings</a></strong>.</p>
 </div>
 <h2 id="local-account-creation">Local account creation</h2>
-<p>Before a user can be granted access to a Client Center by an Administrator, they must first create a <strong>local account</strong>.</p>
-<p>Accessing the CC log-in page allows them to open <strong>local account creation form</strong>. Required fields are <strong>Е-mail</strong>, <strong>Full Name</strong>, and <strong>Password</strong>.</p>
+<p>Before a user can get access to a Client Center through <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access">external access role assignment</a></strong>, they must first create a <strong>local account</strong>.</p>
+<p>Accessing the CC log-in page allows them to access the <strong>local account creation form</strong>.</p>
+<p><img src="pictures/create_local.png" alt="picture"></p>
+<p>Required fields are <strong>Е-mail</strong>, <strong>Full Name</strong>, and <strong>Password</strong>.</p>
 <p><img src="pictures/local_user_account.png" alt="picture"></p>
 <h2 id="adding-local-user-account-in-cc">Adding local user account in CC</h2>
-<p>Once a user has created their account, an Administrator of a Client Center must add them in the respective desired environment through the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user">User Management</a></strong> page.</p>
-<p>Administrators are assigned the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access">external access role</a></strong> <strong>Admin</strong>, which guarantees them full reach of all customer data, including the ability to manage users.</p>
-<p>Omission of this step will result in a critical lack-of-access <strong>error message</strong> for the new user when attempting to log in.</p>
-<p><img src="pictures/no_access.png" alt="picture"></p>
+<p>Once a user has created their local account, another user with an <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access">external access role</a></strong> <strong>Admin</strong> or <strong>Owner</strong> in а Client Center can add them there through the <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html#add-user">User Management</a></strong> page. The Admin and Owner roles provide full reach of all customer data, including the ability to add, remove, and manage users for that customer.</p>
+<p>Omission of this step will result in a <strong>critical lack-of-access</strong> <strong>error message</strong> for the new user when attempting to log in.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>By default, the ERP.net Administrator gets the <strong>Owner</strong> role in the Client Center they create, which allows them to assign any role to any external or internal user of their choice. A user with the Admin role can in turn can start adding other users with varying levels of access into that same Client Center through the <strong>User Management</strong> page.</p>
+</div>
 <h3 id="step-by-step-process">Step-by-step process</h3>
 <ol>
 <li><p>If using <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#multi-customer-login">multiple customers</a></strong>, make sure you are logged into the <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/index.html">customer</a></strong> whose data you wish to share with the user.</p>
@@ -124,8 +129,7 @@
 </ol>
 <div class="TIP">
 <h5>Tip</h5>
-<p>To expand a user's access to more of your customers, <strong>switch</strong> to another customer profile and <strong>repeat</strong> all steps described above. <br>
-If you've passed all the steps successfully, you may proceed to <strong><a href="apply-platform-settings.html">apply global platform settings</a></strong>.</p>
+<p>To expand a user's access to more of your customers, <strong>switch</strong> to another customer and <strong>repeat</strong> all steps described above.</p>
 </div>
 <div class="WARNING">
 <h5>Warning</h5>
