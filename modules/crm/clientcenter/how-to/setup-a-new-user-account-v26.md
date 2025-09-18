@@ -5,9 +5,7 @@ This is a step-by-step guide on defining a new user and configuring their access
 For details on how to define a user of a Client Center in **@@name version 24**, please see **[this guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v24.html)**.
 
 > [!NOTE]
-> If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**. <br>
-> To learn how to apply global platform settings, please read **[Apply platform settings](apply-platform-settings.md)**.
-
+> If you haven't created a CC website already, please read **[Set up a Client Center](define-a-new-cc.md)**. 
 ## Local account creation
 
 Before a user can get access to a Client Center through **[external access role assignment](https://docs.erp.net/tech/modules/crm/clientcenter/index.html?q=client%20center#role-based-access)**, they must first create a **local account**. 
