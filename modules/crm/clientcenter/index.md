@@ -84,7 +84,7 @@ Each subsequent role in the table below also includes the rights granted by the 
 > [!NOTE]
 > 
 > Any registered user can be added to a Client Center by another user with external access role **Admin** and above. <br>
-> To see how users are defined for a Client Center, please read the following **[step-by-step guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**
+> To see how users are defined for a Client Center, please read the following **[step-by-step guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 ## Multi-customer login
 
@@ -115,15 +115,21 @@ This choice will be **stored** as a cookie in the browser, allowing for future s
 
 If the user has access only to a single customer, this pop-up will not appear and the login will complete at once.
 
-## Features
+> [!IMPORTANT]
+>
+> Apart from being able to create orders when assigned the right role, users can perform a couple of additional actions in the Client Center: <br>
+> - **Customize** a page's layout with **[Grid Control](grid-control.md)** capabilities <br>
+> - **Cancel** already issued sales orders before they're finalized. <br>
+> - **Download** orders and invoices as PDF files. 
 
-Users can perform a couple of actions from within the Client Center:
+## Explore the Client Center
 
-- Customize a page's layout with **[Grid Control](grid-control.md)** capabilities
-
-- **Cancel** already issued sales orders before they're finalized.
-
-- **Download** orders and invoices as PDFs for preview outside of the Client Center.
+* **[Orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/index.html)**
+* **[Billing](https://docs.erp.net/tech/modules/crm/clientcenter/billing/index.html)**
+* **[User Management](https://docs.erp.net/tech/modules/crm/clientcenter/user-management/index.html)**
+* **[Settings and errors](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
+* **[Grid control](https://docs.erp.net/tech/modules/crm/clientcenter/grid-control.html)**
+* **[Step-by-step guides](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/index.html)**
 
 > [!NOTE]
 > 
