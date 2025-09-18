@@ -1,12 +1,12 @@
 - name: How To
   href: index.md
-- name: Define a Client Center
+- name: Set up a Client Center
   href: define-a-new-cc.md
-- name: Define a user
+- name: Add new users and manage permissions
   href: setup-a-new-user-account-v26.md
-- name: Create new order
-  href: create-new-order.md
-- name: Download attachments from an invoice
+- name: Download attached files
   href: download-attachments.md
+- name: Create new order (v.24)
+  href: create-new-order.md
 - name: Define a user (v.24)
   href: setup-a-new-user-account-v24.md
