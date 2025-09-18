@@ -1,6 +1,6 @@
 # External Access
 
-The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**. It is based on the **[Crm_Customer_External_Access table](https://docs.erp.net/model/tables/Crm_Customer_External_Access.html?q=Crm_Customer_External_Access)** and offers a way of setting up new users and defining their access for different customers in the Client Center.
+The **[Crm_Customer_External_Access](https://docs.erp.net/model/tables/Crm_Customer_External_Access.html?q=Crm_Customer_External_Access)** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**. It offers a way of setting up new users and defining their access for different customers in the Client Center.
 
 ![pictures](pictures/customers_external_access.png)
 
