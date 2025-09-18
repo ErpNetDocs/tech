@@ -4,7 +4,7 @@ A Customer is considered an external party that purchases goods or services from
 
 In ERP.net, the **Customers table** displays all of your Customer records in a structured format. 
 
-![pictures](pictures/Customers_panel.png)
+![pictures](pictures/customers_panel.png)
 
 ### Details
 
