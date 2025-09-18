@@ -4611,16 +4611,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "modules/crm/clientcenter/how-to/apply-platform-settings.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/crm/clientcenter/how-to/apply-platform-settings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "modules/crm/clientcenter/how-to/create-new-order.md",
       "output": {
         ".html": {
