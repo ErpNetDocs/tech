@@ -52,15 +52,15 @@ Once you access the **New Customer** window, you can start adding all the necess
 
 Most of the fields are optional. However, the more you fill out now, the more will **automatically** be added in the sales order creation form where this Customer is selected.
 
-![Pictures](pictures/customer_New_window_27_02.png)
+![Pictures](pictures/Customer_New_window_27_02.png)
  
 The only mandatory field is **Party**. 
 
-![Pictures](pictures/customer_party_27_02.png)
+![Pictures](pictures/Customer_party_27_02.png)
 
 Once you've filled out all the desired fields, click the **Save and reload** button to complete the creation of the new Customer.
 
-![Pictures](pictures/customer_Save_and_reload_27_02.png)
+![Pictures](pictures/Customer_Save_and_reload_27_02.png)
  
 #### Most common fields 
 
