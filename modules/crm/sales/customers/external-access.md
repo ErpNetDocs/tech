@@ -1,8 +1,6 @@
 # External Access
 
-The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**.
-
-It also offers a way of setting up new users and defining their access for different customers in the Client Center.
+The **External Access** table lists all users who have access to specific **[customers](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** in the **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)**. It is based on the **[Crm_Customer_External_Access table](https://docs.erp.net/model/tables/Crm_Customer_External_Access.html?q=Crm_Customer_External_Access)** and offers a way of setting up new users and defining their access for different customers in the Client Center.
 
 ![pictures](pictures/customers_external_access.png)
 
@@ -54,11 +52,7 @@ To do so:
 
    ![pictures](pictures/pen_customer.png)
 
-4. To add a new user for the customer, click the **+ button** and fill out the respective **User**, **Role** and **Days Back Access** fields.
-
-    - **User** - The user account to whom the access is granted. 
-    - **Role** - The **[external access role](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#role-based-access)** of the user, which defines the level of granted access.
-    - **Days Back Access** - The maximum number of past days the user is allowed to view data (e.g. sales order records).
+4. To add a new user for the customer, click the **+ button** and fill out the respective **[User, Role and Days Back Access fields](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#interface)**.
 
     ![pictures](pictures/plus_user.png)
 
