@@ -35,7 +35,7 @@ It is comprised of two pages:
 
 > [!NOTE]
 > 
-> The New Order page is **disabled** by default for security reasons. <br><br>
+> The New Order page offers a built-in interactive module for creating new orders. It is **disabled** by default for security reasons. <br>
 > For more information on how to enable it, please refer to the **[Settings and error reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html#isneworderenabled-setting)** manual.
 
 ### Billing
@@ -117,7 +117,7 @@ If the user has access only to a single customer, this pop-up will not appear an
 
 > [!IMPORTANT]
 >
-> Apart from being able to create orders when assigned the right role, users can perform a couple of additional actions in the Client Center: <br>
+> Users can perform a couple of handy actions in the Client Center: <br>
 > - **Customize** a page's layout with **[Grid Control](grid-control.md)** capabilities <br>
 > - **Cancel** already issued sales orders before they're finalized. <br>
 > - **Download** orders and invoices as PDF files. 
