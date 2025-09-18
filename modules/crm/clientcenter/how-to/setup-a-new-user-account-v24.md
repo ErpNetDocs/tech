@@ -1,4 +1,4 @@
-# How to define a user of a Client Center (v.24)
+# How to define a user of a Client Center
 
 This is a step-by-step guide on defining a new user of Client Center (CC) **in @@name version 24**.
 
