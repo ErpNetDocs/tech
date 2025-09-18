@@ -53,11 +53,13 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications. 
 
-Below are important settings you can apply to the Client Center. An extensive list can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
+Below are important settings you can apply to the Client Center: 
 
 - The ability to reveal or hide the **[New Order module](https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html?q=new%20order)**.
 
 - The ability to define which document types are shown in the **[Orders](https://docs.erp.net/tech/modules/crm/clientcenter/orders/orders.html)** and the **[Invoices](https://docs.erp.net/tech/modules/crm/clientcenter/billing/invoices.html)** modules.
+
+An extensive list of all settings can be found in the **[Settings and errors reference](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 
 ### JSON format definition
 
@@ -90,7 +92,7 @@ By default, the Client Center uses a system user known as *System-Application-Us
 The **System-Application-User** has System rights, but reflects used licenses as well. It’s automatically assigned whenever a new website is created and whenever a trusted application is added through the UI.
 
 ---
-#### See next:
+### See next:
 
 - **[Settings and errors](https://docs.erp.net/tech/modules/crm/clientcenter/reference.html)**
 - **[Set up a new user account](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)** 
