@@ -2,17 +2,17 @@
 uid: Scalar and Key Fields
 ---
 
-# Scalar-value and Key fields
+# Scalar and Key fields
 
 Understanding how fields are classified in documents is critical for managing data integrity and ensuring accurate calculations in complex systems. Here we explore the roles of scalar-value, key, and non-participating fields in the discrepancy system, highlighting their impact on document creation, corrections, and recalculations. By clearly defining these field types, businesses can streamline processes and maintain consistency across interconnected documents.
 
-# Scalar-value Fields
+# Scalar Fields
 Scalar fields in documents represent the quantitative effects of those documents. These fields typically include quantities — such as counts of products, materials, or people — and monetary values. Theys are the foundation of the <b>discrepancy system</b>, providing the basic numerical data on which calculations are performed.
 For example, consider a Store order for 100 units of a product. When a corresponding store transaction document is created, it will attempt to account for the entire 100 units. However, if a sub-document has already been generated for 42 units, the discrepancies system calculates the remaining quantity by subtracting the 42 units from the original 100, yielding a difference of 58 units. In this case, the system creates a new document for the remaining 58 units. 
 
-Scalar-value fields also play a crucial role in [<b>Adjustments</b>](adjustments.md). When an adjustment is created, its scalar-value field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. 
+Scalar-value fields also play a crucial role in [<b>Adjustments</b>](adjustments.md). When an adjustment is created, its scalar field values are added to the corresponding fields in the original document. This approach allows the correction document to effectively represent the difference between the released document’s current values and the adjusted values. 
 
-## Determining Scalar-value Fields
+## Determining Scalar fields
 Most fields that represent quantities or monetary amounts are classified as scalar. If a field represents such data, it is almost always considered scalar. However, there are notable exceptions where fields, although representing quantities or amounts, are derived from other scalar fields or external calculations and are therefore not declared scalar.
 
 For example:
@@ -21,13 +21,13 @@ For example:
 
 •	Cost fields in Store transactions: system cost fields, such as cost in base currency, warehouse currency, product currency, and document currency, depend on the cost source. If the cost source is “document,” these fields are derived from the line amount after applying currency conversions. If the cost source is “warehouse,” the values depend solely on line quantities and current warehouse costs, which are external to the document. In both cases, these fields are systematically recalculated rather than declared scalar.
 
-# Key Fields
+# Key fields
 Key fields are identifiers that distinguish parts of a document or groups of documents within a larger set. They serve as natural, analytical, or business keys, allowing the system to recognize distinct captions, lines, or other business components. Key fields are integral to the discrepancy system, as they enable the segmentation of documents into components and determine the extent to which each part has been fulfilled.
 
 Returning to the example of a Store order for 100 units, where 42 units have already been received: scalar fields quantify the remaining 58 units, while key fields identify which warehouse, product, or other analytical categories are associated with these quantities. 
 When released documents are updated through adjustment documents, key fields are protected against changes. This ensures that the document’s business logic and structure remain consistent, preventing conflicts that could arise from altering key identifiers.
 
-## Defining Key Fields
+## Defining Key fields
 A field is classified as key if it is essential for recognizing distinct business activities or if the field’s value must remain constant to ensure the integrity of the document’s purpose. Common key fields include Customer, Store, and product fields.
 
 For example:
