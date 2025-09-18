@@ -52,7 +52,7 @@ To do so:
 
    ![pictures](pictures/pen_customer.png)
 
-4. To add a new user for the customer, click the **+ button** and fill out the respective **[User, Role and Days Back Access fields](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#interface)**.
+4. To add a new user for the customer, click the **+ button** and fill out the respective **[fields](https://docs.erp.net/tech/modules/crm/sales/customers/external-access.html#interface)**.
 
     ![pictures](pictures/plus_user.png)
 
