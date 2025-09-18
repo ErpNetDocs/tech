@@ -38,13 +38,13 @@ There are **two** ways to create a Customer,  both ensuring consistency in the f
 
    You can proceed with the creation process by filling out the rest of the details.
 
-![Pictures](pictures/customer_Create_section_27_02.png)
+![Pictures](pictures/Customer_Create_section_27_02.png)
  
 2. Use the **New** button found above the **Customers** list. Upon clicking this button, you can select a **Customer type** from a dropdown menu.
   
    Then, you will be taken to the standard Customer creation form and proceed to add the necessary details.
 
-![Pictures](pictures/customer_create_new_button_27_02.png)
+![Pictures](pictures/Customer_create_new_button_27_02.png)
 
 ### New Customer details
  
