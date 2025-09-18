@@ -54,8 +54,7 @@ Omission of this step will result in a **critical lack-of-access** **error messa
 
    ![picture](pictures/new_user_new_center.png)
 
-
-> [!TIP]
+> [!IMPORTANT]
 >
 > To expand a user's access to more of your customers, **switch** to another customer and **repeat** all steps described above.
 
