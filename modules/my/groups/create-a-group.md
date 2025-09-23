@@ -6,7 +6,7 @@
 
 ---
 
-Here, you will find a guide on how to create a new group in @@name. <br><br>
+Here, you will find a guide on how to create a new group in @@name.
 
 1. Click the icon at the top right corner of the group list. 
 
