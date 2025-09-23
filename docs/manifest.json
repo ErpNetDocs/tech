@@ -17642,10 +17642,119 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/my/calendar/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/calendar/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/my/calendar/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/calendar/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/calendar/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/my/dashboard.md",
       "output": {
         ".html": {
           "relative_path": "modules/my/dashboard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/my/dashboard/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/dashboard/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/my/dashboard/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/dashboard/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/dashboard/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/my/favorites/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/favorites/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/favorites/pictures/Favorites_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/favorites/pictures/Favorites_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/favorites/pictures/Favorites_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/favorites/pictures/Favorites_edit.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/favorites/pictures/Favorites_remove_x.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/favorites/pictures/Favorites_remove_x.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/favorites/pictures/Favorites_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/favorites/pictures/Favorites_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/my/favorites/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/favorites/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/favorites/toc.json"
         }
       },
       "version": ""
