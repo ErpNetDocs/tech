@@ -6,7 +6,9 @@
 
 ---
 
-Here, you will find a guide on how to create a new group in @@name.
+Here, you will find a guide on how to create a new **[group](index.md)** in @@name.
+
+#### Step-by-step breakdown
 
 1. Click the icon at the top right corner of the group list. 
 
