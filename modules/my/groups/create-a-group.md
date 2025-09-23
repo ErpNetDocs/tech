@@ -1,5 +1,11 @@
 # Create a group 
 
+> [!IMPORTANT]
+> 
+> **The information presented in this article is relevant for ERP.net v.24** **and may be incomplete or outdated**.
+
+---
+
 Here, you will find a guide on how to create a new group in @@name. <br><br>
 
 1. Click the icon at the top right corner of the group list. 
