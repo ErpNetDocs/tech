@@ -1,8 +1,11 @@
 - name: Overview
   href: index.md
+- name: Dashboard
+  href: dashboard/toc.yml
+  topicHref: dashboard/index.md
 - name: Calendar
-  href: calendar.md
+  href: calendar/toc.yml
+  topicHref: calendar/index.md
 - name: Groups
   href: groups/toc.yml
   topicHref: groups/index.md
-  
