@@ -9,3 +9,6 @@
 - name: Groups
   href: groups/toc.yml
   topicHref: groups/index.md
+- name: Favorites
+  href: favorites/toc.yml
+  topicHref: favorites/index.md
