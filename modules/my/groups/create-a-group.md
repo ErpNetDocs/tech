@@ -23,3 +23,7 @@ Here, you will find a guide on how to create a new group in @@name.
 4. Compose the first message for the group and send it. This action will complete the creation process.
 
     ![picture](pictures/Groups_Create_finish_01_05.png) 
+
+> [!NOTE]
+> 
+> The screenshot(s) taken for this article are from v.24 of the platform.
