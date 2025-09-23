@@ -4,6 +4,8 @@ The My Favorites module allows users to build a personalized list of frequently 
 
 Favorites are context-aware and can include both top-level entities (e.g., Customers or Campaigns) as well as individual records (e.g., specific companies, opportunities, or documents).
 
+![pictures](pictures/Favorites_view.png)
+
 ## Key features
 
 ### Centralized access
@@ -39,11 +41,17 @@ To add a new item to your favorites:
 
 3. The item will now appear under the **Favorites** section of your My menu.
 
+![pictures](pictures/Favorites_add.png)
+
 ## Remove a favorite
 
 To remove any of your existing favorites, click the **Menu** button (three vertical dots) at the top-right corner and select **Edit**.
 
+![pictures](pictures/Favorites_edit.png)
+
 This toggles **edit mode** and displays controls for each favorite item. Click the **cross button** of a favorite to remove it from the list.
+
+![pictures](pictures/Favorites_remove_x.png)
 
 > [!NOTE]
 > 
