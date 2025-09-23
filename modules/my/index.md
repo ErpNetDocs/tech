@@ -9,12 +9,12 @@ It consists of several applications that are simultaneously independent, interco
 In the **My** module, you can find the following applications:
 
 * **[Groups](groups/index.md)**
-* **[Dashboard](dashboard.md)**
+* **[Dashboard](dashboard/index.md)**
 * **Notifications**
-* **[Calendar](calendar.md)**
+* **[Calendar](calendar/index.md)**
 * **Timeline**
 * **Tiles**
-* **Favorites**
+* **[Favorites](favorites/index.md)**
 * **To Do**
 * **AI Assistant**
 * **Documents**
