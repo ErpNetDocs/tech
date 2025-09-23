@@ -122,7 +122,7 @@ When done, you need to once again click **Save and reload**. Your changes will b
 > **The Calendar is not tied to one specific location**. <br>
 > Apart from being able to interact with it in a **[group-specific context](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar)**, you can also integrate it as a panel in the **Dashboard**.
 
-![picture](pictures/calendar_dashboard.png)
+![picture](../pictures/calendar_dashboard.png)
 
 > [!Note]
 > The screenshots taken for this article are from v.26 of the platform.
