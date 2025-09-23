@@ -20,3 +20,7 @@ In the **My** module, you can find the following applications:
 * **Documents**
 * **Folders**
 * **Search** 
+
+> [!NOTE]
+> 
+> The screenshot(s) taken for this article are from v.26 of the platform.
