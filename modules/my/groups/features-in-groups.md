@@ -14,6 +14,9 @@ It offers standard industry features such as message previewing and sending, rea
  
 ## Calendar 
 
+> [!IMPORTANT]
+> **The information and screenshots presented in this chapter are relevant for ERP.net v.26.** 
+
 The Calendar tab enables authorized members to create and view a range of events and meetings visible to the entire group. 
 
 Any group activities you create or participate in will also be reflected in your **[Calendar](https://docs.erp.net/tech/modules/my/calendar.html)**. 
@@ -157,3 +160,7 @@ To modify a member's role, click on the settings icon located on the right side 
 Once you’ve done that click the **Remove participant** button.
 
 ![picture](pictures/Groups_Members_remove_01_05.png)
+
+> [!NOTE]
+> 
+> The screenshot(s) taken for this article are from v.24 and v.26 of the platform.
