@@ -1,5 +1,11 @@
 # Groups
 
+> [!IMPORTANT]
+> 
+> **The information presented in this article is relevant for ERP.net v.24** **and may be incomplete or outdated**.
+
+---
+
 Groups, found within the **My** section, serve as a convenient platform for seamless communication, document sharing, task scheduling, and assignment among you and your colleagues.
 
 Admins within the platform create groups as needed, facilitating collaboration among individuals within the same company.
