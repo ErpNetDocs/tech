@@ -36,7 +36,7 @@ Each subsequent role in the list below also includes the rights granted by the p
 
 ## Grant and edit access
 
-The Customers - External Access navigator allows you to define new users, as well as modify and remove existing ones.
+The Customers - External Access table allows you to define new users, as well as modify and remove existing ones.
 
 To do so:
 
@@ -68,7 +68,7 @@ To do so:
 
 > [!TIP]
 > 
-> The Client Center also allows you to add users to the External Access table and manage their access level. <br> The process is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
+> The Client Center also allows you to add users to the Customers - External Access table and manage their access level. <br> The process is described **[in the following guide](https://docs.erp.net/tech/modules/crm/clientcenter/how-to/setup-a-new-user-account-v26.html)**.
 
 > [!NOTE]
 > 
