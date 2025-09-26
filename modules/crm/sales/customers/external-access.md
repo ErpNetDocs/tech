@@ -6,7 +6,7 @@ The **Customers - External Access** navigator lists all users who have access to
 
 ### Interface
 
-The table consists of the following columns:
+The navigator consists of the following columns:
 
 - **Customer** - The customer whose data is accessible to the user.
 - **User** - The user account to whom the access is granted.
@@ -36,7 +36,7 @@ Each subsequent role in the list below also includes the rights granted by the p
 
 ## Grant and edit access
 
-The External Access table allows you to define new users, as well as modify and remove existing ones.
+The Customers - External Access navigator allows you to define new users, as well as modify and remove existing ones.
 
 To do so:
 
