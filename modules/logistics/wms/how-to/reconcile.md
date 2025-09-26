@@ -42,4 +42,4 @@ This will check which Warehouse Transactions with [Count]( /how-it-works/task-ty
 
 ![Picture](pictures/reconciliation-lines.png)
 
-**Review** and edit (if needed) the results i.e. the created renciliation order lines. Once the review is done, you can **release** the document which will generate **Store Transactions** for the differences and will update the Inventory Availability.
+**Review** and edit (if needed) the results i.e. the created  reconciliation order lines. Once the review is done, you can **release** the document which will generate **Store Transactions** for the differences and will update the Inventory Availability.
