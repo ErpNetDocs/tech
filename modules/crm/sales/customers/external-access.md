@@ -64,7 +64,7 @@ To do so:
 
     ![pictures](pictures/save_close.png)
 
-   To enable **[multi-customer login in the Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the same user, repeat all steps above for another customer of your choice.
+   To enable **[multi-customer login in the Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html#multi-customer-login)** for the same user, repeat all steps above for another Customer of your choice.
 
 > [!TIP]
 > 
