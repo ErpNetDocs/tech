@@ -37,9 +37,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 5. Once you are ready, click **Save and reload**.
    
-   The new Client Center website will be created and you can access its internal application details through the form.
-
-   ![picture](pictures/cc_access_new.png)
+   The new Client Center website will be created and you can access it using the provided Relative Url.
 
 ## Apply platform settings
 
