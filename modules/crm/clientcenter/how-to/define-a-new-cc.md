@@ -23,27 +23,19 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ![picture](pictures/new_cc_fields.png)
  
-1. The only mandatory field is **Web Site Type**. In this case, it should be set to **Client Center**. 
-
-2. Make sure you've selected the appropriate **Enterprise Company**. The currently logged-in one is chosen by default.
-
-3. Additionally, you may specify the **Relative Url** of the website, which is set to "cc" by default. 
+1. Select the appropriate **Enterprise Company** for which the Client Center is created. The currently logged-in one is chosen by default.
+2. The only mandatory field is **Web Site Type**. In this case, it should be set to **Client Center**.
+3. Additionally, specify the **Relative Url** of the website, which is set to "cc" by default. 
 
 > [!Tip]
 > 
 > You should define a distinct site with a unique **Relative URL** or **Host** for each **Enterprise Company**.
 
-4. It's necessary to create a **trusted application** to ensure the security and integrity of the new website.
-   
-   You can do that from the **Run** button or through the dedicated **Trusted Application** field. 
-
-   ![picture](pictures/trusted_app.png)
-
-5. Specify **settings** that will apply to your Client Center website.
+4. Specify **settings** that will apply to your Client Center website.
 
    You can do this now or later when **editing** the web site. More information can be found **[below](define-a-new-cc.md#apply-platform-settings)**.
 
-6. Once you are ready, click **Save and reload**.
+5. Once you are ready, click **Save and reload**.
    
    The new Client Center website will be created and you can access its internal application details through the form.
 
