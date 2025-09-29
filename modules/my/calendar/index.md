@@ -12,9 +12,13 @@ It also sums up group activities from the **[social groups](https://docs.erp.net
 
 The Calendar has several **views** allowing you to narrow down your activities to the ones you have for the current day, week, or month(s), or even see them spread across the year's quarters.
 
-You can change your view at any time by clicking the respective dropdown menu and selecting one of the other views.
+You can **change** your view at any time by clicking the respective **dropdown menu** and selecting one of the other views.
 
 ![picture](../pictures/new_calendar_view.png)
+
+Alternatively, you can do so from the **three-dot menu** at the upper-right part of the page.
+
+![picture](../pictures/calendar_view_modes.png)
 
 #### Month
 
@@ -40,29 +44,37 @@ It allows you to track activities over longer periods of time and in a linear fo
 
 There are several timeline modes available:
 
-![picture](pictures/timeline_options.png)
+* **Timeline – by Day** – Displays all activities for a single day, as well as the activities for the next 11 days.
 
-* **Timeline – Day** – Displays all activities for a single day, as well as the activities for the next 11 days.
-* **Timeline – Week** – Shows all activities for the current as well as the next six weeks. Each week is labeled with its corresponding **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)**.
-* **Timeline – Month** – Lists all activities for the current as well as the next six months. 
-* **Timeline – Quarter** – Presents all activities for the last three months (current quarter), as well as the next three quarters.
+  ![picture](pictures/timelineday.png)
 
-![picture](pictures/timeline_week.png)
+* **Timeline – by Week** – Shows all activities for the current as well as the next six weeks. Each week is labeled with its **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)**.
 
-> [!Tip]
-> You can also change the Calendar display view from the **three-dot menu** at the upper-right part of the page.
+  ![picture](pictures/timelineweek.png)
+  
+* **Timeline – by Month** – Lists all activities for the current as well as the next six months.
 
-![picture](../pictures/calendar_view_modes.png)
+  ![picture](pictures/timelinemonth.png)
+  
+* **Timeline – by Quarter** – Presents all activities for the last three months (current quarter), as well as the next three quarters.
+
+  ![picture](pictures/timelinequarter.png)
 
 ### Navigation
 
-Regardless of the view mode, using either the **left (previous)** or **right (next)** arrows, you can navigate across quarters, months, weeks and days. 
-
-This allows you to revisit past activities or preview incoming ones.
+Regardless of the Calendar view, using either the **left (previous)** or **right (next)** arrows in the navigation bar, you can navigate across quarters, months, weeks and days. This allows you to revisit past activities or preview incoming ones.
 
 ![picture](../pictures/calendar_switch_monthss.png)
 
-Depending on your current view, you can navigate to a **specific week or month** from the blue-colored menu.
+The arrows within the Calendar itself work differently as they move forward or go back by a single day, week, month, or quarter.
+
+For example, pressing the **right arrow** advances one business week in **Timeline - by Week**, while the **left arrow** takes you back one week.
+
+![picture](pictures/timelinearrows.png)
+
+### Date picker
+
+You can navigate to a **specific week or month** from the blue-colored menu.
 
 Use the **date picker** to select any given date, month, or year. 
 
