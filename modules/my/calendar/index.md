@@ -66,9 +66,9 @@ Regardless of the Calendar view, using either the **left (previous)** or **right
 
 ![picture](../pictures/calendar_switch_monthss.png)
 
-The arrows within the Calendar itself work differently as they move forward or go back by a single day in Month view and by a single period in Timeline view.
+The arrows within the Calendar itself move forward or go back **by a single day** in Month view and **by a single period** in Timeline view.
 
-For example, pressing the **right arrow** advances one business week in **Timeline - by Week**, while the **left arrow** takes you back one week.
+For example, pressing the **right arrow** advances one business week in **Timeline - by Week**, shifting all the weeks following it by one.
 
 ![picture](pictures/timelinearrows.png)
 
