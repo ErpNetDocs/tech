@@ -17651,6 +17651,146 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/calendar_month.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/calendar_month.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/calendar_week.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/calendar_week.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_arrow.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_arrow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_day.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_day.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_options.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_quarter.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_quarter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_week.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_week.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelinearrows.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelinearrows.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelineday.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelineday.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelinemonth.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelinemonth.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelineoptions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelineoptions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelinequarter.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelinequarter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timelineweek.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timelineweek.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/my/calendar/toc.yml",
       "output": {

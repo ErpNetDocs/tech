@@ -93,22 +93,47 @@
 <h2 id="interface">Interface</h2>
 <h3 id="views">Views</h3>
 <p>The Calendar has several <strong>views</strong> allowing you to narrow down your activities to the ones you have for the current day, week, or month(s), or even see them spread across the year's quarters.</p>
-<p>By default, the <strong>Month</strong> view is applied, showing the days of the current month and the activities in it.</p>
-<p>You can change this at any time by clicking the respective dropdown menu and selecting one of the other views.</p>
+<p>You can <strong>change</strong> your view at any time by clicking the respective <strong>dropdown menu</strong> and selecting one of the other views.</p>
 <p><img src="../pictures/new_calendar_view.png" alt="picture"></p>
+<p>Alternatively, you can do so from the <strong>three-dot menu</strong> at the upper-right part of the page.</p>
+<p><img src="../pictures/calendar_view_modes.png" alt="picture"></p>
+<h4 id="month">Month</h4>
+<p>By default, the <strong>Month</strong> view is applied, showing the days of the current month in squares fitting the activities in each.</p>
+<p>Each week is labeled with its corresponding <strong><a href="https://docs.erp.net/tech/modules/my/calendar.html#business-week-number">Business Week (BW) number</a></strong>.</p>
+<p><img src="pictures/calendar_month.png" alt="picture"></p>
+<h4 id="workweek">Workweek</h4>
+<p>The <strong>Workweek</strong> view lists all activities for all days of the current week.</p>
+<p>Each week is labeled with its corresponding <strong><a href="https://docs.erp.net/tech/modules/my/calendar.html#business-week-number">Business Week (BW) number</a></strong>.</p>
+<p><img src="pictures/calendar_week.png" alt="picture"></p>
+<h4 id="timeline">Timeline</h4>
+<p>The <strong>Timeline</strong> view focuses on continuity across multiple time spans.</p>
+<p>It allows you to track activities over longer periods of time and in a linear format, offering visibility of overlapping or consecutive activities.</p>
+<p>There are several timeline modes available:</p>
+<ul>
+<li><p><strong>Timeline – by Day</strong> – Displays all activities for a single day, as well as the activities for the next 11 days.</p>
+<p><img src="pictures/timelineday.png" alt="picture"></p>
+</li>
+<li><p><strong>Timeline – by Week</strong> – Shows all activities for the current as well as the next six weeks. Each week is labeled with its <strong><a href="https://docs.erp.net/tech/modules/my/calendar.html#business-week-number">BW number</a></strong>.</p>
+<p><img src="pictures/timelineweek.png" alt="picture"></p>
+</li>
+<li><p><strong>Timeline – by Month</strong> – Lists all activities for the current as well as the next six months.</p>
+<p><img src="pictures/timelinemonth.png" alt="picture"></p>
+</li>
+<li><p><strong>Timeline – by Quarter</strong> – Presents all activities for the last three months (current quarter), as well as the next three quarters.</p>
+<p><img src="pictures/timelinequarter.png" alt="picture"></p>
+</li>
+</ul>
 <h3 id="navigation">Navigation</h3>
-<p>Using either the <strong>left (previous)</strong> or <strong>right (next)</strong> arrows, you can navigate across quarters, months, weeks and days.</p>
-<p>This allows you to revisit past activities or preview incoming ones.</p>
+<p>Regardless of the Calendar view, using either the <strong>left (previous)</strong> or <strong>right (next)</strong> arrows in the navigation bar, you can navigate across quarters, months, weeks and days. This allows you to revisit past activities or preview incoming ones.</p>
 <p><img src="../pictures/calendar_switch_monthss.png" alt="picture"></p>
-<p>Depending on your current view, you can navigate to a <strong>specific week or month</strong> from the blue-colored menu.</p>
+<p>The arrows within the Calendar itself move forward or go back <strong>by a single day</strong> in Month view and <strong>by a single period</strong> in Timeline view.</p>
+<p>For example, pressing the <strong>right arrow</strong> advances one business week in <strong>Timeline - by Week</strong>, shifting all the weeks following it by one.</p>
+<p><img src="pictures/timelinearrows.png" alt="picture"></p>
+<h3 id="date-picker">Date picker</h3>
+<p>You can navigate to a <strong>specific week or month</strong> from the blue-colored menu.</p>
 <p>Use the <strong>date picker</strong> to select any given date, month, or year.</p>
 <p>If you've navigated too far away and wish to quickly go back to the present date, simply click <strong>Today</strong>.</p>
 <p><img src="../pictures/calendar_mini.png" alt="picture"></p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can also change the Calendar display view from the <strong>three-dot menu</strong> at the upper-right part of the page.</p>
-</div>
-<p><img src="../pictures/calendar_view_modes.png" alt="picture"></p>
 <h2 id="business-week-number">Business Week number</h2>
 <p>The Calendar follows the ERP.net <strong>Business Week (BW) standard</strong> for numbering weeks in a calendar year. This standard is based on <strong>ISO 8601</strong>, but it applies specific improvements to:</p>
 <ul>
