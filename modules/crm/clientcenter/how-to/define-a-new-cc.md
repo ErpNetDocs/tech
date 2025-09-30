@@ -29,7 +29,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 > [!Tip]
 > 
-> You should define a distinct site with a unique **Relative URL** or **Host** for each **Enterprise Company**.
+> You should define a distinct site with a unique **Relative URL** for each **Enterprise Company**.
 
 4. Specify **settings** that will apply to your Client Center website.
 
