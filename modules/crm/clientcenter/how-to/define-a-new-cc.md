@@ -41,6 +41,9 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
    ![picture](pictures/cc_created.png)
 
+> [!NOTE]
+> As of @@name version 26, the **Trusted Application** field no longer needs to be configured when creating a website. By default, it can be left empty (NULL), and the site will run under the SYSTEM user without consuming a license for its background service session. This behavior is now the recommended configuration.
+
 ## Apply platform settings
 
 Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications. 
