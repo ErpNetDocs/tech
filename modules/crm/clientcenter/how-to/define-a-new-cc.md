@@ -21,7 +21,7 @@ Then, click the **New button** to begin creating a new web site.
 
 Upon accessing the **New Web Site** form, you need to enter relevant data into the provided fields.
 
-![picture](pictures/new_cc_fields.png)
+![picture](pictures/create_cc.png)
  
 1. Select the appropriate **Enterprise Company** for which the Client Center is created. The currently logged-in one is chosen by default.
 2. The only mandatory field is **Web Site Type**. In this case, it should be set to **Client Center**.
@@ -38,6 +38,8 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 5. Once you are ready, click **Save and reload**.
    
    The new Client Center website will be created and you can access it using the provided Relative Url.
+
+   ![picture](pictures/cc_created.png)
 
 ## Apply platform settings
 
