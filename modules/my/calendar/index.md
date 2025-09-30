@@ -165,11 +165,23 @@ When done, you need to once again click **Save and reload**. Your changes will b
 
 ![picture](../pictures/editt_event.png)
 
-> [!TIP]
-> **The Calendar is not tied to one specific location**. <br>
-> Apart from being able to interact with it in a **[group-specific context](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar)**, you can also integrate it as a panel in the **Dashboard**.
+## Integration
+
+The @@name Calendar is not tied to one specific location.
+
+Apart from being able to interact with it in a **[group-specific context](https://docs.erp.net/tech/modules/my/groups/features-in-groups.html#calendar)**, you can also integrate it as a panel in the **[Dashboard](https://docs.erp.net/tech/modules/my/dashboard/index.html)**. 
 
 ![picture](../pictures/calendar_dashboard.png)
+
+The different views of the Calendar are also supported when viewing **Marketing Activities**, **Product Prices** and **Line Discounts**, allowing you to monitor them over larger periods of time.
+
+To utilize them, you need to enable the **Timeline** feature of the **Menu** of the respective navigator.
+
+![picture](pictures/timeline_button.png)
+
+This will change the view mode from the standard data table into the familiar Calendar interface.
+
+![picture](pictures/integration.png)
 
 > [!Note]
 > The screenshots taken for this article are from v.26 of the platform.
