@@ -100,7 +100,7 @@ For version 24, you can find the Web Sites panel under <strong>Setup</strong> -&
 <p><img src="pictures/new_add_website.png" alt="picture"></p>
 <h3 id="website-definition">Website definition</h3>
 <p>Upon accessing the <strong>New Web Site</strong> form, you need to enter relevant data into the provided fields.</p>
-<p><img src="pictures/new_cc_fields.png" alt="picture"></p>
+<p><img src="pictures/create_cc.png" alt="picture"></p>
 <ol>
 <li>Select the appropriate <strong>Enterprise Company</strong> for which the Client Center is created. The currently logged-in one is chosen by default.</li>
 <li>The only mandatory field is <strong>Web Site Type</strong>. In this case, it should be set to <strong>Client Center</strong>.</li>
@@ -108,7 +108,7 @@ For version 24, you can find the Web Sites panel under <strong>Setup</strong> -&
 </ol>
 <div class="TIP">
 <h5>Tip</h5>
-<p>You should define a distinct site with a unique <strong>Relative URL</strong> or <strong>Host</strong> for each <strong>Enterprise Company</strong>.</p>
+<p>You should define a distinct site with a unique <strong>Relative URL</strong> for each <strong>Enterprise Company</strong>.</p>
 </div>
 <ol start="4">
 <li><p>Specify <strong>settings</strong> that will apply to your Client Center website.</p>
@@ -116,8 +116,13 @@ For version 24, you can find the Web Sites panel under <strong>Setup</strong> -&
 </li>
 <li><p>Once you are ready, click <strong>Save and reload</strong>.</p>
 <p>The new Client Center website will be created and you can access it using the provided Relative Url.</p>
+<p><img src="pictures/cc_created.png" alt="picture"></p>
 </li>
 </ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As of ERP.net version 26, the <strong>Trusted Application</strong> field no longer needs to be configured when creating a website. By default, it can be left empty, and the site will run under the internal SYSTEM user without consuming a license for its background service session. This behavior is now the recommended configuration.</p>
+</div>
 <h2 id="apply-platform-settings">Apply platform settings</h2>
 <p>Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications.</p>
 <p>Below are important settings you can apply to the Client Center:</p>

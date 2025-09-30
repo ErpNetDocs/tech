@@ -4961,6 +4961,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/cc_created.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/cc_created.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/clientcenter/how-to/pictures/click_details.png",
       "output": {
         "resource": {
@@ -4975,6 +4985,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/clientcenter/how-to/pictures/click_system_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/clientcenter/how-to/pictures/create_cc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/clientcenter/how-to/pictures/create_cc.png"
         }
       },
       "version": ""
@@ -17652,6 +17672,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/bw_timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/bw_timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/calendar/pictures/calendar_month.png",
       "output": {
         "resource": {
@@ -17672,10 +17702,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/integration.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/integration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/my/calendar/pictures/timeline_arrow.png",
       "output": {
         "resource": {
           "relative_path": "modules/my/calendar/pictures/timeline_arrow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/calendar/pictures/timeline_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/calendar/pictures/timeline_button.png"
         }
       },
       "version": ""
@@ -17799,16 +17849,6 @@
         },
         ".json": {
           "relative_path": "modules/my/calendar/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/my/dashboard.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/my/dashboard.html"
         }
       },
       "version": ""
