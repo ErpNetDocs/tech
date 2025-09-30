@@ -44,19 +44,19 @@ It allows you to track activities over longer periods of time and in a linear fo
 
 There are several timeline modes available:
 
-* **Timeline – by Day** – Displays all activities for a single day, as well as the activities for the next 11 days.
+* **Timeline – by Day** – Displays all activities for a single day, as well as for the next up to 11 days.
 
   ![picture](pictures/timelineday.png)
 
-* **Timeline – by Week** – Shows all activities for the current as well as the next six weeks. Each week is labeled with its **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)**.
+* **Timeline – by Week** – Shows all activities for the current week as well as for the next up to six weeks. Each week is labeled with its **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)**.
 
   ![picture](pictures/timelineweek.png)
   
-* **Timeline – by Month** – Lists all activities for the current as well as the next six months.
+* **Timeline – by Month** – Lists all activities for the current month as well as for the next up to six months.
 
   ![picture](pictures/timelinemonth.png)
   
-* **Timeline – by Quarter** – Presents all activities for the last three months (current quarter), as well as the next three quarters.
+* **Timeline – by Quarter** – Presents all activities for the last three months (current quarter) as well as for the next three quarters.
 
   ![picture](pictures/timelinequarter.png)
 
@@ -107,6 +107,10 @@ Within the Calendar, you can see each week labeled with its corresponding **BW n
 In **Workweek** view, this label is positioned at the upper-left corner of the Calendar.
 
 ![picture](../pictures/business_week_view.png)
+
+In **Timeline - by Week** view, the label is found at the right end of each week window.
+
+![picture](pictures/bw_timeline.png)
 
 In other Calendar views as well as navigators making use of the **date picker**, you will also find BW labels for convenience.
 
