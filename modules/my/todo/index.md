@@ -41,7 +41,7 @@ Each task entry displays the following information:
 
 The **Kanban** view transforms the To Do screen into a dynamic visual board for managing the task flow.
 
-![pictures](pictures/todo_kamban.png)
+![pictures](pictures/todo_kambann.png)
 
 Key differences from List view:
 
