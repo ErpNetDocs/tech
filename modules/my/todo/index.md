@@ -12,7 +12,7 @@ A task can be in one of the following states:
 
 * **New:** The default state for a newly created task.
 * **In progress:** Indicates active work is being performed on the task.
-* **Waiting:** Used when the task is currently blocked or awaiting action from another party.
+* **Waiting:** Used when the task is currently blocked or awaiting action.
 * **Completed:** The final state, indicating the task is finished.
 
 ### Views
@@ -43,6 +43,8 @@ The **Kanban** view transforms the To Do screen into a dynamic visual board for
 
 ![pictures](pictures/todo_kamban.png)
 
+Key differences from List view:
+
 * Tasks are displayed as **cards** organized into vertical columns. Each column header corresponds to a task's state.
 * You can **drag and drop** task cards between the columns, which automatically updates the task's state.
 * A **+ button** can be found at the bottom of each column, allowing newly created tasks to be automatically grouped into a specific state.
@@ -60,10 +62,23 @@ When you click on it, it will expand with several fields:
 1. Enter a task description in the input field. This is the only required step.
 2. Optionally configure:
    
-   * **Reminder:** Sets a specific time for a notification. 
+   * **Reminder:** Sets a specific time for a notification. You can use one of the templates:
+     
+        * **Late afternoon**
+        * **Dinner**
+        * **Tomorrow**
+        * **Next Monday**
+        * **Set custom time** - Allows you to set a specific reminder date and time via the built-in mini calendar.
+          
    * **Assignee:** By default, the task is assigned to the you, but you can assign it to someone else in your organization.
-   * **Due Date:** Sets a deadline for the task.
-    
+   * **Due Date:** Sets a deadline for the task. You can use one of the templates:
+     
+        * **Today**
+        * **Tomorrow**
+        * **After tomorrow**
+        * **Next week**
+        * **Set custom date** - Allows you to set a specific deadline date via the built-in mini calendar.
+
 3.  Click the **Create** button. This will move the task into the **New** category.
 
 ### Kanban 
