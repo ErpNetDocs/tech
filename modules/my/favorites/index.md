@@ -2,7 +2,7 @@
 
 The **Favorites** screen allows users to build a personalized list of frequently accessed entities within @@name. This includes customers, campaigns, product groups, documents, or any other business entities. By marking items as favorites, you can easily access them from one place and receive notifications about relevant updates or events.
 
-Favorites are context-aware and can include both top-level entities (e.g., Customers or Campaigns) as well as individual records (e.g., specific companies, opportunities, or documents).
+Favorites are context-aware and can include both top-level entities as well as individual records.
 
 ![pictures](pictures/Favorites_view.png)
 
