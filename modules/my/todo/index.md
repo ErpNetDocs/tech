@@ -10,10 +10,12 @@ The **To Do** screen is a personal task management utility. It allows you to cre
 
 A task can be in one of the following states:
 
-* **New:** The default state for a newly created task.
-* **In progress:** Indicates active work is being performed on the task.
-* **Waiting:** Used when the task is currently blocked or awaiting action.
-* **Completed:** The final state, indicating the task is finished.
+| State | Purpose |
+| :--- | :--- |
+| **New** | The default state for a newly created task. |
+| **In progress** | Indicates active work is being performed on the task. |
+| **Waiting** | Used when the task is currently blocked or awaiting action. |
+| **Completed** | The final state, indicating the task is finished. |
 
 ### Views
 
@@ -103,11 +105,11 @@ To define optional properties such as Reminder or Due Date, you must access the 
 
 ## Actions
 
-The three-dot action menu on the right side of a task provides further management options.
+In both List and Kanban view, the three-dot action menu on the right side of a task provides further management options.
 
 ![pictures](pictures/todo_actions.png)
 
-| Menu Option | Action/Purpose |
+| Action | Purpose |
 | :--- | :--- |
 | **Open** | Opens a window for changing the title and notes (if any) of the task. |
 | **Edit** | Allows for changes of the task description, reminder, assignee, and due date. |
