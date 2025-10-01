@@ -15,7 +15,7 @@ In the **My** module, you can find the following applications:
 * **Timeline**
 * **Tiles**
 * **[Favorites](favorites/index.md)**
-* **To Do**
+* **[To Do](todo/index.md)**
 * **AI Assistant**
 * **Documents**
 * **Folders**
