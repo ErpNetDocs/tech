@@ -102,15 +102,15 @@ A task can be marked as complete in three ways:
 
 1.  **Quick completion:** In List view, click the circular radio button to the left of the task description.
 
-   ![pictures](pictures/todo_quickcomplete_list.png)
+    ![pictures](pictures/todo_quickcomplete_list.png)
 
 2.  **State change:** In both List and Kanban view, select **Completed** from the **State** sub-menu within the action menu.
 
-   ![pictures](pictures/todo_manualcomplete_list.png)
+    ![pictures](pictures/todo_manualcomplete_list.png)
 
 3.  **Drag and drop:** In Kanban view, drag any task from any state and drop it into the **Completed** column.
 
-   ![pictures](pictures/todo_complete_kanban.png)
+    ![pictures](pictures/todo_complete_kamban.png)
 
 Completed tasks are automatically moved to the **Completed** category.
 
