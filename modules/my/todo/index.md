@@ -69,6 +69,8 @@ When you click on it, it will expand with several fields:
         * **Tomorrow**
         * **Next Monday**
         * **Set custom time** - Allows you to set a specific reminder date and time via the built-in mini calendar.
+
+          ![pictures](pictures/reminder_minicalendar.png)
           
    * **Assignee:** By default, the task is assigned to the you, but you can assign it to someone else in your organization.
    * **Due Date:** Sets a deadline for the task. You can use one of the templates:
@@ -78,6 +80,8 @@ When you click on it, it will expand with several fields:
         * **After tomorrow**
         * **Next week**
         * **Set custom date** - Allows you to set a specific deadline date via the built-in mini calendar.
+
+          ![pictures](pictures/deadline_minicalendar.png)
 
 3.  Click the **Create** button. This will move the task into the **New** category.
 
