@@ -1,8 +1,8 @@
 # Overview
 
-The **My** module is a personalized environment housing information that is essential to your day-to-day activities.
+The @@name **My** module is a personalized environment housing information that is essential to your day-to-day activities.
 
-It consists of several applications that are simultaneously independent, interconnected, and can also be integrated as panels in other ERP.net modules.
+It consists of several applications that are simultaneously independent, interconnected, and compatible with other modules.
 
 ![pictures](pictures/my_v266.png)
 
