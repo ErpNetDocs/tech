@@ -6,11 +6,9 @@ Favorites are context-aware and can include both top-level entities as well as i
 
 ![pictures](pictures/Favorites_view.png)
 
-## Key features
+## Interface
 
-### Centralized access
-
-All marked favorites are displayed in the **Favorites** page, providing a unified view of the items you follow.
+All marked favorites are displayed in one place, providing a centralized view of the items you follow.
 
 ### Notifications
 
