@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Overview | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Overview | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/my/todo/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="overview">Overview</h1>
+
+<p>The <strong>To Do</strong> screen is a personal task management utility. It allows you to create, track, and manage work-related activities like follow-ups, meetings, or lead conversions, with optional reminders and deadlines in place to help you organize your daily workflow.</p>
+<p><img src="pictures/todo_overview.png" alt="pictures"></p>
+<h2 id="interface">Interface</h2>
+<h3 id="states">States</h3>
+<p>A task can be in one of the following states:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>New</strong></td>
+<td style="text-align: left;">The default state for a newly created task.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>In progress</strong></td>
+<td style="text-align: left;">Indicates active work is being performed on the task.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Waiting</strong></td>
+<td style="text-align: left;">Used when the task is currently blocked or awaiting action.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Completed</strong></td>
+<td style="text-align: left;">The final state, indicating the task is finished.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="views">Views</h3>
+<p>Tasks can be displayed in two primary formats, selectable via the <strong>view chooser</strong> in the top-right corner.</p>
+<p><img src="pictures/todo_viewmodes.png" alt="pictures"></p>
+<h4 id="list">List</h4>
+<p><strong>List</strong> is the default view of the To Do screen, providing a linear and categorized breakdown of all tasks.</p>
+<p>In this view, tasks are automatically grouped under headings corresponding to their current state.</p>
+<p><img src="pictures/todo_list.png" alt="pictures"></p>
+<p>Each task entry displays the following information:</p>
+<ul>
+<li>A circular radio button used for <strong>quick completion</strong> of the task</li>
+<li>The primary task <strong>description</strong></li>
+<li>Scheduling details, including the assigned user, <strong>reminder time</strong> (if set), and the <strong>due date</strong></li>
+<li>The name of the <strong><a href="https://docs.erp.net/tech/modules/my/groups/index.html">group</a></strong>, if the task is associated with one</li>
+<li>A three-dot <strong>action menu</strong> for further task management</li>
+</ul>
+<h4 id="kanban">Kanban</h4>
+<p>The <strong>Kanban</strong> view transforms the To Do screen into a dynamic visual board for managing the task flow.</p>
+<p><img src="pictures/todo_kambann.png" alt="pictures"></p>
+<p>Key differences from List view:</p>
+<ul>
+<li>Tasks are displayed as <strong>cards</strong> organized into vertical columns. Each column header corresponds to a task's state.</li>
+<li>You can <strong>drag and drop</strong> task cards between the columns, which automatically updates the task's state.</li>
+<li>A <strong>+ button</strong> can be found at the bottom of each column, allowing newly created tasks to be automatically grouped into a specific state.</li>
+</ul>
+<h2 id="add-a-task">Add a task</h2>
+<h3 id="list-1">List</h3>
+<p>In List view, tasks are added using the <strong>+ Add to-do</strong> bar at the top of the screen.</p>
+<p>When you click on it, it will expand with several fields:</p>
+<p><img src="pictures/todo_create_list.png" alt="pictures"></p>
+<ol>
+<li><p>Enter a task description in the input field. This is the only required step.</p>
+</li>
+<li><p>Optionally configure:</p>
+<ul>
+<li><p><strong>Reminder:</strong> Sets a specific time for a notification. You can use one of the templates:</p>
+<ul>
+<li><p><strong>Late afternoon</strong></p>
+</li>
+<li><p><strong>Dinner</strong></p>
+</li>
+<li><p><strong>Tomorrow</strong></p>
+</li>
+<li><p><strong>Next Monday</strong></p>
+</li>
+<li><p><strong>Set custom time</strong> - Allows you to set a specific reminder date and time via the built-in mini calendar.</p>
+<p><img src="pictures/reminder_minicalendar.png" alt="pictures"></p>
+</li>
+</ul>
+</li>
+<li><p><strong>Assignee:</strong> By default, the task is assigned to the you, but you can assign it to someone else in your organization.</p>
+</li>
+<li><p><strong>Due Date:</strong> Sets a deadline for the task. You can use one of the templates:</p>
+<ul>
+<li><p><strong>Today</strong></p>
+</li>
+<li><p><strong>Tomorrow</strong></p>
+</li>
+<li><p><strong>After tomorrow</strong></p>
+</li>
+<li><p><strong>Next week</strong></p>
+</li>
+<li><p><strong>Set custom date</strong> - Allows you to set a specific deadline date via the built-in mini calendar.</p>
+<p><img src="pictures/deadline_minicalendar.png" alt="pictures"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Click the <strong>Create</strong> button. This will move the task into the <strong>New</strong> category.</p>
+</li>
+</ol>
+<h3 id="kanban-1">Kanban</h3>
+<p>In Kanban view, tasks are created directly within the columns, allowing them to be categorized immediately by their State.</p>
+<ol>
+<li><p>Click the <strong>+ button</strong> located at the bottom of the column corresponding to the desired initial state.</p>
+<p><img src="pictures/todo_create_kamban.png" alt="pictures"></p>
+</li>
+<li><p>A dialog box will appear, requiring you to enter the <strong>Title</strong> of the task. You may also enter optional <strong>Notes</strong>.</p>
+<p><img src="pictures/todo_fields_kamban.png" alt="pictures"></p>
+</li>
+<li><p>Click the <strong>Create</strong> button. This will add the task card to the column.</p>
+</li>
+</ol>
+<p>To define optional properties such as Reminder or Due Date, you must access the task's <strong>three-dot action menu</strong> and select the <strong>Edit</strong> option.</p>
+<h2 id="actions">Actions</h2>
+<p>In both List and Kanban view, the three-dot action menu on the right side of a task provides further management options.</p>
+<p><img src="pictures/todo_actions.png" alt="pictures"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Open</strong></td>
+<td style="text-align: left;">Opens a window for changing the title and notes (if any) of the task.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Edit</strong></td>
+<td style="text-align: left;">Allows for changes of the task description, reminder, assignee, and due date.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Importance</strong></td>
+<td style="text-align: left;">Sets the priority level of the task. Options include <strong>Low</strong>, <strong>Normal</strong>, and <strong>High</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>State</strong></td>
+<td style="text-align: left;">Manually changes the task's status.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delete</strong></td>
+<td style="text-align: left;">Permanently removes the task from the To Do list.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="complete-a-task">Complete a task</h3>
+<p>A task can be marked as complete in three ways:</p>
+<ol>
+<li><p><strong>Quick completion:</strong> In List view, click the circular radio button to the left of the task description.</p>
+<p><img src="pictures/todo_quickcomplete_list.png" alt="pictures"></p>
+</li>
+<li><p><strong>State change:</strong> In both List and Kanban view, select <strong>Completed</strong> from the <strong>State</strong> sub-menu within the action menu.</p>
+<p><img src="pictures/todo_manualcomplete_list.png" alt="pictures"></p>
+</li>
+<li><p><strong>Drag and drop:</strong> In Kanban view, drag any task from any state and drop it into the <strong>Completed</strong> column.</p>
+<p><img src="pictures/todo_complete_kamban.png" alt="pictures"></p>
+</li>
+</ol>
+<p>Completed tasks are automatically moved to the <strong>Completed</strong> category.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/my/todo/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
