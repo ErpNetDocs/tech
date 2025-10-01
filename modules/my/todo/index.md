@@ -76,7 +76,7 @@ The three-dot action menu on the right side of a task provides further managemen
 
 | Menu Option | Action/Purpose |
 | :--- | :--- |
-| **Open** | Opens a detailed view of the task. |
+| **Open** | Opens a window for changing the title and notes (if any) of the task. |
 | **Edit** | Allows for changes of the task description, reminder, assignee, and due date. |
 | **Importance** | Sets the priority level of the task. Options include **Low**, **Normal**, and **High**. |
 | **State** | Manually changes the task's status. |
