@@ -11,15 +11,15 @@ In the **My** module, you can find the following applications:
 * **[Groups](groups/index.md)**
 * **[Dashboard](dashboard/index.md)**
 * **Notifications**
+* **Search** 
 * **[Calendar](calendar/index.md)**
-* **Timeline**
+* **[Timeline](timeline/index.md**
 * **Tiles**
 * **[Favorites](favorites/index.md)**
 * **[To Do](todo/index.md)**
-* **AI Assistant**
 * **Documents**
+* **AI Assistant**
 * **Folders**
-* **Search** 
 
 > [!NOTE]
 > 
