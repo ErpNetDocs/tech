@@ -8,9 +8,9 @@ Timeline exists as one of the main views in the @@name **[Calendar](https://docs
 
 ## Interface
 
-### Timeline modes
+### Modes
 
-The Timeline can be adjusted using the **view selector**, which controls the horizontal time scale displayed for activities and documents.
+The Timeline mode can be adjusted using the **view selector**, which controls the horizontal time scale displayed for activities and documents.
 
 ![pictures](pictures/timeline_viewmodess.png)
 
