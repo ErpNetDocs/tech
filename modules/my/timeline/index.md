@@ -78,7 +78,7 @@ The arrows inside the timeline itself, however, allow you to move forward or go 
 
 For example, pressing the right arrow advances one month in **Timeline - by Month**, shifting all the months by one.
 
-![pictures](pictures/navigation.png)
+![pictures](pictures/navigation_secondary.png)
 
 To make a targeted navigation, you can use the built-in **[date picker](https://docs.erp.net/tech/modules/my/calendar/index.html#date-picker)**, which allows you to instantly go to a specific date, month, or year.
 
