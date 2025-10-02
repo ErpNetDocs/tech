@@ -80,6 +80,27 @@ For example, pressing the right arrow advances one month in **Timeline - by Mont
 
 ![pictures](pictures/navigation.png)
 
+To make a targeted navigation, you can use the built-in **[date picker](https://docs.erp.net/tech/modules/my/calendar/index.html#date-picker)**, which allows you to instantly go to a specific date, month, or year.
+
+![pictures](pictures/datepicker.png)
+
+### Activity info
+
+Just like in the @@name Calendar, if you hover over an activity, you can see a **[tooltip](https://docs.erp.net/tech/modules/my/calendar/index.html#details)** with more details about it.
+
+![pictures](pictures/details.png)
+
+> [!TIP]
+> Clicking on an acitivity or a document will take you to their respective forms.
+
+### Business week labels
+
+The Timeline utilizes the @@name **[Business Week (BW) standard](https://docs.erp.net/tech/modules/my/calendar/index.html#business-week-number)** for numbering weeks in a calendar year.
+
+In the **Timeline - by Week** mode, the label is found at the right end of each week window.
+
+![pictures](pictures/bw_timeline.png)
+
 ## Party filter
 
 In addition to **activities**, the Timeline also shows **documents** created for the currently logged-in Enterprise company. 
