@@ -20,7 +20,7 @@ This mode displays all activities for a single day, as well as for the next up t
 
 > [!NOTE]
 > 
-> "up to" means that the maximum number of days in the timeline can be revealed if the browser window is expanded to full screen.
+> "up to" refers to the maximum number of days in the timeline can be revealed if the browser window is expanded to full screen.
 
 ![pictures](pictures/byday.png)
 
@@ -30,7 +30,7 @@ This mode displays all activities for the current week as well as for the next u
 
 > [!NOTE]
 > 
-> "up to" means that the maximum number of weeks in the timeline can be revealed if the browser window is expanded to full screen.
+> "up to" refers to the maximum number of weeks in the timeline can be revealed if the browser window is expanded to full screen.
 
 ![pictures](pictures/byweek.png)
 
@@ -40,13 +40,17 @@ Lists all activities for the current month as well as for the next up to six mon
 
 > [!NOTE]
 > 
-> "up to" means that the maximum number of months in the timeline can be revealed if the browser window is expanded to full screen.
+> "up to" refers to the maximum number of months in the timeline can be revealed if the browser window is expanded to full screen.
 
 ![pictures](pictures/bymonth.png)
 
 #### by Quarter
 
-Lists all activities for the last three months (current quarter) as well as for the next three quarters.
+Lists all activities for the last three months (current quarter) as well as for the next up to three quarters.
+
+> [!NOTE]
+> 
+> "up to" refers to the maximum number of quarters in the timeline can be revealed if the browser window is expanded to full screen.
 
 ![pictures](pictures/byquarter.png)
 
@@ -68,6 +72,8 @@ Using either the **left (previous)** or **right (next)** arrows in the navigatio
 
 For example, pressing the right arrow advances 7 months in **Timeline - by Month**, shifting all the months by 7.
 
+![pictures](pictures/navigation_primary.png)
+
 The arrows inside the timeline itself, however, allow you to move forward or go back just **by a single period**.
 
 For example, pressing the right arrow advances one month in **Timeline - by Month**, shifting all the months by one.
@@ -76,13 +82,15 @@ For example, pressing the right arrow advances one month in **Timeline - by Mont
 
 ## Party filter
 
-In addition to **activities**, the Timeline also shows **documents** created for the currently logged-in Enterprise company. These documents are further grouped by the **[customer](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** **(Party)** they are associated with.
+In addition to **activities**, the Timeline also shows **documents** created for the currently logged-in Enterprise company. 
+
+These documents are further grouped by the **[customer](https://docs.erp.net/tech/modules/crm/sales/customers/index.html)** **(Party)** they are associated with.
 
 ![pictures](pictures/timeline_partyy.png)
 
 The **Party** button allows you to narrow down the timeline to show just the documents associated with one particular customer.
 
-When a party is selected from the dropdown, the Timeline restricts the displayed documents and activities only to those records related to the chosen party.
+When one party is selected, the Timeline restricts the displayed documents and activities only to those records related to it.
 
 ![pictures](pictures/timeline_party_multiplee.png)
 
