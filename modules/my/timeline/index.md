@@ -56,9 +56,9 @@ Lists all activities for the last three months (current quarter) as well as for 
 
 | Mode | Time span | Use case |
 | :--- | :--- | :--- |
-| **Timeline – by Day** | Selected day and the following up to 11 days. | Provides a highly granular, short-term activity view. |
-| **Timeline – by Week** | Current week and the next up to six weeks. | Weeks are labeled with a **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)** for consistent reporting. |
-| **Timeline – by Month** | Current month and the next up to six months. | Ideal for mid-range planning and monthly activity reviews. |
+| **Timeline – by Day** | Selected day and the following 11 days. | Provides a highly granular, short-term activity view. |
+| **Timeline – by Week** | Current week and the next six weeks. | Suitable for weekly planning and multi-week tracking. |
+| **Timeline – by Month** | Current month and the next six months. | Ideal for mid-range planning and monthly activity reviews. |
 | **Timeline – by Quarter** | Last three months (current quarter) and the next three quarters. | Best suited for high-level, long-term strategic reviews and annual planning. |
 
 > [!TIP]
