@@ -26,7 +26,7 @@ This mode displays all activities for a single day, as well as for the next up t
 
 #### by Week
 
-This mode displays all activities for the current week as well as for the next up to 6 weeks. Each week is labeled with its BW number.
+This mode displays all activities for the current week as well as for the next up to 6 weeks.
 
 > [!NOTE]
 > 
@@ -57,7 +57,7 @@ Lists all activities for the last three months (current quarter) as well as for 
 | Mode | Time span | Use case |
 | :--- | :--- | :--- |
 | **Timeline – by Day** | Selected day and the following up to 11 days. | Provides a highly granular, short-term activity view. |
-| **Timeline – by Week** | Current week and the next up to six weeks. | Weeks are labeled using the **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)** standard for consistent reporting. |
+| **Timeline – by Week** | Current week and the next up to six weeks. | Weeks are labeled with a **[BW number](https://docs.erp.net/tech/modules/my/calendar.html#business-week-number)** for consistent reporting. |
 | **Timeline – by Month** | Current month and the next up to six months. | Ideal for mid-range planning and monthly activity reviews. |
 | **Timeline – by Quarter** | Last three months (current quarter) and the next three quarters. | Best suited for high-level, long-term strategic reviews and annual planning. |
 
@@ -116,6 +116,8 @@ When one party is selected, the Timeline restricts the displayed documents and a
 ![pictures](pictures/timeline_party_multiplee.png)
 
 The filter can be reset to the default "all parties" view by selecting **Clear** from the **Party** dropdown.
+
+If no documents with customers are identified for a specific period, it will be **greyed out** and not usable.
 
 > [!NOTE]
 > 
