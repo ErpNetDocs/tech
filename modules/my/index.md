@@ -13,7 +13,7 @@ In the **My** module, you can find the following applications:
 * **Notifications**
 * **Search** 
 * **[Calendar](calendar/index.md)**
-* **[Timeline](timeline/index.md**
+* **[Timeline](timeline/index.md)**
 * **Tiles**
 * **[Favorites](favorites/index.md)**
 * **[To Do](todo/index.md)**
