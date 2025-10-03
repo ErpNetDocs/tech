@@ -1,6 +1,6 @@
 # Getting started
 
-First, ensure that your organization uses **[Azure Athentication](/advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is configured in @@name.
+First, ensure that your organization uses **[Azure AD Authentication](../../../advanced/security/authentication/azuread.md)** and that the organization's **[domain](/advanced/security/authentication/azuread.md#erpnet-settings)** is configured in @@name.
 
 Second, a **website** with the type "Microsoft Sync" must be set up in your @@name database.
 
