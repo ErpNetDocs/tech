@@ -1,12 +1,14 @@
 # Tiles
 
-The Tiles screen is a specialized application that provides key operational statistics at a glance. It allows you to track the number of objects (entities) relevant to your work, such as the count of all customers, sales orders, or specific product categories.
+The Tiles screen provides key operational statistics and quick access to a variety of @@name forms and navigators. It allows you to track the number of objects (entities) relevant to your work, such as the count of all customers, sales orders, or specific product categories. 
+
+Tiles can be optionally saved with filters applied in order to fit a specific context (e.g., all released sales orders between June of 2024 and March of 2025). This eliminates the need for manual recreation of the filters as they will now be saved as a shortcut in the Tiles screen instead.
 
 ## Interface
 
 Each tile is a simple piece of aggregated data, showing just two components:
 
-* **Caption**: A descriptive title, often indicating the associated enterprise company (e.g., "Product codes - X-Tech MI").
+* **Caption**: A custom title, often indicating the associated enterprise company (e.g., "Product codes - X-Tech MI").
 * **Entities count**: Total number of objects that match the tile's underlying repository and filter criteria.
 
 Internally, each tile represents a specific data entity or repository. The number it displays is the count of objects within that entity.
