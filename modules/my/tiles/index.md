@@ -2,34 +2,41 @@
 
 The Tiles screen provides key operational statistics and quick access to a variety of @@name forms and navigators. It allows you to track the number of objects (entities) relevant to your work, such as the count of all customers, sales orders, or specific product categories. 
 
-Tiles can be optionally saved with filters applied in order to fit a specific context (e.g., all released sales orders between June of 2024 and March of 2025). This eliminates the need for manual recreation of the filters as they will now be saved as a shortcut in the Tiles screen instead.
+Tiles can be optionally saved with filters applied in order to fit a specific context (e.g., all sales orders with payment due dates in October 2025). This eliminates the need for manual recreation of filters as they can be instantly applied through a shortcut in the Tiles screen.
 
 ## Interface
 
-Each tile is a simple piece of aggregated data, showing just two components:
+Each tile is a piece of aggregated data, showing just two components:
 
 * **Caption**: A custom title, often indicating the associated enterprise company (e.g., "Product codes - X-Tech MI").
 * **Entities count**: Total number of objects that match the tile's underlying repository and filter criteria.
 
-Internally, each tile represents a specific data entity or repository. The number it displays is the count of objects within that entity.
+Internally, each tile represents a predefined **repository**. The number it displays is the count of objects within that repository.
 
-### Filtering
-
-Multiple tiles can reference the same entity (e.g., the Opportunities navigator) but display **different** counts because specific filters have been applied during their creation.
+Multiple tiles can reference **the same** repository (e.g., the Opportunities navigator) but display **different** counts because specific filters have been applied during their creation.
 
 ### Navigation
 
-Each tile acts as a link. Clicking a tile opens its corresponding navigator with the specific filters (if any) that were used when the tile was created, providing immediate access to the source data.
+Each tile acts as a **link**. 
+
+Clicking a tile opens its corresponding navigator with the specific filters (if any) that were used when the tile was created, providing immediate access to the source data.
 
 ## Actions
 
-The primary interface displays a collection of tiles created by you. 
+The Tiles interface displays all of the tiles that have been created by you. 
 
 Management actions are accessible via the **three-dot menu** in the top-right corner.
 
+| Menu option | Functionality |
+| :--- | :--- |
+| **Maximize** | Expands the Tiles view to fill the entire application window. |
+| **Edit** | While in Edit mode, a **red cross button** appears on the top-right corner of each tile. Clicking this button removes the tile after confirmation. |
+| **Reload** | Refreshes the information displayed on all tiles to ensure the count data is up-to-date. |
+| **Customize panel** | Opens the Tiles Customization window. |
+
 ### Customize panel
 
-The Customize panel action opens a separate window with two management tabs:
+The **Customize panel** window opens a separate window with two management tabs:
 
 * **Items**: Controls the visibility of tiles. You can click the slider next to a tile's name to hide or reveal the respective tile on the main screen.
 
