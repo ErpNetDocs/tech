@@ -10,8 +10,8 @@ Tiles can be optionally saved with filters applied in order to fit a specific co
 
 Each tile is a piece of aggregated data, showing just two components:
 
-* **Caption**: A custom title, often indicating the associated enterprise company (e.g., "Product codes - X-Tech MI").
-* **Entities count**: Total number of objects that match the tile's underlying repository and filter criteria.
+* **Caption**: A custom title (e.g., "Product codes - X-Tech MI").
+* **Entities count**: Pre-calculated total number of objects that match the tile's repository and filter criteria.
 
 ![pictures](pictures/tiles_description.png)
 
@@ -74,7 +74,7 @@ To create a new tile:
 
 1. Navigate to a desired data source (e.g., Product Codes) to open its corresponding navigator.
 
-2. Optionally apply filtering using the **Show filter row** option if the tile should track a subset of data.
+2. Optionally apply filtering using the **[Show filter row](https://docs.erp.net/webclient/introduction/how-to/filtering-expressions.html)** option if the tile should track a subset of data.
 
    ![pictures](pictures/product_code_filter.png)
 
