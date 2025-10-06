@@ -12,9 +12,13 @@
 - name: Timeline
   href: timeline/toc.yml
   topicHref: timeline/index.md
+- name: Tiles
+  href: tiles/toc.yml
+  topicHref: tiles/index.md
 - name: Favorites
   href: favorites/toc.yml
   topicHref: favorites/index.md
 - name: To Do
   href: todo/toc.yml
   topicHref: todo/index.md
+  
