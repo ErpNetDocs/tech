@@ -88,21 +88,26 @@
 <h1 id="tiles">Tiles</h1>
 
 <p>The Tiles screen provides key operational statistics and quick access to a variety of ERP.net forms and navigators. It allows you to track the number of objects (entities) relevant to your work, such as the count of all customers, sales orders, or specific product categories.</p>
+<p><img src="pictures/tiles_overview.png" alt="pictures"></p>
 <p>Tiles can be optionally saved with filters applied in order to fit a specific context (e.g., all sales orders with payment due dates in October 2025). This eliminates the need for manual recreation of filters as they can be instantly applied through a shortcut in the Tiles screen.</p>
 <h2 id="interface">Interface</h2>
 <p>Each tile is a piece of aggregated data, showing just two components:</p>
 <ul>
-<li><strong>Caption</strong>: A custom title, often indicating the associated enterprise company (e.g., &quot;Product codes - X-Tech MI&quot;).</li>
-<li><strong>Entities count</strong>: Total number of objects that match the tile's underlying repository and filter criteria.</li>
+<li><strong>Caption</strong>: A custom title (e.g., &quot;Product codes - X-Tech MI&quot;).</li>
+<li><strong>Entities count</strong>: Pre-calculated total number of objects that match the tile's repository and filter criteria.</li>
 </ul>
+<p><img src="pictures/tiles_description.png" alt="pictures"></p>
 <p>Internally, each tile represents a predefined <strong>repository</strong>. The number it displays is the count of objects within that repository.</p>
 <p>Multiple tiles can reference <strong>the same</strong> repository (e.g., the Opportunities navigator) but display <strong>different</strong> counts because specific filters have been applied during their creation.</p>
+<p><img src="pictures/tiles_same_repository.png" alt="pictures"></p>
 <h3 id="navigation">Navigation</h3>
 <p>Each tile acts as a <strong>link</strong>.</p>
 <p>Clicking a tile opens its corresponding navigator with the specific filters (if any) that were used when the tile was created, providing immediate access to the source data.</p>
+<p><img src="pictures/click_tile.png" alt="pictures"></p>
 <h2 id="actions">Actions</h2>
 <p>The Tiles interface displays all of the tiles that have been created by you.</p>
 <p>Management actions are accessible via the <strong>three-dot menu</strong> in the top-right corner.</p>
+<p><img src="pictures/tile_actions.png" alt="pictures"></p>
 <table>
 <thead>
 <tr>
@@ -117,7 +122,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Edit</strong></td>
-<td style="text-align: left;">While in Edit mode, a <strong>red cross button</strong> appears on the top-right corner of each tile. Clicking this button removes the tile after confirmation.</td>
+<td style="text-align: left;">Allows you to remove tiles.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Reload</strong></td>
@@ -129,25 +134,35 @@
 </tr>
 </tbody>
 </table>
+<h3 id="edit">Edit</h3>
+<p>When you trigger Edit mode, a <strong>red cross button</strong> appears on the top-right corner of each tile.</p>
+<p><img src="pictures/edit_tile.png" alt="pictures"></p>
+<p>Clicking this button removes the tile after confirmation.</p>
+<p><img src="pictures/edit_tile_popup.png" alt="pictures"></p>
 <h3 id="customize-panel">Customize panel</h3>
 <p>The <strong>Customize panel</strong> window opens a separate window with two management tabs:</p>
 <ul>
 <li><p><strong>Items</strong>: Controls the visibility of tiles. You can click the slider next to a tile's name to hide or reveal the respective tile on the main screen.</p>
+<p><img src="pictures/items.png" alt="pictures"></p>
 </li>
 <li><p><strong>Reorder</strong>: Controls the sequence of the tiles. You can drag and drop tile names up and down the list to change the order in which they appear on the Tiles screen.</p>
+<p><img src="pictures/reorder.png" alt="pictures"></p>
 </li>
 </ul>
 <h2 id="create-a-new-tile">Create a new tile</h2>
 <p>Tiles are created from an existing navigator view, allowing the tile to inherit that navigator's applied filters.</p>
 <p>To create a new tile:</p>
 <ol>
-<li><p>Navigate to a desired data source (e.g., CRM -&gt; Sales -&gt; Customers) to open its corresponding navigator.</p>
+<li><p>Navigate to a desired data source (e.g., Product Codes) to open its corresponding navigator.</p>
 </li>
-<li><p>Optionally apply filtering. If the tile should track a subset of data, like customers created this year, apply the necessary filters.</p>
+<li><p>Optionally apply filtering using the <strong><a href="https://docs.erp.net/webclient/introduction/how-to/filtering-expressions.html">Show filter row</a></strong> option if the tile should track a subset of data.</p>
+<p><img src="pictures/product_code_filter.png" alt="pictures"></p>
 </li>
 <li><p>Open the form's main menu and select <strong>Create a new tile</strong>.</p>
+<p><img src="pictures/create_new_tile.png" alt="pictures"></p>
 </li>
 <li><p>A dialog window will open where you must enter the <strong>caption</strong> (title) of the new tile.</p>
+<p><img src="pictures/tile_title.png" alt="pictures"></p>
 </li>
 </ol>
 <div class="WARNING">
@@ -155,9 +170,12 @@
 <p>The caption of a tile must be <strong>unique</strong>. Do not use a caption that already exists.</p>
 </div>
 <p>When you click <strong>OK</strong>, the tile will be immediately created and you will be redirected to the Tiles screen.</p>
+<p><img src="pictures/product_code_created.png" alt="pictures"></p>
 <h2 id="integration">Integration</h2>
-<p>The Tiles screen can be integrated as a widget within the Dashboard, as well as any navigator or document form or screen in the Web Client that supports tiles.</p>
-<p>Tiles widgets will only display tiles that are <strong>relevant</strong> to the context in which they were created (e.g., a form related to Production will not show Customer related tiles).</p>
+<p>The Tiles screen can be integrated as a widget within the <strong><a href="https://docs.erp.net/tech/modules/my/dashboard/index.html">Dashboard</a></strong>, as well as any navigator, form or screen that supports tiles.</p>
+<p><img src="pictures/tiles_dashboard.png" alt="pictures"></p>
+<p>Tiles widgets only display tiles that are <strong>relevant</strong> to the context in which they were created (e.g., a form related to Sales orders will not show Customer related tiles).</p>
+<p><img src="pictures/tiles_widget.png" alt="pictures"></p>
 
 </article>
 

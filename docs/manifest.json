@@ -18793,6 +18793,169 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/click_tile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/click_tile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/create_new_tile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/create_new_tile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/edit_tile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/edit_tile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/edit_tile_popup.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/edit_tile_popup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/items.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/items.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/product_code_created.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/product_code_created.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/product_code_filter.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/product_code_filter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/reorder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tile_actions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tile_actions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tile_title.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tile_title.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tiles_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tiles_dashboard.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tiles_description.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tiles_description.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tiles_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tiles_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tiles_same_repository.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tiles_same_repository.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/tiles/pictures/tiles_widget.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/tiles/pictures/tiles_widget.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/my/tiles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/tiles/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/tiles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/my/timeline/index.md",
       "output": {
