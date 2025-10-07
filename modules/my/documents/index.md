@@ -50,7 +50,7 @@ The Export feature will become available as soon as one document is selected. Th
 
 One or multiple documents can be shared with others using the **Share** button in the ribbon.
 
-You can copy a **direct link** to the selected document, or share the it to a **[group](https://docs.erp.net/tech/modules/my/groups/index.html)** within your organization's collaborative environment.
+You can copy a **direct link** for the selected document, or share it to a **[group](https://docs.erp.net/tech/modules/my/groups/index.html)** within your organization's collaborative environment.
 
 ![pictures](pictures/documents_share.png)
 
@@ -66,14 +66,14 @@ My Documents provides extensive customization features to organize and display d
 
 The **vertical three-dot button** at the upper-right corner of the Documents table contains a list of actions and layout controls.
 
+![pictures](pictures/documents_panelmenu.png)
+
 | Menu Option | Functionality |
 | :--- | :--- |
 | **Show filter row** | Toggles the dedicated row beneath column headers for direct, column-specific filtering of the table. |
 | **Show grouping panel** | Reveals a section above the table used for dragging column headers to apply document grouping. |
 | **Maximum row count** | Adjusts the maximum number of document rows that the page loads and displays in the table. |
 | **Customize panel** | Opens a configuration window to adjust column visibility and order within the main document grid. |
-
-![pictures](pictures/documents_panelmenu.png)
 
 ### Grouping panel
 
@@ -103,8 +103,6 @@ Simply right-click on a column header and select **Summary**.
 
 ![pictures](pictures/documents_summary.png)
 
-The options most relevant for the Documents table are:
-
 * **Count**: Calculates the total number of documents where a value is present in that column.
 * **Distinct**: Counts the number of unique values in the field (e.g., the number of unique states, ignoring repetitions).
 
@@ -118,21 +116,23 @@ You can manage the Documents table's appearance via the **Customize panel** opt
 
 This will open a window consisting of two tabs:
 
-**Items**: Allows you to hide or reveal columns by toggling the slider next to the column name. 
+#### Items
+
+Allows you to hide or reveal columns by toggling the slider next to the column name. 
 
 ![pictures](pictures/documents_enable_disable_items.png)
 
-You can further restructure the table using the **Position** settings for each column.
+#### Reorder
 
-![pictures](pictures/documents_fullrow_feature.png)
+Allows you to change the sequence of column headers by dragging and dropping them up or down the list.
+
+![pictures](pictures/documents_reorder.png)
+
+You can further restructure the table using the **Position** settings for each column.
 
 By default, columns are set to Column mode, but you can make some of them take up an entire row.
 
-![pictures](pictures/documents_fullrow_view.png)
-
-**Reorder**: Allows you to change the sequence of column headers by dragging and dropping them up or down the list.
-
-![pictures](pictures/documents_reorder.png)
+![pictures](pictures/documents_fullrow_feature.png)
 
 ### Main menu
 
@@ -142,7 +142,7 @@ The Menu button in the ribbon above the Documents table provides access to more 
 
 #### Details
 
-Reveals a preview of a selected document, including shortcuts to pre-populated fields such as Customer, Enterprise Company and Sales Person.
+Reveals a preview of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.
 
 You can also upload attachments and access the full document directly.
 
@@ -156,7 +156,7 @@ Displays the entire chain (sequence) for a selected document, allowing you to ac
 
 #### Tiles
 
-You can save a specific configuration of the My Documents page (including filters and grouping) as a **[tile](https://docs.erp.net/tech/modules/my/tiles/index.html)** for direct access.
+You can save a specific configuration of the My Documents page as a **[tile](https://docs.erp.net/tech/modules/my/tiles/index.html)** for direct access.
 
 ![pictures](pictures/documents_tile.png)
 
