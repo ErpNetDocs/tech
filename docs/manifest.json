@@ -17878,6 +17878,246 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/my/documents/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/documents/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/doc_assignment_customize.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/doc_assignment_customize.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/document_assignment.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/document_assignment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_count_distinct.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_count_distinct.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_customize_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_customize_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_customize_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_customize_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_details.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_doublegrouped.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_doublegrouped.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_enable_disable_items.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_enable_disable_items.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_export.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_flow.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_flow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_fullrow_feature.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_fullrow_feature.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_fullrow_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_fullrow_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_group_share.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_group_share.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_grouped.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_grouped.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_grouping_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_grouping_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_mainmenu.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_mainmenu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_panelmenu.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_panelmenu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_reorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_reorder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_searchbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_searchbar.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_share.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_share.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_summary.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_summary.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/my/documents/pictures/documents_tile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/my/documents/pictures/documents_tile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/my/favorites/index.md",
       "output": {
         ".html": {

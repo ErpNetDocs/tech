@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Documents | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Documents | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/my/documents/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="documents">Documents</h1>
+
+<p>The Documents screen is designed to centralize and display all documents in ERP.net that are relevant to a user's account. This includes documents you have created as well as those assigned to you.</p>
+<p>By offering instant access and various ways of customizing how documents are displayed, Documents is both flexible and time-saving, eliminating the need to search across different modules.</p>
+<p><img src="pictures/documents_overview.png" alt="pictures"></p>
+<h3 id="document-assignment">Document assignment</h3>
+<p>For a document to appear in the <strong>Documents</strong> environment, its <strong>Assigned To User</strong> field must be filled with the appropriate <strong>username</strong>.</p>
+<ul>
+<li>New documents are automatically assigned to <strong>the person creating them</strong> (i.e., the current user) by default.</li>
+<li>If you assign the document to someone else in your organization, it will appear in their Documents environment.</li>
+</ul>
+<p><img src="pictures/document_assignment.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the <strong>Assigned To User</strong> field is not visible in the document form, you need to reveal it manually with the <strong>Customize panel</strong> menu.</p>
+</div>
+<p><img src="pictures/doc_assignment_customize.png" alt="pictures"></p>
+<h2 id="interface">Interface</h2>
+<p>The screen is composed of a table containing all document records which are related to the currently logged-in user.</p>
+<p>It allows simple operations like searching, filtering, and sorting, as well as more advanced options.</p>
+<h3 id="top-bar-actions">Top bar actions</h3>
+<p>You can perform basic actions in the top bar above the table:</p>
+<ol>
+<li><strong>Reload:</strong> Refreshes the table to display the most up-to-date information.</li>
+<li><strong>Search:</strong> A dedicated search bar to quickly find documents by providing details like their number, date, or document type.</li>
+</ol>
+<p><img src="pictures/documents_searchbar.png" alt="pictures"></p>
+<h3 id="multi-select-and-export">Multi-select and export</h3>
+<p>You can select one or more documents and perform batch operations on them.</p>
+<p>Toggling the <strong>Multi select</strong> option from the panel Menu allows you to select multiple documents using checkboxes.</p>
+<p>The Export feature will become available as soon as one document is selected. This action exports the documents into an Excel file for external analysis or reporting.</p>
+<p><img src="pictures/documents_export.png" alt="pictures"></p>
+<h3 id="sharing">Sharing</h3>
+<p>One or multiple documents can be shared with others using the <strong>Share</strong> button in the ribbon.</p>
+<p>You can copy a <strong>direct link</strong> for the selected document, or share it to a <strong><a href="https://docs.erp.net/tech/modules/my/groups/index.html">group</a></strong> within your organization's collaborative environment.</p>
+<p><img src="pictures/documents_share.png" alt="pictures"></p>
+<p>The second option requires you to select a group and optionally add a comment.</p>
+<p><img src="pictures/documents_group_share.png" alt="pictures"></p>
+<h2 id="customization-and-navigation">Customization and navigation</h2>
+<p>My Documents provides extensive customization features to organize and display documents in a variety of ways.</p>
+<h3 id="panel-menu-options">Panel menu options</h3>
+<p>The <strong>vertical three-dot button</strong> at the upper-right corner of the Documents table contains a list of actions and layout controls.</p>
+<p><img src="pictures/documents_panelmenu.png" alt="pictures"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Menu Option</th>
+<th style="text-align: left;">Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Show filter row</strong></td>
+<td style="text-align: left;">Toggles the dedicated row beneath column headers for direct, column-specific filtering of the table.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Show grouping panel</strong></td>
+<td style="text-align: left;">Reveals a section above the table used for dragging column headers to apply document grouping.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Maximum row count</strong></td>
+<td style="text-align: left;">Adjusts the maximum number of document rows that the page loads and displays in the table.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Customize panel</strong></td>
+<td style="text-align: left;">Opens a configuration window to adjust column visibility and order within the main document grid.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grouping-panel">Grouping panel</h3>
+<p>The <strong>Show grouping panel</strong> feature allows you to arrange documents in a hierarchical order based on values in one or more column headers.</p>
+<p>When you enable it, an additional space with instructions will appear above the main table.</p>
+<p><img src="pictures/documents_grouping_panel.png" alt="pictures"></p>
+<p>To group, you need to <strong>drag and drop</strong> a column header into that area.</p>
+<p>The table will automatically be re-organized to show documents grouped based on the column you selected.</p>
+<p><img src="pictures/documents_grouped.png" alt="pictures"></p>
+<p>You can create <strong>multi-level grouping</strong> by dragging multiple column headers.</p>
+<p>The first column dragged creates the primary level of groups, and subsequent columns create subgroups (e.g., first grouping by Document Date, then by Document Type).</p>
+<p><img src="pictures/documents_doublegrouped.png" alt="pictures"></p>
+<h3 id="summary">Summary</h3>
+<p>The Summary feature provides useful statistical information for each Document table column.</p>
+<p>Simply right-click on a column header and select <strong>Summary</strong>.</p>
+<p><img src="pictures/documents_summary.png" alt="pictures"></p>
+<ul>
+<li><strong>Count</strong>: Calculates the total number of documents where a value is present in that column.</li>
+<li><strong>Distinct</strong>: Counts the number of unique values in the field (e.g., the number of unique states, ignoring repetitions).</li>
+</ul>
+<p>Fields with a number data type also offer functions like <strong>Max</strong> and <strong>Min</strong> values.</p>
+<p><img src="pictures/documents_count_distinct.png" alt="pictures"></p>
+<h3 id="panel-customization">Panel customization</h3>
+<p>You can manage the Documents table's appearance via the <strong>Customize panel</strong> option accessible from the panel Menu.</p>
+<p>This will open a window consisting of two tabs:</p>
+<h4 id="items">Items</h4>
+<p>Allows you to hide or reveal columns by toggling the slider next to the column name.</p>
+<p><img src="pictures/documents_enable_disable_items.png" alt="pictures"></p>
+<h4 id="reorder">Reorder</h4>
+<p>Allows you to change the sequence of column headers by dragging and dropping them up or down the list.</p>
+<p><img src="pictures/documents_reorder.png" alt="pictures"></p>
+<p>You can further restructure the table using the <strong>Position</strong> settings for each column.</p>
+<p>By default, columns are set to Column mode, but you can make some of them take up an entire row.</p>
+<p><img src="pictures/documents_fullrow_feature.png" alt="pictures"></p>
+<h3 id="main-menu">Main menu</h3>
+<p>The Menu button in the ribbon above the Documents table provides access to more page-oriented and document-specific features.</p>
+<p><img src="pictures/documents_mainmenu.png" alt="pictures"></p>
+<h4 id="details">Details</h4>
+<p>Reveals a preview of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.</p>
+<p>You can also upload attachments and access the full document directly.</p>
+<p><img src="pictures/documents_details.png" alt="pictures"></p>
+<h4 id="document-flow">Document flow</h4>
+<p>Displays the entire chain (sequence) for a selected document, allowing you to access documents that came before and after it.</p>
+<p><img src="pictures/documents_flow.png" alt="pictures"></p>
+<h4 id="tiles">Tiles</h4>
+<p>You can save a specific configuration of the My Documents page as a <strong><a href="https://docs.erp.net/tech/modules/my/tiles/index.html">tile</a></strong> for direct access.</p>
+<p><img src="pictures/documents_tile.png" alt="pictures"></p>
+<h4 id="customize-form">Customize form</h4>
+<p>Opens the main customization window, allowing you to hide or reveal entire panels and widgets on the screen.</p>
+<p><img src="pictures/documents_customize_page.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/my/documents/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
