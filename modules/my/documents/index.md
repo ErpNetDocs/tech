@@ -8,10 +8,14 @@ By offering instant access and various ways of customizing how documents are dis
 
 ### Document assignment
 
-For a document to appear in the **Documents** environment, its **Assigned To User** field must be filled with the appropriate **username**.
+For a document to appear in the **Documents** environment: 
 
-* New documents are automatically assigned to **the person creating them** (i.e., the current user) by default.
-* If you assign the document to someone else in your organization, it will appear in their Documents environment.
+* It must be of state "Released" or higher.
+* The **Assigned To User** field must be filled with the appropriate **username**.
+
+New documents are automatically assigned to **the person creating them** (i.e., the current user) by default.
+
+If you assign the document to someone else in your organization, it will appear in their Documents environment.
 
 ![pictures](pictures/document_assignment.png)
 
@@ -23,7 +27,7 @@ For a document to appear in the **Documents** environment, its **Assigned To U
 
 ## Interface
 
-The screen is composed of a table containing all document records which are related to the currently logged-in user.
+The screen consits of a table containing all document records which are assigned to the currently logged-in user.
 
 It allows simple operations like searching, filtering, and sorting, as well as more advanced options.
 
@@ -36,25 +40,25 @@ You can perform basic actions in the top bar above the table:
 
 ![pictures](pictures/documents_searchbar.png)
 
-### Multi-select and export
+### Multi-select actions
 
 You can select one or more documents and perform batch operations on them.
 
 Toggling the **Multi select** option from the panel Menu allows you to select multiple documents using checkboxes.
 
-The Export feature will become available as soon as one document is selected. This action exports the documents into an Excel file for external analysis or reporting.
+The **Export** feature will become available as soon as one document is selected. This action exports documents into Excel files for external analysis or reporting.
 
 ![pictures](pictures/documents_export.png)
 
 ### Sharing 
 
-One or multiple documents can be shared with others using the **Share** button in the ribbon.
+When you select one or more documents, you can share them with others using the **Share** button in the ribbon.
 
-You can copy a **direct link** for the selected document, or share it to a **[group](https://docs.erp.net/tech/modules/my/groups/index.html)** within your organization's collaborative environment.
+You can copy a **direct link** for your selection, or share it to a **[group](https://docs.erp.net/tech/modules/my/groups/index.html)** within your organization's collaborative environment.
 
 ![pictures](pictures/documents_share.png)
 
-The second option requires you to select a group and optionally add a comment.
+The second option requires you to select that group and optionally add a comment.
 
 ![pictures](pictures/documents_group_share.png)
 
@@ -70,16 +74,16 @@ The **vertical three-dot button** at the upper-right corner of the Documents tab
 
 | Menu Option | Functionality |
 | :--- | :--- |
-| **Show filter row** | Toggles the dedicated row beneath column headers for direct, column-specific filtering of the table. |
-| **Show grouping panel** | Reveals a section above the table used for dragging column headers to apply document grouping. |
-| **Maximum row count** | Adjusts the maximum number of document rows that the page loads and displays in the table. |
-| **Customize panel** | Opens a configuration window to adjust column visibility and order within the main document grid. |
+| **Show filter row** | Toggles an additional row below each header for column-specific filtering of the table, e.g. using **[period expressions](https://docs.erp.net/webclient/introduction/how-to/period-expressions.html?q=expression)**. |
+| **Show grouping panel** | Reveals a section above the table used for dragging column headers to apply complex document grouping. |
+| **Maximum row count** | Adjusts the maximum number of document rows that the page displays in the table. |
+| **Customize panel** | Opens a window to adjust column visibility and order within the main document grid. |
 
 ### Grouping panel
 
 The **Show grouping panel** feature allows you to arrange documents in a hierarchical order based on values in one or more column headers.
 
-When you enable it, an additional space with instructions will appear above the main table.
+When you enable it, an additional space with instructions will appear above the columns.
 
 ![pictures](pictures/documents_grouping_panel.png)
 
@@ -91,13 +95,13 @@ The table will automatically be re-organized to show documents grouped based on 
 
 You can create **multi-level grouping** by dragging multiple column headers. 
 
-The first column dragged creates the primary level of groups, and subsequent columns create subgroups (e.g., first grouping by Document Date, then by Document Type).
+The first column creates the primary level of groups, and subsequent columns create subgroups (e.g., first grouping by Document Date, then by Document Type).
 
 ![pictures](pictures/documents_doublegrouped.png)
 
 ### Summary
 
-The Summary feature provides useful statistical information for each Document table column.
+The Summary feature provides useful statistical information for each table column.
 
 Simply right-click on a column header and select **Summary**.
 
@@ -105,14 +109,13 @@ Simply right-click on a column header and select **Summary**.
 
 * **Count**: Calculates the total number of documents where a value is present in that column.
 * **Distinct**: Counts the number of unique values in the field (e.g., the number of unique states, ignoring repetitions).
-
-Fields with a number data type also offer functions like **Max** and **Min** values.
+* Fields with a number data type also offer functions like **Max** and **Min** values.
 
 ![pictures](pictures/documents_count_distinct.png)
 
 ### Panel customization
 
-You can manage the Documents table's appearance via the **Customize panel** option accessible from the panel Menu.
+You can manage the Documents table's appearance via the **Customize panel** option.
 
 This will open a window consisting of two tabs:
 
@@ -134,7 +137,7 @@ By default, columns are set to Column mode, but you can make some of them take u
 
 ![pictures](pictures/documents_fullrow_feature.png)
 
-### Main menu
+### Page actions and customization
 
 The Menu button in the ribbon above the Documents table provides access to more page-oriented and document-specific features.
 
@@ -142,7 +145,7 @@ The Menu button in the ribbon above the Documents table provides access to more 
 
 #### Details
 
-Reveals a preview of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.
+Reveals a side panel **preview** of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.
 
 You can also upload attachments and access the full document directly.
 
@@ -150,7 +153,7 @@ You can also upload attachments and access the full document directly.
 
 #### Document flow
 
-Displays the entire chain (sequence) for a selected document, allowing you to access documents that came before and after it.
+Displays a side panel containing the entire chain (sequence) for a selected document, allowing you to access documents that came before and after it.
 
 ![pictures](pictures/documents_flow.png)
 
