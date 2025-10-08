@@ -18117,6 +18117,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "modules/my/documents/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/my/documents/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/my/documents/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/my/favorites/index.md",
       "output": {

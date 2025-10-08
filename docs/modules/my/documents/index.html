@@ -91,11 +91,13 @@
 <p>By offering instant access and various ways of customizing how documents are displayed, Documents is both flexible and time-saving, eliminating the need to search across different modules.</p>
 <p><img src="pictures/documents_overview.png" alt="pictures"></p>
 <h3 id="document-assignment">Document assignment</h3>
-<p>For a document to appear in the <strong>Documents</strong> environment, its <strong>Assigned To User</strong> field must be filled with the appropriate <strong>username</strong>.</p>
+<p>For a document to appear in the <strong>Documents</strong> environment:</p>
 <ul>
-<li>New documents are automatically assigned to <strong>the person creating them</strong> (i.e., the current user) by default.</li>
-<li>If you assign the document to someone else in your organization, it will appear in their Documents environment.</li>
+<li>It must be of state &quot;Released&quot; or higher.</li>
+<li>The <strong>Assigned To User</strong> field must be filled with the appropriate <strong>username</strong>.</li>
 </ul>
+<p>New documents are automatically assigned to <strong>the person creating them</strong> (i.e., the current user) by default.</p>
+<p>If you assign the document to someone else in your organization, it will appear in their Documents environment.</p>
 <p><img src="pictures/document_assignment.png" alt="pictures"></p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -103,7 +105,7 @@
 </div>
 <p><img src="pictures/doc_assignment_customize.png" alt="pictures"></p>
 <h2 id="interface">Interface</h2>
-<p>The screen is composed of a table containing all document records which are related to the currently logged-in user.</p>
+<p>The screen consits of a table containing all document records which are assigned to the currently logged-in user.</p>
 <p>It allows simple operations like searching, filtering, and sorting, as well as more advanced options.</p>
 <h3 id="top-bar-actions">Top bar actions</h3>
 <p>You can perform basic actions in the top bar above the table:</p>
@@ -112,16 +114,16 @@
 <li><strong>Search:</strong> A dedicated search bar to quickly find documents by providing details like their number, date, or document type.</li>
 </ol>
 <p><img src="pictures/documents_searchbar.png" alt="pictures"></p>
-<h3 id="multi-select-and-export">Multi-select and export</h3>
+<h3 id="multi-select-actions">Multi-select actions</h3>
 <p>You can select one or more documents and perform batch operations on them.</p>
 <p>Toggling the <strong>Multi select</strong> option from the panel Menu allows you to select multiple documents using checkboxes.</p>
-<p>The Export feature will become available as soon as one document is selected. This action exports the documents into an Excel file for external analysis or reporting.</p>
+<p>The <strong>Export</strong> feature will become available as soon as one document is selected. This action exports documents into Excel files for external analysis or reporting.</p>
 <p><img src="pictures/documents_export.png" alt="pictures"></p>
 <h3 id="sharing">Sharing</h3>
-<p>One or multiple documents can be shared with others using the <strong>Share</strong> button in the ribbon.</p>
-<p>You can copy a <strong>direct link</strong> for the selected document, or share it to a <strong><a href="https://docs.erp.net/tech/modules/my/groups/index.html">group</a></strong> within your organization's collaborative environment.</p>
+<p>When you select one or more documents, you can share them with others using the <strong>Share</strong> button in the ribbon.</p>
+<p>You can copy a <strong>direct link</strong> for your selection, or share it to a <strong><a href="https://docs.erp.net/tech/modules/my/groups/index.html">group</a></strong> within your organization's collaborative environment.</p>
 <p><img src="pictures/documents_share.png" alt="pictures"></p>
-<p>The second option requires you to select a group and optionally add a comment.</p>
+<p>The second option requires you to select that group and optionally add a comment.</p>
 <p><img src="pictures/documents_group_share.png" alt="pictures"></p>
 <h2 id="customization-and-navigation">Customization and navigation</h2>
 <p>My Documents provides extensive customization features to organize and display documents in a variety of ways.</p>
@@ -138,44 +140,44 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Show filter row</strong></td>
-<td style="text-align: left;">Toggles the dedicated row beneath column headers for direct, column-specific filtering of the table.</td>
+<td style="text-align: left;">Toggles an additional row below each header for column-specific filtering of the table, e.g. using <strong><a href="https://docs.erp.net/webclient/introduction/how-to/period-expressions.html?q=expression">period expressions</a></strong>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Show grouping panel</strong></td>
-<td style="text-align: left;">Reveals a section above the table used for dragging column headers to apply document grouping.</td>
+<td style="text-align: left;">Reveals a section above the table used for dragging column headers to apply complex document grouping.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Maximum row count</strong></td>
-<td style="text-align: left;">Adjusts the maximum number of document rows that the page loads and displays in the table.</td>
+<td style="text-align: left;">Adjusts the maximum number of document rows that the page displays in the table.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Customize panel</strong></td>
-<td style="text-align: left;">Opens a configuration window to adjust column visibility and order within the main document grid.</td>
+<td style="text-align: left;">Opens a window to adjust column visibility and order within the main document grid.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="grouping-panel">Grouping panel</h3>
 <p>The <strong>Show grouping panel</strong> feature allows you to arrange documents in a hierarchical order based on values in one or more column headers.</p>
-<p>When you enable it, an additional space with instructions will appear above the main table.</p>
+<p>When you enable it, an additional space with instructions will appear above the columns.</p>
 <p><img src="pictures/documents_grouping_panel.png" alt="pictures"></p>
 <p>To group, you need to <strong>drag and drop</strong> a column header into that area.</p>
 <p>The table will automatically be re-organized to show documents grouped based on the column you selected.</p>
 <p><img src="pictures/documents_grouped.png" alt="pictures"></p>
 <p>You can create <strong>multi-level grouping</strong> by dragging multiple column headers.</p>
-<p>The first column dragged creates the primary level of groups, and subsequent columns create subgroups (e.g., first grouping by Document Date, then by Document Type).</p>
+<p>The first column creates the primary level of groups, and subsequent columns create subgroups (e.g., first grouping by Document Date, then by Document Type).</p>
 <p><img src="pictures/documents_doublegrouped.png" alt="pictures"></p>
 <h3 id="summary">Summary</h3>
-<p>The Summary feature provides useful statistical information for each Document table column.</p>
+<p>The Summary feature provides useful statistical information for each table column.</p>
 <p>Simply right-click on a column header and select <strong>Summary</strong>.</p>
 <p><img src="pictures/documents_summary.png" alt="pictures"></p>
 <ul>
 <li><strong>Count</strong>: Calculates the total number of documents where a value is present in that column.</li>
 <li><strong>Distinct</strong>: Counts the number of unique values in the field (e.g., the number of unique states, ignoring repetitions).</li>
+<li>Fields with a number data type also offer functions like <strong>Max</strong> and <strong>Min</strong> values.</li>
 </ul>
-<p>Fields with a number data type also offer functions like <strong>Max</strong> and <strong>Min</strong> values.</p>
 <p><img src="pictures/documents_count_distinct.png" alt="pictures"></p>
 <h3 id="panel-customization">Panel customization</h3>
-<p>You can manage the Documents table's appearance via the <strong>Customize panel</strong> option accessible from the panel Menu.</p>
+<p>You can manage the Documents table's appearance via the <strong>Customize panel</strong> option.</p>
 <p>This will open a window consisting of two tabs:</p>
 <h4 id="items">Items</h4>
 <p>Allows you to hide or reveal columns by toggling the slider next to the column name.</p>
@@ -186,15 +188,15 @@
 <p>You can further restructure the table using the <strong>Position</strong> settings for each column.</p>
 <p>By default, columns are set to Column mode, but you can make some of them take up an entire row.</p>
 <p><img src="pictures/documents_fullrow_feature.png" alt="pictures"></p>
-<h3 id="main-menu">Main menu</h3>
+<h3 id="page-actions-and-customization">Page actions and customization</h3>
 <p>The Menu button in the ribbon above the Documents table provides access to more page-oriented and document-specific features.</p>
 <p><img src="pictures/documents_mainmenu.png" alt="pictures"></p>
 <h4 id="details">Details</h4>
-<p>Reveals a preview of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.</p>
+<p>Reveals a side panel <strong>preview</strong> of a selected document, including shortcuts to fields such as Customer, Enterprise Company and Sales Person.</p>
 <p>You can also upload attachments and access the full document directly.</p>
 <p><img src="pictures/documents_details.png" alt="pictures"></p>
 <h4 id="document-flow">Document flow</h4>
-<p>Displays the entire chain (sequence) for a selected document, allowing you to access documents that came before and after it.</p>
+<p>Displays a side panel containing the entire chain (sequence) for a selected document, allowing you to access documents that came before and after it.</p>
 <p><img src="pictures/documents_flow.png" alt="pictures"></p>
 <h4 id="tiles">Tiles</h4>
 <p>You can save a specific configuration of the My Documents page as a <strong><a href="https://docs.erp.net/tech/modules/my/tiles/index.html">tile</a></strong> for direct access.</p>
