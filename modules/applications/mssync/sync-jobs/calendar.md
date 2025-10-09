@@ -33,11 +33,14 @@ This is required when creating new activities in @@name. Since an activity is es
 3. **Each user must enable their own synchronization**
 
 Each user is responsible for enabling their own synchronization setting.  
+
+> **Important:** Synchronization is only executed for activities created by users who have synchronization enabled.
+
 For example:  
-- User1 creates an activity and includes User2 as a participant.  
-- The activity will only appear in Outlook if User1 has synchronization enabled.  
-- The same applies in reverse.
-  
+- User1 creates an activity and includes User2 as a participant.
+- The activity will appear in Outlook **only if User1** (the creator) has synchronization enabled.
+- If **User2** has synchronization enabled but **User1** does not, the activity will **not** appear in Outlook.
+- The same rule applies in reverse: when User2 creates an activity, it will only synchronize if **User2** has synchronization enabled.
 
 ## Initial sync (first-time synchronization)
 
