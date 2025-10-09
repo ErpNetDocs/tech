@@ -110,12 +110,16 @@
 <ol start="3">
 <li><strong>Each user must enable their own synchronization</strong></li>
 </ol>
-<p>Each user is responsible for enabling their own synchronization setting.<br>
-For example:</p>
+<p>Each user is responsible for enabling their own synchronization setting.</p>
+<blockquote>
+<p><strong>Important:</strong> Synchronization is only executed for activities created by users who have synchronization enabled.</p>
+</blockquote>
+<p>For example:</p>
 <ul>
 <li>User1 creates an activity and includes User2 as a participant.</li>
-<li>The activity will only appear in Outlook if User1 has synchronization enabled.</li>
-<li>The same applies in reverse.</li>
+<li>The activity will appear in Outlook <strong>only if User1</strong> (the creator) has synchronization enabled.</li>
+<li>If <strong>User2</strong> has synchronization enabled but <strong>User1</strong> does not, the activity will <strong>not</strong> appear in Outlook.</li>
+<li>The same rule applies in reverse: when User2 creates an activity, it will only synchronize if <strong>User2</strong> has synchronization enabled.</li>
 </ul>
 <h2 id="initial-sync-first-time-synchronization">Initial sync (first-time synchronization)</h2>
 <ol>
