@@ -122,7 +122,7 @@ The AvailabilityMax value is taken from the **[ATPBase](https://docs.erp.net/mod
 To enforce the rule, enter the following **value** in the Settings field:
 
 ```
-{"AvailabilityMax": <number>}
+{"AvailabilityMax": number}
 ```
 
 where <number> is an integer representing the maximum pcs that can be directly visualized in the **Availability** column.
