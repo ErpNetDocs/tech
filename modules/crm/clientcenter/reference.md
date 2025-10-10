@@ -101,7 +101,7 @@ You can set a default store for every **[new order](https://docs.erp.net/tech/mo
 To set a default store, enter the following **value** in the Settings field:
 
 ```
-{"DefaultStore": "ID"}
+{"DefaultStore": "Store.Code"}
 ```
 
 where ID is the identifier of the store (e.g. 00002).
