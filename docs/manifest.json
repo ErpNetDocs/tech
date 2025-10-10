@@ -10343,6 +10343,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/products/product_relation_types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product_relation_types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/product_relations.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product_relations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/products/serial-numbers/index.md",
       "output": {
         ".html": {

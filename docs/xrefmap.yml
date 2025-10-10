@@ -421,6 +421,12 @@ references:
 - uid: parcers
   name: Barcode Parsers
   href: modules/logistics/wms/how-it-works/barcode-parsers/index.html
+- uid: product-relation-types
+  name: Product Relation Types
+  href: modules/general/products/product_relation_types.html
+- uid: product-relations
+  name: Product Relations
+  href: modules/general/products/product_relations.html
 - uid: project-areas
   name: project-areas
   href: modules/projects/agile/configuration-and-structure/project-definitions/project-areas.html

@@ -139,7 +139,7 @@
 <h2 id="defaultstore-setting">DefaultStore setting</h2>
 <p>You can set a default store for every <strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/orders/new-order.html">new order</a></strong> created in the Client Center. This is a prerequisite when you want to see the actual availability when adding quantities of a product to the order, as long as an AvailabilityMax setting is also in place.</p>
 <p>To set a default store, enter the following <strong>value</strong> in the Settings field:</p>
-<pre><code>{&quot;DefaultStore&quot;: &quot;ID&quot;}
+<pre><code>{&quot;DefaultStore&quot;: &quot;Store.Code&quot;}
 </code></pre>
 <p>where ID is the identifier of the store (e.g. 00002).</p>
 <h2 id="availabilitymax-setting">AvailabilityMax setting</h2>
@@ -153,7 +153,7 @@
 <li><strong>FromDate</strong> = latest date ≤ today</li>
 </ul>
 <p>To enforce the rule, enter the following <strong>value</strong> in the Settings field:</p>
-<pre><code>{&quot;AvailabilityMax&quot;: &lt;number&gt;}
+<pre><code>{&quot;AvailabilityMax&quot;: number}
 </code></pre>
 <p>where <number> is an integer representing the maximum pcs that can be directly visualized in the <strong>Availability</strong> column.</number></p>
 <h2 id="sitechannel-setting">SiteChannel setting</h2>
