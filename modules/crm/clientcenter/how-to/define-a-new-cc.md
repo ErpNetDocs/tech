@@ -1,6 +1,6 @@
 # How to set up a Client Center
 
-This article provides a step-by-step guide on creating a Client Center website through @@name.
+This article provides a step-by-step guide on creating a Client Center website through @name.
 
 > [!Note]
 > 
