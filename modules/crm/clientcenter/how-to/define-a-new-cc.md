@@ -46,7 +46,7 @@ Upon accessing the **New Web Site** form, you need to enter relevant data into t
 
 ## Apply platform settings
 
-Like all ERP websites, the Client Center can have certain settings applied for it. This includes visual and functional modifications. 
+Тhe Client Center can have certain settings applied for it. This includes visual and functional modifications. 
 
 Below are important settings you can apply to the Client Center: 
 
