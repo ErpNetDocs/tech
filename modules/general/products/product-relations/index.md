@@ -55,7 +55,7 @@ Its purpose is to ensure that product interactions — such as replacements, com
 ## Examples per system relation type
 
 |System Type|	Example|	Description|
-|----------|---------|-------------|
+|--------------|------------------|----------------|
 |Generic (GEN)	| Product A ↔ Product B|	A general link between two products, e.g., products that are frequently used together in projects or documentation, without specific system logic.|
 |Replacement (RPL)	|Old Filter X → New Filter Y	|Product Y replaces product X after it is discontinued. The system automatically suggests Y as a valid substitute in orders or work documents.|
 |Merchandising (MRC)	|Laptop → Wireless Mouse|	Defines a cross-sell or upsell relation. When Laptop is viewed or added to cart, the system suggests compatible accessories like the Wireless Mouse.|
