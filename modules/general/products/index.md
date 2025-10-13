@@ -24,7 +24,7 @@ For more information, see [Product groups](https://docs.erp.net/tech/modules/gen
 - [Product codes](https://docs.erp.net/tech/modules/general/products/product-codes.html?q=Product%20Codes)
 - [Product dimensions](https://docs.erp.net/tech/modules/general/products/product-dimensions/index.html?q=Product%20Dimensions)
 - Product pictures
-- Products - business rules
+- [Products - business rules](https://docs.erp.net/model/entities/General.Products.Products.html#business-rules)
 - [Product types](https://docs.erp.net/tech/modules/general/products/product-types/index.html?q=Product%20Types)
 - [Serial numbers](https://docs.erp.net/tech/modules/general/products/serial-numbers/index.html?q=Serial%20Numbers)
 - [Variable (dynamic) measurement ratios](https://docs.erp.net/tech/modules/general/products/variable-dynamic-measurement-rations.html?q=Variable%20(dynamic)%20measurement%20ratio)
