@@ -10320,6 +10320,36 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/products/product-relations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product-relations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/product-relations/product_relation_types.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product-relations/product_relation_types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/products/product-relations/product_relations.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product-relations/product_relations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/products/product-types/index.md",
       "output": {
         ".html": {
@@ -10337,26 +10367,6 @@
         },
         ".json": {
           "relative_path": "modules/general/products/product-types/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/general/products/product_relation_types.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/general/products/product_relation_types.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "modules/general/products/product_relations.md",
-      "output": {
-        ".html": {
-          "relative_path": "modules/general/products/product_relations.html"
         }
       },
       "version": ""

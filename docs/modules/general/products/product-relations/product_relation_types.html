@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Product Relation Types | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Product Relation Types | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-relations/product_relation_types.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="product-relation-types">
+<h1 id="product-relation-types">Product Relation Types</h1>
+
+<p>The Product Relation Types framework defines a unified and extensible model for representing various relationships between products within the system.
+Its main purpose is to allow consistent storage, management, and functional use of product-to-product relations such as replacements, compatibility, merchandising, and other custom links.</p>
+<p>In other words, it provides a single, structured way to describe how products relate to each other — functionally, commercially, or technically.</p>
+<h1 id="system-type-relations">System Type Relations</h1>
+<h2 id="1-generic-gen">1. Generic (GEN)</h2>
+<ul>
+<li><p>Description:
+A general or neutral link between two products without any built-in business logic.</p>
+</li>
+<li><p>Expected behavior:
+The system only stores and displays the relation; no automatic actions are triggered.
+Used for free associations or for future relation types that don’t fit into other categories.</p>
+</li>
+</ul>
+<h2 id="2-replacement-rpl">2. Replacement (RPL)</h2>
+<ul>
+<li><p>Description:
+Defines a relation where one product can replace another.</p>
+</li>
+<li><p>Expected behavior:</p>
+</li>
+</ul>
+<p>The system should provide one-click replacement in all processes where a product is selected (e.g., SalesOrder, WorkOrder).
+When a product is discontinued, invalid, or out of stock, the system automatically suggests a valid replacement (ToProduct).
+The Qty_Factor field is used to calculate adjusted quantities during replacement (e.g., 1 X = 2 Y).
+Relation validity is controlled by FromDate and ToDate.
+Can be used to model a supersession chain — tracking product replacements over time.</p>
+<h2 id="3-merchandising-mrc">3. Merchandising (MRC)</h2>
+<ul>
+<li><p>Description:
+A relation for commercial or marketing purposes — e.g., upsell, cross-sell, similarity, or accessories.</p>
+</li>
+<li><p>Expected behavior:</p>
+</li>
+</ul>
+<p>The system should use these relations to automatically suggest related products in the UI (Product Details, Cart, Sales screens, etc.).
+Subtypes can be defined via the Code field (e.g., UPSELL, CROSSSELL, SIMILAR).
+Relations can be time-bound using FromDate and ToDate (e.g., seasonal campaigns).
+Data can also be used for analytics such as attach rate, conversion uplift, and similar KPIs.</p>
+<h2 id="4-fitment-fit">4. Fitment (FIT)</h2>
+<ul>
+<li><p>Description:
+Defines compatibility between products — i.e., which products can be used together in configurations, technologies, or documents.</p>
+</li>
+<li><p>Expected behavior:</p>
+</li>
+</ul>
+<p>When a product is selected in a configuration, the system should filter or validate the available compatible products.
+Relations can be one-directional or bi-directional depending on the domain logic.
+Commonly used for verifying correctness in product recipes, technical documents, or assemblies.</p>
+<h2 id="summary">Summary:</h2>
+<table>
+<thead>
+<tr>
+<th>SystemType</th>
+<th>Code</th>
+<th>Purpose</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generic</td>
+<td>GEN</td>
+<td>Free / universal relation</td>
+<td>Only record and display; no functional behavior.</td>
+</tr>
+<tr>
+<td>Replacement</td>
+<td>RPL</td>
+<td>Product substitution</td>
+<td>One-click replacement; Qty_Factor; date validity.</td>
+</tr>
+<tr>
+<td>Merchandising</td>
+<td>MRC</td>
+<td>Commercial / marketing relation</td>
+<td>Automatic recommendations (upsell, cross-sell, accessories).</td>
+</tr>
+<tr>
+<td>Fitment</td>
+<td>FIT</td>
+<td>Product compatibility</td>
+<td>Filtering and validation of compatible products.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="understanding-replacement-and-fitment">Understanding Replacement and Fitment</h1>
+<p>You may stumble upon a pair of products and struggle with identifying their relation, as it would not definitiely be categorized as one type or the other at once.
+For example there are these two products: Tyre model A, by manufacturer X, and Tyre model B, by manufacturer Y.
+To determine the relation we need to clarify the semantic difference between Replacement and Fitment, even when they can coexist for the same pair of products.</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Replacement RPL</th>
+<th>Fitment FIT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meaning</td>
+<td>Product A can be used instead of product B. They are functionally interchangeable for the same purpose.</td>
+<td>Product A is compatible with product B or with a system/context that uses B. They work together, but not necessarily instead of one another.</td>
+</tr>
+<tr>
+<td>Direction</td>
+<td>Typically one-directional (A replaces B). May imply product lifecycle or equivalence.</td>
+<td>Often bi-directional or contextual (A fits B, B fits A, or A fits into C).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Old Tyre Model T100 → New Tyre Model T200 (same specs, new generation).</td>
+<td>Tyre Model T200 fits on Vehicle Model X (defines compatibility).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relations may overlap — two products can both fit the same system and replace each other.</strong></p>
+<p>The same pair of products can simultaneously have both</p>
+<ul>
+<li>a FIT (Fitment) relation → because they fit the same technical context,</li>
+<li>and a RPL (Replacement) relation → because one can substitute the other functionally.</li>
+</ul>
+<p><em>Fitment relation</em></p>
+<p>Tyre A (Manufacturer X) and Tyre B (Manufacturer Y) may both fit the same vehicle or rim specification.
+This means they are fitment-compatible — they serve the same functional context. Fitment (FIT): “can work with” → focuses on compatibility.</p>
+<p><em>Replacement relation:</em></p>
+<p>If Tyre A can be sold or used in place of Tyre B (e.g., same dimensions, load index, performance spec), then they can also have a Replacement relation between them.
+Replacement (RPL): “can be used instead of” → focuses on interchangeability.</p>
+<p>Modeling both relations explicitly keeps system logic clean and unambiguous.</p>
+<h1 id="defining-companys-product-relation-types">Defining company's Product Relation Types</h1>
+<p>Each organization has its own business-specific needs and may require finer distinctions or naming for product relations within these system categories.
+This is where custom Product Relation Types come into play.</p>
+<p>Defining your own relation types allows you to:</p>
+<ul>
+<li><p>Describe relations more precisely - the system types define the behavior — but not the meaning. Custom types (via Code and Name) let you label relations according to your business context.
+<br>Example: within RPL, you might define separate types for SUPERSESSION, ALTERNATIVE, or EQUIVALENT.</p>
+</li>
+<li><p>Enable targeted system logic or reporting - you can filter, report, or automate processes based on your own defined type
+<br>Example: only ALTERNATIVE replacements appear in offers, while SUPERSESSION replacements are applied automatically.</p>
+</li>
+<li><p>Support clear communication and governance - each type documents the intended purpose of a relationship, helping teams avoid confusion
+<br>Example: differentiating “marketing accessories” from “technical accessories” under the same MRC category.</p>
+</li>
+<li><p>Extend functionality without changing system code - new types can be added dynamically without database or code changes
+<br>Example: If your business introduces bundle relations, you can simply define a new type BUNDLE under SystemType = MRC.</p>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-relations/product_relation_types.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
