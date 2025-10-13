@@ -15,19 +15,19 @@ It provides a single, structured way to describe how products relate to each oth
 
 ## 1. Generic (GEN)
 
-   Description:
+   - Description:
 A general or neutral link between two products without any built-in business logic.
 
-   Expected behavior:
+   - Expected behavior:
 The system only stores and displays the relation; no automatic actions are triggered.
 Used for free associations or for future relation types that don’t fit into other categories.
 
 ## 2. Replacement (RPL)
 
-   Description:
+- Description:
 Defines a relation where one product can replace another.
 
-   Expected behavior:
+- Expected behavior:
 
 The system should provide one-click replacement in all processes where a product is selected (e.g., SalesOrder, WorkOrder).
 
@@ -41,10 +41,10 @@ Can be used to model a supersession chain — tracking product replacements over
 
 ## 3. Merchandising (MRC)
 
-   Description:
+   - Description:
 A relation for commercial or marketing purposes — e.g., upsell, cross-sell, similarity, or accessories.
 
-   Expected behavior:
+  -  Expected behavior:
 
 The system should use these relations to automatically suggest related products in the UI (Product Details, Cart, Sales screens, etc.).
 
@@ -56,10 +56,10 @@ Data can also be used for analytics such as attach rate, conversion uplift, and 
 
 ## 4. Fitment (FIT)
 
-   Description:
+  - Description:
 Defines compatibility between products — i.e., which products can be used together in configurations, technologies, or documents.
 
-   Expected behavior:
+   - Expected behavior:
 
 When a product is selected in a configuration, the system should filter or validate the available compatible products.
 
@@ -67,8 +67,7 @@ Relations can be one-directional or bi-directional depending on the domain logic
 
 Commonly used for verifying correctness in product recipes, technical documents, or assemblies.
 
-May also be shown in UI sections such as “Compatible With” or “Applicable To.”
-
+## Summary:
 
 |SystemType |	Code|	Purpose| Behaviour|
 |-----------|-----|--------|----------|
