@@ -11,7 +11,7 @@ In other words:
 
 It provides a single, structured way to describe how products relate to each other — functionally, commercially, or technically.
 
-# System Type Relations — Expected Behavior per Product Relation Type
+# System Type Relations 
 
 ## 1. Generic (GEN)
 
