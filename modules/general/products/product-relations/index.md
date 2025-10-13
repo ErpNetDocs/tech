@@ -40,16 +40,17 @@ Its purpose is to ensure that product interactions — such as replacements, com
 ### Functional Scope
 
 - **Sales and Order Management**
-<br>Supports one-click product replacement (RPL) when a product is discontinued, and displays alternative or related items to sales users.
-- E-Commerce and Customer
-  Portals	Provides product recommendations based on merchandising (MRC) links such as upsell, cross-sell, or accessories.
-- Production and Work Orders
-  Uses replacement and fitment (RPL, FIT) relations to validate compatible materials, tools, or components during production planning.
-- Product Configuration and Bill of Materials (BOM) Management
-  Ensures component compatibility (FIT) and enables potential integration with or replacement of existing BOM structures.
-- After-Sales and Service Management
-  Helps technicians identify suitable replacement parts (RPL) or compatible alternatives for maintenance and repairs.
-Product Information Management (PIM)	Maintains a centralized, structured source of truth for all product relationships, ensuring consistent data distribution across systems.
+  <br> Supports one-click product replacement (RPL) when a product is discontinued, and displays alternative or related items to sales users.
+- **E-Commerce and Customer Portals**
+  <br> Provides product recommendations based on merchandising (MRC) links such as upsell, cross-sell, or accessories.
+- **Production and Work Orders**
+  <br> Uses replacement and fitment (RPL, FIT) relations to validate compatible materials, tools, or components during production planning.
+- **Product Configuration and Bill of Materials (BOM) Management**
+  <br> Ensures component compatibility (FIT) and enables potential integration with or replacement of existing BOM structures.
+- **After-Sales and Service Management**
+  <br>Helps technicians identify suitable replacement parts (RPL) or compatible alternatives for maintenance and repairs.
+- **Product Information Management (PIM)**
+  <br> Maintains a centralized, structured source of truth for all product relationships, ensuring consistent data distribution across systems.
    
 ## Examples per system relation type
 
