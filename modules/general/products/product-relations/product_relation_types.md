@@ -100,5 +100,22 @@ Modeling both relations explicitly keeps system logic clean and unambiguous.
 Each organization has its own business-specific needs and may require finer distinctions or naming for product relations within these system categories.
 This is where custom Product Relation Types come into play.
 
+Defining your own relation types allows you to:
+
+- Describe relations more precisely - the system types define the behavior — but not the meaning. Custom types (via Code and Name) let you label relations according to your business context.
+
+Example: within RPL, you might define separate types for SUPERSESSION, ALTERNATIVE, or EQUIVALENT.
+
+- Enable targeted system logic or reporting - you can filter, report, or automate processes based on your own defined type
+
+Example: only ALTERNATIVE replacements appear in offers, while SUPERSESSION replacements are applied automatically.
+
+ - Support clear communication and governance - each type documents the intended purpose of a relationship, helping teams avoid confusion
+
+Example: differentiating “marketing accessories” from “technical accessories” under the same MRC category.
+
+- Extend functionality without changing system code - new types can be added dynamically without database or code changes
+
+Example: If your business introduces bundle relations, you can simply define a new type BUNDLE under SystemType = MRC.
 
 
