@@ -64,3 +64,34 @@ Commonly used for verifying correctness in product recipes, technical documents,
 |Replacement|	RPL	|Product substitution	| One-click replacement; Qty_Factor; date validity.|
 |Merchandising|	MRC|	Commercial / marketing relation	|Automatic recommendations (upsell, cross-sell, accessories).|
 |Fitment|	FIT|	Product compatibility	|Filtering and validation of compatible products.|
+
+# Understanding Replacement and Fitment
+
+You may stumble upon a pair of products and struggle with identifying their relation, as it would not definitiely be categorized as one type or the other at once.
+For example there are these two products: Tyre model A, by manufacturer X, and Tyre model B, by manufacturer Y. 
+To determine the relation we need to clarify the semantic difference between Replacement and Fitment, even when they can coexist for the same pair of products.
+
+|Aspect|	Replacement RPL | Fitment FIT|
+|------|------------------|--------------|
+|Meaning|	Product A can be used instead of product B. They are functionally interchangeable for the same purpose.	|Product A is compatible with product B or with a system/context that uses B. They work together, but not necessarily instead of one another.|
+|Direction|	Typically one-directional (A replaces B). May imply product lifecycle or equivalence.	Often bi-directional or contextual (A fits B, B fits A, or A fits into C).|
+|Example|	Old Tyre Model T100 → New Tyre Model T200 (same specs, new generation).	|Tyre Model T200 fits on Vehicle Model X (defines compatibility).|
+
+**The same pair of products can simultaneously have both:**
+
+ - a FIT (Fitment) relation → because they fit the same technical context,
+ - and a RPL (Replacement) relation → because one can substitute the other functionally.
+
+
+_Fitment relation_
+
+Tyre A (Manufacturer X) and Tyre B (Manufacturer Y) may both fit the same vehicle or rim specification.
+
+This means they are fitment-compatible — they serve the same functional context.
+
+_Replacement relation:_
+
+If Tyre A can be sold or used in place of Tyre B (e.g., same dimensions, load index, performance spec), then they can also have a Replacement relation between them.
+
+
+
