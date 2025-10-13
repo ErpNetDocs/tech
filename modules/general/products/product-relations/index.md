@@ -30,13 +30,26 @@ Ultimately, Product Relations **aim** to create a flexible foundation that suppo
 
 - Future-ready foundation: Can potentially replace existing component structures (e.g., ProductComponents or BOM) with a single, generalized model.
 
- ## where, how, and by whom the Product Relations model is expected to be used across the system and business processes?
+ ## Scope and Applicability
+ Where, how, and by whom the Product Relations model is expected to be used across the system and business processes?
 
 The Product Relations framework is designed as a core, cross-functional component of the product data model.
 It applies to multiple business domains and system modules that rely on accurate, flexible, and contextual relationships between products.
 Its purpose is to ensure that product interactions — such as replacements, compatibility checks, and related product suggestions — are handled consistently across the platform.
 
+### Functional Scope
 
+- Sales and Order Management
+  Supports one-click product replacement (RPL) when a product is discontinued, and displays alternative or related items to sales users.
+- E-Commerce and Customer
+  Portals	Provides product recommendations based on merchandising (MRC) links such as upsell, cross-sell, or accessories.
+- Production and Work Orders
+  Uses replacement and fitment (RPL, FIT) relations to validate compatible materials, tools, or components during production planning.
+- Product Configuration and Bill of Materials (BOM) Management
+  Ensures component compatibility (FIT) and enables potential integration with or replacement of existing BOM structures.
+- After-Sales and Service Management
+  Helps technicians identify suitable replacement parts (RPL) or compatible alternatives for maintenance and repairs.
+Product Information Management (PIM)	Maintains a centralized, structured source of truth for all product relationships, ensuring consistent data distribution across systems.
    
 # Example Use Cases per Relation Type
 
