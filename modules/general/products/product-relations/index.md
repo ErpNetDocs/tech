@@ -40,7 +40,7 @@ Its purpose is to ensure that product interactions — such as replacements, com
 ### Functional Scope
 
 - **Sales and Order Management**
-  Supports one-click product replacement (RPL) when a product is discontinued, and displays alternative or related items to sales users.
+<br>Supports one-click product replacement (RPL) when a product is discontinued, and displays alternative or related items to sales users.
 - E-Commerce and Customer
   Portals	Provides product recommendations based on merchandising (MRC) links such as upsell, cross-sell, or accessories.
 - Production and Work Orders
