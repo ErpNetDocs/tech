@@ -8,7 +8,7 @@ A Sync Job is a core functionality within MSSync that handles the synchronizatio
 
 Each sync job is responsible for a different category of data, ensuring that information in both systems remains consistent and up-to-date.
 
-For example, the **[Calendar Sync Job](calendar.md)** will synchronize calendar events from Microsoft 365 into corresponding [activities](https://docs.erp.net/model/entities/General.Activities.Activities.html) in @@name, while the **[Mail Sync Job]** ensures that emails sent or received through Microsoft 365 are transferred into @@name.
+For example, the **[Calendar Sync Job](calendar.md)** will synchronize calendar events from Microsoft 365 into corresponding [activities](https://docs.erp.net/model/entities/General.Activities.Activities.html) in @@name, while the **[Mail Sync Job](mail.md)** ensures that emails sent or received through Microsoft 365 are transferred into @@name.
 
 Sync jobs operate automatically once configured, keeping both systems in sync without requiring manual updates.
 
