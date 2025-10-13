@@ -74,11 +74,12 @@ To determine the relation we need to clarify the semantic difference between Rep
 |Aspect|	Replacement RPL | Fitment FIT|
 |------|------------------|--------------|
 |Meaning|	Product A can be used instead of product B. They are functionally interchangeable for the same purpose.	|Product A is compatible with product B or with a system/context that uses B. They work together, but not necessarily instead of one another.|
-|Direction|	Typically one-directional (A replaces B). May imply product lifecycle or equivalence.	Often bi-directional or contextual (A fits B, B fits A, or A fits into C).|
+|Direction|	Typically one-directional (A replaces B). May imply product lifecycle or equivalence.|	Often bi-directional or contextual (A fits B, B fits A, or A fits into C).|
 |Example|	Old Tyre Model T100 → New Tyre Model T200 (same specs, new generation).	|Tyre Model T200 fits on Vehicle Model X (defines compatibility).|
 
-**The same pair of products can simultaneously have both:**
+**Relations may overlap — two products can both fit the same system and replace each other.**
 
+The same pair of products can simultaneously have both
  - a FIT (Fitment) relation → because they fit the same technical context,
  - and a RPL (Replacement) relation → because one can substitute the other functionally.
 
@@ -86,12 +87,16 @@ To determine the relation we need to clarify the semantic difference between Rep
 _Fitment relation_
 
 Tyre A (Manufacturer X) and Tyre B (Manufacturer Y) may both fit the same vehicle or rim specification.
-
-This means they are fitment-compatible — they serve the same functional context.
+This means they are fitment-compatible — they serve the same functional context. Fitment (FIT): “can work with” → focuses on compatibility.
 
 _Replacement relation:_
 
-If Tyre A can be sold or used in place of Tyre B (e.g., same dimensions, load index, performance spec), then they can also have a Replacement relation between them.
+If Tyre A can be sold or used in place of Tyre B (e.g., same dimensions, load index, performance spec), then they can also have a Replacement relation between them. 
+Replacement (RPL): “can be used instead of” → focuses on interchangeability.
+
+Modeling both relations explicitly keeps system logic clean and unambiguous.
+
+# Defining your own Product Relation Types
 
 
 
