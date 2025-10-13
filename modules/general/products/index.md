@@ -28,5 +28,5 @@ For more information, see [Product groups](https://docs.erp.net/tech/modules/gen
 - [Product types](https://docs.erp.net/tech/modules/general/products/product-types/index.html?q=Product%20Types)
 - [Serial numbers](https://docs.erp.net/tech/modules/general/products/serial-numbers/index.html?q=Serial%20Numbers)
 - [Variable (dynamic) measurement ratios](https://docs.erp.net/tech/modules/general/products/variable-dynamic-measurement-rations.html?q=Variable%20(dynamic)%20measurement%20ratio)
-- Product relation types
-- Product relations
+- [Product relation types](https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-relations/product_relation_types.md)
+- [Product relations](https://github.com/ErpNetDocs/tech/blob/master/modules/general/products/product-relations/product_relations.md)
