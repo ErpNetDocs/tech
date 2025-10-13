@@ -51,7 +51,7 @@ Its purpose is to ensure that product interactions — such as replacements, com
   Helps technicians identify suitable replacement parts (RPL) or compatible alternatives for maintenance and repairs.
 Product Information Management (PIM)	Maintains a centralized, structured source of truth for all product relationships, ensuring consistent data distribution across systems.
    
-# Example Use Cases per Relation Type
+## Examples per system relation type
 
 |System Type|	Example|	Description|
 |----------|---------|-------------|
