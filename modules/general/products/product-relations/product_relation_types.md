@@ -96,7 +96,9 @@ Replacement (RPL): “can be used instead of” → focuses on interchangeabilit
 
 Modeling both relations explicitly keeps system logic clean and unambiguous.
 
-# Defining your own Product Relation Types
+# Defining company's Product Relation Types
+Each organization has its own business-specific needs and may require finer distinctions or naming for product relations within these system categories.
+This is where custom Product Relation Types come into play.
 
 
 
