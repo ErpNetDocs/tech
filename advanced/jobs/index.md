@@ -26,7 +26,7 @@ Jobs can be started **automatically** by an execution system, following a predef
 **The job's execution system works only when the following requirements are met:**
 
 - The time of day is between 22:00 and 05:00.
-- The current server sessions are **fewer** than 5. (this requirement can be manipulated through the /JobsManager/IgnoreSessionsForIdleSchedule [Config Options Reference](../../reference/config-options-reference.md) ).
+- The current server sessions are **fewer** than 5. (this requirement can be manipulated through point 65./JobsManager/IgnoreSessionsForIdleSchedule in the [Config Options Reference](../../reference/config-options-reference.md)).
 - The last time the job's procedure was completed is **more** than 30 minutes ago.
 - The procedure is **not** currently working.
 - There are **no** manually started jobs currently running.
