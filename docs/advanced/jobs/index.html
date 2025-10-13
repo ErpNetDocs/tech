@@ -104,7 +104,7 @@ A job uses the <strong>on-idle</strong> auto-start schedule only when the <em>Is
 <p><strong>The job's execution system works only when the following requirements are met:</strong></p>
 <ul>
 <li>The time of day is between 22:00 and 05:00.</li>
-<li>The current server sessions are <strong>fewer</strong> than 5. (this requirement can be manipulated through the /JobsManager/IgnoreSessionsForIdleSchedule config option)</li>
+<li>The current server sessions are <strong>fewer</strong> than 5. (this requirement can be manipulated through the /JobsManager/IgnoreSessionsForIdleSchedule <a href="../../reference/config-options-reference.html">Config Options Reference</a> ).</li>
 <li>The last time the job's procedure was completed is <strong>more</strong> than 30 minutes ago.</li>
 <li>The procedure is <strong>not</strong> currently working.</li>
 <li>There are <strong>no</strong> manually started jobs currently running.</li>
@@ -143,8 +143,8 @@ LOG:
 <hr>
 <h3 id="see-more">See more</h3>
 <ul>
+<li><a href="J30724.html"></a></li>
 <li><a href="J30632.html">J30632 Deletе old notifications</a></li>
-<li><a href="J30724.html">J30724 Run scheduled events</a></li>
 <li><a href="J30777.html">J30777 Document state change</a></li>
 <li><a href="J30903.html">J30903 Deletе old document print images</a></li>
 <li><a href="J33898.html">J33898 Delete old document versions</a></li>
