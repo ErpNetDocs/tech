@@ -10,7 +10,7 @@ CRM manages the following sequence of documents and activities:
 
 - **Activity** – A generic action related to a party. Supports calendar appointments, reminders, questionnaires, and other activities such as meetings, visits, and contracts.  
 - **Opportunity** – A sales prospect with expected revenue and probability. Does not include line-level detail.  
-- **Offer (quote)** – A formal sales proposal (quote) that includes line items and allows optional selection of accepted items.  
+- **Offer** – A formal sales proposal (quote) that includes line items and allows optional selection of accepted items.  
 - **Sales order** – The main sales document created from the customer’s order. It initiates the logistics and financial processes related to the sale.
 - **Invoice order** – An internal document used to track invoices that must be issued.  
 - **Invoice** – A legal and financial document that finalizes the sales process.
