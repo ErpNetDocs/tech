@@ -20,17 +20,17 @@ POS devices are defined for a specific POS terminal.
 
 1. For enterprise companies working with **EnterpriseOne POS**, it is necessary to specify **"Applicable legislation" = "Bulgaria"**
 
-   ![mceclip0.png](https://support.erp.net/hc/article_attachments/360003164800/mceclip0.png)
+   ![mceclip0.png](pictures/mceclip0.png)
 
 2. You need to define a corresponding **POS location** for each branch that is a commercial entity.
 
-   ![mceclip1.png](https://support.erp.net/hc/article_attachments/360003252419/mceclip1.png)
+   ![mceclip1.png](pictures/mceclip1.png)
 
    Once a POS location is set, it **cannot** be deleted or changed. It can only be **deactivated**.
 
 3. For terminals, where necessary, fiscal devices are defined:
 
-   ![mceclip2.png](https://support.erp.net/hc/article_attachments/360003164880/mceclip2.png)
+   ![mceclip2.png](pictures/mceclip2.png)
 
 - **Device type**: Fiscal printer
 - **Registration number**: Registration number of the fiscal printer - in capital letters, since some devices require strictly capital letters.
@@ -54,11 +54,11 @@ It is necessary to define **POS roles** - for example, Manager or Storekeeper.
 
    Example: 0000001.
    
-   ![mceclip3.png](https://support.erp.net/hc/article_attachments/360003164900/mceclip3.png)
+   ![mceclip3.png](pictures/mceclip3.png)
 
 2. A **tax group** must be specified in the product type definitions. If not specified, **tax group 2** is taken by default.
 
-   ![mceclip4.png](https://support.erp.net/hc/article_attachments/360003164920/mceclip4.png)
+   ![mceclip4.png](pictures/mceclip4.png)
 
    The correspondence with the groups in fiscal devices in Bulgaria is:
     
@@ -69,7 +69,7 @@ It is necessary to define **POS roles** - for example, Manager or Storekeeper.
 
 3. In the payment methods that require printing of the fiscal device, "**Requires fiscal receipt**" and "**System payment method**" must be checked.
 
-   ![mceclip5.png](https://support.erp.net/hc/article_attachments/360003252439/mceclip5.png)
+   ![mceclip5.png](pictures/mceclip5.png)
 
    Currently, the supported one-time payment methods for printing of a fiscal device are **In cash**, **By card**, and **By check**
 
