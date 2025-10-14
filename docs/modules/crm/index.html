@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Customer relationship management (CRM) subsystem | ERP.net Tech Docs </title>
+      <title>CRM | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Customer relationship management (CRM) subsystem | ERP.net Tech Docs ">
+      <meta name="title" content="CRM | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,43 +85,75 @@
         </div>
 
         <article data-uid="">
-<h1 id="customer-relationship-management-crm-subsystem">Customer relationship management (CRM) subsystem</h1>
+<h1 id="crm">CRM</h1>
 
-<p>The CRM subsystem in ERP.net is used to manage customer relationships and other front-office activities of a company.</p>
+<p>The Customer Relationship Management (CRM) subsystem in ERP.net is used to manage customer relationships and other front-office activities of a company. It forms the foundation for managing customer interactions, from initial contact and opportunity tracking to final invoicing, ensuring full traceability across all customer-related processes.</p>
 <h2 id="general-concepts-and-processes">General concepts and processes</h2>
-<p>The main process in the CRM subsystem is:</p>
+<p>CRM manages the following sequence of documents and activities:</p>
 <blockquote>
 <p><em>Activity</em> → <em>Opportunity</em> → <em>Offer</em> → <em>Sales order</em> → <em>Invoice order</em> → <em>Invoice</em></p>
 </blockquote>
 <ul>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/General.Activities.Activities.html">Activity</a></strong> - generic activity, related to a party. Includes support for calendar appointments, reminders, questionnaires, etc. Can be used to represent appointments, scheduled meetings, visits, contracts and just about any generic document.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Presales.Deals.html">Opportunity</a></strong> - sales opportunity, with expected revenue and probability. It does not have detail line items.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Presales.Offers.html">Offer</a></strong> - sales offer (quote), with line items. It allows optional selection of some of the items, which the customer has accepted.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Sales.SalesOrders.html">Sales order</a></strong> - sales order from the customer. The main sales document. All documents before it are optional. The sales order initiates the logistics and financial processes, related to the sale.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.InvoiceOrders.html">Invoice order</a></strong> - an order to issue an invoice. This is an internal document, which is used to track the invoices, which we have to issue.</li>
-<li><strong><a class="xref" href="https://erpnetdocs.github.io/model/entities/Crm.Invoicing.Invoices.html">Invoice</a></strong> - legal and financial document, finalizing the sales process.</li>
+<li><strong>Activity</strong> – A generic action related to a party. Supports calendar appointments, reminders, questionnaires, and other activities such as meetings, visits, and contracts.</li>
+<li><strong>Opportunity</strong> – A sales prospect with expected revenue and probability. Does not include line-level detail.</li>
+<li><strong>Offer</strong> – A formal sales proposal (quote) that includes line items and allows optional selection of accepted items.</li>
+<li><strong>Sales order</strong> – The main sales document created from the customer’s order. It initiates the logistics and financial processes related to the sale.</li>
+<li><strong>Invoice order</strong> – An internal document used to track invoices that must be issued.</li>
+<li><strong>Invoice</strong> – A legal and financial document that finalizes the sales process.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The above diagram shows only the CRM part of the whole process.
+<p>The above diagram shows only the CRM part of the whole process. <br>
 The full process involves many different modules of the ERP system.</p>
 </div>
-<h2 id="modules">Modules</h2>
-<p>There are many modules in the CRM subsystem.
-They are used to manage the different aspects of the CRM processes:</p>
-<ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/contacts/index.html?q=Contacts%20and%20tasks">Contacts and tasks</a></strong> - calendar appointments, party definitions, etc.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm">Pre-sales</a></strong> - Opportunities management, quotation, etc.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales">Sales</a></strong> - Sales orders, customers, etc.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing">Invoicing</a></strong> - Invoicing process management, invoices and BI.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/marketing/index.html">Marketing</a></strong> - Marketing campaigns, activities, distribution channels, etc.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/crm-common/index.html">Common concepts</a></strong> - Concepts related to pricing, line discount determination, etc.</li>
-<li><strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html">Client Center</a></strong> - a single platform to engage with customers</li>
-<li><strong>POS</strong> - Manage point-of-sale activities in physical stores.</li>
-<li><strong>Distribution</strong> - field sales, sales person targets management, etc.</li>
-<li><strong>Product Configuration</strong> - create products based on specs for job shops (made-to-order and engineer-to-order environments).</li>
-<li><strong>Products</strong> - manage products master data - products and product measurements, codes, variants, channel, pictures, groups, etc.</li>
-</ul>
+<h2 id="structure">Structure</h2>
+<p>The CRM module consists of several <strong>submodules</strong>, each managing a specific aspect of the customer relationship and sales process.</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing">Invoicing</a></strong></td>
+<td>Oversees the invoicing process, including invoice orders and issued invoices.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/marketing/index.html">Marketing</a></strong></td>
+<td>Plans and executes marketing campaigns and manage distribution channels.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/pos/index.html">POS</a></strong></td>
+<td>Manages point-of-sale operations in physical retail environments.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm">Presales</a></strong></td>
+<td>Handles opportunities, quotations, and pricing discussions.</td>
+</tr>
+<tr>
+<td><strong>Pricing</strong></td>
+<td>Creates bonus programs, line discounts, product prices, promotional packages and similar price-related entities.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales">Sales</a></strong></td>
+<td>Manages sales order documents.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/sales-force/index.html">Sales Force</a></strong></td>
+<td>Manages sales personnel, their group structures, assignment rules, and performance targets, providing tools to define, organize, and track the activities and objectives of sales representatives within the CRM framework.</td>
+</tr>
+<tr>
+<td><strong>Subscriptions</strong></td>
+<td>Handles agreements with customers for periodic delivery of services and billing.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/crm/clientcenter/index.html">Client Center</a></strong></td>
+<td>Offers a single platform for customer engagement and self-service.</td>
+</tr>
+</tbody>
+</table>
 
 </article>
 

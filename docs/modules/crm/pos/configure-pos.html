@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | ERP.net Tech Docs </title>
+      <title>Configuring the POS submodule | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | ERP.net Tech Docs ">
+      <meta name="title" content="Configuring the POS submodule | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,88 +85,166 @@
         </div>
 
         <article data-uid="">
+<h1 id="configuring-the-pos-submodule">Configuring the POS submodule</h1>
 
-<h3 id="настройки-за-работа-с-пос-модула">Настройки за работа с ПОС модула</h3>
-<p>За да работи коректно POS модула са необходими първончални настройки.</p>
+<p>In order for POS to work correctly in ERP.net, initial settings are required.</p>
+<h3 id="define-a-pos-location">Define a POS location</h3>
+<p>A POS location defines a given <strong>Enterpise Company Location</strong> as a POS object. The Enterpise Company Location must be specified in advance.</p>
+<p>After determining the POS location, you can proceed to define POS operators and terminals for it.</p>
+<h3 id="define-a-pos-terminal">Define a POS terminal</h3>
+<p>Each location can have one or more <strong>terminals</strong> defined for it. A POS terminal is the place where a sale is registered and where various POS devices can be defined, such as fiscal devices, payment terminals, scales, and others.</p>
+<p>One POS device can be specified by default and it will be loaded when creating a new sale on this terminal.</p>
+<h3 id="define-a-pos-device">Define a POS device</h3>
+<p>POS devices are defined for a specific POS terminal.</p>
 <ol>
-<li><p>Дефиниране на POS Location</p>
-<p>ПОС локацията е дефиниция, която определя даден Enterpise Company Location, като ПОС обект.  Трябва предварително да е дефиниран самия Enterpise Company Location.
-След дефиниране на POS Location към нея дефинират POS Operators и POS Terminals</p>
+<li><p>For enterprise companies working with <strong>EnterpriseOne POS</strong>, it is necessary to specify <strong>&quot;Applicable legislation&quot; = &quot;Bulgaria&quot;</strong></p>
+<p><img src="pictures/mceclip0.png" alt="mceclip0.png"></p>
 </li>
-<li><p>Дефиниране на POS Terminals</p>
-<p>Във всяка локация можем да дефинираме един и или повече POS Terminals.
-The POS Terminal е мястото, където се регстрира продажбата и където се дефинират различните POS Devices, които се използват там. Например фискални устрайства, платежни терминали, везни и  други.</p>
-<p>Едно от POS Devices може да се укаже по подразбиране и то се зарежда при създаване на нова продажба на този термнал.</p>
+<li><p>You need to define a corresponding <strong>POS location</strong> for each branch that is a commercial entity.</p>
+<p><img src="pictures/mceclip1.png" alt="mceclip1.png"></p>
+<p>Once a POS location is set, it <strong>cannot</strong> be deleted or changed. It can only be <strong>deactivated</strong>.</p>
 </li>
-<li><p>Дефиниране на POS Devices</p>
-<p>POS устройствата се дефинират за конкретен POS Terminal.</p>
-<p>​</p>
-<ol>
-<li>В собствените фирми, които трябва да се работи с EnterpriseOne POS е необходимо да се укаже „Приложимо законодателство“ = „България“</li>
+<li><p>For terminals, where necessary, fiscal devices are defined:</p>
+<p><img src="pictures/mceclip2.png" alt="mceclip2.png"></p>
+</li>
 </ol>
-<p><img src="https://support.erp.net/hc/article_attachments/360003164800/mceclip0.png" alt="mceclip0.png"></p>
-<ol>
-<li>Необходимо е за всеки Филиал, който е търговски обект да се дефинира съответна ПОС Локация.</li>
-</ol>
-<p><img src="https://support.erp.net/hc/article_attachments/360003252419/mceclip1.png" alt="mceclip1.png"></p>
-<p>Веднъж зададена ПОС локацията не може да се изтрие или променя. Може само да се деактивира.</p>
-<ol>
-<li>Необходимо е да се дефинират ПОС роли – например Управител и Магазинер.</li>
-<li>За всяка ПОС локация се дефинират ПОС терминали и ПОС оператори</li>
-</ol>
-<p>В дефиницията на ПОС операторите трябва да се укаже потребител, който задължително е свързан с лице.</p>
-<p>По подразбиране номерацията на ПОС операторите започва от 0001 за  всяка локация. Ако е необходимо обаче да се достъпват ФУ от други  локации то номерата на операторите трябва да се направят уникални в  рамките на собствената фирма.</p>
-<ol>
-<li>За терминалите, където е необходимо се дефинират Фискални устройства</li>
-</ol>
-<p><img src="https://support.erp.net/hc/article_attachments/360003164880/mceclip2.png" alt="mceclip2.png"></p>
 <ul>
-<li>Тип устройство: Фискален принтер</li>
-<li>Регистрационен номер: Регистрационен номер на ФУ – с главни букви, тъй като някой устройства изискват точно главни букви.</li>
-<li>Протокол за връзка: FP</li>
-<li>Електронният адрес на ФУ се задава във формат: „http://Address:8001/printers/Printer Id“</li>
-<li>Самата библиотека може да се свали от:</li>
+<li><strong>Device type</strong>: Fiscal printer</li>
+<li><strong>Registration number</strong>: Registration number of the fiscal printer - in capital letters, since some devices require strictly capital letters.</li>
+<li><strong>Communication protocol</strong>: FP</li>
+<li><strong>The fiscal device email address</strong> is set in the format: &quot;http://Address:8001/printers/Printer Id&quot;.</li>
+<li><strong>The library</strong> can be downloaded from <strong><a href="https://github.com/erpnet/ErpNet.FP">here</a></strong>.</li>
 </ul>
-<p><a href="https://github.com/erpnet/ErpNet.FP">https://github.com/erpnet/ErpNet.FP</a></p>
+<h3 id="define-a-pos-operator">Define a POS operator</h3>
+<p>In the definition of POS operators, a <strong>user</strong> who is associated with a person must be specified.</p>
+<p>By default, the numbering of POS operators starts from <strong>0001</strong> for each location. However, if it is necessary to access fiscal devices from other locations, the operator numbers must be made unique within the enterprise company.</p>
+<h3 id="define-pos-roles">Define POS roles</h3>
+<p>It is necessary to define <strong>POS roles</strong> - for example, Manager or Storekeeper.</p>
+<h2 id="additional-configurations">Additional configurations</h2>
 <ol>
-<li>За всяко фискално устройство трябва да се дефинира една ПОС поредица – 7 цифров номер от който започва УНП – Например 0000001.</li>
+<li><p>A <strong>POS series</strong> must be defined for each fiscal device - a 7-digit number starting from the UNP.</p>
+<p>Example: 0000001.</p>
+<p><img src="pictures/mceclip3.png" alt="mceclip3.png"></p>
+</li>
+<li><p>A <strong>tax group</strong> must be specified in the product type definitions.</p>
+<p>If not specified, <strong>tax group 2</strong> is taken by default.</p>
+<p><img src="pictures/mmceclip4.png" alt="mceclip4.png"></p>
+<p>The correspondence with the groups in fiscal devices in Bulgaria is:</p>
+<ul>
+<li><strong>Group A – Group 1</strong></li>
+<li><strong>Group B – Group 2</strong></li>
+<li><strong>Group C – Group 3</strong></li>
+<li><strong>Group C – Group 4</strong></li>
+</ul>
+</li>
+<li><p>In the payment methods that require printing of the fiscal device, &quot;<strong>Requires fiscal receipt</strong>&quot; and &quot;<strong>System payment method</strong>&quot; must be checked.</p>
+<p><img src="pictures/mceclip5.png" alt="mceclip5.png"></p>
+<p>Currently, the supported one-time payment methods for printing of a fiscal device are <strong>In cash</strong>, <strong>By card</strong>, and <strong>By check</strong></p>
+<p>This setting is <strong>one-time</strong> and <strong>cannot</strong> be changed later.</p>
+</li>
+<li><p>For the return document type, in the sales settings, check <strong>&quot;Allowed directions&quot; = &quot;Sales return&quot;</strong>. This is the way by which it is recognized if a sale is a return or not.</p>
+</li>
+<li><p>For the NRA reports, the following preliminary settings must be made:</p>
+</li>
 </ol>
-<p><img src="https://support.erp.net/hc/article_attachments/360003164900/mceclip3.png" alt="mceclip3.png"></p>
+<ul>
+<li>Set up an <strong>ID site</strong></li>
+<li>Set up a <strong>Legal_BG site</strong></li>
+<li>Create an <strong>external user</strong> in the ID site - achieved through the site interface.</li>
+<li>Give this user access to <strong>System rights</strong> / Access to <strong>reports in Legal_BG</strong></li>
+<li>Give the user rights to the enterprise company</li>
+<li>For reports inside the system, another <strong>internal user</strong> must be created with the appropriate rights - preferably to all modules, without Admin privileges or the right to edit documents.</li>
+</ul>
+<p>Then:</p>
 <ol>
-<li>В дефинициите на типовете продукти трябва да се укаже данъчна група.</li>
+<li><p>Install <strong>&quot;EnterpriseOne POS&quot;</strong>.</p>
+<p>Your database must have a license to work with EnterpriseOne POS.</p>
+</li>
+<li><p>If you want to print from the Sales form, all documents in the document flow must be generated as <strong>Released</strong>. Otherwise, after printing, the program will terminate the flow.</p>
+<p>In the document flow, the generations of invoice orders and accounting vouchers from store transactions as <strong>Next Documents</strong> so they can remain Released upon completion of the flow.</p>
+<p>This will allow for a correction of the warehouse cost and the creation of invoices subsequently. The generation of an accounting voucher must occur in the Completed status to be re-accounted upon correction.</p>
+</li>
 </ol>
-<p>Ако не е указана по подразбиране се взима данъчна група 2.</p>
-<p><img src="https://support.erp.net/hc/article_attachments/360003164920/mceclip4.png" alt="mceclip4.png"></p>
+<hr>
+<h2 id="настройки-за-работа-с-пос-модула">Настройки за работа с ПОС модула</h2>
+<p>За да работи коректно <strong>POS модулът</strong> са необходими първоначални настройки.</p>
+<h3 id="дефиниране-на-pos-локация">Дефиниране на POS Локация</h3>
+<p><strong>ПОС локацията</strong> е дефиниция, която определя даден <strong>Enterprise Company Location</strong> като <strong>ПОС обект</strong>. Трябва предварително да е дефиниран самият <strong>Enterprise Company Location</strong>.</p>
+<p>След дефиниране на <strong>POS Location</strong> към нея се дефинират <strong>POS Operators</strong> и <strong>POS Terminals</strong>.</p>
+<h3 id="дефиниране-на-pos-терминали">Дефиниране на POS Терминали</h3>
+<p>Във всяка локация можем да дефинираме един или повече <strong>POS Terminals</strong>.</p>
+<p><strong>ПОС Терминалът</strong> е мястото, където се регистрира продажбата и където се дефинират различните <strong>POS Devices</strong>, които се използват там. Например фискални устройства, платежни терминали, везни и други.</p>
+<p>Едно <strong>POS Devices</strong> може да се укаже <strong>по подразбиране</strong> и то се зарежда при създаване на нова продажба на този терминал.</p>
+<h3 id="дефиниране-на-pos-устройства">Дефиниране на POS Устройства</h3>
+<p><strong>POS устройствата</strong> се дефинират за конкретен <strong>POS Terminal</strong>.</p>
+<h2 id="допълнителни-стъпки-и-изисквания">Допълнителни стъпки и изисквания</h2>
+<ol>
+<li><p>В собствените фирми, които трябва да работят с <strong>EnterpriseOne POS</strong>, е необходимо да се укаже <strong>„Приложимо законодателство“ = „България“</strong>.</p>
+<p><img src="pictures/mceclip0.png" alt="mceclip0.png"></p>
+</li>
+<li><p>Необходимо е за всеки <strong>Филиал</strong>, който е търговски обект, да се дефинира съответна <strong>ПОС Локация</strong>.</p>
+<p><img src="pictures/mceclip1.png" alt="mceclip4.png"></p>
+</li>
+</ol>
+<p>Веднъж зададена, ПОС локацията <strong>не може</strong> да се изтрие или променя. Може само да се <strong>деактивира</strong>.</p>
+<ol start="3">
+<li><p>Необходимо е да се дефинират <strong>ПОС роли</strong> – например <strong>Управител</strong> и <strong>Магазинер</strong>.</p>
+</li>
+<li><p>За всяка ПОС локация се дефинират <strong>ПОС терминали</strong> и <strong>ПОС оператори</strong>.</p>
+<p>В дефиницията на ПОС операторите трябва да се укаже <strong>потребител</strong>, който задължително е свързан с <strong>лице</strong>.</p>
+<p>По подразбиране номерацията на <strong>ПОС операторите</strong> започва от <strong>0001</strong> за всяка локация. Ако е необходимо обаче да се достъпват <strong>ФУ</strong> от други локации, то номерата на операторите трябва да се направят <strong>уникални</strong> в рамките на собствената фирма.</p>
+</li>
+<li><p>За терминалите, където е необходимо, се дефинират <strong>Фискални устройства</strong>.</p>
+<p><img src="pictures/mceclip2.png" alt="mceclip2.png"></p>
+</li>
+</ol>
+<ul>
+<li><strong>Тип устройство</strong>: Фискален принтер</li>
+<li><strong>Регистрационен номер</strong>: Регистрационен номер на ФУ – с <strong>главни букви</strong>, тъй като някои устройства изискват точно главни букви.</li>
+<li><strong>Протокол за връзка</strong>: FP</li>
+<li><strong>Електронният адрес</strong> на ФУ се задава във формат: <code>„http://Address:8001/printers/Printer Id“</code></li>
+<li>Самата библиотека може да се свали от <strong><a href="https://github.com/erpnet/ErpNet.FP">тук</a></strong>.</li>
+</ul>
+<ol start="6">
+<li><p>За всяко фискално устройство трябва да се дефинира една <strong>ПОС поредица</strong> – <strong>7-цифрен</strong> номер, от който започва <strong>УНП</strong>.</p>
+<p>Пример: <strong>0000001</strong>.</p>
+<p><img src="pictures/mceclip3.png" alt="mceclip3.png"></p>
+</li>
+<li><p>В дефинициите на типовете продукти трябва да се укаже <strong>данъчна група</strong>.</p>
+<p>Aко не е указана, по подразбиране се взима <strong>данъчна група 2</strong>.</p>
+<p><img src="pictures/mmceclip4.png" alt="mceclip4.png"></p>
 <p>Съответствието с групите във фискалните устройства в България е:</p>
-<p>Група А – Група 1</p>
-<p>Група Б – Група 2</p>
-<p>Група В – Група 3</p>
-<p>Група С – Група 4</p>
-<ol>
-<li>В начините на плащане които изискват печат на ФУ трябва да се отбележи „Изисква фискален бон“ и „Системен начин на плащане“</li>
-</ol>
-<p><img src="https://support.erp.net/hc/article_attachments/360003252439/mceclip5.png" alt="mceclip5.png"></p>
-<p>В момента от еднократните начини на плащане за печат на ФУ се поддържат В брой, Чрез карта и С Чек</p>
-<p>Настройката е еднократна и не подлежи на промяна в последствие.</p>
-<ol>
-<li><p>В типа документ за връщане, в настройки за продажби да се отбележи  &quot;Разрешени посоки&quot; = &quot;Връщане на продажба&quot;. Това е критерият по който се разпознава дали една продажба е връщане или не е.</p>
+<ul>
+<li><strong>Група А – Група 1</strong></li>
+<li><strong>Група Б – Група 2</strong></li>
+<li><strong>Група В – Група 3</strong></li>
+<li><strong>Група С – Група 4</strong></li>
+</ul>
 </li>
-<li><p>За справките за НАП трябва да се направят следните настройки:</p>
+<li><p>В <strong>начините на плащане</strong>, които изискват печат на ФУ, трябва да се отбележи <strong>„Изисква фискален бон“</strong> и <strong>„Системен начин на плащане“</strong>.</p>
+<p><img src="pictures/mceclip5.png" alt="mceclip5.png"></p>
+<p>В момента от еднократните начини на плащане за печат на ФУ се поддържат <strong>В брой</strong>, <strong>Чрез карта</strong> и <strong>С Чек</strong>.</p>
+<p>Настройката е еднократна и <strong>не подлежи</strong> на промяна впоследствие.</p>
 </li>
-</ol>
-<p>- Да настрои ID сайт</p>
-<p>- Да се настрои Legal_BG сайт</p>
-<p>- Да се създаде външен потребител в ID сайта – създава се през интерфейса на сайта.</p>
-<p>- Да се дадат права на този потребител до Системни права / Достъп до справките в Legal_BG</p>
-<p>- Да се дадат права на този потребител до собствената фирма</p>
-<p>- За справките вътре в системата трябва да се създаде друг вътрешен  потребител, който да има съответните права - най добре пълни до всички  модули, без право за редакция на документи и без да е администратор.</p>
-<ol>
-<li>Необходимо е да се инсталира „EnterpriseOne POS“.</li>
-<li>Необходимо е базата да има лиценз за работа с EnterpriseOne POS</li>
-<li>Ако ще се печати от форма Продажба, трябва всички документи в потока да се генерират пуснати, защото след печат програмата завършва потока.</li>
-<li>Необходимо е в потока генерациите на Нареждане за фактуриране от  продажба и Счетоводна статия от складовата разписка да се дефинират като Следващ документ, за да останат пуснати при завършване на потока. Това  ще позволи да се направи корекция на себестойност на склада и създаване  на фактури в последствие. Съответно генерацията на счетоводна статия  трябва да се случва на Завършен статус за да се преосчетоводи при  корекция.</li>
-</ol>
-<p>​</p>
+<li><p>В <strong>типа документ за връщане</strong>, в настройки за продажби, да се отбележи <strong>&quot;Разрешени посоки&quot; = &quot;Връщане на продажба&quot;</strong>. Това е критерият, по който се разпознава дали една продажба е връщане или не е.</p>
+</li>
+<li><p>За <strong>справките за НАП</strong> трябва да се направят следните настройки:</p>
+<ul>
+<li>Да се настрои <strong>ID сайт</strong></li>
+<li>Да се настрои <strong>Legal_BG сайт</strong></li>
+<li>Да се създаде <strong>външен потребител</strong> в <strong>ID сайта</strong> – създава се през интерфейса на сайта.</li>
+<li>Да се дадат права на този потребител до <strong>Системни права / Достъп до справките в Legal_BG</strong>.</li>
+<li>Да се дадат права на този потребител до <strong>собствената фирма</strong>.</li>
+<li>За справките вътре в системата трябва да се създаде друг <strong>вътрешен потребител</strong>, който да има съответните права - най-добре <strong>пълни</strong> до всички модули, без право за редакция на документи и без да е администратор.</li>
+</ul>
+</li>
+<li><p>Необходимо е да се инсталира <strong>„EnterpriseOne POS“</strong>.</p>
+</li>
+<li><p>Необходимо е базата да има <strong>лиценз</strong> за работа с <strong>EnterpriseOne POS</strong>.</p>
+</li>
+<li><p>Ако ще се печата от <strong>форма Продажба</strong>, трябва всички документи в потока да се генерират <strong>Пуснати</strong>, защото след печат програмата завършва потока.</p>
+</li>
+<li><p>Необходимо е в потока генерациите на <strong>Нареждане за фактуриране от продажба</strong> и <strong>Счетоводна статия от складовата разписка</strong> да се дефинират като <strong>Следващ документ</strong>, за да останат пуснати при завършване на потока. Това ще позволи да се направи <strong>корекция на себестойност на склада</strong> и <strong>създаване на фактури</strong> впоследствие. Съответно генерацията на счетоводна статия трябва да се случва на статус <strong>Завършен</strong>, за да се преосчетоводи при корекция.</p>
 </li>
 </ol>
 

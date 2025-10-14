@@ -6408,6 +6408,56 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/invoicing/pictures/invoice_orders.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/invoicing/pictures/invoice_orders.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/invoicing/pictures/invoices.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/invoicing/pictures/invoices.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/invoicing/pictures/invoicing_function.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/invoicing/pictures/invoicing_function.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/invoicing/pictures/invoicing_modules.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/invoicing/pictures/invoicing_modules.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/invoicing/pictures/invoicing_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/invoicing/pictures/invoicing_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/invoicing/toc.yml",
       "output": {
@@ -6871,6 +6921,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip0.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip0.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/pos/pictures/mceclip4.png",
       "output": {
         "resource": {
@@ -6881,10 +6971,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mceclip5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mceclip5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/crm/pos/pictures/mceclip5png.png",
       "output": {
         "resource": {
           "relative_path": "modules/crm/pos/pictures/mceclip5png.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/pos/pictures/mmceclip4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/pos/pictures/mmceclip4.png"
         }
       },
       "version": ""
@@ -6945,6 +7055,19 @@
       "output": {
         "resource": {
           "relative_path": "modules/crm/pos/pictures/variables.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/pos/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/pos/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/pos/toc.json"
         }
       },
       "version": ""
@@ -21454,6 +21577,98 @@
         },
         ".json": {
           "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/product-management/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/product-management/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/product-management/product-relations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/product-management/product-relations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/v26-2/product-management/product-relations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/product-management/product-relations/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v26-2/product-management/product-relations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/v26-2/product-management/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/product-management/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v26-2/product-management/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/v26-2/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v26-2/toc.json"
         }
       },
       "version": ""
