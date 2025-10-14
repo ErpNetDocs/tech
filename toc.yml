@@ -13,5 +13,8 @@ items:
 - name: Reference
   href: reference/toc.yml
   topicHref: reference/index.md
+- name: What's New
+  href: whats-new/toc.yml
+  topicHref: whats-new/index.md
 - name: Return to DOCS
   href: https://docs.erp.net/
