@@ -32,6 +32,6 @@ The CRM module consists of several **submodules**, each managing a specific aspe
 | **[Presales](https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm)** | Handles opportunities, quotations, and pricing discussions. |
 | **Pricing** | Creates bonus programs, line discounts, product prices, promotional packages and similar price-related entities.
 | **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales)** | Manages sales order documents. |
-| **[Sales Force](https://docs.erp.net/tech/modules/crm/sales-force/index.html)** | Sales Force description.
+| **[Sales Force](https://docs.erp.net/tech/modules/crm/sales-force/index.html)** | Manages sales personnel, their group structures, assignment rules, and performance targets, providing tools to define, organize, and track the activities and objectives of sales representatives within the CRM framework.
 | **Subscriptions** | Handles agreements with customers for periodic delivery of services and billing.
 | **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)** | Offers a single platform for customer engagement and self-service. |
