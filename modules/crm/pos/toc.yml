@@ -2,4 +2,5 @@
   href: index.md
 - name: Fiscal receipt template
   href: fiscal-receipt-template.md
-  
+- name: Configure POS
+  href: configure-pos.md
