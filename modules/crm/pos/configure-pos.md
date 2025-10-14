@@ -156,13 +156,13 @@ Then:
 
    Пример: **0000001**.
 
-      ![mceclip3.png](pictures/mceclip3.png)
+   ![mceclip3.png](pictures/mceclip3.png)
 
 7.  В дефинициите на типовете продукти трябва да се укаже **данъчна група**.
 
-      ![mceclip4.png](pictures/mceclip4.png)
-
    Ако не е указана, по подразбиране се взима **данъчна група 2**.
+
+   ![mceclip4.png](pictures/mceclip4.png)
 
    Съответствието с групите във фискалните устройства в България е:
 
