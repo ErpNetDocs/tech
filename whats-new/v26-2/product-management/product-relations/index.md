@@ -1,2 +1,2 @@
-# Product Relations
+# Product relations
 TBD 
