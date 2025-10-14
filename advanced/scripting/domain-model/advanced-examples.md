@@ -122,6 +122,22 @@ var salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
 });
 ```
 
+### Query by custom property value
+
+You can filter entities by the value of a custom property they have.
+
+> [!NOTE]
+>
+> When querying, the property name must be prefixed with `CustomProperty_`.
+> For example, a custom property `C1` should be queried as `CustomProperty_C1`.
+
+```js
+// Assume the 'customers' entity has a custom property named C1.
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    CustomProperty_C1: { equals: 'target search value' }
+});
+```
+
 ### Include or exclude `null` values
 
 You can include or exclude entities where a specific data attribute is not set (i.e., is `null`).

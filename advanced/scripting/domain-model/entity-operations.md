@@ -44,11 +44,42 @@ var customer = Domain.Crm.Sales.CustomersRepository.getById(customerId);
 if (customer != null) {
   // Do something with the customer entity.
 }
+```
 
-j```
 > [!NOTE]
 >
 > Always check if the result is `null` to handle cases where the entity is not found.
+
+### GetByIdList
+
+Use the repository's getByIdList() to fetch multiple entities by ID.
+
+Supported inputs:
+- Comma-separated string: `"id1,id2,id3"`
+- Array of strings: ["id1","id2","id3"]
+
+> [!NOTE]
+>
+> Only values that parse as GUIDs are used; others are ignored; whitespace is fine.
+
+```js
+// Example: Get a list of customers by their IDs
+
+// Option A: comma-separated string
+const idList = "12345678-90ab-cdef-1234-567890abcdef,abcdef12-3456-7890-abcd-ef1234567890";
+const customersA = Domain.Crm.Sales.CustomersRepository.getByIdList(idList);
+
+// Option B: array of GUID strings (also supported)
+const ids = [
+  "12345678-90ab-cdef-1234-567890abcdef",
+  "abcdef12-3456-7890-abcd-ef1234567890"
+];
+const customersB = Domain.Crm.Sales.CustomersRepository.getByIdList(ids);
+
+if (customersB && customersB.length > 0) {
+  // Do something with the customer entities
+}
+```
 
 ### Query
 
