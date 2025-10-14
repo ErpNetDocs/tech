@@ -176,6 +176,18 @@ var salesOrders = Domain.Crm.Sales.SalesOrdersRepository.query({
     customer: { equals: customer }
 });
 </code></pre>
+<h3 id="query-by-custom-property-value">Query by custom property value</h3>
+<p>You can filter entities by the value of a custom property they have.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When querying, the property name must be prefixed with <code>CustomProperty_</code>.
+For example, a custom property <code>C1</code> should be queried as <code>CustomProperty_C1</code>.</p>
+</div>
+<pre><code class="lang-js">// Assume the 'customers' entity has a custom property named C1.
+var customers = Domain.Crm.Sales.CustomersRepository.query({
+    CustomProperty_C1: { equals: 'target search value' }
+});
+</code></pre>
 <h3 id="include-or-exclude-null-values">Include or exclude <code>null</code> values</h3>
 <p>You can include or exclude entities where a specific data attribute is not set (i.e., is <code>null</code>).</p>
 <p>This is helpful when you want to combine results for both a particular value and records where the data attribute is not set.</p>

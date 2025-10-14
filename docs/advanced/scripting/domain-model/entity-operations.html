@@ -118,18 +118,42 @@ var customer = Domain.Crm.Sales.CustomersRepository.getById(customerId);
 if (customer != null) {
   // Do something with the customer entity.
 }
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Always check if the result is <code>null</code> to handle cases where the entity is not found.</p>
+</div>
+<h3 id="getbyidlist">GetByIdList</h3>
+<p>Use the repository's getByIdList() to fetch multiple entities by ID.</p>
+<p>Supported inputs:</p>
+<ul>
+<li>Comma-separated string: <code>&quot;id1,id2,id3&quot;</code></li>
+<li>Array of strings: [&quot;id1&quot;,&quot;id2&quot;,&quot;id3&quot;]</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Only values that parse as GUIDs are used; others are ignored; whitespace is fine.</p>
+</div>
+<pre><code class="lang-js">// Example: Get a list of customers by their IDs
 
-j```
-&gt; [!NOTE]
-&gt;
-&gt; Always check if the result is `null` to handle cases where the entity is not found.
+// Option A: comma-separated string
+const idList = &quot;12345678-90ab-cdef-1234-567890abcdef,abcdef12-3456-7890-abcd-ef1234567890&quot;;
+const customersA = Domain.Crm.Sales.CustomersRepository.getByIdList(idList);
 
-### Query
+// Option B: array of GUID strings (also supported)
+const ids = [
+  &quot;12345678-90ab-cdef-1234-567890abcdef&quot;,
+  &quot;abcdef12-3456-7890-abcd-ef1234567890&quot;
+];
+const customersB = Domain.Crm.Sales.CustomersRepository.getByIdList(ids);
 
-Use the repository's `query()` method to search for and retrieve collections of entities matching specific criteria.
-
-```js
-// Example: Get all active customers
+if (customersB &amp;&amp; customersB.length &gt; 0) {
+  // Do something with the customer entities
+}
+</code></pre>
+<h3 id="query">Query</h3>
+<p>Use the repository's <code>query()</code> method to search for and retrieve collections of entities matching specific criteria.</p>
+<pre><code class="lang-js">// Example: Get all active customers
 var activeCustomers = Domain.Crm.Sales.CustomersRepository.query({
     active: { equals: true }
 })
