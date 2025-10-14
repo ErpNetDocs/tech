@@ -1,4 +1,4 @@
-## What’s New in ERP.net
+# What’s New in ERP.net
 
 The **What’s New** section provides an overview of the latest updates and improvements across ERP.net.  
 Each version includes detailed notes organized by key functional areas such as **Product Management**, **WMS**, **Chat**, **AI**, and others.  
