@@ -1,6 +1,6 @@
 # Invoicing
 
-The **Invoicing** submodule manages the billing process by transforming preliminary invoice orders into finalized invoices. It forms a key part of the order-to-cash flow, connecting all sorts of documents such as offers, sales orders, and shipment orders with their respective issued invoices.
+The **Invoicing** submodule manages the billing process by transforming preliminary invoice orders into finalized invoices. It forms a key part of the order-to-cash flow, connecting all sorts of documents such as offers, sales orders, and shipment orders with their issued invoices.
 
 Invoicing provides the tools for creating, reviewing, and managing invoice documents and their related entities such as lines, parties, and state changes. It also ensures traceability between the original sales transactions and the resulting invoices.
 
