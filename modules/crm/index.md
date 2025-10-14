@@ -26,14 +26,12 @@ The CRM module consists of several **submodules**, each managing a specific aspe
 
 | Module | Description |
 |---------|-------------|
-| **[Contacts and tasks](https://docs.erp.net/tech/modules/crm/contacts/index.html?q=Contacts%20and%20tasks)** | Manages parties, calendar appointments, and related interactions. |
-| **[Pre-sales](https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm)** | Handles opportunities, quotations, and pricing discussions. |
-| **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales)** | Manages sales order documents. |
-| **[Invoicing](https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing)** | Oversees the invoicing process, including invoice orders and issued invoices. |
+| **[Invoicing](https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing)** | Oversees the invoicing process, including invoice orders and issued invoices. | 
 | **[Marketing](https://docs.erp.net/tech/modules/crm/marketing/index.html)** | Plans and executes marketing campaigns and manage distribution channels. |
-| **[Common concepts](https://docs.erp.net/tech/modules/crm/crm-common/index.html)** | Provides shared mechanisms such as pricing logic and line discount determination. |
-| **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)** | Offers a single platform for customer engagement and self-service. |
 | **POS** | Manages point-of-sale operations in physical retail environments. |
-| **Distribution** | Supports field sales and sales target management. |
-| **Product configuration** | Enables configurable, made-to-order and engineer-to-order products. |
-| **Products** | Maintains product master data, including measurements, codes, variants, and channels. |
+| **[Presales](https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm)** | Handles opportunities, quotations, and pricing discussions. |
+| **Pricing** | Creates bonus programs, line discounts, product prices, promotional packages and similar price-related entities.
+| **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales)** | Manages sales order documents. |
+| **[Sales Force](https://docs.erp.net/tech/modules/crm/sales-force/index.html)** | Sales Force description.
+| **Subscriptions** | Handles agreements with customers for periodic delivery of services and billing.
+| **[Client Center](https://docs.erp.net/tech/modules/crm/clientcenter/index.html)** | Offers a single platform for customer engagement and self-service. |
