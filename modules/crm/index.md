@@ -28,7 +28,7 @@ The CRM module consists of several **submodules**, each managing a specific aspe
 |---------|-------------|
 | **[Invoicing](https://docs.erp.net/tech/modules/crm/invoicing/index.html?q=crm%20Invoicing)** | Oversees the invoicing process, including invoice orders and issued invoices. | 
 | **[Marketing](https://docs.erp.net/tech/modules/crm/marketing/index.html)** | Plans and executes marketing campaigns and manage distribution channels. |
-| **POS** | Manages point-of-sale operations in physical retail environments. |
+| **[POS](https://docs.erp.net/tech/modules/crm/pos/index.html)** | Manages point-of-sale operations in physical retail environments. |
 | **[Presales](https://docs.erp.net/tech/modules/crm/presales/index.html?q=crm)** | Handles opportunities, quotations, and pricing discussions. |
 | **Pricing** | Creates bonus programs, line discounts, product prices, promotional packages and similar price-related entities.
 | **[Sales](https://docs.erp.net/tech/modules/crm/sales/index.html?q=crm%20Sales)** | Manages sales order documents. |
