@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
   topicHref: index.md
-- name: Product Management
+- name: Product management
   href: product-management/toc.yml
   topicHref: product-management/index.md
