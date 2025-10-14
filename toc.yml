@@ -16,5 +16,5 @@ items:
 - name: What's New
   href: whats-new/toc.yml
   topicHref: whats-new/index.md
-- name: Return to DOCS
+- name: Return to DOCS ⏶
   href: https://docs.erp.net/
