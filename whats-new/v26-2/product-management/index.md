@@ -1,2 +1,2 @@
 # Product Management
-[!list folder="." limit=100 default-text="None"]
+[!list folder="." depth=1 limit=100 default-text="None"]
