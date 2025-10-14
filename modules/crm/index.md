@@ -20,9 +20,9 @@ CRM manages the following sequence of documents and activities:
 > The above diagram shows only the CRM part of the whole process. <br>
 > The full process involves many different modules of the ERP system.
 
-## Modules
+## Structure
 
-The CRM module consists of multiple submodules, each managing a specific aspect of the customer relationship and sales process.
+The CRM module consists of several **submodules**, each managing a specific aspect of the customer relationship and sales process.
 
 | Module | Description |
 |---------|-------------|
