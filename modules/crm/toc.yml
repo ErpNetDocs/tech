@@ -5,7 +5,10 @@
   topicHref: invoicing/index.md
 - name: Marketing
   href: marketing/toc.yml
-  topicHref:  marketing/index.md
+  topicHref: marketing/index.md
+- name: POS
+  href: pos/toc.yml
+  topichref: pos/index.md
 - name: Presales
   href: presales/toc.yml
   topicHref: presales/index.md
