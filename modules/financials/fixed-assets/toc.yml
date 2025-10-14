@@ -1,6 +1,5 @@
-- name: Overview
+- name: Fixed assets
   href: index.md
-- name: Depreciation Methods
+- name: Depreciation methods
   href: depreciation-methods/toc.yml
   topicHref: depreciation-methods/index.md
-
