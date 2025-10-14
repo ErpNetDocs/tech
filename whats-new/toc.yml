@@ -1,6 +1,6 @@
-- name: Versions
+- name: Overview
   href: index.md
   topicHref: index.md
-- name: V. 26.2
-  href: v26_2/toc.yml
+- name: 26.2
+  href: v26-2/toc.yml
   topicHref: v26_2/index.md
