@@ -4,7 +4,7 @@ In order for POS to work correctly in @@name, initial settings are required.
 
 ### Define a POS location
 
-A POS location defines a given **Enterpise Company Location** as a POS object. The Enterpise Company Location itself must be specified in advance. 
+A POS location defines a given **Enterpise Company Location** as a POS object. The Enterpise Company Location must be specified in advance. 
 
 After determining the POS location, you can proceed to define POS operators and terminals for it.
 
@@ -82,7 +82,7 @@ It is necessary to define **POS roles** - for example, Manager or Storekeeper.
 - Set up an **ID site**
 - Set up a **Legal_BG site**
 - Create an **external user** in the ID site - achieved through the site interface.
-- Give this user **access to **System rights** / Access to **reports in Legal_BG**
+- Give this user access to **System rights** / Access to **reports in Legal_BG**
 - Give the user rights to the enterprise company
 - For reports inside the system, another **internal user** must be created with the appropriate rights - preferably to all modules, without Admin privileges or the right to edit documents.
     
