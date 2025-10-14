@@ -7,4 +7,4 @@ This page serves as a central point for exploring new features, enhancements, an
 
 You can browse the version-specific threads to see what’s changed, what’s improved, and what’s coming next.
 
-[!list folder="." limit=100 default-text="None"]
+[!list folder="." depth=1 limit=100 default-text="None"]
