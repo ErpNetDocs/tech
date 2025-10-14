@@ -2,5 +2,5 @@
   href: index.md
   topicHref: index.md
 - name: Product Relations
- href: product-relations/toc.yml
- topicHref: product-relations/index.md
+  href: product-relations/toc.yml
+  topicHref: product-relations/index.md
