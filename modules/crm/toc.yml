@@ -1,26 +1,23 @@
 - name: Overview
   href: index.md
-- name: Contacts and tasks
-  href: contacts/toc.yml
-  topicHref: contacts/index.md
-- name: Presales
-  href: presales/toc.yml
-  topicHref: presales/index.md
-- name: Sales
-  href: sales/toc.yml
-  topicHref: sales/index.md
-- name: Sales Force
-  href: sales-force/toc.yml
-  topicHref: sales-force/index.md
 - name: Invoicing
   href: invoicing/toc.yml
   topicHref: invoicing/index.md
 - name: Marketing
   href: marketing/toc.yml
   topicHref:  marketing/index.md
+- name: Presales
+  href: presales/toc.yml
+  topicHref: presales/index.md
 - name: Pricing
   href: pricing/toc.yml
   topicHref:  pricing/index.md
+- name: Sales
+  href: sales/toc.yml
+  topicHref: sales/index.md
+- name: Sales Force
+  href: sales-force/toc.yml
+  topicHref: sales-force/index.md
 - name: Client Center
   href: clientcenter/toc.yml
   topicHref:  clientcenter/index.md
