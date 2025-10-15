@@ -1,0 +1,44 @@
+name: Check DocFX TOC changes
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_path:
+        description: "Папката, за която да се провери TOC (пример: docs/operators)"
+        required: true
+        default: "docs"
+
+permissions:
+  contents: read
+
+jobs:
+  preview-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Run TOC generator (dry-run)
+        env:
+          TARGET_PATH: ${{ inputs.target_path }}
+        run: |
+          PY_SCRIPT="gen_docfx_root_toc_v4.py"
+          echo "🔍 Проверявам TOC за: $TARGET_PATH"
+          python "$PY_SCRIPT" --root "$TARGET_PATH" --write --auto-create-subdirs --update-parent --require-sub-index --verbose
+
+      - name: Show changed files
+        run: |
+          echo "📄 Променени файлове:"
+          git status --short
+          echo
+          echo "👉 Прегледай горния списък. Ако всичко изглежда наред, пусни 'update-toc.yml', за да направи commit."
