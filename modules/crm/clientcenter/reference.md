@@ -50,7 +50,7 @@ To include a type to be shown, enter its **ID** in the Settings field. Multiple 
 "OrderDocumentTypes": ["DocumentType1.Id", "DocumentType2.Id", "DocumentTypeN.Id"]
 ```
 
-If a value for this setting is not specified, **all document types** in the module are displayed.
+If this setting is not included in the configuration, **all document types** in the module are displayed.
 
 ## InvoiceDocumentTypes setting
 
@@ -62,7 +62,7 @@ To include a type to be shown, enter its **ID** in the Settings field. Multiple 
 "InvoiceDocumentTypes": ["DocumentType1.Id", "DocumentType2.Id", "DocumentTypeN.Id"]
 ```
 
-If a value for this setting is not specified, **all document types** in the module are displayed.
+If this setting is not included in the configuration, **all document types** in the module are displayed.
 
 ## HideLines setting
 

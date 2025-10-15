@@ -1,2 +1,6 @@
 - name: Depreciation methods
   href: index.md
+- name: Depreciation functions
+  href: depreciation-functions.md
+- name: Period determination methods
+  href: period-determination-methods.md
