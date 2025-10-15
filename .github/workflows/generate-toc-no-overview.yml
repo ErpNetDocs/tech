@@ -1,4 +1,4 @@
-name: Update DocFX TOC
+name: Update DocFX TOC NO OVERVIEW
 
 on:
   workflow_dispatch:
