@@ -1,4 +1,4 @@
-name: Generate/Update DocFX TOC
+name: Generate DocFX TOC
 
 on:
   workflow_dispatch:
@@ -7,41 +7,17 @@ on:
         description: "Папката, за която да се генерира TOC (пример: docs/operators)"
         required: true
         default: "docs"
-      auto_create_subdirs:
-        description: "Създай празни index.md и toc.yml в поддиректориите (1 ниво)"
-        required: true
-        type: boolean
-        default: true
-      update_parent:
-        description: "Ъпдейтни родителския toc.yml с новата секция"
-        required: true
-        type: boolean
-        default: true
-      include_root_files:
-        description: "Включи и други .md файлове в текущата папка (освен index/readme)"
-        required: true
-        type: boolean
-        default: false
-      require_sub_index:
-        description: "Включвай поддиректория в TOC само ако има index.md/readme.md"
-        required: true
-        type: boolean
-        default: false
-      require_sub_toc:
-        description: "Включвай поддиректория в TOC само ако има собствен toc.yml"
-        required: true
-        type: boolean
-        default: false
 
 permissions:
   contents: write
 
 jobs:
-  gen-toc:
+  generate-toc:
     name: Generate TOC for "${{ inputs.target_path }}"
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -49,34 +25,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      # 👉 ако скриптът ти е в друга папка, смени пътя тук
-      - name: Run gen_docfx_root_toc_v4.py
+      - name: Run DocFX TOC generator
         env:
           TARGET_PATH: ${{ inputs.target_path }}
         run: |
           set -e
           PY_SCRIPT="gen_docfx_root_toc_v4.py"
+
           if [ ! -f "$PY_SCRIPT" ]; then
-            echo "::error file=$PY_SCRIPT::Не е намерен $PY_SCRIPT в корена на репото."
+            echo "::error::Не е намерен $PY_SCRIPT в корена на репото."
             exit 1
           fi
 
-          ARGS="--root \"$TARGET_PATH\" --write"
-          ${{ inputs.auto_create_subdirs && 'ARGS="$ARGS --auto-create-subdirs"' || 'true' }}
-          ${{ inputs.update_parent && 'ARGS="$ARGS --update-parent"' || 'true' }}
-          ${{ inputs.include_root_files && 'ARGS="$ARGS --include-root-files"' || 'true' }}
-          ${{ inputs.require_sub_index && 'ARGS="$ARGS --require-sub-index"' || 'true' }}
-          ${{ inputs.require_sub_toc && 'ARGS="$ARGS --require-sub-toc"' || 'true' }}
+          echo "🚀 Генерирам TOC за: $TARGET_PATH"
+          python "$PY_SCRIPT" --root "$TARGET_PATH" --write --auto-create-subdirs --update-parent --require-sub-index --verbose
 
-          echo "Running: python $PY_SCRIPT $ARGS"
-          eval python "$PY_SCRIPT" $ARGS
-
-      - name: Commit changes (if any)
+      - name: Commit and push changes (if any)
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "toc-bot"
@@ -85,5 +54,5 @@ jobs:
             git commit -m "chore(docs): auto-generate toc.yml for ${{ inputs.target_path }}"
             git push
           else
-            echo "No changes to commit."
+            echo "✅ Няма промени за commit."
           fi
