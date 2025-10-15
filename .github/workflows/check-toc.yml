@@ -34,7 +34,7 @@ jobs:
         run: |
           PY_SCRIPT="gen_docfx_root_toc_v4.py"
           echo "🔍 Проверявам TOC за: $TARGET_PATH"
-          python "$PY_SCRIPT" --root "$TARGET_PATH" --write --auto-create-subdirs --update-parent --require-sub-index --verbose
+          python "$PY_SCRIPT" --root "$TARGET_PATH" --write --auto-create-subdirs --update-parent --require-sub-index --include-root-files --verbose
 
       - name: Show changed files
         run: |
