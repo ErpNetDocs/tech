@@ -1,6 +1,3 @@
 - name: Product management
   href: product-management/index.md
   topicHref: product-management/index.md
-- name: Product Management
-  href: product-management/toc.yml
-  topicHref: product-management/index.md
