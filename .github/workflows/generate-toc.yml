@@ -1,10 +1,10 @@
-name: Generate DocFX TOC
+name: Update DocFX TOC
 
 on:
   workflow_dispatch:
     inputs:
       target_path:
-        description: "Папката, за която да се генерира TOC (пример: docs/operators)"
+        description: "Папката, за която да се обнови TOC (пример: docs/operators)"
         required: true
         default: "docs"
 
@@ -12,10 +12,8 @@ permissions:
   contents: write
 
 jobs:
-  generate-toc:
-    name: Generate TOC for "${{ inputs.target_path }}"
+  update-toc:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,29 +28,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Run DocFX TOC generator
+      - name: Run TOC generator and commit
         env:
           TARGET_PATH: ${{ inputs.target_path }}
         run: |
-          set -e
           PY_SCRIPT="gen_docfx_root_toc_v4.py"
-
-          if [ ! -f "$PY_SCRIPT" ]; then
-            echo "::error::Не е намерен $PY_SCRIPT в корена на репото."
-            exit 1
-          fi
-
           echo "🚀 Генерирам TOC за: $TARGET_PATH"
           python "$PY_SCRIPT" --root "$TARGET_PATH" --write --auto-create-subdirs --update-parent --require-sub-index --verbose
 
-      - name: Commit and push changes (if any)
-        run: |
           if [ -n "$(git status --porcelain)" ]; then
+            echo "📦 Променени файлове:"
+            git status --short
             git config user.name "toc-bot"
             git config user.email "toc-bot@users.noreply.github.com"
             git add -A
             git commit -m "chore(docs): auto-generate toc.yml for ${{ inputs.target_path }}"
             git push
+            echo "✅ Промените са записани."
           else
             echo "✅ Няма промени за commit."
           fi
