@@ -21636,6 +21636,19 @@
     },
     {
       "type": "Toc",
+      "source_relative_path": "whats-new/v26-2/product-management/product-relations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/product-management/product-relations/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v26-2/product-management/product-relations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
       "source_relative_path": "whats-new/v26-2/product-management/toc.yml",
       "output": {
         ".html": {
