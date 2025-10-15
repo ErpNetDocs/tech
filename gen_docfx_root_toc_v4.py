@@ -3,11 +3,11 @@
 Generate/Update DocFX toc.yml for the *current folder only* + (optional) parent update,
 with the ability to auto-create missing `index.md` and `toc.yml` in direct subfolders.
 
-Anchors disabled: YAML output is forced to have **no** anchors (&id001/*id001) via a custom dumper.
-
-Typical usage
-  python gen_docfx_root_toc_v4.py --root ./docs/operators --write --auto-create-subdirs --update-parent
+- No YAML anchors (&id001/*id001)
+- Current folder's index.md/readme.md is always first in its TOC
+- Parent TOC keeps its own Overview (index.md/readme.md) first
 """
+
 from __future__ import annotations
 
 import argparse
@@ -23,10 +23,12 @@ except Exception as e:
     print("PyYAML is required: pip install pyyaml", file=sys.stderr)
     raise
 
+
 # ---- Disable YAML anchors (no &id001 / *id001) ----
 class NoAliasDumper(yaml.SafeDumper):
     def ignore_aliases(self, data):
         return True
+
 
 MD_EXTS = {".md", ".markdown"}
 DEFAULT_INDEX_NAMES = ["index.md", "readme.md"]
@@ -37,6 +39,7 @@ DEFAULT_EXCLUDES = [
 FRONT_MATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 H1_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 NUM_PREFIX_RE = re.compile(r"^(\d{1,4})[\-_\s]+(.*)$")
+
 
 # -------------------- utilities --------------------
 
@@ -96,7 +99,8 @@ def match_any(path: Path, patterns: List[str]) -> bool:
             return True
     return False
 
-# -------------------- build desired items --------------------
+
+# -------------------- scaffolding & desired items --------------------
 
 def ensure_subdir_scaffolding(root: Path, index_names: List[str], verbose: bool) -> None:
     """Ensure each direct subfolder has index.md and toc.yml (minimal)."""
@@ -124,17 +128,17 @@ def build_desired_items(
     require_sub_index: bool,
     verbose: bool,
 ) -> List[Dict[str, Any]]:
+    """Build the desired TOC list for the current folder (one level deep)."""
     items: List[Dict[str, Any]] = []
 
-    # Overview (root landing)
+    # Current folder's Overview first (if exists)
     root_index = next(((root / cand) for cand in index_names if (root / cand).exists()), None)
+    overview_item = None
     if root_index and root_index.is_file():
         overview_name = parse_title_from_markdown(root_index)
-        items.append({"name": overview_name or "Overview", "href": root_index.name})
-        if verbose:
-            print(f"[ROOT] index: {root_index.name} -> '{overview_name}'")
+        overview_item = {"name": overview_name or "Overview", "href": root_index.name}
 
-    # Root-level extra pages
+    # Other root-level md files (optional)
     if include_root_files:
         for f in sorted(root.iterdir(), key=sort_key_for_path):
             if f.is_file() and f.suffix.lower() in MD_EXTS and f != root_index and not match_any(f, excludes):
@@ -156,13 +160,8 @@ def build_desired_items(
                 print(f"[SKIP] {d.name} (no index and --require-sub-index)")
             continue
 
-        if sub_index:
-            name = parse_title_from_markdown(sub_index)
-            topic_href = f"{d.name}/{sub_index.name}"
-        else:
-            name = humanize_name(d.name)
-            topic_href = None
-
+        name = parse_title_from_markdown(sub_index) if sub_index else humanize_name(d.name)
+        topic_href = f"{d.name}/{sub_index.name}" if sub_index else None
         entry: Dict[str, Any] = {"name": name, "href": f"{d.name}/toc.yml"}
         if topic_href:
             entry["topicHref"] = topic_href
@@ -170,9 +169,14 @@ def build_desired_items(
         if verbose:
             print(f"[SUBDIR] {d.name} -> name='{name}', href='{entry['href']}', topicHref='{entry.get('topicHref','-')}'")
 
+    # Put current folder's Overview at position 0
+    if overview_item:
+        items.insert(0, overview_item)
+
     return items
 
-# -------------------- merge/update helpers --------------------
+
+# -------------------- read/write & merge --------------------
 
 def read_yaml_list(path: Path) -> List[Dict[str, Any]]:
     if not path.exists():
@@ -201,16 +205,7 @@ def upsert_current_toc(toc_path: Path, desired: List[Dict[str, Any]], verbose: b
             print(f"[WRITE] {toc_path} (new)")
         return
 
-    # Map desired by href for quick lookup
     desired_by_href = {it.get("href"): it for it in desired if it.get("href")}
-
-    # Ensure Overview entry is updated and kept at first position if already first
-    def is_overview(item: Dict[str, Any]) -> bool:
-        href = (item.get("href") or "").lower()
-        return href in {"index.md", "readme.md"}
-
-    # Try to locate overview in existing
-    overview_desired = next((it for it in desired if is_overview(it)), None)
 
     updated: List[Dict[str, Any]] = []
     seen_hrefs = set()
@@ -219,36 +214,29 @@ def upsert_current_toc(toc_path: Path, desired: List[Dict[str, Any]], verbose: b
         href = it.get("href")
         if href in desired_by_href:
             d = desired_by_href[href]
-            # update fields from desired
             merged = dict(it)
             merged["name"] = d.get("name", merged.get("name"))
             if "topicHref" in d:
                 merged["topicHref"] = d["topicHref"]
             else:
-                if "topicHref" in merged:
-                    del merged["topicHref"]
+                merged.pop("topicHref", None)
             updated.append(merged)
             seen_hrefs.add(href)
         else:
-            # keep manual/unknown items as-is
             updated.append(it)
 
-    # If overview missing in existing, insert it at the top
-    if overview_desired and not any(is_overview(x) for x in updated):
-        updated.insert(0, overview_desired)
-
-    # Append new desired items not present yet, sorted by numeric prefix of href
+    # Append newly desired ones not present yet (stable order by numeric prefix)
     missing = [it for h, it in desired_by_href.items() if h not in seen_hrefs]
     missing.sort(key=lambda it: sort_key_for_name(it.get("href") or it.get("name", "")))
     updated.extend(missing)
 
     write_yaml_list(toc_path, updated)
-    if verbose:
-        print(f"[WRITE] {toc_path} (updated)")
+
 
 # -------------------- parent update --------------------
 
 def update_parent_toc(child_root: Path, index_names: List[str], verbose: bool) -> None:
+    """Upsert the child's entry into the parent's TOC and force parent's Overview first."""
     parent = child_root.parent
     if parent == child_root:
         if verbose:
@@ -258,6 +246,11 @@ def update_parent_toc(child_root: Path, index_names: List[str], verbose: bool) -
     parent_toc = parent / "toc.yml"
     items = read_yaml_list(parent_toc)
 
+    def is_parent_overview(item: Dict[str, Any]) -> bool:
+        href = (item.get("href") or "").lower()
+        return href in {"index.md", "readme.md"}
+
+    # Desired child entry
     sub_index = next(((child_root / cand) for cand in index_names if (child_root / cand).exists()), None)
     if sub_index:
         name = parse_title_from_markdown(sub_index)
@@ -270,34 +263,41 @@ def update_parent_toc(child_root: Path, index_names: List[str], verbose: bool) -
     if topic_href:
         desired["topicHref"] = topic_href
 
-    hrefs = [it.get("href") for it in items]
-    if desired["href"] in hrefs:
-        for it in items:
-            if it.get("href") == desired["href"]:
-                it["name"] = desired["name"]
-                if topic_href:
-                    it["topicHref"] = topic_href
-                else:
-                    it.pop("topicHref", None)
-                break
+    # Upsert child entry
+    for it in items:
+        if it.get("href") == desired["href"]:
+            it["name"] = desired["name"]
+            if topic_href:
+                it["topicHref"] = topic_href
+            else:
+                it.pop("topicHref", None)
+            break
     else:
         items.append(desired)
-        items.sort(key=lambda it: sort_key_for_name(it.get("href") or it.get("name", "")))
 
-    write_yaml_list(parent_toc, items)
+    # Reorder: keep parent's Overview first, others sorted by numeric prefix/name
+    overview_items = [it for it in items if is_parent_overview(it)]
+    non_overview = [it for it in items if not is_parent_overview(it)]
+    overview_first = overview_items[:1]
+    non_overview.sort(key=lambda it: sort_key_for_name(it.get("href") or it.get("name", "")))
+    final_items = overview_first + non_overview
+
+    write_yaml_list(parent_toc, final_items)
     if verbose:
         print(f"[PARENT] Updated {parent_toc} with entry: {desired}")
+        print("[ORDER] Parent Overview forced first; others sorted by numeric prefix.")
+
 
 # -------------------- CLI --------------------
 
 def parse_args(argv: List[str]):
-    p = argparse.ArgumentParser(description="Generate/Update a single DocFX toc.yml for the current folder; optionally update parent and auto-create subdirs")
+    p = argparse.ArgumentParser(description="Generate/Update a single DocFX toc.yml for the current folder.")
     p.add_argument("--root", default=".", help="Folder to scan (default: .)")
     p.add_argument("--write", action="store_true", help="Write current folder's toc.yml (default: dry-run)")
-    p.add_argument("--no-write-current", action="store_true", help="Skip writing current folder's toc.yml (useful with --update-parent)")
-    p.add_argument("--update-parent", action="store_true", help="Update parent folder's toc.yml to include this folder")
-    p.add_argument("--auto-create-subdirs", action="store_true", help="Ensure each direct subfolder has index.md and toc.yml (minimal)")
-    p.add_argument("--index-names", default=",".join(DEFAULT_INDEX_NAMES), help="Comma-separated index candidates (default: index.md,readme.md)")
+    p.add_argument("--no-write-current", action="store_true", help="Skip writing current folder's toc.yml")
+    p.add_argument("--update-parent", action="store_true", help="Update parent folder's toc.yml")
+    p.add_argument("--auto-create-subdirs", action="store_true", help="Ensure each direct subfolder has index.md and toc.yml")
+    p.add_argument("--index-names", default=",".join(DEFAULT_INDEX_NAMES), help="Comma-separated index candidates")
     p.add_argument("--exclude", default=",".join(DEFAULT_EXCLUDES), help="Comma-separated patterns to exclude")
     p.add_argument("--include-root-files", action="store_true", help="Include non-index markdown files from root")
     p.add_argument("--require-sub-toc", action="store_true", help="Only include subfolders that already contain toc.yml")
@@ -328,17 +328,13 @@ def main(argv: List[str]) -> int:
         require_sub_index=args.require_sub_index,
         verbose=args.verbose,
     )
-
     toc_path = root / "toc.yml"
 
     if not args.no_write_current:
         if args.write:
             upsert_current_toc(toc_path, desired_items, verbose=args.verbose)
         else:
-            existing = read_yaml_list(toc_path)
-            print(f"--- {toc_path} (dry-run, existing={'yes' if existing else 'no'}) ---")
             print(yaml.dump(desired_items, sort_keys=False, allow_unicode=True, width=1000, Dumper=NoAliasDumper))
-            print("--- end ---")
 
     if args.update_parent:
         update_parent_toc(root, index_names=index_names, verbose=args.verbose)
@@ -348,4 +344,3 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))
-
