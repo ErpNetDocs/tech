@@ -1,2 +1,9 @@
+- name: Product Management
+  href: index.md
 - name: Product relations
   href: product-relations/index.md
+- name: Product Management
+  href: index.md
+- name: Product relations
+  href: product-relations/toc.yml
+  topicHref: product-relations/index.md
