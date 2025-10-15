@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Product Management","href":"index.html","topicHref":"index.html"},{"name":"Product relations","href":"product-relations/index.html","topicHref":"product-relations/index.html","includedFrom":"~/whats-new/v26-2/product-management/product-relations/toc.yml","items":[{"name":"Overview","href":"product-relations/index.html","topicHref":"product-relations/index.html"}]}],"pdf":false}
+{"order":100,"items":[{"name":"Product relations","href":"product-relations/index.html","topicHref":"product-relations/index.html"}],"pdf":false}
