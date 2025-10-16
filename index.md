@@ -10,6 +10,7 @@ It is targeted towards implementation consultants and power users.
 - [Modules](modules/index.md) - business functions and capabilities of ERP.net's modules
 - [Advanced](./advanced/index.md) - documentation of advanced systems
 - [Reference](./reference/index.md) - reference data for different topics
+- [What’s New](./whats-new/index.md) - an overview of the latest updates and improvements across ERP.net
 
 ## More information
 
