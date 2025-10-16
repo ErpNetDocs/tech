@@ -583,6 +583,14 @@ For example &quot;{Parent}, Notes: {DocumentNotes:T}, {MasterDocument} will be d
 <li>b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.</li>
 <li>c.The user sets it manually.</li>
 </ul>
+<h2 id="71-accountingaccountingvoucherlinesallowbasecurrencylineamountmismatch">71. /Accounting/AccountingVoucherLines/AllowBaseCurrencyLineAmountMismatch</h2>
+<ul>
+<li>a.Action: When the value of this key is:
+<br>&quot;1&quot; - When Currency == BaseCurrency, changing Debit does not update DebitBase, applies in reverse. The same applies for Credit and CreditBase. Validators allow mismatched amounts, but the document must be balanced by base currency (Σ DebitBase = Σ CreditBase).
+<br>&quot;0&quot; - Keeps the standard behavior (the system automatically updates the DebitBase and CreditBase values whenever Debit or Credit are changed, and the validators still check that the amounts in currency and base currency match).</li>
+<li>b.The user sets it manually.</li>
+<li>c.The key is introduced in version: 26.1</li>
+</ul>
 
 </article>
 
