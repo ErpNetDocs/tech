@@ -1177,7 +1177,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Welcome to the ERP.net Technical Documentation | ERP.net Tech Docs",
-    "summary": "Welcome to the ERP.net Technical Documentation The Technical Documentation explains the business logic of ERP.net. It is targeted towards implementation consultants and power users. Topics Concepts - general concepts which apply to all modules Modules - business functions and capabilities of ERP.net's modules Advanced - documentation of advanced systems Reference - reference data for different topics More information Data model - reference information about entities, business rules, generations, etc. Developer documentation - information for developers"
+    "summary": "Welcome to the ERP.net Technical Documentation The Technical Documentation explains the business logic of ERP.net. It is targeted towards implementation consultants and power users. Topics Concepts - general concepts which apply to all modules Modules - business functions and capabilities of ERP.net's modules Advanced - documentation of advanced systems Reference - reference data for different topics What’s New - an overview of the latest updates and improvements across ERP.net More information Data model - reference information about entities, business rules, generations, etc. Developer documentation - information for developers"
   },
   "legacy/exchange/index.html": {
     "href": "legacy/exchange/index.html",
