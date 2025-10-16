@@ -409,3 +409,11 @@ If you need to analyze the data, you may use Python code.
   For example "{Parent}, Notes: {DocumentNotes:T}, {MasterDocument} will be displayed as "Invoice Order 00001 ; Notes: ASAP ; Sales Order 00001
 - b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.
 - c.The user sets it manually.
+
+## 71. /Accounting/AccountingVoucherLines/AllowBaseCurrencyLineAmountMismatch
+- a.Action: When the value of this key is:
+<br>"1" - When Currency == BaseCurrency, changing Debit does not update DebitBase, applies in reverse. The same applies for Credit and CreditBase. Validators allow mismatched amounts, but the document must be balanced by base currency (Σ DebitBase = Σ CreditBase).
+<br>"0" - Keeps the standard behavior (the system automatically updates the DebitBase and CreditBase values whenever Debit or Credit are changed, and the validators still check that the amounts in currency and base currency match).
+- b.The user sets it manually.
+- c.The key is introduced in version: 26.1
+  
