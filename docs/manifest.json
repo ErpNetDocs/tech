@@ -9314,6 +9314,66 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_definitions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_definitions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_operations.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_operations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_report_ledgers.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_report_ledgers.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_setup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/accounting/pictures/accounting_vouchers.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/accounting/pictures/accounting_vouchers.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/financials/accounting/toc.yml",
       "output": {

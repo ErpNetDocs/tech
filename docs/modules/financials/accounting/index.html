@@ -87,9 +87,50 @@
         <article data-uid="">
 <h1 id="accounting">Accounting</h1>
 
-<ul>
-<li><a href="https://docs.erp.net/tech/modules/financials/accounting/operations/index.html">Operations</a></li>
-</ul>
+<p>Accounting is an integral component of the <strong><a href="../index.html">Finance module</a></strong>. Its primary purpose is to establish an auditable, rule-based environment for recording, summarizing, and presenting the financial position of an organization.</p>
+<p>This submodule integrates foundational definitions with operational documents and provides the necessary reports, like trial balances and financial statements, for both internal management and statutory compliance.</p>
+<p><img src="pictures/accounting_overview.png" alt="pictures"></p>
+<h2 id="interface">Interface</h2>
+<p>Accounting is segmented into three primary areas:</p>
+<h3 id="documents--operations">Documents &amp; Operations</h3>
+<p>These components represent the actual financial events recorded in the system.</p>
+<h4 id="vouchers">Vouchers</h4>
+<p>Represents transactional accounting documents that have been finalized and posted, serving as the official record for general ledger entries. They can reference a default document that initiated the voucher creation.</p>
+<p><img src="pictures/accounting_vouchers.png" alt="pictures"></p>
+<h4 id="operations"><strong><a href="https://docs.erp.net/tech/modules/financials/accounting/operations/index.html">Operations</a></strong></h4>
+<p>Represents system-level accounting processes or non-standard adjustments executed via specific documents. These transactions are typically automated or periodic procedures.</p>
+<p><img src="pictures/accounting_operations.png" alt="pictures"></p>
+<h3 id="definitions">Definitions</h3>
+<p>These components establish the structural foundation and rules of the accounting system.</p>
+<p><img src="pictures/accounting_definitions.png" alt="pictures"></p>
+<h4 id="accounts">Accounts</h4>
+<p>The leaf-level financial accounts used for actual posting (the core of the chart of accounts).</p>
+<h4 id="account-groups">Account Groups</h4>
+<p>A hierarchical structure used to organize individual accounts into categories and subcategories, defining the overall layout and logic of the chart of accounts.</p>
+<h4 id="cost-centers">Cost Centers</h4>
+<p>Organizational units used to track and control expenses, allowing allocation and monitoring of costs for specific departments, projects, or functions.</p>
+<h4 id="profit-centers">Profit Centers</h4>
+<p>Organizational units used to measure financial performance by tracking both revenues and costs, assessing profitability by business unit, product, or project.</p>
+<h3 id="financial-statements-setup">Financial Statements (SETUP)</h3>
+<p>Defines user-created financial statement reports (e.g., Balance Sheet, Income Statement).</p>
+<p><img src="pictures/accounting_setup.png" alt="pictures"></p>
+<h3 id="reports--ledgers">Reports &amp; Ledgers</h3>
+<p>These components provide the mechanisms for querying, analyzing, and summarizing the transactional data.</p>
+<p><img src="pictures/accounting_report_ledgers.png" alt="pictures"></p>
+<h4 id="account-statement">Account Statement</h4>
+<p>Provides a chronological breakdown of all accounting transactions for a specific ledger account within a specified date range.</p>
+<h4 id="current-balances">Current Balances</h4>
+<p>Represents the live, up-to-the-minute balances for all accounts, calculated from released accounting vouchers. It reflects the current financial position and can be segmented by analytical dimensions like Enterprise Company, Cost Center, Profit Center, Account, and Currency.</p>
+<h4 id="historical-balances">Historical Balances</h4>
+<p>Represents time-stamped ledger entries showing account balances as of specific historical dates. It is used for reviewing and reporting on past financial positions, providing a chronological record segmented by Date, Account, Item Key, Currency, Cost Center, and Profit Center.</p>
+<h4 id="trial-balance-detailed">Trial Balance Detailed</h4>
+<p>Shows debt and credit turnovers and balances per account, broken down by analytical dimensions (e.g., Cost and Profit Centers), designed for detailed analysis.</p>
+<h4 id="trial-balance-summary">Trial Balance Summary</h4>
+<p>Displays aggregated debt and credit turnovers and balances by account for a selected period, ideal for general financial overview and period-end reconciliation.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
 
 </article>
 
