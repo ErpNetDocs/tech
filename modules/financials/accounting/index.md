@@ -16,13 +16,13 @@ These components represent the actual financial events recorded in the system.
 
 #### Vouchers
 
-Represent the formalized, finalized accounting documents that are ready to be posted.
+Represents transactional accounting documents that have been finalized and posted, serving as the official record for general ledger entries. They can reference a default document that initiated the voucher creation.
 
 ![pictures](pictures/accounting_vouchers.png)
 
 #### **[Operations](https://docs.erp.net/tech/modules/financials/accounting/operations/index.html)**
 
-Generic accounting operations that do not follow a standard document flow, typically used for periodic or system-level adjustments.
+Represents system-level accounting processes or non-standard adjustments executed via specific documents. These transactions are typically automated or periodic procedures.
 
 ![pictures](pictures/accounting_operations.png)
 
