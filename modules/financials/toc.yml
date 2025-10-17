@@ -1,20 +1,20 @@
 - name: Overview
   href: index.md
-- name: VAT
-  href: VAT/toc.yml
-  topicHref: VAT/index.md
 - name: Accounting
   href: accounting/toc.yml
   topicHref: accounting/index.md
-- name: Cost accounting
+- name: Fixed assets
+  href: fixed-assets/toc.yml
+  topicHref: fixed-assets/index.md
+- name: Cost
   href: cost-accounting/toc.yml
   topicHref: cost-accounting/index.md
 - name: Excise
   href: excise/toc.yml
   topicHref: excise/index.md
-- name: Fixed assets
-  href: fixed-assets/toc.yml
-  topicHref: fixed-assets/index.md
 - name: Payments
   href: payments/toc.yml
   topicHref: payments/index.md
+- name: VAT
+  href: VAT/toc.yml
+  topicHref: VAT/index.md
