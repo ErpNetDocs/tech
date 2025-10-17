@@ -66,11 +66,11 @@ Provides a chronological breakdown of all accounting transactions for a specific
 
 #### Current Balances
 
-Contains live account balances calculated from all released accounting vouchers, reflecting the up-to-date financial position.
+Represents the live, up-to-the-minute balances for all accounts, calculated from released accounting vouchers. It reflects the current financial position and can be segmented by analytical dimensions like Enterprise Company, Cost Center, Profit Center, Account, and Currency.
 
 #### Historical Balances
 
-Shows account balances with analytical dimensions as of a selected historical date, used for reviewing past financial positions.
+Represents time-stamped ledger entries showing account balances as of specific historical dates. It is used for reviewing and reporting on past financial positions, providing a chronological record segmented by Date, Account, Item Key, Currency, Cost Center, and Profit Center.
 
 #### Trial Balance Detailed
 
