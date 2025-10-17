@@ -58,7 +58,7 @@ Defines user-created financial statement reports (e.g., Balance Sheet, Income St
 
 These components provide the mechanisms for querying, analyzing, and summarizing the transactional data.
 
-![pictures](pictures/report_ledgers.png)
+![pictures](pictures/accounting_report_ledgers.png)
 
 #### Account Statement
 
