@@ -87,7 +87,96 @@
         <article data-uid="">
 <h1 id="production">Production</h1>
 
-<p>To be updated.</p>
+<p>The Production module is designed to manage, control, and optimize the entire manufacturing process. Its primary function is to define the product structure (<strong>recipes, operations, ingredients</strong>), model the available production capacity (<strong>resources</strong>), and manage the execution and recording of work on the shop floor (<strong>work orders, consumption/output orders</strong>).</p>
+<h2 id="structure">Structure</h2>
+<p>The Production module consists of several submodules, each managing a distinct area of the production process.</p>
+<h3 id="technologies">Technologies</h3>
+<p>This submodule defines what is produced and how it is produced in the making of a product.</p>
+<p><img src="pictures/production_technologies.png" alt="pictures"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Entity</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Recipes</strong></td>
+<td style="text-align: left;">The central definition that contains the characteristics of <strong>operations</strong> and/or <strong>ingredients</strong> used to create products. It links ingredients with a sequence of operations to define the product structure.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Operations</strong></td>
+<td style="text-align: left;">Sub entities determining the routing (operation list) of a recipe (e.g., aging, mashing). They can be grouped into <strong>operation groups</strong> and carry technical parameters like resource usage and time standards.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingredients</strong></td>
+<td style="text-align: left;">Sub entities determining the materials or components of a specific recipe, defining the material inputs needed for production.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources">Resources</h3>
+<p>This submodule structures and defines the physical and labor assets available for manufacturing, providing essential data for production scheduling and execution.</p>
+<p><img src="pictures/production_resources.png" alt="pictures"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Entity</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Function Groups &amp; Functions</strong></td>
+<td style="text-align: left;">Represents the resource's specific technical skills or capabilities. Each function is defined with a <strong>primary unit</strong>, allowing the system to quantify and match an operation's required capability to a resource's competence.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Operation Groups &amp; Operations</strong></td>
+<td style="text-align: left;">Defines the types of work that can be performed. Each operation can specify a <strong>workgroup resource</strong>, the quantity of the resource to be used, and time standards for execution.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Resource Groups</strong></td>
+<td style="text-align: left;">Aggregates individual resources into logical pools (e.g., Assembly department). Resource groups define available <strong>functions</strong> and set costing parameters for the resources contained within them.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Workgroups</strong></td>
+<td style="text-align: left;">Production workgroups that define capacity at a granular level, including associated <strong>shifts</strong> and <strong>resources</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Operations - Instructions</strong></td>
+<td style="text-align: left;">Detailed instructions for performing an operation. One instruction can be used for different kinds of operations.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shop-floor">Shop Floor</h3>
+<p>This submodule manages the execution cycle, providing the transactional documents necessary to schedule work, record material movements, and track production output on the factory floor.</p>
+<p><img src="pictures/production_shopfloor.png" alt="pictures"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Entity</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Work orders</strong></td>
+<td style="text-align: left;">The core document for production execution. It is a scheduled and released production order, specifying the product, quantity, and linking to the <strong>recipe</strong>. It contains <strong>items</strong> to produce and detailed <strong>item ingredients</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Consumption orders</strong></td>
+<td style="text-align: left;">Documents material consumption against a specific <strong>work order</strong>. It records the inventory transaction of issuing materials from storage to the production floor.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Output orders</strong></td>
+<td style="text-align: left;">Documents the <strong>production output</strong> (finished goods) and run-time of the work orders. This records the inventory transaction of receiving finished goods into stock and tracks the actual time spent on production.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
 
 </article>
 
