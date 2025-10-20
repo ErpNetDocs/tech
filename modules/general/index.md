@@ -1,5 +1,5 @@
-# General
+# Foundation
 
 * **[Documents](documents/index.md)**
-*  **[Products](products/index.md)**
-*  **[Files](files/index.md)**
+* **[Files](files/index.md)**
+* **[Products](products/index.md)**
