@@ -13,7 +13,7 @@ This module contains fundamental definitions, serving as the common dictionary f
 | **Contacts** | Defines **individuals** and **entities** outside an immediate enterprise, used for managing relationships with customers, vendors, and partners. |
 | **Currencies** | Defines named sets of **currency exchange rates** against a single reference currency for a given date. |
 | **[Documents](https://docs.erp.net/tech/modules/general/documents/index.html)** | Contains all formal documents issued by and to the enterprise. |
-| **[Files](https://docs.erp.net/tech/modules/general/files/index.html)** | Manages **documents and attachments**, providing a centralized repository for files linked to records. |
+| **[Files](https://docs.erp.net/tech/modules/general/files/index.html)** | Manages **files** and organizes them into folders. |
 | **Geography** | Establishes the geographical master data, including country definitions, administrative boundaries, sales territories, and specific mapping points used for routing and location services. |
 | **[Products](https://docs.erp.net/tech/modules/general/products/index.html)** | Defines **goods, materials, and services** fundamental to the Inventory, Sales, Procurement, and Production modules. |
 | **Resources** | Defines all **physical and non-physical assets** used in processes, including machinery, labor, and tools. This is the foundation on which the **[Production module](https://docs.erp.net/tech/modules/production/index.html)** builds its capacity and competence model. |
