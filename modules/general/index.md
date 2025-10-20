@@ -17,7 +17,3 @@ This module contains fundamental definitions, serving as the common dictionary f
 | **Geography** | Establishes the geographical master data, including country definitions, administrative boundaries, sales territories, and specific mapping points used for routing and location services. |
 | **[Products](https://docs.erp.net/tech/modules/general/products/index.html)** | Defines **goods, materials, and services** fundamental to the Inventory, Sales, Procurement, and Production modules. |
 | **Resources** | Defines all **physical and non-physical assets** used in processes, including machinery, labor, and tools. This is the foundation on which the **[Production module](https://docs.erp.net/tech/modules/production/index.html)** builds its capacity and competence model. |
-
-* **[Documents](documents/index.md)**
-* **[Files](files/index.md)**
-* **[Products](products/index.md)**
