@@ -1,6 +1,6 @@
 # Production
 
-The Production module is designed to manage, control, and optimize the entire manufacturing process. Its primary function is to define the product structure (**recipes, operations, ingredients**), model the available production capacity (**resources**), and manage the execution and recording of work on the shop floor (**work orders, consumption/output orders**). It ensures traceability and provides the basis for cost accounting of manufactured goods.
+The Production module is designed to manage, control, and optimize the entire manufacturing process. Its primary function is to define the product structure (**recipes, operations, ingredients**), model the available production capacity (**resources**), and manage the execution and recording of work on the shop floor (**work orders, consumption/output orders**). 
 
 ## Structure
 
