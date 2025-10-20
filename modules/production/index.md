@@ -42,4 +42,8 @@ This submodule manages the execution cycle, providing the transactional document
 | :--- | :--- |
 | **Work orders** | The core document for production execution. It is a scheduled and released production order, specifying the product, quantity, and linking to the **recipe**. It contains **items** to produce and detailed **item ingredients**. |
 | **Consumption orders** | Documents material consumption against a specific **work order**. It records the inventory transaction of issuing materials from storage to the production floor. |
-| **Output orders** | Documents the production output (finished goods) and run-time of the work orders. This records the inventory transaction of receiving finished goods into stock and tracks the actual time spent on production. |
+| **Output orders** | Documents the **production output** (finished goods) and run-time of the work orders. This records the inventory transaction of receiving finished goods into stock and tracks the actual time spent on production. |
+
+> ![NOTE]
+> 
+> The screenshots taken for this article are from v.26 of the platform.
