@@ -44,6 +44,6 @@ This submodule manages the execution cycle, providing the transactional document
 | **Consumption orders** | Documents material consumption against a specific **work order**. It records the inventory transaction of issuing materials from storage to the production floor. |
 | **Output orders** | Documents the **production output** (finished goods) and run-time of the work orders. This records the inventory transaction of receiving finished goods into stock and tracks the actual time spent on production. |
 
-> ![NOTE]
+> [!NOTE]
 > 
 > The screenshots taken for this article are from v.26 of the platform.
