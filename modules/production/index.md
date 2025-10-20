@@ -10,7 +10,7 @@ The Production module consists of several submodules, each managing a distinct a
 
 This submodule defines what is produced and how it is produced in the making of a product.
 
-![pictures](pictures/prodution_technologies.png)
+![pictures](pictures/production_technologies.png)
 
 | Entity | Description |
 | :--- | :--- |
@@ -22,7 +22,7 @@ This submodule defines what is produced and how it is produced in the making of 
 
 This submodule structures and defines the physical and labor assets available for manufacturing, providing essential data for production scheduling and execution.
 
-![pictures](pictures/prodution_resources.png)
+![pictures](pictures/production_resources.png)
 
 | Entity | Description |
 | :--- | :--- |
@@ -36,7 +36,7 @@ This submodule structures and defines the physical and labor assets available fo
 
 This submodule manages the execution cycle, providing the transactional documents necessary to schedule work, record material movements, and track production output on the factory floor.
 
-![pictures](pictures/prodution_shopfloor.png)
+![pictures](pictures/production_shopfloor.png)
 
 | Entity | Description |
 | :--- | :--- |
