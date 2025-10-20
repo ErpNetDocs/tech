@@ -4,6 +4,8 @@ The Production module is designed to manage, control, and optimize the entire ma
 
 ## Structure
 
+The Production module consists of several submodules, each managing a distinct area of the production process.
+
 ### Technologies
 
 This submodule defines what is produced and how it is produced in the making of a product.
