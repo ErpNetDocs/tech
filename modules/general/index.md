@@ -9,10 +9,10 @@ This module contains fundamental definitions, serving as the common dictionary f
 | Submodule | Description |
 | :--- | :--- |
 | **Enterprise** | Defines the legal and operational **enterprise companies** within an organization that issue documents and are involved in transactions. |
-| **Activities** | Provides generic **task management** and **event scheduling**, supporting workflow and task allocation across an organization. |
+| **Activities** | Provides **task management** and **event/appointment scheduling** capabilities and can be used to automatically create sales opportunities in the **[Presales module](https://docs.erp.net/tech/modules/crm/presales/index.html)**.
 | **Contacts** | Defines **individuals** and **entities** outside an immediate enterprise, used for managing relationships with customers, vendors, and partners. |
 | **Currencies** | Defines named sets of **currency exchange rates** against a single reference currency for a given date. |
-| **[Documents](https://docs.erp.net/tech/modules/general/documents/index.html)** | Contains all formal documents issued by and to the enterprise. |
+| **[Documents](https://docs.erp.net/tech/modules/general/documents/index.html)** | Contains all sorts of documents issued by and to an enterprise. |
 | **[Files](https://docs.erp.net/tech/modules/general/files/index.html)** | Manages **files** and organizes them into folders. |
 | **Geography** | Establishes the geographical master data, including country definitions, administrative boundaries, sales territories, and specific mapping points used for routing and location services. |
 | **[Products](https://docs.erp.net/tech/modules/general/products/index.html)** | Defines **goods, materials, and services** fundamental to the Inventory, Sales, Procurement, and Production modules. |
