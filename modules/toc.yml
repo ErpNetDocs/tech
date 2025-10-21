@@ -22,7 +22,7 @@
 - name: Projects
   href: projects/toc.yml
   topicHref: projects/index.md  
-- name: Applications
+- name: Business Apps
   href: applications/toc.yml
   topicHref: applications/index.md    
 - name: System
