@@ -10532,6 +10532,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "modules/general/products/product-relations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/products/product-relations/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/products/product-relations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/general/products/product-types/index.md",
       "output": {
