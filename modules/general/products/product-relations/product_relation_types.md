@@ -56,7 +56,7 @@ When a product is selected in a configuration, the system should filter or valid
 Relations can be one-directional or bi-directional depending on the domain logic.
 Commonly used for verifying correctness in product recipes, technical documents, or assemblies.
 
-## Summary:
+### Summary:
 
 |SystemType |	Code|	Purpose| Behaviour|
 |-----------|-----|--------|----------|
@@ -65,7 +65,7 @@ Commonly used for verifying correctness in product recipes, technical documents,
 |Merchandising|	MRC|	Commercial / marketing relation	|Automatic recommendations (upsell, cross-sell, accessories).|
 |Fitment|	FIT|	Product compatibility	|Filtering and validation of compatible products.|
 
-# Understanding Replacement and Fitment
+## Understanding Replacement and Fitment
 
 You may stumble upon a pair of products and struggle with identifying their relation, as it would not definitiely be categorized as one type or the other at once.
 For example there are these two products: Tyre model A, by manufacturer X, and Tyre model B, by manufacturer Y. 
