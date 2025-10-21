@@ -9,6 +9,9 @@
 - name: Product types
   href: product-types/toc.yml
   topicHref: product-types/index.md
+- name: Product Relations
+  href: product-relations/toc.yml
+  topicHref: product-relations/index.md
 - name: Serial numbers
   href: serial-numbers/toc.yml
   topicHref: serial-numbers/index.md
@@ -18,4 +21,5 @@
   href: coding-systems.md
 - name: Variable (dynamic) measurement ratios
   href: variable-dynamic-measurement-rations.md
+
   
