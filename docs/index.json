@@ -1276,8 +1276,8 @@
   },
   "modules/applications/index.html": {
     "href": "modules/applications/index.html",
-    "title": "Applications | ERP.net Tech Docs",
-    "summary": "Applications ERP.net contains various built-in applications: Enterprise asset management Rental Service Data warehouse MsSync"
+    "title": "Business Apps | ERP.net Tech Docs",
+    "summary": "Business Apps ERP.net contains various built-in applications: Enterprise asset management Rental Service Data warehouse MsSync"
   },
   "modules/applications/mssync/getting-started/home.html": {
     "href": "modules/applications/mssync/getting-started/home.html",
