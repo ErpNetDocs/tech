@@ -6587,6 +6587,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/marketing/pictures/marketing_submodule.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/marketing/pictures/marketing_submodule.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/marketing/toc.yml",
       "output": {
