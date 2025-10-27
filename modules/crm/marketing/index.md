@@ -6,7 +6,33 @@ This submodule ensures that all marketing efforts are systematically planned, ex
 
 ![pictures](pictures/marketing_submodule.png)
 
-### Learn more
+## Structure
 
-- **[Distribution channels](distribution-channels/index.md)**
-- **[Bonus programs](bonus-programs/index.md)**
+Marketing uses two main transactional documents and several key reference data entities for segmentation and classification.
+
+| Document | Purpose |
+| :--- | :--- |
+| **Campaign** | Serves as the master container for an entire marketing initiative, defining its scope, budget, duration, and target audience. It tracks all generated sales pipeline entities. |
+| **Campaign Activity** | Represents a specific, quantifiable action taken within a Campaign, logging the execution details for a marketing task, including the responsible person, the product involved, the time, and the type of activity. |
+
+### Reference entities
+
+These entities provide the essential classification and data required to effectively plan and segment marketing efforts.
+
+| Reference Entity | Description |
+| :--- | :--- |
+| **Target Groups** | Segments of the customer or prospect base that campaigns are focused on.|
+| **Marketing Solutions** | Definitions of the specific bundles of products and services that an enterprise is offering, classified by the **Industry** and **Company Size Class** they target. |
+| **Industries** | A standard classification list for the economic sectors the enterprise operates in, used for market segmentation and classifying **Marketing Solutions** (e.g., *Technology*, *Consumer Staples*). |
+| **Company Size Classes** | Market segments based on standardized thresholds for employee count and revenue. |
+| **Competitors** | Records of entities vying for the same customers or market share. |
+| **Marketing Activity Types** | Standard classifications for the nature of the marketing action being performed. (e.g., **`PR`** for Promotion, **`DE`** for Demonstration). |
+| **Distribution Channels** | The methods used to bring the product or service to the customer. |
+
+
+## Learn more
+
+For technical details on specific entities, refer to the following documentation:
+
+* [Marketing/Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)
+* [Marketing/Bonus Programs](https://docs.erp.net/tech/modules/crm/marketing/bonus-programs/index.html)
