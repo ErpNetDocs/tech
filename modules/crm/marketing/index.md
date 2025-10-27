@@ -34,5 +34,5 @@ These entities provide the essential classification and data required to effecti
 
 For technical details on specific entities, refer to the following documentation:
 
-* [Marketing/Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)
-* [Marketing/Bonus Programs](https://docs.erp.net/tech/modules/crm/marketing/bonus-programs/index.html)
+* **[Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**
+* **[Bonus Programs](https://docs.erp.net/tech/modules/crm/marketing/bonus-programs/index.html)**
