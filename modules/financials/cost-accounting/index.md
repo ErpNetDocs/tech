@@ -1,4 +1,4 @@
-# Cost Accounting
+# Cost
 
 Costs represent the monetary value of resources consumed during an enterprise’s operations. 
 
