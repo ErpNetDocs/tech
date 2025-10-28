@@ -19,7 +19,7 @@ Marketing uses two main transactional documents and several key reference data e
 
 These entities provide the essential classification and data required to effectively plan and segment marketing efforts.
 
-| Reference Entity | Description |
+| Reference | Description |
 | :--- | :--- |
 | **Target Groups** | Segments of the customer or prospect base that campaigns are focused on.|
 | **Marketing Solutions** | Definitions of the specific bundles of products and services that an enterprise is offering, classified by the **Industry** and **Company Size Class** they target. |
@@ -27,12 +27,15 @@ These entities provide the essential classification and data required to effecti
 | **Company Size Classes** | Market segments based on standardized thresholds for employee count and revenue. |
 | **Competitors** | Records of entities vying for the same customers or market share. |
 | **Marketing Activity Types** | Standard classifications for the nature of the marketing action being performed. (e.g., **`PR`** for Promotion, **`DE`** for Demonstration). |
-| **Distribution Channels** | The methods used to bring the product or service to the customer. |
+| **[Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)** | The methods used to bring the product or service to the customer. |
 
 
 ## Learn more
 
 For technical details on specific entities, refer to the following documentation:
 
-* **[Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**
 * **[Bonus Programs](https://docs.erp.net/tech/modules/crm/marketing/bonus-programs/index.html)**
+
+> [!NOTE]
+>
+> The screenshots taken for this article are from v.26 of the platform.
