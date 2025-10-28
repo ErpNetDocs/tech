@@ -87,9 +87,85 @@
         <article data-uid="">
 <h1 id="fixed-assets">Fixed assets</h1>
 
-<ul>
-<li><strong><a href="https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html">Depreciation methods</a></strong></li>
-</ul>
+<p>Fixed assets are tangible resources recorded for long-term use in the operations of an enterprise and are expected to provide economic benefits over multiple accounting periods.</p>
+<p>In ERP.net, the <strong>Fixed Assets</strong> submodule is responsible for managing the full lifecycle of an enterprise's tangible long-term assets — from acquisition and capitalization to valuation, depreciation, and retirement.</p>
+<p>It ensures compliance with both accounting and tax requirements by maintaining separate <strong>valuation models</strong> and automating the calculation of <strong>depreciation</strong> according to the selected <strong>methods</strong>.</p>
+<p><img src="pictures/fixed_assets.png" alt="pictures"></p>
+<h2 id="structure">Structure</h2>
+<p>The page provides documents for registering and processing asset events, together with master data definitions and configuration elements that determine valuation and depreciation logic.</p>
+<h3 id="documents-and-operations">Documents and Operations</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Document / Operation</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Acquire and Retire Orders</strong></td>
+<td style="text-align: left;">Used to record asset acquisitions or retirements (disposals). These orders initiate the purchase or sale of fixed assets and manage related operational details.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Asset Transactions</strong></td>
+<td style="text-align: left;">Records value changes of assets such as capitalization, revaluation, impairment, or transfers between valuation models. Can also include opening balance entries.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Depreciation Plans</strong></td>
+<td style="text-align: left;">Defines the planned depreciation schedule for assets within a specified period or valuation model. Each plan can generate multiple depreciation documents.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Depreciations</strong></td>
+<td style="text-align: left;">Performs the actual depreciation calculation and posting for a financial period based on the rules defined in the selected <strong>Depreciation Method</strong> and <strong>Valuation Model</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="definitions">Definitions</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Definition</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Fixed Assets</strong></td>
+<td style="text-align: left;">The master records representing individual tangible assets. Each record includes its category, valuation model, currency, purchase and deployment dates, and current status.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Asset Groups</strong></td>
+<td style="text-align: left;">Logical groupings of assets defined by the user for reporting, management, or internal classification purposes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setup">Setup</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Setup</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Asset Categories</strong></td>
+<td style="text-align: left;">Classifies assets by type (e.g., Motor Vehicles, Computers, Software, Machinery) and associates each category with the appropriate product type.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><a href="https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html">Depreciation Methods</a></strong></td>
+<td style="text-align: left;">Defines the calculation logic for asset depreciation. Can be <strong>system-defined</strong> (e.g., Straight Line, User Defined with Table) or <strong>user-defined</strong>, and specifies period and function parameters.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Valuation Models</strong></td>
+<td style="text-align: left;">Represents the frameworks for asset valuation, such as <strong>Accounting</strong> or <strong>Taxation</strong>. Each asset may maintain multiple valuations simultaneously, with depreciation and transactions linked to the corresponding model.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
 
 </article>
 

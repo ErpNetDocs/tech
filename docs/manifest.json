@@ -9437,6 +9437,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/cost-accounting/pictures/cost.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/cost-accounting/pictures/cost.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/financials/cost-accounting/toc.yml",
       "output": {
@@ -9943,6 +9953,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/financials/fixed-assets/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/fixed-assets/pictures/fixed_assets.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/fixed-assets/pictures/fixed_assets.png"
         }
       },
       "version": ""

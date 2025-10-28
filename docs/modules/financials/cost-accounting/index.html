@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Cost Accounting | ERP.net Tech Docs </title>
+      <title>Cost | ERP.net Tech Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Cost Accounting | ERP.net Tech Docs ">
+      <meta name="title" content="Cost | ERP.net Tech Docs ">
       
       
       <link rel="icon" href="../../../favicon.ico">
@@ -85,8 +85,57 @@
         </div>
 
         <article data-uid="">
-<h1 id="cost-accounting">Cost Accounting</h1>
+<h1 id="cost">Cost</h1>
 
+<p>Cost represents the monetary value of resources consumed during an enterprise’s operations.</p>
+<p>In ERP.net, the <strong>Cost</strong> submodule supports the management of cost <strong>calculation</strong>, <strong>allocation</strong>, and <strong>distribution</strong>, ensuring that all incurred costs are accurately assigned to products, departments, or cost centers. It provides the framework for cost accounting within ERP.net, allowing organizations to maintain precise control over production and service expenses.</p>
+<p><img src="pictures/cost.png" alt="pictures"></p>
+<h2 id="structure">Structure</h2>
+<p>The page includes documents for performing cost calculations and distributions, together with setup elements that define allocation rules, cost templates, and types.</p>
+<h3 id="documents--operations">Documents &amp; Operations</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Document / Operation</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Calculations</strong></td>
+<td style="text-align: left;">Represents a single cost calculation and allocation run. Each calculation uses a defined <strong>Cost Template</strong> to determine how costs are gathered and distributed among cost objects.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Distributions</strong></td>
+<td style="text-align: left;">Used to perform cost distribution for a specific period and store. It defines cost inputs, weighting factors, and distribution results according to the configured cost types and allocation rules.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setup">Setup</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Setup</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Allocation Models</strong></td>
+<td style="text-align: left;">User-defined models specifying how costs are allocated across cost centers or activities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Templates</strong></td>
+<td style="text-align: left;">Define the structure and logic of cost calculations. Templates determine how costs are calculated and allocated.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Types</strong></td>
+<td style="text-align: left;">Define individual categories or classifications of costs (e.g., Labor, Transport, Packaging, Duties and Taxes). Each type can be activated or deactivated according to business needs.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also">See also</h2>
+<p>For more detailed explanations of cost calculation, distribution, and related processes, refer to the following articles:</p>
 <ul>
 <li><strong><a href="https://docs.erp.net/tech/modules/financials/cost-accounting/add-production-function.html?q=Add%20production%20function">Add production function</a></strong></li>
 <li><strong><a href="https://docs.erp.net/tech/modules/financials/cost-accounting/calculate-distribution-function.html?q=Calculate%20distribution%20function">Calculate distribution function</a></strong></li>
@@ -94,6 +143,10 @@
 <li><strong>Distribution business rules</strong></li>
 <li><strong><a href="https://docs.erp.net/tech/advanced/document-flow/generation-procedures.html?q=Distribution%20generation%20procedures">Distribution generation procedures</a></strong></li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
 
 </article>
 
