@@ -1,6 +1,6 @@
 # Cost
 
-Costs represent the monetary value of resources consumed during an enterprise’s operations. 
+Cost represents the monetary value of resources consumed during an enterprise’s operations. 
 
 In @@name, the **Cost** submodule supports the management of cost **calculation**, **allocation**, and **distribution**, ensuring that all incurred costs are accurately assigned to products, departments, or cost centers. It provides the framework for cost accounting within @@name, allowing organizations to maintain precise control over production and service expenses.
 
