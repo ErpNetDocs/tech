@@ -1,34 +1,36 @@
 # Fixed assets
 
-The Fixed Assets submodule is responsible for managing **the full lifecycle of an enterprise's long-term tangible assets** — from acquisition and valuation to depreciation and retirement. It ensures compliance with accounting and tax regulations by maintaining separate valuation models and automating the periodic calculation of depreciation.
+The **Fixed Assets** submodule is responsible for managing the full lifecycle of an enterprise's tangible long-term assets — from acquisition and capitalization to valuation, depreciation, and retirement. 
+
+It ensures compliance with both accounting and tax requirements by maintaining separate **valuation models** and automating the calculation of **depreciation** according to the selected **methods**.
 
 ## Structure
 
-Fixed Assets supports key documents used to record asset events and periodic operations required for financial accounting.
+The page provides documents for registering and processing asset events, together with master data definitions and configuration elements that determine valuation and depreciation logic.
 
 ### Documents and Operations
 
-| Document / Operation | Purpose |
-| :--- | :--- |
-| **Acquire and Retire Orders** | Documents used to initiate or record the purchase or disposal (sale/retirement) of a fixed asset. |
-| **Asset Transactions** | Used to record basic asset value transactions and opening balances related to fixed assets. |
-| **Depreciation Plans** | The planning document that allows users to create and define the anticipated depreciation schedules for a specific period or set of assets. |
-| **Depreciations** | The periodic operation document that records the actual calculation and booking of asset wear and tear for a financial period. It is typically generated based on the chosen **Valuation Model**. |
+| Document / Operation          | Purpose                                                                                                                                                                     |
+| :---------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Acquire and Retire Orders** | Used to record asset acquisitions or retirements (disposals). These orders initiate the purchase or sale of fixed assets and manage related operational details.            |
+| **Asset Transactions**        | Records value changes of assets such as capitalization, revaluation, impairment, or transfers between valuation models. Can also include opening balance entries.           |
+| **Depreciation Plans**        | Defines the planned depreciation schedule for assets within a specified period or valuation model. Each plan can generate multiple depreciation documents.                  |
+| **Depreciations**             | Performs the actual depreciation calculation and posting for a financial period based on the rules defined in the selected **Depreciation Method** and **Valuation Model**. |
 
 ### Definitions
 
-| Definition | Purpose |
-| :--- | :--- |
-| **Fixed Assets** | The core master record for an individual tangible asset (e.g., a specific piece of machinery, a vehicle). |
-| **Asset Groups** | User-defined groupings of assets, typically used for reporting or logical organization within the enterprise. |
+| Definition       | Purpose                                                                                                                                                                      |
+| :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fixed Assets** | The master records representing individual tangible assets. Each record includes its category, valuation model, currency, purchase and deployment dates, and current status. |
+| **Asset Groups** | Logical groupings of assets defined by the user for reporting, management, or internal classification purposes.                                                              |
 
 ### Setup
 
-| Setup | Purpose |
-| :--- | :--- |
-| **Asset Categories** | Systematically categorizes assets based on their nature and required financial treatment. |
-| **[Depreciation Methods](https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html)** | Contains both system-defined and user-defined methods for calculating depreciation expense. |
-| **Valuation Models** | Stand for the different valuations an asset can have (e.g., Accounting, Tax, External Financial Reports). All asset transactions are linked to a model. |
+| Setup                                                                                                                 | Purpose                                                                                                                                                                                                                  |
+| :-------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Asset Categories**                                                                                                  | Classifies assets by type (e.g., Motor Vehicles, Computers, Software, Machinery) and associates each category with the appropriate product type.                                                                         |
+| **[Depreciation Methods](https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html)** | Defines the calculation logic for asset depreciation. Can be **system-defined** (e.g., Straight Line, User Defined with Table) or **user-defined**, and specifies period and function parameters.                        |
+| **Valuation Models**                                                                                                  | Represents the frameworks for asset valuation, such as **Accounting** or **Taxation**. Each asset may maintain multiple valuations simultaneously, with depreciation and transactions linked to the corresponding model. |
 
 > [!NOTE]
 > 
