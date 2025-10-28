@@ -1,6 +1,8 @@
 # Fixed assets
 
-The **Fixed Assets** submodule is responsible for managing the full lifecycle of an enterprise's tangible long-term assets — from acquisition and capitalization to valuation, depreciation, and retirement. 
+Fixed assets are tangible resources recorded for long-term use in the operations of an enterprise and are expected to provide economic benefits over multiple accounting periods.
+
+In @@name, the **Fixed Assets** submodule is responsible for managing the full lifecycle of an enterprise's tangible long-term assets — from acquisition and capitalization to valuation, depreciation, and retirement. 
 
 It ensures compliance with both accounting and tax requirements by maintaining separate **valuation models** and automating the calculation of **depreciation** according to the selected **methods**.
 
