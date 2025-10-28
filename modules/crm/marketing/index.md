@@ -6,6 +6,8 @@ The **Marketing** submodule manages the promotional aspect of the customer lifec
 
 ## Structure 
 
+The page consists of three main sections: **Documents & Operations**, **Definitions**, and **Setup**.
+
 ### Documents & Operations
 
 This section outlines the core transactional document used to plan and execute all **marketing activities**.
@@ -41,7 +43,7 @@ This section contains system-level configuration elements that control how marke
 
 ## Learn more
 
-For details on specific entities, refer to the following documentation:
+For details on related entities, refer to the following documentation:
 
 * **[Bonus Programs](https://docs.erp.net/tech/modules/crm/marketing/bonus-programs/index.html)**
 
