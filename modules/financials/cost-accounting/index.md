@@ -4,6 +4,8 @@ Cost represents the monetary value of resources consumed during an enterprise’
 
 In @@name, the **Cost** submodule supports the management of cost **calculation**, **allocation**, and **distribution**, ensuring that all incurred costs are accurately assigned to products, departments, or cost centers. It provides the framework for cost accounting within @@name, allowing organizations to maintain precise control over production and service expenses.
 
+![pictures](pictures/cost.png)
+
 ## Structure
 
 The page includes documents for performing cost calculations and distributions, together with setup elements that define allocation rules, cost templates, and types.
