@@ -27,7 +27,9 @@ Fixed Assets supports key documents used to record asset events and periodic ope
 | Setup | Purpose |
 | :--- | :--- |
 | **Asset Categories** | Systematically categorizes assets based on their nature and required financial treatment. |
-| **Depreciation Methods** | Contains both system-defined and user-defined methods for calculating depreciation expense. |
+| **[Depreciation Methods](https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html)** | Contains both system-defined and user-defined methods for calculating depreciation expense. |
 | **Valuation Models** | Stand for the different valuations an asset can have (e.g., Accounting, Tax, External Financial Reports). All asset transactions are linked to a model. |
 
-- **[Depreciation methods](https://docs.erp.net/tech/modules/financials/fixed-assets/depreciation-methods/index.html)**
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v.26 of the platform.
