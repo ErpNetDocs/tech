@@ -1,6 +1,6 @@
 # Marketing
 
-The **Marketing** submodule manages the promotional side of the customer lifecycle, dedicated to the planning, execution, and analysis of all marketing initiatives. It is centered around defining **target groups**, organizing **activities**, tracking **competitors**, and linking efforts directly to the generation of **leads** and **opportunities**.
+The **Marketing** submodule manages the promotional aspect of the customer lifecycle, supporting the planning, execution, and analysis of marketing activities. It focuses on defining **target groups**, organizing **marketing activities** and **campaigns**, tracking **competitors**, and providing the analytical foundation for lead and opportunity management within the CRM module.
 
 ![pictures](pictures/marketing_submodule.png)
 
@@ -27,7 +27,7 @@ This section provides the core master data used to define marketing segments, cl
 | **Target Groups**            | Segments of customers or prospects that campaigns and activities are aimed at.                          |
 | **Competitors**              | Records of competing organizations used for comparison, analysis, and intelligence.                     |
 | **Marketing Activity Types** | Classification codes defining the nature of the activity (for example, *Promotion*, *Event*, *Survey*). |
-| **Distribution Channels**    | The methods or intermediaries used to deliver products or services to end customers.                    |
+| **[Distribution Channels](https://docs.erp.net/tech/modules/crm/marketing/distribution-channels/index.html)**    | The methods or intermediaries used to deliver products or services to end customers.                    |
 
 ### Setup
 
