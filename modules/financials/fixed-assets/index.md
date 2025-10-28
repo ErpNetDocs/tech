@@ -6,6 +6,8 @@ In @@name, the **Fixed Assets** submodule is responsible for managing the full l
 
 It ensures compliance with both accounting and tax requirements by maintaining separate **valuation models** and automating the calculation of **depreciation** according to the selected **methods**.
 
+![pictures](pictures/fixed_assets.png)
+
 ## Structure
 
 The page provides documents for registering and processing asset events, together with master data definitions and configuration elements that determine valuation and depreciation logic.
