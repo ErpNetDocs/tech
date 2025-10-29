@@ -3,16 +3,16 @@
 With the latest update, we’re introducing a new concept: _Product Relations_, bringing more flexibility, clarity, and automation to the way products are connected.
 This functionality is implemented through two new tables:
 
-🧩 Product Relation Types – define what kind of relationship exists between products (e.g., Replacement, Compatibility, Merchandising).
+🧩 Product Relation Types – define what kind of relationship exists between products (e.g., Replacement, Fitment, Merchandising).<br>
 🔗 Product Relations – store the actual links between products (from → to), including validity dates and quantity factors.
 
 ## What Does This Bring?
 
 The new model allows the system to understand how products relate to each other — not just by code or category, but by real business relationships:
 
-🔁 Replacement – automatically suggest substitute products when one is discontinued or out of stock.
-🧠 Merchandising – provide intelligent product recommendations such as upsell, cross-sell, or similar products.
-⚙️ Fitment – ensure only compatible components are used in configurations or production.
+🔁 Replacement – automatically suggest substitute products when one is discontinued or out of stock.<br>
+🧠 Merchandising – provide intelligent product recommendations such as upsell, cross-sell, or similar products.<br>
+⚙️ Fitment – ensure only compatible components are used in configurations or production.<br>
 🧱 Generic – define your own custom relation types for unique business cases.
 
 ## Why It Matters
