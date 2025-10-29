@@ -56,8 +56,6 @@ When a product is selected in a configuration, the system should filter or valid
 Relations can be one-directional or bi-directional depending on the domain logic.
 Commonly used for verifying correctness in product recipes, technical documents, or assemblies.
 
-### Summary:
-
 |SystemType |	Code|	Purpose| Behaviour|
 |-----------|-----|--------|----------|
 |Generic    |	GEN |	Free / universal relation|	Only record and display; no functional behavior.|
@@ -96,7 +94,7 @@ Replacement (RPL): “can be used instead of” → focuses on interchangeabilit
 
 Modeling both relations explicitly keeps system logic clean and unambiguous.
 
-# Defining company's Product Relation Types
+## Defining company's Product Relation Types
 Each organization has its own business-specific needs and may require finer distinctions or naming for product relations within these system categories.
 This is where custom Product Relation Types come into play.
 
