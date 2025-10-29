@@ -21815,6 +21815,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/web-client/editable-navigators/editable-navigators.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/web-client/editable-navigators/editable-navigators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/web-client/index.md",
       "output": {
         ".html": {
