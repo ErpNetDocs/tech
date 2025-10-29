@@ -1,6 +1,6 @@
 # WEB client v.26.2
 ### Notable features
-[!list folder="." depth=1 limit=100 default-text="None"]
+[Editable navigators](https://support.erp.net/hc/en-us/articles/21204475157276-WEB-client-Inline-%D0%B5diting-in-Navigators-v-26)
 
 ### Other features
 **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
