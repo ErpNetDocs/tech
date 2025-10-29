@@ -87,7 +87,38 @@
         <article data-uid="">
 <h1 id="product-relations">Product relations</h1>
 
-<p>TBD</p>
+<p>With the latest update, we’re introducing a new concept: <em>Product Relations</em>, bringing more flexibility, clarity, and automation to the way products are connected.
+This functionality is implemented through two new tables:</p>
+<p>🧩 Product Relation Types – define what kind of relationship exists between products (e.g., Replacement, Fitment, Merchandising).<br>
+🔗 Product Relations – store the actual links between products (from → to), including validity dates and quantity factors.</p>
+<h2 id="what-does-this-bring">What Does This Bring?</h2>
+<p>The new model allows the system to understand how products relate to each other — not just by code or category, but by real business relationships:</p>
+<p>🔁 Replacement – automatically suggest substitute products when one is discontinued or out of stock.<br>
+🧠 Merchandising – provide intelligent product recommendations such as upsell, cross-sell, or similar products.<br>
+⚙️ Fitment – ensure only compatible components are used in configurations or production.<br>
+🧱 Generic – define your own custom relation types for unique business cases.</p>
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>These new tables make product data management more flexible, centralized, and extensible.
+Instead of separate, disconnected structures (for replacements, accessories, or compatibility), we now have a unified model that can evolve without database or code changes.</p>
+<p>This turns Product Management into a more powerful tool for:</p>
+<ul>
+<li>process optimization (faster order handling and support),</li>
+<li>improved customer experience through smarter product suggestions,</li>
+<li>and deeper insight into product relationships and lifecycle data.</li>
+</ul>
+<p>🧭 In short:
+The new Product Relations transform Product Management from a static catalog into a dynamic network of product knowledge, enabling automation, recommendations, and data-driven decisions across the business.</p>
+<hr>
+<p>Learn more about the two major entities within product relations framework:</p>
+<ol>
+<li><a href="https://docs.erp.net/tech/modules/general/products/product-relations/product_relation_types.html">Types of Product Relations</a></li>
+<li><a href="https://docs.erp.net/tech/modules/general/products/product-relations/product_relations.html">Product Relations</a></li>
+</ol>
+<p>If you need to access the <strong>domain model</strong>, click here:</p>
+<ol>
+<li><a href="https://docs.erp.net/model/entities/General.Products.ProductRelationTypes.html">General.Products.ProductRelationTypes Entity</a></li>
+<li><a href="https://docs.erp.net/model/entities/General.Products.ProductRelations.html">General.Products.ProductRelations Entity</a></li>
+</ol>
 
 </article>
 

@@ -3067,7 +3067,7 @@
   "whats-new/v26-2/product-management/index.html": {
     "href": "whats-new/v26-2/product-management/index.html",
     "title": "Product Management | ERP.net Tech Docs",
-    "summary": "Product Management Intro text here Notable features Product relations Other features"
+    "summary": "Product Management The Product Management module is the heart of product data management — where all products are defined, structured, and connected within the system. Its purpose is to ensure complete, accurate, and consistent product information throughout the entire lifecycle — from definition and maintenance to sales, service, and analytics. Notable features Product relations Other features"
   },
   "whats-new/v26-2/product-management/pictures/index.html": {
     "href": "whats-new/v26-2/product-management/pictures/index.html",
@@ -3077,7 +3077,7 @@
   "whats-new/v26-2/product-management/product-relations/index.html": {
     "href": "whats-new/v26-2/product-management/product-relations/index.html",
     "title": "Product relations | ERP.net Tech Docs",
-    "summary": "Product relations TBD"
+    "summary": "Product relations With the latest update, we’re introducing a new concept: Product Relations, bringing more flexibility, clarity, and automation to the way products are connected. This functionality is implemented through two new tables: \uD83E\uDDE9 Product Relation Types – define what kind of relationship exists between products (e.g., Replacement, Fitment, Merchandising). \uD83D\uDD17 Product Relations – store the actual links between products (from → to), including validity dates and quantity factors. What Does This Bring? The new model allows the system to understand how products relate to each other — not just by code or category, but by real business relationships: \uD83D\uDD01 Replacement – automatically suggest substitute products when one is discontinued or out of stock. \uD83E\uDDE0 Merchandising – provide intelligent product recommendations such as upsell, cross-sell, or similar products. ⚙️ Fitment – ensure only compatible components are used in configurations or production. \uD83E\uDDF1 Generic – define your own custom relation types for unique business cases. Why It Matters These new tables make product data management more flexible, centralized, and extensible. Instead of separate, disconnected structures (for replacements, accessories, or compatibility), we now have a unified model that can evolve without database or code changes. This turns Product Management into a more powerful tool for: process optimization (faster order handling and support), improved customer experience through smarter product suggestions, and deeper insight into product relationships and lifecycle data. \uD83E\uDDED In short: The new Product Relations transform Product Management from a static catalog into a dynamic network of product knowledge, enabling automation, recommendations, and data-driven decisions across the business. Learn more about the two major entities within product relations framework: Types of Product Relations Product Relations If you need to access the domain model, click here: General.Products.ProductRelationTypes Entity General.Products.ProductRelations Entity"
   },
   "whats-new/v26-2/web-client/editable-navigators/editable-navigators.html": {
     "href": "whats-new/v26-2/web-client/editable-navigators/editable-navigators.html",
