@@ -62,7 +62,7 @@ Its purpose is to ensure that product interactions — such as replacements, com
 |Fitment (FIT)	|Oil Filter → Vehicle Model	|Defines compatibility between components. The Oil Filter is compatible only with certain Vehicle Models, and the system validates this during configuration.|
 
 Learn more about the two major entities within product relations framework: 
-1. [Product Relations Types](https://docs.erp.net/tech/modules/general/products/product-relations/product_relation_types.html)
+1. [Types of Product Relations](https://docs.erp.net/tech/modules/general/products/product-relations/product_relation_types.html)
 2. [Product Relations](https://docs.erp.net/tech/modules/general/products/product-relations/product_relations.html)
 
 If you need to access the **domain model**, click here:
