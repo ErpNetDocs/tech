@@ -3062,17 +3062,12 @@
   "whats-new/v26-2/index.html": {
     "href": "whats-new/v26-2/index.html",
     "title": "Version 26.2 | ERP.net Tech Docs",
-    "summary": "Version 26.2 Product Management WEB client v.26.2"
+    "summary": "Version 26.2 Product Management WEB Client"
   },
   "whats-new/v26-2/product-management/index.html": {
     "href": "whats-new/v26-2/product-management/index.html",
     "title": "Product Management | ERP.net Tech Docs",
     "summary": "Product Management The Product Management module is the heart of product data management — where all products are defined, structured, and connected within the system. Its purpose is to ensure complete, accurate, and consistent product information throughout the entire lifecycle — from definition and maintenance to sales, service, and analytics. Notable features Product relations Other features"
-  },
-  "whats-new/v26-2/product-management/pictures/index.html": {
-    "href": "whats-new/v26-2/product-management/pictures/index.html",
-    "title": "| ERP.net Tech Docs",
-    "summary": ""
   },
   "whats-new/v26-2/product-management/product-relations/index.html": {
     "href": "whats-new/v26-2/product-management/product-relations/index.html",
@@ -3086,8 +3081,8 @@
   },
   "whats-new/v26-2/web-client/index.html": {
     "href": "whats-new/v26-2/web-client/index.html",
-    "title": "WEB client v.26.2 | ERP.net Tech Docs",
-    "summary": "WEB client v.26.2 Notable features Editable navigators Other features 1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay” Our latest update introduces two powerful system-calculated attributes — “Total Line Amount” and “Amount To Pay” — for all Invoice and Sales documents. With these new fields, users can instantly view key financial figures directly within the document form or navigator, without needing to perform any manual calculations. This improvement streamlines financial verification, enhances accuracy, and saves valuable time when managing transactions — helping you stay focused on what matters most: running your business efficiently. 2. Access to object system information System information provides special data for the currently observed object, as its ID for example. It is now easier to access that through the menu, as a side panel System info.. 3. Additional support by the Details panel The Details panel, one of the most frequently used sources of information, has been improved to offer enhanced support when viewing a record. Now displayed as a side panel, it shows all the details of the currently opened record — information that was previously only accessible while browsing through the navigator rows. You can now customize the panel to display any fields you choose, not just the default ones. Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon."
+    "title": "WEB Client | ERP.net Tech Docs",
+    "summary": "WEB Client Notable features Other features 1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay” Our latest update introduces two powerful system-calculated attributes — “Total Line Amount” and “Amount To Pay” — for all Invoice and Sales documents. With these new fields, users can instantly view key financial figures directly within the document form or navigator, without needing to perform any manual calculations. This improvement streamlines financial verification, enhances accuracy, and saves valuable time when managing transactions — helping you stay focused on what matters most: running your business efficiently. 2. Access to object system information System information provides special data for the currently observed object, as its ID for example. It is now easier to access that through the menu, as a side panel System info.. 3. Additional support by the Details panel The Details panel, one of the most frequently used sources of information, has been improved to offer enhanced support when viewing a record. Now displayed as a side panel, it shows all the details of the currently opened record — information that was previously only accessible while browsing through the navigator rows. You can now customize the panel to display any fields you choose, not just the default ones. Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon."
   },
   "whats-new/v26-2/web-client/pictures/index.html": {
     "href": "whats-new/v26-2/web-client/pictures/index.html",

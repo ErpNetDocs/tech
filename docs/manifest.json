@@ -21769,16 +21769,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v26-2/product-management/pictures/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/product-management/pictures/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/product-management/product-relations/index.md",
       "output": {
         ".html": {
