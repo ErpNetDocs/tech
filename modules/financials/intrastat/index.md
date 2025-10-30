@@ -2,7 +2,7 @@
 
 **Intrastat** is the system used by the European Union to collect statistical data on trade in goods between member states. It serves to record the physical movement of goods across internal EU borders, replacing traditional customs declarations for intra-EU trade.
 
-The **Intrastat submodule in @@name** allows enterprises to prepare, manage, and submit Intrastat declarations in compliance with EU statistical requirements. The system consolidates data on dispatches and arrivals of goods, ensuring accurate reporting to national authorities.
+The **Intrastat submodule in @@name** allows enterprises to prepare, manage, and submit Intrastat declarations in compliance with EU statistical requirements. The system consolidates data on dispatches and arrivals of goods for accurate reporting to national authorities.
 
 ![pictures](pictures/intrastat_overview.png)
 
@@ -18,7 +18,7 @@ The **Intrastat submodule in @@name** allows enterprises to prepare, manage, and
 The submodule contains two primary components:
 
 1. **Intrastat Declarations** – Used to record and submit trade data for a given reporting period.
-2. **Commodity Codes** – Contain the official Combined Nomenclature (CN) codes required for classifying goods in Intrastat and Excise reporting.
+2. **Commodity Codes** – Contain the official Combined Nomenclature codes required for classifying goods in Intrastat reporting.
 
 ### Intrastat Declarations
 
