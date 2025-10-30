@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Intrastat | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Intrastat | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/intrastat/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="intrastat">Intrastat</h1>
+
+<p><strong>Intrastat</strong> is the system used by the European Union to collect statistical data on trade in goods between member states. It serves to record the physical movement of goods across internal EU borders, replacing traditional customs declarations for intra-EU trade.</p>
+<p>The <strong>Intrastat submodule in ERP.net</strong> allows enterprises to prepare, manage, and submit Intrastat declarations in compliance with EU statistical requirements. The system consolidates data on dispatches and arrivals of goods for accurate reporting to national authorities.</p>
+<p><img src="pictures/intrastat_overview.png" alt="pictures"></p>
+<p><strong>Intrastat supports companies by:</strong></p>
+<ul>
+<li>Maintaining standardized records of goods traded within the EU.</li>
+<li>Facilitating the preparation of official Intrastat declarations.</li>
+<li>Storing and validating commodity codes used for classification of traded goods.</li>
+<li>Allowing submission through authorized representatives.</li>
+</ul>
+<h2 id="structure">Structure</h2>
+<p>The submodule contains two primary components:</p>
+<ol>
+<li><strong>Intrastat Declarations</strong> – Used to record and submit trade data for a given reporting period.</li>
+<li><strong>Commodity Codes</strong> – Contain the official Combined Nomenclature codes required for classifying goods in Intrastat reporting.</li>
+</ol>
+<h3 id="intrastat-declarations">Intrastat Declarations</h3>
+<p>The <strong>Intrastat Declaration</strong> entity holds the header information for each declaration prepared by an enterprise company. It represents a single submission to the national Intrastat authority for a specific reporting period, providing a consistent structure for:</p>
+<ul>
+<li>Statistical reporting of intra-EU goods movements.</li>
+<li>Verification of declared values and quantities.</li>
+<li>Preparation of electronic submissions to national Intrastat systems.</li>
+</ul>
+<p><img src="pictures/declaration.png" alt="pictures"></p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Document Date</strong></td>
+<td>The date the declaration document is created.</td>
+</tr>
+<tr>
+<td><strong>Document Type</strong></td>
+<td>Type of document, typically <em>Intrastat Declaration</em>.</td>
+</tr>
+<tr>
+<td><strong>Document No</strong></td>
+<td>The internal document number assigned to the declaration.</td>
+</tr>
+<tr>
+<td><strong>Reference Year</strong></td>
+<td>The calendar year for which the declaration is prepared. <em>This field is required</em>.</td>
+</tr>
+<tr>
+<td><strong>Reference Month</strong></td>
+<td>The reporting month corresponding to the declared period.</td>
+</tr>
+<tr>
+<td><strong>Goods Flow Direction</strong></td>
+<td>Indicates whether the declaration refers to <strong>Arrivals</strong> (imports from other EU member states) or <strong>Dispatches</strong> (exports to other EU member states). <em>This field is required</em>.</td>
+</tr>
+<tr>
+<td><strong>Declaration Function</strong></td>
+<td>Specifies whether the declaration is <strong>Regular</strong> or <strong>Corrective</strong>. Corrective declarations are used to amend previously submitted data.</td>
+</tr>
+<tr>
+<td><strong>Declare Statistical Values</strong></td>
+<td>Determines whether statistical values are included in the report.</td>
+</tr>
+<tr>
+<td><strong>Postal Code</strong></td>
+<td>The postal code corresponding to the submitter’s address. <em>This field is required</em>.</td>
+</tr>
+<tr>
+<td><strong>Third Declaring Party</strong></td>
+<td>The company or entity submitting the declaration. It is prefilled based on the currently logged-in enterprise company but can be changed. This party typically holds the electronic signature for submission.</td>
+</tr>
+<tr>
+<td><strong>Authorized Person</strong></td>
+<td>The person authorized to submit the declaration.</td>
+</tr>
+<tr>
+<td><strong>Base Currency</strong></td>
+<td>The base currency used for monetary values in the declaration.</td>
+</tr>
+<tr>
+<td><strong>Assigned To User</strong></td>
+<td>The ERP.net user responsible for managing the declaration.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="commodity-codes">Commodity Codes</h3>
+<p>The <strong><a href="https://docs.erp.net/model/entities/Finance.Excise.ExciseProductTypes.html#commoditycode">Commodity Codes entity</a></strong> contains the approved commodity classifications used in Intrastat reporting. These codes correspond to entries in the EU’s <strong>Combined Nomenclature (CN)</strong>, which standardizes the identification of goods traded within the European Union.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Commodity codes define the statistical category under which each product movement is reported and are also used in <strong><a href="https://docs.erp.net/tech/modules/financials/excise/definitions/other-excise-definitions.html">Excise reporting</a></strong> within ERP.net.</p>
+</div>
+<p><img src="pictures/codes.png" alt="pictures"></p>
+<h3 id="fields-1">Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Commodity Code</strong></td>
+<td>The unique code identifying the goods category. It follows the Combined Nomenclature format (typically 8 digits). <em>Required.</em></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>The textual description of the goods corresponding to the commodity code. <em>Required.</em></td>
+</tr>
+<tr>
+<td><strong>Supplementary Unit</strong></td>
+<td>If not null, the related product should have an additional measurement unit with the same code as specified in this field. <em>Required.</em></td>
+</tr>
+<tr>
+<td><strong>Valid From</strong></td>
+<td>The start date from which the code is valid.</td>
+</tr>
+<tr>
+<td><strong>Valid To</strong></td>
+<td>The end date of validity. Blank if the code is currently active.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots for this article are from v.26 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/financials/intrastat/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

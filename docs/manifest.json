@@ -9992,6 +9992,59 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/financials/intrastat/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/intrastat/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/intrastat/pictures/codes.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/intrastat/pictures/codes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/intrastat/pictures/declaration.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/intrastat/pictures/declaration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/intrastat/pictures/intrastat_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/intrastat/pictures/intrastat_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/financials/intrastat/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/financials/intrastat/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/financials/intrastat/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/financials/overview.md",
       "output": {
         ".html": {
