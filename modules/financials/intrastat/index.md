@@ -28,6 +28,8 @@ The **Intrastat Declaration** entity holds the header information for each decla
 * Verification of declared values and quantities.
 * Preparation of electronic submissions to national Intrastat systems.
 
+![pictures](pictures/declaration.png)
+
 #### Fields
 
 | Field                          | Description                                                                                                                                                                                                   |
@@ -53,6 +55,8 @@ The **[Commodity Codes entity](https://docs.erp.net/model/entities/Finance.Excis
 > [!NOTE]
 >
 > Commodity codes define the statistical category under which each product movement is reported and are also used in **[Excise reporting](https://docs.erp.net/tech/modules/financials/excise/definitions/other-excise-definitions.html)** within @@name.
+
+![pictures](pictures/intrastat_overview.png)
 
 ### Fields
 
