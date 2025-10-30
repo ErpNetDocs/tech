@@ -4,6 +4,8 @@
 
 The **Intrastat submodule in @@name** allows enterprises to prepare, manage, and submit Intrastat declarations in compliance with EU statistical requirements. The system consolidates data on dispatches and arrivals of goods, ensuring accurate reporting to national authorities.
 
+![pictures](pictures/intrastat_overview.png)
+
 Intrastat supports companies by:
 
 * Maintaining standardized records of goods traded within the EU.
