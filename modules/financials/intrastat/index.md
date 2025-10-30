@@ -6,7 +6,7 @@ The **Intrastat submodule in @@name** allows enterprises to prepare, manage, and
 
 ![pictures](pictures/intrastat_overview.png)
 
-Intrastat supports companies by:
+**Intrastat supports companies by:**
 
 * Maintaining standardized records of goods traded within the EU.
 * Facilitating the preparation of official Intrastat declarations.
