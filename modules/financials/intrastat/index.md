@@ -46,7 +46,7 @@ The **Intrastat Declaration** entity holds the header information for each decla
 
 ### Commodity Codes
 
-The **Commodity Codes** entity contains the approved commodity classifications used in Intrastat reporting. These codes correspond to entries in the EU’s **Combined Nomenclature (CN)**, which standardizes the identification of goods traded within the European Union.
+The **[Commodity Codes entity](https://docs.erp.net/model/entities/Finance.Excise.ExciseProductTypes.html#commoditycode)** contains the approved commodity classifications used in Intrastat reporting. These codes correspond to entries in the EU’s **Combined Nomenclature (CN)**, which standardizes the identification of goods traded within the European Union.
 
 > [!NOTE]
 >
