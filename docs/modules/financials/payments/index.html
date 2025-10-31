@@ -87,9 +87,122 @@
         <article data-uid="">
 <h1 id="payments">Payments</h1>
 
+<p>The <strong>Payments</strong> submodule in ERP.net provides functionality for managing financial transactions between an enterprise and its business partners. It encompasses the complete cycle of recording, processing, and tracking payments — from payment requests and execution to reconciliation and reporting.</p>
+<p>Payments enables enterprises to maintain clear visibility over their payment operations, ensuring accurate accounting, traceability of cash and bank transactions, and compliance with internal and external financial requirements.</p>
+<p><img src="pictures/payment_submodule.png" alt="pictures"></p>
+<h2 id="structure">Structure</h2>
+<p>The <strong>Payments</strong> submodule centralizes all financial movements involving cash, bank accounts, vouchers, and other payment methods. It supports both <strong>incoming</strong> and <strong>outgoing</strong> payments and maintains a structured record of all related documents.</p>
+<p>Payments are categorized by <strong>type</strong> and linked to <strong>payment accounts</strong>.</p>
+<p>The main sections are:</p>
+<ul>
+<li><strong>Documents &amp; Operations</strong>: Payment Orders, Payment Order Batches, Payment Transactions, Payment Transaction Batches, Transfers</li>
+<li><strong>Definitions</strong>: Payment Accounts</li>
+<li><strong>Setup</strong>: Payment Types, Payment Reasons</li>
+<li><strong>Reports &amp; Ledgers</strong>: Payment Balances</li>
+</ul>
+<p>Each section provides tools for managing a specific aspect of enterprise payments, from document creation to financial reporting.</p>
+<h3 id="payment-orders">Payment Orders</h3>
+<p><strong>Payment Orders</strong> represent formal requests for executing payments within an organization. They can originate from various internal or external sources, such as suppliers, employees, or customers.</p>
+<p>The system supports several order types, including:</p>
+<ul>
+<li><strong>Direct Payment Request</strong></li>
+<li><strong>Payment Request</strong></li>
+<li><strong>Payment Request for Unsold Products</strong></li>
+</ul>
+<p><img src="pictures/orders.png" alt="pictures"></p>
+<p>Each payment order may lead to one or more <strong>Payment Transactions</strong> upon execution, linking the order to actual financial movement.</p>
+<h3 id="payment-order-batches">Payment Order Batches</h3>
+<p>These are bulk documents used to generate multiple payment orders at once, typically for opening balances for customers or suppliers.</p>
+<h3 id="payment-transactions">Payment Transactions</h3>
+<p><strong>Payment Transactions</strong> represent actual financial movements — such as payments, receipts, and cash operations. Each transaction records the direction, total amount, party, and related payment account.</p>
+<p>Common document types include:</p>
+<ul>
+<li><strong>Advance Payment Report</strong></li>
+<li><strong>Bank Payment</strong></li>
+<li><strong>Cash In</strong></li>
+<li><strong>Cash Out</strong></li>
+<li><strong>POS Payment</strong></li>
+</ul>
+<p><img src="pictures/transactions.png" alt="pictures"></p>
+<h4 id="common-fields">Common fields</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Direction</strong></td>
+<td>Indicates whether the transaction is <em>Incoming</em> or <em>Outgoing</em>.</td>
+</tr>
+<tr>
+<td><strong>Party</strong></td>
+<td>The business partner involved in the payment.</td>
+</tr>
+<tr>
+<td><strong>Payment Account</strong></td>
+<td>The payment account used for the transaction.</td>
+</tr>
+<tr>
+<td><strong>Payment Reason</strong></td>
+<td>The purpose of the payment, e.g. “Payment to/from party.”</td>
+</tr>
+<tr>
+<td><strong>Payment Type</strong></td>
+<td>The mode of payment such as cash, card, or bank transfer.</td>
+</tr>
+<tr>
+<td><strong>Requires Allocation</strong></td>
+<td>Indicates if the transaction must be allocated to a specific order or invoice.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payment-transaction-batches">Payment Transaction Batches</h3>
+<p>These are used to group payment documents of the same nature, simplifying processing and reconciliation.</p>
+<p>Two main types are supported:</p>
+<ul>
+<li><strong>Payment Slip</strong> – Represents grouped cash payments.</li>
+<li><strong>Bank Deposit Slip</strong> – Represents grouped bank transactions.</li>
+</ul>
+<h3 id="transfers">Transfers</h3>
+<p><strong>Transfers</strong> record internal financial movements between the enterprise’s own payment accounts — for example, transferring funds from a cash account to a bank account.</p>
+<h3 id="payment-accounts">Payment Accounts</h3>
+<p><strong>Payment Accounts</strong> represent the financial accounts used for payments — such as bank accounts, petty cash, or internal accounts.</p>
+<p>Each payment account can participate as either <strong>Source</strong> or <strong>Destination</strong> in internal transfers.</p>
+<p><img src="pictures/accounts.png" alt="pictures"></p>
+<h3 id="payment-types">Payment Types</h3>
+<p><strong>Payment Types</strong> define the modes through which financial transactions are carried out. Examples include:</p>
+<ul>
+<li>Cash</li>
+<li>By Card</li>
+<li>Bank Transfer</li>
+<li>Coupons</li>
+<li>Check</li>
+<li>Vouchers</li>
+<li>Packaging</li>
+<li>Internal Usage</li>
+<li>Other</li>
+</ul>
+<p><img src="pictures/types.png" alt="pictures"></p>
+<h3 id="payment-reasons">Payment Reasons</h3>
+<p><strong>Payment Reasons</strong> describe the underlying purpose for executing a payment transaction.</p>
+<p>They are used to categorize and standardize payment entries.</p>
+<p><img src="pictures/reasons.png" alt="pictures"></p>
+<h3 id="payment-balances">Payment Balances</h3>
+<p>The <strong>Payment Balances</strong> report provides a summarized view of payment-related documents, their corresponding amounts, and statuses.</p>
+<p><img src="pictures/balances.png" alt="pictures"></p>
+<p>You can export a report for further analysis by selecting one or more reference documents from the table and hitting <strong>Export</strong> from the toolbar.</p>
+<p><img src="pictures/export_balances.png" alt="pictures"></p>
+<h3 id="see-also">See also</h3>
 <ul>
 <li><strong><a href="advance-amounts-determination/index.html">Advanced amount determination</a></strong></li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
 
 </article>
 

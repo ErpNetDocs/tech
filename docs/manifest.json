@@ -10097,6 +10097,86 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/accounts.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/accounts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/balances.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/balances.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/export_balances.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/export_balances.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/orders.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/orders.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/payment_submodule.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/payment_submodule.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/reasons.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/reasons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/transactions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/transactions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/financials/payments/pictures/types.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/financials/payments/pictures/types.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/financials/payments/toc.yml",
       "output": {
