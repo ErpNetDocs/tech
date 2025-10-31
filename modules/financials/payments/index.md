@@ -10,12 +10,14 @@ The **Payments** submodule centralizes all financial movements involving cash, b
 
 Payments are categorized by **type** and linked to **payment accounts**.
 
-Main areas:
+The main sections are:
 
 * **Documents & Operations**: Payment Orders, Payment Order Batches, Payment Transactions, Payment Transaction Batches, Transfers
 * **Definitions**: Payment Accounts
 * **Setup**: Payment Types, Payment Reasons
 * **Reports & Ledgers**: Payment Balances
+
+Each section provides tools for managing a specific aspect of enterprise payments, from document creation to financial reporting.
 
 ### Payment Orders
 
@@ -31,7 +33,7 @@ Each payment order may lead to one or more **Payment Transactions** upon executi
 
 ### Payment Order Batches
 
-These are bulk documents used to generate multiple payment orders at once, typically for opening balances or mass payment initialization.
+These are bulk documents used to generate multiple payment orders at once, typically for opening balances for customers or suppliers.
 
 ### Payment Transactions
 
@@ -56,7 +58,7 @@ Common document types include:
 | **Payment Type**          | The mode of payment such as cash, card, or bank transfer.                      |
 | **Requires Allocation**   | Indicates if the transaction must be allocated to a specific order or invoice. |
 
-## Payment Transaction Batches
+### Payment Transaction Batches
 
 These are used to group payment documents of the same nature, simplifying processing and reconciliation. 
 
@@ -71,12 +73,12 @@ Two main types are supported:
 
 #### Common fields
 
-| Field                                  | Description                                          |
-| -------------------------------------- | ---------------------------------------------------- |
-|
-| **Source Payment Account**             | The account from which funds are transferred.        |
-| **Destination Payment Account**        | The account receiving the funds.                     |
-| **Source Amount / Destination Amount** | The transferred amounts.                             |
+| Field | Description |
+|-------|--------------|
+| **Source Payment Account** | The account from which funds are transferred. |
+| **Destination Payment Account** | The account receiving the funds. |
+| **Source Amount / Destination Amount** | The transferred amounts. |
+
 
 ### Payment Accounts
 
