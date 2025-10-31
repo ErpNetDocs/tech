@@ -4,6 +4,8 @@ The **Payments** submodule in @@name provides functionality for managing financi
 
 Payments enables enterprises to maintain clear visibility over their payment operations, ensuring accurate accounting, traceability of cash and bank transactions, and compliance with internal and external financial requirements.
 
+![pictures](pictures/payment_submodule.png)
+
 ## Structure
 
 The **Payments** submodule centralizes all financial movements involving cash, bank accounts, vouchers, and other payment methods. It supports both **incoming** and **outgoing** payments and maintains a structured record of all related documents.
@@ -29,6 +31,8 @@ The system supports several order types, including:
 * **Payment Request**
 * **Payment Request for Unsold Products**
 
+![pictures](pictures/orders.png)
+
 Each payment order may lead to one or more **Payment Transactions** upon execution, linking the order to actual financial movement.
 
 ### Payment Order Batches
@@ -46,6 +50,8 @@ Common document types include:
 * **Cash In**
 * **Cash Out**
 * **POS Payment**
+
+![pictures](pictures/transactions.png)
 
 #### Common fields
 
@@ -71,20 +77,13 @@ Two main types are supported:
 
 **Transfers** record internal financial movements between the enterprise’s own payment accounts — for example, transferring funds from a cash account to a bank account.
 
-#### Common fields
-
-| Field | Description |
-|-------|--------------|
-| **Source Payment Account** | The account from which funds are transferred. |
-| **Destination Payment Account** | The account receiving the funds. |
-| **Source Amount / Destination Amount** | The transferred amounts. |
-
-
 ### Payment Accounts
 
 **Payment Accounts** represent the financial accounts used for payments — such as bank accounts, petty cash, or internal accounts.
 
 Each payment account can participate as either **Source** or **Destination** in internal transfers.
+
+![pictures](pictures/accounts.png)
 
 ### Payment Types
 
@@ -100,17 +99,25 @@ Each payment account can participate as either **Source** or **Destination** in 
 * Internal Usage
 * Other
 
+![pictures](pictures/types.png)
+
 ### Payment Reasons
 
 **Payment Reasons** describe the underlying purpose for executing a payment transaction. 
 
 They are used to categorize and standardize payment entries.
 
+![pictures](pictures/reasons.png)
+
 ### Payment Balances
 
 The **Payment Balances** report provides a summarized view of payment-related documents, their corresponding amounts, and statuses. 
 
+![pictures](pictures/balances.png)
+
 You can export a report for further analysis by selecting one or more reference documents from the table and hitting **Export** from the toolbar.
+
+![pictures](pictures/export_balances.png)
 
 ### See also
 
