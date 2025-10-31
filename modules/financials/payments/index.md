@@ -122,3 +122,7 @@ You can export a report for further analysis by selecting one or more reference 
 ### See also
 
 * **[Advanced amount determination](./advance-amounts-determination/index.md)**
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v.26 of the platform.
