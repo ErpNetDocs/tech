@@ -5,7 +5,7 @@ The **Social Interactions** framework in ERP.net brings team collaboration to li
 <br><br>The integrated **Chat** component enables real-time communication within groups, while **Notifications** keep users informed and engaged with relevant activities. 
 <br><br>Together, these tools create a connected, efficient, and adaptive collaboration environment for organizations of any size or industry.
 
-![homepage](pictures/homepage.png)
+![overview](pictures/social-interactions.png)
 
 ### Notable features
 [!list folder="." depth=1 limit=100 default-text="None"]
