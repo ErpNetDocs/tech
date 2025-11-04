@@ -11,3 +11,7 @@ The **Social Interaction** framework in ERP.net brings team collaboration to lif
 [!list folder="." depth=1 limit=100 default-text="None"]
 
 ### Other features
+
+1. Preview uploaded files
+
+   
