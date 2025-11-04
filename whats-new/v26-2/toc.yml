@@ -4,3 +4,6 @@
 - name: WEB client
   href: web-client/toc.yml
   topicHref: web-client/index.md
+- name: Social Interaction
+  href: social-interaction/toc.yml
+  topicHref: social-interaction/index.md
