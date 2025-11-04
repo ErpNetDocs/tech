@@ -21924,6 +21924,49 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/social-interaction/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/social-interaction/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/social-interaction/pictures/files-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/social-interaction/pictures/files-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/social-interaction/pictures/social-interactions.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/social-interaction/pictures/social-interactions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "whats-new/v26-2/social-interaction/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/social-interaction/toc.html"
+        },
+        ".json": {
+          "relative_path": "whats-new/v26-2/social-interaction/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "whats-new/v26-2/toc.yml",
       "output": {
@@ -21952,26 +21995,6 @@
       "output": {
         ".html": {
           "relative_path": "whats-new/v26-2/web-client/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "whats-new/v26-2/web-client/pictures/Blog Post pic 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "whats-new/v26-2/web-client/pictures/Blog Post pic 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "whats-new/v26-2/web-client/pictures/Blog Post pic1.png",
-      "output": {
-        "resource": {
-          "relative_path": "whats-new/v26-2/web-client/pictures/Blog Post pic1.png"
         }
       },
       "version": ""
