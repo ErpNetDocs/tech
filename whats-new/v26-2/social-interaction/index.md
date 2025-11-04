@@ -1,4 +1,4 @@
-# Social interactions
+# Social Interactions
 
 The **Social Interactions** framework in ERP.net brings team collaboration to life through three core components — Social Groups, the Discussions/Chat panel, and Notifications. 
 <br><br>**Social Groups** provide a centralized space for teams to collaborate, share updates, and manage discussions, forming the foundation of the platform’s Social ERP concept. 
