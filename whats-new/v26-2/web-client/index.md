@@ -4,8 +4,6 @@ The ERP.net Web Client is the web-based user interface of the ERP.net business-m
 
 ## Notable features
 
-[!list folder="." depth=1 limit=100 default-text="None"]
-
 ## Other features
 **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
 
