@@ -25,3 +25,5 @@ The Details panel, one of the most frequently used sources of information, has b
 <br>You can now customize the panel to display any fields you choose, not just the default ones.
 <br>Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon.
 ![picture](pictures/details-panel.png)
+
+**4. Addition of multiple lines**
