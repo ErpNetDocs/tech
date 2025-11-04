@@ -414,6 +414,7 @@ If you need to analyze the data, you may use Python code.
 - a.Action: When the value of this key is:
 <br>"1" - When Currency == BaseCurrency, changing Debit does not update DebitBase, applies in reverse. The same applies for Credit and CreditBase. Validators allow mismatched amounts, but the document must be balanced by base currency (Σ DebitBase = Σ CreditBase).
 <br>"0" - Keeps the standard behavior (the system automatically updates the DebitBase and CreditBase values whenever Debit or Credit are changed, and the validators still check that the amounts in currency and base currency match).
+<br>"0" - default value
 - b.The user sets it manually.
 - c.The key is introduced in version: 26.1
   
