@@ -5,6 +5,7 @@ The ERP.net Web Client is the web-based user interface of the ERP.net business-m
 ### Notable features
 
 ### Other features
+
 **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
 
 Our latest update introduces two powerful system-calculated attributes — “Total Line Amount” and “Amount To Pay” — for all Invoice and Sales documents.
