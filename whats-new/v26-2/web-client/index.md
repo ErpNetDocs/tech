@@ -45,7 +45,7 @@ In the opened navigator swich-on  option _Select Multiple_ (optional) and mark a
 Once you confirm, each selected product will be automatically added as a separate line.
 ![picture](pictures/selectbynav3.png)
 
-Continue likewise, and save the new document.
+Continue in the same way and save the new document.
 
 > [!CAUTION]
 > If you edit an existing middle line, bear in mind that all selected items will REPLACE the next lines. The selection will not be inserted between the existing lines.
