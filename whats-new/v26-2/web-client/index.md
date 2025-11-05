@@ -30,7 +30,7 @@ Now displayed as a side panel, it shows all the details of the currently opened 
 You can now customize the panel to display any fields you choose, not just the default ones. Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon.
 ![picture](pictures/details-panel.png)
 
-**4. New time-saver ability in Line Panels - add multiple lines from Navigator**
+**4. New time-saver in Line Panels - add multiple lines from Navigator**
 
 The next feature serves those who work with line panels like Order Lines, Offer Lines, and others!
 
