@@ -1,6 +1,5 @@
 - name: Product Management
   href: product-management/toc.yml
-  topicHref: product-management/index.md
 - name: WEB client
   href: web-client/index.md
 - name: Social Interaction
