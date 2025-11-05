@@ -34,9 +34,8 @@ You can now customize the panel to display any fields you choose, not just the d
 
 The next feature serves those who work with line panels like Order Lines, Offer Lines, and others!
 
-Until now, when you needed to fill in a line field with option _Right-click/Select by navigator_ (eg.insert a Product), the Navigator allowed you to select and insert just one item in the single line at a time. That meant repeating the process for each new line.
+Until now, when you needed to fill in a line field with option _Right-click/Select by navigator_ (eg.insert a Product), the Navigator allowed you to select and insert just one item in the single line at a time. That meant repeating the process for each new line. With the latest update, you can now select multiple items in one go! 
 
-With the latest update, you can now select multiple items in one go! <br>
 Simply use the _Select by navigator_ option.  
 ![picture](pictures/selectbynav1.png)
 
