@@ -39,11 +39,8 @@ With the latest update, you can now select multiple items in one go! <br>
 Simply use the Select by navigator option, swich-on navigator option Select Multiple (optional) and mark all the products you need. Once you confirm, each selected product will be automatically added as a separate line.
 
 💡 Why it’s great:
-
-> - Saves you time and clicks when adding multiple products.
-
-> - Makes creating sales orders and offers much faster and smoother.
-
-> - Keeps your focus on your work — not on repetitive line editing.
+- Saves you time and clicks when adding multiple products.
+- Makes creating sales orders and offers much faster and smoother.
+- Keeps your focus on your work — not on repetitive line editing.
 
 Try it out next time you’re adding several products — you’ll feel the difference right away!
