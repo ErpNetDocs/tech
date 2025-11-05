@@ -21955,19 +21955,6 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "whats-new/v26-2/social-interaction/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/social-interaction/toc.html"
-        },
-        ".json": {
-          "relative_path": "whats-new/v26-2/social-interaction/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
       "source_relative_path": "whats-new/v26-2/toc.yml",
       "output": {
         ".html": {
@@ -22045,19 +22032,6 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/system_info_panel.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "whats-new/v26-2/web-client/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "whats-new/v26-2/web-client/toc.html"
-        },
-        ".json": {
-          "relative_path": "whats-new/v26-2/web-client/toc.json"
         }
       },
       "version": ""
