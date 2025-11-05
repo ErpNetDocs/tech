@@ -33,10 +33,11 @@ You can now customize the panel to display any fields you choose, not just the d
 **4. New time-saver ability in Line Panels - add multiple lines from Navigator**
 
 The next feature serves those who work with line panels like Order Lines, Offer Lines, and others!
-Until now, when you needed to fill in a line field with option Right-click/Select by navigator — insert a Product — the Navigator allowed you to select and insert just one item in the single line at a time. That meant repeating the process for each new line.
+
+Until now, when you needed to fill in a line field with option _Right-click/Select by navigator_ (eg.insert a Product), the Navigator allowed you to select and insert just one item in the single line at a time. That meant repeating the process for each new line.
 
 With the latest update, you can now select multiple items in one go! <br>
-Simply use the Select by navigator option, swich-on navigator option Select Multiple (optional) and mark all the products you need. Once you confirm, each selected product will be automatically added as a separate line.
+Simply use the _Select by navigator_ option, swich-on navigator option Select Multiple (optional) and mark all the products you need. Once you confirm, each selected product will be automatically added as a separate line.
 
 💡 Why it’s great:
 - Saves you time and clicks when adding multiple products.
