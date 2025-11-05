@@ -38,6 +38,8 @@ Until now, when you needed to fill in a line field with option _Right-click/Sele
 
 With the latest update, you can now select multiple items in one go! <br>
 Simply use the _Select by navigator_ option, swich-on navigator option Select Multiple (optional) and mark all the products you need. Once you confirm, each selected product will be automatically added as a separate line.
+> [!CAUTION]
+> If you edit an existing middle line with, bear in mind that all selected items will REPLACE the next lines. The selection will not be inserted between the existing lines.
 
 💡 Why it’s great:
 - Saves you time and clicks when adding multiple products.
