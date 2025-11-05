@@ -37,7 +37,15 @@ The next feature serves those who work with line panels like Order Lines, Offer 
 Until now, when you needed to fill in a line field with option _Right-click/Select by navigator_ (eg.insert a Product), the Navigator allowed you to select and insert just one item in the single line at a time. That meant repeating the process for each new line.
 
 With the latest update, you can now select multiple items in one go! <br>
-Simply use the _Select by navigator_ option, swich-on navigator option Select Multiple (optional) and mark all the products you need. Once you confirm, each selected product will be automatically added as a separate line.
+Simply use the _Select by navigator_ option.  
+![picture](pictures/selectbynav1.png)
+
+In the opened navigator swich-on  option _Select Multiple_ (optional) and mark all the products you need.
+![picture](pictures/selectbynav2.png)
+
+Once you confirm, each selected product will be automatically added as a separate line.
+![picture](pictures/selectbynav3.png)
+
 > [!CAUTION]
 > If you edit an existing middle line, bear in mind that all selected items will REPLACE the next lines. The selection will not be inserted between the existing lines.
 
