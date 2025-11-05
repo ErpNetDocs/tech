@@ -1,5 +1,8 @@
 - name: Product Management
-  href: product-management/toc.yml
+  href: product-management/index.md
+  items:
+    - name: Product relations
+      href: product-relations/index.md
 - name: WEB client
   href: web-client/index.md
 - name: Social Interaction
