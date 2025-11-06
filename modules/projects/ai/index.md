@@ -12,6 +12,12 @@ It enables users to interact with **AI Assistants**, **AI Chat Arbiters**, and *
 ERP.net’s AI functionality is built on an **external provider model**, currently supporting **OpenAI’s models** (such as GPT-4 and GPT-4o).  
 This means ERP.net connects securely to OpenAI’s API to generate, process, and analyze natural language, but the architecture is **extensible** — designed to accommodate other AI providers in the future.
 
+AI Models in ERP.net are **hierarchical**, allowing each model to inherit context and knowledge from parent models.  
+This structure supports both **company-wide master models** and **specialized assistants** for specific departments or workflows (for example, Marketing AI or Sales AI).
+
+The models based on OpenAI’s technology can also be **fine-tuned and trained** directly within ERP.net, using the company’s own data, procedures, and best practices.  
+This enables the AI to understand the unique rules, terminology, and business logic of each organization, providing tailored and context-aware assistance.
+
 By embedding this technology throughout ERP.net, users can:
 
 - Chat with an **AI Assistant** directly inside the application.  
