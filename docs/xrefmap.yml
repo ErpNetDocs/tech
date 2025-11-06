@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: AI
+  name: AI
+  href: modules/projects/ai/index.html
 - uid: ASN
   name: Advance Shipping Notice (ASN)
   href: modules/logistics/wms/logistic-units/asn.html

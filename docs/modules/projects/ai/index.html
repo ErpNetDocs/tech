@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>AI | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="AI | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/ai/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="AI">
+<h1 id="ai">AI</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The <strong>AI system in ERP.net</strong> introduces intelligent automation and natural language capabilities directly within the ERP platform.<br>
+It enables users to interact with <strong>AI Assistants</strong>, <strong>AI Chat Arbiters</strong>, and <strong>AI-powered business logic</strong>, seamlessly integrated into daily workflows.</p>
+<p>ERP.net’s AI functionality is built on an <strong>external provider model</strong> (currently supporting <strong>OpenAI’s models</strong>).<br>
+This means ERP.net connects securely to OpenAI’s API to generate, process, and analyze natural language, but the architecture is <strong>extensible</strong> — designed to accommodate other AI providers in the future.</p>
+<p>AI Models in ERP.net are <strong>hierarchical</strong>, allowing each model to inherit context and knowledge from parent models.<br>
+This structure supports both <strong>company-wide master models</strong> and <strong>specialized assistants</strong> for specific departments or workflows (for example, Marketing AI or Sales AI).</p>
+<p>The models based on OpenAI’s technology can also be <strong>fine-tuned and trained</strong> directly within ERP.net, using the company’s own data, procedures, and best practices.<br>
+This enables the AI to understand the unique rules, terminology, and business logic of each organization, providing tailored and context-aware assistance.</p>
+<p>By embedding this technology throughout ERP.net, users can:</p>
+<ul>
+<li>Chat with an <strong>AI Assistant</strong> directly inside the application.</li>
+<li>Involve AI as a <strong>Chat Arbiter</strong> in group or private conversations.</li>
+<li>Use AI in <strong>form panels</strong> to analyze, explain, or generate business data.</li>
+<li>Automate and validate operations through <strong>AI-enhanced business rules</strong>.</li>
+<li>Employ AI-powered tools such as <strong>document ingestion</strong>, <strong>lead creation</strong>, and <strong>intelligent task generation</strong>.</li>
+</ul>
+<p>The goal is to make AI a <strong>natural and context-aware part of everyday ERP processes</strong>, improving accuracy, speed, and decision-making across all departments.</p>
+<blockquote>
+<p><strong>Note on OpenAI usage</strong><br>
+ERP.net AI features rely on the <strong>OpenAI API</strong> to deliver model responses.<br>
+To enable these capabilities, each customer or organization must create an <strong>OpenAI account</strong> and obtain an <strong>API key</strong>.<br>
+OpenAI services are billed <strong>directly by OpenAI</strong>, according to actual usage.<br>
+This approach keeps ERP.net transparent about costs and allows every company to manage and optimize its own AI budget independently.</p>
+</blockquote>
+<h2 id="2-architecture">2. Architecture</h2>
+<p>The AI functionality in ERP.net is built as a modular system, consisting of several entities that define configuration, training, and runtime behavior.<br>
+Together, they form a complete framework for integrating and managing AI models within the ERP environment.</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Providers</strong></td>
+<td>Define connections to external AI services (currently only OpenAI). Store API credentials, provider type, and base model configuration.</td>
+</tr>
+<tr>
+<td><strong>Models</strong></td>
+<td>Define the individual AI models available in the system. Models can be <strong>hierarchical</strong>, meaning a model can inherit knowledge and settings from a parent model. Each model can represent a specific assistant (e.g. Marketing AI, Sales AI) or a company-wide master model.</td>
+</tr>
+<tr>
+<td><strong>ModelQAs</strong></td>
+<td>Store structured Question &amp; Answer pairs for model fine-tuning. Used to teach the model company-specific rules and best practices.</td>
+</tr>
+<tr>
+<td><strong>TrainingConversations</strong></td>
+<td>Contain conversational training sessions used to improve model behavior. Created through real user– AI chat arbiter interactions using the &quot;Train AI&quot; function</td>
+</tr>
+<tr>
+<td><strong>TrainingConversationMessages</strong></td>
+<td>Store the individual messages from each training conversation. Used during model compilation to provide contextual learning data.</td>
+</tr>
+<tr>
+<td><strong>Compilations</strong></td>
+<td>Track the process of compiling and deploying trained models. Each successful compilation results in a ready-to-use AI instance.</td>
+</tr>
+<tr>
+<td><strong>CompilationAssets</strong></td>
+<td>Contain the assets (instructions, data, and context) used during a compilation. Provide the resources that define the model’s learning scope.</td>
+</tr>
+<tr>
+<td><strong>AssistantConversations</strong></td>
+<td>Store user conversations with AI Assistants within ERP.net. Maintain a history of interactions and ensure data security.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/projects/ai/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

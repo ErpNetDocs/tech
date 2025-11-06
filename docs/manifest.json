@@ -21089,6 +21089,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/projects/ai/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/projects/ai/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/projects/index.md",
       "output": {
         ".html": {
