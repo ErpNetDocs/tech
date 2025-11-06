@@ -30,7 +30,7 @@ Together, they form a complete framework for integrating and managing AI models 
 | Entity | Description |
 |--------|--------------|
 | **Providers** | Define connections to external AI services (currently only OpenAI). Store API credentials, provider type, and base model configuration. |
-| **Models** | Define the individual AI models available in the system. Each model can represent a specific assistant (e.g. Marketing AI, Sales AI). |
+| **Models** | Define the individual AI models available in the system. Models can be **hierarchical**, meaning a model can inherit knowledge and settings from a parent model. Each model can represent a specific assistant (e.g. Marketing AI, Sales AI) or a company-wide master model.
 | **ModelQAs** | Store structured Question & Answer pairs for model fine-tuning. Used to teach the model company-specific rules and best practices. |
 | **TrainingConversations** | Contain conversational training sessions used to improve model behavior. Created through real user– AI chat arbiter interactions using the "Train AI" function |
 | **TrainingConversationMessages** | Store the individual messages from each training conversation. Used during model compilation to provide contextual learning data. |
