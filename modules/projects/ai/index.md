@@ -18,6 +18,7 @@ This structure supports both **company-wide master models** and **specialized as
 The models based on OpenAI’s technology can also be **fine-tuned and trained** directly within @@name, using the company’s own data, procedures, and best practices.  
 This enables the AI to understand the unique rules, terminology, and business logic of each organization, providing tailored and context-aware assistance.
 
+
 By embedding this technology throughout ERP.net, users can:
 
 - Chat with an **AI Assistant** directly inside the application.  
@@ -27,6 +28,13 @@ By embedding this technology throughout ERP.net, users can:
 - Employ AI-powered tools such as **document ingestion**, **lead creation**, and **intelligent task generation**.
 
 The goal is to make AI a **natural and context-aware part of everyday ERP processes**, improving accuracy, speed, and decision-making across all departments.
+
+
+> **Note on OpenAI usage**  
+> @@name AI features rely on the **OpenAI API** to deliver model responses.  
+> To enable these capabilities, each customer or organization must create an **OpenAI account** and obtain an **API key**.  
+> OpenAI services are billed **directly by OpenAI**, according to actual usage.  
+> This approach keeps ERP.net transparent about costs and allows every company to manage and optimize its own AI budget independently.
 
 ## 2. Architecture
 
