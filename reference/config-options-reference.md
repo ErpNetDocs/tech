@@ -410,10 +410,4 @@ If you need to analyze the data, you may use Python code.
 - b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.
 - c.The user sets it manually.
 
-## 71. /Accounting/AccountingVoucherLines/AllowBaseCurrencyLineAmountMismatch
-- a.Action: When the value of this key is:
-<br>"1" -  When the key is defined and set to 1, then the validation from rule [R28761](https://docs.erp.net/model/business-rules/R28761.html) will not be performed.
-<br>"0" - When the key is defined and set to 0 or a value different from 1, or if no key is defined, the system keeps the standard behavior (the validation will still check that the amounts in currency and base currency match).
-- b.The user sets it manually.
-- c.The key is introduced in version: 26.1
   
