@@ -1,7 +1,5 @@
 # Setup AI
 
-## 2. Configuration
-
 This section describes all system-level settings required to enable AI in ERP.net:
 
 1. AI Server site 
@@ -14,7 +12,7 @@ Once these are configured, end users can work with AI Assistants, chat arbiters,
 
 ---
 
-### 2.1 AI Server Site (infrastructure prerequisite)
+### 1. AI Server Site 
 
 The AI Server site is a small, one-time configuration that prepares your ERP instance for the newer AI architecture.  
 
@@ -32,14 +30,14 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
 
-### 2.2 AI Providers
+### 2. AI Providers
 
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
 A provider represents an external AI service – currently, **OpenAI**.
 
 Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if for example wants to use different OpenAI Base Models for different needs.
 
-#### 2.2.1 Creating the Provider
+#### Creating the Provider
 
 1. Open **the Providers navigator**.
 2. Click **New** to create a new provider record.
@@ -56,7 +54,7 @@ Billing for AI usage is handled **directly by OpenAI** according to the company�
 
 ---
 
-### 2.3 AI Models
+### 3. AI Models
 
 An **AI Model** in ERP.net represents a concrete assistant configuration:
 
@@ -72,7 +70,7 @@ You can define **multiple models** – for example:
 - “AI Sales Assistant”
 - “AI Developer Helper”
 
-#### 2.3.1 Creating the Model (more info about each setting) 
+#### Creating the Model (more info about each setting) 
 
 1. Open **the Model navigator**.
 2. Click **New** to create a new model record.
@@ -121,13 +119,13 @@ You can define **multiple models** – for example:
 
 ---
 
-### 2.4 Model Compilation
+### 4. Model Compilation
 
 Once a model is configured, it must be **compiled** before it can be used.
 
 Compilation sends the model’s configuration and training data to the AI provider and creates a runnable assistant configuration there.
 
-#### 2.4.1 Running a compilation
+#### Running a compilation
 
 From an AI Model record:
 
@@ -140,7 +138,7 @@ The result of each compilation is stored in **Projects.AI.Compilations** and vis
 - **Successful** compilations update the `Conversation compilation` field.
 - **Failed** compilations leave the previous version active and provide diagnostics.
 
-#### 2.4.2 Logs and error diagnostics
+#### Logs and error diagnostics
 
 If a compilation fails:
 
@@ -156,11 +154,11 @@ Existing, previously compiled versions continue to work until a new compilation 
 
 ---
 
-### 2.5 Assigning a Model to Users
+### 5. Assigning a Model to Users
 
 Finally, each user who will work with AI should be connected to a specific AI model.
 
-#### 2.5.1 User configuration
+####  User configuration
 
 1. Open **Users**.
 2. Open the user’s record (e.g. `Admin`).
@@ -174,5 +172,5 @@ This model will be used:
 
 If no model is assigned to a user, the system may fall back to the **Default model**, but it is recommended to explicitly configure a model for all users who are expected to use AI.
 
-> 🔒 All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
+>  All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
 > One user cannot see another user’s assistant conversations.
