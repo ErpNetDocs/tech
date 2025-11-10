@@ -148,7 +148,9 @@ Here is some info on how to initiate a compilation and how to read its results.
 2. Use **Run → Compile**.
 3. Wait for the compilation to complete.
 
-Once the compilation is started, we should simply wait for its result.
+![Compile Button](compile_button.png)
+
+Once the compilation is started, you should simply wait for its result.
 
 > Compilation time can vary:  
 > - Simple assistant models: usually a few minutes.  
@@ -160,13 +162,19 @@ The result of each compilation is stored in the **Compilations** sub-panel of th
 - The **Status** field shows the current state (for example: `Queued`, `Running`, `Completed`).
 - The **Is Successful** flag (`Yes/No`) clearly indicates whether the compilation has finished successfully.
 
+![Compilations Panel.png](compilations_panel.png)
+
 To monitor the **Status**, you can regularly check the *Compilations* sub-panel described above or simply wait for the system notification. When a compilation finishes, the user who started it receives a message in the **Notifications** icon (for example: “Compilation of model ‘My Personal Assistant’ completed”), which is the quickest way to see that the process has ended.  
 
-If the compilation is **successful**, you can continue using the model as configured.  
+If the compilation is **successful**, you can continue using the model as configured.
+
+![Compilations Success.png](compilation_success.png)
 
 If the compilation **fails**:  
 1. Review the **Error Message** for the main cause (for example, an invalid or unsupported base model).
 2. If necessary, open the **Build Log** to investigate further details.
+
+![Compilations Error.png](compilation_error.png)
 
 After fixing the configuration, you can run the compilation again.  
 Existing, previously successful compilations remain active and are used by the system until a new compilation completes successfully.
