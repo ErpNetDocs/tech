@@ -24,7 +24,7 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 4. The **Relative URL** will be filled automatically based on the default name.
 5. Click **Save**.
 
-> ✅ This is usually all that is needed.  
+> This is usually all that is needed.  
 > Once saved, the ERP instance is considered “AI-ready” from an infrastructure standpoint.
 
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
@@ -47,7 +47,7 @@ Each company typically defines **a single provider** pointing to its OpenAI acco
 - **Base model name** – the default model to use, e.g. `gpt-4o-mini`, `gpt-4o`, etc.
 - **Provider API key** – the secret API key from the company’s OpenAI account.
 
-> 💡 The API key is created in the **OpenAI platform → API keys**.  
+> The API key is created in the **OpenAI platform → API keys**.  
 > Copy the value once and paste it into the Provider record in ERP.net.
 
 Billing for AI usage is handled **directly by OpenAI** according to the company’s usage and pricing plan.
@@ -148,7 +148,7 @@ If a compilation fails:
 You can correct the configuration and run the compilation again.  
 Existing, previously compiled versions continue to work until a new compilation succeeds.
 
-> ⏱ Compilation time can vary:  
+> Compilation time can vary:  
 > - Simple assistant models: usually a few minutes.  
 > - Models with many Q&A and Training Conversations: can take longer, depending on data size.
 
@@ -172,5 +172,5 @@ This model will be used:
 
 If no model is assigned to a user, the system may fall back to the **Default model**, but it is recommended to explicitly configure a model for all users who are expected to use AI.
 
->  All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
+> All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
 > One user cannot see another user’s assistant conversations.
