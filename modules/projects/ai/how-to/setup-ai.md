@@ -65,7 +65,7 @@ An **AI Model** in ERP.net represents a concrete assistant configuration:
 - which provider and base model it uses,
 - what system instructions it follows,
 - what training data it is connected to,
-- and whether it is available in the assistant panel, in chats, or in both.
+- and whether it is available in the assistant panel, in chats, for the additional AI functionalities or in all of them.
 
 You can define **multiple models** – for example:
 
@@ -74,7 +74,11 @@ You can define **multiple models** – for example:
 - “AI Sales Assistant”
 - “AI Developer Helper”
 
-#### 2.3.1 Key fields (Projects.AI.Models)
+#### 2.3.1 Creating the Model (more info about each setting) 
+
+1. Open **the Model navigator**.
+2. Click **New** to create a new model record.
+3. Fill in the following fields:
 
 - **Name**  
   Human-readable model name, e.g. `AI Marketing Assistant`.
