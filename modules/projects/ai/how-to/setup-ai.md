@@ -5,8 +5,8 @@ This section describes all system-level settings required to enable AI in ERP.ne
 1. **AI Server site**
 2. **Provider** - requires an active **OpenAI account** and an API key. All API usage is billed **directly by OpenAI** under that account.
 3. **Model**  
-4. **Model compilation and updates**  
-5. **Assigning a model to each user** - required only if you plan to use the AI Assistant functionality
+4. **Model compilation** (optional) - required only if you plan to use a **fine-tuned model** as an Arbiter, or the **AI Assistant** functionality
+5. **Assigning a model to each user** (optional) - required only if you plan to use the **AI Assistant** functionality
    
 Once these are configured, end users can work with AI Assistants, chat arbiters, business rules, and Ingest without needing to know any technical details.
 
