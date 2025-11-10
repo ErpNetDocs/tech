@@ -21088,11 +21088,61 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/compilation_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/compilation_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/compilation_success.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/compilation_success.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/compilations_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/compilations_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/compile_button.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/compile_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/projects/ai/how-to/index.md",
       "output": {
         ".html": {
           "relative_path": "modules/projects/ai/how-to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/how-to/setup-ai.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/how-to/setup-ai.html"
         }
       },
       "version": ""
