@@ -1,13 +1,13 @@
 # Setup AI
 
-This section describes all system-level settings required to enable AI in ERP.net:
+This section describes all system-level settings required to enable AI in ERP.net.:
 
 1. AI Server site 
 2. AI Providers - requires an active **OpenAI account** and an API key. All API usage is billed **directly by OpenAI** under that account.
 3. AI Models  
 4. Model compilation and updates  
-5. Assigning a model to each user
-
+5. Assigning a model to each user (only if you plan to use the AI Assistant functionality)
+   
 Once these are configured, end users can work with AI Assistants, chat arbiters, business rules and Ingest without needing to know any technical details.
 
 ---
