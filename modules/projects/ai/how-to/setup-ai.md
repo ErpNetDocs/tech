@@ -2,13 +2,13 @@
 
 This section describes all system-level settings required to enable AI in ERP.net.:
 
-1. AI Server site 
-2. AI Providers - requires an active **OpenAI account** and an API key. All API usage is billed **directly by OpenAI** under that account.
-3. AI Models  
-4. Model compilation and updates  
-5. Assigning a model to each user (only if you plan to use the AI Assistant functionality)
+1. **AI Server site**
+2. **Provider** - requires an active **OpenAI account** and an API key. All API usage is billed **directly by OpenAI** under that account.
+3. **Model**  
+4. **Model compilation and updates**  
+5. **Assigning a model to each user** - required only if you plan to use the AI Assistant functionality
    
-Once these are configured, end users can work with AI Assistants, chat arbiters, business rules and Ingest without needing to know any technical details.
+Once these are configured, end users can work with AI Assistants, chat arbiters, business rules, and Ingest without needing to know any technical details.
 
 ---
 
@@ -35,14 +35,14 @@ Make sure your license includes at least one site — the AI Server site uses th
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
 A provider represents an external AI service – currently, **OpenAI**.
 
-Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if for example wants to use different OpenAI Base Models for different needs.
+Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if, for example wants to use different OpenAI Base Models for different needs.
 
 #### Creating the Provider
 
 1. Open **the Providers navigator**.
 2. Click **New** to create a new provider record.
 3. Fill in the following required fields:
-- **Name** – a descriptive name (e.g. “OpenAI – Production”).
+- **Name** – a descriptive name (e.g., “OpenAI – Production”).
 - **Provider** – `OpenAI` (currently the only supported option).
 - **Base model name** – the default model to use, e.g. `gpt-4o-mini`, `gpt-4o`, etc.
 - **Provider API key** – the secret API key from the company’s OpenAI account.
@@ -61,7 +61,7 @@ An **AI Model** in ERP.net represents a concrete assistant configuration:
 - which provider and base model it uses,
 - what system instructions it follows,
 - what training data it is connected to,
-- and whether it is available in the assistant panel, in chats, for the additional AI functionalities or in all of them.
+- and whether it is available in the assistant panel, in chats, for the additional AI functionalities, or in all of them.
 
 You can define **multiple models** – for example:
 
@@ -77,12 +77,38 @@ You can define **multiple models** – for example:
 3. Fill in the following fields:
 
 - **Name**  
-  Human-readable model name, e.g. `AI Marketing Assistant`.
+  Human-readable model name, e.g., `AI Marketing Assistant`.
+  
+- **Provider**  
+  Links the model to one of the configured **AI Providers**, and therefore to a specific base model and billing account.
 
 - **Parent** (optional)  
   Used to build a **hierarchical structure** of models.  
   A parent model can aggregate training from its children, which is useful for a “master” company-wide assistant.
 red.
+
+- **Default model**  
+  Marks this model as the **system default**.  
+  System-level AI actions (e.g., business rules, Ingest) use the default model when no user-specific model is assigned.  
+  Only **one** model can be the  default at a time.
+
+- **System message** (optional)  
+  Global instructions that always apply to the model, such as:
+  - tone of voice (formal/informal),
+  - language preferences,
+  - how to address users,
+  - specific company naming conventions, etc.
+
+  Keep this short and focused – typically up to 5-6 sentences of text at most.
+
+- **Build assistant**  
+  Controls how this model is used:
+  - `Yes`/ checked → the model is used as an **assistant** in the AI Assistant app and assistant panels in forms.  
+    In this mode, it does **not** use Q&A / training conversations for fine-tuning.
+  - `No` / not checked → the model can be **fine-tuned** with:
+    - Q&A records, and
+    - Training Conversations.  
+    These models are typically used as **chat arbiters** in channels or as specialized assistants.
 
 - **Virtual User** (optional)  
   A **Virtual User** whose identity the model uses in chats and in the assistant panel.  
@@ -95,41 +121,14 @@ red.
   If you need a new one, you can create it:
 
    - from **Navigator → Users**, or  
-   - directly from the **Virtual User** field via right-click → **Create new**  
-    (if the menu is not visible, click **Edit** on the model first).
+   - directly from the **Virtual User** field via right-click → **Create new**  (If the menu is not visible, click **Edit** on the model first.)
 
   When creating the user, the only mandatory setting is:  
    - **User Type** = `Virtual User (No login)`
 
-- **System message** (optional)  
-  Global instructions that always apply to the model, such as:
-  - tone of voice (formal / informal),
-  - language preferences,
-  - how to address users,
-  - specific company naming conventions, etc.
-
-  Keep this short and focused – typically up to 5-6 sentences of text at most.
-
 - **Conversation compilation**  
   Reference to the **latest successful compilation** that the model uses at runtime.  
   This field is maintained automatically after each compile.
-
-- **Default model**  
-  Marks this model as the **system default**.  
-  System-level AI actions (e.g. business rules, Ingest) use the default model when no user-specific model is assigned.  
-  Only **one** model can be default at a time.
-
-- **Build assistant**  
-  Controls how this model is used:
-  - `Yes`/ checked → the model is used as an **assistant** in the AI Assistant app and assistant panels in forms.  
-    In this mode, it does **not** use Q&A / training conversations for fine-tuning.
-  - `No` / not checked → the model can be **fine-tuned** with:
-    - Q&A records, and
-    - Training Conversations.  
-    These models are typically used as **chat arbiters** in channels or as specialized assistants.
-
-- **Provider**  
-  Links the model to one of the configured **AI Providers**, and therefore to a specific base model and billing account.
 
 ---
 
@@ -146,13 +145,13 @@ Compilation is required in only two cases:
 
 #### Running a compilation
 
-Here is an info how to initiate a compilations and how to read its results.
+Here is some info on how to initiate a compilation and how to read its results.
 
 1. Open the model definition.
 2. Use **Run → Compile**.
 3. Wait for the compilation to complete.
 
-Once the compilation is started we should simply wait for its result.
+Once the compilation is started, we should simply wait for its result.
 
 > Compilation time can vary:  
 > - Simple assistant models: usually a few minutes.  
@@ -164,7 +163,7 @@ The result of each compilation is stored in the **Compilations** sub-panel of th
 - The **Status** field shows the current state (for example: `Queued`, `Running`, `Completed`).
 - The **Is Successful** flag (`Yes/No`) clearly indicates whether the compilation has finished successfully.
 
-To monitor the **Status** you can regularly check the *Compilations* sub-panel described above or simply wait for the system notification. When a compilation finishes, the user who started it receives a message in the **Notifications** icon (for example: “Compilation of model ‘My Personal Assistant’ completed”), which is the quickest way to see that the process has ended.  
+To monitor the **Status**, you can regularly check the *Compilations* sub-panel described above or simply wait for the system notification. When a compilation finishes, the user who started it receives a message in the **Notifications** icon (for example: “Compilation of model ‘My Personal Assistant’ completed”), which is the quickest way to see that the process has ended.  
 
 If the compilation is **successful**, you can continue using the model as configured.  
 
@@ -184,7 +183,7 @@ This step is required **only if you plan to use the AI Assistant functionality**
 #### User configuration
 
 1. Open **Users**.
-2. Open the user’s record (e.g. `Admin`).
+2. Open the user’s record (e.g., `Admin`).
 3. In the **Model** field, select the desired AI Model.
 
 This model will be used:
