@@ -6,7 +6,7 @@ uid: AI
 
 ## What is @@name AI?
 
-@@name AI brings smart assistants and functions directly into your ERP, so people can:
+@@name AI brings smart assistants and functionalities directly into your ERP, so people can:
 
 - Ask questions in chat instead of clicking through menus.
 - Let AI read and explain project data, tasks, and documents.
