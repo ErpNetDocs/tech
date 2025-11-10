@@ -57,25 +57,25 @@ and business rules.
 
 **Models**  
 *Your actual AI assistants.*  
-- Each model represents a specific assistant (e.g,. “Project AI”, “Sales AI”, “Master AI”).
+- Each model represents a specific assistant (e.g, "My Assistant", “Project AI”, “Sales AI”, “Master AI”).
 - Models can inherit settings and knowledge from a parent model.
 
-**ModelQAs**  
+**Model QA's**  
 *Structured Q&A knowledge base.*  
 - Store question–answer pairs with your company rules and best practices.
 - Used to fine-tune how the model answers typical questions.
 
-**TrainingConversations & TrainingConversationMessages**  
+**Training Conversations & Training Conversation Messages**  
 *Real chats used as training examples.*  
 - Capture real user ↔ AI interactions (via “Train AI”).
 - Used during compilation to teach the model how your users talk.
 
-**Compilations & CompilationAssets**  
+**Compilations & Compilation Assets**  
 *Turning training data into a ready-to-use AI*  
 - Compilations bundle instructions, data, and context.
-- A successful compilation produces a deployable AI model version.
+- A successful compilation produces a fine-tuned AI model version.
 
-**AssistantConversations**  
+**Assistant Conversations**  
 *Day-to-day user chats with AI*  
 - Store the conversation history between users and AI assistants.
 - Ensure auditability and data security.
