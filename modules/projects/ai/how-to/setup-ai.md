@@ -79,11 +79,11 @@ An **AI Model** in ERP.net represents a concrete assistant configuration:
 - and whether it is available in the assistant panel, in chats, for the additional AI functionalities, or in all of them.
 
 You can define **multiple models** – for example:
-
 - “Company Master Assistant”
 - “AI Marketing Assistant”
 - “AI Sales Assistant”
 - “AI Developer Helper”
+- or simply “AI Assistant”
 
 ### Creating the Model (more info about each setting) 
 
