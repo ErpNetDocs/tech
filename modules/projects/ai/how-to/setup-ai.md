@@ -71,8 +71,7 @@ Billing for AI usage is handled **directly by OpenAI** according to the companyâ
 
 ## 3. Model
 
-An **AI Model** in ERP.net represents a concrete assistant configuration:
-
+An **AI Model** in ERP.net represents a concrete model configuration:
 - which provider and base model it uses,
 - what system instructions it follows,
 - what training data it is connected to,
