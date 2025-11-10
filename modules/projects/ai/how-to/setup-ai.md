@@ -16,21 +16,15 @@ Once these are configured, end users can work with AI Assistants, chat arbiters,
 
 ### 2.1 AI Server Site (infrastructure prerequisite)
 
-> ℹ️ **What is this?**  
+> **What is this?**  
 > The AI Server site is a small, one-time configuration that prepares your ERP instance for the newer AI architecture.  
-> It is required at system level, but it is **not something end users interact with directly**, and it does not change how the existing AI features are used.
 
-Starting from **ERP.net version 26**, each instance must have an **AI Server site** defined.  
-This site acts as an internal endpoint that ERP.net will use more and more in future versions to route AI calls in a standardized way.
+#### Creating the AI Server Site
 
-At the moment, the AI Server site is primarily **infrastructure** – it must be present and correctly configured, but the visible AI functionality (assistant panel, chat arbiters, Q&A training, etc.) continues to work in the same way from the user’s perspective.
-
-#### 2.1.1 Creating the AI Server Site
-
-1. Open **Navigator → Web Sites**.
+1. Open **the Web Sites navigator**.
 2. Click **New** to create a new web site record.
-3. Set **Type** to `WebServerSiteTypeAIServer`.
-4. The **Relative URL** will be filled automatically based on the instance name.
+3. Set **Type** to `AI Server`.
+4. The **Relative URL** will be filled automatically based on the default name.
 5. Click **Save**.
 
 > ✅ This is usually all that is needed.  
@@ -38,38 +32,26 @@ At the moment, the AI Server site is primarily **infrastructure** – it must be
 
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
-#### 2.1.2 Trusted Application (only if needed)
-
-In most installations, no additional configuration is required.
-
-If you encounter authentication issues, you can create a **Trusted Application** for the AI Server site:
-
-1. Open the AI Server Site record.
-2. Click **Create Trusted Application**.
-3. Save.
-
-ERP.net will generate the necessary credentials automatically.  
-Again, this is a **technical safety net** and not something normal users will ever work with.
-
----
 
 ### 2.2 AI Providers
 
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
 A provider represents an external AI service – currently, **OpenAI**.
 
-Each company typically defines **a single provider** pointing to its OpenAI account.
+Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if for example wants to use different OpenAI Base Models for different needs.
 
-#### 2.2.1 Required fields
+#### 2.2.1 Creating the Provider
 
-In **Projects.AI.Providers**:
 
+1. Open **the Providers navigator**.
+2. Click **New** to create a new provider record.
+3. Fill in the following required fields:
 - **Name** – a descriptive name (e.g. “OpenAI – Production”).
 - **Provider** – `OpenAI` (currently the only supported option).
 - **Base model name** – the default model to use, e.g. `gpt-4o-mini`, `gpt-4o`, etc.
 - **Provider API key** – the secret API key from the company’s OpenAI account.
 
-> 💡 The API key is created in the **OpenAI dashboard → API keys**.  
+> 💡 The API key is created in the **OpenAI platform → API keys**.  
 > Copy the value once and paste it into the Provider record in ERP.net.
 
 Billing for AI usage is handled **directly by OpenAI** according to the company’s usage and pricing plan.
