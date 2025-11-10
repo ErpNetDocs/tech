@@ -10,9 +10,8 @@ This section describes all system-level settings required to enable AI in ERP.ne
    
 Once these are configured, end users can work with AI Assistants, chat arbiters, business rules, and Ingest without needing to know any technical details.
 
----
 
-### 1. AI Server Site 
+## 1. AI Server Site 
 
 The AI Server site is a small, one-time configuration that prepares your ERP instance for the newer AI architecture.  
 
@@ -30,7 +29,7 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
 
-### 2. Provider
+## 2. Provider
 
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
 A provider represents an external AI service – currently, **OpenAI**.
@@ -52,9 +51,8 @@ Each company typically defines **a single provider** pointing to its OpenAI acco
 
 Billing for AI usage is handled **directly by OpenAI** according to the company’s usage and pricing plan.
 
----
 
-### 3. Model
+## 3. Model
 
 An **AI Model** in ERP.net represents a concrete assistant configuration:
 
@@ -70,7 +68,7 @@ You can define **multiple models** – for example:
 - “AI Sales Assistant”
 - “AI Developer Helper”
 
-#### Creating the Model (more info about each setting) 
+### Creating the Model (more info about each setting) 
 
 1. Open **the Model navigator**.
 2. Click **New** to create a new model record.
@@ -130,9 +128,8 @@ red.
   Reference to the **latest successful compilation** that the model uses at runtime.  
   This field is maintained automatically after each compile.
 
----
 
-### 4. Model Compilation
+## 4. Model Compilation
 
 Once a model is configured, it can be **compiled**.  
 Compilation sends the model’s configuration and training data to the AI provider and creates a runnable assistant configuration there.
@@ -143,7 +140,7 @@ Compilation is required in only two cases:
 > In all other scenarios, ERP.net works directly with the **base model** defined in the AI Provider and does not require compilation.
 
 
-#### Running a compilation
+### Running a compilation
 
 Here is some info on how to initiate a compilation and how to read its results.
 
@@ -174,9 +171,8 @@ If the compilation **fails**:
 After fixing the configuration, you can run the compilation again.  
 Existing, previously successful compilations remain active and are used by the system until a new compilation completes successfully.
 
----
 
-### 5. Assigning a Model to Users
+## 5. Assigning a model to users
 
 This step is required **only if you plan to use the AI Assistant functionality** (the My Assistant app and assistant panels in forms).
 
