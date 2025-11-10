@@ -97,24 +97,10 @@ You can define **multiple models** – for example:
 - **Provider**  
   Links the model to one of the configured **AI Providers**, and therefore to a specific base model and billing account.
 
-- **Parent** (optional)  
-  Used to build a **hierarchical structure** of models.  
-  A parent model can aggregate training from its children, which is useful for a “master” company-wide assistant.
-red.
-
-- **Default model**  
+  - **Default model**  
   Marks this model as the **system default**.  
   System-level AI actions (e.g., business rules, Ingest) use the default model when no user-specific model is assigned.  
   Only **one** model can be the  default at a time.
-
-- **System message** (optional)  
-  Global instructions that always apply to the model, such as:
-  - tone of voice (formal/informal),
-  - language preferences,
-  - how to address users,
-  - specific company naming conventions, etc.
-
-  Keep this short and focused – typically up to 5-6 sentences of text at most.
 
 - **Build assistant**  
   Controls how this model is used:
@@ -140,6 +126,20 @@ red.
 
   When creating the user, the only mandatory setting is:  
    - **User Type** = `Virtual User (No login)`
+
+- **Parent** (optional)  
+  Used to build a **hierarchical structure** of models.  
+  A parent model can aggregate training from its children, which is useful for a “master” company-wide assistant.
+red.
+
+- **System message** (optional)  
+  Global instructions that always apply to the model, such as:
+  - tone of voice (formal/informal),
+  - language preferences,
+  - how to address users,
+  - specific company naming conventions, etc.
+
+  Keep this short and focused – typically up to 5-6 sentences of text at most.
 
 - **Conversation compilation**  
   Reference to the **latest successful compilation** that the model uses at runtime.  
