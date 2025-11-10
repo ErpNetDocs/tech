@@ -87,11 +87,15 @@
         <article data-uid="AI">
 <h1 id="ai">AI</h1>
 
-<h2 id="overview">Overview</h2>
-<p>The <strong>AI system in ERP.net</strong> introduces intelligent automation and natural language capabilities directly within the ERP platform.<br>
-It enables users to interact with <strong>AI Assistants</strong>, <strong>AI Chat Arbiters</strong>, and <strong>AI-powered business logic</strong>, seamlessly integrated into daily workflows.</p>
-<p>ERP.net’s AI functionality is built on an <strong>external provider model</strong> (currently supporting <strong>OpenAI’s models</strong>).<br>
-This means ERP.net connects securely to OpenAI’s API to generate, process, and analyze natural language, but the architecture is <strong>extensible</strong> — designed to accommodate other AI providers in the future.</p>
+<h2 id="what-is--ai">What is ERP.net AI?</h2>
+<p>ERP.net AI brings smart assistants and functionalities directly into your ERP, so people can:</p>
+<ul>
+<li>Ask questions in chat instead of clicking through menus.</li>
+<li>Let AI read and explain project data, tasks, and documents.</li>
+<li>Automate routine work – from creating leads to validating business rules.</li>
+</ul>
+<p>Under the hood, ERP.net connects securely to external AI providers (currently OpenAI).
+You choose which models to use, what they are allowed to know, and where they can help in your processes.</p>
 <p>AI Models in ERP.net are <strong>hierarchical</strong>, allowing each model to inherit context and knowledge from parent models.<br>
 This structure supports both <strong>company-wide master models</strong> and <strong>specialized assistants</strong> for specific departments or workflows (for example, Marketing AI or Sales AI).</p>
 <p>The models based on OpenAI’s technology can also be <strong>fine-tuned and trained</strong> directly within ERP.net, using the company’s own data, procedures, and best practices.<br>
@@ -105,58 +109,57 @@ This enables the AI to understand the unique rules, terminology, and business lo
 <li>Employ AI-powered tools such as <strong>document ingestion</strong>, <strong>lead creation</strong>, and <strong>intelligent task generation</strong>.</li>
 </ul>
 <p>The goal is to make AI a <strong>natural and context-aware part of everyday ERP processes</strong>, improving accuracy, speed, and decision-making across all departments.</p>
-<blockquote>
-<p><strong>Note on OpenAI usage</strong><br>
-ERP.net AI features rely on the <strong>OpenAI API</strong> to deliver model responses.<br>
-To enable these capabilities, each customer or organization must create an <strong>OpenAI account</strong> and obtain an <strong>API key</strong>.<br>
-OpenAI services are billed <strong>directly by OpenAI</strong>, according to actual usage.<br>
-This approach keeps ERP.net transparent about costs and allows every company to manage and optimize its own AI budget independently.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>💡 <strong>Using OpenAI with ERP.net</strong></p>
+<p>ERP.net AI features use the OpenAI API behind the scenes.</p>
+<ul>
+<li>Each customer creates their own OpenAI account and API key.</li>
+<li>OpenAI bills you directly based on your usage.</li>
+</ul>
+</div>
+<p>This keeps ERP.net transparent about costs and allows you to control your AI budget.</p>
 <h2 id="2-architecture">2. Architecture</h2>
-<p>The AI functionality in ERP.net is built as a modular system, consisting of several entities that define configuration, training, and runtime behavior.<br>
-Together, they form a complete framework for integrating and managing AI models within the ERP environment.</p>
-<table>
-<thead>
-<tr>
-<th>Entity</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Providers</strong></td>
-<td>Define connections to external AI services (currently only OpenAI). Store API credentials, provider type, and base model configuration.</td>
-</tr>
-<tr>
-<td><strong>Models</strong></td>
-<td>Define the individual AI models available in the system. Models can be <strong>hierarchical</strong>, meaning a model can inherit knowledge and settings from a parent model. Each model can represent a specific assistant (e.g. Marketing AI, Sales AI) or a company-wide master model.</td>
-</tr>
-<tr>
-<td><strong>ModelQAs</strong></td>
-<td>Store structured Question &amp; Answer pairs for model fine-tuning. Used to teach the model company-specific rules and best practices.</td>
-</tr>
-<tr>
-<td><strong>TrainingConversations</strong></td>
-<td>Contain conversational training sessions used to improve model behavior. Created through real user– AI chat arbiter interactions using the &quot;Train AI&quot; function</td>
-</tr>
-<tr>
-<td><strong>TrainingConversationMessages</strong></td>
-<td>Store the individual messages from each training conversation. Used during model compilation to provide contextual learning data.</td>
-</tr>
-<tr>
-<td><strong>Compilations</strong></td>
-<td>Track the process of compiling and deploying trained models. Each successful compilation results in a ready-to-use AI instance.</td>
-</tr>
-<tr>
-<td><strong>CompilationAssets</strong></td>
-<td>Contain the assets (instructions, data, and context) used during a compilation. Provide the resources that define the model’s learning scope.</td>
-</tr>
-<tr>
-<td><strong>AssistantConversations</strong></td>
-<td>Store user conversations with AI Assistants within ERP.net. Maintain a history of interactions and ensure data security.</td>
-</tr>
-</tbody>
-</table>
+<p>ERP.net AI is a modular system. You plug in an external AI provider, define one or more
+AI models (assistants), teach them with your data, and then use them in chats, forms,
+and business rules.</p>
+<h3 id="key-building-blocks">Key building blocks</h3>
+<p><strong>Providers</strong><br>
+<em>Think of this as the “connection” to an AI service.</em></p>
+<ul>
+<li>Stores the API credentials and base model (e.g., OpenAI GPT model).</li>
+<li>Configured once per AI provider.</li>
+</ul>
+<p><strong>Models</strong><br>
+<em>Your actual AI assistants.</em></p>
+<ul>
+<li>Each model represents a specific assistant (e.g,. “Project AI”, “Sales AI”, “Master AI”).</li>
+<li>Models can inherit settings and knowledge from a parent model.</li>
+</ul>
+<p><strong>ModelQAs</strong><br>
+<em>Structured Q&amp;A knowledge base.</em></p>
+<ul>
+<li>Store question–answer pairs with your company rules and best practices.</li>
+<li>Used to fine-tune how the model answers typical questions.</li>
+</ul>
+<p><strong>TrainingConversations &amp; TrainingConversationMessages</strong><br>
+<em>Real chats used as training examples.</em></p>
+<ul>
+<li>Capture real user ↔ AI interactions (via “Train AI”).</li>
+<li>Used during compilation to teach the model how your users talk.</li>
+</ul>
+<p><strong>Compilations &amp; CompilationAssets</strong><br>
+<em>Turning training data into a ready-to-use AI</em></p>
+<ul>
+<li>Compilations bundle instructions, data, and context.</li>
+<li>A successful compilation produces a deployable AI model version.</li>
+</ul>
+<p><strong>AssistantConversations</strong><br>
+<em>Day-to-day user chats with AI</em></p>
+<ul>
+<li>Store the conversation history between users and AI assistants.</li>
+<li>Ensure auditability and data security.</li>
+</ul>
 
 </article>
 
