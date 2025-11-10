@@ -128,33 +128,33 @@ and business rules.</p>
 <em>Think of this as the “connection” to an AI service.</em></p>
 <ul>
 <li>Stores the API credentials and base model (e.g., OpenAI GPT model).</li>
-<li>Configured once per AI provider.</li>
+<li>Can be configured once per AI provider and used by all models.</li>
 </ul>
 <p><strong>Models</strong><br>
 <em>Your actual AI assistants.</em></p>
 <ul>
-<li>Each model represents a specific assistant (e.g,. “Project AI”, “Sales AI”, “Master AI”).</li>
+<li>Each model represents a specific assistant (e.g, &quot;My Assistant&quot;, “Project AI”, “Sales AI”, “Master AI”).</li>
 <li>Models can inherit settings and knowledge from a parent model.</li>
 </ul>
-<p><strong>ModelQAs</strong><br>
+<p><strong>Model QA's</strong><br>
 <em>Structured Q&amp;A knowledge base.</em></p>
 <ul>
 <li>Store question–answer pairs with your company rules and best practices.</li>
 <li>Used to fine-tune how the model answers typical questions.</li>
 </ul>
-<p><strong>TrainingConversations &amp; TrainingConversationMessages</strong><br>
+<p><strong>Training Conversations &amp; Training Conversation Messages</strong><br>
 <em>Real chats used as training examples.</em></p>
 <ul>
 <li>Capture real user ↔ AI interactions (via “Train AI”).</li>
 <li>Used during compilation to teach the model how your users talk.</li>
 </ul>
-<p><strong>Compilations &amp; CompilationAssets</strong><br>
+<p><strong>Compilations &amp; Compilation Assets</strong><br>
 <em>Turning training data into a ready-to-use AI</em></p>
 <ul>
 <li>Compilations bundle instructions, data, and context.</li>
-<li>A successful compilation produces a deployable AI model version.</li>
+<li>A successful compilation produces a fine-tuned AI model version.</li>
 </ul>
-<p><strong>AssistantConversations</strong><br>
+<p><strong>Assistant Conversations</strong><br>
 <em>Day-to-day user chats with AI</em></p>
 <ul>
 <li>Store the conversation history between users and AI assistants.</li>
