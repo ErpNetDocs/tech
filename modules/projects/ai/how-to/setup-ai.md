@@ -121,42 +121,51 @@ You can define **multiple models** – for example:
 
 ### 4. Model Compilation
 
-Once a model is configured, it must be **compiled** before it can be used.
-
+Once a model is configured, it can be **compiled**.  
 Compilation sends the model’s configuration and training data to the AI provider and creates a runnable assistant configuration there.
+
+Compilation is required in only two cases:  
+> - when you want to use a **fine-tuned model** as an Arbiter (with Q&A and/or Training Conversations), or  
+> - when you want to use a dedicated **AI Assistant** (the *My Assistant* app or assistant panel).  
+> In all other scenarios, ERP.net works directly with the **base model** defined in the AI Provider and does not require compilation.
+
 
 #### Running a compilation
 
-From an AI Model record:
+Here is an info how to initiate a compilations and how to read its results.
 
-1. Open the model in edit mode.
-2. Use **Run → Compile** (or the corresponding action).
+1. Open the model definition.
+2. Use **Run → Compile**.
 3. Wait for the compilation to complete.
 
-The result of each compilation is stored in **Projects.AI.Compilations** and visible in the model:
-
-- **Successful** compilations update the `Conversation compilation` field.
-- **Failed** compilations leave the previous version active and provide diagnostics.
-
-#### Logs and error diagnostics
-
-If a compilation fails:
-
-- Check **Error message** in the model – it usually contains the main reason (e.g., invalid base model name).
-- Check **Build log** – for more detailed, technical information.
-
-You can correct the configuration and run the compilation again.  
-Existing, previously compiled versions continue to work until a new compilation succeeds.
+Once the compilation is started we should simply wait for its result.
 
 > Compilation time can vary:  
 > - Simple assistant models: usually a few minutes.  
-> - Models with many Q&A and Training Conversations: can take longer, depending on data size.
+> - Models with many Q&A and Training Conversations: can take longer, depending on the volume of training data.
+
+The result of each compilation is stored in the **Compilations** sub-panel of the model:
+
+- Each row shows the **Start Time Utc**, **Completion Time Utc**, **Status**, **Is Successful**, and other fields.
+- The **Status** field shows the current state (for example: `Queued`, `Running`, `Completed`).
+- The **Is Successful** flag (`Yes/No`) clearly indicates whether the compilation has finished successfully.
+
+To monitor the **Status** you can regularly check the *Compilations* sub-panel described above or simply wait for the system notification. When a compilation finishes, the user who started it receives a message in the **Notifications** icon (for example: “Compilation of model ‘My Personal Assistant’ completed”), which is the quickest way to see that the process has ended.  
+
+If the compilation is **successful**, you can continue using the model as configured.  
+
+If the compilation **fails**:  
+1. Review the **Error Message** for the main cause (for example, an invalid or unsupported base model).
+2. If necessary, open the **Build Log** to investigate further details.
+
+After fixing the configuration, you can run the compilation again.  
+Existing, previously successful compilations remain active and are used by the system until a new compilation completes successfully.
 
 ---
 
 ### 5. Assigning a Model to Users
 
-Finally, each user who will work with AI should be connected to a specific AI model.
+Finally, each user who will work with AI Assistant should be connected to a specific AI model.
 
 ####  User configuration
 
@@ -167,10 +176,7 @@ Finally, each user who will work with AI should be connected to a specific AI mo
 This model will be used:
 
 - in the **AI Assistant app**,
-- in **assistant panels** inside forms,
-- and, in many cases, as the default model in that user’s AI interactions.
-
-If no model is assigned to a user, the system may fall back to the **Default model**, but it is recommended to explicitly configure a model for all users who are expected to use AI.
-
+- and in **assistant panels** inside forms.
+  
 > All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
 > One user cannot see another user’s assistant conversations.
