@@ -16,8 +16,7 @@ Once these are configured, end users can work with AI Assistants, chat arbiters,
 
 ### 2.1 AI Server Site (infrastructure prerequisite)
 
-> **What is this?**  
-> The AI Server site is a small, one-time configuration that prepares your ERP instance for the newer AI architecture.  
+The AI Server site is a small, one-time configuration that prepares your ERP instance for the newer AI architecture.  
 
 #### Creating the AI Server Site
 
@@ -41,7 +40,6 @@ A provider represents an external AI service – currently, **OpenAI**.
 Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if for example wants to use different OpenAI Base Models for different needs.
 
 #### 2.2.1 Creating the Provider
-
 
 1. Open **the Providers navigator**.
 2. Click **New** to create a new provider record.
@@ -87,18 +85,18 @@ You can define **multiple models** – for example:
   Used to build a **hierarchical structure** of models.  
   A parent model can aggregate training from its children, which is useful for a “master” company-wide assistant.
 
-- **Virtual User**  
+- **Virtual User** (optional) 
   A **Virtual User** whose identity the model uses in chats and the assistant panel.  
-  This is the “user” you see in group chats when the AI answers.
+ This is the “user” you see in group chats when the AI responds. It is required only if the model will be used in conversations (AI Assistant or chat arbiter). If the model is used solely for background operations such as  Ingest, this setting is not required.
 
-- **System message**  
+- **System message** (optional)  
   Global instructions that always apply to the model, such as:
   - tone of voice (formal / informal),
   - language preferences,
   - how to address users,
   - specific company naming conventions, etc.
 
-  Keep this short and focused – typically up to 1–2 pages of text at most.
+  Keep this short and focused – typically up to 5-6 sentences of text at most.
 
 - **Conversation compilation**  
   Reference to the **latest successful compilation** that the model uses at runtime.  
@@ -106,14 +104,14 @@ You can define **multiple models** – for example:
 
 - **Default model**  
   Marks this model as the **system default**.  
-  System-level AI actions (e.g. business rules) use the default model when no user-specific model is assigned.  
+  System-level AI actions (e.g. business rules, Ingest) use the default model when no user-specific model is assigned.  
   Only **one** model can be default at a time.
 
 - **Build assistant**  
   Controls how this model is used:
-  - `Yes` → the model is used as an **assistant** in the AI Assistant app and assistant panels in forms.  
+  - `Yes`/ checked → the model is used as an **assistant** in the AI Assistant app and assistant panels in forms.  
     In this mode, it does **not** use Q&A / training conversations for fine-tuning.
-  - `null` / not checked → the model can be **fine-tuned** with:
+  - `No` / not checked → the model can be **fine-tuned** with:
     - Q&A records, and
     - Training Conversations.  
     These models are typically used as **chat arbiters** in channels or as specialized assistants.
