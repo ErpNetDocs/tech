@@ -30,7 +30,7 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
 
-### 2. AI Providers
+### 2. Provider
 
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
 A provider represents an external AI service – currently, **OpenAI**.
@@ -54,7 +54,7 @@ Billing for AI usage is handled **directly by OpenAI** according to the company�
 
 ---
 
-### 3. AI Models
+### 3. Model
 
 An **AI Model** in ERP.net represents a concrete assistant configuration:
 
@@ -82,10 +82,24 @@ You can define **multiple models** – for example:
 - **Parent** (optional)  
   Used to build a **hierarchical structure** of models.  
   A parent model can aggregate training from its children, which is useful for a “master” company-wide assistant.
+red.
 
-- **Virtual User** (optional) 
-  A **Virtual User** whose identity the model uses in chats and the assistant panel.  
- This is the “user” you see in group chats when the AI responds. It is required only if the model will be used in conversations (AI Assistant or chat arbiter). If the model is used solely for background operations such as  Ingest, this setting is not required.
+- **Virtual User** (optional)  
+  A **Virtual User** whose identity the model uses in chats and in the assistant panel.  
+  This is the “user” you see in group chats when the AI responds.  
+
+  This field is required only if the model will be used in conversations (AI Assistant or chat arbiter).  
+  If the model is used solely for background operations such as **Ingest**, this setting is not required.
+
+  Each virtual user can be linked to **only one** AI model (no duplicates are allowed).  
+  If you need a new one, you can create it:
+
+   - from **Navigator → Users**, or  
+   - directly from the **Virtual User** field via right-click → **Create new**  
+    (if the menu is not visible, click **Edit** on the model first).
+
+  When creating the user, the only mandatory setting is:  
+   - **User Type** = `Virtual User (No login)`
 
 - **System message** (optional)  
   Global instructions that always apply to the model, such as:
@@ -165,9 +179,9 @@ Existing, previously successful compilations remain active and are used by the s
 
 ### 5. Assigning a Model to Users
 
-Finally, each user who will work with AI Assistant should be connected to a specific AI model.
+This step is required **only if you plan to use the AI Assistant functionality** (the My Assistant app and assistant panels in forms).
 
-####  User configuration
+#### User configuration
 
 1. Open **Users**.
 2. Open the user’s record (e.g. `Admin`).
@@ -180,3 +194,4 @@ This model will be used:
   
 > All AI Assistant conversations are user-specific and protected by the ERP.net security system.  
 > One user cannot see another user’s assistant conversations.
+
