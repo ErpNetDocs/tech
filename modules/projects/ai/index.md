@@ -29,8 +29,10 @@ By embedding this technology throughout ERP.net, users can:
 
 The goal is to make AI a **natural and context-aware part of everyday ERP processes**, improving accuracy, speed, and decision-making across all departments.
 
-
-> **Note on OpenAI usage**  
+> [!NOTE]
+>
+>  **OpenAI usage**
+> 
 > @@name AI features rely on the **OpenAI API** to deliver model responses.  
 > To enable these capabilities, each customer or organization must create an **OpenAI account** and obtain an **API key**.  
 > OpenAI services are billed **directly by OpenAI**, according to actual usage.  
