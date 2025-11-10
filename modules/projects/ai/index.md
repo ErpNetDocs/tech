@@ -53,7 +53,7 @@ and business rules.
 **Providers**  
 *Think of this as the “connection” to an AI service.*  
 - Stores the API credentials and base model (e.g., OpenAI GPT model).
-- Configured once per AI provider.
+- Can be configured once per AI provider and used by all models.
 
 **Models**  
 *Your actual AI assistants.*  
