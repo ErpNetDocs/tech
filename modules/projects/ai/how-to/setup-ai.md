@@ -1,14 +1,31 @@
 # Setup AI
 
-This section describes all system-level settings required to enable AI in ERP.net.:
+Before anyone can chat with AI or use it in business rules, an administrator needs to do a one-time setup. Think of this as the **AI onboarding checklist** for your ERP.net environment:
 
-1. **AI Server site**
-2. **Provider** - requires an active **OpenAI account** and an API key. All API usage is billed **directly by OpenAI** under that account.
-3. **Model**  
-4. **Model compilation** (optional) - required only if you plan to use a **fine-tuned model** as an Arbiter, or the **AI Assistant** functionality
-5. **Assigning a model to each user** (optional) - required only if you plan to use the **AI Assistant** functionality
-   
-Once these are configured, end users can work with AI Assistants, chat arbiters, business rules, and Ingest without needing to know any technical details.
+1. **Configure an AI Server site**  
+
+2. **Connect a Provider (OpenAI)**  
+   Add your AI provider using an active OpenAI account and API key.
+ > All API usage is billed **directly by OpenAI** under your account, so you stay in full control of AI costs.  
+
+3. **Create a Model (your AI assistant)**  
+   Define one or more models that represent the AI assistants you’ll use  
+   (for example, *Project AI*, *Sales AI*, or a generic *Master AI*).
+
+4. **Compile the Model (optional)**
+   If you plan to use a **fine-tuned model** as a chat Arbiter or for the **AI Assistant** feature, run a compilation so the model can use your training data and additional instructions.
+
+5. **Assign a Model to Users (optional)**  
+   If you want users to be able to chat with their AI assistant, assign a default model to them.
+
+Once this setup is done, end users can seamlessly work with:
+
+- **AI Assistants** in chat  
+- **Chat Arbiters** in group conversations  
+- **Business rules** powered by AI  
+- **Ingest** for feeding data into AI
+
+…all without needing to know anything about API keys, providers, or models.
 
 
 ## 1. AI Server Site 
