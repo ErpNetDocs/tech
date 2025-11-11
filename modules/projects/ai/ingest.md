@@ -1,4 +1,5 @@
-# Ingest AI – Intelligent Import of Purchase Invoices
+
+ # Ingest AI – Intelligent Import of Purchase Invoices
 
 ## 1. What is Ingest AI?
 
@@ -154,6 +155,7 @@ They are visible and editable, so the person has full control before importing.
 
 In most cases, the user simply reviews and presses **Import**, because the recognition accuracy is very high.
 
+![Ingest Recognized Data](ingest-recognised-data.png)
 
 ### 3.5. Validation and safety checks
 
@@ -190,6 +192,8 @@ If validation passes and the user confirms:
 4. The original file (image or PDF) is **attached** to the invoice.
 5. VAT and other distributed amounts are recalculated automatically based on the totals.
 
+![Ingest Sucessfull Import](ingest-sucessful.png)
+
 The user then sees:
 
 - The fully created purchase invoice with:
@@ -199,6 +203,7 @@ The user then sees:
 
 The accountant can do a final review and post the document as usual.
 
+![Ingest Imported Doc](ingest-imported-doc.png)
 
 ## 4. Limitations and known behaviors
 
