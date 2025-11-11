@@ -11,7 +11,7 @@ Instead of manually retyping data from paper or PDF invoices, users can:
 
 Ingest AI converts it into a **structured purchase invoice document** in ERP.net.
 
-![Snap to Doc](snap_to_doc.png)
+![Snap to Doc](snap_to_invoice.png)
 
 ![Ingest Desktop](ingest-desktop.png)
 
@@ -26,7 +26,6 @@ The result is:
 - Fewer typing mistakes  
 - More time for higher-value, expert work instead of repetitive keying  
 
----
 
 ## 2. Primary use case: service purchase invoices
 
@@ -41,13 +40,13 @@ When a new invoice from a known supplier is imported, Ingest AI:
 
 1. Finds the **most recent purchase invoice** from the same supplier (for up to one year back).
 2. If that previous invoice is **single-line**, Ingest AI:
-   - Reuses the **internal product** from that line (e.g. your standard “External services” product).
+   - Reuses the **internal product** from that line (e.g., your standard “External services” product).
    - Copies the **quantity** and any **user-defined attributes**, if applicable.
    - Uses the **net amount** from the newly recognized invoice.
    - Copies relevant header settings such as:
      - Deal type  
      - Expense center (and revenue center if used)  
-     - Notes / description  
+     - Notes/description  
 
 This means:
 
@@ -59,18 +58,17 @@ From an accounting and process perspective, this approach:
 
 - Reduces complexity by using **standard internal products** and expense categories.  
 - Simplifies **reporting and analysis** – you always see consistent categories, rather than dozens of supplier-specific items.  
-- Keeps all supplier detail **accessible but not intrusive** – it stays in the scanned/attached document instead of cluttering your accounting lines.
+- Keeps all supplier details **accessible but not intrusive** – it stays in the scanned/attached document instead of cluttering your accounting lines.
 
 As long as the invoice in the system has:
 
 - Correct supplier and customer  
 - Correct invoice number and date  
 - Correct totals (net, VAT, currency)  
-- The original document attached  
+- The original document is attached  
 
 you do **not** need to replicate the supplier’s line breakdown exactly inside ERP.net.
 
----
 
 ## 3. How Ingest AI works – end-to-end flow
 
@@ -80,11 +78,10 @@ Ingest AI is available in the ERP.net web client:
 
 - From the **main menu** (as a business app).
 - On both **desktop** and **mobile view**.
-- As an installed mobile app (where applicable), for quick access.
+- As an installed mobile app (PWA), for quick access.
 
 > **Licensing:** Ingest AI requires the **X13 – Advanced AI** license and an active AI server configuration.
 
----
 
 ### 3.2. Capturing or uploading the invoice
 
@@ -99,19 +96,18 @@ You can provide the invoice to Ingest in several ways:
 
 Supported formats include:
 
-- Photos (e.g. from a smartphone camera)  
+- Photos (e.g., from a smartphone camera)  
 - PDF and other common image formats  
 
 > **Recommendation:** Each file should contain **exactly one invoice**.  
 > For multi-page invoices, include **all pages in a single file**.
 
----
 
 ### 3.3. AI recognition
 
 Once the file is uploaded, Ingest AI sends it to the AI model, which reads and structures the data. It recognizes core fields such as:
 
-- Document type (e.g. Purchase Invoice, Credit Note)
+- Document type (e.g., Purchase Invoice, Credit Note)
 - Invoice number  
 - Invoice date  
 - Supplier name  
@@ -135,7 +131,6 @@ Names of companies are normalized to avoid problems with:
 
 This improves matching to existing supplier records.
 
----
 
 ### 3.4. Reviewing recognized data
 
@@ -154,11 +149,10 @@ Key fields such as:
 - Net amount  
 - Currency  
 
-are visible and editable, so the accountant has full control before importing.
+They are visible and editable, so the person has full control before importing.
 
 In most cases, the user simply reviews and presses **Import**, because the recognition accuracy is very high.
 
----
 
 ### 3.5. Validation and safety checks
 
@@ -180,7 +174,6 @@ Before creating the purchase invoice in ERP.net, Ingest AI performs several chec
 
 These controls ensure that automation **does not** introduce duplicates or incorrect company mappings.
 
----
 
 ### 3.6. Creating the purchase invoice
 
@@ -201,11 +194,10 @@ The user then sees:
 - The fully created purchase invoice with:
   - VAT and totals  
   - Service line(s)  
-- The attached invoice file that can be opened directly in the web client without downloading.
+- The attached invoice file can be opened directly in the web client without downloading.
 
 The accountant can do a final review and post the document as usual.
 
----
 
 ## 4. Desktop and mobile experience
 
@@ -226,7 +218,6 @@ No matter the device, the workflow is the same:
 
 This ensures that all users can work in a unified way, regardless of their device or operating system.
 
----
 
 ## 5. Best practices for using Ingest AI
 
@@ -254,7 +245,7 @@ To get the best results from Ingest AI, we recommend:
   - Use Ingest AI instead of manually entering invoices.
   - Rely on the **review screen** to make small corrections, rather than retyping everything.
 
-### 5.4. Keep supplier detail in the attachment
+### 5.4. Keep the supplier details in the attachment
 
 - Do not try to mirror the supplier’s complex line structure inside ERP.net unless absolutely necessary.
 - Let Ingest AI create a **clean, standardized service line**, and use the attached invoice whenever you need to see the supplier’s detailed breakdown.
@@ -266,7 +257,6 @@ To get the best results from Ingest AI, we recommend:
   - Make sure the entire invoice is visible and not cut off.
 - Poor image quality can reduce recognition accuracy and may lead to misread values.
 
----
 
 ## 6. Limitations and known behaviors
 
