@@ -67,7 +67,7 @@ As long as the invoice in the system has:
 - Correct totals (net, VAT, currency)  
 - The original document is attached  
 
-you do **not** need to replicate the supplier’s line breakdown exactly inside ERP.net.
+You do **not** need to replicate the supplier’s line breakdown exactly inside ERP.net.
 
 
 ## 3. How Ingest AI works – end-to-end flow
@@ -137,7 +137,7 @@ This improves matching to existing supplier records.
 After recognition, Ingest AI displays a **“Recognized data”** panel where the user can:
 
 - Review the extracted fields.
-- Correct any values (e.g. date, number, supplier match, amount, currency).
+- Correct any values (e.g., date, number, supplier match, amount, currency).
 - Add or edit notes.
 
 Key fields such as:
@@ -199,66 +199,7 @@ The user then sees:
 The accountant can do a final review and post the document as usual.
 
 
-## 4. Desktop and mobile experience
-
-Ingest AI is designed to work consistently across devices:
-
-- **Mobile view**
-  - Perfect for operational staff, field teams, and administrative personnel.
-  - Take a photo of a paper invoice immediately when it is received.
-- **Desktop view**
-  - Ideal for back-office accountants who receive invoices by email.
-  - Drag & drop from a folder or mail attachment, or select the file manually.
-
-No matter the device, the workflow is the same:
-
-1. Provide the file (camera or upload).  
-2. Review recognized data.  
-3. Import and get a direct link to the created invoice.  
-
-This ensures that all users can work in a unified way, regardless of their device or operating system.
-
-
-## 5. Best practices for using Ingest AI
-
-To get the best results from Ingest AI, we recommend:
-
-### 5.1. Standardize internal service products
-
-- Define clear **standard products/expenses** for recurring services, such as:
-  - External services  
-  - Software subscription  
-  - Maintenance and support  
-- Use these standardized products on invoices imported with Ingest AI.
-- Make sure the latest invoice from each supplier uses the desired internal product – Ingest will reuse it automatically.
-
-### 5.2. Configure cost centers and deal types
-
-- On the last “reference” invoice for a supplier, set:
-  - The correct deal type  
-  - The appropriate cost center (and revenue center if needed)  
-- Ingest AI will copy these settings for future invoices, ensuring consistent allocation.
-
-### 5.3. Use Ingest AI as the primary entry channel
-
-- Encourage operational and accounting staff to:
-  - Use Ingest AI instead of manually entering invoices.
-  - Rely on the **review screen** to make small corrections, rather than retyping everything.
-
-### 5.4. Keep the supplier details in the attachment
-
-- Do not try to mirror the supplier’s complex line structure inside ERP.net unless absolutely necessary.
-- Let Ingest AI create a **clean, standardized service line**, and use the attached invoice whenever you need to see the supplier’s detailed breakdown.
-
-### 5.5. Ensure good image quality
-
-- For paper invoices:
-  - Take photos in good lighting, without glare or strong shadows.
-  - Make sure the entire invoice is visible and not cut off.
-- Poor image quality can reduce recognition accuracy and may lead to misread values.
-
-
-## 6. Limitations and known behaviors
+## 4. Limitations and known behaviors
 
 - Each uploaded file should contain **one invoice**.  
 - Multi-page invoices must be in a **single file** (multi-page PDF or multi-page image).  
