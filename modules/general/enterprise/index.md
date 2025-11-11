@@ -56,12 +56,12 @@ To add a new enterprise company:
 
    ![pictures](pictures/add_new.png)
 
-2. The creation form will open where two fields are required:
+2. The creation form will open where two fields are required.
+
+   ![pictures](pictures/fields_company.png)
    
    - **Company** – Choose an existing company from the list.
    - **Base Currency** – Select the base operational currency.
-  
-     ![pictures](pictures/fields_company.png)
 
      Fill in any of the other configuration fields as needed.
      
