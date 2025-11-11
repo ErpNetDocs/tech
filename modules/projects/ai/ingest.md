@@ -11,6 +11,10 @@ Instead of manually retyping data from paper or PDF invoices, users can:
 
 Ingest AI converts it into a **structured purchase invoice document** in ERP.net.
 
+![Snap to Doc](snap_to_doc.png)
+
+![Ingest Desktop](ingest-desktop.png)
+
 Ingest AI works:
 
 - On **mobile** – ideal for operational staff and accountants on the go.
