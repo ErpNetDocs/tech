@@ -2,3 +2,5 @@
   href: index.md
 - name: Setup AI 
   href: setup-ai.md
+- name: Fine-tune AI Models 
+  href: fine-tune-models.md
