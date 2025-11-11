@@ -2,7 +2,9 @@
 
 The **Enterprise** submodule defines and manages the companies that operate within an enterprise. 
 
-Eterprise companies represent the organizational entities that issue documents, maintain accounts, and serve as the base units for business operations in @@name.
+In @@name, eterprise companies represent the organizational entities that issue documents, maintain accounts, and serve as the base units for business operations.
+
+![pictures](pictures/enterprise_overview.png)
 
 ## Interface
 
@@ -10,13 +12,15 @@ The page consists of a single **Enterprise Companies** panel which lists all com
 
 Each record includes the enterprise company name, base currency, costing method, and other key configuration details such as debit and credit accounts for exchange differences, advance product, and VAT document amount type.
 
-You can view or edit existing companies by clicking on them once. The panel also allows creating new enterprise companies when needed.
+![pictures](pictures/ent_companies.png)
 
 ## Enterprise company details
 
 Selecting an enterprise company opens its detail form. 
 
 It contains both general configuration fields as well as related data tables that define how the company operates within the enterprise.
+
+![pictures](pictures/one_company.png)
 
 - **Company** – Links the enterprise company to an existing base company record in the system. 
 - **Base Currency** – Defines the main operational currency of the enterprise company. 
@@ -34,7 +38,9 @@ It contains both general configuration fields as well as related data tables tha
 
 ### Related data
 
-Each enterprise company can include several related panels that can add to its operational setup:
+Each enterprise company can include several related panels that can add to its operational setup.
+
+![pictures](pictures/related_data.png)
 
 - **Accounts** – Lists accounting records linked to the enterprise company.  
 - **Payment Accounts** – Defines available bank or cash payment accounts.  
@@ -47,12 +53,18 @@ Each enterprise company can include several related panels that can add to its o
 To add a new enterprise company:
 
 1. In the Enterprise Companies page, click on **New** from the toolbar.
-2. A creation form will open. The following fields are required:
+
+   ![pictures](pictures/add_new.png)
+
+2. The creation form will open. The following fields are required:
+   
    - **Company** – Choose an existing company from the list.
    - **Base Currency** – Select the base operational currency.
 
-     Optionally, you may complete any of the additional configuration fields such as *Advance Product*, *VAT Document Amount Type*, or *Exchange Difference Accounts*.
+     You may complete any of the other configuration fields such as *Advance Product*, *VAT Document Amount Type*, or *Exchange Difference Accounts*.
+
+     ![pictures](pictures/fields_company.png)
      
 3. When finished, select **Save and close** to create the new company.
 
-After creation, the enterprise company becomes available in the list and can be further configured with accounts, payment types, and other related data as needed.
+   The enterprise company will become available in the list and can be further configured with accounts, payment types, and other related data as needed.
