@@ -56,15 +56,15 @@ To add a new enterprise company:
 
    ![pictures](pictures/add_new.png)
 
-2. The creation form will open. The following fields are required:
+2. The creation form will open where two fields are required:
    
    - **Company** – Choose an existing company from the list.
    - **Base Currency** – Select the base operational currency.
-
-     You may complete any of the other configuration fields such as *Advance Product*, *VAT Document Amount Type*, or *Exchange Difference Accounts*.
-
+  
      ![pictures](pictures/fields_company.png)
+
+     Fill in any of the other configuration fields as needed.
      
 3. When finished, select **Save and close** to create the new company.
 
-   The enterprise company will become available in the list and can be further configured with accounts, payment types, and other related data as needed.
+   It will become available in the list and can be further configured with accounts, payment types, and other related data.
