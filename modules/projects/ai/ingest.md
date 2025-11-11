@@ -11,9 +11,8 @@ Instead of manually retyping data from paper or PDF invoices, users can:
 
 Ingest AI converts it into a **structured purchase invoice document** in ERP.net.
 
-![Snap to Doc](snap_to_invoice.png)
+![Snap to Doc](snap_to_doc1.png)
 
-![Ingest Desktop](ingest-desktop.png)
 
 Ingest AI works:
 
@@ -79,6 +78,8 @@ Ingest AI is available in the ERP.net web client:
 - From the **main menu** (as a business app).
 - On both **desktop** and **mobile view**.
 - As an installed mobile app (PWA), for quick access.
+
+![Ingest Main Screen](ingest-desktop-and-mobile.png)
 
 > **Licensing:** Ingest AI requires the **X13 – Advanced AI** license and an active AI server configuration.
 
