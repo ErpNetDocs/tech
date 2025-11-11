@@ -26,18 +26,6 @@ The result is:
 - Fewer typing mistakes  
 - More time for higher-value, expert work instead of repetitive keying
 
-**Requirements**
-
-To use Ingest AI, you need:
-
-- **License:** X13 – Advanced AI
-- **AI Server site:** An active AI Server Site  
-- **AI provider:** At least one configured AI Provider  
-- **AI model:** A default AI model 
-
-The technical setup of the AI Server Site, AI Provider, and default model is described here:  
-[How to set up AI in ERP.net](https://docs.erp.net/tech/modules/projects/ai/how-to/setup-ai.html)
-
 
 ## 2. Primary use case: service purchase invoices
 
@@ -221,3 +209,15 @@ The accountant can do a final review and post the document as usual.
 - Multi-page invoices must be in a **single file** (multi-page PDF or multi-page image).  
 - Some environments (like the **new Outlook web interface**) may limit drag & drop directly from email; in such cases, save the file locally first and then upload it to Ingest AI.  
 - Response time depends on the AI service; slow or unstable connections to the AI server can increase processing time.
+
+## 5. Requirements
+
+To use Ingest AI, you need:
+
+- **License:** X13 – Advanced AI
+- **AI Server site:** An active AI Server Site  
+- **AI provider:** At least one configured AI Provider  
+- **AI model:** A default AI model 
+
+The technical setup of the AI Server Site, AI Provider, and default model is described here:  
+[How to set up AI in ERP.net](https://docs.erp.net/tech/modules/projects/ai/how-to/setup-ai.html)
