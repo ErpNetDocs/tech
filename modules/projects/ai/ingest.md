@@ -1,4 +1,6 @@
-
+---
+uid: ingest
+---
  # Ingest AI – Intelligent Import of Purchase Invoices
 
 ## 1. What is Ingest AI?
@@ -50,7 +52,7 @@ When a new invoice from a known supplier is imported, Ingest AI:
 
 This means:
 
-> Even if the supplier sends a multi-line invoice, ERP.net can work with a **single, standardized line** using **your** internal product for that service, while the detailed supplier structure remains in the attached original document.
+> Even if the supplier sends a multi-line invoice, @@name can work with a **single, standardized line** using **your** internal product for that service, while the detailed supplier structure remains in the attached original document.
 
 ### Why this is a good practice
 
@@ -67,14 +69,14 @@ As long as the invoice in the system has:
 - Correct totals (net, VAT, currency)  
 - The original document is attached  
 
-You do **not** need to replicate the supplier’s line breakdown exactly inside ERP.net.
+You do **not** need to replicate the supplier’s line breakdown exactly inside @@name.
 
 
 ## 3. How Ingest AI works – end-to-end flow
 
 ### 3.1. Accessing the application
 
-Ingest AI is available in the ERP.net web client:
+Ingest AI is available in the @@name web client:
 
 - From the **main menu** (as a business app).
 - On both **desktop** and **mobile view**.
@@ -157,10 +159,10 @@ In most cases, the user simply reviews and presses **Import**, because the recog
 
 ### 3.5. Validation and safety checks
 
-Before creating the purchase invoice in ERP.net, Ingest AI performs several checks:
+Before creating the purchase invoice in @@name, Ingest AI performs several checks:
 
 1. **Recipient company check**  
-   - Ensures that the **customer on the invoice equals the current enterprise company** in ERP.net.  
+   - Ensures that the **customer on the invoice equals the current enterprise company** in @@name.  
    - If there is a mismatch, import is stopped with a clear error message.
 
 2. **Duplicate invoice check**  
@@ -180,7 +182,7 @@ These controls ensure that automation **does not** introduce duplicates or incor
 
 If validation passes and the user confirms:
 
-1. A new **Purchase Invoice** document is created in ERP.net.  
+1. A new **Purchase Invoice** document is created in @@name.  
 2. Header fields are filled with the recognized and/or corrected data.  
 3. Ingest applies the **smart mapping logic**:
    - Looks up the most recent invoice for this supplier.
