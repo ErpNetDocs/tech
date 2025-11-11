@@ -6,6 +6,9 @@
 - name: Products
   href: products/toc.yml
   topicHref: products/index.md
+- name: Currencies
+  href: currencies/toc.yml
+  topicHref: currencies/index.md
 - name: Documents
   href: documents/toc.yml
   topicHref: documents/index.md
