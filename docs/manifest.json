@@ -10214,6 +10214,89 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/currencies/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/currencies/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/add_currency_directory.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/add_currency_directory.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/add_new_directory.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/add_new_directory.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/currencies_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/currencies_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/currency_directories.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/currency_directories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/currency_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/currency_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/currencies/pictures/directories_fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/currencies/pictures/directories_fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/currencies/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/currencies/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/currencies/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/documents/document-print-images.md",
       "output": {
         ".html": {
@@ -21226,6 +21309,16 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/ai/how-to/compile_button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/how-to/fine-tune-models.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/how-to/fine-tune-models.html"
         }
       },
       "version": ""

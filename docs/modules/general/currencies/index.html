@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Currencies | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Currencies | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/general/currencies/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="currencies">Currencies</h1>
+
+<p>The <strong>Currencies</strong> submodule defines and manages the currencies used throughout the system.</p>
+<p>It ensures consistency when recording transactions, issuing documents, and maintaining exchange rates across <strong>enterprise companies</strong>.</p>
+<h3 id="structure">Structure</h3>
+<p>The page is composed of two panaels: the user-defined <strong>Currencies</strong> and <strong>Currency directories</strong>.</p>
+<p><img src="pictures/currency_overview.png" alt="pictures"></p>
+<h2 id="currency-directories">Currency directories</h2>
+<p>The <strong>Currency Directories</strong> panel contains named sets of currency exchange rates against a single base currency for a given date.</p>
+<p>Multiple directories with different names can exist for the same date, allowing separate rate sets.</p>
+<p><img src="pictures/currency_directories.png" alt="pictures"></p>
+<p>Each directory carries the following basic information:</p>
+<ul>
+<li><strong>Name</strong> – A descriptive unique label for the directory (for example, <em>GBP to BGN</em>).</li>
+<li><strong>To Currency</strong> – The target currency for the conversions of the directory.</li>
+<li><strong>Is Valid</strong> – Indicates whether the directory is active for use.</li>
+<li><strong>Is Default</strong> – Marks the directory as the default one for conversions. When there are more than one default directory, the last default directory is used.</li>
+</ul>
+<p>The <strong>Lines</strong> panel is used to define the actual exchange rates used in the directory:</p>
+<ul>
+<li><strong>From Currency</strong> – The currency being converted from.</li>
+<li><strong>Rate Multiplier</strong> – The multiplier applied when converting from the source currency.</li>
+<li><strong>Rate Divisor</strong> – The divisor applied during conversion.</li>
+</ul>
+<p><img src="pictures/directories_fields.png" alt="pictures"></p>
+<h3 id="create-a-currency-directory">Create a currency directory</h3>
+<p>To create a new currency directory:</p>
+<ol>
+<li><p>In <strong>Currency Directories</strong>, click on <strong>New</strong> from the toolbar.</p>
+<p><img src="pictures/add_currency_directory.png" alt="pictures"></p>
+</li>
+<li><p>A creation form will open where two fields are required:</p>
+<ul>
+<li><p><strong>Name</strong> – Provide a descriptive name (for example, <em>USD to EUR</em>).</p>
+</li>
+<li><p><strong>To Currency</strong> – Select the target currency.</p>
+<p>You can optionally mark <strong>Is Valid</strong> and <strong>Is Default</strong>.</p>
+</li>
+</ul>
+</li>
+<li><p>In the <strong>Lines</strong> section, you can choose to add one or more currency pairs now or later:</p>
+<p><img src="pictures/add_new_directory.png" alt="pictures"></p>
+<ul>
+<li>Choose a suitable <strong>From Currency</strong> from the dropdown list.</li>
+<li>Enter preferred <strong>Rate Multiplier</strong> and <strong>Rate Divisor</strong> values.</li>
+</ul>
+</li>
+<li><p>When ready, select <strong>Save and close</strong> to create the directory</p>
+<p>Once saved, the directory can be edited or updated as needed.</p>
+</li>
+</ol>
+<h2 id="currencies-1">Currencies</h2>
+<p>The <strong>Currencies</strong> panel lists all user-defined currencies available in ERP.net. Each record shows the currency <strong>sign</strong>, <strong>name</strong>, and <strong>show order</strong>.</p>
+<p>From this panel, you can add new currencies or edit existing ones to align with your organization's requirements.</p>
+<p><img src="pictures/currencies_panel.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/currencies/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
