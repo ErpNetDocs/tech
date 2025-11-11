@@ -3,3 +3,5 @@
 - name: How to
   href: how-to/toc.yml
   topicHref: how-to/index.md
+- name: Ingest 
+  href: ingest.md
