@@ -1,7 +1,7 @@
 ---
 uid: ingest
 ---
- # Ingest AI – Intelligent Import of Purchase Invoices
+ # Ingest (AI) – Intelligent Import of Purchase Invoices
 
 ## 1. What is Ingest AI?
 
