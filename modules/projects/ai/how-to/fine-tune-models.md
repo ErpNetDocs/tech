@@ -19,7 +19,6 @@ Fine-tuning is done entirely inside @@name, using:
 
 The result is a model that understands your processes, terminology, and internal rules much better than a generic ChatGPT.
 
----
 
 ### 2. When do you need fine-tuning?
 
@@ -36,26 +35,12 @@ From a technical perspective, fine-tuning is needed when:
 
 In all other scenarios (for example, simple backend AI rules without specialization), @@name can work directly with the **base model** from the AI Provider without fine-tuning.
 
----
 
-### 3. Prerequisites
-
-Before fine-tuning a model, make sure you have:
-
-1. **AI Server Site** configured (infrastructure prerequisite).
-2. At least one **AI Provider** (OpenAI) with a valid API key.
-3. An **AI Model** created in `Projects.AI.Models`:
-   - `Build assistant = null` if you plan to use Q&A and Training Conversations.
-   - A linked **Provider** (OpenAI).
-4. (Optional, but typical) a **Virtual User**, if the model will be used in chats or the My Assistant app.
-
----
-
-### 4. Fine-tuning components
+### 3. Fine-tuning components
 
 Fine-tuning in @@name is built from three main elements:
 
-#### 4.1 System message
+#### 3.1 System message
 
 The **System message** field in the AI Model contains high-level instructions that always apply.
 
@@ -74,7 +59,7 @@ Good practices:
 
 ---
 
-#### 4.2 Q&A (Projects.AI.ModelQAs)
+#### 3.2 Q&A (Projects.AI.ModelQAs)
 
 **Q&A records** define explicit question–answer pairs that the model should know.
 
@@ -96,7 +81,7 @@ When a user asks something similar, the model uses the Q&A data to give an answe
 
 ---
 
-#### 4.3 Training Conversations (Projects.AI.TrainingConversations)
+#### 3.3 Training Conversations (Projects.AI.TrainingConversations)
 
 **Training Conversations** let you fine-tune the model using **real chat dialogues**.
 
@@ -111,7 +96,7 @@ There are two ways to create Training Conversations:
 1. **Manually** – by creating records in `Projects.AI.TrainingConversations` and `TrainingConversationMessages`.
 2. **Automatically from chat** – using the **Train AI** command.
 
-##### 4.3.1 Training from chat (Train AI)
+##### 3.3.1 Training from chat (Train AI)
 
 When you are chatting with the AI in a group or direct chat:
 
@@ -131,7 +116,7 @@ This allows you to **improve** the model continuously while using it, without ha
 
 ---
 
-### 5. Model hierarchy and reuse
+### 4. Model hierarchy and reuse
 
 The **Parent** field in the AI Model allows you to build a **hierarchy of models**.
 
@@ -154,61 +139,32 @@ This is especially useful for a **company-wide assistant** for managers or gener
 
 ---
 
-### 6. Compilation and applying the fine-tuning
+### 5. Compilation and applying the fine-tuning
 
-After you add or change the System Message, Q&A, or Training Conversations, you must **compile** the model so the changes are applied at the AI provider.
 
-#### 6.1 When compilation is required
+After you add or change the **System Message**, **Q&A**, or **Training Conversations**, the model must be **compiled** so that the updated fine-tuning is applied at the AI provider.
 
-Compilation is required in only two cases:
+Compilation:
 
-- when you want to use a **fine-tuned model** (Q&A and/or Training Conversations), or  
-- when you want to use a dedicated **AI Assistant** (the *My Assistant* app or assistant panel).
+- packages the current configuration and training data, and  
+- creates or updates the runnable model configuration used at runtime.
 
-In all other scenarios, @@name works directly with the **base model** defined in the AI Provider and does not require compilation.
+For detailed, step-by-step instructions on how to run and monitor compilations, see: **[AI Setup – Model compilation](https://docs.erp.net/tech/modules/projects/ai/how-to/setup-ai.html#4-model-compilation)**
 
-#### 6.2 Running a compilation
+In short:
 
-From an AI Model record:
+- After a **successful** compilation, the new fine-tuned version becomes active for that model.
+- If a compilation **fails**, the last successful version remains active until the issue is resolved and a new compilation completes successfully.
 
-1. Open the model.
-2. Start **Compile** (via the Run menu or the corresponding action).
-3. Monitor the result in the **Compilations** sub-panel or via the **Notifications** panel:
-   - The **Status** column shows the progress (e.g., `Queued`, `Running`, `Completed`).
-   - The **Is Successful** flag indicates if the compilation has finished successfully.
 
-If the compilation is successful, the **Conversation compilation** field is updated and the new fine-tuned version becomes active.
+### 6. Using a fine-tuned model
 
-If the compilation fails:
+Once a fine-tuned model is compiled, it can be used as an **arbiter** in chats (added as a member to relevant groups, e.g., Marketing group).
 
-1. Check the **Is Successful** flag and **Status**.
-2. Review the **Error Message** for the main cause (e.g., invalid or unsupported base model).  
-   Hover over it to see the full text.
-3. If necessary, open the **Build Log** to inspect technical details.
+Which users see which behavior depends on which **Virtual User/AI model** is added as a member of the chat group (for arbiters).
 
-You can adjust the configuration and run the compilation again.  
-Existing, previously successful compilations remain active until a new compilation completes successfully.
 
----
-
-### 7. Using a fine-tuned model
-
-Once a fine-tuned model is compiled, it can be used:
-
-- as an **arbiter** in chats (added as a member to relevant groups, e.g. Marketing group),
-- as the model behind a specific **Virtual User**,
-- as the model assigned to users for:
-  - the **AI Assistant app** (My Assistant),
-  - **assistant panels** in forms.
-
-Which users see which behaviour depends on:
-
-- which **model** is assigned in their **User** record (for assistants),
-- and which **Virtual User / AI model** is configured for a chat group (for arbiters).
-
----
-
-### 8. Best practices for fine-tuning
+### 7. Best practices for fine-tuning
 
 - Start with a **small scope** – for example, one model for a single department.
 - Keep System messages **short and clear**.
