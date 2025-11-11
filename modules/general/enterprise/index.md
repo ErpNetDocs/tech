@@ -68,3 +68,7 @@ To add a new enterprise company:
 3. When finished, select **Save and close** to create the new company.
 
    It will become available in the list and can be further configured with accounts, payment types, and other related data.
+
+> [!NOTE]
+> 
+> The screenshots taken for this article are from v.26 of the platform.
