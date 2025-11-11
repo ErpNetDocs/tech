@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+- name: Enterprise
+  href: enterprise/toc.yml
+  topicHref: enterprise/index.md
 - name: Products
   href: products/toc.yml
   topicHref: products/index.md
