@@ -349,6 +349,9 @@ references:
 - uid: index-product-relations
   name: Product Relations
   href: modules/general/products/product-relations/index.html
+- uid: ingest
+  name: Ingest (AI) – Intelligent Import of Purchase Invoices
+  href: modules/projects/ai/ingest.html
 - uid: jobs-J30632
   name: J30632 Deletе old notifications
   href: advanced/jobs/J30632.html

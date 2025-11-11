@@ -3154,6 +3154,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "ingest-desktop-and-mobile.png",
+      "output": {
+        "resource": {
+          "relative_path": "ingest-desktop-and-mobile.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "legacy/exchange/index.md",
       "output": {
@@ -10291,6 +10301,99 @@
         },
         ".json": {
           "relative_path": "modules/general/documents/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/enterprise/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/enterprise/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/add_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/add_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/ent_companies.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/ent_companies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/enterprise_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/enterprise_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/fields_company.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/fields_company.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/full_data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/full_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/one_company.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/one_company.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/enterprise/pictures/related_data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/enterprise/pictures/related_data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/enterprise/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/enterprise/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/enterprise/toc.json"
         }
       },
       "version": ""
@@ -21171,6 +21274,106 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-desktop-and-mobile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-desktop-and-mobile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-desktop.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-desktop.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-imported-doc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-imported-doc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-mobile.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-mobile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-recognised-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-recognised-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ingest-sucessful.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ingest-sucessful.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/ingest.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/ingest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/snap_to_doc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/snap_to_doc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/snap_to_doc1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/snap_to_doc1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/snap_to_invoice.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/snap_to_invoice.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/projects/ai/toc.yml",
       "output": {
@@ -21926,6 +22129,16 @@
         },
         ".json": {
           "relative_path": "reference/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "snap_to_doc1.png",
+      "output": {
+        "resource": {
+          "relative_path": "snap_to_doc1.png"
         }
       },
       "version": ""
