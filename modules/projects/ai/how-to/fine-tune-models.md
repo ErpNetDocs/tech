@@ -59,7 +59,7 @@ Good practices:
 
 ---
 
-#### 3.2 Q&A (Projects.AI.ModelQAs)
+#### 3.2 Q&A 
 
 **Q&A records** define explicit question–answer pairs that the model should know.
 
@@ -81,7 +81,7 @@ When a user asks something similar, the model uses the Q&A data to give an answe
 
 ---
 
-#### 3.3 Training Conversations (Projects.AI.TrainingConversations)
+#### 3.3 Training Conversations
 
 **Training Conversations** let you fine-tune the model using **real chat dialogues**.
 
