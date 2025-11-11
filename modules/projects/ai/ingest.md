@@ -221,5 +221,4 @@ To use Ingest AI, you need:
 - **AI provider:** At least one configured AI Provider  
 - **AI model:** A default AI model 
 
-The technical setup of the AI Server Site, AI Provider, and default model is described here:  
-[How to set up AI in ERP.net](./how-to/setup-ai.md)
+The technical setup of the AI Server Site, AI Provider, and default model is described here:  [How to set up AI in ERP.net](./how-to/setup-ai.md)
