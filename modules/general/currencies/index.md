@@ -37,7 +37,7 @@ The **Lines** panel is used to define the actual exchange rates used in the dire
 
 To create a new currency directory:
 
-1. In Currency Directories, click on **New** from the toolbar.
+1. In **Currency Directories**, click on **New** from the toolbar.
 
    ![pictures](pictures/add_currency_directory.png)
    
