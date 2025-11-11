@@ -15,7 +15,7 @@ Ingest AI converts it into a **structured purchase invoice document** in ERP.net
 ![Snap to Doc](snap_to_doc1.png)
 
 
-Ingest AI works:
+**Ingest AI works:**
 
 - On **mobile** – ideal for operational staff and accountants on the go.
 - On **desktop** – for office users who drag & drop or select files from their computer.
@@ -24,7 +24,19 @@ The result is:
 
 - Less manual data entry  
 - Fewer typing mistakes  
-- More time for higher-value, expert work instead of repetitive keying  
+- More time for higher-value, expert work instead of repetitive keying
+
+**Requirements**
+
+To use Ingest AI, you need:
+
+- **License:** X13 – Advanced AI
+- **AI Server site:** An active AI Server Site  
+- **AI provider:** At least one configured AI Provider  
+- **AI model:** A default AI model 
+
+The technical setup of the AI Server Site, AI Provider, and default model is described here:  
+[How to set up AI in ERP.net](https://docs.erp.net/tech/modules/projects/ai/how-to/setup-ai.html)
 
 
 ## 2. Primary use case: service purchase invoices
@@ -81,8 +93,6 @@ Ingest AI is available in the ERP.net web client:
 - As an installed mobile app (PWA), for quick access.
 
 ![Ingest Main Screen](ingest-desktop-and-mobile.png)
-
-> **Licensing:** Ingest AI requires the **X13 – Advanced AI** license and an active AI server configuration.
 
 
 ### 3.2. Capturing or uploading the invoice
