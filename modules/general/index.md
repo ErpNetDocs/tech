@@ -8,7 +8,7 @@ This module contains fundamental definitions, serving as the common dictionary f
 
 | Submodule | Description |
 | :--- | :--- |
-| **Enterprise** | Defines the legal and operational **enterprise companies** within an organization that issue documents and are involved in transactions. |
+| **[Enterprise](https://docs.erp.net/tech/modules/general/enterprise/index.html)** | Defines the legal and operational **enterprise companies** within an organization that issue documents and are involved in transactions. |
 | **Activities** | Provides **task management** and **event/appointment scheduling** capabilities and can be used to automatically create sales opportunities in the **[Presales module](https://docs.erp.net/tech/modules/crm/presales/index.html)**.
 | **Contacts** | Defines **individuals** and **entities** outside an immediate enterprise, used for managing relationships with customers, vendors, and partners. |
 | **Currencies** | Defines named sets of **currency exchange rates** against a single reference currency for a given date. |
