@@ -4,6 +4,8 @@ The **Resources** section in @@name supports the definition and management of ph
 
 This foundational data enables other modules like **[Production](https://docs.erp.net/tech/modules/production/index.html)** to reference, schedule, cost and track resource usage.
 
+![pictures](pictures/resources_overview.png)
+
 ## Structure
 
 The module is structured around two main panels, each with related sub-entities:
@@ -16,7 +18,13 @@ The module is structured around two main panels, each with related sub-entities:
 ## Purpose and relationships
 
 - **Resource Groups** serve as the top-level container for resources. Organisations typically create a group (e.g., “Maintenance Staff”, “Production Machines”) and then assign individual resources to these groups for management, costing, and scheduling.
+
+  ![pictures](pictures/resource_group.png)
+  
 - **Resources** represent the actual asset or capability (for instance “CNC Machine #12”, “Technician A”). They reference a **Resource Group**, may have notes and define a costing currency.
+
+  ![pictures](pictures/resource.png)
+
 - **Resource Instances** allow organisations to manage multiple units of a resource type (for example, multiple “Technician A” instances or “Forklift Model X – Unit #001”) and map to parties or assets.
 - **Cost Rates** capture the cost attributes of resources over time (for example, standard hourly rate, overtime rate, per-use cost); linked to enterprise company context and validity dates.
 - **Work Schedules** define when resources are available or scheduled for work.
@@ -24,6 +32,8 @@ The module is structured around two main panels, each with related sub-entities:
 
 > [!Important]
 > Creating new sub-entities is done by first selecting **Edit**, then **Create new**.
+
+![pictures](pictures/create_new.png)
 
 > [!NOTE]
 > 
