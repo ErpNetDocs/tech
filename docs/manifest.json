@@ -21583,6 +21583,56 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/ai-business-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/ai-business-rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ai-set.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ai-set.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ai-validate.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ai-validate.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/ai-warning.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/ai-warning.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/projects/ai/arbiter.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/projects/ai/arbiter.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "modules/projects/ai/how-to/ai_server_site.png",
       "output": {
