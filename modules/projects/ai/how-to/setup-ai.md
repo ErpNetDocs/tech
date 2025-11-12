@@ -46,28 +46,80 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
 
-## 2. Provider
+## 2. Provider (OpenAI)
 
 After the AI Server site is configured, the next step is to define at least one **AI Provider**.  
-A provider represents an external AI service – currently, **OpenAI**.
+A provider represents an external AI service – currently, **OpenAI**. .  
 
-Each company typically defines **a single provider** pointing to its OpenAI account, but may have multiple if, for example wants to use different OpenAI Base Models for different needs.
+In this step, you will:
 
-#### Creating the Provider
+1. Create (or log into) your OpenAI account.
+2. Configure API access and generate an API key.
+3. Create a Provider record in ERP.net and paste the key.
 
-1. Open **the Providers navigator**.
-2. Click **New** to create a new provider record.
-3. Fill in the following required fields:
-- **Name** – a descriptive name (e.g., “OpenAI – Production”).
-- **Provider** – `OpenAI` (currently the only supported option).
-- **Base model name** – the default model to use, e.g. `gpt-4o-mini`, `gpt-4o`, etc.
-- **Provider API key** – the secret API key from the company’s OpenAI account.
+### 2.1 Create an OpenAI account
 
-> The API key is created in the **OpenAI platform → API keys**.  
-> Copy the value once and paste it into the Provider record in ERP.net.
+1. Open the OpenAI platform: https://platform.openai.com/
+2. Click **Sign up** (or **Log in** if you already have an account).
+3. Complete the registration steps (email, password, verification).
 
-Billing for AI usage is handled **directly by OpenAI** according to the company’s usage and pricing plan.
+> **Recommendation**  
+> For production use, create the account with a **company email** so that billing and access stay under organizational control.
 
+### 2.2 Configure API access and create an API key
+
+To allow ERP.net to call OpenAI, you need an API key.
+
+1. While logged into https://platform.openai.com/, go to **API keys**.
+2. Click **Create new secret key**.
+3. Enter a descriptive name, for example: `ERP.net Production`.
+4. Click **Create** and copy the generated key.
+
+> **Keep it secure**  
+> - Treat the API key like a password.  
+> - Store it in a secure place (password manager, secret vault, etc.).  
+> - If the key is exposed, revoke it in the OpenAI portal and create a new one.
+
+
+### 2.3 Define the Provider in ERP.net
+
+Next, create the Provider record that will store the connection to OpenAI.  
+
+1. In ERP.net, open **[Module > AI > Providers]**.
+2. Click **New**.
+3. Fill in the fields:
+   - **Name** – A clear name, for example `OpenAI Main`.
+   - **Provider** – Select **OpenAI**.
+   - **Base Model Name** – the base OpenAI model that this Provider should use (for example, `gpt-4o` or `gpt-4o-mini`). If you’re not sure which OpenAI model to pick, see the next section for guidance on **how to choose the right base model** for your scenario.
+   - **API Key** – Paste the secret key you created in step 2.2.
+4. Save the Provider.
+
+> **Tip**  
+> Use descriptive names like `Test – gpt-4o-mini` and `Production – gpt-4o` so it’s immediately clear which model and environment each Provider uses.
+
+### Choose a base model and provider strategy
+
+Each OpenAI Provider in ERP.net has a **Base Model Name** field.  
+This field defines which OpenAI model will be used when calling this Provider.
+
+Typical choices include, for example:
+
+- `gpt-4o-mini` – cost-effective, suitable for high-volume or simpler scenarios.
+- `gpt-4o` – higher quality at higher cost, suitable for complex conversations or critical business logic.
+
+Each company typically defines **at least one Provider** pointing to its OpenAI account, but you may create multiple Providers when you want to:
+
+- Use different OpenAI base models for different scenarios (for example, a cheaper model for everyday users and a more powerful model for management or critical processes).
+- Separate **test** and **production** usage (for example, different models or different OpenAI projects/keys).
+
+You don’t have to decide everything up front, but it helps to agree internally on:
+
+- Which base model to use in **production**.
+- Whether you want a **separate Provider for testing vs. real work**.
+- Whether you need **different Providers for different user groups**, for example:
+  - a cheaper model for common users;
+  - a more powerful model for management or critical processes.
+- A rough **budget** for monthly AI usage.
 
 ## 3. Model
 
