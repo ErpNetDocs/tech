@@ -4,7 +4,7 @@ Activities in @@name are documents providing flexible task and event tracking fo
 
 The **Activities** submodule centralizes planning and execution details: who is responsible, when it happens, what it is about, and who participates.
 
-![pictures](pictures/activites_overview.png)
+![pictures](pictures/activities_overview.png)
 
 > [!NOTE]
 > Activities appear in the **@@name [Calendar](https://docs.erp.net/tech/modules/my/calendar/index.html#activities)** and can also be created from there. 
