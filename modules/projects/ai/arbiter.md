@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **AI Arbiter** is an AI model that participates as a **member in ERP.net chats**.  
+The **AI Arbiter** is an AI model that participates as a **member in ERP.net chat groups**.  
 It acts like a virtual colleague who can:
 
 - answer questions inside a group conversation,
