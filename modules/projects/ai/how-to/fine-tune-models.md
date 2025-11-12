@@ -13,9 +13,9 @@ Instead of using a general model that “knows a bit of everything”, you can t
 
 Fine-tuning is done entirely inside @@name, using:
 
-- **System message** – general instructions and behaviour.
+- **System Мessage** – general instructions and behaviour.
 - **Q&A records** – structured questions and answers.
-- **Training conversations** – real chat dialogues that the model has “learned from”.
+- **Training Цonversations** – real chat dialogues that the model has “learned from”.
 
 The result is a model that understands your processes, terminology, and internal rules much better than a generic ChatGPT.
 
