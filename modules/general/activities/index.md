@@ -11,11 +11,11 @@ The **Activities** submodule centralizes planning and execution details: who is 
 
 The page consists of three panels, out of which **Activities** is the main list and editor for all activity documents.  
 
-![pictures](pictures/activities_overview.png)
+![pictures](pictures/activities_new_overview.png)
 
 The **Time Intervals** panel records time spent per activity, while the **Activity Templates** panel defines reusable defaults and automation for generating activities from documents elsewhere in @@name.
 
-![pictures](pictures/activities_panels.png)
+![pictures](pictures/activities_new_panels.png)
 
 ## Activity data
 
@@ -36,7 +36,7 @@ If you open the **Activities** panel, you can find the following information for
 - **Social Group** - Optional link of the activity to a social group.
 - **Assigned To User** – User to which the activity document is assigned (**This allows the activity to appear in their Calendar**).
 
-![pictures](pictures/activities_panel.png)
+![pictures](pictures/activity.png)
 
 ### Participants
 
@@ -50,22 +50,22 @@ You can create activities from the **Activities** panel:
 
 1. Click **New** and choose a **Document Type**. This preselects the **System Type**.
 
-   ![pictures](pictures/create_new_activity.png)
+   ![pictures](pictures/activity_create.png)
    
 2. Enter basic activity details such as **Subject** and **Notes** and any scheduling fields like **Start Time**, **End Time**, **Reminder/Deadline Time**.
 
-   ![pictures](pictures/create_new_activity_fields.png)
+   ![pictures](pictures/new_activity_fields.png)
    
 3. Add **Participants** if applicable.
 
-   ![pictures](pictures/create_new_activity_select_participants.png)
+   ![pictures](pictures/new_activity_participants.png)
    
 4. Click **Save and close** to save the new activity.
 
 > [!TIP]
 > You can also create activities directly from the Calendar. Read **[this short guide](https://docs.erp.net/tech/modules/my/calendar/index.html#create-an-activity)** to learn how.
 
-![pictures](pictures/calendar_create_activity.png)
+![pictures](pictures/calendar_activity_create.png)
 
 > [!NOTE]
 > 
