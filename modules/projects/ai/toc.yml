@@ -5,3 +5,5 @@
   topicHref: how-to/index.md
 - name: Ingest 
   href: ingest.md
+- name: AI Business Rules 
+  href: ai-business-rules.md
