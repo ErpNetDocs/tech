@@ -3,6 +3,9 @@
 - name: Enterprise
   href: enterprise/toc.yml
   topicHref: enterprise/index.md
+- name: Activities
+  href: activities/toc.yml
+  topicHref: activities/index.md
 - name: Products
   href: products/toc.yml
   topicHref: products/index.md
