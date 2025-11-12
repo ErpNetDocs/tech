@@ -21,6 +21,6 @@
 - name: Products
   href: products/toc.yml
   topicHref: products/index.md
- - name: Resources
+- name: Resources
   href: resources/toc.yml
   topicHref: resources/index.md 
