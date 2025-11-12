@@ -133,27 +133,85 @@ If you want users to be able to chat with their AI assistant, assign a default m
 Once saved, the ERP instance is considered “AI-ready” from an infrastructure standpoint.</p>
 </blockquote>
 <p>Make sure your license includes at least one site — the AI Server site uses the standard site licensing.</p>
-<h2 id="2-provider">2. Provider</h2>
+<h2 id="2-provider-openai">2. Provider (OpenAI)</h2>
 <p>After the AI Server site is configured, the next step is to define at least one <strong>AI Provider</strong>.<br>
-A provider represents an external AI service – currently, <strong>OpenAI</strong>.</p>
-<p>Each company typically defines <strong>a single provider</strong> pointing to its OpenAI account, but may have multiple if, for example wants to use different OpenAI Base Models for different needs.</p>
-<h4 id="creating-the-provider">Creating the Provider</h4>
+A provider represents an external AI service – currently, <strong>OpenAI</strong>. .</p>
+<p>In this step, you will:</p>
 <ol>
-<li>Open <strong>the Providers navigator</strong>.</li>
-<li>Click <strong>New</strong> to create a new provider record.</li>
-<li>Fill in the following required fields:</li>
+<li>Create (or log into) your OpenAI account.</li>
+<li>Configure API access and generate an API key.</li>
+<li>Create a Provider record in ERP.net and paste the key.</li>
 </ol>
-<ul>
-<li><strong>Name</strong> – a descriptive name (e.g., “OpenAI – Production”).</li>
-<li><strong>Provider</strong> – <code>OpenAI</code> (currently the only supported option).</li>
-<li><strong>Base model name</strong> – the default model to use, e.g. <code>gpt-4o-mini</code>, <code>gpt-4o</code>, etc.</li>
-<li><strong>Provider API key</strong> – the secret API key from the company’s OpenAI account.</li>
-</ul>
+<h3 id="21-create-an-openai-account">2.1 Create an OpenAI account</h3>
+<ol>
+<li>Open the OpenAI platform: <a href="https://platform.openai.com/">https://platform.openai.com/</a></li>
+<li>Click <strong>Sign up</strong> (or <strong>Log in</strong> if you already have an account).</li>
+<li>Complete the registration steps (email, password, verification).</li>
+</ol>
 <blockquote>
-<p>The API key is created in the <strong>OpenAI platform → API keys</strong>.<br>
-Copy the value once and paste it into the Provider record in ERP.net.</p>
+<p><strong>Recommendation</strong><br>
+For production use, create the account with a <strong>company email</strong> so that billing and access stay under organizational control.</p>
 </blockquote>
-<p>Billing for AI usage is handled <strong>directly by OpenAI</strong> according to the company’s usage and pricing plan.</p>
+<h3 id="22-configure-api-access-and-create-an-api-key">2.2 Configure API access and create an API key</h3>
+<p>To allow ERP.net to call OpenAI, you need an API key.</p>
+<ol>
+<li>While logged into <a href="https://platform.openai.com/">https://platform.openai.com/</a>, go to <strong>API keys</strong>.</li>
+<li>Click <strong>Create new secret key</strong>.</li>
+<li>Enter a descriptive name, for example: <code>ERP.net Production</code>.</li>
+<li>Click <strong>Create</strong> and copy the generated key.</li>
+</ol>
+<blockquote>
+<p><strong>Keep it secure</strong></p>
+<ul>
+<li>Treat the API key like a password.</li>
+<li>Store it in a secure place (password manager, secret vault, etc.).</li>
+<li>If the key is exposed, revoke it in the OpenAI portal and create a new one.</li>
+</ul>
+</blockquote>
+<h3 id="23-define-the-provider-in-erpnet">2.3 Define the Provider in ERP.net</h3>
+<p>Next, create the Provider record that will store the connection to OpenAI.</p>
+<ol>
+<li>In ERP.net, open <strong>[Module &gt; AI &gt; Providers]</strong>.</li>
+<li>Click <strong>New</strong>.</li>
+<li>Fill in the fields:
+<ul>
+<li><strong>Name</strong> – A clear name, for example <code>OpenAI Main</code>.</li>
+<li><strong>Provider</strong> – Select <strong>OpenAI</strong>.</li>
+<li><strong>Base Model Name</strong> – the base OpenAI model that this Provider should use (for example, <code>gpt-4o</code> or <code>gpt-4o-mini</code>). If you’re not sure which OpenAI model to pick, see the next section for guidance on <strong>how to choose the right base model</strong> for your scenario.</li>
+<li><strong>API Key</strong> – Paste the secret key you created in step 2.2.</li>
+</ul>
+</li>
+<li>Save the Provider.</li>
+</ol>
+<blockquote>
+<p><strong>Tip</strong><br>
+Use descriptive names like <code>Test – gpt-4o-mini</code> and <code>Production – gpt-4o</code> so it’s immediately clear which model and environment each Provider uses.</p>
+</blockquote>
+<h3 id="choose-a-base-model-and-provider-strategy">Choose a base model and provider strategy</h3>
+<p>Each OpenAI Provider in ERP.net has a <strong>Base Model Name</strong> field.<br>
+This field defines which OpenAI model will be used when calling this Provider.</p>
+<p>Typical choices include, for example:</p>
+<ul>
+<li><code>gpt-4o-mini</code> – cost-effective, suitable for high-volume or simpler scenarios.</li>
+<li><code>gpt-4o</code> – higher quality at higher cost, suitable for complex conversations or critical business logic.</li>
+</ul>
+<p>Each company typically defines <strong>at least one Provider</strong> pointing to its OpenAI account, but you may create multiple Providers when you want to:</p>
+<ul>
+<li>Use different OpenAI base models for different scenarios (for example, a cheaper model for everyday users and a more powerful model for management or critical processes).</li>
+<li>Separate <strong>test</strong> and <strong>production</strong> usage (for example, different models or different OpenAI projects/keys).</li>
+</ul>
+<p>You don’t have to decide everything up front, but it helps to agree internally on:</p>
+<ul>
+<li>Which base model to use in <strong>production</strong>.</li>
+<li>Whether you want a <strong>separate Provider for testing vs. real work</strong>.</li>
+<li>Whether you need <strong>different Providers for different user groups</strong>, for example:
+<ul>
+<li>a cheaper model for common users;</li>
+<li>a more powerful model for management or critical processes.</li>
+</ul>
+</li>
+<li>A rough <strong>budget</strong> for monthly AI usage.</li>
+</ul>
 <h2 id="3-model">3. Model</h2>
 <p>An <strong>AI Model</strong> in ERP.net represents a concrete model configuration:</p>
 <ul>
