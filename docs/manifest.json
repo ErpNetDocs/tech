@@ -21324,6 +21324,76 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-qas.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-qas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-system-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-system-message.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/finetune-train-ai-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/finetune-train-ai-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "modules/projects/ai/how-to/index.md",
       "output": {
@@ -21462,6 +21532,26 @@
       "output": {
         "resource": {
           "relative_path": "modules/projects/ai/snap_to_invoice.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/snap_to_invoicedoc.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/snap_to_invoicedoc.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/snap_to_invoicedoc_whiteback.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/snap_to_invoicedoc_whiteback.png"
         }
       },
       "version": ""

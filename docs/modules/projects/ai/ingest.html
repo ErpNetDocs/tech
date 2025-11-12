@@ -87,7 +87,7 @@
         <article data-uid="ingest">
 <h1 id="ingest-ai--intelligent-import-of-purchase-invoices">Ingest (AI) – Intelligent Import of Purchase Invoices</h1>
 
-<h2 id="1-what-is-ingest-ai">1. What is Ingest AI?</h2>
+<h2 id="what-is-ingest-ai">What is Ingest AI?</h2>
 <p><strong>Ingest AI</strong> is an application in the ERP.net web client that automatically reads and imports purchase invoices into the system.</p>
 <p>Instead of manually retyping data from paper or PDF invoices, users can:</p>
 <ul>
@@ -95,7 +95,7 @@
 <li><strong>Upload a file</strong> (image or PDF) from their computer,</li>
 </ul>
 <p>Ingest AI converts it into a <strong>structured purchase invoice document</strong> in ERP.net.</p>
-<p><img src="snap_to_doc1.png" alt="Snap to Doc"></p>
+<p><img src="snap_to_invoicedoc_whiteback.png" alt="Snap to Doc"></p>
 <p><strong>Ingest AI works:</strong></p>
 <ul>
 <li>On <strong>mobile</strong> – ideal for operational staff and accountants on the go.</li>
@@ -107,7 +107,7 @@
 <li>Fewer typing mistakes</li>
 <li>More time for higher-value, expert work instead of repetitive keying</li>
 </ul>
-<h2 id="2-primary-use-case-service-purchase-invoices">2. Primary use case: service purchase invoices</h2>
+<h2 id="primary-use-case-service-purchase-invoices">Primary use case: service purchase invoices</h2>
 <p>Ingest AI is optimized for <strong>service purchase invoices</strong>, where:</p>
 <ul>
 <li>Suppliers often send <strong>multi-line</strong> invoices, broken down by their internal products/services.</li>
@@ -151,8 +151,8 @@
 <li>The original document is attached</li>
 </ul>
 <p>You do <strong>not</strong> need to replicate the supplier’s line breakdown exactly inside ERP.net.</p>
-<h2 id="3-how-ingest-ai-works--end-to-end-flow">3. How Ingest AI works – end-to-end flow</h2>
-<h3 id="31-accessing-the-application">3.1. Accessing the application</h3>
+<h2 id="how-ingest-ai-works--end-to-end-flow">How Ingest AI works – end-to-end flow</h2>
+<h3 id="1-accessing-the-application">1. Accessing the application</h3>
 <p>Ingest AI is available in the ERP.net web client:</p>
 <ul>
 <li>From the <strong>main menu</strong> (as a business app).</li>
@@ -160,7 +160,7 @@
 <li>As an installed mobile app (PWA), for quick access.</li>
 </ul>
 <p><img src="ingest-desktop-and-mobile.png" alt="Ingest Main Screen"></p>
-<h3 id="32-capturing-or-uploading-the-invoice">3.2. Capturing or uploading the invoice</h3>
+<h3 id="2-capturing-or-uploading-the-invoice">2. Capturing or uploading the invoice</h3>
 <p>You can provide the invoice to Ingest in several ways:</p>
 <ul>
 <li><strong>Mobile:</strong>
@@ -185,7 +185,7 @@
 <p><strong>Recommendation:</strong> Each file should contain <strong>exactly one invoice</strong>.<br>
 For multi-page invoices, include <strong>all pages in a single file</strong>.</p>
 </blockquote>
-<h3 id="33-ai-recognition">3.3. AI recognition</h3>
+<h3 id="3-ai-recognition">3. AI recognition</h3>
 <p>Once the file is uploaded, Ingest AI sends it to the AI model, which reads and structures the data. It recognizes core fields such as:</p>
 <ul>
 <li>Document type (e.g., Purchase Invoice, Credit Note)</li>
@@ -211,7 +211,7 @@ For multi-page invoices, include <strong>all pages in a single file</strong>.</p
 <li>Mixed case or spacing</li>
 </ul>
 <p>This improves matching to existing supplier records.</p>
-<h3 id="34-reviewing-recognized-data">3.4. Reviewing recognized data</h3>
+<h3 id="4-reviewing-recognized-data">4. Reviewing recognized data</h3>
 <p>After recognition, Ingest AI displays a <strong>“Recognized data”</strong> panel where the user can:</p>
 <ul>
 <li>Review the extracted fields.</li>
@@ -230,7 +230,7 @@ For multi-page invoices, include <strong>all pages in a single file</strong>.</p
 <p>They are visible and editable, so the person has full control before importing.</p>
 <p>In most cases, the user simply reviews and presses <strong>Import</strong>, because the recognition accuracy is very high.</p>
 <p><img src="ingest-recognised-data.png" alt="Ingest Recognized Data"></p>
-<h3 id="35-validation-and-safety-checks">3.5. Validation and safety checks</h3>
+<h3 id="5-validation-and-safety-checks">5. Validation and safety checks</h3>
 <p>Before creating the purchase invoice in ERP.net, Ingest AI performs several checks:</p>
 <ol>
 <li><p><strong>Recipient company check</strong></p>
@@ -258,7 +258,7 @@ For multi-page invoices, include <strong>all pages in a single file</strong>.</p
 </li>
 </ol>
 <p>These controls ensure that automation <strong>does not</strong> introduce duplicates or incorrect company mappings.</p>
-<h3 id="36-creating-the-purchase-invoice">3.6. Creating the purchase invoice</h3>
+<h3 id="6-creating-the-purchase-invoice">6. Creating the purchase invoice</h3>
 <p>If validation passes and the user confirms:</p>
 <ol>
 <li>A new <strong>Purchase Invoice</strong> document is created in ERP.net.</li>
@@ -287,14 +287,14 @@ For multi-page invoices, include <strong>all pages in a single file</strong>.</p
 </ul>
 <p>The accountant can do a final review and post the document as usual.</p>
 <p><img src="ingest-imported-doc.png" alt="Ingest Imported Doc"></p>
-<h2 id="4-limitations-and-known-behaviors">4. Limitations and known behaviors</h2>
+<h2 id="limitations-and-known-behaviors">Limitations and known behaviors</h2>
 <ul>
 <li>Each uploaded file should contain <strong>one invoice</strong>.</li>
 <li>Multi-page invoices must be in a <strong>single file</strong> (multi-page PDF or multi-page image).</li>
 <li>Some environments (like the <strong>new Outlook web interface</strong>) may limit drag &amp; drop directly from email; in such cases, save the file locally first and then upload it to Ingest AI.</li>
 <li>Response time depends on the AI service; slow or unstable connections to the AI server can increase processing time.</li>
 </ul>
-<h2 id="5-requirements">5. Requirements</h2>
+<h2 id="requirements">Requirements</h2>
 <p>To use Ingest AI, you need:</p>
 <ul>
 <li><strong>License:</strong> X13 – Advanced AI</li>
