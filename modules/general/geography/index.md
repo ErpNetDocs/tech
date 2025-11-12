@@ -29,7 +29,7 @@ Each panel maintains specific datasets that contribute to @@name’s overall geo
 
 - The **Administrative Regions** panel includes **Code**, **Name**, **Country**, **Parent Full Path**, and **Validity Dates**, which define the active period of each region.
 
-  ![pictures](pictures/geography_administrative_regions.png)
+  ![pictures](pictures/geography_adm_region.png)
 
 - The **Countries** panel shows all supported countries with their respective **Code**, **Name**, and **Intrastat Code**, ensuring consistent country information across the system.
 
