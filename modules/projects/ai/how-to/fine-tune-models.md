@@ -106,12 +106,15 @@ When you are chatting with the AI Arbiter in a group or direct chat:
 1. Ask the model a question.
 2. If the response is wrong or incomplete, correct it in the chat (explain what is actually correct).
 3. When you reach a good answer, right-click (or use the context menu) on the AI’s message and choose **Train AI**.
+   
 ![Train AI](finetune-train-ai-1.png)
 
 4. Select which messages from the conversation should be included.
+   
 ![Train AI](finetune-train-ai-2.png)
 
-6. Confirm.
+5. Confirm.
+   
 ![Train AI](finetune-train-ai-3.png)
 
 @@name will:
@@ -124,28 +127,6 @@ When you are chatting with the AI Arbiter in a group or direct chat:
 ![Train AI](finetune-train-ai-5.png)
 
 This allows you to **improve** the model continuously while using it, without having to pre-invent hundreds of Q&A pairs.
-
-
-## Model hierarchy and reuse
-
-The **Parent** field in the AI Model allows you to build a **hierarchy of models**.
-
-Typical pattern:
-
-- **Master Company Model**  
-  Parent: *null*  
-  Trained on: general company knowledge, policies, and products.
-
-- **Marketing Model**  
-  Parent: *Master Company Model*  
-  Trained on: marketing-specific Q&A and conversations.
-
-- **Sales Model**  
-  Parent: *Master Company Model*  
-  Trained on: sales-specific Q&A and conversations.
-
-The parent can aggregate and reuse training from its children (according to your configuration), so you do not need to copy the same base knowledge to every model.  
-This is especially useful for a **company-wide assistant** for managers or general users.
 
 
 ## Compilation and applying the fine-tuning
@@ -171,6 +152,27 @@ In short:
 Once a fine-tuned model is compiled, it can be used as an **arbiter** in chats (added as a member to relevant groups, e.g., Marketing group).
 
 Which users see which behavior depends on which **Virtual User/AI model** is added as a member of the chat group (for arbiters).
+
+## Model hierarchy and reuse
+
+The **Parent** field in the AI Model allows you to build a **hierarchy of models**.
+
+Typical pattern:
+
+- **Master Company Model**  
+  Parent: *null*  
+  Trained on: general company knowledge, policies, and products.
+
+- **Marketing Model**  
+  Parent: *Master Company Model*  
+  Trained on: marketing-specific Q&A and conversations.
+
+- **Sales Model**  
+  Parent: *Master Company Model*  
+  Trained on: sales-specific Q&A and conversations.
+
+The parent can aggregate and reuse training from its children (according to your configuration), so you do not need to copy the same base knowledge to every model.  
+This is especially useful for a **company-wide assistant** for managers or general users.
 
 
 ## Best practices for fine-tuning
