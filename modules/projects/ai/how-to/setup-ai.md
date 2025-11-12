@@ -43,12 +43,15 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 4. The **Relative URL** will be filled automatically based on the default name.
 5. Click **Save**.
 
+![AI Server Site](ai_server_site.png)
+
 This is usually all that is needed.  
 Once saved, the ERP instance is considered “AI-ready” from an infrastructure standpoint.
 
 > [!NOTE]
 >
 > Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
+
 
 
 ## 2. Provider (OpenAI)
@@ -101,6 +104,8 @@ Next, create the Provider record that will store the connection to OpenAI.
 
 > **Tip**  
 > Use descriptive names like `Test – gpt-4o-mini` and `Production – gpt-4o` so it’s immediately clear which model and environment each Provider uses.
+
+![Provider](provider.png)
 
 ### Choose a base model and provider strategy
 
