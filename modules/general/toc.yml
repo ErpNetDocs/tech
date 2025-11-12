@@ -6,9 +6,6 @@
 - name: Activities
   href: activities/toc.yml
   topicHref: activities/index.md
-- name: Products
-  href: products/toc.yml
-  topicHref: products/index.md
 - name: Currencies
   href: currencies/toc.yml
   topicHref: currencies/index.md
@@ -18,3 +15,9 @@
 - name: Files
   href: files/toc.yml
   topicHref: files/index.md
+- name: Geography
+  href: geography/toc.yml
+  topicHref: geography/index.md
+- name: Products
+  href: products/toc.yml
+  topicHref: products/index.md
