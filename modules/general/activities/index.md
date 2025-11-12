@@ -2,26 +2,26 @@
 
 Activities in @@name are documents providing flexible task and event tracking for people and teams. They can represent meetings, calls, appointments, leave, tasks, and any other user-defined document types. 
 
-![pictures](pictures/activities_overview.png)
-
 The **Activities** submodule centralizes planning and execution details: who is responsible, when it happens, what it is about, and who participates. Activities are integrated with other modules like **[Presales](https://docs.erp.net/tech/modules/crm/presales/index.html)** where they help manage communication and follow-ups with leads and opportunities.
 
 > [!NOTE]
 > Activities appear in the **@@name [Calendar](https://docs.erp.net/tech/modules/my/calendar/index.html#activities)** and can also be created from there. 
 
-### Structure
+## Structure
 
-The page consists of three panels:
+The page consists of three panels, out of which **Activities** is the main list and editor for all activity documents.  
 
-- **Activities** – Main list and editor for all activity documents.  
-- **Activities – Time Intervals** – History of work efforts for executing activities.
-- **Activity Templates** – Templates for automatic generation of activities from other documents.
+![pictures](pictures/activities_overview.png)
+
+The **Time Intervals** panel records time spent per activity, while the **Activity Templates** panel defines reusable defaults and automation for generating activities from documents elsewhere in @@name.
+
+![pictures](pictures/activities_panels.png)
 
 ## Activity data
 
-The **Activities** panel reveals the following information for each activity:
+If you open the **Activities** panel, you can find the following information for each activity:
 
-- **System Type** – Categorizes the activity at system level (e.g., *Meeting*, *Task*). If you start by choosing a *Document Type* that maps to a system type, this field is preselected.  
+- **System Type** – Categorizes the activity at system level (e.g., Meeting, Task).
 - **Subject**, **Notes** – Title and description of the activity.
 - **Target Party** - External participant or target of the activity/task.
 - **Responsible Party** - Party responsible for the execution of the activity/task. By default, this is the Owner, but it can be changed.
@@ -30,11 +30,11 @@ The **Activities** panel reveals the following information for each activity:
 - **Private** – Decides whether the activity is public or visible only to its owner.
 - **Start Time**, **End Time** – Date/time span of the activity.
 - **Reminder Time**, **Deadline Time** – Optional scheduling helpers determining a reminder and a deadline for the activity/task.  
-- **Contact Person** - The contact person who can be contacted from the side of the target party.
+- **Contact Person** - A person who can be contacted; from the side of the target party.
 - **Planned Duration Minutes** - Total planned duration of the activity. Calculated automatically based on Start Time & End Time.
 - **Project Task** - Optional link of the activity to a project task.
 - **Social Group** - Optional link of the activity to a social group.
-- **Assigned To User** – User to which the activity document is assigned. This is **required** for the activity to appear in their Calendar.
+- **Assigned To User** – User to which the activity document is assigned (**This allows the activity to appear in their Calendar**).
 
 ![pictures](pictures/activities_panel.png)
 
@@ -66,12 +66,6 @@ You can create activities from the **Activities** panel:
 > You can also create activities directly from the Calendar. Read **[this short guide](https://docs.erp.net/tech/modules/my/calendar/index.html#create-an-activity)** to learn how.
 
 ![pictures](pictures/calendar_create_activity.png)
-
-## Other panels
-
-The **Time Intervals** panel records time spent per activity, while the **Activity Templates** panel defines reusable defaults and automation for generating activities from documents elsewhere in @@name.
-
-![pictures](pictures/activities_panels.png)
 
 > [!NOTE]
 > 
