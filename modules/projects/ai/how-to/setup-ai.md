@@ -6,7 +6,10 @@ Before anyone can chat with AI or use it in business rules, an administrator nee
 
 2. **Connect a Provider (OpenAI)**  
    Add your AI provider using an active OpenAI account and API key.
- > All API usage is billed **directly by OpenAI** under your account, so you stay in full control of AI costs.  
+
+> [!NOTE]
+>
+> All API usage is billed **directly by OpenAI** under your account, so you stay in full control of AI costs.  
 
 3. **Create a Model (your AI assistant)**  
    Define one or more models that represent the AI assistants you’ll use  
@@ -40,10 +43,12 @@ The AI Server site is a small, one-time configuration that prepares your ERP ins
 4. The **Relative URL** will be filled automatically based on the default name.
 5. Click **Save**.
 
-> This is usually all that is needed.  
-> Once saved, the ERP instance is considered “AI-ready” from an infrastructure standpoint.
+This is usually all that is needed.  
+Once saved, the ERP instance is considered “AI-ready” from an infrastructure standpoint.
 
-Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
+> [!NOTE]
+>
+> Make sure your license includes at least one site — the AI Server site uses the standard site licensing.
 
 
 ## 2. Provider (OpenAI)
