@@ -10214,6 +10214,179 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/activities/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/activities/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activities_new_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activities_new_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activities_new_panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activities_new_panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activities_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activities_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activities_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activities_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activities_panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activities_panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/activity_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/activity_create.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/calendar_activity_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/calendar_activity_create.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/calendar_create_activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/calendar_create_activity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/create_new_activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/create_new_activity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/create_new_activity_fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/create_new_activity_fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/create_new_activity_select_participants.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/create_new_activity_select_participants.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/created_activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/created_activity.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/new_activity_fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/new_activity_fields.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/activities/pictures/new_activity_participants.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/activities/pictures/new_activity_participants.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/activities/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/activities/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/activities/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/currencies/index.md",
       "output": {
         ".html": {
@@ -10510,6 +10683,79 @@
         },
         ".json": {
           "relative_path": "modules/general/files/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/geography/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/geography/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/geography/pictures/geography_adm_region.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/geography/pictures/geography_adm_region.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/geography/pictures/geography_areas.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/geography/pictures/geography_areas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/geography/pictures/geography_countries.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/geography/pictures/geography_countries.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/geography/pictures/geography_geo_points.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/geography/pictures/geography_geo_points.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/geography/pictures/geography_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/geography/pictures/geography_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/geography/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/geography/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/geography/toc.json"
         }
       },
       "version": ""
@@ -10958,6 +11204,69 @@
       "output": {
         ".html": {
           "relative_path": "modules/general/products/variable-dynamic-measurement-rations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/general/resources/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/resources/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/resources/pictures/create_new.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/resources/pictures/create_new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/resources/pictures/resource.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/resources/pictures/resource.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/resources/pictures/resource_group.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/resources/pictures/resource_group.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/resources/pictures/resources_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/resources/pictures/resources_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/resources/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/resources/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/resources/toc.json"
         }
       },
       "version": ""
@@ -21275,6 +21584,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/ai_server_site.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/ai_server_site.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/projects/ai/how-to/compilation_error.png",
       "output": {
         "resource": {
@@ -21399,6 +21718,16 @@
       "output": {
         ".html": {
           "relative_path": "modules/projects/ai/how-to/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/projects/ai/how-to/provider.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/projects/ai/how-to/provider.png"
         }
       },
       "version": ""
