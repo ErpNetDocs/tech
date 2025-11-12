@@ -42,7 +42,7 @@ The **Activities** panel reveals the following information for each activity:
 
 Activities can optionally have specific participants, with each of them contributing a certain **Work Load Percent**. 
 
-Marking someone as a participant automatically leads to the activity appearing in their personal calendars. 
+Marking someone as a participant automatically leads to the activity appearing in their personal calendars.
 
 ### Create an activity
 
