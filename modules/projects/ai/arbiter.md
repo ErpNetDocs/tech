@@ -10,7 +10,7 @@ It acts like a virtual colleague who can:
 - summarise long discussions,
 - suggest next steps or rewrite texts.
 
-The arbiter uses an **AI Model** defined in `Projects.AI.Models` and speaks through a **Virtual User** that appears as a normal chat participant.
+The arbiter uses an **AI Model** and speaks through a **Virtual User** that appears as a normal chat participant.
 
 ## 2. Prerequisites
 
@@ -19,24 +19,20 @@ To use an AI Arbiter, you need:
 1. **AI infrastructure configured**
    - AI Server site (infrastructure prerequisite).
    - At least one **AI Provider** (OpenAI) with API key.
+   
+2. **Virtual User**
+   - One **Virtual User (No login)** that will represent this model in chats.
+   - Each Virtual User can be linked to **only one** AI model.
 
-2. **AI Model for the arbiter**
-   - A record in `Projects.AI.Models`.
+3. **AI Model for the arbiter**
+   - A record in `AI Models`.
    - Usually with:
      - `Build assistant = null`  
        (so the model can be fine-tuned with Q&A and Training Conversations).
    - Linked to an AI Provider (base model in OpenAI).
-
-3. **Virtual User**
-   - One **Virtual User (No login)** that will represent this model in chats.
-   - Each Virtual User can be linked to **only one** AI model.
-
-   You can create it:
-   - from **Navigator → Users**, or  
-   - from the **Virtual User** field in the model (right-click → *Create new*, after pressing **Edit**).
-
-   In the new user, set:
-   - **User Type** = `Virtual User (No login)`.
+   - Specified Virtual User - the one created in step 2.
+  
+**For more info on steps from 1 to 3, see  [How to - Setup AI](./how-to/setup-ai.md)**
 
 4. (Optional) **Fine-tuning**
    - System Message for general behaviour and tone.
@@ -46,6 +42,8 @@ To use an AI Arbiter, you need:
 5. (Optional, if fine-tuned) **Model compilation**  
    - Required if you use Q&A / Training Conversations or want a dedicated assistant configuration.
    - See: *AI Setup – Model compilation* in the main docs.
+
+**For more info on steps from 4 to 5, see  [How to - Fine-tune AI Models](.fine-tune-models.md)**
 
 ## 3. Configuring the AI Arbiter in a chat
 
