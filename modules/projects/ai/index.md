@@ -42,7 +42,7 @@ The goal is to make AI a **natural and context-aware part of everyday ERP proces
 This keeps ERP.net transparent about costs and allows you to control your AI budget.
 
 
-## 2. Architecture
+## Architecture
 
 ERP.net AI is a modular system. You plug in an external AI provider, define one or more
 AI models (assistants), teach them with your data, and then use them in chats, forms,
