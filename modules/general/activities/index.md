@@ -4,6 +4,8 @@ Activities in @@name are documents providing flexible task and event tracking fo
 
 The **Activities** submodule centralizes planning and execution details: who is responsible, when it happens, what it is about, and who participates.
 
+![pictures](pictures/activites_overview.png)
+
 > [!NOTE]
 > Activities appear in the **@@name [Calendar](https://docs.erp.net/tech/modules/my/calendar/index.html#activities)** and can also be created from there. 
 
@@ -34,6 +36,8 @@ The **Activities** panel reveals the following information for each activity:
 - **Social Group** - Optional link of the activity to a social group.
 - **Assigned To User** – User to which the activity document is assigned. This is **required** for the activity to appear in their Calendar.
 
+![pictures](pictures/activities_panel.png)
+
 ### Participants
 
 Activities can optionally have specific participants, with each of them contributing a certain **Work Load Percent**. 
@@ -46,28 +50,29 @@ You can create activities from the **Activities** panel:
 
 1. Click **New** and choose a **Document Type**. This preselects the **System Type**.
 
-   ![pictures](pictures/.png)
+   ![pictures](pictures/create_new_activity.png)
    
 2. Enter basic activity details such as **Subject** and **Notes** and any scheduling fields like **Start Time**, **End Time**, **Reminder/Deadline Time**.
 
-   ![pictures](pictures/.png)
+   ![pictures](pictures/create_new_activity_fields.png)
    
 3. Add **Participants** if applicable.
 
-   ![pictures](pictures/.png)
+   ![pictures](pictures/create_new_activity_select_participants.png)
    
 4. Click **Save and close** to save the new activity.
 
 > [!TIP]
 > You can also create activities directly from the Calendar. Read **[this short guide](https://docs.erp.net/tech/modules/my/calendar/index.html#create-an-activity)** to learn how.
 
+![pictures](pictures/calendar_create_activity.png)
+
 ## Other panels
 
 The **Time Intervals** panel records time spent per activity, while the **Activity Templates** panel defines reusable defaults and automation for generating activities from documents elsewhere in @@name.
 
-Both panels complement **Activities** by tracking effort and enabling consistent creation, respectively, and are designed to work in tandem with the main activity records.
+![pictures](pictures/activities_panels.png)
 
 > [!NOTE]
 > 
 > The screenshots taken for this article are from v.26 of the platform.
-
