@@ -411,7 +411,7 @@ If you need to analyze the data, you may use Python code.
 - c.The user sets it manually.
 
 ## 71. DisableAITranslationForMultilanguageStrings
-- a.Action: This key disables the automatic suggestions of translations with AI of values in multilanguage fields, on the work language of the instance, for the current user. It applies to those language fields that still do not have a corresponding translation.
+- a.Action: This key disables the automatic suggestions of translations with AI of values in multilanguage fields, on the work language of the instance, for the current user. It applies to those language fields that still do not have a corresponding translation.<br>
 When the value of this key is:<br>
 "0" or the key is not defined, the autotranslation with AI is enabled (default action) <br>
 "1", the autotranslation with AI is disabled and no suggestions will be available. <br>
