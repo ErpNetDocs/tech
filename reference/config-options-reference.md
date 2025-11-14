@@ -410,4 +410,12 @@ If you need to analyze the data, you may use Python code.
 - b.If the key is not defined, the Inventory Control will display the default information, which comes from the To Party field in the Store Order header.
 - c.The user sets it manually.
 
+## 71. DisableAITranslationForMultilanguageStrings
+- a.Action: This key disables the automatic suggestions of translations with AI of values in multilanguage fields, on the work language of the instance, for the current user. It applies to those language fields that still do not have a corresponding translation.
+When the value of this key is:<br>
+"0" or the key is not defined, the autotranslation with AI is enabled (default action) <br>
+"1", the autotranslation with AI is disabled and no suggestions will be available. <br>
+- b.The user sets it manually.<br>
+- c.The key is introduced in version: <br>
+
   
