@@ -6,6 +6,9 @@
 - name: Activities
   href: activities/toc.yml
   topicHref: activities/index.md
+- name: Contacts
+  href: contacts/toc.yml
+  topicHref: contacts/index.md
 - name: Currencies
   href: currencies/toc.yml
   topicHref: currencies/index.md
