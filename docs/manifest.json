@@ -10387,6 +10387,119 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "modules/general/contacts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/contacts/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/companies_divisions.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/companies_divisions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/companies_locations.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/companies_locations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/companies_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/companies_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/contact_mechanism_company.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/contact_mechanism_company.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/contact_mechanism_purpose_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/contact_mechanism_purpose_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/contacts_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/contacts_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/parties.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/parties.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/party_relationship_type_panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/party_relationship_type_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/general/contacts/pictures/persons.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/general/contacts/pictures/persons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/general/contacts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/general/contacts/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/general/contacts/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "modules/general/currencies/index.md",
       "output": {
         ".html": {

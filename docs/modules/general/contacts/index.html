@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Contacts | ERP.net Tech Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Contacts | ERP.net Tech Docs ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ErpNetDocs/tech/blob/master/modules/general/contacts/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="contacts">Contacts</h1>
+
+<p>The <strong>Contacts</strong> submodule stores and maintains all contact-related information used across ERP.net. It provides a unified model for representing companies, persons, their internal structure, and the ways in which they relate to one another.</p>
+<p>These records serve as <strong>foundational references in virtually every document</strong> related to operational, financial, and CRM processes.</p>
+<p><img src="pictures/contacts_overview.png" alt="pictures"></p>
+<h2 id="key-terms">Key terms</h2>
+<p>At its core, the module defines two system entities:</p>
+<ul>
+<li><strong>Party</strong> – the universal base entity representing any organization or individual.</li>
+<li><strong>Person</strong> – a specialized Party that stores personal attributes.</li>
+</ul>
+<p>All companies, divisions, departments, locations, suppliers, customers, and natural persons are represented as <strong>Parties</strong>.</p>
+<h3 id="party">Party</h3>
+<p>A <strong>Party</strong> is the fundamental record identifying a company, business unit, or individual in ERP.net.</p>
+<p>Every company, division, location, department, supplier, customer, and employee can be represented as a Party.</p>
+<h3 id="person">Person</h3>
+<p>A <strong>Person</strong> is a type of Party used to store personal details such as name, nationality, gender, and identification numbers.</p>
+<p>Because a Person is a Party, it <strong>must have</strong> an associated Party record.</p>
+<h2 id="structure">Structure</h2>
+<p>The Contacts submodule supports three parallel and independent structures for organizing companies:</p>
+<table>
+<thead>
+<tr>
+<th>Structuring mechanism</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Divisions</strong></td>
+<td>Organizational units within a company.</td>
+</tr>
+<tr>
+<td><strong>Locations</strong></td>
+<td>Physical locations such as branches or offices.</td>
+</tr>
+<tr>
+<td><strong>Departments</strong></td>
+<td>Departmental units attached to a company or person.</td>
+</tr>
+</tbody>
+</table>
+<p>These structures can coexist and do not override each other. A company may have multiple divisions, multiple locations, and multiple departments simultaneously.</p>
+<p>Divisions and locations are Parties and can therefore be organized hierarchically and related to other Parties.</p>
+<h3 id="companies">Companies</h3>
+<p>The <strong>Companies</strong> panel represents the company definitions used in all ERP.net modules. A Company is a Party with additional registration and tax-related fields.</p>
+<p><img src="pictures/companies_panel.png" alt="pictures"></p>
+<p>Companies typically contain <strong>Contact Mechanisms</strong>, filled with official addresses, emails, phone numbers, and websites.</p>
+<p><img src="pictures/contact_mechanism_company.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can link specific <strong>customers</strong> to a company. Customer records are maintained through a separate <strong><a href="https://docs.erp.net/tech/modules/crm/sales/customers/index.html?q=customers">customer portal</a></strong>.</p>
+</div>
+<h3 id="locations">Locations</h3>
+<p>The <strong>Companies - Locations</strong> panel contains physical company locations (e.g., headquarters, branches, warehouses).</p>
+<p>Each location is a Party and may have its own contact mechanisms, working time and location-specific identifiers.</p>
+<p><img src="pictures/companies_locations.png" alt="pictures"></p>
+<h3 id="divisions">Divisions</h3>
+<p>The <strong>Companies - Divisions</strong> panel lists internal business divisions. A division is a Party and can be placed under a parent company or another division.</p>
+<p><img src="pictures/companies_divisions.png" alt="pictures"></p>
+<h3 id="parties">Parties</h3>
+<p>The <strong>Parties</strong> panel holds all Party records regardless of type. This includes companies, persons, customers, divisions, suppliers, and any other party types.</p>
+<p><img src="pictures/parties.png" alt="pictures"></p>
+<h3 id="persons">Persons</h3>
+<p>The <strong>Persons</strong> panel stores all Person records used across the system. Each Person has a related Party and may be linked to a company, department, or another structure.</p>
+<p><img src="pictures/persons.png" alt="pictures"></p>
+<h3 id="contact-mechanisms">Contact Mechanisms</h3>
+<p>The <strong>Contact Mechanisms – Purposes</strong> panel describes user-defined purposes for each contact mechanism type.</p>
+<p>Each purpose is linked to a <strong>Contact Mechanism Type</strong> (address, email, mobile phone, etc.) and appears as a selectable option when adding contact mechanisms to Parties or Persons.</p>
+<p>This enables companies to classify contact details precisely, e.g.:</p>
+<ul>
+<li>Delivery Address</li>
+<li>Work Email Address</li>
+<li>Company Headquarters</li>
+<li>Official Correspondence by Phone</li>
+</ul>
+<p><img src="pictures/contact_mechanism_purpose_panel.png" alt="pictures"></p>
+<h3 id="party-relationship-types">Party Relationship Types</h3>
+<p>The <strong>Party Relationship Types</strong> panel defines allowed relationship classifications between Parties.</p>
+<p>Examples include:</p>
+<ul>
+<li>Founder of</li>
+<li>Co-Founder of</li>
+<li>Owner of</li>
+</ul>
+<p><img src="pictures/party_relationship_type_panel.png" alt="pictures"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshots taken for this article are from v.26 of the platform.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ErpNetDocs/tech/blob/master/modules/general/contacts/index.md/#L1" class="edit-link">Suggest improvement to this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
