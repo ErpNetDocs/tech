@@ -411,15 +411,7 @@ If you need to analyze the data, you may use Python code.
 - c.The user sets it manually
 - d. The key is introduced in version: 26
 
-## 71. /web-client-option-space/DisableAITranslationForMultilanguageStrings
-- a.Action: This key disables the automatic suggestions of translations with AI of values in multilanguage fields, on the work language of the instance, for the current user. It applies to those language fields that still do not have a corresponding translation.<br>
-When the value of this key is:<br>
-"0" or the key is not defined, the autotranslation with AI is enabled (default action) <br>
-"1", the autotranslation with AI is disabled and no suggestions will be available. <br>
-- b.The user sets it manually.<br>
-- c.The key is introduced in version: (will be 26.2)
-
- ## 72. /web-client-option-space/AlwaysSaveOnClose
+ ## 71. /web-client-option-space/AlwaysSaveOnClose
  - a.Action: Controls whether the web client should automatically save changes when a form is closed with unsaved data, instead of prompting the user with a confirmation dialog.<br>
 When the value of this key is:<br>
 "0" or the key is not defined – The system shows a confirmation dialog with the following options:<br>
