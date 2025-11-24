@@ -9,7 +9,9 @@ To learn more about the apps in a group, use the following list:
 - **[Finance](https://docs.erp.net/tech/modules/financials/index.html)**
 - **[Foundation](https://docs.erp.net/tech/modules/general/index.html)**
 - **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**
-- **[Applications](https://docs.erp.net/tech/modules/applications/index.html)**
+- **[Production](https://docs.erp.net/tech/modules/production/index.html)**
+- **Work Management**
+- **[Business Apps](https://docs.erp.net/tech/modules/applications/index.html)**
 - **[System](https://docs.erp.net/tech/modules/system/index.html)**
 - **[Community](https://docs.erp.net/tech/modules/community/index.html)**
 - **[Express](https://docs.erp.net/tech/modules/express/index.html)**
