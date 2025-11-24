@@ -4,11 +4,11 @@ The **Work Management** module is responsible for the organization, execution, a
 
 ![pictures](pictures/work_management.png)
 
-The module supports both structured and unstructured work. It allows you to define standalone To Do tasks, coordinate complex work across teams, manage dependencies, and track actual effort through time entries and work results. It integrates organizational roles, resources, materials, and workflow states, ensuring that every unit of work is linked to the required context and can be followed from creation to closure.
+The module supports both structured and unstructured work. It allows you to define standalone **To Do tasks**, coordinate complex work across teams, manage dependencies, and track actual effort through **time entries** and **work results**. It integrates organizational roles, resources, materials, and workflow states, ensuring that every unit of work is linked to the required context and can be followed from creation to closure.
 
-Work Management also provides mechanisms for reporting and auditing work execution. Users can capture performed activities, record consumed materials, and maintain historical traces of how work evolved over time. 
+Work Management also provides mechanisms for reporting and auditing **work execution**. You can capture performed activities, record consumed materials, and maintain historical traces of how work evolved over time. 
 
-In addition, Work Management incorporates **AI-assisted tools** to support knowledge gathering, structured conversation analysis, and the creation of model training data. These capabilities allow organizations to embed operational insights into AI models and improve their internal workflows.
+In addition, Work Management incorporates **[AI-assisted training tools](https://docs.erp.net/tech/modules/projects/ai/index.html)** to support knowledge gathering, structured conversation analysis, and the creation of model training data. 
 
 ## Structure
 
