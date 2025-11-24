@@ -19,9 +19,9 @@
 - name: Production
   href: production/toc.yml
   topicHref: production/index.md  
-- name: Projects
-  href: projects/toc.yml
-  topicHref: projects/index.md  
+- name: Work Management
+  href: work-management/toc.yml
+  topicHref: work-management/index.md
 - name: Business Apps
   href: applications/toc.yml
   topicHref: applications/index.md    
