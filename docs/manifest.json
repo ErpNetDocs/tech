@@ -8213,6 +8213,89 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "modules/crm/subscriptions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/subscriptions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/billing_cycles.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/billing_cycles.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/billing_cycless.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/billing_cycless.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/new_subscription.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/new_subscription.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/new_subscriptionn.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/new_subscriptionn.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/subscriptions_overeview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/subscriptions_overeview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/crm/subscriptions/pictures/subscriptions_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/crm/subscriptions/pictures/subscriptions_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/crm/subscriptions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/crm/subscriptions/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/crm/subscriptions/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "modules/crm/toc.yml",
       "output": {
@@ -22731,6 +22814,39 @@
         },
         ".json": {
           "relative_path": "modules/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/work-management/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "modules/work-management/pictures/work_management_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/work-management/pictures/work_management_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "modules/work-management/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "modules/work-management/toc.html"
+        },
+        ".json": {
+          "relative_path": "modules/work-management/toc.json"
         }
       },
       "version": ""
