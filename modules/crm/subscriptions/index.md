@@ -41,3 +41,6 @@ A billing cycle contains:
 ![pictures](pictures/billing_cycless.png)
 
 Billing cycles are custom and can be reused across multiple subscriptions. 
+
+> [!NOTE]
+> The screenshots taken for this article are from v.26 of the platform.
