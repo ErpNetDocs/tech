@@ -10,7 +10,7 @@ To learn more about the apps in a group, use the following list:
 - **[Foundation](https://docs.erp.net/tech/modules/general/index.html)**
 - **[Logistics](https://docs.erp.net/tech/modules/logistics/index.html)**
 - **[Production](https://docs.erp.net/tech/modules/production/index.html)**
-- **Work Management**
+- **[Work Management](https://docs.erp.net/tech/modules/work-management/index.html)**
 - **[Business Apps](https://docs.erp.net/tech/modules/applications/index.html)**
 - **[System](https://docs.erp.net/tech/modules/system/index.html)**
 - **[Community](https://docs.erp.net/tech/modules/community/index.html)**
