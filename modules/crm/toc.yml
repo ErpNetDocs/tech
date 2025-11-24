@@ -21,6 +21,9 @@
 - name: Sales Force
   href: sales-force/toc.yml
   topicHref: sales-force/index.md
+- name: Subscriptions
+  href: subscriptions/toc.yml
+  topicHref: subscriptions/index.md
 - name: Client Center
   href: clientcenter/toc.yml
   topicHref:  clientcenter/index.md
