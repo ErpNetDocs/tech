@@ -28,7 +28,7 @@ When billing occurs, each line becomes part of the generated billing document ac
 
 ### Billing Cycles 
 
-The **Billing Cycles** panel defines the available billing schedules used by subscriptions. Each cycle describes when the system should issue new bills. 
+The **Billing Cycles** panel defines billing schedules used by subscriptions. Each cycle describes when the system should issue new bills. 
 
 A billing cycle contains:
 
