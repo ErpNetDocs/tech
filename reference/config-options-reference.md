@@ -421,8 +421,8 @@ If you need to analyze the data, you may use Python code.
 - b.The user sets it manually.  By selecting the checkbox "Always save automatically when closing" in the confirmation dialog.
 - c.The key is introduced in version: (will be 26.2)
 
-## 72. NotificationPopups
-- a. Action: Controls whether notifications pop-ups in desktop client to emerge or not.<br>
+## 72. AllowNotificationPopups
+- a. Action: Controls whether notifications pop-ups in desktop client to emerge on screen or not.<br>
   When the value of this key is:<br>
   "0" – When the key is not defined or its value is 0, notification pop-up toasters will not be displayed.<br>
   "1" – When the keys is set to 1, notification pop-up toasters will be displayed (default behavior).<br>
