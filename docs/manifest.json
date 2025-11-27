@@ -23035,6 +23035,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "whats-new/v26-2/social-interaction/pictures/case_comment.png",
+      "output": {
+        "resource": {
+          "relative_path": "whats-new/v26-2/social-interaction/pictures/case_comment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "whats-new/v26-2/social-interaction/pictures/files-preview.png",
       "output": {
         "resource": {
