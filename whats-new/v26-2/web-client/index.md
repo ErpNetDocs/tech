@@ -2,11 +2,11 @@
 
 The ERP.net Web Client is the web-based user interface of the ERP.net business-management platform. It is one of the primary ways to access and interact with all the modules inside the ERP.net system—such as CRM, financials, inventory, production and more.
 
-### Notable features
+## Notable features
 
-### Other features
+## Other features
 
-**1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
+### **1. New System-Calculated Attributes: “Total Line Amount” and “Amount To Pay”**
 
 Our latest update introduces two powerful system-calculated attributes — “Total Line Amount” and “Amount To Pay” — for all Invoice and Sales documents.
 
@@ -16,12 +16,12 @@ This improvement streamlines financial verification, enhances accuracy, and save
 ![picture](pictures/pic1.png)
 ![picture](pictures/pic2.png)
 
-**2. Access to object system information**
+### **2. Access to object system information**
 
 System information provides special data for the currently observed object, as its ID for example. It is now easier to access that through the menu, as a side panel System info.
 ![picture](pictures/system_info_panel.png)
 
-**3. Additional support by the Details panel**
+### **3. Additional support by the Details panel**
 
 The Details panel, one of the most frequently used sources of information, has been improved to offer enhanced support when viewing a record.
 
@@ -30,7 +30,7 @@ Now displayed as a side panel, it shows all the details of the currently opened 
 You can now customize the panel to display any fields you choose, not just the default ones. Additionally, if you navigate to another definition within the record, you can easily return to the main record details by clicking the Home icon.
 ![picture](pictures/details-panel.png)
 
-**4. New time-saver in Line Panels - add multiple lines from Navigator**
+### **4. New time-saver in Line Panels - add multiple lines from Navigator**
 
 The next feature serves those who work with line panels like Order Lines, Offer Lines, and others!
 
