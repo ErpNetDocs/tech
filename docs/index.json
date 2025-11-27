@@ -3139,10 +3139,15 @@
     "title": "What’s New in ERP.net | ERP.net Tech Docs",
     "summary": "What’s New in ERP.net The What’s New section provides an overview of the latest updates and improvements across ERP.net. Each version includes detailed notes organized by key functional areas such as Product Management, WMS, Chat, AI, WEB client and others. This page serves as a central point for exploring new features, enhancements, and fixes, helping users and developers easily track the ongoing evolution of ERP.net. You can browse the version-specific threads to see what’s changed, what’s improved, and what’s coming next. Version 26.2"
   },
+  "whats-new/v26-2/My apps/index.html": {
+    "href": "whats-new/v26-2/My apps/index.html",
+    "title": "My Apps | ERP.net Tech Docs",
+    "summary": "My Apps My Apps is the collective name for a suite of interactive, standalone applications within the ERP.net Web Client. They provide a personalized workspace where users can access aggregated and complex data in a simple, intuitive way. As a core extension of the Social ERP concept, My Apps enhances productivity, collaboration, and everyday efficiency across the organization. The My module consists of several interconnected applications—each functioning independently while remaining fully compatible with the rest of the ERP.net platform. These include:Groups, Dashboard, Notifications, Search, Calendar, Timeline, Tiles, Favorites, To Do, Documents, AI Assistant and Folders In the sections that follow, you will find all new features and improvements introduced for these applications in ERP.net version 26.2. Notable features follow Other features follow"
+  },
   "whats-new/v26-2/index.html": {
     "href": "whats-new/v26-2/index.html",
     "title": "Version 26.2 | ERP.net Tech Docs",
-    "summary": "Version 26.2 Product Management Social Interaction WEB Client"
+    "summary": "Version 26.2 [My Apps](~/whats-new/v26-2/My apps/index.md) Product Management Social Interaction WEB Client"
   },
   "whats-new/v26-2/product-management/index.html": {
     "href": "whats-new/v26-2/product-management/index.html",

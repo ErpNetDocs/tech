@@ -22972,6 +22972,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/My apps/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/My apps/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/index.md",
       "output": {
         ".html": {
