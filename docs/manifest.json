@@ -22972,20 +22972,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v26-2/My apps/index.md",
+      "source_relative_path": "whats-new/v26-2/index.md",
       "output": {
         ".html": {
-          "relative_path": "whats-new/v26-2/My apps/index.html"
+          "relative_path": "whats-new/v26-2/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "whats-new/v26-2/index.md",
+      "source_relative_path": "whats-new/v26-2/my-apps/index.md",
       "output": {
         ".html": {
-          "relative_path": "whats-new/v26-2/index.html"
+          "relative_path": "whats-new/v26-2/my-apps/index.html"
         }
       },
       "version": ""
@@ -23182,6 +23182,26 @@
       "output": {
         "resource": {
           "relative_path": "whats-new/v26-2/web-client/pictures/system_info_panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/work-management/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/work-management/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/work-management/one.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/work-management/one.html"
         }
       },
       "version": ""
