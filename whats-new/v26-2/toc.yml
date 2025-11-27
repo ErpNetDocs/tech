@@ -1,8 +1,9 @@
 - name: Product Management 
   href: product-management/toc.yml 
   topicHref: product-management/index.md
-- name: WEB client 
+- name: WEB Client 
   topicHref: web-client/index.md 
 - name: Social Interaction 
   topicHref: social-interaction/index.md
-
+- name: My Apps
+  topicHref: my apps/index.md
