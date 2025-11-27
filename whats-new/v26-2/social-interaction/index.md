@@ -14,7 +14,7 @@ Together, these tools create a connected, efficient, and adaptive collaboration 
 
 ### Other features
 
-**1. Gallery of uploaded files**
+## **1. Gallery of uploaded files**
 
 We’ve added a new Preview option to the Files tab in Social Groups! 🎉
 
