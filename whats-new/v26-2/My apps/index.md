@@ -6,7 +6,9 @@ The My module consists of several interconnected applications—each functioning
 In the sections that follow, you will find all new features and improvements introduced for these applications in ERP.net version 26.2.
 
 ## Notable features
+follow
 
 ## Other features
+follow
 
 
