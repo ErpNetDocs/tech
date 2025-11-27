@@ -4,3 +4,9 @@
 The My module consists of several interconnected applications—each functioning independently while remaining fully compatible with the rest of the ERP.net platform. These include:Groups, Dashboard, Notifications, Search, Calendar, Timeline, Tiles, Favorites, To Do, Documents, AI Assistant and Folders
 
 In the sections that follow, you will find all new features and improvements introduced for these applications in ERP.net version 26.2.
+
+## Notable features
+
+## Other features
+
+### **1. Show all ToDos”**
