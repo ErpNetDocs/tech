@@ -9,4 +9,4 @@ In the sections that follow, you will find all new features and improvements int
 
 ## Other features
 
-### **1. Show all ToDos”**
+### **1. Show all To-Dos**
