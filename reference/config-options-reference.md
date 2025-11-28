@@ -428,3 +428,11 @@ If you need to analyze the data, you may use Python code.
   "1" – When the keys is set to 1, notification pop-up toasters will be displayed (default behavior).<br>
 - b. The user sets it manually.<br>
 - c. The key is introduced in version: (will be 26.2)
+
+## 73. /ToDo/ShowLinked
+- a. Action: Controls whether the ToDo application displays tasks that are linked to an object in the database (e.g. documents, activities, social groups).The toggle switch is set to On    or Off.<br>
+  When the value of this key is:<br>
+  “0” (False) or the key is not defined – The switch is OFF and linked ToDo tasks are not displayed.<br>
+  “1” (True) – The switch is ON and linked ToDo tasks are displayed by default.<br>
+- b. The user sets it manually.<br>
+- c. The key is introduced in version: (will be 26.2)
