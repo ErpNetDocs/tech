@@ -22189,6 +22189,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "modules/system/pictures/system_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "modules/system/pictures/system_overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "modules/system/pictures/systemnew.png",
       "output": {
         "resource": {

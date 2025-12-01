@@ -87,20 +87,54 @@
         <article data-uid="">
 <h1 id="system">System</h1>
 
-<p>The <strong>System</strong> module forms the foundational infrastructure of ERP.net, facilitating functions such as data management, security configuration, process monitoring, and business automation. It enables efficient customization, secure access control, and integration with external systems, ensuring operational support and regulatory compliance.</p>
-<p><img src="pictures/systemnew.png" alt="pictures"></p>
-<h2 id="business-processes">Business Processes</h2>
-<p><strong>Business Processes</strong> automates and visualizes business workflows through user-defined rules, calculated attributes, and property management. It supports process optimization and ensures seamless operational efficiency with detailed process diagrams.</p>
-<h2 id="configuration">Configuration</h2>
-<p><strong>Configuration</strong> centralizes the setup and management of system-wide options, jobs, translations, and web integrations. It provides the tools to customize and optimize system behaviour and performance according to organizational needs.</p>
-<h2 id="document-flow">Document Flow</h2>
-<p><strong>Document Flow</strong> handles the management and customization of document-related processes, including roles, print layouts, and types. It supports efficient document transactions and workflow management through configurable data sources and numbering sequences.</p>
-<h2 id="monitoring">Monitoring</h2>
-<p><strong>Monitoring</strong> tracks and manages system activities, audit logs, and performance metrics. It offers dynamic views and definitions to ensure operational efficiency, compliance, and real-time system health monitoring.</p>
-<h2 id="security">Security</h2>
-<p><strong><a href="security/index.html"><strong>Security</strong></a></strong> provides robust mechanisms for managing user access, permissions, and roles, ensuring data protection and secure integration with external applications. It includes tools for setting up user domains, groups, and system-wide permissions.</p>
-<h2 id="internal-system-data">Internal System Data</h2>
-<p><strong>Internal System Data</strong> manages and tracks the essential data elements and configurations within the system. It ensures data consistency, version control, and comprehensive auditing for robust data management.</p>
+<p>The <strong>System</strong> module forms the foundational infrastructure of ERP.net. It provides the core services for configuration, internal system data, document lifecycle control, data exchange, technical monitoring, business automation, and security.</p>
+<p>These services support and protect all functional modules by supplying configuration options, internal jobs and queues, document metadata, integration endpoints, audit information, and centralized access control.</p>
+<p><img src="pictures/system_overview.png" alt="pictures"></p>
+<h2 id="structure">Structure</h2>
+<p>System functionality is organized into several <strong>submodules</strong>, each focused on a specific technical area.</p>
+<p>They enable customization, secure access control, integration with external systems, and continuous operation and monitoring in ERP.net.</p>
+<table>
+<thead>
+<tr>
+<th>Submodule</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automation</strong></td>
+<td>Provides user-driven business automation. It contains <strong><a href="https://docs.erp.net/tech/advanced/calculated-attributes/index.html?q=calculated%20attributes">calculated attributes</a></strong>, <strong>stored attributes</strong> and their <strong>categories</strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/index.html">user business rules</a></strong> (events, conditions, actions), and <strong>process diagrams</strong>. Used to extend entity data, define read-only calculated values, and implement rule-based automation without changing application code.</td>
+</tr>
+<tr>
+<td><strong>Configuration</strong></td>
+<td>Holds global configuration and runtime infrastructure settings. It includes hierarchical <strong><a href="https://docs.erp.net/tech/reference/config-options-reference.html?q=config">configuration options</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/jobs/index.html?q=jobs">system jobs</a></strong>, <strong><a href="https://docs.erp.net/tech/concepts/multi-language.html?q=translation">UI translations</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/user-business-rules/action-types/webhook.html?q=web%20hosts">webhook templates</a></strong>, as well as <strong>web hosts</strong> and <strong>web sites</strong> that can be hosted.</td>
+</tr>
+<tr>
+<td><strong>Internal system data</strong></td>
+<td>Stores <strong>internal system data produced and used across ERP.net</strong>. It includes user-defined default values for columns, document jobs, document print images, document versions, instance change requests, notifications, object changesets and changes, object files, and generic object records with versioning. It also allows for the creation and management of reports.</td>
+</tr>
+<tr>
+<td><strong>Document flow</strong></td>
+<td>Defines the structural and behavioral metadata for documents across ERP.net. It manages <strong>document party roles</strong>, <strong>printout layouts</strong>, user-defined <strong>data sources</strong> (queries), <strong><a href="https://docs.erp.net/tech/advanced/document-amounts/index.html?q=amount%20type">document amount types</a></strong>, <strong><a href="https://docs.erp.net/tech/advanced/document-flow/generation.html">document types</a></strong>, and <strong>sequences</strong>.</td>
+</tr>
+<tr>
+<td><strong>Exchange</strong></td>
+<td>Describes <strong>data exchange operations</strong> (import, export, and similar) together with their related objects.</td>
+</tr>
+<tr>
+<td><strong>Monitoring</strong></td>
+<td>Provides various dynamic views and definitions for technical and operational monitoring. Its reach includes but is not limited to <strong>audit log entries</strong>, <strong>information messages</strong>, <strong>instance statistics</strong>, <strong>resolved conflicts</strong>, <strong><a href="https://docs.erp.net/tech/advanced/concepts/scheduled-document-events/index.html?q=document%20event">scheduled document events</a></strong>, and <strong>update procedure executes</strong>.</td>
+</tr>
+<tr>
+<td><strong><a href="https://docs.erp.net/tech/modules/system/security/index.html">Security</a></strong></td>
+<td>Implements identity and access control across ERP.net. Manages groups and users (with roles, provider tokens, and provider logins), domains, entities with secured access, and user roles.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The screenshot taken for this article is from v.26 of the platform.</p>
+</div>
 
 </article>
 
