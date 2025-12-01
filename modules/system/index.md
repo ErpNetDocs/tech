@@ -22,3 +22,6 @@ They enable customization, secure access control, integration with external syst
 | **Monitoring**           | Provides views and definitions for technical and operational monitoring. Covers audit log entries, information messages, instance statistics and parameters, resolved conflicts, scheduled document events, update procedure executions, procedures, process information, sessions, user presence, application performance, execution statistics, database object information, wait statistics, print images, object files, and web sites. |
 | **Security**             | Implements identity and access control across @@name. Manages groups and users (with roles, provider tokens, and provider logins), domains, entities with secured access, and user roles. Also includes access keys, access tokens, system permissions, column permissions, visual permissions, trusted applications (with authorizations), and external applications, forming the complete permission and authorization model.            |
 
+> [!NOTE]
+>
+> The screenshot taken for this article is from v.26 of the platform.
