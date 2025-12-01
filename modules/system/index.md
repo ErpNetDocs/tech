@@ -1,29 +1,20 @@
 # System
 
-The **System** module forms the foundational infrastructure of ERP.net, facilitating functions such as data management, security configuration, process monitoring, and business automation. It enables efficient customization, secure access control, and integration with external systems, ensuring operational support and regulatory compliance.
+The **System** module forms the foundational infrastructure of @@name. It provides the core services for configuration, internal system data, document lifecycle control, data exchange, technical monitoring, business automation, and security. These services support and protect all functional modules by supplying configuration options, internal jobs and queues, document metadata, integration endpoints, audit information, and centralized access control.
 
-![pictures](pictures/systemnew.png)
+## Structure
 
-## Business Processes
+System functionality is organized into several submodules, each focused on a specific technical area.
 
-**Business Processes** automates and visualizes business workflows through user-defined rules, calculated attributes, and property management. It supports process optimization and ensures seamless operational efficiency with detailed process diagrams.
+They enable customization, secure access control, integration with external systems, and continuous operation and monitoring in @@name.
 
-## Configuration
+| Submodule                | Purpose                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Automation**           | Provides user-driven business automation. Contains calculated attributes, stored attributes and their categories, user business rules (events, conditions, actions), and process diagrams. Used to extend entity data, define read-only calculated values, and implement rule-based automation without changing application code.                                                                                                          |
+| **Configuration**        | Holds global configuration and runtime infrastructure settings. Includes hierarchical configuration options, system jobs, UI and message translations, webhook templates, as well as web hosts and web sites used to host @@name.                                                                                                                                                                                                          |
+| **Internal system data** | Stores internal technical data produced and used by the platform. Includes user-defined default values for forms, document jobs, document print images, document versions, instance change requests, notifications, object changesets and changes, object files, and generic object records with versioning.                                                                                                                               |
+| **Document flow**        | Defines the structural and behavioral metadata for documents across @@name. Manages document party roles, printout layouts, user-defined data sources (queries), document amount types with dependencies and settings, document types (including statuses, routes, and security conditions), and sequences with their generators for document numbering.                                                                                   |
+| **Exchange**             | Describes data exchange operations (import, export, and similar) together with their related objects. Used to track what is exchanged, the transfer status, and other technical details for integration scenarios.                                                                                                                                                                                                                         |
+| **Monitoring**           | Provides views and definitions for technical and operational monitoring. Covers audit log entries, information messages, instance statistics and parameters, resolved conflicts, scheduled document events, update procedure executions, procedures, process information, sessions, user presence, application performance, execution statistics, database object information, wait statistics, print images, object files, and web sites. |
+| **Security**             | Implements identity and access control across @@name. Manages groups and users (with roles, provider tokens, and provider logins), domains, entities with secured access, and user roles. Also includes access keys, access tokens, system permissions, column permissions, visual permissions, trusted applications (with authorizations), and external applications, forming the complete permission and authorization model.            |
 
-**Configuration** centralizes the setup and management of system-wide options, jobs, translations, and web integrations. It provides the tools to customize and optimize system behaviour and performance according to organizational needs.
-
-## Document Flow
-
-**Document Flow** handles the management and customization of document-related processes, including roles, print layouts, and types. It supports efficient document transactions and workflow management through configurable data sources and numbering sequences.
-
-## Monitoring
-
-**Monitoring** tracks and manages system activities, audit logs, and performance metrics. It offers dynamic views and definitions to ensure operational efficiency, compliance, and real-time system health monitoring.
-
-## Security
-
-**[**Security**](security/index.md)** provides robust mechanisms for managing user access, permissions, and roles, ensuring data protection and secure integration with external applications. It includes tools for setting up user domains, groups, and system-wide permissions.
-
-## Internal System Data
-
-**Internal System Data** manages and tracks the essential data elements and configurations within the system. It ensures data consistency, version control, and comprehensive auditing for robust data management.
