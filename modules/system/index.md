@@ -1,6 +1,10 @@
 # System
 
-The **System** module forms the foundational infrastructure of @@name. It provides the core services for configuration, internal system data, document lifecycle control, data exchange, technical monitoring, business automation, and security. These services support and protect all functional modules by supplying configuration options, internal jobs and queues, document metadata, integration endpoints, audit information, and centralized access control.
+The **System** module forms the foundational infrastructure of @@name. It provides the core services for configuration, internal system data, document lifecycle control, data exchange, technical monitoring, business automation, and security. 
+
+These services support and protect all functional modules by supplying configuration options, internal jobs and queues, document metadata, integration endpoints, audit information, and centralized access control.
+
+![pictures](pictures/system_overview.png)
 
 ## Structure
 
