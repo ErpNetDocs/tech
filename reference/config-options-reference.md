@@ -411,13 +411,13 @@ If you need to analyze the data, you may use Python code.
 - c.The user sets it manually
 - d. The key is introduced in version: 26
 
- ## 71. /web-client-option-space/AlwaysSaveOnClose
+ ## 71. /WebClient/AlwaysSaveOnClose
  - a.Action: Controls whether the web client should automatically save changes when a form is closed with unsaved data, instead of prompting the user with a confirmation dialog.<br>
    When the value of this key is:<br>
-   "0" or the key is not defined – The system shows a confirmation dialog with the following options:<br>
+   "0" (false) or the key is not defined – The system shows a confirmation dialog with the following options:<br>
    [Save changes] [Discard changes] [Cancel] and a checkbox:<br>
    [x] Always save automatically when closing<br>
-   "1"– The system saves the changes automatically and closes the form without showing the confirmation dialog.
+   "1" (true) – The system saves the changes automatically and closes the form without showing the confirmation dialog.
 - b.The user sets it manually.  By selecting the checkbox "Always save automatically when closing" in the confirmation dialog.
 - c.The key is introduced in version: (will be 26.2)
 
