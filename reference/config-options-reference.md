@@ -419,7 +419,7 @@ If you need to analyze the data, you may use Python code.
    [x] Always save automatically when closing<br>
    "1" (true) – The system saves the changes automatically and closes the form without showing the confirmation dialog.
 - b.The user sets it manually.  By selecting the checkbox "Always save automatically when closing" in the confirmation dialog.
-- c.The key is introduced in version: (will be 26.2)
+- c.The key is introduced in version: 26.2
 
 ## 72. AllowNotificationPopups
 - a. Action: Controls whether notifications pop-ups in desktop client to emerge on screen or not.<br>
