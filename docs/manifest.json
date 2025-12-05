@@ -22992,6 +22992,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "whats-new/v26-2/crm/pictures/one.md",
+      "output": {
+        ".html": {
+          "relative_path": "whats-new/v26-2/crm/pictures/one.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "whats-new/v26-2/index.md",
       "output": {
         ".html": {
