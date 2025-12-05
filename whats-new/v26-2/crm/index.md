@@ -1,5 +1,7 @@
 # CRM
 
+The Opportunity-to-Offer process has been greatly simplified: users can now create Offers without a pre-existing Customer, and once an Offer is approved, the system automatically creates and links the Customer record. This enhancement reduces manual effort and ensures a smoother transition from opportunity to confirmed customer.
+
 ## Notable features
 
 ### **1. Improved Opportunity → Offer Flow: Customer field now optional**
@@ -14,3 +16,5 @@ This enhancement reduces unnecessary steps, minimizes confusion, and provides a 
 To streamline the offer approval process, the system now automatically creates a Customer record when an Offer is moved to Released (or directly to Completed) status. The newly created Customer is immediately linked back to the Offer through the Customer field.
 All necessary data for creating the Customer is taken directly from the To Party information in the Offer, eliminating the need for users to manually create a Customer entry.
 This enhancement reduces administrative work, prevents confusion, and ensures a smooth transition from potential client to confirmed customer — all in one seamless step.
+
+## Other features
