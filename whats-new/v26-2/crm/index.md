@@ -1,6 +1,6 @@
 # CRM
 
-The Opportunity-to-Offer process has been greatly simplified: users can now create Offers without a pre-existing Customer, and once an Offer is approved, the system automatically creates and links the Customer record. This enhancement reduces manual effort and ensures a smoother transition from opportunity to confirmed customer.
+The CRM module in ERP.net manages the entire customer lifecycle — from the first interaction and opportunity tracking to offers and sales orders — ensuring complete visibility and traceability of all customer-related processes. It streamlines front-office activities, centralizes interactions, and provides a structured flow of documents and actions. With the upcoming improvements, CRM becomes more intuitive, more automated, and easier to use, reducing manual steps and creating a smoother, more efficient experience for both users and customers.
 
 ## Notable features
 
