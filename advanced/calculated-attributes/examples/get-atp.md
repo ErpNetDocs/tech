@@ -53,7 +53,7 @@ This section provides the conceptual overview; the next one shows the exact impl
 170  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:EnterpriseCompanyId
 180  LTE             ATTRIB:FromDate                                                 EXP:190
 190  GETOBJVALUE     INPUT:10                                                        EXP:200                                                 
-200  GETOBJVALUE     REF::ShipmentOrder       ATTRIB:RequiredDeliveryDate     
+200  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:RequiredDeliveryDate     
 ```
 
 **Explanation:**
@@ -62,8 +62,8 @@ This section provides the conceptual overview; the next one shows the exact impl
 - **30**: Selects the `AvailableToPromise` records from the repository.  
 - **40**: Limits the result set to **1** record from **EXP:50**.  
 - **50**: Orders the records by `FromDate` in descending order (most recent first).  
-- **60**: Filters the records for which both **EXP:90** and **EXP:70** are `True`.  
-- **70**: Returns `True` only if both **EXP:120** and **EXP:80** are `True`.  
+- **60**: Filters the records for which both **EXP:70** and **EXP:80** are `True`.  
+- **70**: Returns `True` only if both **EXP:90** and **EXP:120** are `True`.  
 - **80**: Returns `True` only if both **EXP:150** and **EXP:180** are `True`.  
 - **90**: Returns `True` if the `ProductId` of the `AvailableToPromise` record is equal to **EXP:100**.  
 - **100**: Gets **EXP:110** from the repository of **INPUT:10** (i.e., from the current shipment order line).  
