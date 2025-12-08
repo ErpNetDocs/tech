@@ -34,26 +34,26 @@ This section provides the conceptual overview; the next one shows the exact impl
 > In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.
 
 ```txt
-10   GETOBJVALUE     EXP:20                                                          ATTRIB:ATPBaseValue 
+10   GETOBJVALUE     EXP:20                           ATTRIB:ATPBaseValue 
 20   FIRST           EXP:30
 30   SELECT          REPO::Logistics.Inventory.DemandManagement.AvailableToPromise   EXP:40
-40   TOP             CONST:1                                                         EXP: 50
-50   ORDERBY         ATTRIB:FromDate                                                 CONST:DESC                    EXP:60
-60   WHERE           EXP:70                                                          EXP:80
-70   AND             EXP:90                                                          EXP:120
-80   AND             EXP:150                                                         EXP:180
-90   EQUAL           ATTRIB:ProductId                                                EXP:100
-100  GETOBJVALUE     INPUT:10                                                        EXP:110
-110  GETOBJVALUE     REF::ParentSalesOrderLine                                       ATTRIB:ProductId
-120  EQUAL           ATTRIB:StoreId                                                  EXP:130
-130  GETOBJVALUE     INPUT:10                                                        EXP:140
-140  GETOBJVALUE     REF::ParentSalesOrderLine                                       ATTRIB:LineStoreId
-150  EQUAL           ATTRIB:EnterpriseCompanyId                                      EXP:160
-160  GETOBJVALUE     INPUT:10                                                        EXP:170
-170  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:EnterpriseCompanyId
-180  LTE             ATTRIB:FromDate                                                 EXP:190
-190  GETOBJVALUE     INPUT:10                                                        EXP:200                                                 
-200  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:RequiredDeliveryDate     
+40   TOP             CONST:1                          EXP: 50
+50   ORDERBY         ATTRIB:FromDate                  CONST:DESC                     EXP:60
+60   WHERE           EXP:70                           EXP:80
+70   AND             EXP:90                           EXP:120
+80   AND             EXP:150                          EXP:180
+90   EQUAL           ATTRIB:ProductId                 EXP:100
+100  GETOBJVALUE     INPUT:10                         EXP:110
+110  GETOBJVALUE     REF::ParentSalesOrderLine        ATTRIB:ProductId
+120  EQUAL           ATTRIB:StoreId                   EXP:130
+130  GETOBJVALUE     INPUT:10                         EXP:140
+140  GETOBJVALUE     REF::ParentSalesOrderLine        ATTRIB:LineStoreId
+150  EQUAL           ATTRIB:EnterpriseCompanyId       EXP:160
+160  GETOBJVALUE     INPUT:10                         EXP:170
+170  GETOBJVALUE     REF::ShipmentOrder               ATTRIB:EnterpriseCompanyId
+180  LTE             ATTRIB:FromDate                  EXP:190
+190  GETOBJVALUE     INPUT:10                         EXP:200                                                 
+200  GETOBJVALUE     REF::ShipmentOrder               ATTRIB:RequiredDeliveryDate     
 ```
 
 **Detailed еxplanation:**
