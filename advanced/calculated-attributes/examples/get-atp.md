@@ -4,24 +4,18 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example demonstrates how to use a Calculated Attribute to retrieve an **[Available To Promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** value for a product **on a specific date**. In this example, the date is the *Required Delivery Date* of a shipment order line, but the pattern shown here can be easily adapted—with minimal adjustments—to calculate ATP on any other date required by your business logic.
+This example demonstrates how to use a Calculated Attribute to retrieve an **[Available To Promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** value for a product **on a specific date**.  
 
-The ATP calculation queries the **[Available To Promise view](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)**, finds the ATP record that is valid as of the requested date, and returns its ATP Base Value.
+Being able to compute ATP through a Calculated Attribute allows business logic, validation rules, automations, and UI fields to dynamically reflect the product’s availability without requiring custom extensions or any external code. 
 
+In this example, the date is the *Required Delivery Date* of a shipment order line, but the pattern shown here can be easily adapted—with minimal adjustments—to calculate ATP on any other date required by your business logic.
 
-In the example, you'll learn how to get the ATP quantity in a shipment order line on its required delivery date.
-
-> [!NOTE]
-> 
-> The repository of the attributes is *Logistics.Shipment.ShipmentOrderLines*
-> 
-> The `ORDERBY` operator for `FromDate` in this report is supported starting from **version 26**.  
-> In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.
 
 ## Overview
 
-The *Available To Promise* logic determines what quantity of a product can be promised **on a specific date**. 
-This example shows how the Calculated Attribute works:
+The ATP Calculated Attribute queries the **[Available To Promise view](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)**, finds the ATP record that is valid as of the requested date, and returns its ATP Base Value.
+
+This example shows how it works:
 
 1. **Reads the repository of the **[Available To Promise view](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)**** for the given product.  
 2. **Filters** by Product, Store, and Enterprise Company.  
@@ -32,6 +26,12 @@ This example shows how the Calculated Attribute works:
 
 This section provides the conceptual overview; the next one shows the exact implementation.
 
+> [!NOTE]
+> 
+> The repository of the attributes is *Logistics.Shipment.ShipmentOrderLines*
+> 
+> The `ORDERBY` operator for `FromDate` in this report is supported starting from **version 26**.  
+> In earlier versions of ERP.net, `ORDERBY` was not available, so the same behavior had to be achieved by combining a `FILTER` with a `SORT`.
 
 ```txt
 10   GETOBJVALUE     EXP:20                                                          ATTRIB:ATPBaseValue 
