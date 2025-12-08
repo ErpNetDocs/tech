@@ -20,15 +20,15 @@ In the example, you'll learn how to get the ATP quantity in a shipment order lin
 
 ## Overview
 
-The *Available To Promise* logic determines when a product can next be promised for delivery.  
+The *Available To Promise* logic determines what quantity of a product can be promised **on a specific date**. 
 This example shows how the Calculated Attribute works:
 
-1. **Reads the ATP repository** for the given product.  
-2. **Filters** by Store, Enterprise Company, and Delivery Constraints.  
+1. **Reads the repository of the **[Available To Promise view](https://docs.erp.net/model/entities/Logistics.Inventory.DemandManagement.AvailableToPromise.html)**** for the given product.  
+2. **Filters** by Product, Store, and Enterprise Company.  
 3. **Sorts** the results by `FromDate`, newest first.  
 4. **Applies a delivery deadline** (`FromDate ≤ RequiredDeliveryDate`).  
 5. **Returns only the first valid record** using `TOP 1`.  
-6. **Outputs the `TPBaseValue`**, representing the promised availability.
+6. **Outputs the `ATPBaseValue`**, representing the promised availability.
 
 This section provides the conceptual overview; the next one shows the exact implementation.
 
@@ -56,7 +56,7 @@ This section provides the conceptual overview; the next one shows the exact impl
 200  GETOBJVALUE     REF::ShipmentOrder                                              ATTRIB:RequiredDeliveryDate     
 ```
 
-**Explanation:**
+**Detailed еxplanation:**
 - **10**: Gets the `ATPBaseValue` of the record returned by **EXP:20**.  
 - **20**: Takes the first element from the list returned by **EXP:30**.  
 - **30**: Selects the `AvailableToPromise` records from the repository.  
