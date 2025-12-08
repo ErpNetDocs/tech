@@ -38,7 +38,7 @@ This section provides the conceptual overview; the next one shows the exact impl
 20   FIRST           EXP:30
 30   SELECT          REPO::Logistics.Inventory.DemandManagement.AvailableToPromise   EXP:40
 40   TOP             CONST:1                                                         EXP: 50
-50   ORDERBY         ATTRIB:FromDate                                                 CONST:DESC
+50   ORDERBY         ATTRIB:FromDate                                                 CONST:DESC                    EXP:60
 60   WHERE           EXP:70                                                          EXP:80
 70   AND             EXP:90                                                          EXP:120
 80   AND             EXP:150                                                         EXP:180
