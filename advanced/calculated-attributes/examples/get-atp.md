@@ -24,7 +24,7 @@ This example shows how it works:
 5. **Returns only the first valid record** using `TOP 1`.  
 6. **Outputs the `ATPBaseValue`**, representing the promised availability.
 
-This section provides the conceptual overview; the next one shows the exact implementation.
+This section provides the conceptual overview. Тhe next one shows the exact implementation.
 
 > [!NOTE]
 > 
