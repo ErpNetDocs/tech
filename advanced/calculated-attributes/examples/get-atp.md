@@ -8,7 +8,7 @@ This example demonstrates how to use a **Calculated Attribute** to retrieve an *
 
 Being able to compute ATP through a Calculated Attribute allows business logic, validation rules, automations, and UI fields to dynamically reflect the product’s availability without requiring custom extensions or any external code. 
 
-In this example, the date is the *Required Delivery Date* of a shipment order line, but the pattern shown here can be easily adapted—with minimal adjustments—to calculate ATP on any other date required by your business logic.
+In this example, the calculation determines the ATP quantity **as of the Required Delivery Date** of a shipment order line. The same pattern, however, can be easily adapted with minimal adjustments to calculate ATP for any other date your business logic requires.
 
 
 ## Overview
