@@ -4,7 +4,7 @@ items: CalculatedAttributeExamples
 
 # Get available to promise (ATP) quantity
 
-This example demonstrates how to use a Calculated Attribute to retrieve an **[Available To Promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** value for a product **on a specific date**.  
+This example demonstrates how to use a **Calculated Attribute** to retrieve an **[Available To Promise (ATP)](https://docs.erp.net/tech/modules/logistics/planning/available-to-promise/index.html)** value for a product **on a specific date**.  
 
 Being able to compute ATP through a Calculated Attribute allows business logic, validation rules, automations, and UI fields to dynamically reflect the product’s availability without requiring custom extensions or any external code. 
 
